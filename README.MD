@@ -22,10 +22,13 @@ El proyecto está construido con **Vanilla JavaScript**, siguiendo una arquitect
 
 A continuación se detalla la función de cada archivo relevante en el proyecto.
 
+
+- **`index.html`**: Es el punto de entrada de la aplicación. Contiene la estructura HTML base, carga los estilos CSS, las librerías externas (Tailwind, FontAwesome, Highlight.js) y todos los scripts de la aplicación.ESTA A NIVEL RAIZ.
+
+
 ### Directorio `public`
 Contiene todos los archivos estáticos que se sirven directamente al navegador.
 
-- **`public/index.html`**: Es el punto de entrada de la aplicación. Contiene la estructura HTML base, carga los estilos CSS, las librerías externas (Tailwind, FontAwesome, Highlight.js) y todos los scripts de la aplicación.
 - **`public/css/style.css`**: Define los estilos CSS globales y personalizados que complementan a Tailwind CSS, como animaciones y estilos base para el cuerpo del documento.
 - **`public/data/plsql_deck.json`**: Un archivo JSON que contiene un mazo predefinido sobre fundamentos de PL/SQL.
 - **`public/data/shell_deck.json`**: Un archivo JSON que contiene un mazo predefinido sobre comandos de Shell y automatización de compilación.
@@ -73,57 +76,3 @@ Módulos que encapsulan la lógica de negocio y las interacciones externas.
 Funciones de utilidad reutilizables.
 
 - **`src/utils/ComponentLoader.js`**: Una clase de utilidad simple con un método estático `loadHTML`. Su única responsabilidad es cargar de forma asíncrona el contenido de los archivos de plantilla `.html` de los componentes.
-
-
-Listado de rutas de carpetas para el volumen Alonso
-El n·mero de serie del volumen es CE3D-452B
-C:.
-ª   README.MD
-ª   readme_tree_view.md
-ª   tree_view.txt
-ª   
-+---.vscode
-ª       settings.json
-ª       
-+---public
-ª   ª   index.html
-ª   ª   
-ª   +---assets
-ª   ª   +---icons
-ª   +---css
-ª   ª       style.css
-ª   ª       
-ª   +---data
-ª           plsql_deck.json
-ª           shell_deck.json
-ª           
-+---src
-    +---components
-    ª   +---AiDeckModal
-    ª   ª       ai-deck-modal.html
-    ª   ª       AiDeckModal.js
-    ª   ª       
-    ª   +---DeckDetailScreen
-    ª   ª       deck-detail-screen.html
-    ª   ª       DeckDetailScreen.js
-    ª   ª       
-    ª   +---DeckList
-    ª   ª       deck-list.html
-    ª   ª       DeckList.js
-    ª   ª       
-    ª   +---QuizScreen
-    ª           QuizScreen.html
-    ª           QuizScreen.js
-    ª           
-    +---core
-    ª       App.js
-    ª       Quiz.js
-    ª       
-    +---services
-    ª       ApiService.js
-    ª       StorageService.js
-    ª       TTSService.js
-    ª       
-    +---utils
-            ComponentLoader.js
-            
