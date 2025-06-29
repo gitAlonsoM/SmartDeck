@@ -1,0 +1,20 @@
+<!-- src\components\NotificationModal\notification-modal.html -->
+<div id="notification-modal-backdrop" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50 transition-opacity duration-300 opacity-0 hidden">
+    <div id="notification-modal-panel" class="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl w-full max-w-md mx-auto transform scale-95 transition-all duration-300">
+        <div class="p-6 text-center">
+            <div id="notification-modal-icon-container" class="mx-auto mb-4 w-16 h-16 flex items-center justify-center rounded-full">
+                <i id="notification-modal-icon" class="text-4xl"></i>
+            </div>
+            
+            <h3 id="notification-modal-title" class="text-2xl font-bold text-gray-900 dark:text-white mb-2"></h3>
+            
+            <p id="notification-modal-message" class="text-gray-600 dark:text-gray-300 whitespace-pre-wrap"></p>
+        </div>
+        
+        <div class="bg-gray-50 dark:bg-gray-700 px-6 py-4 rounded-b-2xl">
+            <button id="notification-modal-ok-btn" class="w-full px-6 py-3 bg-indigo-600 text-white font-bold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800 transition-colors">
+                OK
+            </button>
+        </div>
+    </div>
+</div>

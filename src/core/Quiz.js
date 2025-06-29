@@ -37,52 +37,46 @@ class Quiz {
             questions: this.questions
         };
     }
-
+ /**
+     * Generates a quiz round using only cards that need study (review and new).
+     * The quiz will have at most `quizLength` questions and will be smaller if
+     * not enough cards are available. It will NEVER pull from the 'learned' pool.
+     * @param {number} quizLength - The maximum number of questions for the round.
+     */
     generateQuizRound(quizLength = 10) {
-        console.log("DEBUG: [Quiz] generateQuizRound -> Generating a new quiz round.");
-        let quizPool = [];
+        console.log("DEBUG: [Quiz] generateQuizRound -> Generating a new, corrected quiz round.");
         const shuffle = (arr) => arr.sort(() => 0.5 - Math.random());
 
-        // 1. Get question strings from progress sets
-        const reviewQuestions = Array.from(this.progress.needsReview || []);
-        const learnedQuestions = Array.from(this.progress.learned || []);
+        // 1. Identify all cards available for study by their question text.
+        // Priority 1: Cards that need review.
+        const reviewPool = Array.from(this.progress.needsReview || []);
+        console.log(`DEBUG: [Quiz] generateQuizRound -> Found ${reviewPool.length} cards in 'needsReview'.`);
 
-        // 2. Add cards that need review to the pool
-        quizPool.push(...shuffle(reviewQuestions));
-        console.log(`DEBUG: [Quiz] generateQuizRound -> Added ${quizPool.length} cards from 'needsReview' list.`);
-
-        // 3. Get unseen card questions
-        const seenQuestions = new Set([...learnedQuestions, ...reviewQuestions]);
-        const unseenCardQuestions = this.allCards
+        // Priority 2: New (unseen) cards.
+        const seenQuestions = new Set([...Array.from(this.progress.learned || []), ...reviewPool]);
+        const newPool = this.allCards
             .map(card => card.question)
             .filter(q => !seenQuestions.has(q));
+        console.log(`DEBUG: [Quiz] generateQuizRound -> Found ${newPool.length} new (unseen) cards.`);
 
-        // 4. Add unseen cards until the quiz is full
-        if (quizPool.length < quizLength) {
-            const needed = quizLength - quizPool.length;
-            quizPool.push(...shuffle(unseenCardQuestions).slice(0, needed));
-            console.log(`DEBUG: [Quiz] generateQuizRound -> Added up to ${needed} unseen cards.`);
-        }
-        
-        // 5. If still not full, add learned cards for reinforcement
-        if (quizPool.length < quizLength) {
-            const needed = quizLength - quizPool.length;
-            quizPool.push(...shuffle(learnedQuestions).slice(0, needed));
-            console.log(`DEBUG: [Quiz] generateQuizRound -> Added up to ${needed} learned cards for reinforcement.`);
-        }
+        // 2. Combine review and new cards into a single pool. Review cards go first.
+        const availablePool = [...reviewPool, ...newPool];
+        console.log(`DEBUG: [Quiz] generateQuizRound -> Total available study pool size: ${availablePool.length}.`);
 
-        // 6. Map question texts back to full card objects and shuffle the final list
-        this.questions = shuffle(quizPool
+        // 3. Shuffle the pool and take the correct number of questions (up to the max length).
+        const finalQuestionPool = shuffle(availablePool).slice(0, quizLength);
+
+        // 4. Map question texts back to full card objects.
+        this.questions = finalQuestionPool
             .map(qText => this.allCards.find(c => c.question === qText))
-            .filter(Boolean) // Remove any undefined entries if a card wasn't found
-        );
+            .filter(Boolean); // Ensure no undefined cards are included.
         
         this.currentIndex = 0;
         this.score = 0;
 
-        console.log(`DEBUG: [Quiz] generateQuizRound -> Final quiz generated with ${this.questions.length} questions.`);
+        console.log(`DEBUG: [Quiz] generateQuizRound -> Final quiz generated with ${this.questions.length} questions. No 'learned' cards were added.`);
     }
-
+    
     getCurrentQuestion() {
         if (this.isQuizOver()) {
             console.log("DEBUG: [Quiz] getCurrentQuestion -> Attempted to get question, but quiz is over.");

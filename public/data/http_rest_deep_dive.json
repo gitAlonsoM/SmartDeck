@@ -1,0 +1,873 @@
+{
+  "id": "http_rest_deep_dive",
+  "name": "HTTP & REST: The Complete Guide",
+  "description": "From fundamentals to advanced concepts, this deck covers HTTP methods, status codes, headers, JSON, and the principles of RESTful API design.",
+  "isAiGenerated": false,
+  "language": "json",
+  "cards": [
+    {
+      "category": "Core Concepts",
+      "hint": "This is the entity that initiates a communication request.",
+      "question": "In the client-server model, which entity starts the conversation by sending a request?",
+      "options": [
+        "Server",
+        "Client",
+        "Proxy"
+      ],
+      "correctAnswer": "Client",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "fetch('https://api.example.com/data');"
+      }
+    },
+    {
+      "category": "Core Concepts",
+      "hint": "This is the entity that waits for, processes, and responds to requests.",
+      "question": "Which entity is responsible for listening for incoming requests and providing responses?",
+      "options": [
+        "Database",
+        "Client",
+        "Server"
+      ],
+      "correctAnswer": "Server",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "from http.server import HTTPServer, BaseHTTPRequestHandler\n\nserver_address = ('', 8000)\nhttpd = HTTPServer(server_address, BaseHTTPRequestHandler)\nhttpd.serve_forever()"
+      }
+    },
+    {
+      "category": "Core Concepts",
+      "hint": "This protocol adds a layer of encryption to standard web communication.",
+      "question": "What is the primary difference between HTTP and HTTPS?",
+      "options": [
+        "HTTPS is faster",
+        "HTTPS is for static sites only",
+        "HTTPS uses SSL/TLS encryption"
+      ],
+      "correctAnswer": "HTTPS uses SSL/TLS encryption",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "API_URL=\"https://secure-api.example.com\"\nLEGACY_URL=\"http://insecure-api.example.com\""
+      }
+    },
+    {
+      "category": "Core Concepts",
+      "hint": "The server does not store any client context between requests.",
+      "question": "A key principle of REST is that the server is (...), meaning every request must contain all necessary information.",
+      "options": [
+        "Stateful",
+        "Stateless",
+        "Singleton"
+      ],
+      "correctAnswer": "Stateless",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "fetch(url, {\n  headers: { 'Authorization': 'Bearer <token>' }\n});"
+      }
+    },
+    {
+      "category": "Core Concepts",
+      "hint": "This is a human-readable address for a resource on the web.",
+      "question": "What does URL stand for?",
+      "options": [
+        "Uniform Resource Locator",
+        "Universal Request Language",
+        "Unique Resource Link"
+      ],
+      "correctAnswer": "Uniform Resource Locator",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "https://api.myapp.com/v1/users/123"
+      }
+    },
+    {
+      "category": "Core Concepts",
+      "hint": "This part of a URL is used to pass data to a server in a GET request.",
+      "question": "In the URL `/search?q=books&sort=newest`, the part starting with `?` is the (...).",
+      "options": [
+        "Path",
+        "Fragment",
+        "Query String"
+      ],
+      "correctAnswer": "Query String",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "const params = new URLSearchParams();\nparams.append('q', 'apis');\nparams.append('limit', '10');\nconst url = `/search?${params.toString()}`;"
+      }
+    },
+    {
+      "category": "HTTP Methods",
+      "hint": "This is the most common method, used to retrieve data.",
+      "question": "To fetch a list of products from `/api/products`, you would use the (...) method.",
+      "options": [
+        "POST",
+        "GET",
+        "READ"
+      ],
+      "correctAnswer": "GET",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "curl https://api.example.com/products"
+      }
+    },
+    {
+      "category": "HTTP Methods",
+      "hint": "This method is used to submit new data to be created on the server.",
+      "question": "To register a new user by sending their details to `/api/users`, you use the (...) method.",
+      "options": [
+        "CREATE",
+        "PUT",
+        "POST"
+      ],
+      "correctAnswer": "POST",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "curl -X POST -H \"Content-Type: application/json\" \\\n-d '{\"username\":\"newbie\",\"email\":\"new@test.com\"}' \\\nhttps://api.example.com/users"
+      }
+    },
+    {
+      "category": "HTTP Methods",
+      "hint": "This method is used to completely replace an existing resource with new data.",
+      "question": "To update a user's entire profile at `/api/users/123`, you use the (...) method.",
+      "options": [
+        "UPDATE",
+        "PUT",
+        "POST"
+      ],
+      "correctAnswer": "PUT",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "curl -X PUT -H \"Content-Type: application/json\" \\\n-d '{\"username\":\"alex_p\",\"email\":\"alex.p@new.com\"}' \\\nhttps://api.example.com/users/123"
+      }
+    },
+    {
+      "category": "HTTP Methods",
+      "hint": "This method is used for applying partial modifications to an existing resource.",
+      "question": "To update only a product's price at `/api/products/456`, you should use the (...) method.",
+      "options": [
+        "PUT",
+        "UPDATE",
+        "PATCH"
+      ],
+      "correctAnswer": "PATCH",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "curl -X PATCH -H \"Content-Type: application/json\" \\\n-d '{\"price\": 99.50}' \\\nhttps://api.example.com/products/456"
+      }
+    },
+    {
+      "category": "HTTP Methods",
+      "hint": "This method is used to remove a resource from the server.",
+      "question": "To delete a blog post at `/api/posts/789`, you use the (...) method.",
+      "options": [
+        "REMOVE",
+        "DELETE",
+        "ERASE"
+      ],
+      "correctAnswer": "DELETE",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "curl -X DELETE https://api.example.com/posts/789"
+      }
+    },
+    {
+      "category": "HTTP Methods",
+      "hint": "This method requests the headers of a resource, but not the actual body.",
+      "question": "To check a file's `Content-Length` without downloading it, you use the (...) method.",
+      "options": [
+        "GET",
+        "INFO",
+        "HEAD"
+      ],
+      "correctAnswer": "HEAD",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "curl -X HEAD -I https://example.com/large-video.mp4"
+      }
+    },
+    {
+      "category": "HTTP Methods",
+      "hint": "This method is used by a client to see what communication options are available for a given URL.",
+      "question": "In a CORS preflight request, the browser sends an (...) request to check permissions.",
+      "options": [
+        "OPTIONS",
+        "CONNECT",
+        "TRACE"
+      ],
+      "correctAnswer": "OPTIONS",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "response = HttpResponse()\nresponse['Access-Control-Allow-Origin'] = 'https://trusted.com'\nresponse['Access-Control-Allow-Methods'] = 'POST, GET, OPTIONS'"
+      }
+    },
+    {
+      "category": "HTTP Methods",
+      "hint": "An operation with this property can be repeated many times with the same result as the first time.",
+      "question": "Methods like PUT and DELETE are (...), while POST is not.",
+      "options": [
+        "Safe",
+        "Idempotent",
+        "Stateful"
+      ],
+      "correctAnswer": "Idempotent",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "curl -X PUT -d '{\"name\":\"Alex\"}' /users/123"
+      }
+    },
+    {
+      "category": "HTTP Methods",
+      "hint": "This type of method is not supposed to alter the server's state.",
+      "question": "HTTP methods like GET and HEAD are considered (...) because they are for read-only operations.",
+      "options": [
+        "Stable",
+        "Safe",
+        "Idempotent"
+      ],
+      "correctAnswer": "Safe",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "def list_items(request):\n    items = Item.objects.all()\n    return JsonResponse(list(items.values()))"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This is the most common success code for a standard request.",
+      "question": "A successful GET request for an existing resource should return (...).",
+      "options": [
+        "201 Created",
+        "200 OK",
+        "204 No Content"
+      ],
+      "correctAnswer": "200 OK",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "from django.http import JsonResponse\n\ndef get_data(request):\n    return JsonResponse({'data': 'some content'})"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This code indicates that a new resource has been successfully created on the server.",
+      "question": "A successful POST request that creates a new item should return (...).",
+      "options": [
+        "200 OK",
+        "302 Found",
+        "201 Created"
+      ],
+      "correctAnswer": "201 Created",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "from django.http import JsonResponse\n\ndef create_item(request):\n    return JsonResponse({'id': 123}, status=201)"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This code indicates the request was successful, but there is no content to return in the body.",
+      "question": "A successful DELETE request often returns (...).",
+      "options": [
+        "200 OK",
+        "410 Gone",
+        "204 No Content"
+      ],
+      "correctAnswer": "204 No Content",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "from django.http import HttpResponse\n\ndef delete_item(request, item_id):\n    return HttpResponse(status=204)"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This code is for asynchronous tasks, indicating the request has been accepted but is not yet complete.",
+      "question": "If a server starts a long-running video processing job in response to a request, it might return (...).",
+      "options": [
+        "102 Processing",
+        "202 Accepted",
+        "200 OK"
+      ],
+      "correctAnswer": "202 Accepted",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "from django.http import JsonResponse\n\ndef process_video(request):\n    start_video_processing_task.delay()\n    return JsonResponse({'status': 'processing_started'}, status=202)"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This redirection code tells the client that a resource has been moved for good.",
+      "question": "If `/about-us` is permanently moved to `/about`, the server should respond with (...).",
+      "options": [
+        "302 Found",
+        "307 Temporary Redirect",
+        "301 Moved Permanently"
+      ],
+      "correctAnswer": "301 Moved Permanently",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "from django.http import HttpResponsePermanentRedirect\n\ndef old_about_page(request):\n    return HttpResponsePermanentRedirect('/about/')"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This code indicates the client's cached version is still valid, saving bandwidth.",
+      "question": "If a client sends a request with an `If-None-Match` header and the resource hasn't changed, the server returns (...).",
+      "options": [
+        "200 OK",
+        "304 Not Modified",
+        "204 No Content"
+      ],
+      "correctAnswer": "304 Not Modified",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "fetch('/styles.css', {\n  headers: { 'If-None-Match': '\"abc-123-xyz\"' }\n});"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This error indicates the server could not understand the client's request.",
+      "question": "If a client sends malformed JSON in a POST request, the server should return (...).",
+      "options": [
+        "500 Internal Server Error",
+        "404 Not Found",
+        "400 Bad Request"
+      ],
+      "correctAnswer": "400 Bad Request",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "import json\n\ndef api_view(request):\n    try:\n        data = json.loads(request.body)\n    except json.JSONDecodeError:\n        return JsonResponse({'error': 'Invalid JSON'}, status=400)"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This error means the client is not authenticated and needs to log in.",
+      "question": "Trying to access `/my-profile` without being logged in should result in a (...) error.",
+      "options": [
+        "403 Forbidden",
+        "401 Unauthorized",
+        "400 Bad Request"
+      ],
+      "correctAnswer": "401 Unauthorized",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "from django.contrib.auth.decorators import login_required\n\n@login_required\ndef my_profile(request):\n    return JsonResponse({'user': request.user.username})"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This error means the client is authenticated but lacks the necessary permissions.",
+      "question": "A standard user trying to access an admin dashboard should receive a (...) error.",
+      "options": [
+        "401 Unauthorized",
+        "403 Forbidden",
+        "404 Not Found"
+      ],
+      "correctAnswer": "403 Forbidden",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "from rest_framework.permissions import IsAdminUser\nfrom rest_framework.views import APIView\n\nclass AdminDashboardView(APIView):\n    permission_classes = [IsAdminUser]"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This is the internet's most famous error, meaning the requested resource doesn't exist.",
+      "question": "Requesting `/api/users/9999` when no such user exists should return (...).",
+      "options": [
+        "204 No Content",
+        "404 Not Found",
+        "500 Internal Server Error"
+      ],
+      "correctAnswer": "404 Not Found",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "from django.shortcuts import get_object_or_404\n\ndef user_detail(request, user_id):\n    user = get_object_or_404(User, pk=user_id)"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This error indicates the client used an HTTP method that is not supported by the resource.",
+      "question": "If a client sends a PUT request to a URL that only accepts GET and POST, it should get a (...) error.",
+      "options": [
+        "400 Bad Request",
+        "405 Method Not Allowed",
+        "403 Forbidden"
+      ],
+      "correctAnswer": "405 Method Not Allowed",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "from rest_framework.decorators import api_view\n\n@api_view(['GET'])\ndef item_list(request):\n    return Response()"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This error indicates a resource could not be created because it would create a duplicate.",
+      "question": "Trying to POST a new user with an email that already exists should ideally return a (...) error.",
+      "options": [
+        "400 Bad Request",
+        "409 Conflict",
+        "403 Forbidden"
+      ],
+      "correctAnswer": "409 Conflict",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "def create_user(request):\n    email = request.data.get('email')\n    if User.objects.filter(email=email).exists():\n        return JsonResponse({'error': 'Email already in use.'}, status=409)"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This client error indicates a request to an API that has rate limiting enabled has been sent too many times.",
+      "question": "If you exceed the allowed number of API requests per minute, you will receive a (...) error.",
+      "options": [
+        "403 Forbidden",
+        "503 Service Unavailable",
+        "429 Too Many Requests"
+      ],
+      "correctAnswer": "429 Too Many Requests",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "REST_FRAMEWORK = {\n    'DEFAULT_THROTTLE_RATES': {\n        'anon': '100/day',\n        'user': '1000/day'\n    }\n}"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This is a generic server-side error indicating an unexpected condition.",
+      "question": "If a programming error (e.g., a typo in a variable name) occurs on the server, the client will see a (...) error.",
+      "options": [
+        "400 Bad Request",
+        "500 Internal Server Error",
+        "502 Bad Gateway"
+      ],
+      "correctAnswer": "500 Internal Server Error",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "def my_view(request):\n    result = undefined_variable + 10"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This server error indicates the server is temporarily overloaded or down for maintenance.",
+      "question": "When a server is undergoing maintenance and cannot handle requests, it should return (...).",
+      "options": [
+        "500 Internal Server Error",
+        "502 Bad Gateway",
+        "503 Service Unavailable"
+      ],
+      "correctAnswer": "503 Service Unavailable",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "if [ -f /etc/nginx/maintenance.flag ]; then\n  return 503;\nfi"
+      }
+    },
+    {
+      "category": "HTTP Headers",
+      "hint": "This request header tells the server what type of content the client can accept in the response.",
+      "question": "To signal that a client prefers a JSON response, it should send the `(...)` header.",
+      "options": [
+        "Content-Type: application/json",
+        "Response-Type: application/json",
+        "Accept: application/json"
+      ],
+      "correctAnswer": "Accept: application/json",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "fetch('/api/data', {\n  headers: {\n    'Accept': 'application/xml, application/json'\n  }\n});"
+      }
+    },
+    {
+      "category": "HTTP Headers",
+      "hint": "This request header specifies the data format of the message body being sent.",
+      "question": "When POSTing a form, a browser typically sends the (...) header.",
+      "options": [
+        "Content-Type: application/x-www-form-urlencoded",
+        "Content-Type: multipart/form-data",
+        "Content-Type: application/json"
+      ],
+      "correctAnswer": "Content-Type: application/x-www-form-urlencoded",
+      "content": {
+        "type": "code",
+        "language": "html",
+        "value": "<form action=\"/submit\" method=\"post\">\n  <input name=\"username\" type=\"text\">\n</form>"
+      }
+    },
+    {
+      "category": "HTTP Headers",
+      "hint": "This request header contains credentials to authenticate a client with a server.",
+      "question": "A client sending a 'Bearer Token' for authentication places it in the (...) header.",
+      "options": [
+        "X-API-Key",
+        "Authorization",
+        "Cookie"
+      ],
+      "correctAnswer": "Authorization",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "const jwtToken = '...';\nfetch('/api/secure-data', {\n  headers: {\n    'Authorization': `Bearer ${jwtToken}`\n  }\n});"
+      }
+    },
+    {
+      "category": "HTTP Headers",
+      "hint": "This request header contains information about the client making the request, such as browser and OS.",
+      "question": "The (...) header helps servers identify the client software and can be used for analytics.",
+      "options": [
+        "Client-Info",
+        "User-Agent",
+        "From"
+      ],
+      "correctAnswer": "User-Agent",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "curl --user-agent \"MyCustomApp/1.0\" https://api.example.com"
+      }
+    },
+    {
+      "category": "HTTP Headers",
+      "hint": "This response header specifies the media type of the resource in the message body.",
+      "question": "A server sending back a PNG image should set the `(...)` header to `image/png`.",
+      "options": [
+        "Content-Type",
+        "Accept",
+        "Data-Type"
+      ],
+      "correctAnswer": "Content-Type",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "from django.http import HttpResponse\n\ndef get_image(request):\n    with open('logo.png', 'rb') as f:\n        image_data = f.read()\n    return HttpResponse(image_data, content_type='image/png')"
+      }
+    },
+    {
+      "category": "HTTP Headers",
+      "hint": "This response header provides the URL to which a client should be redirected.",
+      "question": "When returning a 301 or 302 status, the server must also provide the (...) header.",
+      "options": [
+        "Redirect-To",
+        "Location",
+        "Forward-To"
+      ],
+      "correctAnswer": "Location",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "from django.http import HttpResponseRedirect\n\ndef old_url_view(request):\n    return HttpResponseRedirect('/new-url/')"
+      }
+    },
+    {
+      "category": "HTTP Headers",
+      "hint": "This response header provides directives for caching in both clients and proxies.",
+      "question": "To tell a browser to cache a resource for one hour, the server sends the `(...)` header.",
+      "options": [
+        "Expires",
+        "Cache-Control",
+        "Age"
+      ],
+      "correctAnswer": "Cache-Control",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "def get_styles(request):\n    response = HttpResponse(css_content, content_type='text/css')\n    response['Cache-Control'] = 'public, max-age=3600'\n    return response"
+      }
+    },
+    {
+      "category": "HTTP Headers",
+      "hint": "This response header contains a unique identifier for a specific version of a resource.",
+      "question": "The (...) header is used for cache validation, allowing a client to make conditional requests.",
+      "options": [
+        "ETag",
+        "Version",
+        "Content-ID"
+      ],
+      "correctAnswer": "ETag",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "import hashlib\n\ndef get_data(request):\n    content = 'some data'\n    etag = hashlib.md5(content.encode()).hexdigest()\n    response = HttpResponse(content)\n    response['ETag'] = f'\"{etag}\"'\n    return response"
+      }
+    },
+    {
+      "category": "HTTP Headers",
+      "hint": "This response header tells the browser to download a file instead of displaying it.",
+      "question": "To trigger a 'Save As...' dialog in the browser for a file, you set the `(...)` header.",
+      "options": [
+        "Content-Disposition",
+        "Content-Type",
+        "X-Download-Options"
+      ],
+      "correctAnswer": "Content-Disposition",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "def download_report(request):\n    response = HttpResponse(csv_data, content_type='text/csv')\n    response['Content-Disposition'] = 'attachment; filename=\"report.csv\"'\n    return response"
+      }
+    },
+    {
+      "category": "JSON",
+      "hint": "This is the fundamental building block of a JSON object.",
+      "question": "A JSON object is an unordered collection of (...).",
+      "options": [
+        "Arrays",
+        "Key/Value Pairs",
+        "Functions"
+      ],
+      "correctAnswer": "Key/Value Pairs",
+      "content": {
+        "type": "code",
+        "language": "json",
+        "value": "{\n  \"key1\": \"a string value\",\n  \"key2\": 123,\n  \"key3\": true\n}"
+      }
+    },
+    {
+      "category": "JSON",
+      "hint": "This data structure in JSON represents an ordered list of values.",
+      "question": "In JSON, square brackets `[...]` are used to define an (...).",
+      "options": [
+        "Object",
+        "Array",
+        "Element"
+      ],
+      "correctAnswer": "Array",
+      "content": {
+        "type": "code",
+        "language": "json",
+        "value": "{\n  \"tags\": [\"programming\", \"api\", \"json\"]\n}"
+      }
+    },
+    {
+      "category": "JSON",
+      "hint": "This process converts a JSON-formatted string into a native object.",
+      "question": "To use data received from an API in JavaScript, you must first (...) the JSON string.",
+      "options": [
+        "Compile",
+        "Serialize",
+        "Parse"
+      ],
+      "correctAnswer": "Parse",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "const jsonString = '{\"id\": 1, \"name\": \"Alex\"}';\nconst userObject = JSON.parse(jsonString);\nconsole.log(userObject.name);"
+      }
+    },
+    {
+      "category": "JSON",
+      "hint": "This process converts a native object into a JSON-formatted string for transmission.",
+      "question": "To send a JavaScript object to an API, you must (...) it into a JSON string.",
+      "options": [
+        "Stringify",
+        "Format",
+        "Cast"
+      ],
+      "correctAnswer": "Stringify",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "const userObject = { id: 2, name: 'Maria' };\nconst jsonString = JSON.stringify(userObject);"
+      }
+    },
+    {
+      "category": "JSON",
+      "hint": "JSON supports six basic data types.",
+      "question": "Which of the following is NOT a valid data type in JSON?",
+      "options": [
+        "boolean",
+        "null",
+        "undefined"
+      ],
+      "correctAnswer": "undefined",
+      "content": {
+        "type": "code",
+        "language": "json",
+        "value": "{\n  \"aString\": \"hello\",\n  \"aNumber\": 123.45,\n  \"aBoolean\": false,\n  \"anArray\": [],\n  \"anObject\": {},\n  \"aNullValue\": null\n}"
+      }
+    },
+    {
+      "category": "JSON",
+      "hint": "A JSON object can contain other JSON objects.",
+      "question": "The ability to place objects inside other objects in JSON is called (...).",
+      "options": [
+        "Recursion",
+        "Inheritance",
+        "Nesting"
+      ],
+      "correctAnswer": "Nesting",
+      "content": {
+        "type": "code",
+        "language": "json",
+        "value": "{\n  \"user\": {\n    \"id\": 1,\n    \"address\": {\n      \"street\": \"123 Main St\",\n      \"city\": \"Anytown\"\n    }\n  }\n}"
+      }
+    },
+    {
+      "category": "RESTful APIs",
+      "hint": "In REST, everything is conceptually a 'thing' that can be acted upon.",
+      "question": "A user, a product, or a blog post are all examples of a (...) in a REST API.",
+      "options": [
+        "Function",
+        "Resource",
+        "Class"
+      ],
+      "correctAnswer": "Resource",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "GET /users/123\nGET /products/456\nGET /posts/789"
+      }
+    },
+    {
+      "category": "RESTful APIs",
+      "hint": "This is the common convention for naming collection resources in a URL.",
+      "question": "According to REST best practices, a URL for a collection of users should be (...).",
+      "options": [
+        "/getAllUsers",
+        "/user",
+        "/users"
+      ],
+      "correctAnswer": "/users",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "GET /api/v1/articles\nGET /api/v1/articles/5"
+      }
+    },
+    {
+      "category": "RESTful APIs",
+      "hint": "This is a set of constraints that define how a RESTful API should behave.",
+      "question": "A core principle of REST is the (...) Interface, which simplifies and decouples the architecture.",
+      "options": [
+        "Standard",
+        "Uniform",
+        "Common"
+      ],
+      "correctAnswer": "Uniform",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "GET /users/123\nDELETE /users/123\nPUT /users/123"
+      }
+    },
+    {
+      "category": "RESTful APIs",
+      "hint": "This advanced principle involves including links to other resources within an API response.",
+      "question": "What is HATEOAS (Hypermedia as the Engine of Application State)?",
+      "options": [
+        "A data encryption standard",
+        "A way for clients to discover API actions from responses",
+        "An API documentation format"
+      ],
+      "correctAnswer": "A way for clients to discover API actions from responses",
+      "content": {
+        "type": "code",
+        "language": "json",
+        "value": "{\n  \"orderId\": 123,\n  \"status\": \"shipped\",\n  \"_links\": {\n    \"self\": { \"href\": \"/orders/123\" },\n    \"track\": { \"href\": \"/orders/123/tracking\" }\n  }\n}"
+      }
+    },
+    {
+      "category": "RESTful APIs",
+      "hint": "This is a common strategy for introducing non-breaking changes to an API.",
+      "question": "What is a common way to handle versioning in a REST API?",
+      "options": [
+        "Putting the version in the URL path",
+        "Using a different server for each version",
+        "Requiring clients to update immediately"
+      ],
+      "correctAnswer": "Putting the version in the URL path",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "GET /api/v1/users/123\nGET /api/v2/users/123"
+      }
+    },
+    {
+      "category": "API Security",
+      "hint": "This standard is used for creating access tokens that assert claims as a JSON object.",
+      "question": "A (...) is a compact, URL-safe means of representing claims to be transferred between two parties.",
+      "options": [
+        "API Key",
+        "JSON Web Token (JWT)",
+        "OAuth Token"
+      ],
+      "correctAnswer": "JSON Web Token (JWT)",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIxMjMifQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      }
+    },
+    {
+      "category": "API Security",
+      "hint": "This security mechanism restricts web page scripts from making requests to a different domain.",
+      "question": "What is CORS (Cross-Origin Resource Sharing)?",
+      "options": [
+        "A browser security feature that blocks cross-domain requests",
+        "A server mechanism to allow controlled cross-domain requests",
+        "A type of cyberattack"
+      ],
+      "correctAnswer": "A server mechanism to allow controlled cross-domain requests",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "response['Access-Control-Allow-Origin'] = 'https://example.com'"
+      }
+    },
+    {
+      "category": "API Security",
+      "hint": "This process confirms a user's identity.",
+      "question": "Verifying a username and password against a database is an example of (...).",
+      "options": [
+        "Authorization",
+        "Auditing",
+        "Authentication"
+      ],
+      "correctAnswer": "Authentication",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "from django.contrib.auth import authenticate\n\nuser = authenticate(request, username=username, password=password)"
+      }
+    },
+    {
+      "category": "API Security",
+      "hint": "This process determines what an authenticated user is allowed to do.",
+      "question": "Checking if an authenticated user has 'admin' privileges before allowing them to delete data is called (...).",
+      "options": [
+        "Authorization",
+        "Authentication",
+        "Validation"
+      ],
+      "correctAnswer": "Authorization",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "if not request.user.has_perm('app.delete_post'):\n    return HttpResponseForbidden()"
+      }
+    }
+  ]
+}

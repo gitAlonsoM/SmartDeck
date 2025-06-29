@@ -24,6 +24,8 @@ class App {
         this.aiDeckModal = null;
         this.deckDetailComponent = null;
         this.quizScreenComponent = null;
+        this.notificationModal = null; // Add a property for the new modal
+
     }
 
     async init() {
@@ -41,6 +43,8 @@ class App {
         
         this.aiDeckModal = new AiDeckModal(modalContainer, (formData) => this.handleCreateDeck(formData));
         await this.aiDeckModal.init();
+        this.notificationModal = new NotificationModal(modalContainer);
+        await this.notificationModal.init();
         console.log("DEBUG: [App] setupComponents -> All components initialized.");
     }
 
@@ -48,7 +52,7 @@ class App {
         console.log("DEBUG: [App] loadDecks -> Loading all decks.");
         let staticDecks = {};
         try {
-             const deckFiles = ['plsql_deck.json', 'shell_deck.json', 'ios_android.json'];
+             const deckFiles = ['plsql_deck.json', 'shell_deck.json', 'ios_android.json', 'api_db.json', 'http_rest_deep_dive.json'];
             // Removed the leading '/' from the fetch path to make it relative
             const fetchPromises = deckFiles.map(file => fetch(`public/data/${file}`).then(res => res.json()));
             const loadedDecks = await Promise.all(fetchPromises);
@@ -187,16 +191,97 @@ class App {
 /**
  * Handles the logic for when a quiz round is completed.
  */
-handleQuizEnd() {
-    console.log(`DEBUG: [App] handleQuizEnd -> Final score: ${this.state.quizInstance.score}/${this.state.quizInstance.questions.length}. Saving progress.`);
+/**
+ * @param {number} total - The total number of questions in the round.
+ * @returns {string} A formatted message for the user.
+ */
+_getRoundEndMessage(score, total) {
+    // Calculate the percentage, handling the case of zero total questions to avoid division by zero.
+    const percentage = total > 0 ? (score / total) * 100 : 0;
     
-    // The Quiz instance has been tracking progress; now we just save it.
+    let result = {
+        title: '',
+        message: '',
+        iconStyle: { icon: '', color: '', bgColor: '' }
+    };
+
+    // Assign title, message, and icon based on percentage tiers.
+    if (percentage === 100) {
+        result.title = 'PERFECT SCORE!';
+        result.message = total < 10 ? `You nailed all ${total} questions! Perfect round!` : 'Incredible! Flawless victory! You are an expert!';
+        result.iconStyle = { icon: 'fa-solid fa-crown', color: 'text-yellow-400', bgColor: 'bg-yellow-100 dark:bg-yellow-900' };
+    } else if (percentage >= 90) {
+        result.title = 'Outstanding!';
+        result.message = 'Nearly perfect! You have truly mastered this subject.';
+        result.iconStyle = { icon: 'fa-solid fa-bolt', color: 'text-indigo-500', bgColor: 'bg-indigo-100 dark:bg-indigo-900' };
+    } else if (percentage >= 80) {
+        result.title = 'Excellent!';
+        result.message = 'Your knowledge is shining through. Fantastic result!';
+        result.iconStyle = { icon: 'fa-solid fa-star', color: 'text-green-500', bgColor: 'bg-green-100 dark:bg-green-900' };
+    } else if (percentage >= 70) {
+        result.title = 'Great Work!';
+        result.message = "A solid grasp of the material. That's impressive!";
+        result.iconStyle = { icon: 'fa-solid fa-thumbs-up', color: 'text-blue-500', bgColor: 'bg-blue-100 dark:bg-blue-900' };
+    } else if (percentage >= 60) {
+        result.title = 'Well Done!';
+        result.message = 'Over half correct! You are demonstrating a good understanding.';
+        result.iconStyle = { icon: 'fa-solid fa-award', color: 'text-sky-500', bgColor: 'bg-sky-100 dark:bg-sky-900' };
+    } else if (percentage >= 50) {
+        result.title = 'Halfway!';
+        result.message = 'You hit the 50% mark! Keep up the great momentum!';
+        result.iconStyle = { icon: 'fa-solid fa-mountain-sun', color: 'text-teal-500', bgColor: 'bg-teal-100 dark:bg-teal-900' };
+    } else if (percentage >= 40) {
+        result.title = 'Getting There!';
+        result.message = 'Solid work! Consistency is your greatest ally.';
+        result.iconStyle = { icon: 'fa-solid fa-chart-line', color: 'text-cyan-500', bgColor: 'bg-cyan-100 dark:bg-cyan-900' };
+    } else if (percentage >= 20) {
+        result.title = 'Building Blocks!';
+        result.message = 'You are laying the foundation for success.';
+        result.iconStyle = { icon: 'fa-solid fa-layer-group', color: 'text-amber-600', bgColor: 'bg-amber-100 dark:bg-amber-900' };
+    } else if (percentage > 0) {
+        result.title = 'First Step!';
+        result.message = 'You got one! The journey of a thousand miles begins with a single step.';
+        result.iconStyle = { icon: 'fa-solid fa-shoe-prints', color: 'text-lime-500', bgColor: 'bg-lime-100 dark:bg-lime-900' };
+    } else { // percentage === 0
+        result.title = 'Keep Trying!';
+        result.message = "Every master was once a beginner. Don't give up!";
+        result.iconStyle = { icon: 'fa-solid fa-lightbulb', color: 'text-orange-500', bgColor: 'bg-orange-100 dark:bg-orange-900' };
+    }
+
+    return result;
+}
+
+async handleQuizEnd() {
+    const score = this.state.quizInstance.score;
+    const totalQuestions = this.state.quizInstance.questions.length;
+    console.log(`DEBUG: [App] handleQuizEnd -> Final score: ${score}/${totalQuestions}. Saving progress.`);
+    
+    // Show dynamic score modal and wait for it to be closed
+    const result = this._getRoundEndMessage(score, totalQuestions);
+    const scoreMessage = `You got ${score} out of ${totalQuestions} correct.\n${result.message}`;
+    await this.notificationModal.show(result.title, scoreMessage, result.iconStyle);
+    
+    // The Quiz instance has been tracking progress; now we save it.
     StorageService.saveDeckProgress(this.state.currentDeckId, this.state.quizInstance.progress);
+
+    // After saving, check if the entire deck is mastered
+    const currentDeck = this.state.allDecks[this.state.currentDeckId];
+    const latestProgress = StorageService.loadDeckProgress(this.state.currentDeckId);
+    if (currentDeck && latestProgress.learned.size === currentDeck.cards.length) {
+        console.log(`DEBUG: [App] handleQuizEnd -> Deck ${this.state.currentDeckId} is fully mastered.`);
+        const masteryMessage = "Your persistence and effort have paid off, and you've learned all the cards in this deck.\n\nFeel free to reset it and practice again anytime!";
+        await this.notificationModal.show(
+            'Deck Mastered!',
+            masteryMessage,
+            { icon: 'fa-solid fa-trophy', color: 'text-amber-500', bgColor: 'bg-amber-100 dark:bg-amber-900' }
+        );
+    }
 
     this.state.quizInstance = null; // Clear the completed quiz instance
     this.state.currentScreen = 'deckDetail'; // Go back to the deck detail screen
     this.render();
 }
+
 
 handleResetDeck() {
     const deckId = this.state.currentDeckId;
@@ -205,6 +290,15 @@ handleResetDeck() {
         StorageService.clearDeckProgress(deckId); // Assumes you add this method to StorageService
         this.render(); // Re-render the detail screen to show updated progress
     }
+}
+
+/**
+ * Handles the click event to show the AI Deck creation modal.
+ */
+handleCreateDeckClicked() {
+    console.log("DEBUG: [App] handleCreateDeckClicked -> Opening AI deck creation modal.");
+    // This function was missing. It's responsible for showing the modal.
+    this.aiDeckModal.show();
 }
 
     async handleCreateDeck(formData) {

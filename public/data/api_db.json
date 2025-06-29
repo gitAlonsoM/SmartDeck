@@ -1,0 +1,849 @@
+{
+  "id": "api_db_deck",
+  "name": "API & Database Mastery",
+  "description": "A deep dive into the full communication lifecycle between frontend applications and backend databases, covering REST, HTTP, SQL, and more.",
+  "isAiGenerated": false,
+  "language": "json",
+  "cards": [
+    {
+      "category": "HTTP Methods",
+      "hint": "This method is used for retrieving information without altering server state.",
+      "question": "To request data from a server, a client uses the HTTP (...) method.",
+      "options": ["POST", "GET", "UPDATE"],
+      "correctAnswer": "GET",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "// Browser fetch API example\nfetch('https://api.example.com/users/123')\n  .then(response => response.json());"
+      }
+    },
+    {
+      "category": "HTTP Methods",
+      "hint": "This method sends data to a server to create a new resource.",
+      "question": "To create a new user via an API, the standard HTTP method is (...).",
+      "options": ["CREATE", "PUT", "POST"],
+      "correctAnswer": "POST",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "fetch('https://api.example.com/users', {\n  method: 'POST',\n  headers: {'Content-Type': 'application/json'},\n  body: JSON.stringify({ name: 'Alex' })\n});"
+      }
+    },
+    {
+      "category": "HTTP Methods",
+      "hint": "This method is used to completely replace an existing resource.",
+      "question": "To update a user's entire profile, a client sends a/an (...) request.",
+      "options": ["PUT", "PATCH", "REPLACE"],
+      "correctAnswer": "PUT",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "fetch('https://api.example.com/users/123', {\n  method: 'PUT',\n  body: JSON.stringify({ name: 'Alexandra', role: 'admin' })\n});"
+      }
+    },
+    {
+      "category": "HTTP Methods",
+      "hint": "This method is for applying partial modifications to a resource.",
+      "question": "To update only a user's email address, the more efficient HTTP method is (...).",
+      "options": ["PUT", "PATCH", "MODIFY"],
+      "correctAnswer": "PATCH",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "fetch('https://api.example.com/users/123', {\n  method: 'PATCH',\n  body: JSON.stringify({ email: 'new.email@example.com' })\n});"
+      }
+    },
+    {
+      "category": "HTTP Methods",
+      "hint": "This method is used to permanently remove a specific resource.",
+      "question": "To remove user with ID 123 from the system, the application sends a (...) request.",
+      "options": ["REMOVE", "DROP", "DELETE"],
+      "correctAnswer": "DELETE",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "fetch('https://api.example.com/users/123', {\n  method: 'DELETE'\n});"
+      }
+    },
+    {
+      "category": "HTTP Methods",
+      "hint": "This method asks for the response headers of a GET request, but not the body.",
+      "question": "To check a resource's metadata (like `Last-Modified`) without downloading it, you use (...).",
+      "options": ["OPTIONS", "INFO", "HEAD"],
+      "correctAnswer": "HEAD",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "fetch('https://api.example.com/large-file.zip', {\n  method: 'HEAD'\n}).then(response => {\n  console.log('File size:', response.headers.get('Content-Length'));\n});"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This code indicates a standard, successful request for data.",
+      "question": "A successful GET request typically returns a (...) status code.",
+      "options": ["201 Created", "204 No Content", "200 OK"],
+      "correctAnswer": "200 OK",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# Django view returning a successful response\nfrom django.http import JsonResponse\n\ndef get_user(request, user_id):\n  user = {\"id\": user_id, \"name\": \"Alex\"}\n  return JsonResponse(user, status=200)"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This status code confirms that a new resource was successfully created.",
+      "question": "A successful POST request that creates a new item should return a (...) status code.",
+      "options": ["200 OK", "201 Created", "302 Found"],
+      "correctAnswer": "201 Created",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# Django view after creating a resource\ndef create_user(request):\n  # ... logic to create user ...\n  new_user = {\"id\": 124, \"name\": \"Maria\"}\n  return JsonResponse(new_user, status=201)"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This code indicates a successful action with no data to return.",
+      "question": "A successful DELETE operation typically returns a (...) status code.",
+      "options": ["200 OK", "410 Gone", "204 No Content"],
+      "correctAnswer": "204 No Content",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "from django.http import HttpResponse\n\ndef delete_user(request, user_id):\n  # ... logic to delete user ...\n  return HttpResponse(status=204)"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This code indicates a client error, such as a malformed request.",
+      "question": "If a POST request is missing required fields in its body, the server should respond with (...).",
+      "options": ["500 Internal Server Error", "400 Bad Request", "404 Not Found"],
+      "correctAnswer": "400 Bad Request",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "def create_user(request):\n  data = json.loads(request.body)\n  if 'email' not in data:\n    return JsonResponse({'error': 'Email is required'}, status=400)"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This code indicates the client is not allowed to view the resource.",
+      "question": "If a user tries to access an admin-only endpoint without being an admin, the API should return (...).",
+      "options": ["401 Unauthorized", "404 Not Found", "403 Forbidden"],
+      "correctAnswer": "403 Forbidden",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "def get_admin_data(request):\n  if not request.user.is_staff:\n    # User is logged in, but not allowed here\n    return JsonResponse({'detail': 'Permission denied.'}, status=403)"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This code indicates the client must authenticate before accessing a resource.",
+      "question": "If a request is made to a protected endpoint without an API key or token, the server returns (...).",
+      "options": ["403 Forbidden", "401 Unauthorized", "400 Bad Request"],
+      "correctAnswer": "401 Unauthorized",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "def get_protected_data(request):\n  if 'Authorization' not in request.headers:\n    # User is not logged in at all\n    return JsonResponse({'detail': 'Authentication required.'}, status=401)"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This indicates that the requested resource could not be found on the server.",
+      "question": "A GET request to `/api/users/999` where user 999 does not exist should return (...).",
+      "options": ["204 No Content", "404 Not Found", "500 Internal Server Error"],
+      "correctAnswer": "404 Not Found",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "def get_user(request, user_id):\n  try:\n    user = User.objects.get(pk=user_id)\n    return JsonResponse(user.to_dict())\n  except User.DoesNotExist:\n    return JsonResponse({'error': 'User not found'}, status=404)"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This code indicates a generic, unexpected error occurred on the server.",
+      "question": "If the database connection fails unexpectedly during a request, the API should return (...).",
+      "options": ["503 Service Unavailable", "400 Bad Request", "500 Internal Server Error"],
+      "correctAnswer": "500 Internal Server Error",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "def get_data(request):\n  try:\n    # ... code that might fail ...\n    result = 1 / 0\n  except Exception as e:\n    # Log the real error for developers\n    log.error(e)\n    # Return a generic error to the client\n    return JsonResponse({'error': 'An internal error occurred'}, status=500)"
+      }
+    },
+    {
+      "category": "REST Principles",
+      "hint": "This architectural style uses standard HTTP methods for communication.",
+      "question": "An API that uses GET, POST, PUT, DELETE for CRUD operations follows the (...) architectural style.",
+      "options": ["SOAP", "GraphQL", "REST"],
+      "correctAnswer": "REST",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# A typical RESTful interaction\n# GET /books/ -> list of books\n# POST /books/ -> create a new book\n# GET /books/1 -> details of book 1"
+      }
+    },
+    {
+      "category": "REST Principles",
+      "hint": "The server does not store any information about the client session between requests.",
+      "question": "What does it mean for a REST API to be 'stateless'?",
+      "options": ["The server cannot store any data", "Each request contains all info needed to be understood", "The server is offline"],
+      "correctAnswer": "Each request contains all info needed to be understood",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "// The JWT token makes the request self-contained and stateless.\nfetch(url, {\n  headers: {\n    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5c...'\n  }\n});"
+      }
+    },
+    {
+      "category": "REST Principles",
+      "hint": "An operation has this property if making it multiple times has the same effect as making it once.",
+      "question": "Which property describes an operation that can be repeated without changing the result beyond the initial application?",
+      "options": ["Safe", "Idempotent", "Stateless"],
+      "correctAnswer": "Idempotent",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "// DELETE is idempotent. Running this 5 times has the same result\n// as running it once: user 123 is gone.\nfetch('/api/users/123', { method: 'DELETE' });"
+      }
+    },
+    {
+      "category": "REST Principles",
+      "hint": "This type of HTTP method should not change the state of the server.",
+      "question": "HTTP methods like GET and HEAD are considered (...) because they are for reading data only.",
+      "options": ["Stable", "Stateless", "Safe"],
+      "correctAnswer": "Safe",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# This Django view for a GET request only reads data, it doesn't\n# write anything. It is a 'safe' operation.\ndef list_products(request):\n    products = Product.objects.all()\n    return JsonResponse(list(products.values()))"
+      }
+    },
+    {
+      "category": "API Headers",
+      "hint": "This header tells the server what data format the client is sending.",
+      "question": "When sending a JSON payload in a POST request, you must set the (...) header.",
+      "options": ["Accept", "Content-Type", "Data-Format"],
+      "correctAnswer": "Content-Type",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "fetch(url, {\n  method: 'POST',\n  headers: {\n    'Content-Type': 'application/json' // Essential for the server\n  },\n  body: JSON.stringify({ name: 'Alex' })\n});"
+      }
+    },
+    {
+      "category": "API Headers",
+      "hint": "This header is used to pass authentication credentials, such as a JWT.",
+      "question": "To authenticate with a Bearer Token, the client sends it in the (...) header.",
+      "options": ["Auth-Token", "X-Api-Key", "Authorization"],
+      "correctAnswer": "Authorization",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "const TOKEN = '...';\nfetch(url, {\n  headers: {\n    'Authorization': `Bearer ${TOKEN}`\n  }\n});"
+      }
+    },
+    {
+      "category": "SQL CRUD",
+      "hint": "This is the 'C' (Create) in CRUD.",
+      "question": "A POST request to `/api/products` typically triggers which SQL command?",
+      "options": ["UPDATE", "INSERT", "SELECT"],
+      "correctAnswer": "INSERT",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "INSERT INTO products (name, price, stock)\nVALUES ('New Gadget', 99.99, 150);"
+      }
+    },
+    {
+      "category": "SQL CRUD",
+      "hint": "This is the 'R' (Read) in CRUD.",
+      "question": "A GET request to `/api/products/42` corresponds to which SQL command?",
+      "options": ["FETCH", "UPDATE", "SELECT"],
+      "correctAnswer": "SELECT",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT product_id, name, price\nFROM products\nWHERE product_id = 42;"
+      }
+    },
+    {
+      "category": "SQL CRUD",
+      "hint": "This is the 'U' (Update) in CRUD.",
+      "question": "A PATCH request to `/api/products/42` with a new price triggers which SQL command?",
+      "options": ["MODIFY", "CHANGE", "UPDATE"],
+      "correctAnswer": "UPDATE",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "UPDATE products\nSET price = 89.99\nWHERE product_id = 42;"
+      }
+    },
+    {
+      "category": "SQL CRUD",
+      "hint": "This is the 'D' (Delete) in CRUD.",
+      "question": "A DELETE request to `/api/products/42` results in which SQL command?",
+      "options": ["DROP", "ERASE", "DELETE"],
+      "correctAnswer": "DELETE",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "DELETE FROM products\nWHERE product_id = 42;"
+      }
+    },
+    {
+      "category": "SQL Joins",
+      "hint": "This is the most common type of join, returning only rows that have a match in both tables.",
+      "question": "To get a list of users and the names of the departments they belong to, you'd use an (...).",
+      "options": ["OUTER JOIN", "INNER JOIN", "CROSS JOIN"],
+      "correctAnswer": "INNER JOIN",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT u.user_name, d.department_name\nFROM users u\nINNER JOIN departments d ON u.department_id = d.department_id;"
+      }
+    },
+    {
+      "category": "SQL Joins",
+      "hint": "This type of join returns all rows from the first (left) table, even if there are no matches in the second.",
+      "question": "To list all employees and their assigned computer, including employees who have no computer, you use a (...).",
+      "options": ["RIGHT JOIN", "CROSS JOIN", "LEFT JOIN"],
+      "correctAnswer": "LEFT JOIN",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT e.employee_name, c.asset_tag\nFROM employees e\nLEFT JOIN computers c ON e.employee_id = c.assigned_to;"
+      }
+    },
+    {
+      "category": "SQL Aggregation",
+      "hint": "This clause is used with aggregate functions (like COUNT, SUM) to group rows that have the same values.",
+      "question": "To count the number of employees in each department, you would use `COUNT(*)` and a (...) clause.",
+      "options": ["ORDER BY", "GROUP BY", "WHERE"],
+      "correctAnswer": "GROUP BY",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT department_id, COUNT(employee_id) AS number_of_employees\nFROM employees\nGROUP BY department_id;"
+      }
+    },
+    {
+      "category": "SQL Aggregation",
+      "hint": "This clause is used to filter groups based on the results of aggregate functions.",
+      "question": "To find only departments with more than 10 employees, you would use a (...) clause after `GROUP BY`.",
+      "options": ["WHERE", "HAVING", "FILTER"],
+      "correctAnswer": "HAVING",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT department_id, COUNT(*)\nFROM employees\nGROUP BY department_id\nHAVING COUNT(*) > 10;"
+      }
+    },
+    {
+      "category": "SQL Transactions",
+      "hint": "This command saves all changes made during the current transaction, making them permanent.",
+      "question": "After a successful `INSERT` and `UPDATE`, what command finalizes the transaction?",
+      "options": ["SAVE", "END", "COMMIT"],
+      "correctAnswer": "COMMIT",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "START TRANSACTION;\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;\nCOMMIT;"
+      }
+    },
+    {
+      "category": "SQL Transactions",
+      "hint": "This command undoes all the changes made since the beginning of the transaction.",
+      "question": "If an error occurs midway through a transaction, what command should be executed to prevent partial changes?",
+      "options": ["REVERT", "ROLLBACK", "CANCEL"],
+      "correctAnswer": "ROLLBACK",
+      "content": {
+        "type": "code",
+        "language": "plsql",
+        "value": "BEGIN\n  UPDATE accounts SET balance = balance - 100 WHERE id = 1;\n  -- An error happens here!\n  ROLLBACK;\nEXCEPTION\n  WHEN OTHERS THEN\n    ROLLBACK;\nEND;"
+      }
+    },
+    {
+      "category": "SQL Transactions",
+      "hint": "This principle ensures that a transaction is treated as a single, indivisible unit of work.",
+      "question": "The 'A' in ACID properties stands for (...), meaning the transaction either fully completes or not at all.",
+      "options": ["Availability", "Atomicity", "Accuracy"],
+      "correctAnswer": "Atomicity",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- Atomicity Example: Transfer funds.\n-- If the debit succeeds but the credit fails, a rollback ensures\n-- the entire operation is undone, as if it never happened.\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;"
+      }
+    },
+    {
+      "category": "SQL Transactions",
+      "hint": "This property ensures that a transaction brings the database from one valid state to another.",
+      "question": "The 'C' in ACID properties stands for (...), ensuring all database rules and constraints are maintained.",
+      "options": ["Concurrency", "Correctness", "Consistency"],
+      "correctAnswer": "Consistency",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- Consistency Example: A UNIQUE constraint on email.\n-- An INSERT that violates this rule will fail, ensuring the\n-- database remains in a consistent (valid) state.\nINSERT INTO users (email) VALUES ('duplicate@example.com'); -- This would fail."
+      }
+    },
+    {
+      "category": "SQL Transactions",
+      "hint": "This property ensures that concurrent transactions do not interfere with each other.",
+      "question": "The 'I' in ACID stands for (...), making transactions appear as if they are running sequentially.",
+      "options": ["Integrity", "Isolation", "Immutability"],
+      "correctAnswer": "Isolation",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- Isolation Example:\n-- Transaction 1 sees balance=500. Transaction 2 sees balance=500.\n-- T1 subtracts 100. T2 will still see 500 until T1 commits.\n-- This prevents 'dirty reads'."
+      }
+    },
+    {
+      "category": "SQL Transactions",
+      "hint": "This property ensures that once a transaction has been committed, it will remain so, even in the event of a power loss.",
+      "question": "The 'D' in ACID stands for (...), meaning committed changes are permanently saved.",
+      "options": ["Durability", "Determinism", "Distribution"],
+      "correctAnswer": "Durability",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- Durability Example:\n-- After a COMMIT, the changes are written to the database's\n-- transaction log on disk. If the server crashes, the changes\n-- can be recovered when it restarts."
+      }
+    },
+    {
+      "category": "SQL Injection",
+      "hint": "This is a major security vulnerability where malicious SQL is inserted into input data.",
+      "question": "What is the security risk of building SQL strings directly from user input?",
+      "options": ["Cross-Site Scripting (XSS)", "SQL Injection", "Denial of Service (DoS)"],
+      "correctAnswer": "SQL Injection",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# VULNERABLE CODE - DO NOT USE\nuser_id = request.GET.get('id')\ncursor.execute(f\"SELECT * FROM users WHERE id = {user_id}\")\n# An attacker could provide '1 OR 1=1' as the id."
+      }
+    },
+    {
+      "category": "SQL Injection",
+      "hint": "This technique uses placeholders in a SQL query and provides data separately, preventing malicious interpretation.",
+      "question": "What is the primary defense against SQL Injection attacks?",
+      "options": ["Encrypting user input", "Using an ORM", "Using Parameterized Queries (Bind Variables)"],
+      "correctAnswer": "Using Parameterized Queries (Bind Variables)",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# SECURE CODE\nuser_id = request.GET.get('id')\n# The database driver safely handles the user_id value.\ncursor.execute(\"SELECT * FROM users WHERE id = %s\", [user_id])"
+      }
+    },
+    {
+      "category": "Database Design",
+      "hint": "This is a special column that uniquely identifies each record in a table.",
+      "question": "The `user_id` column, which has a unique value for every user, is the table's (...).",
+      "options": ["Index Key", "Foreign Key", "Primary Key"],
+      "correctAnswer": "Primary Key",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE TABLE users (\n  user_id NUMBER GENERATED AS IDENTITY,\n  email VARCHAR2(100 CHAR) NOT NULL UNIQUE,\n  CONSTRAINT users_pk PRIMARY KEY (user_id)\n);"
+      }
+    },
+    {
+      "category": "Database Design",
+      "hint": "This column in one table refers to the primary key of another table, creating a link.",
+      "question": "In a `posts` table, a `user_id` column that refers to the `users` table is a (...).",
+      "options": ["Secondary Key", "Foreign Key", "Linked Key"],
+      "correctAnswer": "Foreign Key",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE TABLE posts (\n  post_id NUMBER PRIMARY KEY,\n  author_id NUMBER NOT NULL,\n  title VARCHAR2(200 CHAR),\n  CONSTRAINT posts_fk_author FOREIGN KEY (author_id)\n    REFERENCES users (user_id)\n);"
+      }
+    },
+    {
+      "category": "Database Design",
+      "hint": "This rule on a foreign key will automatically delete child rows when the parent row is deleted.",
+      "question": "The `(...)` rule ensures that deleting a user also deletes all their posts.",
+      "options": ["ON DELETE SET NULL", "ON DELETE CASCADE", "ON DELETE PROTECT"],
+      "correctAnswer": "ON DELETE CASCADE",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "ALTER TABLE posts ADD CONSTRAINT posts_fk_author\nFOREIGN KEY (author_id) REFERENCES users (user_id)\nON DELETE CASCADE;"
+      }
+    },
+    {
+      "category": "Database Design",
+      "hint": "This data structure improves the speed of data retrieval operations, like an index in a book.",
+      "question": "To speed up queries that search for users by email, you should create an (...) on the `email` column.",
+      "options": ["Index", "Sequence", "View"],
+      "correctAnswer": "Index",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE INDEX idx_users_email ON users (email);"
+      }
+    },
+    {
+      "category": "Database Design",
+      "hint": "The process of organizing columns and tables to minimize data redundancy.",
+      "question": "What is the term for designing a database to reduce repetition and improve data integrity?",
+      "options": ["Optimization", "Normalization", "Refactoring"],
+      "correctAnswer": "Normalization",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- Instead of storing department_name in the employees table...\n-- (which is redundant if many employees are in the same dept)\n-- ... we normalize by creating a departments table and linking to it."
+      }
+    },
+    {
+      "category": "Database Design",
+      "hint": "This type of table is used to resolve a many-to-many relationship.",
+      "question": "To link `students` and `classes` (where a student can take many classes, and a class has many students), you need a (...) table.",
+      "options": ["Linking Table", "Junction Table", "Reference Table"],
+      "correctAnswer": "Junction Table",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE TABLE enrollments (\n  student_id NUMBER REFERENCES students(student_id),\n  class_id NUMBER REFERENCES classes(class_id),\n  PRIMARY KEY (student_id, class_id)\n);"
+      }
+    },
+    {
+      "category": "PL/SQL",
+      "hint": "This is a named block of code stored in the database, designed to perform an action.",
+      "question": "To encapsulate the logic for creating a new user, you would write a (...) Procedure.",
+      "options": ["Stored", "Anonymous", "Function"],
+      "correctAnswer": "Stored",
+      "content": {
+        "type": "code",
+        "language": "plsql",
+        "value": "CREATE OR REPLACE PROCEDURE prc_create_user(p_email IN VARCHAR2)\nAS\nBEGIN\n  INSERT INTO users (email) VALUES (p_email);\n  COMMIT;\nEND;"
+      }
+    },
+    {
+      "category": "PL/SQL",
+      "hint": "This type of PL/SQL block is similar to a procedure but must return a value.",
+      "question": "To encapsulate logic that calculates and returns a value, such as a user's total sales, you write a (...).",
+      "options": ["Package", "Trigger", "Function"],
+      "correctAnswer": "Function",
+      "content": {
+        "type": "code",
+        "language": "plsql",
+        "value": "CREATE OR REPLACE FUNCTION fnc_get_user_email(p_user_id IN NUMBER)\nRETURN VARCHAR2\nAS\n  v_email VARCHAR2(100 CHAR);\nBEGIN\n  SELECT email INTO v_email FROM users WHERE user_id = p_user_id;\n  RETURN v_email;\nEND;"
+      }
+    },
+    {
+      "category": "PL/SQL",
+      "hint": "This database object automatically executes in response to an event like an INSERT on a table.",
+      "question": "A (...) is a special procedure that runs automatically when a data modification event occurs.",
+      "options": ["Trigger", "Constraint", "View"],
+      "correctAnswer": "Trigger",
+      "content": {
+        "type": "code",
+        "language": "plsql",
+        "value": "CREATE OR REPLACE TRIGGER trg_users_audit\nAFTER INSERT OR UPDATE ON users\nFOR EACH ROW\nBEGIN\n  -- Logic to write to an audit log table\nEND;"
+      }
+    },
+    {
+      "category": "PL/SQL",
+      "hint": "These special records inside a trigger allow you to access the column values before and after the triggering DML operation.",
+      "question": "Inside a trigger, you can reference the new data with `:new` and the original data with `(...)`.",
+      "options": [":previous", ":before", ":old"],
+      "correctAnswer": ":old",
+      "content": {
+        "type": "code",
+        "language": "plsql",
+        "value": "CREATE OR REPLACE TRIGGER trg_log_price_change\nBEFORE UPDATE OF price ON products\nFOR EACH ROW\nBEGIN\n  INSERT INTO price_history (product_id, old_price, new_price)\n  VALUES (:old.product_id, :old.price, :new.price);\nEND;"
+      }
+    },
+    {
+      "category": "PL/SQL",
+      "hint": "This object generates unique, sequential numbers, perfect for primary keys.",
+      "question": "To automatically generate unique IDs for new records, Oracle uses a (...).",
+      "options": ["Sequence", "Trigger", "Function"],
+      "correctAnswer": "Sequence",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE SEQUENCE user_id_seq START WITH 1 INCREMENT BY 1 NOCACHE;\n\n-- Usage:\nINSERT INTO users (user_id, email) VALUES (user_id_seq.NEXTVAL, 'new@test.com');"
+      }
+    },
+    {
+      "category": "PL/SQL Cursors",
+      "hint": "This is a pointer to the result set of a query, allowing an application to process rows one by one.",
+      "question": "A (...) is a private SQL work area that lets you process the rows returned by a multi-row query.",
+      "options": ["Table", "View", "Cursor"],
+      "correctAnswer": "Cursor",
+      "content": {
+        "type": "code",
+        "language": "plsql",
+        "value": "DECLARE\n  CURSOR c_employees IS SELECT name FROM employees;\n  v_name employees.name%TYPE;\nBEGIN\n  OPEN c_employees;\n  FETCH c_employees INTO v_name;\n  CLOSE c_employees;\nEND;"
+      }
+    },
+    {
+      "category": "PL/SQL Cursors",
+      "hint": "This is a pointer to a result set that can be passed as a parameter, often returned from a function to a client.",
+      "question": "PL/SQL functions often return a `(...)`, which acts as a flexible pointer for query results.",
+      "options": ["TABLE", "SYS_REFCURSOR", "OUT_CURSOR"],
+      "correctAnswer": "SYS_REFCURSOR",
+      "content": {
+        "type": "code",
+        "language": "plsql",
+        "value": "CREATE OR REPLACE FUNCTION fnc_get_employees\nRETURN SYS_REFCURSOR\nAS\n  o_cursor SYS_REFCURSOR;\nBEGIN\n  OPEN o_cursor FOR SELECT employee_id, name FROM employees;\n  RETURN o_cursor;\nEND;"
+      }
+    },
+    {
+      "category": "PL/SQL Error Handling",
+      "hint": "This block of code is used to catch and handle errors that occur in a PL/SQL block.",
+      "question": "To handle potential errors like `NO_DATA_FOUND` in PL/SQL, you use an (...) block.",
+      "options": ["ERROR", "CATCH", "EXCEPTION"],
+      "correctAnswer": "EXCEPTION",
+      "content": {
+        "type": "code",
+        "language": "plsql",
+        "value": "BEGIN\n  SELECT name INTO v_name FROM users WHERE user_id = 999;\nEXCEPTION\n  WHEN NO_DATA_FOUND THEN\n    dbms_output.put_line('User not found!');\nEND;"
+      }
+    },
+    {
+      "category": "PL/SQL Error Handling",
+      "hint": "This procedure allows you to raise a custom error with a specific number and message from your code.",
+      "question": "To stop execution and send a clear, custom error message to the client application, you can use (...).",
+      "options": ["RAISE_APPLICATION_ERROR", "THROW_EXCEPTION", "CREATE_ERROR"],
+      "correctAnswer": "RAISE_APPLICATION_ERROR",
+      "content": {
+        "type": "code",
+        "language": "plsql",
+        "value": "IF p_balance < p_amount THEN\n  -- Raise a custom error with code -20001\n  RAISE_APPLICATION_ERROR(-20001, 'Insufficient funds.');\nEND IF;"
+      }
+    },
+    {
+      "category": "Frontend (Angular)",
+      "hint": "This is the primary tool in Angular for making web requests.",
+      "question": "In an Ionic/Angular service, the (...) class is used to make HTTP requests.",
+      "options": ["HttpModule", "HttpClient", "HttpRequest"],
+      "correctAnswer": "HttpClient",
+      "content": {
+        "type": "code",
+        "language": "typescript",
+        "value": "import { HttpClient } from '@angular/common/http';\nimport { inject } from '@angular/core';\n\nexport class ApiService {\n  private http = inject(HttpClient);\n\n  getUsers() {\n    return this.http.get('/api/users');\n  }\n}"
+      }
+    },
+    {
+      "category": "Frontend (Angular)",
+      "hint": "A TypeScript declaration that defines the shape of an object.",
+      "question": "To provide strong typing for the JSON data returned from an API, you should define a TypeScript (...).",
+      "options": ["class", "enum", "interface"],
+      "correctAnswer": "interface",
+      "content": {
+        "type": "code",
+        "language": "typescript",
+        "value": "export interface User {\n  id: number;\n  name: string;\n  email: string;\n}\n\n// Usage\nthis.http.get<User[]>('/api/users');"
+      }
+    },
+    {
+      "category": "Frontend (RxJS)",
+      "hint": "This represents a stream of values that can be observed over time.",
+      "question": "An Angular `HttpClient` method returns an (...), which is a lazy, push-based collection.",
+      "options": ["Promise", "Observable", "Callback"],
+      "correctAnswer": "Observable",
+      "content": {
+        "type": "code",
+        "language": "typescript",
+        "value": "import { Observable } from 'rxjs';\n\ngetUsers(): Observable<any> {\n  // The HTTP request is not made until someone subscribes.\n  return this.http.get('/api/users');\n}"
+      }
+    },
+    {
+      "category": "Frontend (RxJS)",
+      "hint": "This is the method you call to 'listen' for data emitted by an Observable.",
+      "question": "After making an HTTP request with HttpClient, you must (...) to the returned Observable to execute the request.",
+      "options": [".then()", ".subscribe()", ".await()"],
+      "correctAnswer": ".subscribe()",
+      "content": {
+        "type": "code",
+        "language": "typescript",
+        "value": "this.apiService.getUsers().subscribe(users => {\n  console.log('Received users:', users);\n});"
+      }
+    },
+    {
+      "category": "Frontend (RxJS)",
+      "hint": "The `subscribe` method can take a second function as an argument to handle when things go wrong.",
+      "question": "How do you handle HTTP errors when using an Observable?",
+      "options": ["With a try/catch block", "In the second argument to `subscribe`", "It crashes the app"],
+      "correctAnswer": "In the second argument to `subscribe`",
+      "content": {
+        "type": "code",
+        "language": "typescript",
+        "value": "this.apiService.getUsers().subscribe(\n  users => console.log(users), // Success handler\n  error => console.error('An error occurred:', error) // Error handler\n);"
+      }
+    },
+    {
+      "category": "Frontend (RxJS)",
+      "hint": "This method is used to chain multiple transformation operators together for an Observable stream.",
+      "question": "To transform or handle errors in an Observable stream before the data reaches the subscriber, you use the (...) method.",
+      "options": [".chain()", ".pipe()", ".then()"],
+      "correctAnswer": ".pipe()",
+      "content": {
+        "type": "code",
+        "language": "typescript",
+        "value": "import { map, catchError } from 'rxjs/operators';\n\nthis.apiService.getUsers().pipe(\n  map(users => users.map(u => u.name)), // Transform data\n  catchError(err => throwError(() => new Error('Failed to load'))) // Handle error\n).subscribe();"
+      }
+    },
+    {
+      "category": "Backend (Django)",
+      "hint": "This file acts like a switchboard, mapping incoming URL patterns to view functions.",
+      "question": "In Django, the `(...)` file directs an incoming URL to the correct view.",
+      "options": ["views.py", "urls.py", "settings.py"],
+      "correctAnswer": "urls.py",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# myapp/urls.py\nfrom django.urls import path\nfrom . import views\n\nurlpatterns = [\n    path('users/<int:pk>/', views.get_user_detail),\n]"
+      }
+    },
+    {
+      "category": "Backend (Django)",
+      "hint": "This is a function or class method that takes a web request and returns a web response.",
+      "question": "The logic that processes a request and returns a response in Django is contained in a (...).",
+      "options": ["Model", "Template", "View"],
+      "correctAnswer": "View",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# myapp/views.py\nfrom django.http import JsonResponse\n\ndef get_user_detail(request, pk):\n  # Logic to fetch user by primary key 'pk'\n  return JsonResponse({'id': pk})"
+      }
+    },
+    {
+      "category": "Backend (Django)",
+      "hint": "The standard way to send data back to a modern web or mobile client.",
+      "question": "In a Django API view, the response is typically wrapped in a (...) object.",
+      "options": ["HttpResponse", "TemplateResponse", "JsonResponse"],
+      "correctAnswer": "JsonResponse",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "from django.http import JsonResponse\n\ndef my_api_view(request):\n    data = {'status': 'ok', 'message': 'Hello, World!'}\n    return JsonResponse(data)"
+      }
+    },
+    {
+      "category": "Backend (Django)",
+      "hint": "The framework provides a convenient way to access data sent in the body of a request.",
+      "question": "How do you access the JSON payload from a POST request in a Django view?",
+      "options": ["`request.POST`", "`json.loads(request.body)`", "`request.DATA`"],
+      "correctAnswer": "`json.loads(request.body)`",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "import json\n\ndef create_item(request):\n    if request.method == 'POST':\n        data = json.loads(request.body)\n        new_item_name = data.get('name')\n        # ... create item in db"
+      }
+    },
+    {
+      "category": "Backend (Django)",
+      "hint": "This is how Django's database connection API calls a stored procedure.",
+      "question": "To execute a stored procedure from a Django view, you use `cursor.(...)`.",
+      "options": ["execute()", "runproc()", "callproc()"],
+      "correctAnswer": "callproc()",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "from django.db import connection\n\ndef create_user_view(request):\n    with connection.cursor() as cursor:\n        # Calls prc_create_user(p_email => 'test@example.com')\n        cursor.callproc('prc_create_user', ['test@example.com'])"
+      }
+    },
+    {
+      "category": "Backend (DRF)",
+      "hint": "This Django REST Framework tool converts complex data types, like querysets, into native Python datatypes that can be rendered as JSON.",
+      "question": "The primary tool for converting database models to JSON in DRF is a (...).",
+      "options": ["Parser", "Serializer", "Renderer"],
+      "correctAnswer": "Serializer",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "from rest_framework import serializers\nfrom .models import User\n\nclass UserSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        fields = ['id', 'username', 'email']"
+      }
+    },
+    {
+      "category": "Backend (DRF)",
+      "hint": "This decorator simplifies writing API views by handling content negotiation and providing a browsable API.",
+      "question": "The DRF decorator used on a function-based view to specify allowed HTTP methods is `(...)`.",
+      "options": ["@api_view", "@allow_methods", "@rest_view"],
+      "correctAnswer": "@api_view",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "from rest_framework.decorators import api_view\nfrom rest_framework.response import Response\n\n@api_view(['GET', 'POST'])\ndef user_list(request):\n    # ... logic for GET or POST\n    return Response({'status': 'ok'})"
+      }
+    },
+    {
+      "category": "WebSocket",
+      "hint": "Unlike HTTP's request-response, this provides a persistent, two-way communication channel.",
+      "question": "For real-time apps like chats, a (...) is preferred over repeated HTTP polling.",
+      "options": ["REST API", "HTTP/2", "WebSocket"],
+      "correctAnswer": "WebSocket",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "// Establishes a persistent connection\nconst socket = new WebSocket('wss://api.example.com/ws/chat/');\n\nsocket.onmessage = function(event) {\n  console.log('Message from server:', event.data);\n};"
+      }
+    },
+    {
+      "category": "WebSocket",
+      "hint": "This Django library adds support for WebSockets and other asynchronous protocols.",
+      "question": "To enable WebSocket support in a Django backend, the application uses (...).",
+      "options": ["Django REST Framework", "Django Channels", "Socket.IO"],
+      "correctAnswer": "Django Channels",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# a simple Channels consumer\nimport json\nfrom channels.generic.websocket import WebsocketConsumer\n\nclass ChatConsumer(WebsocketConsumer):\n    def connect(self):\n        self.accept()"
+      }
+    },
+    {
+        "category": "Security",
+        "hint": "This is the process of verifying a user's identity.",
+        "question": "Checking a user's password to confirm they are who they say they are is called (...).",
+        "options": ["Authorization", "Authentication", "Auditing"],
+        "correctAnswer": "Authentication",
+        "content": {
+          "type": "code",
+          "language": "python",
+          "value": "# Django's built-in authentication system\nfrom django.contrib.auth import authenticate\n\nuser = authenticate(username=username, password=password)\nif user is not None:\n  # Authentication successful\n  login(request, user)"
+        }
+      },
+      {
+        "category": "Security",
+        "hint": "This is the process of checking if an authenticated user has permission to perform an action.",
+        "question": "After verifying a user's identity, the server must also perform (...) to check their permissions.",
+        "options": ["Authentication", "Authorization", "Encryption"],
+        "correctAnswer": "Authorization",
+        "content": {
+          "type": "code",
+          "language": "python",
+          "value": "# Django REST Framework permission check\nfrom rest_framework.permissions import IsAdminUser\n\npermission_classes = [IsAdminUser]\n# This view will only be accessible if request.user.is_staff is True."
+        }
+      },
+      {
+        "category": "Security",
+        "hint": "This 'S' in the protocol indicates a secure, encrypted connection.",
+        "question": "In a production environment, all API communication must use (...) for security.",
+        "options": ["HTTP", "FTP", "HTTPS"],
+        "correctAnswer": "HTTPS",
+        "content": {
+          "type": "code",
+          "language": "bash",
+          "value": "# A secure URL begins with https://\n# This ensures traffic between the client and server is encrypted.\nAPI_ENDPOINT=\"https://secure.api.example.com/\""
+        }
+      },
+      {
+        "category": "Configuration",
+        "hint": "Instead of hard-coding URLs, their values are stored outside the code.",
+        "question": "To manage different API URLs for development and production, the app uses (...).",
+        "options": ["Global Constants", "Environment Variables", "Config Maps"],
+        "correctAnswer": "Environment Variables",
+        "content": {
+          "type": "code",
+          "language": "python",
+          "value": "# In Python, using the 'os' library\nimport os\n\n# The value is set in the server's environment, not in the code.\nAPI_KEY = os.environ.get('STRIPE_API_KEY')"
+        }
+      }
+  ]
+}

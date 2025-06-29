@@ -5,20 +5,621 @@
   "isAiGenerated": false,
   "language": "bash",
   "cards": [
-    { "category": "Shell Scripting", "hint": "This is the very first line of a shell script, known as the 'shebang'.", "question": "What is the purpose of the `#!/bin/bash` line in a script?", "options": ["It's a comment for the author", "It tells the OS which interpreter to use", "It imports a library named 'bash'"], "correctAnswer": "It tells the OS which interpreter to use", "content": { "type": "code", "language": "bash", "value": "#!/bin/bash\n\necho \"Hello from the script!\"" }},
-    { "category": "Shell Scripting", "hint": "Using variables makes a script reusable and easier to maintain by centralizing values.", "question": "What is the main benefit of using variables in a shell script?", "options": ["They make the script run faster", "They make the script reusable and easier to change", "They are required for all scripts to run"], "correctAnswer": "They make the script reusable and easier to change", "content": { "type": "code", "language": "bash", "value": "GREETING=\"Hello, World\"\necho $GREETING" }},
-    { "category": "Shell Scripting", "hint": "This command makes a variable visible to any child processes started by the script.", "question": "Which command makes a variable visible to other processes started by the script?", "options": ["SET", "GLOBAL", "export"], "correctAnswer": "export", "content": { "type": "code", "language": "bash", "value": "export API_KEY=\"xyz123\"\n./run_backup.sh" }},
-    { "category": "Shell Scripting", "hint": "This conditional structure allows a script to make decisions and execute code based on conditions.", "question": "What is the role of an `if [ ... ]` structure in a script?", "options": ["To create loops", "To make decisions and improve robustness", "To define functions"], "correctAnswer": "To make decisions and improve robustness", "content": { "type": "code", "language": "bash", "value": "if [ -f \"/etc/hosts\" ]; then\n  echo \"Hosts file found.\"\nfi" }},
-    { "category": "Shell Scripting", "hint": "A non-zero exit code signals to the system that the script has failed.", "question": "What does `exit 1` signify when used in a shell script?", "options": ["The script finished successfully", "The script failed and should stop the process", "The script is pausing"], "correctAnswer": "The script failed and should stop the process", "content": { "type": "code", "language": "bash", "value": "echo \"Error: Something went wrong.\" >&2\nexit 1" }},
-    { "category": "Shell Scripting", "hint": "This syntax, called command substitution, executes a command and captures its standard output.", "question": "What does the `$(...)` syntax do in a shell script?", "options": ["It creates a new variable", "It executes a command and captures its output", "It defines a comment block"], "correctAnswer": "It executes a command and captures its output", "content": { "type": "code", "language": "bash", "value": "TODAY=$(date +%F)\necho \"Today's date is $TODAY\"" }},
-    { "category": "Shell Scripting", "hint": "This operator creates a pipeline, sending the output of one command to the input of the next.", "question": "What is the function of the pipe `|` operator?", "options": ["It compares two values", "It creates a data pipeline between commands", "It performs a logical OR operation"], "correctAnswer": "It creates a data pipeline between commands", "content": { "type": "code", "language": "bash", "value": "ls -l | grep \".txt\"" }},
-    { "category": "Shell Scripting", "hint": "These special variables are used to pass data into the script from the command line.", "question": "How does a script access the first argument it was run with?", "options": ["$ARG1", "$1", "$INPUT1"], "correctAnswer": "$1", "content": { "type": "code", "language": "bash", "value": "# Usage: ./my_script.sh argument1\necho \"The first argument is: $1\"" }},
-    { "category": "Shell Scripting", "hint": "This command is required to give a script file permission to be run as a program.", "question": "Which command is needed to make a script executable?", "options": ["make runnable script.sh", "run script.sh", "chmod +x script.sh"], "correctAnswer": "chmod +x script.sh", "content": { "type": "code", "language": "bash", "value": "chmod +x deploy.sh\n./deploy.sh" }},
-    { "category": "Build Process", "hint": "This command acts as the main 'orchestrator' for a Flutter build for any platform.", "question": "What command acts as the main entry point for a Flutter build?", "options": ["`xcodebuild`", "`flutter build`", "`gradle`"], "correctAnswer": "`flutter build`", "content": { "type": "code", "language": "bash", "value": "flutter build apk --release" }},
-    { "category": "Android Compilation", "hint": "This is the primary build automation system used for native Android projects.", "question": "What is described as the 'Master Builder' for Android?", "options": ["Android Studio", "Android SDK", "Gradle"], "correctAnswer": "Gradle", "content": { "type": "code", "language": "bash", "value": "cd android\n./gradlew assembleRelease" }},
-    { "category": "iOS Compilation", "hint": "This is the all-in-one IDE and primary build system for all Apple applications.", "question": "What is the main build tool for all Apple applications, including iOS?", "options": ["CocoaPods", "Swiftc", "Xcode"], "correctAnswer": "Xcode", "content": { "type": "none" }},
-    { "category": "iOS Compilation", "hint": "This dependency manager for native iOS projects is specified in a 'Podfile'.", "question": "What tool manages native libraries (dependencies) for Xcode projects?", "options": ["Swift Package Manager", "Carthage", "CocoaPods"], "correctAnswer": "CocoaPods", "content": { "type": "code", "language": "ruby", "value": "# ios/Podfile\n\ntarget 'Runner' do\n  use_frameworks!\n  pod 'FirebaseAnalytics'\nend" }},
-    { "category": "Build Artifacts", "hint": "This is the modern, preferred format for submitting an app to the Google Play Store.", "question": "What is the file extension for an Android App Bundle?", "options": [".apk", ".aar", ".aab"], "correctAnswer": ".aab", "content": { "type": "code", "language": "bash", "value": "# This command generates the app bundle.\nflutter build appbundle --release" }},
-    { "category": "Build Artifacts", "hint": "This is the final package that gets installed on an iOS device or submitted to the App Store.", "question": "The result of `flutter build ipa` is a file with what extension?", "options": [".ipa", ".app", ".xcarchive"], "correctAnswer": ".ipa", "content": { "type": "code", "language": "bash", "value": "# This command generates the iOS App Store package.\nflutter build ipa --release" }}
+    {
+      "category": "Shell Scripting",
+      "hint": "This is the very first line of a shell script, known as the 'shebang'.",
+      "question": "What is the purpose of the `#!/bin/bash` line in a script?",
+      "options": [
+        "It's a comment for the author",
+        "It tells the OS which interpreter to use",
+        "It imports a library named 'bash'"
+      ],
+      "correctAnswer": "It tells the OS which interpreter to use",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "#!/bin/bash\n\necho \"Hello from the script!\""
+      }
+    },
+    {
+      "category": "Shell Scripting",
+      "hint": "This command is required to give a script file permission to be run as a program.",
+      "question": "Which command is needed to make a script executable?",
+      "options": [
+        "make runnable script.sh",
+        "run script.sh",
+        "chmod +x script.sh"
+      ],
+      "correctAnswer": "chmod +x script.sh",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# First, give the script execution permissions.\nchmod +x deploy.sh\n\n# Now, you can run it.\n./deploy.sh"
+      }
+    },
+    {
+      "category": "Shell Scripting",
+      "hint": "This practice prevents word splitting and issues with filenames containing spaces.",
+      "question": "Why is it crucial to quote variables like `\"$FILENAME\"`?",
+      "options": [
+        "It makes the variable a different color.",
+        "It prevents errors if the value contains spaces.",
+        "It's required for variables to be used."
+      ],
+      "correctAnswer": "It prevents errors if the value contains spaces.",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "FILENAME=\"My Report.docx\"\n\n# This works correctly because of the quotes.\ncp \"$FILENAME\" /backups/"
+      }
+    },
+    {
+      "category": "Shell Scripting",
+      "hint": "This shell option causes a script to exit immediately if a command exits with a non-zero status.",
+      "question": "What is the purpose of `set -e` at the top of a shell script?",
+      "options": [
+        "It enables verbose logging for every command.",
+        "It stops the script on the first error.",
+        "It encrypts the script's variables."
+      ],
+      "correctAnswer": "It stops the script on the first error.",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# This script will exit after the 'mkdir' fails.\nset -e\n\nmkdir /root/new_dir # This will fail\necho \"This message will not be displayed.\""
+      }
+    },
+    {
+      "category": "Shell Scripting",
+      "hint": "This special variable holds the exit status of the most recently executed command.",
+      "question": "Which special variable would you check to see if the previous command was successful?",
+      "options": [
+        "$STATUS",
+        "$#",
+        "$?"
+      ],
+      "correctAnswer": "$?",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "grep \"error\" log.txt\n\nif [ $? -ne 0 ]; then\n  echo \"No errors found.\"\nfi"
+      }
+    },
+    {
+      "category": "Shell Scripting",
+      "hint": "This conditional test checks if a given path exists and is a directory.",
+      "question": "What does the `[ -d \"/path/to/dir\" ]` test check for?",
+      "options": [
+        "If the directory is empty.",
+        "If the path exists and is a directory.",
+        "If the directory is deletable."
+      ],
+      "correctAnswer": "If the path exists and is a directory.",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "BUILD_DIR=\"./build\"\n\nif [ ! -d \"$BUILD_DIR\" ]; then\n  mkdir \"$BUILD_DIR\"\nfi"
+      }
+    },
+    {
+      "category": "Shell Scripting",
+      "hint": "This syntax is used to redirect one file descriptor to another, often for combining output streams.",
+      "question": "What is the purpose of `2>&1` in a command?",
+      "options": [
+        "It runs the command twice.",
+        "It redirects standard error to standard output.",
+        "It limits the command's output to 2 lines."
+      ],
+      "correctAnswer": "It redirects standard error to standard output.",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# This sends both normal and error messages to log.txt\n./run_build.sh > log.txt 2>&1"
+      }
+    },
+    {
+      "category": "Shell Scripting",
+      "hint": "This structure is used to repeatedly execute a block of code for each item in a list.",
+      "question": "Which loop structure is ideal for iterating over a list of files?",
+      "options": [
+        "while-do",
+        "if-then",
+        "for-in"
+      ],
+      "correctAnswer": "for-in",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "for FILENAME in *.txt; do\n  echo \"Processing $FILENAME...\"\ndone"
+      }
+    },
+    {
+        "category": "Shell Scripting",
+        "hint": "This command allows a script to get input directly from the user.",
+        "question": "Which command pauses a script and waits for user input?",
+        "options": [
+          "input",
+          "get",
+          "read"
+        ],
+        "correctAnswer": "read",
+        "content": {
+          "type": "code",
+          "language": "bash",
+          "value": "echo \"What is your name?\"\nread USER_NAME\necho \"Hello, $USER_NAME\""
+        }
+      },
+    {
+      "category": "Shell Scripting",
+      "hint": "This command is a powerful tool for finding files or directories based on criteria like name, size, or type.",
+      "question": "How would you find all `.log` files in the current directory and its subdirectories?",
+      "options": [
+        "grep .log .",
+        "ls *.log",
+        "find . -name \"*.log\""
+      ],
+      "correctAnswer": "find . -name \"*.log\"",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# This command is very useful for cleanup scripts.\nfind . -name \"*.tmp\" -type f -delete"
+      }
+    },
+    {
+      "category": "Shell Scripting",
+      "hint": "This special variable represents all positional parameters as a single string.",
+      "question": "What does the special variable `$*` represent?",
+      "options": [
+        "The script's name",
+        "The number of arguments",
+        "All arguments as one string"
+      ],
+      "correctAnswer": "All arguments as one string",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# If run as ./script.sh arg1 \"arg 2\"\n# This will print: arg1 arg 2\nfor arg in \"$*\"; do echo \"$arg\"; done"
+      }
+    },
+    {
+      "category": "Shell Scripting",
+      "hint": "This special variable represents all positional parameters as separate, quoted strings.",
+      "question": "What is the key difference of using `\"$@\"` to loop over arguments?",
+      "options": [
+        "It's faster than `$*`",
+        "It treats each argument as a separate word",
+        "It combines all arguments into one"
+      ],
+      "correctAnswer": "It treats each argument as a separate word",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# If run as ./script.sh arg1 \"arg 2\"\n# This will print 'arg1' and 'arg 2' on separate lines.\nfor arg in \"$@\"; do echo \"$arg\"; done"
+      }
+    },
+    {
+      "category": "Shell Scripting",
+      "hint": "This stream editor command is used to perform text substitution on a file or stream.",
+      "question": "What `sed` command would you use to replace all instances of 'api_key' with 'REDACTED' in a file?",
+      "options": [
+        "sed 'replace/api_key/REDACTED/' config.txt",
+        "sed 's/api_key/REDACTED/g' config.txt",
+        "sed 'change/api_key/REDACTED/all' config.txt"
+      ],
+      "correctAnswer": "sed 's/api_key/REDACTED/g' config.txt",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# Replaces 'v1.0' with 'v2.0' in a config file.\nsed -i 's/version=\"1.0\"/version=\"2.0\"/g' config.xml"
+      }
+    },
+    {
+      "category": "Build Process",
+      "hint": "This command is used to pass compile-time configuration from the `flutter build` command to the Dart code.",
+      "question": "How can you pass a custom variable from the command line into your Flutter app at build time?",
+      "options": [
+        "Using `--set-variable`",
+        "Using `--dart-define`",
+        "Using `--build-arg`"
+      ],
+      "correctAnswer": "Using `--dart-define`",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# This variable can be accessed in Dart code.\nflutter build apk --dart-define=API_URL=https://prod.api"
+      }
+    },
+    {
+      "category": "Build Process",
+      "hint": "This command fetches all the dependencies listed in the `pubspec.yaml` file.",
+      "question": "What is the function of the `flutter pub get` command?",
+      "options": [
+        "It compiles the Flutter application.",
+        "It downloads the project's dependencies.",
+        "It gets the latest version of Flutter."
+      ],
+      "correctAnswer": "It downloads the project's dependencies.",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# Run this command after editing pubspec.yaml\nflutter pub get"
+      }
+    },
+    {
+      "category": "Build Process",
+      "hint": "This command removes temporary and build-related files, ensuring a clean state before a new build.",
+      "question": "What is the primary purpose of running `flutter clean`?",
+      "options": [
+        "It uninstalls the app from a device.",
+        "It deletes the Flutter SDK.",
+        "It removes build artifacts to resolve build issues."
+      ],
+      "correctAnswer": "It removes build artifacts to resolve build issues.",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# Often used when builds are failing unexpectedly.\nflutter clean && flutter pub get"
+      }
+    },
+    {
+      "category": "Build Process",
+      "hint": "This file is auto-generated and lists the exact versions of every dependency, ensuring consistent builds.",
+      "question": "What is the role of the `pubspec.lock` file?",
+      "options": [
+        "It prevents changes to `pubspec.yaml`",
+        "It's a backup of your dependencies",
+        "It locks dependency versions for consistency"
+      ],
+      "correctAnswer": "It locks dependency versions for consistency",
+      "content": {
+        "type": "code",
+        "language": "yaml",
+        "value": "# In pubspec.lock (auto-generated)\npackages:\n  http:\n    version: \"1.2.1\"\n    description:\n      name: http"
+      }
+    },
+    {
+      "category": "Build Process",
+      "hint": "These parameters allow you to set the public-facing version and the internal tracking number for your app.",
+      "question": "What is the difference between `--build-name` and `--build-number` in `flutter build`?",
+      "options": [
+        "They are aliases for the same thing",
+        "Name is for Android, Number is for iOS",
+        "Name is the version string, Number is an integer counter"
+      ],
+      "correctAnswer": "Name is the version string, Number is an integer counter",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "flutter build apk \\\n  --build-name=1.0.5 \\\n  --build-number=17"
+      }
+    },
+    {
+      "category": "Android Compilation",
+      "hint": "This script, included in the project, ensures a consistent Gradle version is used for builds.",
+      "question": "What is the main advantage of using `./gradlew` (Gradle Wrapper)?",
+      "options": [
+        "It's faster than the regular `gradle` command.",
+        "It guarantees a consistent build environment.",
+        "It only works for release builds."
+      ],
+      "correctAnswer": "It guarantees a consistent build environment.",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "cd android\n\n# This uses the project-defined Gradle version.\n./gradlew assembleRelease"
+      }
+    },
+    {
+      "category": "Android Compilation",
+      "hint": "These are variants of your app, such as 'debug' and 'release', defined in the `build.gradle` file.",
+      "question": "In Gradle, what is the role of `buildTypes`?",
+      "options": [
+        "To define different CPU architectures.",
+        "To define different versions of the app.",
+        "To define build configurations like signing."
+      ],
+      "correctAnswer": "To define build configurations like signing.",
+      "content": {
+        "type": "code",
+        "language": "groovy",
+        "value": "// In android/app/build.gradle\nandroid {\n  buildTypes {\n    release {\n      minifyEnabled true\n      signingConfig signingConfigs.release\n    }\n  }\n}"
+      }
+    },
+    {
+      "category": "Android Compilation",
+      "hint": "These allow you to create different versions of your app from the same codebase, e.g., free and paid.",
+      "question": "What is a `productFlavor` in a `build.gradle` file used for?",
+      "options": [
+        "Setting the Android SDK version",
+        "Creating variants of your app (e.g., demo, full)",
+        "Configuring testing libraries"
+      ],
+      "correctAnswer": "Creating variants of your app (e.g., demo, full)",
+      "content": {
+        "type": "code",
+        "language": "groovy",
+        "value": "android {\n  flavorDimensions \"version\"\n  productFlavors {\n    demo {\n      applicationIdSuffix \".demo\"\n    }\n    full {\n      applicationIdSuffix \".full\"\n    }\n  }\n}"
+      }
+    },
+    {
+      "category": "Android Compilation",
+      "hint": "This gradle task is useful for getting the SHA-1 and other signature hashes needed for external APIs.",
+      "question": "Which Gradle task displays the cryptographic hashes of your app's signing key?",
+      "options": [
+        "./gradlew getHashes",
+        "./gradlew signingReport",
+        "./gradlew showKeys"
+      ],
+      "correctAnswer": "./gradlew signingReport",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "cd android\n\n# Run this to get the SHA-1 for services like Firebase.\n./gradlew signingReport"
+      }
+    },
+    {
+      "category": "Android Compilation",
+      "hint": "This specifies the Android API level that your app is designed and tested for.",
+      "question": "What is the purpose of the `targetSdkVersion` in `build.gradle`?",
+      "options": [
+        "The minimum OS version required to run the app",
+        "The API level the app was tested against",
+        "The API level used to compile the app"
+      ],
+      "correctAnswer": "The API level the app was tested against",
+      "content": {
+        "type": "code",
+        "language": "groovy",
+        "value": "android {\n  defaultConfig {\n    minSdkVersion 21\n    targetSdkVersion 33\n  }\n}"
+      }
+    },
+    {
+      "category": "Android Compilation",
+      "hint": "This specifies the oldest Android version your app can run on.",
+      "question": "What does `minSdkVersion` define for your app?",
+      "options": [
+        "The recommended Android version",
+        "The only version it can be installed on",
+        "The minimum required Android version"
+      ],
+      "correctAnswer": "The minimum required Android version",
+      "content": {
+        "type": "code",
+        "language": "groovy",
+        "value": "// This app will not install on devices older than Lollipop.\nandroid {\n  defaultConfig {\n    minSdkVersion 21\n  }\n}"
+      }
+    },
+    {
+      "category": "iOS Compilation",
+      "hint": "This command line tool is part of Xcode and is used to perform builds, tests, and archives from a script.",
+      "question": "Which command-line tool is used to automate iOS builds in a CI/CD environment?",
+      "options": [
+        "itunes-connect",
+        "xcodebuild",
+        "swiftc"
+      ],
+      "correctAnswer": "xcodebuild",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "xcodebuild archive \\\n  -workspace Runner.xcworkspace \\\n  -scheme Runner \\\n  -configuration Release \\\n  -archivePath build/Runner.xcarchive"
+      }
+    },
+    {
+      "category": "iOS Compilation",
+      "hint": "This file, generated by CocoaPods, must be opened in Xcode instead of the `.xcodeproj` file.",
+      "question": "After running `pod install`, which file should you open to work on an iOS project?",
+      "options": [
+        "The `Podfile`",
+        "The `.xcodeproj` file",
+        "The `.xcworkspace` file"
+      ],
+      "correctAnswer": "The `.xcworkspace` file",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# This command integrates dependencies and creates the workspace.\npod install\n\n# You must now open 'YourApp.xcworkspace' in Xcode."
+      }
+    },
+    {
+      "category": "iOS Compilation",
+      "hint": "This file contains essential metadata for an iOS application, such as its bundle identifier and version.",
+      "question": "What is the purpose of the `Info.plist` file in an iOS project?",
+      "options": [
+        "To list all source code files.",
+        "To store configuration data for the app.",
+        "To list third-party dependencies."
+      ],
+      "correctAnswer": "To store configuration data for the app.",
+      "content": {
+        "type": "code",
+        "language": "xml",
+        "value": "\n<key>CFBundleVersion</key>\n<string>$(FLUTTER_BUILD_NUMBER)</string>\n<key>CFBundleDisplayName</key>\n<string>My App</string>"
+      }
+    },
+    {
+      "category": "iOS Compilation",
+      "hint": "This command installs dependencies based on the `Podfile.lock`, ensuring every developer has the exact same library versions.",
+      "question": "What is the main function of the `pod install` command?",
+      "options": [
+        "It updates all pods to their newest versions.",
+        "It installs pods according to the `Podfile.lock`.",
+        "It creates the initial `Podfile`."
+      ],
+      "correctAnswer": "It installs pods according to the `Podfile.lock`.",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "cd ios\n\n# Ensures a reproducible build by using locked versions.\npod install"
+      }
+    },
+    {
+      "category": "iOS Compilation",
+      "hint": "This command attempts to find newer versions for the pods listed in the `Podfile`.",
+      "question": "When should you use `pod update` instead of `pod install`?",
+      "options": [
+        "On a new project clone",
+        "When you want to update dependencies to new versions",
+        "They do the same thing"
+      ],
+      "correctAnswer": "When you want to update dependencies to new versions",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "cd ios\n\n# Updates pods to the newest versions allowed by the Podfile.\npod update"
+      }
+    },
+    {
+      "category": "iOS Compilation",
+      "hint": "An Xcode Scheme defines a collection of targets to build, a configuration to use, and tests to execute.",
+      "question": "What is a 'Scheme' in Xcode?",
+      "options": [
+        "The app's color theme",
+        "A build configuration for a target",
+        "A project's font settings"
+      ],
+      "correctAnswer": "A build configuration for a target",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# The -scheme parameter tells xcodebuild which target to build.\nxcodebuild build -workspace App.xcworkspace -scheme \"App-Prod\""
+      }
+    },
+    {
+      "category": "iOS Compilation",
+      "hint": "These are required by Apple to verify your identity as a developer and to deploy apps.",
+      "question": "What two core components are needed for iOS code signing?",
+      "options": [
+        "Username and Password",
+        "Signing Certificate and Provisioning Profile",
+        "App ID and Bundle ID"
+      ],
+      "correctAnswer": "Signing Certificate and Provisioning Profile",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# A simplified build command showing signing parameters.\nxcodebuild archive -scheme Runner \\\n  CODE_SIGN_IDENTITY=\"iPhone Distribution: My Team\" \\\n  PROVISIONING_PROFILE=\"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\""
+      }
+    },
+    {
+      "category": "Build Artifacts",
+      "hint": "This is the older, universal package format for Android that can be directly installed on a device.",
+      "question": "What is an `.apk` file (Android Package Kit)?",
+      "options": [
+        "A compressed source code archive.",
+        "A self-contained, installable app package.",
+        "A file that only works in the emulator."
+      ],
+      "correctAnswer": "A self-contained, installable app package.",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# This command generates a universal APK.\nflutter build apk --split-per-abi"
+      }
+    },
+    {
+      "category": "Build Artifacts",
+      "hint": "This is the modern, preferred format for submitting an app to the Google Play Store.",
+      "question": "What is the file extension for an Android App Bundle?",
+      "options": [".apk", ".aar", ".aab"],
+      "correctAnswer": ".aab",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# This command generates the app bundle.\nflutter build appbundle --release"
+      }
+    },
+    {
+      "category": "Build Artifacts",
+      "hint": "This is the final package that gets installed on an iOS device or submitted to the App Store.",
+      "question": "The result of `flutter build ipa` is a file with what extension?",
+      "options": [".ipa", ".app", ".xcarchive"],
+      "correctAnswer": ".ipa",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# This command generates the iOS App Store package.\nflutter build ipa --release"
+      }
+    },
+    {
+      "category": "Build Artifacts",
+      "hint": "This is an intermediate build format for iOS that contains the application and its debugging symbols.",
+      "question": "What is an `.xcarchive` in the iOS build process?",
+      "options": [
+        "The final file uploaded to the App Store.",
+        "An archive used to create an `.ipa` for distribution.",
+        "A backup of the Xcode project settings."
+      ],
+      "correctAnswer": "An archive used to create an `.ipa` for distribution.",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# The 'build ipa' command first creates an xcarchive.\n# The path is usually in 'build/ios/archive/'\nflutter build ipa"
+      }
+    },
+    {
+      "category": "Build Comparison",
+      "hint": "While both platforms have dependency managers, this file is central to defining them for Flutter itself.",
+      "question": "Where are Dart and Flutter asset dependencies for both platforms defined?",
+      "options": [
+        "In `build.gradle` and `Podfile`",
+        "In `pubspec.yaml`",
+        "In separate `.txt` files"
+      ],
+      "correctAnswer": "In `pubspec.yaml`",
+      "content": {
+        "type": "code",
+        "language": "yaml",
+        "value": "# In pubspec.yaml\ndependencies:\n  flutter:\n    sdk: flutter\n  http: ^1.2.1"
+      }
+    },
+    {
+      "category": "Build Comparison",
+      "hint": "This file is specific to Android and is used to declare permissions, activities, and other core components of the app.",
+      "question": "Which file is the 'app manifest' for the Android platform?",
+      "options": [
+        "`Info.plist`",
+        "`build.gradle`",
+        "`AndroidManifest.xml`"
+      ],
+      "correctAnswer": "`AndroidManifest.xml`",
+      "content": {
+        "type": "code",
+        "language": "xml",
+        "value": "\n<uses-permission android:name=\"android.permission.INTERNET\" />\n<application ... >\n    <activity ... >\n    </activity>\n</application>"
+      }
+    },
+    {
+      "category": "Build Comparison",
+      "hint": "Flutter acts as a high-level coordinator that directs the platform-specific tools.",
+      "question": "What is the relationship between `flutter build` and the native toolchains (Gradle, Xcode)?",
+      "options": [
+        "It replaces them entirely.",
+        "It delegates platform-specific work to them.",
+        "It is completely independent of them."
+      ],
+      "correctAnswer": "It delegates platform-specific work to them.",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# When you run this command...\nflutter build apk\n\n# ...Flutter is telling Gradle to run its 'assemble' task."
+      }
+    },
+    {
+      "category": "Build Comparison",
+      "hint": "The language used for configuration files differs significantly between the two platforms.",
+      "question": "Gradle build scripts are written in Groovy/Kotlin, while CocoaPods Podfiles are written in...?",
+      "options": [
+        "Swift",
+        "JSON",
+        "Ruby"
+      ],
+      "correctAnswer": "Ruby",
+      "content": {
+        "type": "code",
+        "language": "ruby",
+        "value": "# A line from a Podfile, which uses Ruby syntax\ntarget 'Runner' do\n  pod 'Firebase/Analytics'\nend"
+      }
+    }
   ]
 }
