@@ -37,14 +37,21 @@ class App {
     }
 
     async setupComponents() {
-        console.log("DEBUG: [App] setupComponents -> Initializing all components.");
-        const modalContainer = document.getElementById('modal-container');
-        if (!modalContainer) { throw new Error("Fatal Error: Modal container '#modal-container' not found."); }
-        
-        this.aiDeckModal = new AiDeckModal(modalContainer, (formData) => this.handleCreateDeck(formData));
-        await this.aiDeckModal.init();
-        this.notificationModal = new NotificationModal(modalContainer);
-        await this.notificationModal.init();
+       // Get specific containers for each modal
+         const aiModalContainer = document.getElementById('ai-modal-container');
+         const notificationModalContainer = document.getElementById('notification-modal-container');
+
+         // Ensure containers exist before proceeding
+         if (!aiModalContainer || !notificationModalContainer) { 
+             throw new Error("Fatal Error: Modal container(s) not found."); 
+         }
+         
+         // Initialize each modal with its own dedicated container
+         this.aiDeckModal = new AiDeckModal(aiModalContainer, (formData) => this.handleCreateDeck(formData));
+         await this.aiDeckModal.init();
+
+         this.notificationModal = new NotificationModal(notificationModalContainer);
+         await this.notificationModal.init();
         console.log("DEBUG: [App] setupComponents -> All components initialized.");
     }
 
