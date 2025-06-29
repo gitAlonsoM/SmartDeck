@@ -14,7 +14,7 @@ class ComponentLoader {
         const correctedPath = componentPath.startsWith('/') ? componentPath.substring(1) : componentPath;
         console.log(`DEBUG: [ComponentLoader] loadHTML -> Attempting to fetch: ${correctedPath}`);
         try {
-            const response = await fetch(componentPath);
+            const response = await fetch(correctedPath);
             if (!response.ok) {
                 throw new Error(`Failed to load component HTML: ${response.statusText} (status: ${response.status})`);
             }
