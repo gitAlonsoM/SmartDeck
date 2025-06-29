@@ -1,0 +1,48 @@
+<!-- src\components\AiDeckModal\ai-deck-modal.html -->
+
+<div id="ai-deck-modal-wrapper" class="hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50">
+    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl p-6 sm:p-8 w-full max-w-md transform transition-all animate-fade-in-up">
+        <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100 text-center">Create Deck with AI</h2>
+        <form id="ai-deck-form">
+            <div class="mb-4">
+                <label for="deck-title-input" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Deck Title</label>
+                <input type="text" id="deck-title-input" name="title" required class="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+            </div>
+            <div class="mb-4">
+                <label for="deck-prompt-input" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Description (Prompt)</label>
+                <textarea id="deck-prompt-input" name="prompt" rows="3" required class="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="e.g., Common kitchen items in English"></textarea>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">Card Options</label>
+                    <div class="mt-2 space-y-2">
+                        <div class="flex items-center">
+                            <input id="include-code-checkbox" name="includeCode" type="checkbox" class="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
+                            <label for="include-code-checkbox" class="ml-2 block text-sm text-gray-900 dark:text-gray-300">Include Code</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="include-images-checkbox" name="includeImages" type="checkbox" class="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
+                            <label for="include-images-checkbox" class="ml-2 block text-sm text-gray-900 dark:text-gray-300">Include Images</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="deck-language-input" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Card Language</label>
+                    <input type="text" id="deck-language-input" name="language" value="English" required class="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+            </div>
+            <div class="mb-6">
+                <label for="api-key-input" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Your OpenAI API Key</label>
+                <input type="password" id="api-key-input" name="apiKey" required autocomplete="new-password" class="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="sk-proj-...">
+                <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Your key is saved in your browser's local storage.</p>
+            </div>
+            <div class="flex items-center justify-end gap-4">
+                <button type="button" id="cancel-ai-deck-btn" class="px-5 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-gray-600 rounded-md hover:bg-gray-300 dark:hover:bg-gray-500">Cancel</button>
+                <button type="submit" id="submit-ai-deck-btn" class="px-5 py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700 flex items-center justify-center w-36">
+                    <span id="ai-submit-text">Generate</span>
+                    <div id="ai-spinner" class="hidden spinner"></div>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

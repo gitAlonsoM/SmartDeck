@@ -1,0 +1,1174 @@
+
+{
+  "id": "plsql_deck",
+  "name": "PL/SQL Fundamentals & Best Practices",
+  "description": "A comprehensive deck covering key concepts, syntax, and best practices for Oracle PL/SQL development, with multiple questions per topic to reinforce learning.",
+  "isAiGenerated": false,
+  "language": "sql",
+  "cards": [
+    {
+      "category": "Package Structure",
+      "hint": "Acts as the public interface or 'contract' of the package.",
+      "question": "Which part of a PL/SQL package declares the public elements accessible by other programs?",
+      "options": ["Package Body", "Package Specification", "Anonymous Block"],
+      "correctAnswer": "Package Specification",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "PACKAGE company_api IS\n  PROCEDURE hire_employee(p_name IN VARCHAR2);\nEND company_api;"
+      }
+    },
+    {
+      "category": "Package Structure",
+      "hint": "Contains the actual implementation and private logic.",
+      "question": "Where is the detailed PL/SQL code for procedures and functions implemented?",
+      "options": ["Specification", "Header", "Body"],
+      "correctAnswer": "Body",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "PACKAGE BODY company_api IS\n  PROCEDURE hire_employee(p_name IN VARCHAR2) IS\n  BEGIN\n    INSERT INTO employees (name) VALUES (p_name);\n  END hire_employee;\nEND company_api;"
+      }
+    },
+    {
+      "category": "Package Structure",
+      "hint": "This part of the package can contain logic that is not exposed to the outside world.",
+      "question": "How does a package `BODY` support the principle of encapsulation?",
+      "options": ["By encrypting its code", "By allowing private subprograms", "By connecting to a different user"],
+      "correctAnswer": "By allowing private subprograms",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "PACKAGE BODY my_pkg IS\n  FUNCTION is_valid(p_id IN NUMBER) RETURN BOOLEAN IS\n  BEGIN\n    RETURN p_id IS NOT NULL;\n  END;\n\n  PROCEDURE public_proc IS\n  BEGIN\n    IF is_valid(123) THEN NULL; END IF;\n  END;\nEND my_pkg;"
+      }
+    },
+    {
+      "category": "Package Structure",
+      "hint": "A primary benefit of grouping related logic into a single database object.",
+      "question": "What is a major performance benefit of using PL/SQL packages?",
+      "options": ["They use less disk space", "The entire package is loaded into memory on first call", "They automatically create indexes"],
+      "correctAnswer": "The entire package is loaded into memory on first call",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "BEGIN\n  -- First call loads my_package into memory\n  my_package.proc1();\n  -- Subsequent calls are faster, no reloading needed\n  my_package.proc2();\nEND;"
+      }
+    },
+    {
+      "category": "Documentation",
+      "hint": "A special comment tag used to describe a parameter for documentation generators.",
+      "question": "In `/*# @param P_ITEM_ID ... */`, what is the purpose of the `@param` tag?",
+      "options": ["To define a variable", "To create a parameter", "To document a parameter for tools"],
+      "correctAnswer": "To document a parameter for tools",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "/*# @param P_ITEM_ID The unique identifier for the item. */\nPROCEDURE ADD_ITEM(P_ITEM_ID IN NUMBER);"
+      }
+    },
+    {
+      "category": "Documentation",
+      "hint": "This annotation often indicates the intended audience or visibility.",
+      "question": "What does the `@rep:scope public` annotation typically signify in Oracle development standards?",
+      "options": ["The code is a report", "The code is for public use", "The code is in the public domain"],
+      "correctAnswer": "The code is for public use",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "/*# @rep:scope public @rep:displayname Get User Roles */\nPROCEDURE GET_ROLES(p_user_id IN NUMBER);"
+      }
+    },
+    {
+      "category": "Data Types",
+      "hint": "Used for large character data, such as a full JSON response.",
+      "question": "Which data type is essential for storing exceptionally large character data?",
+      "options": ["VARCHAR2(4000)", "CLOB", "BLOB"],
+      "correctAnswer": "CLOB",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "DECLARE\n  l_json_payload CLOB;\nBEGIN\n  l_json_payload := '{\"key\": \"very_long_value...\"}';\nEND;"
+      }
+    },
+    {
+      "category": "Data Types",
+      "hint": "Stores raw, unstructured data such as images or documents.",
+      "question": "While `CLOB` stores large text, what does the `BLOB` data type store?",
+      "options": ["Only numbers", "XML documents", "Binary data like images or files"],
+      "correctAnswer": "Binary data like images or files",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE TABLE file_storage (\n  file_id    NUMBER PRIMARY KEY,\n  file_name  VARCHAR2(100),\n  file_data  BLOB\n);"
+      }
+    },
+    {
+      "category": "Data Types",
+      "hint": "The most common data type for variable-length strings.",
+      "question": "For storing a user's name or an API token, the standard data type to use is...",
+      "options": ["CHAR", "VARCHAR2", "STRING"],
+      "correctAnswer": "VARCHAR2",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "DECLARE\n  l_user_name VARCHAR2(100) := 'John Doe';\nBEGIN\n  NULL;\nEND;"
+      }
+    },
+    {
+        "category": "Data Types",
+        "hint": "This attribute anchors a variable's data type to that of a specific database table column.",
+        "question": "How can you declare a variable that automatically inherits the data type of a table column?",
+        "options": ["AS TYPE", "%TYPE", "LIKE"],
+        "correctAnswer": "%TYPE",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "DECLARE\n  l_last_name employees.last_name%TYPE;\nBEGIN\n  SELECT last_name INTO l_last_name FROM employees WHERE employee_id = 100;\nEND;"
+        }
+    },
+    {
+        "category": "Data Types",
+        "hint": "This attribute creates a record variable that has the same structure as a full row in a table.",
+        "question": "What attribute do you use to declare a record variable that can hold an entire row from a table?",
+        "options": ["%ROW", "%ROWTYPE", "%STRUCT"],
+        "correctAnswer": "%ROWTYPE",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "DECLARE\n  l_employee_rec employees%ROWTYPE;\nBEGIN\n  SELECT * INTO l_employee_rec FROM employees WHERE employee_id = 100;\nEND;"
+        }
+    },
+    {
+        "category": "Data Types",
+        "hint": "A key advantage of using %TYPE and %ROWTYPE.",
+        "question": "What is the primary benefit of using `%TYPE` and `%ROWTYPE` for variable declarations?",
+        "options": ["They use less memory", "They automatically adapt if the underlying table structure changes", "They make code run faster"],
+        "correctAnswer": "They automatically adapt if the underlying table structure changes",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "DECLARE\n  l_emp_name  employees.last_name%TYPE;\n  l_dept_rec  departments%ROWTYPE;\nBEGIN\n  -- This code will not break if employees.last_name changes from VARCHAR2(50) to VARCHAR2(100)\n  NULL;\nEND;"
+        }
+    },
+    {
+        "category": "Data Types",
+        "hint": "A format that includes both date and time components.",
+        "question": "Which data type is appropriate for storing a precise moment, such as a transaction timestamp?",
+        "options": ["DATE", "TIMESTAMP", "TIME"],
+        "correctAnswer": "DATE",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "DECLARE\n  l_request_date DATE := SYSDATE;\nBEGIN\n  INSERT INTO logs (log_time) VALUES (l_request_date);\nEND;"
+        }
+    },
+    {
+        "category": "Custom Types",
+        "hint": "It's like a blueprint for an object, grouping related fields.",
+        "question": "What does `TYPE ... IS RECORD` define in PL/SQL?",
+        "options": ["A database table", "A collection of records", "A structured data type"],
+        "correctAnswer": "A structured data type",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "DECLARE\n  TYPE item_rec_type IS RECORD (\n    item_id   NUMBER,\n    quantity  NUMBER\n  );\n  l_item item_rec_type;\nBEGIN\n  l_item.item_id := 123;\nEND;"
+        }
+    },
+    {
+        "category": "Custom Types",
+        "hint": "It's a collection of structured objects, like a list or array.",
+        "question": "What does `TYPE ... IS TABLE OF <RECORD_TYPE>` create?",
+        "options": ["A single record", "An array of records", "A physical database table"],
+        "correctAnswer": "An array of records",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "DECLARE\n  TYPE item_rec_type IS RECORD (item_id NUMBER);\n  TYPE item_tbl_type IS TABLE OF item_rec_type;\n  l_items item_tbl_type;\nBEGIN\n  NULL;\nEND;"
+        }
+    },
+    {
+        "category": "Custom Types",
+        "hint": "The declaration location required for custom types to be used by external applications.",
+        "question": "To be used as parameters in public procedures, where must a custom RECORD or TABLE type be declared?",
+        "options": ["In the Package Body", "In the Package Specification", "In a separate script"],
+        "correctAnswer": "In the Package Specification",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "PACKAGE my_api_spec IS\n  TYPE my_record IS RECORD (id NUMBER, name VARCHAR2(100));\n  PROCEDURE process_data(p_item IN my_record);\nEND my_api_spec;"
+        }
+    },
+    {
+        "category": "Custom Types",
+        "hint": "This syntax makes the collection work like an array with numeric keys.",
+        "question": "In `TYPE ... IS TABLE OF ... INDEX BY BINARY_INTEGER;`, what is the purpose of `INDEX BY BINARY_INTEGER`?",
+        "options": ["It creates a database index", "It defines the collection as an associative array", "It limits the table to integer data"],
+        "correctAnswer": "It defines the collection as an associative array",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "DECLARE\n  TYPE t_name_list IS TABLE OF VARCHAR2(100) INDEX BY BINARY_INTEGER;\n  l_names t_name_list;\nBEGIN\n  l_names(1) := 'John';\n  l_names(100) := 'Jane';\nEND;"
+        }
+    },
+    {
+        "category": "Custom Types",
+        "hint": "The syntax for accessing a specific field within a record variable.",
+        "question": "If `v_item` is a variable of `ITEM_REC_TYPE`, how do you access its `QUANTITY` field?",
+        "options": ["v_item('QUANTITY')", "v_item.QUANTITY", "QUANTITY(v_item)"],
+        "correctAnswer": "v_item.QUANTITY",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "DECLARE\n  TYPE ITEM_REC_TYPE IS RECORD (QUANTITY NUMBER);\n  v_item ITEM_REC_TYPE;\n  l_qty NUMBER;\nBEGIN\n  v_item.QUANTITY := 10;\n  l_qty := v_item.QUANTITY;\nEND;"
+        }
+    },
+    {
+      "category": "Cursors",
+      "hint": "A pointer to a result set, used to return query results to a client app.",
+      "question": "Which cursor type is most flexible for returning dynamic query results from a procedure?",
+      "options": ["Static Cursor", "Implicit Cursor", "SYS_REFCURSOR"],
+      "correctAnswer": "SYS_REFCURSOR",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "PROCEDURE GET_DATA(p_results OUT SYS_REFCURSOR)\nIS\nBEGIN\n  OPEN p_results FOR SELECT * FROM employees;\nEND;"
+      }
+    },
+    {
+      "category": "Cursors",
+      "hint": "Associates a SELECT statement with a cursor variable at runtime.",
+      "question": "Which command is used to assign a query to a `SYS_REFCURSOR` variable?",
+      "options": ["FETCH ... INTO", "SELECT ... INTO", "OPEN ... FOR"],
+      "correctAnswer": "OPEN ... FOR",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "DECLARE\n  l_cursor SYS_REFCURSOR;\nBEGIN\n  OPEN l_cursor FOR 'SELECT * FROM departments';\nEND;"
+      }
+    },
+    {
+      "category": "Cursors",
+      "hint": "A query that is defined at compile time and given a name.",
+      "question": "A cursor declared with a name and a fixed `SELECT` statement in the `DECLARE` section is what kind of cursor?",
+      "options": ["Dynamic", "Explicit", "Anonymous"],
+      "correctAnswer": "Explicit",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "DECLARE\n  CURSOR active_users_cur IS\n    SELECT user_name FROM users WHERE status = 'ACTIVE';\nBEGIN\n  NULL;\nEND;"
+      }
+    },
+    {
+      "category": "Cursors",
+      "hint": "The opposite of a static cursor whose query is fixed at compile time.",
+      "question": "A `SYS_REFCURSOR` is a form of which cursor type, because its query can be decided at runtime?",
+      "options": ["Dynamic", "Broken", "Implicit"],
+      "correctAnswer": "Dynamic",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "PROCEDURE get_report(p_type IN VARCHAR2, p_data OUT SYS_REFCURSOR) IS\n  l_query VARCHAR2(500);\nBEGIN\n  IF p_type = 'SALES' THEN\n    l_query := 'SELECT * FROM sales_view';\n  ELSE\n    l_query := 'SELECT * FROM inventory_view';\n  END IF;\n  OPEN p_data FOR l_query;\nEND;"
+      }
+    },
+    {
+      "category": "Cursors",
+      "hint": "The `FOR ... IN` loop simplifies cursor handling by managing three key steps.",
+      "question": "When using a `FOR ... IN cursor_name LOOP`, which steps are done automatically for you?",
+      "options": ["DECLARE, COMMIT, ROLLBACK", "OPEN, FETCH, CLOSE", "SELECT, UPDATE, DELETE"],
+      "correctAnswer": "OPEN, FETCH, CLOSE",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "DECLARE\n  CURSOR c_emp IS SELECT last_name FROM employees;\nBEGIN\n  -- No explicit OPEN, FETCH, or CLOSE is needed here.\n  FOR emp_rec IN c_emp LOOP\n    DBMS_OUTPUT.PUT_LINE(emp_rec.last_name);\n  END LOOP;\nEND;"
+      }
+    },
+    {
+      "category": "Control Flow",
+      "hint": "The standard way to iterate over rows from a cursor.",
+      "question": "Which loop structure is best for processing each row returned by a cursor?",
+      "options": ["WHILE LOOP", "Basic LOOP", "FOR ... IN ... LOOP"],
+      "correctAnswer": "FOR ... IN ... LOOP",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "BEGIN\n  FOR user_rec IN (SELECT user_id, user_name FROM users) LOOP\n    DBMS_OUTPUT.PUT_LINE(user_rec.user_name);\n  END LOOP;\nEND;"
+      }
+    },
+    {
+      "category": "Control Flow",
+      "hint": "The fundamental structure for handling runtime errors.",
+      "question": "Which PL/SQL block structure is used for structured error handling?",
+      "options": ["IF/THEN/ELSE", "TRY/CATCH", "BEGIN/EXCEPTION/END"],
+      "correctAnswer": "BEGIN/EXCEPTION/END",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "BEGIN\n  l_value := 1 / 0;\nEXCEPTION\n  WHEN ZERO_DIVIDE THEN\n    log_error('Division by zero occurred.');\nEND;"
+      }
+    },
+    {
+      "category": "Control Flow",
+      "hint": "The final branch of a conditional structure that catches all other cases.",
+      "question": "In an `IF` statement, which block of code is executed if all preceding `IF` and `ELSIF` conditions are false?",
+      "options": ["ELSE", "END IF", "WHEN OTHERS"],
+      "correctAnswer": "ELSE",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "IF l_status = 'A' THEN\n  NULL;\nELSIF l_status = 'B' THEN\n  NULL;\nELSE\n  -- This block executes.\n  NULL;\nEND IF;"
+      }
+    },
+    {
+      "category": "Control Flow",
+      "hint": "It is a 'catch-all' for any runtime error that wasn't handled specifically.",
+      "question": "What is the purpose of the `WHEN OTHERS` clause in an `EXCEPTION` block?",
+      "options": ["To handle successful completion", "To catch any error not previously specified", "To run when there is no data"],
+      "correctAnswer": "To catch any error not previously specified",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "EXCEPTION\n  WHEN NO_DATA_FOUND THEN\n    log_error('Not found.');\n  WHEN OTHERS THEN\n    log_error('An unexpected error occurred.');\nEND;"
+      }
+    },
+    {
+        "category": "Control Structures",
+        "hint": "The primary structure in PL/SQL for making decisions and executing code conditionally.",
+        "question": "What is the primary construct in PL/SQL for conditional logic?",
+        "options": ["LOOP ... END LOOP", "IF ... THEN ... END IF", "CASE ... WHEN ... END CASE"],
+        "correctAnswer": "IF ... THEN ... END IF",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "IF l_balance > 500 THEN\n  l_can_withdraw := TRUE;\nEND IF;"
+        }
+    },
+    {
+        "category": "Control Structures",
+        "hint": "A structure that allows for choosing one sequence of statements from several alternatives.",
+        "question": "Which structure is often more readable than a long series of `IF/ELSIF` statements for checking a single variable against multiple values?",
+        "options": ["A `FOR` loop", "A `CASE` statement", "A `GOTO` statement"],
+        "correctAnswer": "A `CASE` statement",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "CASE l_status\n  WHEN 'A' THEN l_status_desc := 'Active';\n  WHEN 'I' THEN l_status_desc := 'Inactive';\n  ELSE l_status_desc := 'Unknown';\nEND CASE;"
+        }
+    },
+    {
+      "category": "Subprograms",
+      "hint": "Performs an action but does not have to return a value.",
+      "question": "A named PL/SQL block designed to perform an action (like deleting a record) is called a...",
+      "options": ["Function", "Procedure", "Trigger"],
+      "correctAnswer": "Procedure",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "PROCEDURE delete_line (p_line_id IN NUMBER)\nIS\nBEGIN\n  DELETE FROM order_lines WHERE line_id = p_line_id;\nEND delete_line;"
+      }
+    },
+    {
+      "category": "Subprograms",
+      "hint": "Must return a value and can be used in SQL queries.",
+      "question": "A named PL/SQL block that must compute and `RETURN` a value is called a...",
+      "options": ["Procedure", "Function", "View"],
+      "correctAnswer": "Function",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "FUNCTION get_stock_count (p_item_id IN NUMBER) RETURN NUMBER\nIS\n  l_stock NUMBER;\nBEGIN\n  SELECT quantity INTO l_stock FROM inventory;\n  RETURN l_stock;\nEND;"
+      }
+    },
+    {
+      "category": "Subprograms",
+      "hint": "One is designed for actions, the other for calculations.",
+      "question": "You would use a ... to delete a record, and a ... to calculate a value.",
+      "options": ["function, procedure", "procedure, function", "trigger, procedure"],
+      "correctAnswer": "procedure, function",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "BEGIN\n  delete_employee(7839); -- Procedure call (action)\n  l_name := get_employee_name(7839); -- Function call (calculation)\nEND;"
+      }
+    },
+    {
+      "category": "Subprograms",
+      "hint": "One can be called directly in a `SELECT` list, the other generally cannot.",
+      "question": "Which type of subprogram can be called directly within a SQL `SELECT` statement?",
+      "options": ["Procedure", "Anonymous Block", "Function"],
+      "correctAnswer": "Function",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT product_name, GET_STOCK_COUNT(product_id) FROM products;"
+      }
+    },
+    {
+      "category": "Joins",
+      "hint": "The (+) symbol is an old, vendor-specific syntax for this type of join.",
+      "question": "In Oracle's old syntax, what does the `(+)` operator signify in a `WHERE` clause?",
+      "options": ["Inner Join", "Outer Join", "Cross Join"],
+      "correctAnswer": "Outer Join",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT e.name, d.name\nFROM employees e, departments d\nWHERE e.department_id = d.department_id (+);"
+      }
+    },
+    {
+      "category": "Joins",
+      "hint": "The most common join, returns only rows that match in both tables.",
+      "question": "Which type of join would you use to get a list of customers who have placed orders?",
+      "options": ["LEFT JOIN", "INNER JOIN", "FULL OUTER JOIN"],
+      "correctAnswer": "INNER JOIN",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT c.customer_name, o.order_date\nFROM customers c\nINNER JOIN orders o ON c.customer_id = o.customer_id;"
+      }
+    },
+    {
+      "category": "Joins",
+      "hint": "Returns all rows from the left table, even if there's no match in the right table.",
+      "question": "To get a list of ALL customers and their orders (if any), which join should be used?",
+      "options": ["INNER JOIN", "RIGHT JOIN", "LEFT JOIN"],
+      "correctAnswer": "LEFT JOIN",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT c.customer_name, o.order_number\nFROM customers c\nLEFT JOIN orders o ON c.customer_id = o.customer_id;"
+      }
+    },
+    {
+      "category": "Joins",
+      "hint": "This is the modern, explicit ANSI syntax for joining tables.",
+      "question": "Which syntax is the modern, preferred way to write an `INNER JOIN`?",
+      "options": ["FROM t1, t2 WHERE t1.id = t2.id", "FROM t1 INNER JOIN t2 ON t1.id = t2.id", "FROM t1, t2 (+)"],
+      "correctAnswer": "FROM t1 INNER JOIN t2 ON t1.id = t2.id",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT e.last_name, d.department_name\nFROM employees e\nINNER JOIN departments d ON e.department_id = d.department_id;"
+      }
+    },
+    {
+      "category": "Joins",
+      "hint": "The part of the join syntax that specifies how the tables are related.",
+      "question": "In the modern `JOIN` syntax, the `ON` clause is used to specify the...",
+      "options": ["columns to select", "join condition", "tables to use"],
+      "correctAnswer": "join condition",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT ...\nFROM employees e\nINNER JOIN departments d ON e.department_id = d.department_id;"
+      }
+    },
+    {
+      "category": "Aliases",
+      "hint": "Makes queries shorter and more readable by assigning a temporary name to a table.",
+      "question": "In `FROM ra_customer_trx_all trx`, what is the purpose of `trx`?",
+      "options": ["It's a data type", "It's a table alias", "It's a required keyword"],
+      "correctAnswer": "It's a table alias",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT ord.order_number FROM oe_order_headers_all ord;"
+      }
+    },
+    {
+      "category": "Aliases",
+      "hint": "Gives a new, more readable name to a column in the result set.",
+      "question": "What is the purpose of `AS PAYMENT_NUMBER` in `SELECT rec.receipt_number AS PAYMENT_NUMBER`?",
+      "options": ["To change the data type", "To create a column alias", "To filter the results"],
+      "correctAnswer": "To create a column alias",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT h.header_id AS OrderId FROM oe_order_headers_all h;"
+      }
+    },
+    {
+      "category": "Aliases",
+      "hint": "Why aliases are crucial for APIs returning structured data.",
+      "question": "Why is aliasing columns (e.g., `SELECT c.id AS CustomerId`) particularly important for backend APIs?",
+      "options": ["It makes the query run faster", "It provides stable, predictable keys for JSON", "It is required by the database"],
+      "correctAnswer": "It provides stable, predictable keys for JSON",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT \n  order_header_id AS \"orderId\",\n  creation_date   AS \"creationDate\"\nFROM oe_order_headers_all;"
+      }
+    },
+    {
+      "category": "Keywords",
+      "hint": "Used to introduce the implementation section of a block.",
+      "question": "The keyword `AS` or `IS` separates the signature of a subprogram from its...",
+      "options": ["Parameters", "Name", "Implementation Block"],
+      "correctAnswer": "Implementation Block",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "PACKAGE BODY my_package AS\n  -- Implementation starts here\nEND my_package;"
+      }
+    },
+    {
+      "category": "Keywords",
+      "hint": "These two keywords are interchangeable when defining a subprogram.",
+      "question": "In a procedure or package definition, the keyword `IS` can always be replaced by...",
+      "options": ["AS", "BEGIN", "DEFINE"],
+      "correctAnswer": "AS",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "PROCEDURE my_proc_1 IS BEGIN NULL; END;\nPROCEDURE my_proc_2 AS BEGIN NULL; END;"
+      }
+    },
+    {
+      "category": "Parameters",
+      "hint": "The parameter's value is passed into the procedure and cannot be changed.",
+      "question": "What does the `IN` mode mean for a procedure parameter?",
+      "options": ["The procedure can write to it", "It is read-only inside the procedure", "It is both readable and writable"],
+      "correctAnswer": "It is read-only inside the procedure",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "PROCEDURE print_message(p_message IN VARCHAR2);"
+      }
+    },
+    {
+      "category": "Parameters",
+      "hint": "The procedure uses this parameter to pass a value back to the caller.",
+      "question": "What is the purpose of an `OUT` parameter?",
+      "options": ["To receive a value from the caller", "To return a value to the caller", "To be ignored by the procedure"],
+      "correctAnswer": "To return a value to the caller",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "PROCEDURE get_user_status(p_user_id IN NUMBER, p_status OUT VARCHAR2);"
+      }
+    },
+    {
+      "category": "Parameters",
+      "hint": "A parameter that can be both read from and written to within a subprogram.",
+      "question": "Which parameter mode allows a value to be passed in, modified, and passed back out?",
+      "options": ["IN", "OUT", "IN OUT"],
+      "correctAnswer": "IN OUT",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "PROCEDURE increment_counter(p_counter IN OUT NUMBER);"
+      }
+    },
+    {
+      "category": "Parameters",
+      "hint": "This is the default parameter mode if none is specified.",
+      "question": "If a parameter is declared without a mode (e.g., `p_user_id NUMBER`), what is its default mode?",
+      "options": ["IN", "OUT", "IN OUT"],
+      "correctAnswer": "IN",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "PROCEDURE get_user(p_user_id NUMBER)\nIS\nBEGIN\n  -- p_user_id is implicitly an IN parameter\n  NULL;\nEND;"
+      }
+    },
+    {
+      "category": "Transactions",
+      "hint": "Makes all pending data modifications permanent.",
+      "question": "Which command must be executed to save changes made by `INSERT`, `UPDATE`, or `DELETE` statements?",
+      "options": ["SAVEPOINT", "COMMIT", "ROLLBACK"],
+      "correctAnswer": "COMMIT",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "UPDATE accounts SET balance = balance - 100;\nCOMMIT;"
+      }
+    },
+    {
+      "category": "Transactions",
+      "hint": "Undoes changes made in the current transaction.",
+      "question": "If an error occurs, which command should be used to undo all previous steps in a transaction?",
+      "options": ["COMMIT", "SAVE", "ROLLBACK"],
+      "correctAnswer": "ROLLBACK",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "BEGIN\n  INSERT INTO orders (id) VALUES (1);\n  RAISE an_error;\nEXCEPTION\n  WHEN OTHERS THEN\n    ROLLBACK;\nEND;"
+      }
+    },
+    {
+        "category": "Transaction Control",
+        "hint": "Establishes a named marker within a transaction, allowing for a partial rollback.",
+        "question": "What command do you use to create a point within a transaction to which you can later revert?",
+        "options": ["COMMIT", "SAVEPOINT", "CHECKPOINT"],
+        "correctAnswer": "SAVEPOINT",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "UPDATE accounts SET balance = balance - 100;\nSAVEPOINT before_update;"
+        }
+    },
+    {
+        "category": "Transaction Control",
+        "hint": "Undoes all data changes made in the current transaction back to a previously defined marker.",
+        "question": "How do you undo a transaction only to a specific named marker?",
+        "options": ["ROLLBACK", "REVERT TRANSACTION", "ROLLBACK TO SAVEPOINT"],
+        "correctAnswer": "ROLLBACK TO SAVEPOINT",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "ROLLBACK TO SAVEPOINT before_update;"
+        }
+    },
+    {
+        "category": "Transaction Control",
+        "hint": "You make a change but want to undo it completely.",
+        "question": "If you `UPDATE` a row but then issue a `ROLLBACK` command, what happens to the change?",
+        "options": ["It is saved permanently", "It is undone", "It is saved temporarily"],
+        "correctAnswer": "It is undone",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "BEGIN\n  UPDATE employees SET salary = 50000 WHERE employee_id = 100;\n  ROLLBACK;\n  -- The salary change is reverted\nEND;"
+        }
+    },
+    {
+      "category": "Error Handling",
+      "hint": "Raises a custom error with a specific number and message.",
+      "question": "Which command allows you to stop execution and return a custom error message to the client?",
+      "options": ["RAISE_APPLICATION_ERROR", "THROW_EXCEPTION", "EXIT_WITH_ERROR"],
+      "correctAnswer": "RAISE_APPLICATION_ERROR",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "RAISE_APPLICATION_ERROR(-20001, 'Insufficient credit.');"
+      }
+    },
+    {
+      "category": "Error Handling",
+      "hint": "A special variable that holds the numeric error code.",
+      "question": "Inside an `EXCEPTION` block, which variable contains the numeric code of the error that occurred?",
+      "options": ["SQLCODE", "SQLERRM", "ERROR_CODE"],
+      "correctAnswer": "SQLCODE",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "EXCEPTION\n  WHEN OTHERS THEN\n    log_error('Error occurred: ' || SQLCODE);\nEND;"
+      }
+    },
+    {
+      "category": "Error Handling",
+      "hint": "A special variable that holds the error message text.",
+      "question": "Inside an `EXCEPTION` block, which variable contains the descriptive text of the error?",
+      "options": ["SQLMESSAGE", "SQLCODE", "SQLERRM"],
+      "correctAnswer": "SQLERRM",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "EXCEPTION\n  WHEN OTHERS THEN\n    log_error('Error details: ' || SQLERRM);\nEND;"
+      }
+    },
+    {
+        "category": "Error Handling",
+        "hint": "Occurs when a SELECT...INTO statement is executed but the query does not return any rows.",
+        "question": "What predefined exception is raised when a SELECT...INTO statement fails to find a row?",
+        "options": ["TOO_MANY_ROWS", "ROW_NOT_FOUND", "NO_DATA_FOUND"],
+        "correctAnswer": "NO_DATA_FOUND",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "EXCEPTION\n  WHEN NO_DATA_FOUND THEN\n    RETURN NULL;"
+        }
+    },
+    {
+        "category": "Error Handling",
+        "hint": "Occurs when a SELECT...INTO statement is executed and the query returns more than one row.",
+        "question": "What predefined exception is raised when a SELECT...INTO statement returns multiple rows?",
+        "options": ["TOO_MANY_ROWS", "MULTIPLE_ROWS_FOUND", "DATA_OVERFLOW"],
+        "correctAnswer": "TOO_MANY_ROWS",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "EXCEPTION\n  WHEN TOO_MANY_ROWS THEN\n    RAISE_APPLICATION_ERROR(-20001, 'Ambiguous data found.');"
+        }
+    },
+    {
+        "category": "Data Retrieval",
+        "hint": "Retrieves data from exactly one row and places it into local variables.",
+        "question": "What is the standard syntax in PL/SQL to query a single row and assign its column values to variables?",
+        "options": ["FETCH ... INTO", "SELECT ... INTO", "GET ROW ... INTO"],
+        "correctAnswer": "SELECT ... INTO",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "SELECT first_name, last_name\n  INTO l_first_name, l_last_name\n  FROM employees\n  WHERE employee_id = 100;"
+        }
+    },
+    {
+        "category": "Data Retrieval",
+        "hint": "This single-row system table is used when you need to select a value without querying a real table.",
+        "question": "Which table do you select from to get the result of a function or expression, like SYSDATE?",
+        "options": ["SYSTEM", "DUAL", "TEMP"],
+        "correctAnswer": "DUAL",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "SELECT SYSDATE INTO l_current_date FROM DUAL;"
+        }
+    },
+    {
+        "category": "SQL Clauses",
+        "hint": "Essential for filtering rows from a table based on one or more conditions.",
+        "question": "Which SQL clause is used to specify the criteria that rows must meet to be selected?",
+        "options": ["HAVING", "WHERE", "FILTER BY"],
+        "correctAnswer": "WHERE",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "SELECT product_name, price\n  FROM products\n  WHERE price < 50;"
+        }
+    },
+    {
+        "category": "SQL Clauses",
+        "hint": "Removes duplicate rows to return a unique set of results.",
+        "question": "Which keyword is used within a SELECT statement to ensure that a query only returns unique rows?",
+        "options": ["UNIQUE", "DISTINCT", "SINGLE"],
+        "correctAnswer": "DISTINCT",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "SELECT DISTINCT status FROM tasks;"
+        }
+    },
+    {
+        "category": "SQL Operators",
+        "hint": "The standard Oracle operator for string concatenation.",
+        "question": "What is the standard operator for joining two or more character strings together?",
+        "options": ["+", "&", "||"],
+        "correctAnswer": "||",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "l_full_name := l_first_name || ' ' || l_last_name;"
+        }
+    },
+    {
+        "category": "SQL Operators",
+        "hint": "Performs pattern matching on string data within a filtering clause.",
+        "question": "Which operator is used with wildcards (%) to search for a pattern in a text column?",
+        "options": ["MATCH", "LIKE", "CONTAINS"],
+        "correctAnswer": "LIKE",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "SELECT * FROM customers WHERE email LIKE '%@example.com';"
+        }
+    },
+    {
+        "category": "SQL Operators",
+        "hint": "A shorthand for multiple OR conditions by checking for a value within a list.",
+        "question": "What operator is used to check if a value exists within a given set of values?",
+        "options": ["BETWEEN", "ANY", "IN"],
+        "correctAnswer": "IN",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "SELECT * FROM orders WHERE status IN ('PENDING', 'SHIPPED');"
+        }
+    },
+    {
+        "category": "SQL Operators",
+        "hint": "Efficiently checks for the existence of at least one row in a subquery.",
+        "question": "Which operator should you use to check if a subquery returns any rows?",
+        "options": ["EXISTS", "COUNT() > 0", "FIND"],
+        "correctAnswer": "EXISTS",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "SELECT c.customer_name\n  FROM customers c\n  WHERE EXISTS (SELECT 1 FROM orders o WHERE o.customer_id = c.id);"
+        }
+    },
+    {
+        "category": "SQL Functions",
+        "hint": "Evaluates an expression and, if it is null, returns a specified substitute value.",
+        "question": "What function allows you to replace a NULL value with a specific default value?",
+        "options": ["IFNULL", "COALESCE", "NVL"],
+        "correctAnswer": "NVL",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "SELECT product_name, NVL(on_hand_quantity, 0) FROM inventory;"
+        }
+    },
+    {
+        "category": "SQL Functions",
+        "hint": "The ANSI-standard function for replacing NULL values, which can handle multiple arguments.",
+        "question": "Which function is a more flexible, ANSI-standard alternative to `NVL` that can take multiple expressions?",
+        "options": ["ISNULL", "DECODE", "COALESCE"],
+        "correctAnswer": "COALESCE",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "SELECT COALESCE(primary_phone, secondary_phone, 'N/A') FROM contacts;"
+        }
+    },
+    {
+        "category": "SQL Functions",
+        "hint": "Provides inline IF-THEN-ELSE logic, transforming a value based on search-result pairs.",
+        "question": "Which Oracle-specific function compares an expression to a series of values and returns a corresponding result?",
+        "options": ["CASE", "SWITCH", "DECODE"],
+        "correctAnswer": "DECODE",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "SELECT DECODE(status, 'A', 'Active', 'I', 'Inactive', 'Unknown') FROM user_accounts;"
+        }
+    },
+    {
+        "category": "SQL Functions",
+        "hint": "Converts all characters in a string to their uppercase equivalents.",
+        "question": "What is the standard SQL function for converting a string to all uppercase letters?",
+        "options": ["TO_UPPER", "UPPERCASE", "UPPER"],
+        "correctAnswer": "UPPER",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "SELECT * FROM users WHERE UPPER(username) = 'ADMIN';"
+        }
+    },
+    {
+        "category": "SQL Functions",
+        "hint": "Removes the time portion from a date value, effectively setting it to midnight.",
+        "question": "Which function is used to get just the date part of a DATE or TIMESTAMP value?",
+        "options": ["ROUND", "STRIP_TIME", "TRUNC"],
+        "correctAnswer": "TRUNC",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "SELECT * FROM user_logins WHERE TRUNC(login_time) = TRUNC(SYSDATE);"
+        }
+    },
+    {
+        "category": "SQL Functions",
+        "hint": "Returns the current date and time from the database server.",
+        "question": "Which function should you call to get the current date and time of the database server?",
+        "options": ["NOW()", "CURRENT_TIMESTAMP", "SYSDATE"],
+        "correctAnswer": "SYSDATE",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "INSERT INTO logs (log_timestamp) VALUES (SYSDATE);"
+        }
+    },
+    {
+        "category": "Oracle EBS",
+        "hint": "This core procedure sets the application context, mandatory for most E-Business Suite APIs.",
+        "question": "In Oracle EBS, which procedure initializes the environment by setting User, Responsibility, and Application ID?",
+        "options": ["MO_GLOBAL.INIT", "FND_GLOBAL.APPS_INITIALIZE", "FND_SECURITY.INITIALIZE"],
+        "correctAnswer": "FND_GLOBAL.APPS_INITIALIZE",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "fnd_global.apps_initialize (ln_user_id, l_resp_id, 671);"
+        }
+    },
+    {
+        "category": "Oracle EBS",
+        "hint": "Configures the session's data visibility to a specific organizational unit in a multi-org environment.",
+        "question": "Which procedure sets the Multi-Org access control for a specific operating unit?",
+        "options": ["SET_ORG_CONTEXT", "APPS_INITIALIZE.SET_ORG", "MO_GLOBAL.SET_POLICY_CONTEXT"],
+        "correctAnswer": "MO_GLOBAL.SET_POLICY_CONTEXT",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "mo_global.set_policy_context('S', l_org_id);"
+        }
+    },
+    {
+        "category": "Set Operators",
+        "hint": "Combines the result sets of two queries, keeping all rows from both, including any duplicates.",
+        "question": "Which set operator is used to concatenate two result sets without removing duplicate rows?",
+        "options": ["UNION", "UNION ALL", "MERGE"],
+        "correctAnswer": "UNION ALL",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "SELECT employee_id FROM sales\nUNION ALL\nSELECT employee_id FROM marketing;"
+        }
+    },
+    {
+        "category": "Set Operators",
+        "hint": "Combines the result sets of two queries and then removes any duplicate rows.",
+        "question": "Which set operator returns a single, duplicate-free result set from two or more SELECT statements?",
+        "options": ["UNION", "UNION ALL", "INTERSECT"],
+        "correctAnswer": "UNION",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "SELECT product_sku FROM catalog_a\nUNION\nSELECT product_sku FROM catalog_b;"
+        }
+    },
+    {
+        "category": "Set Operators",
+        "hint": "Returns only the rows that are present in both query result sets.",
+        "question": "Which set operator is used to find the common rows between two result sets?",
+        "options": ["MINUS", "INTERSECT", "COMMON"],
+        "correctAnswer": "INTERSECT",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "SELECT student_id FROM math_club\nINTERSECT\nSELECT student_id FROM science_club;"
+        }
+    },
+    {
+        "category": "Set Operators",
+        "hint": "Takes distinct rows from the first query and removes the ones that also appear in the second query.",
+        "question": "Which set operator returns rows from the first query that do not exist in the second query?",
+        "options": ["MINUS", "DIFFERENCE", "EXCEPT"],
+        "correctAnswer": "MINUS",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "SELECT employee_id FROM all_staff\nMINUS\nSELECT employee_id FROM staff_on_leave;"
+    }
+    },
+    {
+        "category": "PL/SQL Packages",
+        "hint": "A standard Oracle package procedure, commonly used to print output for debugging.",
+        "question": "What is the most common procedure used to display messages from a PL/SQL block?",
+        "options": ["PRINT_LINE", "DBMS_OUTPUT.PUT_LINE", "CONSOLE.LOG"],
+        "correctAnswer": "DBMS_OUTPUT.PUT_LINE",
+        "content": {
+            "type": "code",
+            "language": "sql",
+            "value": "BEGIN\n  DBMS_OUTPUT.PUT_LINE('Debug message');\nEND;"
+        }
+    },
+    {
+      "category": "Bulk Operations",
+      "hint": "This clause allows a `SELECT` statement to retrieve multiple rows into one or more collection variables at once.",
+      "question": "Which clause is used with `SELECT ... INTO` to fetch an entire result set into a collection?",
+      "options": ["FORALL", "BULK COLLECT", "MULTISET"],
+      "correctAnswer": "BULK COLLECT",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT employee_id, last_name\nBULK COLLECT INTO l_emp_ids, l_emp_names\nFROM employees;"
+      }
+    },
+    {
+      "category": "Bulk Operations",
+      "hint": "This statement is the fastest way to execute a single DML statement (INSERT, UPDATE, DELETE) for every element in a collection.",
+      "question": "What is the command for high-performance, iterative DML operations on collections?",
+      "options": ["FOR i IN ... LOOP", "FORALL", "EXECUTE IMMEDIATE"],
+      "correctAnswer": "FORALL",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "FORALL i IN l_emp_ids.FIRST..l_emp_ids.LAST\n  UPDATE employees SET salary = salary * 1.05\n  WHERE employee_id = l_emp_ids(i);"
+      }
+    },
+    {
+      "category": "Bulk Operations",
+      "hint": "The main advantage of using bulk operations over traditional loops.",
+      "question": "What is the primary performance benefit of using `FORALL` and `BULK COLLECT`?",
+      "options": ["They use less memory", "They reduce context switching between SQL and PL/SQL engines", "They are easier to read"],
+      "correctAnswer": "They reduce context switching between SQL and PL/SQL engines",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "BEGIN -- Less context switching than a standard FOR loop with individual UPDATEs\n  SELECT employee_id BULK COLLECT INTO l_ids FROM employees;\n  FORALL i IN 1..l_ids.COUNT\n    UPDATE salaries SET amount = amount + 100 WHERE emp_id = l_ids(i);\nEND;"
+      }
+    },
+    {
+      "category": "Dynamic SQL",
+      "hint": "The primary command in PL/SQL for executing a SQL statement that is constructed as a string at runtime.",
+      "question": "Which command is used to execute a SQL string that is not known until runtime?",
+      "options": ["RUN SQL", "EXECUTE IMMEDIATE", "PERFORM QUERY"],
+      "correctAnswer": "EXECUTE IMMEDIATE",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "l_sql := 'UPDATE employees SET salary = :1 WHERE department_id = :2';\nEXECUTE IMMEDIATE l_sql USING 50000, 10;"
+      }
+    },
+    {
+      "category": "Dynamic SQL",
+      "hint": "This clause in `EXECUTE IMMEDIATE` is used to pass bind variables into the dynamic SQL string.",
+      "question": "When using `EXECUTE IMMEDIATE`, which clause safely passes values into your dynamic query?",
+      "options": ["WITH", "INTO", "USING"],
+      "correctAnswer": "USING",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "l_sql := 'DELETE FROM logs WHERE log_date < :p_date';\nEXECUTE IMMEDIATE l_sql USING TRUNC(SYSDATE) - 30;"
+      }
+    },
+    {
+      "category": "Dynamic SQL",
+      "hint": "This clause in `EXECUTE IMMEDIATE` is used to retrieve values from a dynamic query into PL/SQL variables.",
+      "question": "To retrieve a value from a dynamic `SELECT` statement, which `EXECUTE IMMEDIATE` clause do you use?",
+      "options": ["RETURNING INTO", "BULK COLLECT INTO", "OUT"],
+      "correctAnswer": "BULK COLLECT INTO",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "l_sql := 'SELECT last_name FROM employees WHERE employee_id = :1';\nEXECUTE IMMEDIATE l_sql INTO l_last_name USING 100;"
+      }
+    },
+    {
+      "category": "Pragmas",
+      "hint": "This pragma allows a subprogram to run in its own transaction, which can be committed or rolled back independently of the main transaction.",
+      "question": "Which pragma defines a procedure that can commit its work without affecting the main transaction?",
+      "options": ["PRAGMA INDEPENDENT", "PRAGMA NEW_TRANSACTION", "PRAGMA AUTONOMOUS_TRANSACTION"],
+      "correctAnswer": "PRAGMA AUTONOMOUS_TRANSACTION",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE OR REPLACE PROCEDURE log_error (p_message IN VARCHAR2) IS\n  PRAGMA AUTONOMOUS_TRANSACTION;\nBEGIN\n  INSERT INTO app_logs (msg) VALUES (p_message);\n  COMMIT;\nEND;"
+      }
+    },
+    {
+      "category": "Pragmas",
+      "hint": "This pragma links a user-defined exception name with a specific Oracle error number.",
+      "question": "Which pragma is used to associate a custom exception name with an Oracle error code like -20001?",
+      "options": ["PRAGMA EXCEPTION_INIT", "PRAGMA ERROR_CODE", "PRAGMA ASSOCIATE_ERROR"],
+      "correctAnswer": "PRAGMA EXCEPTION_INIT",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "DECLARE\n  e_insufficient_funds EXCEPTION;\n  PRAGMA EXCEPTION_INIT(e_insufficient_funds, -20001);\nBEGIN\n  NULL;\nEND;"
+      }
+    },
+    {
+      "category": "Pipelined Functions",
+      "hint": "This type of function can return rows of a collection iteratively, as if it were a real table.",
+      "question": "What kind of function can be queried with `SELECT * FROM TABLE(...)`?",
+      "options": ["Aggregate Function", "Scalar Function", "Pipelined Table Function"],
+      "correctAnswer": "Pipelined Table Function",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT column_value FROM TABLE(my_pipelined_function(123));"
+      }
+    },
+    {
+      "category": "Pipelined Functions",
+      "hint": "This command sends a row from a pipelined function back to the calling query.",
+      "question": "Inside a pipelined table function, what command do you use to return a row to the caller?",
+      "options": ["RETURN ROW", "PIPE ROW", "SEND ROW"],
+      "correctAnswer": "PIPE ROW",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "LOOP\n  -- build a record l_rec\n  PIPE ROW(l_rec);\n  EXIT WHEN condition;\nEND LOOP;"
+      }
+    },
+    {
+      "category": "Advanced Data Types",
+      "hint": "A type of collection that is unbounded and must be initialized before use.",
+      "question": "Which collection type is an unbounded list of elements of the same type, defined at the schema level?",
+      "options": ["Associative Array", "Nested Table", "Varray"],
+      "correctAnswer": "Nested Table",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE TYPE list_of_names AS TABLE OF VARCHAR2(100);"
+      }
+    },
+    {
+      "category": "Advanced Data Types",
+      "hint": "A type of collection that has a fixed upper bound of elements.",
+      "question": "Which collection type is a fixed-size array of elements of the same type?",
+      "options": ["Record", "Varray", "Nested Table"],
+      "correctAnswer": "Varray",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE TYPE phone_numbers_varray AS VARRAY(5) OF VARCHAR2(20);"
+      }
+    },
+    {
+      "category": "Analytic Functions",
+      "hint": "This analytic function assigns a unique, sequential integer to each row in a partition.",
+      "question": "Which function would you use to number rows 1, 2, 3, ... within each department, ordered by salary?",
+      "options": ["RANK()", "ROW_NUMBER()", "COUNT()"],
+      "correctAnswer": "ROW_NUMBER()",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT last_name, ROW_NUMBER() OVER (PARTITION BY department_id ORDER BY salary DESC) as rn FROM employees;"
+      }
+    },
+    {
+      "category": "Analytic Functions",
+      "hint": "This analytic function assigns a rank to each row, with gaps in the ranking for ties.",
+      "question": "If two employees have the same salary, which function will give them the same rank and cause a gap in the sequence (e.g., 1, 2, 2, 4)?",
+      "options": ["ROW_NUMBER()", "DENSE_RANK()", "RANK()"],
+      "correctAnswer": "RANK()",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT last_name, RANK() OVER (ORDER BY salary DESC) as rank_val FROM employees;"
+      }
+    },
+    {
+      "category": "Analytic Functions",
+      "hint": "Allows you to access data from a subsequent row in the result set without a self-join.",
+      "question": "Which analytic function lets you access the value of the 'next' row?",
+      "options": ["NEXT()", "LEAD()", "LAG()"],
+      "correctAnswer": "LEAD()",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT last_name, salary, LEAD(salary, 1, 0) OVER (ORDER BY salary DESC) as next_salary FROM employees;"
+      }
+    },
+    {
+      "category": "Analytic Functions",
+      "hint": "Allows you to access data from a previous row in the result set without a self-join.",
+      "question": "Which analytic function lets you access the value of the 'previous' row?",
+      "options": ["PREVIOUS()", "PRIOR()", "LAG()"],
+      "correctAnswer": "LAG()",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT last_name, hire_date, LAG(hire_date, 1) OVER (ORDER BY hire_date) as prev_hire_date FROM employees;"
+      }
+    },
+    {
+      "category": "Object-Oriented PL/SQL",
+      "hint": "The fundamental building block for object-oriented programming in Oracle.",
+      "question": "What is the PL/SQL equivalent of a 'class' in other languages, used to define object blueprints?",
+      "options": ["PACKAGE", "OBJECT TYPE", "RECORD TYPE"],
+      "correctAnswer": "OBJECT TYPE",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE TYPE Person_obj AS OBJECT (\n  idno   NUMBER,\n  name   VARCHAR2(30),\n  MEMBER FUNCTION display RETURN VARCHAR2\n);"
+      }
+    },
+    {
+      "category": "Object-Oriented PL/SQL",
+      "hint": "The implementation code for the methods of an object type.",
+      "question": "Where do you define the code for the methods of an `OBJECT TYPE`?",
+      "options": ["In a Package", "In an Object Type Body", "In a Trigger"],
+      "correctAnswer": "In an Object Type Body",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE TYPE BODY Person_obj IS\n  MEMBER FUNCTION display RETURN VARCHAR2 IS\n  BEGIN\n    RETURN 'ID: ' || self.idno;\n  END;\nEND;"
+      }
+    },
+    {
+      "category": "Object-Oriented PL/SQL",
+      "hint": "The keyword used within a member method to refer to the current instance of the object.",
+      "question": "Inside an object type's member method, which keyword refers to the instance of the object itself?",
+      "options": ["THIS", "ME", "SELF"],
+      "correctAnswer": "SELF",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE TYPE BODY Person_obj IS\n  MEMBER PROCEDURE set_name(p_name VARCHAR2) IS\n  BEGIN\n    SELF.name := p_name;\n  END;\nEND;"
+      }
+    }
+  ]
+}

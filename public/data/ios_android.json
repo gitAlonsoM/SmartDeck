@@ -1,0 +1,649 @@
+{
+  "id": "ios_android_distribution_deck",
+  "name": "iOS & Android App Distribution",
+  "description": "A comprehensive deck covering key terms and concepts for distributing applications on the iOS App Store and Google Play Store, with comparisons between the two ecosystems.",
+  "isAiGenerated": false,
+  "language": "plaintext",
+  "cards": [
+    {
+      "category": "Build Artifacts",
+      "hint": "The first step in any iOS distribution process, this bundle contains the app's build and debugging information.",
+      "question": "In the iOS ecosystem, what is the name for the build artifact created by Xcode that contains the app and its debug info?",
+      "options": [
+        ".ipa",
+        ".xcarchive",
+        ".aab"
+      ],
+      "correctAnswer": ".xcarchive",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Build Artifacts",
+      "hint": "This file is the actual application package for iOS, generated from a signed archive and installed on a physical device.",
+      "question": "What is the file format for an iOS application that is installed on a device, similar to an Android .apk?",
+      "options": [
+        ".xcarchive",
+        ".app",
+        ".ipa"
+      ],
+      "correctAnswer": ".ipa",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Build Artifacts",
+      "hint": "This is what developers upload to the Play Console, which then generates optimized APKs for specific device configurations.",
+      "question": "What is the modern Android distribution format that developers upload to the Google Play Store?",
+      "options": [
+        "Android Package (.apk)",
+        "Android App Bundle (.aab)",
+        "Dalvik Executable (.dex)"
+      ],
+      "correctAnswer": "Android App Bundle (.aab)",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Build Artifacts",
+      "hint": "The traditional file format for an Android application that can be installed directly on a device.",
+      "question": "What is the standard, installable package file for an Android app called?",
+      "options": [
+        ".aab",
+        ".jar",
+        ".apk"
+      ],
+      "correctAnswer": ".apk",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "App Identification",
+      "hint": "A unique reverse-DNS string (e.g., com.example.app) that identifies an iOS app and cannot be changed after the first upload.",
+      "question": "What is the unique identifier for an iOS app, which is set in Xcode and locked permanently after the first build is uploaded to App Store Connect?",
+      "options": [
+        "App ID",
+        "Bundle ID",
+        "Team ID"
+      ],
+      "correctAnswer": "Bundle ID",
+      "content": {
+        "type": "code",
+        "language": "xml",
+        "value": "\n<key>CFBundleIdentifier</key>\n<string>com.example.myapp</string>"
+      }
+    },
+    {
+      "category": "App Identification",
+      "hint": "The direct Android equivalent of the iOS Bundle ID, specified in the app's build.gradle file.",
+      "question": "In an Android project, what property in the `build.gradle` file serves the same unique identification purpose as the `Bundle ID` on iOS?",
+      "options": [
+        "namespace",
+        "applicationId",
+        "packageName"
+      ],
+      "correctAnswer": "applicationId",
+      "content": {
+        "type": "code",
+        "language": "groovy",
+        "value": "android {\n    defaultConfig {\n        applicationId \"com.example.myapp\"\n    }\n}"
+      }
+    },
+    {
+      "category": "App Identification",
+      "hint": "An identifier created in the Apple Developer portal that links an application to services like Push Notifications or iCloud.",
+      "question": "What is the Apple Developer portal entity that must match your project's Bundle ID to enable services like push notifications?",
+      "options": [
+        "Provisioning Profile",
+        "App ID",
+        "Service ID"
+      ],
+      "correctAnswer": "App ID",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Versioning",
+      "hint": "The user-facing version of your app (e.g., \"1.2.3\") displayed on the App Store page.",
+      "question": "Which iOS Info.plist key represents the public, user-facing version string of an app?",
+      "options": [
+        "CFBundleVersion",
+        "CFBundleShortVersionString",
+        "MarketingVersion"
+      ],
+      "correctAnswer": "CFBundleShortVersionString",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Versioning",
+      "hint": "An internal version identifier that must be incremented for each new build uploaded to App Store Connect.",
+      "question": "What is the internal build number for an iOS app that must be an integer and increment with each upload for a given version?",
+      "options": [
+        "Build Number",
+        "Version Code",
+        "CFBundleVersion"
+      ],
+      "correctAnswer": "CFBundleVersion",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Versioning",
+      "hint": "The Android equivalent of iOS's `CFBundleShortVersionString`, shown to users in the Google Play Store.",
+      "question": "What is the user-facing version string in an Android `build.gradle` file?",
+      "options": [
+        "versionCode",
+        "versionName",
+        "appVersion"
+      ],
+      "correctAnswer": "versionName",
+      "content": {
+        "type": "code",
+        "language": "groovy",
+        "value": "android {\n    defaultConfig {\n        versionCode 101\n        versionName \"1.0.1\"\n    }\n}"
+      }
+    },
+    {
+      "category": "Versioning",
+      "hint": "The Android equivalent of iOS's `CFBundleVersion`, this integer must be incremented with every new release.",
+      "question": "What is the Android integer value that the Play Store uses to determine if a new version is an update?",
+      "options": [
+        "buildId",
+        "versionNumber",
+        "versionCode"
+      ],
+      "correctAnswer": "versionCode",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Code Signing",
+      "hint": "The general process of applying a digital signature to an app to certify its creator and ensure its code has not been altered.",
+      "question": "What is the mandatory process for certifying an app's integrity and author for it to run on a physical device?",
+      "options": [
+        "Archiving",
+        "Code Signing",
+        "Notarization"
+      ],
+      "correctAnswer": "Code Signing",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Code Signing",
+      "hint": "On iOS, this is a digital credential issued by Apple that proves a developer's identity for signing apps.",
+      "question": "What is the core component of the iOS signing process, managed through the Apple Developer portal?",
+      "options": [
+        "Signing Certificate",
+        "Keystore File",
+        "SSH Key"
+      ],
+      "correctAnswer": "Signing Certificate",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Code Signing",
+      "hint": "On Android, this is a local file created and managed by the developer, containing the private keys for signing.",
+      "question": "What is the developer-managed local file used to sign Android applications?",
+      "options": [
+        "Certificate Store",
+        "Keystore (.jks)",
+        "Signing Profile (.mobileprovision)"
+      ],
+      "correctAnswer": "Keystore (.jks)",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Code Signing",
+      "hint": "A build artifact that has not yet had a digital signature applied, common in collaborative workflows.",
+      "question": "An app archive that cannot be installed on a physical device because it lacks a digital signature is called:",
+      "options": [
+        "A Debug build",
+        "An Ad Hoc archive",
+        "An Unsigned archive"
+      ],
+      "correctAnswer": "An Unsigned archive",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Code Signing",
+      "hint": "This is a severe consequence of mishandling Android's signing credentials.",
+      "question": "What happens if a developer loses their Android Keystore file after publishing an app to the Play Store?",
+      "options": [
+        "They can request a new one from Google",
+        "They can no longer update the app",
+        "They can sign with a new Keystore"
+      ],
+      "correctAnswer": "They can no longer update the app",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Apple Concepts",
+      "hint": "This file ties together the App ID, signing certificates, and authorized devices for a specific build type.",
+      "question": "In the iOS ecosystem, what file links developers, devices, and an App ID into a single unit for a specific build?",
+      "options": [
+        "Info.plist",
+        "Provisioning Profile",
+        "Entitlements.plist"
+      ],
+      "correctAnswer": "Provisioning Profile",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Apple Concepts",
+      "hint": "These key-value pairs grant an executable permission to use specific services like iCloud or Push Notifications.",
+      "question": "What are the permissions an iOS app must declare to use protected services, which are authorized by a provisioning profile?",
+      "options": [
+        "Capabilities",
+        "Entitlements",
+        "Usage Descriptions"
+      ],
+      "correctAnswer": "Entitlements",
+      "content": {
+        "type": "code",
+        "language": "xml",
+        "value": "\n<key>aps-environment</key>\n<string>development</string>"
+      }
+    },
+    {
+      "category": "Apple Concepts",
+      "hint": "A paid membership required for distributing apps via TestFlight and the App Store.",
+      "question": "What is required to gain full access to Apple's distribution methods, including creating distribution certificates?",
+      "options": [
+        "An Apple ID",
+        "An Apple Developer Program membership",
+        "A notarized Developer ID"
+      ],
+      "correctAnswer": "An Apple Developer Program membership",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Apple Concepts",
+      "hint": "The entity in App Store Connect that owns the app and its associated signing assets.",
+      "question": "When working in an organization, what entity in your Apple Developer account owns the app and its signing assets?",
+      "options": [
+        "Personal Team",
+        "Team",
+        "Admin Account"
+      ],
+      "correctAnswer": "Team",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Apple Concepts",
+      "hint": "This certificate is used to sign macOS apps for distribution outside the Mac App Store.",
+      "question": "What special certificate is used to sign macOS apps for distribution outside the official store, a process which is followed by notarization?",
+      "options": [
+        "Enterprise Certificate",
+        "Developer ID Certificate",
+        "Distribution Certificate"
+      ],
+      "correctAnswer": "Developer ID Certificate",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Distribution Platforms",
+      "hint": "The web-based portal for managing apps, builds, metadata, and TestFlight for the iOS App Store.",
+      "question": "What is the name of Apple's web portal used to manage app submissions and beta testing?",
+      "options": [
+        "iTunes Connect",
+        "App Store Connect",
+        "Apple Developer Console"
+      ],
+      "correctAnswer": "App Store Connect",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Distribution Platforms",
+      "hint": "The web-based portal for managing apps, store listings, and testing tracks for the Android ecosystem.",
+      "question": "What is the direct Android equivalent of Apple's App Store Connect?",
+      "options": [
+        "Android Studio",
+        "Google Play Console",
+        "Firebase Console"
+      ],
+      "correctAnswer": "Google Play Console",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Distribution Platforms",
+      "hint": "The user interface within Xcode for viewing, validating, and distributing all the .xcarchive builds you have created.",
+      "question": "What is the name of the UI window inside Xcode that helps manage and distribute archives?",
+      "options": [
+        "Build Manager",
+        "Organizer",
+        "Distributor"
+      ],
+      "correctAnswer": "Organizer",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Testing",
+      "hint": "Apple's platform for distributing beta versions of an app to internal and external testers.",
+      "question": "What is Apple's primary platform for beta testing applications before an App Store release?",
+      "options": [
+        "Ad Hoc",
+        "TestFlight",
+        "Enterprise Distribution"
+      ],
+      "correctAnswer": "TestFlight",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Testing",
+      "hint": "The Android equivalent of TestFlight, which is integrated directly into its web portal.",
+      "question": "What is the Android equivalent of Apple's TestFlight beta testing platform?",
+      "options": [
+        "Firebase App Distribution",
+        "Google Play Console testing tracks",
+        "Sideloading APKs"
+      ],
+      "correctAnswer": "Google Play Console testing tracks",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Testing",
+      "hint": "A distribution method for a limited number of registered test devices, requiring each device's UDID to be in the provisioning profile.",
+      "question": "Which iOS distribution method allows for manual installation on a specific, pre-registered list of devices?",
+      "options": [
+        "TestFlight",
+        "Ad Hoc",
+        "Development"
+      ],
+      "correctAnswer": "Ad Hoc",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Testing",
+      "hint": "The key requirement for installing an Ad Hoc build on an iOS device.",
+      "question": "To install an Ad Hoc build, the device's unique identifier (UDID) must be included in what file?",
+      "options": [
+        "The app's Info.plist",
+        "The Ad Hoc provisioning profile",
+        "The .xcarchive itself"
+      ],
+      "correctAnswer": "The Ad Hoc provisioning profile",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Testing",
+      "hint": "This is conceptually similar to Ad Hoc distribution on iOS, but much less restrictive.",
+      "question": "What is the simplest way to test an Android app on a physical device without using the Play Store?",
+      "options": [
+        "Using Google Play testing tracks",
+        "Sharing a signed .apk file",
+        "Using Android's Enterprise program"
+      ],
+      "correctAnswer": "Sharing a signed .apk file",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Android Concepts",
+      "hint": "The permission model used by Android, declared in a specific manifest file.",
+      "question": "In Android, where does an app declare its intent to use protected features, similar to iOS Entitlements?",
+      "options": [
+        "In the build.gradle file",
+        "In the AndroidManifest.xml file",
+        "In a ProGuard rules file"
+      ],
+      "correctAnswer": "In the AndroidManifest.xml file",
+      "content": {
+        "type": "code",
+        "language": "xml",
+        "value": "<manifest ...>\n    <uses-permission android:name=\"android.permission.INTERNET\" />\n</manifest>"
+      }
+    },
+    {
+      "category": "Android Concepts",
+      "hint": "This setting must be enabled on an Android device to install an APK from outside the Google Play Store.",
+      "question": "What must a user enable on their Android device to install a shared .apk file?",
+      "options": [
+        "Developer Mode",
+        "USB Debugging",
+        "Install from unknown sources"
+      ],
+      "correctAnswer": "Install from unknown sources",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Enterprise",
+      "hint": "A program for large organizations to distribute proprietary, in-house apps to their employees, bypassing the public App Store.",
+      "question": "What Apple program allows a company to distribute in-house iOS apps directly to its employees?",
+      "options": [
+        "Ad Hoc Program",
+        "Apple Developer Enterprise Program",
+        "Custom App Distribution"
+      ],
+      "correctAnswer": "Apple Developer Enterprise Program",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Enterprise",
+      "hint": "The certificate type used for distributing in-house apps under the special Apple program for large organizations.",
+      "question": "What type of certificate is used to sign apps for the Apple Developer Enterprise Program?",
+      "options": [
+        "In-House Distribution Certificate",
+        "Universal Distribution Certificate",
+        "Developer ID Certificate"
+      ],
+      "correctAnswer": "In-House Distribution Certificate",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Build Process",
+      "hint": "This distribution flow in Xcode Organizer is essential for workflows where signing is handled by a separate team.",
+      "question": "Which Xcode Organizer flow allows you to export an unsigned archive by selecting 'Manually manage signing'?",
+      "options": [
+        "App Store Connect flow",
+        "Ad Hoc flow",
+        "Custom Distribution flow"
+      ],
+      "correctAnswer": "Custom Distribution flow",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Build Process",
+      "hint": "This flag is used with Flutter's build command to create an unsigned iOS archive.",
+      "question": "What flag do you add to the `flutter build ipa` command to create an unsigned .xcarchive?",
+      "options": [
+        "--no-signing",
+        "--export-unsigned",
+        "--no-codesign"
+      ],
+      "correctAnswer": "--no-codesign",
+      "content": {
+        "type": "code",
+        "language": "shell",
+        "value": "flutter build ipa --no-codesign"
+      }
+    },
+    {
+      "category": "Build Process",
+      "hint": "The primary reason a developer would intentionally create an unsigned archive.",
+      "question": "What is the main purpose of creating an unsigned archive in a collaborative workflow?",
+      "options": [
+        "To reduce the final file size",
+        "To allow a separate team with credentials to perform the final signing",
+        "To make the build process faster"
+      ],
+      "correctAnswer": "To allow a separate team with credentials to perform the final signing",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Core Concepts",
+      "hint": "The term for when Apple verifies a macOS app distributed outside the store is free of malicious content.",
+      "question": "What is the Apple process that scans a Developer ID-signed app for malware, which is required for it to run on modern macOS?",
+      "options": [
+        "Validation",
+        "Notarization",
+        "Verification"
+      ],
+      "correctAnswer": "Notarization",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Core Concepts",
+      "hint": "This type of developer account has significant restrictions, only allowing testing on a few personal devices.",
+      "question": "An Apple Developer Account that is not part of the paid program is known as what kind of account?",
+      "options": [
+        "A Personal Account",
+        "A Free Account",
+        "A Test Account"
+      ],
+      "correctAnswer": "A Free Account",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Core Concepts",
+      "hint": "A critical property of an iOS provisioning profile related to its validity.",
+      "question": "Besides being tied to a distribution type, what is a key limitation of all provisioning profiles?",
+      "options": [
+        "They are platform-specific",
+        "They expire and must be renewed",
+        "They can only be used once"
+      ],
+      "correctAnswer": "They expire and must be renewed",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "category": "Core Concepts",
+      "hint": "This is the primary difference in how iOS Ad Hoc and Android APK sharing manage who can install a test build.",
+      "question": "What is the key difference regarding device authorization between iOS Ad Hoc and direct Android APK distribution?",
+      "options": [
+        "iOS requires an internet connection to install",
+        "iOS requires pre-registering device UDIDs, while Android does not",
+        "Android apps are larger than iOS apps"
+      ],
+      "correctAnswer": "iOS requires pre-registering device UDIDs, while Android does not",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    }
+  ]
+}
