@@ -10,8 +10,10 @@ class ComponentLoader {
      * @returns {Promise<string>} A promise that resolves with the HTML content as a string.
      */
     static async loadHTML(componentPath) {
-        console.log(`DEBUG: [ComponentLoader] loadHTML -> Attempting to fetch: ${componentPath}`);
-        try {
+        // If path starts with '/', remove it to make it a relative path
+        const correctedPath = componentPath.startsWith('/') ? componentPath.substring(1) : componentPath;
+        console.log(`DEBUG: [ComponentLoader] loadHTML -> Attempting to fetch: ${correctedPath}`);
+        try {
             const response = await fetch(componentPath);
             if (!response.ok) {
                 throw new Error(`Failed to load component HTML: ${response.statusText} (status: ${response.status})`);

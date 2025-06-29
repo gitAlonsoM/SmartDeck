@@ -48,8 +48,9 @@ class App {
         console.log("DEBUG: [App] loadDecks -> Loading all decks.");
         let staticDecks = {};
         try {
-            const deckFiles = ['plsql_deck.json', 'shell_deck.json', 'ios_android.json'];
-            const fetchPromises = deckFiles.map(file => fetch(`/public/data/${file}`).then(res => res.json()));
+             const deckFiles = ['plsql_deck.json', 'shell_deck.json', 'ios_android.json'];
+            // Removed the leading '/' from the fetch path to make it relative
+            const fetchPromises = deckFiles.map(file => fetch(`public/data/${file}`).then(res => res.json()));
             const loadedDecks = await Promise.all(fetchPromises);
             
             loadedDecks.forEach(deck => {
