@@ -1169,6 +1169,1127 @@
         "language": "sql",
         "value": "CREATE TYPE BODY Person_obj IS\n  MEMBER PROCEDURE set_name(p_name VARCHAR2) IS\n  BEGIN\n    SELF.name := p_name;\n  END;\nEND;"
       }
+    },
+
+    {
+    "category": "Core Systems",
+    "hint": "A middleware framework inside EBS for exposing business logic.",
+    "question": "What is the primary role of the Integrated SOA Gateway (ISG)?",
+    "options": [
+      "To run the Oracle Database",
+      "To serve as a secure entry point for web services",
+      "To manage user interface themes"
+    ],
+    "correctAnswer": "To serve as a secure entry point for web services",
+    "content": {
+      "type": "none",
+      "language": "none",
+      "value": ""
     }
+  },
+  {
+    "category": "Core Systems",
+    "hint": "The fundamental structure of an EBS environment.",
+    "question": "On which of the three tiers of the EBS architecture does the ISG framework run?",
+    "options": [
+      "Database Tier",
+      "Desktop Tier",
+      "Application Tier"
+    ],
+    "correctAnswer": "Application Tier",
+    "content": {
+      "type": "none",
+      "language": "none",
+      "value": ""
+    }
+  },
+  {
+    "category": "Core Systems",
+    "hint": "An internal, searchable catalog within EBS.",
+    "question": "What is the name of the central registry where all deployed ISG services are discoverable?",
+    "options": [
+      "The Service Hub",
+      "The Integration Repository",
+      "The API Gateway"
+    ],
+    "correctAnswer": "The Integration Repository",
+    "content": {
+      "type": "none",
+      "language": "none",
+      "value": ""
+    }
+  },
+  {
+    "category": "PL/SQL Objects",
+    "hint": "The fundamental unit for organizing code in the Oracle Database.",
+    "question": "A PL/SQL package consists of which two parts?",
+    "options": [
+      "Header and Footer",
+      "Specification and Body",
+      "Public and Private Blocks"
+    ],
+    "correctAnswer": "Specification and Body",
+    "content": {
+      "type": "none",
+      "language": "none",
+      "value": ""
+    }
+  },
+  {
+    "category": "PL/SQL Objects",
+    "hint": "This part of a package acts as the public 'contract' or interface.",
+    "question": "Which part of a PL/SQL package is read by the ISG parser to find services to deploy?",
+    "options": [
+      "Package Specification (.pks)",
+      "Package Body (.pkb)",
+      "Package Trigger"
+    ],
+    "correctAnswer": "Package Specification (.pks)",
+    "content": {
+      "type": "code",
+      "language": "sql",
+      "value": "-- The ISG parser reads this file\nPACKAGE company_api IS\n  PROCEDURE hire_employee(p_name IN VARCHAR2);\nEND company_api;"
+    }
+  },
+  {
+    "category": "PL/SQL Objects",
+    "hint": "This part of a package contains the actual implementation and private logic.",
+    "question": "Where is the detailed PL/SQL code for a procedure's business logic located?",
+    "options": [
+      "In the Package Specification",
+      "In the Integration Repository",
+      "In the Package Body"
+    ],
+    "correctAnswer": "In the Package Body",
+    "content": {
+      "type": "code",
+      "language": "sql",
+      "value": "PACKAGE BODY company_api IS\n  PROCEDURE hire_employee(p_name IN VARCHAR2) IS\n  BEGIN\n    INSERT INTO employees (name) VALUES (p_name);\n  END hire_employee;\nEND company_api;"
+    }
+  },
+  {
+    "category": "PL/SQL Objects",
+    "hint": "The best-practice method for a PL/SQL procedure to return a tabular dataset via ISG.",
+    "question": "To return multiple rows of data from a REST service, what is the officially supported OUT parameter data type?",
+    "options": [
+      "SYS_REFCURSOR",
+      "TABLE OF RECORD",
+      "CLOB"
+    ],
+    "correctAnswer": "SYS_REFCURSOR",
+    "content": {
+      "type": "code",
+      "language": "sql",
+      "value": "PROCEDURE get_all_employees (\n  p_employee_data OUT SYS_REFCURSOR\n);"
+    }
+  },
+  {
+    "category": "PL/SQL Objects",
+    "hint": "A composite PL/SQL data type that is not officially supported by ISG for REST parameters.",
+    "question": "What is the risk of using a `TABLE OF RECORD` as an OUT parameter in an ISG REST service?",
+    "options": [
+      "It is a documented best practice",
+      "It may break in future Oracle patches",
+      "It performs better than a SYS_REFCURSOR"
+    ],
+    "correctAnswer": "It may break in future Oracle patches",
+    "content": {
+      "type": "none",
+      "language": "none",
+      "value": ""
+    }
+  },
+  {
+    "category": "PL/SQL Objects",
+    "hint": "This parameter mode defines data sent from the client to the EBS procedure.",
+    "question": "If a mobile app needs to send a `user_id` to a PL/SQL procedure, what parameter mode should be used?",
+    "options": [
+      "IN",
+      "OUT",
+      "IN OUT"
+    ],
+    "correctAnswer": "IN",
+    "content": {
+      "type": "code",
+      "language": "sql",
+      "value": "PROCEDURE get_user_details (\n  p_user_id IN NUMBER\n);"
+    }
+  },
+  {
+    "category": "PL/SQL Objects",
+    "hint": "This parameter mode defines data sent from the EBS procedure back to the client.",
+    "question": "If a PL/SQL procedure needs to return a status message to the mobile app, what parameter mode should be used?",
+    "options": [
+      "IN",
+      "OUT",
+      "IN OUT"
+    ],
+    "correctAnswer": "OUT",
+    "content": {
+      "type": "code",
+      "language": "sql",
+      "value": "PROCEDURE create_user (\n  p_status_message OUT VARCHAR2\n);"
+    }
+  },
+  {
+    "category": "ISG Deployment",
+    "hint": "Specially formatted PL/SQL comments that provide metadata to the ISG parser.",
+    "question": "What is the purpose of an Annotation, enclosed in `/*# ... */`, in a PL/SQL package specification?",
+    "options": [
+      "They are regular comments ignored by all tools",
+      "They provide instructions to ISG on how to create a web service",
+      "They are used for runtime debugging only"
+    ],
+    "correctAnswer": "They provide instructions to ISG on how to create a web service",
+    "content": {
+      "type": "code",
+      "language": "sql",
+      "value": "/*# @rep:scope public */\nPROCEDURE my_public_procedure;"
+    }
+  },
+  {
+    "category": "ISG Deployment",
+    "hint": "This annotation tag marks a procedure as intended for public exposure.",
+    "question": "Which annotation tag is required to make a procedure visible to the ISG deployment process?",
+    "options": [
+      "@rep:displayname",
+      "@rep:scope public",
+      "@rep:param"
+    ],
+    "correctAnswer": "@rep:scope public",
+    "content": {
+      "type": "none",
+      "language": "none",
+      "value": ""
+    }
+  },
+  {
+    "category": "ISG Deployment",
+    "hint": "This annotation tag defines the properties of a procedure's arguments for the web service.",
+    "question": "What is the `@param` tag used for in an ISG annotation?",
+    "options": [
+      "To set a package-level variable",
+      "To describe a parameter's direction (IN/OUT) and data type",
+      "To define the display name of the service"
+    ],
+    "correctAnswer": "To describe a parameter's direction (IN/OUT) and data type",
+    "content": {
+      "type": "code",
+      "language": "sql",
+      "value": "/*# @param P_USER_ID The unique identifier for the user. */\nPROCEDURE get_user(P_USER_ID IN NUMBER);"
+    }
+  },
+  {
+    "category": "ISG Deployment",
+    "hint": "The first step in deployment, where a tool reads the package specification file.",
+    "question": "What is the main function of the `irep_parser.pl` tool?",
+    "options": [
+      "It deploys the service to the web server",
+      "It compiles the package body",
+      "It scans for annotations and generates a metadata file (.ildt)"
+    ],
+    "correctAnswer": "It scans for annotations and generates a metadata file (.ildt)",
+    "content": {
+      "type": "none",
+      "language": "none",
+      "value": ""
+    }
+  },
+  {
+    "category": "ISG Deployment",
+    "hint": "The second step, which uses the output from the parser.",
+    "question": "What does the `FNDLOAD` utility do in the ISG deployment process?",
+    "options": [
+      "It loads the generated .ildt file into the Integration Repository",
+      "It loads data from a flat file into a custom table",
+      "It parses the package specification for errors"
+    ],
+    "correctAnswer": "It loads the generated .ildt file into the Integration Repository",
+    "content": {
+      "type": "none",
+      "language": "none",
+      "value": ""
+    }
+  },
+  {
+    "category": "ISG Deployment",
+    "hint": "The final administrative step, performed in the EBS user interface.",
+    "question": "After parsing and loading, what is the final step to make a service live and accessible?",
+    "options": [
+      "Recompile the package",
+      "Restart the database",
+      "Click 'Deploy' on the service within the Integration Repository UI"
+    ],
+    "correctAnswer": "Click 'Deploy' on the service within the Integration Repository UI",
+    "content": {
+      "type": "none",
+      "language": "none",
+      "value": ""
+    }
+  },
+  {
+    "category": "Execution Concepts",
+    "hint": "The process of converting PL/SQL OUT parameters into a JSON string.",
+    "question": "When ISG converts a SYS_REFCURSOR into a JSON array for a mobile app, what is this process called?",
+    "options": [
+      "Deserialization",
+      "Compilation",
+      "Serialization"
+    ],
+    "correctAnswer": "Serialization",
+    "content": {
+      "type": "none",
+      "language": "none",
+      "value": ""
+    }
+  },
+  {
+    "category": "Execution Concepts",
+    "hint": "The process of converting a JSON object from a client request into PL/SQL data types.",
+    "question": "When a mobile app sends a JSON object in a POST request, what does the ISG engine do?",
+    "options": [
+      "It serializes the JSON into a string",
+      "It deserializes the JSON into PL/SQL parameters",
+      "It stores the raw JSON in a log file"
+    ],
+    "correctAnswer": "It deserializes the JSON into PL/SQL parameters",
+    "content": {
+      "type": "none",
+      "language": "none",
+      "value": ""
+    }
+  },
+  {
+    "category": "Execution Concepts",
+    "hint": "The final, public-facing URL used to invoke a specific procedure.",
+    "question": "What is an 'Endpoint' in the context of ISG?",
+    "options": [
+      "A private database link",
+      "The URL that a client application calls to run the service",
+      "A database connection string"
+    ],
+    "correctAnswer": "The URL that a client application calls to run the service",
+    "content": {
+      "type": "code",
+      "language": "sql",
+      "value": "-- Example Endpoint URL\nhttps://yourserver.com/OA_HTML/rest/api/v1/mobile/get_products"
+    }
+  },
+  {
+    "category": "Troubleshooting",
+    "hint": "An error that prevents a service from being successfully registered in ISG.",
+    "question": "A missing or syntactically incorrect annotation block will cause what type of error?",
+    "options": [
+      "A Runtime Error",
+      "A Deployment-Time Error",
+      "A Network Timeout Error"
+    ],
+    "correctAnswer": "A Deployment-Time Error",
+    "content": {
+      "type": "none",
+      "language": "none",
+      "value": ""
+    }
+  },
+  {
+    "category": "Troubleshooting",
+    "hint": "An error that occurs only when a live, deployed service is called.",
+    "question": "A bug in the package body's logic, such as a 'no data found' exception, is what type of error?",
+    "options": [
+      "Runtime Error",
+      "Deployment-Time Error",
+      "Parsing Error"
+    ],
+    "correctAnswer": "Runtime Error",
+    "content": {
+      "type": "none",
+      "language": "none",
+      "value": ""
+    }
+  },
+  {
+    "category": "Development Concepts",
+    "hint": "The implied future cost of choosing an easy solution now over a more robust one.",
+    "question": "What kind of risk is a developer taking by using the undocumented serialization of a `TABLE OF RECORD`?",
+    "options": [
+      "No risk, as it is a common practice",
+      "A performance improvement",
+      "Incurring technical debt"
+    ],
+    "correctAnswer": "Incurring technical debt",
+    "content": {
+      "type": "none",
+      "language": "none",
+      "value": ""
+    }
+  },
+  {
+    "category": "Core Systems",
+    "hint": "This is a comprehensive suite of integrated global business applications from Oracle.",
+    "question": "What is Oracle E-Business Suite (EBS)?",
+    "options": [
+      "A single application for Human Resources only",
+      "A suite of applications for core business functions like Finance and SCM",
+      "A type of Oracle Database"
+    ],
+    "correctAnswer": "A suite of applications for core business functions like Finance and SCM",
+    "content": {
+      "type": "none",
+      "language": "none",
+      "value": ""
+    }
+  },
+  {
+    "category": "Core Systems",
+    "hint": "This tier in the EBS architecture is where all business data is stored.",
+    "question": "What is the primary role of the Database Tier in the EBS three-tier architecture?",
+    "options": [
+      "To run the business logic",
+      "To store all business data in the Oracle Database",
+      "To serve web pages to the end-user"
+    ],
+    "correctAnswer": "To store all business data in the Oracle Database",
+    "content": {
+      "type": "none",
+      "language": "none",
+      "value": ""
+    }
+  },
+  {
+    "category": "PL/SQL Objects",
+    "hint": "This is Oracle's proprietary procedural extension to SQL.",
+    "question": "What language is primarily used to write business logic, stored procedures, and triggers inside the Oracle Database?",
+    "options": [
+      "Java",
+      "PL/SQL",
+      "T-SQL"
+    ],
+    "correctAnswer": "PL/SQL",
+    "content": {
+      "type": "none",
+      "language": "none",
+      "value": ""
+    }
+  },
+  {
+    "category": "PL/SQL Objects",
+    "hint": "This parameter mode is used for a value that is sent by the client, modified, and then returned.",
+    "question": "A procedure needs to increment a counter sent by a client and return the new value. Which parameter mode should be used?",
+    "options": [
+      "IN",
+      "OUT",
+      "IN OUT"
+    ],
+    "correctAnswer": "IN OUT",
+    "content": {
+      "type": "code",
+      "language": "sql",
+      "value": "PROCEDURE increment_counter(\n  p_counter IN OUT NUMBER\n) IS\nBEGIN\n  p_counter := p_counter + 1;\nEND;"
+    }
+  },
+  {
+    "category": "ISG Deployment",
+    "hint": "This annotation tag sets a user-friendly name for the service in the repository.",
+    "question": "Which annotation allows a developer to set a clean, readable name like 'Get User Roles' for a service?",
+    "options": [
+      "@rep:scope",
+      "@rep:param",
+      "@rep:displayname"
+    ],
+    "correctAnswer": "@rep:displayname",
+    "content": {
+      "type": "code",
+      "language": "sql",
+      "value": "/*# @rep:displayname \"Get User Roles\" */"
+    }
+  },
+  {
+    "category": "ISG Deployment",
+    "hint": "This is what happens when the parser encounters a public procedure without a valid annotation.",
+    "question": "What is the consequence of a missing annotation block for a public procedure during the parsing step?",
+    "options": [
+      "The procedure is deployed with default settings",
+      "It is a fatal error that stops the deployment process for that procedure",
+      "A warning is logged, but the deployment continues"
+    ],
+    "correctAnswer": "It is a fatal error that stops the deployment process for that procedure",
+    "content": {
+      "type": "none",
+      "language": "none",
+      "value": ""
+    }
+  },
+  {
+    "category": "Execution Concepts",
+    "hint": "This is how ISG transforms a SYS_REFCURSOR for a JSON response.",
+    "question": "How does ISG typically serialize a SYS_REFCURSOR?",
+    "options": [
+      "Into a single string with comma-separated values",
+      "Into a nested JSON object with metadata",
+      "Into a clean, flat JSON array of objects"
+    ],
+    "correctAnswer": "Into a clean, flat JSON array of objects",
+    "content": {
+      "type": "none",
+      "language": "none",
+      "value": ""
+    }
+  },
+  {
+    "category": "Troubleshooting",
+    "hint": "This is a common runtime error when the ISG engine fails to execute a service.",
+    "question": "What common error might indicate a problem in the package body logic or a data issue at runtime?",
+    "options": [
+      "ISG_SERVICE_EXECUTION_ERROR",
+      "IREP_PARSER_FAILURE",
+      "FNDLOAD_MISSING_FILE"
+    ],
+    "correctAnswer": "ISG_SERVICE_EXECUTION_ERROR",
+    "content": {
+      "type": "none",
+      "language": "none",
+      "value": ""
+    }
+  },
+  {
+
+    "category": "PL/SQL Fundamentals",
+
+    "hint": "A container for organizing related procedures, functions, and variables.",
+
+    "question": "In PL/SQL, what is the primary purpose of a 'package'?",
+
+    "options": [
+
+      "To store a single large table's data",
+
+      "To group related program units into a single database object",
+
+      "To define user permissions for an application"
+
+    ],
+
+    "correctAnswer": "To group related program units into a single database object",
+
+    "content": {
+
+      "type": "none",
+
+      "language": "none",
+
+      "value": ""
+
+    }
+
+  },
+
+  {
+
+    "category": "PL/SQL Fundamentals",
+
+    "hint": "This is the public interface or 'contract' of a package.",
+
+    "question": "Which part of a PL/SQL package declares the public elements that can be called by other programs?",
+
+    "options": [
+
+      "Package Body",
+
+      "Package Specification",
+
+      "Package Header"
+
+    ],
+
+    "correctAnswer": "Package Specification",
+
+    "content": {
+
+      "type": "code",
+
+      "language": "sql",
+
+      "value": "-- This is the Specification. It defines WHAT can be called.\nPACKAGE user_utils IS\n  PROCEDURE create_user(p_username IN VARCHAR2);\n  FUNCTION is_active(p_user_id IN NUMBER) RETURN BOOLEAN;\nEND user_utils;"
+
+    }
+
+  },
+
+  {
+
+    "category": "PL/SQL Fundamentals",
+
+    "hint": "This contains the detailed implementation and private logic.",
+
+    "question": "Which part of a PL/SQL package contains the actual code that executes when a procedure is called?",
+
+    "options": [
+
+      "Package Specification",
+
+      "Anonymous Block",
+
+      "Package Body"
+
+    ],
+
+    "correctAnswer": "Package Body",
+
+    "content": {
+
+      "type": "code",
+
+      "language": "sql",
+
+      "value": "-- This is the Body. It defines HOW the procedures work.\nPACKAGE BODY user_utils IS\n  PROCEDURE create_user(p_username IN VARCHAR2) IS\n  BEGIN\n    -- Implementation code goes here...\n    NULL;\n  END create_user;\n\n  FUNCTION is_active(p_user_id IN NUMBER) RETURN BOOLEAN IS\n  BEGIN\n    RETURN TRUE; -- Logic to check status...\n  END is_active;\nEND user_utils;"
+
+    }
+
+  },
+
+  {
+
+    "category": "ISG Concepts",
+
+    "hint": "The process of analyzing text to understand its structure and meaning.",
+
+    "question": "In the context of ISG, what does 'parsing' a package specification mean?",
+
+    "options": [
+
+      "Executing the PL/SQL code",
+
+      "Reading the file to find annotations and validate its syntax",
+
+      "Encrypting the package contents"
+
+    ],
+
+    "correctAnswer": "Reading the file to find annotations and validate its syntax",
+
+    "content": {
+
+      "type": "none",
+
+      "language": "none",
+
+      "value": ""
+
+    }
+
+  },
+
+  {
+
+    "category": "ISG Concepts",
+
+    "hint": "They define the direction of data flow for a service's arguments.",
+
+    "question": "What is the general purpose of parameters (IN, OUT, IN OUT) in an ISG service?",
+
+    "options": [
+
+      "To control the version of the service",
+
+      "To define the flow of data between the client and the server",
+
+      "To set database configuration values"
+
+    ],
+
+    "correctAnswer": "To define the flow of data between the client and the server",
+
+    "content": {
+
+      "type": "code",
+
+      "language": "sql",
+
+      "value": "-- IN: Data flows IN to the server.\n-- OUT: Data flows OUT from the server.\nPROCEDURE example_proc(\n  p_input  IN  VARCHAR2,\n  p_output OUT NUMBER\n);"
+
+    }
+
+  },
+
+  {
+
+    "category": "ISG Concepts",
+
+    "hint": "A public-facing URL that a client application uses to invoke a procedure.",
+
+    "question": "What is the 'endpoint' that ISG generates for a deployed service?",
+
+    "options": [
+
+      "A database connection string",
+
+      "A URL that exposes the PL/SQL procedure over the web",
+
+      "A local file path to the package"
+
+    ],
+
+    "correctAnswer": "A URL that exposes the PL/SQL procedure over the web",
+
+    "content": {
+
+      "type": "none",
+
+      "language": "none",
+
+      "value": ""
+
+    }
+
+  },
+
+  {
+
+    "category": "ISG Concepts",
+
+    "hint": "These are the instructions that tell ISG how to create a web service.",
+
+    "question": "What is the fundamental role of 'annotations' in the ISG deployment process?",
+
+    "options": [
+
+      "They are comments for other developers and are ignored by ISG",
+
+      "They are metadata that guides the web service creation",
+
+      "They are commands that execute at runtime"
+
+    ],
+
+    "correctAnswer": "They are metadata that guides the web service creation",
+
+    "content": {
+
+      "type": "code",
+
+      "language": "sql",
+
+      "value": "/*# @rep:scope public @rep:displayname \"Get All Products\" */\n-- The comment above is metadata, not just a comment."
+
+    }
+
+  },
+
+  {
+
+    "category": "ISG Concepts",
+
+    "hint": "This is a central catalog within EBS for all available integration points.",
+
+    "question": "Once a service is loaded via FNDLOAD, where does its definition reside, making it ready for deployment?",
+
+    "options": [
+
+      "In the Application Server's memory",
+
+      "In the Oracle Integration Repository",
+
+      "In a temporary file on the server"
+
+    ],
+
+    "correctAnswer": "In the Oracle Integration Repository",
+
+    "content": {
+
+      "type": "none",
+
+      "language": "none",
+
+      "value": ""
+
+    }
+
+  },
+
+  {
+
+    "category": "ISG Concepts",
+
+    "hint": "The process of converting database data (like a cursor) into a format like JSON.",
+
+    "question": "What is 'serialization' in the context of an ISG REST service returning data?",
+
+    "options": [
+
+      "Running database queries in a specific sequence",
+
+      "Converting native Oracle data types into a web-friendly format",
+
+      "Validating user input before processing"
+
+    ],
+
+    "correctAnswer": "Converting native Oracle data types into a web-friendly format",
+
+    "content": {
+
+      "type": "none",
+
+      "language": "none",
+
+      "value": ""
+
+    }
+
+  },
+
+  {
+
+    "category": "ISG Concepts",
+
+    "hint": "The process of converting a format like JSON from a request into Oracle data types.",
+
+    "question": "When ISG receives a JSON object in a client request, what is 'deserialization'?",
+
+    "options": [
+
+      "Converting the JSON into native PL/SQL types for the procedure parameters",
+
+      "Logging the raw JSON request to a file",
+
+      "Sending the JSON response back to the client"
+
+    ],
+
+    "correctAnswer": "Converting the JSON into native PL/SQL types for the procedure parameters",
+
+    "content": {
+
+      "type": "none",
+
+      "language": "none",
+
+      "value": ""
+
+    }
+
+  },
+
+  {
+
+    "category": "General Concepts",
+
+    "hint": "This is a system that enables different software applications to communicate with each other.",
+
+    "question": "ISG acts as what kind of software component between Oracle EBS and external systems?",
+
+    "options": [
+
+      "A database driver",
+
+      "A middleware framework",
+
+      "An operating system"
+
+    ],
+
+    "correctAnswer": "A middleware framework",
+
+    "content": {
+
+      "type": "none",
+
+      "language": "none",
+
+      "value": ""
+
+    }
+
+  },
+
+  {
+
+    "category": "General Concepts",
+
+    "hint": "A pointer to a query's result set.",
+
+    "question": "In general terms, what is a 'cursor' in a database context?",
+
+    "options": [
+
+      "The blinking text symbol in a text editor",
+
+      "A memory area that holds a SQL statement and its result set",
+
+      "A user's mouse pointer"
+
+    ],
+
+    "correctAnswer": "A memory area that holds a SQL statement and its result set",
+
+    "content": {
+
+      "type": "code",
+
+      "language": "sql",
+
+      "value": "DECLARE\n  -- l_cursor is a pointer to the result set of the query\n  CURSOR l_cursor IS SELECT employee_name FROM employees;\nBEGIN\n  NULL;\nEND;"
+
+    }
+
+  },
+
+  {
+
+    "category": "General Concepts",
+
+    "hint": "The architectural principle of hiding implementation details.",
+
+    "question": "How do PL/SQL packages support 'encapsulation'?",
+
+    "options": [
+
+      "By allowing the package body (implementation) to be hidden from the user",
+
+      "By encrypting the data automatically",
+
+      "By combining all code into a single file"
+
+    ],
+
+    "correctAnswer": "By allowing the package body (implementation) to be hidden from the user",
+
+    "content": {
+
+      "type": "none",
+
+      "language": "none",
+
+      "value": ""
+
+    }
+
+  },
+
+  {
+
+    "category": "General Concepts",
+
+    "hint": "A type of error that prevents the application from being built or deployed.",
+
+    "question": "A 'Deployment-Time Error' is best described as what?",
+
+    "options": [
+
+      "An error that happens when a user is interacting with the live application",
+
+      "An error in the business logic that produces a wrong result",
+
+      "An error during the setup or installation process that prevents it from completing"
+
+    ],
+
+    "correctAnswer": "An error during the setup or installation process that prevents it from completing",
+
+    "content": {
+
+      "type": "none",
+
+      "language": "none",
+
+      "value": ""
+
+    }
+
+  },
+
+  {
+
+    "category": "General Concepts",
+
+    "hint": "A type of error that occurs while the application is in use.",
+
+    "question": "A 'Runtime Error' is best described as what?",
+
+    "options": [
+
+      "A syntax error in the source code",
+
+      "An error that happens after deployment, when the application is being used",
+
+      "An error that prevents the code from being compiled"
+
+    ],
+
+    "correctAnswer": "An error that happens after deployment, when the application is being used",
+
+    "content": {
+
+      "type": "none",
+
+      "language": "none",
+
+      "value": ""
+
+    }
+
+  },
+
+  {
+
+    "category": "PL/SQL Fundamentals",
+
+    "hint": "A structured data type that can hold a set of related fields.",
+
+    "question": "In PL/SQL, what is a 'RECORD' type used for?",
+
+    "options": [
+
+      "To store a single value like a number or string",
+
+      "To group several related data items together as a single unit",
+
+      "To define a database table"
+
+    ],
+
+    "correctAnswer": "To group several related data items together as a single unit",
+
+    "content": {
+
+      "type": "code",
+
+      "language": "sql",
+
+      "value": "DECLARE\n  TYPE t_employee_rec IS RECORD (\n    id         employees.employee_id%TYPE,\n    first_name employees.first_name%TYPE,\n    last_name  employees.last_name%TYPE\n  );\n  l_employee t_employee_rec;\nBEGIN\n  l_employee.id := 100;\nEND;"
+
+    }
+
+  },
+
+  {
+
+    "category": "PL/SQL Fundamentals",
+
+    "hint": "A data type used for storing large blocks of character data.",
+
+    "question": "Which PL/SQL data type is most suitable for storing a very long text string, like a JSON payload?",
+
+    "options": [
+
+      "VARCHAR2",
+
+      "NUMBER",
+
+      "CLOB"
+
+    ],
+
+    "correctAnswer": "CLOB",
+
+    "content": {
+
+      "type": "code",
+
+      "language": "sql",
+
+      "value": "DECLARE\n  l_json_data CLOB;\nBEGIN\n  l_json_data := '{\"id\": 1, \"data\": \"...very large amount of text...\"}';\nEND;"
+
+    }
+
+  },
+
+  {
+
+    "category": "ISG Security",
+
+    "hint": "Permissions must be managed for a service to be usable.",
+
+    "question": "After an ISG service is deployed, who can use it?",
+
+    "options": [
+
+      "Anyone on the internet, by default",
+
+      "Only users and responsibilities that have been granted specific permissions",
+
+      "Only the database administrator"
+
+    ],
+
+    "correctAnswer": "Only users and responsibilities that have been granted specific permissions",
+
+    "content": {
+
+      "type": "none",
+
+      "language": "none",
+
+      "value": ""
+
+    }
+
+  },
+
+  {
+
+    "category": "General Concepts",
+
+    "hint": "A set of rules for how two systems should communicate.",
+
+    "question": "In web services, what is an 'interface'?",
+
+    "options": [
+
+      "The graphical user interface (GUI)",
+
+      "A contract that defines how a client should interact with a service",
+
+      "The physical network connection"
+
+    ],
+
+    "correctAnswer": "A contract that defines how a client should interact with a service",
+
+    "content": {
+
+      "type": "none",
+
+      "language": "none",
+
+      "value": ""
+
+    }
+
+  },
+
+  {
+
+    "category": "PL/SQL Fundamentals",
+
+    "hint": "This is a primary benefit of grouping related logic into a single database object.",
+
+    "question": "What is a major performance benefit of using PL/SQL packages?",
+
+    "options": [
+
+      "They use less disk space than individual procedures",
+
+      "The entire package is loaded into memory on the first call",
+
+      "They automatically create indexes on tables"
+
+    ],
+
+    "correctAnswer": "The entire package is loaded into memory on the first call",
+
+    "content": {
+
+      "type": "code",
+
+      "language": "sql",
+
+      "value": "BEGIN\n  -- First call to my_package loads the whole thing into memory.\n  my_package.proc1(); \n\n  -- Subsequent calls are faster as it's already in memory.\n  my_package.proc2(); \nEND;"
+
+    }
+
+  }
+
   ]
 }
