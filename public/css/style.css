@@ -86,3 +86,16 @@ body {
 }
 
 
+/* Styles for the new TTS play buttons on cards */
+.play-tts-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem; /* Adjust icon size */
+    padding: 0.25rem;
+    line-height: 1;
+}
+
+.play-tts-btn .fa-volume-up {
+    pointer-events: none; /* Ensure click hits the button, not the icon */
+}

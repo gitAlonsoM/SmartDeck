@@ -29,6 +29,8 @@ class DeckList {
         // THE FIX IS HERE: Added a leading slash '/' to make the path absolute from the project root.
         ComponentLoader.loadHTML('/src/components/DeckList/deck-list.html').then(html => {
             this.container.innerHTML = html;
+            this.setupTtsControls(); // Initialize TTS settings
+
 
             const deckListContainer = this.container.querySelector('#deck-list-container');
             if (!deckListContainer) {
@@ -63,6 +65,60 @@ class DeckList {
             }
             console.log("DEBUG: [DeckList] render -> Deck list rendered successfully.");
         });
+    }
+/**
+     * Sets up the Text-to-Speech (TTS) controls on the deck list screen.
+     */
+    async setupTtsControls() {
+        try {
+            await TTSService.init();
+            const ttsSettings = document.getElementById('tts-settings');
+            ttsSettings.style.display = 'block'; // Show the controls
+
+            const voiceSelect = document.getElementById('voice-select');
+            const testVoiceBtn = document.getElementById('test-voice-btn');
+            const testSentence = 'Hello, this is a test of the selected voice.';
+
+            const englishVoices = TTSService.getEnglishVoices();
+            if (englishVoices.length === 0) {
+                voiceSelect.innerHTML = '<option>No English voices found</option>';
+                voiceSelect.disabled = true;
+                testVoiceBtn.disabled = true;
+                return;
+            }
+
+            // Populate dropdown
+            englishVoices.forEach(voice => {
+                const option = document.createElement('option');
+                option.textContent = `${voice.name} (${voice.lang})`;
+                option.value = voice.name;
+                voiceSelect.appendChild(option);
+            });
+
+            // Load and apply saved voice
+            const savedVoice = StorageService.loadPreferredVoice();
+            if (savedVoice) {
+                voiceSelect.value = savedVoice;
+            } else {
+                // If no voice is saved, save the first one as default
+                StorageService.savePreferredVoice(englishVoices[0].name);
+            }
+
+            // Event Listeners
+            voiceSelect.addEventListener('change', () => {
+                const selectedVoiceName = voiceSelect.value;
+                StorageService.savePreferredVoice(selectedVoiceName);
+                TTSService.speak(testSentence, selectedVoiceName);
+            });
+
+            testVoiceBtn.addEventListener('click', () => {
+                TTSService.speak(testSentence, voiceSelect.value);
+            });
+
+        } catch (error) {
+            console.error("DEBUG: [DeckList] Failed to set up TTS controls:", error);
+            document.getElementById('tts-settings').innerHTML = '<p class="text-red-500">Text-to-Speech is not supported or failed to load on this browser.</p>';
+        }
     }
 
     /**

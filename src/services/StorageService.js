@@ -152,4 +152,31 @@ static STORAGE_KEY_DECK_PROGRESS_PREFIX = 'smart-decks-v3-deck-progress-';
             console.error("DEBUG: [StorageService] saveDecks -> Error saving decks to localStorage.", error);
         }
     }
+
+
+      /**
+     * Saves the user's preferred TTS voice name to localStorage.
+     * @param {string} voiceName - The name of the voice to save.
+     */
+    static savePreferredVoice(voiceName) {
+        try {
+            localStorage.setItem(this.PREFERRED_VOICE_KEY, voiceName);
+            console.log(`DEBUG: [StorageService] savePreferredVoice -> Saved voice: ${voiceName}`);
+        } catch (error) {
+            console.error("DEBUG: [StorageService] savePreferredVoice -> Error saving voice:", error);
+        }
+    }
+
+    /**
+     * Loads the user's preferred TTS voice name from localStorage.
+     * @returns {string|null} The name of the saved voice, or null if not found.
+     */
+    static loadPreferredVoice() {
+        try {
+            return localStorage.getItem(this.PREFERRED_VOICE_KEY);
+        } catch (error) {
+            console.error("DEBUG: [StorageService] loadPreferredVoice -> Error loading voice:", error);
+            return null;
+        }
+    }
 }
