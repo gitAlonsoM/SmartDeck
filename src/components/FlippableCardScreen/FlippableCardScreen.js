@@ -53,7 +53,8 @@ class FlippableCardScreen {
 
         const textElement = document.createElement('p');
         textElement.textContent = text;
-        textElement.className = isSideA ? 'text-3xl font-semibold text-center flex-grow' : 'text-lg';
+        textElement.className = isSideA ? 'text-xl md:text-2xl font-semibold text-center flex-grow' : 'text-lg';
+
         
         const playButton = document.createElement('button');
         playButton.className = 'play-tts-btn ml-4 text-gray-400 hover:text-indigo-500 transition-colors';
