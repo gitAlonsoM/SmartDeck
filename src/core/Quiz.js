@@ -43,7 +43,7 @@ class Quiz {
      * not enough cards are available. It will NEVER pull from the 'learned' pool.
      * @param {number} quizLength - The maximum number of questions for the round.
      */
-    generateQuizRound(quizLength = 10) {
+    generateQuizRound(quizLength = 7) {
         console.log("DEBUG: [Quiz] generateQuizRound -> Generating a new, corrected quiz round.");
         const shuffle = (arr) => arr.sort(() => 0.5 - Math.random());
 

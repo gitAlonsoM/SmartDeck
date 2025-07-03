@@ -159,7 +159,7 @@ class App {
 
          const progress = StorageService.loadDeckProgress(this.state.currentDeckId); 
             this.state.quizInstance = new Quiz(deck.cards, progress);
-        this.state.quizInstance.generateQuizRound(10);
+        this.state.quizInstance.generateQuizRound(7);
 
         if (this.state.quizInstance.questions.length === 0) {
             alert("No available cards for a new quiz round!");
