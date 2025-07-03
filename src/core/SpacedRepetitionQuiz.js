@@ -11,7 +11,8 @@ class SpacedRepetitionQuiz {
         this.progress = progress;
         this.currentCards = []; // The final list of cards for this round
         this.currentIndex = 0;
-        console.log("DEBUG: [SpacedRepetitionQuiz] constructor -> Instance created.");
+        this.score = 0; // Add score property
+        console.log("DEBUG: [SpacedRepetitionQuiz] constructor -> Instance created.");
     }
 
     /**
@@ -41,7 +42,8 @@ class SpacedRepetitionQuiz {
             .filter(Boolean);
         
         this.currentIndex = 0;
-        console.log(`DEBUG: [SpacedRepetitionQuiz] generateQuizRound -> Final round generated with ${this.currentCards.length} cards.`);
+        this.score = 0; // Reset score for the new round
+        console.log(`DEBUG: [SpacedRepetitionQuiz] generateQuizRound -> Final round generated with ${this.currentCards.length} cards.`);
     }
 
     /**
@@ -57,7 +59,8 @@ class SpacedRepetitionQuiz {
 
         if (knewIt) {
             this.progress.learned.add(cardId);
-            console.log(`DEBUG: [SpacedRepetitionQuiz] selfAssess -> Card '${cardId}' marked as 'learned'.`);
+             this.score++; // Increment score if the user knew the answer
+            console.log(`DEBUG: [SpacedRepetitionQuiz] selfAssess -> Card '${cardId}' marked as 'learned'. New score: ${this.score}`);
         } else {
             this.progress.needsReview.add(cardId);
             console.log(`DEBUG: [SpacedRepetitionQuiz] selfAssess -> Card '${cardId}' marked as 'needs review'.`);

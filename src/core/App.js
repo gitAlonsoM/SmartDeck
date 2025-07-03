@@ -60,7 +60,7 @@ class App {
         console.log("DEBUG: [App] loadDecks -> Loading all decks.");
         let staticDecks = {};
         try {
-            const deckFiles = ['plsql_deck.json', 'shell_deck.json', 'ios_android.json', 'api_db.json', 'http_rest_deep_dive.json', 'english_phrasal_verbs.json'];
+            const deckFiles = ['plsql_deck.json', 'shell_deck.json', 'ios_android.json', 'api_db.json', 'http_rest_deep_dive.json', 'english_phrasal_verbs.json','it_commands_deck.json'];
             // Removed the leading '/' from the fetch path to make it relative
             const fetchPromises = deckFiles.map(file => fetch(`public/data/${file}`).then(res => res.json()));
             const loadedDecks = await Promise.all(fetchPromises);
@@ -187,8 +187,15 @@ class App {
             this.state.quizInstance.generateQuizRound(7);
             this.state.currentScreen = 'quiz';
         }
+ // Check if the generated round is empty, using the correct property for each quiz type
+        let roundIsEmpty = false;
+        if (this.state.quizInstance instanceof SpacedRepetitionQuiz) {
+        	roundIsEmpty = this.state.quizInstance.currentCards.length === 0;
+        } else { // It's a standard Quiz
+        	roundIsEmpty = this.state.quizInstance.questions.length === 0;
+        }
 
-        if (this.state.quizInstance.currentCards.length === 0 && this.state.quizInstance.questions.length === 0) {
+        if (roundIsEmpty) {
             alert("Congratulations! You've learned all the cards in this deck. Reset the deck to study again.");
             return;
         }
@@ -302,25 +309,26 @@ _getRoundEndMessage(score, total) {
 }
 
 async handleQuizEnd() {
-   const isFlippableQuiz = this.state.quizInstance instanceof SpacedRepetitionQuiz;
+  const instance = this.state.quizInstance;
+    const isFlippableQuiz = instance instanceof SpacedRepetitionQuiz;
     console.log(`DEBUG: [App] handleQuizEnd -> Ending round. Is Flippable: ${isFlippableQuiz}. Saving progress.`);
 
-    // Show a modal appropriate for the quiz type
+    const score = instance.score;
+    const total = isFlippableQuiz ? instance.currentCards.length : instance.questions.length;
+
+    // Get the dynamic message object from the recycled function
+    const result = this._getRoundEndMessage(score, total);
+    
+    // Create a context-aware message
+    let scoreMessage;
     if (isFlippableQuiz) {
-        // Show a generic completion message for flippable quizzes
-        await this.notificationModal.show(
-            'Round Complete',
-            'Your progress has been saved. Keep up the great work!',
-            { icon: 'fa-solid fa-star', color: 'text-green-500', bgColor: 'bg-green-100 dark:bg-green-900' }
-        );
+        scoreMessage = `You marked ${score} of ${total} cards as known.\n${result.message}`;
     } else {
-        // Show a score-based modal only for multiple-choice quizzes
-        const score = this.state.quizInstance.score;
-        const totalQuestions = this.state.quizInstance.questions.length;
-        const result = this._getRoundEndMessage(score, totalQuestions);
-        const scoreMessage = `You got ${score} out of ${totalQuestions} correct.\n${result.message}`;
-        await this.notificationModal.show(result.title, scoreMessage, result.iconStyle);
+        scoreMessage = `You got ${score} out of ${total} correct.\n${result.message}`;
     }
+
+    // Show the final modal
+    await this.notificationModal.show(result.title, scoreMessage, result.iconStyle);
     // The Quiz instance has been tracking progress; now we save it.
     StorageService.saveDeckProgress(this.state.currentDeckId, this.state.quizInstance.progress);
 
