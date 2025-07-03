@@ -24,7 +24,8 @@ class App {
         this.aiDeckModal = null;
         this.deckDetailComponent = null;
         this.quizScreenComponent = null;
-        this.notificationModal = null; // Add a property for the new modal
+        this.flippableCardScreen = null; 
+        this.notificationModal = null;
 
     }
 
@@ -59,7 +60,7 @@ class App {
         console.log("DEBUG: [App] loadDecks -> Loading all decks.");
         let staticDecks = {};
         try {
-             const deckFiles = ['plsql_deck.json', 'shell_deck.json', 'ios_android.json', 'api_db.json', 'http_rest_deep_dive.json'];
+            const deckFiles = ['plsql_deck.json', 'shell_deck.json', 'ios_android.json', 'api_db.json', 'http_rest_deep_dive.json', 'english_phrasal_verbs.json'];
             // Removed the leading '/' from the fetch path to make it relative
             const fetchPromises = deckFiles.map(file => fetch(`public/data/${file}`).then(res => res.json()));
             const loadedDecks = await Promise.all(fetchPromises);
@@ -124,6 +125,22 @@ class App {
                 }
                 break;
 
+                 case 'flippableQuiz':
+                if (!this.flippableCardScreen) {
+                    this.flippableCardScreen = new FlippableCardScreen(
+                        this.appContainer,
+                        (knewIt) => this.handleCardAssessment(knewIt)
+                    );
+                }
+                const currentCard = this.state.quizInstance.getCurrentCard();
+                const deckName = this.state.allDecks[this.state.currentDeckId].name;
+                if (currentCard) {
+                    this.flippableCardScreen.render(deckName, currentCard, this.state.quizInstance.currentIndex, this.state.quizInstance.currentCards.length);
+                } else {
+                    this.handleQuizEnd(); // Should not happen if logic is correct, but as a safeguard
+                }
+                break;
+
             default:
                 console.error(`DEBUG: [App] render -> Unknown screen state: ${this.state.currentScreen}`);
                 this.appContainer.innerHTML = `<p class="text-red-500">Application error: Unknown state.</p>`;
@@ -155,19 +172,28 @@ class App {
             return;
         }
 
-       
+    const progress = StorageService.loadDeckProgress(this.state.currentDeckId);
 
-         const progress = StorageService.loadDeckProgress(this.state.currentDeckId); 
+        // --- DECK TYPE ROUTER ---
+        if (deck.deckType === 'flippable') {
+            console.log("DEBUG: [App] handleStartQuiz -> Starting a 'flippable' quiz.");
+            this.state.quizInstance = new SpacedRepetitionQuiz(deck.cards, progress);
+            this.state.quizInstance.generateQuizRound(7);
+            this.state.currentScreen = 'flippableQuiz';
+        } else {
+            // Default to multiple choice quiz
+            console.log("DEBUG: [App] handleStartQuiz -> Starting a 'multipleChoice' quiz.");
             this.state.quizInstance = new Quiz(deck.cards, progress);
-        this.state.quizInstance.generateQuizRound(7);
-
-        if (this.state.quizInstance.questions.length === 0) {
-            alert("No available cards for a new quiz round!");
-            return;
+            this.state.quizInstance.generateQuizRound(7);
+            this.state.currentScreen = 'quiz';
         }
 
-        this.state.currentScreen = 'quiz';
-        this.render();
+        if (this.state.quizInstance.currentCards.length === 0 && this.state.quizInstance.questions.length === 0) {
+            alert("Congratulations! You've learned all the cards in this deck. Reset the deck to study again.");
+            return;
+        }
+
+        this.render();
     }
 
     handleQuizAnswer(selectedOption) {
@@ -181,6 +207,23 @@ class App {
         const scoreElement = document.getElementById('quiz-score');
         if(scoreElement) {
             scoreElement.textContent = `Score: ${this.state.quizInstance.score}`;
+        }
+    }
+
+    /**
+     * Handles the user's self-assessment from the FlippableCardScreen.
+     * @param {boolean} knewIt - The user's assessment (true for 'I Knew It', false for 'Review Again').
+     */
+    handleCardAssessment(knewIt) {
+        console.log(`DEBUG: [App] handleCardAssessment -> User assessed with knewIt: ${knewIt}`);
+        this.state.quizInstance.selfAssess(knewIt);
+        this.state.quizInstance.moveToNextCard();
+
+        if (this.state.quizInstance.isQuizOver()) {
+            console.log("DEBUG: [App] handleCardAssessment -> Flippable quiz is over.");
+            this.handleQuizEnd();
+        } else {
+            this.render();
         }
     }
 
@@ -259,15 +302,25 @@ _getRoundEndMessage(score, total) {
 }
 
 async handleQuizEnd() {
-    const score = this.state.quizInstance.score;
-    const totalQuestions = this.state.quizInstance.questions.length;
-    console.log(`DEBUG: [App] handleQuizEnd -> Final score: ${score}/${totalQuestions}. Saving progress.`);
-    
-    // Show dynamic score modal and wait for it to be closed
-    const result = this._getRoundEndMessage(score, totalQuestions);
-    const scoreMessage = `You got ${score} out of ${totalQuestions} correct.\n${result.message}`;
-    await this.notificationModal.show(result.title, scoreMessage, result.iconStyle);
-    
+   const isFlippableQuiz = this.state.quizInstance instanceof SpacedRepetitionQuiz;
+    console.log(`DEBUG: [App] handleQuizEnd -> Ending round. Is Flippable: ${isFlippableQuiz}. Saving progress.`);
+
+    // Show a modal appropriate for the quiz type
+    if (isFlippableQuiz) {
+        // Show a generic completion message for flippable quizzes
+        await this.notificationModal.show(
+            'Round Complete',
+            'Your progress has been saved. Keep up the great work!',
+            { icon: 'fa-solid fa-star', color: 'text-green-500', bgColor: 'bg-green-100 dark:bg-green-900' }
+        );
+    } else {
+        // Show a score-based modal only for multiple-choice quizzes
+        const score = this.state.quizInstance.score;
+        const totalQuestions = this.state.quizInstance.questions.length;
+        const result = this._getRoundEndMessage(score, totalQuestions);
+        const scoreMessage = `You got ${score} out of ${totalQuestions} correct.\n${result.message}`;
+        await this.notificationModal.show(result.title, scoreMessage, result.iconStyle);
+    }
     // The Quiz instance has been tracking progress; now we save it.
     StorageService.saveDeckProgress(this.state.currentDeckId, this.state.quizInstance.progress);
 
