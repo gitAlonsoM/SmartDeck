@@ -1,0 +1,1211 @@
+{
+  "id": "quaderna_deck_v2",
+  "name": "Quaderna Architecture & Concepts",
+  "description": "An improved deck covering the architecture, technologies, and database design of the Quaderna application, now with extensive code examples.",
+  "isAiGenerated": false,
+  "language": "sql",
+  "cards": [
+    {
+      "category": "System Architecture",
+      "hint": "A model where the presentation layer is separate from the data access layer.",
+      "question": "What type of architecture does the Quaderna application use?",
+      "options": ["Client-Server", "Monolithic", "Peer-to-Peer"],
+      "correctAnswer": "Client-Server",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# Client (Ionic/Angular) sends HTTP request\n# Server (Django) receives request and returns JSON"
+      }
+    },
+    {
+      "category": "System Architecture",
+      "hint": "A type of application that runs in a web browser but feels like a desktop application.",
+      "question": "Quaderna is described as what kind of application?",
+      "options": ["Desktop Application", "Single Page Application (SPA)", "Command-Line Interface (CLI)"],
+      "correctAnswer": "Single Page Application (SPA)",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "// In an SPA, navigation doesn't trigger a full page reload.\n// The app downloads all necessary code (HTML, JS, CSS) initially."
+      }
+    },
+    {
+      "category": "Frontend Architecture",
+      "hint": "This framework provides the UI components for a native look and feel in a hybrid app.",
+      "question": "Which technology is used in Quaderna to provide the main UI components like buttons and menus?",
+      "options": ["Angular", "Ionic Framework", "Capacitor"],
+      "correctAnswer": "Ionic Framework",
+      "content": {
+        "type": "code",
+        "language": "html",
+        "value": "<ion-header>\n  <ion-toolbar>\n    <ion-title>My App</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <ion-button>Click Me</ion-button>\n</ion-content>"
+      }
+    },
+    {
+      "category": "Frontend Architecture",
+      "hint": "This is a powerful framework that provides the application's structure, logic, and data binding.",
+      "question": "What is the core framework that provides the logical structure for the Quaderna frontend?",
+      "options": ["React", "Vue.js", "Angular"],
+      "correctAnswer": "Angular",
+      "content": {
+        "type": "code",
+        "language": "typescript",
+        "value": "@Component({\n  selector: 'app-note-list',\n  templateUrl: './note-list.component.html'\n})\nexport class NoteListComponent implements OnInit { ... }"
+      }
+    },
+    {
+      "category": "Frontend Architecture",
+      "hint": "This technology acts as a bridge, allowing a web app to be installed natively on mobile devices.",
+      "question": "What tool allows the Ionic/Angular codebase to run as a native Android and iOS app?",
+      "options": ["Capacitor", "Cordova", "Electron"],
+      "correctAnswer": "Capacitor",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# Add the native Android platform to your web project\nnpx cap add android\n\n# Sync your web code with the native project\nnpx cap sync"
+      }
+    },
+    {
+      "category": "Backend Architecture",
+      "hint": "A high-level Python web framework used for Quaderna's backend API.",
+      "question": "What is the core framework used to build the Quaderna backend?",
+      "options": ["Flask", "Django", "FastAPI"],
+      "correctAnswer": "Django",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# quaderna/urls.py\nfrom django.urls import path\nfrom api import views\n\nurlpatterns = [\n    path('api/notes/', views.get_notes),\n]"
+      }
+    },
+    {
+      "category": "Backend Architecture",
+      "hint": "This technology enables persistent, two-way communication for features like real-time chat.",
+      "question": "What technology does Quaderna use for its real-time collaborative chat feature?",
+      "options": ["HTTP Polling", "WebSockets", "Server-Sent Events"],
+      "correctAnswer": "WebSockets",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "// Frontend JavaScript to connect to a WebSocket\nconst socket = new WebSocket('wss://api.quaderna.com/ws/chat/123/');"
+      }
+    },
+    {
+      "category": "Backend Architecture",
+      "hint": "An in-memory data store used as a message broker for real-time features.",
+      "question": "What role does Redis play in the Quaderna backend architecture?",
+      "options": ["It's the main database", "It's a user authentication service", "It's a channel layer to broadcast WebSocket messages"],
+      "correctAnswer": "It's a channel layer to broadcast WebSocket messages",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# settings.py\nCHANNEL_LAYERS = {\n    'default': {\n        'BACKEND': 'channels_redis.core.RedisChannelLayer',\n        'CONFIG': {\n            'hosts': [('127.0.0.1', 6379)],\n        },\n    },\n}"
+      }
+    },
+    {
+      "category": "Backend Architecture",
+      "hint": "This Django extension is specifically required to handle WebSocket connections.",
+      "question": "Which Django extension enables the backend to manage WebSockets?",
+      "options": ["Django REST Framework", "Django Channels", "Django Admin"],
+      "correctAnswer": "Django Channels",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# consumers.py - Handles WebSocket events\nfrom channels.generic.websocket import AsyncWebsocketConsumer\n\nclass ChatConsumer(AsyncWebsocketConsumer):\n    async def connect(self):\n        await self.accept()"
+      }
+    },
+    {
+      "category": "Backend Architecture",
+      "hint": "This is a lightweight controller that receives an HTTP request and delegates logic to a service.",
+      "question": "In Django's architecture, what is the role of a 'view'?",
+      "options": ["To execute database queries directly", "To act as a controller and delegate business logic", "To define the database schema"],
+      "correctAnswer": "To act as a controller and delegate business logic",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# views.py\ndef get_notes(request):\n    user_id = request.data.get('uid')\n    # It calls a service, it doesn't contain the core logic itself.\n    return note_service.get_all_notes_for_user(user_id)"
+      }
+    },
+    {
+      "category": "Database Architecture",
+      "hint": "This design pattern centralizes business logic within the database itself using PL/SQL.",
+      "question": "What architectural pattern is a key feature of Quaderna's Oracle database implementation?",
+      "options": ["Database as a Service", "API in the Database", "Data Sharding"],
+      "correctAnswer": "API in the Database",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# Django calls a procedure, it does not write SQL for business logic.\n# This encapsulates the logic inside the database.\ncursor.callproc('prc_create_user', [uid, email])"
+      }
+    },
+    {
+      "category": "Database Architecture",
+      "hint": "The language used to write stored procedures, functions, and triggers in Oracle.",
+      "question": "What language is used to implement the 'API in the Database' in Quaderna?",
+      "options": ["Transact-SQL", "PL/SQL", "SQLAlchemy"],
+      "correctAnswer": "PL/SQL",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE OR REPLACE PROCEDURE prc_crear_nota (\n    p_user_id IN VARCHAR2,\n    p_content IN CLOB\n) IS\nBEGIN\n    INSERT INTO Nota(usuario_id, contenido) VALUES (p_user_id, p_content);\n    COMMIT;\nEND;"
+      }
+    },
+    {
+      "category": "Oracle Database",
+      "hint": "These named PL/SQL blocks perform actions and encapsulate data modification logic.",
+      "question": "In Quaderna's database, what is the role of objects named with the `prc_` prefix?",
+      "options": ["To retrieve data", "To perform actions and modify data", "To automatically generate primary keys"],
+      "correctAnswer": "To perform actions and modify data",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "/* A procedure call to create a new note. It handles the INSERT and COMMIT logic. */\nEXEC prc_crear_nota(p_user_id => 'user123', p_content => 'My new note');"
+      }
+    },
+    {
+      "category": "Oracle Database",
+      "hint": "These PL/SQL blocks are required to return a value and are used for data retrieval.",
+      "question": "In Quaderna, objects named with the `fnc_` prefix are used for what purpose?",
+      "options": ["Exclusively for data retrieval (SELECTs)", "For deleting records", "For application logging"],
+      "correctAnswer": "Exclusively for data retrieval (SELECTs)",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE OR REPLACE FUNCTION fnc_leer_notas_usr(\n    p_user_id IN VARCHAR2\n) RETURN SYS_REFCURSOR IS\n    o_cursor SYS_REFCURSOR;\nBEGIN\n    OPEN o_cursor FOR SELECT * FROM Nota WHERE usuario_id = p_user_id;\n    RETURN o_cursor;\nEND;"
+      }
+    },
+    {
+      "category": "Oracle Database",
+      "hint": "A pointer to a query's result set, returned by functions in Quaderna's database.",
+      "question": "What object do Quaderna's `fnc_*` database functions typically return to the Django application?",
+      "options": ["A JSON object", "A SYS_REFCURSOR", "An array of values"],
+      "correctAnswer": "A SYS_REFCURSOR",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "result_cursor = cursor.callfunc('fnc_leer_notas', oracledb.DB_TYPE_CURSOR, [user_id])\nfor row in result_cursor:\n    # process data from the cursor"
+      }
+    },
+    {
+      "category": "Oracle Database",
+      "hint": "This database object generates unique integers, ensuring primary keys are never duplicated.",
+      "question": "How does Quaderna guarantee unique primary keys for new records?",
+      "options": ["Using a client-side UUID generator", "By calling `seq_nota.NEXTVAL` in the database", "By finding the MAX(id) and adding 1"],
+      "correctAnswer": "By calling `seq_nota.NEXTVAL` in the database",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "INSERT INTO Nota (nota_id, contenido) \nVALUES (seq_nota.NEXTVAL, 'Some content...');"
+      }
+    },
+    {
+      "category": "Oracle Database",
+      "hint": "These are special procedures automatically executed in response to a DML event on a table.",
+      "question": "What is the role of a trigger like `trg_usuario_uu` in the Quaderna database?",
+      "options": ["To validate user input", "To automatically update the `updated_at` timestamp", "To send an email notification"],
+      "correctAnswer": "To automatically update the `updated_at` timestamp",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE OR REPLACE TRIGGER trg_usuario_uu\nBEFORE UPDATE ON Usuario\nFOR EACH ROW\nBEGIN\n    :new.updated_at := SYSTIMESTAMP;\nEND;"
+      }
+    },
+    {
+      "category": "Oracle Database",
+      "hint": "A rule that ensures data integrity at the database level.",
+      "question": "What database feature ensures that a `Carpeta` must belong to a user OR a workspace, but not both?",
+      "options": ["A UNIQUE index", "A FOREIGN KEY constraint", "A CHECK constraint"],
+      "correctAnswer": "A CHECK constraint",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "ALTER TABLE Carpeta ADD CONSTRAINT chk_carp_duenio\nCHECK ( (usuario_id IS NOT NULL AND espaciocolaborativo_id IS NULL) OR \n        (usuario_id IS NULL AND espaciocolaborativo_id IS NOT NULL) );"
+      }
+    },
+    {
+      "category": "Oracle Database",
+      "hint": "This feature creates relationships between tables and can define actions for deletion.",
+      "question": "What does the `ON DELETE CASCADE` option on a FOREIGN KEY do?",
+      "options": ["It prevents the parent record from being deleted", "It sets the child record's key to NULL", "It automatically deletes child records when the parent is deleted"],
+      "correctAnswer": "It automatically deletes child records when the parent is deleted",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "ALTER TABLE Nota\nADD CONSTRAINT fk_nota_carpeta\nFOREIGN KEY (carpeta_id) REFERENCES Carpeta(carpeta_id)\nON DELETE CASCADE;"
+      }
+    },
+    {
+      "category": "Oracle Database",
+      "hint": "An advanced index that enforces uniqueness based on an expression, not just a column.",
+      "question": "How does Quaderna allow different users to have folders with the same name?",
+      "options": ["By using a Function-Based Unique Index", "By appending a random number to the name", "By not enforcing any uniqueness"],
+      "correctAnswer": "By using a Function-Based Unique Index",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE UNIQUE INDEX IDX_UQ_CARPETA_PERSONAL ON Carpeta (\n  CASE WHEN usuario_id IS NOT NULL THEN usuario_id ELSE NULL END, \n  CASE WHEN usuario_id IS NOT NULL THEN nombre ELSE NULL END\n);"
+      }
+    },
+    {
+      "category": "Data Types",
+      "hint": "This Oracle data type is crucial for global apps as it stores both time and time zone.",
+      "question": "Which data type is used for all date fields in Quaderna to prevent time ambiguity?",
+      "options": ["DATE", "TIMESTAMP", "TIMESTAMP WITH TIME ZONE"],
+      "correctAnswer": "TIMESTAMP WITH TIME ZONE",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE TABLE Nota (\n  nota_id NUMBER PRIMARY KEY,\n  created_at TIMESTAMP WITH TIME ZONE DEFAULT SYSTIMESTAMP\n);"
+      }
+    },
+    {
+      "category": "Data Types",
+      "hint": "Used for variable-length text, this semantic allocates space based on characters, not bytes.",
+      "question": "Why does Quaderna use `VARCHAR2(n CHAR)` instead of `VARCHAR2(n BYTE)`?",
+      "options": ["It is faster for lookups", "To properly store multi-byte international characters", "It uses less disk space"],
+      "correctAnswer": "To properly store multi-byte international characters",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- This ensures 'é' or 'ü' count as 1 character, same as 'e' or 'u'.\nnombre VARCHAR2(100 CHAR);"
+      }
+    },
+    {
+      "category": "Data Types",
+      "hint": "This data type is used for storing very long text that exceeds the VARCHAR2 limit.",
+      "question": "Which data type would be used for the content of collaborative chat messages?",
+      "options": ["CLOB (Character Large Object)", "VARCHAR2(4000 CHAR)", "BLOB (Binary Large Object)"],
+      "correctAnswer": "CLOB (Character Large Object)",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE TABLE ChatMessage (\n    message_id NUMBER PRIMARY KEY,\n    content CLOB\n);"
+      }
+    },
+    {
+      "category": "Data Types",
+      "hint": "This data type is used to store the raw binary content of any uploaded file.",
+      "question": "In which data type does the `ArchivoAdjunto` table store uploaded PDFs and images?",
+      "options": ["RAW", "CLOB", "BLOB"],
+      "correctAnswer": "BLOB",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE TABLE ArchivoAdjunto (\n    file_id NUMBER PRIMARY KEY,\n    file_content BLOB\n);"
+      }
+    },
+    {
+      "category": "Data Communication",
+      "hint": "The universal data format for communication between the frontend and the backend.",
+      "question": "What data format is used for communication between the Ionic/Angular client and the Django backend?",
+      "options": ["XML", "JSON", "Binary Protocol"],
+      "correctAnswer": "JSON",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "// Frontend sends a JavaScript object, serialized to a JSON string.\nconst data = { nombre: 'New Folder' };\nfetch('/api/folders', {\n  method: 'POST',\n  headers: { 'Content-Type': 'application/json' },\n  body: JSON.stringify(data)\n});"
+      }
+    },
+    {
+      "category": "Data Communication",
+      "hint": "This component is responsible for converting Python dictionaries into JSON for the client.",
+      "question": "When the Django backend sends data to the frontend, what format does it use?",
+      "options": ["A raw tuple from the database", "A Python dictionary", "A JsonResponse"],
+      "correctAnswer": "A JsonResponse",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "from django.http import JsonResponse\n\ndef get_user_data(request):\n    data = {'user_id': 123, 'name': 'John Doe'}\n    return JsonResponse(data)"
+      }
+    },
+    {
+      "category": "Data Communication",
+      "hint": "The method of communication between Django and Oracle is highly efficient.",
+      "question": "How does the Django backend communicate with the Oracle database?",
+      "options": ["By sending JSON objects", "By sending plain text SQL queries", "Via a proprietary binary protocol managed by the `oracledb` driver"],
+      "correctAnswer": "Via a proprietary binary protocol managed by the `oracledb` driver",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# The oracledb library handles the complex binary communication.\n# The developer interacts with a simple cursor object.\nimport oracledb\nconnection = oracledb.connect(...)\ncursor = connection.cursor()"
+      }
+    },
+    {
+      "category": "HTTP & SQL Mapping",
+      "hint": "This HTTP method is used to request and retrieve data from a server.",
+      "question": "A `GET` request to `/api/notes/123` would logically map to which SQL operation?",
+      "options": ["INSERT", "SELECT", "UPDATE"],
+      "correctAnswer": "SELECT",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- Frontend sends: GET /api/notes/123\n-- Backend executes a function that runs:\nSELECT * FROM Nota WHERE nota_id = 123;"
+      }
+    },
+    {
+      "category": "HTTP & SQL Mapping",
+      "hint": "This HTTP method is used to submit a new entity to a resource.",
+      "question": "Which HTTP method is used to create a new resource and maps to the SQL `INSERT` statement?",
+      "options": ["PUT", "POST", "GET"],
+      "correctAnswer": "POST",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- Frontend sends: POST /api/notes with new note data\n-- Backend executes a procedure that runs:\nINSERT INTO Nota (user_id, contenido) VALUES ('user123', 'New content...');"
+      }
+    },
+    {
+      "category": "HTTP & SQL Mapping",
+      "hint": "This idempotent HTTP method is used to replace an entire resource.",
+      "question": "Which HTTP method logically maps to the SQL `UPDATE` statement?",
+      "options": ["POST", "GET", "PUT"],
+      "correctAnswer": "PUT",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- Frontend sends: PUT /api/notes/99 with updated content\n-- Backend executes a procedure that runs:\nUPDATE Nota SET contenido = 'Updated content...' WHERE nota_id = 99;"
+      }
+    },
+    {
+      "category": "HTTP & SQL Mapping",
+      "hint": "This HTTP method is used to remove a specified resource.",
+      "question": "A `DELETE` request to `/api/notes/99` would map to which SQL command?",
+      "options": ["DROP TABLE Nota", "TRUNCATE TABLE Nota", "DELETE FROM Nota WHERE nota_id = 99"],
+      "correctAnswer": "DELETE FROM Nota WHERE nota_id = 99",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- Frontend sends: DELETE /api/notes/99\n-- Backend executes a procedure that runs:\nDELETE FROM Nota WHERE nota_id = 99;"
+      }
+    },
+    {
+      "category": "Authentication",
+      "hint": "The external service used for user authentication in Quaderna.",
+      "question": "Which external service does Quaderna use to handle user login and registration?",
+      "options": ["Auth0", "Firebase", "A custom Django system"],
+      "correctAnswer": "Firebase",
+      "content": {
+        "type": "code",
+        "language": "typescript",
+        "value": "import { getAuth, signInWithPopup } from 'firebase/auth';\n\nconst auth = getAuth();\nsignInWithPopup(auth, provider);"
+      }
+    },
+    {
+      "category": "Authentication",
+      "hint": "The Angular service responsible for managing the user authentication lifecycle.",
+      "question": "Which Angular service in the frontend manages all interaction with Firebase?",
+      "options": ["UserService", "AuthService", "FirebaseService"],
+      "correctAnswer": "AuthService",
+      "content": {
+        "type": "code",
+        "language": "typescript",
+        "value": "@Injectable({ providedIn: 'root' })\nexport class AuthService {\n  constructor(private fireAuth: Auth) {}\n  // ... login/logout methods\n}"
+      }
+    },
+    {
+      "category": "Authentication",
+      "hint": "A unique identifier returned by Firebase upon successful login.",
+      "question": "What piece of information does Firebase provide to uniquely identify a user?",
+      "options": ["A session cookie", "A User ID (uid)", "An email token"],
+      "correctAnswer": "A User ID (uid)",
+      "content": {
+        "type": "code",
+        "language": "typescript",
+        "value": "auth.onAuthStateChanged(user => {\n  if (user) {\n    const uid = user.uid; // e.g., 'zR8g...Yp2'\n  }\n});"
+      }
+    },
+    {
+      "category": "Authentication",
+      "hint": "This process ensures the app's database has a record for the authenticated user.",
+      "question": "After a user logs in with Firebase, what is the next step in the authentication flow?",
+      "options": ["Redirect to the dashboard", "Sync the user's UID with the Django backend", "Log the login event"],
+      "correctAnswer": "Sync the user's UID with the Django backend",
+      "content": {
+        "type": "code",
+        "language": "typescript",
+        "value": "// After getting user from Firebase, call our own backend\nconst backendUrl = 'https://api.quaderna.com/api/register/';\nfetch(backendUrl, {\n  method: 'POST',\n  body: JSON.stringify({ uid: user.uid, email: user.email })\n});"
+      }
+    },
+    {
+      "category": "Feature Flows",
+      "hint": "This is how a new message appears in the UI before confirmation from the server.",
+      "question": "In the real-time chat, what technique is used to make the UI feel faster?",
+      "options": ["Server-side rendering", "Optimistic rendering", "Lazy loading"],
+      "correctAnswer": "Optimistic rendering",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "// 1. Immediately add the message to the local UI array\nmessages.push({ text: 'My new message', author: 'me' });\n\n// 2. Then, send the message to the server\nsocket.send('My new message');"
+      }
+    },
+    {
+      "category": "Feature Flows",
+      "hint": "This service broadcasts a new chat message to all connected clients.",
+      "question": "After a chat message is saved, how is it distributed to other users?",
+      "options": ["The database sends push notifications", "It is broadcast by Redis to all channel consumers", "Each client polls the server for messages"],
+      "correctAnswer": "It is broadcast by Redis to all channel consumers",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# In a Django consumer after receiving a message\nawait self.channel_layer.group_send(\n    self.room_group_name,\n    {'type': 'chat_message', 'message': message}\n)"
+      }
+    },
+    {
+      "category": "Feature Flows",
+      "hint": "This service acts as a secure intermediary to the OpenAI API.",
+      "question": "Which backend service in Quaderna is responsible for managing conversations with the AI?",
+      "options": ["chat_service.py", "openai_service.py", "llm_service.py"],
+      "correctAnswer": "llm_service.py",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# llm_service.py\n# This service hides the API key and constructs the prompt.\nimport openai\n\ndef get_ai_response(prompt):\n    # ... logic to call openai.Completion.create ...\n    return response"
+      }
+    },
+    {
+      "category": "Development",
+      "hint": "This command creates a network tunnel from a mobile device to a local machine.",
+      "question": "What ADB command forwards requests from a physical Android device to a local backend?",
+      "options": ["adb connect localhost:8000", "adb forward tcp:8000 tcp:8000", "adb reverse tcp:8000 tcp:8000"],
+      "correctAnswer": "adb reverse tcp:8000 tcp:8000",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# With this command, when the phone app calls http://localhost:8000,\n# the request is sent to port 8000 on the connected computer.\nadb reverse tcp:8000 tcp:8000"
+      }
+    },
+    {
+      "category": "Development",
+      "hint": "An Android config file needed to allow communication with a local, non-HTTPS server.",
+      "question": "What must be configured in Android to allow development with a local `http://` server?",
+      "options": ["Set `usesCleartextTraffic` to true", "Disable the device's firewall", "Use a `network_security_config.xml` file"],
+      "correctAnswer": "Use a `network_security_config.xml` file",
+      "content": {
+        "type": "code",
+        "language": "xml",
+        "value": "\n<network-security-config>\n  <domain-config cleartextTrafficPermitted=\"true\">\n    <domain includeSubdomains=\"true\">127.0.0.1</domain>\n  </domain-config>\n</network-security-config>"
+      }
+    },
+    {
+      "category": "Deployment",
+      "hint": "A crucial security component for serving traffic over HTTPS.",
+      "question": "When deploying to production, the Django server must be configured with what?",
+      "options": ["An SSL/TLS certificate", "A stronger password", "A public IP address"],
+      "correctAnswer": "An SSL/TLS certificate",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# In production, all URLs must use HTTPS, not HTTP.\n# GOOD: https://api.quaderna.com\n# BAD:  http://api.quaderna.com"
+      }
+    },
+    {
+      "category": "Deployment",
+      "hint": "A Django setting that must be updated in production to specify allowed domains.",
+      "question": "Which Django setting must be changed from `['*']` to a specific domain?",
+      "options": ["SECRET_KEY", "ALLOWED_HOSTS", "INSTALLED_APPS"],
+      "correctAnswer": "ALLOWED_HOSTS",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# settings.py in PRODUCTION\n# This prevents HTTP Host header attacks.\nALLOWED_HOSTS = ['quaderna.com', 'api.quaderna.com']"
+      }
+    },
+    {
+      "category": "Angular Services",
+      "hint": "This is a reactive way of handling streams of data over time.",
+      "question": "The `AuthService` exposes the user's login state (`isLoggedIn$`) as what kind of object?",
+      "options": ["A Promise", "An Observable", "A simple boolean"],
+      "correctAnswer": "An Observable",
+      "content": {
+        "type": "code",
+        "language": "typescript",
+        "value": "public isLoggedIn$: Observable<boolean>;"
+      }
+    },
+    {
+      "category": "Angular Services",
+      "hint": "Manages all HTTP communication for a user's personal items.",
+      "question": "Which service is responsible for CRUD on a user's personal folders and notes?",
+      "options": ["WorkspaceService", "AuthService", "CarpetaService & NotaService"],
+      "correctAnswer": "CarpetaService & NotaService",
+      "content": {
+        "type": "code",
+        "language": "typescript",
+        "value": "@Injectable({ providedIn: 'root' })\nexport class NotaService {\n  constructor(private http: HttpClient) {}\n\n  createNote(noteData) {\n    return this.http.post('/api/notes', noteData);\n  }\n}"
+      }
+    },
+    {
+      "category": "AI Chat",
+      "hint": "A detailed instruction given to an LLM to guide its behavior.",
+      "question": "What does the `ChatService` use to instruct the AI on how to behave?",
+      "options": ["A complex algorithm", "A detailed system prompt", "A set of IF/ELSE statements"],
+      "correctAnswer": "A detailed system prompt",
+      "content": {
+        "type": "code",
+        "language": "json",
+        "value": "{\n  \"model\": \"gpt-4o-mini\",\n  \"messages\": [\n    { \"role\": \"system\", \"content\": \"You are a helpful assistant for taking notes.\" },\n    { \"role\": \"user\", \"content\": \"What are my tasks for today?\" }\n  ]\n}"
+      }
+    },
+    {
+      "category": "Database Design",
+      "hint": "A table used for data normalization, storing a predefined set of values.",
+      "question": "What is the purpose of tables like `EstadoTarea` and `TipoMIME`?",
+      "options": ["They are logging tables", "They are Catalog Tables to enforce consistency", "They store user preferences"],
+      "correctAnswer": "They are Catalog Tables to enforce consistency",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE TABLE Tarea (\n  tarea_id NUMBER PRIMARY KEY,\n  -- This column must contain a value that exists in the EstadoTarea table.\n  estado_id NUMBER REFERENCES EstadoTarea(estado_id)\n);"
+      }
+    },
+    {
+      "category": "Database Design",
+      "hint": "A table that resolves a many-to-many relationship between two other tables.",
+      "question": "What kind of table is `EspacioUsuario`, which links users and workspaces?",
+      "options": ["A Junction Table", "A View", "A Temporary Table"],
+      "correctAnswer": "A Junction Table",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE TABLE EspacioUsuario (\n  espacio_id NUMBER REFERENCES EspacioColaborativo,\n  usuario_id NUMBER REFERENCES Usuario,\n  role VARCHAR2(50 CHAR),\n  PRIMARY KEY (espacio_id, usuario_id)\n);"
+      }
+    },
+    {
+      "category": "Database Design",
+      "hint": "A centralized, immutable record of all significant business operations.",
+      "question": "Which table in Quaderna provides crucial traceability by recording important actions?",
+      "options": ["The `Log` table", "The `History` table", "The `AuditLog` table"],
+      "correctAnswer": "The `AuditLog` table",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- Inside a procedure like prc_crear_nota\nINSERT INTO AuditLog(operation, details) \nVALUES ('CREATE_NOTE', 'User ' || p_user_id || ' created a new note.');"
+      }
+    },
+    {
+      "category": "Data Communication",
+      "hint": "The application running inside the web browser.",
+      "question": "Does the Ionic application 'send' data to the browser?",
+      "options": ["Yes, it sends JSON data to the browser", "No, Ionic IS the application running inside the browser", "Yes, it sends HTML to the browser"],
+      "correctAnswer": "No, Ionic IS the application running inside the browser",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "// This code runs directly in the browser.\n// It manipulates the DOM (Document Object Model) to change what you see.\ndocument.getElementById('my-element').textContent = 'New Value';"
+      }
+    },
+    {
+      "category": "Backend Architecture",
+      "hint": "An ASGI server used to run Django, necessary for WebSocket support.",
+      "question": "What server is used to run the Django app to handle HTTP and WebSocket traffic?",
+      "options": ["Gunicorn", "Apache", "Daphne"],
+      "correctAnswer": "Daphne",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# Command to start the production server\n# 'quaderna.asgi:application' points to the ASGI configuration\ndaphne -p 8000 quaderna.asgi:application"
+      }
+    },
+
+    {
+      "category": "System Architecture",
+      "hint": "A key benefit of separating the frontend and backend.",
+      "question": "What is a primary advantage of Quaderna's Client-Server architecture?",
+      "options": ["It reduces server costs", "It allows the client and server to be developed and scaled independently", "It works offline by default"],
+      "correctAnswer": "It allows the client and server to be developed and scaled independently",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "category": "Frontend Architecture",
+      "hint": "The concept of encapsulating logic into specialized, reusable classes.",
+      "question": "The Quaderna frontend is described as having a 'Modular, Service-Based Design'. What does this mean?",
+      "options": ["All code is in one single file", "Logic is encapsulated in specialized Angular services like AuthService", "The UI is built with micro-frontends"],
+      "correctAnswer": "Logic is encapsulated in specialized Angular services like AuthService",
+      "content": {
+        "type": "code",
+        "language": "typescript",
+        "value": "// This promotes clean code and scalability.\nimport { AuthService } from './services/auth.service';\nimport { NotaService } from './services/nota.service';"
+      }
+    },
+    {
+      "category": "Frontend Architecture",
+      "hint": "This Capacitor feature allows the app to interact with the device's hardware.",
+      "question": "How does the Quaderna native app access features like the camera or GPS?",
+      "options": ["Through custom Android/iOS code", "Using Angular's built-in device APIs", "Via Capacitor, which acts as a bridge to native device features"],
+      "correctAnswer": "Via Capacitor, which acts as a bridge to native device features",
+      "content": {
+        "type": "code",
+        "language": "typescript",
+        "value": "import { Camera, CameraResultType } from '@capacitor/camera';\n\nconst takePicture = async () => {\n  const image = await Camera.getPhoto({ resultType: CameraResultType.Uri });\n};"
+      }
+    },
+    {
+      "category": "Backend Architecture",
+      "hint": "This defines the type of server interface Quaderna uses, allowing for asynchronous operations.",
+      "question": "The backend is described as an ASGI application. What does ASGI stand for?",
+      "options": ["Asynchronous Server Gateway Interface", "Advanced Server Gateway Interface", "Asynchronous System Gateway Interaction"],
+      "correctAnswer": "Asynchronous Server Gateway Interface",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "category": "Backend Architecture",
+      "hint": "The specific backend layer that maps a URL to a Python function.",
+      "question": "Which backend file acts as the initial entry point, routing '/api/workspaces/' to a specific view?",
+      "options": ["views.py", "services/workspace_service.py", "urls.py"],
+      "correctAnswer": "urls.py",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# quaderna/urls.py\n\nurlpatterns = [\n    # This line maps the URL path to the 'manage_workspaces' view.\n    path('api/workspaces/', views.manage_workspaces),\n]"
+      }
+    },
+    {
+      "category": "Backend Architecture",
+      "hint": "This backend service abstracts all direct interaction with the database.",
+      "question": "Which specific service file in the backend is responsible for executing PL/SQL procedures and functions?",
+      "options": ["llm_service.py", "data_service.py", "user_service.py"],
+      "correctAnswer": "data_service.py",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# data_service.py\n# This service is the only place that should import oracledb\n# and make calls like cursor.callproc()"
+      }
+    },
+    {
+      "category": "Backend Architecture",
+      "hint": "These components handle the lifecycle of a WebSocket connection.",
+      "question": "In Django Channels, what is the role of a 'Consumer'?",
+      "options": ["To serve HTTP requests", "To handle WebSocket events like connect, receive, and disconnect", "To schedule background tasks"],
+      "correctAnswer": "To handle WebSocket events like connect, receive, and disconnect",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "class WorkspaceChatConsumer(AsyncWebsocketConsumer):\n    async def receive(self, text_data):\n        # Logic to process incoming message from a client\n        pass"
+      }
+    },
+    {
+      "category": "Database Architecture",
+      "hint": "A key database principle that ensures operations are all-or-nothing.",
+      "question": "A procedure like `prc_crear_nota` also creates an audit log entry. What ensures these two actions succeed or fail together?",
+      "options": ["A UNIQUE constraint", "A database transaction (COMMIT/ROLLBACK)", "A database trigger"],
+      "correctAnswer": "A database transaction (COMMIT/ROLLBACK)",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "BEGIN\n  INSERT INTO Nota(...);\n  INSERT INTO AuditLog(...);\n  COMMIT; -- Makes both inserts permanent\nEXCEPTION\n  WHEN OTHERS THEN\n    ROLLBACK; -- Undoes both inserts if an error occurs\nEND;"
+      }
+    },
+    {
+      "category": "Oracle Database",
+      "hint": "This command makes a transaction's changes permanent in the database.",
+      "question": "In a PL/SQL procedure, which command finalizes a transaction?",
+      "options": ["SAVE", "END", "COMMIT"],
+      "correctAnswer": "COMMIT",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "UPDATE Employees SET salary = 50000 WHERE emp_id = 101;\n-- The change is not permanent until this command is executed.\nCOMMIT;"
+      }
+    },
+    {
+      "category": "Oracle Database",
+      "hint": "This command undoes a transaction's changes in case of an error.",
+      "question": "If a PL/SQL procedure encounters an error, which command should be called to revert all changes?",
+      "options": ["REVERT", "UNDO", "ROLLBACK"],
+      "correctAnswer": "ROLLBACK",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "EXCEPTION\n  WHEN DUP_VAL_ON_INDEX THEN\n    -- An error occurred, so undo the transaction.\n    ROLLBACK;"
+      }
+    },
+    {
+      "category": "Oracle Database",
+      "hint": "A procedure that involves multiple validation steps before performing an action.",
+      "question": "What kind of logic would be inside a complex procedure like `prc_invitar_usuario_a_espacio`?",
+      "options": ["A single INSERT statement", "Multi-step validation (e.g., check if user exists, check permissions)", "A simple data retrieval query"],
+      "correctAnswer": "Multi-step validation (e.g., check if user exists, check permissions)",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "category": "Oracle Database",
+      "hint": "A constraint that guarantees every row in a table has a unique identifier.",
+      "question": "What is the purpose of a `PRIMARY KEY` constraint?",
+      "options": ["To link two tables together", "To uniquely identify each record in a table", "To ensure a column cannot be empty"],
+      "correctAnswer": "To uniquely identify each record in a- table",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE TABLE Nota (\n  nota_id NUMBER PRIMARY KEY,\n  -- The PRIMARY KEY ensures no two notes can have the same nota_id.\n  contenido CLOB\n);"
+      }
+    },
+    {
+      "category": "Oracle Database",
+      "hint": "This constraint is an alternative to `ON DELETE CASCADE`.",
+      "question": "What does the `ON DELETE SET NULL` option do on a FOREIGN KEY?",
+      "options": ["It deletes the child records", "It sets the foreign key field in child records to NULL", "It prevents the parent record from being deleted"],
+      "correctAnswer": "It sets the foreign key field in child records to NULL",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- If a User is deleted, their Tasks are not deleted, but the task's 'usuario_id' becomes NULL.\nALTER TABLE Tarea ADD CONSTRAINT fk_task_user\nFOREIGN KEY (usuario_id) REFERENCES Usuario(usuario_id)\nON DELETE SET NULL;"
+      }
+    },
+    {
+      "category": "Oracle Database",
+      "hint": "This constraint ensures that no two rows have the same value in a specific column.",
+      "question": "If you wanted to ensure every user in the `Usuario` table has a unique email address, what constraint would you use?",
+      "options": ["CHECK", "UNIQUE", "PRIMARY KEY"],
+      "correctAnswer": "UNIQUE",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "ALTER TABLE Usuario ADD CONSTRAINT uq_usuario_email UNIQUE (email);"
+      }
+    },
+    {
+      "category": "Data Types",
+      "hint": "This is a versatile numeric type used for all primary keys.",
+      "question": "Which Oracle data type is used for all primary key IDs (e.g., `nota_id`, `carpeta_id`) in Quaderna?",
+      "options": ["INTEGER", "FLOAT", "NUMBER"],
+      "correctAnswer": "NUMBER",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE TABLE Carpeta (\n    carpeta_id NUMBER NOT NULL PRIMARY KEY,\n    nombre VARCHAR2(100 CHAR)\n);"
+      }
+    },
+    {
+      "category": "Data Types",
+      "hint": "Used for single-character flags, like 'S' or 'N'.",
+      "question": "The `leida` field in the `Notificacion` table is likely which data type?",
+      "options": ["BOOLEAN", "CHAR(1)", "VARCHAR2(1)"],
+      "correctAnswer": "CHAR(1)",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE TABLE Notificacion (\n  leida CHAR(1) DEFAULT 'N' NOT NULL,\n  CONSTRAINT chk_leida CHECK (leida IN ('S', 'N'))\n);"
+      }
+    },
+    {
+      "category": "HTTP & SQL Mapping",
+      "hint": "An operation that can be repeated multiple times without changing the result beyond the initial application.",
+      "question": "HTTP methods GET and PUT are described as 'idempotent'. What does this mean?",
+      "options": ["They do not change the server's state", "Making the same request multiple times has the same effect as making it once", "They require an SSL connection"],
+      "correctAnswer": "Making the same request multiple times has the same effect as making it once",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- Calling this UPDATE twice is the same as calling it once.\nUPDATE Nota SET contenido = 'Updated' WHERE nota_id = 99;"
+      }
+    },
+    {
+      "category": "HTTP & SQL Mapping",
+      "hint": "An operation that does not change the state of the resource on the server.",
+      "question": "The GET method is considered 'safe'. What does this imply?",
+      "options": ["It is encrypted by default", "It is a read-only operation that should not modify data", "It can only be called once"],
+      "correctAnswer": "It is a read-only operation that should not modify data",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- A GET request maps to SELECT, which is a read-only operation.\nSELECT * FROM Usuario WHERE usuario_id = 1;"
+      }
+    },
+    {
+      "category": "HTTP & SQL Mapping",
+      "hint": "This non-idempotent HTTP method will likely create a new resource every time it's called.",
+      "question": "Why is the POST method NOT considered idempotent?",
+      "options": ["It is not secure", "Sending the same POST request multiple times will create multiple new resources", "It can only be used to update data"],
+      "correctAnswer": "Sending the same POST request multiple times will create multiple new resources",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- Calling this INSERT twice will create two new, separate notes.\nINSERT INTO Nota (contenido) VALUES ('My new note');"
+      }
+    },
+    {
+      "category": "Authentication",
+      "hint": "The library used in the Angular frontend to interact with Firebase.",
+      "question": "Which specific dependency, mentioned by its version `18.0.1`, is used for Firebase integration?",
+      "options": ["firebase-admin", "@angular/fire", "pyrebase"],
+      "correctAnswer": "@angular/fire",
+      "content": {
+        "type": "code",
+        "language": "json",
+        "value": "// package.json (dependencies)\n\"@angular/fire\": \"^18.0.1\","
+      }
+    },
+    {
+      "category": "Authentication",
+      "hint": "After login, the backend needs to create a corresponding record for the new user.",
+      "question": "What is the purpose of the `/api/register/` endpoint on the Django backend?",
+      "options": ["To register the application with Firebase", "To synchronize the Firebase user's data into the Oracle database", "To create a new login password"],
+      "correctAnswer": "To synchronize the Firebase user's data into the Oracle database",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# user_service.py\ndef sync_firebase_user(uid, email, name):\n    # This function calls the prc_create_user stored procedure.\n    data_service.create_user_in_db(uid, email, name)"
+      }
+    },
+    {
+      "category": "Feature Flows",
+      "hint": "This is the first step when a user enters a collaborative workspace chat.",
+      "question": "What action does the `WorkspaceChatService` perform when a user enters a chat room?",
+      "options": ["It fetches all previous messages via HTTP", "It establishes a persistent WebSocket connection", "It sends a welcome email"],
+      "correctAnswer": "It establishes a persistent WebSocket connection",
+      "content": {
+        "type": "code",
+        "language": "typescript",
+        "value": "// WorkspaceChatService.ts\nconnect(workspaceId: string) {\n  this.socket = new WebSocket(`${this.WS_URL}/${workspaceId}/');\n}"
+      }
+    },
+    {
+      "category": "Feature Flows",
+      "hint": "The method used in the frontend service to send a new chat message.",
+      "question": "How does the `WorkspaceChatService` send a new message to the backend?",
+      "options": ["It makes a POST request", "It emits an event to Angular", "It calls the `sendMessage()` method which uses the WebSocket connection"],
+      "correctAnswer": "It calls the `sendMessage()` method which uses the WebSocket connection",
+      "content": {
+        "type": "code",
+        "language": "typescript",
+        "value": "// WorkspaceChatService.ts\nsendMessage(message: string) {\n  this.socket.send(JSON.stringify({ content: message }));\n}"
+      }
+    },
+    {
+      "category": "Feature Flows",
+      "hint": "The observable stream in the service that delivers incoming messages to the UI.",
+      "question": "How does the UI receive and display new real-time chat messages?",
+      "options": ["By refreshing the page every few seconds", "By subscribing to the `messages$` observable in the WorkspaceChatService", "By querying the database directly"],
+      "correctAnswer": "By subscribing to the `messages$` observable in the WorkspaceChatService",
+      "content": {
+        "type": "code",
+        "language": "typescript",
+        "value": "// chat-page.component.ts\nngOnInit() {\n  this.chatService.messages$.subscribe(message => {\n    this.messages.push(message);\n  });\n}"
+      }
+    },
+    {
+      "category": "AI Chat",
+      "hint": "The AI service can operate in different modes based on the user's needs.",
+      "question": "Which of these is NOT one of the AI assistant's modes mentioned in the document?",
+      "options": ["Conversational Mode", "READ Mode", "DEBUG Mode"],
+      "correctAnswer": "DEBUG Mode",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "category": "AI Chat",
+      "hint": "A complex interaction where the AI needs information from the application itself.",
+      "question": "How does the `llm_service.py` provide context to the AI for a query like 'summarize my notes from today'?",
+      "options": ["It sends the entire database to OpenAI", "It first fetches relevant data from the database, then prompts the LLM", "It asks the user to paste the notes into the chat"],
+      "correctAnswer": "It first fetches relevant data from the database, then prompts the LLM",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "category": "Development",
+      "hint": "The backend URL used in the Ionic services for local development.",
+      "question": "What backend URL is consistently used in development thanks to the `adb reverse` setup?",
+      "options": ["The computer's local network IP (e.g., 192.168.1.5:8000)", "http://127.0.0.1:8000", "https://api.quaderna.com"],
+      "correctAnswer": "http://127.0.0.1:8000",
+      "content": {
+        "type": "code",
+        "language": "typescript",
+        "value": "// With 'adb reverse', the phone's localhost:8000 points to the dev machine's localhost:8000\nconst API_URL = 'http://127.0.0.1:8000/api';"
+      }
+    },
+    {
+      "category": "Development",
+      "hint": "The reason why unencrypted HTTP traffic is allowed, but only for local development.",
+      "question": "Why is the `network_security_config.xml` file necessary for local development on a physical Android device?",
+      "options": ["To increase app performance", "To allow unencrypted HTTP traffic to `localhost`", "To enable USB debugging"],
+      "correctAnswer": "To allow unencrypted HTTP traffic to `localhost`",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "category": "Deployment",
+      "hint": "This configuration change is critical when moving the Ionic app to production.",
+      "question": "When deploying the app, what must be done with the backend URLs in the Ionic code?",
+      "options": ["They must be removed", "They must be updated to the public `https://` domain", "They must point to `localhost`"],
+      "correctAnswer": "They must be updated to the public `https://` domain",
+      "content": {
+        "type": "code",
+        "language": "typescript",
+        "value": "// Using environment variables to manage URLs\nexport const environment = {\n  production: true,\n  apiUrl: 'https://api.quaderna.com/api'\n};"
+      }
+    },
+    {
+      "category": "Deployment",
+      "hint": "A Django security feature that controls which websites can make requests to your API.",
+      "question": "Which Django setting must be configured in production to prevent unwanted websites from accessing the API?",
+      "options": ["ALLOWED_HOSTS", "CORS_ALLOWED_ORIGINS", "STATIC_URL"],
+      "correctAnswer": "CORS_ALLOWED_ORIGINS",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# settings.py in PRODUCTION\n# Only allows requests from your actual frontend application.\nCORS_ALLOWED_ORIGINS = [\n    'https://app.quaderna.com',\n]"
+      }
+    },
+    {
+      "category": "Deployment",
+      "hint": "This file, which allows unencrypted traffic, must be handled correctly for production release.",
+      "question": "What should be done with the `network_security_config.xml` file before building the Android app for production?",
+      "options": ["It must be committed to version control", "Its IP address must be updated", "It must be removed"],
+      "correctAnswer": "It must be removed",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "category": "Key Dependencies",
+      "hint": "The specific version of the Ionic Framework used in the Quaderna application.",
+      "question": "According to the report, which version of the Ionic framework is used?",
+      "options": ["6.1.2", "18.2.3", "7.2.0"],
+      "correctAnswer": "7.2.0",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "category": "Key Dependencies",
+      "hint": "The specific version of the Angular framework used in the Quaderna application.",
+      "question": "Which version of Angular does the Quaderna frontend depend on?",
+      "options": ["18.2.3", "7.2.0", "6.1.2"],
+      "correctAnswer": "18.2.3",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "category": "Key Dependencies",
+      "hint": "The specific version of the Capacitor framework used in the Quaderna application.",
+      "question": "The report specifies which version of Capacitor is used to build the native mobile apps?",
+      "options": ["7.2.0", "6.1.2", "18.0.1"],
+      "correctAnswer": "6.1.2",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "category": "Angular Services",
+      "hint": "This service handles all HTTP communication for managing collaborative spaces.",
+      "question": "Which Angular service is used to create, join, or manage workspaces?",
+      "options": ["AuthService", "WorkspaceService", "CarpetaService"],
+      "correctAnswer": "WorkspaceService",
+      "content": {
+        "type": "code",
+        "language": "typescript",
+        "value": "// This service would contain methods like:\n// getWorkspaces(), createWorkspace(), getWorkspaceMembers()"
+      }
+    },
+    {
+      "category": "Angular Services",
+      "hint": "This service specifically manages sending and receiving invitations to workspaces.",
+      "question": "If a user wants to invite another person to a workspace, which service handles that API call?",
+      "options": ["InvitationService", "MemberService", "WorkspaceService"],
+      "correctAnswer": "InvitationService",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "category": "Data Communication",
+      "hint": "The process of converting a JavaScript object into a string for transmission.",
+      "question": "When the frontend sends a JavaScript object to the backend, what process must it undergo?",
+      "options": ["Serialization (e.g., JSON.stringify)", "Deserialization (e.g., JSON.parse)", "Encryption"],
+      "correctAnswer": "Serialization (e.g., JSON.stringify)",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "const user = { id: 1, name: 'Alex' };\nconst jsonString = JSON.stringify(user); // '{\"id\":1,\"name\":\"Alex\"}'\n// This string is sent in the HTTP request body."
+      }
+    },
+    {
+      "category": "Data Communication",
+      "hint": "The process of converting a JSON string back into a usable object.",
+      "question": "When the Django backend receives a JSON string from the frontend, what must it do first?",
+      "options": ["Save it directly to the database", "Deserialize it into a Python dictionary", "Encrypt it"],
+      "correctAnswer": "Deserialize it into a Python dictionary",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "import json\n\n# request.body might be b'{\"id\": 1, \"name\": \"Alex\"}'\ndata = json.loads(request.body)\n# now data is a Python dict: {'id': 1, 'name': 'Alex'}"
+      }
+    },
+    {
+      "category": "Data Communication",
+      "hint": "The Python library used by Django to convert its native data types to Oracle's types.",
+      "question": "What component is responsible for converting a Python string into an Oracle `VARCHAR2` during a procedure call?",
+      "options": ["The Django ORM", "The Oracle database driver (`oracledb`)", "A custom Python function"],
+      "correctAnswer": "The Oracle database driver (`oracledb`)",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "category": "Data Communication",
+      "hint": "The final step in the backend after fetching raw data from the database.",
+      "question": "After fetching rows from a SYS_REFCURSOR, what is the backend's job before sending it to the frontend?",
+      "options": ["Zip the rows into a file", "Build structured Python dictionaries and convert them to JSON", "Send the raw tuples directly"],
+      "correctAnswer": "Build structured Python dictionaries and convert them to JSON",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "category": "Database Design",
+      "hint": "The main business objects represented in the database.",
+      "question": "Which of the following is considered a 'Core Entity Table' in the Quaderna database?",
+      "options": ["AuditLog", "EstadoTarea", "Nota"],
+      "correctAnswer": "Nota",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "category": "Database Design",
+      "hint": "The purpose of storing predefined values like 'Pending' or 'Completed' in separate tables.",
+      "question": "What is the primary benefit of using Catalog Tables like `EstadoTarea`?",
+      "options": ["It improves logging", "It prevents data redundancy and enforces consistency", "It makes the database smaller"],
+      "correctAnswer": "It prevents data redundancy and enforces consistency",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "category": "Database Design",
+      "hint": "A junction table can store more than just the link between two entities.",
+      "question": "Besides linking users and workspaces, what other contextual data does the `EspacioUsuario` table store?",
+      "options": ["The user's password", "The user's role and invitation status", "The workspace creation date"],
+      "correctAnswer": "The user's role and invitation status",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "category": "System Architecture",
+      "hint": "A single codebase that can run on multiple platforms (web, mobile).",
+      "question": "Quaderna is described as a 'hybrid' application. What does this mean?",
+      "options": ["It is written in two different programming languages", "It combines a single web-based codebase with native capabilities", "It can switch between online and offline modes"],
+      "correctAnswer": "It combines a single web-based codebase with native capabilities",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "category": "Backend Architecture",
+      "hint": "A primary reason for Quaderna's backend not using Django's standard feature for database interaction.",
+      "question": "Why does the `data_service.py` in Quaderna NOT use the standard Django ORM?",
+      "options": ["The Django ORM is too slow", "To enforce the 'API in the Database' pattern by calling PL/SQL procedures directly", "The Django ORM does not support Oracle"],
+      "correctAnswer": "To enforce the 'API in the Database' pattern by calling PL/SQL procedures directly",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "category": "Database Architecture",
+      "hint": "A core principle behind centralizing logic in the database.",
+      "question": "What is a major advantage of encapsulating business rules in PL/SQL Stored Procedures?",
+      "options": ["It makes the frontend code simpler", "It centralizes logic, enhances security, and leverages database transaction power", "It eliminates the need for a backend server"],
+      "correctAnswer": "It centralizes logic, enhances security, and leverages database transaction power",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "category": "Oracle Database",
+      "hint": "The value returned by `seq_nota.NEXTVAL`.",
+      "question": "What does a call to a database sequence's `NEXTVAL` property return?",
+      "options": ["The last value that was generated", "The next available unique integer from the sequence", "The total number of rows in the table"],
+      "correctAnswer": "The next available unique integer from the sequence",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- If the last ID was 100, the next call to seq_nota.NEXTVAL will return 101."
+      }
+    },
+    {
+      "category": "Database Architecture",
+      "hint": "These database objects improve the speed of data retrieval operations.",
+      "question": "What is the primary purpose of creating an `INDEX` on a database column?",
+      "options": ["To enforce data uniqueness", "To improve the speed of queries that filter or sort by that column", "To store large binary data"],
+      "correctAnswer": "To improve the speed of queries that filter or sort by that column",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- Without an index, a search for a user would scan the whole table.\n-- With an index, it's much faster.\nCREATE INDEX idx_nota_usuario ON Nota(usuario_id);"
+      }
+    },
+    {
+      "category": "Data Communication",
+      "hint": "This is how the Ionic app running in the browser manipulates what the user sees.",
+      "question": "How does the JavaScript code in Quaderna's frontend update the UI without a page reload?",
+      "options": ["By sending a request to the server to get new HTML", "By directly manipulating the page's HTML, known as the DOM", "By using CSS animations"],
+      "correctAnswer": "By directly manipulating the page's HTML, known as the DOM",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "// This is an example of direct DOM manipulation.\nconst element = document.getElementById('welcome-message');\nelement.textContent = 'Hello, Alex!';"
+      }
+    },
+    {
+      "category": "Data Communication",
+      "hint": "The communication between your backend and an external service like OpenAI.",
+      "question": "What data format does the `llm_service.py` use to communicate with the OpenAI API?",
+      "options": ["XML", "A binary protocol", "JSON"],
+      "correctAnswer": "JSON",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# The backend sends a request to OpenAI's server with a JSON payload.\nresponse = requests.post(\n    'https://api.openai.com/v1/chat/completions',\n    headers={'Authorization': f'Bearer {api_key}'},\n    json={'model': 'gpt-4o-mini', 'messages': [...]}\n)"
+      }
+    }
+
+  ]
+}
