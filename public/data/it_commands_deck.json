@@ -1210,6 +1210,366 @@
         "Shift the middle item to the top-center.",
         "Drag the center item to the top-center."
       ]
+    },
+ {
+      "cardId": "itc_121",
+      "cardType": "flippable",
+      "sideA": "The main rectangular area on a screen that displays the content of an application.",
+      "sideB": ["Window"]
+    },
+    {
+      "cardId": "itc_122",
+      "cardType": "flippable",
+      "sideA": "A clickable label within a window that lets you switch between different pages or sections.",
+      "sideB": ["Tab"]
+    },
+    {
+      "cardId": "itc_123",
+      "cardType": "flippable",
+      "sideA": "The area in a browser that displays all the currently open tabs.",
+      "sideB": ["Tab bar", "Tabs bar"]
+    },
+    {
+      "cardId": "itc_124",
+      "cardType": "flippable",
+      "sideA": "The field at the top of a browser where you type a website's address.",
+      "sideB": ["Address bar", "URL bar", "Location bar"]
+    },
+    {
+      "cardId": "itc_125",
+      "cardType": "flippable",
+      "sideA": "A row of buttons and icons that provide quick access to an application's functions.",
+      "sideB": ["Toolbar"]
+    },
+    {
+      "cardId": "itc_126",
+      "cardType": "flippable",
+      "sideA": "The button that shrinks a window down to the taskbar without closing it.",
+      "sideB": ["Minimize button"]
+    },
+    {
+      "cardId": "itc_127",
+      "cardType": "flippable",
+      "sideA": "The button that makes a window fill the entire screen or returns it to its previous size.",
+      "sideB": ["Maximize / Restore button", "Resize button"]
+    },
+    {
+      "cardId": "itc_128",
+      "cardType": "flippable",
+      "sideA": "The button, often marked with an 'X', used to exit or close a window.",
+      "sideB": ["Close button", "Exit button", "X button"]
+    },
+    {
+      "cardId": "itc_129",
+      "cardType": "flippable",
+      "sideA": "The menu that appears when you click the right mouse button on an item.",
+      "sideB": ["Context menu", "Right-click menu", "Shortcut menu"]
+    },
+    {
+      "cardId": "itc_130",
+      "cardType": "flippable",
+      "sideA": "A bar at the bottom of a window that displays information like zoom level or page count.",
+      "sideB": ["Status bar"]
+    },
+    {
+      "cardId": "itc_131",
+      "cardType": "flippable",
+      "sideA": "The control that allows you to move the view of a page up, down, left, or right.",
+      "sideB": ["Scrollbar", "Scroll bar"]
+    },
+    {
+      "cardId": "itc_132",
+      "cardType": "flippable",
+      "sideA": "The on-screen pointer or arrow that indicates the position of the mouse.",
+      "sideB": ["Cursor", "Pointer", "Mouse pointer"]
+    },
+    {
+      "cardId": "itc_133",
+      "cardType": "flippable",
+      "sideA": "A small graphical representation of a program, file, or function.",
+      "sideB": ["Icon", "Icon button"]
+    },
+    {
+      "cardId": "itc_134",
+      "cardType": "flippable",
+      "sideA": "A new, smaller window that appears on top of the current one, often for alerts or ads.",
+      "sideB": ["Popup window", "Pop-up", "Dialog popup"]
+    },
+    {
+      "cardId": "itc_135",
+      "cardType": "flippable",
+      "sideA": "The browser tab that you are currently viewing.",
+      "sideB": ["Active tab", "Current tab"]
+    },
+    {
+      "cardId": "itc_136",
+      "cardType": "flippable",
+      "sideA": "Any browser tab that is open but not currently being viewed.",
+      "sideB": ["Inactive tab", "Background tab"]
+    },
+    {
+      "cardId": "itc_137",
+      "cardType": "flippable",
+      "sideA": "A browser tab that has just been opened and has no content loaded yet.",
+      "sideB": ["New tab", "Blank tab", "Empty tab"]
+    },
+    {
+      "cardId": "itc_138",
+      "cardType": "flippable",
+      "sideA": "The default page that loads when you open your web browser.",
+      "sideB": ["Homepage", "Home page", "Start page"]
+    },
+    {
+      "cardId": "itc_139",
+      "cardType": "flippable",
+      "sideA": "The page that is displayed by default when you open a new, blank tab.",
+      "sideB": ["New tab page", "Start tab page"]
+    },
+    {
+      "cardId": "itc_140",
+      "cardType": "flippable",
+      "sideA": "A browser mode that doesn't save your Browse history, cookies, or site data.",
+      "sideB": ["Private window", "Incognito window", "Private Browse"]
+    },
+    {
+      "cardId": "itc_141",
+      "cardType": "flippable",
+      "sideA": "A toolbar in a browser where you can save shortcuts to your favorite websites.",
+      "sideB": ["Bookmarks bar", "Favorites bar"]
+    },
+    {
+      "cardId": "itc_142",
+      "cardType": "flippable",
+      "sideA": "A list of options that appears when you click on a button or menu item.",
+      "sideB": ["Dropdown menu", "Drop-down list", "Pull-down menu"]
+    },
+    {
+      "cardId": "itc_143",
+      "cardType": "flippable",
+      "sideA": "The horizontal bar at the top of a window containing text menus like 'File', 'Edit', and 'View'.",
+      "sideB": ["Menu bar"]
+    },
+    {
+      "cardId": "itc_144",
+      "cardType": "flippable",
+      "sideA": "The primary section of a window where the main document or application content is displayed.",
+      "sideB": ["Content area", "Main area", "Viewport"]
+    },
+    {
+      "cardId": "itc_145",
+      "cardType": "flippable",
+      "sideA": "The button, often an arrow pointing left, that takes you to the previously visited page.",
+      "sideB": ["Back button", "Go back button"]
+    },
+    {
+      "cardId": "itc_146",
+      "cardType": "flippable",
+      "sideA": "The button, often an arrow pointing right, that takes you to the next page in your history.",
+      "sideB": ["Forward button", "Go forward button"]
+    },
+    {
+      "cardId": "itc_147",
+      "cardType": "flippable",
+      "sideA": "The button that re-downloads the content of the current web page.",
+      "sideB": ["Reload button", "Refresh button"]
+    },
+    {
+      "cardId": "itc_148",
+      "cardType": "flippable",
+      "sideA": "A vertical panel on the left or right of a window used for navigation.",
+      "sideB": ["Sidebar", "Side panel", "Navigation panel"]
+    },
+    {
+      "cardId": "itc_149",
+      "cardType": "flippable",
+      "sideA": "The area on the taskbar, usually in the corner, that shows system icons and notifications.",
+      "sideB": ["Notification area", "System tray"]
+    },
+    {
+      "cardId": "itc_150",
+      "cardType": "flippable",
+      "sideA": "The main screen of an operating system where icons and windows appear.",
+      "sideB": ["Desktop"]
+    },
+    {
+      "cardId": "itc_151",
+      "cardType": "flippable",
+      "sideA": "The background image or color of the main operating system screen.",
+      "sideB": ["Wallpaper", "Desktop background"]
+    },
+    {
+      "cardId": "itc_152",
+      "cardType": "flippable",
+      "sideA": "A window or panel that can be moved to sit on top of other application windows.",
+      "sideB": ["Floating window", "Floating panel"]
+    },
+    {
+      "cardId": "itc_153",
+      "cardType": "flippable",
+      "sideA": "A display mode where two application windows are shown side-by-side.",
+      "sideB": ["Split screen", "Split view"]
+    },
+    {
+      "cardId": "itc_154",
+      "cardType": "flippable",
+      "sideA": "A dialog window that requires user interaction before they can return to the main application.",
+      "sideB": ["Modal window", "Dialog box", "Modal dialog"]
+    },
+    {
+      "cardId": "itc_155",
+      "cardType": "flippable",
+      "sideA": "A small box that a user can click to indicate 'yes' or 'no' on a form.",
+      "sideB": ["Checkbox"]
+    },
+    {
+      "cardId": "itc_156",
+      "cardType": "flippable",
+      "sideA": "A control that allows a user to select only one option from a mutually exclusive set.",
+      "sideB": ["Radio button"]
+    },
+    {
+      "cardId": "itc_157",
+      "cardType": "flippable",
+      "sideA": "A control that allows selecting a value from a continuous range by dragging a handle.",
+      "sideB": ["Slider", "Track bar"]
+    },
+    {
+      "cardId": "itc_158",
+      "cardType": "flippable",
+      "sideA": "A small box with informational text that appears when hovering over an element.",
+      "sideB": ["Tooltip", "Hint", "Infotip"]
+    },
+    {
+      "cardId": "itc_159",
+      "cardType": "flippable",
+      "sideA": "Clickable text or an image that takes you to another document or webpage.",
+      "sideB": ["Hyperlink", "Link"]
+    },
+    {
+      "cardId": "itc_160",
+      "cardType": "flippable",
+      "sideA": "A navigation trail that shows the user's location in a website or application.",
+      "sideB": ["Breadcrumbs", "Breadcrumb trail"]
+    },
+    {
+      "cardId": "itc_161",
+      "cardType": "flippable",
+      "sideA": "The content block at the very top of a webpage, often containing a logo and navigation.",
+      "sideB": ["Header"]
+    },
+    {
+      "cardId": "itc_162",
+      "cardType": "flippable",
+      "sideA": "The content block at the very bottom of a webpage, often containing copyright and contact info.",
+      "sideB": ["Footer"]
+    },
+    {
+      "cardId": "itc_163",
+      "cardType": "flippable",
+      "sideA": "A UI element that can be clicked to show or hide content, like in an FAQ section.",
+      "sideB": ["Accordion", "Collapsible panel"]
+    },
+    {
+      "cardId": "itc_164",
+      "cardType": "flippable",
+      "sideA": "A rotating slideshow of images or content on a webpage.",
+      "sideB": ["Carousel", "Image slider"]
+    },
+    {
+      "cardId": "itc_165",
+      "cardType": "flippable",
+      "sideA": "A switch that allows a user to turn a setting on or off.",
+      "sideB": ["Toggle switch", "Toggle button"]
+    },
+    {
+      "cardId": "itc_166",
+      "cardType": "flippable",
+      "sideA": "A field used to enter text.",
+      "sideB": ["Text box", "Input field", "Text field"]
+    },
+    {
+      "cardId": "itc_167",
+      "cardType": "flippable",
+      "sideA": "The blinking vertical line inside a text field that shows the insertion point for typing.",
+      "sideB": ["Caret", "Text cursor"]
+    },
+    {
+      "cardId": "itc_168",
+      "cardType": "flippable",
+      "sideA": "A bar that shows the progress of a task, such as a download or installation.",
+      "sideB": ["Progress bar"]
+    },
+    {
+      "cardId": "itc_169",
+      "cardType": "flippable",
+      "sideA": "The horizontal bar at the bottom of the OS screen that shows open applications.",
+      "sideB": ["Taskbar", "Dock"]
+    },
+    {
+      "cardId": "itc_170",
+      "cardType": "flippable",
+      "sideA": "A temporary storage area where material cut or copied from a file is kept for pasting.",
+      "sideB": ["Clipboard"]
+    },
+    {
+      "cardId": "itc_171",
+      "cardType": "flippable",
+      "sideA": "A clickable element that performs a specific action.",
+      "sideB": ["Button"]
+    },
+    {
+      "cardId": "itc_172",
+      "cardType": "flippable",
+      "sideA": "A graphical control element that is a visual representation of a file, folder, or program.",
+      "sideB": ["Icon"]
+    },
+    {
+      "cardId": "itc_173",
+      "cardType": "flippable",
+      "sideA": "A list of commands or options available to the user.",
+      "sideB": ["Menu"]
+    },
+    {
+      "cardId": "itc_174",
+      "cardType": "flippable",
+      "sideA": "A temporary name for a file or piece of data before it is formally named.",
+      "sideB": ["Placeholder"]
+    },
+    {
+      "cardId": "itc_175",
+      "cardType": "flippable",
+      "sideA": "An automated sequence of instructions or commands.",
+      "sideB": ["Script", "Macro"]
+    },
+    {
+      "cardId": "itc_176",
+      "cardType": "flippable",
+      "sideA": "The text displayed in a form field before the user enters a value.",
+      "sideB": ["Placeholder text", "Hint text"]
+    },
+    {
+      "cardId": "itc_177",
+      "cardType": "flippable",
+      "sideA": "A section in a settings or preferences window, often organized by a tab.",
+      "sideB": ["Panel", "Pane"]
+    },
+    {
+      "cardId": "itc_178",
+      "cardType": "flippable",
+      "sideA": "The set of options and configurations available for a piece of software.",
+      "sideB": ["Settings", "Preferences", "Options"]
+    },
+    {
+      "cardId": "itc_179",
+      "cardType": "flippable",
+      "sideA": "A small, scrollable window within a larger window or webpage.",
+      "sideB": ["Frame", "iFrame"]
+    },
+    {
+      "cardId": "itc_180",
+      "cardType": "flippable",
+      "sideA": "A file that can be executed to install or run a program.",
+      "sideB": ["Executable", ".exe file"]
     }
-  ]
+    ]
 }
