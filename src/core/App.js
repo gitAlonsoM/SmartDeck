@@ -94,25 +94,25 @@ class App {
                     this.appContainer, 
                     () => this.handleStartQuiz(), 
                     () => this.handleGoBackToDecks(),
-                    () => this.handleResetDeck() 
-                ); 
-            }
-                const selectedDeck = this.state.allDecks[this.state.currentDeckId];
-                const deckProgressData = StorageService.loadDeckProgress(this.state.currentDeckId);
-                const progressStats = {
-                    learned: deckProgressData.learned.size,
-                    review: deckProgressData.needsReview.size
-                };
-                this.deckDetailComponent.render(selectedDeck, progressStats);
-                break;
+                   () => this.handleResetDeck(),
+                   (cardId) => this.handleUnignoreCard(cardId)
+                ); 
+            }
+              const selectedDeck = this.state.allDecks[this.state.currentDeckId];
+                const deckProgressData = StorageService.loadDeckProgress(this.state.currentDeckId);
+                // The next 5 lines with progressStats are removed.
+                // We pass the full deckProgressData object directly.
+                this.deckDetailComponent.render(selectedDeck, deckProgressData);
+                break;
 
              case 'quiz':
                 if (!this.quizScreenComponent) { 
-                    this.quizScreenComponent = new QuizScreen(
+                   this.quizScreenComponent = new QuizScreen(
                         this.appContainer, 
                         (option) => this.handleQuizAnswer(option), 
                         () => this.handleQuizNext(),
-                        () => this.handleQuizEnd() // Connect the onQuizEnd callback
+                        () => this.handleQuizEnd(),
+                        () => this.handleIgnoreCurrentCard() // This line was missing, we add it now.
                     ); 
                 }
 
@@ -129,7 +129,9 @@ class App {
                 if (!this.flippableCardScreen) {
                     this.flippableCardScreen = new FlippableCardScreen(
                         this.appContainer,
-                        (knewIt) => this.handleCardAssessment(knewIt)
+                     (knewIt) => this.handleCardAssessment(knewIt),
+                       () => this.handleQuizEnd(),
+                        () => this.handleIgnoreCurrentCard()
                     );
                 }
                 const currentCard = this.state.quizInstance.getCurrentCard();
@@ -148,6 +150,55 @@ class App {
     }
 
     // --- State Changers & Event Handlers ---
+
+     handleIgnoreCurrentCard() {
+        if (!this.state.quizInstance) return;
+    
+        const quiz = this.state.quizInstance;
+        const isFlippable = quiz instanceof SpacedRepetitionQuiz;
+        const currentCard = isFlippable ? quiz.getCurrentCard() : quiz.getCurrentQuestion();
+        
+        if (!currentCard) return;
+    
+        const cardIdentifier = isFlippable ? currentCard.cardId : currentCard.question;
+        console.log(`DEBUG: [App] handleIgnoreCurrentCard -> Ignoring card and advancing: ${cardIdentifier}`);
+    
+        if (!quiz.progress.ignored) {
+            quiz.progress.ignored = new Set();
+        }
+    
+        quiz.progress.ignored.add(cardIdentifier);
+        quiz.progress.learned.delete(cardIdentifier);
+        quiz.progress.needsReview.delete(cardIdentifier);
+    
+        StorageService.saveDeckProgress(this.state.currentDeckId, quiz.progress);
+    
+        // UX Improvement: Immediately move to the next card.
+        // We simulate a correct answer just to advance the quiz flow.
+        if (isFlippable) {
+        // We call the next card logic directly, without assessing/scoring.
+            quiz.moveToNextCard();
+            if (quiz.isQuizOver()) {
+                this.handleQuizEnd();
+            } else {
+                this.render();
+            }
+        } else {
+            // For multiple choice, we need to show feedback briefly before advancing.
+            const correctAnswer = quiz.getCurrentQuestion().correctAnswer;
+            this.quizScreenComponent.showFeedback(false, correctAnswer); // Show correct answer
+            setTimeout(() => this.handleQuizNext(), 500); // Advance after a short delay
+        }
+    }
+
+    handleUnignoreCard(cardIdentifier) {
+        if (!this.state.currentDeckId) return;
+        console.log(`DEBUG: [App] handleUnignoreCard -> Restoring card: ${cardIdentifier}`);
+        const progress = StorageService.loadDeckProgress(this.state.currentDeckId);
+        progress.ignored.delete(cardIdentifier);
+        StorageService.saveDeckProgress(this.state.currentDeckId, progress);
+        this.render(); // Re-render the detail screen to reflect the change
+    }
 
     handleDeckSelected(deckId) {
         console.log(`DEBUG: [App] handleDeckSelected -> Deck with ID '${deckId}' was selected.`);

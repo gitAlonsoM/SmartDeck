@@ -21,30 +21,38 @@ class SpacedRepetitionQuiz {
      * @param {number} quizLength - The maximum number of cards for the round.
      */
     generateQuizRound(quizLength = 7) {
-        console.log("DEBUG: [SpacedRepetitionQuiz] generateQuizRound -> Generating a new round.");
-        const shuffle = (arr) => arr.sort(() => 0.5 - Math.random());
+       console.log("DEBUG: [SpacedRepetitionQuiz] generateQuizRound -> Generating a new round.");
+        const ignoredCardIds = this.progress.ignored || new Set();
+        if (ignoredCardIds.size > 0) {
+            console.log(`DEBUG: [SpacedRepetitionQuiz] generateQuizRound -> Excluding ${ignoredCardIds.size} ignored card(s).`);
+        }
 
-        // Use cardId as the unique identifier for flippable cards
-        const reviewPool = Array.from(this.progress.needsReview || []);
-        console.log(`DEBUG: [SpacedRepetitionQuiz] generateQuizRound -> Found ${reviewPool.length} cards in 'needsReview'.`);
+        // Filter out ignored cards from the entire pool first.
+        const studyableCards = this.allCards.filter(card => !ignoredCardIds.has(card.cardId));
 
-        const seenCardIds = new Set([...Array.from(this.progress.learned || []), ...reviewPool]);
-        const newPool = this.allCards
-            .map(card => card.cardId)
-            .filter(id => !seenCardIds.has(id));
-        console.log(`DEBUG: [SpacedRepetitionQuiz] generateQuizRound -> Found ${newPool.length} new (unseen) cards.`);
+        const shuffle = (arr) => arr.sort(() => 0.5 - Math.random());
 
-        const availablePool = [...reviewPool, ...newPool];
-        const finalCardPoolIds = shuffle(availablePool).slice(0, quizLength);
+        // Use cardId as the unique identifier for flippable cards
+        const reviewPool = Array.from(this.progress.needsReview || []);
+        console.log(`DEBUG: [SpacedRepetitionQuiz] generateQuizRound -> Found ${reviewPool.length} cards in 'needsReview'.`);
 
-        this.currentCards = finalCardPoolIds
-            .map(cardId => this.allCards.find(c => c.cardId === cardId))
-            .filter(Boolean);
-        
-        this.currentIndex = 0;
-        this.score = 0; // Reset score for the new round
+        const seenCardIds = new Set([...Array.from(this.progress.learned || []), ...reviewPool]);
+        const newPool = studyableCards // Use the filtered pool of cards
+            .map(card => card.cardId)
+            .filter(id => !seenCardIds.has(id));
+        console.log(`DEBUG: [SpacedRepetitionQuiz] generateQuizRound -> Found ${newPool.length} new (unseen) cards from the studyable pool.`);
+
+       const availablePool = [...reviewPool, ...newPool];
+       const finalCardPoolIds = shuffle(availablePool).slice(0, quizLength);
+
+        this.currentCards = finalCardPoolIds
+            .map(cardId => studyableCards.find(c => c.cardId === cardId)) // Use studyableCards
+            .filter(Boolean);
+        
+        this.currentIndex = 0;
+        this.score = 0; // Reset score for the new round
         console.log(`DEBUG: [SpacedRepetitionQuiz] generateQuizRound -> Final round generated with ${this.currentCards.length} cards.`);
-    }
+    }
 
     /**
      * Handles the user's self-assessment for the current card.

@@ -3,13 +3,14 @@
 // Component to render a flippable, self-assessed card for studying.
 // Component to render a flippable, self-assessed card for studying.
 class FlippableCardScreen {
-    constructor(container, onAssess, onEnd) {
-        this.container = container;
-        this.onAssess = onAssess; // Callback when user assesses themselves
-        this.onEnd = onEnd;     // Callback when the round ends
-        this.cardData = null;
-        console.log("DEBUG: [FlippableCardScreen] constructor -> Component instantiated.");
-    }
+   constructor(container, onAssess, onEnd, onIgnore) {
+        this.container = container;
+        this.onAssess = onAssess; // Callback when user assesses themselves
+        this.onEnd = onEnd;     // Callback when the round ends
+        this.onIgnore = onIgnore; // Callback to ignore the card
+        this.cardData = null;
+        console.log("DEBUG: [FlippableCardScreen] constructor -> Component instantiated.");
+    }
 
     async render(deckName, card, currentIndex, total) {
         console.log("DEBUG: [FlippableCardScreen] render -> Rendering card:", card);
@@ -67,14 +68,15 @@ class FlippableCardScreen {
     }
 
     setupEventListeners() {
-        // Use .onclick to ensure we don't attach multiple listeners to static buttons
-        document.getElementById('flip-card-btn').onclick = () => this.flipCard();
-        document.getElementById('knew-it-btn').onclick = () => this.onAssess(true);
-        document.getElementById('review-again-btn').onclick = () => this.onAssess(false);
+        // Use .onclick to ensure we don't attach multiple listeners to static buttons
+        document.getElementById('flip-card-btn').onclick = () => this.flipCard();
+        document.getElementById('knew-it-btn').onclick = () => this.onAssess(true);
+        document.getElementById('review-again-btn').onclick = () => this.onAssess(false);
+        document.getElementById('ignore-btn-flippable').onclick = () => this.onIgnore();
 
-        // Use event delegation for dynamic TTS buttons
-        this.container.onclick = (event) => {
-            const playButton = event.target.closest('.play-tts-btn');
+        // Use event delegation for dynamic TTS buttons
+        this.container.onclick = (event) => {
+            const playButton = event.target.closest('.play-tts-btn');
             if (playButton) {
                 const text = playButton.dataset.textToSpeak;
                 const preferredVoice = StorageService.loadPreferredVoice();
@@ -84,14 +86,16 @@ class FlippableCardScreen {
     }
     
     flipCard() {
-        document.querySelector('.flip-card-inner').classList.add('is-flipped');
-        document.getElementById('flip-card-btn').classList.add('hidden');
-        document.getElementById('assessment-buttons').classList.remove('hidden');
-    }
+        document.getElementById('flippable-card-header').classList.add('invisible'); // Hide header for clean view
+        document.querySelector('.flip-card-inner').classList.add('is-flipped');
+        document.getElementById('flip-card-btn').classList.add('hidden');
+        document.getElementById('assessment-buttons').classList.remove('hidden');
+    }
 
-    resetViewState() {
-        const cardInner = document.querySelector('.flip-card-inner');
-        if (cardInner) cardInner.classList.remove('is-flipped');
+    resetViewState() {
+        document.getElementById('flippable-card-header').classList.remove('invisible'); // Show header again
+        const cardInner = document.querySelector('.flip-card-inner');
+        if (cardInner) cardInner.classList.remove('is-flipped');
         
         const flipBtn = document.getElementById('flip-card-btn');
         if (flipBtn) flipBtn.classList.remove('hidden');

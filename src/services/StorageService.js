@@ -12,7 +12,7 @@ static STORAGE_KEY_DECK_PROGRESS_PREFIX = 'smart-decks-v3-deck-progress-';
     /**
      * Saves the learning progress for a specific deck.
      * @param {string} deckId The ID of the deck.
-     * @param {object} progress The progress object { learned: Set, needsReview: Set }.
+     * @param {object} progress The progress object { learned: Set, needsReview: Set, ignored: Set }.
      */
     static saveDeckProgress(deckId, progress) {
         if (!deckId) return;
@@ -21,7 +21,8 @@ static STORAGE_KEY_DECK_PROGRESS_PREFIX = 'smart-decks-v3-deck-progress-';
             // Convert Sets to Arrays for JSON serialization
             const serializableProgress = {
                 learned: Array.from(progress.learned || []),
-                needsReview: Array.from(progress.needsReview || [])
+                needsReview: Array.from(progress.needsReview || []),
+                ignored: Array.from(progress.ignored || []) // Add ignored set for serialization
             };
             localStorage.setItem(key, JSON.stringify(serializableProgress));
             console.log(`DEBUG: [StorageService] saveDeckProgress -> Saved learning progress for deck ${deckId}.`);
@@ -36,7 +37,7 @@ static STORAGE_KEY_DECK_PROGRESS_PREFIX = 'smart-decks-v3-deck-progress-';
      * @returns {object} The progress object with Sets, or a default empty progress object.
      */
     static loadDeckProgress(deckId) {
-        if (!deckId) return { learned: new Set(), needsReview: new Set() };
+        if (!deckId) return { learned: new Set(), needsReview: new Set(), ignored: new Set() };
         try {
             const key = `${this.STORAGE_KEY_DECK_PROGRESS_PREFIX}${deckId}`;
             const storedProgress = localStorage.getItem(key);
@@ -45,7 +46,8 @@ static STORAGE_KEY_DECK_PROGRESS_PREFIX = 'smart-decks-v3-deck-progress-';
                 // Convert Arrays back to Sets
                 const progress = {
                     learned: new Set(parsed.learned || []),
-                    needsReview: new Set(parsed.needsReview || [])
+                    needsReview: new Set(parsed.needsReview || []),
+                    ignored: new Set(parsed.ignored || []) // Add ignored set from storage
                 };
                 console.log(`DEBUG: [StorageService] loadDeckProgress -> Loaded learning progress for deck ${deckId}.`);
                 return progress;
@@ -54,7 +56,7 @@ static STORAGE_KEY_DECK_PROGRESS_PREFIX = 'smart-decks-v3-deck-progress-';
             console.error(`DEBUG: [StorageService] loadDeckProgress -> Error loading deck progress for deck ${deckId}.`, error);
         }
         // Return a default object if nothing is found or an error occurs
-        return { learned: new Set(), needsReview: new Set() };
+        return { learned: new Set(), needsReview: new Set(), ignored: new Set() };
     }
 
      /**

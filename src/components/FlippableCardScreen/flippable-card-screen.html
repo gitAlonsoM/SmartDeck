@@ -2,10 +2,15 @@
 <div class="flex flex-col justify-between min-h-[calc(100vh-8rem)]">
 
     <div class="space-y-4">
-        <div class="flex justify-between items-center">
-            <h2 class="text-xl font-bold text-gray-800 dark:text-gray-200" id="deck-title-flippable">Studying Deck</h2>
-            <div class="text-lg font-mono" id="card-progress-indicator">1 / 7</div>
-        </div>
+        <div id="flippable-card-header" class="flex justify-between items-center">
+            <h2 class="text-xl font-bold text-gray-800 dark:text-gray-200" id="deck-title-flippable">Studying Deck</h2>
+            <div class="flex items-center space-x-4">
+                <button id="ignore-btn-flippable" title="Ignore this card in future rounds" class="px-2 py-1 bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs font-semibold rounded-md hover:bg-yellow-400 hover:text-white transition-colors">
+                    Ignorar
+                </button>
+                    <div class="text-lg font-mono" id="card-progress-indicator">1 / 7</div>
+            </div>
+        </div>
 
         <div class="flip-card-container flex-grow">
             <div class="flip-card-inner">
