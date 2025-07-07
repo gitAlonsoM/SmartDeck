@@ -621,5 +621,473 @@
         "value": "# A line from a Podfile, which uses Ruby syntax\ntarget 'Runner' do\n  pod 'Firebase/Analytics'\nend"
       }
     }
+
+
+    ,
+    {
+      "category": "Conditional Logic",
+      "hint": "This structure forms the fundamental building block for making decisions in a script.",
+      "question": "What is the basic syntax for an 'if' statement in a Bash script?",
+      "options": [
+        "if [ condition ]; then ... end if",
+        "if ( condition ) { ... }",
+        "if [ condition ]; then ... fi"
+      ],
+      "correctAnswer": "if [ condition ]; then ... fi",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "CONFIG_FILE=\"settings.conf\"\n\nif [ -f \"$CONFIG_FILE\" ]; then\n  echo \"INFO: Configuration file found.\"\nfi"
+      }
+    },
+    {
+      "category": "Conditional Logic",
+      "hint": "This structure allows for an alternative action to be taken when the initial condition is false.",
+      "question": "How do you provide a fallback action in a Bash 'if' statement?",
+      "options": [
+        "Using the 'otherwise' keyword",
+        "Using an 'else' block",
+        "Using a 'case' block inside the 'if'"
+      ],
+      "correctAnswer": "Using an 'else' block",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "if [ \"$1\" == \"production\" ]; then\n  echo \"Running in production mode.\"\nelse\n  echo \"Running in development mode.\"\nfi"
+      }
+    },
+    {
+      "category": "Conditional Logic",
+      "hint": "This is a built-in command, often used as an alias for 'test', to evaluate expressions.",
+      "question": "What is the purpose of the `[ ... ]` syntax in Bash conditionals?",
+      "options": [
+        "To group commands for subshell execution",
+        "To define an array",
+        "To test a condition or compare values"
+      ],
+      "correctAnswer": "To test a condition or compare values",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "COUNT=10\n\n# The brackets are used to test if COUNT is greater than 5\nif [ \"$COUNT\" -gt 5 ]; then\n  echo \"Count is greater than 5.\"\nfi"
+      }
+    },
+    {
+      "category": "Conditional Logic",
+      "hint": "Modern Bash scripting prefers this syntax over single brackets for more features and safety.",
+      "question": "What is the main advantage of using double brackets `[[ ... ]]` over single brackets `[ ... ]`?",
+      "options": [
+        "It supports floating-point arithmetic.",
+        "It prevents word splitting and supports pattern matching.",
+        "It is required for running commands on remote servers."
+      ],
+      "correctAnswer": "It prevents word splitting and supports pattern matching.",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# [[ ... ]] safely handles variables that might be empty or contain spaces.\nFILENAME=\"My Document.txt\"\nif [[ -f \"$FILENAME\" ]]; then\n  echo \"File '$FILENAME' exists.\"\nfi"
+      }
+    },
+    {
+      "category": "Script Output",
+      "hint": "This command is the standard way to print text to the terminal.",
+      "question": "Which command is used to display a line of text on standard output?",
+      "options": [
+        "print",
+        "display",
+        "echo"
+      ],
+      "correctAnswer": "echo",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "echo \"Step 1: Cloning repository...\"\n# Some command here\necho \"Step 1: Done.\""
+      }
+    },
+    {
+      "category": "Script Output",
+      "hint": "This flag enables the interpretation of special characters like newlines (`\\n`) and tabs (`\\t`).",
+      "question": "What does the `-e` flag do when used with the `echo` command?",
+      "options": [
+        "It sends the output to standard error instead of standard output.",
+        "It enables interpretation of backslash escapes.",
+        "It encrypts the output text."
+      ],
+      "correctAnswer": "It enables interpretation of backslash escapes.",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# The -e flag allows \\n to create a new line.\necho -e \"ERROR: Build failed.\\nPlease check the logs.\""
+      }
+    },
+    {
+      "category": "Script Control",
+      "hint": "This command immediately terminates the script's execution.",
+      "question": "Which command is used to stop a script and return a status code?",
+      "options": [
+        "stop",
+        "exit",
+        "break"
+      ],
+      "correctAnswer": "exit",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "echo \"Validating dependencies...\"\nif ! command -v flutter &> /dev/null; then\n  echo \"ERROR: Flutter SDK not found.\"\n  exit 1\nfi"
+      }
+    },
+    {
+      "category": "Script Control",
+      "hint": "By convention, this exit code signals that the script completed successfully.",
+      "question": "What does an exit code of `0` signify?",
+      "options": [
+        "A critical error occurred.",
+        "The script was terminated by the user.",
+        "The script executed successfully."
+      ],
+      "correctAnswer": "The script executed successfully.",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "echo \"Build complete.\"\nexit 0"
+      }
+    },
+    {
+      "category": "Special Variables",
+      "hint": "These variables represent the arguments passed to a script from the command line.",
+      "question": "How do you access the first and second command-line arguments inside a script?",
+      "options": [
+        "arg1, arg2",
+        "$1, $2",
+        "ARGS[1], ARGS[2]"
+      ],
+      "correctAnswer": "$1, $2",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# To run: ./deploy.sh production v1.0.0\n\nENVIRONMENT=$1 # \"production\"\nVERSION=$2     # \"v1.0.0\"\n\necho \"Deploying version $VERSION to $ENVIRONMENT...\""
+      }
+    },
+    {
+      "category": "Special Variables",
+      "hint": "This special variable holds the exit status of the last command that was executed.",
+      "question": "Which special variable would you check to see if the previous command succeeded?",
+      "options": [
+        "$STATUS",
+        "$?",
+        "$EXIT_CODE"
+      ],
+      "correctAnswer": "$?",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "flutter build apk\n\n# Check the exit code of the flutter command\nif [ $? -ne 0 ]; then\n    echo \"ERROR: Flutter build failed.\"\n    exit 1\nfi"
+      }
+    },
+    {
+      "category": "String Operations",
+      "hint": "This test operator is used inside brackets to check if a variable's value is an empty string.",
+      "question": "Which test operator checks if a string is empty (has zero length)?",
+      "options": [
+        "-e",
+        "-n",
+        "-z"
+      ],
+      "correctAnswer": "-z",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "API_KEY=\"\"\n\n# This check is true because API_KEY is empty.\nif [ -z \"$API_KEY\" ]; then\n  echo \"ERROR: API_KEY is not set.\"\nfi"
+      }
+    },
+    {
+      "category": "String Operations",
+      "hint": "This test operator is the opposite of `-z`; it checks if a string is NOT empty.",
+      "question": "How do you test if a variable contains any text (is not null)?",
+      "options": [
+        "-nz",
+        "-n",
+        "-s"
+      ],
+      "correctAnswer": "-n",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "USERNAME=\"admin\"\n\n# This check is true because USERNAME is not empty.\nif [ -n \"$USERNAME\" ]; then\n  echo \"Username is set to: $USERNAME\"\nfi"
+      }
+    },
+    {
+      "category": "Logical Operators",
+      "hint": "This operator is used within test conditions to reverse the outcome.",
+      "question": "What is the function of the `!` (exclamation mark) operator in a `[ ... ]` test?",
+      "options": [
+        "It executes the command with high priority.",
+        "It marks the line as important.",
+        "It negates the result of the expression that follows."
+      ],
+      "correctAnswer": "It negates the result of the expression that follows.",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# The code inside the 'if' runs if the file does NOT exist.\nif [ ! -f \"config.json\" ]; then\n  echo \"WARNING: config.json not found, using defaults.\"\nfi"
+      }
+    },
+    {
+      "category": "Logical Operators",
+      "hint": "Used to combine two conditions, requiring both to be true.",
+      "question": "In a `[[ ... ]]` block, which operator represents a logical AND?",
+      "options": [
+        "-and",
+        "&",
+        "&&"
+      ],
+      "correctAnswer": "&&",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "USER=\"admin\"\nPERMISSIONS=755\n\nif [[ \"$USER\" == \"admin\" && \"$PERMISSIONS\" -eq 755 ]]; then\n  echo \"Admin user with correct permissions.\"\nfi"
+      }
+    },
+    {
+      "category": "File System Tests",
+      "hint": "This test operator checks if a given path exists and is a regular file, not a directory.",
+      "question": "Which file test operator checks for the existence of a regular file?",
+      "options": [
+        "-d",
+        "-f",
+        "-e"
+      ],
+      "correctAnswer": "-f",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "if [ -f \"/etc/hosts\" ]; then\n  echo \"INFO: /etc/hosts is a file.\"\nelse\n  echo \"INFO: /etc/hosts is not a regular file or does not exist.\"\nfi"
+      }
+    },
+    {
+      "category": "File System Tests",
+      "hint": "This test operator is essential for checking if a script has been granted the necessary permissions to be run.",
+      "question": "Which test operator checks if a file has execute permissions?",
+      "options": [
+        "-r",
+        "-w",
+        "-x"
+      ],
+      "correctAnswer": "-x",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "if [ -x \"./deploy.sh\" ]; then\n  ./deploy.sh\nelse\n  echo \"ERROR: deploy.sh is not executable. Run 'chmod +x deploy.sh' first.\"\nfi"
+      }
+    },
+    {
+      "category": "Environment Variables",
+      "hint": "This command makes a variable from a script available to any other programs that the script calls.",
+      "question": "What is the purpose of the `export` command?",
+      "options": [
+        "To print the variable's value to a file.",
+        "To make a variable accessible to child processes.",
+        "To import variables from another file."
+      ],
+      "correctAnswer": "To make a variable accessible to child processes.",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# This makes BUILD_NUMBER available to the flutter command.\nexport BUILD_NUMBER=123\nflutter build apk"
+      }
+    },
+    {
+      "category": "Environment Variables",
+      "hint": "A common use case for this command is to modify the system's search path for executables.",
+      "question": "How would you add a new directory to the `$PATH` environment variable for the current session?",
+      "options": [
+        "PATH.add(\"/usr/local/bin\")",
+        "set PATH += \"/usr/local/bin\"",
+        "export PATH=\"/usr/local/bin:$PATH\""
+      ],
+      "correctAnswer": "export PATH=\"/usr/local/bin:$PATH\"",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# Add the local node modules binaries to the path\nexport PATH=\"./node_modules/.bin:$PATH\"\n\n# Now you can run locally installed CLIs directly\nwebpack"
+      }
+    },
+    {
+      "category": "Command Substitution",
+      "hint": "This syntax allows you to capture the output of a command and store it in a variable.",
+      "question": "What is the modern, preferred syntax for command substitution?",
+      "options": [
+        "`command` (backticks)",
+        "$(command)",
+        "&{command}"
+      ],
+      "correctAnswer": "$(command)",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)\necho \"Building from branch: $CURRENT_BRANCH\""
+      }
+    },
+    {
+      "category": "Command Substitution",
+      "hint": "This is often used to get a precise, dynamically generated string, such as a timestamp.",
+      "question": "How can you create a filename that includes the current date in YYYY-MM-DD format?",
+      "options": [
+        "BACKUP_FILE=\"backup-date()\"",
+        "BACKUP_FILE=\"backup-CURRENT_DATE\"",
+        "BACKUP_FILE=\"backup-$(date +%F)\""
+      ],
+      "correctAnswer": "BACKUP_FILE=\"backup-$(date +%F)\"",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "TIMESTAMP=$(date +%F_%T)\nLOG_FILE=\"build-$TIMESTAMP.log\"\necho \"Logging build to $LOG_FILE\""
+      }
+    },
+    {
+      "category": "Pipelines",
+      "hint": "This character connects the output of one command to the input of another, creating a chain.",
+      "question": "What is the function of the pipe `|` operator?",
+      "options": [
+        "It runs the two commands in parallel.",
+        "It sends the output of the left command to the input of the right command.",
+        "It performs a logical OR between two conditions."
+      ],
+      "correctAnswer": "It sends the output of the left command to the input of the right command.",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# List files, then filter for '.log' files.\nls -1 | grep \".log\""
+      }
+    },
+    {
+      "category": "Pipelines",
+      "hint": "Chaining commands with this operator allows for powerful, multi-step text processing.",
+      "question": "How could you count the number of files in the current directory?",
+      "options": [
+        "ls | wc -l",
+        "ls -count",
+        "count(ls)"
+      ],
+      "correctAnswer": "ls | wc -l",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# List processes, filter for 'java', then count the lines.\nps aux | grep 'java' | wc -l"
+      }
+    },
+    {
+      "category": "Text Processing",
+      "hint": "This utility is used to find lines of text that match a pattern.",
+      "question": "Which command would you use to find all lines containing the word 'ERROR' in a log file?",
+      "options": [
+        "find 'ERROR' in app.log",
+        "search app.log for 'ERROR'",
+        "grep 'ERROR' app.log"
+      ],
+      "correctAnswer": "grep 'ERROR' app.log",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# The -i flag makes the search case-insensitive\ngrep -i \"version\" build.properties"
+      }
+    },
+    {
+      "category": "Text Processing",
+      "hint": "This utility is used to extract specific columns or sections from lines of text.",
+      "question": "What is the `cut` command primarily used for?",
+      "options": [
+        "To shorten long lines of text to a specific length.",
+        "To extract sections from each line of a file.",
+        "To remove files from a directory."
+      ],
+      "correctAnswer": "To extract sections from each line of a file.",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# Get the 5th column from the output of 'ls -l'\nls -l | cut -d' ' -f5"
+      }
+    },
+    {
+      "category": "Text Processing",
+      "hint": "A common use case for `cut` is to split a line by a specific character to get a value.",
+      "question": "How can you extract the value from a line like `key=value`?",
+      "options": [
+        "grep 'key=value' | split '='",
+        "echo 'key=value' | cut -d'=' -f2",
+        "echo 'key=value' | get -part 2"
+      ],
+      "correctAnswer": "echo 'key=value' | cut -d'=' -f2",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "LINE=\"version=1.2.3\"\n\n# Split the string by '=' and get the second field\nVERSION=$(echo $LINE | cut -d'=' -f2)\n\necho \"The version is: $VERSION\""
+      }
+    },
+    {
+      "category": "Parameter Expansion",
+      "hint": "This syntax allows you to provide a fallback value for a variable if it's not set.",
+      "question": "What is the purpose of the `${VAR:-default}` syntax?",
+      "options": [
+        "It assigns a new value to VAR.",
+        "It deletes the variable VAR.",
+        "It uses 'default' if VAR is empty or unset, otherwise uses VAR's value."
+      ],
+      "correctAnswer": "It uses 'default' if VAR is empty or unset, otherwise uses VAR's value.",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# If the $1 argument is missing, ENVIRONMENT will be set to 'development'.\nENVIRONMENT=${1:-development}\necho \"Using environment: $ENVIRONMENT\""
+      }
+    },
+    {
+      "category": "Parameter Expansion",
+      "hint": "This variant of parameter expansion not only provides a default, but also assigns it back to the variable.",
+      "question": "What is the difference between `${VAR:-default}` and `${VAR:=default}`?",
+      "options": [
+        "There is no difference.",
+        "`:=` also assigns the default value back to VAR if it was unset.",
+        "`:=` requires the default to be a number."
+      ],
+      "correctAnswer": "`:=` also assigns the default value back to VAR if it was unset.",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# If CONFIG_PATH is unset, it gets assigned the default value.\n: ${CONFIG_PATH:=\"/etc/app/config.json\"}\n\n# Now CONFIG_PATH is guaranteed to have a value.\necho \"Config path is: $CONFIG_PATH\""
+      }
+    },
+    {
+      "category": "Script Input",
+      "hint": "This construct, known as a 'Here Document', is used to feed a block of text to a command.",
+      "question": "What is the primary use of the `cat <<EOF ... EOF` structure?",
+      "options": [
+        "To define a multi-line string variable.",
+        "To read the content of the file named 'EOF'.",
+        "To pass a multi-line block of text to a command's standard input."
+      ],
+      "correctAnswer": "To pass a multi-line block of text to a command's standard input.",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# Display a help message to the user.\ncat <<EOF\nUsage: $0 [options]\n\nThis script builds the project.\n  -h, --help    Display this help message\nEOF"
+      }
+    },
+    {
+      "category": "Script Input",
+      "hint": "A Here Document can be redirected to a file, which is a convenient way to create configuration files dynamically.",
+      "question": "How can you use a Here Document to write a multi-line configuration file?",
+      "options": [
+        "echo '...' >> config.json",
+        "cat <<EOF > config.json ... EOF",
+        "write file config.json { ... }"
+      ],
+      "correctAnswer": "cat <<EOF > config.json ... EOF",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "DB_USER=\"admin\"\n\n# Creates a new config.ini file with content\ncat <<EOF > config.ini\n[database]\nuser = $DB_USER\nport = 5432\nEOF"
+      }
+    }
+
   ]
 }

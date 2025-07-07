@@ -1125,6 +1125,427 @@
       "value": ""
     }
   }
-
-  ]
+,
+    {
+      "category": "iOS - Core Concepts & Tools",
+      "hint": "The official IDE from Apple for developing all iOS applications.",
+      "question": "What is the primary Integrated Development Environment used to build, debug, and prepare iOS apps for distribution?",
+      "options": [
+        "Visual Studio Code",
+        "Xcode",
+        "Android Studio"
+      ],
+      "correctAnswer": "Xcode",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - Core Concepts & Tools",
+      "hint": "The web portal for managing your app's entire lifecycle, from build uploads to store analytics.",
+      "question": "What is the name of the Apple web portal used to manage TestFlight, set up your store page, and submit your app?",
+      "options": [
+        "Apple Developer Portal",
+        "iTunes Connect",
+        "App Store Connect"
+      ],
+      "correctAnswer": "App Store Connect",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - Core Concepts & Tools",
+      "hint": "Apple's platform for beta testing your app with internal and external users.",
+      "question": "Which Apple service allows you to distribute pre-release builds of your app to testers?",
+      "options": [
+        "TestFlight",
+        "Firebase App Distribution",
+        "Xcode Cloud"
+      ],
+      "correctAnswer": "TestFlight",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - Core Concepts & Tools",
+      "hint": "The required paid membership to publish apps on the App Store.",
+      "question": "What is the name of the membership program required to get certificates and access to App Store Connect?",
+      "options": [
+        "Apple Developer Program",
+        "App Store Subscription",
+        "Xcode Professional License"
+      ],
+      "correctAnswer": "Apple Developer Program",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - Core Concepts & Tools",
+      "hint": "A window inside Xcode that lets you manage and upload your archives to the App Store.",
+      "question": "What is the name of the Xcode window that displays your build archives and allows you to validate or distribute them?",
+      "options": [
+        "Project Navigator",
+        "Interface Builder",
+        "Organizer"
+      ],
+      "correctAnswer": "Organizer",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - Identifiers & Info.plist",
+      "hint": "A core configuration file in every iOS app containing essential metadata.",
+      "question": "What is the name of the property list file that stores key app metadata like its Bundle ID and version number?",
+      "options": [
+        "build.gradle",
+        "Info.plist",
+        "config.xml"
+      ],
+      "correctAnswer": "Info.plist",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - Identifiers & Info.plist",
+      "hint": "The single most important unique ID for your app, formatted in reverse-DNS notation.",
+      "question": "What is the unique identifier for an iOS app (e.g., com.yourcompany.yourapp) known as?",
+      "options": [
+        "Application ID",
+        "Bundle ID",
+        "SKU"
+      ],
+      "correctAnswer": "Bundle ID",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - Identifiers & Info.plist",
+      "hint": "An identifier in your developer account that links services like Push Notifications to your app.",
+      "question": "In the Apple Developer portal, what identifier associates your app's Bundle ID with specific app services?",
+      "options": [
+        "Service ID",
+        "App ID",
+        "Provisioning ID"
+      ],
+      "correctAnswer": "App ID",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - Identifiers & Info.plist",
+      "hint": "The public-facing version of your app that users see on the App Store (e.g., '1.2.0').",
+      "question": "Which Info.plist key represents the user-visible version string on the App Store?",
+      "options": [
+        "CFBundleVersion",
+        "CFBundleShortVersionString",
+        "MarketingVersion"
+      ],
+      "correctAnswer": "CFBundleShortVersionString",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - Identifiers & Info.plist",
+      "hint": "An internal counter that must be incremented for every new upload to App Store Connect.",
+      "question": "Which Info.plist key represents the internal build number that identifies a unique upload to TestFlight?",
+      "options": [
+        "CFBundleVersion",
+        "BuildNumber",
+        "CFBundleIdentifier"
+      ],
+      "correctAnswer": "CFBundleVersion",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - Identifiers & Info.plist",
+      "hint": "The name of your app as it appears below its icon on the user's home screen.",
+      "question": "Which Info.plist key specifies the name shown on the iOS home screen?",
+      "options": [
+        "CFBundleName",
+        "CFBundleDisplayName",
+        "AppName"
+      ],
+      "correctAnswer": "CFBundleDisplayName",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - Identifiers & Info.plist",
+      "hint": "The name of the main executable file inside your app package.",
+      "question": "Which Info.plist key defines the name of the app's runnable binary?",
+      "options": [
+        "CFBundleExecutable",
+        "MainExecutable",
+        "Runner"
+      ],
+      "correctAnswer": "CFBundleExecutable",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - Identifiers & Info.plist",
+      "hint": "A short, technical name for the app bundle, sometimes used by the system.",
+      "question": "What does the Info.plist key `CFBundleName` represent?",
+      "options": [
+        "The public App Store name",
+        "A short name for the app bundle, often derived from the product name",
+        "The name of the developer"
+      ],
+      "correctAnswer": "A short name for the app bundle, often derived from the product name",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - Signing & Packaging",
+      "hint": "The security process that verifies your identity and ensures the app hasn't been tampered with.",
+      "question": "What is the general term for the process of cryptographically signing an iOS app to ensure its integrity and origin?",
+      "options": [
+        "App Notarization",
+        "Code Signing",
+        "Build Compilation"
+      ],
+      "correctAnswer": "Code Signing",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - Signing & Packaging",
+      "hint": "A digital file that proves your identity as a trusted Apple developer.",
+      "question": "In code signing, what digital identity file is issued by Apple to you as a developer?",
+      "options": [
+        "Keystore",
+        "Certificate",
+        "Private Key"
+      ],
+      "correctAnswer": "Certificate",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - Signing & Packaging",
+      "hint": "This file links your Certificate, App ID, and authorized devices or store account together.",
+      "question": "What file ties your developer identity and app services to a specific build for testing or release?",
+      "options": [
+        "Provisioning Profile",
+        "Entitlements File",
+        "Info.plist"
+      ],
+      "correctAnswer": "Provisioning Profile",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - Signing & Packaging",
+      "hint": "A setting in your Xcode project that defines a single product to be built, like your app.",
+      "question": "Within an Xcode project, what defines the settings for building a single product, such as your app?",
+      "options": [
+        "Scheme",
+        "Workspace",
+        "TARGET"
+      ],
+      "correctAnswer": "TARGET",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - Signing & Packaging",
+      "hint": "The final package created by Xcode's 'Archive' action, containing the compiled app and its resources.",
+      "question": "What is the file extension of the bundle produced by Xcode that you upload to App Store Connect?",
+      "options": [
+        ".ipa",
+        ".xcarchive",
+        ".app"
+      ],
+      "correctAnswer": ".xcarchive",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - TestFlight",
+      "hint": "In App Store Connect, this refers to a specific version of your app you have uploaded for testing.",
+      "question": "What does App Store Connect call an uploaded `.xcarchive` that is available for testing in TestFlight?",
+      "options": [
+        "An Artifact",
+        "A Release Candidate",
+        "A Build"
+      ],
+      "correctAnswer": "A Build",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - TestFlight",
+      "hint": "The first phase of testing, limited to members of your App Store Connect team.",
+      "question": "What is the TestFlight phase called where you distribute a build only to developers and admins on your team?",
+      "options": [
+        "Alpha Testing",
+        "Internal Testing",
+        "Unit Testing"
+      ],
+      "correctAnswer": "Internal Testing",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - TestFlight",
+      "hint": "A quick, automated review required for the first build of a new version before external testing.",
+      "question": "Before distributing a build to external testers, what quick review process must it pass?",
+      "options": [
+        "Full App Review",
+        "Beta App Review",
+        "Manual Code Review"
+      ],
+      "correctAnswer": "Beta App Review",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - TestFlight",
+      "hint": "A declaration about whether your app uses encryption, required before a build is available in TestFlight.",
+      "question": "What declaration must you make about your app's use of encryption before a build can be tested?",
+      "options": [
+        "Security Assessment",
+        "Export Compliance",
+        "Cryptography Report"
+      ],
+      "correctAnswer": "Export Compliance",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - App Store Release",
+      "hint": "The tab in App Store Connect where you manage the final release of your app.",
+      "question": "In App Store Connect, which section is used to manage the release of your app, prepare metadata, and submit for review?",
+      "options": [
+        "TestFlight",
+        "App Analytics",
+        "Distribution"
+      ],
+      "correctAnswer": "Distribution",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - App Store Release",
+      "hint": "All the information on your App Store page, like screenshots, description, and keywords.",
+      "question": "What is the collective term for all the textual and visual information that makes up your App Store product page?",
+      "options": [
+        "App Store Listing",
+        "App Store Metadata",
+        "Product Details"
+      ],
+      "correctAnswer": "App Store Metadata",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - App Store Release",
+      "hint": "The status indicating you need to complete metadata and attach a build.",
+      "question": "In App Store Connect, what is the status of a new version before you've attached a build and filled out all details?",
+      "options": [
+        "Ready to Submit",
+        "Prepare for Submission",
+        "Waiting for Upload"
+      ],
+      "correctAnswer": "Prepare for Submission",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - App Store Release",
+      "hint": "The action of sending your completed app version to Apple for approval.",
+      "question": "What is the final step you take in App Store Connect to send your app to Apple for approval?",
+      "options": [
+        "Publish App",
+        "Submit for Review",
+        "Go Live"
+      ],
+      "correctAnswer": "Submit for Review",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - App Store Release",
+      "hint": "The status indicating an Apple employee is actively testing and reviewing your app.",
+      "question": "What does the 'In Review' status mean for your app submission?",
+      "options": [
+        "Your app is being automatically scanned for malware.",
+        "An Apple employee is actively reviewing your app against the guidelines.",
+        "The app is waiting in a queue to be reviewed."
+      ],
+      "correctAnswer": "An Apple employee is actively reviewing your app against the guidelines.",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - App Store Release",
+      "hint": "The communication channel where Apple contacts you if your app is rejected.",
+      "question": "If your app submission is rejected, where in App Store Connect do you find the explanation and communicate with Apple?",
+      "options": [
+        "Resolution Center",
+        "Apple Developer Forums",
+        "Support Tickets"
+      ],
+      "correctAnswer": "Resolution Center",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - App Store Release",
+      "hint": "The setting that controls how your app is published after approval (immediately or manually).",
+      "question": "What feature in App Store Connect allows you to control when your app goes live after it has been approved?",
+      "options": [
+        "Phased Release",
+        "Scheduled Publishing",
+        "App Store Version Release"
+      ],
+      "correctAnswer": "App Store Version Release",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - App Store Release",
+      "hint": "The required images and short videos that showcase your app's features on its store page.",
+      "question": "What are the required visual assets for your App Store product page called?",
+      "options": [
+        "Marketing Assets",
+        "Promotional Graphics",
+        "Previews and Screenshots"
+      ],
+      "correctAnswer": "Previews and Screenshots",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - App Store Release",
+      "hint": "A mandatory section on your store page detailing what user data your app collects.",
+      "question": "What is the name of the mandatory privacy 'nutrition label' on an App Store product page?",
+      "options": [
+        "Data Usage Policy",
+        "App Privacy",
+        "User Data Report"
+      ],
+      "correctAnswer": "App Privacy",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - Info.plist Keys",
+      "hint": "A simple boolean key that declares the app is built for iOS and requires an iPhone, iPad, or iPod touch.",
+      "question": "Which Info.plist key is a simple flag indicating that the app is built specifically for the iOS platform?",
+      "options": [
+        "UIRequiredDeviceCapabilities",
+        "LSRequiresIPhoneOS",
+        "TargetPlatform"
+      ],
+      "correctAnswer": "LSRequiresIPhoneOS",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - Info.plist Keys",
+      "hint": "Defines the 'Launch Screen' file, which is the first screen shown instantly by the system.",
+      "question": "Which Info.plist key specifies the storyboard file for the app's initial launch screen?",
+      "options": [
+        "UIMainStoryboardFile",
+        "UILaunchStoryboardName",
+        "UIInitialScreen"
+      ],
+      "correctAnswer": "UILaunchStoryboardName",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - Info.plist Keys",
+      "hint": "Tells the system which storyboard contains the main UI to load after the launch screen.",
+      "question": "For non-SwiftUI apps, what Info.plist key defines the main storyboard containing the initial user interface?",
+      "options": [
+        "UIMainStoryboardFile",
+        "UIRootView",
+        "MainInterface"
+      ],
+      "correctAnswer": "UIMainStoryboardFile",
+      "content": { "type": "none", "language": "", "value": "" }
+    },
+    {
+      "category": "iOS - Info.plist Keys",
+      "hint": "Defines which device orientations your app's UI supports.",
+      "question": "Which Info.plist key is an array that specifies the interface orientations an app supports (e.g., portrait, landscape)?",
+      "options": [
+        "UIInterfaceOrientations",
+        "SupportedRotations",
+        "UISupportedInterfaceOrientations"
+      ],
+      "correctAnswer": "UISupportedInterfaceOrientations",
+      "content": { "type": "none", "language": "", "value": "" }
+    }
+]
+  
 }
