@@ -31,10 +31,19 @@ class FlippableCardScreen {
     }
 
     populateCard() {
+       // SIDE A (FRONT) - Unchanged
         const sideAContainer = document.getElementById('side-a-content');
         sideAContainer.innerHTML = ''; // Clear previous
         sideAContainer.appendChild(this._createTextLine(this.cardData.sideA, true));
 
+        // SIDE A (ON BACK) - New logic
+        // Populate the new container on the back of the card with Side A's content.
+        const sideAOnBackContainer = document.getElementById('side-a-content-on-back');
+        sideAOnBackContainer.innerHTML = ''; // Clear previous
+        sideAOnBackContainer.appendChild(this._createTextLine(this.cardData.sideA, true));
+
+
+        // SIDE B (BACK) - Unchanged
         const sideBContainer = document.getElementById('side-b-content');
         sideBContainer.innerHTML = ''; // Clear previous
         this.cardData.sideB.forEach(line => {
@@ -54,8 +63,7 @@ class FlippableCardScreen {
 
         const textElement = document.createElement('p');
         textElement.textContent = text;
-        textElement.className = isSideA ? 'text-xl md:text-2xl font-semibold text-center flex-grow' : 'text-lg';
-
+         textElement.className = isSideA ? 'text-lg md:text-xl font-semibold text-center flex-grow' : 'text-lg';
         
         const playButton = document.createElement('button');
         playButton.className = 'play-tts-btn ml-4 text-gray-400 hover:text-indigo-500 transition-colors';
@@ -103,4 +111,35 @@ class FlippableCardScreen {
         const assessBtns = document.getElementById('assessment-buttons');
         if (assessBtns) assessBtns.classList.add('hidden');
     }
+
+     /**
+     * Dynamically adjusts the card container's height to fit the content of the visible face.
+     * This prevents content from overflowing on cards with variable text length.
+     */
+    _adjustCardHeight() {
+        const cardInner = this.container.querySelector('.flip-card-inner');
+        const frontFace = this.container.querySelector('.flip-card-front');
+        const backFace = this.container.querySelector('.flip-card-back');
+
+        if (!cardInner || !frontFace || !backFace) return;
+
+        // Check which face is currently visible to determine the target height
+        const isFlipped = cardInner.classList.contains('is-flipped');
+        
+        // Temporarily set height to auto to measure the natural content height
+        frontFace.style.height = 'auto';
+        backFace.style.height = 'auto';
+        
+        const frontHeight = frontFace.offsetHeight;
+        const backHeight = backFace.offsetHeight;
+
+        // Set the container's height to the height of the currently visible face
+        cardInner.style.height = `${isFlipped ? backHeight : frontHeight}px`;
+
+        // Restore face heights to 100% to fill the newly sized container
+        frontFace.style.height = '100%';
+        backFace.style.height = '100%';
+    }
+
+
 }
