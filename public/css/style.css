@@ -1,6 +1,5 @@
 /* public\css\style.css */
 
-
 body {
     font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -30,22 +29,18 @@ body {
     to { 
         transform: rotate(360deg); 
     }
- }
+}
 
-.flip-card-container{
+.flip-card-container {
     perspective: 1000px; /* Gives the 3D effect */
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .flip-card-inner {
     position: relative;
     width: 100%;
-    /* height: 100%; */
-    min-height: 250px; /* Ensure a minimum height for the card */
+    height: 100%; /* Make inner container fill the parent */
     text-align: center;
-    transition: transform 0.6s, height 0.6s;
+    transition: transform 0.6s;
     transform-style: preserve-3d;
 }
 
@@ -57,34 +52,46 @@ body {
 .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
+    height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
-   display: flex;
-    padding: 20px;
+    display: flex;
     border-radius: 0.75rem; /* 12px */
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
 }
 
+/* CORRECTED AND UNIFIED .flip-card-front rule */
 .flip-card-front {
- /* Ensure the front face has its centering properties */
-    justify-content: center;
-    align-items: center;
-    background-color: #151414; /* Replaces @apply bg-white */
-}
-
-.dark .flip-card-front {
-    background-color: #1f2937; /* Replaces @apply dark:bg-gray-800 */
+    padding: 0; /* Padding is now handled by the inner container #side-a-content */
+    justify-content: stretch;
+    align-items: stretch;
+    background-color: #1f2937; /* dark:bg-gray-800 */
 }
 
 .flip-card-back {
-    background-color: #0b0b0b; /* Replaces @apply bg-white */
+    padding: 20px;
+    background-color: #374151; /* dark:bg-gray-700 */
     transform: rotateY(180deg);
 }
 
-.dark .flip-card-back {
-    background-color: #374151; /* Replaces @apply dark:bg-gray-700 */
+/* Basic styling for code blocks */
+pre.code-block {
+    background-color: #0d1117; /* GitHub dark-like background */
+    color: #c9d1d9; /* Light text color */
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.875rem; /* 14px */
+    text-align: left;
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
 }
 
+code {
+    font-family: inherit;
+}
 
 /* Styles for the new TTS play buttons on cards */
 .play-tts-btn {

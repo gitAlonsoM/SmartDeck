@@ -1,13 +1,16 @@
 {
   "id": "it_commands_deck_01",
   "name": "IT & Computer Commands",
-  "description": "Common commands and instructions used in IT support and daily computer use. Spanish to English.",
+  "description": "Common commands and instructions used in IT support and daily computer use. Spanish to English, now with visual aids!",
   "deckType": "flippable",
   "cards": [
     {
       "cardId": "itc_001",
       "cardType": "flippable",
-      "sideA": "Haz clic en el botón de 'Aceptar'.",
+      "sideA": {
+        "text": "Haz clic en el botón de 'Aceptar'.",
+        "visualContent": { "type": "icon", "value": "fas fa-check-square" }
+      },
       "sideB": [
         "Go ahead and click the 'OK' button.",
         "Can you please hit the 'Accept' button?",
@@ -17,7 +20,10 @@
     {
       "cardId": "itc_002",
       "cardType": "flippable",
-      "sideA": "Abre el archivo de Excel.",
+      "sideA": {
+        "text": "Abre el archivo de Excel.",
+        "visualContent": { "type": "icon", "value": "fas fa-file-excel" }
+      },
       "sideB": [
         "Please open the Excel file.",
         "Can you open up the Excel spreadsheet?",
@@ -27,7 +33,10 @@
     {
       "cardId": "itc_003",
       "cardType": "flippable",
-      "sideA": "Hazle doble clic al ícono de la carpeta.",
+      "sideA": {
+        "text": "Hazle doble clic al ícono de la carpeta.",
+        "visualContent": { "type": "icon", "value": "fas fa-folder-open" }
+      },
       "sideB": [
         "Double-click on the folder icon.",
         "Give that folder icon a double-click.",
@@ -37,7 +46,10 @@
     {
       "cardId": "itc_004",
       "cardType": "flippable",
-      "sideA": "Selecciona la última opción del menú.",
+      "sideA": {
+        "text": "Selecciona la última opción del menú.",
+        "visualContent": { "type": "ascii", "value": "File\nEdit\nView\n> Option 4" }
+      },
       "sideB": [
         "Select the last option from the menu.",
         "Please choose the very last option.",
@@ -47,7 +59,10 @@
     {
       "cardId": "itc_005",
       "cardType": "flippable",
-      "sideA": "Cierra esa ventana, por favor.",
+      "sideA": {
+        "text": "Cierra esa ventana, por favor.",
+        "visualContent": { "type": "icon", "value": "far fa-window-close" }
+      },
       "sideB": [
         "You can close that window now.",
         "Go ahead and close out that window.",
@@ -57,7 +72,10 @@
     {
       "cardId": "itc_006",
       "cardType": "flippable",
-      "sideA": "Desplázate hacia abajo un poco.",
+      "sideA": {
+        "text": "Desplázate hacia abajo un poco.",
+        "visualContent": { "type": "icon", "value": "fas fa-arrows-alt-v" }
+      },
       "sideB": [
         "Can you scroll down a little bit?",
         "Go ahead and scroll down some.",
@@ -67,7 +85,10 @@
     {
       "cardId": "itc_007",
       "cardType": "flippable",
-      "sideA": "Ahora sube hasta el principio de la página.",
+      "sideA": {
+        "text": "Ahora sube hasta el principio de la página.",
+        "visualContent": { "type": "icon", "value": "fas fa-arrow-up" }
+      },
       "sideB": [
         "Okay, now scroll all the way up to the top.",
         "Can you scroll back to the top of the page?",
@@ -77,7 +98,10 @@
     {
       "cardId": "itc_008",
       "cardType": "flippable",
-      "sideA": "Anda a la página siguiente.",
+      "sideA": {
+        "text": "Anda a la página siguiente.",
+        "visualContent": { "type": "icon", "value": "fas fa-arrow-right" }
+      },
       "sideB": [
         "Let's go to the next page.",
         "Can you move to the next page?",
@@ -87,7 +111,10 @@
     {
       "cardId": "itc_009",
       "cardType": "flippable",
-      "sideA": "Vuelve a la pantalla anterior.",
+      "sideA": {
+        "text": "Vuelve a la pantalla anterior.",
+        "visualContent": { "type": "icon", "value": "fas fa-arrow-left" }
+      },
       "sideB": [
         "Go back to the previous screen.",
         "Can you navigate back to the last screen?",
@@ -97,7 +124,10 @@
     {
       "cardId": "itc_010",
       "cardType": "flippable",
-      "sideA": "Cámbiate a la pestaña del navegador.",
+      "sideA": {
+        "text": "Cámbiate a la pestaña del navegador.",
+        "visualContent": { "type": "icon", "value": "far fa-window-maximize" }
+      },
       "sideB": [
         "Switch over to the browser tab.",
         "Can you go to your browser tab?",
@@ -107,7 +137,10 @@
     {
       "cardId": "itc_011",
       "cardType": "flippable",
-      "sideA": "Escribe 'reporte de ventas' en la barra de búsqueda.",
+      "sideA": {
+        "text": "Escribe 'reporte de ventas' en la barra de búsqueda.",
+        "visualContent": { "type": "icon", "value": "fas fa-search" }
+      },
       "sideB": [
         "Type 'sales report' in the search bar.",
         "Just enter 'sales report' into the search field.",
@@ -117,7 +150,10 @@
     {
       "cardId": "itc_012",
       "cardType": "flippable",
-      "sideA": "Ingresa tu contraseña para continuar.",
+      "sideA": {
+        "text": "Ingresa tu contraseña para continuar.",
+        "visualContent": { "type": "icon", "value": "fas fa-key" }
+      },
       "sideB": [
         "Please enter your password to continue.",
         "You'll need to type in your password.",
@@ -127,7 +163,10 @@
     {
       "cardId": "itc_013",
       "cardType": "flippable",
-      "sideA": "Ejecuta el comando 'npm install' en la terminal.",
+      "sideA": {
+        "text": "Ejecuta el comando 'npm install' en la terminal.",
+        "visualContent": { "type": "code", "language": "bash", "value": "$ npm install" }
+      },
       "sideB": [
         "Run the command 'npm install' in the terminal.",
         "Please type 'npm install' into the console.",
@@ -137,7 +176,10 @@
     {
       "cardId": "itc_014",
       "cardType": "flippable",
-      "sideA": "Rellena los campos del formulario.",
+      "sideA": {
+        "text": "Rellena los campos del formulario.",
+        "visualContent": { "type": "icon", "value": "fas fa-list-alt" }
+      },
       "sideB": [
         "Please fill out the fields on the form.",
         "Can you fill in that form for me?",
@@ -147,7 +189,10 @@
     {
       "cardId": "itc_015",
       "cardType": "flippable",
-      "sideA": "Sube el documento que te envié.",
+      "sideA": {
+        "text": "Sube el documento que te envié.",
+        "visualContent": { "type": "icon", "value": "fas fa-upload" }
+      },
       "sideB": [
         "Upload the document I sent you.",
         "Please upload that document.",
@@ -157,7 +202,10 @@
     {
       "cardId": "itc_016",
       "cardType": "flippable",
-      "sideA": "Descarga ese archivo, por favor.",
+      "sideA": {
+        "text": "Descarga ese archivo, por favor.",
+        "visualContent": { "type": "icon", "value": "fas fa-download" }
+      },
       "sideB": [
         "Please download that file.",
         "Can you go ahead and download that?",
@@ -167,7 +215,10 @@
     {
       "cardId": "itc_017",
       "cardType": "flippable",
-      "sideA": "Arrastra esa imagen al escritorio.",
+      "sideA": {
+        "text": "Arrastra esa imagen al escritorio.",
+        "visualContent": { "type": "icon", "value": "fas fa-hand-rock" }
+      },
       "sideB": [
         "Drag that image onto the desktop.",
         "Can you drag and drop that picture to the desktop?",
@@ -177,7 +228,10 @@
     {
       "cardId": "itc_018",
       "cardType": "flippable",
-      "sideA": "Copia todo ese texto.",
+      "sideA": {
+        "text": "Copia todo ese texto.",
+        "visualContent": { "type": "icon", "value": "fas fa-copy" }
+      },
       "sideB": [
         "Copy all of that text.",
         "Please select and copy all that text.",
@@ -187,7 +241,10 @@
     {
       "cardId": "itc_019",
       "cardType": "flippable",
-      "sideA": "Ahora pégalo en el correo.",
+      "sideA": {
+        "text": "Ahora pégalo en el correo.",
+        "visualContent": { "type": "icon", "value": "fas fa-paste" }
+      },
       "sideB": [
         "Now, paste it into the email.",
         "Go ahead and paste that into the body of the email.",
@@ -197,7 +254,10 @@
     {
       "cardId": "itc_020",
       "cardType": "flippable",
-      "sideA": "Destaca la primera oración.",
+      "sideA": {
+        "text": "Destaca la primera oración.",
+        "visualContent": { "type": "icon", "value": "fas fa-highlighter" }
+      },
       "sideB": [
         "Highlight the first sentence.",
         "Can you select the first sentence for me?",
@@ -207,7 +267,10 @@
     {
       "cardId": "itc_021",
       "cardType": "flippable",
-      "sideA": "Borra el archivo que se llama 'Temporal'.",
+      "sideA": {
+        "text": "Borra el archivo que se llama 'Temporal'.",
+        "visualContent": { "type": "icon", "value": "fas fa-trash-alt" }
+      },
       "sideB": [
         "Delete the file named 'Temp'.",
         "Please erase the 'Temp' file.",
@@ -217,7 +280,10 @@
     {
       "cardId": "itc_022",
       "cardType": "flippable",
-      "sideA": "Crea una nueva carpeta aquí.",
+      "sideA": {
+        "text": "Crea una nueva carpeta aquí.",
+        "visualContent": { "type": "icon", "value": "fas fa-folder-plus" }
+      },
       "sideB": [
         "Create a new folder here.",
         "Please make a new folder in this location.",
@@ -227,7 +293,10 @@
     {
       "cardId": "itc_023",
       "cardType": "flippable",
-      "sideA": "Hazle zoom para que podamos ver mejor.",
+      "sideA": {
+        "text": "Hazle zoom para que podamos ver mejor.",
+        "visualContent": { "type": "icon", "value": "fas fa-search-plus" }
+      },
       "sideB": [
         "Can you zoom in so we can see better?",
         "Please zoom in a little bit.",
@@ -237,7 +306,10 @@
     {
       "cardId": "itc_024",
       "cardType": "flippable",
-      "sideA": "Ahora aléjalo para ver la página completa.",
+      "sideA": {
+        "text": "Ahora aléjalo para ver la página completa.",
+        "visualContent": { "type": "icon", "value": "fas fa-search-minus" }
+      },
       "sideB": [
         "Okay, now zoom out to see the full page.",
         "Can you zoom back out?",
@@ -247,7 +319,10 @@
     {
       "cardId": "itc_025",
       "cardType": "flippable",
-      "sideA": "Refresca la página, por favor.",
+      "sideA": {
+        "text": "Refresca la página, por favor.",
+        "visualContent": { "type": "icon", "value": "fas fa-sync-alt" }
+      },
       "sideB": [
         "Please refresh the page.",
         "Can you hit the refresh button?",
@@ -257,7 +332,10 @@
     {
       "cardId": "itc_026",
       "cardType": "flippable",
-      "sideA": "Abre ese enlace en una pestaña nueva.",
+      "sideA": {
+        "text": "Abre ese enlace en una pestaña nueva.",
+        "visualContent": { "type": "icon", "value": "fas fa-external-link-square-alt" }
+      },
       "sideB": [
         "Open that link in a new tab.",
         "Right-click and open that in a new tab.",
@@ -267,7 +345,10 @@
     {
       "cardId": "itc_027",
       "cardType": "flippable",
-      "sideA": "Maximiza esa ventana.",
+      "sideA": {
+        "text": "Maximiza esa ventana.",
+        "visualContent": { "type": "icon", "value": "far fa-window-maximize" }
+      },
       "sideB": [
         "Please maximize that window.",
         "Can you make that window full screen?",
@@ -277,7 +358,10 @@
     {
       "cardId": "itc_028",
       "cardType": "flippable",
-      "sideA": "Minimiza el navegador un momento.",
+      "sideA": {
+        "text": "Minimiza el navegador un momento.",
+        "visualContent": { "type": "icon", "value": "far fa-window-minimize" }
+      },
       "sideB": [
         "Minimize the browser for a moment.",
         "Can you just minimize the browser window?",
@@ -287,7 +371,10 @@
     {
       "cardId": "itc_029",
       "cardType": "flippable",
-      "sideA": "Detente ahí mismo, por favor.",
+      "sideA": {
+        "text": "Detente ahí mismo, por favor.",
+        "visualContent": { "type": "icon", "value": "fas fa-hand-paper" }
+      },
       "sideB": [
         "Stop right there, please.",
         "Okay, hold on for a second.",
@@ -297,7 +384,10 @@
     {
       "cardId": "itc_030",
       "cardType": "flippable",
-      "sideA": "Comparte tu escritorio completo, no solo una ventana.",
+      "sideA": {
+        "text": "Comparte tu escritorio completo, no solo una ventana.",
+        "visualContent": { "type": "icon", "value": "fas fa-share-square" }
+      },
       "sideB": [
         "Can you share your entire screen, not just the window?",
         "Please re-share and choose 'Entire Screen' or 'Desktop'.",
@@ -307,7 +397,10 @@
     {
       "cardId": "itc_031",
       "cardType": "flippable",
-      "sideA": "Copia el título y pégalo al inicio del documento.",
+      "sideA": {
+        "text": "Copia el título y pégalo al inicio del documento.",
+        "visualContent": { "type": "ascii", "value": "Copy -> Paste" }
+      },
       "sideB": [
         "Copy the title and paste it at the beginning of the document.",
         "Go ahead and copy the headline and paste it at the top of the doc.",
@@ -317,7 +410,10 @@
     {
       "cardId": "itc_032",
       "cardType": "flippable",
-      "sideA": "Copia solo la dirección de correo electrónico, nada más.",
+      "sideA": {
+        "text": "Copia solo la dirección de correo electrónico, nada más.",
+        "visualContent": { "type": "icon", "value": "fas fa-at" }
+      },
       "sideB": [
         "Copy just the email address, nothing else.",
         "Please copy only the email address.",
@@ -327,7 +423,10 @@
     {
       "cardId": "itc_033",
       "cardType": "flippable",
-      "sideA": "Pega el enlace que te envié directamente en el chat.",
+      "sideA": {
+        "text": "Pega el enlace que te envié directamente en el chat.",
+        "visualContent": { "type": "icon", "value": "fas fa-link" }
+      },
       "sideB": [
         "Paste the link I sent you directly into the chat.",
         "Go ahead and drop the link I sent you in the chat window.",
@@ -337,7 +436,10 @@
     {
       "cardId": "itc_034",
       "cardType": "flippable",
-      "sideA": "Usa el atajo Control-V para pegarlo ahí.",
+      "sideA": {
+        "text": "Usa el atajo Control-V para pegarlo ahí.",
+        "visualContent": { "type": "ascii", "value": "[Ctrl] + [V]" }
+      },
       "sideB": [
         "Use the shortcut Control-V to paste it there.",
         "You can just use Control-V to paste it.",
@@ -347,7 +449,10 @@
     {
       "cardId": "itc_035",
       "cardType": "flippable",
-      "sideA": "Pégalo sin formato para que no se arruine el estilo.",
+      "sideA": {
+        "text": "Pégalo sin formato para que no se arruine el estilo.",
+        "visualContent": { "type": "ascii", "value": "[Ctrl]+[Shift]+[V]" }
+      },
       "sideB": [
         "Paste it without formatting so it doesn't mess up the style.",
         "Can you paste it as plain text?",
@@ -357,7 +462,10 @@
     {
       "cardId": "itc_036",
       "cardType": "flippable",
-      "sideA": "Copia el número de la celda A5 y pégalo en la otra hoja.",
+      "sideA": {
+        "text": "Copia el número de la celda A5 y pégalo en la otra hoja.",
+        "visualContent": { "type": "icon", "value": "fas fa-table" }
+      },
       "sideB": [
         "Copy the number from cell A5 and paste it into the other sheet.",
         "Please copy the value in A5 and paste it on the other tab.",
@@ -367,7 +475,10 @@
     {
       "cardId": "itc_037",
       "cardType": "flippable",
-      "sideA": "Para estar seguros, copia ese código y pégalo en un bloc de notas.",
+      "sideA": {
+        "text": "Para estar seguros, copia ese código y pégalo en un bloc de notas.",
+        "visualContent": { "type": "icon", "value": "far fa-file-alt" }
+      },
       "sideB": [
         "To be safe, copy that code and paste it into a notepad.",
         "Let's copy that code and drop it in a text file just in case.",
@@ -377,7 +488,10 @@
     {
       "cardId": "itc_038",
       "cardType": "flippable",
-      "sideA": "Asegúrate de que estás copiando la URL completa, incluyendo el \"https\".",
+      "sideA": {
+        "text": "Asegúrate de que estás copiando la URL completa, incluyendo el \"https\".",
+        "visualContent": { "type": "ascii", "value": "https://..." }
+      },
       "sideB": [
         "Make sure you're copying the entire URL, including the \"https\".",
         "Please ensure you copy the full web address, starting with \"https\".",
@@ -387,7 +501,10 @@
     {
       "cardId": "itc_039",
       "cardType": "flippable",
-      "sideA": "Corta ese párrafo de ahí y pégalo dos secciones más abajo.",
+      "sideA": {
+        "text": "Corta ese párrafo de ahí y pégalo dos secciones más abajo.",
+        "visualContent": { "type": "icon", "value": "fas fa-cut" }
+      },
       "sideB": [
         "Cut that paragraph from there and paste it two sections down.",
         "Go ahead and cut that paragraph and move it two sections lower.",
@@ -397,7 +514,10 @@
     {
       "cardId": "itc_040",
       "cardType": "flippable",
-      "sideA": "Copiemos ese mensaje de error y peguémoslo en Google para ver qué significa.",
+      "sideA": {
+        "text": "Copiemos ese mensaje de error y peguémoslo en Google para ver qué significa.",
+        "visualContent": { "type": "icon", "value": "fab fa-google" }
+      },
       "sideB": [
         "Let's copy that error message and paste it into Google to see what it means.",
         "Go ahead and copy the error and search for it on Google.",
@@ -407,7 +527,10 @@
     {
       "cardId": "itc_041",
       "cardType": "flippable",
-      "sideA": "Por favor, sigue los pasos que te indiqué.",
+      "sideA": {
+        "text": "Por favor, sigue los pasos que te indiqué.",
+        "visualContent": { "type": "icon", "value": "fas fa-list-ol" }
+      },
       "sideB": [
         "Please follow the steps I showed you.",
         "Can you follow the instructions I gave you?",
@@ -417,7 +540,10 @@
     {
       "cardId": "itc_042",
       "cardType": "flippable",
-      "sideA": "Necesito que sigas los pasos que pegué en el chat.",
+      "sideA": {
+        "text": "Necesito que sigas los pasos que pegué en el chat.",
+        "visualContent": { "type": "icon", "value": "fas fa-comments" }
+      },
       "sideB": [
         "I need you to follow the steps I pasted in the chat.",
         "Please follow the instructions I dropped in the chat window.",
@@ -427,7 +553,10 @@
     {
       "cardId": "itc_043",
       "cardType": "flippable",
-      "sideA": "El siguiente paso es hacer clic en 'Enviar'.",
+      "sideA": {
+        "text": "El siguiente paso es hacer clic en 'Enviar'.",
+        "visualContent": { "type": "icon", "value": "fas fa-paper-plane" }
+      },
       "sideB": [
         "The next step is to click 'Submit'.",
         "Okay, for the next step, just click on 'Submit'.",
@@ -437,7 +566,10 @@
     {
       "cardId": "itc_044",
       "cardType": "flippable",
-      "sideA": "Vas a recibir un correo con un enlace de verificación.",
+      "sideA": {
+        "text": "Vas a recibir un correo con un enlace de verificación.",
+        "visualContent": { "type": "icon", "value": "fas fa-envelope-open-text" }
+      },
       "sideB": [
         "You're going to receive an email with a verification link.",
         "Look for an email containing a link to verify your account.",
@@ -447,7 +579,10 @@
     {
       "cardId": "itc_045",
       "cardType": "flippable",
-      "sideA": "Revisa tu bandeja de entrada, deberías tener un nuevo mensaje.",
+      "sideA": {
+        "text": "Revisa tu bandeja de entrada, deberías tener un nuevo mensaje.",
+        "visualContent": { "type": "icon", "value": "fas fa-inbox" }
+      },
       "sideB": [
         "Please check your inbox, you should have a new message.",
         "Can you check your email? A new message should be there.",
@@ -457,7 +592,10 @@
     {
       "cardId": "itc_046",
       "cardType": "flippable",
-      "sideA": "Abre el correo y haz clic en el botón para confirmar.",
+      "sideA": {
+        "text": "Abre el correo y haz clic en el botón para confirmar.",
+        "visualContent": { "type": "icon", "value": "fas fa-mouse-pointer" }
+      },
       "sideB": [
         "Open the email and click the button to confirm.",
         "Please open that email and click the confirmation button.",
@@ -467,7 +605,10 @@
     {
       "cardId": "itc_047",
       "cardType": "flippable",
-      "sideA": "Si no lo ves, revisa la carpeta de spam o correo no deseado.",
+      "sideA": {
+        "text": "Si no lo ves, revisa la carpeta de spam o correo no deseado.",
+        "visualContent": { "type": "icon", "value": "fas fa-exclamation-triangle" }
+      },
       "sideB": [
         "If you don't see it, check your spam or junk folder.",
         "Be sure to check the spam folder if it's not in your inbox.",
@@ -477,7 +618,10 @@
     {
       "cardId": "itc_048",
       "cardType": "flippable",
-      "sideA": "Déjame tomar el control remoto para ayudarte con eso.",
+      "sideA": {
+        "text": "Déjame tomar el control remoto para ayudarte con eso.",
+        "visualContent": { "type": "icon", "value": "fas fa-desktop" }
+      },
       "sideB": [
         "Let me take remote control to help you with that.",
         "Can I request remote control of your screen?",
@@ -487,7 +631,10 @@
     {
       "cardId": "itc_049",
       "cardType": "flippable",
-      "sideA": "Necesito que aceptes la solicitud para compartir pantalla.",
+      "sideA": {
+        "text": "Necesito que aceptes la solicitud para compartir pantalla.",
+        "visualContent": { "type": "icon", "value": "fas fa-user-plus" }
+      },
       "sideB": [
         "I need you to accept the screen share request.",
         "Please accept the prompt to share your screen.",
@@ -497,7 +644,10 @@
     {
       "cardId": "itc_050",
       "cardType": "flippable",
-      "sideA": "Primero, guarda tu trabajo antes de que reiniciemos.",
+      "sideA": {
+        "text": "Primero, guarda tu trabajo antes de que reiniciemos.",
+        "visualContent": { "type": "icon", "value": "fas fa-save" }
+      },
       "sideB": [
         "First, please save your work before we restart.",
         "Go ahead and save everything you're working on, then we'll reboot.",
@@ -507,7 +657,10 @@
     {
       "cardId": "itc_051",
       "cardType": "flippable",
-      "sideA": "Anda a la \"Configuración del Sistema\" para revisar los ajustes de red.",
+      "sideA": {
+        "text": "Anda a la \"Configuración del Sistema\" para revisar los ajustes de red.",
+        "visualContent": { "type": "icon", "value": "fas fa-cogs" }
+      },
       "sideB": [
         "Go to 'System Settings' to check the network configuration.",
         "Can you open up 'System Settings' so we can look at the network settings?",
@@ -517,7 +670,10 @@
     {
       "cardId": "itc_052",
       "cardType": "flippable",
-      "sideA": "Ahora, anda al Finder para que busquemos un archivo.",
+      "sideA": {
+        "text": "Ahora, anda al Finder para que busquemos un archivo.",
+        "visualContent": { "type": "icon", "value": "fas fa-search" }
+      },
       "sideB": [
         "Okay, now go to Finder so we can look for a file.",
         "Let's open a new Finder window to find that file.",
@@ -527,7 +683,10 @@
     {
       "cardId": "itc_053",
       "cardType": "flippable",
-      "sideA": "Ve a la carpeta de \"Aplicaciones\" dentro del Finder.",
+      "sideA": {
+        "text": "Ve a la carpeta de \"Aplicaciones\" dentro del Finder.",
+        "visualContent": { "type": "icon", "value": "fas fa-th-large" }
+      },
       "sideB": [
         "Go to the 'Applications' folder inside Finder.",
         "In Finder, please navigate to your 'Applications' folder.",
@@ -537,7 +696,10 @@
     {
       "cardId": "itc_054",
       "cardType": "flippable",
-      "sideA": "Anda al Dock de abajo y abre el Launchpad.",
+      "sideA": {
+        "text": "Anda al Dock de abajo y abre el Launchpad.",
+        "visualContent": { "type": "icon", "value": "fas fa-rocket" }
+      },
       "sideB": [
         "Go to the Dock at the bottom and open Launchpad.",
         "Down in your Dock, please click on the Launchpad icon.",
@@ -547,7 +709,10 @@
     {
       "cardId": "itc_055",
       "cardType": "flippable",
-      "sideA": "Necesitamos ir a la carpeta de \"Descargas\" para encontrar el instalador.",
+      "sideA": {
+        "text": "Necesitamos ir a la carpeta de \"Descargas\" para encontrar el instalador.",
+        "visualContent": { "type": "icon", "value": "fas fa-download" }
+      },
       "sideB": [
         "We need to go to the 'Downloads' folder to find the installer.",
         "Can you navigate to your 'Downloads' folder, please?",
@@ -557,7 +722,10 @@
     {
       "cardId": "itc_056",
       "cardType": "flippable",
-      "sideA": "Ve a la barra de menú de arriba y haz clic en el ícono de Wi-Fi.",
+      "sideA": {
+        "text": "Ve a la barra de menú de arriba y haz clic en el ícono de Wi-Fi.",
+        "visualContent": { "type": "icon", "value": "fas fa-wifi" }
+      },
       "sideB": [
         "Go to the menu bar at the top and click the Wi-Fi icon.",
         "In the top menu bar, please click on the Wi-Fi symbol.",
@@ -567,7 +735,10 @@
     {
       "cardId": "itc_057",
       "cardType": "flippable",
-      "sideA": "Abre Spotlight con Comando+Espacio para buscar \"Monitor de Actividad\".",
+      "sideA": {
+        "text": "Abre Spotlight con Comando+Espacio para buscar \"Monitor de Actividad\".",
+        "visualContent": { "type": "ascii", "value": "[⌘] + [Space]" }
+      },
       "sideB": [
         "Open Spotlight with Command-Space and search for 'Activity Monitor'.",
         "Hit Command-Space to bring up Spotlight, then type 'Activity Monitor'.",
@@ -577,7 +748,10 @@
     {
       "cardId": "itc_058",
       "cardType": "flippable",
-      "sideA": "Necesito que vayas a tu carpeta de \"Documentos\" y busques el reporte.",
+      "sideA": {
+        "text": "Necesito que vayas a tu carpeta de \"Documentos\" y busques el reporte.",
+        "visualContent": { "type": "icon", "value": "fas fa-file-word" }
+      },
       "sideB": [
         "I need you to go to your 'Documents' folder and look for the report.",
         "Can you please go into your 'Documents' folder and find the report file?",
@@ -587,7 +761,10 @@
     {
       "cardId": "itc_059",
       "cardType": "flippable",
-      "sideA": "Vuelve al escritorio un momento para que pueda ver los íconos que tienes ahí.",
+      "sideA": {
+        "text": "Vuelve al escritorio un momento para que pueda ver los íconos que tienes ahí.",
+        "visualContent": { "type": "icon", "value": "fas fa-desktop" }
+      },
       "sideB": [
         "Go back to the desktop for a moment so I can see the icons you have there.",
         "Can you show me your desktop for a second?",
@@ -597,7 +774,10 @@
     {
       "cardId": "itc_060",
       "cardType": "flippable",
-      "sideA": "Anda a la carpeta \"Utilidades\" dentro de \"Aplicaciones\" y abre la \"Utilidad de Discos\".",
+      "sideA": {
+        "text": "Anda a la carpeta \"Utilidades\" dentro de \"Aplicaciones\" y abre la \"Utilidad de Discos\".",
+        "visualContent": { "type": "icon", "value": "fas fa-hdd" }
+      },
       "sideB": [
         "Go to the 'Utilities' folder inside 'Applications' and open 'Disk Utility'.",
         "In your 'Applications' folder, please find the 'Utilities' folder and then launch 'Disk Utility'.",
@@ -607,7 +787,10 @@
     {
       "cardId": "itc_061",
       "cardType": "flippable",
-      "sideA": "Haz clic primario en el ícono que está en la esquina superior izquierda.",
+      "sideA": {
+        "text": "Haz clic primario en el ícono que está en la esquina superior izquierda.",
+        "visualContent": { "type": "ascii", "value": "╔══... \n║(•)   \n╚══..." }
+      },
       "sideB": [
         "Go ahead and left-click the icon in the top-left corner.",
         "Just click on the icon in the upper-left.",
@@ -617,7 +800,10 @@
     {
       "cardId": "itc_062",
       "cardType": "flippable",
-      "sideA": "Ahora, haz clic secundario sobre el nombre del archivo para que aparezca el menú de opciones.",
+      "sideA": {
+        "text": "Ahora, haz clic secundario sobre el nombre del archivo para que aparezca el menú de opciones.",
+        "visualContent": { "type": "icon", "value": "fas fa-mouse-pointer" }
+      },
       "sideB": [
         "Now, right-click on the filename to bring up the options menu.",
         "Go ahead and right-click the file's name to see the options.",
@@ -627,7 +813,10 @@
     {
       "cardId": "itc_063",
       "cardType": "flippable",
-      "sideA": "Con el botón derecho, haz clic en un espacio vacío del escritorio para crear una nueva carpeta.",
+      "sideA": {
+        "text": "Con el botón derecho, haz clic en un espacio vacío del escritorio para crear una nueva carpeta.",
+        "visualContent": { "type": "ascii", "value": "Right-Click -> New Folder" }
+      },
       "sideB": [
         "Right-click on an empty space on the desktop to create a new folder.",
         "Use the right mouse button and click anywhere on the desktop to make a new folder.",
@@ -637,7 +826,10 @@
     {
       "cardId": "itc_064",
       "cardType": "flippable",
-      "sideA": "Dale doble clic a esa carpeta para que se abra.",
+      "sideA": {
+        "text": "Dale doble clic a esa carpeta para que se abra.",
+        "visualContent": { "type": "ascii", "value": "Click-Click!" }
+      },
       "sideB": [
         "Double-click that folder to open it.",
         "Go ahead and give that folder a double-click.",
@@ -647,7 +839,10 @@
     {
       "cardId": "itc_065",
       "cardType": "flippable",
-      "sideA": "Necesito que expandas el menú \"Configuración\" que está en el panel lateral.",
+      "sideA": {
+        "text": "Necesito que expandas el menú \"Configuración\" que está en el panel lateral.",
+        "visualContent": { "type": "icon", "value": "fas fa-chevron-down" }
+      },
       "sideB": [
         "I need you to expand the 'Settings' menu in the side panel.",
         "Can you please expand the 'Settings' section over on the sidebar?",
@@ -657,7 +852,10 @@
     {
       "cardId": "itc_066",
       "cardType": "flippable",
-      "sideA": "Deselecciona esa casilla y, en su lugar, marca la que está justo debajo.",
+      "sideA": {
+        "text": "Deselecciona esa casilla y, en su lugar, marca la que está justo debajo.",
+        "visualContent": { "type": "ascii", "value": "[✓] -> [ ]\n[ ] -> [✓]" }
+      },
       "sideB": [
         "Deselect that checkbox and check the one right below it instead.",
         "Uncheck that box and then tick the next one down.",
@@ -667,7 +865,10 @@
     {
       "cardId": "itc_067",
       "cardType": "flippable",
-      "sideA": "Haz clic en cualquier parte fuera de la tabla para que nada quede seleccionado.",
+      "sideA": {
+        "text": "Haz clic en cualquier parte fuera de la tabla para que nada quede seleccionado.",
+        "visualContent": { "type": "icon", "value": "fas fa-hand-point-up" }
+      },
       "sideB": [
         "Click anywhere outside the table so that nothing is selected.",
         "Just click off the table to deselect everything.",
@@ -677,7 +878,10 @@
     {
       "cardId": "itc_068",
       "cardType": "flippable",
-      "sideA": "Mantén presionado el clic sobre el archivo y arrástralo hacia la ventana del correo.",
+      "sideA": {
+        "text": "Mantén presionado el clic sobre el archivo y arrástralo hacia la ventana del correo.",
+        "visualContent": { "type": "ascii", "value": "File ➡️ Email" }
+      },
       "sideB": [
         "Click and hold on the file, then drag it over to the email window.",
         "Press and hold the mouse button on the file and drag it into the email.",
@@ -687,7 +891,10 @@
     {
       "cardId": "itc_069",
       "cardType": "flippable",
-      "sideA": "Ahora, colapsa la vista de carpetas para que no ocupe tanto espacio.",
+      "sideA": {
+        "text": "Ahora, colapsa la vista de carpetas para que no ocupe tanto espacio.",
+        "visualContent": { "type": "icon", "value": "fas fa-chevron-up" }
+      },
       "sideB": [
         "Now, collapse the folder view so it doesn't take up so much space.",
         "Go ahead and collapse the folder tree on the left.",
@@ -697,7 +904,10 @@
     {
       "cardId": "itc_070",
       "cardType": "flippable",
-      "sideA": "Anda a la barra de menú de arriba, busca \"Ver\" y luego haz clic en \"Zoom\".",
+      "sideA": {
+        "text": "Anda a la barra de menú de arriba, busca \"Ver\" y luego haz clic en \"Zoom\".",
+        "visualContent": { "type": "ascii", "value": "Menu -> View -> Zoom" }
+      },
       "sideB": [
         "Go to the menu bar at the top, find 'View', and then click 'Zoom'.",
         "Navigate to the 'View' menu up top and select 'Zoom'.",
@@ -707,7 +917,10 @@
     {
       "cardId": "itc_071",
       "cardType": "flippable",
-      "sideA": "Posiciona el cursor sobre el enlace para que veamos la vista previa, pero no hagas clic todavía.",
+      "sideA": {
+        "text": "Posiciona el cursor sobre el enlace para que veamos la vista previa, pero no hagas clic todavía.",
+        "visualContent": { "type": "icon", "value": "fas fa-mouse" }
+      },
       "sideB": [
         "Hover your cursor over the link so we can see the preview, but don't click yet.",
         "Just move the mouse over that link, but don't click on it.",
@@ -717,7 +930,10 @@
     {
       "cardId": "itc_072",
       "cardType": "flippable",
-      "sideA": "Baja con la rueda del mouse (o haz scroll) hasta el final de la página.",
+      "sideA": {
+        "text": "Baja con la rueda del mouse (o haz scroll) hasta el final de la página.",
+        "visualContent": { "type": "icon", "value": "fas fa-sort" }
+      },
       "sideB": [
         "Scroll down with your mouse wheel until you get to the bottom of the page.",
         "Go ahead and scroll all the way down to the footer.",
@@ -727,7 +943,10 @@
     {
       "cardId": "itc_073",
       "cardType": "flippable",
-      "sideA": "Cierra esa ventana emergente de publicidad que acaba de salir.",
+      "sideA": {
+        "text": "Cierra esa ventana emergente de publicidad que acaba de salir.",
+        "visualContent": { "type": "icon", "value": "fas fa-ad" }
+      },
       "sideB": [
         "Close that ad pop-up window that just appeared.",
         "Go ahead and close out that pop-up.",
@@ -737,7 +956,10 @@
     {
       "cardId": "itc_074",
       "cardType": "flippable",
-      "sideA": "Cambia a la pestaña del navegador donde tienes abierto el reporte.",
+      "sideA": {
+        "text": "Cambia a la pestaña del navegador donde tienes abierto el reporte.",
+        "visualContent": { "type": "ascii", "value": "[Tab 1] [Tab 2*]" }
+      },
       "sideB": [
         "Switch to the browser tab where you have the report open.",
         "Can you please navigate to the tab with the report?",
@@ -747,7 +969,10 @@
     {
       "cardId": "itc_075",
       "cardType": "flippable",
-      "sideA": "Fíjate en la barra de estado de abajo, ¿qué mensaje te aparece?",
+      "sideA": {
+        "text": "Fíjate en la barra de estado de abajo, ¿qué mensaje te aparece?",
+        "visualContent": { "type": "icon", "value": "fas fa-info-circle" }
+      },
       "sideB": [
         "Check the status bar at the bottom, what message does it show?",
         "Take a look at the status bar down below, what does it say?",
@@ -757,7 +982,10 @@
     {
       "cardId": "itc_076",
       "cardType": "flippable",
-      "sideA": "Selecciona todo ese párrafo, desde la primera hasta la última palabra.",
+      "sideA": {
+        "text": "Selecciona todo ese párrafo, desde la primera hasta la última palabra.",
+        "visualContent": { "type": "icon", "value": "fas fa-edit" }
+      },
       "sideB": [
         "Select that entire paragraph, from the first word to the last.",
         "Go ahead and highlight that whole paragraph.",
@@ -767,7 +995,10 @@
     {
       "cardId": "itc_077",
       "cardType": "flippable",
-      "sideA": "Guarda el documento con otro nombre usando la opción \"Guardar como\".",
+      "sideA": {
+        "text": "Guarda el documento con otro nombre usando la opción \"Guardar como\".",
+        "visualContent": { "type": "icon", "value": "fas fa-file-signature" }
+      },
       "sideB": [
         "Save the document with a different name using the 'Save As' option.",
         "Please go to 'File' and then 'Save As' to give it a new name.",
@@ -777,7 +1008,10 @@
     {
       "cardId": "itc_078",
       "cardType": "flippable",
-      "sideA": "Refresca la página para asegurarnos de que estamos viendo la última versión.",
+      "sideA": {
+        "text": "Refresca la página para asegurarnos de que estamos viendo la última versión.",
+        "visualContent": { "type": "icon", "value": "fas fa-redo" }
+      },
       "sideB": [
         "Refresh the page to make sure we're seeing the latest version.",
         "Can you hit refresh so we can see the updated content?",
@@ -787,7 +1021,10 @@
     {
       "cardId": "itc_079",
       "cardType": "flippable",
-      "sideA": "Confirma que la opción \"Guardado automático\" esté activada.",
+      "sideA": {
+        "text": "Confirma que la opción \"Guardado automático\" esté activada.",
+        "visualContent": { "type": "icon", "value": "fas fa-cloud-upload-alt" }
+      },
       "sideB": [
         "Confirm that the 'Auto-save' option is enabled.",
         "Please make sure the 'Auto-save' feature is turned on.",
@@ -797,7 +1034,10 @@
     {
       "cardId": "itc_080",
       "cardType": "flippable",
-      "sideA": "Usa el atajo de teclado Control + F para abrir la barra de búsqueda.",
+      "sideA": {
+        "text": "Usa el atajo de teclado Control + F para abrir la barra de búsqueda.",
+        "visualContent": { "type": "ascii", "value": "[Ctrl] + [F]" }
+      },
       "sideB": [
         "Use the keyboard shortcut Control + F to open the search bar.",
         "You can just hit Control + F to bring up the search box.",
@@ -807,7 +1047,10 @@
     {
       "cardId": "itc_081",
       "cardType": "flippable",
-      "sideA": "Arrastra el archivo de la esquina superior derecha hacia el centro.",
+      "sideA": {
+        "text": "Arrastra el archivo de la esquina superior derecha hacia el centro.",
+        "visualContent": { "type": "ascii", "value": "↗️ ➡️ ⚫" }
+      },
       "sideB": [
         "Drag the file from the top-right corner to the center.",
         "Go ahead and drag the file from the upper-right to the middle of the screen.",
@@ -817,7 +1060,10 @@
     {
       "cardId": "itc_082",
       "cardType": "flippable",
-      "sideA": "Haz click secundario en el icono de la esquina superior izquierda.",
+      "sideA": {
+        "text": "Haz click secundario en el icono de la esquina superior izquierda.",
+        "visualContent": { "type": "ascii", "value": "↖️ (Right-Click)" }
+      },
       "sideB": [
         "Right-click on the icon in the top-left corner.",
         "Can you right-click the icon in the upper-left?",
@@ -827,7 +1073,10 @@
     {
       "cardId": "itc_083",
       "cardType": "flippable",
-      "sideA": "Haz click en el botón de la esquina inferior derecha.",
+      "sideA": {
+        "text": "Haz click en el botón de la esquina inferior derecha.",
+        "visualContent": { "type": "ascii", "value": "↘️ (Click)" }
+      },
       "sideB": [
         "Click the button in the bottom-right corner.",
         "Go ahead and click the button in the lower-right.",
@@ -837,7 +1086,10 @@
     {
       "cardId": "itc_084",
       "cardType": "flippable",
-      "sideA": "Haz click secundario en el menú de la esquina inferior izquierda.",
+      "sideA": {
+        "text": "Haz click secundario en el menú de la esquina inferior izquierda.",
+        "visualContent": { "type": "ascii", "value": "↙️ (Right-Click)" }
+      },
       "sideB": [
         "Right-click on the menu in the bottom-left corner.",
         "Please right-click the menu in the lower-left.",
@@ -847,7 +1099,10 @@
     {
       "cardId": "itc_085",
       "cardType": "flippable",
-      "sideA": "Haz doble click en la imagen de la esquina superior derecha.",
+      "sideA": {
+        "text": "Haz doble click en la imagen de la esquina superior derecha.",
+        "visualContent": { "type": "ascii", "value": "↗️ (Click-Click)" }
+      },
       "sideB": [
         "Double-click the image in the top-right corner.",
         "Go ahead and double-click the picture in the upper-right.",
@@ -857,7 +1112,10 @@
     {
       "cardId": "itc_086",
       "cardType": "flippable",
-      "sideA": "Haz click secundario en la carpeta de la esquina superior izquierda.",
+      "sideA": {
+        "text": "Haz click secundario en la carpeta de la esquina superior izquierda.",
+        "visualContent": { "type": "ascii", "value": "↖️ (Right-Click)" }
+      },
       "sideB": [
         "Right-click the folder in the top-left corner.",
         "Can you right-click on the folder in the upper-left?",
@@ -867,7 +1125,10 @@
     {
       "cardId": "itc_087",
       "cardType": "flippable",
-      "sideA": "Haz doble click en el icono de la esquina inferior derecha.",
+      "sideA": {
+        "text": "Haz doble click en el icono de la esquina inferior derecha.",
+        "visualContent": { "type": "ascii", "value": "↘️ (Click-Click)" }
+      },
       "sideB": [
         "Double-click the icon in the bottom-right corner.",
         "Go ahead and double-click the icon at the lower-right.",
@@ -877,7 +1138,10 @@
     {
       "cardId": "itc_088",
       "cardType": "flippable",
-      "sideA": "Selecciona el archivo de la esquina inferior izquierda.",
+      "sideA": {
+        "text": "Selecciona el archivo de la esquina inferior izquierda.",
+        "visualContent": { "type": "ascii", "value": "↙️ (Select)" }
+      },
       "sideB": [
         "Select the file in the bottom-left corner.",
         "Go ahead and highlight the file in the lower-left.",
@@ -887,7 +1151,10 @@
     {
       "cardId": "itc_089",
       "cardType": "flippable",
-      "sideA": "Haz click en el botón central.",
+      "sideA": {
+        "text": "Haz click en el botón central.",
+        "visualContent": { "type": "icon", "value": "fas fa-bullseye" }
+      },
       "sideB": [
         "Click the center button.",
         "Go ahead and click the button in the middle.",
@@ -897,7 +1164,10 @@
     {
       "cardId": "itc_090",
       "cardType": "flippable",
-      "sideA": "Haz click secundario en la imagen que está justo al centro.",
+      "sideA": {
+        "text": "Haz click secundario en la imagen que está justo al centro.",
+        "visualContent": { "type": "icon", "value": "far fa-image" }
+      },
       "sideB": [
         "Right-click the image that's right in the center.",
         "Go ahead and right-click the picture in the middle.",
@@ -907,7 +1177,10 @@
     {
       "cardId": "itc_091",
       "cardType": "flippable",
-      "sideA": "Selecciona todo el texto del medio de la pantalla.",
+      "sideA": {
+        "text": "Selecciona todo el texto del medio de la pantalla.",
+        "visualContent": { "type": "icon", "value": "fas fa-align-center" }
+      },
       "sideB": [
         "Select all the text in the middle of the screen.",
         "Go ahead and highlight the text in the center of the screen.",
@@ -917,7 +1190,10 @@
     {
       "cardId": "itc_092",
       "cardType": "flippable",
-      "sideA": "Haz click secundario en el enlace central de la lista.",
+      "sideA": {
+        "text": "Haz click secundario en el enlace central de la lista.",
+        "visualContent": { "type": "ascii", "value": "Item 1\n> Item 2 (Right-Click)\nItem 3" }
+      },
       "sideB": [
         "Right-click the center link in the list.",
         "Please right-click the link in the middle of the list.",
@@ -927,7 +1203,10 @@
     {
       "cardId": "itc_093",
       "cardType": "flippable",
-      "sideA": "Haz click en el botón que está arriba.",
+      "sideA": {
+        "text": "Haz click en el botón que está arriba.",
+        "visualContent": { "type": "icon", "value": "fas fa-arrow-circle-up" }
+      },
       "sideB": [
         "Click the button that's at the top.",
         "Go ahead and click the button above.",
@@ -937,7 +1216,10 @@
     {
       "cardId": "itc_094",
       "cardType": "flippable",
-      "sideA": "Haz click secundario en la opción que está abajo.",
+      "sideA": {
+        "text": "Haz click secundario en la opción que está abajo.",
+        "visualContent": { "type": "icon", "value": "fas fa-arrow-circle-down" }
+      },
       "sideB": [
         "Right-click the option that's at the bottom.",
         "Go ahead and right-click the option below.",
@@ -947,7 +1229,10 @@
     {
       "cardId": "itc_095",
       "cardType": "flippable",
-      "sideA": "Arrastra el icono que está a la izquierda hacia la papelera.",
+      "sideA": {
+        "text": "Arrastra el icono que está a la izquierda hacia la papelera.",
+        "visualContent": { "type": "ascii", "value": "Icon ⬅️ 🗑️" }
+      },
       "sideB": [
         "Drag the icon on the left over to the trash.",
         "Go ahead and drag the leftmost icon to the trash can.",
@@ -957,7 +1242,10 @@
     {
       "cardId": "itc_096",
       "cardType": "flippable",
-      "sideA": "Haz click secundario en la pestaña que está a la derecha.",
+      "sideA": {
+        "text": "Haz click secundario en la pestaña que está a la derecha.",
+        "visualContent": { "type": "ascii", "value": "[Tab]➡️(Right-Click)" }
+      },
       "sideB": [
         "Right-click the tab that's on the right.",
         "Please right-click the tab to the right.",
@@ -967,7 +1255,10 @@
     {
       "cardId": "itc_097",
       "cardType": "flippable",
-      "sideA": "Haz doble click en la carpeta que está arriba.",
+      "sideA": {
+        "text": "Haz doble click en la carpeta que está arriba.",
+        "visualContent": { "type": "icon", "value": "fas fa-folder" }
+      },
       "sideB": [
         "Double-click the folder that's at the top.",
         "Go ahead and double-click the folder above.",
@@ -977,7 +1268,10 @@
     {
       "cardId": "itc_098",
       "cardType": "flippable",
-      "sideA": "Haz click secundario en el archivo que está abajo.",
+      "sideA": {
+        "text": "Haz click secundario en el archivo que está abajo.",
+        "visualContent": { "type": "icon", "value": "far fa-file" }
+      },
       "sideB": [
         "Right-click the file that's at the bottom.",
         "Go ahead and right-click the file below.",
@@ -987,7 +1281,10 @@
     {
       "cardId": "itc_099",
       "cardType": "flippable",
-      "sideA": "Haz doble click en el icono que está a la izquierda.",
+      "sideA": {
+        "text": "Haz doble click en el icono que está a la izquierda.",
+        "visualContent": { "type": "icon", "value": "fas fa-mouse-pointer" }
+      },
       "sideB": [
         "Double-click the icon that's on the left.",
         "Please double-click the icon to the left.",
@@ -997,7 +1294,10 @@
     {
       "cardId": "itc_100",
       "cardType": "flippable",
-      "sideA": "Arrastra la imagen que está a la derecha hacia la carpeta de arriba.",
+      "sideA": {
+        "text": "Arrastra la imagen que está a la derecha hacia la carpeta de arriba.",
+        "visualContent": { "type": "ascii", "value": "🖼️ ➡️ 📁" }
+      },
       "sideB": [
         "Drag the image on the right into the folder at the top.",
         "Go ahead and drag the rightmost picture to the folder above.",
@@ -1007,7 +1307,10 @@
     {
       "cardId": "itc_101",
       "cardType": "flippable",
-      "sideA": "Haz click en el botón azul de la esquina superior derecha.",
+      "sideA": {
+        "text": "Haz click en el botón azul de la esquina superior derecha.",
+        "visualContent": { "type": "icon", "value": "fas fa-square" }
+      },
       "sideB": [
         "Click the blue button in the top-right corner.",
         "Go ahead and click the blue button in the upper-right.",
@@ -1017,7 +1320,10 @@
     {
       "cardId": "itc_102",
       "cardType": "flippable",
-      "sideA": "Haz click secundario en la flecha gris de la esquina inferior izquierda.",
+      "sideA": {
+        "text": "Haz click secundario en la flecha gris de la esquina inferior izquierda.",
+        "visualContent": { "type": "icon", "value": "fas fa-arrow-left" }
+      },
       "sideB": [
         "Right-click the gray arrow in the bottom-left corner.",
         "Please right-click the gray arrow in the lower-left.",
@@ -1027,7 +1333,10 @@
     {
       "cardId": "itc_103",
       "cardType": "flippable",
-      "sideA": "Haz doble click en la foto grande que está al centro.",
+      "sideA": {
+        "text": "Haz doble click en la foto grande que está al centro.",
+        "visualContent": { "type": "icon", "value": "fas fa-image" }
+      },
       "sideB": [
         "Double-click the large photo that's in the center.",
         "Go ahead and double-click the big picture in the middle.",
@@ -1037,7 +1346,10 @@
     {
       "cardId": "itc_104",
       "cardType": "flippable",
-      "sideA": "Selecciona la opción que está justo entre el botón rojo y el botón verde.",
+      "sideA": {
+        "text": "Selecciona la opción que está justo entre el botón rojo y el botón verde.",
+        "visualContent": { "type": "ascii", "value": "[RED] -O- [GREEN]" }
+      },
       "sideB": [
         "Select the option that's right between the red button and the green button.",
         "Go ahead and highlight the option between the red and green buttons.",
@@ -1047,7 +1359,10 @@
     {
       "cardId": "itc_105",
       "cardType": "flippable",
-      "sideA": "Haz click secundario en el icono pequeño que está debajo del título.",
+      "sideA": {
+        "text": "Haz click secundario en el icono pequeño que está debajo del título.",
+        "visualContent": { "type": "ascii", "value": "Title\n(i) <- Right-Click" }
+      },
       "sideB": [
         "Right-click the small icon that's below the title.",
         "Please right-click the little icon underneath the title.",
@@ -1057,7 +1372,10 @@
     {
       "cardId": "itc_106",
       "cardType": "flippable",
-      "sideA": "Selecciona el texto que aparece sobre el botón azul.",
+      "sideA": {
+        "text": "Selecciona el texto que aparece sobre el botón azul.",
+        "visualContent": { "type": "icon", "value": "fas fa-highlighter" }
+      },
       "sideB": [
         "Select the text that appears above the blue button.",
         "Go ahead and highlight the text over the blue button.",
@@ -1067,7 +1385,10 @@
     {
       "cardId": "itc_107",
       "cardType": "flippable",
-      "sideA": "Arrastra lo que está abajo a la izquierda, hacia arriba.",
+      "sideA": {
+        "text": "Arrastra lo que está abajo a la izquierda, hacia arriba.",
+        "visualContent": { "type": "ascii", "value": "↙️ ⬆️" }
+      },
       "sideB": [
         "Drag the bottom-left item up.",
         "Pull the item on the bottom-left up.",
@@ -1078,7 +1399,10 @@
     {
       "cardId": "itc_108",
       "cardType": "flippable",
-      "sideA": "Mueve lo que está arriba a la derecha, hacia abajo.",
+      "sideA": {
+        "text": "Mueve lo que está arriba a la derecha, hacia abajo.",
+        "visualContent": { "type": "ascii", "value": "↗️ ⬇️" }
+      },
       "sideB": [
         "Move the top-right item down.",
         "Drag the top-right item down.",
@@ -1089,7 +1413,10 @@
     {
       "cardId": "itc_109",
       "cardType": "flippable",
-      "sideA": "Mueve lo que está a la derecha, hacia la izquierda.",
+      "sideA": {
+        "text": "Mueve lo que está a la derecha, hacia la izquierda.",
+        "visualContent": { "type": "ascii", "value": "➡️ ⬅️" }
+      },
       "sideB": [
         "Move the item on the right to the left.",
         "Drag the right item to the left.",
@@ -1099,7 +1426,10 @@
     {
       "cardId": "itc_110",
       "cardType": "flippable",
-      "sideA": "Mueve lo que está a la izquierda, hacia la derecha.",
+      "sideA": {
+        "text": "Mueve lo que está a la izquierda, hacia la derecha.",
+        "visualContent": { "type": "ascii", "value": "⬅️ ➡️" }
+      },
       "sideB": [
         "Move the item on the left to the right.",
         "Drag the left item to the right.",
@@ -1109,7 +1439,10 @@
     {
       "cardId": "itc_111",
       "cardType": "flippable",
-      "sideA": "Selecciona la sección de la izquierda y muévela más hacia la izquierda.",
+      "sideA": {
+        "text": "Selecciona la sección de la izquierda y muévela más hacia la izquierda.",
+        "visualContent": { "type": "ascii", "value": "[ < ]" }
+      },
       "sideB": [
         "Select the left section and move it further left.",
         "Move the left section further to the left.",
@@ -1119,7 +1452,10 @@
     {
       "cardId": "itc_112",
       "cardType": "flippable",
-      "sideA": "Selecciona la sección de la derecha y muévela más hacia la derecha.",
+      "sideA": {
+        "text": "Selecciona la sección de la derecha y muévela más hacia la derecha.",
+        "visualContent": { "type": "ascii", "value": "[ > ]" }
+      },
       "sideB": [
         "Select the right section and move it further right.",
         "Move the right section further to the right.",
@@ -1129,7 +1465,10 @@
     {
       "cardId": "itc_113",
       "cardType": "flippable",
-      "sideA": "Selecciona la sección de arriba y muévela hacia abajo.",
+      "sideA": {
+        "text": "Selecciona la sección de arriba y muévela hacia abajo.",
+        "visualContent": { "type": "ascii", "value": "[ ⌄ ]" }
+      },
       "sideB": [
         "Select the top section and move it down.",
         "Drag the top section down.",
@@ -1140,7 +1479,10 @@
     {
       "cardId": "itc_114",
       "cardType": "flippable",
-      "sideA": "Arrastra la sección de abajo a la derecha, hacia arriba.",
+      "sideA": {
+        "text": "Arrastra la sección de abajo a la derecha, hacia arriba.",
+        "visualContent": { "type": "ascii", "value": "↘️ ⤴️" }
+      },
       "sideB": [
         "Drag the bottom-right section up.",
         "Pull the bottom-right section up.",
@@ -1151,7 +1493,10 @@
     {
       "cardId": "itc_115",
       "cardType": "flippable",
-      "sideA": "Mueve la sección de arriba a la izquierda, hacia abajo.",
+      "sideA": {
+        "text": "Mueve la sección de arriba a la izquierda, hacia abajo.",
+        "visualContent": { "type": "ascii", "value": "↖️ ⤵️" }
+      },
       "sideB": [
         "Move the top-left section down.",
         "Drag the top-left section down.",
@@ -1162,7 +1507,10 @@
     {
       "cardId": "itc_116",
       "cardType": "flippable",
-      "sideA": "Selecciona lo que está en el centro y muévelo hacia la derecha.",
+      "sideA": {
+        "text": "Selecciona lo que está en el centro y muévelo hacia la derecha.",
+        "visualContent": { "type": "ascii", "value": "[ ⚫ ] -> [   ⚫]" }
+      },
       "sideB": [
         "Select the center item and move it right.",
         "Drag the middle item to the right.",
@@ -1172,7 +1520,10 @@
     {
       "cardId": "itc_117",
       "cardType": "flippable",
-      "sideA": "Selecciona lo que está en el centro y muévelo hacia la izquierda.",
+      "sideA": {
+        "text": "Selecciona lo que está en el centro y muévelo hacia la izquierda.",
+        "visualContent": { "type": "ascii", "value": "[ ⚫ ] -> [⚫   ]" }
+      },
       "sideB": [
         "Select the center item and move it left.",
         "Drag the middle item to the left.",
@@ -1182,7 +1533,10 @@
     {
       "cardId": "itc_118",
       "cardType": "flippable",
-      "sideA": "Arrastra lo que está abajo en el centro, hacia arriba.",
+      "sideA": {
+        "text": "Arrastra lo que está abajo en el centro, hacia arriba.",
+        "visualContent": { "type": "ascii", "value": "↓\n⚫\n↑" }
+      },
       "sideB": [
         "Drag the bottom-center item up.",
         "Pull the item in the bottom-center up.",
@@ -1193,7 +1547,10 @@
     {
       "cardId": "itc_119",
       "cardType": "flippable",
-      "sideA": "Mueve lo que está arriba en el centro, hacia abajo.",
+      "sideA": {
+        "text": "Mueve lo que está arriba en el centro, hacia abajo.",
+        "visualContent": { "type": "ascii", "value": "↑\n⚫\n↓" }
+      },
       "sideB": [
         "Move the top-center item down.",
         "Drag the top-center item down.",
@@ -1204,372 +1561,555 @@
     {
       "cardId": "itc_120",
       "cardType": "flippable",
-      "sideA": "Mueve lo que está en el centro hacia el centro superior.",
+      "sideA": {
+        "text": "Mueve lo que está en el centro hacia el centro superior.",
+        "visualContent": { "type": "icon", "value": "fas fa-compress-arrows-alt" }
+      },
       "sideB": [
         "Move the center item to the top-center.",
         "Shift the middle item to the top-center.",
         "Drag the center item to the top-center."
       ]
     },
- {
+    {
       "cardId": "itc_121",
       "cardType": "flippable",
-      "sideA": "The main rectangular area on a screen that displays the content of an application.",
-      "sideB": ["Window"]
+      "sideA": {
+        "text": "The main rectangular area on a screen that displays the content of an application.",
+        "visualContent": { "type": "icon", "value": "far fa-window-restore" }
+      },
+      "sideB": [ "Window" ]
     },
     {
       "cardId": "itc_122",
       "cardType": "flippable",
-      "sideA": "A clickable label within a window that lets you switch between different pages or sections.",
-      "sideB": ["Tab"]
+      "sideA": {
+        "text": "A clickable label within a window that lets you switch between different pages or sections.",
+        "visualContent": { "type": "icon", "value": "fas fa-folder-open" }
+      },
+      "sideB": [ "Tab" ]
     },
     {
       "cardId": "itc_123",
       "cardType": "flippable",
-      "sideA": "The area in a browser that displays all the currently open tabs.",
-      "sideB": ["Tab bar", "Tabs bar"]
+      "sideA": {
+        "text": "The area in a browser that displays all the currently open tabs.",
+        "visualContent": { "type": "ascii", "value": "[Tab 1][Tab 2][Tab 3]" }
+      },
+      "sideB": [ "Tab bar", "Tabs bar" ]
     },
     {
       "cardId": "itc_124",
       "cardType": "flippable",
-      "sideA": "The field at the top of a browser where you type a website's address.",
-      "sideB": ["Address bar", "URL bar", "Location bar"]
+      "sideA": {
+        "text": "The field at the top of a browser where you type a website's address.",
+        "visualContent": { "type": "icon", "value": "fas fa-globe" }
+      },
+      "sideB": [ "Address bar", "URL bar", "Location bar" ]
     },
     {
       "cardId": "itc_125",
       "cardType": "flippable",
-      "sideA": "A row of buttons and icons that provide quick access to an application's functions.",
-      "sideB": ["Toolbar"]
+      "sideA": {
+        "text": "A row of buttons and icons that provide quick access to an application's functions.",
+        "visualContent": { "type": "icon", "value": "fas fa-tools" }
+      },
+      "sideB": [ "Toolbar" ]
     },
     {
       "cardId": "itc_126",
       "cardType": "flippable",
-      "sideA": "The button that shrinks a window down to the taskbar without closing it.",
-      "sideB": ["Minimize button"]
+      "sideA": {
+        "text": "The button that shrinks a window down to the taskbar without closing it.",
+        "visualContent": { "type": "icon", "value": "far fa-window-minimize" }
+      },
+      "sideB": [ "Minimize button" ]
     },
     {
       "cardId": "itc_127",
       "cardType": "flippable",
-      "sideA": "The button that makes a window fill the entire screen or returns it to its previous size.",
-      "sideB": ["Maximize / Restore button", "Resize button"]
+      "sideA": {
+        "text": "The button that makes a window fill the entire screen or returns it to its previous size.",
+        "visualContent": { "type": "icon", "value": "far fa-window-maximize" }
+      },
+      "sideB": [ "Maximize / Restore button", "Resize button" ]
     },
     {
       "cardId": "itc_128",
       "cardType": "flippable",
-      "sideA": "The button, often marked with an 'X', used to exit or close a window.",
-      "sideB": ["Close button", "Exit button", "X button"]
+      "sideA": {
+        "text": "The button, often marked with an 'X', used to exit or close a window.",
+        "visualContent": { "type": "icon", "value": "fas fa-times" }
+      },
+      "sideB": [ "Close button", "Exit button", "X button" ]
     },
     {
       "cardId": "itc_129",
       "cardType": "flippable",
-      "sideA": "The menu that appears when you click the right mouse button on an item.",
-      "sideB": ["Context menu", "Right-click menu", "Shortcut menu"]
+      "sideA": {
+        "text": "The menu that appears when you click the right mouse button on an item.",
+        "visualContent": { "type": "ascii", "value": "Right-Click -> [Menu]" }
+      },
+      "sideB": [ "Context menu", "Right-click menu", "Shortcut menu" ]
     },
     {
       "cardId": "itc_130",
       "cardType": "flippable",
-      "sideA": "A bar at the bottom of a window that displays information like zoom level or page count.",
-      "sideB": ["Status bar"]
+      "sideA": {
+        "text": "A bar at the bottom of a window that displays information like zoom level or page count.",
+        "visualContent": { "type": "icon", "value": "fas fa-info" }
+      },
+      "sideB": [ "Status bar" ]
     },
     {
       "cardId": "itc_131",
       "cardType": "flippable",
-      "sideA": "The control that allows you to move the view of a page up, down, left, or right.",
-      "sideB": ["Scrollbar", "Scroll bar"]
+      "sideA": {
+        "text": "The control that allows you to move the view of a page up, down, left, or right.",
+        "visualContent": { "type": "icon", "value": "fas fa-arrows-alt" }
+      },
+      "sideB": [ "Scrollbar", "Scroll bar" ]
     },
     {
       "cardId": "itc_132",
       "cardType": "flippable",
-      "sideA": "The on-screen pointer or arrow that indicates the position of the mouse.",
-      "sideB": ["Cursor", "Pointer", "Mouse pointer"]
+      "sideA": {
+        "text": "The on-screen pointer or arrow that indicates the position of the mouse.",
+        "visualContent": { "type": "icon", "value": "fas fa-mouse-pointer" }
+      },
+      "sideB": [ "Cursor", "Pointer", "Mouse pointer" ]
     },
     {
       "cardId": "itc_133",
       "cardType": "flippable",
-      "sideA": "A small graphical representation of a program, file, or function.",
-      "sideB": ["Icon", "Icon button"]
+      "sideA": {
+        "text": "A small graphical representation of a program, file, or function.",
+        "visualContent": { "type": "icon", "value": "fas fa-star" }
+      },
+      "sideB": [ "Icon", "Icon button" ]
     },
     {
       "cardId": "itc_134",
       "cardType": "flippable",
-      "sideA": "A new, smaller window that appears on top of the current one, often for alerts or ads.",
-      "sideB": ["Popup window", "Pop-up", "Dialog popup"]
+      "sideA": {
+        "text": "A new, smaller window that appears on top of the current one, often for alerts or ads.",
+        "visualContent": { "type": "icon", "value": "fas fa-external-link-alt" }
+      },
+      "sideB": [ "Popup window", "Pop-up", "Dialog popup" ]
     },
     {
       "cardId": "itc_135",
       "cardType": "flippable",
-      "sideA": "The browser tab that you are currently viewing.",
-      "sideB": ["Active tab", "Current tab"]
+      "sideA": {
+        "text": "The browser tab that you are currently viewing.",
+        "visualContent": { "type": "ascii", "value": "[Tab 1*][Tab 2]" }
+      },
+      "sideB": [ "Active tab", "Current tab" ]
     },
     {
       "cardId": "itc_136",
       "cardType": "flippable",
-      "sideA": "Any browser tab that is open but not currently being viewed.",
-      "sideB": ["Inactive tab", "Background tab"]
+      "sideA": {
+        "text": "Any browser tab that is open but not currently being viewed.",
+        "visualContent": { "type": "ascii", "value": "[Tab 1][Tab 2*]" }
+      },
+      "sideB": [ "Inactive tab", "Background tab" ]
     },
     {
       "cardId": "itc_137",
       "cardType": "flippable",
-      "sideA": "A browser tab that has just been opened and has no content loaded yet.",
-      "sideB": ["New tab", "Blank tab", "Empty tab"]
+      "sideA": {
+        "text": "A browser tab that has just been opened and has no content loaded yet.",
+        "visualContent": { "type": "icon", "value": "fas fa-plus-square" }
+      },
+      "sideB": [ "New tab", "Blank tab", "Empty tab" ]
     },
     {
       "cardId": "itc_138",
       "cardType": "flippable",
-      "sideA": "The default page that loads when you open your web browser.",
-      "sideB": ["Homepage", "Home page", "Start page"]
+      "sideA": {
+        "text": "The default page that loads when you open your web browser.",
+        "visualContent": { "type": "icon", "value": "fas fa-home" }
+      },
+      "sideB": [ "Homepage", "Home page", "Start page" ]
     },
     {
       "cardId": "itc_139",
       "cardType": "flippable",
-      "sideA": "The page that is displayed by default when you open a new, blank tab.",
-      "sideB": ["New tab page", "Start tab page"]
+      "sideA": {
+        "text": "The page that is displayed by default when you open a new, blank tab.",
+        "visualContent": { "type": "icon", "value": "fas fa-file" }
+      },
+      "sideB": [ "New tab page", "Start tab page" ]
     },
     {
       "cardId": "itc_140",
       "cardType": "flippable",
-      "sideA": "A browser mode that doesn't save your Browse history, cookies, or site data.",
-      "sideB": ["Private window", "Incognito window", "Private Browse"]
+      "sideA": {
+        "text": "A browser mode that doesn't save your Browse history, cookies, or site data.",
+        "visualContent": { "type": "icon", "value": "fas fa-user-secret" }
+      },
+      "sideB": [ "Private window", "Incognito window", "Private Browse" ]
     },
     {
       "cardId": "itc_141",
       "cardType": "flippable",
-      "sideA": "A toolbar in a browser where you can save shortcuts to your favorite websites.",
-      "sideB": ["Bookmarks bar", "Favorites bar"]
+      "sideA": {
+        "text": "A toolbar in a browser where you can save shortcuts to your favorite websites.",
+        "visualContent": { "type": "icon", "value": "fas fa-bookmark" }
+      },
+      "sideB": [ "Bookmarks bar", "Favorites bar" ]
     },
     {
       "cardId": "itc_142",
       "cardType": "flippable",
-      "sideA": "A list of options that appears when you click on a button or menu item.",
-      "sideB": ["Dropdown menu", "Drop-down list", "Pull-down menu"]
+      "sideA": {
+        "text": "A list of options that appears when you click on a button or menu item.",
+        "visualContent": { "type": "icon", "value": "fas fa-caret-down" }
+      },
+      "sideB": [ "Dropdown menu", "Drop-down list", "Pull-down menu" ]
     },
     {
       "cardId": "itc_143",
       "cardType": "flippable",
-      "sideA": "The horizontal bar at the top of a window containing text menus like 'File', 'Edit', and 'View'.",
-      "sideB": ["Menu bar"]
+      "sideA": {
+        "text": "The horizontal bar at the top of a window containing text menus like 'File', 'Edit', and 'View'.",
+        "visualContent": { "type": "ascii", "value": "[File][Edit][View]" }
+      },
+      "sideB": [ "Menu bar" ]
     },
     {
       "cardId": "itc_144",
       "cardType": "flippable",
-      "sideA": "The primary section of a window where the main document or application content is displayed.",
-      "sideB": ["Content area", "Main area", "Viewport"]
+      "sideA": {
+        "text": "The primary section of a window where the main document or application content is displayed.",
+        "visualContent": { "type": "icon", "value": "fas fa-object-group" }
+      },
+      "sideB": [ "Content area", "Main area", "Viewport" ]
     },
     {
       "cardId": "itc_145",
       "cardType": "flippable",
-      "sideA": "The button, often an arrow pointing left, that takes you to the previously visited page.",
-      "sideB": ["Back button", "Go back button"]
+      "sideA": {
+        "text": "The button, often an arrow pointing left, that takes you to the previously visited page.",
+        "visualContent": { "type": "icon", "value": "fas fa-arrow-left" }
+      },
+      "sideB": [ "Back button", "Go back button" ]
     },
     {
       "cardId": "itc_146",
       "cardType": "flippable",
-      "sideA": "The button, often an arrow pointing right, that takes you to the next page in your history.",
-      "sideB": ["Forward button", "Go forward button"]
+      "sideA": {
+        "text": "The button, often an arrow pointing right, that takes you to the next page in your history.",
+        "visualContent": { "type": "icon", "value": "fas fa-arrow-right" }
+      },
+      "sideB": [ "Forward button", "Go forward button" ]
     },
     {
       "cardId": "itc_147",
       "cardType": "flippable",
-      "sideA": "The button that re-downloads the content of the current web page.",
-      "sideB": ["Reload button", "Refresh button"]
+      "sideA": {
+        "text": "The button that re-downloads the content of the current web page.",
+        "visualContent": { "type": "icon", "value": "fas fa-sync" }
+      },
+      "sideB": [ "Reload button", "Refresh button" ]
     },
     {
       "cardId": "itc_148",
       "cardType": "flippable",
-      "sideA": "A vertical panel on the left or right of a window used for navigation.",
-      "sideB": ["Sidebar", "Side panel", "Navigation panel"]
+      "sideA": {
+        "text": "A vertical panel on the left or right of a window used for navigation.",
+        "visualContent": { "type": "icon", "value": "fas fa-columns" }
+      },
+      "sideB": [ "Sidebar", "Side panel", "Navigation panel" ]
     },
     {
       "cardId": "itc_149",
       "cardType": "flippable",
-      "sideA": "The area on the taskbar, usually in the corner, that shows system icons and notifications.",
-      "sideB": ["Notification area", "System tray"]
+      "sideA": {
+        "text": "The area on the taskbar, usually in the corner, that shows system icons and notifications.",
+        "visualContent": { "type": "icon", "value": "fas fa-bell" }
+      },
+      "sideB": [ "Notification area", "System tray" ]
     },
     {
       "cardId": "itc_150",
       "cardType": "flippable",
-      "sideA": "The main screen of an operating system where icons and windows appear.",
-      "sideB": ["Desktop"]
+      "sideA": {
+        "text": "The main screen of an operating system where icons and windows appear.",
+        "visualContent": { "type": "icon", "value": "fas fa-desktop" }
+      },
+      "sideB": [ "Desktop" ]
     },
     {
       "cardId": "itc_151",
       "cardType": "flippable",
-      "sideA": "The background image or color of the main operating system screen.",
-      "sideB": ["Wallpaper", "Desktop background"]
+      "sideA": {
+        "text": "The background image or color of the main operating system screen.",
+        "visualContent": { "type": "icon", "value": "fas fa-image" }
+      },
+      "sideB": [ "Wallpaper", "Desktop background" ]
     },
     {
       "cardId": "itc_152",
       "cardType": "flippable",
-      "sideA": "A window or panel that can be moved to sit on top of other application windows.",
-      "sideB": ["Floating window", "Floating panel"]
+      "sideA": {
+        "text": "A window or panel that can be moved to sit on top of other application windows.",
+        "visualContent": { "type": "icon", "value": "fas fa-window-restore" }
+      },
+      "sideB": [ "Floating window", "Floating panel" ]
     },
     {
       "cardId": "itc_153",
       "cardType": "flippable",
-      "sideA": "A display mode where two application windows are shown side-by-side.",
-      "sideB": ["Split screen", "Split view"]
+      "sideA": {
+        "text": "A display mode where two application windows are shown side-by-side.",
+        "visualContent": { "type": "icon", "value": "fas fa-columns" }
+      },
+      "sideB": [ "Split screen", "Split view" ]
     },
     {
       "cardId": "itc_154",
       "cardType": "flippable",
-      "sideA": "A dialog window that requires user interaction before they can return to the main application.",
-      "sideB": ["Modal window", "Dialog box", "Modal dialog"]
+      "sideA": {
+        "text": "A dialog window that requires user interaction before they can return to the main application.",
+        "visualContent": { "type": "icon", "value": "fas fa-comment-alt" }
+      },
+      "sideB": [ "Modal window", "Dialog box", "Modal dialog" ]
     },
     {
       "cardId": "itc_155",
       "cardType": "flippable",
-      "sideA": "A small box that a user can click to indicate 'yes' or 'no' on a form.",
-      "sideB": ["Checkbox"]
+      "sideA": {
+        "text": "A small box that a user can click to indicate 'yes' or 'no' on a form.",
+        "visualContent": { "type": "icon", "value": "far fa-check-square" }
+      },
+      "sideB": [ "Checkbox" ]
     },
     {
       "cardId": "itc_156",
       "cardType": "flippable",
-      "sideA": "A control that allows a user to select only one option from a mutually exclusive set.",
-      "sideB": ["Radio button"]
+      "sideA": {
+        "text": "A control that allows a user to select only one option from a mutually exclusive set.",
+        "visualContent": { "type": "icon", "value": "far fa-dot-circle" }
+      },
+      "sideB": [ "Radio button" ]
     },
     {
       "cardId": "itc_157",
       "cardType": "flippable",
-      "sideA": "A control that allows selecting a value from a continuous range by dragging a handle.",
-      "sideB": ["Slider", "Track bar"]
+      "sideA": {
+        "text": "A control that allows selecting a value from a continuous range by dragging a handle.",
+        "visualContent": { "type": "icon", "value": "fas fa-sliders-h" }
+      },
+      "sideB": [ "Slider", "Track bar" ]
     },
     {
       "cardId": "itc_158",
       "cardType": "flippable",
-      "sideA": "A small box with informational text that appears when hovering over an element.",
-      "sideB": ["Tooltip", "Hint", "Infotip"]
+      "sideA": {
+        "text": "A small box with informational text that appears when hovering over an element.",
+        "visualContent": { "type": "icon", "value": "fas fa-info-circle" }
+      },
+      "sideB": [ "Tooltip", "Hint", "Infotip" ]
     },
     {
       "cardId": "itc_159",
       "cardType": "flippable",
-      "sideA": "Clickable text or an image that takes you to another document or webpage.",
-      "sideB": ["Hyperlink", "Link"]
+      "sideA": {
+        "text": "Clickable text or an image that takes you to another document or webpage.",
+        "visualContent": { "type": "icon", "value": "fas fa-link" }
+      },
+      "sideB": [ "Hyperlink", "Link" ]
     },
     {
       "cardId": "itc_160",
       "cardType": "flippable",
-      "sideA": "A navigation trail that shows the user's location in a website or application.",
-      "sideB": ["Breadcrumbs", "Breadcrumb trail"]
+      "sideA": {
+        "text": "A navigation trail that shows the user's location in a website or application.",
+        "visualContent": { "type": "ascii", "value": "Home > Page > Subpage" }
+      },
+      "sideB": [ "Breadcrumbs", "Breadcrumb trail" ]
     },
     {
       "cardId": "itc_161",
       "cardType": "flippable",
-      "sideA": "The content block at the very top of a webpage, often containing a logo and navigation.",
-      "sideB": ["Header"]
+      "sideA": {
+        "text": "The content block at the very top of a webpage, often containing a logo and navigation.",
+        "visualContent": { "type": "icon", "value": "fas fa-window-maximize" }
+      },
+      "sideB": [ "Header" ]
     },
     {
       "cardId": "itc_162",
       "cardType": "flippable",
-      "sideA": "The content block at the very bottom of a webpage, often containing copyright and contact info.",
-      "sideB": ["Footer"]
+      "sideA": {
+        "text": "The content block at the very bottom of a webpage, often containing copyright and contact info.",
+        "visualContent": { "type": "icon", "value": "fas fa-grip-lines" }
+      },
+      "sideB": [ "Footer" ]
     },
     {
       "cardId": "itc_163",
       "cardType": "flippable",
-      "sideA": "A UI element that can be clicked to show or hide content, like in an FAQ section.",
-      "sideB": ["Accordion", "Collapsible panel"]
+      "sideA": {
+        "text": "A UI element that can be clicked to show or hide content, like in an FAQ section.",
+        "visualContent": { "type": "icon", "value": "fas fa-bars" }
+      },
+      "sideB": [ "Accordion", "Collapsible panel" ]
     },
     {
       "cardId": "itc_164",
       "cardType": "flippable",
-      "sideA": "A rotating slideshow of images or content on a webpage.",
-      "sideB": ["Carousel", "Image slider"]
+      "sideA": {
+        "text": "A rotating slideshow of images or content on a webpage.",
+        "visualContent": { "type": "icon", "value": "fas fa-images" }
+      },
+      "sideB": [ "Carousel", "Image slider" ]
     },
     {
       "cardId": "itc_165",
       "cardType": "flippable",
-      "sideA": "A switch that allows a user to turn a setting on or off.",
-      "sideB": ["Toggle switch", "Toggle button"]
+      "sideA": {
+        "text": "A switch that allows a user to turn a setting on or off.",
+        "visualContent": { "type": "icon", "value": "fas fa-toggle-on" }
+      },
+      "sideB": [ "Toggle switch", "Toggle button" ]
     },
     {
       "cardId": "itc_166",
       "cardType": "flippable",
-      "sideA": "A field used to enter text.",
-      "sideB": ["Text box", "Input field", "Text field"]
+      "sideA": {
+        "text": "A field used to enter text.",
+        "visualContent": { "type": "icon", "value": "fas fa-edit" }
+      },
+      "sideB": [ "Text box", "Input field", "Text field" ]
     },
     {
       "cardId": "itc_167",
       "cardType": "flippable",
-      "sideA": "The blinking vertical line inside a text field that shows the insertion point for typing.",
-      "sideB": ["Caret", "Text cursor"]
+      "sideA": {
+        "text": "The blinking vertical line inside a text field that shows the insertion point for typing.",
+        "visualContent": { "type": "ascii", "value": "|" }
+      },
+      "sideB": [ "Caret", "Text cursor" ]
     },
     {
       "cardId": "itc_168",
       "cardType": "flippable",
-      "sideA": "A bar that shows the progress of a task, such as a download or installation.",
-      "sideB": ["Progress bar"]
+      "sideA": {
+        "text": "A bar that shows the progress of a task, such as a download or installation.",
+        "visualContent": { "type": "ascii", "value": "[██████----] 60%" }
+      },
+      "sideB": [ "Progress bar" ]
     },
     {
       "cardId": "itc_169",
       "cardType": "flippable",
-      "sideA": "The horizontal bar at the bottom of the OS screen that shows open applications.",
-      "sideB": ["Taskbar", "Dock"]
+      "sideA": {
+        "text": "The horizontal bar at the bottom of the OS screen that shows open applications.",
+        "visualContent": { "type": "icon", "value": "fas fa-window-maximize" }
+      },
+      "sideB": [ "Taskbar", "Dock" ]
     },
     {
       "cardId": "itc_170",
       "cardType": "flippable",
-      "sideA": "A temporary storage area where material cut or copied from a file is kept for pasting.",
-      "sideB": ["Clipboard"]
+      "sideA": {
+        "text": "A temporary storage area where material cut or copied from a file is kept for pasting.",
+        "visualContent": { "type": "icon", "value": "fas fa-clipboard" }
+      },
+      "sideB": [ "Clipboard" ]
     },
     {
       "cardId": "itc_171",
       "cardType": "flippable",
-      "sideA": "A clickable element that performs a specific action.",
-      "sideB": ["Button"]
+      "sideA": {
+        "text": "A clickable element that performs a specific action.",
+        "visualContent": { "type": "icon", "value": "fas fa-mouse-pointer" }
+      },
+      "sideB": [ "Button" ]
     },
     {
       "cardId": "itc_172",
       "cardType": "flippable",
-      "sideA": "A graphical control element that is a visual representation of a file, folder, or program.",
-      "sideB": ["Icon"]
+      "sideA": {
+        "text": "A graphical control element that is a visual representation of a file, folder, or program.",
+        "visualContent": { "type": "icon", "value": "fas fa-star" }
+      },
+      "sideB": [ "Icon" ]
     },
     {
       "cardId": "itc_173",
       "cardType": "flippable",
-      "sideA": "A list of commands or options available to the user.",
-      "sideB": ["Menu"]
+      "sideA": {
+        "text": "A list of commands or options available to the user.",
+        "visualContent": { "type": "icon", "value": "fas fa-bars" }
+      },
+      "sideB": [ "Menu" ]
     },
     {
       "cardId": "itc_174",
       "cardType": "flippable",
-      "sideA": "A temporary name for a file or piece of data before it is formally named.",
-      "sideB": ["Placeholder"]
+      "sideA": {
+        "text": "A temporary name for a file or piece of data before it is formally named.",
+        "visualContent": { "type": "icon", "value": "fas fa-tag" }
+      },
+      "sideB": [ "Placeholder" ]
     },
     {
       "cardId": "itc_175",
       "cardType": "flippable",
-      "sideA": "An automated sequence of instructions or commands.",
-      "sideB": ["Script", "Macro"]
+      "sideA": {
+        "text": "An automated sequence of instructions or commands.",
+        "visualContent": { "type": "icon", "value": "fas fa-robot" }
+      },
+      "sideB": [ "Script", "Macro" ]
     },
     {
       "cardId": "itc_176",
       "cardType": "flippable",
-      "sideA": "The text displayed in a form field before the user enters a value.",
-      "sideB": ["Placeholder text", "Hint text"]
+      "sideA": {
+        "text": "The text displayed in a form field before the user enters a value.",
+        "visualContent": { "type": "icon", "value": "fas fa-pen-fancy" }
+      },
+      "sideB": [ "Placeholder text", "Hint text" ]
     },
     {
       "cardId": "itc_177",
       "cardType": "flippable",
-      "sideA": "A section in a settings or preferences window, often organized by a tab.",
-      "sideB": ["Panel", "Pane"]
+      "sideA": {
+        "text": "A section in a settings or preferences window, often organized by a tab.",
+        "visualContent": { "type": "icon", "value": "fas fa-columns" }
+      },
+      "sideB": [ "Panel", "Pane" ]
     },
     {
       "cardId": "itc_178",
       "cardType": "flippable",
-      "sideA": "The set of options and configurations available for a piece of software.",
-      "sideB": ["Settings", "Preferences", "Options"]
+      "sideA": {
+        "text": "The set of options and configurations available for a piece of software.",
+        "visualContent": { "type": "icon", "value": "fas fa-cog" }
+      },
+      "sideB": [ "Settings", "Preferences", "Options" ]
     },
     {
       "cardId": "itc_179",
       "cardType": "flippable",
-      "sideA": "A small, scrollable window within a larger window or webpage.",
-      "sideB": ["Frame", "iFrame"]
+      "sideA": {
+        "text": "A small, scrollable window within a larger window or webpage.",
+        "visualContent": { "type": "icon", "value": "fas fa-window-restore" }
+      },
+      "sideB": [ "Frame", "iFrame" ]
     },
     {
       "cardId": "itc_180",
       "cardType": "flippable",
-      "sideA": "A file that can be executed to install or run a program.",
-      "sideB": ["Executable", ".exe file"]
+      "sideA": {
+        "text": "A file that can be executed to install or run a program.",
+        "visualContent": { "type": "icon", "value": "fas fa-cogs" }
+      },
+      "sideB": [ "Executable", ".exe file" ]
     }
-    ]
+  ]
 }

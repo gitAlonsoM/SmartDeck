@@ -1,0 +1,425 @@
+{
+  "id": "ui_elements_01",
+  "name": "Common UI Elements",
+  "description": "Learn to identify and name common user interface components. Definitions on the front, terminology on the back.",
+  "deckType": "flippable",
+  "cards": [
+    {
+      "cardId": "ui_001",
+      "sideA": {
+        "text": "A clickable element that performs a specific action when activated.",
+        "visualContent": { "type": "icon", "value": "fas fa-mouse-pointer" }
+      },
+      "sideB": ["Button", "Action Button", "CTA Button"]
+    },
+    {
+      "cardId": "ui_002",
+      "sideA": {
+        "text": "A control that allows the user to choose ONLY ONE of a predefined set of mutually exclusive options.",
+        "visualContent": { "type": "ascii", "value": "( ) Option A\n(•) Option B\n( ) Option C" }
+      },
+      "sideB": ["Radio Button", "Option Button"]
+    },
+    {
+      "cardId": "ui_003",
+      "sideA": {
+        "text": "A graphical control that allows the user to select ONE OR MORE items from a set.",
+        "visualContent": { "type": "icon", "value": "far fa-check-square" }
+      },
+      "sideB": ["Checkbox", "Tickbox", "Check Box"]
+    },
+    {
+      "cardId": "ui_004",
+      "sideA": {
+        "text": "A control that allows a user to turn a setting on or off with a single click or tap.",
+        "visualContent": { "type": "icon", "value": "fas fa-toggle-on" }
+      },
+      "sideB": ["Toggle Switch", "Toggle Button", "Switch"]
+    },
+    {
+      "cardId": "ui_005",
+      "sideA": {
+        "text": "A list of commands or options presented to the user to choose from.",
+        "visualContent": { "type": "icon", "value": "fas fa-bars" }
+      },
+      "sideB": ["Menu", "Navigation Menu"]
+    },
+    {
+      "cardId": "ui_006",
+      "sideA": {
+        "text": "A control that reveals a list of options from which the user can select one.",
+        "visualContent": { "type": "icon", "value": "fas fa-caret-square-down" }
+      },
+      "sideB": ["Dropdown", "Select Menu", "Pull-down List", "Drop-down List"]
+    },
+    {
+      "cardId": "ui_007",
+      "sideA": {
+        "text": "A control that allows selecting a value from a continuous range by dragging a handle.",
+        "visualContent": { "type": "ascii", "value": "‹───o───›" }
+      },
+      "sideB": ["Slider", "Track Bar"]
+    },
+    {
+      "cardId": "ui_008",
+      "sideA": {
+        "text": "A rectangular area in a form where the user can enter text.",
+        "visualContent": { "type": "icon", "value": "fas fa-edit" }
+      },
+      "sideB": ["Text Field", "Input Field", "Text Box", "Input Box"]
+    },
+    {
+      "cardId": "ui_009",
+      "sideA": {
+        "text": "A small informational box that appears when a user hovers over an element.",
+        "visualContent": { "type": "icon", "value": "fas fa-comment-alt" }
+      },
+      "sideB": ["Tooltip", "Hint", "Infotip"]
+    },
+    {
+      "cardId": "ui_010",
+      "sideA": {
+        "text": "A dialog box that appears on top of the main content, disabling it until the user interacts with the dialog.",
+        "visualContent": { "type": "icon", "value": "far fa-window-maximize" }
+      },
+      "sideB": ["Modal", "Dialog Box", "Popup Window"]
+    },
+    {
+      "cardId": "ui_011",
+      "sideA": {
+        "text": "A list of vertically stacked items, where each item can be 'expanded' or 'collapsed' to reveal its content.",
+        "visualContent": { "type": "icon", "value": "fas fa-layer-group" }
+      },
+      "sideB": ["Accordion", "Collapsible Panel", "Expander"]
+    },
+    {
+      "cardId": "ui_012",
+      "sideA": {
+        "text": "A navigation trail that shows the user's location in a website or application.",
+        "visualContent": { "type": "ascii", "value": "Home > Section > Page" }
+      },
+      "sideB": ["Breadcrumbs", "Breadcrumb Trail"]
+    },
+    {
+      "cardId": "ui_013",
+      "sideA": {
+        "text": "A navigation scheme that allows a user to switch between different subsections of a single screen.",
+        "visualContent": { "type": "icon", "value": "fas fa-folder-open" }
+      },
+      "sideB": ["Tabs", "Tabbed Navigation", "Tab View"]
+    },
+    {
+      "cardId": "ui_014",
+      "sideA": {
+        "text": "A bar that indicates how much of a task has been completed.",
+        "visualContent": { "type": "ascii", "value": "[██████----] 60%" }
+      },
+      "sideB": ["Progress Bar"]
+    },
+    {
+      "cardId": "ui_015",
+      "sideA": {
+        "text": "A small, symbolic image representing a program, file, or function.",
+        "visualContent": { "type": "icon", "value": "fas fa-star" }
+      },
+      "sideB": ["Icon"]
+    },
+    {
+      "cardId": "ui_016",
+      "sideA": {
+        "text": "A message box that provides feedback to the user, such as a confirmation or a warning.",
+        "visualContent": { "type": "icon", "value": "fas fa-exclamation-triangle" }
+      },
+      "sideB": ["Alert", "Notification Box", "Message Box"]
+    },
+    {
+      "cardId": "ui_017",
+      "sideA": {
+        "text": "A control for navigating between pages of content or search results.",
+        "visualContent": { "type": "ascii", "value": "‹ Prev  1  2  3  Next ›" }
+      },
+      "sideB": ["Pagination", "Paging Controls", "Page Navigation"]
+    },
+    {
+      "cardId": "ui_018",
+      "sideA": {
+        "text": "A self-contained block of content and actions about a single subject, often in a grid.",
+        "visualContent": { "type": "icon", "value": "far fa-address-card" }
+      },
+      "sideB": ["Card", "Tile"]
+    },
+
+
+
+
+
+    {
+       "cardId": "ui_019",
+      "sideA": {
+        "text": "The content block at the very top of a webpage, often containing a logo and main navigation.",
+        "visualContent": { "type": "ascii", "value": "┌──[LOGO]─[Nav]──┐\n│                   │\n└───────────────────┘" }
+      },
+      "sideB": ["Header", "Masthead"]
+    },
+    
+    {
+    "cardId": "ui_020",
+      "sideA": {
+        "text": "The content block at the very bottom of a webpage, often containing copyright and contact info.",
+        "visualContent": { "type": "ascii", "value": "┌───────────────────┐\n│                   │\n└─ © 2025 | Contact ─┘" }
+      },
+      "sideB": ["Footer", "Page Footer"]
+    },
+
+
+
+
+    {
+      "cardId": "ui_021",
+      "sideA": {
+        "text": "A circular image representing a user.",
+        "visualContent": { "type": "icon", "value": "fas fa-user-circle" }
+      },
+      "sideB": ["Avatar", "Profile Picture"]
+    },
+    {
+      "cardId": "ui_022",
+      "sideA": {
+        "text": "A small label or tag used to display a status or a count, often on an icon.",
+        "visualContent": { "type": "ascii", "value": "🔔\n(3)" }
+      },
+      "sideB": ["Badge", "Notification Badge", "Pill"]
+    },
+    {
+      "cardId": "ui_023",
+      "sideA": {
+        "text": "A two-button control to incrementally increase or decrease a numeric value.",
+        "visualContent": { "type": "ascii", "value": "[ 5 ] ▲\n      ▼" }
+      },
+      "sideB": ["Stepper", "Number Input", "Quantity Stepper"]
+    },
+    {
+      "cardId": "ui_024",
+      "sideA": {
+        "text": "A control that allows a user to select a date from a calendar view.",
+        "visualContent": { "type": "icon", "value": "far fa-calendar-alt" }
+      },
+      "sideB": ["Date Picker", "Date Selector", "Calendar Control"]
+    },
+    {
+      "cardId": "ui_025",
+      "sideA": {
+        "text": "A rotating slideshow of images or featured content.",
+        "visualContent": { "type": "icon", "value": "fas fa-images" }
+      },
+      "sideB": ["Carousel", "Image Slider", "Slideshow"]
+    },
+    {
+      "cardId": "ui_026",
+      "sideA": {
+        "text": "An icon with three vertical dots (⋮) that reveals a menu of options.",
+        "visualContent": { "type": "icon", "value": "fas fa-ellipsis-v" }
+      },
+      "sideB": ["Kebab Menu", "Vertical Ellipsis Menu", "Three-dot Menu"]
+    },
+    {
+      "cardId": "ui_027",
+      "sideA": {
+        "text": "An icon with three horizontal lines (≡) that typically opens a main navigation menu.",
+        "visualContent": { "type": "icon", "value": "fas fa-bars" }
+      },
+      "sideB": ["Hamburger Menu", "Navigation Drawer Toggle", "Side Menu Icon"]
+    },
+    {
+      "cardId": "ui_028",
+      "sideA": {
+        "text": "A temporary, non-intrusive message that appears at the bottom of the screen to provide brief feedback.",
+        "visualContent": { "type": "ascii", "value": "┌───────────┐\n│           │\n└─[ Message ]─┘" }
+      },
+      "sideB": ["Snackbar", "Toast Notification", "Toast"]
+    },
+    {
+      "cardId": "ui_029",
+      "sideA": {
+        "text": "An input field specifically designed for entering and validating search queries.",
+        "visualContent": { "type": "icon", "value": "fas fa-search" }
+      },
+      "sideB": ["Search Bar", "Search Field", "Search Box"]
+    },
+    {
+      "cardId": "ui_030",
+      "sideA": {
+        "text": "A placeholder UI that mimics the layout of the page, shown while content is loading.",
+        "visualContent": { "type": "ascii", "value": "[▓▓▓▓▓]\n[▓▓▓▓▓▓▓▓]\n[▓▓▓▓▓▓]" }
+      },
+      "sideB": ["Skeleton Screen", "Skeleton Loader", "UI Skeleton"]
+    },
+    {
+      "cardId": "ui_031",
+      "sideA": {
+        "text": "An animated graphic indicating that a process is running in the background.",
+        "visualContent": { "type": "icon", "value": "fas fa-spinner" }
+      },
+      "sideB": ["Spinner", "Loader", "Loading Spinner", "Throbber"]
+    },
+    {
+      "cardId": "ui_032",
+      "sideA": {
+        "text": "A compact element representing an input, attribute, or action, often used for filtering.",
+        "visualContent": { "type": "ascii", "value": "[ Filter x ]" }
+      },
+      "sideB": ["Chip", "Pill"]
+    },
+    {
+      "cardId": "ui_033",
+      "sideA": {
+        "text": "A set of buttons grouped together, where only one can be active at a time, often used for view switching.",
+        "visualContent": { "type": "ascii", "value": "[ List | Grid | Map ]" }
+      },
+      "sideB": ["Segmented Control", "Button Group"]
+    },
+    {
+      "cardId": "ui_034",
+      "sideA": {
+        "text": "A keyword or term assigned to a piece of information, used for organization.",
+        "visualContent": { "type": "icon", "value": "fas fa-tag" }
+      },
+      "sideB": ["Tag", "Label"]
+    },
+    {
+      "cardId": "ui_035",
+      "sideA": {
+        "text": "A multi-step process that guides a user through a task, breaking it into manageable parts.",
+        "visualContent": { "type": "ascii", "value": "Step 1 > Step 2 > Step 3" }
+      },
+      "sideB": ["Wizard", "Stepper", "Setup Assistant"]
+    },
+    {
+      "cardId": "ui_036",
+      "sideA": {
+        "text": "A control that allows users to pick a color from a palette or spectrum.",
+        "visualContent": { "type": "icon", "value": "fas fa-palette" }
+      },
+      "sideB": ["Color Picker", "Color Swatch"]
+    },
+    {
+      "cardId": "ui_037",
+      "sideA": {
+        "text": "A control designed to let a user select a specific time of day.",
+        "visualContent": { "type": "icon", "value": "far fa-clock" }
+      },
+      "sideB": ["Time Picker", "Time Selector"]
+    },
+    {
+      "cardId": "ui_038",
+      "sideA": {
+        "text": "An input control for entering large blocks of multi-line text.",
+        "visualContent": { "type": "icon", "value": "fas fa-paragraph" }
+      },
+      "sideB": ["Text Area", "Multi-line Text Field"]
+    },
+    {
+      "cardId": "ui_039",
+      "sideA": {
+        "text": "A control that allows users to select and upload one or more files from their local device.",
+        "visualContent": { "type": "icon", "value": "fas fa-file-upload" }
+      },
+      "sideB": ["File Input", "File Uploader", "File Selector"]
+    },
+    {
+      "cardId": "ui_040",
+      "sideA": {
+        "text": "A system for users to express their opinion, typically using stars or other symbols.",
+        "visualContent": { "type": "ascii", "value": "★ ★ ★ ★ ☆" }
+      },
+      "sideB": ["Rating", "Star Rating"]
+    },
+    {
+      "cardId": "ui_041",
+      "sideA": {
+        "text": "A large, prominent image and text combination placed at the top of a webpage.",
+        "visualContent": { "type": "icon", "value": "fas fa-image" }
+      },
+      "sideB": ["Hero Image", "Hero Header", "Jumbotron"]
+    },
+    {
+      "cardId": "ui_042",
+      "sideA": {
+        "text": "A panel that slides in from the side of the screen, typically for navigation or filters.",
+        "visualContent": { "type": "ascii", "value": "┌───┬───┐\n│ < │   │\n└───┴───┘" }
+      },
+      "sideB": ["Off-canvas Menu", "Sidebar Menu", "Drawer"]
+    },
+    {
+      "cardId": "ui_043",
+      "sideA": {
+        "text": "A blinking vertical line in a text field indicating where text will be inserted.",
+        "visualContent": { "type": "ascii", "value": "Hello|" }
+      },
+      "sideB": ["Caret", "Text Cursor", "Insertion Point"]
+    },
+    {
+      "cardId": "ui_044",
+      "sideA": {
+        "text": "An interactive tour that guides new users through the key features of an application.",
+        "visualContent": { "type": "icon", "value": "fas fa-map-signs" }
+      },
+      "sideB": ["Onboarding Flow", "Product Tour", "User Guide"]
+    },
+
+
+
+    {
+     "cardId": "ui_045",
+      "sideA": {
+        "text": "The clickable text of a hyperlink.",
+        "visualContent": { "type": "ascii", "value": "Please <u>click here</u> for more info." }
+      },
+      "sideB": ["Anchor Text", "Link Text", "Link Label"]
+    },
+
+
+
+
+    {
+      "cardId": "ui_046",
+      "sideA": {
+        "text": "A large, often intrusive, full-screen advertisement or promotion that appears before the expected content.",
+        "visualContent": { "type": "icon", "value": "fas fa-ad" }
+      },
+      "sideB": ["Interstitial Ad", "Full-page Ad"]
+    },
+    {
+      "cardId": "ui_047",
+      "sideA": {
+        "text": "A container that visually groups a set of related controls or content, often with a title.",
+        "visualContent": { "type": "ascii", "value": "┌─ Group Title ─┐\n│ [Content]     │\n└───────────────┘" }
+      },
+      "sideB": ["Group Box", "Fieldset"]
+    },
+    {
+      "cardId": "ui_048",
+      "sideA": {
+        "text": "A view that displays hierarchical data in a nested, indented list.",
+        "visualContent": { "type": "icon", "value": "fas fa-stream" }
+      },
+      "sideB": ["Tree View", "Tree Control"]
+    },
+    {
+      "cardId": "ui_049",
+      "sideA": {
+        "text": "The faded text within a form field that provides a hint or example of the required input.",
+        "visualContent": { "type": "icon", "value": "fas fa-pen-fancy" }
+      },
+      "sideB": ["Placeholder Text", "Hint Text"]
+    },
+    {
+      "cardId": "ui_050",
+      "sideA": {
+        "text": "An icon with three horizontal dots (...) that reveals a menu with secondary actions.",
+        "visualContent": { "type": "icon", "value": "fas fa-ellipsis-h" }
+      },
+      "sideB": ["Meatball Menu", "Horizontal Ellipsis Menu", "More Options Menu"]
+    }
+  ]
+}

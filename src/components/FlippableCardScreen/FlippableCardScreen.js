@@ -30,26 +30,87 @@ class FlippableCardScreen {
         this.setupEventListeners();
     }
 
-    populateCard() {
-       // SIDE A (FRONT) - Unchanged
-        const sideAContainer = document.getElementById('side-a-content');
-        sideAContainer.innerHTML = ''; // Clear previous
-        sideAContainer.appendChild(this._createTextLine(this.cardData.sideA, true));
 
-        // SIDE A (ON BACK) - New logic
-        // Populate the new container on the back of the card with Side A's content.
+  populateCard() {
+        // --- Handle Side A ---
+        const textContainer = document.getElementById('side-a-text-content');
+        const visualContainer = document.getElementById('visual-content-container');
+        textContainer.innerHTML = '';
+        visualContainer.innerHTML = '';
+
+        let sideAData = this.cardData.sideA;
+        
+        // Backward compatibility: if sideA is just a string, convert it to the new object format
+        if (typeof sideAData === 'string') {
+            sideAData = { text: sideAData, visualContent: null };
+        }
+
+        // Render the main text
+        textContainer.appendChild(this._createTextLine(sideAData.text, true));
+
+        // Render visual content if it exists
+        if (sideAData.visualContent) {
+            this._renderVisualContent(sideAData.visualContent, visualContainer);
+        }
+
+        // --- Handle Side B (The Back Side) ---
+        // Side A content (question text) shown on the back for context
         const sideAOnBackContainer = document.getElementById('side-a-content-on-back');
-        sideAOnBackContainer.innerHTML = ''; // Clear previous
-        sideAOnBackContainer.appendChild(this._createTextLine(this.cardData.sideA, true));
-
-
-        // SIDE B (BACK) - Unchanged
+        sideAOnBackContainer.innerHTML = '';
+        sideAOnBackContainer.appendChild(this._createTextLine(sideAData.text, true));
+        
+        // The actual answers for Side B
         const sideBContainer = document.getElementById('side-b-content');
-        sideBContainer.innerHTML = ''; // Clear previous
+        sideBContainer.innerHTML = '';
         this.cardData.sideB.forEach(line => {
+            // Here, sideB is still expected to be a simple array of strings
             sideBContainer.appendChild(this._createTextLine(line));
         });
     }
+
+    /**
+     * Renders content into the visual canvas based on its type.
+     * @param {object} content - The visualContent object {type, value, language?}.
+     * @param {HTMLElement} container - The container to inject the content into.
+     */
+    _renderVisualContent(content, container) {
+        let element;
+        switch (content.type) {
+            case 'icon':
+                element = document.createElement('i');
+                // Renders a large Font Awesome icon
+                element.className = `${content.value} text-6xl md:text-8xl text-indigo-400`;
+                break;
+            
+            case 'ascii':
+                element = document.createElement('pre');
+                element.className = 'text-lg md:text-2xl text-gray-400';
+                element.textContent = content.value;
+                break;
+
+            case 'code':
+                // For full syntax highlighting, a library like Prism.js or Highlight.js would be needed.
+                // This provides the basic structure and styling from the CSS file.
+                element = document.createElement('pre');
+                element.className = 'code-block';
+                const codeElement = document.createElement('code');
+                // The language can be used by a syntax highlighter library
+                if (content.language) {
+                    codeElement.className = `language-${content.language}`;
+                }
+                codeElement.textContent = content.value;
+                element.appendChild(codeElement);
+                break;
+        }
+
+        if (element) {
+            container.appendChild(element);
+        }
+    }
+
+
+
+
 
     /**
      * Creates a DOM element for a line of text with a play button.
