@@ -1,0 +1,807 @@
+{
+  "id": "git_essentials_deck_01",
+  "name": "Git Essentials & Daily Workflow",
+  "description": "Master the most crucial Git commands for your daily development workflow. This deck provides 50 real-world scenarios, covering everything from branching and committing to synchronizing with remotes and handling local changes.",
+  "cards": [
+    {
+      "category": "Core Concepts",
+      "hint": "This command is your primary tool for checking the current state of your working directory and staging area.",
+      "question": "Which command shows the current status of your project, including modified, staged, and untracked files?",
+      "options": [
+        "git status",
+        "git log",
+        "git diff"
+      ],
+      "correctAnswer": "git status",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# A. git status\n# B. git log\n# C. git diff"
+      }
+    },
+    {
+      "category": "Core Concepts",
+      "hint": "This is the first step to prepare your modifications to be saved in the repository's history.",
+      "question": "Which command stages all new and modified files in the current directory for the next commit?",
+      "options": [
+        "git add .",
+        "git commit -a",
+        "git stage all"
+      ],
+      "correctAnswer": "git add .",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# A. git add .\n# B. git commit -a\n# C. git stage all"
+      }
+    },
+    {
+      "category": "Core Concepts",
+      "hint": "This command permanently saves your staged changes to the project's history.",
+      "question": "How do you commit your staged changes with a descriptive message?",
+      "options": [
+        "git commit -m \"Your message\"",
+        "git save \"Your message\"",
+        "git push -m \"Your message\""
+      ],
+      "correctAnswer": "git commit -m \"Your message\"",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# git commit -m \"feat: Implement user authentication\""
+      }
+    },
+    {
+      "category": "Branching",
+      "hint": "This is a two-in-one command for efficiency when starting new work.",
+      "question": "Which command creates a new branch named 'feature/login' and immediately switches to it?",
+      "options": [
+        "git checkout -b feature/login",
+        "git branch feature/login",
+        "git switch feature/login"
+      ],
+      "correctAnswer": "git checkout -b feature/login",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# A. git checkout -b feature/login\n# B. git branch feature/login\n# C. git switch feature/login"
+      }
+    },
+    {
+      "category": "Branching",
+      "hint": "This command allows you to move between different lines of development that already exist.",
+      "question": "You are currently on the 'main' branch. How do you switch to an existing branch named 'develop'?",
+      "options": [
+        "git checkout develop",
+        "git branch develop",
+        "git new develop"
+      ],
+      "correctAnswer": "git checkout develop",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# You are on 'main'.\n# You want to switch to 'develop'.\n\n# A. git checkout develop\n# B. git branch develop\n# C. git new develop"
+      }
+    },
+    {
+      "category": "Branching",
+      "hint": "This command is used to safely remove a local branch after its work has been integrated.",
+      "question": "Which command deletes a local branch named 'old-feature' only if it has been fully merged?",
+      "options": [
+        "git branch -d old-feature",
+        "git branch -D old-feature",
+        "git delete branch old-feature"
+      ],
+      "correctAnswer": "git branch -d old-feature",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# To delete 'old-feature' safely:\n\n# A. git branch -d old-feature\n# B. git branch -D old-feature\n# C. git delete branch old-feature"
+      }
+    },
+    {
+      "category": "Branching",
+      "hint": "Use this command when you need to remove a branch, even if its changes haven't been merged anywhere.",
+      "question": "When would you use `git branch -D my-feature` instead of `-d`?",
+      "options": [
+        "To force delete a branch that is not fully merged",
+        "To delete a remote branch",
+        "To detach the branch from HEAD"
+      ],
+      "correctAnswer": "To force delete a branch that is not fully merged",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# You run 'git branch -d my-feature' and get an error:\n# 'error: The branch 'my-feature' is not fully merged.'\n# What command should you use to force the deletion?\n\ngit branch -D my-feature"
+      }
+    },
+    {
+      "category": "Remotes",
+      "hint": "This command synchronizes your local branch with its remote counterpart by fetching changes and merging them.",
+      "question": "How do you update your current local branch with the latest changes from its remote-tracking branch on 'origin'?",
+      "options": [
+        "git pull",
+        "git fetch",
+        "git merge origin"
+      ],
+      "correctAnswer": "git pull",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# A. git pull\n# B. git fetch\n# C. git merge origin"
+      }
+    },
+    {
+      "category": "Remotes",
+      "hint": "A coworker pushed a new branch 'feature/api-docs' to the remote repository. You need to start working on it.",
+      "question": "How do you create a local branch 'feature/api-docs' that tracks the remote branch of the same name?",
+      "options": [
+        "git checkout -b feature/api-docs origin/feature/api-docs",
+        "git branch feature/api-docs",
+        "git pull origin/feature/api-docs"
+      ],
+      "correctAnswer": "git checkout -b feature/api-docs origin/feature/api-docs",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# A. git checkout -b feature/api-docs origin/feature/api-docs\n# B. git branch feature/api-docs\n# C. git pull origin/feature/api-docs"
+      }
+    },
+    {
+      "category": "Undoing Changes",
+      "hint": "You've made several local modifications but decided they are all wrong and want to revert to the last saved state.",
+      "question": "Which command discards all uncommitted changes in your working directory, making it match the last commit?",
+      "options": [
+        "git reset --hard HEAD",
+        "git checkout .",
+        "git clean -fd"
+      ],
+      "correctAnswer": "git reset --hard HEAD",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# WARNING: This command is destructive and will lose local work.\n\n# A. git reset --hard HEAD\n# B. git checkout .\n# C. git clean -fd"
+      }
+    },
+    {
+      "category": "History",
+      "hint": "This is the go-to command for reviewing the sequence of commits on your current branch.",
+      "question": "Which command displays the commit history for the current branch?",
+      "options": [
+        "git log",
+        "git history",
+        "git show-commits"
+      ],
+      "correctAnswer": "git log",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "git log"
+      }
+    },
+    {
+      "category": "History",
+      "hint": "Sometimes the default log is too verbose. This option provides a much cleaner, one-line-per-commit view.",
+      "question": "How can you view the commit log in a compact, one-line format?",
+      "options": [
+        "git log --oneline",
+        "git log --short",
+        "git log --compact"
+      ],
+      "correctAnswer": "git log --oneline",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "git log --oneline --graph --decorate"
+      }
+    },
+    {
+      "category": ".gitignore",
+      "hint": "This special file tells Git which files or directories to intentionally ignore.",
+      "question": "What is the primary purpose of a `.gitignore` file?",
+      "options": [
+        "To specify files that Git should not track",
+        "To hide files from the file explorer",
+        "To store ignored error messages"
+      ],
+      "correctAnswer": "To specify files that Git should not track",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# Example .gitignore content\n\n# IDE and OS files\n.idea/\n.vscode/\n.DS_Store\n\n# Dependencies\nnode_modules/\n\n# Log files\n*.log"
+      }
+    },
+    {
+      "category": "Remotes",
+      "hint": "This command only downloads new data from a remote repository; it does not integrate any of it into your working files.",
+      "question": "What is the key difference between `git fetch` and `git pull`?",
+      "options": [
+        "`git fetch` downloads but doesn't merge, `git pull` does both",
+        "`git pull` is for single branches, `git fetch` is for all branches",
+        "There is no difference"
+      ],
+      "correctAnswer": "`git fetch` downloads but doesn't merge, `git pull` does both",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# Step 1: See what's new on the remote\ngit fetch origin\n\n# Step 2: If desired, merge the changes\ngit merge origin/main"
+      }
+    },
+    {
+      "category": "Remotes",
+      "hint": "You've finished your work on a new local branch and want to share it with your team.",
+      "question": "Which command uploads your 'feature/user-profile' branch to the remote repository 'origin' for the first time?",
+      "options": [
+        "git push -u origin feature/user-profile",
+        "git push feature/user-profile",
+        "git upload origin feature/user-profile"
+      ],
+      "correctAnswer": "git push -u origin feature/user-profile",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# The -u flag sets the upstream tracking reference\n# A. git push -u origin feature/user-profile\n# B. git push feature/user-profile\n# C. git upload origin feature/user-profile"
+      }
+    },
+    {
+      "category": "Core Concepts",
+      "hint": "This refers to the files in your directory that Git has not been told to track yet.",
+      "question": "In the output of `git status`, what does the 'Untracked files' section mean?",
+      "options": [
+        "Files that are new and not yet staged",
+        "Files that have been deleted",
+        "Files listed in .gitignore"
+      ],
+      "correctAnswer": "Files that are new and not yet staged",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "On branch main\nYour branch is up to date with 'origin/main'.\n\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\tconfig.js\n\nnothing added to commit but untracked files present"
+      }
+    },
+    {
+      "category": "Branching",
+      "hint": "You're on the 'develop' branch and want to create a new feature branch based on its current state.",
+      "question": "Which sequence of commands creates 'feature/new-button' from 'develop'?",
+      "options": [
+        "`git checkout develop`, then `git checkout -b feature/new-button`",
+        "`git branch feature/new-button`, then `git rebase develop`",
+        "`git checkout -b feature/new-button main`"
+      ],
+      "correctAnswer": "`git checkout develop`, then `git checkout -b feature/new-button`",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# Make sure you are on the correct base branch first!\n\ngit checkout develop\ngit pull\ngit checkout -b feature/new-button"
+      }
+    },
+    {
+      "category": "Undoing Changes",
+      "hint": "You've accidentally staged a file with sensitive data (`secrets.yml`) and you need to unstage it before committing.",
+      "question": "Which command removes `secrets.yml` from the staging area but leaves it in your working directory?",
+      "options": [
+        "git reset HEAD secrets.yml",
+        "git rm secrets.yml",
+        "git checkout -- secrets.yml"
+      ],
+      "correctAnswer": "git reset HEAD secrets.yml",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# A. git reset HEAD secrets.yml\n# B. git rm secrets.yml\n# C. git checkout -- secrets.yml"
+      }
+    },
+    {
+      "category": "History",
+      "hint": "You need to examine the changes introduced by a specific commit from last week.",
+      "question": "Which command shows the full details and code changes of a commit with the hash 'a1b2c3d'?",
+      "options": [
+        "git show a1b2c3d",
+        "git log a1b2c3d",
+        "git diff a1b2c3d"
+      ],
+      "correctAnswer": "git show a1b2c3d",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# A. git show a1b2c3d\n# B. git log a1b2c3d\n# C. git diff a1b2c3d"
+      }
+    },
+    {
+      "category": ".gitignore",
+      "hint": "Your application generates temporary log files in a 'logs' directory.",
+      "question": "How would you write a rule in `.gitignore` to ignore the entire 'logs' directory?",
+      "options": [
+        "logs/",
+        "*.logs",
+        "ignore: logs"
+      ],
+      "correctAnswer": "logs/",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# To ignore a directory and all its contents, add its name followed by a slash.\n\nlogs/"
+      }
+    },
+    {
+      "category": "Branching",
+      "hint": "This command shows all local lines of development.",
+      "question": "Which command lists all of the local branches in your repository?",
+      "options": [
+        "git branch",
+        "git branch -r",
+        "git branch -a"
+      ],
+      "correctAnswer": "git branch",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# A. git branch (local only)\n# B. git branch -r (remote only)\n# C. git branch -a (all local and remote)"
+      }
+    },
+    {
+      "category": "Remotes",
+      "hint": "This command is crucial for staying up-to-date with all branches and tags from the remote without altering your local work.",
+      "question": "What does the command `git fetch origin` do?",
+      "options": [
+        "Downloads all new objects, branches, and tags from the 'origin' remote",
+        "Fetches and merges changes from the main branch of 'origin'",
+        "Only fetches the names of new branches on 'origin'"
+      ],
+      "correctAnswer": "Downloads all new objects, branches, and tags from the 'origin' remote",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "git fetch origin"
+      }
+    },
+    {
+      "category": "Core Concepts",
+      "hint": "You've just made a commit but noticed a typo in the commit message.",
+      "question": "Which command allows you to edit the message of your most recent, unpushed commit?",
+      "options": [
+        "git commit --amend",
+        "git rebase -i HEAD~1",
+        "git edit-commit"
+      ],
+      "correctAnswer": "git commit --amend",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# After making the initial commit, run this to open your editor and change the message.\ngit commit --amend"
+      }
+    },
+    {
+      "category": "History",
+      "hint": "A bug was introduced recently, and you want to temporarily go back in time to inspect the code at a specific point.",
+      "question": "Which command will move your project's state to match a past commit 'a1b2c3d', entering a 'detached HEAD' state?",
+      "options": [
+        "git checkout a1b2c3d",
+        "git reset --hard a1b2c3d",
+        "git revert a1b2c3d"
+      ],
+      "correctAnswer": "git checkout a1b2c3d",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# This is a safe, read-only operation for inspection.\n# A. git checkout a1b2c3d\n# B. git reset --hard a1b2c3d\n# C. git revert a1b2c3d"
+      }
+    },
+    {
+      "category": "History",
+      "hint": "You are in a 'detached HEAD' state and want to return to your most recent work.",
+      "question": "After checking out a past commit, how do you return to the tip of your 'main' branch?",
+      "options": [
+        "git checkout main",
+        "git commit",
+        "git reset --hard main"
+      ],
+      "correctAnswer": "git checkout main",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# You've finished inspecting a past commit.\n# Now, return to your branch.\ngit checkout main"
+      }
+    },
+    {
+      "category": "Undoing Changes",
+      "hint": "You want to discard local changes you've made to a specific file, `styles.css`.",
+      "question": "Which command reverts `styles.css` to the version from the last commit?",
+      "options": [
+        "git checkout -- styles.css",
+        "git reset styles.css",
+        "git clean styles.css"
+      ],
+      "correctAnswer": "git checkout -- styles.css",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# A. git checkout -- styles.css\n# B. git reset styles.css\n# C. git clean styles.css"
+      }
+    },
+    {
+      "category": ".gitignore",
+      "hint": "A configuration file, `db.config`, was accidentally committed. It is now in `.gitignore`.",
+      "question": "How do you remove `db.config` from Git's tracking without deleting the actual file from your disk?",
+      "options": [
+        "git rm --cached db.config",
+        "git reset db.config",
+        "git forget db.config"
+      ],
+      "correctAnswer": "git rm --cached db.config",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# A. git rm --cached db.config\n# B. git reset db.config\n# C. git forget db.config"
+      }
+    },
+    {
+      "category": "Branching",
+      "hint": "You need to create a branch for a hotfix based on the 'main' branch, but you are currently working on 'develop'.",
+      "question": "Which single command creates a new branch 'hotfix/typo' from 'main' without you having to checkout 'main' first?",
+      "options": [
+        "git checkout -b hotfix/typo main",
+        "git branch main hotfix/typo",
+        "git checkout hotfix/typo from main"
+      ],
+      "correctAnswer": "git checkout -b hotfix/typo main",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# The syntax is: git checkout -b <new-branch> <base-branch>\n# A. git checkout -b hotfix/typo main\n# B. git branch main hotfix/typo\n# C. git checkout hotfix/typo from main"
+      }
+    },
+    {
+      "category": "Core Concepts",
+      "hint": "This is a common workflow for starting a new feature using the 'git flow' convention.",
+      "question": "Using the 'git flow' command extensions, how would you start a new feature called 'delivery-fee'?",
+      "options": [
+        "git flow feature start delivery-fee",
+        "git feature start delivery-fee",
+        "git checkout -b feature/delivery-fee"
+      ],
+      "correctAnswer": "git flow feature start delivery-fee",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# git-flow is a set of extensions to provide high-level operations.\n# A. git flow feature start delivery-fee\n# B. git feature start delivery-fee\n# C. git checkout -b feature/delivery-fee"
+      }
+    },
+    {
+      "category": "Remotes",
+      "hint": "The 'git flow' extensions also provide helpers for publishing branches.",
+      "question": "After starting a 'git flow' feature, which command publishes it to the remote repository?",
+      "options": [
+        "git flow feature publish",
+        "git push --all",
+        "git flow push feature"
+      ],
+      "correctAnswer": "git flow feature publish",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# This command is a shortcut for 'git push -u origin feature/your-feature-name'\ngit flow feature publish"
+      }
+    },
+    {
+      "category": "Remotes",
+      "hint": "You have multiple commits on your local 'feature/login' branch and want to push them to the remote.",
+      "question": "Assuming your remote is named 'origin', what is the standard command to push your changes?",
+      "options": [
+        "git push origin feature/login",
+        "git commit --push",
+        "git send origin feature/login"
+      ],
+      "correctAnswer": "git push origin feature/login",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# A. git push origin feature/login\n# B. git commit --push\n# C. git send origin feature/login"
+      }
+    },
+    {
+      "category": "Branching",
+      "hint": "You've created a branch but made a typo in the name.",
+      "question": "How do you rename the local branch 'feautre/spelling' to 'feature/spelling'?",
+      "options": [
+        "git branch -m feautre/spelling feature/spelling",
+        "git rename feautre/spelling feature/spelling",
+        "git branch --rename feautre/spelling feature/spelling"
+      ],
+      "correctAnswer": "git branch -m feautre/spelling feature/spelling",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# The -m flag stands for 'move' or 'rename'.\n# A. git branch -m feautre/spelling feature/spelling\n# B. git rename feautre/spelling feature/spelling\n# C. git branch --rename feautre/spelling feature/spelling"
+      }
+    },
+    {
+      "category": ".gitignore",
+      "hint": "You want to ignore a specific file, but not other files with similar names or extensions.",
+      "question": "How do you ignore only the file named `temp_notes.txt` located in the root directory?",
+      "options": [
+        "/temp_notes.txt",
+        "*.txt",
+        "temp_notes.*"
+      ],
+      "correctAnswer": "/temp_notes.txt",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# The leading slash anchors the pattern to the project root.\n\n/temp_notes.txt"
+      }
+    },
+    {
+      "category": "Undoing Changes",
+      "hint": "A commit 'a1b2c3d' introduced a bug and has already been pushed. You need to undo its changes with a new commit.",
+      "question": "Which command creates a new commit that applies the inverse of the changes from commit 'a1b2c3d'?",
+      "options": [
+        "git revert a1b2c3d",
+        "git reset --hard a1b2c3d",
+        "git undo a1b2c3d"
+      ],
+      "correctAnswer": "git revert a1b2c3d",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# This is the safe way to undo changes on a public branch.\n# A. git revert a1b2c3d\n# B. git reset --hard a1b2c3d\n# C. git undo a1b2c3d"
+      }
+    },
+    {
+      "category": "History",
+      "hint": "This concept refers to a pointer to a specific commit.",
+      "question": "In Git, what is 'HEAD'?",
+      "options": [
+        "A reference to the currently checked-out commit",
+        "The first commit in the repository",
+        "The name of the main branch"
+      ],
+      "correctAnswer": "A reference to the currently checked-out commit",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# HEAD usually points to the latest commit of your current branch.\n# When you checkout a commit hash, you enter 'detached HEAD' state."
+      }
+    },
+    {
+      "category": "Core Concepts",
+      "hint": "This is a fundamental operation for combining two different branches.",
+      "question": "What does `git merge feature-branch` do?",
+      "options": [
+        "Integrates the history of 'feature-branch' into the current branch",
+        "Switches to 'feature-branch'",
+        "Deletes 'feature-branch'"
+      ],
+      "correctAnswer": "Integrates the history of 'feature-branch' into the current branch",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# First, switch to the branch that will receive the changes.\ngit checkout main\n\n# Then, merge the feature branch into it.\ngit merge feature-branch"
+      }
+    },
+    {
+      "category": "Core Concepts",
+      "hint": "This is an alternative to merging that creates a cleaner, more linear history.",
+      "question": "What is the main purpose of `git rebase`?",
+      "options": [
+        "To re-apply commits from one branch onto another base",
+        "To rename a branch",
+        "To delete a range of commits"
+      ],
+      "correctAnswer": "To re-apply commits from one branch onto another base",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# To update your feature branch with the latest changes from main:\ngit checkout feature-branch\ngit rebase main"
+      }
+    },
+    {
+      "category": "Remotes",
+      "hint": "Before you can push or pull, Git needs to know the location of the remote repository.",
+      "question": "Which command adds a new remote repository with the alias 'origin' at a given URL?",
+      "options": [
+        "git remote add origin <URL>",
+        "git add remote origin <URL>",
+        "git new remote origin <URL>"
+      ],
+      "correctAnswer": "git remote add origin <URL>",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "git remote add origin https://github.com/user/repo.git"
+      }
+    },
+    {
+      "category": "History",
+      "hint": "You need to find a commit where a specific line of code was changed.",
+      "question": "Which command can help you search the commit history for a specific string?",
+      "options": [
+        "git log -S\"string\"",
+        "git search \"string\"",
+        "git find -c \"string\""
+      ],
+      "correctAnswer": "git log -S\"string\"",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# This command searches for commits where the number of occurrences of 'string' changed.\ngit log -S\"database.connect\""
+      }
+    },
+    {
+      "category": "Undoing Changes",
+      "hint": "You've made several commits on a local feature branch, but they are messy. You want to combine them into one.",
+      "question": "Which command would you use to start the process of squashing the last 3 commits into a single commit?",
+      "options": [
+        "git rebase -i HEAD~3",
+        "git squash 3",
+        "git merge --squash HEAD~3"
+      ],
+      "correctAnswer": "git rebase -i HEAD~3",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# This opens an interactive rebase window for the last 3 commits.\n# A. git rebase -i HEAD~3\n# B. git squash 3\n# C. git merge --squash HEAD~3"
+      }
+    },
+    {
+      "category": "Branching",
+      "hint": "You want to create a lightweight, temporary pointer to a specific commit, often used for version releases.",
+      "question": "Which Git concept is used to create a named marker for a specific commit, such as 'v1.0'?",
+      "options": [
+        "A tag",
+        "A bookmark",
+        "A snapshot"
+      ],
+      "correctAnswer": "A tag",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# Create a lightweight tag\ngit tag v1.0\n\n# Push tags to remote\ngit push origin v1.0"
+      }
+    },
+    {
+      "category": "Core Concepts",
+      "hint": "This is a temporary storage area in Git where you can save your current uncommitted work without creating a commit.",
+      "question": "What does `git stash` do?",
+      "options": [
+        "Saves current modifications and cleans the working directory",
+        "Deletes all uncommitted changes",
+        "Commits changes to a temporary branch"
+      ],
+      "correctAnswer": "Saves current modifications and cleans the working directory",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# Save your current work\ngit stash\n\n# Later, re-apply the stashed changes\ngit stash pop"
+      }
+    },
+    {
+      "category": "Remotes",
+      "hint": "You have stashed changes and now want to apply them back.",
+      "question": "Which command re-applies the most recently stashed changes and removes that stash from the list?",
+      "options": [
+        "git stash pop",
+        "git stash apply",
+        "git stash merge"
+      ],
+      "correctAnswer": "git stash pop",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# A. git stash pop (applies and removes)\n# B. git stash apply (applies and keeps)\n# C. git stash merge"
+      }
+    },
+    {
+      "category": "History",
+      "hint": "You want to see the difference between your current working directory and the last commit.",
+      "question": "Which command shows the line-by-line changes in your tracked files that have not yet been staged?",
+      "options": [
+        "git diff",
+        "git diff --staged",
+        "git status -v"
+      ],
+      "correctAnswer": "git diff",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# A. git diff (unstaged changes)\n# B. git diff --staged (staged changes)\n# C. git status -v"
+      }
+    },
+    {
+      "category": "Branching",
+      "hint": "This is a core principle of Git's design.",
+      "question": "In Git, what is a branch, fundamentally?",
+      "options": [
+        "A lightweight movable pointer to a commit",
+        "A complete copy of all the files",
+        "A directory on the filesystem"
+      ],
+      "correctAnswer": "A lightweight movable pointer to a commit",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# When you commit, the branch pointer (e.g., 'main') moves to the new commit.\n# That's why creating a branch is so fast!"
+      }
+    },
+    {
+      "category": ".gitignore",
+      "hint": "Sometimes you want to ignore files of a certain type, but make an exception for one specific file.",
+      "question": "How do you ignore all `.log` files EXCEPT for `important.log` in your `.gitignore`?",
+      "options": [
+        "Add `*.log` and then `!important.log`",
+        "Add `*.log --except important.log`",
+        "Add `!important.log` and then `*.log`"
+      ],
+      "correctAnswer": "Add `*.log` and then `!important.log`",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# .gitignore content\n\n# Ignore all log files\n*.log\n\n# But do NOT ignore this specific one\n!important.log"
+      }
+    },
+    {
+      "category": "Core Concepts",
+      "hint": "You've finished your work and are ready to combine it with the main line of development.",
+      "question": "What is the general purpose of a 'pull request' or 'merge request' on platforms like GitHub or GitLab?",
+      "options": [
+        "To propose and discuss changes from a feature branch before merging",
+        "To force-push your changes directly to the main branch",
+        "To download someone else's branch to your local machine"
+      ],
+      "correctAnswer": "To propose and discuss changes from a feature branch before merging",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# Pull Requests are a feature of the hosting platform, not Git itself.\n# They facilitate code review and collaboration around a 'git merge' operation."
+      }
+    },
+    {
+      "category": "Remotes",
+      "hint": "This command is used to delete a branch from the remote repository.",
+      "question": "How do you delete the branch 'feature/old-stuff' from the 'origin' remote?",
+      "options": [
+        "git push origin --delete feature/old-stuff",
+        "git branch -d origin/feature/old-stuff",
+        "git remote rm origin/feature/old-stuff"
+      ],
+      "correctAnswer": "git push origin --delete feature/old-stuff",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# You are essentially 'pushing' a deletion to the remote.\n# A. git push origin --delete feature/old-stuff\n# B. git branch -d origin/feature/old-stuff\n# C. git remote rm origin/feature/old-stuff"
+      }
+    },
+    {
+      "category": "Branching",
+      "hint": "This command creates a new branch without any commit history.",
+      "question": "Which command creates a new, empty branch named 'fresh-start' with no history or files?",
+      "options": [
+        "git checkout --orphan fresh-start",
+        "git branch --empty fresh-start",
+        "git new --clean fresh-start"
+      ],
+      "correctAnswer": "git checkout --orphan fresh-start",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# A. git checkout --orphan fresh-start\n# B. git branch --empty fresh-start\n# C. git new --clean fresh-start"
+      }
+    },
+    {
+      "category": "History",
+      "hint": "This is a feature of interactive rebase used to edit a commit's contents, not just its message.",
+      "question": "In an interactive rebase (`git rebase -i`), what does changing a commit's action from 'pick' to 'edit' allow you to do?",
+      "options": [
+        "Stop the rebase at that commit to make changes",
+        "Only edit the commit message",
+        "Delete the commit entirely"
+      ],
+      "correctAnswer": "Stop the rebase at that commit to make changes",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# Interactive rebase todo list:\n\npick a1b2c3d Fix login button\nedit d4e5f6g Add user profile endpoint # <-- Change this to 'edit'\npick g7h8i9j Update documentation"
+      }
+    }
+  ]
+}
