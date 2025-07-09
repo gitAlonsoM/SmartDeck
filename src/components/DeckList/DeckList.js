@@ -120,24 +120,32 @@ class DeckList {
             document.getElementById('tts-settings').innerHTML = '<p class="text-red-500">Text-to-Speech is not supported or failed to load on this browser.</p>';
         }
     }
-
-    /**
-     * Creates a single deck card DOM element.
+ /**
+     * Creates a single deck card DOM element, now with a type indicator icon.
      * @param {Object} deck - The deck object to render.
      * @returns {HTMLElement} The created DOM element for the deck card.
      * @private
      */
     _createDeckCardElement(deck) {
         const card = document.createElement('div');
-        card.className = 'deck-card bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg cursor-pointer text-left';
+        // Add 'relative' to position the icon inside the card
+        card.className = 'deck-card relative bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg cursor-pointer text-left flex flex-col justify-between';
         
-     // The deck description paragraph has been removed for a cleaner UI.
-        const cardContent = `
-            <div>
-                <h2 class="text-xl font-bold text-indigo-700 dark:text-indigo-400 mb-2 truncate" title="${deck.name}">${deck.name}</h2>
-            </div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 font-medium mt-4">${deck.cards ? deck.cards.length : 0} cards</p>
-        `;
+        let typeIconHtml = '';
+        if (deck.deckType === 'flippable') {
+            typeIconHtml = '<i class="fa-solid fa-clone" title="Flippable Deck"></i>';
+        } else {
+            typeIconHtml = '<i class="fa-solid fa-list-check" title="Multiple Choice Deck"></i>';
+        }
+
+        // The deck description paragraph has been removed for a cleaner UI.
+        const cardContent = `
+            <div class="absolute top-4 right-5 text-gray-400 dark:text-gray-500 text-lg">${typeIconHtml}</div>
+            <div>
+                <h2 class="text-xl font-bold text-indigo-700 dark:text-indigo-400 mb-2 truncate pr-8" title="${deck.name}">${deck.name}</h2>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400 font-medium mt-4">${deck.cards ? deck.cards.length : 0} cards</p>
+        `;
         card.innerHTML = cardContent;
         return card;
     }
