@@ -1,8 +1,8 @@
 
 {
   "id": "plsql_deck",
-  "name": "PL/SQL Fundamentals & Best Practices",
-  "description": "A comprehensive deck covering key concepts, syntax, and best practices for Oracle PL/SQL development, with multiple questions per topic to reinforce learning.",
+  "name": "PL/SQL",
+  "description": "A comprehensive deck for Oracle PL/SQL developers. It covers package structure, cursors, and data types, while exploring procedures, functions, transaction control, error handling, and bulk operations. Also includes concepts specific to Oracle E-Business Suite development.",
   "isAiGenerated": false,
   "language": "sql",
   "cards": [
@@ -2287,9 +2287,383 @@
 
       "value": "BEGIN\n  -- First call to my_package loads the whole thing into memory.\n  my_package.proc1(); \n\n  -- Subsequent calls are faster as it's already in memory.\n  my_package.proc2(); \nEND;"
 
+ 
     }
 
-  }
+  },
 
+  {
+
+      "category": "SQL CRUD",
+      "hint": "This is the 'C' (Create) in CRUD.",
+      "question": "A POST request to `/api/products` typically triggers which SQL command?",
+      "options": ["UPDATE", "INSERT", "SELECT"],
+      "correctAnswer": "INSERT",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "INSERT INTO products (name, price, stock)\nVALUES ('New Gadget', 99.99, 150);"
+      }
+    },
+    {
+      "category": "SQL CRUD",
+      "hint": "This is the 'R' (Read) in CRUD.",
+      "question": "A GET request to `/api/products/42` corresponds to which SQL command?",
+      "options": ["FETCH", "UPDATE", "SELECT"],
+      "correctAnswer": "SELECT",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT product_id, name, price\nFROM products\nWHERE product_id = 42;"
+      }
+    },
+    {
+      "category": "SQL CRUD",
+      "hint": "This is the 'U' (Update) in CRUD.",
+      "question": "A PATCH request to `/api/products/42` with a new price triggers which SQL command?",
+      "options": ["MODIFY", "CHANGE", "UPDATE"],
+      "correctAnswer": "UPDATE",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "UPDATE products\nSET price = 89.99\nWHERE product_id = 42;"
+      }
+    },
+    {
+      "category": "SQL CRUD",
+      "hint": "This is the 'D' (Delete) in CRUD.",
+      "question": "A DELETE request to `/api/products/42` results in which SQL command?",
+      "options": ["DROP", "ERASE", "DELETE"],
+      "correctAnswer": "DELETE",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "DELETE FROM products\nWHERE product_id = 42;"
+      }
+    },
+    {
+      "category": "SQL Joins",
+      "hint": "This is the most common type of join, returning only rows that have a match in both tables.",
+      "question": "To get a list of users and the names of the departments they belong to, you'd use an (...).",
+      "options": ["OUTER JOIN", "INNER JOIN", "CROSS JOIN"],
+      "correctAnswer": "INNER JOIN",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT u.user_name, d.department_name\nFROM users u\nINNER JOIN departments d ON u.department_id = d.department_id;"
+      }
+    },
+    {
+      "category": "SQL Joins",
+      "hint": "This type of join returns all rows from the first (left) table, even if there are no matches in the second.",
+      "question": "To list all employees and their assigned computer, including employees who have no computer, you use a (...).",
+      "options": ["RIGHT JOIN", "CROSS JOIN", "LEFT JOIN"],
+      "correctAnswer": "LEFT JOIN",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT e.employee_name, c.asset_tag\nFROM employees e\nLEFT JOIN computers c ON e.employee_id = c.assigned_to;"
+      }
+    },
+    {
+      "category": "SQL Aggregation",
+      "hint": "This clause is used with aggregate functions (like COUNT, SUM) to group rows that have the same values.",
+      "question": "To count the number of employees in each department, you would use `COUNT(*)` and a (...) clause.",
+      "options": ["ORDER BY", "GROUP BY", "WHERE"],
+      "correctAnswer": "GROUP BY",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT department_id, COUNT(employee_id) AS number_of_employees\nFROM employees\nGROUP BY department_id;"
+      }
+    },
+    {
+      "category": "SQL Aggregation",
+      "hint": "This clause is used to filter groups based on the results of aggregate functions.",
+      "question": "To find only departments with more than 10 employees, you would use a (...) clause after `GROUP BY`.",
+      "options": ["WHERE", "HAVING", "FILTER"],
+      "correctAnswer": "HAVING",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT department_id, COUNT(*)\nFROM employees\nGROUP BY department_id\nHAVING COUNT(*) > 10;"
+      }
+    },
+    {
+      "category": "SQL Transactions",
+      "hint": "This command saves all changes made during the current transaction, making them permanent.",
+      "question": "After a successful `INSERT` and `UPDATE`, what command finalizes the transaction?",
+      "options": ["SAVE", "END", "COMMIT"],
+      "correctAnswer": "COMMIT",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "START TRANSACTION;\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;\nCOMMIT;"
+      }
+    },
+    {
+      "category": "SQL Transactions",
+      "hint": "This command undoes all the changes made since the beginning of the transaction.",
+      "question": "If an error occurs midway through a transaction, what command should be executed to prevent partial changes?",
+      "options": ["REVERT", "ROLLBACK", "CANCEL"],
+      "correctAnswer": "ROLLBACK",
+      "content": {
+        "type": "code",
+        "language": "plsql",
+        "value": "BEGIN\n  UPDATE accounts SET balance = balance - 100 WHERE id = 1;\n  -- An error happens here!\n  ROLLBACK;\nEXCEPTION\n  WHEN OTHERS THEN\n    ROLLBACK;\nEND;"
+      }
+    },
+    {
+      "category": "SQL Transactions",
+      "hint": "This principle ensures that a transaction is treated as a single, indivisible unit of work.",
+      "question": "The 'A' in ACID properties stands for (...), meaning the transaction either fully completes or not at all.",
+      "options": ["Availability", "Atomicity", "Accuracy"],
+      "correctAnswer": "Atomicity",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- Atomicity Example: Transfer funds.\n-- If the debit succeeds but the credit fails, a rollback ensures\n-- the entire operation is undone, as if it never happened.\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;"
+      }
+    },
+    {
+      "category": "SQL Transactions",
+      "hint": "This property ensures that a transaction brings the database from one valid state to another.",
+      "question": "The 'C' in ACID properties stands for (...), ensuring all database rules and constraints are maintained.",
+      "options": ["Concurrency", "Correctness", "Consistency"],
+      "correctAnswer": "Consistency",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- Consistency Example: A UNIQUE constraint on email.\n-- An INSERT that violates this rule will fail, ensuring the\n-- database remains in a consistent (valid) state.\nINSERT INTO users (email) VALUES ('duplicate@example.com'); -- This would fail."
+      }
+    },
+    {
+      "category": "SQL Transactions",
+      "hint": "This property ensures that concurrent transactions do not interfere with each other.",
+      "question": "The 'I' in ACID stands for (...), making transactions appear as if they are running sequentially.",
+      "options": ["Integrity", "Isolation", "Immutability"],
+      "correctAnswer": "Isolation",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- Isolation Example:\n-- Transaction 1 sees balance=500. Transaction 2 sees balance=500.\n-- T1 subtracts 100. T2 will still see 500 until T1 commits.\n-- This prevents 'dirty reads'."
+      }
+    },
+    {
+      "category": "SQL Transactions",
+      "hint": "This property ensures that once a transaction has been committed, it will remain so, even in the event of a power loss.",
+      "question": "The 'D' in ACID stands for (...), meaning committed changes are permanently saved.",
+      "options": ["Durability", "Determinism", "Distribution"],
+      "correctAnswer": "Durability",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- Durability Example:\n-- After a COMMIT, the changes are written to the database's\n-- transaction log on disk. If the server crashes, the changes\n-- can be recovered when it restarts."
+      }
+    },
+    {
+      "category": "SQL Injection",
+      "hint": "This is a major security vulnerability where malicious SQL is inserted into input data.",
+      "question": "What is the security risk of building SQL strings directly from user input?",
+      "options": ["Cross-Site Scripting (XSS)", "SQL Injection", "Denial of Service (DoS)"],
+      "correctAnswer": "SQL Injection",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# VULNERABLE CODE - DO NOT USE\nuser_id = request.GET.get('id')\ncursor.execute(f\"SELECT * FROM users WHERE id = {user_id}\")\n# An attacker could provide '1 OR 1=1' as the id."
+      }
+    },
+    {
+      "category": "SQL Injection",
+      "hint": "This technique uses placeholders in a SQL query and provides data separately, preventing malicious interpretation.",
+      "question": "What is the primary defense against SQL Injection attacks?",
+      "options": ["Encrypting user input", "Using an ORM", "Using Parameterized Queries (Bind Variables)"],
+      "correctAnswer": "Using Parameterized Queries (Bind Variables)",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# SECURE CODE\nuser_id = request.GET.get('id')\n# The database driver safely handles the user_id value.\ncursor.execute(\"SELECT * FROM users WHERE id = %s\", [user_id])"
+      }
+    },
+    {
+      "category": "Database Design",
+      "hint": "This is a special column that uniquely identifies each record in a table.",
+      "question": "The `user_id` column, which has a unique value for every user, is the table's (...).",
+      "options": ["Index Key", "Foreign Key", "Primary Key"],
+      "correctAnswer": "Primary Key",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE TABLE users (\n  user_id NUMBER GENERATED AS IDENTITY,\n  email VARCHAR2(100 CHAR) NOT NULL UNIQUE,\n  CONSTRAINT users_pk PRIMARY KEY (user_id)\n);"
+      }
+    },
+    {
+      "category": "Database Design",
+      "hint": "This column in one table refers to the primary key of another table, creating a link.",
+      "question": "In a `posts` table, a `user_id` column that refers to the `users` table is a (...).",
+      "options": ["Secondary Key", "Foreign Key", "Linked Key"],
+      "correctAnswer": "Foreign Key",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE TABLE posts (\n  post_id NUMBER PRIMARY KEY,\n  author_id NUMBER NOT NULL,\n  title VARCHAR2(200 CHAR),\n  CONSTRAINT posts_fk_author FOREIGN KEY (author_id)\n    REFERENCES users (user_id)\n);"
+      }
+    },
+    {
+      "category": "Database Design",
+      "hint": "This rule on a foreign key will automatically delete child rows when the parent row is deleted.",
+      "question": "The `(...)` rule ensures that deleting a user also deletes all their posts.",
+      "options": ["ON DELETE SET NULL", "ON DELETE CASCADE", "ON DELETE PROTECT"],
+      "correctAnswer": "ON DELETE CASCADE",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "ALTER TABLE posts ADD CONSTRAINT posts_fk_author\nFOREIGN KEY (author_id) REFERENCES users (user_id)\nON DELETE CASCADE;"
+      }
+    },
+    {
+      "category": "Database Design",
+      "hint": "This data structure improves the speed of data retrieval operations, like an index in a book.",
+      "question": "To speed up queries that search for users by email, you should create an (...) on the `email` column.",
+      "options": ["Index", "Sequence", "View"],
+      "correctAnswer": "Index",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE INDEX idx_users_email ON users (email);"
+      }
+    },
+    {
+      "category": "Database Design",
+      "hint": "The process of organizing columns and tables to minimize data redundancy.",
+      "question": "What is the term for designing a database to reduce repetition and improve data integrity?",
+      "options": ["Optimization", "Normalization", "Refactoring"],
+      "correctAnswer": "Normalization",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- Instead of storing department_name in the employees table...\n-- (which is redundant if many employees are in the same dept)\n-- ... we normalize by creating a departments table and linking to it."
+      }
+    },
+    {
+      "category": "Database Design",
+      "hint": "This type of table is used to resolve a many-to-many relationship.",
+      "question": "To link `students` and `classes` (where a student can take many classes, and a class has many students), you need a (...) table.",
+      "options": ["Linking Table", "Junction Table", "Reference Table"],
+      "correctAnswer": "Junction Table",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE TABLE enrollments (\n  student_id NUMBER REFERENCES students(student_id),\n  class_id NUMBER REFERENCES classes(class_id),\n  PRIMARY KEY (student_id, class_id)\n);"
+      }
+    },
+    {
+      "category": "PL/SQL",
+      "hint": "This is a named block of code stored in the database, designed to perform an action.",
+      "question": "To encapsulate the logic for creating a new user, you would write a (...) Procedure.",
+      "options": ["Stored", "Anonymous", "Function"],
+      "correctAnswer": "Stored",
+      "content": {
+        "type": "code",
+        "language": "plsql",
+        "value": "CREATE OR REPLACE PROCEDURE prc_create_user(p_email IN VARCHAR2)\nAS\nBEGIN\n  INSERT INTO users (email) VALUES (p_email);\n  COMMIT;\nEND;"
+      }
+    },
+    {
+      "category": "PL/SQL",
+      "hint": "This type of PL/SQL block is similar to a procedure but must return a value.",
+      "question": "To encapsulate logic that calculates and returns a value, such as a user's total sales, you write a (...).",
+      "options": ["Package", "Trigger", "Function"],
+      "correctAnswer": "Function",
+      "content": {
+        "type": "code",
+        "language": "plsql",
+        "value": "CREATE OR REPLACE FUNCTION fnc_get_user_email(p_user_id IN NUMBER)\nRETURN VARCHAR2\nAS\n  v_email VARCHAR2(100 CHAR);\nBEGIN\n  SELECT email INTO v_email FROM users WHERE user_id = p_user_id;\n  RETURN v_email;\nEND;"
+      }
+    },
+    {
+      "category": "PL/SQL",
+      "hint": "This database object automatically executes in response to an event like an INSERT on a table.",
+      "question": "A (...) is a special procedure that runs automatically when a data modification event occurs.",
+      "options": ["Trigger", "Constraint", "View"],
+      "correctAnswer": "Trigger",
+      "content": {
+        "type": "code",
+        "language": "plsql",
+        "value": "CREATE OR REPLACE TRIGGER trg_users_audit\nAFTER INSERT OR UPDATE ON users\nFOR EACH ROW\nBEGIN\n  -- Logic to write to an audit log table\nEND;"
+      }
+    },
+    {
+      "category": "PL/SQL",
+      "hint": "These special records inside a trigger allow you to access the column values before and after the triggering DML operation.",
+      "question": "Inside a trigger, you can reference the new data with `:new` and the original data with `(...)`.",
+      "options": [":previous", ":before", ":old"],
+      "correctAnswer": ":old",
+      "content": {
+        "type": "code",
+        "language": "plsql",
+        "value": "CREATE OR REPLACE TRIGGER trg_log_price_change\nBEFORE UPDATE OF price ON products\nFOR EACH ROW\nBEGIN\n  INSERT INTO price_history (product_id, old_price, new_price)\n  VALUES (:old.product_id, :old.price, :new.price);\nEND;"
+      }
+    },
+    {
+      "category": "PL/SQL",
+      "hint": "This object generates unique, sequential numbers, perfect for primary keys.",
+      "question": "To automatically generate unique IDs for new records, Oracle uses a (...).",
+      "options": ["Sequence", "Trigger", "Function"],
+      "correctAnswer": "Sequence",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CREATE SEQUENCE user_id_seq START WITH 1 INCREMENT BY 1 NOCACHE;\n\n-- Usage:\nINSERT INTO users (user_id, email) VALUES (user_id_seq.NEXTVAL, 'new@test.com');"
+      }
+    },
+    {
+      "category": "PL/SQL Cursors",
+      "hint": "This is a pointer to the result set of a query, allowing an application to process rows one by one.",
+      "question": "A (...) is a private SQL work area that lets you process the rows returned by a multi-row query.",
+      "options": ["Table", "View", "Cursor"],
+      "correctAnswer": "Cursor",
+      "content": {
+        "type": "code",
+        "language": "plsql",
+        "value": "DECLARE\n  CURSOR c_employees IS SELECT name FROM employees;\n  v_name employees.name%TYPE;\nBEGIN\n  OPEN c_employees;\n  FETCH c_employees INTO v_name;\n  CLOSE c_employees;\nEND;"
+      }
+    },
+    {
+      "category": "PL/SQL Cursors",
+      "hint": "This is a pointer to a result set that can be passed as a parameter, often returned from a function to a client.",
+      "question": "PL/SQL functions often return a `(...)`, which acts as a flexible pointer for query results.",
+      "options": ["TABLE", "SYS_REFCURSOR", "OUT_CURSOR"],
+      "correctAnswer": "SYS_REFCURSOR",
+      "content": {
+        "type": "code",
+        "language": "plsql",
+        "value": "CREATE OR REPLACE FUNCTION fnc_get_employees\nRETURN SYS_REFCURSOR\nAS\n  o_cursor SYS_REFCURSOR;\nBEGIN\n  OPEN o_cursor FOR SELECT employee_id, name FROM employees;\n  RETURN o_cursor;\nEND;"
+      }
+    },
+    {
+      "category": "PL/SQL Error Handling",
+      "hint": "This block of code is used to catch and handle errors that occur in a PL/SQL block.",
+      "question": "To handle potential errors like `NO_DATA_FOUND` in PL/SQL, you use an (...) block.",
+      "options": ["ERROR", "CATCH", "EXCEPTION"],
+      "correctAnswer": "EXCEPTION",
+      "content": {
+        "type": "code",
+        "language": "plsql",
+        "value": "BEGIN\n  SELECT name INTO v_name FROM users WHERE user_id = 999;\nEXCEPTION\n  WHEN NO_DATA_FOUND THEN\n    dbms_output.put_line('User not found!');\nEND;"
+      }
+    },
+    {
+      "category": "PL/SQL Error Handling",
+      "hint": "This procedure allows you to raise a custom error with a specific number and message from your code.",
+      "question": "To stop execution and send a clear, custom error message to the client application, you can use (...).",
+      "options": ["RAISE_APPLICATION_ERROR", "THROW_EXCEPTION", "CREATE_ERROR"],
+      "correctAnswer": "RAISE_APPLICATION_ERROR",
+      "content": {
+        "type": "code",
+        "language": "plsql",
+        "value": "IF p_balance < p_amount THEN\n  -- Raise a custom error with code -20001\n  RAISE_APPLICATION_ERROR(-20001, 'Insufficient funds.');\nEND IF;"
+      }
+      }
   ]
 }

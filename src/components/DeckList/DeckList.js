@@ -131,11 +131,13 @@ class DeckList {
         const card = document.createElement('div');
         card.className = 'deck-card bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg cursor-pointer text-left';
         
-        const cardContent = `
-            <h2 class="text-xl font-bold text-indigo-700 dark:text-indigo-400 mb-2 truncate" title="${deck.name}">${deck.name}</h2>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3 h-10 overflow-hidden">${deck.description}</p>
-            <p class="text-sm text-gray-600 dark:text-gray-400 font-medium">${deck.cards ? deck.cards.length : 0} cards</p>
-        `;
+     // The deck description paragraph has been removed for a cleaner UI.
+        const cardContent = `
+            <div>
+                <h2 class="text-xl font-bold text-indigo-700 dark:text-indigo-400 mb-2 truncate" title="${deck.name}">${deck.name}</h2>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400 font-medium mt-4">${deck.cards ? deck.cards.length : 0} cards</p>
+        `;
         card.innerHTML = cardContent;
         return card;
     }

@@ -1,16 +1,18 @@
 <!-- src\components\DeckDetailScreen\deck-detail-screen.html -->
-<div id="deck-detail-screen">
+<div id="deck-detail-screen" class="max-w-4xl mx-auto px-4">
     <div class="flex justify-start w-full mb-6">
         <button id="back-to-decks-btn" class="text-sm font-medium text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-200 transition-colors">
             &larr; Back to Decks
         </button>
     </div>
     
-    <h1 id="deck-title" class="text-4xl md:text-5xl font-bold mb-4 text-center text-indigo-600 dark:text-indigo-400"></h1>
-    <p id="deck-description" class="text-md text-gray-600 dark:text-gray-400 mb-8 text-center max-w-xl mx-auto"></p>
-
-    <div id="progress-stats" class="grid grid-cols-3 gap-4 my-8 text-center bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
+    <div id="progress-stats" class="flex justify-around items-center my-8 text-center bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
         </div>
+
+    <div id="deck-info-section" class="my-8 text-center">
+        <h1 id="deck-title" class="text-3xl md:text-4xl font-bold mb-2 text-gray-800 dark:text-gray-200"></h1>
+        <p id="deck-description" class="text-md text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"></p>
+    </div>
     
     <p id="total-progress-text" class="text-md text-gray-600 dark:text-gray-400 mb-8 text-center"></p>
 
@@ -20,14 +22,13 @@
         </button>
     </div>
 
-
-      <div id="deck-actions" class="mt-8 flex justify-center items-center gap-6">
+    <div id="deck-actions" class="mt-8 flex justify-center items-center gap-6">
         <button id="reset-deck-btn" class="text-sm font-medium text-red-500 hover:text-red-700 dark:text-red-400 dark:hover:text-red-300 transition-colors">
             Reset Deck Progress
         </button>
     </div>
 
-  <div class="w-full max-w-xl mx-auto mt-12">
+    <div class="w-full max-w-xl mx-auto mt-12">
         <details id="ignored-cards-section" class="bg-white dark:bg-gray-800 rounded-lg shadow-md">
             <summary class="p-4 cursor-pointer font-semibold text-gray-700 dark:text-gray-300 flex justify-between items-center">
                 <span>Ignored Cards</span>
@@ -38,6 +39,4 @@
             </div>
         </details>
     </div>
-
 </div>
-    

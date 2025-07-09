@@ -43,11 +43,18 @@ constructor(container, onStartQuiz, onGoBack, onResetDeck, onUnignoreCard) {
         const isCompleted = (learnedCount + ignoredCount) >= totalCount && reviewCount === 0;
 
         const progressStatsContainer = document.getElementById('progress-stats');
+        
+
+ // Added 'flex-1' to each stat container to ensure they each take up equal space.
         progressStatsContainer.innerHTML = `
-            <div><p class="text-4xl font-bold text-emerald-500">${learnedCount}</p><p class="text-sm text-gray-500 dark:text-gray-400">Learned</p></div>
-            <div><p class="text-4xl font-bold text-amber-500">${reviewCount}</p><p class="text-sm text-gray-500 dark:text-gray-400">To Review</p></div>
-            <div><p class="text-4xl font-bold text-gray-400">${Math.max(0, unseenCount)}</p><p class="text-sm text-gray-500 dark:text-gray-400">New</p></div>
-        `;
+            <div class="flex-1"><p class="text-4xl font-bold text-emerald-500">${learnedCount}</p><p class="text-sm text-gray-500 dark:text-gray-400">Learned</p></div>
+            <div class="flex-1"><p class="text-4xl font-bold text-amber-500">${reviewCount}</p><p class="text-sm text-gray-500 dark:text-gray-400">To Review</p></div>
+            <div class="flex-1"><p class="text-4xl font-bold text-gray-400">${Math.max(0, unseenCount)}</p><p class="text-sm text-gray-500 dark:text-gray-400">New</p></div>
+        `;
+
+ // Populate the new deck info section
+        document.getElementById('deck-title').textContent = deck.name;
+        document.getElementById('deck-description').textContent = deck.description;
 
         document.getElementById('total-progress-text').textContent = `You have mastered ${learnedCount} of ${totalCount} cards.`;
    const startQuizBtn = document.getElementById('start-quiz-btn');
@@ -79,7 +86,10 @@ if (isCompleted) {
         
         ignoredCards.forEach(card => {
             const cardIdentifier = card.cardId || card.question;
-            const cardText = card.sideA || card.question;
+            // Check if sideA is an object to access its .text property, ensuring backward compatibility.
+            const cardText = (card.sideA && typeof card.sideA === 'object') 
+                ? card.sideA.text 
+                : (card.sideA || card.question);
             
             const item = document.createElement('div');
             item.className = 'flex justify-between items-center bg-gray-50 dark:bg-gray-700/50 p-2 rounded-md';

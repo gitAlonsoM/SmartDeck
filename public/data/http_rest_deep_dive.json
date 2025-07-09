@@ -1,7 +1,7 @@
 {
   "id": "http_rest_deep_dive",
-  "name": "HTTP & REST: The Complete Guide",
-  "description": "From fundamentals to advanced concepts, this deck covers HTTP methods, status codes, headers, JSON, and the principles of RESTful API design.",
+  "name": "HTTP & REST",
+  "description": "A deep dive into the HTTP protocol and RESTful architecture. Explore core concepts including methods (GET, POST), status codes (2xx, 4xx, 5xx), key headers, and the JSON data format, along with principles of API design and security.",
   "isAiGenerated": false,
   "language": "json",
   "cards": [
@@ -851,7 +851,7 @@
         "type": "code",
         "language": "python",
         "value": "from django.contrib.auth import authenticate\n\nuser = authenticate(request, username=username, password=password)"
-      }
+   }
     },
     {
       "category": "API Security",
@@ -867,7 +867,307 @@
         "type": "code",
         "language": "python",
         "value": "if not request.user.has_perm('app.delete_post'):\n    return HttpResponseForbidden()"
+     }
+    },
+    {
+      "category": "HTTP Methods",
+      "hint": "This method is used for retrieving information without altering server state.",
+      "question": "To request data from a server, a client uses the HTTP (...) method.",
+      "options": ["POST", "GET", "UPDATE"],
+      "correctAnswer": "GET",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "// Browser fetch API example\nfetch('https://api.example.com/users/123')\n  .then(response => response.json());"
+      }
+    },
+    {
+      "category": "HTTP Methods",
+      "hint": "This method sends data to a server to create a new resource.",
+      "question": "To create a new user via an API, the standard HTTP method is (...).",
+      "options": ["CREATE", "PUT", "POST"],
+      "correctAnswer": "POST",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "fetch('https://api.example.com/users', {\n  method: 'POST',\n  headers: {'Content-Type': 'application/json'},\n  body: JSON.stringify({ name: 'Alex' })\n});"
+      }
+    },
+    {
+      "category": "HTTP Methods",
+      "hint": "This method is used to completely replace an existing resource.",
+      "question": "To update a user's entire profile, a client sends a/an (...) request.",
+      "options": ["PUT", "PATCH", "REPLACE"],
+      "correctAnswer": "PUT",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "fetch('https://api.example.com/users/123', {\n  method: 'PUT',\n  body: JSON.stringify({ name: 'Alexandra', role: 'admin' })\n});"
+      }
+    },
+    {
+      "category": "HTTP Methods",
+      "hint": "This method is for applying partial modifications to a resource.",
+      "question": "To update only a user's email address, the more efficient HTTP method is (...).",
+      "options": ["PUT", "PATCH", "MODIFY"],
+      "correctAnswer": "PATCH",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "fetch('https://api.example.com/users/123', {\n  method: 'PATCH',\n  body: JSON.stringify({ email: 'new.email@example.com' })\n});"
+      }
+    },
+    {
+      "category": "HTTP Methods",
+      "hint": "This method is used to permanently remove a specific resource.",
+      "question": "To remove user with ID 123 from the system, the application sends a (...) request.",
+      "options": ["REMOVE", "DROP", "DELETE"],
+      "correctAnswer": "DELETE",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "fetch('https://api.example.com/users/123', {\n  method: 'DELETE'\n});"
+      }
+    },
+    {
+      "category": "HTTP Methods",
+      "hint": "This method asks for the response headers of a GET request, but not the body.",
+      "question": "To check a resource's metadata (like `Last-Modified`) without downloading it, you use (...).",
+      "options": ["OPTIONS", "INFO", "HEAD"],
+      "correctAnswer": "HEAD",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "fetch('https://api.example.com/large-file.zip', {\n  method: 'HEAD'\n}).then(response => {\n  console.log('File size:', response.headers.get('Content-Length'));\n});"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This code indicates a standard, successful request for data.",
+      "question": "A successful GET request typically returns a (...) status code.",
+      "options": ["201 Created", "204 No Content", "200 OK"],
+      "correctAnswer": "200 OK",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# Django view returning a successful response\nfrom django.http import JsonResponse\n\ndef get_user(request, user_id):\n  user = {\"id\": user_id, \"name\": \"Alex\"}\n  return JsonResponse(user, status=200)"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This status code confirms that a new resource was successfully created.",
+      "question": "A successful POST request that creates a new item should return a (...) status code.",
+      "options": ["200 OK", "201 Created", "302 Found"],
+      "correctAnswer": "201 Created",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# Django view after creating a resource\ndef create_user(request):\n  # ... logic to create user ...\n  new_user = {\"id\": 124, \"name\": \"Maria\"}\n  return JsonResponse(new_user, status=201)"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This code indicates a successful action with no data to return.",
+      "question": "A successful DELETE operation typically returns a (...) status code.",
+      "options": ["200 OK", "410 Gone", "204 No Content"],
+      "correctAnswer": "204 No Content",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "from django.http import HttpResponse\n\ndef delete_user(request, user_id):\n  # ... logic to delete user ...\n  return HttpResponse(status=204)"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This code indicates a client error, such as a malformed request.",
+      "question": "If a POST request is missing required fields in its body, the server should respond with (...).",
+      "options": ["500 Internal Server Error", "400 Bad Request", "404 Not Found"],
+      "correctAnswer": "400 Bad Request",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "def create_user(request):\n  data = json.loads(request.body)\n  if 'email' not in data:\n    return JsonResponse({'error': 'Email is required'}, status=400)"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This code indicates the client is not allowed to view the resource.",
+      "question": "If a user tries to access an admin-only endpoint without being an admin, the API should return (...).",
+      "options": ["401 Unauthorized", "404 Not Found", "403 Forbidden"],
+      "correctAnswer": "403 Forbidden",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "def get_admin_data(request):\n  if not request.user.is_staff:\n    # User is logged in, but not allowed here\n    return JsonResponse({'detail': 'Permission denied.'}, status=403)"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This code indicates the client must authenticate before accessing a resource.",
+      "question": "If a request is made to a protected endpoint without an API key or token, the server returns (...).",
+      "options": ["403 Forbidden", "401 Unauthorized", "400 Bad Request"],
+      "correctAnswer": "401 Unauthorized",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "def get_protected_data(request):\n  if 'Authorization' not in request.headers:\n    # User is not logged in at all\n    return JsonResponse({'detail': 'Authentication required.'}, status=401)"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This indicates that the requested resource could not be found on the server.",
+      "question": "A GET request to `/api/users/999` where user 999 does not exist should return (...).",
+      "options": ["204 No Content", "404 Not Found", "500 Internal Server Error"],
+      "correctAnswer": "404 Not Found",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "def get_user(request, user_id):\n  try:\n    user = User.objects.get(pk=user_id)\n    return JsonResponse(user.to_dict())\n  except User.DoesNotExist:\n    return JsonResponse({'error': 'User not found'}, status=404)"
+      }
+    },
+    {
+      "category": "HTTP Status Codes",
+      "hint": "This code indicates a generic, unexpected error occurred on the server.",
+      "question": "If the database connection fails unexpectedly during a request, the API should return (...).",
+      "options": ["503 Service Unavailable", "400 Bad Request", "500 Internal Server Error"],
+      "correctAnswer": "500 Internal Server Error",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "def get_data(request):\n  try:\n    # ... code that might fail ...\n    result = 1 / 0\n  except Exception as e:\n    # Log the real error for developers\n    log.error(e)\n    # Return a generic error to the client\n    return JsonResponse({'error': 'An internal error occurred'}, status=500)"
+      }
+    },
+    {
+      "category": "REST Principles",
+      "hint": "This architectural style uses standard HTTP methods for communication.",
+      "question": "An API that uses GET, POST, PUT, DELETE for CRUD operations follows the (...) architectural style.",
+      "options": ["SOAP", "GraphQL", "REST"],
+      "correctAnswer": "REST",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# A typical RESTful interaction\n# GET /books/ -> list of books\n# POST /books/ -> create a new book\n# GET /books/1 -> details of book 1"
+      }
+    },
+    {
+      "category": "REST Principles",
+      "hint": "The server does not store any information about the client session between requests.",
+      "question": "What does it mean for a REST API to be 'stateless'?",
+      "options": ["The server cannot store any data", "Each request contains all info needed to be understood", "The server is offline"],
+      "correctAnswer": "Each request contains all info needed to be understood",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "// The JWT token makes the request self-contained and stateless.\nfetch(url, {\n  headers: {\n    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5c...'\n  }\n});"
+      }
+    },
+    {
+      "category": "REST Principles",
+      "hint": "An operation has this property if making it multiple times has the same effect as making it once.",
+      "question": "Which property describes an operation that can be repeated without changing the result beyond the initial application?",
+      "options": ["Safe", "Idempotent", "Stateless"],
+      "correctAnswer": "Idempotent",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "// DELETE is idempotent. Running this 5 times has the same result\n// as running it once: user 123 is gone.\nfetch('/api/users/123', { method: 'DELETE' });"
+      }
+    },
+    {
+      "category": "REST Principles",
+      "hint": "This type of HTTP method should not change the state of the server.",
+      "question": "HTTP methods like GET and HEAD are considered (...) because they are for reading data only.",
+      "options": ["Stable", "Stateless", "Safe"],
+      "correctAnswer": "Safe",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# This Django view for a GET request only reads data, it doesn't\n# write anything. It is a 'safe' operation.\ndef list_products(request):\n    products = Product.objects.all()\n    return JsonResponse(list(products.values()))"
+      }
+    },
+    {
+      "category": "API Headers",
+      "hint": "This header tells the server what data format the client is sending.",
+      "question": "When sending a JSON payload in a POST request, you must set the (...) header.",
+      "options": ["Accept", "Content-Type", "Data-Format"],
+      "correctAnswer": "Content-Type",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "fetch(url, {\n  method: 'POST',\n  headers: {\n    'Content-Type': 'application/json' // Essential for the server\n  },\n  body: JSON.stringify({ name: 'Alex' })\n});"
+      }
+    },
+    {
+      "category": "API Headers",
+      "hint": "This header is used to pass authentication credentials, such as a JWT.",
+      "question": "To authenticate with a Bearer Token, the client sends it in the (...) header.",
+      "options": ["Auth-Token", "X-Api-Key", "Authorization"],
+      "correctAnswer": "Authorization",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "const TOKEN = '...';\nfetch(url, {\n  headers: {\n    'Authorization': `Bearer ${TOKEN}`\n  }\n});"
+      }
+    },
+    {
+      "category": "WebSocket",
+      "hint": "Unlike HTTP's request-response, this provides a persistent, two-way communication channel.",
+      "question": "For real-time apps like chats, a (...) is preferred over repeated HTTP polling.",
+      "options": ["REST API", "HTTP/2", "WebSocket"],
+      "correctAnswer": "WebSocket",
+      "content": {
+        "type": "code",
+        "language": "javascript",
+        "value": "// Establishes a persistent connection\nconst socket = new WebSocket('wss://api.example.com/ws/chat/');\n\nsocket.onmessage = function(event) {\n  console.log('Message from server:', event.data);\n};"
+      }
+    },
+    {
+      "category": "WebSocket",
+      "hint": "This Django library adds support for WebSockets and other asynchronous protocols.",
+      "question": "To enable WebSocket support in a Django backend, the application uses (...).",
+      "options": ["Django REST Framework", "Django Channels", "Socket.IO"],
+      "correctAnswer": "Django Channels",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# a simple Channels consumer\nimport json\nfrom channels.generic.websocket import WebsocketConsumer\n\nclass ChatConsumer(WebsocketConsumer):\n    def connect(self):\n        self.accept()"
+      }
+    },
+    {
+      "category": "Security",
+      "hint": "This is the process of verifying a user's identity.",
+      "question": "Checking a user's password to confirm they are who they say they are is called (...).",
+      "options": ["Authorization", "Authentication", "Auditing"],
+      "correctAnswer": "Authentication",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# Django's built-in authentication system\nfrom django.contrib.auth import authenticate\n\nuser = authenticate(username=username, password=password)\nif user is not None:\n  # Authentication successful\n  login(request, user)"
+      }
+    },
+    {
+      "category": "Security",
+      "hint": "This is the process of checking if an authenticated user has permission to perform an action.",
+      "question": "After verifying a user's identity, the server must also perform (...) to check their permissions.",
+      "options": ["Authentication", "Authorization", "Encryption"],
+      "correctAnswer": "Authorization",
+      "content": {
+        "type": "code",
+        "language": "python",
+        "value": "# Django REST Framework permission check\nfrom rest_framework.permissions import IsAdminUser\n\npermission_classes = [IsAdminUser]\n# This view will only be accessible if request.user.is_staff is True."
+      }
+    },
+    {
+      "category": "Security",
+      "hint": "This 'S' in the protocol indicates a secure, encrypted connection.",
+      "question": "In a production environment, all API communication must use (...) for security.",
+      "options": ["HTTP", "FTP", "HTTPS"],
+      "correctAnswer": "HTTPS",
+      "content": {
+        "type": "code",
+        "language": "bash",
+        "value": "# A secure URL begins with https://\n# This ensures traffic between the client and server is encrypted.\nAPI_ENDPOINT=\"https://secure.api.example.com/\""
       }
     }
-  ]
+]
 }
