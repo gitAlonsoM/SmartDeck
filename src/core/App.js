@@ -200,8 +200,77 @@ class App {
         this.render(); // Re-render the detail screen to reflect the change
     }
 
+
+    // =========================================================================
+    /**
+     * Analyzes a deck for duplicate cards based on the 'question' field and logs the results.
+     * @param {object} deck - The deck object to analyze.
+     */
+    analyzeAndLogDuplicates(deck) {
+        console.groupCollapsed(`[ANALYSIS] Deck: ${deck.name} (ID: ${deck.id})`);
+
+        if (!deck || !deck.cards || deck.cards.length === 0) {
+            console.log("Deck is empty or invalid. Cannot analyze.");
+            console.groupEnd();
+            return;
+        }
+
+        console.log(`Analyzing ${deck.cards.length} total cards...`);
+
+        const seenQuestions = new Map(); // Stores question -> first index found
+        const duplicates = new Map(); // Stores question -> array of all indices
+
+        deck.cards.forEach((card, index) => {
+            const question = card.question;
+
+            if (seenQuestions.has(question)) {
+                // This is a duplicate
+                if (!duplicates.has(question)) {
+                    // First time we've found a duplicate of this question, so add the original and this one
+                    const originalIndex = seenQuestions.get(question);
+                    duplicates.set(question, [originalIndex, index]);
+                } else {
+                    // We've already logged this question as a duplicate, just add the new index
+                    duplicates.get(question).push(index);
+                }
+            } else {
+                // First time seeing this question
+                seenQuestions.set(question, index);
+            }
+        });
+
+        if (duplicates.size > 0) {
+            let totalDuplicateCards = 0;
+            duplicates.forEach(indices => {
+                totalDuplicateCards += indices.length - 1; // Count only the "extra" cards
+            });
+            
+            console.warn(`Found ${duplicates.size} unique questions that are duplicated.`);
+            console.warn(`Total number of duplicate cards (extras): ${totalDuplicateCards}`);
+            console.log("--- DUPLICATE DETAILS ---");
+
+            duplicates.forEach((indices, question) => {
+                console.log(`-> Question: "${question}"`);
+                console.log(`   Found at indices: ${indices.join(', ')}`);
+            });
+
+        } else {
+            console.log("No duplicate cards found in this deck. All questions are unique.");
+        }
+
+        console.groupEnd();
+    }
+    // =========================================================================
+
     handleDeckSelected(deckId) {
         console.log(`DEBUG: [App] handleDeckSelected -> Deck with ID '${deckId}' was selected.`);
+        const selectedDeck = this.state.allDecks[deckId];
+
+        // Se ejecuta solo para el mazo que nos interesa
+        if (deckId === 'plsql_deck') {
+            this.analyzeAndLogDuplicates(selectedDeck);
+        }
+        
         this.state.currentDeckId = deckId;
         this.state.currentScreen = 'deckDetail';
         this.render();
