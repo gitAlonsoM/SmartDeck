@@ -5,10 +5,46 @@
 
 class StorageService {
     static STORAGE_KEY_DECKS = 'smart-decks-v3-decks';
+     static STORAGE_KEY_IMPROVEMENT_PREFIX = 'smart-decks-v3-improvement-';
 
      static STORAGE_KEY_PROGRESS_PREFIX = 'smart-decks-v3-progress-';
 static STORAGE_KEY_DECK_PROGRESS_PREFIX = 'smart-decks-v3-deck-progress-';
+    
+ /**
+     * Saves the improvement data for a specific deck.
+     * @param {string} deckId The ID of the deck.
+     * @param {object} improvementData An object where keys are cardIds and values are the review data.
+     */
+    static saveImprovementData(deckId, improvementData) {
+        if (!deckId) return;
+        try {
+            const key = `${this.STORAGE_KEY_IMPROVEMENT_PREFIX}${deckId}`;
+            localStorage.setItem(key, JSON.stringify(improvementData));
+            console.log(`DEBUG: [StorageService] saveImprovementData -> Saved improvement data for deck ${deckId}.`);
+        } catch (error) {
+            console.error(`DEBUG: [StorageService] saveImprovementData -> Error saving improvement data for deck ${deckId}.`, error);
+        }
+    }
 
+    /**
+     * Loads the improvement data for a specific deck.
+     * @param {string} deckId The ID of the deck.
+     * @returns {object} The improvement data object, or an empty object if not found.
+     */
+    static loadImprovementData(deckId) {
+        if (!deckId) return {};
+        try {
+            const key = `${this.STORAGE_KEY_IMPROVEMENT_PREFIX}${deckId}`;
+            const storedData = localStorage.getItem(key);
+            if (storedData) {
+                return JSON.parse(storedData);
+            }
+        } catch (error) {
+            console.error(`DEBUG: [StorageService] loadImprovementData -> Error loading improvement data for deck ${deckId}.`, error);
+        }
+        return {};
+    }
+    
     /**
      * Saves the learning progress for a specific deck.
      * @param {string} deckId The ID of the deck.

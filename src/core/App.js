@@ -26,6 +26,7 @@ class App {
         this.quizScreenComponent = null;
         this.flippableCardScreen = null; 
         this.notificationModal = null;
+        this.improvementModal = null; // Add property for the new modal
 
     }
 
@@ -38,22 +39,26 @@ class App {
     }
 
     async setupComponents() {
-       // Get specific containers for each modal
-         const aiModalContainer = document.getElementById('ai-modal-container');
-         const notificationModalContainer = document.getElementById('notification-modal-container');
+      const aiModalContainer = document.getElementById('ai-modal-container'); // This line was missing
+       const notificationModalContainer = document.getElementById('notification-modal-container');
+        const improvementModalContainer = document.getElementById('improvement-modal-container');
 
-         // Ensure containers exist before proceeding
-         if (!aiModalContainer || !notificationModalContainer) { 
-             throw new Error("Fatal Error: Modal container(s) not found."); 
-         }
-         
-         // Initialize each modal with its own dedicated container
-         this.aiDeckModal = new AiDeckModal(aiModalContainer, (formData) => this.handleCreateDeck(formData));
-         await this.aiDeckModal.init();
+         // Ensure containers exist before proceeding
+         if (!aiModalContainer || !notificationModalContainer || !improvementModalContainer) { 
+             throw new Error("Fatal Error: Modal container(s) not found."); 
+         }
+         
+         // Initialize each modal with its own dedicated container
+         this.aiDeckModal = new AiDeckModal(aiModalContainer, (formData) => this.handleCreateDeck(formData));
+         await this.aiDeckModal.init();
 
-         this.notificationModal = new NotificationModal(notificationModalContainer);
-         await this.notificationModal.init();
-        console.log("DEBUG: [App] setupComponents -> All components initialized.");
+         this.notificationModal = new NotificationModal(notificationModalContainer);
+         await this.notificationModal.init();
+
+        this.improvementModal = new ImprovementModal(improvementModalContainer, (cardId, reviewData) => this.handleSaveImprovementRequest(cardId, reviewData));
+        await this.improvementModal.init();
+
+        console.log("DEBUG: [App] setupComponents -> All components initialized.");
     }
 
     async loadDecks() {
@@ -94,27 +99,29 @@ class App {
                     this.appContainer, 
                     () => this.handleStartQuiz(), 
                     () => this.handleGoBackToDecks(),
-                   () => this.handleResetDeck(),
-                   (cardId) => this.handleUnignoreCard(cardId)
+                   () => this.handleResetDeck(),
+                   (cardId) => this.handleUnignoreCard(cardId),
+                    () => this.handleExportForImprovement() // Add the new export handler
                 ); 
             }
               const selectedDeck = this.state.allDecks[this.state.currentDeckId];
-                const deckProgressData = StorageService.loadDeckProgress(this.state.currentDeckId);
-                // The next 5 lines with progressStats are removed.
-                // We pass the full deckProgressData object directly.
-                this.deckDetailComponent.render(selectedDeck, deckProgressData);
+                  const deckProgressData = StorageService.loadDeckProgress(this.state.currentDeckId);
+                const improvementData = StorageService.loadImprovementData(this.state.currentDeckId); // Load improvement data
+                
+                this.deckDetailComponent.render(selectedDeck, deckProgressData, improvementData); // Pass all required data
                 break;
 
-             case 'quiz':
-                if (!this.quizScreenComponent) { 
-                   this.quizScreenComponent = new QuizScreen(
-                        this.appContainer, 
-                        (option) => this.handleQuizAnswer(option), 
-                        () => this.handleQuizNext(),
-                        () => this.handleQuizEnd(),
-                        () => this.handleIgnoreCurrentCard() // This line was missing, we add it now.
-                    ); 
-                }
+            case 'quiz':
+                if (!this.quizScreenComponent) { 
+                   this.quizScreenComponent = new QuizScreen(
+                       this.appContainer, 
+                        (option) => this.handleQuizAnswer(option), 
+                        () => this.handleQuizNext(),
+                        () => this.handleQuizEnd(),
+                        () => this.handleIgnoreCurrentCard(),
+                            (cardId) => this.handleMarkCardForImprovement(cardId) // Pass the new handler
+                    ); 
+                }
 
                 const currentQuestion = this.state.quizInstance.getCurrentQuestion();
                 if (currentQuestion) {
@@ -128,12 +135,14 @@ class App {
                  case 'flippableQuiz':
                 if (!this.flippableCardScreen) {
                     this.flippableCardScreen = new FlippableCardScreen(
-                        this.appContainer,
-                     (knewIt) => this.handleCardAssessment(knewIt),
-                       () => this.handleQuizEnd(),
-                        () => this.handleIgnoreCurrentCard()
-                    );
-                }
+
+                       this.appContainer,
+                     (knewIt) => this.handleCardAssessment(knewIt),
+                       () => this.handleQuizEnd(),
+                        () => this.handleIgnoreCurrentCard(),
+                            (cardId) => this.handleMarkCardForImprovement(cardId) // Pass the new handler
+                    );
+                }
                 const currentCard = this.state.quizInstance.getCurrentCard();
                 const deckName = this.state.allDecks[this.state.currentDeckId].name;
                 if (currentCard) {
@@ -149,7 +158,62 @@ class App {
         }
     }
 
+
+    handleMarkCardForImprovement(cardId) {
+        if (!cardId) return;
+        console.log(`DEBUG: [App] handleMarkCardForImprovement -> User wants to mark card: ${cardId}`);
+        this.improvementModal.show(cardId);
+    }
+
+    handleSaveImprovementRequest(cardId, reviewData) {
+        if (!cardId || !this.state.currentDeckId) return;
+        console.log(`DEBUG: [App] handleSaveImprovementRequest -> Saving improvement request for card ${cardId}`, reviewData);
+
+        const improvementData = StorageService.loadImprovementData(this.state.currentDeckId);
+        improvementData[cardId] = reviewData;
+        StorageService.saveImprovementData(this.state.currentDeckId, improvementData);
+
+        this.notificationModal.show(
+            'Card Marked',
+            'The card has been successfully marked for improvement.',
+            { icon: 'fa-solid fa-flag', color: 'text-blue-500', bgColor: 'bg-blue-100 dark:bg-blue-900' }
+        );
+    }
+
     // --- State Changers & Event Handlers ---
+  async handleExportForImprovement() {
+        const deckId = this.state.currentDeckId;
+        if (!deckId) return;
+
+        console.log(`DEBUG: [App] handleExportForImprovement -> Preparing export for deck ${deckId}`);
+        const deck = this.state.allDecks[deckId];
+        const improvementData = StorageService.loadImprovementData(deckId);
+        const markedCardIds = Object.keys(improvementData);
+
+        if (markedCardIds.length === 0) {
+            this.notificationModal.show('Export', 'There are no cards marked for improvement to export.');
+            return;
+        }
+
+        const cardMap = new Map(deck.cards.map(c => [c.cardId, c]));
+        const exportBatch = markedCardIds.map(cardId => {
+            const card = cardMap.get(cardId);
+            const review_request = improvementData[cardId];
+            return { ...card, review_request }; // Add the review_request object to the card copy
+        });
+
+        try {
+            await navigator.clipboard.writeText(JSON.stringify(exportBatch, null, 2));
+            this.notificationModal.show(
+                'Copied to Clipboard!',
+                `${exportBatch.length} card(s) have been copied as a JSON array, ready for improvement.`,
+                { icon: 'fa-solid fa-copy', color: 'text-green-500', bgColor: 'bg-green-100 dark:bg-green-900' }
+            );
+        } catch (error) {
+            console.error('Failed to copy to clipboard:', error);
+            this.notificationModal.show('Error', 'Could not copy data to clipboard. See console for details.');
+        }
+    }
 
      handleIgnoreCurrentCard() {
         if (!this.state.quizInstance) return;

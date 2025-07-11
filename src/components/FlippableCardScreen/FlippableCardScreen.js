@@ -3,15 +3,15 @@
 // Component to render a flippable, self-assessed card for studying.
 // Component to render a flippable, self-assessed card for studying.
 class FlippableCardScreen {
-   constructor(container, onAssess, onEnd, onIgnore) {
+   constructor(container, onAssess, onEnd, onIgnore, onMarkForImprovement) {
         this.container = container;
-        this.onAssess = onAssess; // Callback when user assesses themselves
-        this.onEnd = onEnd;     // Callback when the round ends
-        this.onIgnore = onIgnore; // Callback to ignore the card
+        this.onAssess = onAssess;
+        this.onEnd = onEnd;
+        this.onIgnore = onIgnore;
+        this.onMarkForImprovement = onMarkForImprovement; // Store the new callback
         this.cardData = null;
         console.log("DEBUG: [FlippableCardScreen] constructor -> Component instantiated.");
     }
-
     async render(deckName, card, currentIndex, total) {
         console.log("DEBUG: [FlippableCardScreen] render -> Rendering card:", card);
         this.cardData = card;
@@ -141,7 +141,8 @@ class FlippableCardScreen {
         document.getElementById('flip-card-btn').onclick = () => this.flipCard();
         document.getElementById('knew-it-btn').onclick = () => this.onAssess(true);
         document.getElementById('review-again-btn').onclick = () => this.onAssess(false);
-        document.getElementById('ignore-btn-flippable').onclick = () => this.onIgnore();
+        document.getElementById('ignore-btn-flippable').onclick = () => this.onIgnore();
+        document.getElementById('mark-improve-btn-flippable').onclick = () => this.onMarkForImprovement(this.cardData.cardId);
 
         // Use event delegation for dynamic TTS buttons
         this.container.onclick = (event) => {

@@ -1,5 +1,4 @@
 /* src\components\QuizScreen\QuizScreen.js */
-// src/components/QuizScreen/QuizScreen.js
 // Component to display a single question and handle user answers.
 
 class QuizScreen {
@@ -8,15 +7,16 @@ class QuizScreen {
      * @param {function} onAnswer Callback executed when the user selects an answer.
      * @param {function} onNext Callback executed when the user clicks "Next".
      */
-    constructor(container, onAnswer, onNext, onQuizEnd, onIgnore) {
-        this.container = container;
-        this.onAnswer = onAnswer;
-        this.onNext = onNext;
-        this.onQuizEnd = onQuizEnd; // Callback for when quiz round is over
-        this.onIgnore = onIgnore; // Callback to ignore the current card
-        this.lastSelectedOption = null; // To track which button the user clicked
-        console.log("DEBUG: [QuizScreen] constructor -> Component instantiated.");
-    }
+  constructor(container, onAnswer, onNext, onQuizEnd, onIgnore, onMarkForImprovement) {
+        this.container = container;
+        this.onAnswer = onAnswer;
+        this.onNext = onNext;
+        this.onQuizEnd = onQuizEnd;
+        this.onIgnore = onIgnore;
+        this.onMarkForImprovement = onMarkForImprovement; // Store the new callback
+        this.lastSelectedOption = null;
+        console.log("DEBUG: [QuizScreen] constructor -> Component instantiated.");
+    }
 
  async render(question, currentIndex, totalQuestions, score, isDeckCompleted = false) {
         console.log(`DEBUG: [QuizScreen] render -> Rendering question ${currentIndex + 1} of ${totalQuestions}. Deck completed: ${isDeckCompleted}`);
@@ -64,10 +64,15 @@ class QuizScreen {
         
         // Setup Ignore button
         document.getElementById('ignore-btn').addEventListener('click', (e) => {
-            e.stopPropagation(); // Prevent any other card clicks
-            this.onIgnore();
+           e.stopPropagation();
+            this.onIgnore();
+        });
+
+ document.getElementById('mark-improve-btn').addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.onMarkForImprovement(question.cardId);
         });
-    }
+    }
     
     renderContent(content) {
         const container = document.getElementById('content-container');

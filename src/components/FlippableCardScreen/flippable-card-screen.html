@@ -9,6 +9,8 @@
       </div>
 
       <div class="flip-card-container relative flex-grow">
+
+
         <div class="flip-card-inner">
 
           <div class="flip-card-front">
@@ -30,11 +32,14 @@
             </div>
           </div>
 
+         <div class="absolute -top-2 -right-2 flex gap-2 z-20">
+            <button id="mark-improve-btn-flippable" title="Mark this card for improvement" class="px-3 py-1 bg-gray-600 dark:bg-gray-800 text-gray-200 dark:text-gray-300 text-xs font-semibold rounded-full hover:bg-blue-500 hover:text-white transition-all">
+                <i class="fas fa-flag"></i>
+            </button>
+            <button id="ignore-btn-flippable" title="Ignore this card in future rounds" class="px-3 py-1 bg-gray-600 dark:bg-gray-800 text-gray-200 dark:text-gray-300 text-xs font-semibold rounded-full hover:bg-yellow-500 hover:text-white transition-all">
+                Ignore Card
+            </button>
         </div>
-        <button id="ignore-btn-flippable" title="Ignore this card in future rounds" class="absolute -top-2 -right-2 px-3 py-1 bg-gray-600 dark:bg-gray-800 text-gray-200 dark:text-gray-300 text-xs font-semibold rounded-full hover:bg-yellow-500 hover:text-white transition-all z-20">
-            Ignore Card
-        </button>
-      </div>
     </div>
   </main>
 
