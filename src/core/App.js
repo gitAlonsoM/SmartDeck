@@ -160,9 +160,10 @@ class App {
         
         if (!currentCard) return;
     
-        const cardIdentifier = isFlippable ? currentCard.cardId : currentCard.question;
-        console.log(`DEBUG: [App] handleIgnoreCurrentCard -> Ignoring card and advancing: ${cardIdentifier}`);
-    
+        // Standardize on cardId for all card types.
+        const cardIdentifier = currentCard.cardId; 
+        console.log(`DEBUG: [App] handleIgnoreCurrentCard -> Ignoring card and advancing. ID: ${cardIdentifier}`);
+
         if (!quiz.progress.ignored) {
             quiz.progress.ignored = new Set();
         }

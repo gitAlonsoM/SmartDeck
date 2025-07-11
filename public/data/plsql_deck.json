@@ -1,4 +1,3 @@
-
 {
   "id": "plsql_deck",
   "name": "PL/SQL",
@@ -7,6 +6,7 @@
   "language": "sql",
   "cards": [
     {
+      "cardId": "plsql_001",
       "category": "Package Structure",
       "hint": "Acts as the public interface or 'contract' of the package.",
       "question": "Which part of a PL/SQL package declares the public elements accessible by other programs?",
@@ -19,6 +19,7 @@
       }
     },
     {
+      "cardId": "plsql_002",
       "category": "Package Structure",
       "hint": "Contains the actual implementation and private logic.",
       "question": "Where is the detailed PL/SQL code for procedures and functions implemented?",
@@ -31,6 +32,7 @@
       }
     },
     {
+      "cardId": "plsql_003",
       "category": "Package Structure",
       "hint": "This part of the package can contain logic that is not exposed to the outside world.",
       "question": "How does a package `BODY` support the principle of encapsulation?",
@@ -43,6 +45,7 @@
       }
     },
     {
+      "cardId": "plsql_004",
       "category": "Package Structure",
       "hint": "A primary benefit of grouping related logic into a single database object.",
       "question": "What is a major performance benefit of using PL/SQL packages?",
@@ -55,6 +58,7 @@
       }
     },
     {
+      "cardId": "plsql_005",
       "category": "Documentation",
       "hint": "A special comment tag used to describe a parameter for documentation generators.",
       "question": "In `/*# @param P_ITEM_ID ... */`, what is the purpose of the `@param` tag?",
@@ -67,6 +71,7 @@
       }
     },
     {
+      "cardId": "plsql_006",
       "category": "Documentation",
       "hint": "This annotation often indicates the intended audience or visibility.",
       "question": "What does the `@rep:scope public` annotation typically signify in Oracle development standards?",
@@ -79,6 +84,7 @@
       }
     },
     {
+      "cardId": "plsql_007",
       "category": "Data Types",
       "hint": "Used for large character data, such as a full JSON response.",
       "question": "Which data type is essential for storing exceptionally large character data?",
@@ -91,6 +97,7 @@
       }
     },
     {
+      "cardId": "plsql_008",
       "category": "Data Types",
       "hint": "Stores raw, unstructured data such as images or documents.",
       "question": "While `CLOB` stores large text, what does the `BLOB` data type store?",
@@ -103,6 +110,7 @@
       }
     },
     {
+      "cardId": "plsql_009",
       "category": "Data Types",
       "hint": "The most common data type for variable-length strings.",
       "question": "For storing a user's name or an API token, the standard data type to use is...",
@@ -115,114 +123,124 @@
       }
     },
     {
-        "category": "Data Types",
-        "hint": "This attribute anchors a variable's data type to that of a specific database table column.",
-        "question": "How can you declare a variable that automatically inherits the data type of a table column?",
-        "options": ["AS TYPE", "%TYPE", "LIKE"],
-        "correctAnswer": "%TYPE",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "DECLARE\n  l_last_name employees.last_name%TYPE;\nBEGIN\n  SELECT last_name INTO l_last_name FROM employees WHERE employee_id = 100;\nEND;"
-        }
+      "cardId": "plsql_010",
+      "category": "Data Types",
+      "hint": "This attribute anchors a variable's data type to that of a specific database table column.",
+      "question": "How can you declare a variable that automatically inherits the data type of a table column?",
+      "options": ["AS TYPE", "%TYPE", "LIKE"],
+      "correctAnswer": "%TYPE",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "DECLARE\n  l_last_name employees.last_name%TYPE;\nBEGIN\n  SELECT last_name INTO l_last_name FROM employees WHERE employee_id = 100;\nEND;"
+      }
     },
     {
-        "category": "Data Types",
-        "hint": "This attribute creates a record variable that has the same structure as a full row in a table.",
-        "question": "What attribute do you use to declare a record variable that can hold an entire row from a table?",
-        "options": ["%ROW", "%ROWTYPE", "%STRUCT"],
-        "correctAnswer": "%ROWTYPE",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "DECLARE\n  l_employee_rec employees%ROWTYPE;\nBEGIN\n  SELECT * INTO l_employee_rec FROM employees WHERE employee_id = 100;\nEND;"
-        }
+      "cardId": "plsql_011",
+      "category": "Data Types",
+      "hint": "This attribute creates a record variable that has the same structure as a full row in a table.",
+      "question": "What attribute do you use to declare a record variable that can hold an entire row from a table?",
+      "options": ["%ROW", "%ROWTYPE", "%STRUCT"],
+      "correctAnswer": "%ROWTYPE",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "DECLARE\n  l_employee_rec employees%ROWTYPE;\nBEGIN\n  SELECT * INTO l_employee_rec FROM employees WHERE employee_id = 100;\nEND;"
+      }
     },
     {
-        "category": "Data Types",
-        "hint": "A key advantage of using %TYPE and %ROWTYPE.",
-        "question": "What is the primary benefit of using `%TYPE` and `%ROWTYPE` for variable declarations?",
-        "options": ["They use less memory", "They automatically adapt if the underlying table structure changes", "They make code run faster"],
-        "correctAnswer": "They automatically adapt if the underlying table structure changes",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "DECLARE\n  l_emp_name  employees.last_name%TYPE;\n  l_dept_rec  departments%ROWTYPE;\nBEGIN\n  -- This code will not break if employees.last_name changes from VARCHAR2(50) to VARCHAR2(100)\n  NULL;\nEND;"
-        }
+      "cardId": "plsql_012",
+      "category": "Data Types",
+      "hint": "A key advantage of using %TYPE and %ROWTYPE.",
+      "question": "What is the primary benefit of using `%TYPE` and `%ROWTYPE` for variable declarations?",
+      "options": ["They use less memory", "They automatically adapt if the underlying table structure changes", "They make code run faster"],
+      "correctAnswer": "They automatically adapt if the underlying table structure changes",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "DECLARE\n  l_emp_name  employees.last_name%TYPE;\n  l_dept_rec  departments%ROWTYPE;\nBEGIN\n  -- This code will not break if employees.last_name changes from VARCHAR2(50) to VARCHAR2(100)\n  NULL;\nEND;"
+      }
     },
     {
-        "category": "Data Types",
-        "hint": "A format that includes both date and time components.",
-        "question": "Which data type is appropriate for storing a precise moment, such as a transaction timestamp?",
-        "options": ["DATE", "TIMESTAMP", "TIME"],
-        "correctAnswer": "DATE",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "DECLARE\n  l_request_date DATE := SYSDATE;\nBEGIN\n  INSERT INTO logs (log_time) VALUES (l_request_date);\nEND;"
-        }
+      "cardId": "plsql_013",
+      "category": "Data Types",
+      "hint": "A format that includes both date and time components.",
+      "question": "Which data type is appropriate for storing a precise moment, such as a transaction timestamp?",
+      "options": ["DATE", "TIMESTAMP", "TIME"],
+      "correctAnswer": "DATE",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "DECLARE\n  l_request_date DATE := SYSDATE;\nBEGIN\n  INSERT INTO logs (log_time) VALUES (l_request_date);\nEND;"
+      }
     },
     {
-        "category": "Custom Types",
-        "hint": "It's like a blueprint for an object, grouping related fields.",
-        "question": "What does `TYPE ... IS RECORD` define in PL/SQL?",
-        "options": ["A database table", "A collection of records", "A structured data type"],
-        "correctAnswer": "A structured data type",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "DECLARE\n  TYPE item_rec_type IS RECORD (\n    item_id   NUMBER,\n    quantity  NUMBER\n  );\n  l_item item_rec_type;\nBEGIN\n  l_item.item_id := 123;\nEND;"
-        }
+      "cardId": "plsql_014",
+      "category": "Custom Types",
+      "hint": "It's like a blueprint for an object, grouping related fields.",
+      "question": "What does `TYPE ... IS RECORD` define in PL/SQL?",
+      "options": ["A database table", "A collection of records", "A structured data type"],
+      "correctAnswer": "A structured data type",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "DECLARE\n  TYPE item_rec_type IS RECORD (\n    item_id  NUMBER,\n    quantity  NUMBER\n  );\n  l_item item_rec_type;\nBEGIN\n  l_item.item_id := 123;\nEND;"
+      }
     },
     {
-        "category": "Custom Types",
-        "hint": "It's a collection of structured objects, like a list or array.",
-        "question": "What does `TYPE ... IS TABLE OF <RECORD_TYPE>` create?",
-        "options": ["A single record", "An array of records", "A physical database table"],
-        "correctAnswer": "An array of records",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "DECLARE\n  TYPE item_rec_type IS RECORD (item_id NUMBER);\n  TYPE item_tbl_type IS TABLE OF item_rec_type;\n  l_items item_tbl_type;\nBEGIN\n  NULL;\nEND;"
-        }
+      "cardId": "plsql_015",
+      "category": "Custom Types",
+      "hint": "It's a collection of structured objects, like a list or array.",
+      "question": "What does `TYPE ... IS TABLE OF <RECORD_TYPE>` create?",
+      "options": ["A single record", "An array of records", "A physical database table"],
+      "correctAnswer": "An array of records",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "DECLARE\n  TYPE item_rec_type IS RECORD (item_id NUMBER);\n  TYPE item_tbl_type IS TABLE OF item_rec_type;\n  l_items item_tbl_type;\nBEGIN\n  NULL;\nEND;"
+      }
     },
     {
-        "category": "Custom Types",
-        "hint": "The declaration location required for custom types to be used by external applications.",
-        "question": "To be used as parameters in public procedures, where must a custom RECORD or TABLE type be declared?",
-        "options": ["In the Package Body", "In the Package Specification", "In a separate script"],
-        "correctAnswer": "In the Package Specification",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "PACKAGE my_api_spec IS\n  TYPE my_record IS RECORD (id NUMBER, name VARCHAR2(100));\n  PROCEDURE process_data(p_item IN my_record);\nEND my_api_spec;"
-        }
+      "cardId": "plsql_016",
+      "category": "Custom Types",
+      "hint": "The declaration location required for custom types to be used by external applications.",
+      "question": "To be used as parameters in public procedures, where must a custom RECORD or TABLE type be declared?",
+      "options": ["In the Package Body", "In the Package Specification", "In a separate script"],
+      "correctAnswer": "In the Package Specification",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "PACKAGE my_api_spec IS\n  TYPE my_record IS RECORD (id NUMBER, name VARCHAR2(100));\n  PROCEDURE process_data(p_item IN my_record);\nEND my_api_spec;"
+      }
     },
     {
-        "category": "Custom Types",
-        "hint": "This syntax makes the collection work like an array with numeric keys.",
-        "question": "In `TYPE ... IS TABLE OF ... INDEX BY BINARY_INTEGER;`, what is the purpose of `INDEX BY BINARY_INTEGER`?",
-        "options": ["It creates a database index", "It defines the collection as an associative array", "It limits the table to integer data"],
-        "correctAnswer": "It defines the collection as an associative array",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "DECLARE\n  TYPE t_name_list IS TABLE OF VARCHAR2(100) INDEX BY BINARY_INTEGER;\n  l_names t_name_list;\nBEGIN\n  l_names(1) := 'John';\n  l_names(100) := 'Jane';\nEND;"
-        }
+      "cardId": "plsql_017",
+      "category": "Custom Types",
+      "hint": "This syntax makes the collection work like an array with numeric keys.",
+      "question": "In `TYPE ... IS TABLE OF ... INDEX BY BINARY_INTEGER;`, what is the purpose of `INDEX BY BINARY_INTEGER`?",
+      "options": ["It creates a database index", "It defines the collection as an associative array", "It limits the table to integer data"],
+      "correctAnswer": "It defines the collection as an associative array",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "DECLARE\n  TYPE t_name_list IS TABLE OF VARCHAR2(100) INDEX BY BINARY_INTEGER;\n  l_names t_name_list;\nBEGIN\n  l_names(1) := 'John';\n  l_names(100) := 'Jane';\nEND;"
+      }
     },
     {
-        "category": "Custom Types",
-        "hint": "The syntax for accessing a specific field within a record variable.",
-        "question": "If `v_item` is a variable of `ITEM_REC_TYPE`, how do you access its `QUANTITY` field?",
-        "options": ["v_item('QUANTITY')", "v_item.QUANTITY", "QUANTITY(v_item)"],
-        "correctAnswer": "v_item.QUANTITY",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "DECLARE\n  TYPE ITEM_REC_TYPE IS RECORD (QUANTITY NUMBER);\n  v_item ITEM_REC_TYPE;\n  l_qty NUMBER;\nBEGIN\n  v_item.QUANTITY := 10;\n  l_qty := v_item.QUANTITY;\nEND;"
-        }
+      "cardId": "plsql_018",
+      "category": "Custom Types",
+      "hint": "The syntax for accessing a specific field within a record variable.",
+      "question": "If `v_item` is a variable of `ITEM_REC_TYPE`, how do you access its `QUANTITY` field?",
+      "options": ["v_item('QUANTITY')", "v_item.QUANTITY", "QUANTITY(v_item)"],
+      "correctAnswer": "v_item.QUANTITY",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "DECLARE\n  TYPE ITEM_REC_TYPE IS RECORD (QUANTITY NUMBER);\n  v_item ITEM_REC_TYPE;\n  l_qty NUMBER;\nBEGIN\n  v_item.QUANTITY := 10;\n  l_qty := v_item.QUANTITY;\nEND;"
+      }
     },
     {
+      "cardId": "plsql_019",
       "category": "Cursors",
       "hint": "A pointer to a result set, used to return query results to a client app.",
       "question": "Which cursor type is most flexible for returning dynamic query results from a procedure?",
@@ -235,6 +253,7 @@
       }
     },
     {
+      "cardId": "plsql_020",
       "category": "Cursors",
       "hint": "Associates a SELECT statement with a cursor variable at runtime.",
       "question": "Which command is used to assign a query to a `SYS_REFCURSOR` variable?",
@@ -247,6 +266,7 @@
       }
     },
     {
+      "cardId": "plsql_021",
       "category": "Cursors",
       "hint": "A query that is defined at compile time and given a name.",
       "question": "A cursor declared with a name and a fixed `SELECT` statement in the `DECLARE` section is what kind of cursor?",
@@ -259,6 +279,7 @@
       }
     },
     {
+      "cardId": "plsql_022",
       "category": "Cursors",
       "hint": "The opposite of a static cursor whose query is fixed at compile time.",
       "question": "A `SYS_REFCURSOR` is a form of which cursor type, because its query can be decided at runtime?",
@@ -271,6 +292,7 @@
       }
     },
     {
+      "cardId": "plsql_023",
       "category": "Cursors",
       "hint": "The `FOR ... IN` loop simplifies cursor handling by managing three key steps.",
       "question": "When using a `FOR ... IN cursor_name LOOP`, which steps are done automatically for you?",
@@ -283,6 +305,7 @@
       }
     },
     {
+      "cardId": "plsql_024",
       "category": "Control Flow",
       "hint": "The standard way to iterate over rows from a cursor.",
       "question": "Which loop structure is best for processing each row returned by a cursor?",
@@ -295,6 +318,7 @@
       }
     },
     {
+      "cardId": "plsql_025",
       "category": "Control Flow",
       "hint": "The fundamental structure for handling runtime errors.",
       "question": "Which PL/SQL block structure is used for structured error handling?",
@@ -307,6 +331,7 @@
       }
     },
     {
+      "cardId": "plsql_026",
       "category": "Control Flow",
       "hint": "The final branch of a conditional structure that catches all other cases.",
       "question": "In an `IF` statement, which block of code is executed if all preceding `IF` and `ELSIF` conditions are false?",
@@ -319,6 +344,7 @@
       }
     },
     {
+      "cardId": "plsql_027",
       "category": "Control Flow",
       "hint": "It is a 'catch-all' for any runtime error that wasn't handled specifically.",
       "question": "What is the purpose of the `WHEN OTHERS` clause in an `EXCEPTION` block?",
@@ -331,30 +357,33 @@
       }
     },
     {
-        "category": "Control Structures",
-        "hint": "The primary structure in PL/SQL for making decisions and executing code conditionally.",
-        "question": "What is the primary construct in PL/SQL for conditional logic?",
-        "options": ["LOOP ... END LOOP", "IF ... THEN ... END IF", "CASE ... WHEN ... END CASE"],
-        "correctAnswer": "IF ... THEN ... END IF",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "IF l_balance > 500 THEN\n  l_can_withdraw := TRUE;\nEND IF;"
-        }
+      "cardId": "plsql_028",
+      "category": "Control Structures",
+      "hint": "The primary structure in PL/SQL for making decisions and executing code conditionally.",
+      "question": "What is the primary construct in PL/SQL for conditional logic?",
+      "options": ["LOOP ... END LOOP", "IF ... THEN ... END IF", "CASE ... WHEN ... END CASE"],
+      "correctAnswer": "IF ... THEN ... END IF",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "IF l_balance > 500 THEN\n  l_can_withdraw := TRUE;\nEND IF;"
+      }
     },
     {
-        "category": "Control Structures",
-        "hint": "A structure that allows for choosing one sequence of statements from several alternatives.",
-        "question": "Which structure is often more readable than a long series of `IF/ELSIF` statements for checking a single variable against multiple values?",
-        "options": ["A `FOR` loop", "A `CASE` statement", "A `GOTO` statement"],
-        "correctAnswer": "A `CASE` statement",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "CASE l_status\n  WHEN 'A' THEN l_status_desc := 'Active';\n  WHEN 'I' THEN l_status_desc := 'Inactive';\n  ELSE l_status_desc := 'Unknown';\nEND CASE;"
-        }
+      "cardId": "plsql_029",
+      "category": "Control Structures",
+      "hint": "A structure that allows for choosing one sequence of statements from several alternatives.",
+      "question": "Which structure is often more readable than a long series of `IF/ELSIF` statements for checking a single variable against multiple values?",
+      "options": ["A `FOR` loop", "A `CASE` statement", "A `GOTO` statement"],
+      "correctAnswer": "A `CASE` statement",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "CASE l_status\n  WHEN 'A' THEN l_status_desc := 'Active';\n  WHEN 'I' THEN l_status_desc := 'Inactive';\n  ELSE l_status_desc := 'Unknown';\nEND CASE;"
+      }
     },
     {
+      "cardId": "plsql_030",
       "category": "Subprograms",
       "hint": "Performs an action but does not have to return a value.",
       "question": "A named PL/SQL block designed to perform an action (like deleting a record) is called a...",
@@ -367,6 +396,7 @@
       }
     },
     {
+      "cardId": "plsql_031",
       "category": "Subprograms",
       "hint": "Must return a value and can be used in SQL queries.",
       "question": "A named PL/SQL block that must compute and `RETURN` a value is called a...",
@@ -379,6 +409,7 @@
       }
     },
     {
+      "cardId": "plsql_032",
       "category": "Subprograms",
       "hint": "One is designed for actions, the other for calculations.",
       "question": "You would use a ... to delete a record, and a ... to calculate a value.",
@@ -391,6 +422,7 @@
       }
     },
     {
+      "cardId": "plsql_033",
       "category": "Subprograms",
       "hint": "One can be called directly in a `SELECT` list, the other generally cannot.",
       "question": "Which type of subprogram can be called directly within a SQL `SELECT` statement?",
@@ -403,6 +435,7 @@
       }
     },
     {
+      "cardId": "plsql_034",
       "category": "Joins",
       "hint": "The (+) symbol is an old, vendor-specific syntax for this type of join.",
       "question": "In Oracle's old syntax, what does the `(+)` operator signify in a `WHERE` clause?",
@@ -415,6 +448,7 @@
       }
     },
     {
+      "cardId": "plsql_035",
       "category": "Joins",
       "hint": "The most common join, returns only rows that match in both tables.",
       "question": "Which type of join would you use to get a list of customers who have placed orders?",
@@ -427,6 +461,7 @@
       }
     },
     {
+      "cardId": "plsql_036",
       "category": "Joins",
       "hint": "Returns all rows from the left table, even if there's no match in the right table.",
       "question": "To get a list of ALL customers and their orders (if any), which join should be used?",
@@ -439,6 +474,7 @@
       }
     },
     {
+      "cardId": "plsql_037",
       "category": "Joins",
       "hint": "This is the modern, explicit ANSI syntax for joining tables.",
       "question": "Which syntax is the modern, preferred way to write an `INNER JOIN`?",
@@ -451,6 +487,7 @@
       }
     },
     {
+      "cardId": "plsql_038",
       "category": "Joins",
       "hint": "The part of the join syntax that specifies how the tables are related.",
       "question": "In the modern `JOIN` syntax, the `ON` clause is used to specify the...",
@@ -463,6 +500,7 @@
       }
     },
     {
+      "cardId": "plsql_039",
       "category": "Aliases",
       "hint": "Makes queries shorter and more readable by assigning a temporary name to a table.",
       "question": "In `FROM ra_customer_trx_all trx`, what is the purpose of `trx`?",
@@ -475,6 +513,7 @@
       }
     },
     {
+      "cardId": "plsql_040",
       "category": "Aliases",
       "hint": "Gives a new, more readable name to a column in the result set.",
       "question": "What is the purpose of `AS PAYMENT_NUMBER` in `SELECT rec.receipt_number AS PAYMENT_NUMBER`?",
@@ -487,6 +526,7 @@
       }
     },
     {
+      "cardId": "plsql_041",
       "category": "Aliases",
       "hint": "Why aliases are crucial for APIs returning structured data.",
       "question": "Why is aliasing columns (e.g., `SELECT c.id AS CustomerId`) particularly important for backend APIs?",
@@ -499,6 +539,7 @@
       }
     },
     {
+      "cardId": "plsql_042",
       "category": "Keywords",
       "hint": "Used to introduce the implementation section of a block.",
       "question": "The keyword `AS` or `IS` separates the signature of a subprogram from its...",
@@ -511,6 +552,7 @@
       }
     },
     {
+      "cardId": "plsql_043",
       "category": "Keywords",
       "hint": "These two keywords are interchangeable when defining a subprogram.",
       "question": "In a procedure or package definition, the keyword `IS` can always be replaced by...",
@@ -523,6 +565,7 @@
       }
     },
     {
+      "cardId": "plsql_044",
       "category": "Parameters",
       "hint": "The parameter's value is passed into the procedure and cannot be changed.",
       "question": "What does the `IN` mode mean for a procedure parameter?",
@@ -535,6 +578,7 @@
       }
     },
     {
+      "cardId": "plsql_045",
       "category": "Parameters",
       "hint": "The procedure uses this parameter to pass a value back to the caller.",
       "question": "What is the purpose of an `OUT` parameter?",
@@ -547,6 +591,7 @@
       }
     },
     {
+      "cardId": "plsql_046",
       "category": "Parameters",
       "hint": "A parameter that can be both read from and written to within a subprogram.",
       "question": "Which parameter mode allows a value to be passed in, modified, and passed back out?",
@@ -559,6 +604,7 @@
       }
     },
     {
+      "cardId": "plsql_047",
       "category": "Parameters",
       "hint": "This is the default parameter mode if none is specified.",
       "question": "If a parameter is declared without a mode (e.g., `p_user_id NUMBER`), what is its default mode?",
@@ -571,6 +617,7 @@
       }
     },
     {
+      "cardId": "plsql_048",
       "category": "Transactions",
       "hint": "Makes all pending data modifications permanent.",
       "question": "Which command must be executed to save changes made by `INSERT`, `UPDATE`, or `DELETE` statements?",
@@ -583,6 +630,7 @@
       }
     },
     {
+      "cardId": "plsql_049",
       "category": "Transactions",
       "hint": "Undoes changes made in the current transaction.",
       "question": "If an error occurs, which command should be used to undo all previous steps in a transaction?",
@@ -595,42 +643,46 @@
       }
     },
     {
-        "category": "Transaction Control",
-        "hint": "Establishes a named marker within a transaction, allowing for a partial rollback.",
-        "question": "What command do you use to create a point within a transaction to which you can later revert?",
-        "options": ["COMMIT", "SAVEPOINT", "CHECKPOINT"],
-        "correctAnswer": "SAVEPOINT",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "UPDATE accounts SET balance = balance - 100;\nSAVEPOINT before_update;"
-        }
+      "cardId": "plsql_050",
+      "category": "Transaction Control",
+      "hint": "Establishes a named marker within a transaction, allowing for a partial rollback.",
+      "question": "What command do you use to create a point within a transaction to which you can later revert?",
+      "options": ["COMMIT", "SAVEPOINT", "CHECKPOINT"],
+      "correctAnswer": "SAVEPOINT",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "UPDATE accounts SET balance = balance - 100;\nSAVEPOINT before_update;"
+      }
     },
     {
-        "category": "Transaction Control",
-        "hint": "Undoes all data changes made in the current transaction back to a previously defined marker.",
-        "question": "How do you undo a transaction only to a specific named marker?",
-        "options": ["ROLLBACK", "REVERT TRANSACTION", "ROLLBACK TO SAVEPOINT"],
-        "correctAnswer": "ROLLBACK TO SAVEPOINT",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "ROLLBACK TO SAVEPOINT before_update;"
-        }
+      "cardId": "plsql_051",
+      "category": "Transaction Control",
+      "hint": "Undoes all data changes made in the current transaction back to a previously defined marker.",
+      "question": "How do you undo a transaction only to a specific named marker?",
+      "options": ["ROLLBACK", "REVERT TRANSACTION", "ROLLBACK TO SAVEPOINT"],
+      "correctAnswer": "ROLLBACK TO SAVEPOINT",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "ROLLBACK TO SAVEPOINT before_update;"
+      }
     },
     {
-        "category": "Transaction Control",
-        "hint": "You make a change but want to undo it completely.",
-        "question": "If you `UPDATE` a row but then issue a `ROLLBACK` command, what happens to the change?",
-        "options": ["It is saved permanently", "It is undone", "It is saved temporarily"],
-        "correctAnswer": "It is undone",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "BEGIN\n  UPDATE employees SET salary = 50000 WHERE employee_id = 100;\n  ROLLBACK;\n  -- The salary change is reverted\nEND;"
-        }
+      "cardId": "plsql_052",
+      "category": "Transaction Control",
+      "hint": "You make a change but want to undo it completely.",
+      "question": "If you `UPDATE` a row but then issue a `ROLLBACK` command, what happens to the change?",
+      "options": ["It is saved permanently", "It is undone", "It is saved temporarily"],
+      "correctAnswer": "It is undone",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "BEGIN\n  UPDATE employees SET salary = 50000 WHERE employee_id = 100;\n  ROLLBACK;\n  -- The salary change is reverted\nEND;"
+      }
     },
     {
+      "cardId": "plsql_053",
       "category": "Error Handling",
       "hint": "Raises a custom error with a specific number and message.",
       "question": "Which command allows you to stop execution and return a custom error message to the client?",
@@ -643,6 +695,7 @@
       }
     },
     {
+      "cardId": "plsql_054",
       "category": "Error Handling",
       "hint": "A special variable that holds the numeric error code.",
       "question": "Inside an `EXCEPTION` block, which variable contains the numeric code of the error that occurred?",
@@ -655,6 +708,7 @@
       }
     },
     {
+      "cardId": "plsql_055",
       "category": "Error Handling",
       "hint": "A special variable that holds the error message text.",
       "question": "Inside an `EXCEPTION` block, which variable contains the descriptive text of the error?",
@@ -667,282 +721,306 @@
       }
     },
     {
-        "category": "Error Handling",
-        "hint": "Occurs when a SELECT...INTO statement is executed but the query does not return any rows.",
-        "question": "What predefined exception is raised when a SELECT...INTO statement fails to find a row?",
-        "options": ["TOO_MANY_ROWS", "ROW_NOT_FOUND", "NO_DATA_FOUND"],
-        "correctAnswer": "NO_DATA_FOUND",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "EXCEPTION\n  WHEN NO_DATA_FOUND THEN\n    RETURN NULL;"
-        }
+      "cardId": "plsql_056",
+      "category": "Error Handling",
+      "hint": "Occurs when a SELECT...INTO statement is executed but the query does not return any rows.",
+      "question": "What predefined exception is raised when a SELECT...INTO statement fails to find a row?",
+      "options": ["TOO_MANY_ROWS", "ROW_NOT_FOUND", "NO_DATA_FOUND"],
+      "correctAnswer": "NO_DATA_FOUND",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "EXCEPTION\n  WHEN NO_DATA_FOUND THEN\n    RETURN NULL;"
+      }
     },
     {
-        "category": "Error Handling",
-        "hint": "Occurs when a SELECT...INTO statement is executed and the query returns more than one row.",
-        "question": "What predefined exception is raised when a SELECT...INTO statement returns multiple rows?",
-        "options": ["TOO_MANY_ROWS", "MULTIPLE_ROWS_FOUND", "DATA_OVERFLOW"],
-        "correctAnswer": "TOO_MANY_ROWS",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "EXCEPTION\n  WHEN TOO_MANY_ROWS THEN\n    RAISE_APPLICATION_ERROR(-20001, 'Ambiguous data found.');"
-        }
+      "cardId": "plsql_057",
+      "category": "Error Handling",
+      "hint": "Occurs when a SELECT...INTO statement is executed and the query returns more than one row.",
+      "question": "What predefined exception is raised when a SELECT...INTO statement returns multiple rows?",
+      "options": ["TOO_MANY_ROWS", "MULTIPLE_ROWS_FOUND", "DATA_OVERFLOW"],
+      "correctAnswer": "TOO_MANY_ROWS",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "EXCEPTION\n  WHEN TOO_MANY_ROWS THEN\n    RAISE_APPLICATION_ERROR(-20001, 'Ambiguous data found.');"
+      }
     },
     {
-        "category": "Data Retrieval",
-        "hint": "Retrieves data from exactly one row and places it into local variables.",
-        "question": "What is the standard syntax in PL/SQL to query a single row and assign its column values to variables?",
-        "options": ["FETCH ... INTO", "SELECT ... INTO", "GET ROW ... INTO"],
-        "correctAnswer": "SELECT ... INTO",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "SELECT first_name, last_name\n  INTO l_first_name, l_last_name\n  FROM employees\n  WHERE employee_id = 100;"
-        }
+      "cardId": "plsql_058",
+      "category": "Data Retrieval",
+      "hint": "Retrieves data from exactly one row and places it into local variables.",
+      "question": "What is the standard syntax in PL/SQL to query a single row and assign its column values to variables?",
+      "options": ["FETCH ... INTO", "SELECT ... INTO", "GET ROW ... INTO"],
+      "correctAnswer": "SELECT ... INTO",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT first_name, last_name\n  INTO l_first_name, l_last_name\n  FROM employees\n  WHERE employee_id = 100;"
+      }
     },
     {
-        "category": "Data Retrieval",
-        "hint": "This single-row system table is used when you need to select a value without querying a real table.",
-        "question": "Which table do you select from to get the result of a function or expression, like SYSDATE?",
-        "options": ["SYSTEM", "DUAL", "TEMP"],
-        "correctAnswer": "DUAL",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "SELECT SYSDATE INTO l_current_date FROM DUAL;"
-        }
+      "cardId": "plsql_059",
+      "category": "Data Retrieval",
+      "hint": "This single-row system table is used when you need to select a value without querying a real table.",
+      "question": "Which table do you select from to get the result of a function or expression, like SYSDATE?",
+      "options": ["SYSTEM", "DUAL", "TEMP"],
+      "correctAnswer": "DUAL",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT SYSDATE INTO l_current_date FROM DUAL;"
+      }
     },
     {
-        "category": "SQL Clauses",
-        "hint": "Essential for filtering rows from a table based on one or more conditions.",
-        "question": "Which SQL clause is used to specify the criteria that rows must meet to be selected?",
-        "options": ["HAVING", "WHERE", "FILTER BY"],
-        "correctAnswer": "WHERE",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "SELECT product_name, price\n  FROM products\n  WHERE price < 50;"
-        }
+      "cardId": "plsql_060",
+      "category": "SQL Clauses",
+      "hint": "Essential for filtering rows from a table based on one or more conditions.",
+      "question": "Which SQL clause is used to specify the criteria that rows must meet to be selected?",
+      "options": ["HAVING", "WHERE", "FILTER BY"],
+      "correctAnswer": "WHERE",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT product_name, price\n  FROM products\n  WHERE price < 50;"
+      }
     },
     {
-        "category": "SQL Clauses",
-        "hint": "Removes duplicate rows to return a unique set of results.",
-        "question": "Which keyword is used within a SELECT statement to ensure that a query only returns unique rows?",
-        "options": ["UNIQUE", "DISTINCT", "SINGLE"],
-        "correctAnswer": "DISTINCT",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "SELECT DISTINCT status FROM tasks;"
-        }
+      "cardId": "plsql_061",
+      "category": "SQL Clauses",
+      "hint": "Removes duplicate rows to return a unique set of results.",
+      "question": "Which keyword is used within a SELECT statement to ensure that a query only returns unique rows?",
+      "options": ["UNIQUE", "DISTINCT", "SINGLE"],
+      "correctAnswer": "DISTINCT",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT DISTINCT status FROM tasks;"
+      }
     },
     {
-        "category": "SQL Operators",
-        "hint": "The standard Oracle operator for string concatenation.",
-        "question": "What is the standard operator for joining two or more character strings together?",
-        "options": ["+", "&", "||"],
-        "correctAnswer": "||",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "l_full_name := l_first_name || ' ' || l_last_name;"
-        }
+      "cardId": "plsql_062",
+      "category": "SQL Operators",
+      "hint": "The standard Oracle operator for string concatenation.",
+      "question": "What is the standard operator for joining two or more character strings together?",
+      "options": ["+", "&", "||"],
+      "correctAnswer": "||",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "l_full_name := l_first_name || ' ' || l_last_name;"
+      }
     },
     {
-        "category": "SQL Operators",
-        "hint": "Performs pattern matching on string data within a filtering clause.",
-        "question": "Which operator is used with wildcards (%) to search for a pattern in a text column?",
-        "options": ["MATCH", "LIKE", "CONTAINS"],
-        "correctAnswer": "LIKE",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "SELECT * FROM customers WHERE email LIKE '%@example.com';"
-        }
+      "cardId": "plsql_063",
+      "category": "SQL Operators",
+      "hint": "Performs pattern matching on string data within a filtering clause.",
+      "question": "Which operator is used with wildcards (%) to search for a pattern in a text column?",
+      "options": ["MATCH", "LIKE", "CONTAINS"],
+      "correctAnswer": "LIKE",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT * FROM customers WHERE email LIKE '%@example.com';"
+      }
     },
     {
-        "category": "SQL Operators",
-        "hint": "A shorthand for multiple OR conditions by checking for a value within a list.",
-        "question": "What operator is used to check if a value exists within a given set of values?",
-        "options": ["BETWEEN", "ANY", "IN"],
-        "correctAnswer": "IN",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "SELECT * FROM orders WHERE status IN ('PENDING', 'SHIPPED');"
-        }
+      "cardId": "plsql_064",
+      "category": "SQL Operators",
+      "hint": "A shorthand for multiple OR conditions by checking for a value within a list.",
+      "question": "What operator is used to check if a value exists within a given set of values?",
+      "options": ["BETWEEN", "ANY", "IN"],
+      "correctAnswer": "IN",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT * FROM orders WHERE status IN ('PENDING', 'SHIPPED');"
+      }
     },
     {
-        "category": "SQL Operators",
-        "hint": "Efficiently checks for the existence of at least one row in a subquery.",
-        "question": "Which operator should you use to check if a subquery returns any rows?",
-        "options": ["EXISTS", "COUNT() > 0", "FIND"],
-        "correctAnswer": "EXISTS",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "SELECT c.customer_name\n  FROM customers c\n  WHERE EXISTS (SELECT 1 FROM orders o WHERE o.customer_id = c.id);"
-        }
+      "cardId": "plsql_065",
+      "category": "SQL Operators",
+      "hint": "Efficiently checks for the existence of at least one row in a subquery.",
+      "question": "Which operator should you use to check if a subquery returns any rows?",
+      "options": ["EXISTS", "COUNT() > 0", "FIND"],
+      "correctAnswer": "EXISTS",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT c.customer_name\n  FROM customers c\n  WHERE EXISTS (SELECT 1 FROM orders o WHERE o.customer_id = c.id);"
+      }
     },
     {
-        "category": "SQL Functions",
-        "hint": "Evaluates an expression and, if it is null, returns a specified substitute value.",
-        "question": "What function allows you to replace a NULL value with a specific default value?",
-        "options": ["IFNULL", "COALESCE", "NVL"],
-        "correctAnswer": "NVL",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "SELECT product_name, NVL(on_hand_quantity, 0) FROM inventory;"
-        }
+      "cardId": "plsql_066",
+      "category": "SQL Functions",
+      "hint": "Evaluates an expression and, if it is null, returns a specified substitute value.",
+      "question": "What function allows you to replace a NULL value with a specific default value?",
+      "options": ["IFNULL", "COALESCE", "NVL"],
+      "correctAnswer": "NVL",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT product_name, NVL(on_hand_quantity, 0) FROM inventory;"
+      }
     },
     {
-        "category": "SQL Functions",
-        "hint": "The ANSI-standard function for replacing NULL values, which can handle multiple arguments.",
-        "question": "Which function is a more flexible, ANSI-standard alternative to `NVL` that can take multiple expressions?",
-        "options": ["ISNULL", "DECODE", "COALESCE"],
-        "correctAnswer": "COALESCE",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "SELECT COALESCE(primary_phone, secondary_phone, 'N/A') FROM contacts;"
-        }
+      "cardId": "plsql_067",
+      "category": "SQL Functions",
+      "hint": "The ANSI-standard function for replacing NULL values, which can handle multiple arguments.",
+      "question": "Which function is a more flexible, ANSI-standard alternative to `NVL` that can take multiple expressions?",
+      "options": ["ISNULL", "DECODE", "COALESCE"],
+      "correctAnswer": "COALESCE",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT COALESCE(primary_phone, secondary_phone, 'N/A') FROM contacts;"
+      }
     },
     {
-        "category": "SQL Functions",
-        "hint": "Provides inline IF-THEN-ELSE logic, transforming a value based on search-result pairs.",
-        "question": "Which Oracle-specific function compares an expression to a series of values and returns a corresponding result?",
-        "options": ["CASE", "SWITCH", "DECODE"],
-        "correctAnswer": "DECODE",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "SELECT DECODE(status, 'A', 'Active', 'I', 'Inactive', 'Unknown') FROM user_accounts;"
-        }
+      "cardId": "plsql_068",
+      "category": "SQL Functions",
+      "hint": "Provides inline IF-THEN-ELSE logic, transforming a value based on search-result pairs.",
+      "question": "Which Oracle-specific function compares an expression to a series of values and returns a corresponding result?",
+      "options": ["CASE", "SWITCH", "DECODE"],
+      "correctAnswer": "DECODE",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT DECODE(status, 'A', 'Active', 'I', 'Inactive', 'Unknown') FROM user_accounts;"
+      }
     },
     {
-        "category": "SQL Functions",
-        "hint": "Converts all characters in a string to their uppercase equivalents.",
-        "question": "What is the standard SQL function for converting a string to all uppercase letters?",
-        "options": ["TO_UPPER", "UPPERCASE", "UPPER"],
-        "correctAnswer": "UPPER",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "SELECT * FROM users WHERE UPPER(username) = 'ADMIN';"
-        }
+      "cardId": "plsql_069",
+      "category": "SQL Functions",
+      "hint": "Converts all characters in a string to their uppercase equivalents.",
+      "question": "What is the standard SQL function for converting a string to all uppercase letters?",
+      "options": ["TO_UPPER", "UPPERCASE", "UPPER"],
+      "correctAnswer": "UPPER",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT * FROM users WHERE UPPER(username) = 'ADMIN';"
+      }
     },
     {
-        "category": "SQL Functions",
-        "hint": "Removes the time portion from a date value, effectively setting it to midnight.",
-        "question": "Which function is used to get just the date part of a DATE or TIMESTAMP value?",
-        "options": ["ROUND", "STRIP_TIME", "TRUNC"],
-        "correctAnswer": "TRUNC",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "SELECT * FROM user_logins WHERE TRUNC(login_time) = TRUNC(SYSDATE);"
-        }
+      "cardId": "plsql_070",
+      "category": "SQL Functions",
+      "hint": "Removes the time portion from a date value, effectively setting it to midnight.",
+      "question": "Which function is used to get just the date part of a DATE or TIMESTAMP value?",
+      "options": ["ROUND", "STRIP_TIME", "TRUNC"],
+      "correctAnswer": "TRUNC",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT * FROM user_logins WHERE TRUNC(login_time) = TRUNC(SYSDATE);"
+      }
     },
     {
-        "category": "SQL Functions",
-        "hint": "Returns the current date and time from the database server.",
-        "question": "Which function should you call to get the current date and time of the database server?",
-        "options": ["NOW()", "CURRENT_TIMESTAMP", "SYSDATE"],
-        "correctAnswer": "SYSDATE",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "INSERT INTO logs (log_timestamp) VALUES (SYSDATE);"
-        }
+      "cardId": "plsql_071",
+      "category": "SQL Functions",
+      "hint": "Returns the current date and time from the database server.",
+      "question": "Which function should you call to get the current date and time of the database server?",
+      "options": ["NOW()", "CURRENT_TIMESTAMP", "SYSDATE"],
+      "correctAnswer": "SYSDATE",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "INSERT INTO logs (log_timestamp) VALUES (SYSDATE);"
+      }
     },
     {
-        "category": "Oracle EBS",
-        "hint": "This core procedure sets the application context, mandatory for most E-Business Suite APIs.",
-        "question": "In Oracle EBS, which procedure initializes the environment by setting User, Responsibility, and Application ID?",
-        "options": ["MO_GLOBAL.INIT", "FND_GLOBAL.APPS_INITIALIZE", "FND_SECURITY.INITIALIZE"],
-        "correctAnswer": "FND_GLOBAL.APPS_INITIALIZE",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "fnd_global.apps_initialize (ln_user_id, l_resp_id, 671);"
-        }
+      "cardId": "plsql_072",
+      "category": "Oracle EBS",
+      "hint": "This core procedure sets the application context, mandatory for most E-Business Suite APIs.",
+      "question": "In Oracle EBS, which procedure initializes the environment by setting User, Responsibility, and Application ID?",
+      "options": ["MO_GLOBAL.INIT", "FND_GLOBAL.APPS_INITIALIZE", "FND_SECURITY.INITIALIZE"],
+      "correctAnswer": "FND_GLOBAL.APPS_INITIALIZE",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "fnd_global.apps_initialize (ln_user_id, l_resp_id, 671);"
+      }
     },
     {
-        "category": "Oracle EBS",
-        "hint": "Configures the session's data visibility to a specific organizational unit in a multi-org environment.",
-        "question": "Which procedure sets the Multi-Org access control for a specific operating unit?",
-        "options": ["SET_ORG_CONTEXT", "APPS_INITIALIZE.SET_ORG", "MO_GLOBAL.SET_POLICY_CONTEXT"],
-        "correctAnswer": "MO_GLOBAL.SET_POLICY_CONTEXT",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "mo_global.set_policy_context('S', l_org_id);"
-        }
+      "cardId": "plsql_073",
+      "category": "Oracle EBS",
+      "hint": "Configures the session's data visibility to a specific organizational unit in a multi-org environment.",
+      "question": "Which procedure sets the Multi-Org access control for a specific operating unit?",
+      "options": ["SET_ORG_CONTEXT", "APPS_INITIALIZE.SET_ORG", "MO_GLOBAL.SET_POLICY_CONTEXT"],
+      "correctAnswer": "MO_GLOBAL.SET_POLICY_CONTEXT",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "mo_global.set_policy_context('S', l_org_id);"
+      }
     },
     {
-        "category": "Set Operators",
-        "hint": "Combines the result sets of two queries, keeping all rows from both, including any duplicates.",
-        "question": "Which set operator is used to concatenate two result sets without removing duplicate rows?",
-        "options": ["UNION", "UNION ALL", "MERGE"],
-        "correctAnswer": "UNION ALL",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "SELECT employee_id FROM sales\nUNION ALL\nSELECT employee_id FROM marketing;"
-        }
+      "cardId": "plsql_074",
+      "category": "Set Operators",
+      "hint": "Combines the result sets of two queries, keeping all rows from both, including any duplicates.",
+      "question": "Which set operator is used to concatenate two result sets without removing duplicate rows?",
+      "options": ["UNION", "UNION ALL", "MERGE"],
+      "correctAnswer": "UNION ALL",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT employee_id FROM sales\nUNION ALL\nSELECT employee_id FROM marketing;"
+      }
     },
     {
-        "category": "Set Operators",
-        "hint": "Combines the result sets of two queries and then removes any duplicate rows.",
-        "question": "Which set operator returns a single, duplicate-free result set from two or more SELECT statements?",
-        "options": ["UNION", "UNION ALL", "INTERSECT"],
-        "correctAnswer": "UNION",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "SELECT product_sku FROM catalog_a\nUNION\nSELECT product_sku FROM catalog_b;"
-        }
+      "cardId": "plsql_075",
+      "category": "Set Operators",
+      "hint": "Combines the result sets of two queries and then removes any duplicate rows.",
+      "question": "Which set operator returns a single, duplicate-free result set from two or more SELECT statements?",
+      "options": ["UNION", "UNION ALL", "INTERSECT"],
+      "correctAnswer": "UNION",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT product_sku FROM catalog_a\nUNION\nSELECT product_sku FROM catalog_b;"
+      }
     },
     {
-        "category": "Set Operators",
-        "hint": "Returns only the rows that are present in both query result sets.",
-        "question": "Which set operator is used to find the common rows between two result sets?",
-        "options": ["MINUS", "INTERSECT", "COMMON"],
-        "correctAnswer": "INTERSECT",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "SELECT student_id FROM math_club\nINTERSECT\nSELECT student_id FROM science_club;"
-        }
+      "cardId": "plsql_076",
+      "category": "Set Operators",
+      "hint": "Returns only the rows that are present in both query result sets.",
+      "question": "Which set operator is used to find the common rows between two result sets?",
+      "options": ["MINUS", "INTERSECT", "COMMON"],
+      "correctAnswer": "INTERSECT",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT student_id FROM math_club\nINTERSECT\nSELECT student_id FROM science_club;"
+      }
     },
     {
-        "category": "Set Operators",
-        "hint": "Takes distinct rows from the first query and removes the ones that also appear in the second query.",
-        "question": "Which set operator returns rows from the first query that do not exist in the second query?",
-        "options": ["MINUS", "DIFFERENCE", "EXCEPT"],
-        "correctAnswer": "MINUS",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "SELECT employee_id FROM all_staff\nMINUS\nSELECT employee_id FROM staff_on_leave;"
-    }
+      "cardId": "plsql_077",
+      "category": "Set Operators",
+      "hint": "Takes distinct rows from the first query and removes the ones that also appear in the second query.",
+      "question": "Which set operator returns rows from the first query that do not exist in the second query?",
+      "options": ["MINUS", "DIFFERENCE", "EXCEPT"],
+      "correctAnswer": "MINUS",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "SELECT employee_id FROM all_staff\nMINUS\nSELECT employee_id FROM staff_on_leave;"
+      }
     },
     {
-        "category": "PL/SQL Packages",
-        "hint": "A standard Oracle package procedure, commonly used to print output for debugging.",
-        "question": "What is the most common procedure used to display messages from a PL/SQL block?",
-        "options": ["PRINT_LINE", "DBMS_OUTPUT.PUT_LINE", "CONSOLE.LOG"],
-        "correctAnswer": "DBMS_OUTPUT.PUT_LINE",
-        "content": {
-            "type": "code",
-            "language": "sql",
-            "value": "BEGIN\n  DBMS_OUTPUT.PUT_LINE('Debug message');\nEND;"
-        }
+      "cardId": "plsql_078",
+      "category": "PL/SQL Packages",
+      "hint": "A standard Oracle package procedure, commonly used to print output for debugging.",
+      "question": "What is the most common procedure used to display messages from a PL/SQL block?",
+      "options": ["PRINT_LINE", "DBMS_OUTPUT.PUT_LINE", "CONSOLE.LOG"],
+      "correctAnswer": "DBMS_OUTPUT.PUT_LINE",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "BEGIN\n  DBMS_OUTPUT.PUT_LINE('Debug message');\nEND;"
+      }
     },
     {
+      "cardId": "plsql_079",
       "category": "Bulk Operations",
       "hint": "This clause allows a `SELECT` statement to retrieve multiple rows into one or more collection variables at once.",
       "question": "Which clause is used with `SELECT ... INTO` to fetch an entire result set into a collection?",
@@ -955,6 +1033,7 @@
       }
     },
     {
+      "cardId": "plsql_080",
       "category": "Bulk Operations",
       "hint": "This statement is the fastest way to execute a single DML statement (INSERT, UPDATE, DELETE) for every element in a collection.",
       "question": "What is the command for high-performance, iterative DML operations on collections?",
@@ -967,6 +1046,7 @@
       }
     },
     {
+      "cardId": "plsql_081",
       "category": "Bulk Operations",
       "hint": "The main advantage of using bulk operations over traditional loops.",
       "question": "What is the primary performance benefit of using `FORALL` and `BULK COLLECT`?",
@@ -979,6 +1059,7 @@
       }
     },
     {
+      "cardId": "plsql_082",
       "category": "Dynamic SQL",
       "hint": "The primary command in PL/SQL for executing a SQL statement that is constructed as a string at runtime.",
       "question": "Which command is used to execute a SQL string that is not known until runtime?",
@@ -991,6 +1072,7 @@
       }
     },
     {
+      "cardId": "plsql_083",
       "category": "Dynamic SQL",
       "hint": "This clause in `EXECUTE IMMEDIATE` is used to pass bind variables into the dynamic SQL string.",
       "question": "When using `EXECUTE IMMEDIATE`, which clause safely passes values into your dynamic query?",
@@ -1003,6 +1085,7 @@
       }
     },
     {
+      "cardId": "plsql_084",
       "category": "Dynamic SQL",
       "hint": "This clause in `EXECUTE IMMEDIATE` is used to retrieve values from a dynamic query into PL/SQL variables.",
       "question": "To retrieve a value from a dynamic `SELECT` statement, which `EXECUTE IMMEDIATE` clause do you use?",
@@ -1015,6 +1098,7 @@
       }
     },
     {
+      "cardId": "plsql_085",
       "category": "Pragmas",
       "hint": "This pragma allows a subprogram to run in its own transaction, which can be committed or rolled back independently of the main transaction.",
       "question": "Which pragma defines a procedure that can commit its work without affecting the main transaction?",
@@ -1027,6 +1111,7 @@
       }
     },
     {
+      "cardId": "plsql_086",
       "category": "Pragmas",
       "hint": "This pragma links a user-defined exception name with a specific Oracle error number.",
       "question": "Which pragma is used to associate a custom exception name with an Oracle error code like -20001?",
@@ -1039,6 +1124,7 @@
       }
     },
     {
+      "cardId": "plsql_087",
       "category": "Pipelined Functions",
       "hint": "This type of function can return rows of a collection iteratively, as if it were a real table.",
       "question": "What kind of function can be queried with `SELECT * FROM TABLE(...)`?",
@@ -1051,6 +1137,7 @@
       }
     },
     {
+      "cardId": "plsql_088",
       "category": "Pipelined Functions",
       "hint": "This command sends a row from a pipelined function back to the calling query.",
       "question": "Inside a pipelined table function, what command do you use to return a row to the caller?",
@@ -1063,6 +1150,7 @@
       }
     },
     {
+      "cardId": "plsql_089",
       "category": "Advanced Data Types",
       "hint": "A type of collection that is unbounded and must be initialized before use.",
       "question": "Which collection type is an unbounded list of elements of the same type, defined at the schema level?",
@@ -1075,6 +1163,7 @@
       }
     },
     {
+      "cardId": "plsql_090",
       "category": "Advanced Data Types",
       "hint": "A type of collection that has a fixed upper bound of elements.",
       "question": "Which collection type is a fixed-size array of elements of the same type?",
@@ -1087,6 +1176,7 @@
       }
     },
     {
+      "cardId": "plsql_091",
       "category": "Analytic Functions",
       "hint": "This analytic function assigns a unique, sequential integer to each row in a partition.",
       "question": "Which function would you use to number rows 1, 2, 3, ... within each department, ordered by salary?",
@@ -1099,6 +1189,7 @@
       }
     },
     {
+      "cardId": "plsql_092",
       "category": "Analytic Functions",
       "hint": "This analytic function assigns a rank to each row, with gaps in the ranking for ties.",
       "question": "If two employees have the same salary, which function will give them the same rank and cause a gap in the sequence (e.g., 1, 2, 2, 4)?",
@@ -1111,6 +1202,7 @@
       }
     },
     {
+      "cardId": "plsql_093",
       "category": "Analytic Functions",
       "hint": "Allows you to access data from a subsequent row in the result set without a self-join.",
       "question": "Which analytic function lets you access the value of the 'next' row?",
@@ -1123,6 +1215,7 @@
       }
     },
     {
+      "cardId": "plsql_094",
       "category": "Analytic Functions",
       "hint": "Allows you to access data from a previous row in the result set without a self-join.",
       "question": "Which analytic function lets you access the value of the 'previous' row?",
@@ -1135,6 +1228,7 @@
       }
     },
     {
+      "cardId": "plsql_095",
       "category": "Object-Oriented PL/SQL",
       "hint": "The fundamental building block for object-oriented programming in Oracle.",
       "question": "What is the PL/SQL equivalent of a 'class' in other languages, used to define object blueprints?",
@@ -1143,10 +1237,11 @@
       "content": {
         "type": "code",
         "language": "sql",
-        "value": "CREATE TYPE Person_obj AS OBJECT (\n  idno   NUMBER,\n  name   VARCHAR2(30),\n  MEMBER FUNCTION display RETURN VARCHAR2\n);"
+        "value": "CREATE TYPE Person_obj AS OBJECT (\n  idno  NUMBER,\n  name  VARCHAR2(30),\n  MEMBER FUNCTION display RETURN VARCHAR2\n);"
       }
     },
     {
+      "cardId": "plsql_096",
       "category": "Object-Oriented PL/SQL",
       "hint": "The implementation code for the methods of an object type.",
       "question": "Where do you define the code for the methods of an `OBJECT TYPE`?",
@@ -1159,6 +1254,7 @@
       }
     },
     {
+      "cardId": "plsql_097",
       "category": "Object-Oriented PL/SQL",
       "hint": "The keyword used within a member method to refer to the current instance of the object.",
       "question": "Inside an object type's member method, which keyword refers to the instance of the object itself?",
@@ -1170,1130 +1266,858 @@
         "value": "CREATE TYPE BODY Person_obj IS\n  MEMBER PROCEDURE set_name(p_name VARCHAR2) IS\n  BEGIN\n    SELF.name := p_name;\n  END;\nEND;"
       }
     },
-
     {
-    "category": "Core Systems",
-    "hint": "A middleware framework inside EBS for exposing business logic.",
-    "question": "What is the primary role of the Integrated SOA Gateway (ISG)?",
-    "options": [
-      "To run the Oracle Database",
-      "To serve as a secure entry point for web services",
-      "To manage user interface themes"
-    ],
-    "correctAnswer": "To serve as a secure entry point for web services",
-    "content": {
-      "type": "none",
-      "language": "none",
-      "value": ""
-    }
-  },
-  {
-    "category": "Core Systems",
-    "hint": "The fundamental structure of an EBS environment.",
-    "question": "On which of the three tiers of the EBS architecture does the ISG framework run?",
-    "options": [
-      "Database Tier",
-      "Desktop Tier",
-      "Application Tier"
-    ],
-    "correctAnswer": "Application Tier",
-    "content": {
-      "type": "none",
-      "language": "none",
-      "value": ""
-    }
-  },
-  {
-    "category": "Core Systems",
-    "hint": "An internal, searchable catalog within EBS.",
-    "question": "What is the name of the central registry where all deployed ISG services are discoverable?",
-    "options": [
-      "The Service Hub",
-      "The Integration Repository",
-      "The API Gateway"
-    ],
-    "correctAnswer": "The Integration Repository",
-    "content": {
-      "type": "none",
-      "language": "none",
-      "value": ""
-    }
-  },
-  {
-    "category": "PL/SQL Objects",
-    "hint": "The fundamental unit for organizing code in the Oracle Database.",
-    "question": "A PL/SQL package consists of which two parts?",
-    "options": [
-      "Header and Footer",
-      "Specification and Body",
-      "Public and Private Blocks"
-    ],
-    "correctAnswer": "Specification and Body",
-    "content": {
-      "type": "none",
-      "language": "none",
-      "value": ""
-    }
-  },
-  {
-    "category": "PL/SQL Objects",
-    "hint": "This part of a package acts as the public 'contract' or interface.",
-    "question": "Which part of a PL/SQL package is read by the ISG parser to find services to deploy?",
-    "options": [
-      "Package Specification (.pks)",
-      "Package Body (.pkb)",
-      "Package Trigger"
-    ],
-    "correctAnswer": "Package Specification (.pks)",
-    "content": {
-      "type": "code",
-      "language": "sql",
-      "value": "-- The ISG parser reads this file\nPACKAGE company_api IS\n  PROCEDURE hire_employee(p_name IN VARCHAR2);\nEND company_api;"
-    }
-  },
-  {
-    "category": "PL/SQL Objects",
-    "hint": "This part of a package contains the actual implementation and private logic.",
-    "question": "Where is the detailed PL/SQL code for a procedure's business logic located?",
-    "options": [
-      "In the Package Specification",
-      "In the Integration Repository",
-      "In the Package Body"
-    ],
-    "correctAnswer": "In the Package Body",
-    "content": {
-      "type": "code",
-      "language": "sql",
-      "value": "PACKAGE BODY company_api IS\n  PROCEDURE hire_employee(p_name IN VARCHAR2) IS\n  BEGIN\n    INSERT INTO employees (name) VALUES (p_name);\n  END hire_employee;\nEND company_api;"
-    }
-  },
-  {
-    "category": "PL/SQL Objects",
-    "hint": "The best-practice method for a PL/SQL procedure to return a tabular dataset via ISG.",
-    "question": "To return multiple rows of data from a REST service, what is the officially supported OUT parameter data type?",
-    "options": [
-      "SYS_REFCURSOR",
-      "TABLE OF RECORD",
-      "CLOB"
-    ],
-    "correctAnswer": "SYS_REFCURSOR",
-    "content": {
-      "type": "code",
-      "language": "sql",
-      "value": "PROCEDURE get_all_employees (\n  p_employee_data OUT SYS_REFCURSOR\n);"
-    }
-  },
-  {
-    "category": "PL/SQL Objects",
-    "hint": "A composite PL/SQL data type that is not officially supported by ISG for REST parameters.",
-    "question": "What is the risk of using a `TABLE OF RECORD` as an OUT parameter in an ISG REST service?",
-    "options": [
-      "It is a documented best practice",
-      "It may break in future Oracle patches",
-      "It performs better than a SYS_REFCURSOR"
-    ],
-    "correctAnswer": "It may break in future Oracle patches",
-    "content": {
-      "type": "none",
-      "language": "none",
-      "value": ""
-    }
-  },
-  {
-    "category": "PL/SQL Objects",
-    "hint": "This parameter mode defines data sent from the client to the EBS procedure.",
-    "question": "If a mobile app needs to send a `user_id` to a PL/SQL procedure, what parameter mode should be used?",
-    "options": [
-      "IN",
-      "OUT",
-      "IN OUT"
-    ],
-    "correctAnswer": "IN",
-    "content": {
-      "type": "code",
-      "language": "sql",
-      "value": "PROCEDURE get_user_details (\n  p_user_id IN NUMBER\n);"
-    }
-  },
-  {
-    "category": "PL/SQL Objects",
-    "hint": "This parameter mode defines data sent from the EBS procedure back to the client.",
-    "question": "If a PL/SQL procedure needs to return a status message to the mobile app, what parameter mode should be used?",
-    "options": [
-      "IN",
-      "OUT",
-      "IN OUT"
-    ],
-    "correctAnswer": "OUT",
-    "content": {
-      "type": "code",
-      "language": "sql",
-      "value": "PROCEDURE create_user (\n  p_status_message OUT VARCHAR2\n);"
-    }
-  },
-  {
-    "category": "ISG Deployment",
-    "hint": "Specially formatted PL/SQL comments that provide metadata to the ISG parser.",
-    "question": "What is the purpose of an Annotation, enclosed in `/*# ... */`, in a PL/SQL package specification?",
-    "options": [
-      "They are regular comments ignored by all tools",
-      "They provide instructions to ISG on how to create a web service",
-      "They are used for runtime debugging only"
-    ],
-    "correctAnswer": "They provide instructions to ISG on how to create a web service",
-    "content": {
-      "type": "code",
-      "language": "sql",
-      "value": "/*# @rep:scope public */\nPROCEDURE my_public_procedure;"
-    }
-  },
-  {
-    "category": "ISG Deployment",
-    "hint": "This annotation tag marks a procedure as intended for public exposure.",
-    "question": "Which annotation tag is required to make a procedure visible to the ISG deployment process?",
-    "options": [
-      "@rep:displayname",
-      "@rep:scope public",
-      "@rep:param"
-    ],
-    "correctAnswer": "@rep:scope public",
-    "content": {
-      "type": "none",
-      "language": "none",
-      "value": ""
-    }
-  },
-  {
-    "category": "ISG Deployment",
-    "hint": "This annotation tag defines the properties of a procedure's arguments for the web service.",
-    "question": "What is the `@param` tag used for in an ISG annotation?",
-    "options": [
-      "To set a package-level variable",
-      "To describe a parameter's direction (IN/OUT) and data type",
-      "To define the display name of the service"
-    ],
-    "correctAnswer": "To describe a parameter's direction (IN/OUT) and data type",
-    "content": {
-      "type": "code",
-      "language": "sql",
-      "value": "/*# @param P_USER_ID The unique identifier for the user. */\nPROCEDURE get_user(P_USER_ID IN NUMBER);"
-    }
-  },
-  {
-    "category": "ISG Deployment",
-    "hint": "The first step in deployment, where a tool reads the package specification file.",
-    "question": "What is the main function of the `irep_parser.pl` tool?",
-    "options": [
-      "It deploys the service to the web server",
-      "It compiles the package body",
-      "It scans for annotations and generates a metadata file (.ildt)"
-    ],
-    "correctAnswer": "It scans for annotations and generates a metadata file (.ildt)",
-    "content": {
-      "type": "none",
-      "language": "none",
-      "value": ""
-    }
-  },
-  {
-    "category": "ISG Deployment",
-    "hint": "The second step, which uses the output from the parser.",
-    "question": "What does the `FNDLOAD` utility do in the ISG deployment process?",
-    "options": [
-      "It loads the generated .ildt file into the Integration Repository",
-      "It loads data from a flat file into a custom table",
-      "It parses the package specification for errors"
-    ],
-    "correctAnswer": "It loads the generated .ildt file into the Integration Repository",
-    "content": {
-      "type": "none",
-      "language": "none",
-      "value": ""
-    }
-  },
-  {
-    "category": "ISG Deployment",
-    "hint": "The final administrative step, performed in the EBS user interface.",
-    "question": "After parsing and loading, what is the final step to make a service live and accessible?",
-    "options": [
-      "Recompile the package",
-      "Restart the database",
-      "Click 'Deploy' on the service within the Integration Repository UI"
-    ],
-    "correctAnswer": "Click 'Deploy' on the service within the Integration Repository UI",
-    "content": {
-      "type": "none",
-      "language": "none",
-      "value": ""
-    }
-  },
-  {
-    "category": "Execution Concepts",
-    "hint": "The process of converting PL/SQL OUT parameters into a JSON string.",
-    "question": "When ISG converts a SYS_REFCURSOR into a JSON array for a mobile app, what is this process called?",
-    "options": [
-      "Deserialization",
-      "Compilation",
-      "Serialization"
-    ],
-    "correctAnswer": "Serialization",
-    "content": {
-      "type": "none",
-      "language": "none",
-      "value": ""
-    }
-  },
-  {
-    "category": "Execution Concepts",
-    "hint": "The process of converting a JSON object from a client request into PL/SQL data types.",
-    "question": "When a mobile app sends a JSON object in a POST request, what does the ISG engine do?",
-    "options": [
-      "It serializes the JSON into a string",
-      "It deserializes the JSON into PL/SQL parameters",
-      "It stores the raw JSON in a log file"
-    ],
-    "correctAnswer": "It deserializes the JSON into PL/SQL parameters",
-    "content": {
-      "type": "none",
-      "language": "none",
-      "value": ""
-    }
-  },
-  {
-    "category": "Execution Concepts",
-    "hint": "The final, public-facing URL used to invoke a specific procedure.",
-    "question": "What is an 'Endpoint' in the context of ISG?",
-    "options": [
-      "A private database link",
-      "The URL that a client application calls to run the service",
-      "A database connection string"
-    ],
-    "correctAnswer": "The URL that a client application calls to run the service",
-    "content": {
-      "type": "code",
-      "language": "sql",
-      "value": "-- Example Endpoint URL\nhttps://yourserver.com/OA_HTML/rest/api/v1/mobile/get_products"
-    }
-  },
-  {
-    "category": "Troubleshooting",
-    "hint": "An error that prevents a service from being successfully registered in ISG.",
-    "question": "A missing or syntactically incorrect annotation block will cause what type of error?",
-    "options": [
-      "A Runtime Error",
-      "A Deployment-Time Error",
-      "A Network Timeout Error"
-    ],
-    "correctAnswer": "A Deployment-Time Error",
-    "content": {
-      "type": "none",
-      "language": "none",
-      "value": ""
-    }
-  },
-  {
-    "category": "Troubleshooting",
-    "hint": "An error that occurs only when a live, deployed service is called.",
-    "question": "A bug in the package body's logic, such as a 'no data found' exception, is what type of error?",
-    "options": [
-      "Runtime Error",
-      "Deployment-Time Error",
-      "Parsing Error"
-    ],
-    "correctAnswer": "Runtime Error",
-    "content": {
-      "type": "none",
-      "language": "none",
-      "value": ""
-    }
-  },
-  {
-    "category": "Development Concepts",
-    "hint": "The implied future cost of choosing an easy solution now over a more robust one.",
-    "question": "What kind of risk is a developer taking by using the undocumented serialization of a `TABLE OF RECORD`?",
-    "options": [
-      "No risk, as it is a common practice",
-      "A performance improvement",
-      "Incurring technical debt"
-    ],
-    "correctAnswer": "Incurring technical debt",
-    "content": {
-      "type": "none",
-      "language": "none",
-      "value": ""
-    }
-  },
-  {
-    "category": "Core Systems",
-    "hint": "This is a comprehensive suite of integrated global business applications from Oracle.",
-    "question": "What is Oracle E-Business Suite (EBS)?",
-    "options": [
-      "A single application for Human Resources only",
-      "A suite of applications for core business functions like Finance and SCM",
-      "A type of Oracle Database"
-    ],
-    "correctAnswer": "A suite of applications for core business functions like Finance and SCM",
-    "content": {
-      "type": "none",
-      "language": "none",
-      "value": ""
-    }
-  },
-  {
-    "category": "Core Systems",
-    "hint": "This tier in the EBS architecture is where all business data is stored.",
-    "question": "What is the primary role of the Database Tier in the EBS three-tier architecture?",
-    "options": [
-      "To run the business logic",
-      "To store all business data in the Oracle Database",
-      "To serve web pages to the end-user"
-    ],
-    "correctAnswer": "To store all business data in the Oracle Database",
-    "content": {
-      "type": "none",
-      "language": "none",
-      "value": ""
-    }
-  },
-  {
-    "category": "PL/SQL Objects",
-    "hint": "This is Oracle's proprietary procedural extension to SQL.",
-    "question": "What language is primarily used to write business logic, stored procedures, and triggers inside the Oracle Database?",
-    "options": [
-      "Java",
-      "PL/SQL",
-      "T-SQL"
-    ],
-    "correctAnswer": "PL/SQL",
-    "content": {
-      "type": "none",
-      "language": "none",
-      "value": ""
-    }
-  },
-  {
-    "category": "PL/SQL Objects",
-    "hint": "This parameter mode is used for a value that is sent by the client, modified, and then returned.",
-    "question": "A procedure needs to increment a counter sent by a client and return the new value. Which parameter mode should be used?",
-    "options": [
-      "IN",
-      "OUT",
-      "IN OUT"
-    ],
-    "correctAnswer": "IN OUT",
-    "content": {
-      "type": "code",
-      "language": "sql",
-      "value": "PROCEDURE increment_counter(\n  p_counter IN OUT NUMBER\n) IS\nBEGIN\n  p_counter := p_counter + 1;\nEND;"
-    }
-  },
-  {
-    "category": "ISG Deployment",
-    "hint": "This annotation tag sets a user-friendly name for the service in the repository.",
-    "question": "Which annotation allows a developer to set a clean, readable name like 'Get User Roles' for a service?",
-    "options": [
-      "@rep:scope",
-      "@rep:param",
-      "@rep:displayname"
-    ],
-    "correctAnswer": "@rep:displayname",
-    "content": {
-      "type": "code",
-      "language": "sql",
-      "value": "/*# @rep:displayname \"Get User Roles\" */"
-    }
-  },
-  {
-    "category": "ISG Deployment",
-    "hint": "This is what happens when the parser encounters a public procedure without a valid annotation.",
-    "question": "What is the consequence of a missing annotation block for a public procedure during the parsing step?",
-    "options": [
-      "The procedure is deployed with default settings",
-      "It is a fatal error that stops the deployment process for that procedure",
-      "A warning is logged, but the deployment continues"
-    ],
-    "correctAnswer": "It is a fatal error that stops the deployment process for that procedure",
-    "content": {
-      "type": "none",
-      "language": "none",
-      "value": ""
-    }
-  },
-  {
-    "category": "Execution Concepts",
-    "hint": "This is how ISG transforms a SYS_REFCURSOR for a JSON response.",
-    "question": "How does ISG typically serialize a SYS_REFCURSOR?",
-    "options": [
-      "Into a single string with comma-separated values",
-      "Into a nested JSON object with metadata",
-      "Into a clean, flat JSON array of objects"
-    ],
-    "correctAnswer": "Into a clean, flat JSON array of objects",
-    "content": {
-      "type": "none",
-      "language": "none",
-      "value": ""
-    }
-  },
-  {
-    "category": "Troubleshooting",
-    "hint": "This is a common runtime error when the ISG engine fails to execute a service.",
-    "question": "What common error might indicate a problem in the package body logic or a data issue at runtime?",
-    "options": [
-      "ISG_SERVICE_EXECUTION_ERROR",
-      "IREP_PARSER_FAILURE",
-      "FNDLOAD_MISSING_FILE"
-    ],
-    "correctAnswer": "ISG_SERVICE_EXECUTION_ERROR",
-    "content": {
-      "type": "none",
-      "language": "none",
-      "value": ""
-    }
-  },
-  {
-
-    "category": "PL/SQL Fundamentals",
-
-    "hint": "A container for organizing related procedures, functions, and variables.",
-
-    "question": "In PL/SQL, what is the primary purpose of a 'package'?",
-
-    "options": [
-
-      "To store a single large table's data",
-
-      "To group related program units into a single database object",
-
-      "To define user permissions for an application"
-
-    ],
-
-    "correctAnswer": "To group related program units into a single database object",
-
-    "content": {
-
-      "type": "none",
-
-      "language": "none",
-
-      "value": ""
-
-    }
-
-  },
-
-  {
-
-    "category": "PL/SQL Fundamentals",
-
-    "hint": "This is the public interface or 'contract' of a package.",
-
-    "question": "Which part of a PL/SQL package declares the public elements that can be called by other programs?",
-
-    "options": [
-
-      "Package Body",
-
-      "Package Specification",
-
-      "Package Header"
-
-    ],
-
-    "correctAnswer": "Package Specification",
-
-    "content": {
-
-      "type": "code",
-
-      "language": "sql",
-
-      "value": "-- This is the Specification. It defines WHAT can be called.\nPACKAGE user_utils IS\n  PROCEDURE create_user(p_username IN VARCHAR2);\n  FUNCTION is_active(p_user_id IN NUMBER) RETURN BOOLEAN;\nEND user_utils;"
-
-    }
-
-  },
-
-  {
-
-    "category": "PL/SQL Fundamentals",
-
-    "hint": "This contains the detailed implementation and private logic.",
-
-    "question": "Which part of a PL/SQL package contains the actual code that executes when a procedure is called?",
-
-    "options": [
-
-      "Package Specification",
-
-      "Anonymous Block",
-
-      "Package Body"
-
-    ],
-
-    "correctAnswer": "Package Body",
-
-    "content": {
-
-      "type": "code",
-
-      "language": "sql",
-
-      "value": "-- This is the Body. It defines HOW the procedures work.\nPACKAGE BODY user_utils IS\n  PROCEDURE create_user(p_username IN VARCHAR2) IS\n  BEGIN\n    -- Implementation code goes here...\n    NULL;\n  END create_user;\n\n  FUNCTION is_active(p_user_id IN NUMBER) RETURN BOOLEAN IS\n  BEGIN\n    RETURN TRUE; -- Logic to check status...\n  END is_active;\nEND user_utils;"
-
-    }
-
-  },
-
-  {
-
-    "category": "ISG Concepts",
-
-    "hint": "The process of analyzing text to understand its structure and meaning.",
-
-    "question": "In the context of ISG, what does 'parsing' a package specification mean?",
-
-    "options": [
-
-      "Executing the PL/SQL code",
-
-      "Reading the file to find annotations and validate its syntax",
-
-      "Encrypting the package contents"
-
-    ],
-
-    "correctAnswer": "Reading the file to find annotations and validate its syntax",
-
-    "content": {
-
-      "type": "none",
-
-      "language": "none",
-
-      "value": ""
-
-    }
-
-  },
-
-  {
-
-    "category": "ISG Concepts",
-
-    "hint": "They define the direction of data flow for a service's arguments.",
-
-    "question": "What is the general purpose of parameters (IN, OUT, IN OUT) in an ISG service?",
-
-    "options": [
-
-      "To control the version of the service",
-
-      "To define the flow of data between the client and the server",
-
-      "To set database configuration values"
-
-    ],
-
-    "correctAnswer": "To define the flow of data between the client and the server",
-
-    "content": {
-
-      "type": "code",
-
-      "language": "sql",
-
-      "value": "-- IN: Data flows IN to the server.\n-- OUT: Data flows OUT from the server.\nPROCEDURE example_proc(\n  p_input  IN  VARCHAR2,\n  p_output OUT NUMBER\n);"
-
-    }
-
-  },
-
-  {
-
-    "category": "ISG Concepts",
-
-    "hint": "A public-facing URL that a client application uses to invoke a procedure.",
-
-    "question": "What is the 'endpoint' that ISG generates for a deployed service?",
-
-    "options": [
-
-      "A database connection string",
-
-      "A URL that exposes the PL/SQL procedure over the web",
-
-      "A local file path to the package"
-
-    ],
-
-    "correctAnswer": "A URL that exposes the PL/SQL procedure over the web",
-
-    "content": {
-
-      "type": "none",
-
-      "language": "none",
-
-      "value": ""
-
-    }
-
-  },
-
-  {
-
-    "category": "ISG Concepts",
-
-    "hint": "These are the instructions that tell ISG how to create a web service.",
-
-    "question": "What is the fundamental role of 'annotations' in the ISG deployment process?",
-
-    "options": [
-
-      "They are comments for other developers and are ignored by ISG",
-
-      "They are metadata that guides the web service creation",
-
-      "They are commands that execute at runtime"
-
-    ],
-
-    "correctAnswer": "They are metadata that guides the web service creation",
-
-    "content": {
-
-      "type": "code",
-
-      "language": "sql",
-
-      "value": "/*# @rep:scope public @rep:displayname \"Get All Products\" */\n-- The comment above is metadata, not just a comment."
-
-    }
-
-  },
-
-  {
-
-    "category": "ISG Concepts",
-
-    "hint": "This is a central catalog within EBS for all available integration points.",
-
-    "question": "Once a service is loaded via FNDLOAD, where does its definition reside, making it ready for deployment?",
-
-    "options": [
-
-      "In the Application Server's memory",
-
-      "In the Oracle Integration Repository",
-
-      "In a temporary file on the server"
-
-    ],
-
-    "correctAnswer": "In the Oracle Integration Repository",
-
-    "content": {
-
-      "type": "none",
-
-      "language": "none",
-
-      "value": ""
-
-    }
-
-  },
-
-  {
-
-    "category": "ISG Concepts",
-
-    "hint": "The process of converting database data (like a cursor) into a format like JSON.",
-
-    "question": "What is 'serialization' in the context of an ISG REST service returning data?",
-
-    "options": [
-
-      "Running database queries in a specific sequence",
-
-      "Converting native Oracle data types into a web-friendly format",
-
-      "Validating user input before processing"
-
-    ],
-
-    "correctAnswer": "Converting native Oracle data types into a web-friendly format",
-
-    "content": {
-
-      "type": "none",
-
-      "language": "none",
-
-      "value": ""
-
-    }
-
-  },
-
-  {
-
-    "category": "ISG Concepts",
-
-    "hint": "The process of converting a format like JSON from a request into Oracle data types.",
-
-    "question": "When ISG receives a JSON object in a client request, what is 'deserialization'?",
-
-    "options": [
-
-      "Converting the JSON into native PL/SQL types for the procedure parameters",
-
-      "Logging the raw JSON request to a file",
-
-      "Sending the JSON response back to the client"
-
-    ],
-
-    "correctAnswer": "Converting the JSON into native PL/SQL types for the procedure parameters",
-
-    "content": {
-
-      "type": "none",
-
-      "language": "none",
-
-      "value": ""
-
-    }
-
-  },
-
-  {
-
-    "category": "General Concepts",
-
-    "hint": "This is a system that enables different software applications to communicate with each other.",
-
-    "question": "ISG acts as what kind of software component between Oracle EBS and external systems?",
-
-    "options": [
-
-      "A database driver",
-
-      "A middleware framework",
-
-      "An operating system"
-
-    ],
-
-    "correctAnswer": "A middleware framework",
-
-    "content": {
-
-      "type": "none",
-
-      "language": "none",
-
-      "value": ""
-
-    }
-
-  },
-
-  {
-
-    "category": "General Concepts",
-
-    "hint": "A pointer to a query's result set.",
-
-    "question": "In general terms, what is a 'cursor' in a database context?",
-
-    "options": [
-
-      "The blinking text symbol in a text editor",
-
-      "A memory area that holds a SQL statement and its result set",
-
-      "A user's mouse pointer"
-
-    ],
-
-    "correctAnswer": "A memory area that holds a SQL statement and its result set",
-
-    "content": {
-
-      "type": "code",
-
-      "language": "sql",
-
-      "value": "DECLARE\n  -- l_cursor is a pointer to the result set of the query\n  CURSOR l_cursor IS SELECT employee_name FROM employees;\nBEGIN\n  NULL;\nEND;"
-
-    }
-
-  },
-
-  {
-
-    "category": "General Concepts",
-
-    "hint": "The architectural principle of hiding implementation details.",
-
-    "question": "How do PL/SQL packages support 'encapsulation'?",
-
-    "options": [
-
-      "By allowing the package body (implementation) to be hidden from the user",
-
-      "By encrypting the data automatically",
-
-      "By combining all code into a single file"
-
-    ],
-
-    "correctAnswer": "By allowing the package body (implementation) to be hidden from the user",
-
-    "content": {
-
-      "type": "none",
-
-      "language": "none",
-
-      "value": ""
-
-    }
-
-  },
-
-  {
-
-    "category": "General Concepts",
-
-    "hint": "A type of error that prevents the application from being built or deployed.",
-
-    "question": "A 'Deployment-Time Error' is best described as what?",
-
-    "options": [
-
-      "An error that happens when a user is interacting with the live application",
-
-      "An error in the business logic that produces a wrong result",
-
-      "An error during the setup or installation process that prevents it from completing"
-
-    ],
-
-    "correctAnswer": "An error during the setup or installation process that prevents it from completing",
-
-    "content": {
-
-      "type": "none",
-
-      "language": "none",
-
-      "value": ""
-
-    }
-
-  },
-
-  {
-
-    "category": "General Concepts",
-
-    "hint": "A type of error that occurs while the application is in use.",
-
-    "question": "A 'Runtime Error' is best described as what?",
-
-    "options": [
-
-      "A syntax error in the source code",
-
-      "An error that happens after deployment, when the application is being used",
-
-      "An error that prevents the code from being compiled"
-
-    ],
-
-    "correctAnswer": "An error that happens after deployment, when the application is being used",
-
-    "content": {
-
-      "type": "none",
-
-      "language": "none",
-
-      "value": ""
-
-    }
-
-  },
-
-  {
-
-    "category": "PL/SQL Fundamentals",
-
-    "hint": "A structured data type that can hold a set of related fields.",
-
-    "question": "In PL/SQL, what is a 'RECORD' type used for?",
-
-    "options": [
-
-      "To store a single value like a number or string",
-
-      "To group several related data items together as a single unit",
-
-      "To define a database table"
-
-    ],
-
-    "correctAnswer": "To group several related data items together as a single unit",
-
-    "content": {
-
-      "type": "code",
-
-      "language": "sql",
-
-      "value": "DECLARE\n  TYPE t_employee_rec IS RECORD (\n    id         employees.employee_id%TYPE,\n    first_name employees.first_name%TYPE,\n    last_name  employees.last_name%TYPE\n  );\n  l_employee t_employee_rec;\nBEGIN\n  l_employee.id := 100;\nEND;"
-
-    }
-
-  },
-
-  {
-
-    "category": "PL/SQL Fundamentals",
-
-    "hint": "A data type used for storing large blocks of character data.",
-
-    "question": "Which PL/SQL data type is most suitable for storing a very long text string, like a JSON payload?",
-
-    "options": [
-
-      "VARCHAR2",
-
-      "NUMBER",
-
-      "CLOB"
-
-    ],
-
-    "correctAnswer": "CLOB",
-
-    "content": {
-
-      "type": "code",
-
-      "language": "sql",
-
-      "value": "DECLARE\n  l_json_data CLOB;\nBEGIN\n  l_json_data := '{\"id\": 1, \"data\": \"...very large amount of text...\"}';\nEND;"
-
-    }
-
-  },
-
-  {
-
-    "category": "ISG Security",
-
-    "hint": "Permissions must be managed for a service to be usable.",
-
-    "question": "After an ISG service is deployed, who can use it?",
-
-    "options": [
-
-      "Anyone on the internet, by default",
-
-      "Only users and responsibilities that have been granted specific permissions",
-
-      "Only the database administrator"
-
-    ],
-
-    "correctAnswer": "Only users and responsibilities that have been granted specific permissions",
-
-    "content": {
-
-      "type": "none",
-
-      "language": "none",
-
-      "value": ""
-
-    }
-
-  },
-
-  {
-
-    "category": "General Concepts",
-
-    "hint": "A set of rules for how two systems should communicate.",
-
-    "question": "In web services, what is an 'interface'?",
-
-    "options": [
-
-      "The graphical user interface (GUI)",
-
-      "A contract that defines how a client should interact with a service",
-
-      "The physical network connection"
-
-    ],
-
-    "correctAnswer": "A contract that defines how a client should interact with a service",
-
-    "content": {
-
-      "type": "none",
-
-      "language": "none",
-
-      "value": ""
-
-    }
-
-  },
-
-  {
-
-    "category": "PL/SQL Fundamentals",
-
-    "hint": "This is a primary benefit of grouping related logic into a single database object.",
-
-    "question": "What is a major performance benefit of using PL/SQL packages?",
-
-    "options": [
-
-      "They use less disk space than individual procedures",
-
-      "The entire package is loaded into memory on the first call",
-
-      "They automatically create indexes on tables"
-
-    ],
-
-    "correctAnswer": "The entire package is loaded into memory on the first call",
-
-    "content": {
-
-      "type": "code",
-
-      "language": "sql",
-
-      "value": "BEGIN\n  -- First call to my_package loads the whole thing into memory.\n  my_package.proc1(); \n\n  -- Subsequent calls are faster as it's already in memory.\n  my_package.proc2(); \nEND;"
-
- 
-    }
-
-  },
-
-  {
-
+      "cardId": "plsql_098",
+      "category": "Core Systems",
+      "hint": "A middleware framework inside EBS for exposing business logic.",
+      "question": "What is the primary role of the Integrated SOA Gateway (ISG)?",
+      "options": [
+        "To run the Oracle Database",
+        "To serve as a secure entry point for web services",
+        "To manage user interface themes"
+      ],
+      "correctAnswer": "To serve as a secure entry point for web services",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_099",
+      "category": "Core Systems",
+      "hint": "The fundamental structure of an EBS environment.",
+      "question": "On which of the three tiers of the EBS architecture does the ISG framework run?",
+      "options": [
+        "Database Tier",
+        "Desktop Tier",
+        "Application Tier"
+      ],
+      "correctAnswer": "Application Tier",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_100",
+      "category": "Core Systems",
+      "hint": "An internal, searchable catalog within EBS.",
+      "question": "What is the name of the central registry where all deployed ISG services are discoverable?",
+      "options": [
+        "The Service Hub",
+        "The Integration Repository",
+        "The API Gateway"
+      ],
+      "correctAnswer": "The Integration Repository",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_101",
+      "category": "PL/SQL Objects",
+      "hint": "The fundamental unit for organizing code in the Oracle Database.",
+      "question": "A PL/SQL package consists of which two parts?",
+      "options": [
+        "Header and Footer",
+        "Specification and Body",
+        "Public and Private Blocks"
+      ],
+      "correctAnswer": "Specification and Body",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_102",
+      "category": "PL/SQL Objects",
+      "hint": "This part of a package acts as the public 'contract' or interface.",
+      "question": "Which part of a PL/SQL package is read by the ISG parser to find services to deploy?",
+      "options": [
+        "Package Specification (.pks)",
+        "Package Body (.pkb)",
+        "Package Trigger"
+      ],
+      "correctAnswer": "Package Specification (.pks)",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- The ISG parser reads this file\nPACKAGE company_api IS\n  PROCEDURE hire_employee(p_name IN VARCHAR2);\nEND company_api;"
+      }
+    },
+    {
+      "cardId": "plsql_103",
+      "category": "PL/SQL Objects",
+      "hint": "This part of a package contains the actual implementation and private logic.",
+      "question": "Where is the detailed PL/SQL code for a procedure's business logic located?",
+      "options": [
+        "In the Package Specification",
+        "In the Integration Repository",
+        "In the Package Body"
+      ],
+      "correctAnswer": "In the Package Body",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "PACKAGE BODY company_api IS\n  PROCEDURE hire_employee(p_name IN VARCHAR2) IS\n  BEGIN\n    INSERT INTO employees (name) VALUES (p_name);\n  END hire_employee;\nEND company_api;"
+      }
+    },
+    {
+      "cardId": "plsql_104",
+      "category": "PL/SQL Objects",
+      "hint": "The best-practice method for a PL/SQL procedure to return a tabular dataset via ISG.",
+      "question": "To return multiple rows of data from a REST service, what is the officially supported OUT parameter data type?",
+      "options": [
+        "SYS_REFCURSOR",
+        "TABLE OF RECORD",
+        "CLOB"
+      ],
+      "correctAnswer": "SYS_REFCURSOR",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "PROCEDURE get_all_employees (\n  p_employee_data OUT SYS_REFCURSOR\n);"
+      }
+    },
+    {
+      "cardId": "plsql_105",
+      "category": "PL/SQL Objects",
+      "hint": "A composite PL/SQL data type that is not officially supported by ISG for REST parameters.",
+      "question": "What is the risk of using a `TABLE OF RECORD` as an OUT parameter in an ISG REST service?",
+      "options": [
+        "It is a documented best practice",
+        "It may break in future Oracle patches",
+        "It performs better than a SYS_REFCURSOR"
+      ],
+      "correctAnswer": "It may break in future Oracle patches",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_106",
+      "category": "PL/SQL Objects",
+      "hint": "This parameter mode defines data sent from the client to the EBS procedure.",
+      "question": "If a mobile app needs to send a `user_id` to a PL/SQL procedure, what parameter mode should be used?",
+      "options": [
+        "IN",
+        "OUT",
+        "IN OUT"
+      ],
+      "correctAnswer": "IN",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "PROCEDURE get_user_details (\n  p_user_id IN NUMBER\n);"
+      }
+    },
+    {
+      "cardId": "plsql_107",
+      "category": "PL/SQL Objects",
+      "hint": "This parameter mode defines data sent from the EBS procedure back to the client.",
+      "question": "If a PL/SQL procedure needs to return a status message to the mobile app, what parameter mode should be used?",
+      "options": [
+        "IN",
+        "OUT",
+        "IN OUT"
+      ],
+      "correctAnswer": "OUT",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "PROCEDURE create_user (\n  p_status_message OUT VARCHAR2\n);"
+      }
+    },
+    {
+      "cardId": "plsql_108",
+      "category": "ISG Deployment",
+      "hint": "Specially formatted PL/SQL comments that provide metadata to the ISG parser.",
+      "question": "What is the purpose of an Annotation, enclosed in `/*# ... */`, in a PL/SQL package specification?",
+      "options": [
+        "They are regular comments ignored by all tools",
+        "They provide instructions to ISG on how to create a web service",
+        "They are used for runtime debugging only"
+      ],
+      "correctAnswer": "They provide instructions to ISG on how to create a web service",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "/*# @rep:scope public */\nPROCEDURE my_public_procedure;"
+      }
+    },
+    {
+      "cardId": "plsql_109",
+      "category": "ISG Deployment",
+      "hint": "This annotation tag marks a procedure as intended for public exposure.",
+      "question": "Which annotation tag is required to make a procedure visible to the ISG deployment process?",
+      "options": [
+        "@rep:displayname",
+        "@rep:scope public",
+        "@rep:param"
+      ],
+      "correctAnswer": "@rep:scope public",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_110",
+      "category": "ISG Deployment",
+      "hint": "This annotation tag defines the properties of a procedure's arguments for the web service.",
+      "question": "What is the `@param` tag used for in an ISG annotation?",
+      "options": [
+        "To set a package-level variable",
+        "To describe a parameter's direction (IN/OUT) and data type",
+        "To define the display name of the service"
+      ],
+      "correctAnswer": "To describe a parameter's direction (IN/OUT) and data type",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "/*# @param P_USER_ID The unique identifier for the user. */\nPROCEDURE get_user(P_USER_ID IN NUMBER);"
+      }
+    },
+    {
+      "cardId": "plsql_111",
+      "category": "ISG Deployment",
+      "hint": "The first step in deployment, where a tool reads the package specification file.",
+      "question": "What is the main function of the `irep_parser.pl` tool?",
+      "options": [
+        "It deploys the service to the web server",
+        "It compiles the package body",
+        "It scans for annotations and generates a metadata file (.ildt)"
+      ],
+      "correctAnswer": "It scans for annotations and generates a metadata file (.ildt)",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_112",
+      "category": "ISG Deployment",
+      "hint": "The second step, which uses the output from the parser.",
+      "question": "What does the `FNDLOAD` utility do in the ISG deployment process?",
+      "options": [
+        "It loads the generated .ildt file into the Integration Repository",
+        "It loads data from a flat file into a custom table",
+        "It parses the package specification for errors"
+      ],
+      "correctAnswer": "It loads the generated .ildt file into the Integration Repository",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_113",
+      "category": "ISG Deployment",
+      "hint": "The final administrative step, performed in the EBS user interface.",
+      "question": "After parsing and loading, what is the final step to make a service live and accessible?",
+      "options": [
+        "Recompile the package",
+        "Restart the database",
+        "Click 'Deploy' on the service within the Integration Repository UI"
+      ],
+      "correctAnswer": "Click 'Deploy' on the service within the Integration Repository UI",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_114",
+      "category": "Execution Concepts",
+      "hint": "The process of converting PL/SQL OUT parameters into a JSON string.",
+      "question": "When ISG converts a SYS_REFCURSOR into a JSON array for a mobile app, what is this process called?",
+      "options": [
+        "Deserialization",
+        "Compilation",
+        "Serialization"
+      ],
+      "correctAnswer": "Serialization",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_115",
+      "category": "Execution Concepts",
+      "hint": "The process of converting a JSON object from a client request into PL/SQL data types.",
+      "question": "When a mobile app sends a JSON object in a POST request, what does the ISG engine do?",
+      "options": [
+        "It serializes the JSON into a string",
+        "It deserializes the JSON into PL/SQL parameters",
+        "It stores the raw JSON in a log file"
+      ],
+      "correctAnswer": "It deserializes the JSON into PL/SQL parameters",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_116",
+      "category": "Execution Concepts",
+      "hint": "The final, public-facing URL used to invoke a specific procedure.",
+      "question": "What is an 'Endpoint' in the context of ISG?",
+      "options": [
+        "A private database link",
+        "The URL that a client application calls to run the service",
+        "A database connection string"
+      ],
+      "correctAnswer": "The URL that a client application calls to run the service",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- Example Endpoint URL\nhttps://yourserver.com/OA_HTML/rest/api/v1/mobile/get_products"
+      }
+    },
+    {
+      "cardId": "plsql_117",
+      "category": "Troubleshooting",
+      "hint": "An error that prevents a service from being successfully registered in ISG.",
+      "question": "A missing or syntactically incorrect annotation block will cause what type of error?",
+      "options": [
+        "A Runtime Error",
+        "A Deployment-Time Error",
+        "A Network Timeout Error"
+      ],
+      "correctAnswer": "A Deployment-Time Error",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_118",
+      "category": "Troubleshooting",
+      "hint": "An error that occurs only when a live, deployed service is called.",
+      "question": "A bug in the package body's logic, such as a 'no data found' exception, is what type of error?",
+      "options": [
+        "Runtime Error",
+        "Deployment-Time Error",
+        "Parsing Error"
+      ],
+      "correctAnswer": "Runtime Error",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_119",
+      "category": "Development Concepts",
+      "hint": "The implied future cost of choosing an easy solution now over a more robust one.",
+      "question": "What kind of risk is a developer taking by using the undocumented serialization of a `TABLE OF RECORD`?",
+      "options": [
+        "No risk, as it is a common practice",
+        "A performance improvement",
+        "Incurring technical debt"
+      ],
+      "correctAnswer": "Incurring technical debt",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_120",
+      "category": "Core Systems",
+      "hint": "This is a comprehensive suite of integrated global business applications from Oracle.",
+      "question": "What is Oracle E-Business Suite (EBS)?",
+      "options": [
+        "A single application for Human Resources only",
+        "A suite of applications for core business functions like Finance and SCM",
+        "A type of Oracle Database"
+      ],
+      "correctAnswer": "A suite of applications for core business functions like Finance and SCM",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_121",
+      "category": "Core Systems",
+      "hint": "This tier in the EBS architecture is where all business data is stored.",
+      "question": "What is the primary role of the Database Tier in the EBS three-tier architecture?",
+      "options": [
+        "To run the business logic",
+        "To store all business data in the Oracle Database",
+        "To serve web pages to the end-user"
+      ],
+      "correctAnswer": "To store all business data in the Oracle Database",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_122",
+      "category": "PL/SQL Objects",
+      "hint": "This is Oracle's proprietary procedural extension to SQL.",
+      "question": "What language is primarily used to write business logic, stored procedures, and triggers inside the Oracle Database?",
+      "options": [
+        "Java",
+        "PL/SQL",
+        "T-SQL"
+      ],
+      "correctAnswer": "PL/SQL",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_123",
+      "category": "PL/SQL Objects",
+      "hint": "This parameter mode is used for a value that is sent by the client, modified, and then returned.",
+      "question": "A procedure needs to increment a counter sent by a client and return the new value. Which parameter mode should be used?",
+      "options": [
+        "IN",
+        "OUT",
+        "IN OUT"
+      ],
+      "correctAnswer": "IN OUT",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "PROCEDURE increment_counter(\n  p_counter IN OUT NUMBER\n) IS\nBEGIN\n  p_counter := p_counter + 1;\nEND;"
+      }
+    },
+    {
+      "cardId": "plsql_124",
+      "category": "ISG Deployment",
+      "hint": "This annotation tag sets a user-friendly name for the service in the repository.",
+      "question": "Which annotation allows a developer to set a clean, readable name like 'Get User Roles' for a service?",
+      "options": [
+        "@rep:scope",
+        "@rep:param",
+        "@rep:displayname"
+      ],
+      "correctAnswer": "@rep:displayname",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "/*# @rep:displayname \"Get User Roles\" */"
+      }
+    },
+    {
+      "cardId": "plsql_125",
+      "category": "ISG Deployment",
+      "hint": "This is what happens when the parser encounters a public procedure without a valid annotation.",
+      "question": "What is the consequence of a missing annotation block for a public procedure during the parsing step?",
+      "options": [
+        "The procedure is deployed with default settings",
+        "It is a fatal error that stops the deployment process for that procedure",
+        "A warning is logged, but the deployment continues"
+      ],
+      "correctAnswer": "It is a fatal error that stops the deployment process for that procedure",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_126",
+      "category": "Execution Concepts",
+      "hint": "This is how ISG transforms a SYS_REFCURSOR for a JSON response.",
+      "question": "How does ISG typically serialize a SYS_REFCURSOR?",
+      "options": [
+        "Into a single string with comma-separated values",
+        "Into a nested JSON object with metadata",
+        "Into a clean, flat JSON array of objects"
+      ],
+      "correctAnswer": "Into a clean, flat JSON array of objects",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_127",
+      "category": "Troubleshooting",
+      "hint": "This is a common runtime error when the ISG engine fails to execute a service.",
+      "question": "What common error might indicate a problem in the package body logic or a data issue at runtime?",
+      "options": [
+        "ISG_SERVICE_EXECUTION_ERROR",
+        "IREP_PARSER_FAILURE",
+        "FNDLOAD_MISSING_FILE"
+      ],
+      "correctAnswer": "ISG_SERVICE_EXECUTION_ERROR",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_128",
+      "category": "PL/SQL Fundamentals",
+      "hint": "A container for organizing related procedures, functions, and variables.",
+      "question": "In PL/SQL, what is the primary purpose of a 'package'?",
+      "options": [
+        "To store a single large table's data",
+        "To group related program units into a single database object",
+        "To define user permissions for an application"
+      ],
+      "correctAnswer": "To group related program units into a single database object",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_129",
+      "category": "PL/SQL Fundamentals",
+      "hint": "This is the public interface or 'contract' of a package.",
+      "question": "Which part of a PL/SQL package declares the public elements that can be called by other programs?",
+      "options": [
+        "Package Body",
+        "Package Specification",
+        "Package Header"
+      ],
+      "correctAnswer": "Package Specification",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- This is the Specification. It defines WHAT can be called.\nPACKAGE user_utils IS\n  PROCEDURE create_user(p_username IN VARCHAR2);\n  FUNCTION is_active(p_user_id IN NUMBER) RETURN BOOLEAN;\nEND user_utils;"
+      }
+    },
+    {
+      "cardId": "plsql_130",
+      "category": "PL/SQL Fundamentals",
+      "hint": "This contains the detailed implementation and private logic.",
+      "question": "Which part of a PL/SQL package contains the actual code that executes when a procedure is called?",
+      "options": [
+        "Package Specification",
+        "Anonymous Block",
+        "Package Body"
+      ],
+      "correctAnswer": "Package Body",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- This is the Body. It defines HOW the procedures work.\nPACKAGE BODY user_utils IS\n  PROCEDURE create_user(p_username IN VARCHAR2) IS\n  BEGIN\n    -- Implementation code goes here...\n    NULL;\n  END create_user;\n\n  FUNCTION is_active(p_user_id IN NUMBER) RETURN BOOLEAN IS\n  BEGIN\n    RETURN TRUE; -- Logic to check status...\n  END is_active;\nEND user_utils;"
+      }
+    },
+    {
+      "cardId": "plsql_131",
+      "category": "ISG Concepts",
+      "hint": "The process of analyzing text to understand its structure and meaning.",
+      "question": "In the context of ISG, what does 'parsing' a package specification mean?",
+      "options": [
+        "Executing the PL/SQL code",
+        "Reading the file to find annotations and validate its syntax",
+        "Encrypting the package contents"
+      ],
+      "correctAnswer": "Reading the file to find annotations and validate its syntax",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_132",
+      "category": "ISG Concepts",
+      "hint": "They define the direction of data flow for a service's arguments.",
+      "question": "What is the general purpose of parameters (IN, OUT, IN OUT) in an ISG service?",
+      "options": [
+        "To control the version of the service",
+        "To define the flow of data between the client and the server",
+        "To set database configuration values"
+      ],
+      "correctAnswer": "To define the flow of data between the client and the server",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "-- IN: Data flows IN to the server.\n-- OUT: Data flows OUT from the server.\nPROCEDURE example_proc(\n  p_input  IN  VARCHAR2,\n  p_output OUT NUMBER\n);"
+      }
+    },
+    {
+      "cardId": "plsql_133",
+      "category": "ISG Concepts",
+      "hint": "A public-facing URL that a client application uses to invoke a procedure.",
+      "question": "What is the 'endpoint' that ISG generates for a deployed service?",
+      "options": [
+        "A database connection string",
+        "A URL that exposes the PL/SQL procedure over the web",
+        "A local file path to the package"
+      ],
+      "correctAnswer": "A URL that exposes the PL/SQL procedure over the web",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_134",
+      "category": "ISG Concepts",
+      "hint": "These are the instructions that tell ISG how to create a web service.",
+      "question": "What is the fundamental role of 'annotations' in the ISG deployment process?",
+      "options": [
+        "They are comments for other developers and are ignored by ISG",
+        "They are metadata that guides the web service creation",
+        "They are commands that execute at runtime"
+      ],
+      "correctAnswer": "They are metadata that guides the web service creation",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "/*# @rep:scope public @rep:displayname \"Get All Products\" */\n-- The comment above is metadata, not just a comment."
+      }
+    },
+    {
+      "cardId": "plsql_135",
+      "category": "ISG Concepts",
+      "hint": "This is a central catalog within EBS for all available integration points.",
+      "question": "Once a service is loaded via FNDLOAD, where does its definition reside, making it ready for deployment?",
+      "options": [
+        "In the Application Server's memory",
+        "In the Oracle Integration Repository",
+        "In a temporary file on the server"
+      ],
+      "correctAnswer": "In the Oracle Integration Repository",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_136",
+      "category": "ISG Concepts",
+      "hint": "The process of converting database data (like a cursor) into a format like JSON.",
+      "question": "What is 'serialization' in the context of an ISG REST service returning data?",
+      "options": [
+        "Running database queries in a specific sequence",
+        "Converting native Oracle data types into a web-friendly format",
+        "Validating user input before processing"
+      ],
+      "correctAnswer": "Converting native Oracle data types into a web-friendly format",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_137",
+      "category": "ISG Concepts",
+      "hint": "The process of converting a format like JSON from a request into Oracle data types.",
+      "question": "When ISG receives a JSON object in a client request, what is 'deserialization'?",
+      "options": [
+        "Converting the JSON into native PL/SQL types for the procedure parameters",
+        "Logging the raw JSON request to a file",
+        "Sending the JSON response back to the client"
+      ],
+      "correctAnswer": "Converting the JSON into native PL/SQL types for the procedure parameters",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_138",
+      "category": "General Concepts",
+      "hint": "This is a system that enables different software applications to communicate with each other.",
+      "question": "ISG acts as what kind of software component between Oracle EBS and external systems?",
+      "options": [
+        "A database driver",
+        "A middleware framework",
+        "An operating system"
+      ],
+      "correctAnswer": "A middleware framework",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_139",
+      "category": "General Concepts",
+      "hint": "A pointer to a query's result set.",
+      "question": "In general terms, what is a 'cursor' in a database context?",
+      "options": [
+        "The blinking text symbol in a text editor",
+        "A memory area that holds a SQL statement and its result set",
+        "A user's mouse pointer"
+      ],
+      "correctAnswer": "A memory area that holds a SQL statement and its result set",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "DECLARE\n  -- l_cursor is a pointer to the result set of the query\n  CURSOR l_cursor IS SELECT employee_name FROM employees;\nBEGIN\n  NULL;\nEND;"
+      }
+    },
+    {
+      "cardId": "plsql_140",
+      "category": "General Concepts",
+      "hint": "The architectural principle of hiding implementation details.",
+      "question": "How do PL/SQL packages support 'encapsulation'?",
+      "options": [
+        "By allowing the package body (implementation) to be hidden from the user",
+        "By encrypting the data automatically",
+        "By combining all code into a single file"
+      ],
+      "correctAnswer": "By allowing the package body (implementation) to be hidden from the user",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_141",
+      "category": "General Concepts",
+      "hint": "A type of error that prevents the application from being built or deployed.",
+      "question": "A 'Deployment-Time Error' is best described as what?",
+      "options": [
+        "An error that happens when a user is interacting with the live application",
+        "An error in the business logic that produces a wrong result",
+        "An error during the setup or installation process that prevents it from completing"
+      ],
+      "correctAnswer": "An error during the setup or installation process that prevents it from completing",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_142",
+      "category": "General Concepts",
+      "hint": "A type of error that occurs while the application is in use.",
+      "question": "A 'Runtime Error' is best described as what?",
+      "options": [
+        "A syntax error in the source code",
+        "An error that happens after deployment, when the application is being used",
+        "An error that prevents the code from being compiled"
+      ],
+      "correctAnswer": "An error that happens after deployment, when the application is being used",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_143",
+      "category": "PL/SQL Fundamentals",
+      "hint": "A structured data type that can hold a set of related fields.",
+      "question": "In PL/SQL, what is a 'RECORD' type used for?",
+      "options": [
+        "To store a single value like a number or string",
+        "To group several related data items together as a single unit",
+        "To define a database table"
+      ],
+      "correctAnswer": "To group several related data items together as a single unit",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "DECLARE\n  TYPE t_employee_rec IS RECORD (\n    id         employees.employee_id%TYPE,\n    first_name employees.first_name%TYPE,\n    last_name  employees.last_name%TYPE\n  );\n  l_employee t_employee_rec;\nBEGIN\n  l_employee.id := 100;\nEND;"
+      }
+    },
+    {
+      "cardId": "plsql_144",
+      "category": "PL/SQL Fundamentals",
+      "hint": "A data type used for storing large blocks of character data.",
+      "question": "Which PL/SQL data type is most suitable for storing a very long text string, like a JSON payload?",
+      "options": [
+        "VARCHAR2",
+        "NUMBER",
+        "CLOB"
+      ],
+      "correctAnswer": "CLOB",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "DECLARE\n  l_json_data CLOB;\nBEGIN\n  l_json_data := '{\"id\": 1, \"data\": \"...very large amount of text...\"}';\nEND;"
+      }
+    },
+    {
+      "cardId": "plsql_145",
+      "category": "ISG Security",
+      "hint": "Permissions must be managed for a service to be usable.",
+      "question": "After an ISG service is deployed, who can use it?",
+      "options": [
+        "Anyone on the internet, by default",
+        "Only users and responsibilities that have been granted specific permissions",
+        "Only the database administrator"
+      ],
+      "correctAnswer": "Only users and responsibilities that have been granted specific permissions",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_146",
+      "category": "General Concepts",
+      "hint": "A set of rules for how two systems should communicate.",
+      "question": "In web services, what is an 'interface'?",
+      "options": [
+        "The graphical user interface (GUI)",
+        "A contract that defines how a client should interact with a service",
+        "The physical network connection"
+      ],
+      "correctAnswer": "A contract that defines how a client should interact with a service",
+      "content": {
+        "type": "none",
+        "language": "none",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "plsql_147",
+      "category": "PL/SQL Fundamentals",
+      "hint": "This is a primary benefit of grouping related logic into a single database object.",
+      "question": "What is a major performance benefit of using PL/SQL packages?",
+      "options": [
+        "They use less disk space than individual procedures",
+        "The entire package is loaded into memory on the first call",
+        "They automatically create indexes on tables"
+      ],
+      "correctAnswer": "The entire package is loaded into memory on the first call",
+      "content": {
+        "type": "code",
+        "language": "sql",
+        "value": "BEGIN\n  -- First call to my_package loads the whole thing into memory.\n  my_package.proc1(); \n\n  -- Subsequent calls are faster as it's already in memory.\n  my_package.proc2(); \nEND;"
+      }
+    },
+    {
+      "cardId": "plsql_148",
       "category": "SQL CRUD",
       "hint": "This is the 'C' (Create) in CRUD.",
       "question": "A POST request to `/api/products` typically triggers which SQL command?",
@@ -2306,6 +2130,7 @@
       }
     },
     {
+      "cardId": "plsql_149",
       "category": "SQL CRUD",
       "hint": "This is the 'R' (Read) in CRUD.",
       "question": "A GET request to `/api/products/42` corresponds to which SQL command?",
@@ -2318,6 +2143,7 @@
       }
     },
     {
+      "cardId": "plsql_150",
       "category": "SQL CRUD",
       "hint": "This is the 'U' (Update) in CRUD.",
       "question": "A PATCH request to `/api/products/42` with a new price triggers which SQL command?",
@@ -2330,6 +2156,7 @@
       }
     },
     {
+      "cardId": "plsql_151",
       "category": "SQL CRUD",
       "hint": "This is the 'D' (Delete) in CRUD.",
       "question": "A DELETE request to `/api/products/42` results in which SQL command?",
@@ -2342,6 +2169,7 @@
       }
     },
     {
+      "cardId": "plsql_152",
       "category": "SQL Joins",
       "hint": "This is the most common type of join, returning only rows that have a match in both tables.",
       "question": "To get a list of users and the names of the departments they belong to, you'd use an (...).",
@@ -2354,6 +2182,7 @@
       }
     },
     {
+      "cardId": "plsql_153",
       "category": "SQL Joins",
       "hint": "This type of join returns all rows from the first (left) table, even if there are no matches in the second.",
       "question": "To list all employees and their assigned computer, including employees who have no computer, you use a (...).",
@@ -2366,6 +2195,7 @@
       }
     },
     {
+      "cardId": "plsql_154",
       "category": "SQL Aggregation",
       "hint": "This clause is used with aggregate functions (like COUNT, SUM) to group rows that have the same values.",
       "question": "To count the number of employees in each department, you would use `COUNT(*)` and a (...) clause.",
@@ -2378,6 +2208,7 @@
       }
     },
     {
+      "cardId": "plsql_155",
       "category": "SQL Aggregation",
       "hint": "This clause is used to filter groups based on the results of aggregate functions.",
       "question": "To find only departments with more than 10 employees, you would use a (...) clause after `GROUP BY`.",
@@ -2390,6 +2221,7 @@
       }
     },
     {
+      "cardId": "plsql_156",
       "category": "SQL Transactions",
       "hint": "This command saves all changes made during the current transaction, making them permanent.",
       "question": "After a successful `INSERT` and `UPDATE`, what command finalizes the transaction?",
@@ -2402,6 +2234,7 @@
       }
     },
     {
+      "cardId": "plsql_157",
       "category": "SQL Transactions",
       "hint": "This command undoes all the changes made since the beginning of the transaction.",
       "question": "If an error occurs midway through a transaction, what command should be executed to prevent partial changes?",
@@ -2410,10 +2243,11 @@
       "content": {
         "type": "code",
         "language": "plsql",
-        "value": "BEGIN\n  UPDATE accounts SET balance = balance - 100 WHERE id = 1;\n  -- An error happens here!\n  ROLLBACK;\nEXCEPTION\n  WHEN OTHERS THEN\n    ROLLBACK;\nEND;"
+        "value": "BEGIN\n  UPDATE accounts SET balance = balance - 100 WHERE id = 1;\n  -- An error happens here!\n  ROLLBACK;\nEXCEPTION\n  WHEN OTHERS THEN\n    ROLLBACK;\nEND;"
       }
     },
     {
+      "cardId": "plsql_158",
       "category": "SQL Transactions",
       "hint": "This principle ensures that a transaction is treated as a single, indivisible unit of work.",
       "question": "The 'A' in ACID properties stands for (...), meaning the transaction either fully completes or not at all.",
@@ -2426,6 +2260,7 @@
       }
     },
     {
+      "cardId": "plsql_159",
       "category": "SQL Transactions",
       "hint": "This property ensures that a transaction brings the database from one valid state to another.",
       "question": "The 'C' in ACID properties stands for (...), ensuring all database rules and constraints are maintained.",
@@ -2438,6 +2273,7 @@
       }
     },
     {
+      "cardId": "plsql_160",
       "category": "SQL Transactions",
       "hint": "This property ensures that concurrent transactions do not interfere with each other.",
       "question": "The 'I' in ACID stands for (...), making transactions appear as if they are running sequentially.",
@@ -2450,6 +2286,7 @@
       }
     },
     {
+      "cardId": "plsql_161",
       "category": "SQL Transactions",
       "hint": "This property ensures that once a transaction has been committed, it will remain so, even in the event of a power loss.",
       "question": "The 'D' in ACID stands for (...), meaning committed changes are permanently saved.",
@@ -2462,6 +2299,7 @@
       }
     },
     {
+      "cardId": "plsql_162",
       "category": "SQL Injection",
       "hint": "This is a major security vulnerability where malicious SQL is inserted into input data.",
       "question": "What is the security risk of building SQL strings directly from user input?",
@@ -2474,6 +2312,7 @@
       }
     },
     {
+      "cardId": "plsql_163",
       "category": "SQL Injection",
       "hint": "This technique uses placeholders in a SQL query and provides data separately, preventing malicious interpretation.",
       "question": "What is the primary defense against SQL Injection attacks?",
@@ -2486,6 +2325,7 @@
       }
     },
     {
+      "cardId": "plsql_164",
       "category": "Database Design",
       "hint": "This is a special column that uniquely identifies each record in a table.",
       "question": "The `user_id` column, which has a unique value for every user, is the table's (...).",
@@ -2494,10 +2334,11 @@
       "content": {
         "type": "code",
         "language": "sql",
-        "value": "CREATE TABLE users (\n  user_id NUMBER GENERATED AS IDENTITY,\n  email VARCHAR2(100 CHAR) NOT NULL UNIQUE,\n  CONSTRAINT users_pk PRIMARY KEY (user_id)\n);"
+        "value": "CREATE TABLE users (\n  user_id NUMBER GENERATED AS IDENTITY,\n  email VARCHAR2(100 CHAR) NOT NULL UNIQUE,\n  CONSTRAINT users_pk PRIMARY KEY (user_id)\n);"
       }
     },
     {
+      "cardId": "plsql_165",
       "category": "Database Design",
       "hint": "This column in one table refers to the primary key of another table, creating a link.",
       "question": "In a `posts` table, a `user_id` column that refers to the `users` table is a (...).",
@@ -2506,10 +2347,11 @@
       "content": {
         "type": "code",
         "language": "sql",
-        "value": "CREATE TABLE posts (\n  post_id NUMBER PRIMARY KEY,\n  author_id NUMBER NOT NULL,\n  title VARCHAR2(200 CHAR),\n  CONSTRAINT posts_fk_author FOREIGN KEY (author_id)\n    REFERENCES users (user_id)\n);"
+        "value": "CREATE TABLE posts (\n  post_id NUMBER PRIMARY KEY,\n  author_id NUMBER NOT NULL,\n  title VARCHAR2(200 CHAR),\n  CONSTRAINT posts_fk_author FOREIGN KEY (author_id)\n    REFERENCES users (user_id)\n);"
       }
     },
     {
+      "cardId": "plsql_166",
       "category": "Database Design",
       "hint": "This rule on a foreign key will automatically delete child rows when the parent row is deleted.",
       "question": "The `(...)` rule ensures that deleting a user also deletes all their posts.",
@@ -2522,6 +2364,7 @@
       }
     },
     {
+      "cardId": "plsql_167",
       "category": "Database Design",
       "hint": "This data structure improves the speed of data retrieval operations, like an index in a book.",
       "question": "To speed up queries that search for users by email, you should create an (...) on the `email` column.",
@@ -2534,6 +2377,7 @@
       }
     },
     {
+      "cardId": "plsql_168",
       "category": "Database Design",
       "hint": "The process of organizing columns and tables to minimize data redundancy.",
       "question": "What is the term for designing a database to reduce repetition and improve data integrity?",
@@ -2546,6 +2390,7 @@
       }
     },
     {
+      "cardId": "plsql_169",
       "category": "Database Design",
       "hint": "This type of table is used to resolve a many-to-many relationship.",
       "question": "To link `students` and `classes` (where a student can take many classes, and a class has many students), you need a (...) table.",
@@ -2554,10 +2399,11 @@
       "content": {
         "type": "code",
         "language": "sql",
-        "value": "CREATE TABLE enrollments (\n  student_id NUMBER REFERENCES students(student_id),\n  class_id NUMBER REFERENCES classes(class_id),\n  PRIMARY KEY (student_id, class_id)\n);"
+        "value": "CREATE TABLE enrollments (\n  student_id NUMBER REFERENCES students(student_id),\n  class_id NUMBER REFERENCES classes(class_id),\n  PRIMARY KEY (student_id, class_id)\n);"
       }
     },
     {
+      "cardId": "plsql_170",
       "category": "PL/SQL",
       "hint": "This is a named block of code stored in the database, designed to perform an action.",
       "question": "To encapsulate the logic for creating a new user, you would write a (...) Procedure.",
@@ -2566,10 +2412,11 @@
       "content": {
         "type": "code",
         "language": "plsql",
-        "value": "CREATE OR REPLACE PROCEDURE prc_create_user(p_email IN VARCHAR2)\nAS\nBEGIN\n  INSERT INTO users (email) VALUES (p_email);\n  COMMIT;\nEND;"
+        "value": "CREATE OR REPLACE PROCEDURE prc_create_user(p_email IN VARCHAR2)\nAS\nBEGIN\n  INSERT INTO users (email) VALUES (p_email);\n  COMMIT;\nEND;"
       }
     },
     {
+      "cardId": "plsql_171",
       "category": "PL/SQL",
       "hint": "This type of PL/SQL block is similar to a procedure but must return a value.",
       "question": "To encapsulate logic that calculates and returns a value, such as a user's total sales, you write a (...).",
@@ -2578,10 +2425,11 @@
       "content": {
         "type": "code",
         "language": "plsql",
-        "value": "CREATE OR REPLACE FUNCTION fnc_get_user_email(p_user_id IN NUMBER)\nRETURN VARCHAR2\nAS\n  v_email VARCHAR2(100 CHAR);\nBEGIN\n  SELECT email INTO v_email FROM users WHERE user_id = p_user_id;\n  RETURN v_email;\nEND;"
+        "value": "CREATE OR REPLACE FUNCTION fnc_get_user_email(p_user_id IN NUMBER)\nRETURN VARCHAR2\nAS\n  v_email VARCHAR2(100 CHAR);\nBEGIN\n  SELECT email INTO v_email FROM users WHERE user_id = p_user_id;\n  RETURN v_email;\nEND;"
       }
     },
     {
+      "cardId": "plsql_172",
       "category": "PL/SQL",
       "hint": "This database object automatically executes in response to an event like an INSERT on a table.",
       "question": "A (...) is a special procedure that runs automatically when a data modification event occurs.",
@@ -2590,10 +2438,11 @@
       "content": {
         "type": "code",
         "language": "plsql",
-        "value": "CREATE OR REPLACE TRIGGER trg_users_audit\nAFTER INSERT OR UPDATE ON users\nFOR EACH ROW\nBEGIN\n  -- Logic to write to an audit log table\nEND;"
+        "value": "CREATE OR REPLACE TRIGGER trg_users_audit\nAFTER INSERT OR UPDATE ON users\nFOR EACH ROW\nBEGIN\n  -- Logic to write to an audit log table\nEND;"
       }
     },
     {
+      "cardId": "plsql_173",
       "category": "PL/SQL",
       "hint": "These special records inside a trigger allow you to access the column values before and after the triggering DML operation.",
       "question": "Inside a trigger, you can reference the new data with `:new` and the original data with `(...)`.",
@@ -2602,10 +2451,11 @@
       "content": {
         "type": "code",
         "language": "plsql",
-        "value": "CREATE OR REPLACE TRIGGER trg_log_price_change\nBEFORE UPDATE OF price ON products\nFOR EACH ROW\nBEGIN\n  INSERT INTO price_history (product_id, old_price, new_price)\n  VALUES (:old.product_id, :old.price, :new.price);\nEND;"
+        "value": "CREATE OR REPLACE TRIGGER trg_log_price_change\nBEFORE UPDATE OF price ON products\nFOR EACH ROW\nBEGIN\n  INSERT INTO price_history (product_id, old_price, new_price)\n  VALUES (:old.product_id, :old.price, :new.price);\nEND;"
       }
     },
     {
+      "cardId": "plsql_174",
       "category": "PL/SQL",
       "hint": "This object generates unique, sequential numbers, perfect for primary keys.",
       "question": "To automatically generate unique IDs for new records, Oracle uses a (...).",
@@ -2618,6 +2468,7 @@
       }
     },
     {
+      "cardId": "plsql_175",
       "category": "PL/SQL Cursors",
       "hint": "This is a pointer to the result set of a query, allowing an application to process rows one by one.",
       "question": "A (...) is a private SQL work area that lets you process the rows returned by a multi-row query.",
@@ -2626,10 +2477,11 @@
       "content": {
         "type": "code",
         "language": "plsql",
-        "value": "DECLARE\n  CURSOR c_employees IS SELECT name FROM employees;\n  v_name employees.name%TYPE;\nBEGIN\n  OPEN c_employees;\n  FETCH c_employees INTO v_name;\n  CLOSE c_employees;\nEND;"
+        "value": "DECLARE\n  CURSOR c_employees IS SELECT name FROM employees;\n  v_name employees.name%TYPE;\nBEGIN\n  OPEN c_employees;\n  FETCH c_employees INTO v_name;\n  CLOSE c_employees;\nEND;"
       }
     },
     {
+      "cardId": "plsql_176",
       "category": "PL/SQL Cursors",
       "hint": "This is a pointer to a result set that can be passed as a parameter, often returned from a function to a client.",
       "question": "PL/SQL functions often return a `(...)`, which acts as a flexible pointer for query results.",
@@ -2638,10 +2490,11 @@
       "content": {
         "type": "code",
         "language": "plsql",
-        "value": "CREATE OR REPLACE FUNCTION fnc_get_employees\nRETURN SYS_REFCURSOR\nAS\n  o_cursor SYS_REFCURSOR;\nBEGIN\n  OPEN o_cursor FOR SELECT employee_id, name FROM employees;\n  RETURN o_cursor;\nEND;"
+        "value": "CREATE OR REPLACE FUNCTION fnc_get_employees\nRETURN SYS_REFCURSOR\nAS\n  o_cursor SYS_REFCURSOR;\nBEGIN\n  OPEN o_cursor FOR SELECT employee_id, name FROM employees;\n  RETURN o_cursor;\nEND;"
       }
     },
     {
+      "cardId": "plsql_177",
       "category": "PL/SQL Error Handling",
       "hint": "This block of code is used to catch and handle errors that occur in a PL/SQL block.",
       "question": "To handle potential errors like `NO_DATA_FOUND` in PL/SQL, you use an (...) block.",
@@ -2650,10 +2503,11 @@
       "content": {
         "type": "code",
         "language": "plsql",
-        "value": "BEGIN\n  SELECT name INTO v_name FROM users WHERE user_id = 999;\nEXCEPTION\n  WHEN NO_DATA_FOUND THEN\n    dbms_output.put_line('User not found!');\nEND;"
+        "value": "BEGIN\n  SELECT name INTO v_name FROM users WHERE user_id = 999;\nEXCEPTION\n  WHEN NO_DATA_FOUND THEN\n    dbms_output.put_line('User not found!');\nEND;"
       }
     },
     {
+      "cardId": "plsql_178",
       "category": "PL/SQL Error Handling",
       "hint": "This procedure allows you to raise a custom error with a specific number and message from your code.",
       "question": "To stop execution and send a clear, custom error message to the client application, you can use (...).",
@@ -2662,10 +2516,11 @@
       "content": {
         "type": "code",
         "language": "plsql",
-        "value": "IF p_balance < p_amount THEN\n  -- Raise a custom error with code -20001\n  RAISE_APPLICATION_ERROR(-20001, 'Insufficient funds.');\nEND IF;"
-     }
+        "value": "IF p_balance < p_amount THEN\n  -- Raise a custom error with code -20001\n  RAISE_APPLICATION_ERROR(-20001, 'Insufficient funds.');\nEND IF;"
+      }
     },
     {
+      "cardId": "plsql_179",
       "category": "Package Structure",
       "hint": "Acts as the public interface or 'contract' of the package.",
       "question": "Which part of a PL/SQL package declares the public elements accessible by other programs?",
@@ -2682,6 +2537,7 @@
       }
     },
     {
+      "cardId": "plsql_180",
       "category": "Package Structure",
       "hint": "Contains the actual implementation and private logic.",
       "question": "Where is the detailed PL/SQL code for procedures and functions implemented?",
@@ -2698,6 +2554,7 @@
       }
     },
     {
+      "cardId": "plsql_181",
       "category": "ISG Deployment: Source Code",
       "hint": "These special comments provide metadata instructions for the ISG parser.",
       "question": "What must be added to a PL/SQL package specification to expose its procedures as a REST service via ISG?",
@@ -2714,6 +2571,7 @@
       }
     },
     {
+      "cardId": "plsql_182",
       "category": "ISG Deployment: Source Code",
       "hint": "This annotation defines the public-facing name of the service operation in the ISG repository.",
       "question": "Which ISG annotation is used to specify a user-friendly name for a web service method?",
@@ -2730,6 +2588,7 @@
       }
     },
     {
+      "cardId": "plsql_183",
       "category": "ISG Deployment: Metadata Generation",
       "hint": "This command-line script reads your annotated package file and generates a metadata file.",
       "question": "What is the name of the Oracle Perl script used to parse the annotated PL/SQL file for ISG?",
@@ -2746,6 +2605,7 @@
       }
     },
     {
+      "cardId": "plsql_184",
       "category": "ISG Deployment: Metadata Generation",
       "hint": "This file is a blueprint or manifest describing your service, not executable code.",
       "question": "What is the file extension of the Integration Repository Loader Data File generated by the ISG parser?",
@@ -2762,6 +2622,7 @@
       }
     },
     {
+      "cardId": "plsql_185",
       "category": "ISG Deployment: Lifecycle",
       "hint": "This is a standard Oracle EBS command-line utility for loading setup and configuration data.",
       "question": "Which utility is used to upload the .ildt metadata file into the Oracle Integration Repository tables?",
@@ -2778,6 +2639,7 @@
       }
     },
     {
+      "cardId": "plsql_186",
       "category": "ISG Deployment: Lifecycle",
       "hint": "An active public endpoint can only point to one implementation at a time to avoid conflicts.",
       "question": "Why is it necessary to undeploy an existing service before deploying a new version to the same Service Alias?",
@@ -2794,6 +2656,7 @@
       }
     },
     {
+      "cardId": "plsql_187",
       "category": "ISG Deployment: Lifecycle",
       "hint": "This feature decouples the client application from the underlying PL/SQL package name.",
       "question": "In the ISG UI, what are you assigning when you provide the public-facing URL name for your service (e.g., 'ISTORE_MOBILE')?",
@@ -2810,6 +2673,7 @@
       }
     },
     {
+      "cardId": "plsql_188",
       "category": "ISG Deployment: Finalization",
       "hint": "By default, a newly deployed service is inaccessible.",
       "question": "After deploying a service via the ISG UI, what is the critical security step required to allow users to invoke it?",
@@ -2826,6 +2690,7 @@
       }
     },
     {
+      "cardId": "plsql_189",
       "category": "ISG Deployment: Finalization",
       "hint": "The server might be using an old, in-memory version of the service definition.",
       "question": "What is the final action required to ensure the OAFM server recognizes the newly deployed ISG service?",
@@ -2842,6 +2707,7 @@
       }
     },
     {
+      "cardId": "plsql_190",
       "category": "PL/SQL Data Types",
       "hint": "It's like a row in a database table, grouping multiple fields under a single name.",
       "question": "What PL/SQL composite data type holds a single row of data with multiple fields of potentially different types?",
@@ -2858,6 +2724,7 @@
       }
     },
     {
+      "cardId": "plsql_191",
       "category": "PL/SQL Data Types",
       "hint": "This defines a collection or list of a previously defined composite data type.",
       "question": "What PL/SQL structure defines a collection of RECORDs, often used to pass lists of data to procedures?",
@@ -2874,6 +2741,7 @@
       }
     },
     {
+      "cardId": "plsql_192",
       "category": "PL/SQL Data Types",
       "hint": "This syntax creates an associative array, where each element is associated with a unique integer key.",
       "question": "What does the `INDEX BY BINARY_INTEGER` clause create?",
@@ -2890,6 +2758,7 @@
       }
     },
     {
+      "cardId": "plsql_193",
       "category": "PL/SQL Data Types",
       "hint": "This attribute makes your code more resilient to changes in the database schema.",
       "question": "Which attribute allows you to declare a variable with the same data type as a specific database column?",
@@ -2906,6 +2775,7 @@
       }
     },
     {
+      "cardId": "plsql_194",
       "category": "PL/SQL Data Types",
       "hint": "It's a pointer to a result set, commonly used to return query results from a stored procedure.",
       "question": "Which data type allows a procedure to return a cursor to the calling environment?",
@@ -2922,6 +2792,7 @@
       }
     },
     {
+      "cardId": "plsql_195",
       "category": "PL/SQL Parameters",
       "hint": "This is the default parameter mode and is read-only.",
       "question": "If a parameter mode is not specified for a procedure, what does PL/SQL assume it is?",
@@ -2938,6 +2809,7 @@
       }
     },
     {
+      "cardId": "plsql_196",
       "category": "PL/SQL Parameters",
       "hint": "This mode is write-only from inside the subprogram; its initial value is ignored.",
       "question": "Which parameter mode is used exclusively to return a value from a subprogram to the caller?",
@@ -2954,6 +2826,7 @@
       }
     },
     {
+      "cardId": "plsql_197",
       "category": "PL/SQL Parameters",
       "hint": "This mode allows a subprogram to read the initial value of a parameter and also change it.",
       "question": "Which parameter mode allows a value to be passed into a subprogram, modified, and then returned?",
@@ -2970,6 +2843,7 @@
       }
     },
     {
+      "cardId": "plsql_198",
       "category": "PL/SQL Parameters",
       "hint": "This performance hint requests that the compiler pass a parameter by reference instead of by value.",
       "question": "What hint can be used with OUT and IN OUT parameters to improve performance when passing large data structures?",
@@ -2986,6 +2860,7 @@
       }
     },
     {
+      "cardId": "plsql_199",
       "category": "PL/SQL General Concepts",
       "hint": "This command is useful for modifying a package without having to drop it first.",
       "question": "Which DDL command creates a new package or replaces an existing one with the same name?",
@@ -3002,6 +2877,7 @@
       }
     },
     {
+      "cardId": "plsql_200",
       "category": "PL/SQL Data Types",
       "hint": "Think 'large text data'.",
       "question": "Which data type is specifically designed for storing large blocks of character data?",
@@ -3018,6 +2894,7 @@
       }
     },
     {
+      "cardId": "plsql_201",
       "category": "PL/SQL General Concepts",
       "hint": "It's a subprogram that performs an action but doesn't have to return a value.",
       "question": "What is a named PL/SQL block that performs a specific action and is called as a standalone statement?",
@@ -3034,6 +2911,7 @@
       }
     },
     {
+      "cardId": "plsql_202",
       "category": "PL/SQL General Concepts",
       "hint": "This subprogram must compute and return a single value.",
       "question": "A PL/SQL subprogram that must contain a RETURN clause is known as a (...) ?",
@@ -3050,6 +2928,7 @@
       }
     },
     {
+      "cardId": "plsql_203",
       "category": "ISG Deployment: Source Code",
       "hint": "This is the 'public-facing' part of a package.",
       "question": "Which part of the PL/SQL package does the ISG parser read to find annotations?",
@@ -3066,6 +2945,7 @@
       }
     },
     {
+      "cardId": "plsql_204",
       "category": "PL/SQL Data Types",
       "hint": "What are the building blocks of a TABLE OF RECORD?",
       "question": "In a `TABLE OF RECORD` collection, what does the `RECORD` part define?",
@@ -3082,6 +2962,7 @@
       }
     },
     {
+      "cardId": "plsql_205",
       "category": "ISG Deployment: Lifecycle",
       "hint": "This is the final activation step performed in a web browser.",
       "question": "After uploading the .ildt file, where is the final 'Deploy' action performed to make the service live?",
@@ -3098,6 +2979,7 @@
       }
     },
     {
+      "cardId": "plsql_206",
       "category": "PL/SQL General Concepts",
       "hint": "A way to group logically related PL/SQL elements.",
       "question": "What schema object is used to group related procedures, functions, types, and variables into a single, named unit?",
@@ -3114,6 +2996,7 @@
       }
     },
     {
+      "cardId": "plsql_207",
       "category": "PL/SQL Data Types",
       "hint": "It is used for storing variable-length character strings up to a specified maximum.",
       "question": "Which PL/SQL data type should be used for a text field that will store names up to 50 characters long?",
@@ -3130,6 +3013,7 @@
       }
     },
     {
+      "cardId": "plsql_208",
       "category": "PL/SQL Data Types",
       "hint": "This integer data type is now identical to PLS_INTEGER in recent Oracle versions.",
       "question": "Which PL/SQL data type is a signed integer optimized for speed in calculations?",
@@ -3146,6 +3030,7 @@
       }
     },
     {
+      "cardId": "plsql_209",
       "category": "ISG Deployment: Concepts",
       "hint": "The parser needs special instructions embedded in comments.",
       "question": "What is the primary reason for using ISG Annotations in a package specification?",
@@ -3162,6 +3047,7 @@
       }
     },
     {
+      "cardId": "plsql_210",
       "category": "ISG Deployment: Concepts",
       "hint": "This file is the 'blueprint' for FNDLOAD.",
       "question": "What is the primary purpose of the .ildt file in the ISG deployment process?",
@@ -3178,6 +3064,7 @@
       }
     },
     {
+      "cardId": "plsql_211",
       "category": "PL/SQL General Concepts",
       "hint": "Think about efficiency when passing large collections between procedures.",
       "question": "What is a key advantage of using a `TABLE OF RECORD` data type as a parameter?",
@@ -3194,6 +3081,7 @@
       }
     },
     {
+      "cardId": "plsql_212",
       "category": "PL/SQL Parameters",
       "hint": "This mode is a 'two-way street' for data.",
       "question": "A procedure needs to check a current balance and update it with a new total. Which parameter mode is most suitable for the balance variable?",
@@ -3210,6 +3098,7 @@
       }
     },
     {
+      "cardId": "plsql_213",
       "category": "PL/SQL Parameters",
       "hint": "This mode's value is unreadable inside the procedure until it is set.",
       "question": "A procedure's job is to generate a new transaction ID and return it to the caller. Which parameter mode is most suitable for the ID?",
@@ -3226,6 +3115,7 @@
       }
     },
     {
+      "cardId": "plsql_214",
       "category": "ISG Deployment: Concepts",
       "hint": "This defines the specific URL endpoint where the service is available.",
       "question": "In the context of ISG, what does the Service Alias directly control?",
@@ -3242,6 +3132,7 @@
       }
     },
     {
+      "cardId": "plsql_215",
       "category": "PL/SQL Data Types",
       "hint": "It's a composite type that mirrors the structure of an entire table row.",
       "question": "To declare a variable that can hold an entire row from the `employees` table, you would use `v_emp employees`(...)`",
@@ -3258,6 +3149,7 @@
       }
     },
     {
+      "cardId": "plsql_216",
       "category": "ISG Deployment: Finalization",
       "hint": "Think about stale data held in memory.",
       "question": "What is the main reason for clearing the cache after deploying an ISG service?",
@@ -3274,6 +3166,7 @@
       }
     },
     {
+      "cardId": "plsql_217",
       "category": "PL/SQL Data Types",
       "hint": "Imagine an address book where you look up people by their unique ID number.",
       "question": "An associative array defined with `INDEX BY BINARY_INTEGER` is a collection where each element is accessed by a(n) (...)?",
@@ -3290,6 +3183,7 @@
       }
     },
     {
+      "cardId": "plsql_218",
       "category": "PL/SQL General Concepts",
       "hint": "One part is the 'what' (the contract), the other is the 'how' (the logic).",
       "question": "A PL/SQL package is composed of which two distinct parts?",
@@ -3306,6 +3200,7 @@
       }
     },
     {
+      "cardId": "plsql_219",
       "category": "PL/SQL Parameters",
       "hint": "It avoids creating a temporary copy of a large parameter.",
       "question": "What is the primary benefit of using the `NOCOPY` hint with a large `TABLE OF RECORD` parameter?",
@@ -3322,6 +3217,7 @@
       }
     },
     {
+      "cardId": "plsql_220",
       "category": "PL/SQL Error Handling",
       "hint": "This block of code is used to catch and handle errors that occur in a PL/SQL block.",
       "question": "To handle potential errors like `NO_DATA_FOUND` in PL/SQL, you use an (...) block.",
@@ -3338,6 +3234,7 @@
       }
     },
     {
+      "cardId": "plsql_221",
       "category": "PL/SQL Error Handling",
       "hint": "This procedure allows you to raise a custom error with a specific number and message from your code.",
       "question": "To stop execution and send a clear, custom error message to the client application, you can use (...).",
@@ -3355,9 +3252,3 @@
     }
   ]
 }
-
-
-
-
-
-      

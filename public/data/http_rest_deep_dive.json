@@ -6,6 +6,7 @@
   "language": "json",
   "cards": [
     {
+      "cardId": "http_001",
       "category": "Core Concepts",
       "hint": "This is the entity that initiates a communication request.",
       "question": "In the client-server model, which entity starts the conversation by sending a request?",
@@ -22,6 +23,7 @@
       }
     },
     {
+      "cardId": "http_002",
       "category": "Core Concepts",
       "hint": "This is the entity that waits for, processes, and responds to requests.",
       "question": "Which entity is responsible for listening for incoming requests and providing responses?",
@@ -38,6 +40,7 @@
       }
     },
     {
+      "cardId": "http_003",
       "category": "Core Concepts",
       "hint": "This protocol adds a layer of encryption to standard web communication.",
       "question": "What is the primary difference between HTTP and HTTPS?",
@@ -54,6 +57,7 @@
       }
     },
     {
+      "cardId": "http_004",
       "category": "Core Concepts",
       "hint": "The server does not store any client context between requests.",
       "question": "A key principle of REST is that the server is (...), meaning every request must contain all necessary information.",
@@ -70,6 +74,7 @@
       }
     },
     {
+      "cardId": "http_005",
       "category": "Core Concepts",
       "hint": "This is a human-readable address for a resource on the web.",
       "question": "What does URL stand for?",
@@ -86,6 +91,7 @@
       }
     },
     {
+      "cardId": "http_006",
       "category": "Core Concepts",
       "hint": "This part of a URL is used to pass data to a server in a GET request.",
       "question": "In the URL `/search?q=books&sort=newest`, the part starting with `?` is the (...).",
@@ -102,6 +108,7 @@
       }
     },
     {
+      "cardId": "http_007",
       "category": "HTTP Methods",
       "hint": "This is the most common method, used to retrieve data.",
       "question": "To fetch a list of products from `/api/products`, you would use the (...) method.",
@@ -118,6 +125,7 @@
       }
     },
     {
+      "cardId": "http_008",
       "category": "HTTP Methods",
       "hint": "This method is used to submit new data to be created on the server.",
       "question": "To register a new user by sending their details to `/api/users`, you use the (...) method.",
@@ -134,6 +142,7 @@
       }
     },
     {
+      "cardId": "http_009",
       "category": "HTTP Methods",
       "hint": "This method is used to completely replace an existing resource with new data.",
       "question": "To update a user's entire profile at `/api/users/123`, you use the (...) method.",
@@ -150,6 +159,7 @@
       }
     },
     {
+      "cardId": "http_010",
       "category": "HTTP Methods",
       "hint": "This method is used for applying partial modifications to an existing resource.",
       "question": "To update only a product's price at `/api/products/456`, you should use the (...) method.",
@@ -166,6 +176,7 @@
       }
     },
     {
+      "cardId": "http_011",
       "category": "HTTP Methods",
       "hint": "This method is used to remove a resource from the server.",
       "question": "To delete a blog post at `/api/posts/789`, you use the (...) method.",
@@ -182,6 +193,7 @@
       }
     },
     {
+      "cardId": "http_012",
       "category": "HTTP Methods",
       "hint": "This method requests the headers of a resource, but not the actual body.",
       "question": "To check a file's `Content-Length` without downloading it, you use the (...) method.",
@@ -198,6 +210,7 @@
       }
     },
     {
+      "cardId": "http_013",
       "category": "HTTP Methods",
       "hint": "This method is used by a client to see what communication options are available for a given URL.",
       "question": "In a CORS preflight request, the browser sends an (...) request to check permissions.",
@@ -214,6 +227,7 @@
       }
     },
     {
+      "cardId": "http_014",
       "category": "HTTP Methods",
       "hint": "An operation with this property can be repeated many times with the same result as the first time.",
       "question": "Methods like PUT and DELETE are (...), while POST is not.",
@@ -230,6 +244,7 @@
       }
     },
     {
+      "cardId": "http_015",
       "category": "HTTP Methods",
       "hint": "This type of method is not supposed to alter the server's state.",
       "question": "HTTP methods like GET and HEAD are considered (...) because they are for read-only operations.",
@@ -246,6 +261,7 @@
       }
     },
     {
+      "cardId": "http_016",
       "category": "HTTP Status Codes",
       "hint": "This is the most common success code for a standard request.",
       "question": "A successful GET request for an existing resource should return (...).",
@@ -262,6 +278,7 @@
       }
     },
     {
+      "cardId": "http_017",
       "category": "HTTP Status Codes",
       "hint": "This code indicates that a new resource has been successfully created on the server.",
       "question": "A successful POST request that creates a new item should return (...).",
@@ -278,6 +295,7 @@
       }
     },
     {
+      "cardId": "http_018",
       "category": "HTTP Status Codes",
       "hint": "This code indicates the request was successful, but there is no content to return in the body.",
       "question": "A successful DELETE request often returns (...).",
@@ -294,6 +312,7 @@
       }
     },
     {
+      "cardId": "http_019",
       "category": "HTTP Status Codes",
       "hint": "This code is for asynchronous tasks, indicating the request has been accepted but is not yet complete.",
       "question": "If a server starts a long-running video processing job in response to a request, it might return (...).",
@@ -310,6 +329,7 @@
       }
     },
     {
+      "cardId": "http_020",
       "category": "HTTP Status Codes",
       "hint": "This redirection code tells the client that a resource has been moved for good.",
       "question": "If `/about-us` is permanently moved to `/about`, the server should respond with (...).",
@@ -326,6 +346,7 @@
       }
     },
     {
+      "cardId": "http_021",
       "category": "HTTP Status Codes",
       "hint": "This code indicates the client's cached version is still valid, saving bandwidth.",
       "question": "If a client sends a request with an `If-None-Match` header and the resource hasn't changed, the server returns (...).",
@@ -342,6 +363,7 @@
       }
     },
     {
+      "cardId": "http_022",
       "category": "HTTP Status Codes",
       "hint": "This error indicates the server could not understand the client's request.",
       "question": "If a client sends malformed JSON in a POST request, the server should return (...).",
@@ -358,6 +380,7 @@
       }
     },
     {
+      "cardId": "http_023",
       "category": "HTTP Status Codes",
       "hint": "This error means the client is not authenticated and needs to log in.",
       "question": "Trying to access `/my-profile` without being logged in should result in a (...) error.",
@@ -374,6 +397,7 @@
       }
     },
     {
+      "cardId": "http_024",
       "category": "HTTP Status Codes",
       "hint": "This error means the client is authenticated but lacks the necessary permissions.",
       "question": "A standard user trying to access an admin dashboard should receive a (...) error.",
@@ -390,6 +414,7 @@
       }
     },
     {
+      "cardId": "http_025",
       "category": "HTTP Status Codes",
       "hint": "This is the internet's most famous error, meaning the requested resource doesn't exist.",
       "question": "Requesting `/api/users/9999` when no such user exists should return (...).",
@@ -406,6 +431,7 @@
       }
     },
     {
+      "cardId": "http_026",
       "category": "HTTP Status Codes",
       "hint": "This error indicates the client used an HTTP method that is not supported by the resource.",
       "question": "If a client sends a PUT request to a URL that only accepts GET and POST, it should get a (...) error.",
@@ -422,6 +448,7 @@
       }
     },
     {
+      "cardId": "http_027",
       "category": "HTTP Status Codes",
       "hint": "This error indicates a resource could not be created because it would create a duplicate.",
       "question": "Trying to POST a new user with an email that already exists should ideally return a (...) error.",
@@ -438,6 +465,7 @@
       }
     },
     {
+      "cardId": "http_028",
       "category": "HTTP Status Codes",
       "hint": "This client error indicates a request to an API that has rate limiting enabled has been sent too many times.",
       "question": "If you exceed the allowed number of API requests per minute, you will receive a (...) error.",
@@ -454,6 +482,7 @@
       }
     },
     {
+      "cardId": "http_029",
       "category": "HTTP Status Codes",
       "hint": "This is a generic server-side error indicating an unexpected condition.",
       "question": "If a programming error (e.g., a typo in a variable name) occurs on the server, the client will see a (...) error.",
@@ -470,6 +499,7 @@
       }
     },
     {
+      "cardId": "http_030",
       "category": "HTTP Status Codes",
       "hint": "This server error indicates the server is temporarily overloaded or down for maintenance.",
       "question": "When a server is undergoing maintenance and cannot handle requests, it should return (...).",
@@ -486,6 +516,7 @@
       }
     },
     {
+      "cardId": "http_031",
       "category": "HTTP Headers",
       "hint": "This request header tells the server what type of content the client can accept in the response.",
       "question": "To signal that a client prefers a JSON response, it should send the `(...)` header.",
@@ -502,6 +533,7 @@
       }
     },
     {
+      "cardId": "http_032",
       "category": "HTTP Headers",
       "hint": "This request header specifies the data format of the message body being sent.",
       "question": "When POSTing a form, a browser typically sends the (...) header.",
@@ -518,6 +550,7 @@
       }
     },
     {
+      "cardId": "http_033",
       "category": "HTTP Headers",
       "hint": "This request header contains credentials to authenticate a client with a server.",
       "question": "A client sending a 'Bearer Token' for authentication places it in the (...) header.",
@@ -534,6 +567,7 @@
       }
     },
     {
+      "cardId": "http_034",
       "category": "HTTP Headers",
       "hint": "This request header contains information about the client making the request, such as browser and OS.",
       "question": "The (...) header helps servers identify the client software and can be used for analytics.",
@@ -550,6 +584,7 @@
       }
     },
     {
+      "cardId": "http_035",
       "category": "HTTP Headers",
       "hint": "This response header specifies the media type of the resource in the message body.",
       "question": "A server sending back a PNG image should set the `(...)` header to `image/png`.",
@@ -566,6 +601,7 @@
       }
     },
     {
+      "cardId": "http_036",
       "category": "HTTP Headers",
       "hint": "This response header provides the URL to which a client should be redirected.",
       "question": "When returning a 301 or 302 status, the server must also provide the (...) header.",
@@ -582,6 +618,7 @@
       }
     },
     {
+      "cardId": "http_037",
       "category": "HTTP Headers",
       "hint": "This response header provides directives for caching in both clients and proxies.",
       "question": "To tell a browser to cache a resource for one hour, the server sends the `(...)` header.",
@@ -598,6 +635,7 @@
       }
     },
     {
+      "cardId": "http_038",
       "category": "HTTP Headers",
       "hint": "This response header contains a unique identifier for a specific version of a resource.",
       "question": "The (...) header is used for cache validation, allowing a client to make conditional requests.",
@@ -614,6 +652,7 @@
       }
     },
     {
+      "cardId": "http_039",
       "category": "HTTP Headers",
       "hint": "This response header tells the browser to download a file instead of displaying it.",
       "question": "To trigger a 'Save As...' dialog in the browser for a file, you set the `(...)` header.",
@@ -630,6 +669,7 @@
       }
     },
     {
+      "cardId": "http_040",
       "category": "JSON",
       "hint": "This is the fundamental building block of a JSON object.",
       "question": "A JSON object is an unordered collection of (...).",
@@ -646,6 +686,7 @@
       }
     },
     {
+      "cardId": "http_041",
       "category": "JSON",
       "hint": "This data structure in JSON represents an ordered list of values.",
       "question": "In JSON, square brackets `[...]` are used to define an (...).",
@@ -662,6 +703,7 @@
       }
     },
     {
+      "cardId": "http_042",
       "category": "JSON",
       "hint": "This process converts a JSON-formatted string into a native object.",
       "question": "To use data received from an API in JavaScript, you must first (...) the JSON string.",
@@ -678,6 +720,7 @@
       }
     },
     {
+      "cardId": "http_043",
       "category": "JSON",
       "hint": "This process converts a native object into a JSON-formatted string for transmission.",
       "question": "To send a JavaScript object to an API, you must (...) it into a JSON string.",
@@ -694,6 +737,7 @@
       }
     },
     {
+      "cardId": "http_044",
       "category": "JSON",
       "hint": "JSON supports six basic data types.",
       "question": "Which of the following is NOT a valid data type in JSON?",
@@ -710,6 +754,7 @@
       }
     },
     {
+      "cardId": "http_045",
       "category": "JSON",
       "hint": "A JSON object can contain other JSON objects.",
       "question": "The ability to place objects inside other objects in JSON is called (...).",
@@ -726,6 +771,7 @@
       }
     },
     {
+      "cardId": "http_046",
       "category": "RESTful APIs",
       "hint": "In REST, everything is conceptually a 'thing' that can be acted upon.",
       "question": "A user, a product, or a blog post are all examples of a (...) in a REST API.",
@@ -742,6 +788,7 @@
       }
     },
     {
+      "cardId": "http_047",
       "category": "RESTful APIs",
       "hint": "This is the common convention for naming collection resources in a URL.",
       "question": "According to REST best practices, a URL for a collection of users should be (...).",
@@ -758,6 +805,7 @@
       }
     },
     {
+      "cardId": "http_048",
       "category": "RESTful APIs",
       "hint": "This is a set of constraints that define how a RESTful API should behave.",
       "question": "A core principle of REST is the (...) Interface, which simplifies and decouples the architecture.",
@@ -774,6 +822,7 @@
       }
     },
     {
+      "cardId": "http_049",
       "category": "RESTful APIs",
       "hint": "This advanced principle involves including links to other resources within an API response.",
       "question": "What is HATEOAS (Hypermedia as the Engine of Application State)?",
@@ -790,6 +839,7 @@
       }
     },
     {
+      "cardId": "http_050",
       "category": "RESTful APIs",
       "hint": "This is a common strategy for introducing non-breaking changes to an API.",
       "question": "What is a common way to handle versioning in a REST API?",
@@ -806,6 +856,7 @@
       }
     },
     {
+      "cardId": "http_051",
       "category": "API Security",
       "hint": "This standard is used for creating access tokens that assert claims as a JSON object.",
       "question": "A (...) is a compact, URL-safe means of representing claims to be transferred between two parties.",
@@ -822,6 +873,7 @@
       }
     },
     {
+      "cardId": "http_052",
       "category": "API Security",
       "hint": "This security mechanism restricts web page scripts from making requests to a different domain.",
       "question": "What is CORS (Cross-Origin Resource Sharing)?",
@@ -838,6 +890,7 @@
       }
     },
     {
+      "cardId": "http_053",
       "category": "API Security",
       "hint": "This process confirms a user's identity.",
       "question": "Verifying a username and password against a database is an example of (...).",
@@ -851,9 +904,10 @@
         "type": "code",
         "language": "python",
         "value": "from django.contrib.auth import authenticate\n\nuser = authenticate(request, username=username, password=password)"
-   }
+      }
     },
     {
+      "cardId": "http_054",
       "category": "API Security",
       "hint": "This process determines what an authenticated user is allowed to do.",
       "question": "Checking if an authenticated user has 'admin' privileges before allowing them to delete data is called (...).",
@@ -867,9 +921,10 @@
         "type": "code",
         "language": "python",
         "value": "if not request.user.has_perm('app.delete_post'):\n    return HttpResponseForbidden()"
-     }
+      }
     },
     {
+      "cardId": "http_055",
       "category": "HTTP Methods",
       "hint": "This method is used for retrieving information without altering server state.",
       "question": "To request data from a server, a client uses the HTTP (...) method.",
@@ -878,10 +933,11 @@
       "content": {
         "type": "code",
         "language": "javascript",
-        "value": "// Browser fetch API example\nfetch('https://api.example.com/users/123')\n  .then(response => response.json());"
+        "value": "// Browser fetch API example\nfetch('https://api.example.com/users/123')\n  .then(response => response.json());"
       }
     },
     {
+      "cardId": "http_056",
       "category": "HTTP Methods",
       "hint": "This method sends data to a server to create a new resource.",
       "question": "To create a new user via an API, the standard HTTP method is (...).",
@@ -890,10 +946,11 @@
       "content": {
         "type": "code",
         "language": "javascript",
-        "value": "fetch('https://api.example.com/users', {\n  method: 'POST',\n  headers: {'Content-Type': 'application/json'},\n  body: JSON.stringify({ name: 'Alex' })\n});"
+        "value": "fetch('https://api.example.com/users', {\n  method: 'POST',\n  headers: {'Content-Type': 'application/json'},\n  body: JSON.stringify({ name: 'Alex' })\n});"
       }
     },
     {
+      "cardId": "http_057",
       "category": "HTTP Methods",
       "hint": "This method is used to completely replace an existing resource.",
       "question": "To update a user's entire profile, a client sends a/an (...) request.",
@@ -902,10 +959,11 @@
       "content": {
         "type": "code",
         "language": "javascript",
-        "value": "fetch('https://api.example.com/users/123', {\n  method: 'PUT',\n  body: JSON.stringify({ name: 'Alexandra', role: 'admin' })\n});"
+        "value": "fetch('https://api.example.com/users/123', {\n  method: 'PUT',\n  body: JSON.stringify({ name: 'Alexandra', role: 'admin' })\n});"
       }
     },
     {
+      "cardId": "http_058",
       "category": "HTTP Methods",
       "hint": "This method is for applying partial modifications to a resource.",
       "question": "To update only a user's email address, the more efficient HTTP method is (...).",
@@ -914,10 +972,11 @@
       "content": {
         "type": "code",
         "language": "javascript",
-        "value": "fetch('https://api.example.com/users/123', {\n  method: 'PATCH',\n  body: JSON.stringify({ email: 'new.email@example.com' })\n});"
+        "value": "fetch('https://api.example.com/users/123', {\n  method: 'PATCH',\n  body: JSON.stringify({ email: 'new.email@example.com' })\n});"
       }
     },
     {
+      "cardId": "http_059",
       "category": "HTTP Methods",
       "hint": "This method is used to permanently remove a specific resource.",
       "question": "To remove user with ID 123 from the system, the application sends a (...) request.",
@@ -926,10 +985,11 @@
       "content": {
         "type": "code",
         "language": "javascript",
-        "value": "fetch('https://api.example.com/users/123', {\n  method: 'DELETE'\n});"
+        "value": "fetch('https://api.example.com/users/123', {\n  method: 'DELETE'\n});"
       }
     },
     {
+      "cardId": "http_060",
       "category": "HTTP Methods",
       "hint": "This method asks for the response headers of a GET request, but not the body.",
       "question": "To check a resource's metadata (like `Last-Modified`) without downloading it, you use (...).",
@@ -938,10 +998,11 @@
       "content": {
         "type": "code",
         "language": "javascript",
-        "value": "fetch('https://api.example.com/large-file.zip', {\n  method: 'HEAD'\n}).then(response => {\n  console.log('File size:', response.headers.get('Content-Length'));\n});"
+        "value": "fetch('https://api.example.com/large-file.zip', {\n  method: 'HEAD'\n}).then(response => {\n  console.log('File size:', response.headers.get('Content-Length'));\n});"
       }
     },
     {
+      "cardId": "http_061",
       "category": "HTTP Status Codes",
       "hint": "This code indicates a standard, successful request for data.",
       "question": "A successful GET request typically returns a (...) status code.",
@@ -950,10 +1011,11 @@
       "content": {
         "type": "code",
         "language": "python",
-        "value": "# Django view returning a successful response\nfrom django.http import JsonResponse\n\ndef get_user(request, user_id):\n  user = {\"id\": user_id, \"name\": \"Alex\"}\n  return JsonResponse(user, status=200)"
+        "value": "# Django view returning a successful response\nfrom django.http import JsonResponse\n\ndef get_user(request, user_id):\n  user = {\"id\": user_id, \"name\": \"Alex\"}\n  return JsonResponse(user, status=200)"
       }
     },
     {
+      "cardId": "http_062",
       "category": "HTTP Status Codes",
       "hint": "This status code confirms that a new resource was successfully created.",
       "question": "A successful POST request that creates a new item should return a (...) status code.",
@@ -962,10 +1024,11 @@
       "content": {
         "type": "code",
         "language": "python",
-        "value": "# Django view after creating a resource\ndef create_user(request):\n  # ... logic to create user ...\n  new_user = {\"id\": 124, \"name\": \"Maria\"}\n  return JsonResponse(new_user, status=201)"
+        "value": "# Django view after creating a resource\ndef create_user(request):\n  # ... logic to create user ...\n  new_user = {\"id\": 124, \"name\": \"Maria\"}\n  return JsonResponse(new_user, status=201)"
       }
     },
     {
+      "cardId": "http_063",
       "category": "HTTP Status Codes",
       "hint": "This code indicates a successful action with no data to return.",
       "question": "A successful DELETE operation typically returns a (...) status code.",
@@ -974,10 +1037,11 @@
       "content": {
         "type": "code",
         "language": "python",
-        "value": "from django.http import HttpResponse\n\ndef delete_user(request, user_id):\n  # ... logic to delete user ...\n  return HttpResponse(status=204)"
+        "value": "from django.http import HttpResponse\n\ndef delete_user(request, user_id):\n  # ... logic to delete user ...\n  return HttpResponse(status=204)"
       }
     },
     {
+      "cardId": "http_064",
       "category": "HTTP Status Codes",
       "hint": "This code indicates a client error, such as a malformed request.",
       "question": "If a POST request is missing required fields in its body, the server should respond with (...).",
@@ -986,10 +1050,11 @@
       "content": {
         "type": "code",
         "language": "python",
-        "value": "def create_user(request):\n  data = json.loads(request.body)\n  if 'email' not in data:\n    return JsonResponse({'error': 'Email is required'}, status=400)"
+        "value": "def create_user(request):\n  data = json.loads(request.body)\n  if 'email' not in data:\n    return JsonResponse({'error': 'Email is required'}, status=400)"
       }
     },
     {
+      "cardId": "http_065",
       "category": "HTTP Status Codes",
       "hint": "This code indicates the client is not allowed to view the resource.",
       "question": "If a user tries to access an admin-only endpoint without being an admin, the API should return (...).",
@@ -998,10 +1063,11 @@
       "content": {
         "type": "code",
         "language": "python",
-        "value": "def get_admin_data(request):\n  if not request.user.is_staff:\n    # User is logged in, but not allowed here\n    return JsonResponse({'detail': 'Permission denied.'}, status=403)"
+        "value": "def get_admin_data(request):\n  if not request.user.is_staff:\n    # User is logged in, but not allowed here\n    return JsonResponse({'detail': 'Permission denied.'}, status=403)"
       }
     },
     {
+      "cardId": "http_066",
       "category": "HTTP Status Codes",
       "hint": "This code indicates the client must authenticate before accessing a resource.",
       "question": "If a request is made to a protected endpoint without an API key or token, the server returns (...).",
@@ -1010,10 +1076,11 @@
       "content": {
         "type": "code",
         "language": "python",
-        "value": "def get_protected_data(request):\n  if 'Authorization' not in request.headers:\n    # User is not logged in at all\n    return JsonResponse({'detail': 'Authentication required.'}, status=401)"
+        "value": "def get_protected_data(request):\n  if 'Authorization' not in request.headers:\n    # User is not logged in at all\n    return JsonResponse({'detail': 'Authentication required.'}, status=401)"
       }
     },
     {
+      "cardId": "http_067",
       "category": "HTTP Status Codes",
       "hint": "This indicates that the requested resource could not be found on the server.",
       "question": "A GET request to `/api/users/999` where user 999 does not exist should return (...).",
@@ -1022,10 +1089,11 @@
       "content": {
         "type": "code",
         "language": "python",
-        "value": "def get_user(request, user_id):\n  try:\n    user = User.objects.get(pk=user_id)\n    return JsonResponse(user.to_dict())\n  except User.DoesNotExist:\n    return JsonResponse({'error': 'User not found'}, status=404)"
+        "value": "def get_user(request, user_id):\n  try:\n    user = User.objects.get(pk=user_id)\n    return JsonResponse(user.to_dict())\n  except User.DoesNotExist:\n    return JsonResponse({'error': 'User not found'}, status=404)"
       }
     },
     {
+      "cardId": "http_068",
       "category": "HTTP Status Codes",
       "hint": "This code indicates a generic, unexpected error occurred on the server.",
       "question": "If the database connection fails unexpectedly during a request, the API should return (...).",
@@ -1034,10 +1102,11 @@
       "content": {
         "type": "code",
         "language": "python",
-        "value": "def get_data(request):\n  try:\n    # ... code that might fail ...\n    result = 1 / 0\n  except Exception as e:\n    # Log the real error for developers\n    log.error(e)\n    # Return a generic error to the client\n    return JsonResponse({'error': 'An internal error occurred'}, status=500)"
+        "value": "def get_data(request):\n  try:\n    # ... code that might fail ...\n    result = 1 / 0\n  except Exception as e:\n    # Log the real error for developers\n    log.error(e)\n    # Return a generic error to the client\n    return JsonResponse({'error': 'An internal error occurred'}, status=500)"
       }
     },
     {
+      "cardId": "http_069",
       "category": "REST Principles",
       "hint": "This architectural style uses standard HTTP methods for communication.",
       "question": "An API that uses GET, POST, PUT, DELETE for CRUD operations follows the (...) architectural style.",
@@ -1050,6 +1119,7 @@
       }
     },
     {
+      "cardId": "http_070",
       "category": "REST Principles",
       "hint": "The server does not store any information about the client session between requests.",
       "question": "What does it mean for a REST API to be 'stateless'?",
@@ -1058,10 +1128,11 @@
       "content": {
         "type": "code",
         "language": "javascript",
-        "value": "// The JWT token makes the request self-contained and stateless.\nfetch(url, {\n  headers: {\n    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5c...'\n  }\n});"
+        "value": "// The JWT token makes the request self-contained and stateless.\nfetch(url, {\n  headers: {\n    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5c...'\n  }\n});"
       }
     },
     {
+      "cardId": "http_071",
       "category": "REST Principles",
       "hint": "An operation has this property if making it multiple times has the same effect as making it once.",
       "question": "Which property describes an operation that can be repeated without changing the result beyond the initial application?",
@@ -1074,6 +1145,7 @@
       }
     },
     {
+      "cardId": "http_072",
       "category": "REST Principles",
       "hint": "This type of HTTP method should not change the state of the server.",
       "question": "HTTP methods like GET and HEAD are considered (...) because they are for reading data only.",
@@ -1082,10 +1154,11 @@
       "content": {
         "type": "code",
         "language": "python",
-        "value": "# This Django view for a GET request only reads data, it doesn't\n# write anything. It is a 'safe' operation.\ndef list_products(request):\n    products = Product.objects.all()\n    return JsonResponse(list(products.values()))"
+        "value": "# This Django view for a GET request only reads data, it doesn't\n# write anything. It is a 'safe' operation.\ndef list_products(request):\n    products = Product.objects.all()\n    return JsonResponse(list(products.values()))"
       }
     },
     {
+      "cardId": "http_073",
       "category": "API Headers",
       "hint": "This header tells the server what data format the client is sending.",
       "question": "When sending a JSON payload in a POST request, you must set the (...) header.",
@@ -1094,10 +1167,11 @@
       "content": {
         "type": "code",
         "language": "javascript",
-        "value": "fetch(url, {\n  method: 'POST',\n  headers: {\n    'Content-Type': 'application/json' // Essential for the server\n  },\n  body: JSON.stringify({ name: 'Alex' })\n});"
+        "value": "fetch(url, {\n  method: 'POST',\n  headers: {\n    'Content-Type': 'application/json' // Essential for the server\n  },\n  body: JSON.stringify({ name: 'Alex' })\n});"
       }
     },
     {
+      "cardId": "http_074",
       "category": "API Headers",
       "hint": "This header is used to pass authentication credentials, such as a JWT.",
       "question": "To authenticate with a Bearer Token, the client sends it in the (...) header.",
@@ -1106,10 +1180,11 @@
       "content": {
         "type": "code",
         "language": "javascript",
-        "value": "const TOKEN = '...';\nfetch(url, {\n  headers: {\n    'Authorization': `Bearer ${TOKEN}`\n  }\n});"
+        "value": "const TOKEN = '...';\nfetch(url, {\n  headers: {\n    'Authorization': `Bearer ${TOKEN}`\n  }\n});"
       }
     },
     {
+      "cardId": "http_075",
       "category": "WebSocket",
       "hint": "Unlike HTTP's request-response, this provides a persistent, two-way communication channel.",
       "question": "For real-time apps like chats, a (...) is preferred over repeated HTTP polling.",
@@ -1118,10 +1193,11 @@
       "content": {
         "type": "code",
         "language": "javascript",
-        "value": "// Establishes a persistent connection\nconst socket = new WebSocket('wss://api.example.com/ws/chat/');\n\nsocket.onmessage = function(event) {\n  console.log('Message from server:', event.data);\n};"
+        "value": "// Establishes a persistent connection\nconst socket = new WebSocket('wss://api.example.com/ws/chat/');\n\nsocket.onmessage = function(event) {\n  console.log('Message from server:', event.data);\n};"
       }
     },
     {
+      "cardId": "http_076",
       "category": "WebSocket",
       "hint": "This Django library adds support for WebSockets and other asynchronous protocols.",
       "question": "To enable WebSocket support in a Django backend, the application uses (...).",
@@ -1130,10 +1206,11 @@
       "content": {
         "type": "code",
         "language": "python",
-        "value": "# a simple Channels consumer\nimport json\nfrom channels.generic.websocket import WebsocketConsumer\n\nclass ChatConsumer(WebsocketConsumer):\n    def connect(self):\n        self.accept()"
+        "value": "# a simple Channels consumer\nimport json\nfrom channels.generic.websocket import WebsocketConsumer\n\nclass ChatConsumer(WebsocketConsumer):\n    def connect(self):\n        self.accept()"
       }
     },
     {
+      "cardId": "http_077",
       "category": "Security",
       "hint": "This is the process of verifying a user's identity.",
       "question": "Checking a user's password to confirm they are who they say they are is called (...).",
@@ -1142,10 +1219,11 @@
       "content": {
         "type": "code",
         "language": "python",
-        "value": "# Django's built-in authentication system\nfrom django.contrib.auth import authenticate\n\nuser = authenticate(username=username, password=password)\nif user is not None:\n  # Authentication successful\n  login(request, user)"
+        "value": "# Django's built-in authentication system\nfrom django.contrib.auth import authenticate\n\nuser = authenticate(username=username, password=password)\nif user is not None:\n  # Authentication successful\n  login(request, user)"
       }
     },
     {
+      "cardId": "http_078",
       "category": "Security",
       "hint": "This is the process of checking if an authenticated user has permission to perform an action.",
       "question": "After verifying a user's identity, the server must also perform (...) to check their permissions.",
@@ -1158,6 +1236,7 @@
       }
     },
     {
+      "cardId": "http_079",
       "category": "Security",
       "hint": "This 'S' in the protocol indicates a secure, encrypted connection.",
       "question": "In a production environment, all API communication must use (...) for security.",
@@ -1169,5 +1248,5 @@
         "value": "# A secure URL begins with https://\n# This ensures traffic between the client and server is encrypted.\nAPI_ENDPOINT=\"https://secure.api.example.com/\""
       }
     }
-]
+  ]
 }

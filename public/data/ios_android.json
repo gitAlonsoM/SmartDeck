@@ -6,6 +6,7 @@
   "language": "plaintext",
   "cards": [
     {
+      "cardId": "ios_android_dist_001",
       "category": "Build Artifacts",
       "hint": "The first step in any iOS distribution process, this bundle contains the app's build and debugging information.",
       "question": "In the iOS ecosystem, what is the name for the build artifact created by Xcode that contains the app and its debug info?",
@@ -22,6 +23,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_002",
       "category": "Build Artifacts",
       "hint": "This file is the actual application package for iOS, generated from a signed archive and installed on a physical device.",
       "question": "What is the file format for an iOS application that is installed on a device, similar to an Android .apk?",
@@ -38,6 +40,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_003",
       "category": "Build Artifacts",
       "hint": "This is what developers upload to the Play Console, which then generates optimized APKs for specific device configurations.",
       "question": "What is the modern Android distribution format that developers upload to the Google Play Store?",
@@ -54,6 +57,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_004",
       "category": "Build Artifacts",
       "hint": "The traditional file format for an Android application that can be installed directly on a device.",
       "question": "What is the standard, installable package file for an Android app called?",
@@ -70,6 +74,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_005",
       "category": "App Identification",
       "hint": "A unique reverse-DNS string (e.g., com.example.app) that identifies an iOS app and cannot be changed after the first upload.",
       "question": "What is the unique identifier for an iOS app, which is set in Xcode and locked permanently after the first build is uploaded to App Store Connect?",
@@ -82,10 +87,11 @@
       "content": {
         "type": "code",
         "language": "xml",
-        "value": "\n<key>CFBundleIdentifier</key>\n<string>com.example.myapp</string>"
+        "value": "<key>CFBundleIdentifier</key>\n<string>com.example.myapp</string>"
       }
     },
     {
+      "cardId": "ios_android_dist_006",
       "category": "App Identification",
       "hint": "The direct Android equivalent of the iOS Bundle ID, specified in the app's build.gradle file.",
       "question": "In an Android project, what property in the `build.gradle` file serves the same unique identification purpose as the `Bundle ID` on iOS?",
@@ -102,6 +108,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_007",
       "category": "App Identification",
       "hint": "An identifier created in the Apple Developer portal that links an application to services like Push Notifications or iCloud.",
       "question": "What is the Apple Developer portal entity that must match your project's Bundle ID to enable services like push notifications?",
@@ -118,6 +125,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_008",
       "category": "Versioning",
       "hint": "The user-facing version of your app (e.g., \"1.2.3\") displayed on the App Store page.",
       "question": "Which iOS Info.plist key represents the public, user-facing version string of an app?",
@@ -134,6 +142,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_009",
       "category": "Versioning",
       "hint": "An internal version identifier that must be incremented for each new build uploaded to App Store Connect.",
       "question": "What is the internal build number for an iOS app that must be an integer and increment with each upload for a given version?",
@@ -150,6 +159,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_010",
       "category": "Versioning",
       "hint": "The Android equivalent of iOS's `CFBundleShortVersionString`, shown to users in the Google Play Store.",
       "question": "What is the user-facing version string in an Android `build.gradle` file?",
@@ -166,6 +176,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_011",
       "category": "Versioning",
       "hint": "The Android equivalent of iOS's `CFBundleVersion`, this integer must be incremented with every new release.",
       "question": "What is the Android integer value that the Play Store uses to determine if a new version is an update?",
@@ -182,6 +193,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_012",
       "category": "Code Signing",
       "hint": "The general process of applying a digital signature to an app to certify its creator and ensure its code has not been altered.",
       "question": "What is the mandatory process for certifying an app's integrity and author for it to run on a physical device?",
@@ -198,6 +210,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_013",
       "category": "Code Signing",
       "hint": "On iOS, this is a digital credential issued by Apple that proves a developer's identity for signing apps.",
       "question": "What is the core component of the iOS signing process, managed through the Apple Developer portal?",
@@ -214,6 +227,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_014",
       "category": "Code Signing",
       "hint": "On Android, this is a local file created and managed by the developer, containing the private keys for signing.",
       "question": "What is the developer-managed local file used to sign Android applications?",
@@ -230,6 +244,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_015",
       "category": "Code Signing",
       "hint": "A build artifact that has not yet had a digital signature applied, common in collaborative workflows.",
       "question": "An app archive that cannot be installed on a physical device because it lacks a digital signature is called:",
@@ -246,6 +261,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_016",
       "category": "Code Signing",
       "hint": "This is a severe consequence of mishandling Android's signing credentials.",
       "question": "What happens if a developer loses their Android Keystore file after publishing an app to the Play Store?",
@@ -262,6 +278,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_017",
       "category": "Apple Concepts",
       "hint": "This file ties together the App ID, signing certificates, and authorized devices for a specific build type.",
       "question": "In the iOS ecosystem, what file links developers, devices, and an App ID into a single unit for a specific build?",
@@ -278,6 +295,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_018",
       "category": "Apple Concepts",
       "hint": "These key-value pairs grant an executable permission to use specific services like iCloud or Push Notifications.",
       "question": "What are the permissions an iOS app must declare to use protected services, which are authorized by a provisioning profile?",
@@ -290,10 +308,11 @@
       "content": {
         "type": "code",
         "language": "xml",
-        "value": "\n<key>aps-environment</key>\n<string>development</string>"
+        "value": "<key>aps-environment</key>\n<string>development</string>"
       }
     },
     {
+      "cardId": "ios_android_dist_019",
       "category": "Apple Concepts",
       "hint": "A paid membership required for distributing apps via TestFlight and the App Store.",
       "question": "What is required to gain full access to Apple's distribution methods, including creating distribution certificates?",
@@ -310,6 +329,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_020",
       "category": "Apple Concepts",
       "hint": "The entity in App Store Connect that owns the app and its associated signing assets.",
       "question": "When working in an organization, what entity in your Apple Developer account owns the app and its signing assets?",
@@ -326,6 +346,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_021",
       "category": "Apple Concepts",
       "hint": "This certificate is used to sign macOS apps for distribution outside the Mac App Store.",
       "question": "What special certificate is used to sign macOS apps for distribution outside the official store, a process which is followed by notarization?",
@@ -342,6 +363,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_022",
       "category": "Distribution Platforms",
       "hint": "The web-based portal for managing apps, builds, metadata, and TestFlight for the iOS App Store.",
       "question": "What is the name of Apple's web portal used to manage app submissions and beta testing?",
@@ -358,6 +380,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_023",
       "category": "Distribution Platforms",
       "hint": "The web-based portal for managing apps, store listings, and testing tracks for the Android ecosystem.",
       "question": "What is the direct Android equivalent of Apple's App Store Connect?",
@@ -374,6 +397,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_024",
       "category": "Distribution Platforms",
       "hint": "The user interface within Xcode for viewing, validating, and distributing all the .xcarchive builds you have created.",
       "question": "What is the name of the UI window inside Xcode that helps manage and distribute archives?",
@@ -390,6 +414,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_025",
       "category": "Testing",
       "hint": "Apple's platform for distributing beta versions of an app to internal and external testers.",
       "question": "What is Apple's primary platform for beta testing applications before an App Store release?",
@@ -406,6 +431,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_026",
       "category": "Testing",
       "hint": "The Android equivalent of TestFlight, which is integrated directly into its web portal.",
       "question": "What is the Android equivalent of Apple's TestFlight beta testing platform?",
@@ -422,6 +448,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_027",
       "category": "Testing",
       "hint": "A distribution method for a limited number of registered test devices, requiring each device's UDID to be in the provisioning profile.",
       "question": "Which iOS distribution method allows for manual installation on a specific, pre-registered list of devices?",
@@ -438,6 +465,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_028",
       "category": "Testing",
       "hint": "The key requirement for installing an Ad Hoc build on an iOS device.",
       "question": "To install an Ad Hoc build, the device's unique identifier (UDID) must be included in what file?",
@@ -454,6 +482,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_029",
       "category": "Testing",
       "hint": "This is conceptually similar to Ad Hoc distribution on iOS, but much less restrictive.",
       "question": "What is the simplest way to test an Android app on a physical device without using the Play Store?",
@@ -470,6 +499,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_030",
       "category": "Android Concepts",
       "hint": "The permission model used by Android, declared in a specific manifest file.",
       "question": "In Android, where does an app declare its intent to use protected features, similar to iOS Entitlements?",
@@ -486,6 +516,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_031",
       "category": "Android Concepts",
       "hint": "This setting must be enabled on an Android device to install an APK from outside the Google Play Store.",
       "question": "What must a user enable on their Android device to install a shared .apk file?",
@@ -502,6 +533,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_032",
       "category": "Enterprise",
       "hint": "A program for large organizations to distribute proprietary, in-house apps to their employees, bypassing the public App Store.",
       "question": "What Apple program allows a company to distribute in-house iOS apps directly to its employees?",
@@ -518,6 +550,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_033",
       "category": "Enterprise",
       "hint": "The certificate type used for distributing in-house apps under the special Apple program for large organizations.",
       "question": "What type of certificate is used to sign apps for the Apple Developer Enterprise Program?",
@@ -534,6 +567,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_034",
       "category": "Build Process",
       "hint": "This distribution flow in Xcode Organizer is essential for workflows where signing is handled by a separate team.",
       "question": "Which Xcode Organizer flow allows you to export an unsigned archive by selecting 'Manually manage signing'?",
@@ -550,6 +584,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_035",
       "category": "Build Process",
       "hint": "This flag is used with Flutter's build command to create an unsigned iOS archive.",
       "question": "What flag do you add to the `flutter build ipa` command to create an unsigned .xcarchive?",
@@ -566,6 +601,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_036",
       "category": "Build Process",
       "hint": "The primary reason a developer would intentionally create an unsigned archive.",
       "question": "What is the main purpose of creating an unsigned archive in a collaborative workflow?",
@@ -582,6 +618,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_037",
       "category": "Core Concepts",
       "hint": "The term for when Apple verifies a macOS app distributed outside the store is free of malicious content.",
       "question": "What is the Apple process that scans a Developer ID-signed app for malware, which is required for it to run on modern macOS?",
@@ -598,6 +635,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_038",
       "category": "Core Concepts",
       "hint": "This type of developer account has significant restrictions, only allowing testing on a few personal devices.",
       "question": "An Apple Developer Account that is not part of the paid program is known as what kind of account?",
@@ -614,6 +652,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_039",
       "category": "Core Concepts",
       "hint": "A critical property of an iOS provisioning profile related to its validity.",
       "question": "Besides being tied to a distribution type, what is a key limitation of all provisioning profiles?",
@@ -630,6 +669,7 @@
       }
     },
     {
+      "cardId": "ios_android_dist_040",
       "category": "Core Concepts",
       "hint": "This is the primary difference in how iOS Ad Hoc and Android APK sharing manage who can install a test build.",
       "question": "What is the key difference regarding device authorization between iOS Ad Hoc and direct Android APK distribution?",
@@ -645,488 +685,518 @@
         "value": ""
       }
     },
-  {
-    "category": "iOS Beta Testing",
-    "hint": "Apple's official platform for distributing beta versions of an app.",
-    "question": "What is the industry-standard method provided by Apple for testing iOS apps before release?",
-    "options": [
-      "Ad Hoc Distribution",
-      "TestFlight",
-      "Enterprise Program"
-    ],
-    "correctAnswer": "TestFlight",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "iOS Beta Testing",
-    "hint": "This TestFlight tier is for your core team and has a limit of 100 users.",
-    "question": "What is the main advantage of TestFlight's 'Internal Testing'?",
-    "options": [
-      "It allows for public sign-ups",
-      "New builds are available almost instantly without Apple review",
-      "It supports up to 10,000 testers"
-    ],
-    "correctAnswer": "New builds are available almost instantly without Apple review",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "iOS Beta Testing",
-    "hint": "This TestFlight tier is for a wider audience, up to 10,000 users.",
-    "question": "What is a key consideration before sending a build to 'External Testers' on TestFlight?",
-    "options": [
-      "The build must undergo a brief review by Apple",
-      "Testers must pay for the app",
-      "You must collect every device's UDID"
-    ],
-    "correctAnswer": "The build must undergo a brief review by Apple",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "iOS Beta Testing",
-    "hint": "An older distribution method for installing an app on a limited set of specific devices.",
-    "question": "What unique piece of information is required to register a device for 'Ad Hoc' distribution?",
-    "options": [
-      "The device's serial number",
-      "The user's Apple ID",
-      "The Unique Device Identifier (UDID)"
-    ],
-    "correctAnswer": "The Unique Device Identifier (UDID)",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "iOS Beta Testing",
-    "hint": "A distribution method for large organizations to share private, in-house apps with employees.",
-    "question": "Which Apple Developer program allows a company to distribute apps directly to employees, bypassing the public App Store?",
-    "options": [
-      "Apple Developer Enterprise Program",
-      "TestFlight External Testing",
-      "Ad Hoc Distribution"
-    ],
-    "correctAnswer": "Apple Developer Enterprise Program",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "App Store Release",
-    "hint": "The web portal where you manage your app's listing, builds, and submissions.",
-    "question": "What is the name of Apple's web platform used to manage all aspects of your app on the App Store?",
-    "options": [
-      "iTunes Connect",
-      "App Store Connect",
-      "Apple Developer Portal"
-    ],
-    "correctAnswer": "App Store Connect",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "App Store Release",
-    "hint": "If your app requires a login, you must provide this to Apple's review team.",
-    "question": "What must you provide in your App Store Connect submission for an app that requires authentication?",
-    "options": [
-      "A link to your company's website",
-      "A valid demo account username and password",
-      "A video demonstrating the login process"
-    ],
-    "correctAnswer": "A valid demo account username and password",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "App Store Release",
-    "hint": "The process where Apple's team checks if your app complies with all guidelines.",
-    "question": "Before your app can go live, it must pass a check performed by human reviewers. What is this process called?",
-    "options": [
-      "Automated Code Analysis",
-      "The App Store Review Process",
-      "User Acceptance Testing"
-    ],
-    "correctAnswer": "The App Store Review Process",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "App Store Release",
-    "hint": "This happens if your app does not meet one of Apple's guidelines.",
-    "question": "What is the outcome if the Apple review team finds that your app crashes or violates a privacy rule?",
-    "options": [
-      "The app is approved with a warning",
-      "The app is rejected with a detailed report",
-      "Your developer account is automatically suspended"
-    ],
-    "correctAnswer": "The app is rejected with a detailed report",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "App Store Release",
-    "hint": "An option that lets you control the exact moment your app goes live.",
-    "question": "After your app is approved, what release option puts its status as 'Pending Developer Release'?",
-    "options": [
-      "Phased Release",
-      "Automatic Release",
-      "Manual Release"
-    ],
-    "correctAnswer": "Manual Release",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "Android App Distribution",
-    "hint": "The web portal for managing your Android app's distribution.",
-    "question": "What is the Android equivalent of App Store Connect?",
-    "options": [
-      "Android Studio",
-      "Google Developer Center",
-      "Google Play Console"
-    ],
-    "correctAnswer": "Google Play Console",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "Android App Distribution",
-    "hint": "Google Play's equivalent of TestFlight for distributing beta builds.",
-    "question": "In the Google Play Console, beta testing is managed through different...?",
-    "options": [
-      "Build Flavors",
-      "Testing Tracks (Internal, Closed, Open)",
-      "Distribution Groups"
-    ],
-    "correctAnswer": "Testing Tracks (Internal, Closed, Open)",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "Android App Distribution",
-    "hint": "The modern, recommended publishing format for Android apps.",
-    "question": "What is the file format you upload to the Google Play Console that allows Google to deliver optimized APKs to users?",
-    "options": [
-      ".apk",
-      ".aab (Android App Bundle)",
-      ".jar"
-    ],
-    "correctAnswer": ".aab (Android App Bundle)",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "General Concepts",
-    "hint": "A file that links your app, your developer account, and the devices it can run on.",
-    "question": "In iOS development, what is a 'Provisioning Profile'?",
-    "options": [
-      "A user's profile within the app",
-      "A file that authorizes your app to be installed on specific devices",
-      "A server configuration file"
-    ],
-    "correctAnswer": "A file that authorizes your app to be installed on specific devices",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "General Concepts",
-    "hint": "The process of digitally signing your app to verify its origin and integrity.",
-    "question": "What is 'Code Signing' in the context of app distribution?",
-    "options": [
-      "Writing your signature in the source code comments",
-      "A cryptographic process that assures users the app is from you and hasn't been tampered with",
-      "A contract you sign with Apple or Google"
-    ],
-    "correctAnswer": "A cryptographic process that assures users the app is from you and hasn't been tampered with",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "Xcode",
-    "hint": "The action in Xcode that creates a build artifact ready for distribution.",
-    "question": "What is the first step you take in Xcode to bundle your app for TestFlight or the App Store?",
-    "options": [
-      "Run > Build",
-      "Product > Archive",
-      "File > Export"
-    ],
-    "correctAnswer": "Product > Archive",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "Xcode",
-    "hint": "An essential configuration file in an iOS project.",
-    "question": "What is the name of the file in an Xcode project that contains metadata like the Bundle Identifier and app version?",
-    "options": [
-      "config.xml",
-      "Info.plist",
-      "project.pbxproj"
-    ],
-    "correctAnswer": "Info.plist",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "Xcode",
-    "hint": "A unique name used to identify your app across the entire Apple ecosystem.",
-    "question": "What is a 'Bundle Identifier'?",
-    "options": [
-      "The name of the app shown on the home screen",
-      "A unique, reverse-DNS format string (e.g., com.company.appname)",
-      "The version number of the build (e.g., 1.0.1)"
-    ],
-    "correctAnswer": "A unique, reverse-DNS format string (e.g., com.company.appname)",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "App Store Release",
-    "hint": "These are required to show users what your app looks like before they download it.",
-    "question": "What visual assets must you upload to App Store Connect for your app's product page?",
-    "options": [
-      "A video trailer",
-      "Screenshots for various device sizes",
-      "Photos of your development team"
-    ],
-    "correctAnswer": "Screenshots for various device sizes",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "App Store Release",
-    "hint": "Words that help users find your app via App Store search.",
-    "question": "In your App Store Connect listing, what is the purpose of 'Keywords'?",
-    "options": [
-      "To unlock hidden features in the app",
-      "To improve your app's discoverability in search results",
-      "To tag builds for internal testing"
-    ],
-    "correctAnswer": "To improve your app's discoverability in search results",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "Android Studio",
-    "hint": "The official Integrated Development Environment (IDE) for Android app development.",
-    "question": "What is the name of the primary software used to build, test, and debug Android applications?",
-    "options": [
-      "Visual Studio Code",
-      "Xcode",
-      "Android Studio"
-    ],
-    "correctAnswer": "Android Studio",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "Android Studio",
-    "hint": "A build automation system used by Android Studio.",
-    "question": "What tool does Android Studio use to manage dependencies and define build configurations?",
-    "options": [
-      "Maven",
-      "Gradle",
-      "CocoaPods"
-    ],
-    "correctAnswer": "Gradle",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "General Concepts",
-    "hint": "The process of making your app available to a small group of users to find bugs.",
-    "question": "What is the general term for distributing a pre-release version of an application for testing purposes?",
-    "options": [
-      "Final Release",
-      "Beta Testing",
-      "General Availability"
-    ],
-    "correctAnswer": "Beta Testing",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "App Store Release",
-    "hint": "A URL that details how your app handles user data.",
-    "question": "What legal document, provided as a URL, is a mandatory requirement for an app submission on both App Store and Google Play?",
-    "options": [
-      "Terms of Service URL",
-      "Privacy Policy URL",
-      "Marketing Website URL"
-    ],
-    "correctAnswer": "Privacy Policy URL",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "General Concepts",
-    "hint": "An account that gives you access to all the tools needed to distribute apps.",
-    "question": "What must you enroll in before you can distribute apps on either the Apple App Store or Google Play Store?",
-    "options": [
-      "A university computer science program",
-      "The Apple Developer Program or Google Play Developer account",
-      "A GitHub Pro account"
-    ],
-    "correctAnswer": "The Apple Developer Program or Google Play Developer account",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "Xcode",
-    "hint": "A section in Xcode where you configure your app's entitlements and services.",
-    "question": "Where in Xcode would you go to enable services like Push Notifications, iCloud, or Sign in with Apple?",
-    "options": [
-      "The Build Settings tab",
-      "The Signing & Capabilities tab",
-      "The Info.plist file directly"
-    ],
-    "correctAnswer": "The Signing & Capabilities tab",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "Android App Distribution",
-    "hint": "The traditional, installable file format for Android apps.",
-    "question": "Before the introduction of Android App Bundles (.aab), what was the universal package format for Android apps?",
-    "options": [
-      ".apk",
-      ".dex",
-      ".aar"
-    ],
-    "correctAnswer": ".apk",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "Android App Distribution",
-    "hint": "A testing track on Google Play that makes your app available to anyone who has the link.",
-    "question": "Which Google Play testing track is most similar to TestFlight's public link feature for external testing?",
-    "options": [
-      "Internal Testing",
-      "Closed Testing",
-      "Open Testing"
-    ],
-    "correctAnswer": "Open Testing",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "General Concepts",
-    "hint": "The version number visible to users on the App Store.",
-    "question": "What is the difference between the 'Build Number' and the 'Version Number'?",
-    "options": [
-      "They are the same thing",
-      "The Version (e.g., 1.2) is public, while the Build (e.g., 15A) is an internal counter for each upload",
-      "The Build is public, and the Version is internal"
-    ],
-    "correctAnswer": "The Version (e.g., 1.2) is public, while the Build (e.g., 15A) is an internal counter for each upload",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  },
-  {
-    "category": "General Concepts",
-    "hint": "A gradual release of an update to a percentage of users.",
-    "question": "What is a 'Phased Release'?",
-    "options": [
-      "Releasing different features at different times",
-      "Gradually rolling out an app update to users over several days to monitor for issues",
-      "A special type of beta testing"
-    ],
-    "correctAnswer": "Gradually rolling out an app update to users over several days to monitor for issues",
-    "content": {
-      "type": "none",
-      "language": "",
-      "value": ""
-    }
-  }
-,
     {
+      "cardId": "ios_android_dist_041",
+      "category": "iOS Beta Testing",
+      "hint": "Apple's official platform for distributing beta versions of an app.",
+      "question": "What is the industry-standard method provided by Apple for testing iOS apps before release?",
+      "options": [
+        "Ad Hoc Distribution",
+        "TestFlight",
+        "Enterprise Program"
+      ],
+      "correctAnswer": "TestFlight",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_042",
+      "category": "iOS Beta Testing",
+      "hint": "This TestFlight tier is for your core team and has a limit of 100 users.",
+      "question": "What is the main advantage of TestFlight's 'Internal Testing'?",
+      "options": [
+        "It allows for public sign-ups",
+        "New builds are available almost instantly without Apple review",
+        "It supports up to 10,000 testers"
+      ],
+      "correctAnswer": "New builds are available almost instantly without Apple review",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_043",
+      "category": "iOS Beta Testing",
+      "hint": "This TestFlight tier is for a wider audience, up to 10,000 users.",
+      "question": "What is a key consideration before sending a build to 'External Testers' on TestFlight?",
+      "options": [
+        "The build must undergo a brief review by Apple",
+        "Testers must pay for the app",
+        "You must collect every device's UDID"
+      ],
+      "correctAnswer": "The build must undergo a brief review by Apple",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_044",
+      "category": "iOS Beta Testing",
+      "hint": "An older distribution method for installing an app on a limited set of specific devices.",
+      "question": "What unique piece of information is required to register a device for 'Ad Hoc' distribution?",
+      "options": [
+        "The device's serial number",
+        "The user's Apple ID",
+        "The Unique Device Identifier (UDID)"
+      ],
+      "correctAnswer": "The Unique Device Identifier (UDID)",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_045",
+      "category": "iOS Beta Testing",
+      "hint": "A distribution method for large organizations to share private, in-house apps with employees.",
+      "question": "Which Apple Developer program allows a company to distribute apps directly to employees, bypassing the public App Store?",
+      "options": [
+        "Apple Developer Enterprise Program",
+        "TestFlight External Testing",
+        "Ad Hoc Distribution"
+      ],
+      "correctAnswer": "Apple Developer Enterprise Program",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_046",
+      "category": "App Store Release",
+      "hint": "The web portal where you manage your app's listing, builds, and submissions.",
+      "question": "What is the name of Apple's web platform used to manage all aspects of your app on the App Store?",
+      "options": [
+        "iTunes Connect",
+        "App Store Connect",
+        "Apple Developer Portal"
+      ],
+      "correctAnswer": "App Store Connect",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_047",
+      "category": "App Store Release",
+      "hint": "If your app requires a login, you must provide this to Apple's review team.",
+      "question": "What must you provide in your App Store Connect submission for an app that requires authentication?",
+      "options": [
+        "A link to your company's website",
+        "A valid demo account username and password",
+        "A video demonstrating the login process"
+      ],
+      "correctAnswer": "A valid demo account username and password",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_048",
+      "category": "App Store Release",
+      "hint": "The process where Apple's team checks if your app complies with all guidelines.",
+      "question": "Before your app can go live, it must pass a check performed by human reviewers. What is this process called?",
+      "options": [
+        "Automated Code Analysis",
+        "The App Store Review Process",
+        "User Acceptance Testing"
+      ],
+      "correctAnswer": "The App Store Review Process",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_049",
+      "category": "App Store Release",
+      "hint": "This happens if your app does not meet one of Apple's guidelines.",
+      "question": "What is the outcome if the Apple review team finds that your app crashes or violates a privacy rule?",
+      "options": [
+        "The app is approved with a warning",
+        "The app is rejected with a detailed report",
+        "Your developer account is automatically suspended"
+      ],
+      "correctAnswer": "The app is rejected with a detailed report",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_050",
+      "category": "App Store Release",
+      "hint": "An option that lets you control the exact moment your app goes live.",
+      "question": "After your app is approved, what release option puts its status as 'Pending Developer Release'?",
+      "options": [
+        "Phased Release",
+        "Automatic Release",
+        "Manual Release"
+      ],
+      "correctAnswer": "Manual Release",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_051",
+      "category": "Android App Distribution",
+      "hint": "The web portal for managing your Android app's distribution.",
+      "question": "What is the Android equivalent of App Store Connect?",
+      "options": [
+        "Android Studio",
+        "Google Developer Center",
+        "Google Play Console"
+      ],
+      "correctAnswer": "Google Play Console",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_052",
+      "category": "Android App Distribution",
+      "hint": "Google Play's equivalent of TestFlight for distributing beta builds.",
+      "question": "In the Google Play Console, beta testing is managed through different...?",
+      "options": [
+        "Build Flavors",
+        "Testing Tracks (Internal, Closed, Open)",
+        "Distribution Groups"
+      ],
+      "correctAnswer": "Testing Tracks (Internal, Closed, Open)",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_053",
+      "category": "Android App Distribution",
+      "hint": "The modern, recommended publishing format for Android apps.",
+      "question": "What is the file format you upload to the Google Play Console that allows Google to deliver optimized APKs to users?",
+      "options": [
+        ".apk",
+        ".aab (Android App Bundle)",
+        ".jar"
+      ],
+      "correctAnswer": ".aab (Android App Bundle)",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_054",
+      "category": "General Concepts",
+      "hint": "A file that links your app, your developer account, and the devices it can run on.",
+      "question": "In iOS development, what is a 'Provisioning Profile'?",
+      "options": [
+        "A user's profile within the app",
+        "A file that authorizes your app to be installed on specific devices",
+        "A server configuration file"
+      ],
+      "correctAnswer": "A file that authorizes your app to be installed on specific devices",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_055",
+      "category": "General Concepts",
+      "hint": "The process of digitally signing your app to verify its origin and integrity.",
+      "question": "What is 'Code Signing' in the context of app distribution?",
+      "options": [
+        "Writing your signature in the source code comments",
+        "A cryptographic process that assures users the app is from you and hasn't been tampered with",
+        "A contract you sign with Apple or Google"
+      ],
+      "correctAnswer": "A cryptographic process that assures users the app is from you and hasn't been tampered with",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_056",
+      "category": "Xcode",
+      "hint": "The action in Xcode that creates a build artifact ready for distribution.",
+      "question": "What is the first step you take in Xcode to bundle your app for TestFlight or the App Store?",
+      "options": [
+        "Run > Build",
+        "Product > Archive",
+        "File > Export"
+      ],
+      "correctAnswer": "Product > Archive",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_057",
+      "category": "Xcode",
+      "hint": "An essential configuration file in an iOS project.",
+      "question": "What is the name of the file in an Xcode project that contains metadata like the Bundle Identifier and app version?",
+      "options": [
+        "config.xml",
+        "Info.plist",
+        "project.pbxproj"
+      ],
+      "correctAnswer": "Info.plist",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_058",
+      "category": "Xcode",
+      "hint": "A unique name used to identify your app across the entire Apple ecosystem.",
+      "question": "What is a 'Bundle Identifier'?",
+      "options": [
+        "The name of the app shown on the home screen",
+        "A unique, reverse-DNS format string (e.g., com.company.appname)",
+        "The version number of the build (e.g., 1.0.1)"
+      ],
+      "correctAnswer": "A unique, reverse-DNS format string (e.g., com.company.appname)",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_059",
+      "category": "App Store Release",
+      "hint": "These are required to show users what your app looks like before they download it.",
+      "question": "What visual assets must you upload to App Store Connect for your app's product page?",
+      "options": [
+        "A video trailer",
+        "Screenshots for various device sizes",
+        "Photos of your development team"
+      ],
+      "correctAnswer": "Screenshots for various device sizes",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_060",
+      "category": "App Store Release",
+      "hint": "Words that help users find your app via App Store search.",
+      "question": "In your App Store Connect listing, what is the purpose of 'Keywords'?",
+      "options": [
+        "To unlock hidden features in the app",
+        "To improve your app's discoverability in search results",
+        "To tag builds for internal testing"
+      ],
+      "correctAnswer": "To improve your app's discoverability in search results",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_061",
+      "category": "Android Studio",
+      "hint": "The official Integrated Development Environment (IDE) for Android app development.",
+      "question": "What is the name of the primary software used to build, test, and debug Android applications?",
+      "options": [
+        "Visual Studio Code",
+        "Xcode",
+        "Android Studio"
+      ],
+      "correctAnswer": "Android Studio",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_062",
+      "category": "Android Studio",
+      "hint": "A build automation system used by Android Studio.",
+      "question": "What tool does Android Studio use to manage dependencies and define build configurations?",
+      "options": [
+        "Maven",
+        "Gradle",
+        "CocoaPods"
+      ],
+      "correctAnswer": "Gradle",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_063",
+      "category": "General Concepts",
+      "hint": "The process of making your app available to a small group of users to find bugs.",
+      "question": "What is the general term for distributing a pre-release version of an application for testing purposes?",
+      "options": [
+        "Final Release",
+        "Beta Testing",
+        "General Availability"
+      ],
+      "correctAnswer": "Beta Testing",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_064",
+      "category": "App Store Release",
+      "hint": "A URL that details how your app handles user data.",
+      "question": "What legal document, provided as a URL, is a mandatory requirement for an app submission on both App Store and Google Play?",
+      "options": [
+        "Terms of Service URL",
+        "Privacy Policy URL",
+        "Marketing Website URL"
+      ],
+      "correctAnswer": "Privacy Policy URL",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_065",
+      "category": "General Concepts",
+      "hint": "An account that gives you access to all the tools needed to distribute apps.",
+      "question": "What must you enroll in before you can distribute apps on either the Apple App Store or Google Play Store?",
+      "options": [
+        "A university computer science program",
+        "The Apple Developer Program or Google Play Developer account",
+        "A GitHub Pro account"
+      ],
+      "correctAnswer": "The Apple Developer Program or Google Play Developer account",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_066",
+      "category": "Xcode",
+      "hint": "A section in Xcode where you configure your app's entitlements and services.",
+      "question": "Where in Xcode would you go to enable services like Push Notifications, iCloud, or Sign in with Apple?",
+      "options": [
+        "The Build Settings tab",
+        "The Signing & Capabilities tab",
+        "The Info.plist file directly"
+      ],
+      "correctAnswer": "The Signing & Capabilities tab",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_067",
+      "category": "Android App Distribution",
+      "hint": "The traditional, installable file format for Android apps.",
+      "question": "Before the introduction of Android App Bundles (.aab), what was the universal package format for Android apps?",
+      "options": [
+        ".apk",
+        ".dex",
+        ".aar"
+      ],
+      "correctAnswer": ".apk",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_068",
+      "category": "Android App Distribution",
+      "hint": "A testing track on Google Play that makes your app available to anyone who has the link.",
+      "question": "Which Google Play testing track is most similar to TestFlight's public link feature for external testing?",
+      "options": [
+        "Internal Testing",
+        "Closed Testing",
+        "Open Testing"
+      ],
+      "correctAnswer": "Open Testing",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_069",
+      "category": "General Concepts",
+      "hint": "The version number visible to users on the App Store.",
+      "question": "What is the difference between the 'Build Number' and the 'Version Number'?",
+      "options": [
+        "They are the same thing",
+        "The Version (e.g., 1.2) is public, while the Build (e.g., 15A) is an internal counter for each upload",
+        "The Build is public, and the Version is internal"
+      ],
+      "correctAnswer": "The Version (e.g., 1.2) is public, while the Build (e.g., 15A) is an internal counter for each upload",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_070",
+      "category": "General Concepts",
+      "hint": "A gradual release of an update to a percentage of users.",
+      "question": "What is a 'Phased Release'?",
+      "options": [
+        "Releasing different features at different times",
+        "Gradually rolling out an app update to users over several days to monitor for issues",
+        "A special type of beta testing"
+      ],
+      "correctAnswer": "Gradually rolling out an app update to users over several days to monitor for issues",
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
+    },
+    {
+      "cardId": "ios_android_dist_071",
       "category": "iOS - Core Concepts & Tools",
       "hint": "The official IDE from Apple for developing all iOS applications.",
       "question": "What is the primary Integrated Development Environment used to build, debug, and prepare iOS apps for distribution?",
@@ -1136,9 +1206,14 @@
         "Android Studio"
       ],
       "correctAnswer": "Xcode",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_072",
       "category": "iOS - Core Concepts & Tools",
       "hint": "The web portal for managing your app's entire lifecycle, from build uploads to store analytics.",
       "question": "What is the name of the Apple web portal used to manage TestFlight, set up your store page, and submit your app?",
@@ -1148,9 +1223,14 @@
         "App Store Connect"
       ],
       "correctAnswer": "App Store Connect",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_073",
       "category": "iOS - Core Concepts & Tools",
       "hint": "Apple's platform for beta testing your app with internal and external users.",
       "question": "Which Apple service allows you to distribute pre-release builds of your app to testers?",
@@ -1160,9 +1240,14 @@
         "Xcode Cloud"
       ],
       "correctAnswer": "TestFlight",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_074",
       "category": "iOS - Core Concepts & Tools",
       "hint": "The required paid membership to publish apps on the App Store.",
       "question": "What is the name of the membership program required to get certificates and access to App Store Connect?",
@@ -1172,9 +1257,14 @@
         "Xcode Professional License"
       ],
       "correctAnswer": "Apple Developer Program",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_075",
       "category": "iOS - Core Concepts & Tools",
       "hint": "A window inside Xcode that lets you manage and upload your archives to the App Store.",
       "question": "What is the name of the Xcode window that displays your build archives and allows you to validate or distribute them?",
@@ -1184,9 +1274,14 @@
         "Organizer"
       ],
       "correctAnswer": "Organizer",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_076",
       "category": "iOS - Identifiers & Info.plist",
       "hint": "A core configuration file in every iOS app containing essential metadata.",
       "question": "What is the name of the property list file that stores key app metadata like its Bundle ID and version number?",
@@ -1196,9 +1291,14 @@
         "config.xml"
       ],
       "correctAnswer": "Info.plist",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_077",
       "category": "iOS - Identifiers & Info.plist",
       "hint": "The single most important unique ID for your app, formatted in reverse-DNS notation.",
       "question": "What is the unique identifier for an iOS app (e.g., com.yourcompany.yourapp) known as?",
@@ -1208,9 +1308,14 @@
         "SKU"
       ],
       "correctAnswer": "Bundle ID",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_078",
       "category": "iOS - Identifiers & Info.plist",
       "hint": "An identifier in your developer account that links services like Push Notifications to your app.",
       "question": "In the Apple Developer portal, what identifier associates your app's Bundle ID with specific app services?",
@@ -1220,9 +1325,14 @@
         "Provisioning ID"
       ],
       "correctAnswer": "App ID",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_079",
       "category": "iOS - Identifiers & Info.plist",
       "hint": "The public-facing version of your app that users see on the App Store (e.g., '1.2.0').",
       "question": "Which Info.plist key represents the user-visible version string on the App Store?",
@@ -1232,9 +1342,14 @@
         "MarketingVersion"
       ],
       "correctAnswer": "CFBundleShortVersionString",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_080",
       "category": "iOS - Identifiers & Info.plist",
       "hint": "An internal counter that must be incremented for every new upload to App Store Connect.",
       "question": "Which Info.plist key represents the internal build number that identifies a unique upload to TestFlight?",
@@ -1244,9 +1359,14 @@
         "CFBundleIdentifier"
       ],
       "correctAnswer": "CFBundleVersion",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_081",
       "category": "iOS - Identifiers & Info.plist",
       "hint": "The name of your app as it appears below its icon on the user's home screen.",
       "question": "Which Info.plist key specifies the name shown on the iOS home screen?",
@@ -1256,9 +1376,14 @@
         "AppName"
       ],
       "correctAnswer": "CFBundleDisplayName",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_082",
       "category": "iOS - Identifiers & Info.plist",
       "hint": "The name of the main executable file inside your app package.",
       "question": "Which Info.plist key defines the name of the app's runnable binary?",
@@ -1268,9 +1393,14 @@
         "Runner"
       ],
       "correctAnswer": "CFBundleExecutable",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_083",
       "category": "iOS - Identifiers & Info.plist",
       "hint": "A short, technical name for the app bundle, sometimes used by the system.",
       "question": "What does the Info.plist key `CFBundleName` represent?",
@@ -1280,9 +1410,14 @@
         "The name of the developer"
       ],
       "correctAnswer": "A short name for the app bundle, often derived from the product name",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_084",
       "category": "iOS - Signing & Packaging",
       "hint": "The security process that verifies your identity and ensures the app hasn't been tampered with.",
       "question": "What is the general term for the process of cryptographically signing an iOS app to ensure its integrity and origin?",
@@ -1292,9 +1427,14 @@
         "Build Compilation"
       ],
       "correctAnswer": "Code Signing",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_085",
       "category": "iOS - Signing & Packaging",
       "hint": "A digital file that proves your identity as a trusted Apple developer.",
       "question": "In code signing, what digital identity file is issued by Apple to you as a developer?",
@@ -1304,9 +1444,14 @@
         "Private Key"
       ],
       "correctAnswer": "Certificate",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_086",
       "category": "iOS - Signing & Packaging",
       "hint": "This file links your Certificate, App ID, and authorized devices or store account together.",
       "question": "What file ties your developer identity and app services to a specific build for testing or release?",
@@ -1316,9 +1461,14 @@
         "Info.plist"
       ],
       "correctAnswer": "Provisioning Profile",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_087",
       "category": "iOS - Signing & Packaging",
       "hint": "A setting in your Xcode project that defines a single product to be built, like your app.",
       "question": "Within an Xcode project, what defines the settings for building a single product, such as your app?",
@@ -1328,9 +1478,14 @@
         "TARGET"
       ],
       "correctAnswer": "TARGET",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_088",
       "category": "iOS - Signing & Packaging",
       "hint": "The final package created by Xcode's 'Archive' action, containing the compiled app and its resources.",
       "question": "What is the file extension of the bundle produced by Xcode that you upload to App Store Connect?",
@@ -1340,9 +1495,14 @@
         ".app"
       ],
       "correctAnswer": ".xcarchive",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_089",
       "category": "iOS - TestFlight",
       "hint": "In App Store Connect, this refers to a specific version of your app you have uploaded for testing.",
       "question": "What does App Store Connect call an uploaded `.xcarchive` that is available for testing in TestFlight?",
@@ -1352,9 +1512,14 @@
         "A Build"
       ],
       "correctAnswer": "A Build",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_090",
       "category": "iOS - TestFlight",
       "hint": "The first phase of testing, limited to members of your App Store Connect team.",
       "question": "What is the TestFlight phase called where you distribute a build only to developers and admins on your team?",
@@ -1364,9 +1529,14 @@
         "Unit Testing"
       ],
       "correctAnswer": "Internal Testing",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_091",
       "category": "iOS - TestFlight",
       "hint": "A quick, automated review required for the first build of a new version before external testing.",
       "question": "Before distributing a build to external testers, what quick review process must it pass?",
@@ -1376,9 +1546,14 @@
         "Manual Code Review"
       ],
       "correctAnswer": "Beta App Review",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_092",
       "category": "iOS - TestFlight",
       "hint": "A declaration about whether your app uses encryption, required before a build is available in TestFlight.",
       "question": "What declaration must you make about your app's use of encryption before a build can be tested?",
@@ -1388,9 +1563,14 @@
         "Cryptography Report"
       ],
       "correctAnswer": "Export Compliance",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_093",
       "category": "iOS - App Store Release",
       "hint": "The tab in App Store Connect where you manage the final release of your app.",
       "question": "In App Store Connect, which section is used to manage the release of your app, prepare metadata, and submit for review?",
@@ -1400,9 +1580,14 @@
         "Distribution"
       ],
       "correctAnswer": "Distribution",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_094",
       "category": "iOS - App Store Release",
       "hint": "All the information on your App Store page, like screenshots, description, and keywords.",
       "question": "What is the collective term for all the textual and visual information that makes up your App Store product page?",
@@ -1412,9 +1597,14 @@
         "Product Details"
       ],
       "correctAnswer": "App Store Metadata",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_095",
       "category": "iOS - App Store Release",
       "hint": "The status indicating you need to complete metadata and attach a build.",
       "question": "In App Store Connect, what is the status of a new version before you've attached a build and filled out all details?",
@@ -1424,9 +1614,14 @@
         "Waiting for Upload"
       ],
       "correctAnswer": "Prepare for Submission",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_096",
       "category": "iOS - App Store Release",
       "hint": "The action of sending your completed app version to Apple for approval.",
       "question": "What is the final step you take in App Store Connect to send your app to Apple for approval?",
@@ -1436,9 +1631,14 @@
         "Go Live"
       ],
       "correctAnswer": "Submit for Review",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_097",
       "category": "iOS - App Store Release",
       "hint": "The status indicating an Apple employee is actively testing and reviewing your app.",
       "question": "What does the 'In Review' status mean for your app submission?",
@@ -1448,9 +1648,14 @@
         "The app is waiting in a queue to be reviewed."
       ],
       "correctAnswer": "An Apple employee is actively reviewing your app against the guidelines.",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_098",
       "category": "iOS - App Store Release",
       "hint": "The communication channel where Apple contacts you if your app is rejected.",
       "question": "If your app submission is rejected, where in App Store Connect do you find the explanation and communicate with Apple?",
@@ -1460,9 +1665,14 @@
         "Support Tickets"
       ],
       "correctAnswer": "Resolution Center",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_099",
       "category": "iOS - App Store Release",
       "hint": "The setting that controls how your app is published after approval (immediately or manually).",
       "question": "What feature in App Store Connect allows you to control when your app goes live after it has been approved?",
@@ -1472,9 +1682,14 @@
         "App Store Version Release"
       ],
       "correctAnswer": "App Store Version Release",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_100",
       "category": "iOS - App Store Release",
       "hint": "The required images and short videos that showcase your app's features on its store page.",
       "question": "What are the required visual assets for your App Store product page called?",
@@ -1484,9 +1699,14 @@
         "Previews and Screenshots"
       ],
       "correctAnswer": "Previews and Screenshots",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_101",
       "category": "iOS - App Store Release",
       "hint": "A mandatory section on your store page detailing what user data your app collects.",
       "question": "What is the name of the mandatory privacy 'nutrition label' on an App Store product page?",
@@ -1496,9 +1716,14 @@
         "User Data Report"
       ],
       "correctAnswer": "App Privacy",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_102",
       "category": "iOS - Info.plist Keys",
       "hint": "A simple boolean key that declares the app is built for iOS and requires an iPhone, iPad, or iPod touch.",
       "question": "Which Info.plist key is a simple flag indicating that the app is built specifically for the iOS platform?",
@@ -1508,9 +1733,14 @@
         "TargetPlatform"
       ],
       "correctAnswer": "LSRequiresIPhoneOS",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_103",
       "category": "iOS - Info.plist Keys",
       "hint": "Defines the 'Launch Screen' file, which is the first screen shown instantly by the system.",
       "question": "Which Info.plist key specifies the storyboard file for the app's initial launch screen?",
@@ -1520,9 +1750,14 @@
         "UIInitialScreen"
       ],
       "correctAnswer": "UILaunchStoryboardName",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_104",
       "category": "iOS - Info.plist Keys",
       "hint": "Tells the system which storyboard contains the main UI to load after the launch screen.",
       "question": "For non-SwiftUI apps, what Info.plist key defines the main storyboard containing the initial user interface?",
@@ -1532,9 +1767,14 @@
         "MainInterface"
       ],
       "correctAnswer": "UIMainStoryboardFile",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     },
     {
+      "cardId": "ios_android_dist_105",
       "category": "iOS - Info.plist Keys",
       "hint": "Defines which device orientations your app's UI supports.",
       "question": "Which Info.plist key is an array that specifies the interface orientations an app supports (e.g., portrait, landscape)?",
@@ -1544,8 +1784,11 @@
         "UISupportedInterfaceOrientations"
       ],
       "correctAnswer": "UISupportedInterfaceOrientations",
-      "content": { "type": "none", "language": "", "value": "" }
+      "content": {
+        "type": "none",
+        "language": "",
+        "value": ""
+      }
     }
-]
-  
+  ]
 }
