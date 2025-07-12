@@ -1,0 +1,91 @@
+[
+  {
+    "cardId": "itc_066",
+    "cardType": "flippable",
+    "sideA": {
+      "text": "Deselecciona esa casilla y, en su lugar, marca la que está justo debajo.",
+      "visualContent": {
+        "type": "ascii",
+        "value": "[✓] -> [ ]\n[ ] -> [✓]"
+      }
+    },
+    "sideB": [
+      "Deselect that checkbox and check the one right below it instead.",
+      "Uncheck that box and then tick the next one down.",
+      "Please unselect that option and select the one underneath it.",
+      "Deselect that checkbox and instead, select the one that is just below."
+    ],
+    "note": "Added your suggested translation. It's clear and natural."
+  },
+  {
+    "cardId": "itc_067",
+    "cardType": "flippable",
+    "sideA": {
+      "text": "Haz clic en cualquier parte fuera de la tabla para que nada quede seleccionado.",
+      "visualContent": {
+        "type": "icon",
+        "value": "fas fa-hand-point-up"
+      }
+    },
+    "sideB": [
+      "Click anywhere outside the table so that nothing is selected.",
+      "Just click off the table to deselect everything.",
+      "Can you click on the background to clear the selection?"
+    ],
+    "note": "The suggested phrase '...so anything is selected' is incorrect, as the goal is to deselect. The corrected version is nearly identical to an existing answer, so no new answer was added."
+  },
+  {
+    "cardId": "itc_006",
+    "cardType": "flippable",
+    "sideA": {
+      "text": "Desplázate hacia abajo un poco.",
+      "visualContent": {
+        "type": "icon",
+        "value": "fas fa-arrows-alt-v"
+      }
+    },
+    "sideB": [
+      "Can you scroll down a little bit?",
+      "Go ahead and scroll down some.",
+      "Just scroll down a bit.",
+      "Move down a bit."
+    ],
+    "note": "Added 'Move down a bit.' It's a valid and direct alternative to 'scroll'."
+  },
+  {
+    "cardId": "itc_018",
+    "cardType": "flippable",
+    "sideA": {
+      "text": "Copia todo ese texto.",
+      "visualContent": {
+        "type": "icon",
+        "value": "fas fa-copy"
+      }
+    },
+    "sideB": [
+      "Copy all of that text.",
+      "Please select and copy all that text.",
+      "Go ahead and copy the entire text block.",
+      "Copy all that text."
+    ],
+    "note": "Confirmed. 'Copy all that text' is a valid and common alternative to 'Copy all of that text'. Added to the list of answers."
+  },
+  {
+    "cardId": "itc_032",
+    "cardType": "flippable",
+    "sideA": {
+      "text": "Copia solo la dirección de correo electrónico, nada más.",
+      "visualContent": {
+        "type": "icon",
+        "value": "fas fa-at"
+      }
+    },
+    "sideB": [
+      "Copy just the email address, nothing else.",
+      "Please copy only the email address.",
+      "I just need you to copy the email address itself.",
+      "Copy only the email address, nothing else."
+    ],
+    "note": "Added your suggestion. Using 'only' is a good alternative to 'just' in this context."
+  }
+]

@@ -9,12 +9,13 @@ class DeckDetailScreen {
      * @param {function} onUnignoreCard Callback to restore an ignored card.
      * @param {function} onExportForImprovement Callback to handle the export of marked cards.
      */
-    constructor(container, onStartQuiz, onGoBack, onReset, onUnignoreCard, onExportForImprovement) {
+    constructor(container, onStartQuiz, onGoBack, onReset, onUnignoreCard, onUnmarkCardForImprovement, onExportForImprovement) {
         this.container = container;
         this.onStartQuiz = onStartQuiz;
         this.onGoBack = onGoBack;
         this.onResetDeck = onReset;
         this.onUnignoreCard = onUnignoreCard;
+        this.onUnmarkCardForImprovement = onUnmarkCardForImprovement; // Assign the new callback
         this.onExportForImprovement = onExportForImprovement;
         this.deck = null; // Store the current deck data for internal use
         console.log("DEBUG: [DeckDetailScreen] constructor -> Component instantiated.");
@@ -30,10 +31,13 @@ class DeckDetailScreen {
         console.log("DEBUG: [DeckDetailScreen] render -> Rendering details for deck:", deck.name);
         this.deck = deck;
 
-        const html = await ComponentLoader.loadHTML('/src/components/DeckDetailScreen/deck-detail-screen.html');
-        this.container.innerHTML = html;
-
-        // Populate all dynamic sections of the component
+        // Load the main component HTML only if it's not already there
+        if (!this.container.querySelector('#deck-detail-screen')) {
+            const html = await ComponentLoader.loadHTML('/src/components/DeckDetailScreen/deck-detail-screen.html');
+            this.container.innerHTML = html;
+            this.setupEventListeners(); // Setup listeners only once after initial render
+        }
+  // Populate all dynamic sections of the component
         this._populateDeckInfo(deck, progressData);
         this._populateProgressStats(deck.cards.length, progressData);
         this._populateIgnoredCards(deck.cards, progressData.ignored);
@@ -146,9 +150,14 @@ class DeckDetailScreen {
                 const item = document.createElement('div');
                 item.className = 'p-3 bg-gray-50 dark:bg-gray-700/50 rounded-md';
                 item.innerHTML = `
-                    <p class="font-semibold text-gray-800 dark:text-gray-200 truncate">${cardText}</p>
-                    <p class="text-xs text-gray-500 dark:text-gray-400">Reasons: ${review.reasons.join(', ') || 'N/A'}</p>
-                    ${review.note ? `<p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Note: <span class="italic">${review.note}</span></p>` : ''}
+                    <div class="flex justify-between items-start gap-4">
+                        <div class="flex-grow min-w-0">
+                            <p class="font-semibold text-gray-800 dark:text-gray-200 break-words">${cardText}</p>
+                            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Reasons: ${review.reasons.join(', ') || 'N/A'}</p>
+                            ${review.note ? `<p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Note: <span class="italic">${review.note}</span></p>` : ''}
+                        </div>
+                        <button data-card-id="${cardId}" class="unmark-card-btn text-xs font-semibold text-red-500 hover:text-red-700 dark:text-red-400 dark:hover:text-red-300 transition-colors flex-shrink-0">&times; </button>
+                    </div>
                 `;
                 listContainer.appendChild(item);
             }
@@ -165,11 +174,15 @@ class DeckDetailScreen {
         document.getElementById('back-to-decks-btn').addEventListener('click', () => this.onGoBack());
         document.getElementById('reset-deck-btn').addEventListener('click', () => this.onResetDeck());
 
-        // Use event delegation for the "Restore" buttons in the ignored list
-        document.getElementById('ignored-cards-list').addEventListener('click', (event) => {
+       this.container.addEventListener('click', (event) => {
             if (event.target.classList.contains('restore-card-btn')) {
                 const cardId = event.target.dataset.cardId;
                 this.onUnignoreCard(cardId);
+            }
+            if (event.target.classList.contains('unmark-card-btn')) {
+                const cardId = event.target.dataset.cardId;
+                // This callback will be passed from App.js
+                this.onUnmarkCardForImprovement(cardId);
             }
         });
 

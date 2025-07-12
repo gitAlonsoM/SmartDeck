@@ -66,6 +66,24 @@ class FlippableCardScreen {
             // Here, sideB is still expected to be a simple array of strings
             sideBContainer.appendChild(this._createTextLine(line));
         });
+
+
+        // --- Handle Improvement Note (if it exists) ---
+        const noteContainer = document.getElementById('note-content-container');
+        noteContainer.innerHTML = ''; // Clear previous note
+        noteContainer.classList.add('hidden'); // Hide by default
+
+        // Check if the note property exists and is a non-empty string
+        if (this.cardData.note && typeof this.cardData.note === 'string' && this.cardData.note.trim() !== '') {
+            // If a note exists, populate the container and make it visible
+            noteContainer.innerHTML = `
+                <div class="flex items-start gap-2">
+                    <i class="fas fa-info-circle text-blue-400 mt-1" title="Reviewer's Note"></i>
+                    <p class="text-sm text-gray-400 dark:text-gray-300 italic">${this.cardData.note}</p>
+                </div>
+            `;
+            noteContainer.classList.remove('hidden');
+        }
     }
 
     /**

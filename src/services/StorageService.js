@@ -44,6 +44,26 @@ static STORAGE_KEY_DECK_PROGRESS_PREFIX = 'smart-decks-v3-deck-progress-';
         }
         return {};
     }
+
+      /**
+     * Clears the improvement data for a single card within a deck.
+     * @param {string} deckId The ID of the deck.
+     * @param {string} cardId The ID of the card to clear.
+     */
+    static clearImprovementForCard(deckId, cardId) {
+        if (!deckId || !cardId) return;
+        try {
+            const improvementData = this.loadImprovementData(deckId);
+            if (improvementData[cardId]) {
+                delete improvementData[cardId];
+                this.saveImprovementData(deckId, improvementData);
+                console.log(`DEBUG: [StorageService] clearImprovementForCard -> Cleared improvement data for card ${cardId} in deck ${deckId}.`);
+            }
+        } catch (error) {
+            console.error(`DEBUG: [StorageService] clearImprovementForCard -> Error clearing data for card ${cardId}.`, error);
+        }
+    }
+    
     
     /**
      * Saves the learning progress for a specific deck.

@@ -55,7 +55,14 @@ class App {
          this.notificationModal = new NotificationModal(notificationModalContainer);
          await this.notificationModal.init();
 
-        this.improvementModal = new ImprovementModal(improvementModalContainer, (cardId, reviewData) => this.handleSaveImprovementRequest(cardId, reviewData));
+
+
+        this.improvementModal = new ImprovementModal(
+            improvementModalContainer, 
+            (cardId, reviewData) => this.handleSaveImprovementRequest(cardId, reviewData),
+            (cardId) => this.handleUnmarkCardForImprovement(cardId) // Pass the remove handler
+        );
+        
         await this.improvementModal.init();
 
         console.log("DEBUG: [App] setupComponents -> All components initialized.");
@@ -65,7 +72,7 @@ class App {
         console.log("DEBUG: [App] loadDecks -> Loading all decks.");
         let staticDecks = {};
         try {
-            const deckFiles = ['plsql_deck.json', 'shell_deck.json', 'ios_android.json', 'http_rest_deep_dive.json', 'english_phrasal_verbs.json','it_commands_deck.json', 'ui_elements_deck.json', 'git_deck.json'];
+            const deckFiles = ['plsql_deck.json', 'shell_deck.json', 'ios_android.json', 'http_rest_deep_dive.json', 'english_phrasal_verbs.json','it_commands_deck_01.json', 'ui_elements_deck.json', 'git_deck.json'];
             // Removed the leading '/' from the fetch path to make it relative
             const fetchPromises = deckFiles.map(file => fetch(`public/data/${file}`).then(res => res.json()));
             const loadedDecks = await Promise.all(fetchPromises);
@@ -101,7 +108,8 @@ class App {
                     () => this.handleGoBackToDecks(),
                    () => this.handleResetDeck(),
                    (cardId) => this.handleUnignoreCard(cardId),
-                    () => this.handleExportForImprovement() // Add the new export handler
+                    (cardId) => this.handleUnmarkCardForImprovement(cardId), // Pass the new unmark handler
+                    () => this.handleExportForImprovement()
                 ); 
             }
               const selectedDeck = this.state.allDecks[this.state.currentDeckId];
@@ -158,12 +166,41 @@ class App {
         }
     }
 
-
-    handleMarkCardForImprovement(cardId) {
+  handleMarkCardForImprovement(cardId) {
         if (!cardId) return;
-        console.log(`DEBUG: [App] handleMarkCardForImprovement -> User wants to mark card: ${cardId}`);
-        this.improvementModal.show(cardId);
+        console.log(`DEBUG: [App] handleMarkCardForImprovement -> User wants to mark/edit card: ${cardId}`);
+        
+        // Find the card and its type to make the modal context-aware
+        const deck = this.state.allDecks[this.state.currentDeckId];
+        if (!deck) return;
+
+        const card = deck.cards.find(c => c.cardId === cardId);
+        if (!card) return;
+
+        // Use the deck's type as the definitive source of truth
+        const cardType = deck.deckType; 
+
+        // Load existing data for this card to allow for editing
+        const existingData = StorageService.loadImprovementData(this.state.currentDeckId)[cardId];
+        
+        // Pass the card type along with the other data to the modal
+        this.improvementModal.show(cardId, cardType, existingData);
     }
+
+     handleUnmarkCardForImprovement(cardId) {
+        if (!cardId || !this.state.currentDeckId) return;
+        console.log(`DEBUG: [App] handleUnmarkCardForImprovement -> Removing card ${cardId} from improvement list.`);
+        StorageService.clearImprovementForCard(this.state.currentDeckId, cardId);
+        // Re-render the current screen to reflect the change
+        this.render(); 
+        
+        this.notificationModal.show(
+            'Card Unmarked',
+            'The card has been removed from the improvement list.',
+            { icon: 'fa-solid fa-eraser', color: 'text-gray-500', bgColor: 'bg-gray-100 dark:bg-gray-700' }
+        );
+    }
+
 
     handleSaveImprovementRequest(cardId, reviewData) {
         if (!cardId || !this.state.currentDeckId) return;
@@ -177,11 +214,101 @@ class App {
             'Card Marked',
             'The card has been successfully marked for improvement.',
             { icon: 'fa-solid fa-flag', color: 'text-blue-500', bgColor: 'bg-blue-100 dark:bg-blue-900' }
+        
         );
     }
+/**
+     * Generates a definitive, professional-grade prompt for an LLM, instructing it to return a complete, actionable response.
+     * @param {string} deckName - The name of the deck being improved.
+     * @param {string} deckId - The ID of the deck, used to construct the final command.
+     * @param {Array<object>} cardsToImprove - The array of card objects marked for improvement.
+     * @returns {string} A string containing the full prompt and the JSON data.
+     */
+    _generateImprovementPrompt(deckName, deckId, cardsToImprove) {
+        // Construct the filename from the deckId. Assumes a convention like 'deck_id.json'.
+        const deckFileName = `${deckId}.json`;
 
-    // --- State Changers & Event Handlers ---
-  async handleExportForImprovement() {
+        const promptHeader = `
+# SmartDeck Card Improvement Prompt V3
+
+## 1. ROLE AND GOAL
+You are a senior content editor for 'SmartDeck'. Your task is to process a batch of flashcards and return a complete, actionable response that includes both the corrected data and instructions for the user.
+
+## 2. CONTEXT
+The flashcards belong to the deck named: "${deckName}".
+The target deck file is: "${deckFileName}".
+
+## 3. CARD DATA STRUCTURES
+(The user will provide the JSON data below. You must understand the following schemas.)
+
+### A) Multiple-Choice ('quiz') Card:
+- \`cardId\`: Unique identifier. DO NOT CHANGE.
+- \`category\`, \`hint\`, \`content\`: Preserve these fields unless the user's request is specifically about them.
+- \`question\`: The question text. Improve for clarity.
+- \`options\`: An array of answers. This array has a FIXED LENGTH. Do not add/remove items, but you can correct the text within them.
+- \`correctAnswer\`: The correct string from \`options\`. MUST be updated if you change the option's text.
+- \`review_request\`: The user's feedback.
+
+### B) Flippable ('flippable') Card:
+- \`cardId\`: Unique identifier. DO NOT CHANGE.
+- \`sideA\`: The front of the card.
+- \`sideB\`: An array of valid answers. This array is FLEXIBLE. You can add new valid answers here.
+- \`note\`: A field for YOUR feedback to the user.
+- \`review_request\`: The user's feedback.
+
+## 4. CORE WORKFLOW & RULES
+1.  **Analyze Request**: Prioritize the \`review_request.reasons\` (e.g., "improve_hint", "clarify_question"). Use the \`review_request.note\` for specific user suggestions.
+2.  **Apply Corrections**: Fix typos, improve clarity, and validate user suggestions.
+3.  **Provide Feedback**: Use the \`note\` field on the card to explain your changes (or why you rejected a suggestion). The note must be concise and in English. Leave as \`null\` for trivial fixes.
+4.  **Language**: All your output (notes, corrected text) must be in English.
+
+## 5. **CRITICAL: REQUIRED OUTPUT FORMAT**
+Your final response MUST be a single block of Markdown text structured in exactly two parts:
+
+### Part 1: Corrected JSON
+- Start with the exact heading: \`## Corrected Cards JSON\`
+- Below it, provide a single, raw JSON array of the corrected cards inside a \`\`\`json code block.
+- In this JSON, you MUST REMOVE the entire \`review_request\` object from every card.
+
+### Part 2: Next Steps for the User
+- Follow the JSON block with the exact heading: \`## Next Steps\`
+- Provide a short, numbered list of instructions for the user.
+- Step 1 must tell the user to save the JSON above into the \`corrections.json\` file.
+- Step 2 must provide the **exact, ready-to-copy command** to run the update script in their terminal, using the deck's filename you were given.
+
+Here is the template you must follow:
+
+## Corrected Cards JSON
+\`\`\`json
+[
+  {
+    "cardId": "...",
+    "question": "...",
+    "options": ["..."],
+    "correctAnswer": "...",
+    "note": "Your expert note here..."
+  }
+]
+\`\`\`
+
+## Next Steps
+1. Save the JSON content above into the \`corrections.json\` file at the root of the project.
+2. Open the terminal at the project root and run the following command to apply the updates:
+   \`\`\`bash
+   py update_deck.py --deck-file "public/data/${deckFileName}" --input-file "corrections.json"
+   \`\`\`
+
+---
+[BEGIN CARD BATCH FOR YOUR REVIEW]
+---
+`;
+
+        const jsonString = JSON.stringify(cardsToImprove, null, 2);
+        return promptHeader + '\n' + jsonString;
+    }
+
+	// --- State Changers & Event Handlers ---
+	async handleExportForImprovement() {
         const deckId = this.state.currentDeckId;
         if (!deckId) return;
 
@@ -199,21 +326,25 @@ class App {
         const exportBatch = markedCardIds.map(cardId => {
             const card = cardMap.get(cardId);
             const review_request = improvementData[cardId];
-            return { ...card, review_request }; // Add the review_request object to the card copy
+            return { ...card, review_request };
         });
 
+        // Generate the full text content (prompt + JSON) by passing arguments in the correct order.
+        const textToCopy = this._generateImprovementPrompt(deck.name, deck.id, exportBatch);
+
         try {
-            await navigator.clipboard.writeText(JSON.stringify(exportBatch, null, 2));
+            await navigator.clipboard.writeText(textToCopy);
             this.notificationModal.show(
                 'Copied to Clipboard!',
-                `${exportBatch.length} card(s) have been copied as a JSON array, ready for improvement.`,
-                { icon: 'fa-solid fa-copy', color: 'text-green-500', bgColor: 'bg-green-100 dark:bg-green-900' }
+                `A complete prompt & action plan for your LLM with ${exportBatch.length} card(s) has been copied.`,
+                { icon: 'fa-solid fa-robot', color: 'text-green-500', bgColor: 'bg-green-100 dark:bg-green-900' }
             );
         } catch (error) {
             console.error('Failed to copy to clipboard:', error);
             this.notificationModal.show('Error', 'Could not copy data to clipboard. See console for details.');
         }
     }
+
 
      handleIgnoreCurrentCard() {
         if (!this.state.quizInstance) return;
