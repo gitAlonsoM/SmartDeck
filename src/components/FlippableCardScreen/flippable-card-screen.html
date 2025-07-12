@@ -9,46 +9,47 @@
       </div>
 
       <div class="flip-card-container relative flex-grow">
-
-
         <div class="flip-card-inner">
 
           <div class="flip-card-front">
-
-
-             <div id="side-a-content" class="w-full h-full flex flex-col justify-start p-4">
-              <div id="side-a-text-content" class="text-center">
-                </div>
-              <div id="visual-content-container" class="flex-grow flex items-center justify-center my-4 overflow-hidden">
-                </div>
-            </div>
-                        <div id="audio-content-container" class="w-full h-full flex flex-col items-center justify-center p-4 hidden">
-              <i class="fas fa-headphones-alt text-8xl text-indigo-400 mb-6"></i>
-              <div id="audio-player-wrapper" class="w-full max-w-sm"></div>
-            </div>
+            <div id="side-a-content" class="w-full h-full flex flex-col justify-start p-4">
+              <div id="side-a-text-content" class="text-center">
+              </div>
+              <div id="visual-content-container" class="flex-grow flex items-center justify-center my-4 overflow-hidden">
+              </div>
+            </div>
+            <div id="conversation-content-container" class="w-full h-full flex flex-col items-center justify-center p-4 hidden">
+                <div id="conversation-player-wrapper" class="w-full max-w-sm space-y-4">
+                    </div>
+            </div>
+            <div id="audio-content-container" class="w-full h-full flex flex-col items-center justify-center p-4 hidden">
+              <i class="fas fa-headphones-alt text-8xl text-indigo-400 mb-6"></i>
+              <div id="audio-player-wrapper" class="w-full max-w-sm"></div>
+            </div>
           </div>
       
           <div class="flip-card-back flex-col items-stretch">
             <div class="flex-grow p-4 flex flex-col">
               <div id="side-a-content-on-back" class="w-full break-words pt-6 text-center">
-                </div>
+              </div>
               <hr class="border-gray-300 dark:border-gray-600 my-4">
               <div id="side-b-content" class="text-left space-y-3 w-full">
-                </div>
-
-                <div id="note-content-container" class="mt-4 p-3 bg-gray-800/50 dark:bg-gray-900/50 rounded-lg hidden">
-                  </div>
+              </div>
+              <div id="note-content-container" class="mt-4 p-3 bg-gray-800/50 dark:bg-gray-900/50 rounded-lg hidden">
+              </div>
             </div>
           </div>
 
+        </div>
          <div class="absolute -top-2 -right-2 flex gap-2 z-20">
             <button id="mark-improve-btn-flippable" title="Mark this card for improvement" class="px-3 py-1 bg-gray-600 dark:bg-gray-800 text-gray-200 dark:text-gray-300 text-xs font-semibold rounded-full hover:bg-blue-500 hover:text-white transition-all">
                 <i class="fas fa-flag"></i>
             </button>
-            <button id="ignore-btn-flippable" title="Ignore this card in future rounds" class="px-3 py-1 bg-gray-600 dark:bg-gray-800 text-gray-200 dark:text-gray-300 text-xs font-semibold rounded-full hover:bg-yellow-500 hover:text-white transition-all">
-                Ignore Card
-            </button>
+            <button id="ignore-btn-flippable" title="Ignore this card in future rounds" class="px-3 py-1 bg-gray-600 dark:bg-gray-800 text-gray-200 dark:text-gray-300 text-xs font-semibold rounded-full hover:bg-yellow-500 hover:text-white transition-all">
+                Ignore Card
+            </button>
         </div>
+      </div>
     </div>
   </main>
 
