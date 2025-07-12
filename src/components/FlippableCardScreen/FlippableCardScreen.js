@@ -32,40 +32,67 @@ class FlippableCardScreen {
 
 
   populateCard() {
-        // --- Handle Side A ---
-        const textContainer = document.getElementById('side-a-text-content');
-        const visualContainer = document.getElementById('visual-content-container');
-        textContainer.innerHTML = '';
-        visualContainer.innerHTML = '';
+       const standardContentContainer = document.getElementById('side-a-content');
+        const audioContentContainer = document.getElementById('audio-content-container');
+        const audioPlayerWrapper = document.getElementById('audio-player-wrapper');
 
-        let sideAData = this.cardData.sideA;
-        
-        // Backward compatibility: if sideA is just a string, convert it to the new object format
-        if (typeof sideAData === 'string') {
-            sideAData = { text: sideAData, visualContent: null };
-        }
+        // Reset visibility and content
+        standardContentContainer.classList.add('hidden');
+        audioContentContainer.classList.add('hidden');
+        audioPlayerWrapper.innerHTML = '';
 
-        // Render the main text
-        textContainer.appendChild(this._createTextLine(sideAData.text, true));
 
-        // Render visual content if it exists
-        if (sideAData.visualContent) {
-            this._renderVisualContent(sideAData.visualContent, visualContainer);
-        }
+        // --- Detect Card Type and Populate Side A ---
+        if (this.cardData.audioSrc) {
+            // This is an Audio Card
+            audioContentContainer.classList.remove('hidden');
+            const audioPlayer = document.createElement('audio');
+            audioPlayer.src = this.cardData.audioSrc;
+            audioPlayer.controls = true;
+            audioPlayer.className = 'w-full';
+            audioPlayerWrapper.appendChild(audioPlayer);
+        } else {
+            // This is a standard Visual/Text Card
+            standardContentContainer.classList.remove('hidden');
+            const textContainer = document.getElementById('side-a-text-content');
+            const visualContainer = document.getElementById('visual-content-container');
+            textContainer.innerHTML = '';
+            visualContainer.innerHTML = '';
+
+            let sideAData = this.cardData.sideA;
+            if (typeof sideAData === 'string') {
+                sideAData = { text: sideAData, visualContent: null };
+            }
+
+            textContainer.appendChild(this._createTextLine(sideAData.text, true));
+
+            if (sideAData.visualContent) {
+                this._renderVisualContent(sideAData.visualContent, visualContainer);
+            }
+        }
 
         // --- Handle Side B (The Back Side) ---
         // Side A content (question text) shown on the back for context
         const sideAOnBackContainer = document.getElementById('side-a-content-on-back');
-        sideAOnBackContainer.innerHTML = '';
-        sideAOnBackContainer.appendChild(this._createTextLine(sideAData.text, true));
-        
+        sideAOnBackContainer.innerHTML = ''; // Always clear it first.
+
+        // Only populate the question on the back if it's NOT an audio card.
+        if (!this.cardData.audioSrc) {
+            let sideAData = this.cardData.sideA;
+            if (typeof sideAData === 'string') {
+                sideAData = { text: sideAData, visualContent: null };
+            }
+            sideAOnBackContainer.appendChild(this._createTextLine(sideAData.text, true));
+        }
         // The actual answers for Side B
         const sideBContainer = document.getElementById('side-b-content');
         sideBContainer.innerHTML = '';
-        this.cardData.sideB.forEach(line => {
-            // Here, sideB is still expected to be a simple array of strings
-            sideBContainer.appendChild(this._createTextLine(line));
-        });
+
+
+       this.cardData.sideB.forEach((line, index) => {
+            // Pass the index to _createTextLine to identify the first answer
+            sideBContainer.appendChild(this._createTextLine(line, false, index));
+        });
 
 
         // --- Handle Improvement Note (if it exists) ---
@@ -126,33 +153,39 @@ class FlippableCardScreen {
         }
     }
 
-
-
-
-
     /**
-     * Creates a DOM element for a line of text with a play button.
      * @param {string} text - The text to display and speak.
-     * @param {boolean} isSideA - Flag to apply different styling for Side A.
-     * @returns {HTMLElement} The created div element.
-     */
-    _createTextLine(text, isSideA = false) {
-        const lineDiv = document.createElement('div');
-        lineDiv.className = 'flex items-center justify-between w-full';
+     * @param {boolean} isSideA - Flag to apply different styling for Side A.
+    * @param {number} index - The index of the line in the sideB array.
+     * @returns {HTMLElement} The created div element.
+     */
+    _createTextLine(text, isSideA = false, index = -1) {
+    const lineDiv = document.createElement('div');
+    lineDiv.className = 'flex items-center justify-between w-full';
 
-        const textElement = document.createElement('p');
-        textElement.textContent = text;
-         textElement.className = isSideA ? 'text-lg md:text-xl font-semibold text-center flex-grow' : 'text-lg';
-        
-        const playButton = document.createElement('button');
+    const textElement = document.createElement('p');
+    textElement.textContent = text;
+    textElement.className = isSideA ? 'text-lg md:text-xl font-semibold text-center flex-grow' : 'text-lg';
+    
+    const playButton = document.createElement('button');
+    playButton.innerHTML = '<i class="fas fa-volume-up"></i>';
+    
+    // If this is the first answer (index 0) of an audio card, use the high-quality audio source.
+    if (this.cardData.audioSrc && index === 0) {
+        playButton.className = 'play-audio-src-btn ml-4 text-indigo-400 hover:text-indigo-300 transition-colors';
+        playButton.dataset.audioSrc = this.cardData.audioSrc;
+        playButton.title = "Play high-quality audio";
+    } else {
+        // Otherwise, use the standard device TTS.
         playButton.className = 'play-tts-btn ml-4 text-gray-400 hover:text-indigo-500 transition-colors';
-        playButton.innerHTML = '<i class="fas fa-volume-up"></i>';
         playButton.dataset.textToSpeak = text;
-
-        lineDiv.appendChild(textElement);
-        lineDiv.appendChild(playButton);
-        return lineDiv;
+        playButton.title = "Play with device voice";
     }
+
+    lineDiv.appendChild(textElement);
+    lineDiv.appendChild(playButton);
+    return lineDiv;
+  }
 
     setupEventListeners() {
         // Use .onclick to ensure we don't attach multiple listeners to static buttons
@@ -161,16 +194,23 @@ class FlippableCardScreen {
         document.getElementById('review-again-btn').onclick = () => this.onAssess(false);
         document.getElementById('ignore-btn-flippable').onclick = () => this.onIgnore();
         document.getElementById('mark-improve-btn-flippable').onclick = () => this.onMarkForImprovement(this.cardData.cardId);
-
-        // Use event delegation for dynamic TTS buttons
+  // Event delegation for dynamic buttons
         this.container.onclick = (event) => {
-            const playButton = event.target.closest('.play-tts-btn');
-            if (playButton) {
-                const text = playButton.dataset.textToSpeak;
-                const preferredVoice = StorageService.loadPreferredVoice();
-                TTSService.speak(text, preferredVoice);
-            }
-        };
+            const ttsButton = event.target.closest('.play-tts-btn');
+            const audioSrcButton = event.target.closest('.play-audio-src-btn');
+
+            if (audioSrcButton) {
+                // Handle playing the pre-generated high-quality audio file
+                const audioSrc = audioSrcButton.dataset.audioSrc;
+                const audio = new Audio(audioSrc);
+                audio.play().catch(e => console.error("Error playing audio:", e));
+            } else if (ttsButton) {
+                // Handle playing with the device's native TTS
+                const text = ttsButton.dataset.textToSpeak;
+                const preferredVoice = StorageService.loadPreferredVoice();
+                TTSService.speak(text, preferredVoice);
+            }
+        };
     }
     
     flipCard() {

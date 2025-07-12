@@ -1,0 +1,609 @@
+{
+  "id": "tech_meetings_01",
+  "name": "Tech Meeting Phrases",
+  "description": "Common phrases and idioms used in online tech meetings. Listen to the audio and learn the sentence and its common alternatives.",
+  "deckType": "flippable",
+  "cards": [
+    {
+      "cardId": "tech_phrase_001",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_001.mp3",
+      "sideB": [
+        "Can everyone see my screen?",
+        "Is my screen share coming through?",
+        "Let me know if you can see my screen."
+      ],
+      "note": "This is often the very first question asked after joining a call to ensure the presentation is visible to all participants."
+    },
+    {
+      "cardId": "tech_phrase_002",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_002.mp3",
+      "sideB": [
+        "Sorry, I was on mute.",
+        "My apologies, I was muted.",
+        "Oops, you couldn't hear me, I was on mute."
+      ],
+      "note": "Arguably the most common phrase of the remote work era. A universal experience for online meeting attendees."
+    },
+    {
+      "cardId": "tech_phrase_003",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_003.mp3",
+      "sideB": [
+        "Let's circle back to this later.",
+        "Can we park this discussion for now?",
+        "Let's put a pin in that and revisit it."
+      ],
+      "note": "A polite and professional way to postpone a topic that is off-topic or requires more time, keeping the meeting focused."
+    },
+    {
+      "cardId": "tech_phrase_004",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_004.mp3",
+      "sideB": [
+        "I'll push the changes to the dev branch.",
+        "I'm committing the code to the development branch now.",
+        "The updates are being pushed to dev."
+      ],
+      "note": "In Git version control, 'pushing' sends your local code changes to a remote repository. The 'dev branch' is a common branch for active development."
+    },
+    {
+      "cardId": "tech_phrase_005",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_005.mp3",
+      "sideB": [
+        "We need to merge this PR by end of day.",
+        "This pull request needs to be merged before we leave.",
+        "Let's get this PR merged today."
+      ],
+      "note": "'PR' stands for Pull Request, a formal request to merge code into a branch. 'End of day' (EOD) adds a sense of urgency."
+    },
+    {
+      "cardId": "tech_phrase_006",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_006.mp3",
+      "sideB": [
+        "What's the ETA for this feature?",
+        "Do we have an estimated time of arrival for this functionality?",
+        "When can we expect this feature to be delivered?"
+      ],
+      "note": "'ETA' stands for 'Estimated Time of Arrival'. It's a standard project management term to ask for a delivery forecast."
+    },
+    {
+      "cardId": "tech_phrase_007",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_007.mp3",
+      "sideB": [
+        "This is causing a blocker for the testing team.",
+        "The testers are blocked by this issue.",
+        "This is a blocking issue for QA."
+      ],
+      "note": "A 'blocker' is a high-priority issue that prevents a team (like QA or testing) from doing their work. It requires immediate attention."
+    },
+    {
+      "cardId": "tech_phrase_008",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_008.mp3",
+      "sideB": [
+        "Let's sync up offline about this.",
+        "Can we have a quick chat about this separately?",
+        "Let's take this conversation offline."
+      ],
+      "note": "Ironically, 'offline' in a remote work context usually means having a separate, smaller online call or direct message conversation."
+    },
+    {
+      "cardId": "tech_phrase_009",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_009.mp3",
+      "sideB": [
+        "The latest build failed in the CI/CD pipeline.",
+        "Our continuous integration pipeline broke on the last build.",
+        "The build is red in the pipeline."
+      ],
+      "note": "'CI/CD' (Continuous Integration/Continuous Deployment) is an automated system for building and testing code. A failed build means the latest changes broke something."
+    },
+    {
+      "cardId": "tech_phrase_010",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_010.mp3",
+      "sideB": [
+        "Can you grant me permissions to access the staging environment?",
+        "I need access rights for the staging server.",
+        "Could you provide me with staging access credentials?"
+      ],
+      "note": "A 'staging environment' is a server that mirrors the live production environment. It's used for final testing before a public release."
+    },
+    {
+      "cardId": "tech_phrase_011",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_011.mp3",
+      "sideB": [
+        "I'm having some latency issues.",
+        "There's a significant lag on my end.",
+        "My connection seems to be slow."
+      ],
+      "note": "'Latency' refers to the delay in data transfer. It's the technical term for what users often perceive as 'lag'."
+    },
+    {
+      "cardId": "tech_phrase_012",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_012.mp3",
+      "sideB": [
+        "We need to refactor this module.",
+        "This piece of code needs a major refactor.",
+        "It's time to restructure this module for better maintainability."
+      ],
+      "note": "'Refactoring' means restructuring existing computer code—changing the factoring—without changing its external behavior. It improves nonfunctional attributes of the software."
+    },
+    {
+      "cardId": "tech_phrase_013",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_013.mp3",
+      "sideB": [
+        "Let's check the logs to see what went wrong.",
+        "The error details should be in the log files.",
+        "Can we review the logs for more information?"
+      ],
+      "note": "'Logs' are automatically generated files that record events and errors from an application. They are essential for debugging problems."
+    },
+    {
+      "cardId": "tech_phrase_014",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_014.mp3",
+      "sideB": [
+        "The API is returning a 500 error.",
+        "We're getting a server error from the API.",
+        "The API endpoint is failing with a 500 status code."
+      ],
+      "note": "A '500 Internal Server Error' is a generic HTTP status code indicating that something has gone wrong on the web server, but the server could not be more specific."
+    },
+    {
+      "cardId": "tech_phrase_015",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_015.mp3",
+      "sideB": [
+        "Does this align with the project's scope?",
+        "Is this feature within the scope of the current sprint?",
+        "We should confirm if this is part of the agreed-upon scope."
+      ],
+      "note": "This question is crucial for preventing 'scope creep'—the tendency for project requirements to expand beyond their original goals."
+    },
+    {
+      "cardId": "tech_phrase_016",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_016.mp3",
+      "sideB": [
+        "I'll create a ticket for this bug in Jira.",
+        "Let me log this issue in our tracking system.",
+        "A new bug report for this will be created."
+      ],
+      "note": "'Jira' is a very popular issue-tracking product. A 'ticket' is a single work item in such a system."
+    },
+    {
+      "cardId": "tech_phrase_017",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_017.mp3",
+      "sideB": [
+        "We have a merge conflict that needs to be resolved.",
+        "There's a conflict in the code merge.",
+        "Someone needs to resolve the merge conflicts on this branch."
+      ],
+      "note": "A 'merge conflict' occurs in version control systems like Git when two developers have changed the same line of code in different branches."
+    },
+    {
+      "cardId": "tech_phrase_018",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_018.mp3",
+      "sideB": [
+        "The documentation for this endpoint is outdated.",
+        "We need to update the API documentation.",
+        "The current docs don't reflect the latest changes."
+      ],
+      "note": "Outdated documentation is a common source of confusion and bugs for developers using an API or a library."
+    },
+    {
+      "cardId": "tech_phrase_019",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_019.mp3",
+      "sideB": [
+        "Let's do a quick code review on this.",
+        "Can I get another pair of eyes on this code?",
+        "This is ready for a peer review."
+      ],
+      "note": "A 'code review' is a standard software quality assurance practice where developers check each other's code for mistakes and improvements."
+    },
+    {
+      "cardId": "tech_phrase_020",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_020.mp3",
+      "sideB": [
+        "This change will require a database migration.",
+        "We'll need to run a migration script for this schema change.",
+        "A database migration is necessary to support this update."
+      ],
+      "note": "A 'database migration' is a controlled set of changes to update the structure (schema) of a database, like adding a new table or a new column."
+    },
+    {
+      "cardId": "tech_phrase_021",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_021.mp3",
+      "sideB": [
+        "I'm dropping off, I have another meeting.",
+        "I have to jump to another call, catch you later.",
+        "I have a hard stop now, talk to you all soon."
+      ],
+      "note": "A 'hard stop' is a non-negotiable end time for a meeting, indicating you must leave at that exact time for another commitment."
+    },
+    {
+      "cardId": "tech_phrase_022",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_022.mp3",
+      "sideB": [
+        "What's the bandwidth of the team for next sprint?",
+        "How much capacity do we have for the upcoming sprint?",
+        "What's our team's availability look like for the next sprint?"
+      ],
+      "note": "In a business context, 'bandwidth' is a metaphor for a person's or team's capacity to take on more work."
+    },
+    {
+      "cardId": "tech_phrase_023",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_023.mp3",
+      "sideB": [
+        "We need to rollback the last deployment.",
+        "Let's revert to the previous version.",
+        "The last release needs to be rolled back immediately."
+      ],
+      "note": "A 'rollback' is the process of reverting a software deployment to a previous, stable version. It's a critical emergency procedure."
+    },
+    {
+      "cardId": "tech_phrase_024",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_024.mp3",
+      "sideB": [
+        "This seems like a low-hanging fruit.",
+        "This is an easy win we can tackle quickly.",
+        "This task should be straightforward to implement."
+      ],
+      "note": "The idiom 'low-hanging fruit' refers to a task or goal that is easily achievable and can be tackled without much effort."
+    },
+    {
+      "cardId": "tech_phrase_025",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_025.mp3",
+      "sideB": [
+        "Could you please elaborate on that point?",
+        "Can you give us more details on that?",
+        "I'm not sure I follow, could you explain further?"
+      ],
+      "note": "This is a polite and professional way to ask for more detailed information when you don't fully understand something."
+    },
+    {
+      "cardId": "tech_phrase_026",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_026.mp3",
+      "sideB": [
+        "Let's move on to the next agenda item.",
+        "Shall we proceed to the next topic?",
+        "Okay, let's go to the next point on our agenda."
+      ],
+      "note": "A phrase typically used by the meeting facilitator to keep the discussion on track and manage time effectively."
+    },
+    {
+      "cardId": "tech_phrase_027",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_027.mp3",
+      "sideB": [
+        "I'll take ownership of this task.",
+        "I can take the lead on this one.",
+        "Assign this task to me, I'll handle it."
+      ],
+      "note": "'Taking ownership' is a key concept in agile methodologies, signifying responsibility and accountability for a task's completion."
+    },
+    {
+      "cardId": "tech_phrase_028",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_028.mp3",
+      "sideB": [
+        "We need to address the technical debt in this area.",
+        "This part of the codebase has a lot of tech debt.",
+        "Let's prioritize paying down some of this technical debt."
+      ],
+      "note": "'Technical debt' is a metaphor for the implied cost of rework caused by choosing an easy (limited) solution now instead of using a better approach that would take longer."
+    },
+    {
+      "cardId": "tech_phrase_029",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_029.mp3",
+      "sideB": [
+        "This approach doesn't seem scalable.",
+        "I'm concerned about the scalability of this solution.",
+        "Will this hold up under heavy load?"
+      ],
+      "note": "'Scalability' is the property of a system to handle a growing amount of work by adding resources. It's a critical concern for long-term application health."
+    },
+    {
+      "cardId": "tech_phrase_030",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_030.mp3",
+      "sideB": [
+        "I'll send out a follow-up email with the meeting minutes.",
+        "Expect a recap email with the key takeaways shortly.",
+        "I will summarize our discussion and action items in an email."
+      ],
+      "note": "'Meeting minutes' are a written record of a meeting. A follow-up email ensures everyone is aligned on decisions and action items."
+    },
+
+    {
+      "cardId": "tech_phrase_031",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_031.mp3",
+      "sideB": [
+        "Let's take this as an action item.",
+        "I'll add this to our list of action items.",
+        "This is a clear takeaway for us to work on."
+      ],
+      "note": "An 'action item' is a discrete task that arises from a meeting. Assigning them ensures accountability."
+    },
+    {
+      "cardId": "tech_phrase_032",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_032.mp3",
+      "sideB": [
+        "This is out of scope for the current sprint.",
+        "That falls outside the scope of this sprint's work.",
+        "We should probably tackle that in a future sprint."
+      ],
+      "note": "In Agile/Scrum, a 'sprint' has a defined scope of work. This phrase protects the team from unplanned work."
+    },
+    {
+      "cardId": "tech_phrase_033",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_033.mp3",
+      "sideB": [
+        "Let's add this to the backlog.",
+        "This sounds like a good candidate for the product backlog.",
+        "We can create a story for this in the backlog."
+      ],
+      "note": "The 'product backlog' is a prioritized list of all desired features and fixes for a product. It's a key component of Agile development."
+    },
+    {
+      "cardId": "tech_phrase_034",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_034.mp3",
+      "sideB": [
+        "I'm playing devil's advocate here.",
+        "To play devil's advocate for a moment...",
+        "Let me be the devil's advocate and challenge that assumption."
+      ],
+      "note": "Playing 'devil's advocate' means expressing an opposing view, not because you disagree, but to test the strength of an argument."
+    },
+    {
+      "cardId": "tech_phrase_035",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_035.mp3",
+      "sideB": [
+        "What are the dependencies for this task?",
+        "Is this task dependent on any other work?",
+        "What needs to be completed before we can start on this?"
+      ],
+      "note": "In project management, a 'dependency' is a task that relies on the completion of another task."
+    },
+    {
+      "cardId": "tech_phrase_036",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_036.mp3",
+      "sideB": [
+        "This looks good to me, LGTM.",
+        "I've reviewed it, looks good to me.",
+        "LGTM, go ahead and merge it."
+      ],
+      "note": "'LGTM' is a very common acronym in code reviews, meaning 'Looks Good To Me'. It's an informal way to approve changes."
+    },
+    {
+      "cardId": "tech_phrase_037",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_037.mp3",
+      "sideB": [
+        "Let's drill down into the performance metrics.",
+        "Can we take a deeper dive into the data?",
+        "Let's investigate the specifics of these numbers."
+      ],
+      "note": "'Drill down' is a business intelligence term for exploring data at a more detailed level."
+    },
+    {
+      "cardId": "tech_phrase_038",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_038.mp3",
+      "sideB": [
+        "What's the root cause of this issue?",
+        "Have we identified the root cause yet?",
+        "We need to perform a root cause analysis (RCA)."
+      ],
+      "note": "A 'root cause' is the fundamental reason for a problem. Fixing it prevents the problem from recurring, as opposed to just fixing the symptoms."
+    },
+    {
+      "cardId": "tech_phrase_039",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_039.mp3",
+      "sideB": [
+        "We need to get stakeholder buy-in on this.",
+        "Has this been approved by the stakeholders?",
+        "Let's secure stakeholder agreement before proceeding."
+      ],
+      "note": "A 'stakeholder' is anyone with an interest in the project. 'Buy-in' means getting their agreement and support."
+    },
+    {
+      "cardId": "tech_phrase_040",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_040.mp3",
+      "sideB": [
+        "This is a P1 (Priority 1) issue.",
+        "Let's classify this bug as a P1.",
+        "Given the impact, this is definitely a high-priority bug."
+      ],
+      "note": "'P1' or 'P0' typically denotes the highest priority for a bug or task, meaning it must be addressed immediately."
+    },
+    {
+      "cardId": "tech_phrase_041",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_041.mp3",
+      "sideB": [
+        "Who is the DRI for this initiative?",
+        "We need to assign a Directly Responsible Individual.",
+        "Who's the DRI on this?"
+      ],
+      "note": "'DRI' stands for 'Directly Responsible Individual'. It's a management concept to ensure that a single person is accountable for a task or decision."
+    },
+    {
+      "cardId": "tech_phrase_042",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_042.mp3",
+      "sideB": [
+        "Just to piggyback on that idea...",
+        "If I can piggyback on what you just said...",
+        "To build on that point..."
+      ],
+      "note": "'Piggybacking' in a conversation means to use someone else's recently stated idea as a basis for your own point."
+    },
+    {
+      "cardId": "tech_phrase_043",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_043.mp3",
+      "sideB": [
+        "Can we get a quick sanity check on this?",
+        "I'd like someone to sanity-check my logic here.",
+        "Before we commit, let's do a sanity check."
+      ],
+      "note": "A 'sanity check' is a quick, high-level review to see if a proposed solution or result seems plausible and rational."
+    },
+    {
+      "cardId": "tech_phrase_044",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_044.mp3",
+      "sideB": [
+        "We're trying to boil the ocean here.",
+        "I think we're boiling the ocean with this approach.",
+        "Let's not boil the ocean; let's focus on a smaller part first."
+      ],
+      "note": "The idiom 'to boil the ocean' means to attempt an impossibly large task. It's used to suggest simplifying or narrowing the scope."
+    },
+    {
+      "cardId": "tech_phrase_045",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_045.mp3",
+      "sideB": [
+        "Let's not reinvent the wheel.",
+        "We should use an existing library instead of reinventing the wheel.",
+        "There's no need to reinvent the wheel for this."
+      ],
+      "note": "'Reinventing the wheel' means wasting time creating something that has already been created and is readily available."
+    },
+    {
+      "cardId": "tech_phrase_046",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_046.mp3",
+      "sideB": [
+        "What are the next steps?",
+        "So, what are our next steps on this?",
+        "Let's define the next actionable steps."
+      ],
+      "note": "A crucial question to ask at the end of a discussion to ensure progress and clarity on what happens after the meeting."
+    },
+    {
+      "cardId": "tech_phrase_047",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_047.mp3",
+      "sideB": [
+        "I'm not following. Can you rephrase that?",
+        "I'm a bit lost, could you explain that differently?",
+        "Sorry, you lost me there. Can you repeat that?"
+      ],
+      "note": "A polite and direct way to admit you don't understand something, which is much better than staying silent."
+    },
+    {
+      "cardId": "tech_phrase_048",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_048.mp3",
+      "sideB": [
+        "Are we all on the same page?",
+        "I want to make sure we're on the same page.",
+        "Let's just confirm everyone is aligned."
+      ],
+      "note": "This idiom means 'Do we all have a shared understanding of the situation?' It's used to check for consensus."
+    },
+    {
+      "cardId": "tech_phrase_049",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_049.mp3",
+      "sideB": [
+        "This will have a downstream impact.",
+        "We need to consider the downstream effects of this change.",
+        "The downstream impact on other teams could be significant."
+      ],
+      "note": "In a process or system, 'downstream' refers to the later stages or components that are affected by an earlier action."
+    },
+    {
+      "cardId": "tech_phrase_050",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_050.mp3",
+      "sideB": [
+        "Let's timebox this discussion to 10 minutes.",
+        "We'll timebox this to avoid going over.",
+        "Okay, we have a 10-minute timebox for this topic."
+      ],
+      "note": "'Timeboxing' is a time management technique where a fixed maximum time is allocated to an activity. It's very common in Agile meetings."
+    },
+    {
+      "cardId": "tech_phrase_051",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_051.mp3",
+      "sideB": [
+        "That's a good point, I hadn't considered that.",
+        "You raise a valid point.",
+        "That's an interesting perspective."
+      ],
+      "note": "A phrase used to acknowledge and validate another person's contribution to the discussion, fostering a positive environment."
+    },
+    {
+      "cardId": "tech_phrase_052",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_052.mp3",
+      "sideB": [
+        "We'll have to agree to disagree.",
+        "It seems we won't reach a consensus, so let's agree to disagree.",
+        "Let's just agree to disagree on this and move on."
+      ],
+      "note": "A diplomatic way to end a debate where no agreement can be reached, allowing the meeting to continue."
+    },
+    {
+      "cardId": "tech_phrase_053",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_053.mp3",
+      "sideB": [
+        "What's the happy path for this user flow?",
+        "Let's first define the happy path scenario.",
+        "Does this cover the happy path?"
+      ],
+      "note": "The 'happy path' is the default scenario featuring no exceptions or error conditions. It's the ideal, expected flow of a process."
+    },
+    {
+      "cardId": "tech_phrase_054",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_054.mp3",
+      "sideB": [
+        "We need to consider the edge cases.",
+        "What are the edge cases for this feature?",
+        "Have we handled all the edge cases?"
+      ],
+      "note": "An 'edge case' is a problem or situation that occurs only at an extreme (maximum or minimum) operating parameter. It's the opposite of the 'happy path'."
+    },
+    {
+      "cardId": "tech_phrase_055",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_055.mp3",
+      "sideB": [
+        "My two cents on this is...",
+        "If I can add my two cents...",
+        "Here's my two cents, for what it's worth."
+      ],
+      "note": "The idiom 'my two cents' is a humble way of offering your opinion or perspective on a matter."
+    },
+    {
+      "cardId": "tech_phrase_056",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_056.mp3",
+      "sideB": [
+        "Let's try to dogfood this ourselves first.",
+        "We should dogfood this feature before releasing it.",
+        "The team will start dogfooding the new build tomorrow."
+      ],
+      "note": "'Dogfooding' (from 'eating your own dog food') is the practice of a company using its own products to test and promote them."
+    },
+    {
+      "cardId": "tech_phrase_057",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_057.mp3",
+      "sideB": [
+        "This is a non-trivial amount of work.",
+        "The effort required for this is non-trivial.",
+        "Be aware that this is a non-trivial change."
+      ],
+      "note": "'Non-trivial' is a common developer understatement. It means the task is actually quite complex and will require significant effort."
+    },
+    {
+      "cardId": "tech_phrase_058",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_058.mp3",
+      "sideB": [
+        "The latency is noticeable on the client-side.",
+        "We need to optimize the client-side rendering.",
+        "This operation is too heavy for the client-side."
+      ],
+      "note": "'Client-side' refers to operations that are performed by the user's browser or device, as opposed to the 'server-side'."
+    },
+    {
+      "cardId": "tech_phrase_059",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_059.mp3",
+      "sideB": [
+        "Can we get a ballpark figure for the effort?",
+        "I don't need an exact number, just a ballpark estimate.",
+        "What's the ballpark on the timeline for this?"
+      ],
+      "note": "A 'ballpark figure' or 'ballpark estimate' is a very rough, approximate numerical estimate."
+    },
+    {
+      "cardId": "tech_phrase_060",
+      "audioSrc": "public/data/audio/tech_meetings/tech_phrase_060.mp3",
+      "sideB": [
+        "Let's wrap up and summarize the action items.",
+        "To wrap up the meeting...",
+        "Okay, let's wrap this up."
+      ],
+      "note": "'To wrap up' means to finish or conclude something. It's a standard phrase to signal the end of a meeting."
+    }
+  ]
+}
