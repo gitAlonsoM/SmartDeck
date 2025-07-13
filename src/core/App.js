@@ -112,27 +112,36 @@ class App {
     }
 
     async loadDecks() {
-        console.log("DEBUG: [App] loadDecks -> Loading all decks.");
-        let staticDecks = {};
-        try {
-            const deckFiles = ['plsql_deck.json', 'shell_deck.json', 'ios_android.json', 'http_rest_deep_dive.json', 'english_phrasal_verbs.json','it_commands_deck_01.json', 'ui_elements_deck.json', 'git_deck.json', 'tech_online_meetings_deck.json', 'tech_conversation_deck_01.json'];
-            const fetchPromises = deckFiles.map(file => fetch(`public/data/${file}`).then(res => res.json()));
-            const loadedDecks = await Promise.all(fetchPromises);
-            
-            loadedDecks.forEach(deck => {
-                console.log(`DEBUG: [App] loadDecks -> Successfully loaded static deck: ${deck.name}`);
-                staticDecks[deck.id] = deck;
-            });
-        } catch (error) {
-            console.error("DEBUG: [App] loadDecks -> CRITICAL ERROR loading static decks:", error);
-        }
-        
-        const userDecks = StorageService.loadDecks();
-        this.state.allDecks = { ...staticDecks, ...userDecks };
-        console.log("DEBUG: [App] loadDecks -> Final merged state for allDecks:", this.state.allDecks);
-    }
-    
-    render() {
+         console.log("DEBUG: [App] loadDecks -> Loading all decks.");
+        let staticDecks = {};
+        try {
+            const deckFiles = ['plsql_deck.json', 'shell_deck.json', 'ios_android.json', 'http_rest_deep_dive.json', 'english_phrasal_verbs.json','it_commands_deck_01.json', 'ui_elements_deck.json', 'git_deck.json', 'tech_online_meetings_deck.json', 'tech_conversation_deck_01.json'];
+            // Modify the fetch process to attach the filename to each loaded deck object.
+            const fetchPromises = deckFiles.map(file => 
+                fetch(`public/data/${file}`)
+                    .then(res => res.json())
+                    .then(deck => {
+                        // Add the actual filename to the deck object for later reference.
+                        deck.fileName = file; 
+                        return deck;
+                    })
+            );
+            const loadedDecks = await Promise.all(fetchPromises);
+            
+            loadedDecks.forEach(deck => {
+                console.log(`DEBUG: [App] loadDecks -> Successfully loaded static deck: ${deck.name} (File: ${deck.fileName})`);
+                staticDecks[deck.id] = deck;
+            });
+        } catch (error) {
+            console.error("DEBUG: [App] loadDecks -> CRITICAL ERROR loading static decks:", error);
+        }
+        
+        const userDecks = StorageService.loadDecks();
+        this.state.allDecks = { ...staticDecks, ...userDecks };
+        console.log("DEBUG: [App] loadDecks -> Final merged state for allDecks:", this.state.allDecks);
+    }
+    
+    render() {
         console.log(`DEBUG: [App] render -> Rendering screen: ${this.state.currentScreen}`);
         this.appContainer.innerHTML = '';
 
@@ -267,126 +276,30 @@ class App {
      * @param {Array<object>} cardsToImprove - The array of card objects marked for improvement.
      * @returns {string} A string containing the full prompt and the JSON data.
      */
-    _generateImprovementPrompt(deckName, deckId, cardsToImprove) {
-        // Construct the filename from the deckId. Assumes a convention like 'deck_id.json'.
-        const deckFileName = `${deckId}.json`;
 
-        const promptHeader = `
-# SmartDeck Card Improvement Prompt V3
 
-## 1. ROLE AND GOAL
-You are a senior content editor for 'SmartDeck'. Your task is to process a batch of flashcards and return a complete, actionable response that includes both the corrected data and instructions for the user.
+   
 
-## 2. CONTEXT
-The flashcards belong to the deck named: "${deckName}".
-The target deck file is: "${deckFileName}".
+    // --- State Changers & Event Handlers ---
+    async handleExportForImprovement() {
+       const deckId = this.state.currentDeckId;
+        if (!deckId) return;
 
-## 3. CARD DATA STRUCTURES
-(The user will provide the JSON data below. You must understand the following schemas.)
+        const deck = this.state.allDecks[deckId];
+        // The complex logic is now delegated to the ImprovementService.
+        const result = await ImprovementService.handleExport(deck);
 
-### A) Multiple-Choice ('quiz') Card:
-- \`cardId\`: Unique identifier. DO NOT CHANGE.
-- \`category\`, \`hint\`, \`content\`: Preserve these fields unless the user's request is specifically about them.
-- \`question\`: The question text. Improve for clarity.
-- \`options\`: An array of answers. This array has a FIXED LENGTH. Do not add/remove items, but you can correct the text within them.
-- \`correctAnswer\`: The correct string from \`options\`. MUST be updated if you change the option's text.
-- \`review_request\`: The user's feedback.
-
-### B) Flippable ('flippable') Card:
-- \`cardId\`: Unique identifier. DO NOT CHANGE.
-- \`sideA\`: The front of the card.
-- \`sideB\`: An array of valid answers. This array is FLEXIBLE. You can add new valid answers here.
-- \`note\`: A field for YOUR feedback to the user.
-- \`review_request\`: The user's feedback.
-
-## 4. CORE WORKFLOW & RULES
-1.  **Analyze Request**: Prioritize the \`review_request.reasons\` (e.g., "improve_hint", "clarify_question"). Use the \`review_request.note\` for specific user suggestions.
-2.  **Apply Corrections**: Fix typos, improve clarity, and validate user suggestions.
-3.  **Provide Feedback**: Use the \`note\` field on the card to explain your changes (or why you rejected a suggestion). The note must be concise and in English. Leave as \`null\` for trivial fixes.
-4.  **Language**: All your output (notes, corrected text) must be in English.
-
-## 5. **CRITICAL: REQUIRED OUTPUT FORMAT**
-Your final response MUST be a single block of Markdown text structured in exactly two parts:
-
-### Part 1: Corrected JSON
-- Start with the exact heading: \`## Corrected Cards JSON\`
-- Below it, provide a single, raw JSON array of the corrected cards inside a \`\`\`json code block.
-- In this JSON, you MUST REMOVE the entire \`review_request\` object from every card.
-
-### Part 2: Next Steps for the User
-- Follow the JSON block with the exact heading: \`## Next Steps\`
-- Provide a short, numbered list of instructions for the user.
-- Step 1 must tell the user to save the JSON above into the \`corrections.json\` file.
-- Step 2 must provide the **exact, ready-to-copy command** to run the update script in their terminal, using the deck's filename you were given.
-
-Here is the template you must follow:
-
-## Corrected Cards JSON
-\`\`\`json
-[
-  {
-    "cardId": "...",
-    "question": "...",
-    "options": ["..."],
-    "correctAnswer": "...",
-    "note": "Your expert note here..."
-  }
-]
-\`\`\`
-
-## Next Steps
-1. Save the JSON content above into the \`corrections.json\` file at the root of the project.
-2. Open the terminal at the project root and run the following command to apply the updates:
-   \`\`\`bash
-   py update_deck.py --deck-file "public/data/${deckFileName}" --input-file "corrections.json"
-   \`\`\`
-
----
-[BEGIN CARD BATCH FOR YOUR REVIEW]
----
-`;
-
-        const jsonString = JSON.stringify(cardsToImprove, null, 2);
-        return promptHeader + '\n' + jsonString;
-    }
-
-	// --- State Changers & Event Handlers ---
-	async handleExportForImprovement() {
-        const deckId = this.state.currentDeckId;
-        if (!deckId) return;
-
-        console.log(`DEBUG: [App] handleExportForImprovement -> Preparing export for deck ${deckId}`);
-        const deck = this.state.allDecks[deckId];
-        const improvementData = StorageService.loadImprovementData(deckId);
-        const markedCardIds = Object.keys(improvementData);
-
-        if (markedCardIds.length === 0) {
-            this.notificationModal.show('Export', 'There are no cards marked for improvement to export.');
-            return;
-        }
-
-        const cardMap = new Map(deck.cards.map(c => [c.cardId, c]));
-        const exportBatch = markedCardIds.map(cardId => {
-            const card = cardMap.get(cardId);
-            const review_request = improvementData[cardId];
-            return { ...card, review_request };
-        });
-
-        // Generate the full text content (prompt + JSON) by passing arguments in the correct order.
-        const textToCopy = this._generateImprovementPrompt(deck.name, deck.id, exportBatch);
-
-        try {
-            await navigator.clipboard.writeText(textToCopy);
-            this.notificationModal.show(
-                'Copied to Clipboard!',
-                `A complete prompt & action plan for your LLM with ${exportBatch.length} card(s) has been copied.`,
-                { icon: 'fa-solid fa-robot', color: 'text-green-500', bgColor: 'bg-green-100 dark:bg-green-900' }
-            );
-        } catch (error) {
-            console.error('Failed to copy to clipboard:', error);
-            this.notificationModal.show('Error', 'Could not copy data to clipboard. See console for details.');
-        }
-    }
+        // App.js is now only responsible for showing the notification based on the result.
+        if (result.success) {
+            this.notificationModal.show(
+                'Copied to Clipboard!',
+                `A complete prompt & action plan for your LLM with ${result.count} card(s) has been copied.`,
+                { icon: 'fa-solid fa-robot', color: 'text-green-500', bgColor: 'bg-green-100 dark:bg-green-900' }
+            );
+        } else {
+            this.notificationModal.show('Export', result.message);
+        }
+    }
 
 
      handleIgnoreCurrentCard() {
@@ -534,17 +447,23 @@ Here is the template you must follow:
     const progress = StorageService.loadDeckProgress(this.state.currentDeckId);
 
         // --- DECK TYPE ROUTER ---
+        // More explicit routing based on deckType
         if (deck.deckType === 'flippable') {
             console.log("DEBUG: [App] handleStartQuiz -> Starting a 'flippable' quiz.");
             this.state.quizInstance = new SpacedRepetitionQuiz(deck.cards, progress);
             this.state.quizInstance.generateQuizRound(7);
             this.state.currentScreen = 'flippableQuiz';
-        } else {
-            // Default to multiple choice quiz
+        } else if (deck.deckType === 'multipleChoice') {
+            // Explicitly handle multiple choice decks
             console.log("DEBUG: [App] handleStartQuiz -> Starting a 'multipleChoice' quiz.");
             this.state.quizInstance = new Quiz(deck.cards, progress);
             this.state.quizInstance.generateQuizRound(7);
             this.state.currentScreen = 'quiz';
+        } else {
+            // Handle unknown deck types gracefully
+            console.error(`[App] handleStartQuiz -> Unknown or undefined deckType: '${deck.deckType}' for deck ID: ${this.state.currentDeckId}.`);
+            alert("Error: Cannot start quiz. The deck type is not supported.");
+            return;
         }
  // Check if the generated round is empty, using the correct property for each quiz type
         let roundIsEmpty = false;

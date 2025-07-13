@@ -106,3 +106,8 @@ code {
 .play-tts-btn .fa-volume-up {
     pointer-events: none; /* Ensure click hits the button, not the icon */
 }
+
+/* Justify text within note paragraphs for better block alignment */
+.note-paragraph {
+    text-align: justify;
+}

@@ -42,7 +42,7 @@
         "I'm committing the code to the development branch now.",
         "The updates are being pushed to dev."
       ],
-      "note": "In Git version control, 'pushing' sends your local code changes to a remote repository. The 'dev branch' is a common branch for active development."
+      "note": "In Git version control, 'pushing' sends your local code changes to a remote repository.\n\nThe 'dev branch' is a common branch for active development."
     },
     {
       "cardId": "tech_phrase_005",
@@ -52,7 +52,7 @@
         "This pull request needs to be merged before we leave.",
         "Let's get this PR merged today."
       ],
-      "note": "'PR' stands for Pull Request, a formal request to merge code into a branch. 'End of day' (EOD) adds a sense of urgency."
+      "note": "'PR' stands for Pull Request, a formal request to merge code into a branch.\n\n'End of day' (EOD) adds a sense of urgency."
     },
     {
       "cardId": "tech_phrase_006",
@@ -92,7 +92,7 @@
         "Our continuous integration pipeline broke on the last build.",
         "The build is red in the pipeline."
       ],
-      "note": "'CI/CD' (Continuous Integration/Continuous Deployment) is an automated system for building and testing code. A failed build means the latest changes broke something."
+      "note": "'CI/CD' (Continuous Integration/Continuous Deployment) is an automated system for building and testing code.\n\nA failed or 'red' build means the latest changes broke something and requires attention."
     },
     {
       "cardId": "tech_phrase_010",
@@ -162,7 +162,7 @@
         "Let me log this issue in our tracking system.",
         "A new bug report for this will be created."
       ],
-      "note": "'Jira' is a very popular issue-tracking product. A 'ticket' is a single work item in such a system."
+      "note": "'Jira' is a very popular issue-tracking product.\n\nA 'ticket' is a single work item in such a system."
     },
     {
       "cardId": "tech_phrase_017",
@@ -302,9 +302,8 @@
         "Expect a recap email with the key takeaways shortly.",
         "I will summarize our discussion and action items in an email."
       ],
-      "note": "'Meeting minutes' are a written record of a meeting. A follow-up email ensures everyone is aligned on decisions and action items."
+      "note": "'Meeting minutes' are a written record of a meeting.\n\nA follow-up email ensures everyone is aligned on decisions and action items."
     },
-
     {
       "cardId": "tech_phrase_031",
       "audioSrc": "public/data/audio/tech_meetings/tech_phrase_031.mp3",
@@ -393,7 +392,7 @@
         "Has this been approved by the stakeholders?",
         "Let's secure stakeholder agreement before proceeding."
       ],
-      "note": "A 'stakeholder' is anyone with an interest in the project. 'Buy-in' means getting their agreement and support."
+      "note": "A 'stakeholder' is anyone with an interest in the project.\n\n'Buy-in' means getting their agreement and support."
     },
     {
       "cardId": "tech_phrase_040",
@@ -543,7 +542,7 @@
         "What are the edge cases for this feature?",
         "Have we handled all the edge cases?"
       ],
-      "note": "An 'edge case' is a problem or situation that occurs only at an extreme (maximum or minimum) operating parameter. It's the opposite of the 'happy path'."
+      "note": "An 'edge case' is a problem or situation that occurs only at an extreme (maximum or minimum) operating parameter.\n\nIt's the opposite of the 'happy path'."
     },
     {
       "cardId": "tech_phrase_055",

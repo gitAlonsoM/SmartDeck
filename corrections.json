@@ -1,91 +1,66 @@
 [
   {
-    "cardId": "itc_066",
-    "cardType": "flippable",
+    "cardId": "tech_convo_020",
     "sideA": {
-      "text": "Deselecciona esa casilla y, en su lugar, marca la que está justo debajo.",
-      "visualContent": {
-        "type": "ascii",
-        "value": "[✓] -> [ ]\n[ ] -> [✓]"
-      }
+      "conversation": [
+        {
+          "text": "What are the action items from this meeting?",
+          "audioSrc": "public/data/audio/tech_convos/tech_convo_020_a.mp3"
+        },
+        {
+          "text": "John will investigate the database performance, and I will draft the project proposal.",
+          "audioSrc": "public/data/audio/tech_convos/tech_convo_020_b.mp3"
+        }
+      ]
     },
-    "sideB": [
-      "Deselect that checkbox and check the one right below it instead.",
-      "Uncheck that box and then tick the next one down.",
-      "Please unselect that option and select the one underneath it.",
-      "Deselect that checkbox and instead, select the one that is just below."
-    ],
-    "note": "Added your suggested translation. It's clear and natural."
+    "note": "'Action items' are specific, defined tasks assigned to one or more people, to be completed after a meeting. They are the concrete outcomes of a discussion.\n\nTo 'draft' something means to prepare a preliminary version of a document, like a plan or proposal, that will be reviewed and revised later."
   },
   {
-    "cardId": "itc_067",
-    "cardType": "flippable",
+    "cardId": "tech_convo_033",
     "sideA": {
-      "text": "Haz clic en cualquier parte fuera de la tabla para que nada quede seleccionado.",
-      "visualContent": {
-        "type": "icon",
-        "value": "fas fa-hand-point-up"
-      }
+      "conversation": [
+        {
+          "text": "Does anyone have anything to add to the agenda?",
+          "audioSrc": "public/data/audio/tech_convos/tech_convo_033_a.mp3"
+        },
+        {
+          "text": "Yes, I'd like to briefly discuss the feedback from the UX team.",
+          "audioSrc": "public/data/audio/tech_convos/tech_convo_033_b.mp3"
+        }
+      ]
     },
-    "sideB": [
-      "Click anywhere outside the table so that nothing is selected.",
-      "Just click off the table to deselect everything.",
-      "Can you click on the background to clear the selection?"
-    ],
-    "note": "The suggested phrase '...so anything is selected' is incorrect, as the goal is to deselect. The corrected version is nearly identical to an existing answer, so no new answer was added."
+    "note": "'Briefly' means for a short duration; it's used here to indicate the discussion won't take much time, showing respect for the meeting's schedule.\n\n'UX' stands for User Experience, which refers to the overall experience and satisfaction a person has when using a product."
   },
   {
-    "cardId": "itc_006",
-    "cardType": "flippable",
+    "cardId": "tech_convo_068",
     "sideA": {
-      "text": "Desplázate hacia abajo un poco.",
-      "visualContent": {
-        "type": "icon",
-        "value": "fas fa-arrows-alt-v"
-      }
+      "conversation": [
+        {
+          "text": "Let's take this discussion offline, it's too in-depth for this meeting.",
+          "audioSrc": "public/data/audio/tech_convos/tech_convo_068_a.mp3"
+        },
+        {
+          "text": "Good idea. I'll set up a follow-up with the relevant stakeholders.",
+          "audioSrc": "public/data/audio/tech_convos/tech_convo_068_b.mp3"
+        }
+      ]
     },
-    "sideB": [
-      "Can you scroll down a little bit?",
-      "Go ahead and scroll down some.",
-      "Just scroll down a bit.",
-      "Move down a bit."
-    ],
-    "note": "Added 'Move down a bit.' It's a valid and direct alternative to 'scroll'."
+    "note": "To 'take something offline' means to discuss it outside of the current meeting.\n\n'Stakeholders' are people who have an interest or concern in the project.\n\nA 'follow-up' is a subsequent action, meeting, or communication to continue a previous discussion or to check on progress."
   },
   {
-    "cardId": "itc_018",
-    "cardType": "flippable",
+    "cardId": "tech_convo_010",
     "sideA": {
-      "text": "Copia todo ese texto.",
-      "visualContent": {
-        "type": "icon",
-        "value": "fas fa-copy"
-      }
+      "conversation": [
+        {
+          "text": "The build failed in the CI/CD pipeline.",
+          "audioSrc": "public/data/audio/tech_convos/tech_convo_010_a.mp3"
+        },
+        {
+          "text": "It seems like a dependency issue. Let me investigate.",
+          "audioSrc": "public/data/audio/tech_convos/tech_convo_010_b.mp3"
+        }
+      ]
     },
-    "sideB": [
-      "Copy all of that text.",
-      "Please select and copy all that text.",
-      "Go ahead and copy the entire text block.",
-      "Copy all that text."
-    ],
-    "note": "Confirmed. 'Copy all that text' is a valid and common alternative to 'Copy all of that text'. Added to the list of answers."
-  },
-  {
-    "cardId": "itc_032",
-    "cardType": "flippable",
-    "sideA": {
-      "text": "Copia solo la dirección de correo electrónico, nada más.",
-      "visualContent": {
-        "type": "icon",
-        "value": "fas fa-at"
-      }
-    },
-    "sideB": [
-      "Copy just the email address, nothing else.",
-      "Please copy only the email address.",
-      "I just need you to copy the email address itself.",
-      "Copy only the email address, nothing else."
-    ],
-    "note": "Added your suggestion. Using 'only' is a good alternative to 'just' in this context."
+    "note": "A 'pipeline' in software development refers to a series of automated stages that code passes through, from being written to being deployed. The 'CI/CD pipeline' specifically automates the build, test, and deployment process.\n\nA 'dependency' is an external software component that a project relies on to work."
   }
 ]

@@ -1,7 +1,7 @@
 <!-- src\components\FlippableCardScreen\flippable-card-screen.html -->
 <div class="h-screen flex flex-col bg-gray-900 dark:bg-gray-800 text-gray-200">
 
-  <main class="flex-grow flex flex-col p-4">
+  <main class="flex-grow flex flex-col p-4 overflow-hidden">
     <div class="space-y-2 max-w-2xl mx-auto w-full flex-grow flex flex-col">
       <div id="flippable-card-header" class="flex justify-between items-center">
         <h2 class="text-xl font-bold" id="deck-title-flippable">Studying Deck</h2>
@@ -12,15 +12,12 @@
         <div class="flip-card-inner">
 
           <div class="flip-card-front">
-            <div id="side-a-content" class="w-full h-full flex flex-col justify-start p-4">
-              <div id="side-a-text-content" class="text-center">
-              </div>
-              <div id="visual-content-container" class="flex-grow flex items-center justify-center my-4 overflow-hidden">
-              </div>
+            <div id="side-a-content" class="w-full h-full flex flex-col justify-start p-4 hidden">
+              <div id="side-a-text-content" class="text-center"></div>
+              <div id="visual-content-container" class="flex-grow flex items-center justify-center my-4 overflow-hidden"></div>
             </div>
             <div id="conversation-content-container" class="w-full h-full flex flex-col items-center justify-center p-4 hidden">
-                <div id="conversation-player-wrapper" class="w-full max-w-sm space-y-4">
-                    </div>
+                <div id="conversation-player-wrapper" class="w-full max-w-sm space-y-4"></div>
             </div>
             <div id="audio-content-container" class="w-full h-full flex flex-col items-center justify-center p-4 hidden">
               <i class="fas fa-headphones-alt text-8xl text-indigo-400 mb-6"></i>
@@ -28,15 +25,12 @@
             </div>
           </div>
       
-          <div class="flip-card-back flex-col items-stretch">
-            <div class="flex-grow p-4 flex flex-col">
-              <div id="side-a-content-on-back" class="w-full break-words pt-6 text-center">
-              </div>
+          <div class="flip-card-back flex flex-col items-stretch">
+            <div class="flex-grow p-4 overflow-y-auto">
+              <div id="side-a-content-on-back" class="w-full break-words pt-6 text-center"></div>
               <hr class="border-gray-300 dark:border-gray-600 my-4">
-              <div id="side-b-content" class="text-left space-y-3 w-full">
-              </div>
-              <div id="note-content-container" class="mt-4 p-3 bg-gray-800/50 dark:bg-gray-900/50 rounded-lg hidden">
-              </div>
+              <div id="side-b-content" class="text-left space-y-3 w-full"></div>
+              <div id="note-content-container" class="mt-4 p-3 bg-gray-800/50 dark:bg-gray-900/50 rounded-lg hidden"></div>
             </div>
           </div>
 
@@ -53,15 +47,15 @@
     </div>
   </main>
 
-  <footer class="p-4 border-t border-gray-700 bg-gray-900 dark:bg-gray-800">
+  <footer class="p-4 border-t border-gray-700 bg-gray-900 dark:bg-gray-800 flex-shrink-0">
     <div class="max-w-2xl mx-auto">
       <button id="flip-card-btn" class="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors">Show Answer</button>
       
       <div id="assessment-buttons" class="hidden grid grid-cols-2 gap-3">
-        <button id="review-again-btn" class="w-full bg-amber-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-amber-600 transition-colors">
+        <button id="review-again-btn" class="w-full bg-amber-500 text-white font-semibold text-sm py-2 px-4 rounded-lg hover:bg-amber-600 transition-colors">
           <i class="fas fa-sync-alt mr-2"></i> Review Again
         </button>
-        <button id="knew-it-btn" class="w-full bg-emerald-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-emerald-600 transition-colors">
+        <button id="knew-it-btn" class="w-full bg-emerald-500 text-white font-semibold text-sm py-2 px-4 rounded-lg hover:bg-emerald-600 transition-colors">
           I Knew It <i class="fas fa-check ml-2"></i>
         </button>
       </div>

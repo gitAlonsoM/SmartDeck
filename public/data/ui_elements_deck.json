@@ -8,781 +8,450 @@
       "cardId": "ui_001",
       "sideA": {
         "text": "A clickable element that performs a specific action when activated.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-mouse-pointer"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-mouse-pointer" }
       },
-      "sideB": [
-        "Button",
-        "Action Button",
-        "CTA Button"
-      ],
-      "note": null
+      "sideB": [ "Button", "Action Button", "CTA Button" ],
+      "note": "Buttons are often styled to indicate their importance. A primary button (solid color) is for the main action, a secondary button (outlined) is for an alternative action, and a tertiary/text button is for minor actions.\n\n'CTA' stands for Call to Action, a button designed to prompt an immediate response, like 'Sign Up Now'."
     },
     {
       "cardId": "ui_002",
       "sideA": {
         "text": "A control that allows the user to choose ONLY ONE of a predefined set of mutually exclusive options.",
-        "visualContent": {
-          "type": "ascii",
-          "value": "( ) Option A\n(•) Option B\n( ) Option C"
-        }
+        "visualContent": { "type": "ascii", "value": "( ) Option A\n(•) Option B\n( ) Option C" }
       },
-      "sideB": [
-        "Radio Button",
-        "Option Button"
-      ],
-      "note": null
+      "sideB": [ "Radio Button", "Option Button" ],
+      "note": "The name comes from the physical buttons on old car radios—pressing one would un-press any other. This is ideal for single-choice questions like 'Yes/No'."
     },
     {
       "cardId": "ui_003",
       "sideA": {
         "text": "A graphical control that allows the user to select ONE OR MORE items from a set.",
-        "visualContent": {
-          "type": "icon",
-          "value": "far fa-check-square"
-        }
+        "visualContent": { "type": "icon", "value": "far fa-check-square" }
       },
-      "sideB": [
-        "Checkbox",
-        "Tickbox",
-        "Check Box"
-      ],
-      "note": null
+      "sideB": [ "Checkbox", "Tickbox", "Check Box" ],
+      "note": "Unlike Radio Buttons, Checkboxes are used for multi-select scenarios, such as choosing multiple toppings for a pizza or selecting several items in a list."
     },
     {
       "cardId": "ui_004",
       "sideA": {
         "text": "A control that allows a user to turn a setting on or off with a single click or tap.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-toggle-on"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-toggle-on" }
       },
-      "sideB": [
-        "Toggle Switch",
-        "Toggle Button",
-        "Switch"
-      ],
-      "note": null
+      "sideB": [ "Toggle Switch", "Toggle Button", "Switch" ],
+      "note": "Ideal for binary states (e.g., On/Off, Enabled/Disabled). A switch provides immediate feedback on the state without requiring a 'Save' button."
     },
     {
       "cardId": "ui_005",
       "sideA": {
         "text": "A list of commands or options presented to the user to choose from.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-bars"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-bars" }
       },
-      "sideB": [
-        "Menu",
-        "Navigation Menu"
-      ],
-      "note": null
+      "sideB": [ "Menu", "Navigation Menu" ],
+      "note": "Menus can appear in many forms, including main navigation bars, context menus (right-click), or dropdown menus attached to a button."
     },
     {
       "cardId": "ui_006",
       "sideA": {
         "text": "A control that reveals a list of options from which the user can select one.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-caret-square-down"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-caret-square-down" }
       },
-      "sideB": [
-        "Dropdown",
-        "Select Menu",
-        "Pull-down List",
-        "Drop-down List"
-      ],
-      "note": null
+      "sideB": [ "Dropdown", "Select Menu", "Pull-down List", "Drop-down List" ],
+      "note": "Dropdowns are excellent for conserving screen space, especially with long lists. However, a potential UX downside is that they hide the available options from the user by default."
     },
     {
       "cardId": "ui_007",
       "sideA": {
         "text": "A control that allows selecting a value from a continuous range by dragging a handle.",
-        "visualContent": {
-          "type": "ascii",
-          "value": "‹───o───›"
-        }
+        "visualContent": { "type": "ascii", "value": "‹───o───›" }
       },
-      "sideB": [
-        "Slider",
-        "Track Bar"
-      ],
-      "note": null
+      "sideB": [ "Slider", "Track Bar" ],
+      "note": "Best used for adjustments where precision is less important than the general value, such as volume or brightness. A 'Range Slider' has two handles to define a start and end point."
     },
     {
       "cardId": "ui_008",
       "sideA": {
         "text": "A rectangular area in a form where the user can enter text.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-edit"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-edit" }
       },
-      "sideB": [
-        "Text Field",
-        "Input Field",
-        "Text Box",
-        "Input Box"
-      ],
-      "note": null
+      "sideB": [ "Text Field", "Input Field", "Text Box", "Input Box" ],
+      "note": "This typically refers to a single-line input. For multi-line text entry, the correct component is a 'Text Area'."
     },
     {
       "cardId": "ui_009",
       "sideA": {
         "text": "A small informational box that appears when a user hovers over an element.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-comment-alt"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-comment-alt" }
       },
-      "sideB": [
-        "Tooltip",
-        "Hint",
-        "Infotip"
-      ],
-      "note": null
+      "sideB": [ "Tooltip", "Hint", "Infotip" ],
+      "note": "Tooltips should contain non-essential, supplementary information. Critical information needed to complete a task should always be visible without requiring a hover."
     },
     {
       "cardId": "ui_010",
       "sideA": {
         "text": "A dialog box that appears on top of the main content, disabling it until the user interacts with the dialog.",
-        "visualContent": {
-          "type": "icon",
-          "value": "far fa-window-maximize"
-        }
+        "visualContent": { "type": "icon", "value": "far fa-window-maximize" }
       },
-      "sideB": [
-        "Modal",
-        "Dialog Box",
-        "Popup Window"
-      ],
-      "note": null
+      "sideB": [ "Modal", "Dialog Box", "Popup Window" ],
+      "note": "The key characteristic of a modal is that it traps the user's focus. The user cannot interact with the rest of the application until the modal is closed."
     },
     {
       "cardId": "ui_011",
       "sideA": {
         "text": "A list of vertically stacked items, where each item can be 'expanded' or 'collapsed' to reveal its content.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-layer-group"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-layer-group" }
       },
-      "sideB": [
-        "Accordion",
-        "Collapsible Panel",
-        "Expander"
-      ],
-      "note": "A user-suggested term 'Toggle Group' was reviewed but rejected. 'Accordion' more accurately implies the expandable/collapsible content sections."
+      "sideB": [ "Accordion", "Collapsible Panel", "Expander" ],
+      "note": "An Accordion is useful for showing high-level information first and letting users drill down into details on demand. This helps reduce clutter on complex pages."
     },
     {
       "cardId": "ui_012",
       "sideA": {
         "text": "A navigation trail that shows the user's location in a website or application.",
-        "visualContent": {
-          "type": "ascii",
-          "value": "Home > Section > Page"
-        }
+        "visualContent": { "type": "ascii", "value": "Home > Section > Page" }
       },
-      "sideB": [
-        "Breadcrumbs",
-        "Breadcrumb Trail"
-      ],
-      "note": null
+      "sideB": [ "Breadcrumbs", "Breadcrumb Trail" ],
+      "note": "The name is a reference to the fairy tale of Hansel and Gretel. Breadcrumbs are essential for helping users orient themselves within a site with a deep navigation structure."
     },
     {
       "cardId": "ui_013",
       "sideA": {
         "text": "A navigation scheme that allows a user to switch between different subsections of a single screen.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-folder-open"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-folder-open" }
       },
-      "sideB": [
-        "Tabs",
-        "Tabbed Navigation",
-        "Tab View"
-      ],
-      "note": null
+      "sideB": [ "Tabs", "Tabbed Navigation", "Tab View" ],
+      "note": "Tabs are best used for switching between different views of the same data or context (e.g., 'My Profile', 'My Settings'). They should not be used for navigating to completely different pages."
     },
     {
       "cardId": "ui_014",
       "sideA": {
         "text": "A bar that indicates how much of a task has been completed.",
-        "visualContent": {
-          "type": "ascii",
-          "value": "[██████----] 60%"
-        }
+        "visualContent": { "type": "ascii", "value": "[██████----] 60%" }
       },
-      "sideB": [
-        "Progress Bar"
-      ],
-      "note": null
+      "sideB": [ "Progress Bar" ],
+      "note": "A progress bar can be 'determinate' (showing how much is done, like a file download) or 'indeterminate' (showing that something is working, when the duration is unknown)."
     },
     {
       "cardId": "ui_015",
       "sideA": {
         "text": "A small, symbolic image representing a program, file, or function.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-star"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-star" }
       },
-      "sideB": [
-        "Icon"
-      ],
-      "note": null
+      "sideB": [ "Icon" ],
+      "note": "Well-chosen icons can improve usability by being universally recognizable. Common icon sets include Font Awesome and Material Icons."
     },
     {
       "cardId": "ui_016",
       "sideA": {
         "text": "A message box that provides feedback to the user, such as a confirmation or a warning.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-exclamation-triangle"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-exclamation-triangle" }
       },
-      "sideB": [
-        "Alert",
-        "Notification Box",
-        "Message Box"
-      ],
-      "note": null
+      "sideB": [ "Alert", "Notification Box", "Message Box" ],
+      "note": "Alerts are often color-coded by severity: green for success, blue for information, yellow for warning, and red for error/danger."
     },
     {
       "cardId": "ui_017",
       "sideA": {
         "text": "A control for navigating between pages of content or search results.",
-        "visualContent": {
-          "type": "ascii",
-          "value": "‹ Prev  1  2  3  Next ›"
-        }
+        "visualContent": { "type": "ascii", "value": "‹ Prev  1  2  3  Next ›" }
       },
-      "sideB": [
-        "Pagination",
-        "Paging Controls",
-        "Page Navigation"
-      ],
-      "note": null
+      "sideB": [ "Pagination", "Paging Controls", "Page Navigation" ],
+      "note": "Pagination is crucial for performance, as it breaks large datasets into smaller, manageable chunks.\n\nAn alternative approach is 'infinite scroll', where more content is loaded as the user scrolls down."
     },
     {
       "cardId": "ui_018",
       "sideA": {
         "text": "A self-contained block of content and actions about a single subject, often in a grid.",
-        "visualContent": {
-          "type": "icon",
-          "value": "far fa-address-card"
-        }
+        "visualContent": { "type": "icon", "value": "far fa-address-card" }
       },
-      "sideB": [
-        "Card",
-        "Tile"
-      ],
-      "note": null
+      "sideB": [ "Card", "Tile" ],
+      "note": "Cards are a key component of Material Design. They are highly flexible and allow for grouping related information (like an image, title, and button) into a single, digestible unit."
     },
     {
       "cardId": "ui_019",
       "sideA": {
         "text": "The content block at the very top of a webpage, often containing a logo and main navigation.",
-        "visualContent": {
-          "type": "ascii",
-          "value": "┌──[LOGO]─[Nav]──┐\n│                 │\n└───────────────────┘"
-        }
+        "visualContent": { "type": "ascii", "value": "┌──[LOGO]─[Nav]──┐\n│                  │\n└──────────────────┘" }
       },
-      "sideB": [
-        "Header",
-        "Masthead"
-      ],
-      "note": null
+      "sideB": [ "Header", "Masthead" ],
+      "note": "The Header is critical for establishing brand identity and providing consistent, global navigation links that are accessible from anywhere on the site."
     },
     {
       "cardId": "ui_020",
       "sideA": {
         "text": "The content block at the very bottom of a webpage, often containing copyright and contact info.",
-        "visualContent": {
-          "type": "ascii",
-          "value": "┌───────────────────┐\n│                 │\n└─ © 2025 | Contact ─┘"
-        }
+        "visualContent": { "type": "ascii", "value": "┌───────────────────┐\n│                   │\n└─ © 2025 | Contact ─┘" }
       },
-      "sideB": [
-        "Footer",
-        "Page Footer"
-      ],
-      "note": null
+      "sideB": [ "Footer", "Page Footer" ],
+      "note": "A common location for secondary information, such as sitemap links, terms of service, privacy policy, and social media links."
     },
     {
       "cardId": "ui_021",
       "sideA": {
         "text": "A circular image representing a user.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-user-circle"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-user-circle" }
       },
-      "sideB": [
-        "Avatar",
-        "Profile Picture"
-      ],
-      "note": null
+      "sideB": [ "Avatar", "Profile Picture" ],
+      "note": "Avatars play a key role in personalizing a user's experience and establishing identity in social contexts like comment sections or user profiles."
     },
     {
       "cardId": "ui_022",
       "sideA": {
         "text": "A small label or tag used to display a status or a count, often on an icon.",
-        "visualContent": {
-          "type": "ascii",
-          "value": "🔔\n(3)"
-        }
+        "visualContent": { "type": "ascii", "value": "🔔\n(3)" }
       },
-      "sideB": [
-        "Badge",
-        "Notification Badge",
-        "Pill"
-      ],
-      "note": null
+      "sideB": [ "Badge", "Notification Badge" ],
+      "note": "A badge is a dynamic indicator, typically used as an unread counter for notifications or messages. For static categorization, the 'Tag' or 'Chip' component is often used instead."
     },
     {
       "cardId": "ui_023",
       "sideA": {
         "text": "A two-button control to incrementally increase or decrease a numeric value.",
-        "visualContent": {
-          "type": "ascii",
-          "value": "[ 5 ] ▲\n      ▼"
-        }
+        "visualContent": { "type": "ascii", "value": "[ 5 ] ▲\n     ▼" }
       },
-      "sideB": [
-        "Stepper",
-        "Number Input",
-        "Quantity Stepper"
-      ],
-      "note": null
+      "sideB": [ "Stepper", "Number Input", "Quantity Stepper" ],
+      "note": "This control is ideal for making small, incremental adjustments, such as changing the quantity of an item in a shopping cart."
     },
     {
       "cardId": "ui_024",
       "sideA": {
         "text": "A control that allows a user to select a date from a calendar view.",
-        "visualContent": {
-          "type": "icon",
-          "value": "far fa-calendar-alt"
-        }
+        "visualContent": { "type": "icon", "value": "far fa-calendar-alt" }
       },
-      "sideB": [
-        "Date Picker",
-        "Date Selector",
-        "Calendar Control"
-      ],
-      "note": null
+      "sideB": [ "Date Picker", "Date Selector", "Calendar Control" ],
+      "note": "Designing a user-friendly date picker can be challenging. It must consider localization (e.g., MM/DD/YYYY vs DD/MM/YYYY) and be easy to navigate on both desktop and mobile."
     },
     {
       "cardId": "ui_025",
       "sideA": {
         "text": "A rotating slideshow of images or featured content.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-images"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-images" }
       },
-      "sideB": [
-        "Carousel",
-        "Image Slider",
-        "Slideshow"
-      ],
-      "note": null
+      "sideB": [ "Carousel", "Image Slider", "Slideshow" ],
+      "note": "There is considerable debate in the UX community about the effectiveness of carousels, as user engagement drops significantly after the first slide."
     },
     {
       "cardId": "ui_026",
       "sideA": {
         "text": "An icon with three vertical dots (⋮) that reveals a menu of options.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-ellipsis-v"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-ellipsis-v" }
       },
-      "sideB": [
-        "Kebab Menu",
-        "Vertical Ellipsis Menu",
-        "Three-dot Menu"
-      ],
-      "note": null
+      "sideB": [ "Kebab Menu", "Vertical Ellipsis Menu", "Three-dot Menu" ],
+      "note": "This menu is typically used for actions related to a specific item in a list or a card (e.g., 'Edit', 'Delete')."
     },
     {
       "cardId": "ui_027",
       "sideA": {
         "text": "An icon with three horizontal lines (≡) that typically opens a main navigation menu.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-bars"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-bars" }
       },
-      "sideB": [
-        "Hamburger Menu",
-        "Navigation Drawer Toggle",
-        "Side Menu Icon"
-      ],
-      "note": null
+      "sideB": [ "Hamburger Menu", "Navigation Drawer Toggle", "Side Menu Icon" ],
+      "note": "While essential for saving space on mobile, the Hamburger Menu can sometimes be controversial on desktop sites due to lower discoverability of navigation items."
     },
     {
       "cardId": "ui_028",
       "sideA": {
         "text": "A temporary, non-intrusive message that appears at the bottom of the screen to provide brief feedback.",
-        "visualContent": {
-          "type": "ascii",
-          "value": "┌───────────┐\n│           │\n└─[ Message ]─┘"
-        }
+        "visualContent": { "type": "ascii", "value": "┌───────────┐\n│           │\n└─[ Message ]─┘" }
       },
-      "sideB": [
-        "Snackbar",
-        "Toast Notification",
-        "Toast"
-      ],
+      "sideB": [ "Snackbar", "Toast Notification", "Toast" ],
       "note": "'Toast' is a valid synonym, but 'Snackbar' often implies the ability to include an action button (e.g., 'Undo'), which a simple toast typically does not."
     },
     {
       "cardId": "ui_029",
       "sideA": {
         "text": "An input field specifically designed for entering and validating search queries.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-search"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-search" }
       },
-      "sideB": [
-        "Search Bar",
-        "Search Field",
-        "Search Box"
-      ],
-      "note": null
+      "sideB": [ "Search Bar", "Search Field", "Search Box" ],
+      "note": "A good search bar often includes user experience enhancements like auto-complete suggestions or a clear 'X' button to reset the query."
     },
     {
       "cardId": "ui_030",
       "sideA": {
         "text": "A placeholder UI that mimics the layout of the page, shown while content is loading.",
-        "visualContent": {
-          "type": "ascii",
-          "value": "[▓▓▓▓▓]\n[▓▓▓▓▓▓▓▓]\n[▓▓▓▓▓▓]"
-        }
+        "visualContent": { "type": "ascii", "value": "[▓▓▓▓▓]\n[▓▓▓▓▓▓▓▓]\n[▓▓▓▓▓▓]" }
       },
-      "sideB": [
-        "Skeleton Screen",
-        "Skeleton Loader",
-        "UI Skeleton"
-      ],
-      "note": null
+      "sideB": [ "Skeleton Screen", "Skeleton Loader", "UI Skeleton" ],
+      "note": "Skeleton screens provide a better user experience than a blank page or a spinner because they give the perception of speed, as the basic layout appears almost instantly."
     },
     {
       "cardId": "ui_031",
       "sideA": {
         "text": "An animated graphic indicating that a process is running in the background.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-spinner"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-spinner" }
       },
-      "sideB": [
-        "Spinner",
-        "Loader",
-        "Loading Spinner",
-        "Throbber"
-      ],
-      "note": null
+      "sideB": [ "Spinner", "Loader", "Loading Spinner", "Throbber" ],
+      "note": "A spinner is best used for 'indeterminate' processes, where the total duration is unknown. If the duration is known, a 'Progress Bar' is a better choice."
     },
     {
       "cardId": "ui_032",
       "sideA": {
         "text": "A compact element representing an input, attribute, or action, often used for filtering.",
-        "visualContent": {
-          "type": "ascii",
-          "value": "[ Filter x ]"
-        }
+        "visualContent": { "type": "ascii", "value": "[ Filter x ]" }
       },
-      "sideB": [
-        "Chip",
-        "Pill",
-        "Tag"
-      ],
-      "note": "Added 'Tag' as a valid synonym, as it's frequently used in modern component libraries like Material Design and others for this exact element."
+      "sideB": [ "Chip", "Pill", "Tag" ],
+      "note": "Chips are highly versatile. They can represent filters, selected items from a list, or contacts in an email field. 'Tag' is a very common synonym."
     },
     {
       "cardId": "ui_033",
       "sideA": {
         "text": "A set of buttons grouped together, where only one can be active at a time, often used for view switching.",
-        "visualContent": {
-          "type": "ascii",
-          "value": "[ List | Grid | Map ]"
-        }
+        "visualContent": { "type": "ascii", "value": "[ List | Grid | Map ]" }
       },
-      "sideB": [
-        "Segmented Control",
-        "Button Group"
-      ],
-      "note": null
+      "sideB": [ "Segmented Control", "Button Group" ],
+      "note": "This is essentially a stylized radio button group, perfect for letting users switch between different ways of viewing the same content."
     },
     {
       "cardId": "ui_034",
       "sideA": {
         "text": "A keyword or term assigned to a piece of information, used for organization.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-tag"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-tag" }
       },
-      "sideB": [
-        "Tag",
-        "Label"
-      ],
-      "note": null
+      "sideB": [ "Tag", "Label" ],
+      "note": "Tags are often used for user-generated categorization, such as on a blog post or in a photo gallery. They enable powerful filtering and discovery."
     },
     {
       "cardId": "ui_035",
       "sideA": {
         "text": "A multi-step process that guides a user through a task, breaking it into manageable parts.",
-        "visualContent": {
-          "type": "ascii",
-          "value": "Step 1 > Step 2 > Step 3"
-        }
+        "visualContent": { "type": "ascii", "value": "Step 1 > Step 2 > Step 3" }
       },
-      "sideB": [
-        "Wizard",
-        "Stepper",
-        "Setup Assistant"
-      ],
-      "note": null
+      "sideB": [ "Wizard", "Stepper", "Setup Assistant" ],
+      "note": "Wizards are effective for complex or unfamiliar tasks, as they prevent the user from being overwhelmed by presenting only one step at a time."
     },
     {
       "cardId": "ui_036",
       "sideA": {
         "text": "A control that allows users to pick a color from a palette or spectrum.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-palette"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-palette" }
       },
-      "sideB": [
-        "Color Picker",
-        "Color Swatch"
-      ],
-      "note": null
+      "sideB": [ "Color Picker", "Color Swatch" ],
+      "note": "Common representations include a grid of color swatches, a spectrum or color wheel, or input fields for HEX or RGB values."
     },
     {
       "cardId": "ui_037",
       "sideA": {
         "text": "A control designed to let a user select a specific time of day.",
-        "visualContent": {
-          "type": "icon",
-          "value": "far fa-clock"
-        }
+        "visualContent": { "type": "icon", "value": "far fa-clock" }
       },
-      "sideB": [
-        "Time Picker",
-        "Time Selector"
-      ],
-      "note": null
+      "sideB": [ "Time Picker", "Time Selector" ],
+      "note": "A well-designed time picker should be easy to use and should clearly handle both 12-hour (AM/PM) and 24-hour formats based on user preference or locale."
     },
     {
       "cardId": "ui_038",
       "sideA": {
         "text": "An input control for entering large blocks of multi-line text.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-paragraph"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-paragraph" }
       },
-      "sideB": [
-        "Text Area",
-        "Multi-line Text Field"
-      ],
-      "note": null
+      "sideB": [ "Text Area", "Multi-line Text Field" ],
+      "note": "This is distinct from a standard 'Text Field' which is intended for single-line input. Text areas can often be resized by the user."
     },
     {
       "cardId": "ui_039",
       "sideA": {
         "text": "A control that allows users to select and upload one or more files from their local device.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-file-upload"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-file-upload" }
       },
-      "sideB": [
-        "File Input",
-        "File Uploader",
-        "File Selector"
-      ],
-      "note": null
+      "sideB": [ "File Input", "File Uploader", "File Selector" ],
+      "note": "Modern implementations often include a 'drag-and-drop' zone for a better user experience, in addition to the traditional 'Browse' button."
     },
     {
       "cardId": "ui_040",
       "sideA": {
         "text": "A system for users to express their opinion, typically using stars or other symbols.",
-        "visualContent": {
-          "type": "ascii",
-          "value": "★ ★ ★ ★ ☆"
-        }
+        "visualContent": { "type": "ascii", "value": "★ ★ ★ ★ ☆" }
       },
-      "sideB": [
-        "Rating",
-        "Star Rating"
-      ],
-      "note": null
+      "sideB": [ "Rating", "Star Rating" ],
+      "note": "This is a common form of user feedback. While stars are most common, other symbols like hearts or thumbs-up can also be used."
     },
     {
       "cardId": "ui_041",
       "sideA": {
         "text": "A large, prominent image and text combination placed at the top of a webpage.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-image"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-image" }
       },
-      "sideB": [
-        "Hero Image",
-        "Hero Header",
-        "Jumbotron"
-      ],
-      "note": null
+      "sideB": [ "Hero Image", "Hero Header", "Jumbotron" ],
+      "note": "The goal of a hero image is to make a strong first impression and immediately communicate the core message or value proposition of the page.\n\n'Jumbotron' is a term popularized by the Bootstrap framework."
     },
     {
       "cardId": "ui_042",
       "sideA": {
         "text": "A panel that slides in from the side of the screen, typically for navigation or filters.",
-        "visualContent": {
-          "type": "ascii",
-          "value": "┌───┬───┐\n│ < │   │\n└───┴───┘"
-        }
+        "visualContent": { "type": "ascii", "value": "┌───┬───┐\n│ < │   │\n└───┴───┘" }
       },
-      "sideB": [
-        "Off-canvas Menu",
-        "Sidebar Menu",
-        "Drawer"
-      ],
-      "note": null
+      "sideB": [ "Off-canvas Menu", "Sidebar Menu", "Drawer" ],
+      "note": "The term 'Drawer' is very common, especially in Google's Material Design system, and is often used interchangeably with off-canvas or sidebar."
     },
     {
       "cardId": "ui_043",
       "sideA": {
         "text": "A blinking vertical line in a text field indicating where text will be inserted.",
-        "visualContent": {
-          "type": "ascii",
-          "value": "Hello|"
-        }
+        "visualContent": { "type": "ascii", "value": "Hello|" }
       },
-      "sideB": [
-        "Caret",
-        "Text Cursor",
-        "Insertion Point"
-      ],
-      "note": "While often used interchangeably with 'cursor' in general computing, 'caret' specifically refers to the text insertion point. 'Cursor' can also refer to the mouse pointer."
+      "sideB": [ "Caret", "Text Cursor", "Insertion Point" ],
+      "note": "While often used interchangeably with 'cursor' in general computing, 'caret' specifically refers to the text insertion point.\n\n'Cursor' can also refer to the mouse pointer."
     },
     {
       "cardId": "ui_044",
       "sideA": {
         "text": "An interactive tour that guides new users through the key features of an application.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-map-signs"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-map-signs" }
       },
-      "sideB": [
-        "Onboarding Flow",
-        "Product Tour",
-        "User Guide"
-      ],
-      "note": null
+      "sideB": [ "Onboarding Flow", "Product Tour", "User Guide" ],
+      "note": "The primary goal of onboarding is to increase user success and retention by demonstrating the product's value as quickly as possible."
     },
     {
       "cardId": "ui_045",
       "sideA": {
         "text": "The clickable text of a hyperlink.",
-        "visualContent": {
-          "type": "ascii",
-          "value": "Please <u>click here</u> for more info."
-        }
+        "visualContent": { "type": "ascii", "value": "Please <u>click here</u> for more info." }
       },
-      "sideB": [
-        "Anchor Text",
-        "Link Text",
-        "Link Label"
-      ],
-      "note": null
+      "sideB": [ "Anchor Text", "Link Text", "Link Label" ],
+      "note": "Good anchor text is crucial for both SEO (Search Engine Optimization) and accessibility. It should be descriptive of the link's destination, avoiding generic phrases like 'click here'."
     },
     {
       "cardId": "ui_046",
       "sideA": {
         "text": "A large, often intrusive, full-screen advertisement or promotion that appears before the expected content.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-ad"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-ad" }
       },
-      "sideB": [
-        "Interstitial Ad",
-        "Full-page Ad"
-      ],
-      "note": null
+      "sideB": [ "Interstitial Ad", "Full-page Ad" ],
+      "note": "These are often disruptive to the user experience. Google and other search engines may penalize sites that use them improperly, especially on mobile devices."
     },
     {
       "cardId": "ui_047",
       "sideA": {
         "text": "A container that visually groups a set of related controls or content, often with a title.",
-        "visualContent": {
-          "type": "ascii",
-          "value": "┌─ Group Title ─┐\n│ [Content]     │\n└───────────────┘"
-        }
+        "visualContent": { "type": "ascii", "value": "┌─ Group Title ─┐\n│ [Content]     │\n└───────────────┘" }
       },
-      "sideB": [
-        "Group Box",
-        "Fieldset"
-      ],
-      "note": null
+      "sideB": [ "Group Box", "Fieldset" ],
+      "note": "In web development, the semantic HTML tags for this are `<fieldset>` for the container and `<legend>` for the title. Using them improves accessibility."
     },
     {
       "cardId": "ui_048",
       "sideA": {
         "text": "A view that displays hierarchical data in a nested, indented list.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-stream"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-stream" }
       },
-      "sideB": [
-        "Tree View",
-        "Tree Control"
-      ],
-      "note": null
+      "sideB": [ "Tree View", "Tree Control" ],
+      "note": "This component is commonly used for navigating file systems (like in VS Code's explorer), organizational charts, or nested categories."
     },
     {
       "cardId": "ui_049",
       "sideA": {
         "text": "The faded text within a form field that provides a hint or example of the required input.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-pen-fancy"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-pen-fancy" }
       },
-      "sideB": [
-        "Placeholder Text",
-        "Hint Text"
-      ],
-      "note": null
+      "sideB": [ "Placeholder Text", "Hint Text" ],
+      "note": "Best practice dictates that placeholder text should NOT be used as a replacement for a proper `<label>` tag. It disappears on input and can cause accessibility and usability issues."
     },
     {
       "cardId": "ui_050",
       "sideA": {
         "text": "An icon with three horizontal dots (...) that reveals a menu with secondary actions.",
-        "visualContent": {
-          "type": "icon",
-          "value": "fas fa-ellipsis-h"
-        }
+        "visualContent": { "type": "icon", "value": "fas fa-ellipsis-h" }
       },
-      "sideB": [
-        "Meatball Menu",
-        "Horizontal Ellipsis Menu",
-        "More Options Menu"
-      ],
+      "sideB": [ "Meatball Menu", "Horizontal Ellipsis Menu", "More Options Menu" ],
       "note": "The term 'Meatball Menu' is informal but widely recognized in the UX/UI community to differentiate it from the 'Kebab Menu' (vertical dots)."
     }
   ]

@@ -110,18 +110,44 @@ class FlippableCardScreen {
         }
 
         // --- Handle Improvement Note (if it exists) ---
-        const noteContainer = document.getElementById('note-content-container');
-        noteContainer.innerHTML = '';
-        noteContainer.classList.add('hidden');
-        if (this.cardData.note && typeof this.cardData.note === 'string' && this.cardData.note.trim() !== '') {
-            noteContainer.innerHTML = `
-                <div class="flex items-start gap-2">
-                    <i class="fas fa-info-circle text-blue-400 mt-1" title="Reviewer's Note"></i>
-                    <p class="text-sm text-gray-400 dark:text-gray-300 italic">${this.cardData.note}</p>
-                </div>
-            `;
-            noteContainer.classList.remove('hidden');
-        }
+           const noteContainer = document.getElementById('note-content-container');
+        noteContainer.innerHTML = '';
+        noteContainer.classList.add('hidden');
+        if (this.cardData.note && typeof this.cardData.note === 'string' && this.cardData.note.trim() !== '') {
+            // Split the note by double newline to handle multiple distinct topics.
+            const noteTopics = this.cardData.note.split('\n\n');
+            
+            // Map each topic to its own styled paragraph.
+            const formattedNotesHTML = noteTopics.map(topic => {
+                const trimmedTopic = topic.trim();
+                if (trimmedTopic) {
+                    // Each topic gets a "pro tip" icon and a class for styling.
+                    return `
+                        <div class="flex items-start gap-2">
+                            <span class="mt-1 text-blue-400" title="Pro-Tip">💡</span>
+                            <p class="text-sm text-gray-400 dark:text-gray-300 note-paragraph">${trimmedTopic}</p>
+                        </div>
+                    `;
+                }
+                return '';
+            }).join('');
+ if (formattedNotesHTML) {
+                // The container now receives a series of paragraphs directly.
+                const noteParagraphs = noteTopics.map(topic => {
+                    const trimmedTopic = topic.trim();
+                    if (trimmedTopic) {
+                        // Icon is removed, and a bottom margin is added to separate paragraphs.
+                        return `<p class="text-sm text-gray-400 dark:text-gray-300 note-paragraph mb-2 last:mb-0">${trimmedTopic}</p>`;
+                    }
+                    return '';
+                }).join('');
+                
+                if (noteParagraphs) {
+                    noteContainer.innerHTML = noteParagraphs;
+                    noteContainer.classList.remove('hidden');
+                }
+            }
+        }
     }
 
     /**
