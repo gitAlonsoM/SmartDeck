@@ -303,6 +303,407 @@
         ]
       },
       "note": "To 'wrap up' means to finish or conclude. 'Meeting minutes' are a written record of the key discussions, decisions, and action items from a meeting."
+    },
+     {
+      "cardId": "tech_convo_031",
+      "sideA": {
+        "conversation": [
+          { "text": "Can everyone see my screen properly?", "audioSrc": "public/data/audio/tech_convos/tech_convo_031_a.mp3" },
+          { "text": "Yes, it's coming through loud and clear.", "audioSrc": "public/data/audio/tech_convos/tech_convo_031_b.mp3" }
+        ]
+      },
+      "note": "'Coming through loud and clear' is a common phrase confirming that both audio and video are working well. It originated from radio communication."
+    },
+    {
+      "cardId": "tech_convo_032",
+      "sideA": {
+        "conversation": [
+          { "text": "Alright, let's kick things off. The main goal today is to review the sprint planning.", "audioSrc": "public/data/audio/tech_convos/tech_convo_032_a.mp3" },
+          { "text": "Sounds good. I have the board pulled up.", "audioSrc": "public/data/audio/tech_convos/tech_convo_032_b.mp3" }
+        ]
+      },
+      "note": "To 'kick things off' means to start the meeting. 'To have the board pulled up' means the person has opened the project management tool (like Jira or Trello) and is ready to view the tasks."
+    },
+    {
+      "cardId": "tech_convo_033",
+      "sideA": {
+        "conversation": [
+          { "text": "Does anyone have anything to add to the agenda?", "audioSrc": "public/data/audio/tech_convos/tech_convo_033_a.mp3" },
+          { "text": "Yes, I'd like to briefly discuss the feedback from the UX team.", "audioSrc": "public/data/audio/tech_convos/tech_convo_033_b.mp3" }
+        ]
+      },
+      "note": "The 'agenda' is the list of topics to be discussed. 'UX' stands for User Experience, which refers to the overall experience a person has when using a product."
+    },
+    {
+      "cardId": "tech_convo_034",
+      "sideA": {
+        "conversation": [
+          { "text": "I'll open the floor for discussion on the new architecture proposal.", "audioSrc": "public/data/audio/tech_convos/tech_convo_034_a.mp3" },
+          { "text": "My initial thought is that it looks solid, but what about scalability?", "audioSrc": "public/data/audio/tech_convos/tech_convo_034_b.mp3" }
+        ]
+      },
+      "note": "To 'open the floor' means to invite everyone to share their opinions. 'Scalability' is the ability of a system to handle a growing amount of work."
+    },
+    {
+      "cardId": "tech_convo_035",
+      "sideA": {
+        "conversation": [
+          { "text": "Could you elaborate on that point about the database query?", "audioSrc": "public/data/audio/tech_convos/tech_convo_035_a.mp3" },
+          { "text": "Sure. I'm concerned it might cause a bottleneck under heavy load.", "audioSrc": "public/data/audio/tech_convos/tech_convo_035_b.mp3" }
+        ]
+      },
+      "note": "To 'elaborate' means to provide more detail. A 'bottleneck' is a point of congestion in a system that slows overall performance. 'Heavy load' refers to a large number of users or requests."
+    },
+    {
+      "cardId": "tech_convo_036",
+      "sideA": {
+        "conversation": [
+          { "text": "Let's move on to the next topic: the release timeline.", "audioSrc": "public/data/audio/tech_convos/tech_convo_036_a.mp3" },
+          { "text": "Okay. Are we still on track for the end-of-month deployment?", "audioSrc": "public/data/audio/tech_convos/tech_convo_036_b.mp3" }
+        ]
+      },
+      "note": "'On track' means the project is progressing according to the schedule. A 'deployment' is the process of making software available for use."
+    },
+    {
+      "cardId": "tech_convo_037",
+      "sideA": {
+        "conversation": [
+          { "text": "I'd like to hand it over to Jane to discuss the test results.", "audioSrc": "public/data/audio/tech_convos/tech_convo_037_a.mp3" },
+          { "text": "Thanks, Tom. The automated tests passed, but we found some minor UI bugs.", "audioSrc": "public/data/audio/tech_convos/tech_convo_037_b.mp3" }
+        ]
+      },
+      "note": "To 'hand it over' is to pass the speaking turn to someone else. 'UI' stands for User Interface, the visual part of an application that the user interacts with."
+    },
+    {
+      "cardId": "tech_convo_038",
+      "sideA": {
+        "conversation": [
+          { "text": "To piggyback on what she said, we need to ensure the documentation is updated.", "audioSrc": "public/data/audio/tech_convos/tech_convo_038_a.mp3" },
+          { "text": "Good point. I'll create a ticket for that right now.", "audioSrc": "public/data/audio/tech_convos/tech_convo_038_b.mp3" }
+        ]
+      },
+      "note": "To 'piggyback' on a comment means to add a related thought to what someone else has just said. A 'ticket' is a task or issue tracked in a project management system."
+    },
+    {
+      "cardId": "tech_convo_039",
+      "sideA": {
+        "conversation": [
+          { "text": "I see your point, but have we considered the security implications?", "audioSrc": "public/data/audio/tech_convos/tech_convo_039_a.mp3" },
+          { "text": "That's a valid concern. We should schedule a security review.", "audioSrc": "public/data/audio/tech_convos/tech_convo_039_b.mp3" }
+        ]
+      },
+      "note": "'Security implications' are the potential security risks or vulnerabilities that could arise from a change. This is a crucial consideration in software development."
+    },
+    {
+      "cardId": "tech_convo_040",
+      "sideA": {
+        "conversation": [
+          { "text": "Can you give us a quick update on the project status?", "audioSrc": "public/data/audio/tech_convos/tech_convo_040_a.mp3" },
+          { "text": "We're currently blocked by the third-party API integration.", "audioSrc": "public/data/audio/tech_convos/tech_convo_040_b.mp3" }
+        ]
+      },
+      "note": "Being 'blocked' means a task cannot proceed because of an external dependency. 'API integration' is the process of making two or more applications communicate via their APIs (Application Programming Interfaces)."
+    },
+    {
+      "cardId": "tech_convo_041",
+      "sideA": {
+        "conversation": [
+          { "text": "We'll need to refactor this component to improve performance.", "audioSrc": "public/data/audio/tech_convos/tech_convo_041_a.mp3" },
+          { "text": "I agree. It's accumulating a lot of technical debt.", "audioSrc": "public/data/audio/tech_convos/tech_convo_041_b.mp3" }
+        ]
+      },
+      "note": "'Refactoring' is restructuring code to improve its design without changing its functionality. 'Technical debt' is the future cost of choosing a quick, easy solution instead of a better, more sustainable one."
+    },
+    {
+      "cardId": "tech_convo_042",
+      "sideA": {
+        "conversation": [
+          { "text": "My pull request is ready for review.", "audioSrc": "public/data/audio/tech_convos/tech_convo_042_a.mp3" },
+          { "text": "Great. I'll take a look at it after this call.", "audioSrc": "public/data/audio/tech_convos/tech_convo_042_b.mp3" }
+        ]
+      },
+      "note": "A 'Pull Request' (PR) is a formal way to propose changes to a codebase. It allows other developers to review and discuss the changes before they are merged."
+    },
+    {
+      "cardId": "tech_convo_043",
+      "sideA": {
+        "conversation": [
+          { "text": "What's the status of the deployment to the production environment?", "audioSrc": "public/data/audio/tech_convos/tech_convo_043_a.mp3" },
+          { "text": "The deployment is complete, and we're monitoring the logs for any errors.", "audioSrc": "public/data/audio/tech_convos/tech_convo_043_b.mp3" }
+        ]
+      },
+      "note": "The 'production environment' is the live server where real users interact with the application. 'Monitoring the logs' is the process of watching system records to ensure everything is working correctly after a change."
+    },
+    {
+      "cardId": "tech_convo_044",
+      "sideA": {
+        "conversation": [
+          { "text": "Is this new feature in scope for the current sprint?", "audioSrc": "public/data/audio/tech_convos/tech_convo_044_a.mp3" },
+          { "text": "No, that's considered scope creep. Let's add it to the backlog for future consideration.", "audioSrc": "public/data/audio/tech_convos/tech_convo_044_b.mp3" }
+        ]
+      },
+      "note": "'Scope creep' is when new, unplanned features are added to a project, often causing delays. The 'backlog' is a prioritized list of features and tasks for future development."
+    },
+    {
+      "cardId": "tech_convo_045",
+      "sideA": {
+        "conversation": [
+          { "text": "The API is returning a 403 Forbidden error.", "audioSrc": "public/data/audio/tech_convos/tech_convo_045_a.mp3" },
+          { "text": "That means we're authenticated, but don't have permission. Let's check the user roles.", "audioSrc": "public/data/audio/tech_convos/tech_convo_045_b.mp3" }
+        ]
+      },
+      "note": "A '403 Forbidden' HTTP status code indicates the server understood the request but refuses to authorize it. 'User roles' define what actions a specific user is allowed to perform."
+    },
+    {
+      "cardId": "tech_convo_046",
+      "sideA": {
+        "conversation": [
+          { "text": "This change might have an impact on the user experience.", "audioSrc": "public/data/audio/tech_convos/tech_convo_046_a.mp3" },
+          { "text": "Let's run it by the product manager before we proceed.", "audioSrc": "public/data/audio/tech_convos/tech_convo_046_b.mp3" }
+        ]
+      },
+      "note": "To 'run it by' someone means to show it to them for approval or feedback. The 'Product Manager' is responsible for the product's strategy and feature definition."
+    },
+    {
+      "cardId": "tech_convo_047",
+      "sideA": {
+        "conversation": [
+          { "text": "Sorry, I think there's a lag. My connection is unstable.", "audioSrc": "public/data/audio/tech_convos/tech_convo_047_a.mp3" },
+          { "text": "No worries. Try turning off your video, that might help.", "audioSrc": "public/data/audio/tech_convos/tech_convo_047_b.mp3" }
+        ]
+      },
+      "note": "A 'lag' is a noticeable delay between an action and its response, common with poor internet connections. Disabling video reduces bandwidth usage and can improve audio quality."
+    },
+    {
+      "cardId": "tech_convo_048",
+      "sideA": {
+        "conversation": [
+          { "text": "You're breaking up a bit, could you say that again?", "audioSrc": "public/data/audio/tech_convos/tech_convo_048_a.mp3" },
+          { "text": "Of course. I was saying we need to run a regression test.", "audioSrc": "public/data/audio/tech_convos/tech_convo_048_b.mp3" }
+        ]
+      },
+      "note": "'Breaking up' is when someone's audio is choppy and intermittent. 'Regression testing' ensures that new code changes haven't broken existing functionality."
+    },
+    {
+      "cardId": "tech_convo_049",
+      "sideA": {
+        "conversation": [
+          { "text": "I think you're on mute.", "audioSrc": "public/data/audio/tech_convos/tech_convo_049_a.mp3" },
+          { "text": "Whoops, sorry about that. My bad. Can you hear me now?", "audioSrc": "public/data/audio/tech_convos/tech_convo_049_b.mp3" }
+        ]
+      },
+      "note": "This is one of the most common phrases in online meetings. 'My bad' is a casual, informal way of admitting a mistake."
+    },
+    {
+      "cardId": "tech_convo_050",
+      "sideA": {
+        "conversation": [
+          { "text": "I'm having connection issues. I'll try rejoining the call.", "audioSrc": "public/data/audio/tech_convos/tech_convo_050_a.mp3" },
+          { "text": "Okay, we'll wait for you.", "audioSrc": "public/data/audio/tech_convos/tech_convo_050_b.mp3" }
+        ]
+      },
+      "note": "'Rejoining' (leaving and then entering the meeting again) is a common troubleshooting step that can resolve many connection or audio/video problems."
+    },
+    {
+      "cardId": "tech_convo_051",
+      "sideA": {
+        "conversation": [
+          { "text": "To wrap up, we've decided to move forward with the cloud migration strategy.", "audioSrc": "public/data/audio/tech_convos/tech_convo_051_a.mp3" },
+          { "text": "Great. What are the immediate action items?", "audioSrc": "public/data/audio/tech_convos/tech_convo_051_b.mp3" }
+        ]
+      },
+      "note": "To 'wrap up' means to conclude the meeting. 'Action items' are the specific tasks that need to be completed as a result of the meeting."
+    },
+    {
+      "cardId": "tech_convo_052",
+      "sideA": {
+        "conversation": [
+          { "text": "Let's summarize the key takeaways.", "audioSrc": "public/data/audio/tech_convos/tech_convo_052_a.mp3" },
+          { "text": "The main takeaway is that we need more resources for the QA team.", "audioSrc": "public/data/audio/tech_convos/tech_convo_052_b.mp3" }
+        ]
+      },
+      "note": "'Key takeaways' are the most important points or decisions from the meeting. 'QA' stands for Quality Assurance, the team responsible for testing."
+    },
+    {
+      "cardId": "tech_convo_053",
+      "sideA": {
+        "conversation": [
+          { "text": "What are the next steps?", "audioSrc": "public/data/audio/tech_convos/tech_convo_053_a.mp3" },
+          { "text": "I will draft the project proposal and send it out for review by EOD.", "audioSrc": "public/data/audio/tech_convos/tech_convo_053_b.mp3" }
+        ]
+      },
+      "note": "'Next steps' is another way of asking for the action items. 'EOD' stands for 'End of Day', a common business acronym meaning by the close of business hours."
+    },
+    {
+      "cardId": "tech_convo_054",
+      "sideA": {
+        "conversation": [
+          { "text": "Who is the point person for this action item?", "audioSrc": "public/data/audio/tech_convos/tech_convo_054_a.mp3" },
+          { "text": "I'll take point on this. I'll follow up with the vendor.", "audioSrc": "public/data/audio/tech_convos/tech_convo_054_b.mp3" }
+        ]
+      },
+      "note": "The 'point person' (or 'point of contact') is the individual responsible for leading or coordinating a specific task and communicating its status."
+    },
+    {
+      "cardId": "tech_convo_055",
+      "sideA": {
+        "conversation": [
+          { "text": "I'll send out a recap with the meeting notes.", "audioSrc": "public/data/audio/tech_convos/tech_convo_055_a.mp3" },
+          { "text": "Thanks, that would be great.", "audioSrc": "public/data/audio/tech_convos/tech_convo_055_b.mp3" }
+        ]
+      },
+      "note": "A 'recap' is a summary. Sending one after a meeting ensures everyone is aligned on the decisions and action items, even those who couldn't attend."
+    },
+    {
+      "cardId": "tech_convo_056",
+      "sideA": {
+        "conversation": [
+          { "text": "Before we end, are we all on the same page?", "audioSrc": "public/data/audio/tech_convos/tech_convo_056_a.mp3" },
+          { "text": "Yes, the path forward is clear. Thanks for clarifying.", "audioSrc": "public/data/audio/tech_convos/tech_convo_056_b.mp3" }
+        ]
+      },
+      "note": "To be 'on the same page' is an idiom that means to have a shared understanding or agreement on a topic."
+    },
+    {
+      "cardId": "tech_convo_057",
+      "sideA": {
+        "conversation": [
+          { "text": "If there's nothing else, we can end here. Thanks for your input, everyone.", "audioSrc": "public/data/audio/tech_convos/tech_convo_057_a.mp3" },
+          { "text": "Thank you! Have a great rest of your day.", "audioSrc": "public/data/audio/tech_convos/tech_convo_057_b.mp3" }
+        ]
+      },
+      "note": "A polite and standard way to conclude a meeting, acknowledging everyone's contribution and ending on a positive note."
+    },
+    {
+      "cardId": "tech_convo_058",
+      "sideA": {
+        "conversation": [
+          { "text": "Let's do a quick temperature check. How does everyone feel about this deadline?", "audioSrc": "public/data/audio/tech_convos/tech_convo_058_a.mp3" },
+          { "text": "It feels a bit aggressive, but doable if we de-scope the 'nice-to-have' features.", "audioSrc": "public/data/audio/tech_convos/tech_convo_058_b.mp3" }
+        ]
+      },
+      "note": "A 'temperature check' is a way to gauge the general opinion or feeling of a group. 'De-scope' means to remove features from the project's current scope. 'Nice-to-have' refers to non-essential features."
+    },
+    {
+      "cardId": "tech_convo_059",
+      "sideA": {
+        "conversation": [
+          { "text": "The build is failing on the CI server. Can someone take a look?", "audioSrc": "public/data/audio/tech_convos/tech_convo_059_a.mp3" },
+          { "text": "On it. I'm checking the logs to see what broke.", "audioSrc": "public/data/audio/tech_convos/tech_convo_059_b.mp3" }
+        ]
+      },
+      "note": "The 'CI' (Continuous Integration) server automatically builds and tests code when changes are pushed. 'On it' is a concise way of saying 'I am starting to work on it now.'"
+    },
+    {
+      "cardId": "tech_convo_060",
+      "sideA": {
+        "conversation": [
+          { "text": "Let's park that idea for now and add it to the 'icebox'.", "audioSrc": "public/data/audio/tech_convos/tech_convo_060_a.mp3" },
+          { "text": "Agreed. It's a good idea, but not a priority for this quarter.", "audioSrc": "public/data/audio/tech_convos/tech_convo_060_b.mp3" }
+        ]
+      },
+      "note": "To 'park' an idea is to set it aside to be discussed later. The 'icebox' is a term used in Agile for a list of tasks or ideas that are not currently prioritized but may be in the future."
+    },
+    {
+      "cardId": "tech_convo_061",
+      "sideA": {
+        "conversation": [
+          { "text": "I'm having trouble replicating the bug on my local environment.", "audioSrc": "public/data/audio/tech_convos/tech_convo_061_a.mp3" },
+          { "text": "Can you share the exact steps to reproduce? Maybe I can help.", "audioSrc": "public/data/audio/tech_convos/tech_convo_061_b.mp3" }
+        ]
+      },
+      "note": "'Replicating a bug' means successfully recreating an error. A 'local environment' is the developer's own computer setup. 'Steps to reproduce' are crucial for debugging."
+    },
+    {
+      "cardId": "tech_convo_062",
+      "sideA": {
+        "conversation": [
+          { "text": "We need to do a root cause analysis for the latest outage.", "audioSrc": "public/data/audio/tech_convos/tech_convo_062_a.mp3" },
+          { "text": "Right. I'll schedule a post-mortem for tomorrow morning.", "audioSrc": "public/data/audio/tech_convos/tech_convo_062_b.mp3" }
+        ]
+      },
+      "note": "A 'Root Cause Analysis' (RCA) is a method to find the fundamental reason for a problem. A 'post-mortem' is a meeting to analyze an incident after it has occurred."
+    },
+    {
+      "cardId": "tech_convo_063",
+      "sideA": {
+        "conversation": [
+          { "text": "Let's timebox this discussion to 10 minutes.", "audioSrc": "public/data/audio/tech_convos/tech_convo_063_a.mp3" },
+          { "text": "Good call. We need to make sure we cover all the agenda items.", "audioSrc": "public/data/audio/tech_convos/tech_convo_063_b.mp3" }
+        ]
+      },
+      "note": "To 'timebox' means to allocate a fixed, maximum unit of time for an activity. It's a technique to keep meetings focused and on schedule. 'Good call' is an idiom for 'good decision'."
+    },
+    {
+      "cardId": "tech_convo_064",
+      "sideA": {
+        "conversation": [
+          { "text": "What's your bandwidth like for the next sprint?", "audioSrc": "public/data/audio/tech_convos/tech_convo_064_a.mp3" },
+          { "text": "I'm pretty swamped, but I can probably take on one medium-sized task.", "audioSrc": "public/data/audio/tech_convos/tech_convo_064_b.mp3" }
+        ]
+      },
+      "note": "'Bandwidth' refers to a person's capacity to take on work. 'Swamped' means being overwhelmed with too much work."
+    },
+    {
+      "cardId": "tech_convo_065",
+      "sideA": {
+        "conversation": [
+          { "text": "This ticket has a dependency on the backend team.", "audioSrc": "public/data/audio/tech_convos/tech_convo_065_a.mp3" },
+          { "text": "I've already pinged their lead. I'm waiting for an update.", "audioSrc": "public/data/audio/tech_convos/tech_convo_065_b.mp3" }
+        ]
+      },
+      "note": "A 'dependency' is when a task relies on another task or team to be completed first. To 'ping' someone means to send them a quick message, usually via a chat app like Slack or Teams."
+    },
+    {
+      "cardId": "tech_convo_066",
+      "sideA": {
+        "conversation": [
+          { "text": "I've pushed a hotfix for the critical bug in production.", "audioSrc": "public/data/audio/tech_convos/tech_convo_066_a.mp3" },
+          { "text": "Thanks for the quick turnaround on that!", "audioSrc": "public/data/audio/tech_convos/tech_convo_066_b.mp3" }
+        ]
+      },
+      "note": "A 'hotfix' is a critical code patch applied to a live production environment to fix a major bug. 'Quick turnaround' is praise for completing a task very quickly."
+    },
+    {
+      "cardId": "tech_convo_067",
+      "sideA": {
+        "conversation": [
+          { "text": "Can we get a quick sanity check on these numbers?", "audioSrc": "public/data/audio/tech_convos/tech_convo_067_a.mp3" },
+          { "text": "Sure. At a glance, they look correct, but I'll double-check the formula.", "audioSrc": "public/data/audio/tech_convos/tech_convo_067_b.mp3" }
+        ]
+      },
+      "note": "A 'sanity check' is a brief, high-level review to see if something makes sense on the surface. 'At a glance' means from a quick look."
+    },
+    {
+      "cardId": "tech_convo_068",
+      "sideA": {
+        "conversation": [
+          { "text": "Let's take this discussion offline, it's too in-depth for this meeting.", "audioSrc": "public/data/audio/tech_convos/tech_convo_068_a.mp3" },
+          { "text": "Good idea. I'll set up a follow-up with the relevant stakeholders.", "audioSrc": "public/data/audio/tech_convos/tech_convo_068_b.mp3" }
+        ]
+      },
+      "note": "To 'take something offline' means to discuss it outside of the current meeting. 'Stakeholders' are people who have an interest or concern in the project."
+    },
+    {
+      "cardId": "tech_convo_069",
+      "sideA": {
+        "conversation": [
+          { "text": "We need to align on the technical approach before coding.", "audioSrc": "public/data/audio/tech_convos/tech_convo_069_a.mp3" },
+          { "text": "Agreed. Let's schedule a whiteboarding session to map it out.", "audioSrc": "public/data/audio/tech_convos/tech_convo_069_b.mp3" }
+        ]
+      },
+      "note": "To 'align' means to come to a common understanding and agreement. A 'whiteboarding session' is a collaborative meeting to visually brainstorm and plan, often using a digital whiteboard tool."
+    },
+    {
+      "cardId": "tech_convo_070",
+      "sideA": {
+        "conversation": [
+          { "text": "I'll sync up with you later today to go over the final details.", "audioSrc": "public/data/audio/tech_convos/tech_convo_070_a.mp3" },
+          { "text": "Sounds like a plan. Just send me a message when you're free.", "audioSrc": "public/data/audio/tech_convos/tech_convo_070_b.mp3" }
+        ]
+      },
+      "note": "To 'sync up' means to meet or talk to someone to get the latest information and ensure you are both aligned. 'Sounds like a plan' is a common, positive agreement to a suggestion."
     }
   ]
 }
+ 
