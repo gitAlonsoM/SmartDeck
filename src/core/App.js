@@ -42,11 +42,12 @@ class App {
       const aiModalContainer = document.getElementById('ai-modal-container'); // This line was missing
        const notificationModalContainer = document.getElementById('notification-modal-container');
         const improvementModalContainer = document.getElementById('improvement-modal-container');
+        const confirmationModalContainer = document.getElementById('confirmation-modal-container'); // Get the new container
 
-         // Ensure containers exist before proceeding
-         if (!aiModalContainer || !notificationModalContainer || !improvementModalContainer) { 
-             throw new Error("Fatal Error: Modal container(s) not found."); 
-         }
+        // Ensure containers exist before proceeding
+        if (!aiModalContainer || !notificationModalContainer || !improvementModalContainer || !confirmationModalContainer) { 
+            throw new Error("Fatal Error: Modal container(s) not found."); 
+        }
          
          // Initialize each modal with its own dedicated container
          this.aiDeckModal = new AiDeckModal(aiModalContainer, (formData) => this.handleCreateDeck(formData));
@@ -65,7 +66,49 @@ class App {
         
         await this.improvementModal.init();
 
+         // Initialize the new confirmation modal
+        this.confirmationModal = new ConfirmationModal(confirmationModalContainer);
+        await this.confirmationModal.init();
+        
+
         console.log("DEBUG: [App] setupComponents -> All components initialized.");
+    }
+
+     /**
+     * Handles the request to delete a user-created deck.
+     * @param {string} deckId The ID of the deck to delete.
+     */
+    async handleDeleteDeckRequest(deckId) {
+        if (!deckId) return;
+        const deckToDelete = this.state.allDecks[deckId];
+        if (!deckToDelete || !deckToDelete.isAiGenerated) {
+            console.warn(`[App] handleDeleteDeckRequest -> Attempted to delete a non-AI deck or invalid deck ID: ${deckId}`);
+            return;
+        }
+
+        console.log(`DEBUG: [App] handleDeleteDeckRequest -> Request to delete deck: ${deckId}`);
+        const title = `Delete "${deckToDelete.name}"?`;
+        const message = "Are you sure you want to permanently delete this deck? All of its progress and data will be lost. This action cannot be undone.";
+        
+        const confirmed = await this.confirmationModal.show(title, message);
+
+        if (confirmed) {
+            console.log(`DEBUG: [App] handleDeleteDeckRequest -> User confirmed deletion for deck: ${deckId}`);
+            StorageService.deleteDeck(deckId);
+            
+            // Show a success notification
+            await this.notificationModal.show(
+                'Deck Deleted', 
+                `The deck "${deckToDelete.name}" has been successfully deleted.`,
+                { icon: 'fa-solid fa-trash-can', color: 'text-gray-500', bgColor: 'bg-gray-100 dark:bg-gray-700' }
+            );
+
+            // Reload decks from storage and navigate back to the list
+            await this.loadDecks();
+            this.handleGoBackToDecks();
+        } else {
+            console.log(`DEBUG: [App] handleDeleteDeckRequest -> User cancelled deletion for deck: ${deckId}`);
+        }
     }
 
     async loadDecks() {
@@ -102,14 +145,15 @@ class App {
             case 'deckDetail':
                 if (!this.deckDetailComponent) { 
                 this.deckDetailComponent = new DeckDetailScreen(
-                    this.appContainer, 
-                    () => this.handleStartQuiz(), 
-                    () => this.handleGoBackToDecks(),
-                   () => this.handleResetDeck(),
-                   (cardId) => this.handleUnignoreCard(cardId),
-                    (cardId) => this.handleUnmarkCardForImprovement(cardId), // Pass the new unmark handler
-                    () => this.handleExportForImprovement()
-                ); 
+                        this.appContainer, 
+                        () => this.handleStartQuiz(), 
+                        () => this.handleGoBackToDecks(),
+                        () => this.handleResetDeck(),
+                        (cardId) => this.handleUnignoreCard(cardId),
+                        (cardId) => this.handleUnmarkCardForImprovement(cardId),
+                        () => this.handleExportForImprovement(),
+                        (deckId) => this.handleDeleteDeckRequest(deckId) // Pass the new delete handler
+                    ); 
             }
               const selectedDeck = this.state.allDecks[this.state.currentDeckId];
                   const deckProgressData = StorageService.loadDeckProgress(this.state.currentDeckId);

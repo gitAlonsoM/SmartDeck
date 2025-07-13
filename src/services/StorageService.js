@@ -211,6 +211,35 @@ static STORAGE_KEY_DECK_PROGRESS_PREFIX = 'smart-decks-v3-deck-progress-';
         }
     }
 
+     /**
+     * Deletes a user-created deck and all its associated progress data from localStorage.
+     * @param {string} deckId The ID of the deck to delete.
+     */
+    static deleteDeck(deckId) {
+        if (!deckId) return;
+        console.log(`DEBUG: [StorageService] deleteDeck -> Attempting to delete deck ${deckId} and all associated data.`);
+        
+        try {
+            // 1. Delete the deck itself from the main decks object
+            const userDecks = this.loadDecks();
+            if (userDecks[deckId]) {
+                delete userDecks[deckId];
+                this.saveDecks(userDecks);
+                console.log(`DEBUG: [StorageService] deleteDeck -> Removed deck object for ${deckId}.`);
+            }
+
+            // 2. Delete the deck's learning progress
+            localStorage.removeItem(`${this.STORAGE_KEY_DECK_PROGRESS_PREFIX}${deckId}`);
+            console.log(`DEBUG: [StorageService] deleteDeck -> Removed learning progress for ${deckId}.`);
+
+            // 3. Delete the deck's improvement data
+            localStorage.removeItem(`${this.STORAGE_KEY_IMPROVEMENT_PREFIX}${deckId}`);
+            console.log(`DEBUG: [StorageService] deleteDeck -> Removed improvement data for ${deckId}.`);
+
+        } catch (error) {
+            console.error(`DEBUG: [StorageService] deleteDeck -> Error deleting deck ${deckId}.`, error);
+        }
+    }
 
       /**
      * Saves the user's preferred TTS voice name to localStorage.

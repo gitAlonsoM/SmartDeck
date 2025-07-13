@@ -128,22 +128,28 @@ class FlippableCardScreen {
      * Plays a sequence of audio elements one after the other.
      * @param {number} index The index of the audio element to start playing from.
      */
-    _playConversation(index = 0) {
+   _playConversation(index = 0) {
         const player = document.getElementById(`audio-part-${index}`);
         if (!player) {
             console.log("DEBUG: [FlippableCardScreen] Conversation autoplay finished.");
             return; // End of conversation
         }
 
-        // When the current audio finishes, play the next one
-        player.onended = () => {
+        // This function will be called when an audio ends.
+        const playNext = () => {
+            // CRITICAL: Deregister the listener immediately to prevent it from firing again on manual playback.
+            player.onended = null; 
             this._playConversation(index + 1);
         };
 
-        // Play the current audio
+        // Assign the event listener for the initial autoplay chain.
+        player.onended = playNext;
+
+        // Attempt to play the current audio
         player.play().catch(e => {
             console.warn(`DEBUG: [FlippableCardScreen] Autoplay for part ${index} was prevented.`, e.message);
-            // If autoplay fails, stop the chain. The user can play manually.
+            // If autoplay fails, we must also deregister the listener to stop the broken chain.
+            player.onended = null;
         });
     }
 

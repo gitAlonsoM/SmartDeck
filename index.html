@@ -1,5 +1,4 @@
 <!-- index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,12 +15,13 @@
 </head>
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
 
-    <div id="app-container" class="w-full max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
-    </div>
-    
     <div id="ai-modal-container"></div>
     <div id="notification-modal-container"></div>
     <div id="improvement-modal-container"></div>
+    <div id="confirmation-modal-container"></div>
+    
+    <div id="app-container" class="w-full max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
+    </div>
     
     <script src="src/utils/ComponentLoader.js" defer></script>
     <script src="src/services/StorageService.js" defer></script>
@@ -38,9 +38,10 @@
     <script src="src/components/FlippableCardScreen/FlippableCardScreen.js" defer></script>
     <script src="src/components/NotificationModal/NotificationModal.js" defer></script>
     <script src="src/components/ImprovementModal/ImprovementModal.js" defer></script>
+    <script src="src/components/ConfirmationModal/ConfirmationModal.js" defer></script>
     
     <script src="src/core/App.js" defer></script>
-
+ 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
 </body>

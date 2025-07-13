@@ -1,5 +1,4 @@
 /* src\components\DeckDetailScreen\DeckDetailScreen.js */
-
 class DeckDetailScreen {
     /**
      * @param {HTMLElement} container The DOM element where the component will be rendered.
@@ -7,16 +6,18 @@ class DeckDetailScreen {
      * @param {function} onGoBack Callback to return to the deck list.
      * @param {function} onReset Callback to reset deck progress.
      * @param {function} onUnignoreCard Callback to restore an ignored card.
+     * @param {function} onUnmarkCardForImprovement Callback to remove a card from the improvement list.
      * @param {function} onExportForImprovement Callback to handle the export of marked cards.
      */
-    constructor(container, onStartQuiz, onGoBack, onReset, onUnignoreCard, onUnmarkCardForImprovement, onExportForImprovement) {
+  constructor(container, onStartQuiz, onGoBack, onReset, onUnignoreCard, onUnmarkCardForImprovement, onExportForImprovement, onDeleteDeck) {
         this.container = container;
         this.onStartQuiz = onStartQuiz;
         this.onGoBack = onGoBack;
         this.onResetDeck = onReset;
         this.onUnignoreCard = onUnignoreCard;
-        this.onUnmarkCardForImprovement = onUnmarkCardForImprovement; // Assign the new callback
+        this.onUnmarkCardForImprovement = onUnmarkCardForImprovement;
         this.onExportForImprovement = onExportForImprovement;
+        this.onDeleteDeck = onDeleteDeck; // Store the new callback
         this.deck = null; // Store the current deck data for internal use
         console.log("DEBUG: [DeckDetailScreen] constructor -> Component instantiated.");
     }
@@ -37,14 +38,12 @@ class DeckDetailScreen {
             this.container.innerHTML = html;
             this.setupEventListeners(); // Setup listeners only once after initial render
         }
-  // Populate all dynamic sections of the component
+        
+        // Populate all dynamic sections of the component
         this._populateDeckInfo(deck, progressData);
         this._populateProgressStats(deck.cards.length, progressData);
         this._populateIgnoredCards(deck.cards, progressData.ignored);
         this._populateImprovementList(deck.cards, improvementData);
-
-        // Attach all event listeners
-        this.setupEventListeners();
     }
 
     /**
@@ -68,7 +67,17 @@ class DeckDetailScreen {
             document.getElementById('total-progress-text').textContent = `Congratulations! You have mastered all ${totalCount} cards.`;
             resetDeckBtn.className += ' font-bold p-3 bg-red-100 dark:bg-red-900/50 rounded-lg';
         }
+
+         // Conditionally show the delete button for AI-generated decks
+        const deleteBtn = document.getElementById('delete-deck-btn');
+        if (deck.isAiGenerated) {
+            deleteBtn.classList.remove('hidden');
+        } else {
+            deleteBtn.classList.add('hidden');
+        }
     }
+
+
 
     /**
      * Populates the main progress stat counters (Learned, To Review, New).
@@ -87,6 +96,41 @@ class DeckDetailScreen {
             <div class="flex-1"><p class="text-4xl font-bold text-amber-500">${reviewCount}</p><p class="text-sm text-gray-500 dark:text-gray-400">To Review</p></div>
             <div class="flex-1"><p class="text-4xl font-bold text-gray-400">${Math.max(0, unseenCount)}</p><p class="text-sm text-gray-500 dark:text-gray-400">New</p></div>
         `;
+    }
+
+    /**
+     * Extracts a displayable text string from any card type.
+     * @param {object} card The card object.
+     * @returns {string} A displayable text for the card.
+     */
+    _getCardDisplayText(card) {
+        if (!card) return 'Invalid Card';
+
+        // 1. Standard quiz card with a 'question' property
+        if (card.question) return card.question;
+
+        // 2. Flippable cards (text, visual, or conversation)
+        if (card.sideA) {
+            // 2a. Simple text flippable card
+            if (typeof card.sideA === 'string') return card.sideA;
+
+            if (typeof card.sideA === 'object') {
+                // 2b. Conversation card: return the first line of the conversation
+                if (card.sideA.conversation && card.sideA.conversation.length > 0) {
+                    return card.sideA.conversation[0].text;
+                }
+                // 2c. Standard text/visual card with a 'text' property
+                if (card.sideA.text) return card.sideA.text;
+            }
+        }
+
+        // 3. Fallback for audio-only cards (no text on Side A)
+        // Per user request, use the first line of the answer on Side B as a fallback.
+        if (card.sideB && card.sideB.length > 0) {
+            return card.sideB[0];
+        }
+
+        return 'Card content not available'; // Final safety net
     }
 
     /**
@@ -109,7 +153,7 @@ class DeckDetailScreen {
         ignoredSet.forEach(cardId => {
             const card = cardMap.get(cardId);
             if (card) {
-                const cardText = (card.sideA && typeof card.sideA === 'object') ? card.sideA.text : (card.question || card.sideA);
+                const cardText = this._getCardDisplayText(card); // Use the new helper function
                 const item = document.createElement('div');
                 item.className = 'flex justify-between items-center bg-gray-50 dark:bg-gray-700/50 p-2 rounded-md';
                 item.innerHTML = `
@@ -146,7 +190,7 @@ class DeckDetailScreen {
             const card = cardMap.get(cardId);
             const review = improvementData[cardId];
             if (card) {
-                const cardText = (card.sideA && typeof card.sideA === 'object') ? card.sideA.text : (card.question || card.sideA);
+                const cardText = this._getCardDisplayText(card); // Use the new helper function
                 const item = document.createElement('div');
                 item.className = 'p-3 bg-gray-50 dark:bg-gray-700/50 rounded-md';
                 item.innerHTML = `
@@ -173,20 +217,22 @@ class DeckDetailScreen {
         document.getElementById('start-quiz-btn').addEventListener('click', () => this.onStartQuiz());
         document.getElementById('back-to-decks-btn').addEventListener('click', () => this.onGoBack());
         document.getElementById('reset-deck-btn').addEventListener('click', () => this.onResetDeck());
+        document.getElementById('delete-deck-btn').addEventListener('click', () => this.onDeleteDeck(this.deck.id));
 
-       this.container.addEventListener('click', (event) => {
-            if (event.target.classList.contains('restore-card-btn')) {
-                const cardId = event.target.dataset.cardId;
+        this.container.addEventListener('click', (event) => {
+            const restoreButton = event.target.closest('.restore-card-btn');
+            if (restoreButton) {
+                const cardId = restoreButton.dataset.cardId;
                 this.onUnignoreCard(cardId);
             }
-            if (event.target.classList.contains('unmark-card-btn')) {
-                const cardId = event.target.dataset.cardId;
-                // This callback will be passed from App.js
+            
+            const unmarkButton = event.target.closest('.unmark-card-btn');
+            if (unmarkButton) {
+                const cardId = unmarkButton.dataset.cardId;
                 this.onUnmarkCardForImprovement(cardId);
             }
         });
 
-        // Add event listener for the export button if it exists
         const exportBtn = document.getElementById('export-improve-btn');
         if (exportBtn) {
             exportBtn.addEventListener('click', () => this.onExportForImprovement());
