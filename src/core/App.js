@@ -115,7 +115,7 @@ class App {
          console.log("DEBUG: [App] loadDecks -> Loading all decks.");
         let staticDecks = {};
         try {
-            const deckFiles = ['plsql_deck.json', 'shell_deck.json', 'ios_android.json', 'http_rest_deep_dive.json', 'english_phrasal_verbs.json','it_commands_deck_01.json', 'ui_elements_deck.json', 'git_deck.json', 'tech_online_meetings_deck.json', 'tech_conversation_deck_01.json'];
+            const deckFiles = ['plsql_deck.json', 'shell_deck.json', 'ios_android.json', 'http_rest_deep_dive.json', 'english_phrasal_verbs.json','it_commands_deck_01.json', 'ui_elements_deck.json', 'git_deck.json', 'tech_online_meetings_deck.json', 'tech_conversation_deck_01.json', 'technical_project_plan.json'];
             // Modify the fetch process to attach the filename to each loaded deck object.
             const fetchPromises = deckFiles.map(file => 
                 fetch(`public/data/${file}`)
