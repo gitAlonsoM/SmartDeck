@@ -1003,6 +1003,506 @@
         ]
       },
       "note": "'Wrap up' (Phrasal Verb) means to conclude or finish something, like a meeting.\n\nDefining clear 'action items' (Noun) is the most important outcome of any project meeting."
-    }
+    },
+    {
+    "cardId": "tpp_101",
+    "sideA": {
+      "conversation": [
+        { "text": "The customer selected 'Keg Foamy' as the Return Reason.", "audioSrc": "public/data/audio/technical_project_plan/tpp_101_a.mp3" },
+        { "text": "I see. Let's check their Order History to see if this is a recurring issue with that Account.", "audioSrc": "public/data/audio/technical_project_plan/tpp_101_b.mp3" }
+      ]
+    },
+    "note": "'Return Reason' (Noun) is the specific cause a customer gives for returning an item.\n\n'Keg Foamy' (Adjective Phrase) is a return reason indicating that a keg dispenses beer with too much foam.\n\n'Order History' (Noun) is a record of a customer's past purchases."
+  },
+  {
+    "cardId": "tpp_102",
+    "sideA": {
+      "conversation": [
+        { "text": "On the Checkout page, the tax for British Columbia isn't showing up.", "audioSrc": "public/data/audio/technical_project_plan/tpp_102_a.mp3" },
+        { "text": "Right, that's a known bug: 'Taxes doesn't show value'. We need to make sure the CA_PST is applied correctly.", "audioSrc": "public/data/audio/technical_project_plan/tpp_102_b.mp3" }
+      ]
+    },
+    "note": "'Checkout' (Noun) is the final phase of an online purchase, where payment and delivery details are confirmed.\n\n'CA_PST' (Provincial Sales Tax) is a sales tax applied by a specific province in Canada."
+  },
+  {
+    "cardId": "tpp_103",
+    "sideA": {
+      "conversation": [
+        { "text": "CSRs are reporting that the 'Add to Cart' button is unresponsive on some LTO items.", "audioSrc": "public/data/audio/technical_project_plan/tpp_103_a.mp3" },
+        { "text": "I'll investigate. It might be an issue with how the Availability status is being handled for limited offers.", "audioSrc": "public/data/audio/technical_project_plan/tpp_103_b.mp3" }
+      ]
+    },
+    "note": "'Add to Cart' (Verb Phrase) is the action of selecting a product to be purchased.\n\n'LTO' (Limited Time Offer) (Noun) is a product that is for sale for a short period only.\n\n'Availability' (Noun) is a status that indicates if a product is in stock and can be sold."
+  },
+  {
+    "cardId": "tpp_104",
+    "sideA": {
+      "conversation": [
+        { "text": "I can't find the order. Do you have the PO Number?", "audioSrc": "public/data/audio/technical_project_plan/tpp_104_a.mp3" },
+        { "text": "Yes, it's 5507. It's for the 'REAL CANADIAN LIQUOR STORE' account.", "audioSrc": "public/data/audio/technical_project_plan/tpp_104_b.mp3" }
+      ]
+    },
+    "note": "'PO Number' (Purchase Order Number) (Noun) is a unique number assigned to a purchase order form, used to track orders.\n\n'Account' (Noun) is a record of a specific customer or business entity."
+  },
+  {
+    "cardId": "tpp_105",
+    "sideA": {
+      "conversation": [
+        { "text": "The return reason is 'Stale dated', but the system is logging it as 'Breakage'.", "audioSrc": "public/data/audio/technical_project_plan/tpp_105_a.mp3" },
+        { "text": "Okay, that's a mapping error. I'll create a ticket to fix the logic for Return Items.", "audioSrc": "public/data/audio/technical_project_plan/tpp_105_b.mp3" }
+      ]
+    },
+    "note": "'Stale dated' (Adjective Phrase) is a reason for return, meaning the product is past its expiration date.\n\n'Breakage' (Noun) is a return reason for items that were physically broken.\n\n'Return Items' (Noun Phrase) refers to the feature or process for sending products back."
+  },
+  {
+    "cardId": "tpp_106",
+    "sideA": {
+      "conversation": [
+        { "text": "The 'Select All' checkbox isn't working on the Invoices screen.", "audioSrc": "public/data/audio/technical_project_plan/tpp_106_a.mp3" },
+        { "text": "Is 'Select None' working? Let's test the Radio buttons on that page as well.", "audioSrc": "public/data/audio/technical_project_plan/tpp_106_b.mp3" }
+      ]
+    },
+    "note": "'Select All' (Verb Phrase) is an option to choose every item in a list.\n\n'Invoice(s)' (Noun) are the billing documents for orders.\n\n'Radio button' (Noun) is a UI element that allows a user to choose only one option from a set."
+  },
+  {
+    "cardId": "tpp_107",
+    "sideA": {
+      "conversation": [
+        { "text": "The customer wants to know the Deposit amount for a keg of Sapporo.", "audioSrc": "public/data/audio/technical_project_plan/tpp_107_a.mp3" },
+        { "text": "Check the Product details page. The Deposit should be listed next to the Price.", "audioSrc": "public/data/audio/technical_project_plan/tpp_107_b.mp3" }
+      ]
+    },
+    "note": "'Deposit' (Noun) is a refundable security payment required for certain items, like kegs.\n\n'Sapporo' (Noun) is a specific brand of beer.\n\n'Price' (Noun) is the cost of an individual item."
+  },
+  {
+    "cardId": "tpp_108",
+    "sideA": {
+      "conversation": [
+        { "text": "The search function is too slow when you don't 'Enter CSPC Number'.", "audioSrc": "public/data/audio/technical_project_plan/tpp_108_a.mp3" },
+        { "text": "We need to optimize the query. Searching by 'Product' name is taking too long.", "audioSrc": "public/data/audio/technical_project_plan/tpp_108_b.mp3" }
+      ]
+    },
+    "note": "'CSPC (Number)' (Noun) is a unique product identification code, likely the Canadian Standard Product Code.\n\n'Product(s)' (Noun) refers to the goods available for sale."
+  },
+  {
+    "cardId": "tpp_109",
+    "sideA": {
+      "conversation": [
+        { "text": "This ticket is for a 'Defective Keg'. What are the steps to reproduce?", "audioSrc": "public/data/audio/technical_project_plan/tpp_109_a.mp3" },
+        { "text": "The user reported that after adding it to the cart and proceeding to checkout, the system crashed.", "audioSrc": "public/data/audio/technical_project_plan/tpp_109_b.mp3" }
+      ]
+    },
+    "note": "'Defective Keg' (Noun Phrase) is a return reason for a keg that is faulty or does not work correctly.\n\n'Steps to reproduce' (Noun Phrase) are the instructions needed to reliably trigger a specific bug or issue."
+  },
+  {
+    "cardId": "tpp_110",
+    "sideA": {
+      "conversation": [
+        { "text": "In the Order detail view, the 'Shipping and Handling' fee is missing.", "audioSrc": "public/data/audio/technical_project_plan/tpp_110_a.mp3" },
+        { "text": "I'll check. The 'Cost of Service' is also not appearing. It seems the whole fee section is bugged.", "audioSrc": "public/data/audio/technical_project_plan/tpp_110_b.mp3" }
+      ]
+    },
+    "note": "'Shipping and Handling' (Noun) is a fee for the cost of processing and delivering an order.\n\n'Order detail' (Noun Phrase) is the screen that shows all the information for a single order.\n\n'Cost of Service' (Noun) is an additional fee for services provided with a purchase."
+  },
+  {
+    "cardId": "tpp_111",
+    "sideA": {
+      "conversation": [
+        { "text": "The 'Keg Broken Seal' return reason isn't available for selection in Quebec.", "audioSrc": "public/data/audio/technical_project_plan/tpp_111_a.mp3" },
+        { "text": "That's by design. The business rules for QC are different. Check the 'Preferences' for that region.", "audioSrc": "public/data/audio/technical_project_plan/tpp_111_b.mp3" }
+      ]
+    },
+    "note": "'Keg Broken Seal' (Noun Phrase) is a return reason for a keg with a compromised security seal.\n\n'Quebec' (QC) (Noun) is a province in Canada.\n\n'Preferences' (Noun) are user-configurable or region-specific settings."
+  },
+  {
+    "cardId": "tpp_112",
+    "sideA": {
+      "conversation": [
+        { "text": "I can't save my 'Favorites'. When I log out and log back in, they're gone.", "audioSrc": "public/data/audio/technical_project_plan/tpp_112_a.mp3" },
+        { "text": "Sounds like the session data isn't being saved to the Profile correctly. I'll debug the Logout process.", "audioSrc": "public/data/audio/technical_project_plan/tpp_112_b.mp3" }
+      ]
+    },
+    "note": "'Favorites' (Noun) is a section where users can save preferred items for easy access.\n\n'Logout' (Verb) is the action of signing out of an application.\n\n'Profile' (Noun) is the user's personal account section."
+  },
+  {
+    "cardId": "tpp_113",
+    "sideA": {
+      "conversation": [
+        { "text": "Let's check the 'New Releases' banner. Does it link to the correct product list?", "audioSrc": "public/data/audio/technical_project_plan/tpp_113_a.mp3" },
+        { "text": "Yes, clicking the 'Discover the Unexpected' slogan takes you to the new items page.", "audioSrc": "public/data/audio/technical_project_plan/tpp_113_b.mp3" }
+      ]
+    },
+    "note": "'New Releases' (Noun) is a category for newly available products.\n\n'Banner' (Noun) is a large on-screen advertisement or informational graphic."
+  },
+  {
+    "cardId": "tpp_114",
+    "sideA": {
+      "conversation": [
+        { "text": "The 'Bill To' address is not being populated from the customer's Personal Information.", "audioSrc": "public/data/audio/technical_project_plan/tpp_114_a.mp3" },
+        { "text": "Is the 'Fill Details' button present? The user should be able to click it to auto-populate the form.", "audioSrc": "public/data/audio/technical_project_plan/tpp_114_b.mp3" }
+      ]
+    },
+    "note": "'Bill To' (Noun Phrase) refers to the billing address for an invoice.\n\n'Personal Information' (Noun) are user-specific details like name and address.\n\n'Fill Details' (Verb Phrase) is an action to automatically populate required fields."
+  },
+  {
+    "cardId": "tpp_115",
+    "sideA": {
+      "conversation": [
+        { "text": "The total tax calculated for Saskatchewan seems incorrect.", "audioSrc": "public/data/audio/technical_project_plan/tpp_115_a.mp3" },
+        { "text": "That's the 'Taxes doesn't match value' bug. The CA_GST rate is wrong for SK.", "audioSrc": "public/data/audio/technical_project_plan/tpp_115_b.mp3" }
+      ]
+    },
+    "note": "'Saskatchewan' (SK) (Noun) is a province in Canada.\n\n'CA_GST' (Goods and Services Tax) is a federal sales tax in Canada."
+  },
+  {
+    "cardId": "tpp_116",
+    "sideA": {
+      "conversation": [
+        { "text": "The user wants to return an item for a reason not listed. What should they do?", "audioSrc": "public/data/audio/technical_project_plan/tpp_116_a.mp3" },
+        { "text": "They should select 'Other' from the dropdown and describe the issue in the comments field.", "audioSrc": "public/data/audio/technical_project_plan/tpp_116_b.mp3" }
+      ]
+    },
+    "note": "'Other' (Noun) is a generic option in a list, used for reasons not explicitly listed.\n\n'Dropdown' (Noun) is a UI element that presents a list of options when clicked."
+  },
+  {
+    "cardId": "tpp_117",
+    "sideA": {
+      "conversation": [
+        { "text": "What's the UOM for a case of Pabst Blue Ribbon?", "audioSrc": "public/data/audio/technical_project_plan/tpp_117_a.mp3" },
+        { "text": "The Unit of Measure is 'Cs'. The Shipping Format is 'Can'.", "audioSrc": "public/data/audio/technical_project_plan/tpp_117_b.mp3" }
+      ]
+    },
+    "note": "'UOM' (Unit of Measure) (Noun) is the standard unit for an item (e.g., 'Cs' for case).\n\n'Pabst Blue Ribbon' (Noun) is a specific brand of beer.\n\n'Shipping Format' (Noun) is the type of packaging for delivery."
+  },
+  {
+    "cardId": "tpp_118",
+    "sideA": {
+      "conversation": [
+        { "text": "The 'Net Price' is correct, but the 'Sub-Total' is not updating when I change the Quantity.", "audioSrc": "public/data/audio/technical_project_plan/tpp_118_a.mp3" },
+        { "text": "Let's check the front-end script that recalculates the Cart total. The event listener might be broken.", "audioSrc": "public/data/audio/technical_project_plan/tpp_118_b.mp3" }
+      ]
+    },
+    "note": "'Net Price' (Noun) is the final price of an item after all adjustments and discounts.\n\n'Sub-Total' (Noun) is the total cost of all items before taxes and fees.\n\n'Quantity' (Noun) is the number of units of an item."
+  },
+  {
+    "cardId": "tpp_119",
+    "sideA": {
+      "conversation": [
+        { "text": "When the 'Open Credit Available' is zero, the Payments section should be disabled.", "audioSrc": "public/data/audio/technical_project_plan/tpp_119_a.mp3" },
+        { "text": "Good point. I'll add a condition to the UI to grey out the 'Payments' button in that case.", "audioSrc": "public/data/audio/technical_project_plan/tpp_119_b.mp3" }
+      ]
+    },
+    "note": "'Open Credit Available' (Noun Phrase) is the amount of credit a customer has available to use.\n\n'Payments' (Noun) is the application section for managing and viewing payment information."
+  },
+  {
+    "cardId": "tpp_120",
+    "sideA": {
+      "conversation": [
+        { "text": "We need a 'Calender' icon next to the 'Date' field for delivery selection.", "audioSrc": "public/data/audio/technical_project_plan/tpp_120_a.mp3" },
+        { "text": "Agreed. I'll add the icon and hook it up to a date picker component. That's a quick UI fix.", "audioSrc": "public/data/audio/technical_project_plan/tpp_120_b.mp3" }
+      ]
+    },
+    "note": "'Calender' (Noun, common typo for Calendar) refers to the icon used for selecting dates.\n\n'Date' (Noun) refers to a specific day, often for an order or delivery."
+  },
+  {
+    "cardId": "tpp_121",
+    "sideA": {
+      "conversation": [
+        { "text": "The bug report says, 'Mobile doesn't show info' for the 'Order details'.", "audioSrc": "public/data/audio/technical_project_plan/tpp_121_a.mp3" },
+        { "text": "It seems the API response is not being parsed correctly on smaller screens. Let's check the Javascript.", "audioSrc": "public/data/audio/technical_project_plan/tpp_121_b.mp3" }
+      ]
+    },
+    "note": "'Mobile doesn't show info' (Bug Description) is a user-reported problem where data fails to appear on mobile devices.\n\n'API response' (Noun) is the data sent back from a server after a request is made."
+  },
+  {
+    "cardId": "tpp_122",
+    "sideA": {
+      "conversation": [
+        { "text": "The bug 'Pricing details lack info' seems to be specific to Alberta.", "audioSrc": "public/data/audio/technical_project_plan/tpp_122_a.mp3" },
+        { "text": "Yes, the CA_HST logic for AB is not returning the tax breakdown. It works for Ontario.", "audioSrc": "public/data/audio/technical_project_plan/tpp_122_b.mp3" }
+      ]
+    },
+    "note": "'Pricing details lack info' (Bug Description) is a problem where price breakdowns are incomplete or missing.\n\n'Alberta' (AB) (Noun) is a province in Canada.\n\n'CA_HST' (Harmonized Sales Tax) is a combined federal and provincial sales tax."
+  },
+  {
+    "cardId": "tpp_123",
+    "sideA": {
+      "conversation": [
+        { "text": "Let's use the 'Back Arrow' to navigate from the 'Profile' page to the 'Dashboard'.", "audioSrc": "public/data/audio/technical_project_plan/tpp_123_a.mp3" },
+        { "text": "Sounds good. That's a standard navigation pattern and users will expect it.", "audioSrc": "public/data/audio/technical_project_plan/tpp_123_b.mp3" }
+      ]
+    },
+    "note": "'Back Arrow' (Noun) is a UI icon used to navigate to the previous screen.\n\n'Dashboard' (Noun) is the main home screen of the application after login."
+  },
+  {
+    "cardId": "tpp_124",
+    "sideA": {
+      "conversation": [
+        { "text": "The dev note says 'In Purple works better'. What does 'Purple' mean?", "audioSrc": "public/data/audio/technical_project_plan/tpp_124_a.mp3" },
+        { "text": "Purple is the code name for our UAT (User Acceptance Testing) environment. It means the bug is fixed there.", "audioSrc": "public/data/audio/technical_project_plan/tpp_124_b.mp3" }
+      ]
+    },
+    "note": "'In Purple works better' (Developer Note) indicates a feature functions correctly in the UAT or staging environment, which is internally nicknamed 'Purple'.\n\n'UAT' (User Acceptance Testing) is the final phase of testing where actual users test the software."
+  },
+  {
+    "cardId": "tpp_125",
+    "sideA": {
+      "conversation": [
+        { "text": "The marketing slogan 'Less Mixing. More Mingling.' is not fitting within the button.", "audioSrc": "public/data/audio/technical_project_plan/tpp_125_a.mp3" },
+        { "text": "That's a UI bug. We'll need to adjust the font size or the button padding for that text.", "audioSrc": "public/data/audio/technical_project_plan/tpp_125_b.mp3" }
+      ]
+    },
+    "note": "'not fitting within button' (UI Bug Description) means a text label is too long for the visible area of the button it's on.\n\n'Padding' (Noun) is the space between the content (like text) and the border of an element (like a button)."
+  },
+  {
+    "cardId": "tpp_126",
+    "sideA": {
+      "conversation": [
+        { "text": "The customer clicked 'Cancel' during 'Checkout', but the order was still processed.", "audioSrc": "public/data/audio/technical_project_plan/tpp_126_a.mp3" },
+        { "text": "That's a critical bug. The cancel action should terminate the transaction and empty the Cart.", "audioSrc": "public/data/audio/technical_project_plan/tpp_126_b.mp3" }
+      ]
+    },
+    "note": "'Cancel' (Verb) is an action to stop a process that is currently in progress.\n\n'Cart' (Noun) is the virtual shopping basket where items are held before purchase."
+  },
+  {
+    "cardId": "tpp_127",
+    "sideA": {
+      "conversation": [
+        { "text": "I need to delete this 'Saved Cart'. How do I do that?", "audioSrc": "public/data/audio/technical_project_plan/tpp_127_a.mp3" },
+        { "text": "Go to the Saved Cart screen and there should be a 'Delete' icon next to each one.", "audioSrc": "public/data/audio/technical_project_plan/tpp_127_b.mp3" }
+      ]
+    },
+    "note": "'Saved Cart' (Noun) is a feature that allows a user to save the contents of their cart for a future session.\n\n'Delete' (Verb) is an action to permanently remove an item or data."
+  },
+  {
+    "cardId": "tpp_128",
+    "sideA": {
+      "conversation": [
+        { "text": "When I click the 'Magnifying glass' icon, I want to search by Customer Name.", "audioSrc": "public/data/audio/technical_project_plan/tpp_128_a.mp3" },
+        { "text": "Currently, the 'Search' function only supports SKU. We can add this as a new feature.", "audioSrc": "public/data/audio/technical_project_plan/tpp_128_b.mp3" }
+      ]
+    },
+    "note": "'Magnifying glass' (Noun) is the common UI icon that represents a search function.\n\n'Customer Name' (Noun) is the name of the client making the order.\n\n'SKU' (Stock Keeping Unit) is a unique code to identify a product."
+  },
+  {
+    "cardId": "tpp_129",
+    "sideA": {
+      "conversation": [
+        { "text": "The dropdown shows 'Please Select' even after I choose a Delivery Format.", "audioSrc": "public/data/audio/technical_project_plan/tpp_129_a.mp3" },
+        { "text": "It sounds like the UI state isn't updating after the 'Select' action. I'll look into it.", "audioSrc": "public/data/audio/technical_project_plan/tpp_129_b.mp3" }
+      ]
+    },
+    "note": "'Please Select' (Instructional Text) is the default text in a dropdown menu, prompting the user to make a choice.\n\n'Delivery Format' (Noun) is the packaging style of a product for shipping (e.g., Bottle, Keg)."
+  },
+  {
+    "cardId": "tpp_130",
+    "sideA": {
+      "conversation": [
+        { "text": "We need to show a 'Warning' message if a user tries to order more than their available credit.", "audioSrc": "public/data/audio/technical_project_plan/tpp_130_a.mp3" },
+        { "text": "Yes, a dialog box with an 'OK' button should appear, explaining the issue.", "audioSrc": "public/data/audio/technical_project_plan/tpp_130_b.mp3" }
+      ]
+    },
+    "note": "'Warning' (Noun) is a message that alerts the user to a potential issue or error.\n\n'OK' (Button Label) is a button used to acknowledge a message or confirm an action."
+  },
+  {
+    "cardId": "tpp_131",
+    "sideA": {
+      "conversation": [
+        { "text": "The 'Item number' for Sleeman is wrong in the staging database.", "audioSrc": "public/data/audio/technical_project_plan/tpp_131_a.mp3" },
+        { "text": "Okay, I will update the product data. We need to make sure it's correct before we 'Submit' the changes to production.", "audioSrc": "public/data/audio/technical_project_plan/tpp_131_b.mp3" }
+      ]
+    },
+    "note": "'Item number' (Noun) is a unique identifier for a product.\n\n'Sleeman' (Noun) is the brand name of the company.\n\n'Submit' (Verb) means to confirm and send data or a form."
+  },
+  {
+    "cardId": "tpp_132",
+    "sideA": {
+      "conversation": [
+        { "text": "The 'Total' on the invoice for the customer in British Columbia is wrong.", "audioSrc": "public/data/audio/technical_project_plan/tpp_132_a.mp3" },
+        { "text": "It's likely the 'Rate' for the provincial tax (PST) is misconfigured for 'British' accounts.", "audioSrc": "public/data/audio/technical_project_plan/tpp_132_b.mp3" }
+      ]
+    },
+    "note": "'Total' (Noun) is the final, complete cost of an order.\n\n'Rate' (Noun) is the percentage value of a tax.\n\n'British' (Adjective) is used here as a shorthand reference for the province of British Columbia."
+  },
+  {
+    "cardId": "tpp_133",
+    "sideA": {
+      "conversation": [
+        { "text": "After a successful payment, the user should be redirected to the Home screen.", "audioSrc": "public/data/audio/technical_project_plan/tpp_133_a.mp3" },
+        { "text": "Right now, it just shows a 'Success' message but stays on the payments page. I'll fix the redirect.", "audioSrc": "public/data/audio/technical_project_plan/tpp_133_b.mp3" }
+      ]
+    },
+    "note": "'Home' (Noun) refers to the main screen or dashboard of the application.\n\n'Success' (Noun) is a status message indicating that an operation has completed correctly."
+  },
+  {
+    "cardId": "tpp_134",
+    "sideA": {
+      "conversation": [
+        { "text": "The menu is not collapsing properly on mobile devices after Login.", "audioSrc": "public/data/audio/technical_project_plan/tpp_134_a.mp3" },
+        { "text": "Let me check the CSS. The hamburger menu's state change is probably not firing.", "audioSrc": "public/data/audio/technical_project_plan/tpp_134_b.mp3" }
+      ]
+    },
+    "note": "'Menu' (Noun) is a list of navigation options or sections in the application.\n\n'Login' (Noun/Verb) is the action or process of accessing a user account."
+  },
+  {
+    "cardId": "tpp_135",
+    "sideA": {
+      "conversation": [
+        { "text": "I can't apply the filter for 'Available' items only in the product list.", "audioSrc": "public/data/audio/technical_project_plan/tpp_135_a.mp3" },
+        { "text": "I see the 'Apply' button, but clicking it does nothing. I'll assign this bug to the front-end team.", "audioSrc": "public/data/audio/technical_project_plan/tpp_135_b.mp3" }
+      ]
+    },
+    "note": "'Available' (Adjective) describes an item that is ready for purchase or in stock.\n\n'Apply' (Verb) is the action to confirm and use a selected setting or filter."
+  },
+  {
+    "cardId": "tpp_136",
+    "sideA": {
+      "conversation": [
+        { "text": "The customer selected 'Keg Moldy' as a return reason.", "audioSrc": "public/data/audio/technical_project_plan/tpp_136_a.mp3" },
+        { "text": "We need to flag this for quality control. This is a serious product issue.", "audioSrc": "public/data/audio/technical_project_plan/tpp_136_b.mp3" }
+      ]
+    },
+    "note": "'Keg Moldy' (Adjective Phrase) is a return reason indicating that mold was present on or in the keg.\n\n'Quality Control' (QC) (Noun) is the process of ensuring that products meet a certain standard of quality."
+  },
+  {
+    "cardId": "tpp_137",
+    "sideA": {
+      "conversation": [
+        { "text": "The prompt 'Select Item(s) and...' is confusing. And what?", "audioSrc": "public/data/audio/technical_project_plan/tpp_137_a.mp3" },
+        { "text": "It should be followed by a dropdown of actions, like 'Add to Favorites' or 'Return Items'. The dropdown is missing.", "audioSrc": "public/data/audio/technical_project_plan/tpp_137_b.mp3" }
+      ]
+    },
+    "note": "'Select Item(s) and...' (Instructional Text) is a prompt indicating that an action can be applied to the items the user has chosen."
+  },
+  {
+    "cardId": "tpp_138",
+    "sideA": {
+      "conversation": [
+        { "text": "The 'Delivery Format' for this item is 'Can', which is correct.", "audioSrc": "public/data/audio/technical_project_plan/tpp_138_a.mp3" },
+        { "text": "Okay, but the product image shows a bottle. Let's fix the image to avoid confusion.", "audioSrc": "public/data/audio/technical_project_plan/tpp_138_b.mp3" }
+      ]
+    },
+    "note": "'Can' (Noun) is a type of drink container, typically made of aluminum.\n\n'Delivery Format' (Noun) specifies the packaging style of a product for shipping."
+  },
+  {
+    "cardId": "tpp_139",
+    "sideA": {
+      "conversation": [
+        { "text": "A CSR needs to be able to look up an order using the SKU from the customer's invoice.", "audioSrc": "public/data/audio/technical_project_plan/tpp_139_a.mp3" },
+        { "text": "We can add SKU to the main search bar on the dashboard for CSR users.", "audioSrc": "public/data/audio/technical_project_plan/tpp_139_b.mp3" }
+      ]
+    },
+    "note": "'CSR' (Customer Service Representative) is a person who helps customers with orders, questions, and issues.\n\n'SKU' (Stock Keeping Unit) is a unique code for tracking a specific product."
+  },
+  {
+    "cardId": "tpp_140",
+    "sideA": {
+      "conversation": [
+        { "text": "When an item is returned for 'Breakage', does it go back into inventory?", "audioSrc": "public/data/audio/technical_project_plan/tpp_140_a.mp3" },
+        { "text": "No, the process for 'Breakage' should write it off as a loss and not update the stock quantity.", "audioSrc": "public/data/audio/technical_project_plan/tpp_140_b.mp3" }
+      ]
+    },
+    "note": "'Breakage' (Noun) is a return reason for an item that was broken.\n\n'Inventory' (Noun) refers to the stock of goods a company has on hand."
+  },
+  {
+    "cardId": "tpp_141",
+    "sideA": {
+      "conversation": [
+        { "text": "The sub-total is correct, but the final total is wrong for orders in Ontario.", "audioSrc": "public/data/audio/technical_project_plan/tpp_141_a.mp3" },
+        { "text": "It must be the CA_HST calculation. Let's verify the tax rate for ON is correct in the config.", "audioSrc": "public/data/audio/technical_project_plan/tpp_141_b.mp3" }
+      ]
+    },
+    "note": "'Ontario' (ON) (Noun) is a province in Canada.\n\n'CA_HST' (Harmonized Sales Tax) is a sales tax that combines federal and provincial taxes into one."
+  },
+  {
+    "cardId": "tpp_142",
+    "sideA": {
+      "conversation": [
+        { "text": "When I select an item, I want to see the 'Net Price' immediately.", "audioSrc": "public/data/audio/technical_project_plan/tpp_142_a.mp3" },
+        { "text": "Currently it only shows the base 'Price'. We need to apply customer-specific discounts to show the Net Price.", "audioSrc": "public/data/audio/technical_project_plan/tpp_142_b.mp3" }
+      ]
+    },
+    "note": "'Net Price' (Noun) is the final price after all discounts have been applied.\n\n'Price' (Noun) is the standard cost of an item before any adjustments."
+  },
+  {
+    "cardId": "tpp_143",
+    "sideA": {
+      "conversation": [
+        { "text": "The phrase 'to come up' is used in a bug report: 'item does not come up'.", "audioSrc": "public/data/audio/technical_project_plan/tpp_143_a.mp3" },
+        { "text": "It means 'to appear' or 'to be displayed'. So, the item is not appearing in the search results.", "audioSrc": "public/data/audio/technical_project_plan/tpp_143_b.mp3" }
+      ]
+    },
+    "note": "'to come up' (Phrasal Verb) means to appear or be displayed, especially in a list or search result."
+  },
+  {
+    "cardId": "tpp_144",
+    "sideA": {
+      "conversation": [
+        { "text": "The user is from Alberta but is being charged Quebec sales tax.", "audioSrc": "public/data/audio/technical_project_plan/tpp_144_a.mp3" },
+        { "text": "The location detection logic is failing. The system should apply taxes based on the user's province.", "audioSrc": "public/data/audio/technical_project_plan/tpp_144_b.mp3" }
+      ]
+    },
+    "note": "'Alberta' (AB) (Noun) is a province in Canada.\n\n'Quebec' (QC) (Noun) is a province in Canada.\n\n'Province' (Noun) is a major administrative division of a country, like a state."
+  },
+  {
+    "cardId": "tpp_145",
+    "sideA": {
+      "conversation": [
+        { "text": "What does the 'coming up as' phrase mean in this ticket?", "audioSrc": "public/data/audio/technical_project_plan/tpp_145_a.mp3" },
+        { "text": "It means the system is incorrectly displaying one value instead of another. For example, showing 'Breakage' instead of 'Defective Keg'.", "audioSrc": "public/data/audio/technical_project_plan/tpp_145_b.mp3" }
+      ]
+    },
+    "note": "'coming up as' (Phrasal Verb) means 'to appear as' or 'to be displayed as', often highlighting a discrepancy or error."
+  },
+  {
+    "cardId": "tpp_146",
+    "sideA": {
+      "conversation": [
+        { "text": "The tax rate for Saskatchewan needs to be updated.", "audioSrc": "public/data/audio/technical_project_plan/tpp_146_a.mp3" },
+        { "text": "I'll update the 'Rate' for SK in the tax configuration table. This will fix the 'Taxes doesn't match value' bug.", "audioSrc": "public/data/audio/technical_project_plan/tpp_146_b.mp3" }
+      ]
+    },
+    "note": "'Saskatchewan' (SK) (Noun) is a province in Canada.\n\n'Rate' (Noun) is the percentage value used for calculations, such as for taxes."
+  },
+  {
+    "cardId": "tpp_147",
+    "sideA": {
+      "conversation": [
+        { "text": "Let's change the UOM from 'Ea' to 'Can' for this product.", "audioSrc": "public/data/audio/technical_project_plan/tpp_147_a.mp3" },
+        { "text": "Good idea. 'Can' is more descriptive for the shipping format. I'll update the product data.", "audioSrc": "public/data/audio/technical_project_plan/tpp_147_b.mp3" }
+      ]
+    },
+    "note": "'UOM' (Unit of Measure) (Noun) is the standard unit by which a product is sold.\n\n'Can' (Noun) is a specific unit representing a single metal can container."
+  },
+  {
+    "cardId": "tpp_148",
+    "sideA": {
+      "conversation": [
+        { "text": "We need to handle the 'Keg Broken Seal' case in our returns logic.", "audioSrc": "public/data/audio/technical_project_plan/tpp_148_a.mp3" },
+        { "text": "Agreed. This should trigger a quality alert and prevent the item from being restocked.", "audioSrc": "public/data/audio/technical_project_plan/tpp_148_b.mp3" }
+      ]
+    },
+    "note": "'Keg Broken Seal' (Noun Phrase) is a specific reason for returning a keg, indicating its seal was damaged."
+  },
+  {
+    "cardId": "tpp_149",
+    "sideA": {
+      "conversation": [
+        { "text": "The 'Select' button is not working on the 'Return Items' page.", "audioSrc": "public/data/audio/technical_project_plan/tpp_149_a.mp3" },
+        { "text": "The Javascript event handler for the click is probably not attached correctly. I'll take a look.", "audioSrc": "public/data/audio/technical_project_plan/tpp_149_b.mp3" }
+      ]
+    },
+    "note": "'Select' (Verb) is the action of choosing an item from a list.\n\n'Return Items' (Noun Phrase) is the feature or page used for managing product returns."
+  },
+  {
+    "cardId": "tpp_150",
+    "sideA": {
+      "conversation": [
+        { "text": "The PO Number should be a searchable field in the main 'Search' bar.", "audioSrc": "public/data/audio/technical_project_plan/tpp_150_a.mp3" },
+        { "text": "Okay, so we're extending the search functionality beyond just CSPC and product name. I'll add it to the backlog.", "audioSrc": "public/data/audio/technical_project_plan/tpp_150_b.mp3" }
+      ]
+    },
+    "note": "'PO Number' (Purchase Order Number) (Noun) is a unique number used to track a specific order.\n\n'Search' (Noun) refers to the application's function for finding data.\n\n'CSPC' (Noun) is a unique code for identifying products."
+  }
   ]
 }
