@@ -72,8 +72,11 @@ The target deck file is: "${deckFileName}".
 ## 4. CORE WORKFLOW & RULES
 1.  **Analyze Request**: Prioritize the \`review_request.reasons\` (e.g., "improve_hint", "clarify_question"). Use the \`review_request.note\` for specific user suggestions.
 2.  **Apply Corrections**: Fix typos, improve clarity, and validate user suggestions.
-3.  **Provide Feedback**: Use the \`note\` field on the card to explain your changes (or why you rejected a suggestion). The note must be concise and in English. Leave as \`null\` for trivial fixes.
-4.  **Language**: All your output (notes, corrected text) must be in English.
+3.  **Provide Feedback**: Use the \`note\` field to explain your changes.
+    - **Preserve & Append**: If the \`note\` field already has content, **you must preserve it**. Append your new explanation after the original content, separated by a double newline (\`\\n\\n\`).
+    - **Overwrite Exception**: Only replace the entire note if the user's \`review_request.note\` explicitly asks to 'replace' or 'rewrite' the note.
+    - **Formatting**: The note must be concise, in English, and can be \`null\` for trivial fixes.
+4.  **Language**: All your output (notes, corrected text) must be in English.
 ## 5. **CRITICAL: REQUIRED OUTPUT FORMAT**
 Your final response MUST be a single block of Markdown text structured in exactly two parts:
 ### Part 1: Corrected JSON

@@ -1,66 +1,178 @@
 [
   {
-    "cardId": "tech_convo_020",
+    "cardId": "tpp_064",
     "sideA": {
       "conversation": [
         {
-          "text": "What are the action items from this meeting?",
-          "audioSrc": "public/data/audio/tech_convos/tech_convo_020_a.mp3"
+          "text": "If a product price changes tomorrow, and I place the order today for delivery next week, which price do I pay?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_064_a.mp3"
         },
         {
-          "text": "John will investigate the database performance, and I will draft the project proposal.",
-          "audioSrc": "public/data/audio/tech_convos/tech_convo_020_b.mp3"
+          "text": "You pay today's price. The pricing is always based on the Order Date.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_064_b.mp3"
         }
       ]
     },
-    "note": "'Action items' are specific, defined tasks assigned to one or more people, to be completed after a meeting. They are the concrete outcomes of a discussion.\n\nTo 'draft' something means to prepare a preliminary version of a document, like a plan or proposal, that will be reviewed and revised later."
+    "note": "This card illustrates a 'nuanced' (Adjective) business rule: pricing is based on the 'Order Date,' not the 'Delivery Date.'\n\nTesting such 'edge cases' (uncommon scenarios) is critical for application correctness."
   },
   {
-    "cardId": "tech_convo_033",
+    "cardId": "tpp_054",
     "sideA": {
       "conversation": [
         {
-          "text": "Does anyone have anything to add to the agenda?",
-          "audioSrc": "public/data/audio/tech_convos/tech_convo_033_a.mp3"
+          "text": "The tester reported that a brand logo is missing.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_054_a.mp3"
         },
         {
-          "text": "Yes, I'd like to briefly discuss the feedback from the UX team.",
-          "audioSrc": "public/data/audio/tech_convos/tech_convo_033_b.mp3"
+          "text": "We should check if that brand is still sold in the SK region. It might be a not applicable issue.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_054_b.mp3"
         }
       ]
     },
-    "note": "'Briefly' means for a short duration; it's used here to indicate the discussion won't take much time, showing respect for the meeting's schedule.\n\n'UX' stands for User Experience, which refers to the overall experience and satisfaction a person has when using a product."
+    "note": "In this context, 'sold' means 'offered for sale.'\n\nBefore fixing a bug, it's important to verify if its business context is still valid. If a product is no longer sold, the bug might be considered 'not applicable' (Adjective Phrase)."
   },
   {
-    "cardId": "tech_convo_068",
+    "cardId": "tpp_035",
     "sideA": {
       "conversation": [
         {
-          "text": "Let's take this discussion offline, it's too in-depth for this meeting.",
-          "audioSrc": "public/data/audio/tech_convos/tech_convo_068_a.mp3"
+          "text": "The not a valid month bug (Issue #9 and #10) is blocking our QC testers.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_035_a.mp3"
         },
         {
-          "text": "Good idea. I'll set up a follow-up with the relevant stakeholders.",
-          "audioSrc": "public/data/audio/tech_convos/tech_convo_068_b.mp3"
+          "text": "I agree, this has the highest priority. The users cannot book an order.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_035_b.mp3"
         }
       ]
     },
-    "note": "To 'take something offline' means to discuss it outside of the current meeting.\n\n'Stakeholders' are people who have an interest or concern in the project.\n\nA 'follow-up' is a subsequent action, meeting, or communication to continue a previous discussion or to check on progress."
+    "note": "A 'blocking' issue (or 'blocker') (Noun) is a critical bug that prevents testers from proceeding. It always has the highest 'priority' (Noun).\n\n'QC' stands for Quality Control, the team responsible for testing software to ensure it meets standards."
   },
   {
-    "cardId": "tech_convo_010",
+    "cardId": "tpp_049",
     "sideA": {
       "conversation": [
         {
-          "text": "The build failed in the CI/CD pipeline.",
-          "audioSrc": "public/data/audio/tech_convos/tech_convo_010_a.mp3"
+          "text": "Which URL do I use to test the application itself?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_049_a.mp3"
         },
         {
-          "text": "It seems like a dependency issue. Let me investigate.",
-          "audioSrc": "public/data/audio/tech_convos/tech_convo_010_b.mp3"
+          "text": "Use the Proxy Server URL. The Web Logic Server URL is for the developers to check backend services.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_049_b.mp3"
         }
       ]
     },
-    "note": "A 'pipeline' in software development refers to a series of automated stages that code passes through, from being written to being deployed. The 'CI/CD pipeline' specifically automates the build, test, and deployment process.\n\nA 'dependency' is an external software component that a project relies on to work."
+    "note": "A 'Proxy Server' (Noun) acts as a secure gateway that is typically used for user-level interaction.\n\nIt is common for projects to also have a direct server URL (like Web Logic) that developers use to test backend 'services' (Noun)."
+  },
+  {
+    "cardId": "tpp_059",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "Why did the test with the on-premise account fail?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_059_a.mp3"
+        },
+        {
+          "text": "It seems the test data was wrong. That account was not set up correctly in the EBS.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_059_b.mp3"
+        }
+      ]
+    },
+    "note": "'On-premise' (Adjective) describes a business that sells goods for consumption on its property (e.g., a bar or restaurant).\n\n'Data integrity' (Noun Phrase) is crucial for testing. If the test data is incorrect or not 'set up' (Phrasal Verb) properly, test results will be invalid."
+  },
+  {
+    "cardId": "tpp_061",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "Is the SOA endpoint for the iStore Mobile pricing service public?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_061_a.mp3"
+        },
+        {
+          "text": "No, it's internal. All calls must go through the Web Logic Server via the Proxy Server.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_061_b.mp3"
+        }
+      ]
+    },
+    "note": "'SOA' (Service-Oriented Architecture) is a design where components are independent 'services.' A 'Proxy Server' is a secure gateway to these services.\n\nAn 'endpoint' (Noun) is a service's URL. Differentiating between 'public' and 'internal' endpoints is fundamental for security."
+  },
+  {
+    "cardId": "tpp_034",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "For Test Task # 8.1.3, what am I validating?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_034_a.mp3"
+        },
+        {
+          "text": "You need to validate that a sales rep has the option to switch between their different customers.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_034_b.mp3"
+        }
+      ]
+    },
+    "note": "'Sales rep' is short for Sales Representative, an employee who sells products and may need to manage multiple customer accounts.\n\nA 'Test Task' (Noun) is a specific instruction in a test plan, while 'validating' (Verb) means confirming a feature works as required."
+  },
+  {
+    "cardId": "tpp_070",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "Why does the business call it a tile and not just a section?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_070_a.mp3"
+        },
+        {
+          "text": "Because tile implies it's a modular, self-contained block of UI, which is how it's designed in the frontend.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_070_b.mp3"
+        }
+      ]
+    },
+    "note": "In UI design, a 'tile' (Noun) is a self-contained, rectangular block that displays specific information or provides a link.\n\nThe use of this term reflects the 'modular' technical design. Understanding shared business terminology improves team communication."
+  },
+  {
+    "cardId": "tpp_010",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "Was the on-premise customer able to order below the minimum quantity?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_010_a.mp3"
+        },
+        {
+          "text": "No, the test passed. The user was prevented from doing so.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_010_b.mp3"
+        }
+      ]
+    },
+    "note": "'On-premise' (Adjective) describes a business that sells goods for immediate consumption on its property (e.g., a restaurant or bar).\n\n'Prevented from doing so' (Verb Phrase) means an action was blocked by the system, often as part of a validation rule."
+  },
+  {
+    "cardId": "tpp_080",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "How should I design the test case for the Pricing Issue?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_080_a.mp3"
+        },
+        {
+          "text": "You need to find a SKU that has a price change effective tomorrow, and then place the order with both today's and tomorrow's delivery date to compare.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_080_b.mp3"
+        }
+      ]
+    },
+    "note": "'SKU' (Stock Keeping Unit) is a unique code used to identify and track a specific product in inventory.\n\n'Test case design' (Noun Phrase) involves creating tests for 'edge cases' (uncommon scenarios), like a price change that happens overnight."
+  },
+  {
+    "cardId": "tpp_115",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "The total tax calculated for Saskatchewan seems incorrect.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_115_a.mp3"
+        },
+        {
+          "text": "That's the Taxes doesn't match value bug. The CA_GST rate is wrong for SK.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_115_b.mp3"
+        }
+      ]
+    },
+    "note": "'Saskatchewan' (SK) is a province and 'CA_GST' is a sales tax in Canada.\n\nIn this context, 'rate' (Noun) refers to the specific percentage used to calculate a tax (e.g., a tax rate of 5%)."
   }
 ]
