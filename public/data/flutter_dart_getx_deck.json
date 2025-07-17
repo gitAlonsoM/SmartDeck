@@ -1,0 +1,790 @@
+{
+  "id": "flutter_dart_getx_deck",
+  "name": "Flutter, Dart & GetX Fundamentals",
+  "description": "A comprehensive deck covering the fundamentals of Flutter, Dart, and the GetX package. It explores core concepts, UI widgets, state management, asynchronous programming, and data modeling based on real-world application code.",
+  "deckType": "multipleChoice",
+  "isAiGenerated": true,
+  "language": "dart",
+  "cards": [
+    {
+      "cardId": "flutter_dart_001",
+      "category": "Flutter Widgets",
+      "hint": "It's the most basic building block for creating visual elements.",
+      "question": "In Flutter, everything from a button to padding is considered a what?",
+      "options": ["Component", "Widget", "Element"],
+      "correctAnswer": "Widget",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// Both Text and SizedBox are examples of Widgets.\nColumn(\n  children: [\n    Text('Hello'), \n    SizedBox(height: 10)\n  ],\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_002",
+      "category": "Flutter Widgets",
+      "hint": "This widget's state is determined by its parent and its own configuration.",
+      "question": "For UI parts that don't change internally, like a static icon or text, which type of widget is most appropriate?",
+      "options": ["StatefulWidget", "StatelessWidget", "DynamicWidget"],
+      "correctAnswer": "StatelessWidget",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// CartItemList doesn't manage internal state, so it's a StatelessWidget.\nclass CartItemList extends StatelessWidget {\n  CartItemList({Key? key}) : super(key: key);\n\n  @override\n  Widget build(BuildContext context) {\n    return Text('Cart Item');\n  }\n}"
+      }
+    },
+    {
+      "cardId": "flutter_dart_003",
+      "category": "Flutter Widgets",
+      "hint": "This method describes the widget's part of the user interface.",
+      "question": "What is the name of the method that must be overridden in a `StatelessWidget` to return the widget's view?",
+      "options": ["render()", "createView()", "build()"],
+      "correctAnswer": "build()",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "class MyWidget extends StatelessWidget {\n  @override\n  Widget build(BuildContext context) {\n    // The UI is described here.\n    return Container();\n  }\n}"
+      }
+    },
+    {
+      "cardId": "flutter_dart_004",
+      "category": "Flutter Widgets",
+      "hint": "It arranges its children one after another in a vertical line.",
+      "question": "Which layout widget is used to arrange a list of widgets vertically on the screen?",
+      "options": ["Row", "List", "Column"],
+      "correctAnswer": "Column",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "Column(\n  children: [\n    Text('Top Item'),\n    Text('Middle Item'),\n    Text('Bottom Item'),\n  ],\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_005",
+      "category": "Flutter Widgets",
+      "hint": "This widget is ideal for creating empty spaces for layout purposes.",
+      "question": "What is the most efficient widget for creating a fixed-size gap between other widgets?",
+      "options": ["Container", "SizedBox", "Padding"],
+      "correctAnswer": "SizedBox",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "Column(\n  children: [\n    Text('First Widget'),\n    // This creates a 20-pixel vertical space.\n    SizedBox(height: 20),\n    Text('Second Widget'),\n  ],\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_006",
+      "category": "Flutter Widgets",
+      "hint": "It's a versatile box that can be styled with color, borders, and padding.",
+      "question": "Which widget is commonly used to apply styling like a background color, shadow, or rounded corners?",
+      "options": ["Container", "StyledBox", "Layout"],
+      "correctAnswer": "Container",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "Container(\n  padding: EdgeInsets.all(16),\n  decoration: BoxDecoration(\n    color: Colors.blue,\n    borderRadius: BorderRadius.circular(8),\n  ),\n  child: Text('Styled Content'),\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_007",
+      "category": "Flutter Widgets",
+      "hint": "Its name describes its function: to provide inner spacing.",
+      "question": "Which widget should you wrap another widget in to add space around it?",
+      "options": ["Margin", "Padding", "Spacer"],
+      "correctAnswer": "Padding",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// This adds 16 pixels of space on all sides of the Text widget.\nPadding(\n  padding: const EdgeInsets.all(16.0),\n  child: Text('Content'),\n)"
+      }
+    },
+    {
+      "cardId": "flutter_dart_008",
+      "category": "Flutter Widgets",
+      "hint": "Think about how to make a widget grow to fill empty space.",
+      "question": "Inside a `Row` or `Column`, which widget do you use to make its child take up all the remaining available space?",
+      "options": ["Flexible", "Expanded", "Stretched"],
+      "correctAnswer": "Expanded",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "Row(\n  children: [\n    Icon(Icons.person),\n    // This Text will take up all the space between the two icons.\n    Expanded(child: Text('User Name')),\n    Icon(Icons.settings),\n  ],\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_009",
+      "category": "Flutter Widgets",
+      "hint": "This is crucial for performance with long lists.",
+      "question": "Why is `ListView.builder` more memory-efficient than a standard `ListView` for long lists?",
+      "options": ["It loads all items at once", "It only builds items that are currently visible", "It uses less complex widgets"],
+      "correctAnswer": "It only builds items that are currently visible",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "ListView.builder(\n  itemCount: 1000,\n  // This function is only called for the few items visible on screen.\n  itemBuilder: (context, index) {\n    return Text('Item #$index');\n  },\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_010",
+      "category": "Flutter Widgets",
+      "hint": "Think of the Material Design ripple effect.",
+      "question": "To add a tap callback and a visual ripple effect to any widget, which widget would you wrap it with?",
+      "options": ["GestureDetector", "InkWell", "Button"],
+      "correctAnswer": "InkWell",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "InkWell(\n  onTap: () => print('Image tapped!'),\n  child: Image.asset('assets/delete_icon.png'),\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_011",
+      "category": "Flutter Widgets",
+      "hint": "This property takes a function that creates widgets on demand.",
+      "question": "In a `ListView.builder`, what is the name of the callback function that builds each list item?",
+      "options": ["widgetBuilder", "itemBuilder", "childBuilder"],
+      "correctAnswer": "itemBuilder",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "ListView.builder(\n  itemCount: controller.retrieveCartList.length,\n  // The itemBuilder is called for each index.\n  itemBuilder: (context, index) {\n    return Text(controller.retrieveCartList[index].itemDescription ?? '');\n  },\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_012",
+      "category": "Flutter Widgets",
+      "hint": "This property controls whether the list's size is determined by its content.",
+      "question": "In a `ListView`, what does setting `shrinkWrap: true` do?",
+      "options": ["It makes the list scrollable", "It gives the list an infinite height", "It makes the list's size adapt to its content"],
+      "correctAnswer": "It makes the list's size adapt to its content",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// Used when a ListView is inside another scrolling widget like a Column.\nListView.builder(\n  itemCount: 5,\n  shrinkWrap: true, // The ListView will only be as tall as its 5 items.\n  physics: const NeverScrollableScrollPhysics(),\n  itemBuilder: (con, index) => Text('Item $index'),\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_013",
+      "category": "Flutter Widgets",
+      "hint": "This class defines the scrolling behavior.",
+      "question": "What is the purpose of setting `physics: const NeverScrollableScrollPhysics()` on a list?",
+      "options": ["It enables fast scrolling", "It makes the list bounce", "It disables scrolling for the list"],
+      "correctAnswer": "It disables scrolling for the list",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// This is common when a ListView is inside a SingleChildScrollView.\nListView.builder(\n  shrinkWrap: true,\n  // The parent widget will handle the scrolling.\n  physics: const NeverScrollableScrollPhysics(),\n  itemBuilder: (c, i) => Text('Item'),\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_014",
+      "category": "Dart Basics",
+      "hint": "It's a special type of constructor.",
+      "question": "In Dart, what is a `factory` constructor commonly used for in data models?",
+      "options": ["Creating a new database record", "Creating an object instance from a Map (like JSON)", "Creating a widget"],
+      "correctAnswer": "Creating an object instance from a Map (like JSON)",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "class PRecordsetItem {\n  // ... properties\n\n  // This factory constructor builds an object from a JSON map.\n  factory PRecordsetItem.fromJson(Map<String, dynamic> json) => PRecordsetItem(\n    itemCode: json[\"ITEM_CODE\"],\n    // ... more properties\n  );\n}"
+      }
+    },
+    {
+      "cardId": "flutter_dart_015",
+      "category": "Dart Basics",
+      "hint": "Think about how to handle values that might be missing.",
+      "question": "What does the `??` operator do in Dart?",
+      "options": ["It checks if a value is not null", "It provides a default value if the expression is null", "It assigns a null value"],
+      "correctAnswer": "It provides a default value if the expression is null",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// If 'appliedPromotion' is null, the result will be '--'.\nfinal promotion = controller.retrieveCartList[index].appliedPromotion ?? \"--\";"
+      }
+    },
+    {
+      "cardId": "flutter_dart_016",
+      "category": "Dart Basics",
+      "hint": "It's a shorthand for a function with one statement.",
+      "question": "What is the purpose of the `=>` (arrow) syntax in Dart?",
+      "options": ["To define a generator function", "To create a named function", "To define a function that contains a single expression"],
+      "correctAnswer": "To define a function that contains a single expression",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// A concise way to write a simple function.\nString getItemDescription(PRecordsetItem items) => items.itemDescription ?? \"\";"
+      }
+    },
+    {
+      "cardId": "flutter_dart_017",
+      "category": "Dart Basics",
+      "hint": "This allows a method to access a property on an object only if the object is not null.",
+      "question": "In `model?.pRecordsetItem`, what does the `?` symbol do?",
+      "options": ["It casts the model to a nullable type", "It accesses `pRecordsetItem` only if `model` is not null", "It marks the property as optional"],
+      "correctAnswer": "It accesses `pRecordsetItem` only if `model` is not null",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "RetrieveCartModel? model = await RetrieveCartApi.retrieveCart();\n// If 'model' is null, the whole expression becomes null instead of crashing.\nretrieveCartList = model?.pRecordsetItem ?? [];"
+      }
+    },
+    {
+      "cardId": "flutter_dart_018",
+      "category": "Asynchronous Programming",
+      "hint": "It tells the function it will perform a task that takes time.",
+      "question": "What does the `async` keyword indicate about a function?",
+      "options": ["The function is automatically synchronized", "The function will perform an asynchronous operation", "The function returns multiple values"],
+      "correctAnswer": "The function will perform an asynchronous operation",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// 'async' allows the use of 'await' inside this function.\nFuture<void> retrieveCartDetails() async {\n  RetrieveCartModel? model = await RetrieveCartApi.retrieveCart();\n}"
+      }
+    },
+    {
+      "cardId": "flutter_dart_019",
+      "category": "Asynchronous Programming",
+      "hint": "It's used inside an `async` function.",
+      "question": "What is the purpose of the `await` keyword?",
+      "options": ["To run a function in parallel", "To immediately return a value", "To pause execution until a Future is complete"],
+      "correctAnswer": "To pause execution until a Future is complete",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "Future<void> onItemDelete(int index) async {\n  loader = true;\n  // The function pauses here until the API call finishes.\n  await DeleteCartApi.deleteSingleCart(quoteLineId: retrieveCartList[index].quoteLineId);\n  loader = false;\n}"
+      }
+    },
+    {
+      "cardId": "flutter_dart_020",
+      "category": "Asynchronous Programming",
+      "hint": "It represents a value that will be available later.",
+      "question": "A function marked `async` that doesn't explicitly return a value implicitly returns a what?",
+      "options": ["Future<void>", "null", "Stream"],
+      "correctAnswer": "Future<void>",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// This function performs an action but doesn't return data.\n// Its return type is Future<void>.\nFuture<void> onCheckoutTap() async {\n  checkOut();\n}"
+      }
+    },
+    {
+      "cardId": "flutter_dart_021",
+      "category": "GetX State Management",
+      "hint": "It's the base class for managing business logic.",
+      "question": "In GetX, which class do you extend to create a controller for managing state?",
+      "options": ["StateController", "ViewController", "GetxController"],
+      "correctAnswer": "GetxController",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// CartController holds the state and logic for the cart screen.\nclass CartController extends GetxController {\n  // ...\n}"
+      }
+    },
+    {
+      "cardId": "flutter_dart_022",
+      "category": "GetX State Management",
+      "hint": "This widget connects the UI to a controller.",
+      "question": "Which GetX widget rebuilds its child when its controller calls `update()`?",
+      "options": ["Observer", "GetBuilder", "ReactiveWidget"],
+      "correctAnswer": "GetBuilder",
+      "content": {
+        "type": "code",
+        "language": "dart",
+         "value": "GetBuilder<CartController>(\n  id: 'product_quantity',\n  builder: (controller) {\n    // This part of the UI rebuilds when update(['product_quantity']) is called.\n    return Text('Total: $${controller.getTotal(...)}');\n  }\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_023",
+      "category": "GetX State Management",
+      "hint": "This method is the trigger to refresh the UI.",
+      "question": "Inside a `GetxController`, what method do you call to manually trigger a rebuild of its `GetBuilder` widgets?",
+      "options": ["rebuild()", "update()", "setState()"],
+      "correctAnswer": "update()",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "void onQuantityRemove(int index) {\n  if (quantityList[index] != 0) {\n    quantityList[index]--;\n    // Notifies listening GetBuilders to rebuild.\n    update(['product_quantity']);\n  }\n}"
+      }
+    },
+    {
+      "cardId": "flutter_dart_024",
+      "category": "GetX Dependency Injection",
+      "hint": "It's how you access a controller that has already been initialized.",
+      "question": "How do you get an instance of a `GetxController` that has already been initialized with `Get.put()`?",
+      "options": ["Get.create()", "Get.find()", "Get.instance()"],
+      "correctAnswer": "Get.find()",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// Somewhere in the app, the controller is put into memory.\n// Get.put(CartController());\n\n// In the widget, it's found and used.\nfinal CartController controller = Get.find();"
+      }
+    },
+    {
+      "cardId": "flutter_dart_025",
+      "category": "GetX Navigation",
+      "hint": "This is how you close the current screen or dialog.",
+      "question": "Which GetX navigation method is used to close the current screen and return to the previous one?",
+      "options": ["Get.close()", "Get.back()", "Get.return()"],
+      "correctAnswer": "Get.back()",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "void onSaveCartTap() {\n  // Closes the current context (e.g., a dialog or menu).\n  Get.back();\n  // Then navigates to a new screen.\n  Get.to(() => CreateCartScreen());\n}"
+      }
+    },
+    {
+      "cardId": "flutter_dart_026",
+      "category": "GetX Navigation",
+      "hint": "It navigates to a new screen, replacing the current one.",
+      "question": "To navigate to a new screen and prevent the user from returning to the previous screen, which method is used?",
+      "options": ["Get.to()", "Get.off()", "Get.pushReplacement()"],
+      "correctAnswer": "Get.off()",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "if (result) {\n  await init();\n  Get.back(); // Close the dialog.\n  // Go to CartScreen and remove the old one from the navigation stack.\n  Get.off(() => CartScreen());\n}"
+      }
+    },
+    {
+      "cardId": "flutter_dart_027",
+      "category": "GetX Utilities",
+      "hint": "This provides the screen's dimensions.",
+      "question": "How can you easily get the screen's height using GetX?",
+      "options": ["Get.screen.height", "Get.mediaQuery.height", "Get.height"],
+      "correctAnswer": "Get.height",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// A SizedBox is given a height relative to the screen height.\nSizedBox(height: Get.height * 0.02511),"
+      }
+    },
+    {
+      "cardId": "flutter_dart_028",
+      "category": "GetX Localization",
+      "hint": "It's an extension method on String.",
+      "question": "What does the `.tr` extension on a string like `'grand_total'.tr` do in GetX?",
+      "options": ["Trims whitespace from the string", "Translates the string key into the current language", "Makes the text required"],
+      "correctAnswer": "Translates the string key into the current language",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// This will look up the key 'grand_total' in the translation files.\nText(\n  \"${'grand_total'.tr}:\",\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_029",
+      "category": "GetX State Management",
+      "hint": "It's a reactive type for booleans.",
+      "question": "What does `RxBool saveCartSelected = false.obs;` create?",
+      "options": ["A constant boolean", "A standard boolean variable", "A reactive boolean that updates the UI automatically"],
+      "correctAnswer": "A reactive boolean that updates the UI automatically",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// This variable is observable. When its value changes,\n// an Obx() widget listening to it will rebuild.\nRxBool saveCartSelected = false.obs;"
+      }
+    },
+    {
+      "cardId": "flutter_dart_030",
+      "category": "Dart Collections",
+      "hint": "It's a common way to transform items in a list.",
+      "question": "What is the purpose of the `.map().toList()` chain?",
+      "options": ["To filter and sort a list", "To convert each item in a list into a new form, creating a new list", "To find a specific item in a list"],
+      "correctAnswer": "To convert each item in a list into a new form, creating a new list",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "List<Map<String, dynamic>> list = retrieveCartList.map<Map<String, dynamic>>((e) {\n  // Each item 'e' is transformed into a Map.\n  return {\n    \"QUOTE_LINE_ID\": getQuoteLineId(e),\n    \"QUANTITY\": quantityList[index++].toString(),\n  };\n}).toList(); // The transformed items are collected into a new List."
+      }
+    },
+    {
+      "cardId": "flutter_dart_031",
+      "category": "Dart Basics",
+      "hint": "Think about converting text to a number.",
+      "question": "Which function is used to convert a `String` into a numeric type like `int` or `double`?",
+      "options": ["num.convert()", "num.parse()", "to.number()"],
+      "correctAnswer": "num.parse()",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// The string '1' is converted to the integer 1.\nvar quantityFactor = getQuantityFactor(retrieveCartList[index]);\nquantityList[index] = quantityList[index] + int.parse(quantityFactor);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_032",
+      "category": "Dart Basics",
+      "hint": "This method is useful for formatting currency values.",
+      "question": "How do you format a number to have a specific number of decimal places, returning a `String`?",
+      "options": ["toStringAsFixed()", "toFixed()", "formatDecimal()"],
+      "correctAnswer": "toStringAsFixed()",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "String getSubTotal(PRecordsetItem items) {\n  // Ensures the subTotal string always has two decimal places, e.g., '15.50'.\n  return num.parse(items.subTotal ?? \"0\").toStringAsFixed(2);\n}"
+      }
+    },
+    {
+      "cardId": "flutter_dart_033",
+      "category": "Flutter Widgets",
+      "hint": "This property lets you define the appearance of a text widget's border.",
+      "question": "In a `TextFormField`, what does the `decoration` property control?",
+      "options": ["The text color", "The font size", "The border, hint text, and icons"],
+      "correctAnswer": "The border, hint text, and icons",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "TextFormField(\n  decoration: InputDecoration(\n    hintText: 'Enter promo code',\n    border: UnderlineInputBorder(),\n  ),\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_034",
+      "category": "Dart Basics",
+      "hint": "It's a way to write a conditional expression on a single line.",
+      "question": "What is the structure `(condition ? value_if_true : value_if_false)` called?",
+      "options": ["If-else statement", "Switch expression", "Ternary operator"],
+      "correctAnswer": "Ternary operator",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// If the condition is true, use the first string; otherwise, use the second.\nText(\n  isQuebec ? \"item_number\".tr : \"cspc\".tr\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_035",
+      "category": "Dart Collections",
+      "hint": "This constructor creates a list by running a function for each index.",
+      "question": "What does `List.generate(count, generator)` do?",
+      "options": ["Generates a list of random numbers", "Creates a list of a given length, with each element created by the generator function", "Duplicates an existing list"],
+      "correctAnswer": "Creates a list of a given length, with each element created by thegenerator function",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// Creates a list of integers from 0 to 499.\nList<int> quantityLists = List.generate(500, (index) => index);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_036",
+      "category": "Flutter Widgets",
+      "hint": "This class is used to add shadows or elevation to a widget.",
+      "question": "Inside a `BoxDecoration`, what class is used to create a shadow effect?",
+      "options": ["Shadow", "BoxShadow", "Elevation"],
+      "correctAnswer": "BoxShadow",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "BoxDecoration(\n  color: ColorRes.white,\n  boxShadow: [\n    BoxShadow(\n      color: Colors.black.withOpacity(0.1),\n      blurRadius: 16,\n      offset: const Offset(0, 4),\n    ),\n  ],\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_037",
+      "category": "Dart Basics",
+      "hint": "It checks the type of an object at runtime.",
+      "question": "What is the `is` keyword used for in Dart?",
+      "options": ["To check for equality", "To check the runtime type of an object", "To assign a value"],
+      "correctAnswer": "To check the runtime type of an object",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// Checks if the JSON data is a single object (Map) or a list of objects.\nfactory RetrieveCartModel.fromJson(Map<String, dynamic> json) => RetrieveCartModel(\n  pRecordsetItem: json[\"P_RECORDSET_ITEM\"] is Map\n      ? [PRecordsetItem.fromJson(json[\"P_RECORDSET_ITEM\"])]\n      : List<PRecordsetItem>.from(...)\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_038",
+      "category": "Dart Collections",
+      "hint": "This method finds the first item that satisfies a condition.",
+      "question": "What is the advantage of using `firstWhereOrNull` from the `collection` package over `firstWhere`?",
+      "options": ["It is faster", "It returns the last match instead of the first", "It returns null instead of throwing an error if no element is found"],
+      "correctAnswer": "It returns null instead of throwing an error if no element is found",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// Safely finds the promotion name without risking an error if it's not present.\ngetReasonListName(List<GetLinePromotionColumn>? column) {\n  return column?.firstWhereOrNull((element) => element.name == \"PROMOTION_NAME\")?.empty ?? '';\n}"
+      }
+    },
+    {
+      "cardId": "flutter_dart_039",
+      "category": "Asynchronous Programming",
+      "hint": "It's useful for running multiple independent async tasks efficiently.",
+      "question": "What is the purpose of `Future.wait()`?",
+      "options": ["To wait for a specific duration", "To run multiple Futures sequentially", "To run multiple Futures concurrently and wait for all to complete"],
+      "correctAnswer": "To run multiple Futures concurrently and wait for all to complete",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "Future<void> _fetchAndAssignEcofees() async {\n  List<Future> futures = retrieveCartList.map((item) {\n    return LinePromotionApi.getLinePrice(item.quoteLineId ?? '');\n  }).toList();\n\n  // Waits for all network requests to finish before continuing.\n  await Future.wait(futures);\n}"
+      }
+    },
+    {
+      "cardId": "flutter_dart_040",
+      "category": "Dart Basics",
+      "hint": "This keyword indicates a method from a parent class is being replaced.",
+      "question": "What does the `@override` annotation signify?",
+      "options": ["The method is optional", "The method is deprecated", "The method is intentionally overriding a method from a superclass"],
+      "correctAnswer": "The method is intentionally overriding a method from a superclass",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "class CartItemList extends StatelessWidget {\n  // This build method is overriding the one in StatelessWidget.\n  @override\n  Widget build(BuildContext context) {\n    return Column();\n  }\n}"
+      }
+    },
+    {
+      "cardId": "flutter_dart_041",
+      "category": "Flutter Widgets",
+      "hint": "This property takes a list of widgets to display.",
+      "question": "In a `Column` or `Row`, what is the name of the property that holds the list of widgets to be displayed?",
+      "options": ["items", "widgets", "children"],
+      "correctAnswer": "children",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "Column(\n  // The 'children' property takes a List<Widget>.\n  children: [\n    Text('Child 1'),\n    Text('Child 2'),\n  ],\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_042",
+      "category": "Flutter Layout",
+      "hint": "It controls alignment along the widget's primary axis.",
+      "question": "In a `Row`, what does `MainAxisAlignment` control?",
+      "options": ["Vertical alignment", "Horizontal alignment", "The depth of the widgets"],
+      "correctAnswer": "Horizontal alignment",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "Row(\n  // This will center the items horizontally.\n  mainAxisAlignment: MainAxisAlignment.center,\n  children: [Icon(Icons.star), Text('Center')]\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_043",
+      "category": "Flutter Layout",
+      "hint": "It controls alignment perpendicular to the widget's primary axis.",
+      "question": "In a `Column`, what does `CrossAxisAlignment` control?",
+      "options": ["Vertical alignment", "Horizontal alignment", "The spacing between items"],
+      "correctAnswer": "Horizontal alignment",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "Column(\n  // This will stretch the children to fill the width.\n  crossAxisAlignment: CrossAxisAlignment.stretch,\n  children: [Text('Stretched Text')]\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_044",
+      "category": "Dart Basics",
+      "hint": "It's how you combine variables and text inside a string.",
+      "question": "What is the technique of embedding expressions inside a string using `${}` called?",
+      "options": ["String Concatenation", "String Interpolation", "String Formatting"],
+      "correctAnswer": "String Interpolation",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "Text(\n  // The value of controller.getTotal() is embedded directly in the string.\n  \"\\$${controller.getTotal(controller.retrieveCartList[0])}\"\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_045",
+      "category": "Flutter Widgets",
+      "hint": "It allows a user to pick from a list of choices in a compact way.",
+      "question": "Which widget is used to create a dropdown list of options?",
+      "options": ["SelectionList", "DropdownButton", "OptionMenu"],
+      "correctAnswer": "DropdownButton",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "DropdownButton<int>(\n  value: selectedValue,\n  items: numberList.map<DropdownMenuItem<int>>((e) {\n    return DropdownMenuItem(value: e, child: Text('$e'));\n  }).toList(),\n  onChanged: (value) { /* ... */ },\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_046",
+      "category": "Flutter Widgets",
+      "hint": "This widget controls whether its child is painted on the screen.",
+      "question": "To conditionally show or hide a widget without removing it from the tree, which widget would you use?",
+      "options": ["Opacity", "Visibility", "IfWidget"],
+      "correctAnswer": "Visibility",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "Visibility(\n  // The Column is only visible if the condition is true.\n  visible: PrefService.getString(PrefKeys.isCsrAccess) == \"Y\",\n  child: Column(),\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_047",
+      "category": "Dart Collections",
+      "hint": "It removes items from a list based on a condition.",
+      "question": "Which `List` method is used to remove all elements that satisfy a given test?",
+      "options": ["filter()", "deleteWhere()", "removeWhere()"],
+      "correctAnswer": "removeWhere()",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "List<Map<String, dynamic>> list = [...];\n// Removes all items from the list where the QUANTITY is '0'.\nlist.removeWhere((element) => element[\"QUANTITY\"] == \"0\");"
+      }
+    },
+    {
+      "cardId": "flutter_dart_048",
+      "category": "Flutter Text",
+      "hint": "It's a way to apply a set of styles without redefining each one.",
+      "question": "What is the purpose of the `.copyWith()` method on a `TextStyle` object?",
+      "options": ["To create a new `TextStyle` by overriding some properties of an existing one", "To copy the text to the clipboard", "To make the text style bold"],
+      "correctAnswer": "To create a new `TextStyle` by overriding some properties of an existing one",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "Text(\n  'Customer Name',\n  // Uses the base style 'styleW500S15' but changes the color.\n  style: styleW500S15.copyWith(color: ColorRes.grey5),\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_049",
+      "category": "Flutter Widgets",
+      "hint": "This is how you load an image that is part of your app's assets.",
+      "question": "Which constructor for the `Image` widget is used to display an image from the `assets` folder?",
+      "options": ["Image.network()", "Image.file()", "Image.asset()"],
+      "correctAnswer": "Image.asset()",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "Image.asset(\n  AssetRes.deleteIcon, // 'AssetRes.deleteIcon' is likely 'assets/images/delete_icon.png'\n  height: 24,\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_050",
+      "category": "GetX Navigation",
+      "hint": "It's useful for scenarios like logging in or completing an onboarding flow.",
+      "question": "Which GetX navigation method navigates to a new screen and removes ALL previous screens from the stack?",
+      "options": ["Get.off()", "Get.offAll()", "Get.replaceAll()"],
+      "correctAnswer": "Get.offAll()",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "onDeleteCartTap: () async {\n  await DeleteCartApi.deleteAllCart();\n  // Navigates to the Dashboard and clears the entire navigation history.\n  Get.offAll(() => DashboardScreen());\n}"
+      }
+    },
+    {
+      "cardId": "flutter_dart_051",
+      "category": "Flutter Text",
+      "hint": "This allows for advanced typographic features.",
+      "question": "In the code, what is `FontFeature.enable('sups')` used for?",
+      "options": ["To add a shadow", "To create superscript text", "To change the font"],
+      "correctAnswer": "To create superscript text",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "Text(\n  \"1\",\n  style: styleW500S10.copyWith(\n    fontFeatures: [\n      const FontFeature.enable('sups'), // Renders '1' as a superscript.\n    ],\n  ),\n),"
+      }
+    },
+    {
+      "cardId": "flutter_dart_052",
+      "category": "Dart Basics",
+      "hint": "This keyword declares a variable that can only be assigned once.",
+      "question": "What is the purpose of the `final` keyword?",
+      "options": ["To declare a global variable", "To declare a variable whose value cannot be changed after initialization", "To declare a variable that can be null"],
+      "correctAnswer": "To declare a variable whose value cannot be changed after initialization",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// The 'controller' variable will always point to the same CartController instance.\nfinal CartController controller = Get.find();"
+      }
+    },
+    {
+      "cardId": "flutter_dart_053",
+      "category": "Flutter Widgets",
+      "hint": "This class is used for controlling editable text fields.",
+      "question": "Which class from Flutter is used to control the text of a `TextField` or `TextFormField`?",
+      "options": ["TextController", "StringController", "TextEditingController"],
+      "correctAnswer": "TextEditingController",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "class CartController extends GetxController {\n  // This controller can be used to get, set, or listen to text changes.\n  final TextEditingController promoCodeController = TextEditingController();\n}"
+      }
+    },
+    {
+      "cardId": "flutter_dart_054",
+      "category": "Dart Collections",
+      "hint": "It adds a key-value pair only if the key is not already present.",
+      "question": "What does the `putIfAbsent` method on a `Map` do?",
+      "options": ["It updates the value for an existing key", "It adds a key-value pair only if the key does not exist", "It returns the value for a key"],
+      "correctAnswer": "It adds a key-value pair only if the key does not exist",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "Map<String, List> groupedData = {};\nString quoteLineId = '123';\n\n// If '123' is not a key in the map, it adds it with an empty list.\n_groupedData.putIfAbsent(quoteLineId, () => []);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_055",
+      "category": "Flutter Widgets",
+      "hint": "It defines the shape of a widget's border.",
+      "question": "To create an input field with only a line at the bottom, which `InputBorder` is used?",
+      "options": ["OutlineInputBorder", "UnderlineInputBorder", "BoxBorder"],
+      "correctAnswer": "UnderlineInputBorder",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "InputDecoration(\n  border: const UnderlineInputBorder(\n    borderSide: BorderSide(\n      color: ColorRes.appColor,\n      width: 0.5,\n    ),\n  ),\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_056",
+      "category": "Dart Basics",
+      "hint": "This function parameter is marked as being mandatory.",
+      "question": "What does the `required` keyword mean for a function parameter?",
+      "options": ["The parameter has a default value", "The parameter is optional", "The parameter must be provided when the function is called"],
+      "correctAnswer": "The parameter must be provided when the function is called",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// When calling shaderBox, you MUST provide a value for the 'child' parameter.\nWidget shaderBox({\n  required double topPadding,\n  required double bottomPadding,\n  required Widget child,\n}) {\n  return Container(child: child);\n}"
+      }
+    },
+    {
+      "cardId": "flutter_dart_057",
+      "category": "Dart Basics",
+      "hint": "It's a function that can work with any data type.",
+      "question": "In the function declaration `dropdown<T>`, what does `<T>` signify?",
+      "options": ["The function returns a Text widget", "The function is a Template", "The function is generic and can operate on any type `T`"],
+      "correctAnswer": "The function is generic and can operate on any type `T`",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// This function can create a dropdown for integers, strings, or any other type.\nWidget dropdown<T>({\n  List<T?>? dataList,\n  T? value,\n  Function(T?)? onChange,\n}) {\n  // ...\n}"
+      }
+    },
+    {
+      "cardId": "flutter_dart_058",
+      "category": "Flutter Widgets",
+      "hint": "This is often used for a button's callback.",
+      "question": "What is the common property name for handling a tap event on a widget like `InkWell` or a button?",
+      "options": ["onClick", "onPressed", "onTap"],
+      "correctAnswer": "onTap",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "InkWell(\n  // This function is executed when the widget is tapped.\n  onTap: () => controller.onItemDelete(index),\n  child: Image.asset(AssetRes.deleteIcon),\n);"
+      }
+    },
+    {
+      "cardId": "flutter_dart_059",
+      "category": "Dart Collections",
+      "hint": "This method reorders the elements in a list.",
+      "question": "Which `List` method is used to arrange its elements in a specific order (e.g., ascending)?",
+      "options": ["order()", "arrange()", "sort()"],
+      "correctAnswer": "sort()",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "List<int> quantityLists = [50, 10, 30];\n// After this call, the list will be [10, 30, 50].\nquantityLists.sort();"
+      }
+    },
+    {
+      "cardId": "flutter_dart_060",
+      "category": "Asynchronous Programming",
+      "hint": "It's a way to handle potential failures in async operations.",
+      "question": "On a `Future`, what is the purpose of the `.catchError()` method?",
+      "options": ["To ignore any errors", "To provide a callback that executes if the Future fails", "To retry the operation automatically"],
+      "correctAnswer": "To provide a callback that executes if the Future fails",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "LinePromotionApi.getLinePrice(item.quoteLineId ?? '')\n  .then((model) {\n    // This runs on success.\n  })\n  .catchError((error) {\n    // This block runs if the API call fails.\n    print('DEBUG: Error fetching price: $error');\n    item.ecofeePrice = '0.00';\n  });"
+      }
+    }
+  ]
+}
