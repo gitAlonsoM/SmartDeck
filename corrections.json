@@ -1,178 +1,242 @@
 [
   {
-    "cardId": "tpp_064",
+    "cardId": "tpp_087",
     "sideA": {
       "conversation": [
         {
-          "text": "If a product price changes tomorrow, and I place the order today for delivery next week, which price do I pay?",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_064_a.mp3"
+          "text": "Why is it so important to test the switch customer feature?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_087_a.mp3"
         },
         {
-          "text": "You pay today's price. The pricing is always based on the Order Date.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_064_b.mp3"
+          "text": "Because our Sales Rep Profile users manage hundreds of customers and need to place orders for them quickly.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_087_b.mp3"
         }
       ]
     },
-    "note": "This card illustrates a 'nuanced' (Adjective) business rule: pricing is based on the 'Order Date,' not the 'Delivery Date.'\n\nTesting such 'edge cases' (uncommon scenarios) is critical for application correctness."
+    "note": "The importance of a feature is often tied to the specific needs of a key user 'profile' (Noun). Understanding the user's workflow justifies the testing effort.\n\n'Sales Rep Profile' (Noun Phrase) refers to a specific type of user account for a Sales Representative, which has special permissions like placing orders on behalf of multiple customers."
   },
   {
-    "cardId": "tpp_054",
+    "cardId": "tpp_068",
     "sideA": {
       "conversation": [
         {
-          "text": "The tester reported that a brand logo is missing.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_054_a.mp3"
+          "text": "At what point is the order released to AGLC?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_068_a.mp3"
         },
         {
-          "text": "We should check if that brand is still sold in the SK region. It might be a not applicable issue.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_054_b.mp3"
+          "text": "It happens after the order status changes from Entered to Booked in the backend.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_068_b.mp3"
         }
       ]
     },
-    "note": "In this context, 'sold' means 'offered for sale.'\n\nBefore fixing a bug, it's important to verify if its business context is still valid. If a product is no longer sold, the bug might be considered 'not applicable' (Adjective Phrase)."
+    "note": "'Integration points' (Noun Phrase) are specific moments in a process where one system communicates with another. Pinpointing when these happen is key to understanding the 'business flow' (Noun).\n\n'AGLC' (Acronym) stands for Alberta Gaming, Liquor and Cannabis. It is the government agency in Alberta, Canada, that oversees the liquor and cannabis industries. In this context, it's an external system that orders are 'released to'."
   },
   {
-    "cardId": "tpp_035",
+    "cardId": "tpp_063",
     "sideA": {
       "conversation": [
         {
-          "text": "The not a valid month bug (Issue #9 and #10) is blocking our QC testers.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_035_a.mp3"
+          "text": "The note says the search is now working. What does now working imply?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_063_a.mp3"
         },
         {
-          "text": "I agree, this has the highest priority. The users cannot book an order.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_035_b.mp3"
+          "text": "It implies that it was previously broken, but a fix was deployed and it has been re-tested successfully.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_063_b.mp3"
         }
       ]
     },
-    "note": "A 'blocking' issue (or 'blocker') (Noun) is a critical bug that prevents testers from proceeding. It always has the highest 'priority' (Noun).\n\n'QC' stands for Quality Control, the team responsible for testing software to ensure it meets standards."
+    "note": "'Now working' means the transition from a 'broken' (Adjective) state to a functional one.\n\n'To imply' (Verb) means to strongly suggest the truth or existence of something without stating it directly."
   },
   {
-    "cardId": "tpp_049",
+    "cardId": "tpp_111",
     "sideA": {
       "conversation": [
         {
-          "text": "Which URL do I use to test the application itself?",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_049_a.mp3"
+          "text": "The Keg Broken Seal return reason isn't available for selection in Quebec.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_111_a.mp3"
         },
         {
-          "text": "Use the Proxy Server URL. The Web Logic Server URL is for the developers to check backend services.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_049_b.mp3"
+          "text": "That's by design. The business rules for QC are different. Check the 'Preferences' for that region.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_111_b.mp3"
         }
       ]
     },
-    "note": "A 'Proxy Server' (Noun) acts as a secure gateway that is typically used for user-level interaction.\n\nIt is common for projects to also have a direct server URL (like Web Logic) that developers use to test backend 'services' (Noun)."
+    "note": "'Keg Broken Seal' (Noun Phrase) is a return reason for a keg with a compromised security seal.\n\n'Quebec' (QC) (Noun) is a province in Canada.\n\n'Preferences' (Noun) are user-configurable or region-specific settings.\n\nA 'seal' (Noun), in this context, is a device or substance used to join two things together to prevent them from coming apart or to prevent anything from passing between them. A broken seal on a keg indicates it may have been tampered with or is no longer fresh."
   },
   {
-    "cardId": "tpp_059",
+    "cardId": "tpp_122",
     "sideA": {
       "conversation": [
         {
-          "text": "Why did the test with the on-premise account fail?",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_059_a.mp3"
+          "text": "The bug Pricing details lack info seems to be specific to Alberta.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_122_a.mp3"
         },
         {
-          "text": "It seems the test data was wrong. That account was not set up correctly in the EBS.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_059_b.mp3"
+          "text": "Yes, the CA_HST logic for AB is not returning the tax breakdown. It works for Ontario.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_122_b.mp3"
         }
       ]
     },
-    "note": "'On-premise' (Adjective) describes a business that sells goods for consumption on its property (e.g., a bar or restaurant).\n\n'Data integrity' (Noun Phrase) is crucial for testing. If the test data is incorrect or not 'set up' (Phrasal Verb) properly, test results will be invalid."
+    "note": "'Pricing details lack info' (Bug Description) is a problem where price breakdowns are incomplete or missing.\n\n'Alberta' (AB) (Noun) is a province in Canada.\n\n'CA_HST' (Harmonized Sales Tax) is a combined federal and provincial sales tax.\n\nA 'breakdown' (Noun) is an itemized list of parts or components. A 'tax breakdown' separates the total tax into its individual parts, such as federal tax (GST) and provincial tax (PST)."
   },
   {
-    "cardId": "tpp_061",
+    "cardId": "tpp_026",
     "sideA": {
       "conversation": [
         {
-          "text": "Is the SOA endpoint for the iStore Mobile pricing service public?",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_061_a.mp3"
+          "text": "Does the minimum quantity rule apply to both on-premise and retail customers?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_026_a.mp3"
         },
         {
-          "text": "No, it's internal. All calls must go through the Web Logic Server via the Proxy Server.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_061_b.mp3"
+          "text": "Yes, but the actual quantity is different depending on the customer profile.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_026_b.mp3"
         }
       ]
     },
-    "note": "'SOA' (Service-Oriented Architecture) is a design where components are independent 'services.' A 'Proxy Server' is a secure gateway to these services.\n\nAn 'endpoint' (Noun) is a service's URL. Differentiating between 'public' and 'internal' endpoints is fundamental for security."
+    "note": "'Minimum Quantity' (Noun) is a business rule that enforces a lower limit on order size. Testing that this rule applies correctly to different customer 'Profiles' (Noun) is essential.\n\n'On-premise' customers are businesses that sell products for immediate consumption at their location (e.g., bars, restaurants). 'Retail' customers are businesses that sell products for consumption elsewhere (e.g., liquor stores)."
   },
   {
-    "cardId": "tpp_034",
+    "cardId": "tpp_014",
     "sideA": {
       "conversation": [
         {
-          "text": "For Test Task # 8.1.3, what am I validating?",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_034_a.mp3"
+          "text": "Does the superscript number refer to the correct Legal Note?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_014_a.mp3"
         },
         {
-          "text": "You need to validate that a sales rep has the option to switch between their different customers.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_034_b.mp3"
+          "text": "Yes, it correctly links to the disclaimer at the bottom of the Shopping Cart.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_014_b.mp3"
         }
       ]
     },
-    "note": "'Sales rep' is short for Sales Representative, an employee who sells products and may need to manage multiple customer accounts.\n\nA 'Test Task' (Noun) is a specific instruction in a test plan, while 'validating' (Verb) means confirming a feature works as required."
+    "note": "'Superscript' (Noun) is text raised slightly above the line (like ¹), often used for footnotes.\n\n'Refer to' (Phrasal Verb) means to direct attention to something for information.\n\nA 'disclaimer' (Noun) is a statement that denies something, especially responsibility. In e-commerce, it's often a legal note that clarifies terms, conditions, or limitations."
   },
   {
-    "cardId": "tpp_070",
+    "cardId": "tpp_045",
     "sideA": {
       "conversation": [
         {
-          "text": "Why does the business call it a tile and not just a section?",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_070_a.mp3"
+          "text": "If an order is booked in the iStore app, how do we prove it reached the EBS?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_045_a.mp3"
         },
         {
-          "text": "Because tile implies it's a modular, self-contained block of UI, which is how it's designed in the frontend.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_070_b.mp3"
+          "text": "You have to pull it up by order number in the Oracle Order Organizer to validate that it exists there.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_045_b.mp3"
         }
       ]
     },
-    "note": "In UI design, a 'tile' (Noun) is a self-contained, rectangular block that displays specific information or provides a link.\n\nThe use of this term reflects the 'modular' technical design. Understanding shared business terminology improves team communication."
+    "note": "Validating 'inter-system communication' (Noun Phrase) is crucial. Proving data exists in a downstream system (like EBS) after an action in an upstream system (iStore) is a common end-to-end test.\n\n'Pull it up' (Phrasal Verb) is an informal way to say 'to retrieve' or 'to display' information from a system. It means to search for and open a specific record, like an order."
   },
   {
-    "cardId": "tpp_010",
+    "cardId": "tpp_071",
     "sideA": {
       "conversation": [
         {
-          "text": "Was the on-premise customer able to order below the minimum quantity?",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_010_a.mp3"
+          "text": "This ticket for the SK region has no developer assigned to it.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_071_a.mp3"
         },
         {
-          "text": "No, the test passed. The user was prevented from doing so.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_010_b.mp3"
+          "text": "You're right. Let's assign it to Sean, as he has experience with the SK-specific requirements.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_071_b.mp3"
         }
       ]
     },
-    "note": "'On-premise' (Adjective) describes a business that sells goods for immediate consumption on its property (e.g., a restaurant or bar).\n\n'Prevented from doing so' (Verb Phrase) means an action was blocked by the system, often as part of a validation rule."
+    "note": "An 'unassigned' (Adjective) ticket is a risk. Assigning tasks based on a developer's specific experience or expertise is an effective project management strategy.\n\n'Sean' is a common male first name. In a professional context, using a name almost always refers to a specific person on the team."
   },
   {
-    "cardId": "tpp_080",
+    "cardId": "tpp_099",
     "sideA": {
       "conversation": [
         {
-          "text": "How should I design the test case for the Pricing Issue?",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_080_a.mp3"
+          "text": "Before we deploy, can someone do a quick sanity check on the ON production URL?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_099_a.mp3"
         },
         {
-          "text": "You need to find a SKU that has a price change effective tomorrow, and then place the order with both today's and tomorrow's delivery date to compare.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_080_b.mp3"
+          "text": "Good idea. I'll just place an order with a test account to make sure the core functionality is working.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_099_b.mp3"
         }
       ]
     },
-    "note": "'SKU' (Stock Keeping Unit) is a unique code used to identify and track a specific product in inventory.\n\n'Test case design' (Noun Phrase) involves creating tests for 'edge cases' (uncommon scenarios), like a price change that happens overnight."
+    "note": "A 'sanity check' (Idiom/Noun) is a brief, high-level test to ensure that the core functionality of a system is working after a change. It's not exhaustive, but it catches major problems.\n\n'Brief' (Adjective) means of short duration; not lasting for long. A brief test is one that is quick and does not take much time."
   },
   {
-    "cardId": "tpp_115",
+    "cardId": "tpp_114",
     "sideA": {
       "conversation": [
         {
-          "text": "The total tax calculated for Saskatchewan seems incorrect.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_115_a.mp3"
+          "text": "The Bill To address is not being populated from the customers Personal Information.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_114_a.mp3"
         },
         {
-          "text": "That's the Taxes doesn't match value bug. The CA_GST rate is wrong for SK.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_115_b.mp3"
+          "text": "Is the Fill Details button present? The user should be able to click it to auto-populate the form.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_114_b.mp3"
         }
       ]
     },
-    "note": "'Saskatchewan' (SK) is a province and 'CA_GST' is a sales tax in Canada.\n\nIn this context, 'rate' (Noun) refers to the specific percentage used to calculate a tax (e.g., a tax rate of 5%)."
+    "note": "'Bill To' (Noun Phrase) refers to the billing address for an invoice.\n\n'Personal Information' (Noun) are user-specific details like name and address.\n\n'Fill Details' (Verb Phrase) is an action to automatically populate required fields.\n\nA 'bill' (Noun) is a printed or written statement of the money owed for goods or services. The 'Billing Address' is the address associated with a customer's payment method, where the invoice or bill is sent."
+  },
+  {
+    "cardId": "tpp_120",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "We need a Calender icon next to the Date field for delivery selection.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_120_a.mp3"
+        },
+        {
+          "text": "Agreed. I'll add the icon and hook it up to a date picker component. That's a quick UI fix.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_120_b.mp3"
+        }
+      ]
+    },
+    "note": "'Calender' (Noun, common typo for Calendar) refers to the icon used for selecting dates.\n\n'Date' (Noun) refers to a specific day, often for an order or delivery.\n\n'To hook up' (Phrasal Verb) in a technical context means to connect or link two components so they work together. For example, connecting an icon's click event to the function that opens a date picker."
+  },
+  {
+    "cardId": "tpp_094",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "Are we ready to release this new version?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_094_a.mp3"
+        },
+        {
+          "text": "Not until the business manager can sign off on the UAT results.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_094_b.mp3"
+        }
+      ]
+    },
+    "note": "'Sign off on' (Phrasal Verb) means to give formal approval. Getting sign-off from key stakeholders (like a business manager) on test results is a critical gate before a 'release' (Noun).\n\n'UAT' (Acronym) stands for User Acceptance Testing. It's the final phase of testing where actual users test the software to see if it meets their business needs before the official release."
+  },
+  {
+    "cardId": "tpp_145",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "What does the coming up as phrase mean in this ticket?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_145_a.mp3"
+        },
+        {
+          "text": "It means the system is incorrectly displaying one value instead of another. For example, showing Breakage instead of Defective Keg.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_145_b.mp3"
+        }
+      ]
+    },
+    "note": "'coming up as' (Phrasal Verb) means 'to appear as' or 'to be displayed as', often highlighting a discrepancy or error.\n\nYes, your understanding is correct. 'Defective' (Adjective) means imperfect or faulty; it has a flaw. A 'Defective Keg' is a keg that is not working correctly or has a manufacturing problem."
+  },
+  {
+    "cardId": "tpp_044",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "I need to set up the test for the Under Minimum ticket. It seems complex.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_044_a.mp3"
+        },
+        {
+          "text": "Yes, you need to use two customer profiles: one on-premise and one off-premise to see the different limits.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_044_b.mp3"
+        }
+      ]
+    },
+    "note": "'Set up' (Phrasal Verb) means to prepare the necessary conditions for a task. Complex tests often require specific data setups, such as using multiple user profiles.\n\n'On-premise' refers to businesses where products (like beer) are sold and consumed on site, such as a bar or restaurant.\n\n'Off-premise' refers to businesses where products are sold for consumption elsewhere, such as a retail liquor store."
   }
 ]
