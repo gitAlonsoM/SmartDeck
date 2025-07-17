@@ -2723,6 +2723,167 @@
         ]
       },
       "note": "'Sub-Total' (Noun) is confirmed to be the sum of the 'Net Price' from every single product line present in the cart."
-    }
-  ]
+    },
+  {
+    "cardId": "tpp_171",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "In the meeting notes, you wrote UAT and SKU. Are both of these acronyms?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_171_a.mp3"
+        },
+        {
+          "text": "Good question. Technically, UAT is an initialism because we say each letter, U-A-T. SKU is a true acronym because we pronounce it as a word, skew.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_171_b.mp3"
+        }
+      ]
+    },
+    "note": "'Initialism' (Noun) is an abbreviation where each letter is pronounced individually (e.g., U-A-T).\n\n'Acronym' (Noun) is an abbreviation pronounced as a single word (e.g., SKU)."
+  },
+  {
+    "cardId": "tpp_172",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "The ticket mentions both the CSR and QC teams need to be involved.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_172_a.mp3"
+        },
+        {
+          "text": "Right, and for clarity, both CSR and QC are common initialisms in our business, pronounced C-S-R and Q-C.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_172_b.mp3"
+        }
+      ]
+    },
+    "note": "'CSR' (Customer Service Representative) and 'QC' (Quality Control) are examples of initialisms because the individual letters are spoken."
+  },
+  {
+    "cardId": "tpp_173",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "What about SOA for Service-Oriented Architecture? Is that an acronym or an initialism?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_173_a.mp3"
+        },
+        {
+          "text": "It's almost always used as an initialism, S-O-A. If people pronounced it 'so-ah', then it would be an acronym.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_173_b.mp3"
+        }
+      ]
+    },
+    "note": "'SOA' (Service-Oriented Architecture) is a design pattern. The way it's pronounced determines if it's used as an initialism (S-O-A) or an acronym."
+  },
+  {
+    "cardId": "tpp_174",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "I need to find an order using the PO number from the invoice.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_174_a.mp3"
+        },
+        {
+          "text": "Okay. And just to confirm for the new team member, PO is the initialism for Purchase Order.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_174_b.mp3"
+        }
+      ]
+    },
+    "note": "'PO' (Purchase Order) is a commercial document and its abbreviation is used as an initialism (P-O)."
+  },
+  {
+    "cardId": "tpp_175",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "Does the HST charge replace the GST charge on this invoice?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_175_a.mp3"
+        },
+        {
+          "text": "In some provinces, yes. The initialism HST, or Harmonized Sales Tax, includes the federal GST.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_175_b.mp3"
+        }
+      ]
+    },
+    "note": "'GST' (Goods and Services Tax) and 'HST' (Harmonized Sales Tax) are both tax-related initialisms."
+  },
+  {
+    "cardId": "tpp_176",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "All our order data has to be synchronized with the EBS.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_176_a.mp3"
+        },
+        {
+          "text": "Correct. And for any new developers, EBS is the initialism for Oracle's E-Business Suite.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_176_b.mp3"
+        }
+      ]
+    },
+    "note": "'EBS' (Oracle E-Business Suite) is a large suite of business software. Its abbreviation is an initialism."
+  },
+  {
+    "cardId": "tpp_177",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "Please send me the URL for the test environment.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_177_a.mp3"
+        },
+        {
+          "text": "Sure. It's interesting how URL is an initialism, but people say it so fast it almost sounds like an acronym.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_177_b.mp3"
+        }
+      ]
+    },
+    "note": "'URL' (Uniform Resource Locator) is the address of a resource on the internet and is an initialism."
+  },
+  {
+    "cardId": "tpp_178",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "Is the pricing data being pulled from a new API?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_178_a.mp3"
+        },
+        {
+          "text": "Yes. And by the way, API is a classic initialism we use every day for Application Programming Interface.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_178_b.mp3"
+        }
+      ]
+    },
+    "note": "'API' (Application Programming Interface) is a fundamental concept in software development, and its abbreviation is an initialism."
+  },
+  {
+    "cardId": "tpp_179",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "I found another bug in the UI.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_179_a.mp3"
+        },
+        {
+          "text": "Okay, and when you say UI, you're using the initialism for User Interface, correct? Just making sure we're on the same page.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_179_b.mp3"
+        }
+      ]
+    },
+    "note": "'UI' (User Interface) is the visual part of an application that users interact with. Its abbreviation is an initialism."
+  },
+  {
+    "cardId": "tpp_180",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "It's helpful to clarify if something is an acronym or an initialism for new hires.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_180_a.mp3"
+        },
+        {
+          "text": "I agree. It ensures everyone from QA to the dev team understands our specific terminology.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_180_b.mp3"
+        }
+      ]
+    },
+    "note": "'QA' (Quality Assurance) is an initialism for the team that tests software.\n\n'Dev team' is short for Development Team, the group of programmers."
+  }
+]
+  
 }
