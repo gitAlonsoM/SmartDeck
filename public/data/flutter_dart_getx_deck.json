@@ -1,7 +1,7 @@
 {
   "id": "flutter_dart_getx_deck",
-  "name": "Flutter, Dart & GetX Fundamentals",
-  "description": "A comprehensive deck covering the fundamentals of Flutter, Dart, and the GetX package. It explores core concepts, UI widgets, state management, asynchronous programming, and data modeling based on real-world application code.",
+  "name": "Flutter, Dart & GetX: From Core Concepts to MVVM",
+  "description": "Master Flutter, Dart, and GetX. This deck covers widgets, state management, async, and the MVVM architecture, taking you from fundamental concepts to building scalable applications.",
   "deckType": "multipleChoice",
   "isAiGenerated": true,
   "language": "dart",
@@ -785,6 +785,684 @@
         "language": "dart",
         "value": "LinePromotionApi.getLinePrice(item.quoteLineId ?? '')\n  .then((model) {\n    // This runs on success.\n  })\n  .catchError((error) {\n    // This block runs if the API call fails.\n    print('DEBUG: Error fetching price: $error');\n    item.ecofeePrice = '0.00';\n  });"
       }
+    },
+    {
+    "cardId": "flutter_dart_061",
+    "category": "MVVM Concepts",
+    "hint": "It's the application's memory at any given time.",
+    "question": "In application development, what does 'State' refer to?",
+    "options": [
+      "The visual design of the UI",
+      "The data an application needs to remember at any moment",
+      "A function that performs a calculation"
+    ],
+    "correctAnswer": "The data an application needs to remember at any moment",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "// Examples of state:\nbool isLoading = true;\nList<String> shoppingCartItems = ['Apple', 'Banana'];\nString userSearchQuery = 'Flutter';\n"
     }
-  ]
-}
+  },
+  {
+    "cardId": "flutter_dart_062",
+    "category": "State Management",
+    "hint": "It ensures the UI and data are synchronized.",
+    "question": "What is the primary purpose of 'State Management' in a complex application?",
+    "options": [
+      "To provide an organized way to manage how state is created, updated, and passed to the UI",
+      "To define the color scheme and fonts for the app",
+      "To connect the application to the internet"
+    ],
+    "correctAnswer": "To provide an organized way to manage how state is created, updated, and passed to the UI",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "// In GetX, the controller manages the state.\nclass CartController extends GetxController {\n  var cartItemCount = 0.obs; // .obs makes it observable\n\n  void increment() {\n    cartItemCount.value++; // The state is updated here.\n  }\n}"
+    }
+  },
+  {
+    "cardId": "flutter_dart_063",
+    "category": "MVVM Architecture",
+    "hint": "Data flows in a single, predictable path.",
+    "question": "What is 'Unidirectional Data Flow' in the context of MVVM?",
+    "options": [
+      "Data can flow from the View directly to the Model",
+      "Data flows in one direction: Model -> ViewModel -> View",
+      "Data flows in one direction: View -> Model -> ViewModel"
+    ],
+    "correctAnswer": "Data flows in one direction: Model -> ViewModel -> View",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "// 1. Model: Defines the data structure.\nclass User { String name; }\n\n// 2. ViewModel: Gets data from Model.\nclass UserController {\n  User user = User(name: 'Alex');\n}\n\n// 3. View: Reads data from ViewModel.\n// Text(controller.user.name);"
+    }
+  },
+  {
+    "cardId": "flutter_dart_064",
+    "category": "MVVM Architecture",
+    "hint": "It's the 'brains' of the application.",
+    "question": "In MVVM, where should the 'Business Logic' (e.g., calculations, validation) reside?",
+    "options": [
+      "In the View, alongside the UI code",
+      "In the Model, alongside the data fields",
+      "In the ViewModel"
+    ],
+    "correctAnswer": "In the ViewModel",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "// Business logic for calculating a discount belongs in the ViewModel.\nclass ProductViewModel {\n  double calculateDiscount(double price, double percentage) {\n    return price * (percentage / 100);\n  }\n}"
+    }
+  },
+  {
+    "cardId": "flutter_dart_065",
+    "category": "MVVM in Flutter",
+    "hint": "The ViewModel transforms raw data for the UI.",
+    "question": "Why does the ViewModel calculate 'derived data' (like a total price) instead of the View?",
+    "options": [
+      "To centralize the logic, making it easier to maintain",
+      "Because Views are unable to perform mathematical operations",
+      "To reduce the amount of memory the Model uses"
+    ],
+    "correctAnswer": "To centralize the logic, making it easier to maintain",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "// ViewModel performs the calculation.\n// If the tax rate changes, you only update it here.\nclass CartController {\n  String getTotal(double subtotal) {\n    final tax = subtotal * 0.19;\n    return (subtotal + tax).toStringAsFixed(2);\n  }\n}"
+    }
+  },
+  {
+    "cardId": "flutter_dart_066",
+    "category": "State Management",
+    "hint": "This state is not from a server; it's for the UI only.",
+    "question": "How does a ViewModel manage 'local UI state', such as the currently selected tab?",
+    "options": [
+      "It asks the Model to store the selected tab",
+      "It stores the state in a local variable and notifies the View when it changes",
+      "It saves the selected tab to a file on the device"
+    ],
+    "correctAnswer": "It stores the state in a local variable and notifies the View when it changes",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "class MyController extends GetxController {\n  int selectedIndex = 0;\n\n  void changeTab(int index) {\n    selectedIndex = index;\n    update(); // Notify listeners (the View) to rebuild.\n  }\n}"
+    }
+  },
+  {
+    "cardId": "flutter_dart_067",
+    "category": "MVVM in Flutter",
+    "hint": "The View informs the ViewModel of user actions.",
+    "question": "When a user types into a `TextField`, how does the View communicate this input to the ViewModel in MVVM?",
+    "options": [
+      "The ViewModel automatically reads the `TextField`'s text",
+      "The `TextField`'s `onChanged` callback calls a method in the ViewModel",
+      "The View saves the text and the ViewModel reads it later"
+    ],
+    "correctAnswer": "The `TextField`'s `onChanged` callback calls a method in the ViewModel",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "TextField(\n  // The View tells the ViewModel about the new value instantly.\n  onChanged: (newValue) {\n    controller.updateSearchQuery(newValue);\n  },\n)"
+    }
+  },
+  {
+    "cardId": "flutter_dart_068",
+    "category": "MVVM in Flutter",
+    "hint": "Navigation is considered a business rule.",
+    "question": "Why is navigation logic (like `Get.to()`) handled by the ViewModel?",
+    "options": [
+      "Because the View is not allowed to decide when or where to navigate",
+      "Because `Get.to()` can only be called from a ViewModel",
+      "To make the screen transition animations faster"
+    ],
+    "correctAnswer": "Because the View is not allowed to decide when or where to navigate",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "class LoginController extends GetxController {\n  void onLoginSuccess() {\n    // The logic 'go to home screen after success' lives here.\n    Get.offAll(() => HomeScreen());\n  }\n}"
+    }
+  },
+  {
+    "cardId": "flutter_dart_069",
+    "category": "Data Modeling",
+    "hint": "This method prepares a Dart object for an API request.",
+    "question": "What is the purpose of a `toJson()` method in a Model class?",
+    "options": [
+      "To parse JSON from a server into a Dart object",
+      "To convert a Dart object into a JSON-compatible Map",
+      "To render the object's data as a widget"
+    ],
+    "correctAnswer": "To convert a Dart object into a JSON-compatible Map",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "class Product {\n  String id; \n  String name;\n\n  // ... constructor ...\n\n  // Converts the Product object to a Map.\n  Map<String, dynamic> toJson() => {\n    'product_id': id,\n    'product_name': name,\n  };\n}"
+    }
+  },
+  {
+    "cardId": "flutter_dart_070",
+    "category": "Async Programming",
+    "hint": "It's much faster than waiting for each call one by one.",
+    "question": "What is the main benefit of using `Future.wait` for multiple API calls?",
+    "options": [
+      "It merges the results of all API calls into one response",
+      "It runs all API calls concurrently, reducing total wait time",
+      "It automatically retries any API call that fails"
+    ],
+    "correctAnswer": "It runs all API calls concurrently, reducing total wait time",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "// Instead of await call1; await call2; (sequential)\n// This starts both calls at once and waits for both to finish.\nList<Future> apiCalls = [\n  Api.fetchUserData(),\n  Api.fetchProductData(),\n];\n\nawait Future.wait(apiCalls);"
+    }
+  },
+  {
+    "cardId": "flutter_dart_071",
+    "category": "MVVM Concepts",
+    "hint": "The relationship is cause and effect.",
+    "question": "What is the relationship between 'State' and the User Interface (UI)?",
+    "options": [
+      "The state is determined by the UI's colors",
+      "They are completely independent of each other",
+      "The UI is a visual representation of the current state"
+    ],
+    "correctAnswer": "The UI is a visual representation of the current state",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "// If state.isLoggedIn is true, show ProfileIcon.\n// If false, show LoginButton.\n// The UI changes based on the state.\n\nState state;\n\nif (state.isLoggedIn) {\n  return ProfileIcon();\n} else {\n  return LoginButton();\n}"
+    }
+  },
+  {
+    "cardId": "flutter_dart_072",
+    "category": "MVVM Architecture",
+    "hint": "It ensures the application is predictable and easier to debug.",
+    "question": "What is the main advantage of having a 'Unidirectional Data Flow'?",
+    "options": [
+      "It allows any part of the app to change any other part",
+      "It makes the application predictable by restricting how data can move",
+      "It makes the application run faster"
+    ],
+    "correctAnswer": "It makes the application predictable by restricting how data can move",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "// Because data only flows one way (Model -> VM -> View),\n// if there is a bug in the data displayed,\n// you know the problem must be in the VM or the Model, not the View."
+    }
+  },
+  {
+    "cardId": "flutter_dart_073",
+    "category": "MVVM Architecture",
+    "hint": "Its only job is to display things.",
+    "question": "In MVVM, a 'dumb' View should only be concerned with what?",
+    "options": [
+      "Displaying data and telling the ViewModel about user actions",
+      "Calculating data and making API calls",
+      "Defining the data structure of the application"
+    ],
+    "correctAnswer": "Displaying data and telling the ViewModel about user actions",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "// This View is 'dumb'. It only displays the count from the controller.\n// It doesn't know how to increment or what the initial value is.\nObx(() => Text('Count: ${controller.count}'))"
+    }
+  },
+  {
+    "cardId": "flutter_dart_074",
+    "category": "MVVM Architecture",
+    "hint": "Its only job is to hold data.",
+    "question": "In MVVM, a 'dumb' Model should only be concerned with what?",
+    "options": [
+      "How to display itself on the screen",
+      "The structure of the data and converting it to/from JSON",
+      "Handling user taps and navigation"
+    ],
+    "correctAnswer": "The structure of the data and converting it to/from JSON",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "// This Model only defines the structure for a Todo item.\n// It contains no logic about UI or business rules.\nclass Todo {\n  final String id;\n  final String task;\n  bool isCompleted;\n\n  Todo({this.id, this.task, this.isCompleted = false});\n}"
+    }
+  },
+  {
+    "cardId": "flutter_dart_075",
+    "category": "MVVM in Flutter",
+    "hint": "This function is called by the `DropdownButton` widget.",
+    "question": "In the code, what is the role of the `onChange` property?",
+    "options": [
+      "To set the initial value of the dropdown",
+      "To define the list of items to show in the dropdown",
+      "To provide a function that runs when the user selects a new value"
+    ],
+    "correctAnswer": "To provide a function that runs when the user selects a new value",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "dropdown<int>(\n  onChange: (int? value) { // This function is triggered on selection.\n    controller.quantityChange(index, value);\n  },\n  value: controller.quantityList[index],\n  dataList: controller.quantityListFunction(index),\n)"
+    }
+  },
+  {
+    "cardId": "flutter_dart_076",
+    "category": "State Management",
+    "hint": "It tells a specific part of the UI to refresh.",
+    "question": "In `update(['product_quantity'])`, what does the string 'product_quantity' represent?",
+    "options": [
+      "A variable name being updated",
+      "A unique ID that tells a specific GetBuilder widget to rebuild",
+      "A message to be printed to the debug console"
+    ],
+    "correctAnswer": "A unique ID that tells a specific GetBuilder widget to rebuild",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "// In the Controller:\nupdate(['product_quantity']);\n\n// In the View, only this specific builder will run:\nGetBuilder<CartController>(\n  id: 'product_quantity',\n  builder: (controller) {\n    return Text('Quantity: ${controller.quantity}');\n  },\n)"
+    }
+  },
+  {
+    "cardId": "flutter_dart_077",
+    "category": "Data Modeling",
+    "hint": "It does the opposite of `toJson()`.",
+    "question": "Which method is commonly used in a Model to convert a `Map` from a server into a Dart object?",
+    "options": [
+      "A factory constructor, often named `fromJson`",
+      "A method named `buildWidget`",
+      "A method named `toMap`"
+    ],
+    "correctAnswer": "A factory constructor, often named `fromJson`",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "class User {\n  final String name;\n  final String email;\n\n  User(this.name, this.email);\n\n  // This factory constructor creates a User from a Map.\n  factory User.fromJson(Map<String, dynamic> json) {\n    return User(json['name'], json['email']);\n  }\n}"
+    }
+  },
+  {
+    "cardId": "flutter_dart_078",
+    "category": "Async Programming",
+    "hint": "What kind of objects does `Future.wait` operate on?",
+    "question": "What does the `Future.wait` function take as its argument?",
+    "options": [
+      "A list of callback functions",
+      "A list of `Future` objects",
+      "A list of JSON strings"
+    ],
+    "correctAnswer": "A list of `Future` objects",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "// `futures` must be a list where each element is a Future.\nList<Future> futures = retrieveCartList.map((item) {\n  return LinePromotionApi.getLinePrice(item.quoteLineId ?? '');\n}).toList();\n\nawait Future.wait(futures);"
+    }
+  },
+  {
+    "cardId": "flutter_dart_079",
+    "category": "Dart Basics",
+    "hint": "It's a common operation on numbers.",
+    "question": "In the expression `num.parse(items.total ?? \"0\").toStringAsFixed(2)`, what is the purpose of `toStringAsFixed(2)`?",
+    "options": [
+      "To convert the number to an integer",
+      "To check if the number is null",
+      "To format the number as a string with exactly two decimal places"
+    ],
+    "correctAnswer": "To format the number as a string with exactly two decimal places",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "double price = 5.0;\n// The result will be the string \"5.00\"\nString formattedPrice = price.toStringAsFixed(2);"
+    }
+  },
+  {
+    "cardId": "flutter_dart_080",
+    "category": "MVVM Concepts",
+    "hint": "Think of the basketball game analogy.",
+    "question": "In the state management analogy, the basketball game's score is the 'State'. What represents the 'View'?",
+    "options": [
+      "The players",
+      "Everyone in the stadium looking at the scoreboard",
+      "The referee"
+    ],
+    "correctAnswer": "Everyone in the stadium looking at the scoreboard",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "// The score (State) is updated by the operator (ViewModel).\n// Everyone (View) sees the updated score on the scoreboard.\n// The View's job is just to watch and display."
+    }
+  },
+  {
+    "cardId": "flutter_dart_081",
+    "category": "Dart Collections",
+    "hint": "This is how you modify an element at a specific position.",
+    "question": "What does the line `quantityList[index!] = value!;` accomplish?",
+    "options": [
+      "It adds a new value to the end of the list",
+      "It updates the value in `quantityList` at the position specified by `index`",
+      "It removes the value from the list at the position specified by `index`"
+    ],
+    "correctAnswer": "It updates the value in `quantityList` at the position specified by `index`",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "List<int> scores = [10, 20, 30];\nint index = 1;\nint newValue = 99;\n\n// The list becomes [10, 99, 30]\nscores[index] = newValue;"
+    }
+  },
+  {
+    "cardId": "flutter_dart_082",
+    "category": "MVVM in Flutter",
+    "hint": "The widget needs to know what to show before the user interacts.",
+    "question": "In a `DropdownButton`, how does the widget know which value to display as currently selected?",
+    "options": [
+      "It always shows the first item in the list",
+      "It reads the current value directly from the ViewModel's state",
+      "It calls the `onChange` callback to get the value"
+    ],
+    "correctAnswer": "It reads the current value directly from the ViewModel's state",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "dropdown<int>(\n  // The `value` property reads the current state from the controller.\n  value: controller.quantityList[index],\n  onChange: (int? value) {\n    controller.quantityChange(index, value);\n  },\n  // ...\n)"
+    }
+  },
+  {
+    "cardId": "flutter_dart_083",
+    "category": "MVVM Architecture",
+    "hint": "What starts the data flow cycle again?",
+    "question": "After the View is built from the ViewModel's state, what action typically restarts the unidirectional data flow cycle?",
+    "options": [
+      "The Model fetching new data on its own",
+      "A user interacting with the View (e.g., tapping a button)",
+      "The application restarting"
+    ],
+    "correctAnswer": "A user interacting with the View (e.g., tapping a button)",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "// 1. User taps button (View interaction).\n// 2. View calls controller.doSomething().\n// 3. ViewModel updates state.\n// 4. View rebuilds with new state.\n// The cycle repeats."
+    }
+  },
+  {
+    "cardId": "flutter_dart_084",
+    "category": "Async Programming",
+    "hint": "The keyword pauses the function.",
+    "question": "In the line `await Future.wait(futures);`, what is the role of the `await` keyword?",
+    "options": [
+      "It cancels all the futures in the list",
+      "It runs the function in the background",
+      "It pauses the execution of the function until all futures in the list have completed"
+    ],
+    "correctAnswer": "It pauses the execution of the function until all futures in the list have completed",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "Future<void> myAsyncFunction() async {\n  print('Starting...');\n  // The function pauses here and will not print 'Finished' until the Future is done.\n  await Future.delayed(Duration(seconds: 2));\n  print('Finished!');\n}"
+    }
+  },
+  {
+    "cardId": "flutter_dart_085",
+    "category": "Dart Collections",
+    "hint": "This method transforms a list into a new list.",
+    "question": "In the `_fetchAndAssignEcofees` example, what does the `.map()` function do?",
+    "options": [
+      "It creates a `Map` from the `retrieveCartList`",
+      "It filters the list to remove certain items",
+      "It iterates over each item in the list, applies a function to it, and returns a new list of the results"
+    ],
+    "correctAnswer": "It iterates over each item in the list, applies a function to it, and returns a new list of the results",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "List<int> numbers = [1, 2, 3];\n// The .map function creates a new list: [2, 4, 6]\nList<int> doubledNumbers = numbers.map((n) => n * 2).toList();"
+    }
+  },
+  {
+    "cardId": "flutter_dart_086",
+    "category": "Data Modeling",
+    "hint": "Look at the keys in the returned Map.",
+    "question": "In the `toJson` example, why is the key `\"QUOTE_LINE_ID\"` used instead of `\"quoteLineId\"`?",
+    "options": [
+      "Because Dart requires map keys to be in all caps",
+      "To match the exact key name that the server's API expects",
+      "It is a mistake and should be `\"quoteLineId\"`"
+    ],
+    "correctAnswer": "To match the exact key name that the server's API expects",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "class PRecordsetItem {\n  String? quoteLineId;\n\n  Map<String, dynamic> toJson() => {\n    // The key must match the format the server API requires.\n    \"QUOTE_LINE_ID\": quoteLineId,\n  };\n}"
+    }
+  },
+  {
+    "cardId": "flutter_dart_087",
+    "category": "Dart Basics",
+    "hint": "This handles cases where a value could be missing.",
+    "question": "What does the null-aware operator `??` do in `items.total ?? \"0\"`?",
+    "options": [
+      "It throws an error if `items.total` is null",
+      "It returns the value of `items.total` if it's not null, otherwise it returns `\"0\"`",
+      "It assigns the value `\"0\"` to `items.total`"
+    ],
+    "correctAnswer": "It returns the value of `items.total` if it's not null, otherwise it returns `\"0\"`",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "String? name = null;\n// Since name is null, defaultName will be 'Guest'.\nString defaultName = name ?? 'Guest';\n\nString? realName = 'Alice';\n// Since realName is not null, finalName will be 'Alice'.\nString finalName = realName ?? 'Guest';"
+    }
+  },
+  {
+    "cardId": "flutter_dart_088",
+    "category": "State Management",
+    "hint": "What is the tool used for state management in the examples?",
+    "question": "Based on the provided code (e.g., `Get.to`, `GetxController`), which state management library is being used?",
+    "options": [
+      "Provider",
+      "Bloc",
+      "GetX"
+    ],
+    "correctAnswer": "GetX",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "// The use of GetxController is a clear indicator of the GetX package.\nclass CartController extends GetxController {\n  // ...\n}\n\n// The use of Get.to() for navigation is also part of GetX.\nGet.to(() => CreateCartScreen());"
+    }
+  },
+  {
+    "cardId": "flutter_dart_089",
+    "category": "Dart Basics",
+    "hint": "This is used to create a list of a specific size with default values.",
+    "question": "What is the purpose of `List.generate(2, (index) => 20)`?",
+    "options": [
+      "To create a list containing the numbers 2 and 20",
+      "To create a list with two elements, where each element has the value 20",
+      "To generate a random list of 20 numbers"
+    ],
+    "correctAnswer": "To create a list with two elements, where each element has the value 20",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "// This creates a list of length 5.\n// The function (i) => i * 2 is called for each index 0, 1, 2, 3, 4.\n// The result is [0, 2, 4, 6, 8]\nvar myList = List.generate(5, (i) => i * 2);"
+    }
+  },
+  {
+    "cardId": "flutter_dart_090",
+    "category": "MVVM Architecture",
+    "hint": "A user action triggers a function in the ViewModel.",
+    "question": "Which sequence correctly describes a user interaction in MVVM?",
+    "options": [
+      "User Tap -> Model changes data -> View updates",
+      "User Tap -> View tells ViewModel -> ViewModel executes logic -> State changes -> View updates",
+      "User Tap -> ViewModel tells Model -> View updates"
+    ],
+    "correctAnswer": "User Tap -> View tells ViewModel -> ViewModel executes logic -> State changes -> View updates",
+    "content": {
+      "type": "code",
+      "language": "dart",
+      "value": "onTap: () {\n  // 1. User taps (View).\n  // 2. Calls controller method (View tells ViewModel).\n  controller.incrementCounter();\n  // 3. ViewModel logic runs, state changes.\n  // 4. GetX/State management updates the View.\n}"
+    }
+  },
+  {
+      "cardId": "flutter_dart_091",
+      "category": "GetX Lifecycle",
+      "hint": "This method runs before the widget is built, right after the controller is created.",
+      "question": "In a `GetxController`, which lifecycle method is the ideal place for initial setup, like making API calls to fetch data?",
+      "options": [
+        "onReady()",
+        "onInit()",
+        "build()"
+      ],
+      "correctAnswer": "onInit()",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "class UserController extends GetxController {\n  @override\n  void onInit() {\n    super.onInit();\n    // Perfect place for one-time setup like fetching user data.\n    fetchUser();\n  }\n\n  void fetchUser() async { /* ... API call ... */ }\n}"
+      }
+    },
+    {
+      "cardId": "flutter_dart_092",
+      "category": "GetX Lifecycle",
+      "hint": "This method is called just before the controller is removed from memory.",
+      "question": "To prevent memory leaks, where should you dispose of resources like a `TextEditingController` within a `GetxController`?",
+      "options": [
+        "onDelete()",
+        "dispose()",
+        "onClose()"
+      ],
+      "correctAnswer": "onClose()",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "class FormController extends GetxController {\n  final textController = TextEditingController();\n\n  @override\n  void onClose() {\n    // Always dispose controllers to free up resources.\n    textController.dispose();\n    super.onClose();\n  }\n}"
+      }
+    },
+    {
+      "cardId": "flutter_dart_093",
+      "category": "GetX Lifecycle",
+      "hint": "This method is called after the widget has been rendered on the screen.",
+      "question": "Which `GetxController` lifecycle method is best for performing actions that need the UI to be ready, like showing a dialog or animation?",
+      "options": [
+        "onReady()",
+        "onStart()",
+        "onInit()"
+      ],
+      "correctAnswer": "onReady()",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "class WelcomeController extends GetxController {\n  @override\n  void onReady() {\n    super.onReady();\n    // The UI is visible, so it's safe to show a welcome dialog.\n    Get.dialog(WelcomeDialog());\n  }\n}"
+      }
+    },
+    {
+      "cardId": "flutter_dart_094",
+      "category": "Flutter Fundamentals",
+      "hint": "It tells a widget where it is located within the large tree of widgets.",
+      "question": "In Flutter, what is the primary role of the `BuildContext` object?",
+      "options": [
+        "It holds the widget's current state data",
+        "It is a handle to a widget's location in the widget tree, used to find ancestors",
+        "It defines the widget's color and font style"
+      ],
+      "correctAnswer": "It is a handle to a widget's location in the widget tree, used to find ancestors",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "@override\nWidget build(BuildContext context) {\n  // 'context' is used here to find the nearest Scaffold ancestor\n  // and use it to show a SnackBar.\n  return ElevatedButton(\n    onPressed: () => ScaffoldMessenger.of(context).showSnackBar(...),\n    child: Text('Show Message'),\n  );\n}"
+      }
+    },
+    {
+      "cardId": "flutter_dart_095",
+      "category": "GetX Lifecycle",
+      "hint": "Think about the order of creation, rendering, and destruction.",
+      "question": "What is the correct calling order for the main `GetxController` lifecycle methods?",
+      "options": [
+        "onReady() -> onInit() -> onClose()",
+        "onInit() -> onClose() -> onReady()",
+        "onInit() -> onReady() -> onClose()"
+      ],
+      "correctAnswer": "onInit() -> onReady() -> onClose()",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// 1. onInit(): Controller is created.\n// 2. onReady(): Widget is rendered for the first time.\n// 3. onClose(): Controller is about to be destroyed."
+      }
+    },
+    {
+      "cardId": "flutter_dart_096",
+      "category": "Flutter Fundamentals",
+      "hint": "This is a very common use case for accessing app-wide information.",
+      "question": "How would you correctly use `BuildContext` to get the primary color defined in your app's theme?",
+      "options": [
+        "context.theme.primaryColor",
+        "Theme.of(context).primaryColor",
+        "PrimaryColor.get(context)"
+      ],
+      "correctAnswer": "Theme.of(context).primaryColor",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "Container(\n  // Here, we use 'context' to look up the widget tree for the\n  // nearest 'Theme' and get its primaryColor property.\n  color: Theme.of(context).primaryColor,\n  width: 100,\n  height: 100,\n)"
+      }
+    },
+    {
+      "cardId": "flutter_dart_097",
+      "category": "GetX Lifecycle",
+      "hint": "This GetX method is the modern equivalent of a classic StatefulWidget method.",
+      "question": "The `onInit()` method in a `GetxController` is most similar to which method in a `StatefulWidget`'s `State` class?",
+      "options": [
+        "build()",
+        "didChangeDependencies()",
+        "initState()"
+      ],
+      "correctAnswer": "initState()",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// Both methods are called only once when the object is first created\n// and are the ideal place for one-time setup logic.\n\n// StatefulWidget:\n@override\nvoid initState() { super.initState(); /* setup... */ }\n\n// GetxController:\n@override\nvoid onInit() { super.onInit(); /* setup... */ }"
+      }
+    },
+    {
+      "cardId": "flutter_dart_098",
+      "category": "GetX Lifecycle",
+      "hint": "A controller is only truly 'ready' when its UI is painted.",
+      "question": "When is the `onReady()` lifecycle method guaranteed to be called?",
+      "options": [
+        "Immediately after the `onInit()` method completes",
+        "After the widget associated with the controller has been rendered on the screen for the first time",
+        "Every time the widget rebuilds"
+      ],
+      "correctAnswer": "After the widget associated with the controller has been rendered on the screen for the first time",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "class MyController extends GetxController {\n  @override\n  void onReady() {\n    print('UI is now visible to the user!');\n    super.onReady();\n  }\n}"
+      }
+    },
+    {
+      "cardId": "flutter_dart_099",
+      "category": "Flutter Fundamentals",
+      "hint": "Without `BuildContext`, a widget is isolated and unaware of the rest of the app.",
+      "question": "Why is `BuildContext` essential for widgets in Flutter?",
+      "options": [
+        "It is the only way to manage a widget's internal state",
+        "It allows a widget to know where it is and to interact with its parent widgets in the tree",
+        "It is required to define a widget's size and position on the screen"
+      ],
+      "correctAnswer": "It allows a widget to know where it is and to interact with its parent widgets in the tree",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "// A widget without a context is like a person in a city with no address\n// and no map. They exist, but they can't find anything or interact\n// with services around them (like Theme, MediaQuery, Navigator, etc)."
+     }
+    },
+    {
+      "cardId": "flutter_dart_100",
+      "category": "GetX Lifecycle",
+      "hint": "It ensures the base functionality of the parent class is not lost.",
+      "question": "Why is it a best practice to call `super.onInit()`, `super.onReady()`, etc., inside their overridden methods?",
+      "options": [
+        "It is required by the Dart compiler to avoid an error",
+        "To ensure any essential lifecycle logic in the parent `GetxController` class is executed",
+        "To automatically log the method call to the console for debugging"
+      ],
+      "correctAnswer": "To ensure any essential lifecycle logic in the parent `GetxController` class is executed",
+      "content": {
+        "type": "code",
+        "language": "dart",
+        "value": "class MyController extends GetxController {\n  @override\n  void onInit() {\n    // Calling super ensures that if the GetxController base class\n    // has its own setup tasks, they are performed.\n    super.onInit();\n    print('My custom onInit logic runs after the base logic.');\n  }\n}"
+    }
+    }]}
