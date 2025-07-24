@@ -1,0 +1,40 @@
+<!-- src\components\AudioChoiceScreen\audio-choice-screen.html -->
+<div id="audio-choice-screen" class="w-full max-w-2xl mx-auto">
+    <div class="flex justify-between items-center mb-4">
+        <p id="quiz-progress" class="text-left text-gray-600 dark:text-gray-400 font-medium">Question 1 of 10</p>
+        <p id="quiz-score" class="text-right text-indigo-600 dark:text-indigo-400 font-bold text-lg">Score: 0</p>
+    </div>
+    
+    <div id="question-card" class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg w-full mb-6 text-center relative">
+        <div class="absolute top-3 right-3 flex gap-2">
+            <button id="mark-improve-btn" title="Mark this card for improvement" class="px-2 py-1 bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs font-semibold rounded-md hover:bg-blue-500 hover:text-white transition-colors">
+                <i class="fas fa-flag"></i>
+            </button>
+            <button id="ignore-btn" title="Ignore this card in future rounds" class="px-2 py-1 bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs font-semibold rounded-md hover:bg-yellow-400 hover:text-white transition-colors">
+                Ignore
+            </button>
+        </div>
+        
+        <p id="card-category" class="text-sm font-medium text-gray-500 dark:text-gray-300"></p>
+        <p class="text-xl md:text-2xl font-semibold my-6" id="question-text"></p>
+        
+        <div id="options-container" class="grid grid-cols-1 gap-4">
+            </div>
+
+        <div id="feedback-container" class="hidden mt-6 text-left p-4 bg-gray-50 dark:bg-gray-700/50 rounded-lg">
+            <div id="card-hint-wrapper">
+                <h3 class="font-bold text-sm text-gray-500 dark:text-gray-400 mb-1">HINT</h3>
+                <p id="card-hint" class="text-sm font-normal text-gray-600 dark:text-gray-300 italic"></p>
+            </div>
+            <hr class="my-3 border-gray-300 dark:border-gray-600">
+            <div id="card-content-wrapper">
+                <h3 class="font-bold text-sm text-gray-500 dark:text-gray-400 mb-1">GRAMMAR NOTE</h3>
+                <div id="content-container" class="text-sm text-gray-700 dark:text-gray-200 whitespace-pre-wrap"></div>
+            </div>
+        </div>
+    </div>
+
+    <button id="next-btn" class="w-full px-8 py-3 bg-gray-700 text-white font-bold rounded-lg shadow-md hover:bg-gray-800 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed">
+        Next Question
+    </button>
+</div>

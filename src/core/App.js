@@ -25,6 +25,7 @@ class App {
         this.deckDetailComponent = null;
         this.quizScreenComponent = null;
         this.flippableCardScreen = null; 
+        this.audioChoiceScreen = null; // Add property for the new screen
         this.notificationModal = null;
         this.improvementModal = null; // Add property for the new modal
 
@@ -117,15 +118,18 @@ class App {
         try {
             const deckFiles = ['plsql_deck.json', 'shell_deck.json', 'ios_android.json', 'http_rest_deep_dive.json', 'english_phrasal_verbs.json','it_commands_deck_01.json', 'ui_elements_deck.json', 'git_deck.json', 'tech_online_meetings_deck.json', 'tech_conversation_deck_01.json', 'technical_project_plan.json', 'flutter_dart_getx_deck.json'];
             // Modify the fetch process to attach the filename to each loaded deck object.
-            const fetchPromises = deckFiles.map(file => 
-                fetch(`public/data/${file}`)
-                    .then(res => res.json())
-                    .then(deck => {
-                        // Add the actual filename to the deck object for later reference.
-                        deck.fileName = file; 
-                        return deck;
-                    })
-            );
+           const updatedDeckFiles = [...deckFiles, 'english_grammar_audio_choice.json'];
+            
+            const fetchPromises = updatedDeckFiles.map(file => 
+                fetch(`public/data/${file}`)
+                    .then(res => res.json())
+                    .then(deck => {
+                        // Add the actual filename to the deck object for later reference.
+                        deck.fileName = file; 
+                        return deck;
+                    })
+            );
+
             const loadedDecks = await Promise.all(fetchPromises);
             
             loadedDecks.forEach(deck => {
@@ -169,7 +173,26 @@ class App {
                 const improvementData = StorageService.loadImprovementData(this.state.currentDeckId); // Load improvement data
                 
                 this.deckDetailComponent.render(selectedDeck, deckProgressData, improvementData); // Pass all required data
-                break;
+                    break; 
+
+case 'audioChoiceQuiz':
+                if (!this.audioChoiceScreen) {
+                    this.audioChoiceScreen = new AudioChoiceScreen(
+                        this.appContainer,
+                        (option) => this.handleQuizAnswer(option),
+                        () => this.handleQuizNext(),
+                        () => this.handleIgnoreCurrentCard(),
+                        (cardId) => this.handleMarkCardForImprovement(cardId)
+                    );
+                }
+                const currentAudioQuestion = this.state.quizInstance.getCurrentQuestion();
+                if (currentAudioQuestion) {
+                    this.audioChoiceScreen.render(currentAudioQuestion, this.state.quizInstance.currentIndex, this.state.quizInstance.questions.length, this.state.quizInstance.score);
+                } else {
+                    console.error("DEBUG: [App] render -> Tried to render audio quiz, but no current question found.");
+                    this.handleQuizEnd();
+                }
+                break;
 
             case 'quiz':
                 if (!this.quizScreenComponent) { 
@@ -449,11 +472,17 @@ class App {
         // --- DECK TYPE ROUTER ---
         // More explicit routing based on deckType
         if (deck.deckType === 'flippable') {
-            console.log("DEBUG: [App] handleStartQuiz -> Starting a 'flippable' quiz.");
-            this.state.quizInstance = new SpacedRepetitionQuiz(deck.cards, progress);
+          console.log("DEBUG: [App] handleStartQuiz -> Starting a 'flippable' quiz.");
+            this.state.quizInstance = new SpacedRepetitionQuiz(deck.cards, progress);
+            this.state.quizInstance.generateQuizRound(7);
+            this.state.currentScreen = 'flippableQuiz';
+        } else if (deck.deckType === 'audioChoice') {
+            // Handle the new audio choice deck type
+            console.log("DEBUG: [App] handleStartQuiz -> Starting an 'audioChoice' quiz.");
+            this.state.quizInstance = new Quiz(deck.cards, progress); // Reuses the standard Quiz logic
             this.state.quizInstance.generateQuizRound(7);
-            this.state.currentScreen = 'flippableQuiz';
-        } else if (deck.deckType === 'multipleChoice') {
+            this.state.currentScreen = 'audioChoiceQuiz'; // Set to the new screen state
+        } else if (deck.deckType === 'multipleChoice') {
             // Explicitly handle multiple choice decks
             console.log("DEBUG: [App] handleStartQuiz -> Starting a 'multipleChoice' quiz.");
             this.state.quizInstance = new Quiz(deck.cards, progress);
@@ -481,20 +510,31 @@ class App {
         this.render();
     }
 
+    /**
+     * Handles the user's answer for any multiple-choice-based quiz.
+     * It updates the quiz state and calls component-specific feedback methods only when appropriate.
+     * @param {string} selectedOption The answer selected by the user.
+     */
     handleQuizAnswer(selectedOption) {
+        if (!this.state.quizInstance) return;
+
         console.log(`DEBUG: [App] handleQuizAnswer -> User selected: ${selectedOption}`);
-        this.quizScreenComponent.lastSelectedOption = selectedOption;
         const isCorrect = this.state.quizInstance.answer(selectedOption);
-        const correctAnswer = this.state.quizInstance.getCurrentQuestion().correctAnswer;
+
+        // This block is ONLY for the original 'multipleChoice' quiz screen.
+        // The new 'audioChoiceScreen' handles its own feedback internally.
+        if (this.state.currentScreen === 'quiz' && this.quizScreenComponent) {
+            const correctAnswer = this.state.quizInstance.getCurrentQuestion().correctAnswer;
+            this.quizScreenComponent.showFeedback(isCorrect, correctAnswer);
+        }
         
-        this.quizScreenComponent.showFeedback(isCorrect, correctAnswer);
-        
+        // This direct DOM manipulation is not ideal, but we keep it for now
+        // to maintain the immediate score update on the original quiz screen.
         const scoreElement = document.getElementById('quiz-score');
-        if(scoreElement) {
+        if (scoreElement) {
             scoreElement.textContent = `Score: ${this.state.quizInstance.score}`;
         }
     }
-
     /**
      * Handles the user's self-assessment from the FlippableCardScreen.
      * @param {boolean} knewIt - The user's assessment (true for 'I Knew It', false for 'Review Again').
