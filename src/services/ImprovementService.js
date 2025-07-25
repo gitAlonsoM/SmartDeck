@@ -69,6 +69,14 @@ The target deck file is: "${deckFileName}".
 - \`sideB\`: An array of valid answers. This array is FLEXIBLE. You can add new valid answers here.
 - \`note\`: A field for YOUR feedback to the user.
 - \`review_request\`: The user's feedback.
+### C) Audio-Choice ('audioChoice') Card:
+- This is a specialized 'quiz' card for grammar/listening exercises.
+- \`cardId\`, \`audioSrc\`: Unique identifiers. DO NOT CHANGE.
+- \`category\`, \`hint\`, \`content\`: Preserve these fields unless the user's request is specifically about them. Por lo general, si el usuario necesita aclaraciones de algo, podras usar el "value" de "content"para añadir aclaraciones segun lo solicitado por el usuario, sin necesidad de eleiminar el texto original, simplemente puedes agregar mas aclaraciones en este espacio.
+- \`question\`: An incomplete sentence, usually with a \`___\` placeholder. Improve for clarity.
+- \`options\`: An array of **complete sentences**. This array has a FIXED LENGTH. Do not add/remove items, but you can correct the text within them.
+- \`correctAnswer\`: The correct full sentence from \`options\`. MUST be updated if you change the option's text.
+- \`review_request\`: The user's feedback.
 ## 4. CORE WORKFLOW & RULES
 1.  **Analyze Request**: Prioritize the \`review_request.reasons\` (e.g., "improve_hint", "clarify_question"). Use the \`review_request.note\` for specific user suggestions.
 2.  **Apply Corrections**: Fix typos, improve clarity, and validate user suggestions.

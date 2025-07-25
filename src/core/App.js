@@ -349,20 +349,19 @@ case 'audioChoiceQuiz':
         StorageService.saveDeckProgress(this.state.currentDeckId, quiz.progress);
     
         // UX Improvement: Immediately move to the next card.
-        // We simulate a correct answer just to advance the quiz flow.
         if (isFlippable) {
-        // We call the next card logic directly, without assessing/scoring.
+            // For flippable quizzes, move to the next card without scoring.
             quiz.moveToNextCard();
             if (quiz.isQuizOver()) {
                 this.handleQuizEnd();
             } else {
                 this.render();
             }
-        } else {
-            // For multiple choice, we need to show feedback briefly before advancing.
-            const correctAnswer = quiz.getCurrentQuestion().correctAnswer;
-            this.quizScreenComponent.showFeedback(false, correctAnswer); // Show correct answer
-            setTimeout(() => this.handleQuizNext(), 500); // Advance after a short delay
+        } else {
+            // For any other quiz type (multipleChoice, audioChoice), just advance.
+            // This avoids the bug of calling a method on a null component instance
+            // and provides a consistent, immediate "skip" behavior.
+            this.handleQuizNext();
         }
     }
 

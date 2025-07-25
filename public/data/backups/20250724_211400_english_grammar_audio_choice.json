@@ -1,0 +1,1033 @@
+{
+  "id": "english_grammar_audio_choice",
+  "name": "Grammar AudioChoice",
+  "description": "Master key American English grammar concepts by completing the sentences and listening to the correct pronunciation. Explanations are revealed after your choice.",
+  "deckType": "audioChoice",
+  "isAiGenerated": false,
+  "cards": [
+    {
+      "cardId": "egac_001",
+      "category": "Verbs: Transitive vs. Intransitive",
+      "question": "He looks ___ the painting with admiration.",
+      "options": [
+        "He looks at the painting with admiration.",
+        "He looks the painting with admiration.",
+        "He looks for the painting with admiration."
+      ],
+      "correctAnswer": "He looks at the painting with admiration.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_001.mp3",
+      "hint": "The verb 'look' often needs a preposition to connect it to the object you are seeing.",
+      "content": {
+        "type": "text",
+        "value": "The verb [look] is a prepositional verb in this context, requiring 'at' to specify the direction of sight.\n\n* 'look for' means to search for something lost, which doesn't fit the context of 'admiration'."
+      }
+    },
+    {
+      "cardId": "egac_002",
+      "category": "Verbs: Manner vs. Path",
+      "question": "You must ___ the building through the main entrance.",
+      "options": [
+        "You must enter the building through the main entrance.",
+        "You must go the building through the main entrance.",
+        "You must arrive the building through the main entrance."
+      ],
+      "correctAnswer": "You must enter the building through the main entrance.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_002.mp3",
+      "hint": "Some verbs of movement already include the destination and don't need 'to'.",
+      "content": {
+        "type": "text",
+        "value": "[Enter] is a 'Path' verb, so it doesn't require a preposition like 'to' before its object.\n\n* 'go' and 'arrive' are 'Manner' verbs. They would need a preposition (e.g., 'go to', 'arrive at'), but 'enter' is the most direct and natural choice here."
+      }
+    },
+    {
+      "cardId": "egac_003",
+      "category": "Verbs: Get + Adjective",
+      "question": "I ___ nervous every time I have to speak in public.",
+      "options": [
+        "I get nervous every time I have to speak in public.",
+        "I do nervous every time I have to speak in public.",
+        "I fall nervous every time I have to speak in public."
+      ],
+      "correctAnswer": "I get nervous every time I have to speak in public.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_003.mp3",
+      "hint": "Which verb is commonly used to express a change of state or feeling?",
+      "content": {
+        "type": "text",
+        "value": "The structure [get + adjective] is used to describe a transition into a new state or feeling.\n\n* 'get nervous' means to become nervous. This is a very common and natural collocation in English."
+      }
+    },
+    {
+      "cardId": "egac_004",
+      "category": "Present Perfect",
+      "question": "She ___ here for five years and knows everyone.",
+      "options": [
+        "She has been working here for five years and knows everyone.",
+        "She is working here for five years and knows everyone.",
+        "She works here for five years and knows everyone."
+      ],
+      "correctAnswer": "She has been working here for five years and knows everyone.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_004.mp3",
+      "hint": "Use a perfect tense to describe an action that started in the past and continues into the present.",
+      "content": {
+        "type": "text",
+        "value": "The [Present Perfect Continuous] (has been + -ing) is ideal for emphasizing the duration of an action that connects the past to the present.\n\n* Using the Present Simple ('works') or Continuous ('is working') with 'for [duration]' is grammatically incorrect for this meaning."
+      }
+    },
+    {
+      "cardId": "egac_005",
+      "category": "Past Habits: Used to",
+      "question": "I ___ play basketball in high school, but I don't anymore.",
+      "options": [
+        "I used to play basketball in high school, but I don't anymore.",
+        "I was playing basketball in high school, but I don't anymore.",
+        "I would play basketball in high school, but I don't anymore."
+      ],
+      "correctAnswer": "I used to play basketball in high school, but I don't anymore.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_005.mp3",
+      "hint": "Which structure is best for expressing past habits or states that are no longer true?",
+      "content": {
+        "type": "text",
+        "value": "[Used to] is the most common and clear way to talk about past habits that have ended.\n\n* 'Would' can also describe past habits, but it's typically used in narratives and not for states. 'Used to' is more versatile and fits perfectly here."
+      }
+    },
+    {
+      "cardId": "egac_006",
+      "category": "Past Intentions",
+      "question": "We ___ travel to Japan, but we had to cancel the trip.",
+      "options": [
+        "We were going to travel to Japan, but we had to cancel the trip.",
+        "We would travel to Japan, but we had to cancel the trip.",
+        "We went to travel to Japan, but we had to cancel the trip."
+      ],
+      "correctAnswer": "We were going to travel to Japan, but we had to cancel the trip.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_006.mp3",
+      "hint": "How do you express a plan from the past that did not happen?",
+      "content": {
+        "type": "text",
+        "value": "The structure [was/were going to + verb] is specifically used for plans or intentions in the past that were not realized."
+      }
+    },
+    {
+      "cardId": "egac_007",
+      "category": "Perfect Modals",
+      "question": "You ___ told me you were coming! I would have prepared dinner.",
+      "options": [
+        "You should have told me you were coming! I would have prepared dinner.",
+        "You must have told me you were coming! I would have prepared dinner.",
+        "You can have told me you were coming! I would have prepared dinner."
+      ],
+      "correctAnswer": "You should have told me you were coming! I would have prepared dinner.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_007.mp3",
+      "hint": "Which modal expresses regret or criticism about a past action (or lack of action)?",
+      "content": {
+        "type": "text",
+        "value": "[Should have + past participle] is used to express that something was a good idea in the past, but it didn't happen.\n\n* 'Must have' expresses a logical conclusion about the past (e.g., 'You must have been tired')."
+      }
+    },
+    {
+      "cardId": "egac_008",
+      "category": "Gerunds as Subjects",
+      "question": "___ is my favorite weekend activity.",
+      "options": [
+        "Reading is my favorite weekend activity.",
+        "To read is my favorite weekend activity.",
+        "Read is my favorite weekend activity."
+      ],
+      "correctAnswer": "Reading is my favorite weekend activity.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_008.mp3",
+      "hint": "When an action is the subject of a sentence, it often takes the form of a noun.",
+      "content": {
+        "type": "text",
+        "value": "A [Gerund] (the -ing form of a verb) can act as a noun and be the subject of a sentence.\n\n* While 'To read' (infinitive) can sometimes be a subject, it's much less common and more formal. The gerund is the most natural choice."
+      }
+    },
+    {
+      "cardId": "egac_009",
+      "category": "Gerunds after Prepositions",
+      "question": "She is interested ___ learning a new language.",
+      "options": [
+        "She is interested in learning a new language.",
+        "She is interested to learning a new language.",
+        "She is interested for learning a new language."
+      ],
+      "correctAnswer": "She is interested in learning a new language.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_009.mp3",
+      "hint": "The adjective 'interested' must be followed by a specific preposition.",
+      "content": {
+        "type": "text",
+        "value": "After a preposition (like 'in', 'at', 'for', 'of'), you must use a [Gerund] (-ing form).\n\n* The correct adjectival phrase is [interested in]."
+      }
+    },
+    {
+      "cardId": "egac_010",
+      "category": "Passive Voice",
+      "question": "The final report must ___ by Friday.",
+      "options": [
+        "The final report must be submitted by Friday.",
+        "The final report must submit by Friday.",
+        "The final report must to submit by Friday."
+      ],
+      "correctAnswer": "The final report must be submitted by Friday.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_010.mp3",
+      "hint": "When the subject of the sentence receives the action, you need the passive voice.",
+      "content": {
+        "type": "text",
+        "value": "The structure for the passive voice with a modal verb (like 'must') is:\n[modal + be + past participle].\n\n* The report isn't submitting anything; it *is being submitted* by someone."
+      }
+    },
+    {
+      "cardId": "egac_011",
+      "category": "Existential There",
+      "question": "___ a problem with the server connection.",
+      "options": [
+        "There seems to be a problem with the server connection.",
+        "It seems to be a problem with the server connection.",
+        "Has a problem with the server connection."
+      ],
+      "correctAnswer": "There seems to be a problem with the server connection.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_011.mp3",
+      "hint": "How do you introduce the existence or presence of something, especially with verbs like 'seem' or 'appear'?",
+      "content": {
+        "type": "text",
+        "value": "[Existential There] is used to state that something exists. It can be combined with other verbs like 'seem to be', 'appear to be', etc.\n\n* 'It' is used for specific subjects, not to introduce the existence of something new."
+      }
+    },
+    {
+      "cardId": "egac_012",
+      "category": "Subject Questions",
+      "question": "___ broke the window in the living room?",
+      "options": [
+        "Who broke the window in the living room?",
+        "Who did break the window in the living room?",
+        "What did break the window in the living room?"
+      ],
+      "correctAnswer": "Who broke the window in the living room?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_012.mp3",
+      "hint": "When the question word (Who/What) is the subject, you don't need an auxiliary verb (do/does/did).",
+      "content": {
+        "type": "text",
+        "value": "This is a [Subject Question]. The question word [Who] replaces the subject, so the verb ('broke') follows directly, just like in an affirmative sentence ('John broke the window')."
+      }
+    },
+    {
+      "cardId": "egac_013",
+      "category": "Prepositions at the End of Questions",
+      "question": "What are you looking ___?",
+      "options": [
+        "What are you looking for?",
+        "For what are you looking?",
+        "What are you looking?"
+      ],
+      "correctAnswer": "What are you looking for?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_013.mp3",
+      "hint": "In modern English, it's very natural to end a question with a preposition, especially with phrasal verbs.",
+      "content": {
+        "type": "text",
+        "value": "The phrasal verb is [look for] (to search). When forming a question, the preposition 'for' stays with the verb group and naturally falls at the end.\n\n* 'For what are you looking?' is grammatically correct but extremely formal and rare in everyday conversation."
+      }
+    },
+    {
+      "cardId": "egac_014",
+      "category": "Second Conditional",
+      "question": "If I had more time, I ___ a new skill.",
+      "options": [
+        "If I had more time, I would learn a new skill.",
+        "If I had more time, I will learn a new skill.",
+        "If I have more time, I would learn a new skill."
+      ],
+      "correctAnswer": "If I had more time, I would learn a new skill.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_014.mp3",
+      "hint": "Use this conditional to talk about hypothetical or unlikely situations in the present or future.",
+      "content": {
+        "type": "text",
+        "value": "The [Second Conditional] structure is:\n[If + Past Simple], ... [would + base verb].\n\n* It describes an unreal present situation ('I *don't* have more time') and its hypothetical result."
+      }
+    },
+    {
+      "cardId": "egac_015",
+      "category": "Third Conditional",
+      "question": "She would have passed the exam if she ___ harder.",
+      "options": [
+        "She would have passed the exam if she had studied harder.",
+        "She would have passed the exam if she studied harder.",
+        "She would have passed the exam if she would have studied harder."
+      ],
+      "correctAnswer": "She would have passed the exam if she had studied harder.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_015.mp3",
+      "hint": "Use this conditional to talk about a hypothetical situation in the past that cannot be changed.",
+      "content": {
+        "type": "text",
+        "value": "The [Third Conditional] structure is:\n[would have + p.p.] ... [if + Past Perfect (had + p.p.)].\n\n* It describes an unreal past situation ('She *didn't* study harder') and its hypothetical past result."
+      }
+    },
+    {
+      "cardId": "egac_016",
+      "category": "Possessive Apostrophe",
+      "question": "The ___ toys are scattered all over the floor.",
+      "options": [
+        "The children's toys are scattered all over the floor.",
+        "The childrens' toys are scattered all over the floor.",
+        "The childrens's toys are scattered all over the floor."
+      ],
+      "correctAnswer": "The children's toys are scattered all over the floor.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_016.mp3",
+      "hint": "For plural nouns that do NOT end in -s, how do you show possession?",
+      "content": {
+        "type": "text",
+        "value": "For [irregular plural nouns] like 'children', 'men', or 'people', you form the possessive by adding an apostrophe + s ('s), just like with a singular noun."
+      }
+    },
+    {
+      "cardId": "egac_017",
+      "category": "Compound Nouns",
+      "question": "Could you pass me the ___? I need to brush my hair.",
+      "options": [
+        "Could you pass me the hairbrush? I need to brush my hair.",
+        "Could you pass me the hair's brush? I need to brush my hair.",
+        "Could you pass me the brush of hair? I need to brush my hair."
+      ],
+      "correctAnswer": "Could you pass me the hairbrush? I need to brush my hair.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_017.mp3",
+      "hint": "When two nouns are combined to create a single new item, they often form one word.",
+      "content": {
+        "type": "text",
+        "value": "[Compound Nouns] describe a relationship, not possession. 'Hairbrush' is a closed compound noun meaning 'a brush for hair'.\n\n* Using an apostrophe ('s) would imply the hair owns the brush, which is illogical."
+      }
+    },
+    {
+      "cardId": "egac_018",
+      "category": "Collective Nouns",
+      "question": "The police ___ investigating the incident.",
+      "options": [
+        "The police are investigating the incident.",
+        "The police is investigating the incident.",
+        "The police investigates the incident."
+      ],
+      "correctAnswer": "The police are investigating the incident.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_018.mp3",
+      "hint": "Some collective nouns, like 'police' or 'people', are always treated as plural.",
+      "content": {
+        "type": "text",
+        "value": "Nouns like [police], [people], and [children] are always plural and therefore take a plural verb form (like 'are', 'were', 'have')."
+      }
+    },
+    {
+      "cardId": "egac_019",
+      "category": "Extreme Adjectives",
+      "question": "After running the marathon, he was ___ exhausted.",
+      "options": [
+        "After running the marathon, he was absolutely exhausted.",
+        "After running the marathon, he was very exhausted.",
+        "After running the marathon, he was little exhausted."
+      ],
+      "correctAnswer": "After running the marathon, he was absolutely exhausted.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_019.mp3",
+      "hint": "Adjectives that already mean 'very tired' or 'very big' can't be modified by 'very'.",
+      "content": {
+        "type": "text",
+        "value": "[Exhausted] is an 'extreme' or 'non-gradable' adjective. It already implies a high degree.\n\n* We use adverbs like [absolutely], [completely], or [totally] to intensify them, not 'very'."
+      }
+    },
+    {
+      "cardId": "egac_020",
+      "category": "Adjectives without Prepositions",
+      "question": "She is ___ preparing for her final exams.",
+      "options": [
+        "She is busy preparing for her final exams.",
+        "She is busy with preparing for her final exams.",
+        "She is busy to preparing for her final exams."
+      ],
+      "correctAnswer": "She is busy preparing for her final exams.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_020.mp3",
+      "hint": "A small number of adjectives can be followed directly by a gerund (-ing) without a preposition.",
+      "content": {
+        "type": "text",
+        "value": "The adjective [busy] is one of a few special adjectives (like 'worth' and 'no good') that can be followed directly by a gerund.\n\n* The structure is simply [be + busy + verb-ing]."
+      }
+    },
+    {
+      "cardId": "egac_021",
+      "category": "Phrasal Verbs (Separable)",
+      "question": "Could you please ___ the music? It's too loud.",
+      "options": [
+        "Could you please turn down the music? It's too loud.",
+        "Could you please down turn the music? It's too loud.",
+        "Could you please turn the music down? It's too loud."
+      ],
+      "correctAnswer": "Could you please turn the music down? It's too loud.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_021.mp3",
+      "hint": "With some phrasal verbs, the object can go between the verb and the particle.",
+      "content": {
+        "type": "text",
+        "value": "[Turn down] is a separable phrasal verb. When the object is a noun ('the music'), it can go either after the particle or between the verb and the particle.\n\n* Both 'turn down the music' and 'turn the music down' are correct. However, if the object is a pronoun, it *must* go in the middle: 'turn *it* down'."
+      }
+    },
+    {
+      "cardId": "egac_022",
+      "category": "Phrasal Verbs (Inseparable)",
+      "question": "I ___ my old friend from college at the supermarket.",
+      "options": [
+        "I ran into my old friend from college at the supermarket.",
+        "I ran my old friend into from college at the supermarket.",
+        "I ran against my old friend from college at the supermarket."
+      ],
+      "correctAnswer": "I ran into my old friend from college at the supermarket.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_022.mp3",
+      "hint": "Which phrasal verb means 'to meet someone by chance'?",
+      "content": {
+        "type": "text",
+        "value": "[Run into] is an inseparable phrasal verb meaning to meet someone unexpectedly. The object ('my old friend') must always come after the complete phrasal verb."
+      }
+    },
+    {
+      "cardId": "egac_023",
+      "category": "Phrasal Verbs: OUT",
+      "question": "We have ___ milk; I need to go to the store.",
+      "options": [
+        "We have run out of milk; I need to go to the store.",
+        "We have run out milk; I need to go to the store.",
+        "We have run of milk; I need to go to the store."
+      ],
+      "correctAnswer": "We have run out of milk; I need to go to the store.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_023.mp3",
+      "hint": "The particle 'out' often implies something is finished or depleted.",
+      "content": {
+        "type": "text",
+        "value": "The correct phrasal verb is [run out of], which means to use up or exhaust a supply of something. It is always followed by 'of'."
+      }
+    },
+    {
+      "cardId": "egac_024",
+      "category": "Indefinite Pronouns",
+      "question": "Everybody ___ excited about the upcoming holiday.",
+      "options": [
+        "Everybody is excited about the upcoming holiday.",
+        "Everybody are excited about the upcoming holiday.",
+        "Everybody were excited about the upcoming holiday."
+      ],
+      "correctAnswer": "Everybody is excited about the upcoming holiday.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_024.mp3",
+      "hint": "Pronouns like 'everybody', 'someone', and 'nobody' are treated as singular.",
+      "content": {
+        "type": "text",
+        "value": "Indefinite pronouns like [everyone, somebody, anything, nobody] are grammatically singular in English, even though they might refer to many people.\n\n* Therefore, they take a singular verb (e.g., is, was, has, works)."
+      }
+    },
+    {
+      "cardId": "egac_025",
+      "category": "Singular They",
+      "question": "If a customer has a complaint, ___ should speak to the manager.",
+      "options": [
+        "If a customer has a complaint, they should speak to the manager.",
+        "If a customer has a complaint, he should speak to the manager.",
+        "If a customer has a complaint, he or she should speak to the manager."
+      ],
+      "correctAnswer": "If a customer has a complaint, they should speak to the manager.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_025.mp3",
+      "hint": "In modern English, which pronoun is used to refer to a single person when their gender is unknown or irrelevant?",
+      "content": {
+        "type": "text",
+        "value": "The [Singular They] is now standard in English to refer to a single person in a gender-neutral way.\n\n* It is more concise and inclusive than 'he or she'. Using just 'he' is considered outdated."
+      }
+    },
+    {
+      "cardId": "egac_026",
+      "category": "Expressing Sensations",
+      "question": "It's freezing outside! I ___ so cold.",
+      "options": [
+        "It's freezing outside! I am so cold.",
+        "It's freezing outside! I have so cold.",
+        "It's freezing outside! I feel so cold."
+      ],
+      "correctAnswer": "It's freezing outside! I am so cold.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_026.mp3",
+      "hint": "In English, physical states like hunger, thirst, or cold are usually expressed with the verb 'to be'.",
+      "content": {
+        "type": "text",
+        "value": "Unlike Spanish which uses 'tener' (e.g., 'tengo frío'), English uses the structure [to be + adjective] to describe these physical sensations.\n\n* 'I am cold' is the natural and correct expression. While 'I feel cold' is also correct, 'I am cold' is more direct."
+      }
+    },
+    {
+      "cardId": "egac_027",
+      "category": "Expressing Agreement: So",
+      "question": "He loves watching old movies, and ___.",
+      "options": [
+        "He loves watching old movies, and so do I.",
+        "He loves watching old movies, and so I do.",
+        "He loves watching old movies, and I do also."
+      ],
+      "correctAnswer": "He loves watching old movies, and so do I.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_027.mp3",
+      "hint": "To agree with a positive statement, you can use 'So' at the beginning of the response clause, followed by an inversion.",
+      "content": {
+        "type": "text",
+        "value": "To agree using 'So', the structure is [So + auxiliary verb + subject].\n\n* The original verb is 'loves' (present simple), so the auxiliary is 'do'."
+      }
+    },
+    {
+      "cardId": "egac_028",
+      "category": "Exclamations: What vs. How",
+      "question": "___ beautiful painting!",
+      "options": [
+        "What a beautiful painting!",
+        "How a beautiful painting!",
+        "How beautiful painting!"
+      ],
+      "correctAnswer": "What a beautiful painting!",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_028.mp3",
+      "hint": "Use 'What a...' for exclamations about a noun.",
+      "content": {
+        "type": "text",
+        "value": "The structure for exclamations with nouns is:\n[What + a/an + adjective + singular noun]!\n\n* 'How' is used before an adjective or adverb alone (e.g., 'How beautiful!')."
+      }
+    },
+    {
+      "cardId": "egac_029",
+      "category": "Vocabulary: Missing vs. Lack",
+      "question": "His main issue is a ___ of experience, not a lack of talent.",
+      "options": [
+        "His main issue is a lack of experience, not a lack of talent.",
+        "His main issue is a missing of experience, not a lack of talent.",
+        "His main issue is an out of experience, not a lack of talent."
+      ],
+      "correctAnswer": "His main issue is a lack of experience, not a lack of talent.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_029.mp3",
+      "hint": "Which word refers to a general deficiency or not having enough of something abstract?",
+      "content": {
+        "type": "text",
+        "value": "[Lack] (noun or verb) refers to a general shortage or deficiency of a quality or resource.\n\n* 'Missing' (adjective) is for a specific item that isn't where it should be (e.g., 'My keys are missing').\n* 'Out of' is for a supply that has been depleted (e.g., 'We are out of coffee')."
+       }
+    },
+    {
+      "cardId": "egac_030",
+      "category": "Vocabulary: Years",
+      "question": "The company was founded in ___.",
+      "options": [
+        "The company was founded in nineteen ninety-five.",
+        "The company was founded in one thousand nine hundred ninety-five.",
+        "The company was founded in ninety-five."
+      ],
+      "correctAnswer": "The company was founded in nineteen ninety-five.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_030.mp3",
+      "hint": "Years before 2000 are typically read as two separate two-digit numbers.",
+      "content": {
+        "type": "text",
+        "value": "For years in the 20th century, the standard pronunciation is to split the year into two pairs.\n\nExample: 1995 -> [nineteen] [ninety-five]."
+      }
+    },
+   
+    
+
+  {
+        "cardId": "egac_031",
+        "category": "Preferences: Prefer... to...",
+        "question": "I prefer ___ out to staying home on weekends.",
+        "options": [
+            "I prefer going out to staying home on weekends.",
+            "I prefer go out to staying home on weekends.",
+            "I prefer going out than staying home on weekends."
+        ],
+        "correctAnswer": "I prefer going out to staying home on weekends.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_031.mp3",
+        "hint": "When comparing two general activities with 'prefer', which form should the verbs take?",
+        "content": {
+            "type": "text",
+            "value": "The structure [prefer + gerund + to + gerund] is used for comparing general activities.\n\n* 'to' acts as a preposition here, not as part of an infinitive, so it must be followed by a gerund (-ing)."
+        }
+    },
+    {
+        "cardId": "egac_032",
+        "category": "Preferences: Would Rather",
+        "question": "I'd rather ___ a book than watch that movie.",
+        "options": [
+            "I'd rather read a book than watch that movie.",
+            "I'd rather to read a book than watch that movie.",
+            "I'd rather reading a book than watch that movie."
+        ],
+        "correctAnswer": "I'd rather read a book than watch that movie.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_032.mp3",
+        "hint": "For specific, one-time preferences, 'would rather' is followed by which verb form?",
+        "content": {
+            "type": "text",
+            "value": "The structure for specific preferences is [would rather + base verb + than + base verb].\n\n* No 'to' or '-ing' is used after 'would rather'."
+        }
+    },
+    {
+        "cardId": "egac_033",
+        "category": "Reflexive Verbs",
+        "question": "He taught ___ how to play the guitar.",
+        "options": [
+            "He taught himself how to play the guitar.",
+            "He taught him how to play the guitar.",
+            "He taught to himself how to play the guitar."
+        ],
+        "correctAnswer": "He taught himself how to play the guitar.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_033.mp3",
+        "hint": "Use a reflexive pronoun when the subject and the object of the action are the same person.",
+        "content": {
+            "type": "text",
+            "value": "A [Reflexive Pronoun] (like 'myself', 'yourself', 'himself') is used when the action of the verb returns to the subject."
+        }
+    },
+    {
+        "cardId": "egac_034",
+        "category": "Past Perfect Continuous",
+        "question": "She ___ for hours before she finally found the solution.",
+        "options": [
+            "She had been studying for hours before she finally found the solution.",
+            "She was studying for hours before she finally found the solution.",
+            "She has been studying for hours before she finally found the solution."
+        ],
+        "correctAnswer": "She had been studying for hours before she finally found the solution.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_034.mp3",
+        "hint": "Which tense emphasizes the duration of an activity that was in progress before another past event?",
+        "content": {
+            "type": "text",
+            "value": "The [Past Perfect Continuous] (had been + -ing) is used to describe an action that was happening for a period of time before another action in the past interrupted it."
+        }
+    },
+    {
+        "cardId": "egac_035",
+        "category": "Modal Expressions: Be Supposed To",
+        "question": "This meeting ___ start at 10 AM, but it's delayed.",
+        "options": [
+            "This meeting is supposed to start at 10 AM, but it's delayed.",
+            "This meeting supposes to start at 10 AM, but it's delayed.",
+            "This meeting should to start at 10 AM, but it's delayed."
+        ],
+        "correctAnswer": "This meeting is supposed to start at 10 AM, but it's delayed.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_035.mp3",
+        "hint": "How do you express an expectation or what is planned to happen?",
+        "content": {
+            "type": "text",
+            "value": "The expression [be + supposed to + verb] is used to talk about what is expected or required.\n\n* It often implies a contrast between what should happen and what is actually happening."
+        }
+    },
+    {
+        "cardId": "egac_036",
+        "category": "Common Expressions: look forward to",
+        "question": "I'm really looking forward ___ you again soon.",
+        "options": [
+            "I'm really looking forward to seeing you again soon.",
+            "I'm really looking forward to see you again soon.",
+            "I'm really looking forward see you again soon."
+        ],
+        "correctAnswer": "I'm really looking forward to seeing you again soon.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_036.mp3",
+        "hint": "In the expression 'look forward to', is 'to' part of an infinitive or is it a preposition?",
+        "content": {
+            "type": "text",
+            "value": "In the phrase [look forward to], the word 'to' is a preposition. Therefore, it must be followed by a noun or a [Gerund] (-ing form)."
+        }
+    },
+    {
+        "cardId": "egac_037",
+        "category": "Expressing Purpose: Gerund + Infinitive",
+        "question": "She keeps practicing ___ her pronunciation.",
+        "options": [
+            "She keeps practicing to improve her pronunciation.",
+            "She keeps practicing for improving her pronunciation.",
+            "She keeps practicing improving her pronunciation."
+        ],
+        "correctAnswer": "She keeps practicing to improve her pronunciation.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_037.mp3",
+        "hint": "After establishing an action (practicing), how do you state its purpose?",
+        "content": {
+            "type": "text",
+            "value": "Use a [Gerund] to state the main, continuous action, and an [Infinitive] (to + verb) to express the reason or purpose of that action.\n\n* Using 'for + gerund' to state purpose is not a natural structure in this context."
+        }
+    },
+    {
+        "cardId": "egac_038",
+        "category": "Requests: Want + Object + Infinitive",
+        "question": "What do you want ___?",
+        "options": [
+            "What do you want me to do?",
+            "What do you want that I do?",
+            "What do you want I do?"
+        ],
+        "correctAnswer": "What do you want me to do?",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_038.mp3",
+        "hint": "How do you ask what action someone desires from you?",
+        "content": {
+            "type": "text",
+            "value": "The structure to express a desire or request for another person's action is:\n[Want + Object Pronoun (me, you, him) + to + Infinitive]."
+        }
+    },
+    {
+        "cardId": "egac_039",
+        "category": "Questions: How long has it been since...?",
+        "question": "How long has it been since you ___ to your hometown?",
+        "options": [
+            "How long has it been since you last traveled to your hometown?",
+            "How long has it been since you don't travel to your hometown?",
+            "How long has it been since you didn't travel to your hometown?"
+        ],
+        "correctAnswer": "How long has it been since you last traveled to your hometown?",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_039.mp3",
+        "hint": "This fixed structure requires a specific verb tense in the 'since' clause.",
+        "content": {
+            "type": "text",
+            "value": "The correct structure is: [How long has it been since + subject + past simple affirmative verb?].\n\n* Do not use a negative verb in the 'since' clause."
+        }
+    },
+    {
+        "cardId": "egac_040",
+        "category": "First Conditional",
+        "question": "If you ___ hard, you will pass the exam.",
+        "options": [
+            "If you study hard, you will pass the exam.",
+            "If you will study hard, you will pass the exam.",
+            "If you would study hard, you will pass the exam."
+        ],
+        "correctAnswer": "If you study hard, you will pass the exam.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_040.mp3",
+        "hint": "For a likely or possible future situation, what tense is used in the 'if' clause?",
+        "content": {
+            "type": "text",
+            "value": "The [First Conditional] describes a possible future event. The structure is:\n[If + Present Simple], ... [will + base verb]."
+        }
+    },
+    {
+        "cardId": "egac_041",
+        "category": "Possessive Apostrophe (Plural 's)",
+        "question": "My ___ house is at the end of the street.",
+        "options": [
+            "My parents' house is at the end of the street.",
+            "My parent's house is at the end of the street.",
+            "My parents's house is at the end of the street."
+        ],
+        "correctAnswer": "My parents' house is at the end of the street.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_041.mp3",
+        "hint": "For a plural noun that already ends in 's', where do you add the apostrophe to show possession?",
+        "content": {
+            "type": "text",
+            "value": "For regular plural nouns that end in 's', you form the possessive by adding only an apostrophe (') after the 's'."
+        }
+    },
+    {
+        "cardId": "egac_042",
+        "category": "Adjectives: Prepositional",
+        "question": "He is very proud ___ his daughter's achievements.",
+        "options": [
+            "He is very proud of his daughter's achievements.",
+            "He is very proud for his daughter's achievements.",
+            "He is very proud with his daughter's achievements."
+        ],
+        "correctAnswer": "He is very proud of his daughter's achievements.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_042.mp3",
+        "hint": "The adjective 'proud' must be followed by a specific preposition.",
+        "content": {
+            "type": "text",
+            "value": "[Proud of] is a fixed adjectival phrase. Many adjectives in English require a specific preposition to connect them to their object."
+        }
+    },
+    {
+        "cardId": "egac_043",
+        "category": "Phrasal Verbs: UP",
+        "question": "You need to ___ your confidence before the presentation.",
+        "options": [
+            "You need to build up your confidence before the presentation.",
+            "You need to build your confidence up before the presentation.",
+            "You need to build off your confidence before the presentation."
+        ],
+        "correctAnswer": "You need to build up your confidence before the presentation.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_043.mp3",
+        "hint": "Which phrasal verb means to gradually increase or strengthen something?",
+        "content": {
+            "type": "text",
+            "value": "[Build up] means to develop or strengthen something over time. The particle 'up' often implies an increase or completion."
+        }
+    },
+    {
+        "cardId": "egac_044",
+        "category": "Phrasal Verbs: DOWN",
+        "question": "I'm trying to ___ on coffee, but it's difficult.",
+        "options": [
+            "I'm trying to cut down on coffee, but it's difficult.",
+            "I'm trying to cut off on coffee, but it's difficult.",
+            "I'm trying to cut on coffee, but it's difficult."
+        ],
+        "correctAnswer": "I'm trying to cut down on coffee, but it's difficult.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_044.mp3",
+        "hint": "The particle 'down' often suggests reduction. Which phrasal verb means 'to reduce consumption'?",
+        "content": {
+            "type": "text",
+            "value": "The three-part phrasal verb [cut down on] means to reduce the amount or frequency of something you eat, drink, or do."
+        }
+    },
+    {
+        "cardId": "egac_045",
+        "category": "Phrasal Verbs: OFF",
+        "question": "They had to ___ the meeting due to technical issues.",
+        "options": [
+            "They had to call off the meeting due to technical issues.",
+            "They had to call out the meeting due to technical issues.",
+            "They had to call up the meeting due to technical issues."
+        ],
+        "correctAnswer": "They had to call off the meeting due to technical issues.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_045.mp3",
+        "hint": "The particle 'off' often implies separation or cancellation. Which phrasal verb means 'to cancel'?",
+        "content": {
+            "type": "text",
+            "value": "[Call off] is a separable phrasal verb that means to cancel a planned event."
+        }
+    },
+    {
+        "cardId": "egac_046",
+        "category": "Informal English: Gotta",
+        "question": "I'm late, I ___ run!",
+        "options": [
+            "I'm late, I gotta run!",
+            "I'm late, I got to run!",
+            "I'm late, I must to run!"
+        ],
+        "correctAnswer": "I'm late, I gotta run!",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_046.mp3",
+        "hint": "What is the common spoken contraction for 'have got to'?",
+        "content": {
+            "type": "text",
+            "value": "[Gotta] is the informal, spoken contraction of 'have got to', used to express necessity or obligation in a casual way.\n\n* 'I gotta run' means 'I have to run'."
+        }
+    },
+    {
+        "cardId": "egac_047",
+        "category": "Informal English: Have Got",
+        "question": "I ___ a feeling that this is going to be a great day.",
+        "options": [
+            "I've got a feeling that this is going to be a great day.",
+            "I am got a feeling that this is going to be a great day.",
+            "I got a feeling that this is going to be a great day."
+        ],
+        "correctAnswer": "I've got a feeling that this is going to be a great day.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_047.mp3",
+        "hint": "How can you express 'have' or 'possess' in a common, slightly informal way?",
+        "content": {
+            "type": "text",
+            "value": "[Have got] is a common alternative to 'have' for expressing possession, especially in spoken English.\n\n* 'I've got' is the contracted form of 'I have got'."
+        }
+    },
+    {
+        "cardId": "egac_048",
+        "category": "Expressing Agreement: Too",
+        "question": "She mentioned she was tired, and I replied that I ___ too.",
+        "options": [
+            "She mentioned she was tired, and I replied that I was too.",
+            "She mentioned she was tired, and I replied that I am too.",
+            "She mentioned she was tired, and I replied that I have too."
+        ],
+        "correctAnswer": "She mentioned she was tired, and I replied that I was too.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_048.mp3",
+        "hint": "To agree using 'too', you must use the correct auxiliary or 'be' verb that matches the original statement's tense.",
+        "content": {
+            "type": "text",
+            "value": "To agree using 'too', the structure is [Subject + auxiliary/be verb + too].\n\n* Since the context implies a past statement ('she was tired'), the correct agreement verb is also in the past ('was')."
+        }
+    },
+    {
+        "cardId": "egac_049",
+        "category": "Exclamations: How",
+        "question": "___ interesting!",
+        "options": [
+            "How interesting!",
+            "What interesting!",
+            "What an interesting!"
+        ],
+        "correctAnswer": "How interesting!",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_049.mp3",
+        "hint": "To make an exclamation about an adjective or adverb by itself, which word do you use?",
+        "content": {
+            "type": "text",
+            "value": "The structure for exclamations with just an adjective is: [How + adjective]!\n\n* 'What a...' is used when there is a noun involved (e.g., 'What an interesting idea!')."
+        }
+    },
+    {
+        "cardId": "egac_050",
+        "category": "Vocabulary: Missing vs. Lack vs. Out of",
+        "question": "We are completely ___ coffee; I'll add it to the shopping list.",
+        "options": [
+            "We are completely out of coffee; I'll add it to the shopping list.",
+            "We are completely missing of coffee; I'll add it to the shopping list.",
+            "We are completely lacking coffee; I'll add it to the shopping list."
+        ],
+        "correctAnswer": "We are completely out of coffee; I'll add it to the shopping list.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_050.mp3",
+        "hint": "Which expression is used when a supply has been completely used up?",
+        "content": {
+            "type": "text",
+            "value": "[Out of] describes the state of having exhausted a supply.\n\n* 'Missing' is for a specific lost item.\n* 'Lack' is for a general deficiency of a quality or resource."
+        }
+    },
+    {
+        "cardId": "egac_051",
+        "category": "Vocabulary: Meanwhile vs. In the meantime",
+        "question": "The report will be ready next week. ___, let's focus on the current tasks.",
+        "options": [
+            "The report will be ready next week. In the meantime, let's focus on the current tasks.",
+            "The report will be ready next week. During, let's focus on the current tasks.",
+            "The report will be ready next week. While, let's focus on the current tasks."
+        ],
+        "correctAnswer": "The report will be ready next week. In the meantime, let's focus on the current tasks.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_051.mp3",
+        "hint": "Which phrase is commonly used, especially in more formal or written contexts, to refer to the time between two events?",
+        "content": {
+            "type": "text",
+            "value": "[In the meantime] is a standard phrase used to introduce what can be done while waiting for something else to happen. 'Meanwhile' is also correct and slightly more common in speech."
+        }
+    },
+    {
+        "cardId": "egac_052",
+        "category": "Collocations",
+        "question": "Don't worry, everyone can ___ a mistake.",
+        "options": [
+            "Don't worry, everyone can make a mistake.",
+            "Don't worry, everyone can do a mistake.",
+            "Don't worry, everyone can have a mistake."
+        ],
+        "correctAnswer": "Don't worry, everyone can make a mistake.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_052.mp3",
+        "hint": "Which verb naturally combines with 'a mistake' to mean 'to err'?",
+        "content": {
+            "type": "text",
+            "value": "[Make a mistake] is a fixed collocation in English. A collocation is a group of words that are often used together by native speakers.\n\n* 'Do a mistake' is a common error for learners."
+        }
+    },
+    {
+        "cardId": "egac_053",
+        "category": "Participle as Adjective",
+        "question": "The ___ window needs to be replaced immediately.",
+        "options": [
+            "The broken window needs to be replaced immediately.",
+            "The broke window needs to be replaced immediately.",
+            "The break window needs to be replaced immediately."
+        ],
+        "correctAnswer": "The broken window needs to be replaced immediately.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_053.mp3",
+        "hint": "To describe the state of an object resulting from a past action, which form of the verb is used as an adjective?",
+        "content": {
+            "type": "text",
+            "value": "A [Past Participle] (e.g., broken, written, painted) can be used as an adjective before a noun to describe its condition."
+        }
+    },
+    {
+        "cardId": "egac_054",
+        "category": "Emphasis: Inversion",
+        "question": "___ have I seen such a stunning performance.",
+        "options": [
+            "Never have I seen such a stunning performance.",
+            "I have never seen such a stunning performance.",
+            "Never I have seen such a stunning performance."
+        ],
+        "correctAnswer": "Never have I seen such a stunning performance.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_054.mp3",
+        "hint": "To add strong emphasis, what happens to the sentence structure when you start with a negative word like 'Never'?",
+        "content": {
+            "type": "text",
+            "value": "[Inversion] is used for emphasis. When a sentence starts with a negative adverb (like Never, Hardly, Not only), the auxiliary verb comes before the subject.\n\n* Structure: [Negative Adverb + Auxiliary + Subject + Main Verb]."
+        }
+    },
+    {
+        "cardId": "egac_055",
+        "category": "Emphasis: Cleft Sentences (It was...)",
+        "question": "___ who finished the project ahead of schedule.",
+        "options": [
+            "It was the engineering team that finished the project ahead of schedule.",
+            "The engineering team was that finished the project ahead of schedule.",
+            "That the engineering team finished the project ahead of schedule."
+        ],
+        "correctAnswer": "It was the engineering team that finished the project ahead of schedule.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_055.mp3",
+        "hint": "How can you structure a sentence to specifically emphasize the person or group who performed the action?",
+        "content": {
+            "type": "text",
+            "value": "A [Cleft Sentence] with 'It was...' is used to focus on a particular piece of information. The structure is:\n[It was + (focused info) + that/who + rest of sentence]."
+        }
+    },
+    {
+        "cardId": "egac_056",
+        "category": "Emphasis: Cleft Sentences (What...)",
+        "question": "___ is more time to review the documents.",
+        "options": [
+            "What we need is more time to review the documents.",
+            "The thing what we need is more time to review the documents.",
+            "Is what we need more time to review the documents."
+        ],
+        "correctAnswer": "What we need is more time to review the documents.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_056.mp3",
+        "hint": "To emphasize the 'thing' that is needed or wanted, you can start the sentence with 'What'.",
+        "content": {
+            "type": "text",
+            "value": "A [Cleft Sentence] with 'What...' is used to focus on the object or action. The structure is:\n[What-clause + verb 'to be' + focused info]."
+        }
+    },
+    {
+        "cardId": "egac_057",
+        "category": "Zero Conditional",
+        "question": "If you heat ice, it ___.",
+        "options": [
+            "If you heat ice, it melts.",
+            "If you heat ice, it will melt.",
+            "If you would heat ice, it melted."
+        ],
+        "correctAnswer": "If you heat ice, it melts.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_057.mp3",
+        "hint": "Which conditional is used for general truths or scientific facts that are always true?",
+        "content": {
+            "type": "text",
+            "value": "The [Zero Conditional] is used for facts and general truths. The structure is:\n[If + Present Simple], ... [Present Simple]."
+        }
+    },
+    {
+        "cardId": "egac_058",
+        "category": "Modal Expressions: Had Better",
+        "question": "You ___ leave now if you want to catch the train.",
+        "options": [
+            "You had better leave now if you want to catch the train.",
+            "You have better leave now if you want to catch the train.",
+            "You had better to leave now if you want to catch the train."
+        ],
+        "correctAnswer": "You had better leave now if you want to catch the train.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_058.mp3",
+        "hint": "Which expression gives strong advice and implies a negative consequence if it's not followed?",
+        "content": {
+            "type": "text",
+            "value": "[Had better] is a strong modal expression for giving advice. It is followed by the base form of the verb (without 'to').\n\n* It is often contracted in speech: 'You'd better leave'."
+        }
+    },
+    {
+        "cardId": "egac_059",
+        "category": "Vocabulary: Money",
+        "question": "I need one more ___ to buy a soda from the vending machine.",
+        "options": [
+            "I need one more quarter to buy a soda from the vending machine.",
+            "I need one more nickel to buy a soda from the vending machine.",
+            "I need one more penny to buy a soda from the vending machine."
+        ],
+        "correctAnswer": "I need one more quarter to buy a soda from the vending machine.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_059.mp3",
+        "hint": "What is the common name for a 25-cent coin in the US?",
+        "content": {
+            "type": "text",
+            "value": "A [Quarter] is a US coin worth 25 cents. It is the most common coin used in vending machines.\n\n* A Penny = 1¢\n* A Nickel = 5¢\n* A Dime = 10¢"
+        }
+    },
+    {
+        "cardId": "egac_060",
+        "category": "Connectors: Despite",
+        "question": "She passed the test ___ not studying very much.",
+        "options": [
+            "She passed the test despite not studying very much.",
+            "She passed the test because of not studying very much.",
+            "She passed the test although not studying very much."
+        ],
+        "correctAnswer": "She passed the test despite not studying very much.",
+        "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_060.mp3",
+        "hint": "Which connector shows contrast and is followed by a noun or a gerund (-ing)?",
+        "content": {
+            "type": "text",
+            "value": "[Despite] is a connector of contrast. It must be followed by a noun or a gerund.\n\n* 'Although' is also for contrast, but it must be followed by a full clause (subject + verb)."
+        }
+    }
+]
+}
+  

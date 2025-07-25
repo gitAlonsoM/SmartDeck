@@ -1,242 +1,146 @@
 [
   {
-    "cardId": "tpp_087",
-    "sideA": {
-      "conversation": [
-        {
-          "text": "Why is it so important to test the switch customer feature?",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_087_a.mp3"
-        },
-        {
-          "text": "Because our Sales Rep Profile users manage hundreds of customers and need to place orders for them quickly.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_087_b.mp3"
-        }
-      ]
+    "cardId": "egac_029",
+    "category": "Vocabulary: Missing vs. Lack",
+    "question": "His main issue is a ___ of experience, not a lack of talent.",
+    "options": [
+      "His main issue is a lack of experience, not a lack of talent.",
+      "His main issue is a shortage of experience, not a lack of talent.",
+      "His main issue is a loss of experience, not a lack of talent."
+    ],
+    "correctAnswer": "His main issue is a lack of experience, not a lack of talent.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_029.mp3",
+    "hint": "Which word refers to a general deficiency or not having enough of something abstract?",
+    "content": {
+      "type": "text",
+      "value": "[Lack] (noun or verb) refers to a general shortage or deficiency of a quality or resource.\n\n* 'Missing' (adjective) is for a specific item that isn't where it should be (e.g., 'My keys are missing').\n* 'Out of' is for a supply that has been depleted (e.g., 'We are out of coffee')."
     },
-    "note": "The importance of a feature is often tied to the specific needs of a key user 'profile' (Noun). Understanding the user's workflow justifies the testing effort.\n\n'Sales Rep Profile' (Noun Phrase) refers to a specific type of user account for a Sales Representative, which has special permissions like placing orders on behalf of multiple customers."
+    "note": "I've updated the alternative options to be more plausible and challenging distractors. 'Shortage' is similar but more often used for countable things, while 'loss' implies the experience was once present and is now gone, which is a different meaning."
   },
   {
-    "cardId": "tpp_068",
-    "sideA": {
-      "conversation": [
-        {
-          "text": "At what point is the order released to AGLC?",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_068_a.mp3"
-        },
-        {
-          "text": "It happens after the order status changes from Entered to Booked in the backend.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_068_b.mp3"
-        }
-      ]
+    "cardId": "egac_041",
+    "category": "Possessive Apostrophe (Plural 's)",
+    "question": "My ___ house is at the end of the street.",
+    "options": [
+      "My parents' house is at the end of the street.",
+      "My parent's house is at the end of the street.",
+      "My parents's house is at the end of the street."
+    ],
+    "correctAnswer": "My parents' house is at the end of the street.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_041.mp3",
+    "hint": "For a plural noun that already ends in 's', where do you add the apostrophe to show possession?",
+    "content": {
+      "type": "text",
+      "value": "For regular plural nouns that end in 's', you form the possessive by adding only an apostrophe (') after the 's'."
     },
-    "note": "'Integration points' (Noun Phrase) are specific moments in a process where one system communicates with another. Pinpointing when these happen is key to understanding the 'business flow' (Noun).\n\n'AGLC' (Acronym) stands for Alberta Gaming, Liquor and Cannabis. It is the government agency in Alberta, Canada, that oversees the liquor and cannabis industries. In this context, it's an external system that orders are 'released to'."
+    "note": "The card is correct as is. The options are intentionally very similar to test the subtle but important difference in apostrophe placement for singular possessive (`parent's`) and plural possessive (`parents'`). This is a common point of confusion."
   },
   {
-    "cardId": "tpp_063",
-    "sideA": {
-      "conversation": [
-        {
-          "text": "The note says the search is now working. What does now working imply?",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_063_a.mp3"
-        },
-        {
-          "text": "It implies that it was previously broken, but a fix was deployed and it has been re-tested successfully.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_063_b.mp3"
-        }
-      ]
+    "cardId": "egac_013",
+    "category": "Prepositions at the End of Questions",
+    "question": "What are you looking ___?",
+    "options": [
+      "What are you looking for?",
+      "For what are you looking?",
+      "What are you looking?"
+    ],
+    "correctAnswer": "What are you looking for?",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_013.mp3",
+    "hint": "In modern English, it's very natural to end a question with a preposition, especially with phrasal verbs.",
+    "content": {
+      "type": "text",
+      "value": "The phrasal verb is [look for] (to search). When forming a question, the preposition 'for' stays with the verb group and naturally falls at the end.\n\n* 'For what are you looking?' is grammatically correct but extremely formal and rare in everyday conversation."
     },
-    "note": "'Now working' means the transition from a 'broken' (Adjective) state to a functional one.\n\n'To imply' (Verb) means to strongly suggest the truth or existence of something without stating it directly."
+    "note": "The alternatives are designed to test the correct usage of the phrasal verb 'look for' in a question. 'For what are you looking?' is a very formal but grammatically valid structure, while 'What are you looking?' is a common error. The options correctly test these different forms."
   },
   {
-    "cardId": "tpp_111",
-    "sideA": {
-      "conversation": [
-        {
-          "text": "The Keg Broken Seal return reason isn't available for selection in Quebec.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_111_a.mp3"
-        },
-        {
-          "text": "That's by design. The business rules for QC are different. Check the 'Preferences' for that region.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_111_b.mp3"
-        }
-      ]
+    "cardId": "egac_055",
+    "category": "Emphasis: Cleft Sentences (It was...)",
+    "question": "___ who finished the project ahead of schedule.",
+    "options": [
+      "It was the engineering team that finished the project ahead of schedule.",
+      "The engineering team was that finished the project ahead of schedule.",
+      "That the engineering team finished the project ahead of schedule."
+    ],
+    "correctAnswer": "It was the engineering team that finished the project ahead of schedule.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_055.mp3",
+    "hint": "How can you structure a sentence to specifically emphasize the person or group who performed the action?",
+    "content": {
+      "type": "text",
+      "value": "A [Cleft Sentence] with 'It was...' is used to focus on a particular piece of information. The structure is:\n[It was + (focused info) + that/who + rest of sentence]."
     },
-    "note": "'Keg Broken Seal' (Noun Phrase) is a return reason for a keg with a compromised security seal.\n\n'Quebec' (QC) (Noun) is a province in Canada.\n\n'Preferences' (Noun) are user-configurable or region-specific settings.\n\nA 'seal' (Noun), in this context, is a device or substance used to join two things together to prevent them from coming apart or to prevent anything from passing between them. A broken seal on a keg indicates it may have been tampered with or is no longer fresh."
+    "note": "This card type ('audioChoice') is specifically designed for 'complete the sentence' exercises. The options are intentionally full sentences so the user can hear the complete, correct phrase upon selection. This reinforces the grammatical structure being taught."
   },
   {
-    "cardId": "tpp_122",
-    "sideA": {
-      "conversation": [
-        {
-          "text": "The bug Pricing details lack info seems to be specific to Alberta.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_122_a.mp3"
-        },
-        {
-          "text": "Yes, the CA_HST logic for AB is not returning the tax breakdown. It works for Ontario.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_122_b.mp3"
-        }
-      ]
+    "cardId": "egac_011",
+    "category": "Existential There",
+    "question": "___ a problem with the server connection.",
+    "options": [
+      "There seems to be a problem with the server connection.",
+      "It seems to be a problem with the server connection.",
+      "Has a problem with the server connection."
+    ],
+    "correctAnswer": "There seems to be a problem with the server connection.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_011.mp3",
+    "hint": "How do you introduce the existence or presence of something, especially with verbs like 'seem' or 'appear'?",
+    "content": {
+      "type": "text",
+      "value": "[Existential There] is used to state that something exists or to introduce a new topic. It can be combined with verbs like 'seem to be' or 'appear to be'.\n\n* The pronoun [It] is a referential pronoun, meaning it must refer back to a specific noun already mentioned (e.g., 'I see a bug. It seems serious.'). In this sentence, no specific 'problem' has been introduced yet, so we use 'There' to state its existence."
     },
-    "note": "'Pricing details lack info' (Bug Description) is a problem where price breakdowns are incomplete or missing.\n\n'Alberta' (AB) (Noun) is a province in Canada.\n\n'CA_HST' (Harmonized Sales Tax) is a combined federal and provincial sales tax.\n\nA 'breakdown' (Noun) is an itemized list of parts or components. A 'tax breakdown' separates the total tax into its individual parts, such as federal tax (GST) and provincial tax (PST)."
+    "note": "Great suggestion. I've expanded the grammar explanation in the 'content' field to better clarify the distinction between the 'existential there' and the 'referential it'."
   },
   {
-    "cardId": "tpp_026",
-    "sideA": {
-      "conversation": [
-        {
-          "text": "Does the minimum quantity rule apply to both on-premise and retail customers?",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_026_a.mp3"
-        },
-        {
-          "text": "Yes, but the actual quantity is different depending on the customer profile.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_026_b.mp3"
-        }
-      ]
+    "cardId": "egac_047",
+    "category": "Informal English: Have Got",
+    "question": "I ___ a feeling that this is going to be a great day.",
+    "options": [
+      "I've got a feeling that this is going to be a great day.",
+      "I am got a feeling that this is going to be a great day.",
+      "I got a feeling that this is going to be a great day."
+    ],
+    "correctAnswer": "I've got a feeling that this is going to be a great day.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_047.mp3",
+    "hint": "How can you express 'have' or 'possess' in a common, slightly informal way?",
+    "content": {
+      "type": "text",
+      "value": "[Have got] is a common alternative to 'have' for expressing possession, especially in spoken English.\n\n* 'I've got' is the contraction of 'I have got' (present tense).\n\n* While 'I got a feeling' is very common in informal American English, 'have got' is the more standard present tense form being tested here. 'Got' by itself is technically the simple past tense of 'get'."
     },
-    "note": "'Minimum Quantity' (Noun) is a business rule that enforces a lower limit on order size. Testing that this rule applies correctly to different customer 'Profiles' (Noun) is essential.\n\n'On-premise' customers are businesses that sell products for immediate consumption at their location (e.g., bars, restaurants). 'Retail' customers are businesses that sell products for consumption elsewhere (e.g., liquor stores)."
+    "note": "Good point. I've updated the 'content' explanation to address why 'I got...' is not the target answer in this context, clarifying the difference between the standard form and common informal usage."
   },
   {
-    "cardId": "tpp_014",
-    "sideA": {
-      "conversation": [
-        {
-          "text": "Does the superscript number refer to the correct Legal Note?",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_014_a.mp3"
-        },
-        {
-          "text": "Yes, it correctly links to the disclaimer at the bottom of the Shopping Cart.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_014_b.mp3"
-        }
-      ]
+    "cardId": "egac_012",
+    "category": "Subject Questions",
+    "question": "___ broke the window in the living room?",
+    "options": [
+      "Who broke the window in the living room?",
+      "Who did break the window in the living room?",
+      "What did break the window in the living room?"
+    ],
+    "correctAnswer": "Who broke the window in the living room?",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_012.mp3",
+    "hint": "When the question word (Who/What) is the subject, you don't need an auxiliary verb (do/does/did).",
+    "content": {
+      "type": "text",
+      "value": "This is a [Subject Question]. The question word [Who] replaces the subject, so the verb ('broke') follows directly, just like in an affirmative sentence ('John broke the window')."
     },
-    "note": "'Superscript' (Noun) is text raised slightly above the line (like ¹), often used for footnotes.\n\n'Refer to' (Phrasal Verb) means to direct attention to something for information.\n\nA 'disclaimer' (Noun) is a statement that denies something, especially responsibility. In e-commerce, it's often a legal note that clarifies terms, conditions, or limitations."
+    "note": "The incorrect options, while grammatically wrong, are designed to be high-quality distractors because they represent very common mistakes learners make with subject questions (unnecessarily adding 'did' or using 'What' for a person)."
   },
   {
-    "cardId": "tpp_045",
-    "sideA": {
-      "conversation": [
-        {
-          "text": "If an order is booked in the iStore app, how do we prove it reached the EBS?",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_045_a.mp3"
-        },
-        {
-          "text": "You have to pull it up by order number in the Oracle Order Organizer to validate that it exists there.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_045_b.mp3"
-        }
-      ]
+    "cardId": "egac_021",
+    "category": "Phrasal Verbs (Separable)",
+    "question": "The music is too loud. Could you please ___?",
+    "options": [
+      "The music is too loud. Could you please turn it down?",
+      "The music is too loud. Could you please turn down it?",
+      "The music is too loud. Could you please down turn it?"
+    ],
+    "correctAnswer": "The music is too loud. Could you please turn it down?",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_021.mp3",
+    "hint": "With some phrasal verbs, where must the pronoun go?",
+    "content": {
+      "type": "text",
+      "value": "[Turn down] is a separable phrasal verb. When the object is a pronoun (like 'it', 'him', 'her'), it [must] go between the verb and the particle.\n\n* 'Turn it down' is correct.\n* 'Turn down it' is incorrect."
     },
-    "note": "Validating 'inter-system communication' (Noun Phrase) is crucial. Proving data exists in a downstream system (like EBS) after an action in an upstream system (iStore) is a common end-to-end test.\n\n'Pull it up' (Phrasal Verb) is an informal way to say 'to retrieve' or 'to display' information from a system. It means to search for and open a specific record, like an order."
-  },
-  {
-    "cardId": "tpp_071",
-    "sideA": {
-      "conversation": [
-        {
-          "text": "This ticket for the SK region has no developer assigned to it.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_071_a.mp3"
-        },
-        {
-          "text": "You're right. Let's assign it to Sean, as he has experience with the SK-specific requirements.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_071_b.mp3"
-        }
-      ]
-    },
-    "note": "An 'unassigned' (Adjective) ticket is a risk. Assigning tasks based on a developer's specific experience or expertise is an effective project management strategy.\n\n'Sean' is a common male first name. In a professional context, using a name almost always refers to a specific person on the team."
-  },
-  {
-    "cardId": "tpp_099",
-    "sideA": {
-      "conversation": [
-        {
-          "text": "Before we deploy, can someone do a quick sanity check on the ON production URL?",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_099_a.mp3"
-        },
-        {
-          "text": "Good idea. I'll just place an order with a test account to make sure the core functionality is working.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_099_b.mp3"
-        }
-      ]
-    },
-    "note": "A 'sanity check' (Idiom/Noun) is a brief, high-level test to ensure that the core functionality of a system is working after a change. It's not exhaustive, but it catches major problems.\n\n'Brief' (Adjective) means of short duration; not lasting for long. A brief test is one that is quick and does not take much time."
-  },
-  {
-    "cardId": "tpp_114",
-    "sideA": {
-      "conversation": [
-        {
-          "text": "The Bill To address is not being populated from the customers Personal Information.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_114_a.mp3"
-        },
-        {
-          "text": "Is the Fill Details button present? The user should be able to click it to auto-populate the form.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_114_b.mp3"
-        }
-      ]
-    },
-    "note": "'Bill To' (Noun Phrase) refers to the billing address for an invoice.\n\n'Personal Information' (Noun) are user-specific details like name and address.\n\n'Fill Details' (Verb Phrase) is an action to automatically populate required fields.\n\nA 'bill' (Noun) is a printed or written statement of the money owed for goods or services. The 'Billing Address' is the address associated with a customer's payment method, where the invoice or bill is sent."
-  },
-  {
-    "cardId": "tpp_120",
-    "sideA": {
-      "conversation": [
-        {
-          "text": "We need a Calender icon next to the Date field for delivery selection.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_120_a.mp3"
-        },
-        {
-          "text": "Agreed. I'll add the icon and hook it up to a date picker component. That's a quick UI fix.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_120_b.mp3"
-        }
-      ]
-    },
-    "note": "'Calender' (Noun, common typo for Calendar) refers to the icon used for selecting dates.\n\n'Date' (Noun) refers to a specific day, often for an order or delivery.\n\n'To hook up' (Phrasal Verb) in a technical context means to connect or link two components so they work together. For example, connecting an icon's click event to the function that opens a date picker."
-  },
-  {
-    "cardId": "tpp_094",
-    "sideA": {
-      "conversation": [
-        {
-          "text": "Are we ready to release this new version?",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_094_a.mp3"
-        },
-        {
-          "text": "Not until the business manager can sign off on the UAT results.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_094_b.mp3"
-        }
-      ]
-    },
-    "note": "'Sign off on' (Phrasal Verb) means to give formal approval. Getting sign-off from key stakeholders (like a business manager) on test results is a critical gate before a 'release' (Noun).\n\n'UAT' (Acronym) stands for User Acceptance Testing. It's the final phase of testing where actual users test the software to see if it meets their business needs before the official release."
-  },
-  {
-    "cardId": "tpp_145",
-    "sideA": {
-      "conversation": [
-        {
-          "text": "What does the coming up as phrase mean in this ticket?",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_145_a.mp3"
-        },
-        {
-          "text": "It means the system is incorrectly displaying one value instead of another. For example, showing Breakage instead of Defective Keg.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_145_b.mp3"
-        }
-      ]
-    },
-    "note": "'coming up as' (Phrasal Verb) means 'to appear as' or 'to be displayed as', often highlighting a discrepancy or error.\n\nYes, your understanding is correct. 'Defective' (Adjective) means imperfect or faulty; it has a flaw. A 'Defective Keg' is a keg that is not working correctly or has a manufacturing problem."
-  },
-  {
-    "cardId": "tpp_044",
-    "sideA": {
-      "conversation": [
-        {
-          "text": "I need to set up the test for the Under Minimum ticket. It seems complex.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_044_a.mp3"
-        },
-        {
-          "text": "Yes, you need to use two customer profiles: one on-premise and one off-premise to see the different limits.",
-          "audioSrc": "public/data/audio/technical_project_plan/tpp_044_b.mp3"
-        }
-      ]
-    },
-    "note": "'Set up' (Phrasal Verb) means to prepare the necessary conditions for a task. Complex tests often require specific data setups, such as using multiple user profiles.\n\n'On-premise' refers to businesses where products (like beer) are sold and consumed on site, such as a bar or restaurant.\n\n'Off-premise' refers to businesses where products are sold for consumption elsewhere, such as a retail liquor store."
+    "note": "You were absolutely right, this card was flawed as it previously had two correct answers. I have completely reworked it to use a pronoun ('it'), which makes the correct word order unambiguous. This now correctly tests the rule for separable phrasal verbs with pronouns."
   }
 ]
