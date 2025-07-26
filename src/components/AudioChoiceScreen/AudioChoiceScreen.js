@@ -1,6 +1,5 @@
 /* src\components\AudioChoiceScreen\AudioChoiceScreen.js */
 
-
 class AudioChoiceScreen {
     constructor(container, onAnswer, onNext, onIgnore, onMarkForImprovement) {
         this.container = container;
@@ -12,9 +11,9 @@ class AudioChoiceScreen {
         console.log("DEBUG: [AudioChoiceScreen] constructor -> Component instantiated.");
     }
 
-    async render(question, currentIndex, totalQuestions, score) {
-        console.log(`DEBUG: [AudioChoiceScreen] render -> Rendering question ${currentIndex + 1} of ${totalQuestions}.`);
-        this.currentCard = question; // Store the card data
+    async render(cardData, currentIndex, totalQuestions, score) {
+        console.log(`DEBUG: [AudioChoiceScreen] render -> Rendering question ${currentIndex + 1} of ${totalQuestions} with new structure.`);
+        this.currentCard = cardData; // Store the full card data
 
         const html = await ComponentLoader.loadHTML('/src/components/AudioChoiceScreen/audio-choice-screen.html');
         this.container.innerHTML = html;
@@ -22,42 +21,39 @@ class AudioChoiceScreen {
         // Populate static elements
         document.getElementById('quiz-progress').textContent = `Question ${currentIndex + 1} of ${totalQuestions}`;
         document.getElementById('quiz-score').textContent = `Score: ${score}`;
-        document.getElementById('card-category').textContent = question.category;
-        document.getElementById('question-text').textContent = question.question;
+        document.getElementById('card-category').textContent = cardData.category;
 
-        // Render options
+        // NEW LOGIC: Use the new 'sentenceParts' structure for the question display
+        const { prefix, suffix } = cardData.sentenceParts;
+        document.getElementById('question-text').textContent = `${prefix}___${suffix}`;
+
+        // Render options from the new structured array
         const optionsContainer = document.getElementById('options-container');
- optionsContainer.innerHTML = '';
-        const shuffledOptions = [...question.options].sort(() => Math.random() - 0.5);
-
-        // Find the static parts of the question to isolate the variable part in options
-        const questionParts = question.question.split('___');
-        const prefix = questionParts[0];
-        const suffix = questionParts.length > 1 ? questionParts[1] : '';
-        
-        shuffledOptions.forEach(optionText => {
-            const button = document.createElement('button');
-
-            // Isolate the variable middle part of the text
-            let middlePart = optionText;
-            if (optionText.startsWith(prefix)) {
-                middlePart = optionText.substring(prefix.length);
-            }
-            if (optionText.endsWith(suffix)) {
-                middlePart = middlePart.substring(0, middlePart.length - suffix.length);
-            }
-            
-            // Use innerHTML to add styling to the variable part
-            button.innerHTML = `<span>${prefix}<strong class="font-bold text-yellow-600 dark:text-yellow-400">${middlePart}</strong>${suffix}</span>`;
-                        
-            button.dataset.option = optionText;
-            button.className = 'option-btn relative w-full p-4 border-2 border-gray-300 dark:border-gray-600 rounded-lg text-left hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-between';
-            button.addEventListener('click', () => {
-                this.handleOptionClick(optionText);
-            });
-            optionsContainer.appendChild(button);
-        });
+        optionsContainer.innerHTML = '';
         
+        // Shuffle the options array
+        const shuffledOptions = [...cardData.options].sort(() => Math.random() - 0.5);
+
+        shuffledOptions.forEach(option => {
+            const button = document.createElement('button');
+            
+            // Construct the full sentence for display and for the dataset
+            const fullSentence = `${prefix}${option.text}${suffix}`;
+
+            // Create the button's display with the variable part highlighted
+            button.innerHTML = `<span>${prefix}<strong class="font-bold text-yellow-600 dark:text-yellow-400">${option.text}</strong>${suffix}</span>`;
+            
+            // The dataset now stores the full sentence to check against 'correctAnswer'
+            button.dataset.option = fullSentence;
+            
+            button.className = 'option-btn relative w-full p-4 border-2 border-gray-300 dark:border-gray-600 rounded-lg text-left hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-between';
+            button.addEventListener('click', () => {
+                this.handleOptionClick(fullSentence);
+            });
+            optionsContainer.appendChild(button);
+        });
+        
+        // Setup event listeners for other buttons
         document.getElementById('next-btn').disabled = true;
         document.getElementById('next-btn').addEventListener('click', () => this.onNext());
         
@@ -68,20 +64,21 @@ class AudioChoiceScreen {
 
         document.getElementById('mark-improve-btn').addEventListener('click', (e) => {
             e.stopPropagation();
-            this.onMarkForImprovement(question.cardId);
+            this.onMarkForImprovement(cardData.cardId);
         });
     }
 
     handleOptionClick(selectedOption) {
         if (!this.currentCard) return;
 
+        // The check remains the same, as we preserved 'correctAnswer' for this purpose
         const isCorrect = selectedOption === this.currentCard.correctAnswer;
         
         // 1. Show feedback on buttons
-        this.showFeedback(isCorrect, this.currentCard.correctAnswer, selectedOption);
-        
-        // 2. Reveal hint and content
-        this.revealFeedback();
+        this.showFeedback(isCorrect, this.currentCard.correctAnswer, selectedOption);
+        
+        // 2. Reveal hint and content
+        this.revealFeedback();
         // 3. Play correct audio
         this.playCorrectAudio();
         
@@ -89,7 +86,7 @@ class AudioChoiceScreen {
         this.onAnswer(selectedOption);
     }
     
-     showFeedback(isCorrect, correctAnswer, selectedOption) {
+    showFeedback(isCorrect, correctAnswer, selectedOption) {
         console.log(`DEBUG: [AudioChoiceScreen] showFeedback -> User choice correct: ${isCorrect}.`);
         const optionButtons = document.querySelectorAll('.option-btn');
         optionButtons.forEach(button => {
@@ -107,7 +104,8 @@ class AudioChoiceScreen {
                     this.playCorrectAudio();
                 });
                 button.appendChild(replayIcon);
-} else if (!isCorrect && option === selectedOption) {                button.className += ' !bg-red-500 !border-red-600 !text-white';
+            } else if (!isCorrect && option === selectedOption) {
+                button.className += ' !bg-red-500 !border-red-600 !text-white';
             }
         });
 
