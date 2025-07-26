@@ -5521,7 +5521,3608 @@
       "content": {
         "type": "text",
         "value": "[Strange] is used for things that are uncommon or unexpected. It's more neutral than 'weird'.\n\n~awkward~ is for social discomfort.\n~off~ implies something is wrong or incorrect, which doesn't fit."
+     }
+    },
+    {
+      "cardId": "egac_191",
+      "category": "Syntax: Possessive for Time",
+      "sentenceParts": {
+        "prefix": "I need to review ",
+        "suffix": " meeting notes before the call."
+      },
+      "options": [
+        { "text": "today's", "isCorrect": true },
+        { "text": "of today", "isCorrect": false },
+        { "text": "the today's", "isCorrect": false }
+      ],
+      "correctAnswer": "I need to review today's meeting notes before the call.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_191.mp3",
+      "hint": "How do you show possession for time expressions like 'today' or 'tomorrow'?",
+      "content": {
+        "type": "text",
+        "value": "[Today's] uses the possessive 's, which is the standard way to show possession for time periods.\n\n~of today~ is a grammatically incorrect structure influenced by other languages.\n~the today's~ is incorrect because 'today' already functions as a specific noun here and doesn't need 'the'."
+      }
+    },
+    {
+      "cardId": "egac_192",
+      "category": "Introducing Topics: When it comes to",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " cooking, my brother is the real expert."
+      },
+      "options": [
+        { "text": "When it comes to", "isCorrect": true },
+        { "text": "As it comes to", "isCorrect": false },
+        { "text": "Regarding to", "isCorrect": false }
+      ],
+      "correctAnswer": "When it comes to cooking, my brother is the real expert.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_192.mp3",
+      "hint": "Which common phrase introduces a specific topic to give an opinion on it?",
+      "content": {
+        "type": "text",
+        "value": "[When it comes to...] is a fixed, natural expression used to introduce a topic before making a comment or giving an opinion about it.\n\n~As it comes to~ is not a standard English idiom.\n~Regarding to~ is incorrect; 'Regarding' is used alone without 'to'."
+      }
+    },
+    {
+      "cardId": "egac_193",
+      "category": "Vocabulary: Household Chores",
+      "sentenceParts": {
+        "prefix": "It's your turn to ",
+        "suffix": " the garbage."
+      },
+      "options": [
+        { "text": "take out", "isCorrect": true },
+        { "text": "do out", "isCorrect": false },
+        { "text": "put off", "isCorrect": false }
+      ],
+      "correctAnswer": "It's your turn to take out the garbage.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_193.mp3",
+      "hint": "What is the common phrasal verb for removing trash from the house?",
+      "content": {
+        "type": "text",
+        "value": "[Take out the garbage] is the standard, fixed collocation for this household chore.\n\n~do out~ is not a correct phrasal verb for this action.\n~put off~ means to postpone, which doesn't fit the context."
+      }
+    },
+    {
+      "cardId": "egac_194",
+      "category": "Expressions: 'As far as'",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " I know, the store is closed on Sundays."
+      },
+      "options": [
+        { "text": "As far as", "isCorrect": true },
+        { "text": "As long as", "isCorrect": false },
+        { "text": "As good as", "isCorrect": false }
+      ],
+      "correctAnswer": "As far as I know, the store is closed on Sundays.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_194.mp3",
+      "hint": "Which phrase is used to indicate the limit of your knowledge or information?",
+      "content": {
+        "type": "text",
+        "value": "[As far as I know] is a fixed idiom used to state something you believe is true, while admitting your knowledge might be limited.\n\n~As long as~ means 'provided that' or 'on the condition that'.\n~As good as~ means 'almost' or 'virtually'."
+      }
+    },
+    {
+      "cardId": "egac_195",
+      "category": "Autonomy: On my own",
+      "sentenceParts": {
+        "prefix": "I learned how to code completely ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "on my own", "isCorrect": true },
+        { "text": "alone", "isCorrect": false },
+        { "text": "myself", "isCorrect": false }
+      ],
+      "correctAnswer": "I learned how to code completely on my own.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_195.mp3",
+      "hint": "Which phrase emphasizes that you did something without help from others?",
+      "content": {
+        "type": "text",
+        "value": "[On my own] (or 'by myself') emphasizes independence and lack of assistance. It's the most natural choice for learning a skill without a teacher.\n\n~alone~ means without company, which doesn't fit the context of learning.\n~myself~ would be used for emphasis in a different structure, like 'I did it myself'."
+      }
+    },
+    {
+      "cardId": "egac_196",
+      "category": "Prepositions: 'By' for Deadlines",
+      "sentenceParts": {
+        "prefix": "You need to finish the assignment ",
+        "suffix": " Friday at the latest."
+      },
+      "options": [
+        { "text": "by", "isCorrect": true },
+        { "text": "until", "isCorrect": false },
+        { "text": "at", "isCorrect": false }
+      ],
+      "correctAnswer": "You need to finish the assignment by Friday at the latest.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_196.mp3",
+      "hint": "Which preposition is used to set a deadline, meaning 'no later than'?",
+      "content": {
+        "type": "text",
+        "value": "[By] is used to indicate a deadline. It means the action must be completed on or before that time.\n\n~Until~ describes a continuous action that stops at a certain time (e.g., 'Work until Friday').\n~at~ is for a specific point in time, not a deadline."
+      }
+    },
+    {
+      "cardId": "egac_197",
+      "category": "Syntax: 'But not' for Exclusion",
+      "sentenceParts": {
+        "prefix": "He eats all kinds of seafood, ",
+        "suffix": " oysters."
+      },
+      "options": [
+        { "text": "but not", "isCorrect": true },
+        { "text": "excepting", "isCorrect": false },
+        { "text": "without", "isCorrect": false }
+      ],
+      "correctAnswer": "He eats all kinds of seafood, but not oysters.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_197.mp3",
+      "hint": "How do you make a general statement and then exclude one specific item?",
+      "content": {
+        "type": "text",
+        "value": "[But not] is a common and concise way to state an exception to a general rule or statement.\n\n~excepting~ is a very formal and rare word; 'except' would be better but 'but not' is more conversational.\n~without~ means 'lacking' and doesn't fit the meaning of exclusion here."
+      }
+    },
+    {
+      "cardId": "egac_198",
+      "category": "Feedback: 'Fair enough'",
+      "sentenceParts": {
+        "prefix": "A: I can't come tonight, I have to study. B: ",
+        "suffix": ". We'll hang out next time."
+      },
+      "options": [
+        { "text": "Fair enough", "isCorrect": true },
+        { "text": "Good enough", "isCorrect": false },
+        { "text": "Quite enough", "isCorrect": false }
+      ],
+      "correctAnswer": "A: I can't come tonight, I have to study. B: Fair enough. We'll hang out next time.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_198.mp3",
+      "hint": "Which short phrase is used to show you understand and accept someone's reason or decision?",
+      "content": {
+        "type": "text",
+        "value": "[Fair enough] is a common idiom that means 'I understand and accept your point; it's a reasonable explanation'.\n\n~Good enough~ means something meets the minimum standard, which doesn't fit as a response here.\n~Quite enough~ is not a standard expression in this context."
+      }
+    },
+    {
+      "cardId": "egac_199",
+      "category": "Quantity: 'And a half'",
+      "sentenceParts": {
+        "prefix": "The movie was about ",
+        "suffix": " long."
+      },
+      "options": [
+        { "text": "an hour and a half", "isCorrect": true },
+        { "text": "one hour and a half", "isCorrect": false },
+        { "text": "a hour and half", "isCorrect": false }
+      ],
+      "correctAnswer": "The movie was about an hour and a half long.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_199.mp3",
+      "hint": "What is the natural way to say '1 hora y 30 minutos'?",
+      "content": {
+        "type": "text",
+        "value": "[An hour and a half] is the standard, idiomatic structure. Using 'an' is more natural than 'one'.\n\n~one hour and a half~ is grammatically correct but sounds less natural and more robotic in everyday speech.\n~a hour and half~ is incorrect; 'hour' starts with a vowel sound, requiring 'an', and it's missing the second 'a' before 'half'."
+      }
+    },
+    {
+      "cardId": "egac_200",
+      "category": "Progression: 'Step by step'",
+      "sentenceParts": {
+        "prefix": "Don't worry, I'll explain the process ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "step by step", "isCorrect": true },
+        { "text": "step to step", "isCorrect": false },
+        { "text": "one by other", "isCorrect": false }
+      ],
+      "correctAnswer": "Don't worry, I'll explain the process step by step.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_200.mp3",
+      "hint": "Which expression describes doing something gradually and in sequence?",
+      "content": {
+        "type": "text",
+        "value": "[Step by step] is a fixed expression that means to do something in a logical, sequential order, one stage at a time.\n\n~step to step~ is not a correct English idiom.\n~one by other~ is an incorrect translation; the correct phrase would be 'one by one'."
+      }
+    },
+    {
+      "cardId": "egac_201",
+      "category": "Knowledge vs. Experience: 'Been to'",
+      "sentenceParts": {
+        "prefix": "I know a lot about Japan, but I've never actually ",
+        "suffix": " there."
+      },
+      "options": [
+        { "text": "been ", "isCorrect": true },
+        { "text": "known", "isCorrect": false },
+        { "text": "gone in", "isCorrect": false }
+      ],
+      "correctAnswer": "I know a lot about Japan, but I've never actually been there.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_201.mp3",
+      "hint": "Which phrase is used to talk about the life experience of visiting a place?",
+      "content": {
+        "type": "text",
+        "value": "[Been there] is the correct phrase to talk about the experience of having visited a place and returned.\n\n~known~ implies a deep, intimate understanding of a place, which contradicts the context.\n~gone in~ is grammatically incorrect. 'Gone to' implies the person is still there."
+      }
+    },
+    {
+      "cardId": "egac_202",
+      "category": "Prepositions: 'At' for Focus",
+      "sentenceParts": {
+        "prefix": "Stop yelling ",
+        "suffix": " me, I didn't do anything wrong!"
+      },
+      "options": [
+        { "text": "at", "isCorrect": true },
+        { "text": "to", "isCorrect": false },
+        { "text": "on", "isCorrect": false }
+      ],
+      "correctAnswer": "Stop yelling at me, I didn't do anything wrong!",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_202.mp3",
+      "hint": "Which preposition is used after verbs like 'yell', 'shout', or 'look' to indicate the target?",
+      "content": {
+        "type": "text",
+        "value": "[At] is used with verbs of perception or communication to indicate the target of the action, often with a slightly aggressive tone for 'yell'.\n\n~to~ is used with verbs like 'speak' or 'talk' ('speak to me'), but not with 'yell'.\n~on~ is incorrect in this context."
+      }
+    },
+    {
+      "cardId": "egac_203",
+      "category": "Negative Expressions: 'No way'",
+      "sentenceParts": {
+        "prefix": "A: You won the lottery! B: ",
+        "suffix": "! You're kidding, right?"
+      },
+      "options": [
+        { "text": "No way", "isCorrect": true },
+        { "text": "Not way", "isCorrect": false },
+        { "text": "Any way", "isCorrect": false }
+      ],
+      "correctAnswer": "A: You won the lottery! B: No way! You're kidding, right?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_203.mp3",
+      "hint": "Which informal expression shows strong disbelief or refusal?",
+      "content": {
+        "type": "text",
+        "value": "[No way] is a common, informal idiom used to express total disbelief, surprise, or a strong refusal.\n\n~Not way~ is grammatically incorrect; 'no' is the correct determiner here, not the adverb 'not'.\n~Any way~ doesn't fit the context of disbelief."
+      }
+    },
+    {
+      "cardId": "egac_204",
+      "category": "Results: 'Do well'",
+      "sentenceParts": {
+        "prefix": "I really hope I ",
+        "suffix": " well on the exam tomorrow."
+      },
+      "options": [
+        { "text": "do", "isCorrect": true },
+        { "text": "go", "isCorrect": false },
+        { "text": "make", "isCorrect": false }
+      ],
+      "correctAnswer": "I really hope I do well on the exam tomorrow.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_204.mp3",
+      "hint": "Which verb is used to talk about your performance or the result of an activity like a test?",
+      "content": {
+        "type": "text",
+        "value": "The verb [do] is used in expressions like 'do well' or 'do badly' to talk about performance in a task or event.\n\n~go~ is used for the progress of a situation ('How's it going?') but not for personal performance in this way.\n~make~ is used for creating or producing something."
+      }
+    },
+    {
+      "cardId": "egac_205",
+      "category": "Prepositions: Besides vs. Beside",
+      "sentenceParts": {
+        "prefix": "Who else is coming to the party ",
+        "suffix": " us?"
+      },
+      "options": [
+        { "text": "besides", "isCorrect": true },
+        { "text": "beside", "isCorrect": false },
+        { "text": "except", "isCorrect": false }
+      ],
+      "correctAnswer": "Who else is coming to the party besides us?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_205.mp3",
+      "hint": "Which word means 'in addition to'?",
+      "content": {
+        "type": "text",
+        "value": "[Besides] (with an 's') means 'in addition to' or 'apart from'.\n\n~Beside~ (without an 's') means 'next to' physically.\n~Except~ would mean 'everyone but us', which changes the meaning of the question."
+      }
+    },
+    {
+      "cardId": "egac_206",
+      "category": "Phrasal Verbs: 'Put on' (weight)",
+      "sentenceParts": {
+        "prefix": "I think I ",
+        "suffix": " a little weight over the holidays."
+      },
+      "options": [
+        { "text": "put on", "isCorrect": true },
+        { "text": "gained on", "isCorrect": false },
+        { "text": "added", "isCorrect": false }
+      ],
+      "correctAnswer": "I think I put on a little weight over the holidays.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_206.mp3",
+      "hint": "Which phrasal verb is a common, informal way to say 'gained weight'?",
+      "content": {
+        "type": "text",
+        "value": "[Put on weight] is a very common idiom for gaining body weight. While 'gain weight' is also correct, 'put on' is more conversational.\n\n~gained on~ is incorrect; 'gain' does not need a preposition here.\n~added~ is used for ingredients or numbers, not typically for body weight."
+      }
+    },
+    {
+      "cardId": "egac_207",
+      "category": "Like: 'What... like?' for description",
+      "sentenceParts": {
+        "prefix": "A: I just got a new puppy! B: Oh, nice! What's he ",
+        "suffix": "?"
+      },
+      "options": [
+        { "text": "like", "isCorrect": true },
+        { "text": "as", "isCorrect": false },
+        { "text": "how", "isCorrect": false }
+      ],
+      "correctAnswer": "A: I just got a new puppy! B: Oh, nice! What's he like?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_207.mp3",
+      "hint": "How do you ask about the personality or characteristics of someone or something?",
+      "content": {
+        "type": "text",
+        "value": "The structure [What + be + subject + like?] is used to ask for a general description of character or qualities.\n\n~as~ does not fit this question structure.\n~how~ would be used to ask about its current state or mood ('How is he?'), not its personality."
+      }
+    },
+    {
+      "cardId": "egac_208",
+      "category": "Vocabulary: Irregular Plurals",
+      "sentenceParts": {
+        "prefix": "There are three ",
+        "suffix": " waiting for the bus."
+      },
+      "options": [
+        { "text": "women", "isCorrect": true },
+        { "text": "womans", "isCorrect": false },
+        { "text": "woman", "isCorrect": false }
+      ],
+      "correctAnswer": "There are three women waiting for the bus.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_208.mp3",
+      "hint": "What is the irregular plural form of 'woman'?",
+      "content": {
+        "type": "text",
+        "value": "The plural of 'woman' is an irregular plural, [women], pronounced /'wɪmɪn/.\n\n~womans~ is incorrect; the plural is not formed by adding -s.\n~woman~ is the singular form."
+      }
+    },
+    {
+      "cardId": "egac_209",
+      "category": "Confusing Words: Strange vs. Awkward",
+      "sentenceParts": {
+        "prefix": "The meeting was really ",
+        "suffix": "; no one knew what to say."
+      },
+      "options": [
+        { "text": "awkward", "isCorrect": true },
+        { "text": "weird", "isCorrect": false },
+        { "text": "off", "isCorrect": false }
+      ],
+      "correctAnswer": "The meeting was really awkward; no one knew what to say.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_209.mp3",
+      "hint": "Which adjective best describes social discomfort or embarrassment?",
+      "content": {
+        "type": "text",
+        "value": "[Awkward] specifically describes a situation that is socially uncomfortable or embarrassing.\n\n~Weird~ means bizarre or strange, which is less specific than the social tension implied here.\n~Off~ means something feels wrong, but 'awkward' is better for social situations."
+      }
+    },
+    {
+      "cardId": "egac_210",
+      "category": "Adverbs: 'Even' for surprise",
+      "sentenceParts": {
+        "prefix": "He speaks five languages, and he can ",
+        "suffix": " read ancient Greek."
+      },
+      "options": [
+        { "text": "even", "isCorrect": true },
+        { "text": "also", "isCorrect": false },
+        { "text": "too", "isCorrect": false }
+      ],
+      "correctAnswer": "He speaks five languages, and he can even read ancient Greek.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_210.mp3",
+      "hint": "Which adverb is used to add a surprising or impressive piece of information?",
+      "content": {
+        "type": "text",
+        "value": "[Even] is used to emphasize a fact that is surprising or unexpected in the context.\n\n~Also~ and ~too~ are used to add information, but they lack the strong element of surprise that 'even' provides."
+      }
+    },
+    {
+      "cardId": "egac_211",
+      "category": "Like: Informal Quoting",
+      "sentenceParts": {
+        "prefix": "So I saw him and I was ",
+        "suffix": ", 'What are you doing here?'"
+      },
+      "options": [
+        { "text": "like", "isCorrect": true },
+        { "text": "saying", "isCorrect": false },
+        { "text": "as", "isCorrect": false }
+      ],
+      "correctAnswer": "So I saw him and I was like, 'What are you doing here?'",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_211.mp3",
+      "hint": "In very informal speech, what word is often used to introduce a quote or a thought?",
+      "content": {
+        "type": "text",
+        "value": "[I was like] is a very common informal filler used in storytelling to introduce direct speech or a thought, similar to 'I said' or 'I thought'.\n\n~I was saying~ is more formal and less common in this narrative style.\n~I was as~ is grammatically incorrect."
+      }
+    },
+    {
+      "cardId": "egac_212",
+      "category": "Prepositions: 'Out of' for depletion",
+      "sentenceParts": {
+        "prefix": "I can't make coffee because we're completely ",
+        "suffix": " beans."
+      },
+      "options": [
+        { "text": "out of", "isCorrect": true },
+        { "text": "without of", "isCorrect": false },
+        { "text": "off", "isCorrect": false }
+      ],
+      "correctAnswer": "I can't make coffee because we're completely out of beans.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_212.mp3",
+      "hint": "Which phrase describes the state of having no more of something?",
+      "content": {
+        "type": "text",
+        "value": "[Out of] is the correct prepositional phrase to indicate that a supply has been fully used up.\n\n~without of~ is grammatically incorrect.\n~off~ has many meanings, but it does not mean 'depleted' in this context."
+      }
+    },
+    {
+      "cardId": "egac_213",
+      "category": "Simultaneity: 'As' for progression",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " the movie went on, it became more and more exciting."
+      },
+      "options": [
+        { "text": "As", "isCorrect": true },
+        { "text": "During", "isCorrect": false },
+        { "text": "For", "isCorrect": false }
+      ],
+      "correctAnswer": "As the movie went on, it became more and more exciting.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_213.mp3",
+      "hint": "Which word connects two actions that happen and progress at the same time?",
+      "content": {
+        "type": "text",
+        "value": "[As] is used as a conjunction to show that two events or processes are happening or developing simultaneously.\n\n~During~ is a preposition and must be followed by a noun (e.g., 'during the movie'), not a full clause.\n~For~ is used to indicate duration or purpose."
+      }
+    },
+    {
+      "cardId": "egac_214",
+      "category": "Vocabulary: Math Operations",
+      "sentenceParts": {
+        "prefix": "What is twenty ",
+        "suffix": " by four?"
+      },
+      "options": [
+        { "text": "divided", "isCorrect": true },
+        { "text": "shared", "isCorrect": false },
+        { "text": "parted", "isCorrect": false }
+      ],
+      "correctAnswer": "What is twenty divided by four?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_214.mp3",
+      "hint": "What is the correct verb for the math operation of division (÷)?",
+      "content": {
+        "type": "text",
+        "value": "The correct phrase for the mathematical operation is [divided by].\n\n~shared by~ means to distribute among, which is related but not the precise mathematical term.\n~parted~ means separated and is incorrect here."
+      }
+    },
+    {
+      "cardId": "egac_215",
+      "category": "Hyphenated Words: 'Part-time'",
+      "sentenceParts": {
+        "prefix": "She works ",
+        "suffix": " as a waitress to pay for college."
+      },
+      "options": [
+        { "text": "part-time", "isCorrect": true },
+        { "text": "part time", "isCorrect": false },
+        { "text": "a part of time", "isCorrect": false }
+      ],
+      "correctAnswer": "She works part-time as a waitress to pay for college.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_215.mp3",
+      "hint": "How do you correctly write the adverb that means 'for less than the full working week'?",
+      "content": {
+        "type": "text",
+        "value": "When used as an adverb modifying a verb ('works'), [part-time] is correctly written with a hyphen.\n\n~part time~ (two words) is typically used when it functions as a noun phrase after a preposition ('She works on a part time basis'). However, the hyphenated form is standard as an adverb.\n~a part of time~ is grammatically incorrect."
+      }
+    },
+    {
+      "cardId": "egac_216",
+      "category": "Like: Expressing Similarity",
+      "sentenceParts": {
+        "prefix": "He runs really fast, ",
+        "suffix": " a professional athlete."
+      },
+      "options": [
+        { "text": "like", "isCorrect": true },
+        { "text": "as", "isCorrect": false },
+        { "text": "same", "isCorrect": false }
+      ],
+      "correctAnswer": "He runs really fast, like a professional athlete.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_216.mp3",
+      "hint": "Which word is used to make a direct comparison to a noun?",
+      "content": {
+        "type": "text",
+        "value": "[Like] is used as a preposition to compare one noun to another.\n\n~as~ is used for comparisons in a different structure ('as fast as an athlete') or to describe a role ('He works as an athlete'). Using it here is a common grammar mistake.\n~same~ would require a different structure ('the same as')."
+      }
+    },
+    {
+      "cardId": "egac_217",
+      "category": "Phrasal Verbs: 'Go on'",
+      "sentenceParts": {
+        "prefix": "I heard a crash from the other room. What's ",
+        "suffix": "?"
+      },
+      "options": [
+        { "text": "going on", "isCorrect": true },
+        { "text": "doing on", "isCorrect": false },
+        { "text": "passing", "isCorrect": false }
+      ],
+      "correctAnswer": "I heard a crash from the other room. What's going on?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_217.mp3",
+      "hint": "Which phrasal verb means 'happening' or 'occurring'?",
+      "content": {
+        "type": "text",
+        "value": "[Going on] is a phrasal verb that means 'happening'. The question 'What's going on?' is extremely common.\n\n~doing on~ is not a correct phrasal verb.\n~passing~ means moving past something and doesn't fit the context of asking what is happening."
+      }
+    },
+    {
+      "cardId": "egac_218",
+      "category": "Prepositions: 'Of' vs. 'From' (Origin)",
+      "sentenceParts": {
+        "prefix": "This is a picture ",
+        "suffix": " my hometown."
+      },
+      "options": [
+        { "text": "of", "isCorrect": true },
+        { "text": "from", "isCorrect": false },
+        { "text": "about", "isCorrect": false }
+      ],
+      "correctAnswer": "This is a picture of my hometown.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_218.mp3",
+      "hint": "Which preposition shows what the picture represents or depicts?",
+      "content": {
+        "type": "text",
+        "value": "[Of] is used to show the subject of a representation, like a picture or a story.\n\n~From~ would imply the picture physically originated in the hometown (e.g., 'a letter from my hometown'), not that it depicts it.\n~About~ is used for topics, but 'of' is more direct for visual representations."
+      }
+    },
+    {
+      "cardId": "egac_219",
+      "category": "Negative Expressions: 'Not anymore'",
+      "sentenceParts": {
+        "prefix": "I used to smoke, but I don't ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "anymore", "isCorrect": true },
+        { "text": "no more", "isCorrect": false },
+        { "text": "still", "isCorrect": false }
+      ],
+      "correctAnswer": "I used to smoke, but I don't anymore.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_219.mp3",
+      "hint": "Which phrase is used with a negative verb to say a past habit has stopped?",
+      "content": {
+        "type": "text",
+        "value": "[Anymore] is used at the end of a negative sentence to indicate that a situation has changed and is no longer true.\n\n~no more~ is used differently, often before a noun ('There is no more coffee').\n~still~ would be used in a positive sentence to say the habit continues ('I still smoke')."
+      }
+    },
+    {
+      "cardId": "egac_220",
+      "category": "Like: 'Introverts be like'",
+      "sentenceParts": {
+        "prefix": "My friends want to go to a huge party, and I'm just here ",
+        "suffix": " I'd rather stay home with a good book."
+      },
+      "options": [
+        { "text": "like,", "isCorrect": true },
+        { "text": "as,", "isCorrect": false },
+        { "text": "saying,", "isCorrect": false }
+      ],
+      "correctAnswer": "My friends want to go to a huge party, and I'm just here like, I'd rather stay home with a good book.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_220.mp3",
+      "hint": "What filler word is common in informal speech to introduce an internal thought or feeling?",
+      "content": {
+        "type": "text",
+        "value": "[Like] is frequently used in modern, informal English as a discourse marker or quotative to introduce thoughts, feelings, or speech.\n\n~as~ is grammatically incorrect in this context.\n~saying~ implies you are speaking out loud, whereas 'like' can refer to an internal thought."
+      }
+    },
+    {
+      "cardId": "egac_221",
+      "category": "Prepositions: 'Over' for duration",
+      "sentenceParts": {
+        "prefix": "He gained a lot of experience ",
+        "suffix": " the last few years."
+      },
+      "options": [
+        { "text": "over", "isCorrect": true },
+        { "text": "on", "isCorrect": false },
+        { "text": "throughout", "isCorrect": false }
+      ],
+      "correctAnswer": "He gained a lot of experience over the last few years.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_221.mp3",
+      "hint": "Which preposition can be used to mean 'during' a whole period of time?",
+      "content": {
+        "type": "text",
+        "value": "[Over] is often used to refer to something that happens during a period of time, from its beginning to its end.\n\n~On~ is incorrect for time periods like years.\n~Throughout~ is also a correct answer and has a very similar meaning. However, 'over' is extremely common and natural in this specific phrasing."
+      }
+    },
+    {
+      "cardId": "egac_222",
+      "category": "Comparisons: 'Most of' vs 'Mostly'",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " my friends live in the same city as I do."
+      },
+      "options": [
+        { "text": "Most of", "isCorrect": true },
+        { "text": "Mostly", "isCorrect": false },
+        { "text": "The most of", "isCorrect": false }
+      ],
+      "correctAnswer": "Most of my friends live in the same city as I do.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_222.mp3",
+      "hint": "Which phrase is used to talk about the majority of a specific group?",
+      "content": {
+        "type": "text",
+        "value": "[Most of] is a quantifier used before a specific group (identified by 'my', 'the', 'these', etc.).\n\n~Mostly~ is an adverb meaning 'mainly' and wouldn't fit grammatically before 'my friends'.\n~The most of~ is an incorrect construction."
+      }
+    },
+    {
+      "cardId": "egac_223",
+      "category": "Quantity: 'Missing'",
+      "sentenceParts": {
+        "prefix": "I can't find my keys. They've been ",
+        "suffix": " since this morning."
+      },
+      "options": [
+        { "text": "missing", "isCorrect": true },
+        { "text": "run out", "isCorrect": false },
+        { "text": "left", "isCorrect": false }
+      ],
+      "correctAnswer": "I can't find my keys. They've been missing since this morning.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_223.mp3",
+      "hint": "Which word means that something is lost or cannot be found?",
+      "content": {
+        "type": "text",
+        "value": "[Missing] is an adjective used to describe something that is lost or not in its expected place.\n\n~Run out~ means a supply has been depleted, which doesn't apply to keys.\n~Left~ means remaining, which is the opposite of the intended meaning."
+      }
+    },
+    {
+      "cardId": "egac_224",
+      "category": "Duration: 'How long'",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " have you been waiting for me?"
+      },
+      "options": [
+        { "text": "How long", "isCorrect": true },
+        { "text": "How much time", "isCorrect": false },
+        { "text": "What time", "isCorrect": false }
+      ],
+      "correctAnswer": "How long have you been waiting for me?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_224.mp3",
+      "hint": "What is the standard question phrase to ask about the duration of an activity?",
+      "content": {
+        "type": "text",
+        "value": "[How long] is the correct and most natural interrogative phrase to ask about duration.\n\n~How much time~ is grammatically understandable but much less common and idiomatic than 'How long'.\n~What time~ asks for a specific point in time (e.g., 'What time did you arrive?'), not a duration."
+      }
+    },
+    {
+      "cardId": "egac_225",
+      "category": "Greetings: 'How have you been?'",
+      "sentenceParts": {
+        "prefix": "A: It's been a while! ",
+        "suffix": "? B: I've been great, thanks!"
+      },
+      "options": [
+        { "text": "How have you been", "isCorrect": true },
+        { "text": "How you are", "isCorrect": false },
+        { "text": "What have you done", "isCorrect": false }
+      ],
+      "correctAnswer": "A: It's been a while! How have you been? B: I've been great, thanks!",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_225.mp3",
+      "hint": "What is a common greeting to ask someone about their well-being over a period of time?",
+      "content": {
+        "type": "text",
+        "value": "[How have you been?] is the standard Present Perfect question to ask about someone's life and health since the last time you saw them.\n\n~How you are~ is grammatically incorrect; it should be 'How are you?'.\n~What have you done~ asks about specific actions, not general well-being."
+      }
+    },
+    {
+      "cardId": "egac_226",
+      "category": "Prepositions: Movement 'Into'",
+      "sentenceParts": {
+        "prefix": "Be careful when you step ",
+        "suffix": " the boat."
+      },
+      "options": [
+        { "text": "into", "isCorrect": true },
+        { "text": "in", "isCorrect": false },
+        { "text": "inside", "isCorrect": false }
+      ],
+      "correctAnswer": "Be careful when you step into the boat.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_226.mp3",
+      "hint": "Which preposition shows movement from outside to inside?",
+      "content": {
+        "type": "text",
+        "value": "[Into] is a preposition of movement that indicates entry from an exterior to an interior space.\n\n~in~ is used for location, not movement ('He is in the boat').\n~inside~ also describes location. While you might hear it used for movement informally, 'into' is more precise."
+      }
+    },
+    {
+      "cardId": "egac_227",
+      "category": "Expressions: 'At least'",
+      "sentenceParts": {
+        "prefix": "The weather was terrible, but ",
+        "suffix": " we didn't get wet."
+      },
+      "options": [
+        { "text": "at least", "isCorrect": true },
+        { "text": "at last", "isCorrect": false },
+        { "text": "at best", "isCorrect": false }
+      ],
+      "correctAnswer": "The weather was terrible, but at least we didn't get wet.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_227.mp3",
+      "hint": "Which phrase introduces a positive point in an otherwise negative situation?",
+      "content": {
+        "type": "text",
+        "value": "[At least] is used to introduce a redeeming or positive aspect of a situation that is generally bad. It means 'como mínimo' or 'por lo menos'.\n\n~At last~ means 'finally' and expresses relief that something has happened.\n~At best~ means 'in the most optimistic scenario'."
+      }
+    },
+    {
+      "cardId": "egac_228",
+      "category": "Adjectives: 'Gone' for depletion",
+      "sentenceParts": {
+        "prefix": "I wanted some cereal, but the milk is all ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "gone", "isCorrect": true },
+        { "text": "ended", "isCorrect": false },
+        { "text": "left", "isCorrect": false }
+      ],
+      "correctAnswer": "I wanted some cereal, but the milk is all gone.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_228.mp3",
+      "hint": "Which word is used as an adjective to mean 'completely used up' or 'finished'?",
+      "content": {
+        "type": "text",
+        "value": "[Gone] is used with the verb 'to be' to describe the state of something being completely consumed or no longer present.\n\n~Ended~ is a verb used for events ('The movie ended'), not for supplies.\n~Left~ is the opposite; it means 'remaining'."
+      }
+    },
+    {
+      "cardId": "egac_229",
+      "category": "Vocabulary: Household Chores",
+      "sentenceParts": {
+        "prefix": "Could you help me ",
+        "suffix": " the bed? I'm running late."
+      },
+      "options": [
+        { "text": "make", "isCorrect": true },
+        { "text": "do", "isCorrect": false },
+        { "text": "fix", "isCorrect": false }
+      ],
+      "correctAnswer": "Could you help me make the bed? I'm running late.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_229.mp3",
+      "hint": "Which verb is used in the fixed expression for tidying up the sheets and blankets?",
+      "content": {
+        "type": "text",
+        "value": "[Make the bed] is the standard, fixed collocation for this activity.\n\n~Do the bed~ is incorrect; 'do' is used for other chores like 'do the dishes'.\n~Fix the bed~ might be understood, but it implies something was broken, not just untidy."
+      }
+    },
+    {
+      "cardId": "egac_230",
+      "category": "Greetings: 'What have you been up to?'",
+      "sentenceParts": {
+        "prefix": "A: Hey! Long time no see. ",
+        "suffix": "? B: Not much, just working a lot."
+      },
+      "options": [
+        { "text": "What have you been up to", "isCorrect": true },
+        { "text": "What are you up to", "isCorrect": false },
+        { "text": "What you did", "isCorrect": false }
+      ],
+      "correctAnswer": "A: Hey! Long time no see. What have you been up to? B: Not much, just working a lot.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_230.mp3",
+      "hint": "How do you ask someone about their general activities since the last time you saw them?",
+      "content": {
+        "type": "text",
+        "value": "[What have you been up to?] is an informal, friendly question using the Present Perfect Continuous to ask about someone's recent life activities.\n\n~What are you up to?~ uses the Present Continuous and asks what they are doing right now or in the near future.\n~What you did~ is grammatically incorrect; it should be 'What did you do?' and asks about a specific past action."
+  }
+    },
+    {
+      "cardId": "egac_231",
+      "category": "Modals: 'Shall' for Suggestions",
+      "sentenceParts": {
+        "prefix": "It's getting late. ",
+        "suffix": " we go home now?"
+      },
+      "options": [
+        { "text": "Shall", "isCorrect": true },
+        { "text": "Will", "isCorrect": false },
+        { "text": "Do", "isCorrect": false }
+      ],
+      "correctAnswer": "It's getting late. Shall we go home now?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_231.mp3",
+      "hint": "Which modal is used with 'I' or 'we' to make a polite suggestion?",
+      "content": {
+        "type": "text",
+        "value": "[Shall] is used with 'I' and 'we' to make suggestions or offers in a polite, slightly formal way. 'Shall we...?' is equivalent to 'Do you think we should...?'.\n\n~Will~ is used for future intentions or predictions, not suggestions in this question format.\n~Do~ is used for simple present questions, but 'do we go' is not the correct structure for a suggestion."
+      }
+    },
+    {
+      "cardId": "egac_232",
+      "category": "Modals: 'Ought to' for Moral Advice",
+      "sentenceParts": {
+        "prefix": "You made a mistake. I think you ",
+        "suffix": " apologize to her."
+      },
+      "options": [
+        { "text": "ought to", "isCorrect": true },
+        { "text": "must to", "isCorrect": false },
+        { "text": "had better", "isCorrect": false }
+      ],
+      "correctAnswer": "You made a mistake. I think you ought to apologize to her.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_232.mp3",
+      "hint": "Which modal verb, similar to 'should', expresses moral duty or strong advice?",
+      "content": {
+        "type": "text",
+        "value": "[Ought to] is a semi-modal verb used to give strong advice or express a moral obligation. It's a slightly more formal alternative to 'should'.\n\n~must to~ is grammatically incorrect; 'must' is not followed by 'to'.\n~had better~ is for urgent advice with a negative consequence, which is a bit too strong for this context."
+      }
+    },
+    {
+      "cardId": "egac_233",
+      "category": "Perception: 'Smell like'",
+      "sentenceParts": {
+        "prefix": "This room ",
+        "suffix": " old books and coffee."
+      },
+      "options": [
+        { "text": "smells like", "isCorrect": true },
+        { "text": "smells of", "isCorrect": false },
+        { "text": "has a smell", "isCorrect": false }
+      ],
+      "correctAnswer": "This room smells like old books and coffee.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_233.mp3",
+      "hint": "How do you describe a similarity in scent?",
+      "content": {
+        "type": "text",
+        "value": "[Smells like] is the common structure used to compare a smell to something else. \n\n~smells of~ is also correct and often used, but it can imply the smell's source is actually present. 'Smells like' is more for comparison and is very common.\n~has a smell~ is too general and requires 'of' ('has a smell of...')."
+      }
+    },
+    {
+      "cardId": "egac_234",
+      "category": "Perception: 'Taste like'",
+      "sentenceParts": {
+        "prefix": "This fruit is interesting. It kind of ",
+        "suffix": " a mix of strawberry and pineapple."
+      },
+      "options": [
+        { "text": "tastes like", "isCorrect": true },
+        { "text": "tastes to", "isCorrect": false },
+        { "text": "has taste", "isCorrect": false }
+      ],
+      "correctAnswer": "This fruit is interesting. It kind of tastes like a mix of strawberry and pineapple.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_234.mp3",
+      "hint": "Which phrase is used to describe a flavor by comparing it to something else?",
+      "content": {
+        "type": "text",
+        "value": "[Tastes like] is the fixed expression used to describe a flavor by comparing it to another flavor.\n\n~tastes to~ is grammatically incorrect.\n~has taste~ is also incorrect; the correct structure would be 'has a taste of'."
+      }
+    },
+    {
+      "cardId": "egac_235",
+      "category": "Adverbs: 'Rather' as an intensifier",
+      "sentenceParts": {
+        "prefix": "The exam was ",
+        "suffix": " difficult, but I think I passed."
+      },
+      "options": [
+        { "text": "rather", "isCorrect": true },
+        { "text": "much", "isCorrect": false },
+        { "text": "a bit of", "isCorrect": false }
+      ],
+      "correctAnswer": "The exam was rather difficult, but I think I passed.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_235.mp3",
+      "hint": "Which adverb means 'quite' or 'fairly' and is often used in slightly more formal or British English?",
+      "content": {
+        "type": "text",
+        "value": "[Rather] is an adverb used to intensify an adjective, meaning 'to a certain extent' or 'quite'. It's a good alternative to 'very' or 'really'.\n\n~much~ is not used to modify a simple adjective like this ('much more difficult' would be correct).\n~a bit of~ must be followed by a noun ('a bit of difficulty')."
+      }
+    },
+    {
+      "cardId": "egac_236",
+      "category": "Expressions: 'Most importantly'",
+      "sentenceParts": {
+        "prefix": "Remember to pack your passport and tickets. ",
+        "suffix": ", have a good time!"
+      },
+      "options": [
+        { "text": "Most importantly", "isCorrect": true },
+        { "text": "The most important", "isCorrect": false },
+        { "text": "Mostly important", "isCorrect": false }
+      ],
+      "correctAnswer": "Remember to pack your passport and tickets. Most importantly, have a good time!",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_236.mp3",
+      "hint": "Which phrase is used to introduce the most crucial point or piece of advice?",
+      "content": {
+        "type": "text",
+        "value": "[Most importantly] is a sentence adverb used to signal that the following information is the most critical point.\n\n~The most important~ needs a noun after it ('The most important thing is...').\n~Mostly important~ is grammatically incorrect."
+      }
+    },
+    {
+      "cardId": "egac_237",
+      "category": "Expressions: 'At a time'",
+      "sentenceParts": {
+        "prefix": "Learning a new skill can be overwhelming. Just take it one step ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "at a time", "isCorrect": true },
+        { "text": "in a time", "isCorrect": false },
+        { "text": "by the time", "isCorrect": false }
+      ],
+      "correctAnswer": "Learning a new skill can be overwhelming. Just take it one step at a time.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_237.mp3",
+      "hint": "Which phrase means to do things sequentially, one by one?",
+      "content": {
+        "type": "text",
+        "value": "[One step at a time] is a fixed idiom that means to proceed gradually and focus on each stage of a process individually.\n\n~in a time~ is not a standard expression in this context.\n~by the time~ is a conjunction used to connect a past event to another past event ('By the time I arrived, he had left')."
+      }
+    },
+    {
+      "cardId": "egac_238",
+      "category": "Prepositions: 'By' for Method",
+      "sentenceParts": {
+        "prefix": "I sent you the documents ",
+        "suffix": " email this morning."
+      },
+      "options": [
+        { "text": "by", "isCorrect": true },
+        { "text": "in", "isCorrect": false },
+        { "text": "on", "isCorrect": false }
+      ],
+      "correctAnswer": "I sent you the documents by email this morning.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_238.mp3",
+      "hint": "Which preposition is used to indicate the method or means of communication or transport?",
+      "content": {
+        "type": "text",
+        "value": "[By] is used before a noun (without an article) to show the method used to do something (e.g., by car, by phone, by mail).\n\n~in~ would be used differently ('The information is in the email').\n~on~ is used for platforms ('on the internet') but not for the method itself in this way."
+      }
+    },
+    {
+      "cardId": "egac_239",
+      "category": "Prepositions: 'By' for Proximity",
+      "sentenceParts": {
+        "prefix": "My grandparents live in a small house ",
+        "suffix": " the river."
+      },
+      "options": [
+        { "text": "by", "isCorrect": true },
+        { "text": "at", "isCorrect": false },
+        { "text": "besides", "isCorrect": false }
+      ],
+      "correctAnswer": "My grandparents live in a small house by the river.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_239.mp3",
+      "hint": "Which preposition can mean 'next to' or 'near'?",
+      "content": {
+        "type": "text",
+        "value": "[By] is used to indicate proximity, meaning 'close to' or 'next to'.\n\n~at~ is used for a specific point or address, not a general area like 'the river'.\n~besides~ means 'in addition to'."
+      }
+    },
+    {
+      "cardId": "egac_240",
+      "category": "Adjectives + 'to'",
+      "sentenceParts": {
+        "prefix": "It's important to be ",
+        "suffix": " everyone, even if you disagree with them."
+      },
+      "options": [
+        { "text": "kind to", "isCorrect": true },
+        { "text": "kind of", "isCorrect": false },
+        { "text": "kind with", "isCorrect": false }
+      ],
+      "correctAnswer": "It's important to be kind to everyone, even if you disagree with them.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_240.mp3",
+      "hint": "Which preposition follows the adjective 'kind' to indicate who receives the kindness?",
+      "content": {
+        "type": "text",
+        "value": "The adjective [kind] is followed by the preposition [to] to specify the recipient of the kind behavior. It's a fixed collocation.\n\n~kind of~ means 'a type of' or is an informal filler word.\n~kind with~ is not the correct preposition for 'kind'."
+      }
+    },
+    {
+      "cardId": "egac_241",
+      "category": "Introducing Topics: 'As for'",
+      "sentenceParts": {
+        "prefix": "I've finished my part of the project. ",
+        "suffix": " the presentation, that's scheduled for Friday."
+      },
+      "options": [
+        { "text": "As for", "isCorrect": true },
+        { "text": "As if", "isCorrect": false },
+        { "text": "For what", "isCorrect": false }
+      ],
+      "correctAnswer": "I've finished my part of the project. As for the presentation, that's scheduled for Friday.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_241.mp3",
+      "hint": "Which phrase is used to shift the focus to a new aspect of a topic?",
+      "content": {
+        "type": "text",
+        "value": "[As for] is used to introduce a new subject or a different aspect of the subject you are already discussing.\n\n~As if~ is used for hypothetical or unreal situations ('He acts as if he's the boss').\n~For what~ is part of a question and doesn't fit here."
+      }
+    },
+    {
+      "cardId": "egac_242",
+      "category": "Expressions with 'Take': 'Take a risk'",
+      "sentenceParts": {
+        "prefix": "Starting a new business is difficult, but I'm willing to ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "take a risk", "isCorrect": true },
+        { "text": "do a risk", "isCorrect": false },
+        { "text": "have a risk", "isCorrect": false }
+      ],
+      "correctAnswer": "Starting a new business is difficult, but I'm willing to take a risk.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_242.mp3",
+      "hint": "Which verb is used in the expression for accepting a chance of something bad happening?",
+      "content": {
+        "type": "text",
+        "value": "[Take a risk] (or 'take a chance') is the correct, fixed collocation for deciding to do something that might have a negative outcome.\n\n~do a risk~ and ~have a risk~ are not correct collocations in English."
+      }
+    },
+    {
+      "cardId": "egac_243",
+      "category": "Expressions with 'Take': 'Take part in'",
+      "sentenceParts": {
+        "prefix": "Are you going to ",
+        "suffix": " the competition this year?"
+      },
+      "options": [
+        { "text": "take part in", "isCorrect": true },
+        { "text": "take place in", "isCorrect": false },
+        { "text": "be part of", "isCorrect": false }
+      ],
+      "correctAnswer": "Are you going to take part in the competition this year?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_243.mp3",
+      "hint": "Which phrase means 'to participate' in an event?",
+      "content": {
+        "type": "text",
+        "value": "[Take part in] is an idiom that means to participate or be involved in an activity.\n\n~Take place in~ means 'to happen' or 'occur' ('The competition will take place in...').\n~Be part of~ is also possible ('Are you going to be part of the competition?'), but 'take part in' more strongly implies active participation and is a very common choice."
+      }
+    },
+    {
+      "cardId": "egac_244",
+      "category": "Expressions of Time: 'As soon as'",
+      "sentenceParts": {
+        "prefix": "I'll call you ",
+        "suffix": " I get home."
+      },
+      "options": [
+        { "text": "as soon as", "isCorrect": true },
+        { "text": "so fast as", "isCorrect": false },
+        { "text": "as long as", "isCorrect": false }
+      ],
+      "correctAnswer": "I'll call you as soon as I get home.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_244.mp3",
+      "hint": "Which phrase means 'immediately after' something else happens?",
+      "content": {
+        "type": "text",
+        "value": "[As soon as] is a conjunction used to indicate that one event will happen immediately after another one is completed.\n\n~so fast as~ is not a correct grammatical structure.\n~as long as~ means 'on the condition that', which is a different meaning."
+      }
+    },
+    {
+      "cardId": "egac_245",
+      "category": "Vocabulary: US Education",
+      "sentenceParts": {
+        "prefix": "In the US, students typically attend ",
+        "suffix": " from ages 14 to 18."
+      },
+      "options": [
+        { "text": "high school", "isCorrect": true },
+        { "text": "college", "isCorrect": false },
+        { "text": "university", "isCorrect": false }
+      ],
+      "correctAnswer": "In the US, students typically attend high school from ages 14 to 18.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_245.mp3",
+      "hint": "What is the name for the final stage of compulsory education in the United States?",
+      "content": {
+        "type": "text",
+        "value": "[High school] is the correct term for secondary education (grades 9-12) in the U.S. education system.\n\n~College~ and ~University~ refer to higher education, which takes place after high school."
+      }
+    },
+    {
+      "cardId": "egac_246",
+      "category": "Vocabulary: Irregular Plurals",
+      "sentenceParts": {
+        "prefix": "A lot of ",
+        "suffix": " came to the concert."
+      },
+      "options": [
+        { "text": "people", "isCorrect": true },
+        { "text": "persons", "isCorrect": false },
+        { "text": "person", "isCorrect": false }
+      ],
+      "correctAnswer": "A lot of people came to the concert.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_246.mp3",
+      "hint": "What is the common plural form of 'person'?",
+      "content": {
+        "type": "text",
+        "value": "The standard, everyday plural of 'person' is [people].\n\n~Persons~ is a very formal and rare plural, typically used only in legal or official documents.\n~person~ is the singular form."
+      }
+    },
+    {
+      "cardId": "egac_247",
+      "category": "Vocabulary: Irregular Plurals",
+      "sentenceParts": {
+        "prefix": "The playground was full of happy ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "children", "isCorrect": true },
+        { "text": "childs", "isCorrect": false },
+        { "text": "childes", "isCorrect": false }
+      ],
+      "correctAnswer": "The playground was full of happy children.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_247.mp3",
+      "hint": "The plural of 'child' is irregular.",
+      "content": {
+        "type": "text",
+        "value": "[Children] is the irregular plural form of 'child'.\n\n~childs~ and ~childes~ are common errors; the plural is not formed by adding -s."
+      }
+    },
+    {
+      "cardId": "egac_248",
+      "category": "Vocabulary: Irregular Plurals",
+      "sentenceParts": {
+        "prefix": "I need to go to the dentist to get my ",
+        "suffix": " checked."
+      },
+      "options": [
+        { "text": "teeth", "isCorrect": true },
+        { "text": "tooths", "isCorrect": false },
+        { "text": "teethes", "isCorrect": false }
+      ],
+      "correctAnswer": "I need to go to the dentist to get my teeth checked.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_248.mp3",
+      "hint": "What is the plural of 'tooth'?",
+      "content": {
+        "type": "text",
+        "value": "[Teeth] is the irregular plural form of 'tooth'.\n\n~Tooths~ and ~teethes~ are incorrect; the plural is formed by changing the vowel sound."
+      }
+    },
+    {
+      "cardId": "egac_249",
+      "category": "Questions: State vs. Action",
+      "sentenceParts": {
+        "prefix": "A: You look really busy. ",
+        "suffix": "? B: I'm preparing a presentation."
+      },
+      "options": [
+        { "text": "What are you doing", "isCorrect": true },
+        { "text": "How are you doing", "isCorrect": false },
+        { "text": "How you are doing", "isCorrect": false }
+      ],
+      "correctAnswer": "A: You look really busy. What are you doing? B: I'm preparing a presentation.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_249.mp3",
+      "hint": "Which question asks about a specific activity, not about general well-being?",
+      "content": {
+        "type": "text",
+        "value": "[What are you doing?] asks about the specific action someone is performing at the moment.\n\n~How are you doing?~ asks about a person's general state or well-being ('How are you?').\n~How you are doing~ is grammatically incorrect; the verb and subject need to be inverted in a question."
+      }
+    },
+    {
+      "cardId": "egac_250",
+      "category": "Vocabulary: US Education",
+      "sentenceParts": {
+        "prefix": "After high school, I plan to go to ",
+        "suffix": " to study engineering."
+      },
+      "options": [
+        { "text": "college", "isCorrect": true },
+        { "text": "the college", "isCorrect": false },
+        { "text": "colleague", "isCorrect": false }
+      ],
+      "correctAnswer": "After high school, I plan to go to college to study engineering.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_250.mp3",
+      "hint": "What is the general term for higher education after finishing secondary school in the US?",
+      "content": {
+        "type": "text",
+        "value": "[College] is used as a general, almost uncountable noun in the expression 'go to college' to mean pursuing higher education.\n\n~the college~ would refer to a specific, previously mentioned institution.\n~Colleague~ is a false friend; it means 'co-worker'."
+      }
+    },
+    {
+      "cardId": "egac_251",
+      "category": "Adverbs: Position of 'Usually'",
+      "sentenceParts": {
+        "prefix": "On weekends, I ",
+        "suffix": " wake up late."
+      },
+      "options": [
+        { "text": "usually", "isCorrect": true },
+        { "text": "use to", "isCorrect": false },
+        { "text": "am usually", "isCorrect": false }
+      ],
+      "correctAnswer": "On weekends, I usually wake up late.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_251.mp3",
+      "hint": "Where does an adverb of frequency like 'usually' typically go in a simple present sentence?",
+      "content": {
+        "type": "text",
+        "value": "Adverbs of frequency like [usually] are typically placed before the main verb in a sentence.\n\n~use to~ is incorrect; 'used to' is for past habits.\n~am usually~ is incorrect; 'usually' goes after the verb 'to be', but 'wake up' is the main verb here, so it should be 'I am usually late', not 'I am usually wake up'."
+      }
+    },
+    {
+      "cardId": "egac_252",
+      "category": "Vocabulary: Irregular Plurals",
+      "sentenceParts": {
+        "prefix": "The autumn ",
+        "suffix": " are beautiful shades of red and orange."
+      },
+      "options": [
+        { "text": "leaves", "isCorrect": true },
+        { "text": "leafs", "isCorrect": false },
+        { "text": "leafes", "isCorrect": false }
+      ],
+      "correctAnswer": "The autumn leaves are beautiful shades of red and orange.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_252.mp3",
+      "hint": "For nouns ending in -f or -fe, the plural is often formed by changing the ending to -ves.",
+      "content": {
+        "type": "text",
+        "value": "[Leaves] is the irregular plural of 'leaf'. Nouns ending in -f often change to -ves in the plural.\n\n~Leafs~ and ~leafes~ are incorrect plural forms."
+      }
+    },
+    {
+      "cardId": "egac_253",
+      "category": "Prepositions: 'At all times'",
+      "sentenceParts": {
+        "prefix": "For security reasons, visitors must wear their ID badges ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "at all times", "isCorrect": true },
+        { "text": "in all time", "isCorrect": false },
+        { "text": "always", "isCorrect": false }
+      ],
+      "correctAnswer": "For security reasons, visitors must wear their ID badges at all times.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_253.mp3",
+      "hint": "Which formal phrase means 'continuously' or 'constantly'?",
+      "content": {
+        "type": "text",
+        "value": "[At all times] is a formal, fixed expression meaning 'always' or 'continuously', often used in rules and instructions.\n\n~in all time~ is not a correct English expression.\n~always~ is also correct and means the same thing, but 'at all times' is the specific formal phrase often used in official contexts like this one."
+      }
+    },
+    {
+      "cardId": "egac_254",
+      "category": "Expressions with 'Take': 'Take into account'",
+      "sentenceParts": {
+        "prefix": "When making your decision, you need to ",
+        "suffix": " all the possible consequences."
+      },
+      "options": [
+        { "text": "take into account", "isCorrect": true },
+        { "text": "take in account", "isCorrect": false },
+        { "text": "have in account", "isCorrect": false }
+      ],
+      "correctAnswer": "When making your decision, you need to take into account all the possible consequences.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_254.mp3",
+      "hint": "Which phrase means 'to consider' or 'to think about' something before making a decision?",
+      "content": {
+        "type": "text",
+        "value": "[Take into account] is the correct, fixed idiom that means 'to consider'.\n\n~take in account~ is a common error; the preposition must be 'into'.\n~have in account~ is an incorrect translation from other languages; the verb must be 'take'."
+      }
+    },
+    {
+      "cardId": "egac_255",
+      "category": "Questions: 'How are you doing?'",
+      "sentenceParts": {
+        "prefix": "A: Hi there! ",
+        "suffix": "? B: I'm doing pretty well, thanks for asking!"
+      },
+      "options": [
+        { "text": "How are you doing", "isCorrect": true },
+        { "text": "What are you doing", "isCorrect": false },
+        { "text": "What you are doing", "isCorrect": false }
+      ],
+      "correctAnswer": "A: Hi there! How are you doing? B: I'm doing pretty well, thanks for asking!",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_255.mp3",
+      "hint": "Which question is a friendly, informal way to ask 'How are you?'",
+      "content": {
+        "type": "text",
+        "value": "[How are you doing?] is a common, informal greeting that asks about a person's general well-being.\n\n~What are you doing?~ asks about a person's current activity, not their state of being.\n~What you are doing~ is not a correctly formed question."
+      }
+    },
+    {
+      "cardId": "egac_256",
+      "category": "Adverbs: 'Rather' for correction",
+      "sentenceParts": {
+        "prefix": "He's not being lazy; ",
+        "suffix": ", he's just exhausted from working all week."
+      },
+      "options": [
+        { "text": "rather", "isCorrect": true },
+        { "text": "instead", "isCorrect": false },
+        { "text": "even", "isCorrect": false }
+      ],
+      "correctAnswer": "He's not being lazy; rather, he's just exhausted from working all week.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_256.mp3",
+      "hint": "Which word is used to correct a previous statement and offer a more accurate description?",
+      "content": {
+        "type": "text",
+        "value": "[Rather] is used here to correct a negative assumption ('not lazy') and replace it with a more accurate explanation.\n\n~Instead~ is similar, but it often implies a replacement of actions, not descriptions ('He didn't rest; instead, he worked').\n~Even~ is used for surprising emphasis and doesn't fit the corrective meaning."
+      }
+    },
+    {
+      "cardId": "egac_257",
+      "category": "Expressions: 'At once'",
+      "sentenceParts": {
+        "prefix": "The boss needs this report on his desk ",
+        "suffix": "!"
+      },
+      "options": [
+        { "text": "at once", "isCorrect": true },
+        { "text": "at one time", "isCorrect": false },
+        { "text": "in one", "isCorrect": false }
+      ],
+      "correctAnswer": "The boss needs this report on his desk at once!",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_257.mp3",
+      "hint": "Which two-word phrase is a more formal way to say 'immediately' or 'right now'?",
+      "content": {
+        "type": "text",
+        "value": "[At once] is a fixed expression that means 'immediately'. It is often used to give an urgent command.\n\n~at one time~ means 'in the past' or 'simultaneously', which are different meanings.\n~in one~ is an incomplete phrase."
+      }
+    },
+    {
+      "cardId": "egac_258",
+      "category": "Vocabulary: Irregular Plurals",
+      "sentenceParts": {
+        "prefix": "I have a lot of ",
+        "suffix": " in my garden."
+      },
+      "options": [
+        { "text": "cacti", "isCorrect": true },
+        { "text": "cactuses", "isCorrect": false },
+        { "text": "cactus", "isCorrect": false }
+      ],
+      "correctAnswer": "I have a lot of cacti in my garden.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_258.mp3",
+      "hint": "What is the traditional, Latin-based plural of 'cactus'?",
+      "content": {
+        "type": "text",
+        "value": "[Cacti] is the traditional plural form derived from Latin.\n\n~Cactuses~ is also accepted as a correct plural in modern English, but 'cacti' is still very common, especially in formal or scientific contexts.\n~Cactus~ is the singular form."
+      }
+    },
+    {
+      "cardId": "egac_259",
+      "category": "Introducing Topics: 'Regarding'",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " your recent inquiry, the item is back in stock."
+      },
+      "options": [
+        { "text": "Regarding", "isCorrect": true },
+        { "text": "Regarding to", "isCorrect": false },
+        { "text": "About to", "isCorrect": false }
+      ],
+      "correctAnswer": "Regarding your recent inquiry, the item is back in stock.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_259.mp3",
+      "hint": "Which formal word means 'concerning' or 'about' and is often used at the beginning of business emails?",
+      "content": {
+        "type": "text",
+        "value": "[Regarding] is a preposition used to mean 'in reference to' or 'concerning'. It is a formal way to introduce a topic.\n\n~Regarding to~ is incorrect; 'regarding' is never followed by 'to'.\n~About to~ means 'on the point of doing something' (e.g., 'I was about to leave')."
+      }
+    },
+    {
+      "cardId": "egac_260",
+      "category": "Expressions: 'Go better/worse'",
+      "sentenceParts": {
+        "prefix": "A: How was your presentation? B: It could have ",
+        "suffix": " better, to be honest."
+      },
+      "options": [
+        { "text": "gone", "isCorrect": true },
+        { "text": "done", "isCorrect": false },
+        { "text": "been", "isCorrect": false }
+      ],
+      "correctAnswer": "A: How was your presentation? B: It could have gone better, to be honest.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_260.mp3",
+      "hint": "Which verb is used to talk about how an event or situation unfolded or progressed?",
+      "content": {
+        "type": "text",
+        "value": "[Go] (past participle 'gone') is used to talk about the progress or outcome of a situation or event. 'It went well' or 'it went badly' are common expressions.\n\n~Done~ is used for personal performance ('I could have done better').\n~Been~ is the verb 'to be' and doesn't fit the context of progression."
+      }
+    },
+    {
+      "cardId": "egac_261",
+      "category": "Nouns + 'to'",
+      "sentenceParts": {
+        "prefix": "Her success is a true ",
+        "suffix": " all of us."
+      },
+      "options": [
+        { "text": "inspiration to", "isCorrect": true },
+        { "text": "inspiration for", "isCorrect": false },
+        { "text": "inspiration of", "isCorrect": false }
+      ],
+      "correctAnswer": "Her success is a true inspiration to all of us.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_261.mp3",
+      "hint": "When 'inspiration' affects a person or group directly, which preposition is often used?",
+      "content": {
+        "type": "text",
+        "value": "[Inspiration to] is used to show the people who are directly inspired by someone or something.\n\n~Inspiration for~ is also correct, but it's often used for the thing that was created as a result of the inspiration ('Her life was the inspiration for the movie'). 'To' is better for the people affected.\n~Inspiration of~ is incorrect."
+      }
+    },
+    {
+      "cardId": "egac_262",
+      "category": "Vocabulary: 'University' vs 'College'",
+      "sentenceParts": {
+        "prefix": "Harvard is a famous ",
+        "suffix": " that has many different schools and graduate programs."
+      },
+      "options": [
+        { "text": "university", "isCorrect": true },
+        { "text": "college", "isCorrect": false },
+        { "text": "high school", "isCorrect": false }
+      ],
+      "correctAnswer": "Harvard is a famous university that has many different schools and graduate programs.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_262.mp3",
+      "hint": "What is the term for a large institution of higher education that offers both undergraduate and postgraduate degrees?",
+      "content": {
+        "type": "text",
+        "value": "A [university] is typically a large institution composed of multiple colleges or schools, offering a wide range of degrees including master's and PhDs.\n\nA [college] usually refers to a smaller institution or one that primarily focuses on undergraduate (bachelor's) degrees.\n~High school~ is secondary education."
+      }
+    },
+    {
+      "cardId": "egac_263",
+      "category": "Modals: 'May' for Formal Permission",
+      "sentenceParts": {
+        "prefix": "Excuse me, ",
+        "suffix": " I sit here?"
+      },
+      "options": [
+        { "text": "may", "isCorrect": true },
+        { "text": "do", "isCorrect": false },
+        { "text": "am", "isCorrect": false }
+      ],
+      "correctAnswer": "Excuse me, may I sit here?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_263.mp3",
+      "hint": "What is a very polite and formal way to ask for permission?",
+      "content": {
+        "type": "text",
+        "value": "[May] is the most formal and polite modal for asking permission. 'Can' is more common but less formal.\n\n~Do I sit here?~ asks if this is the place I am supposed to sit, not for permission.\n~Am I sit here?~ is grammatically incorrect."
+      }
+    },
+    {
+      "cardId": "egac_264",
+      "category": "Confusing Verbs: 'Wait' vs 'Wait for'",
+      "sentenceParts": {
+        "prefix": "Don't ",
+        "suffix": " me; I'll be home late tonight."
+      },
+      "options": [
+        { "text": "wait for", "isCorrect": true },
+        { "text": "wait on", "isCorrect": false },
+        { "text": "wait", "isCorrect": false }
+      ],
+      "correctAnswer": "Don't wait for me; I'll be home late tonight.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_264.mp3",
+      "hint": "When you specify the person or thing you are waiting for, which preposition do you need?",
+      "content": {
+        "type": "text",
+        "value": "[Wait for] is used when the object of the waiting (in this case, 'me') is explicitly mentioned.\n\n~Wait on~ means to serve someone, like a waiter in a restaurant.\n~Wait~ by itself is incorrect here because it needs an object, which requires the preposition 'for'."
+      }
+    },
+    {
+      "cardId": "egac_265",
+      "category": "Vocabulary: 'Odd' vs 'Awkward'",
+      "sentenceParts": {
+        "prefix": "It's a bit ",
+        "suffix": " that he wears a winter coat in the summer."
+      },
+      "options": [
+        { "text": "odd", "isCorrect": true },
+        { "text": "awkward", "isCorrect": false },
+        { "text": "off", "isCorrect": false }
+      ],
+      "correctAnswer": "It's a bit odd that he wears a winter coat in the summer.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_265.mp3",
+      "hint": "Which word means 'peculiar' or 'unusual' in a harmless way?",
+      "content": {
+        "type": "text",
+        "value": "[Odd] is used to describe something that is peculiar or unusual, but not necessarily in a negative or uncomfortable way.\n\n~Awkward~ relates to social embarrassment, which doesn't fit the context.\n~Off~ implies something is wrong or bad, which is too strong."
+      }
+    },
+    {
+      "cardId": "egac_266",
+      "category": "Prepositions: 'Into' vs 'In'",
+      "sentenceParts": {
+        "prefix": "She dove ",
+        "suffix": " the pool to cool off."
+      },
+      "options": [
+        { "text": "into", "isCorrect": true },
+        { "text": "in", "isCorrect": false },
+        { "text": "to", "isCorrect": false }
+      ],
+      "correctAnswer": "She dove into the pool to cool off.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_266.mp3",
+      "hint": "Which preposition is used to show movement that results in being inside something?",
+      "content": {
+        "type": "text",
+        "value": "[Into] clearly indicates the movement from outside the pool to inside it.\n\n~In~ describes a location ('She is swimming in the pool'), not the movement of entering.\n~To~ indicates direction but not necessarily entry ('She walked to the pool')."
+      }
+    },
+    {
+      "cardId": "egac_267",
+      "category": "Conjunctions: 'Although'",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " he is very rich, he lives a very simple life."
+      },
+      "options": [
+        { "text": "Although", "isCorrect": true },
+        { "text": "Despite", "isCorrect": false },
+        { "text": "However", "isCorrect": false }
+      ],
+      "correctAnswer": "Although he is very rich, he lives a very simple life.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_267.mp3",
+      "hint": "Which connector introduces a contrasting clause (subject + verb)?",
+      "content": {
+        "type": "text",
+        "value": "[Although] is a conjunction used to introduce a clause that contrasts with the main clause. It must be followed by a subject and a verb.\n\n~Despite~ is a preposition and must be followed by a noun or gerund ('Despite his wealth...').\n~However~ is an adverb that connects two separate sentences ('He is rich. However, he lives simply.')."
+      }
+    },
+    {
+      "cardId": "egac_268",
+      "category": "Idioms: 'Take it easy'",
+      "sentenceParts": {
+        "prefix": "You seem really stressed out. You should try to ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "take it easy", "isCorrect": true },
+        { "text": "take easy", "isCorrect": false },
+        { "text": "make it easy", "isCorrect": false }
+      ],
+      "correctAnswer": "You seem really stressed out. You should try to take it easy.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_268.mp3",
+      "hint": "What is the common expression that means 'relax'?",
+      "content": {
+        "type": "text",
+        "value": "[Take it easy] is a fixed idiom that means to relax and not worry.\n\n~Take easy~ is grammatically incorrect; the pronoun 'it' is a required part of the idiom.\n~Make it easy~ means to simplify something for someone else, which is a different meaning."
+      }
+    },
+    {
+      "cardId": "egac_269",
+      "category": "Expressions: 'No big deal'",
+      "sentenceParts": {
+        "prefix": "A: I'm so sorry I'm late! B: Don't worry, it's ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "no big deal", "isCorrect": true },
+        { "text": "not a big deal", "isCorrect": false },
+        { "text": "nothing of a deal", "isCorrect": false }
+      ],
+      "correctAnswer": "A: I'm so sorry I'm late! B: Don't worry, it's no big deal.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_269.mp3",
+      "hint": "Which informal phrase means 'it's not a problem' or 'it's not important'?",
+      "content": {
+        "type": "text",
+        "value": "[No big deal] is a very common informal expression to tell someone that something is not a problem.\n\n~Not a big deal~ is also correct and widely used. Both are natural, but 'no big deal' is a very common fixed phrase.\n~Nothing of a deal~ is not a correct English idiom."
+      }
+    },
+    {
+      "cardId": "egac_270",
+      "category": "Adverbs: 'Ago' vs 'Before'",
+      "sentenceParts": {
+        "prefix": "I graduated from college three years ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "ago", "isCorrect": true },
+        { "text": "before", "isCorrect": false },
+        { "text": "past", "isCorrect": false }
+      ],
+      "correctAnswer": "I graduated from college three years ago.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_270.mp3",
+      "hint": "Which adverb is used with the past simple tense to count back from the present?",
+      "content": {
+        "type": "text",
+        "value": "[Ago] is used with a time expression and the past simple to show when something happened in the past, measured from now.\n\n~Before~ is used to relate two past events ('I had graduated before I moved here') or as a preposition ('before the meeting').\n~Past~ is not used in this way to mark a time period."
+        }
+    },
+    {
+      "cardId": "egac_271",
+      "category": "Short Feedback: Progress",
+      "sentenceParts": {
+        "prefix": "A: Have you finished the report? B: Not yet, but I'm ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "getting there", "isCorrect": true },
+        { "text": "arriving there", "isCorrect": false },
+        { "text": "going to there", "isCorrect": false }
+      ],
+      "correctAnswer": "A: Have you finished the report? B: Not yet, but I'm getting there.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_271.mp3",
+      "hint": "Which informal expression means 'making progress' or 'almost finished'?",
+      "content": {
+        "type": "text",
+        "value": "[Getting there] is a common idiom that means you are making good progress towards a goal.\n\n~Arriving there~ refers to physically reaching a destination.\n~Going to there~ is grammatically incorrect."
+      }
+    },
+    {
+      "cardId": "egac_272",
+      "category": "Short Feedback: Agreement",
+      "sentenceParts": {
+        "prefix": "A: So, you're saying we need to start over? B: ",
+        "suffix": ", that's the only option."
+      },
+      "options": [
+        { "text": "Pretty much", "isCorrect": true },
+        { "text": "Very much", "isCorrect": false },
+        { "text": "Almost much", "isCorrect": false }
+      ],
+      "correctAnswer": "A: So, you're saying we need to start over? B: Pretty much, that's the only option.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_272.mp3",
+      "hint": "Which phrase is a casual way to say 'basically yes' or 'more or less'?",
+      "content": {
+        "type": "text",
+        "value": "[Pretty much] is an informal expression used to show agreement, meaning 'almost completely' or 'basically yes'.\n\n~Very much~ is an intensifier (e.g., 'Thank you very much') but not used for this kind of agreement.\n~Almost much~ is not a correct English phrase."
+      }
+    },
+    {
+      "cardId": "egac_273",
+      "category": "Negative Expressions: 'Not yet'",
+      "sentenceParts": {
+        "prefix": "A: Is dinner ready? B: ",
+        "suffix": ". I just need a few more minutes."
+      },
+      "options": [
+        { "text": "Not yet", "isCorrect": true },
+        { "text": "Still no", "isCorrect": false },
+        { "text": "Not now", "isCorrect": false }
+      ],
+      "correctAnswer": "A: Is dinner ready? B: Not yet. I just need a few more minutes.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_273.mp3",
+      "hint": "What is the standard short answer for something that hasn't happened but is expected to?",
+      "content": {
+        "type": "text",
+        "value": "[Not yet] is the correct and standard short response to say that an expected action has not happened up to this point.\n\n~Still no~ is an incorrect structure.\n~Not now~ means something is not happening at this exact moment, but 'not yet' is better for something in progress."
+      }
+    },
+    {
+      "cardId": "egac_274",
+      "category": "Negative Expressions: 'Not worth it'",
+      "sentenceParts": {
+        "prefix": "The concert tickets are too expensive. It's just ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "not worth it", "isCorrect": true },
+        { "text": "no worth it", "isCorrect": false },
+        { "text": "not value", "isCorrect": false }
+      ],
+      "correctAnswer": "The concert tickets are too expensive. It's just not worth it.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_274.mp3",
+      "hint": "Which phrase means something doesn't provide enough benefit for the cost or effort required?",
+      "content": {
+        "type": "text",
+        "value": "[Not worth it] is the fixed expression used to say that the value or benefit of something is not greater than its cost (in money, time, or effort).\n\n~No worth it~ is grammatically incorrect; the structure requires 'not'.\n~Not value~ is incorrect; 'value' is a noun and doesn't fit here."
+      }
+    },
+    {
+      "cardId": "egac_275",
+      "category": "Negative Expressions: 'No worries'",
+      "sentenceParts": {
+        "prefix": "A: Thanks so much for your help! B: ",
+        "suffix": ", happy to do it."
+      },
+      "options": [
+        { "text": "No worries", "isCorrect": true },
+        { "text": "No problems", "isCorrect": false },
+        { "text": "Not worry", "isCorrect": false }
+      ],
+      "correctAnswer": "A: Thanks so much for your help! B: No worries, happy to do it.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_275.mp3",
+      "hint": "What is a very common, informal response to 'thank you' that means 'it wasn't a problem'?",
+      "content": {
+        "type": "text",
+        "value": "[No worries] is a popular and friendly idiom used as a response to 'thank you' or an apology, meaning 'don't worry about it' or 'you're welcome'.\n\n~No problems~ is grammatically incorrect; the correct phrase is 'No problem' (singular).\n~Not worry~ is incorrect grammar."
+      }
+    },
+    {
+      "cardId": "egac_276",
+      "category": "Negative Expressions: 'Not at all'",
+      "sentenceParts": {
+        "prefix": "A: Do you mind if I open the window? B: ",
+        "suffix": ". Go right ahead."
+      },
+      "options": [
+        { "text": "Not at all", "isCorrect": true },
+        { "text": "Nothing at all", "isCorrect": false },
+        { "text": "No, I mind", "isCorrect": false }
+      ],
+      "correctAnswer": "A: Do you mind if I open the window? B: Not at all. Go right ahead.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_276.mp3",
+      "hint": "Which phrase is a polite way to say 'no, I don't mind'?",
+      "content": {
+        "type": "text",
+        "value": "[Not at all] is a standard, polite response to a question with 'Do you mind...?', meaning 'I don't mind in any way'.\n\n~Nothing at all~ means 'nothing' and doesn't answer the question correctly.\n~No, I mind~ is contradictory. 'No' means you don't mind, but 'I mind' means you do."
+      }
+    },
+    {
+      "cardId": "egac_277",
+      "category": "Vocabulary: US Education",
+      "sentenceParts": {
+        "prefix": "My son is seven years old, so he's in ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "elementary school", "isCorrect": true },
+        { "text": "high school", "isCorrect": false },
+        { "text": "college", "isCorrect": false }
+      ],
+      "correctAnswer": "My son is seven years old, so he's in elementary school.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_277.mp3",
+      "hint": "What is the US term for the first several years of formal education (approx. ages 6-11)?",
+      "content": {
+        "type": "text",
+        "value": "[Elementary school] is the correct term in the US for primary education, typically covering grades 1 through 5 or 6.\n\n~High school~ is for older students (approx. ages 14-18).\n~College~ is for higher education after high school."
+      }
+    },
+    {
+      "cardId": "egac_278",
+      "category": "Vocabulary: Math Operations",
+      "sentenceParts": {
+        "prefix": "Five ",
+        "suffix": " eight is forty."
+      },
+      "options": [
+        { "text": "times", "isCorrect": true },
+        { "text": "plus", "isCorrect": false },
+        { "text": "by", "isCorrect": false }
+      ],
+      "correctAnswer": "Five times eight is forty.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_278.mp3",
+      "hint": "What word is used for the multiplication operation (x)?",
+      "content": {
+        "type": "text",
+        "value": "[Times] is the standard word used in speech for multiplication.\n\n~Plus~ is for addition (+).\n~By~ is used in division ('divided by'), not multiplication."
+      }
+    },
+    {
+      "cardId": "egac_279",
+      "category": "Vocabulary: Household Chores",
+      "sentenceParts": {
+        "prefix": "I need to ",
+        "suffix": " the dishes after dinner."
+      },
+      "options": [
+        { "text": "do", "isCorrect": true },
+        { "text": "make", "isCorrect": false },
+        { "text": "clean", "isCorrect": false }
+      ],
+      "correctAnswer": "I need to do the dishes after dinner.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_279.mp3",
+      "hint": "Which verb is part of the fixed expression for washing plates, forks, and glasses?",
+      "content": {
+        "type": "text",
+        "value": "[Do the dishes] is the correct, fixed collocation for this chore.\n\n~Make the dishes~ is incorrect.\n~Clean the dishes~ is understandable, but 'do the dishes' is the most common and idiomatic phrase."
+      }
+    },
+    {
+      "cardId": "egac_280",
+      "category": "Vocabulary: Household Chores",
+      "sentenceParts": {
+        "prefix": "Can you please ",
+        "suffix": " away your clothes? They're all over the floor."
+      },
+      "options": [
+        { "text": "put", "isCorrect": true },
+        { "text": "get", "isCorrect": false },
+        { "text": "take", "isCorrect": false }
+      ],
+      "correctAnswer": "Can you please put away your clothes? They're all over the floor.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_280.mp3",
+      "hint": "What is the phrasal verb for returning items to their proper storage place?",
+      "content": {
+        "type": "text",
+        "value": "[Put away] is the correct phrasal verb meaning to store something in its appropriate place.\n\n~Get away~ means to escape.\n~Take away~ means to remove."
+      }
+    },
+    {
+      "cardId": "egac_281",
+      "category": "Vocabulary: Irregular Plurals",
+      "sentenceParts": {
+        "prefix": "Two ",
+        "suffix": " were walking down the street."
+      },
+      "options": [
+        { "text": "men", "isCorrect": true },
+        { "text": "mans", "isCorrect": false },
+        { "text": "man", "isCorrect": false }
+      ],
+      "correctAnswer": "Two men were walking down the street.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_281.mp3",
+      "hint": "What is the irregular plural form of 'man'?",
+      "content": {
+        "type": "text",
+        "value": "[Men] is the irregular plural of 'man'. The vowel changes from 'a' to 'e'.\n\n~Mans~ is incorrect.\n~Man~ is the singular form."
+      }
+    },
+    {
+      "cardId": "egac_282",
+      "category": "Vocabulary: Irregular Plurals",
+      "sentenceParts": {
+        "prefix": "I walked so much that my ",
+        "suffix": " are sore."
+      },
+      "options": [
+        { "text": "feet", "isCorrect": true },
+        { "text": "foots", "isCorrect": false },
+        { "text": "foot", "isCorrect": false }
+      ],
+      "correctAnswer": "I walked so much that my feet are sore.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_282.mp3",
+      "hint": "What is the plural of 'foot'?",
+      "content": {
+        "type": "text",
+        "value": "The irregular plural of 'foot' is [feet].\n\n~Foots~ is an incorrect pluralization.\n~Foot~ is the singular form."
+      }
+    },
+    {
+      "cardId": "egac_283",
+      "category": "Hyphenated Words: 'Well-known'",
+      "sentenceParts": {
+        "prefix": "She is a very ",
+        "suffix": " author in her country."
+      },
+      "options": [
+        { "text": "well-known", "isCorrect": true },
+        { "text": "good-known", "isCorrect": false },
+        { "text": "known-well", "isCorrect": false }
+      ],
+      "correctAnswer": "She is a very well-known author in her country.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_283.mp3",
+      "hint": "Which compound adjective means 'famous'?",
+      "content": {
+        "type": "text",
+        "value": "[Well-known] is the correct compound adjective, formed with a hyphen when it comes before a noun.\n\n~Good-known~ is not a correct English expression.\n~Known-well~ has the words in the wrong order."
+      }
+    },
+    {
+      "cardId": "egac_284",
+      "category": "Hyphenated Words: 'Up-to-date'",
+      "sentenceParts": {
+        "prefix": "Please make sure your software is ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "up-to-date", "isCorrect": true },
+        { "text": "actual", "isCorrect": false },
+        { "text": "to the date", "isCorrect": false }
+      ],
+      "correctAnswer": "Please make sure your software is up-to-date.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_284.mp3",
+      "hint": "Which phrase means 'modern' or 'containing the latest information'?",
+      "content": {
+        "type": "text",
+        "value": "[Up-to-date] is the correct hyphenated expression meaning current or modern.\n\n~Actual~ is a false friend; it means 'real', not 'current'.\n~To the date~ is not the correct idiom."
+      }
+    },
+    {
+      "cardId": "egac_285",
+      "category": "Hyphenated Words: 'Old-fashioned'",
+      "sentenceParts": {
+        "prefix": "My grandfather has some ",
+        "suffix": " ideas about technology."
+      },
+      "options": [
+        { "text": "old-fashioned", "isCorrect": true },
+        { "text": "old-style", "isCorrect": false },
+        { "text": "ancient", "isCorrect": false }
+      ],
+      "correctAnswer": "My grandfather has some old-fashioned ideas about technology.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_285.mp3",
+      "hint": "Which compound adjective means 'not modern' or 'from a previous time'?",
+      "content": {
+        "type": "text",
+        "value": "[Old-fashioned] is the standard compound adjective for something that is no longer modern or in style.\n\n~Old-style~ is possible but much less common and idiomatic than 'old-fashioned'.\n~Ancient~ means extremely old, from a time long ago, which is too strong for this context."
+      }
+    },
+    {
+      "cardId": "egac_286",
+      "category": "Autonomy: 'By myself' vs 'Alone'",
+      "sentenceParts": {
+        "prefix": "I don't like going to the movies ",
+        "suffix": "; I prefer to go with friends."
+      },
+      "options": [
+        { "text": "alone", "isCorrect": true },
+        { "text": "by myself", "isCorrect": false },
+        { "text": "on my own", "isCorrect": false }
+      ],
+      "correctAnswer": "I don't like going to the movies alone; I prefer to go with friends.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_286.mp3",
+      "hint": "Which word specifically means 'without other people'?",
+      "content": {
+        "type": "text",
+        "value": "[Alone] focuses on the state of being without company.\n\n~By myself~ and ~on my own~ could also be used here and are grammatically correct. However, 'alone' is the most direct and common word to contrast being with friends, as it specifically refers to the social context."
+      }
+    },
+    {
+      "cardId": "egac_287",
+      "category": "Results: 'Did worse'",
+      "sentenceParts": {
+        "prefix": "I studied a lot, but I still ",
+        "suffix": " on the test than I did last time."
+      },
+      "options": [
+        { "text": "did worse", "isCorrect": true },
+        { "text": "went worse", "isCorrect": false },
+        { "text": "was worse", "isCorrect": false }
+      ],
+      "correctAnswer": "I studied a lot, but I still did worse on the test than I did last time.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_287.mp3",
+      "hint": "How do you talk about having a bad result or performance in an activity?",
+      "content": {
+        "type": "text",
+        "value": "[Did worse] is the correct expression to describe a poorer performance in a task, using the verb 'do'.\n\n~Went worse~ would describe how a situation progressed ('The meeting went worse than expected').\n~Was worse~ would describe the state of something ('The test was worse than the last one')."
+      }
+    },
+    {
+      "cardId": "egac_288",
+      "category": "Feedback: 'Exactly'",
+      "sentenceParts": {
+        "prefix": "A: So the file needs to be in PDF format, right? B: ",
+        "suffix": ". That's what the instructions say."
+      },
+      "options": [
+        { "text": "Exactly", "isCorrect": true },
+        { "text": "Absolutely", "isCorrect": false },
+        { "text": "Correctly", "isCorrect": false }
+      ],
+      "correctAnswer": "A: So the file needs to be in PDF format, right? B: Exactly. That's what the instructions say.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_288.mp3",
+      "hint": "Which word is a strong confirmation that what someone said is 100% correct?",
+      "content": {
+        "type": "text",
+        "value": "[Exactly] is the perfect word to confirm that a piece of information is completely and precisely correct.\n\n~Absolutely~ shows strong agreement, but 'Exactly' is better for confirming a specific fact.\n~Correctly~ is an adverb that describes how an action is done ('You answered correctly')."
+      }
+    },
+    {
+      "cardId": "egac_289",
+      "category": "Negative Expressions: 'Not even close'",
+      "sentenceParts": {
+        "prefix": "A: Is your project almost finished? B: Haha, ",
+        "suffix": ". I've just started."
+      },
+      "options": [
+        { "text": "not even close", "isCorrect": true },
+        { "text": "not nearly", "isCorrect": false },
+        { "text": "far from it", "isCorrect": false }
+      ],
+      "correctAnswer": "A: Is your project almost finished? B: Haha, not even close. I've just started.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_289.mp3",
+      "hint": "Which emphatic phrase means 'the opposite is true' or 'very far from finished'?",
+      "content": {
+        "type": "text",
+        "value": "[Not even close] is a strong, informal idiom used to say that something is very far from being true or complete.\n\n~Not nearly~ is also correct and means the same ('Not nearly finished'), but 'not even close' is a very common standalone phrase.\n~Far from it~ is another correct alternative, but 'not even close' is a great conversational idiom to learn."
+      }
+    },
+    {
+      "cardId": "egac_290",
+      "category": "Vocabulary: Math Operations",
+      "sentenceParts": {
+        "prefix": "Ten minus four ",
+        "suffix": " six."
+      },
+      "options": [
+        { "text": "equals", "isCorrect": true },
+        { "text": "results", "isCorrect": false },
+        { "text": "makes", "isCorrect": false }
+      ],
+      "correctAnswer": "Ten minus four equals six.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_290.mp3",
+      "hint": "What is the verb used for the result of a mathematical calculation (=)?",
+      "content": {
+        "type": "text",
+        "value": "[Equals] is the standard mathematical verb for 'is equal to'. 'Is' can also be used ('...is six').\n\n~Results~ needs a preposition ('results in six').\n~Makes~ is sometimes used informally ('Two and two makes four'), but 'equals' is more standard and correct."
+      }
+    },
+    {
+      "cardId": "egac_291",
+      "category": "Vocabulary: Household Chores",
+      "sentenceParts": {
+        "prefix": "After the party, we have to ",
+        "suffix": " the floor."
+      },
+      "options": [
+        { "text": "sweep", "isCorrect": true },
+        { "text": "brush", "isCorrect": false },
+        { "text": "wipe", "isCorrect": false }
+      ],
+      "correctAnswer": "After the party, we have to sweep the floor.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_291.mp3",
+      "hint": "What is the verb for cleaning a floor with a broom?",
+      "content": {
+        "type": "text",
+        "value": "[Sweep] is the specific verb for cleaning with a broom.\n\n~Brush~ is used for things like hair or teeth.\n~Wipe~ is for cleaning a surface with a cloth."
+      }
+    },
+    {
+      "cardId": "egac_292",
+      "category": "Vocabulary: Irregular Plurals",
+      "sentenceParts": {
+        "prefix": "Our cat is very good at catching ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "mice", "isCorrect": true },
+        { "text": "mouses", "isCorrect": false },
+        { "text": "mouse", "isCorrect": false }
+      ],
+      "correctAnswer": "Our cat is very good at catching mice.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_292.mp3",
+      "hint": "What is the irregular plural of 'mouse'?",
+      "content": {
+        "type": "text",
+        "value": "The plural of 'mouse' (the animal) is [mice].\n\n~Mouses~ is the plural for a computer mouse, but not the animal.\n~Mouse~ is singular."
+      }
+    },
+    {
+      "cardId": "egac_293",
+      "category": "Vocabulary: Irregular Plurals",
+      "sentenceParts": {
+        "prefix": "Many people have changed their ",
+        "suffix": " because of the internet."
+      },
+      "options": [
+        { "text": "lives", "isCorrect": true },
+        { "text": "lifes", "isCorrect": false },
+        { "text": "life", "isCorrect": false }
+      ],
+      "correctAnswer": "Many people have changed their lives because of the internet.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_293.mp3",
+      "hint": "The plural of 'life' is irregular.",
+      "content": {
+        "type": "text",
+        "value": "The plural of 'life' is [lives] (pronounced with a 'v' sound).\n\n~Lifes~ is an incorrect plural form.\n~Life~ is singular."
+      }
+    },
+    {
+      "cardId": "egac_294",
+      "category": "Hyphenated Words: 'Long-term'",
+      "sentenceParts": {
+        "prefix": "We need to think about the ",
+        "suffix": " effects of this decision."
+      },
+      "options": [
+        { "text": "long-term", "isCorrect": true },
+        { "text": "long time", "isCorrect": false },
+        { "text": "term-long", "isCorrect": false }
+      ],
+      "correctAnswer": "We need to think about the long-term effects of this decision.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_294.mp3",
+      "hint": "Which compound adjective describes something that will last or have an effect far into the future?",
+      "content": {
+        "type": "text",
+        "value": "[Long-term] is the correct compound adjective, used with a hyphen before a noun ('long-term effects').\n\n~long time~ is a noun phrase ('for a long time'), not an adjective.\n~term-long~ has the words in the wrong order."
+      }
+    },
+    {
+      "cardId": "egac_295",
+      "category": "Hyphenated Words: 'State-of-the-art'",
+      "sentenceParts": {
+        "prefix": "Our new lab is equipped with ",
+        "suffix": " technology."
+      },
+      "options": [
+        { "text": "state-of-the-art", "isCorrect": true },
+        { "text": "modern-art", "isCorrect": false },
+        { "text": "art-of-the-state", "isCorrect": false }
+      ],
+      "correctAnswer": "Our new lab is equipped with state-of-the-art technology.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_295.mp3",
+      "hint": "Which hyphenated phrase means 'the most modern and advanced'?",
+      "content": {
+        "type": "text",
+        "value": "[State-of-the-art] is a fixed, hyphenated expression used as an adjective to describe something that is the very best and most modern available.\n\nThe other options are incorrect constructions."
+      }
+    },
+    {
+      "cardId": "egac_296",
+      "category": "Feedback: 'You're on the right track'",
+      "sentenceParts": {
+        "prefix": "Your idea isn't perfect yet, but you're ",
+        "suffix": ". Keep going!"
+      },
+      "options": [
+        { "text": "on the right track", "isCorrect": true },
+        { "text": "in the correct way", "isCorrect": false },
+        { "text": "at the good path", "isCorrect": false }
+      ],
+      "correctAnswer": "Your idea isn't perfect yet, but you're on the right track. Keep going!",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_296.mp3",
+      "hint": "Which idiom is used to encourage someone by telling them their work or thinking is heading in the correct direction?",
+      "content": {
+        "type": "text",
+        "value": "[On the right track] is a common idiom meaning to be proceeding in a way that is likely to succeed.\n\n~In the correct way~ is understandable but not idiomatic.\n~At the good path~ is an incorrect combination of prepositions and words."
+      }
+    },
+    {
+      "cardId": "egac_297",
+      "category": "Vocabulary: Household Chores",
+      "sentenceParts": {
+        "prefix": "I need to ",
+        "suffix": " the laundry before I run out of clean clothes."
+      },
+      "options": [
+        { "text": "do", "isCorrect": true },
+        { "text": "make", "isCorrect": false },
+        { "text": "wash", "isCorrect": false }
+      ],
+      "correctAnswer": "I need to do the laundry before I run out of clean clothes.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_297.mp3",
+      "hint": "What is the common verb used in the expression for washing clothes?",
+      "content": {
+        "type": "text",
+        "value": "[Do the laundry] is the standard, fixed collocation for the entire process of washing clothes.\n\n~Make the laundry~ is incorrect.\n~Wash the laundry~ is redundant, as 'laundry' itself refers to clothes that need washing or have just been washed. 'Do' is the correct verb for the activity."
+      }
+    },
+    {
+      "cardId": "egac_298",
+      "category": "Short Feedback: Agreement",
+      "sentenceParts": {
+        "prefix": "A: So, you agree with the plan? B: ",
+        "suffix": "! It's a great idea."
+      },
+      "options": [
+        { "text": "Absolutely", "isCorrect": true },
+        { "text": "Completely", "isCorrect": false },
+        { "text": "For sure", "isCorrect": false }
+      ],
+      "correctAnswer": "A: So, you agree with the plan? B: Absolutely! It's a great idea.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_298.mp3",
+      "hint": "Which adverb is a very strong and positive way to say 'yes'?",
+      "content": {
+        "type": "text",
+        "value": "[Absolutely] is a strong adverb of agreement, meaning 'yes, without a doubt'.\n\n~Completely~ is an adverb that modifies adjectives or verbs ('I completely agree'), but it is not typically used as a standalone response in this way.\n~For sure~ is also a correct and common informal response, but 'Absolutely' is a powerful, single-word option that's great to know."
+      }
+    },
+    {
+      "cardId": "egac_299",
+      "category": "Vocabulary: 'Technical College'",
+      "sentenceParts": {
+        "prefix": "He didn't go to a traditional university; he went to a ",
+        "suffix": " to become a mechanic."
+      },
+      "options": [
+        { "text": "vocational school", "isCorrect": true },
+        { "text": "high school", "isCorrect": false },
+        { "text": "basic school", "isCorrect": false }
+      ],
+      "correctAnswer": "He didn't go to a traditional university; he went to a vocational school to become a mechanic.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_299.mp3",
+      "hint": "What is the name for a school that teaches practical skills for a specific job?",
+      "content": {
+        "type": "text",
+        "value": "[Vocational school] (or 'technical college') is the correct term for a post-secondary institution that provides job-specific training.\n\n~High school~ is secondary education.\n~Basic school~ is not a standard term in the US education system."
+      }
+    },
+    {
+      "cardId": "egac_300",
+      "category": "Autonomy: 'On my own'",
+      "sentenceParts": {
+        "prefix": "She's very independent. She's been living ",
+        "suffix": " since she was 18."
+      },
+      "options": [
+        { "text": "on her own", "isCorrect": true },
+        { "text": "alone", "isCorrect": false },
+        { "text": "by herself", "isCorrect": false }
+      ],
+      "correctAnswer": "She's very independent. She's been living on her own since she was 18.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_300.mp3",
+      "hint": "Which phrase emphasizes independence and self-sufficiency?",
+      "content": {
+        "type": "text",
+        "value": "[On her own] and [by herself] both correctly imply independence and are often interchangeable. 'On her own' can sometimes carry a stronger sense of self-sufficiency.\n\n~Alone~ focuses more on the physical state of being without company, which can sometimes have a nuance of loneliness. For emphasizing independence, 'on her own' is an excellent choice."
+      }
+    },
+    {
+      "cardId": "egac_301",
+      "category": "Structure: Past Verb + Object + Infinitive",
+      "sentenceParts": {
+        "prefix": "My manager was very clear; she ",
+        "suffix": " to finish the report by noon."
+      },
+      "options": [
+        { "text": "told me", "isCorrect": true },
+        { "text": "said me", "isCorrect": false },
+        { "text": "told to me", "isCorrect": false }
+      ],
+      "correctAnswer": "My manager was very clear; she told me to finish the report by noon.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_301.mp3",
+      "hint": "Which verb is used to report a direct order or instruction given to someone?",
+      "content": {
+        "type": "text",
+        "value": "The structure [told + object pronoun + to-infinitive] is used to report a command or instruction. 'Tell' needs a direct object (me, you, him, etc.).\n\n~Said me~ is incorrect. 'Say' is not followed by an object pronoun in this structure; you would say 'she said that I should finish...'.\n~Told to me~ is incorrect; 'told' does not take the preposition 'to'."
+      }
+    },
+    {
+      "cardId": "egac_302",
+      "category": "Structure: Past Verb + Object + Infinitive",
+      "sentenceParts": {
+        "prefix": "I was running late, so I ",
+        "suffix": " a ride to the station."
+      },
+      "options": [
+        { "text": "asked my friend to give me", "isCorrect": true },
+        { "text": "asked to my friend to give me", "isCorrect": false },
+        { "text": "said my friend to give me", "isCorrect": false }
+      ],
+      "correctAnswer": "I was running late, so I asked my friend to give me a ride to the station.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_302.mp3",
+      "hint": "How do you report a request you made to someone in the past?",
+      "content": {
+        "type": "text",
+        "value": "The structure [asked + person + to-infinitive] is the correct way to report a past request.\n\n~asked to my friend~ is incorrect because 'ask' is followed directly by the object, without 'to'.\n~said my friend~ is incorrect; 'say' cannot be used to report a request in this structure."
+      }
+    },
+    {
+      "cardId": "egac_303",
+      "category": "Collocations: Verb + Noun",
+      "sentenceParts": {
+        "prefix": "We can't wait any longer. We need to ",
+        "suffix": " a decision now."
+      },
+      "options": [
+        { "text": "make", "isCorrect": true },
+        { "text": "do", "isCorrect": false },
+        { "text": "take", "isCorrect": false }
+      ],
+      "correctAnswer": "We can't wait any longer. We need to make a decision now.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_303.mp3",
+      "hint": "Which verb naturally combines with 'a decision'?",
+      "content": {
+        "type": "text",
+        "value": "The phrase [make a decision] is a fixed collocation in English. A collocation is a pair of words that are naturally used together by native speakers.\n\n~do a decision~ is a very common error for learners but is grammatically incorrect.\n~take a decision~ is used in some contexts, but 'make' is far more common and standard."
+      }
+    },
+    {
+      "cardId": "egac_304",
+      "category": "Collocations: Adjective + Noun",
+      "sentenceParts": {
+        "prefix": "We had to cancel the picnic because of the ",
+        "suffix": " traffic."
+      },
+      "options": [
+        { "text": "heavy", "isCorrect": true },
+        { "text": "strong", "isCorrect": false },
+        { "text": "hard", "isCorrect": false }
+      ],
+      "correctAnswer": "We had to cancel the picnic because of the heavy traffic.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_304.mp3",
+      "hint": "Which adjective is conventionally used to describe a lot of traffic?",
+      "content": {
+        "type": "text",
+        "value": "[Heavy traffic] is the standard English collocation. Words that are frequently paired together are called collocations.\n\n~Strong traffic~ and ~hard traffic~ are not natural combinations, even though the meaning might seem logical. The conventional choice is 'heavy'."
+      }
+    },
+    {
+      "cardId": "egac_305",
+      "category": "Mixed Conditionals (Past -> Present)",
+      "sentenceParts": {
+        "prefix": "If I had saved more money last year, I ",
+        "suffix": " worried about rent now."
+      },
+      "options": [
+        { "text": "wouldn't be", "isCorrect": true },
+        { "text": "wouldn't have been", "isCorrect": false },
+        { "text": "weren't", "isCorrect": false }
+      ],
+      "correctAnswer": "If I had saved more money last year, I wouldn't be worried about rent now.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_305.mp3",
+      "hint": "Use a mixed conditional to connect an unreal past condition (Past Perfect) to an unreal present result (would + verb).",
+      "content": {
+        "type": "text",
+        "value": "This is a [Mixed Conditional]. The 'if' clause is about the past ('if I had saved' - Past Perfect), and the result clause is about the present ('I wouldn't be' - would + base verb).\n\n~wouldn't have been~ would be for a Third Conditional, where the result is also in the past.\n~weren't~ would be for a Second Conditional, where the condition is in the present."
+      }
+    },
+    {
+      "cardId": "egac_306",
+      "category": "Mixed Conditionals (Present -> Past)",
+      "sentenceParts": {
+        "prefix": "If I were better at navigating, we ",
+        "suffix": " gotten lost."
+      },
+      "options": [
+        { "text": "wouldn't have", "isCorrect": true },
+        { "text": "wouldn't", "isCorrect": false },
+        { "text": "hadn't", "isCorrect": false }
+      ],
+      "correctAnswer": "If I were better at navigating, we wouldn't have gotten lost.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_306.mp3",
+      "hint": "How do you connect an unreal present condition (Past Simple) to an unreal past result (would have + p.p.)?",
+      "content": {
+        "type": "text",
+        "value": "This is a [Mixed Conditional]. The 'if' clause describes a general, unreal present condition ('if I were' - Past Simple), and the result clause is about the past ('we wouldn't have gotten' - would have + past participle).\n\n~wouldn't~ would be for a Second Conditional, with a present or future result.\n~hadn't~ would be part of a Third Conditional 'if' clause."
+      }
+    },
+    {
+      "cardId": "egac_307",
+      "category": "Causative: 'Get something done'",
+      "sentenceParts": {
+        "prefix": "My computer is running slow. I need to ",
+        "suffix": " by a professional."
+      },
+      "options": [
+        { "text": "get it looked at", "isCorrect": true },
+        { "text": "look at it", "isCorrect": false },
+        { "text": "get to look at it", "isCorrect": false }
+      ],
+      "correctAnswer": "My computer is running slow. I need to get it looked at by a professional.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_307.mp3",
+      "hint": "Use the causative structure 'get + object + past participle' to talk about a service someone else performs for you.",
+      "content": {
+        "type": "text",
+        "value": "The causative structure [get something done] is used when you arrange for someone else to perform a service. The structure is 'get + the object + the past participle'.\n\n~look at it~ would imply you are going to do it yourself.\n~get to look at it~ is not the correct causative structure."
+      }
+    },
+    {
+      "cardId": "egac_308",
+      "category": "Causative: 'Have something done'",
+      "sentenceParts": {
+        "prefix": "I don't wash my car myself; I usually ",
+        "suffix": " at the car wash."
+      },
+      "options": [
+        { "text": "have it washed", "isCorrect": true },
+        { "text": "wash it", "isCorrect": false },
+        { "text": "have washed it", "isCorrect": false }
+      ],
+      "correctAnswer": "I don't wash my car myself; I usually have it washed at the car wash.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_308.mp3",
+      "hint": "How do you say that you pay for a service to be done?",
+      "content": {
+        "type": "text",
+        "value": "The causative [have something done] is the correct way to express that you pay or arrange for someone else to do a task for you.\n\n~wash it~ implies that you do it yourself, which contradicts the first part of the sentence.\n~have washed it~ is the present perfect tense and doesn't fit the causative meaning here."
+      }
+    },
+    {
+      "cardId": "egac_309",
+      "category": "Hedging Language",
+      "sentenceParts": {
+        "prefix": "I'm not an expert, but it ",
+        "suffix": " we're going in the wrong direction."
+      },
+      "options": [
+        { "text": "seems like", "isCorrect": true },
+        { "text": "is that", "isCorrect": false },
+        { "text": "must be that", "isCorrect": false }
+      ],
+      "correctAnswer": "I'm not an expert, but it seems like we're going in the wrong direction.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_309.mp3",
+      "hint": "Which phrase is used to soften an opinion, making it sound less direct and more polite?",
+      "content": {
+        "type": "text",
+        "value": "[It seems like] is a common hedging phrase used to express an observation or opinion in a less assertive way. It makes the statement sound more like a suggestion.\n\n~is that~ is too direct and states the opinion as a fact.\n~must be that~ expresses strong certainty, which contradicts the 'I'm not an expert' preface."
+      }
+    },
+    {
+      "cardId": "egac_310",
+      "category": "Hedging Language",
+      "sentenceParts": {
+        "prefix": "That's an interesting idea, but I'm ",
+        "suffix": " not unsure it will work."
+      },
+      "options": [
+        { "text": "a bit", "isCorrect": true },
+        { "text": "very", "isCorrect": false },
+        { "text": "too", "isCorrect": false }
+      ],
+      "correctAnswer": "That's an interesting idea, but I'm a bit unsure it will work.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_310.mp3",
+      "hint": "Which small adverb is used to soften a negative statement or disagreement?",
+      "content": {
+        "type": "text",
+        "value": "[A bit] (or 'a little') is a hedging adverb used to soften the intensity of an adjective, making the statement less direct and more polite.\n\n~very~ and ~too~ are intensifiers that would make the statement stronger, not softer."
+      }
+    },
+    {
+      "cardId": "egac_311",
+      "category": "Discourse Markers & Fillers",
+      "sentenceParts": {
+        "prefix": "A: What should we do about this problem? B: ",
+        "suffix": ", I think we need more information first."
+      },
+      "options": [
+        { "text": "Well", "isCorrect": true },
+        { "text": "So", "isCorrect": false },
+        { "text": "Right", "isCorrect": false }
+      ],
+      "correctAnswer": "A: What should we do about this problem? B: Well, I think we need more information first.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_311.mp3",
+      "hint": "Which filler word is commonly used at the start of a sentence to pause and gather your thoughts before answering?",
+      "content": {
+        "type": "text",
+        "value": "[Well] is a classic discourse marker used to pause, introduce a statement, or signal a slight shift in topic. It's perfect for gaining a moment to think.\n\n~So~ is used to introduce a conclusion or result.\n~Right~ is used to confirm or agree with something just said."
+      }
+    },
+    {
+      "cardId": "egac_312",
+      "category": "Discourse Markers & Fillers",
+      "sentenceParts": {
+        "prefix": "It's not that I don't like it... ",
+        "suffix": ", it's just not what I expected."
+      },
+      "options": [
+        { "text": "I mean", "isCorrect": true },
+        { "text": "You know", "isCorrect": false },
+        { "text": "For example", "isCorrect": false }
+      ],
+      "correctAnswer": "It's not that I don't like it... I mean, it's just not what I expected.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_312.mp3",
+      "hint": "Which phrase is used to clarify or rephrase something you just said?",
+      "content": {
+        "type": "text",
+        "value": "[I mean] is a discourse marker used to explain, clarify, or correct what was just said.\n\n~You know~ is a filler used to check for understanding or to fill a pause.\n~For example~ is used to introduce a specific example, not a clarification."
+      }
+    },
+    {
+      "cardId": "egac_313",
+      "category": "Advanced Phrasal Verbs: 'come up with'",
+      "sentenceParts": {
+        "prefix": "We need to ",
+        "suffix": " a new strategy for the next quarter."
+      },
+      "options": [
+        { "text": "come up with", "isCorrect": true },
+        { "text": "get up on", "isCorrect": false },
+        { "text": "put on with", "isCorrect": false }
+      ],
+      "correctAnswer": "We need to come up with a new strategy for the next quarter.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_313.mp3",
+      "hint": "Which phrasal verb means to think of or create an idea, plan, or solution?",
+      "content": {
+        "type": "text",
+        "value": "[Come up with] is an idiomatic phrasal verb meaning to produce or invent something, especially an idea or a plan.\n\n~Get up on~ and ~put on with~ are not correct phrasal verbs for this meaning."
+      }
+    },
+    {
+      "cardId": "egac_314",
+      "category": "Advanced Phrasal Verbs: 'put up with'",
+      "sentenceParts": {
+        "prefix": "I can't ",
+        "suffix": " his constant complaining anymore."
+      },
+      "options": [
+        { "text": "put up with", "isCorrect": true },
+        { "text": "stand up to", "isCorrect": false },
+        { "text": "get away with", "isCorrect": false }
+      ],
+      "correctAnswer": "I can't put up with his constant complaining anymore.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_314.mp3",
+      "hint": "Which phrasal verb means 'to tolerate' or 'to endure' something annoying?",
+      "content": {
+        "type": "text",
+        "value": "[Put up with] is a common phrasal verb that means to tolerate something or someone unpleasant without complaining.\n\n~Stand up to~ means to confront or resist someone.\n~Get away with~ means to do something wrong without getting caught."
+      }
+    },
+    {
+      "cardId": "egac_315",
+      "category": "Advanced Phrasal Verbs: 'look into'",
+      "sentenceParts": {
+        "prefix": "There's a strange noise coming from the engine. I'll ask a mechanic to ",
+        "suffix": " it."
+      },
+      "options": [
+        { "text": "look into", "isCorrect": true },
+        { "text": "look after", "isCorrect": false },
+        { "text": "look for", "isCorrect": false }
+      ],
+      "correctAnswer": "There's a strange noise coming from the engine. I'll ask a mechanic to look into it.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_315.mp3",
+      "hint": "Which phrasal verb means 'to investigate' or 'to examine the facts about a problem'?",
+      "content": {
+        "type": "text",
+        "value": "[Look into] means to investigate or research a situation or problem.\n\n~Look after~ means to take care of someone or something.\n~Look for~ means to search for a lost item."
+      }
+    },
+    {
+      "cardId": "egac_316",
+      "category": "Advanced Phrasal Verbs: 'get away with'",
+      "sentenceParts": {
+        "prefix": "He thinks he can ",
+        "suffix": " cheating, but the teacher is watching him closely."
+      },
+      "options": [
+        { "text": "get away with", "isCorrect": true },
+        { "text": "get out of", "isCorrect": false },
+        { "text": "get over", "isCorrect": false }
+      ],
+      "correctAnswer": "He thinks he can get away with cheating, but the teacher is watching him closely.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_316.mp3",
+      "hint": "Which phrasal verb means to do something wrong without being punished for it?",
+      "content": {
+        "type": "text",
+        "value": "[Get away with] is an idiom meaning to succeed in doing something bad without being caught or punished.\n\n~Get out of~ means to avoid a responsibility.\n~Get over~ means to recover from an illness or disappointment."
+      }
+    },
+    {
+      "cardId": "egac_317",
+      "category": "Advanced Phrasal Verbs: 'bring up'",
+      "sentenceParts": {
+        "prefix": "I was hesitant to ",
+        "suffix": " the topic of money during our first meeting."
+      },
+      "options": [
+        { "text": "bring up", "isCorrect": true },
+        { "text": "bring on", "isCorrect": false },
+        { "text": "bring about", "isCorrect": false }
+      ],
+      "correctAnswer": "I was hesitant to bring up the topic of money during our first meeting.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_317.mp3",
+      "hint": "Which phrasal verb means 'to mention' or 'to start talking about a particular subject'?",
+      "content": {
+        "type": "text",
+        "value": "[Bring up] means to introduce a topic into a conversation.\n\n~Bring on~ means to cause something to happen, usually something negative ('The stress brought on a headache').\n~Bring about~ means to cause a change."
+      }
+    },
+    {
+      "cardId": "egac_318",
+      "category": "Collocations: Adverb + Adjective",
+      "sentenceParts": {
+        "prefix": "You need to be ",
+        "suffix": " aware of the risks before you invest."
+      },
+      "options": [
+        { "text": "fully", "isCorrect": true },
+        { "text": "absolutely", "isCorrect": false },
+        { "text": "totally", "isCorrect": false }
+      ],
+      "correctAnswer": "You need to be fully aware of the risks before you invest.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_318.mp3",
+      "hint": "Which adverb collocates naturally with 'aware' to mean 'completely'?",
+      "content": {
+        "type": "text",
+        "value": "[Fully aware] is a strong and very common collocation meaning to understand a situation completely.\n\n~Absolutely aware~ is not a standard collocation. 'Absolutely' is used with extreme adjectives (e.g., 'absolutely certain').\n~Totally aware~ is possible in informal speech, but 'fully aware' is the more standard and formal choice."
+      }
+    },
+    {
+      "cardId": "egac_319",
+      "category": "Causative: 'Get your hair cut'",
+      "sentenceParts": {
+        "prefix": "Your hair is getting really long. When are you going to ",
+        "suffix": "?"
+      },
+      "options": [
+        { "text": "get it cut", "isCorrect": true },
+        { "text": "cut it", "isCorrect": false },
+        { "text": "get to cut it", "isCorrect": false }
+      ],
+      "correctAnswer": "Your hair is getting really long. When are you going to get it cut?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_319.mp3",
+      "hint": "How do you talk about the service of having your hair cut by a professional?",
+      "content": {
+        "type": "text",
+        "value": "The causative form [get it cut] is the natural way to talk about arranging for a hairdresser to cut your hair.\n\n~cut it~ implies you will do it yourself.\n~get to cut it~ means to receive the opportunity to cut it, which is a different meaning."
+      }
+    },
+    {
+      "cardId": "egac_320",
+      "category": "Discourse Markers: 'Gotcha'",
+      "sentenceParts": {
+        "prefix": "A: So you just need to click this button here. B: Ah, ",
+        "suffix": ". Thanks!"
+      },
+      "options": [
+        { "text": "gotcha", "isCorrect": true },
+        { "text": "catched it", "isCorrect": false },
+        { "text": "took it", "isCorrect": false }
+      ],
+      "correctAnswer": "A: So you just need to click this button here. B: Ah, gotcha. Thanks!",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_320.mp3",
+      "hint": "What is a very informal, one-word way to say 'I understand'?",
+      "content": {
+        "type": "text",
+        "value": "[Gotcha] is an informal spoken contraction of '(I have) got you', meaning 'I understand'.\n\n~Catched it~ is grammatically incorrect; the past of 'catch' is 'caught'.\n~Took it~ means you physically received something."
+      }
+    },
+    {
+      "cardId": "egac_321",
+      "category": "Collocations: 'Do me a favor'",
+      "sentenceParts": {
+        "prefix": "Could you ",
+        "suffix": " a favor and watch my bag for a minute?"
+      },
+      "options": [
+        { "text": "do me", "isCorrect": true },
+        { "text": "make me", "isCorrect": false },
+        { "text": "give me", "isCorrect": false }
+      ],
+      "correctAnswer": "Could you do me a favor and watch my bag for a minute?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_321.mp3",
+      "hint": "Which verb is used in the fixed expression for asking for help?",
+      "content": {
+        "type": "text",
+        "value": "[Do someone a favor] is the correct and fixed collocation for asking for help.\n\n~Make me a favor~ and ~give me a favor~ are incorrect translations from other languages."
+      }
+    },
+    {
+      "cardId": "egac_322",
+      "category": "Structure: Past Verb + Object + Infinitive",
+      "sentenceParts": {
+        "prefix": "She was leaving and she ",
+        "suffix": " to call her when I got home."
+      },
+      "options": [
+        { "text": "wanted me", "isCorrect": true },
+        { "text": "wanted that I", "isCorrect": false },
+        { "text": "told that I", "isCorrect": false }
+      ],
+      "correctAnswer": "She was leaving and she wanted me to call her when I got home.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_322.mp3",
+      "hint": "How do you report what someone desired you to do?",
+      "content": {
+        "type": "text",
+        "value": "The structure [wanted + object + to-infinitive] is used to express a past desire or expectation directed at someone else.\n\n~wanted that I~ is a common error; the verb 'want' does not use a 'that'-clause in this way in English.\n~told that I~ is also incorrect; 'told' requires a direct object ('told me')."
+      }
+    },
+    {
+      "cardId": "egac_323",
+      "category": "Hedging Language",
+      "sentenceParts": {
+        "prefix": "I ",
+        "suffix": " think that we should explore other options before deciding."
+      },
+      "options": [
+        { "text": "tend to", "isCorrect": true },
+        { "text": "must", "isCorrect": false },
+        { "text": "actually", "isCorrect": false }
+      ],
+      "correctAnswer": "I tend to think that we should explore other options before deciding.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_323.mp3",
+      "hint": "Which phrase softens an opinion, making it sound like a general inclination rather than a strong assertion?",
+      "content": {
+        "type": "text",
+        "value": "[I tend to think] is a hedging phrase that presents an opinion as a general habit of thought, making it sound less confrontational and more open to discussion.\n\n~must think~ expresses a logical conclusion, not a soft opinion.\n~actually think~ adds emphasis, making the opinion stronger, not softer."
+      }
+    },
+    {
+      "cardId": "egac_324",
+      "category": "Discourse Markers: 'The thing is'",
+      "sentenceParts": {
+        "prefix": "I'd love to go on vacation. ",
+        "suffix": ", I can't afford it right now."
+      },
+      "options": [
+        { "text": "The thing is", "isCorrect": true },
+        { "text": "The matter is", "isCorrect": false },
+        { "text": "What happens", "isCorrect": false }
+      ],
+      "correctAnswer": "I'd love to go on vacation. The thing is, I can't afford it right now.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_324.mp3",
+      "hint": "Which phrase is used to introduce a key fact, problem, or explanation?",
+      "content": {
+        "type": "text",
+        "value": "[The thing is] is a very common discourse marker used to introduce the most important piece of information or the central problem in a situation.\n\n~The matter is~ is much more formal and less common in everyday conversation.\n~What happens~ is a direct translation and not the correct idiom."
+      }
+    },
+    {
+      "cardId": "egac_325",
+      "category": "Collocations: Adverb + Adjective",
+      "sentenceParts": {
+        "prefix": "After the bad news, she was ",
+        "suffix": " disappointed."
+      },
+      "options": [
+        { "text": "bitterly", "isCorrect": true },
+        { "text": "hardly", "isCorrect": false },
+        { "text": "strongly", "isCorrect": false }
+      ],
+      "correctAnswer": "After the bad news, she was bitterly disappointed.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_325.mp3",
+      "hint": "Which adverb often collocates with 'disappointed' to express a deep and painful sense of disappointment?",
+      "content": {
+        "type": "text",
+        "value": "[Bitterly disappointed] is a strong collocation used to convey a feeling of deep, resentful sadness.\n\n~Hardly disappointed~ means 'almost not disappointed' which is the opposite meaning.\n~Strongly disappointed~ is understandable but 'bitterly' is the more natural and powerful collocation."
+      }
+    },
+    {
+      "cardId": "egac_326",
+      "category": "Mixed Conditionals (Past -> Present)",
+      "sentenceParts": {
+        "prefix": "If you hadn't forgotten the map, we ",
+        "suffix": " lost in the middle of nowhere right now."
+      },
+      "options": [
+        { "text": "wouldn't be", "isCorrect": true },
+        { "text": "wouldn't have been", "isCorrect": false },
+        { "text": "hadn't been", "isCorrect": false }
+      ],
+      "correctAnswer": "If you hadn't forgotten the map, we wouldn't be lost in the middle of nowhere right now.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_326.mp3",
+      "hint": "Connect a past unreal action ('hadn't forgotten') with its present unreal result ('wouldn't be').",
+      "content": {
+        "type": "text",
+        "value": "This mixed conditional connects a past condition (Past Perfect: 'hadn't forgotten') with a present result (would + base verb: 'wouldn't be').\n\n~wouldn't have been~ would imply the result was also in the past (Third Conditional).\n~hadn't been~ is not the correct structure for the result clause."
+      }
+    },
+    {
+      "cardId": "egac_327",
+      "category": "Mixed Conditionals (Present -> Past)",
+      "sentenceParts": {
+        "prefix": "If I had his phone number, I ",
+        "suffix": " him yesterday."
+      },
+      "options": [
+        { "text": "would have called", "isCorrect": true },
+        { "text": "would call", "isCorrect": false },
+        { "text": "had called", "isCorrect": false }
+      ],
+      "correctAnswer": "If I had his phone number, I would have called him yesterday.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_327.mp3",
+      "hint": "Connect a present unreal condition ('If I had') with its past unreal result ('would have...').",
+      "content": {
+        "type": "text",
+        "value": "This is a mixed conditional. The 'if' clause refers to a present unreal situation (Past Simple: 'If I had'), and the main clause refers to an unreal past result (would have + p.p.: 'would have called').\n\n~would call~ would refer to a present or future result (Second Conditional).\n~had called~ is the past perfect, which would fit in a third conditional 'if' clause."
+      }
+    },
+    {
+      "cardId": "egac_328",
+      "category": "Causative: 'Get something done'",
+      "sentenceParts": {
+        "prefix": "I think there's a leak in the roof. We need to ",
+        "suffix": " fixed."
+      },
+      "options": [
+        { "text": "get it", "isCorrect": true },
+        { "text": "fix it", "isCorrect": false },
+        { "text": "have to", "isCorrect": false }
+      ],
+      "correctAnswer": "I think there's a leak in the roof. We need to get it fixed.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_328.mp3",
+      "hint": "How do you say you need to arrange for a professional to repair something?",
+      "content": {
+        "type": "text",
+        "value": "The causative structure [get + object + past participle] ('get it fixed') is the natural way to say you will arrange for a service.\n\n~fix it~ implies you will do the repair yourself.\n~have to~ is incomplete and doesn't fit the sentence structure."
+      }
+    },
+    {
+      "cardId": "egac_329",
+      "category": "Discourse Markers: 'Basically'",
+      "sentenceParts": {
+        "prefix": "So, ",
+        "suffix": ", what you're saying is that the project is delayed."
+      },
+      "options": [
+        { "text": "basically", "isCorrect": true },
+        { "text": "finally", "isCorrect": false },
+        { "text": "actually", "isCorrect": false }
+      ],
+      "correctAnswer": "So, basically, what you're saying is that the project is delayed.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_329.mp3",
+      "hint": "Which word is used to summarize the main point of what someone has said?",
+      "content": {
+        "type": "text",
+        "value": "[Basically] is a discourse marker used to introduce a summary or the most fundamental point of a longer explanation.\n\n~Finally~ is used to introduce the last point in a series.\n~Actually~ is used to introduce a surprising fact or to correct information."
+          }
+    },
+    {
+      "cardId": "egac_330",
+      "category": "Collocations: 'Do a favor'",
+      "sentenceParts": {
+        "prefix": "Hey, can you ",
+        "suffix": " me a huge favor?"
+      },
+      "options": [
+        { "text": "do", "isCorrect": true },
+        { "text": "make", "isCorrect": false },
+        { "text": "give", "isCorrect": false }
+      ],
+      "correctAnswer": "Hey, can you do me a huge favor?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_330.mp3",
+      "hint": "To ask for help, you use a specific verb with the noun 'favor'.",
+      "content": {
+        "type": "text",
+        "value": "[Do a favor] is the fixed, natural collocation in English. You always 'do' a favor for someone.\n\n~Make a favor~ and ~give a favor~ are incorrect. This is a classic example of a collocation you must memorize."
+         }
+    },
+    {
+      "cardId": "egac_331",
+      "category": "Reported Speech: Backshifting",
+      "sentenceParts": {
+        "prefix": "She said she ",
+        "suffix": " really tired, so she was going to bed early."
+      },
+      "options": [
+        { "text": "was", "isCorrect": true },
+        { "text": "is", "isCorrect": false },
+        { "text": "had been", "isCorrect": false }
+      ],
+      "correctAnswer": "She said she was really tired, so she was going to bed early.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_331.mp3",
+      "hint": "When reporting what someone said in the past, the verb tense usually shifts back. 'I am' becomes 'she was'.",
+      "content": {
+        "type": "text",
+        "value": "In [Reported Speech], the verb tense 'backshifts'. The original statement was in the Present Simple ('I am tired'), so it moves back to the Past Simple ('she was tired').\n\n~is~ is incorrect because it doesn't backshift.\n~had been~ would be the backshift from the Past Simple ('I was tired')."
+      }
+    },
+    {
+      "cardId": "egac_332",
+      "category": "Reported Speech: Advanced Verbs",
+      "sentenceParts": {
+        "prefix": "It was getting late, so he ",
+        "suffix": " a taxi."
+      },
+      "options": [
+        { "text": "suggested taking", "isCorrect": true },
+        { "text": "suggested to take", "isCorrect": false },
+        { "text": "said taking", "isCorrect": false }
+      ],
+      "correctAnswer": "It was getting late, so he suggested taking a taxi.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_332.mp3",
+      "hint": "The reporting verb 'suggest' is followed by which verb form?",
+      "content": {
+        "type": "text",
+        "value": "The reporting verb [suggest] is followed by a gerund (-ing form), not an infinitive. This is a key grammatical pattern.\n\n~suggested to take~ is a common error; 'suggest' does not take an infinitive.\n~said taking~ is an incorrect structure."
+      }
+    },
+    {
+      "cardId": "egac_333",
+      "category": "Reported Speech: Advanced Verbs",
+      "sentenceParts": {
+        "prefix": "He was accused of taking the money, but he ",
+        "suffix": " it."
+      },
+      "options": [
+        { "text": "denied doing", "isCorrect": true },
+        { "text": "denied to do", "isCorrect": false },
+        { "text": "refused doing", "isCorrect": false }
+      ],
+      "correctAnswer": "He was accused of taking the money, but he denied doing it.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_333.mp3",
+      "hint": "Which reporting verb means 'to say that something is not true' and is followed by a gerund?",
+      "content": {
+        "type": "text",
+        "value": "The verb [deny] is followed by a gerund (-ing form) to report that you didn't do something.\n\n~denied to do~ is grammatically incorrect.\n~refused doing~ is incorrect; 'refuse' means to be unwilling to do something and is followed by an infinitive ('refused to do')."
+      }
+    },
+    {
+      "cardId": "egac_334",
+      "category": "Participle Clauses (Present)",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " hungry, I decided to make a sandwich."
+      },
+      "options": [
+        { "text": "Feeling", "isCorrect": true },
+        { "text": "Felt", "isCorrect": false },
+        { "text": "To feel", "isCorrect": false }
+      ],
+      "correctAnswer": "Feeling hungry, I decided to make a sandwich.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_334.mp3",
+      "hint": "Use a present participle (-ing) at the beginning of a sentence to give the reason for the main action.",
+      "content": {
+        "type": "text",
+        "value": "A [Present Participle Clause] ('Feeling hungry') can replace a longer clause (e.g., 'Because I felt hungry') to make the sentence more concise and sophisticated.\n\n~Felt~ and ~To feel~ are not the correct forms to start this type of clause."
+      }
+    },
+    {
+      "cardId": "egac_335",
+      "category": "Participle Clauses (Past)",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " by the loud music, the baby started to cry."
+      },
+      "options": [
+        { "text": "Woken up", "isCorrect": true },
+        { "text": "Waking up", "isCorrect": false },
+        { "text": "Having woken", "isCorrect": false }
+      ],
+      "correctAnswer": "Woken up by the loud music, the baby started to cry.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_335.mp3",
+      "hint": "Use a past participle (-ed/en) to start a passive clause that gives a reason.",
+      "content": {
+        "type": "text",
+        "value": "A [Past Participle Clause] ('Woken up') is used to express a passive idea concisely. It means 'The baby was woken up by the music, and so it started to cry'.\n\n~Waking up~ would be an active clause, implying the baby woke itself up.\n~Having woken~ is a perfect participle, suggesting the waking happened before the crying, which is less direct."
+      }
+    },
+    {
+      "cardId": "egac_336",
+      "category": "Participle Clauses (Perfect)",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " all the emails, she finally took a break."
+      },
+      "options": [
+        { "text": "Having answered", "isCorrect": true },
+        { "text": "Answering", "isCorrect": false },
+        { "text": "Answered", "isCorrect": false }
+      ],
+      "correctAnswer": "Having answered all the emails, she finally took a break.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_336.mp3",
+      "hint": "To show that one action was completed before another one started, use 'Having + past participle'.",
+      "content": {
+        "type": "text",
+        "value": "A [Perfect Participle Clause] ('Having answered') emphasizes that the first action was fully completed before the second action began. It's an alternative to 'After she had answered...'.\n\n~Answering~ would imply the actions happened at the same time.\n~Answered~ would be a passive clause."
+      }
+    },
+    {
+      "cardId": "egac_337",
+      "category": "Advanced Phrasal Verbs: 'end up'",
+      "sentenceParts": {
+        "prefix": "We planned to go to the beach, but it rained so we ",
+        "suffix": " watching movies at home instead."
+      },
+      "options": [
+        { "text": "ended up", "isCorrect": true },
+        { "text": "finished up", "isCorrect": false },
+        { "text": "gave up", "isCorrect": false }
+      ],
+      "correctAnswer": "We planned to go to the beach, but it rained so we ended up watching movies at home instead.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_337.mp3",
+      "hint": "Which phrasal verb means 'to find yourself in an unplanned or unexpected situation'?",
+      "content": {
+        "type": "text",
+        "value": "[End up] is used to describe a final result or location that was not originally intended.\n\n~Finished up~ means to complete a task.\n~Gave up~ means to quit or stop trying."
+      }
+    },
+    {
+      "cardId": "egac_338",
+      "category": "Advanced Phrasal Verbs: 'figure out'",
+      "sentenceParts": {
+        "prefix": "It took me a while, but I finally ",
+        "suffix": " how to assemble the furniture."
+      },
+      "options": [
+        { "text": "figured out", "isCorrect": true },
+        { "text": "thought out", "isCorrect": false },
+        { "text": "looked into", "isCorrect": false }
+      ],
+      "correctAnswer": "It took me a while, but I finally figured out how to assemble the furniture.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_338.mp3",
+      "hint": "Which phrasal verb means 'to understand' or 'to find the solution to a problem'?",
+      "content": {
+        "type": "text",
+        "value": "[Figure out] is a very common phrasal verb meaning to solve a problem or understand something through thinking.\n\n~Thought out~ means to plan something carefully.\n~Looked into~ means to investigate."
+      }
+    },
+    {
+      "cardId": "egac_339",
+      "category": "Advanced Phrasal Verbs: 'work out'",
+      "sentenceParts": {
+        "prefix": "I was worried they would argue, but everything ",
+        "suffix": " fine in the end."
+      },
+      "options": [
+        { "text": "worked out", "isCorrect": true },
+        { "text": "made out", "isCorrect": false },
+        { "text": "turned up", "isCorrect": false }
+      ],
+      "correctAnswer": "I was worried they would argue, but everything worked out fine in the end.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_339.mp3",
+      "hint": "Which phrasal verb means 'to have a positive result' or 'to resolve successfully'?",
+      "content": {
+        "type": "text",
+        "value": "In this context, [work out] means to develop in a successful way.\n\n~Made out~ means to kiss passionately or to write a check.\n~Turned up~ means to appear unexpectedly."
+      }
+    },
+    {
+      "cardId": "egac_340",
+      "category": "Advanced Phrasal Verbs: 'turn out'",
+      "sentenceParts": {
+        "prefix": "I thought the party would be boring, but it ",
+        "suffix": " to be really fun."
+      },
+      "options": [
+        { "text": "turned out", "isCorrect": true },
+        { "text": "came out", "isCorrect": false },
+        { "text": "ended up", "isCorrect": false }
+      ],
+      "correctAnswer": "I thought the party would be boring, but it turned out to be really fun.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_340.mp3",
+      "hint": "Which phrasal verb is used to describe an unexpected result?",
+      "content": {
+        "type": "text",
+        "value": "[Turn out] is used to describe how a situation develops or what the final, often surprising, result is.\n\n~Came out~ is used for products being released or secrets being revealed.\n~Ended up~ is similar, but 'turn out' is better for describing a surprising quality of the result."
+      }
+    },
+    {
+      "cardId": "egac_341",
+      "category": "Advanced Phrasal Verbs: 'cut back on'",
+      "sentenceParts": {
+        "prefix": "The doctor told me I need to ",
+        "suffix": " salty foods."
+      },
+      "options": [
+        { "text": "cut back on", "isCorrect": true },
+        { "text": "cut off from", "isCorrect": false },
+        { "text": "cut out of", "isCorrect": false }
+      ],
+      "correctAnswer": "The doctor told me I need to cut back on salty foods.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_341.mp3",
+      "hint": "Which phrasal verb means 'to reduce the consumption of something'?",
+      "content": {
+        "type": "text",
+        "value": "[Cut back on] is a three-part phrasal verb meaning to reduce the amount of something you eat, drink, or use.\n\n~Cut off from~ means to isolate.\n~Cut out of~ means to exclude."
+      }
+    },
+    {
+      "cardId": "egac_342",
+      "category": "Advanced Phrasal Verbs: 'give up'",
+      "sentenceParts": {
+        "prefix": "Learning guitar is hard, but don't ",
+        "suffix": "!"
+      },
+      "options": [
+        { "text": "give up", "isCorrect": true },
+        { "text": "give in", "isCorrect": false },
+        { "text": "give out", "isCorrect": false }
+      ],
+      "correctAnswer": "Learning guitar is hard, but don't give up!",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_342.mp3",
+      "hint": "Which phrasal verb means 'to quit' or 'to stop trying'?",
+      "content": {
+        "type": "text",
+        "value": "[Give up] is the correct phrasal verb meaning to stop trying to do something.\n\n~Give in~ means to surrender, especially in a fight or argument.\n~Give out~ means to distribute things."
+      }
+    },
+    {
+      "cardId": "egac_343",
+      "category": "Advanced Phrasal Verbs: 'come across'",
+      "sentenceParts": {
+        "prefix": "I ",
+        "suffix": " this beautiful old book in a second-hand shop."
+      },
+      "options": [
+        { "text": "came across", "isCorrect": true },
+        { "text": "ran over", "isCorrect": false },
+        { "text": "found out", "isCorrect": false }
+      ],
+      "correctAnswer": "I came across this beautiful old book in a second-hand shop.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_343.mp3",
+      "hint": "Which phrasal verb means 'to find something by chance'?",
+      "content": {
+        "type": "text",
+        "value": "[Come across] means to find something or meet someone unexpectedly.\n\n~Ran over~ means to hit something with a vehicle.\n~Found out~ means to discover a piece of information or a secret."
+      }
+    },
+    {
+      "cardId": "egac_344",
+      "category": "Advanced Phrasal Verbs: 'deal with'",
+      "sentenceParts": {
+        "prefix": "That's a difficult problem. We'll have to ",
+        "suffix": " it tomorrow."
+      },
+      "options": [
+        { "text": "deal with", "isCorrect": true },
+        { "text": "make with", "isCorrect": false },
+        { "text": "handle on", "isCorrect": false }
+      ],
+      "correctAnswer": "That's a difficult problem. We'll have to deal with it tomorrow.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_344.mp3",
+      "hint": "Which phrasal verb means 'to manage' or 'to handle a situation'?",
+      "content": {
+        "type": "text",
+        "value": "[Deal with] is the correct phrasal verb for managing a problem, task, or person.\n\n~Make with~ is not a phrasal verb.\n~Handle on~ is incorrect; 'handle' is a verb that doesn't need a preposition here ('handle it')."
+      }
+    },
+    {
+      "cardId": "egac_345",
+      "category": "Fluency: Question Tags",
+      "sentenceParts": {
+        "prefix": "You're coming to the party tonight, ",
+        "suffix": "?"
+      },
+      "options": [
+        { "text": "aren't you", "isCorrect": true },
+        { "text": "are you", "isCorrect": false },
+        { "text": "don't you", "isCorrect": false }
+      ],
+      "correctAnswer": "You're coming to the party tonight, aren't you?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_345.mp3",
+      "hint": "For a positive statement with 'are', the question tag should be negative.",
+      "content": {
+        "type": "text",
+        "value": "A [Question Tag] uses the opposite form of the main clause. The statement is positive ('You are...'), so the tag must be negative ('...aren't you?').\n\n~are you~ would be used after a negative statement ('You aren't coming, are you?').\n~don't you~ is used for statements in the simple present ('You like parties, don't you?')."
+      }
+    },
+    {
+      "cardId": "egac_346",
+      "category": "Fluency: Question Tags",
+      "sentenceParts": {
+        "prefix": "He hasn't called yet, ",
+        "suffix": "?"
+      },
+      "options": [
+        { "text": "has he", "isCorrect": true },
+        { "text": "hasn't he", "isCorrect": false },
+        { "text": "does he", "isCorrect": false }
+      ],
+      "correctAnswer": "He hasn't called yet, has he?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_346.mp3",
+      "hint": "A negative statement needs a positive question tag.",
+      "content": {
+        "type": "text",
+        "value": "The main statement is negative ('He has not...'), so the question tag must be positive ('...has he?'), using the same auxiliary verb.\n\n~hasn't he~ would follow a positive statement ('He has called, hasn't he?').\n~does he~ is the incorrect auxiliary verb for the present perfect tense."
+      }
+    },
+    {
+      "cardId": "egac_347",
+      "category": "Fluency: Ellipsis (omission)",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " ready to order?"
+      },
+      "options": [
+        { "text": "You", "isCorrect": true },
+        { "text": "Are you", "isCorrect": false },
+        { "text": "Have you", "isCorrect": false }
+      ],
+      "correctAnswer": "You ready to order?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_347.mp3",
+      "hint": "In informal questions, the auxiliary verb at the start is often omitted.",
+      "content": {
+        "type": "text",
+        "value": "[Ellipsis], or omitting words, is common in informal speech. The full question is 'Are you ready?', but dropping the auxiliary 'Are' is very natural.\n\n~Are you~ is the grammatically complete and correct form, but the exercise tests the informal, elliptical version.\n~Have you~ uses the wrong auxiliary verb."
+      }
+    },
+    {
+      "cardId": "egac_348",
+      "category": "Fluency: Ellipsis (omission)",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " seen my phone anywhere?"
+      },
+      "options": [
+        { "text": "You", "isCorrect": true },
+        { "text": "Have you", "isCorrect": false },
+        { "text": "Did you", "isCorrect": false }
+      ],
+      "correctAnswer": "You seen my phone anywhere?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_348.mp3",
+      "hint": "How can you ask 'Have you seen...?' in a very casual way?",
+      "content": {
+        "type": "text",
+        "value": "This is another example of ellipsis. The full question is 'Have you seen...?'. In casual, fast speech, native speakers often drop the auxiliary 'Have'.\n\n~Have you~ is the full, correct form.\n~Did you~ would be followed by the base verb 'see', not the participle 'seen'."
+      }
+    },
+    {
+      "cardId": "egac_349",
+      "category": "Vocabulary: 'Job' vs 'Work' vs 'Career'",
+      "sentenceParts": {
+        "prefix": "I have so much ",
+        "suffix": " to do, I'll have to stay late."
+      },
+      "options": [
+        { "text": "work", "isCorrect": true },
+        { "text": "job", "isCorrect": false },
+        { "text": "career", "isCorrect": false }
+      ],
+      "correctAnswer": "I have so much work to do, I'll have to stay late.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_349.mp3",
+      "hint": "Which word refers to the general activity of tasks and responsibilities and is uncountable?",
+      "content": {
+        "type": "text",
+        "value": "[Work] is an uncountable noun that refers to the general tasks you have to do.\n\n~Job~ is a countable noun for a specific position of employment ('I have a job'). You cannot have 'much job'.\n~Career~ refers to your entire professional life over many years."
+      }
+    },
+    {
+      "cardId": "egac_350",
+      "category": "Idioms: 'see eye to eye'",
+      "sentenceParts": {
+        "prefix": "We have different opinions on this project. We just don't ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "see eye to eye", "isCorrect": true },
+        { "text": "look eye in eye", "isCorrect": false },
+        { "text": "get on the same page", "isCorrect": false }
+      ],
+      "correctAnswer": "We have different opinions on this project. We just don't see eye to eye.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_350.mp3",
+      "hint": "Which idiom means 'to agree with someone'?",
+      "content": {
+        "type": "text",
+        "value": "[See eye to eye] is a fixed idiom that means to be in full agreement with someone.\n\n~look eye in eye~ is not a correct idiom.\n~Get on the same page~ has a similar meaning (to have the same understanding), but 'see eye to eye' fits the context of differing opinions better."
+      }
+    },
+    {
+      "cardId": "egac_351",
+      "category": "Idioms: 'on the same page'",
+      "sentenceParts": {
+        "prefix": "Before we start, let's have a quick meeting to make sure we're all ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "on the same page", "isCorrect": true },
+        { "text": "in the same book", "isCorrect": false },
+        { "text": "at the same point", "isCorrect": false }
+      ],
+      "correctAnswer": "Before we start, let's have a quick meeting to make sure we're all on the same page.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_351.mp3",
+      "hint": "Which idiom means that everyone has the same understanding or information about a situation?",
+      "content": {
+        "type": "text",
+        "value": "[On the same page] is a very common business and social idiom for having a shared understanding among a group of people.\n\n~In the same book~ and ~at the same point~ are not correct idioms."
+      }
+    },
+    {
+      "cardId": "egac_352",
+      "category": "Idioms: 'go the extra mile'",
+      "sentenceParts": {
+        "prefix": "She's a fantastic employee because she always ",
+        "suffix": " to make sure customers are happy."
+      },
+      "options": [
+        { "text": "goes the extra mile", "isCorrect": true },
+        { "text": "walks the second mile", "isCorrect": false },
+        { "text": "does the extra step", "isCorrect": false }
+      ],
+      "correctAnswer": "She's a fantastic employee because she always goes the extra mile to make sure customers are happy.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_352.mp3",
+      "hint": "Which idiom means 'to make a special effort to do more than is expected'?",
+      "content": {
+        "type": "text",
+        "value": "[Go the extra mile] is a fixed idiom meaning to make more effort than is expected of you.\n\n~Walks the second mile~ and ~does the extra step~ are not the correct forms of this idiom."
+      }
+    },
+    {
+      "cardId": "egac_353",
+      "category": "Idioms: 'a blessing in disguise'",
+      "sentenceParts": {
+        "prefix": "Missing my flight was ",
+        "suffix": ", because I got to spend an extra day in the city."
+      },
+      "options": [
+        { "text": "a blessing in disguise", "isCorrect": true },
+        { "text": "a good luck in bad", "isCorrect": false },
+        { "text": "a happy accident", "isCorrect": false }
+      ],
+      "correctAnswer": "Missing my flight was a blessing in disguise, because I got to spend an extra day in the city.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_353.mp3",
+      "hint": "Which idiom describes something that seems bad at first but results in something good?",
+      "content": {
+        "type": "text",
+        "value": "[A blessing in disguise] is the correct idiom for something that has a good outcome despite initially seeming to be a misfortune.\n\n~A good luck in bad~ is not an English idiom.\n~A happy accident~ is similar, but it refers to a pleasant surprise that wasn't planned, not necessarily something that started out seeming negative."
+      }
+    },
+    {
+      "cardId": "egac_354",
+      "category": "Idioms: 'The ball is in your court'",
+      "sentenceParts": {
+        "prefix": "I've given you all the information you need. Now, ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "the ball is in your court", "isCorrect": true },
+        { "text": "the game is on your side", "isCorrect": false },
+        { "text": "you have the ball", "isCorrect": false }
+      ],
+      "correctAnswer": "I've given you all the information you need. Now, the ball is in your court.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_354.mp3",
+      "hint": "Which idiom, borrowed from tennis, means 'it is now your responsibility to take the next action'?",
+      "content": {
+        "type": "text",
+        "value": "[The ball is in your court] is a common idiom used to pass responsibility for the next step to someone else.\n\n~The game is on your side~ is not a standard idiom.\n~You have the ball~ is a literal statement, not the correct idiomatic phrase."
+      }
+    },
+    {
+      "cardId": "egac_355",
+      "category": "Strong Collocations: 'deeply concerned'",
+      "sentenceParts": {
+        "prefix": "Environmental groups are ",
+        "suffix": " about the new policy."
+      },
+      "options": [
+        { "text": "deeply concerned", "isCorrect": true },
+        { "text": "very concerned", "isCorrect": false },
+        { "text": "truly concerned", "isCorrect": false }
+      ],
+      "correctAnswer": "Environmental groups are deeply concerned about the new policy.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_355.mp3",
+      "hint": "Which adverb forms a strong, natural-sounding pair with 'concerned'?",
+      "content": {
+        "type": "text",
+        "value": "[Deeply concerned] is a very strong and standard collocation used to express serious worry.\n\n~Very concerned~ is grammatically correct and common, but 'deeply' carries more weight and is a powerful collocation.\n~Truly concerned~ is also possible, but 'deeply' is the most idiomatic partner for 'concerned'."
+      }
+    },
+    {
+      "cardId": "egac_356",
+      "category": "Strong Collocations: 'painfully shy'",
+      "sentenceParts": {
+        "prefix": "It was hard for her to make friends because she was ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "painfully shy", "isCorrect": true },
+        { "text": "strongly shy", "isCorrect": false },
+        { "text": "heavily shy", "isCorrect": false }
+      ],
+      "correctAnswer": "It was hard for her to make friends because she was painfully shy.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_356.mp3",
+      "hint": "Which adverb is used to emphasize that someone is extremely shy, to a degree that causes them discomfort?",
+      "content": {
+        "type": "text",
+        "value": "[Painfully shy] is a fixed collocation that emphasizes an extreme level of shyness.\n\n~Strongly shy~ and ~heavily shy~ are not natural collocations in English."
+      }
+    },
+    {
+      "cardId": "egac_357",
+      "category": "Strong Collocations: 'perfectly normal'",
+      "sentenceParts": {
+        "prefix": "Don't worry about being nervous; it's ",
+        "suffix": " to feel that way before a presentation."
+      },
+      "options": [
+        { "text": "perfectly normal", "isCorrect": true },
+        { "text": "greatly normal", "isCorrect": false },
+        { "text": "fully normal", "isCorrect": false }
+      ],
+      "correctAnswer": "Don't worry about being nervous; it's perfectly normal to feel that way before a presentation.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_357.mp3",
+      "hint": "How do you emphasize that something is completely normal and not strange at all?",
+      "content": {
+        "type": "text",
+        "value": "The collocation [perfectly normal] is a common way to reassure someone that their feelings or actions are completely acceptable and standard.\n\n~Greatly normal~ and ~fully normal~ are not idiomatic pairings."
+      }
+    },
+    {
+      "cardId": "egac_358",
+      "category": "Strong Collocations: 'highly effective'",
+      "sentenceParts": {
+        "prefix": "The new advertising campaign was ",
+        "suffix": " at reaching its target audience."
+      },
+      "options": [
+        { "text": "highly effective", "isCorrect": true },
+        { "text": "powerfully effective", "isCorrect": false },
+        { "text": "greatly effective", "isCorrect": false }
+      ],
+      "correctAnswer": "The new advertising campaign was highly effective at reaching its target audience.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_358.mp3",
+      "hint": "Which adverb is commonly used to mean 'very effective'?",
+      "content": {
+        "type": "text",
+        "value": "[Highly effective] is a strong and standard collocation used in business and professional contexts to describe something that works very well.\n\n~Powerfully effective~ and ~greatly effective~ are understandable but are not the conventional collocation."
+      }
+    },
+    {
+      "cardId": "egac_359",
+      "category": "Reported Speech: 'will' -> 'would'",
+      "sentenceParts": {
+        "prefix": "He promised he ",
+        "suffix": " me back as soon as he could."
+      },
+      "options": [
+        { "text": "would call", "isCorrect": true },
+        { "text": "will call", "isCorrect": false },
+        { "text": "had called", "isCorrect": false }
+      ],
+      "correctAnswer": "He promised he would call me back as soon as he could.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_359.mp3",
+      "hint": "When reporting a future promise made in the past, 'will' changes to what?",
+      "content": {
+        "type": "text",
+        "value": "In reported speech, future 'will' backshifts to the conditional [would]. The original promise was: 'I will call you'.\n\n~will call~ is incorrect because the tense needs to shift back.\n~had called~ is the past perfect, used when reporting a past simple statement."
+      }
+    },
+    {
+      "cardId": "egac_360",
+      "category": "Reported Speech: Advanced Verbs",
+      "sentenceParts": {
+        "prefix": "I was looking for a ride to the airport, and my friend ",
+        "suffix": " me a lift."
+      },
+      "options": [
+        { "text": "offered to give", "isCorrect": true },
+        { "text": "offered me giving", "isCorrect": false },
+        { "text": "said to give", "isCorrect": false }
+      ],
+      "correctAnswer": "I was looking for a ride to the airport, and my friend offered to give me a lift.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_360.mp3",
+      "hint": "The reporting verb 'offer' is followed by which verb form?",
+      "content": {
+        "type": "text",
+        "value": "The verb [offer] is followed by a to-infinitive ('to do something') when reporting a proposal to help.\n\n~offered me giving~ is incorrect; 'offer' does not take a gerund in this structure.\n~said to give~ is an incorrect reporting structure for an offer."
+      }
+    },
+    {
+      "cardId": "egac_361",
+      "category": "Reported Speech: Advanced Verbs",
+      "sentenceParts": {
+        "prefix": "The guide ",
+        "suffix": " to touch any of the artifacts in the museum."
+      },
+      "options": [
+        { "text": "warned us not", "isCorrect": true },
+        { "text": "warned us to not", "isCorrect": false },
+        { "text": "said us not", "isCorrect": false }
+      ],
+      "correctAnswer": "The guide warned us not to touch any of the artifacts in the museum.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_361.mp3",
+      "hint": "When reporting a negative warning, where does the word 'not' go?",
+      "content": {
+        "type": "text",
+        "value": "The correct structure for a negative reported command or warning is [verb + object + not + to-infinitive].\n\n~warned us to not~ is a common error (split infinitive). While sometimes used in casual speech, the standard and more correct form is 'not to'.\n~said us not~ is incorrect; 'say' is not used this way and the structure is wrong."
+      }
+    },
+    {
+      "cardId": "egac_362",
+      "category": "Advanced Phrasal Verbs: 'work out' (exercise)",
+      "sentenceParts": {
+        "prefix": "I feel much better now that I've started to ",
+        "suffix": " regularly at the gym."
+      },
+      "options": [
+        { "text": "work out", "isCorrect": true },
+        { "text": "do out", "isCorrect": false },
+        { "text": "train up", "isCorrect": false }
+      ],
+      "correctAnswer": "I feel much better now that I've started to work out regularly at the gym.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_362.mp3",
+      "hint": "Which phrasal verb is a common, informal way to say 'to do physical exercise'?",
+      "content": {
+        "type": "text",
+        "value": "[Work out] is a very common phrasal verb meaning to exercise, especially at a gym.\n\n~do out~ is not a phrasal verb.\n~train up~ means to teach someone the skills for a job."
+      }
+    },
+    {
+      "cardId": "egac_363",
+      "category": "Fluency: Question Tags",
+      "sentenceParts": {
+        "prefix": "She can play the piano beautifully, ",
+        "suffix": "?"
+      },
+      "options": [
+        { "text": "can't she", "isCorrect": true },
+        { "text": "can she", "isCorrect": false },
+        { "text": "doesn't she", "isCorrect": false }
+      ],
+      "correctAnswer": "She can play the piano beautifully, can't she?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_363.mp3",
+      "hint": "If the main statement uses the modal 'can', the tag must use it too.",
+      "content": {
+        "type": "text",
+        "value": "The statement is positive and uses the modal verb 'can', so the question tag must be negative with the same modal: [can't she?].\n\n~can she~ would be for a negative statement ('She can't play, can she?').\n~doesn't she~ is the incorrect auxiliary verb."
+      }
+    },
+    {
+      "cardId": "egac_364",
+      "category": "Fluency: Ellipsis (omission)",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " like it's going to storm soon."
+      },
+      "options": [
+        { "text": "Looks", "isCorrect": true },
+        { "text": "It looks", "isCorrect": false },
+        { "text": "Is looking", "isCorrect": false }
+      ],
+      "correctAnswer": "Looks like it's going to storm soon.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_364.mp3",
+      "hint": "In casual speech, what word is often dropped from the beginning of 'It looks like...'?",
+      "content": {
+        "type": "text",
+        "value": "This is a form of ellipsis common in informal speech. The full sentence is 'It looks like...'. Dropping the subject 'It' is very natural and conversational.\n\n~It looks~ is the full, grammatically correct form, but the exercise tests the more casual elliptical form.\n~Is looking~ is the wrong tense."
+      }
+    },
+    {
+      "cardId": "egac_365",
+      "category": "Vocabulary: 'Job' vs 'Work' vs 'Career'",
+      "sentenceParts": {
+        "prefix": "She changed her ",
+        "suffix": " from law to medicine after years of study."
+      },
+      "options": [
+        { "text": "career", "isCorrect": true },
+        { "text": "work", "isCorrect": false },
+        { "text": "job", "isCorrect": false }
+      ],
+      "correctAnswer": "She changed her career from law to medicine after years of study.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_365.mp3",
+      "hint": "Which word refers to your long-term professional journey or path?",
+      "content": {
+        "type": "text",
+        "value": "[Career] is the correct word for a person's entire professional path through life.\n\n~Work~ refers to the tasks you do and is uncountable.\n~Job~ refers to a single position of employment."
+      }
+    },
+    {
+      "cardId": "egac_366",
+      "category": "Reported Speech: 'Past Simple' -> 'Past Perfect'",
+      "sentenceParts": {
+        "prefix": "He told me that he ",
+        "suffix": " the movie the day before."
+      },
+      "options": [
+        { "text": "had seen", "isCorrect": true },
+        { "text": "saw", "isCorrect": false },
+        { "text": "has seen", "isCorrect": false }
+      ],
+      "correctAnswer": "He told me that he had seen the movie the day before.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_366.mp3",
+      "hint": "When reporting something said in the past simple ('I saw...'), you should backshift to which tense?",
+      "content": {
+        "type": "text",
+        "value": "In reported speech, the Past Simple ('I saw...') typically backshifts to the Past Perfect ('he had seen...'). This makes the sequence of events clear.\n\n~saw~ is also sometimes used in informal speech if the context is clear, but the grammatically standard backshift is to Past Perfect.\n~has seen~ is the Present Perfect and is incorrect."
+      }
+    },
+    {
+      "cardId": "egac_367",
+      "category": "Participle Clauses (Past)",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " in Italy, this pasta is of the highest quality."
+      },
+      "options": [
+        { "text": "Made", "isCorrect": true },
+        { "text": "Making", "isCorrect": false },
+        { "text": "Having made", "isCorrect": false }
+      ],
+      "correctAnswer": "Made in Italy, this pasta is of the highest quality.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_367.mp3",
+      "hint": "Use a past participle to describe a characteristic of a noun in a passive way.",
+      "content": {
+        "type": "text",
+        "value": "The past participle clause [Made in Italy] functions as an adjective modifying 'this pasta'. It's a concise way of saying 'Because it is made in Italy...'.\n\n~Making~ would be an active clause ('The pasta is making something').\n~Having made~ is a perfect participle that doesn't fit the meaning."
+      }
+    },
+    {
+      "cardId": "egac_368",
+      "category": "Advanced Phrasal Verbs: 'figure out'",
+      "sentenceParts": {
+        "prefix": "We need to ",
+        "suffix": " a way to solve this problem before the deadline."
+      },
+      "options": [
+        { "text": "figure out", "isCorrect": true },
+        { "text": "come up with", "isCorrect": false },
+        { "text": "work out", "isCorrect": false }
+      ],
+      "correctAnswer": "We need to figure out a way to solve this problem before the deadline.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_368.mp3",
+      "hint": "Which phrasal verb means to find a solution or understand something by thinking?",
+      "content": {
+        "type": "text",
+        "value": "[Figure out] is the best choice here, as it implies both understanding the problem and finding a solution.\n\n~Come up with~ is very similar and also correct ('come up with a way'), focusing more on inventing the idea.\n~Work out~ means to resolve successfully, which is the desired result, but 'figure out' better describes the mental process."
+      }
+    },
+    {
+      "cardId": "egac_369",
+      "category": "Fluency: Question Tags",
+      "sentenceParts": {
+        "prefix": "That was a difficult test, ",
+        "suffix": "?"
+      },
+      "options": [
+        { "text": "wasn't it", "isCorrect": true },
+        { "text": "was it", "isCorrect": false },
+        { "text": "didn't it", "isCorrect": false }
+      ],
+      "correctAnswer": "That was a difficult test, wasn't it?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_369.mp3",
+      "hint": "A positive statement with the verb 'was' needs a negative tag with the same verb.",
+      "content": {
+        "type": "text",
+        "value": "The statement is positive ('That was...'), so the question tag must be negative, using the same verb: [wasn't it?].\n\n~was it~ would follow a negative statement ('That wasn't a difficult test, was it?').\n~didn't it~ is the incorrect auxiliary verb."
+      }
+    },
+    {
+      "cardId": "egac_370",
+      "category": "Vocabulary: 'Job' vs 'Work' vs 'Career'",
+      "sentenceParts": {
+        "prefix": "He's looking for a new ",
+        "suffix": " because he's unhappy with his current position."
+      },
+      "options": [
+        { "text": "job", "isCorrect": true },
+        { "text": "work", "isCorrect": false },
+        { "text": "career", "isCorrect": false }
+      ],
+      "correctAnswer": "He's looking for a new job because he's unhappy with his current position.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_370.mp3",
+      "hint": "Which word refers to a specific, countable position of employment?",
+      "content": {
+        "type": "text",
+        "value": "[Job] is a countable noun referring to a specific role or position of employment that you are paid for.\n\n~Work~ is uncountable and refers to the general activity.\n~Career~ refers to the long-term professional journey, not just one position."
       }
     }
+ 
   ]
 }
