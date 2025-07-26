@@ -92,21 +92,31 @@ class AudioChoiceScreen {
         optionButtons.forEach(button => {
             button.disabled = true;
             const option = button.dataset.option;
-            
-            if (option === correctAnswer) {
-                button.className += ' !bg-emerald-500 !border-emerald-600 !text-white';
-                // Add the replay button
-                const replayIcon = document.createElement('i');
-                replayIcon.className = 'fas fa-volume-up ml-4 text-white text-xl cursor-pointer hover:scale-110 transition-transform';
-                replayIcon.title = "Replay audio";
-                replayIcon.addEventListener('click', (e) => {
-                    e.stopPropagation(); // Prevent the main button click
-                    this.playCorrectAudio();
-                });
-                button.appendChild(replayIcon);
-            } else if (!isCorrect && option === selectedOption) {
-                button.className += ' !bg-red-500 !border-red-600 !text-white';
-            }
+
+
+       if (option === correctAnswer) {
+                // Use a high-contrast light green background with dark text
+                button.className += ' !bg-green-200 !border-green-400 !text-green-900 dark:!bg-green-800 dark:!border-green-600 dark:!text-green-100';
+                
+                // Find the highlighted part and change its color to a deep, dark blue
+                const highlightElement = button.querySelector('strong');
+                if (highlightElement) {
+                    highlightElement.classList.remove('text-yellow-600', 'dark:text-yellow-400');
+                    highlightElement.className += ' !text-indigo-700 dark:!text-indigo-300'; // Using a very dark and intense indigo
+                }
+
+                // Add the replay button
+                const replayIcon = document.createElement('i');
+                replayIcon.className = 'fas fa-volume-up ml-4 text-green-700 dark:text-green-200 text-xl cursor-pointer hover:scale-110 transition-transform';
+                replayIcon.title = "Replay audio";
+                replayIcon.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    this.playCorrectAudio();
+                });
+                button.appendChild(replayIcon);
+            } else if (!isCorrect && option === selectedOption) {
+                button.className += ' !bg-red-500 !border-red-600 !text-white';
+            }
         });
 
         const nextBtn = document.getElementById('next-btn');
@@ -128,10 +138,16 @@ class AudioChoiceScreen {
         hintEl.textContent = this.currentCard.hint;
         
         // Render content with basic formatting
-        const contentText = this.currentCard.content?.value || '';
-        // Replace bracketed words with emphasized spans
-        contentEl.innerHTML = contentText.replace(/\[([^\]]+)\]/g, '<strong class="font-semibold text-indigo-400">$1</strong>');
-
+        
+           const contentText = this.currentCard.content?.value || '';
+        
+        // First, handle the blue highlight for correct terms [word]
+        let formattedText = contentText.replace(/\[([^\]]+)\]/g, '<strong class="font-semibold text-indigo-400">$1</strong>');
+        
+        // Then, handle the new yellow highlight for incorrect terms ~word~
+        formattedText = formattedText.replace(/~([^~]+)~/g, '<strong class="font-semibold text-yellow-200 dark:text-yellow-400">$1</strong>');
+        
+        contentEl.innerHTML = formattedText;
         feedbackContainer.classList.remove('hidden');
         console.log("DEBUG: [AudioChoiceScreen] Hint and content revealed.");
     }

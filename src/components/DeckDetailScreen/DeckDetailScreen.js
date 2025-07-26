@@ -104,34 +104,39 @@ class DeckDetailScreen {
      * @returns {string} A displayable text for the card.
      */
     _getCardDisplayText(card) {
-        if (!card) return 'Invalid Card';
+        if (!card) return 'Invalid Card';
 
-        // 1. Standard quiz card with a 'question' property
-        if (card.question) return card.question;
-
-        // 2. Flippable cards (text, visual, or conversation)
-        if (card.sideA) {
-            // 2a. Simple text flippable card
-            if (typeof card.sideA === 'string') return card.sideA;
-
-            if (typeof card.sideA === 'object') {
-                // 2b. Conversation card: return the first line of the conversation
-                if (card.sideA.conversation && card.sideA.conversation.length > 0) {
-                    return card.sideA.conversation[0].text;
-                }
-                // 2c. Standard text/visual card with a 'text' property
-                if (card.sideA.text) return card.sideA.text;
-            }
+        // Handle AudioChoice cards first as their structure is unique.
+        if (card.sentenceParts && card.sentenceParts.prefix) {
+            return `${card.sentenceParts.prefix}___${card.sentenceParts.suffix}`;
         }
 
-        // 3. Fallback for audio-only cards (no text on Side A)
-        // Per user request, use the first line of the answer on Side B as a fallback.
-        if (card.sideB && card.sideB.length > 0) {
-            return card.sideB[0];
-        }
+        // 1. Standard quiz card with a 'question' property
+        if (card.question) return card.question;
 
-        return 'Card content not available'; // Final safety net
-    }
+        // 2. Flippable cards (text, visual, or conversation)
+        if (card.sideA) {
+            // 2a. Simple text flippable card
+            if (typeof card.sideA === 'string') return card.sideA;
+
+            if (typeof card.sideA === 'object') {
+                // 2b. Conversation card: return the first line of the conversation
+                if (card.sideA.conversation && card.sideA.conversation.length > 0) {
+                    return card.sideA.conversation[0].text;
+                }
+                // 2c. Standard text/visual card with a 'text' property
+                if (card.sideA.text) return card.sideA.text;
+            }
+        }
+
+        // 3. Fallback for audio-only cards (no text on Side A)
+        if (card.sideB && card.sideB.length > 0) {
+            return card.sideB[0];
+        }
+
+        // Use correctAnswer as a final fallback if available
+        return card.correctAnswer || 'Card content not available'; 
+    }
 
     /**
      * Populates the list of ignored cards.
