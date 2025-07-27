@@ -104,12 +104,10 @@ Your final response MUST be a single Markdown block with exactly two parts.
 
 ### Part 2: Resumen de Cambios (en español) y Próximos Pasos
 - Sigue el JSON con el encabezado exacto: \`## Resumen de Cambios y Próximos Pasos\`
-- **IMPORTANTE: Esta sección completa debe estar en ESPAÑOL.**
+- **IMPORTANTE: Esta sección completa debe estar en ESPAÑOL, pero manteniendo las oraciones originales en ingles, o si el usuario hizo su solicitud en ingles la mantendras como tal en ese idioma.**
 
 #### Resumen de Cambios
-- Para cada tarjeta que modificaste, proporciona un resumen en una lista, explicando qué te pidió el usuario y qué acción tomaste.
-- **Ejemplo:**
-    - **Card ID tpp_001:** El usuario pidió aclarar el término 'ticket'. Acepté la sugerencia y añadí una definición al campo 'note'.
+- Para cada tarjeta que recibiste para modificar en el json, para evaluar, etc, proporciona un resumen en una lista, explicando qué te pidió el usuario (desbes explicitamente copiar y pegar lo que escribio el usuario en su solicitud para cada tarjeta, tal cual lo escribio el usuario, con sus errores de ortografia y todo, es necesario mostrar que pidio el uusuario) y qué acción tomaste, ya sea cambio aceptado, lo que agreaste, o porque se rechazo el cambio, si añadiste algo nuevo etc etc, detalladamente explicar los cambios en cada card.
 
 #### Próximos Pasos
 - Después del resumen de cambios, proporciona los siguientes pasos para el usuario:
