@@ -187,6 +187,11 @@ case 'audioChoiceQuiz':
                 }
                 const currentAudioQuestion = this.state.quizInstance.getCurrentQuestion();
                 if (currentAudioQuestion) {
+
+                     const improvementData = StorageService.loadImprovementData(this.state.currentDeckId);
+                const isMarked = improvementData.hasOwnProperty(currentAudioQuestion.cardId);
+                this.audioChoiceScreen.render(currentAudioQuestion, this.state.quizInstance.currentIndex, this.state.quizInstance.questions.length, this.state.quizInstance.score, isMarked);
+
                     this.audioChoiceScreen.render(currentAudioQuestion, this.state.quizInstance.currentIndex, this.state.quizInstance.questions.length, this.state.quizInstance.score);
                 } else {
                     console.error("DEBUG: [App] render -> Tried to render audio quiz, but no current question found.");
@@ -208,7 +213,9 @@ case 'audioChoiceQuiz':
 
                 const currentQuestion = this.state.quizInstance.getCurrentQuestion();
                 if (currentQuestion) {
-                    this.quizScreenComponent.render(currentQuestion, this.state.quizInstance.currentIndex, this.state.quizInstance.questions.length, this.state.quizInstance.score);
+                 const improvementData = StorageService.loadImprovementData(this.state.currentDeckId);
+                const isMarked = improvementData.hasOwnProperty(currentQuestion.cardId);
+                    this.quizScreenComponent.render(currentQuestion, this.state.quizInstance.currentIndex, this.state.quizInstance.questions.length, this.state.quizInstance.score, isMarked);
                 } else {
                     console.error("DEBUG: [App] render -> Tried to render quiz, but no current question found.");
                     this.handleGoBackToDecks();
@@ -229,7 +236,9 @@ case 'audioChoiceQuiz':
                 const currentCard = this.state.quizInstance.getCurrentCard();
                 const deckName = this.state.allDecks[this.state.currentDeckId].name;
                 if (currentCard) {
-                    this.flippableCardScreen.render(deckName, currentCard, this.state.quizInstance.currentIndex, this.state.quizInstance.currentCards.length);
+                     const improvementData = StorageService.loadImprovementData(this.state.currentDeckId);
+                const isMarked = improvementData.hasOwnProperty(currentCard.cardId);
+                    this.flippableCardScreen.render(deckName, currentCard, this.state.quizInstance.currentIndex, this.state.quizInstance.currentCards.length, isMarked);
                 } else {
                     this.handleQuizEnd(); // Should not happen if logic is correct, but as a safeguard
                 }

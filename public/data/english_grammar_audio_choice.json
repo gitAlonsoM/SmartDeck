@@ -12192,6 +12192,296 @@
         "type": "text",
         "value": "The [Perfect Infinitive] ('to have crashed') is used after verbs like 'seems' to refer to a past action from the point of view of the present. A `memory leak` is a common cause for a server crash.\n\n~To crashed~ is grammatically incorrect.\n~Having crashed~ is a participle, not an infinitive, and doesn't fit the structure 'seems...'."
       }
+    },
+    {
+    "cardId": "egac_421",
+    "category": "Habits: Past vs. Present",
+    "sentenceParts": {
+      "prefix": "He ",
+      "suffix": " drink a lot of soda, but now he only drinks water."
+    },
+    "options": [
+      {
+        "text": "used to",
+        "isCorrect": true
+      },
+      {
+        "text": "is used to",
+        "isCorrect": false
+      },
+      {
+        "text": "usually",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "He used to drink a lot of soda, but now he only drinks water.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_421.mp3",
+    "hint": "Which phrase describes a habit that was true in the past but is not true now?",
+    "content": {
+      "type": "text",
+      "value": "[Used to + infinitive] is for past habits that have stopped. The contrast 'but now...' makes this the correct choice.\n\n~Is used to~ means 'is accustomed to' and requires a gerund.\n~Usually~ describes a present habit."
     }
+  },
+  {
+    "cardId": "egac_422",
+    "category": "Habits: Present vs. Adaptation",
+    "sentenceParts": {
+      "prefix": "Now that he lives in a quiet town, he is ",
+      "suffix": " having a peaceful lifestyle."
+    },
+    "options": [
+      {
+        "text": "used to",
+        "isCorrect": true
+      },
+      {
+        "text": "usually",
+        "isCorrect": false
+      },
+      {
+        "text": "use to",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "Now that he lives in a quiet town, he is used to having a peaceful lifestyle.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_422.mp3",
+    "hint": "Which structure describes being accustomed to something?",
+    "content": {
+      "type": "text",
+      "value": "[Be used to + gerund] ('having') describes the state of being accustomed to something. It indicates adaptation.\n\n~Usually~ would need an infinitive and describes a present action, not a state of familiarity.\n~Use to~ is grammatically incorrect after 'is'."
+    }
+  },
+  {
+    "cardId": "egac_423",
+    "category": "Habits: Present Action",
+    "sentenceParts": {
+      "prefix": "These days, they ",
+      "suffix": " cook their own meals instead of eating out."
+    },
+    "options": [
+      {
+        "text": "tend to",
+        "isCorrect": true
+      },
+      {
+        "text": "used to",
+        "isCorrect": false
+      },
+      {
+        "text": "are used to",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "These days, they tend to cook their own meals instead of eating out.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_423.mp3",
+    "hint": "Which phrase is a synonym for 'usually' and describes a current habit?",
+    "content": {
+      "type": "text",
+      "value": "[Tend to + infinitive] is used to describe a present habit, similar to 'usually'. The phrase 'These days' signals a present routine.\n\n~Used to~ is for past habits.\n~Are used to~ would require a gerund ('cooking')."
+    }
+  },
+  {
+    "cardId": "egac_424",
+    "category": "Structure: Verb Form after 'used to'",
+    "sentenceParts": {
+      "prefix": "I used to ",
+      "suffix": " soccer with my friends every weekend."
+    },
+    "options": [
+      {
+        "text": "play",
+        "isCorrect": true
+      },
+      {
+        "text": "playing",
+        "isCorrect": false
+      },
+      {
+        "text": "played",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "I used to play soccer with my friends every weekend.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_424.mp3",
+    "hint": "The structure 'used to' for past habits is always followed by which form of the verb?",
+    "content": {
+      "type": "text",
+      "value": "[Used to] is always followed by the base form of the verb (the infinitive without 'to').\n\n~playing~ (gerund) is a common error, often confused with the structure 'be used to + -ing'."
+    }
+  },
+  {
+    "cardId": "egac_425",
+    "category": "Structure: Verb Form after 'be used to'",
+    "sentenceParts": {
+      "prefix": "After a year in the UK, I'm finally used to ",
+      "suffix": " on the left."
+    },
+    "options": [
+      {
+        "text": "driving",
+        "isCorrect": true
+      },
+      {
+        "text": "drive",
+        "isCorrect": false
+      },
+      {
+        "text": "drove",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "After a year in the UK, I'm finally used to driving on the left.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_425.mp3",
+    "hint": "The structure 'be used to' (be accustomed to) is followed by which verb form?",
+    "content": {
+      "type": "text",
+      "value": "[Be used to] is followed by a [Gerund] (-ing form) because 'to' is a preposition in this expression, not part of an infinitive.\n\n~Drive~ (base form) is incorrect and a very common mistake."
+    }
+  },
+  {
+    "cardId": "egac_426",
+    "category": "Habits: Negative Past",
+    "sentenceParts": {
+      "prefix": "She ",
+      "suffix": " work from home, but now she does it all the time."
+    },
+    "options": [
+      {
+        "text": "didn't use to",
+        "isCorrect": true
+      },
+      {
+        "text": "didn't used to",
+        "isCorrect": false
+      },
+      {
+        "text": "wasn't used to",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "She didn't use to work from home, but now she does it all the time.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_426.mp3",
+    "hint": "What is the correct negative form for a past habit that has now changed?",
+    "content": {
+      "type": "text",
+      "value": "The correct negative form is [didn't use to + base verb]. The 'd' is dropped from 'used' because 'did' already carries the past tense.\n\n~Didn't used to~ is a common spelling error.\n~Wasn't used to~ means 'wasn't accustomed to', which is a different concept."
+    }
+  },
+  {
+    "cardId": "egac_427",
+    "category": "Habits: Adaptation vs. Past",
+    "sentenceParts": {
+      "prefix": "When I started this job, I wasn't ",
+      "suffix": " waking up so early."
+    },
+    "options": [
+      {
+        "text": "used to",
+        "isCorrect": true
+      },
+      {
+        "text": "use to",
+        "isCorrect": false
+      },
+      {
+        "text": "usually",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "When I started this job, I wasn't used to waking up so early.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_427.mp3",
+    "hint": "Which phrase completes the structure 'be + ... + gerund' to mean 'not accustomed to'?",
+    "content": {
+      "type": "text",
+      "value": "The structure [be + used to + gerund] expresses familiarity. The negative form is 'wasn't used to', meaning 'I was not yet accustomed to'.\n\n~use to~ is incorrect after 'wasn't'.\n~usually~ does not fit the grammatical structure or the meaning of adaptation."
+    }
+  },
+  {
+    "cardId": "egac_428",
+    "category": "Habits: Question Form",
+    "sentenceParts": {
+      "prefix": "",
+      "suffix": " listen to the radio in the car?"
+    },
+    "options": [
+      {
+        "text": "Did you use to",
+        "isCorrect": true
+      },
+      {
+        "text": "Did you used to",
+        "isCorrect": false
+      },
+      {
+        "text": "Were you used to",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "Did you use to listen to the radio in the car?",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_428.mp3",
+    "hint": "How do you ask a question about a past habit?",
+    "content": {
+      "type": "text",
+      "value": "The question form for past habits is [Did + subject + use to + base verb?].\n\n~Did you used to~ is a common error; 'use' must be in its base form.\n~Were you used to~ asks if you were accustomed to something, not if it was your habit."
+    }
+  },
+  {
+    "cardId": "egac_429",
+    "category": "Habits: Present vs. Past",
+    "sentenceParts": {
+      "prefix": "We ",
+      "suffix": " just connect our phones, so we don't listen to the radio anymore."
+    },
+    "options": [
+      {
+        "text": "usually",
+        "isCorrect": true
+      },
+      {
+        "text": "used to",
+        "isCorrect": false
+      },
+      {
+        "text": "are used to",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "We usually just connect our phones, so we don't listen to the radio anymore.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_429.mp3",
+    "hint": "The second part of the sentence says 'anymore', indicating the first part must be a present habit.",
+    "content": {
+      "type": "text",
+      "value": "[Usually] describes a present habit. The clause '...we don't listen to the radio anymore' confirms that connecting phones is the current routine.\n\n~Used to~ would contradict the idea of a present habit.\n~Are used to~ would need a gerund ('connecting')."
+    }
+  },
+  {
+    "cardId": "egac_430",
+    "category": "Habits: Negative Adaptation",
+    "sentenceParts": {
+      "prefix": "He's used to ",
+      "suffix": " sugar in his drinks, so he finds regular soda too sweet."
+    },
+    "options": [
+      {
+        "text": "not having",
+        "isCorrect": true
+      },
+      {
+        "text": "not have",
+        "isCorrect": false
+      },
+      {
+        "text": "don't have",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "He's used to not having sugar in his drinks, so he finds regular soda too sweet.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_430.mp3",
+    "hint": "To make 'be used to' negative, you place 'not' before the gerund (-ing form).",
+    "content": {
+      "type": "text",
+      "value": "The structure for a negative state of custom is [be used to + not + gerund]. He is accustomed to the absence of sugar.\n\n~not have~ and ~don't have~ are incorrect verb forms to follow the preposition 'to' in this expression."
+    }
+  }
   ]
 }

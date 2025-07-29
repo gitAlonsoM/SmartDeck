@@ -18,7 +18,7 @@ class QuizScreen {
         console.log("DEBUG: [QuizScreen] constructor -> Component instantiated.");
     }
 
- async render(question, currentIndex, totalQuestions, score, isDeckCompleted = false) {
+ async render(question, currentIndex, totalQuestions, score, isMarkedForImprovement, isDeckCompleted = false) {
         console.log(`DEBUG: [QuizScreen] render -> Rendering question ${currentIndex + 1} of ${totalQuestions}. Deck completed: ${isDeckCompleted}`);
 
         // If the last card of a fully mastered deck was just answered, show completion screen.
@@ -35,6 +35,19 @@ class QuizScreen {
         // Populate static elements
         document.getElementById('quiz-progress').textContent = `Question ${currentIndex + 1} of ${totalQuestions}`;
         document.getElementById('quiz-score').textContent = `Score: ${score}`;
+         // Visually update the improvement flag icon based on its status
+        const markImproveBtn = document.getElementById('mark-improve-btn');
+        if (markImproveBtn) {
+            const flagIcon = markImproveBtn.querySelector('i');
+            if (flagIcon) {
+                flagIcon.classList.remove('text-yellow-400', 'dark:text-yellow-400', 'text-gray-400', 'dark:text-gray-500'); // Reset colors
+                if (isMarkedForImprovement) {
+                    flagIcon.classList.add('text-yellow-400', 'dark:text-yellow-400'); // Marked state
+                } else {
+                    flagIcon.classList.add('text-gray-400', 'dark:text-gray-500'); // Default state
+                }
+            }
+        }
         document.getElementById('card-category').textContent = question.category;
         document.getElementById('card-hint').textContent = question.hint;
         document.getElementById('question-text').textContent = question.question;

@@ -10,7 +10,7 @@ class FlippableCardScreen {
         this.cardData = null;
         console.log("DEBUG: [FlippableCardScreen] constructor -> Component instantiated.");
     }
-    async render(deckName, card, currentIndex, total) {
+   async render(deckName, card, currentIndex, total, isMarkedForImprovement) {
         console.log("DEBUG: [FlippableCardScreen] render -> Rendering card:", card);
         this.cardData = card;
 
@@ -22,7 +22,19 @@ class FlippableCardScreen {
 
         document.getElementById('deck-title-flippable').textContent = deckName;
         document.getElementById('card-progress-indicator').textContent = `${currentIndex + 1} / ${total}`;
-        
+         // Visually update the improvement flag icon based on its status
+        const markImproveBtn = document.getElementById('mark-improve-btn-flippable');
+        if (markImproveBtn) {
+            const flagIcon = markImproveBtn.querySelector('i');
+            if (flagIcon) {
+                flagIcon.classList.remove('text-yellow-400', 'dark:text-yellow-400', 'text-gray-400', 'dark:text-gray-500'); // Reset colors
+                if (isMarkedForImprovement) {
+                    flagIcon.classList.add('text-yellow-400', 'dark:text-yellow-400'); // Marked state
+                } else {
+                    flagIcon.classList.add('text-gray-400', 'dark:text-gray-500'); // Default state
+                }
+            }
+        }
         this.populateCard();
         this.resetViewState();
         this.setupEventListeners();

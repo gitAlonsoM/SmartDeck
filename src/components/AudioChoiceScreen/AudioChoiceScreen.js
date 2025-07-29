@@ -11,7 +11,8 @@ class AudioChoiceScreen {
         console.log("DEBUG: [AudioChoiceScreen] constructor -> Component instantiated.");
     }
 
-    async render(cardData, currentIndex, totalQuestions, score) {
+        async render(cardData, currentIndex, totalQuestions, score, isMarkedForImprovement) {
+
         console.log(`DEBUG: [AudioChoiceScreen] render -> Rendering question ${currentIndex + 1} of ${totalQuestions} with new structure.`);
         this.currentCard = cardData; // Store the full card data
 
@@ -21,6 +22,20 @@ class AudioChoiceScreen {
         // Populate static elements
         document.getElementById('quiz-progress').textContent = `Question ${currentIndex + 1} of ${totalQuestions}`;
         document.getElementById('quiz-score').textContent = `Score: ${score}`;
+         // Visually update the improvement flag icon based on its status
+        const markImproveBtn = document.getElementById('mark-improve-btn');
+        if (markImproveBtn) {
+            const flagIcon = markImproveBtn.querySelector('i');
+            if (flagIcon) {
+                flagIcon.classList.remove('text-yellow-400', 'dark:text-yellow-400', 'text-gray-400', 'dark:text-gray-500'); // Reset colors
+                if (isMarkedForImprovement) {
+                    flagIcon.classList.add('text-yellow-400', 'dark:text-yellow-400'); // Marked state
+                } else {
+                    flagIcon.classList.add('text-gray-400', 'dark:text-gray-500'); // Default state
+                }
+            }
+        }
+
         document.getElementById('card-category').textContent = cardData.category;
 
         // NEW LOGIC: Use the new 'sentenceParts' structure for the question display
