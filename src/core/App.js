@@ -17,6 +17,8 @@ class App {
             currentScreen: 'deckList', // 'deckList', 'deckDetail', 'quiz', 'results'
             currentDeckId: null,
             quizInstance: null,
+                        favoriteDeckIds: new Set(), // Track favorite decks
+
         };
 
         // Component instances are initialized in setupComponents
@@ -112,6 +114,29 @@ class App {
         }
     }
 
+      /**
+     * Toggles the favorite status of a deck.
+     * @param {string} deckId The ID of the deck to toggle.
+     */
+    handleToggleFavorite(deckId) {
+        if (!deckId) return;
+        console.log(`DEBUG: [App] handleToggleFavorite -> Toggling favorite for deck ID: ${deckId}`);
+        const { favoriteDeckIds } = this.state;
+        
+        if (favoriteDeckIds.has(deckId)) {
+            favoriteDeckIds.delete(deckId);
+        } else {
+            favoriteDeckIds.add(deckId);
+        }
+
+        StorageService.saveFavorites(favoriteDeckIds);
+        
+        // Re-render the deck list to reflect the change in order
+        if (this.state.currentScreen === 'deckList') {
+            this.render();
+        }
+    }
+
     async loadDecks() {
          console.log("DEBUG: [App] loadDecks -> Loading all decks.");
         let staticDecks = {};
@@ -140,9 +165,10 @@ class App {
             console.error("DEBUG: [App] loadDecks -> CRITICAL ERROR loading static decks:", error);
         }
         
-        const userDecks = StorageService.loadDecks();
-        this.state.allDecks = { ...staticDecks, ...userDecks };
-        console.log("DEBUG: [App] loadDecks -> Final merged state for allDecks:", this.state.allDecks);
+        const userDecks = StorageService.loadDecks();
+        this.state.favoriteDeckIds = StorageService.loadFavorites(); // Load favorites status
+        this.state.allDecks = { ...staticDecks, ...userDecks };
+        console.log("DEBUG: [App] loadDecks -> Final merged state for allDecks:", this.state.allDecks);
     }
     
     render() {
@@ -150,11 +176,27 @@ class App {
         this.appContainer.innerHTML = '';
 
         switch(this.state.currentScreen) {
-            case 'deckList':
-                if (!this.deckListComponent) { this.deckListComponent = new DeckList(this.appContainer, (id) => this.handleDeckSelected(id), () => this.handleCreateDeckClicked()); }
-                this.deckListComponent.render(this.state.allDecks);
+           case 'deckList':
+                if (!this.deckListComponent) { 
+                    this.deckListComponent = new DeckList(
+                        this.appContainer, 
+                        (id) => this.handleDeckSelected(id), 
+                        () => this.handleCreateDeckClicked(),
+                        (id) => this.handleToggleFavorite(id) // Pass the toggle handler
+                    ); 
+                }
+                
+                // Sort decks: favorites first, then by name
+                const sortedDecks = Object.values(this.state.allDecks).sort((a, b) => {
+                    const aIsFavorite = this.state.favoriteDeckIds.has(a.id);
+                    const bIsFavorite = this.state.favoriteDeckIds.has(b.id);
+                    if (aIsFavorite && !bIsFavorite) return -1;
+                    if (!aIsFavorite && bIsFavorite) return 1;
+                    return a.name.localeCompare(b.name); // Secondary sort by name
+                });
+
+                this.deckListComponent.render(sortedDecks, this.state.favoriteDeckIds);
                 break;
-            
             case 'deckDetail':
                 if (!this.deckDetailComponent) { 
                 this.deckDetailComponent = new DeckDetailScreen(

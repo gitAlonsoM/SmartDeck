@@ -11,26 +11,23 @@ class DeckList {
      * @param {function} onDeckSelect - Callback function to execute when a deck is selected.
      * @param {function} onCreateClick - Callback function for the "Create Deck" button.
      */
-    constructor(container, onDeckSelect, onCreateClick) {
+    constructor(container, onDeckSelect, onCreateClick, onToggleFavorite) {
         this.container = container;
         this.onDeckSelect = onDeckSelect;
         this.onCreateClick = onCreateClick;
+        this.onToggleFavorite = onToggleFavorite; // Add the new handler
         console.log("DEBUG: [DeckList] constructor -> Component instantiated.");
     }
-
     /**
      * Renders the list of decks into the container.
      * @param {Object} decks - An object where each key is a deck ID and the value is the deck object.
      */
-    render(decks) {
+     render(decks, favoriteDeckIds) { // Now accepts an array of decks and the set of favorite IDs
         console.log("DEBUG: [DeckList] render -> Rendering decks:", decks);
         
-        // Load the component's HTML structure first.
-        // THE FIX IS HERE: Added a leading slash '/' to make the path absolute from the project root.
         ComponentLoader.loadHTML('/src/components/DeckList/deck-list.html').then(html => {
             this.container.innerHTML = html;
-            this.setupTtsControls(); // Initialize TTS settings
-
+            this.setupTtsControls(); 
 
             const deckListContainer = this.container.querySelector('#deck-list-container');
             if (!deckListContainer) {
@@ -38,25 +35,26 @@ class DeckList {
                 return;
             }
 
-            // Clear any previous content
             deckListContainer.innerHTML = '';
             
-            if (Object.keys(decks).length === 0) {
+            if (!decks || decks.length === 0) {
                 deckListContainer.innerHTML = `<p class="text-gray-500 col-span-full">No decks found. Try creating one with AI!</p>`;
             } else {
-                 // Iterate over the decks and create a card for each
-                for (const deckId in decks) {
-                    const deck = decks[deckId];
-                    const card = this._createDeckCardElement(deck);
+                // Iterate over the sorted array of decks
+                for (const deck of decks) {
+                    const isFavorite = favoriteDeckIds.has(deck.id);
+                    const card = this._createDeckCardElement(deck, isFavorite);
+                    
+                    // The main card click navigates to deck details
                     card.addEventListener('click', () => {
                         console.log(`DEBUG: [DeckList] render -> Deck card clicked. ID: ${deck.id}`);
                         this.onDeckSelect(deck.id);
                     });
+
                     deckListContainer.appendChild(card);
                 }
             }
 
-            // Setup the "Create Deck" button listener
             const createBtn = this.container.querySelector('#create-deck-btn');
             if (createBtn) {
                 createBtn.addEventListener('click', this.onCreateClick);
@@ -126,27 +124,46 @@ class DeckList {
      * @returns {HTMLElement} The created DOM element for the deck card.
      * @private
      */
-    _createDeckCardElement(deck) {
+   _createDeckCardElement(deck, isFavorite) {
         const card = document.createElement('div');
-        // Add 'relative' to position the icon inside the card
         card.className = 'deck-card relative bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg cursor-pointer text-left flex flex-col justify-between';
         
         let typeIconHtml = '';
         if (deck.deckType === 'flippable') {
             typeIconHtml = '<i class="fa-solid fa-clone" title="Flippable Deck"></i>';
+        } else if (deck.deckType === 'audioChoice') {
+            typeIconHtml = '<i class="fa-solid fa-headphones" title="Audio Choice Deck"></i>';
         } else {
             typeIconHtml = '<i class="fa-solid fa-list-check" title="Multiple Choice Deck"></i>';
         }
 
-        // The deck description paragraph has been removed for a cleaner UI.
+        // Star icon logic
+        const starColorClass = isFavorite ? 'text-yellow-400' : 'text-gray-300 dark:text-gray-600';
+        const starIconHtml = `
+            <button class="favorite-star-button absolute bottom-4 right-5 text-xl ${starColorClass} hover:text-yellow-300 transition-colors duration-200 z-10">
+                <i class="fa-solid fa-star"></i>
+            </button>
+        `;
+
         const cardContent = `
             <div class="absolute top-4 right-5 text-gray-400 dark:text-gray-500 text-lg">${typeIconHtml}</div>
+            ${starIconHtml}
             <div>
                 <h2 class="text-xl font-bold text-indigo-700 dark:text-indigo-400 mb-2 truncate pr-8" title="${deck.name}">${deck.name}</h2>
             </div>
             <p class="text-sm text-gray-600 dark:text-gray-400 font-medium mt-4">${deck.cards ? deck.cards.length : 0} cards</p>
         `;
         card.innerHTML = cardContent;
+
+        // Add a specific event listener for the star button
+        const starButton = card.querySelector('.favorite-star-button');
+        if (starButton) {
+            starButton.addEventListener('click', (e) => {
+                e.stopPropagation(); // VERY IMPORTANT: Prevents the card's main click event
+                this.onToggleFavorite(deck.id);
+            });
+        }
+
         return card;
     }
 }

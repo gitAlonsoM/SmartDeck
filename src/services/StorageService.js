@@ -6,6 +6,7 @@
 class StorageService {
     static STORAGE_KEY_DECKS = 'smart-decks-v3-decks';
      static STORAGE_KEY_IMPROVEMENT_PREFIX = 'smart-decks-v3-improvement-';
+            static STORAGE_KEY_FAVORITES = 'smart-decks-v3-favorites';
 
      static STORAGE_KEY_PROGRESS_PREFIX = 'smart-decks-v3-progress-';
 static STORAGE_KEY_DECK_PROGRESS_PREFIX = 'smart-decks-v3-deck-progress-';
@@ -264,6 +265,38 @@ static STORAGE_KEY_DECK_PROGRESS_PREFIX = 'smart-decks-v3-deck-progress-';
         } catch (error) {
             console.error("DEBUG: [StorageService] loadPreferredVoice -> Error loading voice:", error);
             return null;
+        }
+    }
+
+    /**
+     * Loads the set of favorite deck IDs from localStorage.
+     * @returns {Set<string>} A set of favorite deck IDs.
+     */
+    static loadFavorites() {
+        try {
+            const storedFavorites = localStorage.getItem(this.STORAGE_KEY_FAVORITES);
+            if (storedFavorites) {
+                const favoriteIds = JSON.parse(storedFavorites);
+                console.log("DEBUG: [StorageService] loadFavorites -> Found and parsed favorites:", favoriteIds);
+                return new Set(favoriteIds);
+            }
+        } catch (error) {
+            console.error("DEBUG: [StorageService] loadFavorites -> Error loading favorites.", error);
+        }
+        return new Set(); // Return empty set if not found or on error
+    }
+
+    /**
+     * Saves the set of favorite deck IDs to localStorage.
+     * @param {Set<string>} favoriteIdsSet - The set of favorite deck IDs to save.
+     */
+    static saveFavorites(favoriteIdsSet) {
+        try {
+            const favoriteIdsArray = Array.from(favoriteIdsSet);
+            localStorage.setItem(this.STORAGE_KEY_FAVORITES, JSON.stringify(favoriteIdsArray));
+            console.log("DEBUG: [StorageService] saveFavorites -> Saved favorites:", favoriteIdsArray);
+        } catch (error) {
+            console.error("DEBUG: [StorageService] saveFavorites -> Error saving favorites.", error);
         }
     }
 }
