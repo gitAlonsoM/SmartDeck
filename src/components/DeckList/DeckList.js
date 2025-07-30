@@ -1,9 +1,4 @@
-/*  src\components\DeckList\DeckList.js*/
-
-// Component responsible for rendering the list of available decks.
-
-// src/components/DeckList/DeckList.js
-// Component responsible for rendering the list of available decks.
+//src\components\DeckList\DeckList.js
 
 class DeckList {
     /**
