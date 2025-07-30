@@ -1,80 +1,67 @@
-# refactor_hints.py
-
 import json
 import os
+import re
 
-def refactor_deck_hints(file_path):
+def fix_deck_values_spacing(file_path):
     """
-    Reads a deck file, refactors the 'hint' value for all cards with new,
-    non-redundant information, and overwrites the original file.
+    Reads a deck file and specifically fixes an issue where an extra space
+    was added after a newline in the 'value' field, then overwrites the file.
     """
-    print(f"Iniciando la refactorización de hints para: {file_path}")
-    print("Este script sobrescribirá el archivo original.")
+    print(f"Starting 'value' field spacing correction for: {file_path}")
+    print("This script will overwrite the original file.")
 
-    # A comprehensive map of cardId to its new, value-adding, non-redundant hint.
-    hint_map = {
-        "egac_001": "While 'see' is a passive sense, 'look at' implies a conscious and directed action.",
-        "egac_002": "Think of 'enter' as containing the preposition 'into' within its meaning.",
-        "egac_003": "This structure is also common for gradual changes, like 'it's getting dark'.",
-        "egac_004": "This tense is perfect for answering 'how long' questions about an ongoing action.",
-        "egac_005": "Unlike 'would', 'used to' can describe past states (e.g., 'I used to be shy') in addition to actions.",
-        "egac_006": "This structure often implies that something prevented the plan from happening.",
-        "egac_007": "This perfect modal often carries a tone of criticism or advice about the past.",
-        "egac_008": "Using the infinitive 'To read...' as a subject is possible but sounds much more formal.",
-        "egac_009": "Other adjectives that pair with 'in' include 'successful in' and 'experienced in'.",
-        "egac_010": "The passive voice is often used when the person performing the action is unknown or unimportant.",
-        "egac_011": "Using 'it' here would be incorrect, as 'it' must refer to a specific thing already mentioned.",
-        "egac_012": "The word order of a subject question is simple: Question Word + Verb + Object.",
-        "egac_013": "The very formal alternative is 'For what are you looking?', but this is rarely used in conversation.",
-        "egac_014": "This conditional is often used for giving advice, e.g., 'If I were you, I would...'",
-        "egac_015": "This conditional is often used to express regrets about the past.",
-        "egac_016": "The word 'children' itself is an old plural form, not ending in 's'.",
-   
-    }
-    
     # --- Read the file ---
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             deck_data = json.load(f)
     except FileNotFoundError:
-        print(f"Error: Archivo de entrada no encontrado en {file_path}")
+        print(f"Error: Input file not found at {file_path}")
         return
     except json.JSONDecodeError:
-        print(f"Error: No se pudo decodificar el JSON de {file_path}")
+        print(f"Error: Could not decode JSON from {file_path}")
         return
 
-    # --- Loop through cards and update the hint value in memory ---
+    # --- Loop through cards and update the value in memory ---
     updated_count = 0
-    missing_count = 0
-    total_cards = len(deck_data.get("cards", []))
-    
-    for card in deck_data.get("cards", []):
-        card_id = card.get("cardId")
-        if card_id and card_id in hint_map:
-            card["hint"] = hint_map[card_id]
-            updated_count += 1
-        else:
-            missing_count += 1
-            print(f"Advertencia: No se encontró un hint para la cardId: {card_id}")
+    cards = deck_data.get("cards", [])
+    total_cards = len(cards)
 
-    print(f"Refactorización completada. Se actualizaron {updated_count} de {total_cards} tarjetas.")
-    if missing_count > 0:
-        print(f"Faltaron hints para {missing_count} tarjetas.")
+    # This new pattern specifically looks for the incorrect format introduced by the first script:
+    # A period or parenthesis, followed by a newline, a space, and a tilde.
+    pattern_to_fix = r'([.)])\n( )(~)'
+    replacement_logic = r'\1\n\3' # Rebuilds the string without the unwanted space (\2)
+
+    for i, card in enumerate(cards):
+        card_id = card.get("cardId", f"index_{i}")
+        if "content" in card and "value" in card["content"]:
+            original_value = card["content"]["value"]
+            
+            # Apply the correction
+            modified_value = re.sub(pattern_to_fix, replacement_logic, original_value)
+            
+            # If a change was made, update the card and increment the counter
+            if original_value != modified_value:
+                card["content"]["value"] = modified_value
+                updated_count += 1
+
+    print(f"\nCorrection complete. {updated_count} of {total_cards} cards had their 'value' updated.")
+    if updated_count == 0:
+        print("No cards needed correction, the format might already be correct.")
 
     # --- Save the updated data back to the original file ---
     try:
         with open(file_path, 'w', encoding='utf-8') as f:
             json.dump(deck_data, f, ensure_ascii=False, indent=2)
-        print(f"Cambios guardados exitosamente en: {file_path}")
+        print(f"Changes saved successfully to: {file_path}")
     except Exception as e:
-        print(f"Error al guardar el archivo en {file_path}: {e}")
+        print(f"Error saving file to {file_path}: {e}")
 
 
 if __name__ == '__main__':
-    # --- CONFIGURACIÓN ---
-    # La ruta al archivo que quieres modificar.
-    DECK_FILE_PATH = os.path.join('public', 'data', 'english_grammar_audio_choice.json')
+    # --- CONFIGURATION ---
+    # The path to the file you want to modify.
+    DECK_FILE_PATH = os.path.join('public', 'data', 'phrasal_verbs_audio_choice.json')
     
-    # --- EJECUCIÓN ---
-    # El script leerá y escribirá en el mismo archivo.
-    refactor_deck_hints(DECK_FILE_PATH)
+    # --- EXECUTION ---
+    # The script will read and write to the same file specified in DECK_FILE_PATH.
+    fix_deck_values_spacing(DECK_FILE_PATH)
