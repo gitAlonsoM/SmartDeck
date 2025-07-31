@@ -98,7 +98,7 @@
           }
         ]
       },
-      "note": "'Log into' (Phrasal Verb) means to gain access to a computer system using credentials.\n\nA 'Profile' (Noun) defines a user's permissions and access level.\n\n'Rep' is a common abbreviation for 'Representative'.\n\nA 'Sales Rep Profile' is a specific type of user account configured with the permissions and tools needed by a sales representative to do their job."
+      "note": "'Log into' (Phrasal Verb) means to gain access to a computer system using credentials.\n\nA 'Profile' (Noun) defines a user's permissions and access level."
     },
     {
       "cardId": "tpp_007",
@@ -274,7 +274,7 @@
           }
         ]
       },
-      "note": "A 'URL' (Uniform Resource Locator) (Noun) is the web address.\n\nA 'Proxy Server' (Noun) acts as a gateway between a user and the internet, often for security or to access internal networks.\n\nAnalogy: Think of a proxy server as a company's receptionist. You talk to the receptionist (the proxy), and they connect you to the person you need to talk to (the internal network or internet). It adds a layer of security and control."
+      "note": "A 'URL' (Uniform Resource Locator) (Noun) is the web address.\n\nA 'Proxy Server' (Noun) acts as a gateway between a user and the internet, often for security or to access internal networks."
     },
     {
       "cardId": "tpp_018",
@@ -386,7 +386,7 @@
           }
         ]
       },
-      "note": "A 'Developer' (Noun) is a programmer who writes code.\n\nA 'Series ID' (Noun) is a project-specific identifier for a group of related tests or features.\n\n'Straightforward' (Adjective) means simple and easy to understand or do, without any complications. A 'straightforward issue' is a problem that is not complex."
+      "note": "A 'Developer' (Noun) is a programmer who writes code.\n\nA 'Series ID' (Noun) is a project-specific identifier for a group of related tests or features."
     },
     {
       "cardId": "tpp_025",
@@ -1266,7 +1266,7 @@
           }
         ]
       },
-      "note": "The 'priority' (Noun) of a bug is often determined by its business impact. Issues that directly affect 'sales' (Noun) or popular products are almost always considered high priority.\n\n'ON' is a common abbreviation for Ontario, a major province in Canada. \"Sales in ON\" refers to the sales figures within that specific region."
+      "note": "The 'priority' (Noun) of a bug is often determined by its business impact. Issues that directly affect 'sales' (Noun) or popular products are almost always considered high priority."
     },
     {
       "cardId": "tpp_080",
@@ -1682,7 +1682,7 @@
           }
         ]
       },
-      "note": "'Stale dated' (Adjective Phrase) is a reason for return, meaning the product is past its expiration date.\n\n'Breakage' (Noun) is a return reason for items that were physically broken.\n\n'Return Items' (Noun Phrase) refers to the feature or process for sending products back.\n\n'Stale' (Adjective) on its own means not fresh. For food or drinks, it means it is old and no longer good to consume."
+      "note": "'Stale dated' (Adjective Phrase) is a reason for return, meaning the product is past its expiration date.\n\n'Breakage' (Noun) is a return reason for items that were physically broken.\n\n'Return Items' (Noun Phrase) refers to the feature or process for sending products back."
     },
     {
       "cardId": "tpp_106",
@@ -2370,7 +2370,7 @@
           }
         ]
       },
-      "note": "'Keg Broken Seal' (Noun Phrase) is a specific reason for returning a keg, indicating its seal was damaged.\n\n'Seal' (Noun): In this context, a seal is a device or material used to close an opening (like on a keg) to prevent contents from escaping or being contaminated. A broken seal indicates the product may have been opened or tampered with."
+      "note": "'Keg Broken Seal' (Noun Phrase) is a specific reason for returning a keg, indicating its seal was damaged."
     },
     {
       "cardId": "tpp_149",
@@ -2690,7 +2690,7 @@
           }
         ]
       },
-      "note": "'Discount Logic' (Noun Phrase) refers to the rules and calculations the system uses to determine the value of a discount.\n\n'Tied to' (Phrasal Verb) means connected with or related to. In this context, the discount calculation is connected to specific promotions."
+      "note": "'Discount Logic' (Noun Phrase) refers to the rules and calculations the system uses to determine the value of a discount."
     },
     {
       "cardId": "tpp_169",
@@ -2724,645 +2724,645 @@
       },
       "note": "'Sub-Total' (Noun) is confirmed to be the sum of the 'Net Price' from every single product line present in the cart."
     },
-    {
-      "cardId": "tpp_171",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "In the meeting notes, you wrote UAT and SKU. Are both of these acronyms?",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_171_a.mp3"
-          },
-          {
-            "text": "Good question. Technically, UAT is an initialism because we say each letter, U-A-T. SKU is a true acronym because we pronounce it as a word, skew.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_171_b.mp3"
-          }
-        ]
-      },
-      "note": "'Initialism' (Noun) is an abbreviation where each letter is pronounced individually (e.g., U-A-T).\n\n'Acronym' (Noun) is an abbreviation pronounced as a single word (e.g., SKU)."
+  {
+    "cardId": "tpp_171",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "In the meeting notes, you wrote UAT and SKU. Are both of these acronyms?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_171_a.mp3"
+        },
+        {
+          "text": "Good question. Technically, UAT is an initialism because we say each letter, U-A-T. SKU is a true acronym because we pronounce it as a word, skew.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_171_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_172",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "The ticket mentions both the CSR and QC teams need to be involved.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_172_a.mp3"
-          },
-          {
-            "text": "Right, and for clarity, both CSR and QC are common initialisms in our business, pronounced C-S-R and Q-C.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_172_b.mp3"
-          }
-        ]
-      },
-      "note": "'CSR' (Customer Service Representative) and 'QC' (Quality Control) are examples of initialisms because the individual letters are spoken."
+    "note": "'Initialism' (Noun) is an abbreviation where each letter is pronounced individually (e.g., U-A-T).\n\n'Acronym' (Noun) is an abbreviation pronounced as a single word (e.g., SKU)."
+  },
+  {
+    "cardId": "tpp_172",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "The ticket mentions both the CSR and QC teams need to be involved.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_172_a.mp3"
+        },
+        {
+          "text": "Right, and for clarity, both CSR and QC are common initialisms in our business, pronounced C-S-R and Q-C.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_172_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_173",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "What about SOA for Service-Oriented Architecture? Is that an acronym or an initialism?",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_173_a.mp3"
-          },
-          {
-            "text": "It's almost always used as an initialism, S-O-A. If people pronounced it 'so-ah', then it would be an acronym.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_173_b.mp3"
-          }
-        ]
-      },
-      "note": "'SOA' (Service-Oriented Architecture) is a design pattern. The way it's pronounced determines if it's used as an initialism (S-O-A) or an acronym."
+    "note": "'CSR' (Customer Service Representative) and 'QC' (Quality Control) are examples of initialisms because the individual letters are spoken."
+  },
+  {
+    "cardId": "tpp_173",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "What about SOA for Service-Oriented Architecture? Is that an acronym or an initialism?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_173_a.mp3"
+        },
+        {
+          "text": "It's almost always used as an initialism, S-O-A. If people pronounced it 'so-ah', then it would be an acronym.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_173_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_174",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "I need to find an order using the PO number from the invoice.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_174_a.mp3"
-          },
-          {
-            "text": "Okay. And just to confirm for the new team member, PO is the initialism for Purchase Order.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_174_b.mp3"
-          }
-        ]
-      },
-      "note": "'PO' (Purchase Order) is a commercial document and its abbreviation is used as an initialism (P-O)."
+    "note": "'SOA' (Service-Oriented Architecture) is a design pattern. The way it's pronounced determines if it's used as an initialism (S-O-A) or an acronym."
+  },
+  {
+    "cardId": "tpp_174",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "I need to find an order using the PO number from the invoice.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_174_a.mp3"
+        },
+        {
+          "text": "Okay. And just to confirm for the new team member, PO is the initialism for Purchase Order.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_174_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_175",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "Does the HST charge replace the GST charge on this invoice?",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_175_a.mp3"
-          },
-          {
-            "text": "In some provinces, yes. The initialism HST, or Harmonized Sales Tax, includes the federal GST.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_175_b.mp3"
-          }
-        ]
-      },
-      "note": "'GST' (Goods and Services Tax) and 'HST' (Harmonized Sales Tax) are both tax-related initialisms."
+    "note": "'PO' (Purchase Order) is a commercial document and its abbreviation is used as an initialism (P-O)."
+  },
+  {
+    "cardId": "tpp_175",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "Does the HST charge replace the GST charge on this invoice?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_175_a.mp3"
+        },
+        {
+          "text": "In some provinces, yes. The initialism HST, or Harmonized Sales Tax, includes the federal GST.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_175_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_176",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "All our order data has to be synchronized with the EBS.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_176_a.mp3"
-          },
-          {
-            "text": "Correct. And for any new developers, EBS is the initialism for Oracle's E-Business Suite.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_176_b.mp3"
-          }
-        ]
-      },
-      "note": "'EBS' (Oracle E-Business Suite) is a large suite of business software. Its abbreviation is an initialism."
+    "note": "'GST' (Goods and Services Tax) and 'HST' (Harmonized Sales Tax) are both tax-related initialisms."
+  },
+  {
+    "cardId": "tpp_176",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "All our order data has to be synchronized with the EBS.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_176_a.mp3"
+        },
+        {
+          "text": "Correct. And for any new developers, EBS is the initialism for Oracle's E-Business Suite.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_176_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_177",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "Please send me the URL for the test environment.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_177_a.mp3"
-          },
-          {
-            "text": "Sure. It's interesting how URL is an initialism, but people say it so fast it almost sounds like an acronym.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_177_b.mp3"
-          }
-        ]
-      },
-      "note": "'URL' (Uniform Resource Locator) is the address of a resource on the internet and is an initialism."
+    "note": "'EBS' (Oracle E-Business Suite) is a large suite of business software. Its abbreviation is an initialism."
+  },
+  {
+    "cardId": "tpp_177",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "Please send me the URL for the test environment.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_177_a.mp3"
+        },
+        {
+          "text": "Sure. It's interesting how URL is an initialism, but people say it so fast it almost sounds like an acronym.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_177_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_178",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "Is the pricing data being pulled from a new API?",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_178_a.mp3"
-          },
-          {
-            "text": "Yes. And by the way, API is a classic initialism we use every day for Application Programming Interface.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_178_b.mp3"
-          }
-        ]
-      },
-      "note": "'API' (Application Programming Interface) is a fundamental concept in software development, and its abbreviation is an initialism.\n\n'To be pulled from' (Phrasal Verb) means to be retrieved or fetched from a source. In this case, the pricing data is being retrieved from the API."
+    "note": "'URL' (Uniform Resource Locator) is the address of a resource on the internet and is an initialism."
+  },
+  {
+    "cardId": "tpp_178",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "Is the pricing data being pulled from a new API?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_178_a.mp3"
+        },
+        {
+          "text": "Yes. And by the way, API is a classic initialism we use every day for Application Programming Interface.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_178_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_179",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "I found another bug in the UI.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_179_a.mp3"
-          },
-          {
-            "text": "Okay, and when you say UI, you're using the initialism for User Interface, correct? Just making sure we're on the same page.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_179_b.mp3"
-          }
-        ]
-      },
-      "note": "'UI' (User Interface) is the visual part of an application that users interact with. Its abbreviation is an initialism."
+    "note": "'API' (Application Programming Interface) is a fundamental concept in software development, and its abbreviation is an initialism."
+  },
+  {
+    "cardId": "tpp_179",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "I found another bug in the UI.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_179_a.mp3"
+        },
+        {
+          "text": "Okay, and when you say UI, you're using the initialism for User Interface, correct? Just making sure we're on the same page.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_179_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_180",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "It's helpful to clarify if something is an acronym or an initialism for new hires.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_180_a.mp3"
-          },
-          {
-            "text": "I agree. It ensures everyone from QA to the dev team understands our specific terminology.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_180_b.mp3"
-          }
-        ]
-      },
-      "note": "'QA' (Quality Assurance) is an initialism for the team that tests software.\n\n'Dev team' is short for Development Team, the group of programmers."
+    "note": "'UI' (User Interface) is the visual part of an application that users interact with. Its abbreviation is an initialism."
+  },
+  {
+    "cardId": "tpp_180",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "It's helpful to clarify if something is an acronym or an initialism for new hires.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_180_a.mp3"
+        },
+        {
+          "text": "I agree. It ensures everyone from QA to the dev team understands our specific terminology.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_180_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_181",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "Have you started working on the checkout bug?",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_181_a.mp3"
-          },
-          {
-            "text": "Yes, I just created a new DEV branch to isolate my changes.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_181_b.mp3"
-          }
-        ]
-      },
-      "note": "'DEV branch' (Noun) is a separate line of development created to work on a new feature or bug fix without affecting the main codebase."
+    "note": "'QA' (Quality Assurance) is an initialism for the team that tests software.\n\n'Dev team' is short for Development Team, the group of programmers."
+  },
+{
+    "cardId": "tpp_181",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "Have you started working on the checkout bug?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_181_a.mp3"
+        },
+        {
+          "text": "Yes, I just created a new DEV branch to isolate my changes.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_181_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_182",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "My code is ready to be merged into the test environment.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_182_a.mp3"
-          },
-          {
-            "text": "Okay, please create a Pull Request so a peer reviewer can check it.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_182_b.mp3"
-          }
-        ]
-      },
-      "note": "'Peer Reviewer' (Noun) is a developer who examines code written by a colleague to check for correctness and quality.\n\n'Pull Request' or 'PR' (Noun) is a formal request to merge code from one branch into another."
+    "note": "'DEV branch' (Noun) is a separate line of development created to work on a new feature or bug fix without affecting the main codebase."
+  },
+  {
+    "cardId": "tpp_182",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "My code is ready to be merged into the test environment.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_182_a.mp3"
+        },
+        {
+          "text": "Okay, please create a Pull Request so a peer reviewer can check it.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_182_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_183",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "Why isn't the app available for the test users yet?",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_183_a.mp3"
-          },
-          {
-            "text": "A Sys Admin needs to publish the app first. The request was just submitted.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_183_b.mp3"
-          }
-        ]
-      },
-      "note": "'Sys Admin' (System Administrator) (Noun) is the person responsible for maintaining and operating a computer system or network, including publishing apps."
+    "note": "'Peer Reviewer' (Noun) is a developer who examines code written by a colleague to check for correctness and quality.\n\n'Pull Request' or 'PR' (Noun) is a formal request to merge code from one branch into another."
+  },
+  {
+    "cardId": "tpp_183",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "Why isn't the app available for the test users yet?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_183_a.mp3"
+        },
+        {
+          "text": "A Sys Admin needs to publish the app first. The request was just submitted.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_183_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_184",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "Did the client approve the changes from last week?",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_184_a.mp3"
-          },
-          {
-            "text": "Yes, we received the official user sign-off this morning.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_184_b.mp3"
-          }
-        ]
-      },
-      "note": "'User sign-off' (Noun Phrase) is the formal approval from the business users or client, confirming that a feature or fix meets their requirements."
+    "note": "'Sys Admin' (System Administrator) (Noun) is the person responsible for maintaining and operating a computer system or network, including publishing apps."
+  },
+  {
+    "cardId": "tpp_184",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "Did the client approve the changes from last week?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_184_a.mp3"
+        },
+        {
+          "text": "Yes, we received the official user sign-off this morning.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_184_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_185",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "How are we testing the mobile app without a physical device?",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_185_a.mp3"
-          },
-          {
-            "text": "The developer is using an Emulator on the BLUE instance for all internal testing.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_185_b.mp3"
-          }
-        ]
-      },
-      "note": "'Emulator' (Noun) is a software application that enables a computer to imitate the functions of another computer system, such as running a mobile app on a desktop."
+    "note": "'User sign-off' (Noun Phrase) is the formal approval from the business users or client, confirming that a feature or fix meets their requirements."
+  },
+  {
+    "cardId": "tpp_185",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "How are we testing the mobile app without a physical device?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_185_a.mp3"
+        },
+        {
+          "text": "The developer is using an Emulator on the BLUE instance for all internal testing.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_185_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_186",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "The PR was approved. What is my next step?",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_186_a.mp3"
-          },
-          {
-            "text": "You need to generate the executable and copy it to the UAT folder on Teams.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_186_b.mp3"
-          }
-        ]
-      },
-      "note": "'Executable' (Noun) is the file that contains a compiled program ready to be run, such as an .apk for Android or .ipa for iOS."
+    "note": "'Emulator' (Noun) is a software application that enables a computer to imitate the functions of another computer system, such as running a mobile app on a desktop."
+  },
+  {
+    "cardId": "tpp_186",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "The PR was approved. What is my next step?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_186_a.mp3"
+        },
+        {
+          "text": "You need to generate the executable and copy it to the UAT folder on Teams.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_186_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_187",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "This update also changes a database table on the server.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_187_a.mp3"
-          },
-          {
-            "text": "Then the peer reviewer must create a change request for the PURPLE environment.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_187_b.mp3"
-          }
-        ]
-      },
-      "note": "'Change Request' (Noun) is a formal proposal for an alteration to a system, often required for server or database modifications."
+    "note": "'Executable' (Noun) is the file that contains a compiled program ready to be run, such as an .apk for Android or .ipa for iOS."
+  },
+  {
+    "cardId": "tpp_187",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "This update also changes a database table on the server.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_187_a.mp3"
+        },
+        {
+          "text": "Then the peer reviewer must create a change request for the PURPLE environment.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_187_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_188",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "The order was placed, but it's not processing correctly in Oracle.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_188_a.mp3"
-          },
-          {
-            "text": "I see the problem. It has an Entered status, but it needs to be Booked.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_188_b.mp3"
-          }
-        ]
-      },
-      "note": "'Entered' (Adjective) is an initial order status in Oracle, indicating the order has been created but not yet confirmed or processed.\n\n'Booked' (Adjective) is a subsequent status indicating the order is confirmed and has been processed for fulfillment."
+    "note": "'Change Request' (Noun) is a formal proposal for an alteration to a system, often required for server or database modifications."
+  },
+  {
+    "cardId": "tpp_188",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "The order was placed, but it's not processing correctly in Oracle.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_188_a.mp3"
+        },
+        {
+          "text": "I see the problem. It has an Entered status, but it needs to be Booked.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_188_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_189",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "Why did the app crash when I tried to update my profile?",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_189_a.mp3"
-          },
-          {
-            "text": "It's a common bug. The error log says the method is called on null.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_189_b.mp3"
-          }
-        ]
-      },
-      "note": "'The method is called on null' is a specific programming error indicating that code tried to use an object that was not initialized, leading to a crash."
+    "note": "'Entered' (Adjective) is an initial order status in Oracle, indicating the order has been created but not yet confirmed or processed.\n\n'Booked' (Adjective) is a subsequent status indicating the order is confirmed and has been processed for fulfillment."
+  },
+  {
+    "cardId": "tpp_189",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "Why did the app crash when I tried to update my profile?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_189_a.mp3"
+        },
+        {
+          "text": "It's a common bug. The error log says the method is called on null.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_189_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_190",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "I added another item to the cart, but it appeared as a separate product.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_190_a.mp3"
-          },
-          {
-            "text": "That's a known issue. It creates new line items instead of updating the quantity.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_190_b.mp3"
-          }
-        ]
-      },
-      "note": "'Line item' (Noun) refers to a single entry in an order or invoice, typically representing one product and its quantity."
+    "note": "'The method is called on null' is a specific programming error indicating that code tried to use an object that was not initialized, leading to a crash."
+  },
+  {
+    "cardId": "tpp_190",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "I added another item to the cart, but it appeared as a separate product.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_190_a.mp3"
+        },
+        {
+          "text": "That's a known issue. It creates new line items instead of updating the quantity.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_190_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_191",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "The delivery and billing addresses are missing on the checkout screen.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_191_a.mp3"
-          },
-          {
-            "text": "Thank you for reporting it. This is a high priority bug for Apple devices.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_191_b.mp3"
-          }
-        ]
-      },
-      "note": "'High Priority' (Adjective) describes a bug or task that is critical and must be addressed urgently."
+    "note": "'Line item' (Noun) refers to a single entry in an order or invoice, typically representing one product and its quantity."
+  },
+  {
+    "cardId": "tpp_191",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "The delivery and billing addresses are missing on the checkout screen.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_191_a.mp3"
+        },
+        {
+          "text": "Thank you for reporting it. This is a high priority bug for Apple devices.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_191_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_192",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "What is the status of the address display issue?",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_192_a.mp3"
-          },
-          {
-            "text": "It is currently In Progress, the developer is actively working on a fix.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_192_b.mp3"
-          }
-        ]
-      },
-      "note": "'In Progress' (Adjective) is a status indicating that work on a ticket or issue has started and is ongoing."
+    "note": "'High Priority' (Adjective) describes a bug or task that is critical and must be addressed urgently."
+  },
+  {
+    "cardId": "tpp_192",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "What is the status of the address display issue?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_192_a.mp3"
+        },
+        {
+          "text": "It is currently In Progress, the developer is actively working on a fix.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_192_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_193",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "I can't find any orders when I search the invoice history.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_193_a.mp3"
-          },
-          {
-            "text": "This is a known medium priority bug on Android devices.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_193_b.mp3"
-          }
-        ]
-      },
-      "note": "'Medium Priority' (Adjective) describes a bug or task that is important but not as urgent as a high priority issue."
+    "note": "'In Progress' (Adjective) is a status indicating that work on a ticket or issue has started and is ongoing."
+  },
+  {
+    "cardId": "tpp_193",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "I can't find any orders when I search the invoice history.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_193_a.mp3"
+        },
+        {
+          "text": "This is a known medium priority bug on Android devices.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_193_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_194",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "The product search issue by acronym has been resolved.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_194_a.mp3"
-          },
-          {
-            "text": "Great, I will update the ticket status to Closed.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_194_b.mp3"
-          }
-        ]
-      },
-      "note": "'Closed' (Adjective) is a status indicating that an issue has been resolved, tested, and completed."
+    "note": "'Medium Priority' (Adjective) describes a bug or task that is important but not as urgent as a high priority issue."
+  },
+  {
+    "cardId": "tpp_194",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "The product search issue by acronym has been resolved.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_194_a.mp3"
+        },
+        {
+          "text": "Great, I will update the ticket status to Closed.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_194_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_195",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "Why isn't the final order being sent to the liquor board?",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_195_a.mp3"
-          },
-          {
-            "text": "There seems to be a failure in the release mechanism for Alberta.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_195_b.mp3"
-          }
-        ]
-      },
-      "note": "'Liquor board' (Noun) is a government agency that regulates the sale of alcoholic beverages, a key external system in this context."
+    "note": "'Closed' (Adjective) is a status indicating that an issue has been resolved, tested, and completed."
+  },
+  {
+    "cardId": "tpp_195",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "Why isn't the final order being sent to the liquor board?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_195_a.mp3"
+        },
+        {
+          "text": "There seems to be a failure in the release mechanism for Alberta.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_195_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_196",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "I don't see any data in the Order Source field in the details.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_196_a.mp3"
-          },
-          {
-            "text": "That's correct. The field is not being populated for Quebec orders.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_196_b.mp3"
-          }
-        ]
-      },
-      "note": "'Order Source' (Noun) is a data field that indicates how an order was created (e.g., via mobile app, website, or manual entry)."
+    "note": "'Liquor board' (Noun) is a government agency that regulates the sale of alcoholic beverages, a key external system in this context."
+  },
+  {
+    "cardId": "tpp_196",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "I don't see any data in the Order Source field in the details.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_196_a.mp3"
+        },
+        {
+          "text": "That's correct. The field is not being populated for Quebec orders.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_196_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_197",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "The Unit of Measure is not auto-filling for returns.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_197_a.mp3"
-          },
-          {
-            "text": "I see. The user has to manually select it every time.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_197_b.mp3"
-          }
-        ]
-      },
-      "note": "'Unit of Measure' or 'UoM' (Noun) specifies the unit used to quantify a product, such as 'case', 'bottle', or 'each'."
+    "note": "'Order Source' (Noun) is a data field that indicates how an order was created (e.g., via mobile app, website, or manual entry)."
+  },
+  {
+    "cardId": "tpp_197",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "The Unit of Measure is not auto-filling for returns.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_197_a.mp3"
+        },
+        {
+          "text": "I see. The user has to manually select it every time.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_197_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_198",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "Where do I track my work and the version details?",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_198_a.mp3"
-          },
-          {
-            "text": "You must keep the DEV.Version.File updated with all your changes.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_198_b.mp3"
-          }
-        ]
-      },
-      "note": "'Version File' (Noun) is a text file used to manually log changes, versions, and comments for each development environment (DEV, UAT, PROD)."
+    "note": "'Unit of Measure' or 'UoM' (Noun) specifies the unit used to quantify a product, such as 'case', 'bottle', or 'each'."
+  },
+  {
+    "cardId": "tpp_198",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "Where do I track my work and the version details?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_198_a.mp3"
+        },
+        {
+          "text": "You must keep the DEV.Version.File updated with all your changes.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_198_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_199",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "The testing failed. What is the process now?",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_199_a.mp3"
-          },
-          {
-            "text": "You must return to development and create a new version for the next iteration.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_199_b.mp3"
-          }
-        ]
-      },
-      "note": "'Iteration' (Noun) is a single cycle of a development process. In this workflow, a failed test results in a new iteration of development and review."
+    "note": "'Version File' (Noun) is a text file used to manually log changes, versions, and comments for each development environment (DEV, UAT, PROD)."
+  },
+  {
+    "cardId": "tpp_199",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "The testing failed. What is the process now?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_199_a.mp3"
+        },
+        {
+          "text": "You must return to development and create a new version for the next iteration.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_199_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_200",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "The UAT version was signed off. What's next for the code?",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_200_a.mp3"
-          },
-          {
-            "text": "Create a new PR to merge the code from the Test branch to the Prod branch.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_200_b.mp3"
-          }
-        ]
-      },
-      "note": "'Test branch' (Noun) is the code branch containing versions of the software ready for user acceptance testing.\n\n'Prod branch' (Prod is short for Production) is the code branch containing the stable, live version of the software."
+    "note": "'Iteration' (Noun) is a single cycle of a development process. In this workflow, a failed test results in a new iteration of development and review."
+  },
+  {
+    "cardId": "tpp_200",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "The UAT version was signed off. What's next for the code?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_200_a.mp3"
+        },
+        {
+          "text": "Create a new PR to merge the code from the Test branch to the Prod branch.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_200_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_201",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "The app is ready to go live to all users.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_201_a.mp3"
-          },
-          {
-            "text": "Okay, the Sys Admin will now publish the app in the Live environment.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_201_b.mp3"
-          }
-        ]
-      },
-      "note": "'Live environment' (Noun Phrase) is the real production server and system that actual users interact with."
+    "note": "'Test branch' (Noun) is the code branch containing versions of the software ready for user acceptance testing.\n\n'Prod branch' (Prod is short for Production) is the code branch containing the stable, live version of the software."
+  },
+  {
+    "cardId": "tpp_201",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "The app is ready to go live to all users.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_201_a.mp3"
+        },
+        {
+          "text": "Okay, the Sys Admin will now publish the app in the Live environment.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_201_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_202",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "The checkout total calculation is failing, but only in Alberta.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_202_a.mp3"
-          },
-          {
-            "text": "It seems to be a region-specific bug affecting the checkout table.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_202_b.mp3"
-          }
-        ]
-      },
-      "note": "'Region-specific' (Adjective) describes a bug or feature that only occurs in a particular geographical location or under certain regional settings."
+    "note": "'Live environment' (Noun Phrase) is the real production server and system that actual users interact with."
+  },
+  {
+    "cardId": "tpp_202",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "The checkout total calculation is failing, but only in Alberta.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_202_a.mp3"
+        },
+        {
+          "text": "It seems to be a region-specific bug affecting the checkout table.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_202_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_203",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "Can a user fill in return details for multiple items at once?",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_203_a.mp3"
-          },
-          {
-            "text": "No, in the French version, this has been reported as an issue.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_203_b.mp3"
-          }
-        ]
-      },
-      "note": "'Return details' (Noun Phrase) refers to the information required to process a product return, such as item quantity and reason for return."
+    "note": "'Region-specific' (Adjective) describes a bug or feature that only occurs in a particular geographical location or under certain regional settings."
+  },
+  {
+    "cardId": "tpp_203",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "Can a user fill in return details for multiple items at once?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_203_a.mp3"
+        },
+        {
+          "text": "No, in the French version, this has been reported as an issue.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_203_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_204",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "Is the issue with the 'Not a Valid Month' error fixed?",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_204_a.mp3"
-          },
-          {
-            "text": "The ticket is still Open, so no work has begun on it yet.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_204_b.mp3"
-          }
-        ]
-      },
-      "note": "'Open' (Adjective) is the initial status of a newly created issue or ticket, indicating that it has been logged but is not yet being worked on."
+    "note": "'Return details' (Noun Phrase) refers to the information required to process a product return, such as item quantity and reason for return."
+  },
+  {
+    "cardId": "tpp_204",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "Is the issue with the 'Not a Valid Month' error fixed?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_204_a.mp3"
+        },
+        {
+          "text": "The ticket is still Open, so no work has begun on it yet.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_204_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_205",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "The item number is displayed in the cart instead of the product code.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_205_a.mp3"
-          },
-          {
-            "text": "This is a known bug that affects the shopping cart screen in Alberta.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_205_b.mp3"
-          }
-        ]
-      },
-      "note": "'Item number' (Noun) is a generic or internal identifier, which can be different from the official 'product code' that customers should see."
+    "note": "'Open' (Adjective) is the initial status of a newly created issue or ticket, indicating that it has been logged but is not yet being worked on."
+  },
+  {
+    "cardId": "tpp_205",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "The item number is displayed in the cart instead of the product code.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_205_a.mp3"
+        },
+        {
+          "text": "This is a known bug that affects the shopping cart screen in Alberta.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_205_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_206",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "Why was my Pull Request rejected?",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_206_a.mp3"
-          },
-          {
-            "text": "The peer reviewer found an issue. You must fix it and create a new PR.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_206_b.mp3"
-          }
-        ]
-      },
-      "note": "'Rejected' (Adjective) describes the status of a Pull Request that has been denied by a reviewer, requiring the original developer to make corrections."
+    "note": "'Item number' (Noun) is a generic or internal identifier, which can be different from the official 'product code' that customers should see."
+  },
+  {
+    "cardId": "tpp_206",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "Why was my Pull Request rejected?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_206_a.mp3"
+        },
+        {
+          "text": "The peer reviewer found an issue. You must fix it and create a new PR.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_206_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_207",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "After UAT sign-off, what do I put in the PROD version file?",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_207_a.mp3"
-          },
-          {
-            "text": "Use the same version from UAT, but change the last character from U to P.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_207_b.mp3"
-          }
-        ]
-      },
-      "note": "'PROD.Version.File' is the specific version file for the Production environment. The naming convention of changing the last character signifies a version's promotion from UAT to Production."
+    "note": "'Rejected' (Adjective) describes the status of a Pull Request that has been denied by a reviewer, requiring the original developer to make corrections."
+  },
+  {
+    "cardId": "tpp_207",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "After UAT sign-off, what do I put in the PROD version file?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_207_a.mp3"
+        },
+        {
+          "text": "Use the same version from UAT, but change the last character from U to P.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_207_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_208",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "How do I request that the new app version be published?",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_208_a.mp3"
-          },
-          {
-            "text": "You must submit a Service Request to the Sys Admin team.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_208_b.mp3"
-          }
-        ]
-      },
-      "note": "'Service Request' or 'SR' (Noun) is a formal request submitted to an IT service team to initiate a standard procedure, such as publishing an application."
+    "note": "'PROD.Version.File' is the specific version file for the Production environment. The naming convention of changing the last character signifies a version's promotion from UAT to Production."
+  },
+  {
+    "cardId": "tpp_208",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "How do I request that the new app version be published?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_208_a.mp3"
+        },
+        {
+          "text": "You must submit a Service Request to the Sys Admin team.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_208_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_209",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "The search by product acronym is not returning consistent results.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_209_a.mp3"
-          },
-          {
-            "text": "I see that issue was already logged with a Low priority and is now Closed.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_209_b.mp3"
-          }
-        ]
-      },
-      "note": "'Low Priority' (Adjective) describes a minor issue or cosmetic bug that does not significantly impact core functionality and can be addressed at a later time."
+    "note": "'Service Request' or 'SR' (Noun) is a formal request submitted to an IT service team to initiate a standard procedure, such as publishing an application."
+  },
+  {
+    "cardId": "tpp_209",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "The search by product acronym is not returning consistent results.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_209_a.mp3"
+        },
+        {
+          "text": "I see that issue was already logged with a Low priority and is now Closed.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_209_b.mp3"
+        }
+      ]
     },
-    {
-      "cardId": "tpp_210",
-      "sideA": {
-        "conversation": [
-          {
-            "text": "My PR is approved. What do I do now with the final app?",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_210_a.mp3"
-          },
-          {
-            "text": "Generate the executable and copy it to the PROD folder on Teams.",
-            "audioSrc": "public/data/audio/technical_project_plan/tpp_210_b.mp3"
-          }
-        ]
-      },
-      "note": "'PROD folder' (Noun) is the specific, controlled location in a shared space like Microsoft Teams where the final, production-ready executable is stored for deployment."
-    }
-  ]
+    "note": "'Low Priority' (Adjective) describes a minor issue or cosmetic bug that does not significantly impact core functionality and can be addressed at a later time."
+  },
+  {
+    "cardId": "tpp_210",
+    "sideA": {
+      "conversation": [
+        {
+          "text": "My PR is approved. What do I do now with the final app?",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_210_a.mp3"
+        },
+        {
+          "text": "Generate the executable and copy it to the PROD folder on Teams.",
+          "audioSrc": "public/data/audio/technical_project_plan/tpp_210_b.mp3"
+        }
+      ]
+    },
+    "note": "'PROD folder' (Noun) is the specific, controlled location in a shared space like Microsoft Teams where the final, production-ready executable is stored for deployment."
+  }
+]
 }

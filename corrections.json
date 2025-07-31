@@ -1,0 +1,147 @@
+[
+  {
+    "cardId": "egac_266",
+    "category": "Prepositions: 'Into' vs 'In'",
+    "sentenceParts": {
+      "prefix": "She dove ",
+      "suffix": " the pool to cool off."
+    },
+    "options": [
+      {
+        "text": "into",
+        "isCorrect": true
+      },
+      {
+        "text": "in",
+        "isCorrect": false
+      },
+      {
+        "text": "to",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "She dove into the pool to cool off.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_266.mp3",
+    "hint": "This preposition of motion helps to clearly distinguish from a static location ('in').",
+    "content": {
+      "type": "text",
+      "value": "[Into] clearly indicates the movement from outside the pool to inside it.\n\n~In~ describes a location ('She is swimming in the pool'), not the movement of entering.\n~To~ indicates direction but not necessarily entry ('She walked to the pool').\n\n**Vocabulary:**\n- **Dove**: The past tense of the verb 'to dive', which means to jump head-first into water.\n- **To cool off**: A phrasal verb meaning to lower your body temperature after being hot."
+    }
+  },
+  {
+    "cardId": "egac_212",
+    "category": "Prepositions: 'Out of' for depletion",
+    "sentenceParts": {
+      "prefix": "I can't make coffee because we're completely ",
+      "suffix": " beans."
+    },
+    "options": [
+      {
+        "text": "out of",
+        "isCorrect": true
+      },
+      {
+        "text": "without of",
+        "isCorrect": false
+      },
+      {
+        "text": "off",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "I can't make coffee because we're completely out of beans.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_212.mp3",
+    "hint": "This phrase is used for consumables like food, milk, or money.",
+    "content": {
+      "type": "text",
+      "value": "[Out of] is the correct prepositional phrase to indicate that a supply has been fully used up.\n\n~without of~ is grammatically incorrect.\n~off~ has many meanings, but it does not mean 'depleted' in this context.\n\n**Vocabulary:**\n- **Beans**: In this context, 'beans' refers to **coffee beans**, the seeds from which coffee is made."
+    }
+  },
+  {
+    "cardId": "egac_400",
+    "category": "Phrasal Verbs: 'piggyback on'",
+    "sentenceParts": {
+      "prefix": "If I can just ",
+      "suffix": " what you said, I think improving the UX is a nice-to-have feature."
+    },
+    "options": [
+      {
+        "text": "piggyback on",
+        "isCorrect": true
+      },
+      {
+        "text": "follow up with",
+        "isCorrect": false
+      },
+      {
+        "text": "take on",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "If I can just piggyback on what you said, I think improving the UX is a nice-to-have feature.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_400.mp3",
+    "hint": "A 'nice-to-have' is a feature that is desirable but not essential.",
+    "content": {
+      "type": "text",
+      "value": "[To piggyback on] is a phrasal verb that means to use someone's previous comment or idea as a starting point for your own. It's a common way to join a conversation in a supportive way. UX stands for User Experience, and nice-to-have describes a non-essential feature.\n\n~Follow up with~ means to contact someone later.\n~Take on~ means to accept a responsibility."
+    }
+  },
+  {
+    "cardId": "egac_079",
+    "category": "Vocabulary: Money (Bills)",
+    "sentenceParts": {
+      "prefix": "Can you break a ",
+      "suffix": "? I only have large bills."
+    },
+    "options": [
+      {
+        "text": "twenty-dollar bill",
+        "isCorrect": true
+      },
+      {
+        "text": "twenty-dollars bill",
+        "isCorrect": false
+      },
+      {
+        "text": "twenty of dollars bill",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "Can you break a twenty-dollar bill? I only have large bills.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_079.mp3",
+    "hint": "This rule also applies to other measurements, like 'a ten-mile run' or 'a six-foot tall man'.",
+    "content": {
+      "type": "text",
+      "value": "When a number and noun (e.g., twenty dollar) are used as a compound adjective before another noun ('bill'), the noun part of the adjective is [singular].\n\n~twenty-dollars bill~ is a common error; the adjective form should be singular.\n~twenty of dollars bill~ is grammatically incorrect.\n\n**Idiom:**\n- **To break a bill**: This phrase means to exchange a large bill (like a $20 bill) for an equivalent amount of money in smaller bills or coins (e.g., two $10 bills, or four $5 bills)."
+    }
+  },
+  {
+    "cardId": "egac_201",
+    "category": "Knowledge vs. Experience: 'Been to'",
+    "sentenceParts": {
+      "prefix": "I know a lot about Japan, but I've never actually ",
+      "suffix": " there."
+    },
+    "options": [
+      {
+        "text": "been ",
+        "isCorrect": true
+      },
+      {
+        "text": "known",
+        "isCorrect": false
+      },
+      {
+        "text": "gone in",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "I know a lot about Japan, but I've never actually been there.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_201.mp3",
+    "hint": "Using 'gone to' would imply you are still at that location and have not returned.",
+    "content": {
+      "type": "text",
+      "value": "[Been there] is the correct phrase to talk about the experience of having visited a place and returned.\n\n~known~ implies a deep, intimate understanding of a place, which contradicts the context.\n~gone in~ is grammatically incorrect. 'Gone to' implies the person is still there.\n\n**Usage Note**: We use the structure 'have been to [a place]' specifically to talk about the **experience** of visiting a place in the past. It is the correct and most natural choice here."
+    }
+  }
+]
