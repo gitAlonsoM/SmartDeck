@@ -125,42 +125,31 @@ class FlippableCardScreen {
            const noteContainer = document.getElementById('note-content-container');
         noteContainer.innerHTML = '';
         noteContainer.classList.add('hidden');
+
+
         if (this.cardData.note && typeof this.cardData.note === 'string' && this.cardData.note.trim() !== '') {
-            // Split the note by double newline to handle multiple distinct topics.
-            const noteTopics = this.cardData.note.split('\n\n');
-            
-            // Map each topic to its own styled paragraph.
-            const formattedNotesHTML = noteTopics.map(topic => {
-                const trimmedTopic = topic.trim();
-                if (trimmedTopic) {
-                    // Each topic gets a "pro tip" icon and a class for styling.
-                    return `
-                        <div class="flex items-start gap-2">
-                            <span class="mt-1 text-blue-400" title="Pro-Tip">💡</span>
-                            <p class="text-sm text-gray-400 dark:text-gray-300 note-paragraph">${trimmedTopic}</p>
-                        </div>
-                    `;
-                }
-                return '';
-            }).join('');
- if (formattedNotesHTML) {
-                // The container now receives a series of paragraphs directly.
-                const noteParagraphs = noteTopics.map(topic => {
-                    const trimmedTopic = topic.trim();
-                    if (trimmedTopic) {
-                        // Icon is removed, and a bottom margin is added to separate paragraphs.
-                        return `<p class="text-sm text-gray-400 dark:text-gray-300 note-paragraph mb-2 last:mb-0">${trimmedTopic}</p>`;
-                    }
-                    return '';
-                }).join('');
-                
-                if (noteParagraphs) {
-                    noteContainer.innerHTML = noteParagraphs;
-                    noteContainer.classList.remove('hidden');
-                }
-            }
+           // Split the note into paragraphs and process formatting for each one
+            const noteParagraphs = this.cardData.note.split('\n\n').map(topic => {
+                let formattedTopic = topic.trim();
+                if (formattedTopic) {
+                    // Apply the same formatting logic from AudioChoiceScreen to parse custom symbols
+                    formattedTopic = formattedTopic.replace(/\[([^\]]+)\]/g, '<strong class="font-semibold text-indigo-400">$1</strong>');
+                    formattedTopic = formattedTopic.replace(/~([^~]+)~/g, '<strong class="font-semibold text-yellow-400 dark:text-yellow-500">$1</strong>');
+                    return `<p class="text-sm text-gray-400 dark:text-gray-300 note-paragraph mb-2 last:mb-0">${formattedTopic}</p>`;
+                }
+                return '';
+            }).join('');
+            
+            if (noteParagraphs) {
+                noteContainer.innerHTML = noteParagraphs;
+                noteContainer.classList.remove('hidden');
+            }
         }
     }
+
+
+
+    
 
     /**
      * Plays a sequence of audio elements one after the other.
