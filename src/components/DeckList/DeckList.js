@@ -22,6 +22,10 @@ class DeckList {
         
         ComponentLoader.loadHTML('/src/components/DeckList/deck-list.html').then(html => {
             this.container.innerHTML = html;
+
+            // Asynchronously load and display the version number
+            this._displayVersion();
+
             this.setupTtsControls(); 
 
             const deckListContainer = this.container.querySelector('#deck-list-container');
@@ -160,5 +164,19 @@ class DeckList {
         }
 
         return card;
+    }
+
+     /**
+     * Fetches the version and displays it in the designated container.
+     * @private
+     */
+    async _displayVersion() {
+        const version = await VersionService.getVersion();
+        if (version) {
+            const versionContainer = this.container.querySelector('#version-container');
+            if (versionContainer) {
+                versionContainer.innerHTML = `<p class="font-mono text-xs text-gray-500 dark:text-gray-400">SmartDeck v${version}</p>`;
+            }
+        }
     }
 }

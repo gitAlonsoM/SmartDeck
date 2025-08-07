@@ -42,7 +42,7 @@ class ImprovementService {
             const review_request = improvementData[cardId];
             return { ...card, review_request };
         });
-// Use the stored 'fileName' for static decks, or construct it from the id for AI-generated decks.
+    // Use the stored 'fileName' for static decks, or construct it from the id for AI-generated decks.
         const deckFileName = deck.fileName || `${deck.id}.json`;
         const deckRelativePath = `public/data/${deckFileName}`;
 
