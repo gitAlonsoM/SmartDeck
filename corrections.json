@@ -1,38 +1,27 @@
 [
   {
-    "cardId": "mi_038",
+    "cardId": "mi_013",
     "cardType": "flippable",
-    "sideA": "Ese es un nuevo problema, ¿podríamos ver sus capturas de pantalla?",
+    "sideA": "Me queda bastante claro el problema.",
     "sideB": [
-      "That's a new issue. Could we see your screenshots?",
-      "Okay, this looks like a new problem. Can you share the screenshots?",
-      "This is a new one. Would you be able to show us the screenshots for it?",
-      "That's a new issue. Could we see its screenshots?"
+      "The issue is pretty clear to me now.",
+      "Yeah, I have a clear understanding of the issue.",
+      "I understand the problem clearly now.",
+      "It's clear to me."
     ],
-    "note": "The possessive adjective for a formal 'you' is [your]. Don't confuse it with their (de ellos).\n\n~Screen captures~ is also correct, but [screenshots] (Noun) is far more common in a technical context.\n\nUsing [its] is also correct, but it changes the focus. [Your screenshots] refers to the screenshots you (the person) have. [Its screenshots] refers to the screenshots belonging to the issue itself. Both are valid."
+    "note": "The literal translation ~The problem stays clear to me~ is unnatural. English uses [The problem is clear to me] or [I understand].\n\nStarting with For me... For me the problem is very clear is less natural than starting with the subject ([The problem is...]) or the person ([I understand...]).\n\n~It's really clear to me the issue.~ (Unnatural sentence structure. It's better to say ['The issue is really clear to me'].)"
   },
   {
-    "cardId": "mi_037",
+    "cardId": "mi_036",
     "cardType": "flippable",
-    "sideA": "Sí, es el mismo problema de antes, solo que con otra cuenta.",
+    "sideA": "Ya habiamos visto ese problema anteriormente.",
     "sideB": [
-      "Yes, it's the same issue as before, just with a different account.",
-      "Right, that's the same problem, but it's happening on another account.",
-      "It's the same underlying issue, the only new variable is the account."
+      "We've seen this issue before.",
+      "This problem looks familiar; I think we've encountered it in the past.",
+      "This isn't a new issue for us.",
+      "We've already seen this issue."
     ],
-    "note": "The phrase 'solo que' is idiomatically translated as [just with] or [but with].\n\n~The only that~ is a literal and incorrect translation. A more natural way to say it is [the only difference is...].\n\n~Yes, it's the same issue before...~ (Incorrect structure. The phrase 'the same' needs to be followed by 'as' when making a comparison: 'the same issue as before'.)"
-  },
-  {
-    "cardId": "mi_039",
-    "cardType": "flippable",
-    "sideA": "Son los mismos problemas que hemos visto en otras provincias.",
-    "sideB": [
-      "These are the same issues we've seen in other regions.",
-      "It's the same set of problems we've observed in other environments.",
-      "We've run into these exact same issues in other areas.",
-      "They are the same issues we've seen in other provinces."
-    ],
-    "note": "'Provincias' can translate to [regions], [areas], or even [environments] in a technical context, depending on the system's architecture.\n\n~The sames problems~ is incorrect. [The same] is an adjective and does not become plural."
+    "note": "The Present Perfect tense ([We've seen]) is ideal for talking about past experiences without a specific time. The simple past (We saw this issue before) is also correct but less common for this nuance.\n\n~Beforely~ is not a word. Use [before] or [previously].\n\n~We've been seen this issue before.~ (Incorrect verb structure. This mixes the active present perfect 'We have seen' with a passive form. The correct active form is [We've seen].)\n\n~We've seen already this issue before.~ (This is redundant because 'already' and 'before' have similar meanings. Also, the word order is unnatural. The correct form is 'We've already seen this issue'.)"
   },
   {
     "cardId": "mi_042",
@@ -42,105 +31,44 @@
       "I think these issues are duplicates.",
       "I believe these are repeated issues; we might have them logged already.",
       "I have a feeling these problems have already been reported.",
-      "I think these issues are repeated."
+      "I think these issues are repeated.",
+      "I think these issues are already repeated."
     ],
     "note": "[Duplicates] (Noun) or [duplicate issues] is the standard term in issue tracking systems.\n\n[I think these issues are repeated] is a perfectly correct and common phrase. In a technical context like issue tracking, using the noun [duplicates] (e.g., 'these issues are duplicates') is often more concise and standard."
   },
   {
-    "cardId": "mi_036",
+    "cardId": "mi_025",
     "cardType": "flippable",
-    "sideA": "Ya habiamos visto ese problema anteriormente.",
+    "sideA": "Usando mis cuentas no he podido obtener ese problema.",
     "sideB": [
-      "We've seen this issue before.",
-      "This problem looks familiar; I think we've encountered it in the past.",
-      "This isn't a new issue for us."
+      "I haven't been able to replicate the issue using my accounts.",
+      "I couldn't reproduce that bug with my test accounts.",
+      "I tried with my accounts, but I couldn't get the problem to occur.",
+      "Using my accounts, I haven't been able to get the issue.",
+      "I haven't got that issue using my account."
     ],
-    "note": "The Present Perfect tense ([We've seen]) is ideal for talking about past experiences without a specific time. The simple past (We saw this issue before) is also correct but less common for this nuance.\n\n~Beforely~ is not a word. Use [before] or [previously].\n\n~We've been seen this issue before.~ (Incorrect verb structure. This mixes the active present perfect 'We have seen' with a passive form. The correct active form is [We've seen].)"
+    "note": "The present perfect [haven't] must be followed by a past participle, like [been able to], not a modal verb like can.\n\nThe negative form of 'could' is [could not] or [couldn't], not not could. Also, obtain the problem is unnatural; use [get the issue]."
   },
   {
-    "cardId": "mi_001",
+    "cardId": "mi_031",
     "cardType": "flippable",
-    "sideA": "El no va a venir a la reunion, tenia cosas personales que hacer.",
+    "sideA": "Yo me encargo de eso.",
     "sideB": [
-      "He's not going to make it to the meeting. He had some personal stuff to take care of.",
-      "He won't be able to join today. He had a personal matter to attend to.",
-      "He's going to miss the meeting; he had something personal come up.",
-      "He won't join the meeting; he had to take care of a personal matter.",
-      "He's not coming to the meeting. He had personal things to do.",
-      "He's not coming to the meeting. He had personal stuff to do."
+      "I can take care of that.",
+      "I'll handle it.",
+      "Leave it with me, I'll get it done."
     ],
-    "note": "Phrasal verbs like [to make it to] (attend) and [to take care of] (deal with) are common.\n\n~things to make~ is incorrect; the verb make is for creating. For tasks, use [do] or [take care of].\n\n~To assist~ is a false friend meaning 'to help'. The correct verb is [to attend]."
+    "note": "The literal translation I charge of that is incorrect. The correct idiom is [I'm in charge of that] (for responsibility) or, for taking on a task, [I'll handle it].\n\n~I make me charge of that~ is an incorrect structure. English doesn't use a reflexive verb here.\n\n~I'll handle on that. / I'll handle of that.~ (Incorrect. The verb 'handle' is transitive and does not take a preposition like 'on' or 'of'. The correct form is 'I'll handle it'.)"
   },
   {
-    "cardId": "mi_020",
+    "cardId": "mi_048",
     "cardType": "flippable",
-    "sideA": "Sí, estamos trabajando en el problema, pero necesitamos algo mas de tiempo.",
+    "sideA": "¿En qué provincias aplican esos cambios?",
     "sideB": [
-      "Yes, we're working on the issue, but we need a bit more time.",
-      "That's right. We're on it, but we'll need some extra time.",
-      "We are making progress on the problem, but we require a little more time."
+      "Which provinces do these changes apply to?",
+      "In which provinces are these changes applicable?",
+      "Which regions are covered by these changes?"
     ],
-    "note": "A direct translation of 'algo más de tiempo' like something more of time is incorrect. Use the idiom [a bit more time] or [some more time].\n\nThe word order we need more time something is incorrect. Phrases like [a bit] or [a little] come before 'more time'.\n\n~we need a bit of more time~ (Incorrect idiom. The preposition 'of' is not used here. The correct phrase is [a bit more time] or [a little more time].)"
-  },
-  {
-    "cardId": "mi_009",
-    "cardType": "flippable",
-    "sideA": "Sí, podre unirme a la reunion.",
-    "sideB": [
-      "Yes, I'll be able to join the meeting.",
-      "Yep, I can make it to the meeting.",
-      "Yes, I'll be there.",
-      "Yes, I can join the meeting."
-    ],
-    "note": "You cannot combine will and can. The correct structure for future ability is [will be able to].\n\nAfter the modal verb [can], the next verb is used in its base form without to. Correct: [I can join], not I can to join."
-  },
-  {
-    "cardId": "mi_043",
-    "cardType": "flippable",
-    "sideA": "¿Puedes darme acceso para revisar los logs?",
-    "sideB": [
-      "Can you grant me access to check the logs?",
-      "Could you give me permission to look at the logs?",
-      "I need access to review the server logs."
-    ],
-    "note": "'Dar acceso' translates to [grant access] or [give permission].\n\n~Give me access for check~ is incorrect. To express purpose, it's more natural to use the infinitive [to check], not the -ing form.\n\n~Can you give me the grant...~ (Incorrect word choice. 'Grant' is a noun, but it's not the correct noun for 'permission' in this context. Use the verb [to grant] as in 'grant me access', or the noun [permission] as in 'give me permission'.)"
-  },
-  {
-    "cardId": "mi_028",
-    "cardType": "flippable",
-    "sideA": "Se te escucha un poco entrecortado.",
-    "sideB": [
-      "You're breaking up a little bit.",
-      "Your audio is a little choppy.",
-      "We're losing you, your connection seems unstable.",
-      "It sounds like you're breaking up a bit.",
-      "It sounds a bit cut off."
-    ],
-    "note": "The literal translation You listen cut is incorrect. The correct idiom is [You're breaking up] or [Your audio is choppy]."
-  },
-  {
-    "cardId": "mi_008",
-    "cardType": "flippable",
-    "sideA": "El no podra asistir a la reunion de mañana.",
-    "sideB": [
-      "He won't be able to attend tomorrow's meeting.",
-      "He can't make it to the meeting tomorrow.",
-      "He isn't going to be at the meeting tomorrow.",
-      "He won't be able to join the meeting tomorrow.",
-      "He won't join the meeting tomorrow."
-    ],
-    "note": "Assist is a false friend; it means 'to help'. The correct verb is [attend].\n\n~He won't join to the meeting~ (Incorrect preposition. The verb 'join' directly takes an object and does not need 'to'. The correct form is [join the meeting].)"
-  },
-  {
-    "cardId": "mi_032",
-    "cardType": "flippable",
-    "sideA": "Entonces, para resumir...",
-    "sideB": [
-      "So, to recap...",
-      "Alright, just to summarize the key points...",
-      "Let me quickly go over what we've decided.",
-      "So, to summarize..."
-    ],
-    "note": "Resume is a verb ('to start again') or a noun (a CV). The verb for 'resumir' is [to summarize] or [to recap].\n\n~To make a summary~ is grammatically okay but clunky. Using the verbs [to summarize] or [to recap] is more direct and natural.\n\n~So, to summary...~ (Incorrect: 'summary' is a noun. The infinitive verb form is required here, which is 'to summarize'.)"
+    "note": "The phrasal verb [to apply to] is the most natural way to express that a rule or change affects something.\n\n[Covered by] is a good synonym in this context.\n\n~In what provinces apply these changes?~ (Incorrect question structure. You need the auxiliary verb 'do' before the subject: '...do these changes apply?') \n\n~Which provinces do apply these changes?~ (Incorrect word order. The auxiliary verb 'do' must come before the subject 'these changes'. The correct structure is 'Which provinces do these changes apply to?')"
   }
 ]
