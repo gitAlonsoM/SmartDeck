@@ -12481,7 +12481,206 @@
       "content": {
         "type": "text",
         "value": "The structure for a negative state of custom is [be used to + not + gerund]. He is accustomed to the absence of sugar.\n\n~not have~ and ~don't have~ are incorrect verb forms to follow the preposition 'to' in this expression."
+       }
+    },
+    {
+      "cardId": "egac_431",
+      "category": "Present Simple Questions",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " this new software work on older computers?"
+      },
+      "options": [
+        { "text": "Does", "isCorrect": true },
+        { "text": "Do", "isCorrect": false },
+        { "text": "Is", "isCorrect": false }
+      ],
+      "correctAnswer": "Does this new software work on older computers?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_431.mp3",
+      "hint": "The subject of the sentence determines whether to use 'do' or 'does'.",
+      "content": {
+        "type": "text",
+        "value": "In questions, the auxiliary verb must agree with the subject. The [complete subject] here is 'this new software', which is singular (it). Therefore, we use [Does].\n\n~Do~ is used for plural subjects (they) or for 'I'/'you'/'we'.\n~Is~ is the verb 'to be' and cannot be used as an auxiliary for the main verb 'work'."
+      }
+    },
+    {
+      "cardId": "egac_432",
+      "category": "Present Simple Questions",
+      "sentenceParts": {
+        "prefix": "Why ",
+        "suffix": " all these documents require a signature?"
+      },
+      "options": [
+        { "text": "do", "isCorrect": true },
+        { "text": "does", "isCorrect": false },
+        { "text": "are", "isCorrect": false }
+      ],
+      "correctAnswer": "Why do all these documents require a signature?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_432.mp3",
+      "hint": "Identify the full subject of the sentence first. Is it singular or plural?",
+      "content": {
+        "type": "text",
+        "value": "The [complete subject] of the question is 'all these documents', which is plural (they). For plural subjects, the correct auxiliary verb is [do].\n\n~Does~ is for singular subjects.\n~Are~ is the verb 'to be' and is not used with the main verb 'require'."
+      }
+    },
+    {
+      "cardId": "egac_433",
+      "category": "Present Simple Questions",
+      "sentenceParts": {
+        "prefix": "Where ",
+        "suffix": " the manager of these teams keep the files?"
+      },
+      "options": [
+        { "text": "does", "isCorrect": true },
+        { "text": "do", "isCorrect": false },
+        { "text": "is", "isCorrect": false }
+      ],
+      "correctAnswer": "Where does the manager of these teams keep the files?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_433.mp3",
+      "hint": "Don't be distracted by plural nouns that are not the main subject.",
+      "content": {
+        "type": "text",
+        "value": "The core of the [complete subject] is 'the manager', which is a single person. The phrase 'of these teams' just describes the manager. Since the subject is singular, we must use [does].\n\n~Do~ is a common error, chosen when focusing on the plural 'teams' instead of the singular 'manager'."
+      }
+    },
+    {
+      "cardId": "egac_434",
+      "category": "Present Simple Questions",
+      "sentenceParts": {
+        "prefix": "How does this machine ",
+        "suffix": " so much energy?"
+      },
+      "options": [
+        { "text": "consume", "isCorrect": true },
+        { "text": "consumes", "isCorrect": false },
+        { "text": "consuming", "isCorrect": false }
+      ],
+      "correctAnswer": "How does this machine consume so much energy?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_434.mp3",
+      "hint": "After an auxiliary verb ('do' or 'does') in a question, what form does the main verb take?",
+      "content": {
+        "type": "text",
+        "value": "After the auxiliary [does], the main verb must be in its [base form] ('consume'). The auxiliary already carries the third-person 's'.\n\n~Consumes~ is a very common error. You cannot have two '-s' endings (doeS and consumeS).\n~Consuming~ is the gerund/participle form and is incorrect here."
+      }
+    },
+    {
+      "cardId": "egac_435",
+      "category": "Present Simple Questions",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " those error messages mean the system is down?"
+      },
+      "options": [
+        { "text": "Do", "isCorrect": true },
+        { "text": "Does", "isCorrect": false },
+        { "text": "Are", "isCorrect": false }
+      ],
+      "correctAnswer": "Do those error messages mean the system is down?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_435.mp3",
+      "hint": "Look at the main noun in the subject phrase. Is it singular or plural?",
+      "content": {
+        "type": "text",
+        "value": "The [complete subject] is 'those error messages'. The core noun, 'messages', is plural. Therefore, the correct auxiliary verb is [Do].\n\n~Does~ would be used if the subject were singular (e.g., 'that error message').\n~Are~ is the verb 'to be'."
+      }
+    },
+    {
+      "cardId": "egac_436",
+      "category": "Present Simple Questions",
+      "sentenceParts": {
+        "prefix": "When ",
+        "suffix": " the next development cycle begin?"
+      },
+      "options": [
+        { "text": "does", "isCorrect": true },
+        { "text": "do", "isCorrect": false },
+        { "text": "is", "isCorrect": false }
+      ],
+      "correctAnswer": "When does the next development cycle begin?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_436.mp3",
+      "hint": "A 'development cycle' is a single period of work in software creation.",
+      "content": {
+        "type": "text",
+        "value": "The [complete subject] is 'the next development cycle'. This is a single concept, so it is treated as a third-person singular subject (it). The correct auxiliary is [does].\n\n~Do~ is for plural subjects.\n~Is~ cannot be used with the verb 'begin' in this structure."
+      }
+    },
+    {
+      "cardId": "egac_437",
+      "category": "Present Simple Questions",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " the feedback from our last user survey indicate a problem?"
+      },
+      "options": [
+        { "text": "Does", "isCorrect": true },
+        { "text": "Do", "isCorrect": false },
+        { "text": "Is", "isCorrect": false }
+      ],
+      "correctAnswer": "Does the feedback from our last user survey indicate a problem?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_437.mp3",
+      "hint": "The word 'feedback' is an uncountable noun, which is always treated as singular.",
+      "content": {
+        "type": "text",
+        "value": "The [complete subject] is 'The feedback from our last user survey'. The main noun is 'feedback', which is singular. Therefore, the auxiliary verb must be [Does].\n\n~Do~ is a distractor for those who might focus on 'user' or 'survey' instead of the main subject 'feedback'."
+      }
+    },
+    {
+      "cardId": "egac_438",
+      "category": "Present Simple Questions",
+      "sentenceParts": {
+        "prefix": "Why ",
+        "suffix": " the final decision depend on the budget?"
+      },
+      "options": [
+        { "text": "does", "isCorrect": true },
+        { "text": "do", "isCorrect": false },
+        { "text": "is", "isCorrect": false }
+      ],
+      "correctAnswer": "Why does the final decision depend on the budget?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_438.mp3",
+      "hint": "Is 'the final decision' one thing or many things?",
+      "content": {
+        "type": "text",
+        "value": "The [subject] of the question is 'the final decision', which is a singular concept (it). The correct auxiliary for a singular third-person subject is [does]. This follows the structure: Wh-word + does + subject + base verb.\n\n~Do~ is for plural subjects.\n~Is~ would be used for questions about state, not action (e.g., 'Why is the decision final?')."
+      }
+    },
+    {
+      "cardId": "egac_439",
+      "category": "Present Simple Questions",
+      "sentenceParts": {
+        "prefix": "What do these acronyms ",
+        "suffix": "?"
+      },
+      "options": [
+        { "text": "stand for", "isCorrect": true },
+        { "text": "stands for", "isCorrect": false },
+        { "text": "standing for", "isCorrect": false }
+      ],
+      "correctAnswer": "What do these acronyms stand for?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_439.mp3",
+      "hint": "Remember the rule for the main verb after any form of the auxiliary 'do'.",
+      "content": {
+        "type": "text",
+        "value": "After the auxiliary verb [do], the main verb must always be in its [base form]. The phrasal verb is 'to stand for'.\n\n~Stands for~ is incorrect because the auxiliary 'do' means the main verb does not need an '-s'.\n~Standing for~ is the gerund form and does not fit the structure."
+      }
+    },
+    {
+      "cardId": "egac_440",
+      "category": "Present Simple Questions",
+      "sentenceParts": {
+        "prefix": "How ",
+        "suffix": " the new system handle large amounts of data?"
+      },
+      "options": [
+        { "text": "does", "isCorrect": true },
+        { "text": "do", "isCorrect": false },
+        { "text": "can", "isCorrect": false }
+      ],
+      "correctAnswer": "How does the new system handle large amounts of data?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_440.mp3",
+      "hint": "The question is about a routine action of the system, not its ability.",
+      "content": {
+        "type": "text",
+        "value": "To ask about a habitual or regular action in the present simple, we use 'do' or 'does'. The [subject] is 'the new system' (singular), so the correct auxiliary is [does].\n\n~Do~ is for plural subjects.\n~Can~ is a modal verb that asks about ability ('is it able to handle...?'), which is a slightly different meaning than asking about its process ('how')."
       }
     }
-  ]
-}
+]}

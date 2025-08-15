@@ -20,7 +20,8 @@ class FlippableCardScreen {
             this.container.innerHTML = html;
         }
 
-        document.getElementById('deck-title-flippable').textContent = deckName;
+
+        //document.getElementById('deck-title-flippable').textContent = deckName;
         document.getElementById('card-progress-indicator').textContent = `${currentIndex + 1} / ${total}`;
          // Visually update the improvement flag icon based on its status
         const markImproveBtn = document.getElementById('mark-improve-btn-flippable');
@@ -110,17 +111,31 @@ class FlippableCardScreen {
                 sideBContainer.appendChild(this._createTextLine(part.text, false, index, part.audioSrc));
             });
         } else {
-            // For other card types, populate as before
+
+
+ // For other card types, populate as before
             if (!this.cardData.audioSrc) {
                 let text = typeof this.cardData.sideA === 'string' ? this.cardData.sideA : this.cardData.sideA.text;
                 sideAOnBackContainer.appendChild(this._createTextLine(text, true));
             }
-            this.cardData.sideB.forEach((line, index) => {
-                const audioSrcForLine = (this.cardData.audioSrc && index === 0) ? this.cardData.audioSrc : null;
-                sideBContainer.appendChild(this._createTextLine(line, false, index, audioSrcForLine));
-            });
-        }
 
+            // This logic is now backward-compatible. It checks if sideB is an array of objects (new) or strings (old).
+            if (Array.isArray(this.cardData.sideB) && this.cardData.sideB.length > 0) {
+                if (typeof this.cardData.sideB[0] === 'object' && this.cardData.sideB[0] !== null) {
+                    // New format: sideB is an array of objects like {text, audioSrc}
+                    this.cardData.sideB.forEach((item, index) => {
+                        // Pass the text and the audioSrc. _createTextLine will handle the fallback if audioSrc is null.
+                        sideBContainer.appendChild(this._createTextLine(item.text, false, index, item.audioSrc));
+                    });
+                } else {
+                    // Legacy format: sideB is an array of strings
+                    this.cardData.sideB.forEach((line, index) => {
+                        const audioSrcForLine = (this.cardData.audioSrc && index === 0) ? this.cardData.audioSrc : null;
+                        sideBContainer.appendChild(this._createTextLine(line, false, index, audioSrcForLine));
+                    });
+                }
+            }}
+        
         // --- Handle Improvement Note (if it exists) ---
            const noteContainer = document.getElementById('note-content-container');
         noteContainer.innerHTML = '';
@@ -232,7 +247,10 @@ class FlippableCardScreen {
         lineDiv.className = 'flex items-center justify-between w-full gap-4';
 
         const textElement = document.createElement('p');
-        textElement.textContent = text;
+
+
+
+         textElement.textContent = text;
         textElement.className = isSideA ? 'text-lg md:text-xl font-semibold text-center flex-grow' : 'text-lg';
         
         const playButton = document.createElement('button');
@@ -242,6 +260,7 @@ class FlippableCardScreen {
         if (audioSrcOverride) {
             playButton.className = 'play-audio-src-btn text-indigo-400 hover:text-indigo-300 transition-colors';
             playButton.dataset.audioSrc = audioSrcOverride;
+            playButton.dataset.textToSpeak = text; // Add text to dataset for fallback
             playButton.title = "Play high-quality audio";
         } else {
             // Otherwise, use the standard device TTS.
@@ -251,6 +270,10 @@ class FlippableCardScreen {
         }
 
         lineDiv.appendChild(textElement);
+
+
+
+
         lineDiv.appendChild(playButton);
         return lineDiv;
     }
@@ -268,14 +291,36 @@ class FlippableCardScreen {
             const ttsButton = event.target.closest('.play-tts-btn');
             const audioSrcButton = event.target.closest('.play-audio-src-btn');
 
-            if (audioSrcButton) {
+
+
+           if (audioSrcButton) {
                 // Handle playing the pre-generated high-quality audio file
                 const audioSrc = audioSrcButton.dataset.audioSrc;
+                const textForFallback = audioSrcButton.dataset.textToSpeak;
                 const audio = new Audio(audioSrc);
-                audio.play().catch(e => console.error("Error playing audio:", e));
+
+                // If the audio file fails to load (e.g., 404 Not Found), play TTS instead.
+                audio.onerror = () => {
+                    console.warn(`DEBUG: [FlippableCardScreen] Audio file not found at '${audioSrc}'. Falling back to TTS.`);
+                    const preferredVoice = StorageService.loadPreferredVoice();
+                    TTSService.speak(textForFallback, preferredVoice);
+                };
+                
+                audio.play().catch(e => {
+                    // The onerror handler will catch loading issues (NotSupportedError).
+                    // We still log other potential play errors (e.g., user interaction required).
+                    if (e.name !== 'NotSupportedError') {
+                         console.error("Error playing audio:", e)
+                    }
+                });
+
             } else if (ttsButton) {
                 // Handle playing with the device's native TTS
                 const text = ttsButton.dataset.textToSpeak;
+
+
+
+
                 const preferredVoice = StorageService.loadPreferredVoice();
                 TTSService.speak(text, preferredVoice);
             }
