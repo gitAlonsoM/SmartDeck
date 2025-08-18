@@ -469,7 +469,7 @@
       "hint": "The word 'children' itself is an old plural form, not ending in 's'.",
       "content": {
         "type": "text",
-        "value": "For [irregular plural nouns] that do not end in -s, like 'children', the possessive is formed by adding ['s], just like a singular noun.\n\n~childrens'~ is incorrect; the apostrophe after the 's' is for plural nouns that already end in 's'.\n~childrens's~ is a double possessive and grammatically incorrect.\n\n**Vocabulary Note:** 'Scattered' means thrown or spread about in various random directions. (e.g., 'Her clothes were scattered across the floor.')"
+        "value": "For [irregular plural nouns] that do not end in -s, like 'children', the possessive is formed by adding ['s], just like a singular noun.\n\n~childrens'~ is incorrect; the apostrophe after the 's' is for plural nouns that already end in 's'.\n~childrens's~ is a double possessive and grammatically incorrect."
       }
     },
     {
@@ -2939,7 +2939,7 @@
       "hint": "This informal structure is very common in speech to check or confirm what you think is true.",
       "content": {
         "type": "text",
-        "value": "[Declarative Questions] have the same grammar as a statement but use rising intonation to function as a question. They are common for confirming information.\n\nThe sentence 'So, you're not coming to the meeting this afternoon?' is already a complete grammatical statement. By adding a question mark and using a rising tone, it becomes a question to confirm information. Therefore, no extra word is needed, and the correct option is the blank one.\n\nThe options 'are' and 'why' would change the structure to a standard interrogative sentence (e.g., 'So, are you not coming...?'), which is not the form being tested here."
+        "value": "[Declarative Questions] have the same grammar as a statement but use rising intonation to function as a question. They are common for confirming information.\n\nThe options ~are~ and ~why~ would create a standard interrogative sentence, but the sentence is already structured as a declarative statement needing only confirmation."
       }
     },
     {
@@ -4309,7 +4309,7 @@
       "cardId": "egac_149",
       "category": "Modals: Had Better",
       "sentenceParts": {
-        "prefix": "The weather looks bad. We ",
+        "prefix": "The weather looks bad. We",
         "suffix": " take an umbrella."
       },
       "options": [
@@ -4318,11 +4318,11 @@
           "isCorrect": true
         },
         {
-          "text": "should",
+          "text": "should to",
           "isCorrect": false
         },
         {
-          "text": "must",
+          "text": "must to",
           "isCorrect": false
         }
       ],
@@ -4331,7 +4331,7 @@
       "hint": "This expression is stronger than 'should' and implies more urgency.",
       "content": {
         "type": "text",
-        "value": "['Had better'] (contracted to 'd better) is used for strong advice, implying a specific, negative consequence if ignored. It's followed by the base verb without 'to'.\n\n**Comparison:**\n- **'d better:** Strongest advice for this situation. Implies something bad will happen if you don't take an umbrella (you'll get wet).\n- **should:** General advice, less urgent.\n- **must:** Implies an obligation or rule, which doesn't fit this context."
+        "value": "[Had better] (contracted to 'd better) is used for strong advice, implying a negative consequence if ignored. It's followed by the base verb without 'to'.\n\n~should to~ and ~must to~ are grammatically incorrect."
       }
     },
     {
@@ -12481,7 +12481,7 @@
       "content": {
         "type": "text",
         "value": "The structure for a negative state of custom is [be used to + not + gerund]. He is accustomed to the absence of sugar.\n\n~not have~ and ~don't have~ are incorrect verb forms to follow the preposition 'to' in this expression."
-      }
+       }
     },
     {
       "cardId": "egac_431",
@@ -12491,18 +12491,9 @@
         "suffix": " this new software work on older computers?"
       },
       "options": [
-        {
-          "text": "Does",
-          "isCorrect": true
-        },
-        {
-          "text": "Do",
-          "isCorrect": false
-        },
-        {
-          "text": "Is",
-          "isCorrect": false
-        }
+        { "text": "Does", "isCorrect": true },
+        { "text": "Do", "isCorrect": false },
+        { "text": "Is", "isCorrect": false }
       ],
       "correctAnswer": "Does this new software work on older computers?",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_431.mp3",
@@ -12520,18 +12511,9 @@
         "suffix": " all these documents require a signature?"
       },
       "options": [
-        {
-          "text": "do",
-          "isCorrect": true
-        },
-        {
-          "text": "does",
-          "isCorrect": false
-        },
-        {
-          "text": "are",
-          "isCorrect": false
-        }
+        { "text": "do", "isCorrect": true },
+        { "text": "does", "isCorrect": false },
+        { "text": "are", "isCorrect": false }
       ],
       "correctAnswer": "Why do all these documents require a signature?",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_432.mp3",
@@ -12549,18 +12531,9 @@
         "suffix": " the manager of these teams keep the files?"
       },
       "options": [
-        {
-          "text": "does",
-          "isCorrect": true
-        },
-        {
-          "text": "do",
-          "isCorrect": false
-        },
-        {
-          "text": "is",
-          "isCorrect": false
-        }
+        { "text": "does", "isCorrect": true },
+        { "text": "do", "isCorrect": false },
+        { "text": "is", "isCorrect": false }
       ],
       "correctAnswer": "Where does the manager of these teams keep the files?",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_433.mp3",
@@ -12578,18 +12551,9 @@
         "suffix": " so much energy?"
       },
       "options": [
-        {
-          "text": "consume",
-          "isCorrect": true
-        },
-        {
-          "text": "consumes",
-          "isCorrect": false
-        },
-        {
-          "text": "consuming",
-          "isCorrect": false
-        }
+        { "text": "consume", "isCorrect": true },
+        { "text": "consumes", "isCorrect": false },
+        { "text": "consuming", "isCorrect": false }
       ],
       "correctAnswer": "How does this machine consume so much energy?",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_434.mp3",
@@ -12607,18 +12571,9 @@
         "suffix": " those error messages mean the system is down?"
       },
       "options": [
-        {
-          "text": "Do",
-          "isCorrect": true
-        },
-        {
-          "text": "Does",
-          "isCorrect": false
-        },
-        {
-          "text": "Are",
-          "isCorrect": false
-        }
+        { "text": "Do", "isCorrect": true },
+        { "text": "Does", "isCorrect": false },
+        { "text": "Are", "isCorrect": false }
       ],
       "correctAnswer": "Do those error messages mean the system is down?",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_435.mp3",
@@ -12636,18 +12591,9 @@
         "suffix": " the next development cycle begin?"
       },
       "options": [
-        {
-          "text": "does",
-          "isCorrect": true
-        },
-        {
-          "text": "do",
-          "isCorrect": false
-        },
-        {
-          "text": "is",
-          "isCorrect": false
-        }
+        { "text": "does", "isCorrect": true },
+        { "text": "do", "isCorrect": false },
+        { "text": "is", "isCorrect": false }
       ],
       "correctAnswer": "When does the next development cycle begin?",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_436.mp3",
@@ -12665,18 +12611,9 @@
         "suffix": " the feedback from our last user survey indicate a problem?"
       },
       "options": [
-        {
-          "text": "Does",
-          "isCorrect": true
-        },
-        {
-          "text": "Do",
-          "isCorrect": false
-        },
-        {
-          "text": "Is",
-          "isCorrect": false
-        }
+        { "text": "Does", "isCorrect": true },
+        { "text": "Do", "isCorrect": false },
+        { "text": "Is", "isCorrect": false }
       ],
       "correctAnswer": "Does the feedback from our last user survey indicate a problem?",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_437.mp3",
@@ -12694,18 +12631,9 @@
         "suffix": " the final decision depend on the budget?"
       },
       "options": [
-        {
-          "text": "does",
-          "isCorrect": true
-        },
-        {
-          "text": "do",
-          "isCorrect": false
-        },
-        {
-          "text": "is",
-          "isCorrect": false
-        }
+        { "text": "does", "isCorrect": true },
+        { "text": "do", "isCorrect": false },
+        { "text": "is", "isCorrect": false }
       ],
       "correctAnswer": "Why does the final decision depend on the budget?",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_438.mp3",
@@ -12723,18 +12651,9 @@
         "suffix": "?"
       },
       "options": [
-        {
-          "text": "stand for",
-          "isCorrect": true
-        },
-        {
-          "text": "stands for",
-          "isCorrect": false
-        },
-        {
-          "text": "standing for",
-          "isCorrect": false
-        }
+        { "text": "stand for", "isCorrect": true },
+        { "text": "stands for", "isCorrect": false },
+        { "text": "standing for", "isCorrect": false }
       ],
       "correctAnswer": "What do these acronyms stand for?",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_439.mp3",
@@ -12752,18 +12671,9 @@
         "suffix": " the new system handle large amounts of data?"
       },
       "options": [
-        {
-          "text": "does",
-          "isCorrect": true
-        },
-        {
-          "text": "do",
-          "isCorrect": false
-        },
-        {
-          "text": "can",
-          "isCorrect": false
-        }
+        { "text": "does", "isCorrect": true },
+        { "text": "do", "isCorrect": false },
+        { "text": "can", "isCorrect": false }
       ],
       "correctAnswer": "How does the new system handle large amounts of data?",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_440.mp3",
@@ -12773,5 +12683,4 @@
         "value": "To ask about a habitual or regular action in the present simple, we use 'do' or 'does'. The [subject] is 'the new system' (singular), so the correct auxiliary is [does].\n\n~Do~ is for plural subjects.\n~Can~ is a modal verb that asks about ability ('is it able to handle...?'), which is a slightly different meaning than asking about its process ('how')."
       }
     }
-  ]
-}
+]}
