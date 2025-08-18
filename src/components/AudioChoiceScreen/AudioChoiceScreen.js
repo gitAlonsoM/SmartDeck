@@ -36,8 +36,6 @@ class AudioChoiceScreen {
             }
         }
 
-        document.getElementById('card-category').textContent = cardData.category;
-
         // NEW LOGIC: Use the new 'sentenceParts' structure for the question display
         const { prefix, suffix } = cardData.sentenceParts;
         document.getElementById('question-text').textContent = `${prefix}___${suffix}`;
