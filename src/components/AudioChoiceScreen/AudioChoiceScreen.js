@@ -1,12 +1,14 @@
 /* src\components\AudioChoiceScreen\AudioChoiceScreen.js */
 
 class AudioChoiceScreen {
-    constructor(container, onAnswer, onNext, onIgnore, onMarkForImprovement) {
+    constructor(container, onAnswer, onNext, onIgnore, onMarkForImprovement, onCardAudioStart, onCardAudioEnd) {
         this.container = container;
         this.onAnswer = onAnswer;
         this.onNext = onNext;
         this.onIgnore = onIgnore;
         this.onMarkForImprovement = onMarkForImprovement;
+        this.onCardAudioStart = onCardAudioStart; // Store the ducking start handler
+        this.onCardAudioEnd = onCardAudioEnd;     // Store the ducking end handler
         this.currentCard = null; // To hold the full card data
         console.log("DEBUG: [AudioChoiceScreen] constructor -> Component instantiated.");
     }
@@ -164,12 +166,29 @@ class AudioChoiceScreen {
         feedbackContainer.classList.remove('hidden');
         console.log("DEBUG: [AudioChoiceScreen] Hint and content revealed.");
     }
+
     
-    playCorrectAudio() {
+      playCorrectAudio() {
         if (this.currentCard && this.currentCard.audioSrc) {
             console.log(`DEBUG: [AudioChoiceScreen] Playing audio: ${this.currentCard.audioSrc}`);
+            
+            this.onCardAudioStart(); // Notify App to lower music volume
             const audio = new Audio(this.currentCard.audioSrc);
-            audio.play().catch(e => console.error("Error playing audio:", e));
+
+            // Create a single function to handle audio ending, for both success and failure
+            const cleanup = () => {
+                console.log("DEBUG: [AudioChoiceScreen] Audio playback finished or failed.");
+                this.onCardAudioEnd(); // Notify App to restore music volume
+            };
+
+            audio.onended = cleanup;
+            audio.onerror = cleanup;
+
+            audio.play().catch(e => {
+                console.error("Error playing audio:", e);
+                cleanup(); // Also restore volume if the play() promise is rejected
+            });
         }
     }
+
 }

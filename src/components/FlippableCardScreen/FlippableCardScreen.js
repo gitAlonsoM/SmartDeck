@@ -1,12 +1,14 @@
 /*src\components\FlippableCardScreen\FlippableCardScreen.js  */
 // Component to render a flippable, self-assessed card for studying.
 class FlippableCardScreen {
-    constructor(container, onAssess, onEnd, onIgnore, onMarkForImprovement) {
+       constructor(container, onAssess, onEnd, onIgnore, onMarkForImprovement, onCardAudioStart, onCardAudioEnd) {
         this.container = container;
         this.onAssess = onAssess;
         this.onEnd = onEnd;
         this.onIgnore = onIgnore;
-        this.onMarkForImprovement = onMarkForImprovement; // Store the new callback
+        this.onMarkForImprovement = onMarkForImprovement;
+        this.onCardAudioStart = onCardAudioStart; // Store the ducking start handler
+        this.onCardAudioEnd = onCardAudioEnd;     // Store the ducking end handler
         this.cardData = null;
         console.log("DEBUG: [FlippableCardScreen] constructor -> Component instantiated.");
     }
@@ -297,32 +299,39 @@ class FlippableCardScreen {
                 // Handle playing the pre-generated high-quality audio file
                 const audioSrc = audioSrcButton.dataset.audioSrc;
                 const textForFallback = audioSrcButton.dataset.textToSpeak;
+
+ this.onCardAudioStart(); // Notify App to lower volume
                 const audio = new Audio(audioSrc);
 
-                // If the audio file fails to load (e.g., 404 Not Found), play TTS instead.
+                // When the audio finishes, restore the volume
+                audio.onended = () => {
+                    console.log("DEBUG: [FlippableCardScreen] Pre-generated audio finished.");
+                    this.onCardAudioEnd();
+                };
+
+                // If the audio file fails to load (e.g., 404 Not Found), play TTS instead AND restore volume.
                 audio.onerror = () => {
                     console.warn(`DEBUG: [FlippableCardScreen] Audio file not found at '${audioSrc}'. Falling back to TTS.`);
                     const preferredVoice = StorageService.loadPreferredVoice();
-                    TTSService.speak(textForFallback, preferredVoice);
+                    TTSService.speak(textForFallback, preferredVoice, this.onCardAudioStart, this.onCardAudioEnd); // Pass handlers to TTS
+                    this.onCardAudioEnd(); // Also restore volume immediately on error
                 };
                 
                 audio.play().catch(e => {
                     // The onerror handler will catch loading issues (NotSupportedError).
                     // We still log other potential play errors (e.g., user interaction required).
                     if (e.name !== 'NotSupportedError') {
-                         console.error("Error playing audio:", e)
+                        console.error("Error playing audio:", e)
                     }
+                    this.onCardAudioEnd(); // Restore volume if play() fails for any reason
                 });
 
             } else if (ttsButton) {
                 // Handle playing with the device's native TTS
                 const text = ttsButton.dataset.textToSpeak;
-
-
-
-
                 const preferredVoice = StorageService.loadPreferredVoice();
-                TTSService.speak(text, preferredVoice);
+                // Pass the ducking handlers directly to the TTS service
+                TTSService.speak(text, preferredVoice, this.onCardAudioStart, this.onCardAudioEnd);
             }
         };
     }

@@ -56,9 +56,12 @@ class TTSService {
      * @param {string} text - The text to be spoken.
      * @param {string} [voiceName] - The name of the voice to use. If not provided, a default will be used.
      */
-    static speak(text, voiceName) {
+
+        static speak(text, voiceName, onStart, onEnd) {
         if (!TTSService.isInitialized) {
             alert("Text-to-Speech service is not ready. Please try again.");
+            // Ensure end callback is called on failure to prevent volume from getting stuck.
+            if (typeof onEnd === 'function') onEnd();
             return;
         }
 
@@ -76,6 +79,29 @@ class TTSService {
             }
         }
         
+        // --- AUDIO DUCKING INTEGRATION ---
+        utterance.onstart = () => {
+            console.log("DEBUG: [TTSService] Speech started.");
+            if (typeof onStart === 'function') {
+                onStart();
+            }
+        };
+
+        utterance.onend = () => {
+            console.log("DEBUG: [TTSService] Speech ended.");
+            if (typeof onEnd === 'function') {
+                onEnd();
+            }
+        };
+        
+        utterance.onerror = (event) => {
+            console.error("DEBUG: [TTSService] Speech synthesis error.", event);
+            // Ensure volume is restored even if speech fails
+            if (typeof onEnd === 'function') {
+                onEnd(); 
+            }
+        };
+
         window.speechSynthesis.speak(utterance);
     }
 }

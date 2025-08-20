@@ -6,11 +6,13 @@ class DeckList {
      * @param {function} onDeckSelect - Callback function to execute when a deck is selected.
      * @param {function} onCreateClick - Callback function for the "Create Deck" button.
      */
-    constructor(container, onDeckSelect, onCreateClick, onToggleFavorite) {
+     constructor(container, onDeckSelect, onCreateClick, onToggleFavorite, musicService) {
         this.container = container;
         this.onDeckSelect = onDeckSelect;
         this.onCreateClick = onCreateClick;
-        this.onToggleFavorite = onToggleFavorite; // Add the new handler
+        this.onToggleFavorite = onToggleFavorite;
+        this.musicService = musicService; // Store the music service instance
+        this.musicPlayerUI = null; // To hold the UI component instance
         console.log("DEBUG: [DeckList] constructor -> Component instantiated.");
     }
     /**
@@ -23,10 +25,21 @@ class DeckList {
         ComponentLoader.loadHTML('/src/components/DeckList/deck-list.html').then(html => {
             this.container.innerHTML = html;
 
+             // Render the music player UI
+            const musicPlayerContainer = this.container.querySelector('#music-player-ui-container');
+            if (this.musicService && musicPlayerContainer) {
+                console.log("DEBUG: [DeckList] render -> Rendering MusicPlayerUI.");
+                this.musicPlayerUI = new MusicPlayerUI(musicPlayerContainer, this.musicService);
+                this.musicPlayerUI.render();
+            } else {
+                console.error("DEBUG: [DeckList] render -> MusicService instance or container not found.");
+            }
+
             // Asynchronously load and display the version number
             this._displayVersion();
 
-            this.setupTtsControls(); 
+            // TEMP HIDE: Voice settings feature is a work in progress.
+             // this.setupTtsControls(); 
 
             const deckListContainer = this.container.querySelector('#deck-list-container');
             if (!deckListContainer) {
@@ -54,11 +67,14 @@ class DeckList {
                 }
             }
 
-            const createBtn = this.container.querySelector('#create-deck-btn');
+           const createBtn = this.container.querySelector('#create-deck-btn');
             if (createBtn) {
+                // TEMP HIDE: AI Deck creation feature is a work in progress.
+                createBtn.style.display = 'none'; // This line hides the button from the UI.
                 createBtn.addEventListener('click', this.onCreateClick);
             } else {
-                console.error("DEBUG: [DeckList] render -> #create-deck-btn not found.");
+                // If the button is ever removed from HTML, this will prevent errors.
+                // console.error("DEBUG: [DeckList] render -> #create-deck-btn not found.");
             }
             console.log("DEBUG: [DeckList] render -> Deck list rendered successfully.");
         });

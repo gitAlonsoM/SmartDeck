@@ -10,6 +10,9 @@ class App {
     constructor() {
         console.log("DEBUG: [App] constructor -> Initializing App.");
         this.appContainer = document.getElementById('app-container');
+
+         this.musicService = null; // Property for the music service instance
+
         if (!this.appContainer) { throw new Error("Fatal Error: Application container '#app-container' not found."); }
         
         this.state = {
@@ -44,6 +47,10 @@ class App {
     async setupComponents() {
       const aiModalContainer = document.getElementById('ai-modal-container'); // This line was missing
        const notificationModalContainer = document.getElementById('notification-modal-container');
+
+        console.log("DEBUG: [App] setupComponents -> Initializing MusicService.");
+        this.musicService = new MusicService();
+
         const improvementModalContainer = document.getElementById('improvement-modal-container');
         const confirmationModalContainer = document.getElementById('confirmation-modal-container'); // Get the new container
 
@@ -76,6 +83,27 @@ class App {
 
         console.log("DEBUG: [App] setupComponents -> All components initialized.");
     }
+
+      /**
+     * Handles the start of card audio playback to lower background music volume.
+     */
+    handleCardAudioStart() {
+        console.log("DEBUG: [App] handleCardAudioStart -> Event received. Lowering music volume.");
+        if (this.musicService) {
+            this.musicService.lowerVolume();
+        }
+    }
+
+    /**
+     * Handles the end of card audio playback to restore background music volume.
+     */
+    handleCardAudioEnd() {
+        console.log("DEBUG: [App] handleCardAudioEnd -> Event received. Restoring music volume.");
+        if (this.musicService) {
+            this.musicService.restoreVolume();
+        }
+    }
+
 
      /**
      * Handles the request to delete a user-created deck.
@@ -182,7 +210,10 @@ class App {
                         this.appContainer, 
                         (id) => this.handleDeckSelected(id), 
                         () => this.handleCreateDeckClicked(),
-                        (id) => this.handleToggleFavorite(id) // Pass the toggle handler
+                        
+                     (id) => this.handleToggleFavorite(id),
+                        this.musicService // Pass the music service instance
+
                     ); 
                 }
                 
@@ -224,7 +255,9 @@ case 'audioChoiceQuiz':
                         (option) => this.handleQuizAnswer(option),
                         () => this.handleQuizNext(),
                         () => this.handleIgnoreCurrentCard(),
-                        (cardId) => this.handleMarkCardForImprovement(cardId)
+                         (cardId) => this.handleMarkCardForImprovement(cardId),
+                        () => this.handleCardAudioStart(), // Pass audio ducking handler
+                        () => this.handleCardAudioEnd()   // Pass audio ducking handler
                     );
                 }
                 const currentAudioQuestion = this.state.quizInstance.getCurrentQuestion();
@@ -232,9 +265,8 @@ case 'audioChoiceQuiz':
 
                      const improvementData = StorageService.loadImprovementData(this.state.currentDeckId);
                 const isMarked = improvementData.hasOwnProperty(currentAudioQuestion.cardId);
-                this.audioChoiceScreen.render(currentAudioQuestion, this.state.quizInstance.currentIndex, this.state.quizInstance.questions.length, this.state.quizInstance.score, isMarked);
+        this.audioChoiceScreen.render(currentAudioQuestion, this.state.quizInstance.currentIndex, this.state.quizInstance.questions.length, this.state.quizInstance.score, isMarked);
 
-                    this.audioChoiceScreen.render(currentAudioQuestion, this.state.quizInstance.currentIndex, this.state.quizInstance.questions.length, this.state.quizInstance.score);
                 } else {
                     console.error("DEBUG: [App] render -> Tried to render audio quiz, but no current question found.");
                     this.handleQuizEnd();
@@ -249,7 +281,7 @@ case 'audioChoiceQuiz':
                         () => this.handleQuizNext(),
                         () => this.handleQuizEnd(),
                         () => this.handleIgnoreCurrentCard(),
-                            (cardId) => this.handleMarkCardForImprovement(cardId) // Pass the new handler
+                        (cardId) => this.handleMarkCardForImprovement(cardId) // Pass the new handler
                     ); 
                 }
 
@@ -272,7 +304,9 @@ case 'audioChoiceQuiz':
                      (knewIt) => this.handleCardAssessment(knewIt),
                        () => this.handleQuizEnd(),
                         () => this.handleIgnoreCurrentCard(),
-                            (cardId) => this.handleMarkCardForImprovement(cardId) // Pass the new handler
+                            (cardId) => this.handleMarkCardForImprovement(cardId), // Pass the new handler
+                        () => this.handleCardAudioStart(), // Pass audio ducking handler
+                        () => this.handleCardAudioEnd()   // Pass audio ducking handler
                     );
                 }
                 const currentCard = this.state.quizInstance.getCurrentCard();
