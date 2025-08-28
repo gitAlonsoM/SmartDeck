@@ -368,11 +368,11 @@
           "isCorrect": true
         },
         {
-          "text": "For what are you looking",
+          "text": "at",
           "isCorrect": false
         },
         {
-          "text": "",
+          "text": "to",
           "isCorrect": false
         }
       ],
@@ -381,9 +381,8 @@
       "hint": "The very formal alternative is 'For what are you looking?', but this is rarely used in conversation.",
       "content": {
         "type": "text",
-        "value": "In modern English, it's natural to end a question with a preposition, especially when it's part of a phrasal verb like [look for].\n\n~For what are you looking~ is grammatically correct but extremely formal and unnatural in everyday conversation.\nAn empty option is incorrect as the phrasal verb is incomplete."
-      },
-      "note": "The alternatives are designed to test the correct usage of the phrasal verb 'look for' in a question. 'For what are you looking?' is a very formal but grammatically valid structure, while 'What are you looking?' is a common error. The options correctly test these different forms."
+        "value": "In modern English, it's natural to end a question with a preposition, especially when it's part of a phrasal verb like **look for** (meaning 'to search').\n\n~What are you looking at?~ is a grammatically correct question, but it means 'What is the object of your gaze?'. It doesn't fit the context of searching.\n~What are you looking to?~ is grammatically incorrect in this structure. The phrasal verb 'look to' means to rely on someone or something, which doesn't fit here."
+      }
     },
     {
       "cardId": "egac_014",
@@ -1349,7 +1348,7 @@
       "cardId": "egac_047",
       "category": "Informal English: Have Got",
       "sentenceParts": {
-        "prefix": "I ",
+        "prefix": "I",
         "suffix": " a feeling that this is going to be a great day."
       },
       "options": [
@@ -1371,9 +1370,8 @@
       "hint": "While 'I got' is common in informal American English, 'I've got' is the grammatically standard present form.",
       "content": {
         "type": "text",
-        "value": "['ve got] (have got) is a common, slightly informal alternative to 'have' for expressing possession in the present.\n\n~am got~ is grammatically incorrect.\n~got~ by itself is technically the simple past, though it's often used informally in the present; 'have got' is the more standard present form being tested."
-      },
-      "note": "Good point. I've updated the 'content' explanation to address why 'I got...' is not the target answer in this context, clarifying the difference between the standard form and common informal usage."
+        "value": "**['ve got]** (have got) is a common, slightly informal alternative to 'have' for expressing possession in the present.\n\n~am got~ is grammatically incorrect.\n~got~ by itself is technically the simple past, though it's often used informally in the present; **'have got'** is the more standard present form being tested."
+      }
     },
     {
       "cardId": "egac_048",
@@ -2918,7 +2916,7 @@
       "category": "Questions: Declarative",
       "sentenceParts": {
         "prefix": "So, ",
-        "suffix": " you're not coming to the meeting this afternoon?"
+        "suffix": "you're not coming to the meeting this afternoon?"
       },
       "options": [
         {
@@ -2939,7 +2937,7 @@
       "hint": "This informal structure is very common in speech to check or confirm what you think is true.",
       "content": {
         "type": "text",
-        "value": "[Declarative Questions] have the same grammar as a statement but use rising intonation to function as a question. They are common for confirming information.\n\nThe sentence 'So, you're not coming to the meeting this afternoon?' is already a complete grammatical statement. By adding a question mark and using a rising tone, it becomes a question to confirm information. Therefore, no extra word is needed, and the correct option is the blank one.\n\nThe options 'are' and 'why' would change the structure to a standard interrogative sentence (e.g., 'So, are you not coming...?'), which is not the form being tested here."
+        "value": "**Declarative Questions** have the same grammar as a statement but use rising intonation to function as a question. They are common for confirming information.\n\nThe sentence *'So, you're not coming to the meeting this afternoon?'* is already a complete grammatical statement. By adding a question mark and using a rising tone, it becomes a question. Therefore, no extra word is needed, and the correct option is the blank one.\n\nThe options **'are'** and **'why'** would change the structure to a standard interrogative sentence (e.g., *'So, are you not coming...?'*), which is not the form being tested here."
       }
     },
     {
@@ -3655,7 +3653,7 @@
           "isCorrect": false
         },
         {
-          "text": "Besides",
+          "text": "Away",
           "isCorrect": false
         }
       ],
@@ -3664,7 +3662,7 @@
       "hint": "Here, 'Apart from' acts as a synonym for 'Besides' or 'In addition to'.",
       "content": {
         "type": "text",
-        "value": "[Apart from] is a versatile connector. In this context, it means 'in addition to' or 'besides'.\n\n~Except~ would mean the cast was excellent but the main characters were not, which changes the meaning.\n~Besides~ has a similar meaning and would also be correct."
+        "value": "**[Apart from]** is a versatile connector. In this context, it means 'in addition to'.\n\n~Except from~ would imply that the main characters were *not* excellent, which changes the meaning of the sentence.\n~Away from~ is used to talk about physical distance and is grammatically incorrect in this context."
       }
     },
     {
@@ -5478,11 +5476,11 @@
           "isCorrect": true
         },
         {
-          "text": "weird",
+          "text": "awkwardly",
           "isCorrect": false
         },
         {
-          "text": "odd",
+          "text": "strangeness",
           "isCorrect": false
         }
       ],
@@ -5491,7 +5489,7 @@
       "hint": "'Awkward' comes from the Old Norse 'afugr', meaning 'turned the wrong way'.",
       "content": {
         "type": "text",
-        "value": "[Awkward] is the perfect word for situations that are socially uncomfortable or embarrassing.\n\n~Weird~ or ~odd~ silence is possible, but it suggests the silence itself was strange, not that the situation was socially uncomfortable."
+        "value": "An **adjective** is needed here to describe the noun 'silence'.\n\n**[Awkward]** is the correct adjective for situations that are socially uncomfortable or embarrassing.\n\n~awkwardly~ is an adverb. Adverbs describe verbs, not nouns.\n~strangeness~ is a noun. You cannot use a noun to describe another noun in this way."
       }
     },
     {
@@ -5822,7 +5820,7 @@
       },
       "options": [
         {
-          "text": "been ",
+          "text": "been",
           "isCorrect": true
         },
         {
@@ -5839,7 +5837,7 @@
       "hint": "Using 'gone to' would imply you are still at that location and have not returned.",
       "content": {
         "type": "text",
-        "value": "[Been there] is the correct phrase to talk about the experience of having visited a place and returned.\n\n~known~ implies a deep, intimate understanding of a place, which contradicts the context.\n~gone in~ is grammatically incorrect. 'Gone to' implies the person is still there.\n\n**Usage Note**: We use the structure 'have been to [a place]' specifically to talk about the **experience** of visiting a place in the past. It is the correct and most natural choice here."
+        "value": "**[Been there]** is the correct phrase to talk about the experience of having visited a place and returned.\n\n~known~ implies a deep, intimate understanding of a place, which doesn't fit the context of visiting.\n~gone in~ is grammatically incorrect in this context. 'Gone to' implies the person is still there and has not come back.\n\n*Usage Note: We use the structure **'have been to [a place]'** specifically to talk about the **experience** of visiting a place in the past. It is the correct and most natural choice here."
       }
     },
     {
@@ -8697,20 +8695,20 @@
           "isCorrect": true
         },
         {
-          "text": "alone",
+          "text": "for her own",
           "isCorrect": false
         },
         {
-          "text": "by herself",
+          "text": "by own",
           "isCorrect": false
         }
       ],
       "correctAnswer": "She's very independent. She's been living on her own since she was 18.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_300.mp3",
-      "hint": "These three phrases ('on my own', 'by myself', 'alone') are very close in meaning but have subtle differences in emphasis.",
+      "hint": "The phrases 'on my own' and 'by myself' are very similar and often interchangeable.",
       "content": {
         "type": "text",
-        "value": "[On her own] and [by herself] both correctly imply independence and are often interchangeable. 'On her own' can sometimes carry a stronger sense of self-sufficiency.\n\n~Alone~ focuses more on the physical state of being without company, which can sometimes have a nuance of loneliness. For emphasizing independence, 'on her own' is an excellent choice."
+        "value": "The idiom **[on her own]** is a perfect choice here, as it emphasizes independence and self-sufficiency.\n\n~for her own~ is grammatically incorrect. The preposition is wrong.\n~by own~ is also incorrect. It's missing the required reflexive pronoun (e.g., 'by **herself**')."
       }
     },
     {
@@ -11153,7 +11151,7 @@
       "cardId": "egac_385",
       "category": "Modals: 'Had Better'",
       "sentenceParts": {
-        "prefix": "The code freeze starts in an hour, so you ",
+        "prefix": "The code freeze starts in an hour, so you",
         "suffix": " push your changes now."
       },
       "options": [
@@ -11175,7 +11173,7 @@
       "hint": "A 'code freeze' is a period where developers stop adding new features to prepare for a stable release.",
       "content": {
         "type": "text",
-        "value": "[Had better] ('d better) is for strong, urgent advice. If you don't `push the changes` before the `code freeze`, you'll have to wait for the next release.\n\n~Should to~ and ~must to~ are grammatically incorrect; modals are never followed by 'to'."
+        "value": "**Had better** ('d better) is a modal expression used for strong, urgent advice. There's an implication of negative consequences if the advice isn't followed.\n\n~Should to~ and **~must to~** are grammatically incorrect; modal verbs like *should* and *must* are **never** followed by 'to'. The correct structure is **modal + base verb** (e.g., *should push*)."
       }
     },
     {

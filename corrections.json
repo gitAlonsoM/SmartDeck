@@ -1,60 +1,234 @@
 [
   {
-    "cardId": "pvac_242",
-    "category": "Idiomatic Expressions & Other Cases",
+    "cardId": "egac_047",
+    "category": "Informal English: Have Got",
     "sentenceParts": {
-      "prefix": "You should ",
-      "suffix": " for pickpockets in crowded areas."
+      "prefix": "I",
+      "suffix": " a feeling that this is going to be a great day."
     },
     "options": [
       {
-        "text": "watch out",
+        "text": "'ve got",
         "isCorrect": true
       },
       {
-        "text": "look up",
+        "text": "am got",
         "isCorrect": false
       },
       {
-        "text": "check on",
+        "text": "got",
         "isCorrect": false
       }
     ],
-    "correctAnswer": "You should watch out for pickpockets in crowded areas.",
-    "audioSrc": "public/data/audio/phrasal_verbs_audio_choice/pvac_242.mp3",
-    "hint": "'Watch out for' means to be vigilant and aware of a potential problem or danger.",
+    "correctAnswer": "I've got a feeling that this is going to be a great day.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_047.mp3",
+    "hint": "While 'I got' is common in informal American English, 'I've got' is the grammatically standard present form.",
     "content": {
       "type": "text",
-      "value": "[Watch out for] means to be careful of something.\n\n~Look up~ means to search for information.\n~Check on~ means to verify the status of something or someone.\n\n**Vocabulary Note:** A 'pickpocket' is a thief who steals from people's pockets or bags."
+      "value": "**['ve got]** (have got) is a common, slightly informal alternative to 'have' for expressing possession in the present.\n\n~am got~ is grammatically incorrect.\n~got~ by itself is technically the simple past, though it's often used informally in the present; **'have got'** is the more standard present form being tested."
     }
   },
   {
-    "cardId": "pvac_288",
-    "category": "Phrasal Verbs with OUT",
+    "cardId": "egac_101",
+    "category": "Questions: Declarative",
     "sentenceParts": {
-      "prefix": "After the scandal, the politician was forced to ",
-      "suffix": " of the race."
+      "prefix": "So, ",
+      "suffix": "you're not coming to the meeting this afternoon?"
     },
     "options": [
       {
-        "text": "pull out",
+        "text": "",
         "isCorrect": true
       },
       {
-        "text": "drop out",
+        "text": "are",
         "isCorrect": false
       },
       {
-        "text": "back down",
+        "text": "why",
         "isCorrect": false
       }
     ],
-    "correctAnswer": "After the scandal, the politician was forced to pull out of the race.",
-    "audioSrc": "public/data/audio/phrasal_verbs_audio_choice/pvac_288.mp3",
-    "hint": "To 'pull out' of something (like a competition, deal, or event) means to withdraw from it.",
+    "correctAnswer": "So, you're not coming to the meeting this afternoon?",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_101.mp3",
+    "hint": "This informal structure is very common in speech to check or confirm what you think is true.",
     "content": {
       "type": "text",
-      "value": "[Pull out] means to withdraw (stop participating in) an activity or agreement.\n\n~Drop out~ is similar but is more commonly used for school.\n~Back down~ means to yield in an argument."
+      "value": "**Declarative Questions** have the same grammar as a statement but use rising intonation to function as a question. They are common for confirming information.\n\nThe sentence *'So, you're not coming to the meeting this afternoon?'* is already a complete grammatical statement. By adding a question mark and using a rising tone, it becomes a question. Therefore, no extra word is needed, and the correct option is the blank one.\n\nThe options **'are'** and **'why'** would change the structure to a standard interrogative sentence (e.g., *'So, are you not coming...?'*), which is not the form being tested here."
+    }
+  },
+  {
+    "cardId": "egac_385",
+    "category": "Modals: 'Had Better'",
+    "sentenceParts": {
+      "prefix": "The code freeze starts in an hour, so you",
+      "suffix": " push your changes now."
+    },
+    "options": [
+      {
+        "text": "'d better",
+        "isCorrect": true
+      },
+      {
+        "text": "should to",
+        "isCorrect": false
+      },
+      {
+        "text": "must to",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "The code freeze starts in an hour, so you'd better push your changes now.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_385.mp3",
+    "hint": "A 'code freeze' is a period where developers stop adding new features to prepare for a stable release.",
+    "content": {
+      "type": "text",
+      "value": "**Had better** ('d better) is a modal expression used for strong, urgent advice. There's an implication of negative consequences if the advice isn't followed.\n\n~Should to~ and **~must to~** are grammatically incorrect; modal verbs like *should* and *must* are **never** followed by 'to'. The correct structure is **modal + base verb** (e.g., *should push*)."
+    }
+  },
+  {
+    "cardId": "egac_013",
+    "category": "Prepositions at the End of Questions",
+    "sentenceParts": {
+      "prefix": "What are you looking ",
+      "suffix": "?"
+    },
+    "options": [
+      {
+        "text": "for",
+        "isCorrect": true
+      },
+      {
+        "text": "at",
+        "isCorrect": false
+      },
+      {
+        "text": "to",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "What are you looking for?",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_013.mp3",
+    "hint": "The very formal alternative is 'For what are you looking?', but this is rarely used in conversation.",
+    "content": {
+      "type": "text",
+      "value": "In modern English, it's natural to end a question with a preposition, especially when it's part of a phrasal verb like **look for** (meaning 'to search').\n\n~What are you looking at?~ is a grammatically correct question, but it means 'What is the object of your gaze?'. It doesn't fit the context of searching.\n~What are you looking to?~ is grammatically incorrect in this structure. The phrasal verb 'look to' means to rely on someone or something, which doesn't fit here."
+    }
+  },
+  {
+    "cardId": "egac_189",
+    "category": "Synonyms for 'Raro': Weird vs. Awkward",
+    "sentenceParts": {
+      "prefix": "There was a long, ",
+      "suffix": " silence after he told the joke."
+    },
+    "options": [
+      {
+        "text": "awkward",
+        "isCorrect": true
+      },
+      {
+        "text": "awkwardly",
+        "isCorrect": false
+      },
+      {
+        "text": "strangeness",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "There was a long, awkward silence after he told the joke.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_189.mp3",
+    "hint": "'Awkward' comes from the Old Norse 'afugr', meaning 'turned the wrong way'.",
+    "content": {
+      "type": "text",
+      "value": "An **adjective** is needed here to describe the noun 'silence'.\n\n**[Awkward]** is the correct adjective for situations that are socially uncomfortable or embarrassing.\n\n~awkwardly~ is an adverb. Adverbs describe verbs, not nouns.\n~strangeness~ is a noun. You cannot use a noun to describe another noun in this way."
+    }
+  },
+  {
+    "cardId": "egac_300",
+    "category": "Autonomy: 'On my own'",
+    "sentenceParts": {
+      "prefix": "She's very independent. She's been living ",
+      "suffix": " since she was 18."
+    },
+    "options": [
+      {
+        "text": "on her own",
+        "isCorrect": true
+      },
+      {
+        "text": "for her own",
+        "isCorrect": false
+      },
+      {
+        "text": "by own",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "She's very independent. She's been living on her own since she was 18.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_300.mp3",
+    "hint": "The phrases 'on my own' and 'by myself' are very similar and often interchangeable.",
+    "content": {
+      "type": "text",
+      "value": "The idiom **[on her own]** is a perfect choice here, as it emphasizes independence and self-sufficiency.\n\n~for her own~ is grammatically incorrect. The preposition is wrong.\n~by own~ is also incorrect. It's missing the required reflexive pronoun (e.g., 'by **herself**')."
+    }
+  },
+  {
+    "cardId": "egac_201",
+    "category": "Knowledge vs. Experience: 'Been to'",
+    "sentenceParts": {
+      "prefix": "I know a lot about Japan, but I've never actually ",
+      "suffix": " there."
+    },
+    "options": [
+      {
+        "text": "been",
+        "isCorrect": true
+      },
+      {
+        "text": "known",
+        "isCorrect": false
+      },
+      {
+        "text": "gone in",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "I know a lot about Japan, but I've never actually been there.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_201.mp3",
+    "hint": "Using 'gone to' would imply you are still at that location and have not returned.",
+    "content": {
+      "type": "text",
+      "value": "**[Been there]** is the correct phrase to talk about the experience of having visited a place and returned.\n\n~known~ implies a deep, intimate understanding of a place, which doesn't fit the context of visiting.\n~gone in~ is grammatically incorrect in this context. 'Gone to' implies the person is still there and has not come back.\n\n*Usage Note: We use the structure **'have been to [a place]'** specifically to talk about the **experience** of visiting a place in the past. It is the correct and most natural choice here."
+    }
+  },
+  {
+    "cardId": "egac_126",
+    "category": "Connectors: Exclusion",
+    "sentenceParts": {
+      "prefix": "",
+      "suffix": " from the main characters, the supporting cast was also excellent."
+    },
+    "options": [
+      {
+        "text": "Apart",
+        "isCorrect": true
+      },
+      {
+        "text": "Except",
+        "isCorrect": false
+      },
+      {
+        "text": "Away",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "Apart from the main characters, the supporting cast was also excellent.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_126.mp3",
+    "hint": "Here, 'Apart from' acts as a synonym for 'Besides' or 'In addition to'.",
+    "content": {
+      "type": "text",
+      "value": "**[Apart from]** is a versatile connector. In this context, it means 'in addition to'.\n\n~Except from~ would imply that the main characters were *not* excellent, which changes the meaning of the sentence.\n~Away from~ is used to talk about physical distance and is grammatically incorrect in this context."
     }
   }
 ]

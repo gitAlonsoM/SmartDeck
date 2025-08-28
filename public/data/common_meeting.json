@@ -952,6 +952,10 @@
         {
           "text": "Yeah, this issue rings a bell; it's very close to the other one.",
           "audioSrc": "public/data/audio/common_meeting/mi_040_sideB_2.mp3"
+        },
+        {
+          "text": "Yes, that issue is really similar to one we've seen before.",
+          "audioSrc": "public/data/audio/common_meeting/mi_040_sideB_3.mp3"
         }
       ],
       "note": "[Rings a bell] (Idiom) is a great informal way to say something sounds familiar.\n\n~Very seem~ is incorrect. [Seem] is a verb. To say 'parecido', use adjectives like [similar to] or [like]."
@@ -1292,6 +1296,10 @@
         {
           "text": "Where are these configuration files kept?",
           "audioSrc": "public/data/audio/common_meeting/mi_056_sideB_2.mp3"
+        },
+        {
+          "text": "Where do these setting files get saved?",
+          "audioSrc": "public/data/audio/common_meeting/mi_056_sideB_3.mp3"
         }
       ],
       "note": "The Spanish 'se guardan' is a passive construction. This can be translated with the passive voice ([Where are... stored?]) or an active verb. For the active version, the subject is [these configuration files] (plural), so the auxiliary must be [do].\n\n~Where does these files save?~ is incorrect because the subject 'files' is plural.\n\n~Where do these configuration files can be saved?~ (Incorrect: Cannot use two auxiliary verbs, 'do' and 'can', together in a question. Use one or the other: 'Where can they be saved?' or 'Where do they get saved?'.)\n\n~Where do these configuration files are saved?~ (Incorrect: Cannot mix the auxiliary 'do' with the verb 'to be' ('are') in this question format. Use 'Where are they saved?' (passive) or 'Where do you save them?' (active).)"
@@ -1360,6 +1368,10 @@
         {
           "text": "Are the new requirements included in this project's documentation?",
           "audioSrc": "public/data/audio/common_meeting/mi_059_sideB_2.mp3"
+        },
+        {
+          "text": "Does the documentation of this project include the new requirements?",
+          "audioSrc": "public/data/audio/common_meeting/mi_059_sideB_3.mp3"
         }
       ],
       "note": "The true subject here is [documentation], which is an uncountable (and therefore singular) noun. Active questions must use [Does]. A passive alternative ([Are the new requirements included...]) is also perfectly natural.\n\n~Do this project's documentation...~ is a frequent mistake."
@@ -1383,6 +1395,87 @@
         }
       ],
       "note": "The subject is [these technical limitations], a plural phrase. The question requires the auxiliary verb [do].\n\n[Timeline] and [schedule] are synonyms. [Constraints] and [limitations] are also synonyms in this context."
+    },
+
+    {
+      "cardId": "mi_061",
+      "cardType": "flippable",
+      "sideA": "Todo al mismo tiempo, igual que la version web.",
+      "sideB": [
+        {
+          "text": "All at the same time, just like the web version.",
+          "audioSrc": "public/data/audio/common_meeting/mi_061_sideB_0.mp3"
+        },
+        {
+          "text": "Everything happens simultaneously, the same as the web version.",
+          "audioSrc": "public/data/audio/common_meeting/mi_061_sideB_1.mp3"
+        },
+        {
+          "text": "It all happens at once, just like on the web.",
+          "audioSrc": "public/data/audio/common_meeting/mi_061_sideB_2.mp3"
+        }
+      ],
+      "note": "The phrase 'igual que' translates to [just like] or [the same as].\n\n~The same that~ is a common error. The correct structure is [the same as].\n\n[Simultaneously] and [at once] are excellent synonyms for 'at the same time'."
+    },
+    {
+      "cardId": "mi_062",
+      "cardType": "flippable",
+      "sideA": "¿Debería ser todo al mismo tiempo, como en la versión web?",
+      "sideB": [
+        {
+          "text": "Should it be all at the same time, like in the web version?",
+          "audioSrc": "public/data/audio/common_meeting/mi_062_sideB_0.mp3"
+        },
+        {
+          "text": "Should everything happen at once, just like on the web?",
+          "audioSrc": "public/data/audio/common_meeting/mi_062_sideB_1.mp3"
+        },
+        {
+          "text": "Should it all be simultaneous, like the web version?",
+          "audioSrc": "public/data/audio/common_meeting/mi_062_sideB_2.mp3"
+        }
+      ],
+      "note": "To form a question with a modal verb like 'should', the verb must come before the subject. Correct: [Should it be...?], not ~It should be...?~\n\n'Como en' can be translated as [like in] or [like on], both are natural in this context."
+    },
+    {
+      "cardId": "mi_063",
+      "cardType": "flippable",
+      "sideA": "¿Como es llamada esa opción en la base de datos?",
+      "sideB": [
+        {
+          "text": "What is that option called in the database?",
+          "audioSrc": "public/data/audio/common_meeting/mi_063_sideB_0.mp3"
+        },
+        {
+          "text": "How is that option named in the database?",
+          "audioSrc": "public/data/audio/common_meeting/mi_063_sideB_1.mp3"
+        },
+        {
+          "text": "What's the name for that option in the database?",
+          "audioSrc": "public/data/audio/common_meeting/mi_063_sideB_2.mp3"
+        }
+      ],
+      "note": "When asking for a name, the correct question word in English is [What], not 'How'.\n\nThe most common and natural phrasing is [What is it called?]. A literal translation like ~How is it called?~ is a very common mistake but is grammatically incorrect for this purpose."
+    },
+    {
+      "cardId": "mi_064",
+      "cardType": "flippable",
+      "sideA": "¿Como es llamada esa acción en la interfaz principal?",
+      "sideB": [
+        {
+          "text": "What is that action called on the main interface?",
+          "audioSrc": "public/data/audio/common_meeting/mi_064_sideB_0.mp3"
+        },
+        {
+          "text": "What's that action referred to as on the main UI?",
+          "audioSrc": "public/data/audio/common_meeting/mi_064_sideB_1.mp3"
+        },
+        {
+          "text": "What is the name for that action on the main screen?",
+          "audioSrc": "public/data/audio/common_meeting/mi_064_sideB_2.mp3"
+        }
+      ],
+      "note": "Always use [What is it called?] to ask for a name. Avoid the literal translation ~How is it called?~.\n\n'Interfaz principal' can be translated as [main interface], [main UI] (User Interface), or [main screen]."
     }
   ]
 }

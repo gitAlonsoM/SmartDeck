@@ -21,8 +21,11 @@ class MusicService {
             { name: "Schubert - Serenade (arr. Liszt)", src: "public/assets/audio/music/Schubert - Serenade (arr. Liszt).mp3" },
             { name: "Tchaikovsky - Dance of the Sugar Plum Fairy", src: "public/assets/audio/music/Tchaikovsky - Dance of the Sugar Plum Fairy.mp3" },
             { name: "Tchaikovsky - Waltz of the Flowers", src: "public/assets/audio/music/Tchaikovsky - Waltz of the Flowers (The Nutcracker Suite).mp3" },
-            { name: "Johann Sebastian Bach - Aria Da Capo", src: "public/assets/audio/music/Johann Sebastian Bach - Aria Da Capo.mp3" }
+            { name: "Johann Sebastian Bach - Aria Da Capo", src: "public/assets/audio/music/Johann Sebastian Bach - Aria Da Capo.mp3" },
+            { name: "Black Desert -Serendia - Alejandro Farm", src: "public/assets/audio/music/Black Desert -Serendia - Alejandro Farm.mp3" },
+            { name: "Olvia  I. Balenos  Black Desert", src: "public/assets/audio/music/Olvia  I. Balenos  Black Desert.mp3" }
 
+            
         ];
         // Start with a random track index instead of always 0
         this.currentTrackIndex = Math.floor(Math.random() * this.playlist.length);
