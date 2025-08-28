@@ -1,18 +1,26 @@
 <!-- src\components\MusicPlayer\music-player.html -->
-<div id="music-player-container" class="w-full mt-8 p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex items-center justify-between">
-    <div class="flex items-center overflow-hidden">
-        <i class="fas fa-music text-indigo-500 dark:text-indigo-400 text-xl mr-4"></i>
-        <div class="truncate">
-            <p class="text-sm text-gray-500 dark:text-gray-400">Now Playing</p>
-            <p id="track-name" class="font-semibold truncate" title="Track Name">Select Play to Start</p>
+<div id="music-player-container" class="w-full mt-8 p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex items-center justify-between space-x-4">
+    
+    <div class="flex items-center space-x-4 overflow-hidden flex-1">
+        <div id="disc-container" class="relative w-28 h-28 flex-shrink-0 flex items-center justify-center">
+            <div class="relative w-16 h-16">
+                <div id="music-disc" class="w-full h-full"></div>
+                <div id="disc-label" class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-5 h-5 bg-gray-100 dark:bg-gray-300 rounded-full border-2 border-gray-500 shadow-inner"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="track-info-container" class="flex-grow overflow-hidden whitespace-nowrap">
+            <p id="track-name" class="font-semibold" title="Track Name">Select Play to Start</p>
         </div>
     </div>
 
-    <div class="flex items-center space-x-4">
+    <div class="flex items-center space-x-2 sm:space-x-4">
         <button id="prev-track-btn" class="text-gray-600 dark:text-gray-300 hover:text-indigo-500 transition-colors">
             <i class="fas fa-backward-step fa-lg"></i>
         </button>
-        <button id="play-pause-btn" class="w-12 h-12 flex items-center justify-center bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition-transform transform hover:scale-110">
+        <button id="play-pause-btn" class="w-12 h-12 flex items-center justify-center bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition-transform transform hover:scale-110 shadow-lg">
             <i class="fas fa-play fa-lg"></i>
         </button>
         <button id="next-track-btn" class="text-gray-600 dark:text-gray-300 hover:text-indigo-500 transition-colors">

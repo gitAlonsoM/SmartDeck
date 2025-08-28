@@ -47,6 +47,30 @@ class MusicService {
         this.uiUpdater = new EventTarget();
     }
 
+    /**
+     * Gets the current state of the music player.
+     * This is crucial for the UI to sync itself when it re-renders.
+     * @returns {{isPlaying: boolean, trackName: string}} The current player state.
+     */
+    getCurrentState() {
+        const track = this.playlist[this.currentTrackIndex];
+        const hasTrackLoaded = !!this.audioElement.src;
+
+        // If music is not playing and no track has ever been loaded, show the initial message.
+        if (!this.isPlaying && !hasTrackLoaded) {
+            return {
+                isPlaying: false,
+                trackName: "Select Play to Start"
+            };
+        }
+        
+        // Otherwise, return the current state.
+        return {
+            isPlaying: this.isPlaying,
+            trackName: track ? track.name : "Loading..."
+        };
+    }
+    
     // --- Public Control Methods ---
 
     play() {
