@@ -1,11 +1,4 @@
 //src\core\App.js
-// The main application orchestrator.
-// src/core/App.js
-// The main application orchestrator.
-
-// src/core/App.js
-// The main application orchestrator.
-
 class App {
     constructor() {
         console.log("DEBUG: [App] constructor -> Initializing App.");
@@ -30,9 +23,10 @@ class App {
         this.deckDetailComponent = null;
         this.quizScreenComponent = null;
         this.flippableCardScreen = null; 
-        this.audioChoiceScreen = null; // Add property for the new screen
+        this.audioChoiceScreen = null; 
         this.notificationModal = null;
-        this.improvementModal = null; // Add property for the new modal
+        this.improvementModal = null; 
+        this.infoModal = null; 
 
     }
 
@@ -45,14 +39,14 @@ class App {
     }
 
     async setupComponents() {
-      const aiModalContainer = document.getElementById('ai-modal-container'); // This line was missing
+      const aiModalContainer = document.getElementById('ai-modal-container'); 
        const notificationModalContainer = document.getElementById('notification-modal-container');
 
         console.log("DEBUG: [App] setupComponents -> Initializing MusicService.");
         this.musicService = new MusicService();
 
         const improvementModalContainer = document.getElementById('improvement-modal-container');
-        const confirmationModalContainer = document.getElementById('confirmation-modal-container'); // Get the new container
+        const confirmationModalContainer = document.getElementById('confirmation-modal-container'); 
 
         // Ensure containers exist before proceeding
         if (!aiModalContainer || !notificationModalContainer || !improvementModalContainer || !confirmationModalContainer) { 
@@ -80,8 +74,33 @@ class App {
         this.confirmationModal = new ConfirmationModal(confirmationModalContainer);
         await this.confirmationModal.init();
         
-
+        const infoModalContainer = document.getElementById('info-modal-container');
+        if (!infoModalContainer) { throw new Error("Fatal Error: InfoModal container not found."); }
+        this.infoModal = new InfoModal(infoModalContainer);
+        await this.infoModal.init();
         console.log("DEBUG: [App] setupComponents -> All components initialized.");
+    }
+    /**
+     * Handles the request to show an informational modal for a glossary term.
+     * @param {string} termKey - The unique key for the term (e.g., 'subject_question').
+     */
+    async handleShowInfoModal(termKey) {
+        if (!termKey) return;
+        console.log(`DEBUG: [App] handleShowInfoModal -> Request to show modal for term: ${termKey}`);
+        
+        // For now, we assume all terms are in the 'english_rules' glossary.
+        // This can be made more dynamic later if needed.
+        const termData = await GlossaryService.getTerm('english_rules', termKey);
+
+        if (termData) {
+            this.infoModal.show(termData.title, termData.content);
+        } else {
+            this.notificationModal.show(
+                'Not Found',
+                `Sorry, the definition for '${termKey.replace('_', ' ')}' could not be found.`,
+                { icon: 'fa-solid fa-question-circle', color: 'text-orange-500', bgColor: 'bg-orange-100 dark:bg-orange-900' }
+            );
+        }
     }
 
       /**
@@ -298,17 +317,17 @@ case 'audioChoiceQuiz':
 
                  case 'flippableQuiz':
                 if (!this.flippableCardScreen) {
-                    this.flippableCardScreen = new FlippableCardScreen(
-
-                       this.appContainer,
-                     (knewIt) => this.handleCardAssessment(knewIt),
-                       () => this.handleQuizEnd(),
+                  this.flippableCardScreen = new FlippableCardScreen(
+                        this.appContainer,
+                        (knewIt) => this.handleCardAssessment(knewIt),
+                        () => this.handleQuizEnd(),
                         () => this.handleIgnoreCurrentCard(),
-                            (cardId) => this.handleMarkCardForImprovement(cardId), // Pass the new handler
-                        () => this.handleCardAudioStart(), // Pass audio ducking handler
-                        () => this.handleCardAudioEnd()   // Pass audio ducking handler
+                        (cardId) => this.handleMarkCardForImprovement(cardId), // This handler was missing
+                        (termKey) => this.handleShowInfoModal(termKey),
+                        () => this.handleCardAudioStart(),
+                        () => this.handleCardAudioEnd()
                     );
-                }
+}
                 const currentCard = this.state.quizInstance.getCurrentCard();
                 const deckName = this.state.allDecks[this.state.currentDeckId].name;
                 if (currentCard) {

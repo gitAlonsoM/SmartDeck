@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,26 +11,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
-</head>
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
 
-    <div id="ai-modal-container"></div>
-    <div id="notification-modal-container"></div>
-    <div id="improvement-modal-container"></div>
-    <div id="confirmation-modal-container"></div>
-    
-    <div id="app-container" class="w-full max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
-    </div>
-    
     <script src="src/utils/ComponentLoader.js" defer></script>
-    <script src="src/services/StorageService.js" defer></script>
-     <script src="src/services/VersionService.js" defer></script>
-     <script src="src/services/MusicService.js" defer></script>
-    <script src="src/services/TTSService.js" defer></script> 
-    <script src="src/services/ApiService.js" defer></script>
     
-    <script src="src/core/Quiz.js" defer></script>
-    <script src="src/core/SpacedRepetitionQuiz.js" defer></script>
+    <script src="src/services/StorageService.js" defer></script>
+    <script src="src/services/VersionService.js" defer></script>
+    <script src="src/services/MusicService.js" defer></script>
+    <script src="src/services/TTSService.js" defer></script>
+    <script src="src/services/ApiService.js" defer></script>
+    <script src="src/services/ImprovementService.js" defer></script>
+    <script src="src/services/GlossaryService.js" defer></script>
+
     <script src="src/components/MusicPlayer/MusicPlayerUI.js" defer></script>
     <script src="src/components/DeckList/DeckList.js" defer></script>
     <script src="src/components/AiDeckModal/AiDeckModal.js" defer></script>
@@ -39,17 +29,27 @@
     <script src="src/components/QuizScreen/QuizScreen.js" defer></script>
     <script src="src/components/FlippableCardScreen/FlippableCardScreen.js" defer></script>
     <script src="src/components/NotificationModal/NotificationModal.js" defer></script>
-     <script src="src/components/AudioChoiceScreen/AudioChoiceScreen.js" defer></script>
+    <script src="src/components/AudioChoiceScreen/AudioChoiceScreen.js" defer></script>
     <script src="src/components/ImprovementModal/ImprovementModal.js" defer></script>
     <script src="src/components/ConfirmationModal/ConfirmationModal.js" defer></script>
+    <script src="src/components/InfoModal/InfoModal.js" defer></script>
     
-  <script src="src/services/ImprovementService.js" defer></script>
-    <script src="src/core/App.js" defer></script>
-
+    <script src="src/core/Quiz.js" defer></script>
+    <script src="src/core/SpacedRepetitionQuiz.js" defer></script>
+    <script src="src/core/App.js" defer></script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div id="ai-modal-container"></div>
+    <div id="notification-modal-container"></div>
+    <div id="improvement-modal-container"></div>
+    <div id="confirmation-modal-container"></div>
+    <div id="info-modal-container"></div>
+    
+    <div id="app-container" class="w-full max-w-4xl mx-auto p-4 sm:p-6 lg:p-8"></div>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/dart.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/groovy.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/dart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/groovy.min.js"></script>
     <script>hljs.highlightAll();</script>
 </body>
 </html>

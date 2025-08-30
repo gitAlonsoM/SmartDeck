@@ -1,14 +1,15 @@
 /*src\components\FlippableCardScreen\FlippableCardScreen.js  */
 // Component to render a flippable, self-assessed card for studying.
 class FlippableCardScreen {
-       constructor(container, onAssess, onEnd, onIgnore, onMarkForImprovement, onCardAudioStart, onCardAudioEnd) {
+      constructor(container, onAssess, onEnd, onIgnore, onMarkForImprovement, onShowInfoModal, onCardAudioStart, onCardAudioEnd) {
         this.container = container;
         this.onAssess = onAssess;
         this.onEnd = onEnd;
         this.onIgnore = onIgnore;
         this.onMarkForImprovement = onMarkForImprovement;
-        this.onCardAudioStart = onCardAudioStart; // Store the ducking start handler
-        this.onCardAudioEnd = onCardAudioEnd;     // Store the ducking end handler
+        this.onShowInfoModal = onShowInfoModal;
+        this.onCardAudioStart = onCardAudioStart;
+        this.onCardAudioEnd = onCardAudioEnd;
         this.cardData = null;
         console.log("DEBUG: [FlippableCardScreen] constructor -> Component instantiated.");
     }
@@ -148,14 +149,18 @@ class FlippableCardScreen {
            // Split the note into paragraphs and process formatting for each one
             const noteParagraphs = this.cardData.note.split('\n\n').map(topic => {
                 let formattedTopic = topic.trim();
-                if (formattedTopic) {
-                    // Apply the same formatting logic from AudioChoiceScreen to parse custom symbols
-                    formattedTopic = formattedTopic.replace(/\[([^\]]+)\]/g, '<strong class="font-semibold text-indigo-400">$1</strong>');
-                    formattedTopic = formattedTopic.replace(/~([^~]+)~/g, '<strong class="font-semibold text-yellow-400 dark:text-yellow-500">$1</strong>');
-                    return `<p class="text-sm text-gray-400 dark:text-gray-300 note-paragraph mb-2 last:mb-0">${formattedTopic}</p>`;
-                }
-                return '';
-            }).join('');
+               if (formattedTopic) {
+                    formattedTopic = formattedTopic.replace(/\[([^\]]+)\]/g, '<strong class="font-semibold text-indigo-400">$1</strong>');
+                    formattedTopic = formattedTopic.replace(/~([^~]+)~/g, '<strong class="font-semibold text-yellow-400 dark:text-yellow-500">$1</strong>');
+                        formattedTopic = formattedTopic.replace(/\*\*([^*]+)\*\*/g, (match, term) => {
+                            const termKey = term.trim().toLowerCase().replace(/\s+/g, '_');
+                            return `<a href="#" class="glossary-term" data-term-key="${termKey}">${term}</a>`;
+                        });
+
+                    return `<p class="text-sm text-gray-400 dark:text-gray-300 note-paragraph mb-2 last:mb-0">${formattedTopic}</p>`;
+                }
+                return '';
+            }).join('');
             
             if (noteParagraphs) {
                 noteContainer.innerHTML = noteParagraphs;
@@ -292,8 +297,16 @@ class FlippableCardScreen {
         this.container.onclick = (event) => {
             const ttsButton = event.target.closest('.play-tts-btn');
             const audioSrcButton = event.target.closest('.play-audio-src-btn');
+                        const glossaryTerm = event.target.closest('.glossary-term'); // Listen for clicks on glossary terms
 
-
+                 if (glossaryTerm) {
+                event.preventDefault(); // Prevent default link behavior
+                const termKey = glossaryTerm.dataset.termKey;
+                if (termKey && this.onShowInfoModal) {
+                    this.onShowInfoModal(termKey);
+                }
+                return; // Stop further processing
+            }
 
            if (audioSrcButton) {
                 // Handle playing the pre-generated high-quality audio file
