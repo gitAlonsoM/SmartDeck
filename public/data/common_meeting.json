@@ -791,7 +791,7 @@
         },
         {
           "text": "We can check that topic later.",
-          "audioSrc": ""
+          "audioSrc": "public/data/audio/common_meeting/mi_033_sideB_3.mp3"
         }
       ],
       "note": "The structure for not deviate is incorrect. To express purpose, use [to not deviate] or [so we don't deviate].\n\n~Let's see that after~ is too simple and loses the professional context of managing a meeting's focus. Using idioms like [take it offline] or [circle back] shows more fluency."
@@ -1027,7 +1027,7 @@
         },
         {
           "text": "Can you give me access to check the logs?",
-          "audioSrc": ""
+        "audioSrc": "public/data/audio/common_meeting/mi_043_sideB_3.mp3"
         }
       ],
       "note": "'Dar acceso' translates to [grant access] or [give permission].\n\n~Give me access for check~ is incorrect. To express purpose, it's more natural to use the infinitive [to check], not the -ing form.\n\n~Can you give me the grant...~ (Incorrect word choice. 'Grant' is a noun, but it's not the correct noun for 'permission' in this context. Use the verb [to grant] as in 'grant me access', or the noun [permission] as in 'give me permission'.)"
@@ -1323,11 +1323,13 @@
         },
         {
           "text": "Does the last bug report mention this issue?",
-          "audioSrc": ""
+            "audioSrc": "public/data/audio/common_meeting/mi_057_sideB_3.mp3"
+
         },
         {
           "text": "Does the latest report mention this issue?",
-          "audioSrc": ""
+            "audioSrc": "public/data/audio/common_meeting/mi_057_sideB_4.mp3"
+
         }
       ],
       "note": "The [complete subject] is 'the latest bug report'. The core noun, 'report', is singular, so the question must use [Does]. A passive voice alternative ([Is this issue mentioned...]) is also very common and natural.\n\n~Do the latest bug report...~ is a common error if one focuses on 'bugs' instead of 'report'.\n\n~Does the last issue's report mention this issue?~ (Unnatural phrasing. 'Bug report' or 'error report' is the standard term, not 'issue's report'.)\n\n~Does the lastest report mention this issue?~ (Typo: The correct superlative form of 'late' is 'latest'.)"
@@ -1476,6 +1478,246 @@
         }
       ],
       "note": "Always use [What is it called?] to ask for a name. Avoid the literal translation ~How is it called?~.\n\n'Interfaz principal' can be translated as [main interface], [main UI] (User Interface), or [main screen]."
+    },
+    {
+      "cardId": "mi_065",
+      "cardType": "flippable",
+      "sideA": "¿No crees que esta solución es demasiado compleja?",
+      "sideB": [
+        {
+          "text": "Don't you think this solution is too complex?",
+          "audioSrc": "public/data/audio/common_meeting/mi_065_sideB_0.mp3"
+        },
+        {
+          "text": "Isn't this solution a bit over-engineered?",
+          "audioSrc": "public/data/audio/common_meeting/mi_065_sideB_1.mp3"
+        },
+        {
+          "text": "Do you not think this solution is overly complex?",
+          "audioSrc": "public/data/audio/common_meeting/mi_065_sideB_2.mp3"
+        }
+      ],
+      "note": "Negative questions often start with a contracted auxiliary like [Don't] to confirm an opinion. The formal, less common version places 'not' after the subject: [Do you not think...].\n\nCommon Error: Avoid double auxiliaries. ~Why do you don't think...~ is incorrect. The correct form is [Why don't you think...]."
+    },
+    {
+      "cardId": "mi_066",
+      "cardType": "flippable",
+      "sideA": "¿Esta nueva función no debería estar ya en producción?",
+      "sideB": [
+        {
+          "text": "Shouldn't this new feature be in production already?",
+          "audioSrc": "public/data/audio/common_meeting/mi_066_sideB_0.mp3"
+        },
+        {
+          "text": "Wasn't this new feature supposed to be live by now?",
+          "audioSrc": "public/data/audio/common_meeting/mi_066_sideB_1.mp3"
+        },
+        {
+          "text": "Should this new feature not be in production already?",
+          "audioSrc": "public/data/audio/common_meeting/mi_066_sideB_2.mp3"
+        }
+      ],
+      "note": "For questions with modal verbs, form the negative by adding 'n't'. [Shouldn't] is the most common form for conversation. The formal structure is [Should... not...].\n\nCommon Error: Do not add 'do' or 'does'. ~Does shouldn't this feature...~ is grammatically incorrect."
+    },
+    {
+      "cardId": "mi_067",
+      "cardType": "flippable",
+      "sideA": "¿No habíamos solucionado este problema en el último release?",
+      "sideB": [
+        {
+          "text": "Didn't we fix this issue in the last release?",
+          "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_0.mp3"
+        },
+        {
+          "text": "Didn't we already solve this problem in the previous release?",
+          "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_1.mp3"
+        },
+        {
+          "text": "Did we not resolve this issue in the last release?",
+          "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_2.mp3"
+        }
+      ],
+      "note": "For past tense negative questions, use [Didn't]. It's formed from 'did + not'. The question is structured as: [Didn't + subject + base verb].\n\nCommon Error: Never mix past tense on the auxiliary and the main verb. ~Didn't we fixed...~ is incorrect. It must be [Didn't we fix...]."
+    },
+    {
+      "cardId": "mi_068",
+      "cardType": "flippable",
+      "sideA": "¿Por qué el sistema no está actualizando los datos?",
+      "sideB": [
+        {
+          "text": "Why isn't the system updating the data?",
+          "audioSrc": "public/data/audio/common_meeting/mi_068_sideB_0.mp3"
+        },
+        {
+          "text": "Why aren't the records being updated by the system?",
+          "audioSrc": "public/data/audio/common_meeting/mi_068_sideB_1.mp3"
+        },
+        {
+          "text": "For what reason is the system not updating the data?",
+          "audioSrc": "public/data/audio/common_meeting/mi_068_sideB_2.mp3"
+        }
+      ],
+      "note": "When using question words like 'Why', the negative auxiliary ([isn't], [doesn't], etc.) comes right after it. [Why isn't the system...].\n\nCommon Error: The subject must go between the auxiliary and the main verb. ~Why isn't updating the system...~ is incorrect word order."
+    },
+    {
+      "cardId": "mi_069",
+      "cardType": "flippable",
+      "sideA": "¿No puedes replicar el error con la cuenta de prueba?",
+      "sideB": [
+        {
+          "text": "Can't you replicate the bug with the test account?",
+          "audioSrc": "public/data/audio/common_meeting/mi_069_sideB_0.mp3"
+        },
+        {
+          "text": "Aren't you able to reproduce the issue using the test account?",
+          "audioSrc": "public/data/audio/common_meeting/mi_069_sideB_1.mp3"
+        },
+        {
+          "text": "Are you not able to replicate the error with the test account?",
+          "audioSrc": "public/data/audio/common_meeting/mi_069_sideB_2.mp3"
+        }
+      ],
+      "note": "With modal verbs like 'can', the negative question is formed with [Can't]. This is very common to express surprise or to check for an expected ability.\n\nCommon Error: Do not add other auxiliaries. ~Do you can't replicate...~ is a frequent mistake. Just use [Can't you...]."
+    },
+    {
+      "cardId": "mi_070",
+      "cardType": "flippable",
+      "sideA": "¿Qué módulo causa este conflicto en el sistema?",
+      "sideB": [
+        {
+          "text": "What module causes this conflict in the system?",
+          "audioSrc": "public/data/audio/common_meeting/mi_070_sideB_0.mp3"
+        },
+        {
+          "text": "Which module is creating this system conflict?",
+          "audioSrc": "public/data/audio/common_meeting/mi_070_sideB_1.mp3"
+        },
+        {
+          "text": "What part of the system generates this conflict?",
+          "audioSrc": "public/data/audio/common_meeting/mi_070_sideB_2.mp3"
+        }
+      ],
+      "note": "This is a **Subject Question**. The question phrase [What module] is the 'actor' performing the action ('causes'). Because we are asking about the subject, no auxiliary verb like 'do' or 'does' is needed. The main verb ('causes') is conjugated directly.\n\nCommon Error: ~What module does cause this conflict?~."
+    },
+    {
+      "cardId": "mi_071",
+      "cardType": "flippable",
+      "sideA": "¿Qué módulo modificó el equipo de desarrollo?",
+      "sideB": [
+        {
+          "text": "What module did the development team modify?",
+          "audioSrc": "public/data/audio/common_meeting/mi_071_sideB_0.mp3"
+        },
+        {
+          "text": "Which module did the dev team change?",
+          "audioSrc": "public/data/audio/common_meeting/mi_071_sideB_1.mp3"
+        },
+        {
+          "text": "What module was modified by the development team?",
+          "audioSrc": "public/data/audio/common_meeting/mi_071_sideB_2.mp3"
+        }
+      ],
+      "note": "This is an **Object Question**. We are asking about what received the action. The subject (the 'actor') is [the development team]. Since the subject is known, we MUST use the auxiliary verb 'did' to form the past tense question correctly.\n\nCommon Error: ~What module the development team modified?~."
+    },
+    {
+      "cardId": "mi_072",
+      "cardType": "flippable",
+      "sideA": "¿Quién implementó esta función originalmente?",
+      "sideB": [
+        {
+          "text": "Who implemented this feature originally?",
+          "audioSrc": "public/data/audio/common_meeting/mi_072_sideB_0.mp3"
+        },
+        {
+          "text": "Who initially developed this functionality?",
+          "audioSrc": "public/data/audio/common_meeting/mi_072_sideB_1.mp3"
+        },
+        {
+          "text": "Who first built this feature?",
+          "audioSrc": "public/data/audio/common_meeting/mi_072_sideB_2.mp3"
+        }
+      ],
+      "note": "This is a **Subject Question**. The question word [Who] is the subject we are looking for—the person who performed the action ('implemented'). Therefore, no auxiliary 'did' is used. The verb is placed directly after 'Who' in its past tense form.\n\nCommon Error: ~Who did implement this feature?~."
+    },
+    {
+      "cardId": "mi_073",
+      "cardType": "flippable",
+      "sideA": "¿A quién reportó el error el equipo de QA?",
+      "sideB": [
+        {
+          "text": "Who did the QA team report the bug to?",
+          "audioSrc": "public/data/audio/common_meeting/mi_073_sideB_0.mp3"
+        },
+        {
+          "text": "To whom did the QA team report the error?",
+          "audioSrc": "public/data/audio/common_meeting/mi_073_sideB_1.mp3"
+        },
+        {
+          "text": "Who did the QA team notify about the bug?",
+          "audioSrc": "public/data/audio/common_meeting/mi_073_sideB_2.mp3"
+        }
+      ],
+      "note": "This is an **Object Question**. The subject performing the action is [the QA team]. The question word 'Who' asks about the object—the person who received the report. Because the subject is known, the auxiliary verb [did] is mandatory.\n\nCommon Error: ~Who the QA team reported the bug to?~."
+    },
+    {
+      "cardId": "mi_074",
+      "cardType": "flippable",
+      "sideA": "¿Qué impide el despliegue a producción?",
+      "sideB": [
+        {
+          "text": "What prevents the deployment to production?",
+          "audioSrc": "public/data/audio/common_meeting/mi_074_sideB_0.mp3"
+        },
+        {
+          "text": "What is blocking the production release?",
+          "audioSrc": "public/data/audio/common_meeting/mi_074_sideB_1.mp3"
+        },
+        {
+          "text": "What's stopping the deployment to production?",
+          "audioSrc": "public/data/audio/common_meeting/mi_074_sideB_2.mp3"
+        }
+      ],
+      "note": "This is a **Subject Question**. We are asking for the 'thing' that is performing the action of preventing. The question word [What] acts as the subject. Consequently, no auxiliary verb is needed, and the main verb ('prevents') is conjugated in the third person singular.\n\nCommon Error: ~What does prevent the deployment?~."
+    },
+    {
+      "cardId": "mi_075",
+      "cardType": "flippable",
+      "sideA": "¿Qué cambios requiere la nueva política de seguridad?",
+      "sideB": [
+        {
+          "text": "What changes does the new security policy require?",
+          "audioSrc": "public/data/audio/common_meeting/mi_075_sideB_0.mp3"
+        },
+        {
+          "text": "What modifications does the new security policy need?",
+          "audioSrc": "public/data/audio/common_meeting/mi_075_sideB_1.mp3"
+        },
+        {
+          "text": "What changes are needed for the new security policy?",
+          "audioSrc": "public/data/audio/common_meeting/mi_075_sideB_2.mp3"
+        }
+      ],
+      "note": "This is an **Object Question**. The subject is [the new security policy]. The question asks about the object ('What changes'). Since we have a known subject, we must use the auxiliary verb [does] (because 'policy' is singular) before the subject.\n\nCommon Error: ~What changes the new security policy requires?~."
+    },
+    {
+      "cardId": "mi_076",
+      "cardType": "flippable",
+      "sideA": "¿Qué equipo tiene la versión más reciente del código?",
+      "sideB": [
+        {
+          "text": "Which team has the latest version of the code?",
+          "audioSrc": "public/data/audio/common_meeting/mi_076_sideB_0.mp3"
+        },
+        {
+          "text": "What team possesses the most recent codebase?",
+          "audioSrc": "public/data/audio/common_meeting/mi_076_sideB_1.mp3"
+        },
+        {
+          "text": "Which team holds the newest version of the code?",
+          "audioSrc": "public/data/audio/common_meeting/mi_076_sideB_2.mp3"
+        }
+      ],
+      "note": "This is a **Subject Question**. The question phrase [Which team] is the subject we are asking about. It's the 'actor' that performs the action of 'having'. The main verb ('has') is used directly without an auxiliary. Note that 'have' becomes 'has' for the third-person singular.\n\nCommon Error: ~Which team does have the latest version?~."
     }
   ]
 }
