@@ -1,234 +1,150 @@
 [
   {
-    "cardId": "egac_047",
-    "category": "Informal English: Have Got",
-    "sentenceParts": {
-      "prefix": "I",
-      "suffix": " a feeling that this is going to be a great day."
-    },
-    "options": [
+    "cardId": "mi_028",
+    "cardType": "flippable",
+    "sideA": "Se te escucha un poco entrecortado.",
+    "sideB": [
       {
-        "text": "'ve got",
-        "isCorrect": true
+        "text": "You're breaking up a little bit.",
+        "audioSrc": "public/data/audio/common_meeting/mi_028_sideB_0.mp3"
       },
       {
-        "text": "am got",
-        "isCorrect": false
+        "text": "Your audio is a little choppy.",
+        "audioSrc": "public/data/audio/common_meeting/mi_028_sideB_1.mp3"
       },
       {
-        "text": "got",
-        "isCorrect": false
+        "text": "We're losing you, your connection seems unstable.",
+        "audioSrc": "public/data/audio/common_meeting/mi_028_sideB_2.mp3"
+      },
+      {
+        "text": "It sounds like you're breaking up a bit.",
+        "audioSrc": "public/data/audio/common_meeting/mi_028_sideB_3.mp3"
+      },
+      {
+        "text": "It sounds a bit cut off.",
+        "audioSrc": "public/data/audio/common_meeting/mi_028_sideB_4.mp3"
       }
     ],
-    "correctAnswer": "I've got a feeling that this is going to be a great day.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_047.mp3",
-    "hint": "While 'I got' is common in informal American English, 'I've got' is the grammatically standard present form.",
-    "content": {
-      "type": "text",
-      "value": "**['ve got]** (have got) is a common, slightly informal alternative to 'have' for expressing possession in the present.\n\n~am got~ is grammatically incorrect.\n~got~ by itself is technically the simple past, though it's often used informally in the present; **'have got'** is the more standard present form being tested."
-    }
+    "note": "The literal translation You listen cut is incorrect. The correct idiom is [You're breaking up] or [Your audio is choppy].\n\n~I hear you a bit cut off~ (While understandable, this is not a common idiom. Native speakers would say 'You're breaking up' or 'Your audio is choppy'. 'Cut off' usually means the connection was lost completely.)"
   },
   {
-    "cardId": "egac_101",
-    "category": "Questions: Declarative",
-    "sentenceParts": {
-      "prefix": "So, ",
-      "suffix": "you're not coming to the meeting this afternoon?"
-    },
-    "options": [
+    "cardId": "mi_064",
+    "cardType": "flippable",
+    "sideA": "¿Como es llamada esa acción en la interfaz principal?",
+    "sideB": [
       {
-        "text": "",
-        "isCorrect": true
+        "text": "What is that action called on the main interface?",
+        "audioSrc": "public/data/audio/common_meeting/mi_064_sideB_0.mp3"
       },
       {
-        "text": "are",
-        "isCorrect": false
+        "text": "What's that action referred to as on the main UI?",
+        "audioSrc": "public/data/audio/common_meeting/mi_064_sideB_1.mp3"
       },
       {
-        "text": "why",
-        "isCorrect": false
+        "text": "What is the name for that action on the main screen?",
+        "audioSrc": "public/data/audio/common_meeting/mi_064_sideB_2.mp3"
+      },
+      {
+        "text": "What is that action named in the main interface?",
+        "audioSrc": "public/data/audio/common_meeting/mi_064_sideB_3.mp3"
       }
     ],
-    "correctAnswer": "So, you're not coming to the meeting this afternoon?",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_101.mp3",
-    "hint": "This informal structure is very common in speech to check or confirm what you think is true.",
-    "content": {
-      "type": "text",
-      "value": "**Declarative Questions** have the same grammar as a statement but use rising intonation to function as a question. They are common for confirming information.\n\nThe sentence *'So, you're not coming to the meeting this afternoon?'* is already a complete grammatical statement. By adding a question mark and using a rising tone, it becomes a question. Therefore, no extra word is needed, and the correct option is the blank one.\n\nThe options **'are'** and **'why'** would change the structure to a standard interrogative sentence (e.g., *'So, are you not coming...?'*), which is not the form being tested here."
-    }
+    "note": "Always use [What is it called?] to ask for a name. Avoid the literal translation How is it called?.\n\n'Interfaz principal' can be translated as [main interface], [main UI] (User Interface), or [main screen].\n\n~How is that action named on the main interface?~ (Incorrect. To ask for a name, use 'What', not 'How'. 'How' asks about the method or process.)"
   },
   {
-    "cardId": "egac_385",
-    "category": "Modals: 'Had Better'",
-    "sentenceParts": {
-      "prefix": "The code freeze starts in an hour, so you",
-      "suffix": " push your changes now."
-    },
-    "options": [
+    "cardId": "mi_014",
+    "cardType": "flippable",
+    "sideA": "Sí, entendi el problema.",
+    "sideB": [
       {
-        "text": "'d better",
-        "isCorrect": true
+        "text": "Yep, I get the issue.",
+        "audioSrc": "public/data/audio/common_meeting/mi_014_sideB_0.mp3"
       },
       {
-        "text": "should to",
-        "isCorrect": false
+        "text": "Got it. I understand the problem.",
+        "audioSrc": "public/data/audio/common_meeting/mi_014_sideB_1.mp3"
       },
       {
-        "text": "must to",
-        "isCorrect": false
+        "text": "Yes, I understand the issue.",
+        "audioSrc": "public/data/audio/common_meeting/mi_014_sideB_2.mp3"
+      },
+      {
+        "text": "Yeah, I got the issue.",
+        "audioSrc": "public/data/audio/common_meeting/mi_014_sideB_3.mp3"
       }
     ],
-    "correctAnswer": "The code freeze starts in an hour, so you'd better push your changes now.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_385.mp3",
-    "hint": "A 'code freeze' is a period where developers stop adding new features to prepare for a stable release.",
-    "content": {
-      "type": "text",
-      "value": "**Had better** ('d better) is a modal expression used for strong, urgent advice. There's an implication of negative consequences if the advice isn't followed.\n\n~Should to~ and **~must to~** are grammatically incorrect; modal verbs like *should* and *must* are **never** followed by 'to'. The correct structure is **modal + base verb** (e.g., *should push*)."
-    }
+    "note": "[Got it] is a very common and concise way to confirm understanding.\n\nUsing the present tense ([understand] or [get]) is more natural to express your current state of knowledge than the simple past (I understood).\n\n~Comprehend~ is a very formal word; in conversation, [understand] or [get] is better."
   },
   {
-    "cardId": "egac_013",
-    "category": "Prepositions at the End of Questions",
-    "sentenceParts": {
-      "prefix": "What are you looking ",
-      "suffix": "?"
-    },
-    "options": [
+    "cardId": "mi_027",
+    "cardType": "flippable",
+    "sideA": "¿Qué opinan sobre esto?",
+    "sideB": [
       {
-        "text": "for",
-        "isCorrect": true
+        "text": "What are your thoughts on this?",
+        "audioSrc": "public/data/audio/common_meeting/mi_027_sideB_0.mp3"
       },
       {
-        "text": "at",
-        "isCorrect": false
+        "text": "What do you guys think about this?",
+        "audioSrc": "public/data/audio/common_meeting/mi_027_sideB_1.mp3"
       },
       {
-        "text": "to",
-        "isCorrect": false
+        "text": "Any feedback on this part?",
+        "audioSrc": "public/data/audio/common_meeting/mi_027_sideB_2.mp3"
+      },
+      {
+        "text": "What's your opinion about this?",
+        "audioSrc": "public/data/audio/common_meeting/mi_027_sideB_3.mp3"
+      },
+      {
+        "text": "What are your thoughts about this?",
+        "audioSrc": "public/data/audio/common_meeting/mi_027_sideB_4.mp3"
       }
     ],
-    "correctAnswer": "What are you looking for?",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_013.mp3",
-    "hint": "The very formal alternative is 'For what are you looking?', but this is rarely used in conversation.",
-    "content": {
-      "type": "text",
-      "value": "In modern English, it's natural to end a question with a preposition, especially when it's part of a phrasal verb like **look for** (meaning 'to search').\n\n~What are you looking at?~ is a grammatically correct question, but it means 'What is the object of your gaze?'. It doesn't fit the context of searching.\n~What are you looking to?~ is grammatically incorrect in this structure. The phrasal verb 'look to' means to rely on someone or something, which doesn't fit here."
-    }
+    "note": "Questions with 'what' require the auxiliary verb [do] before the subject: [What do you think...?], not What you think?.\n\n~How~ asks about the manner/method. [What] asks for the opinion itself. To ask for an opinion, use [What do you think?]."
   },
   {
-    "cardId": "egac_189",
-    "category": "Synonyms for 'Raro': Weird vs. Awkward",
-    "sentenceParts": {
-      "prefix": "There was a long, ",
-      "suffix": " silence after he told the joke."
-    },
-    "options": [
+    "cardId": "mi_067",
+    "cardType": "flippable",
+    "sideA": "¿No habíamos solucionado este problema en el último release?",
+    "sideB": [
       {
-        "text": "awkward",
-        "isCorrect": true
+        "text": "Didn't we fix this issue in the last release?",
+        "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_0.mp3"
       },
       {
-        "text": "awkwardly",
-        "isCorrect": false
+        "text": "Didn't we already solve this problem in the previous release?",
+        "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_1.mp3"
       },
       {
-        "text": "strangeness",
-        "isCorrect": false
+        "text": "Did we not resolve this issue in the last release?",
+        "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_2.mp3"
+      },
+      {
+        "text": "Haven't we fixed this issue in the latest release?",
+        "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_3.mp3"
       }
     ],
-    "correctAnswer": "There was a long, awkward silence after he told the joke.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_189.mp3",
-    "hint": "'Awkward' comes from the Old Norse 'afugr', meaning 'turned the wrong way'.",
-    "content": {
-      "type": "text",
-      "value": "An **adjective** is needed here to describe the noun 'silence'.\n\n**[Awkward]** is the correct adjective for situations that are socially uncomfortable or embarrassing.\n\n~awkwardly~ is an adverb. Adverbs describe verbs, not nouns.\n~strangeness~ is a noun. You cannot use a noun to describe another noun in this way."
-    }
+    "note": "Rule: *Negative Questions*.\n\nFor past tense negative questions, use [Didn't]. It's formed from 'did + not'. The question is structured as: [Didn't + subject + base verb].\n\nCommon Error: Never mix past tense on the auxiliary and the main verb. Didn't we fixed... is incorrect. It must be [Didn't we fix...].\n\nUsing the Present Perfect ([Haven't we fixed...]) is also correct and emphasizes the connection of the past action to the present situation."
   },
   {
-    "cardId": "egac_300",
-    "category": "Autonomy: 'On my own'",
-    "sentenceParts": {
-      "prefix": "She's very independent. She's been living ",
-      "suffix": " since she was 18."
-    },
-    "options": [
+    "cardId": "mi_074",
+    "cardType": "flippable",
+    "sideA": "¿Qué impide el despliegue a producción?",
+    "sideB": [
       {
-        "text": "on her own",
-        "isCorrect": true
+        "text": "What prevents the deployment to production?",
+        "audioSrc": "public/data/audio/common_meeting/mi_074_sideB_0.mp3"
       },
       {
-        "text": "for her own",
-        "isCorrect": false
+        "text": "What is blocking the production release?",
+        "audioSrc": "public/data/audio/common_meeting/mi_074_sideB_1.mp3"
       },
       {
-        "text": "by own",
-        "isCorrect": false
+        "text": "What's stopping the deployment to production?",
+        "audioSrc": "public/data/audio/common_meeting/mi_074_sideB_2.mp3"
       }
     ],
-    "correctAnswer": "She's very independent. She's been living on her own since she was 18.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_300.mp3",
-    "hint": "The phrases 'on my own' and 'by myself' are very similar and often interchangeable.",
-    "content": {
-      "type": "text",
-      "value": "The idiom **[on her own]** is a perfect choice here, as it emphasizes independence and self-sufficiency.\n\n~for her own~ is grammatically incorrect. The preposition is wrong.\n~by own~ is also incorrect. It's missing the required reflexive pronoun (e.g., 'by **herself**')."
-    }
-  },
-  {
-    "cardId": "egac_201",
-    "category": "Knowledge vs. Experience: 'Been to'",
-    "sentenceParts": {
-      "prefix": "I know a lot about Japan, but I've never actually ",
-      "suffix": " there."
-    },
-    "options": [
-      {
-        "text": "been",
-        "isCorrect": true
-      },
-      {
-        "text": "known",
-        "isCorrect": false
-      },
-      {
-        "text": "gone in",
-        "isCorrect": false
-      }
-    ],
-    "correctAnswer": "I know a lot about Japan, but I've never actually been there.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_201.mp3",
-    "hint": "Using 'gone to' would imply you are still at that location and have not returned.",
-    "content": {
-      "type": "text",
-      "value": "**[Been there]** is the correct phrase to talk about the experience of having visited a place and returned.\n\n~known~ implies a deep, intimate understanding of a place, which doesn't fit the context of visiting.\n~gone in~ is grammatically incorrect in this context. 'Gone to' implies the person is still there and has not come back.\n\n*Usage Note: We use the structure **'have been to [a place]'** specifically to talk about the **experience** of visiting a place in the past. It is the correct and most natural choice here."
-    }
-  },
-  {
-    "cardId": "egac_126",
-    "category": "Connectors: Exclusion",
-    "sentenceParts": {
-      "prefix": "",
-      "suffix": " from the main characters, the supporting cast was also excellent."
-    },
-    "options": [
-      {
-        "text": "Apart",
-        "isCorrect": true
-      },
-      {
-        "text": "Except",
-        "isCorrect": false
-      },
-      {
-        "text": "Away",
-        "isCorrect": false
-      }
-    ],
-    "correctAnswer": "Apart from the main characters, the supporting cast was also excellent.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_126.mp3",
-    "hint": "Here, 'Apart from' acts as a synonym for 'Besides' or 'In addition to'.",
-    "content": {
-      "type": "text",
-      "value": "**[Apart from]** is a versatile connector. In this context, it means 'in addition to'.\n\n~Except from~ would imply that the main characters were *not* excellent, which changes the meaning of the sentence.\n~Away from~ is used to talk about physical distance and is grammatically incorrect in this context."
-    }
+    "note": "This is a *Subject Question*. We are asking for the 'thing' that is performing the action of preventing. The question word [What] acts as the subject. Consequently, no auxiliary verb is needed, and the main verb ('prevents') is conjugated in the third person singular.\n\nCommon Error: What does prevent the deployment?.\n\n~What stop the production release?~ (Incorrect. Since 'What' is the third-person singular subject of the sentence, the verb must be conjugated with an '-s': 'stops'.)"
   }
 ]

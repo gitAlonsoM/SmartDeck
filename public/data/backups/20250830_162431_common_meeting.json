@@ -344,13 +344,9 @@
         {
           "text": "Yes, I understand the issue.",
           "audioSrc": "public/data/audio/common_meeting/mi_014_sideB_2.mp3"
-        },
-        {
-          "text": "Yeah, I got the issue.",
-          "audioSrc": "public/data/audio/common_meeting/mi_014_sideB_3.mp3"
         }
       ],
-      "note": "[Got it] is a very common and concise way to confirm understanding.\n\nUsing the present tense ([understand] or [get]) is more natural to express your current state of knowledge than the simple past (I understood).\n\n~Comprehend~ is a very formal word; in conversation, [understand] or [get] is better."
+      "note": "[Got it] is a very common and concise way to confirm understanding.\n\nUsing the present tense ([understand] or [get]) is more natural to express your current state of knowledge than the simple past (~I understood~).\n\n~Comprehend~ is a very formal word; in conversation, [understand] or [get] is better."
     },
     {
       "cardId": "mi_015",
@@ -652,13 +648,9 @@
         {
           "text": "What's your opinion about this?",
           "audioSrc": "public/data/audio/common_meeting/mi_027_sideB_3.mp3"
-        },
-        {
-          "text": "What are your thoughts about this?",
-          "audioSrc": "public/data/audio/common_meeting/mi_027_sideB_4.mp3"
         }
       ],
-      "note": "Questions with 'what' require the auxiliary verb [do] before the subject: [What do you think...?], not What you think?.\n\n~How~ asks about the manner/method. [What] asks for the opinion itself. To ask for an opinion, use [What do you think?]."
+      "note": "Questions with 'what' require the auxiliary verb [do] before the subject: [What do you think...?], not ~What you think?~.\n\n~How~ asks about the manner/method. [What] asks for the opinion itself. To ask for an opinion, use [What do you think?]."
     },
     {
       "cardId": "mi_028",
@@ -686,7 +678,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_028_sideB_4.mp3"
         }
       ],
-      "note": "The literal translation You listen cut is incorrect. The correct idiom is [You're breaking up] or [Your audio is choppy].\n\n~I hear you a bit cut off~ (While understandable, this is not a common idiom. Native speakers would say 'You're breaking up' or 'Your audio is choppy'. 'Cut off' usually means the connection was lost completely.)"
+      "note": "The literal translation You listen cut is incorrect. The correct idiom is [You're breaking up] or [Your audio is choppy]."
     },
     {
       "cardId": "mi_029",
@@ -1480,13 +1472,9 @@
         {
           "text": "What is the name for that action on the main screen?",
           "audioSrc": "public/data/audio/common_meeting/mi_064_sideB_2.mp3"
-        },
-        {
-          "text": "What is that action named in the main interface?",
-          "audioSrc": "public/data/audio/common_meeting/mi_064_sideB_3.mp3"
         }
       ],
-      "note": "Always use [What is it called?] to ask for a name. Avoid the literal translation How is it called?.\n\n'Interfaz principal' can be translated as [main interface], [main UI] (User Interface), or [main screen].\n\n~How is that action named on the main interface?~ (Incorrect. To ask for a name, use 'What', not 'How'. 'How' asks about the method or process.)"
+      "note": "Always use [What is it called?] to ask for a name. Avoid the literal translation ~How is it called?~.\n\n'Interfaz principal' can be translated as [main interface], [main UI] (User Interface), or [main screen]."
     },
     {
       "cardId": "mi_065",
@@ -1544,13 +1532,9 @@
         {
           "text": "Did we not resolve this issue in the last release?",
           "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_2.mp3"
-        },
-        {
-          "text": "Haven't we fixed this issue in the latest release?",
-          "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_3.mp3"
         }
       ],
-      "note": "Rule: *Negative Questions*.\n\nFor past tense negative questions, use [Didn't]. It's formed from 'did + not'. The question is structured as: [Didn't + subject + base verb].\n\nCommon Error: Never mix past tense on the auxiliary and the main verb. Didn't we fixed... is incorrect. It must be [Didn't we fix...].\n\nUsing the Present Perfect ([Haven't we fixed...]) is also correct and emphasizes the connection of the past action to the present situation."
+      "note": "Rule: **Negative Questions**.\n\nFor past tense negative questions, use [Didn't]. It's formed from 'did + not'. The question is structured as: [Didn't + subject + base verb].\n\nCommon Error: Never mix past tense on the auxiliary and the main verb. ~Didn't we fixed...~ is incorrect. It must be [Didn't we fix...]."
     },
     {
       "cardId": "mi_068",
@@ -1690,7 +1674,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_074_sideB_2.mp3"
         }
       ],
-      "note": "This is a *Subject Question*. We are asking for the 'thing' that is performing the action of preventing. The question word [What] acts as the subject. Consequently, no auxiliary verb is needed, and the main verb ('prevents') is conjugated in the third person singular.\n\nCommon Error: What does prevent the deployment?.\n\n~What stop the production release?~ (Incorrect. Since 'What' is the third-person singular subject of the sentence, the verb must be conjugated with an '-s': 'stops'.)"
+      "note": "This is a **Subject Question**. We are asking for the 'thing' that is performing the action of preventing. The question word [What] acts as the subject. Consequently, no auxiliary verb is needed, and the main verb ('prevents') is conjugated in the third person singular.\n\nCommon Error: ~What does prevent the deployment?~."
     },
     {
       "cardId": "mi_075",
