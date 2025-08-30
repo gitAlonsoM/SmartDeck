@@ -152,11 +152,16 @@ class FlippableCardScreen {
                if (formattedTopic) {
                     formattedTopic = formattedTopic.replace(/\[([^\]]+)\]/g, '<strong class="font-semibold text-indigo-400">$1</strong>');
                     formattedTopic = formattedTopic.replace(/~([^~]+)~/g, '<strong class="font-semibold text-yellow-400 dark:text-yellow-500">$1</strong>');
-                        formattedTopic = formattedTopic.replace(/\*\*([^*]+)\*\*/g, (match, term) => {
-                            const termKey = term.trim().toLowerCase().replace(/\s+/g, '_');
-                            return `<a href="#" class="glossary-term" data-term-key="${termKey}">${term}</a>`;
-                        });
-
+                         // New parser for glossary terms **Term Name**
+                    formattedTopic = formattedTopic.replace(/\*\*([^*]+)\*\*/g, (match, term) => {
+                        // Sanitize the term to create a robust key: lowercase, remove special chars, replace spaces/hyphens with underscore.
+                        const termKey = term
+                            .trim()
+                            .toLowerCase()
+                            .replace(/[().,]/g, '')    // Remove parentheses, dots, and commas
+                            .replace(/[\s-]+/g, '_');  // Replace spaces and hyphens with an underscore
+                        return `<a href="#" class="glossary-term" data-term-key="${termKey}">${term}</a>`;
+                    });
                     return `<p class="text-sm text-gray-400 dark:text-gray-300 note-paragraph mb-2 last:mb-0">${formattedTopic}</p>`;
                 }
                 return '';
