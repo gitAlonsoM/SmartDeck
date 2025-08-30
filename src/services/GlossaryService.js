@@ -1,4 +1,4 @@
-// src/services/GlossaryService.js
+//src\services\GlossaryService.js
 class GlossaryService {
     static cachedGlossaries = {};
 
@@ -27,6 +27,21 @@ class GlossaryService {
             return null;
         }
     }
+
+    /**
+     * Synchronously retrieves a glossary from the cache. ONLY use this if you are sure
+     * the glossary has been pre-loaded elsewhere (e.g., in App.js).
+     * @param {string} glossaryName - The name of the glossary.
+     * @returns {object|null} The cached glossary object or null if not in cache.
+     */
+    static getCachedGlossary(glossaryName) {
+        if (this.cachedGlossaries[glossaryName]) {
+            return this.cachedGlossaries[glossaryName];
+        }
+        console.warn(`[GlossaryService] getCachedGlossary -> Glossary '${glossaryName}' not found in cache. It may not have been pre-loaded.`);
+        return null;
+    }
+
 
     /**
      * Retrieves a specific term from a loaded glossary.

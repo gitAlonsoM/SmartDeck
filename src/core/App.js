@@ -78,6 +78,10 @@ class App {
         if (!infoModalContainer) { throw new Error("Fatal Error: InfoModal container not found."); }
         this.infoModal = new InfoModal(infoModalContainer);
         await this.infoModal.init();
+        console.log("DEBUG: [App] setupComponents -> Pre-loading essential glossaries.");
+    await GlossaryService.loadGlossary('english_rules');
+    console.log("DEBUG: [App] setupComponents -> Glossaries pre-loaded.");
+    
         console.log("DEBUG: [App] setupComponents -> All components initialized.");
     }
     /**
