@@ -95,7 +95,7 @@ You are an expert Content Quality Analyst and Instructional Designer for 'SmartD
 - \`sideA\`: **MODIFIABLE**.
 - \`sideB\`: **PRIMARY VALUE-ADD FIELD**.
 - \`note\`: **PRIMARY VALUE-ADD FIELD**.
-
+    - **CRITICAL RULE:** This field may start with a special syntax (SOLO ALGUNAS CARDS PODRIAN TENERLO) \`**[ID]**\` (e.g., \`**[12]**\`), which links to a grammar rule. **This syntax MUST NOT be altered, corrected, or removed.** Treat it as a read-only prefix when appending new content.
 ### C) Grammar Audio-Choice ('audioChoice') Card
 - \`cardId\`: **READ-ONLY**.
 - \`audioSrc\`: **READ-ONLY**.

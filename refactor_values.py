@@ -2,100 +2,113 @@ import json
 import re
 import os
 
-# ==============================================================================
-# CONFIGURACIÓN
-# ==============================================================================
-# 1. Ruta al glosario que tiene los IDs y títulos.
-GLOSSARY_FILE = 'public\data\glossary\english_rules.json'
+def final_refactor_deck():
+    """
+    Final, corrected version.
+    1. Correctly cleans cards with multiple modals, keeping the highest-priority one.
+    2. PRESERVES the original text content of the note.
+    3. Adds high-value 'Object Question' modals (ID 3) where needed.
+    4. Provides detailed logging.
+    """
+    deck_path = os.path.join('public', 'data', 'common_meeting.json')
+    
+    if not os.path.exists(deck_path):
+        print(f"ERROR: El archivo del mazo no fue encontrado en la ruta: {deck_path}")
+        return
 
-# 2. Archivo de mazo (deck) que quieres actualizar.
-DECK_TO_UPDATE = 'public\data\common_meeting.json'
-# ==============================================================================
+    # --- CONFIGURACIÓN DE REGLAS ---
+    PRIORITY_ORDER = [
+        2, 3, 50, 51, 4, 12, 19, 49, 5, 7, 10, 11, 8, 9, 46, 45, 14, 13, 33, 47, 
+        20, 1, 6, 15, 18, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 34, 
+        35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 48, 17 
+    ]
+    PHRASAL_VERB_MODAL_ID = 16
+    MODALS_TO_ADD = {
+        "mi_041": 3, "mi_051": 3, "mi_053": 3, "mi_054": 3, "mi_057": 3,
+        "mi_058": 3, "mi_062": 3, "mi_063": 3, "mi_064": 3,
+    }
 
-def load_json(file_path):
-    """Loads a JSON file with UTF-8 encoding."""
+    print(f"--- Iniciando refactorización final de {deck_path} ---\n")
+
     try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    except FileNotFoundError:
-        print(f"ERROR: El archivo no fue encontrado: {file_path}")
-        return None
-    except json.JSONDecodeError:
-        print(f"ERROR: El archivo JSON está mal formado: {file_path}")
-        return None
-
-def save_json(file_path, data):
-    """Saves data to a JSON file with UTF-8 encoding and pretty-printing."""
-    try:
-        # Create a backup of the original file
-        backup_path = file_path + '.bak'
-        if os.path.exists(file_path):
-            os.rename(file_path, backup_path)
-            print(f"INFO: Backup del archivo original creado en: {backup_path}")
-
-        with open(file_path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-        print(f"SUCCESS: Archivo guardado correctamente en: {file_path}")
+        with open(deck_path, 'r', encoding='utf-8') as f:
+            deck_data = json.load(f)
     except Exception as e:
-        print(f"ERROR: No se pudo guardar el archivo {file_path}. Causa: {e}")
-
-def create_title_to_id_map(glossary_data):
-    """Creates an inverted map from a rule's title to its ID."""
-    title_map = {}
-    for rule_id, rule_details in glossary_data.items():
-        title = rule_details.get('title')
-        if title:
-            # Store the title exactly as it appears for a precise match
-            title_map[title.strip()] = rule_id
-    print(f"INFO: Mapa de Título -> ID creado con {len(title_map)} entradas.")
-    return title_map
-
-def main():
-    """Main script execution."""
-    print("--- Iniciando script de refactorización de notas ---")
-    
-    glossary_data = load_json(GLOSSARY_FILE)
-    if not glossary_data:
-        print("CRITICAL: No se pudo cargar el glosario. Abortando script.")
+        print(f"ERROR: No se pudo leer o decodificar el archivo JSON. Causa: {e}")
         return
 
-    title_to_id = create_title_to_id_map(glossary_data)
-    
-    print(f"\n--- Procesando mazo: {DECK_TO_UPDATE} ---")
-    deck_data = load_json(DECK_TO_UPDATE)
-    if not deck_data or 'cards' not in deck_data:
-        print(f"WARNING: El archivo {DECK_TO_UPDATE} no tiene el formato esperado o está vacío. Abortando.")
-        return
+    cards_modified_count = 0
+    modal_pattern = r'\*\*\[(\d+)\]\*\*'
 
-    replacements_count = 0
-    
-    def replacement_handler(match):
-        nonlocal replacements_count
-        title = match.group(1).strip()
+    for card in deck_data.get('cards', []):
+        card_id = card.get('cardId')
+        note = card.get('note', '')
+        original_note = note
         
-        rule_id = title_to_id.get(title)
+        found_ids_str = re.findall(modal_pattern, note)
         
-        if rule_id:
-            replacements_count += 1
-            print(f"  -> Reemplazando '{title}' por '**[{rule_id}]**'")
-            return f'**[{rule_id}]**'
-        else:
-            # If the title is not in our map, we don't touch it.
-            # This is key to only changing the cards that need it.
-            return match.group(0)
+        # --- LÓGICA DE LIMPIEZA (CORREGIDA) ---
+        if found_ids_str:
+            original_ids = sorted([int(id_str) for id_str in found_ids_str])
+            valid_modals = sorted([mid for mid in original_ids if mid != PHRASAL_VERB_MODAL_ID])
+            
+            if valid_modals != original_ids or len(valid_modals) > 1:
+                chosen_modal_id = None
+                
+                if not valid_modals:
+                    chosen_modal_id = -1
+                elif len(valid_modals) == 1:
+                    chosen_modal_id = valid_modals[0]
+                else:
+                    for pid in PRIORITY_ORDER:
+                        if pid in valid_modals:
+                            chosen_modal_id = pid
+                            break
+                    if not chosen_modal_id: chosen_modal_id = valid_modals[0]
 
-    for card in deck_data['cards']:
-        if 'note' in card and card['note']:
-            # Use re.sub with a handler function for dynamic replacement
-            card['note'] = re.sub(r'\*\*([^*]+)\*\*', replacement_handler, card['note'])
-    
-    if replacements_count > 0:
-        print(f"\nINFO: Se realizaron {replacements_count} reemplazos en total.")
-        save_json(DECK_TO_UPDATE, deck_data)
+                print(f"--- Procesando Card ID: {card_id} ---")
+                print(f"DEBUG: Modales originales: {original_ids}")
+                
+                # --- LÓGICA DE EXTRACCIÓN DE TEXTO CORREGIDA ---
+                note_parts = note.split('\n\n', 1)
+                text_content = note_parts[1].strip() if len(note_parts) > 1 else ""
+
+                if chosen_modal_id != -1:
+                    print(f"INFO: Modales válidos: {valid_modals} -> Elegido: [{chosen_modal_id}]")
+                    new_note = f"**[{chosen_modal_id}]**\n\n{text_content}"
+                else:
+                    print(f"INFO: Se eliminó el único modal (ID {PHRASAL_VERB_MODAL_ID}).")
+                    new_note = text_content
+                
+                card['note'] = new_note
+                print(f"NOTA ORIGINAL:\n'{original_note}'")
+                print(f"NUEVA NOTA:\n'{new_note}'\n")
+                cards_modified_count += 1
+                continue
+
+        # --- LÓGICA PARA AÑADIR MODALES ---
+        if card_id in MODALS_TO_ADD and not found_ids_str:
+            modal_to_add = MODALS_TO_ADD[card_id]
+            new_note_content = f"**[{modal_to_add}]**"
+            new_note = f"{new_note_content}\n\n{note}" if note else new_note_content
+            
+            card['note'] = new_note
+            print(f"--- Procesando Card ID: {card_id} ---")
+            print(f"INFO: Añadiendo modal faltante [{modal_to_add}].")
+            print(f"NOTA ORIGINAL:\n'{original_note}'")
+            print(f"NUEVA NOTA:\n'{new_note}'\n")
+            cards_modified_count += 1
+
+    if cards_modified_count > 0:
+        try:
+            with open(deck_path, 'w', encoding='utf-8') as f:
+                json.dump(deck_data, f, indent=2, ensure_ascii=False)
+            print(f"--- Finalizado: Se guardaron permanentemente los cambios en {cards_modified_count} tarjetas. ---")
+        except Exception as e:
+            print(f"ERROR CRÍTICO: No se pudo escribir en el archivo. Causa: {e}")
     else:
-        print("\nINFO: No se encontraron títulos para reemplazar. El archivo no ha sido modificado.")
+        print("--- Finalizado: No se necesitaron modificaciones. El archivo ya está correcto. ---")
 
-    print("\n--- Script de refactorización completado. ---")
 
-if __name__ == "__main__":
-    main()
+if __name__ == '__main__':
+    final_refactor_deck()
