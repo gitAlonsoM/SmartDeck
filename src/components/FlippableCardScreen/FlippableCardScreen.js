@@ -13,9 +13,10 @@ class FlippableCardScreen {
         console.log("DEBUG: [FlippableCardScreen] constructor -> Component instantiated.");
     }
 
-    async render(deckName, card, currentIndex, total, isMarkedForImprovement) {
-        console.log("DEBUG: [FlippableCardScreen] render -> Rendering card:", card);
-        this.cardData = card;
+       async render(deckId, deckName, card, currentIndex, total, isMarkedForImprovement) {
+        console.log("DEBUG: [FlippableCardScreen] render -> Rendering card:", card);
+        this.cardData = card;
+        this.deckId = deckId;
 
         if (!this.container.querySelector('.flip-card-container')) {
             const html = await ComponentLoader.loadHTML('/src/components/FlippableCardScreen/flippable-card-screen.html');
@@ -125,8 +126,6 @@ class FlippableCardScreen {
                 let formattedPara = paragraph.trim();
                 if (formattedPara) {
                     console.log(`DEBUG: [FlippableCardScreen] Processing Note Paragraph: "${formattedPara}"`);
-
-                    // ========= INICIO DEL PARCHE: Orden de operaciones corregido =========
                     
                     // 1. PRIMERO procesar el patrón más específico: **[ID]** o **ID**
                     formattedPara = formattedPara.replace(/\*\*\[?(\d+)\]?\*\*/g, (match, termId) => {
@@ -147,8 +146,6 @@ class FlippableCardScreen {
                     formattedPara = formattedPara.replace(/\[([^\]]+)\]/g, '<strong class="font-semibold text-indigo-400">$1</strong>');
                     formattedPara = formattedPara.replace(/~([^~]+)~/g, '<strong class="font-semibold text-yellow-400 dark:text-yellow-500">$1</strong>');
                     
-                    // ========= FIN DEL PARCHE =========
-
                     return `<p class="text-sm text-gray-400 dark:text-gray-300 note-paragraph mb-2 last:mb-0">${formattedPara}</p>`;
                 }
                 return '';
@@ -201,74 +198,94 @@ class FlippableCardScreen {
     }
 
     _createTextLine(text, isSideA = false, index = -1, audioSrcOverride = null) {
-        const lineDiv = document.createElement('div');
-        lineDiv.className = 'flex items-center justify-between w-full gap-4';
-        const textElement = document.createElement('p');
-        textElement.textContent = text;
-        textElement.className = isSideA ? 'text-lg md:text-xl font-semibold text-center flex-grow' : 'text-lg';
-        
-        const playButton = document.createElement('button');
-        playButton.innerHTML = '<i class="fas fa-volume-up"></i>';
-        
-        if (audioSrcOverride) {
-            playButton.className = 'play-audio-src-btn text-indigo-400 hover:text-indigo-300';
-            playButton.dataset.audioSrc = audioSrcOverride;
-            playButton.dataset.textToSpeak = text;
-            playButton.title = "Play high-quality audio";
-        } else {
-            playButton.className = 'play-tts-btn text-gray-400 hover:text-indigo-500';
-            playButton.dataset.textToSpeak = text;
-            playButton.title = "Play with device voice";
-        }
-        lineDiv.appendChild(textElement);
-        lineDiv.appendChild(playButton);
-        return lineDiv;
+       const lineDiv = document.createElement('div');
+        lineDiv.className = 'flex items-center justify-between w-full gap-4';
+        const textElement = document.createElement('p');
+        textElement.textContent = text;
+        textElement.className = isSideA ? 'text-lg md:text-xl font-semibold text-center flex-grow' : 'text-lg';
+        
+        const playButton = document.createElement('button');
+        playButton.innerHTML = '<i class="fas fa-volume-up"></i>';
+        playButton.dataset.index = index; // Add index to identify the button later
+        playButton.dataset.textToSpeak = text;
+        
+        if (audioSrcOverride) {
+            playButton.className = 'play-audio-src-btn text-indigo-400 hover:text-indigo-300';
+            playButton.dataset.audioSrc = audioSrcOverride;
+            playButton.title = "Play high-quality audio";
+        } else {
+            playButton.className = 'play-tts-btn text-gray-400 hover:text-indigo-500';
+            playButton.title = "Play with device voice";
+        }
+        lineDiv.appendChild(textElement);
+        lineDiv.appendChild(playButton);
+        return lineDiv;
     }
 
-    setupEventListeners() {
-        document.getElementById('flip-card-btn').onclick = () => this.flipCard();
-        document.getElementById('knew-it-btn').onclick = () => this.onAssess(true);
-        document.getElementById('review-again-btn').onclick = () => this.onAssess(false);
-        document.getElementById('ignore-btn-flippable').onclick = () => this.onIgnore();
-        document.getElementById('mark-improve-btn-flippable').onclick = () => this.onMarkForImprovement(this.cardData.cardId);
-        
-        this.container.onclick = (event) => {
-            const target = event.target;
-            const ttsButton = target.closest('.play-tts-btn');
-            const audioSrcButton = target.closest('.play-audio-src-btn');
-            const glossaryTerm = target.closest('.glossary-term');
+   setupEventListeners() {
+        document.getElementById('flip-card-btn').onclick = () => this.flipCard();
+        document.getElementById('knew-it-btn').onclick = () => this.onAssess(true);
+        document.getElementById('review-again-btn').onclick = () => this.onAssess(false);
+        document.getElementById('ignore-btn-flippable').onclick = () => this.onIgnore();
+        document.getElementById('mark-improve-btn-flippable').onclick = () => this.onMarkForImprovement(this.cardData.cardId);
+        
+        this.container.onclick = (event) => {
+            const target = event.target;
+            const ttsButton = target.closest('.play-tts-btn');
+            const audioSrcButton = target.closest('.play-audio-src-btn');
+            const glossaryTerm = target.closest('.glossary-term');
 
-            if (glossaryTerm) {
-                event.preventDefault();
-                const termKey = glossaryTerm.dataset.termKey;
-                if (termKey && this.onShowInfoModal) {
-                    this.onShowInfoModal(termKey);
-                }
-                return;
-            }
+            if (glossaryTerm) {
+                event.preventDefault();
+                const termKey = glossaryTerm.dataset.termKey;
+                if (termKey && this.onShowInfoModal) {
+                    this.onShowInfoModal(termKey);
+                }
+                return;
+            }
 
-            if (audioSrcButton) {
-                const audioSrc = audioSrcButton.dataset.audioSrc;
-                const textForFallback = audioSrcButton.dataset.textToSpeak;
-                this.onCardAudioStart();
-                const audio = new Audio(audioSrc);
-                audio.onended = () => this.onCardAudioEnd();
-                audio.onerror = () => {
-                    console.warn(`Audio file not found at '${audioSrc}'. Falling back to TTS.`);
-                    const preferredVoice = StorageService.loadPreferredVoice();
-                    TTSService.speak(textForFallback, preferredVoice, this.onCardAudioStart, this.onCardAudioEnd);
-                };
-                audio.play().catch(e => {
-                    console.error("Error playing audio:", e);
-                    this.onCardAudioEnd();
-                });
-            } else if (ttsButton) {
-                const text = ttsButton.dataset.textToSpeak;
-                const preferredVoice = StorageService.loadPreferredVoice();
-                TTSService.speak(text, preferredVoice, this.onCardAudioStart, this.onCardAudioEnd);
-            }
-        };
-    }
+            if (audioSrcButton || ttsButton) {
+                const button = audioSrcButton || ttsButton;
+                const textForSpeech = button.dataset.textToSpeak;
+                const answerIndex = button.dataset.index;
+                console.log(`DEBUG: Audio button clicked. Index: ${answerIndex}, Text: "${textForSpeech}"`);
+
+                let audioSrc = button.dataset.audioSrc;
+                if (!audioSrc && this.deckId && this.cardData && answerIndex > -1) {
+                    audioSrc = `public/data/audio/${this.deckId}/${this.cardData.cardId}_sideB_${answerIndex}.mp3`;
+                }
+
+                const playTTSFallback = () => {
+                    const preferredVoice = StorageService.loadPreferredVoice();
+                    TTSService.speak(textForSpeech, preferredVoice, this.onCardAudioStart, this.onCardAudioEnd);
+                };
+
+                if (audioSrc) {
+                    console.log(`DEBUG: Checking for audio file at: ${audioSrc}`);
+                    fetch(audioSrc, { method: 'HEAD' })
+                        .then(response => {
+                            if (response.ok) {
+                                console.log("DEBUG: Audio file exists. Playing high-quality audio.");
+                                this.onCardAudioStart();
+                                const audio = new Audio(audioSrc);
+                                audio.onended = () => this.onCardAudioEnd();
+                                audio.onerror = () => this.onCardAudioEnd(); // Failsafe
+                                audio.play();
+                            } else {
+                                console.log(`INFO: Audio file not found (status: ${response.status}). This is expected. Falling back to TTS.`);
+                                playTTSFallback();
+                            }
+                        })
+                        .catch(error => {
+                            console.error("DEBUG: Network error during audio check. Falling back to TTS.", error);
+                        });
+                } else {
+                    console.log("DEBUG: No audio source defined. Using TTS directly.");
+                    playTTSFallback();
+                }
+            }
+        };
+    }
     
     flipCard() {
         document.getElementById('flippable-card-header').classList.add('invisible');

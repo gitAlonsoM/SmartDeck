@@ -46,16 +46,24 @@ class App {
         this.musicService = new MusicService();
 
         const improvementModalContainer = document.getElementById('improvement-modal-container');
-        const confirmationModalContainer = document.getElementById('confirmation-modal-container'); 
 
-        // Ensure containers exist before proceeding
-        if (!aiModalContainer || !notificationModalContainer || !improvementModalContainer || !confirmationModalContainer) { 
-            throw new Error("Fatal Error: Modal container(s) not found."); 
-        }
+
+         // Initialize the Text-to-Speech service at the beginning.
+        console.log("DEBUG: [App] setupComponents -> Initializing TTSService.");
+        await TTSService.init();
+
+        const confirmationModalContainer = document.getElementById('confirmation-modal-container'); 
+
+        // Ensure containers exist before proceeding
+        if (!aiModalContainer || !notificationModalContainer || !improvementModalContainer || !confirmationModalContainer) { 
+            throw new Error("Fatal Error: Modal container(s) not found."); 
+        }
          
          // Initialize each modal with its own dedicated container
          this.aiDeckModal = new AiDeckModal(aiModalContainer, (formData) => this.handleCreateDeck(formData));
-         await this.aiDeckModal.init();
+
+
+            await this.aiDeckModal.init();
 
          this.notificationModal = new NotificationModal(notificationModalContainer);
          await this.notificationModal.init();
@@ -335,9 +343,11 @@ case 'audioChoiceQuiz':
                 const currentCard = this.state.quizInstance.getCurrentCard();
                 const deckName = this.state.allDecks[this.state.currentDeckId].name;
                 if (currentCard) {
-                     const improvementData = StorageService.loadImprovementData(this.state.currentDeckId);
-                const isMarked = improvementData.hasOwnProperty(currentCard.cardId);
-                    this.flippableCardScreen.render(deckName, currentCard, this.state.quizInstance.currentIndex, this.state.quizInstance.currentCards.length, isMarked);
+
+
+                 const improvementData = StorageService.loadImprovementData(this.state.currentDeckId);
+                     const isMarked = improvementData.hasOwnProperty(currentCard.cardId);
+                    this.flippableCardScreen.render(this.state.currentDeckId, deckName, currentCard, this.state.quizInstance.currentIndex, this.state.quizInstance.currentCards.length, isMarked); // Pass deckId
                 } else {
                     this.handleQuizEnd(); // Should not happen if logic is correct, but as a safeguard
                 }

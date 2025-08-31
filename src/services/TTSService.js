@@ -58,11 +58,11 @@ class TTSService {
      */
 
         static speak(text, voiceName, onStart, onEnd) {
-        if (!TTSService.isInitialized) {
-            alert("Text-to-Speech service is not ready. Please try again.");
-            // Ensure end callback is called on failure to prevent volume from getting stuck.
-            if (typeof onEnd === 'function') onEnd();
-            return;
+             console.log(`DEBUG: [TTSService] speak() called. isInitialized: ${TTSService.isInitialized}`);
+       if (!TTSService.isInitialized) {
+            alert("Text-to-Speech service is not ready. Please try again.");
+            // Ensure end callback is called on failure to prevent volume from getting stuck.
+            if (typeof onEnd === 'function') onEnd();
         }
 
         // Cancel any currently speaking utterance to avoid overlap.
@@ -94,13 +94,17 @@ class TTSService {
             }
         };
         
-        utterance.onerror = (event) => {
-            console.error("DEBUG: [TTSService] Speech synthesis error.", event);
-            // Ensure volume is restored even if speech fails
-            if (typeof onEnd === 'function') {
-                onEnd(); 
-            }
-        };
+       utterance.onerror = (event) => {
+            // Do not log 'interrupted' as an error, it's an expected user action.
+            if (event.error !== 'interrupted') {
+                console.error("DEBUG: [TTSService] Speech synthesis error.", event);
+            }
+            
+            // Ensure volume is restored even if speech fails or is interrupted.
+            if (typeof onEnd === 'function') {
+                onEnd(); 
+            }
+        };
 
         window.speechSynthesis.speak(utterance);
     }
