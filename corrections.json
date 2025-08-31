@@ -1,150 +1,89 @@
 [
   {
-    "cardId": "mi_028",
-    "cardType": "flippable",
-    "sideA": "Se te escucha un poco entrecortado.",
-    "sideB": [
+    "cardId": "egac_082",
+    "category": "Impersonal Sentences",
+    "sentenceParts": {
+      "prefix": "",
+      "suffix": " say that breakfast is the most important meal of the day."
+    },
+    "options": [
       {
-        "text": "You're breaking up a little bit.",
-        "audioSrc": "public/data/audio/common_meeting/mi_028_sideB_0.mp3"
+        "text": "They",
+        "isCorrect": true
       },
       {
-        "text": "Your audio is a little choppy.",
-        "audioSrc": "public/data/audio/common_meeting/mi_028_sideB_1.mp3"
+        "text": "It",
+        "isCorrect": false
       },
       {
-        "text": "We're losing you, your connection seems unstable.",
-        "audioSrc": "public/data/audio/common_meeting/mi_028_sideB_2.mp3"
-      },
-      {
-        "text": "It sounds like you're breaking up a bit.",
-        "audioSrc": "public/data/audio/common_meeting/mi_028_sideB_3.mp3"
-      },
-      {
-        "text": "It sounds a bit cut off.",
-        "audioSrc": "public/data/audio/common_meeting/mi_028_sideB_4.mp3"
+        "text": "Persons",
+        "isCorrect": false
       }
     ],
-    "note": "The literal translation You listen cut is incorrect. The correct idiom is [You're breaking up] or [Your audio is choppy].\n\n~I hear you a bit cut off~ (While understandable, this is not a common idiom. Native speakers would say 'You're breaking up' or 'Your audio is choppy'. 'Cut off' usually means the connection was lost completely.)"
+    "correctAnswer": "They say that breakfast is the most important meal of the day.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_082.mp3",
+    "hint": "Another option is the passive voice: 'It is said that breakfast is important.'",
+    "content": {
+      "type": "text",
+      "value": "The [Impersonal They] is used to make general statements or report what 'people in general' say or believe.\n\n~It~ is used for impersonal statements of fact or opinion (e.g., 'It is said that...').\n~Persons~ is a very formal or legal plural of 'person' and sounds unnatural in this context. The correct general plural is 'people'."
+    }
   },
   {
-    "cardId": "mi_064",
-    "cardType": "flippable",
-    "sideA": "¿Como es llamada esa acción en la interfaz principal?",
-    "sideB": [
+    "cardId": "egac_047",
+    "category": "Informal English: Have Got",
+    "sentenceParts": {
+      "prefix": "I",
+      "suffix": " a feeling that this is going to be a great day."
+    },
+    "options": [
       {
-        "text": "What is that action called on the main interface?",
-        "audioSrc": "public/data/audio/common_meeting/mi_064_sideB_0.mp3"
+        "text": "'ve got",
+        "isCorrect": true
       },
       {
-        "text": "What's that action referred to as on the main UI?",
-        "audioSrc": "public/data/audio/common_meeting/mi_064_sideB_1.mp3"
+        "text": "am got",
+        "isCorrect": false
       },
       {
-        "text": "What is the name for that action on the main screen?",
-        "audioSrc": "public/data/audio/common_meeting/mi_064_sideB_2.mp3"
-      },
-      {
-        "text": "What is that action named in the main interface?",
-        "audioSrc": "public/data/audio/common_meeting/mi_064_sideB_3.mp3"
+        "text": "got",
+        "isCorrect": false
       }
     ],
-    "note": "Always use [What is it called?] to ask for a name. Avoid the literal translation How is it called?.\n\n'Interfaz principal' can be translated as [main interface], [main UI] (User Interface), or [main screen].\n\n~How is that action named on the main interface?~ (Incorrect. To ask for a name, use 'What', not 'How'. 'How' asks about the method or process.)"
+    "correctAnswer": "I've got a feeling that this is going to be a great day.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_047.mp3",
+    "hint": "While 'I got' is common in informal American English, 'I've got' is the grammatically standard present form.",
+    "content": {
+      "type": "text",
+      "value": "['ve got]** (have got) is a common, slightly informal alternative to 'have' for expressing possession in the present.\n\n~am got~ is grammatically incorrect.\n~got~ by itself is technically the simple past. While it's often used informally in American English to mean 'have' in the present ('I got a car'), the more standard form, especially in British English, is 'have got'."
+    }
   },
   {
-    "cardId": "mi_014",
-    "cardType": "flippable",
-    "sideA": "Sí, entendi el problema.",
-    "sideB": [
+    "cardId": "egac_364",
+    "category": "Fluency: Ellipsis (omission)",
+    "sentenceParts": {
+      "prefix": "",
+      "suffix": " like it's going to storm soon."
+    },
+    "options": [
       {
-        "text": "Yep, I get the issue.",
-        "audioSrc": "public/data/audio/common_meeting/mi_014_sideB_0.mp3"
+        "text": "Looks",
+        "isCorrect": true
       },
       {
-        "text": "Got it. I understand the problem.",
-        "audioSrc": "public/data/audio/common_meeting/mi_014_sideB_1.mp3"
+        "text": "Look",
+        "isCorrect": false
       },
       {
-        "text": "Yes, I understand the issue.",
-        "audioSrc": "public/data/audio/common_meeting/mi_014_sideB_2.mp3"
-      },
-      {
-        "text": "Yeah, I got the issue.",
-        "audioSrc": "public/data/audio/common_meeting/mi_014_sideB_3.mp3"
+        "text": "Is looking",
+        "isCorrect": false
       }
     ],
-    "note": "[Got it] is a very common and concise way to confirm understanding.\n\nUsing the present tense ([understand] or [get]) is more natural to express your current state of knowledge than the simple past (I understood).\n\n~Comprehend~ is a very formal word; in conversation, [understand] or [get] is better."
-  },
-  {
-    "cardId": "mi_027",
-    "cardType": "flippable",
-    "sideA": "¿Qué opinan sobre esto?",
-    "sideB": [
-      {
-        "text": "What are your thoughts on this?",
-        "audioSrc": "public/data/audio/common_meeting/mi_027_sideB_0.mp3"
-      },
-      {
-        "text": "What do you guys think about this?",
-        "audioSrc": "public/data/audio/common_meeting/mi_027_sideB_1.mp3"
-      },
-      {
-        "text": "Any feedback on this part?",
-        "audioSrc": "public/data/audio/common_meeting/mi_027_sideB_2.mp3"
-      },
-      {
-        "text": "What's your opinion about this?",
-        "audioSrc": "public/data/audio/common_meeting/mi_027_sideB_3.mp3"
-      },
-      {
-        "text": "What are your thoughts about this?",
-        "audioSrc": "public/data/audio/common_meeting/mi_027_sideB_4.mp3"
-      }
-    ],
-    "note": "Questions with 'what' require the auxiliary verb [do] before the subject: [What do you think...?], not What you think?.\n\n~How~ asks about the manner/method. [What] asks for the opinion itself. To ask for an opinion, use [What do you think?]."
-  },
-  {
-    "cardId": "mi_067",
-    "cardType": "flippable",
-    "sideA": "¿No habíamos solucionado este problema en el último release?",
-    "sideB": [
-      {
-        "text": "Didn't we fix this issue in the last release?",
-        "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_0.mp3"
-      },
-      {
-        "text": "Didn't we already solve this problem in the previous release?",
-        "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_1.mp3"
-      },
-      {
-        "text": "Did we not resolve this issue in the last release?",
-        "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_2.mp3"
-      },
-      {
-        "text": "Haven't we fixed this issue in the latest release?",
-        "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_3.mp3"
-      }
-    ],
-    "note": "Rule: *Negative Questions*.\n\nFor past tense negative questions, use [Didn't]. It's formed from 'did + not'. The question is structured as: [Didn't + subject + base verb].\n\nCommon Error: Never mix past tense on the auxiliary and the main verb. Didn't we fixed... is incorrect. It must be [Didn't we fix...].\n\nUsing the Present Perfect ([Haven't we fixed...]) is also correct and emphasizes the connection of the past action to the present situation."
-  },
-  {
-    "cardId": "mi_074",
-    "cardType": "flippable",
-    "sideA": "¿Qué impide el despliegue a producción?",
-    "sideB": [
-      {
-        "text": "What prevents the deployment to production?",
-        "audioSrc": "public/data/audio/common_meeting/mi_074_sideB_0.mp3"
-      },
-      {
-        "text": "What is blocking the production release?",
-        "audioSrc": "public/data/audio/common_meeting/mi_074_sideB_1.mp3"
-      },
-      {
-        "text": "What's stopping the deployment to production?",
-        "audioSrc": "public/data/audio/common_meeting/mi_074_sideB_2.mp3"
-      }
-    ],
-    "note": "This is a *Subject Question*. We are asking for the 'thing' that is performing the action of preventing. The question word [What] acts as the subject. Consequently, no auxiliary verb is needed, and the main verb ('prevents') is conjugated in the third person singular.\n\nCommon Error: What does prevent the deployment?.\n\n~What stop the production release?~ (Incorrect. Since 'What' is the third-person singular subject of the sentence, the verb must be conjugated with an '-s': 'stops'.)"
+    "correctAnswer": "Looks like it's going to storm soon.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_364.mp3",
+    "hint": "This is most common with short, everyday expressions like 'Sounds good' or 'See you later'.",
+    "content": {
+      "type": "text",
+      "value": "This is a form of ellipsis common in informal speech. The full sentence is 'It looks like...'. Dropping the subject 'It' is very natural and conversational.\n\n~Look~ is incorrect because the implied subject is 'It' (third-person singular), which requires the verb to end in '-s' (Looks).\n~Is looking~ is the wrong verb form for this expression."
+    }
   }
 ]

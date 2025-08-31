@@ -1144,9 +1144,13 @@
         {
           "text": "Which regions are covered by these changes?",
           "audioSrc": "public/data/audio/common_meeting/mi_048_sideB_2.mp3"
+        },
+        {
+          "text": "Which provinces need these changes?",
+          "audioSrc": null
         }
       ],
-      "note": "**[3]**\n\nThe phrasal verb [to apply to] is the most natural way to express that a rule or change affects something.\n\n[Covered by] is a good synonym in this context.\n\n~In what provinces apply these changes?~ (Incorrect question structure. You need the auxiliary verb 'do' before the subject: '...do these changes apply?') \n\n~Which provinces do apply these changes?~ (Incorrect word order. The auxiliary verb 'do' must come before the subject 'these changes'. The correct structure is 'Which provinces do these changes apply to?')\n\n~Which provinces do these changes apply?~ (Incorrect. The phrasal verb is 'to apply to', so the preposition 'to' is required at the end of the sentence.)"
+      "note": "**[3]**\n\nThe phrasal verb [to apply to] is the most natural way to express that a rule or change affects something.\n\n[Covered by] is a good synonym in this context.\n\n~In what provinces apply these changes?~ (Incorrect question structure. You need the auxiliary verb 'do' before the subject: '...do these changes apply?') \n\n~Which provinces do apply these changes?~ (Incorrect word order. The auxiliary verb 'do' must come before the subject 'these changes'. The correct structure is 'Which provinces do these changes apply to?')\n\n~Which provinces do these changes apply?~ (Incorrect. The phrasal verb is 'to apply to', so the preposition 'to' is required at the end of the sentence.)\n\n'Which provinces need these changes?' is a valid sentence, but it focuses more on the *necessity* of the changes rather than simply where they are applied."
     },
     {
       "cardId": "mi_049",
@@ -1310,7 +1314,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_056_sideB_3.mp3"
         }
       ],
-      "note": "**[12]**\n\nThe Spanish 'se guardan' is a passive construction. This can be translated with the passive voice ([Where are... stored?]) or an active verb. For the active version, the subject is [these configuration files] (plural), so the auxiliary must be [do].\n\n~Where does these files save?~ is incorrect because the subject 'files' is plural.\n\n~Where do these configuration files can be saved?~ (Incorrect: Cannot use two auxiliary verbs, 'do' and 'can', together in a question. Use one or the other: 'Where can they be saved?' or 'Where do they get saved?'.)\n\n~Where do these configuration files are saved?~ (Incorrect: Cannot mix the auxiliary 'do' with the verb 'to be' ('are') in this question format. Use 'Where are they saved?' (passive) or 'Where do you save them?' (active).)"
+      "note": "**[12]**\n\nThe Spanish 'se guardan' is a passive construction. This can be translated with the passive voice ([Where are... stored?]) or an active verb. For the active version, the subject is [these configuration files] (plural), so the auxiliary must be [do].\n\n~Where does these files save?~ is incorrect because the subject 'files' is plural.\n\n~Where do these configuration files can be saved?~ (Incorrect: Cannot use two auxiliary verbs, 'do' and 'can', together in a question. Use one or the other: 'Where can they be saved?' or 'Where do they get saved?'.)\n\n~Where do these configuration files are saved?~ (Incorrect: Cannot mix the auxiliary 'do' with the verb 'to be' ('are') in this question format. Use 'Where are they saved?' (passive) or 'Where do you save them?' (active).)\n\n~Where do these files be saved?~ (Incorrect verb form. After the auxiliary 'do', you must use the base form of the main verb, like 'get' or 'go'. You cannot use 'do' with 'be' in this structure. Correct options are 'Where are these files saved?' or 'Where do these files get saved?'.)"
     },
     {
       "cardId": "mi_057",
@@ -1454,15 +1458,15 @@
           "audioSrc": "public/data/audio/common_meeting/mi_063_sideB_0.mp3"
         },
         {
-          "text": "How is that option named in the database?",
-          "audioSrc": "public/data/audio/common_meeting/mi_063_sideB_1.mp3"
+          "text": "What is that option named in the database?",
+          "audioSrc": null
         },
         {
           "text": "What's the name for that option in the database?",
           "audioSrc": "public/data/audio/common_meeting/mi_063_sideB_2.mp3"
         }
       ],
-      "note": "**[3]**\n\nWhen asking for a name, the correct question word in English is [What], not 'How'.\n\nThe most common and natural phrasing is [What is it called?]. A literal translation like ~How is it called?~ is a very common mistake but is grammatically incorrect for this purpose."
+      "note": "**[3]**\n\nWhen asking for a name, the correct question word in English is [What], not 'How'.\n\nThe most common and natural phrasing is [What is it called?] or [What is it named?]. A literal translation like 'How is it called?' is a very common mistake but is grammatically incorrect for this purpose."
     },
     {
       "cardId": "mi_064",
@@ -1688,9 +1692,13 @@
         {
           "text": "What's stopping the deployment to production?",
           "audioSrc": "public/data/audio/common_meeting/mi_074_sideB_2.mp3"
+        },
+        {
+          "text": "What stops the deployment to production?",
+          "audioSrc": null
         }
       ],
-      "note": "**[2]**\n\nThis is a *Subject Question*. We are asking for the 'thing' that is performing the action of preventing. The question word [What] acts as the subject. Consequently, no auxiliary verb is needed, and the main verb ('prevents') is conjugated in the third person singular.\n\nCommon Error: What does prevent the deployment?.\n\n~What stop the production release?~ (Incorrect. Since 'What' is the third-person singular subject of the sentence, the verb must be conjugated with an '-s': 'stops'.)"
+      "note": "**[2]**\n\nThis is a Subject Question. We are asking for the 'thing' that is performing the action of preventing. The question word [What] acts as the subject. Consequently, no auxiliary verb is needed, and the main verb ('prevents', 'stops') is conjugated in the third person singular.\n\nCommon Error: What does prevent the deployment?.\n\n~What stop the production release?~ (Incorrect. Since 'What' is the third-person singular subject of the sentence, the verb must be conjugated with an '-s': 'stops'.)"
     },
     {
       "cardId": "mi_075",
@@ -1710,7 +1718,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_075_sideB_2.mp3"
         }
       ],
-      "note": "**[3]**\n\nThis is an **Object Question**. The subject is [the new security policy]. The question asks about the object ('What changes'). Since we have a known subject, we must use the auxiliary verb [does] (because 'policy' is singular) before the subject.\n\nCommon Error: ~What changes the new security policy requires?~."
+      "note": "**[3]**\n\nThis is an *Object Question*. The subject is [the new security policy]. The question asks about the object ('What changes'). Since we have a known subject, we must use the auxiliary verb [does] (because 'policy' is singular) before the subject.\n\nCommon Error: What changes the new security policy requires?.\n\n~What changes require the new security policy?~ (Incorrect question structure. This sentence treats 'What changes' as the subject doing the action. However, the real subject is 'the new security policy' (singular), so you must use the auxiliary verb 'does' before it. Correct form: 'What changes does the new security policy require?'.)"
     },
     {
       "cardId": "mi_076",
