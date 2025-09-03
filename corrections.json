@@ -1,86 +1,31 @@
 [
   {
-    "cardId": "itc_117",
-    "cardType": "flippable",
-    "sideA": "Selecciona lo que está en el centro y muévelo hacia la izquierda.",
-    "sideB": [
+    "cardId": "egac_343",
+    "category": "Advanced Phrasal Verbs: 'come across'",
+    "sentenceParts": {
+      "prefix": "I ",
+      "suffix": " this beautiful old book in a second-hand shop."
+    },
+    "options": [
       {
-        "text": "Select the center item and move it left.",
-        "audioSrc": "public/data/audio/it_commands/itc_117_sideB_0.mp3"
+        "text": "came across",
+        "isCorrect": true
       },
       {
-        "text": "Drag the middle item to the left.",
-        "audioSrc": "public/data/audio/it_commands/itc_117_sideB_1.mp3"
+        "text": "ran over",
+        "isCorrect": false
       },
       {
-        "text": "Move the item in the center to the left.",
-        "audioSrc": "public/data/audio/it_commands/itc_117_sideB_2.mp3"
-      },
-      {
-        "text": "Select what is in the center, and move it to the left.",
-        "audioSrc": "public/data/audio/it_commands/itc_117_sideB_3.mp3"
+        "text": "found out",
+        "isCorrect": false
       }
     ],
-    "note": null
-  },
-  {
-    "cardId": "itc_020",
-    "cardType": "flippable",
-    "sideA": "Destaca la primera oración.",
-    "sideB": [
-      {
-        "text": "Highlight the first sentence.",
-        "audioSrc": "public/data/audio/it_commands/itc_020_sideB_0.mp3"
-      },
-      {
-        "text": "Can you select the first sentence for me?",
-        "audioSrc": "public/data/audio/it_commands/itc_020_sideB_1.mp3"
-      },
-      {
-        "text": "Just highlight that first sentence.",
-        "audioSrc": "public/data/audio/it_commands/itc_020_sideB_2.mp3"
-      }
-    ],
-    "note": "~Enchant the first sentence~ (Incorrect verb: 'enchant' means to charm or delight, like with magic. The correct verb for selecting text is 'highlight'.)"
-  },
-  {
-    "cardId": "itc_100",
-    "cardType": "flippable",
-    "sideA": "Arrastra la imagen que está a la derecha hacia la carpeta de arriba.",
-    "sideB": [
-      {
-        "text": "Drag the image on the right into the folder at the top.",
-        "audioSrc": "public/data/audio/it_commands/itc_100_sideB_0.mp3"
-      },
-      {
-        "text": "Go ahead and drag the rightmost picture to the folder above.",
-        "audioSrc": "public/data/audio/it_commands/itc_100_sideB_1.mp3"
-      },
-      {
-        "text": "Please drag the picture on the right and drop it in the top folder.",
-        "audioSrc": "public/data/audio/it_commands/itc_100_sideB_2.mp3"
-      },
-      {
-        "text": "Drag the image at the right side to the top folder.",
-        "audioSrc": "public/data/audio/it_commands/itc_100_sideB_3.mp3"
-      }
-    ],
-    "note": "Pro Tip: When referring to a position on a screen, the prepositions 'on' and 'at' are often interchangeable. 'On the right' is slightly more common than 'at the right side', but both are perfectly understood."
-  },
-  {
-    "cardId": "itc_146",
-    "cardType": "flippable",
-    "sideA": "The button, often an arrow pointing right, that takes you to the next page in your history.",
-    "sideB": [
-      {
-        "text": "Forward button",
-        "audioSrc": "public/data/audio/it_commands/itc_146_sideB_0.mp3"
-      },
-      {
-        "text": "Go forward button",
-        "audioSrc": "public/data/audio/it_commands/itc_146_sideB_1.mp3"
-      }
-    ],
-    "note": "Forward (Adverb): In the direction that one is facing or traveling; toward the front.\n\nIn a web browser, the forward button lets you navigate to a page you have previously visited after you have used the back button."
+    "correctAnswer": "I came across this beautiful old book in a second-hand shop.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_343.mp3",
+    "hint": "A good synonym for 'come across' is 'stumble upon'.",
+    "content": {
+      "type": "text",
+      "value": "[Come across] means to find something or meet someone unexpectedly.\n\n~Ran over~ means to hit something with a vehicle.\n~Found out~ means to discover a piece of information or a secret."
+    }
   }
 ]

@@ -279,30 +279,29 @@ class App {
                 this.deckDetailComponent.render(selectedDeck, deckProgressData, improvementData); // Pass all required data
                     break; 
 
-case 'audioChoiceQuiz':
-                if (!this.audioChoiceScreen) {
-                    this.audioChoiceScreen = new AudioChoiceScreen(
-                        this.appContainer,
-                        (option) => this.handleQuizAnswer(option),
-                        () => this.handleQuizNext(),
-                        () => this.handleIgnoreCurrentCard(),
-                         (cardId) => this.handleMarkCardForImprovement(cardId),
-                        () => this.handleCardAudioStart(), // Pass audio ducking handler
-                        () => this.handleCardAudioEnd()   // Pass audio ducking handler
-                    );
-                }
-                const currentAudioQuestion = this.state.quizInstance.getCurrentQuestion();
-                if (currentAudioQuestion) {
-
-                     const improvementData = StorageService.loadImprovementData(this.state.currentDeckId);
-                const isMarked = improvementData.hasOwnProperty(currentAudioQuestion.cardId);
-        this.audioChoiceScreen.render(currentAudioQuestion, this.state.quizInstance.currentIndex, this.state.quizInstance.questions.length, this.state.quizInstance.score, isMarked);
-
-                } else {
-                    console.error("DEBUG: [App] render -> Tried to render audio quiz, but no current question found.");
-                    this.handleQuizEnd();
-                }
-                break;
+ case 'audioChoiceQuiz':
+                if (!this.audioChoiceScreen) {
+                    this.audioChoiceScreen = new AudioChoiceScreen(
+                        this.appContainer,
+                        (option) => this.handleQuizAnswer(option),
+                        () => this.handleQuizNext(),
+                        () => this.handleIgnoreCurrentCard(),
+                        (cardId) => this.handleMarkCardForImprovement(cardId),
+                        (termKey) => this.handleShowInfoModal(termKey), // <-- LÍNEA AÑADIDA
+                        () => this.handleCardAudioStart(),
+                        () => this.handleCardAudioEnd()
+                    );
+                }
+                const currentAudioQuestion = this.state.quizInstance.getCurrentQuestion();
+                if (currentAudioQuestion) {
+                    const improvementData = StorageService.loadImprovementData(this.state.currentDeckId);
+                    const isMarked = improvementData.hasOwnProperty(currentAudioQuestion.cardId);
+                    this.audioChoiceScreen.render(currentAudioQuestion, this.state.quizInstance.currentIndex, this.state.quizInstance.questions.length, this.state.quizInstance.score, isMarked);
+                } else {
+                    console.error("DEBUG: [App] render -> Tried to render audio quiz, but no current question found.");
+                    this.handleQuizEnd();
+                }
+                break;
 
             case 'quiz':
                 if (!this.quizScreenComponent) { 
