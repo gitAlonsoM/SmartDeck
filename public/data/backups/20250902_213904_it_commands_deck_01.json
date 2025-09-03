@@ -418,7 +418,7 @@
           "audioSrc": "public/data/audio/it_commands/itc_020_sideB_2.mp3"
         }
       ],
-      "note": "~Enchant the first sentence~ (Incorrect verb: 'enchant' means to charm or delight, like with magic. The correct verb for selecting text is 'highlight'.)"
+      "note": null
     },
     {
       "cardId": "itc_021",
@@ -2076,13 +2076,9 @@
         {
           "text": "Please drag the picture on the right and drop it in the top folder.",
           "audioSrc": "public/data/audio/it_commands/itc_100_sideB_2.mp3"
-        },
-        {
-          "text": "Drag the image at the right side to the top folder.",
-          "audioSrc": "public/data/audio/it_commands/itc_100_sideB_3.mp3"
         }
       ],
-      "note": "Pro Tip: When referring to a position on a screen, the prepositions 'on' and 'at' are often interchangeable. 'On the right' is slightly more common than 'at the right side', but both are perfectly understood."
+      "note": null
     },
     {
       "cardId": "itc_101",
@@ -2452,10 +2448,6 @@
         {
           "text": "Move the item in the center to the left.",
           "audioSrc": "public/data/audio/it_commands/itc_117_sideB_2.mp3"
-        },
-        {
-          "text": "Select what is in the center, and move it to the left.",
-          "audioSrc": "public/data/audio/it_commands/itc_117_sideB_3.mp3"
         }
       ],
       "note": null
@@ -2970,7 +2962,7 @@
           "audioSrc": "public/data/audio/it_commands/itc_146_sideB_1.mp3"
         }
       ],
-      "note": "Forward (Adverb): In the direction that one is facing or traveling; toward the front.\n\nIn a web browser, the forward button lets you navigate to a page you have previously visited after you have used the back button."
+      "note": null
     },
     {
       "cardId": "itc_147",

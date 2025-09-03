@@ -1,6 +1,6 @@
 {
   "id": "english_grammar_audio_choice",
-  "name": "English General Grammar - Select",
+  "name": "Grammar Anki - Select",
   "description": "Master key English grammar concepts by completing the sentences and listening to the correct pronunciation. Explanations are revealed after your choice.",
   "deckType": "audioChoice",
   "isAiGenerated": false,
@@ -1593,7 +1593,7 @@
           "isCorrect": false
         },
         {
-          "text": "Where the engineering team was",
+          "text": "That the engineering team finished the project ahead of",
           "isCorrect": false
         }
       ],
@@ -1602,7 +1602,7 @@
       "hint": "This structure allows the speaker to put the most important or new information at the beginning.",
       "content": {
         "type": "text",
-        "value": "A [Cleft Sentence] with [It was...] is used to focus on a particular piece of information (here, 'the engineering team'). The structure is [It was + focused info + that/who...].\n\n~The engineering team was~ creates a simple statement, not an emphatic one, and it doesn't fit the sentence structure.\n~Where the engineering team was~ is grammatically incorrect in this context as 'where' refers to a place, not a group of people."
+        "value": "A [Cleft Sentence] with [It was...] is used to focus on a particular piece of information (here, 'the engineering team'). The structure is [It was + focused info + that/who...].\n\n~The engineering team was~ is a simple statement, lacking the specific emphasis.\nThe third option is a long, grammatically malformed fragment."
       },
       "note": "This card type ('audioChoice') is specifically designed for 'complete the sentence' exercises. The options are intentionally full sentences so the user can hear the complete, correct phrase upon selection. This reinforces the grammatical structure being taught."
     },
@@ -2934,10 +2934,10 @@
       ],
       "correctAnswer": "So, you're not coming to the meeting this afternoon?",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_101.mp3",
-      "hint": "This informal structure is used to confirm what you think is true. Sometimes, no extra word is needed.",
+      "hint": "This informal structure is very common in speech to check or confirm what you think is true.",
       "content": {
         "type": "text",
-        "value": "[Declarative Questions] have the same grammar as a statement but use rising intonation to function as a question. They are common for confirming information.\n\nThe sentence is already a complete statement, so no extra word is needed to form the question. The correct option is the blank one.\n\nThe options [are] and [why] would change the structure to a standard interrogative sentence (e.g., 'So, are you not coming...?'), which is not the form being tested."
+        "value": "**Declarative Questions** have the same grammar as a statement but use rising intonation to function as a question. They are common for confirming information.\n\nThe sentence *'So, you're not coming to the meeting this afternoon?'* is already a complete grammatical statement. By adding a question mark and using a rising tone, it becomes a question. Therefore, no extra word is needed, and the correct option is the blank one.\n\nThe options **'are'** and **'why'** would change the structure to a standard interrogative sentence (e.g., *'So, are you not coming...?'*), which is not the form being tested here."
       }
     },
     {
@@ -7287,7 +7287,7 @@
       "hint": "If the verb is 'to be', the adverb of frequency comes after it: 'I am usually late'.",
       "content": {
         "type": "text",
-        "value": "Adverbs of frequency like [usually] are placed before the main verb ('wake up') in a sentence.\n\n~use to~ is grammatically incorrect here. The correct form for past habits is 'used to', but this sentence is in the present tense.\n~am usually~ is incorrect. 'Usually' is placed after the verb 'to be', but 'wake up' is the main verb here, not 'to be'."
+        "value": "Adverbs of frequency like [usually] are typically placed before the main verb in a sentence.\n\n~use to~ is incorrect; 'used to' is for past habits.\n~am usually~ is incorrect; 'usually' goes after the verb 'to be', but 'wake up' is the main verb here, so it should be 'I am usually late', not 'I am usually wake up'."
       }
     },
     {
@@ -8977,7 +8977,7 @@
       "category": "Hedging Language",
       "sentenceParts": {
         "prefix": "That's an interesting idea, but I'm ",
-        "suffix": " unsure it will work."
+        "suffix": " not unsure it will work."
       },
       "options": [
         {
@@ -10091,7 +10091,7 @@
           "isCorrect": false
         },
         {
-          "text": "You have",
+          "text": "Did you",
           "isCorrect": false
         }
       ],
@@ -10100,7 +10100,7 @@
       "hint": "This casual question form is very common but should be avoided in formal writing.",
       "content": {
         "type": "text",
-        "value": "This is an example of [ellipsis]. The full, grammatically correct question is '[Have you] seen...?'. In casual, fast speech, native speakers often drop the auxiliary verb 'Have'. This card tests that informal structure.\n\n~Have you~ is the complete, formal grammatical form.\n~You have~ would form a statement ('You have seen my phone'), not a question."
+        "value": "This is another example of ellipsis. The full question is 'Have you seen...?'. In casual, fast speech, native speakers often drop the auxiliary 'Have'.\n\n~Have you~ is the full, correct form.\n~Did you~ would be followed by the base verb 'see', not the participle 'seen'."
       }
     },
     {
@@ -10245,7 +10245,7 @@
       "hint": "This idiom suggests that a positive outcome was hidden within a negative event.",
       "content": {
         "type": "text",
-        "value": "[A blessing in disguise] is the correct idiom. It specifically refers to an event that seems bad at first ('Missing my flight') but results in something good.\n\n~A good luck in bad~ is not a standard English idiom.\n~A happy accident~ is similar but refers to a fortunate surprise that wasn't planned. It doesn't require the event to seem negative initially."
+        "value": "[A blessing in disguise] is the correct idiom for something that has a good outcome despite initially seeming to be a misfortune.\n\n~A good luck in bad~ is not an English idiom.\n~A happy accident~ is similar, but it refers to a pleasant surprise that wasn't planned, not necessarily something that started out seeming negative."
       }
     },
     {
@@ -10767,7 +10767,7 @@
       "hint": "'Code review' is a software quality assurance activity in which one or several humans check a program mainly by viewing and reading parts of its source code.",
       "content": {
         "type": "text",
-        "value": "[Should have + past participle] is used to talk about a missed opportunity or mistake in the past, implying regret or criticism. A code review is a past event, making this the perfect choice.\n\n~Must discuss~ expresses a present or future obligation.\n~Could discuss~ can mean past ability ('we were able to discuss') or present/future possibility ('we might discuss'). Neither expresses the sense of a past mistake as well as 'should have discussed'."
+        "value": "[Should have + past participle] is used to talk about a missed opportunity or mistake in the past. A `code review` is the ideal time to identify problems like `latency`.\n\n~Must discuss~ expresses a present or future obligation, which doesn't fit the past context.\n~Could discuss~ expresses past ability or possibility, but lacks the sense of regret or criticism."
       }
     },
     {

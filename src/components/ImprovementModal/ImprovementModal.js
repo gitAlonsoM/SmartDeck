@@ -14,17 +14,15 @@ async init() {
         this.modalBackdrop = this.container.querySelector('#improvement-modal-backdrop');
         this.modal = this.container.querySelector('#improvement-modal');
         this.form = this.container.querySelector('#improvement-form');
-        this.removeBtn = this.container.querySelector('#improvement-modal-remove-btn'); // Get the remove button
+        this.removeBtn = this.container.querySelector('#improvement-modal-remove-btn'); 
         this.setupEventListeners();
     }
 
     setupEventListeners() {
-        // Close buttons
         this.modalBackdrop.addEventListener('click', (e) => { if (e.target === this.modalBackdrop) this.hide(); });
         this.container.querySelector('#improvement-modal-close-btn').addEventListener('click', () => this.hide());
         this.container.querySelector('#improvement-modal-cancel-btn').addEventListener('click', () => this.hide());
 
-        // New: Remove button listener
         this.removeBtn.addEventListener('click', () => {
             if (confirm('Are you sure you want to remove this card from the improvement list?')) {
                 this.onRemove(this.cardIdToImprove);

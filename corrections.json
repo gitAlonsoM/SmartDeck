@@ -1,89 +1,86 @@
 [
   {
-    "cardId": "egac_082",
-    "category": "Impersonal Sentences",
-    "sentenceParts": {
-      "prefix": "",
-      "suffix": " say that breakfast is the most important meal of the day."
-    },
-    "options": [
+    "cardId": "itc_117",
+    "cardType": "flippable",
+    "sideA": "Selecciona lo que está en el centro y muévelo hacia la izquierda.",
+    "sideB": [
       {
-        "text": "They",
-        "isCorrect": true
+        "text": "Select the center item and move it left.",
+        "audioSrc": "public/data/audio/it_commands/itc_117_sideB_0.mp3"
       },
       {
-        "text": "It",
-        "isCorrect": false
+        "text": "Drag the middle item to the left.",
+        "audioSrc": "public/data/audio/it_commands/itc_117_sideB_1.mp3"
       },
       {
-        "text": "Persons",
-        "isCorrect": false
+        "text": "Move the item in the center to the left.",
+        "audioSrc": "public/data/audio/it_commands/itc_117_sideB_2.mp3"
+      },
+      {
+        "text": "Select what is in the center, and move it to the left.",
+        "audioSrc": "public/data/audio/it_commands/itc_117_sideB_3.mp3"
       }
     ],
-    "correctAnswer": "They say that breakfast is the most important meal of the day.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_082.mp3",
-    "hint": "Another option is the passive voice: 'It is said that breakfast is important.'",
-    "content": {
-      "type": "text",
-      "value": "The [Impersonal They] is used to make general statements or report what 'people in general' say or believe.\n\n~It~ is used for impersonal statements of fact or opinion (e.g., 'It is said that...').\n~Persons~ is a very formal or legal plural of 'person' and sounds unnatural in this context. The correct general plural is 'people'."
-    }
+    "note": null
   },
   {
-    "cardId": "egac_047",
-    "category": "Informal English: Have Got",
-    "sentenceParts": {
-      "prefix": "I",
-      "suffix": " a feeling that this is going to be a great day."
-    },
-    "options": [
+    "cardId": "itc_020",
+    "cardType": "flippable",
+    "sideA": "Destaca la primera oración.",
+    "sideB": [
       {
-        "text": "'ve got",
-        "isCorrect": true
+        "text": "Highlight the first sentence.",
+        "audioSrc": "public/data/audio/it_commands/itc_020_sideB_0.mp3"
       },
       {
-        "text": "am got",
-        "isCorrect": false
+        "text": "Can you select the first sentence for me?",
+        "audioSrc": "public/data/audio/it_commands/itc_020_sideB_1.mp3"
       },
       {
-        "text": "got",
-        "isCorrect": false
+        "text": "Just highlight that first sentence.",
+        "audioSrc": "public/data/audio/it_commands/itc_020_sideB_2.mp3"
       }
     ],
-    "correctAnswer": "I've got a feeling that this is going to be a great day.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_047.mp3",
-    "hint": "While 'I got' is common in informal American English, 'I've got' is the grammatically standard present form.",
-    "content": {
-      "type": "text",
-      "value": "['ve got]** (have got) is a common, slightly informal alternative to 'have' for expressing possession in the present.\n\n~am got~ is grammatically incorrect.\n~got~ by itself is technically the simple past. While it's often used informally in American English to mean 'have' in the present ('I got a car'), the more standard form, especially in British English, is 'have got'."
-    }
+    "note": "~Enchant the first sentence~ (Incorrect verb: 'enchant' means to charm or delight, like with magic. The correct verb for selecting text is 'highlight'.)"
   },
   {
-    "cardId": "egac_364",
-    "category": "Fluency: Ellipsis (omission)",
-    "sentenceParts": {
-      "prefix": "",
-      "suffix": " like it's going to storm soon."
-    },
-    "options": [
+    "cardId": "itc_100",
+    "cardType": "flippable",
+    "sideA": "Arrastra la imagen que está a la derecha hacia la carpeta de arriba.",
+    "sideB": [
       {
-        "text": "Looks",
-        "isCorrect": true
+        "text": "Drag the image on the right into the folder at the top.",
+        "audioSrc": "public/data/audio/it_commands/itc_100_sideB_0.mp3"
       },
       {
-        "text": "Look",
-        "isCorrect": false
+        "text": "Go ahead and drag the rightmost picture to the folder above.",
+        "audioSrc": "public/data/audio/it_commands/itc_100_sideB_1.mp3"
       },
       {
-        "text": "Is looking",
-        "isCorrect": false
+        "text": "Please drag the picture on the right and drop it in the top folder.",
+        "audioSrc": "public/data/audio/it_commands/itc_100_sideB_2.mp3"
+      },
+      {
+        "text": "Drag the image at the right side to the top folder.",
+        "audioSrc": "public/data/audio/it_commands/itc_100_sideB_3.mp3"
       }
     ],
-    "correctAnswer": "Looks like it's going to storm soon.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_364.mp3",
-    "hint": "This is most common with short, everyday expressions like 'Sounds good' or 'See you later'.",
-    "content": {
-      "type": "text",
-      "value": "This is a form of ellipsis common in informal speech. The full sentence is 'It looks like...'. Dropping the subject 'It' is very natural and conversational.\n\n~Look~ is incorrect because the implied subject is 'It' (third-person singular), which requires the verb to end in '-s' (Looks).\n~Is looking~ is the wrong verb form for this expression."
-    }
+    "note": "Pro Tip: When referring to a position on a screen, the prepositions 'on' and 'at' are often interchangeable. 'On the right' is slightly more common than 'at the right side', but both are perfectly understood."
+  },
+  {
+    "cardId": "itc_146",
+    "cardType": "flippable",
+    "sideA": "The button, often an arrow pointing right, that takes you to the next page in your history.",
+    "sideB": [
+      {
+        "text": "Forward button",
+        "audioSrc": "public/data/audio/it_commands/itc_146_sideB_0.mp3"
+      },
+      {
+        "text": "Go forward button",
+        "audioSrc": "public/data/audio/it_commands/itc_146_sideB_1.mp3"
+      }
+    ],
+    "note": "Forward (Adverb): In the direction that one is facing or traveling; toward the front.\n\nIn a web browser, the forward button lets you navigate to a page you have previously visited after you have used the back button."
   }
 ]
