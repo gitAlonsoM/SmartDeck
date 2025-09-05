@@ -1,31 +1,408 @@
 [
   {
-    "cardId": "egac_343",
-    "category": "Advanced Phrasal Verbs: 'come across'",
+    "cardId": "egac_336",
+    "category": "Participle Clauses (Perfect)",
     "sentenceParts": {
-      "prefix": "I ",
-      "suffix": " this beautiful old book in a second-hand shop."
+      "prefix": "",
+      "suffix": " all the emails, she finally took a break."
     },
     "options": [
       {
-        "text": "came across",
+        "text": "Having answered",
         "isCorrect": true
       },
       {
-        "text": "ran over",
+        "text": "Answering",
         "isCorrect": false
       },
       {
-        "text": "found out",
+        "text": "Answered",
         "isCorrect": false
       }
     ],
-    "correctAnswer": "I came across this beautiful old book in a second-hand shop.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_343.mp3",
-    "hint": "A good synonym for 'come across' is 'stumble upon'.",
+    "correctAnswer": "Having answered all the emails, she finally took a break.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_336.mp3",
+    "hint": "This structure clearly separates two sequential actions in the past.",
     "content": {
       "type": "text",
-      "value": "[Come across] means to find something or meet someone unexpectedly.\n\n~Ran over~ means to hit something with a vehicle.\n~Found out~ means to discover a piece of information or a secret."
+      "value": "A [Perfect Participle Clause] ('Having answered') emphasizes that the first action was fully completed before the second action began. It's an alternative to 'After she had answered...'.\n\n~Answering~ would imply the actions happened at the same time.\n~Answered~ would be a passive clause."
+    }
+  },
+  {
+    "cardId": "egac_318",
+    "category": "Collocations: Adverb + Adjective",
+    "sentenceParts": {
+      "prefix": "You need to be ",
+      "suffix": " aware of the risks before you invest."
+    },
+    "options": [
+      {
+        "text": "fully",
+        "isCorrect": true
+      },
+      {
+        "text": "strongly",
+        "isCorrect": false
+      },
+      {
+        "text": "much",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "You need to be fully aware of the risks before you invest.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_318.mp3",
+    "hint": "'Fully' emphasizes completeness, making it a good partner for words like 'aware', 'understand', and 'prepared'.",
+    "content": {
+      "type": "text",
+      "value": "[Fully aware] is a strong and very common collocation meaning to understand a situation completely.\n\n~Strongly aware~ is not a standard collocation. 'Strongly' collocates with verbs of opinion (e.g., 'strongly believe').\n~Much aware~ is grammatically incorrect; 'much' does not modify adjectives in this way."
+    }
+  },
+  {
+    "cardId": "egac_286",
+    "category": "Autonomy: 'By myself' vs 'Alone'",
+    "sentenceParts": {
+      "prefix": "I don't like going to the movies ",
+      "suffix": "; I prefer to go with friends."
+    },
+    "options": [
+      {
+        "text": "alone",
+        "isCorrect": true
+      },
+      {
+        "text": "lonely",
+        "isCorrect": false
+      },
+      {
+        "text": "only me",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "I don't like going to the movies alone; I prefer to go with friends.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_286.mp3",
+    "hint": "While 'by myself' is grammatically correct here, 'alone' better captures the social aspect of being without others.",
+    "content": {
+      "type": "text",
+      "value": "[Alone] focuses on the state of being without company. It is the best fit for contrasting with 'with friends'.\n\n~Lonely~ is an adjective describing a feeling of sadness from being alone; it doesn't fit the context.\n~Only me~ is grammatically awkward here and not a standard expression for this meaning."
+    }
+  },
+  {
+    "cardId": "egac_385",
+    "category": "Modals: 'Had Better'",
+    "sentenceParts": {
+      "prefix": "The code freeze starts in an hour, so you",
+      "suffix": " push your changes now."
+    },
+    "options": [
+      {
+        "text": "'d better",
+        "isCorrect": true
+      },
+      {
+        "text": " should to",
+        "isCorrect": false
+      },
+      {
+        "text": " must to",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "The code freeze starts in an hour, so you'd better push your changes now.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_385.mp3",
+    "hint": "A 'code freeze' is a period where developers stop adding new features to prepare for a stable release.",
+    "content": {
+      "type": "text",
+      "value": "[37]\n\n*Had better* ('d better) is a modal expression used for strong, urgent advice. There's an implication of negative consequences if the advice isn't followed.\n\n~Should to~ and *must to* are grammatically incorrect; modal verbs like should and must are *never* followed by 'to'. The correct structure is *modal + base verb* (e.g., should push)."
+    }
+  },
+  {
+    "cardId": "egac_103",
+    "category": "Adjectives: Order (OSASCOMP)",
+    "sentenceParts": {
+      "prefix": "He drives an ",
+      "suffix": " car."
+    },
+    "options": [
+      {
+        "text": "old German sports",
+        "isCorrect": true
+      },
+      {
+        "text": "sports German old",
+        "isCorrect": false
+      },
+      {
+        "text": "German old sports",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "He drives an old German sports car.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_103.mp3",
+    "hint": "Purpose adjectives (like 'sports' or 'racing') often form compound nouns with the noun they describe.",
+    "content": {
+      "type": "text",
+      "value": "[28]\n\nFollowing the OSASCOMP rule for adjective order, the correct sequence is [Age] (old) -> [Origin] (German) -> [Purpose] (sports).\n\nThe other options scramble the standard adjective order.\n\n**Why 'sports car' and not 'sport car'?**\nIn the compound noun 'sports car', the word 'sports' acts as an adjective describing the car's purpose. While many such nouns use the singular form (e.g., 'shoe store'), 'sports car' is a fixed, standard expression in English."
+    }
+  },
+  {
+    "cardId": "egac_348",
+    "category": "Fluency: Ellipsis (omission)",
+    "sentenceParts": {
+      "prefix": "",
+      "suffix": " seen my phone anywhere?"
+    },
+    "options": [
+      {
+        "text": "You",
+        "isCorrect": true
+      },
+      {
+        "text": "Did you",
+        "isCorrect": false
+      },
+      {
+        "text": "Are you",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "You seen my phone anywhere?",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_348.mp3",
+    "hint": "This casual question form is very common but should be avoided in formal writing.",
+    "content": {
+      "type": "text",
+      "value": "This is an example of [ellipsis]. The full, grammatically correct question is '[Have you] seen...?'. In casual, fast speech, native speakers often drop the auxiliary verb 'Have'. This card tests that informal structure.\n\n~Did you~ is incorrect because it must be followed by the base verb 'see', not the past participle 'seen'.\n~Are you~ is incorrect because it must be followed by the present participle 'seeing'."
+    }
+  },
+  {
+    "cardId": "egac_094",
+    "category": "Future Tenses: Spontaneous Decision",
+    "sentenceParts": {
+      "prefix": "The phone is ringing. Don't worry, I ",
+      "suffix": " it."
+    },
+    "options": [
+      {
+        "text": "'ll get",
+        "isCorrect": true
+      },
+      {
+        "text": "'m going to get",
+        "isCorrect": false
+      },
+      {
+        "text": "'m getting",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "The phone is ringing. Don't worry, I 'll get it.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_094.mp3",
+    "hint": "'Going to' would imply you saw the phone ringing and formed the intention to answer it before speaking.",
+    "content": {
+      "type": "text",
+      "value": "[55]\n\nUse [will] (contracted to 'll) for spontaneous decisions, offers, or promises made at the moment of speaking.\n\n~'m going to get~ implies a pre-existing plan, which doesn't fit the context of the phone suddenly ringing.\n~'m getting~ is for fixed future arrangements."
+    }
+  },
+  {
+    "cardId": "egac_172",
+    "category": "Verb 'Take': Take place",
+    "sentenceParts": {
+      "prefix": "The conference will ",
+      "suffix": " in London next year."
+    },
+    "options": [
+      {
+        "text": "take place",
+        "isCorrect": true
+      },
+      {
+        "text": "have place",
+        "isCorrect": false
+      },
+      {
+        "text": "make place",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "The conference will take place in London next year.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_172.mp3",
+    "hint": "This idiom is often used for planned events like meetings, concerts, and weddings.",
+    "content": {
+      "type": "text",
+      "value": "The idiom [take place] is the standard way to say that an event will happen.\n\n~have place~ and make place are incorrect."
+    }
+  },
+  {
+    "cardId": "egac_083",
+    "category": "Nominal Clauses",
+    "sentenceParts": {
+      "prefix": "",
+      "suffix": " is a complete mystery to the police."
+    },
+    "options": [
+      {
+        "text": "Who committed the crime",
+        "isCorrect": true
+      },
+      {
+        "text": "That committed the crime",
+        "isCorrect": false
+      },
+      {
+        "text": "Which committed the crime",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "Who committed the crime is a complete mystery to the police.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_083.mp3",
+    "hint": "Noun clauses often begin with question words like 'who', 'what', 'where', 'when', 'why', or 'how'.",
+    "content": {
+      "type": "text",
+      "value": "A [Nominal Clause] (or Noun Clause) can act as the subject of a sentence. [Who committed the crime] is the entire subject of the verb 'is'.\n\n~That~ is not the correct word to introduce this type of noun clause about an unknown person.\n~Which~ is used for choices among a known set of options."
+    }
+  },
+  {
+    "cardId": "egac_411",
+    "category": "Future Perfect",
+    "sentenceParts": {
+      "prefix": "By the time the code freeze begins, I ",
+      "suffix": " all my changes."
+    },
+    "options": [
+      {
+        "text": "will have pushed",
+        "isCorrect": true
+      },
+      {
+        "text": "will push",
+        "isCorrect": false
+      },
+      {
+        "text": "am pushing",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "By the time the code freeze begins, I will have pushed all my changes.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_411.mp3",
+    "hint": "'Pushing changes' means uploading your code modifications to a central repository.",
+    "content": {
+      "type": "text",
+      "value": "The [Future Perfect] (will have + p.p.) is used for an action that will be finished before another future event. You must push changes before the code freeze.\n\n~Will push~ implies the action will happen at that future time, not before it.\n~Am pushing~ is for a fixed arrangement."
+    }
+  },
+  {
+    "cardId": "egac_101",
+    "category": "Questions: Declarative",
+    "sentenceParts": {
+      "prefix": "So, ",
+      "suffix": "you're not coming to the meeting this afternoon?"
+    },
+    "options": [
+      {
+        "text": "",
+        "isCorrect": true
+      },
+      {
+        "text": "are ",
+        "isCorrect": false
+      },
+      {
+        "text": "why ",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "So, you're not coming to the meeting this afternoon?",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_101.mp3",
+    "hint": "This informal structure is used to confirm what you think is true. Sometimes, no extra word is needed.",
+    "content": {
+      "type": "text",
+      "value": "[Declarative Questions] have the same grammar as a statement but use rising intonation to function as a question. They are common for confirming information.\n\nThe sentence is already a complete statement, so no extra word is needed to form the question. The correct option is the blank one.\n\nThe options `are ` and `why ` would create grammatically incorrect sentences ('...so are you're...' or '...so why you're...')."
+    }
+  },
+  {
+    "cardId": "egac_193",
+    "category": "Vocabulary: Household Chores",
+    "sentenceParts": {
+      "prefix": "It's your turn to ",
+      "suffix": " the garbage."
+    },
+    "options": [
+      {
+        "text": "take out",
+        "isCorrect": true
+      },
+      {
+        "text": "do out",
+        "isCorrect": false
+      },
+      {
+        "text": "put off",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "It's your turn to take out the garbage.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_193.mp3",
+    "hint": "In American English, 'garbage' or 'trash' is used. In British English, it's 'rubbish'.",
+    "content": {
+      "type": "text",
+      "value": "[Take out the garbage] is the standard, fixed collocation for this household chore.\n\n~do out~ is not a correct phrasal verb for this action.\n~put off~ means to postpone, which doesn't fit the context."
+    }
+  },
+  {
+    "cardId": "egac_413",
+    "category": "Passive Voice (Future)",
+    "sentenceParts": {
+      "prefix": "The new server-side logic ",
+      "suffix": " during the next maintenance window."
+    },
+    "options": [
+      {
+        "text": "will be deployed",
+        "isCorrect": true
+      },
+      {
+        "text": "will deploy",
+        "isCorrect": false
+      },
+      {
+        "text": "is deploying",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "The new server-side logic will be deployed during the next maintenance window.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_413.mp3",
+    "hint": "'Server-side' refers to operations that happen on the main server, not on the user's device.",
+    "content": {
+      "type": "text",
+      "value": "The [Future Passive] ('will be deployed') is needed here because the server-side logic receives the action of being deployed.\n\n~Will deploy~ is active voice; it implies the logic will deploy something else.\n~Is deploying~ is present continuous and refers to a fixed arrangement, but future passive is clearer for a scheduled event."
+    }
+  },
+  {
+    "cardId": "egac_412",
+    "category": "Reported Speech: Advanced Verbs",
+    "sentenceParts": {
+      "prefix": "The product owner ",
+      "suffix": " on adding the feature to the current backlog."
+    },
+    "options": [
+      {
+        "text": "insisted",
+        "isCorrect": true
+      },
+      {
+        "text": "suggested",
+        "isCorrect": false
+      },
+      {
+        "text": "demanded",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "The product owner insisted on adding the feature to the current backlog.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_412.mp3",
+    "hint": "The 'product owner' is the person responsible for defining features and managing the team's backlog.",
+    "content": {
+      "type": "text",
+      "value": "The verb [insist on + gerund] means to demand something forcefully and not accept refusal. It's a strong way to describe adding an item to the backlog.\n\n~Suggested~ is followed by a gerund ('suggested adding'), not 'on'.\n~Demanded~ is followed by an infinitive ('demanded to add')."
     }
   }
 ]
