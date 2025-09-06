@@ -1819,6 +1819,366 @@
         }
       ],
       "note": "To express that a level is lower than another, the correct prepositions are [below] or [under].\n\n~The volume is down the minimum.~ (Incorrect. 'Down' is not used for comparing levels in this way.)"
+    },
+    {
+      "cardId": "mi_082",
+      "cardType": "flippable",
+      "sideA": "¿De cuál estamos hablando específicamente?",
+      "sideB": [
+        {
+          "text": "Which one are we talking about here?",
+          "audioSrc": "public/data/audio/common_meeting/mi_082_sideB_0.mp3"
+        },
+        {
+          "text": "Could you specify which one you're referring to?",
+          "audioSrc": "public/data/audio/common_meeting/mi_082_sideB_1.mp3"
+        },
+        {
+          "text": "Which one do you mean, exactly?",
+          "audioSrc": "public/data/audio/common_meeting/mi_082_sideB_2.mp3"
+        },
+        {
+          "text": "Which specific one are we discussing?",
+          "audioSrc": "public/data/audio/common_meeting/mi_082_sideB_3.mp3"
+        }
+      ],
+      "note": "Use [Which] when choosing from a limited or known set of options. [What] is more general but can also be used.\n\nIt's very common for English questions to end with a preposition like [about] or [to].\n\n~Of which one are you talking?~ is grammatically correct but overly formal and less common in conversation."
+    },
+    {
+      "cardId": "mi_083",
+      "cardType": "flippable",
+      "sideA": "Entonces, solo lo ves al final, ¿cierto?",
+      "sideB": [
+        {
+          "text": "So you only see it at the end, right?",
+          "audioSrc": "public/data/audio/common_meeting/mi_083_sideB_0.mp3"
+        },
+        {
+          "text": "So it only shows up at the very end, correct?",
+          "audioSrc": "public/data/audio/common_meeting/mi_083_sideB_1.mp3"
+        },
+        {
+          "text": "Just to be clear, you don't see it until the final step?",
+          "audioSrc": "public/data/audio/common_meeting/mi_083_sideB_2.mp3"
+        },
+        {
+          "text": "So it's not visible until the very last step, is that right?",
+          "audioSrc": "public/data/audio/common_meeting/mi_083_sideB_3.mp3"
+        }
+      ],
+      "note": "Tag questions like [right?], [correct?], or [is that right?] are perfect for confirming information.\n\nThe phrasal verb [to show up] means 'to appear'.\n\n~..., no?~ or ~..., true?~ are direct translations from Spanish but are not natural English tag questions in this context."
+    },
+    {
+      "cardId": "mi_084",
+      "cardType": "flippable",
+      "sideA": "Espera un segundo.",
+      "sideB": [
+        {
+          "text": "Hold on a second.",
+          "audioSrc": "public/data/audio/common_meeting/mi_084_sideB_0.mp3"
+        },
+        {
+          "text": "Just a moment.",
+          "audioSrc": "public/data/audio/common_meeting/mi_084_sideB_1.mp3"
+        },
+        {
+          "text": "Hang on a sec.",
+          "audioSrc": "public/data/audio/common_meeting/mi_084_sideB_2.mp3"
+        },
+        {
+          "text": "Give me a second.",
+          "audioSrc": "public/data/audio/common_meeting/mi_084_sideB_3.mp3"
+        }
+      ],
+      "note": "[Hold on] and [Hang on] are common phrasal verbs for asking someone to wait. [Sec] is an informal shortening of 'second'.\n\n~Wait me a second.~ is incorrect. You can say [Wait a second] or [Wait for me]."
+    },
+    {
+      "cardId": "mi_085",
+      "cardType": "flippable",
+      "sideA": "¿Tienes una captura de pantalla de eso?",
+      "sideB": [
+        {
+          "text": "Do you have a screenshot of it?",
+          "audioSrc": "public/data/audio/common_meeting/mi_085_sideB_0.mp3"
+        },
+        {
+          "text": "Can you grab a screenshot of that for me?",
+          "audioSrc": "public/data/audio/common_meeting/mi_085_sideB_1.mp3"
+        },
+        {
+          "text": "Could you send over a screenshot?",
+          "audioSrc": "public/data/audio/common_meeting/mi_085_sideB_2.mp3"
+        },
+        {
+          "text": "Would you be able to get a screenshot of that?",
+          "audioSrc": "public/data/audio/common_meeting/mi_085_sideB_3.mp3"
+        }
+      ],
+      "note": "[Screenshot] is the most common term. While ~screen capture~ is understandable, it's less frequent in daily conversation.\n\n~You have a screenshot?~ is a statement, not a question. Questions must start with an auxiliary verb like [Do] or [Can]."
+    },
+    {
+      "cardId": "mi_086",
+      "cardType": "flippable",
+      "sideA": "Está bien. Puedes enviarlo más tarde.",
+      "sideB": [
+        {
+          "text": "That's fine. You can send it later.",
+          "audioSrc": "public/data/audio/common_meeting/mi_086_sideB_0.mp3"
+        },
+        {
+          "text": "No problem. Feel free to send it over later.",
+          "audioSrc": "public/data/audio/common_meeting/mi_086_sideB_1.mp3"
+        },
+        {
+          "text": "It's okay, you can get it to me when you have a chance.",
+          "audioSrc": "public/data/audio/common_meeting/mi_086_sideB_2.mp3"
+        },
+        {
+          "text": "There's no rush, you can send it later.",
+          "audioSrc": "public/data/audio/common_meeting/mi_086_sideB_3.mp3"
+        }
+      ],
+      "note": "[When you have a chance] is a polite idiom for 'when you have time'. [No rush] is a common way to say something is not urgent.\n\n~Is good~ is an incorrect translation of 'Está bien' in this context. Use [That's fine] or [It's okay]."
+    },
+    {
+      "cardId": "mi_087",
+      "cardType": "flippable",
+      "sideA": "¿Estás usando la versión nueva o la antigua?",
+      "sideB": [
+        {
+          "text": "Are you using the new one or the old one?",
+          "audioSrc": "public/data/audio/common_meeting/mi_087_sideB_0.mp3"
+        },
+        {
+          "text": "Are you on the new version or the old one?",
+          "audioSrc": "public/data/audio/common_meeting/mi_087_sideB_1.mp3"
+        },
+        {
+          "text": "Is that with the latest version or a previous one?",
+          "audioSrc": "public/data/audio/common_meeting/mi_087_sideB_2.mp3"
+        },
+        {
+          "text": "Which version are you running?",
+          "audioSrc": "public/data/audio/common_meeting/mi_087_sideB_3.mp3"
+        }
+      ],
+      "note": "Using the preposition [on] as in [Are you on the new version?] is very common in a software context.\n\n[Latest] is a synonym for 'newest'.\n\n~You are using...?~ is incorrect question structure. The verb 'to be' ([Are]) must come before the subject ([you])."
+    },
+    {
+      "cardId": "mi_088",
+      "cardType": "flippable",
+      "sideA": "Vamos a revisar esto y te daremos una respuesta.",
+      "sideB": [
+        {
+          "text": "We're going to review this and get back to you.",
+          "audioSrc": "public/data/audio/common_meeting/mi_088_sideB_0.mp3"
+        },
+        {
+          "text": "We'll look into this and follow up with you.",
+          "audioSrc": "public/data/audio/common_meeting/mi_088_sideB_1.mp3"
+        },
+        {
+          "text": "Let us check this out, and we'll let you know what we find.",
+          "audioSrc": "public/data/audio/common_meeting/mi_088_sideB_2.mp3"
+        },
+        {
+          "text": "We'll investigate this and report back.",
+          "audioSrc": "public/data/audio/common_meeting/mi_088_sideB_3.mp3"
+        }
+      ],
+      "note": "Phrasal verbs are very common here: [get back to someone], [look into something], [check something out], and [follow up with someone].\n\n~We will return you with an answer~ is an incorrect and unnatural structure. The verb 'return' is not used this way."
+    },
+    {
+      "cardId": "mi_089",
+      "cardType": "flippable",
+      "sideA": "¿Puedes repetirme eso una vez más?",
+      "sideB": [
+        {
+          "text": "Can you run that by me one more time?",
+          "audioSrc": "public/data/audio/common_meeting/mi_089_sideB_0.mp3"
+        },
+        {
+          "text": "Could you say that again, please?",
+          "audioSrc": "public/data/audio/common_meeting/mi_089_sideB_1.mp3"
+        },
+        {
+          "text": "Sorry, could you repeat that?",
+          "audioSrc": "public/data/audio/common_meeting/mi_089_sideB_2.mp3"
+        },
+        {
+          "text": "I didn't quite catch that, could you repeat it?",
+          "audioSrc": "public/data/audio/common_meeting/mi_089_sideB_3.mp3"
+        }
+      ],
+      "note": "[To run something by someone] is a common idiom that means to tell someone something so they can give their opinion. It's used here as a casual way to ask for repetition.\n\n[I didn't catch that] is another idiom meaning 'I didn't hear or understand'."
+    },
+    {
+      "cardId": "mi_090",
+      "cardType": "flippable",
+      "sideA": "Entendido. ¿Cuál es el siguiente paso?",
+      "sideB": [
+        {
+          "text": "Got it. What's the next step?",
+          "audioSrc": "public/data/audio/common_meeting/mi_090_sideB_0.mp3"
+        },
+        {
+          "text": "Okay, I understand. What's next?",
+          "audioSrc": "public/data/audio/common_meeting/mi_090_sideB_1.mp3"
+        },
+        {
+          "text": "Understood. What should we do now?",
+          "audioSrc": "public/data/audio/common_meeting/mi_090_sideB_2.mp3"
+        },
+        {
+          "text": "Alright. Where do we go from here?",
+          "audioSrc": "public/data/audio/common_meeting/mi_090_sideB_3.mp3"
+        }
+      ],
+      "note": "[Got it] is a very common and efficient way to confirm understanding. [Where do we go from here?] is a great idiom for asking about the next steps.\n\nUsing the past tense, ~I understood~, is less common for immediate confirmation than the present tense [I understand] or the short form [Got it]."
+    },
+    {
+      "cardId": "mi_091",
+      "cardType": "flippable",
+      "sideA": "¿Hay alguna novedad sobre ese problema?",
+      "sideB": [
+        {
+          "text": "Any updates on that issue?",
+          "audioSrc": "public/data/audio/common_meeting/mi_091_sideB_0.mp3"
+        },
+        {
+          "text": "Is there any news on that problem?",
+          "audioSrc": "public/data/audio/common_meeting/mi_091_sideB_1.mp3"
+        },
+        {
+          "text": "What's the latest on that issue?",
+          "audioSrc": "public/data/audio/common_meeting/mi_091_sideB_2.mp3"
+        },
+        {
+          "text": "What's the status of that issue?",
+          "audioSrc": "public/data/audio/common_meeting/mi_091_sideB_3.mp3"
+        }
+      ],
+      "note": "In questions like this, you can often omit the verb 'to be' for conciseness: [Any updates?] is a shortening of [Are there any updates?].\n\n[What's the latest] is a common informal phrase for asking about the most recent information."
+    },
+    {
+      "cardId": "mi_092",
+      "cardType": "flippable",
+      "sideA": "OK, eso no debería estar pasando.",
+      "sideB": [
+        {
+          "text": "Okay, that shouldn't be happening.",
+          "audioSrc": "public/data/audio/common_meeting/mi_092_sideB_0.mp3"
+        },
+        {
+          "text": "Right, that's definitely not supposed to happen.",
+          "audioSrc": "public/data/audio/common_meeting/mi_092_sideB_1.mp3"
+        },
+        {
+          "text": "Okay, that's not the expected behavior.",
+          "audioSrc": "public/data/audio/common_meeting/mi_092_sideB_2.mp3"
+        },
+        {
+          "text": "I see. That's certainly not right.",
+          "audioSrc": "public/data/audio/common_meeting/mi_092_sideB_3.mp3"
+        }
+      ],
+      "note": "[Shouldn't] is the contraction of 'should not' and is used to express that something is wrong or unexpected.\n\n[To be supposed to do something] is a very common structure to talk about what is expected.\n\n~That no should be happening~ is incorrect word order for a negative statement."
+    },
+    {
+      "cardId": "mi_093",
+      "cardType": "flippable",
+      "sideA": "¿Es un problema nuevo o ya había ocurrido antes?",
+      "sideB": [
+        {
+          "text": "Is this a new issue or has it happened before?",
+          "audioSrc": "public/data/audio/common_meeting/mi_093_sideB_0.mp3"
+        },
+        {
+          "text": "Is this a recent problem, or is it a recurring one?",
+          "audioSrc": "public/data/audio/common_meeting/mi_093_sideB_1.mp3"
+        },
+        {
+          "text": "Have you seen this issue before, or is this the first time?",
+          "audioSrc": "public/data/audio/common_meeting/mi_093_sideB_2.mp3"
+        },
+        {
+          "text": "Is this a known issue?",
+          "audioSrc": "public/data/audio/common_meeting/mi_093_sideB_3.mp3"
+        }
+      ],
+      "note": "[Recurring] means something that happens again and again. [A known issue] is a standard term in tech for a problem that has been reported previously.\n\nMixing tenses like ~Is this a new issue or it happened before?~ is awkward. It's better to make both parts of the question parallel, as in the examples."
+    },
+    {
+      "cardId": "mi_094",
+      "cardType": "flippable",
+      "sideA": "Déjame revisar eso por mi lado.",
+      "sideB": [
+        {
+          "text": "Let me check that on my end.",
+          "audioSrc": "public/data/audio/common_meeting/mi_094_sideB_0.mp3"
+        },
+        {
+          "text": "I'll take a look at that from my side.",
+          "audioSrc": "public/data/audio/common_meeting/mi_094_sideB_1.mp3"
+        },
+        {
+          "text": "Let me just verify that over here.",
+          "audioSrc": "public/data/audio/common_meeting/mi_094_sideB_2.mp3"
+        },
+        {
+          "text": "I'll investigate that from my end.",
+          "audioSrc": "public/data/audio/common_meeting/mi_094_sideB_3.mp3"
+        }
+      ],
+      "note": "[On my end] and [from my side] are common idioms that mean 'from my perspective' or 'using my own resources'.\n\n~Let me to check that~ is incorrect. After 'let me', always use the base form of the verb without 'to': [Let me check]."
+    },
+    {
+      "cardId": "mi_095",
+      "cardType": "flippable",
+      "sideA": "Hagamos seguimiento de esto por correo.",
+      "sideB": [
+        {
+          "text": "Let's follow up on this by email.",
+          "audioSrc": "public/data/audio/common_meeting/mi_095_sideB_0.mp3"
+        },
+        {
+          "text": "Let's continue this conversation over email.",
+          "audioSrc": "public/data/audio/common_meeting/mi_095_sideB_1.mp3"
+        },
+        {
+          "text": "How about we handle this through email?",
+          "audioSrc": "public/data/audio/common_meeting/mi_095_sideB_2.mp3"
+        },
+        {
+          "text": "Let's take this offline and discuss it via email.",
+          "audioSrc": "public/data/audio/common_meeting/mi_095_sideB_3.mp3"
+        }
+      ],
+      "note": "[To follow up on] something is a key phrasal verb meaning to continue with it later.\n\n[Take this offline] is a very common business idiom that means to discuss a topic outside of the current meeting, often with a smaller group."
+    },
+    {
+      "cardId": "mi_096",
+      "cardType": "flippable",
+      "sideA": "Solo para confirmar, ¿cuál es la prioridad aquí?",
+      "sideB": [
+        {
+          "text": "Just to confirm, what's the priority here?",
+          "audioSrc": "public/data/audio/common_meeting/mi_096_sideB_0.mp3"
+        },
+        {
+          "text": "Just so I'm clear, how high of a priority is this?",
+          "audioSrc": "public/data/audio/common_meeting/mi_096_sideB_1.mp3"
+        },
+        {
+          "text": "To make sure we're aligned, what's the priority level for this?",
+          "audioSrc": "public/data/audio/common_meeting/mi_096_sideB_2.mp3"
+        },
+        {
+          "text": "How urgent is this?",
+          "audioSrc": "public/data/audio/common_meeting/mi_096_sideB_3.mp3"
+        }
+      ],
+      "note": "[Just so I'm clear] and [To make sure we're aligned] are excellent professional phrases for introducing a clarifying question.\n\n[Urgent] is a great synonym for 'high priority'.\n\n~Which is the priority?~ is less natural than [What is the priority?] when asking about the nature of something."
     }
   ]
 }
