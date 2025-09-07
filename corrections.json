@@ -1,408 +1,373 @@
 [
   {
-    "cardId": "egac_336",
-    "category": "Participle Clauses (Perfect)",
-    "sentenceParts": {
-      "prefix": "",
-      "suffix": " all the emails, she finally took a break."
-    },
-    "options": [
+    "cardId": "mi_081",
+    "cardType": "flippable",
+    "sideA": "El volumen está por debajo del mínimo.",
+    "sideB": [
       {
-        "text": "Having answered",
-        "isCorrect": true
+        "text": "The volume is below the minimum.",
+        "audioSrc": "public/data/audio/common_meeting/mi_081_sideB_0.mp3"
       },
       {
-        "text": "Answering",
-        "isCorrect": false
-      },
-      {
-        "text": "Answered",
-        "isCorrect": false
+        "text": "The volume is under the minimum threshold.",
+        "audioSrc": "public/data/audio/common_meeting/mi_081_sideB_1.mp3"
       }
     ],
-    "correctAnswer": "Having answered all the emails, she finally took a break.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_336.mp3",
-    "hint": "This structure clearly separates two sequential actions in the past.",
-    "content": {
-      "type": "text",
-      "value": "A [Perfect Participle Clause] ('Having answered') emphasizes that the first action was fully completed before the second action began. It's an alternative to 'After she had answered...'.\n\n~Answering~ would imply the actions happened at the same time.\n~Answered~ would be a passive clause."
-    }
+    "note": "To express that a level is lower than another, the correct prepositions are [below] or [under].\n\n~The volume is down the minimum.~ (Incorrect. 'Down' is not used for comparing levels in this way.)\n\n[Threshold] refers to a level or point at which something starts to happen or take effect."
   },
   {
-    "cardId": "egac_318",
-    "category": "Collocations: Adverb + Adjective",
-    "sentenceParts": {
-      "prefix": "You need to be ",
-      "suffix": " aware of the risks before you invest."
-    },
-    "options": [
+    "cardId": "mi_014",
+    "cardType": "flippable",
+    "sideA": "Sí, entendi el problema.",
+    "sideB": [
       {
-        "text": "fully",
-        "isCorrect": true
+        "text": "Yep, I get the issue.",
+        "audioSrc": "public/data/audio/common_meeting/mi_014_sideB_0.mp3"
       },
       {
-        "text": "strongly",
-        "isCorrect": false
+        "text": "Got it. I understand the problem.",
+        "audioSrc": "public/data/audio/common_meeting/mi_014_sideB_1.mp3"
       },
       {
-        "text": "much",
-        "isCorrect": false
+        "text": "Yes, I understand the issue.",
+        "audioSrc": "public/data/audio/common_meeting/mi_014_sideB_2.mp3"
+      },
+      {
+        "text": "Yeah, I got the issue.",
+        "audioSrc": "public/data/audio/common_meeting/mi_014_sideB_3.mp3"
       }
     ],
-    "correctAnswer": "You need to be fully aware of the risks before you invest.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_318.mp3",
-    "hint": "'Fully' emphasizes completeness, making it a good partner for words like 'aware', 'understand', and 'prepared'.",
-    "content": {
-      "type": "text",
-      "value": "[Fully aware] is a strong and very common collocation meaning to understand a situation completely.\n\n~Strongly aware~ is not a standard collocation. 'Strongly' collocates with verbs of opinion (e.g., 'strongly believe').\n~Much aware~ is grammatically incorrect; 'much' does not modify adjectives in this way."
-    }
+    "note": "[Got it] is a very common and concise way to confirm understanding.\n\nUsing the present tense ([understand] or [get]) is more natural to express your current state of knowledge than the simple past (I understood).\n\n~Comprehend~ is a very formal word; in conversation, [understand] or [get] is better.\n\n~Yes, I understood the issue.~ (While grammatically correct, using the simple past 'understood' can imply that you understood it at a specific point in the past. For immediate confirmation in a conversation, 'I understand' or 'I get it' is super more natural.)"
   },
   {
-    "cardId": "egac_286",
-    "category": "Autonomy: 'By myself' vs 'Alone'",
-    "sentenceParts": {
-      "prefix": "I don't like going to the movies ",
-      "suffix": "; I prefer to go with friends."
-    },
-    "options": [
+    "cardId": "mi_096",
+    "cardType": "flippable",
+    "sideA": "Solo para confirmar, ¿cuál es la prioridad aquí?",
+    "sideB": [
       {
-        "text": "alone",
-        "isCorrect": true
+        "text": "Just to confirm, what's the priority here?",
+        "audioSrc": "public/data/audio/common_meeting/mi_096_sideB_0.mp3"
       },
       {
-        "text": "lonely",
-        "isCorrect": false
+        "text": "Just so I'm clear, how high of a priority is this?",
+        "audioSrc": "public/data/audio/common_meeting/mi_096_sideB_1.mp3"
       },
       {
-        "text": "only me",
-        "isCorrect": false
+        "text": "To make sure we're aligned, what's the priority level for this?",
+        "audioSrc": "public/data/audio/common_meeting/mi_096_sideB_2.mp3"
+      },
+      {
+        "text": "How urgent is this?",
+        "audioSrc": "public/data/audio/common_meeting/mi_096_sideB_3.mp3"
+      },
+      {
+        "text": "Just to be sure, what's the priority here?",
+        "audioSrc": "public/data/audio/common_meeting/mi_096_sideB_4.mp3"
       }
     ],
-    "correctAnswer": "I don't like going to the movies alone; I prefer to go with friends.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_286.mp3",
-    "hint": "While 'by myself' is grammatically correct here, 'alone' better captures the social aspect of being without others.",
-    "content": {
-      "type": "text",
-      "value": "[Alone] focuses on the state of being without company. It is the best fit for contrasting with 'with friends'.\n\n~Lonely~ is an adjective describing a feeling of sadness from being alone; it doesn't fit the context.\n~Only me~ is grammatically awkward here and not a standard expression for this meaning."
-    }
+    "note": "[Just so I'm clear] and [To make sure we're aligned] are excellent professional phrases for introducing a clarifying question.\n\n[Urgent] is a great synonym for 'high priority'.\n\n~Which is the priority?~ is less natural than [What is the priority?] when asking about the nature of something.\n\n[Just to be sure] is a great alternative to 'Just to confirm'."
   },
   {
-    "cardId": "egac_385",
-    "category": "Modals: 'Had Better'",
-    "sentenceParts": {
-      "prefix": "The code freeze starts in an hour, so you",
-      "suffix": " push your changes now."
-    },
-    "options": [
+    "cardId": "mi_061",
+    "cardType": "flippable",
+    "sideA": "Todo al mismo tiempo, igual que la version web.",
+    "sideB": [
       {
-        "text": "'d better",
-        "isCorrect": true
+        "text": "All at the same time, just like the web version.",
+        "audioSrc": "public/data/audio/common_meeting/mi_061_sideB_0.mp3"
       },
       {
-        "text": " should to",
-        "isCorrect": false
+        "text": "Everything happens simultaneously, the same as the web version.",
+        "audioSrc": "public/data/audio/common_meeting/mi_061_sideB_1.mp3"
       },
       {
-        "text": " must to",
-        "isCorrect": false
+        "text": "It all happens at once, just like on the web.",
+        "audioSrc": "public/data/audio/common_meeting/mi_061_sideB_2.mp3"
       }
     ],
-    "correctAnswer": "The code freeze starts in an hour, so you'd better push your changes now.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_385.mp3",
-    "hint": "A 'code freeze' is a period where developers stop adding new features to prepare for a stable release.",
-    "content": {
-      "type": "text",
-      "value": "[37]\n\n*Had better* ('d better) is a modal expression used for strong, urgent advice. There's an implication of negative consequences if the advice isn't followed.\n\n~Should to~ and *must to* are grammatically incorrect; modal verbs like should and must are *never* followed by 'to'. The correct structure is *modal + base verb* (e.g., should push)."
-    }
+      "note": "The phrase 'igual que' translates to [just like] or [the same as].\n\n~The same that~ is a common error. The correct structure is [the same as].\n\n[Simultaneously] and [at once] are excellent synonyms for 'at the same time'.\n\n~Everything at the same time,...~ (Incorrect structure. The pronoun 'Everything' functions as the subject and requires a verb to form a complete sentence. Without a verb, it feels like an incomplete thought, leaving the listener wondering 'Everything... what?'. Correct form: [Everything happens at the same time...]"},
+  {
+    "cardId": "mi_090",
+    "cardType": "flippable",
+    "sideA": "Entendido. ¿Cuál es el siguiente paso?",
+    "sideB": [
+      {
+        "text": "Got it. What's the next step?",
+        "audioSrc": "public/data/audio/common_meeting/mi_090_sideB_0.mp3"
+      },
+      {
+        "text": "Okay, I understand. What's next?",
+        "audioSrc": "public/data/audio/common_meeting/mi_090_sideB_1.mp3"
+      },
+      {
+        "text": "Understood. What should we do now?",
+        "audioSrc": "public/data/audio/common_meeting/mi_090_sideB_2.mp3"
+      },
+      {
+        "text": "Alright. Where do we go from here?",
+        "audioSrc": "public/data/audio/common_meeting/mi_090_sideB_3.mp3"
+      },
+      {
+        "text": "Okay, I got it. What's the next step?",
+        "audioSrc": "public/data/audio/common_meeting/mi_090_sideB_4.mp3"
+      }
+    ],
+    "note": "[Got it] is a very common and efficient way to confirm understanding. [Where do we go from here?] is a great idiom for asking about the next steps.\n\nUsing the past tense, I understood, is less common for immediate confirmation than the present tense [I understand] or the short form [Got it]."
   },
   {
-    "cardId": "egac_103",
-    "category": "Adjectives: Order (OSASCOMP)",
-    "sentenceParts": {
-      "prefix": "He drives an ",
-      "suffix": " car."
-    },
-    "options": [
+    "cardId": "mi_021",
+    "cardType": "flippable",
+    "sideA": "El problema ya ha sido solucionado.",
+    "sideB": [
       {
-        "text": "old German sports",
-        "isCorrect": true
+        "text": "The issue has already been fixed.",
+        "audioSrc": "public/data/audio/common_meeting/mi_021_sideB_0.mp3"
       },
       {
-        "text": "sports German old",
-        "isCorrect": false
+        "text": "The problem has been resolved.",
+        "audioSrc": "public/data/audio/common_meeting/mi_021_sideB_1.mp3"
       },
       {
-        "text": "German old sports",
-        "isCorrect": false
+        "text": "The problem is solved.",
+        "audioSrc": "public/data/audio/common_meeting/mi_021_sideB_2.mp3"
+      },
+      {
+        "text": "The problem is already fixed.",
+        "audioSrc": "public/data/audio/common_meeting/mi_021_sideB_3.mp3"
       }
     ],
-    "correctAnswer": "He drives an old German sports car.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_103.mp3",
-    "hint": "Purpose adjectives (like 'sports' or 'racing') often form compound nouns with the noun they describe.",
-    "content": {
-      "type": "text",
-      "value": "[28]\n\nFollowing the OSASCOMP rule for adjective order, the correct sequence is [Age] (old) -> [Origin] (German) -> [Purpose] (sports).\n\nThe other options scramble the standard adjective order.\n\n**Why 'sports car' and not 'sport car'?**\nIn the compound noun 'sports car', the word 'sports' acts as an adjective describing the car's purpose. While many such nouns use the singular form (e.g., 'shoe store'), 'sports car' is a fixed, standard expression in English."
-    }
+    "note": "**[12]**\n\nThe word [already] usually goes between the auxiliary and main verb, as in [has already been solved], not already was solved.\n\n~Solutioned~ is not a standard English verb. The correct verbs are [solved], [fixed], or [resolved].\n\n~The problem have been resolved.~ (Incorrect subject-verb agreement. The subject 'The problem' is singular, so it requires the singular verb 'has', not 'have'.)"
   },
   {
-    "cardId": "egac_348",
-    "category": "Fluency: Ellipsis (omission)",
-    "sentenceParts": {
-      "prefix": "",
-      "suffix": " seen my phone anywhere?"
-    },
-    "options": [
+    "cardId": "mi_088",
+    "cardType": "flippable",
+    "sideA": "Vamos a revisar esto y te daremos una respuesta.",
+    "sideB": [
       {
-        "text": "You",
-        "isCorrect": true
+        "text": "We're going to review this and get back to you.",
+        "audioSrc": "public/data/audio/common_meeting/mi_088_sideB_0.mp3"
       },
       {
-        "text": "Did you",
-        "isCorrect": false
+        "text": "We'll look into this and follow up with you.",
+        "audioSrc": "public/data/audio/common_meeting/mi_088_sideB_1.mp3"
       },
       {
-        "text": "Are you",
-        "isCorrect": false
+        "text": "Let us check this out, and we'll let you know what we find.",
+        "audioSrc": "public/data/audio/common_meeting/mi_088_sideB_2.mp3"
+      },
+      {
+        "text": "We'll investigate this and report back.",
+        "audioSrc": "public/data/audio/common_meeting/mi_088_sideB_3.mp3"
+      },
+      {
+        "text": "We're going to check this and give you an answer.",
+        "audioSrc": "public/data/audio/common_meeting/mi_088_sideB_4.mp3"
       }
     ],
-    "correctAnswer": "You seen my phone anywhere?",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_348.mp3",
-    "hint": "This casual question form is very common but should be avoided in formal writing.",
-    "content": {
-      "type": "text",
-      "value": "This is an example of [ellipsis]. The full, grammatically correct question is '[Have you] seen...?'. In casual, fast speech, native speakers often drop the auxiliary verb 'Have'. This card tests that informal structure.\n\n~Did you~ is incorrect because it must be followed by the base verb 'see', not the past participle 'seen'.\n~Are you~ is incorrect because it must be followed by the present participle 'seeing'."
-    }
+    "note": "Phrasal verbs are very common here: [get back to someone], [look into something], [check something out], and [follow up with someone].\n\n~We will return you with an answer~ is an incorrect and unnatural structure. The verb 'return' is not used this way.\n\n['To give someone an answer'] is correct and direct. Phrasal verbs like [get back to you] are often preferred in professional contexts as they can sound slightly softer."
   },
   {
-    "cardId": "egac_094",
-    "category": "Future Tenses: Spontaneous Decision",
-    "sentenceParts": {
-      "prefix": "The phone is ringing. Don't worry, I ",
-      "suffix": " it."
-    },
-    "options": [
+    "cardId": "mi_089",
+    "cardType": "flippable",
+    "sideA": "¿Puedes repetirme eso una vez más?",
+    "sideB": [
       {
-        "text": "'ll get",
-        "isCorrect": true
+        "text": "Can you run that by me one more time?",
+        "audioSrc": "public/data/audio/common_meeting/mi_089_sideB_0.mp3"
       },
       {
-        "text": "'m going to get",
-        "isCorrect": false
+        "text": "Could you say that again, please?",
+        "audioSrc": "public/data/audio/common_meeting/mi_089_sideB_1.mp3"
       },
       {
-        "text": "'m getting",
-        "isCorrect": false
+        "text": "Sorry, could you repeat that?",
+        "audioSrc": "public/data/audio/common_meeting/mi_089_sideB_2.mp3"
+      },
+      {
+        "text": "I didn't quite catch that, could you repeat it?",
+        "audioSrc": "public/data/audio/common_meeting/mi_089_sideB_3.mp3"
+      },
+      {
+        "text": "Could you repeat that one more time, please?",
+        "audioSrc": "public/data/audio/common_meeting/mi_089_sideB_4.mp3"
       }
     ],
-    "correctAnswer": "The phone is ringing. Don't worry, I 'll get it.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_094.mp3",
-    "hint": "'Going to' would imply you saw the phone ringing and formed the intention to answer it before speaking.",
-    "content": {
-      "type": "text",
-      "value": "[55]\n\nUse [will] (contracted to 'll) for spontaneous decisions, offers, or promises made at the moment of speaking.\n\n~'m going to get~ implies a pre-existing plan, which doesn't fit the context of the phone suddenly ringing.\n~'m getting~ is for fixed future arrangements."
-    }
+    "note": "[To run something by someone] is a common idiom that means to tell someone something so they can give their opinion. It's used here as a casual way to ask for repetition.\n\n[I didn't catch that] is another idiom meaning 'I didn't hear or understand'."
   },
   {
-    "cardId": "egac_172",
-    "category": "Verb 'Take': Take place",
-    "sentenceParts": {
-      "prefix": "The conference will ",
-      "suffix": " in London next year."
-    },
-    "options": [
+    "cardId": "mi_085",
+    "cardType": "flippable",
+    "sideA": "¿Tienes una captura de pantalla de eso?",
+    "sideB": [
       {
-        "text": "take place",
-        "isCorrect": true
+        "text": "Do you have a screenshot of it?",
+        "audioSrc": "public/data/audio/common_meeting/mi_085_sideB_0.mp3"
       },
       {
-        "text": "have place",
-        "isCorrect": false
+        "text": "Can you grab a screenshot of that for me?",
+        "audioSrc": "public/data/audio/common_meeting/mi_085_sideB_1.mp3"
       },
       {
-        "text": "make place",
-        "isCorrect": false
+        "text": "Could you send over a screenshot?",
+        "audioSrc": "public/data/audio/common_meeting/mi_085_sideB_2.mp3"
+      },
+      {
+        "text": "Would you be able to get a screenshot of that?",
+        "audioSrc": "public/data/audio/common_meeting/mi_085_sideB_3.mp3"
       }
     ],
-    "correctAnswer": "The conference will take place in London next year.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_172.mp3",
-    "hint": "This idiom is often used for planned events like meetings, concerts, and weddings.",
-    "content": {
-      "type": "text",
-      "value": "The idiom [take place] is the standard way to say that an event will happen.\n\n~have place~ and make place are incorrect."
-    }
+    "note": "[Screenshot] is the most common term. While screen capture is understandable, it's less frequent in daily conversation.\n\n~You have a screenshot?~ is a statement, not a question. Questions must start with an auxiliary verb like [Do] or [Can].\n\nIn this context, 'it' and 'that' are interchangeable: 'Do you have a screenshot of it?' and 'Do you have a screenshot of that?' are both correct."
   },
   {
-    "cardId": "egac_083",
-    "category": "Nominal Clauses",
-    "sentenceParts": {
-      "prefix": "",
-      "suffix": " is a complete mystery to the police."
-    },
-    "options": [
+    "cardId": "mi_094",
+    "cardType": "flippable",
+    "sideA": "Déjame revisar eso por mi lado.",
+    "sideB": [
       {
-        "text": "Who committed the crime",
-        "isCorrect": true
+        "text": "Let me check that on my end.",
+        "audioSrc": "public/data/audio/common_meeting/mi_094_sideB_0.mp3"
       },
       {
-        "text": "That committed the crime",
-        "isCorrect": false
+        "text": "I'll take a look at that from my side.",
+        "audioSrc": "public/data/audio/common_meeting/mi_094_sideB_1.mp3"
       },
       {
-        "text": "Which committed the crime",
-        "isCorrect": false
+        "text": "Let me just verify that over here.",
+        "audioSrc": "public/data/audio/common_meeting/mi_094_sideB_2.mp3"
+      },
+      {
+        "text": "I'll investigate that from my end.",
+        "audioSrc": "public/data/audio/common_meeting/mi_094_sideB_3.mp3"
+      },
+      {
+        "text": "Let me check that on my side.",
+        "audioSrc": "public/data/audio/common_meeting/mi_094_sideB_4.mp3"
       }
     ],
-    "correctAnswer": "Who committed the crime is a complete mystery to the police.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_083.mp3",
-    "hint": "Noun clauses often begin with question words like 'who', 'what', 'where', 'when', 'why', or 'how'.",
-    "content": {
-      "type": "text",
-      "value": "A [Nominal Clause] (or Noun Clause) can act as the subject of a sentence. [Who committed the crime] is the entire subject of the verb 'is'.\n\n~That~ is not the correct word to introduce this type of noun clause about an unknown person.\n~Which~ is used for choices among a known set of options."
-    }
+    "note": "[On my end] and [from my side] are common idioms that mean 'from my perspective' or 'using my own resources'.\n\n~Let me to check that~ is incorrect. After 'let me', always use the base form of the verb without 'to': [Let me check].\n\n~Let me check that on my own.~ (This is grammatically correct, but has a different meaning. 'On my own' means 'alone/without help', while 'on my end/side' means 'from my perspective or area of responsibility'.)"
   },
   {
-    "cardId": "egac_411",
-    "category": "Future Perfect",
-    "sentenceParts": {
-      "prefix": "By the time the code freeze begins, I ",
-      "suffix": " all my changes."
-    },
-    "options": [
+    "cardId": "mi_082",
+    "cardType": "flippable",
+    "sideA": "¿De cuál estamos hablando específicamente?",
+    "sideB": [
       {
-        "text": "will have pushed",
-        "isCorrect": true
+        "text": "Which one are we talking about here?",
+        "audioSrc": "public/data/audio/common_meeting/mi_082_sideB_0.mp3"
       },
       {
-        "text": "will push",
-        "isCorrect": false
+        "text": "Could you specify which one you're referring to?",
+        "audioSrc": "public/data/audio/common_meeting/mi_082_sideB_1.mp3"
       },
       {
-        "text": "am pushing",
-        "isCorrect": false
+        "text": "Which one do you mean, exactly?",
+        "audioSrc": "public/data/audio/common_meeting/mi_082_sideB_2.mp3"
+      },
+      {
+        "text": "Which specific one are we discussing?",
+        "audioSrc": "public/data/audio/common_meeting/mi_082_sideB_3.mp3"
+      },
+      {
+        "text": "Which one are we talking about specifically?",
+        "audioSrc": "public/data/audio/common_meeting/mi_082_sideB_4.mp3"
       }
     ],
-    "correctAnswer": "By the time the code freeze begins, I will have pushed all my changes.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_411.mp3",
-    "hint": "'Pushing changes' means uploading your code modifications to a central repository.",
-    "content": {
-      "type": "text",
-      "value": "The [Future Perfect] (will have + p.p.) is used for an action that will be finished before another future event. You must push changes before the code freeze.\n\n~Will push~ implies the action will happen at that future time, not before it.\n~Am pushing~ is for a fixed arrangement."
-    }
+    "note": "Use [Which] when choosing from a limited or known set of options. [What] is more general but can also be used.\n\nIt's very common for English questions to end with a preposition like [about] or [to].\n\n~Of which one are you talking?~ is grammatically correct but overly formal and less common in conversation."
   },
   {
-    "cardId": "egac_101",
-    "category": "Questions: Declarative",
-    "sentenceParts": {
-      "prefix": "So, ",
-      "suffix": "you're not coming to the meeting this afternoon?"
-    },
-    "options": [
+    "cardId": "mi_093",
+    "cardType": "flippable",
+    "sideA": "¿Es un problema nuevo o ya había ocurrido antes?",
+    "sideB": [
       {
-        "text": "",
-        "isCorrect": true
+        "text": "Is this a new issue or has it happened before?",
+        "audioSrc": "public/data/audio/common_meeting/mi_093_sideB_0.mp3"
       },
       {
-        "text": "are ",
-        "isCorrect": false
+        "text": "Is this a recent problem, or is it a recurring one?",
+        "audioSrc": "public/data/audio/common_meeting/mi_093_sideB_1.mp3"
       },
       {
-        "text": "why ",
-        "isCorrect": false
+        "text": "Have you seen this issue before, or is this the first time?",
+        "audioSrc": "public/data/audio/common_meeting/mi_093_sideB_2.mp3"
+      },
+      {
+        "text": "Is this a known issue?",
+        "audioSrc": "public/data/audio/common_meeting/mi_093_sideB_3.mp3"
       }
     ],
-    "correctAnswer": "So, you're not coming to the meeting this afternoon?",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_101.mp3",
-    "hint": "This informal structure is used to confirm what you think is true. Sometimes, no extra word is needed.",
-    "content": {
-      "type": "text",
-      "value": "[Declarative Questions] have the same grammar as a statement but use rising intonation to function as a question. They are common for confirming information.\n\nThe sentence is already a complete statement, so no extra word is needed to form the question. The correct option is the blank one.\n\nThe options `are ` and `why ` would create grammatically incorrect sentences ('...so are you're...' or '...so why you're...')."
-    }
+    "note": "[Recurring] means something that happens again and again. [A known issue] is a standard term in tech for a problem that has been reported previously.\n\n~Is this a new issue or it happened before?~ (This structure is grammatically awkward. When you connect two clauses with 'or' to form a single question, both should follow a question structure. The second part, 'it happened before', is a statement. The correct form, 'Is this a new issue or has it happened before?', connects two parallel questions: 'Is this...?' and 'Has it...?'. Using the Present Perfect ('has it happened') is also better because it asks about any time in the past leading up to now, which fits the context.)"
   },
   {
-    "cardId": "egac_193",
-    "category": "Vocabulary: Household Chores",
-    "sentenceParts": {
-      "prefix": "It's your turn to ",
-      "suffix": " the garbage."
-    },
-    "options": [
+    "cardId": "mi_092",
+    "cardType": "flippable",
+    "sideA": "OK, eso no debería estar pasando.",
+    "sideB": [
       {
-        "text": "take out",
-        "isCorrect": true
+        "text": "Okay, that shouldn't be happening.",
+        "audioSrc": "public/data/audio/common_meeting/mi_092_sideB_0.mp3"
       },
       {
-        "text": "do out",
-        "isCorrect": false
+        "text": "Right, that's definitely not supposed to happen.",
+        "audioSrc": "public/data/audio/common_meeting/mi_092_sideB_1.mp3"
       },
       {
-        "text": "put off",
-        "isCorrect": false
+        "text": "Okay, that's not the expected behavior.",
+        "audioSrc": "public/data/audio/common_meeting/mi_092_sideB_2.mp3"
+      },
+      {
+        "text": "I see. That's certainly not right.",
+        "audioSrc": "public/data/audio/common_meeting/mi_092_sideB_3.mp3"
       }
     ],
-    "correctAnswer": "It's your turn to take out the garbage.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_193.mp3",
-    "hint": "In American English, 'garbage' or 'trash' is used. In British English, it's 'rubbish'.",
-    "content": {
-      "type": "text",
-      "value": "[Take out the garbage] is the standard, fixed collocation for this household chore.\n\n~do out~ is not a correct phrasal verb for this action.\n~put off~ means to postpone, which doesn't fit the context."
-    }
+    "note": "[Shouldn't] is the contraction of 'should not' and is used to express that something is wrong or unexpected.\n\n[To be supposed to do something] is a very common structure to talk about what is expected.\n\n~That no should be happening~ is incorrect word order for a negative statement.\n\n~Okay, that shouldn't be happened.~ (Incorrect verb form. After a modal verb + 'be' (like 'should be'), you use the -ing form for a continuous action. The verb 'happen' is intransitive, so it cannot be used in the passive voice here. The correct form is 'happening'.)"
   },
   {
-    "cardId": "egac_413",
-    "category": "Passive Voice (Future)",
-    "sentenceParts": {
-      "prefix": "The new server-side logic ",
-      "suffix": " during the next maintenance window."
-    },
-    "options": [
+    "cardId": "mi_095",
+    "cardType": "flippable",
+    "sideA": "Hagamos seguimiento de esto por correo.",
+    "sideB": [
       {
-        "text": "will be deployed",
-        "isCorrect": true
+        "text": "Let's follow up on this by email.",
+        "audioSrc": "public/data/audio/common_meeting/mi_095_sideB_0.mp3"
       },
       {
-        "text": "will deploy",
-        "isCorrect": false
+        "text": "Let's continue this conversation over email.",
+        "audioSrc": "public/data/audio/common_meeting/mi_095_sideB_1.mp3"
       },
       {
-        "text": "is deploying",
-        "isCorrect": false
+        "text": "How about we handle this through email?",
+        "audioSrc": "public/data/audio/common_meeting/mi_095_sideB_2.mp3"
+      },
+      {
+        "text": "Let's take this offline and discuss it via email.",
+        "audioSrc": "public/data/audio/common_meeting/mi_095_sideB_3.mp3"
+      },
+      {
+        "text": "Let's continue this by email.",
+        "audioSrc": "public/data/audio/common_meeting/mi_095_sideB_4.mp3"
       }
     ],
-    "correctAnswer": "The new server-side logic will be deployed during the next maintenance window.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_413.mp3",
-    "hint": "'Server-side' refers to operations that happen on the main server, not on the user's device.",
-    "content": {
-      "type": "text",
-      "value": "The [Future Passive] ('will be deployed') is needed here because the server-side logic receives the action of being deployed.\n\n~Will deploy~ is active voice; it implies the logic will deploy something else.\n~Is deploying~ is present continuous and refers to a fixed arrangement, but future passive is clearer for a scheduled event."
-    }
+    "note": "[To follow up on] something is a key phrasal verb meaning to continue with it later.\n\n[Take this offline] is a very common business idiom that means to discuss a topic outside of the current meeting, often with a smaller group."
   },
   {
-    "cardId": "egac_412",
-    "category": "Reported Speech: Advanced Verbs",
-    "sentenceParts": {
-      "prefix": "The product owner ",
-      "suffix": " on adding the feature to the current backlog."
-    },
-    "options": [
+    "cardId": "mi_073",
+    "cardType": "flippable",
+    "sideA": "¿A quién reportó el error el equipo de QA?",
+    "sideB": [
       {
-        "text": "insisted",
-        "isCorrect": true
+        "text": "Who did the QA team report the bug to?",
+        "audioSrc": "public/data/audio/common_meeting/mi_073_sideB_0.mp3"
       },
       {
-        "text": "suggested",
-        "isCorrect": false
+        "text": "To whom did the QA team report the error?",
+        "audioSrc": "public/data/audio/common_meeting/mi_073_sideB_1.mp3"
       },
       {
-        "text": "demanded",
-        "isCorrect": false
+        "text": "Who did the QA team notify about the bug?",
+        "audioSrc": "public/data/audio/common_meeting/mi_073_sideB_2.mp3"
       }
     ],
-    "correctAnswer": "The product owner insisted on adding the feature to the current backlog.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_412.mp3",
-    "hint": "The 'product owner' is the person responsible for defining features and managing the team's backlog.",
-    "content": {
-      "type": "text",
-      "value": "The verb [insist on + gerund] means to demand something forcefully and not accept refusal. It's a strong way to describe adding an item to the backlog.\n\n~Suggested~ is followed by a gerund ('suggested adding'), not 'on'.\n~Demanded~ is followed by an infinitive ('demanded to add')."
-    }
+    "note": "**[3]**\n\nThis is an *Object Question*. The subject performing the action is [the QA team]. The question word 'Who' asks about the object—the person who received the report. Because the subject is known, the auxiliary verb [did] is mandatory.\n\n~Who the QA team reported the bug to?~.\n\n~Who was reported by the QA team?~ (This is a valid passive sentence, but it changes the meaning. It asks which person was the *subject* of the report, not who *received* the report. To ask who received it, you must use an active structure like 'Who did the team report to?')"
   }
 ]

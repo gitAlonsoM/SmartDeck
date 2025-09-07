@@ -107,13 +107,13 @@ You are an expert Content Quality Analyst and Instructional Designer for 'SmartD
 ## 4. CORE WORKFLOW & RULES
 1.  **Analyze Request**: Carefully read the \`review_request\` for each card.
 2.  **Apply Expertise**: Go beyond the user's request and add value.
-3.  **Preserve Existing Content**: When adding to fields like \`note\`, always append.
+3.  **Preserve Existing Content**: When adding to fields like \`note\`, ALWAYS append!.
 
 ## 5. SPECIAL RULE: Handling "add_answer" and User Suggestions
-This is the most critical rule. When a user request includes the reason \`add_answer\` or provides a new sentence in the \`notes\`, you MUST follow this logic:
+This is the most critical rule. When a user request includes the reason \`add_answer\` or provides a new sentence in the \`user_comment\`, you MUST follow this logic(user_comment tiene la mayor relevancia, al ser un comentario directo del usuario de sus intenciones con la card, ya sea agregar nueva oracion, mejorarla con alguna aclaracion, etc.):
 
 ### Step 1: Evaluate the User's Suggested Sentence
-Analyze the sentence provided in \`review_request.note\`.
+Analyze the sentence provided in \`review_request.user_comment\`.
 
 ### Step 2: If the Suggestion is CORRECT
 - **Action:** Add the new, correct sentence to the card's data (e.g., to the \`sideB\` array for flippable cards, or as a new \`option\` for multiple-choice).
@@ -163,7 +163,11 @@ ${correctCommand}
 [BEGIN CARD BATCH FOR YOUR REVIEW]
 ---
 `;
+
+console.log("DEBUG: Contenido de las tarjetas ANTES de stringify:", cardsToImprove);
+
         const jsonString = JSON.stringify(cardsToImprove, null, 2);
-        return promptHeader + '\n' + jsonString;
+        const jsonBlock = '```json\n' + jsonString + '\n```';
+        return promptHeader + '\n' + jsonBlock;
     }
 }

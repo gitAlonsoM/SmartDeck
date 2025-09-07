@@ -35,10 +35,10 @@ async init() {
             e.preventDefault();
             const formData = new FormData(this.form);
             const reasons = formData.getAll('improvement_reason');
-            const note = formData.get('notes');
+            const userCommentValue = formData.get('user_comment'); // Read form field into a clearly named variable.
+             // Correctly build the object to be saved with the 'user_comment' key.
+            this.onSave(this.cardIdToImprove, { reasons, user_comment: userCommentValue });
 
-            // Allow saving with no reasons/note, which effectively just saves an empty state
-            this.onSave(this.cardIdToImprove, { reasons, note });
             this.hide();
         });
     }
@@ -49,7 +49,7 @@ async init() {
      * Shows the modal, dynamically adjusting options based on card type and pre-filling with existing data.
      * @param {string} cardId The ID of the card to improve.
      * @param {string} cardType The type of the card ('quiz' or 'flippable').
-     * @param {object|null} existingData The existing improvement data for this card {reasons, note}.
+     * @param {object|null} existingData 
      */
     show(cardId, cardType, existingData = null) {
         this.cardIdToImprove = cardId;
@@ -63,7 +63,9 @@ async init() {
                 const checkbox = this.form.querySelector(`input[name="improvement_reason"][value="${reasonValue}"]`);
                 if (checkbox) checkbox.checked = true;
             });
-            this.form.querySelector('#improvement-notes').value = existingData.note || '';
+            
+            // Read from the new 'user_comment' property to populate the textarea.
+            this.form.querySelector('#improvement-notes').value = existingData.user_comment || '';
             this.removeBtn.classList.remove('hidden');
         } else {
             this.removeBtn.classList.add('hidden');
