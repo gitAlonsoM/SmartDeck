@@ -6214,7 +6214,7 @@
       "hint": "Other math terms include 'plus' (+), 'minus' (-), and 'times' (x).",
       "content": {
         "type": "text",
-        "value": "The correct phrase for the mathematical operation is [divided by].\n\n~shared by~ means to distribute among, which is related but not the precise mathematical term.\n~parted~ means separated and is incorrect here."
+        "value": "**[94]**\n\nThe correct phrase for the mathematical operation is [divided by].\n\n~shared by~ means to distribute among, which is related but not the precise mathematical term.\n~parted~ means separated and is incorrect here."
       }
     },
     {
@@ -8070,7 +8070,7 @@
       "hint": "In equations, you can also say 'multiplied by'.",
       "content": {
         "type": "text",
-        "value": "[Times] is the standard word used in speech for multiplication.\n\n~Plus~ is for addition (+).\n~By~ is used in division ('divided by'), not multiplication."
+        "value": "**[94]**\n\n[Times] is the standard word used in speech for multiplication.\n\n~Plus~ is for addition (+).\n~By~ is used in division ('divided by'), not multiplication."
       }
     },
     {
@@ -8418,7 +8418,7 @@
       "hint": "In informal speech, people often just say 'is': 'Ten minus four is six'.",
       "content": {
         "type": "text",
-        "value": "[Equals] is the standard mathematical verb for 'is equal to'. 'Is' can also be used ('...is six').\n\n~Results~ needs a preposition ('results in six').\n~Makes~ is sometimes used informally ('Two and two makes four'), but 'equals' is more standard and correct."
+        "value": "**[94]**\n\n[Equals] is the standard mathematical verb for 'is equal to'. 'Is' can also be used ('...is six').\n\n~Results~ needs a preposition ('results in six').\n~Makes~ is sometimes used informally ('Two and two makes four'), but 'equals' is more standard and correct."
       }
     },
     {
@@ -8911,7 +8911,7 @@
       "hint": "This structure is very common for services like car repairs, haircuts, and home maintenance.",
       "content": {
         "type": "text",
-        "value": "**[39]**\n\nThe causative structure [get something done] is used when you arrange for someone else to perform a service. The structure is 'get + the object + the past participle'.\n\n~look at it~ would imply you are going to do it yourself.\n~get to look at it~ is not the correct causative structure."
+        "value": "**[95]**\n\nThe causative structure [get something done] is used when you arrange for someone else to perform a service. The structure is 'get + the object + the past participle'.\n\n~look at it~ would imply you are going to do it yourself.\n~get to look at it~ is not the correct causative structure."
       }
     },
     {
@@ -9259,7 +9259,7 @@
       "hint": "This causative structure is used for many common services, like 'get your car fixed' or 'get a document translated'.",
       "content": {
         "type": "text",
-        "value": "**[39]**\n\nThe causative form [get it cut] is the natural way to talk about arranging for a hairdresser to cut your hair.\n\n~cut it~ implies you will do it yourself.\n~get to cut it~ means to receive the opportunity to cut it, which is a different meaning."
+        "value": "**[95]**\n\nThe causative form [get it cut] is the natural way to talk about arranging for a hairdresser to cut your hair.\n\n~cut it~ implies you will do it yourself.\n~get to cut it~ means to receive the opportunity to cut it, which is a different meaning."
       }
     },
     {
@@ -12856,6 +12856,266 @@
       "content": {
         "type": "text",
         "value": "**[93]**\n\nFor future plans, the structure is often [be going to + have + object + past participle].\n\n~paint it~ implies you will do it yourself, which contradicts the first clause.\n~have to paint it~ changes the meaning from arranging a service to having an obligation to do it yourself."
+     }
+    },
+    {
+      "cardId": "egac_444",
+      "category": "Vocabulary: Math Operations",
+      "sentenceParts": {
+        "prefix": "In the equation 7 + 2 = 9, the number 9 is the ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "sum", "isCorrect": true },
+        { "text": "difference", "isCorrect": false },
+        { "text": "product", "isCorrect": false }
+      ],
+      "correctAnswer": "In the equation 7 + 2 = 9, the number 9 is the sum.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_444.mp3",
+      "hint": "This is the result of an addition operation.",
+      "content": {
+        "type": "text",
+        "value": "**[94]**\n\nThe result of adding two or more numbers together is called the [sum].\n\n~The difference~ is the result of subtraction.\n~The product~ is the result of multiplication."
+      }
+    },
+    {
+      "cardId": "egac_445",
+      "category": "Vocabulary: Math Operations",
+      "sentenceParts": {
+        "prefix": "The calculation is simple: fifteen ",
+        "suffix": " five equals ten."
+      },
+      "options": [
+        { "text": "minus", "isCorrect": true },
+        { "text": "less", "isCorrect": false },
+        { "text": "without", "isCorrect": false }
+      ],
+      "correctAnswer": "The calculation is simple: fifteen minus five equals ten.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_445.mp3",
+      "hint": "This is the standard term for the subtraction symbol (-) in an equation.",
+      "content": {
+        "type": "text",
+        "value": "**[94]**\n\n[Minus] is the word used to represent the subtraction operation in speech.\n\n~Less~ is used for comparisons (e.g., '10 is less than 15') but not typically to read an equation.\n~Without~ is not a mathematical term."
+      }
+    },
+    {
+      "cardId": "egac_446",
+      "category": "Vocabulary: Math Operations",
+      "sentenceParts": {
+        "prefix": "What is seven ",
+        "suffix": " by nine?"
+      },
+      "options": [
+        { "text": "multiplied", "isCorrect": true },
+        { "text": "times", "isCorrect": false },
+        { "text": "with", "isCorrect": false }
+      ],
+      "correctAnswer": "What is seven multiplied by nine?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_446.mp3",
+      "hint": "This is the more formal way to express the multiplication operation.",
+      "content": {
+        "type": "text",
+        "value": "**[94]**\n\nThe formal term for the multiplication operation (x) is [multiplied by].\n\n~Times~ is also correct and very common ('seven times nine'), but the sentence structure with the past participle 'multiplied' is a key form to learn.\n~With~ is not used for multiplication."
+      }
+    },
+    {
+      "cardId": "egac_447",
+      "category": "Vocabulary: Math Operations",
+      "sentenceParts": {
+        "prefix": "The total cost ",
+        "suffix": " by the number of participants to find the per-person price."
+      },
+      "options": [
+        { "text": "is divided", "isCorrect": true },
+        { "text": "divides", "isCorrect": false },
+        { "text": "dividing", "isCorrect": false }
+      ],
+      "correctAnswer": "The total cost is divided by the number of participants to find the per-person price.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_447.mp3",
+      "hint": "Think about whether the 'total cost' is doing the action or receiving the action.",
+      "content": {
+        "type": "text",
+        "value": "**[94]**\n\n**[12]**\n\nThe [Passive Voice] is needed here. The subject ('The total cost') receives the action of division. The correct passive structure is [is divided].\n\n~Divides~ is the active form, which is incorrect.\n~Dividing~ is the present participle and doesn't fit grammatically."
+      }
+    },
+    {
+      "cardId": "egac_448",
+      "category": "Vocabulary: Math Operations",
+      "sentenceParts": {
+        "prefix": "The sum of the angles in a triangle always ",
+        "suffix": " 180 degrees."
+      },
+      "options": [
+        { "text": "equals", "isCorrect": true },
+        { "text": "equal", "isCorrect": false },
+        { "text": "are equal", "isCorrect": false }
+      ],
+      "correctAnswer": "The sum of the angles in a triangle always equals 180 degrees.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_448.mp3",
+      "hint": "The subject of the verb is 'The sum', which is a singular concept.",
+      "content": {
+        "type": "text",
+        "value": "**[94]**\n\nThe subject of this sentence is 'The sum' (singular). Therefore, the verb must be in the third-person singular form, [equals].\n\n~Equal~ is the base form, which would be used for a plural subject.\n~Are equal~ is incorrect because the subject 'sum' is singular."
+       }
+    },
+    {
+      "cardId": "egac_449",
+      "category": "Causative: 'Get something done'",
+      "sentenceParts": {
+        "prefix": "My vision is getting blurry. I should ",
+        "suffix": " soon."
+      },
+      "options": [
+        { "text": "get my eyes checked", "isCorrect": true },
+        { "text": "check my eyes", "isCorrect": false },
+        { "text": "get to check my eyes", "isCorrect": false }
+      ],
+      "correctAnswer": "My vision is getting blurry. I should get my eyes checked soon.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_449.mp3",
+      "hint": "This structure is used when you arrange for a professional (like an optometrist) to perform a service for you.",
+      "content": {
+        "type": "text",
+        "value": "**[95]**\n\nThe causative [get + object + past participle] is the correct way to express that you are arranging for someone else to perform a service.\n\n~check my eyes~ implies you will do it yourself.\n~get to check my eyes~ is grammatically incorrect for this meaning."
+      }
+    },
+    {
+      "cardId": "egac_450",
+      "category": "Causative: 'Get something done'",
+      "sentenceParts": {
+        "prefix": "The presentation is tomorrow. We need to ",
+        "suffix": " by the project manager."
+      },
+      "options": [
+        { "text": "get the slides approved", "isCorrect": true },
+        { "text": "approve the slides", "isCorrect": false },
+        { "text": "get to approve the slides", "isCorrect": false }
+      ],
+      "correctAnswer": "The presentation is tomorrow. We need to get the slides approved by the project manager.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_450.mp3",
+      "hint": "The action (approving) is being done by someone else (the manager), not by 'we'.",
+      "content": {
+        "type": "text",
+        "value": "**[95]**\n\nUsing the causative [get the slides approved] correctly indicates that the team will arrange for the manager to perform the action of approving.\n\n~approve the slides~ would mean that 'we' are the ones doing the approving.\n~get to approve the slides~ would mean 'to have the opportunity to approve', which is a different meaning."
+      }
+    },
+    {
+      "cardId": "egac_451",
+      "category": "Causative: 'Get something done'",
+      "sentenceParts": {
+        "prefix": "I was so busy yesterday that I didn't have time to cook, so I ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "got a pizza delivered", "isCorrect": true },
+        { "text": "delivered a pizza", "isCorrect": false },
+        { "text": "had deliver a pizza", "isCorrect": false }
+      ],
+      "correctAnswer": "I was so busy yesterday that I didn't have time to cook, so I got a pizza delivered.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_451.mp3",
+      "hint": "This is a perfect example of arranging for a paid service.",
+      "content": {
+        "type": "text",
+        "value": "**[95]**\n\nThe past causative [got a pizza delivered] clearly states that you arranged for someone else (the delivery driver) to bring the pizza.\n\n~delivered a pizza~ would mean you were the one who delivered the pizza.\n~had deliver a pizza~ is grammatically incorrect; the structure with 'had' would be 'had a pizza delivered'."
+      }
+    },
+    {
+      "cardId": "egac_452",
+      "category": "Causative: 'Get something done'",
+      "sentenceParts": {
+        "prefix": "The car won't start. I need to ",
+        "suffix": " by a mechanic."
+      },
+      "options": [
+        { "text": "get it looked at", "isCorrect": true },
+        { "text": "look at it", "isCorrect": false },
+        { "text": "get to look at it", "isCorrect": false }
+      ],
+      "correctAnswer": "The car won't start. I need to get it looked at by a mechanic.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_452.mp3",
+      "hint": "The phrasal verb 'look at' means to inspect or examine.",
+      "content": {
+        "type": "text",
+        "value": "**[95]**\n\nThe structure [get + object + past participle] is used to describe arranging for a service. Here, 'looked at' is the past participle of the phrasal verb 'look at'.\n\n~look at it~ would imply you are going to do the inspection yourself.\n~get to look at it~ means to receive the opportunity, which is not the intended meaning."
+     }
+    },
+    {
+      "cardId": "egac_453",
+      "category": "Connectors: Citing Sources",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " the user manual, you need to charge the device for at least 8 hours."
+      },
+      "options": [
+        { "text": "According to", "isCorrect": true },
+        { "text": "Based on", "isCorrect": false },
+        { "text": "Depending on", "isCorrect": false }
+      ],
+      "correctAnswer": "According to the user manual, you need to charge the device for at least 8 hours.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_453.mp3",
+      "hint": "Which phrase is used to introduce the source of a piece of information?",
+      "content": {
+        "type": "text",
+        "value": "**[96]**\n\n[According to] is used to cite a source of information, in this case, the 'user manual'.\n\n~Based on~ would imply the manual is the reason for a decision, which is a subtle but different meaning.\n~Depending on~ would imply a variable condition, which doesn't fit."
+      }
+    },
+    {
+      "cardId": "egac_454",
+      "category": "Connectors: Stating Criteria",
+      "sentenceParts": {
+        "prefix": "The decision was made ",
+        "suffix": " the data we collected last month."
+      },
+      "options": [
+        { "text": "based on", "isCorrect": true },
+        { "text": "according to", "isCorrect": false },
+        { "text": "depending on", "isCorrect": false }
+      ],
+      "correctAnswer": "The decision was made based on the data we collected last month.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_454.mp3",
+      "hint": "Which phrase explains the foundation or evidence for an action?",
+      "content": {
+        "type": "text",
+        "value": "**[96]**\n\n[Based on] is used to state the criteria or evidence for a decision. The 'data' is the foundation for making the decision.\n\n~According to~ is for citing a source, not the criteria for an action.\n~Depending on~ introduces a variable condition, not a reason."
+      }
+    },
+    {
+      "cardId": "egac_455",
+      "category": "Connectors: Expressing Conditions",
+      "sentenceParts": {
+        "prefix": "Our plans for the weekend could change ",
+        "suffix": " the weather."
+      },
+      "options": [
+        { "text": "depending on", "isCorrect": true },
+        { "text": "based on", "isCorrect": false },
+        { "text": "according to", "isCorrect": false }
+      ],
+      "correctAnswer": "Our plans for the weekend could change depending on the weather.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_455.mp3",
+      "hint": "Which phrase is used when a result is uncertain and subject to change?",
+      "content": {
+        "type": "text",
+        "value": "**[96]**\n\n[Depending on] is used to introduce a condition or variable ('the weather') that will affect an outcome ('our plans').\n\n~Based on~ would mean the weather is the reason for our plans, which is illogical.\n~According to~ would mean the weather is a source of information."
+      }
+    },
+    {
+      "cardId": "egac_456",
+      "category": "Connectors: Common Error",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": ", this is a bad idea. We should reconsider."
+      },
+      "options": [
+        { "text": "In my opinion", "isCorrect": true },
+        { "text": "According to me", "isCorrect": false },
+        { "text": "Based on me", "isCorrect": false }
+      ],
+      "correctAnswer": "In my opinion, this is a bad idea. We should reconsider.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_456.mp3",
+      "hint": "How do you correctly express your own personal viewpoint in English?",
+      "content": {
+        "type": "text",
+        "value": "**[96]**\n\nTo express a personal viewpoint, the correct and natural phrase is [In my opinion].\n\n~According to me~ is a very common error for non-native speakers. While grammatically logical, it is not used in standard English.\n~Based on me~ is grammatically incorrect."
       }
     }
   ]
