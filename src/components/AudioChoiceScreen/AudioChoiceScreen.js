@@ -154,13 +154,13 @@ class AudioChoiceScreen {
             const glossary = GlossaryService.getCachedGlossary('english_rules');
             if (glossary && glossary[modalId]) {
                 const termTitle = glossary[modalId].title;
-                grammarNoteTitleEl.innerHTML = `GRAMMAR NOTE - <a href="#" class="glossary-term font-bold text-green-400 hover:underline" data-term-key="${modalId}">${termTitle}</a>`;
+                grammarNoteTitleEl.innerHTML = `Tip - <a href="#" class="glossary-term font-bold text-green-400 hover:underline" data-term-key="${modalId}">${termTitle}</a>`;
                 contentText = contentText.replace(modalMatch[0], ''); 
             } else {
-                grammarNoteTitleEl.textContent = 'GRAMMAR NOTE';
+                grammarNoteTitleEl.textContent = 'Tip';
             }
         } else {
-            grammarNoteTitleEl.textContent = 'GRAMMAR NOTE';
+            grammarNoteTitleEl.textContent = 'Tip';
         }
 
         let formattedText = contentText.replace(/\[([^\]]+)\]/g, '<strong class="font-semibold text-indigo-400">$1</strong>');
