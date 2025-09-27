@@ -1,0 +1,1210 @@
+{
+  "id": "dev_workflow_01",
+  "name": "Development Workflow: Iyalcomers",
+  "description": "Master the complete end-to-end development lifecycle at Iyalcomers. This deck covers key roles, processes, and tools from ticket reception to production deployment.",
+  "deckType": "audioChoice",
+  "isAiGenerated": false,
+  "cards": [
+    {
+      "cardId": "dev_workflow_001",
+      "category": "Roles & Responsibilities",
+      "sentenceParts": {
+        "prefix": "As the Product Owner, Camila's primary responsibility is to ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "represent the business needs and define features", "isCorrect": true },
+        { "text": "review and approve all Pull Requests", "isCorrect": false },
+        { "text": "deploy PL/SQL packages to the UAT database", "isCorrect": false }
+      ],
+      "correctAnswer": "As the Product Owner, Camila's primary responsibility is to represent the business needs and define features.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_001.mp3",
+      "hint": "She is the bridge between the business side and the technical team.",
+      "content": {
+        "type": "text",
+        "value": "The [Product Owner] is the voice of the business. Camila defines the 'what' and 'why' of a feature.\n\n~Sebastian, the Tech Lead,~ reviews code, while ~Laura, the DBA,~ handles database deployments."
+      }
+    },
+    {
+      "cardId": "dev_workflow_002",
+      "category": "Roles & Responsibilities",
+      "sentenceParts": {
+        "prefix": "Sebastian, the Tech Lead, is the owner of the Bitbucket repository and must ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "review and approve all Pull Requests before they are merged", "isCorrect": true },
+        { "text": "schedule all project meetings and take notes", "isCorrect": false },
+        { "text": "perform manual testing on the UAT environment", "isCorrect": false }
+      ],
+      "correctAnswer": "Sebastian, the Tech Lead, is the owner of the Bitbucket repository and must review and approve all Pull Requests before they are merged.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_002.mp3",
+      "hint": "His role is to ensure code quality and maintain standards.",
+      "content": {
+        "type": "text",
+        "value": "The [Tech Lead] acts as the gatekeeper for the codebase. No code gets merged without his approval.\n\n~Maria~ is the Project Coordinator who schedules meetings, and the ~Manual QA Testers~ handle UAT testing."
+      }
+    },
+    {
+      "cardId": "dev_workflow_003",
+      "category": "Roles & Responsibilities",
+      "sentenceParts": {
+        "prefix": "Who is responsible for organizing meetings, documenting decisions, and ensuring smooth communication flow? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "Maria, the Project Coordinator", "isCorrect": true },
+        { "text": "Alonso, the Developer", "isCorrect": false },
+        { "text": "Camila, the Product Owner", "isCorrect": false }
+      ],
+      "correctAnswer": "Who is responsible for organizing meetings, documenting decisions, and ensuring smooth communication flow? Maria, the Project Coordinator",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_003.mp3",
+      "hint": "This person is described as the 'glue that holds the process together'.",
+      "content": {
+        "type": "text",
+        "value": "[Maria, the Project Coordinator,] handles all administrative and communication tasks to keep the project on track.\n\nWhile ~Alonso~ and ~Camila~ participate, Maria is the one who facilitates the process."
+      }
+    },
+    {
+      "cardId": "dev_workflow_004",
+      "category": "Roles & Responsibilities",
+      "sentenceParts": {
+        "prefix": "The 'Purple' team is the operations group responsible for deployments. Laura, the DBA, specifically handles ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "running SQL scripts and deploying PL/SQL packages", "isCorrect": true },
+        { "text": "loading .ildt files into the ISG repository", "isCorrect": false },
+        { "text": "uploading the final binaries to the app stores", "isCorrect": false }
+      ],
+      "correctAnswer": "The 'Purple' team is the operations group responsible for deployments. Laura, the DBA, specifically handles running SQL scripts and deploying PL/SQL packages.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_004.mp3",
+      "hint": "Her role is focused on the Database Tier.",
+      "content": {
+        "type": "text",
+        "value": "As the [Database Administrator (DBA)], Laura has exclusive access to run scripts on the UAT and PROD databases.\n\n~David, the Middleware Admin,~ handles ISG files. The final app store upload happens after all deployments are done."
+      }
+    },
+    {
+      "cardId": "dev_workflow_005",
+      "category": "Roles & Responsibilities",
+      "sentenceParts": {
+        "prefix": "David, the Middleware Administrator, is the ISG specialist on the 'Purple' team. His task is to ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "deploy the .ildt files to the Application Tier", "isCorrect": true },
+        { "text": "write the ISG annotations in the .pks file", "isCorrect": false },
+        { "text": "test the API endpoints from the Flutter application", "isCorrect": false }
+      ],
+      "correctAnswer": "David, the Middleware Administrator, is the ISG specialist on the 'Purple' team. His task is to deploy the .ildt files to the Application Tier.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_005.mp3",
+      "hint": "His focus is on the integration layer, not the database or the front-end.",
+      "content": {
+        "type": "text",
+        "value": "[David's role] is to manage the Integrated SOA Gateway on the Application Tier, which involves loading the interface definition files (.ildt).\n\n~Alonso, the developer,~ writes the annotations. The ~QA Testers~ would test the full flow."
+      }
+    },
+    {
+      "cardId": "dev_workflow_006",
+      "category": "Phase 1: Request & Analysis",
+      "sentenceParts": {
+        "prefix": "The development workflow is initiated when Alonso receives a requirement via ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "email", "isCorrect": true },
+        { "text": "a Bitbucket ticket", "isCorrect": false },
+        { "text": "a Teams message", "isCorrect": false }
+      ],
+      "correctAnswer": "The development workflow is initiated when Alonso receives a requirement via email.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_006.mp3",
+      "hint": "This is the first step mentioned in 'The Lifecycle of a Request'.",
+      "content": {
+        "type": "text",
+        "value": "The process officially starts with an [email] to alonso.miranda@iyalcomers.com.\n\nWhile ~Bitbucket~ and ~Teams~ are used later, the initial trigger is a formal email."
+      }
+    },
+    {
+      "cardId": "dev_workflow_007",
+      "category": "Phase 1: Request & Analysis",
+      "sentenceParts": {
+        "prefix": "After a requirement email is received, Maria schedules a kickoff meeting. Who are the mandatory attendees? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "Maria, Alonso, and Camila", "isCorrect": true },
+        { "text": "Alonso, Sebastian, and the 'Purple' team", "isCorrect": false },
+        { "text": "Camila and the Business Stakeholders", "isCorrect": false }
+      ],
+      "correctAnswer": "After a requirement email is received, Maria schedules a kickoff meeting. Who are the mandatory attendees? Maria, Alonso, and Camila",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_007.mp3",
+      "hint": "Think about the core team needed to define and understand the task.",
+      "content": {
+        "type": "text",
+        "value": "The core group for defining a task is the [Project Coordinator (Maria), Developer (Alonso), and Product Owner (Camila)].\n\n~Sebastian~ gets involved at the code review stage. ~Business Stakeholders~ are only invited for major features."
+      }
+    },
+    {
+      "cardId": "dev_workflow_008",
+      "category": "Phase 2: Development",
+      "sentenceParts": {
+        "prefix": "What is the first action Alonso must take in the code repository before starting development work? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "Create a new branch in Bitbucket", "isCorrect": true },
+        { "text": "Create a Pull Request", "isCorrect": false },
+        { "text": "Merge his code into the main branch", "isCorrect": false }
+      ],
+      "correctAnswer": "What is the first action Alonso must take in the code repository before starting development work? Create a new branch in Bitbucket",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_008.mp3",
+      "hint": "This isolates his new work from the stable codebase.",
+      "content": {
+        "type": "text",
+        "value": "Following best practices, all new development starts by [creating a new branch].\n\nA ~Pull Request~ is created *after* the work is done. ~Merging~ happens only after the PR is approved."
+      }
+    },
+    {
+      "cardId": "dev_workflow_009",
+      "category": "Phase 3: Review & Validation",
+      "sentenceParts": {
+        "prefix": "Once development is complete and Camila has given informal approval, Alonso creates a ",
+        "suffix": " and assigns it to Sebastian."
+      },
+      "options": [
+        { "text": "Pull Request in Bitbucket", "isCorrect": true },
+        { "text": "deployment ticket for the 'Purple' team", "isCorrect": false },
+        { "text": "new Excel file for QA testing", "isCorrect": false }
+      ],
+      "correctAnswer": "Once development is complete and Camila has given informal approval, Alonso creates a Pull Request in Bitbucket and assigns it to Sebastian.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_009.mp3",
+      "hint": "This is the formal process to request a code review.",
+      "content": {
+        "type": "text",
+        "value": "A [Pull Request (PR)] is the mechanism to propose changes and ask the Tech Lead to review the code.\n\nThe ~deployment ticket~ is created after the PR is approved and merged. The ~Excel file~ is created by the QA team."
+      }
+    },
+    {
+      "cardId": "dev_workflow_010",
+      "category": "Phase 3: Review & Validation",
+      "sentenceParts": {
+        "prefix": "Alonso cannot merge his branch into the main development branch until ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "Sebastian (Tech Lead) approves the Pull Request", "isCorrect": true },
+        { "text": "Camila (Product Owner) approves the feature", "isCorrect": false },
+        { "text": "the QA Testers complete their functional testing", "isCorrect": false }
+      ],
+      "correctAnswer": "Alonso cannot merge his branch into the main development branch until Sebastian (Tech Lead) approves the Pull Request.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_010.mp3",
+      "hint": "The Tech Lead is the gatekeeper of the repository.",
+      "content": {
+        "type": "text",
+        "value": "[Sebastian's approval on the PR] is the mandatory step that unlocks the ability to merge the code.\n\n~Camila's approval~ is for the feature's functionality, while ~QA testing~ happens in UAT, after the code is already merged."
+      }
+    },
+    {
+      "cardId": "dev_workflow_011",
+      "category": "Phase 4: UAT Deployment",
+      "sentenceParts": {
+        "prefix": "After the PR is approved and merged, Alonso prepares a deployment package and emails it to the ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "'Purple' team's distribution list", "isCorrect": true },
+        { "text": "Manual QA Testers directly", "isCorrect": false },
+        { "text": "Business Stakeholders for final review", "isCorrect": false }
+      ],
+      "correctAnswer": "After the PR is approved and merged, Alonso prepares a deployment package and emails it to the 'Purple' team's distribution list.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_011.mp3",
+      "hint": "This is the formal handoff from Development to Operations.",
+      "content": {
+        "type": "text",
+        "value": "The deployment request is sent to the ['Purple' team], which consists of the DBA and Middleware Admin who will perform the UAT deployment.\n\n~QA Testers~ are notified *after* the deployment is complete. ~Stakeholders~ are not involved in this technical step."
+      }
+    },
+    {
+      "cardId": "dev_workflow_012",
+      "category": "Phase 4: UAT Deployment",
+      "sentenceParts": {
+        "prefix": "During UAT deployment, Laura (DBA) and David (Middleware Admin) work on ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "different application tiers simultaneously", "isCorrect": true },
+        { "text": "the same tier, but one after the other", "isCorrect": false },
+        { "text": "only the Database Tier", "isCorrect": false }
+      ],
+      "correctAnswer": "During UAT deployment, Laura (DBA) and David (Middleware Admin) work on different application tiers simultaneously.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_012.mp3",
+      "hint": "The text mentions their tasks happen 'simultaneously'.",
+      "content": {
+        "type": "text",
+        "value": "Laura deploys to the [Database Tier] while David deploys to the [Application Tier]. These tasks can happen in parallel.\n\nThey do not work on the ~same tier~, and David's work on the ~Application Tier~ is essential."
+      }
+    },
+    {
+      "cardId": "dev_workflow_013",
+      "category": "Phase 5: Final Testing",
+      "sentenceParts": {
+        "prefix": "How do the Manual QA Testers perform their work? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "By using the app like a real customer, without code", "isCorrect": true },
+        { "text": "By running automated test scripts", "isCorrect": false },
+        { "text": "By reviewing the source code in Bitbucket", "isCorrect": false }
+      ],
+      "correctAnswer": "How do the Manual QA Testers perform their work? By using the app like a real customer, without code",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_013.mp3",
+      "hint": "Their role is described as 'non-technical'.",
+      "content": {
+        "type": "text",
+        "value": "[Manual QA Testers] perform functional, black-box testing. They test the full user flow to find real-world issues.\n\nThe process described does not involve ~automated scripts~, and they do not ~review the code~."
+      }
+    },
+    {
+      "cardId": "dev_workflow_014",
+      "category": "Phase 5: Final Testing",
+      "sentenceParts": {
+        "prefix": "Where are the findings from the Manual QA Testers documented? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "In a new Excel file on OneDrive", "isCorrect": true },
+        { "text": "In a Bitbucket ticket", "isCorrect": false },
+        { "text": "In an email to Alonso", "isCorrect": false }
+      ],
+      "correctAnswer": "Where are the findings from the Manual QA Testers documented? In a new Excel file on OneDrive",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_014.mp3",
+      "hint": "The document has specific columns like Section, Error Description, etc.",
+      "content": {
+        "type": "text",
+        "value": "All testing results are formally documented in a dedicated [Excel file for that release], stored centrally on OneDrive.\n\nA ~Bitbucket ticket~ isn't mentioned for QA findings, and an ~email~ would be informal. The Excel file is the official record."
+      }
+    },
+    {
+      "cardId": "dev_workflow_015",
+      "category": "Phase 5: Final Testing",
+      "sentenceParts": {
+        "prefix": "If the QA team finds a bug, they share the Excel link with Maria, who then ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "schedules a follow-up meeting and a new 'FIX' ticket is created", "isCorrect": true },
+        { "text": "assigns the bug directly to Alonso in Bitbucket", "isCorrect": false },
+        { "text": "asks the 'Purple' team to roll back the deployment", "isCorrect": false }
+      ],
+      "correctAnswer": "If the QA team finds a bug, they share the Excel link with Maria, who then schedules a follow-up meeting and a new 'FIX' ticket is created.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_015.mp3",
+      "hint": "Maria's role is to coordinate the response to any issues found.",
+      "content": {
+        "type": "text",
+        "value": "The [feedback loop] is managed by Maria. She facilitates communication to ensure the bug is reviewed and a new work item is created for Alonso.\n\nThere is no ~direct assignment~ in Bitbucket, and a ~rollback~ would only be for a catastrophic failure."
+      }
+    },
+    {
+      "cardId": "dev_workflow_016",
+      "category": "Phase 5: Production",
+      "sentenceParts": {
+        "prefix": "The 'Purple' team receives the final 'green light' to deploy to Production after ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "the QA testers give their official sign-off to Maria and Camila", "isCorrect": true },
+        { "text": "Sebastian approves the final code review", "isCorrect": false },
+        { "text": "the Business Stakeholders approve the UAT demo", "isCorrect": false }
+      ],
+      "correctAnswer": "The 'Purple' team receives the final 'green light' to deploy to Production after the QA testers give their official sign-off to Maria and Camila.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_016.mp3",
+      "hint": "Production deployment can only happen after successful UAT testing.",
+      "content": {
+        "type": "text",
+        "value": "The [official sign-off from the QA team] is the final quality gate before the feature can go live.\n\n~Sebastian's code review~ happens much earlier. ~Stakeholder approval~ may be needed, but the QA sign-off is the direct trigger for deployment."
+      }
+    },
+    {
+      "cardId": "dev_workflow_017",
+      "category": "General Concepts",
+      "sentenceParts": {
+        "prefix": "In this workflow, the UAT environment serves as a ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "stable testing ground for non-technical users before production", "isCorrect": true },
+        { "text": "personal development and testing server for Alonso", "isCorrect": false },
+        { "text": "live environment for real customers", "isCorrect": false }
+      ],
+      "correctAnswer": "In this workflow, the UAT environment serves as a stable testing ground for non-technical users before production.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_017.mp3",
+      "hint": "What does UAT stand for?",
+      "content": {
+        "type": "text",
+        "value": "[UAT stands for User Acceptance Testing]. It's where the Manual QA Testers validate the feature before it's released.\n\nAlonso works on a ~DEV environment~, and the ~PROD environment~ is for real customers."
+      }
+    },
+    {
+      "cardId": "dev_workflow_018",
+      "category": "General Concepts",
+      "sentenceParts": {
+        "prefix": "The three distinct technical layers Alonso works on are the Flutter Presentation Layer, the PL/SQL Layers, and the ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "ISG integration on the Application Tier", "isCorrect": true },
+        { "text": "Manual QA testing process", "isCorrect": false },
+        { "text": "Bitbucket repository management", "isCorrect": false }
+      ],
+      "correctAnswer": "The three distinct technical layers Alonso works on are the Flutter Presentation Layer, the PL/SQL Layers, and the ISG integration on the Application Tier.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_018.mp3",
+      "hint": "This relates to the 3-Tier Architecture concept.",
+      "content": {
+        "type": "text",
+        "value": "Alonso's work spans the full stack: [Presentation (Flutter), Business/Data (PL/SQL), and Application (ISG)].\n\n~QA testing~ and ~repository management~ are part of the workflow, but they are not technical development layers."
+      }
+    },
+    {
+      "cardId": "dev_workflow_019",
+      "category": "Roles & Responsibilities",
+      "sentenceParts": {
+        "prefix": "The Business Stakeholders are described as 'big fish' who ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "ensure the project aligns with strategic goals", "isCorrect": true },
+        { "text": "participate in daily development work", "isCorrect": false },
+        { "text": "write the initial requirement emails", "isCorrect": false }
+      ],
+      "correctAnswer": "The Business Stakeholders are described as 'big fish' who ensure the project aligns with strategic goals.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_019.mp3",
+      "hint": "They are involved at a high level, not in the day-to-day details.",
+      "content": {
+        "type": "text",
+        "value": "[Business Stakeholders] provide high-level vision and may join key meetings to see progress.\n\nThey do not get involved in ~daily work~, and the requirement emails in this workflow come from various business users, not necessarily the stakeholders."
+      }
+    },
+    {
+      "cardId": "dev_workflow_020",
+      "category": "Phase 1: Request & Analysis",
+      "sentenceParts": {
+        "prefix": "What is the purpose of Maria sharing her screen and taking live notes during meetings? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "To ensure everyone is aligned and agrees on the decisions being made", "isCorrect": true },
+        { "text": "To allow Sebastian to review the code during the meeting", "isCorrect": false },
+        { "text": "To create the final user documentation for the application", "isCorrect": false }
+      ],
+      "correctAnswer": "What is the purpose of Maria sharing her screen and taking live notes during meetings? To ensure everyone is aligned and agrees on the decisions being made",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_020.mp3",
+      "hint": "This practice helps avoid misunderstandings.",
+      "content": {
+        "type": "text",
+        "value": "[Live note-taking and the subsequent summary email] create a shared understanding and an official record of the meeting's outcomes.\n\n~Code reviews~ happen in Bitbucket, not during requirements meetings. ~User documentation~ is a separate process."
+      }
+    },
+    {
+      "cardId": "dev_workflow_021",
+      "category": "Phase 2: Development",
+      "sentenceParts": {
+        "prefix": "During development, Alonso shares screenshots and test builds with Camila for ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "informal feedback", "isCorrect": true },
+        { "text": "official sign-off", "isCorrect": false },
+        { "text": "code quality review", "isCorrect": false }
+      ],
+      "correctAnswer": "During development, Alonso shares screenshots and test builds with Camila for informal feedback.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_021.mp3",
+      "hint": "This is a quick check-in before the formal review process begins.",
+      "content": {
+        "type": "text",
+        "value": "This [informal review loop] with the Product Owner helps ensure the development is on the right track before committing to a formal Pull Request.\n\n~Official sign-off~ comes from QA, and the ~code review~ is done by Sebastian."
+      }
+    },
+    {
+      "cardId": "dev_workflow_022",
+      "category": "Phase 4: UAT Deployment",
+      "sentenceParts": {
+        "prefix": "The deployment package Alonso sends to the 'Purple' team contains the SQL scripts, the .ildt file, and the ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": ".apk/.ipa binaries", "isCorrect": true },
+        { "text": "source code branch", "isCorrect": false },
+        { "text": "QA testing Excel file", "isCorrect": false }
+      ],
+      "correctAnswer": "The deployment package Alonso sends to the 'Purple' team contains the SQL scripts, the .ildt file, and the .apk/.ipa binaries.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_022.mp3",
+      "hint": "What is the final output for the mobile application itself?",
+      "content": {
+        "type": "text",
+        "value": "The package must contain all deployable artifacts: database changes (SQL), middleware changes (.ildt), and the compiled application itself ([.apk for Android, .ipa for iOS]).\n\nThe ~source code~ is in Bitbucket, and the ~QA file~ is for testing results."
+      }
+    },
+    {
+      "cardId": "dev_workflow_023",
+      "category": "Phase 5: Final Testing",
+      "sentenceParts": {
+        "prefix": "The columns in the QA Excel file include 'Error Description', 'Expected Behavior', and ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "User Account Used", "isCorrect": true },
+        { "text": "Developer Assigned", "isCorrect": false },
+        { "text": "Deployment Date", "isCorrect": false }
+      ],
+      "correctAnswer": "The columns in the QA Excel file include 'Error Description', 'Expected Behavior', and User Account Used.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_023.mp3",
+      "hint": "This helps developers reproduce the bug exactly as the tester saw it.",
+      "content": {
+        "type": "text",
+        "value": "Documenting the [User Account Used] is crucial for debugging, especially if issues are related to user-specific data or permissions.\n\n~Developer Assigned~ would be part of a later ticketing process, and the ~Deployment Date~ would be tracked by Maria."
+      }
+    },
+    {
+      "cardId": "dev_workflow_024",
+      "category": "Phase 5: Production",
+      "sentenceParts": {
+        "prefix": "The final step of the go-live process, after the PROD deployments are complete, is to ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "upload the final binaries to the app stores", "isCorrect": true },
+        { "text": "delete the development branch from Bitbucket", "isCorrect": false },
+        { "text": "send a final summary email to stakeholders", "isCorrect": false }
+      ],
+      "correctAnswer": "The final step of the go-live process, after the PROD deployments are complete, is to upload the final binaries to the app stores.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_024.mp3",
+      "hint": "How do the end-users get the new version of the app?",
+      "content": {
+        "type": "text",
+        "value": "The process is not complete until the [application is made available to customers] via the official app stores.\n\n~Branch cleanup~ and ~communication~ are good practices but are secondary to the actual release of the software."
+      }
+    },
+   {
+      "cardId": "dev_workflow_025",
+      "category": "General Concepts",
+      "sentenceParts": {
+        "prefix": "The UAT deployment request email represents a formal handoff from the ",
+        "suffix": " domains."
+      },
+      "options": [
+        { "text": "Development to the Operations", "isCorrect": true },
+        { "text": "Quality Assurance to the Business", "isCorrect": false },
+        { "text": "Product Owner to the Development", "isCorrect": false }
+      ],
+      "correctAnswer": "The UAT deployment request email represents a formal handoff from the Development to the Operations domains.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_025.mp3",
+      "hint": "Think about who creates the package versus who deploys it.",
+      "content": {
+        "type": "text",
+        "value": "This email is a critical handoff. [Alonso (Development)] has finished his work, and now the ['Purple' team (Operations)] takes responsibility for the deployment.\n\n~QA to Business~ is the final sign-off. ~Product Owner to Development~ is the requirements handoff at the very beginning of the process."
+      }
+    },
+    {
+      "cardId": "dev_workflow_026",
+      "category": "Roles & Responsibilities",
+      "sentenceParts": {
+        "prefix": "Which team is composed of non-technical staff who test from a user's perspective? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "The Manual QA Testers", "isCorrect": true },
+        { "text": "The 'Purple' Team", "isCorrect": false },
+        { "text": "The Business Stakeholders", "isCorrect": false }
+      ],
+      "correctAnswer": "Which team is composed of non-technical staff who test from a user's perspective? The Manual QA Testers",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_026.mp3",
+      "hint": "Their job is to simulate real-world usage.",
+      "content": {
+        "type": "text",
+        "value": "The [Manual QA Testers] are responsible for User Acceptance Testing (UAT) and focus on functionality, not code.\n\nThe ['Purple' Team] is technical (DBA, Middleware), and ~Business Stakeholders~ provide high-level direction, they do not test."
+      }
+    },
+    {
+      "cardId": "dev_workflow_027",
+      "category": "Phase 3: Review & Validation",
+      "sentenceParts": {
+        "prefix": "A Pull Request is a feature of which tool used at Iyalcomers? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "Bitbucket", "isCorrect": true },
+        { "text": "Microsoft Teams", "isCorrect": false },
+        { "text": "OneDrive", "isCorrect": false }
+      ],
+      "correctAnswer": "A Pull Request is a feature of which tool used at Iyalcomers? Bitbucket",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_027.mp3",
+      "hint": "This tool is used for code management and version control.",
+      "content": {
+        "type": "text",
+        "value": "[Bitbucket] is a Git-based source code repository hosting service where developers collaborate and review code via Pull Requests.\n\n~Teams~ is for communication, and ~OneDrive~ is for file storage."
+      }
+    },
+    {
+      "cardId": "dev_workflow_028",
+      "category": "Phase 5: Production",
+      "sentenceParts": {
+        "prefix": "The deployment process for Production is a repeat of the UAT process, performed by ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "Laura and David", "isCorrect": true },
+        { "text": "Alonso", "isCorrect": false },
+        { "text": "Sebastian", "isCorrect": false }
+      ],
+      "correctAnswer": "The deployment process for Production is a repeat of the UAT process, performed by Laura and David.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_028.mp3",
+      "hint": "The same specialists handle both pre-production and live environments.",
+      "content": {
+        "type": "text",
+        "value": "[Laura (DBA) and David (Middleware Admin)] are the members of the 'Purple' team responsible for all deployments, ensuring consistency between UAT and PROD.\n\n~Alonso's~ role is to provide the package, and ~Sebastian's~ is to approve the code."
+      }
+    },
+    {
+      "cardId": "dev_workflow_029",
+      "category": "General Concepts",
+      "sentenceParts": {
+        "prefix": "The .pks file, where ISG annotations are written, is part of the ",
+        "suffix": " layer."
+      },
+      "options": [
+        { "text": "PL/SQL Business Logic/Data Access", "isCorrect": true },
+        { "text": "Flutter Presentation", "isCorrect": false },
+        { "text": "Application Tier Deployment", "isCorrect": false }
+      ],
+      "correctAnswer": "The .pks file, where ISG annotations are written, is part of the PL/SQL Business Logic/Data Access layer.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_029.mp3",
+      "hint": ".pks files contain the specification for a PL/SQL package.",
+      "content": {
+        "type": "text",
+        "value": "The annotations are special comments added directly to the [PL/SQL package specification (.pks) file] to define the web service contract.\n\nIt is not part of the ~Flutter code~, and it is the *source* for the ~.ildt file~ used in the deployment."
+      }
+    },
+    {
+      "cardId": "dev_workflow_030",
+      "category": "Phase 5: Final Testing",
+      "sentenceParts": {
+        "prefix": "Who provides the final approval that allows Maria to give the 'green light' for Production deployment? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "The Manual QA Testers and Camila", "isCorrect": true },
+        { "text": "Sebastian, the Tech Lead", "isCorrect": false },
+        { "text": "The Business Stakeholders", "isCorrect": false }
+      ],
+      "correctAnswer": "Who provides the final approval that allows Maria to give the 'green light' for Production deployment? The Manual QA Testers and Camila",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_030.mp3",
+      "hint": "The approval comes from both the testing team and the business representative.",
+      "content": {
+        "type": "text",
+        "value": "The process requires sign-off from both the [QA team (confirming it works)] and the [Product Owner (confirming it meets requirements)].\n\n~Sebastian's~ approval happened before UAT. ~Stakeholders~ are not involved in the final go/no-go decision."
+      }
+    },
+       {
+      "cardId": "dev_workflow_031",
+      "category": "General Concepts",
+      "sentenceParts": {
+        "prefix": "The primary purpose of creating a new branch for each task is to ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "isolate new code and prevent destabilizing the main branch", "isCorrect": true },
+        { "text": "archive old code that is no longer in use", "isCorrect": false },
+        { "text": "document the business requirements for the feature", "isCorrect": false }
+      ],
+      "correctAnswer": "The primary purpose of creating a new branch for each task is to isolate new code and prevent destabilizing the main branch.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_031.mp3",
+      "hint": "This is a core principle of version control systems like Git.",
+      "content": {
+        "type": "text",
+        "value": "[Branching] allows developers to work on features or fixes in a contained environment without affecting the stable, shared codebase.\n\n~Archiving code~ is typically done with tags or by removing it, not by creating active branches. ~Requirements~ are documented by Maria in separate documents."
+      }
+    },
+    {
+      "cardId": "dev_workflow_032",
+      "category": "Phase 3: Review & Validation",
+      "sentenceParts": {
+        "prefix": "Sebastian's code review focuses on quality and standards, not on ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "verifying the feature meets every business requirement", "isCorrect": true },
+        { "text": "checking for potential performance issues", "isCorrect": false },
+        { "text": "ensuring the code follows team conventions", "isCorrect": false }
+      ],
+      "correctAnswer": "Sebastian's code review focuses on quality and standards, not on verifying the feature meets every business requirement.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_032.mp3",
+      "hint": "Whose role is it to represent the business needs?",
+      "content": {
+        "type": "text",
+        "value": "A [Tech Lead's code review] is about technical excellence. It's ~Camila's (the PO)~ job to confirm the functionality meets the business needs.\n\nChecking for ~performance issues~ and ~following conventions~ are key parts of a technical code review."
+      }
+    },
+    {
+      "cardId": "dev_workflow_033",
+      "category": "General Concepts",
+      "sentenceParts": {
+        "prefix": "The difference between the DEV and UAT environments is that DEV is for the developer's work, while UAT is for ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "formal testing by a separate QA team", "isCorrect": true },
+        { "text": "the final, live version used by customers", "isCorrect": false },
+        { "text": "storing the project's source code", "isCorrect": false }
+      ],
+      "correctAnswer": "The difference between the DEV and UAT environments is that DEV is for the developer's work, while UAT is for formal testing by a separate QA team.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_033.mp3",
+      "hint": "UAT stands for User Acceptance Testing.",
+      "content": {
+        "type": "text",
+        "value": "The [UAT environment] is a stable, controlled replica of production used to validate a feature before release.\n\nThe ~live version~ is the PROD environment. The ~source code~ is stored in Bitbucket, not an application environment."
+      }
+    },
+    {
+      "cardId": "dev_workflow_034",
+      "category": "Phase 5: Final Testing",
+      "sentenceParts": {
+        "prefix": "The `User Account Used` column in the QA Excel sheet is crucial for ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "helping the developer reproduce the bug", "isCorrect": true },
+        { "text": "calculating the total time spent testing", "isCorrect": false },
+        { "text": "assigning blame for the error", "isCorrect": false }
+      ],
+      "correctAnswer": "The `User Account Used` column in the QA Excel sheet is crucial for helping the developer reproduce the bug.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_034.mp3",
+      "hint": "Bugs can often be related to specific user data or permissions.",
+      "content": {
+        "type": "text",
+        "value": "To fix a bug, a developer must first see it happen. Knowing the [exact test account] makes reproducing the issue much easier.\n\nBug tracking is about ~fixing the product~, not blaming individuals or tracking time in this specific manner."
+      }
+    },
+    {
+      "cardId": "dev_workflow_035",
+      "category": "Roles & Responsibilities",
+      "sentenceParts": {
+        "prefix": "A key responsibility of the 'Purple' team (DBA and Middleware) is to ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "ensure deployments are consistent between UAT and PROD", "isCorrect": true },
+        { "text": "write the application code for new features", "isCorrect": false },
+        { "text": "define the strategic goals for the business", "isCorrect": false }
+      ],
+      "correctAnswer": "A key responsibility of the 'Purple' team (DBA and Middleware) is to ensure deployments are consistent between UAT and PROD.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_035.mp3",
+      "hint": "They repeat the same deployment process for both environments.",
+      "content": {
+        "type": "text",
+        "value": "The [Operations team] owns the deployment process. Their consistency ensures that what was tested in UAT is exactly what goes live in PROD.\n\n~Alonso~ writes the code, and the ~Business Stakeholders~ define strategic goals."
+      }
+    },
+    {
+      "cardId": "dev_workflow_036",
+      "category": "General Concepts",
+      "sentenceParts": {
+        "prefix": "The ISG annotations in the .pks file serve as ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "a blueprint for generating the web service definition", "isCorrect": true },
+        { "text": "the executable code for the Flutter application", "isCorrect": false },
+        { "text": "a security certificate for the database", "isCorrect": false }
+      ],
+      "correctAnswer": "The ISG annotations in the .pks file serve as a blueprint for generating the web service definition.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_036.mp3",
+      "hint": "These annotations are metadata that describe the API.",
+      "content": {
+        "type": "text",
+        "value": "[Annotations] are machine-readable comments that tools use to generate the actual .ildt deployment file. They define the API contract.\n\n~Flutter code~ is written in Dart. ~Security certificates~ are a separate concept related to network security."
+      }
+    },
+    {
+      "cardId": "dev_workflow_037",
+      "category": "Phase 3: Review & Validation",
+      "sentenceParts": {
+        "prefix": "If Sebastian requests changes in a Pull Request, Alonso must ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "make the code changes and push to the same branch", "isCorrect": true },
+        { "text": "create a new, separate Pull Request for the fixes", "isCorrect": false },
+        { "text": "ask Maria to override the Tech Lead's decision", "isCorrect": false }
+      ],
+      "correctAnswer": "If Sebastian requests changes in a Pull Request, Alonso must make the code changes and push to the same branch.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_037.mp3",
+      "hint": "The Pull Request is a living discussion about a specific branch.",
+      "content": {
+        "type": "text",
+        "value": "The standard workflow is to [update the existing branch with new commits]. The Pull Request will automatically show the new changes for Sebastian to re-review.\n\nA ~new PR~ would be confusing, and ~overriding the Tech Lead~ is not part of a healthy review process."
+      }
+    },
+    {
+      "cardId": "dev_workflow_038",
+      "category": "General Concepts",
+      "sentenceParts": {
+        "prefix": "Storing the QA findings on a shared OneDrive ensures the document is ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "a single, centralized source of truth for the test results", "isCorrect": true },
+        { "text": "automatically backed up to the Bitbucket repository", "isCorrect": false },
+        { "text": "only visible to the QA testers and no one else", "isCorrect": false }
+      ],
+      "correctAnswer": "Storing the QA findings on a shared OneDrive ensures the document is a single, centralized source of truth for the test results.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_038.mp3",
+      "hint": "Why use a shared drive instead of local files?",
+      "content": {
+        "type": "text",
+        "value": "[Using a cloud storage solution like OneDrive] prevents version conflicts and ensures everyone (Maria, Camila, Alonso) is looking at the same, up-to-date information.\n\n~Bitbucket~ is for code, not test results. The document needs to be ~shared~ with the team, not kept private."
+      }
+    },
+    {
+      "cardId": "dev_workflow_039",
+      "category": "Roles & Responsibilities",
+      "sentenceParts": {
+        "prefix": "Alonso, as the Developer, interacts with the Database Tier primarily by ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "writing PL/SQL code that will be deployed by the DBA", "isCorrect": true },
+        { "text": "running SQL scripts directly on the PROD database", "isCorrect": false },
+        { "text": "managing database user accounts and permissions", "isCorrect": false }
+      ],
+      "correctAnswer": "Alonso, as the Developer, interacts with the Database Tier primarily by writing PL/SQL code that will be deployed by the DBA.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_039.mp3",
+      "hint": "Consider the separation of duties between development and operations.",
+      "content": {
+        "type": "text",
+        "value": "The developer's role is to [create the database logic]. The DBA's role is to manage and deploy to the database environments.\n\nRunning scripts directly on ~PROD~ is strictly forbidden for developers. Managing ~user accounts~ is also a DBA function."
+      }
+    },
+    {
+      "cardId": "dev_workflow_040",
+      "category": "Phase 2: Development",
+      "sentenceParts": {
+        "prefix": "The 'informal review' with Camila is important because it ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "provides early feedback and can prevent wasted effort", "isCorrect": true },
+        { "text": "replaces the need for a formal code review by Sebastian", "isCorrect": false },
+        { "text": "gives the final approval for production deployment", "isCorrect": false }
+      ],
+      "correctAnswer": "The 'informal review' with Camila is important because it provides early feedback and can prevent wasted effort.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_040.mp3",
+      "hint": "It's better to find out you're going in the wrong direction early.",
+      "content": {
+        "type": "text",
+        "value": "This quick check-in acts as a [course correction], ensuring the developer's interpretation matches the Product Owner's vision before too much code is written.\n\nIt is not a substitute for the ~technical code review~ or the ~final QA sign-off~."
+      }
+    },
+    {
+      "cardId": "dev_workflow_041",
+      "category": "Tools",
+      "sentenceParts": {
+        "prefix": "In this workflow, Microsoft Teams is used as a tool for ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "real-time collaboration and meetings", "isCorrect": true },
+        { "text": "long-term storage of official source code", "isCorrect": false },
+        { "text": "deploying applications to the UAT server", "isCorrect": false }
+      ],
+      "correctAnswer": "In this workflow, Microsoft Teams is used as a tool for real-time collaboration and meetings.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_041.mp3",
+      "hint": "Maria uses it to schedule and host discussions.",
+      "content": {
+        "type": "text",
+        "value": "[Teams] is the chosen platform for synchronous communication, like the kickoff and bug review meetings.\n\n~Source code~ lives in Bitbucket. ~Deployments~ are handled by the 'Purple' team using specific tools."
+      }
+    },
+    {
+      "cardId": "dev_workflow_042",
+      "category": "Phase 5: Final Testing",
+      "sentenceParts": {
+        "prefix": "If the QA testers find no major issues, their next step is to ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "provide their official sign-off to Maria and Camila", "isCorrect": true },
+        { "text": "deploy the application to the PROD environment themselves", "isCorrect": false },
+        { "text": "write the release notes for the app store", "isCorrect": false }
+      ],
+      "correctAnswer": "If the QA testers find no major issues, their next step is to provide their official sign-off to Maria and Camila.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_042.mp3",
+      "hint": "Their role is to validate, not to deploy.",
+      "content": {
+        "type": "text",
+        "value": "The [QA sign-off] is the formal conclusion of the testing phase, signaling that the feature is ready for release from a quality perspective.\n\n~Deployments~ are the 'Purple' team's job. ~Release notes~ would likely be written by Camila or a marketing team."
+      }
+    },
+    {
+      "cardId": "dev_workflow_043",
+      "category": "General Concepts",
+      "sentenceParts": {
+        "prefix": "The overall development process at Iyalcomers can be described as ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "a structured, multi-phase workflow with clear roles", "isCorrect": true },
+        { "text": "an unstructured process where developers work independently", "isCorrect": false },
+        { "text": "a fully automated process with no human intervention", "isCorrect": false }
+      ],
+      "correctAnswer": "The overall development process at Iyalcomers can be described as a structured, multi-phase workflow with clear roles.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_043.mp3",
+      "hint": "Consider the handoffs between Alonso, Sebastian, Maria, and the 'Purple' team.",
+      "content": {
+        "type": "text",
+        "value": "The process has [distinct phases] (Analysis, Dev, Review, Deploy, Test) and well-defined responsibilities for each person involved.\n\nIt is the opposite of an ~unstructured~ or ~fully automated~ system, relying heavily on collaboration and specific human checkpoints."
+      }
+    },
+    {
+      "cardId": "dev_workflow_044",
+      "category": "Roles & Responsibilities",
+      "sentenceParts": {
+        "prefix": "What is the relationship between Maria (Project Coordinator) and Camila (Product Owner)? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "They collaborate: Maria facilitates the process, Camila defines the content", "isCorrect": true },
+        { "text": "Maria reports directly to Camila", "isCorrect": false },
+        { "text": "They have the same role and responsibilities", "isCorrect": false }
+      ],
+      "correctAnswer": "What is the relationship between Maria (Project Coordinator) and Camila (Product Owner)? They collaborate: Maria facilitates the process, Camila defines the content",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_044.mp3",
+      "hint": "One is focused on 'how' the team works, the other on 'what' the team builds.",
+      "content": {
+        "type": "text",
+        "value": "[Maria] manages the logistics and communication (the process), while [Camila] manages the feature requirements (the product). They are peers with different focuses.\n\nThe document doesn't specify a ~reporting structure~, and their roles are ~distinctly different~."
+      }
+    },
+    {
+      "cardId": "dev_workflow_045",
+      "category": "Phase 4: UAT Deployment",
+      "sentenceParts": {
+        "prefix": "The term 'binaries' in the context of the .apk/.ipa files refers to ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "the compiled, executable version of the application", "isCorrect": true },
+        { "text": "the human-readable source code files", "isCorrect": false },
+        { "text": "configuration text files", "isCorrect": false }
+      ],
+      "correctAnswer": "The term 'binaries' in the context of the .apk/.ipa files refers to the compiled, executable version of the application.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_045.mp3",
+      "hint": "This is the format that a mobile device can actually run.",
+      "content": {
+        "type": "text",
+        "value": "[Binaries] are the output of the compilation process, where source code is converted into machine code that the operating system can execute.\n\nThis is distinct from the ~source code~ (e.g., Dart files) which developers write."
+      }
+    },
+    {
+      "cardId": "dev_workflow_046",
+      "category": "Phase 5: Final Testing",
+      "sentenceParts": {
+        "prefix": "A 'FIX' ticket is created in response to ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "a bug found by the QA team during UAT", "isCorrect": true },
+        { "text": "a new feature request from the business", "isCorrect": false },
+        { "text": "a Pull Request being rejected by the Tech Lead", "isCorrect": false }
+      ],
+      "correctAnswer": "A 'FIX' ticket is created in response to a bug found by the QA team during UAT.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_046.mp3",
+      "hint": "This ticket represents unplanned work to correct an issue.",
+      "content": {
+        "type": "text",
+        "value": "The workflow specifies that if the [Excel file from QA contains issues], it leads to the creation of a 'FIX' ticket for Alonso.\n\nA ~new feature request~ would start the whole process over. A ~rejected PR~ is handled within the PR itself, not with a new ticket."
+      }
+    },
+    {
+      "cardId": "dev_workflow_047",
+      "category": "Tools",
+      "sentenceParts": {
+        "prefix": "The relationship between the .pks file and the .ildt file is that the .pks is the source, and the .ildt is the ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "generated output used for deployment", "isCorrect": true },
+        { "text": "manual backup of the .pks file", "isCorrect": false },
+        { "text": "documentation for the .pks file", "isCorrect": false }
+      ],
+      "correctAnswer": "The relationship between the .pks file and the .ildt file is that the .pks is the source, and the .ildt is the generated output used for deployment.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_047.mp3",
+      "hint": "One is human-readable (with annotations), the other is for a tool (ISG).",
+      "content": {
+        "type": "text",
+        "value": "Alonso writes annotations in the [PL/SQL package spec (.pks)], then a tool generates the [.ildt file]. David then deploys this generated file.\n\nIt is not a ~backup~ or ~documentation~, but a necessary artifact for the deployment process."
+      }
+    },
+    {
+      "cardId": "dev_workflow_048",
+      "category": "Roles & Responsibilities",
+      "sentenceParts": {
+        "prefix": "In the Iyalcomers workflow, who holds the ultimate authority on code quality? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "Sebastian, the Tech Lead", "isCorrect": true },
+        { "text": "Camila, the Product Owner", "isCorrect": false },
+        { "text": "The Manual QA Testers", "isCorrect": false }
+      ],
+      "correctAnswer": "In the Iyalcomers workflow, who holds the ultimate authority on code quality? Sebastian, the Tech Lead",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_048.mp3",
+      "hint": "This person's approval is required to merge any code.",
+      "content": {
+        "type": "text",
+        "value": "As the person who [reviews and approves all Pull Requests], Sebastian is the final arbiter of what constitutes acceptable code in the repository.\n\n~Camila~ is the authority on feature functionality. The ~QA team~ is the authority on user experience and functional correctness."
+      }
+    },
+    {
+      "cardId": "dev_workflow_049",
+      "category": "Phase 1: Request & Analysis",
+      "sentenceParts": {
+        "prefix": "The purpose of the meeting summary email sent by Maria is to ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "provide a written record and prevent future disagreements", "isCorrect": true },
+        { "text": "assign development tasks to Alonso", "isCorrect": false },
+        { "text": "request funding for the project from stakeholders", "isCorrect": false }
+      ],
+      "correctAnswer": "The purpose of the meeting summary email sent by Maria is to provide a written record and prevent future disagreements.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_049.mp3",
+      "hint": "It ensures everyone remembers the conversation the same way.",
+      "content": {
+        "type": "text",
+        "value": "The [summary email] acts as the official minutes of the meeting, creating alignment and a reference point for what was decided.\n\nTask ~assignment~ happens organically in the meeting. ~Funding requests~ would be a separate, more formal process."
+      }
+    },
+    {
+      "cardId": "dev_workflow_050",
+      "category": "Phase 5: Production",
+      "sentenceParts": {
+        "prefix": "The term 'Go-Live' refers to the moment when ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "the new feature becomes available to real users", "isCorrect": true },
+        { "text": "Alonso starts writing the first line of code", "isCorrect": false },
+        { "text": "the QA team starts their testing in UAT", "isCorrect": false }
+      ],
+      "correctAnswer": "The term 'Go-Live' refers to the moment when the new feature becomes available to real users.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_050.mp3",
+      "hint": "This is the final milestone of the entire lifecycle.",
+      "content": {
+        "type": "text",
+        "value": "[Go-Live] is the culmination of the entire process, where the PROD deployment is complete and the app store listings are updated.\n\n~Starting to code~ is the beginning of Phase 2. ~QA testing~ is Phase 5, but before production."
+      }
+    },
+    {
+      "cardId": "dev_workflow_051",
+      "category": "General Concepts",
+      "sentenceParts": {
+        "prefix": "A 'handoff' in this process, such as from Alonso to the 'Purple' team, is a critical point where ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "responsibility for a task is transferred", "isCorrect": true },
+        { "text": "the project is considered complete", "isCorrect": false },
+        { "text": "a new developer joins the team", "isCorrect": false }
+      ],
+      "correctAnswer": "A 'handoff' in this process, such as from Alonso to the 'Purple' team, is a critical point where responsibility for a task is transferred.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_051.mp3",
+      "hint": "Think of a relay race.",
+      "content": {
+        "type": "text",
+        "value": "A [handoff] is a transfer of ownership. When Alonso sends the deployment package, the responsibility for deployment moves to Laura and David.\n\nThe ~project is not complete~ until after many more handoffs. It's not related to ~new team members~."
+      }
+    },
+    {
+      "cardId": "dev_workflow_052",
+      "category": "Roles & Responsibilities",
+      "sentenceParts": {
+        "prefix": "What type of testing is NOT mentioned in the Iyalcomers workflow? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "Automated unit or integration testing", "isCorrect": true },
+        { "text": "Manual functional testing", "isCorrect": false },
+        { "text": "User Acceptance Testing (UAT)", "isCorrect": false }
+      ],
+      "correctAnswer": "What type of testing is NOT mentioned in the Iyalcomers workflow? Automated unit or integration testing",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_052.mp3",
+      "hint": "The QA process is described as entirely manual.",
+      "content": {
+        "type": "text",
+        "value": "The described process relies exclusively on [Manual QA Testers] performing [UAT]. There is no mention of developers writing ~automated tests~ (like unit tests) for their code.\n\n[Manual functional testing] is exactly what the QA team does."
+      }
+    },
+    {
+      "cardId": "dev_workflow_053",
+      "category": "Phase 4: UAT Deployment",
+      "sentenceParts": {
+        "prefix": "Deploying the .ildt file to the ISG repository has the effect of ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "publishing or updating the API endpoint", "isCorrect": true },
+        { "text": "compiling the Flutter application", "isCorrect": false },
+        { "text": "modifying data in the database tables", "isCorrect": false }
+      ],
+      "correctAnswer": "Deploying the .ildt file to the ISG repository has the effect of publishing or updating the API endpoint.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_053.mp3",
+      "hint": "This makes the web service available to be called.",
+      "content": {
+        "type": "text",
+        "value": "The [.ildt file] contains the service definition. Loading it into ISG makes the web service discoverable and callable by client applications.\n\n~Compiling Flutter~ produces an .apk/.ipa. ~Modifying data~ is done by running SQL scripts, which is Laura's job."
+      }
+    },
+    {
+      "cardId": "dev_workflow_054",
+      "category": "Phase 3: Review & Validation",
+      "sentenceParts": {
+        "prefix": "A Pull Request serves as a form of documentation because it ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "shows the history of code changes and review comments", "isCorrect": true },
+        { "text": "generates a user manual for the feature", "isCorrect": false },
+        { "text": "is stored in the same place as the QA Excel files", "isCorrect": false }
+      ],
+      "correctAnswer": "A Pull Request serves as a form of documentation because it shows the history of code changes and review comments.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_054.mp3",
+      "hint": "It tells the 'why' behind a code change.",
+      "content": {
+        "type": "text",
+        "value": "A well-written [Pull Request] provides context for a change. The discussion and review comments become a historical record that can be valuable for future developers.\n\nIt does not generate a ~user manual~ and is stored in ~Bitbucket~, not OneDrive."
+      }
+    },
+    {
+      "cardId": "dev_workflow_055",
+      "category": "General Concepts",
+      "sentenceParts": {
+        "prefix": "The term 'Full Stack' could be used to describe Alonso because he ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "works on the frontend, backend, and integration layers", "isCorrect": true },
+        { "text": "manages the entire project from start to finish", "isCorrect": false },
+        { "text": "is the only developer on the team", "isCorrect": false }
+      ],
+      "correctAnswer": "The term 'Full Stack' could be used to describe Alonso because he works on the frontend, backend, and integration layers.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_055.mp3",
+      "hint": "His work covers the Presentation, Application, and Database-facing logic.",
+      "content": {
+        "type": "text",
+        "value": "A [Full Stack developer] has expertise across the different tiers of an application: [Flutter (frontend)], [PL/SQL (backend)], and [ISG (integration)].\n\n~Maria~ manages the project. The document doesn't say if Alonso is the ~only developer~, just that he is the one in this story."
+      }
+    },
+    {
+      "cardId": "dev_workflow_056",
+      "category": "Phase 5: Final Testing",
+      "sentenceParts": {
+        "prefix": "If the QA team finds a bug, the development process ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "loops back to the development phase for a fix", "isCorrect": true },
+        { "text": "is immediately halted and the project is cancelled", "isCorrect": false },
+        { "text": "continues, and the bug is scheduled to be fixed in a future release", "isCorrect": false }
+      ],
+      "correctAnswer": "If the QA team finds a bug, the development process loops back to the development phase for a fix.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_056.mp3",
+      "hint": "The feedback loop involves creating a 'FIX' ticket.",
+      "content": {
+        "type": "text",
+        "value": "Finding bugs in UAT is expected. The process is designed to handle this by creating a [new 'FIX' ticket for Alonso], effectively re-starting a mini-cycle of Dev -> Review -> Deploy.\n\n~Cancelling the project~ is extreme. ~Ignoring the bug~ is not an option if the feature is to be released."
+      }
+    },
+    {
+      "cardId": "dev_workflow_057",
+      "category": "Roles & Responsibilities",
+      "sentenceParts": {
+        "prefix": "The person who has the most holistic view of a feature's journey from idea to deployment is ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "Maria, the Project Coordinator", "isCorrect": true },
+        { "text": "Alonso, the Developer", "isCorrect": false },
+        { "text": "Laura, the DBA", "isCorrect": false }
+      ],
+      "correctAnswer": "The person who has the most holistic view of a feature's journey from idea to deployment is Maria, the Project Coordinator.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_057.mp3",
+      "hint": "Who is involved at every single phase, from the first meeting to the final 'green light'?",
+      "content": {
+        "type": "text",
+        "value": "[Maria] is the common thread through the entire process. She schedules the initial meeting, is copied on the deployment request, notifies QA, and gives the final go-ahead.\n\n~Alonso~ and ~Laura~ have very deep but focused involvement in specific phases."
+      }
+    },
+    {
+      "cardId": "dev_workflow_058",
+      "category": "General Concepts",
+      "sentenceParts": {
+        "prefix": "The 'separation of duties' is demonstrated by the rule that ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "only the DBA is authorized to run scripts on production", "isCorrect": true },
+        { "text": "Alonso must create a new branch for every task", "isCorrect": false },
+        { "text": "Camila defines the requirements for a feature", "isCorrect": false }
+      ],
+      "correctAnswer": "The 'separation of duties' is demonstrated by the rule that only the DBA is authorized to run scripts on production.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_058.mp3",
+      "hint": "This is a key security and stability principle.",
+      "content": {
+        "type": "text",
+        "value": "[Separation of duties] means the person who writes the code (developer) is not the same person who deploys it to critical environments (DBA). This reduces risk.\n\n~Branching~ is a version control best practice. ~Defining requirements~ is a product management function."
+      }
+    },
+    {
+      "cardId": "dev_workflow_059",
+      "category": "Phase 5: Production",
+      "sentenceParts": {
+        "prefix": "After a successful production deployment, the process for the *next* feature ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "begins again at Phase 1 with a new requirement", "isCorrect": true },
+        { "text": "is paused for a one-week 'cool down' period", "isCorrect": false },
+        { "text": "is handled by a completely different team", "isCorrect": false }
+      ],
+      "correctAnswer": "After a successful production deployment, the process for the *next* feature begins again at Phase 1 with a new requirement.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_059.mp3",
+      "hint": "The lifecycle is cyclical.",
+      "content": {
+        "type": "text",
+        "value": "This entire workflow describes a [continuous cycle of development]. As soon as one feature is live, the process can start over for the next prioritized item.\n\nThere is no mention of a ~cool down~ period, and the ~same core team~ would likely handle the next feature."
+      }
+    },
+    {
+      "cardId": "dev_workflow_060",
+      "category": "Tools",
+      "sentenceParts": {
+        "prefix": "Bitbucket is to source code as OneDrive is to ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "project documentation and test results", "isCorrect": true },
+        { "text": "real-time team communication", "isCorrect": false },
+        { "text": "application deployment packages", "isCorrect": false }
+      ],
+      "correctAnswer": "Bitbucket is to source code as OneDrive is to project documentation and test results.",
+      "audioSrc": "public/data/audio/dev_workflow_01/dev_workflow_060.mp3",
+      "hint": "Each tool is used for a different type of file or artifact.",
+      "content": {
+        "type": "text",
+        "value": "[Bitbucket] is a specialized tool for managing code. [OneDrive] is a general-purpose file storage solution, used here for the QA Excel file.\n\n~Teams~ is used for communication. ~Deployment packages~ are sent via email in this workflow."
+      }
+    }
+    
+  ]
+}

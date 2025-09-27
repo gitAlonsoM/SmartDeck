@@ -1204,6 +1204,246 @@
       "type": "text",
       "value": "The administrator defines a user-friendly [API Alias] (e.g., 'create_sales_order') during the deployment step. This becomes part of the final REST/SOAP endpoint URL.\n\nThe ~Package Name~ is the internal PL/SQL object name. The ~.ildt file~ is part of the deployment process, not the final public name."
     }
+  },
+  {
+    "cardId": "ebs_061",
+    "category": "Architecture",
+    "sentenceParts": {
+      "prefix": "In system design, a 'Tier' describes a ",
+      "suffix": " separation of responsibilities."
+    },
+    "options": [
+      { "text": "physical hardware", "isCorrect": true },
+      { "text": "logical software", "isCorrect": false },
+      { "text": "network protocol", "isCorrect": false }
+    ],
+    "correctAnswer": "In system design, a 'Tier' describes a physical hardware separation of responsibilities.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_061.mp3",
+    "hint": "Think about where the software physically runs.",
+    "content": {
+      "type": "text",
+      "value": "A [Tier] refers to the physical machines where components are executed. The EBS 3-Tier architecture separates the user's PC (Client Tier), the application server (Application Tier), and the database server (Database Tier).\n\nA ~logical software~ separation is called a Layer."
+    }
+  },
+  {
+    "cardId": "ebs_062",
+    "category": "Architecture",
+    "sentenceParts": {
+      "prefix": "A 'Layer', on the other hand, describes a ",
+      "suffix": " organization of the code."
+    },
+    "options": [
+      { "text": "logical software", "isCorrect": true },
+      { "text": "physical server", "isCorrect": false },
+      { "text": "database table", "isCorrect": false }
+    ],
+    "correctAnswer": "A 'Layer', on the other hand, describes a logical software organization of the code.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_062.mp3",
+    "hint": "This is about how the code is structured, not where it runs.",
+    "content": {
+      "type": "text",
+      "value": "A [Layer] is a logical grouping of code by function. The Presentation Layer (UI), Business Logic Layer (business rules), and Data Access Layer (database interaction) are logical concepts.\n\nIn EBS, the Client Tier runs the Presentation Layer, and the Database Tier runs the Data Access Layer."
+    }
+  },
+  {
+    "cardId": "ebs_063",
+    "category": "Core Concepts",
+    "sentenceParts": {
+      "prefix": "In Oracle's Trading Community Architecture (TCA), a 'Party' is a master record representing ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "any unique entity, like a person or an organization", "isCorrect": true },
+      { "text": "only a customer", "isCorrect": false },
+      { "text": "only a supplier", "isCorrect": false }
+    ],
+    "correctAnswer": "In Oracle's Trading Community Architecture (TCA), a 'Party' is a master record representing any unique entity, like a person or an organization.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_063.mp3",
+    "hint": "This is the central 'who' record in the HZ_PARTIES table.",
+    "content": {
+      "type": "text",
+      "value": "A [Party] is the single source of truth for an entity. The same Party record can then be assigned multiple roles, such as being a ~customer~ (in HZ_CUST_ACCOUNTS) and a ~supplier~ (in AP_SUPPLIERS) simultaneously, which prevents data duplication."
+    }
+  },
+  {
+    "cardId": "ebs_064",
+    "category": "Core Concepts",
+    "sentenceParts": {
+      "prefix": "A 'Third Party' is an external entity that ",
+      "suffix": " a transaction between your company and another Party."
+    },
+    "options": [
+      { "text": "facilitates or enables", "isCorrect": true },
+      { "text": "is the main customer in", "isCorrect": false },
+      { "text": "approves", "isCorrect": false }
+    ],
+    "correctAnswer": "A 'Third Party' is an external entity that facilitates or enables a transaction between your company and another Party.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_064.mp3",
+    "hint": "This entity is not the buyer or seller, but an intermediary.",
+    "content": {
+      "type": "text",
+      "value": "A [Third Party] is an intermediary. A common example is a bank in a payment process. When your company pays a supplier, the bank is the third party that facilitates the electronic funds transfer.\n\nThe transaction is between you and the supplier, not ~directly involving the bank as a primary party~."
+    }
+  },
+  {
+    "cardId": "ebs_065",
+    "category": "Key Modules",
+    "sentenceParts": {
+      "prefix": "In EBS, a physical warehouse or distribution center is technically defined as an ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "Inventory Organization", "isCorrect": true },
+      { "text": "Item Master", "isCorrect": false },
+      { "text": "Storage Location", "isCorrect": false }
+    ],
+    "correctAnswer": "In EBS, a physical warehouse or distribution center is technically defined as an Inventory Organization.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_065.mp3",
+    "hint": "This structure is fundamental for the INV, PO, and OM modules.",
+    "content": {
+      "type": "text",
+      "value": "An [Inventory Organization] represents a facility that stores and transacts items. It allows a company to segregate stock physically and financially across different locations, like a central warehouse versus a production plant.\n\nThe ~Item Master~ defines the products, not the locations."
+    }
+  },
+  {
+    "cardId": "ebs_066",
+    "category": "Key Tables",
+    "sentenceParts": {
+      "prefix": "The exact quantity of an item available in a specific warehouse (Inventory Organization) is tracked in the ",
+      "suffix": " table."
+    },
+    "options": [
+      { "text": "MTL_ONHAND_QUANTITIES_DETAIL", "isCorrect": true },
+      { "text": "MTL_SYSTEM_ITEMS_B", "isCorrect": false },
+      { "text": "WSH_DELIVERY_DETAILS", "isCorrect": false }
+    ],
+    "correctAnswer": "The exact quantity of an item available in a specific warehouse (Inventory Organization) is tracked in the MTL_ONHAND_QUANTITIES_DETAIL table.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_066.mp3",
+    "hint": "This table links an item, a quantity, and an organization.",
+    "content": {
+      "type": "text",
+      "value": "The [MTL_ONHAND_QUANTITIES_DETAIL] table holds the real-time stock levels. It answers the question 'How much of product X do we have in warehouse Y?'.\n\n~MTL_SYSTEM_ITEMS_B~ is the item master that defines the product, but does not store its quantity."
+    }
+  },
+  {
+    "cardId": "ebs_067",
+    "category": "Core Concepts",
+    "sentenceParts": {
+      "prefix": "EBS is fundamentally an enterprise system designed for ",
+      "suffix": " transactions."
+    },
+    "options": [
+      { "text": "B2B (Business-to-Business)", "isCorrect": true },
+      { "text": "B2C (Business-to-Consumer)", "isCorrect": false },
+      { "text": "P2P (Peer-to-Peer)", "isCorrect": false }
+    ],
+    "correctAnswer": "EBS is fundamentally an enterprise system designed for B2B (Business-to-Business) transactions.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_067.mp3",
+    "hint": "Think about complex processes like purchase orders and corporate invoicing.",
+    "content": {
+      "type": "text",
+      "value": "The core processes of EBS, like Procure-to-Pay (PO/AP) and Order-to-Cash (OM/AR), are built for complex, high-value transactions between corporate entities, which is the definition of [B2B].\n\nIt is not optimized for the high-volume, low-value nature of ~B2C~ sales."
+    }
+  },
+  {
+    "cardId": "ebs_068",
+    "category": "Architecture",
+    "sentenceParts": {
+      "prefix": "To handle B2C sales, a company typically ",
+      "suffix": " and sends consolidated financial data to the general ledger."
+    },
+    "options": [
+      { "text": "integrates EBS with an e-commerce platform", "isCorrect": true },
+      { "text": "gives each consumer a direct login to EBS", "isCorrect": false },
+      { "text": "creates a new custom module from scratch", "isCorrect": false }
+    ],
+    "correctAnswer": "To handle B2C sales, a company typically integrates EBS with an e-commerce platform and sends consolidated financial data to the general ledger.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_068.mp3",
+    "hint": "EBS acts as the financial back-end, not the customer-facing storefront.",
+    "content": {
+      "type": "text",
+      "value": "The standard approach is to use a specialized front-end system (like an online store or Point-of-Sale) to manage B2C interactions. This system then [integrates with EBS], often treating the entire B2C sales channel as a single 'customer' for financial posting, rather than creating millions of ~individual consumer records~ in EBS."
+    }
+  },
+  {
+    "cardId": "ebs_069",
+    "category": "Database Objects",
+    "sentenceParts": {
+      "prefix": "A single row in a 'header' table, such as AP_INVOICES_ALL, represents ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "the summary and context of one complete transaction", "isCorrect": true },
+      { "text": "a detailed list of all products or services", "isCorrect": false },
+      { "text": "a user's security profile", "isCorrect": false }
+    ],
+    "correctAnswer": "A single row in a 'header' table, such as AP_INVOICES_ALL, represents the summary and context of one complete transaction.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_069.mp3",
+    "hint": "It answers who, when, where, and under what conditions.",
+    "content": {
+      "type": "text",
+      "value": "A [header row is the business document itself], without the specific line-item details. For an invoice, it contains the supplier, invoice date, payment terms, and total amount. It establishes the overall agreement.\n\nThe ~detailed list of products~ is stored in the corresponding 'lines' table (e.g., AP_INVOICE_LINES_ALL)."
+    }
+  },
+  {
+    "cardId": "ebs_070",
+    "category": "Database Objects",
+    "sentenceParts": {
+      "prefix": "The header row acts as the 'contract' or context, while the line rows provide the ",
+      "suffix": " of that contract."
+    },
+    "options": [
+      { "text": "specific details", "isCorrect": true },
+      { "text": "approval history", "isCorrect": false },
+      { "text": "payment schedule", "isCorrect": false }
+    ],
+    "correctAnswer": "The header row acts as the 'contract' or context, while the line rows provide the specific details of that contract.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_070.mp3",
+    "hint": "Think of the header as the document cover page and the lines as the pages inside.",
+    "content": {
+      "type": "text",
+      "value": "The header establishes the agreement (e.g., we are buying from supplier X on date Y). The lines then provide [the specific details] (e.g., we are buying 10 units of item A at price Z).\n\nThis separation is key to database design."
+    }
+  },
+  {
+    "cardId": "ebs_071",
+    "category": "Database Objects",
+    "sentenceParts": {
+      "prefix": "From a technical perspective, separating data into header and line tables is critical to ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "prevent massive data redundancy and ensure integrity", "isCorrect": true },
+      { "text": "make the user interface load faster", "isCorrect": false },
+      { "text": "encrypt sensitive information", "isCorrect": false }
+    ],
+    "correctAnswer": "From a technical perspective, separating data into header and line tables is critical to prevent massive data redundancy and ensure integrity.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_071.mp3",
+    "hint": "What if you had to repeat the supplier name and order date on all 50 lines of a purchase order?",
+    "content": {
+      "type": "text",
+      "value": "With this model, shared information (like supplier, date, currency) is stored only once in the header. This [prevents redundancy and ensures data integrity], because if a change is needed (e.g., update the date), it only needs to be done in one place.\n\nWithout it, you would risk ~inconsistent data~ across many line rows."
+    }
+  },
+  {
+    "cardId": "ebs_072",
+    "category": "Core Concepts",
+    "sentenceParts": {
+      "prefix": "From a functional perspective, the header is important because business processes like approvals ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "are applied to the header as a single unit of work", "isCorrect": true },
+      { "text": "must be applied to each line individually", "isCorrect": false },
+      { "text": "are handled by a different module", "isCorrect": false }
+    ],
+    "correctAnswer": "From a functional perspective, the header is important because business processes like approvals are applied to the header as a single unit of work.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_072.mp3",
+    "hint": "You approve the entire purchase order, not each item on it one by one.",
+    "content": {
+      "type": "text",
+      "value": "The header acts as [the anchor for the entire business process]. The PO_HEADER_ID is what the system tracks for status (e.g., Incomplete, Approved, Closed). It would be impractical to manage the lifecycle of ~each individual line~ separately."
+    }
   }
   ]
 }
