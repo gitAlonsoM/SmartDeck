@@ -1,0 +1,1209 @@
+{
+  "id": "ebs_concepts_01",
+  "name": "Oracle EBS: Core Concepts",
+  "description": "Master the fundamental architecture, components, and concepts of Oracle E-Business Suite. From the 3-Tier model to key database objects, this deck covers the essentials for any EBS professional.",
+  "deckType": "audioChoice",
+  "isAiGenerated": false,
+  "cards": [
+    {
+      "cardId": "ebs_001",
+      "category": "Core Concepts",
+      "sentenceParts": {
+        "prefix": "An ERP system is primarily designed to ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "integrate a company's operations into a single platform", "isCorrect": true },
+        { "text": "manage only a company's financial data", "isCorrect": false },
+        { "text": "act as a standalone customer relationship tool", "isCorrect": false }
+      ],
+      "correctAnswer": "An ERP system is primarily designed to integrate a company's operations into a single platform.",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_001.mp3",
+      "hint": "Think about breaking down information 'silos'.",
+      "content": {
+        "type": "text",
+        "value": "The main goal of an [Enterprise Resource Planning (ERP)] system is to create a single source of truth for the entire company.\n\nIt is designed to break down information silos between departments, not just ~manage financial data~ or act as a ~standalone CRM~."
+      }
+    },
+    {
+      "cardId": "ebs_002",
+      "category": "Architecture",
+      "sentenceParts": {
+        "prefix": "The EBS 3-Tier Architecture consists of the Client Tier, the Application Tier, and the ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "Database Tier", "isCorrect": true },
+        { "text": "Network Tier", "isCorrect": false },
+        { "text": "Security Tier", "isCorrect": false }
+      ],
+      "correctAnswer": "The EBS 3-Tier Architecture consists of the Client Tier, the Application Tier, and the Database Tier.",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_002.mp3",
+      "hint": "Where is all the company's data permanently stored?",
+      "content": {
+        "type": "text",
+        "value": "The three distinct logical levels are the [Client Tier] (UI), the [Application Tier] (business logic), and the [Database Tier] (data storage).\n\nA ~Network Tier~ is part of the physical infrastructure but not a logical application layer, and ~Security~ is a cross-cutting concern applied to all three tiers."
+      }
+    },
+    {
+      "cardId": "ebs_003",
+      "category": "Database Objects",
+      "sentenceParts": {
+        "prefix": "What is the primary function of the APPS schema in the EBS database? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "To own all the application code (PL/SQL packages, views)", "isCorrect": true },
+        { "text": "To store all transactional data tables", "isCorrect": false },
+        { "text": "To manage user authentication and passwords", "isCorrect": false }
+      ],
+      "correctAnswer": "What is the primary function of the APPS schema in the EBS database? To own all the application code (PL/SQL packages, views)",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_003.mp3",
+      "hint": "This schema acts as a super-user for the code, but not for the data itself.",
+      "content": {
+        "type": "text",
+        "value": "The [APPS schema] is a powerful schema that owns all the application logic. It accesses data tables in other schemas via Synonyms.\n\nTransactional data is stored in data schemas like ~AP~ or ~INV~, and user data is primarily in the ~FND~ schema's tables."
+      }
+    },
+    {
+      "cardId": "ebs_004",
+      "category": "Application Tier",
+      "sentenceParts": {
+        "prefix": "Which Application Tier component is responsible for running background jobs like reports and data processing scripts? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "The Concurrent Manager", "isCorrect": true },
+        { "text": "The Forms Server", "isCorrect": false },
+        { "text": "The Web Server", "isCorrect": false }
+      ],
+      "correctAnswer": "Which Application Tier component is responsible for running background jobs like reports and data processing scripts? The Concurrent Manager",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_004.mp3",
+      "hint": "Think of tasks that need to run asynchronously, without locking a user's screen.",
+      "content": {
+        "type": "text",
+        "value": "The [Concurrent Manager] is the backend processing engine for asynchronous tasks. Users submit a request for a Concurrent Program to run, and the manager handles its execution.\n\nThe ~Forms Server~ manages user sessions for Oracle Forms, while the ~Web Server~ handles HTTP requests for web pages."
+      }
+    },
+    {
+      "cardId": "ebs_005",
+      "category": "Key Modules",
+      "sentenceParts": {
+        "prefix": "The 'AP' module in Oracle EBS is used to manage ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "money owed to suppliers", "isCorrect": true },
+        { "text": "money owed by customers", "isCorrect": false },
+        { "text": "product stock levels", "isCorrect": false }
+      ],
+      "correctAnswer": "The 'AP' module in Oracle EBS is used to manage money owed to suppliers.",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_005.mp3",
+      "hint": "What does 'P' stand for in AP?",
+      "content": {
+        "type": "text",
+        "value": "[AP] stands for Accounts Payable, which handles all processes related to suppliers, such as creating invoices and making payments.\n\nMoney owed by customers is managed by ~AR (Accounts Receivable)~, and stock levels are tracked in ~INV (Inventory)~."
+      }
+    },
+    {
+      "cardId": "ebs_006",
+      "category": "Database Objects",
+      "sentenceParts": {
+        "prefix": "In the EBS database, what is the purpose of a Synonym? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "To act as a pointer, allowing the APPS schema to access tables in other schemas", "isCorrect": true },
+        { "text": "To improve query performance on large tables", "isCorrect": false },
+        { "text": "To store business logic and procedures", "isCorrect": false }
+      ],
+      "correctAnswer": "In the EBS database, what is the purpose of a Synonym? To act as a pointer, allowing the APPS schema to access tables in other schemas",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_006.mp3",
+      "hint": "It's like a shortcut, so developers don't need to specify the table owner.",
+      "content": {
+        "type": "text",
+        "value": "[Synonyms] are crucial for the APPS schema's design. For a table like PO.PO_HEADERS_ALL, a synonym named PO_HEADERS_ALL exists in APPS, so code can just reference the synonym.\n\n~Indexes~ are used for performance, and ~PL/SQL Packages~ store business logic."
+      }
+    },
+    {
+      "cardId": "ebs_007",
+      "category": "Client Tier",
+      "sentenceParts": {
+        "prefix": "The user interface technology in EBS that renders as a Java Applet on the user's PC is known as ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "Oracle Forms", "isCorrect": true },
+        { "text": "OAF Pages", "isCorrect": false },
+        { "text": "Oracle iStore", "isCorrect": false }
+      ],
+      "correctAnswer": "The user interface technology in EBS that renders as a Java Applet on the user's PC is known as Oracle Forms.",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_007.mp3",
+      "hint": "This is the most common interface for heavy, back-office transactional work.",
+      "content": {
+        "type": "text",
+        "value": "[Oracle Forms] is the primary interface for core Finance and Supply Chain modules, optimized for high-speed data entry.\n\n~OAF Pages~ and ~Oracle iStore~ are web-based and render as standard HTML in a browser, not as a Java Applet."
+      }
+    },
+    {
+      "cardId": "ebs_008",
+      "category": "AOL Concepts",
+      "sentenceParts": {
+        "prefix": "The main security mechanism in EBS that defines what a user can see and do is called a ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "Responsibility", "isCorrect": true },
+        { "text": "Flexfield", "isCorrect": false },
+        { "text": "Concurrent Program", "isCorrect": false }
+      ],
+      "correctAnswer": "The main security mechanism in EBS that defines what a user can see and do is called a Responsibility.",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_008.mp3",
+      "hint": "It's like the 'badge' or 'role' assigned to a user.",
+      "content": {
+        "type": "text",
+        "value": "A [Responsibility] controls which screens, reports, and data a user can access. A user can have multiple responsibilities.\n\nA ~Flexfield~ is a configurable field, and a ~Concurrent Program~ is a background job. Neither controls user access directly."
+      }
+    },
+    {
+      "cardId": "ebs_009",
+      "category": "Application Tier",
+      "sentenceParts": {
+        "prefix": "What is the role of the Integrated SOA Gateway (ISG)? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "To expose internal PL/SQL business logic as modern REST/SOAP APIs", "isCorrect": true },
+        { "text": "To manage the lifecycle of Oracle Forms user sessions", "isCorrect": false },
+        { "text": "To run the Java-based logic for OAF pages", "isCorrect": false }
+      ],
+      "correctAnswer": "What is the role of the Integrated SOA Gateway (ISG)? To expose internal PL/SQL business logic as modern REST/SOAP APIs",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_009.mp3",
+      "hint": "It acts as a secure bridge between the internal EBS world and external applications.",
+      "content": {
+        "type": "text",
+        "value": "[ISG] acts as a native API Gateway, allowing developers to safely expose trusted business logic without writing a web service from scratch.\n\nThe ~Forms Server~ handles Forms sessions, and the ~Java Application Server (WebLogic)~ runs OAF pages."
+      }
+    },
+    {
+      "cardId": "ebs_010",
+      "category": "Key Tables",
+      "sentenceParts": {
+        "prefix": "Which standard EBS table is the master repository for all products/items the company handles? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "MTL_SYSTEM_ITEMS_B", "isCorrect": true },
+        { "text": "PO_LINES_ALL", "isCorrect": false },
+        { "text": "AP_SUPPLIERS", "isCorrect": false }
+      ],
+      "correctAnswer": "Which standard EBS table is the master repository for all products/items the company handles? MTL_SYSTEM_ITEMS_B",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_010.mp3",
+      "hint": "MTL is the prefix for Manufacturing and Distribution, often related to Inventory (INV).",
+      "content": {
+        "type": "text",
+        "value": "The [MTL_SYSTEM_ITEMS_B] table is the Item Master. It defines every product, its attributes, and its status.\n\n~PO_LINES_ALL~ stores purchase order lines, and ~AP_SUPPLIERS~ is the master table for supplier information."
+      }
+    },
+    {
+      "cardId": "ebs_011",
+      "category": "Key Packages",
+      "sentenceParts": {
+        "prefix": "Which PL/SQL package is fundamental for initializing the application context (user, responsibility, etc.)? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "FND_GLOBAL", "isCorrect": true },
+        { "text": "OE_ORDER_PUB", "isCorrect": false },
+        { "text": "FND_REQUEST", "isCorrect": false }
+      ],
+      "correctAnswer": "Which PL/SQL package is fundamental for initializing the application context (user, responsibility, etc.)? FND_GLOBAL",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_011.mp3",
+      "hint": "This is often the first thing called in any custom integration or script.",
+      "content": {
+        "type": "text",
+        "value": "[FND_GLOBAL] contains procedures to set session context, which is mandatory for most EBS APIs to work correctly.\n\n~OE_ORDER_PUB~ is the public API for Sales Orders, and ~FND_REQUEST~ is used to submit Concurrent Programs."
+      }
+    },
+    {
+      "cardId": "ebs_012",
+      "category": "Database Tier",
+      "sentenceParts": {
+        "prefix": "Most of the business logic in Oracle E-Business Suite is written in ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "PL/SQL", "isCorrect": true },
+        { "text": "Java", "isCorrect": false },
+        { "text": "C++", "isCorrect": false }
+      ],
+      "correctAnswer": "Most of the business logic in Oracle E-Business Suite is written in PL/SQL.",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_012.mp3",
+      "hint": "This language runs directly inside the Oracle Database for maximum efficiency.",
+      "content": {
+        "type": "text",
+        "value": "[PL/SQL] is the procedural language extension for SQL and is where the vast majority of EBS's core logic resides.\n\n~Java~ is used for some components like OAF pages, but not for the core business rules. ~C++~ is not a primary language for EBS application logic."
+      }
+    },
+    {
+      "cardId": "ebs_013",
+      "category": "Key Tables",
+      "sentenceParts": {
+        "prefix": "Supplier invoice header information is stored in which table? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "AP_INVOICES_ALL", "isCorrect": true },
+        { "text": "PO_HEADERS_ALL", "isCorrect": false },
+        { "text": "OE_ORDER_HEADERS_ALL", "isCorrect": false }
+      ],
+      "correctAnswer": "Supplier invoice header information is stored in which table? AP_INVOICES_ALL",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_013.mp3",
+      "hint": "Look for the table related to the Accounts Payable (AP) module.",
+      "content": {
+        "type": "text",
+        "value": "The [AP_INVOICES_ALL] table is the main repository for supplier invoice headers.\n\n~PO_HEADERS_ALL~ stores Purchase Order headers, and ~OE_ORDER_HEADERS_ALL~ stores Sales Order headers."
+      }
+    },
+    {
+      "cardId": "ebs_014",
+      "category": "AOL Concepts",
+      "sentenceParts": {
+        "prefix": "What is a Flexfield? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "A configurable field used to adapt the system without changing code", "isCorrect": true },
+        { "text": "A security rule that restricts data access", "isCorrect": false },
+        { "text": "A type of PL/SQL package for public integrations", "isCorrect": false }
+      ],
+      "correctAnswer": "What is a Flexfield? A configurable field used to adapt the system without changing code",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_014.mp3",
+      "hint": "Think of it as adding extra, structured fields to a screen for your company's specific needs.",
+      "content": {
+        "type": "text",
+        "value": "[Flexfields] (KFF/DFF) are a key feature of AOL, allowing consultants to add custom data fields to meet business requirements without expensive code modifications.\n\nA ~security rule~ is usually part of a Responsibility, and a ~public integration package~ is an API."
+      }
+    },
+    {
+      "cardId": "ebs_015",
+      "category": "Core Concepts",
+      "sentenceParts": {
+        "prefix": "Is Oracle E-Business Suite (EBS) a SaaS (Software as a Service) product? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "No, it is traditionally an On-Premise software", "isCorrect": true },
+        { "text": "Yes, it is a fully cloud-based subscription service", "isCorrect": false },
+        { "text": "Only the database tier is SaaS, the application is On-Premise", "isCorrect": false }
+      ],
+      "correctAnswer": "Is Oracle E-Business Suite (EBS) a SaaS (Software as a Service) product? No, it is traditionally an On-Premise software",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_015.mp3",
+      "hint": "Consider who is responsible for the servers and maintenance: the company or Oracle?",
+      "content": {
+        "type": "text",
+        "value": "[EBS is On-Premise], meaning the company buys the licenses and is responsible for all hardware and maintenance.\n\nOracle's modern SaaS alternative is a different product called ~Oracle Fusion Cloud ERP~."
+      }
+    },
+    {
+      "cardId": "ebs_016",
+      "category": "Key Modules",
+      "sentenceParts": {
+        "prefix": "The Order Management (OM) module in EBS is identified by the schema prefix ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "OE", "isCorrect": true },
+        { "text": "PO", "isCorrect": false },
+        { "text": "AR", "isCorrect": false }
+      ],
+      "correctAnswer": "The Order Management (OM) module in EBS is identified by the schema prefix OE.",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_016.mp3",
+      "hint": "Think of the process of creating a sales order.",
+      "content": {
+        "type": "text",
+        "value": "The prefix for Order Management is [OE], which stands for Order Entry.\n\n~PO~ stands for Purchasing, and ~AR~ stands for Accounts Receivable."
+      }
+    },
+    {
+      "cardId": "ebs_017",
+      "category": "Database Objects",
+      "sentenceParts": {
+        "prefix": "What is a 'Public API' (e.g., a package ending in _PUB) in the context of EBS? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "A PL/SQL package designed and supported by Oracle for integrations", "isCorrect": true },
+        { "text": "Any PL/SQL package that is accessible to all database users", "isCorrect": false },
+        { "text": "A REST service automatically generated by the database", "isCorrect": false }
+      ],
+      "correctAnswer": "What is a 'Public API' (e.g., a package ending in _PUB) in the context of EBS? A PL/SQL package designed and supported by Oracle for integrations",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_017.mp3",
+      "hint": "Using these is the safest way to perform data modifications.",
+      "content": {
+        "type": "text",
+        "value": "[Public APIs] are the Oracle-supported way to create or modify data. They contain all the necessary business logic and validations, preventing data corruption.\n\nDirectly inserting into tables is ~highly discouraged~ as it bypasses this critical logic."
+      }
+    },
+    {
+      "cardId": "ebs_018",
+      "category": "Key Tables",
+      "sentenceParts": {
+        "prefix": "User account information, such as usernames and encrypted passwords, are stored in the ",
+        "suffix": " table."
+      },
+      "options": [
+        { "text": "FND_USER", "isCorrect": true },
+        { "text": "AP_SUPPLIERS", "isCorrect": false },
+        { "text": "HZ_PARTIES", "isCorrect": false }
+      ],
+      "correctAnswer": "User account information, such as usernames and encrypted passwords, are stored in the FND_USER table.",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_018.mp3",
+      "hint": "This table is part of the Application Object Library (AOL) foundation.",
+      "content": {
+        "type": "text",
+        "value": "The [FND_USER] table is the master table for application users who can log into the system.\n\n~AP_SUPPLIERS~ stores supplier data, and ~HZ_PARTIES~ is part of the Trading Community Architecture (TCA) for customers and other entities."
+      }
+    },
+    {
+      "cardId": "ebs_019",
+      "category": "Architecture",
+      "sentenceParts": {
+        "prefix": "Which tier's only function is to display the user interface and capture user interactions? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "Client Tier", "isCorrect": true },
+        { "text": "Application Tier", "isCorrect": false },
+        { "text": "Database Tier", "isCorrect": false }
+      ],
+      "correctAnswer": "Which tier's only function is to display the user interface and capture user interactions? Client Tier",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_019.mp3",
+      "hint": "This is often called a 'thin client'.",
+      "content": {
+        "type": "text",
+        "value": "The [Client Tier] is the user's window into the application. All the business logic resides in the tiers behind it.\n\nThe ~Application Tier~ executes the logic, and the ~Database Tier~ stores the data and runs PL/SQL code."
+      }
+    },
+    {
+      "cardId": "ebs_020",
+      "category": "Client Tier",
+      "sentenceParts": {
+        "prefix": "Self-Service modules like iProcurement and SSHR are typically built using ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "OAF Pages", "isCorrect": true },
+        { "text": "Oracle Forms", "isCorrect": false },
+        { "text": "WebLogic Server", "isCorrect": false }
+      ],
+      "correctAnswer": "Self-Service modules like iProcurement and SSHR are typically built using OAF Pages.",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_020.mp3",
+      "hint": "This technology renders as standard HTML in a web browser.",
+      "content": {
+        "type": "text",
+        "value": "[OAF (Oracle Application Framework)] is the dominant technology for manager- and employee-facing self-service web pages.\n\n~Oracle Forms~ is used for back-office functions. ~WebLogic Server~ is the application server that hosts OAF pages, but it's not the UI technology itself."
+      }
+    },
+    {
+      "cardId": "ebs_021",
+      "category": "Key Modules",
+      "sentenceParts": {
+        "prefix": "The module for managing the entire sales order lifecycle, from creation to shipping, is ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "Order Management (OM)", "isCorrect": true },
+        { "text": "Purchasing (PO)", "isCorrect": false },
+        { "text": "General Ledger (GL)", "isCorrect": false }
+      ],
+      "correctAnswer": "The module for managing the entire sales order lifecycle, from creation to shipping, is Order Management (OM).",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_021.mp3",
+      "hint": "This module's schema is OE (Order Entry).",
+      "content": {
+        "type": "text",
+        "value": "[Order Management (OM)] handles the customer-facing sales process.\n\n~Purchasing (PO)~ manages the process of buying goods from suppliers. ~General Ledger (GL)~ is the central accounting module."
+      }
+    },
+    {
+      "cardId": "ebs_022",
+      "category": "ISG Deployment",
+      "sentenceParts": {
+        "prefix": "To deploy a PL/SQL package as a web service via ISG, a developer first annotates the .pls file, then generates a ",
+        "suffix": " file."
+      },
+      "options": [
+        { "text": ".ildt (Interface Language Definition Table)", "isCorrect": true },
+        { "text": ".jar (Java Archive)", "isCorrect": false },
+        { "text": ".xml (Extensible Markup Language)", "isCorrect": false }
+      ],
+      "correctAnswer": "To deploy a PL/SQL package as a web service via ISG, a developer first annotates the .pls file, then generates a .ildt (Interface Language Definition Table) file.",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_022.mp3",
+      "hint": "This text file contains the service's metadata in a format EBS tools can understand.",
+      "content": {
+        "type": "text",
+        "value": "The deployment flow is: Annotate .pls -> Generate [.ildt] -> Load .ildt with FNDLOAD -> Deploy in EBS.\n\nAn ~XML~ file might be used for the web service payload, but the definition file itself is the .ildt. A ~.jar~ file is for Java code, not PL/SQL service definitions."
+      }
+    },
+    {
+      "cardId": "ebs_023",
+      "category": "Database Objects",
+      "sentenceParts": {
+        "prefix": "What is the key purpose of an Index in the EBS database? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "To dramatically speed up data retrieval operations", "isCorrect": true },
+        { "text": "To enforce business rules and data integrity", "isCorrect": false },
+        { "text": "To combine data from multiple tables into a single virtual table", "isCorrect": false }
+      ],
+      "correctAnswer": "What is the key purpose of an Index in the EBS database? To dramatically speed up data retrieval operations",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_023.mp3",
+      "hint": "Without these, finding one record in a table with billions of rows would take hours.",
+      "content": {
+        "type": "text",
+        "value": "[Indexes] are auxiliary data structures linked to tables that are crucial for performance.\n\n~Triggers or Constraints~ are used to enforce business rules. A ~View~ is used to combine data from multiple tables."
+      }
+    },
+    {
+      "cardId": "ebs_024",
+      "category": "Key Tables",
+      "sentenceParts": {
+        "prefix": "The master tables for customer data (like accounts and parties) are part of the ",
+        "suffix": " model."
+      },
+      "options": [
+        { "text": "TCA (Trading Community Architecture)", "isCorrect": true },
+        { "text": "AOL (Application Object Library)", "isCorrect": false },
+        { "text": "OM (Order Management)", "isCorrect": false }
+      ],
+      "correctAnswer": "The master tables for customer data (like accounts and parties) are part of the TCA (Trading Community Architecture) model.",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_024.mp3",
+      "hint": "This architecture has tables with the HZ prefix, like HZ_PARTIES.",
+      "content": {
+        "type": "text",
+        "value": "[TCA] is a complex data model that provides a central, global repository for information about all members of a trading community (customers, suppliers, partners, etc.).\n\n~AOL~ is the technical foundation, and ~OM~ is the sales order module."
+      }
+    },
+    {
+      "cardId": "ebs_025",
+      "category": "Application Tier",
+      "sentenceParts": {
+        "prefix": "The Java Application Server that acts as the engine for the Application Tier and hosts ISG is ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "WebLogic Server (WLS)", "isCorrect": true },
+        { "text": "Apache Tomcat", "isCorrect": false },
+        { "text": "Oracle Forms Server", "isCorrect": false }
+      ],
+      "correctAnswer": "The Java Application Server that acts as the engine for the Application Tier and hosts ISG is WebLogic Server (WLS).",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_025.mp3",
+      "hint": "This is Oracle's strategic Java EE server.",
+      "content": {
+        "type": "text",
+        "value": "[WebLogic Server] is the core Java engine in modern EBS versions. It handles OAF pages, web services, and other Java-based components.\n\n~Apache Tomcat~ is a different Java servlet container. The ~Oracle Forms Server~ is a separate component specifically for running Forms applications."
+      }
+    },
+    {
+      "cardId": "ebs_026",
+      "category": "Key Packages",
+      "sentenceParts": {
+        "prefix": "To launch a Concurrent Program from within PL/SQL code, a developer would use the ",
+        "suffix": " package."
+      },
+      "options": [
+        { "text": "FND_REQUEST", "isCorrect": true },
+        { "text": "HR_EMPLOYEE_API", "isCorrect": false },
+        { "text": "FND_GLOBAL", "isCorrect": false }
+      ],
+      "correctAnswer": "To launch a Concurrent Program from within PL/SQL code, a developer would use the FND_REQUEST package.",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_026.mp3",
+      "hint": "Think of 'submitting a request' to the Concurrent Manager.",
+      "content": {
+        "type": "text",
+        "value": "The [FND_REQUEST.SUBMIT_REQUEST] function is the standard API for launching background jobs programmatically.\n\n~HR_EMPLOYEE_API~ is for managing employee data. ~FND_GLOBAL~ is used to set the session context before submitting the request."
+      }
+    },
+    {
+      "cardId": "ebs_027",
+      "category": "Key Modules",
+      "sentenceParts": {
+        "prefix": "Which module tracks and manages product stock in warehouses? ",
+        "suffix": ""
+      },
+      "options": [
+        { "text": "Inventory (INV)", "isCorrect": true },
+        { "text": "Purchasing (PO)", "isCorrect": false },
+        { "text": "General Ledger (GL)", "isCorrect": false }
+      ],
+      "correctAnswer": "Which module tracks and manages product stock in warehouses? Inventory (INV)",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_027.mp3",
+      "hint": "This module is tightly integrated with both purchasing (receiving goods) and order management (shipping goods).",
+      "content": {
+        "type": "text",
+        "value": "The [Inventory (INV)] module is the central hub for all item quantities, locations, and movements.\n\n~Purchasing (PO)~ creates orders to acquire items, and ~General Ledger (GL)~ tracks the financial value of the inventory."
+      }
+    },
+    {
+      "cardId": "ebs_028",
+      "category": "Database Objects",
+      "sentenceParts": {
+        "prefix": "A stored SQL query that acts like a 'virtual table' to simplify data access or apply security is a ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "View", "isCorrect": true },
+        { "text": "Synonym", "isCorrect": false },
+        { "text": "Index", "isCorrect": false }
+      ],
+      "correctAnswer": "A stored SQL query that acts like a 'virtual table' to simplify data access or apply security is a View.",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_028.mp3",
+      "hint": "It can join 10 tables together, but to the user, it looks like a single table.",
+      "content": {
+        "type": "text",
+        "value": "[Views] are used extensively in EBS to present complex data in a simple format and to enforce data security rules.\n\nA ~Synonym~ is a pointer to another object. An ~Index~ is a performance-tuning structure."
+      }
+    },
+    {
+      "cardId": "ebs_029",
+      "category": "AOL Concepts",
+      "sentenceParts": {
+        "prefix": "The underlying technical framework on which all EBS modules are built is the ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "Application Object Library (AOL)", "isCorrect": true },
+        { "text": "Trading Community Architecture (TCA)", "isCorrect": false },
+        { "text": "Integrated SOA Gateway (ISG)", "isCorrect": false }
+      ],
+      "correctAnswer": "The underlying technical framework on which all EBS modules are built is the Application Object Library (AOL).",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_029.mp3",
+      "hint": "It provides common elements like security, menus, and concurrent processing.",
+      "content": {
+        "type": "text",
+        "value": "[AOL] is the foundation that provides shared services and components (like Flexfields and Responsibilities) used by all other modules.\n\n~TCA~ is the data model for parties. ~ISG~ is the API gateway."
+      }
+    },
+    {
+      "cardId": "ebs_030",
+      "category": "Core Concepts",
+      "sentenceParts": {
+        "prefix": "The main strength of EBS is the ",
+        "suffix": " between its modules."
+      },
+      "options": [
+        { "text": "total native integration", "isCorrect": true },
+        { "text": "modern user interface", "isCorrect": false },
+        { "text": "ease of customization", "isCorrect": false }
+      ],
+      "correctAnswer": "The main strength of EBS is the total native integration between its modules.",
+      "audioSrc": "public/data/audio/ebs_concepts_01/ebs_030.mp3",
+      "hint": "An event in one module automatically triggers the correct responses in all others.",
+      "content": {
+        "type": "text",
+        "value": "The [seamless connection] between modules is EBS's core value. An action in one area (e.g., shipping an order in OM) automatically updates other areas (e.g., stock levels in INV and financials in GL) without fragile interfaces.\n\nWhile functional, its ~UI is not considered modern~, and ~customization can be complex~."
+    }
+  },
+  {
+    "cardId": "ebs_031",
+    "category": "ISG Deployment",
+    "sentenceParts": {
+      "prefix": "What is the very first step a developer takes to expose a PL/SQL package using ISG? ",
+      "suffix": ""
+    },
+    "options": [
+      { "text": "Add special comments (annotations) to the package specification file (.pls)", "isCorrect": true },
+      { "text": "Write a Java wrapper class for the package", "isCorrect": false },
+      { "text": "Register the package directly in the WebLogic console", "isCorrect": false }
+    ],
+    "correctAnswer": "What is the very first step a developer takes to expose a PL/SQL package using ISG? Add special comments (annotations) to the package specification file (.pls)",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_031.mp3",
+    "hint": "The process starts by modifying the existing PL/SQL code, not with external tools.",
+    "content": {
+      "type": "text",
+      "value": "The entire ISG process begins by [annotating the PL/SQL package specification (.pls file)]. This tells ISG which procedures to expose and their parameters.\n\nWriting a ~Java wrapper~ or using the ~WebLogic console directly~ are not part of the standard ISG PL/SQL deployment flow."
+    }
+  },
+  {
+    "cardId": "ebs_032",
+    "category": "ISG Deployment",
+    "sentenceParts": {
+      "prefix": "After annotating the .pls file, an Oracle utility generates a text file with the service's metadata. This file has a ",
+      "suffix": " extension."
+    },
+    "options": [
+      { "text": ".ildt", "isCorrect": true },
+      { "text": ".wsdl", "isCorrect": false },
+      { "text": ".json", "isCorrect": false }
+    ],
+    "correctAnswer": "After annotating the .pls file, an Oracle utility generates a text file with the service's metadata. This file has a .ildt extension.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_032.mp3",
+    "hint": "The file is an Interface Language Definition Table.",
+    "content": {
+      "type": "text",
+      "value": "The utility parses the annotations to produce an [.ildt file]. This file is then loaded into the AOL metadata tables.\n\nWhile a ~WSDL~ or ~JSON schema~ describes a web service, the specific intermediate file used by EBS tools is the .ildt."
+    }
+  },
+  {
+    "cardId": "ebs_033",
+    "category": "ISG Deployment",
+    "sentenceParts": {
+      "prefix": "Which command-line utility is used to load the .ildt file into the AOL metadata tables? ",
+      "suffix": ""
+    },
+    "options": [
+      { "text": "FNDLOAD", "isCorrect": true },
+      { "text": "SQLLOADER", "isCorrect": false },
+      { "text": "WEBLOGIC.SH", "isCorrect": false }
+    ],
+    "correctAnswer": "Which command-line utility is used to load the .ildt file into the AOL metadata tables? FNDLOAD",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_033.mp3",
+    "hint": "This is a standard AOL utility for moving setup data.",
+    "content": {
+      "type": "text",
+      "value": "[FNDLOAD] is a powerful utility used to download and upload Application Object Library data, including ISG service definitions.\n\n~SQLLOADER~ is a general database utility for loading data into tables, not specific AOL metadata. ~WEBLOGIC.SH~ is a script for managing WebLogic."
+    }
+  },
+  {
+    "cardId": "ebs_034",
+    "category": "ISG Deployment",
+    "sentenceParts": {
+      "prefix": "The final step to activate an ISG service, done by an administrator in the EBS interface, is to find the service and click '",
+      "suffix": "'."
+    },
+    "options": [
+      { "text": "Deploy", "isCorrect": true },
+      { "text": "Compile", "isCorrect": false },
+      { "text": "Execute", "isCorrect": false }
+    ],
+    "correctAnswer": "The final step to activate an ISG service, done by an administrator in the EBS interface, is to find the service and click 'Deploy'.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_034.mp3",
+    "hint": "This action commands WebLogic to generate the live endpoint.",
+    "content": {
+      "type": "text",
+      "value": "After the metadata is loaded, an administrator with the [Integrated SOA Gateway responsibility] finds the service, gives it a public alias, and clicks [Deploy].\n\nThe PL/SQL code is already ~compiled~ in the database. The service is not ~executed~ until a client application calls it."
+    }
+  },
+  {
+    "cardId": "ebs_035",
+    "category": "Architecture",
+    "sentenceParts": {
+      "prefix": "In a production environment, an intermediate network component like a ",
+      "suffix": " is almost always placed between the client and the EBS web server."
+    },
+    "options": [
+      { "text": "Reverse Proxy", "isCorrect": true },
+      { "text": "Firewall", "isCorrect": false },
+      { "text": "Database Link", "isCorrect": false }
+    ],
+    "correctAnswer": "In a production environment, an intermediate network component like a Reverse Proxy is almost always placed between the client and the EBS web server.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_035.mp3",
+    "hint": "This component hides the server's real IP, manages load balancing, and handles SSL.",
+    "content": {
+      "type": "text",
+      "value": "A [Reverse Proxy] is standard practice for security and scalability. It acts as a gateway, forwarding client requests to the appropriate backend server.\n\nA ~Firewall~ provides security but doesn't handle application-level tasks like load balancing. A ~Database Link~ connects two databases."
+    }
+  },
+  {
+    "cardId": "ebs_036",
+    "category": "Database Tier",
+    "sentenceParts": {
+      "prefix": "A logical container in the Oracle Database that groups objects like tables and packages belonging to a module is called a ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "Schema", "isCorrect": true },
+      { "text": "Tablespace", "isCorrect": false },
+      { "text": "Datafile", "isCorrect": false }
+    ],
+    "correctAnswer": "A logical container in the Oracle Database that groups objects like tables and packages belonging to a module is called a Schema.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_036.mp3",
+    "hint": "Examples include AP, OE, INV, and the special APPS schema.",
+    "content": {
+      "type": "text",
+      "value": "A [Schema] is like a folder for organizing database objects. It's also the name of the user who owns them.\n\n~Tablespaces~ and ~Datafiles~ are related to the physical storage of data, whereas a Schema is a logical grouping."
+    }
+  },
+  {
+    "cardId": "ebs_037",
+    "category": "Database Tier",
+    "sentenceParts": {
+      "prefix": "The FND schema in EBS contains tables related to the ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "Application Object Library (Foundation)", "isCorrect": true },
+      { "text": "Financials", "isCorrect": false },
+      { "text": "Inventory", "isCorrect": false }
+    ],
+    "correctAnswer": "The FND schema in EBS contains tables related to the Application Object Library (Foundation).",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_037.mp3",
+    "hint": "This schema holds core system configuration tables, like FND_USER.",
+    "content": {
+      "type": "text",
+      "value": "[FND] stands for Foundation, and it contains the core Application Object Library tables that all other modules depend on.\n\n~Financials~ modules include AP, AR, GL. ~Inventory~ is the INV schema."
+    }
+  },
+  {
+    "cardId": "ebs_038",
+    "category": "Database Tier",
+    "sentenceParts": {
+      "prefix": "The HZ schema is associated with which architectural concept? ",
+      "suffix": ""
+    },
+    "options": [
+      { "text": "TCA (Trading Community Architecture)", "isCorrect": true },
+      { "text": "AOL (Application Object Library)", "isCorrect": false },
+      { "text": "ISG (Integrated SOA Gateway)", "isCorrect": false }
+    ],
+    "correctAnswer": "The HZ schema is associated with which architectural concept? TCA (Trading Community Architecture)",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_038.mp3",
+    "hint": "This schema contains tables like HZ_PARTIES and HZ_CUST_ACCOUNTS.",
+    "content": {
+      "type": "text",
+      "value": "The [HZ] schema owns all the tables for the [TCA] model, which is the central repository for customers, suppliers, and other parties.\n\nThe ~AOL~ tables are in the FND schema. ~ISG~ is a component in the Application Tier."
+    }
+  },
+  {
+    "cardId": "ebs_039",
+    "category": "Client Tier",
+    "sentenceParts": {
+      "prefix": "The main reason the Client Tier in EBS is considered a 'thin client' is because ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "the business logic does not reside there", "isCorrect": true },
+      { "text": "it requires very little memory to run", "isCorrect": false },
+      { "text": "it can only be accessed from specific devices", "isCorrect": false }
+    ],
+    "correctAnswer": "The main reason the Client Tier in EBS is considered a 'thin client' is because the business logic does not reside there.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_039.mp3",
+    "hint": "Its job is to display and capture, not to process.",
+    "content": {
+      "type": "text",
+      "value": "A [thin client] architecture separates the presentation layer from the processing logic. The Client Tier's only job is rendering the UI; all heavy lifting is done by the Application and Database Tiers.\n\nWhile it might be ~memory efficient~, that's a side effect, not the defining reason."
+    }
+  },
+  {
+    "cardId": "ebs_040",
+    "category": "Key Tables",
+    "sentenceParts": {
+      "prefix": "Headers for Purchase Orders are stored in the ",
+      "suffix": " table."
+    },
+    "options": [
+      { "text": "PO_HEADERS_ALL", "isCorrect": true },
+      { "text": "PO_LINES_ALL", "isCorrect": false },
+      { "text": "AP_INVOICES_ALL", "isCorrect": false }
+    ],
+    "correctAnswer": "Headers for Purchase Orders are stored in the PO_HEADERS_ALL table.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_040.mp3",
+    "hint": "This table is part of the Purchasing (PO) module.",
+    "content": {
+      "type": "text",
+      "value": "The [PO_HEADERS_ALL] table contains one record for each Purchase Order, including information like the supplier, dates, and total amount.\n\n~PO_LINES_ALL~ stores the detail lines for each PO. ~AP_INVOICES_ALL~ stores supplier invoices, which often come after a PO."
+    }
+  },
+  {
+    "cardId": "ebs_041",
+    "category": "Key Packages",
+    "sentenceParts": {
+      "prefix": "The official public API for creating and managing employees in the system is ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "HR_EMPLOYEE_API", "isCorrect": true },
+      { "text": "FND_USER_PKG", "isCorrect": false },
+      { "text": "OE_ORDER_PUB", "isCorrect": false }
+    ],
+    "correctAnswer": "The official public API for creating and managing employees in the system is HR_EMPLOYEE_API.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_041.mp3",
+    "hint": "Look for the package related to the Human Resources (HR) module.",
+    "content": {
+      "type": "text",
+      "value": "The [HR_EMPLOYEE_API] is the Oracle-supported package for creating and updating employee records and their assignments.\n\n~FND_USER_PKG~ manages application user accounts, which are distinct from HR employee records. ~OE_ORDER_PUB~ is for sales orders."
+    }
+  },
+  {
+    "cardId": "ebs_042",
+    "category": "Application Tier",
+    "sentenceParts": {
+      "prefix": "The component that manages the lifecycle of Oracle Forms user sessions and executes the compiled .fmx files is the ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "Forms Server", "isCorrect": true },
+      { "text": "Web Server", "isCorrect": false },
+      { "text": "Concurrent Manager", "isCorrect": false }
+    ],
+    "correctAnswer": "The component that manages the lifecycle of Oracle Forms user sessions and executes the compiled .fmx files is the Forms Server.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_042.mp3",
+    "hint": "This is a dedicated process just for handling the Forms client connections.",
+    "content": {
+      "type": "text",
+      "value": "The [Forms Server] is a key component of the Application Tier, responsible for running the application logic contained within the compiled Form files (.fmx).\n\nThe ~Web Server~ handles HTTP traffic. The ~Concurrent Manager~ runs background jobs."
+    }
+  },
+  {
+    "cardId": "ebs_043",
+    "category": "Core Concepts",
+    "sentenceParts": {
+      "prefix": "In a practical example, when a salesperson creates an order, the ERP system automatically checks inventory and alerts finance. This demonstrates the concept of ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "Integration", "isCorrect": true },
+      { "text": "Scalability", "isCorrect": false },
+      { "text": "Security", "isCorrect": false }
+    ],
+    "correctAnswer": "In a practical example, when a salesperson creates an order, the ERP system automatically checks inventory and alerts finance. This demonstrates the concept of Integration.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_043.mp3",
+    "hint": "This is the primary reason companies adopt ERP systems.",
+    "content": {
+      "type": "text",
+      "value": "This seamless flow of information between different business functions (Sales, Inventory, Finance) is the core benefit of [Integration].\n\n~Scalability~ refers to the system's ability to handle more users and data. ~Security~ refers to protecting the system from unauthorized access."
+    }
+  },
+  {
+    "cardId": "ebs_044",
+    "category": "Client Tier",
+    "sentenceParts": {
+      "prefix": "The Oracle iStore interface is specifically designed for which type of user? ",
+      "suffix": ""
+    },
+    "options": [
+      { "text": "The company's external customers and business partners", "isCorrect": true },
+      { "text": "Internal back-office users like accountants and buyers", "isCorrect": false },
+      { "text": "System administrators and developers", "isCorrect": false }
+    ],
+    "correctAnswer": "The Oracle iStore interface is specifically designed for which type of user? The company's external customers and business partners",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_044.mp3",
+    "hint": "Think of it as the company's online e-commerce storefront.",
+    "content": {
+      "type": "text",
+      "value": "[Oracle iStore] is the e-commerce module, providing an online store that is directly connected to the EBS backend.\n\n~Internal back-office users~ primarily use Oracle Forms. ~Administrators~ use a mix of Forms and specialized web pages."
+    }
+  },
+  {
+    "cardId": "ebs_045",
+    "category": "AOL Concepts",
+    "sentenceParts": {
+      "prefix": "A unit of work, like a report or a script, that is registered in AOL to be run by the Concurrent Manager is called a ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "Concurrent Program", "isCorrect": true },
+      { "text": "Public API", "isCorrect": false },
+      { "text": "Workflow", "isCorrect": false }
+    ],
+    "correctAnswer": "A unit of work, like a report or a script, that is registered in AOL to be run by the Concurrent Manager is called a Concurrent Program.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_045.mp3",
+    "hint": "Users select these from a list when they want to run a background process.",
+    "content": {
+      "type": "text",
+      "value": "A [Concurrent Program] is the executable (e.g., a PL/SQL script, a report) registered within the AOL framework. The Concurrent Manager is the engine that runs these programs.\n\nA ~Public API~ is a PL/SQL package for integration. A ~Workflow~ is a process automation tool, which might involve running concurrent programs as part of its flow."
+    }
+  },
+  {
+    "cardId": "ebs_046",
+    "category": "Key Tables",
+    "sentenceParts": {
+      "prefix": "Which table stores the header information for Sales Orders? ",
+      "suffix": ""
+    },
+    "options": [
+      { "text": "OE_ORDER_HEADERS_ALL", "isCorrect": true },
+      { "text": "PO_HEADERS_ALL", "isCorrect": false },
+      { "text": "AP_INVOICES_ALL", "isCorrect": false }
+    ],
+    "correctAnswer": "Which table stores the header information for Sales Orders? OE_ORDER_HEADERS_ALL",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_046.mp3",
+    "hint": "The prefix OE stands for Order Entry, part of the Order Management module.",
+    "content": {
+      "type": "text",
+      "value": "The [OE_ORDER_HEADERS_ALL] table is the primary table for sales order headers, containing customer information, order dates, and status.\n\n~PO_HEADERS_ALL~ is for Purchase Orders. ~AP_INVOICES_ALL~ is for supplier invoices."
+    }
+  },
+  {
+    "cardId": "ebs_047",
+    "category": "Database Tier",
+    "sentenceParts": {
+      "prefix": "The APPS schema can access a table like INV.MTL_SYSTEM_ITEMS_B by simply writing 'MTL_SYSTEM_ITEMS_B' in its code because of a ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "Synonym", "isCorrect": true },
+      { "text": "Database Link", "isCorrect": false },
+      { "text": "View", "isCorrect": false }
+    ],
+    "correctAnswer": "The APPS schema can access a table like INV.MTL_SYSTEM_ITEMS_B by simply writing 'MTL_SYSTEM_ITEMS_B' in its code because of a Synonym.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_047.mp3",
+    "hint": "This database object acts as an alias or a shortcut.",
+    "content": {
+      "type": "text",
+      "value": "A [Synonym] with the same name as the table exists in the APPS schema, pointing to the actual table in its data schema (e.g., INV). This greatly simplifies development.\n\nA ~Database Link~ connects to a different database entirely. A ~View~ combines data, it does not act as a pointer."
+    }
+  },
+  {
+    "cardId": "ebs_048",
+    "category": "ISG Deployment",
+    "sentenceParts": {
+      "prefix": "The special comments a developer adds to a .pls file to prepare it for ISG are called ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "Annotations", "isCorrect": true },
+      { "text": "Parameters", "isCorrect": false },
+      { "text": "Directives", "isCorrect": false }
+    ],
+    "correctAnswer": "The special comments a developer adds to a .pls file to prepare it for ISG are called Annotations.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_048.mp3",
+    "hint": "These comments provide metadata to the ISG parsing utility.",
+    "content": {
+      "type": "text",
+      "value": "ISG uses special PL/SQL comments called [Annotations] to understand how to generate the web service. They define things like parameter names and types for the API.\n\n~Parameters~ are the actual variables in a procedure. ~Directives~ are typically compiler instructions."
+    }
+  },
+  {
+    "cardId": "ebs_049",
+    "category": "Key Modules",
+    "sentenceParts": {
+      "prefix": "The module that manages money owed by customers is ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "Accounts Receivable (AR)", "isCorrect": true },
+      { "text": "Accounts Payable (AP)", "isCorrect": false },
+      { "text": "General Ledger (GL)", "isCorrect": false }
+    ],
+    "correctAnswer": "The module that manages money owed by customers is Accounts Receivable (AR).",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_049.mp3",
+    "hint": "Think of the money your company is due to 'receive'.",
+    "content": {
+      "type": "text",
+      "value": "[AR (Accounts Receivable)] handles customer invoicing, payments, and collections.\n\n~AP (Accounts Payable)~ manages money owed to suppliers. ~GL (General Ledger)~ is the central accounting book where AR and AP transactions are summarized."
+    }
+  },
+  {
+    "cardId": "ebs_050",
+    "category": "AOL Concepts",
+    "sentenceParts": {
+      "prefix": "In the practical example, a 'Warehouse Receiver' Responsibility having a menu with only options to receive goods demonstrates the principle of ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "Least Privilege / Access Control", "isCorrect": true },
+      { "text": "Data Normalization", "isCorrect": false },
+      { "text": "Asynchronous Processing", "isCorrect": false }
+    ],
+    "correctAnswer": "In the practical example, a 'Warehouse Receiver' Responsibility having a menu with only options to receive goods demonstrates the principle of Least Privilege / Access Control.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_050.mp3",
+    "hint": "Users should only have access to what they absolutely need to do their job.",
+    "content": {
+      "type": "text",
+      "value": "Responsibilities implement the security principle of [Least Privilege]. Users are granted the minimum level of access necessary for their role, reducing the risk of error or misuse.\n\n~Data Normalization~ is a database design concept. ~Asynchronous Processing~ is handled by the Concurrent Manager."
+    }
+  },
+  {
+    "cardId": "ebs_051",
+    "category": "Core Concepts",
+    "sentenceParts": {
+      "prefix": "Which of these is NOT a primary reason why large corporations continue to use EBS? ",
+      "suffix": ""
+    },
+    "options": [
+      { "text": "It has a cutting-edge, modern user interface", "isCorrect": true },
+      { "text": "It has extreme robustness and stability", "isCorrect": false },
+      { "text": "It offers unmatched functional depth", "isCorrect": false }
+    ],
+    "correctAnswer": "Which of these is NOT a primary reason why large corporations continue to use EBS? It has a cutting-edge, modern user interface",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_051.mp3",
+    "hint": "EBS is known for its power and reliability, not necessarily its looks.",
+    "content": {
+      "type": "text",
+      "value": "While highly functional, the EBS [user interface is generally considered dated].\n\nIts key strengths are its ~extreme robustness~, ~unmatched functional depth~, and ~total native integration~, which are critical for large, complex operations."
+    }
+  },
+  {
+    "cardId": "ebs_052",
+    "category": "Key Packages",
+    "sentenceParts": {
+      "prefix": "The official public API for creating, updating, and processing Sales Orders is ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "OE_ORDER_PUB", "isCorrect": true },
+      { "text": "PO_HEADERS_API", "isCorrect": false },
+      { "text": "AP_INVOICES_PKG", "isCorrect": false }
+    ],
+    "correctAnswer": "The official public API for creating, updating, and processing Sales Orders is OE_ORDER_PUB.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_052.mp3",
+    "hint": "Look for the package related to Order Entry (_OE) and designed for Public (_PUB) use.",
+    "content": {
+      "type": "text",
+      "value": "The [OE_ORDER_PUB] package is the supported integration point for all sales order transactions. It's what an external system like a mobile app or iStore would call.\n\nThe other package names are ~not standard public APIs~ for their respective modules."
+    }
+  },
+  {
+    "cardId": "ebs_053",
+    "category": "Database Tier",
+    "sentenceParts": {
+      "prefix": "Which of the following is NOT a database object, but a logical container for them? ",
+      "suffix": ""
+    },
+    "options": [
+      { "text": "Schema", "isCorrect": true },
+      { "text": "Table", "isCorrect": false },
+      { "text": "Index", "isCorrect": false }
+    ],
+    "correctAnswer": "Which of the following is NOT a database object, but a logical container for them? Schema",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_053.mp3",
+    "hint": "This represents the 'owner' of the objects.",
+    "content": {
+      "type": "text",
+      "value": "A [Schema] is a namespace or logical grouping for database objects.\n\n~Tables~, ~Indexes~, Views, and Packages are all examples of actual database objects that reside within a schema."
+    }
+  },
+  {
+    "cardId": "ebs_054",
+    "category": "Architecture",
+    "sentenceParts": {
+      "prefix": "The 'brain' of the system, which runs the business logic and manages connections, is the ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "Application Tier", "isCorrect": true },
+      { "text": "Client Tier", "isCorrect": false },
+      { "text": "Database Tier", "isCorrect": false }
+    ],
+    "correctAnswer": "The 'brain' of the system, which runs the business logic and manages connections, is the Application Tier.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_054.mp3",
+    "hint": "This is also called the 'Middle Tier'.",
+    "content": {
+      "type": "text",
+      "value": "The [Application Tier] is the operational core where 'things happen'. It orchestrates the communication between the user's interface and the database.\n\nThe ~Client Tier~ only displays information. The ~Database Tier~ stores information and executes PL/SQL."
+    }
+  },
+  {
+    "cardId": "ebs_055",
+    "category": "AOL Concepts",
+    "sentenceParts": {
+      "prefix": "If an HR screen needs a field for 'Professional Driver's License' which doesn't exist, the recommended way to add it without coding is by using a ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "Flexfield", "isCorrect": true },
+      { "text": "Responsibility", "isCorrect": false },
+      { "text": "View", "isCorrect": false }
+    ],
+    "correctAnswer": "If an HR screen needs a field for 'Professional Driver's License' which doesn't exist, the recommended way to add it without coding is by using a Flexfield.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_055.mp3",
+    "hint": "This feature allows for flexible adaptation of the data model.",
+    "content": {
+      "type": "text",
+      "value": "Configuring a [Flexfield] (in this case, a Descriptive Flexfield or DFF) is the standard, Oracle-supported method to capture additional information on a screen.\n\nA ~Responsibility~ controls access, it does not add fields. A ~View~ is a database object and cannot change the screen's UI."
+    }
+  },
+  {
+    "cardId": "ebs_056",
+    "category": "Application Tier",
+    "sentenceParts": {
+      "prefix": "Which component is the first point of contact for an HTTP request coming from a browser for an OAF page? ",
+      "suffix": ""
+    },
+    "options": [
+      { "text": "The Web Server", "isCorrect": true },
+      { "text": "The Forms Server", "isCorrect": false },
+      { "text": "The Database Server", "isCorrect": false }
+    ],
+    "correctAnswer": "Which component is the first point of contact for an HTTP request coming from a browser for an OAF page? The Web Server",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_056.mp3",
+    "hint": "It listens for web traffic on ports 80 and 443.",
+    "content": {
+      "type": "text",
+      "value": "The [Web Server] on the Application Tier listens for incoming HTTP/HTTPS requests and serves static content or forwards dynamic requests to other components like WebLogic.\n\nThe ~Forms Server~ handles Java applet traffic, not HTTP. The ~Database Server~ is the final destination, not the first point of contact."
+    }
+  },
+  {
+    "cardId": "ebs_057",
+    "category": "Key Modules",
+    "sentenceParts": {
+      "prefix": "The central accounting module, which acts as the main book for all financial transactions, is ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "General Ledger (GL)", "isCorrect": true },
+      { "text": "Accounts Payable (AP)", "isCorrect": false },
+      { "text": "Order Management (OM)", "isCorrect": false }
+    ],
+    "correctAnswer": "The central accounting module, which acts as the main book for all financial transactions, is General Ledger (GL).",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_057.mp3",
+    "hint": "All other financial sub-ledgers (like AP and AR) eventually post their summarized data here.",
+    "content": {
+      "type": "text",
+      "value": "The [General Ledger (GL)] is the heart of the financial system, providing the company's main financial statements.\n\n~AP~ and ~AR~ are sub-ledgers that feed into the GL. ~OM~ is a logistical module, though its financial impact is recorded in GL."
+    }
+  },
+  {
+    "cardId": "ebs_058",
+    "category": "Core Concepts",
+    "sentenceParts": {
+      "prefix": "A developer needs to load 1,000 new customers. The safest, Oracle-supported method is to ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "use the official Customer API (a PL/SQL package)", "isCorrect": true },
+      { "text": "insert data directly into the HZ_PARTIES and HZ_CUST_ACCOUNTS tables", "isCorrect": false },
+      { "text": "write a Java program that connects directly to the database", "isCorrect": false }
+    ],
+    "correctAnswer": "A developer needs to load 1,000 new customers. The safest, Oracle-supported method is to use the official Customer API (a PL/SQL package).",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_058.mp3",
+    "hint": "Direct DML (Insert, Update, Delete) on base tables is highly risky.",
+    "content": {
+      "type": "text",
+      "value": "Using the [official Public API] is the only supported method as it contains all the business validation logic to prevent data corruption (e.g., checking for duplicates, validating IDs).\n\n~Directly inserting into tables~ bypasses all these critical validations and is a major anti-pattern."
+    }
+  },
+  {
+    "cardId": "ebs_059",
+    "category": "AOL Concepts",
+    "sentenceParts": {
+      "prefix": "When the finance department runs a large report at month-end, it runs as a Concurrent Program so that ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "the user's screen is not locked and they can continue working", "isCorrect": true },
+      { "text": "the report runs with higher security privileges", "isCorrect": false },
+      { "text": "the report output is automatically emailed to the CEO", "isCorrect": false }
+    ],
+    "correctAnswer": "When the finance department runs a large report at month-end, it runs as a Concurrent Program so that the user's screen is not locked and they can continue working.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_059.mp3",
+    "hint": "Think about the difference between synchronous and asynchronous tasks.",
+    "content": {
+      "type": "text",
+      "value": "The Concurrent Manager runs jobs [asynchronously in the background]. This is essential for long-running tasks, as it frees up the user's interactive session (Oracle Forms or Web) to do other work.\n\nWhile ~security~ and ~emailing output~ can be features of a concurrent program, its primary purpose is background processing."
+    }
+  },
+  {
+    "cardId": "ebs_060",
+    "category": "ISG Deployment",
+    "sentenceParts": {
+      "prefix": "After an ISG service is deployed, it is given a public name that client applications will use. This name is called the ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "API Alias", "isCorrect": true },
+      { "text": "Package Name", "isCorrect": false },
+      { "text": "ILDT Name", "isCorrect": false }
+    ],
+    "correctAnswer": "After an ISG service is deployed, it is given a public name that client applications will use. This name is called the API Alias.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_060.mp3",
+    "hint": "This public name can be different from the internal PL/SQL package and procedure name.",
+    "content": {
+      "type": "text",
+      "value": "The administrator defines a user-friendly [API Alias] (e.g., 'create_sales_order') during the deployment step. This becomes part of the final REST/SOAP endpoint URL.\n\nThe ~Package Name~ is the internal PL/SQL object name. The ~.ildt file~ is part of the deployment process, not the final public name."
+    }
+  }
+  ]
+}
