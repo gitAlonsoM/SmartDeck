@@ -1314,7 +1314,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_056_sideB_3.mp3"
         }
       ],
-      "note": "**[50]**\n\nThe Spanish 'se guardan' is a passive construction. This can be translated with the passive voice ([Where are... stored?]) or an active verb. For the active version, the subject is [these configuration files] (plural), so the auxiliary must be [do].\n\n~Where does these files save?~ is incorrect because the subject 'files' is plural.\n\n~Where do these configuration files can be saved?~ (Incorrect: Cannot use two auxiliary verbs, 'do' and 'can', together in a question. Use one or the other: 'Where can they be saved?' or 'Where do they get saved?'.)\n\n~Where do these configuration files are saved?~ (Incorrect: Cannot mix the auxiliary 'do' with the verb 'to be' ('are') in this question format. Use 'Where are they saved?' (passive) or 'Where do you save them?' (active).)\n\n~Where do these files be saved?~ (Incorrect verb form. After the auxiliary 'do', you must use the base form of the main verb, like 'get' or 'go'. You cannot use 'do' with 'be' in this structure. Correct options are 'Where are these files saved?' or 'Where do these files get saved?'.)"
+      "note": "**[12]**\n\nThe Spanish 'se guardan' is a passive construction. This can be translated with the passive voice ([Where are... stored?]) or an active verb. For the active version, the subject is [these configuration files] (plural), so the auxiliary must be [do].\n\n~Where does these files save?~ is incorrect because the subject 'files' is plural.\n\n~Where do these configuration files can be saved?~ (Incorrect: Cannot use two auxiliary verbs, 'do' and 'can', together in a question. Use one or the other: 'Where can they be saved?' or 'Where do they get saved?'.)\n\n~Where do these configuration files are saved?~ (Incorrect: Cannot mix the auxiliary 'do' with the verb 'to be' ('are') in this question format. Use 'Where are they saved?' (passive) or 'Where do you save them?' (active).)\n\n~Where do these files be saved?~ (Incorrect verb form. After the auxiliary 'do', you must use the base form of the main verb, like 'get' or 'go'. You cannot use 'do' with 'be' in this structure. Correct options are 'Where are these files saved?' or 'Where do these files get saved?'.)"
     },
     {
       "cardId": "mi_057",
@@ -1552,10 +1552,6 @@
         {
           "text": "Haven't we fixed this issue in the latest release?",
           "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_3.mp3"
-        },
-        {
-          "text": "Haven't we solved this issue in the latest release?",
-          "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_4.mp3"
         }
       ],
       "note": "**[4]**\n\nFor past tense negative questions, use [Didn't]. It's formed from 'did + not'. The question is structured as: [Didn't + subject + base verb].\n\nNever mix past tense on the auxiliary and the main verb. Didn't we fixed... is incorrect. It must be [Didn't we fix...].\n\nUsing the Present Perfect ([Haven't we fixed...]) is also correct and emphasizes the connection of the past action to the present situation."
@@ -1722,7 +1718,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_075_sideB_2.mp3"
         }
       ],
-      "note": "**[3]**\n\nThis is an *Object Question*. The subject is [the new security policy]. The question asks about the object ('What changes'). Since we have a known subject, we must use the auxiliary verb [does] (because 'policy' is singular) before the subject.\n\nWhat changes the new security policy requires?.\n\n~What changes require the new security policy?~ (Incorrect question structure. This sentence treats 'What changes' as the subject doing the action. However, the real subject is 'the new security policy' (singular), so you must use the auxiliary verb 'does' before it. Correct form: 'What changes does the new security policy require?'.)\n\n~What changes does the new security policy require to?~ (Incorrect. The verb 'require' in this question does not need 'to' at the end. You might be thinking of the structure 'require someone **to do** something', e.g., 'It requires us **to update** our software.')"
+      "note": "**[3]**\n\nThis is an *Object Question*. The subject is [the new security policy]. The question asks about the object ('What changes'). Since we have a known subject, we must use the auxiliary verb [does] (because 'policy' is singular) before the subject.\n\nWhat changes the new security policy requires?.\n\n~What changes require the new security policy?~ (Incorrect question structure. This sentence treats 'What changes' as the subject doing the action. However, the real subject is 'the new security policy' (singular), so you must use the auxiliary verb 'does' before it. Correct form: 'What changes does the new security policy require?'.)"
     },
     {
       "cardId": "mi_076",
@@ -1806,7 +1802,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_080_sideB_1.mp3"
         }
       ],
-      "note": "To indicate a level that is higher than another, use the prepositions [above] or [over].\n\n~The volume is up the minimum.~ (Incorrect. 'Up' is not used in this context to compare levels.)\n\n[Threshold] is a noun that means a level or point at which something starts to happen. In this context, it's a synonym for 'minimum level' or 'limit'."
+      "note": "To indicate a level that is higher than another, use the prepositions [above] or [over].\n\n~The volume is up the minimum.~ (Incorrect. 'Up' is not used in this context to compare levels.)"
     },
     {
       "cardId": "mi_081",
@@ -2211,338 +2207,128 @@
         }
       ],
       "note": "[Just so I'm clear] and [To make sure we're aligned] are excellent professional phrases for introducing a clarifying question.\n\n[Urgent] is a great synonym for 'high priority'.\n\n~Which is the priority?~ is less natural than [What is the priority?] when asking about the nature of something.\n\n[Just to be sure] is a great alternative to 'Just to confirm'."
-    },
-    {
-      "cardId": "mi_097",
-      "cardType": "flippable",
-      "sideA": "¿No deberíamos priorizar este bug antes del próximo despliegue?",
-      "sideB": [
-        {
-          "text": "Shouldn't we prioritize this bug before the next deployment?",
-          "audioSrc": "public/data/audio/common_meeting/mi_097_sideB_0.mp3"
-        },
-        {
-          "text": "Shouldn't this bug take priority over the next release?",
-          "audioSrc": "public/data/audio/common_meeting/mi_097_sideB_1.mp3"
-        },
-        {
-          "text": "Don't you think this bug should be a higher priority?",
-          "audioSrc": "public/data/audio/common_meeting/mi_097_sideB_2.mp3"
-        }
-      ],
-      "note": "**[4]**\n\n[Shouldn't] is used to suggest a course of action or confirm an expectation. It's a polite way to introduce a strong suggestion.\n\nBe careful not to mix auxiliaries. A common error is ~Does shouldn't we prioritize...~; the modal [shouldn't] stands alone at the beginning of the question."
-    },
-    {
-      "cardId": "mi_098",
-      "cardType": "flippable",
-      "sideA": "¿No debería la documentación incluir los criterios de aceptación?",
-      "sideB": [
-        {
-          "text": "Shouldn't the documentation include the acceptance criteria?",
-          "audioSrc": "public/data/audio/common_meeting/mi_098_sideB_0.mp3"
-        },
-        {
-          "text": "Aren't the acceptance criteria supposed to be in the documentation?",
-          "audioSrc": "public/data/audio/common_meeting/mi_098_sideB_1.mp3"
-        },
-        {
-          "text": "Shouldn't the acceptance criteria be part of the documentation?",
-          "audioSrc": "public/data/audio/common_meeting/mi_098_sideB_2.mp3"
-        }
-      ],
-      "note": "**[4]**\n\nThe structure is [Shouldn't] + [Subject] + [Base Verb]. The main verb always stays in its base form (e.g., [include]) and does not take an '-s'.\n\nA common error is conjugating the main verb: ~Shouldn't the documentation includes...~ is incorrect."
-    },
-    {
-      "cardId": "mi_099",
-      "cardType": "flippable",
-      "sideA": "¿No deberíamos haber informado al cliente sobre este retraso?",
-      "sideB": [
-        {
-          "text": "Shouldn't we have informed the client about this delay?",
-          "audioSrc": "public/data/audio/common_meeting/mi_099_sideB_0.mp3"
-        },
-        {
-          "text": "Shouldn't we have let the client know about this delay?",
-          "audioSrc": "public/data/audio/common_meeting/mi_099_sideB_1.mp3"
-        },
-        {
-          "text": "Should we not have told the client about this delay?",
-          "audioSrc": "public/data/audio/common_meeting/mi_099_sideB_2.mp3"
-        }
-      ],
-      "note": "**[4]**\n\nTo talk about a past action that was expected but didn't happen, use the structure: [Shouldn't] + [have] + [Past Participle].\n\nA frequent mistake is using 'had' instead of 'have': ~Shouldn't we had informed...~ is incorrect. The auxiliary is always [have].\n\n~Shouldn't we have to informe to the client about this delay?~ (Incorrect. The structure for a past missed action is 'should have + past participle', not 'have to'. Also, the verb 'inform' does not take 'to' before the object: you 'inform someone'.)"
-    },
-    {
-      "cardId": "mi_100",
-      "cardType": "flippable",
-      "sideA": "¿No es este el comportamiento esperado para esa funcionalidad?",
-      "sideB": [
-        {
-          "text": "Isn't this the expected behavior for that feature?",
-          "audioSrc": "public/data/audio/common_meeting/mi_100_sideB_0.mp3"
-        },
-        {
-          "text": "Isn't this how the feature is supposed to work?",
-          "audioSrc": "public/data/audio/common_meeting/mi_100_sideB_1.mp3"
-        },
-        {
-          "text": "Is this not the expected behavior for that functionality?",
-          "audioSrc": "public/data/audio/common_meeting/mi_100_sideB_2.mp3"
-        }
-      ],
-      "note": "**[4]**\n\n[Isn't] is used to confirm a present state or fact you believe is true. It shows you have an expectation and are surprised by what you are seeing.\n\nAvoid subject-verb agreement errors with complex subjects. The subject here is [this], which is singular. ~Aren't this behavior...~ is incorrect."
-    },
-    {
-      "cardId": "mi_101",
-      "cardType": "flippable",
-      "sideA": "¿No es esa la misma issue que reportamos la semana pasada?",
-      "sideB": [
-        {
-          "text": "Isn't that the same issue we reported last week?",
-          "audioSrc": "public/data/audio/common_meeting/mi_101_sideB_0.mp3"
-        },
-        {
-          "text": "Isn't this a duplicate of the issue we logged last week?",
-          "audioSrc": "public/data/audio/common_meeting/mi_101_sideB_1.mp3"
-        },
-        {
-          "text": "Isn't that the same bug from last week?",
-          "audioSrc": "public/data/audio/common_meeting/mi_101_sideB_2.mp3"
-        }
-      ],
-      "note": "**[4]**\n\n[Isn't] is used for singular subjects like 'that' or 'this'. Using technical terms like [duplicate] or [logged] instead of 'reported' is very common in meetings.\n\nA common error is using an unnecessary article with time expressions: ~...reported the last week?~ is incorrect. The correct form is just [last week].\n\n~Isn't that the same issue we've reported last week?~ (Incorrect. The Present Perfect tense ('we've reported') cannot be used with a specific past time marker like 'last week'. The Simple Past ('we reported') must be used instead.)"
-    },
-    {
-      "cardId": "mi_102",
-      "cardType": "flippable",
-      "sideA": "¿Tienes las cuentas que has usado para testearlo?",
-      "sideB": [
-        {
-          "text": "Do you have the accounts you've used to test it?",
-          "audioSrc": "public/data/audio/common_meeting/mi_102_sideB_0.mp3"
-        },
-        {
-          "text": "Can you share the accounts you used for testing?",
-          "audioSrc": "public/data/audio/common_meeting/mi_102_sideB_1.mp3"
-        },
-        {
-          "text": "Could you provide the accounts you've been using for testing?",
-          "audioSrc": "public/data/audio/common_meeting/mi_102_sideB_2.mp3"
-        }
-      ],
-      "note": "The Spanish question can be formed just with intonation, but in English, you must use an auxiliary verb. The statement [You have the accounts...] becomes a question by adding [Do] at the beginning: [Do you have...].\n\n~You have the accounts...?~ is a common error as it is a statement, not a question.\n\nTo express purpose, use the infinitive [to test], not ~for test~ or ~for testing it~."
-    },
-     {
-      "cardId": "mi_103",
-      "cardType": "flippable",
-      "sideA": "¿Cuánto tiempo va a durar la reunión?",
-      "sideB": [
-        {
-          "text": "How long is the meeting going to last?",
-          "audioSrc": "public/data/audio/common_meeting/mi_103_sideB_0.mp3"
-        },
-        {
-          "text": "How long will the meeting be?",
-          "audioSrc": "public/data/audio/common_meeting/mi_103_sideB_1.mp3"
-        },
-        {
-          "text": "How long will the meeting take?",
-          "audioSrc": "public/data/audio/common_meeting/mi_103_sideB_2.mp3"
-        },
-        {
-          "text": "What's the duration of the meeting?",
-          "audioSrc": "public/data/audio/common_meeting/mi_103_sideB_3.mp3"
-        }
-      ],
-      "note": "**[102]**\n\nTo ask about duration, you can use verbs like [last], [be], or [take].\n\nThe noun [duration] is also correct but often sounds more formal.\n\nA common error is using the noun 'duration' as a verb: ~How long will the meeting duration?~ is incorrect."
-    },
-    {
-      "cardId": "mi_104",
-      "cardType": "flippable",
-      "sideA": "La tarea no debería tomar más de dos horas.",
-      "sideB": [
-        {
-          "text": "The task shouldn't take more than two hours.",
-          "audioSrc": "public/data/audio/common_meeting/mi_104_sideB_0.mp3"
-        },
-        {
-          "text": "The task shouldn't last longer than two hours.",
-          "audioSrc": "public/data/audio/common_meeting/mi_104_sideB_1.mp3"
-        },
-        {
-          "text": "This task has a maximum duration of two hours.",
-          "audioSrc": "public/data/audio/common_meeting/mi_104_sideB_2.mp3"
-        }
-      ],
-      "note": "**[102]**\n\n[Shouldn't take] is a very common way to estimate the maximum time required for something.\n\n[Longer than] is the correct comparative form. A common error is mixing prepositions: ~last more of two hours~ is incorrect. Use [last longer than] or [take more than]."
-    },
-    {
-      "cardId": "mi_105",
-      "cardType": "flippable",
-      "sideA": "No interrumpas al cliente durante la demostración.",
-      "sideB": [
-        {
-          "text": "Don't interrupt the client during the demo.",
-          "audioSrc": "public/data/audio/common_meeting/mi_105_sideB_0.mp3"
-        },
-        {
-          "text": "Let's hold all questions until after the demo.",
-          "audioSrc": "public/data/audio/common_meeting/mi_105_sideB_1.mp3"
-        },
-        {
-          "text": "Please wait until the demonstration is over to ask questions.",
-          "audioSrc": "public/data/audio/common_meeting/mi_105_sideB_2.mp3"
-        }
-      ],
-      "note": "**[102]**\n\nUse [during] to specify *when* something happens, followed by a noun for the event ([the demo]).\n\nThe common error is to use 'for': ~Don't interrupt for the demo~ is incorrect as 'for' is used to state a length of time (e.g., 'for ten minutes')."
-    },
-    {
-      "cardId": "mi_106",
-      "cardType": "flippable",
-      "sideA": "Estuve en una llamada por casi una hora.",
-      "sideB": [
-        {
-          "text": "I was on a call for almost an hour.",
-          "audioSrc": "public/data/audio/common_meeting/mi_106_sideB_0.mp3"
-        },
-        {
-          "text": "The call lasted for nearly an hour.",
-          "audioSrc": "public/data/audio/common_meeting/mi_106_sideB_1.mp3"
-        },
-        {
-          "text": "I was busy on a call for the better part of an hour.",
-          "audioSrc": "public/data/audio/common_meeting/mi_106_sideB_2.mp3"
-        }
-      ],
-      "note": "**[102]**\n\nUse [for] to state the length or quantity of time ([for an hour]).\n\nContrast this with 'during'. A common mistake is to say ~I was on a call during an hour~. This is incorrect because 'an hour' is a quantity of time, not a named event."
-    },
-    {
-      "cardId": "mi_107",
-      "cardType": "flippable",
-      "sideA": "La última interrupción del servicio duró tres horas.",
-      "sideB": [
-        {
-          "text": "The last service outage lasted for three hours.",
-          "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_0.mp3"
-        },
-        {
-          "text": "The service was down for three hours.",
-          "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_1.mp3"
-        },
-        {
-          "text": "The duration of the last outage was three hours.",
-          "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_2.mp3"
-        }
-      ],
-      "note": "**[102]**\n\nBoth [lasted for] and [was down for] are natural ways to express the duration of a past event.\n\nUsing [duration] is more formal and suitable for reports.\n\nA common redundancy error is mixing verb forms: ~The outage was lasted for three hours~. The correct forms are [The outage lasted] or [The outage was three hours long]."
-    },
-    {
-      "cardId": "mi_108",
-      "cardType": "flippable",
-      "sideA": "¿Cómo se activa este modo?",
-      "sideB": [
-        {
-          "text": "How does this mode get activated?",
-          "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_0.mp3"
-        },
-        {
-          "text": "How is this mode activated?",
-          "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_1.mp3"
-        },
-        {
-          "text": "How do you activate this mode?",
-          "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_2.mp3"
-        }
-      ],
-      "note": "**[50]**\n\nThe structure for this question is: `How` + `auxiliary` + `subject` + `verb`. For a singular subject like [this mode], the auxiliary is [does].\n\nCommon errors include mixing auxiliaries (~How does this mode is activated?~) or incorrect verb conjugation (~How does this mode gets activated?~). After 'does', the verb must be in its base form ([get])."
-    },
-    {
-      "cardId": "mi_109",
-      "cardType": "flippable",
-      "sideA": "¿Cuándo se eliminan estos archivos temporales?",
-      "sideB": [
-        {
-          "text": "When do these temporary files get deleted?",
-          "audioSrc": "public/data/audio/common_meeting/mi_109_sideB_0.mp3"
-        },
-        {
-          "text": "When are these temporary files deleted?",
-          "audioSrc": "public/data/audio/common_meeting/mi_109_sideB_1.mp3"
-        },
-        {
-          "text": "When does the system delete these temporary files?",
-          "audioSrc": "public/data/audio/common_meeting/mi_109_sideB_2.mp3"
-        }
-      ],
-      "note": "**[50]**\n\nFor a plural subject like [these temporary files], the correct auxiliary verb is [do].\n\nA common mistake is to use 'does' with a plural subject (~When does these files get deleted?~). Another error is mixing auxiliaries: ~When do these files are deleted?~ is incorrect."
-    },
-    {
-      "cardId": "mi_110",
-      "cardType": "flippable",
-      "sideA": "¿Por qué se canceló la reunión?",
-      "sideB": [
-        {
-          "text": "Why did the meeting get canceled?",
-          "audioSrc": "public/data/audio/common_meeting/mi_110_sideB_0.mp3"
-        },
-        {
-          "text": "Why was the meeting canceled?",
-          "audioSrc": "public/data/audio/common_meeting/mi_110_sideB_1.mp3"
-        },
-        {
-          "text": "Why did they cancel the meeting?",
-          "audioSrc": "public/data/audio/common_meeting/mi_110_sideB_2.mp3"
-        }
-      ],
-      "note": "**[50]**\n\nFor questions in the simple past, the auxiliary is [did]. The main verb that follows must return to its base form ([get]).\n\nFrequent errors involve mixing past tense auxiliaries (~Why did the meeting was canceled?~) or forgetting the auxiliary entirely (~Why the meeting get canceled?~)."
-    },
-     {
-      "cardId": "mi_111",
-      "cardType": "flippable",
-      "sideA": "No estoy seguro de la respuesta, pero puedo investigarlo.",
-      "sideB": [
-        {
-          "text": "I'm not sure of the answer, but I can look into it.",
-          "audioSrc": "public/data/audio/common_meeting/mi_111_sideB_0.mp3"
-        },
-        {
-          "text": "I don't know off the top of my head, but I'll find out.",
-          "audioSrc": "public/data/audio/common_meeting/mi_111_sideB_1.mp3"
-        },
-        {
-          "text": "I'm not certain, but I can look it up.",
-          "audioSrc": "public/data/audio/common_meeting/mi_111_sideB_2.mp3"
-        },
-        {
-          "text": "I'll have to double-check on that and get back to you.",
-          "audioSrc": "public/data/audio/common_meeting/mi_111_sideB_3.mp3"
-        }
-      ],
-      "note": "**[16]**\n\nThis shows different phrasal verbs for promising to find information. [Look into it] means to investigate. [Find out] means to discover. [Look it up] means to search a reference (like Google or docs).\n\nWith separable phrasal verbs like 'look up', a pronoun object like 'it' must go in the middle: [I can look it up]. A common error is placing it at the end: ~I can look up it.~"
-    },
-    {
-      "cardId": "mi_112",
-      "cardType": "flippable",
-      "sideA": "Actualmente no sé cómo hacer eso, pero puedo aprenderlo.",
-      "sideB": [
-        {
-          "text": "I don't currently know how to do that, but I can learn.",
-          "audioSrc": "public/data/audio/common_meeting/mi_112_sideB_0.mp3"
-        },
-        {
-          "text": "I'm not familiar with that process, but I'm a quick learner.",
-          "audioSrc": "public/data/audio/common_meeting/mi_112_sideB_1.mp3"
-        },
-        {
-          "text": "I haven't done that before, but I can figure it out.",
-          "audioSrc": "public/data/audio/common_meeting/mi_112_sideB_2.mp3"
-        },
-        {
-          "text": "That's not something I'm familiar with, but I'm happy to learn.",
-          "audioSrc": "public/data/audio/common_meeting/mi_112_sideB_3.mp3"
-        }
-      ],
-      "note": "**[16]**\n\nPhrases like [I'm a quick learner] or [I can figure it out] are proactive and positive ways to address a knowledge gap in a professional setting.\n\nThe phrasal verb 'figure out' means to understand or solve something.\n\nTo talk about learning a skill, the correct structure is `learn how to do something`. A common error is using an incorrect preposition: ~I can learn about to do that.~"
-    }
+  },
+  {
+    "cardId": "mi_097",
+    "cardType": "flippable",
+    "sideA": "¿No deberíamos priorizar este bug antes del próximo despliegue?",
+    "sideB": [
+      {
+        "text": "Shouldn't we prioritize this bug before the next deployment?",
+        "audioSrc": "public/data/audio/common_meeting/mi_097_sideB_0.mp3"
+      },
+      {
+        "text": "Shouldn't this bug take priority over the next release?",
+        "audioSrc": "public/data/audio/common_meeting/mi_097_sideB_1.mp3"
+      },
+      {
+        "text": "Don't you think this bug should be a higher priority?",
+        "audioSrc": "public/data/audio/common_meeting/mi_097_sideB_2.mp3"
+      }
+    ],
+    "note": "**[4]**\n\n[Shouldn't] is used to suggest a course of action or confirm an expectation. It's a polite way to introduce a strong suggestion.\n\nBe careful not to mix auxiliaries. A common error is ~Does shouldn't we prioritize...~; the modal [shouldn't] stands alone at the beginning of the question."
+  },
+  {
+    "cardId": "mi_098",
+    "cardType": "flippable",
+    "sideA": "¿No debería la documentación incluir los criterios de aceptación?",
+    "sideB": [
+      {
+        "text": "Shouldn't the documentation include the acceptance criteria?",
+        "audioSrc": "public/data/audio/common_meeting/mi_098_sideB_0.mp3"
+      },
+      {
+        "text": "Aren't the acceptance criteria supposed to be in the documentation?",
+        "audioSrc": "public/data/audio/common_meeting/mi_098_sideB_1.mp3"
+      },
+      {
+        "text": "Shouldn't the acceptance criteria be part of the documentation?",
+        "audioSrc": "public/data/audio/common_meeting/mi_098_sideB_2.mp3"
+      }
+    ],
+    "note": "**[4]**\n\nThe structure is [Shouldn't] + [Subject] + [Base Verb]. The main verb always stays in its base form (e.g., [include]) and does not take an '-s'.\n\nA common error is conjugating the main verb: ~Shouldn't the documentation includes...~ is incorrect."
+  },
+  {
+    "cardId": "mi_099",
+    "cardType": "flippable",
+    "sideA": "¿No deberíamos haber informado al cliente sobre este retraso?",
+    "sideB": [
+      {
+        "text": "Shouldn't we have informed the client about this delay?",
+        "audioSrc": "public/data/audio/common_meeting/mi_099_sideB_0.mp3"
+      },
+      {
+        "text": "Shouldn't we have let the client know about this delay?",
+        "audioSrc": "public/data/audio/common_meeting/mi_099_sideB_1.mp3"
+      },
+      {
+        "text": "Should we not have told the client about this delay?",
+        "audioSrc": "public/data/audio/common_meeting/mi_099_sideB_2.mp3"
+      }
+    ],
+    "note": "**[4]**\n\nTo talk about a past action that was expected but didn't happen, use the structure: [Shouldn't] + [have] + [Past Participle].\n\nA frequent mistake is using 'had' instead of 'have': ~Shouldn't we had informed...~ is incorrect. The auxiliary is always [have]."
+  },
+  {
+    "cardId": "mi_100",
+    "cardType": "flippable",
+    "sideA": "¿No es este el comportamiento esperado para esa funcionalidad?",
+    "sideB": [
+      {
+        "text": "Isn't this the expected behavior for that feature?",
+        "audioSrc": "public/data/audio/common_meeting/mi_100_sideB_0.mp3"
+      },
+      {
+        "text": "Isn't this how the feature is supposed to work?",
+        "audioSrc": "public/data/audio/common_meeting/mi_100_sideB_1.mp3"
+      },
+      {
+        "text": "Is this not the expected behavior for that functionality?",
+        "audioSrc": "public/data/audio/common_meeting/mi_100_sideB_2.mp3"
+      }
+    ],
+    "note": "**[4]**\n\n[Isn't] is used to confirm a present state or fact you believe is true. It shows you have an expectation and are surprised by what you are seeing.\n\nAvoid subject-verb agreement errors with complex subjects. The subject here is [this], which is singular. ~Aren't this behavior...~ is incorrect."
+  },
+  {
+    "cardId": "mi_101",
+    "cardType": "flippable",
+    "sideA": "¿No es esa la misma issue que reportamos la semana pasada?",
+    "sideB": [
+      {
+        "text": "Isn't that the same issue we reported last week?",
+        "audioSrc": "public/data/audio/common_meeting/mi_101_sideB_0.mp3"
+      },
+      {
+        "text": "Isn't this a duplicate of the issue we logged last week?",
+        "audioSrc": "public/data/audio/common_meeting/mi_101_sideB_1.mp3"
+      },
+      {
+        "text": "Isn't that the same bug from last week?",
+        "audioSrc": "public/data/audio/common_meeting/mi_101_sideB_2.mp3"
+      }
+    ],
+    "note": "**[4]**\n\n[Isn't] is used for singular subjects like 'that' or 'this'. Using technical terms like [duplicate] or [logged] instead of 'reported' is very common in meetings.\n\nA common error is using an unnecessary article with time expressions: ~...reported the last week?~ is incorrect. The correct form is just [last week]."
+  },
+  {
+    "cardId": "mi_102",
+    "cardType": "flippable",
+    "sideA": "¿Tienes las cuentas que has usado para testearlo?",
+    "sideB": [
+      {
+        "text": "Do you have the accounts you've used to test it?",
+        "audioSrc": "public/data/audio/common_meeting/mi_102_sideB_0.mp3"
+      },
+      {
+        "text": "Can you share the accounts you used for testing?",
+        "audioSrc": "public/data/audio/common_meeting/mi_102_sideB_1.mp3"
+      },
+      {
+        "text": "Could you provide the accounts you've been using for testing?",
+        "audioSrc": "public/data/audio/common_meeting/mi_102_sideB_2.mp3"
+      }
+    ],
+    "note": "The Spanish question can be formed just with intonation, but in English, you must use an auxiliary verb. The statement [You have the accounts...] becomes a question by adding [Do] at the beginning: [Do you have...].\n\n~You have the accounts...?~ is a common error as it is a statement, not a question.\n\nTo express purpose, use the infinitive [to test], not ~for test~ or ~for testing it~."
+  }
+
+
   ]
 }

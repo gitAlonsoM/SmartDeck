@@ -14135,7 +14135,151 @@
       "type": "text",
       "value": "**[100]**\n\nThe informal term [bucks] is correctly used here. Another common slang for 'a thousand dollars' is 'grand', so you could also say 'five grand'.\n\n~Grand~ is incorrect in this specific sentence. You would say 'five grand', not 'five thousand grand'.\n~Dollar~ is singular and incorrect for an amount greater than one."
     }
-  }
-
+  },
+  {
+      "cardId": "egac_488",
+      "category": "Either: Conjunction",
+      "sentenceParts": {
+        "prefix": "You can ",
+        "suffix": " start the project now or wait until next week."
+      },
+      "options": [
+        {
+          "text": "either",
+          "isCorrect": true
+        },
+        {
+          "text": "neither",
+          "isCorrect": false
+        },
+        {
+          "text": "both",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "You can either start the project now or wait until next week.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_488.mp3",
+      "hint": "This structure is used to present two exclusive options.",
+      "content": {
+        "type": "text",
+        "value": "**[101]**\n\nThe structure [either... or...] is a correlative conjunction used to connect two choices.\n\n~Neither~ would be used with 'nor' for two negative options.\n~Both~ would require 'and' and imply that the two actions can happen together, which contradicts the choice presented."
+      }
+    },
+    {
+      "cardId": "egac_489",
+      "category": "Either: Negative Agreement",
+      "sentenceParts": {
+        "prefix": "A: 'I haven't seen that movie.' B: 'I haven't seen it, ",
+        "suffix": ".'"
+      },
+      "options": [
+        {
+          "text": "either",
+          "isCorrect": true
+        },
+        {
+          "text": "too",
+          "isCorrect": false
+        },
+        {
+          "text": "neither",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A: 'I haven't seen that movie.' B: 'I haven't seen it, either.'",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_489.mp3",
+      "hint": "This word is the negative equivalent of 'too' or 'also'.",
+      "content": {
+        "type": "text",
+        "value": "**[101]**\n\nTo agree with a negative statement, [either] is used at the end of the sentence.\n\n~Too~ is a very common error; it is only used to agree with positive statements (e.g., 'I have seen it, too.').\n~Neither~ is used at the beginning of a clause to show agreement (e.g., 'Neither have I.')."
+      }
+    },
+    {
+      "cardId": "egac_490",
+      "category": "Either: Determiner",
+      "sentenceParts": {
+        "prefix": "There are two paths to the top of the hill. You can take ",
+        "suffix": " path."
+      },
+      "options": [
+        {
+          "text": "either",
+          "isCorrect": true
+        },
+        {
+          "text": "any",
+          "isCorrect": false
+        },
+        {
+          "text": "each",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "There are two paths to the top of the hill. You can take either path.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_490.mp3",
+      "hint": "This word is used specifically when choosing between two options.",
+      "content": {
+        "type": "text",
+        "value": "**[101]**\n\nAs a determiner, [either] means 'one or the other of two'. Since there are exactly two paths, it is the correct choice.\n\n~Any~ would be used if there were three or more paths.\n~Each~ refers to every individual path, implying you would take them all, which doesn't fit the context of choosing one."
+      }
+    },
+    {
+      "cardId": "egac_491",
+      "category": "Either: Conjunction",
+      "sentenceParts": {
+        "prefix": "The problem is ",
+        "suffix": " in the code or in the server configuration."
+      },
+      "options": [
+        {
+          "text": "either",
+          "isCorrect": true
+        },
+        {
+          "text": "whether",
+          "isCorrect": false
+        },
+        {
+          "text": "if",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "The problem is either in the code or in the server configuration.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_491.mp3",
+      "hint": "The word 'or' later in the sentence is a big clue.",
+      "content": {
+        "type": "text",
+        "value": "**[101]**\n\nThe [either... or...] structure is used to present two possible locations or causes for the problem.\n\n~Whether~ is used to introduce a clause expressing a doubt or choice between alternatives, but in a different structure (e.g., 'I don't know whether the problem is in the code or...').\n~If~ introduces a conditional clause and does not fit this structure."
+         }
+    },
+    {
+      "cardId": "egac_492",
+      "category": "Either: Negative Agreement",
+      "sentenceParts": {
+        "prefix": "The main system isn't responding, and the backup system isn't working, ",
+        "suffix": "."
+      },
+      "options": [
+        {
+          "text": "either",
+          "isCorrect": true
+        },
+        {
+          "text": "also",
+          "isCorrect": false
+        },
+        {
+          "text": "neither",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "The main system isn't responding, and the backup system isn't working, either.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_492.mp3",
+      "hint": "When you add a second negative idea, how do you show that it's also true?",
+      "content": {
+        "type": "text",
+        "value": "**[101]**\n\nWhen you add a second negative clause that agrees with the first one, you use [either] at the very end.\n\n~Also~ is used for positive statements ('The main system is working, and the backup is also working.').\n~Neither~ would require a different structure and inversion (e.g., '...and neither is the backup system.')."
+      }
+    }
   ]
 }

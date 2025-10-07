@@ -1,147 +1,106 @@
 [
   {
-    "cardId": "egac_094",
-    "category": "Future Tenses: Spontaneous Decision",
-    "sentenceParts": {
-      "prefix": "The phone is ringing. Don't worry, I ",
-      "suffix": " it."
-    },
-    "options": [
+    "cardId": "mi_099",
+    "cardType": "flippable",
+    "sideA": "¿No deberíamos haber informado al cliente sobre este retraso?",
+    "sideB": [
       {
-        "text": "'ll get",
-        "isCorrect": true
+        "text": "Shouldn't we have informed the client about this delay?",
+        "audioSrc": "public/data/audio/common_meeting/mi_099_sideB_0.mp3"
       },
       {
-        "text": "'m going to get",
-        "isCorrect": false
+        "text": "Shouldn't we have let the client know about this delay?",
+        "audioSrc": "public/data/audio/common_meeting/mi_099_sideB_1.mp3"
       },
       {
-        "text": "'m getting",
-        "isCorrect": false
+        "text": "Should we not have told the client about this delay?",
+        "audioSrc": "public/data/audio/common_meeting/mi_099_sideB_2.mp3"
       }
     ],
-    "correctAnswer": "The phone is ringing. Don't worry, I 'll get it.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_094.mp3",
-    "hint": "'Going to' would imply you saw the phone ringing and formed the intention to answer it before speaking.",
-    "content": {
-      "type": "text",
-      "value": "**[55]**\n\nUse [will] (contracted to 'll) for spontaneous decisions, offers, or promises made at the moment of speaking.\n\n~'m going to get~ implies a pre-existing plan, which doesn't fit the context of the phone suddenly ringing.\n~'m getting~ is for fixed future arrangements."
-    }
+    "note": "**[4]**\n\nTo talk about a past action that was expected but didn't happen, use the structure: [Shouldn't] + [have] + [Past Participle].\n\nA frequent mistake is using 'had' instead of 'have': ~Shouldn't we had informed...~ is incorrect. The auxiliary is always [have].\n\n~Shouldn't we have to informe to the client about this delay?~ (Incorrect. The structure for a past missed action is 'should have + past participle', not 'have to'. Also, the verb 'inform' does not take 'to' before the object: you 'inform someone'.)"
   },
   {
-    "cardId": "egac_062",
-    "category": "Past Habits: Would",
-    "sentenceParts": {
-      "prefix": "Every summer, my grandfather ",
-      "suffix": " us stories on the porch."
-    },
-    "options": [
+    "cardId": "mi_101",
+    "cardType": "flippable",
+    "sideA": "¿No es esa la misma issue que reportamos la semana pasada?",
+    "sideB": [
       {
-        "text": "would tell",
-        "isCorrect": true
+        "text": "Isn't that the same issue we reported last week?",
+        "audioSrc": "public/data/audio/common_meeting/mi_101_sideB_0.mp3"
       },
       {
-        "text": "used to telling",
-        "isCorrect": false
+        "text": "Isn't this a duplicate of the issue we logged last week?",
+        "audioSrc": "public/data/audio/common_meeting/mi_101_sideB_1.mp3"
       },
       {
-        "text": "was telling",
-        "isCorrect": false
+        "text": "Isn't that the same bug from last week?",
+        "audioSrc": "public/data/audio/common_meeting/mi_101_sideB_2.mp3"
       }
     ],
-    "correctAnswer": "Every summer, my grandfather would tell us stories on the porch.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_062.mp3",
-    "hint": "Unlike 'used to', 'would' cannot be used to describe past states (Incorrect: 'I would be shy').",
-    "content": {
-      "type": "text",
-      "value": "**[57]**\n\n[Would] is used to talk about repeated, habitual actions in the past (not states), and is common in nostalgic storytelling.\n\n~used to telling~ is grammatically incorrect. The structure 'used to' must be followed by the base form of the verb (e.g., 'used to tell').\n~was telling~ (Past Continuous) implies a single, interrupted action, not a repeated habit."
-    }
+    "note": "**[4]**\n\n[Isn't] is used for singular subjects like 'that' or 'this'. Using technical terms like [duplicate] or [logged] instead of 'reported' is very common in meetings.\n\nA common error is using an unnecessary article with time expressions: ~...reported the last week?~ is incorrect. The correct form is just [last week].\n\n~Isn't that the same issue we've reported last week?~ (Incorrect. The Present Perfect tense ('we've reported') cannot be used with a specific past time marker like 'last week'. The Simple Past ('we reported') must be used instead.)"
   },
   {
-    "cardId": "egac_238",
-    "category": "Prepositions: 'By' for Method",
-    "sentenceParts": {
-      "prefix": "I sent you the documents ",
-      "suffix": " email this morning."
-    },
-    "options": [
+    "cardId": "mi_075",
+    "cardType": "flippable",
+    "sideA": "¿Qué cambios requiere la nueva política de seguridad?",
+    "sideB": [
       {
-        "text": "by",
-        "isCorrect": true
+        "text": "What changes does the new security policy require?",
+        "audioSrc": "public/data/audio/common_meeting/mi_075_sideB_0.mp3"
       },
       {
-        "text": "in",
-        "isCorrect": false
+        "text": "What modifications does the new security policy need?",
+        "audioSrc": "public/data/audio/common_meeting/mi_075_sideB_1.mp3"
       },
       {
-        "text": "on",
-        "isCorrect": false
+        "text": "What changes are needed for the new security policy?",
+        "audioSrc": "public/data/audio/common_meeting/mi_075_sideB_2.mp3"
       }
     ],
-    "correctAnswer": "I sent you the documents by email this morning.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_238.mp3",
-    "hint": "This rule applies to methods of transport ('by bus') and payment ('by credit card').",
-    "content": {
-      "type": "text",
-      "value": "[By] is used before a noun (without an article) to show the method used to do something (e.g., by car, by phone, by mail).\n\n~in~ would be used differently ('The information is in the email').\n~on~ is used for platforms ('on the internet') but not for the method itself in this way."
-    }
+    "note": "**[3]**\n\nThis is an *Object Question*. The subject is [the new security policy]. The question asks about the object ('What changes'). Since we have a known subject, we must use the auxiliary verb [does] (because 'policy' is singular) before the subject.\n\nWhat changes the new security policy requires?.\n\n~What changes require the new security policy?~ (Incorrect question structure. This sentence treats 'What changes' as the subject doing the action. However, the real subject is 'the new security policy' (singular), so you must use the auxiliary verb 'does' before it. Correct form: 'What changes does the new security policy require?'.)\n\n~What changes does the new security policy require to?~ (Incorrect. The verb 'require' in this question does not need 'to' at the end. You might be thinking of the structure 'require someone **to do** something', e.g., 'It requires us **to update** our software.')"
   },
   {
-    "cardId": "egac_150",
-    "category": "Modals: Had Better (Negative)",
-    "sentenceParts": {
-      "prefix": "You",
-      "suffix": " forget to call her; she'll be upset."
-    },
-    "options": [
+    "cardId": "mi_080",
+    "cardType": "flippable",
+    "sideA": "El volumen está por sobre el mínimo.",
+    "sideB": [
       {
-        "text": "'d better not",
-        "isCorrect": true
+        "text": "The volume is above the minimum.",
+        "audioSrc": "public/data/audio/common_meeting/mi_080_sideB_0.mp3"
       },
       {
-        "text": " don't had better",
-        "isCorrect": false
-      },
-      {
-        "text": " hadn't better",
-        "isCorrect": false
+        "text": "The volume is over the minimum threshold.",
+        "audioSrc": "public/data/audio/common_meeting/mi_080_sideB_1.mp3"
       }
     ],
-    "correctAnswer": "You'd better not forget to call her; she'll be upset.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_150.mp3",
-    "hint": "The negative is formed by putting 'not' after 'better', not by negating 'had'.",
-    "content": {
-      "type": "text",
-      "value": "**[37]**\n\nThe negative form is [had better not]. The 'not' comes after the entire phrase.\n\n~don't had better~ and ~hadn't better~ are both incorrect negative constructions."
-    }
+    "note": "To indicate a level that is higher than another, use the prepositions [above] or [over].\n\n~The volume is up the minimum.~ (Incorrect. 'Up' is not used in this context to compare levels.)\n\n[Threshold] is a noun that means a level or point at which something starts to happen. In this context, it's a synonym for 'minimum level' or 'limit'."
   },
   {
-    "cardId": "egac_355",
-    "category": "Strong Collocations: 'deeply concerned'",
-    "sentenceParts": {
-      "prefix": "Environmental groups are ",
-      "suffix": " about the new policy."
-    },
-    "options": [
+    "cardId": "mi_067",
+    "cardType": "flippable",
+    "sideA": "¿No habíamos solucionado este problema en el último release?",
+    "sideB": [
       {
-        "text": "deeply concerned",
-        "isCorrect": true
+        "text": "Didn't we fix this issue in the last release?",
+        "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_0.mp3"
       },
       {
-        "text": "highly concerned",
-        "isCorrect": false
+        "text": "Didn't we already solve this problem in the previous release?",
+        "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_1.mp3"
       },
       {
-        "text": "much concerned",
-        "isCorrect": false
+        "text": "Did we not resolve this issue in the last release?",
+        "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_2.mp3"
+      },
+      {
+        "text": "Haven't we fixed this issue in the latest release?",
+        "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_3.mp3"
+      },
+      {
+        "text": "Haven't we solved this issue in the latest release?",
+        "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_4.mp3"
       }
     ],
-    "correctAnswer": "Environmental groups are deeply concerned about the new policy.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_355.mp3",
-    "hint": "Collocations are word partnerships that sound natural to native speakers. Learning them is essential for fluency.",
-    "content": {
-      "type": "text",
-      "value": "**[69]**\n\n[Deeply concerned] is a very strong and standard collocation used to express serious worry.\n\n~Highly concerned~ is a weak collocation; while grammatically possible, 'deeply' is the standard intensifier.\n~Much concerned~ is grammatically incorrect. 'Much' is not used to modify adjectives this way in affirmative sentences."
-    }
+    "note": "**[4]**\n\nFor past tense negative questions, use [Didn't]. It's formed from 'did + not'. The question is structured as: [Didn't + subject + base verb].\n\nNever mix past tense on the auxiliary and the main verb. Didn't we fixed... is incorrect. It must be [Didn't we fix...].\n\nUsing the Present Perfect ([Haven't we fixed...]) is also correct and emphasizes the connection of the past action to the present situation."
   }
 ]
