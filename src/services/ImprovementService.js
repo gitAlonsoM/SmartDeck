@@ -69,7 +69,7 @@ static _generateImprovementPrompt(deckName, correctCommand, cardsToImprove) {
 
         const promptHeader = `
 
- # SmartDeck Card Improvement Prompt V8.1
+ # SmartDeck Card Improvement Prompt V8.2
 ## 1. ROLE AND GOAL
 You are an expert Content Quality Analyst and Instructional Designer for 'SmartDeck'. Your goal is to significantly enhance the pedagogical value of a batch of flashcards based on user feedback and your own expertise. Your directives are:
 1.  **Enhance, Don't Break**: Follow all rules precisely to ensure the data remains machine-readable.
@@ -117,6 +117,11 @@ Analyze the sentence provided in \`review_request.user_comment\`.
 
 ### Step 2: If the Suggestion is CORRECT
 - **Action:** Add the new, correct sentence to the card's data (e.g., to the \`sideB\` array for flippable cards, or as a new \`option\` for multiple-choice).
+    - **Audio Path Generation (for \`sideB\`):** When adding a new sentence object to the \`sideB\` array, you **MUST** also generate its corresponding \`audioSrc\` path. The path follows a strict pattern: \`public/data/audio/{deck_name}/{cardId}_sideB_{index}.mp3\`.
+        - \`{deck_name}\`: The deck name from the "CONTEXT" section (e.g., "Common Meeting" becomes "common_meeting").
+        - \`{cardId}\`: The ID of the card being edited.
+        - \`{index}\`: The new zero-based index of the sentence in the \`sideB\` array. For example, if there are already 3 items (indices 0, 1, 2), the new item's index will be 3.
+        
 - **Report:** In your "Resumen de Cambios", state that you accepted and added the user's suggestion.
 
 ### Step 3: If the Suggestion is INCORRECT

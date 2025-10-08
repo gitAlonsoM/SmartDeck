@@ -1678,7 +1678,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_073_sideB_2.mp3"
         }
       ],
-      "note": "**[3]**\n\nThis is an *Object Question*. The subject performing the action is [the QA team]. The question word 'Who' asks about the object—the person who received the report. Because the subject is known, the auxiliary verb [did] is mandatory.\n\n~Who the QA team reported the bug to?~.\n\n~Who was reported by the QA team?~ (This is a valid passive sentence, but it changes the meaning. It asks which person was the *subject* of the report, not who *received* the report. To ask who received it, you must use an active structure like 'Who did the team report to?')\n\n~Who did the QA team report the issue?~ (Incomplete. When asking who received the report, you need the preposition 'to' at the end: 'Who did the QA team report the issue to?'.)"
+      "note": "**[3]**\n\nThis is an *Object Question*. The subject performing the action is [the QA team]. The question word 'Who' asks about the object—the person who received the report. Because the subject is known, the auxiliary verb [did] is mandatory.\n\n~Who the QA team reported the bug to?~.\n\n~Who was reported by the QA team?~ (This is a valid passive sentence, but it changes the meaning. It asks which person was the *subject* of the report, not who *received* the report. To ask who received it, you must use an active structure like 'Who did the team report to?')"
     },
     {
       "cardId": "mi_074",
@@ -1788,13 +1788,9 @@
         {
           "text": "I intended to write it, but I couldn't figure out where.",
           "audioSrc": "public/data/audio/common_meeting/mi_079_sideB_1.mp3"
-        },
-        {
-          "text": "I was going to write it, but I didn't know where.",
-          "audioSrc": "public/data/audio/common_meeting/mi_079_sideB_2.mp3"
         }
       ],
-      "note": "**[91]**\n\n[Write it down] is a separable phrasal verb. [To figure out] means to understand or solve something.\n\n~I was going to write down it.~ (Incorrect. When the object of a separable phrasal verb is a pronoun like 'it' or 'them', it **must** go between the verb and the particle: [write it down].)\n\nWhile 'write it' is grammatically correct, 'write it down' is more specific and common for taking notes, implying the action of recording information."
+      "note": "**[91]**\n\n[Write it down] is a separable phrasal verb. [To figure out] means to understand or solve something.\n\n~I was going to write down it.~ (Incorrect. When the object of a separable phrasal verb is a pronoun like 'it' or 'them', it **must** go between the verb and the particle: [write it down].)"
     },
     {
       "cardId": "mi_080",
@@ -2082,7 +2078,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_091_sideB_3.mp3"
         }
       ],
-      "note": "In questions like this, you can often omit the verb 'to be' for conciseness: [Any updates?] is a shortening of [Are there any updates?].\n\n[What's the latest] is a common informal phrase for asking about the most recent information.\n\n~Is there a new on that problem?~ ('News' is an uncountable noun and does not use the article 'a'. The correct form is 'Is there any news...?')\n\n~Is there any updates on that issue?~ ('Updates' is a plural noun and requires 'Are there...'. The correct form is 'Are there any updates...?')"
+      "note": "In questions like this, you can often omit the verb 'to be' for conciseness: [Any updates?] is a shortening of [Are there any updates?].\n\n[What's the latest] is a common informal phrase for asking about the most recent information."
     },
     {
       "cardId": "mi_092",
@@ -2336,7 +2332,7 @@
       ],
       "note": "The Spanish question can be formed just with intonation, but in English, you must use an auxiliary verb. The statement [You have the accounts...] becomes a question by adding [Do] at the beginning: [Do you have...].\n\n~You have the accounts...?~ is a common error as it is a statement, not a question.\n\nTo express purpose, use the infinitive [to test], not ~for test~ or ~for testing it~."
     },
-    {
+     {
       "cardId": "mi_103",
       "cardType": "flippable",
       "sideA": "¿Cuánto tiempo va a durar la reunión?",
@@ -2356,10 +2352,6 @@
         {
           "text": "What's the duration of the meeting?",
           "audioSrc": "public/data/audio/common_meeting/mi_103_sideB_3.mp3"
-        },
-        {
-          "text": "How long will the meeting last?",
-          "audioSrc": "public/data/audio/common_meeting/mi_103_sideB_4.mp3"
         }
       ],
       "note": "**[102]**\n\nTo ask about duration, you can use verbs like [last], [be], or [take].\n\nThe noun [duration] is also correct but often sounds more formal.\n\nA common error is using the noun 'duration' as a verb: ~How long will the meeting duration?~ is incorrect."
@@ -2440,17 +2432,9 @@
         {
           "text": "The duration of the last outage was three hours.",
           "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_2.mp3"
-        },
-        {
-          "text": "The last service interruption lasted for three hours.",
-          "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_3.mp3"
-        },
-        {
-          "text": "The last interruption of the service lasted three hours.",
-          "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_4.mp3"
         }
       ],
-      "note": "**[102]**\n\nBoth [lasted for] and [was down for] are natural ways to express the duration of a past event.\n\nUsing [duration] is more formal and suitable for reports.\n\nA common redundancy error is mixing verb forms: ~The outage was lasted for three hours~. The correct forms are [The outage lasted] or [The outage was three hours long].\n\n'Service interruption' is a common compound noun and often sounds more natural than 'interruption of the service'. The preposition 'for' is optional when talking about duration (e.g., 'lasted three hours')."
+      "note": "**[102]**\n\nBoth [lasted for] and [was down for] are natural ways to express the duration of a past event.\n\nUsing [duration] is more formal and suitable for reports.\n\nA common redundancy error is mixing verb forms: ~The outage was lasted for three hours~. The correct forms are [The outage lasted] or [The outage was three hours long]."
     },
     {
       "cardId": "mi_108",
@@ -2470,7 +2454,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_2.mp3"
         }
       ],
-      "note": "**[50]**\n\nThe structure for this question is: `How` + `auxiliary` + `subject` + `verb`. For a singular subject like [this mode], the auxiliary is [does].\n\nCommon errors include mixing auxiliaries (~How does this mode is activated?~) or incorrect verb conjugation (~How does this mode gets activated?~). After 'does', the verb must be in its base form ([get]).\n\n~How does this mode activated?~ (Incorrect. After the auxiliary 'does', the main verb must be in its base form. The correct structure is 'How does this mode get activated?'.)"
+      "note": "**[50]**\n\nThe structure for this question is: `How` + `auxiliary` + `subject` + `verb`. For a singular subject like [this mode], the auxiliary is [does].\n\nCommon errors include mixing auxiliaries (~How does this mode is activated?~) or incorrect verb conjugation (~How does this mode gets activated?~). After 'does', the verb must be in its base form ([get])."
     },
     {
       "cardId": "mi_109",
@@ -2510,9 +2494,9 @@
           "audioSrc": "public/data/audio/common_meeting/mi_110_sideB_2.mp3"
         }
       ],
-      "note": "**[50]**\n\nFor questions in the simple past, the auxiliary is [did]. The main verb that follows must return to its base form ([get]).\n\nFrequent errors involve mixing past tense auxiliaries (~Why did the meeting was canceled?~) or forgetting the auxiliary entirely (~Why the meeting get canceled?~).\n\n~Why the meeting was canceled?~ (Incorrect word order for a direct question. The auxiliary verb 'was' should come before the subject 'the meeting': 'Why was the meeting canceled?'.)"
+      "note": "**[50]**\n\nFor questions in the simple past, the auxiliary is [did]. The main verb that follows must return to its base form ([get]).\n\nFrequent errors involve mixing past tense auxiliaries (~Why did the meeting was canceled?~) or forgetting the auxiliary entirely (~Why the meeting get canceled?~)."
     },
-    {
+     {
       "cardId": "mi_111",
       "cardType": "flippable",
       "sideA": "No estoy seguro de la respuesta, pero puedo investigarlo.",
@@ -2556,73 +2540,9 @@
         {
           "text": "That's not something I'm familiar with, but I'm happy to learn.",
           "audioSrc": "public/data/audio/common_meeting/mi_112_sideB_3.mp3"
-        },
-        {
-          "text": "Currently I don't know how to do that, but I can learn it.",
-          "audioSrc": "public/data/audio/common_meeting/mi_112_sideB_4.mp3"
         }
       ],
       "note": "**[16]**\n\nPhrases like [I'm a quick learner] or [I can figure it out] are proactive and positive ways to address a knowledge gap in a professional setting.\n\nThe phrasal verb 'figure out' means to understand or solve something.\n\nTo talk about learning a skill, the correct structure is `learn how to do something`. A common error is using an incorrect preposition: ~I can learn about to do that.~"
-    },
-    {
-    "cardId": "mi_113",
-    "cardType": "flippable",
-    "sideA": "¿Qué hace exactamente este script?",
-    "sideB": [
-      {
-        "text": "What exactly does this script do?",
-        "audioSrc": "public/data/audio/common_meeting/mi_113_sideB_0.mp3"
-      },
-      {
-        "text": "What is the function of this script?",
-        "audioSrc": "public/data/audio/common_meeting/mi_113_sideB_1.mp3"
-      },
-      {
-        "text": "What does this script accomplish?",
-        "audioSrc": "public/data/audio/common_meeting/mi_113_sideB_2.mp3"
-      }
-    ],
-    "note": "**[50]**\n\nThis structure uses 'does' as the auxiliary verb for a singular subject ([this script]) and 'do' as the main verb. The pattern is `What does + [subject] + do?`.\n\nA very common error is omitting the main verb 'do' at the end of the question, which leaves the sentence incomplete: ~What exactly does this script?~."
-  },
-  {
-    "cardId": "mi_114",
-    "cardType": "flippable",
-    "sideA": "¿Qué hizo el último hotfix para solucionar el problema?",
-    "sideB": [
-      {
-        "text": "What did the last hotfix do to solve the issue?",
-        "audioSrc": "public/data/audio/common_meeting/mi_114_sideB_0.mp3"
-      },
-      {
-        "text": "How did the last hotfix address the problem?",
-        "audioSrc": "public/data/audio/common_meeting/mi_114_sideB_1.mp3"
-      },
-      {
-        "text": "What action did the last hotfix take to fix the bug?",
-        "audioSrc": "public/data/audio/common_meeting/mi_114_sideB_2.mp3"
-      }
-    ],
-    "note": "**[50]**\n\nFor questions in the simple past, the auxiliary is [did]. The main verb that follows must return to its base form ([do]).\n\nA frequent error involves conjugating the main verb to the past tense as well, which is redundant: ~What did the last hotfix did to solve the issue?~."
-  },
-  {
-    "cardId": "mi_115",
-    "cardType": "flippable",
-    "sideA": "¿La función hizo lo que esperábamos?",
-    "sideB": [
-      {
-        "text": "Did the function do what we expected?",
-        "audioSrc": "public/data/audio/common_meeting/mi_115_sideB_0.mp3"
-      },
-      {
-        "text": "Did the function perform as expected?",
-        "audioSrc": "public/data/audio/common_meeting/mi_115_sideB_1.mp3"
-      },
-      {
-        "text": "Did the function do its job correctly?",
-        "audioSrc": "public/data/audio/common_meeting/mi_115_sideB_2.mp3"
-      }
-    ],
-    "note": "**[50]**\n\nTo form a yes/no question in the simple past, you must start with the auxiliary [Did], followed by the subject and the base form of the main verb ([do]). The structure is `Did + [subject] + do...?`.\n\nA common mistake is to use the word order of a statement instead of a question: ~The function did what we expected?~."
-  }
+    }
   ]
 }

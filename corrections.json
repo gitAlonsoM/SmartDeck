@@ -1,106 +1,190 @@
 [
   {
-    "cardId": "mi_099",
+    "cardId": "mi_107",
     "cardType": "flippable",
-    "sideA": "¿No deberíamos haber informado al cliente sobre este retraso?",
+    "sideA": "La última interrupción del servicio duró tres horas.",
     "sideB": [
       {
-        "text": "Shouldn't we have informed the client about this delay?",
-        "audioSrc": "public/data/audio/common_meeting/mi_099_sideB_0.mp3"
+        "text": "The last service outage lasted for three hours.",
+        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_0.mp3"
       },
       {
-        "text": "Shouldn't we have let the client know about this delay?",
-        "audioSrc": "public/data/audio/common_meeting/mi_099_sideB_1.mp3"
+        "text": "The service was down for three hours.",
+        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_1.mp3"
       },
       {
-        "text": "Should we not have told the client about this delay?",
-        "audioSrc": "public/data/audio/common_meeting/mi_099_sideB_2.mp3"
+        "text": "The duration of the last outage was three hours.",
+        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_2.mp3"
+      },
+      {
+        "text": "The last service interruption lasted for three hours.",
+        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_3.mp3"
+      },
+      {
+        "text": "The last interruption of the service lasted three hours.",
+        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_4.mp3"
       }
     ],
-    "note": "**[4]**\n\nTo talk about a past action that was expected but didn't happen, use the structure: [Shouldn't] + [have] + [Past Participle].\n\nA frequent mistake is using 'had' instead of 'have': ~Shouldn't we had informed...~ is incorrect. The auxiliary is always [have].\n\n~Shouldn't we have to informe to the client about this delay?~ (Incorrect. The structure for a past missed action is 'should have + past participle', not 'have to'. Also, the verb 'inform' does not take 'to' before the object: you 'inform someone'.)"
+    "note": "**[102]**\n\nBoth [lasted for] and [was down for] are natural ways to express the duration of a past event.\n\nUsing [duration] is more formal and suitable for reports.\n\nA common redundancy error is mixing verb forms: ~The outage was lasted for three hours~. The correct forms are [The outage lasted] or [The outage was three hours long].\n\n'Service interruption' is a common compound noun and often sounds more natural than 'interruption of the service'. The preposition 'for' is optional when talking about duration (e.g., 'lasted three hours')."
   },
   {
-    "cardId": "mi_101",
+    "cardId": "mi_110",
     "cardType": "flippable",
-    "sideA": "¿No es esa la misma issue que reportamos la semana pasada?",
+    "sideA": "¿Por qué se canceló la reunión?",
     "sideB": [
       {
-        "text": "Isn't that the same issue we reported last week?",
-        "audioSrc": "public/data/audio/common_meeting/mi_101_sideB_0.mp3"
+        "text": "Why did the meeting get canceled?",
+        "audioSrc": "public/data/audio/common_meeting/mi_110_sideB_0.mp3"
       },
       {
-        "text": "Isn't this a duplicate of the issue we logged last week?",
-        "audioSrc": "public/data/audio/common_meeting/mi_101_sideB_1.mp3"
+        "text": "Why was the meeting canceled?",
+        "audioSrc": "public/data/audio/common_meeting/mi_110_sideB_1.mp3"
       },
       {
-        "text": "Isn't that the same bug from last week?",
-        "audioSrc": "public/data/audio/common_meeting/mi_101_sideB_2.mp3"
+        "text": "Why did they cancel the meeting?",
+        "audioSrc": "public/data/audio/common_meeting/mi_110_sideB_2.mp3"
       }
     ],
-    "note": "**[4]**\n\n[Isn't] is used for singular subjects like 'that' or 'this'. Using technical terms like [duplicate] or [logged] instead of 'reported' is very common in meetings.\n\nA common error is using an unnecessary article with time expressions: ~...reported the last week?~ is incorrect. The correct form is just [last week].\n\n~Isn't that the same issue we've reported last week?~ (Incorrect. The Present Perfect tense ('we've reported') cannot be used with a specific past time marker like 'last week'. The Simple Past ('we reported') must be used instead.)"
+    "note": "**[50]**\n\nFor questions in the simple past, the auxiliary is [did]. The main verb that follows must return to its base form ([get]).\n\nFrequent errors involve mixing past tense auxiliaries (~Why did the meeting was canceled?~) or forgetting the auxiliary entirely (~Why the meeting get canceled?~).\n\n~Why the meeting was canceled?~ (Incorrect word order for a direct question. The auxiliary verb 'was' should come before the subject 'the meeting': 'Why was the meeting canceled?'.)"
   },
   {
-    "cardId": "mi_075",
+    "cardId": "mi_112",
     "cardType": "flippable",
-    "sideA": "¿Qué cambios requiere la nueva política de seguridad?",
+    "sideA": "Actualmente no sé cómo hacer eso, pero puedo aprenderlo.",
     "sideB": [
       {
-        "text": "What changes does the new security policy require?",
-        "audioSrc": "public/data/audio/common_meeting/mi_075_sideB_0.mp3"
+        "text": "I don't currently know how to do that, but I can learn.",
+        "audioSrc": "public/data/audio/common_meeting/mi_112_sideB_0.mp3"
       },
       {
-        "text": "What modifications does the new security policy need?",
-        "audioSrc": "public/data/audio/common_meeting/mi_075_sideB_1.mp3"
+        "text": "I'm not familiar with that process, but I'm a quick learner.",
+        "audioSrc": "public/data/audio/common_meeting/mi_112_sideB_1.mp3"
       },
       {
-        "text": "What changes are needed for the new security policy?",
-        "audioSrc": "public/data/audio/common_meeting/mi_075_sideB_2.mp3"
+        "text": "I haven't done that before, but I can figure it out.",
+        "audioSrc": "public/data/audio/common_meeting/mi_112_sideB_2.mp3"
+      },
+      {
+        "text": "That's not something I'm familiar with, but I'm happy to learn.",
+        "audioSrc": "public/data/audio/common_meeting/mi_112_sideB_3.mp3"
+      },
+      {
+        "text": "Currently I don't know how to do that, but I can learn it.",
+        "audioSrc": "public/data/audio/common_meeting/mi_112_sideB_4.mp3"
       }
     ],
-    "note": "**[3]**\n\nThis is an *Object Question*. The subject is [the new security policy]. The question asks about the object ('What changes'). Since we have a known subject, we must use the auxiliary verb [does] (because 'policy' is singular) before the subject.\n\nWhat changes the new security policy requires?.\n\n~What changes require the new security policy?~ (Incorrect question structure. This sentence treats 'What changes' as the subject doing the action. However, the real subject is 'the new security policy' (singular), so you must use the auxiliary verb 'does' before it. Correct form: 'What changes does the new security policy require?'.)\n\n~What changes does the new security policy require to?~ (Incorrect. The verb 'require' in this question does not need 'to' at the end. You might be thinking of the structure 'require someone **to do** something', e.g., 'It requires us **to update** our software.')"
+    "note": "**[16]**\n\nPhrases like [I'm a quick learner] or [I can figure it out] are proactive and positive ways to address a knowledge gap in a professional setting.\n\nThe phrasal verb 'figure out' means to understand or solve something.\n\nTo talk about learning a skill, the correct structure is `learn how to do something`. A common error is using an incorrect preposition: ~I can learn about to do that.~"
   },
   {
-    "cardId": "mi_080",
+    "cardId": "mi_073",
     "cardType": "flippable",
-    "sideA": "El volumen está por sobre el mínimo.",
+    "sideA": "¿A quién reportó el error el equipo de QA?",
     "sideB": [
       {
-        "text": "The volume is above the minimum.",
-        "audioSrc": "public/data/audio/common_meeting/mi_080_sideB_0.mp3"
+        "text": "Who did the QA team report the bug to?",
+        "audioSrc": "public/data/audio/common_meeting/mi_073_sideB_0.mp3"
       },
       {
-        "text": "The volume is over the minimum threshold.",
-        "audioSrc": "public/data/audio/common_meeting/mi_080_sideB_1.mp3"
+        "text": "To whom did the QA team report the error?",
+        "audioSrc": "public/data/audio/common_meeting/mi_073_sideB_1.mp3"
+      },
+      {
+        "text": "Who did the QA team notify about the bug?",
+        "audioSrc": "public/data/audio/common_meeting/mi_073_sideB_2.mp3"
       }
     ],
-    "note": "To indicate a level that is higher than another, use the prepositions [above] or [over].\n\n~The volume is up the minimum.~ (Incorrect. 'Up' is not used in this context to compare levels.)\n\n[Threshold] is a noun that means a level or point at which something starts to happen. In this context, it's a synonym for 'minimum level' or 'limit'."
+    "note": "**[3]**\n\nThis is an *Object Question*. The subject performing the action is [the QA team]. The question word 'Who' asks about the object—the person who received the report. Because the subject is known, the auxiliary verb [did] is mandatory.\n\n~Who the QA team reported the bug to?~.\n\n~Who was reported by the QA team?~ (This is a valid passive sentence, but it changes the meaning. It asks which person was the *subject* of the report, not who *received* the report. To ask who received it, you must use an active structure like 'Who did the team report to?')\n\n~Who did the QA team report the issue?~ (Incomplete. When asking who received the report, you need the preposition 'to' at the end: 'Who did the QA team report the issue to?'.)"
   },
   {
-    "cardId": "mi_067",
+    "cardId": "mi_091",
     "cardType": "flippable",
-    "sideA": "¿No habíamos solucionado este problema en el último release?",
+    "sideA": "¿Hay alguna novedad sobre ese problema?",
     "sideB": [
       {
-        "text": "Didn't we fix this issue in the last release?",
-        "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_0.mp3"
+        "text": "Any updates on that issue?",
+        "audioSrc": "public/data/audio/common_meeting/mi_091_sideB_0.mp3"
       },
       {
-        "text": "Didn't we already solve this problem in the previous release?",
-        "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_1.mp3"
+        "text": "Is there any news on that problem?",
+        "audioSrc": "public/data/audio/common_meeting/mi_091_sideB_1.mp3"
       },
       {
-        "text": "Did we not resolve this issue in the last release?",
-        "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_2.mp3"
+        "text": "What's the latest on that issue?",
+        "audioSrc": "public/data/audio/common_meeting/mi_091_sideB_2.mp3"
       },
       {
-        "text": "Haven't we fixed this issue in the latest release?",
-        "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_3.mp3"
-      },
-      {
-        "text": "Haven't we solved this issue in the latest release?",
-        "audioSrc": "public/data/audio/common_meeting/mi_067_sideB_4.mp3"
+        "text": "What's the status of that issue?",
+        "audioSrc": "public/data/audio/common_meeting/mi_091_sideB_3.mp3"
       }
     ],
-    "note": "**[4]**\n\nFor past tense negative questions, use [Didn't]. It's formed from 'did + not'. The question is structured as: [Didn't + subject + base verb].\n\nNever mix past tense on the auxiliary and the main verb. Didn't we fixed... is incorrect. It must be [Didn't we fix...].\n\nUsing the Present Perfect ([Haven't we fixed...]) is also correct and emphasizes the connection of the past action to the present situation."
+    "note": "In questions like this, you can often omit the verb 'to be' for conciseness: [Any updates?] is a shortening of [Are there any updates?].\n\n[What's the latest] is a common informal phrase for asking about the most recent information.\n\n~Is there a new on that problem?~ ('News' is an uncountable noun and does not use the article 'a'. The correct form is 'Is there any news...?')\n\n~Is there any updates on that issue?~ ('Updates' is a plural noun and requires 'Are there...'. The correct form is 'Are there any updates...?')"
+  },
+  {
+    "cardId": "mi_108",
+    "cardType": "flippable",
+    "sideA": "¿Cómo se activa este modo?",
+    "sideB": [
+      {
+        "text": "How does this mode get activated?",
+        "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_0.mp3"
+      },
+      {
+        "text": "How is this mode activated?",
+        "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_1.mp3"
+      },
+      {
+        "text": "How do you activate this mode?",
+        "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_2.mp3"
+      }
+    ],
+    "note": "**[50]**\n\nThe structure for this question is: `How` + `auxiliary` + `subject` + `verb`. For a singular subject like [this mode], the auxiliary is [does].\n\nCommon errors include mixing auxiliaries (~How does this mode is activated?~) or incorrect verb conjugation (~How does this mode gets activated?~). After 'does', the verb must be in its base form ([get]).\n\n~How does this mode activated?~ (Incorrect. After the auxiliary 'does', the main verb must be in its base form. The correct structure is 'How does this mode get activated?'.)"
+  },
+  {
+    "cardId": "mi_079",
+    "cardType": "flippable",
+    "sideA": "Iba a escribirlo, pero no supe dónde.",
+    "sideB": [
+      {
+        "text": "I was going to write it down, but I didn't know where.",
+        "audioSrc": "public/data/audio/common_meeting/mi_079_sideB_0.mp3"
+      },
+      {
+        "text": "I intended to write it, but I couldn't figure out where.",
+        "audioSrc": "public/data/audio/common_meeting/mi_079_sideB_1.mp3"
+      },
+      {
+        "text": "I was going to write it, but I didn't know where.",
+        "audioSrc": "public/data/audio/common_meeting/mi_079_sideB_2.mp3"
+      }
+    ],
+    "note": "**[91]**\n\n[Write it down] is a separable phrasal verb. [To figure out] means to understand or solve something.\n\n~I was going to write down it.~ (Incorrect. When the object of a separable phrasal verb is a pronoun like 'it' or 'them', it **must** go between the verb and the particle: [write it down].)\n\nWhile 'write it' is grammatically correct, 'write it down' is more specific and common for taking notes, implying the action of recording information."
+  },
+  {
+    "cardId": "mi_103",
+    "cardType": "flippable",
+    "sideA": "¿Cuánto tiempo va a durar la reunión?",
+    "sideB": [
+      {
+        "text": "How long is the meeting going to last?",
+        "audioSrc": "public/data/audio/common_meeting/mi_103_sideB_0.mp3"
+      },
+      {
+        "text": "How long will the meeting be?",
+        "audioSrc": "public/data/audio/common_meeting/mi_103_sideB_1.mp3"
+      },
+      {
+        "text": "How long will the meeting take?",
+        "audioSrc": "public/data/audio/common_meeting/mi_103_sideB_2.mp3"
+      },
+      {
+        "text": "What's the duration of the meeting?",
+        "audioSrc": "public/data/audio/common_meeting/mi_103_sideB_3.mp3"
+      },
+      {
+        "text": "How long will the meeting last?",
+        "audioSrc": "public/data/audio/common_meeting/mi_103_sideB_4.mp3"
+      }
+    ],
+    "note": "**[102]**\n\nTo ask about duration, you can use verbs like [last], [be], or [take].\n\nThe noun [duration] is also correct but often sounds more formal.\n\nA common error is using the noun 'duration' as a verb: ~How long will the meeting duration?~ is incorrect."
   }
 ]
