@@ -1,190 +1,205 @@
 [
   {
-    "cardId": "mi_107",
-    "cardType": "flippable",
-    "sideA": "La última interrupción del servicio duró tres horas.",
-    "sideB": [
+    "cardId": "egac_288",
+    "category": "Feedback: 'Exactly'",
+    "sentenceParts": {
+      "prefix": "A: So the file needs to be in PDF format, right? B: ",
+      "suffix": ". That's what the instructions say."
+    },
+    "options": [
       {
-        "text": "The last service outage lasted for three hours.",
-        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_0.mp3"
+        "text": "Exactly",
+        "isCorrect": true
       },
       {
-        "text": "The service was down for three hours.",
-        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_1.mp3"
+        "text": "Exact",
+        "isCorrect": false
       },
       {
-        "text": "The duration of the last outage was three hours.",
-        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_2.mp3"
-      },
-      {
-        "text": "The last service interruption lasted for three hours.",
-        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_3.mp3"
-      },
-      {
-        "text": "The last interruption of the service lasted three hours.",
-        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_4.mp3"
+        "text": "Correctly",
+        "isCorrect": false
       }
     ],
-    "note": "**[102]**\n\nBoth [lasted for] and [was down for] are natural ways to express the duration of a past event.\n\nUsing [duration] is more formal and suitable for reports.\n\nA common redundancy error is mixing verb forms: ~The outage was lasted for three hours~. The correct forms are [The outage lasted] or [The outage was three hours long].\n\n'Service interruption' is a common compound noun and often sounds more natural than 'interruption of the service'. The preposition 'for' is optional when talking about duration (e.g., 'lasted three hours')."
+    "correctAnswer": "A: So the file needs to be in PDF format, right? B: Exactly. That's what the instructions say.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_288.mp3",
+    "hint": "'Absolutely' is used to show strong agreement with an opinion, while 'exactly' is for confirming a fact.",
+    "content": {
+      "type": "text",
+      "value": "[Exactly] is the perfect word to confirm that a piece of information is completely and precisely correct.\n\n~Exact~ is an adjective (e.g., 'the exact time') and cannot be used as an interjection here.\n~Correctly~ is an adverb that describes how an action is done ('You answered correctly')."
+    }
   },
   {
-    "cardId": "mi_110",
-    "cardType": "flippable",
-    "sideA": "¿Por qué se canceló la reunión?",
-    "sideB": [
+    "cardId": "egac_484",
+    "category": "Compound Nouns: Hyphenated",
+    "sentenceParts": {
+      "prefix": "The hotel ",
+      "suffix": " is at 11 AM, but you can request a late departure."
+    },
+    "options": [
       {
-        "text": "Why did the meeting get canceled?",
-        "audioSrc": "public/data/audio/common_meeting/mi_110_sideB_0.mp3"
+        "text": "check-out",
+        "isCorrect": true
       },
       {
-        "text": "Why was the meeting canceled?",
-        "audioSrc": "public/data/audio/common_meeting/mi_110_sideB_1.mp3"
+        "text": "check out",
+        "isCorrect": false
       },
       {
-        "text": "Why did they cancel the meeting?",
-        "audioSrc": "public/data/audio/common_meeting/mi_110_sideB_2.mp3"
+        "text": "checking out",
+        "isCorrect": false
       }
     ],
-    "note": "**[50]**\n\nFor questions in the simple past, the auxiliary is [did]. The main verb that follows must return to its base form ([get]).\n\nFrequent errors involve mixing past tense auxiliaries (~Why did the meeting was canceled?~) or forgetting the auxiliary entirely (~Why the meeting get canceled?~).\n\n~Why the meeting was canceled?~ (Incorrect word order for a direct question. The auxiliary verb 'was' should come before the subject 'the meeting': 'Why was the meeting canceled?'.)"
+    "correctAnswer": "The hotel check-out is at 11 AM, but you can request a late departure.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_484.mp3",
+    "hint": "When a phrasal verb like 'check out' is used as a noun, it is often hyphenated.",
+    "content": {
+      "type": "text",
+      "value": "**[99]**\n\nThe noun form, meaning the time of departure, is the hyphenated compound [check-out].\n\n**Note:** The one-word form ~checkout~ is also a correct noun and is often used interchangeably, though [check-out] is common for hotels.\n\n~check out~ (two words) is the phrasal verb, not the noun.\n~Checking out~ is the verb form (gerund/present participle) and does not fit the sentence structure."
+    }
   },
   {
-    "cardId": "mi_112",
-    "cardType": "flippable",
-    "sideA": "Actualmente no sé cómo hacer eso, pero puedo aprenderlo.",
-    "sideB": [
+    "cardId": "egac_155",
+    "category": "Present Habits: Be used to + Gerund",
+    "sentenceParts": {
+      "prefix": "She's a nurse, so she",
+      "suffix": " working long hours."
+    },
+    "options": [
       {
-        "text": "I don't currently know how to do that, but I can learn.",
-        "audioSrc": "public/data/audio/common_meeting/mi_112_sideB_0.mp3"
+        "text": "'s used to",
+        "isCorrect": true
       },
       {
-        "text": "I'm not familiar with that process, but I'm a quick learner.",
-        "audioSrc": "public/data/audio/common_meeting/mi_112_sideB_1.mp3"
+        "text": " used to",
+        "isCorrect": false
       },
       {
-        "text": "I haven't done that before, but I can figure it out.",
-        "audioSrc": "public/data/audio/common_meeting/mi_112_sideB_2.mp3"
-      },
-      {
-        "text": "That's not something I'm familiar with, but I'm happy to learn.",
-        "audioSrc": "public/data/audio/common_meeting/mi_112_sideB_3.mp3"
-      },
-      {
-        "text": "Currently I don't know how to do that, but I can learn it.",
-        "audioSrc": "public/data/audio/common_meeting/mi_112_sideB_4.mp3"
+        "text": "'s used to work",
+        "isCorrect": false
       }
     ],
-    "note": "**[16]**\n\nPhrases like [I'm a quick learner] or [I can figure it out] are proactive and positive ways to address a knowledge gap in a professional setting.\n\nThe phrasal verb 'figure out' means to understand or solve something.\n\nTo talk about learning a skill, the correct structure is `learn how to do something`. A common error is using an incorrect preposition: ~I can learn about to do that.~"
+    "correctAnswer": "She's a nurse, so she's used to working long hours.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_155.mp3",
+    "hint": "The word 'to' here is a preposition, not part of an infinitive, which is why it's followed by a gerund.",
+    "content": {
+      "type": "text",
+      "value": "**[15]**\n\nThe expression [be used to] must be followed by a noun or a gerund (-ing form).\n\n~used to~ by itself refers to a past habit.\n~'s used to work~ is incorrect because the structure requires a gerund, not an infinitive."
+    }
   },
   {
-    "cardId": "mi_073",
-    "cardType": "flippable",
-    "sideA": "¿A quién reportó el error el equipo de QA?",
-    "sideB": [
+    "cardId": "egac_149",
+    "category": "Modals: Had Better",
+    "sentenceParts": {
+      "prefix": "The weather looks bad. We",
+      "suffix": " take an umbrella."
+    },
+    "options": [
       {
-        "text": "Who did the QA team report the bug to?",
-        "audioSrc": "public/data/audio/common_meeting/mi_073_sideB_0.mp3"
+        "text": "'d better",
+        "isCorrect": true
       },
       {
-        "text": "To whom did the QA team report the error?",
-        "audioSrc": "public/data/audio/common_meeting/mi_073_sideB_1.mp3"
+        "text": " should",
+        "isCorrect": false
       },
       {
-        "text": "Who did the QA team notify about the bug?",
-        "audioSrc": "public/data/audio/common_meeting/mi_073_sideB_2.mp3"
+        "text": " must",
+        "isCorrect": false
       }
     ],
-    "note": "**[3]**\n\nThis is an *Object Question*. The subject performing the action is [the QA team]. The question word 'Who' asks about the object—the person who received the report. Because the subject is known, the auxiliary verb [did] is mandatory.\n\n~Who the QA team reported the bug to?~.\n\n~Who was reported by the QA team?~ (This is a valid passive sentence, but it changes the meaning. It asks which person was the *subject* of the report, not who *received* the report. To ask who received it, you must use an active structure like 'Who did the team report to?')\n\n~Who did the QA team report the issue?~ (Incomplete. When asking who received the report, you need the preposition 'to' at the end: 'Who did the QA team report the issue to?'.)"
+    "correctAnswer": "The weather looks bad. We'd better take an umbrella.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_149.mp3",
+    "hint": "This expression is stronger than 'should' and implies more urgency.",
+    "content": {
+      "type": "text",
+      "value": "**[37]**\n\n['Had better'] (contracted to 'd better) is used for strong advice, implying a specific, negative consequence if ignored. It's followed by the base verb without 'to'.\n\n**Comparison:**\n- **'d better:** Strongest advice for this situation. Implies something bad will happen if you don't take an umbrella (you'll get wet).\n- **should:** General advice, less urgent.\n- **must:** Implies an obligation or rule, which doesn't fit this context."
+    }
   },
   {
-    "cardId": "mi_091",
-    "cardType": "flippable",
-    "sideA": "¿Hay alguna novedad sobre ese problema?",
-    "sideB": [
+    "cardId": "egac_254",
+    "category": "Expressions with 'Take': 'Take into account'",
+    "sentenceParts": {
+      "prefix": "When making your decision, you need to ",
+      "suffix": " all the possible consequences."
+    },
+    "options": [
       {
-        "text": "Any updates on that issue?",
-        "audioSrc": "public/data/audio/common_meeting/mi_091_sideB_0.mp3"
+        "text": "take into account",
+        "isCorrect": true
       },
       {
-        "text": "Is there any news on that problem?",
-        "audioSrc": "public/data/audio/common_meeting/mi_091_sideB_1.mp3"
+        "text": "take in account",
+        "isCorrect": false
       },
       {
-        "text": "What's the latest on that issue?",
-        "audioSrc": "public/data/audio/common_meeting/mi_091_sideB_2.mp3"
-      },
-      {
-        "text": "What's the status of that issue?",
-        "audioSrc": "public/data/audio/common_meeting/mi_091_sideB_3.mp3"
+        "text": "have in account",
+        "isCorrect": false
       }
     ],
-    "note": "In questions like this, you can often omit the verb 'to be' for conciseness: [Any updates?] is a shortening of [Are there any updates?].\n\n[What's the latest] is a common informal phrase for asking about the most recent information.\n\n~Is there a new on that problem?~ ('News' is an uncountable noun and does not use the article 'a'. The correct form is 'Is there any news...?')\n\n~Is there any updates on that issue?~ ('Updates' is a plural noun and requires 'Are there...'. The correct form is 'Are there any updates...?')"
+    "correctAnswer": "When making your decision, you need to take into account all the possible consequences.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_254.mp3",
+    "hint": "A more informal synonym is 'keep in mind'.",
+    "content": {
+      "type": "text",
+      "value": "[Take into account] is the correct, fixed idiom that means 'to consider'.\n\n~take in account~ is a common error; the preposition must be 'into'.\n~have in account~ is an incorrect translation from other languages; the verb must be 'take'."
+    }
   },
   {
-    "cardId": "mi_108",
-    "cardType": "flippable",
-    "sideA": "¿Cómo se activa este modo?",
-    "sideB": [
+    "cardId": "egac_184",
+    "category": "Comparisons: The same as",
+    "sentenceParts": {
+      "prefix": "My phone is exactly ",
+      "suffix": " yours."
+    },
+    "options": [
       {
-        "text": "How does this mode get activated?",
-        "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_0.mp3"
+        "text": "the same as",
+        "isCorrect": true
       },
       {
-        "text": "How is this mode activated?",
-        "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_1.mp3"
+        "text": "the same that",
+        "isCorrect": false
       },
       {
-        "text": "How do you activate this mode?",
-        "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_2.mp3"
+        "text": "same like",
+        "isCorrect": false
       }
     ],
-    "note": "**[50]**\n\nThe structure for this question is: `How` + `auxiliary` + `subject` + `verb`. For a singular subject like [this mode], the auxiliary is [does].\n\nCommon errors include mixing auxiliaries (~How does this mode is activated?~) or incorrect verb conjugation (~How does this mode gets activated?~). After 'does', the verb must be in its base form ([get]).\n\n~How does this mode activated?~ (Incorrect. After the auxiliary 'does', the main verb must be in its base form. The correct structure is 'How does this mode get activated?'.)"
+    "correctAnswer": "My phone is exactly the same as yours.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_184.mp3",
+    "hint": "This is a common error for speakers of Romance languages. In English, the preposition is 'as'.",
+    "content": {
+      "type": "text",
+      "value": "The correct fixed expression is [the same as].\n\n~the same that~ is a common error from Spanish speakers.\n~same like~ is grammatically incorrect."
+    }
   },
   {
-    "cardId": "mi_079",
-    "cardType": "flippable",
-    "sideA": "Iba a escribirlo, pero no supe dónde.",
-    "sideB": [
+    "cardId": "egac_232",
+    "category": "Modals: 'Ought to' for Moral Advice",
+    "sentenceParts": {
+      "prefix": "You made a mistake. I think you ",
+      "suffix": " apologize to her."
+    },
+    "options": [
       {
-        "text": "I was going to write it down, but I didn't know where.",
-        "audioSrc": "public/data/audio/common_meeting/mi_079_sideB_0.mp3"
+        "text": "ought to",
+        "isCorrect": true
       },
       {
-        "text": "I intended to write it, but I couldn't figure out where.",
-        "audioSrc": "public/data/audio/common_meeting/mi_079_sideB_1.mp3"
+        "text": "must to",
+        "isCorrect": false
       },
       {
-        "text": "I was going to write it, but I didn't know where.",
-        "audioSrc": "public/data/audio/common_meeting/mi_079_sideB_2.mp3"
+        "text": "had better to",
+        "isCorrect": false
       }
     ],
-    "note": "**[91]**\n\n[Write it down] is a separable phrasal verb. [To figure out] means to understand or solve something.\n\n~I was going to write down it.~ (Incorrect. When the object of a separable phrasal verb is a pronoun like 'it' or 'them', it **must** go between the verb and the particle: [write it down].)\n\nWhile 'write it' is grammatically correct, 'write it down' is more specific and common for taking notes, implying the action of recording information."
-  },
-  {
-    "cardId": "mi_103",
-    "cardType": "flippable",
-    "sideA": "¿Cuánto tiempo va a durar la reunión?",
-    "sideB": [
-      {
-        "text": "How long is the meeting going to last?",
-        "audioSrc": "public/data/audio/common_meeting/mi_103_sideB_0.mp3"
-      },
-      {
-        "text": "How long will the meeting be?",
-        "audioSrc": "public/data/audio/common_meeting/mi_103_sideB_1.mp3"
-      },
-      {
-        "text": "How long will the meeting take?",
-        "audioSrc": "public/data/audio/common_meeting/mi_103_sideB_2.mp3"
-      },
-      {
-        "text": "What's the duration of the meeting?",
-        "audioSrc": "public/data/audio/common_meeting/mi_103_sideB_3.mp3"
-      },
-      {
-        "text": "How long will the meeting last?",
-        "audioSrc": "public/data/audio/common_meeting/mi_103_sideB_4.mp3"
-      }
-    ],
-    "note": "**[102]**\n\nTo ask about duration, you can use verbs like [last], [be], or [take].\n\nThe noun [duration] is also correct but often sounds more formal.\n\nA common error is using the noun 'duration' as a verb: ~How long will the meeting duration?~ is incorrect."
+    "correctAnswer": "You made a mistake. I think you ought to apologize to her.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_232.mp3",
+    "hint": "'Ought to' is less common than 'should' in modern conversational English.",
+    "content": {
+      "type": "text",
+      "value": "**[59]**\n\n[Ought to] is a semi-modal verb used to give strong advice or express a moral obligation. It's a slightly more formal alternative to 'should'.\n\n~must to~ is grammatically incorrect; 'must' is not followed by 'to'.\n~had better to~ is grammatically incorrect; 'had better' is followed by the base verb without 'to' (e.g., 'had better apologize')."
+    }
   }
 ]

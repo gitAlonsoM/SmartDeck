@@ -1694,33 +1694,33 @@
       }
     },
     {
-      "cardId": "egac_059",
-      "category": "Vocabulary: Money (Slang)",
-      "sentenceParts": {
-        "prefix": "That's a bit too expensive. Do you have anything for around ten ",
-        "suffix": "?"
+    "cardId": "egac_059",
+    "category": "Vocabulary: Money (Slang)",
+    "sentenceParts": {
+      "prefix": "That's a bit too expensive. Do you have anything for around ten ",
+      "suffix": "?"
+    },
+    "options": [
+      {
+        "text": "bucks",
+        "isCorrect": true
       },
-      "options": [
-        {
-          "text": "bucks",
-          "isCorrect": true
-        },
-        {
-          "text": "quid",
-          "isCorrect": false
-        },
-        {
-          "text": "euros",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "That's a bit too expensive. Do you have anything for around ten bucks?",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_059.mp3",
-      "hint": "This is the most common informal word for 'dollars' in the US and Canada.",
-      "content": {
-        "type": "text",
-        "value": "**[100]**\n\n[Bucks] is the most common slang term for dollars in North America.\n\n~Quid~ is the slang for British Pounds (£).\n~Euros~ is the formal name for the currency used in the Eurozone (€)."
+      {
+        "text": "quid",
+        "isCorrect": false
+      },
+      {
+        "text": "euros",
+        "isCorrect": false
       }
+    ],
+    "correctAnswer": "That's a bit too expensive. Do you have anything for around ten bucks?",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_059.mp3",
+    "hint": "This is the most common informal word for 'dollars' in the US and Canada.",
+    "content": {
+      "type": "text",
+      "value": "**[100]**\n\n[Bucks] is the most common slang term for dollars in North America.\n\n~Quid~ is the slang for British Pounds (£).\n~Euros~ is the formal name for the currency used in the Eurozone (€)."
+    }
     },
     {
       "cardId": "egac_060",
@@ -2592,34 +2592,36 @@
         "value": "For [years before 2000], the standard pronunciation is to split the year into two pairs of numbers: [nineteen twelve].\n\n~one thousand nine hundred twelve~ is very formal and rarely used.\n~ninety twelve~ is an incorrect combination."
       }
     },
-    {
-      "cardId": "egac_090",
-      "category": "Vocabulary: Money (Prices)",
-      "sentenceParts": {
-        "prefix": "The coffee costs $3.75. The most common way to say this is '",
-        "suffix": "'."
+
+     {
+    "cardId": "egac_090",
+    "category": "Vocabulary: Money (Prices)",
+    "sentenceParts": {
+      "prefix": "The coffee costs $3.75. The most common way to say this is '",
+      "suffix": "'."
+    },
+    "options": [
+      {
+        "text": "three seventy-five",
+        "isCorrect": true
       },
-      "options": [
-        {
-          "text": "three seventy-five",
-          "isCorrect": true
-        },
-        {
-          "text": "three and seventy-five",
-          "isCorrect": false
-        },
-        {
-          "text": "three dollars seventy-five cents",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "The coffee costs $3.75. The most common way to say this is 'three seventy-five'.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_090.mp3",
-      "hint": "In everyday speech, North Americans usually omit the words 'dollars' and 'cents'.",
-      "content": {
-        "type": "text",
-        "value": "**[100]**\n\nTo say a price like $3.75, you simply say the number for the dollars followed by the number for the cents: [three seventy-five].\n\n~three and seventy-five~ is incorrect as 'and' is not typically used.\n~three dollars seventy-five cents~ is grammatically correct but far too formal for everyday conversation."
+      {
+        "text": "three and seventy-five",
+        "isCorrect": false
+      },
+      {
+        "text": "three dollars seventy-five cents",
+        "isCorrect": false
       }
+    ],
+    "correctAnswer": "The coffee costs $3.75. The most common way to say this is 'three seventy-five'.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_090.mp3",
+    "hint": "In everyday speech, North Americans usually omit the words 'dollars' and 'cents'.",
+    "content": {
+      "type": "text",
+      "value": "**[100]**\n\nTo say a price like $3.75, you simply say the number for the dollars followed by the number for the cents: [three seventy-five].\n\n~three and seventy-five~ is incorrect as 'and' is not typically used.\n~three dollars seventy-five cents~ is grammatically correct but far too formal for everyday conversation."
+    }
+
     },
     {
       "cardId": "egac_091",
@@ -4307,7 +4309,7 @@
       "cardId": "egac_149",
       "category": "Modals: Had Better",
       "sentenceParts": {
-        "prefix": "The weather looks bad. We",
+        "prefix": "The weather looks bad. We ",
         "suffix": " take an umbrella."
       },
       "options": [
@@ -4316,11 +4318,11 @@
           "isCorrect": true
         },
         {
-          "text": " should",
+          "text": "should",
           "isCorrect": false
         },
         {
-          "text": " must",
+          "text": "must",
           "isCorrect": false
         }
       ],
@@ -4490,7 +4492,7 @@
           "isCorrect": true
         },
         {
-          "text": " used to",
+          "text": "used to",
           "isCorrect": false
         },
         {
@@ -5344,7 +5346,7 @@
       "hint": "This is a common error for speakers of Romance languages. In English, the preposition is 'as'.",
       "content": {
         "type": "text",
-        "value": "The correct fixed expression is [the same as].\n\n~the same that~ is a common error from Spanish speakers.\n~same like~ is grammatically incorrect."
+        "value": "**[73]**\n\nThe correct fixed expression is [the same as].\n\n~the same that~ is a common error from Spanish speakers.\n~same like~ is grammatically incorrect."
       }
     },
     {
@@ -6727,7 +6729,7 @@
           "isCorrect": false
         },
         {
-          "text": "had better to",
+          "text": "had better",
           "isCorrect": false
         }
       ],
@@ -6736,7 +6738,7 @@
       "hint": "'Ought to' is less common than 'should' in modern conversational English.",
       "content": {
         "type": "text",
-        "value": "**[59]**\n\n[Ought to] is a semi-modal verb used to give strong advice or express a moral obligation. It's a slightly more formal alternative to 'should'.\n\n~must to~ is grammatically incorrect; 'must' is not followed by 'to'.\n~had better to~ is grammatically incorrect; 'had better' is followed by the base verb without 'to' (e.g., 'had better apologize')."
+        "value": "**[59]**\n\n[Ought to] is a semi-modal verb used to give strong advice or express a moral obligation. It's a slightly more formal alternative to 'should'.\n\n~must to~ is grammatically incorrect; 'must' is not followed by 'to'.\n~had better~ is for urgent advice with a negative consequence, which is a bit too strong for this context."
       }
     },
     {
@@ -7374,7 +7376,7 @@
       "hint": "A more informal synonym is 'keep in mind'.",
       "content": {
         "type": "text",
-        "value": "[Take into account] is the correct, fixed idiom that means 'to consider'.\n\n~take in account~ is a common error; the preposition must be 'into'.\n~have in account~ is an incorrect translation from other languages; the verb must be 'take'."
+        "value": "**[18]**\n\n[Take into account] is the correct, fixed idiom that means 'to consider'.\n\n~take in account~ is a common error; the preposition must be 'into'.\n~have in account~ is an incorrect translation from other languages; the verb must be 'take'."
       }
     },
     {
@@ -8347,7 +8349,7 @@
           "isCorrect": true
         },
         {
-          "text": "Exact",
+          "text": "Absolutely",
           "isCorrect": false
         },
         {
@@ -8360,7 +8362,7 @@
       "hint": "'Absolutely' is used to show strong agreement with an opinion, while 'exactly' is for confirming a fact.",
       "content": {
         "type": "text",
-        "value": "[Exactly] is the perfect word to confirm that a piece of information is completely and precisely correct.\n\n~Exact~ is an adjective (e.g., 'the exact time') and cannot be used as an interjection here.\n~Correctly~ is an adverb that describes how an action is done ('You answered correctly')."
+        "value": "[Exactly] is the perfect word to confirm that a piece of information is completely and precisely correct.\n\n~Absolutely~ shows strong agreement, but 'Exactly' is better for confirming a specific fact.\n~Correctly~ is an adverb that describes how an action is done ('You answered correctly')."
       }
     },
     {
@@ -13612,529 +13614,529 @@
         "value": "**[57]**\n\n[Used to] must be used here because the verb 'be' describes a state of existence, not a repeated action. This is the key difference between the two forms.\n\n~Would~ is incorrect because it cannot be used with state verbs like 'be', 'have', or 'live'.\n~Had~ is the past simple and doesn't capture the meaning of a past situation that is no longer true."
       }
     },
-    {
-      "cardId": "egac_470",
-      "category": "Zero Conditional",
-      "sentenceParts": {
-        "prefix": "If you heat ice, it ",
-        "suffix": "."
-      },
-      "options": [
-        {
-          "text": "melts",
-          "isCorrect": true
-        },
-        {
-          "text": "will melt",
-          "isCorrect": false
-        },
-        {
-          "text": "is melting",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "If you heat ice, it melts.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_470.mp3",
-      "hint": "This conditional is for facts or things that are always true.",
-      "content": {
-        "type": "text",
-        "value": "**[65]**\n\nThe [Zero Conditional] is used for general truths and scientific facts. Both the 'if' clause and the main clause use the [Present Simple].\n\n~Will melt~ is incorrect because that structure belongs to the First Conditional (for possible future events, not certain facts).\n~Is melting~ is the present continuous and does not fit the structure for a general truth."
-      }
+     {
+    "cardId": "egac_470",
+    "category": "Zero Conditional",
+    "sentenceParts": {
+      "prefix": "If you heat ice, it ",
+      "suffix": "."
     },
-    {
-      "cardId": "egac_471",
-      "category": "Zero Conditional",
-      "sentenceParts": {
-        "prefix": "The server gets overloaded when it ",
-        "suffix": " too many requests."
+    "options": [
+      {
+        "text": "melts",
+        "isCorrect": true
       },
-      "options": [
-        {
-          "text": "receives",
-          "isCorrect": true
-        },
-        {
-          "text": "receive",
-          "isCorrect": false
-        },
-        {
-          "text": "will receive",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "The server gets overloaded when it receives too many requests.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_471.mp3",
-      "hint": "The subject is 'it' (the server), which is third-person singular.",
-      "content": {
-        "type": "text",
-        "value": "**[65]**\n\nFor general truths or cause-and-effect rules, the [Zero Conditional] uses the [Present Simple] in both clauses. Since the subject is 'it', the verb needs the '-s' ending: [receives].\n\n~Receive~ would be for a plural subject (e.g., 'when they receive').\n~Will receive~ is incorrect as it mixes this structure with the First Conditional."
-      }
-    },
-    {
-      "cardId": "egac_472",
-      "category": "First Conditional",
-      "sentenceParts": {
-        "prefix": "If you don't save your work now, you ",
-        "suffix": " it later."
+      {
+        "text": "will melt",
+        "isCorrect": false
       },
-      "options": [
-        {
-          "text": "will lose",
-          "isCorrect": true
-        },
-        {
-          "text": "lose",
-          "isCorrect": false
-        },
-        {
-          "text": "would lose",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "If you don't save your work now, you will lose it later.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_472.mp3",
-      "hint": "This structure is for a real and possible future situation.",
-      "content": {
-        "type": "text",
-        "value": "**[8]**\n\nThe [First Conditional] describes a likely future result. The structure is [If + Present Simple, ... will + base verb].\n\n~Lose~ would be for the Zero Conditional, but this is a specific future possibility, not a general truth.\n~Would lose~ is for the Second Conditional (hypothetical situations)."
+      {
+        "text": "is melting",
+        "isCorrect": false
       }
+    ],
+    "correctAnswer": "If you heat ice, it melts.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_470.mp3",
+    "hint": "This conditional is for facts or things that are always true.",
+    "content": {
+      "type": "text",
+      "value": "**[65]**\n\nThe [Zero Conditional] is used for general truths and scientific facts. Both the 'if' clause and the main clause use the [Present Simple].\n\n~Will melt~ is incorrect because that structure belongs to the First Conditional (for possible future events, not certain facts).\n~Is melting~ is the present continuous and does not fit the structure for a general truth."
+    }
+  },
+  {
+    "cardId": "egac_471",
+    "category": "Zero Conditional",
+    "sentenceParts": {
+      "prefix": "The server gets overloaded when it ",
+      "suffix": " too many requests."
     },
-    {
-      "cardId": "egac_473",
-      "category": "First Conditional",
-      "sentenceParts": {
-        "prefix": "The application will fail if the database connection ",
-        "suffix": "."
+    "options": [
+      {
+        "text": "receives",
+        "isCorrect": true
       },
-      "options": [
-        {
-          "text": "is lost",
-          "isCorrect": true
-        },
-        {
-          "text": "will be lost",
-          "isCorrect": false
-        },
-        {
-          "text": "would be lost",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "The application will fail if the database connection is lost.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_473.mp3",
-      "hint": "What verb tense is always used in the 'if' clause of the First Conditional?",
-      "content": {
-        "type": "text",
-        "value": "**[8]**\n\nIn the [First Conditional], the 'if' clause must always use the [Present Simple] ('is lost'), even though it refers to a future possibility. The main clause uses 'will' ('will fail').\n\n~Will be lost~ is incorrect because we do not use 'will' in the 'if' clause.\n~Would be lost~ is for the Second Conditional."
-      }
-    },
-    {
-      "cardId": "egac_474",
-      "category": "Modal Perfects: Criticism",
-      "sentenceParts": {
-        "prefix": "The build failed. You ",
-        "suffix": " that branch without pulling the latest changes."
+      {
+        "text": "receive",
+        "isCorrect": false
       },
-      "options": [
-        {
-          "text": "shouldn't have merged",
-          "isCorrect": true
-        },
-        {
-          "text": "couldn't have merged",
-          "isCorrect": false
-        },
-        {
-          "text": "mustn't have merged",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "The build failed. You shouldn't have merged that branch without pulling the latest changes.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_474.mp3",
-      "hint": "This sentence expresses criticism or advice about a past mistake that did happen.",
-      "content": {
-        "type": "text",
-        "value": "**[11]**\n\n[Shouldn't have merged] is used to criticize a past action. It implies that merging was the wrong thing to do.\n\n~Couldn't have merged~ means it was impossible to merge, which contradicts the context that the build failed because of a merge.\n~Mustn't have merged~ is not a standard structure for past deduction; 'can't have merged' is used instead."
+      {
+        "text": "will receive",
+        "isCorrect": false
       }
+    ],
+    "correctAnswer": "The server gets overloaded when it receives too many requests.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_471.mp3",
+    "hint": "The subject is 'it' (the server), which is third-person singular.",
+    "content": {
+      "type": "text",
+      "value": "**[65]**\n\nFor general truths or cause-and-effect rules, the [Zero Conditional] uses the [Present Simple] in both clauses. Since the subject is 'it', the verb needs the '-s' ending: [receives].\n\n~Receive~ would be for a plural subject (e.g., 'when they receive').\n~Will receive~ is incorrect as it mixes this structure with the First Conditional."
+    }
+  },
+  {
+    "cardId": "egac_472",
+    "category": "First Conditional",
+    "sentenceParts": {
+      "prefix": "If you don't save your work now, you ",
+      "suffix": " it later."
     },
-    {
-      "cardId": "egac_475",
-      "category": "Modal Perfects: Deduction",
-      "sentenceParts": {
-        "prefix": "I can't find my keys anywhere. I ",
-        "suffix": " them in the car."
+    "options": [
+      {
+        "text": "will lose",
+        "isCorrect": true
       },
-      "options": [
-        {
-          "text": "must have left",
-          "isCorrect": true
-        },
-        {
-          "text": "should have left",
-          "isCorrect": false
-        },
-        {
-          "text": "would have left",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "I can't find my keys anywhere. I must have left them in the car.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_475.mp3",
-      "hint": "This expresses a strong belief or logical conclusion about a past event.",
-      "content": {
-        "type": "text",
-        "value": "**[11]**\n\n[Must have left] is used for a logical deduction when you are almost certain something happened in the past.\n\n~Should have left~ means it was a good idea to leave them, which is illogical.\n~Would have left~ requires a hypothetical condition (e.g., '...if I had been in a hurry.')."
-      }
-    },
-    {
-      "cardId": "egac_476",
-      "category": "Would Rather: Subjunctive",
-      "sentenceParts": {
-        "prefix": "I need to focus now. I'd rather you ",
-        "suffix": " me back in an hour."
+      {
+        "text": "lose",
+        "isCorrect": false
       },
-      "options": [
-        {
-          "text": "called",
-          "isCorrect": true
-        },
-        {
-          "text": "call",
-          "isCorrect": false
-        },
-        {
-          "text": "to call",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "I need to focus now. I'd rather you called me back in an hour.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_476.mp3",
-      "hint": "When you prefer that *someone else* does an action, an unusual verb tense is required after the second subject.",
-      "content": {
-        "type": "text",
-        "value": "**[41]**\n\nTo express a preference about someone else's actions, the subjunctive structure is [Subject 1 + 'd rather + Subject 2 + Past Simple Verb]. Even though the verb is in the past, the meaning refers to the present or future.\n\n~call~ is a common error; it would be correct only if the subject were the same (e.g., 'I'd rather call...').\n~to call~ is incorrect as 'would rather' is never followed by a 'to'-infinitive."
+      {
+        "text": "would lose",
+        "isCorrect": false
       }
+    ],
+    "correctAnswer": "If you don't save your work now, you will lose it later.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_472.mp3",
+    "hint": "This structure is for a real and possible future situation.",
+    "content": {
+      "type": "text",
+      "value": "**[8]**\n\nThe [First Conditional] describes a likely future result. The structure is [If + Present Simple, ... will + base verb].\n\n~Lose~ would be for the Zero Conditional, but this is a specific future possibility, not a general truth.\n~Would lose~ is for the Second Conditional (hypothetical situations)."
+    }
+  },
+  {
+    "cardId": "egac_473",
+    "category": "First Conditional",
+    "sentenceParts": {
+      "prefix": "The application will fail if the database connection ",
+      "suffix": "."
     },
-    {
-      "cardId": "egac_477",
-      "category": "Would Rather: Comparison",
-      "sentenceParts": {
-        "prefix": "I'd rather deploy the update on Monday than ",
-        "suffix": " it on a Friday."
+    "options": [
+      {
+        "text": "is lost",
+        "isCorrect": true
       },
-      "options": [
-        {
-          "text": "do",
-          "isCorrect": true
-        },
-        {
-          "text": "doing",
-          "isCorrect": false
-        },
-        {
-          "text": "to do",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "I'd rather deploy the update on Monday than do it on a Friday.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_477.mp3",
-      "hint": "The verbs on both sides of 'than' should maintain a parallel structure.",
-      "content": {
-        "type": "text",
-        "value": "**[41]**\n\nThe structure for comparing two actions is ['d rather + base verb + than + base verb]. Since the first verb is 'deploy' (base form), the second verb must also be in its base form, [do].\n\n~doing~ and ~to do~ break the parallel structure required by this expression."
-      }
-    },
-    {
-      "cardId": "egac_478",
-      "category": "Preferences: 'Prefer'",
-      "sentenceParts": {
-        "prefix": "As a general rule, he prefers working in the office ",
-        "suffix": " from home."
+      {
+        "text": "will be lost",
+        "isCorrect": false
       },
-      "options": [
-        {
-          "text": "to working",
-          "isCorrect": true
-        },
-        {
-          "text": "than working",
-          "isCorrect": false
-        },
-        {
-          "text": "to work",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "As a general rule, he prefers working in the office to working from home.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_478.mp3",
-      "hint": "When comparing two activities with 'prefer', a specific preposition is used, and the verb form should be consistent.",
-      "content": {
-        "type": "text",
-        "value": "**[80]**\n\nWhen comparing two gerunds (verb-ing) with 'prefer', the correct structure is [prefer + verb-ing + to + verb-ing].\n\n~than working~ is a very common error; 'prefer' uses 'to', not 'than', for comparisons.\n~to work~ mixes the gerund and infinitive forms, which is grammatically inconsistent."
+      {
+        "text": "would be lost",
+        "isCorrect": false
       }
+    ],
+    "correctAnswer": "The application will fail if the database connection is lost.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_473.mp3",
+    "hint": "What verb tense is always used in the 'if' clause of the First Conditional?",
+    "content": {
+      "type": "text",
+      "value": "**[8]**\n\nIn the [First Conditional], the 'if' clause must always use the [Present Simple] ('is lost'), even though it refers to a future possibility. The main clause uses 'will' ('will fail').\n\n~Will be lost~ is incorrect because we do not use 'will' in the 'if' clause.\n~Would be lost~ is for the Second Conditional."
+    }
+  },
+  {
+    "cardId": "egac_474",
+    "category": "Modal Perfects: Criticism",
+    "sentenceParts": {
+      "prefix": "The build failed. You ",
+      "suffix": " that branch without pulling the latest changes."
     },
-    {
-      "cardId": "egac_479",
-      "category": "Preferences: 'Prefer'",
-      "sentenceParts": {
-        "prefix": "For database management, our team prefers SQL ",
-        "suffix": " NoSQL."
+    "options": [
+      {
+        "text": "shouldn't have merged",
+        "isCorrect": true
       },
-      "options": [
-        {
-          "text": "to",
-          "isCorrect": true
-        },
-        {
-          "text": "than",
-          "isCorrect": false
-        },
-        {
-          "text": "over",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "For database management, our team prefers SQL to NoSQL.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_479.mp3",
-      "hint": "'Prefer' uses a specific preposition to compare two nouns, which is different from 'would rather'.",
-      "content": {
-        "type": "text",
-        "value": "**[80]**\n\nThe standard structure to compare two nouns with 'prefer' is [prefer + noun + to + noun].\n\n~than~ is incorrect and used with 'would rather' or comparative adjectives.\n~over~ can sometimes be used informally in speech, but 'to' is the grammatically standard and formal choice."
-      }
-    },
-    {
-      "cardId": "egac_480",
-      "category": "Preferences: 'Would Prefer'",
-      "sentenceParts": {
-        "prefix": "It's getting late, so for this specific task, I'd prefer ",
-        "suffix": " tomorrow."
+      {
+        "text": "couldn't have merged",
+        "isCorrect": false
       },
-      "options": [
-        {
-          "text": "to start",
-          "isCorrect": true
-        },
-        {
-          "text": "start",
-          "isCorrect": false
-        },
-        {
-          "text": "starting",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "It's getting late, so for this specific task, I'd prefer to start tomorrow.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_480.mp3",
-      "hint": "What verb form follows 'would prefer' when expressing a choice in a specific situation?",
-      "content": {
-        "type": "text",
-        "value": "**[80]**\n\n[Would prefer] is used for specific preferences and must be followed by a ['to' + infinitive].\n\n~start~ is the base verb, used after 'would rather'.\n~starting~ is the gerund, used after 'prefer' for general habits."
+      {
+        "text": "mustn't have merged",
+        "isCorrect": false
       }
+    ],
+    "correctAnswer": "The build failed. You shouldn't have merged that branch without pulling the latest changes.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_474.mp3",
+    "hint": "This sentence expresses criticism or advice about a past mistake that did happen.",
+    "content": {
+      "type": "text",
+      "value": "**[11]**\n\n[Shouldn't have merged] is used to criticize a past action. It implies that merging was the wrong thing to do.\n\n~Couldn't have merged~ means it was impossible to merge, which contradicts the context that the build failed because of a merge.\n~Mustn't have merged~ is not a standard structure for past deduction; 'can't have merged' is used instead."
+    }
+  },
+  {
+    "cardId": "egac_475",
+    "category": "Modal Perfects: Deduction",
+    "sentenceParts": {
+      "prefix": "I can't find my keys anywhere. I ",
+      "suffix": " them in the car."
     },
-    {
-      "cardId": "egac_481",
-      "category": "Preferences: 'Would Prefer'",
-      "sentenceParts": {
-        "prefix": "Thank you for the offer, but we'd prefer ",
-        "suffix": " the earlier flight."
+    "options": [
+      {
+        "text": "must have left",
+        "isCorrect": true
       },
-      "options": [
-        {
-          "text": "not to take",
-          "isCorrect": true
-        },
-        {
-          "text": "not take",
-          "isCorrect": false
-        },
-        {
-          "text": "to not take",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "Thank you for the offer, but we'd prefer not to take the earlier flight.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_481.mp3",
-      "hint": "For 'would prefer', the negative is formed by placing 'not' before the infinitive.",
-      "content": {
-        "type": "text",
-        "value": "**[80]**\n\nThe standard negative structure is ['d prefer + not to + verb].\n\n~not take~ is incorrect as it's missing 'to'. This structure is used with 'would rather'.\n~to not take~ (split infinitive) is sometimes used in informal speech but 'not to take' is considered more grammatically standard."
-      }
-    },
-    {
-      "cardId": "egac_482",
-      "category": "Compound Nouns: Hyphenated",
-      "sentenceParts": {
-        "prefix": "After the car accident, several ",
-        "suffix": " stopped to help."
+      {
+        "text": "should have left",
+        "isCorrect": false
       },
-      "options": [
-        {
-          "text": "passers-by",
-          "isCorrect": true
-        },
-        {
-          "text": "passer-bys",
-          "isCorrect": false
-        },
-        {
-          "text": "passer-by's",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "After the car accident, several passers-by stopped to help.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_482.mp3",
-      "hint": "For hyphenated nouns, the plural '-s' is added to the main, most important word in the compound, not at the end.",
-      "content": {
-        "type": "text",
-        "value": "**[99]**\n\nThe main noun in this compound is 'passer'. Therefore, the plural form is [passers-by].\n\n~passer-bys~ is a very common error, as it adds the '-s' to the end of the entire phrase.\n~passer-by's~ is the possessive form, not the plural."
+      {
+        "text": "would have left",
+        "isCorrect": false
       }
-    },
+    ],
+    "correctAnswer": "I can't find my keys anywhere. I must have left them in the car.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_475.mp3",
+    "hint": "This expresses a strong belief or logical conclusion about a past event.",
+    "content": {
+      "type": "text",
+      "value": "**[11]**\n\n[Must have left] is used for a logical deduction when you are almost certain something happened in the past.\n\n~Should have left~ means it was a good idea to leave them, which is illogical.\n~Would have left~ requires a hypothetical condition (e.g., '...if I had been in a hurry.')."
+    }
+  },
     {
-      "cardId": "egac_483",
-      "category": "Compound Nouns: Hyphenated",
-      "sentenceParts": {
-        "prefix": "The company has had several different ",
-        "suffix": " over the last decade."
+    "cardId": "egac_476",
+    "category": "Would Rather: Subjunctive",
+    "sentenceParts": {
+      "prefix": "I need to focus now. I'd rather you ",
+      "suffix": " me back in an hour."
+    },
+    "options": [
+      {
+        "text": "called",
+        "isCorrect": true
       },
-      "options": [
-        {
-          "text": "editors-in-chief",
-          "isCorrect": true
-        },
-        {
-          "text": "editor-in-chiefs",
-          "isCorrect": false
-        },
-        {
-          "text": "editor-in-chieves",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "The company has had several different editors-in-chief over the last decade.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_483.mp3",
-      "hint": "Identify the primary noun in the title 'editor-in-chief'. That is the word that needs to be plural.",
-      "content": {
-        "type": "text",
-        "value": "**[99]**\n\nIn the term 'editor-in-chief', the primary noun is 'editor'. The correct plural is therefore [editors-in-chief].\n\n~editor-in-chiefs~ incorrectly places the plural marker at the end of the compound noun.\n~editor-in-chieves~ is a grammatically incorrect formation."
-      }
-    },
-    {
-      "cardId": "egac_484",
-      "category": "Compound Nouns: Hyphenated",
-      "sentenceParts": {
-        "prefix": "The hotel ",
-        "suffix": " is at 11 AM, but you can request a late departure."
+      {
+        "text": "call",
+        "isCorrect": false
       },
-      "options": [
-        {
-          "text": "check-out",
-          "isCorrect": true
-        },
-        {
-          "text": "check out",
-          "isCorrect": false
-        },
-        {
-          "text": "checking out",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "The hotel check-out is at 11 AM, but you can request a late departure.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_484.mp3",
-      "hint": "When a phrasal verb like 'check out' is used as a noun, it is often hyphenated.",
-      "content": {
-        "type": "text",
-        "value": "**[99]**\n\nThe noun form, meaning the time of departure, is the hyphenated compound [check-out].\n\n**Note:** The one-word form ~checkout~ is also a correct noun and is often used interchangeably, though [check-out] is common for hotels.\n\n~check out~ (two words) is the phrasal verb, not the noun.\n~Checking out~ is the verb form (gerund/present participle) and does not fit the sentence structure."
+      {
+        "text": "to call",
+        "isCorrect": false
       }
+    ],
+    "correctAnswer": "I need to focus now. I'd rather you called me back in an hour.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_476.mp3",
+    "hint": "When you prefer that *someone else* does an action, an unusual verb tense is required after the second subject.",
+    "content": {
+      "type": "text",
+      "value": "**[41]**\n\nTo express a preference about someone else's actions, the subjunctive structure is [Subject 1 + 'd rather + Subject 2 + Past Simple Verb]. Even though the verb is in the past, the meaning refers to the present or future.\n\n~call~ is a common error; it would be correct only if the subject were the same (e.g., 'I'd rather call...').\n~to call~ is incorrect as 'would rather' is never followed by a 'to'-infinitive."
+    }
+  },
+  {
+    "cardId": "egac_477",
+    "category": "Would Rather: Comparison",
+    "sentenceParts": {
+      "prefix": "I'd rather deploy the update on Monday than ",
+      "suffix": " it on a Friday."
     },
-    {
-      "cardId": "egac_485",
-      "category": "Vocabulary: Money (Informal)",
-      "sentenceParts": {
-        "prefix": "This coffee is about three ",
-        "suffix": "."
+    "options": [
+      {
+        "text": "do",
+        "isCorrect": true
       },
-      "options": [
-        {
-          "text": "bucks",
-          "isCorrect": true
-        },
-        {
-          "text": "dollars",
-          "isCorrect": false
-        },
-        {
-          "text": "quid",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "This coffee is about three bucks.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_485.mp3",
-      "hint": "This is the most common slang word for 'dollars' in both the US and Canada.",
-      "content": {
-        "type": "text",
-        "value": "**[100]**\n\n[Bucks] is the primary informal term for dollars.\n\n~Dollars~ is the formal term. While not incorrect, it's less common in casual conversation for small amounts.\n~Quid~ is the slang for British Pounds (£), not used in North America."
-      }
-    },
-    {
-      "cardId": "egac_486",
-      "category": "Vocabulary: Money (Prices)",
-      "sentenceParts": {
-        "prefix": "The price is $7.50. You would normally hear this said as '",
-        "suffix": "'."
+      {
+        "text": "doing",
+        "isCorrect": false
       },
-      "options": [
-        {
-          "text": "seven fifty",
-          "isCorrect": true
-        },
-        {
-          "text": "seven dollars fifty cents",
-          "isCorrect": false
-        },
-        {
-          "text": "seven and fifty",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "The price is $7.50. You would normally hear this said as 'seven fifty'.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_486.mp3",
-      "hint": "In everyday speech, the names of the currency units ('dollars', 'cents') are usually omitted.",
-      "content": {
-        "type": "text",
-        "value": "**[100]**\n\nThe most common way to state a price is to say the dollar amount followed directly by the cent amount: [seven fifty].\n\n~Seven dollars fifty cents~ is grammatically correct but is very formal and rarely used in stores.\n~Seven and fifty~ is incorrect; the word 'and' is typically not used."
+      {
+        "text": "to do",
+        "isCorrect": false
       }
+    ],
+    "correctAnswer": "I'd rather deploy the update on Monday than do it on a Friday.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_477.mp3",
+    "hint": "The verbs on both sides of 'than' should maintain a parallel structure.",
+    "content": {
+      "type": "text",
+      "value": "**[41]**\n\nThe structure for comparing two actions is ['d rather + base verb + than + base verb]. Since the first verb is 'deploy' (base form), the second verb must also be in its base form, [do].\n\n~doing~ and ~to do~ break the parallel structure required by this expression."
+    }
+  },
+  {
+    "cardId": "egac_478",
+    "category": "Preferences: 'Prefer'",
+    "sentenceParts": {
+      "prefix": "As a general rule, he prefers working in the office ",
+      "suffix": " from home."
     },
-    {
-      "cardId": "egac_487",
-      "category": "Vocabulary: Money (Informal)",
-      "sentenceParts": {
-        "prefix": "He bought the car for five thousand ",
-        "suffix": ", which was a great deal."
+    "options": [
+      {
+        "text": "to working",
+        "isCorrect": true
       },
-      "options": [
-        {
-          "text": "bucks",
-          "isCorrect": true
-        },
-        {
-          "text": "grand",
-          "isCorrect": false
-        },
-        {
-          "text": "dollar",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "He bought the car for five thousand bucks, which was a great deal.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_487.mp3",
-      "hint": "The slang term for 'dollars' works for both small and large numbers.",
-      "content": {
-        "type": "text",
-        "value": "**[100]**\n\nThe informal term [bucks] is correctly used here. Another common slang for 'a thousand dollars' is 'grand', so you could also say 'five grand'.\n\n~Grand~ is incorrect in this specific sentence. You would say 'five grand', not 'five thousand grand'.\n~Dollar~ is singular and incorrect for an amount greater than one."
+      {
+        "text": "than working",
+        "isCorrect": false
+      },
+      {
+        "text": "to work",
+        "isCorrect": false
       }
+    ],
+    "correctAnswer": "As a general rule, he prefers working in the office to working from home.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_478.mp3",
+    "hint": "When comparing two activities with 'prefer', a specific preposition is used, and the verb form should be consistent.",
+    "content": {
+      "type": "text",
+      "value": "**[80]**\n\nWhen comparing two gerunds (verb-ing) with 'prefer', the correct structure is [prefer + verb-ing + to + verb-ing].\n\n~than working~ is a very common error; 'prefer' uses 'to', not 'than', for comparisons.\n~to work~ mixes the gerund and infinitive forms, which is grammatically inconsistent."
+    }
+  },
+  {
+    "cardId": "egac_479",
+    "category": "Preferences: 'Prefer'",
+    "sentenceParts": {
+      "prefix": "For database management, our team prefers SQL ",
+      "suffix": " NoSQL."
     },
+    "options": [
+      {
+        "text": "to",
+        "isCorrect": true
+      },
+      {
+        "text": "than",
+        "isCorrect": false
+      },
+      {
+        "text": "over",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "For database management, our team prefers SQL to NoSQL.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_479.mp3",
+    "hint": "'Prefer' uses a specific preposition to compare two nouns, which is different from 'would rather'.",
+    "content": {
+      "type": "text",
+      "value": "**[80]**\n\nThe standard structure to compare two nouns with 'prefer' is [prefer + noun + to + noun].\n\n~than~ is incorrect and used with 'would rather' or comparative adjectives.\n~over~ can sometimes be used informally in speech, but 'to' is the grammatically standard and formal choice."
+    }
+  },
+  {
+    "cardId": "egac_480",
+    "category": "Preferences: 'Would Prefer'",
+    "sentenceParts": {
+      "prefix": "It's getting late, so for this specific task, I'd prefer ",
+      "suffix": " tomorrow."
+    },
+    "options": [
+      {
+        "text": "to start",
+        "isCorrect": true
+      },
+      {
+        "text": "start",
+        "isCorrect": false
+      },
+      {
+        "text": "starting",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "It's getting late, so for this specific task, I'd prefer to start tomorrow.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_480.mp3",
+    "hint": "What verb form follows 'would prefer' when expressing a choice in a specific situation?",
+    "content": {
+      "type": "text",
+      "value": "**[80]**\n\n[Would prefer] is used for specific preferences and must be followed by a ['to' + infinitive].\n\n~start~ is the base verb, used after 'would rather'.\n~starting~ is the gerund, used after 'prefer' for general habits."
+    }
+  },
+  {
+    "cardId": "egac_481",
+    "category": "Preferences: 'Would Prefer'",
+    "sentenceParts": {
+      "prefix": "Thank you for the offer, but we'd prefer ",
+      "suffix": " the earlier flight."
+    },
+    "options": [
+      {
+        "text": "not to take",
+        "isCorrect": true
+      },
+      {
+        "text": "not take",
+        "isCorrect": false
+      },
+      {
+        "text": "to not take",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "Thank you for the offer, but we'd prefer not to take the earlier flight.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_481.mp3",
+    "hint": "For 'would prefer', the negative is formed by placing 'not' before the infinitive.",
+    "content": {
+      "type": "text",
+      "value": "**[80]**\n\nThe standard negative structure is ['d prefer + not to + verb].\n\n~not take~ is incorrect as it's missing 'to'. This structure is used with 'would rather'.\n~to not take~ (split infinitive) is sometimes used in informal speech but 'not to take' is considered more grammatically standard."
+    }
+  },
     {
+    "cardId": "egac_482",
+    "category": "Compound Nouns: Hyphenated",
+    "sentenceParts": {
+      "prefix": "After the car accident, several ",
+      "suffix": " stopped to help."
+    },
+    "options": [
+      {
+        "text": "passers-by",
+        "isCorrect": true
+      },
+      {
+        "text": "passer-bys",
+        "isCorrect": false
+      },
+      {
+        "text": "passer-by's",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "After the car accident, several passers-by stopped to help.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_482.mp3",
+    "hint": "For hyphenated nouns, the plural '-s' is added to the main, most important word in the compound, not at the end.",
+    "content": {
+      "type": "text",
+      "value": "**[99]**\n\nThe main noun in this compound is 'passer'. Therefore, the plural form is [passers-by].\n\n~passer-bys~ is a very common error, as it adds the '-s' to the end of the entire phrase.\n~passer-by's~ is the possessive form, not the plural."
+    }
+  },
+  {
+    "cardId": "egac_483",
+    "category": "Compound Nouns: Hyphenated",
+    "sentenceParts": {
+      "prefix": "The company has had several different ",
+      "suffix": " over the last decade."
+    },
+    "options": [
+      {
+        "text": "editors-in-chief",
+        "isCorrect": true
+      },
+      {
+        "text": "editor-in-chiefs",
+        "isCorrect": false
+      },
+      {
+        "text": "editor-in-chieves",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "The company has had several different editors-in-chief over the last decade.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_483.mp3",
+    "hint": "Identify the primary noun in the title 'editor-in-chief'. That is the word that needs to be plural.",
+    "content": {
+      "type": "text",
+      "value": "**[99]**\n\nIn the term 'editor-in-chief', the primary noun is 'editor'. The correct plural is therefore [editors-in-chief].\n\n~editor-in-chiefs~ incorrectly places the plural marker at the end of the compound noun.\n~editor-in-chieves~ is a grammatically incorrect formation."
+    }
+  },
+  {
+    "cardId": "egac_484",
+    "category": "Compound Nouns: Hyphenated",
+    "sentenceParts": {
+      "prefix": "The hotel ",
+      "suffix": " is at 11 AM, but you can request a late departure."
+    },
+    "options": [
+      {
+        "text": "check-out",
+        "isCorrect": true
+      },
+      {
+        "text": "checkout",
+        "isCorrect": false
+      },
+      {
+        "text": "checking out",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "The hotel check-out is at 11 AM, but you can request a late departure.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_484.mp3",
+    "hint": "When a phrasal verb like 'check out' is used as a noun, it is often hyphenated.",
+    "content": {
+      "type": "text",
+      "value": "**[99]**\n\nThe noun form, meaning the time of departure, is the hyphenated compound [check-out].\n\n~Checkout~ (one word) is also a correct noun, often used in the context of a supermarket or online shopping cart.\n~Checking out~ is the verb form (gerund/present participle) and does not fit the sentence structure."
+    }
+  },
+  {
+    "cardId": "egac_485",
+    "category": "Vocabulary: Money (Informal)",
+    "sentenceParts": {
+      "prefix": "This coffee is about three ",
+      "suffix": "."
+    },
+    "options": [
+      {
+        "text": "bucks",
+        "isCorrect": true
+      },
+      {
+        "text": "dollars",
+        "isCorrect": false
+      },
+      {
+        "text": "quid",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "This coffee is about three bucks.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_485.mp3",
+    "hint": "This is the most common slang word for 'dollars' in both the US and Canada.",
+    "content": {
+      "type": "text",
+      "value": "**[100]**\n\n[Bucks] is the primary informal term for dollars.\n\n~Dollars~ is the formal term. While not incorrect, it's less common in casual conversation for small amounts.\n~Quid~ is the slang for British Pounds (£), not used in North America."
+    }
+  },
+  {
+    "cardId": "egac_486",
+    "category": "Vocabulary: Money (Prices)",
+    "sentenceParts": {
+      "prefix": "The price is $7.50. You would normally hear this said as '",
+      "suffix": "'."
+    },
+    "options": [
+      {
+        "text": "seven fifty",
+        "isCorrect": true
+      },
+      {
+        "text": "seven dollars fifty cents",
+        "isCorrect": false
+      },
+      {
+        "text": "seven and fifty",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "The price is $7.50. You would normally hear this said as 'seven fifty'.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_486.mp3",
+    "hint": "In everyday speech, the names of the currency units ('dollars', 'cents') are usually omitted.",
+    "content": {
+      "type": "text",
+      "value": "**[100]**\n\nThe most common way to state a price is to say the dollar amount followed directly by the cent amount: [seven fifty].\n\n~Seven dollars fifty cents~ is grammatically correct but is very formal and rarely used in stores.\n~Seven and fifty~ is incorrect; the word 'and' is typically not used."
+    }
+  },
+  {
+    "cardId": "egac_487",
+    "category": "Vocabulary: Money (Informal)",
+    "sentenceParts": {
+      "prefix": "He bought the car for five thousand ",
+      "suffix": ", which was a great deal."
+    },
+    "options": [
+      {
+        "text": "bucks",
+        "isCorrect": true
+      },
+      {
+        "text": "grand",
+        "isCorrect": false
+      },
+      {
+        "text": "dollar",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "He bought the car for five thousand bucks, which was a great deal.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_487.mp3",
+    "hint": "The slang term for 'dollars' works for both small and large numbers.",
+    "content": {
+      "type": "text",
+      "value": "**[100]**\n\nThe informal term [bucks] is correctly used here. Another common slang for 'a thousand dollars' is 'grand', so you could also say 'five grand'.\n\n~Grand~ is incorrect in this specific sentence. You would say 'five grand', not 'five thousand grand'.\n~Dollar~ is singular and incorrect for an amount greater than one."
+    }
+  },
+  {
       "cardId": "egac_488",
       "category": "Either: Conjunction",
       "sentenceParts": {
@@ -14248,7 +14250,7 @@
       "content": {
         "type": "text",
         "value": "**[101]**\n\nThe [either... or...] structure is used to present two possible locations or causes for the problem.\n\n~Whether~ is used to introduce a clause expressing a doubt or choice between alternatives, but in a different structure (e.g., 'I don't know whether the problem is in the code or...').\n~If~ introduces a conditional clause and does not fit this structure."
-      }
+         }
     },
     {
       "cardId": "egac_492",
