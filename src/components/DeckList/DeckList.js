@@ -6,13 +6,14 @@ class DeckList {
      * @param {function} onDeckSelect - Callback function to execute when a deck is selected.
      * @param {function} onCreateClick - Callback function for the "Create Deck" button.
      */
-     constructor(container, onDeckSelect, onCreateClick, onToggleFavorite, musicService) {
+     constructor(container, onDeckSelect, onCreateClick, onToggleFavorite, musicService, onShowGlossary) {
         this.container = container;
         this.onDeckSelect = onDeckSelect;
         this.onCreateClick = onCreateClick;
         this.onToggleFavorite = onToggleFavorite;
         this.musicService = musicService; // Store the music service instance
         this.musicPlayerUI = null; // To hold the UI component instance
+        this.onShowGlossary = onShowGlossary; // Store the new handler
         console.log("DEBUG: [DeckList] constructor -> Component instantiated.");
     }
     /**
@@ -37,6 +38,28 @@ class DeckList {
 
             // Asynchronously load and display the version number
             this._displayVersion();
+
+
+            // --- Admin Tools Section (e.g., Glossary Viewer) ---
+            // Set this flag to 'false' to hide the admin tools section from the UI
+            const SHOW_ADMIN_TOOLS = true; 
+            const adminToolsContainer = this.container.querySelector('#admin-tools-container');
+
+            if (adminToolsContainer) {
+                if (SHOW_ADMIN_TOOLS) {
+                    adminToolsContainer.style.display = 'block';
+                    // Find and attach the event listener for the glossary link
+                    const glossaryLink = this.container.querySelector('#glossary-viewer-link');
+                    if (glossaryLink && this.onShowGlossary) {
+                        glossaryLink.addEventListener('click', (e) => {
+                            e.preventDefault(); // It's an <a> tag
+                            this.onShowGlossary();
+                        });
+                    }
+                } else {
+                    adminToolsContainer.style.display = 'none';
+                }
+            }
 
             // TEMP HIDE: Voice settings feature is a work in progress.
              // this.setupTtsControls(); 

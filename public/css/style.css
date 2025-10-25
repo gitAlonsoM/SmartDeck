@@ -234,3 +234,42 @@ code {
 .glossary-term:hover {
     color: #93c5fd; /* Tailwind's blue-300 */
 }
+
+
+/* Styles for GlossaryScreen content */
+#glossary-content h3 {
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 600; /* font-semibold */
+    margin-bottom: 0.5rem; /* mb-2 */
+    color: #fff; /* text-white */
+}
+
+#glossary-content p {
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+#glossary-content ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-bottom: 1rem; /* mb-4 */
+    space-y: 0.5rem; /* space-y-2 */
+}
+
+#glossary-content ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    margin-bottom: 1rem; /* mb-4 */
+    space-y: 0.5rem; /* space-y-2 */
+}
+
+#glossary-content .font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    background-color: #1f2937; /* bg-gray-800 */
+    padding: 0.5rem; /* p-2 */
+    border-radius: 0.25rem; /* rounded */
+}
+
+/* Ensure hljs colors override default text */
+#glossary-content pre code.hljs {
+    color: #c9d1d9; /* Example default color */
+}

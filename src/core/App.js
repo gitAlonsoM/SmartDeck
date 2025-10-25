@@ -27,6 +27,7 @@ class App {
         this.notificationModal = null;
         this.improvementModal = null; 
         this.infoModal = null; 
+        this.glossaryScreen = null;
 
     }
 
@@ -87,6 +88,18 @@ class App {
         this.infoModal = new InfoModal(infoModalContainer);
         await this.infoModal.init();
         console.log("DEBUG: [App] setupComponents -> Pre-loading essential glossaries.");
+
+        // Setup for the new GlossaryScreen
+        const glossaryScreenContainer = document.getElementById('glossary-screen-container');
+        if (!glossaryScreenContainer) { throw new Error("Fatal Error: GlossaryScreen container not found."); }
+        
+        this.glossaryScreen = new GlossaryScreen(
+            glossaryScreenContainer,
+            () => this.handleGoBackToDecks() // Re-use the existing handler to return to the dashboard
+        );
+        await this.glossaryScreen.init();
+
+
     await GlossaryService.loadGlossary('english_rules');
     console.log("DEBUG: [App] setupComponents -> Glossaries pre-loaded.");
     
@@ -234,19 +247,28 @@ class App {
         console.log(`DEBUG: [App] render -> Rendering screen: ${this.state.currentScreen}`);
         this.appContainer.innerHTML = '';
 
+
+        // Select containers
+        const mainAppContainer = document.getElementById('app-container');
+        const glossaryScreenContainer = document.getElementById('glossary-screen-container');
+        
+        // Default state: show app, hide glossary
+        mainAppContainer.style.display = 'block';
+        glossaryScreenContainer.style.display = 'none';
+
+
         switch(this.state.currentScreen) {
            case 'deckList':
                 if (!this.deckListComponent) { 
                     this.deckListComponent = new DeckList(
-                        this.appContainer, 
-                        (id) => this.handleDeckSelected(id), 
-                        () => this.handleCreateDeckClicked(),
-                        
-                     (id) => this.handleToggleFavorite(id),
-                        this.musicService // Pass the music service instance
-
-                    ); 
-                }
+                        this.appContainer, 
+                        (id) => this.handleDeckSelected(id), 
+                        () => this.handleCreateDeckClicked(),
+                        (id) => this.handleToggleFavorite(id), 
+                        this.musicService,
+                        () => this.handleShowGlossary() 
+                    ); 
+                }
                 
                 // Sort decks: favorites first, then by name
                 const sortedDecks = Object.values(this.state.allDecks).sort((a, b) => {
@@ -349,6 +371,25 @@ class App {
                     this.flippableCardScreen.render(this.state.currentDeckId, deckName, currentCard, this.state.quizInstance.currentIndex, this.state.quizInstance.currentCards.length, isMarked); // Pass deckId
                 } else {
                     this.handleQuizEnd(); // Should not happen if logic is correct, but as a safeguard
+                }
+                break;
+
+
+                case 'glossary':
+                console.log("DEBUG: [App] render -> Rendering 'glossary' screen.");
+                // Hide main app container, show glossary container
+                mainAppContainer.style.display = 'none';
+                glossaryScreenContainer.style.display = 'block';
+
+                // Get the pre-loaded glossary data
+                const glossaryData = GlossaryService.getCachedGlossary('english_rules');
+                
+                if (glossaryData) {
+                    this.glossaryScreen.render(glossaryData);
+                } else {
+                    console.error("DEBUG: [App] render -> Glossary data 'english_rules' not found in cache.");
+                    // You might want to render an error message inside the glossary container
+                    glossaryScreenContainer.innerHTML = `<p class="text-red-500 p-8">Error: Glossary data not loaded.</p>`;
                 }
                 break;
 
@@ -832,7 +873,19 @@ handleCreateDeckClicked() {
             this.aiDeckModal.setLoading(false);
         }
     }
+
+          /**
+     * Handles switching to the Glossary Viewer screen.
+     */
+    handleShowGlossary() {
+        console.log("DEBUG: [App] handleShowGlossary -> Switching to Glossary Viewer.");
+        this.state.currentScreen = 'glossary';
+        this.render();
+    }
 }
+
+
+  
 
 // --- Application Entry Point ---
 document.addEventListener('DOMContentLoaded', () => {
