@@ -381,16 +381,10 @@ class App {
                 mainAppContainer.style.display = 'none';
                 glossaryScreenContainer.style.display = 'block';
 
-                // Get the pre-loaded glossary data
-                const glossaryData = GlossaryService.getCachedGlossary('english_rules');
-                
-                if (glossaryData) {
-                    this.glossaryScreen.render(glossaryData);
-                } else {
-                    console.error("DEBUG: [App] render -> Glossary data 'english_rules' not found in cache.");
-                    // You might want to render an error message inside the glossary container
-                    glossaryScreenContainer.innerHTML = `<p class="text-red-500 p-8">Error: Glossary data not loaded.</p>`;
-                }
+              // The GlossaryScreen component now manages its own internal state
+                // (selection vs. viewer) and data loading.
+                // We just need to call render() to make it display its current state.
+                this.glossaryScreen.render();
                 break;
 
             default:

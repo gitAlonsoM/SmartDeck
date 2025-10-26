@@ -1,12 +1,22 @@
 /* src\components\GlossaryScreen\GlossaryScreen.js */
-
 class GlossaryScreen {
-    constructor(container, onGoBack) {
+    constructor(container, onGoBackToDashboard) {
         this.container = container;
-        this.onGoBack = onGoBack;
+        this.onGoBackToDashboard = onGoBackToDashboard; // This is the callback to App.js
+        this.html = null;
+        this.internalState = 'selection'; // 'selection' or 'viewer'
+        
+        // Properties for 'viewer' state
         this.glossaryData = null;
         this.entryIds = [];
         this.currentIndex = 0;
+        this.currentGlossaryTitle = "";
+
+        // DOM element cache
+        this.selectionContainer = null;
+        this.viewerContainer = null;
+        this.glossaryListEl = null;
+
         console.log("DEBUG: [GlossaryScreen] constructor -> Component instantiated.");
     }
 
@@ -16,27 +26,92 @@ class GlossaryScreen {
         console.log("DEBUG: [GlossaryScreen] init -> HTML template loaded.");
     }
 
-    render(glossaryData) {
-        console.log("DEBUG: [GlossaryScreen] render -> Rendering GlossaryScreen.");
+    // Main render method called by App.js
+    render() {
+        console.log(`DEBUG: [GlossaryScreen] render -> Rendering state: ${this.internalState}`);
         this.container.innerHTML = this.html;
-        this.glossaryData = glossaryData;
+        
+        // Cache the main containers
+        this.selectionContainer = this.container.querySelector('#glossary-selection-container');
+        this.viewerContainer = this.container.querySelector('#glossary-viewer-container');
+
+        if (this.internalState === 'selection') {
+            this._renderSelectionScreen();
+        } else if (this.internalState === 'viewer') {
+            // This should technically be called by _handleGlossarySelected,
+            // but we call it here to re-render if App.js triggers a render.
+            this._renderViewerScreen(); 
+        }
+    }
+
+    // --- SELECTION SCREEN LOGIC ---
+
+    async _renderSelectionScreen() {
+        console.log("DEBUG: [GlossaryScreen] _renderSelectionScreen -> Rendering selection list.");
+        this.internalState = 'selection';
+        this.selectionContainer.style.display = 'block';
+        this.viewerContainer.style.display = 'none';
+
+        this.glossaryListEl = this.container.querySelector('#glossary-list');
+        this.container.querySelector('#glossary-back-btn').addEventListener('click', () => this.onGoBackToDashboard());
+
+        const manifest = await GlossaryService.loadManifest();
+        if (!manifest || manifest.length === 0) {
+            this.glossaryListEl.innerHTML = `<p class="text-gray-400">No glossaries found.</p>`;
+            return;
+        }
+
+        this.glossaryListEl.innerHTML = ''; // Clear list
+        manifest.forEach(item => {
+            const button = document.createElement('button');
+            button.className = "w-full text-left p-6 bg-gray-800 rounded-lg shadow-lg hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500";
+            button.innerHTML = `
+                <h2 class="text-xl font-bold text-indigo-400 mb-2">${item.title}</h2>
+                <p class="text-gray-400">${item.description}</p>
+            `;
+            button.addEventListener('click', () => this._handleGlossarySelected(item.key, item.title));
+            this.glossaryListEl.appendChild(button);
+        });
+    }
+
+    async _handleGlossarySelected(glossaryKey, glossaryTitle) {
+        console.log(`DEBUG: [GlossaryScreen] _handleGlossarySelected -> User selected: ${glossaryKey}`);
+        
+        // Load the specific glossary data
+        await GlossaryService.loadGlossary(glossaryKey);
+        this.glossaryData = GlossaryService.getCachedGlossary(glossaryKey);
         
         if (!this.glossaryData) {
-            this.container.innerHTML = `<p class="text-red-500">Error: Glossary data could not be loaded.</p>`;
+            alert(`Error: Could not load glossary data for ${glossaryTitle}.`);
             return;
         }
 
         this.entryIds = Object.keys(this.glossaryData);
         this.currentIndex = 0;
+        this.currentGlossaryTitle = glossaryTitle;
+        this.internalState = 'viewer';
         
+        this._renderViewerScreen();
+    }
+
+
+    // --- VIEWER SCREEN LOGIC ---
+
+    _renderViewerScreen() {
+        console.log("DEBUG: [GlossaryScreen] _renderViewerScreen -> Rendering viewer.");
+        this.selectionContainer.style.display = 'none';
+        this.viewerContainer.style.display = 'block';
+
+        // Wire up viewer-specific elements
+        this.container.querySelector('#glossary-viewer-main-title').textContent = this.currentGlossaryTitle;
+        this.container.querySelector('#glossary-viewer-back-btn').addEventListener('click', () => this._renderSelectionScreen());
+
         this.titleEl = this.container.querySelector('#glossary-title');
         this.contentEl = this.container.querySelector('#glossary-content');
         this.navStatusEl = this.container.querySelector('#glossary-nav-status');
         this.prevBtn = this.container.querySelector('#glossary-prev-btn');
         this.nextBtn = this.container.querySelector('#glossary-next-btn');
         this.searchInput = this.container.querySelector('#glossary-search-input');
-        
-        this.container.querySelector('#glossary-back-btn').addEventListener('click', () => this.onGoBack());
         
         this.container.querySelector('#glossary-search-form').addEventListener('submit', (e) => {
             e.preventDefault();

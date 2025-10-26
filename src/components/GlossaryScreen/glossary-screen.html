@@ -1,11 +1,26 @@
 <!-- src\components\GlossaryScreen\glossary-screen.html -->
-<div class="p-4 max-w-4xl mx-auto">
+<div id="glossary-selection-container">
     <div class="flex justify-between items-center mb-6">
         <button id="glossary-back-btn" class="text-indigo-400 hover:text-indigo-300 transition-colors">
             <i class="fas fa-arrow-left mr-2"></i>
-            Back to Dashboard
+            Back
         </button>
         <h1 class="text-3xl font-bold text-white">Glossary Viewer</h1>
+    </div>
+    
+    <p class="text-lg text-gray-300 mb-6">Please select a glossary to review:</p>
+    
+    <div id="glossary-list" class="space-y-4">
+        </div>
+</div>
+
+<div id="glossary-viewer-container" style="display: none;">
+    <div class="flex justify-between items-center mb-6">
+        <button id="glossary-viewer-back-btn" class="text-indigo-400 hover:text-indigo-300 transition-colors">
+            <i class="fas fa-arrow-left mr-2"></i>
+            Back
+        </button>
+        <h1 id="glossary-viewer-main-title" class="text-3xl font-bold text-white">...</h1>
     </div>
 
     <div class="bg-gray-800 p-4 rounded-lg shadow-lg mb-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">

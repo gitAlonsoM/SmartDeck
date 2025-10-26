@@ -14278,6 +14278,366 @@
         "type": "text",
         "value": "**[101]**\n\nWhen you add a second negative clause that agrees with the first one, you use [either] at the very end.\n\n~Also~ is used for positive statements ('The main system is working, and the backup is also working.').\n~Neither~ would require a different structure and inversion (e.g., '...and neither is the backup system.')."
       }
+    },
+    {
+      "cardId": "egac_493",
+      "category": "Duration: Verbs",
+      "sentenceParts": {
+        "prefix": "How long will the presentation ",
+        "suffix": "?"
+      },
+      "options": [
+        { "text": "last", "isCorrect": true },
+        { "text": "duration", "isCorrect": false },
+        { "text": "long", "isCorrect": false }
+      ],
+      "correctAnswer": "How long will the presentation last?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_493.mp3",
+      "hint": "We need the verb that means 'to continue for a period of time'.",
+      "content": {
+        "type": "text",
+        "value": "**[102]**\n\n[last] is the correct verb used to ask about the length of an event.\n\n~duration~ is a noun, not a verb. (e.g., 'What is the duration?').\n~long~ is an adjective; the verb 'be' is missing (e.g., 'How long will it be?')."
+      }
+    },
+    {
+      "cardId": "egac_494",
+      "category": "Duration: Verbs",
+      "sentenceParts": {
+        "prefix": "It usually ",
+        "suffix": " five minutes to boot the system."
+      },
+      "options": [
+        { "text": "takes", "isCorrect": true },
+        { "text": "lasts", "isCorrect": false },
+        { "text": "is", "isCorrect": false }
+      ],
+      "correctAnswer": "It usually takes five minutes to boot the system.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_494.mp3",
+      "hint": "Which verb focuses on the 'time required' to complete an action?",
+      "content": {
+        "type": "text",
+        "value": "**[102]**\n\n[It takes...] is the correct structure to describe the time required for a process.\n\n~It lasts...~ is also grammatically possible, but 'takes' is more natural for this context.\n~It is...~ would require 'long' (e.g., 'It is five minutes long.')."
+      }
+    },
+    {
+      "cardId": "egac_495",
+      "category": "Duration: Prepositions",
+      "sentenceParts": {
+        "prefix": "He couldn't answer his phone ",
+        "suffix": " the meeting."
+      },
+      "options": [
+        { "text": "during", "isCorrect": true },
+        { "text": "for", "isCorrect": false },
+        { "text": "in", "isCorrect": false }
+      ],
+      "correctAnswer": "He couldn't answer his phone during the meeting.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_495.mp3",
+      "hint": "Use this preposition to specify *when* something happens (within a named period).",
+      "content": {
+        "type": "text",
+        "value": "**[102]**\n\n[during] is used with a noun that defines a period (e.g., 'the meeting', 'the summer').\n\n~for~ is a common error. It is used with a length of time (e.g., ~for ten minutes~, ~for three days~)."
+      }
+    },
+    {
+      "cardId": "egac_496",
+      "category": "Familiarity: Meet",
+      "sentenceParts": {
+        "prefix": "It was a pleasure to ",
+        "suffix": " you at the conference last week."
+      },
+      "options": [
+        { "text": "meet", "isCorrect": true },
+        { "text": "know", "isCorrect": false },
+        { "text": "get to know", "isCorrect": false }
+      ],
+      "correctAnswer": "It was a pleasure to meet you at the conference last week.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_496.mp3",
+      "hint": "This verb refers to the first introduction.",
+      "content": {
+        "type": "text",
+        "value": "**[103]**\n\n[meet] is the correct verb for a first introduction.\n\n~know~ is a state of familiarity. It's strange to 'know' someone in an instant at a conference.\n~get to know~ is a process over time, not a single event."
+      }
+    },
+    {
+      "cardId": "egac_497",
+      "category": "Familiarity: Get to Know",
+      "sentenceParts": {
+        "prefix": "We are still ",
+        "suffix": " the new software."
+      },
+      "options": [
+        { "text": "getting to know", "isCorrect": true },
+        { "text": "knowing", "isCorrect": false },
+        { "text": "meeting", "isCorrect": false }
+      ],
+      "correctAnswer": "We are still getting to know the new software.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_497.mp3",
+      "hint": "This describes the *process* of becoming familiar with something.",
+      "content": {
+        "type": "text",
+        "value": "**[103]**\n\n[getting to know] describes the process of acquiring familiarity over time.\n\n~knowing~ is incorrect. 'Know' is a state verb and is not typically used in the continuous form.\n~meeting~ is for first introductions, usually with people."
+      }
+    },
+    {
+      "cardId": "egac_498",
+      "category": "Familiarity: Know",
+      "sentenceParts": {
+        "prefix": "Do you ",
+        "suffix": " this API? I've never used it."
+      },
+      "options": [
+        { "text": "know", "isCorrect": true },
+        { "text": "meet", "isCorrect": false },
+        { "text": "get to know", "isCorrect": false }
+      ],
+      "correctAnswer": "Do you know this API? I've never used it.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_498.mp3",
+      "hint": "This verb asks about an existing *state* of familiarity.",
+      "content": {
+        "type": "text",
+        "value": "**[103]**\n\n[know] correctly asks about the state of already having familiarity or knowledge.\n\n~meet~ is for people.\n~get to know~ is a process; the question asks about the present state."
+      }
+    },
+    {
+      "cardId": "egac_499",
+      "category": "Relative Pronouns: Omission",
+      "sentenceParts": {
+        "prefix": "The bug ",
+        "suffix": " we found is critical."
+      },
+      "options": [
+        { "text": " ", "isCorrect": true },
+        { "text": "who", "isCorrect": false },
+        { "text": "what", "isCorrect": false }
+      ],
+      "correctAnswer": "The bug we found is critical.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_499.mp3",
+      "hint": "Look at the word *after* the gap ('we'). Is it a subject or a verb?",
+      "content": {
+        "type": "text",
+        "value": "**[104]**\n\nThe relative pronoun ('that' or 'which') can be omitted because the word immediately following it is a subject ('we').\n\n~who~ is a common error; it is used for people, not objects.\n~what~ is not used as a relative pronoun in this way."
+      }
+    },
+    {
+      "cardId": "egac_500",
+      "category": "Relative Pronouns: Mandatory",
+      "sentenceParts": {
+        "prefix": "I work for a company ",
+        "suffix": " makes software."
+      },
+      "options": [
+        { "text": "that", "isCorrect": true },
+        { "text": " ", "isCorrect": false },
+        { "text": "it", "isCorrect": false }
+      ],
+      "correctAnswer": "I work for a company that makes software.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_500.mp3",
+      "hint": "Look at the word *after* the gap ('makes'). Is it a subject or a verb?",
+      "content": {
+        "type": "text",
+        "value": "**[104]**\n\nThe relative pronoun ([that] or 'which') is mandatory because the word immediately following it is a verb ('makes').\n\n~Omitting~ the pronoun (~a company makes software~) creates a grammatical error.\n~it~ is incorrect; 'that' is needed to connect the clause."
+      }
+    },
+    {
+      "cardId": "egac_501",
+      "category": "Relative Pronouns: Mandatory",
+      "sentenceParts": {
+        "prefix": "She's the developer ",
+        "suffix": " speaks three languages."
+      },
+      "options": [
+        { "text": "who", "isCorrect": true },
+        { "text": " ", "isCorrect": false },
+        { "text": "which", "isCorrect": false }
+      ],
+      "correctAnswer": "She's the developer who speaks three languages.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_501.mp3",
+      "hint": "The pronoun is mandatory here. Which one is used for people?",
+      "content": {
+        "type": "text",
+        "value": "**[104]**\n\nThe pronoun [who] ('that' is also possible) is mandatory because the next word is a verb ('speaks').\n\n~Omitting~ it is incorrect.\n~which~ is a common error; it is used for objects, not people."
+      }
+    },
+    {
+      "cardId": "egac_502",
+      "category": "Quantifiers: Countable",
+      "sentenceParts": {
+        "prefix": "I need ",
+        "suffix": " more minutes to finish."
+      },
+      "options": [
+        { "text": "a few", "isCorrect": true },
+        { "text": "a little", "isCorrect": false },
+        { "text": "a bit of", "isCorrect": false }
+      ],
+      "correctAnswer": "I need a few more minutes to finish.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_502.mp3",
+      "hint": "Is 'minutes' a countable or uncountable noun?",
+      "content": {
+        "type": "text",
+        "value": "**[105]**\n\n[a few] is correct because 'minutes' is a plural, countable noun.\n\n~a little~ and ~a bit of~ are common errors. They are used for uncountable nouns (e.g., ~a little time~)."
+      }
+    },
+    {
+      "cardId": "egac_503",
+      "category": "Quantifiers: Uncountable",
+      "sentenceParts": {
+        "prefix": "We only have ",
+        "suffix": " time left."
+      },
+      "options": [
+        { "text": "a little", "isCorrect": true },
+        { "text": "a few", "isCorrect": false },
+        { "text": "many", "isCorrect": false }
+      ],
+      "correctAnswer": "We only have a little time left.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_503.mp3",
+      "hint": "Is 'time' (as a general concept) countable or uncountable?",
+      "content": {
+        "type": "text",
+        "value": "**[105]**\n\n[a little] is correct because 'time' is an uncountable noun.\n\n~a few~ is a common error. It is used for countable nouns (e.g., ~a few minutes~).\n~many~ is also for countable nouns."
+      }
+    },
+    {
+      "cardId": "egac_504",
+      "category": "Quantifiers: Uncountable",
+      "sentenceParts": {
+        "prefix": "I'm having ",
+        "suffix": " trouble with this API."
+      },
+      "options": [
+        { "text": "a bit of", "isCorrect": true },
+        { "text": "a few", "isCorrect": false },
+        { "text": "a few of", "isCorrect": false }
+      ],
+      "correctAnswer": "I'm having a bit of trouble with this API.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_504.mp3",
+      "hint": "'Trouble' is an uncountable noun. This is an informal way to quantify it.",
+      "content": {
+        "type": "text",
+        "value": "**[105]**\n\n[a bit of] is a common, informal quantifier used for uncountable nouns like 'trouble'. 'A little' is also correct.\n\n~a few~ is incorrect as 'trouble' is not countable."
+      }
+    },
+    {
+      "cardId": "egac_505",
+      "category": "Expressions with 'IN'",
+      "sentenceParts": {
+        "prefix": "Sorry, I can't talk, I'm ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "in a hurry", "isCorrect": true },
+        { "text": "on a hurry", "isCorrect": false },
+        { "text": "at a hurry", "isCorrect": false }
+      ],
+      "correctAnswer": "Sorry, I can't talk, I'm in a hurry.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_505.mp3",
+      "hint": "This is a fixed expression meaning 'con prisa' or 'apurado'.",
+      "content": {
+        "type": "text",
+        "value": "**[106]**\n\nThe correct fixed expression is [in a hurry].\n\n~on a hurry~ and ~at a hurry~ are common prepositional errors. This phrase must be memorized as a unit."
+      }
+    },
+    {
+      "cardId": "egac_506",
+      "category": "Expressions with 'IN'",
+      "sentenceParts": {
+        "prefix": "Who is ",
+        "suffix": " the new project?"
+      },
+      "options": [
+        { "text": "in charge of", "isCorrect": true },
+        { "text": "on charge of", "isCorrect": false },
+        { "text": "in the charge of", "isCorrect": false }
+      ],
+      "correctAnswer": "Who is in charge of the new project?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_506.mp3",
+      "hint": "This fixed expression means 'responsible for'.",
+      "content": {
+        "type": "text",
+        "value": "**[106]**\n\nThe correct idiom is [in charge of], meaning responsible for.\n\n~on charge of~ is incorrect.\n~in the charge of~ is also incorrect; the article 'the' is not used here."
+      }
+    },
+    {
+      "cardId": "egac_507",
+      "category": "Expressions with 'IN'",
+      "sentenceParts": {
+        "prefix": "We arrived just ",
+        "suffix": " to catch the flight."
+      },
+      "options": [
+        { "text": "in time", "isCorrect": true },
+        { "text": "on time", "isCorrect": false },
+        { "text": "at time", "isCorrect": false }
+      ],
+      "correctAnswer": "We arrived just in time to catch the flight.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_507.mp3",
+      "hint": "This expression means 'before it was too late'.",
+      "content": {
+        "type": "text",
+        "value": "**[106]**\n\n[in time] is the correct expression, meaning with just enough time to spare (before it was too late).\n\n~on time~ means punctually, at the exact scheduled time. It is a common point of confusion, but [in time] fits the context of 'just catching' the flight.\n~at time~ is incorrect."
+      }
+    },
+    {
+      "cardId": "egac_508",
+      "category": "Relative Pronouns: Mandatory (Who)",
+      "sentenceParts": {
+        "prefix": "She is the engineer ",
+        "suffix": " designed this system."
+      },
+      "options": [
+        { "text": "who", "isCorrect": true },
+        { "text": " ", "isCorrect": false },
+        { "text": "which", "isCorrect": false }
+      ],
+      "correctAnswer": "She is the engineer who designed this system.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_508.mp3",
+      "hint": "The word after the gap is a verb ('designed'), and the subject is a person.",
+      "content": {
+        "type": "text",
+        "value": "**[104]**\n\nThe pronoun [who] is mandatory because the word immediately following it is a verb ('designed').\n\n~Omitting~ it is incorrect in this structure.\n~which~ is a common error; it is used for objects, not people."
+      }
+    },
+    {
+      "cardId": "egac_509",
+      "category": "Relative Pronouns: Mandatory (Which)",
+      "sentenceParts": {
+        "prefix": "Can you delete the file ",
+        "suffix": " is causing the error?"
+      },
+      "options": [
+        { "text": "which", "isCorrect": true },
+        { "text": " ", "isCorrect": false },
+        { "text": "who", "isCorrect": false }
+      ],
+      "correctAnswer": "Can you delete the file which is causing the error?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_509.mp3",
+      "hint": "The word after the gap is a verb ('is'), and the subject is an object ('the file').",
+      "content": {
+        "type": "text",
+        "value": "**[104]**\n\nThe pronoun [which] (or 'that') is mandatory because the word immediately following it is a verb ('is').\n\n~Omitting~ the pronoun is a grammatical error.\n~who~ is incorrect as it is used for people."
+      }
+    },
+    {
+      "cardId": "egac_510",
+      "category": "Relative Pronouns: Mandatory (Which)",
+      "sentenceParts": {
+        "prefix": "The application has a new feature ",
+        "suffix": " runs in the background."
+      },
+      "options": [
+        { "text": "which", "isCorrect": true },
+        { "text": " ", "isCorrect": false },
+        { "text": "it", "isCorrect": false }
+      ],
+      "correctAnswer": "The application has a new feature which runs in the background.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_510.mp3",
+      "hint": "A pronoun is required here to connect the clause, as the next word is a verb ('runs').",
+      "content": {
+        "type": "text",
+        "value": "**[104]**\n\nThe pronoun [which] (or 'that') is mandatory because the following word is a verb ('runs').\n\n~Omitting~ the pronoun is incorrect.\n~it~ is a common error that creates a run-on sentence (~...a new feature, it runs...~)."
+      }
     }
   ]
 }

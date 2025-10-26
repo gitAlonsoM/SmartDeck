@@ -57,4 +57,26 @@ class GlossaryService {
         console.warn(`DEBUG: [GlossaryService] Term '${termKey}' not found in glossary '${glossaryName}'.`);
         return null;
     }
+
+    /**
+     * Loads the glossary manifest file that lists all available glossaries.
+     * @returns {Promise<Array<Object>|null>} A promise that resolves to the manifest array or null on error.
+     */
+    static async loadManifest() {
+        if (this.manifest) return this.manifest; // Return from cache if available
+
+        try {
+            console.log("DEBUG: [GlossaryService] Fetching glossary manifest...");
+            const response = await fetch('public/data/glossary/glossary_manifest.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            this.manifest = await response.json();
+            console.log("DEBUG: [GlossaryService] Manifest loaded successfully.");
+            return this.manifest;
+        } catch (error) {
+            console.error("DEBUG: [GlossaryService] Failed to load glossary manifest:", error);
+            return null; // Return null on error
+        }
+    }
 }

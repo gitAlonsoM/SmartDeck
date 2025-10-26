@@ -9,25 +9,44 @@ class MusicPlayerUI {
 
     async render() {
         const html = await ComponentLoader.loadHTML('/src/components/MusicPlayer/music-player.html');
-        this.container.innerHTML = html;
+      // Set the innerHTML first
+        this.container.innerHTML = html;
 
-        // Cache all necessary DOM elements
-        this.playPauseBtn = document.getElementById('play-pause-btn');
-        this.prevTrackBtn = document.getElementById('prev-track-btn');
-        this.nextTrackBtn = document.getElementById('next-track-btn');
-        this.trackNameEl = document.getElementById('track-name');
-        this.discEl = document.getElementById('music-disc');
+        // Use requestAnimationFrame to ensure the DOM has updated
+        requestAnimationFrame(() => {
+            console.log("DEBUG: [MusicPlayerUI] render -> DOM updated, attempting to cache elements and setup listeners.");
+            
+            // Cache all necessary DOM elements NOW, after DOM update
+            this.playPauseBtn = this.container.querySelector('#play-pause-btn'); // Use querySelector scoped to container
+            this.prevTrackBtn = this.container.querySelector('#prev-track-btn'); // Use querySelector scoped to container
+            this.nextTrackBtn = this.container.querySelector('#next-track-btn'); // Use querySelector scoped to container
+            this.trackNameEl = this.container.querySelector('#track-name');       // Use querySelector scoped to container
+            this.discEl = this.container.querySelector('#music-disc');           // Use querySelector scoped to container
 
-        // Attach event listeners only once
-        if (!this.listenersAttached) {
-            this._setupEventListeners();
-        }
+            // Check if elements were found before proceeding
+            if (!this.playPauseBtn || !this.prevTrackBtn || !this.nextTrackBtn || !this.trackNameEl || !this.discEl) {
+                console.error("DEBUG: [MusicPlayerUI] render -> Failed to find one or more essential UI elements after DOM update.");
+                return; // Stop if elements aren't found
+            }
 
-        // Always sync the UI with the service's current state on render
-        this._syncUI();
+            // Attach event listeners only once
+            if (!this.listenersAttached) {
+                this._setupEventListeners();
+            }
+
+            // Always sync the UI with the service's current state on render
+            this._syncUI();
+        });
     }
 
     _setupEventListeners() {
+        // Add checks to ensure elements exist before attaching listeners
+        if (!this.playPauseBtn || !this.nextTrackBtn || !this.prevTrackBtn) {
+            console.error("DEBUG: [MusicPlayerUI] _setupEventListeners -> Cannot attach listeners, button elements not found.");
+            return;
+        }
+        console.log("DEBUG: [MusicPlayerUI] _setupEventListeners -> Attaching button listeners.");
+        
         // Listen to clicks on the UI controls
         this.playPauseBtn.onclick = () => this.musicService.togglePlayPause();
         this.nextTrackBtn.onclick = () => this.musicService.playNext(false);
