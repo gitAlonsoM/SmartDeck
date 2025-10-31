@@ -1,205 +1,194 @@
 [
   {
-    "cardId": "egac_288",
-    "category": "Feedback: 'Exactly'",
-    "sentenceParts": {
-      "prefix": "A: So the file needs to be in PDF format, right? B: ",
-      "suffix": ". That's what the instructions say."
-    },
-    "options": [
+    "cardId": "mi_107", 
+    "cardType": "flippable",
+    "sideA": "La última interrupción del servicio duró tres horas.",
+    "sideB": [
       {
-        "text": "Exactly",
-        "isCorrect": true
+        "text": "The last service outage lasted for three hours.",
+        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_0.mp3"
       },
       {
-        "text": "Exact",
-        "isCorrect": false
+        "text": "The service was down for three hours.",
+        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_1.mp3"
       },
       {
-        "text": "Correctly",
-        "isCorrect": false
+        "text": "The duration of the last outage was three hours.",
+        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_2.mp3"
+      },
+      {
+        "text": "The last service interruption lasted for three hours.",
+        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_3.mp3"
+      },
+      {
+        "text": "The last interruption of the service lasted three hours.",
+        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_4.mp3"
+      },
+      {
+        "text": "The last interruption of the service lasted for three hours.",
+        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_5.mp3"
       }
     ],
-    "correctAnswer": "A: So the file needs to be in PDF format, right? B: Exactly. That's what the instructions say.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_288.mp3",
-    "hint": "'Absolutely' is used to show strong agreement with an opinion, while 'exactly' is for confirming a fact.",
-    "content": {
-      "type": "text",
-      "value": "[Exactly] is the perfect word to confirm that a piece of information is completely and precisely correct.\n\n~Exact~ is an adjective (e.g., 'the exact time') and cannot be used as an interjection here.\n~Correctly~ is an adverb that describes how an action is done ('You answered correctly')."
-    }
+    "note": "**[102]**\n\nBoth [lasted for] and [was down for] are natural ways to express the duration of a past event.\n\nUsing [duration] is more formal and suitable for reports.\n\nA common redundancy error is mixing verb forms: ~The outage was lasted for three hours~. The correct forms are [The outage lasted] or [The outage was three hours long].\n\n'Service interruption' is a common compound noun and often sounds more natural than 'interruption of the service'. The preposition 'for' is optional when talking about duration (e.g., 'lasted three hours')."
   },
   {
-    "cardId": "egac_484",
-    "category": "Compound Nouns: Hyphenated",
-    "sentenceParts": {
-      "prefix": "The hotel ",
-      "suffix": " is at 11 AM, but you can request a late departure."
-    },
-    "options": [
+    "cardId": "mi_091",
+    "cardType": "flippable",
+    "sideA": "¿Hay alguna novedad sobre ese problema?",
+    "sideB": [
       {
-        "text": "check-out",
-        "isCorrect": true
+        "text": "Any updates on that issue?",
+        "audioSrc": "public/data/audio/common_meeting/mi_091_sideB_0.mp3"
       },
       {
-        "text": "check out",
-        "isCorrect": false
+        "text": "Is there any news on that problem?",
+        "audioSrc": "public/data/audio/common_meeting/mi_091_sideB_1.mp3"
       },
       {
-        "text": "checking out",
-        "isCorrect": false
+        "text": "What's the latest on that issue?",
+        "audioSrc": "public/data/audio/common_meeting/mi_091_sideB_2.mp3"
+      },
+      {
+        "text": "What's the status of that issue?",
+        "audioSrc": "public/data/audio/common_meeting/mi_091_sideB_3.mp3"
+      },
+      {
+        "text": "Any updates about that issue?",
+        "audioSrc": "public/data/audio/common_meeting/mi_091_sideB_4.mp3"
       }
     ],
-    "correctAnswer": "The hotel check-out is at 11 AM, but you can request a late departure.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_484.mp3",
-    "hint": "When a phrasal verb like 'check out' is used as a noun, it is often hyphenated.",
-    "content": {
-      "type": "text",
-      "value": "**[99]**\n\nThe noun form, meaning the time of departure, is the hyphenated compound [check-out].\n\n**Note:** The one-word form ~checkout~ is also a correct noun and is often used interchangeably, though [check-out] is common for hotels.\n\n~check out~ (two words) is the phrasal verb, not the noun.\n~Checking out~ is the verb form (gerund/present participle) and does not fit the sentence structure."
-    }
+    "note": "In questions like this, you can often omit the verb 'to be' for conciseness: [Any updates?] is a shortening of [Are there any updates?].\n\n[What's the latest] is a common informal phrase for asking about the most recent information.\n\n~Is there a new on that problem?~ ('News' is an uncountable noun and does not use the article 'a'. The correct form is 'Is there any news...?')\n\n~Is there any updates on that issue?~ ('Updates' is a plural noun and requires 'Are there...'. The correct form is 'Are there any updates...?')"
   },
   {
-    "cardId": "egac_155",
-    "category": "Present Habits: Be used to + Gerund",
-    "sentenceParts": {
-      "prefix": "She's a nurse, so she",
-      "suffix": " working long hours."
-    },
-    "options": [
+    "cardId": "mi_104",
+    "cardType": "flippable",
+    "sideA": "La tarea no debería tomar más de dos horas.",
+    "sideB": [
       {
-        "text": "'s used to",
-        "isCorrect": true
+        "text": "The task shouldn't take more than two hours.",
+        "audioSrc": "public/data/audio/common_meeting/mi_104_sideB_0.mp3"
       },
       {
-        "text": " used to",
-        "isCorrect": false
+        "text": "The task shouldn't last longer than two hours.",
+        "audioSrc": "public/data/audio/common_meeting/mi_104_sideB_1.mp3"
       },
       {
-        "text": "'s used to work",
-        "isCorrect": false
+        "text": "This task has a maximum duration of two hours.",
+        "audioSrc": "public/data/audio/common_meeting/mi_104_sideB_2.mp3"
       }
     ],
-    "correctAnswer": "She's a nurse, so she's used to working long hours.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_155.mp3",
-    "hint": "The word 'to' here is a preposition, not part of an infinitive, which is why it's followed by a gerund.",
-    "content": {
-      "type": "text",
-      "value": "**[15]**\n\nThe expression [be used to] must be followed by a noun or a gerund (-ing form).\n\n~used to~ by itself refers to a past habit.\n~'s used to work~ is incorrect because the structure requires a gerund, not an infinitive."
-    }
+    "note": "**[102]**\n\n[Shouldn't take] is a very common way to estimate the maximum time required for something.\n\n[Longer than] is the correct comparative form. A common error is mixing prepositions: ~last more of two hours~ is incorrect. Use [last longer than] or [take more than].\n\n~The task shouldn't take two hours longer.~ (Incorrect structure. The correct forms are 'shouldn't take more than two hours' or 'shouldn't last longer than two hours'.)"
   },
   {
-    "cardId": "egac_149",
-    "category": "Modals: Had Better",
-    "sentenceParts": {
-      "prefix": "The weather looks bad. We",
-      "suffix": " take an umbrella."
-    },
-    "options": [
+    "cardId": "mi_094",
+    "cardType": "flippable",
+    "sideA": "Déjame revisar eso por mi lado.",
+    "sideB": [
       {
-        "text": "'d better",
-        "isCorrect": true
+        "text": "Let me check that on my end.",
+        "audioSrc": "public/data/audio/common_meeting/mi_094_sideB_0.mp3"
       },
       {
-        "text": " should",
-        "isCorrect": false
+        "text": "I'll take a look at that from my side.",
+        "audioSrc": "public/data/audio/common_meeting/mi_094_sideB_1.mp3"
       },
       {
-        "text": " must",
-        "isCorrect": false
+        "text": "Let me just verify that over here.",
+        "audioSrc": "public/data/audio/common_meeting/mi_094_sideB_2.mp3"
+      },
+      {
+        "text": "I'll investigate that from my end.",
+        "audioSrc": "public/data/audio/common_meeting/mi_094_sideB_3.mp3"
+      },
+      {
+        "text": "Let me check that on my side.",
+        "audioSrc": "public/data/audio/common_meeting/mi_094_sideB_4.mp3"
       }
     ],
-    "correctAnswer": "The weather looks bad. We'd better take an umbrella.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_149.mp3",
-    "hint": "This expression is stronger than 'should' and implies more urgency.",
-    "content": {
-      "type": "text",
-      "value": "**[37]**\n\n['Had better'] (contracted to 'd better) is used for strong advice, implying a specific, negative consequence if ignored. It's followed by the base verb without 'to'.\n\n**Comparison:**\n- **'d better:** Strongest advice for this situation. Implies something bad will happen if you don't take an umbrella (you'll get wet).\n- **should:** General advice, less urgent.\n- **must:** Implies an obligation or rule, which doesn't fit this context."
-    }
+    "note": "[On my end] and [from my side] are common idioms that mean 'from my perspective' or 'using my own resources'.\n\n~Let me to check that~ is incorrect. After 'let me', always use the base form of the verb without 'to': [Let me check].\n\n~Let me check that on my own.~ (This is grammatically correct, but has a different meaning. 'On my own' means 'alone/without help', while 'on my end/side' means 'from my perspective or area of responsibility'.)\n\n~Let me check that by my end.~ (Incorrect preposition. The correct idioms are 'on my end' or 'from my side'.)"
   },
   {
-    "cardId": "egac_254",
-    "category": "Expressions with 'Take': 'Take into account'",
-    "sentenceParts": {
-      "prefix": "When making your decision, you need to ",
-      "suffix": " all the possible consequences."
-    },
-    "options": [
+    "cardId": "mi_063",
+    "cardType": "flippable",
+    "sideA": "¿Como es llamada esa opción en la base de datos?",
+    "sideB": [
       {
-        "text": "take into account",
-        "isCorrect": true
+        "text": "What is that option called in the database?",
+        "audioSrc": "public/data/audio/common_meeting/mi_063_sideB_0.mp3"
       },
       {
-        "text": "take in account",
-        "isCorrect": false
+        "text": "What is that option named in the database?",
+        "audioSrc": "public/data/audio/common_meeting/mi_063_sideB_1.mp3"
       },
       {
-        "text": "have in account",
-        "isCorrect": false
+        "text": "What's the name for that option in the database?",
+        "audioSrc": "public/data/audio/common_meeting/mi_063_sideB_2.mp3"
       }
     ],
-    "correctAnswer": "When making your decision, you need to take into account all the possible consequences.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_254.mp3",
-    "hint": "A more informal synonym is 'keep in mind'.",
-    "content": {
-      "type": "text",
-      "value": "[Take into account] is the correct, fixed idiom that means 'to consider'.\n\n~take in account~ is a common error; the preposition must be 'into'.\n~have in account~ is an incorrect translation from other languages; the verb must be 'take'."
-    }
+    "note": "**[3]**\n\nWhen asking for a name, the correct question word in English is [What], not 'How'.\n\nThe most common and natural phrasing is [What is it called?] or [What is it named?]. A literal translation like 'How is it called?' is a very common mistake but is grammatically incorrect for this purpose.\n\n~What is it called that option in the database?~ (Incorrect word order. The subject 'that option' should not be separated from its verb. Correct: 'What is that option called...?')"
   },
   {
-    "cardId": "egac_184",
-    "category": "Comparisons: The same as",
-    "sentenceParts": {
-      "prefix": "My phone is exactly ",
-      "suffix": " yours."
-    },
-    "options": [
+    "cardId": "mi_069",
+    "cardType": "flippable",
+    "sideA": "¿No puedes replicar el error con la cuenta de prueba?",
+    "sideB": [
       {
-        "text": "the same as",
-        "isCorrect": true
+        "text": "Can't you replicate the bug with the test account?",
+        "audioSrc": "public/data/audio/common_meeting/mi_069_sideB_0.mp3"
       },
       {
-        "text": "the same that",
-        "isCorrect": false
+        "text": "Aren't you able to reproduce the issue using the test account?",
+        "audioSrc": "public/data/audio/common_meeting/mi_069_sideB_1.mp3"
       },
       {
-        "text": "same like",
-        "isCorrect": false
+        "text": "Are you not able to replicate the error with the test account?",
+        "audioSrc": "public/data/audio/common_meeting/mi_069_sideB_2.mp3"
+      },
+      {
+        "text": "Can you not replicate the bug with the test account?",
+        "audioSrc": "public/data/audio/common_meeting/mi_069_sideB_3.mp3"
       }
     ],
-    "correctAnswer": "My phone is exactly the same as yours.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_184.mp3",
-    "hint": "This is a common error for speakers of Romance languages. In English, the preposition is 'as'.",
-    "content": {
-      "type": "text",
-      "value": "The correct fixed expression is [the same as].\n\n~the same that~ is a common error from Spanish speakers.\n~same like~ is grammatically incorrect."
-    }
+    "note": "**[4]**\n\nWith modal verbs like 'can', the negative question is formed with [Can't]. This is very common to express surprise or to check for an expected ability.\n\nDo not add other auxiliaries. ~Do you can't replicate...~ is a frequent mistake. Just use [Can't you...]."
   },
   {
-    "cardId": "egac_232",
-    "category": "Modals: 'Ought to' for Moral Advice",
-    "sentenceParts": {
-      "prefix": "You made a mistake. I think you ",
-      "suffix": " apologize to her."
-    },
-    "options": [
+    "cardId": "mi_100",
+    "cardType": "flippable",
+    "sideA": "¿No es este el comportamiento esperado para esa funcionalidad?",
+    "sideB": [
       {
-        "text": "ought to",
-        "isCorrect": true
+        "text": "Isn't this the expected behavior for that feature?",
+        "audioSrc": "public/data/audio/common_meeting/mi_100_sideB_0.mp3"
       },
       {
-        "text": "must to",
-        "isCorrect": false
+        "text": "Isn't this how the feature is supposed to work?",
+        "audioSrc": "public/data/audio/common_meeting/mi_100_sideB_1.mp3"
       },
       {
-        "text": "had better to",
-        "isCorrect": false
+        "text": "Is this not the expected behavior for that functionality?",
+        "audioSrc": "public/data/audio/common_meeting/mi_100_sideB_2.mp3"
       }
     ],
-    "correctAnswer": "You made a mistake. I think you ought to apologize to her.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_232.mp3",
-    "hint": "'Ought to' is less common than 'should' in modern conversational English.",
-    "content": {
-      "type": "text",
-      "value": "**[59]**\n\n[Ought to] is a semi-modal verb used to give strong advice or express a moral obligation. It's a slightly more formal alternative to 'should'.\n\n~must to~ is grammatically incorrect; 'must' is not followed by 'to'.\n~had better to~ is grammatically incorrect; 'had better' is followed by the base verb without 'to' (e.g., 'had better apologize')."
-    }
+    "note": "**[4]**\n\n[Isn't] is used to confirm a present state or fact you believe is true. It shows you have an expectation and are surprised by what you are seeing.\n\nAvoid subject-verb agreement errors with complex subjects. The subject here is [this], which is singular. ~Aren't this behavior...~ is incorrect.\n\n~Is not this behavior expected for that feature?~ (Incorrect word order. In a negative question, 'not' comes after the subject: 'Is this not the expected behavior...?')"
+  },
+  {
+    "cardId": "mi_077",
+    "cardType": "flippable",
+    "sideA": "Yo iba a hacerlo, pero lo olvidé.",
+    "sideB": [
+      {
+        "text": "I was going to do it, but I forgot.",
+        "audioSrc": "public/data/audio/common_meeting/mi_077_sideB_0.mp3"
+      },
+      {
+        "text": "I was planning to do it, but it slipped my mind.",
+        "audioSrc": "public/data/audio/common_meeting/mi_077_sideB_1.mp3"
+      },
+      {
+        "text": "I was going to do it, but I forgot it.",
+        "audioSrc": "public/data/audio/common_meeting/mi_077_sideB_2.mp3"
+      }
+    ],
+    "note": "**[91]**\n\n[Slipped my mind] is a common idiom that means 'I forgot'.\n\n~I was goingto do it, but I have forgotten.~ (Incorrect. When sequencing two past events like this, use the simple past for both actions: '...but I forgot'.)"
   }
 ]
