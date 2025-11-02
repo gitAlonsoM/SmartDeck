@@ -14638,6 +14638,296 @@
         "type": "text",
         "value": "**[104]**\n\nThe pronoun [which] (or 'that') is mandatory because the following word is a verb ('runs').\n\n~Omitting~ the pronoun is incorrect.\n~it~ is a common error that creates a run-on sentence (~...a new feature, it runs...~)."
       }
+    },
+    {
+    "cardId": "egac_511",
+    "category": "Get-Passive",
+    "sentenceParts": {
+      "prefix": "The document ",
+      "suffix": " saved automatically every few minutes."
+    },
+    "options": [
+      {
+        "text": "gets", 
+        "isCorrect": true
+      },
+      {
+        "text": "did",
+        "isCorrect": false
+      },
+      {
+        "text": "has",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "The document gets saved automatically every few minutes.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_511.mp3",
+    "hint": "This form of the passive emphasizes the *process* of the action.",
+    "content": {
+      "type": "text",
+      "value": "**[107]**\n\n[gets saved] is the 'get-passive'. It is used to emphasize the *process* or *event* of the document being saved, which fits well with an automatic, repeated action.\n\n~is saved~ is the standard 'be-passive'. While also grammatically correct, it describes the *state* of being saved rather than the dynamic action."
     }
+  },
+  {
+    "cardId": "egac_512",
+    "category": "Get-Passive",
+    "sentenceParts": {
+      "prefix": "My wallet ",
+      "suffix": " stolen while I was on the subway."
+    },
+    "options": [
+      {
+        "text": "got", 
+        "isCorrect": true
+      },
+      {
+        "text": "did",
+        "isCorrect": false
+      },
+      {
+        "text": "had",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "My wallet got stolen while I was on the subway.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_512.mp3",
+    "hint": "This form is common in informal English, especially for negative or accidental events.",
+    "content": {
+      "type": "text",
+      "value": "**[107]**\n\nThe 'get-passive' [got stolen] is very common for describing sudden, negative, or accidental events.\n\n~was stolen~ is the standard 'be-passive'. It is also correct but more formal. 'Got' is more natural in this spoken context."
+    }
+  },
+  {
+    "cardId": "egac_513",
+    "category": "Get-Passive",
+    "sentenceParts": {
+      "prefix": "After a long process, she finally ",
+      "suffix": " promoted to Senior Manager."
+    },
+    "options": [
+      {
+        "text": "got",
+        "isCorrect": true
+      },
+      {
+        "text": "has", 
+        "isCorrect": false
+      },
+      {
+        "text": "did",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "After a long process, she finally got promoted to Senior Manager.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_513.mp3",
+    "hint": "Use 'get' to emphasize the *change of state* or the event of the promotion.",
+    "content": {
+      "type": "text",
+      "value": "**[107]**\n\n[got promoted] emphasizes the *event* and the *change of state* for the subject. \n\n~was promoted~ (the standard 'be-passive') is also grammatically correct, but 'got' is often used to highlight the achievement or the completion of the process.\n\n~has promoted~ or ~did promoted~ are incorrect as they are either active voice or grammatically wrong for this structure."
+    }
+  },
+  {
+    "cardId": "egac_514",
+    "category": "Get-Passive",
+    "sentenceParts": {
+      "prefix": "The car's window ",
+      "suffix": " broken during the hailstorm."
+    },
+    "options": [
+      {
+        "text": "got", 
+        "isCorrect": true
+      },
+      {
+        "text": "had",
+        "isCorrect": false
+      },
+      {
+        "text": "did", 
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "The car's window got broken during the hailstorm.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_514.mp3",
+    "hint": "This passive form is often used to describe accidental or unexpected events.",
+    "content": {
+      "type": "text",
+      "value": "**[107]**\n\n[got broken] is the 'get-passive', used here to emphasize the sudden, accidental *event* of the window breaking.\n\n~was broken~ (the standard 'be-passive') is also correct, but it can also describe the *state* of the window *after* the storm. 'Got' focuses on the event itself.\n\n~had broken~ or ~did broken~ are incorrect for this passive structure."
+    }
+  },
+ {
+    "cardId": "egac_515",
+    "category": "Faltar: Absence (Involuntary)",
+    "sentenceParts": {
+      "prefix": "She was sick, so she had to ",
+      "suffix": " the meeting."
+    },
+    "options": [
+      {
+        "text": "miss",
+        "isCorrect": true
+      },
+      {
+        "text": "skip",
+        "isCorrect": false
+      },
+      {
+        "text": "left",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "She was sick, so she had to miss the meeting.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_515.mp3",
+    "hint": "Use this verb for involuntary absence, like due to sickness.",
+    "content": {
+      "type": "text",
+      "value": "**[108]**\n\n[miss] is used for involuntary absence. Since she was sick, she didn't have a choice.\n\n~skip~ is a common error. 'Skip' implies she *chose* not to attend.\n~left~ refers to time or quantity remaining."
+    }
+  },
+  {
+    "cardId": "egac_516",
+    "category": "Faltar: Absence (Intentional)",
+    "sentenceParts": {
+      "prefix": "I wasn't interested in the lecture, so I decided to ",
+      "suffix": " it."
+    },
+    "options": [
+      {
+        "text": "skip",
+        "isCorrect": true
+      },
+      {
+        "text": "miss",
+        "isCorrect": false
+      },
+      {
+        "text": "out of",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "I wasn't interested in the lecture, so I decided to skip it.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_516.mp3",
+    "hint": "Use this verb for an *intentional* absence. You *chose* not to go.",
+    "content": {
+      "type": "text",
+      "value": "**[108]**\n\n[skip] is correct because the absence was intentional ('I decided to...').\n\n~miss~ implies an involuntary absence.\n~out of~ refers to a depleted supply."
+    }
+  },
+  {
+    "cardId": "egac_517",
+    "category": "Faltar: Carency (Lost)",
+    "sentenceParts": {
+      "prefix": "I can't find my keys. They are ",
+      "suffix": "."
+    },
+    "options": [
+      {
+        "text": "missing",
+        "isCorrect": true
+      },
+      {
+        "text": "skipping",
+        "isCorrect": false
+      },
+      {
+        "text": "left",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "I can't find my keys. They are missing.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_517.mp3",
+    "hint": "This adjective describes something that is lost or not in its proper place.",
+    "content": {
+      "type": "text",
+      "value": "**[108]**\n\n[missing] is the correct adjective to describe the state of an item that is lost or cannot be found.\n\n~skipping~ and ~left~ do not fit this context."
+    }
+  },
+  {
+    "cardId": "egac_518",
+    "category": "Faltar: Carency (Depleted)",
+    "sentenceParts": {
+      "prefix": "We can't make coffee because we are completely ",
+      "suffix": " coffee beans."
+    },
+    "options": [
+      {
+        "text": "out of",
+        "isCorrect": true
+      },
+      {
+        "text": "missing",
+        "isCorrect": false
+      },
+      {
+        "text": "short of",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "We can't make coffee because we are completely out of coffee beans.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_518.mp3",
+    "hint": "This phrase means the supply is 100% finished or depleted.",
+    "content": {
+      "type": "text",
+      "value": "**[108]**\n\n[out of] is the correct phrase. 'To be out of' something means the supply is completely depleted.\n\n~missing~ implies the beans are lost.\n~short of~ (also from the modal) implies you still have some, but not enough. The word 'completely' strongly points to [out of]."
+    }
+  },
+  {
+    "cardId": "egac_519",
+    "category": "Faltar: Time Remaining",
+    "sentenceParts": {
+      "prefix": "Hurry up! There are only five minutes ",
+      "suffix": " before the test ends."
+    },
+    "options": [
+      {
+        "text": "left",
+        "isCorrect": true
+      },
+      {
+        "text": "missing",
+        "isCorrect": false
+      },
+      {
+        "text": "out",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "Hurry up! There are only five minutes left before the test ends.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_519.mp3",
+    "hint": "This word is used to describe the *remaining* amount of time or quantity.",
+    "content": {
+      "type": "text",
+      "value": "**[108]**\n\n[left] is the correct word to use after a quantity (five minutes) to express the remaining amount.\n\n~missing~ implies the minutes are lost.\n~out~ is incomplete (the phrase is 'out of time')."
+    }
+  },
+  {
+    "cardId": "egac_520",
+    "category": "Faltar: Carency (Not enough)",
+    "sentenceParts": {
+      "prefix": "I can't buy the ticket. I am $5 ",
+      "suffix": "."
+    },
+    "options": [
+      {
+        "text": "short",
+        "isCorrect": true
+      },
+      {
+        "text": "missing",
+        "isCorrect": false
+      },
+      {
+        "text": "skip",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "I can't buy the ticket. I am $5 short.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_520.mp3",
+    "hint": "This word means you have *almost* enough, but not the full amount.",
+    "content": {
+      "type": "text",
+      "value": "**[108]**\n\n[short] is the correct word. The idiom [to be $5 short] means you 'te faltan $5' (you have $5 less than you need).\n\n~missing~ is a common error. The correct structure would be 'I am missing $5' or '$5 is missing', but not 'I am $5 short'.\n~skip~ does not fit."
+    }
+  }
   ]
 }

@@ -1,194 +1,126 @@
 [
   {
-    "cardId": "mi_107", 
+    "cardId": "mi_089",
     "cardType": "flippable",
-    "sideA": "La última interrupción del servicio duró tres horas.",
+    "sideA": "¿Puedes repetirme eso una vez más?",
     "sideB": [
       {
-        "text": "The last service outage lasted for three hours.",
-        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_0.mp3"
+        "text": "Can you run that by me one more time?",
+        "audioSrc": "public/data/audio/common_meeting/mi_089_sideB_0.mp3"
       },
       {
-        "text": "The service was down for three hours.",
-        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_1.mp3"
+        "text": "Could you say that again, please?",
+        "audioSrc": "public/data/audio/common_meeting/mi_089_sideB_1.mp3"
       },
       {
-        "text": "The duration of the last outage was three hours.",
-        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_2.mp3"
+        "text": "Sorry, could you repeat that?",
+        "audioSrc": "public/data/audio/common_meeting/mi_089_sideB_2.mp3"
       },
       {
-        "text": "The last service interruption lasted for three hours.",
-        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_3.mp3"
+        "text": "I didn't quite catch that, could you repeat it?",
+        "audioSrc": "public/data/audio/common_meeting/mi_089_sideB_3.mp3"
       },
       {
-        "text": "The last interruption of the service lasted three hours.",
-        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_4.mp3"
-      },
-      {
-        "text": "The last interruption of the service lasted for three hours.",
-        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_5.mp3"
+        "text": "Could you repeat that one more time, please?",
+        "audioSrc": "public/data/audio/common_meeting/mi_089_sideB_4.mp3"
       }
     ],
-    "note": "**[102]**\n\nBoth [lasted for] and [was down for] are natural ways to express the duration of a past event.\n\nUsing [duration] is more formal and suitable for reports.\n\nA common redundancy error is mixing verb forms: ~The outage was lasted for three hours~. The correct forms are [The outage lasted] or [The outage was three hours long].\n\n'Service interruption' is a common compound noun and often sounds more natural than 'interruption of the service'. The preposition 'for' is optional when talking about duration (e.g., 'lasted three hours')."
+    "note": "[To run something by someone] is a common idiom that means to tell someone something so they can give their opinion. It's used here as a casual way to ask for repetition.\n\n[I didn't catch that] is another idiom meaning 'I didn't hear or understand'.\n\n~Could you repeat me that once, please?~ (Incorrect. The verb 'repeat' is used with a direct object: 'repeat that'. If you include the person, it's 'repeat that *to me*'. The correct form is 'Could you repeat that to me, please?'.)"
   },
   {
-    "cardId": "mi_091",
+    "cardId": "mi_119",
     "cardType": "flippable",
-    "sideA": "¿Hay alguna novedad sobre ese problema?",
+    "sideA": "¿Se supone que esta arreglado?",
     "sideB": [
       {
-        "text": "Any updates on that issue?",
-        "audioSrc": "public/data/audio/common_meeting/mi_091_sideB_0.mp3"
+        "text": "Is this supposed to be fixed?",
+        "audioSrc": "public/data/audio/common_meeting/mi_119_sideB_0.mp3"
       },
       {
-        "text": "Is there any news on that problem?",
-        "audioSrc": "public/data/audio/common_meeting/mi_091_sideB_1.mp3"
+        "text": "Wasn't this supposed to be fixed?",
+        "audioSrc": "public/data/audio/common_meeting/mi_119_sideB_1.mp3"
       },
       {
-        "text": "What's the latest on that issue?",
-        "audioSrc": "public/data/audio/common_meeting/mi_091_sideB_2.mp3"
+        "text": "Shouldn't this be fixed by now?",
+        "audioSrc": "public/data/audio/common_meeting/mi_119_sideB_2.mp3"
       },
       {
-        "text": "What's the status of that issue?",
-        "audioSrc": "public/data/audio/common_meeting/mi_091_sideB_3.mp3"
-      },
-      {
-        "text": "Any updates about that issue?",
-        "audioSrc": "public/data/audio/common_meeting/mi_091_sideB_4.mp3"
+        "text": "Is it supposed to be fixed?",
+        "audioSrc": "public/data/audio/common_meeting/mi_119_sideB_3.mp3"
       }
     ],
-    "note": "In questions like this, you can often omit the verb 'to be' for conciseness: [Any updates?] is a shortening of [Are there any updates?].\n\n[What's the latest] is a common informal phrase for asking about the most recent information.\n\n~Is there a new on that problem?~ ('News' is an uncountable noun and does not use the article 'a'. The correct form is 'Is there any news...?')\n\n~Is there any updates on that issue?~ ('Updates' is a plural noun and requires 'Are there...'. The correct form is 'Are there any updates...?')"
+    "note": "To form the question, invert the verb 'to be' and the subject: [Is this supposed to be fixed?]\n\nUsing the negative question [Wasn't this supposed to be fixed?] is very common and implies surprise. It means 'My understanding was that this was fixed, but it appears it is not. Can you confirm?'\n\nA common error is using 'do': ~Does this supposed to be fixed?~. The auxiliary is already 'to be'."
   },
   {
-    "cardId": "mi_104",
+    "cardId": "mi_116",
     "cardType": "flippable",
-    "sideA": "La tarea no debería tomar más de dos horas.",
+    "sideA": "¿Ya habia pasado antes?",
     "sideB": [
       {
-        "text": "The task shouldn't take more than two hours.",
-        "audioSrc": "public/data/audio/common_meeting/mi_104_sideB_0.mp3"
+        "text": "Has this happened before?",
+        "audioSrc": "public/data/audio/common_meeting/mi_116_sideB_0.mp3"
       },
       {
-        "text": "The task shouldn't last longer than two hours.",
-        "audioSrc": "public/data/audio/common_meeting/mi_104_sideB_1.mp3"
+        "text": "Have we seen this before?",
+        "audioSrc": "public/data/audio/common_meeting/mi_116_sideB_1.mp3"
       },
       {
-        "text": "This task has a maximum duration of two hours.",
-        "audioSrc": "public/data/audio/common_meeting/mi_104_sideB_2.mp3"
+        "text": "Is this a recurring issue?",
+        "audioSrc": "public/data/audio/common_meeting/mi_116_sideB_2.mp3"
+      },
+      {
+        "text": "Had this happened before?",
+        "audioSrc": "public/data/audio/common_meeting/mi_116_sideB_3.mp3"
+      },
+      {
+        "text": "Has it happened before?",
+        "audioSrc": "public/data/audio/common_meeting/mi_116_sideB_4.mp3"
       }
     ],
-    "note": "**[102]**\n\n[Shouldn't take] is a very common way to estimate the maximum time required for something.\n\n[Longer than] is the correct comparative form. A common error is mixing prepositions: ~last more of two hours~ is incorrect. Use [last longer than] or [take more than].\n\n~The task shouldn't take two hours longer.~ (Incorrect structure. The correct forms are 'shouldn't take more than two hours' or 'shouldn't last longer than two hours'.)"
+    "note": "Use the Present Perfect [Has this happened before?] to ask if an event *ever* occurred in the past up to the present moment. This is the most common translation.\n\nUse the Past Perfect [Had this happened before?] *only* if you are already talking about a specific past event and want to know if this happened *even earlier*. For example: 'This bug broke the demo yesterday. Had this happened before that?'\n\nA common error is using the Simple Past: ~Did this happen before?~ (While not strictly incorrect, 'Has this happened' is more natural for asking about general past occurrences.)"
   },
   {
-    "cardId": "mi_094",
+    "cardId": "mi_120",
     "cardType": "flippable",
-    "sideA": "Déjame revisar eso por mi lado.",
+    "sideA": "¿Que se supone que debe decir este label?",
     "sideB": [
       {
-        "text": "Let me check that on my end.",
-        "audioSrc": "public/data/audio/common_meeting/mi_094_sideB_0.mp3"
+        "text": "What is this label supposed to say?",
+        "audioSrc": "public/data/audio/common_meeting/mi_120_sideB_0.mp3"
       },
       {
-        "text": "I'll take a look at that from my side.",
-        "audioSrc": "public/data/audio/common_meeting/mi_094_sideB_1.mp3"
+        "text": "What should this label say?",
+        "audioSrc": "public/data/audio/common_meeting/mi_120_sideB_1.mp3"
       },
       {
-        "text": "Let me just verify that over here.",
-        "audioSrc": "public/data/audio/common_meeting/mi_094_sideB_2.mp3"
-      },
-      {
-        "text": "I'll investigate that from my end.",
-        "audioSrc": "public/data/audio/common_meeting/mi_094_sideB_3.mp3"
-      },
-      {
-        "text": "Let me check that on my side.",
-        "audioSrc": "public/data/audio/common_meeting/mi_094_sideB_4.mp3"
+        "text": "What's the intended text for this label?",
+        "audioSrc": "public/data/audio/common_meeting/mi_120_sideB_2.mp3"
       }
     ],
-    "note": "[On my end] and [from my side] are common idioms that mean 'from my perspective' or 'using my own resources'.\n\n~Let me to check that~ is incorrect. After 'let me', always use the base form of the verb without 'to': [Let me check].\n\n~Let me check that on my own.~ (This is grammatically correct, but has a different meaning. 'On my own' means 'alone/without help', while 'on my end/side' means 'from my perspective or area of responsibility'.)\n\n~Let me check that by my end.~ (Incorrect preposition. The correct idioms are 'on my end' or 'from my side'.)"
+    "note": "This is a 'Wh-' question using the [be supposed to] structure. The pattern is `What + [is] + [subject] + [supposed to] + [base verb]?`.\n\nIn this case, the main verb is [say].\n\nA common error is to place the verb 'to be' incorrectly: ~What this label is supposed to say?~ (This is a statement, not a question. The verb 'is' must come before the subject 'this label'.)\n\n~What is it supposed to say this label?~ (Incorrect. This sentence has two subjects: 'it' and 'this label'. The correct form is 'What is this label supposed to say?'.)\n\n~What does this label suppose to say?~ (Incorrect. The structure is 'be supposed to', which uses the verb 'to be' (is) as the auxiliary. It does not use 'do/does'.)"
   },
   {
-    "cardId": "mi_063",
+    "cardId": "mi_108",
     "cardType": "flippable",
-    "sideA": "¿Como es llamada esa opción en la base de datos?",
+    "sideA": "¿Cómo se activa este modo?",
     "sideB": [
       {
-        "text": "What is that option called in the database?",
-        "audioSrc": "public/data/audio/common_meeting/mi_063_sideB_0.mp3"
+        "text": "How does this mode get activated?",
+        "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_0.mp3"
       },
       {
-        "text": "What is that option named in the database?",
-        "audioSrc": "public/data/audio/common_meeting/mi_063_sideB_1.mp3"
+        "text": "How is this mode activated?",
+        "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_1.mp3"
       },
       {
-        "text": "What's the name for that option in the database?",
-        "audioSrc": "public/data/audio/common_meeting/mi_063_sideB_2.mp3"
+        "text": "How do you activate this mode?",
+        "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_2.mp3"
+      },
+      {
+        "text": "How does this mode activate?",
+        "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_3.mp3"
       }
     ],
-    "note": "**[3]**\n\nWhen asking for a name, the correct question word in English is [What], not 'How'.\n\nThe most common and natural phrasing is [What is it called?] or [What is it named?]. A literal translation like 'How is it called?' is a very common mistake but is grammatically incorrect for this purpose.\n\n~What is it called that option in the database?~ (Incorrect word order. The subject 'that option' should not be separated from its verb. Correct: 'What is that option called...?')"
-  },
-  {
-    "cardId": "mi_069",
-    "cardType": "flippable",
-    "sideA": "¿No puedes replicar el error con la cuenta de prueba?",
-    "sideB": [
-      {
-        "text": "Can't you replicate the bug with the test account?",
-        "audioSrc": "public/data/audio/common_meeting/mi_069_sideB_0.mp3"
-      },
-      {
-        "text": "Aren't you able to reproduce the issue using the test account?",
-        "audioSrc": "public/data/audio/common_meeting/mi_069_sideB_1.mp3"
-      },
-      {
-        "text": "Are you not able to replicate the error with the test account?",
-        "audioSrc": "public/data/audio/common_meeting/mi_069_sideB_2.mp3"
-      },
-      {
-        "text": "Can you not replicate the bug with the test account?",
-        "audioSrc": "public/data/audio/common_meeting/mi_069_sideB_3.mp3"
-      }
-    ],
-    "note": "**[4]**\n\nWith modal verbs like 'can', the negative question is formed with [Can't]. This is very common to express surprise or to check for an expected ability.\n\nDo not add other auxiliaries. ~Do you can't replicate...~ is a frequent mistake. Just use [Can't you...]."
-  },
-  {
-    "cardId": "mi_100",
-    "cardType": "flippable",
-    "sideA": "¿No es este el comportamiento esperado para esa funcionalidad?",
-    "sideB": [
-      {
-        "text": "Isn't this the expected behavior for that feature?",
-        "audioSrc": "public/data/audio/common_meeting/mi_100_sideB_0.mp3"
-      },
-      {
-        "text": "Isn't this how the feature is supposed to work?",
-        "audioSrc": "public/data/audio/common_meeting/mi_100_sideB_1.mp3"
-      },
-      {
-        "text": "Is this not the expected behavior for that functionality?",
-        "audioSrc": "public/data/audio/common_meeting/mi_100_sideB_2.mp3"
-      }
-    ],
-    "note": "**[4]**\n\n[Isn't] is used to confirm a present state or fact you believe is true. It shows you have an expectation and are surprised by what you are seeing.\n\nAvoid subject-verb agreement errors with complex subjects. The subject here is [this], which is singular. ~Aren't this behavior...~ is incorrect.\n\n~Is not this behavior expected for that feature?~ (Incorrect word order. In a negative question, 'not' comes after the subject: 'Is this not the expected behavior...?')"
-  },
-  {
-    "cardId": "mi_077",
-    "cardType": "flippable",
-    "sideA": "Yo iba a hacerlo, pero lo olvidé.",
-    "sideB": [
-      {
-        "text": "I was going to do it, but I forgot.",
-        "audioSrc": "public/data/audio/common_meeting/mi_077_sideB_0.mp3"
-      },
-      {
-        "text": "I was planning to do it, but it slipped my mind.",
-        "audioSrc": "public/data/audio/common_meeting/mi_077_sideB_1.mp3"
-      },
-      {
-        "text": "I was going to do it, but I forgot it.",
-        "audioSrc": "public/data/audio/common_meeting/mi_077_sideB_2.mp3"
-      }
-    ],
-    "note": "**[91]**\n\n[Slipped my mind] is a common idiom that means 'I forgot'.\n\n~I was goingto do it, but I have forgotten.~ (Incorrect. When sequencing two past events like this, use the simple past for both actions: '...but I forgot'.)"
+    "note": "**[50]**\n\nThe structure for this question is: `How` + `auxiliary` + `subject` + `verb`. For a singular subject like [this mode], the auxiliary is [does].\n\nCommon errors include mixing auxiliaries (~How does this mode is activated?~) or incorrect verb conjugation (~How does this mode gets activated?~). After 'does', the verb must be in its base form ([get]).\n\n~How does this mode activated?~ (Incorrect. After the auxiliary 'does', the main verb must be in its base form. The correct structure is 'How does this mode get activated?'.)\n\n**Active vs. Passive Voice:**\nThe Spanish '[se activa]' is passive. This is best translated with a passive form like 'How *is* this mode activated?' or 'How does this mode *get* activated?'. The active voice 'How does this mode activate?' (implying the mode activates itself) is also grammatically correct, but less common for this context."
   }
 ]
