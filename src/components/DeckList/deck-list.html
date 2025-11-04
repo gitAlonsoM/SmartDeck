@@ -20,8 +20,17 @@
 
 
 <div id="deck-selection-screen" class="text-center">
-    <h1 class="text-4xl md:text-5xl font-bold mb-8 text-indigo-600 dark:text-indigo-400">Choose your Deck</h1>
     
+    <div class="flex justify-between items-center mb-8">
+        <h1 class="text-4xl md:text-4xl font-bold text-indigo-600 dark:text-indigo-400 text-left">
+            Choose your Deck
+        </h1>
+
+        <div id="unlock-container">
+            <input type="text" id="unlock-code-input" placeholder="Unlock Code..." maxlength="6" />
+            <i id="unlock-icon" class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
     <div id="deck-list-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         </div>
 

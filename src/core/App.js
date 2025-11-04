@@ -14,7 +14,7 @@ class App {
             currentDeckId: null,
             quizInstance: null,
                         favoriteDeckIds: new Set(), // Track favorite decks
-
+            unlockedDeckIds: new Set(), // Track unlocked decks
         };
 
         // Component instances are initialized in setupComponents
@@ -52,6 +52,9 @@ class App {
          // Initialize the Text-to-Speech service at the beginning.
         console.log("DEBUG: [App] setupComponents -> Initializing TTSService.");
         await TTSService.init();
+
+        console.log("DEBUG: [App] setupComponents -> Initializing UnlockService and loading codes.");
+        await UnlockService.loadCodes();
 
         const confirmationModalContainer = document.getElementById('confirmation-modal-container'); 
 
@@ -223,6 +226,8 @@ class App {
                     .then(deck => {
                         // Add the actual filename to the deck object for later reference.
                         deck.fileName = file; 
+                        // Ensure static decks are never flagged as AI-generated
+                        deck.isAiGenerated = false;
                         return deck;
                     })
             );
@@ -231,6 +236,7 @@ class App {
             
             loadedDecks.forEach(deck => {
                 console.log(`DEBUG: [App] loadDecks -> Successfully loaded static deck: ${deck.name} (File: ${deck.fileName})`);
+                console.log(`DEBUG: ID_CHECK -> FileName: ${deck.fileName}, DeckID: ${deck.id}`);
                 staticDecks[deck.id] = deck;
             });
         } catch (error) {
@@ -239,6 +245,7 @@ class App {
         
         const userDecks = StorageService.loadDecks();
         this.state.favoriteDeckIds = StorageService.loadFavorites(); // Load favorites status
+        this.state.unlockedDeckIds = StorageService.loadUnlockedDeckIds(); // Load unlocked decks status
         this.state.allDecks = { ...staticDecks, ...userDecks };
         console.log("DEBUG: [App] loadDecks -> Final merged state for allDecks:", this.state.allDecks);
     }
@@ -266,12 +273,39 @@ class App {
                         () => this.handleCreateDeckClicked(),
                         (id) => this.handleToggleFavorite(id), 
                         this.musicService,
-                        () => this.handleShowGlossary() 
+                        () => this.handleShowGlossary(),
+                        (code) => this.handleUnlockAttempt(code) // Add the new handler
                     ); 
                 }
                 
                 // Sort decks: favorites first, then by name
-                const sortedDecks = Object.values(this.state.allDecks).sort((a, b) => {
+                // Define default visible decks (as requested)
+                const defaultVisibleDeckFiles = [
+                    'english_grammar_audio_choice.json', 
+                    'phrasal_verbs_audio_choice.json'
+                ];
+
+                // Filter decks to show only default, unlocked, or AI-generated
+                const visibleDecks = Object.values(this.state.allDecks).filter(deck => {
+                    // 1. Check if it's a default visible deck
+                    if (defaultVisibleDeckFiles.includes(deck.fileName)) {
+                        return true;
+                    }
+                    // 2. Check if it has been unlocked
+                    if (this.state.unlockedDeckIds.has(deck.id)) {
+                        return true;
+                    }
+                    // 3. Check if it's a user-created AI deck (always show)
+                    if (deck.isAiGenerated) {
+                        return true;
+                    }
+                    // Otherwise, hide it
+                    return false;
+                });
+
+                // Sort decks: favorites first, then by name
+                const sortedDecks = visibleDecks.sort((a, b) => {
+
                     const aIsFavorite = this.state.favoriteDeckIds.has(a.id);
                     const bIsFavorite = this.state.favoriteDeckIds.has(b.id);
                     if (aIsFavorite && !bIsFavorite) return -1;
@@ -876,7 +910,61 @@ handleCreateDeckClicked() {
         this.state.currentScreen = 'glossary';
         this.render();
     }
+
+    /**
+     * Handles a deck unlock attempt from the DeckList screen.
+     * @param {string} code The code entered by the user.
+     */
+    handleUnlockAttempt(code) {
+        console.log(`DEBUG: [App] handleUnlockAttempt -> User submitted code: ${code}`);
+        const deckId = UnlockService.getDeckIdForCode(code);
+
+        if (deckId) {
+            // Check if it's a valid deck that exists
+            const deck = this.state.allDecks[deckId];
+            if (!deck) {
+                console.warn(`[App] handleUnlockAttempt -> Code ${code} is valid but deck ${deckId} not found in allDecks.`);
+                this.notificationModal.show(
+                    'Error',
+                    'Code is valid, but the deck data could not be found. Please contact support.',
+                    { icon: 'fa-solid fa-circle-exclamation', color: 'text-red-500', bgColor: 'bg-red-100 dark:bg-red-900' }
+                );
+                return;
+            }
+
+            // Check if already unlocked
+            if (this.state.unlockedDeckIds.has(deckId)) {
+                this.notificationModal.show(
+                    'Already Unlocked',
+                    `The deck "${deck.name}" is already unlocked.`,
+                    { icon: 'fa-solid fa-check-circle', color: 'text-blue-500', bgColor: 'bg-blue-100 dark:bg-blue-900' }
+                );
+            } else {
+                // New unlock!
+                this.state.unlockedDeckIds.add(deckId);
+                StorageService.saveUnlockedDeckIds(this.state.unlockedDeckIds);
+                this.notificationModal.show(
+                    'Deck Unlocked!',
+                    `The deck "${deck.name}" has been unlocked!`,
+                    { icon: 'fa-solid fa-lock-open', color: 'text-green-500', bgColor: 'bg-green-100 dark:bg-green-900' }
+                );
+                this.render(); // Re-render the deck list to show the new deck
+            }
+        } else {
+            // Invalid code
+            console.warn(`[App] handleUnlockAttempt -> Invalid code entered: ${code}`);
+            this.notificationModal.show(
+                'Invalid Code',
+                'The code you entered is not valid. Please try again.',
+                { icon: 'fa-solid fa-shield-halved', color: 'text-orange-500', bgColor: 'bg-orange-100 dark:bg-orange-900' }
+            );
+        }
+    }
 }
+
+
+
+
 
 
   

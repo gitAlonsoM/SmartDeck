@@ -6,7 +6,7 @@ class DeckList {
      * @param {function} onDeckSelect - Callback function to execute when a deck is selected.
      * @param {function} onCreateClick - Callback function for the "Create Deck" button.
      */
-     constructor(container, onDeckSelect, onCreateClick, onToggleFavorite, musicService, onShowGlossary) {
+    constructor(container, onDeckSelect, onCreateClick, onToggleFavorite, musicService, onShowGlossary, onUnlockAttempt) {
         this.container = container;
         this.onDeckSelect = onDeckSelect;
         this.onCreateClick = onCreateClick;
@@ -14,6 +14,7 @@ class DeckList {
         this.musicService = musicService; // Store the music service instance
         this.musicPlayerUI = null; // To hold the UI component instance
         this.onShowGlossary = onShowGlossary; // Store the new handler
+        this.onUnlockAttempt = onUnlockAttempt; // Store the unlock handler
         console.log("DEBUG: [DeckList] constructor -> Component instantiated.");
     }
     /**
@@ -25,6 +26,17 @@ class DeckList {
         
         ComponentLoader.loadHTML('/src/components/DeckList/deck-list.html').then(html => {
             this.container.innerHTML = html;
+
+            // Setup Unlock Input
+            const unlockInput = this.container.querySelector('#unlock-code-input');
+            if (unlockInput && this.onUnlockAttempt) {
+                unlockInput.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') {
+                        this._handleUnlockAttempt();
+                    }
+                });
+            }
+
 
              // Render the music player UI
             const musicPlayerContainer = this.container.querySelector('#music-player-ui-container');
@@ -218,4 +230,19 @@ class DeckList {
             }
         }
     }
+
+    /**
+     * Handles the user pressing Enter in the unlock input field.
+     * @private
+     */
+    _handleUnlockAttempt() {
+        const unlockInput = this.container.querySelector('#unlock-code-input');
+        const code = unlockInput.value.trim();
+
+        if (code.length > 0) {
+            console.log(`DEBUG: [DeckList] _handleUnlockAttempt -> User submitted code: ${code}`);
+            this.onUnlockAttempt(code); // Pass the code up to App.js
+            unlockInput.value = ''; // Clear the input
+        }
+    }
 }

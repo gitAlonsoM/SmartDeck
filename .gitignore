@@ -1,3 +1,4 @@
+#.gitignore
 # Personal Documentation, Notes, and Instructions
 # These files are for local reference and should not be versioned in the main repository.
 README_CARD.MD
@@ -12,3 +13,4 @@ MEJORAS.MD
 generate_audios.py
 corrections.json
 delete_audios.py
+public/data/deck_unlock_codes.json

@@ -7,6 +7,7 @@ class StorageService {
     static STORAGE_KEY_DECKS = 'smart-decks-v3-decks';
      static STORAGE_KEY_IMPROVEMENT_PREFIX = 'smart-decks-v3-improvement-';
             static STORAGE_KEY_FAVORITES = 'smart-decks-v3-favorites';
+            static STORAGE_KEY_UNLOCKED_DECKS = 'smart-decks-v3-unlocked-decks';
 
      static STORAGE_KEY_PROGRESS_PREFIX = 'smart-decks-v3-progress-';
 static STORAGE_KEY_DECK_PROGRESS_PREFIX = 'smart-decks-v3-deck-progress-';
@@ -299,4 +300,36 @@ static STORAGE_KEY_DECK_PROGRESS_PREFIX = 'smart-decks-v3-deck-progress-';
             console.error("DEBUG: [StorageService] saveFavorites -> Error saving favorites.", error);
         }
     }
+
+    /**
+     * Loads the set of unlocked deck IDs from localStorage.
+     * @returns {Set<string>} A set of unlocked deck IDs.
+     */
+    static loadUnlockedDeckIds() {
+        try {
+            const storedUnlocked = localStorage.getItem(this.STORAGE_KEY_UNLOCKED_DECKS);
+            if (storedUnlocked) {
+                const unlockedIds = JSON.parse(storedUnlocked);
+                console.log("DEBUG: [StorageService] loadUnlockedDeckIds -> Found and parsed unlocked decks:", unlockedIds);
+                return new Set(unlockedIds);
+            }
+        } catch (error) {
+            console.error("DEBUG: [StorageService] loadUnlockedDeckIds -> Error loading unlocked decks.", error);
+        }
+        return new Set(); // Return empty set if not found or on error
+    }
+
+    /**
+     * Saves the set of unlocked deck IDs to localStorage.
+     * @param {Set<string>} unlockedDeckIdsSet - The set of unlocked deck IDs to save.
+     */
+    static saveUnlockedDeckIds(unlockedDeckIdsSet) {
+        try {
+            const unlockedIdsArray = Array.from(unlockedDeckIdsSet);
+            localStorage.setItem(this.STORAGE_KEY_UNLOCKED_DECKS, JSON.stringify(unlockedIdsArray));
+            console.log("DEBUG: [StorageService] saveUnlockedDeckIds -> Saved unlocked decks:", unlockedIdsArray);
+        } catch (error) {
+            console.error("DEBUG: [StorageService] saveUnlockedDeckIds -> Error saving unlocked decks.", error);
+        }
+    }
 }

@@ -273,3 +273,55 @@ code {
 #glossary-content pre code.hljs {
     color: #c9d1d9; /* Example default color */
 }
+
+
+/* --- Unlock Input Styles --- */
+#unlock-container {
+    /* Use for relative positioning of the icon */
+    position: relative;
+}
+
+#unlock-code-input {
+    background-color: #f3f4f6; /* bg-gray-100 */
+    color: #1f2937; /* text-gray-800 */
+    border-radius: 9999px; /* rounded-full */
+    padding-left: 2.5rem;  /* pl-10 for icon */
+    padding-right: 1rem; /* pr-4 */
+    padding-top: 0.5rem; /* py-2 */
+    padding-bottom: 0.5rem; /* py-2 */
+    width: 12rem; /* w-48 */
+    transition: all 0.3s ease-in-out;
+    border: 2px solid transparent;
+    font-size: 0.875rem; /* text-sm */
+}
+
+/* Dark mode styles for unlock input */
+.dark #unlock-code-input {
+    background-color: #1f2937; /* dark:bg-gray-800 */
+    color: #f9fafb; /* dark:text-gray-50 */
+}
+
+#unlock-code-input::placeholder {
+    color: #6b7280; /* text-gray-500 */
+}
+
+.dark #unlock-code-input::placeholder {
+    color: #4b5563; /* dark:text-gray-600 */
+}
+
+/* Focus styles */
+#unlock-code-input:focus {
+    outline: none;
+    width: 14rem; /* w-56 */
+    border-color: #4f46e5; /* focus:border-indigo-600 */
+}
+
+/* Icon inside the input */
+#unlock-icon {
+    position: absolute;
+    left: 0.875rem; /* left-3.5 */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af; /* text-gray-400 */
+    pointer-events: none; /* Make icon non-interactive */
+}
