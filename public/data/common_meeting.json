@@ -2935,6 +2935,210 @@
         }
       ],
       "note": "**[109]**\n\n[Workspace] is a single word that can refer to your physical desk area or your digital environment.\n\nVerbs like [define], [organize], or [set up] work well here.\n\nA common error is the literal translation ~space of work~. The correct compound noun is [workspace]."
-    }
+    },
+    {
+    "cardId": "mi_129",
+    "cardType": "flippable",
+    "sideA": "Gracias!, me alegraste el dia con ese comentario.",
+    "sideB": [
+      {
+        "text": "Thanks! That comment really made my day.",
+        "audioSrc": "public/data/audio/common_meeting/mi_129_sideB_0.mp3"
+      },
+      {
+        "text": "Thank you, you just made my day with that comment.",
+        "audioSrc": "public/data/audio/common_meeting/mi_129_sideB_1.mp3"
+      },
+      {
+        "text": "Thanks! That comment brightened up my day.",
+        "audioSrc": "public/data/audio/common_meeting/mi_129_sideB_2.mp3"
+      },
+      {
+        "text": "That's so kind of you, you've really made my day.",
+        "audioSrc": "public/data/audio/common_meeting/mi_129_sideB_3.mp3"
+      }
+    ],
+    "note": "The most common and natural idiom is [to make my day].\n\nA good synonym is [to brighten up my day].\n\nA common error is a literal translation, which is incorrect: ~You alegried my day~ or ~You happied my day~. Another unnatural phrasing is ~That comment put me happy for the day~."
+  },
+  {
+    "cardId": "mi_130",
+    "cardType": "flippable",
+    "sideA": "Estamos priorizando los mas graves primero",
+    "sideB": [
+      {
+        "text": "We are prioritizing the most severe ones first.",
+        "audioSrc": "public/data/audio/common_meeting/mi_130_sideB_0.mp3"
+      },
+      {
+        "text": "We're tackling the most critical issues first.",
+        "audioSrc": "public/data/audio/common_meeting/mi_130_sideB_1.mp3"
+      },
+      {
+        "text": "We are prioritizing the most serious ones first.",
+        "audioSrc": "public/data/audio/common_meeting/mi_130_sideB_2.mp3"
+      },
+      {
+        "text": "Our priority is handling the most severe issues first.",
+        "audioSrc": "public/data/audio/common_meeting/mi_130_sideB_3.mp3"
+      }
+    ],
+    "note": "The adjective 'grave' (Spanish) translates to [severe], [critical], or [serious] in this context.\n\nThe phrasal verb [to tackle] is a common synonym for 'to handle' or 'to address' a problem.\n\nA common error is using the false friend 'grave': ~We are prioritizing the most graves first~. Another is misplacing 'first': ~We are prioritizing the most severe ones at first~ (this means 'in the beginning', which changes the meaning)."
+  },
+  {
+    "cardId": "mi_131",
+    "cardType": "flippable",
+    "sideA": "Estamos priorizando los mas urgentes primero.",
+    "sideB": [
+      {
+        "text": "We are prioritizing the most urgent ones first.",
+        "audioSrc": "public/data/audio/common_meeting/mi_131_sideB_0.mp3"
+      },
+      {
+        "text": "We're handling the most urgent issues first.",
+        "audioSrc": "public/data/audio/common_meeting/mi_131_sideB_1.mp3"
+      },
+      {
+        "text": "We're focusing on the most time-sensitive ones first.",
+        "audioSrc": "public/data/audio/common_meeting/mi_131_sideB_2.mp3"
+      },
+      {
+        "text": "The most urgent items are being prioritized.",
+        "audioSrc": "public/data/audio/common_meeting/mi_131_sideB_3.mp3"
+      }
+    ],
+    "note": "[Most urgent] is the correct translation. [Time-sensitive] is an excellent synonym in a business or tech context.\n\nA common error is redundancy: ~We are prioritizing the most more urgent ones first~. 'Most' already forms the superlative."
+  },
+  {
+    "cardId": "mi_132",
+    "cardType": "flippable",
+    "sideA": "Tenemos una lista y un mapa anidados",
+    "sideB": [
+      {
+        "text": "We have a nested list and map.",
+        "audioSrc": "public/data/audio/common_meeting/mi_132_sideB_0.mp3"
+      },
+      {
+        "text": "We have a list and a map that are nested.",
+        "audioSrc": "public/data/audio/common_meeting/mi_132_sideB_1.mp3"
+      },
+      {
+        "text": "We're using a nested list and map structure.",
+        "audioSrc": "public/data/audio/common_meeting/mi_132_sideB_2.mp3"
+      },
+      {
+        "text": "The data structure is a nested map and list.",
+        "audioSrc": "public/data/audio/common_meeting/mi_132_sideB_3.mp3"
+      }
+    ],
+    "note": "The correct technical term is [nested]. It is used as an adjective before the nouns.\n\nA common error is to misspell the term or use a literal, less precise translation: ~We have a list and map nestered~ or ~We have a list inside a map~ (while the second is understandable, [nested] is the specific term)."
+  },
+  {
+    "cardId": "mi_133",
+    "cardType": "flippable",
+    "sideA": "El mapa y la lista estan anidados",
+    "sideB": [
+      {
+        "text": "The map and the list are nested.",
+        "audioSrc": "public/data/audio/common_meeting/mi_133_sideB_0.mp3"
+      },
+      {
+        "text": "The map and list are nested inside each other.",
+        "audioSrc": "public/data/audio/common_meeting/mi_133_sideB_1.mp3"
+      },
+      {
+        "text": "The list is nested within the map.",
+        "audioSrc": "public/data/audio/common_meeting/mi_133_sideB_2.mp3"
+      },
+      {
+        "text": "You'll find the map and the list are nested.",
+        "audioSrc": "public/data/audio/common_meeting/mi_133_sideB_3.mp3"
+      }
+    ],
+    "note": "This uses the passive structure [are nested] (to be + past participle).\n\nIf you know the relationship, you can be more specific: [The list is nested within the map].\n\nA common error is using the wrong verb form: ~The map and the list are nesting~ (this is active voice and implies they are doing the action themselves, which is incorrect)."
+  },
+  {
+    "cardId": "mi_134",
+    "cardType": "flippable",
+    "sideA": "De donde viene? (cosa, concepto, dato)",
+    "sideB": [
+      {
+        "text": "Where does this come from?",
+        "audioSrc": "public/data/audio/common_meeting/mi_134_sideB_0.mp3"
+      },
+      {
+        "text": "Where does it come from?",
+        "audioSrc": "public/data/audio/common_meeting/mi_134_sideB_4.mp3"
+      },
+      {
+        "text": "Where is this coming from?",
+        "audioSrc": "public/data/audio/common_meeting/mi_134_sideB_1.mp3"
+      },
+      {
+        "text": "What's the source of this?",
+        "audioSrc": "public/data/audio/common_meeting/mi_134_sideB_2.mp3"
+      },
+      {
+        "text": "What's the origin of this data?",
+        "audioSrc": "public/data/audio/common_meeting/mi_134_sideB_3.mp3"
+      }
+    ],
+    "note": "When asking about the origin of data or a concept, [Where does this come from?] is perfect.\n\n[What's the source of this?] or [What's the origin...] are more formal ways to ask the same thing.\n\nA common error is to forget the auxiliary verb 'does' or use incorrect word order: ~Where this comes from?~. The correct structure is `Where + [auxiliary] + [subject] + [verb]?`"
+  },
+  {
+    "cardId": "mi_135",
+    "cardType": "flippable",
+    "sideA": "ok necesitamos verlo (revisar)",
+    "sideB": [
+      {
+        "text": "Okay, we need to check this.",
+        "audioSrc": "public/data/audio/common_meeting/mi_135_sideB_0.mp3"
+      },
+      {
+        "text": "Okay, we need to look into this.",
+        "audioSrc": "public/data/audio/common_meeting/mi_135_sideB_1.mp3"
+      },
+      {
+         "text": "Okay, we need to check it.",
+         "audioSrc": "public/data/audio/common_meeting/mi_135_sideB_4.mp3"
+      },
+      {
+        "text": "Okay, we need to review this.",
+        "audioSrc": "public/data/audio/common_meeting/mi_135_sideB_2.mp3"
+      },
+      {
+        "text": "Alright, we need to check this out.",
+        "audioSrc": "public/data/audio/common_meeting/mi_135_sideB_3.mp3"
+      }
+    ],
+    "note": "[Check] is a perfect word. [Check this out] is a common phrasal verb.\n\nUse [check] for a quick verification.\nUse [look into] to imply a deeper investigation of a problem.\nUse [review] for a more formal examination.\n\nA common error is using 'see': ~We need to see this~. This usually just means 'visually look at it', not 'investigate' or 'verify'."
+  },
+  {
+    "cardId": "mi_136",
+    "cardType": "flippable",
+    "sideA": "Totalmente lo entiendo",
+    "sideB": [
+      {
+        "text": "I totally get it.",
+        "audioSrc": "public/data/audio/common_meeting/mi_136_sideB_0.mp3"
+      },
+      {
+        "text": "I completely understand.",
+        "audioSrc": "public/data/audio/common_meeting/mi_136_sideB_1.mp3"
+      },
+      {
+        "text": "I totally get what you mean.",
+        "audioSrc": "public/data/audio/common_meeting/mi_136_sideB_2.mp3"
+      },
+      {
+        "text": "Makes perfect sense.",
+        "audioSrc": "public/data/audio/common_meeting/mi_136_sideB_3.mp3"
+      },
+      {
+        "text": "Got it. 100 percent.",
+        "audioSrc": "public/data/audio/common_meeting/mi_136_sideB_4.mp3"
+      }
+    ],
+    "note": "[I totally get it] is 100% valid, natural, and common.\n\n[To get] is often used as a more informal synonym for [to understand].\n\n[Makes perfect sense] is another natural way to show agreement and understanding.\n\nA common error is mixing auxiliaries: ~I am get it~ or ~I am getting it~ (which implies you are in the *process* of understanding, not that you *already* understand)."
+  }
   ]
 }
