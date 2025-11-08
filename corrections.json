@@ -1,126 +1,306 @@
 [
   {
-    "cardId": "mi_089",
+    "cardId": "mi_121",
     "cardType": "flippable",
-    "sideA": "¿Puedes repetirme eso una vez más?",
+    "sideA": "He implementado fixes y features de extremo a extremo muchas veces.",
     "sideB": [
       {
-        "text": "Can you run that by me one more time?",
-        "audioSrc": "public/data/audio/common_meeting/mi_089_sideB_0.mp3"
+        "text": "I have implemented fixes and features end-to-end many times.",
+        "audioSrc": "public/data/audio/common_meeting/mi_121_sideB_0.mp3"
       },
       {
-        "text": "Could you say that again, please?",
-        "audioSrc": "public/data/audio/common_meeting/mi_089_sideB_1.mp3"
+        "text": "I have implemented fixes and features from end-to-end many times.",
+        "audioSrc": "public/data/audio/common_meeting/mi_121_sideB_1.mp3"
       },
       {
-        "text": "Sorry, could you repeat that?",
-        "audioSrc": "public/data/audio/common_meeting/mi_089_sideB_2.mp3"
+        "text": "I've implemented fixes and features from start to finish many times.",
+        "audioSrc": "public/data/audio/common_meeting/mi_121_sideB_2.mp3"
       },
       {
-        "text": "I didn't quite catch that, could you repeat it?",
-        "audioSrc": "public/data/audio/common_meeting/mi_089_sideB_3.mp3"
+        "text": "I've often handled the complete implementation of features from beginning to end.",
+        "audioSrc": "public/data/audio/common_meeting/mi_121_sideB_3.mp3"
       },
       {
-        "text": "Could you repeat that one more time, please?",
-        "audioSrc": "public/data/audio/common_meeting/mi_089_sideB_4.mp3"
+        "text": "I have implemented fixes and features end-to-end a lot of times.",
+        "audioSrc": "public/data/audio/common_meeting/mi_121_sideB_4.mp3"
       }
     ],
-    "note": "[To run something by someone] is a common idiom that means to tell someone something so they can give their opinion. It's used here as a casual way to ask for repetition.\n\n[I didn't catch that] is another idiom meaning 'I didn't hear or understand'.\n\n~Could you repeat me that once, please?~ (Incorrect. The verb 'repeat' is used with a direct object: 'repeat that'. If you include the person, it's 'repeat that *to me*'. The correct form is 'Could you repeat that to me, please?'.)"
+    "note": "[End-to-end] (as an adverb) and [from end-to-end] (as an adverbial phrase) are both very common technical and business terms. They mean covering all stages of a process, from the very beginning to the very end.\n\n[From start to finish] and [from beginning to end] are excellent synonyms.\n\nA literal translation like ~from extreme to extreme~ is incorrect.\n\nSince the sentence describes past experiences ('He implementado...'), the Present Perfect tense ([I have implemented...]) is the most natural choice."
   },
   {
-    "cardId": "mi_119",
+    "cardId": "mi_107",
     "cardType": "flippable",
-    "sideA": "¿Se supone que esta arreglado?",
+    "sideA": "La última interrupción del servicio duró tres horas.",
     "sideB": [
       {
-        "text": "Is this supposed to be fixed?",
-        "audioSrc": "public/data/audio/common_meeting/mi_119_sideB_0.mp3"
+        "text": "The last service outage lasted for three hours.",
+        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_0.mp3"
       },
       {
-        "text": "Wasn't this supposed to be fixed?",
-        "audioSrc": "public/data/audio/common_meeting/mi_119_sideB_1.mp3"
+        "text": "The service was down for three hours.",
+        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_1.mp3"
       },
       {
-        "text": "Shouldn't this be fixed by now?",
-        "audioSrc": "public/data/audio/common_meeting/mi_119_sideB_2.mp3"
+        "text": "The duration of the last outage was three hours.",
+        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_2.mp3"
       },
       {
-        "text": "Is it supposed to be fixed?",
-        "audioSrc": "public/data/audio/common_meeting/mi_119_sideB_3.mp3"
+        "text": "The last service interruption lasted for three hours.",
+        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_3.mp3"
+      },
+      {
+        "text": "The last interruption of the service lasted three hours.",
+        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_4.mp3"
+      },
+      {
+        "text": "The last interruption of the service lasted for three hours.",
+        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_5.mp3"
       }
     ],
-    "note": "To form the question, invert the verb 'to be' and the subject: [Is this supposed to be fixed?]\n\nUsing the negative question [Wasn't this supposed to be fixed?] is very common and implies surprise. It means 'My understanding was that this was fixed, but it appears it is not. Can you confirm?'\n\nA common error is using 'do': ~Does this supposed to be fixed?~. The auxiliary is already 'to be'."
+    "note": "**[102]**\n\nBoth [lasted for] and [was down for] are natural ways to express the duration of a past event.\n\nUsing [duration] is more formal and suitable for reports.\n\nA common redundancy error is mixing verb forms: ~The outage was lasted for three hours~. The correct forms are [The outage lasted] or [The outage was three hours long].\n\n'Service interruption' is a common compound noun and often sounds more natural than 'interruption of the service'. The preposition 'for' is optional when talking about duration (e.g., 'lasted three hours').\n\n~The lasted interruption...~ (Incorrect: 'Lasted' is the past tense of the verb 'to last'. The correct adjective here is 'last'.)"
   },
   {
-    "cardId": "mi_116",
+    "cardId": "mi_127",
     "cardType": "flippable",
-    "sideA": "¿Ya habia pasado antes?",
+    "sideA": "Tengo una carga de trabajo bastante alta esta semana",
     "sideB": [
       {
-        "text": "Has this happened before?",
-        "audioSrc": "public/data/audio/common_meeting/mi_116_sideB_0.mp3"
+        "text": "I have a pretty heavy workload this week.",
+        "audioSrc": "public/data/audio/common_meeting/mi_127_sideB_0.mp3"
       },
       {
-        "text": "Have we seen this before?",
-        "audioSrc": "public/data/audio/common_meeting/mi_116_sideB_1.mp3"
+        "text": "My workload is quite high this week.",
+        "audioSrc": "public/data/audio/common_meeting/mi_127_sideB_1.mp3"
       },
       {
-        "text": "Is this a recurring issue?",
-        "audioSrc": "public/data/audio/common_meeting/mi_116_sideB_2.mp3"
-      },
-      {
-        "text": "Had this happened before?",
-        "audioSrc": "public/data/audio/common_meeting/mi_116_sideB_3.mp3"
-      },
-      {
-        "text": "Has it happened before?",
-        "audioSrc": "public/data/audio/common_meeting/mi_116_sideB_4.mp3"
+        "text": "I'm dealing with a heavy workload this week.",
+        "audioSrc": "public/data/audio/common_meeting/mi_127_sideB_2.mp3"
       }
     ],
-    "note": "Use the Present Perfect [Has this happened before?] to ask if an event *ever* occurred in the past up to the present moment. This is the most common translation.\n\nUse the Past Perfect [Had this happened before?] *only* if you are already talking about a specific past event and want to know if this happened *even earlier*. For example: 'This bug broke the demo yesterday. Had this happened before that?'\n\nA common error is using the Simple Past: ~Did this happen before?~ (While not strictly incorrect, 'Has this happened' is more natural for asking about general past occurrences.)"
+    "note": "**[109]**\n\n[Workload] is the correct term for the amount of work.\n\nThe most common adjective to describe a large workload is [heavy]. [High] is also acceptable.\n\nCommon errors are literal translations like ~charge of work~ or using awkward adjectives like ~big workload~. The correct collocation is [heavy workload].\n\n~I have a strong workload...~ (Incorrect collocation: We describe a workload as 'heavy' or 'high', not 'strong'.)"
   },
   {
-    "cardId": "mi_120",
+    "cardId": "mi_129",
     "cardType": "flippable",
-    "sideA": "¿Que se supone que debe decir este label?",
+    "sideA": "Gracias!, me alegraste el dia con ese comentario.",
     "sideB": [
       {
-        "text": "What is this label supposed to say?",
-        "audioSrc": "public/data/audio/common_meeting/mi_120_sideB_0.mp3"
+        "text": "Thanks! That comment really made my day.",
+        "audioSrc": "public/data/audio/common_meeting/mi_129_sideB_0.mp3"
       },
       {
-        "text": "What should this label say?",
-        "audioSrc": "public/data/audio/common_meeting/mi_120_sideB_1.mp3"
+        "text": "Thank you, you just made my day with that comment.",
+        "audioSrc": "public/data/audio/common_meeting/mi_129_sideB_1.mp3"
       },
       {
-        "text": "What's the intended text for this label?",
-        "audioSrc": "public/data/audio/common_meeting/mi_120_sideB_2.mp3"
+        "text": "Thanks! That comment brightened up my day.",
+        "audioSrc": "public/data/audio/common_meeting/mi_129_sideB_2.mp3"
+      },
+      {
+        "text": "That's so kind of you, you've really made my day.",
+        "audioSrc": "public/data/audio/common_meeting/mi_129_sideB_3.mp3"
+      },
+      {
+        "text": "Thanks, you made my day with that comment.",
+        "audioSrc": "public/data/audio/common_meeting/mi_129_sideB_4.mp3"
       }
     ],
-    "note": "This is a 'Wh-' question using the [be supposed to] structure. The pattern is `What + [is] + [subject] + [supposed to] + [base verb]?`.\n\nIn this case, the main verb is [say].\n\nA common error is to place the verb 'to be' incorrectly: ~What this label is supposed to say?~ (This is a statement, not a question. The verb 'is' must come before the subject 'this label'.)\n\n~What is it supposed to say this label?~ (Incorrect. This sentence has two subjects: 'it' and 'this label'. The correct form is 'What is this label supposed to say?'.)\n\n~What does this label suppose to say?~ (Incorrect. The structure is 'be supposed to', which uses the verb 'to be' (is) as the auxiliary. It does not use 'do/does'.)"
+    "note": "The most common and natural idiom is [to make my day].\n\nA good synonym is [to brighten up my day].\n\nA common error is a literal translation, which is incorrect: ~You alegried my day~ or ~You happied my day~. Another unnatural phrasing is ~That comment put me happy for the day~."
   },
   {
-    "cardId": "mi_108",
+    "cardId": "mi_109",
     "cardType": "flippable",
-    "sideA": "¿Cómo se activa este modo?",
+    "sideA": "¿Cuándo se eliminan estos archivos temporales?",
     "sideB": [
       {
-        "text": "How does this mode get activated?",
-        "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_0.mp3"
+        "text": "When do these temporary files get deleted?",
+        "audioSrc": "public/data/audio/common_meeting/mi_109_sideB_0.mp3"
       },
       {
-        "text": "How is this mode activated?",
-        "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_1.mp3"
+        "text": "When are these temporary files deleted?",
+        "audioSrc": "public/data/audio/common_meeting/mi_109_sideB_1.mp3"
       },
       {
-        "text": "How do you activate this mode?",
-        "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_2.mp3"
-      },
-      {
-        "text": "How does this mode activate?",
-        "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_3.mp3"
+        "text": "When does the system delete these temporary files?",
+        "audioSrc": "public/data/audio/common_meeting/mi_109_sideB_2.mp3"
       }
     ],
-    "note": "**[50]**\n\nThe structure for this question is: `How` + `auxiliary` + `subject` + `verb`. For a singular subject like [this mode], the auxiliary is [does].\n\nCommon errors include mixing auxiliaries (~How does this mode is activated?~) or incorrect verb conjugation (~How does this mode gets activated?~). After 'does', the verb must be in its base form ([get]).\n\n~How does this mode activated?~ (Incorrect. After the auxiliary 'does', the main verb must be in its base form. The correct structure is 'How does this mode get activated?'.)\n\n**Active vs. Passive Voice:**\nThe Spanish '[se activa]' is passive. This is best translated with a passive form like 'How *is* this mode activated?' or 'How does this mode *get* activated?'. The active voice 'How does this mode activate?' (implying the mode activates itself) is also grammatically correct, but less common for this context."
+    "note": "**[107]**\n\nFor a plural subject like [these temporary files], the correct auxiliary verb is [do].\n\nA common mistake is to use 'does' with a plural subject (~When does these files get deleted?~). Another error is mixing auxiliaries: ~When do these files are deleted?~ is incorrect.\n\n~When do these temporal files...~ (Incorrect word: 'Temporal' is a false friend. The correct adjective is 'temporary'.)"
+  },
+  {
+    "cardId": "mi_018",
+    "cardType": "flippable",
+    "sideA": "Le preguntare a Mario acerca del problema.",
+    "sideB": [
+      {
+        "text": "I'll ask Mario about the issue.",
+        "audioSrc": "public/data/audio/common_meeting/mi_018_sideB_0.mp3"
+      },
+      {
+        "text": "I'm going to touch base with Mario regarding this bug.",
+        "audioSrc": "public/data/audio/common_meeting/mi_018_sideB_1.mp3"
+      },
+      {
+        "text": "I'll check with Mario about the problem.",
+        "audioSrc": "public/data/audio/common_meeting/mi_018_sideB_2.mp3"
+      },
+      {
+        "text": "I'm gonna ask Mario about the issue.",
+        "audioSrc": "public/data/audio/common_meeting/mi_018_sideB_3.mp3"
+      }
+    ],
+    "note": "The verb [ask] doesn't require the preposition ~to~. Correct: [I will ask Mario], not ~I will ask to Mario~.\n\nThe structure is [consult with someone ABOUT something]. ~Consult with Mario the problem~ is incorrect.\n\n[Gonna] is a common, informal pronunciation of 'going to' (e.g., 'I'm gonna ask...')."
+  },
+  {
+    "cardId": "mi_124",
+    "cardType": "flippable",
+    "sideA": "Hicimos una solucion alternativa, hasta que lo demás se arregle",
+    "sideB": [
+      {
+        "text": "We implemented a workaround until the rest gets fixed.",
+        "audioSrc": "public/data/audio/common_meeting/mi_124_sideB_0.mp3"
+      },
+      {
+        "text": "We put a temporary fix in place until the other issues are resolved.",
+        "audioSrc": "public/data/audio/common_meeting/mi_124_sideB_1.mp3"
+      },
+      {
+        "text": "We made a workaround until the other things get fixed.",
+        "audioSrc": "public/data/audio/common_meeting/mi_124_sideB_2.mp3"
+      }
+    ],
+    "note": "**[109]**\n\n[Workaround] is often paired with verbs like [implement], [put in place], or [make].\n\n[Gets fixed] is a good example of the 'get-passive', which is common in technical speech. [Is fixed] is also correct.\n\nA common error is using 'be' incorrectly: ~until the rest be fixed~. The correct forms are [is fixed] or [gets fixed].\n\n(User question: 'rest' vs. 'resto') Yes, [the rest] is the correct translation for 'el resto' (meaning 'what is left over'). It is different from the verb [to rest] (descansar)."
+  },
+  {
+    "cardId": "mi_071",
+    "cardType": "flippable",
+    "sideA": "¿Qué módulo modificó el equipo de desarrollo?",
+    "sideB": [
+      {
+        "text": "What module did the development team modify?",
+        "audioSrc": "public/data/audio/common_meeting/mi_071_sideB_0.mp3"
+      },
+      {
+        "text": "Which module did the dev team change?",
+        "audioSrc": "public/data/audio/common_meeting/mi_071_sideB_1.mp3"
+      },
+      {
+        "text": "What module was modified by the development team?",
+        "audioSrc": "public/data/audio/common_meeting/mi_071_sideB_2.mp3"
+      }
+    ],
+    "note": "**[3]**\n\nThis is an **Object Question**. We are asking about what received the action. The subject (the 'actor') is [the development team]. Since the subject is known, we MUST use the auxiliary verb 'did' to form the past tense question correctly.\n\n~What module the development team modified?~.\n\n~...modify to?~ (Incorrect: The verb 'modify' is transitive here; it acts directly on an object. It does not need the preposition 'to'.)"
+  },
+  {
+    "cardId": "mi_144",
+    "cardType": "flippable",
+    "sideA": "Yo noté que había algo raro.",
+    "sideB": [
+      {
+        "text": "I noticed there was something strange.",
+        "audioSrc": "public/data/audio/common_meeting/mi_144_sideB_0.mp3"
+      },
+      {
+        "text": "I noticed something was off.",
+        "audioSrc": "public/data/audio/common_meeting/mi_144_sideB_1.mp3"
+      },
+      {
+        "text": "I could tell something was wrong.",
+        "audioSrc": "public/data/audio/common_meeting/mi_144_sideB_2.mp3"
+      },
+      {
+        "text": "I noticed something weird was going on.",
+        "audioSrc": "public/data/audio/common_meeting/mi_144_sideB_3.mp3"
+      },
+      {
+        "text": "I saw that there was something odd.",
+        "audioSrc": "public/data/audio/common_meeting/mi_144_sideB_4.mp3"
+      },
+      {
+        "text": "I noticed something strange.",
+        "audioSrc": "public/data/audio/common_meeting/mi_144_sideB_5.mp3"
+      }
+    ],
+    "note": "[Something was off] is a very common and natural idiom for 'había algo raro'.\n\n[Strange], [weird], and [odd] are all good synonyms for 'raro'.\n\nA common error is ~I noticed that was something strange~. The word [there] is necessary: [I noticed (that) there was...].\n\nBoth [I noticed there was something strange] and the more direct [I noticed something strange] are correct."
+  },
+  {
+    "cardId": "mi_117",
+    "cardType": "flippable",
+    "sideA": "Ya habia pasado antes.",
+    "sideB": [
+      {
+        "text": "This has happened before.",
+        "audioSrc": "public/data/audio/common_meeting/mi_117_sideB_0.mp3"
+      },
+      {
+        "text": "It's happened before.",
+        "audioSrc": "public/data/audio/common_meeting/mi_117_sideB_1.mp3"
+      },
+      {
+        "text": "This isn't the first time.",
+        "audioSrc": "public/data/audio/common_meeting/mi_117_sideB_2.mp3"
+      },
+      {
+        "text": "It had happened before.",
+        "audioSrc": "public/data/audio/common_meeting/mi_117_sideB_3.mp3"
+      },
+      {
+        "text": "It happened before.",
+        "audioSrc": "public/data/audio/common_meeting/mi_117_sideB_4.mp3"
+      }
+    ],
+    "note": "The Present Perfect [This has happened before] is used to state that an event occurred at an unspecified time in the past. [It's happened before] is a common contraction.\n\n[This isn't the first time] is a very natural idiom with the same meaning.\n\nJust like in the question form, the Past Perfect [It had happened before] is only used when referencing a time *before* another past event.\n\nThe Simple Past [It happened before] is also a correct and direct translation."
+  },
+  {
+    "cardId": "mi_126",
+    "cardType": "flippable",
+    "sideA": "¿Quieres que te hable hacerca de mi flujo de trabajo?",
+    "sideB": [
+      {
+        "text": "Do you want me to talk about my workflow?",
+        "audioSrc": "public/data/audio/common_meeting/mi_126_sideB_0.mp3"
+      },
+      {
+        "text": "Would you like me to tell you about my workflow?",
+        "audioSrc": "public/data/audio/common_meeting/mi_126_sideB_1.mp3"
+      },
+      {
+        "text": "Should I walk you through my workflow?",
+        "audioSrc": "public/data/audio/common_meeting/mi_126_sideB_2.mp3"
+      },
+      {
+        "text": "Do you want me to tell you about my workflow?",
+        "audioSrc": "public/data/audio/common_meeting/mi_126_sideB_3.mp3"
+      }
+    ],
+    "note": "**[109]**\n\nThe structure for '¿Quieres que...?' is [Do you want me to...].\n\n[To walk someone through] something is an excellent phrasal verb **[16]** that means to explain a process step-by-step.\n\nA very common error is a literal translation: ~Do you want that I talk about...~. This is incorrect in English."
+  },
+  {
+    "cardId": "mi_139",
+    "cardType": "flippable",
+    "sideA": "Hemos priorizado otros más importantes.",
+    "sideB": [
+      {
+        "text": "We've prioritized other, more important ones.",
+        "audioSrc": "public/data/audio/common_meeting/mi_139_sideB_0.mp3"
+      },
+      {
+        "text": "We have prioritized more important ones.",
+        "audioSrc": "public/data/audio/common_meeting/mi_139_sideB_1.mp3"
+      },
+      {
+        "text": "We're focusing on the more critical ones first.",
+        "audioSrc": "public/data/audio/common_meeting/mi_139_sideB_2.mp3"
+      },
+      {
+        "text": "We've given priority to more important items.",
+        "audioSrc": "public/data/audio/common_meeting/mi_139_sideB_3.mp3"
+      },
+      {
+        "text": "We've prioritized more important ones.",
+        "audioSrc": "public/data/audio/common_meeting/mi_139_sideB_4.mp3"
+      }
+    ],
+    "note": "The Present Perfect [We have prioritized] or [We've prioritized] is the correct tense for a recent past action with present relevance.\n\n[To give priority to] is a good alternative to the verb [to prioritize].\n\nA common error is using 'more' incorrectly: ~We have prioritized the more importants~. The adjective 'important' comes *before* the noun [ones] or [items].\n\n~...others more important~ (Incorrect word order: The adjective 'more important' should come before the pronoun 'ones' or 'items', e.g., 'We've prioritized more important ones'.)"
   }
 ]
