@@ -3419,6 +3419,138 @@
         }
       ],
       "note": "The simplest form is [I didn't see who].\n\nAdding the preposition [to] at the end ([I didn't see who to]) is also common and grammatically correct, as it implies 'I didn't see *to whom* it was sent'.\n\n[To catch] is a good synonym for 'to see' or 'to notice' in this context."
-    }
+   },
+  {
+    "cardId": "mi_147",
+    "cardType": "flippable",
+    "sideA": "Hoy no, pero mañana sí.",
+    "sideB": [
+      {
+        "text": "Not today, but I will tomorrow.",
+        "audioSrc": "public/data/audio/common_meeting/mi_147_sideB_0.mp3"
+      },
+      {
+        "text": "I can't today, but I will tomorrow.",
+        "audioSrc": "public/data/audio/common_meeting/mi_147_sideB_1.mp3"
+      },
+      {
+        "text": "Not today, but tomorrow I will.",
+        "audioSrc": "public/data/audio/common_meeting/mi_147_sideB_2.mp3"
+      }
+    ],
+    "note": "**[112]**\n\nThis is **Case 1 (Contrast) /112/**. To show an affirmative contrast ('...pero mañana sí'), English repeats the auxiliary verb [will].\n\n(I [won't] today, but I [will] tomorrow.)\n\nA common error is the literal translation ~...but tomorrow yes.~, which is incorrect."
+  },
+  {
+    "cardId": "mi_148",
+    "cardType": "flippable",
+    "sideA": "Él no vino, pero yo sí.",
+    "sideB": [
+      {
+        "text": "He didn't come, but I did.",
+        "audioSrc": "public/data/audio/common_meeting/mi_148_sideB_0.mp3"
+      },
+      {
+        "text": "He didn't, but I did.",
+        "audioSrc": "public/data/audio/common_meeting/mi_148_sideB_1.mp3"
+      },
+      {
+        "text": "He didn't attend, but I did.",
+        "audioSrc": "public/data/audio/common_meeting/mi_148_sideB_2.mp3"
+      }
+    ],
+    "note": "**[112]**\n\nThis is **Case 1 (Contrast) /112/**. The negative 'He didn't...' uses the auxiliary [did]. To create the '...pero yo sí' contrast, you must use the positive auxiliary [did].\n\nA common error is ~...but I yes.~ or ~...but I yes came.~"
+  },
+  {
+    "cardId": "mi_149",
+    "cardType": "flippable",
+    "sideA": "Yo no puedo, pero él sí.",
+    "sideB": [
+      {
+        "text": "I can't, but he can.",
+        "audioSrc": "public/data/audio/common_meeting/mi_149_sideB_0.mp3"
+      },
+      {
+        "text": "I can't do it, but he can.",
+        "audioSrc": "public/data/audio/common_meeting/mi_149_sideB_1.mp3"
+      },
+      {
+        "text": "I am not able to, but he is.",
+        "audioSrc": "public/data/audio/common_meeting/mi_149_sideB_2.mp3"
+      }
+    ],
+    "note": "**[112]**\n\nThis is **Case 1 (Contrast) /112/**. The negative 'I can't...' uses the auxiliary [can]. To create the '...pero él sí' contrast, you must use the positive auxiliary [can].\n\nIf the first clause uses 'be' ('am not able'), the second uses 'be' ('he is'). You must match the auxiliary verb."
+  },
+  {
+    "cardId": "mi_150",
+    "cardType": "flippable",
+    "sideA": "Mañana sí lo haré.",
+    "sideB": [
+      {
+        "text": "I will definitely do it tomorrow.",
+        "audioSrc": "public/data/audio/common_meeting/mi_150_sideB_0.mp3"
+      },
+      {
+        "text": "I will certainly do it tomorrow.",
+        "audioSrc": "public/data/audio/common_meeting/mi_150_sideB_1.mp3"
+      },
+      {
+        "text": "I'll do it for sure tomorrow.",
+        "audioSrc": "public/data/audio/common_meeting/mi_150_sideB_2.mp3"
+      },
+      {
+        "text": "I really will do it tomorrow.",
+        "audioSrc": "public/data/audio/common_meeting/mi_150_sideB_3.mp3"
+      }
+    ],
+    "note": "**[112]**\n\nThis is **Case 2 (Emphasis) /112/**. 'Sí' is not for contrast, but for confirmation. English uses an adverb like [definitely], [certainly], or [really] to add this emphasis.\n\nA common error is the literal translation ~I will yes do it tomorrow.~"
+  },
+  {
+    "cardId": "mi_151",
+    "cardType": "flippable",
+    "sideA": "Además, no son errores que comprometan producción.",
+    "sideB": [
+      {
+        "text": "Besides, they aren't errors that compromise production.",
+        "audioSrc": "public/data/audio/common_meeting/mi_151_sideB_0.mp3"
+      },
+      {
+        "text": "Also, they are not issues that will affect production.",
+        "audioSrc": "public/data/audio/common_meeting/mi_151_sideB_1.mp3"
+      },
+      {
+        "text": "Besides, they aren't production-blocking errors.",
+        "audioSrc": "public/data/audio/common_meeting/mi_151_sideB_2.mp3"
+      },
+      {
+        "text": "Also, they won't compromise the production environment.",
+        "audioSrc": "public/data/audio/common_meeting/mi_151_sideB_3.mp3"
+      }
+    ],
+    "note": "**[83]**\n\nThe verb [to compromise] (comprometer) is correct. [To affect] (afectar) is also a good synonym.\n\n[Production-blocking] is a very common technical term for an error that 'compromete producción'.\n\n~commit~ is a false friend. You [commit] code, but you [compromise] stability."
+  },
+  {
+    "cardId": "mi_152",
+    "cardType": "flippable",
+    "sideA": "Además, no son graves.",
+    "sideB": [
+      {
+        "text": "Besides, they aren't severe.",
+        "audioSrc": "public/data/audio/common_meeting/mi_152_sideB_0.mp3"
+      },
+      {
+        "text": "Also, they aren't serious.",
+        "audioSrc": "public/data/audio/common_meeting/mi_152_sideB_1.mp3"
+      },
+      {
+        "text": "Besides, they're not critical.",
+        "audioSrc": "public/data/audio/common_meeting/mi_152_sideB_2.mp3"
+      },
+      {
+        "text": "Also, they're not that serious.",
+        "audioSrc": "public/data/audio/common_meeting/mi_152_sideB_3.mp3"
+      }
+    ],
+    "note": "**[83]**\n\nThe Spanish adjective 'grave' (in this context) translates to [severe], [serious], or [critical].\n\nA common error is to use the false friend 'grave' (which in English refers to a tomb). The phrase ~they are not grave~ is unnatural and incorrect."
+  }
   ]
 }
