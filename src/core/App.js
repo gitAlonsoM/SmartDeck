@@ -105,31 +105,44 @@ class App {
 
     await GlossaryService.loadGlossary('english_rules');
     console.log("DEBUG: [App] setupComponents -> Glossaries pre-loaded.");
-    
-        console.log("DEBUG: [App] setupComponents -> All components initialized.");
+    await GlossaryService.loadGlossary('english_rules');
+     await GlossaryService.loadGlossary('phrasal_verbs');
+     console.log("DEBUG: [App] setupComponents -> All glossaries pre-loaded.")
     }
     /**
      * Handles the request to show an informational modal for a glossary term.
      * @param {string} termKey - The unique key for the term (e.g., 'subject_question').
      */
-    async handleShowInfoModal(termKey) {
-        if (!termKey) return;
-        console.log(`DEBUG: [App] handleShowInfoModal -> Request to show modal for term: ${termKey}`);
-        
-        // For now, we assume all terms are in the 'english_rules' glossary.
-        // This can be made more dynamic later if needed.
-        const termData = await GlossaryService.getTerm('english_rules', termKey);
+  async handleShowInfoModal(termKey) {
+        if (!termKey) return;
+        console.log(`DEBUG: [App] handleShowInfoModal -> Request to show modal for term: ${termKey}`);
+        
+        // Dynamically determine which glossary to use based on the active deck
+        const deckId = this.state.currentDeckId;
+        let glossaryName = 'english_rules'; // Default glossary
 
-        if (termData) {
-            this.infoModal.show(termData.title, termData.content);
-        } else {
-            this.notificationModal.show(
-                'Not Found',
-                `Sorry, the definition for '${termKey.replace('_', ' ')}' could not be found.`,
-                { icon: 'fa-solid fa-question-circle', color: 'text-orange-500', bgColor: 'bg-orange-100 dark:bg-orange-900' }
-            );
-        }
-    }
+        // --- DECK-TO-GLOSSARY ROUTER ---
+        // This is where we map a specific deckId to its specific glossary file.
+        if (deckId === 'phrasal_verbs_audio_choice') {
+            glossaryName = 'phrasal_verbs'; // Use the phrasal verbs glossary
+        }
+        // VERIFY: This log will confirm the fix is working
+        console.log(`VERIFY: [App] handleShowInfoModal -> Using glossary '${glossaryName}' for deck '${deckId}'.`);
+
+        // Fetch the term from the *correct* glossary
+        const termData = await GlossaryService.getTerm(glossaryName, termKey);
+
+        // Now we check for the termData *after* fetching it from the correct source
+        if (termData) {
+            this.infoModal.show(termData.title, termData.content);
+        } else {
+            this.notificationModal.show(
+                'Not Found',
+                `Sorry, the definition for '${termKey.replace('_', ' ')}' could not be found in the '${glossaryName}' glossary.`,
+                { icon: 'fa-solid fa-question-circle', color: 'text-orange-500', bgColor: 'bg-orange-100 dark:bg-orange-900' }
+            );
+        }
+    }
 
       /**
      * Handles the start of card audio playback to lower background music volume.
@@ -352,8 +365,14 @@ class App {
                 if (currentAudioQuestion) {
                     const improvementData = StorageService.loadImprovementData(this.state.currentDeckId);
                     const isMarked = improvementData.hasOwnProperty(currentAudioQuestion.cardId);
-                    this.audioChoiceScreen.render(currentAudioQuestion, this.state.quizInstance.currentIndex, this.state.quizInstance.questions.length, this.state.quizInstance.score, isMarked);
-                } else {
+                        this.audioChoiceScreen.render(
+                        currentAudioQuestion, 
+                        this.state.currentDeckId, // Pass the deck ID
+                        this.state.quizInstance.currentIndex, 
+                        this.state.quizInstance.questions.length, 
+                        this.state.quizInstance.score, 
+                        isMarked
+                    );                } else {
                     console.error("DEBUG: [App] render -> Tried to render audio quiz, but no current question found.");
                     this.handleQuizEnd();
                 }

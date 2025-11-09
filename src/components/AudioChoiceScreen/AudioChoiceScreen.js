@@ -13,10 +13,10 @@ class AudioChoiceScreen {
         this.currentCard = null;
         console.log("DEBUG: [AudioChoiceScreen] constructor -> Component instantiated.");
     }
-
-    async render(cardData, currentIndex, totalQuestions, score, isMarkedForImprovement) {
+async render(cardData, deckId, currentIndex, totalQuestions, score, isMarkedForImprovement) {
         console.log(`DEBUG: [AudioChoiceScreen] render -> Rendering question ${currentIndex + 1} of ${totalQuestions}.`);
         this.currentCard = cardData;
+        this.currentDeckId = deckId; // Store the deckId
 
         if (!this.container.querySelector('#audio-choice-screen')) {
             const html = await ComponentLoader.loadHTML('/src/components/AudioChoiceScreen/audio-choice-screen.html');
@@ -137,7 +137,7 @@ class AudioChoiceScreen {
         }
     }
 
-    revealFeedback() {
+revealFeedback() {
         if (!this.currentCard) return;
         const feedbackContainer = document.getElementById('feedback-container');
         const hintEl = document.getElementById('card-hint');
@@ -151,16 +151,30 @@ class AudioChoiceScreen {
         const modalMatch = contentText.match(/^\*\*\[(\d+)\]\*\*\n\n/);
         if (modalMatch) {
             const modalId = modalMatch[1];
-            const glossary = GlossaryService.getCachedGlossary('english_rules');
+            
+            // --- Dynamic glossary logic ---
+            let glossaryName = 'english_rules'; // Default
+            if (this.currentDeckId === 'phrasal_verbs_audio_choice') {
+                glossaryName = 'phrasal_verbs';
+            }
+            
+            // VERIFY: This log confirms the component is loading the correct glossary
+            console.log(`VERIFY: [AudioChoiceScreen] Using glossary '${glossaryName}' for deck '${this.currentDeckId}'.`);
+            const glossary = GlossaryService.getCachedGlossary(glossaryName);
+            // --- End dynamic logic ---
+
             if (glossary && glossary[modalId]) {
                 const termTitle = glossary[modalId].title;
                 grammarNoteTitleEl.innerHTML = `Tip - <a href="#" class="glossary-term font-bold text-green-400 hover:underline" data-term-key="${modalId}">${termTitle}</a>`;
                 contentText = contentText.replace(modalMatch[0], ''); 
             } else {
+                // This else block handles if the modal ID is not found in the correct glossary
+            	console.warn(`[AudioChoiceScreen] Modal ID ${modalId} not found in glossary '${glossaryName}'. Hiding Tip.`);
                 grammarNoteTitleEl.textContent = '';
             }
         } else {
             grammarNoteTitleEl.textContent = ''; 
+section
         }
 
         let formattedText = contentText.replace(/\[([^\]]+)\]/g, '<strong class="font-semibold text-indigo-400">$1</strong>');
