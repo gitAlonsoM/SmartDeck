@@ -157,10 +157,10 @@ class AudioChoiceScreen {
                 grammarNoteTitleEl.innerHTML = `Tip - <a href="#" class="glossary-term font-bold text-green-400 hover:underline" data-term-key="${modalId}">${termTitle}</a>`;
                 contentText = contentText.replace(modalMatch[0], ''); 
             } else {
-                grammarNoteTitleEl.textContent = 'Tip';
+                grammarNoteTitleEl.textContent = '';
             }
         } else {
-            grammarNoteTitleEl.textContent = 'Tip';
+            grammarNoteTitleEl.textContent = ''; 
         }
 
         let formattedText = contentText.replace(/\[([^\]]+)\]/g, '<strong class="font-semibold text-indigo-400">$1</strong>');
