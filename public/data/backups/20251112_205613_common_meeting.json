@@ -1686,7 +1686,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_073_sideB_2.mp3"
         }
       ],
-      "note": "**[111]**\n\nThis is an *Object Question*. The subject performing the action is [the QA team]. The question word 'Who' asks about the object—the person who received the report. Because the subject is known, the auxiliary verb [did] is mandatory.\n\n~Who the QA team reported the bug to?~.\n\n~Who was reported by the QA team?~ (This is a valid passive sentence, but it changes the meaning. It asks which person was the *subject* of the report, not who *received* the report. To ask who received it, you must use an active structure like 'Who did the team report to?')\n\n~Who did the QA team report the issue?~ (Incomplete. When asking who received the report, you need the preposition 'to' at the end: 'Who did the QA team report the issue to?'.)\n\nIn this context, 'report' functions like a prepositional verb. When you specify *who* received the report, you must use 'to': You **report** a bug **to** someone."
+      "note": "**[111]**\n\nThis is an *Object Question*. The subject performing the action is [the QA team]. The question word 'Who' asks about the object—the person who received the report. Because the subject is known, the auxiliary verb [did] is mandatory.\n\n~Who the QA team reported the bug to?~.\n\n~Who was reported by the QA team?~ (This is a valid passive sentence, but it changes the meaning. It asks which person was the *subject* of the report, not who *received* the report. To ask who received it, you must use an active structure like 'Who did the team report to?')\n\n~Who did the QA team report the issue?~ (Incomplete. When asking who received the report, you need the preposition 'to' at the end: 'Who did the QA team report the issue to?'.)"
     },
     {
       "cardId": "mi_074",
@@ -1708,10 +1708,6 @@
         {
           "text": "What stops the deployment to production?",
           "audioSrc": "public/data/audio/common_meeting/mi_074_sideB_3.mp3"
-        },
-        {
-          "text": "What stops the release to production?",
-          "audioSrc": "public/data/audio/common_meeting/mi_074_sideB_4.mp3"
         }
       ],
       "note": "**[2]**\n\nThis is a Subject Question. We are asking for the 'thing' that is performing the action of preventing. The question word [What] acts as the subject. Consequently, no auxiliary verb is needed, and the main verb ('prevents', 'stops') is conjugated in the third person singular.\n\nWhat does prevent the deployment?.\n\n~What stop the production release?~ (Incorrect. Since 'What' is the third-person singular subject of the sentence, the verb must be conjugated with an '-s': 'stops'.)"
@@ -2206,7 +2202,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_095_sideB_4.mp3"
         }
       ],
-      "note": "[To follow up on] something is a key phrasal verb meaning to continue with it later.\n\n[Take this offline] is a very common business idiom that means to discuss a topic outside of the current meeting, often with a smaller group.\n\n~Let's follow this by email.~ (Incorrect. The correct phrasal verb is 'to **follow up on** this' or simply 'to **follow up**'. 'Follow' by itself doesn't mean 'to continue' in this context.)"
+      "note": "[To follow up on] something is a key phrasal verb meaning to continue with it later.\n\n[Take this offline] is a very common business idiom that means to discuss a topic outside of the current meeting, often with a smaller group."
     },
     {
       "cardId": "mi_096",
@@ -2498,7 +2494,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_3.mp3"
         }
       ],
-      "note": "**[107]**\n\nThe structure for this question is: `How` + `auxiliary` + `subject` + `verb`. For a singular subject like [this mode], the auxiliary is [does].\n\nCommon errors include mixing auxiliaries (~How does this mode is activated?~) or incorrect verb conjugation (~How does this mode gets activated?~). After 'does', the verb must be in its base form ([get]).\n\n~How does this mode activated?~ (Incorrect. After the auxiliary 'does', the main verb must be in its base form. The correct structure is 'How does this mode get activated?'.)\n\n**Active vs. Passive Voice:**\nThe Spanish '[se activa]' is passive. This is best translated with a passive form like 'How *is* this mode activated?' or 'How does this mode *get* activated?'. The active voice 'How does this mode activate?' (implying the mode activates itself) is also grammatically correct, but less common for this context.\n\n~How is this mode get activated?~ (Incorrect. This mixes two passive structures. You must choose one: 1) 'How **is** this mode **activated**?' or 2) 'How **does** this mode **get** activated?'.)"
+      "note": "**[107]**\n\nThe structure for this question is: `How` + `auxiliary` + `subject` + `verb`. For a singular subject like [this mode], the auxiliary is [does].\n\nCommon errors include mixing auxiliaries (~How does this mode is activated?~) or incorrect verb conjugation (~How does this mode gets activated?~). After 'does', the verb must be in its base form ([get]).\n\n~How does this mode activated?~ (Incorrect. After the auxiliary 'does', the main verb must be in its base form. The correct structure is 'How does this mode get activated?'.)\n\n**Active vs. Passive Voice:**\nThe Spanish '[se activa]' is passive. This is best translated with a passive form like 'How *is* this mode activated?' or 'How does this mode *get* activated?'. The active voice 'How does this mode activate?' (implying the mode activates itself) is also grammatically correct, but less common for this context."
     },
     {
       "cardId": "mi_109",
@@ -2608,10 +2604,6 @@
         {
           "text": "What does this script accomplish?",
           "audioSrc": "public/data/audio/common_meeting/mi_113_sideB_2.mp3"
-        },
-        {
-          "text": "What does this script do exactly?",
-          "audioSrc": "public/data/audio/common_meeting/mi_113_sideB_3.mp3"
         }
       ],
       "note": "**[50]**\n\nThis structure uses 'does' as the auxiliary verb for a singular subject ([this script]) and 'do' as the main verb. The pattern is `What does + [subject] + do?`.\n\nA very common error is omitting the main verb 'do' at the end of the question, which leaves the sentence incomplete: ~What exactly does this script?~."
@@ -2986,7 +2978,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_129_sideB_4.mp3"
         }
       ],
-      "note": "The most common and natural idiom is [to make my day].\n\nA good synonym is [to brighten up my day].\n\nA common error is a literal translation, which is incorrect: ~You alegried my day~ or ~You happied my day~. Another unnatural phrasing is ~That comment put me happy for the day~.\n\n~Thanks, you made my day with that commentary.~ (This is grammatically correct, but 'commentary' is the wrong word choice. A 'comment' is a single remark. A 'commentary' is a longer analysis or series of comments. The correct word here is 'comment'.)"
+      "note": "The most common and natural idiom is [to make my day].\n\nA good synonym is [to brighten up my day].\n\nA common error is a literal translation, which is incorrect: ~You alegried my day~ or ~You happied my day~. Another unnatural phrasing is ~That comment put me happy for the day~."
     },
     {
       "cardId": "mi_130",
@@ -3010,7 +3002,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_130_sideB_3.mp3"
         }
       ],
-      "note": "The adjective 'grave' (Spanish) translates to [severe], [critical], or [serious] in this context.\n\nThe phrasal verb [to tackle] is a common synonym for 'to handle' or 'to address' a problem.\n\nA common error is using the false friend 'grave': ~We are prioritizing the most graves first~. Another is misplacing 'first': ~We are prioritizing the most severe ones at first~ (this means 'in the beginning', which changes the meaning).\n\n~We are prioritizing the serious ones first.~ (This is grammatically correct, but it changes the meaning. The Spanish 'los más graves' requires the superlative 'the **most** serious ones'.)"
+      "note": "The adjective 'grave' (Spanish) translates to [severe], [critical], or [serious] in this context.\n\nThe phrasal verb [to tackle] is a common synonym for 'to handle' or 'to address' a problem.\n\nA common error is using the false friend 'grave': ~We are prioritizing the most graves first~. Another is misplacing 'first': ~We are prioritizing the most severe ones at first~ (this means 'in the beginning', which changes the meaning)."
     },
     {
       "cardId": "mi_131",
@@ -3032,10 +3024,6 @@
         {
           "text": "The most urgent items are being prioritized.",
           "audioSrc": "public/data/audio/common_meeting/mi_131_sideB_3.mp3"
-        },
-        {
-          "text": "We are prioritizing the most important ones first.",
-          "audioSrc": "public/data/audio/common_meeting/mi_131_sideB_4.mp3"
         }
       ],
       "note": "[Most urgent] is the correct translation. [Time-sensitive] is an excellent synonym in a business or tech context.\n\nA common error is redundancy: ~We are prioritizing the most more urgent ones first~. 'Most' already forms the superlative."
@@ -3224,17 +3212,9 @@
         {
           "text": "That process takes a while.",
           "audioSrc": "public/data/audio/common_meeting/mi_138_sideB_4.mp3"
-        },
-        {
-          "text": "That takes a long time.",
-          "audioSrc": "public/data/audio/common_meeting/mi_138_sideB_5.mp3"
-        },
-        {
-          "text": "That takes too long.",
-          "audioSrc": "public/data/audio/common_meeting/mi_138_sideB_6.mp3"
         }
       ],
-      "note": "Use the third-person singular [takes] because the subject 'That one' is singular.\n\n[A while] is a common, natural idiom for 'a long time'.\n\nA common error is omitting the '-s': ~That one take a long time~. Another is using the continuous tense incorrectly: ~That is taking a long time~ (this is only correct if it is happening *right now*).\n\n~That takes much time.~ (This is unnatural. In positive statements, 'a lot of time' is preferred over 'much time'. You would use 'much time' in questions like 'Does it take much time?')"
+      "note": "Use the third-person singular [takes] because the subject 'That one' is singular.\n\n[A while] is a common, natural idiom for 'a long time'.\n\nA common error is omitting the '-s': ~That one take a long time~. Another is using the continuous tense incorrectly: ~That is taking a long time~ (this is only correct if it is happening *right now*)."
     },
     {
       "cardId": "mi_139",
@@ -3284,14 +3264,6 @@
         {
           "text": "The images are not displaying fully. We need to make an adjustment.",
           "audioSrc": "public/data/audio/common_meeting/mi_140_sideB_3.mp3"
-        },
-        {
-          "text": "Okay, the images are cutting off. We need to adjust them.",
-          "audioSrc": "public/data/audio/common_meeting/mi_140_sideB_4.mp3"
-        },
-        {
-          "text": "Okay, the images are being cut off. We need to adjust them.",
-          "audioSrc": "public/data/audio/common_meeting/mi_140_sideB_5.mp3"
         }
       ],
       "note": "[To get cut off] is a perfect phrasal verb for this. [To be cropped] also works.\n\n[Hay que] can be translated as [We need to] or [We have to].\n\nA common error is a literal translation: ~The images are coming out cut~. The correct idiom is [are getting cut off]."
@@ -3422,7 +3394,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_145_sideB_3.mp3"
         }
       ],
-      "note": "The Spanish 'se' is ambiguous (he/she/they). All translations are correct. [They] is a good neutral option.\n\nThe structure is [who] + [subject] + [verb] + [object] + [to].\n\nA common error is inverting the question form inside the statement: ~I didn't see who did he send it to~. This is incorrect. Use the statement order: [who he sent it to].\n\n~I didn't see who he sent it.~ (Incorrect. This is incomplete. When 'send' is used to talk about the recipient, it needs the preposition 'to'. The correct sentence is 'I didn't see who he sent it **to**'.)"
+      "note": "The Spanish 'se' is ambiguous (he/she/they). All translations are correct. [They] is a good neutral option.\n\nThe structure is [who] + [subject] + [verb] + [object] + [to].\n\nA common error is inverting the question form inside the statement: ~I didn't see who did he send it to~. This is incorrect. Use the statement order: [who he sent it to]."
     },
     {
       "cardId": "mi_146",
@@ -3447,438 +3419,138 @@
         }
       ],
       "note": "The simplest form is [I didn't see who].\n\nAdding the preposition [to] at the end ([I didn't see who to]) is also common and grammatically correct, as it implies 'I didn't see *to whom* it was sent'.\n\n[To catch] is a good synonym for 'to see' or 'to notice' in this context."
-    },
-    {
-      "cardId": "mi_147",
-      "cardType": "flippable",
-      "sideA": "Hoy no, pero mañana sí.",
-      "sideB": [
-        {
-          "text": "Not today, but I will tomorrow.",
-          "audioSrc": "public/data/audio/common_meeting/mi_147_sideB_0.mp3"
-        },
-        {
-          "text": "I can't today, but I will tomorrow.",
-          "audioSrc": "public/data/audio/common_meeting/mi_147_sideB_1.mp3"
-        },
-        {
-          "text": "Not today, but tomorrow I will.",
-          "audioSrc": "public/data/audio/common_meeting/mi_147_sideB_2.mp3"
-        }
-      ],
-      "note": "**[112]**\n\nThis is **Case 1 (Contrast) /112/**. To show an affirmative contrast ('...pero mañana sí'), English repeats the auxiliary verb [will].\n\n(I [won't] today, but I [will] tomorrow.)\n\nA common error is the literal translation ~...but tomorrow yes.~, which is incorrect."
-    },
-    {
-      "cardId": "mi_148",
-      "cardType": "flippable",
-      "sideA": "Él no vino, pero yo sí.",
-      "sideB": [
-        {
-          "text": "He didn't come, but I did.",
-          "audioSrc": "public/data/audio/common_meeting/mi_148_sideB_0.mp3"
-        },
-        {
-          "text": "He didn't, but I did.",
-          "audioSrc": "public/data/audio/common_meeting/mi_148_sideB_1.mp3"
-        },
-        {
-          "text": "He didn't attend, but I did.",
-          "audioSrc": "public/data/audio/common_meeting/mi_148_sideB_2.mp3"
-        }
-      ],
-      "note": "**[112]**\n\nThis is **Case 1 (Contrast) /112/**. The negative 'He didn't...' uses the auxiliary [did]. To create the '...pero yo sí' contrast, you must use the positive auxiliary [did].\n\nA common error is ~...but I yes.~ or ~...but I yes came.~"
-    },
-    {
-      "cardId": "mi_149",
-      "cardType": "flippable",
-      "sideA": "Yo no puedo, pero él sí.",
-      "sideB": [
-        {
-          "text": "I can't, but he can.",
-          "audioSrc": "public/data/audio/common_meeting/mi_149_sideB_0.mp3"
-        },
-        {
-          "text": "I can't do it, but he can.",
-          "audioSrc": "public/data/audio/common_meeting/mi_149_sideB_1.mp3"
-        },
-        {
-          "text": "I am not able to, but he is.",
-          "audioSrc": "public/data/audio/common_meeting/mi_149_sideB_2.mp3"
-        }
-      ],
-      "note": "**[112]**\n\nThis is **Case 1 (Contrast) /112/**. The negative 'I can't...' uses the auxiliary [can]. To create the '...pero él sí' contrast, you must use the positive auxiliary [can].\n\nIf the first clause uses 'be' ('am not able'), the second uses 'be' ('he is'). You must match the auxiliary verb."
-    },
-    {
-      "cardId": "mi_150",
-      "cardType": "flippable",
-      "sideA": "Mañana sí lo haré.",
-      "sideB": [
-        {
-          "text": "I will definitely do it tomorrow.",
-          "audioSrc": "public/data/audio/common_meeting/mi_150_sideB_0.mp3"
-        },
-        {
-          "text": "I will certainly do it tomorrow.",
-          "audioSrc": "public/data/audio/common_meeting/mi_150_sideB_1.mp3"
-        },
-        {
-          "text": "I'll do it for sure tomorrow.",
-          "audioSrc": "public/data/audio/common_meeting/mi_150_sideB_2.mp3"
-        },
-        {
-          "text": "I really will do it tomorrow.",
-          "audioSrc": "public/data/audio/common_meeting/mi_150_sideB_3.mp3"
-        }
-      ],
-      "note": "**[112]**\n\nThis is **Case 2 (Emphasis) /112/**. 'Sí' is not for contrast, but for confirmation. English uses an adverb like [definitely], [certainly], or [really] to add this emphasis.\n\nA common error is the literal translation ~I will yes do it tomorrow.~"
-    },
-    {
-      "cardId": "mi_151",
-      "cardType": "flippable",
-      "sideA": "Además, no son errores que comprometan producción.",
-      "sideB": [
-        {
-          "text": "Besides, they aren't errors that compromise production.",
-          "audioSrc": "public/data/audio/common_meeting/mi_151_sideB_0.mp3"
-        },
-        {
-          "text": "Also, they are not issues that will affect production.",
-          "audioSrc": "public/data/audio/common_meeting/mi_151_sideB_1.mp3"
-        },
-        {
-          "text": "Besides, they aren't production-blocking errors.",
-          "audioSrc": "public/data/audio/common_meeting/mi_151_sideB_2.mp3"
-        },
-        {
-          "text": "Also, they won't compromise the production environment.",
-          "audioSrc": "public/data/audio/common_meeting/mi_151_sideB_3.mp3"
-        }
-      ],
-      "note": "**[83]**\n\nThe verb [to compromise] (comprometer) is correct. [To affect] (afectar) is also a good synonym.\n\n[Production-blocking] is a very common technical term for an error that 'compromete producción'.\n\n~commit~ is a false friend. You [commit] code, but you [compromise] stability.\n\n~Besides, they aren't errors to compromise production.~ (Incorrect structure. You cannot use the infinitive 'to compromise' here. You must use a relative clause: 'errors **that** compromise production' or 'errors **compromising** production'.)"
-    },
-    {
-      "cardId": "mi_152",
-      "cardType": "flippable",
-      "sideA": "Además, no son graves.",
-      "sideB": [
-        {
-          "text": "Besides, they aren't severe.",
-          "audioSrc": "public/data/audio/common_meeting/mi_152_sideB_0.mp3"
-        },
-        {
-          "text": "Also, they aren't serious.",
-          "audioSrc": "public/data/audio/common_meeting/mi_152_sideB_1.mp3"
-        },
-        {
-          "text": "Besides, they're not critical.",
-          "audioSrc": "public/data/audio/common_meeting/mi_152_sideB_2.mp3"
-        },
-        {
-          "text": "Also, they're not that serious.",
-          "audioSrc": "public/data/audio/common_meeting/mi_152_sideB_3.mp3"
-        }
-      ],
-      "note": "**[83]**\n\nThe Spanish adjective 'grave' (in this context) translates to [severe], [serious], or [critical].\n\nA common error is to use the false friend 'grave' (which in English refers to a tomb). The phrase ~they are not grave~ is unnatural and incorrect."
-    },
-    {
-      "cardId": "mi_153",
-      "cardType": "flippable",
-      "sideA": "Acabo de enviartelo por mensaje interno",
-      "sideB": [
-        {
-          "text": "I just DM'd it to you.",
-          "audioSrc": "public/data/audio/common_meeting/mi_153_sideB_0.mp3"
-        },
-        {
-          "text": "I just sent it to you in a private message.",
-          "audioSrc": "public/data/audio/common_meeting/mi_153_sideB_1.mp3"
-        },
-        {
-          "text": "I just pinged it to you.",
-          "audioSrc": "public/data/audio/common_meeting/mi_153_sideB_2.mp3"
-        },
-        {
-          "text": "I just slacked it to you.",
-          "audioSrc": "public/data/audio/common_meeting/mi_153_sideB_3.mp3"
-        }
-      ],
-      "note": "[DM'd] (Direct Message) is very common on social media.\n\n[To ping] (informal) or [to slack] (specific to Slack) are very common in a work environment for tools like Slack or Teams."
-    },
-    {
-      "cardId": "mi_154",
-      "cardType": "flippable",
-      "sideA": "Si, acabo de enviartelo por correo electronico",
-      "sideB": [
-        {
-          "text": "Yep, I've just emailed it to you.",
-          "audioSrc": "public/data/audio/common_meeting/mi_154_sideB_0.mp3"
-        },
-        {
-          "text": "Yeah, I just sent it to you by email.",
-          "audioSrc": "public/data/audio/common_meeting/mi_154_sideB_1.mp3"
-        },
-        {
-          "text": "Yes, I just sent it to your inbox.",
-          "audioSrc": "public/data/audio/common_meeting/mi_154_sideB_2.mp3"
-        }
-      ],
-      "note": "The verb [to email] is the most direct and natural form.\n\n[I've just emailed...] (Present Perfect) emphasizes the recent completion of the action.\n\n[Inbox] is a common synonym for 'email account'."
-    },
-    {
-      "cardId": "mi_155",
-      "cardType": "flippable",
-      "sideA": "Ninguna de ellas",
-      "sideB": [
-        {
-          "text": "Neither of them.",
-          "audioSrc": "public/data/audio/common_meeting/mi_155_sideB_0.mp3"
-        },
-        {
-          "text": "None of them.",
-          "audioSrc": "public/data/audio/common_meeting/mi_155_sideB_1.mp3"
-        },
-        {
-          "text": "Not a single one.",
-          "audioSrc": "public/data/audio/common_meeting/mi_155_sideB_2.mp3"
-        }
-      ],
-      "note": "This is a critical distinction:\n\nUse [Neither of them] when referring to **only two** options.\n\nUse [None of them] when referring to **three or more** options.\n\n[Not a single one] is for strong emphasis and works for any number (two or more)."
-    },
-    {
-      "cardId": "mi_156",
-      "cardType": "flippable",
-      "sideA": "Un poco de ambas",
-      "sideB": [
-        {
-          "text": "A little bit of both.",
-          "audioSrc": "public/data/audio/common_meeting/mi_156_sideB_0.mp3"
-        },
-        {
-          "text": "A bit of both.",
-          "audioSrc": "public/data/audio/common_meeting/mi_156_sideB_1.mp3"
-        },
-        {
-          "text": "It's a mix of the two.",
-          "audioSrc": "public/data/audio/common_meeting/mi_156_sideB_2.mp3"
-        }
-      ],
-      "note": "The word [both] (ambas) explicitly implies there are **only two** things being discussed.\n\n[A little bit of both] and [A bit of both] are the most common and interchangeable phrases."
-    },
-    {
-      "cardId": "mi_157",
-      "cardType": "flippable",
-      "sideA": "¿Debo usar el simbolo arroba? (@)",
-      "sideB": [
-        {
-          "text": "Should I use the at sign?",
-          "audioSrc": "public/data/audio/common_meeting/mi_157_sideB_0.mp3"
-        },
-        {
-          "text": "Do I need to use the at sign here?",
-          "audioSrc": "public/data/audio/common_meeting/mi_157_sideB_1.mp3"
-        }
-      ],
-      "note": "**[113]**\n\nThe correct English name for the '@' symbol is the [at sign].\n\nWhen reading an email address (e.g., 'user@mail.com'), you just say [at]: 'user at mail dot com'."
-    },
-    {
-      "cardId": "mi_158",
-      "cardType": "flippable",
-      "sideA": "Ahora para finalizar usa punto y coma (;)",
-      "sideB": [
-        {
-          "text": "Now, use a semicolon to finish.",
-          "audioSrc": "public/data/audio/common_meeting/mi_158_sideB_0.mp3"
-        },
-        {
-          "text": "Now, use a semicolon at the end.",
-          "audioSrc": "public/data/audio/common_meeting/mi_158_sideB_1.mp3"
-        },
-        {
-          "text": "End it with a semicolon.",
-          "audioSrc": "public/data/audio/common_meeting/mi_158_sideB_2.mp3"
-        }
-      ],
-      "note": "**[113]**\n\nThe ';' symbol is called a [semicolon].\n\nBe careful not to confuse it with the [colon] ( : ), which is 'dos puntos'."
-    },
-    {
-      "cardId": "mi_159",
-      "cardType": "flippable",
-      "sideA": "No se si debes usar dos puntos, o punto y coma (: ;)",
-      "sideB": [
-        {
-          "text": "I don't know if you should use a colon or a semicolon.",
-          "audioSrc": "public/data/audio/common_meeting/mi_159_sideB_0.mp3"
-        },
-        {
-          "text": "I'm not sure if you need a colon or a semicolon here.",
-          "audioSrc": "public/data/audio/common_meeting/mi_159_sideB_1.mp3"
-        }
-      ],
-      "note": "**[113]**\n\nThis card contrasts the two symbols:\n\n[Colon] = : (dos puntos)\n[Semicolon] = ; (punto y coma)"
-    },
-    {
-      "cardId": "mi_160",
-      "cardType": "flippable",
-      "sideA": "¿Debería usar llaves en esta parte? ({})",
-      "sideB": [
-        {
-          "text": "Should I use braces in this part?",
-          "audioSrc": "public/data/audio/common_meeting/mi_160_sideB_0.mp3"
-        },
-        {
-          "text": "Do I need to use curly brackets here?",
-          "audioSrc": "public/data/audio/common_meeting/mi_160_sideB_1.mp3"
-        }
-      ],
-      "note": "**[113]**\n\nThe '{ }' symbols are most commonly called [braces] or [curly brackets] in programming."
-    },
-    {
-      "cardId": "mi_161",
-      "cardType": "flippable",
-      "sideA": "Ahora encierralo con paréntesis ( ( ) )",
-      "sideB": [
-        {
-          "text": "Now, put it in parentheses.",
-          "audioSrc": "public/data/audio/common_meeting/mi_161_sideB_0.mp3"
-        },
-        {
-          "text": "Now, enclose it in parentheses.",
-          "audioSrc": "public/data/audio/common_meeting/mi_161_sideB_1.mp3"
-        }
-      ],
-      "note": "**[113]**\n\nThe '( )' symbols are called [parentheses].\n\nThe verb [to enclose] (encerrar) is a more formal alternative to [to put it in]."
-    },
-    {
-      "cardId": "mi_162",
-      "cardType": "flippable",
-      "sideA": "Encierra eso con corchetes ( [ ] )",
-      "sideB": [
-        {
-          "text": "Enclose that in brackets.",
-          "audioSrc": "public/data/audio/common_meeting/mi_162_sideB_0.mp3"
-        },
-        {
-          "text": "Put that inside square brackets.",
-          "audioSrc": "public/data/audio/common_meeting/mi_162_sideB_1.mp3"
-        }
-      ],
-      "note": "**[113]**\n\nThe '[ ]' symbols are called [brackets] or [square brackets] to distinguish them from [braces] { }."
-    },
-    {
-      "cardId": "mi_163",
-      "cardType": "flippable",
-      "sideA": "¿Necesito usar guion bajo en esta parte? (_)",
-      "sideB": [
-        {
-          "text": "Do I need to use an underscore in this part?",
-          "audioSrc": "public/data/audio/common_meeting/mi_163_sideB_0.mp3"
-        },
-        {
-          "text": "Should I use an underscore here?",
-          "audioSrc": "public/data/audio/common_meeting/mi_163_sideB_1.mp3"
-        }
-      ],
-      "note": "**[113]**\n\nThe '_' symbol is called an [underscore].\n\nThis is different from a [hyphen] (-) or a [dash] (—)."
-    },
-    {
-      "cardId": "mi_164",
-      "cardType": "flippable",
-      "sideA": "Debes usar 2 barras ( / )",
-      "sideB": [
-        {
-          "text": "You need to use two slashes.",
-          "audioSrc": "public/data/audio/common_meeting/mi_164_sideB_0.mp3"
-        },
-        {
-          "text": "You should use two forward slashes.",
-          "audioSrc": "public/data/audio/common_meeting/mi_164_sideB_1.mp3"
-        }
-      ],
-      "note": "**[113]**\n\nThe '/' symbol is a [slash] or [forward slash].\n\nThis is the opposite of a [backslash] (\\)."
-    },
-    {
-      "cardId": "mi_165",
-      "cardType": "flippable",
-      "sideA": "Puedes usar comillas dobles o comillas simples ( \" ' )",
-      "sideB": [
-        {
-          "text": "You can use double quotes or single quotes.",
-          "audioSrc": "public/data/audio/common_meeting/mi_165_sideB_0.mp3"
-        },
-        {
-          "text": "You can use either double quotes or single quotes.",
-          "audioSrc": "public/data/audio/common_meeting/mi_165_sideB_1.mp3"
-        }
-      ],
-      "note": "**[113]**\n\n[Double quotes] = \"...\"\n[Single quotes] = '...'"
-    },
-    {
-      "cardId": "mi_166",
-      "cardType": "flippable",
-      "sideA": "¿Debo usar comillas simples, o dobles? ( ' \" )",
-      "sideB": [
-        {
-          "text": "Should I use single quotes or double quotes?",
-          "audioSrc": "public/data/audio/common_meeting/mi_166_sideB_0.mp3"
-        },
-        {
-          "text": "Do I need to use single quotes or double quotes?",
-          "audioSrc": "public/data/audio/common_meeting/mi_166_sideB_1.mp3"
-        }
-      ],
-      "note": "**[113]**\n\n[single quotes] (') and [double quotes] (\"."
-    },
-    {
-      "cardId": "mi_167",
-      "cardType": "flippable",
-      "sideA": "¿Te queda poco?",
-      "sideB": [
-        {
-          "text": "Are you almost done?",
-          "audioSrc": "public/data/audio/common_meeting/mi_167_sideB_0.mp3"
-        },
-        {
-          "text": "Are you nearly finished?",
-          "audioSrc": "public/data/audio/common_meeting/mi_167_sideB_1.mp3"
-        },
-        {
-          "text": "Do you only have a little left?",
-          "audioSrc": "public/data/audio/common_meeting/mi_167_sideB_2.mp3"
-        },
-        {
-          "text": "How much do you have left?",
-          "audioSrc": "public/data/audio/common_meeting/mi_167_sideB_3.mp3"
-        },
-        {
-          "text": "How many do you have left?",
-          "audioSrc": "public/data/audio/common_meeting/mi_167_sideB_4.mp3"
-        }
-      ],
-      "note": "The most common translations ask for a Yes/No confirmation about a *task*: [Are you almost done?] or [Are you nearly finished?]\n\nIf asking about *quantity*, [Do you only have a little left?] is a common Yes/No check.\n\n[How much/many do you have left?] are also valid, used when you assume the amount is small and want to know the *exact* small quantity remaining."
-    },
-    {
-      "cardId": "mi_168",
-      "cardType": "flippable",
-      "sideA": "¿Te queda mucho?",
-      "sideB": [
-        {
-          "text": "How much do you have left?",
-          "audioSrc": "public/data/audio/common_meeting/mi_168_sideB_0.mp3"
-        },
-        {
-          "text": "How many do you have left?",
-          "audioSrc": "public/data/audio/common_meeting/mi_168_sideB_1.mp3"
-        },
-        {
-          "text": "Do you have a lot left?",
-          "audioSrc": "public/data/audio/common_meeting/mi_168_sideB_2.mp3"
-        },
-        {
-          "text": "Do you still have a long way to go?",
-          "audioSrc": "public/data/audio/common_meeting/mi_168_sideB_3.mp3"
-        }
-      ],
-      "note": "This card shows the two main ways to ask:\n\n1. Ask for *specific quantity*: [How much do you have left?] (for uncountables like time/work) or [How many do you have left?] (for countables like tasks/items).\n\n2. Ask for *Yes/No confirmation*: [Do you have a lot left?]\n\n[Do you still have a long way to go?] is a common idiom for large projects or tasks."
-    }
+   },
+  {
+    "cardId": "mi_147",
+    "cardType": "flippable",
+    "sideA": "Hoy no, pero mañana sí.",
+    "sideB": [
+      {
+        "text": "Not today, but I will tomorrow.",
+        "audioSrc": "public/data/audio/common_meeting/mi_147_sideB_0.mp3"
+      },
+      {
+        "text": "I can't today, but I will tomorrow.",
+        "audioSrc": "public/data/audio/common_meeting/mi_147_sideB_1.mp3"
+      },
+      {
+        "text": "Not today, but tomorrow I will.",
+        "audioSrc": "public/data/audio/common_meeting/mi_147_sideB_2.mp3"
+      }
+    ],
+    "note": "**[112]**\n\nThis is **Case 1 (Contrast) /112/**. To show an affirmative contrast ('...pero mañana sí'), English repeats the auxiliary verb [will].\n\n(I [won't] today, but I [will] tomorrow.)\n\nA common error is the literal translation ~...but tomorrow yes.~, which is incorrect."
+  },
+  {
+    "cardId": "mi_148",
+    "cardType": "flippable",
+    "sideA": "Él no vino, pero yo sí.",
+    "sideB": [
+      {
+        "text": "He didn't come, but I did.",
+        "audioSrc": "public/data/audio/common_meeting/mi_148_sideB_0.mp3"
+      },
+      {
+        "text": "He didn't, but I did.",
+        "audioSrc": "public/data/audio/common_meeting/mi_148_sideB_1.mp3"
+      },
+      {
+        "text": "He didn't attend, but I did.",
+        "audioSrc": "public/data/audio/common_meeting/mi_148_sideB_2.mp3"
+      }
+    ],
+    "note": "**[112]**\n\nThis is **Case 1 (Contrast) /112/**. The negative 'He didn't...' uses the auxiliary [did]. To create the '...pero yo sí' contrast, you must use the positive auxiliary [did].\n\nA common error is ~...but I yes.~ or ~...but I yes came.~"
+  },
+  {
+    "cardId": "mi_149",
+    "cardType": "flippable",
+    "sideA": "Yo no puedo, pero él sí.",
+    "sideB": [
+      {
+        "text": "I can't, but he can.",
+        "audioSrc": "public/data/audio/common_meeting/mi_149_sideB_0.mp3"
+      },
+      {
+        "text": "I can't do it, but he can.",
+        "audioSrc": "public/data/audio/common_meeting/mi_149_sideB_1.mp3"
+      },
+      {
+        "text": "I am not able to, but he is.",
+        "audioSrc": "public/data/audio/common_meeting/mi_149_sideB_2.mp3"
+      }
+    ],
+    "note": "**[112]**\n\nThis is **Case 1 (Contrast) /112/**. The negative 'I can't...' uses the auxiliary [can]. To create the '...pero él sí' contrast, you must use the positive auxiliary [can].\n\nIf the first clause uses 'be' ('am not able'), the second uses 'be' ('he is'). You must match the auxiliary verb."
+  },
+  {
+    "cardId": "mi_150",
+    "cardType": "flippable",
+    "sideA": "Mañana sí lo haré.",
+    "sideB": [
+      {
+        "text": "I will definitely do it tomorrow.",
+        "audioSrc": "public/data/audio/common_meeting/mi_150_sideB_0.mp3"
+      },
+      {
+        "text": "I will certainly do it tomorrow.",
+        "audioSrc": "public/data/audio/common_meeting/mi_150_sideB_1.mp3"
+      },
+      {
+        "text": "I'll do it for sure tomorrow.",
+        "audioSrc": "public/data/audio/common_meeting/mi_150_sideB_2.mp3"
+      },
+      {
+        "text": "I really will do it tomorrow.",
+        "audioSrc": "public/data/audio/common_meeting/mi_150_sideB_3.mp3"
+      }
+    ],
+    "note": "**[112]**\n\nThis is **Case 2 (Emphasis) /112/**. 'Sí' is not for contrast, but for confirmation. English uses an adverb like [definitely], [certainly], or [really] to add this emphasis.\n\nA common error is the literal translation ~I will yes do it tomorrow.~"
+  },
+  {
+    "cardId": "mi_151",
+    "cardType": "flippable",
+    "sideA": "Además, no son errores que comprometan producción.",
+    "sideB": [
+      {
+        "text": "Besides, they aren't errors that compromise production.",
+        "audioSrc": "public/data/audio/common_meeting/mi_151_sideB_0.mp3"
+      },
+      {
+        "text": "Also, they are not issues that will affect production.",
+        "audioSrc": "public/data/audio/common_meeting/mi_151_sideB_1.mp3"
+      },
+      {
+        "text": "Besides, they aren't production-blocking errors.",
+        "audioSrc": "public/data/audio/common_meeting/mi_151_sideB_2.mp3"
+      },
+      {
+        "text": "Also, they won't compromise the production environment.",
+        "audioSrc": "public/data/audio/common_meeting/mi_151_sideB_3.mp3"
+      }
+    ],
+    "note": "**[83]**\n\nThe verb [to compromise] (comprometer) is correct. [To affect] (afectar) is also a good synonym.\n\n[Production-blocking] is a very common technical term for an error that 'compromete producción'.\n\n~commit~ is a false friend. You [commit] code, but you [compromise] stability."
+  },
+  {
+    "cardId": "mi_152",
+    "cardType": "flippable",
+    "sideA": "Además, no son graves.",
+    "sideB": [
+      {
+        "text": "Besides, they aren't severe.",
+        "audioSrc": "public/data/audio/common_meeting/mi_152_sideB_0.mp3"
+      },
+      {
+        "text": "Also, they aren't serious.",
+        "audioSrc": "public/data/audio/common_meeting/mi_152_sideB_1.mp3"
+      },
+      {
+        "text": "Besides, they're not critical.",
+        "audioSrc": "public/data/audio/common_meeting/mi_152_sideB_2.mp3"
+      },
+      {
+        "text": "Also, they're not that serious.",
+        "audioSrc": "public/data/audio/common_meeting/mi_152_sideB_3.mp3"
+      }
+    ],
+    "note": "**[83]**\n\nThe Spanish adjective 'grave' (in this context) translates to [severe], [serious], or [critical].\n\nA common error is to use the false friend 'grave' (which in English refers to a tomb). The phrase ~they are not grave~ is unnatural and incorrect."
+  }
   ]
 }

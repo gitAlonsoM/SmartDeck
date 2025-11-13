@@ -1,83 +1,23 @@
 [
   {
-    "cardId": "mi_121",
+    "cardId": "mi_073",
     "cardType": "flippable",
-    "sideA": "He implementado fixes y features de extremo a extremo muchas veces.",
+    "sideA": "¿A quién reportó el error el equipo de QA?",
     "sideB": [
       {
-        "text": "I have implemented fixes and features end-to-end many times.",
-        "audioSrc": "public/data/audio/common_meeting/mi_121_sideB_0.mp3"
+        "text": "Who did the QA team report the bug to?",
+        "audioSrc": "public/data/audio/common_meeting/mi_073_sideB_0.mp3"
       },
       {
-        "text": "I have implemented fixes and features from end-to-end many times.",
-        "audioSrc": "public/data/audio/common_meeting/mi_121_sideB_1.mp3"
+        "text": "To whom did the QA team report the error?",
+        "audioSrc": "public/data/audio/common_meeting/mi_073_sideB_1.mp3"
       },
       {
-        "text": "I've implemented fixes and features from start to finish many times.",
-        "audioSrc": "public/data/audio/common_meeting/mi_121_sideB_2.mp3"
-      },
-      {
-        "text": "I've often handled the complete implementation of features from beginning to end.",
-        "audioSrc": "public/data/audio/common_meeting/mi_121_sideB_3.mp3"
-      },
-      {
-        "text": "I have implemented fixes and features end-to-end a lot of times.",
-        "audioSrc": "public/data/audio/common_meeting/mi_121_sideB_4.mp3"
+        "text": "Who did the QA team notify about the bug?",
+        "audioSrc": "public/data/audio/common_meeting/mi_073_sideB_2.mp3"
       }
     ],
-    "note": "[End-to-end] (as an adverb) and [from end-to-end] (as an adverbial phrase) are both very common technical and business terms. They mean covering all stages of a process, from the very beginning to the very end.\n\n[From start to finish] and [from beginning to end] are excellent synonyms.\n\nA literal translation like ~from extreme to extreme~ is incorrect.\n\nSince the sentence describes past experiences ('He implementado...'), the Present Perfect tense ([I have implemented...]) is the most natural choice."
-  },
-  {
-    "cardId": "mi_107",
-    "cardType": "flippable",
-    "sideA": "La última interrupción del servicio duró tres horas.",
-    "sideB": [
-      {
-        "text": "The last service outage lasted for three hours.",
-        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_0.mp3"
-      },
-      {
-        "text": "The service was down for three hours.",
-        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_1.mp3"
-      },
-      {
-        "text": "The duration of the last outage was three hours.",
-        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_2.mp3"
-      },
-      {
-        "text": "The last service interruption lasted for three hours.",
-        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_3.mp3"
-      },
-      {
-        "text": "The last interruption of the service lasted three hours.",
-        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_4.mp3"
-      },
-      {
-        "text": "The last interruption of the service lasted for three hours.",
-        "audioSrc": "public/data/audio/common_meeting/mi_107_sideB_5.mp3"
-      }
-    ],
-    "note": "**[102]**\n\nBoth [lasted for] and [was down for] are natural ways to express the duration of a past event.\n\nUsing [duration] is more formal and suitable for reports.\n\nA common redundancy error is mixing verb forms: ~The outage was lasted for three hours~. The correct forms are [The outage lasted] or [The outage was three hours long].\n\n'Service interruption' is a common compound noun and often sounds more natural than 'interruption of the service'. The preposition 'for' is optional when talking about duration (e.g., 'lasted three hours').\n\n~The lasted interruption...~ (Incorrect: 'Lasted' is the past tense of the verb 'to last'. The correct adjective here is 'last'.)"
-  },
-  {
-    "cardId": "mi_127",
-    "cardType": "flippable",
-    "sideA": "Tengo una carga de trabajo bastante alta esta semana",
-    "sideB": [
-      {
-        "text": "I have a pretty heavy workload this week.",
-        "audioSrc": "public/data/audio/common_meeting/mi_127_sideB_0.mp3"
-      },
-      {
-        "text": "My workload is quite high this week.",
-        "audioSrc": "public/data/audio/common_meeting/mi_127_sideB_1.mp3"
-      },
-      {
-        "text": "I'm dealing with a heavy workload this week.",
-        "audioSrc": "public/data/audio/common_meeting/mi_127_sideB_2.mp3"
-      }
-    ],
-    "note": "**[109]**\n\n[Workload] is the correct term for the amount of work.\n\nThe most common adjective to describe a large workload is [heavy]. [High] is also acceptable.\n\nCommon errors are literal translations like ~charge of work~ or using awkward adjectives like ~big workload~. The correct collocation is [heavy workload].\n\n~I have a strong workload...~ (Incorrect collocation: We describe a workload as 'heavy' or 'high', not 'strong'.)"
+    "note": "**[111]**\n\nThis is an *Object Question*. The subject performing the action is [the QA team]. The question word 'Who' asks about the object—the person who received the report. Because the subject is known, the auxiliary verb [did] is mandatory.\n\n~Who the QA team reported the bug to?~.\n\n~Who was reported by the QA team?~ (This is a valid passive sentence, but it changes the meaning. It asks which person was the *subject* of the report, not who *received* the report. To ask who received it, you must use an active structure like 'Who did the team report to?')\n\n~Who did the QA team report the issue?~ (Incomplete. When asking who received the report, you need the preposition 'to' at the end: 'Who did the QA team report the issue to?'.)\n\nIn this context, 'report' functions like a prepositional verb. When you specify *who* received the report, you must use 'to': You **report** a bug **to** someone."
   },
   {
     "cardId": "mi_129",
@@ -105,202 +45,278 @@
         "audioSrc": "public/data/audio/common_meeting/mi_129_sideB_4.mp3"
       }
     ],
-    "note": "The most common and natural idiom is [to make my day].\n\nA good synonym is [to brighten up my day].\n\nA common error is a literal translation, which is incorrect: ~You alegried my day~ or ~You happied my day~. Another unnatural phrasing is ~That comment put me happy for the day~."
+    "note": "The most common and natural idiom is [to make my day].\n\nA good synonym is [to brighten up my day].\n\nA common error is a literal translation, which is incorrect: ~You alegried my day~ or ~You happied my day~. Another unnatural phrasing is ~That comment put me happy for the day~.\n\n~Thanks, you made my day with that commentary.~ (This is grammatically correct, but 'commentary' is the wrong word choice. A 'comment' is a single remark. A 'commentary' is a longer analysis or series of comments. The correct word here is 'comment'.)"
   },
   {
-    "cardId": "mi_109",
+    "cardId": "mi_140",
     "cardType": "flippable",
-    "sideA": "¿Cuándo se eliminan estos archivos temporales?",
+    "sideA": "Ok, las imágenes están saliendo cortadas, hay que ajustarlas.",
     "sideB": [
       {
-        "text": "When do these temporary files get deleted?",
-        "audioSrc": "public/data/audio/common_meeting/mi_109_sideB_0.mp3"
+        "text": "Okay, the images are getting cut off. We need to adjust them.",
+        "audioSrc": "public/data/audio/common_meeting/mi_140_sideB_0.mp3"
       },
       {
-        "text": "When are these temporary files deleted?",
-        "audioSrc": "public/data/audio/common_meeting/mi_109_sideB_1.mp3"
+        "text": "Okay, the images are being cropped. They need to be adjusted.",
+        "audioSrc": "public/data/audio/common_meeting/mi_140_sideB_1.mp3"
       },
       {
-        "text": "When does the system delete these temporary files?",
-        "audioSrc": "public/data/audio/common_meeting/mi_109_sideB_2.mp3"
+        "text": "Right, the images are cut off. We have to fix them.",
+        "audioSrc": "public/data/audio/common_meeting/mi_140_sideB_2.mp3"
+      },
+      {
+        "text": "The images are not displaying fully. We need to make an adjustment.",
+        "audioSrc": "public/data/audio/common_meeting/mi_140_sideB_3.mp3"
+      },
+      {
+        "text": "Okay, the images are cutting off. We need to adjust them.",
+        "audioSrc": "public/data/audio/common_meeting/mi_140_sideB_4.mp3"
+      },
+      {
+        "text": "Okay, the images are being cut off. We need to adjust them.",
+        "audioSrc": "public/data/audio/common_meeting/mi_140_sideB_5.mp3"
       }
     ],
-    "note": "**[107]**\n\nFor a plural subject like [these temporary files], the correct auxiliary verb is [do].\n\nA common mistake is to use 'does' with a plural subject (~When does these files get deleted?~). Another error is mixing auxiliaries: ~When do these files are deleted?~ is incorrect.\n\n~When do these temporal files...~ (Incorrect word: 'Temporal' is a false friend. The correct adjective is 'temporary'.)"
+    "note": "[To get cut off] is a perfect phrasal verb for this. [To be cropped] also works.\n\n[Hay que] can be translated as [We need to] or [We have to].\n\nA common error is a literal translation: ~The images are coming out cut~. The correct idiom is [are getting cut off]."
   },
   {
-    "cardId": "mi_018",
+    "cardId": "mi_138",
     "cardType": "flippable",
-    "sideA": "Le preguntare a Mario acerca del problema.",
+    "sideA": "Ese toma mucho tiempo.",
     "sideB": [
       {
-        "text": "I'll ask Mario about the issue.",
-        "audioSrc": "public/data/audio/common_meeting/mi_018_sideB_0.mp3"
+        "text": "That one takes a long time.",
+        "audioSrc": "public/data/audio/common_meeting/mi_138_sideB_0.mp3"
       },
       {
-        "text": "I'm going to touch base with Mario regarding this bug.",
-        "audioSrc": "public/data/audio/common_meeting/mi_018_sideB_1.mp3"
+        "text": "That takes a lot of time.",
+        "audioSrc": "public/data/audio/common_meeting/mi_138_sideB_1.mp3"
       },
       {
-        "text": "I'll check with Mario about the problem.",
-        "audioSrc": "public/data/audio/common_meeting/mi_018_sideB_2.mp3"
+        "text": "That's very time-consuming.",
+        "audioSrc": "public/data/audio/common_meeting/mi_138_sideB_2.mp3"
       },
       {
-        "text": "I'm gonna ask Mario about the issue.",
-        "audioSrc": "public/data/audio/common_meeting/mi_018_sideB_3.mp3"
+        "text": "That one is very time-consuming.",
+        "audioSrc": "public/data/audio/common_meeting/mi_138_sideB_3.mp3"
+      },
+      {
+        "text": "That process takes a while.",
+        "audioSrc": "public/data/audio/common_meeting/mi_138_sideB_4.mp3"
+      },
+      {
+        "text": "That takes a long time.",
+        "audioSrc": "public/data/audio/common_meeting/mi_138_sideB_5.mp3"
+      },
+      {
+        "text": "That takes too long.",
+        "audioSrc": "public/data/audio/common_meeting/mi_138_sideB_6.mp3"
       }
     ],
-    "note": "The verb [ask] doesn't require the preposition ~to~. Correct: [I will ask Mario], not ~I will ask to Mario~.\n\nThe structure is [consult with someone ABOUT something]. ~Consult with Mario the problem~ is incorrect.\n\n[Gonna] is a common, informal pronunciation of 'going to' (e.g., 'I'm gonna ask...')."
+    "note": "Use the third-person singular [takes] because the subject 'That one' is singular.\n\n[A while] is a common, natural idiom for 'a long time'.\n\nA common error is omitting the '-s': ~That one take a long time~. Another is using the continuous tense incorrectly: ~That is taking a long time~ (this is only correct if it is happening *right now*).\n\n~That takes much time.~ (This is unnatural. In positive statements, 'a lot of time' is preferred over 'much time'. You would use 'much time' in questions like 'Does it take much time?')"
   },
   {
-    "cardId": "mi_124",
+    "cardId": "mi_131",
     "cardType": "flippable",
-    "sideA": "Hicimos una solucion alternativa, hasta que lo demás se arregle",
+    "sideA": "Estamos priorizando los mas urgentes primero.",
     "sideB": [
       {
-        "text": "We implemented a workaround until the rest gets fixed.",
-        "audioSrc": "public/data/audio/common_meeting/mi_124_sideB_0.mp3"
+        "text": "We are prioritizing the most urgent ones first.",
+        "audioSrc": "public/data/audio/common_meeting/mi_131_sideB_0.mp3"
       },
       {
-        "text": "We put a temporary fix in place until the other issues are resolved.",
-        "audioSrc": "public/data/audio/common_meeting/mi_124_sideB_1.mp3"
+        "text": "We're handling the most urgent issues first.",
+        "audioSrc": "public/data/audio/common_meeting/mi_131_sideB_1.mp3"
       },
       {
-        "text": "We made a workaround until the other things get fixed.",
-        "audioSrc": "public/data/audio/common_meeting/mi_124_sideB_2.mp3"
+        "text": "We're focusing on the most time-sensitive ones first.",
+        "audioSrc": "public/data/audio/common_meeting/mi_131_sideB_2.mp3"
+      },
+      {
+        "text": "The most urgent items are being prioritized.",
+        "audioSrc": "public/data/audio/common_meeting/mi_131_sideB_3.mp3"
+      },
+      {
+        "text": "We are prioritizing the most important ones first.",
+        "audioSrc": "public/data/audio/common_meeting/mi_131_sideB_4.mp3"
       }
     ],
-    "note": "**[109]**\n\n[Workaround] is often paired with verbs like [implement], [put in place], or [make].\n\n[Gets fixed] is a good example of the 'get-passive', which is common in technical speech. [Is fixed] is also correct.\n\nA common error is using 'be' incorrectly: ~until the rest be fixed~. The correct forms are [is fixed] or [gets fixed].\n\n(User question: 'rest' vs. 'resto') Yes, [the rest] is the correct translation for 'el resto' (meaning 'what is left over'). It is different from the verb [to rest] (descansar)."
+    "note": "[Most urgent] is the correct translation. [Time-sensitive] is an excellent synonym in a business or tech context.\n\nA common error is redundancy: ~We are prioritizing the most more urgent ones first~. 'Most' already forms the superlative."
   },
   {
-    "cardId": "mi_071",
+    "cardId": "mi_130",
     "cardType": "flippable",
-    "sideA": "¿Qué módulo modificó el equipo de desarrollo?",
+    "sideA": "Estamos priorizando los mas graves primero",
     "sideB": [
       {
-        "text": "What module did the development team modify?",
-        "audioSrc": "public/data/audio/common_meeting/mi_071_sideB_0.mp3"
+        "text": "We are prioritizing the most severe ones first.",
+        "audioSrc": "public/data/audio/common_meeting/mi_130_sideB_0.mp3"
       },
       {
-        "text": "Which module did the dev team change?",
-        "audioSrc": "public/data/audio/common_meeting/mi_071_sideB_1.mp3"
+        "text": "We're tackling the most critical issues first.",
+        "audioSrc": "public/data/audio/common_meeting/mi_130_sideB_1.mp3"
       },
       {
-        "text": "What module was modified by the development team?",
-        "audioSrc": "public/data/audio/common_meeting/mi_071_sideB_2.mp3"
+        "text": "We are prioritizing the most serious ones first.",
+        "audioSrc": "public/data/audio/common_meeting/mi_130_sideB_2.mp3"
+      },
+      {
+        "text": "Our priority is handling the most severe issues first.",
+        "audioSrc": "public/data/audio/common_meeting/mi_130_sideB_3.mp3"
       }
     ],
-    "note": "**[3]**\n\nThis is an **Object Question**. We are asking about what received the action. The subject (the 'actor') is [the development team]. Since the subject is known, we MUST use the auxiliary verb 'did' to form the past tense question correctly.\n\n~What module the development team modified?~.\n\n~...modify to?~ (Incorrect: The verb 'modify' is transitive here; it acts directly on an object. It does not need the preposition 'to'.)"
+    "note": "The adjective 'grave' (Spanish) translates to [severe], [critical], or [serious] in this context.\n\nThe phrasal verb [to tackle] is a common synonym for 'to handle' or 'to address' a problem.\n\nA common error is using the false friend 'grave': ~We are prioritizing the most graves first~. Another is misplacing 'first': ~We are prioritizing the most severe ones at first~ (this means 'in the beginning', which changes the meaning).\n\n~We are prioritizing the serious ones first.~ (This is grammatically correct, but it changes the meaning. The Spanish 'los más graves' requires the superlative 'the **most** serious ones'.)"
   },
   {
-    "cardId": "mi_144",
+    "cardId": "mi_095",
     "cardType": "flippable",
-    "sideA": "Yo noté que había algo raro.",
+    "sideA": "Hagamos seguimiento de esto por correo.",
     "sideB": [
       {
-        "text": "I noticed there was something strange.",
-        "audioSrc": "public/data/audio/common_meeting/mi_144_sideB_0.mp3"
+        "text": "Let's follow up on this by email.",
+        "audioSrc": "public/data/audio/common_meeting/mi_095_sideB_0.mp3"
       },
       {
-        "text": "I noticed something was off.",
-        "audioSrc": "public/data/audio/common_meeting/mi_144_sideB_1.mp3"
+        "text": "Let's continue this conversation over email.",
+        "audioSrc": "public/data/audio/common_meeting/mi_095_sideB_1.mp3"
       },
       {
-        "text": "I could tell something was wrong.",
-        "audioSrc": "public/data/audio/common_meeting/mi_144_sideB_2.mp3"
+        "text": "How about we handle this through email?",
+        "audioSrc": "public/data/audio/common_meeting/mi_095_sideB_2.mp3"
       },
       {
-        "text": "I noticed something weird was going on.",
-        "audioSrc": "public/data/audio/common_meeting/mi_144_sideB_3.mp3"
+        "text": "Let's take this offline and discuss it via email.",
+        "audioSrc": "public/data/audio/common_meeting/mi_095_sideB_3.mp3"
       },
       {
-        "text": "I saw that there was something odd.",
-        "audioSrc": "public/data/audio/common_meeting/mi_144_sideB_4.mp3"
-      },
-      {
-        "text": "I noticed something strange.",
-        "audioSrc": "public/data/audio/common_meeting/mi_144_sideB_5.mp3"
+        "text": "Let's continue this by email.",
+        "audioSrc": "public/data/audio/common_meeting/mi_095_sideB_4.mp3"
       }
     ],
-    "note": "[Something was off] is a very common and natural idiom for 'había algo raro'.\n\n[Strange], [weird], and [odd] are all good synonyms for 'raro'.\n\nA common error is ~I noticed that was something strange~. The word [there] is necessary: [I noticed (that) there was...].\n\nBoth [I noticed there was something strange] and the more direct [I noticed something strange] are correct."
+    "note": "[To follow up on] something is a key phrasal verb meaning to continue with it later.\n\n[Take this offline] is a very common business idiom that means to discuss a topic outside of the current meeting, often with a smaller group.\n\n~Let's follow this by email.~ (Incorrect. The correct phrasal verb is 'to **follow up on** this' or simply 'to **follow up**'. 'Follow' by itself doesn't mean 'to continue' in this context.)"
   },
   {
-    "cardId": "mi_117",
+    "cardId": "mi_108",
     "cardType": "flippable",
-    "sideA": "Ya habia pasado antes.",
+    "sideA": "¿Cómo se activa este modo?",
     "sideB": [
       {
-        "text": "This has happened before.",
-        "audioSrc": "public/data/audio/common_meeting/mi_117_sideB_0.mp3"
+        "text": "How does this mode get activated?",
+        "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_0.mp3"
       },
       {
-        "text": "It's happened before.",
-        "audioSrc": "public/data/audio/common_meeting/mi_117_sideB_1.mp3"
+        "text": "How is this mode activated?",
+        "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_1.mp3"
       },
       {
-        "text": "This isn't the first time.",
-        "audioSrc": "public/data/audio/common_meeting/mi_117_sideB_2.mp3"
+        "text": "How do you activate this mode?",
+        "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_2.mp3"
       },
       {
-        "text": "It had happened before.",
-        "audioSrc": "public/data/audio/common_meeting/mi_117_sideB_3.mp3"
-      },
-      {
-        "text": "It happened before.",
-        "audioSrc": "public/data/audio/common_meeting/mi_117_sideB_4.mp3"
+        "text": "How does this mode activate?",
+        "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_3.mp3"
       }
     ],
-    "note": "The Present Perfect [This has happened before] is used to state that an event occurred at an unspecified time in the past. [It's happened before] is a common contraction.\n\n[This isn't the first time] is a very natural idiom with the same meaning.\n\nJust like in the question form, the Past Perfect [It had happened before] is only used when referencing a time *before* another past event.\n\nThe Simple Past [It happened before] is also a correct and direct translation."
+    "note": "**[107]**\n\nThe structure for this question is: `How` + `auxiliary` + `subject` + `verb`. For a singular subject like [this mode], the auxiliary is [does].\n\nCommon errors include mixing auxiliaries (~How does this mode is activated?~) or incorrect verb conjugation (~How does this mode gets activated?~). After 'does', the verb must be in its base form ([get]).\n\n~How does this mode activated?~ (Incorrect. After the auxiliary 'does', the main verb must be in its base form. The correct structure is 'How does this mode get activated?'.)\n\n**Active vs. Passive Voice:**\nThe Spanish '[se activa]' is passive. This is best translated with a passive form like 'How *is* this mode activated?' or 'How does this mode *get* activated?'. The active voice 'How does this mode activate?' (implying the mode activates itself) is also grammatically correct, but less common for this context.\n\n~How is this mode get activated?~ (Incorrect. This mixes two passive structures. You must choose one: 1) 'How **is** this mode **activated**?' or 2) 'How **does** this mode **get** activated?'.)"
   },
   {
-    "cardId": "mi_126",
+    "cardId": "mi_074",
     "cardType": "flippable",
-    "sideA": "¿Quieres que te hable hacerca de mi flujo de trabajo?",
+    "sideA": "¿Qué impide el despliegue a producción?",
     "sideB": [
       {
-        "text": "Do you want me to talk about my workflow?",
-        "audioSrc": "public/data/audio/common_meeting/mi_126_sideB_0.mp3"
+        "text": "What prevents the deployment to production?",
+        "audioSrc": "public/data/audio/common_meeting/mi_074_sideB_0.mp3"
       },
       {
-        "text": "Would you like me to tell you about my workflow?",
-        "audioSrc": "public/data/audio/common_meeting/mi_126_sideB_1.mp3"
+        "text": "What is blocking the production release?",
+        "audioSrc": "public/data/audio/common_meeting/mi_074_sideB_1.mp3"
       },
       {
-        "text": "Should I walk you through my workflow?",
-        "audioSrc": "public/data/audio/common_meeting/mi_126_sideB_2.mp3"
+        "text": "What's stopping the deployment to production?",
+        "audioSrc": "public/data/audio/common_meeting/mi_074_sideB_2.mp3"
       },
       {
-        "text": "Do you want me to tell you about my workflow?",
-        "audioSrc": "public/data/audio/common_meeting/mi_126_sideB_3.mp3"
+        "text": "What stops the deployment to production?",
+        "audioSrc": "public/data/audio/common_meeting/mi_074_sideB_3.mp3"
+      },
+      {
+        "text": "What stops the release to production?",
+        "audioSrc": "public/data/audio/common_meeting/mi_074_sideB_4.mp3"
       }
     ],
-    "note": "**[109]**\n\nThe structure for '¿Quieres que...?' is [Do you want me to...].\n\n[To walk someone through] something is an excellent phrasal verb **[16]** that means to explain a process step-by-step.\n\nA very common error is a literal translation: ~Do you want that I talk about...~. This is incorrect in English."
+    "note": "**[2]**\n\nThis is a Subject Question. We are asking for the 'thing' that is performing the action of preventing. The question word [What] acts as the subject. Consequently, no auxiliary verb is needed, and the main verb ('prevents', 'stops') is conjugated in the third person singular.\n\nWhat does prevent the deployment?.\n\n~What stop the production release?~ (Incorrect. Since 'What' is the third-person singular subject of the sentence, the verb must be conjugated with an '-s': 'stops'.)"
   },
   {
-    "cardId": "mi_139",
+    "cardId": "mi_113",
     "cardType": "flippable",
-    "sideA": "Hemos priorizado otros más importantes.",
+    "sideA": "¿Qué hace exactamente este script?",
     "sideB": [
       {
-        "text": "We've prioritized other, more important ones.",
-        "audioSrc": "public/data/audio/common_meeting/mi_139_sideB_0.mp3"
+        "text": "What exactly does this script do?",
+        "audioSrc": "public/data/audio/common_meeting/mi_113_sideB_0.mp3"
       },
       {
-        "text": "We have prioritized more important ones.",
-        "audioSrc": "public/data/audio/common_meeting/mi_139_sideB_1.mp3"
+        "text": "What is the function of this script?",
+        "audioSrc": "public/data/audio/common_meeting/mi_113_sideB_1.mp3"
       },
       {
-        "text": "We're focusing on the more critical ones first.",
-        "audioSrc": "public/data/audio/common_meeting/mi_139_sideB_2.mp3"
+        "text": "What does this script accomplish?",
+        "audioSrc": "public/data/audio/common_meeting/mi_113_sideB_2.mp3"
       },
       {
-        "text": "We've given priority to more important items.",
-        "audioSrc": "public/data/audio/common_meeting/mi_139_sideB_3.mp3"
-      },
-      {
-        "text": "We've prioritized more important ones.",
-        "audioSrc": "public/data/audio/common_meeting/mi_139_sideB_4.mp3"
+        "text": "What does this script do exactly?",
+        "audioSrc": "public/data/audio/common_meeting/mi_113_sideB_3.mp3"
       }
     ],
-    "note": "The Present Perfect [We have prioritized] or [We've prioritized] is the correct tense for a recent past action with present relevance.\n\n[To give priority to] is a good alternative to the verb [to prioritize].\n\nA common error is using 'more' incorrectly: ~We have prioritized the more importants~. The adjective 'important' comes *before* the noun [ones] or [items].\n\n~...others more important~ (Incorrect word order: The adjective 'more important' should come before the pronoun 'ones' or 'items', e.g., 'We've prioritized more important ones'.)"
+    "note": "**[50]**\n\nThis structure uses 'does' as the auxiliary verb for a singular subject ([this script]) and 'do' as the main verb. The pattern is `What does + [subject] + do?`.\n\nA very common error is omitting the main verb 'do' at the end of the question, which leaves the sentence incomplete: ~What exactly does this script?~."
+  },
+  {
+    "cardId": "mi_145",
+    "cardType": "flippable",
+    "sideA": "Yo no vi a quién se lo envió.",
+    "sideB": [
+      {
+        "text": "I didn't see who he sent it to.",
+        "audioSrc": "public/data/audio/common_meeting/mi_145_sideB_0.mp3"
+      },
+      {
+        "text": "I didn't see who she sent it to.",
+        "audioSrc": "public/data/audio/common_meeting/mi_145_sideB_1.mp3"
+      },
+      {
+        "text": "I didn't see who they sent it to.",
+        "audioSrc": "public/data/audio/common_meeting/mi_145_sideB_2.mp3"
+      },
+      {
+        "text": "I didn't catch who it was sent to.",
+        "audioSrc": "public/data/audio/common_meeting/mi_145_sideB_3.mp3"
+      }
+    ],
+    "note": "The Spanish 'se' is ambiguous (he/she/they). All translations are correct. [They] is a good neutral option.\n\nThe structure is [who] + [subject] + [verb] + [object] + [to].\n\nA common error is inverting the question form inside the statement: ~I didn't see who did he send it to~. This is incorrect. Use the statement order: [who he sent it to].\n\n~I didn't see who he sent it.~ (Incorrect. This is incomplete. When 'send' is used to talk about the recipient, it needs the preposition 'to'. The correct sentence is 'I didn't see who he sent it **to**'.)"
+  },
+  {
+    "cardId": "mi_151",
+    "cardType": "flippable",
+    "sideA": "Además, no son errores que comprometan producción.",
+    "sideB": [
+      {
+        "text": "Besides, they aren't errors that compromise production.",
+        "audioSrc": "public/data/audio/common_meeting/mi_151_sideB_0.mp3"
+      },
+      {
+        "text": "Also, they are not issues that will affect production.",
+        "audioSrc": "public/data/audio/common_meeting/mi_151_sideB_1.mp3"
+      },
+      {
+        "text": "Besides, they aren't production-blocking errors.",
+        "audioSrc": "public/data/audio/common_meeting/mi_151_sideB_2.mp3"
+      },
+      {
+        "text": "Also, they won't compromise the production environment.",
+        "audioSrc": "public/data/audio/common_meeting/mi_151_sideB_3.mp3"
+      }
+    ],
+    "note": "**[83]**\n\nThe verb [to compromise] (comprometer) is correct. [To affect] (afectar) is also a good synonym.\n\n[Production-blocking] is a very common technical term for an error that 'compromete producción'.\n\n~commit~ is a false friend. You [commit] code, but you [compromise] stability.\n\n~Besides, they aren't errors to compromise production.~ (Incorrect structure. You cannot use the infinitive 'to compromise' here. You must use a relative clause: 'errors **that** compromise production' or 'errors **compromising** production'.)"
   }
 ]
