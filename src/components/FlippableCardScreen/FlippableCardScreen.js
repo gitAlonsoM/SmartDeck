@@ -1,4 +1,5 @@
 // Component to render a flippable, self-assessed card for studying.
+//src\components\FlippableCardScreen\FlippableCardScreen.js
 class FlippableCardScreen {
     constructor(container, onAssess, onEnd, onIgnore, onMarkForImprovement, onShowInfoModal, onCardAudioStart, onCardAudioEnd) {
         this.container = container;

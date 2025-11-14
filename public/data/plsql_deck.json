@@ -2,16 +2,22 @@
   "id": "plsql_deck",
   "name": "PL/SQL",
   "description": "A comprehensive deck for Oracle PL/SQL developers. It covers package structure, cursors, and data types, while exploring procedures, functions, transaction control, error handling, and bulk operations. Also includes concepts specific to Oracle E-Business Suite development.",
-  "deckType": "multipleChoice", 
+  "deckType": "multipleChoice",
   "isAiGenerated": false,
   "language": "sql",
   "cards": [
     {
       "cardId": "plsql_001",
       "category": "Package Structure",
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_001_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_001_a.mp3",
       "hint": "Acts as the public interface or 'contract' of the package.",
       "question": "Which part of a PL/SQL package declares the public elements accessible by other programs?",
-      "options": ["Package Body", "Package Specification", "Anonymous Block"],
+      "options": [
+        "Package Body",
+        "Package Specification",
+        "Anonymous Block"
+      ],
       "correctAnswer": "Package Specification",
       "content": {
         "type": "code",
@@ -24,1248 +30,1824 @@
       "category": "Package Structure",
       "hint": "Contains the actual implementation and private logic.",
       "question": "Where is the detailed PL/SQL code for procedures and functions implemented?",
-      "options": ["Specification", "Header", "Body"],
+      "options": [
+        "Specification",
+        "Header",
+        "Body"
+      ],
       "correctAnswer": "Body",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "PACKAGE BODY company_api IS\n  PROCEDURE hire_employee(p_name IN VARCHAR2) IS\n  BEGIN\n    INSERT INTO employees (name) VALUES (p_name);\n  END hire_employee;\nEND company_api;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_002_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_002_a.mp3"
     },
     {
       "cardId": "plsql_003",
       "category": "Package Structure",
       "hint": "This part of the package can contain logic that is not exposed to the outside world.",
       "question": "How does a package `BODY` support the principle of encapsulation?",
-      "options": ["By encrypting its code", "By allowing private subprograms", "By connecting to a different user"],
+      "options": [
+        "By encrypting its code",
+        "By allowing private subprograms",
+        "By connecting to a different user"
+      ],
       "correctAnswer": "By allowing private subprograms",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "PACKAGE BODY my_pkg IS\n  FUNCTION is_valid(p_id IN NUMBER) RETURN BOOLEAN IS\n  BEGIN\n    RETURN p_id IS NOT NULL;\n  END;\n\n  PROCEDURE public_proc IS\n  BEGIN\n    IF is_valid(123) THEN NULL; END IF;\n  END;\nEND my_pkg;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_003_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_003_a.mp3"
     },
     {
       "cardId": "plsql_004",
       "category": "Package Structure",
       "hint": "A primary benefit of grouping related logic into a single database object.",
       "question": "What is a major performance benefit of using PL/SQL packages?",
-      "options": ["They use less disk space", "The entire package is loaded into memory on first call", "They automatically create indexes"],
+      "options": [
+        "They use less disk space",
+        "The entire package is loaded into memory on first call",
+        "They automatically create indexes"
+      ],
       "correctAnswer": "The entire package is loaded into memory on first call",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "BEGIN\n  -- First call loads my_package into memory\n  my_package.proc1();\n  -- Subsequent calls are faster, no reloading needed\n  my_package.proc2();\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_004_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_004_a.mp3"
     },
     {
       "cardId": "plsql_005",
       "category": "Documentation",
       "hint": "A special comment tag used to describe a parameter for documentation generators.",
       "question": "In `/*# @param P_ITEM_ID ... */`, what is the purpose of the `@param` tag?",
-      "options": ["To define a variable", "To create a parameter", "To document a parameter for tools"],
+      "options": [
+        "To define a variable",
+        "To create a parameter",
+        "To document a parameter for tools"
+      ],
       "correctAnswer": "To document a parameter for tools",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "/*# @param P_ITEM_ID The unique identifier for the item. */\nPROCEDURE ADD_ITEM(P_ITEM_ID IN NUMBER);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_005_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_005_a.mp3"
     },
     {
       "cardId": "plsql_006",
       "category": "Documentation",
       "hint": "This annotation often indicates the intended audience or visibility.",
       "question": "What does the `@rep:scope public` annotation typically signify in Oracle development standards?",
-      "options": ["The code is a report", "The code is for public use", "The code is in the public domain"],
+      "options": [
+        "The code is a report",
+        "The code is for public use",
+        "The code is in the public domain"
+      ],
       "correctAnswer": "The code is for public use",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "/*# @rep:scope public @rep:displayname Get User Roles */\nPROCEDURE GET_ROLES(p_user_id IN NUMBER);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_006_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_006_a.mp3"
     },
     {
       "cardId": "plsql_007",
       "category": "Data Types",
       "hint": "Used for large character data, such as a full JSON response.",
       "question": "Which data type is essential for storing exceptionally large character data?",
-      "options": ["VARCHAR2(4000)", "CLOB", "BLOB"],
+      "options": [
+        "VARCHAR2(4000)",
+        "CLOB",
+        "BLOB"
+      ],
       "correctAnswer": "CLOB",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "DECLARE\n  l_json_payload CLOB;\nBEGIN\n  l_json_payload := '{\"key\": \"very_long_value...\"}';\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_007_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_007_a.mp3"
     },
     {
       "cardId": "plsql_008",
       "category": "Data Types",
       "hint": "Stores raw, unstructured data such as images or documents.",
       "question": "While `CLOB` stores large text, what does the `BLOB` data type store?",
-      "options": ["Only numbers", "XML documents", "Binary data like images or files"],
+      "options": [
+        "Only numbers",
+        "XML documents",
+        "Binary data like images or files"
+      ],
       "correctAnswer": "Binary data like images or files",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "CREATE TABLE file_storage (\n  file_id    NUMBER PRIMARY KEY,\n  file_name  VARCHAR2(100),\n  file_data  BLOB\n);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_008_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_008_a.mp3"
     },
     {
       "cardId": "plsql_009",
       "category": "Data Types",
       "hint": "The most common data type for variable-length strings.",
       "question": "For storing a user's name or an API token, the standard data type to use is...",
-      "options": ["CHAR", "VARCHAR2", "STRING"],
+      "options": [
+        "CHAR",
+        "VARCHAR2",
+        "STRING"
+      ],
       "correctAnswer": "VARCHAR2",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "DECLARE\n  l_user_name VARCHAR2(100) := 'John Doe';\nBEGIN\n  NULL;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_009_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_009_a.mp3"
     },
     {
       "cardId": "plsql_010",
       "category": "Data Types",
       "hint": "This attribute anchors a variable's data type to that of a specific database table column.",
       "question": "How can you declare a variable that automatically inherits the data type of a table column?",
-      "options": ["AS TYPE", "%TYPE", "LIKE"],
+      "options": [
+        "AS TYPE",
+        "%TYPE",
+        "LIKE"
+      ],
       "correctAnswer": "%TYPE",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "DECLARE\n  l_last_name employees.last_name%TYPE;\nBEGIN\n  SELECT last_name INTO l_last_name FROM employees WHERE employee_id = 100;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_010_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_010_a.mp3"
     },
     {
       "cardId": "plsql_011",
       "category": "Data Types",
       "hint": "This attribute creates a record variable that has the same structure as a full row in a table.",
       "question": "What attribute do you use to declare a record variable that can hold an entire row from a table?",
-      "options": ["%ROW", "%ROWTYPE", "%STRUCT"],
+      "options": [
+        "%ROW",
+        "%ROWTYPE",
+        "%STRUCT"
+      ],
       "correctAnswer": "%ROWTYPE",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "DECLARE\n  l_employee_rec employees%ROWTYPE;\nBEGIN\n  SELECT * INTO l_employee_rec FROM employees WHERE employee_id = 100;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_011_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_011_a.mp3"
     },
     {
       "cardId": "plsql_012",
       "category": "Data Types",
       "hint": "A key advantage of using %TYPE and %ROWTYPE.",
       "question": "What is the primary benefit of using `%TYPE` and `%ROWTYPE` for variable declarations?",
-      "options": ["They use less memory", "They automatically adapt if the underlying table structure changes", "They make code run faster"],
+      "options": [
+        "They use less memory",
+        "They automatically adapt if the underlying table structure changes",
+        "They make code run faster"
+      ],
       "correctAnswer": "They automatically adapt if the underlying table structure changes",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "DECLARE\n  l_emp_name  employees.last_name%TYPE;\n  l_dept_rec  departments%ROWTYPE;\nBEGIN\n  -- This code will not break if employees.last_name changes from VARCHAR2(50) to VARCHAR2(100)\n  NULL;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_012_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_012_a.mp3"
     },
     {
       "cardId": "plsql_013",
       "category": "Data Types",
       "hint": "A format that includes both date and time components.",
       "question": "Which data type is appropriate for storing a precise moment, such as a transaction timestamp?",
-      "options": ["DATE", "TIMESTAMP", "TIME"],
+      "options": [
+        "DATE",
+        "TIMESTAMP",
+        "TIME"
+      ],
       "correctAnswer": "DATE",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "DECLARE\n  l_request_date DATE := SYSDATE;\nBEGIN\n  INSERT INTO logs (log_time) VALUES (l_request_date);\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_013_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_013_a.mp3"
     },
     {
       "cardId": "plsql_014",
       "category": "Custom Types",
       "hint": "It's like a blueprint for an object, grouping related fields.",
       "question": "What does `TYPE ... IS RECORD` define in PL/SQL?",
-      "options": ["A database table", "A collection of records", "A structured data type"],
+      "options": [
+        "A database table",
+        "A collection of records",
+        "A structured data type"
+      ],
       "correctAnswer": "A structured data type",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "DECLARE\n  TYPE item_rec_type IS RECORD (\n    item_id  NUMBER,\n    quantity  NUMBER\n  );\n  l_item item_rec_type;\nBEGIN\n  l_item.item_id := 123;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_014_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_014_a.mp3"
     },
     {
       "cardId": "plsql_015",
       "category": "Custom Types",
       "hint": "It's a collection of structured objects, like a list or array.",
       "question": "What does `TYPE ... IS TABLE OF <RECORD_TYPE>` create?",
-      "options": ["A single record", "An array of records", "A physical database table"],
+      "options": [
+        "A single record",
+        "An array of records",
+        "A physical database table"
+      ],
       "correctAnswer": "An array of records",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "DECLARE\n  TYPE item_rec_type IS RECORD (item_id NUMBER);\n  TYPE item_tbl_type IS TABLE OF item_rec_type;\n  l_items item_tbl_type;\nBEGIN\n  NULL;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_015_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_015_a.mp3"
     },
     {
       "cardId": "plsql_016",
       "category": "Custom Types",
       "hint": "The declaration location required for custom types to be used by external applications.",
       "question": "To be used as parameters in public procedures, where must a custom RECORD or TABLE type be declared?",
-      "options": ["In the Package Body", "In the Package Specification", "In a separate script"],
+      "options": [
+        "In the Package Body",
+        "In the Package Specification",
+        "In a separate script"
+      ],
       "correctAnswer": "In the Package Specification",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "PACKAGE my_api_spec IS\n  TYPE my_record IS RECORD (id NUMBER, name VARCHAR2(100));\n  PROCEDURE process_data(p_item IN my_record);\nEND my_api_spec;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_016_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_016_a.mp3"
     },
     {
       "cardId": "plsql_017",
       "category": "Custom Types",
       "hint": "This syntax makes the collection work like an array with numeric keys.",
       "question": "In `TYPE ... IS TABLE OF ... INDEX BY BINARY_INTEGER;`, what is the purpose of `INDEX BY BINARY_INTEGER`?",
-      "options": ["It creates a database index", "It defines the collection as an associative array", "It limits the table to integer data"],
+      "options": [
+        "It creates a database index",
+        "It defines the collection as an associative array",
+        "It limits the table to integer data"
+      ],
       "correctAnswer": "It defines the collection as an associative array",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "DECLARE\n  TYPE t_name_list IS TABLE OF VARCHAR2(100) INDEX BY BINARY_INTEGER;\n  l_names t_name_list;\nBEGIN\n  l_names(1) := 'John';\n  l_names(100) := 'Jane';\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_017_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_017_a.mp3"
     },
     {
       "cardId": "plsql_018",
       "category": "Custom Types",
       "hint": "The syntax for accessing a specific field within a record variable.",
       "question": "If `v_item` is a variable of `ITEM_REC_TYPE`, how do you access its `QUANTITY` field?",
-      "options": ["v_item('QUANTITY')", "v_item.QUANTITY", "QUANTITY(v_item)"],
+      "options": [
+        "v_item('QUANTITY')",
+        "v_item.QUANTITY",
+        "QUANTITY(v_item)"
+      ],
       "correctAnswer": "v_item.QUANTITY",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "DECLARE\n  TYPE ITEM_REC_TYPE IS RECORD (QUANTITY NUMBER);\n  v_item ITEM_REC_TYPE;\n  l_qty NUMBER;\nBEGIN\n  v_item.QUANTITY := 10;\n  l_qty := v_item.QUANTITY;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_018_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_018_a.mp3"
     },
     {
       "cardId": "plsql_019",
       "category": "Cursors",
       "hint": "A pointer to a result set, used to return query results to a client app.",
       "question": "Which cursor type is most flexible for returning dynamic query results from a procedure?",
-      "options": ["Static Cursor", "Implicit Cursor", "SYS_REFCURSOR"],
+      "options": [
+        "Static Cursor",
+        "Implicit Cursor",
+        "SYS_REFCURSOR"
+      ],
       "correctAnswer": "SYS_REFCURSOR",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "PROCEDURE GET_DATA(p_results OUT SYS_REFCURSOR)\nIS\nBEGIN\n  OPEN p_results FOR SELECT * FROM employees;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_019_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_019_a.mp3"
     },
     {
       "cardId": "plsql_020",
       "category": "Cursors",
       "hint": "Associates a SELECT statement with a cursor variable at runtime.",
       "question": "Which command is used to assign a query to a `SYS_REFCURSOR` variable?",
-      "options": ["FETCH ... INTO", "SELECT ... INTO", "OPEN ... FOR"],
+      "options": [
+        "FETCH ... INTO",
+        "SELECT ... INTO",
+        "OPEN ... FOR"
+      ],
       "correctAnswer": "OPEN ... FOR",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "DECLARE\n  l_cursor SYS_REFCURSOR;\nBEGIN\n  OPEN l_cursor FOR 'SELECT * FROM departments';\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_020_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_020_a.mp3"
     },
     {
       "cardId": "plsql_021",
       "category": "Cursors",
       "hint": "A query that is defined at compile time and given a name.",
       "question": "A cursor declared with a name and a fixed `SELECT` statement in the `DECLARE` section is what kind of cursor?",
-      "options": ["Dynamic", "Explicit", "Anonymous"],
+      "options": [
+        "Dynamic",
+        "Explicit",
+        "Anonymous"
+      ],
       "correctAnswer": "Explicit",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "DECLARE\n  CURSOR active_users_cur IS\n    SELECT user_name FROM users WHERE status = 'ACTIVE';\nBEGIN\n  NULL;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_021_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_021_a.mp3"
     },
     {
       "cardId": "plsql_022",
       "category": "Cursors",
       "hint": "The opposite of a static cursor whose query is fixed at compile time.",
       "question": "A `SYS_REFCURSOR` is a form of which cursor type, because its query can be decided at runtime?",
-      "options": ["Dynamic", "Broken", "Implicit"],
+      "options": [
+        "Dynamic",
+        "Broken",
+        "Implicit"
+      ],
       "correctAnswer": "Dynamic",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "PROCEDURE get_report(p_type IN VARCHAR2, p_data OUT SYS_REFCURSOR) IS\n  l_query VARCHAR2(500);\nBEGIN\n  IF p_type = 'SALES' THEN\n    l_query := 'SELECT * FROM sales_view';\n  ELSE\n    l_query := 'SELECT * FROM inventory_view';\n  END IF;\n  OPEN p_data FOR l_query;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_022_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_022_a.mp3"
     },
     {
       "cardId": "plsql_023",
       "category": "Cursors",
       "hint": "The `FOR ... IN` loop simplifies cursor handling by managing three key steps.",
       "question": "When using a `FOR ... IN cursor_name LOOP`, which steps are done automatically for you?",
-      "options": ["DECLARE, COMMIT, ROLLBACK", "OPEN, FETCH, CLOSE", "SELECT, UPDATE, DELETE"],
+      "options": [
+        "DECLARE, COMMIT, ROLLBACK",
+        "OPEN, FETCH, CLOSE",
+        "SELECT, UPDATE, DELETE"
+      ],
       "correctAnswer": "OPEN, FETCH, CLOSE",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "DECLARE\n  CURSOR c_emp IS SELECT last_name FROM employees;\nBEGIN\n  -- No explicit OPEN, FETCH, or CLOSE is needed here.\n  FOR emp_rec IN c_emp LOOP\n    DBMS_OUTPUT.PUT_LINE(emp_rec.last_name);\n  END LOOP;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_023_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_023_a.mp3"
     },
     {
       "cardId": "plsql_024",
       "category": "Control Flow",
       "hint": "The standard way to iterate over rows from a cursor.",
       "question": "Which loop structure is best for processing each row returned by a cursor?",
-      "options": ["WHILE LOOP", "Basic LOOP", "FOR ... IN ... LOOP"],
+      "options": [
+        "WHILE LOOP",
+        "Basic LOOP",
+        "FOR ... IN ... LOOP"
+      ],
       "correctAnswer": "FOR ... IN ... LOOP",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "BEGIN\n  FOR user_rec IN (SELECT user_id, user_name FROM users) LOOP\n    DBMS_OUTPUT.PUT_LINE(user_rec.user_name);\n  END LOOP;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_024_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_024_a.mp3"
     },
     {
       "cardId": "plsql_025",
       "category": "Control Flow",
       "hint": "The fundamental structure for handling runtime errors.",
       "question": "Which PL/SQL block structure is used for structured error handling?",
-      "options": ["IF/THEN/ELSE", "TRY/CATCH", "BEGIN/EXCEPTION/END"],
+      "options": [
+        "IF/THEN/ELSE",
+        "TRY/CATCH",
+        "BEGIN/EXCEPTION/END"
+      ],
       "correctAnswer": "BEGIN/EXCEPTION/END",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "BEGIN\n  l_value := 1 / 0;\nEXCEPTION\n  WHEN ZERO_DIVIDE THEN\n    log_error('Division by zero occurred.');\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_025_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_025_a.mp3"
     },
     {
       "cardId": "plsql_026",
       "category": "Control Flow",
       "hint": "The final branch of a conditional structure that catches all other cases.",
       "question": "In an `IF` statement, which block of code is executed if all preceding `IF` and `ELSIF` conditions are false?",
-      "options": ["ELSE", "END IF", "WHEN OTHERS"],
+      "options": [
+        "ELSE",
+        "END IF",
+        "WHEN OTHERS"
+      ],
       "correctAnswer": "ELSE",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "IF l_status = 'A' THEN\n  NULL;\nELSIF l_status = 'B' THEN\n  NULL;\nELSE\n  -- This block executes.\n  NULL;\nEND IF;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_026_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_026_a.mp3"
     },
     {
       "cardId": "plsql_027",
       "category": "Control Flow",
       "hint": "It is a 'catch-all' for any runtime error that wasn't handled specifically.",
       "question": "What is the purpose of the `WHEN OTHERS` clause in an `EXCEPTION` block?",
-      "options": ["To handle successful completion", "To catch any error not previously specified", "To run when there is no data"],
+      "options": [
+        "To handle successful completion",
+        "To catch any error not previously specified",
+        "To run when there is no data"
+      ],
       "correctAnswer": "To catch any error not previously specified",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "EXCEPTION\n  WHEN NO_DATA_FOUND THEN\n    log_error('Not found.');\n  WHEN OTHERS THEN\n    log_error('An unexpected error occurred.');\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_027_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_027_a.mp3"
     },
     {
       "cardId": "plsql_028",
       "category": "Control Structures",
       "hint": "The primary structure in PL/SQL for making decisions and executing code conditionally.",
       "question": "What is the primary construct in PL/SQL for conditional logic?",
-      "options": ["LOOP ... END LOOP", "IF ... THEN ... END IF", "CASE ... WHEN ... END CASE"],
+      "options": [
+        "LOOP ... END LOOP",
+        "IF ... THEN ... END IF",
+        "CASE ... WHEN ... END CASE"
+      ],
       "correctAnswer": "IF ... THEN ... END IF",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "IF l_balance > 500 THEN\n  l_can_withdraw := TRUE;\nEND IF;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_028_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_028_a.mp3"
     },
     {
       "cardId": "plsql_029",
       "category": "Control Structures",
       "hint": "A structure that allows for choosing one sequence of statements from several alternatives.",
       "question": "Which structure is often more readable than a long series of `IF/ELSIF` statements for checking a single variable against multiple values?",
-      "options": ["A `FOR` loop", "A `CASE` statement", "A `GOTO` statement"],
+      "options": [
+        "A `FOR` loop",
+        "A `CASE` statement",
+        "A `GOTO` statement"
+      ],
       "correctAnswer": "A `CASE` statement",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "CASE l_status\n  WHEN 'A' THEN l_status_desc := 'Active';\n  WHEN 'I' THEN l_status_desc := 'Inactive';\n  ELSE l_status_desc := 'Unknown';\nEND CASE;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_029_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_029_a.mp3"
     },
     {
       "cardId": "plsql_030",
       "category": "Subprograms",
       "hint": "Performs an action but does not have to return a value.",
       "question": "A named PL/SQL block designed to perform an action (like deleting a record) is called a...",
-      "options": ["Function", "Procedure", "Trigger"],
+      "options": [
+        "Function",
+        "Procedure",
+        "Trigger"
+      ],
       "correctAnswer": "Procedure",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "PROCEDURE delete_line (p_line_id IN NUMBER)\nIS\nBEGIN\n  DELETE FROM order_lines WHERE line_id = p_line_id;\nEND delete_line;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_030_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_030_a.mp3"
     },
     {
       "cardId": "plsql_031",
       "category": "Subprograms",
       "hint": "Must return a value and can be used in SQL queries.",
       "question": "A named PL/SQL block that must compute and `RETURN` a value is called a...",
-      "options": ["Procedure", "Function", "View"],
+      "options": [
+        "Procedure",
+        "Function",
+        "View"
+      ],
       "correctAnswer": "Function",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "FUNCTION get_stock_count (p_item_id IN NUMBER) RETURN NUMBER\nIS\n  l_stock NUMBER;\nBEGIN\n  SELECT quantity INTO l_stock FROM inventory;\n  RETURN l_stock;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_031_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_031_a.mp3"
     },
     {
       "cardId": "plsql_032",
       "category": "Subprograms",
       "hint": "One is designed for actions, the other for calculations.",
       "question": "You would use a ... to delete a record, and a ... to calculate a value.",
-      "options": ["function, procedure", "procedure, function", "trigger, procedure"],
+      "options": [
+        "function, procedure",
+        "procedure, function",
+        "trigger, procedure"
+      ],
       "correctAnswer": "procedure, function",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "BEGIN\n  delete_employee(7839); -- Procedure call (action)\n  l_name := get_employee_name(7839); -- Function call (calculation)\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_032_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_032_a.mp3"
     },
     {
       "cardId": "plsql_033",
       "category": "Subprograms",
       "hint": "One can be called directly in a `SELECT` list, the other generally cannot.",
       "question": "Which type of subprogram can be called directly within a SQL `SELECT` statement?",
-      "options": ["Procedure", "Anonymous Block", "Function"],
+      "options": [
+        "Procedure",
+        "Anonymous Block",
+        "Function"
+      ],
       "correctAnswer": "Function",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT product_name, GET_STOCK_COUNT(product_id) FROM products;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_033_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_033_a.mp3"
     },
     {
       "cardId": "plsql_034",
       "category": "Joins",
       "hint": "The (+) symbol is an old, vendor-specific syntax for this type of join.",
       "question": "In Oracle's old syntax, what does the `(+)` operator signify in a `WHERE` clause?",
-      "options": ["Inner Join", "Outer Join", "Cross Join"],
+      "options": [
+        "Inner Join",
+        "Outer Join",
+        "Cross Join"
+      ],
       "correctAnswer": "Outer Join",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT e.name, d.name\nFROM employees e, departments d\nWHERE e.department_id = d.department_id (+);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_034_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_034_a.mp3"
     },
     {
       "cardId": "plsql_035",
       "category": "Joins",
       "hint": "The most common join, returns only rows that match in both tables.",
       "question": "Which type of join would you use to get a list of customers who have placed orders?",
-      "options": ["LEFT JOIN", "INNER JOIN", "FULL OUTER JOIN"],
+      "options": [
+        "LEFT JOIN",
+        "INNER JOIN",
+        "FULL OUTER JOIN"
+      ],
       "correctAnswer": "INNER JOIN",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT c.customer_name, o.order_date\nFROM customers c\nINNER JOIN orders o ON c.customer_id = o.customer_id;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_035_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_035_a.mp3"
     },
     {
       "cardId": "plsql_036",
       "category": "Joins",
       "hint": "Returns all rows from the left table, even if there's no match in the right table.",
       "question": "To get a list of ALL customers and their orders (if any), which join should be used?",
-      "options": ["INNER JOIN", "RIGHT JOIN", "LEFT JOIN"],
+      "options": [
+        "INNER JOIN",
+        "RIGHT JOIN",
+        "LEFT JOIN"
+      ],
       "correctAnswer": "LEFT JOIN",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT c.customer_name, o.order_number\nFROM customers c\nLEFT JOIN orders o ON c.customer_id = o.customer_id;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_036_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_036_a.mp3"
     },
     {
       "cardId": "plsql_037",
       "category": "Joins",
       "hint": "This is the modern, explicit ANSI syntax for joining tables.",
       "question": "Which syntax is the modern, preferred way to write an `INNER JOIN`?",
-      "options": ["FROM t1, t2 WHERE t1.id = t2.id", "FROM t1 INNER JOIN t2 ON t1.id = t2.id", "FROM t1, t2 (+)"],
+      "options": [
+        "FROM t1, t2 WHERE t1.id = t2.id",
+        "FROM t1 INNER JOIN t2 ON t1.id = t2.id",
+        "FROM t1, t2 (+)"
+      ],
       "correctAnswer": "FROM t1 INNER JOIN t2 ON t1.id = t2.id",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT e.last_name, d.department_name\nFROM employees e\nINNER JOIN departments d ON e.department_id = d.department_id;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_037_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_037_a.mp3"
     },
     {
       "cardId": "plsql_038",
       "category": "Joins",
       "hint": "The part of the join syntax that specifies how the tables are related.",
       "question": "In the modern `JOIN` syntax, the `ON` clause is used to specify the...",
-      "options": ["columns to select", "join condition", "tables to use"],
+      "options": [
+        "columns to select",
+        "join condition",
+        "tables to use"
+      ],
       "correctAnswer": "join condition",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT ...\nFROM employees e\nINNER JOIN departments d ON e.department_id = d.department_id;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_038_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_038_a.mp3"
     },
     {
       "cardId": "plsql_039",
       "category": "Aliases",
       "hint": "Makes queries shorter and more readable by assigning a temporary name to a table.",
       "question": "In `FROM ra_customer_trx_all trx`, what is the purpose of `trx`?",
-      "options": ["It's a data type", "It's a table alias", "It's a required keyword"],
+      "options": [
+        "It's a data type",
+        "It's a table alias",
+        "It's a required keyword"
+      ],
       "correctAnswer": "It's a table alias",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT ord.order_number FROM oe_order_headers_all ord;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_039_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_039_a.mp3"
     },
     {
       "cardId": "plsql_040",
       "category": "Aliases",
       "hint": "Gives a new, more readable name to a column in the result set.",
       "question": "What is the purpose of `AS PAYMENT_NUMBER` in `SELECT rec.receipt_number AS PAYMENT_NUMBER`?",
-      "options": ["To change the data type", "To create a column alias", "To filter the results"],
+      "options": [
+        "To change the data type",
+        "To create a column alias",
+        "To filter the results"
+      ],
       "correctAnswer": "To create a column alias",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT h.header_id AS OrderId FROM oe_order_headers_all h;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_040_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_040_a.mp3"
     },
     {
       "cardId": "plsql_041",
       "category": "Aliases",
       "hint": "Why aliases are crucial for APIs returning structured data.",
       "question": "Why is aliasing columns (e.g., `SELECT c.id AS CustomerId`) particularly important for backend APIs?",
-      "options": ["It makes the query run faster", "It provides stable, predictable keys for JSON", "It is required by the database"],
+      "options": [
+        "It makes the query run faster",
+        "It provides stable, predictable keys for JSON",
+        "It is required by the database"
+      ],
       "correctAnswer": "It provides stable, predictable keys for JSON",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT \n  order_header_id AS \"orderId\",\n  creation_date   AS \"creationDate\"\nFROM oe_order_headers_all;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_041_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_041_a.mp3"
     },
     {
       "cardId": "plsql_042",
       "category": "Keywords",
       "hint": "Used to introduce the implementation section of a block.",
       "question": "The keyword `AS` or `IS` separates the signature of a subprogram from its...",
-      "options": ["Parameters", "Name", "Implementation Block"],
+      "options": [
+        "Parameters",
+        "Name",
+        "Implementation Block"
+      ],
       "correctAnswer": "Implementation Block",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "PACKAGE BODY my_package AS\n  -- Implementation starts here\nEND my_package;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_042_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_042_a.mp3"
     },
     {
       "cardId": "plsql_043",
       "category": "Keywords",
       "hint": "These two keywords are interchangeable when defining a subprogram.",
       "question": "In a procedure or package definition, the keyword `IS` can always be replaced by...",
-      "options": ["AS", "BEGIN", "DEFINE"],
+      "options": [
+        "AS",
+        "BEGIN",
+        "DEFINE"
+      ],
       "correctAnswer": "AS",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "PROCEDURE my_proc_1 IS BEGIN NULL; END;\nPROCEDURE my_proc_2 AS BEGIN NULL; END;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_043_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_043_a.mp3"
     },
     {
       "cardId": "plsql_044",
       "category": "Parameters",
       "hint": "The parameter's value is passed into the procedure and cannot be changed.",
       "question": "What does the `IN` mode mean for a procedure parameter?",
-      "options": ["The procedure can write to it", "It is read-only inside the procedure", "It is both readable and writable"],
+      "options": [
+        "The procedure can write to it",
+        "It is read-only inside the procedure",
+        "It is both readable and writable"
+      ],
       "correctAnswer": "It is read-only inside the procedure",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "PROCEDURE print_message(p_message IN VARCHAR2);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_044_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_044_a.mp3"
     },
     {
       "cardId": "plsql_045",
       "category": "Parameters",
       "hint": "The procedure uses this parameter to pass a value back to the caller.",
       "question": "What is the purpose of an `OUT` parameter?",
-      "options": ["To receive a value from the caller", "To return a value to the caller", "To be ignored by the procedure"],
+      "options": [
+        "To receive a value from the caller",
+        "To return a value to the caller",
+        "To be ignored by the procedure"
+      ],
       "correctAnswer": "To return a value to the caller",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "PROCEDURE get_user_status(p_user_id IN NUMBER, p_status OUT VARCHAR2);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_045_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_045_a.mp3"
     },
     {
       "cardId": "plsql_046",
       "category": "Parameters",
       "hint": "A parameter that can be both read from and written to within a subprogram.",
       "question": "Which parameter mode allows a value to be passed in, modified, and passed back out?",
-      "options": ["IN", "OUT", "IN OUT"],
+      "options": [
+        "IN",
+        "OUT",
+        "IN OUT"
+      ],
       "correctAnswer": "IN OUT",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "PROCEDURE increment_counter(p_counter IN OUT NUMBER);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_046_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_046_a.mp3"
     },
     {
       "cardId": "plsql_047",
       "category": "Parameters",
       "hint": "This is the default parameter mode if none is specified.",
       "question": "If a parameter is declared without a mode (e.g., `p_user_id NUMBER`), what is its default mode?",
-      "options": ["IN", "OUT", "IN OUT"],
+      "options": [
+        "IN",
+        "OUT",
+        "IN OUT"
+      ],
       "correctAnswer": "IN",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "PROCEDURE get_user(p_user_id NUMBER)\nIS\nBEGIN\n  -- p_user_id is implicitly an IN parameter\n  NULL;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_047_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_047_a.mp3"
     },
     {
       "cardId": "plsql_048",
       "category": "Transactions",
       "hint": "Makes all pending data modifications permanent.",
       "question": "Which command must be executed to save changes made by `INSERT`, `UPDATE`, or `DELETE` statements?",
-      "options": ["SAVEPOINT", "COMMIT", "ROLLBACK"],
+      "options": [
+        "SAVEPOINT",
+        "COMMIT",
+        "ROLLBACK"
+      ],
       "correctAnswer": "COMMIT",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "UPDATE accounts SET balance = balance - 100;\nCOMMIT;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_048_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_048_a.mp3"
     },
     {
       "cardId": "plsql_049",
       "category": "Transactions",
       "hint": "Undoes changes made in the current transaction.",
       "question": "If an error occurs, which command should be used to undo all previous steps in a transaction?",
-      "options": ["COMMIT", "SAVE", "ROLLBACK"],
+      "options": [
+        "COMMIT",
+        "SAVE",
+        "ROLLBACK"
+      ],
       "correctAnswer": "ROLLBACK",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "BEGIN\n  INSERT INTO orders (id) VALUES (1);\n  RAISE an_error;\nEXCEPTION\n  WHEN OTHERS THEN\n    ROLLBACK;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_049_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_049_a.mp3"
     },
     {
       "cardId": "plsql_050",
       "category": "Transaction Control",
       "hint": "Establishes a named marker within a transaction, allowing for a partial rollback.",
       "question": "What command do you use to create a point within a transaction to which you can later revert?",
-      "options": ["COMMIT", "SAVEPOINT", "CHECKPOINT"],
+      "options": [
+        "COMMIT",
+        "SAVEPOINT",
+        "CHECKPOINT"
+      ],
       "correctAnswer": "SAVEPOINT",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "UPDATE accounts SET balance = balance - 100;\nSAVEPOINT before_update;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_050_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_050_a.mp3"
     },
     {
       "cardId": "plsql_051",
       "category": "Transaction Control",
       "hint": "Undoes all data changes made in the current transaction back to a previously defined marker.",
       "question": "How do you undo a transaction only to a specific named marker?",
-      "options": ["ROLLBACK", "REVERT TRANSACTION", "ROLLBACK TO SAVEPOINT"],
+      "options": [
+        "ROLLBACK",
+        "REVERT TRANSACTION",
+        "ROLLBACK TO SAVEPOINT"
+      ],
       "correctAnswer": "ROLLBACK TO SAVEPOINT",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "ROLLBACK TO SAVEPOINT before_update;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_051_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_051_a.mp3"
     },
     {
       "cardId": "plsql_052",
       "category": "Transaction Control",
       "hint": "You make a change but want to undo it completely.",
       "question": "If you `UPDATE` a row but then issue a `ROLLBACK` command, what happens to the change?",
-      "options": ["It is saved permanently", "It is undone", "It is saved temporarily"],
+      "options": [
+        "It is saved permanently",
+        "It is undone",
+        "It is saved temporarily"
+      ],
       "correctAnswer": "It is undone",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "BEGIN\n  UPDATE employees SET salary = 50000 WHERE employee_id = 100;\n  ROLLBACK;\n  -- The salary change is reverted\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_052_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_052_a.mp3"
     },
     {
       "cardId": "plsql_053",
       "category": "Error Handling",
       "hint": "Raises a custom error with a specific number and message.",
       "question": "Which command allows you to stop execution and return a custom error message to the client?",
-      "options": ["RAISE_APPLICATION_ERROR", "THROW_EXCEPTION", "EXIT_WITH_ERROR"],
+      "options": [
+        "RAISE_APPLICATION_ERROR",
+        "THROW_EXCEPTION",
+        "EXIT_WITH_ERROR"
+      ],
       "correctAnswer": "RAISE_APPLICATION_ERROR",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "RAISE_APPLICATION_ERROR(-20001, 'Insufficient credit.');"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_053_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_053_a.mp3"
     },
     {
       "cardId": "plsql_054",
       "category": "Error Handling",
       "hint": "A special variable that holds the numeric error code.",
       "question": "Inside an `EXCEPTION` block, which variable contains the numeric code of the error that occurred?",
-      "options": ["SQLCODE", "SQLERRM", "ERROR_CODE"],
+      "options": [
+        "SQLCODE",
+        "SQLERRM",
+        "ERROR_CODE"
+      ],
       "correctAnswer": "SQLCODE",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "EXCEPTION\n  WHEN OTHERS THEN\n    log_error('Error occurred: ' || SQLCODE);\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_054_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_054_a.mp3"
     },
     {
       "cardId": "plsql_055",
       "category": "Error Handling",
       "hint": "A special variable that holds the error message text.",
       "question": "Inside an `EXCEPTION` block, which variable contains the descriptive text of the error?",
-      "options": ["SQLMESSAGE", "SQLCODE", "SQLERRM"],
+      "options": [
+        "SQLMESSAGE",
+        "SQLCODE",
+        "SQLERRM"
+      ],
       "correctAnswer": "SQLERRM",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "EXCEPTION\n  WHEN OTHERS THEN\n    log_error('Error details: ' || SQLERRM);\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_055_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_055_a.mp3"
     },
     {
       "cardId": "plsql_056",
       "category": "Error Handling",
       "hint": "Occurs when a SELECT...INTO statement is executed but the query does not return any rows.",
       "question": "What predefined exception is raised when a SELECT...INTO statement fails to find a row?",
-      "options": ["TOO_MANY_ROWS", "ROW_NOT_FOUND", "NO_DATA_FOUND"],
+      "options": [
+        "TOO_MANY_ROWS",
+        "ROW_NOT_FOUND",
+        "NO_DATA_FOUND"
+      ],
       "correctAnswer": "NO_DATA_FOUND",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "EXCEPTION\n  WHEN NO_DATA_FOUND THEN\n    RETURN NULL;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_056_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_056_a.mp3"
     },
     {
       "cardId": "plsql_057",
       "category": "Error Handling",
       "hint": "Occurs when a SELECT...INTO statement is executed and the query returns more than one row.",
       "question": "What predefined exception is raised when a SELECT...INTO statement returns multiple rows?",
-      "options": ["TOO_MANY_ROWS", "MULTIPLE_ROWS_FOUND", "DATA_OVERFLOW"],
+      "options": [
+        "TOO_MANY_ROWS",
+        "MULTIPLE_ROWS_FOUND",
+        "DATA_OVERFLOW"
+      ],
       "correctAnswer": "TOO_MANY_ROWS",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "EXCEPTION\n  WHEN TOO_MANY_ROWS THEN\n    RAISE_APPLICATION_ERROR(-20001, 'Ambiguous data found.');"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_057_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_057_a.mp3"
     },
     {
       "cardId": "plsql_058",
       "category": "Data Retrieval",
       "hint": "Retrieves data from exactly one row and places it into local variables.",
       "question": "What is the standard syntax in PL/SQL to query a single row and assign its column values to variables?",
-      "options": ["FETCH ... INTO", "SELECT ... INTO", "GET ROW ... INTO"],
+      "options": [
+        "FETCH ... INTO",
+        "SELECT ... INTO",
+        "GET ROW ... INTO"
+      ],
       "correctAnswer": "SELECT ... INTO",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT first_name, last_name\n  INTO l_first_name, l_last_name\n  FROM employees\n  WHERE employee_id = 100;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_058_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_058_a.mp3"
     },
     {
       "cardId": "plsql_059",
       "category": "Data Retrieval",
       "hint": "This single-row system table is used when you need to select a value without querying a real table.",
       "question": "Which table do you select from to get the result of a function or expression, like SYSDATE?",
-      "options": ["SYSTEM", "DUAL", "TEMP"],
+      "options": [
+        "SYSTEM",
+        "DUAL",
+        "TEMP"
+      ],
       "correctAnswer": "DUAL",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT SYSDATE INTO l_current_date FROM DUAL;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_059_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_059_a.mp3"
     },
     {
       "cardId": "plsql_060",
       "category": "SQL Clauses",
       "hint": "Essential for filtering rows from a table based on one or more conditions.",
       "question": "Which SQL clause is used to specify the criteria that rows must meet to be selected?",
-      "options": ["HAVING", "WHERE", "FILTER BY"],
+      "options": [
+        "HAVING",
+        "WHERE",
+        "FILTER BY"
+      ],
       "correctAnswer": "WHERE",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT product_name, price\n  FROM products\n  WHERE price < 50;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_060_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_060_a.mp3"
     },
     {
       "cardId": "plsql_061",
       "category": "SQL Clauses",
       "hint": "Removes duplicate rows to return a unique set of results.",
       "question": "Which keyword is used within a SELECT statement to ensure that a query only returns unique rows?",
-      "options": ["UNIQUE", "DISTINCT", "SINGLE"],
+      "options": [
+        "UNIQUE",
+        "DISTINCT",
+        "SINGLE"
+      ],
       "correctAnswer": "DISTINCT",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT DISTINCT status FROM tasks;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_061_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_061_a.mp3"
     },
     {
       "cardId": "plsql_062",
       "category": "SQL Operators",
       "hint": "The standard Oracle operator for string concatenation.",
       "question": "What is the standard operator for joining two or more character strings together?",
-      "options": ["+", "&", "||"],
+      "options": [
+        "+",
+        "&",
+        "||"
+      ],
       "correctAnswer": "||",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "l_full_name := l_first_name || ' ' || l_last_name;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_062_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_062_a.mp3"
     },
     {
       "cardId": "plsql_063",
       "category": "SQL Operators",
       "hint": "Performs pattern matching on string data within a filtering clause.",
       "question": "Which operator is used with wildcards (%) to search for a pattern in a text column?",
-      "options": ["MATCH", "LIKE", "CONTAINS"],
+      "options": [
+        "MATCH",
+        "LIKE",
+        "CONTAINS"
+      ],
       "correctAnswer": "LIKE",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT * FROM customers WHERE email LIKE '%@example.com';"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_063_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_063_a.mp3"
     },
     {
       "cardId": "plsql_064",
       "category": "SQL Operators",
       "hint": "A shorthand for multiple OR conditions by checking for a value within a list.",
       "question": "What operator is used to check if a value exists within a given set of values?",
-      "options": ["BETWEEN", "ANY", "IN"],
+      "options": [
+        "BETWEEN",
+        "ANY",
+        "IN"
+      ],
       "correctAnswer": "IN",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT * FROM orders WHERE status IN ('PENDING', 'SHIPPED');"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_064_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_064_a.mp3"
     },
     {
       "cardId": "plsql_065",
       "category": "SQL Operators",
       "hint": "Efficiently checks for the existence of at least one row in a subquery.",
       "question": "Which operator should you use to check if a subquery returns any rows?",
-      "options": ["EXISTS", "COUNT() > 0", "FIND"],
+      "options": [
+        "EXISTS",
+        "COUNT() > 0",
+        "FIND"
+      ],
       "correctAnswer": "EXISTS",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT c.customer_name\n  FROM customers c\n  WHERE EXISTS (SELECT 1 FROM orders o WHERE o.customer_id = c.id);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_065_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_065_a.mp3"
     },
     {
       "cardId": "plsql_066",
       "category": "SQL Functions",
       "hint": "Evaluates an expression and, if it is null, returns a specified substitute value.",
       "question": "What function allows you to replace a NULL value with a specific default value?",
-      "options": ["IFNULL", "COALESCE", "NVL"],
+      "options": [
+        "IFNULL",
+        "COALESCE",
+        "NVL"
+      ],
       "correctAnswer": "NVL",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT product_name, NVL(on_hand_quantity, 0) FROM inventory;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_066_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_066_a.mp3"
     },
     {
       "cardId": "plsql_067",
       "category": "SQL Functions",
       "hint": "The ANSI-standard function for replacing NULL values, which can handle multiple arguments.",
       "question": "Which function is a more flexible, ANSI-standard alternative to `NVL` that can take multiple expressions?",
-      "options": ["ISNULL", "DECODE", "COALESCE"],
+      "options": [
+        "ISNULL",
+        "DECODE",
+        "COALESCE"
+      ],
       "correctAnswer": "COALESCE",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT COALESCE(primary_phone, secondary_phone, 'N/A') FROM contacts;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_067_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_067_a.mp3"
     },
     {
       "cardId": "plsql_068",
       "category": "SQL Functions",
       "hint": "Provides inline IF-THEN-ELSE logic, transforming a value based on search-result pairs.",
       "question": "Which Oracle-specific function compares an expression to a series of values and returns a corresponding result?",
-      "options": ["CASE", "SWITCH", "DECODE"],
+      "options": [
+        "CASE",
+        "SWITCH",
+        "DECODE"
+      ],
       "correctAnswer": "DECODE",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT DECODE(status, 'A', 'Active', 'I', 'Inactive', 'Unknown') FROM user_accounts;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_068_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_068_a.mp3"
     },
     {
       "cardId": "plsql_069",
       "category": "SQL Functions",
       "hint": "Converts all characters in a string to their uppercase equivalents.",
       "question": "What is the standard SQL function for converting a string to all uppercase letters?",
-      "options": ["TO_UPPER", "UPPERCASE", "UPPER"],
+      "options": [
+        "TO_UPPER",
+        "UPPERCASE",
+        "UPPER"
+      ],
       "correctAnswer": "UPPER",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT * FROM users WHERE UPPER(username) = 'ADMIN';"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_069_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_069_a.mp3"
     },
     {
       "cardId": "plsql_070",
       "category": "SQL Functions",
       "hint": "Removes the time portion from a date value, effectively setting it to midnight.",
       "question": "Which function is used to get just the date part of a DATE or TIMESTAMP value?",
-      "options": ["ROUND", "STRIP_TIME", "TRUNC"],
+      "options": [
+        "ROUND",
+        "STRIP_TIME",
+        "TRUNC"
+      ],
       "correctAnswer": "TRUNC",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT * FROM user_logins WHERE TRUNC(login_time) = TRUNC(SYSDATE);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_070_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_070_a.mp3"
     },
     {
       "cardId": "plsql_071",
       "category": "SQL Functions",
       "hint": "Returns the current date and time from the database server.",
       "question": "Which function should you call to get the current date and time of the database server?",
-      "options": ["NOW()", "CURRENT_TIMESTAMP", "SYSDATE"],
+      "options": [
+        "NOW()",
+        "CURRENT_TIMESTAMP",
+        "SYSDATE"
+      ],
       "correctAnswer": "SYSDATE",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "INSERT INTO logs (log_timestamp) VALUES (SYSDATE);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_071_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_071_a.mp3"
     },
     {
       "cardId": "plsql_072",
       "category": "Oracle EBS",
       "hint": "This core procedure sets the application context, mandatory for most E-Business Suite APIs.",
       "question": "In Oracle EBS, which procedure initializes the environment by setting User, Responsibility, and Application ID?",
-      "options": ["MO_GLOBAL.INIT", "FND_GLOBAL.APPS_INITIALIZE", "FND_SECURITY.INITIALIZE"],
+      "options": [
+        "MO_GLOBAL.INIT",
+        "FND_GLOBAL.APPS_INITIALIZE",
+        "FND_SECURITY.INITIALIZE"
+      ],
       "correctAnswer": "FND_GLOBAL.APPS_INITIALIZE",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "fnd_global.apps_initialize (ln_user_id, l_resp_id, 671);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_072_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_072_a.mp3"
     },
     {
       "cardId": "plsql_073",
       "category": "Oracle EBS",
       "hint": "Configures the session's data visibility to a specific organizational unit in a multi-org environment.",
       "question": "Which procedure sets the Multi-Org access control for a specific operating unit?",
-      "options": ["SET_ORG_CONTEXT", "APPS_INITIALIZE.SET_ORG", "MO_GLOBAL.SET_POLICY_CONTEXT"],
+      "options": [
+        "SET_ORG_CONTEXT",
+        "APPS_INITIALIZE.SET_ORG",
+        "MO_GLOBAL.SET_POLICY_CONTEXT"
+      ],
       "correctAnswer": "MO_GLOBAL.SET_POLICY_CONTEXT",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "mo_global.set_policy_context('S', l_org_id);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_073_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_073_a.mp3"
     },
     {
       "cardId": "plsql_074",
       "category": "Set Operators",
       "hint": "Combines the result sets of two queries, keeping all rows from both, including any duplicates.",
       "question": "Which set operator is used to concatenate two result sets without removing duplicate rows?",
-      "options": ["UNION", "UNION ALL", "MERGE"],
+      "options": [
+        "UNION",
+        "UNION ALL",
+        "MERGE"
+      ],
       "correctAnswer": "UNION ALL",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT employee_id FROM sales\nUNION ALL\nSELECT employee_id FROM marketing;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_074_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_074_a.mp3"
     },
     {
       "cardId": "plsql_075",
       "category": "Set Operators",
       "hint": "Combines the result sets of two queries and then removes any duplicate rows.",
       "question": "Which set operator returns a single, duplicate-free result set from two or more SELECT statements?",
-      "options": ["UNION", "UNION ALL", "INTERSECT"],
+      "options": [
+        "UNION",
+        "UNION ALL",
+        "INTERSECT"
+      ],
       "correctAnswer": "UNION",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT product_sku FROM catalog_a\nUNION\nSELECT product_sku FROM catalog_b;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_075_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_075_a.mp3"
     },
     {
       "cardId": "plsql_076",
       "category": "Set Operators",
       "hint": "Returns only the rows that are present in both query result sets.",
       "question": "Which set operator is used to find the common rows between two result sets?",
-      "options": ["MINUS", "INTERSECT", "COMMON"],
+      "options": [
+        "MINUS",
+        "INTERSECT",
+        "COMMON"
+      ],
       "correctAnswer": "INTERSECT",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT student_id FROM math_club\nINTERSECT\nSELECT student_id FROM science_club;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_076_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_076_a.mp3"
     },
     {
       "cardId": "plsql_077",
       "category": "Set Operators",
       "hint": "Takes distinct rows from the first query and removes the ones that also appear in the second query.",
       "question": "Which set operator returns rows from the first query that do not exist in the second query?",
-      "options": ["MINUS", "DIFFERENCE", "EXCEPT"],
+      "options": [
+        "MINUS",
+        "DIFFERENCE",
+        "EXCEPT"
+      ],
       "correctAnswer": "MINUS",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT employee_id FROM all_staff\nMINUS\nSELECT employee_id FROM staff_on_leave;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_077_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_077_a.mp3"
     },
     {
       "cardId": "plsql_078",
       "category": "PL/SQL Packages",
       "hint": "A standard Oracle package procedure, commonly used to print output for debugging.",
       "question": "What is the most common procedure used to display messages from a PL/SQL block?",
-      "options": ["PRINT_LINE", "DBMS_OUTPUT.PUT_LINE", "CONSOLE.LOG"],
+      "options": [
+        "PRINT_LINE",
+        "DBMS_OUTPUT.PUT_LINE",
+        "CONSOLE.LOG"
+      ],
       "correctAnswer": "DBMS_OUTPUT.PUT_LINE",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "BEGIN\n  DBMS_OUTPUT.PUT_LINE('Debug message');\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_078_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_078_a.mp3"
     },
     {
       "cardId": "plsql_079",
       "category": "Bulk Operations",
       "hint": "This clause allows a `SELECT` statement to retrieve multiple rows into one or more collection variables at once.",
       "question": "Which clause is used with `SELECT ... INTO` to fetch an entire result set into a collection?",
-      "options": ["FORALL", "BULK COLLECT", "MULTISET"],
+      "options": [
+        "FORALL",
+        "BULK COLLECT",
+        "MULTISET"
+      ],
       "correctAnswer": "BULK COLLECT",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT employee_id, last_name\nBULK COLLECT INTO l_emp_ids, l_emp_names\nFROM employees;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_079_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_079_a.mp3"
     },
     {
       "cardId": "plsql_080",
       "category": "Bulk Operations",
       "hint": "This statement is the fastest way to execute a single DML statement (INSERT, UPDATE, DELETE) for every element in a collection.",
       "question": "What is the command for high-performance, iterative DML operations on collections?",
-      "options": ["FOR i IN ... LOOP", "FORALL", "EXECUTE IMMEDIATE"],
+      "options": [
+        "FOR i IN ... LOOP",
+        "FORALL",
+        "EXECUTE IMMEDIATE"
+      ],
       "correctAnswer": "FORALL",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "FORALL i IN l_emp_ids.FIRST..l_emp_ids.LAST\n  UPDATE employees SET salary = salary * 1.05\n  WHERE employee_id = l_emp_ids(i);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_080_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_080_a.mp3"
     },
     {
       "cardId": "plsql_081",
       "category": "Bulk Operations",
       "hint": "The main advantage of using bulk operations over traditional loops.",
       "question": "What is the primary performance benefit of using `FORALL` and `BULK COLLECT`?",
-      "options": ["They use less memory", "They reduce context switching between SQL and PL/SQL engines", "They are easier to read"],
+      "options": [
+        "They use less memory",
+        "They reduce context switching between SQL and PL/SQL engines",
+        "They are easier to read"
+      ],
       "correctAnswer": "They reduce context switching between SQL and PL/SQL engines",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "BEGIN -- Less context switching than a standard FOR loop with individual UPDATEs\n  SELECT employee_id BULK COLLECT INTO l_ids FROM employees;\n  FORALL i IN 1..l_ids.COUNT\n    UPDATE salaries SET amount = amount + 100 WHERE emp_id = l_ids(i);\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_081_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_081_a.mp3"
     },
     {
       "cardId": "plsql_082",
       "category": "Dynamic SQL",
       "hint": "The primary command in PL/SQL for executing a SQL statement that is constructed as a string at runtime.",
       "question": "Which command is used to execute a SQL string that is not known until runtime?",
-      "options": ["RUN SQL", "EXECUTE IMMEDIATE", "PERFORM QUERY"],
+      "options": [
+        "RUN SQL",
+        "EXECUTE IMMEDIATE",
+        "PERFORM QUERY"
+      ],
       "correctAnswer": "EXECUTE IMMEDIATE",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "l_sql := 'UPDATE employees SET salary = :1 WHERE department_id = :2';\nEXECUTE IMMEDIATE l_sql USING 50000, 10;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_082_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_082_a.mp3"
     },
     {
       "cardId": "plsql_083",
       "category": "Dynamic SQL",
       "hint": "This clause in `EXECUTE IMMEDIATE` is used to pass bind variables into the dynamic SQL string.",
       "question": "When using `EXECUTE IMMEDIATE`, which clause safely passes values into your dynamic query?",
-      "options": ["WITH", "INTO", "USING"],
+      "options": [
+        "WITH",
+        "INTO",
+        "USING"
+      ],
       "correctAnswer": "USING",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "l_sql := 'DELETE FROM logs WHERE log_date < :p_date';\nEXECUTE IMMEDIATE l_sql USING TRUNC(SYSDATE) - 30;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_083_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_083_a.mp3"
     },
     {
       "cardId": "plsql_084",
       "category": "Dynamic SQL",
       "hint": "This clause in `EXECUTE IMMEDIATE` is used to retrieve values from a dynamic query into PL/SQL variables.",
       "question": "To retrieve a value from a dynamic `SELECT` statement, which `EXECUTE IMMEDIATE` clause do you use?",
-      "options": ["RETURNING INTO", "BULK COLLECT INTO", "OUT"],
+      "options": [
+        "RETURNING INTO",
+        "BULK COLLECT INTO",
+        "OUT"
+      ],
       "correctAnswer": "BULK COLLECT INTO",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "l_sql := 'SELECT last_name FROM employees WHERE employee_id = :1';\nEXECUTE IMMEDIATE l_sql INTO l_last_name USING 100;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_084_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_084_a.mp3"
     },
     {
       "cardId": "plsql_085",
       "category": "Pragmas",
       "hint": "This pragma allows a subprogram to run in its own transaction, which can be committed or rolled back independently of the main transaction.",
       "question": "Which pragma defines a procedure that can commit its work without affecting the main transaction?",
-      "options": ["PRAGMA INDEPENDENT", "PRAGMA NEW_TRANSACTION", "PRAGMA AUTONOMOUS_TRANSACTION"],
+      "options": [
+        "PRAGMA INDEPENDENT",
+        "PRAGMA NEW_TRANSACTION",
+        "PRAGMA AUTONOMOUS_TRANSACTION"
+      ],
       "correctAnswer": "PRAGMA AUTONOMOUS_TRANSACTION",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "CREATE OR REPLACE PROCEDURE log_error (p_message IN VARCHAR2) IS\n  PRAGMA AUTONOMOUS_TRANSACTION;\nBEGIN\n  INSERT INTO app_logs (msg) VALUES (p_message);\n  COMMIT;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_085_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_085_a.mp3"
     },
     {
       "cardId": "plsql_086",
       "category": "Pragmas",
       "hint": "This pragma links a user-defined exception name with a specific Oracle error number.",
       "question": "Which pragma is used to associate a custom exception name with an Oracle error code like -20001?",
-      "options": ["PRAGMA EXCEPTION_INIT", "PRAGMA ERROR_CODE", "PRAGMA ASSOCIATE_ERROR"],
+      "options": [
+        "PRAGMA EXCEPTION_INIT",
+        "PRAGMA ERROR_CODE",
+        "PRAGMA ASSOCIATE_ERROR"
+      ],
       "correctAnswer": "PRAGMA EXCEPTION_INIT",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "DECLARE\n  e_insufficient_funds EXCEPTION;\n  PRAGMA EXCEPTION_INIT(e_insufficient_funds, -20001);\nBEGIN\n  NULL;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_086_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_086_a.mp3"
     },
     {
       "cardId": "plsql_087",
       "category": "Pipelined Functions",
       "hint": "This type of function can return rows of a collection iteratively, as if it were a real table.",
       "question": "What kind of function can be queried with `SELECT * FROM TABLE(...)`?",
-      "options": ["Aggregate Function", "Scalar Function", "Pipelined Table Function"],
+      "options": [
+        "Aggregate Function",
+        "Scalar Function",
+        "Pipelined Table Function"
+      ],
       "correctAnswer": "Pipelined Table Function",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT column_value FROM TABLE(my_pipelined_function(123));"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_087_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_087_a.mp3"
     },
     {
       "cardId": "plsql_088",
       "category": "Pipelined Functions",
       "hint": "This command sends a row from a pipelined function back to the calling query.",
       "question": "Inside a pipelined table function, what command do you use to return a row to the caller?",
-      "options": ["RETURN ROW", "PIPE ROW", "SEND ROW"],
+      "options": [
+        "RETURN ROW",
+        "PIPE ROW",
+        "SEND ROW"
+      ],
       "correctAnswer": "PIPE ROW",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "LOOP\n  -- build a record l_rec\n  PIPE ROW(l_rec);\n  EXIT WHEN condition;\nEND LOOP;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_088_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_088_a.mp3"
     },
     {
       "cardId": "plsql_089",
       "category": "Advanced Data Types",
       "hint": "A type of collection that is unbounded and must be initialized before use.",
       "question": "Which collection type is an unbounded list of elements of the same type, defined at the schema level?",
-      "options": ["Associative Array", "Nested Table", "Varray"],
+      "options": [
+        "Associative Array",
+        "Nested Table",
+        "Varray"
+      ],
       "correctAnswer": "Nested Table",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "CREATE TYPE list_of_names AS TABLE OF VARCHAR2(100);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_089_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_089_a.mp3"
     },
     {
       "cardId": "plsql_090",
       "category": "Advanced Data Types",
       "hint": "A type of collection that has a fixed upper bound of elements.",
       "question": "Which collection type is a fixed-size array of elements of the same type?",
-      "options": ["Record", "Varray", "Nested Table"],
+      "options": [
+        "Record",
+        "Varray",
+        "Nested Table"
+      ],
       "correctAnswer": "Varray",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "CREATE TYPE phone_numbers_varray AS VARRAY(5) OF VARCHAR2(20);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_090_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_090_a.mp3"
     },
     {
       "cardId": "plsql_091",
       "category": "Analytic Functions",
       "hint": "This analytic function assigns a unique, sequential integer to each row in a partition.",
       "question": "Which function would you use to number rows 1, 2, 3, ... within each department, ordered by salary?",
-      "options": ["RANK()", "ROW_NUMBER()", "COUNT()"],
+      "options": [
+        "RANK()",
+        "ROW_NUMBER()",
+        "COUNT()"
+      ],
       "correctAnswer": "ROW_NUMBER()",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT last_name, ROW_NUMBER() OVER (PARTITION BY department_id ORDER BY salary DESC) as rn FROM employees;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_091_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_091_a.mp3"
     },
     {
       "cardId": "plsql_092",
       "category": "Analytic Functions",
       "hint": "This analytic function assigns a rank to each row, with gaps in the ranking for ties.",
       "question": "If two employees have the same salary, which function will give them the same rank and cause a gap in the sequence (e.g., 1, 2, 2, 4)?",
-      "options": ["ROW_NUMBER()", "DENSE_RANK()", "RANK()"],
+      "options": [
+        "ROW_NUMBER()",
+        "DENSE_RANK()",
+        "RANK()"
+      ],
       "correctAnswer": "RANK()",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT last_name, RANK() OVER (ORDER BY salary DESC) as rank_val FROM employees;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_092_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_092_a.mp3"
     },
     {
       "cardId": "plsql_093",
       "category": "Analytic Functions",
       "hint": "Allows you to access data from a subsequent row in the result set without a self-join.",
       "question": "Which analytic function lets you access the value of the 'next' row?",
-      "options": ["NEXT()", "LEAD()", "LAG()"],
+      "options": [
+        "NEXT()",
+        "LEAD()",
+        "LAG()"
+      ],
       "correctAnswer": "LEAD()",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT last_name, salary, LEAD(salary, 1, 0) OVER (ORDER BY salary DESC) as next_salary FROM employees;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_093_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_093_a.mp3"
     },
     {
       "cardId": "plsql_094",
       "category": "Analytic Functions",
       "hint": "Allows you to access data from a previous row in the result set without a self-join.",
       "question": "Which analytic function lets you access the value of the 'previous' row?",
-      "options": ["PREVIOUS()", "PRIOR()", "LAG()"],
+      "options": [
+        "PREVIOUS()",
+        "PRIOR()",
+        "LAG()"
+      ],
       "correctAnswer": "LAG()",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT last_name, hire_date, LAG(hire_date, 1) OVER (ORDER BY hire_date) as prev_hire_date FROM employees;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_094_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_094_a.mp3"
     },
     {
       "cardId": "plsql_095",
       "category": "Object-Oriented PL/SQL",
       "hint": "The fundamental building block for object-oriented programming in Oracle.",
       "question": "What is the PL/SQL equivalent of a 'class' in other languages, used to define object blueprints?",
-      "options": ["PACKAGE", "OBJECT TYPE", "RECORD TYPE"],
+      "options": [
+        "PACKAGE",
+        "OBJECT TYPE",
+        "RECORD TYPE"
+      ],
       "correctAnswer": "OBJECT TYPE",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "CREATE TYPE Person_obj AS OBJECT (\n  idno  NUMBER,\n  name  VARCHAR2(30),\n  MEMBER FUNCTION display RETURN VARCHAR2\n);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_095_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_095_a.mp3"
     },
     {
       "cardId": "plsql_096",
       "category": "Object-Oriented PL/SQL",
       "hint": "The implementation code for the methods of an object type.",
       "question": "Where do you define the code for the methods of an `OBJECT TYPE`?",
-      "options": ["In a Package", "In an Object Type Body", "In a Trigger"],
+      "options": [
+        "In a Package",
+        "In an Object Type Body",
+        "In a Trigger"
+      ],
       "correctAnswer": "In an Object Type Body",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "CREATE TYPE BODY Person_obj IS\n  MEMBER FUNCTION display RETURN VARCHAR2 IS\n  BEGIN\n    RETURN 'ID: ' || self.idno;\n  END;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_096_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_096_a.mp3"
     },
     {
       "cardId": "plsql_097",
       "category": "Object-Oriented PL/SQL",
       "hint": "The keyword used within a member method to refer to the current instance of the object.",
       "question": "Inside an object type's member method, which keyword refers to the instance of the object itself?",
-      "options": ["THIS", "ME", "SELF"],
+      "options": [
+        "THIS",
+        "ME",
+        "SELF"
+      ],
       "correctAnswer": "SELF",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "CREATE TYPE BODY Person_obj IS\n  MEMBER PROCEDURE set_name(p_name VARCHAR2) IS\n  BEGIN\n    SELF.name := p_name;\n  END;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_097_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_097_a.mp3"
     },
     {
       "cardId": "plsql_098",
@@ -1282,7 +1864,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_098_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_098_a.mp3"
     },
     {
       "cardId": "plsql_099",
@@ -1299,7 +1883,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_099_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_099_a.mp3"
     },
     {
       "cardId": "plsql_100",
@@ -1316,7 +1902,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_100_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_100_a.mp3"
     },
     {
       "cardId": "plsql_101",
@@ -1333,7 +1921,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_101_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_101_a.mp3"
     },
     {
       "cardId": "plsql_102",
@@ -1350,7 +1940,9 @@
         "type": "code",
         "language": "sql",
         "value": "-- The ISG parser reads this file\nPACKAGE company_api IS\n  PROCEDURE hire_employee(p_name IN VARCHAR2);\nEND company_api;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_102_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_102_a.mp3"
     },
     {
       "cardId": "plsql_103",
@@ -1367,7 +1959,9 @@
         "type": "code",
         "language": "sql",
         "value": "PACKAGE BODY company_api IS\n  PROCEDURE hire_employee(p_name IN VARCHAR2) IS\n  BEGIN\n    INSERT INTO employees (name) VALUES (p_name);\n  END hire_employee;\nEND company_api;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_103_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_103_a.mp3"
     },
     {
       "cardId": "plsql_104",
@@ -1384,7 +1978,9 @@
         "type": "code",
         "language": "sql",
         "value": "PROCEDURE get_all_employees (\n  p_employee_data OUT SYS_REFCURSOR\n);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_104_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_104_a.mp3"
     },
     {
       "cardId": "plsql_105",
@@ -1401,7 +1997,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_105_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_105_a.mp3"
     },
     {
       "cardId": "plsql_106",
@@ -1418,7 +2016,9 @@
         "type": "code",
         "language": "sql",
         "value": "PROCEDURE get_user_details (\n  p_user_id IN NUMBER\n);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_106_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_106_a.mp3"
     },
     {
       "cardId": "plsql_107",
@@ -1435,7 +2035,9 @@
         "type": "code",
         "language": "sql",
         "value": "PROCEDURE create_user (\n  p_status_message OUT VARCHAR2\n);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_107_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_107_a.mp3"
     },
     {
       "cardId": "plsql_108",
@@ -1452,7 +2054,9 @@
         "type": "code",
         "language": "sql",
         "value": "/*# @rep:scope public */\nPROCEDURE my_public_procedure;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_108_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_108_a.mp3"
     },
     {
       "cardId": "plsql_109",
@@ -1469,7 +2073,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_109_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_109_a.mp3"
     },
     {
       "cardId": "plsql_110",
@@ -1486,7 +2092,9 @@
         "type": "code",
         "language": "sql",
         "value": "/*# @param P_USER_ID The unique identifier for the user. */\nPROCEDURE get_user(P_USER_ID IN NUMBER);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_110_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_110_a.mp3"
     },
     {
       "cardId": "plsql_111",
@@ -1503,7 +2111,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_111_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_111_a.mp3"
     },
     {
       "cardId": "plsql_112",
@@ -1520,7 +2130,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_112_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_112_a.mp3"
     },
     {
       "cardId": "plsql_113",
@@ -1537,7 +2149,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_113_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_113_a.mp3"
     },
     {
       "cardId": "plsql_114",
@@ -1554,7 +2168,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_114_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_114_a.mp3"
     },
     {
       "cardId": "plsql_115",
@@ -1571,7 +2187,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_115_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_115_a.mp3"
     },
     {
       "cardId": "plsql_116",
@@ -1588,7 +2206,9 @@
         "type": "code",
         "language": "sql",
         "value": "-- Example Endpoint URL\nhttps://yourserver.com/OA_HTML/rest/api/v1/mobile/get_products"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_116_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_116_a.mp3"
     },
     {
       "cardId": "plsql_117",
@@ -1605,7 +2225,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_117_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_117_a.mp3"
     },
     {
       "cardId": "plsql_118",
@@ -1622,7 +2244,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_118_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_118_a.mp3"
     },
     {
       "cardId": "plsql_119",
@@ -1639,7 +2263,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_119_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_119_a.mp3"
     },
     {
       "cardId": "plsql_120",
@@ -1656,7 +2282,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_120_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_120_a.mp3"
     },
     {
       "cardId": "plsql_121",
@@ -1673,7 +2301,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_121_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_121_a.mp3"
     },
     {
       "cardId": "plsql_122",
@@ -1690,7 +2320,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_122_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_122_a.mp3"
     },
     {
       "cardId": "plsql_123",
@@ -1707,7 +2339,9 @@
         "type": "code",
         "language": "sql",
         "value": "PROCEDURE increment_counter(\n  p_counter IN OUT NUMBER\n) IS\nBEGIN\n  p_counter := p_counter + 1;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_123_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_123_a.mp3"
     },
     {
       "cardId": "plsql_124",
@@ -1724,7 +2358,9 @@
         "type": "code",
         "language": "sql",
         "value": "/*# @rep:displayname \"Get User Roles\" */"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_124_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_124_a.mp3"
     },
     {
       "cardId": "plsql_125",
@@ -1741,7 +2377,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_125_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_125_a.mp3"
     },
     {
       "cardId": "plsql_126",
@@ -1758,7 +2396,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_126_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_126_a.mp3"
     },
     {
       "cardId": "plsql_127",
@@ -1775,7 +2415,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_127_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_127_a.mp3"
     },
     {
       "cardId": "plsql_128",
@@ -1792,7 +2434,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_128_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_128_a.mp3"
     },
     {
       "cardId": "plsql_129",
@@ -1809,7 +2453,9 @@
         "type": "code",
         "language": "sql",
         "value": "-- This is the Specification. It defines WHAT can be called.\nPACKAGE user_utils IS\n  PROCEDURE create_user(p_username IN VARCHAR2);\n  FUNCTION is_active(p_user_id IN NUMBER) RETURN BOOLEAN;\nEND user_utils;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_129_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_129_a.mp3"
     },
     {
       "cardId": "plsql_130",
@@ -1826,7 +2472,9 @@
         "type": "code",
         "language": "sql",
         "value": "-- This is the Body. It defines HOW the procedures work.\nPACKAGE BODY user_utils IS\n  PROCEDURE create_user(p_username IN VARCHAR2) IS\n  BEGIN\n    -- Implementation code goes here...\n    NULL;\n  END create_user;\n\n  FUNCTION is_active(p_user_id IN NUMBER) RETURN BOOLEAN IS\n  BEGIN\n    RETURN TRUE; -- Logic to check status...\n  END is_active;\nEND user_utils;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_130_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_130_a.mp3"
     },
     {
       "cardId": "plsql_131",
@@ -1843,7 +2491,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_131_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_131_a.mp3"
     },
     {
       "cardId": "plsql_132",
@@ -1860,7 +2510,9 @@
         "type": "code",
         "language": "sql",
         "value": "-- IN: Data flows IN to the server.\n-- OUT: Data flows OUT from the server.\nPROCEDURE example_proc(\n  p_input  IN  VARCHAR2,\n  p_output OUT NUMBER\n);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_132_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_132_a.mp3"
     },
     {
       "cardId": "plsql_133",
@@ -1877,7 +2529,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_133_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_133_a.mp3"
     },
     {
       "cardId": "plsql_134",
@@ -1894,7 +2548,9 @@
         "type": "code",
         "language": "sql",
         "value": "/*# @rep:scope public @rep:displayname \"Get All Products\" */\n-- The comment above is metadata, not just a comment."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_134_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_134_a.mp3"
     },
     {
       "cardId": "plsql_135",
@@ -1911,7 +2567,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_135_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_135_a.mp3"
     },
     {
       "cardId": "plsql_136",
@@ -1928,7 +2586,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_136_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_136_a.mp3"
     },
     {
       "cardId": "plsql_137",
@@ -1945,7 +2605,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_137_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_137_a.mp3"
     },
     {
       "cardId": "plsql_138",
@@ -1962,7 +2624,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_138_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_138_a.mp3"
     },
     {
       "cardId": "plsql_139",
@@ -1979,7 +2643,9 @@
         "type": "code",
         "language": "sql",
         "value": "DECLARE\n  -- l_cursor is a pointer to the result set of the query\n  CURSOR l_cursor IS SELECT employee_name FROM employees;\nBEGIN\n  NULL;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_139_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_139_a.mp3"
     },
     {
       "cardId": "plsql_140",
@@ -1996,7 +2662,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_140_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_140_a.mp3"
     },
     {
       "cardId": "plsql_141",
@@ -2013,7 +2681,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_141_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_141_a.mp3"
     },
     {
       "cardId": "plsql_142",
@@ -2030,7 +2700,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_142_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_142_a.mp3"
     },
     {
       "cardId": "plsql_143",
@@ -2047,7 +2719,9 @@
         "type": "code",
         "language": "sql",
         "value": "DECLARE\n  TYPE t_employee_rec IS RECORD (\n    id         employees.employee_id%TYPE,\n    first_name employees.first_name%TYPE,\n    last_name  employees.last_name%TYPE\n  );\n  l_employee t_employee_rec;\nBEGIN\n  l_employee.id := 100;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_143_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_143_a.mp3"
     },
     {
       "cardId": "plsql_144",
@@ -2064,7 +2738,9 @@
         "type": "code",
         "language": "sql",
         "value": "DECLARE\n  l_json_data CLOB;\nBEGIN\n  l_json_data := '{\"id\": 1, \"data\": \"...very large amount of text...\"}';\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_144_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_144_a.mp3"
     },
     {
       "cardId": "plsql_145",
@@ -2081,7 +2757,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_145_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_145_a.mp3"
     },
     {
       "cardId": "plsql_146",
@@ -2098,7 +2776,9 @@
         "type": "none",
         "language": "none",
         "value": ""
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_146_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_146_a.mp3"
     },
     {
       "cardId": "plsql_147",
@@ -2115,410 +2795,598 @@
         "type": "code",
         "language": "sql",
         "value": "BEGIN\n  -- First call to my_package loads the whole thing into memory.\n  my_package.proc1(); \n\n  -- Subsequent calls are faster as it's already in memory.\n  my_package.proc2(); \nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_147_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_147_a.mp3"
     },
     {
       "cardId": "plsql_148",
       "category": "SQL CRUD",
       "hint": "This is the 'C' (Create) in CRUD.",
       "question": "A POST request to `/api/products` typically triggers which SQL command?",
-      "options": ["UPDATE", "INSERT", "SELECT"],
+      "options": [
+        "UPDATE",
+        "INSERT",
+        "SELECT"
+      ],
       "correctAnswer": "INSERT",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "INSERT INTO products (name, price, stock)\nVALUES ('New Gadget', 99.99, 150);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_148_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_148_a.mp3"
     },
     {
       "cardId": "plsql_149",
       "category": "SQL CRUD",
       "hint": "This is the 'R' (Read) in CRUD.",
       "question": "A GET request to `/api/products/42` corresponds to which SQL command?",
-      "options": ["FETCH", "UPDATE", "SELECT"],
+      "options": [
+        "FETCH",
+        "UPDATE",
+        "SELECT"
+      ],
       "correctAnswer": "SELECT",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT product_id, name, price\nFROM products\nWHERE product_id = 42;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_149_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_149_a.mp3"
     },
     {
       "cardId": "plsql_150",
       "category": "SQL CRUD",
       "hint": "This is the 'U' (Update) in CRUD.",
       "question": "A PATCH request to `/api/products/42` with a new price triggers which SQL command?",
-      "options": ["MODIFY", "CHANGE", "UPDATE"],
+      "options": [
+        "MODIFY",
+        "CHANGE",
+        "UPDATE"
+      ],
       "correctAnswer": "UPDATE",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "UPDATE products\nSET price = 89.99\nWHERE product_id = 42;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_150_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_150_a.mp3"
     },
     {
       "cardId": "plsql_151",
       "category": "SQL CRUD",
       "hint": "This is the 'D' (Delete) in CRUD.",
       "question": "A DELETE request to `/api/products/42` results in which SQL command?",
-      "options": ["DROP", "ERASE", "DELETE"],
+      "options": [
+        "DROP",
+        "ERASE",
+        "DELETE"
+      ],
       "correctAnswer": "DELETE",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "DELETE FROM products\nWHERE product_id = 42;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_151_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_151_a.mp3"
     },
     {
       "cardId": "plsql_152",
       "category": "SQL Joins",
       "hint": "This is the most common type of join, returning only rows that have a match in both tables.",
       "question": "To get a list of users and the names of the departments they belong to, you'd use an (...).",
-      "options": ["OUTER JOIN", "INNER JOIN", "CROSS JOIN"],
+      "options": [
+        "OUTER JOIN",
+        "INNER JOIN",
+        "CROSS JOIN"
+      ],
       "correctAnswer": "INNER JOIN",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT u.user_name, d.department_name\nFROM users u\nINNER JOIN departments d ON u.department_id = d.department_id;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_152_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_152_a.mp3"
     },
     {
       "cardId": "plsql_153",
       "category": "SQL Joins",
       "hint": "This type of join returns all rows from the first (left) table, even if there are no matches in the second.",
       "question": "To list all employees and their assigned computer, including employees who have no computer, you use a (...).",
-      "options": ["RIGHT JOIN", "CROSS JOIN", "LEFT JOIN"],
+      "options": [
+        "RIGHT JOIN",
+        "CROSS JOIN",
+        "LEFT JOIN"
+      ],
       "correctAnswer": "LEFT JOIN",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT e.employee_name, c.asset_tag\nFROM employees e\nLEFT JOIN computers c ON e.employee_id = c.assigned_to;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_153_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_153_a.mp3"
     },
     {
       "cardId": "plsql_154",
       "category": "SQL Aggregation",
       "hint": "This clause is used with aggregate functions (like COUNT, SUM) to group rows that have the same values.",
       "question": "To count the number of employees in each department, you would use `COUNT(*)` and a (...) clause.",
-      "options": ["ORDER BY", "GROUP BY", "WHERE"],
+      "options": [
+        "ORDER BY",
+        "GROUP BY",
+        "WHERE"
+      ],
       "correctAnswer": "GROUP BY",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT department_id, COUNT(employee_id) AS number_of_employees\nFROM employees\nGROUP BY department_id;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_154_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_154_a.mp3"
     },
     {
       "cardId": "plsql_155",
       "category": "SQL Aggregation",
       "hint": "This clause is used to filter groups based on the results of aggregate functions.",
       "question": "To find only departments with more than 10 employees, you would use a (...) clause after `GROUP BY`.",
-      "options": ["WHERE", "HAVING", "FILTER"],
+      "options": [
+        "WHERE",
+        "HAVING",
+        "FILTER"
+      ],
       "correctAnswer": "HAVING",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "SELECT department_id, COUNT(*)\nFROM employees\nGROUP BY department_id\nHAVING COUNT(*) > 10;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_155_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_155_a.mp3"
     },
     {
       "cardId": "plsql_156",
       "category": "SQL Transactions",
       "hint": "This command saves all changes made during the current transaction, making them permanent.",
       "question": "After a successful `INSERT` and `UPDATE`, what command finalizes the transaction?",
-      "options": ["SAVE", "END", "COMMIT"],
+      "options": [
+        "SAVE",
+        "END",
+        "COMMIT"
+      ],
       "correctAnswer": "COMMIT",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "START TRANSACTION;\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;\nCOMMIT;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_156_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_156_a.mp3"
     },
     {
       "cardId": "plsql_157",
       "category": "SQL Transactions",
       "hint": "This command undoes all the changes made since the beginning of the transaction.",
       "question": "If an error occurs midway through a transaction, what command should be executed to prevent partial changes?",
-      "options": ["REVERT", "ROLLBACK", "CANCEL"],
+      "options": [
+        "REVERT",
+        "ROLLBACK",
+        "CANCEL"
+      ],
       "correctAnswer": "ROLLBACK",
       "content": {
         "type": "code",
         "language": "plsql",
         "value": "BEGIN\n  UPDATE accounts SET balance = balance - 100 WHERE id = 1;\n  -- An error happens here!\n  ROLLBACK;\nEXCEPTION\n  WHEN OTHERS THEN\n    ROLLBACK;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_157_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_157_a.mp3"
     },
     {
       "cardId": "plsql_158",
       "category": "SQL Transactions",
       "hint": "This principle ensures that a transaction is treated as a single, indivisible unit of work.",
       "question": "The 'A' in ACID properties stands for (...), meaning the transaction either fully completes or not at all.",
-      "options": ["Availability", "Atomicity", "Accuracy"],
+      "options": [
+        "Availability",
+        "Atomicity",
+        "Accuracy"
+      ],
       "correctAnswer": "Atomicity",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "-- Atomicity Example: Transfer funds.\n-- If the debit succeeds but the credit fails, a rollback ensures\n-- the entire operation is undone, as if it never happened.\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_158_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_158_a.mp3"
     },
     {
       "cardId": "plsql_159",
       "category": "SQL Transactions",
       "hint": "This property ensures that a transaction brings the database from one valid state to another.",
       "question": "The 'C' in ACID properties stands for (...), ensuring all database rules and constraints are maintained.",
-      "options": ["Concurrency", "Correctness", "Consistency"],
+      "options": [
+        "Concurrency",
+        "Correctness",
+        "Consistency"
+      ],
       "correctAnswer": "Consistency",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "-- Consistency Example: A UNIQUE constraint on email.\n-- An INSERT that violates this rule will fail, ensuring the\n-- database remains in a consistent (valid) state.\nINSERT INTO users (email) VALUES ('duplicate@example.com'); -- This would fail."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_159_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_159_a.mp3"
     },
     {
       "cardId": "plsql_160",
       "category": "SQL Transactions",
       "hint": "This property ensures that concurrent transactions do not interfere with each other.",
       "question": "The 'I' in ACID stands for (...), making transactions appear as if they are running sequentially.",
-      "options": ["Integrity", "Isolation", "Immutability"],
+      "options": [
+        "Integrity",
+        "Isolation",
+        "Immutability"
+      ],
       "correctAnswer": "Isolation",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "-- Isolation Example:\n-- Transaction 1 sees balance=500. Transaction 2 sees balance=500.\n-- T1 subtracts 100. T2 will still see 500 until T1 commits.\n-- This prevents 'dirty reads'."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_160_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_160_a.mp3"
     },
     {
       "cardId": "plsql_161",
       "category": "SQL Transactions",
       "hint": "This property ensures that once a transaction has been committed, it will remain so, even in the event of a power loss.",
       "question": "The 'D' in ACID stands for (...), meaning committed changes are permanently saved.",
-      "options": ["Durability", "Determinism", "Distribution"],
+      "options": [
+        "Durability",
+        "Determinism",
+        "Distribution"
+      ],
       "correctAnswer": "Durability",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "-- Durability Example:\n-- After a COMMIT, the changes are written to the database's\n-- transaction log on disk. If the server crashes, the changes\n-- can be recovered when it restarts."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_161_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_161_a.mp3"
     },
     {
       "cardId": "plsql_162",
       "category": "SQL Injection",
       "hint": "This is a major security vulnerability where malicious SQL is inserted into input data.",
       "question": "What is the security risk of building SQL strings directly from user input?",
-      "options": ["Cross-Site Scripting (XSS)", "SQL Injection", "Denial of Service (DoS)"],
+      "options": [
+        "Cross-Site Scripting (XSS)",
+        "SQL Injection",
+        "Denial of Service (DoS)"
+      ],
       "correctAnswer": "SQL Injection",
       "content": {
         "type": "code",
         "language": "python",
         "value": "# VULNERABLE CODE - DO NOT USE\nuser_id = request.GET.get('id')\ncursor.execute(f\"SELECT * FROM users WHERE id = {user_id}\")\n# An attacker could provide '1 OR 1=1' as the id."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_162_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_162_a.mp3"
     },
     {
       "cardId": "plsql_163",
       "category": "SQL Injection",
       "hint": "This technique uses placeholders in a SQL query and provides data separately, preventing malicious interpretation.",
       "question": "What is the primary defense against SQL Injection attacks?",
-      "options": ["Encrypting user input", "Using an ORM", "Using Parameterized Queries (Bind Variables)"],
+      "options": [
+        "Encrypting user input",
+        "Using an ORM",
+        "Using Parameterized Queries (Bind Variables)"
+      ],
       "correctAnswer": "Using Parameterized Queries (Bind Variables)",
       "content": {
         "type": "code",
         "language": "python",
         "value": "# SECURE CODE\nuser_id = request.GET.get('id')\n# The database driver safely handles the user_id value.\ncursor.execute(\"SELECT * FROM users WHERE id = %s\", [user_id])"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_163_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_163_a.mp3"
     },
     {
       "cardId": "plsql_164",
       "category": "Database Design",
       "hint": "This is a special column that uniquely identifies each record in a table.",
       "question": "The `user_id` column, which has a unique value for every user, is the table's (...).",
-      "options": ["Index Key", "Foreign Key", "Primary Key"],
+      "options": [
+        "Index Key",
+        "Foreign Key",
+        "Primary Key"
+      ],
       "correctAnswer": "Primary Key",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "CREATE TABLE users (\n  user_id NUMBER GENERATED AS IDENTITY,\n  email VARCHAR2(100 CHAR) NOT NULL UNIQUE,\n  CONSTRAINT users_pk PRIMARY KEY (user_id)\n);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_164_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_164_a.mp3"
     },
     {
       "cardId": "plsql_165",
       "category": "Database Design",
       "hint": "This column in one table refers to the primary key of another table, creating a link.",
       "question": "In a `posts` table, a `user_id` column that refers to the `users` table is a (...).",
-      "options": ["Secondary Key", "Foreign Key", "Linked Key"],
+      "options": [
+        "Secondary Key",
+        "Foreign Key",
+        "Linked Key"
+      ],
       "correctAnswer": "Foreign Key",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "CREATE TABLE posts (\n  post_id NUMBER PRIMARY KEY,\n  author_id NUMBER NOT NULL,\n  title VARCHAR2(200 CHAR),\n  CONSTRAINT posts_fk_author FOREIGN KEY (author_id)\n    REFERENCES users (user_id)\n);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_165_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_165_a.mp3"
     },
     {
       "cardId": "plsql_166",
       "category": "Database Design",
       "hint": "This rule on a foreign key will automatically delete child rows when the parent row is deleted.",
       "question": "The `(...)` rule ensures that deleting a user also deletes all their posts.",
-      "options": ["ON DELETE SET NULL", "ON DELETE CASCADE", "ON DELETE PROTECT"],
+      "options": [
+        "ON DELETE SET NULL",
+        "ON DELETE CASCADE",
+        "ON DELETE PROTECT"
+      ],
       "correctAnswer": "ON DELETE CASCADE",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "ALTER TABLE posts ADD CONSTRAINT posts_fk_author\nFOREIGN KEY (author_id) REFERENCES users (user_id)\nON DELETE CASCADE;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_166_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_166_a.mp3"
     },
     {
       "cardId": "plsql_167",
       "category": "Database Design",
       "hint": "This data structure improves the speed of data retrieval operations, like an index in a book.",
       "question": "To speed up queries that search for users by email, you should create an (...) on the `email` column.",
-      "options": ["Index", "Sequence", "View"],
+      "options": [
+        "Index",
+        "Sequence",
+        "View"
+      ],
       "correctAnswer": "Index",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "CREATE INDEX idx_users_email ON users (email);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_167_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_167_a.mp3"
     },
     {
       "cardId": "plsql_168",
       "category": "Database Design",
       "hint": "The process of organizing columns and tables to minimize data redundancy.",
       "question": "What is the term for designing a database to reduce repetition and improve data integrity?",
-      "options": ["Optimization", "Normalization", "Refactoring"],
+      "options": [
+        "Optimization",
+        "Normalization",
+        "Refactoring"
+      ],
       "correctAnswer": "Normalization",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "-- Instead of storing department_name in the employees table...\n-- (which is redundant if many employees are in the same dept)\n-- ... we normalize by creating a departments table and linking to it."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_168_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_168_a.mp3"
     },
     {
       "cardId": "plsql_169",
       "category": "Database Design",
       "hint": "This type of table is used to resolve a many-to-many relationship.",
       "question": "To link `students` and `classes` (where a student can take many classes, and a class has many students), you need a (...) table.",
-      "options": ["Linking Table", "Junction Table", "Reference Table"],
+      "options": [
+        "Linking Table",
+        "Junction Table",
+        "Reference Table"
+      ],
       "correctAnswer": "Junction Table",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "CREATE TABLE enrollments (\n  student_id NUMBER REFERENCES students(student_id),\n  class_id NUMBER REFERENCES classes(class_id),\n  PRIMARY KEY (student_id, class_id)\n);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_169_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_169_a.mp3"
     },
     {
       "cardId": "plsql_170",
       "category": "PL/SQL",
       "hint": "This is a named block of code stored in the database, designed to perform an action.",
       "question": "To encapsulate the logic for creating a new user, you would write a (...) Procedure.",
-      "options": ["Stored", "Anonymous", "Function"],
+      "options": [
+        "Stored",
+        "Anonymous",
+        "Function"
+      ],
       "correctAnswer": "Stored",
       "content": {
         "type": "code",
         "language": "plsql",
         "value": "CREATE OR REPLACE PROCEDURE prc_create_user(p_email IN VARCHAR2)\nAS\nBEGIN\n  INSERT INTO users (email) VALUES (p_email);\n  COMMIT;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_170_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_170_a.mp3"
     },
     {
       "cardId": "plsql_171",
       "category": "PL/SQL",
       "hint": "This type of PL/SQL block is similar to a procedure but must return a value.",
       "question": "To encapsulate logic that calculates and returns a value, such as a user's total sales, you write a (...).",
-      "options": ["Package", "Trigger", "Function"],
+      "options": [
+        "Package",
+        "Trigger",
+        "Function"
+      ],
       "correctAnswer": "Function",
       "content": {
         "type": "code",
         "language": "plsql",
         "value": "CREATE OR REPLACE FUNCTION fnc_get_user_email(p_user_id IN NUMBER)\nRETURN VARCHAR2\nAS\n  v_email VARCHAR2(100 CHAR);\nBEGIN\n  SELECT email INTO v_email FROM users WHERE user_id = p_user_id;\n  RETURN v_email;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_171_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_171_a.mp3"
     },
     {
       "cardId": "plsql_172",
       "category": "PL/SQL",
       "hint": "This database object automatically executes in response to an event like an INSERT on a table.",
       "question": "A (...) is a special procedure that runs automatically when a data modification event occurs.",
-      "options": ["Trigger", "Constraint", "View"],
+      "options": [
+        "Trigger",
+        "Constraint",
+        "View"
+      ],
       "correctAnswer": "Trigger",
       "content": {
         "type": "code",
         "language": "plsql",
         "value": "CREATE OR REPLACE TRIGGER trg_users_audit\nAFTER INSERT OR UPDATE ON users\nFOR EACH ROW\nBEGIN\n  -- Logic to write to an audit log table\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_172_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_172_a.mp3"
     },
     {
       "cardId": "plsql_173",
       "category": "PL/SQL",
       "hint": "These special records inside a trigger allow you to access the column values before and after the triggering DML operation.",
       "question": "Inside a trigger, you can reference the new data with `:new` and the original data with `(...)`.",
-      "options": [":previous", ":before", ":old"],
+      "options": [
+        ":previous",
+        ":before",
+        ":old"
+      ],
       "correctAnswer": ":old",
       "content": {
         "type": "code",
         "language": "plsql",
         "value": "CREATE OR REPLACE TRIGGER trg_log_price_change\nBEFORE UPDATE OF price ON products\nFOR EACH ROW\nBEGIN\n  INSERT INTO price_history (product_id, old_price, new_price)\n  VALUES (:old.product_id, :old.price, :new.price);\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_173_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_173_a.mp3"
     },
     {
       "cardId": "plsql_174",
       "category": "PL/SQL",
       "hint": "This object generates unique, sequential numbers, perfect for primary keys.",
       "question": "To automatically generate unique IDs for new records, Oracle uses a (...).",
-      "options": ["Sequence", "Trigger", "Function"],
+      "options": [
+        "Sequence",
+        "Trigger",
+        "Function"
+      ],
       "correctAnswer": "Sequence",
       "content": {
         "type": "code",
         "language": "sql",
         "value": "CREATE SEQUENCE user_id_seq START WITH 1 INCREMENT BY 1 NOCACHE;\n\n-- Usage:\nINSERT INTO users (user_id, email) VALUES (user_id_seq.NEXTVAL, 'new@test.com');"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_174_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_174_a.mp3"
     },
     {
       "cardId": "plsql_175",
       "category": "PL/SQL Cursors",
       "hint": "This is a pointer to the result set of a query, allowing an application to process rows one by one.",
       "question": "A (...) is a private SQL work area that lets you process the rows returned by a multi-row query.",
-      "options": ["Table", "View", "Cursor"],
+      "options": [
+        "Table",
+        "View",
+        "Cursor"
+      ],
       "correctAnswer": "Cursor",
       "content": {
         "type": "code",
         "language": "plsql",
         "value": "DECLARE\n  CURSOR c_employees IS SELECT name FROM employees;\n  v_name employees.name%TYPE;\nBEGIN\n  OPEN c_employees;\n  FETCH c_employees INTO v_name;\n  CLOSE c_employees;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_175_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_175_a.mp3"
     },
     {
       "cardId": "plsql_176",
       "category": "PL/SQL Cursors",
       "hint": "This is a pointer to a result set that can be passed as a parameter, often returned from a function to a client.",
       "question": "PL/SQL functions often return a `(...)`, which acts as a flexible pointer for query results.",
-      "options": ["TABLE", "SYS_REFCURSOR", "OUT_CURSOR"],
+      "options": [
+        "TABLE",
+        "SYS_REFCURSOR",
+        "OUT_CURSOR"
+      ],
       "correctAnswer": "SYS_REFCURSOR",
       "content": {
         "type": "code",
         "language": "plsql",
         "value": "CREATE OR REPLACE FUNCTION fnc_get_employees\nRETURN SYS_REFCURSOR\nAS\n  o_cursor SYS_REFCURSOR;\nBEGIN\n  OPEN o_cursor FOR SELECT employee_id, name FROM employees;\n  RETURN o_cursor;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_176_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_176_a.mp3"
     },
     {
       "cardId": "plsql_177",
       "category": "PL/SQL Error Handling",
       "hint": "This block of code is used to catch and handle errors that occur in a PL/SQL block.",
       "question": "To handle potential errors like `NO_DATA_FOUND` in PL/SQL, you use an (...) block.",
-      "options": ["ERROR", "CATCH", "EXCEPTION"],
+      "options": [
+        "ERROR",
+        "CATCH",
+        "EXCEPTION"
+      ],
       "correctAnswer": "EXCEPTION",
       "content": {
         "type": "code",
         "language": "plsql",
         "value": "BEGIN\n  SELECT name INTO v_name FROM users WHERE user_id = 999;\nEXCEPTION\n  WHEN NO_DATA_FOUND THEN\n    dbms_output.put_line('User not found!');\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_177_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_177_a.mp3"
     },
     {
       "cardId": "plsql_178",
       "category": "PL/SQL Error Handling",
       "hint": "This procedure allows you to raise a custom error with a specific number and message from your code.",
       "question": "To stop execution and send a clear, custom error message to the client application, you can use (...).",
-      "options": ["RAISE_APPLICATION_ERROR", "THROW_EXCEPTION", "CREATE_ERROR"],
+      "options": [
+        "RAISE_APPLICATION_ERROR",
+        "THROW_EXCEPTION",
+        "CREATE_ERROR"
+      ],
       "correctAnswer": "RAISE_APPLICATION_ERROR",
       "content": {
         "type": "code",
         "language": "plsql",
         "value": "IF p_balance < p_amount THEN\n  -- Raise a custom error with code -20001\n  RAISE_APPLICATION_ERROR(-20001, 'Insufficient funds.');\nEND IF;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_178_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_178_a.mp3"
     },
     {
       "cardId": "plsql_179",
@@ -2535,7 +3403,9 @@
         "type": "code",
         "language": "sql",
         "value": "PACKAGE company_api IS\n  PROCEDURE hire_employee(p_name IN VARCHAR2);\nEND company_api;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_179_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_179_a.mp3"
     },
     {
       "cardId": "plsql_180",
@@ -2552,7 +3422,9 @@
         "type": "code",
         "language": "sql",
         "value": "PACKAGE BODY company_api IS\n  PROCEDURE hire_employee(p_name IN VARCHAR2) IS\n  BEGIN\n    INSERT INTO employees (name) VALUES (p_name);\n  END hire_employee;\nEND company_api;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_180_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_180_a.mp3"
     },
     {
       "cardId": "plsql_181",
@@ -2569,7 +3441,9 @@
         "type": "code",
         "language": "sql",
         "value": "/*#\n * @rep:scope public\n * @rep:displayname Get User Details\n */\nPROCEDURE GET_USER_INFO (p_user_id IN NUMBER);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_181_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_181_a.mp3"
     },
     {
       "cardId": "plsql_182",
@@ -2586,7 +3460,9 @@
         "type": "code",
         "language": "sql",
         "value": "/*# @rep:displayname Get Available Stock */\nPROCEDURE get_inventory_level(...);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_182_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_182_a.mp3"
     },
     {
       "cardId": "plsql_183",
@@ -2603,7 +3479,9 @@
         "type": "code",
         "language": "bash",
         "value": "$ perl $FND_TOP/bin/irep_parser.pl -g -v -username=APPS apps.pls"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_183_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_183_a.mp3"
     },
     {
       "cardId": "plsql_184",
@@ -2620,7 +3498,9 @@
         "type": "none",
         "language": "none",
         "value": "The .ildt file contains the metadata from your annotations, formatted to be read by FNDLOAD."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_184_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_184_a.mp3"
     },
     {
       "cardId": "plsql_185",
@@ -2637,7 +3517,9 @@
         "type": "code",
         "language": "bash",
         "value": "FNDLOAD apps/apps 0 Y UPLOAD $FND_TOP/patch/115/import/afscursp.lct my_service.ildt"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_185_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_185_a.mp3"
     },
     {
       "cardId": "plsql_186",
@@ -2654,7 +3536,9 @@
         "type": "none",
         "language": "none",
         "value": "A Service Alias is a unique public endpoint. Undeploying first ensures a clean slate for the new service version."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_186_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_186_a.mp3"
     },
     {
       "cardId": "plsql_187",
@@ -2671,7 +3555,9 @@
         "type": "none",
         "language": "none",
         "value": "The Service Alias allows you to change the underlying code package without breaking client integrations."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_187_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_187_a.mp3"
     },
     {
       "cardId": "plsql_188",
@@ -2688,7 +3574,9 @@
         "type": "none",
         "language": "none",
         "value": "You must navigate to the Grants tab and explicitly give permission to specific database users or roles."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_188_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_188_a.mp3"
     },
     {
       "cardId": "plsql_189",
@@ -2705,7 +3593,9 @@
         "type": "none",
         "language": "none",
         "value": "Clearing the system cache and restarting the managed server (OAFM) forces it to load the new service definition."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_189_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_189_a.mp3"
     },
     {
       "cardId": "plsql_190",
@@ -2722,7 +3612,9 @@
         "type": "code",
         "language": "sql",
         "value": "TYPE employee_rec_type IS RECORD (\n  employee_id NUMBER,\n  last_name VARCHAR2(100),\n  hire_date DATE\n);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_190_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_190_a.mp3"
     },
     {
       "cardId": "plsql_191",
@@ -2739,7 +3631,9 @@
         "type": "code",
         "language": "sql",
         "value": "TYPE item_rec_type IS RECORD (item_id NUMBER, quantity NUMBER);\nTYPE item_tbl_type IS TABLE OF item_rec_type INDEX BY BINARY_INTEGER;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_191_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_191_a.mp3"
     },
     {
       "cardId": "plsql_192",
@@ -2756,7 +3650,9 @@
         "type": "code",
         "language": "sql",
         "value": "TYPE t_assoc_array IS TABLE OF VARCHAR2(100) INDEX BY BINARY_INTEGER;\n-- This creates a collection where keys are integers, e.g., my_array(1), my_array(100)."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_192_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_192_a.mp3"
     },
     {
       "cardId": "plsql_193",
@@ -2773,7 +3669,9 @@
         "type": "code",
         "language": "sql",
         "value": "DECLARE\n  v_employee_name employees.last_name%TYPE;\nBEGIN\n  -- v_employee_name will automatically have the same datatype as the last_name column.\n  NULL;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_193_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_193_a.mp3"
     },
     {
       "cardId": "plsql_194",
@@ -2790,7 +3688,9 @@
         "type": "code",
         "language": "sql",
         "value": "PROCEDURE get_employees(p_recordset OUT SYS_REFCURSOR) IS\nBEGIN\n  OPEN p_recordset FOR SELECT * FROM employees;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_194_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_194_a.mp3"
     },
     {
       "cardId": "plsql_195",
@@ -2807,7 +3707,9 @@
         "type": "code",
         "language": "sql",
         "value": "-- In this procedure, p_employee_id is an IN parameter by default.\nPROCEDURE get_employee_details(p_employee_id NUMBER);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_195_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_195_a.mp3"
     },
     {
       "cardId": "plsql_196",
@@ -2824,7 +3726,9 @@
         "type": "code",
         "language": "sql",
         "value": "PROCEDURE get_user_status(p_user_id IN NUMBER, p_status OUT VARCHAR2)\nIS\nBEGIN\n  p_status := 'Active'; -- Assigns a value to be sent back.\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_196_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_196_a.mp3"
     },
     {
       "cardId": "plsql_197",
@@ -2841,7 +3745,9 @@
         "type": "code",
         "language": "sql",
         "value": "PROCEDURE increment_counter(p_counter IN OUT NUMBER)\nIS\nBEGIN\n  p_counter := p_counter + 1; -- Reads and modifies the value.\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_197_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_197_a.mp3"
     },
     {
       "cardId": "plsql_198",
@@ -2858,7 +3764,9 @@
         "type": "code",
         "language": "sql",
         "value": "-- NOCOPY suggests passing the large table by reference to avoid making a copy.\nPROCEDURE process_large_dataset(p_data IN OUT NOCOPY large_table_type);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_198_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_198_a.mp3"
     },
     {
       "cardId": "plsql_199",
@@ -2875,7 +3783,9 @@
         "type": "code",
         "language": "sql",
         "value": "CREATE OR REPLACE PACKAGE BODY my_app_utils AS\n  -- new or updated code here\nEND my_app_utils;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_199_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_199_a.mp3"
     },
     {
       "cardId": "plsql_200",
@@ -2892,7 +3802,9 @@
         "type": "none",
         "language": "none",
         "value": "CLOB (Character Large Object) is ideal for storing documents, long descriptions, or JSON payloads."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_200_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_200_a.mp3"
     },
     {
       "cardId": "plsql_201",
@@ -2909,7 +3821,9 @@
         "type": "code",
         "language": "sql",
         "value": "DECLARE\nBEGIN\n  -- Calling a procedure\n  log_error('An error occurred');\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_201_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_201_a.mp3"
     },
     {
       "cardId": "plsql_202",
@@ -2926,7 +3840,9 @@
         "type": "code",
         "language": "sql",
         "value": "v_name := get_employee_name(101); -- Calling a function"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_202_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_202_a.mp3"
     },
     {
       "cardId": "plsql_203",
@@ -2943,7 +3859,9 @@
         "type": "none",
         "language": "none",
         "value": "The parser only reads the specification (.pks or .pls file), as it defines the public contract of the package."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_203_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_203_a.mp3"
     },
     {
       "cardId": "plsql_204",
@@ -2960,7 +3878,9 @@
         "type": "none",
         "language": "none",
         "value": "The RECORD defines the 'columns' of your in-memory table, while the TABLE OF defines the collection of those records."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_204_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_204_a.mp3"
     },
     {
       "cardId": "plsql_205",
@@ -2977,7 +3897,9 @@
         "type": "none",
         "language": "none",
         "value": "The final deployment is a manual click in the EBS web interface after searching for your service."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_205_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_205_a.mp3"
     },
     {
       "cardId": "plsql_206",
@@ -2994,7 +3916,9 @@
         "type": "none",
         "language": "none",
         "value": "Packages are like libraries for your database code, providing organization, security, and improved performance."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_206_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_206_a.mp3"
     },
     {
       "cardId": "plsql_207",
@@ -3011,7 +3935,9 @@
         "type": "none",
         "language": "none",
         "value": "VARCHAR2 is preferred over CHAR because it only uses the storage needed for the actual string, saving space."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_207_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_207_a.mp3"
     },
     {
       "cardId": "plsql_208",
@@ -3028,7 +3954,9 @@
         "type": "none",
         "language": "none",
         "value": "BINARY_INTEGER and PLS_INTEGER are represented in the machine's native binary format, making arithmetic operations faster than with the NUMBER type."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_208_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_208_a.mp3"
     },
     {
       "cardId": "plsql_209",
@@ -3045,7 +3973,9 @@
         "type": "none",
         "language": "none",
         "value": "Annotations like /*# @rep:scope public */ are instructions that tell ISG how to create the web service, its methods, and its properties."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_209_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_209_a.mp3"
     },
     {
       "cardId": "plsql_210",
@@ -3062,7 +3992,9 @@
         "type": "none",
         "language": "none",
         "value": "The .ildt (Integration Repository Loader Data File) is a structured text file that describes the service, which FNDLOAD then uses to populate repository tables."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_210_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_210_a.mp3"
     },
     {
       "cardId": "plsql_211",
@@ -3079,7 +4011,9 @@
         "type": "none",
         "language": "none",
         "value": "Passing a collection reduces network traffic and simplifies code compared to calling a procedure multiple times for each record."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_211_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_211_a.mp3"
     },
     {
       "cardId": "plsql_212",
@@ -3096,7 +4030,9 @@
         "type": "code",
         "language": "sql",
         "value": "-- The procedure needs to read the initial value and also write the new value back.\nPROCEDURE update_balance(p_balance IN OUT NUMBER, p_transaction_amount IN NUMBER);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_212_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_212_a.mp3"
     },
     {
       "cardId": "plsql_213",
@@ -3113,7 +4049,9 @@
         "type": "code",
         "language": "sql",
         "value": "-- The procedure doesn't need to read an incoming ID, only provide a new one.\nPROCEDURE create_transaction(p_new_id OUT NUMBER);"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_213_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_213_a.mp3"
     },
     {
       "cardId": "plsql_214",
@@ -3130,7 +4068,9 @@
         "type": "none",
         "language": "none",
         "value": "The alias decouples the public endpoint (URL) from the private implementation (package name), allowing for easier maintenance."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_214_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_214_a.mp3"
     },
     {
       "cardId": "plsql_215",
@@ -3147,7 +4087,9 @@
         "type": "code",
         "language": "sql",
         "value": "DECLARE\n  v_employee_record employees%ROWTYPE;\nBEGIN\n  SELECT * INTO v_employee_record FROM employees WHERE employee_id = 100;\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_215_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_215_a.mp3"
     },
     {
       "cardId": "plsql_216",
@@ -3164,7 +4106,9 @@
         "type": "none",
         "language": "none",
         "value": "Application servers cache configurations for performance. Clearing it ensures that the server isn't using an old, outdated version of your service."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_216_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_216_a.mp3"
     },
     {
       "cardId": "plsql_217",
@@ -3181,7 +4125,9 @@
         "type": "code",
         "language": "sql",
         "value": "DECLARE\n  TYPE t_name_list IS TABLE OF VARCHAR2(100) INDEX BY BINARY_INTEGER;\n  v_names t_name_list;\nBEGIN\n  v_names(101) := 'Smith'; -- Accessing element using integer key 101\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_217_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_217_a.mp3"
     },
     {
       "cardId": "plsql_218",
@@ -3198,7 +4144,9 @@
         "type": "none",
         "language": "none",
         "value": "The Specification is the public interface, and the Body contains the private implementation details."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_218_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_218_a.mp3"
     },
     {
       "cardId": "plsql_219",
@@ -3215,7 +4163,9 @@
         "type": "none",
         "language": "none",
         "value": "Passing by reference avoids the performance overhead of creating a full copy of the collection in memory, which is significant for large data sets."
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_219_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_219_a.mp3"
     },
     {
       "cardId": "plsql_220",
@@ -3232,7 +4182,9 @@
         "type": "code",
         "language": "plsql",
         "value": "BEGIN\n  SELECT name INTO v_name FROM users WHERE user_id = 999;\nEXCEPTION\n  WHEN NO_DATA_FOUND THEN\n    dbms_output.put_line('User not found!');\nEND;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_220_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_220_a.mp3"
     },
     {
       "cardId": "plsql_221",
@@ -3249,7 +4201,9 @@
         "type": "code",
         "language": "plsql",
         "value": "IF p_balance < p_amount THEN\n  -- Raise a custom error with code -20001\n  RAISE_APPLICATION_ERROR(-20001, 'Insufficient funds.');\nEND IF;"
-      }
+      },
+      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_221_q.mp3",
+      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_221_a.mp3"
     }
   ]
 }

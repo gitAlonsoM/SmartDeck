@@ -7,14 +7,16 @@ class QuizScreen {
      * @param {function} onAnswer Callback executed when the user selects an answer.
      * @param {function} onNext Callback executed when the user clicks "Next".
      */
-  constructor(container, onAnswer, onNext, onQuizEnd, onIgnore, onMarkForImprovement) {
-        this.container = container;
-        this.onAnswer = onAnswer;
-        this.onNext = onNext;
-        this.onQuizEnd = onQuizEnd;
-        this.onIgnore = onIgnore;
-        this.onMarkForImprovement = onMarkForImprovement; // Store the new callback
-        this.lastSelectedOption = null;
+constructor(container, onAnswer, onNext, onQuizEnd, onIgnore, onMarkForImprovement, onCardAudioStart, onCardAudioEnd) {        this.container = container;
+       this.onAnswer = onAnswer;
+      this.onNext = onNext;
+      this.onQuizEnd = onQuizEnd;
+      this.onIgnore = onIgnore;
+      this.onMarkForImprovement = onMarkForImprovement;
+      this.onCardAudioStart = onCardAudioStart; // Store audio start handler
+      this.onCardAudioEnd = onCardAudioEnd; // Store audio end handler
+      this.currentCard = null; // Store current card data
+      this.lastSelectedOption = null;
         console.log("DEBUG: [QuizScreen] constructor -> Component instantiated.");
     }
 
@@ -31,6 +33,7 @@ class QuizScreen {
 
         const html = await ComponentLoader.loadHTML('/src/components/QuizScreen/QuizScreen.html');
         this.container.innerHTML = html;
+        this.currentCard = question; // Store the full card object
 
         // Populate static elements
         document.getElementById('quiz-progress').textContent = `Question ${currentIndex + 1} of ${totalQuestions}`;
@@ -81,11 +84,15 @@ class QuizScreen {
             this.onIgnore();
         });
 
- document.getElementById('mark-improve-btn').addEventListener('click', (e) => {
-            e.stopPropagation();
-            this.onMarkForImprovement(question.cardId);
-        });
-    }
+document.getElementById('mark-improve-btn').addEventListener('click', (e) => {
+          e.stopPropagation();
+          this.onMarkForImprovement(question.cardId);
+      });
+
+      // --- Audio Logic ---
+      this.setupAudioButtons(); // Setup listeners for audio
+      this.playQuestionAudio(); // Autoplay question audio
+    }
     
     renderContent(content) {
         const container = document.getElementById('content-container');
@@ -136,6 +143,20 @@ class QuizScreen {
             // Highlight the correct answer in green
             if (option === correctAnswer) {
                 button.className += ' !bg-emerald-500 !border-emerald-600 !text-white';
+
+
+                // Add replay button for correct answer audio
+              const replayIcon = document.createElement('i');
+              replayIcon.className = 'fas fa-volume-up ml-4 text-white text-xl cursor-pointer hover:scale-110 transition-transform';
+              replayIcon.title = "Replay answer audio";
+              replayIcon.addEventListener('click', (e) => {
+                  e.stopPropagation(); // Prevent re-triggering answer logic
+                  this.playAnswerAudio();
+              });
+              
+              // Make button a flex container to align text and icon
+              button.classList.add('flex', 'items-center', 'justify-between');
+              button.appendChild(replayIcon);
             } 
             // If the user's selected answer was wrong, highlight it in red
             else if (!isCorrect && option === this.lastSelectedOption) {
@@ -150,5 +171,101 @@ class QuizScreen {
         const [current, total] = progressText.match(/\d+/g).map(Number);
         if (current === total) {
             nextBtn.textContent = 'Finish Quiz';
-        } }
+        } 
+ console.log("VERIFY: [QuizScreen] Answer selected, playing correct answer audio.");
+      this.playAnswerAudio();   
+    
+    }
+
+    /**
+     * Sets up the event listener for the question audio replay button.
+     */
+    setupAudioButtons() {
+        const qAudioBtn = document.getElementById('question-audio-btn');
+        // Ensure all handlers and data are present before showing button
+        if (this.currentCard && this.currentCard.questionAudioSrc && this.onCardAudioStart && this.onCardAudioEnd) {
+            qAudioBtn.classList.remove('hidden'); // Show the button
+            qAudioBtn.onclick = (e) => {
+                e.stopPropagation();
+                this.playQuestionAudio();
+            };
+        } else {
+            qAudioBtn.classList.add('hidden'); // Hide if no audio
+        }
+    }
+
+    /**
+     * Plays the audio for the current question.
+     */
+    playQuestionAudio() {
+        // Check for handlers to prevent errors if not passed correctly
+        if (!this.onCardAudioStart || !this.onCardAudioEnd) {
+            console.warn("DEBUG: [QuizScreen] Audio handlers (onCardAudioStart/onCardAudioEnd) are missing.");
+            return;
+        }
+
+        if (this.currentCard && this.currentCard.questionAudioSrc) {
+            console.log(`DEBUG: [QuizScreen] Playing question audio: ${this.currentCard.questionAudioSrc}`);
+            this.onCardAudioStart();
+            const audio = new Audio(this.currentCard.questionAudioSrc);
+            
+            const cleanup = () => {
+                console.log("DEBUG: [QuizScreen] Question audio playback finished or failed.");
+                this.onCardAudioEnd();
+            };
+            
+            audio.onended = cleanup;
+            audio.onerror = (e) => {
+                console.error("Error playing question audio:", this.currentCard.questionAudioSrc, e);
+                // VERIFY: This log confirms the audio file was not found
+                console.log(`VERIFY: [QuizScreen] Failed to load question audio. Path: ${this.currentCard.questionAudioSrc}`);
+                cleanup();
+            };
+            
+            audio.play().catch(e => {
+                // This catch is important for when the user hasn't interacted with the page yet
+                console.warn("Error starting question audio playback (user interaction may be required):", e);
+                cleanup();
+            });
+        } else {
+            console.log("DEBUG: [QuizScreen] No question audio source found for this card.");
+        }
+    }
+
+    /**
+     * Plays the audio for the correct answer.
+     */
+    playAnswerAudio() {
+        // Check for handlers to prevent errors
+        if (!this.onCardAudioStart || !this.onCardAudioEnd) {
+            console.warn("DEBUG: [QuizScreen] Audio handlers (onCardAudioStart/onCardAudioEnd) are missing.");
+            return;
+        }
+
+        if (this.currentCard && this.currentCard.answerAudioSrc) {
+            console.log(`DEBUG: [QuizScreen] Playing answer audio: ${this.currentCard.answerAudioSrc}`);
+            this.onCardAudioStart();
+            const audio = new Audio(this.currentCard.answerAudioSrc);
+            
+            const cleanup = () => {
+                console.log("DEBUG: [QuizScreen] Answer audio playback finished or failed.");
+                this.onCardAudioEnd();
+            };
+            
+            audio.onended = cleanup;
+            audio.onerror = (e) => {
+                console.error("Error playing answer audio:", this.currentCard.answerAudioSrc, e);
+                // VERIFY: This log confirms the audio file was not found
+                console.log(`VERIFY: [QuizScreen] Failed to load answer audio. Path: ${this.currentCard.answerAudioSrc}`);
+                cleanup();
+            };
+            
+            audio.play().catch(e => {
+                console.error("Error starting answer audio playback:", e);
+                cleanup();
+            });
+        } else {
+            console.log("DEBUG: [QuizScreen] No answer audio source found for this card.");
+        }
+    }
 }

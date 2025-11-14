@@ -386,9 +386,11 @@ class App {
                         () => this.handleQuizNext(),
                         () => this.handleQuizEnd(),
                         () => this.handleIgnoreCurrentCard(),
-                        (cardId) => this.handleMarkCardForImprovement(cardId) // Pass the new handler
-                    ); 
-                }
+                        (cardId) => this.handleMarkCardForImprovement(cardId), // Pass the new handler
+                        () => this.handleCardAudioStart(), // Pass audio start handler
+                        () => this.handleCardAudioEnd() // Pass audio end handler
+                    ); 
+                }
 
                 const currentQuestion = this.state.quizInstance.getCurrentQuestion();
                 if (currentQuestion) {
