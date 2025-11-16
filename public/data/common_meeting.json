@@ -3879,6 +3879,174 @@
         }
       ],
       "note": "This card shows the two main ways to ask:\n\n1. Ask for *specific quantity*: [How much do you have left?] (for uncountables like time/work) or [How many do you have left?] (for countables like tasks/items).\n\n2. Ask for *Yes/No confirmation*: [Do you have a lot left?]\n\n[Do you still have a long way to go?] is a common idiom for large projects or tasks."
-    }
+    },
+    {
+    "cardId": "mi_169",
+    "cardType": "flippable",
+    "sideA": "Esa es la forma en que lo hacen los demás. (For People)",
+    "sideB": [
+        {
+            "text": "That's how everyone else does it.",
+            "audioSrc": "public/data/audio/common_meeting/mi_169_sideB_0.mp3"
+        },
+        {
+            "text": "That's the way everyone else does it.",
+            "audioSrc": "public/data/audio/common_meeting/mi_169_sideB_1.mp3"
+        },
+        {
+            "text": "That's just what everybody else does.",
+            "audioSrc": "public/data/audio/common_meeting/mi_169_sideB_2.mp3"
+        },
+        {
+            "text": "That's the standard way the others do it.",
+            "audioSrc": "public/data/audio/common_meeting/mi_169_sideB_3.mp3"
+        }
+    ],
+    "note": "The phrase 'los demás' translates to [everyone else] or [the others].\n\n[How everyone else does it] is a very common structure.\n\nA common error is a literal translation like ~That is the form that the others do it~. 'Form' is a false friend; the correct word is [way] or [how]."
+},
+{
+    "cardId": "mi_170",
+    "cardType": "flippable",
+    "sideA": "Esa es la manera que usa el resto. / Eso es lo que todos los demas estan usando (For Things)",
+    "sideB": [
+        {
+            "text": "That's what everything else is using.",
+            "audioSrc": "public/data/audio/common_meeting/mi_170_sideB_0.mp3"
+        },
+        {
+            "text": "That's the method all the others use.",
+            "audioSrc": "public/data/audio/common_meeting/mi_170_sideB_1.mp3"
+        },
+        {
+            "text": "It's the standard that the rest [of the software] follows.",
+            "audioSrc": "public/data/audio/common_meeting/mi_170_sideB_2.mp3"
+        },
+        {
+            "text": "That's how the other [programs/tools] do it.",
+            "audioSrc": "public/data/audio/common_meeting/mi_170_sideB_3.mp3"
+        }
+    ],
+    "note": "'El resto' (referring to things) translates to [the rest] or [all the others].\n\nIn a technical context, you can be more specific: [That's the standard the rest follow].\n\n~That's the manner that the rest use~. 'Manner' is too formal; [way], [how], or [method] are more natural."
+},
+{
+    "cardId": "mi_171",
+    "cardType": "flippable",
+    "sideA": "Lo dejamos así simplemente 'por una cosa de tiempo'.",
+    "sideB": [
+        {
+            "text": "We left it like that simply because of time.",
+            "audioSrc": "public/data/audio/common_meeting/mi_171_sideB_0.mp3"
+        },
+        {
+            "text": "We left it as-is just because of a lack of time.",
+            "audioSrc": "public/data/audio/common_meeting/mi_171_sideB_1.mp3"
+        },
+        {
+            "text": "We had to leave it that way due to time constraints.",
+            "audioSrc": "public/data/audio/common_meeting/mi_171_sideB_2.mp3"
+        },
+        {
+            "text": "It was left like that just for time reasons.",
+            "audioSrc": "public/data/audio/common_meeting/mi_171_sideB_3.mp3"
+        }
+    ],
+    "note": "'Por (una) cosa de tiempo' is an idiom. It translates to [because of time], [due to time constraints], or [for time reasons].\n\n[As-is] is a common idiom meaning 'in its current condition' (tal como está).\n\nA literal translation is unnatural: ~We left it like that only for a thing of time~."
+},
+{
+    "cardId": "mi_172",
+    "cardType": "flippable",
+    "sideA": "Estamos cortos de tiempo, lo dejamos así.",
+    "sideB": [
+        {
+            "text": "We were short on time, so we left it like that.",
+            "audioSrc": "public/data/audio/common_meeting/mi_172_sideB_0.mp3"
+        },
+        {
+            "text": "It was just a matter of time, so we left it as-is.",
+            "audioSrc": "public/data/audio/common_meeting/mi_172_sideB_1.mp3"
+        },
+        {
+            "text": "We left it like that for now, just to save time.",
+            "audioSrc": "public/data/audio/common_meeting/mi_172_sideB_2.mp3"
+        },
+        {
+            "text": "Due to time, we left it like that.",
+            "audioSrc": "public/data/audio/common_meeting/mi_172_sideB_3.mp3"
+        }
+    ],
+    "note": "[We were short on time] is a very natural way to express this.\n\n[It was just a matter of time] is another common idiom.\n\n~For time, we left it like that~ is an incorrect literal translation. Use [Due to time] or [Because of time]."
+},
+{
+    "cardId": "mi_173",
+    "cardType": "flippable",
+    "sideA": "Esa función es diferente a la anterior.",
+    "sideB": [
+        {
+            "text": "That function is different from the previous one.",
+            "audioSrc": "public/data/audio/common_meeting/mi_173_sideB_0.mp3"
+        },
+        {
+            "text": "That function is different than the previous one.",
+            "audioSrc": "public/data/audio/common_meeting/mi_173_sideB_1.mp3"
+        },
+        {
+            "text": "This function isn't the same as the previous one.",
+            "audioSrc": "public/data/audio/common_meeting/mi_173_sideB_2.mp3"
+        },
+        {
+            "text": "That function differs from the previous one.",
+            "audioSrc": "public/data/audio/common_meeting/mi_173_sideB_3.mp3"
+        }
+    ],
+    "note": "Both [different from] and [different than] are widely used. 'Different from' is traditionally considered more formal, but 'different than' is very common, especially in American English.\n\nA common error is using the wrong preposition: ~That function is different to the previous one~ (more common in British English, but 'from'/'than' are preferred in AmE/tech) or ~...different at...~."
+},
+{
+    "cardId": "mi_174",
+    "cardType": "flippable",
+    "sideA": "¿Eso que dices es diferente a lo anterior?",
+    "sideB": [
+        {
+            "text": "Is what you're saying different from the last point?",
+            "audioSrc": "public/data/audio/common_meeting/mi_174_sideB_0.mp3"
+        },
+        {
+            "text": "Is that different from what was said before?",
+            "audioSrc": "public/data/audio/common_meeting/mi_174_sideB_1.mp3"
+        },
+        {
+            "text": "Are you saying something different than before?",
+            "audioSrc": "public/data/audio/common_meeting/mi_174_sideB_2.mp3"
+        },
+        {
+            "text": "Is your point different from the previous one?",
+            "audioSrc": "public/data/audio/common_meeting/mi_174_sideB_3.mp3"
+        }
+    ],
+    "note": "'Lo anterior' can refer to 'the last point', 'what was said before', or 'the previous one'.\n\nRemember to use [different from] or [different than].\n\nA common structural error is ~Is that you are saying different...?~. The correct structure is [Is what you're saying different...?]"
+},
+{
+    "cardId": "mi_175",
+    "cardType": "flippable",
+    "sideA": "Yo no toqué eso.",
+    "sideB": [
+        {
+            "text": "I didn't touch that.",
+            "audioSrc": "public/data/audio/common_meeting/mi_175_sideB_0.mp3"
+        },
+        {
+            "text": "I didn't touch it.",
+            "audioSrc": "public/data/audio/common_meeting/mi_175_sideB_1.mp3"
+        },
+        {
+            "text": "It wasn't me who touched that.",
+            "audioSrc": "public/data/audio/common_meeting/mi_175_sideB_2.mp3"
+        },
+        {
+            "text": "I haven't touched that.",
+            "audioSrc": "public/data/audio/common_meeting/mi_175_sideB_3.mp3"
+        }
+    ],
+    "note": "The simple past [I didn't touch that] is the most direct translation.\n\n[It wasn't me who...] is used for strong emphasis or to correct an accusation.\n\n[I haven't touched that] (Present Perfect) can also be used, implying 'I have not touched it at any point leading up to now'.\n\nA common error is using the wrong negative structure: ~I no touched that~ or ~I didn't touched that~ (after 'didn't', use the base verb [touch])."
+}
   ]
 }
