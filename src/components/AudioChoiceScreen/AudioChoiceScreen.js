@@ -173,8 +173,9 @@ revealFeedback() {
                 grammarNoteTitleEl.textContent = '';
             }
         } else {
-            grammarNoteTitleEl.textContent = ''; 
-section
+           grammarNoteTitleEl.textContent = ''; 
+            // VERIFY: Card has no modal ID. Running default feedback.
+            console.log("VERIFY: [AudioChoiceScreen] Card content does not start with a modal ID, proceeding normally.");
         }
 
         let formattedText = contentText.replace(/\[([^\]]+)\]/g, '<strong class="font-semibold text-indigo-400">$1</strong>');

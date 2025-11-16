@@ -1444,6 +1444,406 @@
       "type": "text",
       "value": "The header acts as [the anchor for the entire business process]. The PO_HEADER_ID is what the system tracks for status (e.g., Incomplete, Approved, Closed). It would be impractical to manage the lifecycle of ~each individual line~ separately."
     }
+  },
+  {
+    "cardId": "ebs_073",
+    "category": "Security & Context",
+    "sentenceParts": {
+      "prefix": "The `GET_API_TOKEN` function is the first security check, designed to validate the ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "frontend application itself", "isCorrect": true },
+      { "text": "specific end-user's identity", "isCorrect": false },
+      { "text": "user's responsibility", "isCorrect": false }
+    ],
+    "correctAnswer": "The `GET_API_TOKEN` function is the first security check, designed to validate the frontend application itself.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_073.mp3",
+    "hint": "This step validates the source of the request, not the person making it.",
+    "content": {
+      "type": "text",
+      "value": "This function [validates the application's identity] by checking a pre-defined secret key, often from `FND_LOOKUP_VALUES`.\n\nIt is not used to ~identify the user~ (that is the job of `GET_ICX_USER_ID`) or their ~permissions~."
+    }
+  },
+  {
+    "cardId": "ebs_074",
+    "category": "Security & Context",
+    "sentenceParts": {
+      "prefix": "The `GET_ICX_USER_ID` function answers the 'WHO' question by validating a session token against the ",
+      "suffix": " table."
+    },
+    "options": [
+      { "text": "ICX_SESSIONS", "isCorrect": true },
+      { "text": "FND_USER", "isCorrect": false },
+      { "text": "IBE_MSITES_B", "isCorrect": false }
+    ],
+    "correctAnswer": "The `GET_ICX_USER_ID` function answers the 'WHO' question by validating a session token against the ICX_SESSIONS table.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_074.mp3",
+    "hint": "It links a temporary session to a permanent user account.",
+    "content": {
+      "type": "text",
+      "value": "This function [confirms 'WHO' the user is] by finding a valid session in `ICX_SESSIONS` and returning the `USER_ID`.\n\nWhile the `USER_ID` is the primary key of ~FND_USER~, the session validation itself happens against `ICX_SESSIONS`.\n~IBE_MSITES_B~ is used for the 'WHERE' context."
+    }
+  },
+  {
+    "cardId": "ebs_075",
+    "category": "Security &Context",
+    "sentenceParts": {
+      "prefix": "A function like `GET_ICX_USER_LANG` would be used to retrieve the user's ",
+      "suffix": ", essential for multi-language applications."
+    },
+    "options": [
+      { "text": "language preference", "isCorrect": true },
+      { "text": "security responsibility", "isCorrect": false },
+      { "text": "API token", "isCorrect": false }
+    ],
+    "correctAnswer": "A function like `GET_ICX_USER_LANG` would be used to retrieve the user's language preference, essential for multi-language applications.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_075.mp3",
+    "hint": "This determines whether to show text in English, French, Spanish, etc.",
+    "content": {
+      "type": "text",
+      "value": "This function [retrieves the user's language code] (e.g., 'US' or 'FR') from their session or profile. This allows the application to be rendered in the correct language.\n\nIt does not ~determine security permissions~ or ~validate the application~."
+    }
+  },
+  {
+    "cardId": "ebs_076",
+    "category": "Security & Context",
+    "sentenceParts": {
+      "prefix": "The `GET_ISTORE_RESP_ID` function is critical for answering the 'WHAT' question, as it finds the user's ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "Responsibility ID (RESP_ID)", "isCorrect": true },
+      { "text": "Minisite ID (MSITE_ID)", "isCorrect": false },
+      { "text": "USER_ID", "isCorrect": false }
+    ],
+    "correctAnswer": "The `GET_ISTORE_RESP_ID` function is critical for answering the 'WHAT' question, as it finds the user's Responsibility ID (RESP_ID).",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_076.mp3",
+    "hint": "This concept defines *what* a user is allowed to see and do.",
+    "content": {
+      "type": "text",
+      "value": "This function [determines the user's permissions] by finding their assigned Responsibility. It links FND (`FND_USER_RESP_GROUPS_DIRECT`) and IBE (`IBE_MSITE_RESPS_B`).\n\nIt does not find the ~Minisite ID~ (the 'WHERE'), and it uses the ~USER_ID~ as an input."
+    }
+  },
+  {
+    "cardId": "ebs_077",
+    "category": "Security & Context",
+    "sentenceParts": {
+      "prefix": "To answer the 'WHERE' question, `GET_MINISITE_ID` determines the user's ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "store or province context (MSITE_ID)", "isCorrect": true },
+      { "text": "permissions and menu access (RESP_ID)", "isCorrect": false },
+      { "text": "unique identity (USER_ID)", "isCorrect": false }
+    ],
+    "correctAnswer": "To answer the 'WHERE' question, `GET_MINISITE_ID` determines the user's store or province context (MSITE_ID).",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_077.mp3",
+    "hint": "This tells the system if you are shopping in the 'Quebec' store or the 'Alberta' store.",
+    "content": {
+      "type": "text",
+      "value": "This function [finds the MSITE_ID], which defines the user's operational context or 'store'. This is the 'WHERE' part of the security model.\n\nIt does not define ~permissions~ (that's the Responsibility) or the ~user~ (that's the USER_ID)."
+    }
+  },
+  {
+    "cardId": "ebs_078",
+    "category": "AOL Concepts",
+    "sentenceParts": {
+      "prefix": "A 'Profile Option' in EBS is best described as a ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "flexible configuration setting that can change based on context", "isCorrect": true },
+      { "text": "user's main security role", "isCorrect": false },
+      { "text": "hard-coded value in a PL/SQL package", "isCorrect": false }
+    ],
+    "correctAnswer": "A 'Profile Option' in EBS is best described as a flexible configuration setting that can change based on context.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_078.mp3",
+    "hint": "This is how the same code can behave differently for different users.",
+    "content": {
+      "type": "text",
+      "value": "[Profile Options] are dynamic variables (like 'ORG_ID') that allow administrators to configure system behavior without changing code. Their value can change based on the user or responsibility.\n\nThey are not ~security roles~ (Responsibilities) and are specifically designed to ~avoid hard-coding~ values."
+    }
+  },
+  {
+    "cardId": "ebs_079",
+    "category": "AOL Concepts",
+    "sentenceParts": {
+      "prefix": "The PL/SQL function `FND_PROFILE.VALUE` is the standard, context-aware way to ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "read the value of a Profile Option", "isCorrect": true },
+      { "text": "validate a user's session", "isCorrect": false },
+      { "text": "write data directly to a table", "isCorrect": false }
+    ],
+    "correctAnswer": "The PL/SQL function `FND_PROFILE.VALUE` is the standard, context-aware way to read the value of a Profile Option.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_079.mp3",
+    "hint": "This function gets the *value* of a setting *profile*.",
+    "content": {
+      "type": "text",
+      "value": "This function is the [standard API for reading configuration settings]. For example, `FND_PROFILE.VALUE('ORG_ID')` automatically retrieves the correct ORG_ID for the current user's initialized context.\n\nIt is not used to ~validate sessions~ or ~write transaction data~."
+    }
+  },
+  {
+    "cardId": "ebs_080",
+    "category": "AOL Concepts",
+    "sentenceParts": {
+      "prefix": "The 'Golden Pattern', `fnd_global.APPS_INITIALIZE`, must be called in custom scripts to ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "set the user, responsibility, and context for the database session", "isCorrect": true },
+      { "text": "create a new sales order transaction", "isCorrect": false },
+      { "text": "open a new connection to the database", "isCorrect": false }
+    ],
+    "correctAnswer": "The 'Golden Pattern', `fnd_global.APPS_INITIALIZE`, must be called in custom scripts to set the user, responsibility, and context for the database session.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_080.mp3",
+    "hint": "This is the first step in any custom script, *after* connecting.",
+    "content": {
+      "type": "text",
+      "value": "This procedure [initializes the session context] by loading the USER_ID, RESP_ID, etc. Without it, context-aware functions like `FND_PROFILE.VALUE` will fail or return NULL.\n\nIt is a prerequisite for ~running business logic~; it doesn't ~create the transaction~ itself."
+    }
+  },
+  {
+    "cardId": "ebs_081",
+    "category": "Security & Context",
+    "sentenceParts": {
+      "prefix": "The 'WHO, WHAT, WHERE' context model refers to identifying the ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "User (WHO), their Responsibility (WHAT), and their Minisite (WHERE)", "isCorrect": true },
+      { "text": "Supplier (WHO), their Invoice (WHAT), and their Bank (WHERE)", "isCorrect": false },
+      { "text": "User (WHO), their Password (WHAT), and their IP Address (WHERE)", "isCorrect": false }
+    ],
+    "correctAnswer": "The 'WHO, WHAT, WHERE' context model refers to identifying the User (WHO), their Responsibility (WHAT), and their Minisite (WHERE).",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_081.mp3",
+    "hint": "This is the complete set of information needed *before* business logic can run.",
+    "content": {
+      "type": "text",
+      "value": "This model is the foundation of EBS security. [WHO = USER_ID, WHAT = RESPONSIBILITY_ID, WHERE = MSITE_ID].\n\nThis chain of context must be established *before* the system can read profile options and execute business logic. A ~supplier/invoice~ is a transaction, not a session context."
+    }
+  },
+  {
+    "cardId": "ebs_082",
+    "category": "FND Module",
+    "sentenceParts": {
+      "prefix": "The FND (Foundation) module is the 'central nervous system' of EBS, responsible for ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "core components like users, security, and configuration", "isCorrect": true },
+      { "text": "managing sales order fulfillment", "isCorrect": false },
+      { "text": "storing all product definitions", "isCorrect": false }
+    ],
+    "correctAnswer": "The FND (Foundation) module is the 'central nervous system' of EBS, responsible for core components like users, security, and configuration.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_082.mp3",
+    "hint": "Think of the 'Foundation' that all other modules are built on.",
+    "content": {
+      "type": "text",
+      "value": "The [FND module contains all shared components]. This includes user definitions (FND_USER), responsibilities, profile options, and concurrent managers.\n\nIt does not manage ~business transactions~ like sales orders (OE) or ~products~ (MTL)."
+    }
+  },
+  {
+    "cardId": "ebs_083",
+    "category": "FND Module",
+    "sentenceParts": {
+      "prefix": "`FND_USER` stores user accounts, while `FND_LOOKUP_VALUES` stores ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "system-wide lists of values (LOVs) and static keys", "isCorrect": true },
+      { "text": "every user's active session token", "isCorrect": false },
+      { "text": "all product inventory quantities", "isCorrect": false }
+    ],
+    "correctAnswer": "`FND_USER` stores user accounts, while `FND_LOOKUP_VALUES` stores system-wide lists of values (LOVs) and static keys.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_083.mp3",
+    "hint": "One table holds the 'WHO', the other holds pre-defined 'WHATs' (like API tokens).",
+    "content": {
+      "type": "text",
+      "value": "[FND_USER] is the master table for user identity. [FND_LOOKUP_VALUES] is a flexible table for storing simple, pre-defined lists (e.g., 'YES'/'NO', transaction types) or static keys like an API token.\n\n~Session tokens~ are temporary and stored in `ICX_SESSIONS`."
+    }
+  },
+  {
+    "cardId": "ebs_084",
+    "category": "HZ Module",
+    "sentenceParts": {
+      "prefix": "The HZ (Trading Community Architecture) module's purpose is to ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "create a single master record for all 'parties' (customers, suppliers, etc.)", "isCorrect": true },
+      { "text": "manage sales order quotes and shopping carts", "isCorrect": false },
+      { "text": "store web store (minisite) definitions", "isCorrect": false }
+    ],
+    "correctAnswer": "The HZ (Trading Community Architecture) module's purpose is to create a single master record for all 'parties' (customers, suppliers, etc.).",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_084.mp3",
+    "hint": "This module manages the 'who' of business transactions (like 'party').",
+    "content": {
+      "type": "text",
+      "value": "[HZ, or TCA, prevents data duplication]. It creates a central 'party' record first, and then assigns roles like 'customer' or 'supplier' to that party.\n\nIt does not manage ~quotes~ (ASO) or ~web stores~ (IBE)."
+    }
+  },
+  {
+    "cardId": "ebs_085",
+    "category": "HZ Module",
+    "sentenceParts": {
+      "prefix": "In the HZ data model, `HZ_PARTIES` stores the core entity, while `HZ_CUST_ACCOUNTS` stores ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "the entity's role and details as a 'customer'", "isCorrect": true },
+      { "text": "the entity's role as a 'supplier'", "isCorrect": false },
+      { "text": "the entity's web store assignments", "isCorrect": false }
+    ],
+    "correctAnswer": "In the HZ data model, `HZ_PARTIES` stores the core entity, while `HZ_CUST_ACCOUNTS` stores the entity's role and details as a 'customer'.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_085.mp3",
+    "hint": "A single 'party' can have multiple 'customer accounts'.",
+    "content": {
+      "type": "text",
+      "value": "[HZ_PARTIES] is the master record (the 'who'). [HZ_CUST_ACCOUNTS] stores the 'customer' relationship, linking a party to financial profiles and site uses.\n\nThe ~supplier~ role is stored in `AP_SUPPLIERS`, which also links back to `HZ_PARTIES`."
+    }
+  },
+  {
+    "cardId": "ebs_086",
+    "category": "IBE Module",
+    "sentenceParts": {
+      "prefix": "The IBE (iStore) module is the component responsible for ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "managing the web store, including catalogs, sections, and minisites", "isCorrect": true },
+      { "text": "handling the final, booked sales order", "isCorrect": false },
+      { "text": "managing core product definitions and attributes", "isCorrect": false }
+    ],
+    "correctAnswer": "The IBE (iStore) module is the component responsible for managing the web store, including catalogs, sections, and minisites.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_086.mp3",
+    "hint": "This is the 'e-commerce' or 'storefront' module of EBS.",
+    "content": {
+      "type": "text",
+      "value": "[IBE] is the e-commerce storefront. It controls the 'WHERE' (minisites) and what products are displayed in the online catalog.\n\nIt does not manage the ~master product definition~ (that's MTL) or the ~final, booked order~ (that's OE)."
+    }
+  },
+  {
+    "cardId": "ebs_087",
+    "category": "IBE Module",
+    "sentenceParts": {
+      "prefix": "In iStore, `IBE_MSITES_B` defines the store, while `IBE_DSP_SECTION_ITEMS` defines ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "which items (products) appear in which catalog sections", "isCorrect": true },
+      { "text": "the user's active shopping cart", "isCorrect": false },
+      { "text": "the user's security permissions", "isCorrect": false }
+    ],
+    "correctAnswer": "In iStore, `IBE_MSITES_B` defines the store, while `IBE_DSP_SECTION_ITEMS` defines which items (products) appear in which catalog sections.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_087.mp3",
+    "hint": "One table is the 'store', the other is the 'display shelf'.",
+    "content": {
+      "type": "text",
+      "value": "[IBE_MSITES_B] is the master table for minisites ('WHERE'). [IBE_DSP_SECTION_ITEMS] is the relationship table that maps products from inventory to the web catalog sections for display.\n\nThe ~shopping cart~ is in the ASO module."
+    }
+  },
+  {
+    "cardId": "ebs_088",
+    "category": "MTL Module",
+    "sentenceParts": {
+      "prefix": "The MTL (Inventory) module's primary purpose is to ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "be the single source of truth for all item definitions and stock levels", "isCorrect": true },
+      { "text": "manage customer master definitions", "isCorrect": false },
+      { "text": "process sales order pricing logic", "isCorrect": false }
+    ],
+    "correctAnswer": "The MTL (Inventory) module's primary purpose is to be the single source of truth for all item definitions and stock levels.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_088.mp3",
+    "hint": "This is the 'product' or 'material' module.",
+    "content": {
+      "type": "text",
+      "value": "The [MTL module defines all physical items] the company buys, sells, or stores. It is the master catalog for the entire enterprise.\n\nIt does not manage ~customers~ (that's HZ) or ~pricing rules~ (that's QP - Advanced Pricing)."
+    }
+  },
+  {
+    "cardId": "ebs_089",
+    "category": "MTL Module",
+    "sentenceParts": {
+      "prefix": "`MTL_SYSTEM_ITEMS_B` is the item master, while `MTL_CROSS_REFERENCES` is used to ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "link internal item numbers to supplier or customer part numbers", "isCorrect": true },
+      { "text": "store the on-hand quantity in a specific warehouse", "isCorrect": false },
+      { "text": "store the item's price list", "isCorrect": false }
+    ],
+    "correctAnswer": "`MTL_SYSTEM_ITEMS_B` is the item master, while `MTL_CROSS_REFERENCES` is used to link internal item numbers to supplier or customer part numbers.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_089.mp3",
+    "hint": "This table 'translates' part numbers between your system and external systems.",
+    "content": {
+      "type": "text",
+      "value": "[MTL_SYSTEM_ITEMS_B] is the item master (e.g., our item '12345'). [MTL_CROSS_REFERENCES] links it to external codes (e.g., Supplier XYZ calls it 'A-99-B').\n\n~On-hand stock~ is in `MTL_ONHAND_QUANTITIES_DETAIL`. ~Pricing~ is in the QP module."
+    }
+  },
+  {
+    "cardId": "ebs_090",
+    "category": "ASO Module",
+    "sentenceParts": {
+      "prefix": "The ASO (Quoting) module is used in iStore to ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "manage the user's active shopping cart", "isCorrect": true },
+      { "text": "book the final, confirmed sales order", "isCorrect": false },
+      { "text": "store the user's web session data", "isCorrect": false }
+    ],
+    "correctAnswer": "The ASO (Quoting) module is used in iStore to manage the user's active shopping cart.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_090.mp3",
+    "hint": "This is the 'shopping basket' or 'quote' *before* it becomes a real order.",
+    "content": {
+      "type": "text",
+      "value": "In iStore, [ASO acts as the shopping cart]. It holds the items the user has selected *before* they check out. It is essentially a 'quote'.\n\nOnce the user confirms the purchase, this quote is converted into a ~final sales order~ in the OE module. ~Session data~ is in ICX."
+    }
+  },
+  {
+    "cardId": "ebs_091",
+    "category": "ASO Module",
+    "sentenceParts": {
+      "prefix": "`ASO_QUOTE_HEADERS_ALL` stores the cart's summary, while `ASO_QUOTE_LINES_ALL` stores ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "the specific items and quantities in the cart", "isCorrect": true },
+      { "text": "the user's profile options", "isCorrect": false },
+      { "text": "the final order fulfillment status", "isCorrect": false }
+    ],
+    "correctAnswer": "`ASO_QUOTE_HEADERS_ALL` stores the cart's summary, while `ASO_QUOTE_LINES_ALL` stores the specific items and quantities in the cart.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_091.mp3",
+    "hint": "This follows the standard 'header/lines' model, but for the shopping cart.",
+    "content": {
+      "type": "text",
+      "value": "The [ASO tables represent the shopping cart]. The header has one row for the cart itself (who owns it, when it was created). The lines table has one row for ~each specific product~ in that cart.\n\n~Final order status~ is tracked in the OE module."
+    }
+  },
+  {
+    "cardId": "ebs_092",
+    "category": "OE Module",
+    "sentenceParts": {
+      "prefix": "The OE (Order Management) module's purpose is to ",
+      "suffix": "."
+    },
+    "options": [
+      { "text": "manage the entire lifecycle of a sales order after it is booked", "isCorrect": true },
+      { "text": "manage the web store product catalog", "isCorrect": false },
+      { "text": "manage the user's active shopping cart", "isCorrect": false }
+    ],
+    "correctAnswer": "The OE (Order Management) module's purpose is to manage the entire lifecycle of a sales order after it is booked.",
+    "audioSrc": "public/data/audio/ebs_concepts_01/ebs_092.mp3",
+    "hint": "This is the 'final boss' of the sales flow, handling fulfillment and shipping.",
+    "content": {
+      "type": "text",
+      "value": "[OE is the system of record for sales]. After the ASO cart (quote) is confirmed, it becomes a formal OE sales order. This module then handles scheduling, shipping, and interfacing to invoicing.\n\nIt does not manage the ~web catalog~ (that's IBE) or the ~temporary cart~ (that's ASO)."
+    }
   }
   ]
 }
