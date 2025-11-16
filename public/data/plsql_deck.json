@@ -310,25 +310,7 @@
       "questionAudioSrc": "public/data/audio/plsql_deck/plsql_016_q.mp3",
       "answerAudioSrc": "public/data/audio/plsql_deck/plsql_016_a.mp3"
     },
-    {
-      "cardId": "plsql_017",
-      "category": "Custom Types",
-      "hint": "This syntax makes the collection work like an array with numeric keys.",
-      "question": "In `TYPE ... IS TABLE OF ... INDEX BY BINARY_INTEGER;`, what is the purpose of `INDEX BY BINARY_INTEGER`?",
-      "options": [
-        "It creates a database index",
-        "It defines the collection as an associative array",
-        "It limits the table to integer data"
-      ],
-      "correctAnswer": "It defines the collection as an associative array",
-      "content": {
-        "type": "code",
-        "language": "sql",
-        "value": "DECLARE\n  TYPE t_name_list IS TABLE OF VARCHAR2(100) INDEX BY BINARY_INTEGER;\n  l_names t_name_list;\nBEGIN\n  l_names(1) := 'John';\n  l_names(100) := 'Jane';\nEND;"
-      },
-      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_017_q.mp3",
-      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_017_a.mp3"
-    },
+   
     {
       "cardId": "plsql_018",
       "category": "Custom Types",
@@ -557,25 +539,7 @@
       "questionAudioSrc": "public/data/audio/plsql_deck/plsql_029_q.mp3",
       "answerAudioSrc": "public/data/audio/plsql_deck/plsql_029_a.mp3"
     },
-    {
-      "cardId": "plsql_030",
-      "category": "Subprograms",
-      "hint": "Performs an action but does not have to return a value.",
-      "question": "A named PL/SQL block designed to perform an action (like deleting a record) is called a...",
-      "options": [
-        "Function",
-        "Procedure",
-        "Trigger"
-      ],
-      "correctAnswer": "Procedure",
-      "content": {
-        "type": "code",
-        "language": "sql",
-        "value": "PROCEDURE delete_line (p_line_id IN NUMBER)\nIS\nBEGIN\n  DELETE FROM order_lines WHERE line_id = p_line_id;\nEND delete_line;"
-      },
-      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_030_q.mp3",
-      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_030_a.mp3"
-    },
+   
     {
       "cardId": "plsql_031",
       "category": "Subprograms",
@@ -1374,25 +1338,7 @@
       "questionAudioSrc": "public/data/audio/plsql_deck/plsql_072_q.mp3",
       "answerAudioSrc": "public/data/audio/plsql_deck/plsql_072_a.mp3"
     },
-    {
-      "cardId": "plsql_073",
-      "category": "Oracle EBS",
-      "hint": "Configures the session's data visibility to a specific organizational unit in a multi-org environment.",
-      "question": "Which procedure sets the Multi-Org access control for a specific operating unit?",
-      "options": [
-        "SET_ORG_CONTEXT",
-        "APPS_INITIALIZE.SET_ORG",
-        "MO_GLOBAL.SET_POLICY_CONTEXT"
-      ],
-      "correctAnswer": "MO_GLOBAL.SET_POLICY_CONTEXT",
-      "content": {
-        "type": "code",
-        "language": "sql",
-        "value": "mo_global.set_policy_context('S', l_org_id);"
-      },
-      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_073_q.mp3",
-      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_073_a.mp3"
-    },
+   
     {
       "cardId": "plsql_074",
       "category": "Set Operators",
@@ -1431,25 +1377,7 @@
       "questionAudioSrc": "public/data/audio/plsql_deck/plsql_075_q.mp3",
       "answerAudioSrc": "public/data/audio/plsql_deck/plsql_075_a.mp3"
     },
-    {
-      "cardId": "plsql_076",
-      "category": "Set Operators",
-      "hint": "Returns only the rows that are present in both query result sets.",
-      "question": "Which set operator is used to find the common rows between two result sets?",
-      "options": [
-        "MINUS",
-        "INTERSECT",
-        "COMMON"
-      ],
-      "correctAnswer": "INTERSECT",
-      "content": {
-        "type": "code",
-        "language": "sql",
-        "value": "SELECT student_id FROM math_club\nINTERSECT\nSELECT student_id FROM science_club;"
-      },
-      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_076_q.mp3",
-      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_076_a.mp3"
-    },
+   
     {
       "cardId": "plsql_077",
       "category": "Set Operators",
@@ -1678,25 +1606,7 @@
       "questionAudioSrc": "public/data/audio/plsql_deck/plsql_088_q.mp3",
       "answerAudioSrc": "public/data/audio/plsql_deck/plsql_088_a.mp3"
     },
-    {
-      "cardId": "plsql_089",
-      "category": "Advanced Data Types",
-      "hint": "A type of collection that is unbounded and must be initialized before use.",
-      "question": "Which collection type is an unbounded list of elements of the same type, defined at the schema level?",
-      "options": [
-        "Associative Array",
-        "Nested Table",
-        "Varray"
-      ],
-      "correctAnswer": "Nested Table",
-      "content": {
-        "type": "code",
-        "language": "sql",
-        "value": "CREATE TYPE list_of_names AS TABLE OF VARCHAR2(100);"
-      },
-      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_089_q.mp3",
-      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_089_a.mp3"
-    },
+   
     {
       "cardId": "plsql_090",
       "category": "Advanced Data Types",
@@ -1716,44 +1626,7 @@
       "questionAudioSrc": "public/data/audio/plsql_deck/plsql_090_q.mp3",
       "answerAudioSrc": "public/data/audio/plsql_deck/plsql_090_a.mp3"
     },
-    {
-      "cardId": "plsql_091",
-      "category": "Analytic Functions",
-      "hint": "This analytic function assigns a unique, sequential integer to each row in a partition.",
-      "question": "Which function would you use to number rows 1, 2, 3, ... within each department, ordered by salary?",
-      "options": [
-        "RANK()",
-        "ROW_NUMBER()",
-        "COUNT()"
-      ],
-      "correctAnswer": "ROW_NUMBER()",
-      "content": {
-        "type": "code",
-        "language": "sql",
-        "value": "SELECT last_name, ROW_NUMBER() OVER (PARTITION BY department_id ORDER BY salary DESC) as rn FROM employees;"
-      },
-      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_091_q.mp3",
-      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_091_a.mp3"
-    },
-    {
-      "cardId": "plsql_092",
-      "category": "Analytic Functions",
-      "hint": "This analytic function assigns a rank to each row, with gaps in the ranking for ties.",
-      "question": "If two employees have the same salary, which function will give them the same rank and cause a gap in the sequence (e.g., 1, 2, 2, 4)?",
-      "options": [
-        "ROW_NUMBER()",
-        "DENSE_RANK()",
-        "RANK()"
-      ],
-      "correctAnswer": "RANK()",
-      "content": {
-        "type": "code",
-        "language": "sql",
-        "value": "SELECT last_name, RANK() OVER (ORDER BY salary DESC) as rank_val FROM employees;"
-      },
-      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_092_q.mp3",
-      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_092_a.mp3"
-    },
+    
     {
       "cardId": "plsql_093",
       "category": "Analytic Functions",
@@ -1773,63 +1646,8 @@
       "questionAudioSrc": "public/data/audio/plsql_deck/plsql_093_q.mp3",
       "answerAudioSrc": "public/data/audio/plsql_deck/plsql_093_a.mp3"
     },
-    {
-      "cardId": "plsql_094",
-      "category": "Analytic Functions",
-      "hint": "Allows you to access data from a previous row in the result set without a self-join.",
-      "question": "Which analytic function lets you access the value of the 'previous' row?",
-      "options": [
-        "PREVIOUS()",
-        "PRIOR()",
-        "LAG()"
-      ],
-      "correctAnswer": "LAG()",
-      "content": {
-        "type": "code",
-        "language": "sql",
-        "value": "SELECT last_name, hire_date, LAG(hire_date, 1) OVER (ORDER BY hire_date) as prev_hire_date FROM employees;"
-      },
-      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_094_q.mp3",
-      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_094_a.mp3"
-    },
-    {
-      "cardId": "plsql_095",
-      "category": "Object-Oriented PL/SQL",
-      "hint": "The fundamental building block for object-oriented programming in Oracle.",
-      "question": "What is the PL/SQL equivalent of a 'class' in other languages, used to define object blueprints?",
-      "options": [
-        "PACKAGE",
-        "OBJECT TYPE",
-        "RECORD TYPE"
-      ],
-      "correctAnswer": "OBJECT TYPE",
-      "content": {
-        "type": "code",
-        "language": "sql",
-        "value": "CREATE TYPE Person_obj AS OBJECT (\n  idno  NUMBER,\n  name  VARCHAR2(30),\n  MEMBER FUNCTION display RETURN VARCHAR2\n);"
-      },
-      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_095_q.mp3",
-      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_095_a.mp3"
-    },
-    {
-      "cardId": "plsql_096",
-      "category": "Object-Oriented PL/SQL",
-      "hint": "The implementation code for the methods of an object type.",
-      "question": "Where do you define the code for the methods of an `OBJECT TYPE`?",
-      "options": [
-        "In a Package",
-        "In an Object Type Body",
-        "In a Trigger"
-      ],
-      "correctAnswer": "In an Object Type Body",
-      "content": {
-        "type": "code",
-        "language": "sql",
-        "value": "CREATE TYPE BODY Person_obj IS\n  MEMBER FUNCTION display RETURN VARCHAR2 IS\n  BEGIN\n    RETURN 'ID: ' || self.idno;\n  END;\nEND;"
-      },
-      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_096_q.mp3",
-      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_096_a.mp3"
-    },
+    
+  
     {
       "cardId": "plsql_097",
       "category": "Object-Oriented PL/SQL",
@@ -2096,25 +1914,7 @@
       "questionAudioSrc": "public/data/audio/plsql_deck/plsql_110_q.mp3",
       "answerAudioSrc": "public/data/audio/plsql_deck/plsql_110_a.mp3"
     },
-    {
-      "cardId": "plsql_111",
-      "category": "ISG Deployment",
-      "hint": "The first step in deployment, where a tool reads the package specification file.",
-      "question": "What is the main function of the `irep_parser.pl` tool?",
-      "options": [
-        "It deploys the service to the web server",
-        "It compiles the package body",
-        "It scans for annotations and generates a metadata file (.ildt)"
-      ],
-      "correctAnswer": "It scans for annotations and generates a metadata file (.ildt)",
-      "content": {
-        "type": "none",
-        "language": "none",
-        "value": ""
-      },
-      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_111_q.mp3",
-      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_111_a.mp3"
-    },
+
     {
       "cardId": "plsql_112",
       "category": "ISG Deployment",
@@ -2799,25 +2599,7 @@
       "questionAudioSrc": "public/data/audio/plsql_deck/plsql_147_q.mp3",
       "answerAudioSrc": "public/data/audio/plsql_deck/plsql_147_a.mp3"
     },
-    {
-      "cardId": "plsql_148",
-      "category": "SQL CRUD",
-      "hint": "This is the 'C' (Create) in CRUD.",
-      "question": "A POST request to `/api/products` typically triggers which SQL command?",
-      "options": [
-        "UPDATE",
-        "INSERT",
-        "SELECT"
-      ],
-      "correctAnswer": "INSERT",
-      "content": {
-        "type": "code",
-        "language": "sql",
-        "value": "INSERT INTO products (name, price, stock)\nVALUES ('New Gadget', 99.99, 150);"
-      },
-      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_148_q.mp3",
-      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_148_a.mp3"
-    },
+    
     {
       "cardId": "plsql_149",
       "category": "SQL CRUD",
@@ -2837,63 +2619,8 @@
       "questionAudioSrc": "public/data/audio/plsql_deck/plsql_149_q.mp3",
       "answerAudioSrc": "public/data/audio/plsql_deck/plsql_149_a.mp3"
     },
-    {
-      "cardId": "plsql_150",
-      "category": "SQL CRUD",
-      "hint": "This is the 'U' (Update) in CRUD.",
-      "question": "A PATCH request to `/api/products/42` with a new price triggers which SQL command?",
-      "options": [
-        "MODIFY",
-        "CHANGE",
-        "UPDATE"
-      ],
-      "correctAnswer": "UPDATE",
-      "content": {
-        "type": "code",
-        "language": "sql",
-        "value": "UPDATE products\nSET price = 89.99\nWHERE product_id = 42;"
-      },
-      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_150_q.mp3",
-      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_150_a.mp3"
-    },
-    {
-      "cardId": "plsql_151",
-      "category": "SQL CRUD",
-      "hint": "This is the 'D' (Delete) in CRUD.",
-      "question": "A DELETE request to `/api/products/42` results in which SQL command?",
-      "options": [
-        "DROP",
-        "ERASE",
-        "DELETE"
-      ],
-      "correctAnswer": "DELETE",
-      "content": {
-        "type": "code",
-        "language": "sql",
-        "value": "DELETE FROM products\nWHERE product_id = 42;"
-      },
-      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_151_q.mp3",
-      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_151_a.mp3"
-    },
-    {
-      "cardId": "plsql_152",
-      "category": "SQL Joins",
-      "hint": "This is the most common type of join, returning only rows that have a match in both tables.",
-      "question": "To get a list of users and the names of the departments they belong to, you'd use an (...).",
-      "options": [
-        "OUTER JOIN",
-        "INNER JOIN",
-        "CROSS JOIN"
-      ],
-      "correctAnswer": "INNER JOIN",
-      "content": {
-        "type": "code",
-        "language": "sql",
-        "value": "SELECT u.user_name, d.department_name\nFROM users u\nINNER JOIN departments d ON u.department_id = d.department_id;"
-      },
-      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_152_q.mp3",
-      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_152_a.mp3"
-    },
+   
+   
     {
       "cardId": "plsql_153",
       "category": "SQL Joins",
@@ -3008,44 +2735,7 @@
       "questionAudioSrc": "public/data/audio/plsql_deck/plsql_158_q.mp3",
       "answerAudioSrc": "public/data/audio/plsql_deck/plsql_158_a.mp3"
     },
-    {
-      "cardId": "plsql_159",
-      "category": "SQL Transactions",
-      "hint": "This property ensures that a transaction brings the database from one valid state to another.",
-      "question": "The 'C' in ACID properties stands for (...), ensuring all database rules and constraints are maintained.",
-      "options": [
-        "Concurrency",
-        "Correctness",
-        "Consistency"
-      ],
-      "correctAnswer": "Consistency",
-      "content": {
-        "type": "code",
-        "language": "sql",
-        "value": "-- Consistency Example: A UNIQUE constraint on email.\n-- An INSERT that violates this rule will fail, ensuring the\n-- database remains in a consistent (valid) state.\nINSERT INTO users (email) VALUES ('duplicate@example.com'); -- This would fail."
-      },
-      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_159_q.mp3",
-      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_159_a.mp3"
-    },
-    {
-      "cardId": "plsql_160",
-      "category": "SQL Transactions",
-      "hint": "This property ensures that concurrent transactions do not interfere with each other.",
-      "question": "The 'I' in ACID stands for (...), making transactions appear as if they are running sequentially.",
-      "options": [
-        "Integrity",
-        "Isolation",
-        "Immutability"
-      ],
-      "correctAnswer": "Isolation",
-      "content": {
-        "type": "code",
-        "language": "sql",
-        "value": "-- Isolation Example:\n-- Transaction 1 sees balance=500. Transaction 2 sees balance=500.\n-- T1 subtracts 100. T2 will still see 500 until T1 commits.\n-- This prevents 'dirty reads'."
-      },
-      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_160_q.mp3",
-      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_160_a.mp3"
-    },
+  
     {
       "cardId": "plsql_161",
       "category": "SQL Transactions",
@@ -3103,44 +2793,7 @@
       "questionAudioSrc": "public/data/audio/plsql_deck/plsql_163_q.mp3",
       "answerAudioSrc": "public/data/audio/plsql_deck/plsql_163_a.mp3"
     },
-    {
-      "cardId": "plsql_164",
-      "category": "Database Design",
-      "hint": "This is a special column that uniquely identifies each record in a table.",
-      "question": "The `user_id` column, which has a unique value for every user, is the table's (...).",
-      "options": [
-        "Index Key",
-        "Foreign Key",
-        "Primary Key"
-      ],
-      "correctAnswer": "Primary Key",
-      "content": {
-        "type": "code",
-        "language": "sql",
-        "value": "CREATE TABLE users (\n  user_id NUMBER GENERATED AS IDENTITY,\n  email VARCHAR2(100 CHAR) NOT NULL UNIQUE,\n  CONSTRAINT users_pk PRIMARY KEY (user_id)\n);"
-      },
-      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_164_q.mp3",
-      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_164_a.mp3"
-    },
-    {
-      "cardId": "plsql_165",
-      "category": "Database Design",
-      "hint": "This column in one table refers to the primary key of another table, creating a link.",
-      "question": "In a `posts` table, a `user_id` column that refers to the `users` table is a (...).",
-      "options": [
-        "Secondary Key",
-        "Foreign Key",
-        "Linked Key"
-      ],
-      "correctAnswer": "Foreign Key",
-      "content": {
-        "type": "code",
-        "language": "sql",
-        "value": "CREATE TABLE posts (\n  post_id NUMBER PRIMARY KEY,\n  author_id NUMBER NOT NULL,\n  title VARCHAR2(200 CHAR),\n  CONSTRAINT posts_fk_author FOREIGN KEY (author_id)\n    REFERENCES users (user_id)\n);"
-      },
-      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_165_q.mp3",
-      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_165_a.mp3"
-    },
+   
     {
       "cardId": "plsql_166",
       "category": "Database Design",
@@ -3464,25 +3117,7 @@
       "questionAudioSrc": "public/data/audio/plsql_deck/plsql_182_q.mp3",
       "answerAudioSrc": "public/data/audio/plsql_deck/plsql_182_a.mp3"
     },
-    {
-      "cardId": "plsql_183",
-      "category": "ISG Deployment: Metadata Generation",
-      "hint": "This command-line script reads your annotated package file and generates a metadata file.",
-      "question": "What is the name of the Oracle Perl script used to parse the annotated PL/SQL file for ISG?",
-      "options": [
-        "fnd_parser.pl",
-        "isg_compiler.pl",
-        "irep_parser.pl"
-      ],
-      "correctAnswer": "irep_parser.pl",
-      "content": {
-        "type": "code",
-        "language": "bash",
-        "value": "$ perl $FND_TOP/bin/irep_parser.pl -g -v -username=APPS apps.pls"
-      },
-      "questionAudioSrc": "public/data/audio/plsql_deck/plsql_183_q.mp3",
-      "answerAudioSrc": "public/data/audio/plsql_deck/plsql_183_a.mp3"
-    },
+  
     {
       "cardId": "plsql_184",
       "category": "ISG Deployment: Metadata Generation",
