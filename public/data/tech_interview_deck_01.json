@@ -1,7 +1,7 @@
 {
   "id": "tech_interview_deck_01",
-  "name": "Technical Interview - Incident Mgmt",
-  "description": "Key phrases for handling incident management interviews, focusing on client containment, prioritization, and cross-regional communication (Japan/Korea/USA).",
+  "name": "Technical Interview",
+  "description": "Key phrases for handling incident management interviews, focusing on client containment, prioritization, and cross-regional communication.",
   "deckType": "flippable",
   "cards": [
     {
@@ -663,6 +663,226 @@
         }
       ],
       "note": "[Medium priority] is the standard classification between Low and High.\n\nUse [Since] or [Because] to link the cause (functional glitch) to the effect (priority)."
+    },
+    {
+      "cardId": "ti_034",
+      "cardType": "flippable",
+      "sideA": "El flujo de usuario que desencadena el problema.",
+      "sideB": [
+        {
+          "text": "The user flow that triggers the issue.",
+          "audioSrc": "public/data/audio/tech_interview/ti_034_sideB_0.mp3"
+        },
+        {
+          "text": "The user journey that causes the problem.",
+          "audioSrc": "public/data/audio/tech_interview/ti_034_sideB_1.mp3"
+        },
+        {
+          "text": "The sequence of actions that sets off the bug.",
+          "audioSrc": "public/data/audio/tech_interview/ti_034_sideB_2.mp3"
+        }
+      ],
+      "note": "[User flow] or [User journey] are standard terms for the path a user takes in the application.\n\n[Triggers] is the specific technical verb for causing a piece of code or event to run. ~The flow that starts the problem~ is less precise."
+    },
+    {
+      "cardId": "ti_035",
+      "cardType": "flippable",
+      "sideA": "Necesito saber el exacto flujo del usuario para desencadenar el problema.",
+      "sideB": [
+        {
+          "text": "I need to know the exact user flow to trigger the issue.",
+          "audioSrc": "public/data/audio/tech_interview/ti_035_sideB_0.mp3"
+        },
+        {
+          "text": "I need to understand the precise steps the user took to cause the problem.",
+          "audioSrc": "public/data/audio/tech_interview/ti_035_sideB_1.mp3"
+        },
+        {
+          "text": "I require the exact user path that sets off the error.",
+          "audioSrc": "public/data/audio/tech_interview/ti_035_sideB_2.mp3"
+        }
+      ],
+      "note": "Use [Exact] or [Precise] to emphasize the need for detail in debugging.\n\nStructure: [To trigger the issue] indicates the purpose/result of the flow."
+    },
+    {
+      "cardId": "ti_036",
+      "cardType": "flippable",
+      "sideA": "Necesito saber cómo reproducir o desencadenar el problema.",
+      "sideB": [
+        {
+          "text": "I need to know how to reproduce or trigger the issue.",
+          "audioSrc": "public/data/audio/tech_interview/ti_036_sideB_0.mp3"
+        },
+        {
+          "text": "I need to figure out how to replicate or set off the problem.",
+          "audioSrc": "public/data/audio/tech_interview/ti_036_sideB_1.mp3"
+        },
+        {
+          "text": "I must know how to recreate or trigger the bug.",
+          "audioSrc": "public/data/audio/tech_interview/ti_036_sideB_2.mp3"
+        }
+      ],
+      "note": "[Reproduce] and [Replicate] are the most common verbs in QA to describe copying the error conditions.\n\n[Set off] is a good phrasal verb synonym for [Trigger]."
+    },
+    {
+      "cardId": "ti_037",
+      "cardType": "flippable",
+      "sideA": "Entiendo que en este rol debo ser muy proactivo.",
+      "sideB": [
+        {
+          "text": "I understand that I must be quite proactive in this role.",
+          "audioSrc": "public/data/audio/tech_interview/ti_037_sideB_0.mp3"
+        },
+        {
+          "text": "I realize that I need to be very proactive in this position.",
+          "audioSrc": "public/data/audio/tech_interview/ti_037_sideB_1.mp3"
+        },
+        {
+          "text": "I understand that high proactivity is required in this role.",
+          "audioSrc": "public/data/audio/tech_interview/ti_037_sideB_2.mp3"
+        }
+      ],
+      "note": "[Quite] usually means 'very' or 'considerably' in this context.\n\n[Proactive] (taking initiative) is a key soft skill keyword for senior roles."
+    },
+    {
+      "cardId": "ti_038",
+      "cardType": "flippable",
+      "sideA": "Mientras tanto, empiezo a replicar los pasos exactos en mi propia máquina.",
+      "sideB": [
+        {
+          "text": "So, meanwhile I start replicating the exact steps on my own machine.",
+          "audioSrc": "public/data/audio/tech_interview/ti_038_sideB_0.mp3"
+        },
+        {
+          "text": "In the meantime, I'll begin reproducing the exact steps on my local machine.",
+          "audioSrc": "public/data/audio/tech_interview/ti_038_sideB_1.mp3"
+        },
+        {
+          "text": "Meanwhile, I am starting to replicate the specific steps on my computer.",
+          "audioSrc": "public/data/audio/tech_interview/ti_038_sideB_2.mp3"
+        }
+      ],
+      "note": "[Meanwhile] or [In the meantime] connects two simultaneous actions (the user talking/waiting and you testing).\n\n[Local machine] or [My own machine] refers to your development environment."
+    },
+    {
+      "cardId": "ti_039",
+      "cardType": "flippable",
+      "sideA": "Hola, gracias, lo estoy comprobando/revisando ahora mismo.",
+      "sideB": [
+        {
+          "text": "Hi, thanks—checking right now.",
+          "audioSrc": "public/data/audio/tech_interview/ti_039_sideB_0.mp3"
+        },
+        {
+          "text": "Hello, thanks. I'm looking into it right now.",
+          "audioSrc": "public/data/audio/tech_interview/ti_039_sideB_1.mp3"
+        },
+        {
+          "text": "Hi, thank you. I am checking on that immediately.",
+          "audioSrc": "public/data/audio/tech_interview/ti_039_sideB_2.mp3"
+        }
+      ],
+      "note": "[Looking into it] is a professional phrasal verb meaning to investigate.\n\nIn chat contexts (Teams/Slack), omitting the subject [I am] (e.g., 'Checking right now') is acceptable and common."
+    },
+    {
+      "cardId": "ti_040",
+      "cardType": "flippable",
+      "sideA": "¿Puedes compartir tu flujo de usuario?",
+      "sideB": [
+        {
+          "text": "Can you share your user flow?",
+          "audioSrc": "public/data/audio/tech_interview/ti_040_sideB_0.mp3"
+        },
+        {
+          "text": "Could you please share the user flow you followed?",
+          "audioSrc": "public/data/audio/tech_interview/ti_040_sideB_1.mp3"
+        },
+        {
+          "text": "Would you mind sharing your user path?",
+          "audioSrc": "public/data/audio/tech_interview/ti_040_sideB_2.mp3"
+        }
+      ],
+      "note": "[Could you] or [Would you mind] makes the request more polite than just 'Can you'.\n\n[User flow] is the standard term for the sequence of steps."
+    },
+    {
+      "cardId": "ti_041",
+      "cardType": "flippable",
+      "sideA": "¿Puedes describir exactamente lo que hiciste?",
+      "sideB": [
+        {
+          "text": "Can you describe exactly what you did?",
+          "audioSrc": "public/data/audio/tech_interview/ti_041_sideB_0.mp3"
+        },
+        {
+          "text": "Could you explain the exact actions you took?",
+          "audioSrc": "public/data/audio/tech_interview/ti_041_sideB_1.mp3"
+        },
+        {
+          "text": "Can you detail precisely what you did?",
+          "audioSrc": "public/data/audio/tech_interview/ti_041_sideB_2.mp3"
+        }
+      ],
+      "note": "[Actions you took] is a formal way to say 'what you did'.\n\n~Can you describe me~ is incorrect. You describe [something] TO [someone], or just describe [something]."
+    },
+    {
+      "cardId": "ti_042",
+      "cardType": "flippable",
+      "sideA": "Lo intentaré ahora mismo y veré si obtengo el mismo problema/error.",
+      "sideB": [
+        {
+          "text": "I'll try it right now and see if I get the same issue.",
+          "audioSrc": "public/data/audio/tech_interview/ti_042_sideB_0.mp3"
+        },
+        {
+          "text": "I'm going to attempt it immediately to see if I encounter the same error.",
+          "audioSrc": "public/data/audio/tech_interview/ti_042_sideB_1.mp3"
+        },
+        {
+          "text": "I will try that now and check if I face the same problem.",
+          "audioSrc": "public/data/audio/tech_interview/ti_042_sideB_2.mp3"
+        }
+      ],
+      "note": "[Encounter an error] or [Face a problem] are good alternatives to 'get'.\n\n[I'll try it] (Future with Will) is used for decisions made at the moment of speaking."
+    },
+    {
+      "cardId": "ti_043",
+      "cardType": "flippable",
+      "sideA": "¿Puedes darme exactamente los pasos que hiciste para llegar ahí?",
+      "sideB": [
+        {
+          "text": "Can you give me the exact steps you took to get there?",
+          "audioSrc": "public/data/audio/tech_interview/ti_043_sideB_0.mp3"
+        },
+        {
+          "text": "Could you provide the specific steps you followed to reach that point?",
+          "audioSrc": "public/data/audio/tech_interview/ti_043_sideB_1.mp3"
+        },
+        {
+          "text": "Can you tell me the exact steps you took to arrive at that state?",
+          "audioSrc": "public/data/audio/tech_interview/ti_043_sideB_2.mp3"
+        }
+      ],
+      "note": "[Steps you took] is the colocation for 'pasos que hiciste'. ~Steps you made~ is unnatural.\n\n[To get there] refers to arriving at the error state."
+    },
+    {
+      "cardId": "ti_044",
+      "cardType": "flippable",
+      "sideA": "Estoy siguiendo los pasos justo ahora.",
+      "sideB": [
+        {
+          "text": "I'm following along right now.",
+          "audioSrc": "public/data/audio/tech_interview/ti_044_sideB_0.mp3"
+        },
+        {
+          "text": "I'm following the steps right now.",
+          "audioSrc": "public/data/audio/tech_interview/ti_044_sideB_1.mp3"
+        },
+        {
+          "text": "I am going through the steps at this very moment.",
+          "audioSrc": "public/data/audio/tech_interview/ti_044_sideB_2.mp3"
+        }
+      ],
+      "note": "[Following along] implies you are doing the action in parallel with the description or the other person.\n\n[Going through the steps] is a common phrasal verb for executing a procedure."
     }
   ]
 }
