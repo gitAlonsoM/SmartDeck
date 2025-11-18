@@ -1,0 +1,668 @@
+{
+  "id": "tech_interview_deck_01",
+  "name": "Technical Interview - Incident Mgmt",
+  "description": "Key phrases for handling incident management interviews, focusing on client containment, prioritization, and cross-regional communication (Japan/Korea/USA).",
+  "deckType": "flippable",
+  "cards": [
+    {
+      "cardId": "ti_001",
+      "cardType": "flippable",
+      "sideA": "Debo contener al cliente en Japón y Corea.",
+      "sideB": [
+        {
+          "text": "I must manage the client in Japan and Korea.",
+          "audioSrc": "public/data/audio/tech_interview/ti_001_sideB_0.mp3"
+        },
+        {
+          "text": "I need to keep the client in Japan and Korea contained.",
+          "audioSrc": "public/data/audio/tech_interview/ti_001_sideB_1.mp3"
+        },
+        {
+          "text": "My role involves managing expectations for clients in Japan and Korea.",
+          "audioSrc": "public/data/audio/tech_interview/ti_001_sideB_2.mp3"
+        }
+      ],
+      "note": "To [contain] a client in an IT context often means to manage their anxiety or keep a situation under control. [Manage expectations] is also a very professional alternative.\n\n~I must to contain~ is incorrect. Modal verbs like [must] are followed directly by the verb."
+    },
+    {
+      "cardId": "ti_002",
+      "cardType": "flippable",
+      "sideA": "Debo ser el puente entre Japón, Corea y usted en EE. UU.",
+      "sideB": [
+        {
+          "text": "I must be the bridge between Japan, Korea, and you in the USA.",
+          "audioSrc": "public/data/audio/tech_interview/ti_002_sideB_0.mp3"
+        },
+        {
+          "text": "I need to act as the liaison between Japan, Korea, and your team in the US.",
+          "audioSrc": "public/data/audio/tech_interview/ti_002_sideB_1.mp3"
+        },
+        {
+          "text": "My job is to serve as the link between Japan, Korea, and the US side.",
+          "audioSrc": "public/data/audio/tech_interview/ti_002_sideB_2.mp3"
+        }
+      ],
+      "note": "[Liaison] is a high-level professional term for 'puente' or 'enlace' in business communication.\n\nPreposition: [Between] is used when connecting distinct entities (Japan, Korea, and USA)."
+    },
+    {
+      "cardId": "ti_003",
+      "cardType": "flippable",
+      "sideA": "Lo primero es definir la prioridad: baja, media o alta.",
+      "sideB": [
+        {
+          "text": "The first step is to define the priority: low, medium, or high.",
+          "audioSrc": "public/data/audio/tech_interview/ti_003_sideB_0.mp3"
+        },
+        {
+          "text": "First, I need to determine the priority level: low, medium, or high.",
+          "audioSrc": "public/data/audio/tech_interview/ti_003_sideB_1.mp3"
+        },
+        {
+          "text": "The first thing to do is assess the severity and set the priority: low, medium, or high.",
+          "audioSrc": "public/data/audio/tech_interview/ti_003_sideB_2.mp3"
+        }
+      ],
+      "note": "[First step] or [First thing] are natural ways to start a process description.\n\n[Assess the severity] is a strong technical phrase often used before assigning a priority."
+    },
+    {
+      "cardId": "ti_004",
+      "cardType": "flippable",
+      "sideA": "Le pediría al cliente que abra un ticket.",
+      "sideB": [
+        {
+          "text": "I would ask the client to open a ticket.",
+          "audioSrc": "public/data/audio/tech_interview/ti_004_sideB_0.mp3"
+        },
+        {
+          "text": "I'd request the client to submit a support ticket.",
+          "audioSrc": "public/data/audio/tech_interview/ti_004_sideB_1.mp3"
+        },
+        {
+          "text": "I would tell the client to log a ticket for the issue.",
+          "audioSrc": "public/data/audio/tech_interview/ti_004_sideB_2.mp3"
+        }
+      ],
+      "note": "Standard verbs for tickets: [Open], [Submit], [Log], or [Raise].\n\nStructure: [Ask someone TO DO something]. ~Ask that the client opens~ is possible but less common in spoken English."
+    },
+    {
+      "cardId": "ti_005",
+      "cardType": "flippable",
+      "sideA": "Si veo que el problema es grave, le pediría más información.",
+      "sideB": [
+        {
+          "text": "If I see that the problem is serious, I would ask for more information.",
+          "audioSrc": "public/data/audio/tech_interview/ti_005_sideB_0.mp3"
+        },
+        {
+          "text": "If I notice it's a critical issue, I'd request further details.",
+          "audioSrc": "public/data/audio/tech_interview/ti_005_sideB_1.mp3"
+        },
+        {
+          "text": "If the issue appears severe, I would ask for more context.",
+          "audioSrc": "public/data/audio/tech_interview/ti_005_sideB_2.mp3"
+        }
+      ],
+      "note": "Conditionals: [If I see... I would ask] (Mixed conditional often used in interviews to describe hypothetical reactions to real situations).\n\nVocabulary: [Critical] or [Severe] are excellent synonyms for 'grave' in IT."
+    },
+    {
+      "cardId": "ti_006",
+      "cardType": "flippable",
+      "sideA": "Le pediría más información para tener un resumen más completo del problema.",
+      "sideB": [
+        {
+          "text": "I would ask for more information to have a more complete summary of the problem.",
+          "audioSrc": "public/data/audio/tech_interview/ti_006_sideB_0.mp3"
+        },
+        {
+          "text": "I'd request more details to get a full picture of the issue.",
+          "audioSrc": "public/data/audio/tech_interview/ti_006_sideB_1.mp3"
+        },
+        {
+          "text": "I would ask for further info to ensure I have a comprehensive overview of the situation.",
+          "audioSrc": "public/data/audio/tech_interview/ti_006_sideB_2.mp3"
+        }
+      ],
+      "note": "[To get a full picture] is a great idiom for understanding the whole situation.\n\n[Comprehensive overview] sounds very professional in an interview setting."
+    },
+    {
+      "cardId": "ti_007",
+      "cardType": "flippable",
+      "sideA": "Luego le diría al cliente que me contactaré con el DBA o el encargado de redes.",
+      "sideB": [
+        {
+          "text": "Then I would tell the client that I will contact the DBA or the Network manager.",
+          "audioSrc": "public/data/audio/tech_interview/ti_007_sideB_0.mp3"
+        },
+        {
+          "text": "After that, I'd inform the client that I'm reaching out to the DBA or the Network lead.",
+          "audioSrc": "public/data/audio/tech_interview/ti_007_sideB_1.mp3"
+        },
+        {
+          "text": "Then I'd let the client know I'll get in touch with the DBA or the Networking team.",
+          "audioSrc": "public/data/audio/tech_interview/ti_007_sideB_2.mp3"
+        }
+      ],
+      "note": "Phrasal Verb: [Reach out to] or [Get in touch with] are very natural alternatives to [Contact].\n\nStructure: [Tell the client THAT...]. Avoid ~Tell to the client~."
+    },
+    {
+      "cardId": "ti_008",
+      "cardType": "flippable",
+      "sideA": "Tengo que definir el área, por ejemplo, si es de redes o DBA.",
+      "sideB": [
+        {
+          "text": "I have to define the area, for example, if it is Networks or DBA.",
+          "audioSrc": "public/data/audio/tech_interview/ti_008_sideB_0.mp3"
+        },
+        {
+          "text": "I need to identify the domain, for instance, whether it's a Network or Database issue.",
+          "audioSrc": "public/data/audio/tech_interview/ti_008_sideB_1.mp3"
+        },
+        {
+          "text": "I must determine the responsible team, like Networking or the DBA group.",
+          "audioSrc": "public/data/audio/tech_interview/ti_008_sideB_2.mp3"
+        }
+      ],
+      "note": "[Identify the domain] or [Determine the responsible team] shows analytical skills.\n\nDBA stands for [Database Administrator]."
+    },
+    {
+      "cardId": "ti_009",
+      "cardType": "flippable",
+      "sideA": "También puedo verificar si el problema es específico de ellos o es general.",
+      "sideB": [
+        {
+          "text": "I can also verify if the problem is specific to them or if it is general.",
+          "audioSrc": "public/data/audio/tech_interview/ti_009_sideB_0.mp3"
+        },
+        {
+          "text": "I can also check if it's an isolated issue or a widespread one.",
+          "audioSrc": "public/data/audio/tech_interview/ti_009_sideB_1.mp3"
+        },
+        {
+          "text": "I would also investigate whether the issue is local to them or affecting everyone.",
+          "audioSrc": "public/data/audio/tech_interview/ti_009_sideB_2.mp3"
+        }
+      ],
+      "note": "IT Vocabulary: [Isolated] (specific to one user/area) vs. [Widespread] (affecting many).\n\nUse [Check] or [Investigate] as synonyms for verify."
+    },
+    {
+      "cardId": "ti_010",
+      "cardType": "flippable",
+      "sideA": "También puedo verificar si el problema es para Japón o general para todos.",
+      "sideB": [
+        {
+          "text": "I can also verify if the problem is for Japan or general for everyone.",
+          "audioSrc": "public/data/audio/tech_interview/ti_010_sideB_0.mp3"
+        },
+        {
+          "text": "I can also check if the issue is region-specific to Japan or global.",
+          "audioSrc": "public/data/audio/tech_interview/ti_010_sideB_1.mp3"
+        },
+        {
+          "text": "I need to confirm if it's just affecting Japan or if it's a global outage.",
+          "audioSrc": "public/data/audio/tech_interview/ti_010_sideB_2.mp3"
+        }
+      ],
+      "note": "[Region-specific] is a precise technical term.\n\n[Global outage] implies the system is down for everyone."
+    },
+    {
+      "cardId": "ti_011",
+      "cardType": "flippable",
+      "sideA": "Luego de recibir la respuesta del DBA, puedo comunicarme con el cliente.",
+      "sideB": [
+        {
+          "text": "After receiving the response from the DBA, I can communicate with the client.",
+          "audioSrc": "public/data/audio/tech_interview/ti_011_sideB_0.mp3"
+        },
+        {
+          "text": "Once I hear back from the DBA, I can get back to the client.",
+          "audioSrc": "public/data/audio/tech_interview/ti_011_sideB_1.mp3"
+        },
+        {
+          "text": "Upon getting a reply from the DBA, I'll update the client.",
+          "audioSrc": "public/data/audio/tech_interview/ti_011_sideB_2.mp3"
+        }
+      ],
+      "note": "Phrasal Verbs: [Hear back from] (receive a reply) and [Get back to] (respond to someone) are essential for fluent communication.\n\n[Update the client] is more active and professional than just 'communicate'."
+    },
+    {
+      "cardId": "ti_012",
+      "cardType": "flippable",
+      "sideA": "Luego de recibir la respuesta del encargado de redes, puedo darle una respuesta al cliente.",
+      "sideB": [
+        {
+          "text": "After receiving the response from the Network manager, I can give an answer to the client.",
+          "audioSrc": "public/data/audio/tech_interview/ti_012_sideB_0.mp3"
+        },
+        {
+          "text": "Once the Network lead responds, I can provide the client with an update.",
+          "audioSrc": "public/data/audio/tech_interview/ti_012_sideB_1.mp3"
+        },
+        {
+          "text": "After getting the info from the Network team, I can relay the answer to the client.",
+          "audioSrc": "public/data/audio/tech_interview/ti_012_sideB_2.mp3"
+        }
+      ],
+      "note": "[Relay the answer] means to pass information from one person to another.\n\n[Provide an update] is standard customer service language."
+    },
+    {
+      "cardId": "ti_013",
+      "cardType": "flippable",
+      "sideA": "Nuestro principal medio de comunicación será Microsoft Teams.",
+      "sideB": [
+        {
+          "text": "Our main means of communication will be Microsoft Teams.",
+          "audioSrc": "public/data/audio/tech_interview/ti_013_sideB_0.mp3"
+        },
+        {
+          "text": "Our primary communication channel will be Microsoft Teams.",
+          "audioSrc": "public/data/audio/tech_interview/ti_013_sideB_1.mp3"
+        },
+        {
+          "text": "We will primarily use Microsoft Teams to communicate.",
+          "audioSrc": "public/data/audio/tech_interview/ti_013_sideB_2.mp3"
+        }
+      ],
+      "note": "[Primary communication channel] sounds very professional.\n\nUse [Will be] for established future plans."
+    },
+    {
+      "cardId": "ti_014",
+      "cardType": "flippable",
+      "sideA": "Nuestro principal medio de comunicación será por chat o llamadas por Teams.",
+      "sideB": [
+        {
+          "text": "Our main means of communication will be via chat or Teams calls.",
+          "audioSrc": "public/data/audio/tech_interview/ti_014_sideB_0.mp3"
+        },
+        {
+          "text": "We'll communicate mainly through Teams chat or calls.",
+          "audioSrc": "public/data/audio/tech_interview/ti_014_sideB_1.mp3"
+        },
+        {
+          "text": "Our primary contact methods will be Teams chat and calls.",
+          "audioSrc": "public/data/audio/tech_interview/ti_014_sideB_2.mp3"
+        }
+      ],
+      "note": "[Via] is a useful preposition meaning 'by way of' (e.g., via chat, via email).\n\n[Through] is also commonly used (e.g., through Teams)."
+    },
+    {
+      "cardId": "ti_015",
+      "cardType": "flippable",
+      "sideA": "Para ser honesto, no se mas sobre la compañía.",
+      "sideB": [
+        {
+          "text": "To be honest, I don't know much more about the company.",
+          "audioSrc": "public/data/audio/tech_interview/ti_015_sideB_0.mp3"
+        },
+        {
+          "text": "Honestly, I don't know anything else about the company.",
+          "audioSrc": "public/data/audio/tech_interview/ti_015_sideB_1.mp3"
+        },
+        {
+          "text": "To tell you the truth, I don't have any more info on the company.",
+          "audioSrc": "public/data/audio/tech_interview/ti_015_sideB_2.mp3"
+        }
+      ],
+      "note": "[To be honest] and [Honestly] are the standard idioms for 'Para ser honesto/La verdad'.\n\nNote the difference: 'No sé más' usually means [I don't know anything else] or [I don't know much more], not ~I don't know plus~."
+    },
+    {
+      "cardId": "ti_016",
+      "cardType": "flippable",
+      "sideA": "Asi que puedo tomar otro trabajo en la noche facilmente.",
+      "sideB": [
+        {
+          "text": "So I can easily pick up another job at night.",
+          "audioSrc": "public/data/audio/tech_interview/ti_016_sideB_0.mp3"
+        },
+        {
+          "text": "So I can take on another evening job easily.",
+          "audioSrc": "public/data/audio/tech_interview/ti_016_sideB_1.mp3"
+        },
+        {
+          "text": "That means I can easily get another job at night.",
+          "audioSrc": "public/data/audio/tech_interview/ti_016_sideB_2.mp3"
+        }
+      ],
+      "note": "The phrasal verbs [pick up] or [take on] a job are very natural for casual or secondary employment.\n\nAdverbs like [easily] often go before the main verb: [I can easily pick up...]."
+    },
+    {
+      "cardId": "ti_017",
+      "cardType": "flippable",
+      "sideA": "Es esencial que documenten los pasos de Reproducción del defecto.",
+      "sideB": [
+        {
+          "text": "It is essential that they document the Steps to Reproduce the defect.",
+          "audioSrc": "public/data/audio/tech_interview/ti_017_sideB_0.mp3"
+        },
+        {
+          "text": "It's crucial to document the reproduction steps for the bug.",
+          "audioSrc": "public/data/audio/tech_interview/ti_017_sideB_1.mp3"
+        },
+        {
+          "text": "They essentially need to document how to reproduce the defect.",
+          "audioSrc": "public/data/audio/tech_interview/ti_017_sideB_2.mp3"
+        }
+      ],
+      "note": "[Steps to Reproduce] is the standard technical term in QA tickets. ~Steps of reproduction~ is less common.\n\nThe structure [It is essential that they document...] is formal and correct."
+    },
+    {
+      "cardId": "ti_018",
+      "cardType": "flippable",
+      "sideA": "Es necesario que compartan los pasos de Reproducción del defecto.",
+      "sideB": [
+        {
+          "text": "It is necessary that they share the Steps to Reproduce the defect.",
+          "audioSrc": "public/data/audio/tech_interview/ti_018_sideB_0.mp3"
+        },
+        {
+          "text": "It's necessary for them to share the reproduction steps.",
+          "audioSrc": "public/data/audio/tech_interview/ti_018_sideB_1.mp3"
+        },
+        {
+          "text": "They need to share the steps to reproduce the bug.",
+          "audioSrc": "public/data/audio/tech_interview/ti_018_sideB_2.mp3"
+        }
+      ],
+      "note": "You can use the structure [It is necessary for them to share...] or the simpler [They need to share...].\n\nAvoid ~It is necessary that they shares~ (incorrect verb conjugation)."
+    },
+    {
+      "cardId": "ti_019",
+      "cardType": "flippable",
+      "sideA": "Necesito preguntar: \"¿Como reproducir el problema?\"",
+      "sideB": [
+        {
+          "text": "I need to ask: 'How to reproduce the issue?'",
+          "audioSrc": "public/data/audio/tech_interview/ti_019_sideB_0.mp3"
+        },
+        {
+          "text": "I need to ask how to reproduce the problem.",
+          "audioSrc": "public/data/audio/tech_interview/ti_019_sideB_1.mp3"
+        },
+        {
+          "text": "I have to ask: 'How do you reproduce the bug?'",
+          "audioSrc": "public/data/audio/tech_interview/ti_019_sideB_2.mp3"
+        }
+      ],
+      "note": "If asking directly, use the full question structure: [How do you reproduce...?].\n\nIf using the short form (headline style) in a ticket or list, [How to reproduce the issue] is acceptable."
+    },
+    {
+      "cardId": "ti_020",
+      "cardType": "flippable",
+      "sideA": "Es necesario depurar para encontrar la causa raiz del problema.",
+      "sideB": [
+        {
+          "text": "Debugging is necessary to find the root cause of the problem.",
+          "audioSrc": "public/data/audio/tech_interview/ti_020_sideB_0.mp3"
+        },
+        {
+          "text": "We need to debug to find the root cause.",
+          "audioSrc": "public/data/audio/tech_interview/ti_020_sideB_1.mp3"
+        },
+        {
+          "text": "It's necessary to debug to locate the root cause.",
+          "audioSrc": "public/data/audio/tech_interview/ti_020_sideB_2.mp3"
+        }
+      ],
+      "note": "[Root cause] is the specific technical term for 'causa raíz'.\n\n[Debugging] (gerund) acts as the subject. Alternatively, use [We need to debug]."
+    },
+    {
+      "cardId": "ti_021",
+      "cardType": "flippable",
+      "sideA": "No sentía que estaba progresando en ese rol.",
+      "sideB": [
+        {
+          "text": "I didn't feel I was really progressing in that role.",
+          "audioSrc": "public/data/audio/tech_interview/ti_021_sideB_0.mp3"
+        },
+        {
+          "text": "I felt stuck, like the role wasn't letting me grow.",
+          "audioSrc": "public/data/audio/tech_interview/ti_021_sideB_1.mp3"
+        },
+        {
+          "text": "I didn't feel like I was moving forward in that position.",
+          "audioSrc": "public/data/audio/tech_interview/ti_021_sideB_2.mp3"
+        }
+      ],
+      "note": "[Progressing] and [moving forward] are good translations for 'progresando'.\n\n[I felt stuck] (me sentía estancado) is a very common idiom to express the lack of progress."
+    },
+    {
+      "cardId": "ti_022",
+      "cardType": "flippable",
+      "sideA": "Los errores cosméticos—como problemas de espaciado o colores, son de baja prioridad.",
+      "sideB": [
+        {
+          "text": "Cosmetic bugs—like spacing or color issues—are low priority.",
+          "audioSrc": "public/data/audio/tech_interview/ti_022_sideB_0.mp3"
+        },
+        {
+          "text": "Cosmetic errors, such as spacing or colors, are low priority.",
+          "audioSrc": "public/data/audio/tech_interview/ti_022_sideB_1.mp3"
+        },
+        {
+          "text": "Visual bugs like spacing or color problems are considered low priority.",
+          "audioSrc": "public/data/audio/tech_interview/ti_022_sideB_2.mp3"
+        }
+      ],
+      "note": "[Cosmetic bugs] or [Cosmetic issues] refer to things that look wrong but work correctly.\n\n[Low priority] is the standard classification. ~Low importance~ is less technical."
+    },
+    {
+      "cardId": "ti_023",
+      "cardType": "flippable",
+      "sideA": "Un bloqueo de producción—como problemas en el carro, son de alta prioridad.",
+      "sideB": [
+        {
+          "text": "A production blocker—like cart issues—is high priority.",
+          "audioSrc": "public/data/audio/tech_interview/ti_023_sideB_0.mp3"
+        },
+        {
+          "text": "A production blocker, such as an issue with the cart, is a high priority.",
+          "audioSrc": "public/data/audio/tech_interview/ti_023_sideB_1.mp3"
+        },
+        {
+          "text": "Production blockers like cart problems are top priority.",
+          "audioSrc": "public/data/audio/tech_interview/ti_023_sideB_2.mp3"
+        }
+      ],
+      "note": "[Blocker] is a noun in IT meaning a bug that stops testing or usage.\n\n[High priority] or [Top priority] are standard terms."
+    },
+    {
+      "cardId": "ti_024",
+      "cardType": "flippable",
+      "sideA": "Un bloqueo de alta prioridad en producción—se debe escalar inmediatamente.",
+      "sideB": [
+        {
+          "text": "A high priority production blocker must be escalated immediately.",
+          "audioSrc": "public/data/audio/tech_interview/ti_024_sideB_0.mp3"
+        },
+        {
+          "text": "We need to escalate high-priority production blockers immediately.",
+          "audioSrc": "public/data/audio/tech_interview/ti_024_sideB_1.mp3"
+        },
+        {
+          "text": "Any high-priority blocker in production has to be escalated right away.",
+          "audioSrc": "public/data/audio/tech_interview/ti_024_sideB_2.mp3"
+        }
+      ],
+      "note": "[To escalate] means to pass the issue to a higher level of authority or technical support.\n\n[Immediately] or [right away] emphasizes urgency."
+    },
+    {
+      "cardId": "ti_025",
+      "cardType": "flippable",
+      "sideA": "Un error cosmético de UI—se puede agendar y solucionar con más calma.",
+      "sideB": [
+        {
+          "text": "A cosmetic UI error can be scheduled and fixed with less urgency.",
+          "audioSrc": "public/data/audio/tech_interview/ti_025_sideB_0.mp3"
+        },
+        {
+          "text": "We can schedule cosmetic UI bugs to be fixed later.",
+          "audioSrc": "public/data/audio/tech_interview/ti_025_sideB_1.mp3"
+        },
+        {
+          "text": "Cosmetic UI issues can be prioritized for later.",
+          "audioSrc": "public/data/audio/tech_interview/ti_025_sideB_2.mp3"
+        }
+      ],
+      "note": "[To schedule] in this context means to put it in the backlog for a future sprint.\n\n[With less urgency] or [later] translates 'con más calma' in a professional context."
+    },
+    {
+      "cardId": "ti_026",
+      "cardType": "flippable",
+      "sideA": "Debo priorizar si es un error cosmético o un bloqueo de producción.",
+      "sideB": [
+        {
+          "text": "I have to prioritize if it's a cosmetic bug or a production blocker.",
+          "audioSrc": "public/data/audio/tech_interview/ti_026_sideB_0.mp3"
+        },
+        {
+          "text": "I need to determine if it's a cosmetic issue or a blocker.",
+          "audioSrc": "public/data/audio/tech_interview/ti_026_sideB_1.mp3"
+        },
+        {
+          "text": "I must prioritize based on whether it's cosmetic or a production blocker.",
+          "audioSrc": "public/data/audio/tech_interview/ti_026_sideB_2.mp3"
+        }
+      ],
+      "note": "[Prioritize] means to decide the order of importance.\n\nUsing [whether... or...] is slightly more formal and precise than [if... or...], but both are used."
+    },
+    {
+      "cardId": "ti_027",
+      "cardType": "flippable",
+      "sideA": "Si un cliente me dice sobre un error...",
+      "sideB": [
+        {
+          "text": "If a client tells me about an issue...",
+          "audioSrc": "public/data/audio/tech_interview/ti_027_sideB_0.mp3"
+        },
+        {
+          "text": "If a client reports a bug...",
+          "audioSrc": "public/data/audio/tech_interview/ti_027_sideB_1.mp3"
+        },
+        {
+          "text": "If a client lets me know about an error...",
+          "audioSrc": "public/data/audio/tech_interview/ti_027_sideB_2.mp3"
+        }
+      ],
+      "note": "[Reports a bug] is standard industry terminology.\n\n~If a client says me~ is incorrect. You [tell someone] or [say to someone]."
+    },
+    {
+      "cardId": "ti_028",
+      "cardType": "flippable",
+      "sideA": "Si un usuario normal todavía puede hacer lo que necesita, es cosmético.",
+      "sideB": [
+        {
+          "text": "If a normal user can still get what they need done, it's cosmetic.",
+          "audioSrc": "public/data/audio/tech_interview/ti_028_sideB_0.mp3"
+        },
+        {
+          "text": "If a standard user can still perform their tasks, it's a cosmetic issue.",
+          "audioSrc": "public/data/audio/tech_interview/ti_028_sideB_1.mp3"
+        },
+        {
+          "text": "It's cosmetic if a regular user can still do what they need to do.",
+          "audioSrc": "public/data/audio/tech_interview/ti_028_sideB_2.mp3"
+        }
+      ],
+      "note": "[Get what they need done] is a very natural way to express 'hacer lo que necesitan'.\n\n[Standard user] or [Regular user] are good translations for 'usuario normal'."
+    },
+    {
+      "cardId": "ti_029",
+      "cardType": "flippable",
+      "sideA": "Si un usuario normal no puede hacer lo que necesita, es un bloqueo.",
+      "sideB": [
+        {
+          "text": "If a normal user can't get what they need done, it's a blocker.",
+          "audioSrc": "public/data/audio/tech_interview/ti_029_sideB_0.mp3"
+        },
+        {
+          "text": "If a regular user is unable to complete their task, it's a blocker.",
+          "audioSrc": "public/data/audio/tech_interview/ti_029_sideB_1.mp3"
+        },
+        {
+          "text": "It's a blocker if a standard user can't do what they need.",
+          "audioSrc": "public/data/audio/tech_interview/ti_029_sideB_2.mp3"
+        }
+      ],
+      "note": "In this context, [a blocker] acts as a noun (un bloqueo).\n\n~Is a locking~ is unnatural; use [Blocker]."
+    },
+    {
+      "cardId": "ti_030",
+      "cardType": "flippable",
+      "sideA": "Como estaba diciendo, como es solo un error cosmético, necesitamos...",
+      "sideB": [
+        {
+          "text": "As I was saying, since it's just a cosmetic bug, we need to...",
+          "audioSrc": "public/data/audio/tech_interview/ti_030_sideB_0.mp3"
+        },
+        {
+          "text": "As I mentioned, because this is only a cosmetic error, we need to...",
+          "audioSrc": "public/data/audio/tech_interview/ti_030_sideB_1.mp3"
+        },
+        {
+          "text": "Like I said, as it's just cosmetic, we need to...",
+          "audioSrc": "public/data/audio/tech_interview/ti_030_sideB_2.mp3"
+        }
+      ],
+      "note": "[As I was saying] is excellent for resuming a point after an interruption.\n\nAvoid using 'how' for cause. ~How is a cosmetic bug...~ is incorrect. Use [Since], [As], or [Because]."
+    },
+    {
+      "cardId": "ti_031",
+      "cardType": "flippable",
+      "sideA": "Como es un bloqueo en producción, necesitamos...",
+      "sideB": [
+        {
+          "text": "Since it's a production blocker, we need to...",
+          "audioSrc": "public/data/audio/tech_interview/ti_031_sideB_0.mp3"
+        },
+        {
+          "text": "Because it's a production blocker, we need to...",
+          "audioSrc": "public/data/audio/tech_interview/ti_031_sideB_1.mp3"
+        },
+        {
+          "text": "As this is a blocker in production, we must...",
+          "audioSrc": "public/data/audio/tech_interview/ti_031_sideB_2.mp3"
+        }
+      ],
+      "note": "Use [Since] or [Because] to explain the reason.\n\n[In production] refers to the live environment."
+    },
+    {
+      "cardId": "ti_032",
+      "cardType": "flippable",
+      "sideA": "Ese es un fallo funcional—no bloquea a nadie, pero los números no cuadran.",
+      "sideB": [
+        {
+          "text": "That's a functional glitch—it's not blocking anyone, but the numbers are off.",
+          "audioSrc": "public/data/audio/tech_interview/ti_032_sideB_0.mp3"
+        },
+        {
+          "text": "That's a functional bug; it doesn't block users, but the numbers don't add up.",
+          "audioSrc": "public/data/audio/tech_interview/ti_032_sideB_1.mp3"
+        },
+        {
+          "text": "It's a functional issue—nobody is blocked, but the figures are incorrect.",
+          "audioSrc": "public/data/audio/tech_interview/ti_032_sideB_2.mp3"
+        }
+      ],
+      "note": "[Glitch] is often used for minor, transient, or strange errors.\n\n[The numbers are off] is a very common idiom meaning calculations are incorrect.\n\n[Don't add up] also means the math is wrong or the situation doesn't make sense."
+    },
+    {
+      "cardId": "ti_033",
+      "cardType": "flippable",
+      "sideA": "Como es un fallo funcional, es de media prioridad.",
+      "sideB": [
+        {
+          "text": "Since it's a functional glitch, it's medium priority.",
+          "audioSrc": "public/data/audio/tech_interview/ti_033_sideB_0.mp3"
+        },
+        {
+          "text": "Because it's a functional error, it's medium priority.",
+          "audioSrc": "public/data/audio/tech_interview/ti_033_sideB_1.mp3"
+        },
+        {
+          "text": "As it is a functional bug, we'll treat it as medium priority.",
+          "audioSrc": "public/data/audio/tech_interview/ti_033_sideB_2.mp3"
+        }
+      ],
+      "note": "[Medium priority] is the standard classification between Low and High.\n\nUse [Since] or [Because] to link the cause (functional glitch) to the effect (priority)."
+    }
+  ]
+}
