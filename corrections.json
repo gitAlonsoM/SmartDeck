@@ -1,322 +1,443 @@
 [
   {
-    "cardId": "mi_073",
+    "cardId": "ti_015",
     "cardType": "flippable",
-    "sideA": "¿A quién reportó el error el equipo de QA?",
+    "sideA": "Para ser honesto, no se mas sobre la compañía.",
     "sideB": [
       {
-        "text": "Who did the QA team report the bug to?",
-        "audioSrc": "public/data/audio/common_meeting/mi_073_sideB_0.mp3"
+        "text": "To be honest, I don't know much more about the company.",
+        "audioSrc": "public/data/audio/tech_interview/ti_015_sideB_0.mp3"
       },
       {
-        "text": "To whom did the QA team report the error?",
-        "audioSrc": "public/data/audio/common_meeting/mi_073_sideB_1.mp3"
+        "text": "Honestly, I don't know anything else about the company.",
+        "audioSrc": "public/data/audio/tech_interview/ti_015_sideB_1.mp3"
       },
       {
-        "text": "Who did the QA team notify about the bug?",
-        "audioSrc": "public/data/audio/common_meeting/mi_073_sideB_2.mp3"
+        "text": "To tell you the truth, I don't have any more info on the company.",
+        "audioSrc": "public/data/audio/tech_interview/ti_015_sideB_2.mp3"
       }
     ],
-    "note": "**[111]**\n\nThis is an *Object Question*. The subject performing the action is [the QA team]. The question word 'Who' asks about the object—the person who received the report. Because the subject is known, the auxiliary verb [did] is mandatory.\n\n~Who the QA team reported the bug to?~.\n\n~Who was reported by the QA team?~ (This is a valid passive sentence, but it changes the meaning. It asks which person was the *subject* of the report, not who *received* the report. To ask who received it, you must use an active structure like 'Who did the team report to?')\n\n~Who did the QA team report the issue?~ (Incomplete. When asking who received the report, you need the preposition 'to' at the end: 'Who did the QA team report the issue to?'.)\n\nIn this context, 'report' functions like a prepositional verb. When you specify *who* received the report, you must use 'to': You **report** a bug **to** someone."
+    "note": "[To be honest] and [Honestly] are the standard idioms for 'Para ser honesto/La verdad'.\n\nNote the difference: 'No sé más' usually means [I don't know anything else] or [I don't know much more], not ~I don't know plus~.\n\n~To be honest, I don't know more about the company.~ (Incomplete phrasing: Use 'anything else' or 'much more' to express lack of further information.)"
   },
   {
-    "cardId": "mi_129",
+    "cardId": "ti_011",
     "cardType": "flippable",
-    "sideA": "Gracias!, me alegraste el dia con ese comentario.",
+    "sideA": "Luego de recibir la respuesta del DBA, puedo comunicarme con el cliente.",
     "sideB": [
       {
-        "text": "Thanks! That comment really made my day.",
-        "audioSrc": "public/data/audio/common_meeting/mi_129_sideB_0.mp3"
+        "text": "After receiving the response from the DBA, I can communicate with the client.",
+        "audioSrc": "public/data/audio/tech_interview/ti_011_sideB_0.mp3"
       },
       {
-        "text": "Thank you, you just made my day with that comment.",
-        "audioSrc": "public/data/audio/common_meeting/mi_129_sideB_1.mp3"
+        "text": "Once I hear back from the DBA, I can get back to the client.",
+        "audioSrc": "public/data/audio/tech_interview/ti_011_sideB_1.mp3"
       },
       {
-        "text": "Thanks! That comment brightened up my day.",
-        "audioSrc": "public/data/audio/common_meeting/mi_129_sideB_2.mp3"
+        "text": "Upon getting a reply from the DBA, I'll update the client.",
+        "audioSrc": "public/data/audio/tech_interview/ti_011_sideB_2.mp3"
       },
       {
-        "text": "That's so kind of you, you've really made my day.",
-        "audioSrc": "public/data/audio/common_meeting/mi_129_sideB_3.mp3"
-      },
-      {
-        "text": "Thanks, you made my day with that comment.",
-        "audioSrc": "public/data/audio/common_meeting/mi_129_sideB_4.mp3"
+        "text": "After receiving the answer from the DBA, I can communicate with the client.",
+        "audioSrc": "public/data/audio/tech_interview/ti_011_sideB_3.mp3"
       }
     ],
-    "note": "The most common and natural idiom is [to make my day].\n\nA good synonym is [to brighten up my day].\n\nA common error is a literal translation, which is incorrect: ~You alegried my day~ or ~You happied my day~. Another unnatural phrasing is ~That comment put me happy for the day~.\n\n~Thanks, you made my day with that commentary.~ (This is grammatically correct, but 'commentary' is the wrong word choice. A 'comment' is a single remark. A 'commentary' is a longer analysis or series of comments. The correct word here is 'comment'.)"
+    "note": "Phrasal Verbs: [Hear back from] (receive a reply) and [Get back to] (respond to someone) are essential for fluent communication.\n\n[Update the client] is more active and professional than just 'communicate'."
   },
   {
-    "cardId": "mi_140",
+    "cardId": "ti_006",
     "cardType": "flippable",
-    "sideA": "Ok, las imágenes están saliendo cortadas, hay que ajustarlas.",
+    "sideA": "Le pediría más información para tener un resumen más completo del problema.",
     "sideB": [
       {
-        "text": "Okay, the images are getting cut off. We need to adjust them.",
-        "audioSrc": "public/data/audio/common_meeting/mi_140_sideB_0.mp3"
+        "text": "I would ask for more information to have a more complete summary of the problem.",
+        "audioSrc": "public/data/audio/tech_interview/ti_006_sideB_0.mp3"
       },
       {
-        "text": "Okay, the images are being cropped. They need to be adjusted.",
-        "audioSrc": "public/data/audio/common_meeting/mi_140_sideB_1.mp3"
+        "text": "I'd request more details to get a full picture of the issue.",
+        "audioSrc": "public/data/audio/tech_interview/ti_006_sideB_1.mp3"
       },
       {
-        "text": "Right, the images are cut off. We have to fix them.",
-        "audioSrc": "public/data/audio/common_meeting/mi_140_sideB_2.mp3"
-      },
-      {
-        "text": "The images are not displaying fully. We need to make an adjustment.",
-        "audioSrc": "public/data/audio/common_meeting/mi_140_sideB_3.mp3"
-      },
-      {
-        "text": "Okay, the images are cutting off. We need to adjust them.",
-        "audioSrc": "public/data/audio/common_meeting/mi_140_sideB_4.mp3"
-      },
-      {
-        "text": "Okay, the images are being cut off. We need to adjust them.",
-        "audioSrc": "public/data/audio/common_meeting/mi_140_sideB_5.mp3"
+        "text": "I would ask for further info to ensure I have a comprehensive overview of the situation.",
+        "audioSrc": "public/data/audio/tech_interview/ti_006_sideB_2.mp3"
       }
     ],
-    "note": "[To get cut off] is a perfect phrasal verb for this. [To be cropped] also works.\n\n[Hay que] can be translated as [We need to] or [We have to].\n\nA common error is a literal translation: ~The images are coming out cut~. The correct idiom is [are getting cut off]."
+    "note": "[To get a full picture] is a great idiom for understanding the whole situation.\n\n[Comprehensive overview] sounds very professional in an interview setting.\n\n~...summary much more complete...~ (Word order: Adjectives usually come before the noun, e.g., 'a much more complete summary'.)"
   },
   {
-    "cardId": "mi_138",
+    "cardId": "ti_021",
     "cardType": "flippable",
-    "sideA": "Ese toma mucho tiempo.",
+    "sideA": "No sentía que estaba progresando en ese rol.",
     "sideB": [
       {
-        "text": "That one takes a long time.",
-        "audioSrc": "public/data/audio/common_meeting/mi_138_sideB_0.mp3"
+        "text": "I didn't feel I was really progressing in that role.",
+        "audioSrc": "public/data/audio/tech_interview/ti_021_sideB_0.mp3"
       },
       {
-        "text": "That takes a lot of time.",
-        "audioSrc": "public/data/audio/common_meeting/mi_138_sideB_1.mp3"
+        "text": "I felt stuck, like the role wasn't letting me grow.",
+        "audioSrc": "public/data/audio/tech_interview/ti_021_sideB_1.mp3"
       },
       {
-        "text": "That's very time-consuming.",
-        "audioSrc": "public/data/audio/common_meeting/mi_138_sideB_2.mp3"
+        "text": "I didn't feel like I was moving forward in that position.",
+        "audioSrc": "public/data/audio/tech_interview/ti_021_sideB_2.mp3"
       },
       {
-        "text": "That one is very time-consuming.",
-        "audioSrc": "public/data/audio/common_meeting/mi_138_sideB_3.mp3"
-      },
-      {
-        "text": "That process takes a while.",
-        "audioSrc": "public/data/audio/common_meeting/mi_138_sideB_4.mp3"
-      },
-      {
-        "text": "That takes a long time.",
-        "audioSrc": "public/data/audio/common_meeting/mi_138_sideB_5.mp3"
-      },
-      {
-        "text": "That takes too long.",
-        "audioSrc": "public/data/audio/common_meeting/mi_138_sideB_6.mp3"
+        "text": "I felt like I wasn't really progressing in that role.",
+        "audioSrc": "public/data/audio/tech_interview/ti_021_sideB_3.mp3"
       }
     ],
-    "note": "Use the third-person singular [takes] because the subject 'That one' is singular.\n\n[A while] is a common, natural idiom for 'a long time'.\n\nA common error is omitting the '-s': ~That one take a long time~. Another is using the continuous tense incorrectly: ~That is taking a long time~ (this is only correct if it is happening *right now*).\n\n~That takes much time.~ (This is unnatural. In positive statements, 'a lot of time' is preferred over 'much time'. You would use 'much time' in questions like 'Does it take much time?')"
+    "note": "[Progressing] and [moving forward] are good translations for 'progresando'.\n\n[I felt stuck] (me sentía estancado) is a very common idiom to express the lack of progress."
   },
   {
-    "cardId": "mi_131",
+    "cardId": "ti_010",
     "cardType": "flippable",
-    "sideA": "Estamos priorizando los mas urgentes primero.",
+    "sideA": "También puedo verificar si el problema es para Japón o general para todos.",
     "sideB": [
       {
-        "text": "We are prioritizing the most urgent ones first.",
-        "audioSrc": "public/data/audio/common_meeting/mi_131_sideB_0.mp3"
+        "text": "I can also verify if the problem is for Japan or general for everyone.",
+        "audioSrc": "public/data/audio/tech_interview/ti_010_sideB_0.mp3"
       },
       {
-        "text": "We're handling the most urgent issues first.",
-        "audioSrc": "public/data/audio/common_meeting/mi_131_sideB_1.mp3"
+        "text": "I can also check if the issue is region-specific to Japan or global.",
+        "audioSrc": "public/data/audio/tech_interview/ti_010_sideB_1.mp3"
       },
       {
-        "text": "We're focusing on the most time-sensitive ones first.",
-        "audioSrc": "public/data/audio/common_meeting/mi_131_sideB_2.mp3"
-      },
-      {
-        "text": "The most urgent items are being prioritized.",
-        "audioSrc": "public/data/audio/common_meeting/mi_131_sideB_3.mp3"
-      },
-      {
-        "text": "We are prioritizing the most important ones first.",
-        "audioSrc": "public/data/audio/common_meeting/mi_131_sideB_4.mp3"
+        "text": "I need to confirm if it's just affecting Japan or if it's a global outage.",
+        "audioSrc": "public/data/audio/tech_interview/ti_010_sideB_2.mp3"
       }
     ],
-    "note": "[Most urgent] is the correct translation. [Time-sensitive] is an excellent synonym in a business or tech context.\n\nA common error is redundancy: ~We are prioritizing the most more urgent ones first~. 'Most' already forms the superlative."
+    "note": "[Region-specific] is a precise technical term.\n\n[Global outage] implies the system is down for everyone.\n\n~...problem is from Japan...~ (Preposition error: Use 'in Japan' for location. 'From' implies origin.)"
   },
   {
-    "cardId": "mi_130",
+    "cardId": "ti_029",
     "cardType": "flippable",
-    "sideA": "Estamos priorizando los mas graves primero",
+    "sideA": "Si un usuario normal no puede hacer lo que necesita, es un bloqueo.",
     "sideB": [
       {
-        "text": "We are prioritizing the most severe ones first.",
-        "audioSrc": "public/data/audio/common_meeting/mi_130_sideB_0.mp3"
+        "text": "If a normal user can't get what they need done, it's a blocker.",
+        "audioSrc": "public/data/audio/tech_interview/ti_029_sideB_0.mp3"
       },
       {
-        "text": "We're tackling the most critical issues first.",
-        "audioSrc": "public/data/audio/common_meeting/mi_130_sideB_1.mp3"
+        "text": "If a regular user is unable to complete their task, it's a blocker.",
+        "audioSrc": "public/data/audio/tech_interview/ti_029_sideB_1.mp3"
       },
       {
-        "text": "We are prioritizing the most serious ones first.",
-        "audioSrc": "public/data/audio/common_meeting/mi_130_sideB_2.mp3"
+        "text": "It's a blocker if a standard user can't do what they need.",
+        "audioSrc": "public/data/audio/tech_interview/ti_029_sideB_2.mp3"
       },
       {
-        "text": "Our priority is handling the most severe issues first.",
-        "audioSrc": "public/data/audio/common_meeting/mi_130_sideB_3.mp3"
+        "text": "If a normal user can't do what they need, it's a blocker.",
+        "audioSrc": "public/data/audio/tech_interview/ti_029_sideB_3.mp3"
       }
     ],
-    "note": "The adjective 'grave' (Spanish) translates to [severe], [critical], or [serious] in this context.\n\nThe phrasal verb [to tackle] is a common synonym for 'to handle' or 'to address' a problem.\n\nA common error is using the false friend 'grave': ~We are prioritizing the most graves first~. Another is misplacing 'first': ~We are prioritizing the most severe ones at first~ (this means 'in the beginning', which changes the meaning).\n\n~We are prioritizing the serious ones first.~ (This is grammatically correct, but it changes the meaning. The Spanish 'los más graves' requires the superlative 'the **most** serious ones'.)"
+    "note": "In this context, [a blocker] acts as a noun (un bloqueo).\n\n~Is a locking~ is unnatural; use [Blocker]."
   },
   {
-    "cardId": "mi_095",
+    "cardId": "ti_028",
     "cardType": "flippable",
-    "sideA": "Hagamos seguimiento de esto por correo.",
+    "sideA": "Si un usuario normal todavía puede hacer lo que necesita, es cosmético.",
     "sideB": [
       {
-        "text": "Let's follow up on this by email.",
-        "audioSrc": "public/data/audio/common_meeting/mi_095_sideB_0.mp3"
+        "text": "If a normal user can still get what they need done, it's cosmetic.",
+        "audioSrc": "public/data/audio/tech_interview/ti_028_sideB_0.mp3"
       },
       {
-        "text": "Let's continue this conversation over email.",
-        "audioSrc": "public/data/audio/common_meeting/mi_095_sideB_1.mp3"
+        "text": "If a standard user can still perform their tasks, it's a cosmetic issue.",
+        "audioSrc": "public/data/audio/tech_interview/ti_028_sideB_1.mp3"
       },
       {
-        "text": "How about we handle this through email?",
-        "audioSrc": "public/data/audio/common_meeting/mi_095_sideB_2.mp3"
+        "text": "It's cosmetic if a regular user can still do what they need to do.",
+        "audioSrc": "public/data/audio/tech_interview/ti_028_sideB_2.mp3"
       },
       {
-        "text": "Let's take this offline and discuss it via email.",
-        "audioSrc": "public/data/audio/common_meeting/mi_095_sideB_3.mp3"
-      },
-      {
-        "text": "Let's continue this by email.",
-        "audioSrc": "public/data/audio/common_meeting/mi_095_sideB_4.mp3"
+        "text": "If a normal user can still do what they need, it's cosmetic.",
+        "audioSrc": "public/data/audio/tech_interview/ti_028_sideB_3.mp3"
       }
     ],
-    "note": "[To follow up on] something is a key phrasal verb meaning to continue with it later.\n\n[Take this offline] is a very common business idiom that means to discuss a topic outside of the current meeting, often with a smaller group.\n\n~Let's follow this by email.~ (Incorrect. The correct phrasal verb is 'to **follow up on** this' or simply 'to **follow up**'. 'Follow' by itself doesn't mean 'to continue' in this context.)"
+    "note": "[Get what they need done] is a very natural way to express 'hacer lo que necesitan'.\n\n[Standard user] or [Regular user] are good translations for 'usuario normal'."
   },
   {
-    "cardId": "mi_108",
+    "cardId": "ti_005",
     "cardType": "flippable",
-    "sideA": "¿Cómo se activa este modo?",
+    "sideA": "Si veo que el problema es grave, le pediría más información.",
     "sideB": [
       {
-        "text": "How does this mode get activated?",
-        "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_0.mp3"
+        "text": "If I see that the problem is serious, I would ask for more information.",
+        "audioSrc": "public/data/audio/tech_interview/ti_005_sideB_0.mp3"
       },
       {
-        "text": "How is this mode activated?",
-        "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_1.mp3"
+        "text": "If I notice it's a critical issue, I'd request further details.",
+        "audioSrc": "public/data/audio/tech_interview/ti_005_sideB_1.mp3"
       },
       {
-        "text": "How do you activate this mode?",
-        "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_2.mp3"
+        "text": "If the issue appears severe, I would ask for more context.",
+        "audioSrc": "public/data/audio/tech_interview/ti_005_sideB_2.mp3"
       },
-      {
-        "text": "How does this mode activate?",
-        "audioSrc": "public/data/audio/common_meeting/mi_108_sideB_3.mp3"
+            {
+        "text": "If I see that the problem is serious, I would ask for further information.",
+        "audioSrc": "public/data/audio/tech_interview/ti_005_sideB_3.mp3"
       }
     ],
-    "note": "**[107]**\n\nThe structure for this question is: `How` + `auxiliary` + `subject` + `verb`. For a singular subject like [this mode], the auxiliary is [does].\n\nCommon errors include mixing auxiliaries (~How does this mode is activated?~) or incorrect verb conjugation (~How does this mode gets activated?~). After 'does', the verb must be in its base form ([get]).\n\n~How does this mode activated?~ (Incorrect. After the auxiliary 'does', the main verb must be in its base form. The correct structure is 'How does this mode get activated?'.)\n\n**Active vs. Passive Voice:**\nThe Spanish '[se activa]' is passive. This is best translated with a passive form like 'How *is* this mode activated?' or 'How does this mode *get* activated?'. The active voice 'How does this mode activate?' (implying the mode activates itself) is also grammatically correct, but less common for this context.\n\n~How is this mode get activated?~ (Incorrect. This mixes two passive structures. You must choose one: 1) 'How **is** this mode **activated**?' or 2) 'How **does** this mode **get** activated?'.)"
+    "note": "Conditionals: [If I see... I would ask] (Mixed conditional often used in interviews to describe hypothetical reactions to real situations).\n\nVocabulary: [Critical] or [Severe] are excellent synonyms for 'grave' in IT.\n\n~...ask further information~ (Grammar: The verb 'ask' requires the preposition 'for' when requesting something: 'ask for information'.)"
   },
   {
-    "cardId": "mi_074",
+    "cardId": "ti_012",
     "cardType": "flippable",
-    "sideA": "¿Qué impide el despliegue a producción?",
+    "sideA": "Luego de recibir la respuesta del encargado de redes, puedo darle una respuesta al cliente.",
     "sideB": [
       {
-        "text": "What prevents the deployment to production?",
-        "audioSrc": "public/data/audio/common_meeting/mi_074_sideB_0.mp3"
+        "text": "After receiving the response from the Network manager, I can give an answer to the client.",
+        "audioSrc": "public/data/audio/tech_interview/ti_012_sideB_0.mp3"
       },
       {
-        "text": "What is blocking the production release?",
-        "audioSrc": "public/data/audio/common_meeting/mi_074_sideB_1.mp3"
+        "text": "Once the Network lead responds, I can provide the client with an update.",
+        "audioSrc": "public/data/audio/tech_interview/ti_012_sideB_1.mp3"
       },
       {
-        "text": "What's stopping the deployment to production?",
-        "audioSrc": "public/data/audio/common_meeting/mi_074_sideB_2.mp3"
+        "text": "After getting the info from the Network team, I can relay the answer to the client.",
+        "audioSrc": "public/data/audio/tech_interview/ti_012_sideB_2.mp3"
       },
       {
-        "text": "What stops the deployment to production?",
-        "audioSrc": "public/data/audio/common_meeting/mi_074_sideB_3.mp3"
-      },
-      {
-        "text": "What stops the release to production?",
-        "audioSrc": "public/data/audio/common_meeting/mi_074_sideB_4.mp3"
+        "text": "After receiving the response from the Network Team, I can provide an answer to the client.",
+        "audioSrc": "public/data/audio/tech_interview/ti_012_sideB_3.mp3"
       }
     ],
-    "note": "**[2]**\n\nThis is a Subject Question. We are asking for the 'thing' that is performing the action of preventing. The question word [What] acts as the subject. Consequently, no auxiliary verb is needed, and the main verb ('prevents', 'stops') is conjugated in the third person singular.\n\nWhat does prevent the deployment?.\n\n~What stop the production release?~ (Incorrect. Since 'What' is the third-person singular subject of the sentence, the verb must be conjugated with an '-s': 'stops'.)"
+    "note": "[Relay the answer] means to pass information from one person to another.\n\n[Provide an update] is standard customer service language."
   },
   {
-    "cardId": "mi_113",
+    "cardId": "ti_013",
     "cardType": "flippable",
-    "sideA": "¿Qué hace exactamente este script?",
+    "sideA": "Nuestro principal medio de comunicación será Microsoft Teams.",
     "sideB": [
       {
-        "text": "What exactly does this script do?",
-        "audioSrc": "public/data/audio/common_meeting/mi_113_sideB_0.mp3"
+        "text": "Our main means of communication will be Microsoft Teams.",
+        "audioSrc": "public/data/audio/tech_interview/ti_013_sideB_0.mp3"
       },
       {
-        "text": "What is the function of this script?",
-        "audioSrc": "public/data/audio/common_meeting/mi_113_sideB_1.mp3"
+        "text": "Our primary communication channel will be Microsoft Teams.",
+        "audioSrc": "public/data/audio/tech_interview/ti_013_sideB_1.mp3"
       },
       {
-        "text": "What does this script accomplish?",
-        "audioSrc": "public/data/audio/common_meeting/mi_113_sideB_2.mp3"
+        "text": "We will primarily use Microsoft Teams to communicate.",
+        "audioSrc": "public/data/audio/tech_interview/ti_013_sideB_2.mp3"
       },
       {
-        "text": "What does this script do exactly?",
-        "audioSrc": "public/data/audio/common_meeting/mi_113_sideB_3.mp3"
+        "text": "Our main tool of communication will be Microsoft Teams.",
+        "audioSrc": "public/data/audio/tech_interview/ti_013_sideB_3.mp3"
       }
     ],
-    "note": "**[50]**\n\nThis structure uses 'does' as the auxiliary verb for a singular subject ([this script]) and 'do' as the main verb. The pattern is `What does + [subject] + do?`.\n\nA very common error is omitting the main verb 'do' at the end of the question, which leaves the sentence incomplete: ~What exactly does this script?~."
+    "note": "[Primary communication channel] sounds very professional.\n\nUse [Will be] for established future plans."
   },
   {
-    "cardId": "mi_145",
+    "cardId": "ti_009",
     "cardType": "flippable",
-    "sideA": "Yo no vi a quién se lo envió.",
+    "sideA": "También puedo verificar si el problema es específico de ellos o es general.",
     "sideB": [
       {
-        "text": "I didn't see who he sent it to.",
-        "audioSrc": "public/data/audio/common_meeting/mi_145_sideB_0.mp3"
+        "text": "I can also verify if the problem is specific to them or if it is general.",
+        "audioSrc": "public/data/audio/tech_interview/ti_009_sideB_0.mp3"
       },
       {
-        "text": "I didn't see who she sent it to.",
-        "audioSrc": "public/data/audio/common_meeting/mi_145_sideB_1.mp3"
+        "text": "I can also check if it's an isolated issue or a widespread one.",
+        "audioSrc": "public/data/audio/tech_interview/ti_009_sideB_1.mp3"
       },
       {
-        "text": "I didn't see who they sent it to.",
-        "audioSrc": "public/data/audio/common_meeting/mi_145_sideB_2.mp3"
+        "text": "I would also investigate whether the issue is local to them or affecting everyone.",
+        "audioSrc": "public/data/audio/tech_interview/ti_009_sideB_2.mp3"
       },
       {
-        "text": "I didn't catch who it was sent to.",
-        "audioSrc": "public/data/audio/common_meeting/mi_145_sideB_3.mp3"
+        "text":  "I can also verify if the problem is specific to them or it is for everyone.",
+        "audioSrc": "public/data/audio/tech_interview/ti_009_sideB_3.mp3"
       }
+     
     ],
-    "note": "The Spanish 'se' is ambiguous (he/she/they). All translations are correct. [They] is a good neutral option.\n\nThe structure is [who] + [subject] + [verb] + [object] + [to].\n\nA common error is inverting the question form inside the statement: ~I didn't see who did he send it to~. This is incorrect. Use the statement order: [who he sent it to].\n\n~I didn't see who he sent it.~ (Incorrect. This is incomplete. When 'send' is used to talk about the recipient, it needs the preposition 'to'. The correct sentence is 'I didn't see who he sent it **to**'.)"
+    "note": "IT Vocabulary: [Isolated] (specific to one user/area) vs. [Widespread] (affecting many).\n\nUse [Check] or [Investigate] as synonyms for verify.\n\n~...specific for them...~ (Collocation: When describing exclusivity or limitation, use 'specific to'.)"
   },
   {
-    "cardId": "mi_151",
+    "cardId": "ti_014",
     "cardType": "flippable",
-    "sideA": "Además, no son errores que comprometan producción.",
+    "sideA": "Nuestro principal medio de comunicación será por chat o llamadas por Teams.",
     "sideB": [
       {
-        "text": "Besides, they aren't errors that compromise production.",
-        "audioSrc": "public/data/audio/common_meeting/mi_151_sideB_0.mp3"
+        "text": "Our main means of communication will be via chat or Teams calls.",
+        "audioSrc": "public/data/audio/tech_interview/ti_014_sideB_0.mp3"
       },
       {
-        "text": "Also, they are not issues that will affect production.",
-        "audioSrc": "public/data/audio/common_meeting/mi_151_sideB_1.mp3"
+        "text": "We'll communicate mainly through Teams chat or calls.",
+        "audioSrc": "public/data/audio/tech_interview/ti_014_sideB_1.mp3"
       },
       {
-        "text": "Besides, they aren't production-blocking errors.",
-        "audioSrc": "public/data/audio/common_meeting/mi_151_sideB_2.mp3"
-      },
-      {
-        "text": "Also, they won't compromise the production environment.",
-        "audioSrc": "public/data/audio/common_meeting/mi_151_sideB_3.mp3"
+        "text": "Our primary contact methods will be Teams chat and calls.",
+        "audioSrc": "public/data/audio/tech_interview/ti_014_sideB_2.mp3"
       }
     ],
-    "note": "**[83]**\n\nThe verb [to compromise] (comprometer) is correct. [To affect] (afectar) is also a good synonym.\n\n[Production-blocking] is a very common technical term for an error that 'compromete producción'.\n\n~commit~ is a false friend. You [commit] code, but you [compromise] stability.\n\n~Besides, they aren't errors to compromise production.~ (Incorrect structure. You cannot use the infinitive 'to compromise' here. You must use a relative clause: 'errors **that** compromise production' or 'errors **compromising** production'.)"
+    "note": "[Via] is a useful preposition meaning 'by way of' (e.g., via chat, via email).\n\n[Through] is also commonly used (e.g., through Teams).\n\n~Our main tool... will be by chat...~ (Mismatch: A 'tool' is a noun [Teams]. If you use 'by chat' [method], start with 'Our main method of communication...' or 'We will communicate by...')"
+  },
+  {
+    "cardId": "ti_016",
+    "cardType": "flippable",
+    "sideA": "Asi que puedo tomar otro trabajo en la noche facilmente.",
+    "sideB": [
+      {
+        "text": "So I can easily pick up another job at night.",
+        "audioSrc": "public/data/audio/tech_interview/ti_016_sideB_0.mp3"
+      },
+      {
+        "text": "So I can take on another evening job easily.",
+        "audioSrc": "public/data/audio/tech_interview/ti_016_sideB_1.mp3"
+      },
+      {
+        "text": "That means I can easily get another job at night.",
+        "audioSrc": "public/data/audio/tech_interview/ti_016_sideB_2.mp3"
+      },
+      {
+        "text": "So, I can take another job at night easily.",
+        "audioSrc": "public/data/audio/tech_interview/ti_016_sideB_3.mp3"
+      }
+    ],
+    "note": "The phrasal verbs [pick up] or [take on] a job are very natural for casual or secondary employment.\n\nAdverbs like [easily] often go before the main verb: [I can easily pick up...]."
+  },
+  {
+    "cardId": "ti_022",
+    "cardType": "flippable",
+    "sideA": "Los errores cosméticos—como problemas de espaciado o colores, son de baja prioridad.",
+    "sideB": [
+      {
+        "text": "Cosmetic bugs—like spacing or color issues—are low priority.",
+        "audioSrc": "public/data/audio/tech_interview/ti_022_sideB_0.mp3"
+      },
+      {
+        "text": "Cosmetic errors, such as spacing or colors, are low priority.",
+        "audioSrc": "public/data/audio/tech_interview/ti_022_sideB_1.mp3"
+      },
+      {
+        "text": "Visual bugs like spacing or color problems are considered low priority.",
+        "audioSrc": "public/data/audio/tech_interview/ti_022_sideB_2.mp3"
+      }
+    ],
+    "note": "[Cosmetic bugs] or [Cosmetic issues] refer to things that look wrong but work correctly.\n\n[Low priority] is the standard classification. ~Low importance~ is less technical.\n\n~...space or color bugs...~ (Vocabulary: In UI/Design, use 'spacing' to refer to the distance between elements. 'Space' usually refers to the outer void or available room.)"
+  },
+  {
+    "cardId": "ti_030",
+    "cardType": "flippable",
+    "sideA": "Como estaba diciendo, como es solo un error cosmético, necesitamos...",
+    "sideB": [
+      {
+        "text": "As I was saying, since it's just a cosmetic bug, we need to...",
+        "audioSrc": "public/data/audio/tech_interview/ti_030_sideB_0.mp3"
+      },
+      {
+        "text": "As I mentioned, because this is only a cosmetic error, we need to...",
+        "audioSrc": "public/data/audio/tech_interview/ti_030_sideB_1.mp3"
+      },
+      {
+        "text": "Like I said, as it's just cosmetic, we need to...",
+        "audioSrc": "public/data/audio/tech_interview/ti_030_sideB_2.mp3"
+      }
+    ],
+    "note": "[As I was saying] is excellent for resuming a point after an interruption.\n\nAvoid using 'how' for cause. ~How is a cosmetic bug...~ is incorrect. Use [Since], [As], or [Because].\n\n~...how it is just...~ (False Friend: 'How' is not used for causation here. Use 'since', 'as', or 'because' to translate 'como' in this context.)"
+  },
+  {
+    "cardId": "ti_001",
+    "cardType": "flippable",
+    "sideA": "Debo contener al cliente en Japón y Corea.",
+    "sideB": [
+      {
+        "text": "I must manage the client in Japan and Korea.",
+        "audioSrc": "public/data/audio/tech_interview/ti_001_sideB_0.mp3"
+      },
+      {
+        "text": "I need to keep the client in Japan and Korea contained.",
+        "audioSrc": "public/data/audio/tech_interview/ti_001_sideB_1.mp3"
+      },
+      {
+        "text": "My role involves managing expectations for clients in Japan and Korea.",
+        "audioSrc": "public/data/audio/tech_interview/ti_001_sideB_2.mp3"
+      }
+    ],
+    "note": "To [contain] a client in an IT context often means to manage their anxiety or keep a situation under control. [Manage expectations] is also a very professional alternative.\n\n~I must to contain~ is incorrect. Modal verbs like [must] are followed directly by the verb.\n\n~...client from Japan...~ (Preposition: 'En Japón' translates to 'in Japan' (location). 'From Japan' implies origin.)"
+  },
+  {
+    "cardId": "ti_043",
+    "cardType": "flippable",
+    "sideA": "¿Puedes darme exactamente los pasos que hiciste para llegar ahí?",
+    "sideB": [
+      {
+        "text": "Can you give me the exact steps you took to get there?",
+        "audioSrc": "public/data/audio/tech_interview/ti_043_sideB_0.mp3"
+      },
+      {
+        "text": "Could you provide the specific steps you followed to reach that point?",
+        "audioSrc": "public/data/audio/tech_interview/ti_043_sideB_1.mp3"
+      },
+      {
+        "text": "Can you tell me the exact steps you took to arrive at that state?",
+        "audioSrc": "public/data/audio/tech_interview/ti_043_sideB_2.mp3"
+      }
+    ],
+    "note": "[Steps you took] is the colocation for 'pasos que hiciste'. ~Steps you made~ is unnatural.\n\n[To get there] refers to arriving at the error state.\n\n~...steps that you did...~ (Collocation: We 'take' or 'follow' steps, we do not 'do' them.)"
+  },
+  {
+    "cardId": "ti_025",
+    "cardType": "flippable",
+    "sideA": "Un error cosmético de UI—se puede agendar y solucionar con más calma.",
+    "sideB": [
+      {
+        "text": "A cosmetic UI error can be scheduled and fixed with less urgency.",
+        "audioSrc": "public/data/audio/tech_interview/ti_025_sideB_0.mp3"
+      },
+      {
+        "text": "We can schedule cosmetic UI bugs to be fixed later.",
+        "audioSrc": "public/data/audio/tech_interview/ti_025_sideB_1.mp3"
+      },
+      {
+        "text": "Cosmetic UI issues can be prioritized for later.",
+        "audioSrc": "public/data/audio/tech_interview/ti_025_sideB_2.mp3"
+      }
+    ],
+    "note": "[To schedule] in this context means to put it in the backlog for a future sprint.\n\n[With less urgency] or [later] translates 'con más calma' in a professional context.\n\n~A cosmetic issue of UI~ (Word Order: Use 'UI issue' or 'UI error'. In English, nouns often act as adjectives before the main noun.)"
+  },
+  {
+    "cardId": "ti_039",
+    "cardType": "flippable",
+    "sideA": "Hola, gracias, lo estoy comprobando/revisando ahora mismo.",
+    "sideB": [
+      {
+        "text": "Hi, thanks—checking right now.",
+        "audioSrc": "public/data/audio/tech_interview/ti_039_sideB_0.mp3"
+      },
+      {
+        "text": "Hello, thanks. I'm looking into it right now.",
+        "audioSrc": "public/data/audio/tech_interview/ti_039_sideB_1.mp3"
+      },
+      {
+        "text": "Hi, thank you. I am checking on that immediately.",
+        "audioSrc": "public/data/audio/tech_interview/ti_039_sideB_2.mp3"
+      },
+      {
+        "text": "Hi, thanks— I'm checking it right now.",
+        "audioSrc": "public/data/audio/tech_interview/ti_039_sideB_3.mp3"
+      }
+    ],
+    "note": "[Looking into it] is a professional phrasal verb meaning to investigate.\n\nIn chat contexts (Teams/Slack), omitting the subject [I am] (e.g., 'Checking right now') is acceptable and common."
+  },
+  {
+    "cardId": "ti_032",
+    "cardType": "flippable",
+    "sideA": "Ese es un fallo funcional—no bloquea a nadie, pero los números no cuadran.",
+    "sideB": [
+      {
+        "text": "That's a functional glitch—it's not blocking anyone, but the numbers are off.",
+        "audioSrc": "public/data/audio/tech_interview/ti_032_sideB_0.mp3"
+      },
+      {
+        "text": "That's a functional bug; it doesn't block users, but the numbers don't add up.",
+        "audioSrc": "public/data/audio/tech_interview/ti_032_sideB_1.mp3"
+      },
+      {
+        "text": "It's a functional issue—nobody is blocked, but the figures are incorrect.",
+        "audioSrc": "public/data/audio/tech_interview/ti_032_sideB_2.mp3"
+      }
+    ],
+    "note": "[Glitch] is often used for minor, transient, or strange errors.\n\n[The numbers are off] is a very common idiom meaning calculations are incorrect.\n\n[Don't add up] also means the math is wrong or the situation doesn't make sense.\n\n~...the numbers don't fit.~ (Vocabulary: Use 'don't match', 'don't add up', or 'are off'. 'Fit' usually refers to physical size or shape.)"
   }
 ]
