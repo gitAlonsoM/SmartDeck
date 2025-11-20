@@ -963,762 +963,707 @@
         }
       ],
       "note": "[Following along] implies you are doing the action in parallel with the description or the other person.\n\n[Going through the steps] is a common phrasal verb for executing a procedure.\n\n~I'm following along the steps...~ (Phrasing: 'Follow along' is usually intransitive. Say 'I'm following the steps' or just 'I'm following along'.)"
-    },
+   },
     {
-      "cardId": "ti_045",
-      "cardType": "flippable",
-      "sideA": "El stock real de los productos está en los almacenes físicos.",
-      "sideB": [
-        {
-          "text": "The real product stock is located in the physical warehouses.",
-          "audioSrc": "public/data/audio/tech_interview/ti_045_sideB_0.mp3"
-        },
-        {
-          "text": "Physical on-hand quantity is stored within the Inventory Organizations.",
-          "audioSrc": "public/data/audio/tech_interview/ti_045_sideB_1.mp3"
-        },
-        {
-          "text": "The actual inventory is managed at the warehouse level.",
-          "audioSrc": "public/data/audio/tech_interview/ti_045_sideB_2.mp3"
-        },
-        {
-          "text": "The real product stock is in the warehouses.",
-          "audioSrc": "public/data/audio/tech_interview/ti_045_sideB_3.mp3"
-        }
-      ],
-      "note": "In Oracle EBS terminology, 'warehouses' are often referred to as [Inventory Organizations].\n\n[On-hand quantity] is the technical term for 'stock real' or 'existencias'."
-    },
-    {
-      "cardId": "ti_046",
-      "cardType": "flippable",
-      "sideA": "Las definiciones de los productos, como el SKU y la unidad de medida, se encuentran en una tabla maestra.",
-      "sideB": [
-        {
-          "text": "Product definitions, such as SKU and UOM, are found in a master table.",
-          "audioSrc": "public/data/audio/tech_interview/ti_046_sideB_0.mp3"
-        },
-        {
-          "text": "Item attributes like SKU and UOM are defined in the Master Item Organization table.",
-          "audioSrc": "public/data/audio/tech_interview/ti_046_sideB_1.mp3"
-        },
-        {
-          "text": "The Master Layer holds the product DNA, including SKU and UOM details.",
-          "audioSrc": "public/data/audio/tech_interview/ti_046_sideB_2.mp3"
-        },
-        {
-          "text": "Product definitions, such as SKU and UOM, are in a master table.",
-          "audioSrc": "public/data/audio/tech_interview/ti_046_sideB_3.mp3"
-        }
-      ],
-      "note": "[UOM] stands for Unit of Measure (Unit, Box, Kg, etc.).\n\n[SKU] (Stock Keeping Unit) is the standard term for the product code."
-    },
-    {
-      "cardId": "ti_047",
-      "cardType": "flippable",
-      "sideA": "Las definiciones de los productos (su ADN) y su stock están en tablas distintas.",
-      "sideB": [
-        {
-          "text": "Product definitions (their DNA) and their stock levels are stored in separate tables.",
-          "audioSrc": "public/data/audio/tech_interview/ti_047_sideB_0.mp3"
-        },
-        {
-          "text": "We separate the item master data from the physical on-hand quantities into different tables.",
-          "audioSrc": "public/data/audio/tech_interview/ti_047_sideB_1.mp3"
-        },
-        {
-          "text": "The Master Item table defines the product, while a different table tracks the physical inventory.",
-          "audioSrc": "public/data/audio/tech_interview/ti_047_sideB_2.mp3"
-        },
-        {
-          "text": "Product definitions (their DNA) and their stock are in different tables.",
-          "audioSrc": "public/data/audio/tech_interview/ti_047_sideB_3.mp3"
-        }
-      ],
-      "note": "[Master Data] (definitions) vs [Transactional Data] (stock levels) is a key concept in database design.\n\n[Stored in] is the standard preposition for data in tables."
-    },
-    {
-      "cardId": "ti_048",
-      "cardType": "flippable",
-      "sideA": "El stock de los productos está en los almacenes y cada provincia tiene uno diferente.",
-      "sideB": [
-        {
-          "text": "Product stock is in the warehouses, and each province has its own specific inventory.",
-          "audioSrc": "public/data/audio/tech_interview/ti_048_sideB_0.mp3"
-        },
-        {
-          "text": "Inventory is managed in warehouses, with different Inventory Organizations for each province.",
-          "audioSrc": "public/data/audio/tech_interview/ti_048_sideB_1.mp3"
-        },
-        {
-          "text": "Stock availability is physical and varies because each province points to a different warehouse.",
-          "audioSrc": "public/data/audio/tech_interview/ti_048_sideB_2.mp3"
-        }
-      ],
-      "note": "[Points to] is a useful phrasal verb when describing software configuration or database relationships.\n\n[Varies] means 'is different' or 'changes'."
-    },
-    {
-      "cardId": "ti_049",
-      "cardType": "flippable",
-      "sideA": "El carrito es solo una cotización del momento, y la orden de venta en sí, ya es diferente.",
-      "sideB": [
-        {
-          "text": "The shopping cart is just a temporary Quote, whereas the Sales Order is a separate, finalized entity.",
-          "audioSrc": "public/data/audio/tech_interview/ti_049_sideB_0.mp3"
-        },
-        {
-          "text": "The active cart acts as a snapshot Quote in ASO, which is distinct from the actual Sales Order in OM.",
-          "audioSrc": "public/data/audio/tech_interview/ti_049_sideB_1.mp3"
-        },
-        {
-          "text": "A cart is technically a draft Quote, while the confirmed transaction becomes a Sales Order.",
-          "audioSrc": "public/data/audio/tech_interview/ti_049_sideB_2.mp3"
-        }
-      ],
-      "note": "In Oracle, a [Quote] is a proposal of prices, while a [Sales Order] is a confirmed contract.\n\n[Whereas] is an excellent linking word to show contrast between two distinct things (Cart vs Order)."
-    },
-    {
-      "cardId": "ti_050",
-      "cardType": "flippable",
-      "sideA": "Oracle EBS es el sistema central (backend) que gestiona todos los datos de negocio.",
-      "sideB": [
-        {
-          "text": "Oracle EBS is the core backend system that manages all business data.",
-          "audioSrc": "public/data/audio/tech_interview/ti_050_sideB_0.mp3"
-        },
-        {
-          "text": "Oracle EBS acts as the central engine handling business logic, including Inventory and Order Management.",
-          "audioSrc": "public/data/audio/tech_interview/ti_050_sideB_1.mp3"
-        },
-        {
-          "text": "All critical business data, from stock levels to sales orders, is centrally managed by the Oracle EBS backend.",
-          "audioSrc": "public/data/audio/tech_interview/ti_050_sideB_2.mp3"
-        }
-      ],
-      "note": "[Core backend system] or [Central engine] are strong terms to describe the importance of the ERP.\n\n[Handling business logic] is a precise way to describe what the backend does."
-    },
-    {
-      "cardId": "ti_051",
-      "cardType": "flippable",
-      "sideA": "iStore es el módulo de comercio electrónico que permite a los usuarios navegar por el catálogo y realizar pedidos.",
-      "sideB": [
-        {
-          "text": "iStore is the e-commerce module that allows users to browse the catalog and place orders via the web.",
-          "audioSrc": "public/data/audio/tech_interview/ti_051_sideB_0.mp3"
-        },
-        {
-          "text": "The iStore module provides the web interface for customers to browse the catalog and submit orders.",
-          "audioSrc": "public/data/audio/tech_interview/ti_051_sideB_1.mp3"
-        },
-        {
-          "text": "Users interact with the product catalog and place web orders through the Oracle iStore module.",
-          "audioSrc": "public/data/audio/tech_interview/ti_051_sideB_2.mp3"
-        }
-      ],
-      "note": "[Browse] is the standard verb for looking through a website or catalog.\n\n[Place orders] or [Submit orders] is the correct collocation. ~Make orders~ is less professional."
-    },
-    {
-      "cardId": "ti_052",
-      "cardType": "flippable",
-      "sideA": "En Oracle, el 'carrito de compras' es técnicamente una Cotización gestionada por el módulo ASO.",
-      "sideB": [
-        {
-          "text": "In Oracle, the 'shopping cart' is technically a Quote managed by the ASO module.",
-          "audioSrc": "public/data/audio/tech_interview/ti_052_sideB_0.mp3"
-        },
-        {
-          "text": "What the user sees as a 'shopping cart' is stored as a Quote record within the ASO module.",
-          "audioSrc": "public/data/audio/tech_interview/ti_052_sideB_1.mp3"
-        },
-        {
-          "text": "The ASO module handles the shopping cart functionality by treating it as an active Quote.",
-          "audioSrc": "public/data/audio/tech_interview/ti_052_sideB_2.mp3"
-        }
-      ],
-      "note": "[Technically] is used to introduce the specific internal implementation details.\n\nASO stands for [Advanced Sales Online] (or Oracle Quoting)."
-    },
-    {
-      "cardId": "ti_053",
-      "cardType": "flippable",
-      "sideA": "Al hacer checkout, la Cotización (ASO) se convierte en una Orden de Venta real en el módulo de Order Management.",
-      "sideB": [
-        {
-          "text": "Upon checkout, the Quote (ASO) is converted into an actual Sales Order in the Order Management (OM) module.",
-          "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_0.mp3"
-        },
-        {
-          "text": "The checkout process triggers the conversion of the ASO Quote into a confirmed Sales Order in OM.",
-          "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_1.mp3"
-        },
-        {
-          "text": "Data moves from the ASO module to the Order Management (OM) module when the Quote becomes a Booked Order.",
-          "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_2.mp3"
-        }
-      ],
-      "note": "[Upon checkout] is a formal way to say 'when doing checkout'.\n\n[Triggers the conversion] describes the automatic process started by the user's action."
-    },
-    {
-      "cardId": "ti_054",
-      "cardType": "flippable",
-      "sideA": "Tomo la retroalimentación como una oportunidad para mejorar.",
-      "sideB": [
-        {
-          "text": "I take feedback as a chance to get better.",
-          "audioSrc": "public/data/audio/tech_interview/ti_054_sideB_0.mp3"
-        },
-        {
-          "text": "I view feedback as an opportunity to improve.",
-          "audioSrc": "public/data/audio/tech_interview/ti_054_sideB_1.mp3"
-        },
-        {
-          "text": "I see feedback as a way to grow professionally.",
-          "audioSrc": "public/data/audio/tech_interview/ti_054_sideB_2.mp3"
-        },
-        {
-          "text": "I take feedback as an opportunity to grow.",
-          "audioSrc": "public/data/audio/tech_interview/ti_054_sideB_3.mp3"
-        }
-      ],
-      "note": "[Chance] is slightly more casual than [Opportunity], but both are excellent here.\n\n[To get better] is the most natural translation for 'mejorar' in a personal context."
-    },
-    {
-      "cardId": "ti_055",
-      "cardType": "flippable",
-      "sideA": "Deberían contratarme porque soy proactivo y aprendo rápido.",
-      "sideB": [
-        {
-          "text": "You should hire me because I'm proactive and I learn fast.",
-          "audioSrc": "public/data/audio/tech_interview/ti_055_sideB_0.mp3"
-        },
-        {
-          "text": "I'm a strong candidate because I take initiative and pick things up quickly.",
-          "audioSrc": "public/data/audio/tech_interview/ti_055_sideB_1.mp3"
-        },
-        {
-          "text": "You should hire me because of my proactivity and quick learning curve.",
-          "audioSrc": "public/data/audio/tech_interview/ti_055_sideB_2.mp3"
-        }
-      ],
-      "note": "[Pick things up] is a very common native phrasal verb for 'learning new things'.\n\n[Take initiative] is a synonym for being proactive."
-    },
-    {
-      "cardId": "ti_056",
-      "cardType": "flippable",
-      "sideA": "No los decepcionaré.",
-      "sideB": [
-        {
-          "text": "I won't let you down.",
-          "audioSrc": "public/data/audio/tech_interview/ti_056_sideB_0.mp3"
-        },
-        {
-          "text": "I won't disappoint you.",
-          "audioSrc": "public/data/audio/tech_interview/ti_056_sideB_1.mp3"
-        },
-        {
-          "text": "I will not let the team down.",
-          "audioSrc": "public/data/audio/tech_interview/ti_056_sideB_2.mp3"
-        }
-      ],
-      "note": "[Let someone down] is the most natural English idiom for 'decepcionar a alguien'.\n\n[Disappoint] is correct but can sound a bit stiff in spoken conversation."
-    },
-    {
-      "cardId": "ti_057",
-      "cardType": "flippable",
-      "sideA": "El historial de pedidos mostraba precios del carrito, no los precios finales.",
-      "sideB": [
-        {
-          "text": "The order history was showing cart prices, not final prices.",
-          "audioSrc": "public/data/audio/tech_interview/ti_057_sideB_0.mp3"
-        },
-        {
-          "text": "The order history displayed Quote prices instead of the booked Order prices.",
-          "audioSrc": "public/data/audio/tech_interview/ti_057_sideB_1.mp3"
-        },
-        {
-          "text": "The history page was incorrectly pulling prices from the cart rather than the final order.",
-          "audioSrc": "public/data/audio/tech_interview/ti_057_sideB_2.mp3"
-        }
-      ],
-      "note": "[Instead of] (en lugar de) helps clarify the discrepancy.\n\n[Pulling prices from] means the system was retrieving data from that specific source."
-    },
-    {
-      "cardId": "ti_058",
-      "cardType": "flippable",
-      "sideA": "Arreglé la query para que extraiga datos de Order Management.",
-      "sideB": [
-        {
-          "text": "I fixed the query so it pulls from Order Management.",
-          "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_0.mp3"
-        },
-        {
-          "text": "I corrected the SQL to fetch data from the Order Management tables.",
-          "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_1.mp3"
-        },
-        {
-          "text": "I adjusted the query to retrieve information from OM.",
-          "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_2.mp3"
-        },
-        {
-          "text": "I fixed the query to get data from Order Management.",
-          "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_3.mp3"
-        },
-        {
-          "text": "I fixed the query to retrieve data from Order Management.",
-          "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_4.mp3"
-        }
-      ],
-      "note": "Verbs for data: [Pull], [Fetch], or [Retrieve].\n\n[Fixed] implies repairing code that was broken or incorrect."
-    },
-    {
-      "cardId": "ti_059",
-      "cardType": "flippable",
-      "sideA": "Necesito entender el problema completamente.",
-      "sideB": [
-        {
-          "text": "I need to understand the problem completely.",
-          "audioSrc": "public/data/audio/tech_interview/ti_059_sideB_0.mp3"
-        },
-        {
-          "text": "I need to fully grasp the issue.",
-          "audioSrc": "public/data/audio/tech_interview/ti_059_sideB_1.mp3"
-        },
-        {
-          "text": "I need to get a complete understanding of the problem.",
-          "audioSrc": "public/data/audio/tech_interview/ti_059_sideB_2.mp3"
-        },
-        {
-          "text": "I need to fully understand the problem.",
-          "audioSrc": "public/data/audio/tech_interview/ti_059_sideB_3.mp3"
-        }
-      ],
-      "note": "[Grasp] is a strong verb meaning to understand a complex concept fully.\n\n[Issue] is often used interchangeably with 'problem' in IT."
-    },
-    {
-      "cardId": "ti_060",
-      "cardType": "flippable",
-      "sideA": "Si necesito más información, como pasos o capturas, le pregunto a quien reportó por Teams de inmediato.",
-      "sideB": [
-        {
-          "text": "If I need more info—like steps or screenshots—I ask the reporter on Teams right away.",
-          "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_0.mp3"
-        },
-        {
-          "text": "If I require further details, such as reproduction steps, I contact the reporter immediately via Teams.",
-          "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_1.mp3"
-        },
-        {
-          "text": "When I need more context, like screenshots, I reach out to the reporter on Teams instantly.",
-          "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_2.mp3"
-        },
-        {
-          "text": "If I need more info—like steps or screenshots—I ask the one who reported it on Teams.",
-          "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_3.mp3"
-        }
-      ],
-      "note": "[Reporter] refers to the person who created the ticket/bug report.\n\n[Right away] or [Instantly] emphasizes your responsiveness."
-    },
-    {
-      "cardId": "ti_061",
-      "cardType": "flippable",
-      "sideA": "Intento replicarlo yo mismo, o si me supera, lo escalo.",
-      "sideB": [
-        {
-          "text": "I try to replicate it myself, or if it's out of my depth, I escalate it.",
-          "audioSrc": "public/data/audio/tech_interview/ti_061_sideB_0.mp3"
-        },
-        {
-          "text": "I attempt to reproduce it, but if it's beyond my knowledge, I escalate.",
-          "audioSrc": "public/data/audio/tech_interview/ti_061_sideB_1.mp3"
-        },
-        {
-          "text": "I try to replicate it, and if it's too complex, I pass it up the chain.",
-          "audioSrc": "public/data/audio/tech_interview/ti_061_sideB_2.mp3"
-        },
-        {
-          "text": "I try to replicate it by myself, or if it is too much for me, I escalate it.",
-          "audioSrc": "public/data/audio/tech_interview/ti_061_sideB_3.mp3"
-        }
-      ],
-      "note": "[Out of my depth] is a great idiom meaning the situation is beyond your current capability or knowledge.\n\n[Escalate] is the professional term for sending a ticket to a higher support tier.\n\n~ ... or if it is to much for me... ~ (Incorrect spelling: 'to much' should be 'too much'.)"
-    },
-    {
-      "cardId": "ti_062",
-      "cardType": "flippable",
-      "sideA": "Uso System.out.println para depurar en el log del servidor (Java).",
-      "sideB": [
-        {
-          "text": "I use System.out.println for debugging in the server log.",
-          "audioSrc": "public/data/audio/tech_interview/ti_062_sideB_0.mp3"
-        },
-        {
-          "text": "I use print statements to debug backend issues in the server logs.",
-          "audioSrc": "public/data/audio/tech_interview/ti_062_sideB_1.mp3"
-        },
-        {
-          "text": "For server-side debugging, I rely on System.out.println.",
-          "audioSrc": "public/data/audio/tech_interview/ti_062_sideB_2.mp3"
-        }
-      ],
-      "note": "This refers to [Backend] debugging in Java contexts.\n\n[Server log] (like Catalan/Tomcat logs) is where these messages appear."
-    },
-    {
-      "cardId": "ti_063",
-      "cardType": "flippable",
-      "sideA": "Uso out.println para depurar en el navegador web (JSP).",
-      "sideB": [
-        {
-          "text": "I use out.println for debugging directly in the web browser.",
-          "audioSrc": "public/data/audio/tech_interview/ti_063_sideB_0.mp3"
-        },
-        {
-          "text": "For JSP debugging, I use out.println to see values in the browser.",
-          "audioSrc": "public/data/audio/tech_interview/ti_063_sideB_1.mp3"
-        },
-        {
-          "text": "I utilize out.println to debug frontend logic in the browser.",
-          "audioSrc": "public/data/audio/tech_interview/ti_063_sideB_2.mp3"
-        }
-      ],
-      "note": "This refers to [JSP] (JavaServer Pages) where `out` is an implicit object usually rendering to the [Frontend]."
-    },
-    {
-      "cardId": "ti_064",
-      "cardType": "flippable",
-      "sideA": "PL/SQL en EBS era mucho más profundo de lo que había visto; solo sabía lo básico de la universidad.",
-      "sideB": [
-        {
-          "text": "PL/SQL with EBS was way deeper than I'd seen—I only knew basics from school.",
-          "audioSrc": "public/data/audio/tech_interview/ti_064_sideB_0.mp3"
-        },
-        {
-          "text": "The PL/SQL in EBS was much more complex than what I learned in college.",
-          "audioSrc": "public/data/audio/tech_interview/ti_064_sideB_1.mp3"
-        },
-        {
-          "text": "EBS PL/SQL went far beyond the basic knowledge I had from school.",
-          "audioSrc": "public/data/audio/tech_interview/ti_064_sideB_2.mp3"
-        },
-        {
-          "text": "PL/SQL with EBS was much deeper than I thought — I only knew the basics from school.",
-          "audioSrc": "public/data/audio/tech_interview/ti_064_sideB_3.mp3"
-        }
-      ],
-      "note": "[Way deeper] is a common colloquial way to say 'much more complex/profound'.\n\n~...than I saw...~ (Grammar: Use [than I had seen] (past perfect) to refer to the time before you started working with EBS.)\n\n~...I only knew basics from school.~ (Grammar: You need the definite article 'the' before 'basics'. Correct: 'I only knew the basics'.)"
-    },
-    {
-      "cardId": "ti_065",
-      "cardType": "flippable",
-      "sideA": "Yo diría: 'Gracias, revisando ahora. Te aviso en cuanto tenga novedades'.",
-      "sideB": [
-        {
-          "text": "I'd say: 'Thanks—checking now. I'll let you know as soon as I have an update.'",
-          "audioSrc": "public/data/audio/tech_interview/ti_065_sideB_0.mp3"
-        },
-        {
-          "text": "I would reply: 'Thanks, looking into it. I'll keep you posted.'",
-          "audioSrc": "public/data/audio/tech_interview/ti_065_sideB_1.mp3"
-        },
-        {
-          "text": "My response would be: 'Thanks. Checking now. I'll get back to you shortly.'",
-          "audioSrc": "public/data/audio/tech_interview/ti_065_sideB_2.mp3"
-        }
-      ],
-      "note": "[I'll keep you posted] is an excellent idiom for 'te mantendré informado'.\n\n[As soon as I have an update] is standard professional phrasing.\n\n~I'll let you know as soon as I get news.~ (Unnatural phrasing: In a professional context, use 'have an update' or 'hear back'. 'Get news' sounds like you are waiting for a broadcast.)"
-    },
-    {
-      "cardId": "ti_066",
-      "cardType": "flippable",
-      "sideA": "Soy proactivo, persistente y aprendo rápido nuevas tecnologías.",
-      "sideB": [
-        {
-          "text": "I am proactive, persistent, and quick to learn new tech.",
-          "audioSrc": "public/data/audio/tech_interview/ti_066_sideB_0.mp3"
-        },
-        {
-          "text": "I'm proactive, persistent, and I pick up new technologies fast.",
-          "audioSrc": "public/data/audio/tech_interview/ti_066_sideB_1.mp3"
-        },
-        {
-          "text": "I have a proactive and persistent mindset, and I learn new tech quickly.",
-          "audioSrc": "public/data/audio/tech_interview/ti_066_sideB_2.mp3"
-        }
-      ],
-      "note": "[Quick to learn] or [Fast learner] are key phrases for interviews.\n\n[Persistent] means you don't give up easily on difficult problems."
-    },
-    {
-      "cardId": "ti_067",
-      "cardType": "flippable",
-      "sideA": "Mi inglés sigue mejorando, y en reuniones grandes tiendo a quedarme callado.",
-      "sideB": [
-        {
-          "text": "My English is still improving, and in big meetings I tend to stay quiet.",
-          "audioSrc": "public/data/audio/tech_interview/ti_067_sideB_0.mp3"
-        },
-        {
-          "text": "I'm still working on my English, so I tend to be quieter in large meetings.",
-          "audioSrc": "public/data/audio/tech_interview/ti_067_sideB_1.mp3"
-        },
-        {
-          "text": "My English is a work in progress, and I tend to listen more than speak in big groups.",
-          "audioSrc": "public/data/audio/tech_interview/ti_067_sideB_2.mp3"
-        }
-      ],
-      "note": "[Tend to] describes a habit or inclination.\n\n[Work in progress] is a positive way to say something is not yet perfect but is improving."
-    },
-    {
-      "cardId": "ti_068",
-      "cardType": "flippable",
-      "sideA": "La especificación del paquete no se ha actualizado correctamente.",
-      "sideB": [
-        {
-          "text": "The package specification hasn't been updated correctly.",
-          "audioSrc": "public/data/audio/tech_interview/ti_068_sideB_0.mp3"
-        },
-        {
-          "text": "The package spec failed to update properly.",
-          "audioSrc": "public/data/audio/tech_interview/ti_068_sideB_1.mp3"
-        },
-        {
-          "text": "There was an issue updating the package specification.",
-          "audioSrc": "public/data/audio/tech_interview/ti_068_sideB_2.mp3"
-        }
-      ],
-      "note": "In PL/SQL, a package has a [Specification] (header) and a [Body].\n\n[Spec] is the common short form."
-    },
-    {
-      "cardId": "ti_069",
-      "cardType": "flippable",
-      "sideA": "El campo del registro no se ha actualizado correctamente.",
-      "sideB": [
-        {
-          "text": "The record field has not been updated correctly.",
-          "audioSrc": "public/data/audio/tech_interview/ti_069_sideB_0.mp3"
-        },
-        {
-          "text": "The field in the record didn't update as expected.",
-          "audioSrc": "public/data/audio/tech_interview/ti_069_sideB_1.mp3"
-        },
-        {
-          "text": "The record field failed to update properly.",
-          "audioSrc": "public/data/audio/tech_interview/ti_069_sideB_2.mp3"
-        }
-      ],
-      "note": "[As expected] is standard terminology in bug reports to describe the desired behavior versus the actual behavior."
-    },
-    {
-      "cardId": "ti_070",
-      "cardType": "flippable",
-      "sideA": "Eso es todo por mi parte, gracias.",
-      "sideB": [
-        {
-          "text": "That's all for me, thanks.",
-          "audioSrc": "public/data/audio/tech_interview/ti_070_sideB_0.mp3"
-        },
-        {
-          "text": "That's everything from my side, thank you.",
-          "audioSrc": "public/data/audio/tech_interview/ti_070_sideB_1.mp3"
-        },
-        {
-          "text": "That's all on my end, thanks.",
-          "audioSrc": "public/data/audio/tech_interview/ti_070_sideB_2.mp3"
-        }
-      ],
-      "note": "Use [On my end] or [From my side] to refer to your part of the conversation or task."
-    },
-    {
-      "cardId": "ti_071",
-      "cardType": "flippable",
-      "sideA": "No por mi parte, gracias. (Respuesta a '¿Alguna pregunta?')",
-      "sideB": [
-        {
-          "text": "No on my end, thank you.",
-          "audioSrc": "public/data/audio/tech_interview/ti_071_sideB_0.mp3"
-        },
-        {
-          "text": "None from me, thanks.",
-          "audioSrc": "public/data/audio/tech_interview/ti_071_sideB_1.mp3"
-        },
-        {
-          "text": "Nothing from my side, thank you.",
-          "audioSrc": "public/data/audio/tech_interview/ti_071_sideB_2.mp3"
-        },
-        {
-          "text": "Not on my end.",
-          "audioSrc": "public/data/audio/tech_interview/ti_071_sideB_3.mp3"
-        }
-      ],
-      "note": "Standard polite responses when asked \"Do you have any questions?\" in a meeting.\n\n~No on my side.~ (Unnatural: Use 'None on my side' or 'Nothing on my side'. 'No' implies a vote.)"
-    },
-    {
-      "cardId": "ti_072",
-      "cardType": "flippable",
-      "sideA": "No, creo que cubrimos todo.",
-      "sideB": [
-        {
-          "text": "No, I think we've covered everything.",
-          "audioSrc": "public/data/audio/tech_interview/ti_072_sideB_0.mp3"
-        },
-        {
-          "text": "No, I believe we went over everything.",
-          "audioSrc": "public/data/audio/tech_interview/ti_072_sideB_1.mp3"
-        },
-        {
-          "text": "No, I think that covers it all.",
-          "audioSrc": "public/data/audio/tech_interview/ti_072_sideB_2.mp3"
-        }
-      ],
-      "note": "[Covered everything] means all topics have been discussed.\n\n[Went over] is a phrasal verb meaning 'reviewed' or 'discussed'."
-    },
-    {
-      "cardId": "ti_073",
-      "cardType": "flippable",
-      "sideA": "Nada más por ahora. Gracias.",
-      "sideB": [
-        {
-          "text": "Nothing else for now. Thanks.",
-          "audioSrc": "public/data/audio/tech_interview/ti_073_sideB_0.mp3"
-        },
-        {
-          "text": "That's all for the moment. Thank you.",
-          "audioSrc": "public/data/audio/tech_interview/ti_073_sideB_1.mp3"
-        },
-        {
-          "text": "Nothing more at this time. Thanks.",
-          "audioSrc": "public/data/audio/tech_interview/ti_073_sideB_2.mp3"
-        }
-      ],
-      "note": "[For now] implies that you are satisfied at this specific moment."
-    },
-    {
-      "cardId": "ti_074",
-      "cardType": "flippable",
-      "sideA": "Ellos no dejaron documentación al respecto.",
-      "sideB": [
-        {
-          "text": "They didn't leave any documentation regarding this.",
-          "audioSrc": "public/data/audio/tech_interview/ti_074_sideB_0.mp3"
-        },
-        {
-          "text": "They left no documentation about it.",
-          "audioSrc": "public/data/audio/tech_interview/ti_074_sideB_1.mp3"
-        },
-        {
-          "text": "There is no documentation left on this matter.",
-          "audioSrc": "public/data/audio/tech_interview/ti_074_sideB_2.mp3"
-        },
-        {
-          "text": "They didn't leave any documentation about it.",
-          "audioSrc": "public/data/audio/tech_interview/ti_074_sideB_3.mp3"
-        },
-        {
-          "text": "They didn't leave documentation about it.",
-          "audioSrc": "public/data/audio/tech_interview/ti_074_sideB_4.mp3"
-        }
-      ],
-      "note": "[Regarding] is a professional alternative to 'about'.\n\n~Regarding to this~ is incorrect. Never use 'to' after 'regarding'."
-    },
-    {
-      "cardId": "ti_075",
-      "cardType": "flippable",
-      "sideA": "¿No sé si ya lo testeaste?",
-      "sideB": [
-        {
-          "text": "I don't know if you have tested it yet.",
-          "audioSrc": "public/data/audio/tech_interview/ti_075_sideB_0.mp3"
-        },
-        {
-          "text": "I'm not sure if you've already tested it.",
-          "audioSrc": "public/data/audio/tech_interview/ti_075_sideB_1.mp3"
-        },
-        {
-          "text": "I don't know whether you have tested it or not.",
-          "audioSrc": "public/data/audio/tech_interview/ti_075_sideB_2.mp3"
-        },
-        {
-          "text": "I don't know if you tested it.",
-          "audioSrc": "public/data/audio/tech_interview/ti_075_sideB_3.mp3"
-        }
-      ],
-      "note": "This is an indirect question. Use standard sentence order [if you have tested], not question order ~if have you tested~.\n\nUse [Yet] for negative/question contexts (ya/todavía) at the end of the sentence.\n\n~I don't know if you tested yet?~ (Grammar: When using 'yet', it is better to use the present perfect 'have you tested yet'. If using simple past, you should include the object 'it', as in 'tested it'.)"
-    },
-    {
-      "cardId": "ti_076",
-      "cardType": "flippable",
-      "sideA": "Además, explícame algo.",
-      "sideB": [
-        {
-          "text": "Besides, explain something to me.",
-          "audioSrc": "public/data/audio/tech_interview/ti_076_sideB_0.mp3"
-        },
-        {
-          "text": "Also, please explain one thing to me.",
-          "audioSrc": "public/data/audio/tech_interview/ti_076_sideB_1.mp3"
-        },
-        {
-          "text": "Furthermore, explain something to me.",
-          "audioSrc": "public/data/audio/tech_interview/ti_076_sideB_2.mp3"
-        }
-      ],
-      "note": "**[114]**\n\nHere, [Besides] acts as a connector meaning 'In addition' or 'Also'. It is followed by a comma.\n\n~Besides, explain to me something.~ (Incorrect word order: In English, the object comes before the recipient. Say 'Explain something to me'.)"
-    },
-    {
-      "cardId": "ti_077",
-      "cardType": "flippable",
-      "sideA": "Además, necesito saber otras cosas.",
-      "sideB": [
-        {
-          "text": "Besides, I need to know other things.",
-          "audioSrc": "public/data/audio/tech_interview/ti_077_sideB_0.mp3"
-        },
-        {
-          "text": "In addition, I need to know a few other things.",
-          "audioSrc": "public/data/audio/tech_interview/ti_077_sideB_1.mp3"
-        },
-        {
-          "text": "Also, there are other things I need to know.",
-          "audioSrc": "public/data/audio/tech_interview/ti_077_sideB_2.mp3"
-        }
-      ],
-      "note": "**[114]**\n\n[Besides] with an 'S' adds information. Think of the 'S' as a 'Plus' sign (+)."
-    },
-    {
-      "cardId": "ti_078",
-      "cardType": "flippable",
-      "sideA": "Al lado del cuadrado.",
-      "sideB": [
-        {
-          "text": "Beside the square.",
-          "audioSrc": "public/data/audio/tech_interview/ti_078_sideB_0.mp3"
-        },
-        {
-          "text": "Next to the square.",
-          "audioSrc": "public/data/audio/tech_interview/ti_078_sideB_1.mp3"
-        },
-        {
-          "text": "Located by the side of the square.",
-          "audioSrc": "public/data/audio/tech_interview/ti_078_sideB_2.mp3"
-        }
-      ],
-      "note": "**[114]**\n\n[Beside] (no 'S') refers to physical location.\n\n~Besides the square~ would mean 'In addition to the square' (incorrect context)."
-    },
-    {
-      "cardId": "ti_079",
-      "cardType": "flippable",
-      "sideA": "Al lado del rectángulo.",
-      "sideB": [
-        {
-          "text": "Beside the rectangle.",
-          "audioSrc": "public/data/audio/tech_interview/ti_079_sideB_0.mp3"
-        },
-        {
-          "text": "Next to the rectangle.",
-          "audioSrc": "public/data/audio/tech_interview/ti_079_sideB_1.mp3"
-        },
-        {
-          "text": "Positioned beside the rectangle.",
-          "audioSrc": "public/data/audio/tech_interview/ti_079_sideB_2.mp3"
-        }
-      ],
-      "note": "**[114]**\n\nUse [Beside] or [Next to] for location."
-    }
+    "cardId": "ti_045",
+    "cardType": "flippable",
+    "sideA": "El stock real de los productos está en los almacenes físicos.",
+    "sideB": [
+      {
+        "text": "The real product stock is located in the physical warehouses.",
+        "audioSrc": "public/data/audio/tech_interview/ti_045_sideB_0.mp3"
+      },
+      {
+        "text": "Physical on-hand quantity is stored within the Inventory Organizations.",
+        "audioSrc": "public/data/audio/tech_interview/ti_045_sideB_1.mp3"
+      },
+      {
+        "text": "The actual inventory is managed at the warehouse level.",
+        "audioSrc": "public/data/audio/tech_interview/ti_045_sideB_2.mp3"
+      }
+    ],
+    "note": "In Oracle EBS terminology, 'warehouses' are often referred to as [Inventory Organizations].\n\n[On-hand quantity] is the technical term for 'stock real' or 'existencias'."
+  },
+  {
+    "cardId": "ti_046",
+    "cardType": "flippable",
+    "sideA": "Las definiciones de los productos, como el SKU y la unidad de medida, se encuentran en una tabla maestra.",
+    "sideB": [
+      {
+        "text": "Product definitions, such as SKU and UOM, are found in a master table.",
+        "audioSrc": "public/data/audio/tech_interview/ti_046_sideB_0.mp3"
+      },
+      {
+        "text": "Item attributes like SKU and UOM are defined in the Master Item Organization table.",
+        "audioSrc": "public/data/audio/tech_interview/ti_046_sideB_1.mp3"
+      },
+      {
+        "text": "The Master Layer holds the product DNA, including SKU and UOM details.",
+        "audioSrc": "public/data/audio/tech_interview/ti_046_sideB_2.mp3"
+      }
+    ],
+    "note": "[UOM] stands for Unit of Measure (Unit, Box, Kg, etc.).\n\n[SKU] (Stock Keeping Unit) is the standard term for the product code."
+  },
+  {
+    "cardId": "ti_047",
+    "cardType": "flippable",
+    "sideA": "Las definiciones de los productos (su ADN) y su stock están en tablas distintas.",
+    "sideB": [
+      {
+        "text": "Product definitions (their DNA) and their stock levels are stored in separate tables.",
+        "audioSrc": "public/data/audio/tech_interview/ti_047_sideB_0.mp3"
+      },
+      {
+        "text": "We separate the item master data from the physical on-hand quantities into different tables.",
+        "audioSrc": "public/data/audio/tech_interview/ti_047_sideB_1.mp3"
+      },
+      {
+        "text": "The Master Item table defines the product, while a different table tracks the physical inventory.",
+        "audioSrc": "public/data/audio/tech_interview/ti_047_sideB_2.mp3"
+      }
+    ],
+    "note": "[Master Data] (definitions) vs [Transactional Data] (stock levels) is a key concept in database design.\n\n[Stored in] is the standard preposition for data in tables."
+  },
+  {
+    "cardId": "ti_048",
+    "cardType": "flippable",
+    "sideA": "El stock de los productos está en los almacenes y cada provincia tiene uno diferente.",
+    "sideB": [
+      {
+        "text": "Product stock is in the warehouses, and each province has its own specific inventory.",
+        "audioSrc": "public/data/audio/tech_interview/ti_048_sideB_0.mp3"
+      },
+      {
+        "text": "Inventory is managed in warehouses, with different Inventory Organizations for each province.",
+        "audioSrc": "public/data/audio/tech_interview/ti_048_sideB_1.mp3"
+      },
+      {
+        "text": "Stock availability is physical and varies because each province points to a different warehouse.",
+        "audioSrc": "public/data/audio/tech_interview/ti_048_sideB_2.mp3"
+      }
+    ],
+    "note": "[Points to] is a useful phrasal verb when describing software configuration or database relationships.\n\n[Varies] means 'is different' or 'changes'."
+  },
+  {
+    "cardId": "ti_049",
+    "cardType": "flippable",
+    "sideA": "El carrito es solo una cotización del momento, y la orden de venta en sí, ya es diferente.",
+    "sideB": [
+      {
+        "text": "The shopping cart is just a temporary Quote, whereas the Sales Order is a separate, finalized entity.",
+        "audioSrc": "public/data/audio/tech_interview/ti_049_sideB_0.mp3"
+      },
+      {
+        "text": "The active cart acts as a snapshot Quote in ASO, which is distinct from the actual Sales Order in OM.",
+        "audioSrc": "public/data/audio/tech_interview/ti_049_sideB_1.mp3"
+      },
+      {
+        "text": "A cart is technically a draft Quote, while the confirmed transaction becomes a Sales Order.",
+        "audioSrc": "public/data/audio/tech_interview/ti_049_sideB_2.mp3"
+      }
+    ],
+    "note": "In Oracle, a [Quote] is a proposal of prices, while a [Sales Order] is a confirmed contract.\n\n[Whereas] is an excellent linking word to show contrast between two distinct things (Cart vs Order)."
+  },
+  {
+    "cardId": "ti_050",
+    "cardType": "flippable",
+    "sideA": "Oracle EBS es el sistema central (backend) que gestiona todos los datos de negocio.",
+    "sideB": [
+      {
+        "text": "Oracle EBS is the core backend system that manages all business data.",
+        "audioSrc": "public/data/audio/tech_interview/ti_050_sideB_0.mp3"
+      },
+      {
+        "text": "Oracle EBS acts as the central engine handling business logic, including Inventory and Order Management.",
+        "audioSrc": "public/data/audio/tech_interview/ti_050_sideB_1.mp3"
+      },
+      {
+        "text": "All critical business data, from stock levels to sales orders, is centrally managed by the Oracle EBS backend.",
+        "audioSrc": "public/data/audio/tech_interview/ti_050_sideB_2.mp3"
+      }
+    ],
+    "note": "[Core backend system] or [Central engine] are strong terms to describe the importance of the ERP.\n\n[Handling business logic] is a precise way to describe what the backend does."
+  },
+  {
+    "cardId": "ti_051",
+    "cardType": "flippable",
+    "sideA": "iStore es el módulo de comercio electrónico que permite a los usuarios navegar por el catálogo y realizar pedidos.",
+    "sideB": [
+      {
+        "text": "iStore is the e-commerce module that allows users to browse the catalog and place orders via the web.",
+        "audioSrc": "public/data/audio/tech_interview/ti_051_sideB_0.mp3"
+      },
+      {
+        "text": "The iStore module provides the web interface for customers to browse the catalog and submit orders.",
+        "audioSrc": "public/data/audio/tech_interview/ti_051_sideB_1.mp3"
+      },
+      {
+        "text": "Users interact with the product catalog and place web orders through the Oracle iStore module.",
+        "audioSrc": "public/data/audio/tech_interview/ti_051_sideB_2.mp3"
+      }
+    ],
+    "note": "[Browse] is the standard verb for looking through a website or catalog.\n\n[Place orders] or [Submit orders] is the correct collocation. ~Make orders~ is less professional."
+  },
+  {
+    "cardId": "ti_052",
+    "cardType": "flippable",
+    "sideA": "En Oracle, el 'carrito de compras' es técnicamente una Cotización gestionada por el módulo ASO.",
+    "sideB": [
+      {
+        "text": "In Oracle, the 'shopping cart' is technically a Quote managed by the ASO module.",
+        "audioSrc": "public/data/audio/tech_interview/ti_052_sideB_0.mp3"
+      },
+      {
+        "text": "What the user sees as a 'shopping cart' is stored as a Quote record within the ASO module.",
+        "audioSrc": "public/data/audio/tech_interview/ti_052_sideB_1.mp3"
+      },
+      {
+        "text": "The ASO module handles the shopping cart functionality by treating it as an active Quote.",
+        "audioSrc": "public/data/audio/tech_interview/ti_052_sideB_2.mp3"
+      }
+    ],
+    "note": "[Technically] is used to introduce the specific internal implementation details.\n\nASO stands for [Advanced Sales Online] (or Oracle Quoting)."
+  },
+  {
+    "cardId": "ti_053",
+    "cardType": "flippable",
+    "sideA": "Al hacer checkout, la Cotización (ASO) se convierte en una Orden de Venta real en el módulo de Order Management.",
+    "sideB": [
+      {
+        "text": "Upon checkout, the Quote (ASO) is converted into an actual Sales Order in the Order Management (OM) module.",
+        "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_0.mp3"
+      },
+      {
+        "text": "The checkout process triggers the conversion of the ASO Quote into a confirmed Sales Order in OM.",
+        "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_1.mp3"
+      },
+      {
+        "text": "Data moves from the ASO module to the Order Management (OM) module when the Quote becomes a Booked Order.",
+        "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_2.mp3"
+      }
+    ],
+    "note": "[Upon checkout] is a formal way to say 'when doing checkout'.\n\n[Triggers the conversion] describes the automatic process started by the user's action."
+  },
+  {
+    "cardId": "ti_054",
+    "cardType": "flippable",
+    "sideA": "Tomo la retroalimentación como una oportunidad para mejorar.",
+    "sideB": [
+      {
+        "text": "I take feedback as a chance to get better.",
+        "audioSrc": "public/data/audio/tech_interview/ti_054_sideB_0.mp3"
+      },
+      {
+        "text": "I view feedback as an opportunity to improve.",
+        "audioSrc": "public/data/audio/tech_interview/ti_054_sideB_1.mp3"
+      },
+      {
+        "text": "I see feedback as a way to grow professionally.",
+        "audioSrc": "public/data/audio/tech_interview/ti_054_sideB_2.mp3"
+      }
+    ],
+    "note": "[Chance] is slightly more casual than [Opportunity], but both are excellent here.\n\n[To get better] is the most natural translation for 'mejorar' in a personal context."
+  },
+  {
+    "cardId": "ti_055",
+    "cardType": "flippable",
+    "sideA": "Deberían contratarme porque soy proactivo y aprendo rápido.",
+    "sideB": [
+      {
+        "text": "You should hire me because I'm proactive and I learn fast.",
+        "audioSrc": "public/data/audio/tech_interview/ti_055_sideB_0.mp3"
+      },
+      {
+        "text": "I'm a strong candidate because I take initiative and pick things up quickly.",
+        "audioSrc": "public/data/audio/tech_interview/ti_055_sideB_1.mp3"
+      },
+      {
+        "text": "You should hire me because of my proactivity and quick learning curve.",
+        "audioSrc": "public/data/audio/tech_interview/ti_055_sideB_2.mp3"
+      }
+    ],
+    "note": "[Pick things up] is a very common native phrasal verb for 'learning new things'.\n\n[Take initiative] is a synonym for being proactive."
+  },
+  {
+    "cardId": "ti_056",
+    "cardType": "flippable",
+    "sideA": "No los decepcionaré.",
+    "sideB": [
+      {
+        "text": "I won't let you down.",
+        "audioSrc": "public/data/audio/tech_interview/ti_056_sideB_0.mp3"
+      },
+      {
+        "text": "I won't disappoint you.",
+        "audioSrc": "public/data/audio/tech_interview/ti_056_sideB_1.mp3"
+      },
+      {
+        "text": "I will not let the team down.",
+        "audioSrc": "public/data/audio/tech_interview/ti_056_sideB_2.mp3"
+      }
+    ],
+    "note": "[Let someone down] is the most natural English idiom for 'decepcionar a alguien'.\n\n[Disappoint] is correct but can sound a bit stiff in spoken conversation."
+  },
+  {
+    "cardId": "ti_057",
+    "cardType": "flippable",
+    "sideA": "El historial de pedidos mostraba precios del carrito, no los precios finales.",
+    "sideB": [
+      {
+        "text": "The order history was showing cart prices, not final prices.",
+        "audioSrc": "public/data/audio/tech_interview/ti_057_sideB_0.mp3"
+      },
+      {
+        "text": "The order history displayed Quote prices instead of the booked Order prices.",
+        "audioSrc": "public/data/audio/tech_interview/ti_057_sideB_1.mp3"
+      },
+      {
+        "text": "The history page was incorrectly pulling prices from the cart rather than the final order.",
+        "audioSrc": "public/data/audio/tech_interview/ti_057_sideB_2.mp3"
+      }
+    ],
+    "note": "[Instead of] (en lugar de) helps clarify the discrepancy.\n\n[Pulling prices from] means the system was retrieving data from that specific source."
+  },
+  {
+    "cardId": "ti_058",
+    "cardType": "flippable",
+    "sideA": "Arreglé la query para que extraiga datos de Order Management.",
+    "sideB": [
+      {
+        "text": "I fixed the query so it pulls from Order Management.",
+        "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_0.mp3"
+      },
+      {
+        "text": "I corrected the SQL to fetch data from the Order Management tables.",
+        "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_1.mp3"
+      },
+      {
+        "text": "I adjusted the query to retrieve information from OM.",
+        "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_2.mp3"
+      }
+    ],
+    "note": "Verbs for data: [Pull], [Fetch], or [Retrieve].\n\n[Fixed] implies repairing code that was broken or incorrect."
+  },
+  {
+    "cardId": "ti_059",
+    "cardType": "flippable",
+    "sideA": "Necesito entender el problema completamente.",
+    "sideB": [
+      {
+        "text": "I need to understand the problem completely.",
+        "audioSrc": "public/data/audio/tech_interview/ti_059_sideB_0.mp3"
+      },
+      {
+        "text": "I need to fully grasp the issue.",
+        "audioSrc": "public/data/audio/tech_interview/ti_059_sideB_1.mp3"
+      },
+      {
+        "text": "I need to get a complete understanding of the problem.",
+        "audioSrc": "public/data/audio/tech_interview/ti_059_sideB_2.mp3"
+      }
+    ],
+    "note": "[Grasp] is a strong verb meaning to understand a complex concept fully.\n\n[Issue] is often used interchangeably with 'problem' in IT."
+  },
+  {
+    "cardId": "ti_060",
+    "cardType": "flippable",
+    "sideA": "Si necesito más información, como pasos o capturas, le pregunto a quien reportó por Teams de inmediato.",
+    "sideB": [
+      {
+        "text": "If I need more info—like steps or screenshots—I ask the reporter on Teams right away.",
+        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_0.mp3"
+      },
+      {
+        "text": "If I require further details, such as reproduction steps, I contact the reporter immediately via Teams.",
+        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_1.mp3"
+      },
+      {
+        "text": "When I need more context, like screenshots, I reach out to the reporter on Teams instantly.",
+        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_2.mp3"
+      }
+    ],
+    "note": "[Reporter] refers to the person who created the ticket/bug report.\n\n[Right away] or [Instantly] emphasizes your responsiveness."
+  },
+  {
+    "cardId": "ti_061",
+    "cardType": "flippable",
+    "sideA": "Intento replicarlo yo mismo, o si me supera, lo escalo.",
+    "sideB": [
+      {
+        "text": "I try to replicate it myself, or if it's out of my depth, I escalate it.",
+        "audioSrc": "public/data/audio/tech_interview/ti_061_sideB_0.mp3"
+      },
+      {
+        "text": "I attempt to reproduce it, but if it's beyond my knowledge, I escalate.",
+        "audioSrc": "public/data/audio/tech_interview/ti_061_sideB_1.mp3"
+      },
+      {
+        "text": "I try to replicate it, and if it's too complex, I pass it up the chain.",
+        "audioSrc": "public/data/audio/tech_interview/ti_061_sideB_2.mp3"
+      }
+    ],
+    "note": "[Out of my depth] is a great idiom meaning the situation is beyond your current capability or knowledge.\n\n[Escalate] is the professional term for sending a ticket to a higher support tier."
+  },
+  {
+    "cardId": "ti_062",
+    "cardType": "flippable",
+    "sideA": "Uso System.out.println para depurar en el log del servidor (Java).",
+    "sideB": [
+      {
+        "text": "I use System.out.println for debugging in the server log.",
+        "audioSrc": "public/data/audio/tech_interview/ti_062_sideB_0.mp3"
+      },
+      {
+        "text": "I use print statements to debug backend issues in the server logs.",
+        "audioSrc": "public/data/audio/tech_interview/ti_062_sideB_1.mp3"
+      },
+      {
+        "text": "For server-side debugging, I rely on System.out.println.",
+        "audioSrc": "public/data/audio/tech_interview/ti_062_sideB_2.mp3"
+      }
+    ],
+    "note": "This refers to [Backend] debugging in Java contexts.\n\n[Server log] (like Catalan/Tomcat logs) is where these messages appear."
+  },
+  {
+    "cardId": "ti_063",
+    "cardType": "flippable",
+    "sideA": "Uso out.println para depurar en el navegador web (JSP).",
+    "sideB": [
+      {
+        "text": "I use out.println for debugging directly in the web browser.",
+        "audioSrc": "public/data/audio/tech_interview/ti_063_sideB_0.mp3"
+      },
+      {
+        "text": "For JSP debugging, I use out.println to see values in the browser.",
+        "audioSrc": "public/data/audio/tech_interview/ti_063_sideB_1.mp3"
+      },
+      {
+        "text": "I utilize out.println to debug frontend logic in the browser.",
+        "audioSrc": "public/data/audio/tech_interview/ti_063_sideB_2.mp3"
+      }
+    ],
+    "note": "This refers to [JSP] (JavaServer Pages) where `out` is an implicit object usually rendering to the [Frontend]."
+  },
+  {
+    "cardId": "ti_064",
+    "cardType": "flippable",
+    "sideA": "PL/SQL en EBS era mucho más profundo de lo que había visto; solo sabía lo básico de la universidad.",
+    "sideB": [
+      {
+        "text": "PL/SQL with EBS was way deeper than I'd seen—I only knew basics from school.",
+        "audioSrc": "public/data/audio/tech_interview/ti_064_sideB_0.mp3"
+      },
+      {
+        "text": "The PL/SQL in EBS was much more complex than what I learned in college.",
+        "audioSrc": "public/data/audio/tech_interview/ti_064_sideB_1.mp3"
+      },
+      {
+        "text": "EBS PL/SQL went far beyond the basic knowledge I had from school.",
+        "audioSrc": "public/data/audio/tech_interview/ti_064_sideB_2.mp3"
+      }
+    ],
+    "note": "[Way deeper] is a common colloquial way to say 'much more complex/profound'.\n\n~...than I saw...~ (Grammar: Use [than I had seen] (past perfect) to refer to the time before you started working with EBS.)"
+  },
+  {
+    "cardId": "ti_065",
+    "cardType": "flippable",
+    "sideA": "Yo diría: 'Gracias, revisando ahora. Te aviso en cuanto tenga novedades'.",
+    "sideB": [
+      {
+        "text": "I'd say: 'Thanks—checking now. I'll let you know as soon as I have an update.'",
+        "audioSrc": "public/data/audio/tech_interview/ti_065_sideB_0.mp3"
+      },
+      {
+        "text": "I would reply: 'Thanks, looking into it. I'll keep you posted.'",
+        "audioSrc": "public/data/audio/tech_interview/ti_065_sideB_1.mp3"
+      },
+      {
+        "text": "My response would be: 'Thanks. Checking now. I'll get back to you shortly.'",
+        "audioSrc": "public/data/audio/tech_interview/ti_065_sideB_2.mp3"
+      }
+    ],
+    "note": "[I'll keep you posted] is an excellent idiom for 'te mantendré informado'.\n\n[As soon as I have an update] is standard professional phrasing."
+  },
+  {
+    "cardId": "ti_066",
+    "cardType": "flippable",
+    "sideA": "Soy proactivo, persistente y aprendo rápido nuevas tecnologías.",
+    "sideB": [
+      {
+        "text": "I am proactive, persistent, and quick to learn new tech.",
+        "audioSrc": "public/data/audio/tech_interview/ti_066_sideB_0.mp3"
+      },
+      {
+        "text": "I'm proactive, persistent, and I pick up new technologies fast.",
+        "audioSrc": "public/data/audio/tech_interview/ti_066_sideB_1.mp3"
+      },
+      {
+        "text": "I have a proactive and persistent mindset, and I learn new tech quickly.",
+        "audioSrc": "public/data/audio/tech_interview/ti_066_sideB_2.mp3"
+      }
+    ],
+    "note": "[Quick to learn] or [Fast learner] are key phrases for interviews.\n\n[Persistent] means you don't give up easily on difficult problems."
+  },
+  {
+    "cardId": "ti_067",
+    "cardType": "flippable",
+    "sideA": "Mi inglés sigue mejorando, y en reuniones grandes tiendo a quedarme callado.",
+    "sideB": [
+      {
+        "text": "My English is still improving, and in big meetings I tend to stay quiet.",
+        "audioSrc": "public/data/audio/tech_interview/ti_067_sideB_0.mp3"
+      },
+      {
+        "text": "I'm still working on my English, so I tend to be quieter in large meetings.",
+        "audioSrc": "public/data/audio/tech_interview/ti_067_sideB_1.mp3"
+      },
+      {
+        "text": "My English is a work in progress, and I tend to listen more than speak in big groups.",
+        "audioSrc": "public/data/audio/tech_interview/ti_067_sideB_2.mp3"
+      }
+    ],
+    "note": "[Tend to] describes a habit or inclination.\n\n[Work in progress] is a positive way to say something is not yet perfect but is improving."
+  },
+  {
+    "cardId": "ti_068",
+    "cardType": "flippable",
+    "sideA": "La especificación del paquete no se ha actualizado correctamente.",
+    "sideB": [
+      {
+        "text": "The package specification hasn't been updated correctly.",
+        "audioSrc": "public/data/audio/tech_interview/ti_068_sideB_0.mp3"
+      },
+      {
+        "text": "The package spec failed to update properly.",
+        "audioSrc": "public/data/audio/tech_interview/ti_068_sideB_1.mp3"
+      },
+      {
+        "text": "There was an issue updating the package specification.",
+        "audioSrc": "public/data/audio/tech_interview/ti_068_sideB_2.mp3"
+      }
+    ],
+    "note": "In PL/SQL, a package has a [Specification] (header) and a [Body].\n\n[Spec] is the common short form."
+  },
+  {
+    "cardId": "ti_069",
+    "cardType": "flippable",
+    "sideA": "El campo del registro no se ha actualizado correctamente.",
+    "sideB": [
+      {
+        "text": "The record field has not been updated correctly.",
+        "audioSrc": "public/data/audio/tech_interview/ti_069_sideB_0.mp3"
+      },
+      {
+        "text": "The field in the record didn't update as expected.",
+        "audioSrc": "public/data/audio/tech_interview/ti_069_sideB_1.mp3"
+      },
+      {
+        "text": "The record field failed to update properly.",
+        "audioSrc": "public/data/audio/tech_interview/ti_069_sideB_2.mp3"
+      }
+    ],
+    "note": "[As expected] is standard terminology in bug reports to describe the desired behavior versus the actual behavior."
+  },
+  {
+    "cardId": "ti_070",
+    "cardType": "flippable",
+    "sideA": "Eso es todo por mi parte, gracias.",
+    "sideB": [
+      {
+        "text": "That's all for me, thanks.",
+        "audioSrc": "public/data/audio/tech_interview/ti_070_sideB_0.mp3"
+      },
+      {
+        "text": "That's everything from my side, thank you.",
+        "audioSrc": "public/data/audio/tech_interview/ti_070_sideB_1.mp3"
+      },
+      {
+        "text": "That's all on my end, thanks.",
+        "audioSrc": "public/data/audio/tech_interview/ti_070_sideB_2.mp3"
+      }
+    ],
+    "note": "Use [On my end] or [From my side] to refer to your part of the conversation or task."
+  },
+  {
+    "cardId": "ti_071",
+    "cardType": "flippable",
+    "sideA": "No por mi parte, gracias. (Respuesta a '¿Alguna pregunta?')",
+    "sideB": [
+      {
+        "text": "No on my end, thank you.",
+        "audioSrc": "public/data/audio/tech_interview/ti_071_sideB_0.mp3"
+      },
+      {
+        "text": "None from me, thanks.",
+        "audioSrc": "public/data/audio/tech_interview/ti_071_sideB_1.mp3"
+      },
+      {
+        "text": "Nothing from my side, thank you.",
+        "audioSrc": "public/data/audio/tech_interview/ti_071_sideB_2.mp3"
+      }
+    ],
+    "note": "Standard polite responses when asked \"Do you have any questions?\" in a meeting."
+  },
+  {
+    "cardId": "ti_072",
+    "cardType": "flippable",
+    "sideA": "No, creo que cubrimos todo.",
+    "sideB": [
+      {
+        "text": "No, I think we've covered everything.",
+        "audioSrc": "public/data/audio/tech_interview/ti_072_sideB_0.mp3"
+      },
+      {
+        "text": "No, I believe we went over everything.",
+        "audioSrc": "public/data/audio/tech_interview/ti_072_sideB_1.mp3"
+      },
+      {
+        "text": "No, I think that covers it all.",
+        "audioSrc": "public/data/audio/tech_interview/ti_072_sideB_2.mp3"
+      }
+    ],
+    "note": "[Covered everything] means all topics have been discussed.\n\n[Went over] is a phrasal verb meaning 'reviewed' or 'discussed'."
+  },
+  {
+    "cardId": "ti_073",
+    "cardType": "flippable",
+    "sideA": "Nada más por ahora. Gracias.",
+    "sideB": [
+      {
+        "text": "Nothing else for now. Thanks.",
+        "audioSrc": "public/data/audio/tech_interview/ti_073_sideB_0.mp3"
+      },
+      {
+        "text": "That's all for the moment. Thank you.",
+        "audioSrc": "public/data/audio/tech_interview/ti_073_sideB_1.mp3"
+      },
+      {
+        "text": "Nothing more at this time. Thanks.",
+        "audioSrc": "public/data/audio/tech_interview/ti_073_sideB_2.mp3"
+      }
+    ],
+    "note": "[For now] implies that you are satisfied at this specific moment."
+  },
+  {
+    "cardId": "ti_074",
+    "cardType": "flippable",
+    "sideA": "Ellos no dejaron documentación al respecto.",
+    "sideB": [
+      {
+        "text": "They didn't leave any documentation regarding this.",
+        "audioSrc": "public/data/audio/tech_interview/ti_074_sideB_0.mp3"
+      },
+      {
+        "text": "They left no documentation about it.",
+        "audioSrc": "public/data/audio/tech_interview/ti_074_sideB_1.mp3"
+      },
+      {
+        "text": "There is no documentation left on this matter.",
+        "audioSrc": "public/data/audio/tech_interview/ti_074_sideB_2.mp3"
+      }
+    ],
+    "note": "[Regarding] is a professional alternative to 'about'.\n\n~Regarding to this~ is incorrect. Never use 'to' after 'regarding'."
+  },
+  {
+    "cardId": "ti_075",
+    "cardType": "flippable",
+    "sideA": "¿No sé si ya lo testeaste?",
+    "sideB": [
+      {
+        "text": "I don't know if you have tested it yet.",
+        "audioSrc": "public/data/audio/tech_interview/ti_075_sideB_0.mp3"
+      },
+      {
+        "text": "I'm not sure if you've already tested it.",
+        "audioSrc": "public/data/audio/tech_interview/ti_075_sideB_1.mp3"
+      },
+      {
+        "text": "I don't know whether you have tested it or not.",
+        "audioSrc": "public/data/audio/tech_interview/ti_075_sideB_2.mp3"
+      }
+    ],
+    "note": "This is an indirect question. Use standard sentence order [if you have tested], not question order ~if have you tested~.\n\nUse [Yet] for negative/question contexts (ya/todavía) at the end of the sentence."
+  },
+  {
+    "cardId": "ti_076",
+    "cardType": "flippable",
+    "sideA": "Además, explícame algo.",
+    "sideB": [
+      {
+        "text": "Besides, explain something to me.",
+        "audioSrc": "public/data/audio/tech_interview/ti_076_sideB_0.mp3"
+      },
+      {
+        "text": "Also, please explain one thing to me.",
+        "audioSrc": "public/data/audio/tech_interview/ti_076_sideB_1.mp3"
+      },
+      {
+        "text": "Furthermore, explain something to me.",
+        "audioSrc": "public/data/audio/tech_interview/ti_076_sideB_2.mp3"
+      }
+    ],
+    "note": "**[114]**\n\nHere, [Besides] acts as a connector meaning 'In addition' or 'Also'. It is followed by a comma."
+  },
+  {
+    "cardId": "ti_077",
+    "cardType": "flippable",
+    "sideA": "Además, necesito saber otras cosas.",
+    "sideB": [
+      {
+        "text": "Besides, I need to know other things.",
+        "audioSrc": "public/data/audio/tech_interview/ti_077_sideB_0.mp3"
+      },
+      {
+        "text": "In addition, I need to know a few other things.",
+        "audioSrc": "public/data/audio/tech_interview/ti_077_sideB_1.mp3"
+      },
+      {
+        "text": "Also, there are other things I need to know.",
+        "audioSrc": "public/data/audio/tech_interview/ti_077_sideB_2.mp3"
+      }
+    ],
+    "note": "**[114]**\n\n[Besides] with an 'S' adds information. Think of the 'S' as a 'Plus' sign (+)."
+  },
+  {
+    "cardId": "ti_078",
+    "cardType": "flippable",
+    "sideA": "Al lado del cuadrado.",
+    "sideB": [
+      {
+        "text": "Beside the square.",
+        "audioSrc": "public/data/audio/tech_interview/ti_078_sideB_0.mp3"
+      },
+      {
+        "text": "Next to the square.",
+        "audioSrc": "public/data/audio/tech_interview/ti_078_sideB_1.mp3"
+      },
+      {
+        "text": "Located by the side of the square.",
+        "audioSrc": "public/data/audio/tech_interview/ti_078_sideB_2.mp3"
+      }
+    ],
+    "note": "**[114]**\n\n[Beside] (no 'S') refers to physical location.\n\n~Besides the square~ would mean 'In addition to the square' (incorrect context)."
+  },
+  {
+    "cardId": "ti_079",
+    "cardType": "flippable",
+    "sideA": "Al lado del rectángulo.",
+    "sideB": [
+      {
+        "text": "Beside the rectangle.",
+        "audioSrc": "public/data/audio/tech_interview/ti_079_sideB_0.mp3"
+      },
+      {
+        "text": "Next to the rectangle.",
+        "audioSrc": "public/data/audio/tech_interview/ti_079_sideB_1.mp3"
+      },
+      {
+        "text": "Positioned beside the rectangle.",
+        "audioSrc": "public/data/audio/tech_interview/ti_079_sideB_2.mp3"
+      }
+    ],
+    "note": "**[114]**\n\nUse [Beside] or [Next to] for location."
+  }
+
   ]
 }

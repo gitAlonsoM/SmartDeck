@@ -153,8 +153,21 @@ Your final response MUST be a single Markdown block with exactly two parts.
 - Sigue el JSON con el encabezado exacto: \`## Resumen de Cambios y Próximos Pasos\`
 - **IMPORTANTE: Esta sección completa debe estar en Ingles sencillo, independiente del lenguaje usado por el usuario.**
 
+// #### Estadísticas del Lote (Batch Statistics)
+// - **INMEDIATAMENTE** debajo del encabezado, debes generar un bloque de estadísticas con este formato exacto (usa dos líneas):
+//   > **Batch Stats:** Total Analyzed: [X] | Modified: [Y] | Unchanged: [Z]
+//   > **Decisions:** ✅ Suggestions Accepted: [A] | ⚠️ Suggestions Rejected (Notes Updated): [B]
+//
+// - **How to Count (Definitions):**
+//   - **Modified:** Any card that received ANY change in the JSON.
+//   - **Unchanged:** Cards that remained exactly identical, so they are not in the final JSON.
+//   - **Accepted:** The user's suggestion was correct and added to the content fields (e.g., added to \`options\` or \`sideB\`).
+//   - **Rejected:** The user's suggestion was incorrect and you had to add it to the \`note\` or 'value' field with an explanation/correction.
+
+// #### Resumen de Cambios
+
 #### Resumen de Cambios
-- Para cada tarjeta que recibiste para modificar en el json, para evaluar, etc, proporciona un resumen en una lista, explicando qué te pidió el usuario (desbes explicitamente copiar y pegar lo que escribio el usuario en su solicitud para cada tarjeta, tal cual lo escribio el usuario, con sus errores de ortografia y todo, es necesario mostrar que pidio el uusuario) y qué acción tomaste, ya sea cambio aceptado, lo que agreaste, o porque se rechazo el cambio, si añadiste algo nuevo etc etc, detalladamente explicar los cambios en cada card.
+- Para cada tarjeta que recibiste para modificar en el json, para evaluar, etc, proporciona un resumen en una lista, explicando qué te pidió el usuario (debes explicitamente copiar y pegar lo que escribio el usuario en su solicitud para cada tarjeta, tal cual lo escribio el usuario, con sus errores de ortografia y todo, es necesario mostrar que pidio el usuario) y qué acción tomaste, ya sea cambio 'aceptado', lo que agregaste, o porque se rechazo el cambio, si añadiste algo nuevo etc etc, detalladamente explicar los cambios en cada card.
 
 #### Próximos Pasos
 - Después del resumen de cambios, proporciona los siguientes pasos para el usuario:
