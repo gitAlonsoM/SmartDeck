@@ -1,265 +1,5 @@
 [
   {
-    "cardId": "ti_046",
-    "cardType": "flippable",
-    "sideA": "Las definiciones de los productos, como el SKU y la unidad de medida, se encuentran en una tabla maestra.",
-    "sideB": [
-      {
-        "text": "Product definitions, such as SKU and UOM, are found in a master table.",
-        "audioSrc": "public/data/audio/tech_interview/ti_046_sideB_0.mp3"
-      },
-      {
-        "text": "Item attributes like SKU and UOM are defined in the Master Item Organization table.",
-        "audioSrc": "public/data/audio/tech_interview/ti_046_sideB_1.mp3"
-      },
-      {
-        "text": "The Master Layer holds the product DNA, including SKU and UOM details.",
-        "audioSrc": "public/data/audio/tech_interview/ti_046_sideB_2.mp3"
-      },
-      {
-        "text": "Product definitions, such as SKU and UOM, are in a master table.",
-        "audioSrc": "public/data/audio/tech_interview/ti_046_sideB_3.mp3"
-      }
-    ],
-    "note": "[UOM] stands for Unit of Measure (Unit, Box, Kg, etc.).\n\n[SKU] (Stock Keeping Unit) is the standard term for the product code."
-  },
-  {
-    "cardId": "ti_061",
-    "cardType": "flippable",
-    "sideA": "Intento replicarlo yo mismo, o si me supera, lo escalo.",
-    "sideB": [
-      {
-        "text": "I try to replicate it myself, or if it's out of my depth, I escalate it.",
-        "audioSrc": "public/data/audio/tech_interview/ti_061_sideB_0.mp3"
-      },
-      {
-        "text": "I attempt to reproduce it, but if it's beyond my knowledge, I escalate.",
-        "audioSrc": "public/data/audio/tech_interview/ti_061_sideB_1.mp3"
-      },
-      {
-        "text": "I try to replicate it, and if it's too complex, I pass it up the chain.",
-        "audioSrc": "public/data/audio/tech_interview/ti_061_sideB_2.mp3"
-      },
-      {
-        "text": "I try to replicate it by myself, or if it is too much for me, I escalate it.",
-        "audioSrc": "public/data/audio/tech_interview/ti_061_sideB_3.mp3"
-      }
-    ],
-    "note": "[Out of my depth] is a great idiom meaning the situation is beyond your current capability or knowledge.\n\n[Escalate] is the professional term for sending a ticket to a higher support tier.\n\n~ ... or if it is to much for me... ~ (Incorrect spelling: 'to much' should be 'too much'.)"
-  },
-  {
-    "cardId": "ti_065",
-    "cardType": "flippable",
-    "sideA": "Yo diría: 'Gracias, revisando ahora. Te aviso en cuanto tenga novedades'.",
-    "sideB": [
-      {
-        "text": "I'd say: 'Thanks—checking now. I'll let you know as soon as I have an update.'",
-        "audioSrc": "public/data/audio/tech_interview/ti_065_sideB_0.mp3"
-      },
-      {
-        "text": "I would reply: 'Thanks, looking into it. I'll keep you posted.'",
-        "audioSrc": "public/data/audio/tech_interview/ti_065_sideB_1.mp3"
-      },
-      {
-        "text": "My response would be: 'Thanks. Checking now. I'll get back to you shortly.'",
-        "audioSrc": "public/data/audio/tech_interview/ti_065_sideB_2.mp3"
-      }
-    ],
-    "note": "[I'll keep you posted] is an excellent idiom for 'te mantendré informado'.\n\n[As soon as I have an update] is standard professional phrasing.\n\n~I'll let you know as soon as I get news.~ (Unnatural phrasing: In a professional context, use 'have an update' or 'hear back'. 'Get news' sounds like you are waiting for a broadcast.)"
-  },
-  {
-    "cardId": "ti_059",
-    "cardType": "flippable",
-    "sideA": "Necesito entender el problema completamente.",
-    "sideB": [
-      {
-        "text": "I need to understand the problem completely.",
-        "audioSrc": "public/data/audio/tech_interview/ti_059_sideB_0.mp3"
-      },
-      {
-        "text": "I need to fully grasp the issue.",
-        "audioSrc": "public/data/audio/tech_interview/ti_059_sideB_1.mp3"
-      },
-      {
-        "text": "I need to get a complete understanding of the problem.",
-        "audioSrc": "public/data/audio/tech_interview/ti_059_sideB_2.mp3"
-      },
-      {
-        "text": "I need to fully understand the problem.",
-        "audioSrc": "public/data/audio/tech_interview/ti_059_sideB_3.mp3"
-      }
-    ],
-    "note": "[Grasp] is a strong verb meaning to understand a complex concept fully.\n\n[Issue] is often used interchangeably with 'problem' in IT."
-  },
-  {
-    "cardId": "ti_071",
-    "cardType": "flippable",
-    "sideA": "No por mi parte, gracias. (Respuesta a '¿Alguna pregunta?')",
-    "sideB": [
-      {
-        "text": "No on my end, thank you.",
-        "audioSrc": "public/data/audio/tech_interview/ti_071_sideB_0.mp3"
-      },
-      {
-        "text": "None from me, thanks.",
-        "audioSrc": "public/data/audio/tech_interview/ti_071_sideB_1.mp3"
-      },
-      {
-        "text": "Nothing from my side, thank you.",
-        "audioSrc": "public/data/audio/tech_interview/ti_071_sideB_2.mp3"
-      },
-      {
-        "text": "Not on my end.",
-        "audioSrc": "public/data/audio/tech_interview/ti_071_sideB_3.mp3"
-      }
-    ],
-    "note": "Standard polite responses when asked \"Do you have any questions?\" in a meeting.\n\n~No on my side.~ (Unnatural: Use 'None on my side' or 'Nothing on my side'. 'No' implies a vote.)"
-  },
-  {
-    "cardId": "ti_060",
-    "cardType": "flippable",
-    "sideA": "Si necesito más información, como pasos o capturas, le pregunto a quien reportó por Teams de inmediato.",
-    "sideB": [
-      {
-        "text": "If I need more info—like steps or screenshots—I ask the reporter on Teams right away.",
-        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_0.mp3"
-      },
-      {
-        "text": "If I require further details, such as reproduction steps, I contact the reporter immediately via Teams.",
-        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_1.mp3"
-      },
-      {
-        "text": "When I need more context, like screenshots, I reach out to the reporter on Teams instantly.",
-        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_2.mp3"
-      },
-      {
-        "text": "If I need more info—like steps or screenshots—I ask the one who reported it on Teams.",
-        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_3.mp3"
-      }
-    ],
-    "note": "[Reporter] refers to the person who created the ticket/bug report.\n\n[Right away] or [Instantly] emphasizes your responsiveness."
-  },
-  {
-    "cardId": "ti_076",
-    "cardType": "flippable",
-    "sideA": "Además, explícame algo.",
-    "sideB": [
-      {
-        "text": "Besides, explain something to me.",
-        "audioSrc": "public/data/audio/tech_interview/ti_076_sideB_0.mp3"
-      },
-      {
-        "text": "Also, please explain one thing to me.",
-        "audioSrc": "public/data/audio/tech_interview/ti_076_sideB_1.mp3"
-      },
-      {
-        "text": "Furthermore, explain something to me.",
-        "audioSrc": "public/data/audio/tech_interview/ti_076_sideB_2.mp3"
-      }
-    ],
-    "note": "**[114]**\n\nHere, [Besides] acts as a connector meaning 'In addition' or 'Also'. It is followed by a comma.\n\n~Besides, explain to me something.~ (Incorrect word order: In English, the object comes before the recipient. Say 'Explain something to me'.)"
-  },
-  {
-    "cardId": "ti_045",
-    "cardType": "flippable",
-    "sideA": "El stock real de los productos está en los almacenes físicos.",
-    "sideB": [
-      {
-        "text": "The real product stock is located in the physical warehouses.",
-        "audioSrc": "public/data/audio/tech_interview/ti_045_sideB_0.mp3"
-      },
-      {
-        "text": "Physical on-hand quantity is stored within the Inventory Organizations.",
-        "audioSrc": "public/data/audio/tech_interview/ti_045_sideB_1.mp3"
-      },
-      {
-        "text": "The actual inventory is managed at the warehouse level.",
-        "audioSrc": "public/data/audio/tech_interview/ti_045_sideB_2.mp3"
-      },
-      {
-        "text": "The real product stock is in the warehouses.",
-        "audioSrc": "public/data/audio/tech_interview/ti_045_sideB_3.mp3"
-      }
-    ],
-    "note": "In Oracle EBS terminology, 'warehouses' are often referred to as [Inventory Organizations].\n\n[On-hand quantity] is the technical term for 'stock real' or 'existencias'."
-  },
-  {
-    "cardId": "ti_054",
-    "cardType": "flippable",
-    "sideA": "Tomo la retroalimentación como una oportunidad para mejorar.",
-    "sideB": [
-      {
-        "text": "I take feedback as a chance to get better.",
-        "audioSrc": "public/data/audio/tech_interview/ti_054_sideB_0.mp3"
-      },
-      {
-        "text": "I view feedback as an opportunity to improve.",
-        "audioSrc": "public/data/audio/tech_interview/ti_054_sideB_1.mp3"
-      },
-      {
-        "text": "I see feedback as a way to grow professionally.",
-        "audioSrc": "public/data/audio/tech_interview/ti_054_sideB_2.mp3"
-      },
-      {
-        "text": "I take feedback as an opportunity to grow.",
-        "audioSrc": "public/data/audio/tech_interview/ti_054_sideB_3.mp3"
-      }
-    ],
-    "note": "[Chance] is slightly more casual than [Opportunity], but both are excellent here.\n\n[To get better] is the most natural translation for 'mejorar' in a personal context."
-  },
-  {
-    "cardId": "ti_075",
-    "cardType": "flippable",
-    "sideA": "¿No sé si ya lo testeaste?",
-    "sideB": [
-      {
-        "text": "I don't know if you have tested it yet.",
-        "audioSrc": "public/data/audio/tech_interview/ti_075_sideB_0.mp3"
-      },
-      {
-        "text": "I'm not sure if you've already tested it.",
-        "audioSrc": "public/data/audio/tech_interview/ti_075_sideB_1.mp3"
-      },
-      {
-        "text": "I don't know whether you have tested it or not.",
-        "audioSrc": "public/data/audio/tech_interview/ti_075_sideB_2.mp3"
-      },
-      {
-        "text": "I don't know if you tested it.",
-        "audioSrc": "public/data/audio/tech_interview/ti_075_sideB_3.mp3"
-      }
-    ],
-    "note": "This is an indirect question. Use standard sentence order [if you have tested], not question order ~if have you tested~.\n\nUse [Yet] for negative/question contexts (ya/todavía) at the end of the sentence.\n\n~I don't know if you tested yet?~ (Grammar: When using 'yet', it is better to use the present perfect 'have you tested yet'. If using simple past, you should include the object 'it', as in 'tested it'.)"
-  },
-  {
-    "cardId": "ti_058",
-    "cardType": "flippable",
-    "sideA": "Arreglé la query para que extraiga datos de Order Management.",
-    "sideB": [
-      {
-        "text": "I fixed the query so it pulls from Order Management.",
-        "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_0.mp3"
-      },
-      {
-        "text": "I corrected the SQL to fetch data from the Order Management tables.",
-        "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_1.mp3"
-      },
-      {
-        "text": "I adjusted the query to retrieve information from OM.",
-        "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_2.mp3"
-      },
-      {
-        "text": "I fixed the query to get data from Order Management.",
-        "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_3.mp3"
-      },
-      {
-        "text": "I fixed the query to retrieve data from Order Management.",
-        "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_4.mp3"
-      }
-    ],
-    "note": "Verbs for data: [Pull], [Fetch], or [Retrieve].\n\n[Fixed] implies repairing code that was broken or incorrect."
-  },
-  {
     "cardId": "ti_074",
     "cardType": "flippable",
     "sideA": "Ellos no dejaron documentación al respecto.",
@@ -283,6 +23,10 @@
       {
         "text": "They didn't leave documentation about it.",
         "audioSrc": "public/data/audio/tech_interview/ti_074_sideB_4.mp3"
+      },
+      {
+        "text": "They left behind no documentation regarding the matter.",
+        "audioSrc": "public/data/audio/tech_interview/ti_074_sideB_5.mp3"
       }
     ],
     "note": "[Regarding] is a professional alternative to 'about'.\n\n~Regarding to this~ is incorrect. Never use 'to' after 'regarding'."
@@ -307,6 +51,10 @@
       {
         "text": "PL/SQL with EBS was much deeper than I thought — I only knew the basics from school.",
         "audioSrc": "public/data/audio/tech_interview/ti_064_sideB_3.mp3"
+      },
+      {
+        "text": "I was only familiar with the basics from university.",
+        "audioSrc": "public/data/audio/tech_interview/ti_064_sideB_4.mp3"
       }
     ],
     "note": "[Way deeper] is a common colloquial way to say 'much more complex/profound'.\n\n~...than I saw...~ (Grammar: Use [than I had seen] (past perfect) to refer to the time before you started working with EBS.)\n\n~...I only knew basics from school.~ (Grammar: You need the definite article 'the' before 'basics'. Correct: 'I only knew the basics'.)"
@@ -331,6 +79,10 @@
       {
         "text": "Product definitions (their DNA) and their stock are in different tables.",
         "audioSrc": "public/data/audio/tech_interview/ti_047_sideB_3.mp3"
+      },
+      {
+        "text": "Product definitions and inventory levels reside in distinct tables.",
+        "audioSrc": "public/data/audio/tech_interview/ti_047_sideB_4.mp3"
       }
     ],
     "note": "[Master Data] (definitions) vs [Transactional Data] (stock levels) is a key concept in database design.\n\n[Stored in] is the standard preposition for data in tables."
