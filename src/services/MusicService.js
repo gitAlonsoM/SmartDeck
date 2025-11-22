@@ -23,10 +23,16 @@ class MusicService {
             { name: "Tchaikovsky - Waltz of the Flowers", src: "public/assets/audio/music/Tchaikovsky - Waltz of the Flowers (The Nutcracker Suite).mp3" },
             { name: "Johann Sebastian Bach - Aria Da Capo", src: "public/assets/audio/music/Johann Sebastian Bach - Aria Da Capo.mp3" },
             { name: "Black Desert -Serendia - Alejandro Farm", src: "public/assets/audio/music/Black Desert -Serendia - Alejandro Farm.mp3" },
-            { name: "Olvia  I. Balenos  Black Desert", src: "public/assets/audio/music/Olvia  I. Balenos  Black Desert.mp3" }
-
-            
+            { name: "Olvia  I. Balenos  Black Desert", src: "public/assets/audio/music/Olvia  I. Balenos  Black Desert.mp3" },
+            { name: "DKC - Aquatic Ambience", src: "public/assets/audio/music/DKC- Aquatic Ambience..mp3" },
+            { name: "Diablo Lofi Beats to Study (Part 1)", src: "public/assets/audio/music/Diablo Lofi Beats to Study.mp3" },
+            { name: "Diablo Lofi Beats to Study (Part 2)", src: "public/assets/audio/music/Diablo Lofi Beats to Study 2.mp3" },
+            { name: "Lo-Fi Pkm OST Gold -Silver (Part 1)", src: "public/assets/audio/music/Lo-Fi Pkm OST Gold -Silver.mp3" },
+            { name: "Lo-Fi Pkm OST Gold -Silver (Part 2)", src: "public/assets/audio/music/Lo-Fi Pkm OST Gold -Silver 2.mp3" },
+            { name: "Souls of Fire", src: "public/assets/audio/music/Souls of Fire.mp3" },
+            { name: "Stickerbrush Symphony", src: "public/assets/audio/music/stickerbrush symphony.mp3" }
         ];
+        console.log(`VERIFY: MusicService initialized. Playlist loaded with ${this.playlist.length} tracks.`); 
         // Start with a random track index instead of always 0
         this.currentTrackIndex = Math.floor(Math.random() * this.playlist.length);
         this.isPlaying = false;
