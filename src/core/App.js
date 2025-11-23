@@ -338,7 +338,8 @@ class App {
                         (cardId) => this.handleUnignoreCard(cardId),
                         (cardId) => this.handleUnmarkCardForImprovement(cardId),
                         () => this.handleExportForImprovement(),
-                        (deckId) => this.handleDeleteDeckRequest(deckId) // Pass the new delete handler
+                        (deckId) => this.handleDeleteDeckRequest(deckId),
+                        () => this.handleClearAllImprovements()
                     ); 
             }
               const selectedDeck = this.state.allDecks[this.state.currentDeckId];
@@ -981,6 +982,23 @@ handleCreateDeckClicked() {
             );
         }
     }
+
+    async handleClearAllImprovements() {
+        const confirmed = await this.confirmationModal.show(
+            'Clear All Improvements?', 
+            'This will permanently remove all cards from the improvement list for this deck. This is useful for fixing sync errors. This action cannot be undone.'
+        );
+
+        if (confirmed) {
+            StorageService.clearAllImprovementData(this.state.currentDeckId);
+            this.render(); // Re-render to update UI
+            this.notificationModal.show(
+                'List Cleared',
+                'All improvement marks have been removed.',
+                { icon: 'fa-solid fa-trash-can', color: 'text-gray-500', bgColor: 'bg-gray-100 dark:bg-gray-700' }
+            );
+        }
+    }
 }
 
 

@@ -332,4 +332,40 @@ static STORAGE_KEY_DECK_PROGRESS_PREFIX = 'smart-decks-v3-deck-progress-';
             console.error("DEBUG: [StorageService] saveUnlockedDeckIds -> Error saving unlocked decks.", error);
         }
     }
+
+
+/**
+     * Clears the improvement data for a single card within a deck.
+     * @param {string} deckId The ID of the deck.
+     * @param {string} cardId The ID of the card to clear.
+     */
+    static clearImprovementForCard(deckId, cardId) {
+        if (!deckId || !cardId) return;
+        try {
+            const improvementData = this.loadImprovementData(deckId);
+            if (improvementData[cardId]) {
+                delete improvementData[cardId];
+                this.saveImprovementData(deckId, improvementData);
+                console.log(`DEBUG: [StorageService] clearImprovementForCard -> Cleared improvement data for card ${cardId} in deck ${deckId}.`);
+            }
+        } catch (error) {
+            console.error(`DEBUG: [StorageService] clearImprovementForCard -> Error clearing data for card ${cardId}.`, error);
+        }
+    }
+
+    /**
+     * Completely wipes all improvement data for a specific deck.
+     * Used to fix synchronization errors or reset the improvement queue.
+     * @param {string} deckId The ID of the deck.
+     */
+    static clearAllImprovementData(deckId) {
+        if (!deckId) return;
+        try {
+            const key = `${this.STORAGE_KEY_IMPROVEMENT_PREFIX}${deckId}`;
+            localStorage.removeItem(key);
+            console.log(`DEBUG: [StorageService] clearAllImprovementData -> Wiped all improvement data for deck ${deckId}.`);
+        } catch (error) {
+            console.error(`DEBUG: [StorageService] clearAllImprovementData -> Error wiping data for deck ${deckId}.`, error);
+        }
+    }
 }

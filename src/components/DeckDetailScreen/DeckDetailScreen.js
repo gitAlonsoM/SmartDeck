@@ -6,10 +6,10 @@ class DeckDetailScreen {
      * @param {function} onGoBack Callback to return to the deck list.
      * @param {function} onReset Callback to reset deck progress.
      * @param {function} onUnignoreCard Callback to restore an ignored card.
-     * @param {function} onUnmarkCardForImprovement Callback to remove a card from the improvement list.
-     * @param {function} onExportForImprovement Callback to handle the export of marked cards.
+     * @param {function} onDeleteDeck Callback to delete the entire deck.
+     * @param {function} onClearAllImprovements Callback to force clear all improvements.
      */
-  constructor(container, onStartQuiz, onGoBack, onReset, onUnignoreCard, onUnmarkCardForImprovement, onExportForImprovement, onDeleteDeck) {
+    constructor(container, onStartQuiz, onGoBack, onReset, onUnignoreCard, onUnmarkCardForImprovement, onExportForImprovement, onDeleteDeck, onClearAllImprovements) {
         this.container = container;
         this.onStartQuiz = onStartQuiz;
         this.onGoBack = onGoBack;
@@ -17,8 +17,9 @@ class DeckDetailScreen {
         this.onUnignoreCard = onUnignoreCard;
         this.onUnmarkCardForImprovement = onUnmarkCardForImprovement;
         this.onExportForImprovement = onExportForImprovement;
-        this.onDeleteDeck = onDeleteDeck; // Store the new callback
-        this.deck = null; // Store the current deck data for internal use
+        this.onDeleteDeck = onDeleteDeck;
+        this.onClearAllImprovements = onClearAllImprovements; // Store the new callback
+        this.deck = null; 
         console.log("DEBUG: [DeckDetailScreen] constructor -> Component instantiated.");
     }
 
@@ -241,6 +242,116 @@ class DeckDetailScreen {
         const exportBtn = document.getElementById('export-improve-btn');
         if (exportBtn) {
             exportBtn.addEventListener('click', () => this.onExportForImprovement());
+        }
+    }
+
+
+    /**
+     * Populates the list of cards marked for improvement.
+     * @param {Array} allCards The complete array of card objects from the deck.
+     * @param {object} improvementData An object where keys are cardIds.
+     */
+    _populateImprovementList(allCards, improvementData) {
+        const listContainer = document.getElementById('improvement-cards-list');
+        const badge = document.getElementById('improvement-count-badge');
+        const footer = document.getElementById('improvement-export-footer');
+        listContainer.innerHTML = '';
+
+        const markedCardIds = Object.keys(improvementData);
+        badge.textContent = markedCardIds.length;
+
+        // CRITICAL FIX: The footer (where the Clear button lives) must be visible 
+        // if there is ANY data in storage, even if the cards can't be found (Ghost Bug).
+        if (markedCardIds.length > 0) {
+            footer.classList.remove('hidden');
+            footer.classList.add('flex'); // Ensure flex display is active
+        } else {
+            footer.classList.add('hidden');
+            footer.classList.remove('flex');
+            listContainer.innerHTML = '<p class="text-gray-500 dark:text-gray-400 text-sm">No cards marked for improvement.</p>';
+            return;
+        }
+
+        const cardMap = new Map(allCards.map(c => [c.cardId, c]));
+        let validCardsFound = 0;
+
+        markedCardIds.forEach(cardId => {
+            const card = cardMap.get(cardId);
+            const review = improvementData[cardId];
+            
+            if (card) {
+                validCardsFound++;
+                const cardText = this._getCardDisplayText(card);
+                const item = document.createElement('div');
+                item.className = 'p-3 bg-gray-50 dark:bg-gray-700/50 rounded-md';
+                item.innerHTML = `
+                    <div class="flex justify-between items-start gap-4">
+                        <div class="flex-grow min-w-0">
+                            <p class="font-semibold text-gray-800 dark:text-gray-200 break-words">${cardText}</p>
+                            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Reasons: ${review.reasons.join(', ') || 'N/A'}</p>
+                            ${review.note ? `<p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Note: <span class="italic">${review.note}</span></p>` : ''}
+                        </div>
+                        <button data-card-id="${cardId}" class="unmark-card-btn text-xs font-semibold text-red-500 hover:text-red-700 dark:text-red-400 dark:hover:text-red-300 transition-colors flex-shrink-0">&times; </button>
+                    </div>
+                `;
+                listContainer.appendChild(item);
+            }
+        });
+
+        // If data exists in storage but no valid cards matched (The Phantom Bug), show a warning
+        if (markedCardIds.length > 0 && validCardsFound === 0) {
+            listContainer.innerHTML = `
+                <div class="p-3 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 rounded-md text-sm mb-2">
+                    <i class="fas fa-exclamation-triangle mr-2"></i>
+                    <strong>Data Sync Error:</strong> ${markedCardIds.length} cards are marked, but they don't match the current deck content. Use "Clear All" to fix this.
+                </div>
+            `;
+        }
+    }
+
+    /**
+     * Attaches all necessary event listeners to the component's elements.
+     */
+    setupEventListeners() {
+        document.getElementById('start-quiz-btn').addEventListener('click', () => this.onStartQuiz());
+        document.getElementById('back-to-decks-btn').addEventListener('click', () => this.onGoBack());
+        document.getElementById('reset-deck-btn').addEventListener('click', () => this.onResetDeck());
+        
+        const deleteDeckBtn = document.getElementById('delete-deck-btn');
+        if (deleteDeckBtn) {
+             deleteDeckBtn.addEventListener('click', () => this.onDeleteDeck(this.deck.id));
+        }
+
+        this.container.addEventListener('click', (event) => {
+            const restoreButton = event.target.closest('.restore-card-btn');
+            if (restoreButton) {
+                const cardId = restoreButton.dataset.cardId;
+                this.onUnignoreCard(cardId);
+            }
+            
+            const unmarkButton = event.target.closest('.unmark-card-btn');
+            if (unmarkButton) {
+                const cardId = unmarkButton.dataset.cardId;
+                this.onUnmarkCardForImprovement(cardId);
+            }
+        });
+
+        const exportBtn = document.getElementById('export-improve-btn');
+        if (exportBtn) {
+            exportBtn.addEventListener('click', () => this.onExportForImprovement());
+        }
+
+        // New Listener for Force Clear
+        const clearAllBtn = document.getElementById('force-clear-improvements-btn');
+        if (clearAllBtn) {
+            clearAllBtn.addEventListener('click', () => {
+                // Defensive check to ensure the callback exists
+                if (this.onClearAllImprovements) {
+                    this.onClearAllImprovements();
+                } else {
+                    console.error("DEBUG: [DeckDetailScreen] onClearAllImprovements callback is not defined.");
+                }
+            });
         }
     }
 }
