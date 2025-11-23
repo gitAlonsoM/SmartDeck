@@ -82,80 +82,7 @@ body {
     transform: rotateY(180deg);
 }
 
-/* The main disc body - contains the base texture and spins */
-#music-disc {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    position: relative;
-    
-    /* Authentic vinyl texture: a dark base with very subtle grooves */
-    background-color: #1c1c1c; 
-    background-image:
-        repeating-radial-gradient(
-            circle at center, 
-            rgba(255, 255, 255, 0.04) 0, 
-            rgba(255, 255, 255, 0.04) 1px, 
-            transparent 1px, 
-            transparent 3px
-        );
-    
-     /* A softer, more natural shadow with more blur and no spread */
-    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.4), 
-                inset 0 0 15px rgba(0,0,0,0.7);
-}
 
-/* DYNAMIC SHEEN: A separate layer for the light reflection.
-   This layer will rotate independently of the disc to simulate a static light source. */
-#music-disc::after {
-    content: '';
-    position: absolute;
-    top: -10%; left: -10%; /* Make it slightly larger to avoid hard edges */
-    width: 120%;
-    height: 120%;
-    border-radius: 50%;
-    
-    /* A soft, natural light reflection, not hard lines */
-    background-image: radial-gradient(
-        circle at 100% 100%, 
-        rgba(255, 255, 255, 0.1) 0%, 
-        rgba(255, 255, 255, 0.05) 15%, 
-        transparent 40%
-    );
-    
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-/* The central label, designed to match the reference image */
-#disc-label {
-    pointer-events: none;
-}
-#disc-label > div {
-    background-color: #ccc;
-    background-image:
-        radial-gradient(circle at center, #111 18%, transparent 19%),
-        repeating-radial-gradient(
-            circle at center,
-            rgba(0,0,0,0.1) 0, rgba(0,0,0,0.1) 1px,
-            transparent 1px, transparent 4px
-        ),
-        radial-gradient(circle at center, #bbb, #ddd);
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.4);
-}
-
-/* --- PLAYING STATE --- */
-
-/* 1. Apply the main spinning animation to the disc */
-#music-disc.is-playing {
-    animation: spin 4s linear infinite;
-}
-
-/* 2. When playing, fade in the sheen layer and apply its independent, slower rotation */
-#music-disc.is-playing::after {
-    opacity: 1;
-    animation: sheen-rotate 12s linear infinite; /* Slower, independent rotation */
-}
 
 /* Marquee (Scrolling Text) Animation */
 .marquee {
@@ -169,19 +96,7 @@ body {
     100% { transform: translateX(-100%); }
 }
 
-/* --- KEYFRAME DEFINITIONS --- */
 
-/* Main animation for the disc body */
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to   { transform: rotate(360deg); }
-}
-
-/* Independent, slower animation for the light reflection layer */
-@keyframes sheen-rotate {
-    from { transform: rotate(0deg); }
-    to   { transform: rotate(360deg); }
-}
 
 /* Basic styling for code blocks */
 pre.code-block {

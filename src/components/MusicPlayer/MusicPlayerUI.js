@@ -17,14 +17,15 @@ class MusicPlayerUI {
             console.log("DEBUG: [MusicPlayerUI] render -> DOM updated, attempting to cache elements and setup listeners.");
             
             // Cache all necessary DOM elements NOW, after DOM update
-            this.playPauseBtn = this.container.querySelector('#play-pause-btn'); // Use querySelector scoped to container
-            this.prevTrackBtn = this.container.querySelector('#prev-track-btn'); // Use querySelector scoped to container
-            this.nextTrackBtn = this.container.querySelector('#next-track-btn'); // Use querySelector scoped to container
-            this.trackNameEl = this.container.querySelector('#track-name');       // Use querySelector scoped to container
-            this.discEl = this.container.querySelector('#music-disc');           // Use querySelector scoped to container
-
+            this.playPauseBtn = this.container.querySelector('#play-pause-btn'); 
+            this.prevTrackBtn = this.container.querySelector('#prev-track-btn'); 
+            this.nextTrackBtn = this.container.querySelector('#next-track-btn'); 
+            this.trackNameEl = this.container.querySelector('#track-name');       
+            // Removed this.discEl selection logic
+            
             // Check if elements were found before proceeding
-            if (!this.playPauseBtn || !this.prevTrackBtn || !this.nextTrackBtn || !this.trackNameEl || !this.discEl) {
+            // Removed !this.discEl check
+            if (!this.playPauseBtn || !this.prevTrackBtn || !this.nextTrackBtn || !this.trackNameEl) {
                 console.error("DEBUG: [MusicPlayerUI] render -> Failed to find one or more essential UI elements after DOM update.");
                 return; // Stop if elements aren't found
             }
@@ -72,14 +73,15 @@ class MusicPlayerUI {
         const icon = this.playPauseBtn.querySelector('i');
         icon.classList.toggle('fa-play', !isPlaying);
         icon.classList.toggle('fa-pause', isPlaying);
-
-        // Update spinning disc animation
-        this.discEl.classList.toggle('is-playing', isPlaying);
+        // Removed disc animation logic
+        // this.discEl.classList.toggle('is-playing', isPlaying);
 
         // Update track name and marquee animation
         this.trackNameEl.textContent = trackName;
         this.trackNameEl.title = trackName;
         
         this.trackNameEl.classList.toggle('marquee', isPlaying);
+        
+        console.log(`VERIFY: [MusicPlayerUI] UI Updated. Playing: ${isPlaying}, Track: ${trackName}`);
     }
 }

@@ -7543,12 +7543,12 @@
           "isCorrect": false
         }
       ],
-      "correctAnswer": "A: How was your presentation? B: It could have gone better, to be honest.",
+      "correctAnswer": "A: How was your presentation? B: It could have been better, to be honest.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_260.mp3",
       "hint": "This expression is used to evaluate the outcome of events like meetings, interviews, or performances.",
       "content": {
         "type": "text",
-        "value": "[Go] (past participle 'gone') is used to talk about the progress or outcome of a situation or event. 'It went well' or 'it went badly' are common expressions.\n\n~Done~ is used for personal performance ('I could have done better').\n~Been~ is the verb 'to be' and doesn't fit the context of progression."
+        "value": "**[115]**\nnWhile [gone] focuses on the *progress* or *flow* of the event, 'been' focuses on the state. Ideally, 'How was it?' matches 'It has been...'.\n\n~Done~ is incorrect because events (like a presentation) cannot 'do' things; only people can.\n~Went~ is the past simple and cannot follow 'could have'."
       }
     },
     {
@@ -15292,6 +15292,209 @@
       "content": {
         "type": "text",
         "value": "**[111]**\n\nThe verb [to refer to] means 'to mention' or 'consult'. The preposition is required.\n\nThe affirmative is: 'He referred [to] the document.'\n\n~refer on~ or ~refer about~ are incorrect."
+      }
+    },
+    {
+      "cardId": "egac_528",
+      "category": "Been vs. Gone: The Mirror Rule",
+      "sentenceParts": {
+        "prefix": "A: How has your week been? B: It has ",
+        "suffix": " really busy."
+      },
+      "options": [
+        {
+          "text": "been",
+          "isCorrect": true
+        },
+        {
+          "text": "gone",
+          "isCorrect": false
+        },
+        {
+          "text": "done",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A: How has your week been? B: It has been really busy.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_528.mp3",
+      "hint": "Follow the Mirror Rule: The question uses 'been', so the answer should reflect it.",
+      "content": {
+        "type": "text",
+        "value": "**[115]**\n\nAccording to the **Mirror Rule**, since the question uses **TO BE** (How has... *been*?), the most natural answer also uses [been].\n\n~Gone~ would be the answer to 'How has it gone?'.\n~Done~ is incorrect because a 'week' is an event/period, not an agent that does things."
+      }
+    },
+    {
+      "cardId": "egac_529",
+      "category": "Been vs. Gone: The Mirror Rule",
+      "sentenceParts": {
+        "prefix": "A: How is the project going? B: It has ",
+        "suffix": " smoothly so far."
+      },
+      "options": [
+        {
+          "text": "gone",
+          "isCorrect": true
+        },
+        {
+          "text": "been",
+          "isCorrect": false
+        },
+        {
+          "text": "done",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A: How is the project going? B: It has gone smoothly so far.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_529.mp3",
+      "hint": "The question uses 'going' (TO GO), so mirror that verb in your answer.",
+      "content": {
+        "type": "text",
+        "value": "**[115]**\n\nAccording to the **Mirror Rule**, since the question uses **TO GO** (How is it *going*?), the correct answer reflects this with [gone]. We focus on the *flow* or *progress* of the project.\n\n~Been~ focuses on the state/quality, but doesn't match the verb 'go'.\n~Done~ is incorrect for an event subject."
+      }
+    },
+    {
+      "cardId": "egac_530",
+      "category": "Been vs. Gone: Agents (People)",
+      "sentenceParts": {
+        "prefix": "The presentation didn't go well, but I know I could have ",
+        "suffix": " better."
+      },
+      "options": [
+        {
+          "text": "done",
+          "isCorrect": true
+        },
+        {
+          "text": "gone",
+          "isCorrect": false
+        },
+        {
+          "text": "been",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "The presentation didn't go well, but I know I could have done better.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_530.mp3",
+      "hint": "Look at the subject ('I'). Is it a person or an event?",
+      "content": {
+        "type": "text",
+        "value": "**[115]**\n\nWhen the subject is a person ('I'), we use [done] to describe performance or action.\n\n~Gone~ and ~Been~ are used for **events** (e.g., 'The presentation could have gone/been better'). People *do* things; events *are* or *go*."
+      }
+    },
+    {
+      "cardId": "egac_531",
+      "category": "Emphatic Do",
+      "sentenceParts": {
+        "prefix": "A: I don't think you submitted the bug report. B: I ",
+        "suffix": " submit it! Check your inbox now."
+      },
+      "options": [
+        {
+          "text": "did",
+          "isCorrect": true
+        },
+        {
+          "text": "have",
+          "isCorrect": false
+        },
+        {
+          "text": "do",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "A: I don't think you submitted the bug report. B: I did submit it! Check your inbox now.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_531.mp3",
+      "hint": "This structure is used to strongly contradict a statement or insist on the truth.",
+      "content": {
+        "type": "text",
+        "value": "**[116]**\n\nThis is the **Emphatic Do** used to confirm the action against a challenge. The Past Simple auxiliary [did] is used because the main verb ('submit') is implied to be in the simple past.\n\n~Have~ is the wrong auxiliary for the simple past. ~Do~ is for present tense."
+      }
+    },
+    {
+      "cardId": "egac_532",
+      "category": "Performance (Do + Adverb)",
+      "sentenceParts": {
+        "prefix": "The new developer ",
+        "suffix": " exceptionally well during his first sprint reviews."
+      },
+      "options": [
+        {
+          "text": "did",
+          "isCorrect": true
+        },
+        {
+          "text": "made",
+          "isCorrect": false
+        },
+        {
+          "text": "went",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "The new developer did exceptionally well during his first sprint reviews.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_532.mp3",
+      "hint": "Use the correct verb for describing performance or results.",
+      "content": {
+        "type": "text",
+        "value": "**[116]**\n\nWe use the verb [did] (the conjugated form of 'do') followed by an adverb like [well] to talk about performance or results in a task (sprint reviews).\n\n~Made~ and ~went~ are commonly confused verbs. 'Went' refers to the flow of the event itself (e.g., 'The review went well'), but 'did' refers to the subject's *performance*."
+      }
+    },
+    {
+      "cardId": "egac_533",
+      "category": "Emphatic Do",
+      "sentenceParts": {
+        "prefix": "She told me she loves React, but she hardly uses it. A: No, she ",
+        "suffix": " use it—she’s just shy about her code."
+      },
+      "options": [
+        {
+          "text": "does",
+          "isCorrect": true
+        },
+        {
+          "text": "is",
+          "isCorrect": false
+        },
+        {
+          "text": "has",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "She told me she loves React, but she hardly uses it. A: No, she does use it—she’s just shy about her code.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_533.mp3",
+      "hint": "The verb is 'use' (base form), so the emphasis requires a present tense auxiliary for a singular subject.",
+      "content": {
+        "type": "text",
+        "value": "**[116]**\n\nHere, the Emphatic [does] contradicts the assumption that 'she hardly uses it'. The structure is 'Subject + does + Base Verb (use)' for the third person singular in the present tense.\n\n~Is~ and ~has~ are the wrong auxiliary verbs for the main verb 'use'."
+      }
+    },
+    {
+      "cardId": "egac_534",
+      "category": "Performance (Do + Adverb)",
+      "sentenceParts": {
+        "prefix": "I was very nervous before the interview, but thankfully, I ",
+        "suffix": " fine."
+      },
+      "options": [
+        {
+          "text": "did",
+          "isCorrect": true
+        },
+        {
+          "text": "went",
+          "isCorrect": false
+        },
+        {
+          "text": "made",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "I was very nervous before the interview, but thankfully, I did fine.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_534.mp3",
+      "hint": "When describing your personal outcome or progress, use 'do' with an adverb like 'fine' or 'well'.",
+      "content": {
+        "type": "text",
+        "value": "**[116]**\n\nThe structure [Subject + did + Adverb] is correct for describing personal performance in the past. It means 'my performance was fine'.\n\n~Went~ is typically used for the event itself ('The interview went fine').\n~Made~ is incorrect."
       }
     }
   ]

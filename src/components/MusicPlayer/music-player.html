@@ -1,30 +1,36 @@
 <!-- src\components\MusicPlayer\music-player.html -->
-<div id="music-player-container" class="w-full mt-8 p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex items-center justify-between space-x-4">
+<div id="music-player-container" class="group relative w-full mt-8 p-5 rounded-2xl overflow-hidden shadow-[0_20px_50px_-12px_rgba(79,70,229,0.3)] border border-white/10 transition-all duration-300 hover:scale-[1.01]">
     
-    <div class="flex items-center space-x-4 overflow-hidden flex-1">
-        <div id="disc-container" class="relative w-28 h-28 flex-shrink-0 flex items-center justify-center">
-            <div class="relative w-16 h-16">
-                <div id="music-disc" class="w-full h-full"></div>
-                <div id="disc-label" class="absolute inset-0 flex items-center justify-center">
-                    <div class="w-5 h-5 bg-gray-100 dark:bg-gray-300 rounded-full border-2 border-gray-500 shadow-inner"></div>
-                </div>
+    <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-[#1e1b4b] to-slate-900 z-0"></div>
+    
+    <div class="absolute -left-10 -top-10 w-40 h-40 bg-indigo-500/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-purple-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="relative z-10 flex items-center justify-between gap-6">
+        
+        <div class="flex items-center overflow-hidden flex-1 gap-4">
+            <div class="hidden sm:flex items-center justify-center w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/10 text-indigo-300 shadow-inner">
+                <i class="fas fa-music"></i>
+            </div>
+
+            <div id="track-info-container" class="w-full overflow-hidden whitespace-nowrap text-left mask-linear-fade">
+                 <p id="track-name" class="font-bold text-lg md:text-xl text-transparent bg-clip-text bg-gradient-to-r from-white via-indigo-100 to-indigo-200 tracking-wide drop-shadow-sm" title="Track Name">
+                    Select Play to Start
+                </p>
             </div>
         </div>
-        
-        <div id="track-info-container" class="flex-grow overflow-hidden whitespace-nowrap">
-            <p id="track-name" class="font-semibold" title="Track Name">Select Play to Start</p>
-        </div>
-    </div>
 
-    <div class="flex items-center space-x-2 sm:space-x-4">
-        <button id="prev-track-btn" class="text-gray-600 dark:text-gray-300 hover:text-indigo-500 transition-colors">
-            <i class="fas fa-backward-step fa-lg"></i>
-        </button>
-        <button id="play-pause-btn" class="w-12 h-12 flex items-center justify-center bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition-transform transform hover:scale-110 shadow-lg">
-            <i class="fas fa-play fa-lg"></i>
-        </button>
-        <button id="next-track-btn" class="text-gray-600 dark:text-gray-300 hover:text-indigo-500 transition-colors">
-            <i class="fas fa-forward-step fa-lg"></i>
-        </button>
+        <div class="flex items-center gap-3 sm:gap-5">
+            <button id="prev-track-btn" class="text-slate-400 hover:text-white transition-colors transform active:scale-95">
+                <i class="fas fa-backward-step fa-lg"></i>
+            </button>
+            
+            <button id="play-pause-btn" class="relative w-14 h-14 flex items-center justify-center rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-lg shadow-indigo-500/40 hover:shadow-indigo-500/60 hover:from-indigo-400 hover:to-purple-500 transition-all duration-300 transform hover:scale-105 active:scale-95 border border-white/20">
+                <i class="fas fa-play fa-xl pl-1"></i> </button>
+            
+            <button id="next-track-btn" class="text-slate-400 hover:text-white transition-colors transform active:scale-95">
+                <i class="fas fa-forward-step fa-lg"></i>
+            </button>
+        </div>
     </div>
 </div>
