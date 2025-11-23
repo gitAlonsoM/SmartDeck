@@ -1,90 +1,176 @@
 [
   {
-    "cardId": "ti_074",
-    "cardType": "flippable",
-    "sideA": "Ellos no dejaron documentación al respecto.",
-    "sideB": [
+    "cardId": "egac_019",
+    "category": "Extreme Adjectives",
+    "sentenceParts": {
+      "prefix": "After running the marathon, he was ",
+      "suffix": " exhausted."
+    },
+    "options": [
       {
-        "text": "They didn't leave any documentation regarding this.",
-        "audioSrc": "public/data/audio/tech_interview/ti_074_sideB_0.mp3"
+        "text": "absolutely",
+        "isCorrect": true
       },
       {
-        "text": "They left no documentation about it.",
-        "audioSrc": "public/data/audio/tech_interview/ti_074_sideB_1.mp3"
+        "text": "very",
+        "isCorrect": false
       },
       {
-        "text": "There is no documentation left on this matter.",
-        "audioSrc": "public/data/audio/tech_interview/ti_074_sideB_2.mp3"
-      },
-      {
-        "text": "They didn't leave any documentation about it.",
-        "audioSrc": "public/data/audio/tech_interview/ti_074_sideB_3.mp3"
-      },
-      {
-        "text": "They didn't leave documentation about it.",
-        "audioSrc": "public/data/audio/tech_interview/ti_074_sideB_4.mp3"
-      },
-      {
-        "text": "They left behind no documentation regarding the matter.",
-        "audioSrc": "public/data/audio/tech_interview/ti_074_sideB_5.mp3"
+        "text": "much",
+        "isCorrect": false
       }
     ],
-    "note": "[Regarding] is a professional alternative to 'about'.\n\n~Regarding to this~ is incorrect. Never use 'to' after 'regarding'."
+    "correctAnswer": "After running the marathon, he was absolutely exhausted.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_019.mp3",
+    "hint": "The word 'exhausted' comes from the Latin 'exhaurire', meaning 'to draw out' or 'drain'.",
+    "content": {
+      "type": "text",
+      "value": "**[69]**\n\n[Exhausted] is an 'extreme' or 'non-gradable' adjective, meaning it already implies 'very tired'. It must be intensified with adverbs like [absolutely] or [completely].\n\n~very~ is used with gradable adjectives (e.g., 'very tired'), not extreme ones.\n~much~ is grammatically incorrect here; it doesn't fit as an intensifier for this adjective."
+    }
   },
   {
-    "cardId": "ti_064",
-    "cardType": "flippable",
-    "sideA": "PL/SQL en EBS era mucho más profundo de lo que había visto; solo sabía lo básico de la universidad.",
-    "sideB": [
+    "cardId": "egac_204",
+    "category": "Results: 'Do well'",
+    "sentenceParts": {
+      "prefix": "I really hope I ",
+      "suffix": " well on the exam tomorrow."
+    },
+    "options": [
       {
-        "text": "PL/SQL with EBS was way deeper than I'd seen—I only knew basics from school.",
-        "audioSrc": "public/data/audio/tech_interview/ti_064_sideB_0.mp3"
+        "text": "do",
+        "isCorrect": true
       },
       {
-        "text": "The PL/SQL in EBS was much more complex than what I learned in college.",
-        "audioSrc": "public/data/audio/tech_interview/ti_064_sideB_1.mp3"
+        "text": "go",
+        "isCorrect": false
       },
       {
-        "text": "EBS PL/SQL went far beyond the basic knowledge I had from school.",
-        "audioSrc": "public/data/audio/tech_interview/ti_064_sideB_2.mp3"
-      },
-      {
-        "text": "PL/SQL with EBS was much deeper than I thought — I only knew the basics from school.",
-        "audioSrc": "public/data/audio/tech_interview/ti_064_sideB_3.mp3"
-      },
-      {
-        "text": "I was only familiar with the basics from university.",
-        "audioSrc": "public/data/audio/tech_interview/ti_064_sideB_4.mp3"
+        "text": "make",
+        "isCorrect": false
       }
     ],
-    "note": "[Way deeper] is a common colloquial way to say 'much more complex/profound'.\n\n~...than I saw...~ (Grammar: Use [than I had seen] (past perfect) to refer to the time before you started working with EBS.)\n\n~...I only knew basics from school.~ (Grammar: You need the definite article 'the' before 'basics'. Correct: 'I only knew the basics'.)"
+    "correctAnswer": "I really hope I do well on the exam tomorrow.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_204.mp3",
+    "hint": "This contrasts with 'go', which describes how a situation progresses ('How did the exam go?').",
+    "content": {
+      "type": "text",
+      "value": "The verb [do] is used in expressions like 'do well' or 'do badly' to talk about performance in a task or event.\n\n~go~ is used for the progress of a situation ('How's it going?') but not for personal performance in this way.\n~make~ is used for creating or producing something."
+    }
   },
   {
-    "cardId": "ti_047",
-    "cardType": "flippable",
-    "sideA": "Las definiciones de los productos (su ADN) y su stock están en tablas distintas.",
-    "sideB": [
+    "cardId": "egac_107",
+    "category": "Superlatives: Regular (most)",
+    "sentenceParts": {
+      "prefix": "This is ",
+      "suffix": " book I have ever read."
+    },
+    "options": [
       {
-        "text": "Product definitions (their DNA) and their stock levels are stored in separate tables.",
-        "audioSrc": "public/data/audio/tech_interview/ti_047_sideB_0.mp3"
+        "text": "the most interesting",
+        "isCorrect": true
       },
       {
-        "text": "We separate the item master data from the physical on-hand quantities into different tables.",
-        "audioSrc": "public/data/audio/tech_interview/ti_047_sideB_1.mp3"
+        "text": "more interesting",
+        "isCorrect": false
       },
       {
-        "text": "The Master Item table defines the product, while a different table tracks the physical inventory.",
-        "audioSrc": "public/data/audio/tech_interview/ti_047_sideB_2.mp3"
-      },
-      {
-        "text": "Product definitions (their DNA) and their stock are in different tables.",
-        "audioSrc": "public/data/audio/tech_interview/ti_047_sideB_3.mp3"
-      },
-      {
-        "text": "Product definitions and inventory levels reside in distinct tables.",
-        "audioSrc": "public/data/audio/tech_interview/ti_047_sideB_4.mp3"
+        "text": "a most interesting",
+        "isCorrect": false
       }
     ],
-    "note": "[Master Data] (definitions) vs [Transactional Data] (stock levels) is a key concept in database design.\n\n[Stored in] is the standard preposition for data in tables."
+    "correctAnswer": "This is the most interesting book I have ever read.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_107.mp3",
+    "hint": "This structure is often combined with the present perfect to talk about a unique life experience.",
+    "content": {
+      "type": "text",
+      "value": "**[27]**\n\nThe [superlative form] for long adjectives is [the most + adjective]. It is often used with the present perfect ('I have ever...') to talk about life experiences.\n\n~more interesting~ is the comparative form, which is used to compare two things, not to single out one from a group.\n~a most interesting~ is a different, more formal structure meaning 'a very interesting' and is not a true superlative."
+    }
+  },
+  {
+    "cardId": "egac_013",
+    "category": "Prepositions at the End of Questions",
+    "sentenceParts": {
+      "prefix": "What are you looking ",
+      "suffix": "?"
+    },
+    "options": [
+      {
+        "text": "for",
+        "isCorrect": true
+      },
+      {
+        "text": "of",
+        "isCorrect": false
+      },
+      {
+        "text": "with",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "What are you looking for?",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_013.mp3",
+    "hint": "The very formal alternative is 'For what are you looking?', but this is rarely used in conversation.",
+    "content": {
+      "type": "text",
+      "value": "**[111]**\n\nIn modern English, it's natural to end a question with a preposition, especially when it's part of a phrasal verb like **look for** (meaning 'to search').\n\n~of~ and ~with~ are incorrect prepositions here. They do not form phrasal verbs with 'look' that fit this context."
+    }
+  },
+  {
+    "cardId": "egac_154",
+    "category": "Present Habits: Be used to",
+    "sentenceParts": {
+      "prefix": "I live in a noisy city, so I",
+      "suffix": " the traffic."
+    },
+    "options": [
+      {
+        "text": "'m used to",
+        "isCorrect": true
+      },
+      {
+        "text": " used to",
+        "isCorrect": false
+      },
+      {
+        "text": "'m use to",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "I live in a noisy city, so I'm used to the traffic.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_154.mp3",
+    "hint": "This phrase describes a state of familiarity or adaptation to a new situation.",
+    "content": {
+      "type": "text",
+      "value": "**[15]**\n\n[Be used to] means to be familiar or accustomed to something. It describes a present state.\n\n~used to~ refers only to past habits.\n~'m use to~ is grammatically incorrect; it must be 'used'."
+    }
+  },
+  {
+    "cardId": "egac_446",
+    "category": "Vocabulary: Math Operations",
+    "sentenceParts": {
+      "prefix": "What is seven ",
+      "suffix": " by nine?"
+    },
+    "options": [
+      {
+        "text": "multiplied",
+        "isCorrect": true
+      },
+      {
+        "text": "time",
+        "isCorrect": false
+      },
+      {
+        "text": "with",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "What is seven multiplied by nine?",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_446.mp3",
+    "hint": "This is the more formal way to express the multiplication operation.",
+    "content": {
+      "type": "text",
+      "value": "**[94]**\n\nThe formal term for the multiplication operation (x) is [multiplied by].\n\n~time~ is incorrect syntax here; the correct term would be 'times' (without 'by') or 'multiplied by'.\n~with~ is not used for multiplication."
+    }
   }
 ]

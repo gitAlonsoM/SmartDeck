@@ -368,11 +368,11 @@
           "isCorrect": true
         },
         {
-          "text": "of",
+          "text": "at",
           "isCorrect": false
         },
         {
-          "text": "with",
+          "text": "to",
           "isCorrect": false
         }
       ],
@@ -381,7 +381,7 @@
       "hint": "The very formal alternative is 'For what are you looking?', but this is rarely used in conversation.",
       "content": {
         "type": "text",
-        "value": "**[111]**\n\nIn modern English, it's natural to end a question with a preposition, especially when it's part of a phrasal verb like **look for** (meaning 'to search').\n\n~of~ and ~with~ are incorrect prepositions here. They do not form phrasal verbs with 'look' that fit this context."
+        "value": "**[111]**\n\nIn modern English, it's natural to end a question with a preposition, especially when it's part of a phrasal verb like **look for** (meaning 'to search').\n\n~What are you looking at?~ is a grammatically correct question, but it means 'What is the object of your gaze?'. It doesn't fit the context of searching.\n~What are you looking to?~ is grammatically incorrect in this structure. The phrasal verb 'look to' means to rely on someone or something, which doesn't fit here."
       }
     },
     {
@@ -546,7 +546,7 @@
           "isCorrect": false
         },
         {
-          "text": "much",
+          "text": "little",
           "isCorrect": false
         }
       ],
@@ -555,7 +555,7 @@
       "hint": "The word 'exhausted' comes from the Latin 'exhaurire', meaning 'to draw out' or 'drain'.",
       "content": {
         "type": "text",
-        "value": "**[69]**\n\n[Exhausted] is an 'extreme' or 'non-gradable' adjective, meaning it already implies 'very tired'. It must be intensified with adverbs like [absolutely] or [completely].\n\n~very~ is used with gradable adjectives (e.g., 'very tired'), not extreme ones.\n~much~ is grammatically incorrect here; it doesn't fit as an intensifier for this adjective."
+        "value": "**[69]**\n\n[Exhausted] is an 'extreme' or 'non-gradable' adjective, meaning it already implies 'very tired'. It must be intensified with adverbs like [absolutely] or [completely].\n\n~very~ is used with gradable adjectives (e.g., 'very tired'), not extreme ones.\n~little~ has the opposite meaning and doesn't fit the context."
       }
     },
     {
@@ -3098,7 +3098,7 @@
           "isCorrect": true
         },
         {
-          "text": "more interesting",
+          "text": "the interestingest",
           "isCorrect": false
         },
         {
@@ -3111,7 +3111,7 @@
       "hint": "This structure is often combined with the present perfect to talk about a unique life experience.",
       "content": {
         "type": "text",
-        "value": "**[27]**\n\nThe [superlative form] for long adjectives is [the most + adjective]. It is often used with the present perfect ('I have ever...') to talk about life experiences.\n\n~more interesting~ is the comparative form, which is used to compare two things, not to single out one from a group.\n~a most interesting~ is a different, more formal structure meaning 'a very interesting' and is not a true superlative."
+        "value": "**[27]**\n\nThe [superlative form] for long adjectives is [the most + adjective]. It is often used with the present perfect ('I have ever...') to talk about life experiences.\n\n~the interestingest~ is incorrect; the '-est' ending is for short adjectives.\n~a most interesting~ is a different, more formal structure meaning 'a very interesting' and is not a true superlative."
       }
     },
     {
@@ -4461,7 +4461,7 @@
           "isCorrect": true
         },
         {
-          "text": " used to",
+          "text": "used to",
           "isCorrect": false
         },
         {
@@ -5924,7 +5924,7 @@
       "hint": "This contrasts with 'go', which describes how a situation progresses ('How did the exam go?').",
       "content": {
         "type": "text",
-        "value": "The verb [do] is used in expressions like 'do well' or 'do badly' to talk about performance in a task or event.\n\n~go~ is used for the progress of a situation ('How's it going?') but not for personal performance in this way.\n~make~ is used for creating or producing something."
+        "value": "**[18]**\n\nThe verb [do] is used in expressions like 'do well' or 'do badly' to talk about performance in a task or event.\n\n~go~ is used for the progress of a situation ('How's it going?') but not for personal performance in this way.\n~make~ is used for creating or producing something."
       }
     },
     {
@@ -12929,7 +12929,7 @@
           "isCorrect": true
         },
         {
-          "text": "time",
+          "text": "times",
           "isCorrect": false
         },
         {
@@ -12942,7 +12942,7 @@
       "hint": "This is the more formal way to express the multiplication operation.",
       "content": {
         "type": "text",
-        "value": "**[94]**\n\nThe formal term for the multiplication operation (x) is [multiplied by].\n\n~time~ is incorrect syntax here; the correct term would be 'times' (without 'by') or 'multiplied by'.\n~with~ is not used for multiplication."
+        "value": "**[94]**\n\nThe formal term for the multiplication operation (x) is [multiplied by].\n\n~Times~ is also correct and very common ('seven times nine'), but the sentence structure with the past participle 'multiplied' is a key form to learn.\n~With~ is not used for multiplication."
       }
     },
     {
@@ -14287,18 +14287,9 @@
         "suffix": "?"
       },
       "options": [
-        {
-          "text": "last",
-          "isCorrect": true
-        },
-        {
-          "text": "duration",
-          "isCorrect": false
-        },
-        {
-          "text": "long",
-          "isCorrect": false
-        }
+        { "text": "last", "isCorrect": true },
+        { "text": "duration", "isCorrect": false },
+        { "text": "long", "isCorrect": false }
       ],
       "correctAnswer": "How long will the presentation last?",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_493.mp3",
@@ -14316,18 +14307,9 @@
         "suffix": " five minutes to boot the system."
       },
       "options": [
-        {
-          "text": "takes",
-          "isCorrect": true
-        },
-        {
-          "text": "lasts",
-          "isCorrect": false
-        },
-        {
-          "text": "is",
-          "isCorrect": false
-        }
+        { "text": "takes", "isCorrect": true },
+        { "text": "lasts", "isCorrect": false },
+        { "text": "is", "isCorrect": false }
       ],
       "correctAnswer": "It usually takes five minutes to boot the system.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_494.mp3",
@@ -14345,18 +14327,9 @@
         "suffix": " the meeting."
       },
       "options": [
-        {
-          "text": "during",
-          "isCorrect": true
-        },
-        {
-          "text": "for",
-          "isCorrect": false
-        },
-        {
-          "text": "in",
-          "isCorrect": false
-        }
+        { "text": "during", "isCorrect": true },
+        { "text": "for", "isCorrect": false },
+        { "text": "in", "isCorrect": false }
       ],
       "correctAnswer": "He couldn't answer his phone during the meeting.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_495.mp3",
@@ -14374,18 +14347,9 @@
         "suffix": " you at the conference last week."
       },
       "options": [
-        {
-          "text": "meet",
-          "isCorrect": true
-        },
-        {
-          "text": "know",
-          "isCorrect": false
-        },
-        {
-          "text": "get to know",
-          "isCorrect": false
-        }
+        { "text": "meet", "isCorrect": true },
+        { "text": "know", "isCorrect": false },
+        { "text": "get to know", "isCorrect": false }
       ],
       "correctAnswer": "It was a pleasure to meet you at the conference last week.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_496.mp3",
@@ -14403,18 +14367,9 @@
         "suffix": " the new software."
       },
       "options": [
-        {
-          "text": "getting to know",
-          "isCorrect": true
-        },
-        {
-          "text": "knowing",
-          "isCorrect": false
-        },
-        {
-          "text": "meeting",
-          "isCorrect": false
-        }
+        { "text": "getting to know", "isCorrect": true },
+        { "text": "knowing", "isCorrect": false },
+        { "text": "meeting", "isCorrect": false }
       ],
       "correctAnswer": "We are still getting to know the new software.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_497.mp3",
@@ -14432,18 +14387,9 @@
         "suffix": " this API? I've never used it."
       },
       "options": [
-        {
-          "text": "know",
-          "isCorrect": true
-        },
-        {
-          "text": "meet",
-          "isCorrect": false
-        },
-        {
-          "text": "get to know",
-          "isCorrect": false
-        }
+        { "text": "know", "isCorrect": true },
+        { "text": "meet", "isCorrect": false },
+        { "text": "get to know", "isCorrect": false }
       ],
       "correctAnswer": "Do you know this API? I've never used it.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_498.mp3",
@@ -14461,18 +14407,9 @@
         "suffix": " we found is critical."
       },
       "options": [
-        {
-          "text": " ",
-          "isCorrect": true
-        },
-        {
-          "text": "who",
-          "isCorrect": false
-        },
-        {
-          "text": "what",
-          "isCorrect": false
-        }
+        { "text": " ", "isCorrect": true },
+        { "text": "who", "isCorrect": false },
+        { "text": "what", "isCorrect": false }
       ],
       "correctAnswer": "The bug we found is critical.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_499.mp3",
@@ -14490,18 +14427,9 @@
         "suffix": " makes software."
       },
       "options": [
-        {
-          "text": "that",
-          "isCorrect": true
-        },
-        {
-          "text": " ",
-          "isCorrect": false
-        },
-        {
-          "text": "it",
-          "isCorrect": false
-        }
+        { "text": "that", "isCorrect": true },
+        { "text": " ", "isCorrect": false },
+        { "text": "it", "isCorrect": false }
       ],
       "correctAnswer": "I work for a company that makes software.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_500.mp3",
@@ -14519,18 +14447,9 @@
         "suffix": " speaks three languages."
       },
       "options": [
-        {
-          "text": "who",
-          "isCorrect": true
-        },
-        {
-          "text": " ",
-          "isCorrect": false
-        },
-        {
-          "text": "which",
-          "isCorrect": false
-        }
+        { "text": "who", "isCorrect": true },
+        { "text": " ", "isCorrect": false },
+        { "text": "which", "isCorrect": false }
       ],
       "correctAnswer": "She's the developer who speaks three languages.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_501.mp3",
@@ -14548,18 +14467,9 @@
         "suffix": " more minutes to finish."
       },
       "options": [
-        {
-          "text": "a few",
-          "isCorrect": true
-        },
-        {
-          "text": "a little",
-          "isCorrect": false
-        },
-        {
-          "text": "a bit of",
-          "isCorrect": false
-        }
+        { "text": "a few", "isCorrect": true },
+        { "text": "a little", "isCorrect": false },
+        { "text": "a bit of", "isCorrect": false }
       ],
       "correctAnswer": "I need a few more minutes to finish.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_502.mp3",
@@ -14577,18 +14487,9 @@
         "suffix": " time left."
       },
       "options": [
-        {
-          "text": "a little",
-          "isCorrect": true
-        },
-        {
-          "text": "a few",
-          "isCorrect": false
-        },
-        {
-          "text": "many",
-          "isCorrect": false
-        }
+        { "text": "a little", "isCorrect": true },
+        { "text": "a few", "isCorrect": false },
+        { "text": "many", "isCorrect": false }
       ],
       "correctAnswer": "We only have a little time left.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_503.mp3",
@@ -14606,18 +14507,9 @@
         "suffix": " trouble with this API."
       },
       "options": [
-        {
-          "text": "a bit of",
-          "isCorrect": true
-        },
-        {
-          "text": "a few",
-          "isCorrect": false
-        },
-        {
-          "text": "a few of",
-          "isCorrect": false
-        }
+        { "text": "a bit of", "isCorrect": true },
+        { "text": "a few", "isCorrect": false },
+        { "text": "a few of", "isCorrect": false }
       ],
       "correctAnswer": "I'm having a bit of trouble with this API.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_504.mp3",
@@ -14635,18 +14527,9 @@
         "suffix": "."
       },
       "options": [
-        {
-          "text": "in a hurry",
-          "isCorrect": true
-        },
-        {
-          "text": "on a hurry",
-          "isCorrect": false
-        },
-        {
-          "text": "at a hurry",
-          "isCorrect": false
-        }
+        { "text": "in a hurry", "isCorrect": true },
+        { "text": "on a hurry", "isCorrect": false },
+        { "text": "at a hurry", "isCorrect": false }
       ],
       "correctAnswer": "Sorry, I can't talk, I'm in a hurry.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_505.mp3",
@@ -14664,18 +14547,9 @@
         "suffix": " the new project?"
       },
       "options": [
-        {
-          "text": "in charge of",
-          "isCorrect": true
-        },
-        {
-          "text": "on charge of",
-          "isCorrect": false
-        },
-        {
-          "text": "in the charge of",
-          "isCorrect": false
-        }
+        { "text": "in charge of", "isCorrect": true },
+        { "text": "on charge of", "isCorrect": false },
+        { "text": "in the charge of", "isCorrect": false }
       ],
       "correctAnswer": "Who is in charge of the new project?",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_506.mp3",
@@ -14693,18 +14567,9 @@
         "suffix": " to catch the flight."
       },
       "options": [
-        {
-          "text": "in time",
-          "isCorrect": true
-        },
-        {
-          "text": "on time",
-          "isCorrect": false
-        },
-        {
-          "text": "at time",
-          "isCorrect": false
-        }
+        { "text": "in time", "isCorrect": true },
+        { "text": "on time", "isCorrect": false },
+        { "text": "at time", "isCorrect": false }
       ],
       "correctAnswer": "We arrived just in time to catch the flight.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_507.mp3",
@@ -14722,18 +14587,9 @@
         "suffix": " designed this system."
       },
       "options": [
-        {
-          "text": "who",
-          "isCorrect": true
-        },
-        {
-          "text": " ",
-          "isCorrect": false
-        },
-        {
-          "text": "which",
-          "isCorrect": false
-        }
+        { "text": "who", "isCorrect": true },
+        { "text": " ", "isCorrect": false },
+        { "text": "which", "isCorrect": false }
       ],
       "correctAnswer": "She is the engineer who designed this system.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_508.mp3",
@@ -14751,18 +14607,9 @@
         "suffix": " is causing the error?"
       },
       "options": [
-        {
-          "text": "which",
-          "isCorrect": true
-        },
-        {
-          "text": " ",
-          "isCorrect": false
-        },
-        {
-          "text": "who",
-          "isCorrect": false
-        }
+        { "text": "which", "isCorrect": true },
+        { "text": " ", "isCorrect": false },
+        { "text": "who", "isCorrect": false }
       ],
       "correctAnswer": "Can you delete the file which is causing the error?",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_509.mp3",
@@ -14780,18 +14627,9 @@
         "suffix": " runs in the background."
       },
       "options": [
-        {
-          "text": "which",
-          "isCorrect": true
-        },
-        {
-          "text": " ",
-          "isCorrect": false
-        },
-        {
-          "text": "it",
-          "isCorrect": false
-        }
+        { "text": "which", "isCorrect": true },
+        { "text": " ", "isCorrect": false },
+        { "text": "it", "isCorrect": false }
       ],
       "correctAnswer": "The application has a new feature which runs in the background.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_510.mp3",
@@ -14802,497 +14640,497 @@
       }
     },
     {
-      "cardId": "egac_511",
-      "category": "Get-Passive",
-      "sentenceParts": {
-        "prefix": "The document ",
-        "suffix": " saved automatically every few minutes."
-      },
-      "options": [
-        {
-          "text": "gets",
-          "isCorrect": true
-        },
-        {
-          "text": "did",
-          "isCorrect": false
-        },
-        {
-          "text": "has",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "The document gets saved automatically every few minutes.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_511.mp3",
-      "hint": "This form of the passive emphasizes the *process* of the action.",
-      "content": {
-        "type": "text",
-        "value": "**[107]**\n\n[gets saved] is the 'get-passive'. It is used to emphasize the *process* or *event* of the document being saved, which fits well with an automatic, repeated action.\n\n~is saved~ is the standard 'be-passive'. While also grammatically correct, it describes the *state* of being saved rather than the dynamic action."
-      }
+    "cardId": "egac_511",
+    "category": "Get-Passive",
+    "sentenceParts": {
+      "prefix": "The document ",
+      "suffix": " saved automatically every few minutes."
     },
-    {
-      "cardId": "egac_512",
-      "category": "Get-Passive",
-      "sentenceParts": {
-        "prefix": "My wallet ",
-        "suffix": " stolen while I was on the subway."
+    "options": [
+      {
+        "text": "gets", 
+        "isCorrect": true
       },
-      "options": [
-        {
-          "text": "got",
-          "isCorrect": true
-        },
-        {
-          "text": "did",
-          "isCorrect": false
-        },
-        {
-          "text": "had",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "My wallet got stolen while I was on the subway.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_512.mp3",
-      "hint": "This form is common in informal English, especially for negative or accidental events.",
-      "content": {
-        "type": "text",
-        "value": "**[107]**\n\nThe 'get-passive' [got stolen] is very common for describing sudden, negative, or accidental events.\n\n~was stolen~ is the standard 'be-passive'. It is also correct but more formal. 'Got' is more natural in this spoken context."
-      }
-    },
-    {
-      "cardId": "egac_513",
-      "category": "Get-Passive",
-      "sentenceParts": {
-        "prefix": "After a long process, she finally ",
-        "suffix": " promoted to Senior Manager."
+      {
+        "text": "did",
+        "isCorrect": false
       },
-      "options": [
-        {
-          "text": "got",
-          "isCorrect": true
-        },
-        {
-          "text": "has",
-          "isCorrect": false
-        },
-        {
-          "text": "did",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "After a long process, she finally got promoted to Senior Manager.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_513.mp3",
-      "hint": "Use 'get' to emphasize the *change of state* or the event of the promotion.",
-      "content": {
-        "type": "text",
-        "value": "**[107]**\n\n[got promoted] emphasizes the *event* and the *change of state* for the subject. \n\n~was promoted~ (the standard 'be-passive') is also grammatically correct, but 'got' is often used to highlight the achievement or the completion of the process.\n\n~has promoted~ or ~did promoted~ are incorrect as they are either active voice or grammatically wrong for this structure."
+      {
+        "text": "has",
+        "isCorrect": false
       }
-    },
-    {
-      "cardId": "egac_514",
-      "category": "Get-Passive",
-      "sentenceParts": {
-        "prefix": "The car's window ",
-        "suffix": " broken during the hailstorm."
-      },
-      "options": [
-        {
-          "text": "got",
-          "isCorrect": true
-        },
-        {
-          "text": "had",
-          "isCorrect": false
-        },
-        {
-          "text": "did",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "The car's window got broken during the hailstorm.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_514.mp3",
-      "hint": "This passive form is often used to describe accidental or unexpected events.",
-      "content": {
-        "type": "text",
-        "value": "**[107]**\n\n[got broken] is the 'get-passive', used here to emphasize the sudden, accidental *event* of the window breaking.\n\n~was broken~ (the standard 'be-passive') is also correct, but it can also describe the *state* of the window *after* the storm. 'Got' focuses on the event itself.\n\n~had broken~ or ~did broken~ are incorrect for this passive structure."
-      }
-    },
-    {
-      "cardId": "egac_515",
-      "category": "Faltar: Absence (Involuntary)",
-      "sentenceParts": {
-        "prefix": "She was sick, so she had to ",
-        "suffix": " the meeting."
-      },
-      "options": [
-        {
-          "text": "miss",
-          "isCorrect": true
-        },
-        {
-          "text": "skip",
-          "isCorrect": false
-        },
-        {
-          "text": "left",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "She was sick, so she had to miss the meeting.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_515.mp3",
-      "hint": "Use this verb for involuntary absence, like due to sickness.",
-      "content": {
-        "type": "text",
-        "value": "**[108]**\n\n[miss] is used for involuntary absence. Since she was sick, she didn't have a choice.\n\n~skip~ is a common error. 'Skip' implies she *chose* not to attend.\n~left~ refers to time or quantity remaining."
-      }
-    },
-    {
-      "cardId": "egac_516",
-      "category": "Faltar: Absence (Intentional)",
-      "sentenceParts": {
-        "prefix": "I wasn't interested in the lecture, so I decided to ",
-        "suffix": " it."
-      },
-      "options": [
-        {
-          "text": "skip",
-          "isCorrect": true
-        },
-        {
-          "text": "miss",
-          "isCorrect": false
-        },
-        {
-          "text": "out of",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "I wasn't interested in the lecture, so I decided to skip it.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_516.mp3",
-      "hint": "Use this verb for an *intentional* absence. You *chose* not to go.",
-      "content": {
-        "type": "text",
-        "value": "**[108]**\n\n[skip] is correct because the absence was intentional ('I decided to...').\n\n~miss~ implies an involuntary absence.\n~out of~ refers to a depleted supply."
-      }
-    },
-    {
-      "cardId": "egac_517",
-      "category": "Faltar: Carency (Lost)",
-      "sentenceParts": {
-        "prefix": "I can't find my keys. They are ",
-        "suffix": "."
-      },
-      "options": [
-        {
-          "text": "missing",
-          "isCorrect": true
-        },
-        {
-          "text": "skipping",
-          "isCorrect": false
-        },
-        {
-          "text": "left",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "I can't find my keys. They are missing.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_517.mp3",
-      "hint": "This adjective describes something that is lost or not in its proper place.",
-      "content": {
-        "type": "text",
-        "value": "**[108]**\n\n[missing] is the correct adjective to describe the state of an item that is lost or cannot be found.\n\n~skipping~ and ~left~ do not fit this context."
-      }
-    },
-    {
-      "cardId": "egac_518",
-      "category": "Faltar: Carency (Depleted)",
-      "sentenceParts": {
-        "prefix": "We can't make coffee because we are completely ",
-        "suffix": " coffee beans."
-      },
-      "options": [
-        {
-          "text": "out of",
-          "isCorrect": true
-        },
-        {
-          "text": "missing",
-          "isCorrect": false
-        },
-        {
-          "text": "short of",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "We can't make coffee because we are completely out of coffee beans.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_518.mp3",
-      "hint": "This phrase means the supply is 100% finished or depleted.",
-      "content": {
-        "type": "text",
-        "value": "**[108]**\n\n[out of] is the correct phrase. 'To be out of' something means the supply is completely depleted.\n\n~missing~ implies the beans are lost.\n~short of~ (also from the modal) implies you still have some, but not enough. The word 'completely' strongly points to [out of]."
-      }
-    },
-    {
-      "cardId": "egac_519",
-      "category": "Faltar: Time Remaining",
-      "sentenceParts": {
-        "prefix": "Hurry up! There are only five minutes ",
-        "suffix": " before the test ends."
-      },
-      "options": [
-        {
-          "text": "left",
-          "isCorrect": true
-        },
-        {
-          "text": "missing",
-          "isCorrect": false
-        },
-        {
-          "text": "out",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "Hurry up! There are only five minutes left before the test ends.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_519.mp3",
-      "hint": "This word is used to describe the *remaining* amount of time or quantity.",
-      "content": {
-        "type": "text",
-        "value": "**[108]**\n\n[left] is the correct word to use after a quantity (five minutes) to express the remaining amount.\n\n~missing~ implies the minutes are lost.\n~out~ is incomplete (the phrase is 'out of time')."
-      }
-    },
-    {
-      "cardId": "egac_520",
-      "category": "Faltar: Carency (Not enough)",
-      "sentenceParts": {
-        "prefix": "I can't buy the ticket. I am $5 ",
-        "suffix": "."
-      },
-      "options": [
-        {
-          "text": "short",
-          "isCorrect": true
-        },
-        {
-          "text": "missing",
-          "isCorrect": false
-        },
-        {
-          "text": "skip",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "I can't buy the ticket. I am $5 short.",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_520.mp3",
-      "hint": "This word means you have *almost* enough, but not the full amount.",
-      "content": {
-        "type": "text",
-        "value": "**[108]**\n\n[short] is the correct word. The idiom [to be $5 short] means you 'te faltan $5' (you have $5 less than you need).\n\n~missing~ is a common error. The correct structure would be 'I am missing $5' or '$5 is missing', but not 'I am $5 short'.\n~skip~ does not fit."
-      }
-    },
-    {
-      "cardId": "egac_521",
-      "category": "Questions: Preposition Stranding",
-      "sentenceParts": {
-        "prefix": "What project are you working ",
-        "suffix": "?"
-      },
-      "options": [
-        {
-          "text": "on",
-          "isCorrect": true
-        },
-        {
-          "text": "at",
-          "isCorrect": false
-        },
-        {
-          "text": "with",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "What project are you working on?",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_521.mp3",
-      "hint": "The verb is 'to work on' a project.",
-      "content": {
-        "type": "text",
-        "value": "**[111]**\n\nThe verb 'to work' requires the preposition [on] when referring to a task or project.\n\nThe full affirmative sentence would be: 'You are working [on] this project.' Therefore, the preposition is stranded at the end of the question."
-      }
-    },
-    {
-      "cardId": "egac_522",
-      "category": "Questions: Preposition Stranding",
-      "sentenceParts": {
-        "prefix": "What are you looking ",
-        "suffix": "?"
-      },
-      "options": [
-        {
-          "text": "for",
-          "isCorrect": true
-        },
-        {
-          "text": "at",
-          "isCorrect": false
-        },
-        {
-          "text": "on",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "What are you looking for?",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_522.mp3",
-      "hint": "This phrasal verb means 'to search for'.",
-      "content": {
-        "type": "text",
-        "value": "**[111]**\n\nThe phrasal verb [to look for] means 'to search'. The preposition is required.\n\n~look at~ means 'to view'.\n~look on~ is incorrect here."
-      }
-    },
-    {
-      "cardId": "egac_523",
-      "category": "Questions: Preposition Stranding",
-      "sentenceParts": {
-        "prefix": "Who are you waiting ",
-        "suffix": "?"
-      },
-      "options": [
-        {
-          "text": "for",
-          "isCorrect": true
-        },
-        {
-          "text": "to",
-          "isCorrect": false
-        },
-        {
-          "text": "on",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "Who are you waiting for?",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_523.mp3",
-      "hint": "The phrasal verb is 'to wait ___ someone'.",
-      "content": {
-        "type": "text",
-        "value": "**[111]**\n\nThe verb 'to wait' requires the preposition [for] when it has an object ('to wait for someone/something').\n\nThe affirmative sentence is: 'You are waiting [for] someone.'\n\n~waiting to~ or ~waiting on~ (more common in US English for service, e.g., 'a waiter waits on tables') are incorrect in this context."
-      }
-    },
-    {
-      "cardId": "egac_524",
-      "category": "Questions: Preposition Stranding",
-      "sentenceParts": {
-        "prefix": "What did you talk ",
-        "suffix": " in the meeting?"
-      },
-      "options": [
-        {
-          "text": "about",
-          "isCorrect": true
-        },
-        {
-          "text": "with",
-          "isCorrect": false
-        },
-        {
-          "text": "for",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "What did you talk about in the meeting?",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_524.mp3",
-      "hint": "This verb is used to discuss a topic.",
-      "content": {
-        "type": "text",
-        "value": "**[111]**\n\nThe verb [to talk about] is used to discuss a topic.\n\n~talk with~ is used for the person you are speaking to (e.g., 'Who did you talk with?').\n~talk for~ would describe a duration."
-      }
-    },
-    {
-      "cardId": "egac_525",
-      "category": "Questions: Preposition Stranding",
-      "sentenceParts": {
-        "prefix": "Which situation does this rule apply ",
-        "suffix": "?"
-      },
-      "options": [
-        {
-          "text": "to",
-          "isCorrect": true
-        },
-        {
-          "text": "on",
-          "isCorrect": false
-        },
-        {
-          "text": "for",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "Which situation does this rule apply to?",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_525.mp3",
-      "hint": "This verb means 'to be relevant to'.",
-      "content": {
-        "type": "text",
-        "value": "**[111]**\n\nThe verb 'to apply' requires the preposition [to] when it means 'to be relevant to' or 'to concern'.\n\nThe affirmative is: 'This rule applies [to] this situation.'\n\n~apply on~ is incorrect. ~apply for~ is used for jobs or loans, not for relevance."
-      }
-    },
-    {
-      "cardId": "egac_526",
-      "category": "Questions: Preposition Stranding",
-      "sentenceParts": {
-        "prefix": "Which issue did you have to deal ",
-        "suffix": "?"
-      },
-      "options": [
-        {
-          "text": "with",
-          "isCorrect": true
-        },
-        {
-          "text": "on",
-          "isCorrect": false
-        },
-        {
-          "text": "about",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "Which issue did you have to deal with?",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_526.mp3",
-      "hint": "This phrasal verb means 'to handle' or 'to manage' a problem.",
-      "content": {
-        "type": "text",
-        "value": "**[111]**\n\nThe phrasal verb [to deal with] means 'to handle' or 'manage'. The preposition is mandatory.\n\nThe affirmative is: 'You had to deal [with] this issue.'\n\n~deal on~ or ~deal about~ are incorrect."
-      }
-    },
-    {
-      "cardId": "egac_527",
-      "category": "Questions: Preposition Stranding",
-      "sentenceParts": {
-        "prefix": "Which document did he refer ",
-        "suffix": "?"
-      },
-      "options": [
-        {
-          "text": "to",
-          "isCorrect": true
-        },
-        {
-          "text": "on",
-          "isCorrect": false
-        },
-        {
-          "text": "about",
-          "isCorrect": false
-        }
-      ],
-      "correctAnswer": "Which document did he refer to?",
-      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_527.mp3",
-      "hint": "This verb means 'to mention' or 'to cite' a source.",
-      "content": {
-        "type": "text",
-        "value": "**[111]**\n\nThe verb [to refer to] means 'to mention' or 'consult'. The preposition is required.\n\nThe affirmative is: 'He referred [to] the document.'\n\n~refer on~ or ~refer about~ are incorrect."
-      }
+    ],
+    "correctAnswer": "The document gets saved automatically every few minutes.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_511.mp3",
+    "hint": "This form of the passive emphasizes the *process* of the action.",
+    "content": {
+      "type": "text",
+      "value": "**[107]**\n\n[gets saved] is the 'get-passive'. It is used to emphasize the *process* or *event* of the document being saved, which fits well with an automatic, repeated action.\n\n~is saved~ is the standard 'be-passive'. While also grammatically correct, it describes the *state* of being saved rather than the dynamic action."
     }
+  },
+  {
+    "cardId": "egac_512",
+    "category": "Get-Passive",
+    "sentenceParts": {
+      "prefix": "My wallet ",
+      "suffix": " stolen while I was on the subway."
+    },
+    "options": [
+      {
+        "text": "got", 
+        "isCorrect": true
+      },
+      {
+        "text": "did",
+        "isCorrect": false
+      },
+      {
+        "text": "had",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "My wallet got stolen while I was on the subway.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_512.mp3",
+    "hint": "This form is common in informal English, especially for negative or accidental events.",
+    "content": {
+      "type": "text",
+      "value": "**[107]**\n\nThe 'get-passive' [got stolen] is very common for describing sudden, negative, or accidental events.\n\n~was stolen~ is the standard 'be-passive'. It is also correct but more formal. 'Got' is more natural in this spoken context."
+    }
+  },
+  {
+    "cardId": "egac_513",
+    "category": "Get-Passive",
+    "sentenceParts": {
+      "prefix": "After a long process, she finally ",
+      "suffix": " promoted to Senior Manager."
+    },
+    "options": [
+      {
+        "text": "got",
+        "isCorrect": true
+      },
+      {
+        "text": "has", 
+        "isCorrect": false
+      },
+      {
+        "text": "did",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "After a long process, she finally got promoted to Senior Manager.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_513.mp3",
+    "hint": "Use 'get' to emphasize the *change of state* or the event of the promotion.",
+    "content": {
+      "type": "text",
+      "value": "**[107]**\n\n[got promoted] emphasizes the *event* and the *change of state* for the subject. \n\n~was promoted~ (the standard 'be-passive') is also grammatically correct, but 'got' is often used to highlight the achievement or the completion of the process.\n\n~has promoted~ or ~did promoted~ are incorrect as they are either active voice or grammatically wrong for this structure."
+    }
+  },
+  {
+    "cardId": "egac_514",
+    "category": "Get-Passive",
+    "sentenceParts": {
+      "prefix": "The car's window ",
+      "suffix": " broken during the hailstorm."
+    },
+    "options": [
+      {
+        "text": "got", 
+        "isCorrect": true
+      },
+      {
+        "text": "had",
+        "isCorrect": false
+      },
+      {
+        "text": "did", 
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "The car's window got broken during the hailstorm.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_514.mp3",
+    "hint": "This passive form is often used to describe accidental or unexpected events.",
+    "content": {
+      "type": "text",
+      "value": "**[107]**\n\n[got broken] is the 'get-passive', used here to emphasize the sudden, accidental *event* of the window breaking.\n\n~was broken~ (the standard 'be-passive') is also correct, but it can also describe the *state* of the window *after* the storm. 'Got' focuses on the event itself.\n\n~had broken~ or ~did broken~ are incorrect for this passive structure."
+    }
+  },
+ {
+    "cardId": "egac_515",
+    "category": "Faltar: Absence (Involuntary)",
+    "sentenceParts": {
+      "prefix": "She was sick, so she had to ",
+      "suffix": " the meeting."
+    },
+    "options": [
+      {
+        "text": "miss",
+        "isCorrect": true
+      },
+      {
+        "text": "skip",
+        "isCorrect": false
+      },
+      {
+        "text": "left",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "She was sick, so she had to miss the meeting.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_515.mp3",
+    "hint": "Use this verb for involuntary absence, like due to sickness.",
+    "content": {
+      "type": "text",
+      "value": "**[108]**\n\n[miss] is used for involuntary absence. Since she was sick, she didn't have a choice.\n\n~skip~ is a common error. 'Skip' implies she *chose* not to attend.\n~left~ refers to time or quantity remaining."
+    }
+  },
+  {
+    "cardId": "egac_516",
+    "category": "Faltar: Absence (Intentional)",
+    "sentenceParts": {
+      "prefix": "I wasn't interested in the lecture, so I decided to ",
+      "suffix": " it."
+    },
+    "options": [
+      {
+        "text": "skip",
+        "isCorrect": true
+      },
+      {
+        "text": "miss",
+        "isCorrect": false
+      },
+      {
+        "text": "out of",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "I wasn't interested in the lecture, so I decided to skip it.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_516.mp3",
+    "hint": "Use this verb for an *intentional* absence. You *chose* not to go.",
+    "content": {
+      "type": "text",
+      "value": "**[108]**\n\n[skip] is correct because the absence was intentional ('I decided to...').\n\n~miss~ implies an involuntary absence.\n~out of~ refers to a depleted supply."
+    }
+  },
+  {
+    "cardId": "egac_517",
+    "category": "Faltar: Carency (Lost)",
+    "sentenceParts": {
+      "prefix": "I can't find my keys. They are ",
+      "suffix": "."
+    },
+    "options": [
+      {
+        "text": "missing",
+        "isCorrect": true
+      },
+      {
+        "text": "skipping",
+        "isCorrect": false
+      },
+      {
+        "text": "left",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "I can't find my keys. They are missing.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_517.mp3",
+    "hint": "This adjective describes something that is lost or not in its proper place.",
+    "content": {
+      "type": "text",
+      "value": "**[108]**\n\n[missing] is the correct adjective to describe the state of an item that is lost or cannot be found.\n\n~skipping~ and ~left~ do not fit this context."
+    }
+  },
+  {
+    "cardId": "egac_518",
+    "category": "Faltar: Carency (Depleted)",
+    "sentenceParts": {
+      "prefix": "We can't make coffee because we are completely ",
+      "suffix": " coffee beans."
+    },
+    "options": [
+      {
+        "text": "out of",
+        "isCorrect": true
+      },
+      {
+        "text": "missing",
+        "isCorrect": false
+      },
+      {
+        "text": "short of",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "We can't make coffee because we are completely out of coffee beans.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_518.mp3",
+    "hint": "This phrase means the supply is 100% finished or depleted.",
+    "content": {
+      "type": "text",
+      "value": "**[108]**\n\n[out of] is the correct phrase. 'To be out of' something means the supply is completely depleted.\n\n~missing~ implies the beans are lost.\n~short of~ (also from the modal) implies you still have some, but not enough. The word 'completely' strongly points to [out of]."
+    }
+  },
+  {
+    "cardId": "egac_519",
+    "category": "Faltar: Time Remaining",
+    "sentenceParts": {
+      "prefix": "Hurry up! There are only five minutes ",
+      "suffix": " before the test ends."
+    },
+    "options": [
+      {
+        "text": "left",
+        "isCorrect": true
+      },
+      {
+        "text": "missing",
+        "isCorrect": false
+      },
+      {
+        "text": "out",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "Hurry up! There are only five minutes left before the test ends.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_519.mp3",
+    "hint": "This word is used to describe the *remaining* amount of time or quantity.",
+    "content": {
+      "type": "text",
+      "value": "**[108]**\n\n[left] is the correct word to use after a quantity (five minutes) to express the remaining amount.\n\n~missing~ implies the minutes are lost.\n~out~ is incomplete (the phrase is 'out of time')."
+    }
+  },
+  {
+    "cardId": "egac_520",
+    "category": "Faltar: Carency (Not enough)",
+    "sentenceParts": {
+      "prefix": "I can't buy the ticket. I am $5 ",
+      "suffix": "."
+    },
+    "options": [
+      {
+        "text": "short",
+        "isCorrect": true
+      },
+      {
+        "text": "missing",
+        "isCorrect": false
+      },
+      {
+        "text": "skip",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "I can't buy the ticket. I am $5 short.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_520.mp3",
+    "hint": "This word means you have *almost* enough, but not the full amount.",
+    "content": {
+      "type": "text",
+      "value": "**[108]**\n\n[short] is the correct word. The idiom [to be $5 short] means you 'te faltan $5' (you have $5 less than you need).\n\n~missing~ is a common error. The correct structure would be 'I am missing $5' or '$5 is missing', but not 'I am $5 short'.\n~skip~ does not fit."
+    }
+  },
+  {
+    "cardId": "egac_521",
+    "category": "Questions: Preposition Stranding",
+    "sentenceParts": {
+      "prefix": "What project are you working ",
+      "suffix": "?"
+    },
+    "options": [
+      {
+        "text": "on",
+        "isCorrect": true
+      },
+      {
+        "text": "at",
+        "isCorrect": false
+      },
+      {
+        "text": "with",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "What project are you working on?",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_521.mp3",
+    "hint": "The verb is 'to work on' a project.",
+    "content": {
+      "type": "text",
+      "value": "**[111]**\n\nThe verb 'to work' requires the preposition [on] when referring to a task or project.\n\nThe full affirmative sentence would be: 'You are working [on] this project.' Therefore, the preposition is stranded at the end of the question."
+    }
+  },
+  {
+    "cardId": "egac_522",
+    "category": "Questions: Preposition Stranding",
+    "sentenceParts": {
+      "prefix": "What are you looking ",
+      "suffix": "?"
+    },
+    "options": [
+      {
+        "text": "for",
+        "isCorrect": true
+      },
+      {
+        "text": "at",
+        "isCorrect": false
+      },
+      {
+        "text": "on",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "What are you looking for?",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_522.mp3",
+    "hint": "This phrasal verb means 'to search for'.",
+    "content": {
+      "type": "text",
+      "value": "**[111]**\n\nThe phrasal verb [to look for] means 'to search'. The preposition is required.\n\n~look at~ means 'to view'.\n~look on~ is incorrect here."
+    }
+  },
+  {
+    "cardId": "egac_523",
+    "category": "Questions: Preposition Stranding",
+    "sentenceParts": {
+      "prefix": "Who are you waiting ",
+      "suffix": "?"
+    },
+    "options": [
+      {
+        "text": "for",
+        "isCorrect": true
+      },
+      {
+        "text": "to",
+        "isCorrect": false
+      },
+      {
+        "text": "on",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "Who are you waiting for?",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_523.mp3",
+    "hint": "The phrasal verb is 'to wait ___ someone'.",
+    "content": {
+      "type": "text",
+      "value": "**[111]**\n\nThe verb 'to wait' requires the preposition [for] when it has an object ('to wait for someone/something').\n\nThe affirmative sentence is: 'You are waiting [for] someone.'\n\n~waiting to~ or ~waiting on~ (more common in US English for service, e.g., 'a waiter waits on tables') are incorrect in this context."
+    }
+  },
+  {
+    "cardId": "egac_524",
+    "category": "Questions: Preposition Stranding",
+    "sentenceParts": {
+      "prefix": "What did you talk ",
+      "suffix": " in the meeting?"
+    },
+    "options": [
+      {
+        "text": "about",
+        "isCorrect": true
+      },
+      {
+        "text": "with",
+        "isCorrect": false
+      },
+      {
+        "text": "for",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "What did you talk about in the meeting?",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_524.mp3",
+    "hint": "This verb is used to discuss a topic.",
+    "content": {
+      "type": "text",
+      "value": "**[111]**\n\nThe verb [to talk about] is used to discuss a topic.\n\n~talk with~ is used for the person you are speaking to (e.g., 'Who did you talk with?').\n~talk for~ would describe a duration."
+     }
+  },
+  {
+    "cardId": "egac_525",
+    "category": "Questions: Preposition Stranding",
+    "sentenceParts": {
+      "prefix": "Which situation does this rule apply ",
+      "suffix": "?"
+    },
+    "options": [
+      {
+        "text": "to",
+        "isCorrect": true
+      },
+      {
+        "text": "on",
+        "isCorrect": false
+      },
+      {
+        "text": "for",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "Which situation does this rule apply to?",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_525.mp3",
+    "hint": "This verb means 'to be relevant to'.",
+    "content": {
+      "type": "text",
+      "value": "**[111]**\n\nThe verb 'to apply' requires the preposition [to] when it means 'to be relevant to' or 'to concern'.\n\nThe affirmative is: 'This rule applies [to] this situation.'\n\n~apply on~ is incorrect. ~apply for~ is used for jobs or loans, not for relevance."
+    }
+  },
+  {
+    "cardId": "egac_526",
+    "category": "Questions: Preposition Stranding",
+    "sentenceParts": {
+      "prefix": "Which issue did you have to deal ",
+      "suffix": "?"
+    },
+    "options": [
+      {
+        "text": "with",
+        "isCorrect": true
+      },
+      {
+        "text": "on",
+        "isCorrect": false
+      },
+      {
+        "text": "about",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "Which issue did you have to deal with?",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_526.mp3",
+    "hint": "This phrasal verb means 'to handle' or 'to manage' a problem.",
+    "content": {
+      "type": "text",
+      "value": "**[111]**\n\nThe phrasal verb [to deal with] means 'to handle' or 'manage'. The preposition is mandatory.\n\nThe affirmative is: 'You had to deal [with] this issue.'\n\n~deal on~ or ~deal about~ are incorrect."
+    }
+  },
+  {
+    "cardId": "egac_527",
+    "category": "Questions: Preposition Stranding",
+    "sentenceParts": {
+      "prefix": "Which document did he refer ",
+      "suffix": "?"
+    },
+    "options": [
+      {
+        "text": "to",
+        "isCorrect": true
+      },
+      {
+        "text": "on",
+        "isCorrect": false
+      },
+      {
+        "text": "about",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "Which document did he refer to?",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_527.mp3",
+    "hint": "This verb means 'to mention' or 'to cite' a source.",
+    "content": {
+      "type": "text",
+      "value": "**[111]**\n\nThe verb [to refer to] means 'to mention' or 'consult'. The preposition is required.\n\nThe affirmative is: 'He referred [to] the document.'\n\n~refer on~ or ~refer about~ are incorrect."
+    }
+  }
   ]
 }
