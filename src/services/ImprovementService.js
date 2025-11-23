@@ -142,29 +142,31 @@ This is a two-part process. You must modify **both** the card data and your summ
 - **Example Summary Line:** \`- Card pv_025: User suggested adding "I am agree with you". This was rejected because the verb 'agree' does not require the auxiliary 'to be'. I have added this clarification to the card's note.\`
 
 ## 6. CRITICAL: REQUIRED OUTPUT FORMAT
-Your final response MUST be a single Markdown block with exactly two parts.
+Your final response MUST NOT be wrapped in a single code block. You must output exactly two distinct parts in the following order:
 
-### Part 1: Corrected JSON
-- Start with the exact heading: \`## Corrected Cards JSON\`
-- Below it, provide a single, raw JSON array of the corrected cards inside a \`\`\`json code block.
-- **Crucially, you MUST REMOVE the entire \`review_request\` object from every card in this output.**
+### Part 1: The JSON Block
+1. Output the header: \`## Corrected Cards JSON\`
+2. **Open a JSON code block** using \`\`\`json.
+3. Provide the single, raw JSON array of the corrected cards.
+4. **REMOVE** the \`review_request\` object from every card.
+5. **CLOSE the JSON code block** using \`\`\` immediately after the array closing bracket (\`]\`).
 
-### Part 2: Resumen de Cambios (en español) y Próximos Pasos
-- Sigue el JSON con el encabezado exacto: \`## Resumen de Cambios y Próximos Pasos\`
-- **IMPORTANTE: Esta sección completa debe estar en Ingles sencillo, independiente del lenguaje usado por el usuario.**
+### Part 2: The Report (Standard Markdown)
+**OUTSIDE** of any code block (do not put this inside the JSON block), output the following report:
 
-// #### Estadísticas del Lote (Batch Statistics)
-// - **INMEDIATAMENTE** debajo del encabezado, debes generar un bloque de estadísticas con este formato exacto (usa dos líneas):
-//   > **Batch Stats:** Total Analyzed: [X] | Modified: [Y] | Unchanged: [Z]
-//   > **Decisions:** ✅ Suggestions Accepted: [A] | ⚠️ Suggestions Rejected (Notes Updated): [B]
-//
-// - **How to Count (Definitions):**
-//   - **Modified:** Any card that received ANY change in the JSON.
-//   - **Unchanged:** Cards that remained exactly identical, so they are not in the final JSON.
-//   - **Accepted:** The user's suggestion was correct and added to the content fields (e.g., added to \`options\` or \`sideB\`).
-//   - **Rejected:** The user's suggestion was incorrect and you had to add it to the \`note\` or 'value' field with an explanation/correction.
+1. Output the header: \`## 📝 Improvement Report\`
 
-// #### Resumen de Cambios
+2. **Batch Statistics:** Provide a vertical list exactly like this:
+   - **Total Analyzed:** [X]
+   - **Modified:** [Y]
+   - **Unchanged:** [Z]
+   - **Decisions:**
+     - ✅ **Accepted:** [A]
+     - ⚠️ **Rejected (Notes Updated):** [B]
+
+3. **Definitions for counting:**
+   - **Accepted:** The user's suggestion was correct and added.
+   - **Rejected:** The user's suggestion was incorrect; note/explanation added.
 
 #### Resumen de Cambios
 - Para cada tarjeta que recibiste para modificar en el json, para evaluar, etc, proporciona un resumen en una lista, explicando qué te pidió el usuario (debes explicitamente copiar y pegar lo que escribio el usuario en su solicitud para cada tarjeta, tal cual lo escribio el usuario, con sus errores de ortografia y todo, es necesario mostrar que pidio el usuario) y qué acción tomaste, ya sea cambio 'aceptado', lo que agregaste, o porque se rechazo el cambio, si añadiste algo nuevo etc etc, detalladamente explicar los cambios en cada card.

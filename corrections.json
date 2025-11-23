@@ -1,176 +1,215 @@
+
 [
   {
-    "cardId": "egac_019",
-    "category": "Extreme Adjectives",
-    "sentenceParts": {
-      "prefix": "After running the marathon, he was ",
-      "suffix": " exhausted."
-    },
-    "options": [
+    "cardId": "ti_048",
+    "cardType": "flippable",
+    "sideA": "El stock de los productos está en los almacenes y cada provincia tiene uno diferente.",
+    "sideB": [
       {
-        "text": "absolutely",
-        "isCorrect": true
+        "text": "Product stock is in the warehouses, and each province has its own specific inventory.",
+        "audioSrc": "public/data/audio/tech_interview/ti_048_sideB_0.mp3"
       },
       {
-        "text": "very",
-        "isCorrect": false
+        "text": "Inventory is managed in warehouses, with different Inventory Organizations for each province.",
+        "audioSrc": "public/data/audio/tech_interview/ti_048_sideB_1.mp3"
       },
       {
-        "text": "much",
-        "isCorrect": false
+        "text": "Stock availability is physical and varies because each province points to a different warehouse.",
+        "audioSrc": "public/data/audio/tech_interview/ti_048_sideB_2.mp3"
+      },
+      {
+        "text": "Product stock is in the warehouses, and each province has a different one.",
+        "audioSrc": "public/data/audio/tech_interview/ti_048_sideB_3.mp3"
       }
     ],
-    "correctAnswer": "After running the marathon, he was absolutely exhausted.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_019.mp3",
-    "hint": "The word 'exhausted' comes from the Latin 'exhaurire', meaning 'to draw out' or 'drain'.",
-    "content": {
-      "type": "text",
-      "value": "**[69]**\n\n[Exhausted] is an 'extreme' or 'non-gradable' adjective, meaning it already implies 'very tired'. It must be intensified with adverbs like [absolutely] or [completely].\n\n~very~ is used with gradable adjectives (e.g., 'very tired'), not extreme ones.\n~much~ is grammatically incorrect here; it doesn't fit as an intensifier for this adjective."
-    }
+    "note": "[Points to] is a useful phrasal verb when describing software configuration or database relationships.\n\n[Varies] means 'is different' or 'changes'."
   },
   {
-    "cardId": "egac_204",
-    "category": "Results: 'Do well'",
-    "sentenceParts": {
-      "prefix": "I really hope I ",
-      "suffix": " well on the exam tomorrow."
-    },
-    "options": [
+    "cardId": "ti_070",
+    "cardType": "flippable",
+    "sideA": "Eso es todo por mi parte, gracias.",
+    "sideB": [
       {
-        "text": "do",
-        "isCorrect": true
+        "text": "That's all for me, thanks.",
+        "audioSrc": "public/data/audio/tech_interview/ti_070_sideB_0.mp3"
       },
       {
-        "text": "go",
-        "isCorrect": false
+        "text": "That's everything from my side, thank you.",
+        "audioSrc": "public/data/audio/tech_interview/ti_070_sideB_1.mp3"
       },
       {
-        "text": "make",
-        "isCorrect": false
+        "text": "That's all on my end, thanks.",
+        "audioSrc": "public/data/audio/tech_interview/ti_070_sideB_2.mp3"
       }
     ],
-    "correctAnswer": "I really hope I do well on the exam tomorrow.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_204.mp3",
-    "hint": "This contrasts with 'go', which describes how a situation progresses ('How did the exam go?').",
-    "content": {
-      "type": "text",
-      "value": "The verb [do] is used in expressions like 'do well' or 'do badly' to talk about performance in a task or event.\n\n~go~ is used for the progress of a situation ('How's it going?') but not for personal performance in this way.\n~make~ is used for creating or producing something."
-    }
+    "note": "Use [On my end] or [From my side] to refer to your part of the conversation or task.\n\n~That's all on my side, thanks.~ (Unnatural phrasing: The correct idioms are 'from my side' or 'on my end'.)"
   },
   {
-    "cardId": "egac_107",
-    "category": "Superlatives: Regular (most)",
-    "sentenceParts": {
-      "prefix": "This is ",
-      "suffix": " book I have ever read."
-    },
-    "options": [
+    "cardId": "ti_095",
+    "cardType": "flippable",
+    "sideA": "¿Puedes sacar esa lógica de ahí?",
+    "sideB": [
       {
-        "text": "the most interesting",
-        "isCorrect": true
+        "text": "Can you take that logic out of there?",
+        "audioSrc": "public/data/audio/tech_interview/ti_095_sideB_0.mp3"
       },
       {
-        "text": "more interesting",
-        "isCorrect": false
+        "text": "Can you extract that logic from there?",
+        "audioSrc": "public/data/audio/tech_interview/ti_095_sideB_1.mp3"
       },
       {
-        "text": "a most interesting",
-        "isCorrect": false
+        "text": "Could you move that logic out of that section?",
+        "audioSrc": "public/data/audio/tech_interview/ti_095_sideB_2.mp3"
       }
     ],
-    "correctAnswer": "This is the most interesting book I have ever read.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_107.mp3",
-    "hint": "This structure is often combined with the present perfect to talk about a unique life experience.",
-    "content": {
-      "type": "text",
-      "value": "**[27]**\n\nThe [superlative form] for long adjectives is [the most + adjective]. It is often used with the present perfect ('I have ever...') to talk about life experiences.\n\n~more interesting~ is the comparative form, which is used to compare two things, not to single out one from a group.\n~a most interesting~ is a different, more formal structure meaning 'a very interesting' and is not a true superlative."
-    }
+    "note": "[Take out] or [Extract] are good verbs for refactoring code.\n\n[Logic] refers to business rules or algorithms in the code.\n\n~Can you take that logic out from there?~ (Redundant preposition: Use 'out of there'.)\n\n~Can you take out that logic of there?~ (Incorrect preposition: Use 'out of'.)"
   },
   {
-    "cardId": "egac_013",
-    "category": "Prepositions at the End of Questions",
-    "sentenceParts": {
-      "prefix": "What are you looking ",
-      "suffix": "?"
-    },
-    "options": [
+    "cardId": "ti_060",
+    "cardType": "flippable",
+    "sideA": "Si necesito más información, como pasos o capturas, le pregunto a quien reportó por Teams de inmediato.",
+    "sideB": [
       {
-        "text": "for",
-        "isCorrect": true
+        "text": "If I need more info—like steps or screenshots—I ask the reporter on Teams right away.",
+        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_0.mp3"
       },
       {
-        "text": "of",
-        "isCorrect": false
+        "text": "If I require further details, such as reproduction steps, I contact the reporter immediately via Teams.",
+        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_1.mp3"
       },
       {
-        "text": "with",
-        "isCorrect": false
+        "text": "When I need more context, like screenshots, I reach out to the reporter on Teams instantly.",
+        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_2.mp3"
+      },
+      {
+        "text": "If I need more info—like steps or screenshots—I ask the one who reported it on Teams.",
+        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_3.mp3"
+      },
+      {
+        "text": "If I need more info—like steps or screenshots—I ask who reported it on Teams.",
+        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_4.mp3"
       }
     ],
-    "correctAnswer": "What are you looking for?",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_013.mp3",
-    "hint": "The very formal alternative is 'For what are you looking?', but this is rarely used in conversation.",
-    "content": {
-      "type": "text",
-      "value": "**[111]**\n\nIn modern English, it's natural to end a question with a preposition, especially when it's part of a phrasal verb like **look for** (meaning 'to search').\n\n~of~ and ~with~ are incorrect prepositions here. They do not form phrasal verbs with 'look' that fit this context."
-    }
+    "note": "[Reporter] refers to the person who created the ticket/bug report.\n\n[Right away] or [Instantly] emphasizes your responsiveness.\n\n~I ask to who reported it...~ (Incorrect grammar: You 'ask someone', you do not 'ask to someone'.)"
   },
   {
-    "cardId": "egac_154",
-    "category": "Present Habits: Be used to",
-    "sentenceParts": {
-      "prefix": "I live in a noisy city, so I",
-      "suffix": " the traffic."
-    },
-    "options": [
+    "cardId": "ti_089",
+    "cardType": "flippable",
+    "sideA": "Necesito pedirle los requerimientos al cliente.",
+    "sideB": [
       {
-        "text": "'m used to",
-        "isCorrect": true
+        "text": "I need to ask the client for the requirements.",
+        "audioSrc": "public/data/audio/tech_interview/ti_089_sideB_0.mp3"
       },
       {
-        "text": " used to",
-        "isCorrect": false
+        "text": "I have to request the requirements from the client.",
+        "audioSrc": "public/data/audio/tech_interview/ti_089_sideB_1.mp3"
       },
       {
-        "text": "'m use to",
-        "isCorrect": false
+        "text": "I need to get the requirements from the client.",
+        "audioSrc": "public/data/audio/tech_interview/ti_089_sideB_2.mp3"
       }
     ],
-    "correctAnswer": "I live in a noisy city, so I'm used to the traffic.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_154.mp3",
-    "hint": "This phrase describes a state of familiarity or adaptation to a new situation.",
-    "content": {
-      "type": "text",
-      "value": "**[15]**\n\n[Be used to] means to be familiar or accustomed to something. It describes a present state.\n\n~used to~ refers only to past habits.\n~'m use to~ is grammatically incorrect; it must be 'used'."
-    }
+    "note": "Structure: [Ask someone FOR something].\n\n~Ask the requirements to the client~ is incorrect grammar.\n\n~I need to ask for the requirements to the client~ (Incorrect structure: Use 'ask the client for' or 'ask for ... from the client'.)"
   },
   {
-    "cardId": "egac_446",
-    "category": "Vocabulary: Math Operations",
-    "sentenceParts": {
-      "prefix": "What is seven ",
-      "suffix": " by nine?"
-    },
-    "options": [
+    "cardId": "ti_053",
+    "cardType": "flippable",
+    "sideA": "Al hacer checkout, la Cotización (ASO) se convierte en una Orden de Venta real en el módulo de Order Management.",
+    "sideB": [
       {
-        "text": "multiplied",
-        "isCorrect": true
+        "text": "Upon checkout, the Quote (ASO) is converted into an actual Sales Order in the Order Management (OM) module.",
+        "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_0.mp3"
       },
       {
-        "text": "time",
-        "isCorrect": false
+        "text": "The checkout process triggers the conversion of the ASO Quote into a confirmed Sales Order in OM.",
+        "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_1.mp3"
       },
       {
-        "text": "with",
-        "isCorrect": false
+        "text": "Data moves from the ASO module to the Order Management (OM) module when the Quote becomes a Booked Order.",
+        "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_2.mp3"
+      },
+      {
+        "text": "When checking out, the Quote becomes an actual Sales Order.",
+        "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_3.mp3"
+      },
+      {
+        "text": "Upon completing checkout, the Quote turns into a Sales Order.",
+        "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_4.mp3"
       }
     ],
-    "correctAnswer": "What is seven multiplied by nine?",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_446.mp3",
-    "hint": "This is the more formal way to express the multiplication operation.",
-    "content": {
-      "type": "text",
-      "value": "**[94]**\n\nThe formal term for the multiplication operation (x) is [multiplied by].\n\n~time~ is incorrect syntax here; the correct term would be 'times' (without 'by') or 'multiplied by'.\n~with~ is not used for multiplication."
-    }
+    "note": "[Upon checkout] is a formal way to say 'when doing checkout'.\n\n[Triggers the conversion] describes the automatic process started by the user's action.\n\n~Doing checkout...~ (Unnatural grammar: Use 'When checking out' or 'Upon checkout'.)"
+  },
+  {
+    "cardId": "ti_103",
+    "cardType": "flippable",
+    "sideA": "Ahora chequeé de nuevo, y ahora sí veo la última versión.",
+    "sideB": [
+      {
+        "text": "I checked again, and now I do see the latest version.",
+        "audioSrc": "public/data/audio/tech_interview/ti_103_sideB_0.mp3"
+      },
+      {
+        "text": "I just checked again, and I can see the latest version now.",
+        "audioSrc": "public/data/audio/tech_interview/ti_103_sideB_1.mp3"
+      },
+      {
+        "text": "After checking again, the latest version is visible.",
+        "audioSrc": "public/data/audio/tech_interview/ti_103_sideB_2.mp3"
+      },
+      {
+        "text": "I checked it again, and now I see the latest version.",
+        "audioSrc": "public/data/audio/tech_interview/ti_103_sideB_3.mp3"
+      }
+    ],
+    "note": "Using [I do see] adds emphasis (affirmative), meaning 'Yes, really, I see it now'.\n\n~...now I see the last version~ (Imprecise: Use 'latest version' for the most recent update. 'Last' implies the final one ever.)"
+  },
+  {
+    "cardId": "ti_014",
+    "cardType": "flippable",
+    "sideA": "Nuestro principal medio de comunicación será por chat o llamadas por Teams.",
+    "sideB": [
+      {
+        "text": "Our main means of communication will be via chat or Teams calls.",
+        "audioSrc": "public/data/audio/tech_interview/ti_014_sideB_0.mp3"
+      },
+      {
+        "text": "We'll communicate mainly through Teams chat or calls.",
+        "audioSrc": "public/data/audio/tech_interview/ti_014_sideB_1.mp3"
+      },
+      {
+        "text": "Our primary contact methods will be Teams chat and calls.",
+        "audioSrc": "public/data/audio/tech_interview/ti_014_sideB_2.mp3"
+      },
+      {
+        "text": "We will mainly use Microsoft Teams for communication.",
+        "audioSrc": "public/data/audio/tech_interview/ti_014_sideB_3.mp3"
+      },
+      {
+        "text": "Our main tool of communication will be Microsoft Teams.",
+        "audioSrc": "public/data/audio/tech_interview/ti_014_sideB_4.mp3"
+      }
+    ],
+    "note": "[Via] is a useful preposition meaning 'by way of' (e.g., via chat, via email).\n\n[Through] is also commonly used (e.g., through Teams).\n\n~Our main tool... will be by Microsoft team~ (Correction: 1. The app is called 'Teams' (plural). 2. Don't say 'the tool will be by'. Say: 'Our main tool is Teams' or 'We use Teams'.)"
+  },
+  {
+    "cardId": "ti_069",
+    "cardType": "flippable",
+    "sideA": "El campo del registro no se ha actualizado correctamente.",
+    "sideB": [
+      {
+        "text": "The record field has not been updated correctly.",
+        "audioSrc": "public/data/audio/tech_interview/ti_069_sideB_0.mp3"
+      },
+      {
+        "text": "The field in the record didn't update as expected.",
+        "audioSrc": "public/data/audio/tech_interview/ti_069_sideB_1.mp3"
+      },
+      {
+        "text": "The record field failed to update properly.",
+        "audioSrc": "public/data/audio/tech_interview/ti_069_sideB_2.mp3"
+      }
+    ],
+    "note": "[As expected] is standard terminology in bug reports to describe the desired behavior versus the actual behavior.\n\n~The registered field...~ (Incorrect meaning: 'Registered field' implies the field itself is registered. Use 'The record field' or 'The field in the record'.)"
   }
 ]
