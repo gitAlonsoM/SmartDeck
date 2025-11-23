@@ -141,40 +141,40 @@ This is a two-part process. You must modify **both** the card data and your summ
 - **Action:** In your summary for that card, you **MUST** first state the user's verbatim suggestion, and then clearly explain your reasoning for the rejection.
 - **Example Summary Line:** \`- Card pv_025: User suggested adding "I am agree with you". This was rejected because the verb 'agree' does not require the auxiliary 'to be'. I have added this clarification to the card's note.\`
 
-## 6. CRITICAL: REQUIRED OUTPUT FORMAT
-Your final response MUST NOT be wrapped in a single code block. You must output exactly two distinct parts in the following order:
 
-### Part 1: The JSON Block
-1. Output the header: \`## Corrected Cards JSON\`
-2. **Open a JSON code block** using \`\`\`json.
-3. Provide the single, raw JSON array of the corrected cards.
-4. **REMOVE** the \`review_request\` object from every card.
-5. **CLOSE the JSON code block** using \`\`\` immediately after the array closing bracket (\`]\`).
+## 6. CRITICAL: REQUIRED OUTPUT FORMAT & STRUCTURE
+Your final response MUST be structured into exactly **two distinct parts**.
+⛔ **PROHIBITED:** Do NOT wrap the entire response in a single code block. The Report must be outside the JSON block.
 
-### Part 2: The Report (Standard Markdown)
-**OUTSIDE** of any code block (do not put this inside the JSON block), output the following report:
+### Part 1: The Code Artifact
+1. Output the header: \`## 1. Corrected Cards JSON\`
+2. **Open a JSON code block** (\`\`\`json).
+3. Output the raw JSON array (excluding \`review_request\`).
+4. **CLOSE the JSON code block** (\`\`\`) immediately after the array closing bracket.
 
-1. Output the header: \`## 📝 Improvement Report\`
+### Part 2: The Improvement Report (Markdown Text)
+**OUTSIDE** of any code block, output the report following this exact hierarchy:
 
-2. **Batch Statistics:** Provide a vertical list exactly like this:
-   - **Total Analyzed:** [X]
-   - **Modified:** [Y]
-   - **Unchanged:** [Z]
-   - **Decisions:**
-     - ✅ **Accepted:** [A]
-     - ⚠️ **Rejected (Notes Updated):** [B]
+1. Output the header: \`## 2. 📝 Improvement Report\`
 
-3. **Definitions for counting:**
-   - **Accepted:** The user's suggestion was correct and added.
-   - **Rejected:** The user's suggestion was incorrect; note/explanation added.
+#### A. Batch Statistics
+Provide a vertical list:
+- **Total Analyzed:** [X]
+- **Modified:** [Y]
+- **Unchanged:** [Z]
+- **Decisions:**
+  - ✅ **Accepted:** [A] (Suggestion added to content)
+  - ⚠️ **Rejected:** [B] (Suggestion incorrect; note added)
 
-#### Resumen de Cambios
-- Para cada tarjeta que recibiste para modificar en el json, para evaluar, etc, proporciona un resumen en una lista, explicando qué te pidió el usuario (debes explicitamente copiar y pegar lo que escribio el usuario en su solicitud para cada tarjeta, tal cual lo escribio el usuario, con sus errores de ortografia y todo, es necesario mostrar que pidio el usuario) y qué acción tomaste, ya sea cambio 'aceptado', lo que agregaste, o porque se rechazo el cambio, si añadiste algo nuevo etc etc, detalladamente explicar los cambios en cada card.
+#### B. Change Log Summary
+For **EVERY** processed card, provide a bullet point explaining the changes:
+- **Card [ID]:**
+  - **User Request:** "[Insert the user's **verbatim** request here, preserving all typos/grammar errors exactly as written]"
+  - **Action Taken:** [Detailed explanation of why the change was accepted or rejected, and what specific field was modified]
 
-#### Próximos Pasos
-- Después del resumen de cambios, proporciona los siguientes pasos para el usuario:
-- **Paso 1:** Dile al usuario que guarde el JSON de arriba en el archivo \`corrections.json\`.
-- **Paso 2:** Inserta el **comando exacto que te doy a continuación, sin modificarlo en absoluto**:
+#### C. Next Steps
+- **Step 1:** Save the JSON above into a file named \`corrections.json\`.
+- **Step 2:** Run the following command exactly:
 \`\`\`bash
 ${correctCommand}
 \`\`\`
