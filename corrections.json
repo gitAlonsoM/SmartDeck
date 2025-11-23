@@ -1,215 +1,89 @@
-
 [
   {
-    "cardId": "ti_048",
-    "cardType": "flippable",
-    "sideA": "El stock de los productos está en los almacenes y cada provincia tiene uno diferente.",
-    "sideB": [
+    "cardId": "egac_225",
+    "category": "Greetings: 'How have you been?'",
+    "sentenceParts": {
+      "prefix": "A: It's been a while! ",
+      "suffix": "? B: I've been great, thanks!"
+    },
+    "options": [
       {
-        "text": "Product stock is in the warehouses, and each province has its own specific inventory.",
-        "audioSrc": "public/data/audio/tech_interview/ti_048_sideB_0.mp3"
+        "text": "How have you been",
+        "isCorrect": true
       },
       {
-        "text": "Inventory is managed in warehouses, with different Inventory Organizations for each province.",
-        "audioSrc": "public/data/audio/tech_interview/ti_048_sideB_1.mp3"
+        "text": "How you are",
+        "isCorrect": false
       },
       {
-        "text": "Stock availability is physical and varies because each province points to a different warehouse.",
-        "audioSrc": "public/data/audio/tech_interview/ti_048_sideB_2.mp3"
-      },
-      {
-        "text": "Product stock is in the warehouses, and each province has a different one.",
-        "audioSrc": "public/data/audio/tech_interview/ti_048_sideB_3.mp3"
+        "text": "What have you done",
+        "isCorrect": false
       }
     ],
-    "note": "[Points to] is a useful phrasal verb when describing software configuration or database relationships.\n\n[Varies] means 'is different' or 'changes'."
+    "correctAnswer": "A: It's been a while! How have you been? B: I've been great, thanks!",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_225.mp3",
+    "hint": "This greeting is perfect for when you haven't seen someone in weeks, months, or years.",
+    "content": {
+      "type": "text",
+      "value": "[How have you been?] is the standard Present Perfect question to ask about someone's life and health since the last time you saw them.\n\n~How you are~ is grammatically incorrect; it should be 'How are you?'.\n~What have you done~ asks about specific actions, not general well-being."
+    }
   },
   {
-    "cardId": "ti_070",
-    "cardType": "flippable",
-    "sideA": "Eso es todo por mi parte, gracias.",
-    "sideB": [
+    "cardId": "egac_260",
+    "category": "Modal Expressions: State/Quality Evaluation",
+    "sentenceParts": {
+      "prefix": "A: How was your presentation? B: It could have ",
+      "suffix": " better, to be honest."
+    },
+    "options": [
       {
-        "text": "That's all for me, thanks.",
-        "audioSrc": "public/data/audio/tech_interview/ti_070_sideB_0.mp3"
+        "text": "gone",
+        "isCorrect": false
       },
       {
-        "text": "That's everything from my side, thank you.",
-        "audioSrc": "public/data/audio/tech_interview/ti_070_sideB_1.mp3"
+        "text": "done",
+        "isCorrect": false
       },
       {
-        "text": "That's all on my end, thanks.",
-        "audioSrc": "public/data/audio/tech_interview/ti_070_sideB_2.mp3"
+        "text": "been",
+        "isCorrect": true
       }
     ],
-    "note": "Use [On my end] or [From my side] to refer to your part of the conversation or task.\n\n~That's all on my side, thanks.~ (Unnatural phrasing: The correct idioms are 'from my side' or 'on my end'.)"
+    "correctAnswer": "A: How was your presentation? B: It could have been better, to be honest.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_260.mp3",
+    "hint": "This expression is used to evaluate the outcome of events like meetings, interviews, or performances.",
+    "content": {
+      "type": "text",
+      "value": "**[115]**\n\nWhile [gone] focuses on the *progress* or *flow* of the event, 'been' focuses on the state. Ideally, 'How was it?' matches 'It has been...'.\n\n~Done~ is incorrect because events (like a presentation) cannot 'do' things; only people can.\n~Went~ is the past simple and cannot follow 'could have'."
+    }
   },
   {
-    "cardId": "ti_095",
-    "cardType": "flippable",
-    "sideA": "¿Puedes sacar esa lógica de ahí?",
-    "sideB": [
+    "cardId": "egac_287",
+    "category": "Results: 'Did worse'",
+    "sentenceParts": {
+      "prefix": "I studied a lot, but I still ",
+      "suffix": " on the test than I did last time."
+    },
+    "options": [
       {
-        "text": "Can you take that logic out of there?",
-        "audioSrc": "public/data/audio/tech_interview/ti_095_sideB_0.mp3"
+        "text": "did worse",
+        "isCorrect": true
       },
       {
-        "text": "Can you extract that logic from there?",
-        "audioSrc": "public/data/audio/tech_interview/ti_095_sideB_1.mp3"
+        "text": "went worse",
+        "isCorrect": false
       },
       {
-        "text": "Could you move that logic out of that section?",
-        "audioSrc": "public/data/audio/tech_interview/ti_095_sideB_2.mp3"
+        "text": "was worse",
+        "isCorrect": false
       }
     ],
-    "note": "[Take out] or [Extract] are good verbs for refactoring code.\n\n[Logic] refers to business rules or algorithms in the code.\n\n~Can you take that logic out from there?~ (Redundant preposition: Use 'out of there'.)\n\n~Can you take out that logic of there?~ (Incorrect preposition: Use 'out of'.)"
-  },
-  {
-    "cardId": "ti_060",
-    "cardType": "flippable",
-    "sideA": "Si necesito más información, como pasos o capturas, le pregunto a quien reportó por Teams de inmediato.",
-    "sideB": [
-      {
-        "text": "If I need more info—like steps or screenshots—I ask the reporter on Teams right away.",
-        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_0.mp3"
-      },
-      {
-        "text": "If I require further details, such as reproduction steps, I contact the reporter immediately via Teams.",
-        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_1.mp3"
-      },
-      {
-        "text": "When I need more context, like screenshots, I reach out to the reporter on Teams instantly.",
-        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_2.mp3"
-      },
-      {
-        "text": "If I need more info—like steps or screenshots—I ask the one who reported it on Teams.",
-        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_3.mp3"
-      },
-      {
-        "text": "If I need more info—like steps or screenshots—I ask who reported it on Teams.",
-        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_4.mp3"
-      }
-    ],
-    "note": "[Reporter] refers to the person who created the ticket/bug report.\n\n[Right away] or [Instantly] emphasizes your responsiveness.\n\n~I ask to who reported it...~ (Incorrect grammar: You 'ask someone', you do not 'ask to someone'.)"
-  },
-  {
-    "cardId": "ti_089",
-    "cardType": "flippable",
-    "sideA": "Necesito pedirle los requerimientos al cliente.",
-    "sideB": [
-      {
-        "text": "I need to ask the client for the requirements.",
-        "audioSrc": "public/data/audio/tech_interview/ti_089_sideB_0.mp3"
-      },
-      {
-        "text": "I have to request the requirements from the client.",
-        "audioSrc": "public/data/audio/tech_interview/ti_089_sideB_1.mp3"
-      },
-      {
-        "text": "I need to get the requirements from the client.",
-        "audioSrc": "public/data/audio/tech_interview/ti_089_sideB_2.mp3"
-      }
-    ],
-    "note": "Structure: [Ask someone FOR something].\n\n~Ask the requirements to the client~ is incorrect grammar.\n\n~I need to ask for the requirements to the client~ (Incorrect structure: Use 'ask the client for' or 'ask for ... from the client'.)"
-  },
-  {
-    "cardId": "ti_053",
-    "cardType": "flippable",
-    "sideA": "Al hacer checkout, la Cotización (ASO) se convierte en una Orden de Venta real en el módulo de Order Management.",
-    "sideB": [
-      {
-        "text": "Upon checkout, the Quote (ASO) is converted into an actual Sales Order in the Order Management (OM) module.",
-        "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_0.mp3"
-      },
-      {
-        "text": "The checkout process triggers the conversion of the ASO Quote into a confirmed Sales Order in OM.",
-        "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_1.mp3"
-      },
-      {
-        "text": "Data moves from the ASO module to the Order Management (OM) module when the Quote becomes a Booked Order.",
-        "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_2.mp3"
-      },
-      {
-        "text": "When checking out, the Quote becomes an actual Sales Order.",
-        "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_3.mp3"
-      },
-      {
-        "text": "Upon completing checkout, the Quote turns into a Sales Order.",
-        "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_4.mp3"
-      }
-    ],
-    "note": "[Upon checkout] is a formal way to say 'when doing checkout'.\n\n[Triggers the conversion] describes the automatic process started by the user's action.\n\n~Doing checkout...~ (Unnatural grammar: Use 'When checking out' or 'Upon checkout'.)"
-  },
-  {
-    "cardId": "ti_103",
-    "cardType": "flippable",
-    "sideA": "Ahora chequeé de nuevo, y ahora sí veo la última versión.",
-    "sideB": [
-      {
-        "text": "I checked again, and now I do see the latest version.",
-        "audioSrc": "public/data/audio/tech_interview/ti_103_sideB_0.mp3"
-      },
-      {
-        "text": "I just checked again, and I can see the latest version now.",
-        "audioSrc": "public/data/audio/tech_interview/ti_103_sideB_1.mp3"
-      },
-      {
-        "text": "After checking again, the latest version is visible.",
-        "audioSrc": "public/data/audio/tech_interview/ti_103_sideB_2.mp3"
-      },
-      {
-        "text": "I checked it again, and now I see the latest version.",
-        "audioSrc": "public/data/audio/tech_interview/ti_103_sideB_3.mp3"
-      }
-    ],
-    "note": "Using [I do see] adds emphasis (affirmative), meaning 'Yes, really, I see it now'.\n\n~...now I see the last version~ (Imprecise: Use 'latest version' for the most recent update. 'Last' implies the final one ever.)"
-  },
-  {
-    "cardId": "ti_014",
-    "cardType": "flippable",
-    "sideA": "Nuestro principal medio de comunicación será por chat o llamadas por Teams.",
-    "sideB": [
-      {
-        "text": "Our main means of communication will be via chat or Teams calls.",
-        "audioSrc": "public/data/audio/tech_interview/ti_014_sideB_0.mp3"
-      },
-      {
-        "text": "We'll communicate mainly through Teams chat or calls.",
-        "audioSrc": "public/data/audio/tech_interview/ti_014_sideB_1.mp3"
-      },
-      {
-        "text": "Our primary contact methods will be Teams chat and calls.",
-        "audioSrc": "public/data/audio/tech_interview/ti_014_sideB_2.mp3"
-      },
-      {
-        "text": "We will mainly use Microsoft Teams for communication.",
-        "audioSrc": "public/data/audio/tech_interview/ti_014_sideB_3.mp3"
-      },
-      {
-        "text": "Our main tool of communication will be Microsoft Teams.",
-        "audioSrc": "public/data/audio/tech_interview/ti_014_sideB_4.mp3"
-      }
-    ],
-    "note": "[Via] is a useful preposition meaning 'by way of' (e.g., via chat, via email).\n\n[Through] is also commonly used (e.g., through Teams).\n\n~Our main tool... will be by Microsoft team~ (Correction: 1. The app is called 'Teams' (plural). 2. Don't say 'the tool will be by'. Say: 'Our main tool is Teams' or 'We use Teams'.)"
-  },
-  {
-    "cardId": "ti_069",
-    "cardType": "flippable",
-    "sideA": "El campo del registro no se ha actualizado correctamente.",
-    "sideB": [
-      {
-        "text": "The record field has not been updated correctly.",
-        "audioSrc": "public/data/audio/tech_interview/ti_069_sideB_0.mp3"
-      },
-      {
-        "text": "The field in the record didn't update as expected.",
-        "audioSrc": "public/data/audio/tech_interview/ti_069_sideB_1.mp3"
-      },
-      {
-        "text": "The record field failed to update properly.",
-        "audioSrc": "public/data/audio/tech_interview/ti_069_sideB_2.mp3"
-      }
-    ],
-    "note": "[As expected] is standard terminology in bug reports to describe the desired behavior versus the actual behavior.\n\n~The registered field...~ (Incorrect meaning: 'Registered field' implies the field itself is registered. Use 'The record field' or 'The field in the record'.)"
+    "correctAnswer": "I studied a lot, but I still did worse on the test than I did last time.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_287.mp3",
+    "hint": "The adverb 'worse' modifies the verb 'do'.",
+    "content": {
+      "type": "text",
+      "value": "**[116]**\n\n[Did worse] is the correct expression to describe a poorer performance in a task, using the verb 'do'.\n\n~Went worse~ would describe how a situation progressed ('The meeting went worse than expected').\n~Was worse~ would describe the state of something ('The test was worse than the last one')."
+    }
   }
 ]
