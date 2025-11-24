@@ -59,30 +59,38 @@ body {
     border-radius: 0.75rem; /* 12px */
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
 }
-
-/* CORRECTED AND UNIFIED .flip-card-front rule */
 .flip-card-front {
-    padding: 0; /* Padding is now handled by the inner container #side-a-content */
+    padding: 0;
     justify-content: stretch;
     align-items: stretch;
-    background-color: #1f2937; /* dark:bg-gray-800 */
+    /* More pronounced lighter top-left to darker bottom-right */
+    background: linear-gradient(145deg, #1e293b 0%, #020617 100%);
+    /* Lighter, crisp border to pop against the black background */
+    border: 1px solid rgba(255, 255, 255, 0.12); 
 }
 
+/* Darker back face for contrast */
 .flip-card-back {
     padding: 20px;
-    background-color: #374151; /* dark:bg-gray-700 */
+    background: linear-gradient(145deg, #0f172a 0%, #000000 100%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     transform: rotateY(180deg);
 }
 
-
-
-.flip-card-back {
-    padding: 20px;
-    background-color: #374151; /* dark:bg-gray-700 */
-    transform: rotateY(180deg);
+/* Global style for Deck List Cards */
+.deck-card {
+    /* Matching the front card style */
+    background: linear-gradient(145deg, #1e293b 0%, #020617 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-color 0.2s;
 }
 
-
+.deck-card:hover {
+    transform: translateY(-4px);
+    /* Stronger shadow for depth */
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+    border-color: rgba(129, 140, 248, 0.5); /* Indigo-400 glow */
+}
 
 /* Marquee (Scrolling Text) Animation */
 .marquee {
@@ -100,9 +108,9 @@ body {
 
 /* Basic styling for code blocks */
 pre.code-block {
-    background-color: #0d1117;
-    color: #c9d1d9;
-    border: 1px solid #30363d;
+    background-color: #020617; /* Deepest black-blue */
+    color: #e2e8f0; /* Slate-200 */
+    border: 1px solid #1e293b; /* Slate-800 border */
     border-radius: 6px;
     padding: 16px;
     font-family: 'Courier New', Courier, monospace;
@@ -139,15 +147,16 @@ code {
 
 /* Glossary term style */
 .glossary-term {
-    color: #60a5fa; /* Tailwind's blue-400 */
+    color: #818cf8; /* Tailwind Indigo-400 - More modern than blue-400 */
     font-weight: 600;
     text-decoration: underline;
     text-decoration-style: dotted;
+    text-underline-offset: 4px; /* Better spacing */
     cursor: pointer;
     transition: color 0.2s ease-in-out;
 }
 .glossary-term:hover {
-    color: #93c5fd; /* Tailwind's blue-300 */
+color: #c7d2fe; /* Tailwind Indigo-200 */
 }
 
 
@@ -167,14 +176,14 @@ code {
     list-style-type: disc;
     list-style-position: inside;
     margin-bottom: 1rem; /* mb-4 */
-    space-y: 0.5rem; /* space-y-2 */
+    appearance: 0.5rem; /* space-y-2 */
 }
 
 #glossary-content ol {
     list-style-type: decimal;
     list-style-position: inside;
     margin-bottom: 1rem; /* mb-4 */
-    space-y: 0.5rem; /* space-y-2 */
+    appearance: 0.5rem; /* space-y-2 */
 }
 
 #glossary-content .font-mono {
