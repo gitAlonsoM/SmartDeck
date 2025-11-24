@@ -6,11 +6,11 @@
 class StorageService {
     static STORAGE_KEY_DECKS = 'smart-decks-v3-decks';
      static STORAGE_KEY_IMPROVEMENT_PREFIX = 'smart-decks-v3-improvement-';
-            static STORAGE_KEY_FAVORITES = 'smart-decks-v3-favorites';
+    static STORAGE_KEY_FAVORITES = 'smart-decks-v3-favorites';
             static STORAGE_KEY_UNLOCKED_DECKS = 'smart-decks-v3-unlocked-decks';
-
      static STORAGE_KEY_PROGRESS_PREFIX = 'smart-decks-v3-progress-';
-static STORAGE_KEY_DECK_PROGRESS_PREFIX = 'smart-decks-v3-deck-progress-';
+        static STORAGE_KEY_DECK_PROGRESS_PREFIX = 'smart-decks-v3-deck-progress-';
+        static STORAGE_KEY_METRICS_PREFIX = 'smart-decks-v3-metrics-';
     
  /**
      * Saves the improvement data for a specific deck.
@@ -64,6 +64,64 @@ static STORAGE_KEY_DECK_PROGRESS_PREFIX = 'smart-decks-v3-deck-progress-';
         } catch (error) {
             console.error(`DEBUG: [StorageService] clearImprovementForCard -> Error clearing data for card ${cardId}.`, error);
         }
+    }
+
+    /**
+     * Updates the performance metric for a specific card.
+     * @param {string} deckId - The ID of the deck.
+     * @param {string} cardId - The ID of the card.
+     * @param {boolean} isMastered - Whether the card was just mastered (correct answer/knew it).
+     */
+    static updateCardMetric(deckId, cardId, isMastered) {
+        if (!deckId || !cardId) return;
+        try {
+            const key = `${this.STORAGE_KEY_METRICS_PREFIX}${deckId}`;
+            const metrics = JSON.parse(localStorage.getItem(key) || '{}');
+
+            if (!metrics[cardId]) {
+                metrics[cardId] = { attempts: 0, masteredAt: null };
+            }
+
+            // Only increment attempts if it hasn't been mastered yet, 
+            // or if we want to track post-mastery reviews (usually we stop tracking mastery efficiency once mastered).
+            // For this specific requirement ("at which attempt was it mastered"), we lock 'masteredAt'.
+            
+            if (metrics[cardId].masteredAt === null) {
+                metrics[cardId].attempts += 1;
+                
+                if (isMastered) {
+                    metrics[cardId].masteredAt = metrics[cardId].attempts;
+                }
+                
+                localStorage.setItem(key, JSON.stringify(metrics));
+                console.log(`VERIFY: [StorageService] Metric updated for ${cardId}. Attempt #${metrics[cardId].attempts}. Mastered: ${isMastered}`);
+            }
+        } catch (error) {
+            console.error("DEBUG: [StorageService] Error updating metrics.", error);
+        }
+    }
+
+    /**
+     * Loads the metrics for a deck.
+     */
+    static loadDeckMetrics(deckId) {
+        if (!deckId) return {};
+        try {
+            const key = `${this.STORAGE_KEY_METRICS_PREFIX}${deckId}`;
+            return JSON.parse(localStorage.getItem(key) || '{}');
+        } catch (error) {
+            return {};
+        }
+    }
+
+    /**
+     * Clears metrics for a deck (used during Reset).
+     */
+    static clearDeckMetrics(deckId) {
+        if (!deckId) return;
+        const key = `${this.STORAGE_KEY_METRICS_PREFIX}${deckId}`;
+        localStorage.removeItem(key);
+        console.log(`VERIFY: [StorageService] Metrics cleared for deck ${deckId}.`);
     }
     
     
@@ -146,6 +204,8 @@ static STORAGE_KEY_DECK_PROGRESS_PREFIX = 'smart-decks-v3-deck-progress-';
         if (!deckId) return;
         const key = `${this.STORAGE_KEY_DECK_PROGRESS_PREFIX}${deckId}`;
         localStorage.removeItem(key);
+        this.clearDeckMetrics(deckId);
+
         console.log(`DEBUG: [StorageService] clearDeckProgress -> Cleared learning progress for deck ${deckId}.`);
     }
     
@@ -367,5 +427,10 @@ static STORAGE_KEY_DECK_PROGRESS_PREFIX = 'smart-decks-v3-deck-progress-';
         } catch (error) {
             console.error(`DEBUG: [StorageService] clearAllImprovementData -> Error wiping data for deck ${deckId}.`, error);
         }
+
+
+        
     }
+
+    
 }

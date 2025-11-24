@@ -5,8 +5,10 @@ class SpacedRepetitionQuiz {
     /**
      * @param {Array} cards - The full array of card objects for the deck.
      * @param {object} progress - The user's progress for this deck. { learned: Set, needsReview: Set }
+     * @param {object} progress - The user's progress for this deck. { learned: Set, needsReview: Set }
      */
-    constructor(cards, progress) {
+    constructor(deckId, cards, progress) {
+        this.deckId = deckId;
         this.allCards = cards;
         this.progress = progress;
         this.currentCards = []; // The final list of cards for this round
@@ -20,6 +22,7 @@ class SpacedRepetitionQuiz {
      * Reuses the same logic as the standard quiz for consistency.
      * @param {number} quizLength - The maximum number of cards for the round.
      */
+
     generateQuizRound(quizLength = 7) {
        console.log("DEBUG: [SpacedRepetitionQuiz] generateQuizRound -> Generating a new round.");
         const ignoredCardIds = this.progress.ignored || new Set();
@@ -30,7 +33,8 @@ class SpacedRepetitionQuiz {
         // Filter out ignored cards from the entire pool first.
         const studyableCards = this.allCards.filter(card => !ignoredCardIds.has(card.cardId));
 
-        const shuffle = (arr) => arr.sort(() => 0.5 - Math.random());
+        const shuffle = (arr) => arr.sort(() => 0.5 - Math.random());
+
 
         // Use cardId as the unique identifier for flippable cards
         const reviewPool = Array.from(this.progress.needsReview || []);
@@ -58,7 +62,7 @@ class SpacedRepetitionQuiz {
      * Handles the user's self-assessment for the current card.
      * @param {boolean} knewIt - True if the user knew the answer, false otherwise.
      */
-    selfAssess(knewIt) {
+  selfAssess(knewIt) {
         const currentCard = this.getCurrentCard();
         if (!currentCard) return;
 
@@ -68,10 +72,15 @@ class SpacedRepetitionQuiz {
         if (knewIt) {
             this.progress.learned.add(cardId);
              this.score++; // Increment score if the user knew the answer
-            console.log(`DEBUG: [SpacedRepetitionQuiz] selfAssess -> Card '${cardId}' marked as 'learned'. New score: ${this.score}`);
+            console.log(`DEBUG: [SpacedRepetitionQuiz] selfAssess -> Card '${cardId}' marked as 'learned'. New score: ${this.score}`);
         } else {
             this.progress.needsReview.add(cardId);
             console.log(`DEBUG: [SpacedRepetitionQuiz] selfAssess -> Card '${cardId}' marked as 'needs review'.`);
+        }
+
+        if (this.deckId) {
+            StorageService.updateCardMetric(this.deckId, cardId, knewIt);
+            console.log(`VERIFY: [SpacedRepetitionQuiz] Metric updated for ${cardId}`);
         }
     }
 

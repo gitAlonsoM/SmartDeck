@@ -3,10 +3,12 @@
 
 class Quiz {
     /**
+     * @param {string} deckId - The ID of the deck (Added for metrics).
      * @param {Array} cards - The full array of card objects for the deck.
      * @param {object} progress - The user's progress for this deck. { learned: Set, needsReview: Set }
      */
-    constructor(cards, progress) {
+    constructor(deckId, cards, progress) {
+        this.deckId = deckId; // Store deckId
         this.allCards = cards;
         this.progress = progress;
         this.questions = []; // The final list of questions for this round
@@ -110,6 +112,10 @@ const cardId = currentQuestion.cardId;
         } else {
             this.progress.needsReview.add(cardId); // Add back to needsReview if incorrect
         }
+
+        if (this.deckId) {
+            StorageService.updateCardMetric(this.deckId, cardId, isCorrect);
+        }
 
     console.log(`DEBUG: [Quiz] answer -> User answered '${selectedOption}'. Correct: ${isCorrect}. New score: ${this.score}`);
     return isCorrect;

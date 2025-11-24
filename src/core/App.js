@@ -677,22 +677,24 @@ class App {
     const progress = StorageService.loadDeckProgress(this.state.currentDeckId);
 
         // --- DECK TYPE ROUTER ---
-        // More explicit routing based on deckType
         if (deck.deckType === 'flippable') {
           console.log("DEBUG: [App] handleStartQuiz -> Starting a 'flippable' quiz.");
-            this.state.quizInstance = new SpacedRepetitionQuiz(deck.cards, progress);
-            this.state.quizInstance.generateQuizRound(7);
-            this.state.currentScreen = 'flippableQuiz';
+            // Updated: Pass currentDeckId as first argument
+            this.state.quizInstance = new SpacedRepetitionQuiz(this.state.currentDeckId, deck.cards, progress);
+            this.state.quizInstance.generateQuizRound(7);
+            this.state.currentScreen = 'flippableQuiz';
         } else if (deck.deckType === 'audioChoice') {
             // Handle the new audio choice deck type
             console.log("DEBUG: [App] handleStartQuiz -> Starting an 'audioChoice' quiz.");
-            this.state.quizInstance = new Quiz(deck.cards, progress); // Reuses the standard Quiz logic
+            // Updated: Pass currentDeckId as first argument
+            this.state.quizInstance = new Quiz(this.state.currentDeckId, deck.cards, progress); 
             this.state.quizInstance.generateQuizRound(7);
-            this.state.currentScreen = 'audioChoiceQuiz'; // Set to the new screen state
-        } else if (deck.deckType === 'multipleChoice') {
+            this.state.currentScreen = 'audioChoiceQuiz'; 
+        } else if (deck.deckType === 'multipleChoice') {
             // Explicitly handle multiple choice decks
             console.log("DEBUG: [App] handleStartQuiz -> Starting a 'multipleChoice' quiz.");
-            this.state.quizInstance = new Quiz(deck.cards, progress);
+            // Updated: Pass currentDeckId as first argument
+            this.state.quizInstance = new Quiz(this.state.currentDeckId, deck.cards, progress);
             this.state.quizInstance.generateQuizRound(7);
             this.state.currentScreen = 'quiz';
         } else {
@@ -877,13 +879,12 @@ async handleQuizEnd() {
 
 
 handleResetDeck() {
-    const deckId = this.state.currentDeckId;
-    if (confirm("Are you sure you want to reset all progress for this deck? This action cannot be undone.")) {
+const deckId = this.state.currentDeckId;
+        // Removed confirm() check because DeckDetailScreen handles it with the Modern Modal
         console.log(`DEBUG: [App] handleResetDeck -> Resetting progress for deck ${deckId}.`);
-        StorageService.clearDeckProgress(deckId); // Assumes you add this method to StorageService
-        this.render(); // Re-render the detail screen to show updated progress
+        StorageService.clearDeckProgress(deckId); 
+        this.render(); 
     }
-}
 
 /**
  * Handles the click event to show the AI Deck creation modal.

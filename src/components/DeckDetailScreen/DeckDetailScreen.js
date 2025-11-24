@@ -1,4 +1,7 @@
 /* src\components\DeckDetailScreen\DeckDetailScreen.js */
+
+
+
 class DeckDetailScreen {
     /**
      * @param {HTMLElement} container The DOM element where the component will be rendered.
@@ -18,8 +21,12 @@ class DeckDetailScreen {
         this.onUnmarkCardForImprovement = onUnmarkCardForImprovement;
         this.onExportForImprovement = onExportForImprovement;
         this.onDeleteDeck = onDeleteDeck;
-        this.onClearAllImprovements = onClearAllImprovements; // Store the new callback
+        this.onClearAllImprovements = onClearAllImprovements; 
         this.deck = null; 
+        
+        // Initialize the ModernModal
+        this.modernModal = new ModernModal();
+        
         console.log("DEBUG: [DeckDetailScreen] constructor -> Component instantiated.");
     }
 
@@ -37,6 +44,8 @@ class DeckDetailScreen {
         if (!this.container.querySelector('#deck-detail-screen')) {
             const html = await ComponentLoader.loadHTML('/src/components/DeckDetailScreen/deck-detail-screen.html');
             this.container.innerHTML = html;
+            
+            await this.modernModal.init(this.container);
             this.setupEventListeners(); // Setup listeners only once after initial render
         }
         
@@ -216,13 +225,90 @@ class DeckDetailScreen {
         footer.classList.remove('hidden');
     }
 
+
+    /**
+     * Handles the click on the Reset button to show the Modern Modal.
+     */
+handleResetClick() {
+    console.log("DEBUG: [DeckDetailScreen] handleResetClick -> Attempting to show Warning Modal.");
+        this.modernModal.show({
+            title: "Reset Deck Progress?",
+            message: "Are you sure you want to reset all progress for this deck? This action cannot be undone and your learning history will be lost.",
+            type: 'warning', // Red icon and double buttons
+            onConfirm: () => {
+                console.log("VERIFY: [DeckDetailScreen] User clicked 'Yes'. Executing reset.");
+                // Execute the callback provided by App.js
+                if (this.onResetDeck) this.onResetDeck();
+            }
+        });
+    }
+
+    /**
+     * Generates the JSON Efficiency Report and copies it to clipboard.
+     */
+    handleGenerateReport() {
+        if (!this.deck) return;
+
+        console.log(`DEBUG: [DeckDetailScreen] handleGenerateReport -> Generating report for ${this.deck.id}`);
+        const metrics = StorageService.loadDeckMetrics(this.deck.id);
+        
+        // Initialize Report Structure
+        const report = {
+            deckName: this.deck.name,
+            deckPath: `public/data/${this.deck.fileName || 'unknown.json'}`, // Assumes fileName is patched in App.js loadDecks
+            generatedAt: new Date().toISOString(),
+            totalCards: this.deck.cards.length,
+            masteryByAttempts: {
+                "1_attempt": [],
+                "2_attempts": [],
+                "3_attempts": [],
+                "4_attempts": [],
+                "5_attempts": [],
+                "6+_attempts": [],
+                "not_yet_mastered": []
+            }
+        };
+
+        // Process Metrics
+        Object.entries(metrics).forEach(([cardId, data]) => {
+            if (data.masteredAt === null) {
+                report.masteryByAttempts["not_yet_mastered"].push(cardId);
+            } else {
+                if (data.masteredAt === 1) report.masteryByAttempts["1_attempt"].push(cardId);
+                else if (data.masteredAt === 2) report.masteryByAttempts["2_attempts"].push(cardId);
+                else if (data.masteredAt === 3) report.masteryByAttempts["3_attempts"].push(cardId);
+                else if (data.masteredAt === 4) report.masteryByAttempts["4_attempts"].push(cardId);
+                else if (data.masteredAt === 5) report.masteryByAttempts["5_attempts"].push(cardId);
+                else report.masteryByAttempts["6+_attempts"].push(cardId);
+            }
+        });
+
+        // Copy to Clipboard
+        const jsonString = JSON.stringify(report, null, 2);
+        navigator.clipboard.writeText(jsonString).then(() => {
+
+            console.log("VERIFY: Report copied to clipboard.");
+            this.modernModal.show({
+                title: "Report Generated!",
+                message: "Efficiency Report copied to clipboard! You can now paste it!.",
+                type: 'success' // Green icon and single OK button
+            });
+        }).catch(err => {
+            console.error("Failed to copy report: ", err);
+            alert("Failed to copy report. Check console.");
+        });
+    }
+
     /**
      * Attaches all necessary event listeners to the component's elements.
      */
     setupEventListeners() {
         document.getElementById('start-quiz-btn').addEventListener('click', () => this.onStartQuiz());
         document.getElementById('back-to-decks-btn').addEventListener('click', () => this.onGoBack());
-        document.getElementById('reset-deck-btn').addEventListener('click', () => this.onResetDeck());
+
+        
+        
+       document.getElementById('reset-deck-btn').addEventListener('click', () => this.handleResetClick());
         document.getElementById('delete-deck-btn').addEventListener('click', () => this.onDeleteDeck(this.deck.id));
 
         this.container.addEventListener('click', (event) => {
@@ -242,6 +328,12 @@ class DeckDetailScreen {
         const exportBtn = document.getElementById('export-improve-btn');
         if (exportBtn) {
             exportBtn.addEventListener('click', () => this.onExportForImprovement());
+        }
+
+        // Listener for the new Progress Report Button
+        const reportBtn = document.getElementById('generate-report-btn');
+        if (reportBtn) {
+            reportBtn.addEventListener('click', () => this.handleGenerateReport());
         }
     }
 
@@ -315,7 +407,11 @@ class DeckDetailScreen {
     setupEventListeners() {
         document.getElementById('start-quiz-btn').addEventListener('click', () => this.onStartQuiz());
         document.getElementById('back-to-decks-btn').addEventListener('click', () => this.onGoBack());
-        document.getElementById('reset-deck-btn').addEventListener('click', () => this.onResetDeck());
+
+        document.getElementById('reset-deck-btn').addEventListener('click', () => {
+            console.log("DEBUG: [DeckDetailScreen] Reset button clicked. Invoking handleResetClick for Modal.");
+            this.handleResetClick();
+        });
         
         const deleteDeckBtn = document.getElementById('delete-deck-btn');
         if (deleteDeckBtn) {
@@ -339,6 +435,12 @@ class DeckDetailScreen {
         const exportBtn = document.getElementById('export-improve-btn');
         if (exportBtn) {
             exportBtn.addEventListener('click', () => this.onExportForImprovement());
+        }
+
+        // Listener for the new Progress Report Button
+        const reportBtn = document.getElementById('generate-report-btn');
+        if (reportBtn) {
+            reportBtn.addEventListener('click', () => this.handleGenerateReport());
         }
 
         // New Listener for Force Clear

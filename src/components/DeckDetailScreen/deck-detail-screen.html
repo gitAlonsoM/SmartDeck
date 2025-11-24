@@ -1,3 +1,4 @@
+<!-- src\components\DeckDetailScreen\deck-detail-screen.html -->
 <div id="deck-detail-screen" class="max-w-4xl mx-auto px-4">
     <div class="flex justify-between items-center w-full mb-6">
         <button id="back-to-decks-btn" class="text-sm font-medium text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-200 transition-colors">
@@ -28,7 +29,12 @@
         <button id="reset-deck-btn" class="text-sm font-medium text-red-500 hover:text-red-700 dark:text-red-400 dark:hover:text-red-300 transition-colors">
             Reset Deck Progress
         </button>
+
+        <button id="generate-report-btn" class="text-sm font-medium text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-200 transition-colors flex items-center gap-2">
+            <i class="fas fa-file-contract"></i> Generate Progress Report
+        </button>
     </div>
+
 
     <div class="w-full max-w-xl mx-auto mt-12 space-y-4">
         <details id="ignored-cards-section" class="bg-white dark:bg-gray-800 rounded-lg shadow-md">
