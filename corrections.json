@@ -1,89 +1,210 @@
 [
   {
-    "cardId": "egac_225",
-    "category": "Greetings: 'How have you been?'",
-    "sentenceParts": {
-      "prefix": "A: It's been a while! ",
-      "suffix": "? B: I've been great, thanks!"
-    },
-    "options": [
+    "cardId": "ti_053",
+    "cardType": "flippable",
+    "sideA": "Al hacer checkout, la Cotización (ASO) se convierte en una Orden de Venta real en el módulo de Order Management.",
+    "sideB": [
       {
-        "text": "How have you been",
-        "isCorrect": true
+        "text": "Upon checkout, the Quote (ASO) is converted into an actual Sales Order in the Order Management (OM) module.",
+        "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_0.mp3"
       },
       {
-        "text": "How you are",
-        "isCorrect": false
+        "text": "The checkout process triggers the conversion of the ASO Quote into a confirmed Sales Order in OM.",
+        "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_1.mp3"
       },
       {
-        "text": "What have you done",
-        "isCorrect": false
+        "text": "Data moves from the ASO module to the Order Management (OM) module when the Quote becomes a Booked Order.",
+        "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_2.mp3"
+      },
+      {
+        "text": "When checking out, the Quote becomes an actual Sales Order.",
+        "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_3.mp3"
+      },
+      {
+        "text": "Upon completing checkout, the Quote turns into a Sales Order.",
+        "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_4.mp3"
+      },
+      {
+        "text": "The Quote becomes a Sales Order at checkout.",
+        "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_5.mp3"
+      },
+      {
+        "text": "Checkout turns the Quote into a Sales Order.",
+        "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_6.mp3"
+      },
+      {
+        "text": "After checkout, the Quote converts to a Sales Order.",
+        "audioSrc": "public/data/audio/tech_interview/ti_053_sideB_7.mp3"
       }
     ],
-    "correctAnswer": "A: It's been a while! How have you been? B: I've been great, thanks!",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_225.mp3",
-    "hint": "This greeting is perfect for when you haven't seen someone in weeks, months, or years.",
-    "content": {
-      "type": "text",
-      "value": "[How have you been?] is the standard Present Perfect question to ask about someone's life and health since the last time you saw them.\n\n~How you are~ is grammatically incorrect; it should be 'How are you?'.\n~What have you done~ asks about specific actions, not general well-being."
-    }
+    "note": "[Upon checkout] is a formal way to say 'when doing checkout'.\n\n[Triggers the conversion] describes the automatic process started by the user's action.\n\n~Doing checkout...~ (Unnatural grammar: Use 'When checking out' or 'Upon checkout'.)"
   },
   {
-    "cardId": "egac_260",
-    "category": "Modal Expressions: State/Quality Evaluation",
-    "sentenceParts": {
-      "prefix": "A: How was your presentation? B: It could have ",
-      "suffix": " better, to be honest."
-    },
-    "options": [
+    "cardId": "ti_102",
+    "cardType": "flippable",
+    "sideA": "Veo que el campo aún no se actualiza.",
+    "sideB": [
       {
-        "text": "gone",
-        "isCorrect": false
+        "text": "I see that the field is not updating yet.",
+        "audioSrc": "public/data/audio/tech_interview/ti_102_sideB_0.mp3"
       },
       {
-        "text": "done",
-        "isCorrect": false
+        "text": "I notice the field hasn't updated yet.",
+        "audioSrc": "public/data/audio/tech_interview/ti_102_sideB_1.mp3"
       },
       {
-        "text": "been",
-        "isCorrect": true
+        "text": "It seems the field isn't updating.",
+        "audioSrc": "public/data/audio/tech_interview/ti_102_sideB_2.mp3"
+      },
+      {
+        "text": "I see that the field is not updated yet.",
+        "audioSrc": "public/data/audio/tech_interview/ti_102_sideB_3.mp3"
       }
     ],
-    "correctAnswer": "A: How was your presentation? B: It could have been better, to be honest.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_260.mp3",
-    "hint": "This expression is used to evaluate the outcome of events like meetings, interviews, or performances.",
-    "content": {
-      "type": "text",
-      "value": "**[115]**\n\nWhile [gone] focuses on the *progress* or *flow* of the event, 'been' focuses on the state. Ideally, 'How was it?' matches 'It has been...'.\n\n~Done~ is incorrect because events (like a presentation) cannot 'do' things; only people can.\n~Went~ is the past simple and cannot follow 'could have'."
-    }
+    "note": "[Field] refers to the UI input or Database column.\n\nUse [Not updating] (Continuous) to describe the current state.\n\n~I style see that the field is not updated~ (Typo/Grammar: 'Style' is incorrect here. Likely meant 'still', but the phrasing 'is not updated' implies a static state rather than a pending process.)"
   },
   {
-    "cardId": "egac_287",
-    "category": "Results: 'Did worse'",
-    "sentenceParts": {
-      "prefix": "I studied a lot, but I still ",
-      "suffix": " on the test than I did last time."
-    },
-    "options": [
+    "cardId": "ti_103",
+    "cardType": "flippable",
+    "sideA": "Ahora chequeé de nuevo, y ahora sí veo la última versión.",
+    "sideB": [
       {
-        "text": "did worse",
-        "isCorrect": true
+        "text": "I checked again, and now I do see the latest version.",
+        "audioSrc": "public/data/audio/tech_interview/ti_103_sideB_0.mp3"
       },
       {
-        "text": "went worse",
-        "isCorrect": false
+        "text": "I just checked again, and I can see the latest version now.",
+        "audioSrc": "public/data/audio/tech_interview/ti_103_sideB_1.mp3"
       },
       {
-        "text": "was worse",
-        "isCorrect": false
+        "text": "After checking again, the latest version is visible.",
+        "audioSrc": "public/data/audio/tech_interview/ti_103_sideB_2.mp3"
+      },
+      {
+        "text": "I checked it again, and now I see the latest version.",
+        "audioSrc": "public/data/audio/tech_interview/ti_103_sideB_3.mp3"
       }
     ],
-    "correctAnswer": "I studied a lot, but I still did worse on the test than I did last time.",
-    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_287.mp3",
-    "hint": "The adverb 'worse' modifies the verb 'do'.",
-    "content": {
-      "type": "text",
-      "value": "**[116]**\n\n[Did worse] is the correct expression to describe a poorer performance in a task, using the verb 'do'.\n\n~Went worse~ would describe how a situation progressed ('The meeting went worse than expected').\n~Was worse~ would describe the state of something ('The test was worse than the last one')."
-    }
+    "note": "Using [I do see] adds emphasis (affirmative), meaning 'Yes, really, I see it now'.\n\n~...now I see the last version~ (Imprecise: Use 'latest version' for the most recent update. 'Last' implies the final one ever.)\n\n~...now I do see the last version~ (Rejected: 'Last' implies finality. In software, always use 'latest' for the newest version.)"
+  },
+  {
+    "cardId": "ti_100",
+    "cardType": "flippable",
+    "sideA": "Le pedimos ayuda al empleado de soporte.",
+    "sideB": [
+      {
+        "text": "We asked the support employee for help.",
+        "audioSrc": "public/data/audio/tech_interview/ti_100_sideB_0.mp3"
+      },
+      {
+        "text": "We requested assistance from the support staff.",
+        "audioSrc": "public/data/audio/tech_interview/ti_100_sideB_1.mp3"
+      },
+      {
+        "text": "We reached out to the support employee for help.",
+        "audioSrc": "public/data/audio/tech_interview/ti_100_sideB_2.mp3"
+      }
+    ],
+    "note": "Structure: [Ask someone FOR help].\n\n[Reach out to] is a professional way to say 'contactar' or 'pedir ayuda'.\n\n~We asked for help to the support employee~ (Grammar: Incorrect structure. Correct forms: 'Ask [someone] for help' or 'Ask for help FROM [someone]'. Never 'ask for help to'.)"
+  },
+  {
+    "cardId": "ti_014",
+    "cardType": "flippable",
+    "sideA": "Nuestro principal medio de comunicación será por chat o llamadas por Teams.",
+    "sideB": [
+      {
+        "text": "Our main means of communication will be via chat or Teams calls.",
+        "audioSrc": "public/data/audio/tech_interview/ti_014_sideB_0.mp3"
+      },
+      {
+        "text": "We'll communicate mainly through Teams chat or calls.",
+        "audioSrc": "public/data/audio/tech_interview/ti_014_sideB_1.mp3"
+      },
+      {
+        "text": "Our primary contact methods will be Teams chat and calls.",
+        "audioSrc": "public/data/audio/tech_interview/ti_014_sideB_2.mp3"
+      },
+      {
+        "text": "We will mainly use Microsoft Teams for communication.",
+        "audioSrc": "public/data/audio/tech_interview/ti_014_sideB_3.mp3"
+      },
+      {
+        "text": "Our main tool of communication will be Microsoft Teams.",
+        "audioSrc": "public/data/audio/tech_interview/ti_014_sideB_4.mp3"
+      }
+    ],
+    "note": "[Via] is a useful preposition meaning 'by way of' (e.g., via chat, via email).\n\n[Through] is also commonly used (e.g., through Teams).\n\n~Our main tool... will be by Microsoft team~ (Correction: 1. The app is called 'Teams' (plural). 2. Don't say 'the tool will be by'. Say: 'Our main tool is Teams' or 'We use Teams'.)\n\n~...tool... will be on/by Microsoft Teams~ (Grammar: A tool is not 'by' the software. We communicate 'on' or 'via' Teams, but the tool *is* Teams.)"
+  },
+  {
+    "cardId": "ti_043",
+    "cardType": "flippable",
+    "sideA": "¿Puedes darme exactamente los pasos que hiciste para llegar ahí?",
+    "sideB": [
+      {
+        "text": "Can you give me the exact steps you took to get there?",
+        "audioSrc": "public/data/audio/tech_interview/ti_043_sideB_0.mp3"
+      },
+      {
+        "text": "Could you provide the specific steps you followed to reach that point?",
+        "audioSrc": "public/data/audio/tech_interview/ti_043_sideB_1.mp3"
+      },
+      {
+        "text": "Can you tell me the exact steps you took to arrive at that state?",
+        "audioSrc": "public/data/audio/tech_interview/ti_043_sideB_2.mp3"
+      },
+      {
+        "text": "Can you give me the exact steps to get there?",
+        "audioSrc": "public/data/audio/tech_interview/ti_043_sideB_3.mp3"
+      }
+    ],
+    "note": "[Steps you took] is the colocation for 'pasos que hiciste'. ~Steps you made~ is unnatural.\n\n[To get there] refers to arriving at the error state.\n\n~...steps that you did...~ (Collocation: We 'take' or 'follow' steps, we do not 'do' them.)"
+  },
+  {
+    "cardId": "ti_067",
+    "cardType": "flippable",
+    "sideA": "Mi inglés sigue mejorando, y en reuniones grandes tiendo a quedarme callado.",
+    "sideB": [
+      {
+        "text": "My English is still improving, and in big meetings I tend to stay quiet.",
+        "audioSrc": "public/data/audio/tech_interview/ti_067_sideB_0.mp3"
+      },
+      {
+        "text": "I'm still working on my English, so I tend to be quieter in large meetings.",
+        "audioSrc": "public/data/audio/tech_interview/ti_067_sideB_1.mp3"
+      },
+      {
+        "text": "My English is a work in progress, and I tend to listen more than speak in big groups.",
+        "audioSrc": "public/data/audio/tech_interview/ti_067_sideB_2.mp3"
+      },
+      {
+        "text": "My English keeps improving, and in big meetings I tend to stay quiet.",
+        "audioSrc": "public/data/audio/tech_interview/ti_067_sideB_3.mp3"
+      }
+    ],
+    "note": "[Tend to] describes a habit or inclination.\n\n[Work in progress] is a positive way to say something is not yet perfect but is improving."
+  },
+  {
+    "cardId": "ti_001",
+    "cardType": "flippable",
+    "sideA": "Debo contener al cliente en Japón y Corea.",
+    "sideB": [
+      {
+        "text": "I must manage the client in Japan and Korea.",
+        "audioSrc": "public/data/audio/tech_interview/ti_001_sideB_0.mp3"
+      },
+      {
+        "text": "I need to keep the client in Japan and Korea contained.",
+        "audioSrc": "public/data/audio/tech_interview/ti_001_sideB_1.mp3"
+      },
+      {
+        "text": "My role involves managing expectations for clients in Japan and Korea.",
+        "audioSrc": "public/data/audio/tech_interview/ti_001_sideB_2.mp3"
+      },
+      {
+        "text": "I need to contain the client in Japan and Korea.",
+        "audioSrc": "public/data/audio/tech_interview/ti_001_sideB_3.mp3"
+      }
+    ],
+    "note": "To [contain] a client in an IT context often means to manage their anxiety or keep a situation under control. [Manage expectations] is also a very professional alternative.\n\n~I must to contain~ is incorrect. Modal verbs like [must] are followed directly by the verb.\n\n~...client from Japan...~ (Preposition: 'En Japón' translates to 'in Japan' (location). 'From Japan' implies origin.)"
   }
 ]
