@@ -42,11 +42,9 @@ class ImprovementService {
             const review_request = improvementData[cardId];
             return { ...card, review_request };
         });
-    // Use the stored 'fileName' for static decks, or construct it from the id for AI-generated decks.
         const deckFileName = deck.fileName || `${deck.id}.json`;
         const deckRelativePath = `public/data/${deckFileName}`;
 
-        // Construct the exact and correct command here, so the LLM doesn't have to guess.
         const correctCommand = `py update_deck.py --deck-file "${deckRelativePath}" --input-file "corrections.json"`;
 
         const textToCopy = this._generateImprovementPrompt(deck.name, correctCommand, exportBatch); 
@@ -95,8 +93,9 @@ You are an expert Content Quality Analyst and Instructional Designer for 'SmartD
 - \`sideA\`: **MODIFIABLE**.
 - \`sideB\`: **PRIMARY VALUE-ADD FIELD**.
 - \`note\`: **PRIMARY VALUE-ADD FIELD**.
-    - **CRITICAL RULE:** This field may start with a grammar rule ID. The required literal format for this ID is **[ID]** (e.g., **[12]**), which links to a grammar rule. **This syntax MUST NOT be altered, corrected, or removed. (SOLO TOCARAS ESTE NUMERO SI EL USUARIO TE SOLICITA EXPLICITAMENTE QUE LO ELIMINES DE LA TARJETA, POR EJEMPLO EL USUARIO PODRIA DECIRTE "ELIMINA EL MODAL DE LA CARD, NO APLICA", ENTONCES DEBERAS ELIMINAR EL NUMERO Y LOS SIGNOS QUE LE RODEAN, PARA QUE DEJE DE APARECER EL MODAL EN PANTALLA, DEBERAS ELIMINAR COMPLETO LOS 2 SIMBOLOS DE ASTERISCOS QUE RODEAN LAS LLAVES Y EL NUMERO INTERIRO, TODO ESE CONJUTO SERA ELIMIUANDO, CUANDO EL USUARIO SOLICITE ELIMINAR EL MODAL DE LA CARD. **[EJ 15]**)**.
-### C) Grammar Audio-Choice ('audioChoice') Card
+- \` - **CRITICAL RULE:** This field may start with a grammar rule ID. The required literal format for this ID is **[ID]** (e.g., **[12]**), which links to a grammar rule. **This syntax MUST NOT be altered, corrected, or removed. (SOLO TOCARAS ESTE NUMERO SI EL USUARIO TE SOLICITA EXPLICITAMENTE QUE LO ELIMINES DE LA TARJETA, POR EJEMPLO EL USUARIO PODRIA DECIRTE "ELIMINA EL MODAL DE LA CARD, NO APLICA", ENTONCES DEBERAS ELIMINAR EL NUMERO Y LOS SIGNOS QUE LE RODEAN, PARA QUE DEJE DE APARECER EL MODAL EN PANTALLA, DEBERAS ELIMINAR COMPLETO LOS 2 SIMBOLOS DE ASTERISCOS, LOS CORCHETES Y EL NUMERO INTERNO, TODO ESE CONJUTO SERA ELIMINANDO, CUANDO EL USUARIO SOLICITE ELIMINAR EL MODAL DE LA CARD.
+- \` EJEMPLO:  "value": "**[79]**\n\n[Look at] is a prepositional  , SE CONVERTIRA EN  "value": "[Look at] is a prepositional SI EL USUARIO SOLICITA ELIMINARLE EL MODAL.
+- \`  ### C) Grammar Audio-Choice ('audioChoice') Card
 - \`cardId\`: **READ-ONLY**.
 - \`audioSrc\`: **READ-ONLY**.
 - \`category\`, \`hint\`: **MODIFIABLE**.
@@ -136,6 +135,9 @@ This is a two-part process. You must modify **both** the card data and your summ
     2.  Write the incorrect sentence wrapped in tildes (\`~...~\`).
     3.  Follow it with a concise, parenthetical explanation of *why* it is incorrect.
 - **Example for a \`note\` field:** \`\\n\\n~I am agree with you~ (Incorrect verb form: 'agree' is a verb and does not need 'to be'.)\`
+    4. FORMAT ENHANCEMENT RULE 
+    - **Demarcation:** When adding or referencing correct, pedagogically valuable phrases, idioms, or keywords to text fields (\`note\` or \`content.value\`), you **MUST** enclose them in square brackets (\`[...] \`). This reinforces instructional value and deck consistency.
+    - **Example:** \`[To get a full picture] is a great idiom.\`
 
 **B) Report in Your "Resumen de Cambios":**
 - **Action:** In your summary for that card, you **MUST** first state the user's verbatim suggestion, and then clearly explain your reasoning for the rejection.

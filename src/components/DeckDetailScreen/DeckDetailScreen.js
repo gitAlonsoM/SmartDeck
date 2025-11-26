@@ -72,18 +72,18 @@ class DeckDetailScreen {
         
         const startQuizBtn = document.getElementById('start-quiz-btn');
         const resetDeckBtn = document.getElementById('reset-deck-btn');
+        
+        // Reset dynamic classes to base state first (Using Yellow/Amber values now)
+        resetDeckBtn.classList.remove('bg-yellow-100', 'dark:bg-yellow-900/50', 'ring-2', 'ring-yellow-500', 'ring-offset-2');
+
         if (isCompleted) {
             startQuizBtn.textContent = 'Review Again';
             document.getElementById('total-progress-text').textContent = `Congratulations! You have mastered all ${totalCount} cards.`;
-            resetDeckBtn.className += ' font-bold p-3 bg-red-100 dark:bg-red-900/50 rounded-lg';
-        }
-
-         // Conditionally show the delete button for AI-generated decks
-        const deleteBtn = document.getElementById('delete-deck-btn');
-        if (deck.isAiGenerated) {
-            deleteBtn.classList.remove('hidden');
+            
+            // Add visual emphasis in Yellow
+            resetDeckBtn.classList.add('bg-yellow-100', 'dark:bg-yellow-900/50', 'ring-2', 'ring-yellow-500', 'ring-offset-2');
         } else {
-            deleteBtn.classList.add('hidden');
+             startQuizBtn.textContent = 'Start Quiz';
         }
     }
 
