@@ -2,35 +2,53 @@
 <div id="music-player-container" class="group relative w-full mt-8 p-5 rounded-2xl overflow-hidden shadow-[0_20px_50px_-12px_rgba(79,70,229,0.3)] border border-white/10 transition-all duration-300 hover:scale-[1.01]">
     
     <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-[#1e1b4b] to-slate-900 z-0"></div>
-    
     <div class="absolute -left-10 -top-10 w-40 h-40 bg-indigo-500/20 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-purple-500/20 rounded-full blur-3xl pointer-events-none"></div>
 
-    <div class="relative z-10 flex items-center justify-between gap-6">
+    <div class="relative z-10 flex flex-col gap-5">
         
-        <div class="flex items-center overflow-hidden flex-1 gap-4">
-            <div class="hidden sm:flex items-center justify-center w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/10 text-indigo-300 shadow-inner">
-                <i class="fas fa-music"></i>
+        <div class="flex items-center justify-between gap-4 w-full">
+            
+            <div class="flex items-center overflow-hidden flex-1 gap-3 min-w-0">
+                <div class="hidden sm:flex items-center justify-center w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/10 text-indigo-300 shadow-inner flex-shrink-0">
+                    <i class="fas fa-music"></i>
+                </div>
+
+                <div id="track-info-container" class="w-full overflow-hidden whitespace-nowrap text-left mask-linear-fade relative">
+                     <p id="track-name" class="font-bold text-lg text-transparent bg-clip-text bg-gradient-to-r from-white via-indigo-100 to-indigo-200 tracking-wide drop-shadow-sm truncate" title="Track Name">
+                        Select Play to Start
+                    </p>
+                </div>
             </div>
 
-            <div id="track-info-container" class="w-full overflow-hidden whitespace-nowrap text-left mask-linear-fade">
-                 <p id="track-name" class="font-bold text-lg md:text-xl text-transparent bg-clip-text bg-gradient-to-r from-white via-indigo-100 to-indigo-200 tracking-wide drop-shadow-sm" title="Track Name">
-                    Select Play to Start
-                </p>
+            <div class="flex items-center gap-3 flex-shrink-0">
+                <button id="prev-track-btn" class="text-slate-400 hover:text-white transition-colors transform active:scale-95 p-2 focus:outline-none">
+                    <i class="fas fa-backward-step fa-lg"></i>
+                </button>
+                
+                <button id="play-pause-btn" class="relative w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-lg shadow-indigo-500/40 hover:shadow-indigo-500/60 hover:from-indigo-400 hover:to-purple-500 transition-all duration-300 transform hover:scale-105 active:scale-95 border border-white/20 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    <i class="fas fa-play fa-lg pl-1"></i> 
+                </button>
+                
+                <button id="next-track-btn" class="text-slate-400 hover:text-white transition-colors transform active:scale-95 p-2 focus:outline-none">
+                    <i class="fas fa-forward-step fa-lg"></i>
+                </button>
             </div>
         </div>
 
-        <div class="flex items-center gap-3 sm:gap-5">
-            <button id="prev-track-btn" class="text-slate-400 hover:text-white transition-colors transform active:scale-95">
-                <i class="fas fa-backward-step fa-lg"></i>
-            </button>
-            
-            <button id="play-pause-btn" class="relative w-14 h-14 flex items-center justify-center rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-lg shadow-indigo-500/40 hover:shadow-indigo-500/60 hover:from-indigo-400 hover:to-purple-500 transition-all duration-300 transform hover:scale-105 active:scale-95 border border-white/20">
-                <i class="fas fa-play fa-xl pl-1"></i> </button>
-            
-            <button id="next-track-btn" class="text-slate-400 hover:text-white transition-colors transform active:scale-95">
-                <i class="fas fa-forward-step fa-lg"></i>
-            </button>
+        <div class="flex items-center gap-3 px-1 border-t border-white/10 pt-3 w-full">
+            <i class="fas fa-volume-low text-indigo-400/50 text-xs"></i>
+            <input 
+                type="range" 
+                id="volume-slider" 
+                min="0" 
+                max="100" 
+                value="50" 
+                class="w-full h-1.5 bg-slate-700/50 rounded-lg appearance-none cursor-pointer accent-indigo-500 hover:accent-indigo-400 transition-all focus:outline-none focus:ring-2 focus:ring-indigo-500/50"
+                title="Music Volume"
+            >
+            <i class="fas fa-volume-high text-indigo-400/80 text-xs"></i>
         </div>
+
     </div>
 </div>

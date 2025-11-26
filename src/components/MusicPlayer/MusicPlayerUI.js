@@ -1,59 +1,61 @@
-//src\components\MusicPlayer\MusicPlayerUI.js
+// src/components/MusicPlayer/MusicPlayerUI.js
 
 class MusicPlayerUI {
     constructor(container, musicService) {
         this.container = container;
         this.musicService = musicService;
-        this.listenersAttached = false; // Flag to prevent duplicate event listeners
+        this.listenersAttached = false; 
     }
 
     async render() {
         const html = await ComponentLoader.loadHTML('/src/components/MusicPlayer/music-player.html');
-      // Set the innerHTML first
-        this.container.innerHTML = html;
+        this.container.innerHTML = html;
 
-        // Use requestAnimationFrame to ensure the DOM has updated
         requestAnimationFrame(() => {
-            console.log("DEBUG: [MusicPlayerUI] render -> DOM updated, attempting to cache elements and setup listeners.");
+            console.log("DEBUG: [MusicPlayerUI] render -> DOM updated, caching elements.");
             
-            // Cache all necessary DOM elements NOW, after DOM update
-            this.playPauseBtn = this.container.querySelector('#play-pause-btn'); 
-            this.prevTrackBtn = this.container.querySelector('#prev-track-btn'); 
-            this.nextTrackBtn = this.container.querySelector('#next-track-btn'); 
-            this.trackNameEl = this.container.querySelector('#track-name');       
-            // Removed this.discEl selection logic
-            
-            // Check if elements were found before proceeding
-            // Removed !this.discEl check
+            this.playPauseBtn = this.container.querySelector('#play-pause-btn'); 
+            this.prevTrackBtn = this.container.querySelector('#prev-track-btn'); 
+            this.nextTrackBtn = this.container.querySelector('#next-track-btn'); 
+            this.trackNameEl = this.container.querySelector('#track-name');  
+            this.volumeSlider = this.container.querySelector('#volume-slider');
+
             if (!this.playPauseBtn || !this.prevTrackBtn || !this.nextTrackBtn || !this.trackNameEl) {
-                console.error("DEBUG: [MusicPlayerUI] render -> Failed to find one or more essential UI elements after DOM update.");
-                return; // Stop if elements aren't found
+                console.error("DEBUG: [MusicPlayerUI] render -> Critical UI elements missing.");
+                return; 
             }
 
-            // Attach event listeners only once
-            if (!this.listenersAttached) {
-                this._setupEventListeners();
-            }
+            // Initialize Slider Value
+            if (this.volumeSlider) {
+                this.volumeSlider.value = this.musicService.userVolume * 100;
+            }
 
-            // Always sync the UI with the service's current state on render
-            this._syncUI();
+            if (!this.listenersAttached) {
+                this._setupEventListeners();
+            }
+
+            this._syncUI();
         });
     }
 
     _setupEventListeners() {
-        // Add checks to ensure elements exist before attaching listeners
-        if (!this.playPauseBtn || !this.nextTrackBtn || !this.prevTrackBtn) {
-            console.error("DEBUG: [MusicPlayerUI] _setupEventListeners -> Cannot attach listeners, button elements not found.");
-            return;
-        }
-        console.log("DEBUG: [MusicPlayerUI] _setupEventListeners -> Attaching button listeners.");
+        if (!this.playPauseBtn) return;
         
-        // Listen to clicks on the UI controls
+        console.log("DEBUG: [MusicPlayerUI] _setupEventListeners -> Attaching listeners.");
+        
         this.playPauseBtn.onclick = () => this.musicService.togglePlayPause();
         this.nextTrackBtn.onclick = () => this.musicService.playNext(false);
         this.prevTrackBtn.onclick = () => this.musicService.playPrevious();
 
-        // Listen for 'update' events dispatched by the MusicService for real-time changes
+        if (this.volumeSlider) {
+            // Remove potential duplicates just in case
+            this.volumeSlider.oninput = null;
+            this.volumeSlider.oninput = (e) => {
+                const val = e.target.value;
+                this.musicService.setUserVolume(val / 100);
+            };
+        }
+
         this.musicService.uiUpdater.addEventListener('update', (event) => {
             const { isPlaying, trackName } = event.detail;
             this.update(isPlaying, trackName);
@@ -62,26 +64,37 @@ class MusicPlayerUI {
         this.listenersAttached = true;
     }
 
-    // This new method fixes the UI state persistence bug
     _syncUI() {
         const state = this.musicService.getCurrentState();
         this.update(state.isPlaying, state.trackName);
     }
     
     update(isPlaying, trackName) {
-        // Update Play/Pause icon
+        // Update Play/Pause Icon
         const icon = this.playPauseBtn.querySelector('i');
-        icon.classList.toggle('fa-play', !isPlaying);
-        icon.classList.toggle('fa-pause', isPlaying);
-        // Removed disc animation logic
-        // this.discEl.classList.toggle('is-playing', isPlaying);
+        if (icon) {
+            icon.className = isPlaying ? 'fas fa-pause fa-lg' : 'fas fa-play fa-lg pl-1';
+        }
 
-        // Update track name and marquee animation
-        this.trackNameEl.textContent = trackName;
-        this.trackNameEl.title = trackName;
+        // Update Track Name and Marquee
+        if (this.trackNameEl) {
+            this.trackNameEl.textContent = trackName;
+            this.trackNameEl.title = trackName;
+            
+            if (isPlaying) {
+                this.trackNameEl.classList.add('marquee');
+                this.trackNameEl.classList.remove('truncate');
+            } else {
+                this.trackNameEl.classList.remove('marquee');
+                this.trackNameEl.classList.add('truncate');
+            }
+        }
         
-        this.trackNameEl.classList.toggle('marquee', isPlaying);
-        
-        console.log(`VERIFY: [MusicPlayerUI] UI Updated. Playing: ${isPlaying}, Track: ${trackName}`);
+        // Sync slider visually if it wasn't the trigger
+        if (this.volumeSlider && document.activeElement !== this.volumeSlider) {
+             this.volumeSlider.value = this.musicService.userVolume * 100;
+        }
+
+        console.log(`VERIFY: [MusicPlayerUI] UI Updated. Playing: ${isPlaying}`);
     }
 }

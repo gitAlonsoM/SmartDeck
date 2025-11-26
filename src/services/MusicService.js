@@ -54,6 +54,26 @@ class MusicService {
     }
 
     /**
+     * Sets the master volume for music.
+     * @param {number} value - Volume between 0.0 and 1.0
+     */
+    setUserVolume(value) {
+        // Clamp value between 0 and 1
+        this.userVolume = Math.max(0, Math.min(1, value));
+        
+        // Persist preference
+        localStorage.setItem('smart_deck_music_volume', this.userVolume);
+
+        // Apply volume immediately, respecting ducking state
+        const duckingMultiplier = 0.3; 
+        const effectiveVolume = this.isDucked ? this.userVolume * duckingMultiplier : this.userVolume;
+        
+        this.audioElement.volume = effectiveVolume;
+        
+        console.log(`DEBUG: [MusicService] User volume set to ${this.userVolume} (Effective: ${effectiveVolume})`);
+    }
+
+    /**
      * Gets the current state of the music player.
      * This is crucial for the UI to sync itself when it re-renders.
      * @returns {{isPlaying: boolean, trackName: string}} The current player state.
