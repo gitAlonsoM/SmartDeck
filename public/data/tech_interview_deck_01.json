@@ -2771,6 +2771,314 @@
         }
       ],
       "note": "[Flakiness] or [Flaky] is a very common developer term for something that works sometimes but fails others (intermittent).\n\nStructure: [We've had] (Present Perfect) connects past issues to the present moment."
+    },
+    {
+      "cardId": "ti_125",
+      "cardType": "flippable",
+      "sideA": "Necesitamos validar al usuario, de lo contrario, obtenemos el error 400.",
+      "sideB": [
+        {
+          "text": "We need to validate the user; otherwise, we get a 400 error.",
+          "audioSrc": "public/data/audio/tech_interview/ti_125_sideB_0.mp3"
+        },
+        {
+          "text": "User validation is required, or else we'll receive a 400 error.",
+          "audioSrc": "public/data/audio/tech_interview/ti_125_sideB_1.mp3"
+        },
+        {
+          "text": "We must validate the user to avoid getting a 400 error.",
+          "audioSrc": "public/data/audio/tech_interview/ti_125_sideB_2.mp3"
+        },
+        {
+          "text": "We need to validate the user; otherwise, it returns a 400 error.",
+          "audioSrc": "public/data/audio/tech_interview/ti_125_sideB_3.mp3"
+        }
+      ],
+      "note": "Use [Otherwise] to connect a requirement with its negative consequence.\n\nThe HTTP 400 status is standardly referred to as a [Bad Request] or just [400 error]."
+    },
+    {
+      "cardId": "ti_126",
+      "cardType": "flippable",
+      "sideA": "Se requiere probar bajo diferentes condiciones.",
+      "sideB": [
+        {
+          "text": "It is required to test under different conditions.",
+          "audioSrc": "public/data/audio/tech_interview/ti_126_sideB_0.mp3"
+        },
+        {
+          "text": "Testing under various conditions is required.",
+          "audioSrc": "public/data/audio/tech_interview/ti_126_sideB_1.mp3"
+        },
+        {
+          "text": "We need to test this under different scenarios.",
+          "audioSrc": "public/data/audio/tech_interview/ti_126_sideB_2.mp3"
+        },
+        {
+          "text": "It requires testing across different conditions.",
+          "audioSrc": "public/data/audio/tech_interview/ti_126_sideB_3.mp3"
+        }
+      ],
+      "note": "[Under different conditions] is the standard collocation for testing environments.\n\nUsing the passive voice [It is required] makes the statement more objective and formal than 'We need to'."
+    },
+    {
+      "cardId": "ti_127",
+      "cardType": "flippable",
+      "sideA": "No he tenido noticias sobre ese tema.",
+      "sideB": [
+        {
+          "text": "I haven't heard anything about that topic.",
+          "audioSrc": "public/data/audio/tech_interview/ti_127_sideB_0.mp3"
+        },
+        {
+          "text": "I haven't had any updates on that matter.",
+          "audioSrc": "public/data/audio/tech_interview/ti_127_sideB_1.mp3"
+        },
+        {
+          "text": "I haven't received any news regarding that issue.",
+          "audioSrc": "public/data/audio/tech_interview/ti_127_sideB_2.mp3"
+        },
+        {
+          "text": "I haven't heard back about that subject.",
+          "audioSrc": "public/data/audio/tech_interview/ti_127_sideB_3.mp3"
+        }
+      ],
+      "note": "[updates] is the most professional word for 'noticias' in a project context.\n\n[Matter] or [Issue] are often preferred over 'topic' for business problems.\n\n~I haven't had news~ (While possible, it's more common to say 'I haven't heard anything' or 'I haven't had any updates'.)"
+    },
+    {
+      "cardId": "ti_128",
+      "cardType": "flippable",
+      "sideA": "No quise cambiarle el estado.",
+      "sideB": [
+        {
+          "text": "I didn't want to change its status.",
+          "audioSrc": "public/data/audio/tech_interview/ti_128_sideB_0.mp3"
+        },
+        {
+          "text": "I chose not to change the status.",
+          "audioSrc": "public/data/audio/tech_interview/ti_128_sideB_1.mp3"
+        },
+        {
+          "text": "I preferred not to change the state.",
+          "audioSrc": "public/data/audio/tech_interview/ti_128_sideB_2.mp3"
+        },
+        {
+          "text": "I didn't want to alter the status.",
+          "audioSrc": "public/data/audio/tech_interview/ti_128_sideB_3.mp3"
+        }
+      ],
+      "note": "[I didn't want to] expresses a lack of desire or intent.\n\n[Status] is used for lifecycle stages (Open, Closed, Pending), while [State] is often used for technical conditions (Active, Inactive, Boolean).\n\nIf you meant it was an accident, you would say 'I didn't mean to change...'."
+    },
+    {
+      "cardId": "ti_129",
+      "cardType": "flippable",
+      "sideA": "Eso ocurrió el día antes de ayer.",
+      "sideB": [
+        {
+          "text": "That happened the day before yesterday.",
+          "audioSrc": "public/data/audio/tech_interview/ti_129_sideB_0.mp3"
+        },
+        {
+          "text": "That occurred two days ago.",
+          "audioSrc": "public/data/audio/tech_interview/ti_129_sideB_1.mp3"
+        },
+        {
+          "text": "It happened the day before yesterday.",
+          "audioSrc": "public/data/audio/tech_interview/ti_129_sideB_2.mp3"
+        },
+        {
+          "text": "That took place the day before yesterday.",
+          "audioSrc": "public/data/audio/tech_interview/ti_129_sideB_3.mp3"
+        }
+      ],
+      "note": "[The day before yesterday] is the literal and correct translation.\n\nIn casual conversation, [Two days ago] is frequently used for brevity."
+    },
+    {
+      "cardId": "ti_130",
+      "cardType": "flippable",
+      "sideA": "Ok, por mí está bien.",
+      "sideB": [
+        {
+          "text": "OK, that's fine by me.",
+          "audioSrc": "public/data/audio/tech_interview/ti_130_sideB_0.mp3"
+        },
+        {
+          "text": "OK, that works for me.",
+          "audioSrc": "public/data/audio/tech_interview/ti_130_sideB_1.mp3"
+        },
+        {
+          "text": "OK, I'm good with that.",
+          "audioSrc": "public/data/audio/tech_interview/ti_130_sideB_2.mp3"
+        },
+        {
+          "text": "OK, that is fine with me.",
+          "audioSrc": "public/data/audio/tech_interview/ti_130_sideB_3.mp3"
+        }
+      ],
+      "note": "[Works for me] is extremely common in business scheduling and agreements.\n\n[Fine by me] is slightly more casual but acceptable in team chats."
+    },
+    {
+      "cardId": "ti_131",
+      "cardType": "flippable",
+      "sideA": "Esa es la forma que debería funcionar.",
+      "sideB": [
+        {
+          "text": "That is the way it should work.",
+          "audioSrc": "public/data/audio/tech_interview/ti_131_sideB_0.mp3"
+        },
+        {
+          "text": "That's how it is supposed to work.",
+          "audioSrc": "public/data/audio/tech_interview/ti_131_sideB_1.mp3"
+        },
+        {
+          "text": "That is how it should function.",
+          "audioSrc": "public/data/audio/tech_interview/ti_131_sideB_2.mp3"
+        },
+        {
+          "text": "That is the way it's intended to work.",
+          "audioSrc": "public/data/audio/tech_interview/ti_131_sideB_3.mp3"
+        }
+      ],
+      "note": "[Supposed to] implies that there is a design or expectation behind the function.\n\n[How it should work] is more natural than 'The way that it should work'."
+    },
+    {
+      "cardId": "ti_132",
+      "cardType": "flippable",
+      "sideA": "Aún estamos esperando la respuesta sobre el reverse proxy.",
+      "sideB": [
+        {
+          "text": "We are still waiting for the response regarding the reverse proxy.",
+          "audioSrc": "public/data/audio/tech_interview/ti_132_sideB_0.mp3"
+        },
+        {
+          "text": "We're still awaiting an answer about the reverse proxy.",
+          "audioSrc": "public/data/audio/tech_interview/ti_132_sideB_1.mp3"
+        },
+        {
+          "text": "We are still waiting to hear back about the reverse proxy.",
+          "audioSrc": "public/data/audio/tech_interview/ti_132_sideB_2.mp3"
+        },
+        {
+          "text": "We are still waiting on the reverse proxy response.",
+          "audioSrc": "public/data/audio/tech_interview/ti_132_sideB_3.mp3"
+        }
+      ],
+      "note": "[Awaiting] is a transitive verb (no 'for') and sounds more formal than 'waiting for'.\n\n[Hear back] is a common phrasal verb meaning to receive a reply."
+    },
+    {
+      "cardId": "ti_133",
+      "cardType": "flippable",
+      "sideA": "Es el orquestador.",
+      "sideB": [
+        {
+          "text": "It is the orchestrator.",
+          "audioSrc": "public/data/audio/tech_interview/ti_133_sideB_0.mp3"
+        },
+        {
+          "text": "It's the orchestrator.",
+          "audioSrc": "public/data/audio/tech_interview/ti_133_sideB_1.mp3"
+        },
+        {
+          "text": "That is the orchestrator.",
+          "audioSrc": "public/data/audio/tech_interview/ti_133_sideB_2.mp3"
+        }
+      ],
+      "note": "In microservices or container architecture (like Kubernetes), the [Orchestrator] manages deployment and scaling."
+    },
+    {
+      "cardId": "ti_134",
+      "cardType": "flippable",
+      "sideA": "Una cosa que he notado es que no funciona.",
+      "sideB": [
+        {
+          "text": "One thing I've noticed is that it doesn't work.",
+          "audioSrc": "public/data/audio/tech_interview/ti_134_sideB_0.mp3"
+        },
+        {
+          "text": "One thing I noticed is that it is not working.",
+          "audioSrc": "public/data/audio/tech_interview/ti_134_sideB_1.mp3"
+        },
+        {
+          "text": "Something I've observed is that it fails to work.",
+          "audioSrc": "public/data/audio/tech_interview/ti_134_sideB_2.mp3"
+        },
+        {
+          "text": "One thing I have noticed is that it isn't functioning.",
+          "audioSrc": "public/data/audio/tech_interview/ti_134_sideB_3.mp3"
+        }
+      ],
+      "note": "[Noticed] implies you saw it while doing something else.\n\n[Observed] implies you were watching specifically for it (more formal)."
+    },
+    {
+      "cardId": "ti_135",
+      "cardType": "flippable",
+      "sideA": "Una cosa que he notado, es que no funciona del todo bien.",
+      "sideB": [
+        {
+          "text": "One thing I've noticed is that it doesn't work quite right.",
+          "audioSrc": "public/data/audio/tech_interview/ti_135_sideB_0.mp3"
+        },
+        {
+          "text": "One thing I noticed is that it's not working entirely well.",
+          "audioSrc": "public/data/audio/tech_interview/ti_135_sideB_1.mp3"
+        },
+        {
+          "text": "One thing I've noticed is that it doesn't work perfectly.",
+          "audioSrc": "public/data/audio/tech_interview/ti_135_sideB_2.mp3"
+        },
+        {
+          "text": "One thing I noticed is that it isn't working completely right.",
+          "audioSrc": "public/data/audio/tech_interview/ti_135_sideB_3.mp3"
+        }
+      ],
+      "note": "[Not... quite right] is a very natural way to describe a partial failure or buggy behavior.\n\n[Not... entirely well] is slightly more formal."
+    },
+    {
+      "cardId": "ti_136",
+      "cardType": "flippable",
+      "sideA": "Nos enviamos varios correos electrónicos de ida y vuelta.",
+      "sideB": [
+        {
+          "text": "We sent several emails back and forth.",
+          "audioSrc": "public/data/audio/tech_interview/ti_136_sideB_0.mp3"
+        },
+        {
+          "text": "We exchanged several emails back and forth.",
+          "audioSrc": "public/data/audio/tech_interview/ti_136_sideB_1.mp3"
+        },
+        {
+          "text": "We had some back and forth emails.",
+          "audioSrc": "public/data/audio/tech_interview/ti_136_sideB_2.mp3"
+        },
+        {
+          "text": "We went back and forth over email several times.",
+          "audioSrc": "public/data/audio/tech_interview/ti_136_sideB_3.mp3"
+        }
+      ],
+      "note": "[Back and forth] is the standard idiom for reciprocal movement or communication (ida y vuelta).\n\n[Exchanged] is a more professional verb than 'sent to each other'."
+    },
+    {
+      "cardId": "ti_137",
+      "cardType": "flippable",
+      "sideA": "Hemos realizado varias pruebas de ida y vuelta.",
+      "sideB": [
+        {
+          "text": "We have performed several back-and-forth tests.",
+          "audioSrc": "public/data/audio/tech_interview/ti_137_sideB_0.mp3"
+        },
+        {
+          "text": "We have conducted several back-and-forth tests.",
+          "audioSrc": "public/data/audio/tech_interview/ti_137_sideB_1.mp3"
+        },
+        {
+          "text": "We've done some back-and-forth testing.",
+          "audioSrc": "public/data/audio/tech_interview/ti_137_sideB_2.mp3"
+        },
+        {
+          "text": "We ran multiple back-and-forth tests.",
+          "audioSrc": "public/data/audio/tech_interview/ti_137_sideB_3.mp3"
+        }
+      ],
+      "note": "When used as an adjective before a noun (like 'tests'), [back-and-forth] is often hyphenated.\n\n[Conducted] and [Performed] are formal alternatives to 'done' or 'made' in a testing context."
     }
   ]
 }
