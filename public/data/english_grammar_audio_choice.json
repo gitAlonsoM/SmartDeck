@@ -15728,6 +15728,180 @@
         "type": "text",
         "value": "**[118]**\n\nWe use [to have used] to emphasize that the action is complete and in the past relative to the judgment.\n\nWhile ~to use~ is sometimes accepted in casual speech, the Perfect Infinitive is more precise for retrospective criticism."
       }
-    }
+    },
+    {
+      "cardId": "egac_543",
+      "category": "Telling Time: Digital vs. Errors",
+      "sentenceParts": {
+        "prefix": "The meeting is at 2:30. It's at ",
+        "suffix": "."
+      },
+      "options": [
+        {
+          "text": "two thirty",
+          "isCorrect": true
+        },
+        {
+          "text": "two and half",
+          "isCorrect": false
+        },
+        {
+          "text": "two and thirty",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "The meeting is at 2:30. It's at two thirty.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_543.mp3",
+      "hint": "The digital method is simple: Say the hour, then the minutes.",
+      "content": {
+        "type": "text",
+        "value": "**[121]**\n\nThe most common and standard way to tell time in the US is the **Digital Method**: Hour + Number.\n\n~Two and half~ is a literal translation from Spanish ('dos y media') and is incorrect. If you use 'half', you must use the classic structure: [Half past two]."
+      }
+    },
+    {
+      "cardId": "egac_544",
+      "category": "Telling Time: Quarter To",
+      "sentenceParts": {
+        "prefix": "It's 6:45. It's a quarter ",
+        "suffix": " seven."
+      },
+      "options": [
+        {
+          "text": "to",
+          "isCorrect": true
+        },
+        {
+          "text": "past",
+          "isCorrect": false
+        },
+        {
+          "text": "of",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "It's 6:45. It's a quarter to seven.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_544.mp3",
+      "hint": "When the minutes are over 30, we look forward to the NEXT hour.",
+      "content": {
+        "type": "text",
+        "value": "**[121]**\n\nWhen we pass the 30-minute mark, we count how many minutes are left **until** the next hour.\n\n6:45 means there are 15 minutes left until 7:00. Therefore, it is a [quarter to] seven.\n\n~Quarter past~ would be 6:15."
+      }
+    },
+    {
+      "cardId": "egac_545",
+      "category": "Telling Time: Minutes To",
+      "sentenceParts": {
+        "prefix": "Quick, turn on the TV! It's 8:50. It's ten ",
+        "suffix": " nine."
+      },
+      "options": [
+        {
+          "text": "to",
+          "isCorrect": true
+        },
+        {
+          "text": "for",
+          "isCorrect": false
+        },
+        {
+          "text": "till",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "Quick, turn on the TV! It's 8:50. It's ten to nine.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_545.mp3",
+      "hint": "We use this preposition to indicate the remaining time before the next hour.",
+      "content": {
+        "type": "text",
+        "value": "**[121]**\n\nFor 8:50, we focus on the next hour (9:00). There are 10 minutes remaining, so we say: [ten to nine].\n\n~Till~ is informal and usually used for duration ('wait till 9'), but [to] is the standard form for telling time on a clock face."
+      }
+    },
+    {
+      "cardId": "egac_546",
+      "category": "Telling Time: Pronouncing Zero",
+      "sentenceParts": {
+        "prefix": "My flight leaves at 5:05. That's five-",
+        "suffix": "-five."
+      },
+      "options": [
+        {
+          "text": "oh",
+          "isCorrect": true
+        },
+        {
+          "text": "zero",
+          "isCorrect": false
+        },
+        {
+          "text": "nil",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "My flight leaves at 5:05. That's five-oh-five.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_546.mp3",
+      "hint": "For minutes 01-09, we pronounce the '0' like the letter 'O'.",
+      "content": {
+        "type": "text",
+        "value": "**[121]**\n\nWhen reading time digitally, if the minutes are less than 10 (01-09), we pronounce the zero as [oh].\n\n~Zero~ is used for math or temperature.\n~Nil~ is used for scores (sports)."
+      }
+    },
+    {
+      "cardId": "egac_547",
+      "category": "Telling Time: O'clock",
+      "sentenceParts": {
+        "prefix": "Let's meet exactly at 4:00. See you at four ",
+        "suffix": "."
+      },
+      "options": [
+        {
+          "text": "o'clock",
+          "isCorrect": true
+        },
+        {
+          "text": "hours",
+          "isCorrect": false
+        },
+        {
+          "text": "sharp",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "Let's meet exactly at 4:00. See you at four o'clock.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_547.mp3",
+      "hint": "This term is ONLY used when the time is exactly on the hour (:00).",
+      "content": {
+        "type": "text",
+        "value": "**[121]**\n\nWe use [o'clock] only for exact hours. 'Four o'clock' implies 4:00.\n\n~Four hours~ refers to duration ('The movie is four hours long').\n'Four sharp' is possible, but [o'clock] is the standard term for the time itself."
+      }
+    },
+    {
+      "cardId": "egac_548",
+      "category": "Telling Time: The 'Half' Rule",
+      "sentenceParts": {
+        "prefix": "It's 10:30. It's ",
+        "suffix": " ten."
+      },
+      "options": [
+        {
+          "text": "half past",
+          "isCorrect": true
+        },
+        {
+          "text": "half to",
+          "isCorrect": false
+        },
+        {
+          "text": "thirty to",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "It's 10:30. It's half past ten.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_548.mp3",
+      "hint": "In the classic method, the 30-minute mark belongs to the 'past' side.",
+      "content": {
+        "type": "text",
+        "value": "**[121]**\n\nThe 30-minute mark is the limit of the 'Past' side. We say [half past] ten.\n\n~Half to~ does not exist.\n~Thirty to~ is never used; we switch to the 'To' side only *after* the 30-minute mark (e.g., 10:31 is 'twenty-nine minutes to eleven')."
+      }
+    } 
   ]
 }

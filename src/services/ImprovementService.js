@@ -181,6 +181,11 @@ For **EVERY** processed card, provide a bullet point explaining the changes:
 ${correctCommand}
 \`\`\`
 
+- **Step 3 (Mandatory Audio):** If you added ANY new content (new cards or new sentences), you **MUST** instruct the user to run the audio generator using the deck path found in Step 2:
+\`\`\`bash
+py generate_audios_google.py public/data/YOUR_DECK_FILENAME.json
+\`\`\`
+
 ---
 [BEGIN CARD BATCH FOR YOUR REVIEW]
 ---

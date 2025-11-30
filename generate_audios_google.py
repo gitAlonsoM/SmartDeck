@@ -13,7 +13,7 @@ FREE Google Translate TTS API (via gTTS library).
 -------------------------------------------------------------------------------
 -- Usage --
 -------------------------------------------------------------------------------
-py generate_audios_google.py public/data/common_meeting.json
+py generate_audios_google.py public\data\english_grammar_audio_choice.json
 """
 
 import os
