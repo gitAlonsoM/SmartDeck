@@ -1,242 +1,254 @@
 [
   {
-    "cardId": "ti_006",
+    "cardId": "ti_111",
     "cardType": "flippable",
-    "sideA": "Le pediría más información para tener un resumen más completo del problema.",
+    "sideA": "¡Ya está funcionando!",
     "sideB": [
       {
-        "text": "I would ask for more information to have a more complete summary of the problem.",
-        "audioSrc": "public/data/audio/tech_interview/ti_006_sideB_0.mp3"
+        "text": "It is working now!",
+        "audioSrc": "public/data/audio/tech_interview/ti_111_sideB_0.mp3"
       },
       {
-        "text": "I'd request more details to get a full picture of the issue.",
-        "audioSrc": "public/data/audio/tech_interview/ti_006_sideB_1.mp3"
+        "text": "It's up and running!",
+        "audioSrc": "public/data/audio/tech_interview/ti_111_sideB_1.mp3"
       },
       {
-        "text": "I would ask for further info to ensure I have a comprehensive overview of the situation.",
-        "audioSrc": "public/data/audio/tech_interview/ti_006_sideB_2.mp3"
+        "text": "It works now!",
+        "audioSrc": "public/data/audio/tech_interview/ti_111_sideB_2.mp3"
       },
       {
-        "text": "I would ask for more information to have a much more complete summary of the issue.",
-        "audioSrc": "public/data/audio/tech_interview/ti_006_sideB_3.mp3"
+        "text": "The system is operational now!",
+        "audioSrc": "public/data/audio/tech_interview/ti_111_sideB_3.mp3"
+      },
+      {
+        "text": "It is already working!",
+        "audioSrc": "public/data/audio/tech_interview/ti_111_sideB_4.mp3"
       }
     ],
-    "note": "[To get a full picture] is a great idiom for understanding the whole situation.\n\n[Comprehensive overview] sounds very professional in an interview setting.\n\n~...summary much more complete...~ (Word order: Adjectives usually come before the noun, e.g., 'a much more complete summary'.)"
+    "note": "[Up and running] is a professional idiom meaning a system is active and functioning correctly.\n\nUse [Already] to emphasize something happened sooner than expected, while [Now] simply marks the current status."
   },
   {
-    "cardId": "ti_065",
+    "cardId": "ti_120",
     "cardType": "flippable",
-    "sideA": "Yo diría: 'Gracias, revisando ahora. Te aviso en cuanto tenga novedades'.",
+    "sideA": "Aún no está llegando el campo.",
     "sideB": [
       {
-        "text": "I'd say: 'Thanks—checking now. I'll let you know as soon as I have an update.'",
-        "audioSrc": "public/data/audio/tech_interview/ti_065_sideB_0.mp3"
+        "text": "The field isn't coming through yet.",
+        "audioSrc": "public/data/audio/tech_interview/ti_120_sideB_0.mp3"
       },
       {
-        "text": "I would reply: 'Thanks, looking into it. I'll keep you posted.'",
-        "audioSrc": "public/data/audio/tech_interview/ti_065_sideB_1.mp3"
+        "text": "The field is not being received yet.",
+        "audioSrc": "public/data/audio/tech_interview/ti_120_sideB_1.mp3"
       },
       {
-        "text": "My response would be: 'Thanks. Checking now. I'll get back to you shortly.'",
-        "audioSrc": "public/data/audio/tech_interview/ti_065_sideB_2.mp3"
+        "text": "We aren't getting that field yet.",
+        "audioSrc": "public/data/audio/tech_interview/ti_120_sideB_2.mp3"
       },
       {
-        "text": "I'd say: 'Thanks—checking now. I'll let you know as soon as I get any updates.'",
-        "audioSrc": "public/data/audio/tech_interview/ti_065_sideB_3.mp3"
+        "text": "It's not getting the field yet.",
+        "audioSrc": "public/data/audio/tech_interview/ti_120_sideB_3.mp3"
       }
     ],
-    "note": "[I'll keep you posted] is an excellent idiom for 'te mantendré informado'.\n\n[As soon as I have an update] is standard professional phrasing.\n\n~I'll let you know as soon as I get news.~ (Unnatural phrasing: In a professional context, use 'have an update' or 'hear back'. 'Get news' sounds like you are waiting for a broadcast.)"
+    "note": "[Coming through] is a very common phrasal verb when discussing data streams or API responses.\n\nUse [field] for JSON keys or database columns.\n\n~It's not arriving the field yet~ ('Arrive' is an intransitive verb; you cannot 'arrive something'. Use [getting] or [receiving] instead.)"
   },
   {
-    "cardId": "ti_037",
+    "cardId": "ti_124",
     "cardType": "flippable",
-    "sideA": "Entiendo que en este rol debo ser muy proactivo.",
+    "sideA": "Hemos tenido algunos problemas con la intermitencia del backend.",
     "sideB": [
       {
-        "text": "I understand that I must be quite proactive in this role.",
-        "audioSrc": "public/data/audio/tech_interview/ti_037_sideB_0.mp3"
+        "text": "We've had some issues with backend intermittency.",
+        "audioSrc": "public/data/audio/tech_interview/ti_124_sideB_0.mp3"
       },
       {
-        "text": "I realize that I need to be very proactive in this position.",
-        "audioSrc": "public/data/audio/tech_interview/ti_037_sideB_1.mp3"
+        "text": "We've been experiencing intermittent backend issues.",
+        "audioSrc": "public/data/audio/tech_interview/ti_124_sideB_1.mp3"
       },
       {
-        "text": "I understand that high proactivity is required in this role.",
-        "audioSrc": "public/data/audio/tech_interview/ti_037_sideB_2.mp3"
+        "text": "We have encountered some flakiness in the backend.",
+        "audioSrc": "public/data/audio/tech_interview/ti_124_sideB_2.mp3"
       },
       {
-        "text": "I understand that I need to be really proactive in this role.",
-        "audioSrc": "public/data/audio/tech_interview/ti_037_sideB_3.mp3"
+        "text": "We've been facing some intermittent issues with the backend.",
+        "audioSrc": "public/data/audio/tech_interview/ti_124_sideB_3.mp3"
+      },
+      {
+        "text": "We've been facing some issues with intermittency in the backend.",
+        "audioSrc": "public/data/audio/tech_interview/ti_124_sideB_4.mp3"
       }
     ],
-    "note": "[Quite] usually means 'very' or 'considerably' in this context.\n\n[Proactive] (taking initiative) is a key soft skill keyword for senior roles."
+    "note": "[Flakiness] or [Flaky] is a very common developer term for something that works sometimes but fails others (intermittent).\n\nStructure: [We've had] (Present Perfect) connects past issues to the present moment."
   },
   {
-    "cardId": "ti_101",
+    "cardId": "ti_121",
     "cardType": "flippable",
-    "sideA": "Haciendo un chequeo rápido, ahora veo que el problema ha sido solucionado.",
+    "sideA": "Aún no se ha actualizado.",
     "sideB": [
       {
-        "text": "Doing a quick check, I now see that the problem has been solved.",
-        "audioSrc": "public/data/audio/tech_interview/ti_101_sideB_0.mp3"
+        "text": "It hasn't updated yet.",
+        "audioSrc": "public/data/audio/tech_interview/ti_121_sideB_0.mp3"
       },
       {
-        "text": "After a quick check, I see the issue is fixed.",
-        "audioSrc": "public/data/audio/tech_interview/ti_101_sideB_1.mp3"
+        "text": "It hasn't been updated yet.",
+        "audioSrc": "public/data/audio/tech_interview/ti_121_sideB_1.mp3"
       },
       {
-        "text": "Checking quickly, I can see the problem is resolved now.",
-        "audioSrc": "public/data/audio/tech_interview/ti_101_sideB_2.mp3"
+        "text": "The update hasn't gone through yet.",
+        "audioSrc": "public/data/audio/tech_interview/ti_121_sideB_2.mp3"
+      },
+      {
+        "text": "It's not updated yet.",
+        "audioSrc": "public/data/audio/tech_interview/ti_121_sideB_3.mp3"
       }
     ],
-    "note": "[Doing a quick check] is a present participle phrase explaining *how* you know the info.\n\n[Has been solved] (Passive Voice) emphasizes the result.\n\n~Making a quick check...~ (Collocation: We 'do', 'perform', or 'run' a check. We do not 'make' a check.)"
+    "note": "Use the Present Perfect [hasn't updated] for actions expecting completion.\n\n[Gone through] implies the process was triggered but didn't finish."
   },
   {
-    "cardId": "ti_096",
+    "cardId": "ti_107",
     "cardType": "flippable",
-    "sideA": "¿Puedes sacar esa validación de ahí?",
+    "sideA": "¿Podrían avisarme cuando desplieguen el paquete 'purple'?",
     "sideB": [
       {
-        "text": "Can you take that validation out of there?",
-        "audioSrc": "public/data/audio/tech_interview/ti_096_sideB_0.mp3"
+        "text": "Could you guys let me know when you deploy the purple package?",
+        "audioSrc": "public/data/audio/tech_interview/ti_107_sideB_0.mp3"
       },
       {
-        "text": "Can you remove that validation from there?",
-        "audioSrc": "public/data/audio/tech_interview/ti_096_sideB_1.mp3"
+        "text": "Could you notify me when the purple package is deployed?",
+        "audioSrc": "public/data/audio/tech_interview/ti_107_sideB_1.mp3"
       },
       {
-        "text": "Could you extract that validation logic?",
-        "audioSrc": "public/data/audio/tech_interview/ti_096_sideB_2.mp3"
-      },
-      {
-        "text": "Can you take out that validation from there?",
-        "audioSrc": "public/data/audio/tech_interview/ti_096_sideB_3.mp3"
+        "text": "Please let me know once the purple package deployment is done.",
+        "audioSrc": "public/data/audio/tech_interview/ti_107_sideB_2.mp3"
       }
     ],
-    "note": "[Validation] refers to checks (e.g., checking if stock > 0).\n\nIn code reviews, we often ask to [Remove] or [Extract] code to keep things clean.\n\n~...take out that validation of there?~ (Grammar: Use 'from there' to indicate source/location. 'Of' is incorrect here.)"
+    "note": "Use [Let me know] as a friendly, standard way to say 'avisar'.\n\n[Deploy] is the standard verb for releasing software.\n\n~...deploy the package in purple~ (Incorrect phrasing: 'Purple' is the name of the package, so it functions as an adjective: [Purple package]. 'In purple' suggests physical color.)"
   },
   {
-    "cardId": "ti_114",
+    "cardId": "ti_122",
     "cardType": "flippable",
-    "sideA": "Es como si el servicio estuviera intermitente.",
+    "sideA": "¿Desde qué día te ocurre eso?",
     "sideB": [
       {
-        "text": "It's as if the service were intermittent.",
-        "audioSrc": "public/data/audio/tech_interview/ti_114_sideB_0.mp3"
+        "text": "Since what day has this been happening to you?",
+        "audioSrc": "public/data/audio/tech_interview/ti_122_sideB_0.mp3"
       },
       {
-        "text": "It seems like the service is intermittent.",
-        "audioSrc": "public/data/audio/tech_interview/ti_114_sideB_1.mp3"
+        "text": "How long has this been happening?",
+        "audioSrc": "public/data/audio/tech_interview/ti_122_sideB_1.mp3"
       },
       {
-        "text": "It looks like the service is experiencing intermittency.",
-        "audioSrc": "public/data/audio/tech_interview/ti_114_sideB_2.mp3"
+        "text": "When did this start happening?",
+        "audioSrc": "public/data/audio/tech_interview/ti_122_sideB_2.mp3"
       },
       {
-        "text": "It feels like the service is acting up intermittently.",
-        "audioSrc": "public/data/audio/tech_interview/ti_114_sideB_3.mp3"
-      },
-      {
-        "text": "It's like the service is intermittent.",
-        "audioSrc": "public/data/audio/tech_interview/ti_114_sideB_4.mp3"
+        "text": "Since what day has this happened to you?",
+        "audioSrc": "public/data/audio/tech_interview/ti_122_sideB_3.mp3"
       }
     ],
-    "note": "[It seems like] is a softer, common way to diagnose issues.\n\n[It's as if... were] uses the Subjunctive mood (formal/hypothetical)."
+    "note": "[How long] is the most natural way to ask about duration in English.\n\n[Since what day] is grammatically correct but sounds more formal or specific to a ticket report.\n\n~Since what day did that happen to you?~ (Incorrect Grammar: [Since] usually requires the Present Perfect tense because it connects past to present. Use [When] with simple past.)"
   },
   {
-    "cardId": "ti_110",
+    "cardId": "ti_058",
     "cardType": "flippable",
-    "sideA": "No está funcionando aún.",
+    "sideA": "Arreglé la query para que extraiga datos de Order Management.",
     "sideB": [
       {
-        "text": "It is not working yet.",
-        "audioSrc": "public/data/audio/tech_interview/ti_110_sideB_0.mp3"
+        "text": "I fixed the query so it pulls from Order Management.",
+        "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_0.mp3"
       },
       {
-        "text": "It isn't working yet.",
-        "audioSrc": "public/data/audio/tech_interview/ti_110_sideB_1.mp3"
+        "text": "I corrected the SQL to fetch data from the Order Management tables.",
+        "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_1.mp3"
       },
       {
-        "text": "It's not up and running yet.",
-        "audioSrc": "public/data/audio/tech_interview/ti_110_sideB_2.mp3"
+        "text": "I adjusted the query to retrieve information from OM.",
+        "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_2.mp3"
       },
       {
-        "text": "The system is still not functioning.",
-        "audioSrc": "public/data/audio/tech_interview/ti_110_sideB_3.mp3"
+        "text": "I fixed the query to get data from Order Management.",
+        "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_3.mp3"
       },
       {
-        "text": "It is still not working.",
-        "audioSrc": "public/data/audio/tech_interview/ti_110_sideB_4.mp3"
+        "text": "I fixed the query to retrieve data from Order Management.",
+        "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_4.mp3"
+      },
+      {
+        "text": "I fixed the query to extract data from Order Management.",
+        "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_5.mp3"
       }
     ],
-    "note": "Place [Yet] at the end of negative sentences to indicate 'todavía/aún'."
+    "note": "Verbs for data: [Pull], [Fetch], [Retrieve], or [Extract].\n\n[Fixed] implies repairing code that was broken or incorrect."
   },
   {
-    "cardId": "ti_043",
+    "cardId": "ti_123",
     "cardType": "flippable",
-    "sideA": "¿Puedes darme exactamente los pasos que hiciste para llegar ahí?",
+    "sideA": "Estamos teniendo problemas con el proxy.",
     "sideB": [
       {
-        "text": "Can you give me the exact steps you took to get there?",
-        "audioSrc": "public/data/audio/tech_interview/ti_043_sideB_0.mp3"
+        "text": "We are having issues with the proxy.",
+        "audioSrc": "public/data/audio/tech_interview/ti_123_sideB_0.mp3"
       },
       {
-        "text": "Could you provide the specific steps you followed to reach that point?",
-        "audioSrc": "public/data/audio/tech_interview/ti_043_sideB_1.mp3"
+        "text": "We're experiencing problems with the proxy server.",
+        "audioSrc": "public/data/audio/tech_interview/ti_123_sideB_1.mp3"
       },
       {
-        "text": "Can you tell me the exact steps you took to arrive at that state?",
-        "audioSrc": "public/data/audio/tech_interview/ti_043_sideB_2.mp3"
+        "text": "We are facing some trouble with the proxy.",
+        "audioSrc": "public/data/audio/tech_interview/ti_123_sideB_2.mp3"
       },
       {
-        "text": "Can you give me the exact steps to get there?",
-        "audioSrc": "public/data/audio/tech_interview/ti_043_sideB_3.mp3"
+        "text": "We are having trouble with the proxy.",
+        "audioSrc": "public/data/audio/tech_interview/ti_123_sideB_3.mp3"
       }
     ],
-    "note": "[Steps you took] is the colocation for 'pasos que hiciste'. ~Steps you made~ is unnatural.\n\n[To get there] refers to arriving at the error state.\n\n~...steps that you did...~ (Collocation: We 'take' or 'follow' steps, we do not 'do' them.)\n\n~...steps you got to get there...~ (Vocabulary: We 'take' steps, we do not 'get' them. 'Got to get' is also repetitive.)"
+    "note": "[Experiencing] is a professional verb for status reports.\n\n[Issues] is slightly softer and more common in tech than 'problems'."
   },
   {
-    "cardId": "ti_084",
+    "cardId": "ti_119",
     "cardType": "flippable",
-    "sideA": "¿Qué problema estamos intentando solucionar con esto?",
+    "sideA": "No directamente uno a uno.",
     "sideB": [
       {
-        "text": "What problem are we trying to solve with this?",
-        "audioSrc": "public/data/audio/tech_interview/ti_084_sideB_0.mp3"
+        "text": "Not directly one-on-one.",
+        "audioSrc": "public/data/audio/tech_interview/ti_119_sideB_0.mp3"
       },
       {
-        "text": "What issue does this address?",
-        "audioSrc": "public/data/audio/tech_interview/ti_084_sideB_1.mp3"
+        "text": "It wasn't a direct one-on-one interaction.",
+        "audioSrc": "public/data/audio/tech_interview/ti_119_sideB_1.mp3"
       },
       {
-        "text": "What is the specific problem we are aiming to fix?",
-        "audioSrc": "public/data/audio/tech_interview/ti_084_sideB_2.mp3"
+        "text": "It isn't directly a one-on-one meeting.",
+        "audioSrc": "public/data/audio/tech_interview/ti_119_sideB_2.mp3"
       }
     ],
-    "note": "[Address] is a professional verb meaning 'to deal with' or 'to solve' an issue.\n\nStructure: [Trying to solve] is followed by the object (the problem).\n\n~Which problems...~ (Number mismatch: The Spanish source is singular ('problema'), so use the singular 'problem'.)"
+    "note": "[One-on-one] (often written 1:1) refers to a meeting between two people.\n\n~Not directly one by one~ ('One by one' means sequentially, like a queue. 'One on one' means interaction between two parties.)"
   },
   {
-    "cardId": "ti_118",
+    "cardId": "ti_060",
     "cardType": "flippable",
-    "sideA": "Necesitamos alguna prueba antes de actuar.",
+    "sideA": "Si necesito más información, como pasos o capturas, le pregunto a quien reportó por Teams de inmediato.",
     "sideB": [
       {
-        "text": "We need some proof before acting.",
-        "audioSrc": "public/data/audio/tech_interview/ti_118_sideB_0.mp3"
+        "text": "If I need more info—like steps or screenshots—I ask the reporter on Teams right away.",
+        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_0.mp3"
       },
       {
-        "text": "We need some evidence before we take action.",
-        "audioSrc": "public/data/audio/tech_interview/ti_118_sideB_1.mp3"
+        "text": "If I require further details, such as reproduction steps, I contact the reporter immediately via Teams.",
+        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_1.mp3"
       },
       {
-        "text": "We require proof before proceeding.",
-        "audioSrc": "public/data/audio/tech_interview/ti_118_sideB_2.mp3"
+        "text": "When I need more context, like screenshots, I reach out to the reporter on Teams instantly.",
+        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_2.mp3"
       },
       {
-        "text": "We need verification before doing anything.",
-        "audioSrc": "public/data/audio/tech_interview/ti_118_sideB_3.mp3"
+        "text": "If I need more info—like steps or screenshots—I ask the one who reported it on Teams.",
+        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_3.mp3"
+      },
+      {
+        "text": "If I need more info—like steps or screenshots—I ask who reported it on Teams.",
+        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_4.mp3"
       }
     ],
-    "note": "[Proof] is conclusive (facts).\n\n[Evidence] supports a conclusion.\n\n[Take action] is a professional synonym for 'act'.\n\n~We need a proof...~ (Grammar: 'Proof' is an uncountable noun here; do not use 'a'. Use 'some proof' or just 'proof'.)"
+    "note": "[Reporter] refers to the person who created the ticket/bug report.\n\n[Right away] or [Instantly] emphasizes your responsiveness.\n\n~I ask to who reported it...~ (Incorrect grammar: You 'ask someone', you do not 'ask to someone'.)\n\n~...I ask to the one who reported it...~ (Same error: The verb [ask] takes a direct object. Correct: 'I ask the one...' or 'I ask the person...')"
   }
 ]

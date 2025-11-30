@@ -1312,13 +1312,9 @@
         {
           "text": "I fixed the query to retrieve data from Order Management.",
           "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_4.mp3"
-        },
-        {
-          "text": "I fixed the query to extract data from Order Management.",
-          "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_5.mp3"
         }
       ],
-      "note": "Verbs for data: [Pull], [Fetch], [Retrieve], or [Extract].\n\n[Fixed] implies repairing code that was broken or incorrect."
+      "note": "Verbs for data: [Pull], [Fetch], or [Retrieve].\n\n[Fixed] implies repairing code that was broken or incorrect."
     },
     {
       "cardId": "ti_059",
@@ -1370,7 +1366,7 @@
           "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_4.mp3"
         }
       ],
-      "note": "[Reporter] refers to the person who created the ticket/bug report.\n\n[Right away] or [Instantly] emphasizes your responsiveness.\n\n~I ask to who reported it...~ (Incorrect grammar: You 'ask someone', you do not 'ask to someone'.)\n\n~...I ask to the one who reported it...~ (Same error: The verb [ask] takes a direct object. Correct: 'I ask the one...' or 'I ask the person...')"
+      "note": "[Reporter] refers to the person who created the ticket/bug report.\n\n[Right away] or [Instantly] emphasizes your responsiveness.\n\n~I ask to who reported it...~ (Incorrect grammar: You 'ask someone', you do not 'ask to someone'.)"
     },
     {
       "cardId": "ti_061",
@@ -2370,7 +2366,7 @@
           "audioSrc": "public/data/audio/tech_interview/ti_107_sideB_2.mp3"
         }
       ],
-      "note": "Use [Let me know] as a friendly, standard way to say 'avisar'.\n\n[Deploy] is the standard verb for releasing software.\n\n~...deploy the package in purple~ (Incorrect phrasing: 'Purple' is the name of the package, so it functions as an adjective: [Purple package]. 'In purple' suggests physical color.)"
+      "note": "Use [Let me know] as a friendly, standard way to say 'avisar'.\n\n[Deploy] is the standard verb for releasing software."
     },
     {
       "cardId": "ti_108",
@@ -2464,13 +2460,9 @@
         {
           "text": "The system is operational now!",
           "audioSrc": "public/data/audio/tech_interview/ti_111_sideB_3.mp3"
-        },
-        {
-          "text": "It is already working!",
-          "audioSrc": "public/data/audio/tech_interview/ti_111_sideB_4.mp3"
         }
       ],
-      "note": "[Up and running] is a professional idiom meaning a system is active and functioning correctly.\n\nUse [Already] to emphasize something happened sooner than expected, while [Now] simply marks the current status."
+      "note": "[Up and running] is a professional idiom meaning a system is active and functioning correctly."
     },
     {
       "cardId": "ti_112",
@@ -2646,7 +2638,7 @@
           "audioSrc": "public/data/audio/tech_interview/ti_119_sideB_2.mp3"
         }
       ],
-      "note": "[One-on-one] (often written 1:1) refers to a meeting between two people.\n\n~Not directly one by one~ ('One by one' means sequentially, like a queue. 'One on one' means interaction between two parties.)"
+      "note": "[One-on-one] (often written 1:1) refers to a meeting between two people."
     },
     {
       "cardId": "ti_120",
@@ -2664,13 +2656,9 @@
         {
           "text": "We aren't getting that field yet.",
           "audioSrc": "public/data/audio/tech_interview/ti_120_sideB_2.mp3"
-        },
-        {
-          "text": "It's not getting the field yet.",
-          "audioSrc": "public/data/audio/tech_interview/ti_120_sideB_3.mp3"
         }
       ],
-      "note": "[Coming through] is a very common phrasal verb when discussing data streams or API responses.\n\nUse [field] for JSON keys or database columns.\n\n~It's not arriving the field yet~ ('Arrive' is an intransitive verb; you cannot 'arrive something'. Use [getting] or [receiving] instead.)"
+      "note": "[Coming through] is a very common phrasal verb when discussing data streams or API responses.\n\nUse [field] for JSON keys or database columns."
     },
     {
       "cardId": "ti_121",
@@ -2688,10 +2676,6 @@
         {
           "text": "The update hasn't gone through yet.",
           "audioSrc": "public/data/audio/tech_interview/ti_121_sideB_2.mp3"
-        },
-        {
-          "text": "It's not updated yet.",
-          "audioSrc": "public/data/audio/tech_interview/ti_121_sideB_3.mp3"
         }
       ],
       "note": "Use the Present Perfect [hasn't updated] for actions expecting completion.\n\n[Gone through] implies the process was triggered but didn't finish."
@@ -2712,13 +2696,9 @@
         {
           "text": "When did this start happening?",
           "audioSrc": "public/data/audio/tech_interview/ti_122_sideB_2.mp3"
-        },
-        {
-          "text": "Since what day has this happened to you?",
-          "audioSrc": "public/data/audio/tech_interview/ti_122_sideB_3.mp3"
         }
       ],
-      "note": "[How long] is the most natural way to ask about duration in English.\n\n[Since what day] is grammatically correct but sounds more formal or specific to a ticket report.\n\n~Since what day did that happen to you?~ (Incorrect Grammar: [Since] usually requires the Present Perfect tense because it connects past to present. Use [When] with simple past.)"
+      "note": "[How long] is the most natural way to ask about duration in English.\n\n[Since what day] is grammatically correct but sounds more formal or specific to a ticket report."
     },
     {
       "cardId": "ti_123",
@@ -2736,10 +2716,6 @@
         {
           "text": "We are facing some trouble with the proxy.",
           "audioSrc": "public/data/audio/tech_interview/ti_123_sideB_2.mp3"
-        },
-        {
-          "text": "We are having trouble with the proxy.",
-          "audioSrc": "public/data/audio/tech_interview/ti_123_sideB_3.mp3"
         }
       ],
       "note": "[Experiencing] is a professional verb for status reports.\n\n[Issues] is slightly softer and more common in tech than 'problems'."
@@ -2760,14 +2736,6 @@
         {
           "text": "We have encountered some flakiness in the backend.",
           "audioSrc": "public/data/audio/tech_interview/ti_124_sideB_2.mp3"
-        },
-        {
-          "text": "We've been facing some intermittent issues with the backend.",
-          "audioSrc": "public/data/audio/tech_interview/ti_124_sideB_3.mp3"
-        },
-        {
-          "text": "We've been facing some issues with intermittency in the backend.",
-          "audioSrc": "public/data/audio/tech_interview/ti_124_sideB_4.mp3"
         }
       ],
       "note": "[Flakiness] or [Flaky] is a very common developer term for something that works sometimes but fails others (intermittent).\n\nStructure: [We've had] (Present Perfect) connects past issues to the present moment."
