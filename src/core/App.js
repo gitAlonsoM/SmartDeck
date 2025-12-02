@@ -85,6 +85,11 @@ class App {
          // Initialize the new confirmation modal
         this.confirmationModal = new ConfirmationModal(confirmationModalContainer);
         await this.confirmationModal.init();
+
+        // Initialize a dedicated ModernModal for Mastery/Cycle events
+        // We attach it to document.body to ensure it survives screen transitions
+        this.masteryModal = new ModernModal();
+        await this.masteryModal.init(document.body);
         
         const infoModalContainer = document.getElementById('info-modal-container');
         if (!infoModalContainer) { throw new Error("Fatal Error: InfoModal container not found."); }
@@ -712,26 +717,26 @@ class App {
         console.log(`VERIFY: [App] handleStartQuiz -> Round Empty: ${roundIsEmpty}`);
 
         if (roundIsEmpty) {
-            // SHOW MODAL - Single 'OK' button flow
-            const shouldReset = await this.confirmationModal.show(
-                "Deck Mastered!", 
-                "Congratulations! You've learned all the cards in this deck.\n\nClick OK to automatically reset the deck and start fresh.",
-                'success' // 'success' type usually shows a single confirmation button
-            );
-
-            if (shouldReset) {
-                console.log("VERIFY: [App] handleStartQuiz -> User confirmed. Resetting deck.");
-                // 1. Reset the data
-                this.handleResetDeck(); 
-                
-                // 2. CRITICAL FIX: Ensure we stay on DeckDetail (or go there) to show the new '0 Learned' stats
-                this.state.currentScreen = 'deckDetail'; 
-                this.state.quizInstance = null;
-                
-                // 3. Render the clean slate
-                this.render();
-            }
-            // Exit function. Do NOT proceed to change screen to 'quiz'
+           // Update: 'cycle' type triggers the Gold Icon + Confetti + Green Button
+            // We use this.masteryModal directly to ensure full feature support
+            this.masteryModal.show({
+                title: "Cycle Complete!", 
+                message: "Repetition is the mother of learning.\n\nReady to restart the cycle?",
+                type: 'cycle',
+                onConfirm: () => {
+                    console.log("VERIFY: [App] handleStartQuiz -> User confirmed. Resetting deck.");
+                    // 1. Reset the data
+                    this.handleResetDeck(); 
+                    
+                    // 2. Ensure we stay on DeckDetail to show the new '0 Learned' stats
+                    this.state.currentScreen = 'deckDetail'; 
+                    this.state.quizInstance = null;
+                    
+                    // 3. Render the clean slate
+                    this.render();
+                }
+            });
+            // Exit function immediately
             return;
         }
 
