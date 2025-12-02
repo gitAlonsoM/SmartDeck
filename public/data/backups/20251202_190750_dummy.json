@@ -26,7 +26,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_001_sideB_3.mp3"
         }
       ],
-      "note": "[Routing] refers to the process of selecting a path for traffic in a network, whereas a [Route] is the specific path itself.\n\n~We don't know where put the routing~ (Grammar: 'Put' is too generic here. Use technical verbs like [set], [establish], or [configure].)"
+      "note": "[Routing] refers to the process of selecting a path for traffic in a network.\n\n~We don't know where put the routing~ (Grammar: 'Put' is too generic here. Use technical verbs like [set], [establish], or [configure].)"
     },
     {
       "cardId": "dummy_002",
@@ -130,7 +130,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_006_sideB_3.mp3"
         }
       ],
-      "note": "[Hit] is common technical slang for sending a request to an endpoint.\n\n[Endpoint] is the specific URL where an API service can be accessed.\n\n~We have an error 404...~ (Phrasing: In English, we usually say [a 404 error] or just [Error 404]. The article 'an' does not fit before 'error' when the code follows immediately in this structure.)"
+      "note": "[Hit] is common technical slang for sending a request to an endpoint.\n\n[Endpoint] is the specific URL where an API service can be accessed."
     },
     {
       "cardId": "dummy_007",
@@ -148,10 +148,6 @@
         {
           "text": "The naming conventions are different.",
           "audioSrc": "public/data/audio/dummy/dummy_007_sideB_2.mp3"
-        },
-        {
-          "text": "There is a difference between the naming conventions.",
-          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_3.mp3"
         }
       ],
       "note": "[Naming convention] is the standard term for rules like CamelCase, snake_case, etc.\n\n[Discrepancy] implies a difference that shouldn't exist or causes issues.\n\n~...name conventions~ (Standard term: The correct technical term is [Naming conventions].)"
@@ -216,10 +212,6 @@
         {
           "text": "We have this exposed, but it gets mapped differently.",
           "audioSrc": "public/data/audio/dummy/dummy_010_sideB_3.mp3"
-        },
-        {
-          "text": "We have this exposed, but it gets mapped in another way.",
-          "audioSrc": "public/data/audio/dummy/dummy_010_sideB_4.mp3"
         }
       ],
       "note": "To [Expose] an API/Service means to make it available for connection.\n\nTo [Map] means to connect or associate one data point/path with another."
@@ -264,10 +256,6 @@
         {
           "text": "There must be a middleware layer where the name translation happens.",
           "audioSrc": "public/data/audio/dummy/dummy_012_sideB_3.mp3"
-        },
-        {
-          "text": "There must be a middleware layer where the names get translated.",
-          "audioSrc": "public/data/audio/dummy/dummy_012_sideB_4.mp3"
         }
       ],
       "note": "In this context, [Translation] refers to transforming data formats or naming conventions (e.g., from CamelCase to SnakeCase)."
@@ -288,10 +276,6 @@
         {
           "text": "A mapping config exists that we don't know about.",
           "audioSrc": "public/data/audio/dummy/dummy_013_sideB_2.mp3"
-        },
-        {
-          "text": "There is a map configuration unknown to us.",
-          "audioSrc": "public/data/audio/dummy/dummy_013_sideB_3.mp3"
         }
       ],
       "note": "[Unknown to us] is a formal way to say 'we don't know it'.\n\n[We are not aware of] is professional and very common in meetings.\n\n~There is a unknown...~ (Grammar: Use [an] before vowel sounds like 'unknown'.)\n\n~...configuration to us~ (Word order: Adjectives modifying the noun should be close. Better: 'A mapping configuration [unknown to us]'.)"
@@ -318,7 +302,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_014_sideB_3.mp3"
         }
       ],
-      "note": "[Since] and [As] are strong alternatives to 'Because' when explaining technical causes.\n\n[Route] (verb) means to send data to a specific destination.\n\n~...can not enroute...~ (Incorrect vocabulary: [En route] is an adverb meaning 'on the way'. The verb is [Route].)\n\n~...server cannot routing...~ (Grammar: Modals like 'cannot' are followed by the base verb form, not the -ing form. It should be [cannot route].)"
+      "note": "[Since] and [As] are strong alternatives to 'Because' when explaining technical causes.\n\n[Route] (verb) means to send data to a specific destination.\n\n~...can not enroute...~ (Incorrect vocabulary: [En route] is an adverb meaning 'on the way'. The verb is [Route].)"
     },
     {
       "cardId": "dummy_015",
@@ -524,10 +508,6 @@
         {
           "text": "Compatibility with previous versions.",
           "audioSrc": "public/data/audio/dummy/dummy_024_sideB_2.mp3"
-        },
-        {
-          "text": "Compatibility with old versions.",
-          "audioSrc": "public/data/audio/dummy/dummy_024_sideB_3.mp3"
         }
       ],
       "note": "[Backward Compatibility] is the ability of a system to work with inputs generated by older versions of itself."
@@ -535,7 +515,7 @@
     {
       "cardId": "dummy_025",
       "cardType": "flippable",
-      "sideA": "Se delega al orquestador interno.",
+      "sideA": "Se delega con el orquestador interno.",
       "sideB": [
         {
           "text": "It is delegated to the internal orchestrator.",
@@ -610,7 +590,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_028_sideB_2.mp3"
         }
       ],
-      "note": "[Ensures] means to make certain that something happens.\n\n[User context] is a common way to refer to all the data defining the current user.\n\n~Initialization allows the user's identity...~ (Vocabulary: [Allow] means to permit. [Ensure] or [Secure] is better for making sure an identity is firmly established.)"
+      "note": "[Ensures] means to make certain that something happens.\n\n[User context] is a common way to refer to all the data defining the current user."
     },
     {
       "cardId": "dummy_029",
@@ -634,7 +614,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_029_sideB_3.mp3"
         }
       ],
-      "note": "[Enable] is a key technical verb meaning to activate or make possible.\n\n[According to] or [Based on] are correct ways to express dependency.\n\n~...depending to the user~ (Grammar: The correct preposition is [depending on].)"
+      "note": "[Enable] is a key technical verb meaning to activate or make possible.\n\n[According to] or [Based on] are correct ways to express dependency."
     },
     {
       "cardId": "dummy_030",
@@ -714,7 +694,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_033_sideB_2.mp3"
         }
       ],
-      "note": "**[122]**\n\n[Points to] is the standard phrasal verb for direction/reference in tech.\n\n~...resource to aim the URL~ (Incorrect phrasing: You [aim at] a target. Better: 'The resource at which the URL is aimed'.)\n\n~...resource to address the URL~ (Incorrect relation: The URL addresses the resource, not the other way around.)\n\n~...resource that aim at the URL~ (Logic/Grammar: The URL points to the resource, not vice versa. Also, 'resource' is singular, so the verb would need to be 'aims'.)"
+      "note": "**[122]**\n\n[Points to] is the standard phrasal verb for direction/reference in tech.\n\n~...resource to aim the URL~ (Incorrect phrasing: You [aim at] a target. Better: 'The resource at which the URL is aimed'.)\n\n~...resource to address the URL~ (Incorrect relation: The URL addresses the resource, not the other way around.)"
     },
     {
       "cardId": "dummy_034",
@@ -756,10 +736,6 @@
         {
           "text": "We need the URL protocol, domain, and path.",
           "audioSrc": "public/data/audio/dummy/dummy_035_sideB_2.mp3"
-        },
-        {
-          "text": "We need the path, domain and protocol of the URL.",
-          "audioSrc": "public/data/audio/dummy/dummy_035_sideB_3.mp3"
         }
       ],
       "note": "**[122]**"
@@ -767,7 +743,7 @@
     {
       "cardId": "dummy_036",
       "cardType": "flippable",
-      "sideA": "El endpoint está incluido en la ruta de la URL.",
+      "sideA": "En la ruta de la URL está incluido el endpoint.",
       "sideB": [
         {
           "text": "The endpoint is included in the URL path.",
@@ -783,706 +759,6 @@
         }
       ],
       "note": "**[122]**\n\nTechnically, the endpoint is often the final segment of the path.\n\n~In the URL path is included the endpoint~ (Syntax error: English word order is Subject + Verb. Better: 'The endpoint is included in the URL path'.)"
-    },
-    {
-      "cardId": "dummy_037",
-      "cardType": "flippable",
-      "sideA": "Son usados intercambiablemente.",
-      "sideB": [
-        {
-          "text": "They are used interchangeably.",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_0.mp3"
-        },
-        {
-          "text": "They are used in an interchangeable way.",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_1.mp3"
-        },
-        {
-          "text": "They are used as synonyms.",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_2.mp3"
-        }
-      ],
-      "note": "[Interchangeably] is an adverb meaning that one thing can be used in place of another without changing the result."
-    },
-    {
-      "cardId": "dummy_038",
-      "cardType": "flippable",
-      "sideA": "Ahora se extrae la subcadena de...",
-      "sideB": [
-        {
-          "text": "Now the substring is extracted from...",
-          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_0.mp3"
-        },
-        {
-          "text": "Now the substring from... is extracted.",
-          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_1.mp3"
-        },
-        {
-          "text": "Now we extract the substring from...",
-          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_2.mp3"
-        }
-      ],
-      "note": "A [Substring] is a contiguous sequence of characters within a string.\n\nPassive voice ([is extracted]) focuses on the action, not the actor."
-    },
-    {
-      "cardId": "dummy_039",
-      "cardType": "flippable",
-      "sideA": "Ahora extraemos la subcadena de...",
-      "sideB": [
-        {
-          "text": "Now we extract the substring of...",
-          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_0.mp3"
-        },
-        {
-          "text": "Now we pull the substring from...",
-          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_1.mp3"
-        },
-        {
-          "text": "Now we get the substring from...",
-          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_2.mp3"
-        }
-      ],
-      "note": "Active voice ([we extract]) is direct and commonly used in code walkthroughs.\n\n[Pull] is a common casual synonym for extracting data."
-    },
-    {
-      "cardId": "dummy_040",
-      "cardType": "flippable",
-      "sideA": "Luego parseamos a P_QUOTE_LINE_ID y extraemos su...",
-      "sideB": [
-        {
-          "text": "Then we parse P_QUOTE_LINE_ID and extract its...",
-          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_0.mp3"
-        },
-        {
-          "text": "Next, we parse P_QUOTE_LINE_ID and extract its...",
-          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_1.mp3"
-        },
-        {
-          "text": "Then we parse P_QUOTE_LINE_ID to extract its...",
-          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_2.mp3"
-        }
-      ],
-      "note": "To [Parse] means to analyze a string of symbols (or data) to extract specific information."
-    },
-    {
-      "cardId": "dummy_041",
-      "cardType": "flippable",
-      "sideA": "Ahora tomamos al delimitador...",
-      "sideB": [
-        {
-          "text": "Now we take the delimiter...",
-          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_0.mp3"
-        },
-        {
-          "text": "Now we pick the delimiter...",
-          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_1.mp3"
-        },
-        {
-          "text": "Now we select the delimiter...",
-          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_2.mp3"
-        }
-      ],
-      "note": "A [Delimiter] is a character used to specify the boundary between separate, independent regions (like a comma in CSV)."
-    },
-    {
-      "cardId": "dummy_042",
-      "cardType": "flippable",
-      "sideA": "Ahora encontramos la posición del delimitador...",
-      "sideB": [
-        {
-          "text": "Now we find the position of the delimiter...",
-          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_0.mp3"
-        },
-        {
-          "text": "Now we locate the delimiter's position...",
-          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_1.mp3"
-        },
-        {
-          "text": "Now we find where the delimiter is located...",
-          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_2.mp3"
-        }
-      ],
-      "note": "In programming, [Position] or [Index] refers to the numeric location of a character within a string."
-    },
-    {
-      "cardId": "dummy_043",
-      "cardType": "flippable",
-      "sideA": "Estamos limpiando, o reseteando la variable local.",
-      "sideB": [
-        {
-          "text": "We are clearing, or resetting the local variable.",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_0.mp3"
-        },
-        {
-          "text": "We are cleaning, or resetting the local variable.",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_1.mp3"
-        },
-        {
-          "text": "We are wiping, or resetting the local variable.",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_2.mp3"
-        }
-      ],
-      "note": "[Clear] is the most standard term for removing data from a variable or structure.\n\n~We are cleaning~ (While understood, [Cleaning] usually implies sanitizing input, whereas [Clearing] implies making it empty.)"
-    },
-    {
-      "cardId": "dummy_044",
-      "cardType": "flippable",
-      "sideA": "Prevenir errores de contaminación de datos.",
-      "sideB": [
-        {
-          "text": "To prevent data contamination errors.",
-          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_0.mp3"
-        },
-        {
-          "text": "To avoid data contamination errors.",
-          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_1.mp3"
-        },
-        {
-          "text": "In order to prevent data pollution errors.",
-          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_2.mp3"
-        }
-      ],
-      "note": "[Data contamination] occurs when data from one context leaks into another.\n\n[Prevent] is proactive (stop it before it starts)."
-    },
-    {
-      "cardId": "dummy_045",
-      "cardType": "flippable",
-      "sideA": "El header tiene el quien, cuando, y cuanto.",
-      "sideB": [
-        {
-          "text": "The header has the who, when, and how much.",
-          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_0.mp3"
-        },
-        {
-          "text": "The header contains the who, the when, and the how much.",
-          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_1.mp3"
-        },
-        {
-          "text": "The header holds the who, when, and how much.",
-          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_2.mp3"
-        }
-      ],
-      "note": "In a Master-Detail relationship, the [Header] contains the general information common to all lines."
-    },
-    {
-      "cardId": "dummy_046",
-      "cardType": "flippable",
-      "sideA": "Solo hay 1 header por transacción, pero puede tener muchas lineas.",
-      "sideB": [
-        {
-          "text": "There is only 1 header per transaction, but it can have many lines.",
-          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_0.mp3"
-        },
-        {
-          "text": "There is only one header per transaction, but it may contain multiple lines.",
-          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_1.mp3"
-        },
-        {
-          "text": "A transaction has only one header, but multiple lines.",
-          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_2.mp3"
-        }
-      ],
-      "note": "This describes a [One-to-Many] relationship."
-    },
-    {
-      "cardId": "dummy_047",
-      "cardType": "flippable",
-      "sideA": "Las 'Lineas' son la lista de productos del Header o Boleta.",
-      "sideB": [
-        {
-          "text": "The 'Lines' are the list of products of the Header or Invoice.",
-          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_0.mp3"
-        },
-        {
-          "text": "The 'Lines' represent the product list for the Header or Invoice.",
-          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_1.mp3"
-        },
-        {
-          "text": "The 'Lines' constitute the list of items in the Header or Invoice.",
-          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_2.mp3"
-        }
-      ],
-      "note": "[Boleta] is often translated as [Invoice] or [Receipt] depending on the context. In generic ERP terms, [Invoice] is safer."
-    },
-    {
-      "cardId": "dummy_048",
-      "cardType": "flippable",
-      "sideA": "Las 'Lineas' tienen el item, cantidad, precio unitario.",
-      "sideB": [
-        {
-          "text": "The 'Lines' have the item, quantity, and unit price.",
-          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_0.mp3"
-        },
-        {
-          "text": "The 'Lines' contain the item, the quantity, and the unit price.",
-          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_1.mp3"
-        },
-        {
-          "text": "The 'Lines' include the item, quantity, and unit price.",
-          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_2.mp3"
-        }
-      ],
-      "note": "[Unit price] is the price for a single item, before quantity multiplication."
-    },
-    {
-      "cardId": "dummy_049",
-      "cardType": "flippable",
-      "sideA": "Las 'Lineas' tienen cada una un numero unico.",
-      "sideB": [
-        {
-          "text": "The 'Lines' each have a unique number.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_0.mp3"
-        },
-        {
-          "text": "Each 'Line' has a unique number.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_1.mp3"
-        },
-        {
-          "text": "The 'Lines' possess a unique ID each.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_2.mp3"
-        }
-      ],
-      "note": "[Each] emphasizes individual possession of the property (unique number)."
-    },
-    {
-      "cardId": "dummy_050",
-      "cardType": "flippable",
-      "sideA": "El carro es una cotización.",
-      "sideB": [
-        {
-          "text": "The CART is a quotation.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_0.mp3"
-        },
-        {
-          "text": "The cart represents a quote.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_1.mp3"
-        },
-        {
-          "text": "The shopping cart acts as a quotation.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_2.mp3"
-        }
-      ],
-      "note": "In e-commerce logic, a [Quote] or [Quotation] is a draft order with prices, often represented by the active [Cart]."
-    },
-    {
-      "cardId": "dummy_051",
-      "cardType": "flippable",
-      "sideA": "La orden es un compromiso de venta y envío.",
-      "sideB": [
-        {
-          "text": "The ORDER is a commitment to sell and ship.",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_0.mp3"
-        },
-        {
-          "text": "The order represents a commitment to sell and ship.",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_1.mp3"
-        },
-        {
-          "text": "The order is a pledge to sell and ship.",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_2.mp3"
-        }
-      ],
-      "note": "[Commitment] in business logic means the stock is reserved and the intent to transact is finalized."
-    },
-    {
-      "cardId": "dummy_052",
-      "cardType": "flippable",
-      "sideA": "La factura es la solicitud formal de pago.",
-      "sideB": [
-        {
-          "text": "The INVOICE is the formal request for payment.",
-          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_0.mp3"
-        },
-        {
-          "text": "The invoice is the official payment request.",
-          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_1.mp3"
-        },
-        {
-          "text": "The invoice serves as a formal demand for payment.",
-          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_2.mp3"
-        }
-      ],
-      "note": "[Invoice] is the document issued by the seller to the buyer."
-    },
-    {
-      "cardId": "dummy_053",
-      "cardType": "flippable",
-      "sideA": "El proceso de generar la factura toma tiempo.",
-      "sideB": [
-        {
-          "text": "The process of generating the invoice takes time.",
-          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_0.mp3"
-        },
-        {
-          "text": "Generating the invoice is a time-consuming process.",
-          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_1.mp3"
-        },
-        {
-          "text": "It takes time to generate the invoice.",
-          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_2.mp3"
-        }
-      ],
-      "note": "[Takes time] is the standard idiom for duration."
-    },
-    {
-      "cardId": "dummy_054",
-      "cardType": "flippable",
-      "sideA": "La Orden autoriza el despacho.",
-      "sideB": [
-        {
-          "text": "The Order authorizes shipment.",
-          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_0.mp3"
-        },
-        {
-          "text": "The Order authorizes the dispatch.",
-          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_1.mp3"
-        },
-        {
-          "text": "The Order clears the shipment.",
-          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_2.mp3"
-        }
-      ],
-      "note": "[Dispatch] and [Shipment] are used interchangeably for the act of sending goods."
-    },
-    {
-      "cardId": "dummy_055",
-      "cardType": "flippable",
-      "sideA": "La Factura registra la cuenta por cobrar.",
-      "sideB": [
-        {
-          "text": "The Invoice records the accounts receivable.",
-          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_0.mp3"
-        },
-        {
-          "text": "The Invoice logs the accounts receivable.",
-          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_1.mp3"
-        },
-        {
-          "text": "The Invoice registers the debt.",
-          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_2.mp3"
-        }
-      ],
-      "note": "[Accounts Receivable] (AR) is the money owed to a company by its debtors."
-    },
-    {
-      "cardId": "dummy_056",
-      "cardType": "flippable",
-      "sideA": "La Factura se crea después del envío.",
-      "sideB": [
-        {
-          "text": "The Invoice is created after shipment.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_0.mp3"
-        },
-        {
-          "text": "The Invoice is generated post-shipment.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_1.mp3"
-        },
-        {
-          "text": "The Invoice is made after shipping.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_2.mp3"
-        }
-      ],
-      "note": "[Post-shipment] is a concise technical way to say 'after shipment'."
-    },
-    {
-      "cardId": "dummy_057",
-      "cardType": "flippable",
-      "sideA": "Toma mucho tiempo en recargarse.",
-      "sideB": [
-        {
-          "text": "It takes a long time to reload.",
-          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_0.mp3"
-        },
-        {
-          "text": "It takes a while to reload.",
-          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_1.mp3"
-        },
-        {
-          "text": "Reloading takes a lot of time.",
-          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_2.mp3"
-        }
-      ],
-      "note": "Use [It takes...] to talk about the duration of an action."
-    },
-    {
-      "cardId": "dummy_058",
-      "cardType": "flippable",
-      "sideA": "Toma mucho tiempo en volver a funciona bien, a veces 1 o 2 dias completos.",
-      "sideB": [
-        {
-          "text": "It takes a long time to work well again, sometimes 1 or 2 full days.",
-          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_0.mp3"
-        },
-        {
-          "text": "It takes a long time to return to normal functioning, sometimes 1 or 2 whole days.",
-          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_1.mp3"
-        },
-        {
-          "text": "It takes a while to operate correctly again, sometimes 1 or 2 full days.",
-          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_2.mp3"
-        }
-      ],
-      "note": "[Full days] or [Whole days] emphasizes the completeness of the duration."
-    },
-    {
-      "cardId": "dummy_059",
-      "cardType": "flippable",
-      "sideA": "Tomar mucho tiempo en volver.",
-      "sideB": [
-        {
-          "text": "To take a long time to come back.",
-          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_0.mp3"
-        },
-        {
-          "text": "To take a long time to return.",
-          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_1.mp3"
-        },
-        {
-          "text": "Taking a long time to get back.",
-          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_2.mp3"
-        }
-      ],
-      "note": "[Come back] is a phrasal verb synonym for [Return]."
-    },
-    {
-      "cardId": "dummy_060",
-      "cardType": "flippable",
-      "sideA": "La Responsabilidad define los roles especificos de un usuario.",
-      "sideB": [
-        {
-          "text": "The Responsibility defines the specific roles of a user.",
-          "audioSrc": "public/data/audio/dummy/dummy_060_sideB_0.mp3"
-        },
-        {
-          "text": "The Responsibility defines a user's specific roles.",
-          "audioSrc": "public/data/audio/dummy/dummy_060_sideB_1.mp3"
-        },
-        {
-          "text": "The Responsibility determines the specific user roles.",
-          "audioSrc": "public/data/audio/dummy/dummy_060_sideB_2.mp3"
-        }
-      ],
-      "note": "In ERP systems (like Oracle), a [Responsibility] is a collection of menus, functions, and reports available to a user."
-    },
-    {
-      "cardId": "dummy_061",
-      "cardType": "flippable",
-      "sideA": "La Responsabilidad define los permisos especificos de un usuario.",
-      "sideB": [
-        {
-          "text": "The Responsibility defines a user's specific permissions.",
-          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_0.mp3"
-        },
-        {
-          "text": "The Responsibility sets the specific permissions for a user.",
-          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_1.mp3"
-        },
-        {
-          "text": "The Responsibility outlines a user's specific permissions.",
-          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_2.mp3"
-        }
-      ],
-      "note": "[Permissions] or [Privileges] control what a user is allowed to do within the system."
-    },
-    {
-      "cardId": "dummy_062",
-      "cardType": "flippable",
-      "sideA": "El número único identifica a la persona en la base de datos.",
-      "sideB": [
-        {
-          "text": "The unique number identifies the person in the database.",
-          "audioSrc": "public/data/audio/dummy/dummy_062_sideB_0.mp3"
-        },
-        {
-          "text": "The unique ID identifies the individual in the DB.",
-          "audioSrc": "public/data/audio/dummy/dummy_062_sideB_1.mp3"
-        },
-        {
-          "text": "The unique number is used to identify the person in the database.",
-          "audioSrc": "public/data/audio/dummy/dummy_062_sideB_2.mp3"
-        }
-      ],
-      "note": "This usually refers to a [Primary Key] or [Unique Identifier]."
-    },
-    {
-      "cardId": "dummy_063",
-      "cardType": "flippable",
-      "sideA": "El inicio de sesión necesitas el quien, el que, y donde.",
-      "sideB": [
-        {
-          "text": "The login needs the who, the what, and the where.",
-          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_0.mp3"
-        },
-        {
-          "text": "Logging in requires the who, what, and where.",
-          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_1.mp3"
-        },
-        {
-          "text": "The sign-in requires the who, the what, and the where.",
-          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_2.mp3"
-        }
-      ],
-      "note": "[Login] or [Sign-in] is the process of authenticating."
-    },
-    {
-      "cardId": "dummy_064",
-      "cardType": "flippable",
-      "sideA": "Tenemos 2 guion bajo, y una palabra adicional.",
-      "sideB": [
-        {
-          "text": "We have 2 underscores, and an additional word.",
-          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_0.mp3"
-        },
-        {
-          "text": "We have two underscores plus an extra word.",
-          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_1.mp3"
-        },
-        {
-          "text": "There are two underscores and an added word.",
-          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_2.mp3"
-        }
-      ],
-      "note": "[Underscore] (_) is the character used in snake_case."
-    },
-    {
-      "cardId": "dummy_065",
-      "cardType": "flippable",
-      "sideA": "Tenemos diferentes sintaxis.",
-      "sideB": [
-        {
-          "text": "We have different syntaxes.",
-          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_0.mp3"
-        },
-        {
-          "text": "We have varying syntaxes.",
-          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_1.mp3"
-        },
-        {
-          "text": "There are different syntaxes.",
-          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_2.mp3"
-        }
-      ],
-      "note": "The plural of [Syntax] is [Syntaxes]."
-    },
-    {
-      "cardId": "dummy_066",
-      "cardType": "flippable",
-      "sideA": "La sintaxis camel case usa minusculas y mayusculas.",
-      "sideB": [
-        {
-          "text": "Camel case syntax uses lowercase and uppercase.",
-          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_0.mp3"
-        },
-        {
-          "text": "The camel case syntax utilizes lowercase and uppercase letters.",
-          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_1.mp3"
-        },
-        {
-          "text": "Camel case syntax mixes lower and upper case.",
-          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_2.mp3"
-        }
-      ],
-      "note": "[CamelCase] (or camelCase) capitalizes the first letter of each new word within the compound."
-    },
-    {
-      "cardId": "dummy_067",
-      "cardType": "flippable",
-      "sideA": "La sintaxis snake case usa guion bajo.",
-      "sideB": [
-        {
-          "text": "Snake case syntax uses underscores.",
-          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_0.mp3"
-        },
-        {
-          "text": "The snake case syntax employs underscores.",
-          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_1.mp3"
-        },
-        {
-          "text": "Snake case relies on underscores.",
-          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_2.mp3"
-        }
-      ],
-      "note": "[snake_case] separates words with underscores."
-    },
-    {
-      "cardId": "dummy_068",
-      "cardType": "flippable",
-      "sideA": "Usar mayusculas y minusculas es camel case.",
-      "sideB": [
-        {
-          "text": "Using uppercase and lowercase is camel case.",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_0.mp3"
-        },
-        {
-          "text": "Using caps and lower case constitutes camel case.",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_1.mp3"
-        },
-        {
-          "text": "The use of upper and lower case is called camel case.",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_2.mp3"
-        }
-      ],
-      "note": "[Caps] is a common short form for [Capital letters] or [Uppercase]."
-    },
-    {
-      "cardId": "dummy_069",
-      "cardType": "flippable",
-      "sideA": "Todo en minuscula con guiones bajo es snake case.",
-      "sideB": [
-        {
-          "text": "Everything in lowercase with underscores is snake case.",
-          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_0.mp3"
-        },
-        {
-          "text": "All lowercase with underscores is snake case.",
-          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_1.mp3"
-        },
-        {
-          "text": "Using all lowercase joined by underscores is snake case.",
-          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_2.mp3"
-        }
-      ],
-      "note": "[Lowercase] refers to the small letters (a, b, c)."
-    },
-    {
-      "cardId": "dummy_070",
-      "cardType": "flippable",
-      "sideA": "Curl es una herramienta de línea de comandos.",
-      "sideB": [
-        {
-          "text": "Curl is a command-line tool.",
-          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_0.mp3"
-        },
-        {
-          "text": "Curl is a command-line utility.",
-          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_1.mp3"
-        },
-        {
-          "text": "Curl is a tool for the command line.",
-          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_2.mp3"
-        }
-      ],
-      "note": "[CLI] stands for Command Line Interface."
-    },
-    {
-      "cardId": "dummy_071",
-      "cardType": "flippable",
-      "sideA": "El comando curl es ideal para probar APIs sin necesidad de una interfaz gráfica.",
-      "sideB": [
-        {
-          "text": "The curl command is ideal for testing APIs without a graphical interface.",
-          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_0.mp3"
-        },
-        {
-          "text": "The curl command is perfect for testing APIs without a GUI.",
-          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_1.mp3"
-        },
-        {
-          "text": "Curl is great for testing APIs without needing a graphical UI.",
-          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_2.mp3"
-        }
-      ],
-      "note": "[GUI] (Graphical User Interface) is the visual component of software."
     }
   ]
 }

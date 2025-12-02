@@ -3,7 +3,7 @@
 # These files are for local reference and should not be versioned in the main repository.
 README_CARD.MD
 readme_tree_view.md
-README.MD
+README_REAL.MD
 Sesiones.md
 tree_view.txt
 GEMINI_INSTRUCTIONS.md
@@ -13,3 +13,11 @@ MEJORAS.MD
 generate_audios.py
 corrections.json
 delete_audios.py
+
+update_deck.py
+update_plsql_paths.py
+upgrade_glossary.py
+refactor_values.py
+merge_decks_smart.py
+generate_audios_google.py
+add_phrasal_verb_modals.py
