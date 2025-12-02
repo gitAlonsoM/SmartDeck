@@ -666,7 +666,8 @@ class App {
         this.render();
     }
 
-    handleStartQuiz() {
+    // Refactored to prevent premature screen state changes
+    async handleStartQuiz() {
         console.log(`DEBUG: [App] handleStartQuiz -> 'Start Quiz' clicked for deck ID: ${this.state.currentDeckId}.`);
         const deck = this.state.allDecks[this.state.currentDeckId];
         if (!deck || deck.cards.length === 0) {
@@ -674,49 +675,69 @@ class App {
             return;
         }
 
-    const progress = StorageService.loadDeckProgress(this.state.currentDeckId);
+        const progress = StorageService.loadDeckProgress(this.state.currentDeckId);
+        let nextScreen = ''; // Variable to hold the target screen
 
         // --- DECK TYPE ROUTER ---
+        // We create the instance, but we DO NOT set this.state.currentScreen yet.
         if (deck.deckType === 'flippable') {
-          console.log("DEBUG: [App] handleStartQuiz -> Starting a 'flippable' quiz.");
-            // Updated: Pass currentDeckId as first argument
+            console.log("DEBUG: [App] handleStartQuiz -> Preparing 'flippable' quiz.");
             this.state.quizInstance = new SpacedRepetitionQuiz(this.state.currentDeckId, deck.cards, progress);
             this.state.quizInstance.generateQuizRound(7);
-            this.state.currentScreen = 'flippableQuiz';
+            nextScreen = 'flippableQuiz';
         } else if (deck.deckType === 'audioChoice') {
-            // Handle the new audio choice deck type
-            console.log("DEBUG: [App] handleStartQuiz -> Starting an 'audioChoice' quiz.");
-            // Updated: Pass currentDeckId as first argument
+            console.log("DEBUG: [App] handleStartQuiz -> Preparing 'audioChoice' quiz.");
             this.state.quizInstance = new Quiz(this.state.currentDeckId, deck.cards, progress); 
             this.state.quizInstance.generateQuizRound(7);
-            this.state.currentScreen = 'audioChoiceQuiz'; 
+            nextScreen = 'audioChoiceQuiz'; 
         } else if (deck.deckType === 'multipleChoice') {
-            // Explicitly handle multiple choice decks
-            console.log("DEBUG: [App] handleStartQuiz -> Starting a 'multipleChoice' quiz.");
-            // Updated: Pass currentDeckId as first argument
+            console.log("DEBUG: [App] handleStartQuiz -> Preparing 'multipleChoice' quiz.");
             this.state.quizInstance = new Quiz(this.state.currentDeckId, deck.cards, progress);
             this.state.quizInstance.generateQuizRound(7);
-            this.state.currentScreen = 'quiz';
+            nextScreen = 'quiz';
         } else {
-            // Handle unknown deck types gracefully
-            console.error(`[App] handleStartQuiz -> Unknown or undefined deckType: '${deck.deckType}' for deck ID: ${this.state.currentDeckId}.`);
+            console.error(`[App] handleStartQuiz -> Unknown or undefined deckType: '${deck.deckType}'.`);
             alert("Error: Cannot start quiz. The deck type is not supported.");
             return;
         }
- // Check if the generated round is empty, using the correct property for each quiz type
-        let roundIsEmpty = false;
-        if (this.state.quizInstance instanceof SpacedRepetitionQuiz) {
-        	roundIsEmpty = this.state.quizInstance.currentCards.length === 0;
-        } else { // It's a standard Quiz
-        	roundIsEmpty = this.state.quizInstance.questions.length === 0;
-        }
 
-        if (roundIsEmpty) {
-            alert("Congratulations! You've learned all the cards in this deck. Reset the deck to study again.");
-            return;
-        }
+        // Check if the generated round is empty
+        let roundIsEmpty = false;
+        if (this.state.quizInstance instanceof SpacedRepetitionQuiz) {
+            roundIsEmpty = this.state.quizInstance.currentCards.length === 0;
+        } else { 
+            roundIsEmpty = this.state.quizInstance.questions.length === 0;
+        }
 
-        this.render();
+        console.log(`VERIFY: [App] handleStartQuiz -> Round Empty: ${roundIsEmpty}`);
+
+        if (roundIsEmpty) {
+            // SHOW MODAL - Single 'OK' button flow
+            const shouldReset = await this.confirmationModal.show(
+                "Deck Mastered!", 
+                "Congratulations! You've learned all the cards in this deck.\n\nClick OK to automatically reset the deck and start fresh.",
+                'success' // 'success' type usually shows a single confirmation button
+            );
+
+            if (shouldReset) {
+                console.log("VERIFY: [App] handleStartQuiz -> User confirmed. Resetting deck.");
+                // 1. Reset the data
+                this.handleResetDeck(); 
+                
+                // 2. CRITICAL FIX: Ensure we stay on DeckDetail (or go there) to show the new '0 Learned' stats
+                this.state.currentScreen = 'deckDetail'; 
+                this.state.quizInstance = null;
+                
+                // 3. Render the clean slate
+                this.render();
+            }
+            // Exit function. Do NOT proceed to change screen to 'quiz'
+            return;
+        }
+
+        // Only if we have cards, we proceed to the quiz screen
+        this.state.currentScreen = nextScreen;
+        this.render();
     }
 
     /**
