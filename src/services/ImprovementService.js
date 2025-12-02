@@ -151,7 +151,7 @@ Your final response MUST be structured into exactly **two distinct parts**.
 ### Part 1: The Code Artifact
 1. Output the header: \`## 1. Corrected Cards JSON\`
 2. **Open a JSON code block** (\`\`\`json).
-3. Output the raw JSON array (excluding \`review_request\`).
+3. Output the raw JSON array (MANDATORY!: excluding \`review_request\`,  \`reasons\`, \`user_comment\`).
 4. **CLOSE the JSON code block** (\`\`\`) immediately after the array closing bracket.
 
 ### Part 2: The Improvement Report (Markdown Text)

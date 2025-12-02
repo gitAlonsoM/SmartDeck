@@ -1,254 +1,422 @@
 [
   {
-    "cardId": "ti_111",
+    "cardId": "dummy_010",
     "cardType": "flippable",
-    "sideA": "¡Ya está funcionando!",
+    "sideA": "Tenemos expuesto esto, pero se mapea de otra forma.",
     "sideB": [
       {
-        "text": "It is working now!",
-        "audioSrc": "public/data/audio/tech_interview/ti_111_sideB_0.mp3"
+        "text": "We have this exposed, but it maps differently.",
+        "audioSrc": "public/data/audio/dummy/dummy_010_sideB_0.mp3"
       },
       {
-        "text": "It's up and running!",
-        "audioSrc": "public/data/audio/tech_interview/ti_111_sideB_1.mp3"
+        "text": "We have this exposed, but it is mapped in a different way.",
+        "audioSrc": "public/data/audio/dummy/dummy_010_sideB_1.mp3"
       },
       {
-        "text": "It works now!",
-        "audioSrc": "public/data/audio/tech_interview/ti_111_sideB_2.mp3"
+        "text": "This is exposed, but the mapping is done differently.",
+        "audioSrc": "public/data/audio/dummy/dummy_010_sideB_2.mp3"
       },
       {
-        "text": "The system is operational now!",
-        "audioSrc": "public/data/audio/tech_interview/ti_111_sideB_3.mp3"
-      },
-      {
-        "text": "It is already working!",
-        "audioSrc": "public/data/audio/tech_interview/ti_111_sideB_4.mp3"
+        "text": "We have this exposed, but it gets mapped differently.",
+        "audioSrc": "public/data/audio/dummy/dummy_010_sideB_3.mp3"
       }
     ],
-    "note": "[Up and running] is a professional idiom meaning a system is active and functioning correctly.\n\nUse [Already] to emphasize something happened sooner than expected, while [Now] simply marks the current status."
+    "note": "To [Expose] an API/Service means to make it available for connection.\n\nTo [Map] means to connect or associate one data point/path with another.",
+    "review_request": {
+      "reasons": [],
+      "user_comment": "We have this exposed, but it gets mapped differently.  Valida?"
+    }
   },
   {
-    "cardId": "ti_120",
+    "cardId": "dummy_018",
     "cardType": "flippable",
-    "sideA": "Aún no está llegando el campo.",
+    "sideA": "El Proxy Inverso se sitúa entre la red pública y la privada.",
     "sideB": [
       {
-        "text": "The field isn't coming through yet.",
-        "audioSrc": "public/data/audio/tech_interview/ti_120_sideB_0.mp3"
+        "text": "The Reverse Proxy sits between the public network and the private network.",
+        "audioSrc": "public/data/audio/dummy/dummy_018_sideB_0.mp3"
       },
       {
-        "text": "The field is not being received yet.",
-        "audioSrc": "public/data/audio/tech_interview/ti_120_sideB_1.mp3"
+        "text": "The Reverse Proxy is located between the public and private networks.",
+        "audioSrc": "public/data/audio/dummy/dummy_018_sideB_1.mp3"
       },
       {
-        "text": "We aren't getting that field yet.",
-        "audioSrc": "public/data/audio/tech_interview/ti_120_sideB_2.mp3"
+        "text": "The Reverse Proxy stands between the public network and the internal network.",
+        "audioSrc": "public/data/audio/dummy/dummy_018_sideB_2.mp3"
       },
       {
-        "text": "It's not getting the field yet.",
-        "audioSrc": "public/data/audio/tech_interview/ti_120_sideB_3.mp3"
+        "text": "The Reverse Proxy is between the public internet and the intranet.",
+        "audioSrc": "public/data/audio/dummy/dummy_018_sideB_3.mp3"
       }
     ],
-    "note": "[Coming through] is a very common phrasal verb when discussing data streams or API responses.\n\nUse [field] for JSON keys or database columns.\n\n~It's not arriving the field yet~ ('Arrive' is an intransitive verb; you cannot 'arrive something'. Use [getting] or [receiving] instead.)"
+    "note": "[Sits] is a very common technical idiom to describe where a component resides in an architecture.\n\n~...private internet~ (Terminology: The correct term for a private internal network is [Intranet] or [Private Network].)",
+    "review_request": {
+      "reasons": [],
+      "user_comment": "The Reverse Proxy is between the public internet and the private internet. ? Valida?\n\nThe Reverse Proxy is between the public internet and the intranet. Valida?"
+    }
   },
   {
-    "cardId": "ti_124",
+    "cardId": "dummy_033",
     "cardType": "flippable",
-    "sideA": "Hemos tenido algunos problemas con la intermitencia del backend.",
+    "sideA": "El Endpoint es el recurso específico al que apunta la URL.",
     "sideB": [
       {
-        "text": "We've had some issues with backend intermittency.",
-        "audioSrc": "public/data/audio/tech_interview/ti_124_sideB_0.mp3"
+        "text": "The endpoint is the specific resource the URL points to.",
+        "audioSrc": "public/data/audio/dummy/dummy_033_sideB_0.mp3"
       },
       {
-        "text": "We've been experiencing intermittent backend issues.",
-        "audioSrc": "public/data/audio/tech_interview/ti_124_sideB_1.mp3"
+        "text": "The endpoint represents the specific resource targeted by the URL.",
+        "audioSrc": "public/data/audio/dummy/dummy_033_sideB_1.mp3"
       },
       {
-        "text": "We have encountered some flakiness in the backend.",
-        "audioSrc": "public/data/audio/tech_interview/ti_124_sideB_2.mp3"
-      },
-      {
-        "text": "We've been facing some intermittent issues with the backend.",
-        "audioSrc": "public/data/audio/tech_interview/ti_124_sideB_3.mp3"
-      },
-      {
-        "text": "We've been facing some issues with intermittency in the backend.",
-        "audioSrc": "public/data/audio/tech_interview/ti_124_sideB_4.mp3"
+        "text": "The endpoint is the specific resource the URL is pointing at.",
+        "audioSrc": "public/data/audio/dummy/dummy_033_sideB_2.mp3"
       }
     ],
-    "note": "[Flakiness] or [Flaky] is a very common developer term for something that works sometimes but fails others (intermittent).\n\nStructure: [We've had] (Present Perfect) connects past issues to the present moment."
+    "note": "**[122]**\n\n[Points to] is the standard phrasal verb for direction/reference in tech.\n\n~...resource to aim the URL~ (Incorrect phrasing: You [aim at] a target. Better: 'The resource at which the URL is aimed'.)\n\n~...resource to address the URL~ (Incorrect relation: The URL addresses the resource, not the other way around.)",
+    "review_request": {
+      "reasons": [],
+      "user_comment": "The endpoint is the specific resource to aim the URL. Valida?\n\nThe endpoint is the specific resource to address the URL. Valida?"
+    }
   },
   {
-    "cardId": "ti_121",
+    "cardId": "dummy_029",
     "cardType": "flippable",
-    "sideA": "Aún no se ha actualizado.",
+    "sideA": "La inicialización habilita la visibilidad de los datos según el usuario.",
     "sideB": [
       {
-        "text": "It hasn't updated yet.",
-        "audioSrc": "public/data/audio/tech_interview/ti_121_sideB_0.mp3"
+        "text": "Initialization enables data visibility according to the user.",
+        "audioSrc": "public/data/audio/dummy/dummy_029_sideB_0.mp3"
       },
       {
-        "text": "It hasn't been updated yet.",
-        "audioSrc": "public/data/audio/tech_interview/ti_121_sideB_1.mp3"
+        "text": "Initialization allows data visibility based on the user.",
+        "audioSrc": "public/data/audio/dummy/dummy_029_sideB_1.mp3"
       },
       {
-        "text": "The update hasn't gone through yet.",
-        "audioSrc": "public/data/audio/tech_interview/ti_121_sideB_2.mp3"
+        "text": "Initialization turns on data visibility depending on the user.",
+        "audioSrc": "public/data/audio/dummy/dummy_029_sideB_2.mp3"
       },
       {
-        "text": "It's not updated yet.",
-        "audioSrc": "public/data/audio/tech_interview/ti_121_sideB_3.mp3"
+        "text": "Initializing enables data visibility according to the user.",
+        "audioSrc": "public/data/audio/dummy/dummy_029_sideB_3.mp3"
       }
     ],
-    "note": "Use the Present Perfect [hasn't updated] for actions expecting completion.\n\n[Gone through] implies the process was triggered but didn't finish."
+    "note": "[Enable] is a key technical verb meaning to activate or make possible.\n\n[According to] or [Based on] are correct ways to express dependency.",
+    "review_request": {
+      "reasons": [],
+      "user_comment": "Initializing enables data visibility according to the user. Valida?. Se puede usar Initializing. ? "
+    }
   },
   {
-    "cardId": "ti_107",
+    "cardId": "dummy_008",
     "cardType": "flippable",
-    "sideA": "¿Podrían avisarme cuando desplieguen el paquete 'purple'?",
+    "sideA": "Tenemos por un lado camel case, y por otro, snake case.",
     "sideB": [
       {
-        "text": "Could you guys let me know when you deploy the purple package?",
-        "audioSrc": "public/data/audio/tech_interview/ti_107_sideB_0.mp3"
+        "text": "On one hand we have camel case, and on the other, snake case.",
+        "audioSrc": "public/data/audio/dummy/dummy_008_sideB_0.mp3"
       },
       {
-        "text": "Could you notify me when the purple package is deployed?",
-        "audioSrc": "public/data/audio/tech_interview/ti_107_sideB_1.mp3"
+        "text": "We have camel case on one side, and snake case on the other.",
+        "audioSrc": "public/data/audio/dummy/dummy_008_sideB_1.mp3"
       },
       {
-        "text": "Please let me know once the purple package deployment is done.",
-        "audioSrc": "public/data/audio/tech_interview/ti_107_sideB_2.mp3"
+        "text": "There is camel case on one hand, and snake case on the other.",
+        "audioSrc": "public/data/audio/dummy/dummy_008_sideB_2.mp3"
       }
     ],
-    "note": "Use [Let me know] as a friendly, standard way to say 'avisar'.\n\n[Deploy] is the standard verb for releasing software.\n\n~...deploy the package in purple~ (Incorrect phrasing: 'Purple' is the name of the package, so it functions as an adjective: [Purple package]. 'In purple' suggests physical color.)"
+    "note": "Use [On one hand... and on the other] to contrast two distinct situations.\n\n[Camel case]: `myVariable`\n[Snake case]: `my_variable`\n\n~We have on one side camel case...~ (Word order: It is more natural to say 'We have camel case on one side'.)\n\n~...on one side... on the other hand~ (Idiom consistency: Use [On one hand ... on the other hand] OR [On one side ... on the other side]. Do not mix them.)",
+    "review_request": {
+      "reasons": [],
+      "user_comment": "we have on one side, camel case, and on the other hand, snake case. Valida?. \n\nwe have on one side, camel case, and on the other, snake case. Valida?. \nwe have on one side, camel case, and on the other hand, snake case. Valida?. \n\nwe have on one hand, camel case, and on the other, snake case. Valida?. \n"
+    }
   },
   {
-    "cardId": "ti_122",
+    "cardId": "dummy_014",
     "cardType": "flippable",
-    "sideA": "¿Desde qué día te ocurre eso?",
+    "sideA": "Como no se está mapeando, el servidor no puede enrutar la solicitud.",
     "sideB": [
       {
-        "text": "Since what day has this been happening to you?",
-        "audioSrc": "public/data/audio/tech_interview/ti_122_sideB_0.mp3"
+        "text": "Since it is not being mapped, the server cannot route the request.",
+        "audioSrc": "public/data/audio/dummy/dummy_014_sideB_0.mp3"
       },
       {
-        "text": "How long has this been happening?",
-        "audioSrc": "public/data/audio/tech_interview/ti_122_sideB_1.mp3"
+        "text": "Because it isn't being mapped, the server can't route the request.",
+        "audioSrc": "public/data/audio/dummy/dummy_014_sideB_1.mp3"
       },
       {
-        "text": "When did this start happening?",
-        "audioSrc": "public/data/audio/tech_interview/ti_122_sideB_2.mp3"
+        "text": "As it is not mapped, the server is unable to route the request.",
+        "audioSrc": "public/data/audio/dummy/dummy_014_sideB_2.mp3"
       },
       {
-        "text": "Since what day has this happened to you?",
-        "audioSrc": "public/data/audio/tech_interview/ti_122_sideB_3.mp3"
+        "text": "Since it is not mapped, the server cannot route the request.",
+        "audioSrc": "public/data/audio/dummy/dummy_014_sideB_3.mp3"
       }
     ],
-    "note": "[How long] is the most natural way to ask about duration in English.\n\n[Since what day] is grammatically correct but sounds more formal or specific to a ticket report.\n\n~Since what day did that happen to you?~ (Incorrect Grammar: [Since] usually requires the Present Perfect tense because it connects past to present. Use [When] with simple past.)"
+    "note": "[Since] and [As] are strong alternatives to 'Because' when explaining technical causes.\n\n[Route] (verb) means to send data to a specific destination.\n\n~...can not enroute...~ (Incorrect vocabulary: [En route] is an adverb meaning 'on the way'. The verb is [Route].)",
+    "review_request": {
+      "reasons": [],
+      "user_comment": "Since it is not mapped, the server can not route the request. Valida?\n\nSince it is not mapped, the server can not enroute the request. Valida?"
+    }
   },
   {
-    "cardId": "ti_058",
+    "cardId": "dummy_034",
     "cardType": "flippable",
-    "sideA": "Arreglé la query para que extraiga datos de Order Management.",
+    "sideA": "Endpoint y URL a menudo se usan de forma intercambiable, pero no son lo mismo.",
     "sideB": [
       {
-        "text": "I fixed the query so it pulls from Order Management.",
-        "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_0.mp3"
+        "text": "Endpoint and URL are often used interchangeably, but they are not the same.",
+        "audioSrc": "public/data/audio/dummy/dummy_034_sideB_0.mp3"
       },
       {
-        "text": "I corrected the SQL to fetch data from the Order Management tables.",
-        "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_1.mp3"
+        "text": "People often use Endpoint and URL interchangeably, but they aren't the same.",
+        "audioSrc": "public/data/audio/dummy/dummy_034_sideB_1.mp3"
       },
       {
-        "text": "I adjusted the query to retrieve information from OM.",
-        "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_2.mp3"
+        "text": "Endpoint and URL are frequently used interchangeably, yet they differ.",
+        "audioSrc": "public/data/audio/dummy/dummy_034_sideB_2.mp3"
       },
       {
-        "text": "I fixed the query to get data from Order Management.",
-        "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_3.mp3"
-      },
-      {
-        "text": "I fixed the query to retrieve data from Order Management.",
-        "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_4.mp3"
-      },
-      {
-        "text": "I fixed the query to extract data from Order Management.",
-        "audioSrc": "public/data/audio/tech_interview/ti_058_sideB_5.mp3"
+        "text": "Endpoint and URL are often used in an interchangeable way, but they are not the same.",
+        "audioSrc": "public/data/audio/dummy/dummy_034_sideB_3.mp3"
       }
     ],
-    "note": "Verbs for data: [Pull], [Fetch], [Retrieve], or [Extract].\n\n[Fixed] implies repairing code that was broken or incorrect."
+    "note": "**[122]**\n\n[Interchangeably] means switching one for the other.",
+    "review_request": {
+      "reasons": [],
+      "user_comment": "Endpoint and URL are often used in an interchangeable way, but they are not the same. Valida?"
+    }
   },
   {
-    "cardId": "ti_123",
+    "cardId": "dummy_007",
     "cardType": "flippable",
-    "sideA": "Estamos teniendo problemas con el proxy.",
+    "sideA": "Hay una diferencia en las convenciones de nombres.",
     "sideB": [
       {
-        "text": "We are having issues with the proxy.",
-        "audioSrc": "public/data/audio/tech_interview/ti_123_sideB_0.mp3"
+        "text": "There is a difference in the naming conventions.",
+        "audioSrc": "public/data/audio/dummy/dummy_007_sideB_0.mp3"
       },
       {
-        "text": "We're experiencing problems with the proxy server.",
-        "audioSrc": "public/data/audio/tech_interview/ti_123_sideB_1.mp3"
+        "text": "There's a discrepancy in the naming conventions.",
+        "audioSrc": "public/data/audio/dummy/dummy_007_sideB_1.mp3"
       },
       {
-        "text": "We are facing some trouble with the proxy.",
-        "audioSrc": "public/data/audio/tech_interview/ti_123_sideB_2.mp3"
-      },
-      {
-        "text": "We are having trouble with the proxy.",
-        "audioSrc": "public/data/audio/tech_interview/ti_123_sideB_3.mp3"
+        "text": "The naming conventions are different.",
+        "audioSrc": "public/data/audio/dummy/dummy_007_sideB_2.mp3"
       }
     ],
-    "note": "[Experiencing] is a professional verb for status reports.\n\n[Issues] is slightly softer and more common in tech than 'problems'."
+    "note": "[Naming convention] is the standard term for rules like CamelCase, snake_case, etc.\n\n[Discrepancy] implies a difference that shouldn't exist or causes issues.\n\n~...name conventions~ (Standard term: The correct technical term is [Naming conventions].)",
+    "review_request": {
+      "reasons": [],
+      "user_comment": "There is a difference in the name conventions. Valida?"
+    }
   },
   {
-    "cardId": "ti_119",
+    "cardId": "dummy_006",
     "cardType": "flippable",
-    "sideA": "No directamente uno a uno.",
+    "sideA": "Tenemos el error 404 cuando enviamos la petición al endpoint.",
     "sideB": [
       {
-        "text": "Not directly one-on-one.",
-        "audioSrc": "public/data/audio/tech_interview/ti_119_sideB_0.mp3"
+        "text": "We get a 404 error when we send the request to the endpoint.",
+        "audioSrc": "public/data/audio/dummy/dummy_006_sideB_0.mp3"
       },
       {
-        "text": "It wasn't a direct one-on-one interaction.",
-        "audioSrc": "public/data/audio/tech_interview/ti_119_sideB_1.mp3"
+        "text": "We are getting a 404 error when sending the request to the endpoint.",
+        "audioSrc": "public/data/audio/dummy/dummy_006_sideB_1.mp3"
       },
       {
-        "text": "It isn't directly a one-on-one meeting.",
-        "audioSrc": "public/data/audio/tech_interview/ti_119_sideB_2.mp3"
+        "text": "We encounter a 404 error when we hit the endpoint.",
+        "audioSrc": "public/data/audio/dummy/dummy_006_sideB_2.mp3"
+      },
+      {
+        "text": "We have a 404 error when we send a request to the endpoint.",
+        "audioSrc": "public/data/audio/dummy/dummy_006_sideB_3.mp3"
       }
     ],
-    "note": "[One-on-one] (often written 1:1) refers to a meeting between two people.\n\n~Not directly one by one~ ('One by one' means sequentially, like a queue. 'One on one' means interaction between two parties.)"
+    "note": "[Hit] is common technical slang for sending a request to an endpoint.\n\n[Endpoint] is the specific URL where an API service can be accessed.",
+    "review_request": {
+      "reasons": [],
+      "user_comment": "We have a 404 error when we send a request to the endpoint.valida?"
+    }
   },
   {
-    "cardId": "ti_060",
+    "cardId": "dummy_025",
     "cardType": "flippable",
-    "sideA": "Si necesito más información, como pasos o capturas, le pregunto a quien reportó por Teams de inmediato.",
+    "sideA": "Se delega con el orquestador interno.",
     "sideB": [
       {
-        "text": "If I need more info—like steps or screenshots—I ask the reporter on Teams right away.",
-        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_0.mp3"
+        "text": "It is delegated to the internal orchestrator.",
+        "audioSrc": "public/data/audio/dummy/dummy_025_sideB_0.mp3"
       },
       {
-        "text": "If I require further details, such as reproduction steps, I contact the reporter immediately via Teams.",
-        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_1.mp3"
+        "text": "It's delegated to the internal orchestrator.",
+        "audioSrc": "public/data/audio/dummy/dummy_025_sideB_1.mp3"
       },
       {
-        "text": "When I need more context, like screenshots, I reach out to the reporter on Teams instantly.",
-        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_2.mp3"
-      },
-      {
-        "text": "If I need more info—like steps or screenshots—I ask the one who reported it on Teams.",
-        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_3.mp3"
-      },
-      {
-        "text": "If I need more info—like steps or screenshots—I ask who reported it on Teams.",
-        "audioSrc": "public/data/audio/tech_interview/ti_060_sideB_4.mp3"
+        "text": "The task is delegated to the internal orchestrator.",
+        "audioSrc": "public/data/audio/dummy/dummy_025_sideB_2.mp3"
       }
     ],
-    "note": "[Reporter] refers to the person who created the ticket/bug report.\n\n[Right away] or [Instantly] emphasizes your responsiveness.\n\n~I ask to who reported it...~ (Incorrect grammar: You 'ask someone', you do not 'ask to someone'.)\n\n~...I ask to the one who reported it...~ (Same error: The verb [ask] takes a direct object. Correct: 'I ask the one...' or 'I ask the person...')"
+    "note": "[To delegate] means to assign responsibility or authority.\n\n[Orchestrator] is a system that manages and coordinates automated tasks/services.\n\n~It is delegated with...~ (Incorrect preposition: You delegate a task [to] a system or person.)",
+    "review_request": {
+      "reasons": [],
+      "user_comment": "It is delegated with the internal orchestrator. Valida?"
+    }
+  },
+  {
+    "cardId": "dummy_017",
+    "cardType": "flippable",
+    "sideA": "El Proxy Inverso es un servicio intermediario.",
+    "sideB": [
+      {
+        "text": "The Reverse Proxy is an intermediary service.",
+        "audioSrc": "public/data/audio/dummy/dummy_017_sideB_0.mp3"
+      },
+      {
+        "text": "The Reverse Proxy acts as an intermediary service.",
+        "audioSrc": "public/data/audio/dummy/dummy_017_sideB_1.mp3"
+      },
+      {
+        "text": "The Reverse Proxy serves as an intermediary.",
+        "audioSrc": "public/data/audio/dummy/dummy_017_sideB_2.mp3"
+      },
+      {
+        "text": "The Reverse Proxy is a Middleware service.",
+        "audioSrc": "public/data/audio/dummy/dummy_017_sideB_3.mp3"
+      }
+    ],
+    "note": "A [Reverse Proxy] sits in front of one or more web servers, intercepting requests from clients.",
+    "review_request": {
+      "reasons": [],
+      "user_comment": "The Reverse Proxy is a Middleware service. Valida?? "
+    }
+  },
+  {
+    "cardId": "dummy_036",
+    "cardType": "flippable",
+    "sideA": "En la ruta de la URL está incluido el endpoint.",
+    "sideB": [
+      {
+        "text": "The endpoint is included in the URL path.",
+        "audioSrc": "public/data/audio/dummy/dummy_036_sideB_0.mp3"
+      },
+      {
+        "text": "The URL path includes the endpoint.",
+        "audioSrc": "public/data/audio/dummy/dummy_036_sideB_1.mp3"
+      },
+      {
+        "text": "The endpoint is part of the URL path.",
+        "audioSrc": "public/data/audio/dummy/dummy_036_sideB_2.mp3"
+      }
+    ],
+    "note": "**[122]**\n\nTechnically, the endpoint is often the final segment of the path.\n\n~In the URL path is included the endpoint~ (Syntax error: English word order is Subject + Verb. Better: 'The endpoint is included in the URL path'.)",
+    "review_request": {
+      "reasons": [],
+      "user_comment": "In the URL path is included the endpoint.  Valida? "
+    }
+  },
+  {
+    "cardId": "dummy_012",
+    "cardType": "flippable",
+    "sideA": "Debe haber una capa intermedia donde ocurre una traducción de nombres.",
+    "sideB": [
+      {
+        "text": "There must be a middleware layer where name translation occurs.",
+        "audioSrc": "public/data/audio/dummy/dummy_012_sideB_0.mp3"
+      },
+      {
+        "text": "There has to be a middleware layer where a name translation takes place.",
+        "audioSrc": "public/data/audio/dummy/dummy_012_sideB_1.mp3"
+      },
+      {
+        "text": "There must be an intermediate layer where names are translated.",
+        "audioSrc": "public/data/audio/dummy/dummy_012_sideB_2.mp3"
+      },
+      {
+        "text": "There must be a middleware layer where the name translation happens.",
+        "audioSrc": "public/data/audio/dummy/dummy_012_sideB_3.mp3"
+      }
+    ],
+    "note": "In this context, [Translation] refers to transforming data formats or naming conventions (e.g., from CamelCase to SnakeCase).",
+    "review_request": {
+      "reasons": [],
+      "user_comment": "There must be a middleware layer where the name translation happens. Valida? "
+    }
+  },
+  {
+    "cardId": "dummy_016",
+    "cardType": "flippable",
+    "sideA": "El mapeo permite tener searchKeyword…",
+    "sideB": [
+      {
+        "text": "The mapping allows having searchKeyword...",
+        "audioSrc": "public/data/audio/dummy/dummy_016_sideB_0.mp3"
+      },
+      {
+        "text": "The mapping enables searchKeyword...",
+        "audioSrc": "public/data/audio/dummy/dummy_016_sideB_1.mp3"
+      },
+      {
+        "text": "The mapping allows for searchKeyword...",
+        "audioSrc": "public/data/audio/dummy/dummy_016_sideB_2.mp3"
+      }
+    ],
+    "note": "[Allows] or [Enables] are standard verbs to describe what a feature permits.\n\n~The mapping permit~ (Grammar: 'Permit' is more formal/legal; [Allow] is better for software logic.)\n\n~The map allows...~ (Precision: [Mapping] refers to the process or relationship. [Map] usually refers to the specific data structure.)",
+    "review_request": {
+      "reasons": [],
+      "user_comment": "The map allows having searchKeyword. Valida?"
+    }
+  },
+  {
+    "cardId": "dummy_013",
+    "cardType": "flippable",
+    "sideA": "Existe una configuración de mapeo desconocida para nosotros.",
+    "sideB": [
+      {
+        "text": "There is a mapping configuration unknown to us.",
+        "audioSrc": "public/data/audio/dummy/dummy_013_sideB_0.mp3"
+      },
+      {
+        "text": "There is a mapping configuration we are not aware of.",
+        "audioSrc": "public/data/audio/dummy/dummy_013_sideB_1.mp3"
+      },
+      {
+        "text": "A mapping config exists that we don't know about.",
+        "audioSrc": "public/data/audio/dummy/dummy_013_sideB_2.mp3"
+      }
+    ],
+    "note": "[Unknown to us] is a formal way to say 'we don't know it'.\n\n[We are not aware of] is professional and very common in meetings.\n\n~There is a unknown...~ (Grammar: Use [an] before vowel sounds like 'unknown'.)\n\n~...configuration to us~ (Word order: Adjectives modifying the noun should be close. Better: 'A mapping configuration [unknown to us]'.)",
+    "review_request": {
+      "reasons": [],
+      "user_comment": "There is a unknown mapping configuration to us. Valida?\n\nThere is a unknown mapping configuration for us. Valida?"
+    }
+  },
+  {
+    "cardId": "dummy_001",
+    "cardType": "flippable",
+    "sideA": "No sabemos donde establecer el enrutamiento.",
+    "sideB": [
+      {
+        "text": "We don't know where to set the routing.",
+        "audioSrc": "public/data/audio/dummy/dummy_001_sideB_0.mp3"
+      },
+      {
+        "text": "We aren't sure where to establish the routing.",
+        "audioSrc": "public/data/audio/dummy/dummy_001_sideB_1.mp3"
+      },
+      {
+        "text": "We don't know where to define the routing.",
+        "audioSrc": "public/data/audio/dummy/dummy_001_sideB_2.mp3"
+      },
+      {
+        "text": "We don't know where to set the route.",
+        "audioSrc": "public/data/audio/dummy/dummy_001_sideB_3.mp3"
+      }
+    ],
+    "note": "[Routing] refers to the process of selecting a path for traffic in a network.\n\n~We don't know where put the routing~ (Grammar: 'Put' is too generic here. Use technical verbs like [set], [establish], or [configure].)",
+    "review_request": {
+      "reasons": [],
+      "user_comment": "We don't know where to set the route.  Valida?. \n\n"
+    }
   }
 ]

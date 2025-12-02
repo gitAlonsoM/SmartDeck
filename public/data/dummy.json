@@ -20,6 +20,10 @@
         {
           "text": "We don't know where to define the routing.",
           "audioSrc": "public/data/audio/dummy/dummy_001_sideB_2.mp3"
+        },
+        {
+          "text": "We don't know where to set the route.",
+          "audioSrc": "public/data/audio/dummy/dummy_001_sideB_3.mp3"
         }
       ],
       "note": "[Routing] refers to the process of selecting a path for traffic in a network.\n\n~We don't know where put the routing~ (Grammar: 'Put' is too generic here. Use technical verbs like [set], [establish], or [configure].)"
@@ -120,6 +124,10 @@
         {
           "text": "We encounter a 404 error when we hit the endpoint.",
           "audioSrc": "public/data/audio/dummy/dummy_006_sideB_2.mp3"
+        },
+        {
+          "text": "We have a 404 error when we send a request to the endpoint.",
+          "audioSrc": "public/data/audio/dummy/dummy_006_sideB_3.mp3"
         }
       ],
       "note": "[Hit] is common technical slang for sending a request to an endpoint.\n\n[Endpoint] is the specific URL where an API service can be accessed."
@@ -142,7 +150,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_007_sideB_2.mp3"
         }
       ],
-      "note": "[Naming convention] is the standard term for rules like CamelCase, snake_case, etc.\n\n[Discrepancy] implies a difference that shouldn't exist or causes issues."
+      "note": "[Naming convention] is the standard term for rules like CamelCase, snake_case, etc.\n\n[Discrepancy] implies a difference that shouldn't exist or causes issues.\n\n~...name conventions~ (Standard term: The correct technical term is [Naming conventions].)"
     },
     {
       "cardId": "dummy_008",
@@ -162,7 +170,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_008_sideB_2.mp3"
         }
       ],
-      "note": "Use [On one hand... and on the other] to contrast two distinct situations.\n\n[Camel case]: `myVariable`\n[Snake case]: `my_variable`"
+      "note": "Use [On one hand... and on the other] to contrast two distinct situations.\n\n[Camel case]: `myVariable`\n[Snake case]: `my_variable`\n\n~We have on one side camel case...~ (Word order: It is more natural to say 'We have camel case on one side'.)\n\n~...on one side... on the other hand~ (Idiom consistency: Use [On one hand ... on the other hand] OR [On one side ... on the other side]. Do not mix them.)"
     },
     {
       "cardId": "dummy_009",
@@ -200,6 +208,10 @@
         {
           "text": "This is exposed, but the mapping is done differently.",
           "audioSrc": "public/data/audio/dummy/dummy_010_sideB_2.mp3"
+        },
+        {
+          "text": "We have this exposed, but it gets mapped differently.",
+          "audioSrc": "public/data/audio/dummy/dummy_010_sideB_3.mp3"
         }
       ],
       "note": "To [Expose] an API/Service means to make it available for connection.\n\nTo [Map] means to connect or associate one data point/path with another."
@@ -240,6 +252,10 @@
         {
           "text": "There must be an intermediate layer where names are translated.",
           "audioSrc": "public/data/audio/dummy/dummy_012_sideB_2.mp3"
+        },
+        {
+          "text": "There must be a middleware layer where the name translation happens.",
+          "audioSrc": "public/data/audio/dummy/dummy_012_sideB_3.mp3"
         }
       ],
       "note": "In this context, [Translation] refers to transforming data formats or naming conventions (e.g., from CamelCase to SnakeCase)."
@@ -262,7 +278,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_013_sideB_2.mp3"
         }
       ],
-      "note": "[Unknown to us] is a formal way to say 'we don't know it'.\n\n[We are not aware of] is professional and very common in meetings."
+      "note": "[Unknown to us] is a formal way to say 'we don't know it'.\n\n[We are not aware of] is professional and very common in meetings.\n\n~There is a unknown...~ (Grammar: Use [an] before vowel sounds like 'unknown'.)\n\n~...configuration to us~ (Word order: Adjectives modifying the noun should be close. Better: 'A mapping configuration [unknown to us]'.)"
     },
     {
       "cardId": "dummy_014",
@@ -280,9 +296,13 @@
         {
           "text": "As it is not mapped, the server is unable to route the request.",
           "audioSrc": "public/data/audio/dummy/dummy_014_sideB_2.mp3"
+        },
+        {
+          "text": "Since it is not mapped, the server cannot route the request.",
+          "audioSrc": "public/data/audio/dummy/dummy_014_sideB_3.mp3"
         }
       ],
-      "note": "[Since] and [As] are strong alternatives to 'Because' when explaining technical causes.\n\n[Route] (verb) means to send data to a specific destination."
+      "note": "[Since] and [As] are strong alternatives to 'Because' when explaining technical causes.\n\n[Route] (verb) means to send data to a specific destination.\n\n~...can not enroute...~ (Incorrect vocabulary: [En route] is an adverb meaning 'on the way'. The verb is [Route].)"
     },
     {
       "cardId": "dummy_015",
@@ -322,7 +342,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_016_sideB_2.mp3"
         }
       ],
-      "note": "[Allows] or [Enables] are standard verbs to describe what a feature permits.\n\n~The mapping permit~ (Grammar: 'Permit' is more formal/legal; [Allow] is better for software logic.)"
+      "note": "[Allows] or [Enables] are standard verbs to describe what a feature permits.\n\n~The mapping permit~ (Grammar: 'Permit' is more formal/legal; [Allow] is better for software logic.)\n\n~The map allows...~ (Precision: [Mapping] refers to the process or relationship. [Map] usually refers to the specific data structure.)"
     },
     {
       "cardId": "dummy_017",
@@ -340,6 +360,10 @@
         {
           "text": "The Reverse Proxy serves as an intermediary.",
           "audioSrc": "public/data/audio/dummy/dummy_017_sideB_2.mp3"
+        },
+        {
+          "text": "The Reverse Proxy is a Middleware service.",
+          "audioSrc": "public/data/audio/dummy/dummy_017_sideB_3.mp3"
         }
       ],
       "note": "A [Reverse Proxy] sits in front of one or more web servers, intercepting requests from clients."
@@ -360,9 +384,13 @@
         {
           "text": "The Reverse Proxy stands between the public network and the internal network.",
           "audioSrc": "public/data/audio/dummy/dummy_018_sideB_2.mp3"
+        },
+        {
+          "text": "The Reverse Proxy is between the public internet and the intranet.",
+          "audioSrc": "public/data/audio/dummy/dummy_018_sideB_3.mp3"
         }
       ],
-      "note": "[Sits] is a very common technical idiom to describe where a component resides in an architecture."
+      "note": "[Sits] is a very common technical idiom to describe where a component resides in an architecture.\n\n~...private internet~ (Terminology: The correct term for a private internal network is [Intranet] or [Private Network].)"
     },
     {
       "cardId": "dummy_019",
@@ -502,7 +530,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_025_sideB_2.mp3"
         }
       ],
-      "note": "[To delegate] means to assign responsibility or authority.\n\n[Orchestrator] is a system that manages and coordinates automated tasks/services."
+      "note": "[To delegate] means to assign responsibility or authority.\n\n[Orchestrator] is a system that manages and coordinates automated tasks/services.\n\n~It is delegated with...~ (Incorrect preposition: You delegate a task [to] a system or person.)"
     },
     {
       "cardId": "dummy_026",
@@ -580,6 +608,10 @@
         {
           "text": "Initialization turns on data visibility depending on the user.",
           "audioSrc": "public/data/audio/dummy/dummy_029_sideB_2.mp3"
+        },
+        {
+          "text": "Initializing enables data visibility according to the user.",
+          "audioSrc": "public/data/audio/dummy/dummy_029_sideB_3.mp3"
         }
       ],
       "note": "[Enable] is a key technical verb meaning to activate or make possible.\n\n[According to] or [Based on] are correct ways to express dependency."
@@ -662,7 +694,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_033_sideB_2.mp3"
         }
       ],
-      "note": "**[122]**\n\n[Points to] is the standard phrasal verb for direction/reference in tech."
+      "note": "**[122]**\n\n[Points to] is the standard phrasal verb for direction/reference in tech.\n\n~...resource to aim the URL~ (Incorrect phrasing: You [aim at] a target. Better: 'The resource at which the URL is aimed'.)\n\n~...resource to address the URL~ (Incorrect relation: The URL addresses the resource, not the other way around.)"
     },
     {
       "cardId": "dummy_034",
@@ -680,6 +712,10 @@
         {
           "text": "Endpoint and URL are frequently used interchangeably, yet they differ.",
           "audioSrc": "public/data/audio/dummy/dummy_034_sideB_2.mp3"
+        },
+        {
+          "text": "Endpoint and URL are often used in an interchangeable way, but they are not the same.",
+          "audioSrc": "public/data/audio/dummy/dummy_034_sideB_3.mp3"
         }
       ],
       "note": "**[122]**\n\n[Interchangeably] means switching one for the other."
@@ -722,7 +758,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_036_sideB_2.mp3"
         }
       ],
-      "note": "**[122]**\n\nTechnically, the endpoint is often the final segment of the path."
+      "note": "**[122]**\n\nTechnically, the endpoint is often the final segment of the path.\n\n~In the URL path is included the endpoint~ (Syntax error: English word order is Subject + Verb. Better: 'The endpoint is included in the URL path'.)"
     }
   ]
 }
