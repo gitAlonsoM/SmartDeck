@@ -1539,6 +1539,618 @@
         }
       ],
       "note": "[GUI] (Graphical User Interface) is the visual component of software.\n\n~...without a grafical interface~ (Spelling: The correct spelling is [graphical], with 'ph' instead of 'f'.)"
+    },
+    {
+      "cardId": "dummy_072",
+      "cardType": "flippable",
+      "sideA": "¿Qué se supone que hacen?",
+      "sideB": [
+        {
+          "text": "What are they supposed to do?",
+          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_0.mp3"
+        },
+        {
+          "text": "What is their supposed function?",
+          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_1.mp3"
+        },
+        {
+          "text": "What are they meant to do?",
+          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_2.mp3"
+        }
+      ],
+      "note": "[Be supposed to] implies an expectation, duty, or intended function."
+    },
+    {
+      "cardId": "dummy_073",
+      "cardType": "flippable",
+      "sideA": "Una vez que resolvamos el problema de la API, podremos crear un nuevo release.",
+      "sideB": [
+        {
+          "text": "Once we resolve the API issue, we can create a new release.",
+          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_0.mp3"
+        },
+        {
+          "text": "When the new API problem is resolved, we will be able to create a new release.",
+          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_1.mp3"
+        },
+        {
+          "text": "As soon as we fix the API problem, we can make a new release.",
+          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_2.mp3"
+        }
+      ],
+      "note": "[Once] indicates that one event must strictly finish before the other starts.\n\n[Release] is the standard term for a software deployment package."
+    },
+    {
+      "cardId": "dummy_074",
+      "cardType": "flippable",
+      "sideA": "Dame un día para investigar y me pondré en contacto contigo.",
+      "sideB": [
+        {
+          "text": "Give me a day to dig around and I will get back to you.",
+          "audioSrc": "public/data/audio/dummy/dummy_074_sideB_0.mp3"
+        },
+        {
+          "text": "Give me a day to investigate and I'll contact you.",
+          "audioSrc": "public/data/audio/dummy/dummy_074_sideB_1.mp3"
+        },
+        {
+          "text": "Allow me a day to look into it and I will get back to you.",
+          "audioSrc": "public/data/audio/dummy/dummy_074_sideB_2.mp3"
+        }
+      ],
+      "note": "[Dig around] is a casual phrasal verb often used for investigating code or logs.\n\n[Get back to you] is the standard business idiom for following up on a topic."
+    },
+    {
+      "cardId": "dummy_075",
+      "cardType": "flippable",
+      "sideA": "El servidor Linux aloja el Oracle WebLogic Server.",
+      "sideB": [
+        {
+          "text": "The Linux server hosts the Oracle WebLogic Server.",
+          "audioSrc": "public/data/audio/dummy/dummy_075_sideB_0.mp3"
+        },
+        {
+          "text": "The Oracle WebLogic Server is hosted on the Linux server.",
+          "audioSrc": "public/data/audio/dummy/dummy_075_sideB_1.mp3"
+        },
+        {
+          "text": "The Linux server houses the Oracle WebLogic Server.",
+          "audioSrc": "public/data/audio/dummy/dummy_075_sideB_2.mp3"
+        }
+      ],
+      "note": "To [Host] means to store and serve an application or service."
+    },
+    {
+      "cardId": "dummy_076",
+      "cardType": "flippable",
+      "sideA": "Él me dijo que no venga.",
+      "sideB": [
+        {
+          "text": "He told me not to come.",
+          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_0.mp3"
+        },
+        {
+          "text": "He said not to come.",
+          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_1.mp3"
+        },
+        {
+          "text": "He told me I shouldn't come.",
+          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_2.mp3"
+        }
+      ],
+      "note": "**Reported Speech Command**: Subject + told + object + [not to + verb].\n\n~He said me...~ (Grammar: You cannot say 'said me'. Use [He told me] or [He said to me].)"
+    },
+    {
+      "cardId": "dummy_077",
+      "cardType": "flippable",
+      "sideA": "Él me dijo que venga.",
+      "sideB": [
+        {
+          "text": "He told me to come.",
+          "audioSrc": "public/data/audio/dummy/dummy_077_sideB_0.mp3"
+        },
+        {
+          "text": "He asked me to come.",
+          "audioSrc": "public/data/audio/dummy/dummy_077_sideB_1.mp3"
+        },
+        {
+          "text": "He said to come.",
+          "audioSrc": "public/data/audio/dummy/dummy_077_sideB_2.mp3"
+        }
+      ],
+      "note": "**Reported Speech Command**: Subject + told + object + [to + verb]."
+    },
+    {
+      "cardId": "dummy_078",
+      "cardType": "flippable",
+      "sideA": "Este es el resultado esperado.",
+      "sideB": [
+        {
+          "text": "This is the expected result.",
+          "audioSrc": "public/data/audio/dummy/dummy_078_sideB_0.mp3"
+        },
+        {
+          "text": "This is the anticipated outcome.",
+          "audioSrc": "public/data/audio/dummy/dummy_078_sideB_1.mp3"
+        },
+        {
+          "text": "This is the result we were expecting.",
+          "audioSrc": "public/data/audio/dummy/dummy_078_sideB_2.mp3"
+        }
+      ],
+      "note": "[Expected result] is standard QA terminology for defining pass conditions in test cases."
+    },
+    {
+      "cardId": "dummy_079",
+      "cardType": "flippable",
+      "sideA": "Esto tomará harto tiempo.",
+      "sideB": [
+        {
+          "text": "This will take a long time.",
+          "audioSrc": "public/data/audio/dummy/dummy_079_sideB_0.mp3"
+        },
+        {
+          "text": "This is going to take a lot of time.",
+          "audioSrc": "public/data/audio/dummy/dummy_079_sideB_1.mp3"
+        },
+        {
+          "text": "This will take quite a while.",
+          "audioSrc": "public/data/audio/dummy/dummy_079_sideB_2.mp3"
+        }
+      ],
+      "note": "[Quite a while] is a common idiom for a significant duration."
+    },
+    {
+      "cardId": "dummy_080",
+      "cardType": "flippable",
+      "sideA": "Esto tomará poco tiempo.",
+      "sideB": [
+        {
+          "text": "This will take little time.",
+          "audioSrc": "public/data/audio/dummy/dummy_080_sideB_0.mp3"
+        },
+        {
+          "text": "This won't take long.",
+          "audioSrc": "public/data/audio/dummy/dummy_080_sideB_1.mp3"
+        },
+        {
+          "text": "This will be quick.",
+          "audioSrc": "public/data/audio/dummy/dummy_080_sideB_2.mp3"
+        }
+      ],
+      "note": "[Won't take long] is the most natural conversational way to say something is quick."
+    },
+    {
+      "cardId": "dummy_081",
+      "cardType": "flippable",
+      "sideA": "Estoy realmente agradecido por todo.",
+      "sideB": [
+        {
+          "text": "I am really grateful for everything.",
+          "audioSrc": "public/data/audio/dummy/dummy_081_sideB_0.mp3"
+        },
+        {
+          "text": "I'm truly thankful for everything.",
+          "audioSrc": "public/data/audio/dummy/dummy_081_sideB_1.mp3"
+        },
+        {
+          "text": "I really appreciate everything.",
+          "audioSrc": "public/data/audio/dummy/dummy_081_sideB_2.mp3"
+        }
+      ],
+      "note": "[Grateful] describes the feeling, while [Appreciate] is the verb often used in professional contexts."
+    },
+    {
+      "cardId": "dummy_082",
+      "cardType": "flippable",
+      "sideA": "La pelota está en la cancha de Shyam ahora.",
+      "sideB": [
+        {
+          "text": "The ball is in Shyam's court now.",
+          "audioSrc": "public/data/audio/dummy/dummy_082_sideB_0.mp3"
+        },
+        {
+          "text": "It's in Shyam's court now.",
+          "audioSrc": "public/data/audio/dummy/dummy_082_sideB_1.mp3"
+        },
+        {
+          "text": "The ball is on Shyam's side now.",
+          "audioSrc": "public/data/audio/dummy/dummy_082_sideB_2.mp3"
+        }
+      ],
+      "note": "Idiom: [The ball is in X's court] means it is that person's turn to take action or make a decision."
+    },
+    {
+      "cardId": "dummy_083",
+      "cardType": "flippable",
+      "sideA": "La UI de Oracle EBS tiene varias secciones, como SOA y ISG.",
+      "sideB": [
+        {
+          "text": "The Oracle EBS UI has several sections, such as SOA and ISG.",
+          "audioSrc": "public/data/audio/dummy/dummy_083_sideB_0.mp3"
+        },
+        {
+          "text": "The Oracle EBS user interface contains various sections, like SOA and ISG.",
+          "audioSrc": "public/data/audio/dummy/dummy_083_sideB_1.mp3"
+        },
+        {
+          "text": "The Oracle EBS UI features multiple sections, for instance SOA and ISG.",
+          "audioSrc": "public/data/audio/dummy/dummy_083_sideB_2.mp3"
+        }
+      ],
+      "note": "[UI] stands for User Interface.\n\n[Such as] and [Like] are the standard ways to introduce examples."
+    },
+    {
+      "cardId": "dummy_084",
+      "cardType": "flippable",
+      "sideA": "Lo que sé hasta ahora, es que...",
+      "sideB": [
+        {
+          "text": "What I know so far, is that...",
+          "audioSrc": "public/data/audio/dummy/dummy_084_sideB_0.mp3"
+        },
+        {
+          "text": "All I know at this point, is that...",
+          "audioSrc": "public/data/audio/dummy/dummy_084_sideB_1.mp3"
+        },
+        {
+          "text": "What I am aware of so far, is that...",
+          "audioSrc": "public/data/audio/dummy/dummy_084_sideB_2.mp3"
+        }
+      ],
+      "note": "[So far] means 'up until the present moment' or 'to this extent'."
+    },
+    {
+      "cardId": "dummy_085",
+      "cardType": "flippable",
+      "sideA": "No era capaz de hacerlo al comienzo.",
+      "sideB": [
+        {
+          "text": "I wasn't able to do it at the beginning.",
+          "audioSrc": "public/data/audio/dummy/dummy_085_sideB_0.mp3"
+        },
+        {
+          "text": "I couldn't do it at the start.",
+          "audioSrc": "public/data/audio/dummy/dummy_085_sideB_1.mp3"
+        },
+        {
+          "text": "I was unable to do it initially.",
+          "audioSrc": "public/data/audio/dummy/dummy_085_sideB_2.mp3"
+        }
+      ],
+      "note": "[Was not able to] specifies capability in the past."
+    },
+    {
+      "cardId": "dummy_086",
+      "cardType": "flippable",
+      "sideA": "No estoy conectado a la VPN aún.",
+      "sideB": [
+        {
+          "text": "I am not connected to the VPN yet.",
+          "audioSrc": "public/data/audio/dummy/dummy_086_sideB_0.mp3"
+        },
+        {
+          "text": "I haven't connected to the VPN yet.",
+          "audioSrc": "public/data/audio/dummy/dummy_086_sideB_1.mp3"
+        },
+        {
+          "text": "I'm not on the VPN yet.",
+          "audioSrc": "public/data/audio/dummy/dummy_086_sideB_2.mp3"
+        }
+      ],
+      "note": "[Yet] at the end of a negative sentence implies you expect the action to happen soon."
+    },
+    {
+      "cardId": "dummy_087",
+      "cardType": "flippable",
+      "sideA": "No estoy seguro para qué es el documento.",
+      "sideB": [
+        {
+          "text": "I am not sure what the document is for.",
+          "audioSrc": "public/data/audio/dummy/dummy_087_sideB_0.mp3"
+        },
+        {
+          "text": "I'm unsure of the document's purpose.",
+          "audioSrc": "public/data/audio/dummy/dummy_087_sideB_1.mp3"
+        },
+        {
+          "text": "I am not certain what the use of the document is.",
+          "audioSrc": "public/data/audio/dummy/dummy_087_sideB_2.mp3"
+        }
+      ],
+      "note": "Structure: [What] + [Subject] + [Verb] + [Preposition] (e.g., What it is for)."
+    },
+    {
+      "cardId": "dummy_088",
+      "cardType": "flippable",
+      "sideA": "No me han dado los permisos para correr comandos en el server de Linux.",
+      "sideB": [
+        {
+          "text": "I haven't been given permissions to run commands on the Linux server.",
+          "audioSrc": "public/data/audio/dummy/dummy_088_sideB_0.mp3"
+        },
+        {
+          "text": "I have not received authorization to execute commands on the Linux server.",
+          "audioSrc": "public/data/audio/dummy/dummy_088_sideB_1.mp3"
+        },
+        {
+          "text": "I don't have the permissions to run commands on the Linux server.",
+          "audioSrc": "public/data/audio/dummy/dummy_088_sideB_2.mp3"
+        }
+      ],
+      "note": "Passive voice ([I haven't been given]) shifts focus to your lack of access rather than who failed to give it."
+    },
+    {
+      "cardId": "dummy_089",
+      "cardType": "flippable",
+      "sideA": "No sé a qué programa pertenece esa interfaz gráfica.",
+      "sideB": [
+        {
+          "text": "I don't know which program that GUI belongs to.",
+          "audioSrc": "public/data/audio/dummy/dummy_089_sideB_0.mp3"
+        },
+        {
+          "text": "I do not know to which program that graphical interface belongs.",
+          "audioSrc": "public/data/audio/dummy/dummy_089_sideB_1.mp3"
+        },
+        {
+          "text": "I'm not sure which program owns that GUI.",
+          "audioSrc": "public/data/audio/dummy/dummy_089_sideB_2.mp3"
+        }
+      ],
+      "note": "[Belongs to] indicates possession or association."
+    },
+    {
+      "cardId": "dummy_090",
+      "cardType": "flippable",
+      "sideA": "No sé para qué es este comando.",
+      "sideB": [
+        {
+          "text": "I don't know what this command is for.",
+          "audioSrc": "public/data/audio/dummy/dummy_090_sideB_0.mp3"
+        },
+        {
+          "text": "I don't know the purpose of this command.",
+          "audioSrc": "public/data/audio/dummy/dummy_090_sideB_1.mp3"
+        },
+        {
+          "text": "I am unsure what this command does.",
+          "audioSrc": "public/data/audio/dummy/dummy_090_sideB_2.mp3"
+        }
+      ],
+      "note": "Idiomatic Question: 'What is this for?'"
+    },
+    {
+      "cardId": "dummy_091",
+      "cardType": "flippable",
+      "sideA": "Oracle Integration Repository es parte de ISG.",
+      "sideB": [
+        {
+          "text": "Oracle Integration Repository is part of ISG.",
+          "audioSrc": "public/data/audio/dummy/dummy_091_sideB_0.mp3"
+        },
+        {
+          "text": "The Oracle Integration Repository belongs to ISG.",
+          "audioSrc": "public/data/audio/dummy/dummy_091_sideB_1.mp3"
+        },
+        {
+          "text": "Oracle Integration Repository is a component of ISG.",
+          "audioSrc": "public/data/audio/dummy/dummy_091_sideB_2.mp3"
+        }
+      ],
+      "note": "[ISG] typically stands for Integrated SOA Gateway in Oracle environments."
+    },
+    {
+      "cardId": "dummy_092",
+      "cardType": "flippable",
+      "sideA": "Publicar el paquete de la Base de Datos como un servicio Web (REST API).",
+      "sideB": [
+        {
+          "text": "Publish the Database package as a Web Service.",
+          "audioSrc": "public/data/audio/dummy/dummy_092_sideB_0.mp3"
+        },
+        {
+          "text": "Expose the Database package as a REST API.",
+          "audioSrc": "public/data/audio/dummy/dummy_092_sideB_1.mp3"
+        },
+        {
+          "text": "Deploy the DB package as a Web Service.",
+          "audioSrc": "public/data/audio/dummy/dummy_092_sideB_2.mp3"
+        },
+        {
+          "text": "Make the Database package available as a REST API.",
+          "audioSrc": "public/data/audio/dummy/dummy_092_sideB_3.mp3"
+        },
+        {
+          "text": "Publish the DB package as a web-based service.",
+          "audioSrc": "public/data/audio/dummy/dummy_092_sideB_4.mp3"
+        },
+        {
+          "text": "Set up the Database package as a RESTful service.",
+          "audioSrc": "public/data/audio/dummy/dummy_092_sideB_5.mp3"
+        }
+      ],
+      "note": "[Expose] is a very common technical synonym for making an endpoint available for consumption."
+    },
+    {
+      "cardId": "dummy_093",
+      "cardType": "flippable",
+      "sideA": "Sean le envió un correo a Sebastian.",
+      "sideB": [
+        {
+          "text": "Sean sent an email to Sebastian.",
+          "audioSrc": "public/data/audio/dummy/dummy_093_sideB_0.mp3"
+        },
+        {
+          "text": "Sean emailed Sebastian.",
+          "audioSrc": "public/data/audio/dummy/dummy_093_sideB_1.mp3"
+        },
+        {
+          "text": "Sean sent a mail to Sebastian.",
+          "audioSrc": "public/data/audio/dummy/dummy_093_sideB_2.mp3"
+        }
+      ],
+      "note": "[To email] is a verb itself. 'Sean emailed Sebastian' is concise and professional."
+    },
+    {
+      "cardId": "dummy_094",
+      "cardType": "flippable",
+      "sideA": "Shyam, Sean y John estarán en la reunión.",
+      "sideB": [
+        {
+          "text": "Shyam, Sean, and John will be in the meeting.",
+          "audioSrc": "public/data/audio/dummy/dummy_094_sideB_0.mp3"
+        },
+        {
+          "text": "Shyam, Sean, and John are going to attend the meeting.",
+          "audioSrc": "public/data/audio/dummy/dummy_094_sideB_1.mp3"
+        },
+        {
+          "text": "Shyam, Sean, and John will be present at the meeting.",
+          "audioSrc": "public/data/audio/dummy/dummy_094_sideB_2.mp3"
+        }
+      ],
+      "note": "Use [Will] or [Going to] for future plans."
+    },
+    {
+      "cardId": "dummy_095",
+      "cardType": "flippable",
+      "sideA": "Tengo unas cuantas capturas de pantalla y apuntes.",
+      "sideB": [
+        {
+          "text": "I have a few screenshots and notes.",
+          "audioSrc": "public/data/audio/dummy/dummy_095_sideB_0.mp3"
+        },
+        {
+          "text": "I've got a couple of screenshots and notes.",
+          "audioSrc": "public/data/audio/dummy/dummy_095_sideB_1.mp3"
+        },
+        {
+          "text": "I have some screenshots and jot-downs.",
+          "audioSrc": "public/data/audio/dummy/dummy_095_sideB_2.mp3"
+        }
+      ],
+      "note": "[A few] implies a small number, but enough to be useful.\n\n[Screenshots] are images taken of the display content."
+    },
+    {
+      "cardId": "dummy_096",
+      "cardType": "flippable",
+      "sideA": "Ustedes han sido muy pacientes.",
+      "sideB": [
+        {
+          "text": "You have been very patient.",
+          "audioSrc": "public/data/audio/dummy/dummy_096_sideB_0.mp3"
+        },
+        {
+          "text": "You guys have been really patient.",
+          "audioSrc": "public/data/audio/dummy/dummy_096_sideB_1.mp3"
+        },
+        {
+          "text": "You've been extremely patient.",
+          "audioSrc": "public/data/audio/dummy/dummy_096_sideB_2.mp3"
+        }
+      ],
+      "note": "[Have been] (Present Perfect) connects the past action of waiting with the present moment."
+    },
+    {
+      "cardId": "dummy_097",
+      "cardType": "flippable",
+      "sideA": "...Y tendremos alrededor de 6 nuevos arreglos.",
+      "sideB": [
+        {
+          "text": "...And we will have around 6 new fixes.",
+          "audioSrc": "public/data/audio/dummy/dummy_097_sideB_0.mp3"
+        },
+        {
+          "text": "...And we'll have about 6 new fixes.",
+          "audioSrc": "public/data/audio/dummy/dummy_097_sideB_1.mp3"
+        },
+        {
+          "text": "...And we are going to have approximately 6 new fixes.",
+          "audioSrc": "public/data/audio/dummy/dummy_097_sideB_2.mp3"
+        }
+      ],
+      "note": "[Fixes] is the noun used for code corrections or patches.\n\n[Around] or [About] indicates an estimation."
+    },
+    {
+      "cardId": "dummy_098",
+      "cardType": "flippable",
+      "sideA": "...Y estamos esperando poder testearla en producción.",
+      "sideB": [
+        {
+          "text": "...And we are waiting to be able to test it in production.",
+          "audioSrc": "public/data/audio/dummy/dummy_098_sideB_0.mp3"
+        },
+        {
+          "text": "...And we are hoping to test it in production.",
+          "audioSrc": "public/data/audio/dummy/dummy_098_sideB_1.mp3"
+        },
+        {
+          "text": "...And we await the ability to test it in production.",
+          "audioSrc": "public/data/audio/dummy/dummy_098_sideB_2.mp3"
+        }
+      ],
+      "note": "[To be able to] is the necessary form when 'can' is needed after another verb (like waiting).\n\n~...waiting for can test...~ (Grammar error: You cannot say 'for can'. Use [to be able to].)"
+    },
+    {
+      "cardId": "dummy_099",
+      "cardType": "flippable",
+      "sideA": "Estamos trabajando en la quinta versión.",
+      "sideB": [
+        {
+          "text": "We are working on the fifth version.",
+          "audioSrc": "public/data/audio/dummy/dummy_099_sideB_0.mp3"
+        },
+        {
+          "text": "We're currently working on version five.",
+          "audioSrc": "public/data/audio/dummy/dummy_099_sideB_1.mp3"
+        },
+        {
+          "text": "We are working on the 5th version.",
+          "audioSrc": "public/data/audio/dummy/dummy_099_sideB_2.mp3"
+        }
+      ],
+      "note": "**[123]**\n\n[Fifth] (5th) is an ordinal number describing the position in a sequence."
+    },
+    {
+      "cardId": "dummy_100",
+      "cardType": "flippable",
+      "sideA": "Estamos en la cuarta etapa de desarrollo.",
+      "sideB": [
+        {
+          "text": "We are in the fourth stage of development.",
+          "audioSrc": "public/data/audio/dummy/dummy_100_sideB_0.mp3"
+        },
+        {
+          "text": "We're in the fourth development stage.",
+          "audioSrc": "public/data/audio/dummy/dummy_100_sideB_1.mp3"
+        },
+        {
+          "text": "We are currently in stage four of development.",
+          "audioSrc": "public/data/audio/dummy/dummy_100_sideB_2.mp3"
+        }
+      ],
+      "note": "**[123]**\n\n[Fourth] (4th) follows the standard rule of adding -th to the number four."
+    },
+    {
+      "cardId": "dummy_101",
+      "cardType": "flippable",
+      "sideA": "Estamos revisando la tercera iteración.",
+      "sideB": [
+        {
+          "text": "We are reviewing the third iteration.",
+          "audioSrc": "public/data/audio/dummy/dummy_101_sideB_0.mp3"
+        },
+        {
+          "text": "We're checking the third iteration.",
+          "audioSrc": "public/data/audio/dummy/dummy_101_sideB_1.mp3"
+        },
+        {
+          "text": "We are going over the third iteration.",
+          "audioSrc": "public/data/audio/dummy/dummy_101_sideB_2.mp3"
+        }
+      ],
+      "note": "**[123]**\n\n[Third] (3rd) is irregular. It is not 'threeth'.\n\n[Iteration] is a standard Agile/Scrum term for a cycle of development."
     }
   ]
 }
