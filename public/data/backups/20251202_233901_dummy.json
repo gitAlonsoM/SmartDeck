@@ -270,7 +270,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_012_sideB_4.mp3"
         }
       ],
-      "note": "In this context, [Translation] refers to transforming data formats or naming conventions (e.g., from CamelCase to SnakeCase).\n\n~...where it happens the name translation~ (Word order: The subject [name translation] should come before the verb [happens], or simply use 'where name translation occurs'.)"
+      "note": "In this context, [Translation] refers to transforming data formats or naming conventions (e.g., from CamelCase to SnakeCase)."
     },
     {
       "cardId": "dummy_013",
@@ -294,7 +294,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_013_sideB_3.mp3"
         }
       ],
-      "note": "[Unknown to us] is a formal way to say 'we don't know it'.\n\n[We are not aware of] is professional and very common in meetings.\n\n~There is a unknown...~ (Grammar: Use [an] before vowel sounds like 'unknown'.)\n\n~...configuration to us~ (Word order: Adjectives modifying the noun should be close. Better: 'A mapping configuration [unknown to us]'.)\n\n~Exist a...~ (Grammar: Sentences expressing existence usually start with [There is] or [There exists]. Also, 'configuration' is singular, so the verb would be 'Exists' if used alone.)"
+      "note": "[Unknown to us] is a formal way to say 'we don't know it'.\n\n[We are not aware of] is professional and very common in meetings.\n\n~There is a unknown...~ (Grammar: Use [an] before vowel sounds like 'unknown'.)\n\n~...configuration to us~ (Word order: Adjectives modifying the noun should be close. Better: 'A mapping configuration [unknown to us]'.)"
     },
     {
       "cardId": "dummy_014",
@@ -318,7 +318,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_014_sideB_3.mp3"
         }
       ],
-      "note": "[Since] and [As] are strong alternatives to 'Because' when explaining technical causes.\n\n[Route] (verb) means to send data to a specific destination.\n\n~...can not enroute...~ (Incorrect vocabulary: [En route] is an adverb meaning 'on the way'. The verb is [Route].)\n\n~...server cannot routing...~ (Grammar: Modals like 'cannot' are followed by the base verb form, not the -ing form. It should be [cannot route].)\n\n~Since it is not mapping...~ (Grammar/Voice: The original implies a passive state 'se está mapeando'. Use passive voice [is not being mapped] rather than active.)"
+      "note": "[Since] and [As] are strong alternatives to 'Because' when explaining technical causes.\n\n[Route] (verb) means to send data to a specific destination.\n\n~...can not enroute...~ (Incorrect vocabulary: [En route] is an adverb meaning 'on the way'. The verb is [Route].)\n\n~...server cannot routing...~ (Grammar: Modals like 'cannot' are followed by the base verb form, not the -ing form. It should be [cannot route].)"
     },
     {
       "cardId": "dummy_015",
@@ -632,14 +632,6 @@
         {
           "text": "Initializing enables data visibility according to the user.",
           "audioSrc": "public/data/audio/dummy/dummy_029_sideB_3.mp3"
-        },
-        {
-          "text": "Initializing enables data visibility depending on the user.",
-          "audioSrc": "public/data/audio/dummy/dummy_029_sideB_4.mp3"
-        },
-        {
-          "text": "Initializing enables the visibility of the data depending on the user.",
-          "audioSrc": "public/data/audio/dummy/dummy_029_sideB_5.mp3"
         }
       ],
       "note": "[Enable] is a key technical verb meaning to activate or make possible.\n\n[According to] or [Based on] are correct ways to express dependency.\n\n~...depending to the user~ (Grammar: The correct preposition is [depending on].)"
@@ -682,7 +674,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_031_sideB_2.mp3"
         }
       ],
-      "note": "**[122]**\n\n[URL] stands for Uniform Resource Locator.\n\n~...to localize...~ (Vocabulary: [Locate] means to find a place. [Localize] usually means to adapt software for a specific region/language.)"
+      "note": "**[122]**\n\n[URL] stands for Uniform Resource Locator."
     },
     {
       "cardId": "dummy_032",
@@ -707,7 +699,7 @@
     {
       "cardId": "dummy_033",
       "cardType": "flippable",
-      "sideA": "El Endpoint es el recurso específico que la URL apunta.",
+      "sideA": "El Endpoint es el recurso específico al que apunta la URL.",
       "sideB": [
         {
           "text": "The endpoint is the specific resource the URL points to.",
@@ -720,13 +712,9 @@
         {
           "text": "The endpoint is the specific resource the URL is pointing at.",
           "audioSrc": "public/data/audio/dummy/dummy_033_sideB_2.mp3"
-        },
-        {
-          "text": "The endpoint is the specific resource the URL aims at.",
-          "audioSrc": "public/data/audio/dummy/dummy_033_sideB_3.mp3"
         }
       ],
-      "note": "**[122]**\n\n[Points to] is the standard phrasal verb for direction/reference in tech. [Aims at] is also a valid alternative.\n\n~...resource to aim the URL~ (Incorrect phrasing: You [aim at] a target. Better: 'The resource at which the URL is aimed'.)\n\n~...resource to address the URL~ (Incorrect relation: The URL addresses the resource, not the other way around.)\n\n~...resource that aim at the URL~ (Logic/Grammar: The URL points to the resource, not vice versa. Also, 'resource' is singular, so the verb would need to be 'aims'.)"
+      "note": "**[122]**\n\n[Points to] is the standard phrasal verb for direction/reference in tech.\n\n~...resource to aim the URL~ (Incorrect phrasing: You [aim at] a target. Better: 'The resource at which the URL is aimed'.)\n\n~...resource to address the URL~ (Incorrect relation: The URL addresses the resource, not the other way around.)\n\n~...resource that aim at the URL~ (Logic/Grammar: The URL points to the resource, not vice versa. Also, 'resource' is singular, so the verb would need to be 'aims'.)"
     },
     {
       "cardId": "dummy_034",
@@ -1012,10 +1000,6 @@
         {
           "text": "The 'Lines' constitute the list of items in the Header or Invoice.",
           "audioSrc": "public/data/audio/dummy/dummy_047_sideB_2.mp3"
-        },
-        {
-          "text": "The 'Lines' are the list of products of the Header or receipt.",
-          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_3.mp3"
         }
       ],
       "note": "[Boleta] is often translated as [Invoice] or [Receipt] depending on the context. In generic ERP terms, [Invoice] is safer."
@@ -1058,7 +1042,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_049_sideB_2.mp3"
         }
       ],
-      "note": "[Each] emphasizes individual possession of the property (unique number).\n\n~...have each one...~ (Grammar: Standard phrasing is [each have] or [have ... each]. 'Each one' is unnecessary here.)"
+      "note": "[Each] emphasizes individual possession of the property (unique number)."
     },
     {
       "cardId": "dummy_050",
@@ -1076,10 +1060,6 @@
         {
           "text": "The shopping cart acts as a quotation.",
           "audioSrc": "public/data/audio/dummy/dummy_050_sideB_2.mp3"
-        },
-        {
-          "text": "The CART is a quote.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_3.mp3"
         }
       ],
       "note": "In e-commerce logic, a [Quote] or [Quotation] is a draft order with prices, often represented by the active [Cart]."
@@ -1180,10 +1160,6 @@
         {
           "text": "The Invoice registers the debt.",
           "audioSrc": "public/data/audio/dummy/dummy_055_sideB_2.mp3"
-        },
-        {
-          "text": "The Invoice registers the accounts receivable.",
-          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_3.mp3"
         }
       ],
       "note": "[Accounts Receivable] (AR) is the money owed to a company by its debtors."
@@ -1204,10 +1180,6 @@
         {
           "text": "The Invoice is made after shipping.",
           "audioSrc": "public/data/audio/dummy/dummy_056_sideB_2.mp3"
-        },
-        {
-          "text": "The Invoice gets created after shipment.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_3.mp3"
         }
       ],
       "note": "[Post-shipment] is a concise technical way to say 'after shipment'."
@@ -1228,10 +1200,6 @@
         {
           "text": "Reloading takes a lot of time.",
           "audioSrc": "public/data/audio/dummy/dummy_057_sideB_2.mp3"
-        },
-        {
-          "text": "It takes a long time to recover.",
-          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_3.mp3"
         }
       ],
       "note": "Use [It takes...] to talk about the duration of an action."
@@ -1254,23 +1222,23 @@
           "audioSrc": "public/data/audio/dummy/dummy_058_sideB_2.mp3"
         }
       ],
-      "note": "[Full days] or [Whole days] emphasizes the completeness of the duration.\n\n~...come back to work well...~ (Phrasing: Systems [start working again] or [come back online]. 'Come back to work' implies a person returning to their job.)"
+      "note": "[Full days] or [Whole days] emphasizes the completeness of the duration."
     },
     {
       "cardId": "dummy_059",
       "cardType": "flippable",
-      "sideA": "Toma mucho tiempo en volver.",
+      "sideA": "Tomar mucho tiempo en volver.",
       "sideB": [
         {
-          "text": "It takes a long time to come back.",
+          "text": "To take a long time to come back.",
           "audioSrc": "public/data/audio/dummy/dummy_059_sideB_0.mp3"
         },
         {
-          "text": "It takes a long time to return.",
+          "text": "To take a long time to return.",
           "audioSrc": "public/data/audio/dummy/dummy_059_sideB_1.mp3"
         },
         {
-          "text": "It takes a long time to get back.",
+          "text": "Taking a long time to get back.",
           "audioSrc": "public/data/audio/dummy/dummy_059_sideB_2.mp3"
         }
       ],
@@ -1312,10 +1280,6 @@
         {
           "text": "The Responsibility outlines a user's specific permissions.",
           "audioSrc": "public/data/audio/dummy/dummy_061_sideB_2.mp3"
-        },
-        {
-          "text": "The Responsibility defines the specific permissions for a user.",
-          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_3.mp3"
         }
       ],
       "note": "[Permissions] or [Privileges] control what a user is allowed to do within the system."
@@ -1356,10 +1320,6 @@
         {
           "text": "The sign-in requires the who, the what, and the where.",
           "audioSrc": "public/data/audio/dummy/dummy_063_sideB_2.mp3"
-        },
-        {
-          "text": "The login session needs the who, the what, and the where.",
-          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_3.mp3"
         }
       ],
       "note": "[Login] or [Sign-in] is the process of authenticating."
@@ -1502,7 +1462,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_070_sideB_2.mp3"
         }
       ],
-      "note": "[CLI] stands for Command Line Interface.\n\n~...tool of command-line~ (Grammar/Phrasing: In English, nouns often act as adjectives before the main noun. Use [command-line tool] instead of using 'of'.)"
+      "note": "[CLI] stands for Command Line Interface."
     },
     {
       "cardId": "dummy_071",
@@ -1520,10 +1480,6 @@
         {
           "text": "Curl is great for testing APIs without needing a graphical UI.",
           "audioSrc": "public/data/audio/dummy/dummy_071_sideB_2.mp3"
-        },
-        {
-          "text": "The curl command is ideal to test APIs without a user interface.",
-          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_3.mp3"
         }
       ],
       "note": "[GUI] (Graphical User Interface) is the visual component of software."
