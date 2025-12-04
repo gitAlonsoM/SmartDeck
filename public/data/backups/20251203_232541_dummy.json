@@ -84,7 +84,7 @@
         {
           "text": "I believe those commands should be executed on the Linux server.",
           "audioSrc": "public/data/audio/dummy/dummy_004_sideB_2.mp3"
-        } 
+        }
       ],
       "note": "[Run] and [Execute] are the most common verbs for processing commands.\n\n[Must] implies a strong necessity or requirement."
     },
@@ -1576,10 +1576,6 @@
         {
           "text": "As soon as we fix the API problem, we can make a new release.",
           "audioSrc": "public/data/audio/dummy/dummy_073_sideB_2.mp3"
-        },
-        {
-          "text": "Once we solve the API issue, we can create a new release.",
-          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_3.mp3"
         }
       ],
       "note": "[Once] indicates that one event must strictly finish before the other starts.\n\n[Release] is the standard term for a software deployment package."
@@ -1600,10 +1596,6 @@
         {
           "text": "Allow me a day to look into it and I will get back to you.",
           "audioSrc": "public/data/audio/dummy/dummy_074_sideB_2.mp3"
-        },
-        {
-          "text": "Give me a day to dig around and I will be in touch with you.",
-          "audioSrc": "public/data/audio/dummy/dummy_074_sideB_3.mp3"
         }
       ],
       "note": "[Dig around] is a casual phrasal verb often used for investigating code or logs.\n\n[Get back to you] is the standard business idiom for following up on a topic."
@@ -1684,10 +1676,6 @@
         {
           "text": "This is the result we were expecting.",
           "audioSrc": "public/data/audio/dummy/dummy_078_sideB_2.mp3"
-        },
-        {
-          "text": "This is the expected behavior.",
-          "audioSrc": "public/data/audio/dummy/dummy_078_sideB_3.mp3"
         }
       ],
       "note": "[Expected result] is standard QA terminology for defining pass conditions in test cases."
@@ -1730,7 +1718,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_080_sideB_2.mp3"
         }
       ],
-      "note": "[Won't take long] is the most natural conversational way to say something is quick.\n\n~This will take a little bit of time~ (Nuance: [A little bit of time] often implies a delay or 'some amount' of time, whereas 'poco tiempo' emphasizes quickness or [little time].)"
+      "note": "[Won't take long] is the most natural conversational way to say something is quick."
     },
     {
       "cardId": "dummy_081",
@@ -1770,7 +1758,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_082_sideB_2.mp3"
         }
       ],
-      "note": "Idiom: [The ball is in X's court] means it is that person's turn to take action or make a decision.\n\n~The ball is in the court of Shyam~ (Idiom Structure: This idiom strictly requires the possessive form: [Shyam's court], not 'court of...'.)"
+      "note": "Idiom: [The ball is in X's court] means it is that person's turn to take action or make a decision."
     },
     {
       "cardId": "dummy_083",
@@ -1828,17 +1816,9 @@
         {
           "text": "I was unable to do it initially.",
           "audioSrc": "public/data/audio/dummy/dummy_085_sideB_2.mp3"
-        },
-        {
-          "text": "I wasn't able to do it at first.",
-          "audioSrc": "public/data/audio/dummy/dummy_085_sideB_3.mp3"
-        },
-        {
-          "text": "I wasn't able to do it at the start.",
-          "audioSrc": "public/data/audio/dummy/dummy_085_sideB_4.mp3"
         }
       ],
-      "note": "[Was not able to] specifies capability in the past.\n\n~I wasn't be able to...~ (Grammar Error: You cannot combine [wasn't] + [be]. Use: [I wasn't able to].)"
+      "note": "[Was not able to] specifies capability in the past."
     },
     {
       "cardId": "dummy_086",
@@ -1878,7 +1858,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_087_sideB_2.mp3"
         }
       ],
-      "note": "Structure: [What] + [Subject] + [Verb] + [Preposition] (e.g., What it is for).\n\n~I am not sure what is the document for~ (Word Order: In indirect questions, the subject comes before the verb: [what the document is].)\n\n~I am not sure for what is the document~ (Syntax: The preposition [for] usually goes at the end of the clause in natural English.)"
+      "note": "Structure: [What] + [Subject] + [Verb] + [Preposition] (e.g., What it is for)."
     },
     {
       "cardId": "dummy_088",
@@ -1918,7 +1898,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_089_sideB_2.mp3"
         }
       ],
-      "note": "[Belongs to] indicates possession or association.\n\n~...which program belongs to that GUI~ (Logic: The program is the 'owner' or container. The correct logic is [Which program that GUI belongs to].)"
+      "note": "[Belongs to] indicates possession or association."
     },
     {
       "cardId": "dummy_090",
@@ -1938,7 +1918,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_090_sideB_2.mp3"
         }
       ],
-      "note": "Idiomatic Question: 'What is this for?'\n\n~I don't know for what this command is~ (Phrasing: The standard structure places the preposition at the end: [What this command is for].)"
+      "note": "Idiomatic Question: 'What is this for?'"
     },
     {
       "cardId": "dummy_091",
@@ -2108,10 +2088,6 @@
         {
           "text": "...And we await the ability to test it in production.",
           "audioSrc": "public/data/audio/dummy/dummy_098_sideB_2.mp3"
-        },
-        {
-          "text": "...And we are expecting to test it in production.",
-          "audioSrc": "public/data/audio/dummy/dummy_098_sideB_3.mp3"
         }
       ],
       "note": "[To be able to] is the necessary form when 'can' is needed after another verb (like waiting).\n\n~...waiting for can test...~ (Grammar error: You cannot say 'for can'. Use [to be able to].)"
@@ -2152,10 +2128,6 @@
         {
           "text": "We are currently in stage four of development.",
           "audioSrc": "public/data/audio/dummy/dummy_100_sideB_2.mp3"
-        },
-        {
-          "text": "We are in the fourth step of development.",
-          "audioSrc": "public/data/audio/dummy/dummy_100_sideB_3.mp3"
         }
       ],
       "note": "**[123]**\n\n[Fourth] (4th) follows the standard rule of adding -th to the number four."
