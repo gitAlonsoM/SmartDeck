@@ -1,0 +1,701 @@
+{
+  "id": "casual_phrases_1",
+  "name": "Casual Phrases 1",
+  "description": "Everyday conversation focusing on work, food, plans, and timing nuances across different tenses.",
+  "deckType": "flippable",
+  "cards": [    
+    {   
+      "cardId": "casual_001",
+      "cardType": "flippable",
+      "sideA": "¿Cómo te va en el trabajo hoy, mi amor?",
+      "sideB": [
+        { "text": "How is work going today, my love?", "audioSrc": "public/data/audio/casual_phrases_1/casual_001_sideB_0.mp3" },
+        { "text": "How are things at work today, honey?", "audioSrc": "public/data/audio/casual_phrases_1/casual_001_sideB_1.mp3" },
+        { "text": "How's your day at work going, my love?", "audioSrc": "public/data/audio/casual_phrases_1/casual_001_sideB_2.mp3" }
+      ],
+      "note": "Uses [How is ... going] to ask about the progress of an activity.\n\nTerms of endearment like [honey], [sweetie], or [my love] are common in casual contexts."
+    },
+    {
+      "cardId": "casual_002",
+      "cardType": "flippable",
+      "sideA": "¿Cómo te está yendo en el trabajo hoy, mi amor?",
+      "sideB": [
+        { "text": "How is it going for you at work today, my love?", "audioSrc": "public/data/audio/casual_phrases_1/casual_002_sideB_0.mp3" },
+        { "text": "How are you doing at work today, honey?", "audioSrc": "public/data/audio/casual_phrases_1/casual_002_sideB_1.mp3" },
+        { "text": "How is work treating you today, my love?", "audioSrc": "public/data/audio/casual_phrases_1/casual_002_sideB_2.mp3" }
+      ],
+      "note": "The continuous form [How is it going] emphasizes the ongoing nature of the day."
+    },
+    {
+      "cardId": "casual_003",
+      "cardType": "flippable",
+      "sideA": "¿Cómo te fue en el trabajo hoy?",
+      "sideB": [
+        { "text": "How was work today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_003_sideB_0.mp3" },
+        { "text": "How did it go at work today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_003_sideB_1.mp3" },
+        { "text": "How did work go today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_003_sideB_2.mp3" }
+      ],
+      "note": "Past Simple ([How was...], [How did...]) is used because the workday is considered finished or the event is over."
+    },
+    {
+      "cardId": "casual_004",
+      "cardType": "flippable",
+      "sideA": "¿Cómo te ha ido en el trabajo?",
+      "sideB": [
+        { "text": "How has work been going?", "audioSrc": "public/data/audio/casual_phrases_1/casual_004_sideB_0.mp3" },
+        { "text": "How has it gone at work?", "audioSrc": "public/data/audio/casual_phrases_1/casual_004_sideB_1.mp3" },
+        { "text": "How have things been at work?", "audioSrc": "public/data/audio/casual_phrases_1/casual_004_sideB_2.mp3" }
+      ],
+      "note": "Present Perfect ([Has been], [Has gone]) connects the past to the present, implying the workday might still be relevant or ongoing."
+    },
+    {
+      "cardId": "casual_005",
+      "cardType": "flippable",
+      "sideA": "¿Qué estás comiendo?",
+      "sideB": [
+        { "text": "What are you eating?", "audioSrc": "public/data/audio/casual_phrases_1/casual_005_sideB_0.mp3" },
+        { "text": "What are you having?", "audioSrc": "public/data/audio/casual_phrases_1/casual_005_sideB_1.mp3" },
+        { "text": "What's that you're eating?", "audioSrc": "public/data/audio/casual_phrases_1/casual_005_sideB_2.mp3" }
+      ],
+      "note": "In English, [having] is a very common synonym for [eating] during meals."
+    },
+    {
+      "cardId": "casual_006",
+      "cardType": "flippable",
+      "sideA": "¿Qué comiste?",
+      "sideB": [
+        { "text": "What did you eat?", "audioSrc": "public/data/audio/casual_phrases_1/casual_006_sideB_0.mp3" },
+        { "text": "What did you have?", "audioSrc": "public/data/audio/casual_phrases_1/casual_006_sideB_1.mp3" },
+        { "text": "What did you have for food?", "audioSrc": "public/data/audio/casual_phrases_1/casual_006_sideB_2.mp3" }
+      ],
+      "note": "Past Simple ([Did you eat]) refers to a specific finished meal."
+    },
+    {
+      "cardId": "casual_007",
+      "cardType": "flippable",
+      "sideA": "¿Qué has comido?",
+      "sideB": [
+        { "text": "What have you eaten?", "audioSrc": "public/data/audio/casual_phrases_1/casual_007_sideB_0.mp3" },
+        { "text": "What have you had to eat?", "audioSrc": "public/data/audio/casual_phrases_1/casual_007_sideB_1.mp3" },
+        { "text": "What have you had so far?", "audioSrc": "public/data/audio/casual_phrases_1/casual_007_sideB_2.mp3" }
+      ],
+      "note": "Present Perfect implies 'up until now' or checking simply if the action happened."
+    },
+    {
+      "cardId": "casual_008",
+      "cardType": "flippable",
+      "sideA": "¿Qué comerás?",
+      "sideB": [
+        { "text": "What will you eat?", "audioSrc": "public/data/audio/casual_phrases_1/casual_008_sideB_0.mp3" },
+        { "text": "What will you have?", "audioSrc": "public/data/audio/casual_phrases_1/casual_008_sideB_1.mp3" },
+        { "text": "What are you going to eat?", "audioSrc": "public/data/audio/casual_phrases_1/casual_008_sideB_2.mp3" }
+      ],
+      "note": "[Will] is used for future decisions made at the moment, or general future."
+    },
+    {
+      "cardId": "casual_009",
+      "cardType": "flippable",
+      "sideA": "¿Qué vas a comer?",
+      "sideB": [
+        { "text": "What are you going to eat?", "audioSrc": "public/data/audio/casual_phrases_1/casual_009_sideB_0.mp3" },
+        { "text": "What are you going to have?", "audioSrc": "public/data/audio/casual_phrases_1/casual_009_sideB_1.mp3" },
+        { "text": "What are you planning to eat?", "audioSrc": "public/data/audio/casual_phrases_1/casual_009_sideB_2.mp3" }
+      ],
+      "note": "[Going to] implies a plan or intention that already exists."
+    },
+    {
+      "cardId": "casual_010",
+      "cardType": "flippable",
+      "sideA": "¿Qué cosas te dijeron en el trabajo?",
+      "sideB": [
+        { "text": "What things did they tell you at work?", "audioSrc": "public/data/audio/casual_phrases_1/casual_010_sideB_0.mp3" },
+        { "text": "What did they say to you at work?", "audioSrc": "public/data/audio/casual_phrases_1/casual_010_sideB_1.mp3" },
+        { "text": "What were you told at work?", "audioSrc": "public/data/audio/casual_phrases_1/casual_010_sideB_2.mp3" }
+      ],
+      "note": "[Tell] requires an object (tell you), while [Say] does not (say to you).\n\nThe passive [Were you told] is also very common."
+    },
+    {
+      "cardId": "casual_011",
+      "cardType": "flippable",
+      "sideA": "¿Qué cosas te han dicho en el trabajo?",
+      "sideB": [
+        { "text": "What have they told you at work?", "audioSrc": "public/data/audio/casual_phrases_1/casual_011_sideB_0.mp3" },
+        { "text": "What things have been said to you at work?", "audioSrc": "public/data/audio/casual_phrases_1/casual_011_sideB_1.mp3" },
+        { "text": "What have they said to you at work?", "audioSrc": "public/data/audio/casual_phrases_1/casual_011_sideB_2.mp3" }
+      ],
+      "note": "Present Perfect ([Have told]) focuses on the result of the information received recently."
+    },
+    {
+      "cardId": "casual_012",
+      "cardType": "flippable",
+      "sideA": "¿Qué quieres ver?",
+      "sideB": [
+        { "text": "What do you want to watch?", "audioSrc": "public/data/audio/casual_phrases_1/casual_012_sideB_0.mp3" },
+        { "text": "What do you want to see?", "audioSrc": "public/data/audio/casual_phrases_1/casual_012_sideB_1.mp3" },
+        { "text": "What would you like to watch?", "audioSrc": "public/data/audio/casual_phrases_1/casual_012_sideB_2.mp3" }
+      ],
+      "note": "[Watch] is used for TV/Movies (moving images).\n\n[See] is used for movies at the cinema or general perception."
+    },
+    {
+      "cardId": "casual_013",
+      "cardType": "flippable",
+      "sideA": "¿Qué estás viendo?",
+      "sideB": [
+        { "text": "What are you watching?", "audioSrc": "public/data/audio/casual_phrases_1/casual_013_sideB_0.mp3" },
+        { "text": "What are you looking at?", "audioSrc": "public/data/audio/casual_phrases_1/casual_013_sideB_1.mp3" },
+        { "text": "What is that you are watching?", "audioSrc": "public/data/audio/casual_phrases_1/casual_013_sideB_2.mp3" }
+      ],
+      "note": "Context matters: [Watching] for a show/video.\n\n[Looking at] for a static object or scene."
+    },
+    {
+      "cardId": "casual_014",
+      "cardType": "flippable",
+      "sideA": "¿Qué viste?",
+      "sideB": [
+        { "text": "What did you watch?", "audioSrc": "public/data/audio/casual_phrases_1/casual_014_sideB_0.mp3" },
+        { "text": "What did you see?", "audioSrc": "public/data/audio/casual_phrases_1/casual_014_sideB_1.mp3" },
+        { "text": "What was it that you saw?", "audioSrc": "public/data/audio/casual_phrases_1/casual_014_sideB_2.mp3" }
+      ],
+      "note": "Use [Did you watch] if asking about a TV show or movie at home."
+    },
+    {
+      "cardId": "casual_015",
+      "cardType": "flippable",
+      "sideA": "¿Qué querías ver?",
+      "sideB": [
+        { "text": "What did you want to watch?", "audioSrc": "public/data/audio/casual_phrases_1/casual_015_sideB_0.mp3" },
+        { "text": "What were you wanting to see?", "audioSrc": "public/data/audio/casual_phrases_1/casual_015_sideB_1.mp3" },
+        { "text": "What did you want to see?", "audioSrc": "public/data/audio/casual_phrases_1/casual_015_sideB_2.mp3" }
+      ],
+      "note": "[Did you want] puts the desire in the past (e.g., before we changed the channel)."
+    },
+    {
+      "cardId": "casual_016",
+      "cardType": "flippable",
+      "sideA": "¿Qué te gustaría ver?",
+      "sideB": [
+        { "text": "What would you like to watch?", "audioSrc": "public/data/audio/casual_phrases_1/casual_016_sideB_0.mp3" },
+        { "text": "What would you like to see?", "audioSrc": "public/data/audio/casual_phrases_1/casual_016_sideB_1.mp3" },
+        { "text": "What do you feel like watching?", "audioSrc": "public/data/audio/casual_phrases_1/casual_016_sideB_2.mp3" }
+      ],
+      "note": "[Would you like] is a polite way to ask for preference.\n\n[Feel like + -ing] is casual (e.g., 'Do you feel like eating?')."
+    },
+    {
+      "cardId": "casual_017",
+      "cardType": "flippable",
+      "sideA": "¿Cómo va el trabajo hoy?",
+      "sideB": [
+        { "text": "How is work going today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_017_sideB_0.mp3" },
+        { "text": "How is the work coming along today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_017_sideB_1.mp3" },
+        { "text": "How's work today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_017_sideB_2.mp3" }
+      ],
+      "note": "[Coming along] implies progress."
+    },
+    {
+      "cardId": "casual_018",
+      "cardType": "flippable",
+      "sideA": "¿Cómo está yendo el trabajo hoy?",
+      "sideB": [
+        { "text": "How is work going today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_018_sideB_0.mp3" },
+        { "text": "How's it going at work today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_018_sideB_1.mp3" },
+        { "text": "How is the job going today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_018_sideB_2.mp3" }
+      ],
+      "note": "Standard present continuous structure."
+    },
+    {
+      "cardId": "casual_019",
+      "cardType": "flippable",
+      "sideA": "¿Cómo te fue en el trabajo hoy? (Variación)",
+      "sideB": [
+        { "text": "How did your work day go?", "audioSrc": "public/data/audio/casual_phrases_1/casual_019_sideB_0.mp3" },
+        { "text": "How did it go at work?", "audioSrc": "public/data/audio/casual_phrases_1/casual_019_sideB_1.mp3" },
+        { "text": "How was your day at work?", "audioSrc": "public/data/audio/casual_phrases_1/casual_019_sideB_2.mp3" }
+      ],
+      "note": "Focuses on the personal experience ([your day]) rather than just the task."
+    },
+    {
+      "cardId": "casual_020",
+      "cardType": "flippable",
+      "sideA": "¿Cómo ha ido el trabajo hoy?",
+      "sideB": [
+        { "text": "How has work gone today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_020_sideB_0.mp3" },
+        { "text": "How has the work been today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_020_sideB_1.mp3" },
+        { "text": "How has it been going at work?", "audioSrc": "public/data/audio/casual_phrases_1/casual_020_sideB_2.mp3" }
+      ],
+      "note": "Present Perfect."
+    },
+    {
+      "cardId": "casual_021",
+      "cardType": "flippable",
+      "sideA": "¿Quieres verme hoy?",
+      "sideB": [
+        { "text": "Do you want to see me today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_021_sideB_0.mp3" },
+        { "text": "Would you like to see me today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_021_sideB_1.mp3" },
+        { "text": "Do you care to see me today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_021_sideB_2.mp3" }
+      ],
+      "note": "Direct question about desire/preference."
+    },
+    {
+      "cardId": "casual_022",
+      "cardType": "flippable",
+      "sideA": "¿Querrás verme hoy?",
+      "sideB": [
+        { "text": "Will you want to see me today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_022_sideB_0.mp3" },
+        { "text": "Are you going to want to see me today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_022_sideB_1.mp3" },
+        { "text": "Will you be wanting to see me today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_022_sideB_2.mp3" }
+      ],
+      "note": "Future projection of desire. [Will you be wanting] is a softer, continuous future form."
+    },
+    {
+      "cardId": "casual_023",
+      "cardType": "flippable",
+      "sideA": "Nos vemos en el terminal.",
+      "sideB": [
+        { "text": "See you at the terminal.", "audioSrc": "public/data/audio/casual_phrases_1/casual_023_sideB_0.mp3" },
+        { "text": "I'll see you at the terminal.", "audioSrc": "public/data/audio/casual_phrases_1/casual_023_sideB_1.mp3" },
+        { "text": "We'll meet at the terminal.", "audioSrc": "public/data/audio/casual_phrases_1/casual_023_sideB_2.mp3" }
+      ],
+      "note": "[See you] is the standard casual goodbye or plan confirmation.\n\n[Terminal] refers to a bus or transport station."
+    },
+    {
+      "cardId": "casual_024",
+      "cardType": "flippable",
+      "sideA": "Nos estamos viendo en el terminal.",
+      "sideB": [
+        { "text": "We are meeting at the terminal.", "audioSrc": "public/data/audio/casual_phrases_1/casual_024_sideB_0.mp3" },
+        { "text": "We're seeing each other at the terminal.", "audioSrc": "public/data/audio/casual_phrases_1/casual_024_sideB_1.mp3" },
+        { "text": "We are meeting up at the terminal.", "audioSrc": "public/data/audio/casual_phrases_1/casual_024_sideB_2.mp3" }
+      ],
+      "note": "Present Continuous for future arrangements."
+    },
+    {
+      "cardId": "casual_025",
+      "cardType": "flippable",
+      "sideA": "Nos veremos en el terminal.",
+      "sideB": [
+        { "text": "We will see each other at the terminal.", "audioSrc": "public/data/audio/casual_phrases_1/casual_025_sideB_0.mp3" },
+        { "text": "We'll meet at the terminal.", "audioSrc": "public/data/audio/casual_phrases_1/casual_025_sideB_1.mp3" },
+        { "text": "We shall meet at the terminal.", "audioSrc": "public/data/audio/casual_phrases_1/casual_025_sideB_2.mp3" }
+      ],
+      "note": "[We will see each other] is grammatically correct but [We'll meet] is more common for logistics."
+    },
+    {
+      "cardId": "casual_026",
+      "cardType": "flippable",
+      "sideA": "Vamos a vernos en el terminal.",
+      "sideB": [
+        { "text": "We are going to see each other at the terminal.", "audioSrc": "public/data/audio/casual_phrases_1/casual_026_sideB_0.mp3" },
+        { "text": "We're going to meet at the terminal.", "audioSrc": "public/data/audio/casual_phrases_1/casual_026_sideB_1.mp3" },
+        { "text": "We are gonna meet up at the terminal.", "audioSrc": "public/data/audio/casual_phrases_1/casual_026_sideB_2.mp3" }
+      ],
+      "note": "[Gonna] is the casual pronunciation of [going to].\n\n[Meet up] implies a social or arranged encounter."
+    },
+    {
+      "cardId": "casual_027",
+      "cardType": "flippable",
+      "sideA": "¿Es necesario salir temprano para viajar?",
+      "sideB": [
+        { "text": "Is it necessary to leave early to travel?", "audioSrc": "public/data/audio/casual_phrases_1/casual_027_sideB_0.mp3" },
+        { "text": "Do we need to leave early for the trip?", "audioSrc": "public/data/audio/casual_phrases_1/casual_027_sideB_1.mp3" },
+        { "text": "Is leaving early necessary for traveling?", "audioSrc": "public/data/audio/casual_phrases_1/casual_027_sideB_2.mp3" }
+      ],
+      "note": "[Do we need to] is more natural in conversation than [Is it necessary to]."
+    },
+    {
+      "cardId": "casual_028",
+      "cardType": "flippable",
+      "sideA": "¿Era necesario salir temprano para viajar?",
+      "sideB": [
+        { "text": "Was it necessary to leave early to travel?", "audioSrc": "public/data/audio/casual_phrases_1/casual_028_sideB_0.mp3" },
+        { "text": "Did we need to leave early for the trip?", "audioSrc": "public/data/audio/casual_phrases_1/casual_028_sideB_1.mp3" },
+        { "text": "Was leaving early required for the trip?", "audioSrc": "public/data/audio/casual_phrases_1/casual_028_sideB_2.mp3" }
+      ],
+      "note": "Past Tense: [Was it] or [Did we need to]."
+    },
+    {
+      "cardId": "casual_029",
+      "cardType": "flippable",
+      "sideA": "¿Será necesario salir temprano para viajar?",
+      "sideB": [
+        { "text": "Will it be necessary to leave early to travel?", "audioSrc": "public/data/audio/casual_phrases_1/casual_029_sideB_0.mp3" },
+        { "text": "Will we need to leave early for the trip?", "audioSrc": "public/data/audio/casual_phrases_1/casual_029_sideB_1.mp3" },
+        { "text": "Is it going to be necessary to leave early?", "audioSrc": "public/data/audio/casual_phrases_1/casual_029_sideB_2.mp3" }
+      ],
+      "note": "Future Tense."
+    },
+    {
+      "cardId": "casual_030",
+      "cardType": "flippable",
+      "sideA": "¿A qué hora tienes que entrar?",
+      "sideB": [
+        { "text": "What time do you have to go in?", "audioSrc": "public/data/audio/casual_phrases_1/casual_030_sideB_0.mp3" },
+        { "text": "What time do you have to start work?", "audioSrc": "public/data/audio/casual_phrases_1/casual_030_sideB_1.mp3" },
+        { "text": "At what time do you enter?", "audioSrc": "public/data/audio/casual_phrases_1/casual_030_sideB_2.mp3" }
+      ],
+      "note": "[Go in] is the most natural phrasal verb for arriving at work/school.\n\n[Enter] sounds formal or physical (entering a door)."
+    },
+    {
+      "cardId": "casual_031",
+      "cardType": "flippable",
+      "sideA": "¿A qué hora tuviste que entrar?",
+      "sideB": [
+        { "text": "What time did you have to go in?", "audioSrc": "public/data/audio/casual_phrases_1/casual_031_sideB_0.mp3" },
+        { "text": "What time did you have to start?", "audioSrc": "public/data/audio/casual_phrases_1/casual_031_sideB_1.mp3" },
+        { "text": "At what time did you have to enter?", "audioSrc": "public/data/audio/casual_phrases_1/casual_031_sideB_2.mp3" }
+      ],
+      "note": "Past obligation: [Did you have to]."
+    },
+    {
+      "cardId": "casual_032",
+      "cardType": "flippable",
+      "sideA": "¿A qué hora tendrás que entrar?",
+      "sideB": [
+        { "text": "What time will you have to go in?", "audioSrc": "public/data/audio/casual_phrases_1/casual_032_sideB_0.mp3" },
+        { "text": "What time are you going to have to start?", "audioSrc": "public/data/audio/casual_phrases_1/casual_032_sideB_1.mp3" },
+        { "text": "When will you need to go in?", "audioSrc": "public/data/audio/casual_phrases_1/casual_032_sideB_2.mp3" }
+      ],
+      "note": "Future obligation."
+    },
+    {
+      "cardId": "casual_033",
+      "cardType": "flippable",
+      "sideA": "¿Tienes mucha prisa?",
+      "sideB": [
+        { "text": "Are you in a big rush?", "audioSrc": "public/data/audio/casual_phrases_1/casual_033_sideB_0.mp3" },
+        { "text": "Are you in a hurry?", "audioSrc": "public/data/audio/casual_phrases_1/casual_033_sideB_1.mp3" },
+        { "text": "Do you have a lot of rush?", "audioSrc": "public/data/audio/casual_phrases_1/casual_033_sideB_2.mp3" }
+      ],
+      "note": "Collocations: [In a rush] or [In a hurry].\n\n'Have haste' is archaic."
+    },
+    {
+      "cardId": "casual_034",
+      "cardType": "flippable",
+      "sideA": "¿Tuviste mucha prisa?",
+      "sideB": [
+        { "text": "Were you in a big rush?", "audioSrc": "public/data/audio/casual_phrases_1/casual_034_sideB_0.mp3" },
+        { "text": "Did you have a lot of haste?", "audioSrc": "public/data/audio/casual_phrases_1/casual_034_sideB_1.mp3" },
+        { "text": "Were you in a hurry?", "audioSrc": "public/data/audio/casual_phrases_1/casual_034_sideB_2.mp3" }
+      ],
+      "note": "Past state: [Were you]."
+    },
+    {
+      "cardId": "casual_035",
+      "cardType": "flippable",
+      "sideA": "¿Tenías mucha prisa?",
+      "sideB": [
+        { "text": "Were you in a big rush?", "audioSrc": "public/data/audio/casual_phrases_1/casual_035_sideB_0.mp3" },
+        { "text": "Did you used to be in a hurry?", "audioSrc": "public/data/audio/casual_phrases_1/casual_035_sideB_1.mp3" },
+        { "text": "Were you hurrying?", "audioSrc": "public/data/audio/casual_phrases_1/casual_035_sideB_2.mp3" }
+      ],
+      "note": "Imperfect past in Spanish often maps to Simple Past or Past Continuous in English."
+    },
+    {
+      "cardId": "casual_036",
+      "cardType": "flippable",
+      "sideA": "¿Tendrás mucha prisa?",
+      "sideB": [
+        { "text": "Will you be in a big rush?", "audioSrc": "public/data/audio/casual_phrases_1/casual_036_sideB_0.mp3" },
+        { "text": "Will you be in a hurry?", "audioSrc": "public/data/audio/casual_phrases_1/casual_036_sideB_1.mp3" },
+        { "text": "Are you going to be in a rush?", "audioSrc": "public/data/audio/casual_phrases_1/casual_036_sideB_2.mp3" }
+      ],
+      "note": "Future state."
+    },
+    {
+      "cardId": "casual_037",
+      "cardType": "flippable",
+      "sideA": "¿Haces ejercicio hoy?",
+      "sideB": [
+        { "text": "Do you exercise today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_037_sideB_0.mp3" },
+        { "text": "Are you exercising today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_037_sideB_1.mp3" },
+        { "text": "Do you work out today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_037_sideB_2.mp3" }
+      ],
+      "note": "[Work out] is a very common synonym for [Exercise].\n\n[Are you exercising] implies a future plan for today."
+    },
+    {
+      "cardId": "casual_038",
+      "cardType": "flippable",
+      "sideA": "¿Estás haciendo ejercicio?",
+      "sideB": [
+        { "text": "Are you exercising?", "audioSrc": "public/data/audio/casual_phrases_1/casual_038_sideB_0.mp3" },
+        { "text": "Are you working out?", "audioSrc": "public/data/audio/casual_phrases_1/casual_038_sideB_1.mp3" },
+        { "text": "Are you doing exercise right now?", "audioSrc": "public/data/audio/casual_phrases_1/casual_038_sideB_2.mp3" }
+      ],
+      "note": "Present Continuous for action happening right now."
+    },
+    {
+      "cardId": "casual_039",
+      "cardType": "flippable",
+      "sideA": "¿Hiciste ejercicio hoy?",
+      "sideB": [
+        { "text": "Did you exercise today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_039_sideB_0.mp3" },
+        { "text": "Did you work out today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_039_sideB_1.mp3" },
+        { "text": "Did you do any exercise today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_039_sideB_2.mp3" }
+      ],
+      "note": "Simple Past."
+    },
+    {
+      "cardId": "casual_040",
+      "cardType": "flippable",
+      "sideA": "¿Has hecho ejercicio hoy?",
+      "sideB": [
+        { "text": "Have you exercised today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_040_sideB_0.mp3" },
+        { "text": "Have you worked out today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_040_sideB_1.mp3" },
+        { "text": "Have you done any exercise today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_040_sideB_2.mp3" }
+      ],
+      "note": "Present Perfect."
+    },
+    {
+      "cardId": "casual_041",
+      "cardType": "flippable",
+      "sideA": "¿Harás ejercicio hoy?",
+      "sideB": [
+        { "text": "Will you exercise today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_041_sideB_0.mp3" },
+        { "text": "Will you work out today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_041_sideB_1.mp3" },
+        { "text": "Are you going to exercise today?", "audioSrc": "public/data/audio/casual_phrases_1/casual_041_sideB_2.mp3" }
+      ],
+      "note": "Future."
+    },
+    {
+      "cardId": "casual_042",
+      "cardType": "flippable",
+      "sideA": "No como nada en toda la noche.",
+      "sideB": [
+        { "text": "I don't eat anything all night.", "audioSrc": "public/data/audio/casual_phrases_1/casual_042_sideB_0.mp3" },
+        { "text": "I eat nothing all night.", "audioSrc": "public/data/audio/casual_phrases_1/casual_042_sideB_1.mp3" },
+        { "text": "I'm not eating anything all night.", "audioSrc": "public/data/audio/casual_phrases_1/casual_042_sideB_2.mp3" }
+      ],
+      "note": "Present Tense implies a habit (I never do it).\n\nIf specifically for tonight, [I'm not eating] is better."
+    },
+    {
+      "cardId": "casual_043",
+      "cardType": "flippable",
+      "sideA": "No comí nada en toda la mañana.",
+      "sideB": [
+        { "text": "I didn't eat anything all morning.", "audioSrc": "public/data/audio/casual_phrases_1/casual_043_sideB_0.mp3" },
+        { "text": "I ate nothing all morning.", "audioSrc": "public/data/audio/casual_phrases_1/casual_043_sideB_1.mp3" },
+        { "text": "I haven't eaten anything all morning.", "audioSrc": "public/data/audio/casual_phrases_1/casual_043_sideB_2.mp3" }
+      ],
+      "note": "[Didn't eat anything] is standard negation.\n\n[Ate nothing] is more emphatic."
+    },
+    {
+      "cardId": "casual_044",
+      "cardType": "flippable",
+      "sideA": "No he comido nada en toda la tarde.",
+      "sideB": [
+        { "text": "I haven't eaten anything all afternoon.", "audioSrc": "public/data/audio/casual_phrases_1/casual_044_sideB_0.mp3" },
+        { "text": "I haven't had anything to eat all afternoon.", "audioSrc": "public/data/audio/casual_phrases_1/casual_044_sideB_1.mp3" },
+        { "text": "I have eaten nothing all afternoon.", "audioSrc": "public/data/audio/casual_phrases_1/casual_044_sideB_2.mp3" }
+      ],
+      "note": "Present Perfect works well if the afternoon is not yet over or just finished."
+    },
+    {
+      "cardId": "casual_045",
+      "cardType": "flippable",
+      "sideA": "No comeré nada en toda la mañana.",
+      "sideB": [
+        { "text": "I won't eat anything all morning.", "audioSrc": "public/data/audio/casual_phrases_1/casual_045_sideB_0.mp3" },
+        { "text": "I will eat nothing all morning.", "audioSrc": "public/data/audio/casual_phrases_1/casual_045_sideB_1.mp3" },
+        { "text": "I'm not going to eat anything all morning.", "audioSrc": "public/data/audio/casual_phrases_1/casual_045_sideB_2.mp3" }
+      ],
+      "note": "[Won't] = Will not."
+    },
+    {
+      "cardId": "casual_046",
+      "cardType": "flippable",
+      "sideA": "No quiero ver esa película hoy.",
+      "sideB": [
+        { "text": "I don't want to watch that movie today.", "audioSrc": "public/data/audio/casual_phrases_1/casual_046_sideB_0.mp3" },
+        { "text": "I don't want to see that movie today.", "audioSrc": "public/data/audio/casual_phrases_1/casual_046_sideB_1.mp3" },
+        { "text": "I do not wish to watch that film today.", "audioSrc": "public/data/audio/casual_phrases_1/casual_046_sideB_2.mp3" }
+      ],
+      "note": "Standard present desire."
+    },
+    {
+      "cardId": "casual_047",
+      "cardType": "flippable",
+      "sideA": "No quería ver esa película.",
+      "sideB": [
+        { "text": "I didn't want to watch that movie.", "audioSrc": "public/data/audio/casual_phrases_1/casual_047_sideB_0.mp3" },
+        { "text": "I didn't want to see that film.", "audioSrc": "public/data/audio/casual_phrases_1/casual_047_sideB_1.mp3" },
+        { "text": "I wasn't wanting to watch that movie.", "audioSrc": "public/data/audio/casual_phrases_1/casual_047_sideB_2.mp3" }
+      ],
+      "note": "Past desire."
+    },
+    {
+      "cardId": "casual_048",
+      "cardType": "flippable",
+      "sideA": "No quise ver esa película.",
+      "sideB": [
+        { "text": "I refused to watch that movie.", "audioSrc": "public/data/audio/casual_phrases_1/casual_048_sideB_0.mp3" },
+        { "text": "I didn't want to watch that movie.", "audioSrc": "public/data/audio/casual_phrases_1/casual_048_sideB_1.mp3" },
+        { "text": "I chose not to watch that movie.", "audioSrc": "public/data/audio/casual_phrases_1/casual_048_sideB_2.mp3" }
+      ],
+      "note": "Nuance: [No quise] in Preterite often implies a refusal or a specific decision made at that moment, unlike [No quería] which is a state of mind."
+    },
+    {
+      "cardId": "casual_049",
+      "cardType": "flippable",
+      "sideA": "No querré ver esa película hoy.",
+      "sideB": [
+        { "text": "I won't want to watch that movie today.", "audioSrc": "public/data/audio/casual_phrases_1/casual_049_sideB_0.mp3" },
+        { "text": "I will not want to see that film today.", "audioSrc": "public/data/audio/casual_phrases_1/casual_049_sideB_1.mp3" },
+        { "text": "I'm not going to want to watch that movie today.", "audioSrc": "public/data/audio/casual_phrases_1/casual_049_sideB_2.mp3" }
+      ],
+      "note": "Predicting future feelings."
+    },
+    {
+      "cardId": "casual_050",
+      "cardType": "flippable",
+      "sideA": "No hice ejercicio porque estaba muy cansada.",
+      "sideB": [
+        { "text": "I didn't exercise because I was very tired.", "audioSrc": "public/data/audio/casual_phrases_1/casual_050_sideB_0.mp3" },
+        { "text": "I didn't work out because I was too tired.", "audioSrc": "public/data/audio/casual_phrases_1/casual_050_sideB_1.mp3" },
+        { "text": "I didn't do any exercise since I was exhausted.", "audioSrc": "public/data/audio/casual_phrases_1/casual_050_sideB_2.mp3" }
+      ],
+      "note": "[Exhausted] is a strong synonym for [Very tired].\n\n[Since] can replace [Because]."
+    },
+    {
+      "cardId": "casual_051",
+      "cardType": "flippable",
+      "sideA": "No he hecho ejercicio porque he estado muy cansada.",
+      "sideB": [
+        { "text": "I haven't exercised because I've been very tired.", "audioSrc": "public/data/audio/casual_phrases_1/casual_051_sideB_0.mp3" },
+        { "text": "I haven't worked out because I have been so tired.", "audioSrc": "public/data/audio/casual_phrases_1/casual_051_sideB_1.mp3" },
+        { "text": "I haven't done any exercise because I've been exhausted.", "audioSrc": "public/data/audio/casual_phrases_1/casual_051_sideB_2.mp3" }
+      ],
+      "note": "Double Present Perfect ([Haven't exercised] + [Have been]) links the recent lack of activity to a recent state of being."
+    },
+    {
+      "cardId": "casual_052",
+      "cardType": "flippable",
+      "sideA": "No haré ejercicio porque estaré muy cansada.",
+      "sideB": [
+        { "text": "I won't exercise because I will be very tired.", "audioSrc": "public/data/audio/casual_phrases_1/casual_052_sideB_0.mp3" },
+        { "text": "I'm not going to work out because I'll be too tired.", "audioSrc": "public/data/audio/casual_phrases_1/casual_052_sideB_1.mp3" },
+        { "text": "I won't do any exercise because I'll be exhausted.", "audioSrc": "public/data/audio/casual_phrases_1/casual_052_sideB_2.mp3" }
+      ],
+      "note": "Contractions like [I'll] (I will) make speech more natural."
+    },
+    {
+      "cardId": "casual_053",
+      "cardType": "flippable",
+      "sideA": "Hoy tengo que irme temprano al trabajo.",
+      "sideB": [
+        { "text": "Today I have to go to work early.", "audioSrc": "public/data/audio/casual_phrases_1/casual_053_sideB_0.mp3" },
+        { "text": "I have to leave early for work today.", "audioSrc": "public/data/audio/casual_phrases_1/casual_053_sideB_1.mp3" },
+        { "text": "I need to go into work early today.", "audioSrc": "public/data/audio/casual_phrases_1/casual_053_sideB_2.mp3" }
+      ],
+      "note": "[Leave for work] focuses on the departure.\n\n[Go to work] focuses on the destination."
+    },
+    {
+      "cardId": "casual_054",
+      "cardType": "flippable",
+      "sideA": "Tuve que irme temprano al trabajo.",
+      "sideB": [
+        { "text": "I had to go to work early.", "audioSrc": "public/data/audio/casual_phrases_1/casual_054_sideB_0.mp3" },
+        { "text": "I had to leave for work early.", "audioSrc": "public/data/audio/casual_phrases_1/casual_054_sideB_1.mp3" },
+        { "text": "I needed to go into work early.", "audioSrc": "public/data/audio/casual_phrases_1/casual_054_sideB_2.mp3" }
+      ],
+      "note": "Simple Past obligation: [Had to]."
+    },
+    {
+      "cardId": "casual_055",
+      "cardType": "flippable",
+      "sideA": "Hoy tenía que irme temprano al trabajo.",
+      "sideB": [
+        { "text": "Today I was supposed to go to work early.", "audioSrc": "public/data/audio/casual_phrases_1/casual_055_sideB_0.mp3" },
+        { "text": "I had to go to work early today.", "audioSrc": "public/data/audio/casual_phrases_1/casual_055_sideB_1.mp3" },
+        { "text": "I needed to leave early for work today.", "audioSrc": "public/data/audio/casual_phrases_1/casual_055_sideB_2.mp3" }
+      ],
+      "note": "Imperfect [Tenía que] often implies a plan that may or may not have happened ([Was supposed to]) or a general obligation in the past."
+    },
+    {
+      "cardId": "casual_056",
+      "cardType": "flippable",
+      "sideA": "Hoy tendré que irme temprano al trabajo.",
+      "sideB": [
+        { "text": "Today I will have to go to work early.", "audioSrc": "public/data/audio/casual_phrases_1/casual_056_sideB_0.mp3" },
+        { "text": "I'll have to leave early for work today.", "audioSrc": "public/data/audio/casual_phrases_1/casual_056_sideB_1.mp3" },
+        { "text": "I'm going to have to go into work early today.", "audioSrc": "public/data/audio/casual_phrases_1/casual_056_sideB_2.mp3" }
+      ],
+      "note": "Future obligation."
+    },
+    {
+      "cardId": "casual_057",
+      "cardType": "flippable",
+      "sideA": "Estoy llegando al terminal.",
+      "sideB": [
+        { "text": "I am arriving at the terminal.", "audioSrc": "public/data/audio/casual_phrases_1/casual_057_sideB_0.mp3" },
+        { "text": "I'm getting to the terminal.", "audioSrc": "public/data/audio/casual_phrases_1/casual_057_sideB_1.mp3" },
+        { "text": "I'm just arriving at the terminal.", "audioSrc": "public/data/audio/casual_phrases_1/casual_057_sideB_2.mp3" }
+      ],
+      "note": "[Getting to] is a common casual synonym for [Arriving at].\n\n[At] is used for specific points/locations."
+    },
+    {
+      "cardId": "casual_058",
+      "cardType": "flippable",
+      "sideA": "Llegué al terminal a las cinco en punto.",
+      "sideB": [
+        { "text": "I arrived at the terminal at five o'clock.", "audioSrc": "public/data/audio/casual_phrases_1/casual_058_sideB_0.mp3" },
+        { "text": "I got to the terminal at five sharp.", "audioSrc": "public/data/audio/casual_phrases_1/casual_058_sideB_1.mp3" },
+        { "text": "I made it to the terminal at five on the dot.", "audioSrc": "public/data/audio/casual_phrases_1/casual_058_sideB_2.mp3" }
+      ],
+      "note": "[Five sharp] or [On the dot] emphasizes exactness ([En punto])."
+    },
+    {
+      "cardId": "casual_059",
+      "cardType": "flippable",
+      "sideA": "He llegado al terminal a las cinco en punto.",
+      "sideB": [
+        { "text": "I have arrived at the terminal at five o'clock.", "audioSrc": "public/data/audio/casual_phrases_1/casual_059_sideB_0.mp3" },
+        { "text": "I've got to the terminal at five sharp.", "audioSrc": "public/data/audio/casual_phrases_1/casual_059_sideB_1.mp3" },
+        { "text": "I have made it to the terminal at five on the dot.", "audioSrc": "public/data/audio/casual_phrases_1/casual_059_sideB_2.mp3" }
+      ],
+      "note": "Grammar Note: In standard English, we rarely use Present Perfect with a specific past time like 'at five'. Simple Past is preferred. However, if emphasized as a recent accomplishment, this structure exists."
+    },
+    {
+      "cardId": "casual_060",
+      "cardType": "flippable",
+      "sideA": "Llegaré al terminal a las cinco en punto.",
+      "sideB": [
+        { "text": "I will arrive at the terminal at five o'clock.", "audioSrc": "public/data/audio/casual_phrases_1/casual_060_sideB_0.mp3" },
+        { "text": "I'll get to the terminal at five sharp.", "audioSrc": "public/data/audio/casual_phrases_1/casual_060_sideB_1.mp3" },
+        { "text": "I'm going to arrive at the terminal at five on the dot.", "audioSrc": "public/data/audio/casual_phrases_1/casual_060_sideB_2.mp3" }
+      ],
+      "note": "Future."
+    },
+    {
+      "cardId": "casual_061",
+      "cardType": "flippable",
+      "sideA": "No tengo mucha prisa, puedo esperar por ti.",
+      "sideB": [
+        { "text": "I'm not in a big rush, I can wait for you.", "audioSrc": "public/data/audio/casual_phrases_1/casual_061_sideB_0.mp3" },
+        { "text": "I don't have much of a hurry, I can wait for you.", "audioSrc": "public/data/audio/casual_phrases_1/casual_061_sideB_1.mp3" },
+        { "text": "I'm not in a hurry, I can wait for you.", "audioSrc": "public/data/audio/casual_phrases_1/casual_061_sideB_2.mp3" }
+      ],
+      "note": "[In a rush/hurry] is standard.\n\n[Wait for you] is the correct preposition."
+    },
+    {
+      "cardId": "casual_062",
+      "cardType": "flippable",
+      "sideA": "No tenía mucha prisa, podía esperar por ti.",
+      "sideB": [
+        { "text": "I wasn't in a big rush, I could wait for you.", "audioSrc": "public/data/audio/casual_phrases_1/casual_062_sideB_0.mp3" },
+        { "text": "I wasn't in a hurry, I could wait for you.", "audioSrc": "public/data/audio/casual_phrases_1/casual_062_sideB_1.mp3" },
+        { "text": "I didn't have to rush, so I could wait for you.", "audioSrc": "public/data/audio/casual_phrases_1/casual_062_sideB_2.mp3" }
+      ],
+      "note": "Past ability: [Could wait]."
+    },
+    {
+      "cardId": "casual_063",
+      "cardType": "flippable",
+      "sideA": "No tendré mucha prisa, podré esperar por ti.",
+      "sideB": [
+        { "text": "I won't be in a big rush, I will be able to wait for you.", "audioSrc": "public/data/audio/casual_phrases_1/casual_063_sideB_0.mp3" },
+        { "text": "I won't be in a hurry, I'll be able to wait for you.", "audioSrc": "public/data/audio/casual_phrases_1/casual_063_sideB_1.mp3" },
+        { "text": "I won't be rushing, so I can wait for you.", "audioSrc": "public/data/audio/casual_phrases_1/casual_063_sideB_2.mp3" }
+      ],
+      "note": "Future ability often uses [Will be able to], though [Can] is sometimes used loosely for future."
+    }
+  ]
+}

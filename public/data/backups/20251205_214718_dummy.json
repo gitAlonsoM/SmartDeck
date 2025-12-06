@@ -84,7 +84,7 @@
         {
           "text": "I believe those commands should be executed on the Linux server.",
           "audioSrc": "public/data/audio/dummy/dummy_004_sideB_2.mp3"
-        }
+        } 
       ],
       "note": "[Run] and [Execute] are the most common verbs for processing commands.\n\n[Must] implies a strong necessity or requirement."
     },
@@ -240,10 +240,6 @@
         {
           "text": "There must be a middle layer where this gets mapped.",
           "audioSrc": "public/data/audio/dummy/dummy_011_sideB_2.mp3"
-        },
-        {
-          "text": "There must be a middleware layer where this gets mapped.",
-          "audioSrc": "public/data/audio/dummy/dummy_011_sideB_3.mp3"
         }
       ],
       "note": "[Middleware] is software that acts as a bridge between an operating system or database and applications.\n\nUse [There must be] when you are deducing a fact."
@@ -362,7 +358,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_016_sideB_2.mp3"
         }
       ],
-      "note": "[Allows] or [Enables] are standard verbs to describe what a feature permits.\n\n~The mapping permit~ (Grammar: 'Permit' is more formal/legal; [Allow] is better for software logic.)\n\n~The map allows...~ (Precision: [Mapping] refers to the process or relationship. [Map] usually refers to the specific data structure.)\n\n~The mapping allows to have...~ (Grammar: The verb [allow] cannot be followed directly by an infinitive unless there is an object. Use [allows having] or [allows us to have].)"
+      "note": "[Allows] or [Enables] are standard verbs to describe what a feature permits.\n\n~The mapping permit~ (Grammar: 'Permit' is more formal/legal; [Allow] is better for software logic.)\n\n~The map allows...~ (Precision: [Mapping] refers to the process or relationship. [Map] usually refers to the specific data structure.)"
     },
     {
       "cardId": "dummy_017",
@@ -1110,7 +1106,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_051_sideB_2.mp3"
         }
       ],
-      "note": "[Commitment] in business logic means the stock is reserved and the intent to transact is finalized.\n\n~...commitment of selling and shipment~ (Grammar: The standard structure is [commitment to + verb], e.g., [commitment to sell]. [Commitment of selling] is not standard usage.)"
+      "note": "[Commitment] in business logic means the stock is reserved and the intent to transact is finalized."
     },
     {
       "cardId": "dummy_052",
@@ -1152,10 +1148,6 @@
         {
           "text": "The invoice process takes time.",
           "audioSrc": "public/data/audio/dummy/dummy_053_sideB_3.mp3"
-        },
-        {
-          "text": "The process to generate the invoice takes time.",
-          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_4.mp3"
         }
       ],
       "note": "[Takes time] is the standard idiom for duration."
@@ -1224,10 +1216,6 @@
         {
           "text": "The Invoice gets created after shipment.",
           "audioSrc": "public/data/audio/dummy/dummy_056_sideB_3.mp3"
-        },
-        {
-          "text": "The Invoice is created after shipping.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_4.mp3"
         }
       ],
       "note": "[Post-shipment] is a concise technical way to say 'after shipment'.\n\n~...after ship~ (Grammar: [After] is a preposition here and requires a noun or gerund like [shipment] or [shipping]. 'Ship' is the base verb.)"
@@ -1254,7 +1242,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_057_sideB_3.mp3"
         }
       ],
-      "note": "Use [It takes...] to talk about the duration of an action.\n\n~...to recharge~ (Context: In software/web contexts, 'recargarse' is [reload]. [Recharge] is typically used for batteries or energy.)\n\n~It takes a long of time~ (Grammar: You can say [a long time] or [a lot of time], but not ~a long of time~.)"
+      "note": "Use [It takes...] to talk about the duration of an action.\n\n~...to recharge~ (Context: In software/web contexts, 'recargarse' is [reload]. [Recharge] is typically used for batteries or energy.)"
     },
     {
       "cardId": "dummy_058",
@@ -1570,7 +1558,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_072_sideB_2.mp3"
         }
       ],
-      "note": "[Be supposed to] implies an expectation, duty, or intended function.\n\n~What do they suppose to do?~ (Grammar: The expression is [be supposed to]. It requires the auxiliary verb 'to be', e.g., [What are they supposed to do?].)"
+      "note": "[Be supposed to] implies an expectation, duty, or intended function."
     },
     {
       "cardId": "dummy_073",
@@ -1618,7 +1606,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_074_sideB_3.mp3"
         }
       ],
-      "note": "[Dig around] is a casual phrasal verb often used for investigating code or logs.\n\n[Get back to you] is the standard business idiom for following up on a topic.\n\n~...to look around...~ (Usage: [Look around] usually implies browsing or surveying a physical space. Use [look into] or [dig around] to investigate a problem.)"
+      "note": "[Dig around] is a casual phrasal verb often used for investigating code or logs.\n\n[Get back to you] is the standard business idiom for following up on a topic."
     },
     {
       "cardId": "dummy_075",
@@ -1870,7 +1858,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_086_sideB_2.mp3"
         }
       ],
-      "note": "[Yet] at the end of a negative sentence implies you expect the action to happen soon.\n\n~...connected in/on the VPN~ (Grammar: The correct preposition is [connected to]. You can be [on] the network, but you connect [to] the VPN.)"
+      "note": "[Yet] at the end of a negative sentence implies you expect the action to happen soon."
     },
     {
       "cardId": "dummy_087",
@@ -1908,10 +1896,6 @@
         {
           "text": "I don't have the permissions to run commands on the Linux server.",
           "audioSrc": "public/data/audio/dummy/dummy_088_sideB_2.mp3"
-        },
-        {
-          "text": "They haven't given me the permissions to run commands on the Linux server.",
-          "audioSrc": "public/data/audio/dummy/dummy_088_sideB_3.mp3"
         }
       ],
       "note": "Passive voice ([I haven't been given]) shifts focus to your lack of access rather than who failed to give it."
@@ -1919,7 +1903,7 @@
     {
       "cardId": "dummy_089",
       "cardType": "flippable",
-      "sideA": "No sé a qué programa esa interfaz gráfica pertenece.",
+      "sideA": "No sé a qué programa pertenece esa interfaz gráfica.",
       "sideB": [
         {
           "text": "I don't know which program that GUI belongs to.",
