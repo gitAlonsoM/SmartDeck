@@ -3807,7 +3807,7 @@
       "hint": "This is a verb pattern (verb + gerund) that needs to be memorized.",
       "content": {
         "type": "text",
-        "value": "**[13]**\n\nVerbs like [enjoy], [avoid], and [finish] must be followed by a [Gerund] (-ing form), not an infinitive.\n\n~to explore~ is an infinitive and is grammatically incorrect after 'enjoy'.\n~explore~ is the base form and is also incorrect."
+        "value": "**[124]**\n\nVerbs like [enjoy], [avoid], and [finish] must be followed by a [Gerund] (-ing form), not an infinitive.\n\n~to explore~ is an infinitive and is grammatically incorrect after 'enjoy'.\n~explore~ is the base form and is also incorrect."
       }
     },
     {
@@ -4706,7 +4706,7 @@
       "hint": "This verb is intransitive, meaning it cannot take a direct object.",
       "content": {
         "type": "text",
-        "value": "**[52]**\n\n[Rise] is an intransitive verb, meaning the subject ('the cost of living') goes up by itself. It doesn't need an object.\n\n~raise~ would require an object (e.g., 'The government raises taxes').\n~risen~ is the past participle and cannot follow 'to'."
+        "value": "**[124]**\n\n[Rise] is an intransitive verb, meaning the subject ('the cost of living') goes up by itself. It doesn't need an object.\n\n~raise~ would require an object (e.g., 'The government raises taxes').\n~risen~ is the past participle and cannot follow 'to'."
       }
     },
     {
@@ -15902,6 +15902,180 @@
         "type": "text",
         "value": "**[121]**\n\nThe 30-minute mark is the limit of the 'Past' side. We say [half past] ten.\n\n~Half to~ does not exist.\n~Thirty to~ is never used; we switch to the 'To' side only *after* the 30-minute mark (e.g., 10:31 is 'twenty-nine minutes to eleven')."
       }
+    },
+    {
+    "cardId": "egac_549",
+    "category": "Catenative Verbs: Meaning Change (Stop)",
+    "sentenceParts": {
+      "prefix": "He had health problems, so he ",
+      "suffix": " smoking last year."
+    },
+    "options": [
+      {
+        "text": "stopped",
+        "isCorrect": true
+      },
+      {
+        "text": "stopped to",
+        "isCorrect": false
+      },
+      {
+        "text": "stopped for",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "He had health problems, so he stopped smoking last year.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_549.mp3",
+    "hint": "We need the structure that means 'to quit an action entirely', not 'to pause'.",
+    "content": {
+      "type": "text",
+      "value": "**[124]**\n\n**Stop + [Gerund]** means to quit an action entirely (e.g., 'He stopped smoking').\n\n~Stopped to [smoke]~ would mean he paused another action in order to have a cigarette."
+    }
+  },
+  {
+    "cardId": "egac_550",
+    "category": "Catenative Verbs: Meaning Change (Remember)",
+    "sentenceParts": {
+      "prefix": "I have a vivid memory of that day. I ",
+      "suffix": " meeting her for the first time."
+    },
+    "options": [
+      {
+        "text": "remember",
+        "isCorrect": true
+      },
+      {
+        "text": "remember to",
+        "isCorrect": false
+      },
+      {
+        "text": "remind",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "I have a vivid memory of that day. I remember meeting her for the first time.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_550.mp3",
+    "hint": "When referring to a memory of a past event, use the -ing form.",
+    "content": {
+      "type": "text",
+      "value": "**[124]**\n\n**Remember + [Gerund]** refers to recalling a memory from the past.\n\n~Remember to [meet]~ refers to not forgetting a task or obligation (e.g., 'Remember to lock the door')."
+    }
+  },
+  {
+    "cardId": "egac_551",
+    "category": "Catenative Verbs: Meaning Change (Stop)",
+    "sentenceParts": {
+      "prefix": "We were driving for hours, so we ",
+      "suffix": " to have lunch."
+    },
+    "options": [
+      {
+        "text": "stopped",
+        "isCorrect": true
+      },
+      {
+        "text": "stopped having",
+        "isCorrect": false
+      },
+      {
+        "text": "quit",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "We were driving for hours, so we stopped to have lunch.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_551.mp3",
+    "hint": "In this context, we paused the driving *in order to* eat.",
+    "content": {
+      "type": "text",
+      "value": "**[124]**\n\n**Stop + [Infinitive]** (to have) means to pause one action in order to do another.\n\n~Stopped having~ would mean we quit the habit of eating lunch entirely."
+    }
+  },
+  {
+    "cardId": "egac_552",
+    "category": "Catenative Verbs: Strictly Gerund",
+    "sentenceParts": {
+      "prefix": "I really ",
+      "suffix": " listening to jazz music in the evening."
+    },
+    "options": [
+      {
+        "text": "enjoy",
+        "isCorrect": true
+      },
+      {
+        "text": "want",
+        "isCorrect": false
+      },
+      {
+        "text": "decide",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "I really enjoy listening to jazz music in the evening.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_552.mp3",
+    "hint": "Which of these verbs is strictly followed by an -ing form?",
+    "content": {
+      "type": "text",
+      "value": "**[124]**\n\nThe verb **Enjoy** is strictly followed by a [Gerund] ('listening').\n\n~Want~ and ~Decide~ are strictly followed by 'to + infinitive' (e.g., 'want to listen', 'decide to listen')."
+    }
+  },
+  {
+    "cardId": "egac_553",
+    "category": "Catenative Verbs: Strictly Gerund",
+    "sentenceParts": {
+      "prefix": "If you make a mistake, just ",
+      "suffix": " trying until you get it right."
+    },
+    "options": [
+      {
+        "text": "keep",
+        "isCorrect": true
+      },
+      {
+        "text": "hope",
+        "isCorrect": false
+      },
+      {
+        "text": "offer",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "If you make a mistake, just keep trying until you get it right.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_553.mp3",
+    "hint": "This verb means 'continue' and requires the -ing form.",
+    "content": {
+      "type": "text",
+      "value": "**[124]**\n\nThe verb **Keep** (meaning continue) is strictly followed by a [Gerund] ('trying').\n\n~Hope~ and ~Offer~ are strictly followed by 'to + infinitive' (e.g., 'hope to try', 'offer to help')."
+    }
+  },
+  {
+    "cardId": "egac_554",
+    "category": "Catenative Verbs: Strictly Gerund",
+    "sentenceParts": {
+      "prefix": "The doctor suggested ",
+      "suffix": " more water daily."
+    },
+    "options": [
+      {
+        "text": "drinking",
+        "isCorrect": true
+      },
+      {
+        "text": "to drink",
+        "isCorrect": false
+      },
+      {
+        "text": "drink",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "The doctor suggested drinking more water daily.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_554.mp3",
+    "hint": "The verb 'suggest' never takes an infinitive.",
+    "content": {
+      "type": "text",
+      "value": "**[124]**\n\nThe verb **Suggest** is strictly followed by a [Gerund] ('drinking') or a 'that' clause.\n\n~to drink~ is a very common error; 'suggest' is never followed by 'to'."
+     }
     } 
   ]
 }
