@@ -35,6 +35,33 @@ class ImprovementService {
         if (markedCardIds.length === 0) {
             return { success: false, message: 'There are no cards marked for improvement to export.' };
         }
+        // 1. Determine which Glossary to load based on Deck ID
+        // Default to 'english_rules.json' (Grammar) but switch for specific decks.
+        let glossaryFilename = 'english_rules.json'; // Default
+        
+        // Simple detection logic based on deck ID string
+        const deckIdLower = deck.id.toLowerCase();
+        if (deckIdLower.includes('phrasal')) {
+            glossaryFilename = 'phrasal_verbs.json';
+        }
+        // Future: Add more 'else if' blocks here for other glossary types (e.g. 'collocations.json')
+
+        // 2. Fetch the determined Glossary
+        let glossaryContext = "{}";
+        try {
+            console.log(`DEBUG: [ImprovementService] Detected Glossary '${glossaryFilename}' for deck '${deck.id}'`);
+            const response = await fetch(`public/data/glossary/${glossaryFilename}`);
+            
+            if (response.ok) {
+                const json = await response.json();
+                glossaryContext = JSON.stringify(json, null, 2);
+                console.log(`VERIFY: Glossary '${glossaryFilename}' loaded successfully. Injected ${Object.keys(json).length} items into Prompt.`);
+            } else {
+                console.warn(`DEBUG: Glossary file '${glossaryFilename}' not found (404). Prompt will use empty glossary.`);
+            }
+        } catch (error) {
+            console.error("DEBUG: Critical error loading glossary:", error);
+        }
 
         const cardMap = new Map(deck.cards.map(c => [c.cardId, c]));
         const exportBatch = markedCardIds.map(cardId => {
@@ -47,8 +74,9 @@ class ImprovementService {
 
         const correctCommand = `py update_deck.py --deck-file "${deckRelativePath}" --input-file "corrections.json"`;
 
-        const textToCopy = this._generateImprovementPrompt(deck.name, correctCommand, exportBatch); 
-
+        // Pass glossaryContext to the prompt generator
+        const textToCopy = this._generateImprovementPrompt(deck.name, correctCommand, exportBatch, glossaryContext, deckRelativePath);
+        
         try {
             await navigator.clipboard.writeText(textToCopy);
             return { success: true, count: exportBatch.length };
@@ -63,23 +91,18 @@ class ImprovementService {
      * @private
      */
 
-static _generateImprovementPrompt(deckName, correctCommand, cardsToImprove) {
+static _generateImprovementPrompt(deckName, correctCommand, cardsToImprove, glossaryJson, deckFilePath) {
 
         const promptHeader = `
 
- # SmartDeck Card Improvement Prompt V8.2
+# SmartDeck Card Improvement Prompt V9.0 (Glossary Enabled)
 ## 1. ROLE AND GOAL
-You are an expert Content Quality Analyst and Instructional Designer for 'SmartDeck'. Your goal is to significantly enhance the pedagogical value of a batch of flashcards based on user feedback and your own expertise. Your directives are:
-1.  **Enhance, Don't Break**: Follow all rules precisely to ensure the data remains machine-readable.
-2.  **Add Value Proactively**: Don't just fix the reported issue. If you see an opportunity to make a card better for learning, take it. For example, if a user provides a correct sentence, you can add another one.
-3.  **Be Clear and Concise**: All additions must be in simple, clear English.
+You are an expert Content Quality Analyst and Instructional Designer for 'SmartDeck'. Your goal is to significantly enhance the pedagogical value of a batch of flashcards based on user feedback and your own expertise.
 
 ## 2. CONTEXT
 - **Deck Name:** "${deckName}"
 
 ## 3. CARD DATA STRUCTURES & FIELD RULES
-(The rules for card structures remain the same...)
-
 ### A) Multiple-Choice ('multipleChoice') Card
 - \`cardId\`: **READ-ONLY**.
 - \`category\`, \`hint\`: **MODIFIABLE**.
@@ -93,9 +116,11 @@ You are an expert Content Quality Analyst and Instructional Designer for 'SmartD
 - \`sideA\`: **MODIFIABLE**.
 - \`sideB\`: **PRIMARY VALUE-ADD FIELD**.
 - \`note\`: **PRIMARY VALUE-ADD FIELD**.
-- \` - **CRITICAL RULE:** This field may start with a grammar rule ID. The required literal format for this ID is **[ID]** (e.g., **[12]**), which links to a grammar rule. **This syntax MUST NOT be altered, corrected, or removed. (SOLO TOCARAS ESTE NUMERO SI EL USUARIO TE SOLICITA EXPLICITAMENTE QUE LO ELIMINES DE LA TARJETA, POR EJEMPLO EL USUARIO PODRIA DECIRTE "ELIMINA EL MODAL DE LA CARD, NO APLICA", ENTONCES DEBERAS ELIMINAR EL NUMERO Y LOS SIGNOS QUE LE RODEAN, PARA QUE DEJE DE APARECER EL MODAL EN PANTALLA, DEBERAS ELIMINAR COMPLETO LOS 2 SIMBOLOS DE ASTERISCOS, LOS CORCHETES Y EL NUMERO INTERNO, TODO ESE CONJUTO SERA ELIMINANDO, CUANDO EL USUARIO SOLICITE ELIMINAR EL MODAL DE LA CARD.
-- \` EJEMPLO:  "value": "**[79]**\n\n[Look at] is a prepositional  , SE CONVERTIRA EN  "value": "[Look at] is a prepositional SI EL USUARIO SOLICITA ELIMINARLE EL MODAL.
-- \`  ### C) Grammar Audio-Choice ('audioChoice') Card
+- \` - **CRITICAL RULE:** This field may start with a grammar rule ID. The required literal format for this ID is **[ID]** (e.g., **[12]**), which links to a grammar rule. **This syntax MUST NOT be altered, corrected, or removed.**
+    - **Exception:** Only remove it if the user explicitly asks to "Remove the modal".
+    - **Injection:** To add a modal, see Section 6.
+
+### C) Grammar Audio-Choice ('audioChoice') Card
 - \`cardId\`: **READ-ONLY**.
 - \`audioSrc\`: **READ-ONLY**.
 - \`category\`, \`hint\`: **MODIFIABLE**.
@@ -106,10 +131,17 @@ You are an expert Content Quality Analyst and Instructional Designer for 'SmartD
 ## 4. CORE WORKFLOW & RULES
 1.  **Analyze Request**: Carefully read the \`review_request\` for each card.
 2.  **Apply Expertise**: Go beyond the user's request and add value.
-3.  **Preserve Existing Content**: When adding to fields like \`note\`, ALWAYS append!.
+3.  **Preserve Existing Content**: When adding to fields like \`note\`, ALWAYS append!
+
+### 🚫 4.1 THE "ZERO NOISE" POLICY (MANDATORY)
+You must adhere to this strict style guide for all card content:
+* **No Meta-Labels:** Do NOT use labels like "Answer:", "Translation:", "Example:", "In English:", or "Meaning:". The user understands the context; just give the content.
+* **No Numbered Titles:** Never write titles like ~"10 Examples"~. Just use "Examples". Content matters, not the count.
+* **Direct Approach:** Deliver pure educational content. No preambles, no conversational fillers like "Here is the corrected sentence".
+* **No Visual Metadata:** Never include the name of the color, style, or formatting in the text title or body (e.g., NEVER write "Title (Green)" or "Word (Bold)"). Just apply the HTML class; do not describe it in text.
 
 ## 5. SPECIAL RULE: Handling "add_answer" and User Suggestions
-This is the most critical rule. When a user request includes the reason \`add_answer\` or provides a new sentence in the \`user_comment\`, you MUST follow this logic(user_comment tiene la mayor relevancia, al ser un comentario directo del usuario de sus intenciones con la card, ya sea agregar nueva oracion, mejorarla con alguna aclaracion, etc.):
+This is the most critical rule. When a user request includes the reason \`add_answer\` or provides a new sentence in the \`user_comment\`, you MUST follow this logic:
 
 ### Step 1: Evaluate the User's Suggested Sentence
 Analyze the sentence provided in \`review_request.user_comment\`.
@@ -119,84 +151,131 @@ Analyze the sentence provided in \`review_request.user_comment\`.
     - **Audio Path Generation (for \`sideB\`):** When adding a new sentence object to the \`sideB\` array, you **MUST** also generate its corresponding \`audioSrc\` path. The path follows a strict pattern: \`public/data/audio/{deck_name}/{cardId}_sideB_{index}.mp3\`.
         - \`{deck_name}\`: The deck name from the "CONTEXT" section (e.g., "Common Meeting" becomes "common_meeting").
         - \`{cardId}\`: The ID of the card being edited.
-        - \`{index}\`: The new zero-based index of the sentence in the \`sideB\` array. For example, if there are already 3 items (indices 0, 1, 2), the new item's index will be 3.
-        
-- **Report:** In your "Resumen de Cambios", state that you accepted and added the user's suggestion.
+        - \`{index}\`: The new zero-based index of the sentence in the \`sideB\` array.
+
+- **Report:** In your "Improvement Report", state that you accepted and added the user's suggestion.
 
 ### Step 3: If the Suggestion is INCORRECT
 This is a two-part process. You must modify **both** the card data and your summary.
 
 **A) Modify the Card's UI-Visible Note:**
 - **Action:** You **MUST** append the user's incorrect suggestion to the card's *UI-visible note field* to serve as a learning opportunity.
-    - For \`flippable\` cards, append to the \`note\` field.
-    - For \`multipleChoice\` or \`audioChoice\` cards, append to the \`content.value\` field.
 - **Format:**
     1.  Start with a double newline \`\\n\\n\` to separate from previous content.
     2.  Write the incorrect sentence wrapped in tildes (\`~...~\`).
     3.  Follow it with a concise, parenthetical explanation of *why* it is incorrect.
-- **Example for a \`note\` field:** \`\\n\\n~I am agree with you~ (Incorrect verb form: 'agree' is a verb and does not need 'to be'.)\`
-    4. FORMAT ENHANCEMENT RULE 
-    - **Demarcation:** When adding or referencing correct, pedagogically valuable phrases, idioms, or keywords to text fields (\`note\` or \`content.value\`), you **MUST** enclose them in square brackets (\`[...] \`). This reinforces instructional value and deck consistency.
-    - **Example:** \`[To get a full picture] is a great idiom.\`
+    - **Example:** \`\\n\\n~I am agree~ (Incorrect: 'Agree' is a verb, use 'I agree'.)\`
+    4.  **Demarcation:** Enclose correct keywords in square brackets \`[...]\`.
 
-**B) Report in Your "Resumen de Cambios":**
-- **Action:** In your summary for that card, you **MUST** first state the user's verbatim suggestion, and then clearly explain your reasoning for the rejection.
-- **Example Summary Line:** \`- Card pv_025: User suggested adding "I am agree with you". This was rejected because the verb 'agree' does not require the auxiliary 'to be'. I have added this clarification to the card's note.\`
+**B) Report in Your "Improvement Report":**
+- **Action:** State the user's verbatim suggestion and explain why it was rejected.
+
+## 6. SPECIAL RULE: HANDLING "ADD MODAL" REQUESTS (NEW GLOSSARY LOGIC)
+If the user's \`user_comment\` asks to "Add the modal for [Topic]" (e.g., "Add modal for Present Simple", "Poner modal de phrasal verbs", "Falta link al modal"):
+
+1.  **SEARCH**: Look up the topic in the **GLOSSARY DATABASE** provided in Section 8 below. Match the topic title or keywords.
+2.  **IDENTIFY ID**: Find the numerical key (ID) for that entry (e.g., "1", "105", "116").
+3.  **INJECT**: You must prepend the ID using the strict syntax \`**[ID]**\` followed by a double newline \`\\n\\n\` to the card's \`note\` field (or \`content.value\`).
+    - **Format:** \`"note": "**[105]**\\n\\nExisting note content..."\`
+4.  **REPORT**: In the Improvement Report, confirm: "Added Modal Link **[105]** ('Title of Modal') as requested."
+
+## 7. SPECIAL RULE: MODAL CONTENT IMPROVEMENT (THE "ANTI-SHIT" PROTOCOL)
+If the user asks to "Improve Modal [ID]", "Fix Modal [ID]", or "Rewrite Modal [ID]" content (e.g., "Mejorar el modal 50", "Rewrite modal content for clarity"), you must regenerate its content following these **MANDATORY DESIGN STANDARDS**:
+
+### A. The "Algorithm of Density" (Quantity)
+*Never create basic modals with few examples.*
+- **Single Concept (1 Word):** Exactly **6 examples**.
+- **Comparison (2 Words):** Minimum **12 examples** (6 per word/case).
+- **Complex Topic:** Minimum **18 examples**.
+- *Objective:* The user must see enough patterns to understand the rule intuitively.
+
+### B. HTML & Tailwind Palette (Visuals)
+Use ONLY these classes for highlighting. Do not use random colors.
+- \`text-green-400\`: Verbs, Correct forms, Main Subjects.
+- \`text-yellow-400\`: Focus words, Objects, Base forms.
+- \`text-cyan-400\`: Auxiliaries, Adverbs, Negatives (don't/doesn't).
+- \`text-violet-400\`: Wh-Words (Who/What), Titles.
+- \`text-orange-400\`: Alternatives/Warnings.
+- **Visual Silence:** NEVER write the color name (e.g., "(Green)", "Color: Red") in the text or titles. Apply the class silently.
+- **Backgrounds:** Use \`bg-gray-800 p-2 rounded\` for code/structure blocks.
 
 
-## 6. CRITICAL: REQUIRED OUTPUT FORMAT & STRUCTURE
-Your final response MUST be structured into exactly **two distinct parts**.
-⛔ **PROHIBITED:** Do NOT wrap the entire response in a single code block. The Report must be outside the JSON block.
+### C. Structure (The Formula)
+Unless it is a purely lexical modal (idioms), you **MUST** include a Structure section.
+- **HTML:** \`<h3 class='font-semibold text-lg mb-2 text-white'>Structure:</h3>\`
+- **Consistency:** If "Verb" is \`text-green-400\` in the Structure, it **MUST** be green in all Examples.
 
-### Part 1: The Code Artifact
-1. Output the header: \`## 1. Corrected Cards JSON\`
-2. **Open a JSON code block** (\`\`\`json).
-3. Output the raw JSON array (MANDATORY!: excluding \`review_request\`,  \`reasons\`, \`user_comment\`).
-- **IMMUTABLE STRUCTURE**: You must output **EXACTLY** the same keys/fields for each card as provided in the input JSON. A EXCEPCION DE METADA COMO: " \`review_request\`,  \`reasons\`, \`user_comment\`), ESTOS NO ENTRAN EN TU OUPUT."
-   - **NO NEW FIELDS**: If the input card does NOT have a \`content\` field, **DO NOT ADD IT**.
-   - **NO DELETED FIELDS**: If the input card HAS a \`content\` field, **YOU MUST KEEP IT**.
-   - **ONLY MODIFY VALUES**: Your job is to improve the *text* inside the existing fields. Do not alter the JSON schema/structure of the cards.
-   - **EXCLUDE METADATA**: Do not output \`review_request\`, \`reasons\`, or \`user_comment\`.
-4. **CLOSE the JSON code block** (\`\`\`) immediately after the array closing bracket.
-    
-### Part 2: The Improvement Report (Markdown Text)
-**OUTSIDE** of any code block, output the report following this exact hierarchy:
+### D. Output Location
+You must output the full JSON object for the modified modal(s) in a **separate JSON block** (See Section 10, Part 2).
 
-1. Output the header: \`## 2. 📝 Improvement Report\`
+## 8. SPECIAL RULE: HANDLING META-NOTICES
+If the user writes "AVISAR AL USUARIO" or "CAMBIAR APP", listing in Report (Section 10, Part 3).
+
+## 9. GLOSSARY DATABASE (REFERENCE ONLY)
+Use this data to resolve IDs or as a base for improvements.
+\`\`\`json
+${glossaryJson}
+\`\`\`
+
+## 10. CRITICAL: REQUIRED OUTPUT FORMAT & STRUCTURE
+Your final response MUST be structured into distinct parts.
+⛔ **PROHIBITED:** Do NOT wrap the entire response in a single code block.
+
+### Part 1: The Code Artifact (Cards)
+1. Header: \`## 1. Corrected Cards JSON\`
+2. JSON Block (\`\`\`json) with the array of corrected cards.
+3. **MANDATORY CLEANUP:** You must STRIP/REMOVE the \`review_request\` object and all its contents (\`user_comment\`, \`reasons\`) from every card. The output must be pure card data.
+4. **IMMUTABLE STRUCTURE:**
+   - **NO NEW FIELDS:** Do NOT add fields like \`content\` if the original card did not have them. Tu no cambias la estructura del JSON, solo cambias el contenido de este.
+   - **NO DELETIONS:** Keep all original fields (except the metadata mentioned in step 3).
+
+### Part 2: Improved Modals JSON (Optional)
+**ONLY** include this section if you improved/redesigned a modal (Rule 7).
+1. Header: \`## 2. Improved Modals JSON\`
+2. Create a **Single JSON Block** (\`\`\`json) containing an object where keys are the Modal IDs.
+   - **Example:**
+   \`\`\`json
+   {
+     "50": {
+       "title": "Improved Title",
+       "content": "<p>New HTML content...</p>"
+     },
+     "102": { ... }
+   }
+   \`\`\`
+
+### Part 3: The Improvement Report (Markdown)
+1. Header: \`## 3. 📝 Improvement Report\`
 
 #### A. Batch Statistics
-Provide a vertical list:
 - **Total Analyzed:** [X]
-- **Modified:** [Y]
-- **Unchanged:** [Z]
-- **Decisions:**
-  - ✅ **Accepted:** [A] (Suggestion added to content)
-  - ⚠️ **Rejected:** [B] (Suggestion incorrect; note added)
+- **Modified Cards:** [Y]
+- **Improved Modals:** [Z]
 
 #### B. Change Log Summary
-For **EVERY** processed card, provide a bullet point explaining the changes:
-- **Card [ID]:**
-  - **User Request:** "[Insert the user's **verbatim** request here, preserving all typos/grammar errors exactly as written]"
-  - **Action Taken:** [Detailed explanation of why the change was accepted or rejected, and what specific field was modified]
+- **Card [ID] / Modal [ID]:**
+  - **User Request:** "..."
+  - **Action Taken:** "..."
 
-#### C. Next Steps
-- **Step 1:** Save the JSON above into a file named \`corrections.json\`.
-- **Step 2:** Run the following command exactly:
+#### C. 📢 Special User Notices
+(If applicable)
+
+#### D. Next Steps
+- **Step 1:** Save Card JSON to \`corrections.json\`.
+- **Step 2:** (If Modals Changed) Update \`public/data/glossary/YOUR_GLOSSARY_FILE.json\` with the content from Part 2.
+- **Step 3:** Run update command:
 \`\`\`bash
 ${correctCommand}
 \`\`\`
-
-- **Step 3 (Mandatory Audio):** If you added ANY new content (new cards or new sentences), you **MUST** instruct the user to run the audio generator using the deck path found in Step 2:
+- **Step 4:** Run audio generator (if needed).
 \`\`\`bash
-py generate_audios_google.py public/data/YOUR_DECK_FILENAME.json
+py generate_audios_google.py "${deckFilePath}"
 \`\`\`
 
 ---
 [BEGIN CARD BATCH FOR YOUR REVIEW]
 ---
 `;
-
-console.log("DEBUG: Contenido de las tarjetas ANTES de stringify:", cardsToImprove);
 
         const jsonString = JSON.stringify(cardsToImprove, null, 2);
         const jsonBlock = '```json\n' + jsonString + '\n```';

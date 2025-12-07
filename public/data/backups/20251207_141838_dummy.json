@@ -150,7 +150,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_007_sideB_3.mp3"
         }
       ],
-      "note": "When a question is part of a sentence ('I don't know...'), use normal Statement Order: [Subject + Verb].\n\nCorrect: [what this code does].\nIncorrect: ~what does this code~."
+      "note": "**[Indirect Question Rule]**\n\nWhen a question is part of a sentence ('I don't know...'), use normal Statement Order: [Subject + Verb].\n\nCorrect: [what this code does].\nIncorrect: ~what does this code~."
     },
     {
       "cardId": "dummy_008",
@@ -190,7 +190,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_009_sideB_2.mp3"
         }
       ],
-      "note": "**[111]**\n\nStandard question structure: [Question Word] + [Auxiliary/Verb] + [Subject] + [Preposition]?\n\n~For what is this function?~ (While grammatically possible, it sounds very formal or archaic. [What is this function for?] is the standard natural form.)\n\n~What does this function for?~ (Incorrect: 'Does' requires a main verb like 'do'. Since the question uses the preposition 'for' to ask about purpose, use the verb [is]: 'What [is] this function for?')"
+      "note": "Standard question structure: [Question Word] + [Auxiliary/Verb] + [Subject] + [Preposition]?\n\n~For what is this function?~ (While grammatically possible, it sounds very formal or archaic. [What is this function for?] is the standard natural form.)\n\n~What does this function for?~ (Incorrect: 'Does' requires a main verb like 'do'. Since the question uses the preposition 'for' to ask about purpose, use the verb [is]: 'What [is] this function for?')"
     },
     {
       "cardId": "dummy_010",
@@ -210,7 +210,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_010_sideB_2.mp3"
         }
       ],
-      "note": "**[111]**\n\nAgain, place [for] at the end.\n\n[Supposed to do] implies you are asking about the *intention* behind the code."
+      "note": "Again, place [for] at the end.\n\n[Supposed to do] implies you are asking about the *intention* behind the code."
     },
     {
       "cardId": "dummy_011",
@@ -250,7 +250,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_012_sideB_2.mp3"
         }
       ],
-      "note": "[Snippet] or [Piece of code] are common terms for a small segment of code.\n\n~What does this code part?~ (Grammar error: Missing the main verb. Correct: What does this part [do]?)\n\n~What does this part of code do?~ (Slightly unnatural: It is better to use the specific article [part of the code] or the compound noun [code snippet].)"
+      "note": "**[50]**\n\n[Snippet] or [Piece of code] are common terms for a small segment of code.\n\n~What does this code part?~ (Grammar error: Missing the main verb. Correct: What does this part [do]?)\n\n~What does this part of code do?~ (Slightly unnatural: It is better to use the specific article [part of the code] or the compound noun [code snippet].)"
     },
     {
       "cardId": "dummy_013",
