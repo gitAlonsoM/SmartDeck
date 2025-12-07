@@ -22,7 +22,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_001_sideB_2.mp3"
         }
       ],
-      "note": "In a database context, [records] is the standard term for 'registros'.\n\nWhile 'rows' is correct when mapping directly to a DB, generic JSON items are often called [items] or [objects]."
+      "note": "In a database context, [records] is the standard term for 'registros'.\n\nWhile 'rows' is correct when mapping directly to a DB, generic JSON items are often called [items] or [objects].\n\n~...the backend fetched two records~ (Meaning Mismatch: [Fetched] implies the backend got data *from* the DB. [Returned] matches 'devolvió' (sending data *to* the frontend).)"
     },
     {
       "cardId": "dummy_002",
@@ -102,7 +102,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_005_sideB_2.mp3"
         }
       ],
-      "note": "[That way] is the most natural conversational connector for 'De esa forma'.\n\n[To get something back] or [To send something back] captures 'tener de regreso'."
+      "note": "[That way] is the most natural conversational connector for 'De esa forma'.\n\n[To get something back] or [To send something back] captures 'tener de regreso'.\n\n~...get back the data to the...~ (Phrasing: While not strictly incorrect, it is much more natural to place the object in the middle of the phrasal verb: [get the data back].)\n\n~...have back the data...~ (Unnatural: Use [get ... back] or [receive ... back] instead of 'have back'.)"
     },
     {
       "cardId": "dummy_006",
@@ -120,6 +120,10 @@
         {
           "text": "That allows us to return the data to the backend.",
           "audioSrc": "public/data/audio/dummy/dummy_006_sideB_2.mp3"
+        },
+        {
+          "text": "That way, we can send back the data to the backend.",
+          "audioSrc": "public/data/audio/dummy/dummy_006_sideB_3.mp3"
         }
       ],
       "note": "[Pass data] is also common when moving data between layers.\n\n~In that form~ (False Friend: 'Forma' here means [Way] or [Manner], not 'Form' (shape/document). Use [That way].)"
@@ -140,6 +144,10 @@
         {
           "text": "I have no idea what this code is doing.",
           "audioSrc": "public/data/audio/dummy/dummy_007_sideB_2.mp3"
+        },
+        {
+          "text": "I don't know what this code is for.",
+          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_3.mp3"
         }
       ],
       "note": "**[Indirect Question Rule]**\n\nWhen a question is part of a sentence ('I don't know...'), use normal Statement Order: [Subject + Verb].\n\nCorrect: [what this code does].\nIncorrect: ~what does this code~."
@@ -162,7 +170,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_008_sideB_2.mp3"
         }
       ],
-      "note": "The preposition [for] usually goes at the end of the clause in English: [what this function is for].\n\n~I don't know for what is this function~ (Unnatural word order)."
+      "note": "The preposition [for] usually goes at the end of the clause in English: [what this function is for].\n\n~I don't know for what is this function~ (Unnatural word order).\n\n~I don't know what is this function for~ (Incorrect word order: In indirect questions, the subject [this function] must come before the verb [is]. Correct: [what this function is for].)"
     },
     {
       "cardId": "dummy_009",
@@ -203,6 +211,214 @@
         }
       ],
       "note": "Again, place [for] at the end.\n\n[Supposed to do] implies you are asking about the *intention* behind the code."
-    }
+  },
+  {
+    "cardId": "dummy_011",
+    "cardType": "flippable",
+    "sideA": "¿Qué hace esta parte?",
+    "sideB": [
+      {
+        "text": "What does this part do?",
+        "audioSrc": "public/data/audio/dummy/dummy_011_sideB_0.mp3"
+      },
+      {
+        "text": "What is this part doing?",
+        "audioSrc": "public/data/audio/dummy/dummy_011_sideB_1.mp3"
+      },
+      {
+        "text": "What is the function of this part?",
+        "audioSrc": "public/data/audio/dummy/dummy_011_sideB_2.mp3"
+      }
+    ],
+    "note": "Standard question structure with the auxiliary [does].\n\n~What makes this part?~ (False friend: 'Hacer' is [Do] here, not 'Make'.)"
+  },
+  {
+    "cardId": "dummy_012",
+    "cardType": "flippable",
+    "sideA": "¿Qué hace esta pieza de código?",
+    "sideB": [
+      {
+        "text": "What does this piece of code do?",
+        "audioSrc": "public/data/audio/dummy/dummy_012_sideB_0.mp3"
+      },
+      {
+        "text": "What does this code snippet do?",
+        "audioSrc": "public/data/audio/dummy/dummy_012_sideB_1.mp3"
+      },
+      {
+        "text": "What is this bit of code doing?",
+        "audioSrc": "public/data/audio/dummy/dummy_012_sideB_2.mp3"
+      }
+    ],
+    "note": "[Snippet] or [Piece of code] are common terms for a small segment of code.\n\n~What does this code part?~ (Grammar error: Missing the main verb. Correct: What does this part [do]?)"
+  },
+  {
+    "cardId": "dummy_013",
+    "cardType": "flippable",
+    "sideA": "No sé qué hace esta parte del código.",
+    "sideB": [
+      {
+        "text": "I don't know what this part of the code does.",
+        "audioSrc": "public/data/audio/dummy/dummy_013_sideB_0.mp3"
+      },
+      {
+        "text": "I'm not sure what this code snippet is doing.",
+        "audioSrc": "public/data/audio/dummy/dummy_013_sideB_1.mp3"
+      },
+      {
+        "text": "I have no idea what this section of code does.",
+        "audioSrc": "public/data/audio/dummy/dummy_013_sideB_2.mp3"
+      }
+    ],
+    "note": "Indirect Question Rule: Use statement order [Subject + Verb].\n\nCorrect: ...what this part [does].\nIncorrect: ~...what does this part.~"
+  },
+  {
+    "cardId": "dummy_014",
+    "cardType": "flippable",
+    "sideA": "Sí sé qué hace esta parte.",
+    "sideB": [
+      {
+        "text": "I do know what this part does.",
+        "audioSrc": "public/data/audio/dummy/dummy_014_sideB_0.mp3"
+      },
+      {
+        "text": "I know what this part does.",
+        "audioSrc": "public/data/audio/dummy/dummy_014_sideB_1.mp3"
+      },
+      {
+        "text": "I understand what this part is doing.",
+        "audioSrc": "public/data/audio/dummy/dummy_014_sideB_2.mp3"
+      }
+    ],
+    "note": "To emphasize 'Sí' in 'Sí sé' (affirming against a doubt), we use the auxiliary [do] before the verb.\n\nExample: I [do] want to go."
+  },
+  {
+    "cardId": "dummy_015",
+    "cardType": "flippable",
+    "sideA": "Sí sé para qué se usa esta parte.",
+    "sideB": [
+      {
+        "text": "I do know what this part is used for.",
+        "audioSrc": "public/data/audio/dummy/dummy_015_sideB_0.mp3"
+      },
+      {
+        "text": "I know what this part is for.",
+        "audioSrc": "public/data/audio/dummy/dummy_015_sideB_1.mp3"
+      },
+      {
+        "text": "I understand what this part is used for.",
+        "audioSrc": "public/data/audio/dummy/dummy_015_sideB_2.mp3"
+      }
+    ],
+    "note": "The preposition [for] goes at the end.\n\n~I know for what is used this part~ (Incorrect Word Order)."
+  },
+  {
+    "cardId": "dummy_016",
+    "cardType": "flippable",
+    "sideA": "Esto es equivalente a eso que dices.",
+    "sideB": [
+      {
+        "text": "This is equivalent to what you are saying.",
+        "audioSrc": "public/data/audio/dummy/dummy_016_sideB_0.mp3"
+      },
+      {
+        "text": "This corresponds to what you're saying.",
+        "audioSrc": "public/data/audio/dummy/dummy_016_sideB_1.mp3"
+      },
+      {
+        "text": "This amounts to the same thing you're saying.",
+        "audioSrc": "public/data/audio/dummy/dummy_016_sideB_2.mp3"
+      }
+    ],
+    "note": "[Equivalent to] is the standard phrase.\n\n[What you are saying] is a noun clause acting as the object of 'to'.\n\n~This is equivalent to that what you say~ (Redundant: Use just [what] instead of 'that what')."
+  },
+  {
+    "cardId": "dummy_017",
+    "cardType": "flippable",
+    "sideA": "Listo. / Hecho.",
+    "sideB": [
+      {
+        "text": "Done.",
+        "audioSrc": "public/data/audio/dummy/dummy_017_sideB_0.mp3"
+      },
+      {
+        "text": "All set.",
+        "audioSrc": "public/data/audio/dummy/dummy_017_sideB_1.mp3"
+      },
+      {
+        "text": "Finished.",
+        "audioSrc": "public/data/audio/dummy/dummy_017_sideB_2.mp3"
+      },
+      {
+        "text": "Ready.",
+        "audioSrc": "public/data/audio/dummy/dummy_017_sideB_3.mp3"
+      }
+    ],
+    "note": "[All set] is a very common, friendly way to say you are ready or a task is complete in a team context."
+  },
+  {
+    "cardId": "dummy_018",
+    "cardType": "flippable",
+    "sideA": "¡Ahí tienen! / ¡Ahí va! (Al pasar un link o archivo)",
+    "sideB": [
+      {
+        "text": "There you go.",
+        "audioSrc": "public/data/audio/dummy/dummy_018_sideB_0.mp3"
+      },
+      {
+        "text": "Here you go.",
+        "audioSrc": "public/data/audio/dummy/dummy_018_sideB_1.mp3"
+      },
+      {
+        "text": "Link is in the chat.",
+        "audioSrc": "public/data/audio/dummy/dummy_018_sideB_2.mp3"
+      }
+    ],
+    "note": "[There you go] or [Here you go] are the standard phrases when physically handing something to someone or pasting a link in a chat window."
+  },
+  {
+    "cardId": "dummy_019",
+    "cardType": "flippable",
+    "sideA": "Acabo de enviarlo.",
+    "sideB": [
+      {
+        "text": "Just sent.",
+        "audioSrc": "public/data/audio/dummy/dummy_019_sideB_0.mp3"
+      },
+      {
+        "text": "I just sent it.",
+        "audioSrc": "public/data/audio/dummy/dummy_019_sideB_1.mp3"
+      },
+      {
+        "text": "Just sent it over.",
+        "audioSrc": "public/data/audio/dummy/dummy_019_sideB_2.mp3"
+      },
+      {
+        "text": "Sent.",
+        "audioSrc": "public/data/audio/dummy/dummy_019_sideB_3.mp3"
+      }
+    ],
+    "note": "In chat contexts, it is acceptable to drop the subject 'I' and just say [Just sent].\n\n[Just] is used for very recent past actions."
+  },
+  {
+    "cardId": "dummy_020",
+    "cardType": "flippable",
+    "sideA": "Acabo de subirlo.",
+    "sideB": [
+      {
+        "text": "Just uploaded it.",
+        "audioSrc": "public/data/audio/dummy/dummy_020_sideB_0.mp3"
+      },
+      {
+        "text": "It's up.",
+        "audioSrc": "public/data/audio/dummy/dummy_020_sideB_1.mp3"
+      },
+      {
+        "text": "File is uploaded.",
+        "audioSrc": "public/data/audio/dummy/dummy_020_sideB_2.mp3"
+      }
+    ],
+    "note": "[It's up] is a very idiomatic phrasal way to say something has been successfully uploaded to a server or cloud."
+  }
   ]
 }

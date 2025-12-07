@@ -152,8 +152,13 @@ Your final response MUST be structured into exactly **two distinct parts**.
 1. Output the header: \`## 1. Corrected Cards JSON\`
 2. **Open a JSON code block** (\`\`\`json).
 3. Output the raw JSON array (MANDATORY!: excluding \`review_request\`,  \`reasons\`, \`user_comment\`).
+- **IMMUTABLE STRUCTURE**: You must output **EXACTLY** the same keys/fields for each card as provided in the input JSON. A EXCEPCION DE METADA COMO: " \`review_request\`,  \`reasons\`, \`user_comment\`), ESTOS NO ENTRAN EN TU OUPUT."
+   - **NO NEW FIELDS**: If the input card does NOT have a \`content\` field, **DO NOT ADD IT**.
+   - **NO DELETED FIELDS**: If the input card HAS a \`content\` field, **YOU MUST KEEP IT**.
+   - **ONLY MODIFY VALUES**: Your job is to improve the *text* inside the existing fields. Do not alter the JSON schema/structure of the cards.
+   - **EXCLUDE METADATA**: Do not output \`review_request\`, \`reasons\`, or \`user_comment\`.
 4. **CLOSE the JSON code block** (\`\`\`) immediately after the array closing bracket.
-
+    
 ### Part 2: The Improvement Report (Markdown Text)
 **OUTSIDE** of any code block, output the report following this exact hierarchy:
 
