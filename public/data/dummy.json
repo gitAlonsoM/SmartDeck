@@ -459,6 +459,70 @@
         }
       ],
       "note": "[It's up] is a very idiomatic phrasal way to say something has been successfully uploaded to a server or cloud.\n\n~Just uploaded~ (Incomplete: Since the Spanish is 'subirlo', you need the object [it] in English: [Just uploaded it].)"
+    },
+    {
+      "cardId": "dummy_021",
+      "cardType": "flippable",
+      "sideA": "La base de datos devolvió más de 1.000 registros.",
+      "sideB": [
+        {
+          "text": "The database returned more than 1,000 records.",
+          "audioSrc": "public/data/audio/dummy/dummy_021_sideB_0.mp3"
+        },
+        {
+          "text": "The DB returned over 1,000 records.",
+          "audioSrc": "public/data/audio/dummy/dummy_021_sideB_1.mp3"
+        }
+      ],
+      "note": "**[134]**\n\nIn the context of databases, a 'row' of data is always called a [record].\n\n~The database returned 1,000 registers~ (Incorrect: [Register] usually refers to a hardware component in a CPU or an official list of names, not rows of data.)"
+    },
+    {
+      "cardId": "dummy_022",
+      "cardType": "flippable",
+      "sideA": "Cada registro en SQL equivale a una fila completa en el JSON.",
+      "sideB": [
+        {
+          "text": "Each record in SQL is equivalent to a complete row in the JSON.",
+          "audioSrc": "public/data/audio/dummy/dummy_022_sideB_0.mp3"
+        },
+        {
+          "text": "Every SQL record corresponds to a full JSON row.",
+          "audioSrc": "public/data/audio/dummy/dummy_022_sideB_1.mp3"
+        }
+      ],
+      "note": "**[134]**\n\nHere we use [record] because we are referring to a single unit of stored information."
+    },
+    {
+      "cardId": "dummy_023",
+      "cardType": "flippable",
+      "sideA": "Por favor, firme el registro de visitantes.",
+      "sideB": [
+        {
+          "text": "Please sign the visitor log.",
+          "audioSrc": "public/data/audio/dummy/dummy_023_sideB_0.mp3"
+        },
+        {
+          "text": "Please sign the logbook.",
+          "audioSrc": "public/data/audio/dummy/dummy_023_sideB_1.mp3"
+        }
+      ],
+      "note": "**[134]**\n\nWhen we track *events* (like people entering or exiting) in chronological order, we use [log] or [logbook].\n\n~Sign the visitor record~ (Less natural: 'Record' usually implies the permanent file kept *after* the fact, not the book you sign at the door.)"
+    },
+    {
+      "cardId": "dummy_024",
+      "cardType": "flippable",
+      "sideA": "La iglesia mantiene un registro detallado.",
+      "sideB": [
+        {
+          "text": "The church keeps a detailed register.",
+          "audioSrc": "public/data/audio/dummy/dummy_024_sideB_0.mp3"
+        },
+        {
+          "text": "The church maintains a detailed register.",
+          "audioSrc": "public/data/audio/dummy/dummy_024_sideB_1.mp3"
+        }
+      ],
+      "note": "**[134]**\n\nWe use [register] here because it refers to an official, formal book of names (births, marriages, etc.). Ideally, a 'roll' or 'official list'.\n\nNote: You could also say 'keeps detailed [records]' (general history), but 'register' captures the specific meaning of 'El Registro' (the official book)."
     }
   ]
 }

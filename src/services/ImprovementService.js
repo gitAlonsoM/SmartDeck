@@ -213,7 +213,16 @@ If the user asks to "Improve Modal [ID]", "Fix Modal [ID]", or "Rewrite Modal [I
 - **Complex Topic:** Minimum **18 examples**.
 - *Objective:* The user must see enough patterns to understand the rule intuitively.
 
-### B. HTML & Tailwind Palette (Visuals & Context)
+### B. MOBILE FIRST ARCHITECTURE (NO GRIDS)
+**STRICT PROHIBITION:** You must **NEVER** use \`grid-cols-2\`, \`grid-cols-3\`, or any side-by-side layout. The application is used on mobile devices, and tables/grids break the UI.
+- **Vertical Only:** All content must be stacked vertically.
+- **Comparison Pattern:** Instead of side-by-side columns, use Stacked Groups.
+    - *Wrong:* [ Box A ] [ Box B ]
+    - *Correct:*
+      [ Box A ]
+      [ Box B ]
+
+### C. HTML & Tailwind Palette (Visuals & Context)
 You must use **ONLY** the following Tailwind classes for highlighting. Do NOT use random colors or hex codes.
 
 **1. The Palette (Your Toolbox):**

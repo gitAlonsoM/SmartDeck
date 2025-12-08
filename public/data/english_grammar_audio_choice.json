@@ -16076,6 +16076,817 @@
         "type": "text",
         "value": "**[124]**\n\nThe verb **Suggest** is strictly followed by a [Gerund] ('drinking') or a 'that' clause.\n\n~to drink~ is a very common error; 'suggest' is never followed by 'to'."
       }
+    },
+    {
+      "cardId": "egac_555",
+      "category": "Log vs Register vs Record",
+      "sentenceParts": {
+        "prefix": "The migration was successful. We transferred 5 million ",
+        "suffix": " to the new database."
+      },
+      "options": [
+        {
+          "text": "records",
+          "isCorrect": true
+        },
+        {
+          "text": "registers",
+          "isCorrect": false
+        },
+        {
+          "text": "logs",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "The migration was successful. We transferred 5 million records to the new database.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_555.mp3",
+      "hint": "We are talking about rows of data in a database.",
+      "content": {
+        "type": "text",
+        "value": "**[134]**\n\nIn a database context, a single row of data is always a [record].\n\n~Registers~ usually refers to hardware memory or official lists (like an attendance register)."
+      }
+    },
+    {
+      "cardId": "egac_556",
+      "category": "Log vs Register vs Record",
+      "sentenceParts": {
+        "prefix": "The system crashed. Please check the server ",
+        "suffix": " to see what happened."
+      },
+      "options": [
+        {
+          "text": "logs",
+          "isCorrect": true
+        },
+        {
+          "text": "records",
+          "isCorrect": false
+        },
+        {
+          "text": "registers",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "The system crashed. Please check the server logs to see what happened.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_556.mp3",
+      "hint": "We need the file that tracks events chronologically.",
+      "content": {
+        "type": "text",
+        "value": "**[134]**\n\nA chronological list of events (errors, access, history) is a [log].\n\n~Records~ implies permanent data, whereas a log is a running commentary of system activity."
+      }
+    },
+    {
+      "cardId": "egac_557",
+      "category": "Log vs Register vs Record",
+      "sentenceParts": {
+        "prefix": "Before you can vote, you must be on the electoral ",
+        "suffix": "."
+      },
+      "options": [
+        {
+          "text": "register",
+          "isCorrect": true
+        },
+        {
+          "text": "log",
+          "isCorrect": false
+        },
+        {
+          "text": "record",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "Before you can vote, you must be on the electoral register.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_557.mp3",
+      "hint": "An official list of names/people enrolled in a system.",
+      "content": {
+        "type": "text",
+        "value": "**[134]**\n\nAn official list of names (voters, students, guests) is a [register].\n\nNote: In the US, 'registration' is also common, but 'register' is the specific term for the book/list itself."
+      }
+    },
+    {
+      "cardId": "egac_558",
+      "category": "Relative Clauses (Direct Action)",
+      "sentenceParts": {
+        "prefix": "I am looking for a tool that ",
+        "suffix": " MP4 files automatically."
+      },
+      "options": [
+        {
+          "text": "compresses",
+          "isCorrect": true
+        },
+        {
+          "text": "to compress",
+          "isCorrect": false
+        },
+        {
+          "text": "compressing",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "I am looking for a tool that compresses MP4 files automatically.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_558.mp3",
+      "hint": "The tool performs the action directly.",
+      "content": {
+        "type": "text",
+        "value": "**[135]**\n\nHere, 'that' refers to the tool, and the tool *does* the action. Therefore, we conjugate the verb directly: [compresses].\n\n~that to compress~ is incorrect because there is no main verb before the infinitive."
+      }
+    },
+    {
+      "cardId": "egac_559",
+      "category": "Relative Clauses (With Infinitive)",
+      "sentenceParts": {
+        "prefix": "This is the bug that we need ",
+        "suffix": " before Friday."
+      },
+      "options": [
+        {
+          "text": "to fix",
+          "isCorrect": true
+        },
+        {
+          "text": "fix",
+          "isCorrect": false
+        },
+        {
+          "text": "fixes",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "This is the bug that we need to fix before Friday.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_559.mp3",
+      "hint": "The main verb of the clause is 'need'. What follows is its complement.",
+      "content": {
+        "type": "text",
+        "value": "**[135]**\n\nThe clause has a subject (we) and a verb (need). 'Need' requires an infinitive complement: [to fix].\n\nStructure: ...that we [need] + [to fix]."
+      }
+    },
+    {
+      "cardId": "egac_560",
+      "category": "Relative Clauses (Direct Action)",
+      "sentenceParts": {
+        "prefix": "She is the manager who ",
+        "suffix": " the entire department."
+      },
+      "options": [
+        {
+          "text": "runs",
+          "isCorrect": true
+        },
+        {
+          "text": "to run",
+          "isCorrect": false
+        },
+        {
+          "text": "running",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "She is the manager who runs the entire department.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_560.mp3",
+      "hint": "Who does the action? The manager (she).",
+      "content": {
+        "type": "text",
+        "value": "**[135]**\n\n'Who' acts as the subject (She). She performs the action directly, so we conjugate the verb: [runs]."
+      }
+    },
+    {
+      "cardId": "egac_561",
+      "category": "Proximity (Coming Up)",
+      "sentenceParts": {
+        "prefix": "I have a performance review ",
+        "suffix": " next week."
+      },
+      "options": [
+        {
+          "text": "coming up",
+          "isCorrect": true
+        },
+        {
+          "text": "getting closer",
+          "isCorrect": false
+        },
+        {
+          "text": "close to",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "I have a performance review coming up next week.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_561.mp3",
+      "hint": "We are talking about a scheduled event on the calendar.",
+      "content": {
+        "type": "text",
+        "value": "**[136]**\n\nFor future planned events (meetings, holidays, reviews), the most natural phrase is [coming up].\n\n~Getting closer~ describes the *time* moving, not the event itself appearing on the schedule."
+      }
+    },
+    {
+      "cardId": "egac_562",
+      "category": "Proximity (Getting Closer)",
+      "sentenceParts": {
+        "prefix": "We are not ready, and the deadline is ",
+        "suffix": "."
+      },
+      "options": [
+        {
+          "text": "getting closer",
+          "isCorrect": true
+        },
+        {
+          "text": "coming up",
+          "isCorrect": false
+        },
+        {
+          "text": "close to",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "We are not ready, and the deadline is getting closer.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_562.mp3",
+      "hint": "Focus on the movement of time approaching you.",
+      "content": {
+        "type": "text",
+        "value": "**[136]**\n\nUse [getting closer] to emphasize the process of time passing and the urgency of an approaching moment."
+      }
+    },
+    {
+      "cardId": "egac_563",
+      "category": "Proximity (Close To)",
+      "sentenceParts": {
+        "prefix": "Don't give up now. We are so ",
+        "suffix": " solving the problem."
+      },
+      "options": [
+        {
+          "text": "close to",
+          "isCorrect": true
+        },
+        {
+          "text": "coming up",
+          "isCorrect": false
+        },
+        {
+          "text": "getting closer",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "Don't give up now. We are so close to solving the problem.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_563.mp3",
+      "hint": "We are describing our position relative to the goal.",
+      "content": {
+        "type": "text",
+        "value": "**[136]**\n\nUse [close to] + [Gerund] when you describe being near a goal or a finishing state."
+      }
+    },
+    {
+      "cardId": "egac_564",
+      "category": "Time Distance (Away From)",
+      "sentenceParts": {
+        "prefix": "I can't believe it. I am two days ",
+        "suffix": " moving to Japan."
+      },
+      "options": [
+        {
+          "text": "away from",
+          "isCorrect": true
+        },
+        {
+          "text": "far from",
+          "isCorrect": false
+        },
+        {
+          "text": "of",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "I can't believe it. I am two days away from moving to Japan.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_564.mp3",
+      "hint": "Structure: Time + 'away from' + Gerund.",
+      "content": {
+        "type": "text",
+        "value": "**[137]**\n\nUse the structure: [Time] + [away from] + [Gerund] to express excitement or preparation for a future event."
+      }
+    },
+    {
+      "cardId": "egac_565",
+      "category": "Time Distance (Noun)",
+      "sentenceParts": {
+        "prefix": "Panic mode! We are just three hours ",
+        "suffix": " the launch."
+      },
+      "options": [
+        {
+          "text": "away from",
+          "isCorrect": true
+        },
+        {
+          "text": "distance of",
+          "isCorrect": false
+        },
+        {
+          "text": "until",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "Panic mode! We are just three hours away from the launch.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_565.mp3",
+      "hint": "Expressing temporal distance to a noun.",
+      "content": {
+        "type": "text",
+        "value": "**[137]**\n\nYou can also use [away from] with a Noun (the launch).\n\n~Three hours until the launch~ is also correct, but 'away from' emphasizes the distance remaining."
+      }
+    },
+    {
+      "cardId": "egac_566",
+      "category": "Time Distance (Natural)",
+      "sentenceParts": {
+        "prefix": "Formal: We are five minutes away from starting.\nNatural: We ",
+        "suffix": " in five minutes."
+      },
+      "options": [
+        {
+          "text": "start",
+          "isCorrect": true
+        },
+        {
+          "text": "are away",
+          "isCorrect": false
+        },
+        {
+          "text": "starting",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "Formal: We are five minutes away from starting.\nNatural: We start in five minutes.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_566.mp3",
+      "hint": "In natural speech, we often use Present Simple for scheduled future events.",
+      "content": {
+        "type": "text",
+        "value": "**[137]**\n\nWhile 'away from starting' is correct and emphatic, native speakers usually prefer the shorter form: [We start in...]."
+      }
+    },
+    {
+      "cardId": "egac_567",
+      "category": "Coincidence (Happen to)",
+      "sentenceParts": {
+        "prefix": "I didn't plan it, but I ",
+        "suffix": " see her at the store."
+      },
+      "options": [
+        {
+          "text": "happened to",
+          "isCorrect": true
+        },
+        {
+          "text": "coincidentally",
+          "isCorrect": false
+        },
+        {
+          "text": "by chance",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "I didn't plan it, but I happened to see her at the store.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_567.mp3",
+      "hint": "We need a verb structure that means 'occurred by chance'.",
+      "content": {
+        "type": "text",
+        "value": "**[138]**\n\nStructure: Subject + [Happened to] + [Verb].\nThis means the action occurred without planning.\n\n~I coincidentally see her~ is unnatural grammar (adverb placement issues)."
+      }
+    },
+    {
+      "cardId": "egac_568",
+      "category": "Coincidence (Question)",
+      "sentenceParts": {
+        "prefix": "Do you ",
+        "suffix": " have a charger I could borrow?"
+      },
+      "options": [
+        {
+          "text": "happen to",
+          "isCorrect": true
+        },
+        {
+          "text": "by chance",
+          "isCorrect": false
+        },
+        {
+          "text": "turns out",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "Do you happen to have a charger I could borrow?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_568.mp3",
+      "hint": "A polite way to ask if someone possesses something unexpectedly.",
+      "content": {
+        "type": "text",
+        "value": "**[138]**\n\n'Do you [happen to]...' is a very polite way to ask a question when you are not sure of the answer.\n\nNote: You could also say 'Do you have a charger [by any chance]?', but 'Do you by chance...' is less common structure."
+      }
+    },
+    {
+      "cardId": "egac_569",
+      "category": "Coincidence (Result)",
+      "sentenceParts": {
+        "prefix": "I thought he was a stranger, but ",
+        "suffix": " that he's my neighbor!"
+      },
+      "options": [
+        {
+          "text": "it turns out",
+          "isCorrect": true
+        },
+        {
+          "text": "it happens",
+          "isCorrect": false
+        },
+        {
+          "text": "by chance",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "I thought he was a stranger, but it turns out that he's my neighbor!",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_569.mp3",
+      "hint": "The English equivalent of 'Resulta que...'",
+      "content": {
+        "type": "text",
+        "value": "**[138]**\n\nUse [It turns out] to introduce an unexpected fact or result.\n\n~It happens~ refers to something occurring, not the revelation of a fact."
+      }
+    },
+    {
+      "cardId": "egac_570",
+      "category": "Job vs Work (Countable)",
+      "sentenceParts": {
+        "prefix": "She is very busy. She actually has two ",
+        "suffix": "."
+      },
+      "options": [
+        {
+          "text": "jobs",
+          "isCorrect": true
+        },
+        {
+          "text": "works",
+          "isCorrect": false
+        },
+        {
+          "text": "work",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "She is very busy. She actually has two jobs.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_570.mp3",
+      "hint": "We are counting the specific roles/positions.",
+      "content": {
+        "type": "text",
+        "value": "**[139]**\n\n[Job] is a countable noun. You can have one job, two jobs, etc.\n\n~Works~ usually refers to 'works of art' or factories, not employment."
+      }
+    },
+    {
+      "cardId": "egac_571",
+      "category": "Job vs Work (Uncountable)",
+      "sentenceParts": {
+        "prefix": "I can't go out tonight. I have too much ",
+        "suffix": " to do."
+      },
+      "options": [
+        {
+          "text": "work",
+          "isCorrect": true
+        },
+        {
+          "text": "job",
+          "isCorrect": false
+        },
+        {
+          "text": "works",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "I can't go out tonight. I have too much work to do.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_571.mp3",
+      "hint": "Here we refer to the activity/effort, which is uncountable.",
+      "content": {
+        "type": "text",
+        "value": "**[139]**\n\n[Work] is uncountable when referring to tasks or effort. You have 'much work', not 'many works'.\n\n~Too much job~ is incorrect because 'job' refers to the position, not the pile of tasks."
+      }
+    },
+    {
+      "cardId": "egac_572",
+      "category": "Job vs Work (Collocation)",
+      "sentenceParts": {
+        "prefix": "He is late. He usually starts ",
+        "suffix": " at 9:00 AM."
+      },
+      "options": [
+        {
+          "text": "work",
+          "isCorrect": true
+        },
+        {
+          "text": "job",
+          "isCorrect": false
+        },
+        {
+          "text": "the job",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "He is late. He usually starts work at 9:00 AM.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_572.mp3",
+      "hint": "A fixed expression meaning 'to begin the working day'.",
+      "content": {
+        "type": "text",
+        "value": "**[139]**\n\n[Start work], [finish work], and [leave work] are fixed expressions.\n\n~Starts job~ is incorrect. You 'start a job' only on your first day of employment."
+      }
+    },
+    {
+      "cardId": "egac_573",
+      "category": "Gendered Professions (Server)",
+      "sentenceParts": {
+        "prefix": "The restaurant is busy. We need to hire another ",
+        "suffix": "."
+      },
+      "options": [
+        {
+          "text": "server",
+          "isCorrect": true
+        },
+        {
+          "text": "waitress",
+          "isCorrect": false
+        },
+        {
+          "text": "waiter",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "The restaurant is busy. We need to hire another server.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_573.mp3",
+      "hint": "The modern, neutral term for someone who brings food.",
+      "content": {
+        "type": "text",
+        "value": "**[140]**\n\nIn modern US English, [Server] is the preferred neutral term for both men and women.\n\n~Waitress~ is considered archaic/gendered."
+      }
+    },
+    {
+      "cardId": "egac_574",
+      "category": "Gendered Professions (Flight)",
+      "sentenceParts": {
+        "prefix": "Please ask the ",
+        "suffix": " for a glass of water."
+      },
+      "options": [
+        {
+          "text": "flight attendant",
+          "isCorrect": true
+        },
+        {
+          "text": "stewardess",
+          "isCorrect": false
+        },
+        {
+          "text": "steward",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "Please ask the flight attendant for a glass of water.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_574.mp3",
+      "hint": "The modern term for crew members on a plane.",
+      "content": {
+        "type": "text",
+        "value": "**[140]**\n\n[Flight Attendant] is the professional, neutral term.\n\n~Stewardess~ is outdated and often considered offensive in the industry."
+      }
+    },
+    {
+      "cardId": "egac_575",
+      "category": "Gendered Professions (Actor)",
+      "sentenceParts": {
+        "prefix": "She is a famous ",
+        "suffix": " who won an Oscar."
+      },
+      "options": [
+        {
+          "text": "actor",
+          "isCorrect": true
+        },
+        {
+          "text": "actress",
+          "isCorrect": false
+        },
+        {
+          "text": "acting woman",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "She is a famous actor who won an Oscar.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_575.mp3",
+      "hint": "In modern English, this word applies to everyone.",
+      "content": {
+        "type": "text",
+        "value": "**[140]**\n\nToday, [Actor] is used for both men and women.\n\n~Actress~ is still understood but is declining in usage in favor of the neutral term."
+      }
+    },
+    {
+      "cardId": "egac_576",
+      "category": "Collocations (Enough)",
+      "sentenceParts": {
+        "prefix": "You think it's too expensive? ",
+        "suffix": ". We can look for something cheaper."
+      },
+      "options": [
+        {
+          "text": "Fair enough",
+          "isCorrect": true
+        },
+        {
+          "text": "Good enough",
+          "isCorrect": false
+        },
+        {
+          "text": "True enough",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "You think it's too expensive? Fair enough. We can look for something cheaper.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_576.mp3",
+      "hint": "A phrase used to accept someone's point as reasonable.",
+      "content": {
+        "type": "text",
+        "value": "**[141]**\n\n[Fair enough] is the standard expression to say 'I accept your point' or 'That is reasonable'."
+      }
+    },
+    {
+      "cardId": "egac_577",
+      "category": "Collocations (Enough)",
+      "sentenceParts": {
+        "prefix": "The design isn't perfect, but it is ",
+        "suffix": " for the MVP."
+      },
+      "options": [
+        {
+          "text": "good enough",
+          "isCorrect": true
+        },
+        {
+          "text": "fair enough",
+          "isCorrect": false
+        },
+        {
+          "text": "nice enough",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "The design isn't perfect, but it is good enough for the MVP.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_577.mp3",
+      "hint": "It meets the minimum standard required.",
+      "content": {
+        "type": "text",
+        "value": "**[141]**\n\n[Good enough] means sufficient or acceptable for the current need."
+      }
+    },
+    {
+      "cardId": "egac_578",
+      "category": "Collocations (Enough)",
+      "sentenceParts": {
+        "prefix": "Don't worry about the answer. We will find out ",
+        "suffix": "."
+      },
+      "options": [
+        {
+          "text": "soon enough",
+          "isCorrect": true
+        },
+        {
+          "text": "close enough",
+          "isCorrect": false
+        },
+        {
+          "text": "quick enough",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "Don't worry about the answer. We will find out soon enough.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_578.mp3",
+      "hint": "It means 'in a short time' or 'inevitably'.",
+      "content": {
+        "type": "text",
+        "value": "**[141]**\n\n[Soon enough] is a common collocation to imply that the truth or an event will arrive in due time."
+      }
+    },
+    {
+      "cardId": "egac_579",
+      "category": "Conversational (That + It)",
+      "sentenceParts": {
+        "prefix": "Keep turning the screw... stop. ",
+        "suffix": " Perfect."
+      },
+      "options": [
+        {
+          "text": "That's it.",
+          "isCorrect": true
+        },
+        {
+          "text": "That is.",
+          "isCorrect": false
+        },
+        {
+          "text": "It is that.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "Keep turning the screw... stop. That's it. Perfect.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_579.mp3",
+      "hint": "Used to confirm that an action is correct or complete.",
+      "content": {
+        "type": "text",
+        "value": "**[142]**\n\n[That's it] is a fixed expression for confirmation ('Eso es' / 'Así se hace').\n\n~That is~ sounds incomplete without a complement."
+      }
+    },
+    {
+      "cardId": "egac_580",
+      "category": "Conversational (That + It)",
+      "sentenceParts": {
+        "prefix": "I see the report, but... ",
+        "suffix": " Where are the images?",
+        "options": [
+          {
+            "text": "is that it?",
+            "isCorrect": true
+          },
+          {
+            "text": "is that?",
+            "isCorrect": false
+          },
+          {
+            "text": "is it that?",
+            "isCorrect": false
+          }
+        ]
+      },
+      "options": [
+        {
+          "text": "is that it?",
+          "isCorrect": true
+        },
+        {
+          "text": "is that?",
+          "isCorrect": false
+        },
+        {
+          "text": "is it that?",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "I see the report, but... is that it? Where are the images?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_580.mp3",
+      "hint": "A phrase asking 'Is that everything?' or 'Is that all?'",
+      "content": {
+        "type": "text",
+        "value": "**[142]**\n\n[Is that it?] is the standard conversational way to ask 'Is that everything?'.\n\n~Is that?~ is grammatically incomplete."
+      }
+    },
+    {
+      "cardId": "egac_581",
+      "category": "Conversational (That + It)",
+      "sentenceParts": {
+        "prefix": "I can't just delete the database. ",
+        "suffix": " We need a backup plan.",
+        "options": [
+          {
+            "text": "That's just it.",
+            "isCorrect": true
+          },
+          {
+            "text": "It's just that.",
+            "isCorrect": false
+          },
+          {
+            "text": "That's just.",
+            "isCorrect": false
+          }
+        ]
+      },
+      "options": [
+        {
+          "text": "That's just it.",
+          "isCorrect": true
+        },
+        {
+          "text": "It's just that.",
+          "isCorrect": false
+        },
+        {
+          "text": "That's just.",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "I can't just delete the database. That's just it. We need a backup plan.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_581.mp3",
+      "hint": "Used to emphasize the main problem or point ('Ese es el punto/detalle').",
+      "content": {
+        "type": "text",
+        "value": "**[142]**\n\n[That's just it] is an emphatic way to identify the core issue.\n\n~It's just that~ is usually followed by an explanation (e.g., 'It's just that I am tired...'), whereas 'That's just it' stands alone as a statement."
+      }
     }
   ]
 }
