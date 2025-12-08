@@ -40,10 +40,6 @@
         {
           "text": "Each row in the JSON represents a single row from a SQL query.",
           "audioSrc": "public/data/audio/dummy/dummy_002_sideB_2.mp3"
-        },
-        {
-          "text": "Each row of the JSON is equivalent to a row of a SQL query.",
-          "audioSrc": "public/data/audio/dummy/dummy_002_sideB_3.mp3"
         }
       ],
       "note": "[Corresponds to] or [is equivalent to] are precise ways to describe data mapping.\n\n~Each row is equals to~ (Grammar error: [Equal] is an adjective here, so use [is equal to]. However, [equivalent] or [corresponds] fits better for mapping concepts.)"
@@ -106,7 +102,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_005_sideB_2.mp3"
         }
       ],
-      "note": "[That way] is the most natural conversational connector for 'De esa forma'.\n\n[To get something back] or [To send something back] captures 'tener de regreso'.\n\n~...get back the data to the...~ (Phrasing: While not strictly incorrect, it is much more natural to place the object in the middle of the phrasal verb: [get the data back].)\n\n~...have back the data...~ (Unnatural: Use [get ... back] or [receive ... back] instead of 'have back'.)\n\n~That way, we can have the data back to the frontend~ (Incorrect collocation: [Have ... back] is not a standard construction for data transfer. Use [get] or [send].)"
+      "note": "[That way] is the most natural conversational connector for 'De esa forma'.\n\n[To get something back] or [To send something back] captures 'tener de regreso'.\n\n~...get back the data to the...~ (Phrasing: While not strictly incorrect, it is much more natural to place the object in the middle of the phrasal verb: [get the data back].)\n\n~...have back the data...~ (Unnatural: Use [get ... back] or [receive ... back] instead of 'have back'.)"
     },
     {
       "cardId": "dummy_006",
@@ -172,10 +168,6 @@
         {
           "text": "I don't know what this function does.",
           "audioSrc": "public/data/audio/dummy/dummy_008_sideB_2.mp3"
-        },
-        {
-          "text": "I don't know what this function is used for.",
-          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_3.mp3"
         }
       ],
       "note": "**[111]**\n\nThe preposition [for] usually goes at the end of the clause in English: [what this function is for].\n\n~I don't know for what is this function~ (Unnatural word order).\n\n~I don't know what is this function for~ (Incorrect word order: In indirect questions, the subject [this function] must come before the verb [is]. Correct: [what this function is for].)"
@@ -196,10 +188,6 @@
         {
           "text": "What is the purpose of this function?",
           "audioSrc": "public/data/audio/dummy/dummy_009_sideB_2.mp3"
-        },
-        {
-          "text": "What is this function used for?",
-          "audioSrc": "public/data/audio/dummy/dummy_009_sideB_3.mp3"
         }
       ],
       "note": "**[111]**\n\nStandard question structure: [Question Word] + [Auxiliary/Verb] + [Subject] + [Preposition]?\n\n~For what is this function?~ (While grammatically possible, it sounds very formal or archaic. [What is this function for?] is the standard natural form.)\n\n~What does this function for?~ (Incorrect: 'Does' requires a main verb like 'do'. Since the question uses the preposition 'for' to ask about purpose, use the verb [is]: 'What [is] this function for?')"
@@ -220,10 +208,6 @@
         {
           "text": "What's the use of this code?",
           "audioSrc": "public/data/audio/dummy/dummy_010_sideB_2.mp3"
-        },
-        {
-          "text": "What is this code used for?",
-          "audioSrc": "public/data/audio/dummy/dummy_010_sideB_3.mp3"
         }
       ],
       "note": "**[111]**\n\nAgain, place [for] at the end.\n\n[Supposed to do] implies you are asking about the *intention* behind the code."
@@ -264,10 +248,6 @@
         {
           "text": "What is this bit of code doing?",
           "audioSrc": "public/data/audio/dummy/dummy_012_sideB_2.mp3"
-        },
-        {
-          "text": "What does this part of the code do?",
-          "audioSrc": "public/data/audio/dummy/dummy_012_sideB_3.mp3"
         }
       ],
       "note": "[Snippet] or [Piece of code] are common terms for a small segment of code.\n\n~What does this code part?~ (Grammar error: Missing the main verb. Correct: What does this part [do]?)\n\n~What does this part of code do?~ (Slightly unnatural: It is better to use the specific article [part of the code] or the compound noun [code snippet].)"
@@ -328,14 +308,6 @@
         {
           "text": "I understand what this part is used for.",
           "audioSrc": "public/data/audio/dummy/dummy_015_sideB_2.mp3"
-        },
-        {
-          "text": "I do know what this part does.",
-          "audioSrc": "public/data/audio/dummy/dummy_015_sideB_3.mp3"
-        },
-        {
-          "text": "I do know what this part is for.",
-          "audioSrc": "public/data/audio/dummy/dummy_015_sideB_4.mp3"
         }
       ],
       "note": "The preposition [for] goes at the end.\n\n~I know for what is used this part~ (Incorrect Word Order)."
@@ -404,14 +376,6 @@
         {
           "text": "Link is in the chat.",
           "audioSrc": "public/data/audio/dummy/dummy_018_sideB_2.mp3"
-        },
-        {
-          "text": "Here you are.",
-          "audioSrc": "public/data/audio/dummy/dummy_018_sideB_3.mp3"
-        },
-        {
-          "text": "There you are.",
-          "audioSrc": "public/data/audio/dummy/dummy_018_sideB_4.mp3"
         }
       ],
       "note": "[There you go] or [Here you go] are the standard phrases when physically handing something to someone or pasting a link in a chat window.\n\n~Here you there~ (Incorrect phrase: You can say [Here you are] or [There you go], but do not mix them.)"
