@@ -672,10 +672,6 @@
         {
           "text": "It's just changes in whitespace.",
           "audioSrc": "public/data/audio/dummy/dummy_031_sideB_2.mp3"
-        },
-        {
-          "text": "They are just whitespace changes.",
-          "audioSrc": "public/data/audio/dummy/dummy_031_sideB_3.mp3"
         }
       ],
       "note": "[Whitespace] refers collectively to spaces, tabs, and newlines in code. It is a mass noun (uncountable)."
@@ -698,7 +694,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_032_sideB_2.mp3"
         }
       ],
-      "note": "[Formatting] usually refers to code style (indentation, spacing) rather than functional behavior.\n\n~It's just format~ (Incorrect: Use [formatting] for the action/style.)"
+      "note": "[Formatting] usually refers to code style (indentation, spacing) rather than functional behavior."
     },
     {
       "cardId": "dummy_033",
@@ -736,10 +732,6 @@
         {
           "text": "I simply fixed the indentation in that part.",
           "audioSrc": "public/data/audio/dummy/dummy_034_sideB_2.mp3"
-        },
-        {
-          "text": "I just fixed the indentation there.",
-          "audioSrc": "public/data/audio/dummy/dummy_034_sideB_3.mp3"
         }
       ],
       "note": "[Indentation] refers to the space at the beginning of a line of code to indicate hierarchy."
@@ -762,7 +754,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_035_sideB_2.mp3"
         }
       ],
-      "note": "[Diffs] is the standard developer slang for 'differences' in code versions/commits.\n\n~...so for that reason, there are...~ (Redundant: Use [so] OR [for that reason], not both.)"
+      "note": "[Diffs] is the standard developer slang for 'differences' in code versions/commits."
     },
     {
       "cardId": "dummy_036",
@@ -782,7 +774,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_036_sideB_2.mp3"
         }
       ],
-      "note": "Use preposition [in] or [on] for code lines.\n\n~The actual logic change is at line 45~ (Less common, but understandable. [On line X] is preferred.)\n\n~The real logic change is on the line 45~ (Incorrect: Do not use [the] before a number; say [Line 45].)"
+      "note": "Use preposition [in] or [on] for code lines.\n\n~The actual logic change is at line 45~ (Less common, but understandable. [On line X] is preferred.)"
     },
     {
       "cardId": "dummy_037",
@@ -800,10 +792,6 @@
         {
           "text": "It inserts a newline character now.",
           "audioSrc": "public/data/audio/dummy/dummy_037_sideB_2.mp3"
-        },
-        {
-          "text": "Now, insert a line break.",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_3.mp3"
         }
       ],
       "note": "[Newline] or [Line break] are the technical terms for the character that moves the cursor to the next line."
@@ -826,7 +814,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_038_sideB_2.mp3"
         }
       ],
-      "note": "We generally say [parse into] when transforming data structure A to structure B.\n\n~We are parsing the array in a virtual table~ (Incorrect: Use [into] for transformation.)"
+      "note": "We generally say [parse into] when transforming data structure A to structure B."
     },
     {
       "cardId": "dummy_039",
@@ -846,7 +834,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_039_sideB_2.mp3"
         }
       ],
-      "note": "[Rows] refers specifically to horizontal records in a database table.\n\n~We are parsing the list in SQL rows~ (Incorrect: Use [into] for transformation.)"
+      "note": "[Rows] refers specifically to horizontal records in a database table."
     },
     {
       "cardId": "dummy_040",
@@ -886,7 +874,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_041_sideB_2.mp3"
         }
       ],
-      "note": "A [Data Type] defines what kind of value a variable can hold (e.g., Integer, String, Boolean).\n\n~We are parsing the empty values in specific data types~ (Incorrect: Use [into] for transformation.)"
+      "note": "A [Data Type] defines what kind of value a variable can hold (e.g., Integer, String, Boolean)."
     },
     {
       "cardId": "dummy_042",
@@ -926,7 +914,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_043_sideB_2.mp3"
         }
       ],
-      "note": "[Format] implies the specific layout or representation of the data (e.g., Date strings). [Data type format] = Formato de tipo de dato."
+      "note": "[Format] implies the specific layout or representation of the data (e.g., Date strings)."
     },
     {
       "cardId": "dummy_044",
@@ -944,14 +932,6 @@
         {
           "text": "Could you check the last diffs?",
           "audioSrc": "public/data/audio/dummy/dummy_044_sideB_2.mp3"
-        },
-        {
-          "text": "Can you check the last differences?",
-          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_3.mp3"
-        },
-        {
-          "text": "Can you check the last changes?",
-          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_4.mp3"
         }
       ],
       "note": "[To review] is more formal and implies a thorough examination, while [to check] can be quick."
@@ -994,7 +974,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_046_sideB_2.mp3"
         }
       ],
-      "note": "**[145]**\n\n[Make] means to create or build something new (e.g., 'I made a cake'). It is incorrect to use it for executing existing tests.\n\n~I made smoke tests~ (Incorrect).\n\nIn software testing, the standard verbs are [run], [execute], or [perform].\n\n~I performed several smoke tests in the new feature~ (Incorrect: Use preposition [on] for testing targets.)"
+      "note": "**[145]**\n\n[Make] means to create or build something new (e.g., 'I made a cake'). It is incorrect to use it for executing existing tests.\n\n~I made smoke tests~ (Incorrect).\n\nIn software testing, the standard verbs are [run], [execute], or [perform]."
     },
     {
       "cardId": "dummy_047",
@@ -1014,7 +994,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_047_sideB_2.mp3"
         }
       ],
-      "note": "**[145]**\n\n[Sanity Checks] is a professional term for \"quick tests\" to ensure basic functionality works after a fix.\n\n~I ran several quick tests in the new fix~ (Incorrect: Use preposition [on] for testing targets.)"
+      "note": "**[145]**\n\n[Sanity Checks] is a professional term for \"quick tests\" to ensure basic functionality works after a fix."
     },
     {
       "cardId": "dummy_048",
@@ -1034,7 +1014,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_048_sideB_2.mp3"
         }
       ],
-      "note": "**[145]**\n\nRemember: We [run] tests, we do not ~make~ tests.\n\n~smoking tests~ (Incorrect: The term is [smoke tests].)"
+      "note": "**[145]**\n\nRemember: We [run] tests, we do not ~make~ tests."
     },
     {
       "cardId": "dummy_049",
@@ -1054,7 +1034,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_049_sideB_2.mp3"
         }
       ],
-      "note": "**[145]**\n\nFuture tense with [will] or [going to] is appropriate here for immediate actions.\n\n~I'll run some quick tests in this matter~ (Incorrect: Use preposition [on] or [regarding].)"
+      "note": "**[145]**\n\nFuture tense with [will] or [going to] is appropriate here for immediate actions."
     },
     {
       "cardId": "dummy_050",
@@ -1074,7 +1054,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_050_sideB_2.mp3"
         }
       ],
-      "note": "**[128]**\n\n[Identical] is a strong synonym for 'the same'.\n\n~Besides the formatting, the code is the same~ (Ambiguous: [Besides] often means 'In addition to'. Use [Except for] or [Apart from] for clarity.)"
+      "note": "[Identical] is a strong synonym for 'the same'."
     },
     {
       "cardId": "dummy_051",
@@ -1172,10 +1152,6 @@
         {
           "text": "The variable being local means it's scoped to the block.",
           "audioSrc": "public/data/audio/dummy/dummy_055_sideB_2.mp3"
-        },
-        {
-          "text": "That the variable is local means it only exists in the block.",
-          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_3.mp3"
         }
       ],
       "note": "[Scoped to] is a very professional way to describe visibility logic in programming."
@@ -1198,7 +1174,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_056_sideB_2.mp3"
         }
       ],
-      "note": "A [Convention] is an agreed-upon standard or rule, not strictly enforced by the compiler but by the team. [Nomenclature] exists but is rare in IT; [Naming Convention] is the standard translation."
+      "note": "A [Convention] is an agreed-upon standard or rule, not strictly enforced by the compiler but by the team."
     },
     {
       "cardId": "dummy_057",
@@ -1218,7 +1194,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_057_sideB_2.mp3"
         }
       ],
-      "note": "In programming, [Cast] is used as a verb: 'To cast X to Y'.\n\n~The variable is being cast into another type~ (Incorrect: Use [to] for type casting.)"
+      "note": "In programming, [Cast] is used as a verb: 'To cast X to Y'."
     },
     {
       "cardId": "dummy_058",
@@ -1256,10 +1232,6 @@
         {
           "text": "We are setting up 6 virtual tables to perform a JOIN later.",
           "audioSrc": "public/data/audio/dummy/dummy_059_sideB_2.mp3"
-        },
-        {
-          "text": "We are creating 6 virtual tables so then we can join them.",
-          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_3.mp3"
         }
       ],
       "note": "**[145]**\n\n[Join] is both a noun (SQL clause) and a verb (the action of combining tables)."
@@ -1280,14 +1252,6 @@
         {
           "text": "Ultimately, we join the tables based on their indices.",
           "audioSrc": "public/data/audio/dummy/dummy_060_sideB_2.mp3"
-        },
-        {
-          "text": "At the end, we join the tables by their indices.",
-          "audioSrc": "public/data/audio/dummy/dummy_060_sideB_3.mp3"
-        },
-        {
-          "text": "In the end, we join the tables by their indexes.",
-          "audioSrc": "public/data/audio/dummy/dummy_060_sideB_4.mp3"
         }
       ],
       "note": "[Indices] is the plural of Index, though [Indexes] is also accepted in American English."
@@ -1330,7 +1294,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_062_sideB_2.mp3"
         }
       ],
-      "note": "[Parsing] refers to analyzing a string of symbols (code) to understand its structure.\n\n~This is just a parser~ (Incorrect: A parser is the tool/program, parsing is the action.)\n\n~This is just parse~ (Incorrect: Grammar requires the gerund/noun 'parsing'.)"
+      "note": "[Parsing] refers to analyzing a string of symbols (code) to understand its structure."
     },
     {
       "cardId": "dummy_063",
@@ -1370,7 +1334,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_064_sideB_2.mp3"
         }
       ],
-      "note": "**[145]**\n\nSQL is designed to work with sets (tables), not linear data structures like [Arrays] directly.\n\n~SQL cannot perform a select into an ARRAY~ (Incorrect: [Select into] means saving data *to* the array, not querying *from* it.)"
+      "note": "**[145]**\n\nSQL is designed to work with sets (tables), not linear data structures like [Arrays] directly."
     },
     {
       "cardId": "dummy_065",
@@ -1390,7 +1354,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_065_sideB_2.mp3"
         }
       ],
-      "note": "[Into] is the correct preposition when transforming one state/format to another.\n\n~We need to cast the ARRAY into a virtual table~ (Incorrect: [Cast] is for type conversion; use [convert] or [unnest] for structures.)"
+      "note": "[Into] is the correct preposition when transforming one state/format to another."
     },
     {
       "cardId": "dummy_066",
@@ -1530,7 +1494,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_072_sideB_2.mp3"
         }
       ],
-      "note": "[CTE] is a temporary result set that exists only for the duration of a single SQL statement.\n\n~...local temporal view~ (Incorrect: Use [temporary] for short-lived items; [temporal] usually relates to time/history.)"
+      "note": "[CTE] is a temporary result set that exists only for the duration of a single SQL statement."
     },
     {
       "cardId": "dummy_073",
@@ -1590,7 +1554,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_075_sideB_2.mp3"
         }
       ],
-      "note": "Data flows from the [Backend] (server/DB) to the [Frontend] (client/browser).\n\n~This whole structure is what will get the frontend~ (Incorrect: This means the structure acquires the frontend.)"
+      "note": "Data flows from the [Backend] (server/DB) to the [Frontend] (client/browser)."
     },
     {
       "cardId": "dummy_076",
@@ -1608,10 +1572,6 @@
         {
           "text": "We will see all these Aliases on the frontend side.",
           "audioSrc": "public/data/audio/dummy/dummy_076_sideB_2.mp3"
-        },
-        {
-          "text": "All these Aliases will be seen in the frontend.",
-          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_3.mp3"
         }
       ],
       "note": "DB column names are often mapped to different names in the frontend API response via [Aliases]."
@@ -1632,13 +1592,9 @@
         {
           "text": "These Aliases will all be visible in the JSON output.",
           "audioSrc": "public/data/audio/dummy/dummy_077_sideB_2.mp3"
-        },
-        {
-          "text": "Each one of these Aliases will be seen in the output JSON.",
-          "audioSrc": "public/data/audio/dummy/dummy_077_sideB_3.mp3"
         }
       ],
-      "note": "[Output] refers to the data generated by a process.\n\n~Each one of these Aliases will be watched in the output JSON~ (Incorrect: Use [seen], [visible], or [appear] for static data.)"
+      "note": "[Output] refers to the data generated by a process."
     },
     {
       "cardId": "dummy_078",
@@ -1656,10 +1612,6 @@
         {
           "text": "It transforms the PL/SQL collection into a format SQL can read.",
           "audioSrc": "public/data/audio/dummy/dummy_078_sideB_2.mp3"
-        },
-        {
-          "text": "Convert the PL/SQL collection into a SQL-readable data type.",
-          "audioSrc": "public/data/audio/dummy/dummy_078_sideB_3.mp3"
         }
       ],
       "note": "We often use [Cast] or [Convert] for this action."
