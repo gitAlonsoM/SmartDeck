@@ -1663,6 +1663,726 @@
         }
       ],
       "note": "We often use [Cast] or [Convert] for this action."
+    },
+    {
+      "cardId": "dummy_079",
+      "cardType": "flippable",
+      "sideA": "Es solo para evitar errores.",
+      "sideB": [
+        {
+          "text": "It is just to avoid errors.",
+          "audioSrc": "public/data/audio/dummy/dummy_079_sideB_0.mp3"
+        },
+        {
+          "text": "It's only to prevent mistakes.",
+          "audioSrc": "public/data/audio/dummy/dummy_079_sideB_1.mp3"
+        },
+        {
+          "text": "It is simply to avoid errors.",
+          "audioSrc": "public/data/audio/dummy/dummy_079_sideB_2.mp3"
+        }
+      ],
+      "note": "[To avoid] and [To prevent] are often interchangeable in this context.\n\n~It is just for avoid errors~ (Incorrect: After a preposition like 'for', you must use the gerund 'avoiding', or use the infinitive 'to avoid' to express purpose)."
+    },
+    {
+      "cardId": "dummy_080",
+      "cardType": "flippable",
+      "sideA": "Si el id del usuario es mayor a 0 podemos proceder.",
+      "sideB": [
+        {
+          "text": "If the user ID is greater than 0, we can proceed.",
+          "audioSrc": "public/data/audio/dummy/dummy_080_sideB_0.mp3"
+        },
+        {
+          "text": "If the user ID is over 0, we can continue.",
+          "audioSrc": "public/data/audio/dummy/dummy_080_sideB_1.mp3"
+        },
+        {
+          "text": "Provided the user ID is greater than 0, we can proceed.",
+          "audioSrc": "public/data/audio/dummy/dummy_080_sideB_2.mp3"
+        }
+      ],
+      "note": "[Greater than] is the standard mathematical comparison term (>).\n\n[Provided] is a formal conditional connector similar to 'If'."
+    },
+    {
+      "cardId": "dummy_081",
+      "cardType": "flippable",
+      "sideA": "Son las condiciones de unión.",
+      "sideB": [
+        {
+          "text": "They are the join conditions.",
+          "audioSrc": "public/data/audio/dummy/dummy_081_sideB_0.mp3"
+        },
+        {
+          "text": "These are the join conditions.",
+          "audioSrc": "public/data/audio/dummy/dummy_081_sideB_1.mp3"
+        },
+        {
+          "text": "Those are the conditions for the join.",
+          "audioSrc": "public/data/audio/dummy/dummy_081_sideB_2.mp3"
+        }
+      ],
+      "note": "In SQL, the logic that links two tables is called a [Join Condition]."
+    },
+    {
+      "cardId": "dummy_082",
+      "cardType": "flippable",
+      "sideA": "Son las condiciones de Filtrado.",
+      "sideB": [
+        {
+          "text": "They are the filter conditions.",
+          "audioSrc": "public/data/audio/dummy/dummy_082_sideB_0.mp3"
+        },
+        {
+          "text": "These are the filtering conditions.",
+          "audioSrc": "public/data/audio/dummy/dummy_082_sideB_1.mp3"
+        },
+        {
+          "text": "They are the filter criteria.",
+          "audioSrc": "public/data/audio/dummy/dummy_082_sideB_2.mp3"
+        }
+      ],
+      "note": "[Criteria] (plural) is often used for complex filtering logic."
+    },
+    {
+      "cardId": "dummy_083",
+      "cardType": "flippable",
+      "sideA": "fnd_global gestiona las variables globales y el estado de la sesión actual.",
+      "sideB": [
+        {
+          "text": "fnd_global manages global variables and the current session state.",
+          "audioSrc": "public/data/audio/dummy/dummy_083_sideB_0.mp3"
+        },
+        {
+          "text": "fnd_global handles global variables and the current session state.",
+          "audioSrc": "public/data/audio/dummy/dummy_083_sideB_1.mp3"
+        },
+        {
+          "text": "The fnd_global package manages global variables and the session status.",
+          "audioSrc": "public/data/audio/dummy/dummy_083_sideB_2.mp3"
+        }
+      ],
+      "note": "[fnd_global] is a core Oracle EBS package.\n\n[Manages] or [Handles] are appropriate verbs for software components controlling state."
+    },
+    {
+      "cardId": "dummy_084",
+      "cardType": "flippable",
+      "sideA": "APPS_INITIALIZE establece el contexto de seguridad simulando un inicio de sesión.",
+      "sideB": [
+        {
+          "text": "APPS_INITIALIZE sets the security context by simulating a user login.",
+          "audioSrc": "public/data/audio/dummy/dummy_084_sideB_0.mp3"
+        },
+        {
+          "text": "APPS_INITIALIZE establishes the security context by simulating a login.",
+          "audioSrc": "public/data/audio/dummy/dummy_084_sideB_1.mp3"
+        },
+        {
+          "text": "APPS_INITIALIZE configures the security context via a simulated login.",
+          "audioSrc": "public/data/audio/dummy/dummy_084_sideB_2.mp3"
+        }
+      ],
+      "note": "[Sets] or [Establishes] are used for configuring contexts.\n\n[By simulating] explains the *method* (By + Gerund)."
+    },
+    {
+      "cardId": "dummy_085",
+      "cardType": "flippable",
+      "sideA": "USER_ID 6 identifica universalmente al usuario Invitado.",
+      "sideB": [
+        {
+          "text": "USER_ID 6 universally identifies the GUEST user.",
+          "audioSrc": "public/data/audio/dummy/dummy_085_sideB_0.mp3"
+        },
+        {
+          "text": "USER_ID 6 is the universal identifier for the GUEST user.",
+          "audioSrc": "public/data/audio/dummy/dummy_085_sideB_1.mp3"
+        },
+        {
+          "text": "The GUEST user is universally identified by USER_ID 6.",
+          "audioSrc": "public/data/audio/dummy/dummy_085_sideB_2.mp3"
+        }
+      ],
+      "note": "[Universally] implies across the entire system/application instance."
+    },
+    {
+      "cardId": "dummy_086",
+      "cardType": "flippable",
+      "sideA": "RESP_ID 22372 define los permisos y menús de un cliente de iStore.",
+      "sideB": [
+        {
+          "text": "RESP_ID 22372 defines the permissions and menus for an iStore customer.",
+          "audioSrc": "public/data/audio/dummy/dummy_086_sideB_0.mp3"
+        },
+        {
+          "text": "RESP_ID 22372 sets the permissions and menus for an iStore customer.",
+          "audioSrc": "public/data/audio/dummy/dummy_086_sideB_1.mp3"
+        },
+        {
+          "text": "RESP_ID 22372 determines the permissions and menus of an iStore client.",
+          "audioSrc": "public/data/audio/dummy/dummy_086_sideB_2.mp3"
+        }
+      ],
+      "note": "In Oracle EBS, [RESP_ID] stands for Responsibility ID, which controls what a user can see and do."
+    },
+    {
+      "cardId": "dummy_087",
+      "cardType": "flippable",
+      "sideA": "RESP_APPL_ID 671 identifica la aplicación Oracle iStore (IBE).",
+      "sideB": [
+        {
+          "text": "RESP_APPL_ID 671 identifies the Oracle iStore (IBE).",
+          "audioSrc": "public/data/audio/dummy/dummy_087_sideB_0.mp3"
+        },
+        {
+          "text": "RESP_APPL_ID 671 corresponds to the Oracle iStore application.",
+          "audioSrc": "public/data/audio/dummy/dummy_087_sideB_1.mp3"
+        },
+        {
+          "text": "Oracle iStore (IBE) is identified by RESP_APPL_ID 671.",
+          "audioSrc": "public/data/audio/dummy/dummy_087_sideB_2.mp3"
+        }
+      ],
+      "note": "[IBE] is the internal short code for iStore."
+    },
+    {
+      "cardId": "dummy_088",
+      "cardType": "flippable",
+      "sideA": "La importancia de INVITADO es que actúa como un usuario 'público'.",
+      "sideB": [
+        {
+          "text": "The importance of GUEST is that it acts as a 'public' user.",
+          "audioSrc": "public/data/audio/dummy/dummy_088_sideB_0.mp3"
+        },
+        {
+          "text": "GUEST is important because it acts as a 'public' user.",
+          "audioSrc": "public/data/audio/dummy/dummy_088_sideB_1.mp3"
+        },
+        {
+          "text": "The significance of GUEST is its role as a 'public' user.",
+          "audioSrc": "public/data/audio/dummy/dummy_088_sideB_2.mp3"
+        }
+      ],
+      "note": "[Acts as] describes the function or role of an entity."
+    },
+    {
+      "cardId": "dummy_089",
+      "cardType": "flippable",
+      "sideA": "La importancia de iStore es que es el módulo propietario del comercio electrónico.",
+      "sideB": [
+        {
+          "text": "The importance of iStore is that it is the e-commerce module owner.",
+          "audioSrc": "public/data/audio/dummy/dummy_089_sideB_0.mp3"
+        },
+        {
+          "text": "iStore is important as it is the proprietary module for e-commerce.",
+          "audioSrc": "public/data/audio/dummy/dummy_089_sideB_1.mp3"
+        },
+        {
+          "text": "The key to iStore is that it owns the e-commerce functionality.",
+          "audioSrc": "public/data/audio/dummy/dummy_089_sideB_2.mp3"
+        }
+      ],
+      "note": "[Module owner] in EBS refers to the application that 'owns' the data/tables."
+    },
+    {
+      "cardId": "dummy_090",
+      "cardType": "flippable",
+      "sideA": "Define los privilegios del rol 'Cliente'.",
+      "sideB": [
+        {
+          "text": "It defines the 'Customer' role privileges.",
+          "audioSrc": "public/data/audio/dummy/dummy_090_sideB_0.mp3"
+        },
+        {
+          "text": "It establishes the privileges for the 'Customer' role.",
+          "audioSrc": "public/data/audio/dummy/dummy_090_sideB_1.mp3"
+        },
+        {
+          "text": "It specifies the privileges of the 'Customer' role.",
+          "audioSrc": "public/data/audio/dummy/dummy_090_sideB_2.mp3"
+        }
+      ],
+      "note": "[Privileges] refers to the specific rights to perform actions."
+    },
+    {
+      "cardId": "dummy_091",
+      "cardType": "flippable",
+      "sideA": "IBE_CUSTOMER define los privilegios del rol 'Cliente'.",
+      "sideB": [
+        {
+          "text": "IBE_CUSTOMER defines the 'Customer' role privileges.",
+          "audioSrc": "public/data/audio/dummy/dummy_091_sideB_0.mp3"
+        },
+        {
+          "text": "IBE_CUSTOMER sets the privileges for the 'Customer' role.",
+          "audioSrc": "public/data/audio/dummy/dummy_091_sideB_1.mp3"
+        },
+        {
+          "text": "The 'Customer' role privileges are defined by IBE_CUSTOMER.",
+          "audioSrc": "public/data/audio/dummy/dummy_091_sideB_2.mp3"
+        }
+      ],
+      "note": "We generally use the structure [Subject + defines + Object]."
+    },
+    {
+      "cardId": "dummy_092",
+      "cardType": "flippable",
+      "sideA": "El formato de tipo de dato necesita parsearse.",
+      "sideB": [
+        {
+          "text": "The data type format needs to be parsed.",
+          "audioSrc": "public/data/audio/dummy/dummy_092_sideB_0.mp3"
+        },
+        {
+          "text": "The data type format requires parsing.",
+          "audioSrc": "public/data/audio/dummy/dummy_092_sideB_1.mp3"
+        },
+        {
+          "text": "We need to parse the data type format.",
+          "audioSrc": "public/data/audio/dummy/dummy_092_sideB_2.mp3"
+        }
+      ],
+      "note": "[Need] can be followed by a passive infinitive [needs to be parsed] or a gerund [needs parsing]."
+    },
+    {
+      "cardId": "dummy_093",
+      "cardType": "flippable",
+      "sideA": "Probablemente esa es.",
+      "sideB": [
+        {
+          "text": "That is probably it.",
+          "audioSrc": "public/data/audio/dummy/dummy_093_sideB_0.mp3"
+        },
+        {
+          "text": "That's probably the one.",
+          "audioSrc": "public/data/audio/dummy/dummy_093_sideB_1.mp3"
+        },
+        {
+          "text": "That is likely it.",
+          "audioSrc": "public/data/audio/dummy/dummy_093_sideB_2.mp3"
+        }
+      ],
+      "note": "[That's it] is a common way to say 'Esa es' (identifying something correct)."
+    },
+    {
+      "cardId": "dummy_094",
+      "cardType": "flippable",
+      "sideA": "Probablemente eso es.",
+      "sideB": [
+        {
+          "text": "That is probably it.",
+          "audioSrc": "public/data/audio/dummy/dummy_094_sideB_0.mp3"
+        },
+        {
+          "text": "That's likely the case.",
+          "audioSrc": "public/data/audio/dummy/dummy_094_sideB_1.mp3"
+        },
+        {
+          "text": "That is probably correct.",
+          "audioSrc": "public/data/audio/dummy/dummy_094_sideB_2.mp3"
+        }
+      ],
+      "note": "While 'Esa' and 'Eso' differ in gender in Spanish, in English [That] covers both."
+    },
+    {
+      "cardId": "dummy_095",
+      "cardType": "flippable",
+      "sideA": "REG EXP LIKE significa Expresión Regular Similar.",
+      "sideB": [
+        {
+          "text": "REG EXP LIKE means Regular Expression Like.",
+          "audioSrc": "public/data/audio/dummy/dummy_095_sideB_0.mp3"
+        },
+        {
+          "text": "REG EXP LIKE stands for Regular Expression Like.",
+          "audioSrc": "public/data/audio/dummy/dummy_095_sideB_1.mp3"
+        },
+        {
+          "text": "The meaning of REG EXP LIKE is Regular Expression Like.",
+          "audioSrc": "public/data/audio/dummy/dummy_095_sideB_2.mp3"
+        }
+      ],
+      "note": "[Means] defines the word. [Stands for] unpacks an acronym."
+    },
+    {
+      "cardId": "dummy_096",
+      "cardType": "flippable",
+      "sideA": "REGEXP_LIKE compara texto con patrones complejos usando expresiones regulares.",
+      "sideB": [
+        {
+          "text": "REGEXP_LIKE compares text against complex patterns using regular expressions.",
+          "audioSrc": "public/data/audio/dummy/dummy_096_sideB_0.mp3"
+        },
+        {
+          "text": "REGEXP_LIKE matches text with complex patterns using regular expressions.",
+          "audioSrc": "public/data/audio/dummy/dummy_096_sideB_1.mp3"
+        },
+        {
+          "text": "REGEXP_LIKE compares text to complex patterns via regular expressions.",
+          "audioSrc": "public/data/audio/dummy/dummy_096_sideB_2.mp3"
+        }
+      ],
+      "note": "[Compares ... against] is very precise for matching logic.\n\n~compares text with~ (Acceptable, but 'against' or 'to' is often better for checking validity)."
+    },
+    {
+      "cardId": "dummy_097",
+      "cardType": "flippable",
+      "sideA": "Una Expresión Regular es una secuencia de caracteres que crea un patrón.",
+      "sideB": [
+        {
+          "text": "A Regular Expression is a sequence of characters that creates a pattern.",
+          "audioSrc": "public/data/audio/dummy/dummy_097_sideB_0.mp3"
+        },
+        {
+          "text": "A regex is a sequence of characters creating a pattern.",
+          "audioSrc": "public/data/audio/dummy/dummy_097_sideB_1.mp3"
+        },
+        {
+          "text": "A Regular Expression is a character sequence that forms a pattern.",
+          "audioSrc": "public/data/audio/dummy/dummy_097_sideB_2.mp3"
+        }
+      ],
+      "note": "[Regex] is the standard abbreviation for Regular Expression."
+    },
+    {
+      "cardId": "dummy_098",
+      "cardType": "flippable",
+      "sideA": "Lo elegí al azar.",
+      "sideB": [
+        {
+          "text": "I chose it randomly.",
+          "audioSrc": "public/data/audio/dummy/dummy_098_sideB_0.mp3"
+        },
+        {
+          "text": "I picked it at random.",
+          "audioSrc": "public/data/audio/dummy/dummy_098_sideB_1.mp3"
+        },
+        {
+          "text": "I selected it randomly.",
+          "audioSrc": "public/data/audio/dummy/dummy_098_sideB_2.mp3"
+        }
+      ],
+      "note": "[At random] and [Randomly] are interchangeable adverbs here."
+    },
+    {
+      "cardId": "dummy_099",
+      "cardType": "flippable",
+      "sideA": "Los elegí al azar.",
+      "sideB": [
+        {
+          "text": "I chose them randomly.",
+          "audioSrc": "public/data/audio/dummy/dummy_099_sideB_0.mp3"
+        },
+        {
+          "text": "I picked them at random.",
+          "audioSrc": "public/data/audio/dummy/dummy_099_sideB_1.mp3"
+        },
+        {
+          "text": "I selected them randomly.",
+          "audioSrc": "public/data/audio/dummy/dummy_099_sideB_2.mp3"
+        }
+      ],
+      "note": "We change the object pronoun from [it] to [them] for plural."
+    },
+    {
+      "cardId": "dummy_100",
+      "cardType": "flippable",
+      "sideA": "GET LINE PRICE actúa estrictamente como un envoltorio.",
+      "sideB": [
+        {
+          "text": "GET LINE PRICE acts strictly as a wrapper.",
+          "audioSrc": "public/data/audio/dummy/dummy_100_sideB_0.mp3"
+        },
+        {
+          "text": "GET LINE PRICE serves strictly as a wrapper.",
+          "audioSrc": "public/data/audio/dummy/dummy_100_sideB_1.mp3"
+        },
+        {
+          "text": "GET LINE PRICE functions strictly as a wrapper.",
+          "audioSrc": "public/data/audio/dummy/dummy_100_sideB_2.mp3"
+        }
+      ],
+      "note": "A [Wrapper] is a function whose main purpose is to call another function, often to simplify the interface or add security."
+    },
+    {
+      "cardId": "dummy_101",
+      "cardType": "flippable",
+      "sideA": "Analiza el ID de entrada y delega la ejecución.",
+      "sideB": [
+        {
+          "text": "It parses the input ID and delegates the execution.",
+          "audioSrc": "public/data/audio/dummy/dummy_101_sideB_0.mp3"
+        },
+        {
+          "text": "It analyzes the input ID and delegates execution.",
+          "audioSrc": "public/data/audio/dummy/dummy_101_sideB_1.mp3"
+        },
+        {
+          "text": "It reads the input ID and delegates the execution.",
+          "audioSrc": "public/data/audio/dummy/dummy_101_sideB_2.mp3"
+        }
+      ],
+      "note": "[To delegate] means to pass the responsibility or task to another component."
+    },
+    {
+      "cardId": "dummy_102",
+      "cardType": "flippable",
+      "sideA": "No contiene lógica de negocio, solo análisis de parámetros.",
+      "sideB": [
+        {
+          "text": "It contains no business logic, only parameter parsing.",
+          "audioSrc": "public/data/audio/dummy/dummy_102_sideB_0.mp3"
+        },
+        {
+          "text": "It doesn't contain business logic, just parameter parsing.",
+          "audioSrc": "public/data/audio/dummy/dummy_102_sideB_1.mp3"
+        },
+        {
+          "text": "It holds no business logic, only parameter analysis.",
+          "audioSrc": "public/data/audio/dummy/dummy_102_sideB_2.mp3"
+        }
+      ],
+      "note": "[Business Logic] refers to the core rules that determine how data is created, stored, and changed."
+    },
+    {
+      "cardId": "dummy_103",
+      "cardType": "flippable",
+      "sideA": "La lógica de cálculo es manejada por el procedimiento interno.",
+      "sideB": [
+        {
+          "text": "The calculation logic is handled by the internal procedure.",
+          "audioSrc": "public/data/audio/dummy/dummy_103_sideB_0.mp3"
+        },
+        {
+          "text": "The internal procedure handles the calculation logic.",
+          "audioSrc": "public/data/audio/dummy/dummy_103_sideB_1.mp3"
+        },
+        {
+          "text": "Calculation logic is managed by the internal procedure.",
+          "audioSrc": "public/data/audio/dummy/dummy_103_sideB_2.mp3"
+        }
+      ],
+      "note": "Passive voice [is handled by] shifts focus to the logic rather than the procedure."
+    },
+    {
+      "cardId": "dummy_104",
+      "cardType": "flippable",
+      "sideA": "El valor por defecto de la columna de estado es 'Activo'.",
+      "sideB": [
+        {
+          "text": "The default value of the status column is 'Active'.",
+          "audioSrc": "public/data/audio/dummy/dummy_104_sideB_0.mp3"
+        },
+        {
+          "text": "The status column's default value is 'Active'.",
+          "audioSrc": "public/data/audio/dummy/dummy_104_sideB_1.mp3"
+        },
+        {
+          "text": "'Active' is the default value for the status column.",
+          "audioSrc": "public/data/audio/dummy/dummy_104_sideB_2.mp3"
+        }
+      ],
+      "note": "[Default value] is the value a variable/column takes if none is specified."
+    },
+    {
+      "cardId": "dummy_105",
+      "cardType": "flippable",
+      "sideA": "Necesitamos un valor de respaldo numérico, como 0.",
+      "sideB": [
+        {
+          "text": "We require a numeric fallback value, such as 0.",
+          "audioSrc": "public/data/audio/dummy/dummy_105_sideB_0.mp3"
+        },
+        {
+          "text": "We need a numeric fallback, like 0.",
+          "audioSrc": "public/data/audio/dummy/dummy_105_sideB_1.mp3"
+        },
+        {
+          "text": "We require a numeric default, for instance, 0.",
+          "audioSrc": "public/data/audio/dummy/dummy_105_sideB_2.mp3"
+        }
+      ],
+      "note": "A [Fallback] is a plan or value used if the original one fails or is missing."
+    },
+    {
+      "cardId": "dummy_106",
+      "cardType": "flippable",
+      "sideA": "Usamos la variable J como marcador de posición.",
+      "sideB": [
+        {
+          "text": "We use the J variable as a placeholder.",
+          "audioSrc": "public/data/audio/dummy/dummy_106_sideB_0.mp3"
+        },
+        {
+          "text": "We're using variable J as a placeholder.",
+          "audioSrc": "public/data/audio/dummy/dummy_106_sideB_1.mp3"
+        },
+        {
+          "text": "The J variable is used as a placeholder.",
+          "audioSrc": "public/data/audio/dummy/dummy_106_sideB_2.mp3"
+        }
+      ],
+      "note": "A [Placeholder] is a temporary variable or value used until the final value is known."
+    },
+    {
+      "cardId": "dummy_107",
+      "cardType": "flippable",
+      "sideA": "Si G es igual a 0, el resultado de NULLIF es NULL.",
+      "sideB": [
+        {
+          "text": "If G is equal to 0, the result of NULLIF is NULL.",
+          "audioSrc": "public/data/audio/dummy/dummy_107_sideB_0.mp3"
+        },
+        {
+          "text": "If G equals 0, NULLIF returns NULL.",
+          "audioSrc": "public/data/audio/dummy/dummy_107_sideB_1.mp3"
+        },
+        {
+          "text": "When G is 0, the result of NULLIF is NULL.",
+          "audioSrc": "public/data/audio/dummy/dummy_107_sideB_2.mp3"
+        }
+      ],
+      "note": "**[145]**\n\n[NULLIF(a,b)] is a SQL function that returns NULL if a equals b, otherwise it returns a."
+    },
+    {
+      "cardId": "dummy_108",
+      "cardType": "flippable",
+      "sideA": "Retorna nulo si los 2 valores son iguales.",
+      "sideB": [
+        {
+          "text": "Returns null if the two values are equal.",
+          "audioSrc": "public/data/audio/dummy/dummy_108_sideB_0.mp3"
+        },
+        {
+          "text": "It returns null if both values are equal.",
+          "audioSrc": "public/data/audio/dummy/dummy_108_sideB_1.mp3"
+        },
+        {
+          "text": "It passes back null if the two values are the same.",
+          "audioSrc": "public/data/audio/dummy/dummy_108_sideB_2.mp3"
+        }
+      ],
+      "note": "This describes the behavior of the `NULLIF` function."
+    },
+    {
+      "cardId": "dummy_109",
+      "cardType": "flippable",
+      "sideA": "Estamos redondeando el valor, luego dividiéndolo.",
+      "sideB": [
+        {
+          "text": "We are rounding the value, then dividing it.",
+          "audioSrc": "public/data/audio/dummy/dummy_109_sideB_0.mp3"
+        },
+        {
+          "text": "We're rounding the value before dividing it.",
+          "audioSrc": "public/data/audio/dummy/dummy_109_sideB_1.mp3"
+        },
+        {
+          "text": "We round the value, then divide it.",
+          "audioSrc": "public/data/audio/dummy/dummy_109_sideB_2.mp3"
+        }
+      ],
+      "note": "Sequence of operations: [Action A], then [Action B]."
+    },
+    {
+      "cardId": "dummy_110",
+      "cardType": "flippable",
+      "sideA": "Estamos multiplicando el valor, luego sumándolo.",
+      "sideB": [
+        {
+          "text": "We are multiplying the value, then adding it.",
+          "audioSrc": "public/data/audio/dummy/dummy_110_sideB_0.mp3"
+        },
+        {
+          "text": "We're multiplying the value, then summing it up.",
+          "audioSrc": "public/data/audio/dummy/dummy_110_sideB_1.mp3"
+        },
+        {
+          "text": "We multiply the value and then add it.",
+          "audioSrc": "public/data/audio/dummy/dummy_110_sideB_2.mp3"
+        }
+      ],
+      "note": "**[63]**\n\n[Then] acts as a connector for sequential actions."
+    },
+    {
+      "cardId": "dummy_111",
+      "cardType": "flippable",
+      "sideA": "Estamos restando el valor, luego redondeando.",
+      "sideB": [
+        {
+          "text": "We are subtracting the value, then rounding it.",
+          "audioSrc": "public/data/audio/dummy/dummy_111_sideB_0.mp3"
+        },
+        {
+          "text": "We're deducting the value, then rounding.",
+          "audioSrc": "public/data/audio/dummy/dummy_111_sideB_1.mp3"
+        },
+        {
+          "text": "We subtract the value and then round it.",
+          "audioSrc": "public/data/audio/dummy/dummy_111_sideB_2.mp3"
+        }
+      ],
+      "note": "Math verbs: [Subtract] (Resta), [Round] (Redondear)."
+    },
+    {
+      "cardId": "dummy_112",
+      "cardType": "flippable",
+      "sideA": "Estamos redondeando al 7mo decimal.",
+      "sideB": [
+        {
+          "text": "We are rounding to the 7th decimal place.",
+          "audioSrc": "public/data/audio/dummy/dummy_112_sideB_0.mp3"
+        },
+        {
+          "text": "We're rounding to 7 decimal places.",
+          "audioSrc": "public/data/audio/dummy/dummy_112_sideB_1.mp3"
+        },
+        {
+          "text": "We are rounding off to the 7th decimal.",
+          "audioSrc": "public/data/audio/dummy/dummy_112_sideB_2.mp3"
+        }
+      ],
+      "note": "The standard term for precision is [Decimal Place]."
+    },
+    {
+      "cardId": "dummy_113",
+      "cardType": "flippable",
+      "sideA": "Estamos realizando manejo de nulos aquí.",
+      "sideB": [
+        {
+          "text": "We are performing null handling here.",
+          "audioSrc": "public/data/audio/dummy/dummy_113_sideB_0.mp3"
+        },
+        {
+          "text": "We're handling nulls here.",
+          "audioSrc": "public/data/audio/dummy/dummy_113_sideB_1.mp3"
+        },
+        {
+          "text": "We are doing null handling here.",
+          "audioSrc": "public/data/audio/dummy/dummy_113_sideB_2.mp3"
+        }
+      ],
+      "note": "[Null handling] is the technique of safely managing potential null values."
+    },
+    {
+      "cardId": "dummy_114",
+      "cardType": "flippable",
+      "sideA": "Estamos implementando lógica de división segura.",
+      "sideB": [
+        {
+          "text": "We are implementing safe division logic.",
+          "audioSrc": "public/data/audio/dummy/dummy_114_sideB_0.mp3"
+        },
+        {
+          "text": "We're applying safe division logic.",
+          "audioSrc": "public/data/audio/dummy/dummy_114_sideB_1.mp3"
+        },
+        {
+          "text": "We are setting up safe division logic.",
+          "audioSrc": "public/data/audio/dummy/dummy_114_sideB_2.mp3"
+        }
+      ],
+      "note": "[Safe division] prevents 'Division by Zero' errors."
     }
   ]
 }
