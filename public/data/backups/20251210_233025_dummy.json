@@ -488,10 +488,6 @@
         {
           "text": "Every SQL record corresponds to a full JSON row.",
           "audioSrc": "public/data/audio/dummy/dummy_022_sideB_1.mp3"
-        },
-        {
-          "text": "Each SQL record is equivalent to a complete JSON row.",
-          "audioSrc": "public/data/audio/dummy/dummy_022_sideB_2.mp3"
         }
       ],
       "note": "**[134]**\n\nHere we use [record] because we are referring to a single unit of stored information."
@@ -618,7 +614,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_028_sideB_3.mp3"
         }
       ],
-      "note": "When choosing from a specific group (days in a calendar), [Which] or [Which ones] is precise.\n\nUse [What] or [Which] for days.\n\n~Which ones my legal holidays would be?~ (Incorrect Word Order: For questions, the verb comes before the subject: [would be my legal holidays].)"
+      "note": "When choosing from a specific group (days in a calendar), [Which] or [Which ones] is precise.\n\nUse [What] or [Which] for days."
     },
     {
       "cardId": "dummy_029",
@@ -656,10 +652,6 @@
         {
           "text": "I wanted to ask if my shift schedule is up for discussion.",
           "audioSrc": "public/data/audio/dummy/dummy_030_sideB_2.mp3"
-        },
-        {
-          "text": "I would like to know if the schedule of my shift is negotiable.",
-          "audioSrc": "public/data/audio/dummy/dummy_030_sideB_3.mp3"
         }
       ],
       "note": "To express 'conversable' (meaning it can be changed/discussed), use [negotiable] or [flexible].\n\n~...is conversable~ (False Friend: In English, 'conversable' means someone who is easy to talk to, not that a topic is open to negotiation.)\n\n~...if my schedule shift is negotiable~ (Incorrect Word Order: Adjectives or noun modifiers go before the main noun. Use [shift schedule].)"
@@ -724,10 +716,6 @@
         {
           "text": "Please overlook the changes in whitespace.",
           "audioSrc": "public/data/audio/dummy/dummy_033_sideB_2.mp3"
-        },
-        {
-          "text": "Please ignore the whitespaces.",
-          "audioSrc": "public/data/audio/dummy/dummy_033_sideB_3.mp3"
         }
       ],
       "note": "[Disregard] is a more formal and professional synonym for [ignore]."
@@ -772,10 +760,6 @@
         {
           "text": "I ran the formatter, which explains the whitespace differences.",
           "audioSrc": "public/data/audio/dummy/dummy_035_sideB_2.mp3"
-        },
-        {
-          "text": "I ran the auto-formatter, for that reason there are many whitespace differences.",
-          "audioSrc": "public/data/audio/dummy/dummy_035_sideB_3.mp3"
         }
       ],
       "note": "[Diffs] is the standard developer slang for 'differences' in code versions/commits.\n\n~...so for that reason, there are...~ (Redundant: Use [so] OR [for that reason], not both.)"
@@ -822,7 +806,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_037_sideB_3.mp3"
         }
       ],
-      "note": "[Newline] or [Line break] are the technical terms for the character that moves the cursor to the next line.\n\n~...insert a break line~ (Incorrect: The compound noun is [line break], not [break line].)"
+      "note": "[Newline] or [Line break] are the technical terms for the character that moves the cursor to the next line."
     },
     {
       "cardId": "dummy_038",
@@ -862,7 +846,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_039_sideB_2.mp3"
         }
       ],
-      "note": "**[146]**\n\n[Rows] refers specifically to horizontal records in a database table.\n\n~We are parsing the list in SQL rows~ (Incorrect: Use [into] for transformation.)"
+      "note": "[Rows] refers specifically to horizontal records in a database table.\n\n~We are parsing the list in SQL rows~ (Incorrect: Use [into] for transformation.)"
     },
     {
       "cardId": "dummy_040",
@@ -882,12 +866,12 @@
           "audioSrc": "public/data/audio/dummy/dummy_040_sideB_2.mp3"
         }
       ],
-      "note": "**[146]**\n\n[To avoid] means to prevent something bad from happening."
+      "note": "[To avoid] means to prevent something bad from happening."
     },
     {
       "cardId": "dummy_041",
       "cardType": "flippable",
-      "sideA": "Estamos parseando los valores vacíos en tipos de datos específicos.",
+      "sideA": "(Estamos parseando los valores vacíos en tipos de datos específicos).",
       "sideB": [
         {
           "text": "We are parsing the empty values into specific data types.",
@@ -902,7 +886,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_041_sideB_2.mp3"
         }
       ],
-      "note": "**[146]**\n\nA [Data Type] defines what kind of value a variable can hold (e.g., Integer, String, Boolean).\n\n~We are parsing the empty values in specific data types~ (Incorrect: Use [into] for transformation.)"
+      "note": "A [Data Type] defines what kind of value a variable can hold (e.g., Integer, String, Boolean).\n\n~We are parsing the empty values in specific data types~ (Incorrect: Use [into] for transformation.)"
     },
     {
       "cardId": "dummy_042",
@@ -927,7 +911,7 @@
     {
       "cardId": "dummy_043",
       "cardType": "flippable",
-      "sideA": "Estamos parseando el formato del tipo de dato.",
+      "sideA": "(Estamos parseando el formato del tipo de dato).",
       "sideB": [
         {
           "text": "We are parsing the data type format.",
@@ -942,7 +926,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_043_sideB_2.mp3"
         }
       ],
-      "note": "[Format] implies the specific layout or representation of the data (e.g., Date strings). [Data type format] = Formato de tipo de dato.\n\n~We are parsing the format...~ (Incorrect: We parse the [value] or [data], not the [format].)"
+      "note": "[Format] implies the specific layout or representation of the data (e.g., Date strings). [Data type format] = Formato de tipo de dato."
     },
     {
       "cardId": "dummy_044",
@@ -1088,10 +1072,6 @@
         {
           "text": "Except for the formatting, the code is the same.",
           "audioSrc": "public/data/audio/dummy/dummy_050_sideB_2.mp3"
-        },
-        {
-          "text": "Aside from the format, the code is the same.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_3.mp3"
         }
       ],
       "note": "**[128]**\n\n[Identical] is a strong synonym for 'the same'.\n\n~Besides the formatting, the code is the same~ (Ambiguous: [Besides] often means 'In addition to'. Use [Except for] or [Apart from] for clarity.)"
@@ -1134,7 +1114,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_052_sideB_2.mp3"
         }
       ],
-      "note": "In Database contexts, [fetch] or [retrieve] are the standard verbs for getting data.\n\n~...to allow the frontend fetches data~ (Incorrect: After [allow] + object, use the [infinitive] 'to fetch'.)"
+      "note": "In Database contexts, [fetch] or [retrieve] are the standard verbs for getting data."
     },
     {
       "cardId": "dummy_053",
@@ -1154,7 +1134,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_053_sideB_2.mp3"
         }
       ],
-      "note": "[ROWNUM] is a specific pseudo-column in Oracle SQL that returns the number of the row in a result set.\n\n~...index for the files~ (Incorrect: [ROWNUM] applies to database [rows], not [files].)"
+      "note": "[ROWNUM] is a specific pseudo-column in Oracle SQL that returns the number of the row in a result set."
     },
     {
       "cardId": "dummy_054",
@@ -1172,10 +1152,6 @@
         {
           "text": "P RECORDSET is the SYS REFCURSOR pointer.",
           "audioSrc": "public/data/audio/dummy/dummy_054_sideB_2.mp3"
-        },
-        {
-          "text": "P RECORDSET is the cursor pointer.",
-          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_3.mp3"
         }
       ],
       "note": "Prefixes like [P_] often denote a Parameter in stored procedures naming conventions."
@@ -1242,7 +1218,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_057_sideB_2.mp3"
         }
       ],
-      "note": "In programming, [Cast] is used as a verb: 'To cast X to Y'.\n\n~The variable is being cast into another type~ (Incorrect: Use [to] for type casting.)\n\n~...parsed by cast...~ (Incorrect: [Parsing] (analyzing text) and [Casting] (converting types) are different operations. Use [converted] or just [cast].)"
+      "note": "In programming, [Cast] is used as a verb: 'To cast X to Y'.\n\n~The variable is being cast into another type~ (Incorrect: Use [to] for type casting.)"
     },
     {
       "cardId": "dummy_058",
@@ -1354,7 +1330,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_062_sideB_2.mp3"
         }
       ],
-      "note": "[Parsing] refers to analyzing a string of symbols (code) to understand its structure.\n\n~This is just a parser~ (Incorrect: A parser is the tool/program, parsing is the action.)\n\n~This is just parse~ (Incorrect: Grammar requires the gerund/noun 'parsing'.)\n\n~This is just a parsing~ (Incorrect: [Parsing] as a process is uncountable. Remove [a].)"
+      "note": "[Parsing] refers to analyzing a string of symbols (code) to understand its structure.\n\n~This is just a parser~ (Incorrect: A parser is the tool/program, parsing is the action.)\n\n~This is just parse~ (Incorrect: Grammar requires the gerund/noun 'parsing'.)"
     },
     {
       "cardId": "dummy_063",
@@ -1512,10 +1488,6 @@
         {
           "text": "The Z procedure will return data formatted as JTF_VARCHAR2_TABLE.",
           "audioSrc": "public/data/audio/dummy/dummy_070_sideB_2.mp3"
-        },
-        {
-          "text": "The standard procedure Z will return data type JTF VARCHAR2 TABLE.",
-          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_3.mp3"
         }
       ],
       "note": "[VARCHAR2] is the Oracle-specific data type for variable-length strings."
@@ -1556,10 +1528,6 @@
         {
           "text": "A Common Table Expression is effectively a temporary local view.",
           "audioSrc": "public/data/audio/dummy/dummy_072_sideB_2.mp3"
-        },
-        {
-          "text": "A Common Table Expression is a local temporary view.",
-          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_3.mp3"
         }
       ],
       "note": "[CTE] is a temporary result set that exists only for the duration of a single SQL statement.\n\n~...local temporal view~ (Incorrect: Use [temporary] for short-lived items; [temporal] usually relates to time/history.)"
@@ -1620,14 +1588,6 @@
         {
           "text": "This is the structure that will be delivered to the frontend.",
           "audioSrc": "public/data/audio/dummy/dummy_075_sideB_2.mp3"
-        },
-        {
-          "text": "This whole structure will reach the frontend.",
-          "audioSrc": "public/data/audio/dummy/dummy_075_sideB_3.mp3"
-        },
-        {
-          "text": "This whole structure is what will be delivered to the frontend.",
-          "audioSrc": "public/data/audio/dummy/dummy_075_sideB_4.mp3"
         }
       ],
       "note": "Data flows from the [Backend] (server/DB) to the [Frontend] (client/browser).\n\n~This whole structure is what will get the frontend~ (Incorrect: This means the structure acquires the frontend.)"
@@ -1702,7 +1662,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_078_sideB_3.mp3"
         }
       ],
-      "note": "We often use [Cast] or [Convert] for this action.\n\n~...SQL legible data type~ (Incorrect: [Legible] usually refers to handwriting. For code/formats, use [readable].)"
+      "note": "We often use [Cast] or [Convert] for this action."
     },
     {
       "cardId": "dummy_079",
@@ -1742,7 +1702,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_080_sideB_2.mp3"
         }
       ],
-      "note": "**[94]**\n\n[Greater than] is the standard mathematical comparison term (>).\n\n[Provided] is a formal conditional connector similar to 'If'."
+      "note": "[Greater than] is the standard mathematical comparison term (>).\n\n[Provided] is a formal conditional connector similar to 'If'."
     },
     {
       "cardId": "dummy_081",
@@ -1940,14 +1900,6 @@
         {
           "text": "It specifies the privileges of the 'Customer' role.",
           "audioSrc": "public/data/audio/dummy/dummy_090_sideB_2.mp3"
-        },
-        {
-          "text": "It defines the privileges of the role 'Customer'.",
-          "audioSrc": "public/data/audio/dummy/dummy_090_sideB_3.mp3"
-        },
-        {
-          "text": "It defines the privileges of the role 'Client'.",
-          "audioSrc": "public/data/audio/dummy/dummy_090_sideB_4.mp3"
         }
       ],
       "note": "[Privileges] refers to the specific rights to perform actions."
@@ -1970,7 +1922,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_091_sideB_2.mp3"
         }
       ],
-      "note": "We generally use the structure [Subject + defines + Object].\n\n~...of the rol 'Customer'~ (Spelling: The English spelling is [Role].)"
+      "note": "We generally use the structure [Subject + defines + Object]."
     },
     {
       "cardId": "dummy_092",
@@ -2008,10 +1960,6 @@
         {
           "text": "That is likely it.",
           "audioSrc": "public/data/audio/dummy/dummy_093_sideB_2.mp3"
-        },
-        {
-          "text": "Probably that's it.",
-          "audioSrc": "public/data/audio/dummy/dummy_093_sideB_3.mp3"
         }
       ],
       "note": "[That's it] is a common way to say 'Esa es' (identifying something correct)."
@@ -2032,10 +1980,6 @@
         {
           "text": "That is probably correct.",
           "audioSrc": "public/data/audio/dummy/dummy_094_sideB_2.mp3"
-        },
-        {
-          "text": "Probably that's it.",
-          "audioSrc": "public/data/audio/dummy/dummy_094_sideB_3.mp3"
         }
       ],
       "note": "While 'Esa' and 'Eso' differ in gender in Spanish, in English [That] covers both."
@@ -2076,10 +2020,6 @@
         {
           "text": "REGEXP_LIKE compares text to complex patterns via regular expressions.",
           "audioSrc": "public/data/audio/dummy/dummy_096_sideB_2.mp3"
-        },
-        {
-          "text": "REGEXP_LIKE compares text with complex patterns using regular expressions.",
-          "audioSrc": "public/data/audio/dummy/dummy_096_sideB_3.mp3"
         }
       ],
       "note": "[Compares ... against] is very precise for matching logic.\n\n~compares text with~ (Acceptable, but 'against' or 'to' is often better for checking validity)."
@@ -2162,7 +2102,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_100_sideB_2.mp3"
         }
       ],
-      "note": "A [Wrapper] is a function whose main purpose is to call another function, often to simplify the interface or add security.\n\n~...acts strictly as a wrapping/wrap~ (Incorrect: In design patterns, the noun is [Wrapper].)"
+      "note": "A [Wrapper] is a function whose main purpose is to call another function, often to simplify the interface or add security."
     },
     {
       "cardId": "dummy_101",
@@ -2242,7 +2182,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_104_sideB_2.mp3"
         }
       ],
-      "note": "[Default value] is the value a variable/column takes if none is specified.\n\n~The defect value...~ (Incorrect: [Defect] means a flaw or bug. Use [Default] for a preset value.)"
+      "note": "[Default value] is the value a variable/column takes if none is specified."
     },
     {
       "cardId": "dummy_105",
@@ -2260,10 +2200,6 @@
         {
           "text": "We require a numeric default, for instance, 0.",
           "audioSrc": "public/data/audio/dummy/dummy_105_sideB_2.mp3"
-        },
-        {
-          "text": "We require a numeric placeholder value, like 0.",
-          "audioSrc": "public/data/audio/dummy/dummy_105_sideB_3.mp3"
         }
       ],
       "note": "A [Fallback] is a plan or value used if the original one fails or is missing."
@@ -2284,10 +2220,6 @@
         {
           "text": "The J variable is used as a placeholder.",
           "audioSrc": "public/data/audio/dummy/dummy_106_sideB_2.mp3"
-        },
-        {
-          "text": "We use the J variable like a placeholder.",
-          "audioSrc": "public/data/audio/dummy/dummy_106_sideB_3.mp3"
         }
       ],
       "note": "A [Placeholder] is a temporary variable or value used until the final value is known."
@@ -2310,7 +2242,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_107_sideB_2.mp3"
         }
       ],
-      "note": "[NULLIF(a,b)] is a SQL function that returns NULL if a equals b, otherwise it returns a."
+      "note": "**[145]**\n\n[NULLIF(a,b)] is a SQL function that returns NULL if a equals b, otherwise it returns a."
     },
     {
       "cardId": "dummy_108",
@@ -2350,7 +2282,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_109_sideB_2.mp3"
         }
       ],
-      "note": "**[94]**\n\nSequence of operations: [Action A], then [Action B]."
+      "note": "Sequence of operations: [Action A], then [Action B]."
     },
     {
       "cardId": "dummy_110",
@@ -2390,7 +2322,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_111_sideB_2.mp3"
         }
       ],
-      "note": "**[94]**\n\nMath verbs: [Subtract] (Resta), [Round] (Redondear)."
+      "note": "Math verbs: [Subtract] (Resta), [Round] (Redondear)."
     },
     {
       "cardId": "dummy_112",
@@ -2410,7 +2342,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_112_sideB_2.mp3"
         }
       ],
-      "note": "**[123]**\n\nThe standard term for precision is [Decimal Place]."
+      "note": "The standard term for precision is [Decimal Place]."
     },
     {
       "cardId": "dummy_113",
@@ -2450,7 +2382,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_114_sideB_2.mp3"
         }
       ],
-      "note": "[Safe division] prevents 'Division by Zero' errors.\n\n~...secure division logic~ (Incorrect: [Secure] implies protection against attacks. Use [safe] for preventing errors/crashes.)"
+      "note": "[Safe division] prevents 'Division by Zero' errors."
     }
   ]
 }
