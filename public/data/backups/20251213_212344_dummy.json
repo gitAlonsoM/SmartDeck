@@ -798,7 +798,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_036_sideB_2.mp3"
         }
       ],
-      "note": "Use preposition [in] or [on] for code lines.\n\n~The actual logic change is at line 45~ (Less common, but understandable. [On line X] is preferred.)\n\n~The real logic change is on the line 45~ (Incorrect: Do not use [the] before a number; say [Line 45].)\n\n~The actual logic change is in the line 45~ (Incorrect: Remove [the].)"
+      "note": "Use preposition [in] or [on] for code lines.\n\n~The actual logic change is at line 45~ (Less common, but understandable. [On line X] is preferred.)\n\n~The real logic change is on the line 45~ (Incorrect: Do not use [the] before a number; say [Line 45].)"
     },
     {
       "cardId": "dummy_037",
@@ -882,7 +882,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_040_sideB_2.mp3"
         }
       ],
-      "note": "**[146]**\n\n[To avoid] means to prevent something bad from happening.\n\n~We are parsing NULLs to Numbers~ (Style: With 'parsing', [into] is preferred for transformation/conversion. See rule **[146]**.)"
+      "note": "**[146]**\n\n[To avoid] means to prevent something bad from happening."
     },
     {
       "cardId": "dummy_041",
@@ -900,10 +900,6 @@
         {
           "text": "We are converting empty values into specific data types.",
           "audioSrc": "public/data/audio/dummy/dummy_041_sideB_2.mp3"
-        },
-        {
-          "text": "We are parsing the empty values into specific kind of data.",
-          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_3.mp3"
         }
       ],
       "note": "**[146]**\n\nA [Data Type] defines what kind of value a variable can hold (e.g., Integer, String, Boolean).\n\n~We are parsing the empty values in specific data types~ (Incorrect: Use [into] for transformation.)"
@@ -1358,7 +1354,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_062_sideB_2.mp3"
         }
       ],
-      "note": "[Parsing] refers to analyzing a string of symbols (code) to understand its structure.\n\n~This is just a parser~ (Incorrect: A parser is the tool/program, parsing is the action.)\n\n~This is just parse~ (Incorrect: Grammar requires the gerund/noun 'parsing'.)\n\n~This is just a parsing~ (Incorrect: [Parsing] as a process is uncountable. Remove [a].)\n\n~This is just a parse~ (Style: 'Parse' is typically a verb. Use 'parsing' for the action.)"
+      "note": "[Parsing] refers to analyzing a string of symbols (code) to understand its structure.\n\n~This is just a parser~ (Incorrect: A parser is the tool/program, parsing is the action.)\n\n~This is just parse~ (Incorrect: Grammar requires the gerund/noun 'parsing'.)\n\n~This is just a parsing~ (Incorrect: [Parsing] as a process is uncountable. Remove [a].)"
     },
     {
       "cardId": "dummy_063",
@@ -1632,10 +1628,6 @@
         {
           "text": "This whole structure is what will be delivered to the frontend.",
           "audioSrc": "public/data/audio/dummy/dummy_075_sideB_4.mp3"
-        },
-        {
-          "text": "This whole structure is what will go to the frontend.",
-          "audioSrc": "public/data/audio/dummy/dummy_075_sideB_5.mp3"
         }
       ],
       "note": "Data flows from the [Backend] (server/DB) to the [Frontend] (client/browser).\n\n~This whole structure is what will get the frontend~ (Incorrect: This means the structure acquires the frontend.)"
@@ -1662,7 +1654,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_076_sideB_3.mp3"
         }
       ],
-      "note": "DB column names are often mapped to different names in the frontend API response via [Aliases].\n\n~All these Aliases are the ones will see~ (Incorrect: Missing subject or relative pronoun. Use 'the ones [we] will see' or 'the ones [that] will be seen'.)"
+      "note": "DB column names are often mapped to different names in the frontend API response via [Aliases]."
     },
     {
       "cardId": "dummy_077",
@@ -1828,10 +1820,6 @@
         {
           "text": "APPS_INITIALIZE configures the security context via a simulated login.",
           "audioSrc": "public/data/audio/dummy/dummy_084_sideB_2.mp3"
-        },
-        {
-          "text": "APPS_INITIALIZE sets the security context simulating a user login.",
-          "audioSrc": "public/data/audio/dummy/dummy_084_sideB_3.mp3"
         }
       ],
       "note": "[Sets] or [Establishes] are used for configuring contexts.\n\n[By simulating] explains the *method* (By + Gerund)."
@@ -1960,10 +1948,6 @@
         {
           "text": "It defines the privileges of the role 'Client'.",
           "audioSrc": "public/data/audio/dummy/dummy_090_sideB_4.mp3"
-        },
-        {
-          "text": "It defines the privileges of the Customer role.",
-          "audioSrc": "public/data/audio/dummy/dummy_090_sideB_5.mp3"
         }
       ],
       "note": "[Privileges] refers to the specific rights to perform actions."
@@ -1984,10 +1968,6 @@
         {
           "text": "The 'Customer' role privileges are defined by IBE_CUSTOMER.",
           "audioSrc": "public/data/audio/dummy/dummy_091_sideB_2.mp3"
-        },
-        {
-          "text": "IBE_CUSTOMER defines the privileges of the role 'Customer'.",
-          "audioSrc": "public/data/audio/dummy/dummy_091_sideB_3.mp3"
         }
       ],
       "note": "We generally use the structure [Subject + defines + Object].\n\n~...of the rol 'Customer'~ (Spelling: The English spelling is [Role].)"
@@ -2187,7 +2167,7 @@
     {
       "cardId": "dummy_101",
       "cardType": "flippable",
-      "sideA": "Parsea el ID de entrada y delega la ejecución.",
+      "sideA": "Analiza el ID de entrada y delega la ejecución.",
       "sideB": [
         {
           "text": "It parses the input ID and delegates the execution.",
@@ -2284,10 +2264,6 @@
         {
           "text": "We require a numeric placeholder value, like 0.",
           "audioSrc": "public/data/audio/dummy/dummy_105_sideB_3.mp3"
-        },
-        {
-          "text": "We require a number as a fallback value, like 0.",
-          "audioSrc": "public/data/audio/dummy/dummy_105_sideB_4.mp3"
         }
       ],
       "note": "A [Fallback] is a plan or value used if the original one fails or is missing."
@@ -2314,7 +2290,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_106_sideB_3.mp3"
         }
       ],
-      "note": "A [Placeholder] is a temporary variable or value used until the final value is known.\n\n~...as a position marker~ (Non-standard: The technical term for a temporary variable is 'placeholder'.)"
+      "note": "A [Placeholder] is a temporary variable or value used until the final value is known."
     },
     {
       "cardId": "dummy_107",
@@ -2432,10 +2408,6 @@
         {
           "text": "We are rounding off to the 7th decimal.",
           "audioSrc": "public/data/audio/dummy/dummy_112_sideB_2.mp3"
-        },
-        {
-          "text": "We are rounding to the 7th decimal.",
-          "audioSrc": "public/data/audio/dummy/dummy_112_sideB_3.mp3"
         }
       ],
       "note": "**[123]**\n\nThe standard term for precision is [Decimal Place]."
@@ -2478,187 +2450,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_114_sideB_2.mp3"
         }
       ],
-      "note": "[Safe division] prevents 'Division by Zero' errors.\n\n~...secure division logic~ (Incorrect: [Secure] implies protection against attacks. Use [safe] for preventing errors/crashes.)\n\n~...safe logic division~ (Word Order: This implies the division of logic. Use [safe division logic] to describe logic for safe division.)"
-    },
-    {
-    "cardId": "dummy_115",
-    "cardType": "flippable",
-    "sideA": "Eso ya estaba.",
-    "sideB": [
-      {
-        "text": "That was already there.",
-        "audioSrc": "public/data/audio/dummy/dummy_115_sideB_0.mp3"
-      },
-      {
-        "text": "That was already in place.",
-        "audioSrc": "public/data/audio/dummy/dummy_115_sideB_1.mp3"
-      },
-      {
-        "text": "That already existed.",
-        "audioSrc": "public/data/audio/dummy/dummy_115_sideB_2.mp3"
-      }
-    ],
-    "note": "[In place] is a common idiom in engineering to mean something is established, implemented, or ready."
-  },
-  {
-    "cardId": "dummy_116",
-    "cardType": "flippable",
-    "sideA": "Eso ya estaba ahí.",
-    "sideB": [
-      {
-        "text": "That was already there.",
-        "audioSrc": "public/data/audio/dummy/dummy_116_sideB_0.mp3"
-      },
-      {
-        "text": "It was already there.",
-        "audioSrc": "public/data/audio/dummy/dummy_116_sideB_1.mp3"
-      },
-      {
-        "text": "That was already present right there.",
-        "audioSrc": "public/data/audio/dummy/dummy_116_sideB_2.mp3"
-      }
-    ],
-    "note": "Emphasizing [there] points to a specific location in the code or file."
-  },
-  {
-    "cardId": "dummy_117",
-    "cardType": "flippable",
-    "sideA": "El código de la provincia cambia dinámicamente.",
-    "sideB": [
-      {
-        "text": "The province code changes dynamically.",
-        "audioSrc": "public/data/audio/dummy/dummy_117_sideB_0.mp3"
-      },
-      {
-        "text": "The province code changes on the fly.",
-        "audioSrc": "public/data/audio/dummy/dummy_117_sideB_1.mp3"
-      },
-      {
-        "text": "The province code updates dynamically.",
-        "audioSrc": "public/data/audio/dummy/dummy_117_sideB_2.mp3"
-      }
-    ],
-    "note": "[Dynamically] is the standard adverb for runtime changes.\n\n[On the fly] is a more casual, very common technical idiom for dynamic changes during execution."
-  },
-  {
-    "cardId": "dummy_118",
-    "cardType": "flippable",
-    "sideA": "Estoy mezclando lenguajes.",
-    "sideB": [
-      {
-        "text": "I am mixing languages.",
-        "audioSrc": "public/data/audio/dummy/dummy_118_sideB_0.mp3"
-      },
-      {
-        "text": "I'm mixing up languages.",
-        "audioSrc": "public/data/audio/dummy/dummy_118_sideB_1.mp3"
-      },
-      {
-        "text": "I am combining languages.",
-        "audioSrc": "public/data/audio/dummy/dummy_118_sideB_2.mp3"
-      }
-    ],
-    "note": "[Mixing] usually means using two things together (e.g., Python and SQL).\n[Mixing up] implies confusion or making a mistake between two things."
-  },
-  {
-    "cardId": "dummy_119",
-    "cardType": "flippable",
-    "sideA": "Estoy mezclando conceptos.",
-    "sideB": [
-      {
-        "text": "I am mixing up concepts.",
-        "audioSrc": "public/data/audio/dummy/dummy_119_sideB_0.mp3"
-      },
-      {
-        "text": "I'm confusing concepts.",
-        "audioSrc": "public/data/audio/dummy/dummy_119_sideB_1.mp3"
-      },
-      {
-        "text": "I am getting the concepts mixed up.",
-        "audioSrc": "public/data/audio/dummy/dummy_119_sideB_2.mp3"
-      }
-    ],
-    "note": "When you are confused between two ideas, the phrasal verb [mix up] is more accurate than just 'mix'."
-  },
-  {
-    "cardId": "dummy_120",
-    "cardType": "flippable",
-    "sideA": "Tengo una vaga idea de cómo hacerlo.",
-    "sideB": [
-      {
-        "text": "I have a vague idea of how to do it.",
-        "audioSrc": "public/data/audio/dummy/dummy_120_sideB_0.mp3"
-      },
-      {
-        "text": "I have a rough idea of how to do it.",
-        "audioSrc": "public/data/audio/dummy/dummy_120_sideB_1.mp3"
-      },
-      {
-        "text": "I have a general idea how to do it.",
-        "audioSrc": "public/data/audio/dummy/dummy_120_sideB_2.mp3"
-      }
-    ],
-    "note": "[Vague] means unclear or undefined.\n[Rough idea] suggests an approximation or a draft plan, often used when you are about to start coding."
-  },
-  {
-    "cardId": "dummy_121",
-    "cardType": "flippable",
-    "sideA": "Todos estos apodos son los que llegarán al frontend.",
-    "sideB": [
-      {
-        "text": "All these aliases are the ones that will reach the frontend.",
-        "audioSrc": "public/data/audio/dummy/dummy_121_sideB_0.mp3"
-      },
-      {
-        "text": "All these nicknames will reach the frontend.",
-        "audioSrc": "public/data/audio/dummy/dummy_121_sideB_1.mp3"
-      },
-      {
-        "text": "These are all the aliases that will get to the frontend.",
-        "audioSrc": "public/data/audio/dummy/dummy_121_sideB_2.mp3"
-      }
-    ],
-    "note": "In a data/database context (SQL `AS`), 'apodos' are technically called [Aliases].\n\n[Nicknames] is the literal translation, usually reserved for people or user profiles."
-  },
-  {
-    "cardId": "dummy_122",
-    "cardType": "flippable",
-    "sideA": "Los valores por defecto son estos.",
-    "sideB": [
-      {
-        "text": "These are the default values.",
-        "audioSrc": "public/data/audio/dummy/dummy_122_sideB_0.mp3"
-      },
-      {
-        "text": "The default values are these.",
-        "audioSrc": "public/data/audio/dummy/dummy_122_sideB_1.mp3"
-      },
-      {
-        "text": "These are the defaults.",
-        "audioSrc": "public/data/audio/dummy/dummy_122_sideB_2.mp3"
-      }
-    ],
-    "note": "[Defaults] can be used as a noun to refer to 'default values'."
-  },
-  {
-    "cardId": "dummy_123",
-    "cardType": "flippable",
-    "sideA": "Hasta ahí, todo bien.",
-    "sideB": [
-      {
-        "text": "So far, so good.",
-        "audioSrc": "public/data/audio/dummy/dummy_123_sideB_0.mp3"
-      },
-      {
-        "text": "Everything is good so far.",
-        "audioSrc": "public/data/audio/dummy/dummy_123_sideB_1.mp3"
-      },
-      {
-        "text": "Up to that point, everything is fine.",
-        "audioSrc": "public/data/audio/dummy/dummy_123_sideB_2.mp3"
-      }
-    ],
-    "note": "[So far, so good] is the standard fixed expression for this sentiment.\n\n~Until there, all good~ (Literal translation error. Use [So far] for 'hasta ahora/ahí' in progress contexts.)"
-  }
+      "note": "[Safe division] prevents 'Division by Zero' errors.\n\n~...secure division logic~ (Incorrect: [Secure] implies protection against attacks. Use [safe] for preventing errors/crashes.)"
+    }
   ]
 }
