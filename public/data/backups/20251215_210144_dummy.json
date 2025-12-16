@@ -1478,7 +1478,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_068_sideB_2.mp3"
         }
       ],
-      "note": "[JTF] types (Java Technology Foundation) are common standard array types in Oracle EBS.\n\n~The standard procedure X will return data type JTF...~ (Slightly imprecise. Use 'return data [of type] JTF...' or 'return JTF... type data'.)"
+      "note": "[JTF] types (Java Technology Foundation) are common standard array types in Oracle EBS."
     },
     {
       "cardId": "dummy_069",
@@ -1636,13 +1636,9 @@
         {
           "text": "This whole structure is what will go to the frontend.",
           "audioSrc": "public/data/audio/dummy/dummy_075_sideB_5.mp3"
-        },
-        {
-          "text": "All this structure is what will reach the frontend.",
-          "audioSrc": "public/data/audio/dummy/dummy_075_sideB_6.mp3"
         }
       ],
-      "note": "Data flows from the [Backend] (server/DB) to the [Frontend] (client/browser).\n\n~This whole structure is what will get the frontend~ (Incorrect: This means the structure acquires the frontend.)\n\n~All thos structure...~ (Typo/Grammar: Use [All this structure] or [All these structures].)"
+      "note": "Data flows from the [Backend] (server/DB) to the [Frontend] (client/browser).\n\n~This whole structure is what will get the frontend~ (Incorrect: This means the structure acquires the frontend.)"
     },
     {
       "cardId": "dummy_076",
@@ -1812,10 +1808,6 @@
         {
           "text": "The fnd_global package manages global variables and the session status.",
           "audioSrc": "public/data/audio/dummy/dummy_083_sideB_2.mp3"
-        },
-        {
-          "text": "fnd_global manages global variables and the current session status.",
-          "audioSrc": "public/data/audio/dummy/dummy_083_sideB_3.mp3"
         }
       ],
       "note": "[fnd_global] is a core Oracle EBS package.\n\n[Manages] or [Handles] are appropriate verbs for software components controlling state."
@@ -2018,7 +2010,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_092_sideB_2.mp3"
         }
       ],
-      "note": "[Need] can be followed by a passive infinitive [needs to be parsed] or a gerund [needs parsing].\n\n~The data type format needs to be parsing~ (Incorrect grammar. Use [needs parsing] or [needs to be parsed].)"
+      "note": "[Need] can be followed by a passive infinitive [needs to be parsed] or a gerund [needs parsing]."
     },
     {
       "cardId": "dummy_093",
@@ -2040,10 +2032,6 @@
         {
           "text": "Probably that's it.",
           "audioSrc": "public/data/audio/dummy/dummy_093_sideB_3.mp3"
-        },
-        {
-          "text": "That's it probably.",
-          "audioSrc": "public/data/audio/dummy/dummy_093_sideB_4.mp3"
         }
       ],
       "note": "[That's it] is a common way to say 'Esa es' (identifying something correct)."
@@ -2219,7 +2207,7 @@
     {
       "cardId": "dummy_102",
       "cardType": "flippable",
-      "sideA": "No contiene lógica de negocio, solo parseo de parámetros.",
+      "sideA": "No contiene lógica de negocio, solo análisis de parámetros.",
       "sideB": [
         {
           "text": "It contains no business logic, only parameter parsing.",
@@ -2274,7 +2262,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_104_sideB_2.mp3"
         }
       ],
-      "note": "[Default value] is the value a variable/column takes if none is specified.\n\n~The defect value...~ (Incorrect: [Defect] means a flaw or bug. Use [Default] for a preset value.)\n\n~The default value of the state of the column...~ (Too wordy. Use [Status column] or [Column status] for technical precision.)"
+      "note": "[Default value] is the value a variable/column takes if none is specified.\n\n~The defect value...~ (Incorrect: [Defect] means a flaw or bug. Use [Default] for a preset value.)"
     },
     {
       "cardId": "dummy_105",
@@ -2300,10 +2288,6 @@
         {
           "text": "We require a number as a fallback value, like 0.",
           "audioSrc": "public/data/audio/dummy/dummy_105_sideB_4.mp3"
-        },
-        {
-          "text": "We need a numeric value as a fallback, like 0.",
-          "audioSrc": "public/data/audio/dummy/dummy_105_sideB_5.mp3"
         }
       ],
       "note": "A [Fallback] is a plan or value used if the original one fails or is missing."
@@ -2497,204 +2481,184 @@
       "note": "[Safe division] prevents 'Division by Zero' errors.\n\n~...secure division logic~ (Incorrect: [Secure] implies protection against attacks. Use [safe] for preventing errors/crashes.)\n\n~...safe logic division~ (Word Order: This implies the division of logic. Use [safe division logic] to describe logic for safe division.)"
     },
     {
-      "cardId": "dummy_115",
-      "cardType": "flippable",
-      "sideA": "Eso ya estaba.",
-      "sideB": [
-        {
-          "text": "That was already there.",
-          "audioSrc": "public/data/audio/dummy/dummy_115_sideB_0.mp3"
-        },
-        {
-          "text": "That was already in place.",
-          "audioSrc": "public/data/audio/dummy/dummy_115_sideB_1.mp3"
-        },
-        {
-          "text": "That already existed.",
-          "audioSrc": "public/data/audio/dummy/dummy_115_sideB_2.mp3"
-        }
-      ],
-      "note": "[In place] is a common idiom in engineering to mean something is established, implemented, or ready."
-    },
-    {
-      "cardId": "dummy_116",
-      "cardType": "flippable",
-      "sideA": "Eso ya estaba ahí.",
-      "sideB": [
-        {
-          "text": "That was already there.",
-          "audioSrc": "public/data/audio/dummy/dummy_116_sideB_0.mp3"
-        },
-        {
-          "text": "It was already there.",
-          "audioSrc": "public/data/audio/dummy/dummy_116_sideB_1.mp3"
-        },
-        {
-          "text": "That was already present right there.",
-          "audioSrc": "public/data/audio/dummy/dummy_116_sideB_2.mp3"
-        }
-      ],
-      "note": "Emphasizing [there] points to a specific location in the code or file."
-    },
-    {
-      "cardId": "dummy_117",
-      "cardType": "flippable",
-      "sideA": "El código de la provincia cambia dinámicamente.",
-      "sideB": [
-        {
-          "text": "The province code changes dynamically.",
-          "audioSrc": "public/data/audio/dummy/dummy_117_sideB_0.mp3"
-        },
-        {
-          "text": "The province code changes on the fly.",
-          "audioSrc": "public/data/audio/dummy/dummy_117_sideB_1.mp3"
-        },
-        {
-          "text": "The province code updates dynamically.",
-          "audioSrc": "public/data/audio/dummy/dummy_117_sideB_2.mp3"
-        },
-        {
-          "text": "The code of the province changes dynamically.",
-          "audioSrc": "public/data/audio/dummy/dummy_117_sideB_3.mp3"
-        }
-      ],
-      "note": "[Dynamically] is the standard adverb for runtime changes.\n\n[On the fly] is a more casual, very common technical idiom for dynamic changes during execution."
-    },
-    {
-      "cardId": "dummy_118",
-      "cardType": "flippable",
-      "sideA": "Estoy mezclando lenguajes.",
-      "sideB": [
-        {
-          "text": "I am mixing languages.",
-          "audioSrc": "public/data/audio/dummy/dummy_118_sideB_0.mp3"
-        },
-        {
-          "text": "I'm mixing up languages.",
-          "audioSrc": "public/data/audio/dummy/dummy_118_sideB_1.mp3"
-        },
-        {
-          "text": "I am combining languages.",
-          "audioSrc": "public/data/audio/dummy/dummy_118_sideB_2.mp3"
-        }
-      ],
-      "note": "[Mixing] usually means using two things together (e.g., Python and SQL).\n[Mixing up] implies confusion or making a mistake between two things."
-    },
-    {
-      "cardId": "dummy_119",
-      "cardType": "flippable",
-      "sideA": "Estoy mezclando conceptos.",
-      "sideB": [
-        {
-          "text": "I am mixing up concepts.",
-          "audioSrc": "public/data/audio/dummy/dummy_119_sideB_0.mp3"
-        },
-        {
-          "text": "I'm confusing concepts.",
-          "audioSrc": "public/data/audio/dummy/dummy_119_sideB_1.mp3"
-        },
-        {
-          "text": "I am getting the concepts mixed up.",
-          "audioSrc": "public/data/audio/dummy/dummy_119_sideB_2.mp3"
-        },
-        {
-          "text": "I am mixing concepts.",
-          "audioSrc": "public/data/audio/dummy/dummy_119_sideB_3.mp3"
-        }
-      ],
-      "note": "When you are confused between two ideas, the phrasal verb [mix up] is more accurate than just 'mix'.\n\n~I am stirring concepts~ (Incorrect: 'Stir' is for liquids/cooking. Use 'mix up' or 'confuse' for ideas.)"
-    },
-    {
-      "cardId": "dummy_120",
-      "cardType": "flippable",
-      "sideA": "Tengo una vaga idea de cómo hacerlo.",
-      "sideB": [
-        {
-          "text": "I have a vague idea of how to do it.",
-          "audioSrc": "public/data/audio/dummy/dummy_120_sideB_0.mp3"
-        },
-        {
-          "text": "I have a rough idea of how to do it.",
-          "audioSrc": "public/data/audio/dummy/dummy_120_sideB_1.mp3"
-        },
-        {
-          "text": "I have a general idea how to do it.",
-          "audioSrc": "public/data/audio/dummy/dummy_120_sideB_2.mp3"
-        },
-        {
-          "text": "I have a general idea of how to do it.",
-          "audioSrc": "public/data/audio/dummy/dummy_120_sideB_3.mp3"
-        }
-      ],
-      "note": "[Vague] means unclear or undefined.\n[Rough idea] suggests an approximation or a draft plan, often used when you are about to start coding."
-    },
-    {
-      "cardId": "dummy_121",
-      "cardType": "flippable",
-      "sideA": "Todos estos apodos son los que llegarán al frontend.",
-      "sideB": [
-        {
-          "text": "All these aliases are the ones that will reach the frontend.",
-          "audioSrc": "public/data/audio/dummy/dummy_121_sideB_0.mp3"
-        },
-        {
-          "text": "All these nicknames will reach the frontend.",
-          "audioSrc": "public/data/audio/dummy/dummy_121_sideB_1.mp3"
-        },
-        {
-          "text": "These are all the aliases that will get to the frontend.",
-          "audioSrc": "public/data/audio/dummy/dummy_121_sideB_2.mp3"
-        },
-        {
-          "text": "All these aliases are what will reach the frontend.",
-          "audioSrc": "public/data/audio/dummy/dummy_121_sideB_3.mp3"
-        }
-      ],
-      "note": "In a data/database context (SQL `AS`), 'apodos' are technically called [Aliases].\n\n[Nicknames] is the literal translation, usually reserved for people or user profiles."
-    },
-    {
-      "cardId": "dummy_122",
-      "cardType": "flippable",
-      "sideA": "Los valores por defecto son estos.",
-      "sideB": [
-        {
-          "text": "These are the default values.",
-          "audioSrc": "public/data/audio/dummy/dummy_122_sideB_0.mp3"
-        },
-        {
-          "text": "The default values are these.",
-          "audioSrc": "public/data/audio/dummy/dummy_122_sideB_1.mp3"
-        },
-        {
-          "text": "These are the defaults.",
-          "audioSrc": "public/data/audio/dummy/dummy_122_sideB_2.mp3"
-        }
-      ],
-      "note": "[Defaults] can be used as a noun to refer to 'default values'."
-    },
-    {
-      "cardId": "dummy_123",
-      "cardType": "flippable",
-      "sideA": "Hasta ahí, todo bien.",
-      "sideB": [
-        {
-          "text": "So far, so good.",
-          "audioSrc": "public/data/audio/dummy/dummy_123_sideB_0.mp3"
-        },
-        {
-          "text": "Everything is good so far.",
-          "audioSrc": "public/data/audio/dummy/dummy_123_sideB_1.mp3"
-        },
-        {
-          "text": "Up to that point, everything is fine.",
-          "audioSrc": "public/data/audio/dummy/dummy_123_sideB_2.mp3"
-        },
-        {
-          "text": "So far, everything is good.",
-          "audioSrc": "public/data/audio/dummy/dummy_123_sideB_3.mp3"
-        }
-      ],
-      "note": "[So far, so good] is the standard fixed expression for this sentiment.\n\n~Until there, all good~ (Literal translation error. Use [So far] for 'hasta ahora/ahí' in progress contexts.)"
-    }
+    "cardId": "dummy_115",
+    "cardType": "flippable",
+    "sideA": "Eso ya estaba.",
+    "sideB": [
+      {
+        "text": "That was already there.",
+        "audioSrc": "public/data/audio/dummy/dummy_115_sideB_0.mp3"
+      },
+      {
+        "text": "That was already in place.",
+        "audioSrc": "public/data/audio/dummy/dummy_115_sideB_1.mp3"
+      },
+      {
+        "text": "That already existed.",
+        "audioSrc": "public/data/audio/dummy/dummy_115_sideB_2.mp3"
+      }
+    ],
+    "note": "[In place] is a common idiom in engineering to mean something is established, implemented, or ready."
+  },
+  {
+    "cardId": "dummy_116",
+    "cardType": "flippable",
+    "sideA": "Eso ya estaba ahí.",
+    "sideB": [
+      {
+        "text": "That was already there.",
+        "audioSrc": "public/data/audio/dummy/dummy_116_sideB_0.mp3"
+      },
+      {
+        "text": "It was already there.",
+        "audioSrc": "public/data/audio/dummy/dummy_116_sideB_1.mp3"
+      },
+      {
+        "text": "That was already present right there.",
+        "audioSrc": "public/data/audio/dummy/dummy_116_sideB_2.mp3"
+      }
+    ],
+    "note": "Emphasizing [there] points to a specific location in the code or file."
+  },
+  {
+    "cardId": "dummy_117",
+    "cardType": "flippable",
+    "sideA": "El código de la provincia cambia dinámicamente.",
+    "sideB": [
+      {
+        "text": "The province code changes dynamically.",
+        "audioSrc": "public/data/audio/dummy/dummy_117_sideB_0.mp3"
+      },
+      {
+        "text": "The province code changes on the fly.",
+        "audioSrc": "public/data/audio/dummy/dummy_117_sideB_1.mp3"
+      },
+      {
+        "text": "The province code updates dynamically.",
+        "audioSrc": "public/data/audio/dummy/dummy_117_sideB_2.mp3"
+      }
+    ],
+    "note": "[Dynamically] is the standard adverb for runtime changes.\n\n[On the fly] is a more casual, very common technical idiom for dynamic changes during execution."
+  },
+  {
+    "cardId": "dummy_118",
+    "cardType": "flippable",
+    "sideA": "Estoy mezclando lenguajes.",
+    "sideB": [
+      {
+        "text": "I am mixing languages.",
+        "audioSrc": "public/data/audio/dummy/dummy_118_sideB_0.mp3"
+      },
+      {
+        "text": "I'm mixing up languages.",
+        "audioSrc": "public/data/audio/dummy/dummy_118_sideB_1.mp3"
+      },
+      {
+        "text": "I am combining languages.",
+        "audioSrc": "public/data/audio/dummy/dummy_118_sideB_2.mp3"
+      }
+    ],
+    "note": "[Mixing] usually means using two things together (e.g., Python and SQL).\n[Mixing up] implies confusion or making a mistake between two things."
+  },
+  {
+    "cardId": "dummy_119",
+    "cardType": "flippable",
+    "sideA": "Estoy mezclando conceptos.",
+    "sideB": [
+      {
+        "text": "I am mixing up concepts.",
+        "audioSrc": "public/data/audio/dummy/dummy_119_sideB_0.mp3"
+      },
+      {
+        "text": "I'm confusing concepts.",
+        "audioSrc": "public/data/audio/dummy/dummy_119_sideB_1.mp3"
+      },
+      {
+        "text": "I am getting the concepts mixed up.",
+        "audioSrc": "public/data/audio/dummy/dummy_119_sideB_2.mp3"
+      }
+    ],
+    "note": "When you are confused between two ideas, the phrasal verb [mix up] is more accurate than just 'mix'."
+  },
+  {
+    "cardId": "dummy_120",
+    "cardType": "flippable",
+    "sideA": "Tengo una vaga idea de cómo hacerlo.",
+    "sideB": [
+      {
+        "text": "I have a vague idea of how to do it.",
+        "audioSrc": "public/data/audio/dummy/dummy_120_sideB_0.mp3"
+      },
+      {
+        "text": "I have a rough idea of how to do it.",
+        "audioSrc": "public/data/audio/dummy/dummy_120_sideB_1.mp3"
+      },
+      {
+        "text": "I have a general idea how to do it.",
+        "audioSrc": "public/data/audio/dummy/dummy_120_sideB_2.mp3"
+      }
+    ],
+    "note": "[Vague] means unclear or undefined.\n[Rough idea] suggests an approximation or a draft plan, often used when you are about to start coding."
+  },
+  {
+    "cardId": "dummy_121",
+    "cardType": "flippable",
+    "sideA": "Todos estos apodos son los que llegarán al frontend.",
+    "sideB": [
+      {
+        "text": "All these aliases are the ones that will reach the frontend.",
+        "audioSrc": "public/data/audio/dummy/dummy_121_sideB_0.mp3"
+      },
+      {
+        "text": "All these nicknames will reach the frontend.",
+        "audioSrc": "public/data/audio/dummy/dummy_121_sideB_1.mp3"
+      },
+      {
+        "text": "These are all the aliases that will get to the frontend.",
+        "audioSrc": "public/data/audio/dummy/dummy_121_sideB_2.mp3"
+      }
+    ],
+    "note": "In a data/database context (SQL `AS`), 'apodos' are technically called [Aliases].\n\n[Nicknames] is the literal translation, usually reserved for people or user profiles."
+  },
+  {
+    "cardId": "dummy_122",
+    "cardType": "flippable",
+    "sideA": "Los valores por defecto son estos.",
+    "sideB": [
+      {
+        "text": "These are the default values.",
+        "audioSrc": "public/data/audio/dummy/dummy_122_sideB_0.mp3"
+      },
+      {
+        "text": "The default values are these.",
+        "audioSrc": "public/data/audio/dummy/dummy_122_sideB_1.mp3"
+      },
+      {
+        "text": "These are the defaults.",
+        "audioSrc": "public/data/audio/dummy/dummy_122_sideB_2.mp3"
+      }
+    ],
+    "note": "[Defaults] can be used as a noun to refer to 'default values'."
+  },
+  {
+    "cardId": "dummy_123",
+    "cardType": "flippable",
+    "sideA": "Hasta ahí, todo bien.",
+    "sideB": [
+      {
+        "text": "So far, so good.",
+        "audioSrc": "public/data/audio/dummy/dummy_123_sideB_0.mp3"
+      },
+      {
+        "text": "Everything is good so far.",
+        "audioSrc": "public/data/audio/dummy/dummy_123_sideB_1.mp3"
+      },
+      {
+        "text": "Up to that point, everything is fine.",
+        "audioSrc": "public/data/audio/dummy/dummy_123_sideB_2.mp3"
+      }
+    ],
+    "note": "[So far, so good] is the standard fixed expression for this sentiment.\n\n~Until there, all good~ (Literal translation error. Use [So far] for 'hasta ahora/ahí' in progress contexts.)"
+  }
   ]
 }
