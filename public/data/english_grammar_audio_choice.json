@@ -16807,7 +16807,8 @@
       "category": "Conversational (That + It)",
       "sentenceParts": {
         "prefix": "I see the report, but... ",
-        "suffix": " Where are the images?",
+        "suffix": " Where are the images?"
+      },
         "options": [
           {
             "text": "is that it?",
@@ -16821,22 +16822,7 @@
             "text": "is it that?",
             "isCorrect": false
           }
-        ]
-      },
-      "options": [
-        {
-          "text": "is that it?",
-          "isCorrect": true
-        },
-        {
-          "text": "is that?",
-          "isCorrect": false
-        },
-        {
-          "text": "is it that?",
-          "isCorrect": false
-        }
-      ],
+        ],      
       "correctAnswer": "I see the report, but... is that it? Where are the images?",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_580.mp3",
       "hint": "A phrase asking 'Is that everything?' or 'Is that all?'",
@@ -16850,7 +16836,8 @@
       "category": "Conversational (That + It)",
       "sentenceParts": {
         "prefix": "I can't just delete the database. ",
-        "suffix": " We need a backup plan.",
+        "suffix": " We need a backup plan."
+      },
         "options": [
           {
             "text": "That's just it.",
@@ -16864,28 +16851,216 @@
             "text": "That's just.",
             "isCorrect": false
           }
-        ]
-      },
-      "options": [
-        {
-          "text": "That's just it.",
-          "isCorrect": true
-        },
-        {
-          "text": "It's just that.",
-          "isCorrect": false
-        },
-        {
-          "text": "That's just.",
-          "isCorrect": false
-        }
-      ],
+        ], 
       "correctAnswer": "I can't just delete the database. That's just it. We need a backup plan.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_581.mp3",
       "hint": "Used to emphasize the main problem or point ('Ese es el punto/detalle').",
       "content": {
         "type": "text",
         "value": "**[142]**\n\n[That's just it] is an emphatic way to identify the core issue.\n\n~It's just that~ is usually followed by an explanation (e.g., 'It's just that I am tired...'), whereas 'That's just it' stands alone as a statement."
+      }
+    },
+    {
+      "cardId": "egac_582",
+      "category": "Be Meant To (Function)",
+      "sentenceParts": {
+        "prefix": "This specific tool ",
+        "suffix": " tighten loose screws."
+      },
+      "options": [
+        {
+          "text": "is meant to",
+          "isCorrect": true
+        },
+        {
+          "text": "means to",
+          "isCorrect": false
+        },
+        {
+          "text": "mean to",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "This specific tool is meant to tighten loose screws.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_582.mp3",
+      "hint": "Passive voice used to describe the intended design/function of an object.",
+      "content": {
+        "type": "text",
+        "value": "**[147]**\n\nWhen describing what a tool or software was designed to do, we use the passive structure [Be Meant To].\n\n~Means to~ (Active voice) would imply the tool itself has a conscious intention/brain, which is incorrect."
+      }
+    },
+    {
+      "cardId": "egac_583",
+      "category": "Be Meant To (Schedule)",
+      "sentenceParts": {
+        "prefix": "We ",
+        "suffix": " meet at noon, not midnight."
+      },
+      "options": [
+        {
+          "text": "were meant to",
+          "isCorrect": true
+        },
+        {
+          "text": "meant to",
+          "isCorrect": false
+        },
+        {
+          "text": "meaning to",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "We were meant to meet at noon, not midnight.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_583.mp3",
+      "hint": "Refers to a plan or destiny that was supposed to happen.",
+      "content": {
+        "type": "text",
+        "value": "**[147]**\n\nUse [Were meant to] to describe a past plan or obligation.\n\n~Meant to~ (Active) would mean 'We intended to', which is possible, but 'Were meant to' emphasizes the schedule/arrangement rather than just our internal desire."
+      }
+    },
+    {
+      "cardId": "egac_584",
+      "category": "Be Meant To (Software)",
+      "sentenceParts": {
+        "prefix": "The software update ",
+        "suffix": " fix security vulnerabilities."
+      },
+      "options": [
+        {
+          "text": "is meant to",
+          "isCorrect": true
+        },
+        {
+          "text": "means",
+          "isCorrect": false
+        },
+        {
+          "text": "mean to",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "The software update is meant to fix security vulnerabilities.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_584.mp3",
+      "hint": "The intended purpose of the update.",
+      "content": {
+        "type": "text",
+        "value": "**[147]**\n\nSoftware releases have an intended purpose designed by developers. Therefore, the software [is meant to] do something.\n\n~Means~ signifies definition (e.g., 'Red means stop'), not function."
+      }
+    },
+    {
+      "cardId": "egac_585",
+      "category": "Embedded Questions (Word Order)",
+      "sentenceParts": {
+        "prefix": "I am not sure where ",
+        "suffix": "."
+      },
+      "options": [
+        {
+          "text": "the meeting room is",
+          "isCorrect": true
+        },
+        {
+          "text": "is the meeting room",
+          "isCorrect": false
+        },
+        {
+          "text": "the meeting room be",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "I am not sure where the meeting room is.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_585.mp3",
+      "hint": "In embedded questions, the Subject comes before the Verb.",
+      "content": {
+        "type": "text",
+        "value": "**[148]**\n\nWord Order Switch:\nDirect: Where [is] [the room]?\nEmbedded: I am not sure where [the room] [is].\n\nNote that it ends with a period because it is a statement."
+      }
+    },
+    {
+      "cardId": "egac_586",
+      "category": "Embedded Questions (Removing Do)",
+      "sentenceParts": {
+        "prefix": "Please tell me how ",
+        "suffix": "."
+      },
+      "options": [
+        {
+          "text": "this machine works",
+          "isCorrect": true
+        },
+        {
+          "text": "does this machine work",
+          "isCorrect": false
+        },
+        {
+          "text": "works this machine",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "Please tell me how this machine works.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_586.mp3",
+      "hint": "Remove the auxiliary 'does' and conjugate the main verb.",
+      "content": {
+        "type": "text",
+        "value": "**[148]**\n\nWhen embedding a question, we remove the auxiliary 'do/does'.\n\nDirect: How [does] it work?\nEmbedded: Tell me how it [works]. (The 's' moves to the main verb)."
+      }
+    },
+    {
+      "cardId": "egac_587",
+      "category": "Embedded Questions (Work Schedule)",
+      "sentenceParts": {
+        "prefix": "I would like to know when ",
+        "suffix": "."
+      },
+      "options": [
+        {
+          "text": "the new roster is posted",
+          "isCorrect": true
+        },
+        {
+          "text": "is posted the new roster",
+          "isCorrect": false
+        },
+        {
+          "text": "is the new roster posted",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "I would like to know when the new roster is posted.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_587.mp3",
+      "hint": "This is a polite request for information. Use Statement order.",
+      "content": {
+        "type": "text",
+        "value": "**[148]**\n\nPolite requests starting with \"I would like to know...\" are grammatically statements, not questions.\n\nStructure: [Subject] (the new roster) + [Verb] (is posted)."
+      }
+    },
+    {
+      "cardId": "egac_588",
+      "category": "Embedded Questions (Past Tense)",
+      "sentenceParts": {
+        "prefix": "I can't remember where ",
+        "suffix": "."
+      },
+      "options": [
+        {
+          "text": "I left my keys",
+          "isCorrect": true
+        },
+        {
+          "text": "did I leave my keys",
+          "isCorrect": false
+        },
+        {
+          "text": "left I my keys",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "I can't remember where I left my keys.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_588.mp3",
+      "hint": "Remove the auxiliary 'did' and put the verb in the past tense.",
+      "content": {
+        "type": "text",
+        "value": "**[148]**\n\nDirect: Where [did] I leave them?\nEmbedded: I can't remember where I [left] them.\n\nWe remove 'did' and change the main verb to the Past Simple form."
       }
     }
   ]
