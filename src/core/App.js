@@ -1031,17 +1031,29 @@ handleCreateDeckClicked() {
 
 
 
+// --- Application Entry Point (ROBUST MOBILE FIX) ---
+const startApplication = async () => {
+    // Prevents double initialization if both checks pass quickly
+    if (window.smartDeckInitialized) return;
+    window.smartDeckInitialized = true;
 
-
-  
-
-// --- Application Entry Point ---
-document.addEventListener('DOMContentLoaded', () => {
     try {
+        console.log("DEBUG: [Entry] Starting App bootstrap sequence...");
         const app = new App();
-        app.init();
+        await app.init();
     } catch (error) {
         console.error("FATAL: Could not start the application.", error);
-        document.body.innerHTML = `<div class="text-red-500 p-8">A fatal error occurred. Please check the console.</div>`;
+        // On mobile, alerts are ugly but effective for catching fatal startup errors if no console is available
+        // alert("Fatal Error starting App: " + error.message); 
+        document.body.innerHTML = `<div class="text-red-500 p-8">A fatal error occurred. Please refresh. <br> ${error.message}</div>`;
     }
-});
+};
+
+// Check if the DOM is already ready (Critical for Mobile/Cache)
+if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    console.log("DEBUG: [Entry] DOM was already ready. Executing immediately.");
+    startApplication();
+} else {
+    console.log("DEBUG: [Entry] Waiting for DOMContentLoaded event.");
+    document.addEventListener('DOMContentLoaded', startApplication);
+}
