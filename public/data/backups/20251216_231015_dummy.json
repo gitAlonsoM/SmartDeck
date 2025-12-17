@@ -546,7 +546,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_125_sideB_2.mp3"
         }
       ],
-      "note": "**[147]**\n\nUse [meant to] or [intended to] for functionality goals.\n\n[Primary] is more formal and technical than 'Main' in database contexts.\n\n[Capture] is the standard industry verb for getting input from a user.\n\n~...the main email of the user~ (Unnatural: For people and users, we prefer the possessive 's: [the user's email].)"
+      "note": "**[147]**\n\nUse [meant to] or [intended to] for functionality goals.\n\n[Primary] is more formal and technical than 'Main' in database contexts.\n\n[Capture] is the standard industry verb for getting input from a user."
     },
     {
       "cardId": "dummy_126",
@@ -626,7 +626,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_129_sideB_2.mp3"
         }
       ],
-      "note": "**[149]**\n\nThis is a Noun Clause starting with [What] (Lo que).\n\nStructure: [What] + [Subject] + [Verb] + [is]...\n\n~What the most I like...~ (Incorrect: The word order is [What] + [Subject] + [Verb] + [Adverb]. Example: 'What I like most'.)"
+      "note": "This is a Noun Clause starting with [What] (Lo que).\n\nStructure: [What] + [Subject] + [Verb] + [is]...\n\n~The that I like most...~ (Incorrect: Never translate 'Lo que' as 'The that'. Use [What] or [The thing that].)"
     },
     {
       "cardId": "dummy_130",
@@ -646,7 +646,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_130_sideB_2.mp3"
         }
       ],
-      "note": "**[149]**\n\nFor 'Lo que menos...', we use [What I like the least] or we switch the verb to [What I dislike the most].\n\n~What I less like...~ (Incorrect: [Less] is for comparisons (2 things). For 'lo que menos', use the superlative [Least] or [Dislike the most].)"
+      "note": "For 'Lo que menos...', we use [What I like the least] or we switch the verb to [What I dislike the most]."
     },
     {
       "cardId": "dummy_131",
@@ -1028,10 +1028,6 @@
         {
           "text": "The problem is this service is screwing everything up.",
           "audioSrc": "public/data/audio/dummy/dummy_148_sideB_2.mp3"
-        },
-        {
-          "text": "The problem now is this service that is messing everything up.",
-          "audioSrc": "public/data/audio/dummy/dummy_148_sideB_3.mp3"
         }
       ],
       "note": "[Messing up] is informal but very common for 'arruinando' or 'desordenando'."
@@ -1098,46 +1094,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_151_sideB_2.mp3"
         }
       ],
-      "note": "We typically use the preposition [on] or [with] when talking about setbacks in specific areas.\n\n~We had a delay~ (Nuance: A [delay] means time was lost. A [setback] implies progress was lost or a new problem appeared.)\n\n~We had a step back~ (Incorrect: [Step back] usually refers to physically moving back or gaining perspective. The noun for 'contratiempo' is [setback].)"
-    },{
-      "cardId": "dummy_152",
-      "cardType": "flippable",
-      "sideA": "Lo que menos me gusta es la falta de puntualidad.",
-      "sideB": [
-        {
-          "text": "What I like the least is the lack of punctuality.",
-          "audioSrc": "public/data/audio/dummy/dummy_152_sideB_0.mp3"
-        },
-        {
-          "text": "The thing I like least is the lack of punctuality.",
-          "audioSrc": "public/data/audio/dummy/dummy_152_sideB_1.mp3"
-        },
-        {
-          "text": "What I dislike the most is the lack of punctuality.",
-          "audioSrc": "public/data/audio/dummy/dummy_152_sideB_2.mp3"
-        }
-      ],
-      "note": "**[149]**\n\nFor \"Lo que menos...\", we use the structure [What I like the least...].\n\nAlternatively, you can switch the verb to the opposite ([dislike]) and use [the most]."
-    },
-    {
-      "cardId": "dummy_153",
-      "cardType": "flippable",
-      "sideA": "Lo que menos quiero es hacer eso.",
-      "sideB": [
-        {
-          "text": "What I want the least is to do that.",
-          "audioSrc": "public/data/audio/dummy/dummy_153_sideB_0.mp3"
-        },
-        {
-          "text": "The last thing I want is to do that.",
-          "audioSrc": "public/data/audio/dummy/dummy_153_sideB_1.mp3"
-        },
-        {
-          "text": "What I want least of all is to do that.",
-          "audioSrc": "public/data/audio/dummy/dummy_153_sideB_2.mp3"
-        }
-      ],
-      "note": "**[149]**\n\nNote that after [want] (a verb of intent), we use the **Infinitive** ([to do]), not the Gerund.\n\n[The last thing I want] is a very common idiom to express strong reluctance (\"lo último que quiero\")."
+      "note": "We typically use the preposition [on] or [with] when talking about setbacks in specific areas."
     }
   ]
 }
