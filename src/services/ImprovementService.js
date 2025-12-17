@@ -254,7 +254,8 @@ You must output the full JSON object for the modified modal(s) in a **separate J
 If the user writes "AVISAR AL USUARIO" or "CAMBIAR APP", listing in Report (Section 10, Part 3).
 
 ## 9. GLOSSARY DATABASE (REFERENCE ONLY)
-Use this data to resolve IDs or as a base for improvements.
+Use this data to resolve IDs, adherir modales a cards (Solo cuando se solicite explicitamente en la card que se agregue un modal existente, se agregara el modal en ella.) or as a base for improvements.
+En caso que el mensaje de la card solicite 'agregar modal a la card, o crear uno', se debe revisar el completo listado de modales, y en caso que aun no este creado, podras crear uno nuevo, siguiendo la sintaxis estricta de los modales. 
 \`\`\`json
 ${glossaryJson}
 \`\`\`
@@ -296,11 +297,11 @@ Your final response MUST be structured into distinct parts.
 
 #### B. Change Log Summary
 - **Card [ID] / Modal [ID]:**
-  - **User Request:** "..."
-  - **Action Taken:** "..."
+  - **User Request:** "..." . IMPORTANTE!: DEBES AÑADIR EL User Request exactamente como el usuario lo solicito en esta seccion. Es necesario ver explicitamente lo que usuario solicito en "User Request", en el punto #### B. Change Log Summary por cada card.
+  - **Action Taken:** "..."   IMPORTANTE!: DEBES añadir EN Action Taken, si la solicitud del usuario fue "Rejected, Accepted, others...". Y decir explicatamente que cambio has realizado en la card, ya sea, agregado una nueva sentencia, alguna nota explicativa, se agrego algun nuevo modal, se rechazo a causa de.., etc etc. Esto debe hacerse para cada card.
 
 #### C. 📢 Special User Notices
-(If applicable)
+Si el usario en alguna 'nota' o 'apunte' de card, explicitamente solicito algo como "Avisar al usuario sobre ... " esas notas se añadiran en esta seccion para que el usuario las vea facilmente. Este espacio es para que el usuario que dejo la "Nota" o "apunte" pueda ver esos mensajes especiales en esta seccion. En caso de no encontrarse ningun mensaje especial, se pondra en esta seccion "No special messages to highlight".
 
 #### D. Next Steps
 - **Step 1:** Save Card JSON to \`corrections.json\`.

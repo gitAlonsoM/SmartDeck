@@ -26,7 +26,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_009_sideB_3.mp3"
         }
       ],
-      "note": "**[111]**\n\nStandard question structure: [Question Word] + [Auxiliary/Verb] + [Subject] + [Preposition]?\n\n~For what is this function?~ (While grammatically possible, it sounds very formal or archaic. [What is this function for?] is the standard natural form.)\n\n~What does this function for?~ (Incorrect: 'Does' requires a main verb like 'do'. Since the question uses the preposition 'for' to ask about purpose, use the verb [is]: 'What [is] this function for?')\n\n~What does this function used for?~ (Incorrect: 'Used' is a past participle here requiring the passive voice auxiliary [is], not 'does'. Correct: 'What [is] this function used for?')\n\n~What is meant to be this function?~ (Incorrect Word Order: This asks about identity, not purpose. Correct structure: 'What [is] this function [meant to be]?')"
+      "note": "**[111]**\n\nStandard question structure: [Question Word] + [Auxiliary/Verb] + [Subject] + [Preposition]?\n\n~For what is this function?~ (While grammatically possible, it sounds very formal or archaic. [What is this function for?] is the standard natural form.)\n\n~What does this function for?~ (Incorrect: 'Does' requires a main verb like 'do'. Since the question uses the preposition 'for' to ask about purpose, use the verb [is]: 'What [is] this function for?')\n\n~What does this function used for?~ (Incorrect: 'Used' is a past participle here requiring the passive voice auxiliary [is], not 'does'. Correct: 'What [is] this function used for?')"
     },
     {
       "cardId": "dummy_013",
@@ -236,10 +236,6 @@
         {
           "text": "'Active' is the default value for the status column.",
           "audioSrc": "public/data/audio/dummy/dummy_104_sideB_2.mp3"
-        },
-        {
-          "text": "The default value of the state column is 'Active'.",
-          "audioSrc": "public/data/audio/dummy/dummy_104_sideB_3.mp3"
         }
       ],
       "note": "[Default value] is the value a variable/column takes if none is specified.\n\n~The defect value...~ (Incorrect: [Defect] means a flaw or bug. Use [Default] for a preset value.)\n\n~The default value of the state of the column...~ (Too wordy. Use [Status column] or [Column status] for technical precision.)"
@@ -300,13 +296,9 @@
         {
           "text": "You better learn it fast.",
           "audioSrc": "public/data/audio/dummy/dummy_114_sideB_2.mp3"
-        },
-        {
-          "text": "It's better you learn it fast.",
-          "audioSrc": "public/data/audio/dummy/dummy_114_sideB_3.mp3"
         }
       ],
-      "note": "**[37]**\n\nTo give strong advice or a warning (implying negative consequences if not followed), we use [You'd better] (contraction of 'You had better').\n\n~It's better that you learn it~ (Grammatically valid but less idiomatic for direct advice. [It's best if...] is a good alternative.)"
+      "note": "To give strong advice or a warning (implying negative consequences if not followed), we use [You'd better] (contraction of 'You had better').\n\n~It's better that you learn it~ (Grammatically valid but less idiomatic for direct advice. [It's best if...] is a good alternative.)"
     },
     {
       "cardId": "dummy_115",
@@ -324,13 +316,9 @@
         {
           "text": "We need to find out what bottleneck is holding up the system.",
           "audioSrc": "public/data/audio/dummy/dummy_115_sideB_2.mp3"
-        },
-        {
-          "text": "We need to see what the bottleneck delaying the system is.",
-          "audioSrc": "public/data/audio/dummy/dummy_115_sideB_3.mp3"
         }
       ],
-      "note": "A [Bottleneck] is a point of congestion in a system that slows down the overall process.\n\n[Holding up] is a common phrasal verb for 'retrasando' or 'deteniendo' progress.\n\n~...what is the bottleneck delaying the system~ (Incorrect Word Order: In embedded questions [statements], the verb must come after the subject: '...what the bottleneck... [is]'.)"
+      "note": "A [Bottleneck] is a point of congestion in a system that slows down the overall process.\n\n[Holding up] is a common phrasal verb for 'retrasando' or 'deteniendo' progress."
     },
     {
       "cardId": "dummy_116",
@@ -348,10 +336,6 @@
         {
           "text": "What is the bottleneck holding up the system?",
           "audioSrc": "public/data/audio/dummy/dummy_116_sideB_2.mp3"
-        },
-        {
-          "text": "What is the bottleneck that delays the system?",
-          "audioSrc": "public/data/audio/dummy/dummy_116_sideB_3.mp3"
         }
       ],
       "note": "We use [What] when asking about the nature of the bottleneck.\n\n We use [Which] if we are selecting from a known list of potential bottlenecks."
@@ -372,13 +356,9 @@
         {
           "text": "Which part is taking the longest to load?",
           "audioSrc": "public/data/audio/dummy/dummy_117_sideB_2.mp3"
-        },
-        {
-          "text": "What part takes the longest to load?",
-          "audioSrc": "public/data/audio/dummy/dummy_117_sideB_3.mp3"
         }
       ],
-      "note": "**[102]**\n\nFor duration, we use the structure: [Takes] + [Time].\n\n[The longest] is the most natural superlative for time duration.\n\n~Which part delays more in load?~ (Incorrect: 'Delay' is usually transitive or implies lateness, not duration. Use [takes the longest].)"
+      "note": "For duration, we use the structure: [Takes] + [Time].\n\n[The longest] is the most natural superlative for time duration.\n\n~Which part delays more in load?~ (Incorrect: 'Delay' is usually transitive or implies lateness, not duration. Use [takes the longest].)"
     },
     {
       "cardId": "dummy_118",
@@ -396,13 +376,9 @@
         {
           "text": "What takes the most time to load is...",
           "audioSrc": "public/data/audio/dummy/dummy_118_sideB_2.mp3"
-        },
-        {
-          "text": "What takes the longest is...",
-          "audioSrc": "public/data/audio/dummy/dummy_118_sideB_3.mp3"
         }
       ],
-      "note": "**[102]**\n\nThis is a Noun Clause starting with [What] (Lo que).\n\n~The which takes the longest~ (Incorrect: Never say 'The which'. Use [What] or [The thing that].)"
+      "note": "This is a Noun Clause starting with [What] (Lo que).\n\n~The which takes the longest~ (Incorrect: Never say 'The which'. Use [What] or [The thing that].)"
     },
     {
       "cardId": "dummy_119",
@@ -422,7 +398,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_119_sideB_2.mp3"
         }
       ],
-      "note": "[To be willing to] means to be ready, eager, or prepared to do something (estar dispuesto).\n\n~What are you disposed to do?~ (False Friend: 'Disposed' typically means 'inclined' or 'likely' [e.g., 'disposed to agree'], or 'arranged'. It is very formal and rarely used to mean 'willing' in this context.)"
+      "note": "[To be willing to] means to be ready, eager, or prepared to do something (estar dispuesto).\n\n~What are you disposed to do?~ (False Friend: 'Disposed' implies a tendency or mood, not necessarily willingness/consent in this context.)"
     },
     {
       "cardId": "dummy_120",
@@ -442,7 +418,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_120_sideB_2.mp3"
         }
       ],
-      "note": "[Improvements] or [Enhancements] are standard terms for 'mejoras'.\n\nWhen using compound nouns, the singular acts as an adjective: [Process improvements] (not ~Processes improvements~).\n\n~...weren't be there~ (Incorrect grammar: You cannot use 'were' and 'be' together like this. Use [weren't there].)"
+      "note": "[Improvements] or [Enhancements] are standard terms for 'mejoras'.\n\nWhen using compound nouns, the singular acts as an adjective: [Process improvements] (not ~Processes improvements~)."
     },
     {
       "cardId": "dummy_121",
@@ -500,13 +476,9 @@
         {
           "text": "It iterates over the values and sums them.",
           "audioSrc": "public/data/audio/dummy/dummy_123_sideB_2.mp3"
-        },
-        {
-          "text": "It iterates through the values and adds them.",
-          "audioSrc": "public/data/audio/dummy/dummy_123_sideB_3.mp3"
         }
       ],
-      "note": "We say [iterate through] or [iterate over] a list/array.\n\n[Sum up] is the phrasal verb for calculating the total.\n\n~...and then adding them~ (Incorrect grammar: Parallel structure is required. 'Iterates' (verb) ... 'adds' (verb).)"
+      "note": "We say [iterate through] or [iterate over] a list/array.\n\n[Sum up] is the phrasal verb for calculating the total."
     },
     {
       "cardId": "dummy_124",
@@ -586,7 +558,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_127_sideB_2.mp3"
         }
       ],
-      "note": "**[147]**\n\nAgain, [is meant to] is the most natural way to describe what a function is supposed to do.\n\n~...has the purpose of calculate...~ (Incorrect: After prepositions like 'of', you must use the gerund [-ing]: 'purpose of calculating'. Also, 'is meant to' is more natural than 'has the purpose'.)"
+      "note": "**[147]**\n\nAgain, [is meant to] is the most natural way to describe what a function is supposed to do."
     },
     {
       "cardId": "dummy_128",
@@ -606,9 +578,9 @@
           "audioSrc": "public/data/audio/dummy/dummy_128_sideB_2.mp3"
         }
       ],
-      "note": "**[147]**\n\nFor versions, we use [and above], [and later], or [onwards] to express 'en adelante'.\n\n~...iOS 13.0 in forward~ (Incorrect literal translation.)\n\n~All this module...~ (Incorrect: 'All' requires 'of' or 'the' in this structure: 'All of this module' or 'The whole module'. [This entire module] is more precise.)"
+      "note": "**[147]**\n\nFor versions, we use [and above], [and later], or [onwards] to express 'en adelante'.\n\n~...iOS 13.0 in forward~ (Incorrect literal translation.)"
     },
-    {
+       {
       "cardId": "dummy_129",
       "cardType": "flippable",
       "sideA": "Lo que más me gusta es la simplicidad.",
@@ -666,7 +638,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_131_sideB_2.mp3"
         }
       ],
-      "note": "While [heaviest] is technically correct, in digital contexts we often talk about what [takes up space] or [uses storage].\n\n~What weights the most...~ (Incorrect: [Weight] is a noun. The verb is [Weigh]. Correct: 'What [weighs] the most'.)\n\n~What weight the most...~ (Incorrect verb conjugation.)"
+      "note": "While [heaviest] is technically correct, in digital contexts we often talk about what [takes up space] or [uses storage]."
     },
     {
       "cardId": "dummy_132",
@@ -686,7 +658,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_132_sideB_2.mp3"
         }
       ],
-      "note": "[Takes the longest] is the most natural way to express maximum duration.\n\n[Time-consuming] is a great adjective for 'algo que toma mucho tiempo'.\n\n~What takes most time...~ (Incorrect: Superlatives require the definite article: 'What takes [the] most time'.)"
+      "note": "[Takes the longest] is the most natural way to express maximum duration.\n\n[Time-consuming] is a great adjective for 'algo que toma mucho tiempo'."
     },
     {
       "cardId": "dummy_133",
@@ -704,17 +676,9 @@
         {
           "text": "What would that be like?",
           "audioSrc": "public/data/audio/dummy/dummy_133_sideB_2.mp3"
-        },
-        {
-          "text": "How would it be?",
-          "audioSrc": "public/data/audio/dummy/dummy_133_sideB_3.mp3"
-        },
-        {
-          "text": "How would that be?",
-          "audioSrc": "public/data/audio/dummy/dummy_133_sideB_4.mp3"
         }
       ],
-      "note": "When asking for a description or an explanation of a concept/process, [What would that look like?] is very common in business/tech contexts.\n\n~How would be that?~ (Incorrect structure. Subject [that] must come after the auxiliary [would].)\n\n~How would it be that?~ (Incorrect structure. 'That' is the subject, so it cannot be placed at the end if 'it' is also used as a dummy subject in this way.)"
+      "note": "When asking for a description or an explanation of a concept/process, [What would that look like?] is very common in business/tech contexts.\n\n~How would be that?~ (Incorrect structure. Subject [that] must come after the auxiliary [would].)"
     },
     {
       "cardId": "dummy_134",
@@ -732,10 +696,6 @@
         {
           "text": "That would look like a hard reset.",
           "audioSrc": "public/data/audio/dummy/dummy_134_sideB_2.mp3"
-        },
-        {
-          "text": "That would be like a force restart.",
-          "audioSrc": "public/data/audio/dummy/dummy_134_sideB_3.mp3"
         }
       ],
       "note": "Use [be like] to make comparisons."
@@ -818,7 +778,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_138_sideB_2.mp3"
         }
       ],
-      "note": "**[65]**\n\n[Strips] is a technical verb often used for removing characters or formatting.\n\n[Get rid of] is a common phrasal verb for 'eliminar/deshacerse de'.\n\n~...abs() deletes the sign~ (Unnatural: 'Delete' usually implies erasing a file or an object. For values or properties, we use [removes], [strips], or [drops].)"
+      "note": "[Strips] is a technical verb often used for removing characters or formatting.\n\n[Get rid of] is a common phrasal verb for 'eliminar/deshacerse de'."
     },
     {
       "cardId": "dummy_139",
@@ -858,7 +818,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_140_sideB_2.mp3"
         }
       ],
-      "note": "[Waste time] implies using it unproductively.\n\n[Take up time] implies occupying someone's schedule.\n\n~Make you lose time~ (Understandable, but [waste your time] is the standard phrase.)\n\n~I don't want to you waste...~ (Grammar Error: 'Want' is followed by Object + Infinitive: 'I don't want [you] [to waste]'.)"
+      "note": "[Waste time] implies using it unproductively.\n\n[Take up time] implies occupying someone's schedule.\n\n~Make you lose time~ (Understandable, but [waste your time] is the standard phrase.)"
     },
     {
       "cardId": "dummy_141",
@@ -896,10 +856,6 @@
         {
           "text": "Apologies, I'm just switching on the closed captions.",
           "audioSrc": "public/data/audio/dummy/dummy_142_sideB_2.mp3"
-        },
-        {
-          "text": "Sorry, I'm activating the captions.",
-          "audioSrc": "public/data/audio/dummy/dummy_142_sideB_3.mp3"
         }
       ],
       "note": "Use [turn on], [switch on], or [enable] for features/settings."
@@ -940,10 +896,6 @@
         {
           "text": "Sorry, I'm not following.",
           "audioSrc": "public/data/audio/dummy/dummy_144_sideB_2.mp3"
-        },
-        {
-          "text": "Sorry, I'm a bit confused.",
-          "audioSrc": "public/data/audio/dummy/dummy_144_sideB_3.mp3"
         }
       ],
       "note": "[I'm not following] is a professional way to say you don't understand the current explanation."
@@ -964,10 +916,6 @@
         {
           "text": "Excuse me, I'm not very familiar with this topic.",
           "audioSrc": "public/data/audio/dummy/dummy_145_sideB_2.mp3"
-        },
-        {
-          "text": "Sorry, I'm a bit lost on this matter.",
-          "audioSrc": "public/data/audio/dummy/dummy_145_sideB_3.mp3"
         }
       ],
       "note": "[Out of my depth] is an idiom meaning the topic is too advanced or difficult for your current knowledge."
@@ -1010,7 +958,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_147_sideB_2.mp3"
         }
       ],
-      "note": "**[9]**\n\nSecond Conditional: [If] + [Past Simple], ... [Would] + [Verb].\n\n[One-on-one] (often written 1:1) is the standard term for a meeting between two people.\n\n~If I had a meeting one-on-one...~ (Unnatural Word Order: Adjectives usually come before the noun in English: [a one-on-one meeting].)"
+      "note": "Second Conditional: [If] + [Past Simple], ... [Would] + [Verb].\n\n[One-on-one] (often written 1:1) is the standard term for a meeting between two people."
     },
     {
       "cardId": "dummy_148",
@@ -1048,10 +996,6 @@
         {
           "text": "This is throwing a wrench in the works.",
           "audioSrc": "public/data/audio/dummy/dummy_149_sideB_2.mp3"
-        },
-        {
-          "text": "This is messing up everything.",
-          "audioSrc": "public/data/audio/dummy/dummy_149_sideB_3.mp3"
         }
       ],
       "note": "[Throwing a wrench in the works] is an idiom for when something suddenly disrupts a plan or process."
@@ -1098,3 +1042,4 @@
     }
   ]
 }
+
