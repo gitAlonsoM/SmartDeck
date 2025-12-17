@@ -1,5 +1,4 @@
-//src\services\MusicService.js
-// Manages background music playback, playlist, and state persistence.
+/* src\services\MusicService.js */
 
 class MusicService {
     constructor() {
@@ -49,6 +48,17 @@ class MusicService {
             this.playNext(true); // Play next track randomly
         };
 
+        // Listen for metadata to get duration
+        this.audioElement.addEventListener('loadedmetadata', () => {
+            // console.log(`DEBUG: [MusicService] Metadata loaded. Duration: ${this.audioElement.duration}`);
+            this._updateUI();
+        });
+
+        // Listen for time updates to sync progress bar
+        this.audioElement.addEventListener('timeupdate', () => {
+            this._updateUI();
+        });
+
         // Custom event dispatcher for UI updates
         this.uiUpdater = new EventTarget();
     }
@@ -70,30 +80,36 @@ class MusicService {
         
         this.audioElement.volume = effectiveVolume;
         
-        console.log(`DEBUG: [MusicService] User volume set to ${this.userVolume} (Effective: ${effectiveVolume})`);
+        // console.log(`DEBUG: [MusicService] User volume set to ${this.userVolume} (Effective: ${effectiveVolume})`);
     }
 
     /**
      * Gets the current state of the music player.
      * This is crucial for the UI to sync itself when it re-renders.
-     * @returns {{isPlaying: boolean, trackName: string}} The current player state.
+     * @returns {{isPlaying: boolean, trackName: string, currentTime: number, duration: number}} The current player state.
      */
     getCurrentState() {
         const track = this.playlist[this.currentTrackIndex];
         const hasTrackLoaded = !!this.audioElement.src;
+        const duration = this.audioElement.duration || 0;
+        const currentTime = this.audioElement.currentTime || 0;
 
         // If music is not playing and no track has ever been loaded, show the initial message.
         if (!this.isPlaying && !hasTrackLoaded) {
             return {
                 isPlaying: false,
-                trackName: "Select Play to Start"
+                trackName: "Select Play to Start",
+                currentTime: 0,
+                duration: 0
             };
         }
         
         // Otherwise, return the current state.
         return {
             isPlaying: this.isPlaying,
-            trackName: track ? track.name : "Loading..."
+            trackName: track ? track.name : "Loading...",
+            currentTime: currentTime,
+            duration: duration
         };
     }
     
@@ -153,6 +169,29 @@ class MusicService {
         this._updateUI();
     }
 
+    // --- Time Control Methods ---
+
+    /**
+     * Seeks to a specific time in seconds.
+     * @param {number} time - Time in seconds
+     */
+    seekTo(time) {
+        if (this.audioElement.duration) {
+            const safeTime = Math.min(Math.max(0, time), this.audioElement.duration);
+            this.audioElement.currentTime = safeTime;
+        }
+    }
+
+    /**
+     * Skips forward or backward by a set amount.
+     * @param {number} seconds - Seconds to skip (positive or negative)
+     */
+    skipTime(seconds) {
+        if (this.audioElement.duration) {
+            this.seekTo(this.audioElement.currentTime + seconds);
+        }
+    }
+
     // --- Audio Ducking Methods ---
 
     lowerVolume() {
@@ -178,7 +217,9 @@ class MusicService {
         // Dispatches an event that the UI component can listen to
         const detail = {
             isPlaying: this.isPlaying,
-            trackName: this.playlist[this.currentTrackIndex].name
+            trackName: this.playlist[this.currentTrackIndex].name,
+            currentTime: this.audioElement.currentTime || 0,
+            duration: this.audioElement.duration || 0
         };
         this.uiUpdater.dispatchEvent(new CustomEvent('update', { detail }));
     }
