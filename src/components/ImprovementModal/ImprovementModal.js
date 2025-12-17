@@ -4,8 +4,7 @@ class ImprovementModal {
      constructor(container, onSave, onRemove) {
         this.container = container;
         this.onSave = onSave;
-        this.onRemove = onRemove; // Assign the remove callback
-        this.cardIdToImprove = null;
+        this.onRemove = onRemove; 
         console.log("DEBUG: [ImprovementModal] constructor -> Component instantiated.");
     }
 async init() {
@@ -15,6 +14,10 @@ async init() {
         this.modal = this.container.querySelector('#improvement-modal');
         this.form = this.container.querySelector('#improvement-form');
         this.removeBtn = this.container.querySelector('#improvement-modal-remove-btn'); 
+
+        // Initialize the expand button and the textarea
+        this.expandBtn = this.container.querySelector('#toggle-expand-btn');
+        this.textarea = this.container.querySelector('#improvement-notes');
         this.setupEventListeners();
     }
 
@@ -29,6 +32,27 @@ async init() {
                 this.hide();
             }
         });
+        
+        // Logic to toggle the textarea expansion
+        if (this.expandBtn && this.textarea) {
+            this.expandBtn.addEventListener('click', () => {
+                const isExpanded = this.textarea.classList.contains('h-80');
+                
+                if (isExpanded) {
+                    // Contract
+                    this.textarea.classList.remove('h-80');
+                    this.textarea.rows = 5; 
+                    this.expandBtn.innerHTML = '<i class="fa-solid fa-expand"></i>';
+                    console.log("VERIFY: Textarea restored to default size.");
+                } else {
+                    // Expand
+                    this.textarea.classList.add('h-80'); 
+                    this.textarea.removeAttribute('rows'); 
+                    this.expandBtn.innerHTML = '<i class="fa-solid fa-compress"></i>';
+                    console.log("VERIFY: Textarea expanded to large view.");
+                }
+            });
+        }
 
         // Form submission
         this.form.addEventListener('submit', (e) => {
@@ -36,7 +60,6 @@ async init() {
             const formData = new FormData(this.form);
             const reasons = formData.getAll('improvement_reason');
             const userCommentValue = formData.get('user_comment'); // Read form field into a clearly named variable.
-             // Correctly build the object to be saved with the 'user_comment' key.
             this.onSave(this.cardIdToImprove, { reasons, user_comment: userCommentValue });
 
             this.hide();
@@ -53,7 +76,7 @@ async init() {
      */
     show(cardId, cardType, existingData = null) {
         this.cardIdToImprove = cardId;
-        this.form.reset(); // Clear previous entries before populating
+        this.form.reset(); 
 
         this._updateReasonOptions(cardType);
 
@@ -64,7 +87,6 @@ async init() {
                 if (checkbox) checkbox.checked = true;
             });
             
-            // Read from the new 'user_comment' property to populate the textarea.
             this.form.querySelector('#improvement-notes').value = existingData.user_comment || '';
             this.removeBtn.classList.remove('hidden');
         } else {
@@ -87,8 +109,7 @@ async init() {
         const reasonsContainer = this.container.querySelector('#reasons-container');
         const allReasonLabels = reasonsContainer.querySelectorAll('label');
 
-        // This logic now correctly assumes that any deck type that is NOT 'flippable'
-        // should be treated as a 'quiz' for the purpose of showing improvement reasons.
+
         const isFlippableType = cardType === 'flippable';
 
         allReasonLabels.forEach(label => {
@@ -117,6 +138,6 @@ async init() {
         setTimeout(() => {
             this.modalBackdrop.classList.add('hidden');
             this.modalBackdrop.classList.remove('flex');
-        }, 200); // Match transition duration
+        }, 200); 
     }
 }
