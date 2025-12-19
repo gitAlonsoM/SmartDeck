@@ -1552,10 +1552,6 @@
         {
           "text": "While checking the catalog visualization code, I discovered...",
           "audioSrc": "public/data/audio/dummy/dummy_170_sideB_2.mp3"
-        },
-        {
-          "text": "While reviewing the code to see the catalog, I've found...",
-          "audioSrc": "public/data/audio/dummy/dummy_170_sideB_3.mp3"
         }
       ],
       "note": "[While reviewing] or [Upon reviewing] are professional ways to introduce an action performed during another activity.\n\n[Display], [View], and [Visualization] are common terms for 'visualización' in UI contexts."
@@ -1578,7 +1574,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_171_sideB_2.mp3"
         }
       ],
-      "note": "**[111]**\n\nIn technical English, [Behavior] refers to how a system or component functions.\n\nIndirect Question Rule: The verb [is] goes at the end of the clause: '...what the expected behavior [is]'."
+      "note": "In technical English, [Behavior] refers to how a system or component functions.\n\nIndirect Question Rule: The verb [is] goes at the end of the clause: '...what the expected behavior [is]'."
     },
     {
       "cardId": "dummy_172",
@@ -1596,10 +1592,6 @@
         {
           "text": "I am not to change anything unless I am told to.",
           "audioSrc": "public/data/audio/dummy/dummy_172_sideB_2.mp3"
-        },
-        {
-          "text": "I don't have to change anything, unless they ask me.",
-          "audioSrc": "public/data/audio/dummy/dummy_172_sideB_3.mp3"
         }
       ],
       "note": "[Unless] means 'except if'. It is often followed by a passive structure like [unless I am asked].\n\n~Unless they ask to me~ (Incorrect: 'Ask' does not take 'to' before the person. Correct: 'Unless they ask me'.)"
@@ -1620,10 +1612,6 @@
         {
           "text": "Unless I am told otherwise, I won't change anything.",
           "audioSrc": "public/data/audio/dummy/dummy_173_sideB_2.mp3"
-        },
-        {
-          "text": "Unless they ask me, I shouldn't change anything.",
-          "audioSrc": "public/data/audio/dummy/dummy_173_sideB_3.mp3"
         }
       ],
       "note": "[Shouldn't] indicates it is not advisable. [Must not] indicates a prohibition or strict rule.\n\n[Unless told otherwise] is a very common professional phrase meaning 'a menos que se me diga lo contrario'."
@@ -1646,7 +1634,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_174_sideB_2.mp3"
         }
       ],
-      "note": "[At all] and [Whatsoever] are used at the end of negative sentences to add emphasis.\n\n~I haven't made/done this code~ (Incorrect: In coding, we [write], [create], or [develop] code. Avoid using 'make' or 'do' for programming.)"
+      "note": "[At all] and [Whatsoever] are used at the end of negative sentences to add emphasis.\n\n~I haven't made this code~ (In coding, we usually [write], [create], or [develop] code rather than 'make' it.)"
     },
     {
       "cardId": "dummy_175",
@@ -1684,10 +1672,6 @@
         {
           "text": "That's the table containing the data we need to bring over.",
           "audioSrc": "public/data/audio/dummy/dummy_176_sideB_2.mp3"
-        },
-        {
-          "text": "That table is the one which has the data we need to fetch.",
-          "audioSrc": "public/data/audio/dummy/dummy_176_sideB_3.mp3"
         }
       ],
       "note": "For databases, [Fetch] is the standard verb for retrieving data.\n\n~That table is who has~ (Incorrect: Use [which] or [that] for objects like tables, never 'who'.)"
@@ -1710,7 +1694,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_177_sideB_2.mp3"
         }
       ],
-      "note": "In merge tools, [Incoming] refers to the changes coming from another branch/source.\n\nUse the preposition [on] for sides: [on the left], [on the right].\n\n~The incoming code to the left~ (Incorrect: In English, you must include the verb [is] to indicate location.)"
+      "note": "In merge tools, [Incoming] refers to the changes coming from another branch/source.\n\nUse the preposition [on] for sides: [on the left], [on the right]."
     },
     {
       "cardId": "dummy_178",
@@ -1750,7 +1734,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_179_sideB_2.mp3"
         }
       ],
-      "note": "[Current] refers to the code in your local branch where you are merging into.\n\n~The current code on the right~ (Incorrect: In English, sentences describing location require a verb like [is].)"
+      "note": "[Current] refers to the code in your local branch where you are merging into."
     },
     {
       "cardId": "dummy_180",
@@ -1768,14 +1752,6 @@
         {
           "text": "The code to the right represents the current branch.",
           "audioSrc": "public/data/audio/dummy/dummy_180_sideB_2.mp3"
-        },
-        {
-          "text": "The right code is from the current branch.",
-          "audioSrc": "public/data/audio/dummy/dummy_180_sideB_3.mp3"
-        },
-        {
-          "text": "The code on the right side is from the current branch.",
-          "audioSrc": "public/data/audio/dummy/dummy_180_sideB_4.mp3"
         }
       ],
       "note": "When comparing code in a diff viewer, we use [on the right] to locate the local version."
@@ -1798,12 +1774,12 @@
           "audioSrc": "public/data/audio/dummy/dummy_181_sideB_2.mp3"
         }
       ],
-      "note": "[Bottom] or [Lower] panel refers to the merge editor's result area.\n\n~The low panel is...~ (Incorrect: Use [Lower] or [Bottom] to describe the physical position of a UI element.)"
+      "note": "[Bottom] or [Lower] panel refers to the merge editor's result area."
     },
     {
       "cardId": "dummy_182",
       "cardType": "flippable",
-      "sideA": "Por lo general el codigo entrante tiene prioridad en el actual.",
+      "sideA": "Por lo general el entrante tiene prioridad en el actual.",
       "sideB": [
         {
           "text": "Usually, the incoming code takes priority over the current one.",
@@ -1816,10 +1792,6 @@
         {
           "text": "The incoming code typically has precedence over the existing one.",
           "audioSrc": "public/data/audio/dummy/dummy_182_sideB_2.mp3"
-        },
-        {
-          "text": "Usually, the incoming code has priority over the current one.",
-          "audioSrc": "public/data/audio/dummy/dummy_182_sideB_3.mp3"
         }
       ],
       "note": "[Takes priority over] and [Has precedence over] are formal ways to say one thing is more important.\n\n[Override] is a specific technical verb for one piece of code replacing another."
@@ -1860,13 +1832,9 @@
         {
           "text": "Pull that panel down a little to see the other items.",
           "audioSrc": "public/data/audio/dummy/dummy_184_sideB_2.mp3"
-        },
-        {
-          "text": "Lower that panel down a bit to see the other ones.",
-          "audioSrc": "public/data/audio/dummy/dummy_184_sideB_3.mp3"
         }
       ],
-      "note": "[Move down], [Lower], or [Pull down] are used for UI elements.\n\n[A bit], [Slightly], and [A little] are all used for 'un poco'.\n\n~Low that panel down a bit~ (Incorrect: 'Low' is an adjective. Use the verb [Lower].)"
+      "note": "[Move down], [Lower], or [Pull down] are used for UI elements.\n\n[A bit], [Slightly], and [A little] are all used for 'un poco'."
     },
     {
       "cardId": "dummy_185",
@@ -1884,10 +1852,6 @@
         {
           "text": "Push that panel up a little to see the full view.",
           "audioSrc": "public/data/audio/dummy/dummy_185_sideB_2.mp3"
-        },
-        {
-          "text": "Move that panel up to see it completely.",
-          "audioSrc": "public/data/audio/dummy/dummy_185_sideB_3.mp3"
         }
       ],
       "note": "[Move up], [Raise], or [Push up] are the counterparts for moving elements upwards."
@@ -1930,7 +1894,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_187_sideB_2.mp3"
         }
       ],
-      "note": "**[151]**\n\nWhen using [Ago] (atrás), we usually use the Past Simple: 'I said that 2 months ago'.\n\nWhen using [Haven't said] (Present Perfect), we use [In] or [For] to show duration: 'I haven't said that [in] 2 months'.\n\n~I haven't said that 2 months back~ (Unnatural: Use [ago] or duration with 'in/for'.)"
+      "note": "When using [Ago] (atrás), we usually use the Past Simple: 'I said that 2 months ago'.\n\nWhen using [Haven't said] (Present Perfect), we use [In] or [For] to show duration: 'I haven't said that [in] 2 months'.\n\n~I haven't said that 2 months back~ (Unnatural: Use [ago] or duration with 'in/for'.)"
     },
     {
       "cardId": "dummy_188",
@@ -1970,87 +1934,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_189_sideB_2.mp3"
         }
       ],
-      "note": "[To place an order] is the idiomatic technical term for 'hacer un pedido'.\n\n~The day the order is asked~ (Incorrect: 'Asked' is for questions. For products or services, use [placed], [requested], or [ordered].)\n\n~The day the order is done~ (Incorrect: We don't 'do' orders. We [place] or [make] them.)"
-    },
-    {
-      "cardId": "dummy_190",
-      "cardType": "flippable",
-      "sideA": "He hecho una prueba rápida en el código.",
-      "sideB": [
-        {
-          "text": "I've run a quick test on the code.",
-          "audioSrc": "public/data/audio/dummy/dummy_190_sideB_0.mp3"
-        },
-        {
-          "text": "I performed a quick test on the code.",
-          "audioSrc": "public/data/audio/dummy/dummy_190_sideB_1.mp3"
-        },
-        {
-          "text": "I've carried out a quick test on the code.",
-          "audioSrc": "public/data/audio/dummy/dummy_190_sideB_2.mp3"
-        }
-      ],
-      "note": "**[145]**\n\nIn technical English, we [run], [perform], or [execute] a test.\n\n~I've made a quick test~ (Incorrect: We don't 'make' tests in programming context.)\n\n~I've realized a quick test~ (False Friend: 'Realize' means to become aware of something. Use [performed] or [conducted] for 'realizado')."
-    },
-    {
-      "cardId": "dummy_191",
-      "cardType": "flippable",
-      "sideA": "Puedo confirmar que el servicio está funcionando como se esperaba.",
-      "sideB": [
-        {
-          "text": "I can confirm the service is working as expected.",
-          "audioSrc": "public/data/audio/dummy/dummy_191_sideB_0.mp3"
-        },
-        {
-          "text": "I can confirm that the service is functioning as expected.",
-          "audioSrc": "public/data/audio/dummy/dummy_191_sideB_1.mp3"
-        },
-        {
-          "text": "I can confirm the service is running as intended.",
-          "audioSrc": "public/data/audio/dummy/dummy_191_sideB_2.mp3"
-        }
-      ],
-      "note": "[As expected] is the standard professional phrase for 'como se esperaba'.\n\nNote that in the phrase 'confirm [that] the service...', the word 'that' is optional in English but the word order remains [Subject] + [Verb]."
-    },
-    {
-      "cardId": "dummy_192",
-      "cardType": "flippable",
-      "sideA": "El mapeo del nuevo endpoint en el archivo se ha actualizado correctamente.",
-      "sideB": [
-        {
-          "text": "The mapping of the new endpoint in the file has been updated correctly.",
-          "audioSrc": "public/data/audio/dummy/dummy_192_sideB_0.mp3"
-        },
-        {
-          "text": "The new endpoint mapping in the file has been successfully updated.",
-          "audioSrc": "public/data/audio/dummy/dummy_192_sideB_1.mp3"
-        }
-      ],
-      "note": "[Mapping] refers to how one data element or URL is linked to another.\n\nUse [Correctly] or [Successfully] to emphasize that the operation was completed without errors."
-    },
-    {
-      "cardId": "dummy_193",
-      "cardType": "flippable",
-      "sideA": "El endpoint ya es accesible.",
-      "sideB": [
-        {
-          "text": "The endpoint is now accessible.",
-          "audioSrc": "public/data/audio/dummy/dummy_193_sideB_0.mp3"
-        },
-        {
-          "text": "The endpoint is accessible now.",
-          "audioSrc": "public/data/audio/dummy/dummy_193_sideB_1.mp3"
-        },
-        {
-          "text": "The endpoint is already accessible.",
-          "audioSrc": "public/data/audio/dummy/dummy_193_sideB_2.mp3"
-        },
-        {
-          "text": "The endpoint is reachable now.",
-          "audioSrc": "public/data/audio/dummy/dummy_193_sideB_3.mp3"
-        }
-      ],
-      "note": "We use [Now] to indicate a change in state (it wasn't accessible before, but it is now).\n\n[Reachable] is a common technical alternative to 'accessible' when talking about network endpoints."
+      "note": "[To place an order] is the idiomatic technical term for 'hacer un pedido'.\n\n~The day the order is done~ (Incorrect: We don't 'do' orders. We [place] or [make] them.)"
     }
   ]
 }
