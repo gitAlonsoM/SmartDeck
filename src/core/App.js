@@ -1027,33 +1027,58 @@ handleCreateDeckClicked() {
         }
     }
 }
-
-
-
-
 // --- Application Entry Point (ROBUST MOBILE FIX) ---
-const startApplication = async () => {
-    // Prevents double initialization if both checks pass quickly
+// We use a retry mechanism to ensure the DOM is fully parsed on slow mobile devices
+// before attempting to attach the Application Logic.
+const startApplication = async (retryCount = 0) => {
+    // 1. Critical Check: Does the main container exist yet?
+    const appContainer = document.getElementById('app-container');
+    const modalContainer = document.getElementById('ai-modal-container');
+
+    // If DOM elements are missing, wait and retry instead of crashing.
+    if (!appContainer || !modalContainer) {
+        if (retryCount < 20) { // Try for up to 2 seconds (20 * 100ms)
+            console.warn(`DEBUG: [Entry] DOM not ready (attempt ${retryCount + 1}/20). Waiting 100ms...`);
+            setTimeout(() => startApplication(retryCount + 1), 100);
+            return;
+        } else {
+            console.error("FATAL: DOM elements never appeared after 2 seconds.");
+            // We let it proceed to fail gracefully in the try/catch block below
+        }
+    }
+
+    // 2. Prevent Double Initialization
     if (window.smartDeckInitialized) return;
     window.smartDeckInitialized = true;
 
     try {
-        console.log("DEBUG: [Entry] Starting App bootstrap sequence...");
+        console.log("VERIFY: [Entry] DOM is ready. Starting App bootstrap sequence...");
         const app = new App();
         await app.init();
     } catch (error) {
         console.error("FATAL: Could not start the application.", error);
-        // On mobile, alerts are ugly but effective for catching fatal startup errors if no console is available
-        // alert("Fatal Error starting App: " + error.message); 
-        document.body.innerHTML = `<div class="text-red-500 p-8">A fatal error occurred. Please refresh. <br> ${error.message}</div>`;
+        
+        // Improved Error Screen with a "Reload" button
+        document.body.innerHTML = `
+            <div class="flex flex-col items-center justify-center min-h-screen p-8 text-center text-red-500 bg-gray-900">
+                <i class="fa-solid fa-bug text-4xl mb-4"></i>
+                <h1 class="text-xl font-bold mb-2">Startup Error</h1>
+                <p class="mb-4 text-gray-300">The application could not load resources in time.</p>
+                <div class="bg-black/50 p-4 rounded text-xs font-mono text-left w-full max-w-md overflow-auto mb-6 border border-red-900">
+                    ${error.message}
+                </div>
+                <button onclick="window.location.reload()" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-lg shadow-lg transition-all">
+                    <i class="fa-solid fa-rotate-right mr-2"></i> Reload App
+                </button>
+            </div>`;
     }
 };
 
 // Check if the DOM is already ready (Critical for Mobile/Cache)
 if (document.readyState === 'complete' || document.readyState === 'interactive') {
-    console.log("DEBUG: [Entry] DOM was already ready. Executing immediately.");
+    console.log("DEBUG: [Entry] DOM was already ready. Executing start.");
     startApplication();
 } else {
     console.log("DEBUG: [Entry] Waiting for DOMContentLoaded event.");
-    document.addEventListener('DOMContentLoaded', startApplication);
+    document.addEventListener('DOMContentLoaded', () => startApplication());
 }
