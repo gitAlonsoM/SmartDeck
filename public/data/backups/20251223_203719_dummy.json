@@ -400,10 +400,6 @@
         {
           "text": "Which one is the part that takes the longest to load.",
           "audioSrc": "public/data/audio/dummy/dummy_117_sideB_4.mp3"
-        },
-        {
-          "text": "What is the part that takes the longest to load?",
-          "audioSrc": "public/data/audio/dummy/dummy_117_sideB_5.mp3"
         }
       ],
       "note": "**[102]**\n\nFor duration, we use the structure: [Takes] + [Time].\n\n[The longest] is the most natural superlative for time duration.\n\n~Which part delays more in load?~ (Incorrect: 'Delay' is usually transitive or implies lateness, not duration. Use [takes the longest].)"
@@ -1720,10 +1716,6 @@
         {
           "text": "That table is the one which has the data we need to bring in.",
           "audioSrc": "public/data/audio/dummy/dummy_176_sideB_4.mp3"
-        },
-        {
-          "text": "That table is the one that has the data we need to fetch.",
-          "audioSrc": "public/data/audio/dummy/dummy_176_sideB_5.mp3"
         }
       ],
       "note": "For databases, [Fetch] is the standard verb for retrieving data.\n\n~That table is who has~ (Incorrect: Use [which] or [that] for objects like tables, never 'who'.)"
@@ -1764,10 +1756,6 @@
         {
           "text": "The code coming in is the new version.",
           "audioSrc": "public/data/audio/dummy/dummy_178_sideB_2.mp3"
-        },
-        {
-          "text": "The incoming code is the new one coming.",
-          "audioSrc": "public/data/audio/dummy/dummy_178_sideB_3.mp3"
         }
       ],
       "note": "[Incoming] is the technical term for the 'entrante' code in a conflict resolution tool.\n\n~The incoming code is the new one which is coming~ (Incorrect: Redundant. Since you already used 'incoming', saying 'which is coming' is repetitive. Use [the new one] or [the new version].)"
@@ -1930,7 +1918,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_185_sideB_3.mp3"
         }
       ],
-      "note": "**[154]**\n\n[Move up], [Raise], or [Push up] are the counterparts for moving elements upwards.\n\n~Upper that panel to see it completely~ (Incorrect: [Upper] is an adjective, not a verb. Use the phrasal verb [Move up] or the verb [Raise].)"
+      "note": "[Move up], [Raise], or [Push up] are the counterparts for moving elements upwards.\n\n~Upper that panel to see it completely~ (Incorrect: [Upper] is an adjective, not a verb. Use the phrasal verb [Move up] or the verb [Raise].)"
     },
     {
       "cardId": "dummy_186",
@@ -1968,10 +1956,6 @@
         {
           "text": "I haven't said that since two and a half months ago.",
           "audioSrc": "public/data/audio/dummy/dummy_187_sideB_2.mp3"
-        },
-        {
-          "text": "I haven't told that in two and a half months.",
-          "audioSrc": "public/data/audio/dummy/dummy_187_sideB_3.mp3"
         }
       ],
       "note": "**[151]**\n\nWhen using [Ago] (atrás), we usually use the Past Simple: 'I said that 2 months ago'.\n\nWhen using [Haven't said] (Present Perfect), we use [In] or [For] to show duration: 'I haven't said that [in] 2 months'.\n\n~I haven't said that 2 months back~ (Unnatural: Use [ago] or duration with 'in/for'.)"
@@ -2109,44 +2093,44 @@
       "note": "We use [Now] to indicate a change in state (it wasn't accessible before, but it is now).\n\n[Reachable] is a common technical alternative to 'accessible' when talking about network endpoints."
     },
     {
-      "cardId": "dummy_194",
-      "cardType": "flippable",
-      "sideA": "El día que se hace el pedido.",
-      "sideB": [
-        {
-          "text": "The day the order is placed.",
-          "audioSrc": "public/data/audio/dummy/dummy_194_sideB_0.mp3"
-        },
-        {
-          "text": "The date the order is made.",
-          "audioSrc": "public/data/audio/dummy/dummy_194_sideB_1.mp3"
-        }
-      ],
-      "note": "We use the verb [place] for orders.\n\n~The day the order is done~ (Incorrect: Use [placed] or [made] for formal requests.)\n\n~The day of the order is placed~ (Incorrect: The word 'of' is unnecessary here. Use [The day the order is placed].)\n\n~The order's day is placed~ (Incorrect: A day cannot be 'placed'; only the [order] is.)\n\n~The day's order is placed~ (Incorrect: This implies 'the order belonging to the day', which does not match the prompt.)"
+  "cardId": "dummy_194",
+  "cardType": "flippable",
+  "sideA": "El día que se hace el pedido.",
+  "sideB": [
+    {
+      "text": "The day the order is placed.",
+      "audioSrc": "public/data/audio/dummy/dummy_194_sideB_0.mp3"
     },
     {
-      "cardId": "dummy_195",
-      "cardType": "flippable",
-      "sideA": "El día del envío del producto.",
-      "sideB": [
-        {
-          "text": "The product's shipping day.",
-          "audioSrc": "public/data/audio/dummy/dummy_195_sideB_0.mp3"
-        },
-        {
-          "text": "The day the product is shipped.",
-          "audioSrc": "public/data/audio/dummy/dummy_195_sideB_1.mp3"
-        },
-        {
-          "text": "The shipping date of the product.",
-          "audioSrc": "public/data/audio/dummy/dummy_195_sideB_2.mp3"
-        },
-        {
-          "text": "The delivery day.",
-          "audioSrc": "public/data/audio/dummy/dummy_195_sideB_3.mp3"
-        }
-      ],
-      "note": "[Shipping] refers to the process of sending the goods.\n\n~The day of the product send~ (Incorrect: 'Send' is a verb. Use the noun [shipping] or the past participle [shipped] in a passive structure.)\n\n~The day of the product is shipped~ (Incorrect: Grammatically awkward. Use [The day the product is shipped].)"
+      "text": "The date the order is made.",
+      "audioSrc": "public/data/audio/dummy/dummy_194_sideB_1.mp3"
     }
+  ],
+  "note": "We use the verb [place] for orders.\n\n~The day the order is done~ (Incorrect: Use [placed] or [made] for formal requests.)"
+},
+  {
+    "cardId": "dummy_195",
+    "cardType": "flippable",
+    "sideA": "El día del envío del producto.",
+    "sideB": [
+      {
+        "text": "The product's shipping day.",
+        "audioSrc": "public/data/audio/dummy/dummy_195_sideB_0.mp3"
+      },
+      {
+        "text": "The day the product is shipped.",
+        "audioSrc": "public/data/audio/dummy/dummy_195_sideB_1.mp3"
+      },
+      {
+        "text": "The shipping date of the product.",
+        "audioSrc": "public/data/audio/dummy/dummy_195_sideB_2.mp3"
+      },
+      {
+        "text": "The delivery day.",
+        "audioSrc": "public/data/audio/dummy/dummy_195_sideB_3.mp3"
+      }
+    ],
+    "note": "[Shipping] refers to the process of sending the goods.\n\n~The day of the product send~ (Incorrect: 'Send' is a verb. Use the noun [shipping] or the past participle [shipped] in a passive structure.)"
+  }
   ]
 }
