@@ -78,7 +78,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_156_sideB_2.mp3"
         }
       ],
-      "note": "**[21]**\n\n[Based on] and [According to] are perfect for 'según'.\n\n~...in the delivery day~ (Incorrect: Specific calendar days or dates require the preposition [on].)\n\n~Calculated like the cost~ (Unnatural: Use [based on] for calculations.)"
+      "note": "[Based on] and [According to] are perfect for 'según'.\n\n~Calculated like the cost~ (Unnatural: Use [based on] for calculations.)"
     },
     {
       "cardId": "dummy_161",
@@ -126,7 +126,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_162_sideB_3.mp3"
         }
       ],
-      "note": "**[102]**\n\nUse [How long] for duration. \n\n~How would that take?~ (Incorrect: Questions about duration require [long] or [much time].)\n\n~How much would that take?~ (Ambiguous: This sounds like you are asking about cost/quantity, not time duration.)"
+      "note": "**[102]**\n\nUse [How long] for duration. \n\n~How much would that take?~ (Ambiguous: This sounds like you are asking about cost/quantity, not time duration.)"
     },
     {
       "cardId": "dummy_165",
@@ -144,10 +144,6 @@
         {
           "text": "I've never come across anything like that.",
           "audioSrc": "public/data/audio/dummy/dummy_165_sideB_2.mp3"
-        },
-        {
-          "text": "I've never seen anything like that.",
-          "audioSrc": "public/data/audio/dummy/dummy_165_sideB_3.mp3"
         }
       ],
       "note": "Use [Present Perfect] (I have seen) for experiences. \n\n[Come across] is a phrasal verb meaning to find or see something by chance.\n\n~I've never seen something about that~ (Incorrect: In negative sentences or Present Perfect experiences, use [anything] instead of 'something'.)"
@@ -244,13 +240,9 @@
         {
           "text": "The incoming code is the new one coming.",
           "audioSrc": "public/data/audio/dummy/dummy_178_sideB_3.mp3"
-        },
-        {
-          "text": "The incoming code is the new one which is coming in.",
-          "audioSrc": "public/data/audio/dummy/dummy_178_sideB_4.mp3"
         }
       ],
-      "note": "[Incoming] is the technical term for the 'entrante' code in a conflict resolution tool.\n\n~The incoming code is the new one is coming in~ (Incorrect: Missing the relative pronoun [which] or [that] to connect the clauses.)"
+      "note": "[Incoming] is the technical term for the 'entrante' code in a conflict resolution tool.\n\n~The incoming code is the new one which is coming~ (Incorrect: Redundant. Since you already used 'incoming', saying 'which is coming' is repetitive. Use [the new one] or [the new version].)"
     },
     {
       "cardId": "dummy_194",
@@ -266,7 +258,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_194_sideB_1.mp3"
         }
       ],
-      "note": "We use the verb [place] for orders.\n\n~The order day~ (Incorrect: This sounds like a day dedicated to ordering. Use [the day the order is placed].)\n\n~The placed order day~ (Incorrect: Unnatural phrasing. Use a relative clause like 'the day the order is placed'.)\n\n~The day the order is done~ (Incorrect: Use [placed] or [made] for formal requests.)\n\n~The day of the order is placed~ (Incorrect: The word 'of' is unnecessary here. Use [The day the order is placed].)\n\n~The order's day is placed~ (Incorrect: A day cannot be 'placed'; only the [order] is.)\n\n~The day's order is placed~ (Incorrect: This implies 'the order belonging to the day', which does not match the prompt.)"
+      "note": "We use the verb [place] for orders.\n\n~The day the order is done~ (Incorrect: Use [placed] or [made] for formal requests.)\n\n~The day of the order is placed~ (Incorrect: The word 'of' is unnecessary here. Use [The day the order is placed].)\n\n~The order's day is placed~ (Incorrect: A day cannot be 'placed'; only the [order] is.)\n\n~The day's order is placed~ (Incorrect: This implies 'the order belonging to the day', which does not match the prompt.)"
     },
     {
       "cardId": "dummy_195",
@@ -284,14 +276,6 @@
         {
           "text": "The shipping date of the product.",
           "audioSrc": "public/data/audio/dummy/dummy_195_sideB_2.mp3"
-        },
-        {
-          "text": "The shipping day.",
-          "audioSrc": "public/data/audio/dummy/dummy_195_sideB_3.mp3"
-        },
-        {
-          "text": "The delivery day.",
-          "audioSrc": "public/data/audio/dummy/dummy_195_sideB_4.mp3"
         }
       ],
       "note": "[Shipping] refers to the process of sending the goods.\n\n~The day of the product send~ (Incorrect: 'Send' is a verb. Use the noun [shipping] or the adjective [shipped].)"
@@ -316,10 +300,6 @@
         {
           "text": "I omitted the 'n'.",
           "audioSrc": "public/data/audio/dummy/dummy_196_sideB_3.mp3"
-        },
-        {
-          "text": "I dropped the 'n' letter.",
-          "audioSrc": "public/data/audio/dummy/dummy_196_sideB_4.mp3"
         }
       ],
       "note": "In a coding context, [dropped] or [missed] are very common ways to describe a typo where a character is missing."
@@ -360,10 +340,6 @@
         {
           "text": "How far will I reach?",
           "audioSrc": "public/data/audio/dummy/dummy_198_sideB_2.mp3"
-        },
-        {
-          "text": "How far could I go?",
-          "audioSrc": "public/data/audio/dummy/dummy_198_sideB_3.mp3"
         }
       ],
       "note": "**[102]**\n\n[How far] is the question used for distance or progress.\n\nUse [be able to] to express future ability."
@@ -384,13 +360,9 @@
         {
           "text": "How far will you reach?",
           "audioSrc": "public/data/audio/dummy/dummy_199_sideB_2.mp3"
-        },
-        {
-          "text": "How far could you reach?",
-          "audioSrc": "public/data/audio/dummy/dummy_199_sideB_3.mp3"
         }
       ],
-      "note": "Same structure as the previous card, applied to the second person [you].\n\n~How far will you get reached?~ (Incorrect: Passive construction is grammatically incorrect here.)\n\n~How far can you arrive?~ (Incorrect: Use [go] or [get] for distance; 'arrive' is only for specific destinations.)"
+      "note": "Same structure as the previous card, applied to the second person [you]."
     },
     {
       "cardId": "dummy_200",
@@ -408,17 +380,9 @@
         {
           "text": "Hold on, I am going to search for the translation.",
           "audioSrc": "public/data/audio/dummy/dummy_200_sideB_2.mp3"
-        },
-        {
-          "text": "Hold on a second; I will look up the translation.",
-          "audioSrc": "public/data/audio/dummy/dummy_200_sideB_3.mp3"
-        },
-        {
-          "text": "Give me a second; I will look the translation up.",
-          "audioSrc": "public/data/audio/dummy/dummy_200_sideB_4.mp3"
         }
       ],
-      "note": "The phrasal verb [Look up] is specifically used when searching for information in a dictionary, database, or list.\n\n~I will look it up the translation~ (Incorrect: Redundant object. Use 'look up the translation' or 'look it up'.)"
+      "note": "The phrasal verb [Look up] is specifically used when searching for information in a dictionary, database, or list."
     },
     {
       "cardId": "dummy_201",
@@ -436,17 +400,9 @@
         {
           "text": "I will search for the translation of my intended meaning.",
           "audioSrc": "public/data/audio/dummy/dummy_201_sideB_2.mp3"
-        },
-        {
-          "text": "I will look the translation up for what I want to say.",
-          "audioSrc": "public/data/audio/dummy/dummy_201_sideB_3.mp3"
-        },
-        {
-          "text": "I will look up the translation of what I want to say.",
-          "audioSrc": "public/data/audio/dummy/dummy_201_sideB_4.mp3"
         }
       ],
-      "note": "[What I mean] is often more natural than the literal 'what I want to say' in a conversation.\n\n~I will look the translation for what I want to say~ (Incorrect: Searching requires the particle [up] to complete the phrasal verb.)"
+      "note": "[What I mean] is often more natural than the literal 'what I want to say' in a conversation."
     },
     {
       "cardId": "dummy_202",
@@ -504,10 +460,6 @@
         {
           "text": "I'm fairly positive about my statement.",
           "audioSrc": "public/data/audio/dummy/dummy_204_sideB_2.mp3"
-        },
-        {
-          "text": "I'm almost sure of what I say.",
-          "audioSrc": "public/data/audio/dummy/dummy_204_sideB_3.mp3"
         }
       ],
       "note": "You can be sure [of] something or sure [about] something. Both are correct."
@@ -530,7 +482,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_205_sideB_2.mp3"
         }
       ],
-      "note": "[Above] refers to the code lines that appear before the SQL [UNION] operator.\n\n~Up the UNION~ (Incorrect: 'Up' is a direction, use [above] for spatial hierarchy.)\n\n~Upper the UNION~ (Incorrect: 'Upper' is an adjective, not a preposition.)"
+      "note": "[Above] refers to the code lines that appear before the SQL [UNION] operator."
     },
     {
       "cardId": "dummy_206",
@@ -570,7 +522,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_207_sideB_2.mp3"
         }
       ],
-      "note": "**[128]**\n\n[Other than] is the most professional way to say 'que no sean' in this context.\n\n~...for provinces not other than Quebec~ (Incorrect: Double negative that creates a confusing meaning.)"
+      "note": "[Other than] is the most professional way to say 'que no sean' in this context."
     },
     {
       "cardId": "dummy_208",
@@ -610,7 +562,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_209_sideB_2.mp3"
         }
       ],
-      "note": "**[18]**\n\nWe always use the verb [make] for friends. \n\n~I did a new friend~ (Incorrect: In English, you 'make' friends, you don't 'do' them.)"
+      "note": "We always use the verb [make] for friends. \n\n~I did a new friend~ (Incorrect: In English, you 'make' friends, you don't 'do' them.)"
     },
     {
       "cardId": "dummy_210",
@@ -650,7 +602,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_211_sideB_2.mp3"
         }
       ],
-      "note": "Use [other than] or [apart from] to exclude specific elements from a selection.\n\n~Not those~ (Incorrect: This is a fragment used for pointing/rejection, not for expressing exclusion in a sentence.)\n\n~Than not be those~ (Incorrect: Literal translation that doesn't follow English syntax for exclusion.)"
+      "note": "Use [other than] or [apart from] to exclude specific elements from a selection.\n\n~Than not be those~ (Incorrect: Literal translation that doesn't follow English syntax for exclusion.)"
     },
     {
       "cardId": "dummy_212",
@@ -670,7 +622,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_212_sideB_2.mp3"
         }
       ],
-      "note": "When you want something (Hoping), use [hope] + [clause]. When you anticipate something based on logic (Expecting), use [expect] + [object] + [to be].\n\n~We are expecting them not that kind~ (Incorrect: Missing the infinitive [to be].)\n\n~We are expecting other than that kind~ (Incorrect: 'Expect' requires a direct object or a specific action clause.)\n\n~We are waiting that not be...~ (Incorrect: [Wait] is for time duration. For desires or logical anticipation, use [hope] or [expect].)"
+      "note": "When you want something (Hoping), use [hope] + [clause]. When you anticipate something based on logic (Expecting), use [expect] + [object] + [to be].\n\n~We are waiting that not be...~ (Incorrect: [Wait] is for time duration. For desires or logical anticipation, use [hope] or [expect].)"
     },
     {
       "cardId": "dummy_213",
@@ -690,7 +642,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_213_sideB_2.mp3"
         }
       ],
-      "note": "Positive counterpart of the previous card. Notice that after [hope], we use a normal sentence: [they are...]. After [expect], we often use an infinitive structure: [expect them TO BE...].\n\n~We are expecting those kind of type~ (Incorrect: Redundant and incorrect syntax. Use [those kind] or [that type].)"
+      "note": "Positive counterpart of the previous card. Notice that after [hope], we use a normal sentence: [they are...]. After [expect], we often use an infinitive structure: [expect them TO BE...]."
     }
   ]
 }
