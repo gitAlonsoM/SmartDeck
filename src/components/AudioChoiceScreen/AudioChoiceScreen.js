@@ -49,7 +49,11 @@ async render(cardData, deckId, currentIndex, totalQuestions, score, isMarkedForI
             const button = document.createElement('button');
             const fullSentence = `${prefix}${option.text}${suffix}`;
             button.innerHTML = `<span>${prefix}<strong class="font-bold text-yellow-600 dark:text-yellow-400">${option.text}</strong>${suffix}</span>`;
-            button.dataset.option = fullSentence;
+
+           // Store specific logic data in the dataset to avoid string comparison errors
+            button.dataset.option = fullSentence; // Keep for display/debugging if needed
+            button.dataset.isCorrect = option.isCorrect; // The Source of Truth
+
             button.className = 'option-btn relative w-full p-4 border-2 border-gray-300 dark:border-gray-600 rounded-lg text-left hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-between';
             optionsContainer.appendChild(button);
         });
@@ -72,11 +76,16 @@ async render(cardData, deckId, currentIndex, totalQuestions, score, isMarkedForI
         };
 
         document.getElementById('options-container').onclick = (event) => {
-            const button = event.target.closest('.option-btn');
-            if (button) {
-                this.handleOptionClick(button.dataset.option);
-            }
-        };
+            const button = event.target.closest('.option-btn');
+            if (button) {
+                // CRITICAL FIX: Extract the boolean truth from the dataset
+                // and PASS IT as the second argument.
+                const isCorrect = button.dataset.isCorrect === 'true';
+                const selectedText = button.dataset.option;
+                
+                this.handleOptionClick(selectedText, isCorrect);
+            }
+        };
         
         // Listener para los modales
         const feedbackContainer = document.getElementById('feedback-container');
@@ -94,48 +103,74 @@ async render(cardData, deckId, currentIndex, totalQuestions, score, isMarkedForI
         }
     }
 
-    handleOptionClick(selectedOption) {
-        if (!this.currentCard) return;
-        const isCorrect = selectedOption === this.currentCard.correctAnswer;
-        this.showFeedback(isCorrect, this.currentCard.correctAnswer, selectedOption);
-        this.revealFeedback();
-        this.playCorrectAudio();
-        this.onAnswer(selectedOption);
-    }
-    
-    showFeedback(isCorrect, correctAnswer, selectedOption) {
-        const optionButtons = document.querySelectorAll('.option-btn');
-        optionButtons.forEach(button => {
-            button.disabled = true;
-            const option = button.dataset.option;
 
-            if (option === correctAnswer) {
-                button.className += ' !bg-green-200 !border-green-400 !text-green-900 dark:!bg-green-800 dark:!border-green-600 dark:!text-green-100';
-                const highlightElement = button.querySelector('strong');
-                if (highlightElement) {
-                    highlightElement.classList.remove('text-yellow-600', 'dark:text-yellow-400');
-                    highlightElement.className += ' !text-indigo-700 dark:!text-indigo-300';
-                }
-                const replayIcon = document.createElement('i');
-                replayIcon.className = 'fas fa-volume-up ml-4 text-green-700 dark:text-green-200 text-xl cursor-pointer hover:scale-110 transition-transform';
-                replayIcon.title = "Replay audio";
-                replayIcon.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    this.playCorrectAudio();
-                });
-                button.appendChild(replayIcon);
-            } else if (!isCorrect && option === selectedOption) {
-                button.className += ' !bg-red-500 !border-red-600 !text-white';
-            }
-        });
-        const nextBtn = document.getElementById('next-btn');
-        nextBtn.disabled = false;
-        const progressText = document.getElementById('quiz-progress').textContent;
-        const [current, total] = progressText.match(/\d+/g).map(Number);
-        if (current === total) {
-            nextBtn.textContent = 'Finish Quiz';
-        }
-    }
+
+  handleOptionClick(selectedOption, isCorrect) {
+        if (!this.currentCard) return;
+        
+        console.log(`VERIFY: Option clicked. Is Correct? ${isCorrect}. Text: "${selectedOption}"`);
+        
+        // We pass 'isCorrect' directly, avoiding string comparison issues with spaces
+        this.showFeedback(isCorrect, selectedOption);
+        this.revealFeedback();
+        this.playCorrectAudio();  //ACA LE QUITE EL CONDICIONAL "IF", EL AUDIO DE LA ALTERNATIVA CORRECTA SIEMPRE SUENA, INDEPENDIENTE DEL RESULTADO.
+        // Use the boolean to register the answer in the main App logic
+        // We pass the text merely for logging/display purposes in the parent
+        this.onAnswer(selectedOption, isCorrect); 
+    }
+
+    
+    
+    showFeedback(isUserCorrect, selectedOption) {
+        const optionButtons = document.querySelectorAll('.option-btn');
+        optionButtons.forEach(button => {
+            button.disabled = true;
+            
+            // We check the dataset Truth instead of comparing strings
+            const isButtonCorrect = button.dataset.isCorrect === 'true';
+            const isButtonSelected = button.dataset.option === selectedOption;
+
+            if (isButtonCorrect) {
+                // Determine styling for the CORRECT answer
+                button.className += ' !bg-green-200 !border-green-400 !text-green-900 dark:!bg-green-800 dark:!border-green-600 dark:!text-green-100';
+                
+                const highlightElement = button.querySelector('strong');
+                if (highlightElement) {
+                    highlightElement.classList.remove('text-yellow-600', 'dark:text-yellow-400');
+                    highlightElement.className += ' !text-indigo-700 dark:!text-indigo-300';
+                }
+                
+                const replayIcon = document.createElement('i');
+                replayIcon.className = 'fas fa-volume-up ml-4 text-green-700 dark:text-green-200 text-xl cursor-pointer hover:scale-110 transition-transform';
+                replayIcon.title = "Replay audio";
+                replayIcon.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    this.playCorrectAudio();
+                });
+                button.appendChild(replayIcon);
+
+            } else if (!isUserCorrect && isButtonSelected) {
+                // Styling for the WRONG selection
+                button.className += ' !bg-red-500 !border-red-600 !text-white';
+            }
+        });
+        
+        const nextBtn = document.getElementById('next-btn');
+        nextBtn.disabled = false;
+        
+        // Check for end of quiz context
+        const progressText = document.getElementById('quiz-progress').textContent;
+        // Safety check if progressText exists
+        if(progressText) {
+             const matches = progressText.match(/\d+/g);
+             if(matches && matches.length >= 2) {
+                 const [current, total] = matches.map(Number);
+                 if (current === total) {
+                     nextBtn.textContent = 'Finish Quiz';
+                 }
+             }
+        }
+    }
 
 revealFeedback() {
         if (!this.currentCard) return;
