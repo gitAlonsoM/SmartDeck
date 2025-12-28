@@ -30,7 +30,11 @@ class MusicService {
             { name: "Lo-Fi Pkm OST Gold -Silver (Part 2)", src: "public/assets/audio/music/Lo-Fi Pkm OST Gold -Silver 2.mp3" },
             { name: "Souls of Fire", src: "public/assets/audio/music/Souls of Fire.mp3" },
             { name: "Stickerbrush Symphony", src: "public/assets/audio/music/stickerbrush symphony.mp3" },
-            { name: "Johto Lofi Mix IIy", src: "public/assets/audio/music/Johto Lofi Mix II - SeaSilver.mp3" }
+            { name: "Johto Lofi Mix IIy", src: "public/assets/audio/music/Johto Lofi Mix II - SeaSilver.mp3" },
+            { name: "Death Note chill OST", src: "public/assets/audio/music/Death Note chill  OST.mp3" },
+            { name: "Legend of the Martial Artist", src: "public/assets/audio/music/Legend of the Martial Artist.mp3" },
+            { name: "Mystic Land", src: "public/assets/audio/music/Mystic Land.mp3" },
+            { name: "Training Ost", src: "public/assets/audio/music/Training Ost.mp3" }
         ];
         console.log(`VERIFY: MusicService initialized. Playlist loaded with ${this.playlist.length} tracks.`); 
         // Start with a random track index instead of always 0
