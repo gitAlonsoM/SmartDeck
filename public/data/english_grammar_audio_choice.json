@@ -4,7 +4,7 @@
   "description": "Master key English grammar concepts by completing the sentences and listening to the correct pronunciation. Explanations are revealed after your choice.",
   "deckType": "audioChoice",
   "isAiGenerated": false,
-  "hint": "El campo hint, solo es visto cuando el usuario contesta la alternativa, no es una 'real pista', ya que no se muestra al comienzo. Mas bien solo añade valor adicional a la card. Por lo que, no añadir 'pistas' , el usuario no ve ese campo cuando decide que contestar, la ve una vez ya contesto la alternativa... asumir que el usuario tomara la decision de contestar ayudandose con el campo 'hint' es un error, nunca usa ese campo para decir, por lo que cada card debe ser lo suficientemente clara para ser contestada sin necesaidad del campo de hint.",
+  "hint": "Developer Note: The 'hint' field within individual cards is strictly displayed post-answer. It must not contain information required to solve the exercise. Each card must be self-sufficient and clear enough to be completed independently. Use the 'hint' property exclusively for supplementary pedagogical value or context after the user's choice has been made.", 
   "cards": [
     {
       "cardId": "egac_001",

@@ -4,6 +4,7 @@
   "description": "Master essential English phrasal verbs by completing sentences. Each card includes a valuable tip and detailed explanations to accelerate your learning.",
   "deckType": "audioChoice",
   "isAiGenerated": false,
+  "hint": "Developer Note: The 'hint' field within individual cards is strictly displayed post-answer. It must not contain information required to solve the exercise. Each card must be self-sufficient and clear enough to be completed independently. Use the 'hint' property exclusively for supplementary pedagogical value or context after the user's choice has been made.", 
   "cards": [
     {
       "cardId": "pvac_001",
