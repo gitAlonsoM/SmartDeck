@@ -4,6 +4,7 @@
   "description": "Master key English grammar concepts by completing the sentences and listening to the correct pronunciation. Explanations are revealed after your choice.",
   "deckType": "audioChoice",
   "isAiGenerated": false,
+  "hint": "El campo hint, solo es visto cuando el usuario contesta la alternativa, no es una 'real pista', ya que no se muestra al comienzo. Mas bien solo añade valor adicional a la card. Por lo que, no añadir 'pistas' , el usuario no ve ese campo cuando decide que contestar, la ve una vez ya contesto la alternativa... asumir que el usuario tomara la decision de contestar ayudandose con el campo 'hint' es un error, nunca usa ese campo para decir, por lo que cada card debe ser lo suficientemente clara para ser contestada sin necesaidad del campo de hint.",
   "cards": [
     {
       "cardId": "egac_001",
@@ -368,7 +369,7 @@
       "hint": "The very formal alternative is 'For what are you looking?', but this is rarely used in conversation.",
       "content": {
         "type": "text",
-        "value": "**[111]**\n\nIn modern English, it's natural to end a question with a preposition, especially when it's part of a phrasal verb like **look for** (meaning 'to search').\n\n~of~ and ~with~ are incorrect prepositions here. They do not form phrasal verbs with 'look' that fit this context."
+        "value": "**[111]**\n\nIn modern English, it's natural to end a question with a preposition, especially when it's part of a phrasal verb like look for (meaning 'to search').\n\n~of~ and ~with~ are incorrect prepositions here. They do not form phrasal verbs with 'look' that fit this context."
       }
     },
     {
@@ -452,7 +453,7 @@
       "hint": "The word 'children' itself is an old plural form, not ending in 's'.",
       "content": {
         "type": "text",
-        "value": "**[20]**\n\nFor [irregular plural nouns] that do not end in -s, like 'children', the possessive is formed by adding ['s], just like a singular noun.\n\n~childrens'~ is incorrect; the apostrophe after the 's' is for plural nouns that already end in 's'.\n~childrens's~ is a double possessive and grammatically incorrect.\n\n**Vocabulary Note:** 'Scattered' means thrown or spread about in various random directions. (e.g., 'Her clothes were scattered across the floor.')"
+        "value": "**[20]**\n\nFor [irregular plural nouns] that do not end in -s, like 'children', the possessive is formed by adding ['s], just like a singular noun.\n\n~childrens'~ is incorrect; the apostrophe after the 's' is for plural nouns that already end in 's'.\n~childrens's~ is a double possessive and grammatically incorrect.\n\n'Scattered' means thrown or spread about in various random directions. (e.g., 'Her clothes were scattered across the floor.')"
       }
     },
     {
@@ -649,7 +650,7 @@
       "hint": "You can also say 'We are out of milk'. The phrasal verb 'run out of' describes the action of depletion.",
       "content": {
         "type": "text",
-        "value": "**[16]**\n\nThe three-part phrasal verb is [run out of], which means to exhaust a supply of something.\n\n~run out~ is incomplete; you run out *of* something.\n~run of~ is not a correct phrasal verb."
+        "value": "**[16]**\n\nThe three-part phrasal verb is [run out of], which means to exhaust a supply of something.\n\n~run out~ is incomplete; you run out of something.\n~run of~ is not a correct phrasal verb."
       }
     },
     {
@@ -1042,7 +1043,7 @@
       "hint": "This is sometimes called the 'infinitive of purpose' because it answers the question 'Why?'.",
       "content": {
         "type": "text",
-        "value": "**[47]**\n\nAn [Infinitive of Purpose] (to + verb) is used to explain the reason or goal of an action. She practices *for the purpose of* improving.\n\n~for improving~ is not the standard way to express purpose in this structure.\n~improving~ by itself doesn't express the purpose of the action 'practicing'."
+        "value": "**[47]**\n\nAn [Infinitive of Purpose] (to + verb) is used to explain the reason or goal of an action. She practices for the purpose of improving.\n\n~for improving~ is not the standard way to express purpose in this structure.\n~improving~ by itself doesn't express the purpose of the action 'practicing'."
       }
     },
     {
@@ -1183,7 +1184,7 @@
       "hint": "Learning adjective-preposition collocations (like 'proud of', 'keen on', 'angry with') is key to fluency.",
       "content": {
         "type": "text",
-        "value": "**[70]**\n\n[Proud of] is a fixed adjective-preposition collocation. You are always proud *of* something or someone.\n\n~proud for~ and ~proud with~ are incorrect prepositions to use with 'proud'."
+        "value": "**[70]**\n\n[Proud of] is a fixed adjective-preposition collocation. You are always proud of something or someone.\n\n~proud for~ and ~proud with~ are incorrect prepositions to use with 'proud'."
       }
     },
     {
@@ -1323,7 +1324,7 @@
       "hint": "While 'I got' is common in informal American English, 'I've got' is the grammatically standard present form.",
       "content": {
         "type": "text",
-        "value": "**[90]**\n\n['ve got]** (have got) is a common, slightly informal alternative to 'have' for expressing possession in the present.\n\n~am got~ is grammatically incorrect.\n~got~ by itself is technically the simple past. While it's often used informally in American English to mean 'have' in the present ('I got a car'), the more standard form, especially in British English, is 'have got'."
+        "value": "**[90]**\n\n['ve got] (have got) is a common, slightly informal alternative to 'have' for expressing possession in the present.\n\n~am got~ is grammatically incorrect.\n~got~ by itself is technically the simple past. While it's often used informally in American English to mean 'have' in the present ('I got a car'), the more standard form, especially in British English, is 'have got'."
       }
     },
     {
@@ -2220,7 +2221,7 @@
       "hint": "This rule also applies to other measurements, like 'a ten-mile run' or 'a six-foot tall man'.",
       "content": {
         "type": "text",
-        "value": "**[87]**\n\nWhen a number and noun (e.g., twenty dollar) are used as a compound adjective before another noun ('bill'), the noun part of the adjective is [singular].\n\n~twenty-dollars bill~ is a common error; the adjective form should be singular.\n~twenty of dollars bill~ is grammatically incorrect.\n\n**Idiom:**\n- **To break a bill**: This phrase means to exchange a large bill (like a $20 bill) for an equivalent amount of money in smaller bills or coins (e.g., two $10 bills, or four $5 bills)."
+        "value": "**[87]**\n\nWhen a number and noun (e.g., twenty dollar) are used as a compound adjective before another noun ('bill'), the noun part of the adjective is [singular].\n\n~twenty-dollars bill~ is a common error; the adjective form should be singular.\n~twenty of dollars bill~ is grammatically incorrect.\n\n**Idiom:**\n- To break a bill: This phrase means to exchange a large bill (like a $20 bill) for an equivalent amount of money in smaller bills or coins (e.g., two $10 bills, or four $5 bills)."
       }
     },
     {
@@ -3536,7 +3537,7 @@
       "hint": "Here, 'Apart from' acts as a synonym for 'Besides' or 'In addition to'.",
       "content": {
         "type": "text",
-        "value": "**[128]**\n\n**[Apart from]** is a versatile connector. In this context, it means 'in addition to'.\n\n~Except from~ would imply that the main characters were *not* excellent, which changes the meaning of the sentence.\n~Away from~ is used to talk about physical distance and is grammatically incorrect in this context."
+        "value": "**[128]**\n\n[Apart from] is a versatile connector. In this context, it means 'in addition to'.\n\n~Except from~ would imply that the main characters were *not* excellent, which changes the meaning of the sentence.\n~Away from~ is used to talk about physical distance and is grammatically incorrect in this context."
       }
     },
     {
@@ -4180,7 +4181,7 @@
       "hint": "This expression is stronger than 'should' and implies more urgency.",
       "content": {
         "type": "text",
-        "value": "**[37]**\n\n['Had better'] (contracted to 'd better) is used for strong advice, implying a specific, negative consequence if ignored. It's followed by the base verb without 'to'.\n\n**Comparison:**\n- **'d better:** Strongest advice for this situation. Implies something bad will happen if you don't take an umbrella (you'll get wet).\n- **should:** General advice, less urgent.\n- **must:** Implies an obligation or rule, which doesn't fit this context."
+        "value": "**[37]**\n\n['Had better'] (contracted to 'd better) is used for strong advice, implying a specific, negative consequence if ignored. It's followed by the base verb without 'to'.\n\n**Comparison:**\n- 'd better: Strongest advice for this situation. Implies something bad will happen if you don't take an umbrella (you'll get wet).\n- should: General advice, less urgent.\n- must: Implies an obligation or rule, which doesn't fit this context."
       }
     },
     {
@@ -5300,7 +5301,7 @@
       "hint": "'Awkward' comes from the Old Norse 'afugr', meaning 'turned the wrong way'.",
       "content": {
         "type": "text",
-        "value": "An **adjective** is needed here to describe the noun 'silence'.\n\n**[Awkward]** is the correct adjective for situations that are socially uncomfortable or embarrassing.\n\n~awkwardly~ is an adverb. Adverbs describe verbs, not nouns.\n~strangeness~ is a noun. You cannot use a noun to describe another noun in this way."
+        "value": "An adjective is needed here to describe the noun 'silence'.\n\n[Awkward] is the correct adjective for situations that are socially uncomfortable or embarrassing.\n\n~awkwardly~ is an adverb. Adverbs describe verbs, not nouns.\n~strangeness~ is a noun. You cannot use a noun to describe another noun in this way."
       }
     },
     {
@@ -5636,7 +5637,7 @@
       "hint": "Using 'gone to' would imply you are still at that location and have not returned.",
       "content": {
         "type": "text",
-        "value": "**[5]**\n\n**[Been there]** is the correct phrase to talk about the experience of having visited a place and returned.\n\n~known~ implies a deep, intimate understanding of a place, which doesn't fit the context of visiting.\n~gone in~ is grammatically incorrect in this context. 'Gone to' implies the person is still there and has not come back.\n\n*Usage Note: We use the structure **'have been to [a place]'** specifically to talk about the **experience** of visiting a place in the past. It is the correct and most natural choice here."
+        "value": "**[5]**\n\n[Been there] is the correct phrase to talk about the experience of having visited a place and returned.\n\n~known~ implies a deep, intimate understanding of a place, which doesn't fit the context of visiting.\n~gone in~ is grammatically incorrect in this context. 'Gone to' implies the person is still there and has not come back.\n\n*Usage Note: We use the structure 'have been to [a place]' specifically to talk about the experience of visiting a place in the past. It is the correct and most natural choice here."
       }
     },
     {
@@ -5944,7 +5945,7 @@
       "hint": "This phrase is used for consumables like food, milk, or money.",
       "content": {
         "type": "text",
-        "value": "**[16]**\n\n[Out of] is the correct prepositional phrase to indicate that a supply has been fully used up.\n\n~without of~ is grammatically incorrect.\n~off~ has many meanings, but it does not mean 'depleted' in this context.\n\n**Vocabulary:**\n- **Beans**: In this context, 'beans' refers to **coffee beans**, the seeds from which coffee is made."
+        "value": "**[16]**\n\n[Out of] is the correct prepositional phrase to indicate that a supply has been fully used up.\n\n~without of~ is grammatically incorrect.\n~off~ has many meanings, but it does not mean 'depleted' in this context.\n\n Beans : In this context, 'beans' refers to coffee beans, the seeds from which coffee is made."
       }
     },
     {
@@ -7456,7 +7457,7 @@
       "hint": "This preposition of motion helps to clearly distinguish from a static location ('in').",
       "content": {
         "type": "text",
-        "value": "[Into] clearly indicates the movement from outside the pool to inside it.\n\n~In~ describes a location ('She is swimming in the pool'), not the movement of entering.\n~To~ indicates direction but not necessarily entry ('She walked to the pool').\n\n**Vocabulary:**\n- **Dove**: The past tense of the verb 'to dive', which means to jump head-first into water.\n- **To cool off**: A phrasal verb meaning to lower your body temperature after being hot."
+        "value": "[Into] clearly indicates the movement from outside the pool to inside it.\n\n~In~ describes a location ('She is swimming in the pool'), not the movement of entering.\n~To~ indicates direction but not necessarily entry ('She walked to the pool').\n\nDove: The past tense of the verb 'to dive', which means to jump head-first into water.\n- To cool off: A phrasal verb meaning to lower your body temperature after being hot."
       }
     },
     {
@@ -8408,7 +8409,7 @@
       "hint": "The phrases 'on my own' and 'by myself' are very similar and often interchangeable.",
       "content": {
         "type": "text",
-        "value": "**[54]**\n\nThe idiom **[on her own]** is a perfect choice here, as it emphasizes independence and self-sufficiency.\n\n~for her own~ is grammatically incorrect. The preposition is wrong.\n~by own~ is also incorrect. It's missing the required reflexive pronoun (e.g., 'by **herself**')."
+        "value": "**[54]**\n\nThe idiom [on her own] is a perfect choice here, as it emphasizes independence and self-sufficiency.\n\n~for her own~ is grammatically incorrect. The preposition is wrong.\n~by own~ is also incorrect. It's missing the required reflexive pronoun (e.g., 'by herself')."
       }
     },
     {
@@ -13560,7 +13561,7 @@
       "hint": "When a phrasal verb like 'check out' is used as a noun, it is often hyphenated.",
       "content": {
         "type": "text",
-        "value": "**[99]**\n\nThe noun form, meaning the time of departure, is the hyphenated compound [check-out].\n\n**Note:** The one-word form ~checkout~ is also a correct noun and is often used interchangeably, though [check-out] is common for hotels.\n\n~check out~ (two words) is the phrasal verb, not the noun.\n~Checking out~ is the verb form (gerund/present participle) and does not fit the sentence structure."
+        "value": "**[99]**\n\nThe noun form, meaning the time of departure, is the hyphenated compound [check-out].\n\nNote: The one-word form ~checkout~ is also a correct noun and is often used interchangeably, though [check-out] is common for hotels.\n\n~check out~ (two words) is the phrasal verb, not the noun.\n~Checking out~ is the verb form (gerund/present participle) and does not fit the sentence structure."
       }
     },
     {
@@ -14792,7 +14793,7 @@
       "hint": "Follow the Mirror Rule: The question uses 'been', so the answer should reflect it.",
       "content": {
         "type": "text",
-        "value": "**[115]**\n\nAccording to the **Mirror Rule**, since the question uses **TO BE** (How has... *been*?), the most natural answer also uses [been].\n\n~Gone~ would be the answer to 'How has it gone?'.\n~Done~ is incorrect because a 'week' is an event/period, not an agent that does things."
+        "value": "**[115]**\n\nAccording to the Mirror Rule, since the question uses TO BE (How has... *been*?), the most natural answer also uses [been].\n\n~Gone~ would be the answer to 'How has it gone?'.\n~Done~ is incorrect because a 'week' is an event/period, not an agent that does things."
       }
     },
     {
@@ -14820,7 +14821,7 @@
       "hint": "The question uses 'going' (TO GO), so mirror that verb in your answer.",
       "content": {
         "type": "text",
-        "value": "**[115]**\n\nAccording to the **Mirror Rule**, since the question uses **TO GO** (How is it *going*?), the correct answer reflects this with [gone]. We focus on the *flow* or *progress* of the project.\n\n~Been~ focuses on the state/quality, but doesn't match the verb 'go'.\n~Done~ is incorrect for an event subject."
+        "value": "**[115]**\n\nAccording to the Mirror Rule, since the question uses TO GO (How is it *going*?), the correct answer reflects this with [gone]. We focus on the *flow* or *progress* of the project.\n\n~Been~ focuses on the state/quality, but doesn't match the verb 'go'.\n~Done~ is incorrect for an event subject."
       }
     },
     {
@@ -14848,7 +14849,7 @@
       "hint": "Look at the subject ('I'). Is it a person or an event?",
       "content": {
         "type": "text",
-        "value": "**[115]**\n\nWhen the subject is a person ('I'), we use [done] to describe performance or action.\n\n~Gone~ and ~Been~ are used for **events** (e.g., 'The presentation could have gone/been better'). People *do* things; events *are* or *go*."
+        "value": "**[115]**\n\nWhen the subject is a person ('I'), we use [done] to describe performance or action.\n\n~Gone~ and ~Been~ are used for events (e.g., 'The presentation could have gone/been better'). People *do* things; events *are* or *go*."
       }
     },
     {
@@ -14988,7 +14989,7 @@
       "hint": "'Explain' belongs to the 'To' Group. It requires the 'thing' first.",
       "content": {
         "type": "text",
-        "value": "**[117]**\n\nThe verb [Explain] requires the structure: Verb + **Thing** + To + **Person**.\n\n~Explain me the rule~ is a common error (treating it like 'tell').\n~Explain to me the rule~ is incorrect because the object 'the rule' is short."
+        "value": "**[117]**\n\nThe verb [Explain] requires the structure: Verb + Thing + To + Person.\n\n~Explain me the rule~ is a common error (treating it like 'tell').\n~Explain to me the rule~ is incorrect because the object 'the rule' is short."
       }
     },
     {
@@ -15016,7 +15017,7 @@
       "hint": "'Suggest' follows the same strict rule as 'Explain'.",
       "content": {
         "type": "text",
-        "value": "**[117]**\n\n[Suggest] is a Prepositional Verb. You cannot 'suggest someone something'.\n\nCorrect: Suggest + **[a solution]** (Thing) + **[to us]** (Person).\n~Suggested us a solution~ is grammatically incorrect."
+        "value": "**[117]**\n\n[Suggest] is a Prepositional Verb. You cannot 'suggest someone something'.\n\nCorrect: Suggest + [a solution] (Thing) + [to us] (Person).\n~Suggested us a solution~ is grammatically incorrect."
       }
     },
     {
@@ -15072,7 +15073,7 @@
       "hint": "Who is being described? Put that first.",
       "content": {
         "type": "text",
-        "value": "**[117]**\n\nStructure: Describe + **[The Person/Thing]** + to + **[The Recipient]**.\n\n~Describe the police the thief~ sounds like you are describing the police, which is the opposite of the intended meaning."
+        "value": "**[117]**\n\nStructure: Describe + [The Person/Thing] + to + [The Recipient].\n\n~Describe the police the thief~ sounds like you are describing the police, which is the opposite of the intended meaning."
       }
     },
     {
@@ -15100,7 +15101,7 @@
       "hint": "The crash happened in the past ('last night'), but we are viewing it from the present ('seems').",
       "content": {
         "type": "text",
-        "value": "**[118]**\n\nWe use the **Perfect Infinitive** [to have crashed] because the action (crashing) happened **before** the main verb (seems).\n\n~To crash~ would imply it is happening right now or happens regularly."
+        "value": "**[118]**\n\nWe use the Perfect Infinitive [to have crashed] because the action (crashing) happened before the main verb (seems).\n\n~To crash~ would imply it is happening right now or happens regularly."
       }
     },
     {
@@ -15212,7 +15213,7 @@
       "hint": "The digital method is simple: Say the hour, then the minutes.",
       "content": {
         "type": "text",
-        "value": "**[121]**\n\nThe most common and standard way to tell time in the US is the **Digital Method**: Hour + Number.\n\n~Two and half~ is a literal translation from Spanish ('dos y media') and is incorrect. If you use 'half', you must use the classic structure: [Half past two]."
+        "value": "**[121]**\n\nThe most common and standard way to tell time in the US is the Digital Method: Hour + Number.\n\n~Two and half~ is a literal translation from Spanish ('dos y media') and is incorrect. If you use 'half', you must use the classic structure: [Half past two]."
       }
     },
     {
@@ -15240,7 +15241,7 @@
       "hint": "When the minutes are over 30, we look forward to the NEXT hour.",
       "content": {
         "type": "text",
-        "value": "**[121]**\n\nWhen we pass the 30-minute mark, we count how many minutes are left **until** the next hour.\n\n6:45 means there are 15 minutes left until 7:00. Therefore, it is a [quarter to] seven.\n\n~Quarter past~ would be 6:15."
+        "value": "**[121]**\n\nWhen we pass the 30-minute mark, we count how many minutes are left until the next hour.\n\n6:45 means there are 15 minutes left until 7:00. Therefore, it is a [quarter to] seven.\n\n~Quarter past~ would be 6:15."
       }
     },
     {
@@ -15380,7 +15381,7 @@
       "hint": "We need the structure that means 'to quit an action entirely', not 'to pause'.",
       "content": {
         "type": "text",
-        "value": "**[124]**\n\n**Stop + [Gerund]** means to quit an action entirely (e.g., 'He stopped smoking').\n\n~Stopped to [smoke]~ would mean he paused another action in order to have a cigarette."
+        "value": "**[124]**\n\n**Stop + [Gerund] means to quit an action entirely (e.g., 'He stopped smoking').\n\n~Stopped to [smoke]~ would mean he paused another action in order to have a cigarette."
       }
     },
     {
@@ -15408,7 +15409,7 @@
       "hint": "When referring to a memory of a past event, use the -ing form.",
       "content": {
         "type": "text",
-        "value": "**[124]**\n\n**Remember + [Gerund]** refers to recalling a memory from the past.\n\n~Remember to [meet]~ refers to not forgetting a task or obligation (e.g., 'Remember to lock the door')."
+        "value": "**[124]**\n\n**Remember + [Gerund] refers to recalling a memory from the past.\n\n~Remember to [meet]~ refers to not forgetting a task or obligation (e.g., 'Remember to lock the door')."
       }
     },
     {
@@ -15436,7 +15437,7 @@
       "hint": "In this context, we paused the driving *in order to* eat.",
       "content": {
         "type": "text",
-        "value": "**[124]**\n\n**Stop + [Infinitive]** (to have) means to pause one action in order to do another.\n\n~Stopped having~ would mean we quit the habit of eating lunch entirely."
+        "value": "**[124]**\n\n**Stop + [Infinitive] (to have) means to pause one action in order to do another.\n\n~Stopped having~ would mean we quit the habit of eating lunch entirely."
       }
     },
     {
@@ -15464,7 +15465,7 @@
       "hint": "Which of these verbs is strictly followed by an -ing form?",
       "content": {
         "type": "text",
-        "value": "**[124]**\n\nThe verb **Enjoy** is strictly followed by a [Gerund] ('listening').\n\n~Want~ and ~Decide~ are strictly followed by 'to + infinitive' (e.g., 'want to listen', 'decide to listen')."
+        "value": "**[124]**\n\nThe verb Enjoy is strictly followed by a [Gerund] ('listening').\n\n~Want~ and ~Decide~ are strictly followed by 'to + infinitive' (e.g., 'want to listen', 'decide to listen')."
       }
     },
     {
@@ -15492,7 +15493,7 @@
       "hint": "This verb means 'continue' and requires the -ing form.",
       "content": {
         "type": "text",
-        "value": "**[124]**\n\nThe verb **Keep** (meaning continue) is strictly followed by a [Gerund] ('trying').\n\n~Hope~ and ~Offer~ are strictly followed by 'to + infinitive' (e.g., 'hope to try', 'offer to help')."
+        "value": "**[124]**\n\nThe verb Keep (meaning continue) is strictly followed by a [Gerund] ('trying').\n\n~Hope~ and ~Offer~ are strictly followed by 'to + infinitive' (e.g., 'hope to try', 'offer to help')."
       }
     },
     {
@@ -15520,7 +15521,7 @@
       "hint": "The verb 'suggest' never takes an infinitive.",
       "content": {
         "type": "text",
-        "value": "**[124]**\n\nThe verb **Suggest** is strictly followed by a [Gerund] ('drinking') or a 'that' clause.\n\n~to drink~ is a very common error; 'suggest' is never followed by 'to'."
+        "value": "**[124]**\n\nThe verb Suggest is strictly followed by a [Gerund] ('drinking') or a 'that' clause.\n\n~to drink~ is a very common error; 'suggest' is never followed by 'to'."
       }
     },
     {
@@ -16473,6 +16474,386 @@
       "content": {
         "type": "text",
         "value": "**[148]**\n\nDirect: Where [did] I leave them?\nEmbedded: I can't remember where I [left] them.\n\nWe remove 'did' and change the main verb to the Past Simple form."
+      }
+    },
+    {
+      "cardId": "egac_589",
+      "sentenceParts": {
+        "prefix": "What ",
+        "suffix": " to the database last night?"
+      },
+      "options": [
+        { "text": "happened", "isCorrect": true },
+        { "text": "did happen", "isCorrect": false },
+        { "text": "did you happen", "isCorrect": false }
+      ],
+      "correctAnswer": "What happened to the database last night?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_589.mp3",
+      "hint": "The event is the subject. You don't need 'did' for subject questions.",
+      "content": {
+        "type": "text",
+        "value": "**[160]**\n\n[Happened] follows the recipient logic. The event is the subject, so we don't use the auxiliary 'did' in this subject question."
+      }
+    },
+    {
+      "cardId": "egac_590",
+      "sentenceParts": {
+        "prefix": "The idea never ",
+        "suffix": " to the developers."
+      },
+      "options": [
+        { "text": "occurred", "isCorrect": true },
+        { "text": "did occur", "isCorrect": false },
+        { "text": "occurring", "isCorrect": false }
+      ],
+      "correctAnswer": "The idea never occurred to the developers.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_590.mp3",
+      "hint": "The idea 'hit' the developers. They are the recipients.",
+      "content": {
+        "type": "text",
+        "value": "**[160]**\n\n[Occurred to] is the correct structure. The idea is the 'doer' and the developers receive the thought."
+      }
+    },
+    {
+      "cardId": "egac_591",
+      "sentenceParts": {
+        "prefix": "Does this legacy code ",
+        "suffix": " to your team?"
+      },
+      "options": [
+        { "text": "belong", "isCorrect": true },
+        { "text": "belongs", "isCorrect": false },
+        { "text": "belonging", "isCorrect": false }
+      ],
+      "correctAnswer": "Does this legacy code belong to your team?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_591.mp3",
+      "hint": "Use the base form after the auxiliary 'Does'.",
+      "content": {
+        "type": "text",
+        "value": "**[160]**\n\n[Belong to] indicates ownership where the object (the code) is the subject and the team is the recipient."
+      }
+    },
+    {
+      "cardId": "egac_592",
+      "sentenceParts": {
+        "prefix": "It ",
+        "suffix": " to me that we are missing a dependency."
+      },
+      "options": [
+        { "text": "seems", "isCorrect": true },
+        { "text": "is seeming", "isCorrect": false },
+        { "text": "seem", "isCorrect": false }
+      ],
+      "correctAnswer": "It seems to me that we are missing a dependency.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_592.mp3",
+      "hint": "This verb describes an impression, not a physical action.",
+      "content": {
+        "type": "text",
+        "value": "**[160]**\n\n[Seems to] describes a perception. Like 'happen', it describes a state that reaches the person (me)."
+      }
+    },
+    {
+      "cardId": "egac_593",
+      "sentenceParts": {
+        "prefix": "I finally ",
+        "suffix": " the root cause of the bug."
+      },
+      "options": [
+        { "text": "understand", "isCorrect": true },
+        { "text": "am understanding", "isCorrect": false },
+        { "text": "understanding", "isCorrect": false }
+      ],
+      "correctAnswer": "I finally understand the root cause of the bug.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_593.mp3",
+      "hint": "Understanding is a state of mind, not a continuous process in this context.",
+      "content": {
+        "type": "text",
+        "value": "**[161]**\n\n[Understand] is a state verb. Even if you are in the process of it, English uses the simple present/past, never ~am understanding~."
+      }
+    },
+    {
+      "cardId": "egac_594",
+      "sentenceParts": {
+        "prefix": "She ",
+        "suffix": " a faster laptop for the build process."
+      },
+      "options": [
+        { "text": "needs", "isCorrect": true },
+        { "text": "is needing", "isCorrect": false },
+        { "text": "needing", "isCorrect": false }
+      ],
+      "correctAnswer": "She needs a faster laptop for the build process.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_594.mp3",
+      "hint": "Need describes a requirement, not an action.",
+      "content": {
+        "type": "text",
+        "value": "**[161]**\n\n[Needs] is a state verb. Phrases like ~is needing~ are considered grammatically incorrect in standard English."
+      }
+    },
+    {
+      "cardId": "egac_595",
+      "sentenceParts": {
+        "prefix": "We ",
+        "suffix": " that the server will be stable now."
+      },
+      "options": [
+        { "text": "believe", "isCorrect": true },
+        { "text": "are believing", "isCorrect": false },
+        { "text": "believed", "isCorrect": false }
+      ],
+      "correctAnswer": "We believe that the server will be stable now.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_595.mp3",
+      "hint": "Believing is a mental state.",
+      "content": {
+        "type": "text",
+        "value": "**[161]**\n\n[Believe] is a state verb. Use the simple tense even for current feelings. ~Are believing~ is incorrect."
+      }
+    },
+    {
+      "cardId": "egac_596",
+      "sentenceParts": {
+        "prefix": "That error message ",
+        "suffix": " that the API key is invalid."
+      },
+      "options": [
+        { "text": "means", "isCorrect": true },
+        { "text": "is meaning", "isCorrect": false },
+        { "text": "mean", "isCorrect": false }
+      ],
+      "correctAnswer": "That error message means that the API key is invalid.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_596.mp3",
+      "hint": "A definition or sign is a permanent state.",
+      "content": {
+        "type": "text",
+        "value": "**[161]**\n\n[Means] describes a definition. State verbs like 'mean' do not take the continuous ~-ing~ form."
+      }
+    },
+    {
+      "cardId": "egac_597",
+      "sentenceParts": {
+        "prefix": "He writes clean code better than I ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "do", "isCorrect": true },
+        { "text": "write", "isCorrect": false },
+        { "text": "am", "isCorrect": false }
+      ],
+      "correctAnswer": "He writes clean code better than I do.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_597.mp3",
+      "hint": "Use an auxiliary to avoid repeating the main verb 'write'.",
+      "content": {
+        "type": "text",
+        "value": "**[162]**\n\n[Do] is used as an ellipsis here to avoid saying '...better than I write clean code'."
+      }
+    },
+    {
+      "cardId": "egac_598",
+      "sentenceParts": {
+        "prefix": "I can't attend the stand-up, but my colleague ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "can", "isCorrect": true },
+        { "text": "does", "isCorrect": false },
+        { "text": "is", "isCorrect": false }
+      ],
+      "correctAnswer": "I can't attend the stand-up, but my colleague can.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_598.mp3",
+      "hint": "When the original sentence has a modal, repeat the modal.",
+      "content": {
+        "type": "text",
+        "value": "**[162]**\n\n[Can] is the correct choice because the sentence already uses the modal 'can'. This is more natural than repeating the verb 'attend'."
+      }
+    },
+    {
+      "cardId": "egac_599",
+      "sentenceParts": {
+        "prefix": "The senior devs didn't spot the leak, but the junior ",
+        "suffix": "."
+      },
+      "options": [
+        { "text": "did", "isCorrect": true },
+        { "text": "does", "isCorrect": false },
+        { "text": "spotted", "isCorrect": false }
+      ],
+      "correctAnswer": "The senior devs didn't spot the leak, but the junior did.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_599.mp3",
+      "hint": "Match the tense of the previous clause (past).",
+      "content": {
+        "type": "text",
+        "value": "**[162]**\n\n[Did] replaces the past action spotted. It makes the sentence concise and efficient."
+      }
+    },
+    {
+      "cardId": "egac_600",
+      "sentenceParts": {
+        "prefix": "He should review the PR, and so ",
+        "suffix": " you."
+      },
+      "options": [
+        { "text": "should", "isCorrect": true },
+        { "text": "must", "isCorrect": false },
+        { "text": "do", "isCorrect": false }
+      ],
+      "correctAnswer": "He should review the PR, and so should you.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_600.mp3",
+      "hint": "Repeat the same modal for consistency in ellipsis.",
+      "content": {
+        "type": "text",
+        "value": "**[162]**\n\n[Should] is repeated to confirm the obligation without repeating the entire verb phrase."
+      }
+    },
+    {
+      "cardId": "egac_601",
+      "sentenceParts": {
+        "prefix": "You must use a ",
+        "suffix": " for proper indentation in Python."
+      },
+      "options": [
+        { "text": "tab", "isCorrect": true },
+        { "text": "space", "isCorrect": false },
+        { "text": "newline", "isCorrect": false }
+      ],
+      "correctAnswer": "You must use a tab for proper indentation in Python.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_601.mp3",
+      "hint": "This character (\t) moves the cursor to the next preset stop.",
+      "content": {
+        "type": "text",
+        "value": "**[163]**\n\nA [Tab] is a non-printing character used specifically for structural alignment in source code."
+      }
+    },
+    {
+      "cardId": "egac_602",
+      "sentenceParts": {
+        "prefix": "The script failed because of an invisible ",
+        "suffix": " at the end of the line."
+      },
+      "options": [
+        { "text": "space", "isCorrect": true },
+        { "text": "tab", "isCorrect": false },
+        { "text": "NBSP", "isCorrect": false }
+      ],
+      "correctAnswer": "The script failed because of an invisible space at the end of the line.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_602.mp3",
+      "hint": "The most basic whitespace character (ASCII 32).",
+      "content": {
+        "type": "text",
+        "value": "**[163]**\n\nA trailing [Space] is a common cause of syntax errors or linting failures in strict environments."
+      }
+    },
+    {
+      "cardId": "egac_603",
+      "sentenceParts": {
+        "prefix": "Linux and Windows use different ",
+        "suffix": " characters."
+      },
+      "options": [
+        { "text": "line break", "isCorrect": true },
+        { "text": "space", "isCorrect": false },
+        { "text": "tab", "isCorrect": false }
+      ],
+      "correctAnswer": "Linux and Windows use different line break characters.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_603.mp3",
+      "hint": "Characters like \\n and \\r\\n.",
+      "content": {
+        "type": "text",
+        "value": "**[163]**\n\n[Line break] (LF vs CRLF) differences are why some files appear as a single line when opened in the wrong OS."
+      }
+    },
+    {
+      "cardId": "egac_604",
+      "sentenceParts": {
+        "prefix": "Use an ",
+        "suffix": " to prevent the brand name from splitting across two lines."
+      },
+      "options": [
+        { "text": "NBSP", "isCorrect": true },
+        { "text": "tab", "isCorrect": false },
+        { "text": "newline", "isCorrect": false }
+      ],
+      "correctAnswer": "Use an NBSP to prevent the brand name from splitting across two lines.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_604.mp3",
+      "hint": "It stands for 'Non-Breaking Space'.",
+      "content": {
+        "type": "text",
+        "value": "**[163]**\n\nAn [NBSP] tells the browser or text editor to treat two words as an indivisible unit."
+      }
+    },
+    {
+      "cardId": "egac_605",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " the code, I found a hidden security flaw."
+      },
+      "options": [
+        { "text": "While auditing", "isCorrect": true },
+        { "text": "Upon auditing", "isCorrect": false },
+        { "text": "By audit", "isCorrect": false }
+      ],
+      "correctAnswer": "While auditing the code, I found a hidden security flaw.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_605.mp3",
+      "hint": "The action happened *during* the process of auditing.",
+      "content": {
+        "type": "text",
+        "value": "**[164]**\n\n[While auditing] describes simultaneity. Use [While] because you found the flaw during the task."
+      }
+    },
+    {
+      "cardId": "egac_606",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " the 'Deploy' button, the automation script starts."
+      },
+      "options": [
+        { "text": "Upon clicking", "isCorrect": true },
+        { "text": "While clicking", "isCorrect": false },
+        { "text": "After click", "isCorrect": false }
+      ],
+      "correctAnswer": "Upon clicking the 'Deploy' button, the automation script starts.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_606.mp3",
+      "hint": "The action happens immediately *as a result* of the click.",
+      "content": {
+        "type": "text",
+        "value": "**[164]**\n\n[Upon clicking] indicates immediacy and causality. The script starts the moment the button is pressed."
+      }
+    },
+    {
+      "cardId": "egac_607",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " the production logs, the DevOps team identified the crash."
+      },
+      "options": [
+        { "text": "While reviewing", "isCorrect": true },
+        { "text": "Upon review", "isCorrect": false },
+        { "text": "By review", "isCorrect": false }
+      ],
+      "correctAnswer": "While reviewing the production logs, the DevOps team identified the crash.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_607.mp3",
+      "hint": "They made the discovery during the process of review.",
+      "content": {
+        "type": "text",
+        "value": "**[164]**\n\n[While reviewing] is used here to show that the identification happened in the middle of the review process."
+      }
+    },
+    {
+      "cardId": "egac_608",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " the server, all temporary files are wiped."
+      },
+      "options": [
+        { "text": "Upon restarting", "isCorrect": true },
+        { "text": "While restarting", "isCorrect": false },
+        { "text": "Before restart", "isCorrect": false }
+      ],
+      "correctAnswer": "Upon restarting the server, all temporary files are wiped.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_608.mp3",
+      "hint": "The wiping is a direct consequence of the restart event.",
+      "content": {
+        "type": "text",
+        "value": "**[164]**\n\n[Upon restarting] shows the sequence and result. As soon as the restart begins/finishes, the wipe occurs."
       }
     }
   ]
