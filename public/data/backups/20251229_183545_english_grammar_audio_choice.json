@@ -4,7 +4,7 @@
   "description": "Master key English grammar concepts by completing the sentences and listening to the correct pronunciation. Explanations are revealed after your choice.",
   "deckType": "audioChoice",
   "isAiGenerated": false,
-  "hint": "Developer Note: The 'hint' field within individual cards is strictly displayed post-answer. It must not contain information required to solve the exercise. Each card must be self-sufficient and clear enough to be completed independently. Use the 'hint' property exclusively for supplementary pedagogical value or context after the user's choice has been made.",
+  "hint": "Developer Note: The 'hint' field within individual cards is strictly displayed post-answer. It must not contain information required to solve the exercise. Each card must be self-sufficient and clear enough to be completed independently. Use the 'hint' property exclusively for supplementary pedagogical value or context after the user's choice has been made.", 
   "cards": [
     {
       "cardId": "egac_001",
@@ -1307,15 +1307,15 @@
       },
       "options": [
         {
-          "text": " 've got",
+          "text": "'ve got",
           "isCorrect": true
         },
         {
-          "text": " am got",
+          "text": "am got",
           "isCorrect": false
         },
         {
-          "text": " got",
+          "text": "got",
           "isCorrect": false
         }
       ],
@@ -3089,7 +3089,7 @@
       "hint": "'Yet' is a time marker typically used with the present perfect in negative sentences and questions.",
       "content": {
         "type": "text",
-        "value": "**[5]**\n\nThe [Present Perfect Simple] negative (haven't + p.p.) is used with [yet] to indicate that an expected action has not been completed up to the present moment.\n\n~didn't finish~ (Past Simple) refers to a specific, finished time in the past.\n~don't finish~ is present simple and doesn't fit with 'yet' in this context."
+        "value": "**[24]**\n\nThe [Present Perfect Simple] negative (haven't + p.p.) is used with [yet] to indicate that an expected action has not been completed up to the present moment.\n\n~didn't finish~ (Past Simple) refers to a specific, finished time in the past.\n~don't finish~ is present simple and doesn't fit with 'yet' in this context."
       }
     },
     {
@@ -4713,7 +4713,7 @@
       "hint": "In a restaurant, 'to wait on' someone means to serve them.",
       "content": {
         "type": "text",
-        "value": "You use [wait] without a preposition when the object is understood from context. The focus is on the duration.\n\n~waiting for~ needs an object (e.g., 'waiting for me').\n~expecting~ means to anticipate and is less common in this specific greeting."
+        "value": "**[79]**\n\nYou use [wait] without a preposition when the object is understood from context. The focus is on the duration.\n\n~waiting for~ needs an object (e.g., 'waiting for me').\n~expecting~ means to anticipate and is less common in this specific greeting."
       }
     },
     {
@@ -4937,7 +4937,7 @@
       "hint": "This structure is a very common way to express a strong opinion about an experience.",
       "content": {
         "type": "text",
-        "value": "[Ever] is used after a superlative (like 'the best') to emphasize it's the most extreme example in one's life experience.\n\n~never~ would make the sentence illogical.\n~always~ doesn't fit the grammatical structure."
+        "value": "**[27]**\n\n[Ever] is used after a superlative (like 'the best') to emphasize it's the most extreme example in one's life experience.\n\n~never~ would make the sentence illogical.\n~always~ doesn't fit the grammatical structure."
       }
     },
     {
@@ -5848,20 +5848,20 @@
           "isCorrect": true
         },
         {
-          "text": "awkwardly",
+          "text": "weird",
           "isCorrect": false
         },
         {
-          "text": "awkwards",
+          "text": "off",
           "isCorrect": false
         }
       ],
       "correctAnswer": "The meeting was really awkward; no one knew what to say.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_209.mp3",
-      "hint": "We need an adjective to describe the meeting after the verb 'to be'.",
+      "hint": "You might call a strange-looking building 'weird', but a conversation with long silences is 'awkward'.",
       "content": {
         "type": "text",
-        "value": "[Awkward] is the correct adjective form to describe a social situation that is uncomfortable.\n\n~Awkwardly~ is an adverb; it describes *how* an action is done, not the state of a noun.\n~Awkwards~ is an incorrect form; adjectives in English do not have plural forms."
+        "value": "[Awkward] specifically describes a situation that is socially uncomfortable or embarrassing.\n\n~Weird~ means bizarre or strange, which is less specific than the social tension implied here.\n~Off~ means something feels wrong, but 'awkward' is better for social situations."
       }
     },
     {
@@ -6225,7 +6225,7 @@
       "hint": "If no specific group is mentioned, you say 'Most friends...' without 'of'.",
       "content": {
         "type": "text",
-        "value": "**[166]**\n\n[Most of] is a quantifier used before a specific group (identified by 'my', 'the', 'these', etc.).\n\n~Mostly~ is an adverb meaning 'mainly' and wouldn't fit grammatically before 'my friends'.\n~The most of~ is an incorrect construction."
+        "value": "**[29]**\n\n[Most of] is a quantifier used before a specific group (identified by 'my', 'the', 'these', etc.).\n\n~Mostly~ is an adverb meaning 'mainly' and wouldn't fit grammatically before 'my friends'.\n~The most of~ is an incorrect construction."
       }
     },
     {
@@ -6869,7 +6869,7 @@
       "hint": "This system differs from many others, where 'college' exclusively refers to higher education.",
       "content": {
         "type": "text",
-        "value": "**[133]**\n\n[High school] is the correct term for secondary education (grades 9-12) in the U.S. education system.\n\n~College~ and ~University~ refer to higher education, which takes place after high school."
+        "value": "[High school] is the correct term for secondary education (grades 9-12) in the U.S. education system.\n\n~College~ and ~University~ refer to higher education, which takes place after high school."
       }
     },
     {
@@ -8745,7 +8745,7 @@
       "hint": "This is a very common filler in spoken English, used to make speech sound more natural.",
       "content": {
         "type": "text",
-        "value": "**[147]**\n\n[I mean] is a discourse marker used to explain, clarify, or correct what was just said.\n\n~You know~ is a filler used to check for understanding or to fill a pause.\n~For example~ is used to introduce a specific example, not a clarification."
+        "value": "[I mean] is a discourse marker used to explain, clarify, or correct what was just said.\n\n~You know~ is a filler used to check for understanding or to fill a pause.\n~For example~ is used to introduce a specific example, not a clarification."
       }
     },
     {
@@ -9641,7 +9641,7 @@
       "hint": "This phrasal verb is very common in professional settings for talking about managing tasks.",
       "content": {
         "type": "text",
-        "value": "[Deal with] is the correct phrasal verb for managing a problem, task, or person.\n\n~Make with~ is not a phrasal verb.\n~Handle on~ is incorrect; 'handle' is a verb that doesn't need a preposition here ('handle it')."
+        "value": "**[18]**\n\n[Deal with] is the correct phrasal verb for managing a problem, task, or person.\n\n~Make with~ is not a phrasal verb.\n~Handle on~ is incorrect; 'handle' is a verb that doesn't need a preposition here ('handle it')."
       }
     },
     {
@@ -9781,7 +9781,7 @@
       "hint": "'Work' is about the activity, while 'job' is about the position. 'Career' is about the long-term journey.",
       "content": {
         "type": "text",
-        "value": "**[139]**\n\n[Work] is an uncountable noun that refers to the general tasks you have to do.\n\n~Job~ is a countable noun for a specific position of employment ('I have a job'). You cannot have 'much job'.\n~Career~ refers to your entire professional life over many years."
+        "value": "**[29]**\n\n[Work] is an uncountable noun that refers to the general tasks you have to do.\n\n~Job~ is a countable noun for a specific position of employment ('I have a job'). You cannot have 'much job'.\n~Career~ refers to your entire professional life over many years."
       }
     },
     {
@@ -10285,7 +10285,7 @@
       "hint": "This is a reduced relative clause: '(The pasta that is) Made in Italy...'.",
       "content": {
         "type": "text",
-        "value": "The past participle clause [Made in Italy] functions as an adjective modifying 'this pasta'. It's a concise way of saying 'Because it is made in Italy...'.\n\n~Making~ would be an active clause ('The pasta is making something').\n~Having made~ is a perfect participle that doesn't fit the meaning."
+        "value": "**[76]**\n\nThe past participle clause [Made in Italy] functions as an adjective modifying 'this pasta'. It's a concise way of saying 'Because it is made in Italy...'.\n\n~Making~ would be an active clause ('The pasta is making something').\n~Having made~ is a perfect participle that doesn't fit the meaning."
       }
     },
     {
@@ -10300,20 +10300,20 @@
           "isCorrect": true
         },
         {
-          "text": "figured out",
+          "text": "come up with",
           "isCorrect": false
         },
         {
-          "text": "figuring out",
+          "text": "work out",
           "isCorrect": false
         }
       ],
       "correctAnswer": "We need to figure out a way to solve this problem before the deadline.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_368.mp3",
-      "hint": "'To' is usually followed by the base form of the verb.",
+      "hint": "'Come up with' focuses on creating the idea, while 'figure out' focuses on solving the puzzle.",
       "content": {
         "type": "text",
-        "value": "[Figure out] is the base form required after the infinitive marker 'to'. It implies both understanding the problem and finding a solution.\n\n~Figured out~ is the past tense form, which is grammatically incorrect after 'to'.\n~Figuring out~ is the gerund form, which cannot follow 'need to' in this context."
+        "value": "**[16]**\n\n[Figure out] is the best choice here, as it implies both understanding the problem and finding a solution.\n\n~Come up with~ is very similar and also correct ('come up with a way'), focusing more on inventing the idea.\n~Work out~ means to resolve successfully, which is the desired result, but 'figure out' better describes the mental process."
       }
     },
     {
@@ -11517,7 +11517,7 @@
       "hint": "'Pushing changes' means uploading your code modifications to a central repository.",
       "content": {
         "type": "text",
-        "value": "**[165]**\n\nThe [Future Perfect] (will have + p.p.) is used for an action that will be finished before another future event. You must push changes before the code freeze.\n\n~Will push~ implies the action will happen at that future time, not before it.\n~Am pushing~ is for a fixed arrangement."
+        "value": "The [Future Perfect] (will have + p.p.) is used for an action that will be finished before another future event. You must push changes before the code freeze.\n\n~Will push~ implies the action will happen at that future time, not before it.\n~Am pushing~ is for a fixed arrangement."
       }
     },
     {
@@ -13981,7 +13981,7 @@
       "hint": "Look at the word *after* the gap ('we'). Is it a subject or a verb?",
       "content": {
         "type": "text",
-        "value": "**[104]**\n\nThe relative pronoun ('that' or 'which') can be omitted because the word immediately following it is a subject ('we').\n\n~who~ is a common error; it is used for people, not objects.\n~what~ is not used as a relative pronoun in this way."
+        "value": "**[104]**\n\nThe relative pronoun ('that' or 'which') can be omitted because the word immediately following it is a subject ('we').\n\nNote: If the blank option is not being recognized by the application, it may be a technical limitation in how the software processes empty strings as valid inputs.\n\n~who~ is a common error; it is used for people, not objects.\n~what~ is not used as a relative pronoun in this way."
       }
     },
     {
@@ -16483,18 +16483,9 @@
         "suffix": " to the database last night?"
       },
       "options": [
-        {
-          "text": "happened",
-          "isCorrect": true
-        },
-        {
-          "text": "did happen",
-          "isCorrect": false
-        },
-        {
-          "text": "did you happen",
-          "isCorrect": false
-        }
+        { "text": "happened", "isCorrect": true },
+        { "text": "did happen", "isCorrect": false },
+        { "text": "did you happen", "isCorrect": false }
       ],
       "correctAnswer": "What happened to the database last night?",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_589.mp3",
@@ -16511,18 +16502,9 @@
         "suffix": " to the developers."
       },
       "options": [
-        {
-          "text": "occurred",
-          "isCorrect": true
-        },
-        {
-          "text": "did occur",
-          "isCorrect": false
-        },
-        {
-          "text": "occurring",
-          "isCorrect": false
-        }
+        { "text": "occurred", "isCorrect": true },
+        { "text": "did occur", "isCorrect": false },
+        { "text": "occurring", "isCorrect": false }
       ],
       "correctAnswer": "The idea never occurred to the developers.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_590.mp3",
@@ -16539,18 +16521,9 @@
         "suffix": " to your team?"
       },
       "options": [
-        {
-          "text": "belong",
-          "isCorrect": true
-        },
-        {
-          "text": "belongs",
-          "isCorrect": false
-        },
-        {
-          "text": "belonging",
-          "isCorrect": false
-        }
+        { "text": "belong", "isCorrect": true },
+        { "text": "belongs", "isCorrect": false },
+        { "text": "belonging", "isCorrect": false }
       ],
       "correctAnswer": "Does this legacy code belong to your team?",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_591.mp3",
@@ -16567,18 +16540,9 @@
         "suffix": " to me that we are missing a dependency."
       },
       "options": [
-        {
-          "text": "seems",
-          "isCorrect": true
-        },
-        {
-          "text": "is seeming",
-          "isCorrect": false
-        },
-        {
-          "text": "seem",
-          "isCorrect": false
-        }
+        { "text": "seems", "isCorrect": true },
+        { "text": "is seeming", "isCorrect": false },
+        { "text": "seem", "isCorrect": false }
       ],
       "correctAnswer": "It seems to me that we are missing a dependency.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_592.mp3",
@@ -16595,18 +16559,9 @@
         "suffix": " the root cause of the bug."
       },
       "options": [
-        {
-          "text": "understand",
-          "isCorrect": true
-        },
-        {
-          "text": "am understanding",
-          "isCorrect": false
-        },
-        {
-          "text": "understanding",
-          "isCorrect": false
-        }
+        { "text": "understand", "isCorrect": true },
+        { "text": "am understanding", "isCorrect": false },
+        { "text": "understanding", "isCorrect": false }
       ],
       "correctAnswer": "I finally understand the root cause of the bug.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_593.mp3",
@@ -16623,18 +16578,9 @@
         "suffix": " a faster laptop for the build process."
       },
       "options": [
-        {
-          "text": "needs",
-          "isCorrect": true
-        },
-        {
-          "text": "is needing",
-          "isCorrect": false
-        },
-        {
-          "text": "needing",
-          "isCorrect": false
-        }
+        { "text": "needs", "isCorrect": true },
+        { "text": "is needing", "isCorrect": false },
+        { "text": "needing", "isCorrect": false }
       ],
       "correctAnswer": "She needs a faster laptop for the build process.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_594.mp3",
@@ -16651,18 +16597,9 @@
         "suffix": " that the server will be stable now."
       },
       "options": [
-        {
-          "text": "believe",
-          "isCorrect": true
-        },
-        {
-          "text": "are believing",
-          "isCorrect": false
-        },
-        {
-          "text": "believed",
-          "isCorrect": false
-        }
+        { "text": "believe", "isCorrect": true },
+        { "text": "are believing", "isCorrect": false },
+        { "text": "believed", "isCorrect": false }
       ],
       "correctAnswer": "We believe that the server will be stable now.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_595.mp3",
@@ -16679,18 +16616,9 @@
         "suffix": " that the API key is invalid."
       },
       "options": [
-        {
-          "text": "means",
-          "isCorrect": true
-        },
-        {
-          "text": "is meaning",
-          "isCorrect": false
-        },
-        {
-          "text": "mean",
-          "isCorrect": false
-        }
+        { "text": "means", "isCorrect": true },
+        { "text": "is meaning", "isCorrect": false },
+        { "text": "mean", "isCorrect": false }
       ],
       "correctAnswer": "That error message means that the API key is invalid.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_596.mp3",
@@ -16707,18 +16635,9 @@
         "suffix": "."
       },
       "options": [
-        {
-          "text": "do",
-          "isCorrect": true
-        },
-        {
-          "text": "write",
-          "isCorrect": false
-        },
-        {
-          "text": "am",
-          "isCorrect": false
-        }
+        { "text": "do", "isCorrect": true },
+        { "text": "write", "isCorrect": false },
+        { "text": "am", "isCorrect": false }
       ],
       "correctAnswer": "He writes clean code better than I do.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_597.mp3",
@@ -16735,18 +16654,9 @@
         "suffix": "."
       },
       "options": [
-        {
-          "text": "can",
-          "isCorrect": true
-        },
-        {
-          "text": "does",
-          "isCorrect": false
-        },
-        {
-          "text": "is",
-          "isCorrect": false
-        }
+        { "text": "can", "isCorrect": true },
+        { "text": "does", "isCorrect": false },
+        { "text": "is", "isCorrect": false }
       ],
       "correctAnswer": "I can't attend the stand-up, but my colleague can.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_598.mp3",
@@ -16763,18 +16673,9 @@
         "suffix": "."
       },
       "options": [
-        {
-          "text": "did",
-          "isCorrect": true
-        },
-        {
-          "text": "does",
-          "isCorrect": false
-        },
-        {
-          "text": "spotted",
-          "isCorrect": false
-        }
+        { "text": "did", "isCorrect": true },
+        { "text": "does", "isCorrect": false },
+        { "text": "spotted", "isCorrect": false }
       ],
       "correctAnswer": "The senior devs didn't spot the leak, but the junior did.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_599.mp3",
@@ -16791,18 +16692,9 @@
         "suffix": " you."
       },
       "options": [
-        {
-          "text": "should",
-          "isCorrect": true
-        },
-        {
-          "text": "must",
-          "isCorrect": false
-        },
-        {
-          "text": "do",
-          "isCorrect": false
-        }
+        { "text": "should", "isCorrect": true },
+        { "text": "must", "isCorrect": false },
+        { "text": "do", "isCorrect": false }
       ],
       "correctAnswer": "He should review the PR, and so should you.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_600.mp3",
@@ -16819,18 +16711,9 @@
         "suffix": " for proper indentation in Python."
       },
       "options": [
-        {
-          "text": "tab",
-          "isCorrect": true
-        },
-        {
-          "text": "space",
-          "isCorrect": false
-        },
-        {
-          "text": "newline",
-          "isCorrect": false
-        }
+        { "text": "tab", "isCorrect": true },
+        { "text": "space", "isCorrect": false },
+        { "text": "newline", "isCorrect": false }
       ],
       "correctAnswer": "You must use a tab for proper indentation in Python.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_601.mp3",
@@ -16847,18 +16730,9 @@
         "suffix": " at the end of the line."
       },
       "options": [
-        {
-          "text": "space",
-          "isCorrect": true
-        },
-        {
-          "text": "tab",
-          "isCorrect": false
-        },
-        {
-          "text": "NBSP",
-          "isCorrect": false
-        }
+        { "text": "space", "isCorrect": true },
+        { "text": "tab", "isCorrect": false },
+        { "text": "NBSP", "isCorrect": false }
       ],
       "correctAnswer": "The script failed because of an invisible space at the end of the line.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_602.mp3",
@@ -16875,18 +16749,9 @@
         "suffix": " characters."
       },
       "options": [
-        {
-          "text": "line break",
-          "isCorrect": true
-        },
-        {
-          "text": "space",
-          "isCorrect": false
-        },
-        {
-          "text": "tab",
-          "isCorrect": false
-        }
+        { "text": "line break", "isCorrect": true },
+        { "text": "space", "isCorrect": false },
+        { "text": "tab", "isCorrect": false }
       ],
       "correctAnswer": "Linux and Windows use different line break characters.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_603.mp3",
@@ -16903,18 +16768,9 @@
         "suffix": " to prevent the brand name from splitting across two lines."
       },
       "options": [
-        {
-          "text": "NBSP",
-          "isCorrect": true
-        },
-        {
-          "text": "tab",
-          "isCorrect": false
-        },
-        {
-          "text": "newline",
-          "isCorrect": false
-        }
+        { "text": "NBSP", "isCorrect": true },
+        { "text": "tab", "isCorrect": false },
+        { "text": "newline", "isCorrect": false }
       ],
       "correctAnswer": "Use an NBSP to prevent the brand name from splitting across two lines.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_604.mp3",
@@ -16931,18 +16787,9 @@
         "suffix": " the code, I found a hidden security flaw."
       },
       "options": [
-        {
-          "text": "While auditing",
-          "isCorrect": true
-        },
-        {
-          "text": "Upon auditing",
-          "isCorrect": false
-        },
-        {
-          "text": "By audit",
-          "isCorrect": false
-        }
+        { "text": "While auditing", "isCorrect": true },
+        { "text": "Upon auditing", "isCorrect": false },
+        { "text": "By audit", "isCorrect": false }
       ],
       "correctAnswer": "While auditing the code, I found a hidden security flaw.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_605.mp3",
@@ -16959,18 +16806,9 @@
         "suffix": " the 'Deploy' button, the automation script starts."
       },
       "options": [
-        {
-          "text": "Upon clicking",
-          "isCorrect": true
-        },
-        {
-          "text": "While clicking",
-          "isCorrect": false
-        },
-        {
-          "text": "After click",
-          "isCorrect": false
-        }
+        { "text": "Upon clicking", "isCorrect": true },
+        { "text": "While clicking", "isCorrect": false },
+        { "text": "After click", "isCorrect": false }
       ],
       "correctAnswer": "Upon clicking the 'Deploy' button, the automation script starts.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_606.mp3",
@@ -16987,18 +16825,9 @@
         "suffix": " the production logs, the DevOps team identified the crash."
       },
       "options": [
-        {
-          "text": "While reviewing",
-          "isCorrect": true
-        },
-        {
-          "text": "Upon review",
-          "isCorrect": false
-        },
-        {
-          "text": "By review",
-          "isCorrect": false
-        }
+        { "text": "While reviewing", "isCorrect": true },
+        { "text": "Upon review", "isCorrect": false },
+        { "text": "By review", "isCorrect": false }
       ],
       "correctAnswer": "While reviewing the production logs, the DevOps team identified the crash.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_607.mp3",
@@ -17015,18 +16844,9 @@
         "suffix": " the server, all temporary files are wiped."
       },
       "options": [
-        {
-          "text": "Upon restarting",
-          "isCorrect": true
-        },
-        {
-          "text": "While restarting",
-          "isCorrect": false
-        },
-        {
-          "text": "Before restart",
-          "isCorrect": false
-        }
+        { "text": "Upon restarting", "isCorrect": true },
+        { "text": "While restarting", "isCorrect": false },
+        { "text": "Before restart", "isCorrect": false }
       ],
       "correctAnswer": "Upon restarting the server, all temporary files are wiped.",
       "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_608.mp3",
