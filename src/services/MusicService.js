@@ -15,10 +15,10 @@ class MusicService {
             { name: "Liszt - Consolation No. 3", src: "public/assets/audio/music/Liszt - Consolation No. 3.mp3" },
             { name: "Liszt - Liebestraum No. 3", src: "public/assets/audio/music/Liszt - Liebestraum No. 3.mp3" },
             { name: "Liszt - Un Sospiro", src: "public/assets/audio/music/Liszt - Un Sospiro.mp3" },
-            { name: "Mozart - Twinkle Twinkle Little Star", src: "public/assets/audio/music/Mozart - Twinkle Twinkle Little Star .mp3" },
+            /* { name: "Mozart - Twinkle Twinkle Little Star", src: "public/assets/audio/music/Mozart - Twinkle Twinkle Little Star .mp3" }, */
             { name: "Ravel - Pavane for a Dead Princess", src: "public/assets/audio/music/Ravel - Pavane for a Dead Princess (Pavane pour une infante défunte).mp3" },
             { name: "Schubert - Serenade (arr. Liszt)", src: "public/assets/audio/music/Schubert - Serenade (arr. Liszt).mp3" },
-            { name: "Tchaikovsky - Dance of the Sugar Plum Fairy", src: "public/assets/audio/music/Tchaikovsky - Dance of the Sugar Plum Fairy.mp3" },
+           /*  { name: "Tchaikovsky - Dance of the Sugar Plum Fairy", src: "public/assets/audio/music/Tchaikovsky - Dance of the Sugar Plum Fairy.mp3" }, */
             { name: "Tchaikovsky - Waltz of the Flowers", src: "public/assets/audio/music/Tchaikovsky - Waltz of the Flowers (The Nutcracker Suite).mp3" },
             { name: "Johann Sebastian Bach - Aria Da Capo", src: "public/assets/audio/music/Johann Sebastian Bach - Aria Da Capo.mp3" },
             { name: "Black Desert -Serendia - Alejandro Farm", src: "public/assets/audio/music/Black Desert -Serendia - Alejandro Farm.mp3" },
@@ -34,7 +34,9 @@ class MusicService {
             { name: "Death Note chill OST", src: "public/assets/audio/music/Death Note chill  OST.mp3" },
             { name: "Legend of the Martial Artist", src: "public/assets/audio/music/Legend of the Martial Artist.mp3" },
             { name: "Mystic Land", src: "public/assets/audio/music/Mystic Land.mp3" },
-            { name: "Training Ost", src: "public/assets/audio/music/Training Ost.mp3" }
+            { name: "Training Ost", src: "public/assets/audio/music/Training Ost.mp3" },
+            { name: "Kingdom Of Predators", src: "public/assets/audio/music/Kingdom Of Predators.mp3" }
+
         ];
         console.log(`VERIFY: MusicService initialized. Playlist loaded with ${this.playlist.length} tracks.`); 
         // Start with a random track index instead of always 0
