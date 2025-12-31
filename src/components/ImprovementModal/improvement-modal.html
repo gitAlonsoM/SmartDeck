@@ -9,38 +9,33 @@
       <form id="improvement-form">
         <div class="space-y-4">
           <div id="reasons-container" class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-
-
-
             
-            
-            <label data-reason-for="all" class="flex items-center p-2 border rounded-md dark:border-gray-600 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 hidden">
+            <label data-reason-for="all" class="flex items-center p-2 border rounded-md bg-white dark:bg-gray-800 dark:border-gray-600 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 hidden">
               <input type="checkbox" name="improvement_reason" value="clarify_question" class="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
               <span class="ml-2 text-sm text-gray-700 dark:text-gray-300">Clarify Question</span>
             </label>
-            <label data-reason-for="all" class="flex items-center p-2 border rounded-md dark:border-gray-600 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 hidden">
+            <label data-reason-for="all" class="flex items-center p-2 border rounded-md bg-white dark:bg-gray-800 dark:border-gray-600 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 hidden">
                 <input type="checkbox" name="improvement_reason" value="incorrect_answer" class="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
                 <span class="ml-2 text-sm text-gray-700 dark:text-gray-300">Incorrect Answer</span>
             </label>
             
-            <label data-reason-for="quiz" class="flex items-center p-2 border rounded-md dark:border-gray-600 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 hidden">
+            <label data-reason-for="quiz" class="flex items-center p-2 border rounded-md bg-white dark:bg-gray-800 dark:border-gray-600 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 hidden">
               <input type="checkbox" name="improvement_reason" value="improve_hint" class="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
               <span class="ml-2 text-sm text-gray-700 dark:text-gray-300">Improve Hint</span>
             </label>
-            <label data-reason-for="quiz" class="flex items-center p-2 border rounded-md dark:border-gray-600 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 hidden">
+            <label data-reason-for="quiz" class="flex items-center p-2 border rounded-md bg-white dark:bg-gray-800 dark:border-gray-600 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 hidden">
                 <input type="checkbox" name="improvement_reason" value="improve_options" class="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
                 <span class="ml-2 text-sm text-gray-700 dark:text-gray-300">Improve Options</span>
             </label>
 
-            <label data-reason-for="flippable" class="flex items-center p-2 border rounded-md dark:border-gray-600 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 hidden">
+            <label data-reason-for="flippable" class="flex items-center p-2 border rounded-md bg-white dark:bg-gray-800 dark:border-gray-600 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 hidden">
                 <input type="checkbox" name="improvement_reason" value="improve_visual" class="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
                 <span class="ml-2 text-sm text-gray-700 dark:text-gray-300">Improve Visual</span>
             </label>
-            <label data-reason-for="flippable" class="flex items-center p-2 border rounded-md dark:border-gray-600 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 hidden">
+            <label data-reason-for="flippable" class="flex items-center p-2 border rounded-md bg-white dark:bg-gray-800 dark:border-gray-600 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 hidden">
                 <input type="checkbox" name="improvement_reason" value="add_answer" class="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
                 <span class="ml-2 text-sm text-gray-700 dark:text-gray-300">Add New Answer</span>
             </label>
-
           </div>
 
           <div>
@@ -56,8 +51,12 @@
 
         <div class="mt-8 flex justify-between items-center">
             <div>
-                <button type="button" id="improvement-modal-remove-btn" class="px-4 py-2 text-sm text-red-600 dark:text-red-400 hover:underline hidden">Remove from List</button>
-            </div>
+
+              <button type="button" id="improvement-modal-remove-btn" title="Remove from list"
+                    class="p-2.5 text-sm font-medium text-red-600 dark:text-red-400 bg-red-100 dark:bg-red-900 border border-red-200 dark:border-red-800 rounded-md hover:bg-red-600 hover:text-white dark:hover:bg-red-600 dark:hover:text-white transition-all duration-200 hidden">
+                    <i class="fa-solid fa-trash-can"></i>
+                </button>
+              </div>
             <div class="flex gap-4">
                 <button type="button" id="improvement-modal-cancel-btn" class="px-6 py-2 bg-gray-200 text-gray-800 dark:bg-gray-600 dark:text-gray-200 rounded-md hover:bg-gray-300 dark:hover:bg-gray-500">Cancel</button>
                 <button type="submit" id="improvement-modal-save-btn" class="px-6 py-2 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700">Save</button>
