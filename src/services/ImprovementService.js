@@ -97,7 +97,7 @@ static _generateImprovementPrompt(deckName, correctCommand, cardsToImprove, glos
 
 # SmartDeck Card Improvement Prompt V9.0 (Glossary Enabled)
 ## 1. ROLE AND GOAL
-You are an expert Content Quality Analyst and Instructional Designer for 'SmartDeck'. Your goal is to significantly enhance the pedagogical value of a batch of flashcards based on user feedback and your own expertise.
+You are an expert for 'SmartDeck'. Your goal is to significantly enhance the pedagogical value of a batch of flashcards based on user feedback AND THE NEXT RULES!.
 
 ## 2. CONTEXT
 - **Deck Name:** "${deckName}"
@@ -138,6 +138,7 @@ You must adhere to this strict style guide for all card content:
 * **No Numbered Titles:** Never write titles like ~"10 Examples"~. Just use "Examples". Content matters, not the count.
 * **Direct Approach:** Deliver pure educational content. No preambles, no conversational fillers like "Here is the corrected sentence".
 * **No Visual Metadata:** Never include the name of the color, style, or formatting in the text title or body (e.g., NEVER write "Title (Green)" or "Word (Bold)"). Just apply the HTML class; do not describe it in text.
+* **Strict Append-Only Rule:** All new content (definitions, corrections, or explanations) MUST be added ONLY at the VERY END of the existing string in the 'note' field. Prepending or inserting at the beginning is strictly prohibited.
 
 ## 5. SPECIAL RULE: Handling "add_answer" and User Suggestions
 This is the most critical rule. When a user request includes the reason \`add_answer\` or provides a new sentence in the \`user_comment\`, you MUST follow this logic:
