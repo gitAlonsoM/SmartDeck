@@ -743,6 +743,86 @@
         }
       ],
       "note": "[Fields] are the specific attributes within a [Record]."
+    },
+    {
+      "cardId": "dummy_036",
+      "cardType": "flippable",
+      "sideA": "Esto está fuera del alcance de mi trabajo.",
+      "sideB": [
+        {
+          "text": "This is out of the scope of my work.",
+          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_0.mp3"
+        },
+        {
+          "text": "This is outside my scope of work.",
+          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_1.mp3"
+        },
+        {
+          "text": "This falls outside the scope of my job.",
+          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_2.mp3"
+        }
+      ],
+      "note": "In professional contexts, [scope] refers to the boundaries of a project or role."
+    },
+    {
+      "cardId": "dummy_037",
+      "cardType": "flippable",
+      "sideA": "El alcance del problema es enorme.",
+      "sideB": [
+        {
+          "text": "The scope of the problem is huge.",
+          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_0.mp3"
+        },
+        {
+          "text": "The scale of the issue is massive.",
+          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_1.mp3"
+        },
+        {
+          "text": "The magnitude of the problem is enormous.",
+          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_2.mp3"
+        }
+      ],
+      "note": "[Scope] can also describe the extent or size of a technical challenge."
+    },
+    {
+      "cardId": "dummy_038",
+      "cardType": "flippable",
+      "sideA": "¿Esto entra dentro del alcance del proyecto?",
+      "sideB": [
+        {
+          "text": "Is this within the project scope?",
+          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_0.mp3"
+        },
+        {
+          "text": "Does this fall under the project scope?",
+          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_1.mp3"
+        },
+        {
+          "text": "Is this in scope for the project?",
+          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_2.mp3"
+        }
+      ],
+      "note": "Use [in scope] or [within scope] to confirm if a task belongs to the current plan."
+    },
+    {
+      "cardId": "dummy_039",
+      "cardType": "flippable",
+      "sideA": "Arrastra el archivo hacia la carpeta.",
+      "sideB": [
+        {
+          "text": "Drag the file to the folder.",
+          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_0.mp3"
+        },
+        {
+          "text": "Drag the file into the folder.",
+          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_1.mp3"
+        },
+        {
+          "text": "Drag and drop the file into the folder.",
+          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_2.mp3"
+        }
+      ],
+      "note": "When moving items in a UI, use [drag to] for destination or [drag into] for containment."
     }
   ]
 }

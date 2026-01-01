@@ -1,7 +1,7 @@
 {
   "id": "english_grammar_audio_choice",
   "name": "English General Grammar - Select",
-  "description": "Master key English grammar concepts by completing the sentences and listening to the correct pronunciation. Explanations are revealed after your choice.",
+  "description": "Master key English grammar concepts by completing the sentences and listening to the correct pronunciation.",
   "deckType": "audioChoice",
   "isAiGenerated": false,
   "hint": "Developer Note: The 'hint' field within individual cards is strictly displayed post-answer. It must not contain information required to solve the exercise. Each card must be self-sufficient and clear enough to be completed independently. Use the 'hint' property exclusively for supplementary pedagogical value or context after the user's choice has been made.",
@@ -12077,7 +12077,7 @@
       "hint": "The subject of the sentence determines whether to use 'do' or 'does'.",
       "content": {
         "type": "text",
-        "value": "**[51]**\n\nIn questions, the auxiliary verb must agree with the subject. The [complete subject] here is 'this new software', which is singular (it). Therefore, we use [Does].\n\n~Do~ is used for plural subjects (they) or for 'I'/'you'/'we'.\n~Is~ is the verb 'to be' and cannot be used as an auxiliary for the main verb 'work'."
+        "value": "**[50]**\n\n**[3]**\n\nIn questions, the auxiliary verb must agree with the subject. The [complete subject] here is 'this new software', which is singular (it). Therefore, we use [Does].\n\n~Do~ is used for plural subjects (they) or for 'I'/'you'/'we'.\n~Is~ is the verb 'to be' and cannot be used as an auxiliary for the main verb 'work'."
       }
     },
     {
@@ -12105,7 +12105,7 @@
       "hint": "Identify the full subject of the sentence first. Is it singular or plural?",
       "content": {
         "type": "text",
-        "value": "**[51]**\n\nThe [complete subject] of the question is 'all these documents', which is plural (they). For plural subjects, the correct auxiliary verb is [do].\n\n~Does~ is for singular subjects.\n~Are~ is the verb 'to be' and is not used with the main verb 'require'."
+        "value": "**[50]**\n\n**[3]**\n\nThe [complete subject] of the question is 'all these documents', which is plural (they). For plural subjects, the correct auxiliary verb is [do].\n\n~Does~ is for singular subjects.\n~Are~ is the verb 'to be' and is not used with the main verb 'require'."
       }
     },
     {
@@ -12133,7 +12133,7 @@
       "hint": "Don't be distracted by plural nouns that are not the main subject.",
       "content": {
         "type": "text",
-        "value": "**[51]**\n\nThe core of the [complete subject] is 'the manager', which is a single person. The phrase 'of these teams' just describes the manager. Since the subject is singular, we must use [does].\n\n~Do~ is a common error, chosen when focusing on the plural 'teams' instead of the singular 'manager'."
+        "value": "**[50]**\n\n**[3]**\n\nThe core of the [complete subject] is 'the manager', which is a single person. The phrase 'of these teams' just describes the manager. Since the subject is singular, we must use [does].\n\n~Do~ is a common error, chosen when focusing on the plural 'teams' instead of the singular 'manager'."
       }
     },
     {
@@ -12161,7 +12161,7 @@
       "hint": "After an auxiliary verb ('do' or 'does') in a question, what form does the main verb take?",
       "content": {
         "type": "text",
-        "value": "**[51]**\n\nAfter the auxiliary [does], the main verb must be in its [base form] ('consume'). The auxiliary already carries the third-person 's'.\n\n~Consumes~ is a very common error. You cannot have two '-s' endings (doeS and consumeS).\n~Consuming~ is the gerund/participle form and is incorrect here."
+        "value": "**[50]**\n\n**[3]**\n\nAfter the auxiliary [does], the main verb must be in its [base form] ('consume'). The auxiliary already carries the third-person 's'.\n\n~Consumes~ is a very common error. You cannot have two '-s' endings (doeS and consumeS).\n~Consuming~ is the gerund/participle form and is incorrect here."
       }
     },
     {
@@ -12189,7 +12189,7 @@
       "hint": "Look at the main noun in the subject phrase. Is it singular or plural?",
       "content": {
         "type": "text",
-        "value": "**[51]**\n\nThe [complete subject] is 'those error messages'. The core noun, 'messages', is plural. Therefore, the correct auxiliary verb is [Do].\n\n~Does~ would be used if the subject were singular (e.g., 'that error message').\n~Are~ is the verb 'to be'."
+        "value": "**[50]**\n\nThe [complete subject] is 'those error messages'. The core noun, 'messages', is plural. Therefore, the correct auxiliary verb is [Do].\n\n~Does~ would be used if the subject were singular (e.g., 'that error message').\n~Are~ is the verb 'to be'."
       }
     },
     {
@@ -12217,7 +12217,7 @@
       "hint": "A 'development cycle' is a single period of work in software creation.",
       "content": {
         "type": "text",
-        "value": "**[51]**\n\nThe [complete subject] is 'the next development cycle'. This is a single concept, so it is treated as a third-person singular subject (it). The correct auxiliary is [does].\n\n~Do~ is for plural subjects.\n~Is~ cannot be used with the verb 'begin' in this structure."
+        "value": "**[50]**\n\n**[3]**\n\nThe [complete subject] is 'the next development cycle'. This is a single concept, so it is treated as a third-person singular subject (it). The correct auxiliary is [does].\n\n~Do~ is for plural subjects.\n~Is~ cannot be used with the verb 'begin' in this structure."
       }
     },
     {
@@ -12245,7 +12245,7 @@
       "hint": "The word 'feedback' is an uncountable noun, which is always treated as singular.",
       "content": {
         "type": "text",
-        "value": "**[51]**\n\nThe [complete subject] is 'The feedback from our last user survey'. The main noun is 'feedback', which is singular. Therefore, the auxiliary verb must be [Does].\n\n~Do~ is a distractor for those who might focus on 'user' or 'survey' instead of the main subject 'feedback'."
+        "value": "**[50]**\n\n**[3]**\n\nThe [complete subject] is 'The feedback from our last user survey'. The main noun is 'feedback', which is singular. Therefore, the auxiliary verb must be [Does].\n\n~Do~ is a distractor for those who might focus on 'user' or 'survey' instead of the main subject 'feedback'."
       }
     },
     {
@@ -12273,7 +12273,7 @@
       "hint": "Is 'the final decision' one thing or many things?",
       "content": {
         "type": "text",
-        "value": "**[51]**\n\nThe [subject] of the question is 'the final decision', which is a singular concept (it). The correct auxiliary for a singular third-person subject is [does]. This follows the structure: Wh-word + does + subject + base verb.\n\n~Do~ is for plural subjects.\n~Is~ would be used for questions about state, not action (e.g., 'Why is the decision final?')."
+        "value": "**[50]**\n\n**[3]**\n\nThe [subject] of the question is 'the final decision', which is a singular concept (it). The correct auxiliary for a singular third-person subject is [does]. This follows the structure: Wh-word + does + subject + base verb.\n\n~Do~ is for plural subjects.\n~Is~ would be used for questions about state, not action (e.g., 'Why is the decision final?')."
       }
     },
     {
@@ -12301,7 +12301,7 @@
       "hint": "Remember the rule for the main verb after any form of the auxiliary 'do'.",
       "content": {
         "type": "text",
-        "value": "**[51]**\n\nAfter the auxiliary verb [do], the main verb must always be in its [base form]. The phrasal verb is 'to stand for'.\n\n~Stands for~ is incorrect because the auxiliary 'do' means the main verb does not need an '-s'.\n~Standing for~ is the gerund form and does not fit the structure."
+        "value": "**[50]**\n\n**[3]**\n\nAfter the auxiliary verb [do], the main verb must always be in its [base form]. The phrasal verb is 'to stand for'.\n\n~Stands for~ is incorrect because the auxiliary 'do' means the main verb does not need an '-s'.\n~Standing for~ is the gerund form and does not fit the structure."
       }
     },
     {
@@ -12329,7 +12329,7 @@
       "hint": "The question is about a routine action of the system, not its ability.",
       "content": {
         "type": "text",
-        "value": "**[51]**\n\nTo ask about a habitual or regular action in the present simple, we use 'do' or 'does'. The [subject] is 'the new system' (singular), so the correct auxiliary is [does].\n\n~Do~ is for plural subjects.\n~Can~ is a modal verb that asks about ability ('is it able to handle...?'), which is a slightly different meaning than asking about its process ('how')."
+        "value": "**[50]**\n\n**[3]**\n\nTo ask about a habitual or regular action in the present simple, we use 'do' or 'does'. The [subject] is 'the new system' (singular), so the correct auxiliary is [does].\n\n~Do~ is for plural subjects.\n~Can~ is a modal verb that asks about ability ('is it able to handle...?'), which is a slightly different meaning than asking about its process ('how')."
       }
     },
     {
@@ -17034,6 +17034,258 @@
       "content": {
         "type": "text",
         "value": "**[164]**\n\n[Upon restarting] shows the sequence and result. As soon as the restart begins/finishes, the wipe occurs.\n\n~While restarting~ is not the best choice because 'while' emphasizes a long duration where things happen simultaneously. The wiping of files is a specific trigger result of the restart event, not just something happening 'during' it."
+      }
+    },
+    {
+      "cardId": "egac_609",
+      "sentenceParts": {
+        "prefix": "Why ",
+        "suffix": " matter?"
+      },
+      "options": [
+        {
+          "text": "does that",
+          "isCorrect": true
+        },
+        {
+          "text": "that",
+          "isCorrect": false
+        },
+        {
+          "text": "that does",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "Why does that matter?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_609.mp3",
+      "hint": "Ask yourself: What is the entity that 'matters' here?",
+      "content": {
+        "type": "text",
+        "value": "**[50]**\n\nThe subject is the demonstrative [that]. Since we know the subject, this is a **[3]** and requires the auxiliary [does] before the subject.\n\nSelecting ~that~ alone is a common error if you mistake this for a subject question. Only [What happened?] or similar structures omit the auxiliary."
+      }
+    },
+    {
+      "cardId": "egac_610",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " have criteria?"
+      },
+      "options": [
+        {
+          "text": "Does this ticket",
+          "isCorrect": true
+        },
+        {
+          "text": "This ticket",
+          "isCorrect": false
+        },
+        {
+          "text": "Has this ticket",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "Does this ticket have criteria?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_610.mp3",
+      "hint": "The ticket is the subject, but it is not a person.",
+      "content": {
+        "type": "text",
+        "value": "**[50]**\n\n[This ticket] is an inanimate subject. According to **[3]**, you must use [Does] to form the question.\n\n~This ticket~ alone creates a statement, not a question. ~Has this ticket~ is incorrect here because when using the auxiliary [Does], the main verb must remain in [Base Form] (have)."
+      }
+    },
+    {
+      "cardId": "egac_611",
+      "sentenceParts": {
+        "prefix": "How ",
+        "suffix": " get updated?"
+      },
+      "options": [
+        {
+          "text": "do these values",
+          "isCorrect": true
+        },
+        {
+          "text": "these values",
+          "isCorrect": false
+        },
+        {
+          "text": "these values do",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "How do these values get updated?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_611.mp3",
+      "hint": "These values are the plural subject of the process.",
+      "content": {
+        "type": "text",
+        "value": "**[50]**\n\n**[3]**\n\nThe subject is [these values]. Because it is a known subject, you must use the auxiliary [do] and invert it.\n\n~these values~ without an auxiliary is only for [Subject Questions] where the question word is the subject. Here, [How] is a circumstance, not the subject."
+      }
+    },
+    {
+      "cardId": "egac_612",
+      "sentenceParts": {
+        "prefix": "When ",
+        "suffix": " happen?"
+      },
+      "options": [
+        {
+          "text": "did this",
+          "isCorrect": true
+        },
+        {
+          "text": "this",
+          "isCorrect": false
+        },
+        {
+          "text": "this did",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "When did this happen?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_612.mp3",
+      "hint": "'This' refers to a specific event or situation already mentioned.",
+      "content": {
+        "type": "text",
+        "value": "**[50]**\n\n[this] is the subject. Even if it seems like a vague concept, it is the 'doer' of the happening. \n\n~this~ without [did] is the most frequent mistake. Remember **[3]**: if you can identify the subject, you must use an auxiliary and invert."
+      }
+    },
+    {
+      "cardId": "egac_613",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " stick to him?"
+      },
+      "options": [
+        {
+          "text": "Will the nickname",
+          "isCorrect": true
+        },
+        {
+          "text": "The nickname",
+          "isCorrect": false
+        },
+        {
+          "text": "The nickname will",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "Will the nickname stick to him?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_613.mp3",
+      "hint": "We are asking about the future possibility of an abstract name.",
+      "content": {
+        "type": "text",
+        "value": "**[50]**\n\n**[3]**\n\n[The nickname] is an abstract subject. To ask about the future, you must jump the modal [Will] to the front of the subject.\n\n~The nickname will~ is the order for an affirmative statement. In a question, the modal and subject must swap positions."
+      }
+    },
+    {
+      "cardId": "egac_614",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " the deployment?"
+      },
+      "options": [
+        {
+          "text": "Who triggered",
+          "isCorrect": true
+        },
+        {
+          "text": "Who did trigger",
+          "isCorrect": false
+        },
+        {
+          "text": "Did who trigger",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "Who triggered the deployment?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_614.mp3",
+      "hint": "We are asking for the 'doer' who initiated the process.",
+      "content": {
+        "type": "text",
+        "value": "**[2]**\n\nThis is a [Subject Question] because [Who] is the unknown subject performing the action. In the past simple, we do not use the auxiliary ~did~. The sentence follows the same word order as an affirmative statement."
+      }
+    },
+    {
+      "cardId": "egac_615",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " the system lag?"
+      },
+      "options": [
+        {
+          "text": "What is causing",
+          "isCorrect": true
+        },
+        {
+          "text": "Is what causing",
+          "isCorrect": false
+        },
+        {
+          "text": "What causing is",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "What is causing the system lag?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_615.mp3",
+      "hint": "The entity responsible for the lag is the subject.",
+      "content": {
+        "type": "text",
+        "value": "**[2]**\n\nIn this [Subject Question], the question word [What] is the subject. Even in continuous tenses, there is [No Inversion]; the auxiliary [is] follows the subject naturally just like in a normal sentence."
+      }
+    },
+    {
+      "cardId": "egac_616",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " during execution?"
+      },
+      "options": [
+        {
+          "text": "Which script failed",
+          "isCorrect": true
+        },
+        {
+          "text": "Which script did fail",
+          "isCorrect": false
+        },
+        {
+          "text": "Did which script fail",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "Which script failed during execution?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_616.mp3",
+      "hint": "Identify the specific tool that performed the failure.",
+      "content": {
+        "type": "text",
+        "value": "**[2]**\n\n[Which script] acts as the subject of the sentence. Since the subject is the focus of the question, we use the verb [failed] directly in the past simple without adding the auxiliary ~did~."
+      }
+    },
+    {
+      "cardId": "egac_617",
+      "sentenceParts": {
+        "prefix": "",
+        "suffix": " to the production logs?"
+      },
+      "options": [
+        {
+          "text": "Who has access",
+          "isCorrect": true
+        },
+        {
+          "text": "Has who access",
+          "isCorrect": false
+        },
+        {
+          "text": "Who does have access",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "Who has access to the production logs?",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_617.mp3",
+      "hint": "We are looking for the group of people that 'has' the permission.",
+      "content": {
+        "type": "text",
+        "value": "**[2]**\n\nThis is a [Subject Question] asking about a state. The question word [Who] is the subject, so we maintain the [Affirmative Order]. We use the verb [has] directly without any inversion or extra auxiliaries."
       }
     }
   ]
