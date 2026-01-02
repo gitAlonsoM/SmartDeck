@@ -121,30 +121,28 @@ class FlippableCardScreen {
         noteContainer.innerHTML = '';
         noteContainer.classList.add('hidden');
 
-        if (this.cardData.note && this.cardData.note.trim() !== '') {
+       if (this.cardData.note && this.cardData.note.trim() !== '') {
             const noteContent = this.cardData.note.split('\n\n').map(paragraph => {
                 let formattedPara = paragraph.trim();
                 if (formattedPara) {
                     console.log(`DEBUG: [FlippableCardScreen] Processing Note Paragraph: "${formattedPara}"`);
                     
-                    // 1. PRIMERO procesar el patrón más específico: **[ID]** o **ID**
-                    formattedPara = formattedPara.replace(/\*\*\[?(\d+)\]?\*\*/g, (match, termId) => {
+                    // 1. PRIMERO procesar el patrón: **[ID]** (Clickable Modals)
+                    // Added strict **[ID]** matching with global flag to catch ALL instances in the paragraph
+                    formattedPara = formattedPara.replace(/\*\*\[(\d+)\]\*\*/g, (match, termId) => {
                         console.log(`DEBUG: [FlippableCardScreen] Found Glossary Term ID: ${termId}`);
-                        const glossary = GlossaryService.getCachedGlossary('english_rules');
+                        const glossary = GlossaryService.getCachedGlossary('english_rules'); // Hardcoded as requested
                         if (glossary && glossary[termId]) {
                             const termTitle = glossary[termId].title;
-                            console.log(`DEBUG: [FlippableCardScreen] Term found in glossary. Title: "${termTitle}"`);
-                            const generatedHtml = `<a href="#" class="glossary-term font-bold text-green-400 hover:underline" data-term-key="${termId}">${termTitle}</a>`;
-                            console.log(`DEBUG: [FlippableCardScreen] Generated HTML: ${generatedHtml}`);
-                            return generatedHtml;
+                            return `<a href="#" class="glossary-term font-bold text-green-400 hover:underline" data-term-key="${termId}">${termTitle}</a>`;
                         }
                         console.warn(`DEBUG: [FlippableCardScreen] Term ID ${termId} NOT FOUND in cached glossary.`);
                         return `<strong>[Rule ${termId} Not Found]</strong>`;
                     });
 
-                    // 2. DESPUÉS procesar los patrones más generales
+                    // 2. DESPUÉS procesar los patrones de formato de texto
                     formattedPara = formattedPara.replace(/\[([^\]]+)\]/g, '<strong class="font-semibold text-indigo-400">$1</strong>');
-                    formattedPara = formattedPara.replace(/~([^~]+)~/g, '<strong class="font-semibold text-yellow-400 dark:text-yellow-500">$1</strong>');
+                    formattedPara = formattedPara.replace(/~([^~]+)~/g, '<strong class="font-semibold text-yellow-600 dark:text-yellow-400">$1</strong>');
                     
                     return `<p class="text-sm text-gray-400 dark:text-gray-300 note-paragraph mb-2 last:mb-0">${formattedPara}</p>`;
                 }

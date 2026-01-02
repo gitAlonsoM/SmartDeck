@@ -1,0 +1,128 @@
+{
+  "id": "test_audio_choice_01",
+  "name": "Test (audioChoice)",
+  "description": "Verification deck for multiple glossary links in listening exercises.",
+  "deckType": "audioChoice",
+  "cards": [
+    {
+      "cardId": "ta_001",
+      "sentenceParts": { "prefix": "How ", "suffix": " get updated?" },
+      "options": [
+        { "text": "do these values", "isCorrect": true },
+        { "text": "these values", "isCorrect": false }
+      ],
+      "correctAnswer": "How do these values get updated?",
+      "audioSrc": "public/data/audio/test_audio/ta_001.mp3",
+      "hint": "Identify the subject.",
+      "content": { 
+        "type": "text", 
+        "value": "**[50]**\n\n**[3]**\n\nThis card has a header modal [50] and an inline modal **[3]**. Both should be clickable. Do not use ~inverted order~ in subject questions." 
+      }
+    },
+    {
+      "cardId": "ta_002",
+      "sentenceParts": { "prefix": "I ", "suffix": " since 2010." },
+      "options": [
+        { "text": "have been working", "isCorrect": true },
+        { "text": "work", "isCorrect": false }
+      ],
+      "correctAnswer": "I have been working since 2010.",
+      "audioSrc": "public/data/audio/test_audio/ta_002.mp3",
+      "hint": "Duration is key.",
+      "content": { 
+        "type": "text", 
+        "value": "**[6]**\n\n**[11]**\n\nComparing [Present Perfect Continuous] with modal regrets **[11]** for no reason other than testing. Avoid ~Present Simple~ for duration." 
+      }
+    },
+    {
+      "cardId": "ta_003",
+      "sentenceParts": { "prefix": "She is interested ", "suffix": " art." },
+      "options": [
+        { "text": "in", "isCorrect": true },
+        { "text": "on", "isCorrect": false }
+      ],
+      "correctAnswer": "She is interested in art.",
+      "audioSrc": "public/data/audio/test_audio/ta_003.mp3",
+      "hint": "Fixed preposition.",
+      "content": { 
+        "type": "text", 
+        "value": "**[14]**\n\n**[15]**\n\nInline link for [Interested In] and another for **[15]** [Used To]. Testing word order with ~wrong prepositions~." 
+      }
+    },
+    {
+      "cardId": "ta_004",
+      "sentenceParts": { "prefix": "Everybody ", "suffix": " ready." },
+      "options": [
+        { "text": "is", "isCorrect": true },
+        { "text": "are", "isCorrect": false }
+      ],
+      "correctAnswer": "Everybody is ready.",
+      "audioSrc": "public/data/audio/test_audio/ta_004.mp3",
+      "hint": "Indefinite pronoun.",
+      "content": { 
+        "type": "text", 
+        "value": "**[72]**\n\n**[68]**\n\nHeader modal [72] and inline modal **[68]** (Police). Plural vs Singular. Avoid ~Everybody are~." 
+      }
+    },
+    {
+      "cardId": "ta_005",
+      "sentenceParts": { "prefix": "Look ", "suffix": " the photo." },
+      "options": [
+        { "text": "at", "isCorrect": true },
+        { "text": "to", "isCorrect": false }
+      ],
+      "correctAnswer": "Look at the photo.",
+      "audioSrc": "public/data/audio/test_audio/ta_005.mp3",
+      "hint": "Directed action.",
+      "content": { 
+        "type": "text", 
+        "value": "**[79]**\n\n**[111]**\n\nTesting [Look At] header and **[111]** [Phrasal Verbs] inline. Do not use ~look to~." 
+      }
+    },
+    {
+      "cardId": "ta_006",
+      "sentenceParts": { "prefix": "No modal ", "suffix": " card." },
+      "options": [{ "text": "test", "isCorrect": true }],
+      "correctAnswer": "No modal test card.",
+      "audioSrc": "public/data/audio/test_audio/ta_006.mp3",
+      "hint": "N/A",
+      "content": { "type": "text", "value": "Regular content with [Correct] and ~Error~ highlights." }
+    },
+    {
+      "cardId": "ta_007",
+      "sentenceParts": { "prefix": "One modal ", "suffix": " header." },
+      "options": [{ "text": "test", "isCorrect": true }],
+      "correctAnswer": "One modal header.",
+      "audioSrc": "public/data/audio/test_audio/ta_007.mp3",
+      "hint": "N/A",
+      "content": { "type": "text", "value": "**[20]**\n\nTesting single header for [Irregular Plurals]." }
+    },
+    {
+      "cardId": "ta_008",
+      "sentenceParts": { "prefix": "One modal ", "suffix": " inline." },
+      "options": [{ "text": "test", "isCorrect": true }],
+      "correctAnswer": "One modal inline.",
+      "audioSrc": "public/data/audio/test_audio/ta_008.mp3",
+      "hint": "N/A",
+      "content": { "type": "text", "value": "Testing a single inline modal **[87]** for [Compound Nouns]." }
+    },
+    {
+      "cardId": "ta_009",
+      "sentenceParts": { "prefix": "No modal ", "suffix": " card." },
+      "options": [{ "text": "test", "isCorrect": true }],
+      "correctAnswer": "No modal test card.",
+      "audioSrc": "public/data/audio/test_audio/ta_009.mp3",
+      "hint": "N/A",
+      "content": { "type": "text", "value": "Pure text content." }
+    },
+    {
+      "cardId": "ta_010",
+      "sentenceParts": { "prefix": "Multi ", "suffix": " inline." },
+      "options": [{ "text": "test", "isCorrect": true }],
+      "correctAnswer": "Multi test.",
+      "audioSrc": "public/data/audio/test_audio/ta_010.mp3",
+      "hint": "N/A",
+      "content": { "type": "text", "value": "Last test with **[61]**, **[64]**, and **[69]** all inline." }
+    }
+  ]
+}

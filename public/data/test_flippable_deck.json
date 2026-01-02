@@ -1,0 +1,68 @@
+{
+  "id": "test_flippable_01",
+  "name": " Test (Flippable)",
+  "description": "Verification deck for multiple glossary links in flashcards.",
+  "deckType": "flippable",
+  "cards": [
+    {
+      "cardId": "tf_001",
+      "sideA": "Who broke the window?",
+      "sideB": ["Who broke the window?"],
+      "note": "**[2]**\n\n**[3]**\n\nThis card tests two modals at the top. The first is [Subject Questions] and the second is [Auxiliary Inversion]. Use [Who] directly as the subject."
+    },
+    {
+      "cardId": "tf_002",
+      "sideA": "You should have told me.",
+      "sideB": ["You should have told me."],
+      "note": "**[11]**\n\nTesting a single modal link here. This explains [Should Have] for past regrets. Do not use ~must have~ for advice."
+    },
+    {
+      "cardId": "tf_003",
+      "sideA": "I'm used to waking up early.",
+      "sideB": ["I'm used to waking up early."],
+      "note": "**[15]**\n\n**[14]**\n\nDouble modal test: [Used To] and [Interested In] pattern rules. Remember that prepositions are followed by ~gerunds~."
+    },
+    {
+      "cardId": "tf_004",
+      "sideA": "The police are here.",
+      "sideB": ["The police are here."],
+      "note": "**[68]**\n\n**[72]**\n\nComparing [Collective Nouns] like police with [Indefinite Pronouns] like everybody. One is plural, one is singular."
+    },
+    {
+      "cardId": "tf_005",
+      "sideA": "Initialization is key.",
+      "sideB": ["Initialization is key."],
+      "note": "**[155]**\n\n**[157]**\n\nSQL context test: [Above] and [Below] connectors for UNION operations. Use them to describe ~spatial hierarchy~."
+    },
+    {
+      "cardId": "tf_006",
+      "sideA": "Simple Card 1",
+      "sideB": ["No Modals"],
+      "note": "A regular card with [no modals] to ensure standard formatting still works."
+    },
+    {
+      "cardId": "tf_007",
+      "sideA": "Simple Card 2",
+      "sideB": ["One Modal"],
+      "note": "**[9]**\n\nJust testing [Second Conditional] rules here."
+    },
+    {
+      "cardId": "tf_008",
+      "sideA": "Simple Card 3",
+      "sideB": ["No Modals"],
+      "note": "Checking that ~errors~ are still highlighted in yellow."
+    },
+    {
+      "cardId": "tf_009",
+      "sideA": "Simple Card 4",
+      "sideB": ["One Modal"],
+      "note": "**[10]**\n\n[Third Conditional] logic."
+    },
+    {
+      "cardId": "tf_010",
+      "sideA": "Simple Card 5",
+      "sideB": ["No Modals"],
+      "note": "Final check for [Clean Text] rendering."
+    }
+  ]
+}
