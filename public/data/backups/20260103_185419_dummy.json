@@ -40,10 +40,6 @@
         {
           "text": "In the prompt, ask for a response in the third person.",
           "audioSrc": "public/data/audio/dummy/dummy_002_sideB_2.mp3"
-        },
-        {
-          "text": "Ask it in the prompt to answer you in the third person.",
-          "audioSrc": "public/data/audio/dummy/dummy_002_sideB_3.mp3"
         }
       ],
       "note": "When interacting with AI, [ask it to] is standard for commands.\n\n~answer your in the third person~ is incorrect because 'your' is a possessive adjective and needs a noun. Use [answer you]."
@@ -260,10 +256,6 @@
         {
           "text": "An array is a list of numbers that represents a vector.",
           "audioSrc": "public/data/audio/dummy/dummy_012_sideB_2.mp3"
-        },
-        {
-          "text": "A vector is a list of numbers which is called an array.",
-          "audioSrc": "public/data/audio/dummy/dummy_012_sideB_3.mp3"
         }
       ],
       "note": "[Called] or [Known as] are used to define terms.\n\n~which are called array~ has subject-verb agreement issues (a list is...). Use [which is called an array] or [known as an array]."
@@ -650,7 +642,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_030_sideB_2.mp3"
         }
       ],
-      "note": "Common flag for database statuses.\n\n~The A letter means Active~ is unnatural because in English, the identifying name usually follows the category noun. Use [The letter A]."
+      "note": "Common flag for database statuses."
     },
     {
       "cardId": "dummy_031",
@@ -728,10 +720,6 @@
         {
           "text": "The record from another package is being filled in there.",
           "audioSrc": "public/data/audio/dummy/dummy_034_sideB_2.mp3"
-        },
-        {
-          "text": "The created record in another package is being populated there.",
-          "audioSrc": "public/data/audio/dummy/dummy_034_sideB_3.mp3"
         }
       ],
       "note": "[Is being populated] is the technical way to say data is being inserted/filled."
@@ -752,10 +740,6 @@
         {
           "text": "Record fields from a different package are being populated right there.",
           "audioSrc": "public/data/audio/dummy/dummy_035_sideB_2.mp3"
-        },
-        {
-          "text": "The fields of the record from another package are populated there.",
-          "audioSrc": "public/data/audio/dummy/dummy_035_sideB_3.mp3"
         }
       ],
       "note": "[Fields] are the specific attributes within a [Record]."
@@ -798,7 +782,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_037_sideB_2.mp3"
         }
       ],
-      "note": "[Scope] can also describe the extent or size of a technical challenge.\n\n~The scope problem is huge~ is not valid because 'scope' requires the preposition [of] to connect it to the noun being described. Use [The scope of the problem]."
+      "note": "[Scope] can also describe the extent or size of a technical challenge."
     },
     {
       "cardId": "dummy_038",
@@ -816,14 +800,6 @@
         {
           "text": "Is this in scope for the project?",
           "audioSrc": "public/data/audio/dummy/dummy_038_sideB_2.mp3"
-        },
-        {
-          "text": "Is this included in the scope of the project?",
-          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_3.mp3"
-        },
-        {
-          "text": "Is this in the scope of the project?",
-          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_4.mp3"
         }
       ],
       "note": "Use [in scope] or [within scope] to confirm if a task belongs to the current plan."
@@ -847,106 +823,6 @@
         }
       ],
       "note": "When moving items in a UI, use [drag to] for destination or [drag into] for containment."
-    },
-    {
-    "cardId": "dummy_040",
-    "cardType": "flippable",
-    "sideA": "Se requiere que lo hagas si o si.",
-    "sideB": [
-      {
-        "text": "You are required to do it no matter what.",
-        "audioSrc": "public/data/audio/dummy/dummy_040_sideB_0.mp3"
-      },
-      {
-        "text": "You must do it at all costs.",
-        "audioSrc": "public/data/audio/dummy/dummy_040_sideB_1.mp3"
-      },
-      {
-        "text": "You're required to do it, period.",
-        "audioSrc": "public/data/audio/dummy/dummy_040_sideB_2.mp3"
-      }
-    ],
-    "note": "The Spanish expression [Sí o sí] does not have a literal translation like ~yes or yes~.\n\nTo communicate this absolute necessity, English uses phrases like [no matter what], [at all costs], or the word [period] at the end of a sentence to indicate that there is no room for argument."
-  },
-  {
-    "cardId": "dummy_041",
-    "cardType": "flippable",
-    "sideA": "Deberemos hacerlo si o si.",
-    "sideB": [
-      {
-        "text": "We'll have to do it regardless.",
-        "audioSrc": "public/data/audio/dummy/dummy_041_sideB_0.mp3"
-      },
-      {
-        "text": "We must get it done one way or another.",
-        "audioSrc": "public/data/audio/dummy/dummy_041_sideB_1.mp3"
-      },
-      {
-        "text": "We are going to have to do it no matter what.",
-        "audioSrc": "public/data/audio/dummy/dummy_041_sideB_2.mp3"
-      }
-    ],
-    "note": "The Spanish expression [Sí o sí] does not have a literal translation like ~yes or yes~.\n\nWhen [sí o sí] implies that something will happen despite obstacles, English speakers use [regardless] or [one way or another]. These emphasize that the result is inevitable.\n\n~We must do it yes or yes~ is a common non-native error that should be avoided."
-  },
-  {
-    "cardId": "dummy_042",
-    "cardType": "flippable",
-    "sideA": "Me dio risa",
-    "sideB": [
-      {
-        "text": "It made me laugh.",
-        "audioSrc": "public/data/audio/dummy/dummy_042_sideB_0.mp3"
-      },
-      {
-        "text": "I found it funny.",
-        "audioSrc": "public/data/audio/dummy/dummy_042_sideB_1.mp3"
-      },
-      {
-        "text": "I cracked up.",
-        "audioSrc": "public/data/audio/dummy/dummy_042_sideB_2.mp3"
-      }
-    ],
-    "note": "In English, emotions and reactions are rarely 'given' (dar).\n\nInstead of ~It gave me laugh~, we use a causative structure: [It made me laugh] or describe the internal state: [I found it funny].\n\n[I cracked up] is a very natural phrasal verb used when something makes you laugh suddenly and intensely."
-  },
-  {
-    "cardId": "dummy_043",
-    "cardType": "flippable",
-    "sideA": "Me dio hambre",
-    "sideB": [
-      {
-        "text": "I got hungry.",
-        "audioSrc": "public/data/audio/dummy/dummy_043_sideB_0.mp3"
-      },
-      {
-        "text": "I started feeling hungry.",
-        "audioSrc": "public/data/audio/dummy/dummy_043_sideB_1.mp3"
-      },
-      {
-        "text": "I'm getting hungry.",
-        "audioSrc": "public/data/audio/dummy/dummy_043_sideB_2.mp3"
-      }
-    ],
-    "note": "In English, emotions and reactions are rarely 'given' (dar).\n\nPhysical sensations like hunger or thirst use the verb [get] to indicate a change of state. \n\n~It gave me hunger~ is incorrect. Use [I got hungry] to describe the moment the sensation began."
-  },
-  {
-    "cardId": "dummy_044",
-    "cardType": "flippable",
-    "sideA": "Me dio rabia",
-    "sideB": [
-      {
-        "text": "It made me angry.",
-        "audioSrc": "public/data/audio/dummy/dummy_044_sideB_0.mp3"
-      },
-      {
-        "text": "I got so mad.",
-        "audioSrc": "public/data/audio/dummy/dummy_044_sideB_1.mp3"
-      },
-      {
-        "text": "It was so frustrating.",
-        "audioSrc": "public/data/audio/dummy/dummy_044_sideB_2.mp3"
-      }
-    ],
-    "note": "In English, emotions and reactions are rarely 'given' (dar).\n\nFor intense negative emotions, English uses [make me] + adjective. \n\n~It gave me anger~ is not idiomatic. Use [It made me angry] to focus on the cause, or [I got mad] to focus on your reaction."
-  }
+    }
   ]
 }

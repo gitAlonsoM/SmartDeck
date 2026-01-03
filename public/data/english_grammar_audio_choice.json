@@ -17287,6 +17287,241 @@
         "type": "text",
         "value": "**[2]**\n\nThis is a [Subject Question] asking about a state. The question word [Who] is the subject, so we maintain the [Affirmative Order]. We use the verb [has] directly without any inversion or extra auxiliaries."
       }
+    },
+    {
+    "cardId": "egac_618",
+    "category": "Prepositions",
+    "sentenceParts": {
+      "prefix": "In modern manufacturing, most ",
+      "suffix": " recycled materials."
+    },
+    "options": [
+      {
+        "text": "packaging is made from",
+        "isCorrect": true
+      },
+      {
+        "text": "packaging is made of",
+        "isCorrect": false
+      },
+      {
+        "text": "packaging is made by",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "In modern manufacturing, most packaging is made from recycled materials.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_618.mp3",
+    "hint": "The raw material underwent a significant transformation into a new substance.",
+    "content": {
+      "type": "text",
+      "value": "**[176]**\n\nUse [made from] for cases of **Material & Transformation** where the original substance is no longer recognizable.\n\n~made of~ is typically used when the material remains physically the same (e.g., a table made of wood). ~made by~ refers to the person or company that created the item."
     }
+  },
+  {
+    "cardId": "egac_619",
+    "category": "Prepositions",
+    "sentenceParts": {
+      "prefix": "Historical records show that ",
+      "suffix": " fermented grapes."
+    },
+    "options": [
+      {
+        "text": "this specific wine comes from",
+        "isCorrect": true
+      },
+      {
+        "text": "this specific wine comes of",
+        "isCorrect": false
+      },
+      {
+        "text": "this specific wine comes out",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "Historical records show that this specific wine comes from fermented grapes.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_619.mp3",
+    "hint": "Focus on the origin or source material of the product.",
+    "content": {
+      "type": "text",
+      "value": "**[176]**\n\n[comes from] is the standard way to identify the source material in a **Material & Transformation** context.\n\n~comes of~ is an archaic or very formal expression (e.g., 'what comes of this?'). ~comes out~ refers to a release or publication, not origin."
+    }
+  },
+  {
+    "cardId": "egac_620",
+    "category": "Prepositions",
+    "sentenceParts": {
+      "prefix": "The latest security protocols ",
+      "suffix": " our internal database."
+    },
+    "options": [
+      {
+        "text": "keep unauthorized users from accessing",
+        "isCorrect": true
+      },
+      {
+        "text": "keep unauthorized users to access",
+        "isCorrect": false
+      },
+      {
+        "text": "keep unauthorized users accessing",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "The latest security protocols keep unauthorized users from accessing our internal database.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_620.mp3",
+    "hint": "This structure requires a specific preposition to show prevention.",
+    "content": {
+      "type": "text",
+      "value": "**[176]**\n\nThe structure [keep + Object + from + Verb-ing] is mandatory for **Prevention & Inhibition**.\n\n~keep... to access~ is a common error; verbs of prevention almost never take the infinitive. ~keep... accessing~ without the preposition 'from' changes the meaning to 'maintaining' the action rather than stopping it."
+    }
+  },
+  {
+    "cardId": "egac_621",
+    "category": "Prepositions",
+    "sentenceParts": {
+      "prefix": "New hardware designs often ",
+      "suffix": " during heavy workloads."
+    },
+    "options": [
+      {
+        "text": "save the processor from overheating",
+        "isCorrect": true
+      },
+      {
+        "text": "save the processor to overheat",
+        "isCorrect": false
+      },
+      {
+        "text": "save the processor for overheating",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "New hardware designs often save the processor from overheating during heavy workloads.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_621.mp3",
+    "hint": "We are protecting the component from a negative state.",
+    "content": {
+      "type": "text",
+      "value": "**[176]**\n\n[save from] is used here for **Protection**. It follows the same logic as 'prevent from'.\n\n~save... for overheating~ is incorrect because 'for' usually implies a purpose or reason, whereas 'from' correctly identifies the danger being avoided."
+    }
+  },
+  {
+    "cardId": "egac_622",
+    "category": "Noun Connection",
+    "sentenceParts": {
+      "prefix": "Before the demo, I had to ",
+      "suffix": " because it was almost dead."
+    },
+    "options": [
+      {
+        "text": "borrow my colleague's laptop charger",
+        "isCorrect": true
+      },
+      {
+        "text": "borrow the charger of the laptop of my colleague",
+        "isCorrect": false
+      },
+      {
+        "text": "borrow the charger of the colleague's laptop",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "Before the demo, I had to borrow my colleague's laptop charger because it was almost dead.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_622.mp3",
+    "hint": "Native speakers prioritize efficiency for people and common objects.",
+    "content": {
+      "type": "text",
+      "value": "**[175]**\n\nUsing ~the charger of the laptop of my colleague~ is a perfect example of **Unnatural 'Of'**. It is grammatically possible but sounds extremely robotic.\n\nUse [Possessive 's] for people and a [Noun Adjunct] (laptop charger) for the object."
+    }
+  },
+  {
+    "cardId": "egac_623",
+    "category": "Noun Connection",
+    "sentenceParts": {
+      "prefix": "The system slowdown was caused by ",
+      "suffix": " running in the background."
+    },
+    "options": [
+      {
+        "text": "a mandatory Windows update",
+        "isCorrect": true
+      },
+      {
+        "text": "an update of Windows mandatory",
+        "isCorrect": false
+      },
+      {
+        "text": "a Windows update of mandatory",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "The system slowdown was caused by a mandatory Windows update running in the background.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_623.mp3",
+    "hint": "Look for the most efficient way to name a common tech concept.",
+    "content": {
+      "type": "text",
+      "value": "**[175]**\n\nConcepts like [Windows update] are fixed compound nouns. Using ~update of Windows~ is considered **Unnatural 'Of'** in tech contexts.\n\n~update of Windows mandatory~ also fails because adjectives (mandatory) must precede the noun cluster in English."
+    }
+  },
+  {
+    "cardId": "egac_624",
+    "category": "Noun Connection",
+    "sentenceParts": {
+      "prefix": "I missed the first part of ",
+      "suffix": " due to technical issues."
+    },
+    "options": [
+      {
+        "text": "today's morning meeting",
+        "isCorrect": true
+      },
+      {
+        "text": "the meeting of the morning of today",
+        "isCorrect": false
+      },
+      {
+        "text": "the today's morning meeting",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "I missed the first part of today's morning meeting due to technical issues.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_624.mp3",
+    "hint": "How do you naturally connect time and an event?",
+    "content": {
+      "type": "text",
+      "value": "**[175]**\n\n~the meeting of the morning of today~ is heavy and **Unnatural**. English uses [Today's] (Possessive) to link time to an event efficiently.\n\n~the today's morning meeting~ is incorrect because you should not use an article 'the' before a possessive time word like 'today's' in this context."
+    }
+  },
+  {
+    "cardId": "egac_625",
+    "category": "Noun Connection",
+    "sentenceParts": {
+      "prefix": "The lab technician carefully measured ",
+      "suffix": " before starting the experiment."
+    },
+    "options": [
+      {
+        "text": "the density of the liquid",
+        "isCorrect": true
+      },
+      {
+        "text": "the liquid density",
+        "isCorrect": false
+      },
+      {
+        "text": "the density liquid",
+        "isCorrect": false
+      }
+    ],
+    "correctAnswer": "The lab technician carefully measured the density of the liquid before starting the experiment.",
+    "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_625.mp3",
+    "hint": "This is a scientific measurement involving a property of a substance.",
+    "content": {
+      "type": "text",
+      "value": "**[175]**\n\nThis is a **Mandatory 'Of'** case. When describing abstract measurements or physical properties (density, weight, volume), the [of] structure is required for precision.\n\n~the liquid density~ is sometimes used as a compound noun, but in formal scientific measurement, [the density of the liquid] is the standard."
+    }
+  }
+
+
+
   ]
 }
