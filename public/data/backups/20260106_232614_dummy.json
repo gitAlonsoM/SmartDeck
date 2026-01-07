@@ -963,554 +963,535 @@
         }
       ],
       "note": "**[39]**\n\nIn English, emotions and reactions are rarely 'given' (dar).\n\nFor intense negative emotions, English uses [make me] + adjective. \n\n~It gave me anger~ is not idiomatic. Use [It made me angry] to focus on the cause, or [I got mad] to focus on your reaction.\n\n~I angered a lot~ is not natural. While 'anger' can be a verb, it is almost always used with an object. To describe your own feeling, use [I got angry] or [I was very angry]."
-    },
-    {
-      "cardId": "dummy_045",
-      "cardType": "flippable",
-      "sideA": "Me hizo feliz aquello.",
-      "sideB": [
-        {
-          "text": "That made me happy.",
-          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_0.mp3"
-        },
-        {
-          "text": "It made me happy.",
-          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_1.mp3"
-        },
-        {
-          "text": "That made me feel happy.",
-          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_2.mp3"
-        }
-      ],
-      "note": "**[39]**\n\nIn English, we use the causative [make] + [object] + [adjective] to describe how something affects our emotions.\n\n~It made me happy that~ is incomplete; [that] should be the subject [That made me happy] or refer to a specific clause."
-    },
-    {
-      "cardId": "dummy_046",
-      "cardType": "flippable",
-      "sideA": "Me puso nervioso lo que ellos dijeron.",
-      "sideB": [
-        {
-          "text": "What they said made me nervous.",
-          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_0.mp3"
-        },
-        {
-          "text": "What they said made me feel nervous.",
-          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_1.mp3"
-        },
-        {
-          "text": "It made me nervous what they said.",
-          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_2.mp3"
-        }
-      ],
-      "note": "**[39]**\n\n[What they said] acts as the subject that caused the state of being [nervous]."
-    },
-    {
-      "cardId": "dummy_047",
-      "cardType": "flippable",
-      "sideA": "Me dio asco esa cosa.",
-      "sideB": [
-        {
-          "text": "That thing made me sick.",
-          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_0.mp3"
-        },
-        {
-          "text": "That thing made me feel sick.",
-          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_1.mp3"
-        },
-        {
-          "text": "That made me feel disgusted.",
-          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_2.mp3"
-        },
-        {
-          "text": "I got sick with that thing.",
-          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_3.mp3"
-        }
-      ],
-      "note": "**[39]**\n\nTo express 'dar asco', English often uses [made me sick] or [made me feel disgusted]."
-    },
-    {
-      "cardId": "dummy_048",
-      "cardType": "flippable",
-      "sideA": "Me dio sueño la pelicula.",
-      "sideB": [
-        {
-          "text": "The movie made me sleepy.",
-          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_0.mp3"
-        },
-        {
-          "text": "It made me feel sleepy watching that movie.",
-          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_1.mp3"
-        },
-        {
-          "text": "That movie made me feel drowsy.",
-          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_2.mp3"
-        }
-      ],
-      "note": "**[39]**\n\n[Sleepy] is the adjective for 'tener sueño'. In this case, the movie is the cause.\n\n~It made me feel sleepy the movie~ is incorrect word order; the subject [the movie] should come first: [The movie made me feel sleepy]."
-    },
-    {
-      "cardId": "dummy_049",
-      "cardType": "flippable",
-      "sideA": "Me hizo preguntarme eso que escuche.",
-      "sideB": [
-        {
-          "text": "What I heard made me wonder.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_0.mp3"
-        },
-        {
-          "text": "It made me wonder what I heard.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_1.mp3"
-        },
-        {
-          "text": "That made me question things after I heard it.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_2.mp3"
-        }
-      ],
-      "note": "**[39]**\n\n[Wonder] is the base verb here. Remember that after [make], we use the base form without 'to'.\n\n~What I heard, it made me wonder~ is redundant because [What I heard] is already the subject; you should not add [it] after it."
-    },
-    {
-      "cardId": "dummy_050",
-      "cardType": "flippable",
-      "sideA": "Me hizo pensar.",
-      "sideB": [
-        {
-          "text": "It made me think.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_0.mp3"
-        },
-        {
-          "text": "That made me think.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_1.mp3"
-        },
-        {
-          "text": "It gave me food for thought.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_2.mp3"
-        }
-      ],
-      "note": "**[39]**\n\n[Food for thought] is a common idiom meaning something that provides mental stimulus or interest."
-    },
-    {
-      "cardId": "dummy_051",
-      "cardType": "flippable",
-      "sideA": "Me hizo sentir mejor.",
-      "sideB": [
-        {
-          "text": "It made me feel better.",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_0.mp3"
-        },
-        {
-          "text": "That made me feel better.",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_1.mp3"
-        },
-        {
-          "text": "It made me feel a bit better.",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_2.mp3"
-        }
-      ],
-      "note": "**[39]**\n\n[Feel better] is the result caused by 'it' or 'that'."
-    },
-    {
-      "cardId": "dummy_052",
-      "cardType": "flippable",
-      "sideA": "Me hizo quedar mal ella.",
-      "sideB": [
-        {
-          "text": "She made me look bad.",
-          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_0.mp3"
-        },
-        {
-          "text": "She made me look incompetent.",
-          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_1.mp3"
-        },
-        {
-          "text": "Her actions made me look bad.",
-          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_2.mp3"
-        }
-      ],
-      "note": "**[39]**\n\n[To look bad] is the standard idiom for 'quedar mal' in a social or professional sense."
-    },
-    {
-      "cardId": "dummy_053",
-      "cardType": "flippable",
-      "sideA": "\"nada que ver!\" (idiom)",
-      "sideB": [
-        {
-          "text": "Not related at all!",
-          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_0.mp3"
-        },
-        {
-          "text": "Zero connection!",
-          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_1.mp3"
-        },
-        {
-          "text": "Completely unrelated!",
-          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_2.mp3"
-        },
-        {
-          "text": "That has nothing to do with it!",
-          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_3.mp3"
-        }
-      ],
-      "note": "[Nothing to do with it] is the most literal way to translate the sentiment of 'nada que ver' regarding topics."
-    },
-    {
-      "cardId": "dummy_054",
-      "cardType": "flippable",
-      "sideA": "Usa una tabla de consulta para acelerar el proceso.",
-      "sideB": [
-        {
-          "text": "Use a lookup table to speed up the process.",
-          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_0.mp3"
-        },
-        {
-          "text": "The system failed during the database lookup.",
-          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_1.mp3"
-        },
-        {
-          "text": "Use a query table to accelerate the process.",
-          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_2.mp3"
-        },
-        {
-          "text": "Utilize a lookup table to optimize speed.",
-          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_3.mp3"
-        }
-      ],
-      "note": "[Lookup table] is the technical term for a table used to map or retrieve values quickly."
-    },
-    {
-      "cardId": "dummy_055",
-      "cardType": "flippable",
-      "sideA": "Tenemos varias tablas de consulta para ese proposito.",
-      "sideB": [
-        {
-          "text": "We have several lookup tables for that purpose.",
-          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_0.mp3"
-        },
-        {
-          "text": "We have multiple lookup tables for that goal.",
-          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_1.mp3"
-        },
-        {
-          "text": "There are several lookup tables for that specific purpose.",
-          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_2.mp3"
-        }
-      ],
-      "note": "[Several] and [Multiple] are natural ways to say 'varias'."
-    },
-    {
-      "cardId": "dummy_056",
-      "cardType": "flippable",
-      "sideA": "Se requiere probar la función en el dispositivo real.",
-      "sideB": [
-        {
-          "text": "It is required to test the feature on a real device.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_0.mp3"
-        },
-        {
-          "text": "You are required to test the function on an actual device.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_1.mp3"
-        },
-        {
-          "text": "Testing the feature on the real device is required.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_2.mp3"
-        }
-      ],
-      "note": "[Actual device] or [Real device] distinguish physical hardware from an emulator or simulator.\n\n~It requires to test the feature on a real device~ is incorrect because [require] is not used as a dummy subject verb; use [It is required to test] or [Testing requires...]."
-    },
-    {
-      "cardId": "dummy_057",
-      "cardType": "flippable",
-      "sideA": "Chile está tres horas detrás del UTC.",
-      "sideB": [
-        {
-          "text": "Chile is three hours behind UTC.",
-          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_0.mp3"
-        },
-        {
-          "text": "Chile is UTC-3.",
-          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_1.mp3"
-        },
-        {
-          "text": "Chile lags three hours behind UTC.",
-          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_2.mp3"
-        }
-      ],
-      "note": "**[177]**\n\nUse [behind] to describe a negative offset from the UTC baseline."
-    },
-    {
-      "cardId": "dummy_058",
-      "cardType": "flippable",
-      "sideA": "Canadá está dos horas detrás de Chile en el UTC",
-      "sideB": [
-        {
-          "text": "Canada is two hours behind Chile in UTC.",
-          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_0.mp3"
-        },
-        {
-          "text": "Canada lags two hours behind Chile on the UTC scale.",
-          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_1.mp3"
-        },
-        {
-          "text": "There is a two-hour UTC difference between Canada and Chile.",
-          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_2.mp3"
-        }
-      ],
-      "note": "**[177]**"
-    },
-    {
-      "cardId": "dummy_059",
-      "cardType": "flippable",
-      "sideA": "El servidor de correo usa la hora UTC.",
-      "sideB": [
-        {
-          "text": "The mail server uses UTC time.",
-          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_0.mp3"
-        },
-        {
-          "text": "The email server is set to UTC.",
-          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_1.mp3"
-        },
-        {
-          "text": "The mail server runs on UTC.",
-          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_2.mp3"
-        },
-        {
-          "text": "The email server uses UTC time.",
-          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_3.mp3"
-        }
-      ],
-      "note": "**[177]**\n\nServers typically [run on] or are [set to] UTC to maintain a consistent log timeline.\n\n~The mail server uses UTC hour~ is not standard because [UTC] is already a time standard; we say [UTC time] or simply [UTC]."
-    },
-    {
-      "cardId": "dummy_060",
-      "cardType": "flippable",
-      "sideA": "UTC es el punto de partida para la hora mundial.",
-      "sideB": [
-        {
-          "text": "UTC is the starting point for world time.",
-          "audioSrc": "public/data/audio/dummy/dummy_060_sideB_0.mp3"
-        },
-        {
-          "text": "UTC is the global time baseline.",
-          "audioSrc": "public/data/audio/dummy/dummy_060_sideB_1.mp3"
-        },
-        {
-          "text": "UTC serves as the starting point for world time.",
-          "audioSrc": "public/data/audio/dummy/dummy_060_sideB_2.mp3"
-        }
-      ],
-      "note": "**[177]**"
-    },
-    {
-      "cardId": "dummy_061",
-      "cardType": "flippable",
-      "sideA": "UTC-3 significa tres horas detrás del punto cero.",
-      "sideB": [
-        {
-          "text": "UTC-3 means three hours behind the zero point.",
-          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_0.mp3"
-        },
-        {
-          "text": "UTC-3 signifies being three hours behind point zero.",
-          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_1.mp3"
-        },
-        {
-          "text": "A UTC-3 offset means three hours behind the zero baseline.",
-          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_2.mp3"
-        }
-      ],
-      "note": "**[177]**"
-    },
-    {
-      "cardId": "dummy_062",
-      "cardType": "flippable",
-      "sideA": "Chile usa el UTC-3 en verano y UTC-4 en invierno.",
-      "sideB": [
-        {
-          "text": "Chile uses UTC-3 in summer and UTC-4 in winter.",
-          "audioSrc": "public/data/audio/dummy/dummy_062_sideB_0.mp3"
-        },
-        {
-          "text": "Chile switches between UTC-3 in summer and UTC-4 in winter.",
-          "audioSrc": "public/data/audio/dummy/dummy_062_sideB_1.mp3"
-        },
-        {
-          "text": "Chile's offset is UTC-3 during summer and UTC-4 during winter.",
-          "audioSrc": "public/data/audio/dummy/dummy_062_sideB_2.mp3"
-        }
-      ],
-      "note": "**[177]**"
-    },
-    {
-      "cardId": "dummy_063",
-      "cardType": "flippable",
-      "sideA": "No se tanto como me gustaria.",
-      "sideB": [
-        {
-          "text": "I don't know as much as I'd like.",
-          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_0.mp3"
-        },
-        {
-          "text": "I don't know as much as I would like to.",
-          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_1.mp3"
-        },
-        {
-          "text": "My knowledge isn't as deep as I'd like it to be.",
-          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_2.mp3"
-        }
-      ],
-      "note": "Use [As much as] for comparisons of equality (or lack thereof)."
-    },
-    {
-      "cardId": "dummy_064",
-      "cardType": "flippable",
-      "sideA": "Apenas estoy sobreviviendo en las reuniones.",
-      "sideB": [
-        {
-          "text": "I'm barely surviving in the meetings.",
-          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_0.mp3"
-        },
-        {
-          "text": "I am just getting by in the meetings.",
-          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_1.mp3"
-        },
-        {
-          "text": "I'm barely keeping my head above water in the meetings.",
-          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_2.mp3"
-        }
-      ],
-      "note": "[Keeping my head above water] is an idiom meaning to just barely manage or survive a difficult situation."
-    },
-    {
-      "cardId": "dummy_065",
-      "cardType": "flippable",
-      "sideA": "... pero no tanto como me gustaria.",
-      "sideB": [
-        {
-          "text": "...but not as much as I'd like.",
-          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_0.mp3"
-        },
-        {
-          "text": "...but not as much as I would like.",
-          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_1.mp3"
-        },
-        {
-          "text": "...but not to the extent I'd like.",
-          "audioSrc": "public/data/audio/common_meeting/dummy_065_sideB_2.mp3"
-        },
-        {
-          "text": "...but not as much as I'd like to.",
-          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_3.mp3"
-        }
-      ],
-      "note": "[To the extent] is a formal way to say 'al grado' or 'tanto'."
-    },
-    {
-      "cardId": "dummy_066",
-      "cardType": "flippable",
-      "sideA": "¿Que hace esa opcion?",
-      "sideB": [
-        {
-          "text": "What does that option do?",
-          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_0.mp3"
-        },
-        {
-          "text": "What's the function of that option?",
-          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_1.mp3"
-        },
-        {
-          "text": "What does that setting do?",
-          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_2.mp3"
-        }
-      ],
-      "note": "Standard [What does ... do?] structure for inquiring about functionality."
-    },
-    {
-      "cardId": "dummy_067",
-      "cardType": "flippable",
-      "sideA": "¿Que hace este fragmento?",
-      "sideB": [
-        {
-          "text": "What does this snippet do?",
-          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_0.mp3"
-        },
-        {
-          "text": "What does this fragment do?",
-          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_1.mp3"
-        },
-        {
-          "text": "What is the purpose of this snippet?",
-          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_2.mp3"
-        }
-      ],
-      "note": "[Snippet] is the standard developer term for a small 'fragmento' of code."
-    },
-    {
-      "cardId": "dummy_068",
-      "cardType": "flippable",
-      "sideA": "... pero no tanto como quisiera.",
-      "sideB": [
-        {
-          "text": "...but not as much as I'd want.",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_0.mp3"
-        },
-        {
-          "text": "...but not as much as I would like.",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_1.mp3"
-        },
-        {
-          "text": "...but not as much as I wish.",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_2.mp3"
-        },
-        {
-          "text": "...but not as much as I'd want to.",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_3.mp3"
-        },
-        {
-          "text": "...but not as much as I'd like to.",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_4.mp3"
-        }
-      ],
-      "note": "Using [Wish] adds a slight tone of regret to the desire."
-    },
-    {
-      "cardId": "dummy_069",
-      "cardType": "flippable",
-      "sideA": "Quisiera que fuera más.",
-      "sideB": [
-        {
-          "text": "I wish it were more.",
-          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_0.mp3"
-        },
-        {
-          "text": "I'd like it to be more.",
-          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_1.mp3"
-        },
-        {
-          "text": "I want it to be more.",
-          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_2.mp3"
-        }
-      ],
-      "note": "**[40]**\n\nAfter 'I wish', we use the subjunctive [were] for hypothetical states."
-    },
-    {
-      "cardId": "dummy_070",
-      "cardType": "flippable",
-      "sideA": "Me gustaria que eso fuera mejor.",
-      "sideB": [
-        {
-          "text": "I'd like that to be better.",
-          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_0.mp3"
-        },
-        {
-          "text": "I wish that were better.",
-          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_1.mp3"
-        },
-        {
-          "text": "I would like that to be improved.",
-          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_2.mp3"
-        }
-      ],
-      "note": "Structure: [I'd like] + [object] + [to be].\n\n~I'd like that would be better~ and ~I'd like that will be better~ are incorrect because [would like] requires the [object + to + verb] structure."
-    }
+  },
+  {
+    "cardId": "dummy_045",
+    "cardType": "flippable",
+    "sideA": "Me hizo feliz aquello.",
+    "sideB": [
+      {
+        "text": "That made me happy.",
+        "audioSrc": "public/data/audio/dummy/dummy_045_sideB_0.mp3"
+      },
+      {
+        "text": "It made me happy.",
+        "audioSrc": "public/data/audio/dummy/dummy_045_sideB_1.mp3"
+      },
+      {
+        "text": "That made me feel happy.",
+        "audioSrc": "public/data/audio/dummy/dummy_045_sideB_2.mp3"
+      }
+    ],
+    "note": "**[39]**\n\nIn English, we use the causative [make] + [object] + [adjective] to describe how something affects our emotions."
+  },
+  {
+    "cardId": "dummy_046",
+    "cardType": "flippable",
+    "sideA": "Me puso nervioso lo que ellos dijeron.",
+    "sideB": [
+      {
+        "text": "What they said made me nervous.",
+        "audioSrc": "public/data/audio/dummy/dummy_046_sideB_0.mp3"
+      },
+      {
+        "text": "What they said made me feel nervous.",
+        "audioSrc": "public/data/audio/dummy/dummy_046_sideB_1.mp3"
+      },
+      {
+        "text": "It made me nervous what they said.",
+        "audioSrc": "public/data/audio/dummy/dummy_046_sideB_2.mp3"
+      }
+    ],
+    "note": "**[39]**\n\n[What they said] acts as the subject that caused the state of being [nervous]."
+  },
+  {
+    "cardId": "dummy_047",
+    "cardType": "flippable",
+    "sideA": "Me dio asco esa cosa.",
+    "sideB": [
+      {
+        "text": "That thing made me sick.",
+        "audioSrc": "public/data/audio/dummy/dummy_047_sideB_0.mp3"
+      },
+      {
+        "text": "That thing made me feel sick.",
+        "audioSrc": "public/data/audio/dummy/dummy_047_sideB_1.mp3"
+      },
+      {
+        "text": "That made me feel disgusted.",
+        "audioSrc": "public/data/audio/dummy/dummy_047_sideB_2.mp3"
+      }
+    ],
+    "note": "**[39]**\n\nTo express 'dar asco', English often uses [made me sick] or [made me feel disgusted]."
+  },
+  {
+    "cardId": "dummy_048",
+    "cardType": "flippable",
+    "sideA": "Me dio sueño la pelicula.",
+    "sideB": [
+      {
+        "text": "The movie made me sleepy.",
+        "audioSrc": "public/data/audio/dummy/dummy_048_sideB_0.mp3"
+      },
+      {
+        "text": "It made me feel sleepy watching that movie.",
+        "audioSrc": "public/data/audio/dummy/dummy_048_sideB_1.mp3"
+      },
+      {
+        "text": "That movie made me feel drowsy.",
+        "audioSrc": "public/data/audio/dummy/dummy_048_sideB_2.mp3"
+      }
+    ],
+    "note": "**[39]**\n\n[Sleepy] is the adjective for 'tener sueño'. In this case, the movie is the cause."
+  },
+  {
+    "cardId": "dummy_049",
+    "cardType": "flippable",
+    "sideA": "Me hizo preguntarme eso que escuche.",
+    "sideB": [
+      {
+        "text": "What I heard made me wonder.",
+        "audioSrc": "public/data/audio/dummy/dummy_049_sideB_0.mp3"
+      },
+      {
+        "text": "It made me wonder what I heard.",
+        "audioSrc": "public/data/audio/dummy/dummy_049_sideB_1.mp3"
+      },
+      {
+        "text": "That made me question things after I heard it.",
+        "audioSrc": "public/data/audio/dummy/dummy_049_sideB_2.mp3"
+      }
+    ],
+    "note": "**[39]**\n\n[Wonder] is the base verb here. Remember that after [make], we use the base form without 'to'."
+  },
+  {
+    "cardId": "dummy_050",
+    "cardType": "flippable",
+    "sideA": "Me hizo pensar.",
+    "sideB": [
+      {
+        "text": "It made me think.",
+        "audioSrc": "public/data/audio/dummy/dummy_050_sideB_0.mp3"
+      },
+      {
+        "text": "That made me think.",
+        "audioSrc": "public/data/audio/dummy/dummy_050_sideB_1.mp3"
+      },
+      {
+        "text": "It gave me food for thought.",
+        "audioSrc": "public/data/audio/dummy/dummy_050_sideB_2.mp3"
+      }
+    ],
+    "note": "**[39]**\n\n[Food for thought] is a common idiom meaning something that provides mental stimulus or interest."
+  },
+  {
+    "cardId": "dummy_051",
+    "cardType": "flippable",
+    "sideA": "Me hizo sentir mejor.",
+    "sideB": [
+      {
+        "text": "It made me feel better.",
+        "audioSrc": "public/data/audio/dummy/dummy_051_sideB_0.mp3"
+      },
+      {
+        "text": "That made me feel better.",
+        "audioSrc": "public/data/audio/dummy/dummy_051_sideB_1.mp3"
+      },
+      {
+        "text": "It made me feel a bit better.",
+        "audioSrc": "public/data/audio/dummy/dummy_051_sideB_2.mp3"
+      }
+    ],
+    "note": "**[39]**\n\n[Feel better] is the result caused by 'it' or 'that'."
+  },
+  {
+    "cardId": "dummy_052",
+    "cardType": "flippable",
+    "sideA": "Me hizo quedar mal ella.",
+    "sideB": [
+      {
+        "text": "She made me look bad.",
+        "audioSrc": "public/data/audio/dummy/dummy_052_sideB_0.mp3"
+      },
+      {
+        "text": "She made me look incompetent.",
+        "audioSrc": "public/data/audio/dummy/dummy_052_sideB_1.mp3"
+      },
+      {
+        "text": "Her actions made me look bad.",
+        "audioSrc": "public/data/audio/dummy/dummy_052_sideB_2.mp3"
+      }
+    ],
+    "note": "**[39]**\n\n[To look bad] is the standard idiom for 'quedar mal' in a social or professional sense."
+  },
+  {
+    "cardId": "dummy_053",
+    "cardType": "flippable",
+    "sideA": "\"nada que ver!\" (idiom)",
+    "sideB": [
+      {
+        "text": "Not related at all!",
+        "audioSrc": "public/data/audio/dummy/dummy_053_sideB_0.mp3"
+      },
+      {
+        "text": "Zero connection!",
+        "audioSrc": "public/data/audio/dummy/dummy_053_sideB_1.mp3"
+      },
+      {
+        "text": "Completely unrelated!",
+        "audioSrc": "public/data/audio/dummy/dummy_053_sideB_2.mp3"
+      },
+      {
+        "text": "That has nothing to do with it!",
+        "audioSrc": "public/data/audio/dummy/dummy_053_sideB_3.mp3"
+      }
+    ],
+    "note": "[Nothing to do with it] is the most literal way to translate the sentiment of 'nada que ver' regarding topics."
+  },
+  {
+    "cardId": "dummy_054",
+    "cardType": "flippable",
+    "sideA": "Usa una tabla de consulta para acelerar el proceso.",
+    "sideB": [
+      {
+        "text": "Use a lookup table to speed up the process.",
+        "audioSrc": "public/data/audio/dummy/dummy_054_sideB_0.mp3"
+      },
+      {
+        "text": "The system failed during the database lookup.",
+        "audioSrc": "public/data/audio/dummy/dummy_054_sideB_1.mp3"
+      },
+      {
+        "text": "Use a query table to accelerate the process.",
+        "audioSrc": "public/data/audio/dummy/dummy_054_sideB_2.mp3"
+      },
+      {
+        "text": "Utilize a lookup table to optimize speed.",
+        "audioSrc": "public/data/audio/dummy/dummy_054_sideB_3.mp3"
+      }
+    ],
+    "note": "[Lookup table] is the technical term for a table used to map or retrieve values quickly."
+  },
+  {
+    "cardId": "dummy_055",
+    "cardType": "flippable",
+    "sideA": "Tenemos varias tablas de consulta para ese proposito.",
+    "sideB": [
+      {
+        "text": "We have several lookup tables for that purpose.",
+        "audioSrc": "public/data/audio/dummy/dummy_055_sideB_0.mp3"
+      },
+      {
+        "text": "We have multiple lookup tables for that goal.",
+        "audioSrc": "public/data/audio/dummy/dummy_055_sideB_1.mp3"
+      },
+      {
+        "text": "There are several lookup tables for that specific purpose.",
+        "audioSrc": "public/data/audio/dummy/dummy_055_sideB_2.mp3"
+      }
+    ],
+    "note": "[Several] and [Multiple] are natural ways to say 'varias'."
+  },
+  {
+    "cardId": "dummy_056",
+    "cardType": "flippable",
+    "sideA": "Se requiere probar la función en el dispositivo real.",
+    "sideB": [
+      {
+        "text": "It is required to test the feature on a real device.",
+        "audioSrc": "public/data/audio/dummy/dummy_056_sideB_0.mp3"
+      },
+      {
+        "text": "You are required to test the function on an actual device.",
+        "audioSrc": "public/data/audio/dummy/dummy_056_sideB_1.mp3"
+      },
+      {
+        "text": "Testing the feature on the real device is required.",
+        "audioSrc": "public/data/audio/dummy/dummy_056_sideB_2.mp3"
+      }
+    ],
+    "note": "[Actual device] or [Real device] distinguish physical hardware from an emulator or simulator."
+  },
+  {
+    "cardId": "dummy_057",
+    "cardType": "flippable",
+    "sideA": "Chile está tres horas detrás del UTC.",
+    "sideB": [
+      {
+        "text": "Chile is three hours behind UTC.",
+        "audioSrc": "public/data/audio/dummy/dummy_057_sideB_0.mp3"
+      },
+      {
+        "text": "Chile is UTC-3.",
+        "audioSrc": "public/data/audio/dummy/dummy_057_sideB_1.mp3"
+      },
+      {
+        "text": "Chile lags three hours behind UTC.",
+        "audioSrc": "public/data/audio/dummy/dummy_057_sideB_2.mp3"
+      }
+    ],
+    "note": "**[177]**\n\nUse [behind] to describe a negative offset from the UTC baseline."
+  },
+  {
+    "cardId": "dummy_058",
+    "cardType": "flippable",
+    "sideA": "Canadá está dos horas detrás de Chile en el UTC",
+    "sideB": [
+      {
+        "text": "Canada is two hours behind Chile in UTC.",
+        "audioSrc": "public/data/audio/dummy/dummy_058_sideB_0.mp3"
+      },
+      {
+        "text": "Canada lags two hours behind Chile on the UTC scale.",
+        "audioSrc": "public/data/audio/dummy/dummy_058_sideB_1.mp3"
+      },
+      {
+        "text": "There is a two-hour UTC difference between Canada and Chile.",
+        "audioSrc": "public/data/audio/dummy/dummy_058_sideB_2.mp3"
+      }
+    ],
+    "note": "**[177]**"
+  },
+  {
+    "cardId": "dummy_059",
+    "cardType": "flippable",
+    "sideA": "El servidor de correo usa la hora UTC.",
+    "sideB": [
+      {
+        "text": "The mail server uses UTC time.",
+        "audioSrc": "public/data/audio/dummy/dummy_059_sideB_0.mp3"
+      },
+      {
+        "text": "The email server is set to UTC.",
+        "audioSrc": "public/data/audio/dummy/dummy_059_sideB_1.mp3"
+      },
+      {
+        "text": "The mail server runs on UTC.",
+        "audioSrc": "public/data/audio/dummy/dummy_059_sideB_2.mp3"
+      }
+    ],
+    "note": "**[177]**\n\nServers typically [run on] or are [set to] UTC to maintain a consistent log timeline."
+  },
+  {
+    "cardId": "dummy_060",
+    "cardType": "flippable",
+    "sideA": "UTC es el punto de partida para la hora mundial.",
+    "sideB": [
+      {
+        "text": "UTC is the starting point for world time.",
+        "audioSrc": "public/data/audio/dummy/dummy_060_sideB_0.mp3"
+      },
+      {
+        "text": "UTC is the global time baseline.",
+        "audioSrc": "public/data/audio/dummy/dummy_060_sideB_1.mp3"
+      },
+      {
+        "text": "UTC serves as the starting point for world time.",
+        "audioSrc": "public/data/audio/dummy/dummy_060_sideB_2.mp3"
+      }
+    ],
+    "note": "**[177]**"
+  },
+  {
+    "cardId": "dummy_061",
+    "cardType": "flippable",
+    "sideA": "UTC-3 significa tres horas detrás del punto cero.",
+    "sideB": [
+      {
+        "text": "UTC-3 means three hours behind the zero point.",
+        "audioSrc": "public/data/audio/dummy/dummy_061_sideB_0.mp3"
+      },
+      {
+        "text": "UTC-3 signifies being three hours behind point zero.",
+        "audioSrc": "public/data/audio/dummy/dummy_061_sideB_1.mp3"
+      },
+      {
+        "text": "A UTC-3 offset means three hours behind the zero baseline.",
+        "audioSrc": "public/data/audio/dummy/dummy_061_sideB_2.mp3"
+      }
+    ],
+    "note": "**[177]**"
+  },
+  {
+    "cardId": "dummy_062",
+    "cardType": "flippable",
+    "sideA": "Chile usa el UTC-3 en verano y UTC-4 en invierno.",
+    "sideB": [
+      {
+        "text": "Chile uses UTC-3 in summer and UTC-4 in winter.",
+        "audioSrc": "public/data/audio/dummy/dummy_062_sideB_0.mp3"
+      },
+      {
+        "text": "Chile switches between UTC-3 in summer and UTC-4 in winter.",
+        "audioSrc": "public/data/audio/dummy/dummy_062_sideB_1.mp3"
+      },
+      {
+        "text": "Chile's offset is UTC-3 during summer and UTC-4 during winter.",
+        "audioSrc": "public/data/audio/dummy/dummy_062_sideB_2.mp3"
+      }
+    ],
+    "note": "**[177]**"
+  },
+  {
+    "cardId": "dummy_063",
+    "cardType": "flippable",
+    "sideA": "No se tanto como me gustaria.",
+    "sideB": [
+      {
+        "text": "I don't know as much as I'd like.",
+        "audioSrc": "public/data/audio/dummy/dummy_063_sideB_0.mp3"
+      },
+      {
+        "text": "I don't know as much as I would like to.",
+        "audioSrc": "public/data/audio/dummy/dummy_063_sideB_1.mp3"
+      },
+      {
+        "text": "My knowledge isn't as deep as I'd like it to be.",
+        "audioSrc": "public/data/audio/dummy/dummy_063_sideB_2.mp3"
+      }
+    ],
+    "note": "Use [As much as] for comparisons of equality (or lack thereof)."
+  },
+  {
+    "cardId": "dummy_064",
+    "cardType": "flippable",
+    "sideA": "Apenas estoy sobreviviendo en las reuniones.",
+    "sideB": [
+      {
+        "text": "I'm barely surviving in the meetings.",
+        "audioSrc": "public/data/audio/dummy/dummy_064_sideB_0.mp3"
+      },
+      {
+        "text": "I am just getting by in the meetings.",
+        "audioSrc": "public/data/audio/dummy/dummy_064_sideB_1.mp3"
+      },
+      {
+        "text": "I'm barely keeping my head above water in the meetings.",
+        "audioSrc": "public/data/audio/dummy/dummy_064_sideB_2.mp3"
+      }
+    ],
+    "note": "[Keeping my head above water] is an idiom meaning to just barely manage or survive a difficult situation."
+  },
+  {
+    "cardId": "dummy_065",
+    "cardType": "flippable",
+    "sideA": "... pero no tanto como me gustaria.",
+    "sideB": [
+      {
+        "text": "...but not as much as I'd like.",
+        "audioSrc": "public/data/audio/dummy/dummy_065_sideB_0.mp3"
+      },
+      {
+        "text": "...but not as much as I would like.",
+        "audioSrc": "public/data/audio/dummy/dummy_065_sideB_1.mp3"
+      },
+      {
+        "text": "...but not to the extent I'd like.",
+        "audioSrc": "public/data/audio/common_meeting/dummy_065_sideB_2.mp3"
+      }
+    ],
+    "note": "[To the extent] is a formal way to say 'al grado' or 'tanto'."
+  },
+  {
+    "cardId": "dummy_066",
+    "cardType": "flippable",
+    "sideA": "¿Que hace esa opcion?",
+    "sideB": [
+      {
+        "text": "What does that option do?",
+        "audioSrc": "public/data/audio/dummy/dummy_066_sideB_0.mp3"
+      },
+      {
+        "text": "What's the function of that option?",
+        "audioSrc": "public/data/audio/dummy/dummy_066_sideB_1.mp3"
+      },
+      {
+        "text": "What does that setting do?",
+        "audioSrc": "public/data/audio/dummy/dummy_066_sideB_2.mp3"
+      }
+    ],
+    "note": "Standard [What does ... do?] structure for inquiring about functionality."
+  },
+  {
+    "cardId": "dummy_067",
+    "cardType": "flippable",
+    "sideA": "¿Que hace este fragmento?",
+    "sideB": [
+      {
+        "text": "What does this snippet do?",
+        "audioSrc": "public/data/audio/dummy/dummy_067_sideB_0.mp3"
+      },
+      {
+        "text": "What does this fragment do?",
+        "audioSrc": "public/data/audio/dummy/dummy_067_sideB_1.mp3"
+      },
+      {
+        "text": "What is the purpose of this snippet?",
+        "audioSrc": "public/data/audio/dummy/dummy_067_sideB_2.mp3"
+      }
+    ],
+    "note": "[Snippet] is the standard developer term for a small 'fragmento' of code."
+  },
+  {
+    "cardId": "dummy_068",
+    "cardType": "flippable",
+    "sideA": "... pero no tanto como quisiera.",
+    "sideB": [
+      {
+        "text": "...but not as much as I'd want.",
+        "audioSrc": "public/data/audio/dummy/dummy_068_sideB_0.mp3"
+      },
+      {
+        "text": "...but not as much as I would like.",
+        "audioSrc": "public/data/audio/dummy/dummy_068_sideB_1.mp3"
+      },
+      {
+        "text": "...but not as much as I wish.",
+        "audioSrc": "public/data/audio/dummy/dummy_068_sideB_2.mp3"
+      }
+    ],
+    "note": "Using [Wish] adds a slight tone of regret to the desire."
+  },
+  {
+    "cardId": "dummy_069",
+    "cardType": "flippable",
+    "sideA": "Quisiera que fuera más.",
+    "sideB": [
+      {
+        "text": "I wish it were more.",
+        "audioSrc": "public/data/audio/dummy/dummy_069_sideB_0.mp3"
+      },
+      {
+        "text": "I'd like it to be more.",
+        "audioSrc": "public/data/audio/dummy/dummy_069_sideB_1.mp3"
+      },
+      {
+        "text": "I want it to be more.",
+        "audioSrc": "public/data/audio/dummy/dummy_069_sideB_2.mp3"
+      }
+    ],
+    "note": "**[40]**\n\nAfter 'I wish', we use the subjunctive [were] for hypothetical states."
+  },
+  {
+    "cardId": "dummy_070",
+    "cardType": "flippable",
+    "sideA": "Me gustaria que eso fuera mejor.",
+    "sideB": [
+      {
+        "text": "I'd like that to be better.",
+        "audioSrc": "public/data/audio/dummy/dummy_070_sideB_0.mp3"
+      },
+      {
+        "text": "I wish that were better.",
+        "audioSrc": "public/data/audio/dummy/dummy_070_sideB_1.mp3"
+      },
+      {
+        "text": "I would like that to be improved.",
+        "audioSrc": "public/data/audio/dummy/dummy_070_sideB_2.mp3"
+      }
+    ],
+    "note": "Structure: [I'd like] + [object] + [to be]."
+  }
+    
   ]
 }
