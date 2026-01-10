@@ -46,7 +46,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_002_sideB_3.mp3"
         }
       ],
-      "note": "When interacting with AI, [ask it to] is standard for commands.\n\n~answer your in the third person~ is incorrect because 'your' is a possessive adjective and needs a noun. Use [answer you].\n\n~Ask it in the prompt to response you in the third person~ and ~Ask it in the prompt to response in the third person~ are incorrect because 'response' is a noun; use the verb [respond]."
+      "note": "When interacting with AI, [ask it to] is standard for commands.\n\n~answer your in the third person~ is incorrect because 'your' is a possessive adjective and needs a noun. Use [answer you]."
     },
     {
       "cardId": "dummy_003",
@@ -266,7 +266,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_012_sideB_3.mp3"
         }
       ],
-      "note": "[Called] or [Known as] are used to define terms.\n\n~which are called array~ has subject-verb agreement issues (a list is...). Use [which is called an array] or [known as an array].\n\n~A vector is a list of numbers called array~ is missing the indefinite article; use [called an array]."
+      "note": "[Called] or [Known as] are used to define terms.\n\n~which are called array~ has subject-verb agreement issues (a list is...). Use [which is called an array] or [known as an array]."
     },
     {
       "cardId": "dummy_013",
@@ -374,7 +374,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_017_sideB_2.mp3"
         }
       ],
-      "note": "**[176]**\n\n[Hallucinating] is the industry term for an AI inventing facts.\n\n~avoids the AI from making up facts~ is incorrect; 'avoid' is followed by a gerund directly. ~prevents the AI make up facts~ is missing the preposition 'from'. Use [prevents the AI from making up]."
+      "note": "[Hallucinating] is the industry term for an AI inventing facts.\n\n~avoids the AI from making up facts~ is incorrect; 'avoid' is followed by a gerund directly. ~prevents the AI make up facts~ is missing the preposition 'from'. Use [prevents the AI from making up]."
     },
     {
       "cardId": "dummy_018",
@@ -826,7 +826,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_038_sideB_4.mp3"
         }
       ],
-      "note": "**[178]**\n\nUse [in scope] or [within scope] to confirm if a task belongs to the current plan."
+      "note": "Use [in scope] or [within scope] to confirm if a task belongs to the current plan."
     },
     {
       "cardId": "dummy_039",
@@ -1026,7 +1026,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_047_sideB_3.mp3"
         }
       ],
-      "note": "**[39]**\n\nTo express 'dar asco', English often uses [made me sick] or [made me feel disgusted].\n\n~It made me sick that thing~ is unnatural word order; use [That thing made me sick]."
+      "note": "**[39]**\n\nTo express 'dar asco', English often uses [made me sick] or [made me feel disgusted]."
     },
     {
       "cardId": "dummy_048",
@@ -1066,7 +1066,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_049_sideB_2.mp3"
         }
       ],
-      "note": "**[39]**\n\n[Wonder] is the base verb here. Remember that after [make], we use the base form without 'to'.\n\n~What I heard, it made me wonder~ is redundant because [What I heard] is already the subject; you should not add [it] after it.\n\n~It made me wonder about I heard~ is missing the relative pronoun; use [about what I heard]."
+      "note": "**[39]**\n\n[Wonder] is the base verb here. Remember that after [make], we use the base form without 'to'.\n\n~What I heard, it made me wonder~ is redundant because [What I heard] is already the subject; you should not add [it] after it."
     },
     {
       "cardId": "dummy_050",
@@ -1126,7 +1126,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_052_sideB_2.mp3"
         }
       ],
-      "note": "**[39]**\n\n[To look bad] is the standard idiom for 'quedar mal' in a social or professional sense.\n\n~It made me look bad her~ is incorrect; the person doing the action must be the subject: [She made me look bad]."
+      "note": "**[39]**\n\n[To look bad] is the standard idiom for 'quedar mal' in a social or professional sense."
     },
     {
       "cardId": "dummy_053",
@@ -1296,13 +1296,9 @@
         {
           "text": "UTC serves as the starting point for world time.",
           "audioSrc": "public/data/audio/dummy/dummy_060_sideB_2.mp3"
-        },
-        {
-          "text": "UTC is the start point for world time.",
-          "audioSrc": "public/data/audio/dummy/dummy_060_sideB_3.mp3"
         }
       ],
-      "note": "**[177]**\n\n~UTC is the starting point for the world time~ is incorrect because 'world time' is a general concept that does not require [the]."
+      "note": "**[177]**"
     },
     {
       "cardId": "dummy_061",
@@ -1514,7 +1510,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_070_sideB_2.mp3"
         }
       ],
-      "note": "Structure: [I'd like] + [object] + [to be].\n\n~I'd like that would be better~ and ~I'd like that will be better~ are incorrect because [would like] requires the [object + to + verb] structure.\n\n~I'd like that was better~ and ~I'd like that were better~ are incorrect because 'would like' requires the [object + to + verb] structure: [I'd like that to be better]."
+      "note": "Structure: [I'd like] + [object] + [to be].\n\n~I'd like that would be better~ and ~I'd like that will be better~ are incorrect because [would like] requires the [object + to + verb] structure."
     }
   ]
 }
