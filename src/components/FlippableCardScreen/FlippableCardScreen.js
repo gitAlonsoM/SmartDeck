@@ -159,7 +159,8 @@ populateCard() {
             if (Array.isArray(this.cardData.sideB) && this.cardData.sideB.length > 0) {
                 if (typeof this.cardData.sideB[0] === 'object' && this.cardData.sideB[0] !== null) {
                     this.cardData.sideB.forEach((item, index) => {
-                        sideBContainer.appendChild(this._createTextLine(item.text, false, index, item.audioSrc));
+                       // VERIFY: Passing item.phonetic to the renderer if it exists
+                        sideBContainer.appendChild(this._createTextLine(item.text, false, index, item.audioSrc, item.phonetic));
                     });
                 } else {
                     this.cardData.sideB.forEach((line, index) => {
@@ -247,14 +248,29 @@ populateCard() {
         if (element) container.appendChild(element);
     }
 
-    _createTextLine(text, isSideA = false, index = -1, audioSrcOverride = null) {
+    _createTextLine(text, isSideA = false, index = -1, audioSrcOverride = null, phonetic = null) {
        const lineDiv = document.createElement('div');
-        lineDiv.className = 'flex items-center justify-between w-full gap-4';
-        const textElement = document.createElement('p');
-        textElement.textContent = text;
-        textElement.className = isSideA ? 'text-lg md:text-xl font-semibold text-center flex-grow' : 'text-lg';
-        
-        const playButton = document.createElement('button');
+       lineDiv.className = 'flex items-center justify-between w-full gap-4';
+       
+       const textElement = document.createElement('p');
+       // Adjusted class to ensure flex-grow applies correctly to Side B as well for alignment
+       textElement.className = isSideA ? 'text-lg md:text-xl font-semibold text-center flex-grow' : 'text-lg flex-grow';
+       
+       // Render Text + Optional Phonetic
+       if (phonetic && !isSideA) {
+            const mainText = document.createTextNode(text);
+            const phoneSpan = document.createElement('span');
+            phoneSpan.textContent = ` ${phonetic}`;
+            // Styling: Pink color (text-pink-400), monospaced font, slightly smaller
+            phoneSpan.className = 'text-base text-pink-400 font-mono ml-3 opacity-90';
+            
+            textElement.appendChild(mainText);
+            textElement.appendChild(phoneSpan);
+       } else {
+           textElement.textContent = text;
+       }
+       
+       const playButton = document.createElement('button');
         playButton.innerHTML = '<i class="fas fa-volume-up"></i>';
         playButton.dataset.index = index; // Add index to identify the button later
         playButton.dataset.textToSpeak = text;
