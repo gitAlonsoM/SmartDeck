@@ -41,17 +41,19 @@ class FlippableCardScreen {
         this.setupEventListeners();
     }
 
-    populateCard() {
+populateCard() {
         const standardContent = document.getElementById('side-a-content');
         const singleAudioContent = document.getElementById('audio-content-container');
         const conversationContent = document.getElementById('conversation-content-container');
 
+        // Reset visibility
         standardContent.classList.add('hidden');
         singleAudioContent.classList.add('hidden');
         conversationContent.classList.add('hidden');
 
         const conversation = this.cardData.sideA?.conversation;
 
+        // 1. Handle Conversation Mode
         if (conversation && Array.isArray(conversation)) {
             conversationContent.classList.remove('hidden');
             const wrapper = document.getElementById('conversation-player-wrapper');
@@ -65,6 +67,8 @@ class FlippableCardScreen {
                 wrapper.appendChild(player);
             });
             this._playConversation();
+
+        // 2. Handle Audio-Only Mode (Large Icon)
         } else if (this.cardData.audioSrc) {
             singleAudioContent.classList.remove('hidden');
             const wrapper = document.getElementById('audio-player-wrapper');
@@ -75,34 +79,83 @@ class FlippableCardScreen {
             player.className = 'w-full';
             wrapper.appendChild(player);
             player.play().catch(e => console.warn("Autoplay was prevented.", e.name));
+
+        // 3. Handle Standard Text Mode (Side A)
         } else {
             standardContent.classList.remove('hidden');
             const textContainer = document.getElementById('side-a-text-content');
             const visualContainer = document.getElementById('visual-content-container');
+            
+            // Clear previous content
             textContainer.innerHTML = '';
             visualContainer.innerHTML = '';
+
+            // Ensure container stacks vertically with gaps
+            textContainer.className = 'text-center w-full flex flex-col gap-4';
+
             let sideAData = typeof this.cardData.sideA === 'string' ? { text: this.cardData.sideA } : this.cardData.sideA;
-            textContainer.appendChild(this._createTextLine(sideAData.text, true));
+            
+            // --- LOGIC FOR MULTILINE SIDE A ---
+            if (sideAData.text && sideAData.text.includes('\n')) {
+                console.log("VERIFY: Multiline Side A detected. Splitting text.");
+                const lines = sideAData.text.split('\n');
+                lines.forEach(line => {
+                    if (line.trim()) {
+                        // Create independent line for each word
+                        textContainer.appendChild(this._createTextLine(line.trim(), true));
+                    }
+                });
+            } else {
+                // Standard single line behavior
+                textContainer.appendChild(this._createTextLine(sideAData.text, true));
+            }
+            // ----------------------------------
+
             if (sideAData.visualContent) {
                 this._renderVisualContent(sideAData.visualContent, visualContainer);
             }
         }
 
+        // 4. Handle Side B and Side A Context on Back
         const sideAOnBackContainer = document.getElementById('side-a-content-on-back');
         const sideBContainer = document.getElementById('side-b-content');
         sideAOnBackContainer.innerHTML = '';
         sideBContainer.innerHTML = '';
 
+        // Render Side A Context on Back (Small Header)
+        if (!conversation) {
+            if (!this.cardData.audioSrc) {
+                let text = typeof this.cardData.sideA === 'string' ? this.cardData.sideA : this.cardData.sideA.text;
+                
+                // --- LOGIC FOR MULTILINE HEADER ON BACK ---
+                // We ensure the header also respects newlines for consistency
+                if (text && text.includes('\n')) {
+                    const lines = text.split('\n');
+                    lines.forEach(line => {
+                        if (line.trim()) {
+                            const lineEl = this._createTextLine(line.trim(), true);
+                            // Adjust style for header (smaller than front)
+                            const p = lineEl.querySelector('p');
+                            if(p) {
+                                p.classList.remove('text-lg', 'md:text-xl');
+                                p.classList.add('text-sm', 'font-medium', 'text-gray-400');
+                            }
+                            sideAOnBackContainer.appendChild(lineEl);
+                        }
+                    });
+                } else {
+                    sideAOnBackContainer.appendChild(this._createTextLine(text, true));
+                }
+                // ------------------------------------------
+            }
+        }
+
+        // Render Side B Content
         if (conversation && Array.isArray(conversation)) {
             conversation.forEach((part, index) => {
                 sideBContainer.appendChild(this._createTextLine(part.text, false, index, part.audioSrc));
             });
         } else {
-            if (!this.cardData.audioSrc) {
-                let text = typeof this.cardData.sideA === 'string' ? this.cardData.sideA : this.cardData.sideA.text;
-                sideAOnBackContainer.appendChild(this._createTextLine(text, true));
-            }
-
             if (Array.isArray(this.cardData.sideB) && this.cardData.sideB.length > 0) {
                 if (typeof this.cardData.sideB[0] === 'object' && this.cardData.sideB[0] !== null) {
                     this.cardData.sideB.forEach((item, index) => {
@@ -117,6 +170,7 @@ class FlippableCardScreen {
             }
         }
         
+        // 5. Handle Note/Modal Content
         const noteContainer = document.getElementById('note-content-container');
         noteContainer.innerHTML = '';
         noteContainer.classList.add('hidden');
@@ -125,22 +179,16 @@ class FlippableCardScreen {
             const noteContent = this.cardData.note.split('\n\n').map(paragraph => {
                 let formattedPara = paragraph.trim();
                 if (formattedPara) {
-                    console.log(`DEBUG: [FlippableCardScreen] Processing Note Paragraph: "${formattedPara}"`);
-                    
-                    // 1. PRIMERO procesar el patrón: **[ID]** (Clickable Modals)
-                    // Added strict **[ID]** matching with global flag to catch ALL instances in the paragraph
+                    // Glossary Replacement logic...
                     formattedPara = formattedPara.replace(/\*\*\[(\d+)\]\*\*/g, (match, termId) => {
-                        console.log(`DEBUG: [FlippableCardScreen] Found Glossary Term ID: ${termId}`);
-                        const glossary = GlossaryService.getCachedGlossary('english_rules'); // Hardcoded as requested
+                        const glossary = GlossaryService.getCachedGlossary('english_rules');
                         if (glossary && glossary[termId]) {
                             const termTitle = glossary[termId].title;
                             return `<a href="#" class="glossary-term font-bold text-green-400 hover:underline" data-term-key="${termId}">${termTitle}</a>`;
                         }
-                        console.warn(`DEBUG: [FlippableCardScreen] Term ID ${termId} NOT FOUND in cached glossary.`);
                         return `<strong>[Rule ${termId} Not Found]</strong>`;
                     });
 
-                    // 2. DESPUÉS procesar los patrones de formato de texto
                     formattedPara = formattedPara.replace(/\[([^\]]+)\]/g, '<strong class="font-semibold text-indigo-400">$1</strong>');
                     formattedPara = formattedPara.replace(/~([^~]+)~/g, '<strong class="font-semibold text-yellow-600 dark:text-yellow-400">$1</strong>');
                     
@@ -155,6 +203,10 @@ class FlippableCardScreen {
             }
         }
     }
+
+
+
+
 
     _playConversation(index = 0) {
         const player = document.getElementById(`audio-part-${index}`);
