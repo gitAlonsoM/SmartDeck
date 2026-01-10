@@ -4,7 +4,7 @@
   "description": "Master key English grammar concepts by completing the sentences and listening to the correct pronunciation.",
   "deckType": "audioChoice",
   "isAiGenerated": false,
-  "hint": "Developer Note: The 'hint' field within individual cards is strictly displayed post-answer. It must not contain information required to solve the exercise. Each card must be self-sufficient and clear enough to be completed independently. Use the 'hint' property exclusively for supplementary pedagogical value or context after the user's choice has been made.",
+  "hint": "Developer Note: The 'hint' field within individual cards is strictly displayed post-answer. It must not contain information required to solve the exercise. Each card must be self-sufficient and clear enough to be completed independently. Use the 'hint' property exclusively for supplementary pedagogical value or context after the user's choice has been made. AND FROM NOW, JUST A SHORT ONE LINE.",
   "cards": [
     {
       "cardId": "egac_001",
@@ -17519,7 +17519,124 @@
       "type": "text",
       "value": "**[175]**\n\nThis is a **Mandatory 'Of'** case. When describing abstract measurements or physical properties (density, weight, volume), the [of] structure is required for precision.\n\n~the liquid density~ is sometimes used as a compound noun, but in formal scientific measurement, [the density of the liquid] is the standard."
     }
-  }
+  },
+  {
+      "cardId": "egac_626",
+      "category": "Prepositions",
+      "sentenceParts": {
+        "prefix": "To maintain high availability, the emergency security patch must be applied ",
+        "suffix": " of the initial vulnerability detection."
+      },
+      "options": [
+        {
+          "text": "strictly within the first hour",
+          "isCorrect": true
+        },
+        {
+          "text": "exactly in the first hour",
+          "isCorrect": false
+        },
+        {
+          "text": "during the first hour",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "To maintain high availability, the emergency security patch must be applied strictly within the first hour of the initial vulnerability detection.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_626.mp3",
+      "hint": "We are talking about a deadline where any moment before the limit is acceptable.",
+      "content": {
+        "type": "text",
+        "value": "**[178]**\n\nUse [within] to define a deadline or timeframe where the action can happen at any point **before** the limit expires.\n\n~in the first hour~ often implies waiting until the hour is almost over or exactly at that point. ~during~ simply describes the duration but lacks the sense of a 'limit' or 'constraint' that [within] provides in a professional SLA context."
+      }
+    },
+    {
+      "cardId": "egac_627",
+      "category": "Prepositions",
+      "sentenceParts": {
+        "prefix": "The Lead Architect insisted that all new microservices must operate ",
+        "suffix": " to avoid architectural technical debt."
+      },
+      "options": [
+        {
+          "text": "within the established project scope",
+          "isCorrect": true
+        },
+        {
+          "text": "inside the established project scope",
+          "isCorrect": false
+        },
+        {
+          "text": "in the established project scope",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "The Lead Architect insisted that all new microservices must operate within the established project scope to avoid architectural technical debt.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_627.mp3",
+      "hint": "Think about compliance and staying inside the boundaries of a rule or plan.",
+      "content": {
+        "type": "text",
+        "value": "**[178]**\n\nFor **Compliance & Scopes**, [within] is the mandatory choice. It defines that the services must stay inside the 'boundaries' of the plan.\n\n~inside~ is generally used for physical containers (like a box). ~in~ is too informal and lacks the technical precision required when discussing project 'limits' or 'constraints'."
+      }
+    },
+    {
+      "cardId": "egac_628",
+      "category": "Prepositions",
+      "sentenceParts": {
+        "prefix": "For the feature to be considered successful, the API latency must stay ",
+        "suffix": " even during peak traffic hours."
+      },
+      "options": [
+        {
+          "text": "within acceptable performance limits",
+          "isCorrect": true
+        },
+        {
+          "text": "under acceptable performance limits",
+          "isCorrect": false
+        },
+        {
+          "text": "below acceptable performance limits",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "For the feature to be considered successful, the API latency must stay within acceptable performance limits even during peak traffic hours.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_628.mp3",
+      "hint": "The latency needs to remain inside a specific allowed 'range' or 'threshold'.",
+      "content": {
+        "type": "text",
+        "value": "**[178]**\n\n[within] is used for **Technical Precision & Thresholds**. It implies the value stays inside the allowed 'territory' defined by the limits.\n\n~under~ and ~below~ are very common distractors. While they describe being 'less than' a number, [within... limits] is the correct idiomatic collocation for staying inside a defined range or set of requirements."
+      }
+    },
+    {
+      "cardId": "egac_629",
+      "category": "Prepositions",
+      "sentenceParts": {
+        "prefix": "The script is designed to automatically verify if the input string is ",
+        "suffix": " before proceeding to the database commit.",
+        "image": ""
+      },
+      "options": [
+        {
+          "text": "within the allowed character range",
+          "isCorrect": true
+        },
+        {
+          "text": "between the allowed character range",
+          "isCorrect": false
+        },
+        {
+          "text": "at the allowed character range",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "The script is designed to automatically verify if the input string is within the allowed character range before proceeding to the database commit.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_629.mp3",
+      "hint": "We are checking if the data falls inside the internal boundaries of a set range.",
+      "content": {
+        "type": "text",
+        "value": "**[178]**\n\n[within] correctly identifies that the string belongs **inside** the set of allowed characters.\n\n~between~ is a distractor; you stay 'between two points', but you are [within a range]. ~at~ is a point-specific preposition and does not describe being inside a boundary."
+      }
+    }
 
 
 
