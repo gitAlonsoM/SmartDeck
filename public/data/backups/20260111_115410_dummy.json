@@ -24,10 +24,6 @@
         {
           "text": "Ask it in the prompt to answer you in the third person.",
           "audioSrc": "public/data/audio/dummy/dummy_002_sideB_3.mp3"
-        },
-        {
-          "text": "Ask it in the prompt to respond to you in the third person.",
-          "audioSrc": "public/data/audio/dummy/dummy_002_sideB_4.mp3"
         }
       ],
       "note": "When interacting with AI, [ask it to] is standard for commands.\n\n~answer your in the third person~ is incorrect because 'your' is a possessive adjective and needs a noun. Use [answer you].\n\n~Ask it in the prompt to response you in the third person~ and ~Ask it in the prompt to response in the third person~ are incorrect because 'response' is a noun; use the verb [respond].\n\n~Respond you~ is incorrect because 'respond' requires the preposition 'to' when followed by an object. Use [respond to you] or simply [answer you]."
@@ -412,10 +408,6 @@
         {
           "text": "Which branches were joined with the current branch?",
           "audioSrc": "public/data/audio/dummy/dummy_076_sideB_2.mp3"
-        },
-        {
-          "text": "Which branches were merged into the current one?",
-          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_3.mp3"
         }
       ],
       "note": "**[146]**\n\nIn Git, [Merged into] is the standard preposition. \n\n~merged to the branch~ is less common than [merged into].\n\n~Merged in the branch~ is acceptable but [merged into] is much more precise for technical operations involving integration."
@@ -486,7 +478,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_079_sideB_3.mp3"
         }
       ],
-      "note": "**[18]**\n\n[Clear something up] usually implies resolving a doubt.\n\n~Let's leave something clear~ is a direct translation; use [make something clear] or [set the record straight]."
+      "note": "[Clear something up] usually implies resolving a doubt.\n\n~Let's leave something clear~ is a direct translation; use [make something clear] or [set the record straight]."
     },
     {
       "cardId": "dummy_080",
@@ -571,7 +563,7 @@
         }
       ],
       "note": "[Later] or [Further down the line] indicate future use.\n\nIn the phrase 'for use', [use] is a **noun**. After a preposition like 'for', you must use either a noun or a [gerund] (-ing). If you use a verb, the structure is usually [to use]."
-    },
+     },
     {
       "cardId": "dummy_084",
       "cardType": "flippable",
@@ -610,7 +602,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_085_sideB_2.mp3"
         }
       ],
-      "note": "[To make it work] is the standard causative structure.\n\nWe did this.\n\n~We made this to make it work~ is redundant and uses 'make' for an action; use [did this].\n\n ~To make it working~ is grammatically incorrect; the causative 'make' requires the [base verb] (work)."
+      "note": "[To make it work] is the standard causative structure.\n\n~We made this to make it work~ is redundant and uses 'make' for an action; use [did this]. ~To make it working~ is grammatically incorrect; the causative 'make' requires the [base verb] (work)."
     },
     {
       "cardId": "dummy_086",
@@ -628,10 +620,6 @@
         {
           "text": "I'm very frugal with my money.",
           "audioSrc": "public/data/audio/dummy/dummy_086_sideB_2.mp3"
-        },
-        {
-          "text": "I don't spend too much money.",
-          "audioSrc": "public/data/audio/dummy/dummy_086_sideB_3.mp3"
         }
       ],
       "note": "[Thrifty] and [Frugal] are positive ways to describe someone who saves."
@@ -746,7 +734,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_091_sideB_2.mp3"
         }
       ],
-      "note": "**[12]**\n\nTechnical term: [The condition is met] (se cumple).\n\n~A condition that never meets~ is incorrect because 'meet' in this context is a transitive verb that requires a passive structure when the condition is the subject. Use [is never met]."
+      "note": "Technical term: [The condition is met] (se cumple).\n\n~A condition that never meets~ is incorrect because 'meet' in this context is a transitive verb that requires a passive structure when the condition is the subject. Use [is never met]."
     },
     {
       "cardId": "dummy_092",
@@ -786,7 +774,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_093_sideB_2.mp3"
         }
       ],
-      "note": "**[157]**\n\n[Below] contrasts with [Above]."
+      "note": "[Below] contrasts with [Above]."
     },
     {
       "cardId": "dummy_094",
@@ -846,7 +834,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_096_sideB_2.mp3"
         }
       ],
-      "note": "Subjunctive: [I wish there were] (not ~was~).\n\n~I would like them to be more~ changes the meaning to 'I want them to be larger' or 'I want them to be something else'. To express existence (que hubieran), you must use the [there to be] structure.\n\n~I would like them to be more~ is incorrect in this context because it translates to 'quisiera que fueran más [adjetivo]' (e.g., more professional) instead of referring to quantity."
+      "note": "Subjunctive: [I wish there were] (not ~was~).\n\n~I would like them to be more~ changes the meaning to 'I want them to be larger' or 'I want them to be something else'. To express existence (que hubieran), you must use the [there to be] structure."
     },
     {
       "cardId": "dummy_097",

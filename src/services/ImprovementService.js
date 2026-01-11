@@ -285,6 +285,13 @@ Your final response MUST be structured into distinct parts.
    - **NO NEW FIELDS:** Do NOT add fields like \`content\` if the original card did not have them. Tu no cambias la estructura del JSON, solo cambias el contenido de este.
    - **NO DELETIONS:** Keep all original fields (except the metadata mentioned in step 3).
 
+### 🚨 FATAL ERROR PREVENTION: METADATA PURGE
+- **MANDATORY:** You MUST double-check every card object before finalizing Part 1. 
+- **STRICT DELETION:** The fields \`review_request\`, \`user_comment\`, and \`reasons\` MUST NOT exist in the final JSON. 
+- If Part 1 contains even a single \`review_request\` field, the task is considered a total failure. 
+- **CLEAN DATA ONLY:** Your output must be ready to be parsed by a machine that does not know what a "review_request" is.
+
+
 ### Part 2: Improved Modals JSON (Optional)
 **ONLY** include this section if you improved/redesigned a modal (Rule 7).
 1. Header: \`## 2. Improved Modals JSON\`
