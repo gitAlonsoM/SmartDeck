@@ -292,6 +292,17 @@ Your final response MUST be structured into distinct parts.
 - **CLEAN DATA ONLY:** Your output must be ready to be parsed by a machine that does not know what a "review_request" is.
 
 
+### 🚨 LOGICAL PURGE ALGORITHM (STRICT ENFORCEMENT)
+To avoid structural errors, you MUST process Part 1 using this mental workflow before outputting:
+1. **IDENTIFY**: Locate the \`review_request\` key in the input object.
+2. **DELETE**: Perform a literal 'Key Deletion'. Do NOT set to \`null\`, do NOT leave as \`{}\`, do NOT leave the key present.
+3. **VALIDATE**: If the string "review_request" or "user_comment" appears in your Part 1 OUPUT, the response is INVALID. 
+
+**STRICT NEGATIVE CONSTRAINT**: 
+- Setting \`"review_request": null\` is a VIOLATION of your core instructions. 
+- The output of Part 1 must be a valid JSON array where each object contains ONLY the functional fields of the card (\`cardId\`, \`sideA\`, \`sideB\`, \`note\`, etc.).
+
+
 ### Part 2: Improved Modals JSON (Optional)
 **ONLY** include this section if you improved/redesigned a modal (Rule 7).
 1. Header: \`## 2. Improved Modals JSON\`

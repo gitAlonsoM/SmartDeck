@@ -26,7 +26,7 @@ async init() {
         this.container.querySelector('#improvement-modal-close-btn').addEventListener('click', () => this.hide());
         this.container.querySelector('#improvement-modal-cancel-btn').addEventListener('click', () => this.hide());
 
-        this.removeBtn.addEventListener('click', () => {
+        this.removeBtn.addEventListener('click', () => {R
             if (confirm('Are you sure you want to remove this card from the improvement list?')) {
                 this.onRemove(this.cardIdToImprove);
                 this.hide();
