@@ -274,7 +274,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_069_sideB_2.mp3"
         }
       ],
-      "note": "**[40]**\n\nAfter 'I wish', we use the subjunctive [were] for hypothetical states.\n\n~I'd like it to be more of it~ is invalid because it is redundant; use [I'd like more of it] or [I'd like it to be more] depending on whether you refer to quantity or quality.\n\n~I'd like it there to be more~ is incorrect because it mixes the direct object 'it' with the existential 'there'. Use [I'd like it to be more] or [I'd like there to be more]."
+      "note": "**[40]**\n\nAfter 'I wish', we use the subjunctive [were] for hypothetical states.\n\n~I'd like it to be more of it~ is invalid because it is redundant; use [I'd like more of it] or [I'd like it to be more] depending on whether you refer to quantity or quality."
     },
     {
       "cardId": "dummy_070",
@@ -662,7 +662,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_087_sideB_2.mp3"
         }
       ],
-      "note": "[Big spender] is the idiomatic way to describe someone who spends a lot.\n\n~I don't like spending to much money~ is incorrect because of the spelling of [too]. It should be [too much] to indicate an excessive amount."
+      "note": "[Big spender] is the idiomatic way to describe someone who spends a lot."
     },
     {
       "cardId": "dummy_088",
@@ -1022,7 +1022,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_104_sideB_2.mp3"
         }
       ],
-      "note": "In technical environments, we usually say [break] a dependency when a change causes it to stop working correctly.\n\n~I don't want to break any dependence~ is incorrect in a technical context; we use the word [dependency] (plural [dependencies]) to refer to software components."
+      "note": "In technical environments, we usually say [break] a dependency when a change causes it to stop working correctly."
     },
     {
       "cardId": "dummy_105",
@@ -1064,10 +1064,6 @@
         {
           "text": "I wish there was more.",
           "audioSrc": "public/data/audio/dummy/dummy_106_sideB_2.mp3"
-        },
-        {
-          "text": "I'd like there to be more of them.",
-          "audioSrc": "public/data/audio/dummy/dummy_106_sideB_3.mp3"
         }
       ],
       "note": "**[182]**\n\n**[40]**\n\n[I wish there were more] is the formal subjunctive for quantity. In casual speech, 'there was' is often heard but 'there were' remains the standard.\n\n~I'd like them to be more~ is incorrect because it implies you want the people to change (be more professional or taller), not that you want a higher number of them to exist."
@@ -1134,7 +1130,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_109_sideB_2.mp3"
         }
       ],
-      "note": "**[182]**\n\n[Clarity] is the noun form of 'clear'. \n\n~I want that there is more clarity~ is a common mistake; in English, after 'want', we use the object + infinitive structure: [I want there to be].\n\n~I want there is more clarity~ is incorrect because 'want' requires an object followed by an infinitive with 'to'. [I want there to be] is the correct structure."
+      "note": "**[182]**\n\n[Clarity] is the noun form of 'clear'. \n\n~I want that there is more clarity~ is a common mistake; in English, after 'want', we use the object + infinitive structure: [I want there to be]."
     },
     {
       "cardId": "dummy_110",
@@ -1172,10 +1168,6 @@
         {
           "text": "They expect that there will be some delays due to the migration.",
           "audioSrc": "public/data/audio/dummy/dummy_111_sideB_2.mp3"
-        },
-        {
-          "text": "They are expecting some delays due to the migration.",
-          "audioSrc": "public/data/audio/dummy/dummy_111_sideB_3.mp3"
         }
       ],
       "note": "**[182]**\n\n[Expect there to be] follows the same pattern as 'want there to be'.\n\n~They expect that there are delays~ is incorrect for future anticipation; use [there to be] or [there will be]."
@@ -1225,18 +1217,9 @@
       "cardType": "flippable",
       "sideA": "Hay problemas con acentos y signos en Frances",
       "sideB": [
-        {
-          "text": "There are problems with accents and punctuation in French.",
-          "audioSrc": "public/data/audio/dummy/dummy_114_sideB_0.mp3"
-        },
-        {
-          "text": "There are issues with French accents and signs.",
-          "audioSrc": "public/data/audio/dummy/dummy_114_sideB_1.mp3"
-        },
-        {
-          "text": "French accents and punctuation marks are causing issues.",
-          "audioSrc": "public/data/audio/dummy/dummy_114_sideB_2.mp3"
-        }
+        { "text": "There are problems with accents and punctuation in French.", "audioSrc": "public/data/audio/dummy/dummy_114_sideB_0.mp3" },
+        { "text": "There are issues with French accents and signs.", "audioSrc": "public/data/audio/dummy/dummy_114_sideB_1.mp3" },
+        { "text": "French accents and punctuation marks are causing issues.", "audioSrc": "public/data/audio/dummy/dummy_114_sideB_2.mp3" }
       ],
       "note": "[Punctuation marks] is the technical term for 'signos de puntuación'."
     },
@@ -1245,22 +1228,9 @@
       "cardType": "flippable",
       "sideA": "Lo mas probable es que sea eso que dices",
       "sideB": [
-        {
-          "text": "It's most likely what you're saying.",
-          "audioSrc": "public/data/audio/dummy/dummy_115_sideB_0.mp3"
-        },
-        {
-          "text": "Most likely, it's what you said.",
-          "audioSrc": "public/data/audio/dummy/dummy_115_sideB_1.mp3"
-        },
-        {
-          "text": "It's probably what you're talking about.",
-          "audioSrc": "public/data/audio/dummy/dummy_115_sideB_2.mp3"
-        },
-        {
-          "text": "Most likely, it's what you are saying.",
-          "audioSrc": "public/data/audio/dummy/dummy_115_sideB_3.mp3"
-        }
+        { "text": "It's most likely what you're saying.", "audioSrc": "public/data/audio/dummy/dummy_115_sideB_0.mp3" },
+        { "text": "Most likely, it's what you said.", "audioSrc": "public/data/audio/dummy/dummy_115_sideB_1.mp3" },
+        { "text": "It's probably what you're talking about.", "audioSrc": "public/data/audio/dummy/dummy_115_sideB_2.mp3" }
       ],
       "note": "[Most likely] indicates a high probability."
     },
@@ -1269,58 +1239,31 @@
       "cardType": "flippable",
       "sideA": "Lo mas probable es que sea ese procedimiento",
       "sideB": [
-        {
-          "text": "It's most likely that procedure.",
-          "audioSrc": "public/data/audio/dummy/dummy_116_sideB_0.mp3"
-        },
-        {
-          "text": "That procedure is the most likely cause.",
-          "audioSrc": "public/data/audio/dummy/dummy_116_sideB_1.mp3"
-        },
-        {
-          "text": "It's probably that procedure.",
-          "audioSrc": "public/data/audio/dummy/dummy_116_sideB_2.mp3"
-        }
+        { "text": "It's most likely that procedure.", "audioSrc": "public/data/audio/dummy/dummy_116_sideB_0.mp3" },
+        { "text": "That procedure is the most likely cause.", "audioSrc": "public/data/audio/dummy/dummy_116_sideB_1.mp3" },
+        { "text": "It's probably that procedure.", "audioSrc": "public/data/audio/dummy/dummy_116_sideB_2.mp3" }
       ],
-      "note": "When talking about software logic, we often use [most likely] to diagnose bugs.\n\n~Probably It's that procedure~ is awkward; the adverb 'probably' usually follows the verb 'to be'. Use [It is probably] or [It's probably]."
+      "note": "When talking about software logic, we often use [most likely] to diagnose bugs."
     },
     {
       "cardId": "dummy_117",
       "cardType": "flippable",
       "sideA": "El no lo es, pero el otro lo es.",
       "sideB": [
-        {
-          "text": "He isn't, but the other one is.",
-          "audioSrc": "public/data/audio/dummy/dummy_117_sideB_0.mp3"
-        },
-        {
-          "text": "He's not, but the other one is.",
-          "audioSrc": "public/data/audio/dummy/dummy_117_sideB_1.mp3"
-        },
-        {
-          "text": "He is not, but the other is.",
-          "audioSrc": "public/data/audio/dummy/dummy_117_sideB_2.mp3"
-        }
+        { "text": "He isn't, but the other one is.", "audioSrc": "public/data/audio/dummy/dummy_117_sideB_0.mp3" },
+        { "text": "He's not, but the other one is.", "audioSrc": "public/data/audio/dummy/dummy_117_sideB_1.mp3" },
+        { "text": "He is not, but the other is.", "audioSrc": "public/data/audio/dummy/dummy_117_sideB_2.mp3" }
       ],
-      "note": "We use [the other one is] to avoid repeating the adjective or noun.\n\n~He is not, but the another one is~ is incorrect because 'another' cannot follow the definite article 'the'. Use [the other one] or simply [another one] without 'the'."
+      "note": "We use [the other one is] to avoid repeating the adjective or noun."
     },
     {
       "cardId": "dummy_118",
       "cardType": "flippable",
       "sideA": "El lo es, pero el otro no lo es.",
       "sideB": [
-        {
-          "text": "He is, but the other one isn't.",
-          "audioSrc": "public/data/audio/dummy/dummy_118_sideB_0.mp3"
-        },
-        {
-          "text": "He's the one, but the other isn't.",
-          "audioSrc": "public/data/audio/dummy/dummy_118_sideB_1.mp3"
-        },
-        {
-          "text": "He is, while the other one is not.",
-          "audioSrc": "public/data/audio/dummy/dummy_118_sideB_2.mp3"
-        }
+        { "text": "He is, but the other one isn't.", "audioSrc": "public/data/audio/dummy/dummy_118_sideB_0.mp3" },
+        { "text": "He's the one, but the other isn't.", "audioSrc": "public/data/audio/dummy/dummy_118_sideB_1.mp3" },
+        { "text": "He is, while the other one is not.", "audioSrc": "public/data/audio/dummy/dummy_118_sideB_2.mp3" }
       ],
       "note": "Observe the contrast using [but] or [while]."
     },
@@ -1329,26 +1272,9 @@
       "cardType": "flippable",
       "sideA": "La razón por la que no se muestra es...",
       "sideB": [
-        {
-          "text": "The reason it's not being displayed is...",
-          "audioSrc": "public/data/audio/dummy/dummy_119_sideB_0.mp3"
-        },
-        {
-          "text": "The reason it's not getting displayed is...",
-          "audioSrc": "public/data/audio/dummy/dummy_119_sideB_1.mp3"
-        },
-        {
-          "text": "The reason why it isn't showing up is...",
-          "audioSrc": "public/data/audio/dummy/dummy_119_sideB_2.mp3"
-        },
-        {
-          "text": "The reason it's not showing up is...",
-          "audioSrc": "public/data/audio/dummy/dummy_119_sideB_3.mp3"
-        },
-        {
-          "text": "The reason it's not displayed is...",
-          "audioSrc": "public/data/audio/dummy/dummy_119_sideB_4.mp3"
-        }
+        { "text": "The reason it's not being displayed is...", "audioSrc": "public/data/audio/dummy/dummy_119_sideB_0.mp3" },
+        { "text": "The reason it's not getting displayed is...", "audioSrc": "public/data/audio/dummy/dummy_119_sideB_1.mp3" },
+        { "text": "The reason why it isn't showing up is...", "audioSrc": "public/data/audio/dummy/dummy_119_sideB_2.mp3" }
       ],
       "note": "[Getting displayed] is a common passive structure in UI contexts."
     },
@@ -1357,18 +1283,9 @@
       "cardType": "flippable",
       "sideA": "No esta funcionando bien en ISG de EBS",
       "sideB": [
-        {
-          "text": "It's not working properly in EBS ISG.",
-          "audioSrc": "public/data/audio/dummy/dummy_120_sideB_0.mp3"
-        },
-        {
-          "text": "It's not working in EBS ISG.",
-          "audioSrc": "public/data/audio/dummy/dummy_120_sideB_1.mp3"
-        },
-        {
-          "text": "It is not functioning correctly within EBS ISG.",
-          "audioSrc": "public/data/audio/dummy/dummy_120_sideB_2.mp3"
-        }
+        { "text": "It's not working properly in EBS ISG.", "audioSrc": "public/data/audio/dummy/dummy_120_sideB_0.mp3" },
+        { "text": "It's not working in EBS ISG.", "audioSrc": "public/data/audio/dummy/dummy_120_sideB_1.mp3" },
+        { "text": "It is not functioning correctly within EBS ISG.", "audioSrc": "public/data/audio/dummy/dummy_120_sideB_2.mp3" }
       ],
       "note": "[Properly] is the professional way to say 'bien' regarding functionality."
     },
@@ -1377,22 +1294,9 @@
       "cardType": "flippable",
       "sideA": "Es mas directa esta manera.",
       "sideB": [
-        {
-          "text": "This way is more direct.",
-          "audioSrc": "public/data/audio/dummy/dummy_121_sideB_0.mp3"
-        },
-        {
-          "text": "This manner is more direct.",
-          "audioSrc": "public/data/audio/dummy/dummy_121_sideB_1.mp3"
-        },
-        {
-          "text": "Doing it this way is more direct.",
-          "audioSrc": "public/data/audio/dummy/dummy_121_sideB_2.mp3"
-        },
-        {
-          "text": "It is more direct this way.",
-          "audioSrc": "public/data/audio/dummy/dummy_121_sideB_3.mp3"
-        }
+        { "text": "This way is more direct.", "audioSrc": "public/data/audio/dummy/dummy_121_sideB_0.mp3" },
+        { "text": "This manner is more direct.", "audioSrc": "public/data/audio/dummy/dummy_121_sideB_1.mp3" },
+        { "text": "Doing it this way is more direct.", "audioSrc": "public/data/audio/dummy/dummy_121_sideB_2.mp3" }
       ],
       "note": "[This way] refers to the method or approach."
     },
@@ -1401,62 +1305,31 @@
       "cardType": "flippable",
       "sideA": "Tenemos apodos para todo.",
       "sideB": [
-        {
-          "text": "We have nicknames for everything.",
-          "audioSrc": "public/data/audio/dummy/dummy_122_sideB_0.mp3"
-        },
-        {
-          "text": "We've got nicknames for everything.",
-          "audioSrc": "public/data/audio/dummy/dummy_122_sideB_1.mp3"
-        },
-        {
-          "text": "Everything has a nickname here.",
-          "audioSrc": "public/data/audio/dummy/dummy_122_sideB_2.mp3"
-        },
-        {
-          "text": "We have aliases for everything.",
-          "audioSrc": "public/data/audio/dummy/dummy_122_sideB_3.mp3"
-        }
+        { "text": "We have nicknames for everything.", "audioSrc": "public/data/audio/dummy/dummy_122_sideB_0.mp3" },
+        { "text": "We've got nicknames for everything.", "audioSrc": "public/data/audio/dummy/dummy_122_sideB_1.mp3" },
+        { "text": "Everything has a nickname here.", "audioSrc": "public/data/audio/dummy/dummy_122_sideB_2.mp3" }
       ],
-      "note": "[Nicknames] (apodos) is common in dev teams for servers or complex components.\n\nIn Database contexts, the term [alias] is used instead of 'nickname' to provide temporary names to tables or columns."
+      "note": "[Nicknames] (apodos) is common in dev teams for servers or complex components."
     },
     {
       "cardId": "dummy_123",
       "cardType": "flippable",
       "sideA": "Se retorna un -1 como flag",
       "sideB": [
-        {
-          "text": "A -1 is returned as a flag.",
-          "audioSrc": "public/data/audio/dummy/dummy_123_sideB_0.mp3"
-        },
-        {
-          "text": "It returns a -1 as a flag.",
-          "audioSrc": "public/data/audio/dummy/dummy_123_sideB_1.mp3"
-        },
-        {
-          "text": "The function returns -1 as a status flag.",
-          "audioSrc": "public/data/audio/dummy/dummy_123_sideB_2.mp3"
-        }
+        { "text": "A -1 is returned as a flag.", "audioSrc": "public/data/audio/dummy/dummy_123_sideB_0.mp3" },
+        { "text": "It returns a -1 as a flag.", "audioSrc": "public/data/audio/dummy/dummy_123_sideB_1.mp3" },
+        { "text": "The function returns -1 as a status flag.", "audioSrc": "public/data/audio/dummy/dummy_123_sideB_2.mp3" }
       ],
-      "note": "[Flag] is a technical term for a variable that signals a specific condition.\n\n~It is returned -1 as a flag~ is incorrect; use [A -1 is returned] (passive) or [It returns -1] (active) where 'it' represents the function."
+      "note": "[Flag] is a technical term for a variable that signals a specific condition."
     },
     {
       "cardId": "dummy_124",
       "cardType": "flippable",
       "sideA": "Retornamos un cursor vacio con un -1",
       "sideB": [
-        {
-          "text": "We return an empty cursor with a -1.",
-          "audioSrc": "public/data/audio/dummy/dummy_124_sideB_0.mp3"
-        },
-        {
-          "text": "It returns an empty cursor along with a -1.",
-          "audioSrc": "public/data/audio/dummy/dummy_124_sideB_1.mp3"
-        },
-        {
-          "text": "An empty cursor with a -1 is returned.",
-          "audioSrc": "public/data/audio/dummy/dummy_124_sideB_2.mp3"
-        }
+        { "text": "We return an empty cursor with a -1.", "audioSrc": "public/data/audio/dummy/dummy_124_sideB_0.mp3" },
+        { "text": "It returns an empty cursor along with a -1.", "audioSrc": "public/data/audio/dummy/dummy_124_sideB_1.mp3" },
+        { "text": "An empty cursor with a -1 is returned.", "audioSrc": "public/data/audio/dummy/dummy_124_sideB_2.mp3" }
       ],
       "note": "[Empty cursor] is the standard DB terminology."
     },
@@ -1465,18 +1338,9 @@
       "cardType": "flippable",
       "sideA": "Es mejor prevenir que lamentar",
       "sideB": [
-        {
-          "text": "Better safe than sorry.",
-          "audioSrc": "public/data/audio/dummy/dummy_125_sideB_0.mp3"
-        },
-        {
-          "text": "It's better to be safe than sorry.",
-          "audioSrc": "public/data/audio/dummy/dummy_125_sideB_1.mp3"
-        },
-        {
-          "text": "Prevention is better than cure.",
-          "audioSrc": "public/data/audio/dummy/dummy_125_sideB_2.mp3"
-        }
+        { "text": "Better safe than sorry.", "audioSrc": "public/data/audio/dummy/dummy_125_sideB_0.mp3" },
+        { "text": "It's better to be safe than sorry.", "audioSrc": "public/data/audio/dummy/dummy_125_sideB_1.mp3" },
+        { "text": "Prevention is better than cure.", "audioSrc": "public/data/audio/dummy/dummy_125_sideB_2.mp3" }
       ],
       "note": "[Better safe than sorry] is the most common idiomatic version."
     },
@@ -1485,22 +1349,9 @@
       "cardType": "flippable",
       "sideA": "Es solo una costumbre que tengo",
       "sideB": [
-        {
-          "text": "It's just a habit of mine.",
-          "audioSrc": "public/data/audio/dummy/dummy_126_sideB_0.mp3"
-        },
-        {
-          "text": "It is just a habit I have.",
-          "audioSrc": "public/data/audio/dummy/dummy_126_sideB_1.mp3"
-        },
-        {
-          "text": "That's just a habit of mine.",
-          "audioSrc": "public/data/audio/dummy/dummy_126_sideB_2.mp3"
-        },
-        {
-          "text": "It's just a habit that I have.",
-          "audioSrc": "public/data/audio/dummy/dummy_126_sideB_3.mp3"
-        }
+        { "text": "It's just a habit of mine.", "audioSrc": "public/data/audio/dummy/dummy_126_sideB_0.mp3" },
+        { "text": "It is just a habit I have.", "audioSrc": "public/data/audio/dummy/dummy_126_sideB_1.mp3" },
+        { "text": "That's just a habit of mine.", "audioSrc": "public/data/audio/dummy/dummy_126_sideB_2.mp3" }
       ],
       "note": "[Habit of mine] is a natural way to describe personal routines."
     },
@@ -1509,46 +1360,20 @@
       "cardType": "flippable",
       "sideA": "Los multiplicadores de cantidad van de 1 en 1",
       "sideB": [
-        {
-          "text": "Quantity multipliers go by 1s.",
-          "audioSrc": "public/data/audio/dummy/dummy_127_sideB_0.mp3"
-        },
-        {
-          "text": "Quantity multipliers increment by 1.",
-          "audioSrc": "public/data/audio/dummy/dummy_127_sideB_1.mp3"
-        },
-        {
-          "text": "The quantity multipliers increase one by one.",
-          "audioSrc": "public/data/audio/dummy/dummy_127_sideB_2.mp3"
-        },
-        {
-          "text": "Multipliers of quantity increment by 1.",
-          "audioSrc": "public/data/audio/dummy/dummy_127_sideB_3.mp3"
-        },
-        {
-          "text": "Quantity multipliers go 1 by 1.",
-          "audioSrc": "public/data/audio/dummy/dummy_127_sideB_4.mp3"
-        }
+        { "text": "Quantity multipliers go by 1s.", "audioSrc": "public/data/audio/dummy/dummy_127_sideB_0.mp3" },
+        { "text": "Quantity multipliers increment by 1.", "audioSrc": "public/data/audio/dummy/dummy_127_sideB_1.mp3" },
+        { "text": "The quantity multipliers increase one by one.", "audioSrc": "public/data/audio/dummy/dummy_127_sideB_2.mp3" }
       ],
-      "note": "[Increment by] is the precise term for increasing a value by a specific amount.\n\n~Quantity multipliers go 1 on 1~ is incorrect because '1 on 1' refers to personal interactions, not numerical increments."
+      "note": "[Increment by] is the precise term for increasing a value by a specific amount."
     },
     {
       "cardId": "dummy_128",
       "cardType": "flippable",
       "sideA": "Cuando lo vea, te lo dire",
       "sideB": [
-        {
-          "text": "When I see it, I'll tell you.",
-          "audioSrc": "public/data/audio/dummy/dummy_128_sideB_0.mp3"
-        },
-        {
-          "text": "I will tell you when I see it.",
-          "audioSrc": "public/data/audio/dummy/dummy_128_sideB_1.mp3"
-        },
-        {
-          "text": "Once I see it, I'll let you know.",
-          "audioSrc": "public/data/audio/dummy/dummy_128_sideB_2.mp3"
-        }
+        { "text": "When I see it, I'll tell you.", "audioSrc": "public/data/audio/dummy/dummy_128_sideB_0.mp3" },
+        { "text": "I will tell you when I see it.", "audioSrc": "public/data/audio/dummy/dummy_128_sideB_1.mp3" },
+        { "text": "Once I see it, I'll let you know.", "audioSrc": "public/data/audio/dummy/dummy_128_sideB_2.mp3" }
       ],
       "note": "**[183]**\n\n[When I see it] uses the present simple for a future condition."
     },
@@ -1557,22 +1382,9 @@
       "cardType": "flippable",
       "sideA": "Cuando yo este sin señal, podre usar un LLM local",
       "sideB": [
-        {
-          "text": "When I'm without signal, I'll be able to use a local LLM.",
-          "audioSrc": "public/data/audio/dummy/dummy_129_sideB_0.mp3"
-        },
-        {
-          "text": "When I have no signal, I can use a local LLM.",
-          "audioSrc": "public/data/audio/dummy/dummy_129_sideB_1.mp3"
-        },
-        {
-          "text": "I'll use a local LLM when I am without signal.",
-          "audioSrc": "public/data/audio/dummy/dummy_129_sideB_2.mp3"
-        },
-        {
-          "text": "When I'm without signal, I could use a local LLM.",
-          "audioSrc": "public/data/audio/dummy/dummy_129_sideB_3.mp3"
-        }
+        { "text": "When I'm without signal, I'll be able to use a local LLM.", "audioSrc": "public/data/audio/dummy/dummy_129_sideB_0.mp3" },
+        { "text": "When I have no signal, I can use a local LLM.", "audioSrc": "public/data/audio/dummy/dummy_129_sideB_1.mp3" },
+        { "text": "I'll use a local LLM when I am without signal.", "audioSrc": "public/data/audio/dummy/dummy_129_sideB_2.mp3" }
       ],
       "note": "**[183]**\n\n[When I am without signal] corresponds to 'Cuando esté'."
     },
@@ -1581,22 +1393,9 @@
       "cardType": "flippable",
       "sideA": "Cuando este en mi casa, voy a descansar",
       "sideB": [
-        {
-          "text": "When I'm at home, I'm going to rest.",
-          "audioSrc": "public/data/audio/dummy/dummy_130_sideB_0.mp3"
-        },
-        {
-          "text": "I will rest when I am at home.",
-          "audioSrc": "public/data/audio/dummy/dummy_130_sideB_1.mp3"
-        },
-        {
-          "text": "When I get home, I'll rest.",
-          "audioSrc": "public/data/audio/dummy/dummy_130_sideB_2.mp3"
-        },
-        {
-          "text": "When I'm at home, I'm going to take a rest.",
-          "audioSrc": "public/data/audio/dummy/dummy_130_sideB_3.mp3"
-        }
+        { "text": "When I'm at home, I'm going to rest.", "audioSrc": "public/data/audio/dummy/dummy_130_sideB_0.mp3" },
+        { "text": "I will rest when I am at home.", "audioSrc": "public/data/audio/dummy/dummy_130_sideB_1.mp3" },
+        { "text": "When I get home, I'll rest.", "audioSrc": "public/data/audio/dummy/dummy_130_sideB_2.mp3" }
       ],
       "note": "**[183]**\n\n[When I am at home] describes the state."
     },
@@ -1605,18 +1404,9 @@
       "cardType": "flippable",
       "sideA": "Cuando tu estes dudando, solo preguntame.",
       "sideB": [
-        {
-          "text": "When you're doubting, just ask me.",
-          "audioSrc": "public/data/audio/dummy/dummy_131_sideB_0.mp3"
-        },
-        {
-          "text": "When you are in doubt, just ask me.",
-          "audioSrc": "public/data/audio/dummy/dummy_131_sideB_1.mp3"
-        },
-        {
-          "text": "Just ask me when you are doubting.",
-          "audioSrc": "public/data/audio/dummy/dummy_131_sideB_2.mp3"
-        }
+        { "text": "When you're doubting, just ask me.", "audioSrc": "public/data/audio/dummy/dummy_131_sideB_0.mp3" },
+        { "text": "When you are in doubt, just ask me.", "audioSrc": "public/data/audio/dummy/dummy_131_sideB_1.mp3" },
+        { "text": "Just ask me when you are doubting.", "audioSrc": "public/data/audio/dummy/dummy_131_sideB_2.mp3" }
       ],
       "note": "**[183]**\n\n[In doubt] is a very common idiom for 'dudando'."
     },
@@ -1625,18 +1415,9 @@
       "cardType": "flippable",
       "sideA": "Cuando tu estes en casa, avisame.",
       "sideB": [
-        {
-          "text": "When you're at home, let me know.",
-          "audioSrc": "public/data/audio/dummy/dummy_132_sideB_0.mp3"
-        },
-        {
-          "text": "Let me know when you are at home.",
-          "audioSrc": "public/data/audio/dummy/dummy_132_sideB_1.mp3"
-        },
-        {
-          "text": "When you get home, tell me.",
-          "audioSrc": "public/data/audio/dummy/dummy_132_sideB_2.mp3"
-        }
+        { "text": "When you're at home, let me know.", "audioSrc": "public/data/audio/dummy/dummy_132_sideB_0.mp3" },
+        { "text": "Let me know when you are at home.", "audioSrc": "public/data/audio/dummy/dummy_132_sideB_1.mp3" },
+        { "text": "When you get home, tell me.", "audioSrc": "public/data/audio/dummy/dummy_132_sideB_2.mp3" }
       ],
       "note": "**[183]**\n\n[Let me know] is the standard way to say 'avísame'."
     }
