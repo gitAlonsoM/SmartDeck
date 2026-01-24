@@ -16019,6 +16019,1678 @@
         }
       ],
       "note": "Using [Wish] adds a slight tone of regret to the desire."
+    },
+    {
+      "cardId": "mi_714",
+      "cardType": "flippable",
+      "sideA": "Pidele en el prompt que te responda en tercera persona.",
+      "sideB": [
+        {
+          "text": "Ask it in the prompt to reply in the third person.",
+          "audioSrc": "public/data/audio/common_meeting/mi_714_sideB_0.mp3"
+        },
+        {
+          "text": "Tell it to respond in the third person within the prompt.",
+          "audioSrc": "public/data/audio/common_meeting/mi_714_sideB_1.mp3"
+        },
+        {
+          "text": "In the prompt, ask for a response in the third person.",
+          "audioSrc": "public/data/audio/common_meeting/mi_714_sideB_2.mp3"
+        },
+        {
+          "text": "Ask it in the prompt to answer you in the third person.",
+          "audioSrc": "public/data/audio/common_meeting/mi_714_sideB_3.mp3"
+        },
+        {
+          "text": "Ask it in the prompt to respond to you in the third person.",
+          "audioSrc": "public/data/audio/common_meeting/mi_714_sideB_4.mp3"
+        }
+      ],
+      "note": "When interacting with AI, [ask it to] is standard for commands.\n\n~answer your in the third person~ is incorrect because 'your' is a possessive adjective and needs a noun. Use [answer you].\n\n~Ask it in the prompt to response you in the third person~ and ~Ask it in the prompt to response in the third person~ are incorrect because 'response' is a noun; use the verb [respond].\n\n~Respond you~ is incorrect because 'respond' requires the preposition 'to' when followed by an object. Use [respond to you] or simply [answer you]."
+    },
+    {
+      "cardId": "mi_715",
+      "cardType": "flippable",
+      "sideA": "(Este sitio web tiene una interfaz de arrastrar y soltar muy fácil).",
+      "sideB": [
+        {
+          "text": "This website has a very easy drag-and-drop interface.",
+          "audioSrc": "public/data/audio/common_meeting/mi_715_sideB_0.mp3"
+        },
+        {
+          "text": "The drag-and-drop interface on this site is very simple.",
+          "audioSrc": "public/data/audio/common_meeting/mi_715_sideB_1.mp3"
+        },
+        {
+          "text": "This site offers a user-friendly drag-and-drop UI.",
+          "audioSrc": "public/data/audio/common_meeting/mi_715_sideB_2.mp3"
+        },
+        {
+          "text": "This website has a very easy drag-and-drop UI.",
+          "audioSrc": "public/data/audio/common_meeting/mi_715_sideB_3.mp3"
+        }
+      ],
+      "note": "[User-friendly] is a common way to say something is easy to use."
+    },
+    {
+      "cardId": "mi_716",
+      "cardType": "flippable",
+      "sideA": "RAG obliga a la IA a consultar una biblioteca antes de responder.",
+      "sideB": [
+        {
+          "text": "RAG forces the AI to check a library before answering.",
+          "audioSrc": "public/data/audio/common_meeting/mi_716_sideB_0.mp3"
+        },
+        {
+          "text": "RAG makes the AI look up data before responding.",
+          "audioSrc": "public/data/audio/common_meeting/mi_716_sideB_1.mp3"
+        },
+        {
+          "text": "With RAG, the AI must consult a knowledge base first.",
+          "audioSrc": "public/data/audio/common_meeting/mi_716_sideB_2.mp3"
+        },
+        {
+          "text": "RAG forces the AI to query a library before answering.",
+          "audioSrc": "public/data/audio/common_meeting/mi_716_sideB_3.mp3"
+        }
+      ],
+      "note": "[Knowledge base] is the technical term for the 'biblioteca' in RAG.\n\n~ensures the AI to check~ is grammatically incorrect. 'Ensure' should be followed by a 'that' clause. Use [forces the AI to check]."
+    },
+    {
+      "cardId": "mi_717",
+      "cardType": "flippable",
+      "sideA": "RAG evita que la IA invente hechos.",
+      "sideB": [
+        {
+          "text": "RAG prevents the AI from making up facts.",
+          "audioSrc": "public/data/audio/common_meeting/mi_717_sideB_0.mp3"
+        },
+        {
+          "text": "RAG stops the AI from hallucinating facts.",
+          "audioSrc": "public/data/audio/common_meeting/mi_717_sideB_1.mp3"
+        },
+        {
+          "text": "RAG keeps the AI from inventing information.",
+          "audioSrc": "public/data/audio/common_meeting/mi_717_sideB_2.mp3"
+        }
+      ],
+      "note": "**[176]**\n\n[Hallucinating] is the industry term for an AI inventing facts.\n\n~avoids the AI from making up facts~ is incorrect; 'avoid' is followed by a gerund directly. ~prevents the AI make up facts~ is missing the preposition 'from'. Use [prevents the AI from making up]."
+    },
+    {
+      "cardId": "mi_718",
+      "cardType": "flippable",
+      "sideA": "Los campos del record de otro paquete estan populandose ahi",
+      "sideB": [
+        {
+          "text": "The fields of the record from another package are being populated there.",
+          "audioSrc": "public/data/audio/common_meeting/mi_718_sideB_0.mp3"
+        },
+        {
+          "text": "That's where the record fields from another package are filled.",
+          "audioSrc": "public/data/audio/common_meeting/mi_718_sideB_1.mp3"
+        },
+        {
+          "text": "Record fields from a different package are being populated right there.",
+          "audioSrc": "public/data/audio/common_meeting/mi_718_sideB_2.mp3"
+        },
+        {
+          "text": "The fields of the record from another package are populated there.",
+          "audioSrc": "public/data/audio/common_meeting/mi_718_sideB_3.mp3"
+        }
+      ],
+      "note": "[Fields] are the specific attributes within a [Record]."
+    },
+    {
+      "cardId": "mi_719",
+      "cardType": "flippable",
+      "sideA": "¿Esto entra dentro del alcance del proyecto?",
+      "sideB": [
+        {
+          "text": "Is this within the project scope?",
+          "audioSrc": "public/data/audio/common_meeting/mi_719_sideB_0.mp3"
+        },
+        {
+          "text": "Does this fall under the project scope?",
+          "audioSrc": "public/data/audio/common_meeting/mi_719_sideB_1.mp3"
+        },
+        {
+          "text": "Is this in scope for the project?",
+          "audioSrc": "public/data/audio/common_meeting/mi_719_sideB_2.mp3"
+        },
+        {
+          "text": "Is this included in the scope of the project?",
+          "audioSrc": "public/data/audio/common_meeting/mi_719_sideB_3.mp3"
+        },
+        {
+          "text": "Is this in the scope of the project?",
+          "audioSrc": "public/data/audio/common_meeting/mi_719_sideB_4.mp3"
+        }
+      ],
+      "note": "**[178]**\n\nUse [in scope] or [within scope] to confirm if a task belongs to the current plan."
+    },
+    {
+      "cardId": "mi_720",
+      "cardType": "flippable",
+      "sideA": "Me puso nervioso lo que ellos dijeron.",
+      "sideB": [
+        {
+          "text": "What they said made me nervous.",
+          "audioSrc": "public/data/audio/common_meeting/mi_720_sideB_0.mp3"
+        },
+        {
+          "text": "What they said made me feel nervous.",
+          "audioSrc": "public/data/audio/common_meeting/mi_720_sideB_1.mp3"
+        },
+        {
+          "text": "It made me nervous what they said.",
+          "audioSrc": "public/data/audio/common_meeting/mi_720_sideB_2.mp3"
+        }
+      ],
+      "note": "**[39]**\n\n[What they said] acts as the subject that caused the state of being [nervous]."
+    },
+    {
+      "cardId": "mi_721",
+      "cardType": "flippable",
+      "sideA": "Me dio asco esa cosa.",
+      "sideB": [
+        {
+          "text": "That thing made me sick.",
+          "audioSrc": "public/data/audio/common_meeting/mi_721_sideB_0.mp3"
+        },
+        {
+          "text": "That thing made me feel sick.",
+          "audioSrc": "public/data/audio/common_meeting/mi_721_sideB_1.mp3"
+        },
+        {
+          "text": "That made me feel disgusted.",
+          "audioSrc": "public/data/audio/common_meeting/mi_721_sideB_2.mp3"
+        },
+        {
+          "text": "I got sick with that thing.",
+          "audioSrc": "public/data/audio/common_meeting/mi_721_sideB_3.mp3"
+        }
+      ],
+      "note": "**[39]**\n\nTo express 'dar asco', English often uses [made me sick] or [made me feel disgusted].\n\n~It made me sick that thing~ is unnatural word order; use [That thing made me sick]."
+    },
+    {
+      "cardId": "mi_722",
+      "cardType": "flippable",
+      "sideA": "Me hizo preguntarme eso que escuche.",
+      "sideB": [
+        {
+          "text": "What I heard made me wonder.",
+          "audioSrc": "public/data/audio/common_meeting/mi_722_sideB_0.mp3"
+        },
+        {
+          "text": "It made me wonder what I heard.",
+          "audioSrc": "public/data/audio/common_meeting/mi_722_sideB_1.mp3"
+        },
+        {
+          "text": "That made me question things after I heard it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_722_sideB_2.mp3"
+        }
+      ],
+      "note": "**[39]**\n\n[Wonder] is the base verb here. Remember that after [make], we use the base form without 'to'.\n\n~What I heard, it made me wonder~ is redundant because [What I heard] is already the subject; you should not add [it] after it.\n\n~It made me wonder about I heard~ is missing the relative pronoun; use [about what I heard]."
+    },
+    {
+      "cardId": "mi_723",
+      "cardType": "flippable",
+      "sideA": "Me hizo quedar mal ella.",
+      "sideB": [
+        {
+          "text": "She made me look bad.",
+          "audioSrc": "public/data/audio/common_meeting/mi_723_sideB_0.mp3"
+        },
+        {
+          "text": "She made me look incompetent.",
+          "audioSrc": "public/data/audio/common_meeting/mi_723_sideB_1.mp3"
+        },
+        {
+          "text": "Her actions made me look bad.",
+          "audioSrc": "public/data/audio/common_meeting/mi_723_sideB_2.mp3"
+        }
+      ],
+      "note": "**[39]**\n\n[To look bad] is the standard idiom for 'quedar mal' in a social or professional sense.\n\n~It made me look bad her~ is incorrect; the person doing the action must be the subject: [She made me look bad]."
+    },
+    {
+      "cardId": "mi_724",
+      "cardType": "flippable",
+      "sideA": "Se requiere probar la función en el dispositivo real.",
+      "sideB": [
+        {
+          "text": "It is required to test the feature on a real device.",
+          "audioSrc": "public/data/audio/common_meeting/mi_724_sideB_0.mp3"
+        },
+        {
+          "text": "You are required to test the function on an actual device.",
+          "audioSrc": "public/data/audio/common_meeting/mi_724_sideB_1.mp3"
+        },
+        {
+          "text": "Testing the feature on the real device is required.",
+          "audioSrc": "public/data/audio/common_meeting/mi_724_sideB_2.mp3"
+        }
+      ],
+      "note": "[Actual device] or [Real device] distinguish physical hardware from an emulator or simulator.\n\n~It requires to test the feature on a real device~ is incorrect because [require] is not used as a dummy subject verb; use [It is required to test] or [Testing requires...]."
+    },
+    {
+      "cardId": "mi_725",
+      "cardType": "flippable",
+      "sideA": "Quisiera que fuera más.",
+      "sideB": [
+        {
+          "text": "I wish it were more.",
+          "audioSrc": "public/data/audio/common_meeting/mi_725_sideB_0.mp3"
+        },
+        {
+          "text": "I'd like it to be more.",
+          "audioSrc": "public/data/audio/common_meeting/mi_725_sideB_1.mp3"
+        },
+        {
+          "text": "I want it to be more.",
+          "audioSrc": "public/data/audio/common_meeting/mi_725_sideB_2.mp3"
+        },
+        {
+          "text": "I'd like there to be more.",
+          "audioSrc": "public/data/audio/common_meeting/mi_725_sideB_3.mp3"
+        }
+      ],
+      "note": "**[40]**\n\nAfter 'I wish', we use the subjunctive [were] for hypothetical states.\n\n~I'd like it to be more of it~ is invalid because it is redundant; use [I'd like more of it] or [I'd like it to be more] depending on whether you refer to quantity or quality.\n\n~I'd like it there to be more~ is incorrect because it mixes the direct object 'it' with the existential 'there'. Use [I'd like it to be more] or [I'd like there to be more]."
+    },
+    {
+      "cardId": "mi_726",
+      "cardType": "flippable",
+      "sideA": "Me gustaria que eso fuera mejor.",
+      "sideB": [
+        {
+          "text": "I'd like that to be better.",
+          "audioSrc": "public/data/audio/common_meeting/mi_726_sideB_0.mp3"
+        },
+        {
+          "text": "I wish that were better.",
+          "audioSrc": "public/data/audio/common_meeting/mi_726_sideB_1.mp3"
+        },
+        {
+          "text": "I would like that to be improved.",
+          "audioSrc": "public/data/audio/common_meeting/mi_726_sideB_2.mp3"
+        }
+      ],
+      "note": "Structure: [I'd like] + [object] + [to be].\n\n~I'd like that would be better~ and ~I'd like that will be better~ are incorrect because [would like] requires the [object + to + verb] structure.\n\n~I'd like that was better~ and ~I'd like that were better~ are incorrect because 'would like' requires the [object + to + verb] structure: [I'd like that to be better]."
+    },
+    {
+      "cardId": "mi_727",
+      "cardType": "flippable",
+      "sideA": "No estarán listas para el proximo release.",
+      "sideB": [
+        {
+          "text": "They won't be ready for the next release.",
+          "audioSrc": "public/data/audio/common_meeting/mi_727_sideB_0.mp3"
+        },
+        {
+          "text": "They aren't going to be ready by the next release.",
+          "audioSrc": "public/data/audio/common_meeting/mi_727_sideB_1.mp3"
+        },
+        {
+          "text": "Those won't be finished for the upcoming release.",
+          "audioSrc": "public/data/audio/common_meeting/mi_727_sideB_2.mp3"
+        }
+      ],
+      "note": "Use [By] or [For] to indicate a deadline.\n\n~They won't ready~ is incorrect; 'ready' is an adjective and requires the verb [to be]."
+    },
+    {
+      "cardId": "mi_728",
+      "cardType": "flippable",
+      "sideA": "La petición en postman me devolvió un 400.",
+      "sideB": [
+        {
+          "text": "The Postman request returned a 400.",
+          "audioSrc": "public/data/audio/common_meeting/mi_728_sideB_0.mp3"
+        },
+        {
+          "text": "I got a 400 error from the Postman request.",
+          "audioSrc": "public/data/audio/common_meeting/mi_728_sideB_1.mp3"
+        },
+        {
+          "text": "The request in Postman resulted in a 400 status code.",
+          "audioSrc": "public/data/audio/common_meeting/mi_728_sideB_2.mp3"
+        }
+      ],
+      "note": "In API context, [Returned] or [Got] are standard for status codes.\n\n~The request returned 400~ is common, but adding [a 400] or [status 400] is more precise."
+    },
+    {
+      "cardId": "mi_729",
+      "cardType": "flippable",
+      "sideA": "La carga útil se encuentra en el cuerpo de la petición.",
+      "sideB": [
+        {
+          "text": "The payload is in the request body.",
+          "audioSrc": "public/data/audio/common_meeting/mi_729_sideB_0.mp3"
+        },
+        {
+          "text": "The payload can be found within the request body.",
+          "audioSrc": "public/data/audio/common_meeting/mi_729_sideB_1.mp3"
+        },
+        {
+          "text": "You'll find the payload inside the request body.",
+          "audioSrc": "public/data/audio/common_meeting/mi_729_sideB_2.mp3"
+        },
+        {
+          "text": "The payload is found in the request body.",
+          "audioSrc": "public/data/audio/common_meeting/mi_729_sideB_3.mp3"
+        }
+      ],
+      "note": "[Payload] refers to the actual data transmitted in an HTTP message."
+    },
+    {
+      "cardId": "mi_730",
+      "cardType": "flippable",
+      "sideA": "La petición en postman me retornó un 200.",
+      "sideB": [
+        {
+          "text": "The Postman request returned a 200.",
+          "audioSrc": "public/data/audio/common_meeting/mi_730_sideB_0.mp3"
+        },
+        {
+          "text": "I received a 200 OK response from Postman.",
+          "audioSrc": "public/data/audio/common_meeting/mi_730_sideB_1.mp3"
+        },
+        {
+          "text": "The Postman call came back with a 200.",
+          "audioSrc": "public/data/audio/common_meeting/mi_730_sideB_2.mp3"
+        }
+      ],
+      "note": "[Came back with] is an informal but very common way to describe API responses."
+    },
+    {
+      "cardId": "mi_731",
+      "cardType": "flippable",
+      "sideA": "La petición en postman me dio una respuesta con un código de estado.",
+      "sideB": [
+        {
+          "text": "The Postman request gave me a response with a status code.",
+          "audioSrc": "public/data/audio/common_meeting/mi_731_sideB_0.mp3"
+        },
+        {
+          "text": "The request in Postman returned a response and a status code.",
+          "audioSrc": "public/data/audio/common_meeting/mi_731_sideB_1.mp3"
+        },
+        {
+          "text": "I got a response with a specific status code from Postman.",
+          "audioSrc": "public/data/audio/common_meeting/mi_731_sideB_2.mp3"
+        }
+      ],
+      "note": "[Status code] is the formal technical term for the numeric response (200, 404, 500)."
+    },
+    {
+      "cardId": "mi_732",
+      "cardType": "flippable",
+      "sideA": "¿Qué ramas fueron unidas a la rama actual?",
+      "sideB": [
+        {
+          "text": "Which branches were merged into the current branch?",
+          "audioSrc": "public/data/audio/common_meeting/mi_732_sideB_0.mp3"
+        },
+        {
+          "text": "What branches have been merged into this one?",
+          "audioSrc": "public/data/audio/common_meeting/mi_732_sideB_1.mp3"
+        },
+        {
+          "text": "Which branches were joined with the current branch?",
+          "audioSrc": "public/data/audio/common_meeting/mi_732_sideB_2.mp3"
+        },
+        {
+          "text": "Which branches were merged into the current one?",
+          "audioSrc": "public/data/audio/common_meeting/mi_732_sideB_3.mp3"
+        }
+      ],
+      "note": "**[146]**\n\nIn Git, [Merged into] is the standard preposition. \n\n~merged to the branch~ is less common than [merged into].\n\n~Merged in the branch~ is acceptable but [merged into] is much more precise for technical operations involving integration."
+    },
+    {
+      "cardId": "mi_733",
+      "cardType": "flippable",
+      "sideA": "Estoy solo inventando.",
+      "sideB": [
+        {
+          "text": "I'm just making it up.",
+          "audioSrc": "public/data/audio/common_meeting/mi_733_sideB_0.mp3"
+        },
+        {
+          "text": "I'm just winging it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_733_sideB_1.mp3"
+        },
+        {
+          "text": "I am simply inventing this as I go.",
+          "audioSrc": "public/data/audio/common_meeting/mi_733_sideB_2.mp3"
+        }
+      ],
+      "note": "[Making it up] means creating a story or fact. [Winging it] means doing something without preparation.\n\n~I'm just making up~ is not valid because [make up] (meaning to invent) is a transitive phrasal verb that requires an object like [it]."
+    },
+    {
+      "cardId": "mi_734",
+      "cardType": "flippable",
+      "sideA": "Dejemos en claro eso.",
+      "sideB": [
+        {
+          "text": "Let's make that clear.",
+          "audioSrc": "public/data/audio/common_meeting/mi_734_sideB_0.mp3"
+        },
+        {
+          "text": "Let's be clear about that.",
+          "audioSrc": "public/data/audio/common_meeting/mi_734_sideB_1.mp3"
+        },
+        {
+          "text": "Let's get that straight.",
+          "audioSrc": "public/data/audio/common_meeting/mi_734_sideB_2.mp3"
+        },
+        {
+          "text": "Let's make it clear.",
+          "audioSrc": "public/data/audio/common_meeting/mi_734_sideB_3.mp3"
+        }
+      ],
+      "note": "**[181]**\n\n[Get that straight] is often used when resolving a confusion or misunderstanding.\n\n~Let's leave it clear~ is a literal translation from Spanish. In English, we use [make it clear] to express clarifying a situation."
+    },
+    {
+      "cardId": "mi_735",
+      "cardType": "flippable",
+      "sideA": "Dejemos algo en claro.",
+      "sideB": [
+        {
+          "text": "Let me make one thing clear.",
+          "audioSrc": "public/data/audio/common_meeting/mi_735_sideB_0.mp3"
+        },
+        {
+          "text": "Let's clear something up.",
+          "audioSrc": "public/data/audio/common_meeting/mi_735_sideB_1.mp3"
+        },
+        {
+          "text": "Let's set the record straight.",
+          "audioSrc": "public/data/audio/common_meeting/mi_735_sideB_2.mp3"
+        },
+        {
+          "text": "Let's make something clear.",
+          "audioSrc": "public/data/audio/common_meeting/mi_735_sideB_3.mp3"
+        }
+      ],
+      "note": "**[181]**\n\n[Clear something up] usually implies resolving a doubt.\n\n~Let's leave something clear~ is a direct translation; use [make something clear] or [set the record straight]."
+    },
+    {
+      "cardId": "mi_736",
+      "cardType": "flippable",
+      "sideA": "DBMS_OUTPUT.put_line es simplemente una sentencia print.",
+      "sideB": [
+        {
+          "text": "DBMS_OUTPUT.put_line is just a print statement.",
+          "audioSrc": "public/data/audio/common_meeting/mi_736_sideB_0.mp3"
+        },
+        {
+          "text": "DBMS_OUTPUT.put_line is simply a way to print output.",
+          "audioSrc": "public/data/audio/common_meeting/mi_736_sideB_1.mp3"
+        },
+        {
+          "text": "It's just a print statement, DBMS_OUTPUT.put_line.",
+          "audioSrc": "public/data/audio/common_meeting/mi_736_sideB_2.mp3"
+        }
+      ],
+      "note": "A [Print statement] is the general term in any language (Console.log, System.out.println, etc.).\n\n~Print sentence~ is incorrect. In computing, code lines are [statements], not sentences."
+    },
+    {
+      "cardId": "mi_737",
+      "cardType": "flippable",
+      "sideA": "Agregué dos campos más a la clausula SELECT.",
+      "sideB": [
+        {
+          "text": "I added two more fields to the SELECT clause.",
+          "audioSrc": "public/data/audio/common_meeting/mi_737_sideB_0.mp3"
+        },
+        {
+          "text": "I've included two additional fields in the SELECT clause.",
+          "audioSrc": "public/data/audio/common_meeting/mi_737_sideB_1.mp3"
+        },
+        {
+          "text": "Two more fields were added to the SELECT clause.",
+          "audioSrc": "public/data/audio/common_meeting/mi_737_sideB_2.mp3"
+        }
+      ],
+      "note": "[Fields] is the common term for columns within a query context."
+    },
+    {
+      "cardId": "mi_738",
+      "cardType": "flippable",
+      "sideA": "Agregué dos atributos más a la clausula SELECT.",
+      "sideB": [
+        {
+          "text": "I added two more attributes to the SELECT clause.",
+          "audioSrc": "public/data/audio/common_meeting/mi_738_sideB_0.mp3"
+        },
+        {
+          "text": "I included two more attributes in the SELECT statement.",
+          "audioSrc": "public/data/audio/common_meeting/mi_738_sideB_1.mp3"
+        },
+        {
+          "text": "I've added a couple of attributes to the SELECT clause.",
+          "audioSrc": "public/data/audio/common_meeting/mi_738_sideB_2.mp3"
+        }
+      ],
+      "note": "[Attributes] is often used in relational modeling or OO contexts to refer to data fields."
+    },
+    {
+      "cardId": "mi_739",
+      "cardType": "flippable",
+      "sideA": "Son para usarlas más adelante en otro procedimiento.",
+      "sideB": [
+        {
+          "text": "They are for use later in another procedure.",
+          "audioSrc": "public/data/audio/common_meeting/mi_739_sideB_0.mp3"
+        },
+        {
+          "text": "Those are meant to be used later in a different procedure.",
+          "audioSrc": "public/data/audio/common_meeting/mi_739_sideB_1.mp3"
+        },
+        {
+          "text": "They'll be used further down the line in another procedure.",
+          "audioSrc": "public/data/audio/common_meeting/mi_739_sideB_2.mp3"
+        },
+        {
+          "text": "They are for using later in another procedure.",
+          "audioSrc": "public/data/audio/common_meeting/mi_739_sideB_3.mp3"
+        },
+        {
+          "text": "They are for being used later in another procedure.",
+          "audioSrc": "public/data/audio/common_meeting/mi_739_sideB_4.mp3"
+        }
+      ],
+      "note": "[Later] or [Further down the line] indicate future use.\n\nIn the phrase 'for use', [use] is a **noun**. After a preposition like 'for', you must use either a noun or a [gerund] (-ing). If you use a verb, the structure is usually [to use]."
+    },
+    {
+      "cardId": "mi_740",
+      "cardType": "flippable",
+      "sideA": "Bueno… porque funciona.",
+      "sideB": [
+        {
+          "text": "Well... because it works.",
+          "audioSrc": "public/data/audio/common_meeting/mi_740_sideB_0.mp3"
+        },
+        {
+          "text": "Well, simply because it works.",
+          "audioSrc": "public/data/audio/common_meeting/mi_740_sideB_1.mp3"
+        },
+        {
+          "text": "I mean, it works, that's why.",
+          "audioSrc": "public/data/audio/common_meeting/mi_740_sideB_2.mp3"
+        }
+      ],
+      "note": "A pragmatic response in development when logic is complex but effective."
+    },
+    {
+      "cardId": "mi_741",
+      "cardType": "flippable",
+      "sideA": "Hicimos esto para hacerlo funcionar.",
+      "sideB": [
+        {
+          "text": "We did this to make it work.",
+          "audioSrc": "public/data/audio/common_meeting/mi_741_sideB_0.mp3"
+        },
+        {
+          "text": "We implemented this in order to get it working.",
+          "audioSrc": "public/data/audio/common_meeting/mi_741_sideB_1.mp3"
+        },
+        {
+          "text": "This was done to ensure it works.",
+          "audioSrc": "public/data/audio/common_meeting/mi_741_sideB_2.mp3"
+        }
+      ],
+      "note": "[To make it work] is the standard causative structure.\n\nWe did this.\n\n~We made this to make it work~ is redundant and uses 'make' for an action; use [did this].\n\n ~To make it working~ is grammatically incorrect; the causative 'make' requires the [base verb] (work)."
+    },
+    {
+      "cardId": "mi_742",
+      "cardType": "flippable",
+      "sideA": "Soy una persona ahorradora.",
+      "sideB": [
+        {
+          "text": "I am a thrifty person.",
+          "audioSrc": "public/data/audio/common_meeting/mi_742_sideB_0.mp3"
+        },
+        {
+          "text": "I'm a saver.",
+          "audioSrc": "public/data/audio/common_meeting/mi_742_sideB_1.mp3"
+        },
+        {
+          "text": "I'm very frugal with my money.",
+          "audioSrc": "public/data/audio/common_meeting/mi_742_sideB_2.mp3"
+        },
+        {
+          "text": "I don't spend too much money.",
+          "audioSrc": "public/data/audio/common_meeting/mi_742_sideB_3.mp3"
+        }
+      ],
+      "note": "[Thrifty] and [Frugal] are positive ways to describe someone who saves."
+    },
+    {
+      "cardId": "mi_743",
+      "cardType": "flippable",
+      "sideA": "No soy alguien gastador de dinero.",
+      "sideB": [
+        {
+          "text": "I'm not a big spender.",
+          "audioSrc": "public/data/audio/common_meeting/mi_743_sideB_0.mp3"
+        },
+        {
+          "text": "I don't spend much money.",
+          "audioSrc": "public/data/audio/common_meeting/mi_743_sideB_1.mp3"
+        },
+        {
+          "text": "I'm not the type of person who wastes money.",
+          "audioSrc": "public/data/audio/common_meeting/mi_743_sideB_2.mp3"
+        },
+        {
+          "text": "I don't like spending too much money.",
+          "audioSrc": "public/data/audio/common_meeting/mi_743_sideB_3.mp3"
+        },
+        {
+          "text": "I don't like to spend too much money.",
+          "audioSrc": "public/data/audio/common_meeting/mi_743_sideB_4.mp3"
+        }
+      ],
+      "note": "[Big spender] is the idiomatic way to describe someone who spends a lot.\n\n~I don't like spending to much money~ is incorrect because of the spelling of [too]. It should be [too much] to indicate an excessive amount."
+    },
+    {
+      "cardId": "mi_744",
+      "cardType": "flippable",
+      "sideA": "Perdón por el malentendido.",
+      "sideB": [
+        {
+          "text": "I apologize for the misunderstanding.",
+          "audioSrc": "public/data/audio/common_meeting/mi_744_sideB_0.mp3"
+        },
+        {
+          "text": "Sorry for the confusion.",
+          "audioSrc": "public/data/audio/common_meeting/mi_744_sideB_1.mp3"
+        },
+        {
+          "text": "My apologies for the mix-up.",
+          "audioSrc": "public/data/audio/common_meeting/mi_744_sideB_2.mp3"
+        },
+        {
+          "text": "Sorry for the misunderstanding.",
+          "audioSrc": "public/data/audio/common_meeting/mi_744_sideB_3.mp3"
+        },
+        {
+          "text": "Sorry for the mix-up.",
+          "audioSrc": "public/data/audio/common_meeting/mi_744_sideB_4.mp3"
+        }
+      ],
+      "note": "[Mix-up] is a very natural and slightly informal word for a small confusion."
+    },
+    {
+      "cardId": "mi_745",
+      "cardType": "flippable",
+      "sideA": "Oracle no te deja cambiar la password si tienes la misma anterior.",
+      "sideB": [
+        {
+          "text": "Oracle won't let you change the password if it's the same as the previous one.",
+          "audioSrc": "public/data/audio/common_meeting/mi_745_sideB_0.mp3"
+        },
+        {
+          "text": "Oracle doesn't allow you to reuse your old password.",
+          "audioSrc": "public/data/audio/common_meeting/mi_745_sideB_1.mp3"
+        },
+        {
+          "text": "You can't change the password in Oracle if you use the same one as before.",
+          "audioSrc": "public/data/audio/common_meeting/mi_745_sideB_2.mp3"
+        },
+        {
+          "text": "Oracle doesn't let you change the password if it's the same as the previous one.",
+          "audioSrc": "public/data/audio/common_meeting/mi_745_sideB_3.mp3"
+        }
+      ],
+      "note": "[Won't let you] is a natural way to describe system restrictions."
+    },
+    {
+      "cardId": "mi_746",
+      "cardType": "flippable",
+      "sideA": "Si tienes ‘Y’ significa ’S’, si no ‘H’.",
+      "sideB": [
+        {
+          "text": "If you have 'Y' it means 'S', otherwise it's 'H'.",
+          "audioSrc": "public/data/audio/common_meeting/mi_746_sideB_0.mp3"
+        },
+        {
+          "text": "If it's 'Y', then it stands for 'S', else it's 'H'.",
+          "audioSrc": "public/data/audio/common_meeting/mi_746_sideB_1.mp3"
+        },
+        {
+          "text": "'Y' means 'S'; if not, use 'H'.",
+          "audioSrc": "public/data/audio/common_meeting/mi_746_sideB_2.mp3"
+        }
+      ],
+      "note": "**[179]**\n\n[Otherwise] and [Else] are perfect for conditional logic."
+    },
+    {
+      "cardId": "mi_747",
+      "cardType": "flippable",
+      "sideA": "Una condición que no se cumpla nunca.",
+      "sideB": [
+        {
+          "text": "A condition that is never met.",
+          "audioSrc": "public/data/audio/common_meeting/mi_747_sideB_0.mp3"
+        },
+        {
+          "text": "A condition that is never fulfilled.",
+          "audioSrc": "public/data/audio/common_meeting/mi_747_sideB_1.mp3"
+        },
+        {
+          "text": "A condition that will never be true.",
+          "audioSrc": "public/data/audio/common_meeting/mi_747_sideB_2.mp3"
+        }
+      ],
+      "note": "**[12]**\n\nTechnical term: [The condition is met] (se cumple).\n\n~A condition that never meets~ is incorrect because 'meet' in this context is a transitive verb that requires a passive structure when the condition is the subject. Use [is never met]."
+    },
+    {
+      "cardId": "mi_748",
+      "cardType": "flippable",
+      "sideA": "Eso lo usaremos más abajo.",
+      "sideB": [
+        {
+          "text": "We'll use that further down.",
+          "audioSrc": "public/data/audio/common_meeting/mi_748_sideB_0.mp3"
+        },
+        {
+          "text": "We're going to use that later on below.",
+          "audioSrc": "public/data/audio/common_meeting/mi_748_sideB_1.mp3"
+        },
+        {
+          "text": "That will be used further down in the code.",
+          "audioSrc": "public/data/audio/common_meeting/mi_748_sideB_2.mp3"
+        },
+        {
+          "text": "We'll use that below.",
+          "audioSrc": "public/data/audio/common_meeting/mi_748_sideB_3.mp3"
+        }
+      ],
+      "note": "**[157]**\n\n[Further down] is used for spatial position in a document or code file.\n\n~We'll use it down~ is unnatural. For spatial location in files or lists, always use [below] or [further down]."
+    },
+    {
+      "cardId": "mi_749",
+      "cardType": "flippable",
+      "sideA": "Eso lo usaremos abajo.",
+      "sideB": [
+        {
+          "text": "We'll use that below.",
+          "audioSrc": "public/data/audio/common_meeting/mi_749_sideB_0.mp3"
+        },
+        {
+          "text": "We will use that at the bottom.",
+          "audioSrc": "public/data/audio/common_meeting/mi_749_sideB_1.mp3"
+        },
+        {
+          "text": "That's for use below.",
+          "audioSrc": "public/data/audio/common_meeting/mi_749_sideB_2.mp3"
+        }
+      ],
+      "note": "**[157]**\n\n[Below] contrasts with [Above]."
+    },
+    {
+      "cardId": "mi_750",
+      "cardType": "flippable",
+      "sideA": "Eso lo usaremos arriba.",
+      "sideB": [
+        {
+          "text": "We'll use that above.",
+          "audioSrc": "public/data/audio/common_meeting/mi_750_sideB_0.mp3"
+        },
+        {
+          "text": "We will use that at the top.",
+          "audioSrc": "public/data/audio/common_meeting/mi_750_sideB_1.mp3"
+        },
+        {
+          "text": "That's used above.",
+          "audioSrc": "public/data/audio/common_meeting/mi_750_sideB_2.mp3"
+        }
+      ],
+      "note": "**[155]**\n\n[Above] refers to preceding lines.\n\n~We'll use that up~ is incorrect because 'up' implies direction or completion. To refer to a static position in a document or code, use [above] or [at the top]."
+    },
+    {
+      "cardId": "mi_751",
+      "cardType": "flippable",
+      "sideA": "Limpié algunos comentarios.",
+      "sideB": [
+        {
+          "text": "I cleaned up some comments.",
+          "audioSrc": "public/data/audio/common_meeting/mi_751_sideB_0.mp3"
+        },
+        {
+          "text": "I've tidied up a few comments.",
+          "audioSrc": "public/data/audio/common_meeting/mi_751_sideB_1.mp3"
+        },
+        {
+          "text": "I removed some unnecessary comments.",
+          "audioSrc": "public/data/audio/common_meeting/mi_751_sideB_2.mp3"
+        }
+      ],
+      "note": "[Clean up] is the most common phrasal verb for refactoring or tidying code."
+    },
+    {
+      "cardId": "mi_752",
+      "cardType": "flippable",
+      "sideA": "Quisiera que fueran más.",
+      "sideB": [
+        {
+          "text": "I wish there were more.",
+          "audioSrc": "public/data/audio/common_meeting/mi_752_sideB_0.mp3"
+        },
+        {
+          "text": "I'd like for there to be more.",
+          "audioSrc": "public/data/audio/common_meeting/mi_752_sideB_1.mp3"
+        },
+        {
+          "text": "I want there to be more of them.",
+          "audioSrc": "public/data/audio/common_meeting/mi_752_sideB_2.mp3"
+        },
+        {
+          "text": "I'd want there to be more of them.",
+          "audioSrc": "public/data/audio/common_meeting/mi_752_sideB_3.mp3"
+        },
+        {
+          "text": "I'd like there to be more of them.",
+          "audioSrc": "public/data/audio/common_meeting/mi_752_sideB_4.mp3"
+        }
+      ],
+      "note": "Subjunctive: [I wish there were] (not ~was~).\n\n~I would like them to be more~ changes the meaning to 'I want them to be larger' or 'I want them to be something else'. To express existence (que hubieran), you must use the [there to be] structure.\n\n~I would like them to be more~ is incorrect in this context because it translates to 'quisiera que fueran más [adjetivo]' (e.g., more professional) instead of referring to quantity.\n\n~I would like them to be more of them~ is incorrect because it is redundant; the verb 'like' here requires the existential [there to be] structure to express 'que hubieran'."
+    },
+    {
+      "cardId": "mi_753",
+      "cardType": "flippable",
+      "sideA": "Me gustaría que ellos fueran mejor.",
+      "sideB": [
+        {
+          "text": "I'd like them to be better.",
+          "audioSrc": "public/data/audio/common_meeting/mi_753_sideB_0.mp3"
+        },
+        {
+          "text": "I wish they were better.",
+          "audioSrc": "public/data/audio/common_meeting/mi_753_sideB_1.mp3"
+        },
+        {
+          "text": "I'd want them to perform better.",
+          "audioSrc": "public/data/audio/common_meeting/mi_753_sideB_2.mp3"
+        }
+      ],
+      "note": "Structure: [I'd like] + [object] + [to be]."
+    },
+    {
+      "cardId": "mi_754",
+      "cardType": "flippable",
+      "sideA": "La aplicación funciona inmediatamente.",
+      "sideB": [
+        {
+          "text": "The app works out of the box.",
+          "audioSrc": "public/data/audio/common_meeting/mi_754_sideB_0.mp3"
+        },
+        {
+          "text": "The application works immediately out of the box.",
+          "audioSrc": "public/data/audio/common_meeting/mi_754_sideB_1.mp3"
+        },
+        {
+          "text": "It works out of the box.",
+          "audioSrc": "public/data/audio/common_meeting/mi_754_sideB_2.mp3"
+        },
+        {
+          "text": "The application works immediately.",
+          "audioSrc": "public/data/audio/common_meeting/mi_754_sideB_3.mp3"
+        }
+      ],
+      "note": "In software, [out of the box] refers to features that work immediately without extra setup, configuration, or customization."
+    },
+    {
+      "cardId": "mi_755",
+      "cardType": "flippable",
+      "sideA": "El sistema ya trae seguridad integrada.",
+      "sideB": [
+        {
+          "text": "The system has security features out of the box.",
+          "audioSrc": "public/data/audio/common_meeting/mi_755_sideB_0.mp3"
+        },
+        {
+          "text": "The system provides built-in security out of the box.",
+          "audioSrc": "public/data/audio/common_meeting/mi_755_sideB_1.mp3"
+        },
+        {
+          "text": "Security is included out of the box.",
+          "audioSrc": "public/data/audio/common_meeting/mi_755_sideB_2.mp3"
+        },
+        {
+          "text": "The system has integrated security.",
+          "audioSrc": "public/data/audio/common_meeting/mi_755_sideB_3.mp3"
+        }
+      ],
+      "note": "Use [out of the box] to describe products that are ready to use with all necessary components included.\n\n~The system is out of the box security already~ is incorrect word order. You can say 'The system provides [security out of the box]' or has '[out-of-the-box security]'.\n\n~The system includes already security features~ is incorrect because the adverb [already] should come before the verb [includes]."
+    },
+    {
+      "cardId": "mi_756",
+      "cardType": "flippable",
+      "sideA": "Necesitamos una idea original.",
+      "sideB": [
+        {
+          "text": "We need an out of the box idea.",
+          "audioSrc": "public/data/audio/common_meeting/mi_756_sideB_0.mp3"
+        },
+        {
+          "text": "We need an unconventional idea.",
+          "audioSrc": "public/data/audio/common_meeting/mi_756_sideB_1.mp3"
+        },
+        {
+          "text": "We need an original, out of the box solution.",
+          "audioSrc": "public/data/audio/common_meeting/mi_756_sideB_2.mp3"
+        }
+      ],
+      "note": "In creative contexts, [out of the box] refers to thinking in an unconventional or innovative way to solve a problem.\n\n~We need an idea out of the box~ is unnatural. When used figuratively, [out-of-the-box] acts as a compound adjective and should precede the noun: 'an out-of-the-box idea'."
+    },
+    {
+      "cardId": "mi_757",
+      "cardType": "flippable",
+      "sideA": "Intenta pensar de forma diferente.",
+      "sideB": [
+        {
+          "text": "Try to think out of the box.",
+          "audioSrc": "public/data/audio/common_meeting/mi_757_sideB_0.mp3"
+        },
+        {
+          "text": "Try to think outside the box.",
+          "audioSrc": "public/data/audio/common_meeting/mi_757_sideB_1.mp3"
+        },
+        {
+          "text": "Try to think differently and out of the box.",
+          "audioSrc": "public/data/audio/common_meeting/mi_757_sideB_2.mp3"
+        }
+      ],
+      "note": "While [outside the box] is the literal idiom, [out of the box] is frequently used as an adjective for the same concept."
+    },
+    {
+      "cardId": "mi_758",
+      "cardType": "flippable",
+      "sideA": "En caso que no lo hagan a tiempo",
+      "sideB": [
+        {
+          "text": "In case they don't do it on time.",
+          "audioSrc": "public/data/audio/common_meeting/mi_758_sideB_0.mp3"
+        },
+        {
+          "text": "In case they fail to do it on time.",
+          "audioSrc": "public/data/audio/common_meeting/mi_758_sideB_1.mp3"
+        },
+        {
+          "text": "Should they fail to do it on time.",
+          "audioSrc": "public/data/audio/common_meeting/mi_758_sideB_2.mp3"
+        }
+      ],
+      "note": "After [In case], we use the present simple to talk about future possibilities. [Fail to] is a professional way to say they didn't manage to do it.\n\n~In case they won't do it on time~ is incorrect. In English, conditional or possibility connectors like [In case] or 'If' require the [Present Simple] for the future."
+    },
+    {
+      "cardId": "mi_759",
+      "cardType": "flippable",
+      "sideA": "No quiero dañar a nadie",
+      "sideB": [
+        {
+          "text": "I don't want to hurt anyone.",
+          "audioSrc": "public/data/audio/common_meeting/mi_759_sideB_0.mp3"
+        },
+        {
+          "text": "I don't want to harm anyone.",
+          "audioSrc": "public/data/audio/common_meeting/mi_759_sideB_1.mp3"
+        },
+        {
+          "text": "I don't want to cause any harm to anyone.",
+          "audioSrc": "public/data/audio/common_meeting/mi_759_sideB_2.mp3"
+        }
+      ],
+      "note": "Use [Hurt] or [Harm] for people. \n\n~I don't want to damage anyone~ is incorrect because 'damage' is used for physical objects or abstract systems."
+    },
+    {
+      "cardId": "mi_760",
+      "cardType": "flippable",
+      "sideA": "No quiero dañar ninguna dependencia",
+      "sideB": [
+        {
+          "text": "I don't want to break any dependencies.",
+          "audioSrc": "public/data/audio/common_meeting/mi_760_sideB_0.mp3"
+        },
+        {
+          "text": "I don't want to damage any dependencies.",
+          "audioSrc": "public/data/audio/common_meeting/mi_760_sideB_1.mp3"
+        },
+        {
+          "text": "I don't want to mess up any dependencies.",
+          "audioSrc": "public/data/audio/common_meeting/mi_760_sideB_2.mp3"
+        }
+      ],
+      "note": "In technical environments, we usually say [break] a dependency when a change causes it to stop working correctly.\n\n~I don't want to break any dependence~ is incorrect in a technical context; we use the word [dependency] (plural [dependencies]) to refer to software components."
+    },
+    {
+      "cardId": "mi_761",
+      "cardType": "flippable",
+      "sideA": "Yo quisiera que ellos fueran más. (quantity)",
+      "sideB": [
+        {
+          "text": "I wish there were more of them.",
+          "audioSrc": "public/data/audio/common_meeting/mi_761_sideB_0.mp3"
+        },
+        {
+          "text": "I wish there were more.",
+          "audioSrc": "public/data/audio/common_meeting/mi_761_sideB_1.mp3"
+        },
+        {
+          "text": "I'd like there to be more of them.",
+          "audioSrc": "public/data/audio/common_meeting/mi_761_sideB_2.mp3"
+        },
+        {
+          "text": "I'd like there to be more.",
+          "audioSrc": "public/data/audio/common_meeting/mi_761_sideB_3.mp3"
+        }
+      ],
+      "note": "**[182]**\n\n**[40]**\n\nWhen asking for a higher quantity (que hubieran más), use the existential [there were] after 'wish' or [there to be] after 'like'."
+    },
+    {
+      "cardId": "mi_762",
+      "cardType": "flippable",
+      "sideA": "Yo quisiera que fuera más. (quantity)",
+      "sideB": [
+        {
+          "text": "I wish there were more.",
+          "audioSrc": "public/data/audio/common_meeting/mi_762_sideB_0.mp3"
+        },
+        {
+          "text": "I'd like there to be more.",
+          "audioSrc": "public/data/audio/common_meeting/mi_762_sideB_1.mp3"
+        },
+        {
+          "text": "I wish there was more.",
+          "audioSrc": "public/data/audio/common_meeting/mi_762_sideB_2.mp3"
+        },
+        {
+          "text": "I'd like there to be more of them.",
+          "audioSrc": "public/data/audio/common_meeting/mi_762_sideB_3.mp3"
+        }
+      ],
+      "note": "**[182]**\n\n**[40]**\n\n[I wish there were more] is the formal subjunctive for quantity. In casual speech, 'there was' is often heard but 'there were' remains the standard.\n\n~I'd like them to be more~ is incorrect because it implies you want the people to change (be more professional or taller), not that you want a higher number of them to exist."
+    },
+    {
+      "cardId": "mi_763",
+      "cardType": "flippable",
+      "sideA": "Yo quiero que ellos sean más. (quantity)",
+      "sideB": [
+        {
+          "text": "I want there to be more of them.",
+          "audioSrc": "public/data/audio/common_meeting/mi_763_sideB_0.mp3"
+        },
+        {
+          "text": "I'd like there to be more of them.",
+          "audioSrc": "public/data/audio/common_meeting/mi_763_sideB_1.mp3"
+        },
+        {
+          "text": "I want more of them.",
+          "audioSrc": "public/data/audio/common_meeting/mi_763_sideB_2.mp3"
+        },
+        {
+          "text": "I want there to be more.",
+          "audioSrc": "public/data/audio/common_meeting/mi_763_sideB_3.mp3"
+        }
+      ],
+      "note": "**[182]**\n\nTo express the desire for more items/people to exist, use [want there to be]."
+    },
+    {
+      "cardId": "mi_764",
+      "cardType": "flippable",
+      "sideA": "Yo quiero que sea más. (quantity)",
+      "sideB": [
+        {
+          "text": "I want there to be more.",
+          "audioSrc": "public/data/audio/common_meeting/mi_764_sideB_0.mp3"
+        },
+        {
+          "text": "I'd like there to be more.",
+          "audioSrc": "public/data/audio/common_meeting/mi_764_sideB_1.mp3"
+        },
+        {
+          "text": "I want more.",
+          "audioSrc": "public/data/audio/common_meeting/mi_764_sideB_2.mp3"
+        },
+        {
+          "text": "I want there to be more of it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_764_sideB_3.mp3"
+        }
+      ],
+      "note": "**[182]**\n\n[There to be] is the standard structure to express 'that there is/are' after verbs like 'want' or 'like'.\n\n~I want it to be more~ is incorrect because 'it' refers to a specific object changing its state (e.g., being 'more' of something like 'more red'), not to the existence of a quantity. ~I want it to be more of it~ is clunky and redundant."
+    },
+    {
+      "cardId": "mi_765",
+      "cardType": "flippable",
+      "sideA": "Quiero que haya más claridad en los requirements.",
+      "sideB": [
+        {
+          "text": "I want there to be more clarity in the requirements.",
+          "audioSrc": "public/data/audio/common_meeting/mi_765_sideB_0.mp3"
+        },
+        {
+          "text": "I'd like there to be more clarity regarding the requirements.",
+          "audioSrc": "public/data/audio/common_meeting/mi_765_sideB_1.mp3"
+        },
+        {
+          "text": "I want more clarity in the requirements.",
+          "audioSrc": "public/data/audio/common_meeting/mi_765_sideB_2.mp3"
+        }
+      ],
+      "note": "**[182]**\n\n[Clarity] is the noun form of 'clear'. \n\n~I want that there is more clarity~ is a common mistake; in English, after 'want', we use the object + infinitive structure: [I want there to be].\n\n~I want there is more clarity~ is incorrect because 'want' requires an object followed by an infinitive with 'to'. [I want there to be] is the correct structure."
+    },
+    {
+      "cardId": "mi_766",
+      "cardType": "flippable",
+      "sideA": "Me gustaría que hubiera menos ruido en la oficina.",
+      "sideB": [
+        {
+          "text": "I'd like there to be less noise in the office.",
+          "audioSrc": "public/data/audio/common_meeting/mi_766_sideB_0.mp3"
+        },
+        {
+          "text": "I wish there were less noise in the office.",
+          "audioSrc": "public/data/audio/common_meeting/mi_766_sideB_1.mp3"
+        },
+        {
+          "text": "I'd like for there to be less noise in the office.",
+          "audioSrc": "public/data/audio/common_meeting/mi_766_sideB_2.mp3"
+        }
+      ],
+      "note": "**[182]**\n\nAfter 'I wish', use the subjunctive [were] even for singular/uncountable nouns like 'noise'.\n\n[Less] is used for uncountable nouns (noise), while ~fewer~ is for countable nouns."
+    },
+    {
+      "cardId": "mi_767",
+      "cardType": "flippable",
+      "sideA": "Ellos esperan que haya algunos delays debido a la migracion.",
+      "sideB": [
+        {
+          "text": "They expect there to be some delays due to the migration.",
+          "audioSrc": "public/data/audio/common_meeting/mi_767_sideB_0.mp3"
+        },
+        {
+          "text": "They are expecting some delays because of the migration.",
+          "audioSrc": "public/data/audio/common_meeting/mi_767_sideB_1.mp3"
+        },
+        {
+          "text": "They expect that there will be some delays due to the migration.",
+          "audioSrc": "public/data/audio/common_meeting/mi_767_sideB_2.mp3"
+        },
+        {
+          "text": "They are expecting some delays due to the migration.",
+          "audioSrc": "public/data/audio/common_meeting/mi_767_sideB_3.mp3"
+        }
+      ],
+      "note": "**[182]**\n\n[Expect there to be] follows the same pattern as 'want there to be'.\n\n~They expect that there are delays~ is incorrect for future anticipation; use [there to be] or [there will be]."
+    },
+    {
+      "cardId": "mi_768",
+      "cardType": "flippable",
+      "sideA": "El manager no quiere que haya ningún error en el reporte.",
+      "sideB": [
+        {
+          "text": "The manager doesn't want there to be any errors in the report.",
+          "audioSrc": "public/data/audio/common_meeting/mi_768_sideB_0.mp3"
+        },
+        {
+          "text": "The manager wants there to be zero errors in the report.",
+          "audioSrc": "public/data/audio/common_meeting/mi_768_sideB_1.mp3"
+        },
+        {
+          "text": "The manager doesn't want any errors in the report.",
+          "audioSrc": "public/data/audio/common_meeting/mi_768_sideB_2.mp3"
+        }
+      ],
+      "note": "**[182]**\n\nIn negative sentences, use [any] instead of ~some~.\n\n[Doesn't want there to be] is the correct negative structure."
+    },
+    {
+      "cardId": "mi_769",
+      "cardType": "flippable",
+      "sideA": "Nos encantaría que hubiera más recursos para este project.",
+      "sideB": [
+        {
+          "text": "We'd love there to be more resources for this project.",
+          "audioSrc": "public/data/audio/common_meeting/mi_769_sideB_0.mp3"
+        },
+        {
+          "text": "We would love for there to be more resources for this project.",
+          "audioSrc": "public/data/audio/common_meeting/mi_769_sideB_1.mp3"
+        },
+        {
+          "text": "We'd love to have more resources for this project.",
+          "audioSrc": "public/data/audio/common_meeting/mi_769_sideB_2.mp3"
+        }
+      ],
+      "note": "**[182]**\n\n[Would love there to be] is an emphatic way to express a wish.\n\n~We would love that there are more resources~ is a literal translation error. Stick to the [there to be] infinitive structure."
+    },
+    {
+      "cardId": "mi_770",
+      "cardType": "flippable",
+      "sideA": "Hay problemas con acentos y signos en Frances",
+      "sideB": [
+        {
+          "text": "There are problems with accents and punctuation in French.",
+          "audioSrc": "public/data/audio/common_meeting/mi_770_sideB_0.mp3"
+        },
+        {
+          "text": "There are issues with French accents and signs.",
+          "audioSrc": "public/data/audio/common_meeting/mi_770_sideB_1.mp3"
+        },
+        {
+          "text": "French accents and punctuation marks are causing issues.",
+          "audioSrc": "public/data/audio/common_meeting/mi_770_sideB_2.mp3"
+        }
+      ],
+      "note": "[Punctuation marks] is the technical term for 'signos de puntuación'."
+    },
+    {
+      "cardId": "mi_771",
+      "cardType": "flippable",
+      "sideA": "Lo mas probable es que sea eso que dices",
+      "sideB": [
+        {
+          "text": "It's most likely what you're saying.",
+          "audioSrc": "public/data/audio/common_meeting/mi_771_sideB_0.mp3"
+        },
+        {
+          "text": "Most likely, it's what you said.",
+          "audioSrc": "public/data/audio/common_meeting/mi_771_sideB_1.mp3"
+        },
+        {
+          "text": "It's probably what you're talking about.",
+          "audioSrc": "public/data/audio/common_meeting/mi_771_sideB_2.mp3"
+        },
+        {
+          "text": "Most likely, it's what you are saying.",
+          "audioSrc": "public/data/audio/common_meeting/mi_771_sideB_3.mp3"
+        }
+      ],
+      "note": "[Most likely] indicates a high probability."
+    },
+    {
+      "cardId": "mi_772",
+      "cardType": "flippable",
+      "sideA": "Lo mas probable es que sea ese procedimiento",
+      "sideB": [
+        {
+          "text": "It's most likely that procedure.",
+          "audioSrc": "public/data/audio/common_meeting/mi_772_sideB_0.mp3"
+        },
+        {
+          "text": "That procedure is the most likely cause.",
+          "audioSrc": "public/data/audio/common_meeting/mi_772_sideB_1.mp3"
+        },
+        {
+          "text": "It's probably that procedure.",
+          "audioSrc": "public/data/audio/common_meeting/mi_772_sideB_2.mp3"
+        }
+      ],
+      "note": "When talking about software logic, we often use [most likely] to diagnose bugs.\n\n~Probably It's that procedure~ is awkward; the adverb 'probably' usually follows the verb 'to be'. Use [It is probably] or [It's probably].\n\n\n~Most likely It's that procedure~ is awkward; the phrase [most likely] usually follows the verb 'to be' or requires a comma for proper flow."
+    },
+    {
+      "cardId": "mi_773",
+      "cardType": "flippable",
+      "sideA": "El no lo es, pero el otro lo es.",
+      "sideB": [
+        {
+          "text": "He isn't, but the other one is.",
+          "audioSrc": "public/data/audio/common_meeting/mi_773_sideB_0.mp3"
+        },
+        {
+          "text": "He's not, but the other one is.",
+          "audioSrc": "public/data/audio/common_meeting/mi_773_sideB_1.mp3"
+        },
+        {
+          "text": "He is not, but the other is.",
+          "audioSrc": "public/data/audio/common_meeting/mi_773_sideB_2.mp3"
+        },
+        {
+          "text": "He is not, but another one is.",
+          "audioSrc": "public/data/audio/common_meeting/mi_773_sideB_3.mp3"
+        }
+      ],
+      "note": "We use [the other one is] to avoid repeating the adjective or noun.\n\n~He is not, but the another one is~ is incorrect because 'another' cannot follow the definite article 'the'. Use [the other one] or simply [another one] without 'the'."
+    },
+    {
+      "cardId": "mi_774",
+      "cardType": "flippable",
+      "sideA": "El lo es, pero el otro no lo es.",
+      "sideB": [
+        {
+          "text": "He is, but the other one isn't.",
+          "audioSrc": "public/data/audio/common_meeting/mi_774_sideB_0.mp3"
+        },
+        {
+          "text": "He's the one, but the other isn't.",
+          "audioSrc": "public/data/audio/common_meeting/mi_774_sideB_1.mp3"
+        },
+        {
+          "text": "He is, while the other one is not.",
+          "audioSrc": "public/data/audio/common_meeting/mi_774_sideB_2.mp3"
+        },
+        {
+          "text": "He is, but another one isn't.",
+          "audioSrc": "public/data/audio/common_meeting/mi_774_sideB_3.mp3"
+        }
+      ],
+      "note": "Observe the contrast using [but] or [while].\n\n\n~He is, but the another one isn't~ is invalid because [another] (an + other) cannot follow the definite article [the]."
+    },
+    {
+      "cardId": "mi_775",
+      "cardType": "flippable",
+      "sideA": "La razón por la que no se muestra es...",
+      "sideB": [
+        {
+          "text": "The reason it's not being displayed is...",
+          "audioSrc": "public/data/audio/common_meeting/mi_775_sideB_0.mp3"
+        },
+        {
+          "text": "The reason it's not getting displayed is...",
+          "audioSrc": "public/data/audio/common_meeting/mi_775_sideB_1.mp3"
+        },
+        {
+          "text": "The reason why it isn't showing up is...",
+          "audioSrc": "public/data/audio/common_meeting/mi_775_sideB_2.mp3"
+        },
+        {
+          "text": "The reason it's not showing up is...",
+          "audioSrc": "public/data/audio/common_meeting/mi_775_sideB_3.mp3"
+        },
+        {
+          "text": "The reason it's not displayed is...",
+          "audioSrc": "public/data/audio/common_meeting/mi_775_sideB_4.mp3"
+        }
+      ],
+      "note": "[Getting displayed] is a common passive structure in UI contexts."
+    },
+    {
+      "cardId": "mi_776",
+      "cardType": "flippable",
+      "sideA": "No esta funcionando bien en ISG de EBS",
+      "sideB": [
+        {
+          "text": "It's not working properly in EBS ISG.",
+          "audioSrc": "public/data/audio/common_meeting/mi_776_sideB_0.mp3"
+        },
+        {
+          "text": "It's not working in EBS ISG.",
+          "audioSrc": "public/data/audio/common_meeting/mi_776_sideB_1.mp3"
+        },
+        {
+          "text": "It is not functioning correctly within EBS ISG.",
+          "audioSrc": "public/data/audio/common_meeting/mi_776_sideB_2.mp3"
+        }
+      ],
+      "note": "[Properly] is the professional way to say 'bien' regarding functionality."
+    },
+    {
+      "cardId": "mi_777",
+      "cardType": "flippable",
+      "sideA": "Es mas directa esta manera.",
+      "sideB": [
+        {
+          "text": "This way is more direct.",
+          "audioSrc": "public/data/audio/common_meeting/mi_777_sideB_0.mp3"
+        },
+        {
+          "text": "This manner is more direct.",
+          "audioSrc": "public/data/audio/common_meeting/mi_777_sideB_1.mp3"
+        },
+        {
+          "text": "Doing it this way is more direct.",
+          "audioSrc": "public/data/audio/common_meeting/mi_777_sideB_2.mp3"
+        },
+        {
+          "text": "It is more direct this way.",
+          "audioSrc": "public/data/audio/common_meeting/mi_777_sideB_3.mp3"
+        }
+      ],
+      "note": "[This way] refers to the method or approach.\n\n~It's directly this way~ is incorrect because [directly] is an adverb. To describe a method, use the adjective [direct]."
+    },
+    {
+      "cardId": "mi_778",
+      "cardType": "flippable",
+      "sideA": "Tenemos apodos para todo.",
+      "sideB": [
+        {
+          "text": "We have nicknames for everything.",
+          "audioSrc": "public/data/audio/common_meeting/mi_778_sideB_0.mp3"
+        },
+        {
+          "text": "We've got nicknames for everything.",
+          "audioSrc": "public/data/audio/common_meeting/mi_778_sideB_1.mp3"
+        },
+        {
+          "text": "Everything has a nickname here.",
+          "audioSrc": "public/data/audio/common_meeting/mi_778_sideB_2.mp3"
+        },
+        {
+          "text": "We have aliases for everything.",
+          "audioSrc": "public/data/audio/common_meeting/mi_778_sideB_3.mp3"
+        }
+      ],
+      "note": "[Nicknames] (apodos) is common in dev teams for servers or complex components.\n\nIn Database contexts, the term [alias] is used instead of 'nickname' to provide temporary names to tables or columns."
+    },
+    {
+      "cardId": "mi_779",
+      "cardType": "flippable",
+      "sideA": "Se retorna un -1 como flag",
+      "sideB": [
+        {
+          "text": "A -1 is returned as a flag.",
+          "audioSrc": "public/data/audio/common_meeting/mi_779_sideB_0.mp3"
+        },
+        {
+          "text": "It returns a -1 as a flag.",
+          "audioSrc": "public/data/audio/common_meeting/mi_779_sideB_1.mp3"
+        },
+        {
+          "text": "The function returns -1 as a status flag.",
+          "audioSrc": "public/data/audio/common_meeting/mi_779_sideB_2.mp3"
+        }
+      ],
+      "note": "[Flag] is a technical term for a variable that signals a specific condition.\n\n~It is returned -1 as a flag~ is incorrect; use [A -1 is returned] (passive) or [It returns -1] (active) where 'it' represents the function."
+    },
+    {
+      "cardId": "mi_780",
+      "cardType": "flippable",
+      "sideA": "Retornamos un cursor vacio con un -1",
+      "sideB": [
+        {
+          "text": "We return an empty cursor with a -1.",
+          "audioSrc": "public/data/audio/common_meeting/mi_780_sideB_0.mp3"
+        },
+        {
+          "text": "It returns an empty cursor along with a -1.",
+          "audioSrc": "public/data/audio/common_meeting/mi_780_sideB_1.mp3"
+        },
+        {
+          "text": "An empty cursor with a -1 is returned.",
+          "audioSrc": "public/data/audio/common_meeting/mi_780_sideB_2.mp3"
+        }
+      ],
+      "note": "[Empty cursor] is the standard DB terminology."
+    },
+    {
+      "cardId": "mi_781",
+      "cardType": "flippable",
+      "sideA": "Es mejor prevenir que lamentar",
+      "sideB": [
+        {
+          "text": "Better safe than sorry.",
+          "audioSrc": "public/data/audio/common_meeting/mi_781_sideB_0.mp3"
+        },
+        {
+          "text": "It's better to be safe than sorry.",
+          "audioSrc": "public/data/audio/common_meeting/mi_781_sideB_1.mp3"
+        },
+        {
+          "text": "Prevention is better than cure.",
+          "audioSrc": "public/data/audio/common_meeting/mi_781_sideB_2.mp3"
+        }
+      ],
+      "note": "[Better safe than sorry] is the most common idiomatic version."
+    },
+    {
+      "cardId": "mi_782",
+      "cardType": "flippable",
+      "sideA": "Es solo una costumbre que tengo",
+      "sideB": [
+        {
+          "text": "It's just a habit of mine.",
+          "audioSrc": "public/data/audio/common_meeting/mi_782_sideB_0.mp3"
+        },
+        {
+          "text": "It is just a habit I have.",
+          "audioSrc": "public/data/audio/common_meeting/mi_782_sideB_1.mp3"
+        },
+        {
+          "text": "That's just a habit of mine.",
+          "audioSrc": "public/data/audio/common_meeting/mi_782_sideB_2.mp3"
+        },
+        {
+          "text": "It's just a habit that I have.",
+          "audioSrc": "public/data/audio/common_meeting/mi_782_sideB_3.mp3"
+        }
+      ],
+      "note": "[Habit of mine] is a natural way to describe personal routines."
+    },
+    {
+      "cardId": "mi_783",
+      "cardType": "flippable",
+      "sideA": "Los multiplicadores de cantidad van de 1 en 1",
+      "sideB": [
+        {
+          "text": "Quantity multipliers go by 1s.",
+          "audioSrc": "public/data/audio/common_meeting/mi_783_sideB_0.mp3"
+        },
+        {
+          "text": "Quantity multipliers increment by 1.",
+          "audioSrc": "public/data/audio/common_meeting/mi_783_sideB_1.mp3"
+        },
+        {
+          "text": "The quantity multipliers increase one by one.",
+          "audioSrc": "public/data/audio/common_meeting/mi_783_sideB_2.mp3"
+        },
+        {
+          "text": "Multipliers of quantity increment by 1.",
+          "audioSrc": "public/data/audio/common_meeting/mi_783_sideB_3.mp3"
+        },
+        {
+          "text": "Quantity multipliers go 1 by 1.",
+          "audioSrc": "public/data/audio/common_meeting/mi_783_sideB_4.mp3"
+        }
+      ],
+      "note": "[Increment by] is the precise term for increasing a value by a specific amount.\n\n~Quantity multipliers go 1 on 1~ is incorrect because '1 on 1' refers to personal interactions, not numerical increments."
+    },
+    {
+      "cardId": "mi_784",
+      "cardType": "flippable",
+      "sideA": "Cuando lo vea, te lo dire",
+      "sideB": [
+        {
+          "text": "When I see it, I'll tell you.",
+          "audioSrc": "public/data/audio/common_meeting/mi_784_sideB_0.mp3"
+        },
+        {
+          "text": "I will tell you when I see it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_784_sideB_1.mp3"
+        },
+        {
+          "text": "Once I see it, I'll let you know.",
+          "audioSrc": "public/data/audio/common_meeting/mi_784_sideB_2.mp3"
+        }
+      ],
+      "note": "**[183]**\n\n[When I see it] uses the present simple for a future condition."
+    },
+    {
+      "cardId": "mi_785",
+      "cardType": "flippable",
+      "sideA": "Cuando yo este sin señal, podre usar un LLM local",
+      "sideB": [
+        {
+          "text": "When I'm without signal, I'll be able to use a local LLM.",
+          "audioSrc": "public/data/audio/common_meeting/mi_785_sideB_0.mp3"
+        },
+        {
+          "text": "When I have no signal, I can use a local LLM.",
+          "audioSrc": "public/data/audio/common_meeting/mi_785_sideB_1.mp3"
+        },
+        {
+          "text": "I'll use a local LLM when I am without signal.",
+          "audioSrc": "public/data/audio/common_meeting/mi_785_sideB_2.mp3"
+        },
+        {
+          "text": "When I'm without signal, I could use a local LLM.",
+          "audioSrc": "public/data/audio/common_meeting/mi_785_sideB_3.mp3"
+        }
+      ],
+      "note": "**[183]**\n\n[When I am without signal] corresponds to 'Cuando esté'."
+    },
+    {
+      "cardId": "mi_786",
+      "cardType": "flippable",
+      "sideA": "Cuando este en mi casa, voy a descansar",
+      "sideB": [
+        {
+          "text": "When I'm at home, I'm going to rest.",
+          "audioSrc": "public/data/audio/common_meeting/mi_786_sideB_0.mp3"
+        },
+        {
+          "text": "I will rest when I am at home.",
+          "audioSrc": "public/data/audio/common_meeting/mi_786_sideB_1.mp3"
+        },
+        {
+          "text": "When I get home, I'll rest.",
+          "audioSrc": "public/data/audio/common_meeting/mi_786_sideB_2.mp3"
+        },
+        {
+          "text": "When I'm at home, I'm going to take a rest.",
+          "audioSrc": "public/data/audio/common_meeting/mi_786_sideB_3.mp3"
+        }
+      ],
+      "note": "**[183]**\n\n[When I am at home] describes the state."
+    },
+    {
+      "cardId": "mi_787",
+      "cardType": "flippable",
+      "sideA": "Cuando tu estes dudando, solo preguntame.",
+      "sideB": [
+        {
+          "text": "When you're doubting, just ask me.",
+          "audioSrc": "public/data/audio/common_meeting/mi_787_sideB_0.mp3"
+        },
+        {
+          "text": "When you are in doubt, just ask me.",
+          "audioSrc": "public/data/audio/common_meeting/mi_787_sideB_1.mp3"
+        },
+        {
+          "text": "Just ask me when you are doubting.",
+          "audioSrc": "public/data/audio/common_meeting/mi_787_sideB_2.mp3"
+        }
+      ],
+      "note": "**[183]**\n\n[In doubt] is a very common idiom for 'dudando'."
+    },
+    {
+      "cardId": "mi_788",
+      "cardType": "flippable",
+      "sideA": "Cuando tu estes en casa, avisame.",
+      "sideB": [
+        {
+          "text": "When you're at home, let me know.",
+          "audioSrc": "public/data/audio/common_meeting/mi_788_sideB_0.mp3"
+        },
+        {
+          "text": "Let me know when you are at home.",
+          "audioSrc": "public/data/audio/common_meeting/mi_788_sideB_1.mp3"
+        },
+        {
+          "text": "When you get home, tell me.",
+          "audioSrc": "public/data/audio/common_meeting/mi_788_sideB_2.mp3"
+        }
+      ],
+      "note": "**[183]**\n\n[Let me know] is the standard way to say 'avísame'."
     }
   ]
 }
