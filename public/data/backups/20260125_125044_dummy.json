@@ -22,7 +22,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_001_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~importacions~ is not an English word; the correct term is [imports]."
+      "note": ""
     },
     {
       "cardId": "dummy_002",
@@ -60,13 +60,9 @@
         {
           "text": "That's a dependency belonging to an import.",
           "audioSrc": "public/data/audio/dummy/dummy_003_sideB_2.mp3"
-        },
-        {
-          "text": "It's the dependency of an import.",
-          "audioSrc": "public/data/audio/dummy/dummy_003_sideB_3.mp3"
         }
       ],
-      "note": "\n\n~It's a dependency of an importacion~ is incorrect because [import] is the correct English term."
+      "note": ""
     },
     {
       "cardId": "dummy_004",
@@ -104,13 +100,9 @@
         {
           "text": "The item count per package is not the same for all products.",
           "audioSrc": "public/data/audio/dummy/dummy_005_sideB_2.mp3"
-        },
-        {
-          "text": "The quantity of products per pack is different.",
-          "audioSrc": "public/data/audio/dummy/dummy_005_sideB_3.mp3"
         }
       ],
-      "note": "[Item count] is a precise technical term for quantity.\n\n~The amount of products~ is incorrect because 'amount' is used for uncountable nouns; use [number] or [quantity] for countable items like products."
+      "note": "[Item count] is a precise technical term for quantity."
     },
     {
       "cardId": "dummy_006",
@@ -130,7 +122,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_006_sideB_2.mp3"
         }
       ],
-      "note": "[SKU] (Stock Keeping Unit) is the standard acronym for a specific product code.\n\n~Unit per pack are different~ is incorrect; use [Units per pack are] to maintain [subject-verb agreement]."
+      "note": "[SKU] (Stock Keeping Unit) is the standard acronym for a specific product code."
     },
     {
       "cardId": "dummy_007",
@@ -148,10 +140,6 @@
         {
           "text": "That is determined by the specific unit of measure for each item.",
           "audioSrc": "public/data/audio/dummy/dummy_007_sideB_2.mp3"
-        },
-        {
-          "text": "That depends on the unit of measure of the product.",
-          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_3.mp3"
         }
       ],
       "note": "[UOM] is the standard acronym for Unit of Measure."
@@ -214,7 +202,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_010_sideB_2.mp3"
         }
       ],
-      "note": "[I bet] is an informal but standard way to express strong confidence in a prediction.\n\n~I bet on the future it will be like this~ is less natural; use [in the future] to describe when something will happen."
+      "note": "[I bet] is an informal but standard way to express strong confidence in a prediction."
     },
     {
       "cardId": "dummy_011",
@@ -234,7 +222,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_011_sideB_2.mp3"
         }
       ],
-      "note": "[Still don't have] is the most natural translation for 'continuo no teniendo'.\n\n~But I'm still not having~ is incorrect because 'have' is a [state verb] and is rarely used in continuous forms. ~But I continue not having~ is grammatically possible but [less natural] than 'I still don't have'."
+      "note": "[Still don't have] is the most natural translation for 'continuo no teniendo'."
     },
     {
       "cardId": "dummy_012",
@@ -272,10 +260,6 @@
         {
           "text": "Remove the noise from the data.",
           "audioSrc": "public/data/audio/dummy/dummy_013_sideB_2.mp3"
-        },
-        {
-          "text": "Filter out the noise of the data.",
-          "audioSrc": "public/data/audio/dummy/dummy_013_sideB_3.mp3"
         }
       ],
       "note": ""
@@ -298,7 +282,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_014_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~It excludes duplicate emails~ changes the command into a [statement]."
+      "note": ""
     },
     {
       "cardId": "dummy_015",
@@ -318,7 +302,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_015_sideB_2.mp3"
         }
       ],
-      "note": "[Outdated] refers to data that is no longer valid or relevant.\n\n~It filters out old results~ and ~It filters old results~ change the [imperative] mood of the original sentence to a statement."
+      "note": "[Outdated] refers to data that is no longer valid or relevant."
     },
     {
       "cardId": "dummy_016",
@@ -336,10 +320,6 @@
         {
           "text": "The data stream got cut off during the update.",
           "audioSrc": "public/data/audio/dummy/dummy_016_sideB_2.mp3"
-        },
-        {
-          "text": "The data stream got interrupted during the update.",
-          "audioSrc": "public/data/audio/dummy/dummy_016_sideB_3.mp3"
         }
       ],
       "note": "[Stream] is the technical term for a continuous flow of data."
@@ -362,7 +342,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_017_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~in a sequel way~ is incorrect; [sequentially] or [in sequence] are the correct terms for this context."
+      "note": ""
     },
     {
       "cardId": "dummy_018",
@@ -382,7 +362,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_018_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~The server does not support an audio stream so heavy~ is incorrect; use the [such a + adjective + noun] structure or place the adjective before the noun."
+      "note": ""
     },
     {
       "cardId": "dummy_019",
@@ -500,10 +480,6 @@
         {
           "text": "We're not receiving the data yet.",
           "audioSrc": "public/data/audio/dummy/dummy_024_sideB_2.mp3"
-        },
-        {
-          "text": "The data isn't coming yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_024_sideB_3.mp3"
         }
       ],
       "note": ""
@@ -526,7 +502,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_025_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~Has the data came in yet?~ is incorrect because the [past participle] of 'come' is 'come', not 'came'."
+      "note": ""
     },
     {
       "cardId": "dummy_026",
@@ -546,7 +522,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_026_sideB_2.mp3"
         }
       ],
-      "note": "\n\nUsing [arrive] for data is correct and common in technical contexts to describe information reaching a destination."
+      "note": ""
     }
   ]
 }
