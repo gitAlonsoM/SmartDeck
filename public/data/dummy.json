@@ -234,7 +234,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_011_sideB_2.mp3"
         }
       ],
-      "note": "[Still don't have] is the most natural translation for 'continuo no teniendo'.\n\n~But I'm still not having~ is incorrect because 'have' is a [state verb] and is rarely used in continuous forms. ~But I continue not having~ is grammatically possible but [less natural] than 'I still don't have'."
+      "note": "**[184]**\n\n[Still don't have] is the most natural translation for 'continuo no teniendo'.\n\n~But I'm still not having~ is incorrect because 'have' is a [state verb] and is rarely used in continuous forms. ~But I continue not having~ is grammatically possible but [less natural] than 'I still don't have'."
     },
     {
       "cardId": "dummy_012",
@@ -547,6 +547,126 @@
         }
       ],
       "note": "\n\nUsing [arrive] for data is correct and common in technical contexts to describe information reaching a destination."
+    },
+    {
+      "cardId": "dummy_027",
+      "cardType": "flippable",
+      "sideA": "El servidor está teniendo una nueva dirección IP.",
+      "sideB": [
+        {
+          "text": "The server has a new IP address.",
+          "audioSrc": "public/data/audio/dummy/dummy_027_sideB_0.mp3"
+        },
+        {
+          "text": "The server now has a different IP.",
+          "audioSrc": "public/data/audio/dummy/dummy_027_sideB_1.mp3"
+        },
+        {
+          "text": "A new IP address belongs to the server.",
+          "audioSrc": "public/data/audio/dummy/dummy_027_sideB_2.mp3"
+        }
+      ],
+      "note": "**[184]**\n\n~The server is having~ is a logic error. Ownership of an attribute is a [state], not an action."
+    },
+    {
+      "cardId": "dummy_028",
+      "cardType": "flippable",
+      "sideA": "El sistema está teniendo muchos errores de validación.",
+      "sideB": [
+        {
+          "text": "The system has many validation errors.",
+          "audioSrc": "public/data/audio/dummy/dummy_028_sideB_0.mp3"
+        },
+        {
+          "text": "There are many validation errors in the system.",
+          "audioSrc": "public/data/audio/dummy/dummy_028_sideB_1.mp3"
+        },
+        {
+          "text": "The system contains several validation errors.",
+          "audioSrc": "public/data/audio/dummy/dummy_028_sideB_2.mp3"
+        }
+      ],
+      "note": "**[184]**\n\nAvoid ~is having errors~ when describing a current state. Use [has] to denote the presence of these items in the system."
+    },
+    {
+      "cardId": "dummy_029",
+      "cardType": "flippable",
+      "sideA": "Como el servidor falló, perdimos los logs.",
+      "sideB": [
+        {
+          "text": "Since the server failed, we lost the logs.",
+          "audioSrc": "public/data/audio/dummy/dummy_029_sideB_0.mp3"
+        },
+        {
+          "text": "Since there was a server failure, the logs were lost.",
+          "audioSrc": "public/data/audio/dummy/dummy_029_sideB_1.mp3"
+        },
+        {
+          "text": "Because the server crashed, the log data is gone.",
+          "audioSrc": "public/data/audio/dummy/dummy_029_sideB_2.mp3"
+        }
+      ],
+      "note": "**[186]**\n\n[Since] here functions as a [conjunction of cause], providing the reason for the data loss."
+    },
+    {
+      "cardId": "dummy_030",
+      "cardType": "flippable",
+      "sideA": "Como ya terminaste, puedes revisar mi PR.",
+      "sideB": [
+        {
+          "text": "Since you've already finished, you can review my PR.",
+          "audioSrc": "public/data/audio/dummy/dummy_030_sideB_0.mp3"
+        },
+        {
+          "text": "Since you are done, you can check my pull request.",
+          "audioSrc": "public/data/audio/dummy/dummy_030_sideB_1.mp3"
+        },
+        {
+          "text": "Now that you are finished, feel free to review my code.",
+          "audioSrc": "public/data/audio/dummy/dummy_030_sideB_2.mp3"
+        }
+      ],
+      "note": "**[186]**\n\nUsing [since] to translate 'Como...' at the beginning of a sentence is very common in professional requests."
+    },
+    {
+      "cardId": "dummy_031",
+      "cardType": "flippable",
+      "sideA": "Ya sea que elijamos React o Vue, el tiempo de entrega es el mismo.",
+      "sideB": [
+        {
+          "text": "Whether we choose React or Vue, the delivery time is the same.",
+          "audioSrc": "public/data/audio/dummy/dummy_031_sideB_0.mp3"
+        },
+        {
+          "text": "Whether we pick React or Vue, the lead time remains identical.",
+          "audioSrc": "public/data/audio/dummy/dummy_031_sideB_1.mp3"
+        },
+        {
+          "text": "The delivery time is the same, regardless of whether we choose React or Vue.",
+          "audioSrc": "public/data/audio/dummy/dummy_031_sideB_2.mp3"
+        }
+      ],
+      "note": "**[185]**\n\n[Whether] is used to present two alternatives (React vs. Vue) where the outcome remains constant."
+    },
+    {
+      "cardId": "dummy_032",
+      "cardType": "flippable",
+      "sideA": "Ya sea que el servidor esté activo o no, la app debe funcionar offline.",
+      "sideB": [
+        {
+          "text": "Whether the server is active or not, the app must work offline.",
+          "audioSrc": "public/data/audio/dummy/dummy_032_sideB_0.mp3"
+        },
+        {
+          "text": "Whether or not the server is up, the app should function offline.",
+          "audioSrc": "public/data/audio/dummy/dummy_032_sideB_1.mp3"
+        },
+        {
+          "text": "The app needs to function offline, whether the server is online or offline.",
+          "audioSrc": "public/data/audio/dummy/dummy_032_sideB_2.mp3"
+        }
+      ],
+      "note": "**[185]**\n\nThe structure [Whether... or not] is the standard way to express 'Ya sea que... o no'."
     }
   ]
 }
