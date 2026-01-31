@@ -128,10 +128,6 @@
         {
           "text": "Each product has a different number of units per pack.",
           "audioSrc": "public/data/audio/dummy/dummy_006_sideB_2.mp3"
-        },
-        {
-          "text": "Units per pack are different depending on the product.",
-          "audioSrc": "public/data/audio/dummy/dummy_006_sideB_3.mp3"
         }
       ],
       "note": "[SKU] (Stock Keeping Unit) is the standard acronym for a specific product code.\n\n~Unit per pack are different~ is incorrect; use [Units per pack are] to maintain [subject-verb agreement]."
@@ -300,10 +296,6 @@
         {
           "text": "Remove duplicate emails.",
           "audioSrc": "public/data/audio/dummy/dummy_014_sideB_2.mp3"
-        },
-        {
-          "text": "Filter out the duplicated emails.",
-          "audioSrc": "public/data/audio/dummy/dummy_014_sideB_3.mp3"
         }
       ],
       "note": "\n\n~It excludes duplicate emails~ changes the command into a [statement]."
@@ -350,7 +342,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_016_sideB_3.mp3"
         }
       ],
-      "note": "[Stream] is the technical term for a continuous flow of data.\n\n\n\n~during the updating~ is incorrect; use the noun [update] to refer to the specific event or process."
+      "note": "[Stream] is the technical term for a continuous flow of data."
     },
     {
       "cardId": "dummy_017",
@@ -388,18 +380,6 @@
         {
           "text": "The server doesn't support that heavy of an audio stream.",
           "audioSrc": "public/data/audio/dummy/dummy_018_sideB_2.mp3"
-        },
-        {
-          "text": "The server doesn't support an audio stream that is so heavy.",
-          "audioSrc": "public/data/audio/dummy/dummy_018_sideB_3.mp3"
-        },
-        {
-          "text": "The server cannot handle an audio stream this heavy.",
-          "audioSrc": "public/data/audio/dummy/dummy_018_sideB_4.mp3"
-        },
-        {
-          "text": "The server does not support an audio stream of that weight.",
-          "audioSrc": "public/data/audio/dummy/dummy_018_sideB_5.mp3"
         }
       ],
       "note": "\n\n~The server does not support an audio stream so heavy~ is incorrect; use the [such a + adjective + noun] structure or place the adjective before the noun."
@@ -682,7 +662,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_031_sideB_2.mp3"
         }
       ],
-      "note": "**[185]**\n\n[Whether] is used to present two alternatives (React vs. Vue) where the outcome remains constant.\n\n~Whether we choose React or Vue, the deadline is the same~ is not accurate here because [delivery time] (the duration of the work) is different from a [deadline] (a specific date/time limit).\n\n\n\n~Either we choose React or Vue, the delivery time is the same~ is incorrect because [either] is used for choices between two things, whereas [whether] is required to introduce a conditional clause where the result is independent of the choice."
+      "note": "**[185]**\n\n[Whether] is used to present two alternatives (React vs. Vue) where the outcome remains constant.\n\n~Whether we choose React or Vue, the deadline is the same~ is not accurate here because [delivery time] (the duration of the work) is different from a [deadline] (a specific date/time limit)."
     },
     {
       "cardId": "dummy_032",
@@ -702,67 +682,67 @@
           "audioSrc": "public/data/audio/dummy/dummy_032_sideB_2.mp3"
         }
       ],
-      "note": "**[101]**\n**[185]**\n\nThe structure [Whether... or not] is the standard way to express 'Ya sea que... o no'.\n\n\n\n~Either the server is active or not~ is not valid here; [either] implies a choice between two alternatives, while [whether] is used to indicate that the outcome (offline functionality) is the same regardless of the condition."
+      "note": "**[185]**\n\nThe structure [Whether... or not] is the standard way to express 'Ya sea que... o no'."
     },
     {
-      "cardId": "dummy_033",
-      "cardType": "flippable",
-      "sideA": "No hay necesidad de reiniciar el servidor ahora.",
-      "sideB": [
-        {
-          "text": "There is no need to restart the server now.",
-          "audioSrc": "public/data/audio/dummy/dummy_033_sideB_0.mp3"
-        },
-        {
-          "text": "We don't have a need to reboot the server at the moment.",
-          "audioSrc": "public/data/audio/dummy/dummy_033_sideB_1.mp3"
-        },
-        {
-          "text": "There's no requirement to restart the server right now.",
-          "audioSrc": "public/data/audio/dummy/dummy_033_sideB_2.mp3"
-        }
-      ],
-      "note": "**[187]**\n\n~There is no need of restarting~ is a common error. Although 'of' is a preposition, the noun [need] implies a [requirement for a future action], so it must be followed by [to + infinitive]."
-    },
-    {
-      "cardId": "dummy_034",
-      "cardType": "flippable",
-      "sideA": "Esta es nuestra oportunidad de corregir el error.",
-      "sideB": [
-        {
-          "text": "This is our opportunity to fix the error.",
-          "audioSrc": "public/data/audio/dummy/dummy_034_sideB_0.mp3"
-        },
-        {
-          "text": "We have an opportunity to correct the bug now.",
-          "audioSrc": "public/data/audio/dummy/dummy_034_sideB_1.mp3"
-        },
-        {
-          "text": "This represents our opening to fix the mistake.",
-          "audioSrc": "public/data/audio/dummy/dummy_034_sideB_2.mp3"
-        }
-      ],
-      "note": "**[187]**\n\n~Our opportunity of fixing~ is incorrect. The noun [opportunity] describes [potential], and follows the semantic pattern that requires the [to + infinitive] structure."
-    },
-    {
-      "cardId": "dummy_035",
-      "cardType": "flippable",
-      "sideA": "El plan de actualizar la base de datos ha cambiado.",
-      "sideB": [
-        {
-          "text": "The plan to update the database has changed.",
-          "audioSrc": "public/data/audio/dummy/dummy_035_sideB_0.mp3"
-        },
-        {
-          "text": "Our plan to upgrade the database is different now.",
-          "audioSrc": "public/data/audio/dummy/dummy_035_sideB_1.mp3"
-        },
-        {
-          "text": "The roadmap to update the DB was modified.",
-          "audioSrc": "public/data/audio/dummy/dummy_035_sideB_2.mp3"
-        }
-      ],
-      "note": "**[187]**\n\n~The plan of updating~ or ~for updating~ sounds unnatural. Since a [plan] is an [intention for future action], you must use [to + infinitive] regardless of the 'de' in Spanish."
-    }
+    "cardId": "dummy_033",
+    "cardType": "flippable",
+    "sideA": "No hay necesidad de reiniciar el servidor ahora.",
+    "sideB": [
+      {
+        "text": "There is no need to restart the server now.",
+        "audioSrc": "public/data/audio/dummy/dummy_033_sideB_0.mp3"
+      },
+      {
+        "text": "We don't have a need to reboot the server at the moment.",
+        "audioSrc": "public/data/audio/dummy/dummy_033_sideB_1.mp3"
+      },
+      {
+        "text": "There's no requirement to restart the server right now.",
+        "audioSrc": "public/data/audio/dummy/dummy_033_sideB_2.mp3"
+      }
+    ],
+    "note": "**[187]**\n\n~There is no need of restarting~ is a common error. Although 'of' is a preposition, the noun [need] implies a [requirement for a future action], so it must be followed by [to + infinitive]."
+  },
+  {
+    "cardId": "dummy_034",
+    "cardType": "flippable",
+    "sideA": "Esta es nuestra oportunidad de corregir el error.",
+    "sideB": [
+      {
+        "text": "This is our opportunity to fix the error.",
+        "audioSrc": "public/data/audio/dummy/dummy_034_sideB_0.mp3"
+      },
+      {
+        "text": "We have an opportunity to correct the bug now.",
+        "audioSrc": "public/data/audio/dummy/dummy_034_sideB_1.mp3"
+      },
+      {
+        "text": "This represents our opening to fix the mistake.",
+        "audioSrc": "public/data/audio/dummy/dummy_034_sideB_2.mp3"
+      }
+    ],
+    "note": "**[187]**\n\n~Our opportunity of fixing~ is incorrect. The noun [opportunity] describes [potential], and follows the semantic pattern that requires the [to + infinitive] structure."
+  },
+  {
+    "cardId": "dummy_035",
+    "cardType": "flippable",
+    "sideA": "El plan de actualizar la base de datos ha cambiado.",
+    "sideB": [
+      {
+        "text": "The plan to update the database has changed.",
+        "audioSrc": "public/data/audio/dummy/dummy_035_sideB_0.mp3"
+      },
+      {
+        "text": "Our plan to upgrade the database is different now.",
+        "audioSrc": "public/data/audio/dummy/dummy_035_sideB_1.mp3"
+      },
+      {
+        "text": "The roadmap to update the DB was modified.",
+        "audioSrc": "public/data/audio/dummy/dummy_035_sideB_2.mp3"
+      }
+    ],
+    "note": "**[187]**\n\n~The plan of updating~ or ~for updating~ sounds unnatural. Since a [plan] is an [intention for future action], you must use [to + infinitive] regardless of the 'de' in Spanish."
+  }
   ]
 }

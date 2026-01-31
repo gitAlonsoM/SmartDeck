@@ -134,7 +134,8 @@
           "audioSrc": "public/data/audio/dummy/dummy_006_sideB_3.mp3"
         }
       ],
-      "note": "[SKU] (Stock Keeping Unit) is the standard acronym for a specific product code.\n\n~Unit per pack are different~ is incorrect; use [Units per pack are] to maintain [subject-verb agreement]."
+      "note": "[SKU] (Stock Keeping Unit) is the standard acronym for a specific product code.\n\n~Unit per pack are different~ is incorrect; use [Units per pack are] to maintain [subject-verb agreement].",
+      "content": null
     },
     {
       "cardId": "dummy_007",
@@ -306,7 +307,8 @@
           "audioSrc": "public/data/audio/dummy/dummy_014_sideB_3.mp3"
         }
       ],
-      "note": "\n\n~It excludes duplicate emails~ changes the command into a [statement]."
+      "note": "\n\n~It excludes duplicate emails~ changes the command into a [statement].",
+      "content": null
     },
     {
       "cardId": "dummy_015",
@@ -350,7 +352,8 @@
           "audioSrc": "public/data/audio/dummy/dummy_016_sideB_3.mp3"
         }
       ],
-      "note": "[Stream] is the technical term for a continuous flow of data.\n\n\n\n~during the updating~ is incorrect; use the noun [update] to refer to the specific event or process."
+      "note": "[Stream] is the technical term for a continuous flow of data.\n\n~during the updating~ is incorrect; use the noun [update] to refer to the event or process.",
+      "content": null
     },
     {
       "cardId": "dummy_017",
@@ -682,7 +685,8 @@
           "audioSrc": "public/data/audio/dummy/dummy_031_sideB_2.mp3"
         }
       ],
-      "note": "**[185]**\n\n[Whether] is used to present two alternatives (React vs. Vue) where the outcome remains constant.\n\n~Whether we choose React or Vue, the deadline is the same~ is not accurate here because [delivery time] (the duration of the work) is different from a [deadline] (a specific date/time limit).\n\n\n\n~Either we choose React or Vue, the delivery time is the same~ is incorrect because [either] is used for choices between two things, whereas [whether] is required to introduce a conditional clause where the result is independent of the choice."
+      "note": "**[185]**\n\n[Whether] is used to present two alternatives (React vs. Vue) where the outcome remains constant.\n\n~Whether we choose React or Vue, the deadline is the same~ is not accurate here because [delivery time] (the duration of the work) is different from a [deadline] (a specific date/time limit).\n\n~Either we choose React or Vue, the delivery time is the same~ is incorrect because [either] is used for choices between two things, whereas [whether] is required to introduce a conditional clause where the result is independent of the choice.",
+      "content": null
     },
     {
       "cardId": "dummy_032",
@@ -702,7 +706,8 @@
           "audioSrc": "public/data/audio/dummy/dummy_032_sideB_2.mp3"
         }
       ],
-      "note": "**[101]**\n**[185]**\n\nThe structure [Whether... or not] is the standard way to express 'Ya sea que... o no'.\n\n\n\n~Either the server is active or not~ is not valid here; [either] implies a choice between two alternatives, while [whether] is used to indicate that the outcome (offline functionality) is the same regardless of the condition."
+      "note": "**[101]**\n**[185]**\n\nThe structure [Whether... or not] is the standard way to express 'Ya sea que... o no'.\n\n~Either the server is active or not~ is incorrect; [either] is used for selecting one of two options, while [whether] is used to state that a condition (active or not) does not change the [outcome].",
+      "content": null
     },
     {
       "cardId": "dummy_033",
