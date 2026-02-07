@@ -110,7 +110,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_005_sideB_3.mp3"
         }
       ],
-      "note": "[Item count] is a precise technical term for quantity.\n\n~The amount of products~ is incorrect because 'amount' is used for uncountable nouns; use [number] or [quantity] for countable items like products.\n\n~The quantity products per pack~ is not valid because it lacks the preposition [of] to connect the noun 'quantity' to 'products'."
+      "note": "[Item count] is a precise technical term for quantity.\n\n~The amount of products~ is incorrect because 'amount' is used for uncountable nouns; use [number] or [quantity] for countable items like products."
     },
     {
       "cardId": "dummy_006",
@@ -242,7 +242,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_011_sideB_3.mp3"
         }
       ],
-      "note": "**[184]**\n\n[Still don't have] is the most natural translation for 'continuo no teniendo'.\n\n~But I'm still not having~ is incorrect because 'have' is a [state verb] and is rarely used in continuous forms. ~But I continue not having~ is grammatically possible but [less natural] than 'I still don't have'.\n\n~However, I continue don't have that option~ is not valid because [continue] cannot be followed directly by the auxiliary [don't].\n\n~However, I continue not to having that option~ is not valid because the [to-infinitive] structure requires the [base verb] 'have', not the gerund 'having'."
+      "note": "**[184]**\n\n[Still don't have] is the most natural translation for 'continuo no teniendo'.\n\n~But I'm still not having~ is incorrect because 'have' is a [state verb] and is rarely used in continuous forms. ~But I continue not having~ is grammatically possible but [less natural] than 'I still don't have'.\n\n~However, I continue don't have that option~ is not valid because [continue] cannot be followed directly by the auxiliary [don't]."
     },
     {
       "cardId": "dummy_012",
@@ -372,10 +372,6 @@
         {
           "text": "This info stream has to be processed in sequence.",
           "audioSrc": "public/data/audio/dummy/dummy_017_sideB_2.mp3"
-        },
-        {
-          "text": "We must process this data stream sequentially.",
-          "audioSrc": "public/data/audio/dummy/dummy_017_sideB_3.mp3"
         }
       ],
       "note": "\n\n~in a sequel way~ is incorrect; [sequentially] or [in sequence] are the correct terms for this context."
@@ -552,10 +548,6 @@
         {
           "text": "Is the data here yet?",
           "audioSrc": "public/data/audio/dummy/dummy_025_sideB_2.mp3"
-        },
-        {
-          "text": "Has the data arrived already?",
-          "audioSrc": "public/data/audio/dummy/dummy_025_sideB_3.mp3"
         }
       ],
       "note": "\n\n~Has the data came in yet?~ is incorrect because the [past participle] of 'come' is 'come', not 'came'."
@@ -576,10 +568,6 @@
         {
           "text": "The data has just come in!",
           "audioSrc": "public/data/audio/dummy/dummy_026_sideB_2.mp3"
-        },
-        {
-          "text": "The data has arrived already!",
-          "audioSrc": "public/data/audio/dummy/dummy_026_sideB_3.mp3"
         }
       ],
       "note": "\n\nUsing [arrive] for data is correct and common in technical contexts to describe information reaching a destination."
@@ -785,66 +773,31 @@
       "cardType": "flippable",
       "sideA": "No quise llegar tan lejos.",
       "sideB": [
-        {
-          "text": "I didn't mean to go that far.",
-          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_0.mp3"
-        },
-        {
-          "text": "I didn't intend to take it that far.",
-          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_1.mp3"
-        },
-        {
-          "text": "It wasn't my intention to go so far.",
-          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_2.mp3"
-        },
-        {
-          "text": "I didn't want to go that far.",
-          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_3.mp3"
-        },
-        {
-          "text": "I didn't want to go too far.",
-          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_4.mp3"
-        }
+        { "text": "I didn't mean to go that far.", "audioSrc": "public/data/audio/dummy/dummy_036_sideB_0.mp3" },
+        { "text": "I didn't intend to take it that far.", "audioSrc": "public/data/audio/dummy/dummy_036_sideB_1.mp3" },
+        { "text": "It wasn't my intention to go so far.", "audioSrc": "public/data/audio/dummy/dummy_036_sideB_2.mp3" }
       ],
-      "note": "**[147]**"
+      "note": null
     },
     {
       "cardId": "dummy_037",
       "cardType": "flippable",
       "sideA": "No quise hacerlo porque …",
       "sideB": [
-        {
-          "text": "I didn't want to do it because...",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_0.mp3"
-        },
-        {
-          "text": "I didn't mean to do it because...",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_1.mp3"
-        },
-        {
-          "text": "I didn't intend to do it because...",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_2.mp3"
-        }
+        { "text": "I didn't want to do it because...", "audioSrc": "public/data/audio/dummy/dummy_037_sideB_0.mp3" },
+        { "text": "I didn't mean to do it because...", "audioSrc": "public/data/audio/dummy/dummy_037_sideB_1.mp3" },
+        { "text": "I didn't intend to do it because...", "audioSrc": "public/data/audio/dummy/dummy_037_sideB_2.mp3" }
       ],
-      "note": "**[147]**"
+      "note": null
     },
     {
       "cardId": "dummy_038",
       "cardType": "flippable",
       "sideA": "Hay una jerarquía clara en estos procesos.",
       "sideB": [
-        {
-          "text": "There is a clear hierarchy in these processes.",
-          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_0.mp3"
-        },
-        {
-          "text": "These processes have a clear hierarchy.",
-          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_1.mp3"
-        },
-        {
-          "text": "A clear hierarchy exists within these processes.",
-          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_2.mp3"
-        }
+        { "text": "There is a clear hierarchy in these processes.", "audioSrc": "public/data/audio/dummy/dummy_038_sideB_0.mp3" },
+        { "text": "These processes have a clear hierarchy.", "audioSrc": "public/data/audio/dummy/dummy_038_sideB_1.mp3" },
+        { "text": "A clear hierarchy exists within these processes.", "audioSrc": "public/data/audio/dummy/dummy_038_sideB_2.mp3" }
       ],
       "note": null
     },
@@ -853,18 +806,9 @@
       "cardType": "flippable",
       "sideA": "¿Quién está en la cima de la jerarquía?.",
       "sideB": [
-        {
-          "text": "Who is at the top of the hierarchy?",
-          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_0.mp3"
-        },
-        {
-          "text": "Who stands at the hierarchy's summit?",
-          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_1.mp3"
-        },
-        {
-          "text": "Who is at the hierarchy peak?",
-          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_2.mp3"
-        }
+        { "text": "Who is at the top of the hierarchy?", "audioSrc": "public/data/audio/dummy/dummy_039_sideB_0.mp3" },
+        { "text": "Who stands at the hierarchy's summit?", "audioSrc": "public/data/audio/dummy/dummy_039_sideB_1.mp3" },
+        { "text": "Who is at the hierarchy peak?", "audioSrc": "public/data/audio/dummy/dummy_039_sideB_2.mp3" }
       ],
       "note": null
     },
@@ -873,18 +817,9 @@
       "cardType": "flippable",
       "sideA": "Necesitas respetar la jerarquía de la empresa.",
       "sideB": [
-        {
-          "text": "You need to respect the company hierarchy.",
-          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_0.mp3"
-        },
-        {
-          "text": "You must respect the corporate hierarchy.",
-          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_1.mp3"
-        },
-        {
-          "text": "You have to respect the hierarchy of the company.",
-          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_2.mp3"
-        }
+        { "text": "You need to respect the company hierarchy.", "audioSrc": "public/data/audio/dummy/dummy_040_sideB_0.mp3" },
+        { "text": "You must respect the corporate hierarchy.", "audioSrc": "public/data/audio/dummy/dummy_040_sideB_1.mp3" },
+        { "text": "You have to respect the hierarchy of the company.", "audioSrc": "public/data/audio/dummy/dummy_040_sideB_2.mp3" }
       ],
       "note": null
     },
@@ -893,18 +828,9 @@
       "cardType": "flippable",
       "sideA": "Hay 4 niveles principales en EBS con una jerarquía clara.",
       "sideB": [
-        {
-          "text": "There are 4 main levels in EBS with a clear hierarchy.",
-          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_0.mp3"
-        },
-        {
-          "text": "EBS has 4 primary levels with a clear hierarchy.",
-          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_1.mp3"
-        },
-        {
-          "text": "Within EBS, there are 4 main levels and a clear hierarchy.",
-          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_2.mp3"
-        }
+        { "text": "There are 4 main levels in EBS with a clear hierarchy.", "audioSrc": "public/data/audio/dummy/dummy_041_sideB_0.mp3" },
+        { "text": "EBS has 4 primary levels with a clear hierarchy.", "audioSrc": "public/data/audio/dummy/dummy_041_sideB_1.mp3" },
+        { "text": "Within EBS, there are 4 main levels and a clear hierarchy.", "audioSrc": "public/data/audio/dummy/dummy_041_sideB_2.mp3" }
       ],
       "note": null
     },
@@ -913,18 +839,9 @@
       "cardType": "flippable",
       "sideA": "No puedo evitarlo.",
       "sideB": [
-        {
-          "text": "I can't help it.",
-          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_0.mp3"
-        },
-        {
-          "text": "I can't avoid it.",
-          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_1.mp3"
-        },
-        {
-          "text": "I can't stop myself from doing it.",
-          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_2.mp3"
-        }
+        { "text": "I can't help it.", "audioSrc": "public/data/audio/dummy/dummy_042_sideB_0.mp3" },
+        { "text": "I can't avoid it.", "audioSrc": "public/data/audio/dummy/dummy_042_sideB_1.mp3" },
+        { "text": "I can't stop myself from doing it.", "audioSrc": "public/data/audio/dummy/dummy_042_sideB_2.mp3" }
       ],
       "note": null
     },
@@ -933,18 +850,9 @@
       "cardType": "flippable",
       "sideA": "No me interrumpas.",
       "sideB": [
-        {
-          "text": "Don't interrupt me.",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_0.mp3"
-        },
-        {
-          "text": "Stop interrupting me.",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_1.mp3"
-        },
-        {
-          "text": "Do not cut me off.",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_2.mp3"
-        }
+        { "text": "Don't interrupt me.", "audioSrc": "public/data/audio/dummy/dummy_043_sideB_0.mp3" },
+        { "text": "Stop interrupting me.", "audioSrc": "public/data/audio/dummy/dummy_043_sideB_1.mp3" },
+        { "text": "Do not cut me off.", "audioSrc": "public/data/audio/dummy/dummy_043_sideB_2.mp3" }
       ],
       "note": null
     },
@@ -953,38 +861,20 @@
       "cardType": "flippable",
       "sideA": "Entran todos, a excepción del #45",
       "sideB": [
-        {
-          "text": "Everything is included, except for #45.",
-          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_0.mp3"
-        },
-        {
-          "text": "All of them go in, with the exception of #45.",
-          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_1.mp3"
-        },
-        {
-          "text": "Every single one is coming in, excluding #45.",
-          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_2.mp3"
-        }
+        { "text": "Everyone is included, except for #45.", "audioSrc": "public/data/audio/dummy/dummy_044_sideB_0.mp3" },
+        { "text": "All of them go in, with the exception of #45.", "audioSrc": "public/data/audio/dummy/dummy_044_sideB_1.mp3" },
+        { "text": "Everyone is coming in, excluding #45.", "audioSrc": "public/data/audio/dummy/dummy_044_sideB_2.mp3" }
       ],
-      "note": "[Everything] or [All of them] is used for objects. [Everyone] is strictly for people. Use [Every single one] when you want to emphasize each individual item in a set."
+      "note": null
     },
     {
       "cardId": "dummy_045",
       "cardType": "flippable",
       "sideA": "¿Esta el error #50 cerrado también?",
       "sideB": [
-        {
-          "text": "Is error #50 closed as well?",
-          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_0.mp3"
-        },
-        {
-          "text": "Is bug #50 also closed?",
-          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_1.mp3"
-        },
-        {
-          "text": "Has error #50 been closed too?",
-          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_2.mp3"
-        }
+        { "text": "Is error #50 closed as well?", "audioSrc": "public/data/audio/dummy/dummy_045_sideB_0.mp3" },
+        { "text": "Is bug #50 also closed?", "audioSrc": "public/data/audio/dummy/dummy_045_sideB_1.mp3" },
+        { "text": "Has error #50 been closed too?", "audioSrc": "public/data/audio/dummy/dummy_045_sideB_2.mp3" }
       ],
       "note": null
     },
@@ -993,22 +883,9 @@
       "cardType": "flippable",
       "sideA": "El cliente arroja otro tipo de mensaje de error",
       "sideB": [
-        {
-          "text": "The client throws a different type of error message.",
-          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_0.mp3"
-        },
-        {
-          "text": "The client is outputting another kind of error message.",
-          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_1.mp3"
-        },
-        {
-          "text": "A different error message is being triggered by the client.",
-          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_2.mp3"
-        },
-        {
-          "text": "The client throws another kind of error message.",
-          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_3.mp3"
-        }
+        { "text": "The client throws a different type of error message.", "audioSrc": "public/data/audio/dummy/dummy_046_sideB_0.mp3" },
+        { "text": "The client is outputting another kind of error message.", "audioSrc": "public/data/audio/dummy/dummy_046_sideB_1.mp3" },
+        { "text": "A different error message is being triggered by the client.", "audioSrc": "public/data/audio/dummy/dummy_046_sideB_2.mp3" }
       ],
       "note": null
     },
@@ -1017,58 +894,31 @@
       "cardType": "flippable",
       "sideA": "Hagamoslo!, prueba y error!",
       "sideB": [
-        {
-          "text": "Let's do it! Trial and error!",
-          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_0.mp3"
-        },
-        {
-          "text": "Let's give it a shot! Trial and error!",
-          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_1.mp3"
-        },
-        {
-          "text": "Let's go for it! Trial and error!",
-          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_2.mp3"
-        }
+        { "text": "Let's do it! Trial and error!", "audioSrc": "public/data/audio/dummy/dummy_047_sideB_0.mp3" },
+        { "text": "Let's give it a shot! Trial and error!", "audioSrc": "public/data/audio/dummy/dummy_047_sideB_1.mp3" },
+        { "text": "Let's go for it! Trial and error!", "audioSrc": "public/data/audio/dummy/dummy_047_sideB_2.mp3" }
       ],
-      "note": "~Test and error~ is not used; [trial and error] is a fixed [idiomatic expression] that cannot be changed."
+      "note": null
     },
     {
       "cardId": "dummy_048",
       "cardType": "flippable",
       "sideA": "Lo logre haciendo prueba y error.",
       "sideB": [
-        {
-          "text": "I achieved it through trial and error.",
-          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_0.mp3"
-        },
-        {
-          "text": "I got it done using trial and error.",
-          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_1.mp3"
-        },
-        {
-          "text": "I made it work by trial and error.",
-          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_2.mp3"
-        }
+        { "text": "I achieved it through trial and error.", "audioSrc": "public/data/audio/dummy/dummy_048_sideB_0.mp3" },
+        { "text": "I got it done using trial and error.", "audioSrc": "public/data/audio/dummy/dummy_048_sideB_1.mp3" },
+        { "text": "I made it work by trial and error.", "audioSrc": "public/data/audio/dummy/dummy_048_sideB_2.mp3" }
       ],
-      "note": "~I did it just doing trial and error~ is not valid because it sounds unnatural; using [by doing] or [through] provides the necessary grammatical link for a method."
+      "note": null
     },
     {
       "cardId": "dummy_049",
       "cardType": "flippable",
       "sideA": "Ya no estamos usando ese procedimiento.",
       "sideB": [
-        {
-          "text": "We are no longer using that procedure.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_0.mp3"
-        },
-        {
-          "text": "We aren't using that procedure anymore.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_1.mp3"
-        },
-        {
-          "text": "That procedure is no longer in use.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_2.mp3"
-        }
+        { "text": "We are no longer using that procedure.", "audioSrc": "public/data/audio/dummy/dummy_049_sideB_0.mp3" },
+        { "text": "We aren't using that procedure anymore.", "audioSrc": "public/data/audio/dummy/dummy_049_sideB_1.mp3" },
+        { "text": "That procedure is no longer in use.", "audioSrc": "public/data/audio/dummy/dummy_049_sideB_2.mp3" }
       ],
       "note": null
     },
@@ -1077,18 +927,9 @@
       "cardType": "flippable",
       "sideA": "El sistema esta caído",
       "sideB": [
-        {
-          "text": "The system is down.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_0.mp3"
-        },
-        {
-          "text": "The system is offline.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_1.mp3"
-        },
-        {
-          "text": "The server is down.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_2.mp3"
-        }
+        { "text": "The system is down.", "audioSrc": "public/data/audio/dummy/dummy_050_sideB_0.mp3" },
+        { "text": "The system is offline.", "audioSrc": "public/data/audio/dummy/dummy_050_sideB_1.mp3" },
+        { "text": "The server is down.", "audioSrc": "public/data/audio/dummy/dummy_050_sideB_2.mp3" }
       ],
       "note": null
     },
@@ -1097,38 +938,20 @@
       "cardType": "flippable",
       "sideA": "El me esta pagando poco.",
       "sideB": [
-        {
-          "text": "He is underpaying me.",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_0.mp3"
-        },
-        {
-          "text": "He's paying me very little.",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_1.mp3"
-        },
-        {
-          "text": "He's not paying me enough.",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_2.mp3"
-        }
+        { "text": "He is underpaying me.", "audioSrc": "public/data/audio/dummy/dummy_051_sideB_0.mp3" },
+        { "text": "He's paying me very little.", "audioSrc": "public/data/audio/dummy/dummy_051_sideB_1.mp3" },
+        { "text": "He's not paying me enough.", "audioSrc": "public/data/audio/dummy/dummy_051_sideB_2.mp3" }
       ],
-      "note": "~He's paying me little~ is rarely used in natural speech. It is much more common to say [he's paying me very little] or [he isn't paying me much]."
+      "note": null
     },
     {
       "cardId": "dummy_052",
       "cardType": "flippable",
       "sideA": "Decidí no actualizar el servidor esta noche.",
       "sideB": [
-        {
-          "text": "I decided not to update the server tonight.",
-          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_0.mp3"
-        },
-        {
-          "text": "I chose to not update the server tonight.",
-          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_1.mp3"
-        },
-        {
-          "text": "I made the decision not to update the server tonight.",
-          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_2.mp3"
-        }
+        { "text": "I decided not to update the server tonight.", "audioSrc": "public/data/audio/dummy/dummy_052_sideB_0.mp3" },
+        { "text": "I chose to not update the server tonight.", "audioSrc": "public/data/audio/dummy/dummy_052_sideB_1.mp3" },
+        { "text": "I made the decision not to update the server tonight.", "audioSrc": "public/data/audio/dummy/dummy_052_sideB_2.mp3" }
       ],
       "note": "**[188]**\n\n[Not to update] is the correct way to negate the secondary action 'update' after the main verb [decided]."
     },
@@ -1137,38 +960,20 @@
       "cardType": "flippable",
       "sideA": "Él prefiere no recibir notificaciones por correo.",
       "sideB": [
-        {
-          "text": "He prefers not to receive email notifications.",
-          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_0.mp3"
-        },
-        {
-          "text": "He prefers to not receive notifications by email.",
-          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_1.mp3"
-        },
-        {
-          "text": "He'd rather not receive email notifications.",
-          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_2.mp3"
-        }
+        { "text": "He prefers not to receive email notifications.", "audioSrc": "public/data/audio/dummy/dummy_053_sideB_0.mp3" },
+        { "text": "He prefers to not receive notifications by email.", "audioSrc": "public/data/audio/dummy/dummy_053_sideB_1.mp3" },
+        { "text": "He'd rather not receive email notifications.", "audioSrc": "public/data/audio/dummy/dummy_053_sideB_2.mp3" }
       ],
-      "note": "**[188]**\n\nIn modern English, [to not receive] and [not to receive] are both perfectly acceptable and interchangeable.\n\n~He doesn't prefers receiving email notifications~ is not valid because the auxiliary [doesn't] must be followed by the [base verb] 'prefer' (without the 's')."
+      "note": "**[188]**\n\nIn modern English, [to not receive] and [not to receive] are both perfectly acceptable and interchangeable."
     },
     {
       "cardId": "dummy_054",
       "cardType": "flippable",
       "sideA": "Intenta no borrar los archivos temporales aún.",
       "sideB": [
-        {
-          "text": "Try not to delete the temporary files yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_0.mp3"
-        },
-        {
-          "text": "Please try to not delete the temp files just yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_1.mp3"
-        },
-        {
-          "text": "Try to avoid deleting the temporary files for now.",
-          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_2.mp3"
-        }
+        { "text": "Try not to delete the temporary files yet.", "audioSrc": "public/data/audio/dummy/dummy_054_sideB_0.mp3" },
+        { "text": "Please try to not delete the temp files just yet.", "audioSrc": "public/data/audio/dummy/dummy_054_sideB_1.mp3" },
+        { "text": "Try to avoid deleting the temporary files for now.", "audioSrc": "public/data/audio/dummy/dummy_054_sideB_2.mp3" }
       ],
       "note": "**[188]**\n\n~Try don't delete~ is a common error; always use [not to] or [to not] when negating an infinitive."
     },
@@ -1177,26 +982,9 @@
       "cardType": "flippable",
       "sideA": "No sé si la API está arriba o el token expiró.",
       "sideB": [
-        {
-          "text": "I don't know whether the API is up or the token expired.",
-          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_0.mp3"
-        },
-        {
-          "text": "I'm not sure whether the API is online or if the token is dead.",
-          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_1.mp3"
-        },
-        {
-          "text": "It's unclear whether the API is running or the token has expired.",
-          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_2.mp3"
-        },
-        {
-          "text": "I don't know whether the API is active or the token has expired.",
-          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_3.mp3"
-        },
-        {
-          "text": "I don't know if the API is active or the token has expired.",
-          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_4.mp3"
-        }
+        { "text": "I don't know whether the API is up or the token expired.", "audioSrc": "public/data/audio/dummy/dummy_055_sideB_0.mp3" },
+        { "text": "I'm not sure whether the API is online or if the token is dead.", "audioSrc": "public/data/audio/dummy/dummy_055_sideB_1.mp3" },
+        { "text": "It's unclear whether the API is running or the token has expired.", "audioSrc": "public/data/audio/dummy/dummy_055_sideB_2.mp3" }
       ],
       "note": "**[189]**\n\n[Whether] is used here to introduce an indirect question involving two uncertain possibilities."
     },
@@ -1205,18 +993,9 @@
       "cardType": "flippable",
       "sideA": "Podemos usar o React o Vue para este proyecto.",
       "sideB": [
-        {
-          "text": "We can use either React or Vue for this project.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_0.mp3"
-        },
-        {
-          "text": "Either React or Vue can be used for this project.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_1.mp3"
-        },
-        {
-          "text": "We have the option of using either React or Vue.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_2.mp3"
-        }
+        { "text": "We can use either React or Vue for this project.", "audioSrc": "public/data/audio/dummy/dummy_056_sideB_0.mp3" },
+        { "text": "Either React or Vue can be used for this project.", "audioSrc": "public/data/audio/dummy/dummy_056_sideB_1.mp3" },
+        { "text": "We have the option of using either React or Vue.", "audioSrc": "public/data/audio/dummy/dummy_056_sideB_2.mp3" }
       ],
       "note": "**[189]**\n\n[Either... or] is the correct structure for presenting a choice between two available alternatives."
     },
@@ -1225,18 +1004,9 @@
       "cardType": "flippable",
       "sideA": "Funcione o no, necesitamos un reporte de errores.",
       "sideB": [
-        {
-          "text": "Whether it works or not, we need a crash report.",
-          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_0.mp3"
-        },
-        {
-          "text": "Whether or not it's working, we require an error report.",
-          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_1.mp3"
-        },
-        {
-          "text": "Regardless of whether it works, a bug report is necessary.",
-          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_2.mp3"
-        }
+        { "text": "Whether it works or not, we need a crash report.", "audioSrc": "public/data/audio/dummy/dummy_057_sideB_0.mp3" },
+        { "text": "Whether or not it's working, we require an error report.", "audioSrc": "public/data/audio/dummy/dummy_057_sideB_1.mp3" },
+        { "text": "Regardless of whether it works, a bug report is necessary.", "audioSrc": "public/data/audio/dummy/dummy_057_sideB_2.mp3" }
       ],
       "note": "**[189]**\n\n[Whether or not] indicates that the outcome (needing a report) is independent of the condition (working or not)."
     }
