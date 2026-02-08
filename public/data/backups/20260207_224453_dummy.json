@@ -116,10 +116,6 @@
         {
           "text": "We don't use that procedure any longer.",
           "audioSrc": "public/data/audio/dummy/dummy_049_sideB_3.mp3"
-        },
-        {
-          "text": "We no longer use that procedure.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_4.mp3"
         }
       ],
       "note": "\n\n~We no loger use that procedure~ is incorrect due to the spelling of [longer] and because the structure requires the adverb to be placed correctly relative to the verb."
@@ -240,14 +236,6 @@
         {
           "text": "This library is used to check for the store version.",
           "audioSrc": "public/data/audio/dummy/dummy_058_sideB_2.mp3"
-        },
-        {
-          "text": "The library verifies the version in the store.",
-          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_3.mp3"
-        },
-        {
-          "text": "The library verifies the version on the store.",
-          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_4.mp3"
         }
       ],
       "note": null
@@ -270,7 +258,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_059_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~That library allows to force~ is grammatically incorrect. The verb 'allow' must be followed by an Object + Infinitive ([allows us to force]) or a Gerund ([allows forcing]). It cannot be followed directly by 'to'."
+      "note": null
     },
     {
       "cardId": "dummy_060",
@@ -290,7 +278,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_060_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~We must set the library~ is incomplete. In this context, you need the phrasal verb [set up] or the verb [configure]. 'Set' alone usually means to establish a value or place an object."
+      "note": null
     },
     {
       "cardId": "dummy_061",
@@ -310,7 +298,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_061_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~The library shows a downloaded message~ changes the meaning. [Downloaded] implies the message itself was retrieved from a server, whereas [download message] refers to a notification about a download process."
+      "note": null
     },
     {
       "cardId": "dummy_062",
@@ -348,10 +336,6 @@
         {
           "text": "I left that line of code as a comment there just in case.",
           "audioSrc": "public/data/audio/dummy/dummy_063_sideB_2.mp3"
-        },
-        {
-          "text": "I left that commented line, just in case.",
-          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_3.mp3"
         }
       ],
       "note": null
@@ -392,13 +376,9 @@
         {
           "text": "Some data is still missing.",
           "audioSrc": "public/data/audio/dummy/dummy_065_sideB_2.mp3"
-        },
-        {
-          "text": "I still lack some data.",
-          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_3.mp3"
         }
       ],
-      "note": "\n\n~I lack still some information~ has incorrect word order. The adverb [still] must be placed before the main verb: [I still lack]."
+      "note": null
     },
     {
       "cardId": "dummy_066",
@@ -436,10 +416,6 @@
         {
           "text": "That's how we verify that the French dates and messages are right.",
           "audioSrc": "public/data/audio/dummy/dummy_067_sideB_2.mp3"
-        },
-        {
-          "text": "This way, we ensure the dates and messages in French are correct.",
-          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_3.mp3"
         }
       ],
       "note": null
@@ -462,7 +438,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_068_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~It sends all the data just in one call~ sounds unnatural. The adverb 'just' should modify the quantity 'one', so the correct order is [in just one call]."
+      "note": null
     },
     {
       "cardId": "dummy_069",
@@ -520,10 +496,6 @@
         {
           "text": "This is the security gatekeeper inside the package.",
           "audioSrc": "public/data/audio/dummy/dummy_071_sideB_2.mp3"
-        },
-        {
-          "text": "This is the security guard in the package.",
-          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_3.mp3"
         }
       ],
       "note": null
@@ -564,14 +536,6 @@
         {
           "text": "It blocks data leaks across different provinces.",
           "audioSrc": "public/data/audio/dummy/dummy_073_sideB_2.mp3"
-        },
-        {
-          "text": "It prevents data leak between provinces.",
-          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_3.mp3"
-        },
-        {
-          "text": "It prevents data leakage among provinces.",
-          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_4.mp3"
         }
       ],
       "note": null
@@ -592,10 +556,6 @@
         {
           "text": "This is a custom-built parser for English to French conversion.",
           "audioSrc": "public/data/audio/dummy/dummy_074_sideB_2.mp3"
-        },
-        {
-          "text": "It is a custom parser from English to French.",
-          "audioSrc": "public/data/audio/dummy/dummy_074_sideB_3.mp3"
         }
       ],
       "note": null
@@ -618,7 +578,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_075_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~Initialize the user in EBS~ is an imperative command (an order). Since the source sentence describes what the system does (Third Person), the correct form requires a subject: [It initializes] the user."
+      "note": null
     },
     {
       "cardId": "dummy_076",
@@ -636,14 +596,6 @@
         {
           "text": "It converts the payment type, regardless of it being in English or French.",
           "audioSrc": "public/data/audio/dummy/dummy_076_sideB_2.mp3"
-        },
-        {
-          "text": "It translates the kind of payment, whether in English or French.",
-          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_3.mp3"
-        },
-        {
-          "text": "It translates the payment type, either in English or French.",
-          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_4.mp3"
         }
       ],
       "note": null
