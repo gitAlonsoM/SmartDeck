@@ -1,0 +1,652 @@
+{
+  "id": "dummy",
+  "name": "Dummy Deck",
+  "description": "Sandbox for testing new technical phrases before migration.",
+  "deckType": "flippable",
+  "cards": [
+    {
+      "cardId": "dummy_036",
+      "cardType": "flippable",
+      "sideA": "No quise llegar tan lejos.",
+      "sideB": [
+        {
+          "text": "I didn't mean to go that far.",
+          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_0.mp3"
+        },
+        {
+          "text": "I didn't intend to take it that far.",
+          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_1.mp3"
+        },
+        {
+          "text": "It wasn't my intention to go so far.",
+          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_2.mp3"
+        },
+        {
+          "text": "I didn't want to go that far.",
+          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_3.mp3"
+        },
+        {
+          "text": "I didn't want to go too far.",
+          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_4.mp3"
+        },
+        {
+          "text": "I didn't mean to go too far.",
+          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_5.mp3"
+        }
+      ],
+      "note": "**[147]**"
+    },
+    {
+      "cardId": "dummy_039",
+      "cardType": "flippable",
+      "sideA": "¿Quién está en la cima de la jerarquía?.",
+      "sideB": [
+        {
+          "text": "Who is at the top of the hierarchy?",
+          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_0.mp3"
+        },
+        {
+          "text": "Who stands at the hierarchy's summit?",
+          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_1.mp3"
+        },
+        {
+          "text": "Who is at the hierarchy peak?",
+          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_040",
+      "cardType": "flippable",
+      "sideA": "Necesitas respetar la jerarquía de la empresa.",
+      "sideB": [
+        {
+          "text": "You need to respect the company hierarchy.",
+          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_0.mp3"
+        },
+        {
+          "text": "You must respect the corporate hierarchy.",
+          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_1.mp3"
+        },
+        {
+          "text": "You have to respect the hierarchy of the company.",
+          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_044",
+      "cardType": "flippable",
+      "sideA": "Entran todos, a excepción del #45",
+      "sideB": [
+        {
+          "text": "Everything is included, except for #45.",
+          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_0.mp3"
+        },
+        {
+          "text": "All of them go in, with the exception of #45.",
+          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_1.mp3"
+        },
+        {
+          "text": "Every single one is coming in, excluding #45.",
+          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_2.mp3"
+        }
+      ],
+      "note": "[Everything] or [All of them] is used for objects. [Everyone] is strictly for people. Use [Every single one] when you want to emphasize each individual item in a set."
+    },
+    {
+      "cardId": "dummy_049",
+      "cardType": "flippable",
+      "sideA": "Ya no estamos usando ese procedimiento.",
+      "sideB": [
+        {
+          "text": "We are no longer using that procedure.",
+          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_0.mp3"
+        },
+        {
+          "text": "We aren't using that procedure anymore.",
+          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_1.mp3"
+        },
+        {
+          "text": "That procedure is no longer in use.",
+          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_2.mp3"
+        },
+        {
+          "text": "We don't use that procedure any longer.",
+          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_3.mp3"
+        },
+        {
+          "text": "We no longer use that procedure.",
+          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_4.mp3"
+        }
+      ],
+      "note": "\n\n~We no loger use that procedure~ is incorrect due to the spelling of [longer] and because the structure requires the adverb to be placed correctly relative to the verb."
+    },
+    {
+      "cardId": "dummy_052",
+      "cardType": "flippable",
+      "sideA": "Decidí no actualizar el servidor esta noche.",
+      "sideB": [
+        {
+          "text": "I decided not to update the server tonight.",
+          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_0.mp3"
+        },
+        {
+          "text": "I chose to not update the server tonight.",
+          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_1.mp3"
+        },
+        {
+          "text": "I made the decision not to update the server tonight.",
+          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_2.mp3"
+        }
+      ],
+      "note": "**[188]**\n\n[Not to update] is the correct way to negate the secondary action 'update' after the main verb [decided]."
+    },
+    {
+      "cardId": "dummy_053",
+      "cardType": "flippable",
+      "sideA": "Él prefiere no recibir notificaciones por correo.",
+      "sideB": [
+        {
+          "text": "He prefers not to receive email notifications.",
+          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_0.mp3"
+        },
+        {
+          "text": "He prefers to not receive notifications by email.",
+          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_1.mp3"
+        },
+        {
+          "text": "He'd rather not receive email notifications.",
+          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_2.mp3"
+        }
+      ],
+      "note": "**[188]**\n\nIn modern English, [to not receive] and [not to receive] are both perfectly acceptable and interchangeable.\n\n~He doesn't prefers receiving email notifications~ is not valid because the auxiliary [doesn't] must be followed by the [base verb] 'prefer' (without the 's')."
+    },
+    {
+      "cardId": "dummy_054",
+      "cardType": "flippable",
+      "sideA": "Intenta no borrar los archivos temporales aún.",
+      "sideB": [
+        {
+          "text": "Try not to delete the temporary files yet.",
+          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_0.mp3"
+        },
+        {
+          "text": "Please try to not delete the temp files just yet.",
+          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_1.mp3"
+        },
+        {
+          "text": "Try to avoid deleting the temporary files for now.",
+          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_2.mp3"
+        }
+      ],
+      "note": "**[188]**\n\n~Try don't delete~ is a common error; always use [not to] or [to not] when negating an infinitive."
+    },
+    {
+      "cardId": "dummy_056",
+      "cardType": "flippable",
+      "sideA": "Podemos usar o React o Vue para este proyecto.",
+      "sideB": [
+        {
+          "text": "We can use either React or Vue for this project.",
+          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_0.mp3"
+        },
+        {
+          "text": "Either React or Vue can be used for this project.",
+          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_1.mp3"
+        },
+        {
+          "text": "We have the option of using either React or Vue.",
+          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_2.mp3"
+        }
+      ],
+      "note": "**[189]**\n\n[Either... or] is the correct structure for presenting a choice between two available alternatives."
+    },
+    {
+      "cardId": "dummy_057",
+      "cardType": "flippable",
+      "sideA": "Necesitamos una biblioteca para gestionar los popup.",
+      "sideB": [
+        {
+          "text": "We need a library to manage the popups.",
+          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_0.mp3"
+        },
+        {
+          "text": "We require a library to handle the popups.",
+          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_1.mp3"
+        },
+        {
+          "text": "A library is needed to manage pop-up windows.",
+          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_058",
+      "cardType": "flippable",
+      "sideA": "La biblioteca verifica la versión en la tienda.",
+      "sideB": [
+        {
+          "text": "The library checks the version in the store.",
+          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_0.mp3"
+        },
+        {
+          "text": "The library verifies the version on the app store.",
+          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_1.mp3"
+        },
+        {
+          "text": "This library is used to check for the store version.",
+          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_2.mp3"
+        },
+        {
+          "text": "The library verifies the version in the store.",
+          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_3.mp3"
+        },
+        {
+          "text": "The library verifies the version on the store.",
+          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_4.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_059",
+      "cardType": "flippable",
+      "sideA": "Esa biblioteca permite forzar la actualización.",
+      "sideB": [
+        {
+          "text": "That library allows forcing the update.",
+          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_0.mp3"
+        },
+        {
+          "text": "That library enables us to force an update.",
+          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_1.mp3"
+        },
+        {
+          "text": "That library makes it possible to force the update.",
+          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_2.mp3"
+        }
+      ],
+      "note": "\n\n~That library allows to force~ is grammatically incorrect. The verb 'allow' must be followed by an Object + Infinitive ([allows us to force]) or a Gerund ([allows forcing]). It cannot be followed directly by 'to'."
+    },
+    {
+      "cardId": "dummy_060",
+      "cardType": "flippable",
+      "sideA": "Debemos configurar la biblioteca en el proyecto.",
+      "sideB": [
+        {
+          "text": "We must configure the library in the project.",
+          "audioSrc": "public/data/audio/dummy/dummy_060_sideB_0.mp3"
+        },
+        {
+          "text": "We need to set up the library within the project.",
+          "audioSrc": "public/data/audio/dummy/dummy_060_sideB_1.mp3"
+        },
+        {
+          "text": "The library needs to be configured in the project.",
+          "audioSrc": "public/data/audio/dummy/dummy_060_sideB_2.mp3"
+        }
+      ],
+      "note": "\n\n~We must set the library~ is incomplete. In this context, you need the phrasal verb [set up] or the verb [configure]. 'Set' alone usually means to establish a value or place an object."
+    },
+    {
+      "cardId": "dummy_061",
+      "cardType": "flippable",
+      "sideA": "La biblioteca muestra un mensaje de descarga.",
+      "sideB": [
+        {
+          "text": "The library shows a download message.",
+          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_0.mp3"
+        },
+        {
+          "text": "The library displays a message for downloading.",
+          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_1.mp3"
+        },
+        {
+          "text": "This library prompts the user with a download message.",
+          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_2.mp3"
+        }
+      ],
+      "note": "\n\n~The library shows a downloaded message~ changes the meaning. [Downloaded] implies the message itself was retrieved from a server, whereas [download message] refers to a notification about a download process."
+    },
+    {
+      "cardId": "dummy_062",
+      "cardType": "flippable",
+      "sideA": "Lo dejé ahí por si acaso.",
+      "sideB": [
+        {
+          "text": "I left it there just in case.",
+          "audioSrc": "public/data/audio/dummy/dummy_062_sideB_0.mp3"
+        },
+        {
+          "text": "I kept it there in case I need it later.",
+          "audioSrc": "public/data/audio/dummy/dummy_062_sideB_1.mp3"
+        },
+        {
+          "text": "I put it there just as a precaution.",
+          "audioSrc": "public/data/audio/dummy/dummy_062_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_063",
+      "cardType": "flippable",
+      "sideA": "Dejé esa línea de código comentada ahí por si acaso.",
+      "sideB": [
+        {
+          "text": "I left that line commented out, just in case.",
+          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_0.mp3"
+        },
+        {
+          "text": "I kept that line of code commented there just in case.",
+          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_1.mp3"
+        },
+        {
+          "text": "I left that line of code as a comment there just in case.",
+          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_2.mp3"
+        },
+        {
+          "text": "I left that commented line, just in case.",
+          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_064",
+      "cardType": "flippable",
+      "sideA": "Me faltan 5 dolares.",
+      "sideB": [
+        {
+          "text": "I'm missing 5 dollars.",
+          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_0.mp3"
+        },
+        {
+          "text": "I'm 5 dollars short.",
+          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_1.mp3"
+        },
+        {
+          "text": "I need 5 dollars more.",
+          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_065",
+      "cardType": "flippable",
+      "sideA": "Me faltan algunos datos aun",
+      "sideB": [
+        {
+          "text": "I'm still missing some data.",
+          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_0.mp3"
+        },
+        {
+          "text": "I still lack some information.",
+          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_1.mp3"
+        },
+        {
+          "text": "Some data is still missing.",
+          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_2.mp3"
+        },
+        {
+          "text": "I still lack some data.",
+          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_3.mp3"
+        }
+      ],
+      "note": "\n\n~I lack still some information~ has incorrect word order. The adverb [still] must be placed before the main verb: [I still lack]."
+    },
+    {
+      "cardId": "dummy_066",
+      "cardType": "flippable",
+      "sideA": "Son diferentes niveles de EBS.",
+      "sideB": [
+        {
+          "text": "They are different EBS levels.",
+          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_0.mp3"
+        },
+        {
+          "text": "These are various levels of EBS.",
+          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_1.mp3"
+        },
+        {
+          "text": "Those represent different levels within EBS.",
+          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_067",
+      "cardType": "flippable",
+      "sideA": "Así nos aseguramos que las fechas y mensajes en francés son correctos.",
+      "sideB": [
+        {
+          "text": "This way, we make sure the dates and messages in French are correct.",
+          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_0.mp3"
+        },
+        {
+          "text": "This ensures that dates and messages in French are accurate.",
+          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_1.mp3"
+        },
+        {
+          "text": "That's how we verify that the French dates and messages are right.",
+          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_2.mp3"
+        },
+        {
+          "text": "This way, we ensure the dates and messages in French are correct.",
+          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_068",
+      "cardType": "flippable",
+      "sideA": "Envía todos los datos solo en 1 llamada.",
+      "sideB": [
+        {
+          "text": "It sends all the data in a single call.",
+          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_0.mp3"
+        },
+        {
+          "text": "It transmits all the information in just one call.",
+          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_1.mp3"
+        },
+        {
+          "text": "All data is sent using only one request.",
+          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_2.mp3"
+        }
+      ],
+      "note": "\n\n~It sends all the data just in one call~ sounds unnatural. The adverb 'just' should modify the quantity 'one', so the correct order is [in just one call]."
+    },
+    {
+      "cardId": "dummy_069",
+      "cardType": "flippable",
+      "sideA": "En vez de hacer 3 llamadas, lo hacemos todo en 1.",
+      "sideB": [
+        {
+          "text": "Instead of making three separate calls, we handle everything in one.",
+          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_0.mp3"
+        },
+        {
+          "text": "Rather than performing three calls, we do it all in a single one.",
+          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_1.mp3"
+        },
+        {
+          "text": "We're processing everything in one go instead of three calls.",
+          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_070",
+      "cardType": "flippable",
+      "sideA": "Debemos establecerlo manualmente.",
+      "sideB": [
+        {
+          "text": "We must set it manually.",
+          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_0.mp3"
+        },
+        {
+          "text": "We have to configure it by hand.",
+          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_1.mp3"
+        },
+        {
+          "text": "It needs to be established manually.",
+          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_071",
+      "cardType": "flippable",
+      "sideA": "Este es el guardián de seguridad en el paquete.",
+      "sideB": [
+        {
+          "text": "This is the security gatekeeper within the package.",
+          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_0.mp3"
+        },
+        {
+          "text": "This acts as the security guard for the package.",
+          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_1.mp3"
+        },
+        {
+          "text": "This is the security gatekeeper inside the package.",
+          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_2.mp3"
+        },
+        {
+          "text": "This is the security guard in the package.",
+          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_072",
+      "cardType": "flippable",
+      "sideA": "Los datos y las fechas deben ser correctos.",
+      "sideB": [
+        {
+          "text": "The data and the dates must be correct.",
+          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_0.mp3"
+        },
+        {
+          "text": "Information and dates have to be accurate.",
+          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_1.mp3"
+        },
+        {
+          "text": "Data and dates need to be correct.",
+          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_073",
+      "cardType": "flippable",
+      "sideA": "Impide la fuga de información entre provincias.",
+      "sideB": [
+        {
+          "text": "It prevents data leakage between provinces.",
+          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_0.mp3"
+        },
+        {
+          "text": "It stops information from leaking between provinces.",
+          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_1.mp3"
+        },
+        {
+          "text": "It blocks data leaks across different provinces.",
+          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_2.mp3"
+        },
+        {
+          "text": "It prevents data leak between provinces.",
+          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_3.mp3"
+        },
+        {
+          "text": "It prevents data leakage among provinces.",
+          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_4.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_074",
+      "cardType": "flippable",
+      "sideA": "Es un parser customizado desde inglés al francés.",
+      "sideB": [
+        {
+          "text": "It's a custom parser from English to French.",
+          "audioSrc": "public/data/audio/dummy/dummy_074_sideB_0.mp3"
+        },
+        {
+          "text": "It is a customized parser for translating English to French.",
+          "audioSrc": "public/data/audio/dummy/dummy_074_sideB_1.mp3"
+        },
+        {
+          "text": "This is a custom-built parser for English to French conversion.",
+          "audioSrc": "public/data/audio/dummy/dummy_074_sideB_2.mp3"
+        },
+        {
+          "text": "It is a custom parser from English to French.",
+          "audioSrc": "public/data/audio/dummy/dummy_074_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_075",
+      "cardType": "flippable",
+      "sideA": "Inicializa al usuario en EBS.",
+      "sideB": [
+        {
+          "text": "It initializes the user in EBS.",
+          "audioSrc": "public/data/audio/dummy/dummy_075_sideB_0.mp3"
+        },
+        {
+          "text": "It sets up the user within EBS.",
+          "audioSrc": "public/data/audio/dummy/dummy_075_sideB_1.mp3"
+        },
+        {
+          "text": "It performs the user initialization in EBS.",
+          "audioSrc": "public/data/audio/dummy/dummy_075_sideB_2.mp3"
+        }
+      ],
+      "note": "\n\n~Initialize the user in EBS~ is an imperative command (an order). Since the source sentence describes what the system does (Third Person), the correct form requires a subject: [It initializes] the user."
+    },
+    {
+      "cardId": "dummy_076",
+      "cardType": "flippable",
+      "sideA": "Traduce el tipo de payment, ya sea en inglés o francés.",
+      "sideB": [
+        {
+          "text": "It translates the payment type, whether in English or French.",
+          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_0.mp3"
+        },
+        {
+          "text": "It handles the translation of the payment type into English or French.",
+          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_1.mp3"
+        },
+        {
+          "text": "It converts the payment type, regardless of it being in English or French.",
+          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_2.mp3"
+        },
+        {
+          "text": "It translates the kind of payment, whether in English or French.",
+          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_3.mp3"
+        },
+        {
+          "text": "It translates the payment type, either in English or French.",
+          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_4.mp3"
+        }
+      ],
+      "note": null
+    }
+  ]
+}
