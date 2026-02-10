@@ -160,10 +160,6 @@
         {
           "text": "He'd rather not receive email notifications.",
           "audioSrc": "public/data/audio/dummy/dummy_053_sideB_2.mp3"
-        },
-        {
-          "text": "He prefers not to get email notifications.",
-          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_3.mp3"
         }
       ],
       "note": "**[188]**\n\nIn modern English, [to not receive] and [not to receive] are both perfectly acceptable and interchangeable.\n\n~He doesn't prefers receiving email notifications~ is not valid because the auxiliary [doesn't] must be followed by the [base verb] 'prefer' (without the 's')."
@@ -356,10 +352,6 @@
         {
           "text": "I left that commented line, just in case.",
           "audioSrc": "public/data/audio/dummy/dummy_063_sideB_3.mp3"
-        },
-        {
-          "text": "I left that line with a comment, just in case.",
-          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_4.mp3"
         }
       ],
       "note": null
@@ -424,14 +416,6 @@
         {
           "text": "Those represent different levels within EBS.",
           "audioSrc": "public/data/audio/dummy/dummy_066_sideB_2.mp3"
-        },
-        {
-          "text": "They are different levels of EBS.",
-          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_3.mp3"
-        },
-        {
-          "text": "They are different levels in EBS.",
-          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_4.mp3"
         }
       ],
       "note": "\n\n~They are different leveles in EBS~ is invalid due to the spelling error in [levels]."
@@ -476,14 +460,6 @@
         {
           "text": "All data is sent using only one request.",
           "audioSrc": "public/data/audio/dummy/dummy_068_sideB_2.mp3"
-        },
-        {
-          "text": "It sends all the data in just one call.",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_3.mp3"
-        },
-        {
-          "text": "It sends all the data in just a single call.",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_4.mp3"
         }
       ],
       "note": "\n\n~It sends all the data just in one call~ sounds unnatural. The adverb 'just' should modify the quantity 'one', so the correct order is [in just one call].\n\n~It sends all the data just in a single call~ is slightly awkward. The adverb 'just' should be placed right before the quantity it emphasizes: [in just a single call]."
@@ -768,10 +744,6 @@
         {
           "text": "Rows beginning with # are automatically hidden by the mobile app.",
           "audioSrc": "public/data/audio/dummy/dummy_080_sideB_2.mp3"
-        },
-        {
-          "text": "The mobile app knows how to hide rows that start with #.",
-          "audioSrc": "public/data/audio/dummy/dummy_080_sideB_3.mp3"
         }
       ],
       "note": "\n\n~The mobile app knows how to hide rows that starts with #~ is incorrect because 'rows' is plural, so the verb must be [start] without the 's'."
@@ -862,7 +834,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_084_sideB_3.mp3"
         }
       ],
-      "note": "\n\n~It's public because of the user isn't logged into the app yet~ is incorrect because 'because of' must be followed by a noun or gerund, not a full clause. \n\n~It's public because the user isn't logging into the app yet~ is invalid because the continuous form 'logging' suggests an ongoing process rather than the status of being [logged in]."
+      "note": null
     },
     {
       "cardId": "dummy_085",
@@ -990,7 +962,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_090_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~If none conditions are met~ is incorrect because 'none' is a pronoun. Use the determiner [no] before the noun 'conditions'.\n\n~If any conditions are met, we return that value~ is incorrect because it changes the meaning to the opposite of the original sentence. To express that zero conditions were satisfied, use [no conditions] or [none of the conditions]."
+      "note": "\n\n~If none conditions are met~ is incorrect because 'none' is a pronoun. Use the determiner [no] before the noun 'conditions'."
     },
     {
       "cardId": "dummy_091",
@@ -1056,18 +1028,6 @@
         {
           "text": "Quantities now function consistently across the catalog, cart, and return items.",
           "audioSrc": "public/data/audio/dummy/dummy_093_sideB_2.mp3"
-        },
-        {
-          "text": "Now the catalog, cart, and return items work identically in their quantities.",
-          "audioSrc": "public/data/audio/dummy/dummy_093_sideB_3.mp3"
-        },
-        {
-          "text": "Now the catalog, cart, and return items work in the same way regarding quantities.",
-          "audioSrc": "public/data/audio/dummy/dummy_093_sideB_4.mp3"
-        },
-        {
-          "text": "Now the catalog, cart, and return items work with the same quantity logic.",
-          "audioSrc": "public/data/audio/dummy/dummy_093_sideB_5.mp3"
         }
       ],
       "note": "\n\n~Now the catalog, cart, and return items work the same as their quantities~ is incorrect because 'as their quantities' implies a comparison between the items and the quantities themselves. Use [regarding] or [in terms of] to specify the category of comparison."
@@ -1130,7 +1090,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_096_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~Order date or sysdate are like the same in this case~ is very informal and redundant. Use [practically the same] or [essentially the same] instead of 'like the same'.\n\n~Order date or sysdate are like the same in this case~ is redundant even in informal speech. While understood, [practically the same] or [essentially the same] are the standard ways to express this near-equality."
+      "note": "\n\n~Order date or sysdate are like the same in this case~ is very informal and redundant. Use [practically the same] or [essentially the same] instead of 'like the same'."
     },
     {
       "cardId": "dummy_097",
@@ -1382,7 +1342,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_107_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~Merge lines improves order readability for the customer~ is incorrect because a verb acting as a subject must be in the gerund form: [Merging lines]."
+      "note": null
     },
     {
       "cardId": "dummy_108",
@@ -1406,7 +1366,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_108_sideB_3.mp3"
         }
       ],
-      "note": "\n\n~We updated the AddItemsToCart call to include the merged logic~ is incorrect. You should use [merging logic] to describe the logic that performs the action, or [merge logic] as a compound noun."
+      "note": null
     },
     {
       "cardId": "dummy_109",
@@ -1424,10 +1384,6 @@
         {
           "text": "Items added at different moments are aggregated according to the specific profile.",
           "audioSrc": "public/data/audio/dummy/dummy_109_sideB_2.mp3"
-        },
-        {
-          "text": "Even if they are added in different moments, some profiles must merge them.",
-          "audioSrc": "public/data/audio/dummy/dummy_109_sideB_3.mp3"
         }
       ],
       "note": null
@@ -1512,10 +1468,6 @@
         {
           "text": "The ADD_ITEM_TO_CART procedure is legacy and should no longer be used.",
           "audioSrc": "public/data/audio/dummy/dummy_113_sideB_2.mp3"
-        },
-        {
-          "text": "The procedure ADD_ITEM_TO_CART is deprecated.",
-          "audioSrc": "public/data/audio/dummy/dummy_113_sideB_3.mp3"
         }
       ],
       "note": null
