@@ -1519,6 +1519,946 @@
         }
       ],
       "note": null
+    },
+    {
+      "cardId": "dummy_114",
+      "cardType": "flippable",
+      "sideA": "Eliminamos el hardcode 'US' por la variable local.",
+      "sideB": [
+        {
+          "text": "We removed the 'US' hardcode for the local variable.",
+          "audioSrc": "public/data/audio/dummy/dummy_114_sideB_0.mp3"
+        },
+        {
+          "text": "We replaced the hardcoded 'US' with the local variable.",
+          "audioSrc": "public/data/audio/dummy/dummy_114_sideB_1.mp3"
+        },
+        {
+          "text": "The 'US' hardcode was removed in favor of the local variable.",
+          "audioSrc": "public/data/audio/dummy/dummy_114_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_115",
+      "cardType": "flippable",
+      "sideA": "Y como puse ahi, es util para debugear.",
+      "sideB": [
+        {
+          "text": "And as I mentioned there, it's useful for debugging.",
+          "audioSrc": "public/data/audio/dummy/dummy_115_sideB_0.mp3"
+        },
+        {
+          "text": "And as I put there, it's helpful for debugging purposes.",
+          "audioSrc": "public/data/audio/dummy/dummy_115_sideB_1.mp3"
+        },
+        {
+          "text": "And like I stated there, it is useful for debugging.",
+          "audioSrc": "public/data/audio/dummy/dummy_115_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_116",
+      "cardType": "flippable",
+      "sideA": "Solo son espacios en blanco.",
+      "sideB": [
+        {
+          "text": "They are just blank spaces.",
+          "audioSrc": "public/data/audio/dummy/dummy_116_sideB_0.mp3"
+        },
+        {
+          "text": "It's just whitespace.",
+          "audioSrc": "public/data/audio/dummy/dummy_116_sideB_1.mp3"
+        },
+        {
+          "text": "Those are only empty spaces.",
+          "audioSrc": "public/data/audio/dummy/dummy_116_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_117",
+      "cardType": "flippable",
+      "sideA": "Ahi estamos obteniendo el CONVERSION RATE, para generar el quantity de return items.",
+      "sideB": [
+        {
+          "text": "There, we are getting the CONVERSION RATE to generate the return items quantity.",
+          "audioSrc": "public/data/audio/dummy/dummy_117_sideB_0.mp3"
+        },
+        {
+          "text": "We are obtaining the CONVERSION RATE there to calculate the quantity for return items.",
+          "audioSrc": "public/data/audio/dummy/dummy_117_sideB_1.mp3"
+        },
+        {
+          "text": "In that section, we fetch the CONVERSION RATE to generate the return item quantity.",
+          "audioSrc": "public/data/audio/dummy/dummy_117_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_118",
+      "cardType": "flippable",
+      "sideA": "Necesitamos esos datos en el frontend.",
+      "sideB": [
+        {
+          "text": "We need that data on the frontend.",
+          "audioSrc": "public/data/audio/dummy/dummy_118_sideB_0.mp3"
+        },
+        {
+          "text": "We require those data points in the frontend.",
+          "audioSrc": "public/data/audio/dummy/dummy_118_sideB_1.mp3"
+        },
+        {
+          "text": "That data is needed for the frontend.",
+          "audioSrc": "public/data/audio/dummy/dummy_118_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_119",
+      "cardType": "flippable",
+      "sideA": "Necesitamos esos valores en el frontend.",
+      "sideB": [
+        {
+          "text": "We need those values on the frontend.",
+          "audioSrc": "public/data/audio/dummy/dummy_119_sideB_0.mp3"
+        },
+        {
+          "text": "Those values are required in the frontend.",
+          "audioSrc": "public/data/audio/dummy/dummy_119_sideB_1.mp3"
+        },
+        {
+          "text": "We must have those values available on the frontend side.",
+          "audioSrc": "public/data/audio/dummy/dummy_119_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_120",
+      "cardType": "flippable",
+      "sideA": "Si vas arriba, veras la variable local.",
+      "sideB": [
+        {
+          "text": "If you go up, you will see the local variable.",
+          "audioSrc": "public/data/audio/dummy/dummy_120_sideB_0.mp3"
+        },
+        {
+          "text": "You can see the local variable if you look above.",
+          "audioSrc": "public/data/audio/dummy/dummy_120_sideB_1.mp3"
+        },
+        {
+          "text": "Scroll up and you'll find the local variable.",
+          "audioSrc": "public/data/audio/dummy/dummy_120_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_121",
+      "cardType": "flippable",
+      "sideA": "Si vas mas abajo, veras el cursor.",
+      "sideB": [
+        {
+          "text": "If you go further down, you will see the cursor.",
+          "audioSrc": "public/data/audio/dummy/dummy_121_sideB_0.mp3"
+        },
+        {
+          "text": "Further down, you'll find the cursor.",
+          "audioSrc": "public/data/audio/dummy/dummy_121_sideB_1.mp3"
+        },
+        {
+          "text": "You can see the cursor if you keep scrolling down.",
+          "audioSrc": "public/data/audio/dummy/dummy_121_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_122",
+      "cardType": "flippable",
+      "sideA": "Si vas abajo, veras las condiciones en el where.",
+      "sideB": [
+        {
+          "text": "If you go down, you'll see the conditions in the where clause.",
+          "audioSrc": "public/data/audio/dummy/dummy_122_sideB_0.mp3"
+        },
+        {
+          "text": "You can find the where conditions further down.",
+          "audioSrc": "public/data/audio/dummy/dummy_122_sideB_1.mp3"
+        },
+        {
+          "text": "Check below to see the conditions in the where statement.",
+          "audioSrc": "public/data/audio/dummy/dummy_122_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_123",
+      "cardType": "flippable",
+      "sideA": "Si vas mas arriba, veras el llamado a la funcion.",
+      "sideB": [
+        {
+          "text": "If you go further up, you will see the function call.",
+          "audioSrc": "public/data/audio/dummy/dummy_123_sideB_0.mp3"
+        },
+        {
+          "text": "Further up, you can see where the function is called.",
+          "audioSrc": "public/data/audio/dummy/dummy_123_sideB_1.mp3"
+        },
+        {
+          "text": "Look further above to find the function call.",
+          "audioSrc": "public/data/audio/dummy/dummy_123_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_124",
+      "cardType": "flippable",
+      "sideA": "Antes se enviaba todo por el uso de *, ahora solo lo que necesitamos.",
+      "sideB": [
+        {
+          "text": "Before, everything was sent using *, now only what we need.",
+          "audioSrc": "public/data/audio/dummy/dummy_124_sideB_0.mp3"
+        },
+        {
+          "text": "Previously, the * was used to send everything; now we only send necessary data.",
+          "audioSrc": "public/data/audio/dummy/dummy_124_sideB_1.mp3"
+        },
+        {
+          "text": "We used to send everything via *, but now we only include what's required.",
+          "audioSrc": "public/data/audio/dummy/dummy_124_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_125",
+      "cardType": "flippable",
+      "sideA": "Creo que se llama alias de tabla temporal.",
+      "sideB": [
+        {
+          "text": "I think it's called a temporary table alias.",
+          "audioSrc": "public/data/audio/dummy/dummy_125_sideB_0.mp3"
+        },
+        {
+          "text": "I believe it's referred to as a temp table alias.",
+          "audioSrc": "public/data/audio/dummy/dummy_125_sideB_1.mp3"
+        },
+        {
+          "text": "It is likely called a temporary table alias.",
+          "audioSrc": "public/data/audio/dummy/dummy_125_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_126",
+      "cardType": "flippable",
+      "sideA": "Ya no hay necesidad de usar inicializaciones si usamos a la funcion GET_ICX_USER_ID.",
+      "sideB": [
+        {
+          "text": "There is no longer a need for initializations if we use the GET_ICX_USER_ID function.",
+          "audioSrc": "public/data/audio/dummy/dummy_126_sideB_0.mp3"
+        },
+        {
+          "text": "Using the GET_ICX_USER_ID function eliminates the need for initializations.",
+          "audioSrc": "public/data/audio/dummy/dummy_126_sideB_1.mp3"
+        },
+        {
+          "text": "We don't need to use initializations anymore if we call the GET_ICX_USER_ID function.",
+          "audioSrc": "public/data/audio/dummy/dummy_126_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_127",
+      "cardType": "flippable",
+      "sideA": "Estos cambios fueron hechos mayormente por Sean.",
+      "sideB": [
+        {
+          "text": "These changes were mostly made by Sean.",
+          "audioSrc": "public/data/audio/dummy/dummy_127_sideB_0.mp3"
+        },
+        {
+          "text": "Sean was responsible for most of these changes.",
+          "audioSrc": "public/data/audio/dummy/dummy_127_sideB_1.mp3"
+        },
+        {
+          "text": "These modifications were primarily done by Sean.",
+          "audioSrc": "public/data/audio/dummy/dummy_127_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_128",
+      "cardType": "flippable",
+      "sideA": "Se cambio a la api de ISTORE para ahora manejar el item merging.",
+      "sideB": [
+        {
+          "text": "It was changed to the ISTORE API to now handle item merging.",
+          "audioSrc": "public/data/audio/dummy/dummy_128_sideB_0.mp3"
+        },
+        {
+          "text": "We switched to the ISTORE API to manage item merging now.",
+          "audioSrc": "public/data/audio/dummy/dummy_128_sideB_1.mp3"
+        },
+        {
+          "text": "The ISTORE API is now being used to handle item merging.",
+          "audioSrc": "public/data/audio/dummy/dummy_128_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_129",
+      "cardType": "flippable",
+      "sideA": "Comente esas lineas, pero no las borre, por si acaso.",
+      "sideB": [
+        {
+          "text": "I commented out those lines but didn't delete them, just in case.",
+          "audioSrc": "public/data/audio/dummy/dummy_129_sideB_0.mp3"
+        },
+        {
+          "text": "Those lines were commented out instead of deleted, just in case.",
+          "audioSrc": "public/data/audio/dummy/dummy_129_sideB_1.mp3"
+        },
+        {
+          "text": "I kept those lines as comments rather than deleting them, just as a precaution.",
+          "audioSrc": "public/data/audio/dummy/dummy_129_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_130",
+      "cardType": "flippable",
+      "sideA": "Es solo un salto de linea, para mejor legibilidad.",
+      "sideB": [
+        {
+          "text": "It's just a line break for better readability.",
+          "audioSrc": "public/data/audio/dummy/dummy_130_sideB_0.mp3"
+        },
+        {
+          "text": "That's only a newline for improved legibility.",
+          "audioSrc": "public/data/audio/dummy/dummy_130_sideB_1.mp3"
+        },
+        {
+          "text": "It is simply a line break to make it easier to read.",
+          "audioSrc": "public/data/audio/dummy/dummy_130_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_131",
+      "cardType": "flippable",
+      "sideA": "Fue un cambio mayor el que hicimos.",
+      "sideB": [
+        {
+          "text": "It was a major change that we made.",
+          "audioSrc": "public/data/audio/dummy/dummy_131_sideB_0.mp3"
+        },
+        {
+          "text": "We implemented a significant change.",
+          "audioSrc": "public/data/audio/dummy/dummy_131_sideB_1.mp3"
+        },
+        {
+          "text": "The modification we performed was a major one.",
+          "audioSrc": "public/data/audio/dummy/dummy_131_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_132",
+      "cardType": "flippable",
+      "sideA": "Es solo un cambio menor.",
+      "sideB": [
+        {
+          "text": "It's just a minor change.",
+          "audioSrc": "public/data/audio/dummy/dummy_132_sideB_0.mp3"
+        },
+        {
+          "text": "This is only a slight modification.",
+          "audioSrc": "public/data/audio/dummy/dummy_132_sideB_1.mp3"
+        },
+        {
+          "text": "It is merely a minor adjustment.",
+          "audioSrc": "public/data/audio/dummy/dummy_132_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_133",
+      "cardType": "flippable",
+      "sideA": "Obtener y validar son cosas distintas.",
+      "sideB": [
+        {
+          "text": "Fetching and validating are different things.",
+          "audioSrc": "public/data/audio/dummy/dummy_133_sideB_0.mp3"
+        },
+        {
+          "text": "Getting and validating are two distinct actions.",
+          "audioSrc": "public/data/audio/dummy/dummy_133_sideB_1.mp3"
+        },
+        {
+          "text": "Retrieving data is not the same as validating it.",
+          "audioSrc": "public/data/audio/dummy/dummy_133_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_134",
+      "cardType": "flippable",
+      "sideA": "Esas son las nuevas reglas o condiciones que se requieren.",
+      "sideB": [
+        {
+          "text": "Those are the new rules or conditions that are required.",
+          "audioSrc": "public/data/audio/dummy/dummy_134_sideB_0.mp3"
+        },
+        {
+          "text": "These are the mandatory new rules and conditions.",
+          "audioSrc": "public/data/audio/dummy/dummy_134_sideB_1.mp3"
+        },
+        {
+          "text": "Those represent the new requirements or conditions.",
+          "audioSrc": "public/data/audio/dummy/dummy_134_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_135",
+      "cardType": "flippable",
+      "sideA": "France esta a cargo de eso.",
+      "sideB": [
+        {
+          "text": "France is in charge of that.",
+          "audioSrc": "public/data/audio/dummy/dummy_135_sideB_0.mp3"
+        },
+        {
+          "text": "France is responsible for that task.",
+          "audioSrc": "public/data/audio/dummy/dummy_135_sideB_1.mp3"
+        },
+        {
+          "text": "France handles that specifically.",
+          "audioSrc": "public/data/audio/dummy/dummy_135_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_136",
+      "cardType": "flippable",
+      "sideA": "¿Cual procedimiento es ese?",
+      "sideB": [
+        {
+          "text": "Which procedure is that?",
+          "audioSrc": "public/data/audio/dummy/dummy_136_sideB_0.mp3"
+        },
+        {
+          "text": "What procedure are you referring to?",
+          "audioSrc": "public/data/audio/dummy/dummy_136_sideB_1.mp3"
+        },
+        {
+          "text": "Which specific procedure is it?",
+          "audioSrc": "public/data/audio/dummy/dummy_136_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_137",
+      "cardType": "flippable",
+      "sideA": "¿De que procedimiento estamos hablando?",
+      "sideB": [
+        {
+          "text": "What procedure are we talking about?",
+          "audioSrc": "public/data/audio/dummy/dummy_137_sideB_0.mp3"
+        },
+        {
+          "text": "Which procedure is being discussed?",
+          "audioSrc": "public/data/audio/dummy/dummy_137_sideB_1.mp3"
+        },
+        {
+          "text": "Of which procedure are we speaking?",
+          "audioSrc": "public/data/audio/dummy/dummy_137_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_138",
+      "cardType": "flippable",
+      "sideA": "En esta release, no hubo actualizacion de la especificacion.",
+      "sideB": [
+        {
+          "text": "In this release, there was no update to the specification.",
+          "audioSrc": "public/data/audio/dummy/dummy_138_sideB_0.mp3"
+        },
+        {
+          "text": "There was no spec update for this release.",
+          "audioSrc": "public/data/audio/dummy/dummy_138_sideB_1.mp3"
+        },
+        {
+          "text": "The specification was not updated in this release.",
+          "audioSrc": "public/data/audio/dummy/dummy_138_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_139",
+      "cardType": "flippable",
+      "sideA": "Como estamos usando la función GET_ICX_USER_ID, ya no necesitamos inicializar al usuario.",
+      "sideB": [
+        {
+          "text": "Since we are using the GET_ICX_USER_ID function, we no longer need to initialize the user.",
+          "audioSrc": "public/data/audio/dummy/dummy_139_sideB_0.mp3"
+        },
+        {
+          "text": "Because we use the GET_ICX_USER_ID function, user initialization is no longer necessary.",
+          "audioSrc": "public/data/audio/dummy/dummy_139_sideB_1.mp3"
+        },
+        {
+          "text": "As we're utilizing the GET_ICX_USER_ID function, initializing the user is no longer required.",
+          "audioSrc": "public/data/audio/dummy/dummy_139_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_140",
+      "cardType": "flippable",
+      "sideA": "Ya no necesitamos inicializar al usuario.",
+      "sideB": [
+        {
+          "text": "We no longer need to initialize the user.",
+          "audioSrc": "public/data/audio/dummy/dummy_140_sideB_0.mp3"
+        },
+        {
+          "text": "There's no need to initialize the user anymore.",
+          "audioSrc": "public/data/audio/dummy/dummy_140_sideB_1.mp3"
+        },
+        {
+          "text": "Initializing the user is no longer required.",
+          "audioSrc": "public/data/audio/dummy/dummy_140_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_141",
+      "cardType": "flippable",
+      "sideA": "Y la otra parte es un comentario eliminado.",
+      "sideB": [
+        {
+          "text": "And the other part is a removed comment.",
+          "audioSrc": "public/data/audio/dummy/dummy_141_sideB_0.mp3"
+        },
+        {
+          "text": "The other section consists of a deleted comment.",
+          "audioSrc": "public/data/audio/dummy/dummy_141_sideB_1.mp3"
+        },
+        {
+          "text": "And the remaining part is just a comment that was taken out.",
+          "audioSrc": "public/data/audio/dummy/dummy_141_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_142",
+      "cardType": "flippable",
+      "sideA": "Ahí solo limpié el código.",
+      "sideB": [
+        {
+          "text": "I just cleaned up the code there.",
+          "audioSrc": "public/data/audio/dummy/dummy_142_sideB_0.mp3"
+        },
+        {
+          "text": "I only performed some code cleanup.",
+          "audioSrc": "public/data/audio/dummy/dummy_142_sideB_1.mp3"
+        },
+        {
+          "text": "All I did there was tidy up the code.",
+          "audioSrc": "public/data/audio/dummy/dummy_142_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_143",
+      "cardType": "flippable",
+      "sideA": "Ahí solo borré el comentario.",
+      "sideB": [
+        {
+          "text": "I just removed the comment there.",
+          "audioSrc": "public/data/audio/dummy/dummy_143_sideB_0.mp3"
+        },
+        {
+          "text": "I only deleted the comment.",
+          "audioSrc": "public/data/audio/dummy/dummy_143_sideB_1.mp3"
+        },
+        {
+          "text": "I simply erased the comment in that section.",
+          "audioSrc": "public/data/audio/dummy/dummy_143_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_144",
+      "cardType": "flippable",
+      "sideA": "Refactorizamos el código para extraer la lógica de sesión en una función independiente.",
+      "sideB": [
+        {
+          "text": "We refactored the code to extract the session logic into a separate function.",
+          "audioSrc": "public/data/audio/dummy/dummy_144_sideB_0.mp3"
+        },
+        {
+          "text": "The code was refactored to pull the session logic into an independent function.",
+          "audioSrc": "public/data/audio/dummy/dummy_144_sideB_1.mp3"
+        },
+        {
+          "text": "We've refactored to move the session logic to its own function.",
+          "audioSrc": "public/data/audio/dummy/dummy_144_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_145",
+      "cardType": "flippable",
+      "sideA": "Este cambio hace que el código sea más fácil de mantener.",
+      "sideB": [
+        {
+          "text": "This change makes the code easier to maintain.",
+          "audioSrc": "public/data/audio/dummy/dummy_145_sideB_0.mp3"
+        },
+        {
+          "text": "This modification improves code maintainability.",
+          "audioSrc": "public/data/audio/dummy/dummy_145_sideB_1.mp3"
+        },
+        {
+          "text": "This update makes the code simpler to support in the future.",
+          "audioSrc": "public/data/audio/dummy/dummy_145_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_146",
+      "cardType": "flippable",
+      "sideA": "Separamos la obtención de la sesión de la inicialización del entorno.",
+      "sideB": [
+        {
+          "text": "We separated session retrieval from environment initialization.",
+          "audioSrc": "public/data/audio/dummy/dummy_146_sideB_0.mp3"
+        },
+        {
+          "text": "Session fetching has been decoupled from the environment setup.",
+          "audioSrc": "public/data/audio/dummy/dummy_146_sideB_1.mp3"
+        },
+        {
+          "text": "We split getting the session from initializing the environment.",
+          "audioSrc": "public/data/audio/dummy/dummy_146_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_147",
+      "cardType": "flippable",
+      "sideA": "Ahora por un lado validamos la sesion y por otro inicializamos al usuario.",
+      "sideB": [
+        {
+          "text": "Now we validate the session on one hand and initialize the user on the other.",
+          "audioSrc": "public/data/audio/dummy/dummy_147_sideB_0.mp3"
+        },
+        {
+          "text": "We are now validating the session and initializing the user separately.",
+          "audioSrc": "public/data/audio/dummy/dummy_147_sideB_1.mp3"
+        },
+        {
+          "text": "The session validation and user initialization are now handled as separate tasks.",
+          "audioSrc": "public/data/audio/dummy/dummy_147_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_148",
+      "cardType": "flippable",
+      "sideA": "¿No se si Sean te explico algo sobre esto?",
+      "sideB": [
+        {
+          "text": "I'm not sure if Sean explained anything to you about this?",
+          "audioSrc": "public/data/audio/dummy/dummy_148_sideB_0.mp3"
+        },
+        {
+          "text": "Did Sean mention anything to you regarding this?",
+          "audioSrc": "public/data/audio/dummy/dummy_148_sideB_1.mp3"
+        },
+        {
+          "text": "Has Sean talked to you about this at all?",
+          "audioSrc": "public/data/audio/dummy/dummy_148_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_149",
+      "cardType": "flippable",
+      "sideA": "¿Esta la VPN con errores?",
+      "sideB": [
+        {
+          "text": "Is the VPN experiencing errors?",
+          "audioSrc": "public/data/audio/dummy/dummy_149_sideB_0.mp3"
+        },
+        {
+          "text": "Are there issues with the VPN?",
+          "audioSrc": "public/data/audio/dummy/dummy_149_sideB_1.mp3"
+        },
+        {
+          "text": "Is the VPN having some errors?",
+          "audioSrc": "public/data/audio/dummy/dummy_149_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_150",
+      "cardType": "flippable",
+      "sideA": "¿Esta la VPN caida?",
+      "sideB": [
+        {
+          "text": "Is the VPN down?",
+          "audioSrc": "public/data/audio/dummy/dummy_150_sideB_0.mp3"
+        },
+        {
+          "text": "Has the VPN crashed?",
+          "audioSrc": "public/data/audio/dummy/dummy_150_sideB_1.mp3"
+        },
+        {
+          "text": "Is the VPN connection down?",
+          "audioSrc": "public/data/audio/dummy/dummy_150_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_151",
+      "cardType": "flippable",
+      "sideA": "Es solo un avance.",
+      "sideB": [
+        {
+          "text": "It's just progress.",
+          "audioSrc": "public/data/audio/dummy/dummy_151_sideB_0.mp3"
+        },
+        {
+          "text": "This is only a sneak peek.",
+          "audioSrc": "public/data/audio/dummy/dummy_151_sideB_1.mp3"
+        },
+        {
+          "text": "It's merely an advancement.",
+          "audioSrc": "public/data/audio/dummy/dummy_151_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_152",
+      "cardType": "flippable",
+      "sideA": "Aqui solo cambiamos el nombre.",
+      "sideB": [
+        {
+          "text": "We only changed the name here.",
+          "audioSrc": "public/data/audio/dummy/dummy_152_sideB_0.mp3"
+        },
+        {
+          "text": "All we did here was rename it.",
+          "audioSrc": "public/data/audio/dummy/dummy_152_sideB_1.mp3"
+        },
+        {
+          "text": "The only change here was the name.",
+          "audioSrc": "public/data/audio/dummy/dummy_152_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_153",
+      "cardType": "flippable",
+      "sideA": "Vamos a ensayar la instalacion completa.",
+      "sideB": [
+        {
+          "text": "We are going to do a dry run of the full installation.",
+          "audioSrc": "public/data/audio/dummy/dummy_153_sideB_0.mp3"
+        },
+        {
+          "text": "We're going to rehearse the full install.",
+          "audioSrc": "public/data/audio/dummy/dummy_153_sideB_1.mp3"
+        },
+        {
+          "text": "We'll run a smoke test for the complete installation.",
+          "audioSrc": "public/data/audio/dummy/dummy_153_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_154",
+      "cardType": "flippable",
+      "sideA": "Entran todos en el resultado de la query.",
+      "sideB": [
+        {
+          "text": "All of them are included in the query result.",
+          "audioSrc": "public/data/audio/dummy/dummy_154_sideB_0.mp3"
+        },
+        {
+          "text": "Everything is contained within the query output.",
+          "audioSrc": "public/data/audio/dummy/dummy_154_sideB_1.mp3"
+        },
+        {
+          "text": "Every single one is returned by the query.",
+          "audioSrc": "public/data/audio/dummy/dummy_154_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_155",
+      "cardType": "flippable",
+      "sideA": "En el viernes se hará.",
+      "sideB": [
+        {
+          "text": "It will be done on Friday.",
+          "audioSrc": "public/data/audio/dummy/dummy_155_sideB_0.mp3"
+        },
+        {
+          "text": "It's going to happen on Friday.",
+          "audioSrc": "public/data/audio/dummy/dummy_155_sideB_1.mp3"
+        },
+        {
+          "text": "On Friday, it will be completed.",
+          "audioSrc": "public/data/audio/dummy/dummy_155_sideB_2.mp3"
+        }
+      ],
+      "note": "**[21]**"
+    },
+    {
+      "cardId": "dummy_156",
+      "cardType": "flippable",
+      "sideA": "En el Miércoles se hizo eso.",
+      "sideB": [
+        {
+          "text": "That was done on Wednesday.",
+          "audioSrc": "public/data/audio/dummy/dummy_156_sideB_0.mp3"
+        },
+        {
+          "text": "It happened on Wednesday.",
+          "audioSrc": "public/data/audio/dummy/dummy_156_sideB_1.mp3"
+        },
+        {
+          "text": "On Wednesday, that task was finished.",
+          "audioSrc": "public/data/audio/dummy/dummy_156_sideB_2.mp3"
+        }
+      ],
+      "note": "**[21]**"
+    },
+    {
+      "cardId": "dummy_157",
+      "cardType": "flippable",
+      "sideA": "En 2 semanas mas vamos a hacerlo.",
+      "sideB": [
+        {
+          "text": "We are going to do it in two weeks.",
+          "audioSrc": "public/data/audio/dummy/dummy_157_sideB_0.mp3"
+        },
+        {
+          "text": "We'll do it in two more weeks.",
+          "audioSrc": "public/data/audio/dummy/dummy_157_sideB_1.mp3"
+        },
+        {
+          "text": "In two weeks' time, we're going to do it.",
+          "audioSrc": "public/data/audio/dummy/dummy_157_sideB_2.mp3"
+        }
+      ],
+      "note": "**[21]**"
+    },
+    {
+      "cardId": "dummy_158",
+      "cardType": "flippable",
+      "sideA": "En Febrero se supone que se hará.",
+      "sideB": [
+        {
+          "text": "It's supposed to be done in February.",
+          "audioSrc": "public/data/audio/dummy/dummy_158_sideB_0.mp3"
+        },
+        {
+          "text": "It is expected to happen in February.",
+          "audioSrc": "public/data/audio/dummy/dummy_158_sideB_1.mp3"
+        },
+        {
+          "text": "In February, it should be completed.",
+          "audioSrc": "public/data/audio/dummy/dummy_158_sideB_2.mp3"
+        }
+      ],
+      "note": "**[21]**"
+    },
+    {
+      "cardId": "dummy_159",
+      "cardType": "flippable",
+      "sideA": "En Marzo se realizara el release.",
+      "sideB": [
+        {
+          "text": "The release will take place in March.",
+          "audioSrc": "public/data/audio/dummy/dummy_159_sideB_0.mp3"
+        },
+        {
+          "text": "In March, the release will happen.",
+          "audioSrc": "public/data/audio/dummy/dummy_159_sideB_1.mp3"
+        },
+        {
+          "text": "The release is scheduled for March.",
+          "audioSrc": "public/data/audio/dummy/dummy_159_sideB_2.mp3"
+        }
+      ],
+      "note": "**[21]**"
+    },
+    {
+      "cardId": "dummy_160",
+      "cardType": "flippable",
+      "sideA": "En el proximo año planeamos empezar con eso.",
+      "sideB": [
+        {
+          "text": "We plan to start with that next year.",
+          "audioSrc": "public/data/audio/dummy/dummy_160_sideB_0.mp3"
+        },
+        {
+          "text": "Next year, we're planning to begin that.",
+          "audioSrc": "public/data/audio/dummy/dummy_160_sideB_1.mp3"
+        },
+        {
+          "text": "In the coming year, we intend to start on that.",
+          "audioSrc": "public/data/audio/dummy/dummy_160_sideB_2.mp3"
+        }
+      ],
+      "note": "**[21]**"
     }
   ]
 }
