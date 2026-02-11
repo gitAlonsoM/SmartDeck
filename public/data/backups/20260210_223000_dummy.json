@@ -122,7 +122,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_049_sideB_4.mp3"
         }
       ],
-      "note": "**[24]**\n\n~We no loger use that procedure~ is incorrect due to the spelling of [longer] and because the structure requires the adverb to be placed correctly relative to the verb."
+      "note": "\n\n~We no loger use that procedure~ is incorrect due to the spelling of [longer] and because the structure requires the adverb to be placed correctly relative to the verb."
     },
     {
       "cardId": "dummy_052",
@@ -990,7 +990,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_090_sideB_2.mp3"
         }
       ],
-      "note": "**[190]**\n\n~If none conditions are met~ is incorrect because 'none' is a pronoun. Use the determiner [no] before the noun 'conditions'.\n\n~If any conditions are met, we return that value~ is incorrect because it changes the meaning to the opposite of the original sentence. To express that zero conditions were satisfied, use [no conditions] or [none of the conditions]."
+      "note": "\n\n~If none conditions are met~ is incorrect because 'none' is a pronoun. Use the determiner [no] before the noun 'conditions'.\n\n~If any conditions are met, we return that value~ is incorrect because it changes the meaning to the opposite of the original sentence. To express that zero conditions were satisfied, use [no conditions] or [none of the conditions]."
     },
     {
       "cardId": "dummy_091",
@@ -1656,10 +1656,6 @@
         {
           "text": "Scroll up and you'll find the local variable.",
           "audioSrc": "public/data/audio/dummy/dummy_120_sideB_2.mp3"
-        },
-        {
-          "text": "If you scroll up, you will see the local variable.",
-          "audioSrc": "public/data/audio/dummy/dummy_120_sideB_3.mp3"
         }
       ],
       "note": null
@@ -1682,7 +1678,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_121_sideB_2.mp3"
         }
       ],
-      "note": "**[157]**"
+      "note": null
     },
     {
       "cardId": "dummy_122",
@@ -1720,13 +1716,9 @@
         {
           "text": "Look further above to find the function call.",
           "audioSrc": "public/data/audio/dummy/dummy_123_sideB_2.mp3"
-        },
-        {
-          "text": "If you go further up, you will see the call to the function.",
-          "audioSrc": "public/data/audio/dummy/dummy_123_sideB_3.mp3"
         }
       ],
-      "note": "**[155]**"
+      "note": null
     },
     {
       "cardId": "dummy_124",
@@ -1784,13 +1776,9 @@
         {
           "text": "We don't need to use initializations anymore if we call the GET_ICX_USER_ID function.",
           "audioSrc": "public/data/audio/dummy/dummy_126_sideB_2.mp3"
-        },
-        {
-          "text": "There is no need for initializations if we use the GET_ICX_USER_ID function.",
-          "audioSrc": "public/data/audio/dummy/dummy_126_sideB_3.mp3"
         }
       ],
-      "note": "**[24]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_127",
@@ -1808,13 +1796,9 @@
         {
           "text": "These modifications were primarily done by Sean.",
           "audioSrc": "public/data/audio/dummy/dummy_127_sideB_2.mp3"
-        },
-        {
-          "text": "These changes were made mostly by Sean.",
-          "audioSrc": "public/data/audio/dummy/dummy_127_sideB_3.mp3"
         }
       ],
-      "note": "~These changes were made in their majority by Sean~ is unnatural. Use [mostly] or [primarily] instead."
+      "note": null
     },
     {
       "cardId": "dummy_128",
@@ -1874,7 +1858,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_130_sideB_2.mp3"
         }
       ],
-      "note": "**[113]**"
+      "note": null
     },
     {
       "cardId": "dummy_131",
@@ -1894,7 +1878,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_131_sideB_2.mp3"
         }
       ],
-      "note": "~What we made It was a major change~ is incorrect because 'It' is redundant. Use the noun clause [What we made was a major change]."
+      "note": null
     },
     {
       "cardId": "dummy_132",
@@ -1974,7 +1958,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_135_sideB_2.mp3"
         }
       ],
-      "note": "~France is on charge of that~ is incorrect. The fixed expression is [in charge of]."
+      "note": null
     },
     {
       "cardId": "dummy_136",
@@ -1992,10 +1976,6 @@
         {
           "text": "Which specific procedure is it?",
           "audioSrc": "public/data/audio/dummy/dummy_136_sideB_2.mp3"
-        },
-        {
-          "text": "What is that procedure?",
-          "audioSrc": "public/data/audio/dummy/dummy_136_sideB_3.mp3"
         }
       ],
       "note": null
@@ -2036,13 +2016,9 @@
         {
           "text": "The specification was not updated in this release.",
           "audioSrc": "public/data/audio/dummy/dummy_138_sideB_2.mp3"
-        },
-        {
-          "text": "In this release, there was no update of the specification.",
-          "audioSrc": "public/data/audio/dummy/dummy_138_sideB_3.mp3"
         }
       ],
-      "note": "**[190]**"
+      "note": null
     },
     {
       "cardId": "dummy_139",
@@ -2060,13 +2036,9 @@
         {
           "text": "As we're utilizing the GET_ICX_USER_ID function, initializing the user is no longer required.",
           "audioSrc": "public/data/audio/dummy/dummy_139_sideB_2.mp3"
-        },
-        {
-          "text": "As we are using the GET_ICX_USER_ID function, we don't need to initialize the user anymore.",
-          "audioSrc": "public/data/audio/dummy/dummy_139_sideB_3.mp3"
         }
       ],
-      "note": "**[24]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_140",
@@ -2086,7 +2058,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_140_sideB_2.mp3"
         }
       ],
-      "note":  "**[24]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_141",
@@ -2204,10 +2176,6 @@
         {
           "text": "We split getting the session from initializing the environment.",
           "audioSrc": "public/data/audio/dummy/dummy_146_sideB_2.mp3"
-        },
-        {
-          "text": "We separated the retrieval of the session from environment initialization.",
-          "audioSrc": "public/data/audio/dummy/dummy_146_sideB_3.mp3"
         }
       ],
       "note": null
@@ -2270,7 +2238,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_149_sideB_2.mp3"
         }
       ],
-      "note": "~Is the VPN with errors?~ and ~Is the VPN with down?~ are invalid. Use [Is the VPN down?] or [Are there errors with the VPN?]."
+      "note": null
     },
     {
       "cardId": "dummy_150",
@@ -2310,7 +2278,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_151_sideB_2.mp3"
         }
       ],
-      "note": "~It's just a progress~ is invalid because [progress] is an uncountable noun and cannot use the article 'a'."
+      "note": null
     },
     {
       "cardId": "dummy_152",
@@ -2328,10 +2296,6 @@
         {
           "text": "The only change here was the name.",
           "audioSrc": "public/data/audio/dummy/dummy_152_sideB_2.mp3"
-        },
-        {
-          "text": "We are just changing the name here.",
-          "audioSrc": "public/data/audio/dummy/dummy_152_sideB_3.mp3"
         }
       ],
       "note": null
@@ -2352,10 +2316,6 @@
         {
           "text": "We'll run a smoke test for the complete installation.",
           "audioSrc": "public/data/audio/dummy/dummy_153_sideB_2.mp3"
-        },
-        {
-          "text": "We are going to test the complete installation.",
-          "audioSrc": "public/data/audio/dummy/dummy_153_sideB_3.mp3"
         }
       ],
       "note": null
@@ -2376,10 +2336,6 @@
         {
           "text": "Every single one is returned by the query.",
           "audioSrc": "public/data/audio/dummy/dummy_154_sideB_2.mp3"
-        },
-        {
-          "text": "Everything is included in the query result.",
-          "audioSrc": "public/data/audio/dummy/dummy_154_sideB_3.mp3"
         }
       ],
       "note": null
@@ -2402,7 +2358,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_155_sideB_2.mp3"
         }
       ],
-      "note": "**[21]**\n\n~It will be done in Friday~ is incorrect because days of the week require the preposition [on]."
+      "note": "**[21]**"
     },
     {
       "cardId": "dummy_156",
@@ -2420,10 +2376,6 @@
         {
           "text": "On Wednesday, that task was finished.",
           "audioSrc": "public/data/audio/dummy/dummy_156_sideB_2.mp3"
-        },
-        {
-          "text": "That was made on Wednesday.",
-          "audioSrc": "public/data/audio/dummy/dummy_156_sideB_3.mp3"
         }
       ],
       "note": "**[21]**"
@@ -2484,10 +2436,6 @@
         {
           "text": "The release is scheduled for March.",
           "audioSrc": "public/data/audio/dummy/dummy_159_sideB_2.mp3"
-        },
-        {
-          "text": "The release will be done in March.",
-          "audioSrc": "public/data/audio/dummy/dummy_159_sideB_3.mp3"
         }
       ],
       "note": "**[21]**"
@@ -2510,7 +2458,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_160_sideB_2.mp3"
         }
       ],
-      "note": "**[21]**\n\n~on the next year~ is incorrect. Use [next year] without a preposition for calendar years, or [in the next year] to refer to the duration of the coming twelve months."
+      "note": "**[21]**"
     }
   ]
 }
