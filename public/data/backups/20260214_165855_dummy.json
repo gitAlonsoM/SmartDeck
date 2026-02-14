@@ -850,7 +850,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_083_sideB_3.mp3"
         }
       ],
-      "note": "\n\n~For being a public procedure~ is incorrect. Use [Since it is] or [Because it is] to express cause."
+      "note": null
     },
     {
       "cardId": "dummy_084",
@@ -1094,7 +1094,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_093_sideB_6.mp3"
         }
       ],
-      "note": "\n\n~Now the catalog, cart, and return items work the same as their quantities~ is incorrect because 'as their quantities' implies a comparison between the items and the quantities themselves. Use [regarding] or [in terms of] to specify the category of comparison.\n\n~...work the same in their quantities~ is not idiomatic. Use [regarding] or [in terms of] quantities. \n\n~...work equal to...~ is incorrect. 'Equal to' implies value comparison. Use [the same way] for functionality."
+      "note": "\n\n~Now the catalog, cart, and return items work the same as their quantities~ is incorrect because 'as their quantities' implies a comparison between the items and the quantities themselves. Use [regarding] or [in terms of] to specify the category of comparison."
     },
     {
       "cardId": "dummy_094",
@@ -1316,10 +1316,6 @@
         {
           "text": "We implemented this to manage cart line merging according to business rules.",
           "audioSrc": "public/data/audio/dummy/dummy_103_sideB_2.mp3"
-        },
-        {
-          "text": "This change is to correctly handle the merge in cart lines.",
-          "audioSrc": "public/data/audio/dummy/dummy_103_sideB_3.mp3"
         }
       ],
       "note": null
@@ -1532,10 +1528,6 @@
         {
           "text": "We've updated the logic within both the creation and addition procedures.",
           "audioSrc": "public/data/audio/dummy/dummy_112_sideB_2.mp3"
-        },
-        {
-          "text": "The change affects creation and cart update.",
-          "audioSrc": "public/data/audio/dummy/dummy_112_sideB_3.mp3"
         }
       ],
       "note": "\n\n~The change affects to the creation...~ is incorrect because the verb 'affect' is transitive and does not use the preposition 'to'. You should say [The change affects the creation...]."
@@ -1802,7 +1794,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_124_sideB_2.mp3"
         }
       ],
-      "note": "**[113]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_125",
@@ -1956,10 +1948,6 @@
         {
           "text": "What we made was a major change.",
           "audioSrc": "public/data/audio/dummy/dummy_131_sideB_3.mp3"
-        },
-        {
-          "text": "What we did was a major change.",
-          "audioSrc": "public/data/audio/dummy/dummy_131_sideB_4.mp3"
         }
       ],
       "note": "**[63]**\n\n~What we made It was a major change~ is incorrect because 'It' is redundant. Use the noun clause [What we made was a major change]."
@@ -2120,10 +2108,6 @@
         {
           "text": "In this release, there was no update of the specification.",
           "audioSrc": "public/data/audio/dummy/dummy_138_sideB_3.mp3"
-        },
-        {
-          "text": "In this release, there wasn't any update to the specification.",
-          "audioSrc": "public/data/audio/dummy/dummy_138_sideB_4.mp3"
         }
       ],
       "note": "**[190]**\n\n~there was no update in the specification~ is less natural. The standard preposition for updates made to a document or system is [to] (e.g., an update to the policy)."
@@ -2254,7 +2238,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_144_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~We refactorized~ is not a valid verb. Use [refactored]."
+      "note": null
     },
     {
       "cardId": "dummy_145",
@@ -2298,7 +2282,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_146_sideB_3.mp3"
         }
       ],
-      "note": "\n\n~We separated session retrieving...~ is less natural. Use the noun phrase [session retrieval] to parallel 'initialization'."
+      "note": null
     },
     {
       "cardId": "dummy_147",
@@ -2468,10 +2452,6 @@
         {
           "text": "Everything is included in the query result.",
           "audioSrc": "public/data/audio/dummy/dummy_154_sideB_3.mp3"
-        },
-        {
-          "text": "All are included in the query result.",
-          "audioSrc": "public/data/audio/dummy/dummy_154_sideB_4.mp3"
         }
       ],
       "note": null
