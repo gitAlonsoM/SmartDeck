@@ -22,7 +22,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_059_sideB_2.mp3"
         }
       ],
-      "note": "**[13]**\n\n\n\n~That library allows to force~ is grammatically incorrect. The verb 'allow' must be followed by an Object + Infinitive ([allows us to force]) or a Gerund ([allows forcing]). It cannot be followed directly by 'to'.\n\n~That library allows forcing the updating~ is unnatural. Use the noun [update] instead of the gerund 'updating' when referring to the specific event/action."
+      "note": "**[13]**\n\n\n\n~That library allows to force~ is grammatically incorrect. The verb 'allow' must be followed by an Object + Infinitive ([allows us to force]) or a Gerund ([allows forcing]). It cannot be followed directly by 'to'."
     },
     {
       "cardId": "dummy_068",
@@ -208,10 +208,6 @@
         {
           "text": "This change is to correctly handle the merge in cart lines.",
           "audioSrc": "public/data/audio/dummy/dummy_103_sideB_3.mp3"
-        },
-        {
-          "text": "This change is to correctly handle the merging lines in the cart.",
-          "audioSrc": "public/data/audio/dummy/dummy_103_sideB_4.mp3"
         }
       ],
       "note": null
@@ -266,7 +262,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_112_sideB_3.mp3"
         }
       ],
-      "note": "**[52]**\n\n\n\n~The change affects to the creation...~ is incorrect because the verb 'affect' is transitive and does not use the preposition 'to'. You should say [The change affects the creation...]."
+      "note": "\n\n~The change affects to the creation...~ is incorrect because the verb 'affect' is transitive and does not use the preposition 'to'. You should say [The change affects the creation...]."
     },
     {
       "cardId": "dummy_124",
@@ -342,7 +338,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_138_sideB_4.mp3"
         }
       ],
-      "note": "**[192]**\n\n~there was no update in the specification~ is less natural. The standard preposition for updates made to a document or system is [to] (e.g., an update to the policy)."
+      "note": "**[190]**\n\n~there was no update in the specification~ is less natural. The standard preposition for updates made to a document or system is [to] (e.g., an update to the policy)."
     },
     {
       "cardId": "dummy_144",
@@ -428,10 +424,6 @@
         {
           "text": "We are going to test the complete installation.",
           "audioSrc": "public/data/audio/dummy/dummy_153_sideB_3.mp3"
-        },
-        {
-          "text": "We are going to test the entire installation.",
-          "audioSrc": "public/data/audio/dummy/dummy_153_sideB_4.mp3"
         }
       ],
       "note": null
@@ -460,10 +452,6 @@
         {
           "text": "All are included in the query result.",
           "audioSrc": "public/data/audio/dummy/dummy_154_sideB_4.mp3"
-        },
-        {
-          "text": "They are all included in the query result.",
-          "audioSrc": "public/data/audio/dummy/dummy_154_sideB_5.mp3"
         }
       ],
       "note": null
@@ -508,10 +496,6 @@
         {
           "text": "This is connected to the ones we were viewing a moment back.",
           "audioSrc": "public/data/audio/dummy/dummy_157_sideB_2.mp3"
-        },
-        {
-          "text": "This is related to the ones we were looking at before.",
-          "audioSrc": "public/data/audio/dummy/dummy_157_sideB_3.mp3"
         }
       ],
       "note": null
@@ -534,7 +518,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_158_sideB_2.mp3"
         }
       ],
-      "note": "**[192]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_159",
@@ -552,10 +536,6 @@
         {
           "text": "No updates were made to the specification.",
           "audioSrc": "public/data/audio/dummy/dummy_159_sideB_2.mp3"
-        },
-        {
-          "text": "There were no updates in the specification.",
-          "audioSrc": "public/data/audio/dummy/dummy_159_sideB_3.mp3"
         }
       ],
       "note": null
@@ -576,13 +556,9 @@
         {
           "text": "No modification was made to the specification.",
           "audioSrc": "public/data/audio/dummy/dummy_160_sideB_2.mp3"
-        },
-        {
-          "text": "There wasn't any modification in the specification.",
-          "audioSrc": "public/data/audio/dummy/dummy_160_sideB_3.mp3"
         }
       ],
-      "note": "**[192]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_161",
@@ -600,13 +576,9 @@
         {
           "text": "There have been a few modifications in the specification.",
           "audioSrc": "public/data/audio/dummy/dummy_161_sideB_2.mp3"
-        },
-        {
-          "text": "There were some modifications in the specification.",
-          "audioSrc": "public/data/audio/dummy/dummy_161_sideB_3.mp3"
         }
       ],
-      "note": "**[192]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_162",
@@ -644,130 +616,6 @@
         {
           "text": "It is so, as always.",
           "audioSrc": "public/data/audio/dummy/dummy_163_sideB_2.mp3"
-        },
-        {
-          "text": "That's it, as always.",
-          "audioSrc": "public/data/audio/dummy/dummy_163_sideB_3.mp3"
-        }
-      ],
-      "note": "**[142]**\n\n"
-    },
-    {
-      "cardId": "dummy_164",
-      "cardType": "flippable",
-      "sideA": "El output actual es idéntico al esperado.",
-      "sideB": [
-        {
-          "text": "The current output is identical to the expected one.",
-          "audioSrc": "public/data/audio/dummy/dummy_164_sideB_0.mp3"
-        },
-        {
-          "text": "The current output is the same as the expected one.",
-          "audioSrc": "public/data/audio/dummy/dummy_164_sideB_1.mp3"
-        },
-        {
-          "text": "The actual output is identical to what was expected.",
-          "audioSrc": "public/data/audio/dummy/dummy_164_sideB_2.mp3"
-        }
-      ],
-      "note": "**[191]**\n\nUse [Identical to] or [Same as] for structural matches."
-    },
-    {
-      "cardId": "dummy_165",
-      "cardType": "flippable",
-      "sideA": "Si el input es igual a cero, lanza un error.",
-      "sideB": [
-        {
-          "text": "If the input is equal to zero, throw an error.",
-          "audioSrc": "public/data/audio/dummy/dummy_165_sideB_0.mp3"
-        },
-        {
-          "text": "If the input equals zero, throw an error.",
-          "audioSrc": "public/data/audio/dummy/dummy_165_sideB_1.mp3"
-        },
-        {
-          "text": "Should the input be equal to zero, throw an error.",
-          "audioSrc": "public/data/audio/dummy/dummy_165_sideB_2.mp3"
-        }
-      ],
-      "note": "**[191]**\n\nFor mathematical values, use [Equal to]."
-    },
-    {
-      "cardId": "dummy_166",
-      "cardType": "flippable",
-      "sideA": "Ambos servidores son iguales en términos de capacidad.",
-      "sideB": [
-        {
-          "text": "Both servers are equal in terms of capacity.",
-          "audioSrc": "public/data/audio/dummy/dummy_166_sideB_0.mp3"
-        },
-        {
-          "text": "Both servers are the same regarding capacity.",
-          "audioSrc": "public/data/audio/dummy/dummy_166_sideB_1.mp3"
-        },
-        {
-          "text": "Both servers are identical in terms of capacity.",
-          "audioSrc": "public/data/audio/dummy/dummy_166_sideB_2.mp3"
-        }
-      ],
-      "note": "**[191]**\n\nUse [In terms of] or [Regarding] to limit the comparison to a specific attribute."
-    },
-    {
-      "cardId": "dummy_167",
-      "cardType": "flippable",
-      "sideA": "No estábamos usándolo correctamente.",
-      "sideB": [
-        {
-          "text": "We weren't using it correctly.",
-          "audioSrc": "public/data/audio/dummy/dummy_167_sideB_0.mp3"
-        },
-        {
-          "text": "We were not using it properly.",
-          "audioSrc": "public/data/audio/dummy/dummy_167_sideB_1.mp3"
-        },
-        {
-          "text": "We were using it incorrectly.",
-          "audioSrc": "public/data/audio/dummy/dummy_167_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_168",
-      "cardType": "flippable",
-      "sideA": "Estábamos equivocados haciéndolo de esa forma.",
-      "sideB": [
-        {
-          "text": "We were wrong doing it that way.",
-          "audioSrc": "public/data/audio/dummy/dummy_168_sideB_0.mp3"
-        },
-        {
-          "text": "We were mistaken doing it like that.",
-          "audioSrc": "public/data/audio/dummy/dummy_168_sideB_1.mp3"
-        },
-        {
-          "text": "We were wrong to do it that way.",
-          "audioSrc": "public/data/audio/dummy/dummy_168_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_169",
-      "cardType": "flippable",
-      "sideA": "Refactorizamos el código para mejor mantenibilidad principalmente.",
-      "sideB": [
-        {
-          "text": "We refactored the code mainly for better maintainability.",
-          "audioSrc": "public/data/audio/dummy/dummy_169_sideB_0.mp3"
-        },
-        {
-          "text": "We refactored the code primarily to improve maintainability.",
-          "audioSrc": "public/data/audio/dummy/dummy_169_sideB_1.mp3"
-        },
-        {
-          "text": "Mainly for better maintainability, we refactored the code.",
-          "audioSrc": "public/data/audio/dummy/dummy_169_sideB_2.mp3"
         }
       ],
       "note": null

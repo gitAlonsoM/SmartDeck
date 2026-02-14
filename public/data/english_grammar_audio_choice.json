@@ -17636,6 +17636,180 @@
         "type": "text",
         "value": "**[178]**\n\n[within] correctly identifies that the string belongs **inside** the set of allowed characters.\n\n~between~ is a distractor; you stay 'between two points', but you are [within a range]. ~at~ is a point-specific preposition and does not describe being inside a boundary."
       }
+    },
+    {
+      "cardId": "egac_630",
+      "category": "Comparisons",
+      "sentenceParts": {
+        "prefix": "To pass the test, the restored file must be exactly ",
+        "suffix": " the original source data."
+      },
+      "options": [
+        {
+          "text": "the same as",
+          "isCorrect": true
+        },
+        {
+          "text": "equal to",
+          "isCorrect": false
+        },
+        {
+          "text": "the same that",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "To pass the test, the restored file must be exactly the same as the original source data.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_630.mp3",
+      "hint": "We are confirming that the object's identity and structure have no variation.",
+      "content": {
+        "type": "text",
+        "value": "**[191]**\n\n[The same as] is used for **Identity & Structure**. It confirms that the file is an exact copy of the original.\n\n~Equal to~ is reserved for values/magnitudes (numbers), not for file identity. ~The same that~ is a common grammatical error (Spanglish)."
+      }
+    },
+    {
+      "cardId": "egac_631",
+      "category": "Comparisons",
+      "sentenceParts": {
+        "prefix": "The validation logic returns 'true' only if the transaction count is ",
+        "suffix": " zero."
+      },
+      "options": [
+        {
+          "text": "equal to",
+          "isCorrect": true
+        },
+        {
+          "text": "same as",
+          "isCorrect": false
+        },
+        {
+          "text": "identical",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "The validation logic returns 'true' only if the transaction count is equal to zero.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_631.mp3",
+      "hint": "This is a comparison of numerical magnitude, not object identity.",
+      "content": {
+        "type": "text",
+        "value": "**[191]**\n\n[Equal to] is the standard term for **Values & Magnitudes** in math and data logic.\n\n~Same as~ focuses on the identity of an object, not the mathematical value of a number. ~Identical~ implies structural matching, which is overkill for a simple number check."
+      }
+    },
+    {
+      "cardId": "egac_632",
+      "category": "Comparisons",
+      "sentenceParts": {
+        "prefix": "Both cloud providers offer similar features, but AWS is better ",
+        "suffix": " global availability."
+      },
+      "options": [
+        {
+          "text": "in terms of",
+          "isCorrect": true
+        },
+        {
+          "text": "equal to",
+          "isCorrect": false
+        },
+        {
+          "text": "same regarding",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "Both cloud providers offer similar features, but AWS is better in terms of global availability.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_632.mp3",
+      "hint": "We are limiting the comparison to one specific parameter/attribute.",
+      "content": {
+        "type": "text",
+        "value": "**[191]**\n\n[In terms of] is used to specify the **Parameter** of the comparison. It limits the scope to just 'global availability'.\n\n~Same regarding~ is grammatically awkward here because we are stating a difference ('better'), not equality."
+      }
+    },
+    {
+      "cardId": "egac_633",
+      "category": "Prepositions",
+      "sentenceParts": {
+        "prefix": "We need to push an urgent ",
+        "suffix": " the payment gateway configuration."
+      },
+      "options": [
+        {
+          "text": "update to",
+          "isCorrect": true
+        },
+        {
+          "text": "update in",
+          "isCorrect": false
+        },
+        {
+          "text": "update of",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "We need to push an urgent update to the payment gateway configuration.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_633.mp3",
+      "hint": "Think of the update as an action applied directly towards the configuration.",
+      "content": {
+        "type": "text",
+        "value": "**[192]**\n\nNouns of **Change & Direction** like [update], [change], or [modification] require the preposition [to] because they represent an action directed at a target.\n\n~update in~ implies location (e.g., a typo *in* the file), not the act of changing the system. ~update of~ is unnatural in this technical context."
+      }
+    },
+    {
+      "cardId": "egac_634",
+      "category": "Prepositions",
+      "sentenceParts": {
+        "prefix": "The engineering team is still looking for a permanent ",
+        "suffix": " the latency issue."
+      },
+      "options": [
+        {
+          "text": "solution to",
+          "isCorrect": true
+        },
+        {
+          "text": "solution of",
+          "isCorrect": false
+        },
+        {
+          "text": "solution for",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "The engineering team is still looking for a permanent solution to the latency issue.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_634.mp3",
+      "hint": "The solution is the 'key' directed at the problem.",
+      "content": {
+        "type": "text",
+        "value": "**[192]**\n\nWords like [solution], [answer], and [key] are treated as **Directed Actions** towards a problem, so they use [to].\n\n~solution of~ is a literal translation from Spanish (solución de) and is incorrect. ~solution for~ is sometimes heard but [to] is the standard professional collocation."
+      }
+    },
+    {
+      "cardId": "egac_635",
+      "category": "Prepositions",
+      "sentenceParts": {
+        "prefix": "The new junior developer does not have ",
+        "suffix": " the production database yet."
+      },
+      "options": [
+        {
+          "text": "access to",
+          "isCorrect": true
+        },
+        {
+          "text": "access in",
+          "isCorrect": false
+        },
+        {
+          "text": "access on",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswer": "The new junior developer does not have access to the production database yet.",
+      "audioSrc": "public/data/audio/english_grammar_audio_choice/egac_635.mp3",
+      "hint": "This noun describes the right to enter or connect towards a target.",
+      "content": {
+        "type": "text",
+        "value": "**[192]**\n\n[Access] is a noun of **Direction/Entry**, so it always connects with [to].\n\n~Access in~ and ~access on~ are incorrect prepositions for permissions or connectivity."
+      }
     }
   ]
 }
