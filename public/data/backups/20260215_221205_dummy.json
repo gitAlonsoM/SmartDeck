@@ -162,7 +162,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_093_sideB_6.mp3"
         }
       ],
-      "note": "**[191]**\n\n~Now the catalog, cart, and return items work the same as their quantities~ is incorrect because 'as their quantities' implies a comparison between the items and the quantities themselves. Use [regarding] or [in terms of] to specify the category of comparison.\n\n~...work the same in their quantities~ is not idiomatic. Use [regarding] or [in terms of] quantities. \n\n~...work equal to...~ is incorrect. 'Equal to' implies value comparison. Use [the same way] for functionality."
+      "note": "\n\n~Now the catalog, cart, and return items work the same as their quantities~ is incorrect because 'as their quantities' implies a comparison between the items and the quantities themselves. Use [regarding] or [in terms of] to specify the category of comparison.\n\n~...work the same in their quantities~ is not idiomatic. Use [regarding] or [in terms of] quantities. \n\n~...work equal to...~ is incorrect. 'Equal to' implies value comparison. Use [the same way] for functionality."
     },
     {
       "cardId": "dummy_100",
@@ -286,7 +286,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_124_sideB_2.mp3"
         }
       ],
-      "note": "**[113]**\n\n\n\n~Before, everything was sent for the use of *~ is incorrect because 'for the use of' is a literal translation that sounds unnatural here. Use [using] or [via] to describe the method."
+      "note": "**[113]**\n\n"
     },
     {
       "cardId": "dummy_131",
@@ -362,7 +362,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_144_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~We refactorized~ is not a valid verb. Use [refactored].\n\n~...extract the session logic in a separate function~ is incorrect. When describing moving or transforming something into a new container or state, use the preposition [into]."
+      "note": "\n\n~We refactorized~ is not a valid verb. Use [refactored]."
     },
     {
       "cardId": "dummy_146",
@@ -534,7 +534,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_158_sideB_2.mp3"
         }
       ],
-      "note": ""
+      "note": "**[192]**\n\n"
     },
     {
       "cardId": "dummy_159",
@@ -768,21 +768,9 @@
         {
           "text": "Mainly for better maintainability, we refactored the code.",
           "audioSrc": "public/data/audio/dummy/dummy_169_sideB_2.mp3"
-        },
-        {
-          "text": "We refactored the code for better maintainability mainly.",
-          "audioSrc": "public/data/audio/dummy/dummy_169_sideB_3.mp3"
-        },
-        {
-          "text": "We refactored the code primarily for better maintenance.",
-          "audioSrc": "public/data/audio/dummy/dummy_169_sideB_4.mp3"
-        },
-        {
-          "text": "We refactored the code for better maintenance mainly.",
-          "audioSrc": "public/data/audio/dummy/dummy_169_sideB_5.mp3"
         }
       ],
-      "note": "\n\n~We refactored the code mainly for better maintaince~ is incorrect because [maintenance] or [maintainability] are the correct nouns; 'maintaince' is a misspelling."
+      "note": null
     }
   ]
 }
