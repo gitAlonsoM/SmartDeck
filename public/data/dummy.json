@@ -783,6 +783,386 @@
         }
       ],
       "note": "\n\n~We refactored the code mainly for better maintaince~ is incorrect because [maintenance] or [maintainability] are the correct nouns; 'maintaince' is a misspelling."
+    },
+    {
+      "cardId": "dummy_170",
+      "cardType": "flippable",
+      "sideA": "Necesito rellenar esta caja con papel.",
+      "sideB": [
+        {
+          "text": "I need to pad this box with paper.",
+          "audioSrc": "public/data/audio/dummy/dummy_170_sideB_0.mp3"
+        },
+        {
+          "text": "I need to use paper to pad this box.",
+          "audioSrc": "public/data/audio/dummy/dummy_170_sideB_1.mp3"
+        },
+        {
+          "text": "I must pad this box with paper.",
+          "audioSrc": "public/data/audio/dummy/dummy_170_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_171",
+      "cardType": "flippable",
+      "sideA": "Él quiere rellenar su currículum.",
+      "sideB": [
+        {
+          "text": "He wants to pad his resume.",
+          "audioSrc": "public/data/audio/dummy/dummy_171_sideB_0.mp3"
+        },
+        {
+          "text": "He is looking to pad his resume.",
+          "audioSrc": "public/data/audio/dummy/dummy_171_sideB_1.mp3"
+        },
+        {
+          "text": "He wants to add some padding to his resume.",
+          "audioSrc": "public/data/audio/dummy/dummy_171_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_172",
+      "cardType": "flippable",
+      "sideA": "Rellena a la izquierda con un cero.",
+      "sideB": [
+        {
+          "text": "Pad left with a zero.",
+          "audioSrc": "public/data/audio/dummy/dummy_172_sideB_0.mp3"
+        },
+        {
+          "text": "It pads left with a zero.",
+          "audioSrc": "public/data/audio/dummy/dummy_172_sideB_1.mp3"
+        },
+        {
+          "text": "You should pad left with a zero.",
+          "audioSrc": "public/data/audio/dummy/dummy_172_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_173",
+      "cardType": "flippable",
+      "sideA": "Rellena a la derecha con un cero.",
+      "sideB": [
+        {
+          "text": "Pad right with a zero.",
+          "audioSrc": "public/data/audio/dummy/dummy_173_sideB_0.mp3"
+        },
+        {
+          "text": "It pads right with a zero.",
+          "audioSrc": "public/data/audio/dummy/dummy_173_sideB_1.mp3"
+        },
+        {
+          "text": "You should pad right with a zero.",
+          "audioSrc": "public/data/audio/dummy/dummy_173_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_174",
+      "cardType": "flippable",
+      "sideA": "Agregamos la etiqueta queries para que el popup de actualización funcione.",
+      "sideB": [
+        {
+          "text": "We added the queries tag so the update popup works.",
+          "audioSrc": "public/data/audio/dummy/dummy_174_sideB_0.mp3"
+        },
+        {
+          "text": "We included the queries tag to make the update popup functional.",
+          "audioSrc": "public/data/audio/dummy/dummy_174_sideB_1.mp3"
+        },
+        {
+          "text": "We added the queries tag for the update popup to work properly.",
+          "audioSrc": "public/data/audio/dummy/dummy_174_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_175",
+      "cardType": "flippable",
+      "sideA": "Ahora el parser de fechas soporta meses numéricos.",
+      "sideB": [
+        {
+          "text": "The date parser now supports numeric months.",
+          "audioSrc": "public/data/audio/dummy/dummy_175_sideB_0.mp3"
+        },
+        {
+          "text": "Now the date parser handles months as numbers.",
+          "audioSrc": "public/data/audio/dummy/dummy_175_sideB_1.mp3"
+        },
+        {
+          "text": "The date parser is now compatible with numeric months.",
+          "audioSrc": "public/data/audio/dummy/dummy_175_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_176",
+      "cardType": "flippable",
+      "sideA": "Validamos el código de respuesta del backend antes de procesar los datos.",
+      "sideB": [
+        {
+          "text": "We validate the backend response code before processing the data.",
+          "audioSrc": "public/data/audio/dummy/dummy_176_sideB_0.mp3"
+        },
+        {
+          "text": "We check the backend response code before data processing.",
+          "audioSrc": "public/data/audio/dummy/dummy_176_sideB_1.mp3"
+        },
+        {
+          "text": "We verify the response code from the backend before handling the data.",
+          "audioSrc": "public/data/audio/dummy/dummy_176_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_177",
+      "cardType": "flippable",
+      "sideA": "Las cantidades ahora se generan dinámicamente según el multiplicador.",
+      "sideB": [
+        {
+          "text": "Quantities are now dynamically generated based on the multiplier.",
+          "audioSrc": "public/data/audio/dummy/dummy_177_sideB_0.mp3"
+        },
+        {
+          "text": "We now generate quantities dynamically according to the multiplier.",
+          "audioSrc": "public/data/audio/dummy/dummy_177_sideB_1.mp3"
+        },
+        {
+          "text": "Quantities are generated dynamically based on the product multiplier.",
+          "audioSrc": "public/data/audio/dummy/dummy_177_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_178",
+      "cardType": "flippable",
+      "sideA": "Ocultamos el selector de cantidad hasta que el producto esté cargado.",
+      "sideB": [
+        {
+          "text": "We hide the quantity selector until the product is loaded.",
+          "audioSrc": "public/data/audio/dummy/dummy_178_sideB_0.mp3"
+        },
+        {
+          "text": "The quantity selector remains hidden until the product loads.",
+          "audioSrc": "public/data/audio/dummy/dummy_178_sideB_1.mp3"
+        },
+        {
+          "text": "We keep the quantity selector hidden until the product has loaded.",
+          "audioSrc": "public/data/audio/dummy/dummy_178_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_179",
+      "cardType": "flippable",
+      "sideA": "Eliminamos los endpoints que no eran llaves válidas del middleware.",
+      "sideB": [
+        {
+          "text": "We removed endpoints that weren't valid middleware keys.",
+          "audioSrc": "public/data/audio/dummy/dummy_179_sideB_0.mp3"
+        },
+        {
+          "text": "We deleted the endpoints that were not valid keys in the middleware.",
+          "audioSrc": "public/data/audio/dummy/dummy_179_sideB_1.mp3"
+        },
+        {
+          "text": "The endpoints that were not valid middleware keys have been removed.",
+          "audioSrc": "public/data/audio/dummy/dummy_179_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_180",
+      "cardType": "flippable",
+      "sideA": "Añadimos una llave única para evitar errores al cambiar de idioma.",
+      "sideB": [
+        {
+          "text": "We added a unique key to prevent errors when changing languages.",
+          "audioSrc": "public/data/audio/dummy/dummy_180_sideB_0.mp3"
+        },
+        {
+          "text": "A unique key was added to avoid issues during language transitions.",
+          "audioSrc": "public/data/audio/dummy/dummy_180_sideB_1.mp3"
+        },
+        {
+          "text": "We included a unique key to stop errors when switching languages.",
+          "audioSrc": "public/data/audio/dummy/dummy_180_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_181",
+      "cardType": "flippable",
+      "sideA": "Cambiamos el ID de cotización por el ID de línea para mayor precisión.",
+      "sideB": [
+        {
+          "text": "We changed the Quote ID for the Line ID for better accuracy.",
+          "audioSrc": "public/data/audio/dummy/dummy_181_sideB_0.mp3"
+        },
+        {
+          "text": "We replaced the Quote ID with the Line ID for improved precision.",
+          "audioSrc": "public/data/audio/dummy/dummy_181_sideB_1.mp3"
+        },
+        {
+          "text": "The Quote ID was swapped for the Line ID to increase accuracy.",
+          "audioSrc": "public/data/audio/dummy/dummy_181_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_182",
+      "cardType": "flippable",
+      "sideA": "El controlador ahora detecta versiones forzadas desde la base de datos.",
+      "sideB": [
+        {
+          "text": "The controller now detects forced versions from the database.",
+          "audioSrc": "public/data/audio/dummy/dummy_182_sideB_0.mp3"
+        },
+        {
+          "text": "Now the controller identifies forced versions within the database.",
+          "audioSrc": "public/data/audio/dummy/dummy_182_sideB_1.mp3"
+        },
+        {
+          "text": "The controller is now able to detect forced versions from the database.",
+          "audioSrc": "public/data/audio/dummy/dummy_182_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_183",
+      "cardType": "flippable",
+      "sideA": "Los scripts de compilación ahora inyectan las URLs de actualización automáticamente.",
+      "sideB": [
+        {
+          "text": "Build scripts now inject the update URLs automatically.",
+          "audioSrc": "public/data/audio/dummy/dummy_183_sideB_0.mp3"
+        },
+        {
+          "text": "Now the build scripts automatically inject the update URLs.",
+          "audioSrc": "public/data/audio/dummy/dummy_183_sideB_1.mp3"
+        },
+        {
+          "text": "The build scripts inject the update URLs in an automated way.",
+          "audioSrc": "public/data/audio/dummy/dummy_183_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_184",
+      "cardType": "flippable",
+      "sideA": "Estandarizamos las etiquetas de pago en inglés y francés.",
+      "sideB": [
+        {
+          "text": "We standardized the payment labels in English and French.",
+          "audioSrc": "public/data/audio/dummy/dummy_184_sideB_0.mp3"
+        },
+        {
+          "text": "Payment labels were standardized across English and French.",
+          "audioSrc": "public/data/audio/dummy/dummy_184_sideB_1.mp3"
+        },
+        {
+          "text": "We made the payment labels consistent in English and French.",
+          "audioSrc": "public/data/audio/dummy/dummy_184_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_185",
+      "cardType": "flippable",
+      "sideA": "Los usuarios de Saskatchewan ahora ven el mensaje de retención correcto.",
+      "sideB": [
+        {
+          "text": "Saskatchewan users now see the correct hold message.",
+          "audioSrc": "public/data/audio/dummy/dummy_185_sideB_0.mp3"
+        },
+        {
+          "text": "Users in Saskatchewan now view the right hold message.",
+          "audioSrc": "public/data/audio/dummy/dummy_185_sideB_1.mp3"
+        },
+        {
+          "text": "Now Saskatchewan users receive the correct hold message.",
+          "audioSrc": "public/data/audio/dummy/dummy_185_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_186",
+      "cardType": "flippable",
+      "sideA": "Actualizamos el número de versión y los parámetros del upgrader.",
+      "sideB": [
+        {
+          "text": "We updated the version number and the upgrader parameters.",
+          "audioSrc": "public/data/audio/dummy/dummy_186_sideB_0.mp3"
+        },
+        {
+          "text": "The version number and upgrader parameters have been updated.",
+          "audioSrc": "public/data/audio/dummy/dummy_186_sideB_1.mp3"
+        },
+        {
+          "text": "We have updated the version number along with the upgrader parameters.",
+          "audioSrc": "public/data/audio/dummy/dummy_186_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_187",
+      "cardType": "flippable",
+      "sideA": "Refactorizamos la consulta para incluir el factor de conversión.",
+      "sideB": [
+        {
+          "text": "We refactored the query to include the conversion factor.",
+          "audioSrc": "public/data/audio/dummy/dummy_187_sideB_0.mp3"
+        },
+        {
+          "text": "The query was refactored to incorporate the conversion factor.",
+          "audioSrc": "public/data/audio/dummy/dummy_187_sideB_1.mp3"
+        },
+        {
+          "text": "We modified the query to include the conversion rate.",
+          "audioSrc": "public/data/audio/dummy/dummy_187_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_188",
+      "cardType": "flippable",
+      "sideA": "Deshabilitamos este archivo porque la lógica fue movida a LTO.",
+      "sideB": [
+        {
+          "text": "We disabled this file because the logic was moved to LTO.",
+          "audioSrc": "public/data/audio/dummy/dummy_188_sideB_0.mp3"
+        },
+        {
+          "text": "This file was disabled since the logic moved to LTO.",
+          "audioSrc": "public/data/audio/dummy/dummy_188_sideB_1.mp3"
+        },
+        {
+          "text": "We have disabled this file as the logic is now in LTO.",
+          "audioSrc": "public/data/audio/dummy/dummy_188_sideB_2.mp3"
+        }
+      ],
+      "note": null
     }
   ]
 }
