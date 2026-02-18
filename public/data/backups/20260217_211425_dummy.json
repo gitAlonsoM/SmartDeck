@@ -126,7 +126,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_092_sideB_4.mp3"
         }
       ],
-      "note": "**[191]**"
+      "note": null
     },
     {
       "cardId": "dummy_093",
@@ -404,10 +404,6 @@
         {
           "text": "Is the VPN having some errors?",
           "audioSrc": "public/data/audio/dummy/dummy_149_sideB_2.mp3"
-        },
-        {
-          "text": "Is the VPN having errors?",
-          "audioSrc": "public/data/audio/dummy/dummy_149_sideB_3.mp3"
         }
       ],
       "note": "~Is the VPN with errors?~ and ~Is the VPN with down?~ are invalid. Use [Is the VPN down?] or [Are there errors with the VPN?].\n\n~Is the VPN with errors?~ implies the VPN is carrying errors like an accessory. In English, we use the verb 'have' for possession of problems ([Does the VPN have errors?]) or 'be' for the state ([Is the VPN down?])."
@@ -672,13 +668,9 @@
         {
           "text": "The actual output is identical to what was expected.",
           "audioSrc": "public/data/audio/dummy/dummy_164_sideB_2.mp3"
-        },
-        {
-          "text": "The current output is identical to the one expected.",
-          "audioSrc": "public/data/audio/dummy/dummy_164_sideB_3.mp3"
         }
       ],
-      "note": "**[191]**\n\nUse [Identical to] or [Same as] for structural matches.\n\n~The current output is equal to the expected one~ is incorrect because [equal to] refers to mathematical values, whereas [identical to] or [the same as] refers to objects or data structures."
+      "note": "**[191]**\n\nUse [Identical to] or [Same as] for structural matches."
     },
     {
       "cardId": "dummy_165",
@@ -696,10 +688,6 @@
         {
           "text": "Should the input be equal to zero, throw an error.",
           "audioSrc": "public/data/audio/dummy/dummy_165_sideB_2.mp3"
-        },
-        {
-          "text": "If the input is equal to zero, it throws an error.",
-          "audioSrc": "public/data/audio/dummy/dummy_165_sideB_3.mp3"
         }
       ],
       "note": "**[191]**\n\nFor mathematical values, use [Equal to]."
@@ -742,7 +730,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_167_sideB_2.mp3"
         }
       ],
-      "note": "**[193]**"
+      "note": null
     },
     {
       "cardId": "dummy_168",
@@ -852,10 +840,6 @@
         {
           "text": "You should pad left with a zero.",
           "audioSrc": "public/data/audio/dummy/dummy_172_sideB_2.mp3"
-        },
-        {
-          "text": "It pads to the left with a zero.",
-          "audioSrc": "public/data/audio/dummy/dummy_172_sideB_3.mp3"
         }
       ],
       "note": null
@@ -876,10 +860,6 @@
         {
           "text": "You should pad right with a zero.",
           "audioSrc": "public/data/audio/dummy/dummy_173_sideB_2.mp3"
-        },
-        {
-          "text": "It pads to the right with a zero.",
-          "audioSrc": "public/data/audio/dummy/dummy_173_sideB_3.mp3"
         }
       ],
       "note": null
@@ -920,10 +900,6 @@
         {
           "text": "The date parser is now compatible with numeric months.",
           "audioSrc": "public/data/audio/dummy/dummy_175_sideB_2.mp3"
-        },
-        {
-          "text": "The date parser can now handle numeric months.",
-          "audioSrc": "public/data/audio/dummy/dummy_175_sideB_3.mp3"
         }
       ],
       "note": null
@@ -944,10 +920,6 @@
         {
           "text": "We verify the response code from the backend before handling the data.",
           "audioSrc": "public/data/audio/dummy/dummy_176_sideB_2.mp3"
-        },
-        {
-          "text": "We validate the response code from the backend before processing the data.",
-          "audioSrc": "public/data/audio/dummy/dummy_176_sideB_3.mp3"
         }
       ],
       "note": null
@@ -968,10 +940,6 @@
         {
           "text": "Quantities are generated dynamically based on the product multiplier.",
           "audioSrc": "public/data/audio/dummy/dummy_177_sideB_2.mp3"
-        },
-        {
-          "text": "Quantities are now generated dynamically based on the multiplier.",
-          "audioSrc": "public/data/audio/dummy/dummy_177_sideB_3.mp3"
         }
       ],
       "note": null
@@ -1034,7 +1002,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_180_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~to prevent errors to change the language~ is invalid because the verb 'prevent' requires the structure [prevent someone/something from doing something]. Use [prevent errors from occurring] or [to prevent errors when changing]."
+      "note": null
     },
     {
       "cardId": "dummy_181",
@@ -1132,10 +1100,6 @@
         {
           "text": "Now Saskatchewan users receive the correct hold message.",
           "audioSrc": "public/data/audio/dummy/dummy_185_sideB_2.mp3"
-        },
-        {
-          "text": "Users from Saskatchewan now see the right hold message.",
-          "audioSrc": "public/data/audio/dummy/dummy_185_sideB_3.mp3"
         }
       ],
       "note": null
@@ -1156,10 +1120,6 @@
         {
           "text": "We have updated the version number along with the upgrader parameters.",
           "audioSrc": "public/data/audio/dummy/dummy_186_sideB_2.mp3"
-        },
-        {
-          "text": "We updated the version number and the parameters of the upgrader.",
-          "audioSrc": "public/data/audio/dummy/dummy_186_sideB_3.mp3"
         }
       ],
       "note": null
@@ -1202,7 +1162,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_188_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~We disableded~ is redundant because 'disabled' is already the past tense form. ~We inabled~ is not a valid word; the opposite of 'enabled' is [disabled]."
+      "note": null
     }
   ]
 }
