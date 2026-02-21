@@ -5,1204 +5,284 @@
   "deckType": "flippable",
   "cards": [
     {
-      "cardId": "dummy_059",
+      "cardId": "dummy_001",
       "cardType": "flippable",
-      "sideA": "Esa biblioteca permite forzar la actualización.",
+      "sideA": "El update Popup compara la version del dispositivo con la del profile.",
       "sideB": [
         {
-          "text": "That library allows forcing the update.",
-          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_0.mp3"
+          "text": "The update popup compares the device version with the profile version.",
+          "audioSrc": "public/data/audio/dummy/dummy_001_sideB_0.mp3"
         },
         {
-          "text": "That library enables us to force an update.",
-          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_1.mp3"
+          "text": "The update popup checks the device version against the profile version.",
+          "audioSrc": "public/data/audio/dummy/dummy_001_sideB_1.mp3"
         },
         {
-          "text": "That library makes it possible to force the update.",
-          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_2.mp3"
-        }
-      ],
-      "note": "**[13]**\n\n\n\n~That library allows to force~ is grammatically incorrect. The verb 'allow' must be followed by an Object + Infinitive ([allows us to force]) or a Gerund ([allows forcing]). It cannot be followed directly by 'to'.\n\n~That library allows forcing the updating~ is unnatural. Use the noun [update] instead of the gerund 'updating' when referring to the specific event/action."
-    },
-    {
-      "cardId": "dummy_068",
-      "cardType": "flippable",
-      "sideA": "Envía todos los datos solo en 1 llamada.",
-      "sideB": [
-        {
-          "text": "It sends all the data in a single call.",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_0.mp3"
-        },
-        {
-          "text": "It transmits all the information in just one call.",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_1.mp3"
-        },
-        {
-          "text": "All data is sent using only one request.",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_2.mp3"
-        },
-        {
-          "text": "It sends all the data in just one call.",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_3.mp3"
-        },
-        {
-          "text": "It sends all the data in just a single call.",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_4.mp3"
-        }
-      ],
-      "note": "\n\n~It sends all the data just in one call~ sounds unnatural. The adverb 'just' should modify the quantity 'one', so the correct order is [in just one call].\n\n~It sends all the data just in a single call~ is slightly awkward. The adverb 'just' should be placed right before the quantity it emphasizes: [in just a single call]."
-    },
-    {
-      "cardId": "dummy_083",
-      "cardType": "flippable",
-      "sideA": "Al ser un procedimiento público, necesitamos establecerlo de esa manera.",
-      "sideB": [
-        {
-          "text": "Since it's a public procedure, we need to set it that way.",
-          "audioSrc": "public/data/audio/dummy/dummy_083_sideB_0.mp3"
-        },
-        {
-          "text": "As it is a public procedure, it must be established accordingly.",
-          "audioSrc": "public/data/audio/dummy/dummy_083_sideB_1.mp3"
-        },
-        {
-          "text": "Because the procedure is public, we have to define it as such.",
-          "audioSrc": "public/data/audio/dummy/dummy_083_sideB_2.mp3"
-        },
-        {
-          "text": "As a public procedure, we need to set it that way.",
-          "audioSrc": "public/data/audio/dummy/dummy_083_sideB_3.mp3"
-        }
-      ],
-      "note": "\n\n~For being a public procedure~ is incorrect. Use [Since it is] or [Because it is] to express cause."
-    },
-    {
-      "cardId": "dummy_090",
-      "cardType": "flippable",
-      "sideA": "Si ninguna condición se cumple, retornamos ese valor.",
-      "sideB": [
-        {
-          "text": "If no conditions are met, we return that value.",
-          "audioSrc": "public/data/audio/dummy/dummy_090_sideB_0.mp3"
-        },
-        {
-          "text": "We return that value as a fallback if no condition is satisfied.",
-          "audioSrc": "public/data/audio/dummy/dummy_090_sideB_1.mp3"
-        },
-        {
-          "text": "In the event that no conditions match, we return that specific value.",
-          "audioSrc": "public/data/audio/dummy/dummy_090_sideB_2.mp3"
-        },
-        {
-          "text": "If none of the conditions are met, we return that value.",
-          "audioSrc": "public/data/audio/dummy/dummy_090_sideB_3.mp3"
-        }
-      ],
-      "note": "**[190]**\n\n~If none conditions are met~ is incorrect because 'none' is a pronoun. Use the determiner [no] before the noun 'conditions'.\n\n~If any conditions are met, we return that value~ is incorrect because it changes the meaning to the opposite of the original sentence. To express that zero conditions were satisfied, use [no conditions] or [none of the conditions]."
-    },
-    {
-      "cardId": "dummy_092",
-      "cardType": "flippable",
-      "sideA": "Ahora el dropdown de cantidad, es igual que en el catálogo.",
-      "sideB": [
-        {
-          "text": "Now the quantity dropdown is the same as in the catalog.",
-          "audioSrc": "public/data/audio/dummy/dummy_092_sideB_0.mp3"
-        },
-        {
-          "text": "The quantity dropdown now matches the one in the catalog.",
-          "audioSrc": "public/data/audio/dummy/dummy_092_sideB_1.mp3"
-        },
-        {
-          "text": "We have aligned the quantity dropdown with the catalog version.",
-          "audioSrc": "public/data/audio/dummy/dummy_092_sideB_2.mp3"
-        },
-        {
-          "text": "Now the quantity dropdown is equal to the catalog.",
-          "audioSrc": "public/data/audio/dummy/dummy_092_sideB_3.mp3"
-        },
-        {
-          "text": "Now the quantity dropdown is equal to the one in the catalog.",
-          "audioSrc": "public/data/audio/dummy/dummy_092_sideB_4.mp3"
-        }
-      ],
-      "note": "**[191]**"
-    },
-    {
-      "cardId": "dummy_093",
-      "cardType": "flippable",
-      "sideA": "Ahora el catalogo, cart y return items funcionan igual en sus cantidades.",
-      "sideB": [
-        {
-          "text": "Now the catalog, cart, and return items work the same regarding quantities.",
-          "audioSrc": "public/data/audio/dummy/dummy_093_sideB_0.mp3"
-        },
-        {
-          "text": "Catalog, cart, and return items now share the same quantity logic.",
-          "audioSrc": "public/data/audio/dummy/dummy_093_sideB_1.mp3"
-        },
-        {
-          "text": "Quantities now function consistently across the catalog, cart, and return items.",
-          "audioSrc": "public/data/audio/dummy/dummy_093_sideB_2.mp3"
-        },
-        {
-          "text": "Now the catalog, cart, and return items work identically in their quantities.",
-          "audioSrc": "public/data/audio/dummy/dummy_093_sideB_3.mp3"
-        },
-        {
-          "text": "Now the catalog, cart, and return items work in the same way regarding quantities.",
-          "audioSrc": "public/data/audio/dummy/dummy_093_sideB_4.mp3"
-        },
-        {
-          "text": "Now the catalog, cart, and return items work with the same quantity logic.",
-          "audioSrc": "public/data/audio/dummy/dummy_093_sideB_5.mp3"
-        },
-        {
-          "text": "Now the catalog, cart, and return items work the same regarding their quantities.",
-          "audioSrc": "public/data/audio/dummy/dummy_093_sideB_6.mp3"
-        }
-      ],
-      "note": "**[191]**\n\n~Now the catalog, cart, and return items work the same as their quantities~ is incorrect because 'as their quantities' implies a comparison between the items and the quantities themselves. Use [regarding] or [in terms of] to specify the category of comparison.\n\n~...work the same in their quantities~ is not idiomatic. Use [regarding] or [in terms of] quantities. \n\n~...work equal to...~ is incorrect. 'Equal to' implies value comparison. Use [the same way] for functionality."
-    },
-    {
-      "cardId": "dummy_100",
-      "cardType": "flippable",
-      "sideA": "En la sección de la lupa no estábamos usando correctamente el profile.",
-      "sideB": [
-        {
-          "text": "In the search section, we weren't using the profile correctly.",
-          "audioSrc": "public/data/audio/dummy/dummy_100_sideB_0.mp3"
-        },
-        {
-          "text": "We weren't correctly utilizing the profile within the magnifying glass area.",
-          "audioSrc": "public/data/audio/dummy/dummy_100_sideB_1.mp3"
-        },
-        {
-          "text": "The profile was not being applied properly in the search functionality.",
-          "audioSrc": "public/data/audio/dummy/dummy_100_sideB_2.mp3"
-        },
-        {
-          "text": "In the magnifying glass section, we weren't using the right profile.",
-          "audioSrc": "public/data/audio/dummy/dummy_100_sideB_3.mp3"
-        }
-      ],
-      "note": "\n\n~We hadn't used...~ uses the Past Perfect tense. The Spanish sentence uses the Past Continuous (\"no estábamos usando\"), so the correct translation is [We were not using...]."
-    },
-    {
-      "cardId": "dummy_103",
-      "cardType": "flippable",
-      "sideA": "Este cambio es para manejar correctamente la unión de líneas en el carrito.",
-      "sideB": [
-        {
-          "text": "This change is to correctly handle the merging of cart lines.",
-          "audioSrc": "public/data/audio/dummy/dummy_103_sideB_0.mp3"
-        },
-        {
-          "text": "This modification ensures cart lines are merged properly.",
-          "audioSrc": "public/data/audio/dummy/dummy_103_sideB_1.mp3"
-        },
-        {
-          "text": "We implemented this to manage cart line merging according to business rules.",
-          "audioSrc": "public/data/audio/dummy/dummy_103_sideB_2.mp3"
-        },
-        {
-          "text": "This change is to correctly handle the merge in cart lines.",
-          "audioSrc": "public/data/audio/dummy/dummy_103_sideB_3.mp3"
-        },
-        {
-          "text": "This change is to correctly handle the merging lines in the cart.",
-          "audioSrc": "public/data/audio/dummy/dummy_103_sideB_4.mp3"
+          "text": "The update popup compares the device's version with the profile's.",
+          "audioSrc": "public/data/audio/dummy/dummy_001_sideB_2.mp3"
         }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_105",
+      "cardId": "dummy_002",
       "cardType": "flippable",
-      "sideA": "Usamos el parámetro p_combinesameitem para controlar si se agrupan los items.",
+      "sideA": "Asi que, si tenemos 31.0.5 en el celular, y misma version en el profile, ambos hacen match.",
       "sideB": [
         {
-          "text": "We use the p_combinesameitem parameter to control item grouping.",
-          "audioSrc": "public/data/audio/dummy/dummy_105_sideB_0.mp3"
+          "text": "So, if we have 31.0.5 on the phone and the same version in the profile, both match.",
+          "audioSrc": "public/data/audio/dummy/dummy_002_sideB_0.mp3"
         },
         {
-          "text": "The p_combinesameitem flag is used to manage whether items are combined.",
-          "audioSrc": "public/data/audio/dummy/dummy_105_sideB_1.mp3"
+          "text": "Therefore, if the phone is on 31.0.5 and the profile has the same version, it's a match.",
+          "audioSrc": "public/data/audio/dummy/dummy_002_sideB_1.mp3"
         },
         {
-          "text": "We're utilizing the p_combinesameitem parameter to determine if same items should merge.",
-          "audioSrc": "public/data/audio/dummy/dummy_105_sideB_2.mp3"
-        },
-        {
-          "text": "We use the p_combinesameitem parameter to control merged items.",
-          "audioSrc": "public/data/audio/dummy/dummy_105_sideB_3.mp3"
-        },
-        {
-          "text": "We use the p_combinesameitem parameter to control if items are merged.",
-          "audioSrc": "public/data/audio/dummy/dummy_105_sideB_4.mp3"
+          "text": "So, if there's 31.0.5 on the mobile and the same version on the profile, they both match.",
+          "audioSrc": "public/data/audio/dummy/dummy_002_sideB_2.mp3"
         }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_112",
+      "cardId": "dummy_003",
       "cardType": "flippable",
-      "sideA": "El cambio afecta tanto a la creación como a la actualización del carrito.",
+      "sideA": "Si la versión es 31.0.5 en ambos, hay match.",
       "sideB": [
         {
-          "text": "The change affects both the creation and update of the cart.",
-          "audioSrc": "public/data/audio/dummy/dummy_112_sideB_0.mp3"
+          "text": "If both are version 31.0.5, they match.",
+          "audioSrc": "public/data/audio/dummy/dummy_003_sideB_0.mp3"
         },
         {
-          "text": "This modification impacts procedures for adding items and creating quotes.",
-          "audioSrc": "public/data/audio/dummy/dummy_112_sideB_1.mp3"
+          "text": "If the version is 31.0.5 on both, it's a match.",
+          "audioSrc": "public/data/audio/dummy/dummy_003_sideB_1.mp3"
         },
         {
-          "text": "We've updated the logic within both the creation and addition procedures.",
-          "audioSrc": "public/data/audio/dummy/dummy_112_sideB_2.mp3"
-        },
-        {
-          "text": "The change affects creation and cart update.",
-          "audioSrc": "public/data/audio/dummy/dummy_112_sideB_3.mp3"
-        }
-      ],
-      "note": "**[52]**\n\n\n\n~The change affects to the creation...~ is incorrect because the verb 'affect' is transitive and does not use the preposition 'to'. You should say [The change affects the creation...]."
-    },
-    {
-      "cardId": "dummy_124",
-      "cardType": "flippable",
-      "sideA": "Antes se enviaba todo por el uso de *, ahora solo lo que necesitamos.",
-      "sideB": [
-        {
-          "text": "Before, everything was sent using *, now only what we need.",
-          "audioSrc": "public/data/audio/dummy/dummy_124_sideB_0.mp3"
-        },
-        {
-          "text": "Previously, the * was used to send everything; now we only send necessary data.",
-          "audioSrc": "public/data/audio/dummy/dummy_124_sideB_1.mp3"
-        },
-        {
-          "text": "We used to send everything via *, but now we only include what's required.",
-          "audioSrc": "public/data/audio/dummy/dummy_124_sideB_2.mp3"
-        }
-      ],
-      "note": "**[113]**\n\n\n\n~Before, everything was sent for the use of *~ is incorrect because 'for the use of' is a literal translation that sounds unnatural here. Use [using] or [via] to describe the method."
-    },
-    {
-      "cardId": "dummy_131",
-      "cardType": "flippable",
-      "sideA": "Fue un cambio mayor el que hicimos.",
-      "sideB": [
-        {
-          "text": "It was a major change that we made.",
-          "audioSrc": "public/data/audio/dummy/dummy_131_sideB_0.mp3"
-        },
-        {
-          "text": "We implemented a significant change.",
-          "audioSrc": "public/data/audio/dummy/dummy_131_sideB_1.mp3"
-        },
-        {
-          "text": "The modification we performed was a major one.",
-          "audioSrc": "public/data/audio/dummy/dummy_131_sideB_2.mp3"
-        },
-        {
-          "text": "What we made was a major change.",
-          "audioSrc": "public/data/audio/dummy/dummy_131_sideB_3.mp3"
-        },
-        {
-          "text": "What we did was a major change.",
-          "audioSrc": "public/data/audio/dummy/dummy_131_sideB_4.mp3"
-        }
-      ],
-      "note": "**[63]**\n\n~What we made It was a major change~ is incorrect because 'It' is redundant. Use the noun clause [What we made was a major change]."
-    },
-    {
-      "cardId": "dummy_138",
-      "cardType": "flippable",
-      "sideA": "En esta release, no hubo actualizacion de la especificacion.",
-      "sideB": [
-        {
-          "text": "In this release, there was no update to the specification.",
-          "audioSrc": "public/data/audio/dummy/dummy_138_sideB_0.mp3"
-        },
-        {
-          "text": "There was no spec update for this release.",
-          "audioSrc": "public/data/audio/dummy/dummy_138_sideB_1.mp3"
-        },
-        {
-          "text": "The specification was not updated in this release.",
-          "audioSrc": "public/data/audio/dummy/dummy_138_sideB_2.mp3"
-        },
-        {
-          "text": "In this release, there was no update of the specification.",
-          "audioSrc": "public/data/audio/dummy/dummy_138_sideB_3.mp3"
-        },
-        {
-          "text": "In this release, there wasn't any update to the specification.",
-          "audioSrc": "public/data/audio/dummy/dummy_138_sideB_4.mp3"
-        }
-      ],
-      "note": "**[192]**\n\n~there was no update in the specification~ is less natural. The standard preposition for updates made to a document or system is [to] (e.g., an update to the policy)."
-    },
-    {
-      "cardId": "dummy_144",
-      "cardType": "flippable",
-      "sideA": "Refactorizamos el código para extraer la lógica de sesión en una función independiente.",
-      "sideB": [
-        {
-          "text": "We refactored the code to extract the session logic into a separate function.",
-          "audioSrc": "public/data/audio/dummy/dummy_144_sideB_0.mp3"
-        },
-        {
-          "text": "The code was refactored to pull the session logic into an independent function.",
-          "audioSrc": "public/data/audio/dummy/dummy_144_sideB_1.mp3"
-        },
-        {
-          "text": "We've refactored to move the session logic to its own function.",
-          "audioSrc": "public/data/audio/dummy/dummy_144_sideB_2.mp3"
-        }
-      ],
-      "note": "\n\n~We refactorized~ is not a valid verb. Use [refactored].\n\n~...extract the session logic in a separate function~ is incorrect. When describing moving or transforming something into a new container or state, use the preposition [into]."
-    },
-    {
-      "cardId": "dummy_146",
-      "cardType": "flippable",
-      "sideA": "Separamos la obtención de la sesión de la inicialización del entorno.",
-      "sideB": [
-        {
-          "text": "We separated session retrieval from environment initialization.",
-          "audioSrc": "public/data/audio/dummy/dummy_146_sideB_0.mp3"
-        },
-        {
-          "text": "Session fetching has been decoupled from the environment setup.",
-          "audioSrc": "public/data/audio/dummy/dummy_146_sideB_1.mp3"
-        },
-        {
-          "text": "We split getting the session from initializing the environment.",
-          "audioSrc": "public/data/audio/dummy/dummy_146_sideB_2.mp3"
-        },
-        {
-          "text": "We separated the retrieval of the session from environment initialization.",
-          "audioSrc": "public/data/audio/dummy/dummy_146_sideB_3.mp3"
-        }
-      ],
-      "note": "\n\n~We separated session retrieving...~ is less natural. Use the noun phrase [session retrieval] to parallel 'initialization'."
-    },
-    {
-      "cardId": "dummy_149",
-      "cardType": "flippable",
-      "sideA": "¿Esta la VPN con errores?",
-      "sideB": [
-        {
-          "text": "Is the VPN experiencing errors?",
-          "audioSrc": "public/data/audio/dummy/dummy_149_sideB_0.mp3"
-        },
-        {
-          "text": "Are there issues with the VPN?",
-          "audioSrc": "public/data/audio/dummy/dummy_149_sideB_1.mp3"
-        },
-        {
-          "text": "Is the VPN having some errors?",
-          "audioSrc": "public/data/audio/dummy/dummy_149_sideB_2.mp3"
-        },
-        {
-          "text": "Is the VPN having errors?",
-          "audioSrc": "public/data/audio/dummy/dummy_149_sideB_3.mp3"
-        }
-      ],
-      "note": "~Is the VPN with errors?~ and ~Is the VPN with down?~ are invalid. Use [Is the VPN down?] or [Are there errors with the VPN?].\n\n~Is the VPN with errors?~ implies the VPN is carrying errors like an accessory. In English, we use the verb 'have' for possession of problems ([Does the VPN have errors?]) or 'be' for the state ([Is the VPN down?])."
-    },
-    {
-      "cardId": "dummy_153",
-      "cardType": "flippable",
-      "sideA": "Vamos a ensayar la instalacion completa.",
-      "sideB": [
-        {
-          "text": "We are going to do a dry run of the full installation.",
-          "audioSrc": "public/data/audio/dummy/dummy_153_sideB_0.mp3"
-        },
-        {
-          "text": "We're going to rehearse the full install.",
-          "audioSrc": "public/data/audio/dummy/dummy_153_sideB_1.mp3"
-        },
-        {
-          "text": "We'll run a smoke test for the complete installation.",
-          "audioSrc": "public/data/audio/dummy/dummy_153_sideB_2.mp3"
-        },
-        {
-          "text": "We are going to test the complete installation.",
-          "audioSrc": "public/data/audio/dummy/dummy_153_sideB_3.mp3"
-        },
-        {
-          "text": "We are going to test the entire installation.",
-          "audioSrc": "public/data/audio/dummy/dummy_153_sideB_4.mp3"
+          "text": "If both have version 31.0.5, there is a match.",
+          "audioSrc": "public/data/audio/dummy/dummy_003_sideB_2.mp3"
         }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_154",
+      "cardId": "dummy_004",
       "cardType": "flippable",
-      "sideA": "Entran todos en el resultado de la query.",
+      "sideA": "Ambos sistemas en 31.0.5 están sincronizados.",
       "sideB": [
         {
-          "text": "All of them are included in the query result.",
-          "audioSrc": "public/data/audio/dummy/dummy_154_sideB_0.mp3"
+          "text": "Both systems on 31.0.5 are in sync.",
+          "audioSrc": "public/data/audio/dummy/dummy_004_sideB_0.mp3"
         },
         {
-          "text": "Everything is contained within the query output.",
-          "audioSrc": "public/data/audio/dummy/dummy_154_sideB_1.mp3"
+          "text": "Both systems are synchronized on 31.0.5.",
+          "audioSrc": "public/data/audio/dummy/dummy_004_sideB_1.mp3"
         },
         {
-          "text": "Every single one is returned by the query.",
-          "audioSrc": "public/data/audio/dummy/dummy_154_sideB_2.mp3"
-        },
-        {
-          "text": "Everything is included in the query result.",
-          "audioSrc": "public/data/audio/dummy/dummy_154_sideB_3.mp3"
-        },
-        {
-          "text": "All are included in the query result.",
-          "audioSrc": "public/data/audio/dummy/dummy_154_sideB_4.mp3"
-        },
-        {
-          "text": "They are all included in the query result.",
-          "audioSrc": "public/data/audio/dummy/dummy_154_sideB_5.mp3"
+          "text": "Both systems running 31.0.5 are in sync.",
+          "audioSrc": "public/data/audio/dummy/dummy_004_sideB_2.mp3"
         }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_156",
+      "cardId": "dummy_005",
       "cardType": "flippable",
-      "sideA": "En el Miércoles se hizo eso.",
+      "sideA": "Necesitamos un mismatch para que el popup aparezca.",
       "sideB": [
         {
-          "text": "That was done on Wednesday.",
-          "audioSrc": "public/data/audio/dummy/dummy_156_sideB_0.mp3"
+          "text": "We need a mismatch for the popup to appear.",
+          "audioSrc": "public/data/audio/dummy/dummy_005_sideB_0.mp3"
         },
         {
-          "text": "It happened on Wednesday.",
-          "audioSrc": "public/data/audio/dummy/dummy_156_sideB_1.mp3"
+          "text": "We need a mismatch for the popup to show up.",
+          "audioSrc": "public/data/audio/dummy/dummy_005_sideB_1.mp3"
         },
         {
-          "text": "On Wednesday, that task was finished.",
-          "audioSrc": "public/data/audio/dummy/dummy_156_sideB_2.mp3"
-        },
-        {
-          "text": "That was made on Wednesday.",
-          "audioSrc": "public/data/audio/dummy/dummy_156_sideB_3.mp3"
-        }
-      ],
-      "note": "**[21]**"
-    },
-    {
-      "cardId": "dummy_157",
-      "cardType": "flippable",
-      "sideA": "Este está relacionado con los que estábamos viendo un momento atrás.",
-      "sideB": [
-        {
-          "text": "This is related to the ones we were looking at a moment ago.",
-          "audioSrc": "public/data/audio/dummy/dummy_157_sideB_0.mp3"
-        },
-        {
-          "text": "This one relates to the ones we were seeing just a moment ago.",
-          "audioSrc": "public/data/audio/dummy/dummy_157_sideB_1.mp3"
-        },
-        {
-          "text": "This is connected to the ones we were viewing a moment back.",
-          "audioSrc": "public/data/audio/dummy/dummy_157_sideB_2.mp3"
-        },
-        {
-          "text": "This is related to the ones we were looking at before.",
-          "audioSrc": "public/data/audio/dummy/dummy_157_sideB_3.mp3"
+          "text": "A mismatch is required for the popup to appear.",
+          "audioSrc": "public/data/audio/dummy/dummy_005_sideB_2.mp3"
         }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_158",
+      "cardId": "dummy_006",
       "cardType": "flippable",
-      "sideA": "Esto está relacionado con los que estábamos viendo antes.",
+      "sideA": "El popup solo se gatilla si hay un mismatch.",
       "sideB": [
         {
-          "text": "This is related to the ones we were looking at before.",
-          "audioSrc": "public/data/audio/dummy/dummy_158_sideB_0.mp3"
+          "text": "The popup is only triggered if there is a mismatch.",
+          "audioSrc": "public/data/audio/dummy/dummy_006_sideB_0.mp3"
         },
         {
-          "text": "This relates to what we were seeing earlier.",
-          "audioSrc": "public/data/audio/dummy/dummy_158_sideB_1.mp3"
+          "text": "The popup only triggers when there is a mismatch.",
+          "audioSrc": "public/data/audio/dummy/dummy_006_sideB_1.mp3"
         },
         {
-          "text": "This is connected to the ones we were viewing before.",
-          "audioSrc": "public/data/audio/dummy/dummy_158_sideB_2.mp3"
-        }
-      ],
-      "note": ""
-    },
-    {
-      "cardId": "dummy_159",
-      "cardType": "flippable",
-      "sideA": "No hubieron actualizaciones en la especificación.",
-      "sideB": [
-        {
-          "text": "There were no updates to the specification.",
-          "audioSrc": "public/data/audio/dummy/dummy_159_sideB_0.mp3"
-        },
-        {
-          "text": "There weren't any updates in the spec.",
-          "audioSrc": "public/data/audio/dummy/dummy_159_sideB_1.mp3"
-        },
-        {
-          "text": "No updates were made to the specification.",
-          "audioSrc": "public/data/audio/dummy/dummy_159_sideB_2.mp3"
-        },
-        {
-          "text": "There were no updates in the specification.",
-          "audioSrc": "public/data/audio/dummy/dummy_159_sideB_3.mp3"
+          "text": "The popup will only be triggered if a mismatch occurs.",
+          "audioSrc": "public/data/audio/dummy/dummy_006_sideB_2.mp3"
         }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_160",
+      "cardId": "dummy_007",
       "cardType": "flippable",
-      "sideA": "No hubo ninguna modificación en la especificación.",
+      "sideA": "Sin mismatch, el update popup no se despliega.",
       "sideB": [
         {
-          "text": "There wasn't any modification to the specification.",
-          "audioSrc": "public/data/audio/dummy/dummy_160_sideB_0.mp3"
+          "text": "Without a mismatch, the update popup won't display.",
+          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_0.mp3"
         },
         {
-          "text": "There was no modification in the spec.",
-          "audioSrc": "public/data/audio/dummy/dummy_160_sideB_1.mp3"
+          "text": "If there's no mismatch, the update popup won't appear.",
+          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_1.mp3"
         },
         {
-          "text": "No modification was made to the specification.",
-          "audioSrc": "public/data/audio/dummy/dummy_160_sideB_2.mp3"
-        },
-        {
-          "text": "There wasn't any modification in the specification.",
-          "audioSrc": "public/data/audio/dummy/dummy_160_sideB_3.mp3"
-        }
-      ],
-      "note": "**[192]**\n\n"
-    },
-    {
-      "cardId": "dummy_161",
-      "cardType": "flippable",
-      "sideA": "Hubieron algunas modificaciones en la especificación.",
-      "sideB": [
-        {
-          "text": "There were some modifications to the specification.",
-          "audioSrc": "public/data/audio/dummy/dummy_161_sideB_0.mp3"
-        },
-        {
-          "text": "Some modifications were made to the spec.",
-          "audioSrc": "public/data/audio/dummy/dummy_161_sideB_1.mp3"
-        },
-        {
-          "text": "There have been a few modifications in the specification.",
-          "audioSrc": "public/data/audio/dummy/dummy_161_sideB_2.mp3"
-        },
-        {
-          "text": "There were some modifications in the specification.",
-          "audioSrc": "public/data/audio/dummy/dummy_161_sideB_3.mp3"
-        }
-      ],
-      "note": "**[192]**\n\n"
-    },
-    {
-      "cardId": "dummy_162",
-      "cardType": "flippable",
-      "sideA": "Sí, como siempre.",
-      "sideB": [
-        {
-          "text": "Yes, as always.",
-          "audioSrc": "public/data/audio/dummy/dummy_162_sideB_0.mp3"
-        },
-        {
-          "text": "Yeah, as usual.",
-          "audioSrc": "public/data/audio/dummy/dummy_162_sideB_1.mp3"
-        },
-        {
-          "text": "Yes, just like always.",
-          "audioSrc": "public/data/audio/dummy/dummy_162_sideB_2.mp3"
+          "text": "Without a mismatch, the update popup doesn't show up.",
+          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_2.mp3"
         }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_163",
+      "cardId": "dummy_008",
       "cardType": "flippable",
-      "sideA": "Asi es, como siempre.",
+      "sideA": "Seras redireccionado a la store para descargar la nueva version.",
       "sideB": [
         {
-          "text": "That's right, as always.",
-          "audioSrc": "public/data/audio/dummy/dummy_163_sideB_0.mp3"
+          "text": "You will be redirected to the store to download the new version.",
+          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_0.mp3"
         },
         {
-          "text": "That is correct, as usual.",
-          "audioSrc": "public/data/audio/dummy/dummy_163_sideB_1.mp3"
+          "text": "You'll be redirected to the store to download the latest version.",
+          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_1.mp3"
         },
         {
-          "text": "It is so, as always.",
-          "audioSrc": "public/data/audio/dummy/dummy_163_sideB_2.mp3"
-        },
-        {
-          "text": "That's it, as always.",
-          "audioSrc": "public/data/audio/dummy/dummy_163_sideB_3.mp3"
-        }
-      ],
-      "note": "**[142]**\n\n"
-    },
-    {
-      "cardId": "dummy_164",
-      "cardType": "flippable",
-      "sideA": "El output actual es idéntico al esperado.",
-      "sideB": [
-        {
-          "text": "The current output is identical to the expected one.",
-          "audioSrc": "public/data/audio/dummy/dummy_164_sideB_0.mp3"
-        },
-        {
-          "text": "The current output is the same as the expected one.",
-          "audioSrc": "public/data/audio/dummy/dummy_164_sideB_1.mp3"
-        },
-        {
-          "text": "The actual output is identical to what was expected.",
-          "audioSrc": "public/data/audio/dummy/dummy_164_sideB_2.mp3"
-        },
-        {
-          "text": "The current output is identical to the one expected.",
-          "audioSrc": "public/data/audio/dummy/dummy_164_sideB_3.mp3"
-        }
-      ],
-      "note": "**[191]**\n\nUse [Identical to] or [Same as] for structural matches.\n\n~The current output is equal to the expected one~ is incorrect because [equal to] refers to mathematical values, whereas [identical to] or [the same as] refers to objects or data structures."
-    },
-    {
-      "cardId": "dummy_165",
-      "cardType": "flippable",
-      "sideA": "Si el input es igual a cero, lanza un error.",
-      "sideB": [
-        {
-          "text": "If the input is equal to zero, throw an error.",
-          "audioSrc": "public/data/audio/dummy/dummy_165_sideB_0.mp3"
-        },
-        {
-          "text": "If the input equals zero, throw an error.",
-          "audioSrc": "public/data/audio/dummy/dummy_165_sideB_1.mp3"
-        },
-        {
-          "text": "Should the input be equal to zero, throw an error.",
-          "audioSrc": "public/data/audio/dummy/dummy_165_sideB_2.mp3"
-        },
-        {
-          "text": "If the input is equal to zero, it throws an error.",
-          "audioSrc": "public/data/audio/dummy/dummy_165_sideB_3.mp3"
-        }
-      ],
-      "note": "**[191]**\n\nFor mathematical values, use [Equal to]."
-    },
-    {
-      "cardId": "dummy_166",
-      "cardType": "flippable",
-      "sideA": "Ambos servidores son iguales en términos de capacidad.",
-      "sideB": [
-        {
-          "text": "Both servers are equal in terms of capacity.",
-          "audioSrc": "public/data/audio/dummy/dummy_166_sideB_0.mp3"
-        },
-        {
-          "text": "Both servers are the same regarding capacity.",
-          "audioSrc": "public/data/audio/dummy/dummy_166_sideB_1.mp3"
-        },
-        {
-          "text": "Both servers are identical in terms of capacity.",
-          "audioSrc": "public/data/audio/dummy/dummy_166_sideB_2.mp3"
-        }
-      ],
-      "note": "**[191]**\n\nUse [In terms of] or [Regarding] to limit the comparison to a specific attribute."
-    },
-    {
-      "cardId": "dummy_167",
-      "cardType": "flippable",
-      "sideA": "No estábamos usándolo correctamente.",
-      "sideB": [
-        {
-          "text": "We weren't using it correctly.",
-          "audioSrc": "public/data/audio/dummy/dummy_167_sideB_0.mp3"
-        },
-        {
-          "text": "We were not using it properly.",
-          "audioSrc": "public/data/audio/dummy/dummy_167_sideB_1.mp3"
-        },
-        {
-          "text": "We were using it incorrectly.",
-          "audioSrc": "public/data/audio/dummy/dummy_167_sideB_2.mp3"
-        }
-      ],
-      "note": "**[193]**"
-    },
-    {
-      "cardId": "dummy_168",
-      "cardType": "flippable",
-      "sideA": "Estábamos equivocados haciéndolo de esa forma.",
-      "sideB": [
-        {
-          "text": "We were wrong doing it that way.",
-          "audioSrc": "public/data/audio/dummy/dummy_168_sideB_0.mp3"
-        },
-        {
-          "text": "We were mistaken doing it like that.",
-          "audioSrc": "public/data/audio/dummy/dummy_168_sideB_1.mp3"
-        },
-        {
-          "text": "We were wrong to do it that way.",
-          "audioSrc": "public/data/audio/dummy/dummy_168_sideB_2.mp3"
+          "text": "It will redirect you to the store so you can download the new version.",
+          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_2.mp3"
         }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_169",
+      "cardId": "dummy_009",
       "cardType": "flippable",
-      "sideA": "Refactorizamos el código para mejor mantenibilidad principalmente.",
+      "sideA": "Pero los testers pueden perder el link, y es normal.",
       "sideB": [
         {
-          "text": "We refactored the code mainly for better maintainability.",
-          "audioSrc": "public/data/audio/dummy/dummy_169_sideB_0.mp3"
+          "text": "But testers can lose the link, and that's normal.",
+          "audioSrc": "public/data/audio/dummy/dummy_009_sideB_0.mp3"
         },
         {
-          "text": "We refactored the code primarily to improve maintainability.",
-          "audioSrc": "public/data/audio/dummy/dummy_169_sideB_1.mp3"
+          "text": "However, testers might lose the link, and that is completely normal.",
+          "audioSrc": "public/data/audio/dummy/dummy_009_sideB_1.mp3"
         },
         {
-          "text": "Mainly for better maintainability, we refactored the code.",
-          "audioSrc": "public/data/audio/dummy/dummy_169_sideB_2.mp3"
-        },
-        {
-          "text": "We refactored the code for better maintainability mainly.",
-          "audioSrc": "public/data/audio/dummy/dummy_169_sideB_3.mp3"
-        },
-        {
-          "text": "We refactored the code primarily for better maintenance.",
-          "audioSrc": "public/data/audio/dummy/dummy_169_sideB_4.mp3"
-        },
-        {
-          "text": "We refactored the code for better maintenance mainly.",
-          "audioSrc": "public/data/audio/dummy/dummy_169_sideB_5.mp3"
-        }
-      ],
-      "note": "\n\n~We refactored the code mainly for better maintaince~ is incorrect because [maintenance] or [maintainability] are the correct nouns; 'maintaince' is a misspelling."
-    },
-    {
-      "cardId": "dummy_170",
-      "cardType": "flippable",
-      "sideA": "Necesito rellenar esta caja con papel.",
-      "sideB": [
-        {
-          "text": "I need to pad this box with paper.",
-          "audioSrc": "public/data/audio/dummy/dummy_170_sideB_0.mp3"
-        },
-        {
-          "text": "I need to use paper to pad this box.",
-          "audioSrc": "public/data/audio/dummy/dummy_170_sideB_1.mp3"
-        },
-        {
-          "text": "I must pad this box with paper.",
-          "audioSrc": "public/data/audio/dummy/dummy_170_sideB_2.mp3"
+          "text": "But it's normal for testers to lose the link.",
+          "audioSrc": "public/data/audio/dummy/dummy_009_sideB_2.mp3"
         }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_171",
+      "cardId": "dummy_010",
       "cardType": "flippable",
-      "sideA": "Él quiere rellenar su currículum.",
+      "sideA": "Eso no sonó bien, jaja.",
       "sideB": [
         {
-          "text": "He wants to pad his resume.",
-          "audioSrc": "public/data/audio/dummy/dummy_171_sideB_0.mp3"
+          "text": "That didn't sound right, haha.",
+          "audioSrc": "public/data/audio/dummy/dummy_010_sideB_0.mp3"
         },
         {
-          "text": "He is looking to pad his resume.",
-          "audioSrc": "public/data/audio/dummy/dummy_171_sideB_1.mp3"
+          "text": "That didn't sound very good, haha.",
+          "audioSrc": "public/data/audio/dummy/dummy_010_sideB_1.mp3"
         },
         {
-          "text": "He wants to add some padding to his resume.",
-          "audioSrc": "public/data/audio/dummy/dummy_171_sideB_2.mp3"
+          "text": "That sounded wrong, haha.",
+          "audioSrc": "public/data/audio/dummy/dummy_010_sideB_2.mp3"
         }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_172",
+      "cardId": "dummy_011",
       "cardType": "flippable",
-      "sideA": "Rellena a la izquierda con un cero.",
+      "sideA": "Lo hice para ahorrar tiempo.",
       "sideB": [
         {
-          "text": "Pad left with a zero.",
-          "audioSrc": "public/data/audio/dummy/dummy_172_sideB_0.mp3"
+          "text": "I did it to save time.",
+          "audioSrc": "public/data/audio/dummy/dummy_011_sideB_0.mp3"
         },
         {
-          "text": "It pads left with a zero.",
-          "audioSrc": "public/data/audio/dummy/dummy_172_sideB_1.mp3"
+          "text": "I did it in order to save time.",
+          "audioSrc": "public/data/audio/dummy/dummy_011_sideB_1.mp3"
         },
         {
-          "text": "You should pad left with a zero.",
-          "audioSrc": "public/data/audio/dummy/dummy_172_sideB_2.mp3"
-        },
-        {
-          "text": "It pads to the left with a zero.",
-          "audioSrc": "public/data/audio/dummy/dummy_172_sideB_3.mp3"
+          "text": "I did that to save some time.",
+          "audioSrc": "public/data/audio/dummy/dummy_011_sideB_2.mp3"
         }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_173",
+      "cardId": "dummy_012",
       "cardType": "flippable",
-      "sideA": "Rellena a la derecha con un cero.",
+      "sideA": "Lo hice para ganar tiempo.",
       "sideB": [
         {
-          "text": "Pad right with a zero.",
-          "audioSrc": "public/data/audio/dummy/dummy_173_sideB_0.mp3"
+          "text": "I did it to buy some time.",
+          "audioSrc": "public/data/audio/dummy/dummy_012_sideB_0.mp3"
         },
         {
-          "text": "It pads right with a zero.",
-          "audioSrc": "public/data/audio/dummy/dummy_173_sideB_1.mp3"
+          "text": "I did it to buy time.",
+          "audioSrc": "public/data/audio/dummy/dummy_012_sideB_1.mp3"
         },
         {
-          "text": "You should pad right with a zero.",
-          "audioSrc": "public/data/audio/dummy/dummy_173_sideB_2.mp3"
-        },
-        {
-          "text": "It pads to the right with a zero.",
-          "audioSrc": "public/data/audio/dummy/dummy_173_sideB_3.mp3"
+          "text": "I did that to gain some time.",
+          "audioSrc": "public/data/audio/dummy/dummy_012_sideB_2.mp3"
         }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_174",
+      "cardId": "dummy_013",
       "cardType": "flippable",
-      "sideA": "Agregamos la etiqueta queries para que el popup de actualización funcione.",
+      "sideA": "Ok, necesitare hacerle un doble check a esto…",
       "sideB": [
         {
-          "text": "We added the queries tag so the update popup works.",
-          "audioSrc": "public/data/audio/dummy/dummy_174_sideB_0.mp3"
+          "text": "Ok, I'll need to double-check this...",
+          "audioSrc": "public/data/audio/dummy/dummy_013_sideB_0.mp3"
         },
         {
-          "text": "We included the queries tag to make the update popup functional.",
-          "audioSrc": "public/data/audio/dummy/dummy_174_sideB_1.mp3"
+          "text": "Alright, I will need to double-check this...",
+          "audioSrc": "public/data/audio/dummy/dummy_013_sideB_1.mp3"
         },
         {
-          "text": "We added the queries tag for the update popup to work properly.",
-          "audioSrc": "public/data/audio/dummy/dummy_174_sideB_2.mp3"
+          "text": "Ok, I'm going to have to double-check this...",
+          "audioSrc": "public/data/audio/dummy/dummy_013_sideB_2.mp3"
         }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_175",
+      "cardId": "dummy_014",
       "cardType": "flippable",
-      "sideA": "Ahora el parser de fechas soporta meses numéricos.",
+      "sideA": "Ya lo había revisado, pero deberé hacerle un doble check",
       "sideB": [
         {
-          "text": "The date parser now supports numeric months.",
-          "audioSrc": "public/data/audio/dummy/dummy_175_sideB_0.mp3"
+          "text": "I had already checked it, but I'll have to double-check.",
+          "audioSrc": "public/data/audio/dummy/dummy_014_sideB_0.mp3"
         },
         {
-          "text": "Now the date parser handles months as numbers.",
-          "audioSrc": "public/data/audio/dummy/dummy_175_sideB_1.mp3"
+          "text": "I've reviewed it already, but I should double-check it.",
+          "audioSrc": "public/data/audio/dummy/dummy_014_sideB_1.mp3"
         },
         {
-          "text": "The date parser is now compatible with numeric months.",
-          "audioSrc": "public/data/audio/dummy/dummy_175_sideB_2.mp3"
-        },
-        {
-          "text": "The date parser can now handle numeric months.",
-          "audioSrc": "public/data/audio/dummy/dummy_175_sideB_3.mp3"
+          "text": "I already reviewed it, but I will need to double-check it.",
+          "audioSrc": "public/data/audio/dummy/dummy_014_sideB_2.mp3"
         }
       ],
       "note": null
-    },
-    {
-      "cardId": "dummy_176",
-      "cardType": "flippable",
-      "sideA": "Validamos el código de respuesta del backend antes de procesar los datos.",
-      "sideB": [
-        {
-          "text": "We validate the backend response code before processing the data.",
-          "audioSrc": "public/data/audio/dummy/dummy_176_sideB_0.mp3"
-        },
-        {
-          "text": "We check the backend response code before data processing.",
-          "audioSrc": "public/data/audio/dummy/dummy_176_sideB_1.mp3"
-        },
-        {
-          "text": "We verify the response code from the backend before handling the data.",
-          "audioSrc": "public/data/audio/dummy/dummy_176_sideB_2.mp3"
-        },
-        {
-          "text": "We validate the response code from the backend before processing the data.",
-          "audioSrc": "public/data/audio/dummy/dummy_176_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_177",
-      "cardType": "flippable",
-      "sideA": "Las cantidades ahora se generan dinámicamente según el multiplicador.",
-      "sideB": [
-        {
-          "text": "Quantities are now dynamically generated based on the multiplier.",
-          "audioSrc": "public/data/audio/dummy/dummy_177_sideB_0.mp3"
-        },
-        {
-          "text": "We now generate quantities dynamically according to the multiplier.",
-          "audioSrc": "public/data/audio/dummy/dummy_177_sideB_1.mp3"
-        },
-        {
-          "text": "Quantities are generated dynamically based on the product multiplier.",
-          "audioSrc": "public/data/audio/dummy/dummy_177_sideB_2.mp3"
-        },
-        {
-          "text": "Quantities are now generated dynamically based on the multiplier.",
-          "audioSrc": "public/data/audio/dummy/dummy_177_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_178",
-      "cardType": "flippable",
-      "sideA": "Ocultamos el selector de cantidad hasta que el producto esté cargado.",
-      "sideB": [
-        {
-          "text": "We hide the quantity selector until the product is loaded.",
-          "audioSrc": "public/data/audio/dummy/dummy_178_sideB_0.mp3"
-        },
-        {
-          "text": "The quantity selector remains hidden until the product loads.",
-          "audioSrc": "public/data/audio/dummy/dummy_178_sideB_1.mp3"
-        },
-        {
-          "text": "We keep the quantity selector hidden until the product has loaded.",
-          "audioSrc": "public/data/audio/dummy/dummy_178_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_179",
-      "cardType": "flippable",
-      "sideA": "Eliminamos los endpoints que no eran llaves válidas del middleware.",
-      "sideB": [
-        {
-          "text": "We removed endpoints that weren't valid middleware keys.",
-          "audioSrc": "public/data/audio/dummy/dummy_179_sideB_0.mp3"
-        },
-        {
-          "text": "We deleted the endpoints that were not valid keys in the middleware.",
-          "audioSrc": "public/data/audio/dummy/dummy_179_sideB_1.mp3"
-        },
-        {
-          "text": "The endpoints that were not valid middleware keys have been removed.",
-          "audioSrc": "public/data/audio/dummy/dummy_179_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_180",
-      "cardType": "flippable",
-      "sideA": "Añadimos una llave única para evitar errores al cambiar de idioma.",
-      "sideB": [
-        {
-          "text": "We added a unique key to prevent errors when changing languages.",
-          "audioSrc": "public/data/audio/dummy/dummy_180_sideB_0.mp3"
-        },
-        {
-          "text": "A unique key was added to avoid issues during language transitions.",
-          "audioSrc": "public/data/audio/dummy/dummy_180_sideB_1.mp3"
-        },
-        {
-          "text": "We included a unique key to stop errors when switching languages.",
-          "audioSrc": "public/data/audio/dummy/dummy_180_sideB_2.mp3"
-        }
-      ],
-      "note": "\n\n~to prevent errors to change the language~ is invalid because the verb 'prevent' requires the structure [prevent someone/something from doing something]. Use [prevent errors from occurring] or [to prevent errors when changing]."
-    },
-    {
-      "cardId": "dummy_181",
-      "cardType": "flippable",
-      "sideA": "Cambiamos el ID de cotización por el ID de línea para mayor precisión.",
-      "sideB": [
-        {
-          "text": "We changed the Quote ID for the Line ID for better accuracy.",
-          "audioSrc": "public/data/audio/dummy/dummy_181_sideB_0.mp3"
-        },
-        {
-          "text": "We replaced the Quote ID with the Line ID for improved precision.",
-          "audioSrc": "public/data/audio/dummy/dummy_181_sideB_1.mp3"
-        },
-        {
-          "text": "The Quote ID was swapped for the Line ID to increase accuracy.",
-          "audioSrc": "public/data/audio/dummy/dummy_181_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_182",
-      "cardType": "flippable",
-      "sideA": "El controlador ahora detecta versiones forzadas desde la base de datos.",
-      "sideB": [
-        {
-          "text": "The controller now detects forced versions from the database.",
-          "audioSrc": "public/data/audio/dummy/dummy_182_sideB_0.mp3"
-        },
-        {
-          "text": "Now the controller identifies forced versions within the database.",
-          "audioSrc": "public/data/audio/dummy/dummy_182_sideB_1.mp3"
-        },
-        {
-          "text": "The controller is now able to detect forced versions from the database.",
-          "audioSrc": "public/data/audio/dummy/dummy_182_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_183",
-      "cardType": "flippable",
-      "sideA": "Los scripts de compilación ahora inyectan las URLs de actualización automáticamente.",
-      "sideB": [
-        {
-          "text": "Build scripts now inject the update URLs automatically.",
-          "audioSrc": "public/data/audio/dummy/dummy_183_sideB_0.mp3"
-        },
-        {
-          "text": "Now the build scripts automatically inject the update URLs.",
-          "audioSrc": "public/data/audio/dummy/dummy_183_sideB_1.mp3"
-        },
-        {
-          "text": "The build scripts inject the update URLs in an automated way.",
-          "audioSrc": "public/data/audio/dummy/dummy_183_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_184",
-      "cardType": "flippable",
-      "sideA": "Estandarizamos las etiquetas de pago en inglés y francés.",
-      "sideB": [
-        {
-          "text": "We standardized the payment labels in English and French.",
-          "audioSrc": "public/data/audio/dummy/dummy_184_sideB_0.mp3"
-        },
-        {
-          "text": "Payment labels were standardized across English and French.",
-          "audioSrc": "public/data/audio/dummy/dummy_184_sideB_1.mp3"
-        },
-        {
-          "text": "We made the payment labels consistent in English and French.",
-          "audioSrc": "public/data/audio/dummy/dummy_184_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_185",
-      "cardType": "flippable",
-      "sideA": "Los usuarios de Saskatchewan ahora ven el mensaje de retención correcto.",
-      "sideB": [
-        {
-          "text": "Saskatchewan users now see the correct hold message.",
-          "audioSrc": "public/data/audio/dummy/dummy_185_sideB_0.mp3"
-        },
-        {
-          "text": "Users in Saskatchewan now view the right hold message.",
-          "audioSrc": "public/data/audio/dummy/dummy_185_sideB_1.mp3"
-        },
-        {
-          "text": "Now Saskatchewan users receive the correct hold message.",
-          "audioSrc": "public/data/audio/dummy/dummy_185_sideB_2.mp3"
-        },
-        {
-          "text": "Users from Saskatchewan now see the right hold message.",
-          "audioSrc": "public/data/audio/dummy/dummy_185_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_186",
-      "cardType": "flippable",
-      "sideA": "Actualizamos el número de versión y los parámetros del upgrader.",
-      "sideB": [
-        {
-          "text": "We updated the version number and the upgrader parameters.",
-          "audioSrc": "public/data/audio/dummy/dummy_186_sideB_0.mp3"
-        },
-        {
-          "text": "The version number and upgrader parameters have been updated.",
-          "audioSrc": "public/data/audio/dummy/dummy_186_sideB_1.mp3"
-        },
-        {
-          "text": "We have updated the version number along with the upgrader parameters.",
-          "audioSrc": "public/data/audio/dummy/dummy_186_sideB_2.mp3"
-        },
-        {
-          "text": "We updated the version number and the parameters of the upgrader.",
-          "audioSrc": "public/data/audio/dummy/dummy_186_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_187",
-      "cardType": "flippable",
-      "sideA": "Refactorizamos la consulta para incluir el factor de conversión.",
-      "sideB": [
-        {
-          "text": "We refactored the query to include the conversion factor.",
-          "audioSrc": "public/data/audio/dummy/dummy_187_sideB_0.mp3"
-        },
-        {
-          "text": "The query was refactored to incorporate the conversion factor.",
-          "audioSrc": "public/data/audio/dummy/dummy_187_sideB_1.mp3"
-        },
-        {
-          "text": "We modified the query to include the conversion rate.",
-          "audioSrc": "public/data/audio/dummy/dummy_187_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_188",
-      "cardType": "flippable",
-      "sideA": "Deshabilitamos este archivo porque la lógica fue movida a LTO.",
-      "sideB": [
-        {
-          "text": "We disabled this file because the logic was moved to LTO.",
-          "audioSrc": "public/data/audio/dummy/dummy_188_sideB_0.mp3"
-        },
-        {
-          "text": "This file was disabled since the logic moved to LTO.",
-          "audioSrc": "public/data/audio/dummy/dummy_188_sideB_1.mp3"
-        },
-        {
-          "text": "We have disabled this file as the logic is now in LTO.",
-          "audioSrc": "public/data/audio/dummy/dummy_188_sideB_2.mp3"
-        }
-      ],
-      "note": "\n\n~We disableded~ is redundant because 'disabled' is already the past tense form. ~We inabled~ is not a valid word; the opposite of 'enabled' is [disabled]."
     }
   ]
 }
