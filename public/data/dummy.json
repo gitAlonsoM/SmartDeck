@@ -283,6 +283,66 @@
         }
       ],
       "note": null
+    },
+    {
+      "cardId": "dummy_015",
+      "cardType": "flippable",
+      "sideA": "Hay una necesidad de que el equipo pruebe el código antes del pase a producción.",
+      "sideB": [
+        {
+          "text": "There is a need for the team to test the code before the release.",
+          "audioSrc": "public/data/audio/dummy/dummy_015_sideB_0.mp3"
+        },
+        {
+          "text": "There's a need for the team to test the code before going to production.",
+          "audioSrc": "public/data/audio/dummy/dummy_015_sideB_1.mp3"
+        },
+        {
+          "text": "A need exists for the team to test the code before deployment.",
+          "audioSrc": "public/data/audio/dummy/dummy_015_sideB_2.mp3"
+        }
+      ],
+      "note": "**[194]**\n\n"
+    },
+    {
+      "cardId": "dummy_016",
+      "cardType": "flippable",
+      "sideA": "Es crucial que el servidor se mantenga online durante la migración.",
+      "sideB": [
+        {
+          "text": "It is crucial for the server to stay online during the migration.",
+          "audioSrc": "public/data/audio/dummy/dummy_016_sideB_0.mp3"
+        },
+        {
+          "text": "It's crucial for the server to remain online during the migration.",
+          "audioSrc": "public/data/audio/dummy/dummy_016_sideB_1.mp3"
+        },
+        {
+          "text": "It is critical for the server to keep running during the migration.",
+          "audioSrc": "public/data/audio/dummy/dummy_016_sideB_2.mp3"
+        }
+      ],
+      "note": "**[194]**\n\n"
+    },
+    {
+      "cardId": "dummy_017",
+      "cardType": "flippable",
+      "sideA": "Estamos esperando que la base de datos se sincronice.",
+      "sideB": [
+        {
+          "text": "We are waiting for the database to sync.",
+          "audioSrc": "public/data/audio/dummy/dummy_017_sideB_0.mp3"
+        },
+        {
+          "text": "We're waiting for the database to synchronize.",
+          "audioSrc": "public/data/audio/dummy/dummy_017_sideB_1.mp3"
+        },
+        {
+          "text": "We are waiting for the DB to be synced.",
+          "audioSrc": "public/data/audio/dummy/dummy_017_sideB_2.mp3"
+        }
+      ],
+      "note": "**[194]**\n\nThe verb \"wait\" is a classic trigger. We say [wait for] + [the database] + [to sync]. ~Waiting that the database syncs~ is an unnatural direct translation from Spanish."
     }
   ]
 }
