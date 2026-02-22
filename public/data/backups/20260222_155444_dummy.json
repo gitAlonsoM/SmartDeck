@@ -40,10 +40,6 @@
         {
           "text": "So, if there's 31.0.5 on the mobile and the same version on the profile, they both match.",
           "audioSrc": "public/data/audio/dummy/dummy_002_sideB_2.mp3"
-        },
-        {
-          "text": "So, if we have 31.0.5 on the phone and it's the same version in the profile, both match.",
-          "audioSrc": "public/data/audio/dummy/dummy_002_sideB_3.mp3"
         }
       ],
       "note": null
@@ -70,7 +66,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_003_sideB_3.mp3"
         }
       ],
-      "note": "~If the version is 31.0.5 in both. There is a match.~ contains a punctuation error. An [If] clause is dependent and must be connected to the main clause with a comma, not a period. Additionally, use [on both] instead of [in both] when referring to systems or devices. The correct form is: [If the version is 31.0.5 on both, there is a match.]\n\n~If the version is 31.0.5 in both, it's a match~ is incorrect because we use the preposition [on] for devices and systems, resulting in [on both]."
+      "note": "~If the version is 31.0.5 in both. There is a match.~ contains a punctuation error. An [If] clause is dependent and must be connected to the main clause with a comma, not a period. Additionally, use [on both] instead of [in both] when referring to systems or devices. The correct form is: [If the version is 31.0.5 on both, there is a match.]"
     },
     {
       "cardId": "dummy_004",
@@ -96,13 +92,9 @@
         {
           "text": "Both systems on 31.0.5 match.",
           "audioSrc": "public/data/audio/dummy/dummy_004_sideB_4.mp3"
-        },
-        {
-          "text": "Both systems on 31.0.5 are matching.",
-          "audioSrc": "public/data/audio/dummy/dummy_004_sideB_5.mp3"
         }
       ],
-      "note": "~Both systems on 31.0.5 are sincronized~ is misspelled. The correct spelling is [synchronized].\n\n~Both systems on 31.0.5 are sync~ is grammatically incorrect. You must use the preposition [in sync] or the past participle [synced]."
+      "note": null
     },
     {
       "cardId": "dummy_005",
@@ -164,14 +156,6 @@
         {
           "text": "Without a mismatch, the update popup doesn't show up.",
           "audioSrc": "public/data/audio/dummy/dummy_007_sideB_2.mp3"
-        },
-        {
-          "text": "Without a mismatch, the update popup doesn't display.",
-          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_3.mp3"
-        },
-        {
-          "text": "Without a mismatch, the update popup doesn't appear.",
-          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_4.mp3"
         }
       ],
       "note": "In English, when describing system behavior or conditional rules (if X doesn't happen, Y doesn't happen), it is equally common to use the Present Simple ([doesn't show up]) or the Future with 'will' ([won't display]). Both accurately translate the Spanish present tense in this context."
@@ -236,14 +220,6 @@
         {
           "text": "That sounded wrong, haha.",
           "audioSrc": "public/data/audio/dummy/dummy_010_sideB_2.mp3"
-        },
-        {
-          "text": "That didn't sound good, haha.",
-          "audioSrc": "public/data/audio/dummy/dummy_010_sideB_3.mp3"
-        },
-        {
-          "text": "That sounded bad, haha.",
-          "audioSrc": "public/data/audio/dummy/dummy_010_sideB_4.mp3"
         }
       ],
       "note": null
@@ -332,13 +308,9 @@
         {
           "text": "I checked it already, but I'll have to double-check.",
           "audioSrc": "public/data/audio/dummy/dummy_014_sideB_3.mp3"
-        },
-        {
-          "text": "I already checked it, but I'll have to double-check.",
-          "audioSrc": "public/data/audio/dummy/dummy_014_sideB_4.mp3"
         }
       ],
-      "note": "**[7]**"
+      "note": null
     },
     {
       "cardId": "dummy_015",
@@ -358,7 +330,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_015_sideB_2.mp3"
         }
       ],
-      "note": "**[194]**\n\n~There's a need for the team to test the code before going on to production~ and ~There's a need for the team to test the code before going on production~ use incorrect prepositions. The standard industry phrasing is [going to production] or [moving to production]."
+      "note": "**[194]**\n\n"
     },
     {
       "cardId": "dummy_016",
@@ -378,7 +350,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_016_sideB_2.mp3"
         }
       ],
-      "note": "**[194]**\n\n~It is crucial for the server to stay online itself during the migration~ is unnatural. The reflexive pronoun [itself] is redundant here because [stay online] already implies the server's own state."
+      "note": "**[194]**\n\n"
     },
     {
       "cardId": "dummy_017",
@@ -398,7 +370,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_017_sideB_2.mp3"
         }
       ],
-      "note": "**[194]**\n\nThe verb \"wait\" is a classic trigger. We say [wait for] + [the database] + [to sync]. ~Waiting that the database syncs~ is an unnatural direct translation from Spanish.\n\n~We're waiting for the database gets synchronized~ is incorrect because after the structure [wait for] + [object], you must use the infinitive form with [to], not a conjugated verb."
+      "note": "**[194]**\n\nThe verb \"wait\" is a classic trigger. We say [wait for] + [the database] + [to sync]. ~Waiting that the database syncs~ is an unnatural direct translation from Spanish."
     }
   ]
 }
