@@ -60,13 +60,9 @@
         {
           "text": "If both have version 31.0.5, there is a match.",
           "audioSrc": "public/data/audio/dummy/dummy_003_sideB_2.mp3"
-        },
-        {
-          "text": "If the version is 31.0.5 on both, there is a match.",
-          "audioSrc": "public/data/audio/dummy/dummy_003_sideB_3.mp3"
         }
       ],
-      "note": "~If the version is 31.0.5 in both. There is a match.~ contains a punctuation error. An [If] clause is dependent and must be connected to the main clause with a comma, not a period. Additionally, use [on both] instead of [in both] when referring to systems or devices. The correct form is: [If the version is 31.0.5 on both, there is a match.]"
+      "note": null
     },
     {
       "cardId": "dummy_004",
@@ -84,14 +80,6 @@
         {
           "text": "Both systems running 31.0.5 are in sync.",
           "audioSrc": "public/data/audio/dummy/dummy_004_sideB_2.mp3"
-        },
-        {
-          "text": "Both systems on 31.0.5 are synchronized.",
-          "audioSrc": "public/data/audio/dummy/dummy_004_sideB_3.mp3"
-        },
-        {
-          "text": "Both systems on 31.0.5 match.",
-          "audioSrc": "public/data/audio/dummy/dummy_004_sideB_4.mp3"
         }
       ],
       "note": null
@@ -114,7 +102,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_005_sideB_2.mp3"
         }
       ],
-      "note": "**[194]**\n\n~We need a mismatch for the popup to appears~ and ~We need a mismatch to the popup appear~ are incorrect. The structure used here is [for + Object + to + Base Verb]. The word [to] indicates an infinitive verb. Infinitive verbs never take an [-s] ending, regardless of whether the noun preceding them is singular or third person."
+      "note": null
     },
     {
       "cardId": "dummy_006",
@@ -132,10 +120,6 @@
         {
           "text": "The popup will only be triggered if a mismatch occurs.",
           "audioSrc": "public/data/audio/dummy/dummy_006_sideB_2.mp3"
-        },
-        {
-          "text": "The popup only gets triggered if there is a mismatch.",
-          "audioSrc": "public/data/audio/dummy/dummy_006_sideB_3.mp3"
         }
       ],
       "note": null
@@ -158,7 +142,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_007_sideB_2.mp3"
         }
       ],
-      "note": "In English, when describing system behavior or conditional rules (if X doesn't happen, Y doesn't happen), it is equally common to use the Present Simple ([doesn't show up]) or the Future with 'will' ([won't display]). Both accurately translate the Spanish present tense in this context."
+      "note": null
     },
     {
       "cardId": "dummy_008",
@@ -196,10 +180,6 @@
         {
           "text": "But it's normal for testers to lose the link.",
           "audioSrc": "public/data/audio/dummy/dummy_009_sideB_2.mp3"
-        },
-        {
-          "text": "But testers can lose the link, and it's normal.",
-          "audioSrc": "public/data/audio/dummy/dummy_009_sideB_3.mp3"
         }
       ],
       "note": null
@@ -242,7 +222,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_011_sideB_2.mp3"
         }
       ],
-      "note": "~I did it to buy some time~ changes the meaning. [Buy time] means 'ganar tiempo' (to delay an event or stall). To express 'ahorrar tiempo' (to be more efficient), you must use [save time]."
+      "note": null
     },
     {
       "cardId": "dummy_012",
@@ -262,7 +242,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_012_sideB_2.mp3"
         }
       ],
-      "note": "~I did it to save some time~ changes the meaning. [Save time] means 'ahorrar tiempo' (doing something faster), while [buy time] or [gain time] means 'ganar tiempo' (delaying an event to get more time to prepare)."
+      "note": null
     },
     {
       "cardId": "dummy_013",
@@ -280,10 +260,6 @@
         {
           "text": "Ok, I'm going to have to double-check this...",
           "audioSrc": "public/data/audio/dummy/dummy_013_sideB_2.mp3"
-        },
-        {
-          "text": "Ok, I'm gonna need to double-check this...",
-          "audioSrc": "public/data/audio/dummy/dummy_013_sideB_3.mp3"
         }
       ],
       "note": null
@@ -304,10 +280,6 @@
         {
           "text": "I already reviewed it, but I will need to double-check it.",
           "audioSrc": "public/data/audio/dummy/dummy_014_sideB_2.mp3"
-        },
-        {
-          "text": "I checked it already, but I'll have to double-check.",
-          "audioSrc": "public/data/audio/dummy/dummy_014_sideB_3.mp3"
         }
       ],
       "note": null
