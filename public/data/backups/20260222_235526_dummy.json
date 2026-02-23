@@ -102,7 +102,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_004_sideB_5.mp3"
         }
       ],
-      "note": "**[195]**\n\n~Both systems on 31.0.5 are sincronized~ is misspelled. The correct spelling is [synchronized].\n\n~Both systems on 31.0.5 are sync~ is grammatically incorrect. You must use the preposition [in sync] or the past participle [synced].\n\n~Both systems in 31.0.5 are synchronized~ is incorrect because we use the preposition [on] when referring to software versions, platforms, or operating systems."
+      "note": "~Both systems on 31.0.5 are sincronized~ is misspelled. The correct spelling is [synchronized].\n\n~Both systems on 31.0.5 are sync~ is grammatically incorrect. You must use the preposition [in sync] or the past participle [synced]."
     },
     {
       "cardId": "dummy_005",
@@ -356,10 +356,6 @@
         {
           "text": "A need exists for the team to test the code before deployment.",
           "audioSrc": "public/data/audio/dummy/dummy_015_sideB_2.mp3"
-        },
-        {
-          "text": "There is a need for the team to test the code before releasing.",
-          "audioSrc": "public/data/audio/dummy/dummy_015_sideB_3.mp3"
         }
       ],
       "note": "**[194]**\n\n~There's a need for the team to test the code before going on to production~ and ~There's a need for the team to test the code before going on production~ use incorrect prepositions. The standard industry phrasing is [going to production] or [moving to production]."
@@ -400,10 +396,6 @@
         {
           "text": "We are waiting for the DB to be synced.",
           "audioSrc": "public/data/audio/dummy/dummy_017_sideB_2.mp3"
-        },
-        {
-          "text": "We're waiting for the database to get synchronized.",
-          "audioSrc": "public/data/audio/dummy/dummy_017_sideB_3.mp3"
         }
       ],
       "note": "**[194]**\n\nThe verb \"wait\" is a classic trigger. We say [wait for] + [the database] + [to sync]. ~Waiting that the database syncs~ is an unnatural direct translation from Spanish.\n\n~We're waiting for the database gets synchronized~ is incorrect because after the structure [wait for] + [object], you must use the infinitive form with [to], not a conjugated verb."
