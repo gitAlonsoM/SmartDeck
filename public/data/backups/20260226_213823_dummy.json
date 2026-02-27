@@ -126,7 +126,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_005_sideB_3.mp3"
         }
       ],
-      "note": "**[194]**\n\n~We need a mismatch for the popup to appears~ and ~We need a mismatch to the popup appear~ are incorrect. The structure used here is [for + Object + to + Base Verb]. The word [to] indicates an infinitive verb. Infinitive verbs never take an [-s] ending, regardless of whether the noun preceding them is singular or third person.\n\n[We need a mismatch for the popup to get displayed] is valid. The 'get-passive' is a natural alternative to 'be displayed'."
+      "note": "**[194]**\n\n~We need a mismatch for the popup to appears~ and ~We need a mismatch to the popup appear~ are incorrect. The structure used here is [for + Object + to + Base Verb]. The word [to] indicates an infinitive verb. Infinitive verbs never take an [-s] ending, regardless of whether the noun preceding them is singular or third person."
     },
     {
       "cardId": "dummy_006",
@@ -182,7 +182,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_007_sideB_5.mp3"
         }
       ],
-      "note": "In English, when describing system behavior or conditional rules (if X doesn't happen, Y doesn't happen), it is equally common to use the Present Simple ([doesn't show up]) or the Future with 'will' ([won't display]). Both accurately translate the Spanish present tense in this context.\n\n~Without a mismatch, the update popup doesn't get appeared~ is incorrect because the verb [appear] is intransitive and cannot be used in a passive or 'get-passive' structure. The correct form is simply [doesn't appear].\n\n[Without a mismatch, the update popup doesn't get displayed] is a valid passive construction, though [doesn't display] is more direct."
+      "note": "In English, when describing system behavior or conditional rules (if X doesn't happen, Y doesn't happen), it is equally common to use the Present Simple ([doesn't show up]) or the Future with 'will' ([won't display]). Both accurately translate the Spanish present tense in this context.\n\n~Without a mismatch, the update popup doesn't get appeared~ is incorrect because the verb [appear] is intransitive and cannot be used in a passive or 'get-passive' structure. The correct form is simply [doesn't appear]."
     },
     {
       "cardId": "dummy_008",
@@ -350,7 +350,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_014_sideB_5.mp3"
         }
       ],
-      "note": "**[7]**\n\n[I already checked it, but I'll have to double-check it] is completely valid. Using the Past Simple with 'already' is very common and natural in conversational American English, even though the Past Perfect is technically more precise."
+      "note": "**[7]**"
     },
     {
       "cardId": "dummy_015",
@@ -438,7 +438,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_018_sideB_2.mp3"
         }
       ],
-      "note": "~Which is the port you are listening on?~ is structurally clunky and unnatural. The standard phrasing attaches the question word directly to the noun: [Which port are you listening on?]."
+      "note": null
     },
     {
       "cardId": "dummy_019",
@@ -458,7 +458,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_019_sideB_2.mp3"
         }
       ],
-      "note": "~Which is the port I should listen on?~ is structurally clunky and unnatural. It is much more direct and standard to attach the question word directly to the noun: [Which port should I listen on?]."
+      "note": null
     },
     {
       "cardId": "dummy_020",
@@ -478,7 +478,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_020_sideB_2.mp3"
         }
       ],
-      "note": "~I am listening the ports 8000 and 5500~ is incorrect. You must use the preposition [on] when referring to listening to network ports.\n\n~I am listening on the ports 8000 and 5500~ and ~I am listening on the 8000 and 5500 ports~ are unnatural. When listing specific identifying numbers, drop the article [the]. The standard phrasing is [on ports 8000 and 5500]."
+      "note": null
     },
     {
       "cardId": "dummy_021",
@@ -498,7 +498,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_021_sideB_2.mp3"
         }
       ],
-      "note": "~I am listening on 8000 port~ is incorrect. In English, when a noun is followed by an identifying number, the noun comes first (e.g., [port 8000], [room 5]).\n\n~I am listening the port 8000~ is incorrect because the verb 'listen' in this technical context requires the preposition [on] to indicate the channel or interface.\n\n~I am listening on the port 8000~ is unnatural. When using a noun + number combination as an identifier, do not use the article [the]. The correct phrasing is [on port 8000]."
+      "note": null
     },
     {
       "cardId": "dummy_022",
