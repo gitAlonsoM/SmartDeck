@@ -739,6 +739,66 @@
         }
       ],
       "note": null
+    },
+    {
+      "cardId": "dummy_034",
+      "cardType": "flippable",
+      "sideA": "El error está en la línea 45.",
+      "sideB": [
+        {
+          "text": "The error is on line 45.",
+          "audioSrc": "public/data/audio/dummy/dummy_034_sideB_0.mp3"
+        },
+        {
+          "text": "There's an error on line 45.",
+          "audioSrc": "public/data/audio/dummy/dummy_034_sideB_1.mp3"
+        },
+        {
+          "text": "We have an error on line 45.",
+          "audioSrc": "public/data/audio/dummy/dummy_034_sideB_2.mp3"
+        }
+      ],
+      "note": "**[196]**\n\n~The error is on the line 45~ and ~The error is on 45 line~ are incorrect. You must use [line 45]."
+    },
+    {
+      "cardId": "dummy_035",
+      "cardType": "flippable",
+      "sideA": "Por favor, conéctate al servidor 2.",
+      "sideB": [
+        {
+          "text": "Please connect to server 2.",
+          "audioSrc": "public/data/audio/dummy/dummy_035_sideB_0.mp3"
+        },
+        {
+          "text": "Please log in to server 2.",
+          "audioSrc": "public/data/audio/dummy/dummy_035_sideB_1.mp3"
+        },
+        {
+          "text": "Make sure to connect to server 2.",
+          "audioSrc": "public/data/audio/dummy/dummy_035_sideB_2.mp3"
+        }
+      ],
+      "note": "**[196]**\n\n~Connect to the server 2~ is incorrect. Drop the article 'the' and place the noun before the number: [server 2]."
+    },
+    {
+      "cardId": "dummy_036",
+      "cardType": "flippable",
+      "sideA": "Estamos usando la versión 17 de React.",
+      "sideB": [
+        {
+          "text": "We are using React version 17.",
+          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_0.mp3"
+        },
+        {
+          "text": "We're using version 17 of React.",
+          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_1.mp3"
+        },
+        {
+          "text": "We are running React version 17.",
+          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_2.mp3"
+        }
+      ],
+      "note": "**[196]**\n\n~We are using the version 17~ is incorrect. You must say [version 17] without the article."
     }
   ]
 }
