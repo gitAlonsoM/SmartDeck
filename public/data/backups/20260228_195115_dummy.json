@@ -292,10 +292,6 @@
         {
           "text": "I did that to gain some time.",
           "audioSrc": "public/data/audio/dummy/dummy_012_sideB_2.mp3"
-        },
-        {
-          "text": "I did it to gain some time.",
-          "audioSrc": "public/data/audio/dummy/dummy_012_sideB_3.mp3"
         }
       ],
       "note": "~I did it to save some time~ changes the meaning. [Save time] means 'ahorrar tiempo' (doing something faster), while [buy time] or [gain time] means 'ganar tiempo' (delaying an event to get more time to prepare)."
@@ -442,7 +438,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_018_sideB_2.mp3"
         }
       ],
-      "note": "**[198]**\n\n~Which is the port you are listening on?~ is structurally clunky and unnatural. The standard phrasing attaches the question word directly to the noun: [Which port are you listening on?].\n\nIt is not a strict grammar error, but it forces an unnecessary separation. The core rule for natural questions is to establish the specific subject of inquiry immediately by pairing the Question Word and the Noun: [Which port] + [Auxiliary] + [Subject] + [Verb]."
+      "note": "~Which is the port you are listening on?~ is structurally clunky and unnatural. The standard phrasing attaches the question word directly to the noun: [Which port are you listening on?].\n\nIt is not a strict grammar error, but it forces an unnecessary separation. The core rule for natural questions is to establish the specific subject of inquiry immediately by pairing the Question Word and the Noun: [Which port] + [Auxiliary] + [Subject] + [Verb]."
     },
     {
       "cardId": "dummy_019",
@@ -460,13 +456,9 @@
         {
           "text": "On which port should I listen?",
           "audioSrc": "public/data/audio/dummy/dummy_019_sideB_2.mp3"
-        },
-        {
-          "text": "Which port do I have to listen on?",
-          "audioSrc": "public/data/audio/dummy/dummy_019_sideB_3.mp3"
         }
       ],
-      "note": "**[198]**\n\n~Which is the port I should listen on?~ is structurally clunky and unnatural. It is much more direct and standard to attach the question word directly to the noun: [Which port should I listen on?].\n\nWhile ~Which is the port I should listen on?~ is technically grammatical (it forms a relative clause: 'the port [that] I should listen on'), it is highly inefficient for conversation. The rule for natural phrasing is to group the target noun immediately with the question word: [Which port] + [Auxiliary] + [Subject] + [Verb]."
+      "note": "~Which is the port I should listen on?~ is structurally clunky and unnatural. It is much more direct and standard to attach the question word directly to the noun: [Which port should I listen on?].\n\nWhile ~Which is the port I should listen on?~ is technically grammatical (it forms a relative clause: 'the port [that] I should listen on'), it is highly inefficient for conversation. The rule for natural phrasing is to group the target noun immediately with the question word: [Which port] + [Auxiliary] + [Subject] + [Verb]."
     },
     {
       "cardId": "dummy_020",
@@ -526,7 +518,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_022_sideB_2.mp3"
         }
       ],
-      "note": "**[196]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_023",
@@ -546,7 +538,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_023_sideB_2.mp3"
         }
       ],
-      "note": "**[196]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_024",
@@ -584,21 +576,9 @@
         {
           "text": "I'll stay tuned.",
           "audioSrc": "public/data/audio/dummy/dummy_025_sideB_2.mp3"
-        },
-        {
-          "text": "I'll pay attention.",
-          "audioSrc": "public/data/audio/dummy/dummy_025_sideB_3.mp3"
-        },
-        {
-          "text": "I'll watch out for it.",
-          "audioSrc": "public/data/audio/dummy/dummy_025_sideB_4.mp3"
-        },
-        {
-          "text": "I'll be ready.",
-          "audioSrc": "public/data/audio/dummy/dummy_025_sideB_5.mp3"
         }
       ],
-      "note": "~I'll be aware~ translates more to 'Estaré consciente' (having knowledge of a fact), rather than actively watching for an event. To express active anticipation, use phrases like [keep an eye out] or [watch for it]."
+      "note": null
     },
     {
       "cardId": "dummy_026",
@@ -658,7 +638,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_028_sideB_2.mp3"
         }
       ],
-      "note": "~It finishes in 063~ is unnatural because 'finish' is typically used for completing tasks or events, not for the sequence of characters. Use [ends in] or [ends with].\n\n~It ends on 063~ is incorrect because we use 'in' or 'with' for the final characters of a string. Use [ends in 063]."
+      "note": null
     },
     {
       "cardId": "dummy_029",
@@ -678,7 +658,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_029_sideB_2.mp3"
         }
       ],
-      "note": "~The ID item ends in 542~ is incorrect because in compound nouns, the specific identifier comes last. You must say [item ID].\n\n~The item ID finishes in 542~ is unnatural. For sequences of numbers or characters, we use the verb [ends], not 'finishes'."
+      "note": null
     },
     {
       "cardId": "dummy_030",
@@ -738,7 +718,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_032_sideB_2.mp3"
         }
       ],
-      "note": "~How long does the tower grow?~ is incorrect for height or amount. 'How long' asks about time duration or horizontal length. To ask about a vertical increase or quantity, use [How much does...]."
+      "note": null
     },
     {
       "cardId": "dummy_033",
@@ -758,7 +738,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_033_sideB_2.mp3"
         }
       ],
-      "note": "~How much does the proyect grow?~ has a spelling error ('project', not 'proyect') and uses the Present Simple tense. Since the original phrase asks about a past action with relevance to the present ('ha crecido'), you must use the Present Perfect: [How much has the project grown?]."
+      "note": null
     },
     {
       "cardId": "dummy_034",
@@ -778,7 +758,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_034_sideB_2.mp3"
         }
       ],
-      "note": "**[196]**\n\n~The error is on the line 45~ and ~The error is on 45 line~ are incorrect. You must use [line 45].\n\n~The error is in line 45~ is incorrect because we use the preposition 'on' for lines of text or code. You must use [on line 45]."
+      "note": "**[196]**\n\n~The error is on the line 45~ and ~The error is on 45 line~ are incorrect. You must use [line 45]."
     },
     {
       "cardId": "dummy_035",
@@ -818,127 +798,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_036_sideB_2.mp3"
         }
       ],
-      "note": "**[196]**\n\n~We are using the version 17~ is incorrect. You must say [version 17] without the article.\n\n~We are using version React 17~ has the wrong word order. The correct phrasing is [React version 17] or [version 17 of React]."
-    },
-    {
-    "cardId": "dummy_037",
-    "cardType": "flippable",
-    "sideA": "Te aconsejo que actualices la base de datos.",
-    "sideB": [
-      {
-        "text": "I advise you to update the database.",
-        "audioSrc": "public/data/audio/dummy/dummy_037_sideB_0.mp3"
-      },
-      {
-        "text": "My advice is to update the database.",
-        "audioSrc": "public/data/audio/dummy/dummy_037_sideB_1.mp3"
-      },
-      {
-        "text": "I would advise updating the database.",
-        "audioSrc": "public/data/audio/dummy/dummy_037_sideB_2.mp3"
-      }
-    ],
-    "note": "**[197]**\n\nBe careful not to confuse the verb [advise] with the noun [advice]. Use ~I advice you~ is a very common grammatical spelling error."
-  },
-  {
-    "cardId": "dummy_038",
-    "cardType": "flippable",
-    "sideA": "Ten cuidado de no perder la contraseña de administrador.",
-    "sideB": [
-      {
-        "text": "Be careful not to lose the admin password.",
-        "audioSrc": "public/data/audio/dummy/dummy_038_sideB_0.mp3"
-      },
-      {
-        "text": "Make sure you don't lose the admin password.",
-        "audioSrc": "public/data/audio/dummy/dummy_038_sideB_1.mp3"
-      },
-      {
-        "text": "Take care not to lose the admin password.",
-        "audioSrc": "public/data/audio/dummy/dummy_038_sideB_2.mp3"
-      }
-    ],
-    "note": "**[197]**\n\nDo not confuse the verb [lose] (to misplace something) with the adjective ~loose~ (when something is not tight, like a cable)."
-  },
-  {
-    "cardId": "dummy_039",
-    "cardType": "flippable",
-    "sideA": "Todos los servidores están funcionando, excepto el de pruebas.",
-    "sideB": [
-      {
-        "text": "All servers are running, except the staging one.",
-        "audioSrc": "public/data/audio/dummy/dummy_039_sideB_0.mp3"
-      },
-      {
-        "text": "Every server is up except the staging server.",
-        "audioSrc": "public/data/audio/dummy/dummy_039_sideB_1.mp3"
-      },
-      {
-        "text": "All servers are online, except for staging.",
-        "audioSrc": "public/data/audio/dummy/dummy_039_sideB_2.mp3"
-      }
-    ],
-    "note": "**[197]**\n\nRemember that [except] is used for exclusion, while ~accept~ is the verb meaning to receive or agree to something."
-  },
-  {
-    "cardId": "dummy_040",
-    "cardType": "flippable",
-    "sideA": "¿Cuál es el proyecto en el que estás trabajando?",
-    "sideB": [
-      {
-        "text": "Which project are you working on?",
-        "audioSrc": "public/data/audio/dummy/dummy_040_sideB_0.mp3"
-      },
-      {
-        "text": "What project are you working on?",
-        "audioSrc": "public/data/audio/dummy/dummy_040_sideB_1.mp3"
-      },
-      {
-        "text": "Which project are you currently on?",
-        "audioSrc": "public/data/audio/dummy/dummy_040_sideB_2.mp3"
-      }
-    ],
-    "note": "**[198]**\n\n~Which is the project you are working on?~ is unnatural and clunky. The standard phrasing is to attach the question word directly to the noun: [Which project are you working on?]."
-  },
-  {
-    "cardId": "dummy_041",
-    "cardType": "flippable",
-    "sideA": "¿Cuál es la rama a la que hiciste push?",
-    "sideB": [
-      {
-        "text": "Which branch did you push to?",
-        "audioSrc": "public/data/audio/dummy/dummy_041_sideB_0.mp3"
-      },
-      {
-        "text": "What branch did you push to?",
-        "audioSrc": "public/data/audio/dummy/dummy_041_sideB_1.mp3"
-      },
-      {
-        "text": "Which branch did you commit to?",
-        "audioSrc": "public/data/audio/dummy/dummy_041_sideB_2.mp3"
-      }
-    ],
-    "note": "**[198]**\n\n~What is the branch you pushed to?~ forces an unnecessary relative clause. Always modify the noun directly to sound fluent: [Which branch did you push to?]."
-  },
-  {
-    "cardId": "dummy_042",
-    "cardType": "flippable",
-    "sideA": "¿Cuál es el error que estás mirando?",
-    "sideB": [
-      {
-        "text": "What error are you looking at?",
-        "audioSrc": "public/data/audio/dummy/dummy_042_sideB_0.mp3"
-      },
-      {
-        "text": "Which error are you looking at?",
-        "audioSrc": "public/data/audio/dummy/dummy_042_sideB_1.mp3"
-      },
-      {
-        "text": "What error are you currently checking?",
-        "audioSrc": "public/data/audio/dummy/dummy_042_sideB_2.mp3"
-      }
-    ],
-    "note": "**[198]**\n\n~What is the error you are looking at?~ sounds like a literal translation from Spanish. The natural way is [What error are you looking at?]."
-  }
+      "note": "**[196]**\n\n~We are using the version 17~ is incorrect. You must say [version 17] without the article."
+    }
   ]
 }
