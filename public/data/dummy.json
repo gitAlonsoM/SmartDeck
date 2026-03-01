@@ -955,6 +955,146 @@
         }
       ],
       "note": "**[198]**\n\n~What is the error you are looking at?~ sounds like a literal translation from Spanish. The natural way is [What error are you looking at?]."
-    }
+    },
+    {
+    "cardId": "dummy_043",
+    "cardType": "flippable",
+    "sideA": "Sorry, puedes refrasearlo?",
+    "sideB": [
+      {
+        "text": "Sorry, can you rephrase that?",
+        "audioSrc": "public/data/audio/dummy/dummy_043_sideB_0.mp3"
+      },
+      {
+        "text": "Sorry, could you rephrase that?",
+        "audioSrc": "public/data/audio/dummy/dummy_043_sideB_1.mp3"
+      },
+      {
+        "text": "Sorry, can you word that differently?",
+        "audioSrc": "public/data/audio/dummy/dummy_043_sideB_2.mp3"
+      }
+    ],
+    "note": null
+  },
+  {
+    "cardId": "dummy_044",
+    "cardType": "flippable",
+    "sideA": "Sorry, puedes repetirlo?",
+    "sideB": [
+      {
+        "text": "Sorry, can you repeat that?",
+        "audioSrc": "public/data/audio/dummy/dummy_044_sideB_0.mp3"
+      },
+      {
+        "text": "Sorry, could you repeat that?",
+        "audioSrc": "public/data/audio/dummy/dummy_044_sideB_1.mp3"
+      },
+      {
+        "text": "Sorry, can you say that again?",
+        "audioSrc": "public/data/audio/dummy/dummy_044_sideB_2.mp3"
+      }
+    ],
+    "note": null
+  },
+  {
+    "cardId": "dummy_045",
+    "cardType": "flippable",
+    "sideA": "Sorry, no escuche bien.",
+    "sideB": [
+      {
+        "text": "Sorry, I didn't catch that.",
+        "audioSrc": "public/data/audio/dummy/dummy_045_sideB_0.mp3"
+      },
+      {
+        "text": "Sorry, I didn't quite catch that.",
+        "audioSrc": "public/data/audio/dummy/dummy_045_sideB_1.mp3"
+      },
+      {
+        "text": "Sorry, I didn't hear that well.",
+        "audioSrc": "public/data/audio/dummy/dummy_045_sideB_2.mp3"
+      }
+    ],
+    "note": null
+  },
+  {
+    "cardId": "dummy_046",
+    "cardType": "flippable",
+    "sideA": "Sí, estaré atento al email.",
+    "sideB": [
+      {
+        "text": "Yes, I'll keep an eye out for the email.",
+        "audioSrc": "public/data/audio/dummy/dummy_046_sideB_0.mp3"
+      },
+      {
+        "text": "Yes, I'll be on the lookout for the email.",
+        "audioSrc": "public/data/audio/dummy/dummy_046_sideB_1.mp3"
+      },
+      {
+        "text": "Yes, I'll watch out for the email.",
+        "audioSrc": "public/data/audio/dummy/dummy_046_sideB_2.mp3"
+      }
+    ],
+    "note": null
+  },
+  {
+    "cardId": "dummy_047",
+    "cardType": "flippable",
+    "sideA": "Sí, estaré atento en la hoja de trabajo.",
+    "sideB": [
+      {
+        "text": "Yes, I'll keep an eye out on the spreadsheet.",
+        "audioSrc": "public/data/audio/dummy/dummy_047_sideB_0.mp3"
+      },
+      {
+        "text": "Yes, I'll be on the lookout in the spreadsheet.",
+        "audioSrc": "public/data/audio/dummy/dummy_047_sideB_1.mp3"
+      },
+      {
+        "text": "Yes, I'll watch for it in the spreadsheet.",
+        "audioSrc": "public/data/audio/dummy/dummy_047_sideB_2.mp3"
+      }
+    ],
+    "note": null
+  },
+  {
+    "cardId": "dummy_048",
+    "cardType": "flippable",
+    "sideA": "El item comienza con 067.",
+    "sideB": [
+      {
+        "text": "The item starts with 067.",
+        "audioSrc": "public/data/audio/dummy/dummy_048_sideB_0.mp3"
+      },
+      {
+        "text": "The item begins with 067.",
+        "audioSrc": "public/data/audio/dummy/dummy_048_sideB_1.mp3"
+      },
+      {
+        "text": "The first digits of the item are 067.",
+        "audioSrc": "public/data/audio/dummy/dummy_048_sideB_2.mp3"
+      }
+    ],
+    "note": null
+  },
+  {
+    "cardId": "dummy_049",
+    "cardType": "flippable",
+    "sideA": "La dirección de la página comienza en 894.",
+    "sideB": [
+      {
+        "text": "The page address starts with 894.",
+        "audioSrc": "public/data/audio/dummy/dummy_049_sideB_0.mp3"
+      },
+      {
+        "text": "The URL begins with 894.",
+        "audioSrc": "public/data/audio/dummy/dummy_049_sideB_1.mp3"
+      },
+      {
+        "text": "The address of the page starts with 894.",
+        "audioSrc": "public/data/audio/dummy/dummy_049_sideB_2.mp3"
+      }
+    ],
+    "note": null
+  }
   ]
 }
