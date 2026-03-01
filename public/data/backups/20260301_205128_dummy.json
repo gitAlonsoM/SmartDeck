@@ -352,10 +352,6 @@
         {
           "text": "I already checked it, but I'll have to double-check it.",
           "audioSrc": "public/data/audio/dummy/dummy_014_sideB_5.mp3"
-        },
-        {
-          "text": "I had already checked it, but I'll have to double-check it.",
-          "audioSrc": "public/data/audio/dummy/dummy_014_sideB_6.mp3"
         }
       ],
       "note": "**[7]**\n\n[I already checked it, but I'll have to double-check it] is completely valid. Using the Past Simple with 'already' is very common and natural in conversational American English, even though the Past Perfect is technically more precise."
@@ -608,13 +604,9 @@
         {
           "text": "I'll be ready.",
           "audioSrc": "public/data/audio/dummy/dummy_025_sideB_5.mp3"
-        },
-        {
-          "text": "I'll watch out.",
-          "audioSrc": "public/data/audio/dummy/dummy_025_sideB_6.mp3"
         }
       ],
-      "note": "~I'll be aware~ translates more to 'Estaré consciente' (having knowledge of a fact), rather than actively watching for an event. To express active anticipation, use phrases like [keep an eye out] or [watch for it].\n\n[Keep an eye out] is a fixed idiom. You cannot substitute the verb and say ~have an eye out~."
+      "note": "~I'll be aware~ translates more to 'Estaré consciente' (having knowledge of a fact), rather than actively watching for an event. To express active anticipation, use phrases like [keep an eye out] or [watch for it]."
     },
     {
       "cardId": "dummy_026",
@@ -694,7 +686,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_029_sideB_2.mp3"
         }
       ],
-      "note": "**[87]**\n\n~The ID item ends in 542~ is incorrect because in compound nouns, the specific identifier comes last. You must say [item ID].\n\n~The item ID finishes in 542~ is unnatural. For sequences of numbers or characters, we use the verb [ends], not 'finishes'."
+      "note": "~The ID item ends in 542~ is incorrect because in compound nouns, the specific identifier comes last. You must say [item ID].\n\n~The item ID finishes in 542~ is unnatural. For sequences of numbers or characters, we use the verb [ends], not 'finishes'."
     },
     {
       "cardId": "dummy_030",
@@ -754,7 +746,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_032_sideB_2.mp3"
         }
       ],
-      "note": "~How long does the tower grow?~ is incorrect for height or amount. 'How long' asks about time duration or horizontal length. To ask about a vertical increase or quantity, use [How much does...].\n\n~How does the tower grow?~ translates to '¿Cómo crece la torre?', asking for the method or process, not the amount. To ask 'cuánto', you must use [How much]."
+      "note": "~How long does the tower grow?~ is incorrect for height or amount. 'How long' asks about time duration or horizontal length. To ask about a vertical increase or quantity, use [How much does...]."
     },
     {
       "cardId": "dummy_033",
@@ -900,10 +892,6 @@
         {
           "text": "All servers are running, except the test one.",
           "audioSrc": "public/data/audio/dummy/dummy_039_sideB_3.mp3"
-        },
-        {
-          "text": "All servers are working, except for the test one.",
-          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_4.mp3"
         }
       ],
       "note": "**[197]**\n\nRemember that [except] is used for exclusion, while ~accept~ is the verb meaning to receive or agree to something.\n\n~All servers are working on, except the staging one~ uses the wrong phrasal verb. Servers can be [working] or [running], but \"working on\" requires a person actively doing a task."
@@ -984,10 +972,6 @@
         {
           "text": "Sorry, can you word that differently?",
           "audioSrc": "public/data/audio/dummy/dummy_043_sideB_2.mp3"
-        },
-        {
-          "text": "Sorry, can you rephrase it?",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_3.mp3"
         }
       ],
       "note": null
@@ -1008,10 +992,6 @@
         {
           "text": "Sorry, can you say that again?",
           "audioSrc": "public/data/audio/dummy/dummy_044_sideB_2.mp3"
-        },
-        {
-          "text": "Sorry, can you repeat it?",
-          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_3.mp3"
         }
       ],
       "note": null
@@ -1032,18 +1012,6 @@
         {
           "text": "Sorry, I didn't hear that well.",
           "audioSrc": "public/data/audio/dummy/dummy_045_sideB_2.mp3"
-        },
-        {
-          "text": "Sorry, I didn't catch it.",
-          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_3.mp3"
-        },
-        {
-          "text": "Sorry, I didn't hear you well.",
-          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_4.mp3"
-        },
-        {
-          "text": "Sorry, I didn't hear well.",
-          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_5.mp3"
         }
       ],
       "note": null
@@ -1066,7 +1034,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_046_sideB_2.mp3"
         }
       ],
-      "note": "~Yes, I'll have an eye out for the email~ is incorrect. The standard idiom uses the verb [keep], as in [keep an eye out].\n\n~Yes, I'll keep an eye for the email~ is incorrect because it is missing the particle [out]. The complete phrasal verb is [keep an eye out for].\n\n~Yes, I'll keep an eye out on the email~ mixes two different idioms. You use [keep an eye out for] when waiting for something to arrive, and [keep an eye on] when monitoring something that is already there."
+      "note": null
     },
     {
       "cardId": "dummy_047",
@@ -1084,13 +1052,9 @@
         {
           "text": "Yes, I'll watch for it in the spreadsheet.",
           "audioSrc": "public/data/audio/dummy/dummy_047_sideB_2.mp3"
-        },
-        {
-          "text": "Yes, I'll keep an eye out for the spreadsheet.",
-          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_3.mp3"
         }
       ],
-      "note": "A [spreadsheet] is an electronic document arranged in a grid of rows and columns, like Excel or Google Sheets."
+      "note": null
     },
     {
       "cardId": "dummy_048",
