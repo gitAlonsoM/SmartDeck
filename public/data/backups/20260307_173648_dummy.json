@@ -448,10 +448,6 @@
         {
           "text": "All provinces are affected by this.",
           "audioSrc": "public/data/audio/dummy/dummy_057_sideB_2.mp3"
-        },
-        {
-          "text": "It affects all the provinces.",
-          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_3.mp3"
         }
       ],
       "note": null
@@ -474,7 +470,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_058_sideB_2.mp3"
         }
       ],
-      "note": "**[191]**\n\n~It affects both operating systems by equal~ is invalid because 'by equal' is a direct translation from Spanish. The correct adverb to express 'por igual' is [equally]."
+      "note": "~It affects both operating systems by equal~ is invalid because 'by equal' is a direct translation from Spanish. The correct adverb to express 'por igual' is [equally]."
     },
     {
       "cardId": "dummy_059",
@@ -554,7 +550,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_061_sideB_7.mp3"
         }
       ],
-      "note": "**[202]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_062",
@@ -574,7 +570,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_062_sideB_2.mp3"
         }
       ],
-      "note": "**[202]**\n\n\n\n~From my point of view, I haven't been able to replicate the issue~ is unnatural here. [From my point of view] is used for sharing opinions, not technical environments. Use [On my end] or [From my side] when referring to your system or workstation."
+      "note": "\n\n~From my point of view, I haven't been able to replicate the issue~ is unnatural here. [From my point of view] is used for sharing opinions, not technical environments. Use [On my end] or [From my side] when referring to your system or workstation."
     },
     {
       "cardId": "dummy_063",
@@ -592,14 +588,6 @@
         {
           "text": "From where we stand, we haven't seen the issue so far.",
           "audioSrc": "public/data/audio/dummy/dummy_063_sideB_2.mp3"
-        },
-        {
-          "text": "On our side, we haven't seen the issue yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_3.mp3"
-        },
-        {
-          "text": "On our end, we haven't seen the issue yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_4.mp3"
         }
       ],
       "note": "**[202]**\n\n"
@@ -664,10 +652,6 @@
         {
           "text": "Please pull this code out of the function.",
           "audioSrc": "public/data/audio/dummy/dummy_066_sideB_2.mp3"
-        },
-        {
-          "text": "Please drop this code from the function.",
-          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_3.mp3"
         }
       ],
       "note": "**[200]**\n\n\n\n~Please remove this code of the function~ is incorrect because you remove something [from] a source, not [of] it."
@@ -718,7 +702,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_068_sideB_3.mp3"
         }
       ],
-      "note": "**[200]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_069",
@@ -846,7 +830,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_074_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "\n\n~It uses a wildcard in the search~ is a statement (\"Eso usa...\"), not an imperative instruction (\"Usa...\"). Use the base verb [Use] for commands."
     },
     {
       "cardId": "dummy_075",
@@ -890,7 +874,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_076_sideB_3.mp3"
         }
       ],
-      "note": "**[113]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_077",
