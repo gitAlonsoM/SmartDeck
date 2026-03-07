@@ -278,7 +278,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_049_sideB_2.mp3"
         }
       ],
-      "note": "~The page direction starts with 894~ is incorrect because [direction] refers to physical orientation or instructions. A digital or physical location must be translated as [address] or [URL]."
+      "note": null
     },
     {
       "cardId": "dummy_050",
@@ -296,10 +296,6 @@
         {
           "text": "An HTTP cycle includes a request and a response.",
           "audioSrc": "public/data/audio/dummy/dummy_050_sideB_2.mp3"
-        },
-        {
-          "text": "The HTTP cycle contains a request and a response.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_3.mp3"
         }
       ],
       "note": null
@@ -320,13 +316,9 @@
         {
           "text": "An HTTP POST method includes headers as well as a body.",
           "audioSrc": "public/data/audio/dummy/dummy_051_sideB_2.mp3"
-        },
-        {
-          "text": "An HTTP POST method contains headers and a body.",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_3.mp3"
         }
       ],
-      "note": "~An HTTP method POST has headers and a body~ uses an unnatural word order. In English, technical modifiers generally precede the noun they modify, making [HTTP POST method] the standard structure."
+      "note": null
     },
     {
       "cardId": "dummy_052",
@@ -406,7 +398,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_055_sideB_2.mp3"
         }
       ],
-      "note": "~In the headers sent in a request are called metadata~ is incorrect because the preposition 'In' leaves the verb 'are called' without a subject. Remove 'In' to make [The headers] the subject."
+      "note": null
     },
     {
       "cardId": "dummy_056",
@@ -424,10 +416,6 @@
         {
           "text": "An HTTP transaction is completed by a request and a response.",
           "audioSrc": "public/data/audio/dummy/dummy_056_sideB_2.mp3"
-        },
-        {
-          "text": "A request and a response are a complete HTTP transaction.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_3.mp3"
         }
       ],
       "note": null
@@ -470,7 +458,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_058_sideB_2.mp3"
         }
       ],
-      "note": "~It affects both operating systems by equal~ is invalid because 'by equal' is a direct translation from Spanish. The correct adverb to express 'por igual' is [equally]."
+      "note": null
     },
     {
       "cardId": "dummy_059",
@@ -511,370 +499,6 @@
         }
       ],
       "note": "**[199]**\n\n"
-    },
-    {
-      "cardId": "dummy_061",
-      "cardType": "flippable",
-      "sideA": "Así que, desde mi punto de vista, sí funciona.",
-      "sideB": [
-        {
-          "text": "So, from my point of view, it works.",
-          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_0.mp3"
-        },
-        {
-          "text": "So, the way I see it, it does work.",
-          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_1.mp3"
-        },
-        {
-          "text": "So, as far as I'm concerned, it works.",
-          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_2.mp3"
-        },
-        {
-          "text": "The way I view it, it works.",
-          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_3.mp3"
-        },
-        {
-          "text": "As I view the situation, it works.",
-          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_4.mp3"
-        },
-        {
-          "text": "As I see it, it works.",
-          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_5.mp3"
-        },
-        {
-          "text": "As I see things, it works.",
-          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_6.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_062",
-      "cardType": "flippable",
-      "sideA": "Desde mi lado, no he podido replicar el problema.",
-      "sideB": [
-        {
-          "text": "From my side, I haven't been able to replicate the issue.",
-          "audioSrc": "public/data/audio/dummy/dummy_062_sideB_0.mp3"
-        },
-        {
-          "text": "On my end, I couldn't reproduce the problem.",
-          "audioSrc": "public/data/audio/dummy/dummy_062_sideB_1.mp3"
-        },
-        {
-          "text": "From where I stand, I haven't been able to duplicate the issue.",
-          "audioSrc": "public/data/audio/dummy/dummy_062_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_063",
-      "cardType": "flippable",
-      "sideA": "Desde nuestro lado, no hemos visto el problema aun.",
-      "sideB": [
-        {
-          "text": "From our side, we haven't seen the issue yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_0.mp3"
-        },
-        {
-          "text": "On our end, we haven't encountered the problem yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_1.mp3"
-        },
-        {
-          "text": "From where we stand, we haven't seen the issue so far.",
-          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_064",
-      "cardType": "flippable",
-      "sideA": "No he podido acceder.",
-      "sideB": [
-        {
-          "text": "I haven't been able to log in.",
-          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_0.mp3"
-        },
-        {
-          "text": "I couldn't access it.",
-          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_1.mp3"
-        },
-        {
-          "text": "I haven't been able to get in.",
-          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_065",
-      "cardType": "flippable",
-      "sideA": "Por favor, saca estas líneas del codigo.",
-      "sideB": [
-        {
-          "text": "Please remove these lines from the code.",
-          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_0.mp3"
-        },
-        {
-          "text": "Please strip out these lines.",
-          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_1.mp3"
-        },
-        {
-          "text": "Please drop these lines from the file.",
-          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_2.mp3"
-        },
-        {
-          "text": "Please delete these lines.",
-          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_066",
-      "cardType": "flippable",
-      "sideA": "Saca este codigo de la funcion.",
-      "sideB": [
-        {
-          "text": "Please remove this code from the function.",
-          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_0.mp3"
-        },
-        {
-          "text": "Please strip this code out of the function.",
-          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_1.mp3"
-        },
-        {
-          "text": "Please pull this code out of the function.",
-          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_067",
-      "cardType": "flippable",
-      "sideA": "Es lo mas probable.",
-      "sideB": [
-        {
-          "text": "It is most likely.",
-          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_0.mp3"
-        },
-        {
-          "text": "Most likely.",
-          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_1.mp3"
-        },
-        {
-          "text": "That is highly probable.",
-          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_2.mp3"
-        },
-        {
-          "text": "Highly likely.",
-          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_068",
-      "cardType": "flippable",
-      "sideA": "Tenemos que establecer el largo mínimo y maximo del numero.",
-      "sideB": [
-        {
-          "text": "We have to set the minimum and maximum length of the number.",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_0.mp3"
-        },
-        {
-          "text": "We need to establish the min and max length for the number.",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_1.mp3"
-        },
-        {
-          "text": "We must define the minimum and maximum length of the number.",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_069",
-      "cardType": "flippable",
-      "sideA": "No queremos tener números decimales, solo enteros.",
-      "sideB": [
-        {
-          "text": "We don't want to have decimal numbers, only integers.",
-          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_0.mp3"
-        },
-        {
-          "text": "We don't want decimals, just whole numbers.",
-          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_1.mp3"
-        },
-        {
-          "text": "We only want integers, no decimal numbers.",
-          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_070",
-      "cardType": "flippable",
-      "sideA": "En cuanto a eso, puedo decirte que sí es correcto.",
-      "sideB": [
-        {
-          "text": "Regarding that, I can tell you that it is correct.",
-          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_0.mp3"
-        },
-        {
-          "text": "As for that, I can tell you it's correct.",
-          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_1.mp3"
-        },
-        {
-          "text": "Concerning that, I can confirm it is correct.",
-          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_071",
-      "cardType": "flippable",
-      "sideA": "Sobre ese punto, confirmo que sí es correcto.",
-      "sideB": [
-        {
-          "text": "On that point, I confirm it is correct.",
-          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_0.mp3"
-        },
-        {
-          "text": "Regarding that point, I confirm it's correct.",
-          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_1.mp3"
-        },
-        {
-          "text": "About that point, I can confirm that it's correct.",
-          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_072",
-      "cardType": "flippable",
-      "sideA": "Hasta donde se, no se ha establecido aun.",
-      "sideB": [
-        {
-          "text": "As far as I know, it hasn't been established yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_0.mp3"
-        },
-        {
-          "text": "As far as I know, it hasn't been set.",
-          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_1.mp3"
-        },
-        {
-          "text": "To my knowledge, it hasn't been defined yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_073",
-      "cardType": "flippable",
-      "sideA": "El Joker es el comodín.",
-      "sideB": [
-        {
-          "text": "The Joker is the wild card.",
-          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_0.mp3"
-        },
-        {
-          "text": "The Joker acts as the wild card.",
-          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_1.mp3"
-        },
-        {
-          "text": "The Joker serves as a wild card.",
-          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_074",
-      "cardType": "flippable",
-      "sideA": "Usa un comodín en la búsqueda.",
-      "sideB": [
-        {
-          "text": "Use a wildcard in the search.",
-          "audioSrc": "public/data/audio/dummy/dummy_074_sideB_0.mp3"
-        },
-        {
-          "text": "Make use of a wildcard in the search.",
-          "audioSrc": "public/data/audio/dummy/dummy_074_sideB_1.mp3"
-        },
-        {
-          "text": "Utilize a wildcard for the search.",
-          "audioSrc": "public/data/audio/dummy/dummy_074_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_075",
-      "cardType": "flippable",
-      "sideA": "El asterisco funciona como comodín.",
-      "sideB": [
-        {
-          "text": "The asterisk functions as a wildcard.",
-          "audioSrc": "public/data/audio/dummy/dummy_075_sideB_0.mp3"
-        },
-        {
-          "text": "The asterisk works as a wildcard.",
-          "audioSrc": "public/data/audio/dummy/dummy_075_sideB_1.mp3"
-        },
-        {
-          "text": "The asterisk acts like a wildcard.",
-          "audioSrc": "public/data/audio/dummy/dummy_075_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_076",
-      "cardType": "flippable",
-      "sideA": "El % funciona como comodín.",
-      "sideB": [
-        {
-          "text": "The % functions as a wildcard.",
-          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_0.mp3"
-        },
-        {
-          "text": "The % sign works as a wildcard.",
-          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_1.mp3"
-        },
-        {
-          "text": "The percent sign acts as a wildcard.",
-          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_077",
-      "cardType": "flippable",
-      "sideA": "No tengo idea, déjame ver.",
-      "sideB": [
-        {
-          "text": "I have no idea, let me see.",
-          "audioSrc": "public/data/audio/dummy/dummy_077_sideB_0.mp3"
-        },
-        {
-          "text": "I've got no clue, let me check.",
-          "audioSrc": "public/data/audio/dummy/dummy_077_sideB_1.mp3"
-        },
-        {
-          "text": "I have no idea, let me take a look.",
-          "audioSrc": "public/data/audio/dummy/dummy_077_sideB_2.mp3"
-        }
-      ],
-      "note": null
     }
   ]
 }
