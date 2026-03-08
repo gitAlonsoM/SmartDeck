@@ -474,7 +474,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_058_sideB_2.mp3"
         }
       ],
-      "note": "**[191]**\n\n~It affects both operating systems by equal~ is invalid because 'by equal' is a direct translation from Spanish. The correct adverb to express 'por igual' is [equally].\n\n~It affects both operating systems at the same time~ changes the meaning. 'At the same time' translates to 'al mismo tiempo' (simultaneously), whereas the original sentence requires [equally] to mean 'por igual'."
+      "note": "**[191]**\n\n~It affects both operating systems by equal~ is invalid because 'by equal' is a direct translation from Spanish. The correct adverb to express 'por igual' is [equally]."
     },
     {
       "cardId": "dummy_059",
@@ -620,13 +620,9 @@
         {
           "text": "I haven't been able to get in.",
           "audioSrc": "public/data/audio/dummy/dummy_064_sideB_2.mp3"
-        },
-        {
-          "text": "I couldn't log in.",
-          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_3.mp3"
         }
       ],
-      "note": "**[5]**\n\n~I couldn't access~ is incomplete because 'access' is a transitive verb. It requires a direct object, such as [access it] or [access the system]."
+      "note": "**[5]**\n\n"
     },
     {
       "cardId": "dummy_065",
@@ -784,10 +780,6 @@
         {
           "text": "About that point, I can confirm that it's correct.",
           "audioSrc": "public/data/audio/dummy/dummy_071_sideB_2.mp3"
-        },
-        {
-          "text": "Regarding that point, I can confirm it is correct.",
-          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_3.mp3"
         }
       ],
       "note": null
@@ -916,13 +908,9 @@
         {
           "text": "I have no idea, let me take a look.",
           "audioSrc": "public/data/audio/dummy/dummy_077_sideB_2.mp3"
-        },
-        {
-          "text": "I don't have any idea, let me see.",
-          "audioSrc": "public/data/audio/dummy/dummy_077_sideB_3.mp3"
         }
       ],
-      "note": "**[190]**\n\n"
+      "note": null
     }
   ]
 }
