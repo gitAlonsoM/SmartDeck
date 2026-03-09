@@ -2630,7 +2630,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_113_sideB_3.mp3"
         }
       ],
-      "note": "**[3]**\n\n**[50]**\n\nThis structure uses 'does' as the auxiliary verb for a singular subject ([this script]) and 'do' as the main verb. The pattern is `What does + [subject] + do?`.\n\nA very common error is omitting the main verb 'do' at the end of the question, which leaves the sentence incomplete: ~What exactly does this script?~."
+      "note": "**[3]**\n\n*[50]**\n\nThis structure uses 'does' as the auxiliary verb for a singular subject ([this script]) and 'do' as the main verb. The pattern is `What does + [subject] + do?`.\n\nA very common error is omitting the main verb 'do' at the end of the question, which leaves the sentence incomplete: ~What exactly does this script?~."
     },
     {
       "cardId": "mi_114",
@@ -2724,10 +2724,6 @@
         {
           "text": "It happened before.",
           "audioSrc": "public/data/audio/common_meeting/mi_117_sideB_4.mp3"
-        },
-        {
-          "text": "It happened before already.",
-          "audioSrc": "public/data/audio/common_meeting/mi_117_sideB_5.mp3"
         }
       ],
       "note": "The Present Perfect [This has happened before] is used to state that an event occurred at an unspecified time in the past. [It's happened before] is a common contraction.\n\n[This isn't the first time] is a very natural idiom with the same meaning.\n\nJust like in the question form, the Past Perfect [It had happened before] is only used when referencing a time *before* another past event.\n\nThe Simple Past [It happened before] is also a correct and direct translation."
@@ -4920,10 +4916,6 @@
         {
           "text": "It's necessary to debug to locate the root cause.",
           "audioSrc": "public/data/audio/common_meeting/mi_214_sideB_2.mp3"
-        },
-        {
-          "text": "It's necessary to debug to find the root cause of the issue.",
-          "audioSrc": "public/data/audio/common_meeting/mi_214_sideB_3.mp3"
         }
       ],
       "note": "[Root cause] is the specific technical term for 'causa raíz'.\n\n[Debugging] (gerund) acts as the subject. Alternatively, use [We need to debug]."
@@ -6632,10 +6624,6 @@
         {
           "text": "Can you take out that validation from there?",
           "audioSrc": "public/data/audio/common_meeting/mi_290_sideB_3.mp3"
-        },
-        {
-          "text": "Can you drop that validation from there?",
-          "audioSrc": "public/data/audio/common_meeting/mi_290_sideB_4.mp3"
         }
       ],
       "note": "[Validation] refers to checks (e.g., checking if stock > 0).\n\nIn code reviews, we often ask to [Remove] or [Extract] code to keep things clean.\n\n~...take out that validation of there?~ (Grammar: Use 'from there' to indicate source/location. 'Of' is incorrect here.)"
@@ -7340,10 +7328,6 @@
         {
           "text": "I haven't heard back about that subject.",
           "audioSrc": "public/data/audio/common_meeting/mi_321_sideB_3.mp3"
-        },
-        {
-          "text": "I haven't got any updates on that matter.",
-          "audioSrc": "public/data/audio/common_meeting/mi_321_sideB_4.mp3"
         }
       ],
       "note": "[updates] is the most professional word for 'noticias' in a project context.\n\n[Matter] or [Issue] are often preferred over 'topic' for business problems.\n\n~I haven't had news~ (While possible, it's more common to say 'I haven't heard anything' or 'I haven't had any updates'.)"
@@ -7442,7 +7426,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_325_sideB_3.mp3"
         }
       ],
-      "note": "[Supposed to] implies that there is a design or expectation behind the function.\n\n[How it should work] is more natural than 'The way that it should work'.\n\n~That is the way it should be worked~ is incorrect because the verb 'work' (meaning to function) is intransitive and cannot be used in the passive voice.\n\n~That is the way should work~ is missing the subject [it]. In English, every clause needs a subject: [That is the way it should work]."
+      "note": "[Supposed to] implies that there is a design or expectation behind the function.\n\n[How it should work] is more natural than 'The way that it should work'."
     },
     {
       "cardId": "mi_326",
@@ -9162,7 +9146,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_403_sideB_2.mp3"
         }
       ],
-      "note": "**[38]**\n\n[Be supposed to] implies an expectation, duty, or intended function.\n\n~What do they suppose to do?~ (Grammar: The expression is [be supposed to]. It requires the auxiliary verb 'to be', e.g., [What are they supposed to do?].)"
+      "note": "[Be supposed to] implies an expectation, duty, or intended function.\n\n~What do they suppose to do?~ (Grammar: The expression is [be supposed to]. It requires the auxiliary verb 'to be', e.g., [What are they supposed to do?].)"
     },
     {
       "cardId": "mi_404",
@@ -10340,10 +10324,6 @@
         {
           "text": "And what happens to my legal holidays?",
           "audioSrc": "public/data/audio/common_meeting/mi_457_sideB_2.mp3"
-        },
-        {
-          "text": "And what happens with my legal holidays?",
-          "audioSrc": "public/data/audio/common_meeting/mi_457_sideB_3.mp3"
         }
       ],
       "note": "In a formal HR context, 'feriados legales' are often referred to as [Statutory Holidays] (mandated by law) or simply [Annual Leave].\n\n[What about...] is a very common conversational shortcut for 'What is going to happen with...'.\n\n~And what will it be with my legal holidays?~ (Incorrect: 'What will it be with' is unnatural. Use 'What will [happen to]' or 'What [about]'.)"
@@ -11890,7 +11870,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_527_sideB_3.mp3"
         }
       ],
-      "note": "A [Placeholder] is a temporary variable or value used until the final value is known.\n\n~...as a position marker~ (Non-standard: The technical term for a temporary variable is 'placeholder'.)\n\n~We use the J variable as a marker position~ is incorrect. The correct term is [placeholder]. If you use marker, it would be 'position marker', but this is not standard."
+      "note": "A [Placeholder] is a temporary variable or value used until the final value is known.\n\n~...as a position marker~ (Non-standard: The technical term for a temporary variable is 'placeholder'.)"
     },
     {
       "cardId": "mi_528",
@@ -14650,7 +14630,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_648_sideB_2.mp3"
         }
       ],
-      "note": "**[155]**\n\n[Above] refers to the code lines that appear before the SQL [UNION] operator.\n\n~Up the UNION~ (Incorrect: 'Up' is a direction, use [above] for spatial hierarchy.)\n\n~Upper the UNION~ (Incorrect: 'Upper' is an adjective, not a preposition.)\n\n~Above UNION~ and ~Over UNION~ are missing the definite article [the]. Furthermore, [above] is the correct preposition for spatial hierarchy in text, not 'over'."
+      "note": "**[155]**\n\n[Above] refers to the code lines that appear before the SQL [UNION] operator.\n\n~Up the UNION~ (Incorrect: 'Up' is a direction, use [above] for spatial hierarchy.)\n\n~Upper the UNION~ (Incorrect: 'Upper' is an adjective, not a preposition.)"
     },
     {
       "cardId": "mi_649",
@@ -15262,7 +15242,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_677_sideB_2.mp3"
         }
       ],
-      "note": "Common flag in programming logic.\n\n~The S letter means Success~ is an unnatural word order. The correct phrasing is [The letter S]."
+      "note": "Common flag in programming logic."
     },
     {
       "cardId": "mi_678",
@@ -15668,13 +15648,9 @@
         {
           "text": "That movie made me feel drowsy.",
           "audioSrc": "public/data/audio/common_meeting/mi_696_sideB_2.mp3"
-        },
-        {
-          "text": "I got sleepy during the movie.",
-          "audioSrc": "public/data/audio/common_meeting/mi_696_sideB_3.mp3"
         }
       ],
-      "note": "**[39]**\n\n[Sleepy] is the adjective for 'tener sueño'. In this case, the movie is the cause.\n\n~It made me feel sleepy the movie~ is incorrect word order; the subject [the movie] should come first: [The movie made me feel sleepy].\n\n~I got sleepy with the movie~ is not the most natural phrasing. Use [during the movie] or [watching the movie].\n\n~I got slept with the movie~ is incorrect because [slept] is the past tense of the verb 'sleep', not an adjective. Use the adjective [sleepy]."
+      "note": "**[39]**\n\n[Sleepy] is the adjective for 'tener sueño'. In this case, the movie is the cause.\n\n~It made me feel sleepy the movie~ is incorrect word order; the subject [the movie] should come first: [The movie made me feel sleepy]."
     },
     {
       "cardId": "mi_697",
@@ -16916,13 +16892,9 @@
         {
           "text": "I'd like there to be more of them.",
           "audioSrc": "public/data/audio/common_meeting/mi_752_sideB_4.mp3"
-        },
-        {
-          "text": "I would like more of them.",
-          "audioSrc": "public/data/audio/common_meeting/mi_752_sideB_5.mp3"
         }
       ],
-      "note": "**[182]**\n\nSubjunctive: [I wish there were] (not ~was~).\n\n~I would like them to be more~ changes the meaning to 'I want them to be larger' or 'I want them to be something else'. To express existence (que hubieran), you must use the [there to be] structure.\n\n~I would like them to be more~ is incorrect in this context because it translates to 'quisiera que fueran más [adjetivo]' (e.g., more professional) instead of referring to quantity.\n\n~I would like them to be more of them~ is incorrect because it is redundant; the verb 'like' here requires the existential [there to be] structure to express 'que hubieran'."
+      "note": "Subjunctive: [I wish there were] (not ~was~).\n\n~I would like them to be more~ changes the meaning to 'I want them to be larger' or 'I want them to be something else'. To express existence (que hubieran), you must use the [there to be] structure.\n\n~I would like them to be more~ is incorrect in this context because it translates to 'quisiera que fueran más [adjetivo]' (e.g., more professional) instead of referring to quantity.\n\n~I would like them to be more of them~ is incorrect because it is redundant; the verb 'like' here requires the existential [there to be] structure to express 'que hubieran'."
     },
     {
       "cardId": "mi_753",
@@ -17982,7 +17954,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_800_sideB_2.mp3"
         }
       ],
-      "note": "[Filter out] explicitly means to remove unwanted items. [Filter] alone can sometimes be ambiguous (keep vs remove).\n\n~Discart the null values~ is a spelling error. The correct spelling is [Discard]."
+      "note": "[Filter out] explicitly means to remove unwanted items. [Filter] alone can sometimes be ambiguous (keep vs remove)."
     },
     {
       "cardId": "mi_801",
@@ -18864,10 +18836,6 @@
         {
           "text": "Every single one is coming in, excluding #45.",
           "audioSrc": "public/data/audio/common_meeting/mi_840_sideB_2.mp3"
-        },
-        {
-          "text": "All are included, except for #45.",
-          "audioSrc": "public/data/audio/common_meeting/mi_840_sideB_3.mp3"
         }
       ],
       "note": "[Everything] or [All of them] is used for objects. [Everyone] is strictly for people. Use [Every single one] when you want to emphasize each individual item in a set."
@@ -19912,10 +19880,6 @@
         {
           "text": "Depending on the province, the same products are merged or kept separate.",
           "audioSrc": "public/data/audio/common_meeting/mi_885_sideB_3.mp3"
-        },
-        {
-          "text": "Depending on the province, identical products are either merged or kept separately.",
-          "audioSrc": "public/data/audio/common_meeting/mi_885_sideB_4.mp3"
         }
       ],
       "note": "\n\n~Depending on the province, same products are merged or kept separate~ requires the article [the]. ~Depending on the province, identical products are either merged or keep separate~ is incorrect because the second verb must also be in the past participle [kept] to maintain the passive structure."
