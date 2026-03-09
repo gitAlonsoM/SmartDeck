@@ -3056,10 +3056,6 @@
         {
           "text": "We are prioritizing the most important ones first.",
           "audioSrc": "public/data/audio/common_meeting/mi_131_sideB_4.mp3"
-        },
-        {
-          "text": "We are prioritizing the most urgent first.",
-          "audioSrc": "public/data/audio/common_meeting/mi_131_sideB_5.mp3"
         }
       ],
       "note": "[Most urgent] is the correct translation. [Time-sensitive] is an excellent synonym in a business or tech context.\n\nA common error is redundancy: ~We are prioritizing the most more urgent ones first~. 'Most' already forms the superlative."
@@ -3654,7 +3650,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_154_sideB_2.mp3"
         }
       ],
-      "note": "**[171]**\n\nThe verb [to email] is the most direct and natural form.\n\n[I've just emailed...] (Present Perfect) emphasizes the recent completion of the action.\n\n[Inbox] is a common synonym for 'email account'."
+      "note": "The verb [to email] is the most direct and natural form.\n\n[I've just emailed...] (Present Perfect) emphasizes the recent completion of the action.\n\n[Inbox] is a common synonym for 'email account'."
     },
     {
       "cardId": "mi_155",
@@ -8508,13 +8504,9 @@
         {
           "text": "Now we find where the delimiter is located...",
           "audioSrc": "public/data/audio/common_meeting/mi_373_sideB_2.mp3"
-        },
-        {
-          "text": "Now we find the delimiter position...",
-          "audioSrc": "public/data/audio/common_meeting/mi_373_sideB_3.mp3"
         }
       ],
-      "note": "In programming, [Position] or [Index] refers to the numeric location of a character within a string.\n\n~...the delimeter position~ features a spelling error. The correct spelling is [delimiter], with an 'i'."
+      "note": "In programming, [Position] or [Index] refers to the numeric location of a character within a string.\n\n~...the delimeter position~ (Spelling: The correct spelling is [delimiter], with an 'i'.)"
     },
     {
       "cardId": "mi_374",
@@ -9822,7 +9814,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_433_sideB_2.mp3"
         }
       ],
-      "note": "**[134]**\n\nIn a database context, [records] is the standard term for 'registros'.\n\nWhile [rows] is correct when mapping directly to a DB, generic JSON items are often called [items] or [objects].\n\n~...the backend fetched two records~ creates a meaning mismatch. [Fetched] implies the backend got data from the DB, whereas [returned] matches 'devolvió' (sending data to the frontend)."
+      "note": "In a database context, [records] is the standard term for 'registros'.\n\nWhile 'rows' is correct when mapping directly to a DB, generic JSON items are often called [items] or [objects].\n\n~...the backend fetched two records~ (Meaning Mismatch: [Fetched] implies the backend got data *from* the DB. [Returned] matches 'devolvió' (sending data *to* the frontend).)"
     },
     {
       "cardId": "mi_434",
@@ -9906,7 +9898,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_437_sideB_2.mp3"
         }
       ],
-      "note": "[That way] is the most natural conversational connector for 'De esa forma'.\n\n[To get something back] or [To send something back] captures 'tener de regreso'.\n\n~...get back the data to the...~ is technically understood, but it is much more natural to place the object in the middle of the phrasal verb: [get the data back].\n\n~...have back the data...~ sounds unnatural. Use [get ... back] or [receive ... back] instead of 'have back'.\n\n~That way, we can have the data back to the frontend~ uses an incorrect collocation. [Have ... back] is not a standard construction for data transfer. Use [get] or [send] instead."
+      "note": "[That way] is the most natural conversational connector for 'De esa forma'.\n\n[To get something back] or [To send something back] captures 'tener de regreso'.\n\n~...get back the data to the...~ (Phrasing: While not strictly incorrect, it is much more natural to place the object in the middle of the phrasal verb: [get the data back].)\n\n~...have back the data...~ (Unnatural: Use [get ... back] or [receive ... back] instead of 'have back'.)\n\n~That way, we can have the data back to the frontend~ (Incorrect collocation: [Have ... back] is not a standard construction for data transfer. Use [get] or [send].)"
     },
     {
       "cardId": "mi_438",
@@ -10118,7 +10110,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_446_sideB_3.mp3"
         }
       ],
-      "note": "[Equivalent to] is the standard phrase.\n\n[What you are saying] is a noun clause acting as the object of 'to'.\n\n~This is equivalent to that what you say~ is redundant. Use just [what] instead of 'that what'.\n\n~This is equivalent of what you are saying~ uses the wrong preposition. The adjective [equivalent] is strictly followed by [to], not 'of'."
+      "note": "[Equivalent to] is the standard phrase.\n\n[What you are saying] is a noun clause acting as the object of 'to'.\n\n~This is equivalent to that what you say~ (Redundant: Use just [what] instead of 'that what')."
     },
     {
       "cardId": "mi_447",
@@ -10140,10 +10132,6 @@
         {
           "text": "Ready.",
           "audioSrc": "public/data/audio/common_meeting/mi_447_sideB_3.mp3"
-        },
-        {
-          "text": "Ok, done.",
-          "audioSrc": "public/data/audio/common_meeting/mi_447_sideB_4.mp3"
         }
       ],
       "note": "[All set] is a very common, friendly way to say you are ready or a task is complete in a team context."
@@ -10196,10 +10184,6 @@
         {
           "text": "Sent.",
           "audioSrc": "public/data/audio/common_meeting/mi_449_sideB_3.mp3"
-        },
-        {
-          "text": "I've just sent it.",
-          "audioSrc": "public/data/audio/common_meeting/mi_449_sideB_4.mp3"
         }
       ],
       "note": "In chat contexts, it is acceptable to drop the subject 'I' and just say [Just sent].\n\n[Just] is used for very recent past actions."
@@ -13562,7 +13546,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_601_sideB_2.mp3"
         }
       ],
-      "note": "[I'll] (I will) for spontaneous decisions or promises. \n\n[Ticket] is often used instead of 'task' in Jira/ServiceNow environments.\n\n~I can work at that~ uses the wrong preposition. You [work on] a task, project, or issue, whereas you [work at] a location or company."
+      "note": "[I'll] (I will) for spontaneous decisions or promises. \n\n[Ticket] is often used instead of 'task' in Jira/ServiceNow environments."
     },
     {
       "cardId": "mi_602",
@@ -13670,7 +13654,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_606_sideB_2.mp3"
         }
       ],
-      "note": "**[148]**\n\nIn technical English, [Behavior] refers to how a system or component functions.\n\nIndirect Question Rule: The verb [is] goes at the end of the clause: '...what the expected behavior [is]'.\n\n~I'm not sure what is the expected behavior for the catalog~ uses incorrect word order. In embedded questions, the verb [is] must go at the end of the clause: [what the expected behavior is]."
+      "note": "**[148]**\n\nIn technical English, [Behavior] refers to how a system or component functions.\n\nIndirect Question Rule: The verb [is] goes at the end of the clause: '...what the expected behavior [is]'."
     },
     {
       "cardId": "mi_607",
