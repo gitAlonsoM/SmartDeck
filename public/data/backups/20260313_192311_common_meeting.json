@@ -1410,7 +1410,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_060_sideB_2.mp3"
         }
       ],
-      "note": "**[3]**\n\nThe subject is [these technical limitations], a plural phrase. The question requires the auxiliary verb [do].\n\n[Timeline] and [schedule] are synonyms. [Constraints] and [limitations] are also synonyms in this context.\n\n~How do these technical limitations affect the cronogram?~ uses a false friend. The correct term for a planned sequence of events is [schedule] or [timeline]."
+      "note": "**[3]**\n\nThe subject is [these technical limitations], a plural phrase. The question requires the auxiliary verb [do].\n\n[Timeline] and [schedule] are synonyms. [Constraints] and [limitations] are also synonyms in this context."
     },
     {
       "cardId": "mi_061",
@@ -2650,7 +2650,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_114_sideB_2.mp3"
         }
       ],
-      "note": "**[3]**\n\n**[50]**\n\nFor questions in the simple past, the auxiliary is [did]. The main verb that follows must return to its base form ([do]).\n\nA frequent error involves conjugating the main verb to the past tense as well, which is redundant: ~What did the last hotfix did to solve the issue?~."
+      "note": "**[3]**\n\n*[50]**\n\nFor questions in the simple past, the auxiliary is [did]. The main verb that follows must return to its base form ([do]).\n\nA frequent error involves conjugating the main verb to the past tense as well, which is redundant: ~What did the last hotfix did to solve the issue?~."
     },
     {
       "cardId": "mi_115",
@@ -3654,7 +3654,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_154_sideB_2.mp3"
         }
       ],
-      "note": "**[171]**\n\nThe verb [to email] is the most direct and natural form.\n\n[I've just emailed...] (Present Perfect) emphasizes the recent completion of the action.\n\n[Inbox] is a common synonym for 'email account'.\n\n~Yeah, I just sent it you by email.~ is incorrect. When the direct object ('it') comes first, you must use the preposition [to] before the person, as in [sent it to you]."
+      "note": "**[171]**\n\nThe verb [to email] is the most direct and natural form.\n\n[I've just emailed...] (Present Perfect) emphasizes the recent completion of the action.\n\n[Inbox] is a common synonym for 'email account'."
     },
     {
       "cardId": "mi_155",
@@ -6020,14 +6020,6 @@
         {
           "text": "My English keeps improving, and in big meetings I tend to stay quiet.",
           "audioSrc": "public/data/audio/common_meeting/mi_261_sideB_3.mp3"
-        },
-        {
-          "text": "My English keeps improving, and in large meetings I tend to stay quiet.",
-          "audioSrc": "public/data/audio/common_meeting/mi_261_sideB_4.mp3"
-        },
-        {
-          "text": "My English continues improving, and in big meetings I tend to stay quiet.",
-          "audioSrc": "public/data/audio/common_meeting/mi_261_sideB_5.mp3"
         }
       ],
       "note": "[Tend to] describes a habit or inclination.\n\n[Work in progress] is a positive way to say something is not yet perfect but is improving."
@@ -7330,7 +7322,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_320_sideB_3.mp3"
         }
       ],
-      "note": "**[157]**\n\n[Under different conditions] is the standard collocation for testing environments.\n\nUsing the passive voice [It is required] makes the statement more objective and formal than 'We need to'.\n\n~It is required to test in different conditions.~ is incorrect because the standard preposition for conditions is [under], not 'in'."
+      "note": "**[157]**\n\n[Under different conditions] is the standard collocation for testing environments.\n\nUsing the passive voice [It is required] makes the statement more objective and formal than 'We need to'."
     },
     {
       "cardId": "mi_321",
@@ -7768,10 +7760,6 @@
         {
           "text": "There is camel case on one hand, and snake case on the other.",
           "audioSrc": "public/data/audio/common_meeting/mi_339_sideB_2.mp3"
-        },
-        {
-          "text": "We have camel case on one hand, and snake case on the other.",
-          "audioSrc": "public/data/audio/common_meeting/mi_339_sideB_3.mp3"
         }
       ],
       "note": "Use [On one hand... and on the other] to contrast two distinct situations.\n\n[Camel case]: `myVariable`\n[Snake case]: `my_variable`\n\n~We have on one side camel case...~ (Word order: It is more natural to say 'We have camel case on one side'.)\n\n~...on one side... on the other hand~ (Idiom consistency: Use [On one hand ... on the other hand] OR [On one side ... on the other side]. Do not mix them.)"
@@ -7898,7 +7886,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_344_sideB_3.mp3"
         }
       ],
-      "note": "[Unknown to us] is a formal way to say 'we don't know it'.\n\n[We are not aware of] is professional and very common in meetings.\n\n~There is a unknown...~ (Grammar: Use [an] before vowel sounds like 'unknown'.)\n\n~...configuration to us~ (Word order: Adjectives modifying the noun should be close. Better: 'A mapping configuration [unknown to us]'.)\n\n~Exist a...~ (Grammar: Sentences expressing existence usually start with [There is] or [There exists]. Also, 'configuration' is singular, so the verb would be 'Exists' if used alone.)\n\n~An unknown mapping configuration exists for us.~ is grammatically possible but sounds very unnatural. [Exists for us] implies it was created for our benefit. It is better to use [There is] or [we are not aware of]."
+      "note": "[Unknown to us] is a formal way to say 'we don't know it'.\n\n[We are not aware of] is professional and very common in meetings.\n\n~There is a unknown...~ (Grammar: Use [an] before vowel sounds like 'unknown'.)\n\n~...configuration to us~ (Word order: Adjectives modifying the noun should be close. Better: 'A mapping configuration [unknown to us]'.)\n\n~Exist a...~ (Grammar: Sentences expressing existence usually start with [There is] or [There exists]. Also, 'configuration' is singular, so the verb would be 'Exists' if used alone.)"
     },
     {
       "cardId": "mi_345",
@@ -8134,7 +8122,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_355_sideB_3.mp3"
         }
       ],
-      "note": "[Backward Compatibility] is the ability of a system to work with inputs generated by older versions of itself.\n\n~Compatibility with backward versions~ (Vocabulary: Versions are not 'backward'. Use [previous versions], [older versions], or the standard term [backward compatibility].)\n\n~Retro compatibility~ is a false friend or less common transliteration. The standard industry term is [backward compatibility] or [backwards compatibility]."
+      "note": "[Backward Compatibility] is the ability of a system to work with inputs generated by older versions of itself.\n\n~Compatibility with backward versions~ (Vocabulary: Versions are not 'backward'. Use [previous versions], [older versions], or the standard term [backward compatibility].)"
     },
     {
       "cardId": "mi_356",
@@ -11270,7 +11258,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_498_sideB_6.mp3"
         }
       ],
-      "note": "Data flows from the [Backend] (server/DB) to the [Frontend] (client/browser).\n\n~This whole structure is what will get the frontend~ (Incorrect: This means the structure acquires the frontend.)\n\n~All thos structure...~ (Typo/Grammar: Use [All this structure] or [All these structures].)\n\n~All this structure is what will arrive to the frontend.~ is incorrect because the verb 'arrive' takes the preposition [at] or [in], never 'to'. Using [reach] is much more natural here."
+      "note": "Data flows from the [Backend] (server/DB) to the [Frontend] (client/browser).\n\n~This whole structure is what will get the frontend~ (Incorrect: This means the structure acquires the frontend.)\n\n~All thos structure...~ (Typo/Grammar: Use [All this structure] or [All these structures].)"
     },
     {
       "cardId": "mi_499",
@@ -11568,10 +11556,6 @@
         {
           "text": "The key to iStore is that it owns the e-commerce functionality.",
           "audioSrc": "public/data/audio/common_meeting/mi_512_sideB_2.mp3"
-        },
-        {
-          "text": "The importance of iStore is that it is the owner of the e-commerce module.",
-          "audioSrc": "public/data/audio/common_meeting/mi_512_sideB_3.mp3"
         }
       ],
       "note": "[Module owner] in EBS refers to the application that 'owns' the data/tables."
@@ -11678,7 +11662,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_516_sideB_4.mp3"
         }
       ],
-      "note": "[That's it] is a common way to say 'Esa es' (identifying something correct).\n\n~That is probably.~ is incomplete. You need to include [it] to refer to the specific thing being identified, as in [That is probably it]."
+      "note": "[That's it] is a common way to say 'Esa es' (identifying something correct)."
     },
     {
       "cardId": "mi_517",
@@ -11982,7 +11966,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_530_sideB_2.mp3"
         }
       ],
-      "note": "**[63]**\n\n[Then] acts as a connector for sequential actions.\n\n~We are multiplying the value, then add them.~ is incorrect because 'value' is singular, requiring [it], and the verbs must maintain parallel structure ([multiplying] and [adding]).\n\n~We are multiplying the value, then add it.~ is incorrect due to the same lack of parallel structure. Note that 'then' is an adverb, not a preposition, so the gerund is used here strictly to match the first continuous verb."
+      "note": "**[63]**\n\n[Then] acts as a connector for sequential actions."
     },
     {
       "cardId": "mi_531",
@@ -13794,7 +13778,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_611_sideB_2.mp3"
         }
       ],
-      "note": "**[153]**\n\n[Current] refers to the code in your local branch where you are merging into.\n\n~The current code on the right~ (Incorrect: In English, sentences describing location require a verb like [is].)\n\n~The current code is in the right.~ is incorrect because we use the preposition [on] for lateral directions, as in [on the right]."
+      "note": "**[153]**\n\n[Current] refers to the code in your local branch where you are merging into.\n\n~The current code on the right~ (Incorrect: In English, sentences describing location require a verb like [is].)"
     },
     {
       "cardId": "mi_612",
@@ -14190,7 +14174,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_628_sideB_3.mp3"
         }
       ],
-      "note": "Use [be like] to make comparisons.\n\n~That would be as a hard reset.~ is incorrect because [as] is used for roles or functions, whereas [like] is used to show similarity."
+      "note": "Use [be like] to make comparisons."
     },
     {
       "cardId": "mi_629",
@@ -14568,10 +14552,6 @@
         {
           "text": "Give me a second; I will look the translation up.",
           "audioSrc": "public/data/audio/common_meeting/mi_643_sideB_4.mp3"
-        },
-        {
-          "text": "Give me a second; I will look for the translation.",
-          "audioSrc": "public/data/audio/common_meeting/mi_643_sideB_5.mp3"
         }
       ],
       "note": "The phrasal verb [Look up] is specifically used when searching for information in a dictionary, database, or list.\n\n~I will look it up the translation~ (Incorrect: Redundant object. Use 'look up the translation' or 'look it up'.)"
@@ -16198,7 +16178,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_718_sideB_3.mp3"
         }
       ],
-      "note": "[Fields] are the specific attributes within a [Record].\n\n~Record fields from a different package are populating there.~ is incorrect because fields do not populate themselves; they [are being populated] by the system or process."
+      "note": "[Fields] are the specific attributes within a [Record]."
     },
     {
       "cardId": "mi_719",
@@ -16802,7 +16782,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_745_sideB_3.mp3"
         }
       ],
-      "note": "[Won't let you] is a natural way to describe system restrictions.\n\n~Oracle doesn't allow you to change your password if you have the same old one.~ sounds unnatural. It is better to compare the password itself using [if it is the same as] your old one."
+      "note": "[Won't let you] is a natural way to describe system restrictions."
     },
     {
       "cardId": "mi_746",
