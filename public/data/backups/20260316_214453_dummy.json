@@ -20,14 +20,6 @@
         {
           "text": "I feel like I'm being mostly ignored.",
           "audioSrc": "public/data/audio/dummy/dummy_001_sideB_2.mp3"
-        },
-        {
-          "text": "I feel like they are ignoring me.",
-          "audioSrc": "public/data/audio/dummy/dummy_001_sideB_3.mp3"
-        },
-        {
-          "text": "I feel like I'm being ignored.",
-          "audioSrc": "public/data/audio/dummy/dummy_001_sideB_4.mp3"
         }
       ],
       "note": null
@@ -68,10 +60,6 @@
         {
           "text": "This way we honor the profile's configured value.",
           "audioSrc": "public/data/audio/dummy/dummy_003_sideB_2.mp3"
-        },
-        {
-          "text": "That way, we respect the configured value in the profile.",
-          "audioSrc": "public/data/audio/dummy/dummy_003_sideB_3.mp3"
         }
       ],
       "note": null
@@ -94,7 +82,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_004_sideB_2.mp3"
         }
       ],
-      "note": "~So, you say zero, right?~ is unnatural in this context. [Say] refers to the physical act of speaking, while [mean] refers to the intention or meaning behind the words (querer decir)."
+      "note": null
     },
     {
       "cardId": "dummy_005",
@@ -312,21 +300,9 @@
         {
           "text": "That is what we will rely upon.",
           "audioSrc": "public/data/audio/dummy/dummy_015_sideB_2.mp3"
-        },
-        {
-          "text": "We will rely on that.",
-          "audioSrc": "public/data/audio/dummy/dummy_015_sideB_3.mp3"
-        },
-        {
-          "text": "We will depend on that.",
-          "audioSrc": "public/data/audio/dummy/dummy_015_sideB_4.mp3"
-        },
-        {
-          "text": "We are going to rely on that.",
-          "audioSrc": "public/data/audio/dummy/dummy_015_sideB_5.mp3"
         }
       ],
-      "note": "Upon is simply a more formal and elevated version of the preposition [on]. In modern conversational English, [on] is much more common."
+      "note": null
     },
     {
       "cardId": "dummy_016",
@@ -346,7 +322,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_016_sideB_2.mp3"
         }
       ],
-      "note": "~It must be declared in a level class~ is incorrect because the compound noun is [class level] (the level of the class), and we use the preposition [at] for this context: [at the class level]."
+      "note": null
     },
     {
       "cardId": "dummy_017",
@@ -386,7 +362,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_018_sideB_2.mp3"
         }
       ],
-      "note": "~OK, I'll take a look on that~ is incorrect because the phrase is [take a look at]."
+      "note": null
     },
     {
       "cardId": "dummy_019",
@@ -444,13 +420,9 @@
         {
           "text": "You'll find the button at the top right.",
           "audioSrc": "public/data/audio/dummy/dummy_021_sideB_2.mp3"
-        },
-        {
-          "text": "You can see the button at the top right.",
-          "audioSrc": "public/data/audio/dummy/dummy_021_sideB_3.mp3"
         }
       ],
-      "note": "**[153]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_022",
@@ -470,7 +442,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_022_sideB_2.mp3"
         }
       ],
-      "note": "**[153]**\n\n~The option is at the below~ is incorrect because [below] is a preposition or adverb, not a noun. You must use [at the bottom]."
+      "note": null
     },
     {
       "cardId": "dummy_023",
@@ -548,13 +520,9 @@
         {
           "text": "The date of the purchase.",
           "audioSrc": "public/data/audio/dummy/dummy_026_sideB_2.mp3"
-        },
-        {
-          "text": "The day the order was made.",
-          "audioSrc": "public/data/audio/dummy/dummy_026_sideB_3.mp3"
         }
       ],
-      "note": "Purchase refers to the act of buying something or the item bought (compra).\n\n~The order day~ is less natural. We usually say [the day of the order]."
+      "note": null
     },
     {
       "cardId": "dummy_027",
@@ -612,13 +580,9 @@
         {
           "text": "There's an unrecognized layer.",
           "audioSrc": "public/data/audio/dummy/dummy_029_sideB_2.mp3"
-        },
-        {
-          "text": "There is an unknown layer.",
-          "audioSrc": "public/data/audio/dummy/dummy_029_sideB_3.mp3"
         }
       ],
-      "note": "~It exists some unknown layer~ is incorrect because [exist] cannot be used with a dummy 'it' followed by a noun. Use [There is] or make the noun the subject: [Some unknown layer exists]."
+      "note": null
     },
     {
       "cardId": "dummy_030",
@@ -676,13 +640,9 @@
         {
           "text": "That's not a regression, it's just a newly found bug.",
           "audioSrc": "public/data/audio/dummy/dummy_032_sideB_2.mp3"
-        },
-        {
-          "text": "It's not a setback; it's a newly discovered issue.",
-          "audioSrc": "public/data/audio/dummy/dummy_032_sideB_3.mp3"
         }
       ],
-      "note": "~It's not a regression; it's new discovered issue~ is missing the article [a] and the adverb form [newly] to modify the adjective 'discovered'."
+      "note": null
     },
     {
       "cardId": "dummy_033",
@@ -700,10 +660,6 @@
         {
           "text": "We hope to have a hybrid setup.",
           "audioSrc": "public/data/audio/dummy/dummy_033_sideB_2.mp3"
-        },
-        {
-          "text": "We're expecting to have a hybrid system.",
-          "audioSrc": "public/data/audio/dummy/dummy_033_sideB_3.mp3"
         }
       ],
       "note": null
@@ -826,7 +782,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_039_sideB_2.mp3"
         }
       ],
-      "note": "~Did I say it well?~ sounds unnatural for asking about accuracy or pronunciation. [Well] usually refers to the quality of the performance or eloquence, whereas [right] or [correctly] refers to accuracy."
+      "note": null
     },
     {
       "cardId": "dummy_040",
@@ -866,7 +822,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_041_sideB_2.mp3"
         }
       ],
-      "note": "**[111]**\n\n~I don't know what that used is for~ has incorrect word order. The passive voice structure requires the verb to be before the past participle: [what that is used for]."
+      "note": null
     },
     {
       "cardId": "dummy_042",
@@ -926,7 +882,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_044_sideB_2.mp3"
         }
       ],
-      "note": "The word [Receivable] literally means \"able to be received.\" In finance and accounting, it refers to money that a business has the right to receive because it has provided a product or service. Therefore, \"Accounts Receivable\" translates to \"Cuentas por cobrar\"."
+      "note": null
     },
     {
       "cardId": "dummy_045",
@@ -1030,7 +986,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_049_sideB_3.mp3"
         }
       ],
-      "note": "English lacks a single 1:1 noun for \"vigencia.\" Instead, English uses adjectives or verb phrases to describe the state of the account.\n\nGrammatical Shift: Spanish uses a noun (la vigencia); English prefers the adjective ([effective] or [valid]).\n\n\"Iniciado su vigencia\" translates to:\n[Become effective]: Standard for contracts and official accounts.\n[Started]: Functional simplification for user interfaces.\n\nKey Industry Terms:\n[Effective Date]: The official term for when a document or account goes live.\n[Validity]: Refers to the \"legal life\" or period an item remains usable.\n\n~It is available today or in the past~ changes the meaning. [Available] means 'disponible', while 'vigente' means [valid] or [effective] in a legal or operational context."
+      "note": "English lacks a single 1:1 noun for \"vigencia.\" Instead, English uses adjectives or verb phrases to describe the state of the account.\n\nGrammatical Shift: Spanish uses a noun (la vigencia); English prefers the adjective ([effective] or [valid]).\n\n\"Iniciado su vigencia\" translates to:\n[Become effective]: Standard for contracts and official accounts.\n[Started]: Functional simplification for user interfaces.\n\nKey Industry Terms:\n[Effective Date]: The official term for when a document or account goes live.\n[Validity]: Refers to the \"legal life\" or period an item remains usable."
     },
     {
       "cardId": "dummy_050",
@@ -1052,18 +1008,6 @@
         {
           "text": "The account must be valid starting today or in the past.",
           "audioSrc": "public/data/audio/dummy/dummy_050_sideB_3.mp3"
-        },
-        {
-          "text": "The account must have become effective today or in the past.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_4.mp3"
-        },
-        {
-          "text": "The account must have started its validity today or earlier.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_5.mp3"
-        },
-        {
-          "text": "The account must have taken effect today or prior.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_6.mp3"
         }
       ],
       "note": "English lacks a single 1:1 noun for \"vigencia.\" Instead, English uses adjectives or verb phrases to describe the state of the account.\n\nGrammatical Shift: Spanish uses a noun (la vigencia); English prefers the adjective ([effective] or [valid]).\n\n\"Iniciado su vigencia\" translates to:\n[Become effective]: Standard for contracts and official accounts.\n[Started]: Functional simplification for user interfaces.\n\nKey Industry Terms:\n[Effective Date]: The official term for when a document or account goes live.\n[Validity]: Refers to the \"legal life\" or period an item remains usable."
@@ -1086,7 +1030,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_051_sideB_2.mp3"
         }
       ],
-      "note": "~The account has no expired date~ is incorrect. [Expired] is an adjective meaning it is already out of date. The noun phrase for the deadline is [expiration date].\n\n~The account has not expiration date~ is grammatically incorrect. You must use [has no] directly before the noun, or [doesn't have an] before the noun."
+      "note": null
     },
     {
       "cardId": "dummy_052",
@@ -1106,7 +1050,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_052_sideB_2.mp3"
         }
       ],
-      "note": "~Or, if it has, that date is today or in the future~ is missing an object. The verb [has] requires an object like [one] to refer back to the date. It is more natural to use the auxiliary [does]: [if it does] or [if it has one]."
+      "note": null
     }
   ]
 }
