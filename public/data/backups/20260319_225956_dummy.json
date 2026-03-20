@@ -346,7 +346,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_016_sideB_2.mp3"
         }
       ],
-      "note": "**[87]**\n\n~It must be declared in a level class~ is incorrect because the compound noun is [class level] (the level of the class), and we use the preposition [at] for this context: [at the class level]."
+      "note": "~It must be declared in a level class~ is incorrect because the compound noun is [class level] (the level of the class), and we use the preposition [at] for this context: [at the class level]."
     },
     {
       "cardId": "dummy_017",
@@ -450,7 +450,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_021_sideB_3.mp3"
         }
       ],
-      "note": "**[153]**\n\n~You can see the button in the up right.~ is incorrect because we use the adjective [top] for the highest position, not the directional adverb [up]. Use [top right]."
+      "note": "**[153]**\n\n"
     },
     {
       "cardId": "dummy_022",
@@ -490,7 +490,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_023_sideB_2.mp3"
         }
       ],
-      "note": "**[153]**\n\n~The option is at the up.~ is incorrect because [up] is a direction, not a noun. The correct noun for the highest point is [the top].\n\n~The option is up.~ is incorrect in this context because [is up] usually means a system is functioning or refers to a general upward direction, not a specific location on a screen."
+      "note": "**[153]**"
     },
     {
       "cardId": "dummy_024",
@@ -530,7 +530,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_025_sideB_2.mp3"
         }
       ],
-      "note": "~The day the order of the products was made.~ is not the most natural choice. We typically use the preposition [for] with [order] when specifying items, or we use a compound noun like [product order].\n\n~The day the purchase for the products was made.~ is incorrect because [pedido] translates to [order], not [purchase]. Additionally, [purchase] refers to the transaction, while [order] refers to the request for the items."
+      "note": "~The day the order of the products was made.~ is not the most natural choice. We typically use the preposition [for] with [order] when specifying items, or we use a compound noun like [product order]."
     },
     {
       "cardId": "dummy_026",
@@ -554,7 +554,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_026_sideB_3.mp3"
         }
       ],
-      "note": "**[18]**\n\nPurchase refers to the act of buying something or the item bought (compra).\n\n~The order day~ is less natural. We usually say [the day of the order].\n\n~The day the purchase was done.~ is incorrect because the collocation is to [make] a purchase, not to [do] a purchase. Use [was made]."
+      "note": "Purchase refers to the act of buying something or the item bought (compra).\n\n~The order day~ is less natural. We usually say [the day of the order]."
     },
     {
       "cardId": "dummy_027",
@@ -574,7 +574,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_027_sideB_2.mp3"
         }
       ],
-      "note": "**[18]**\n\n[Purchase] (noun) translates to 'compra' or 'adquisición'. It refers to the act of buying something.\n\n~The day the order will be made.~ is not an exact translation because [order] means 'pedido', while [purchase] means 'compra'.\n\n~The day the purchase will be done.~ is incorrect because we [make] a purchase, we do not [do] it. Use [will be made]."
+      "note": "[Purchase] (noun) translates to 'compra' or 'adquisición'. It refers to the act of buying something.\n\n~The day the order will be made.~ is not an exact translation because [order] means 'pedido', while [purchase] means 'compra'."
     },
     {
       "cardId": "dummy_028",
@@ -616,10 +616,6 @@
         {
           "text": "There is an unknown layer.",
           "audioSrc": "public/data/audio/dummy/dummy_029_sideB_3.mp3"
-        },
-        {
-          "text": "There is some undiscovered layer.",
-          "audioSrc": "public/data/audio/dummy/dummy_029_sideB_4.mp3"
         }
       ],
       "note": "~It exists some unknown layer~ is incorrect because [exist] cannot be used with a dummy 'it' followed by a noun. Use [There is] or make the noun the subject: [Some unknown layer exists]."
@@ -694,7 +690,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_032_sideB_3.mp3"
         }
       ],
-      "note": "~It's not a regression; it's new discovered issue~ is missing the article [a] and the adverb form [newly] to modify the adjective 'discovered'.\n\n~It's not a setback; it's a new discovered issue.~ is incorrect because the adjective 'discovered' must be modified by an adverb [newly], not another adjective [new]."
+      "note": "~It's not a regression; it's new discovered issue~ is missing the article [a] and the adverb form [newly] to modify the adjective 'discovered'."
     },
     {
       "cardId": "dummy_033",
@@ -820,10 +816,6 @@
         {
           "text": "Did I say that right?",
           "audioSrc": "public/data/audio/dummy/dummy_038_sideB_2.mp3"
-        },
-        {
-          "text": "Did I say it right?",
-          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_3.mp3"
         }
       ],
       "note": null
@@ -866,7 +858,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_040_sideB_2.mp3"
         }
       ],
-      "note": "**[111]**"
+      "note": null
     },
     {
       "cardId": "dummy_041",
@@ -886,7 +878,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_041_sideB_2.mp3"
         }
       ],
-      "note": "**[111]**\n\n**[148]**\n\n~I don't know what that used is for~ has incorrect word order. The passive voice structure requires the verb to be before the past participle: [what that is used for].\n\n~I don't know what is that for.~ is incorrect because embedded questions must follow standard statement word order (Subject + Verb), without inversion. It should be [what that is]."
+      "note": "**[111]**\n\n~I don't know what that used is for~ has incorrect word order. The passive voice structure requires the verb to be before the past participle: [what that is used for]."
     },
     {
       "cardId": "dummy_042",
@@ -1086,7 +1078,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_050_sideB_6.mp3"
         }
       ],
-      "note": "English lacks a single 1:1 noun for \"vigencia.\" Instead, English uses adjectives or verb phrases to describe the state of the account.\n\nGrammatical Shift: Spanish uses a noun (la vigencia); English prefers the adjective ([effective] or [valid]).\n\n\"Iniciado su vigencia\" translates to:\n[Become effective]: Standard for contracts and official accounts.\n[Started]: Functional simplification for user interfaces.\n\nKey Industry Terms:\n[Effective Date]: The official term for when a document or account goes live.\n[Validity]: Refers to the \"legal life\" or period an item remains usable.\n\n~The account must have initiated today or in the past.~ is unnatural because [initiated] is typically a transitive verb requiring an object, or used in the passive voice. For accounts, [started] or [become effective] are the correct collocations."
+      "note": "English lacks a single 1:1 noun for \"vigencia.\" Instead, English uses adjectives or verb phrases to describe the state of the account.\n\nGrammatical Shift: Spanish uses a noun (la vigencia); English prefers the adjective ([effective] or [valid]).\n\n\"Iniciado su vigencia\" translates to:\n[Become effective]: Standard for contracts and official accounts.\n[Started]: Functional simplification for user interfaces.\n\nKey Industry Terms:\n[Effective Date]: The official term for when a document or account goes live.\n[Validity]: Refers to the \"legal life\" or period an item remains usable."
     },
     {
       "cardId": "dummy_051",
@@ -1124,10 +1116,6 @@
         {
           "text": "Or, assuming it does, the date is today or later.",
           "audioSrc": "public/data/audio/dummy/dummy_052_sideB_2.mp3"
-        },
-        {
-          "text": "Or, if it has one, that date is today or in the future.",
-          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_3.mp3"
         }
       ],
       "note": "~Or, if it has, that date is today or in the future~ is missing an object. The verb [has] requires an object like [one] to refer back to the date. It is more natural to use the auxiliary [does]: [if it does] or [if it has one]."
