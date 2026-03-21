@@ -26,8 +26,9 @@ async init() {
         this.container.querySelector('#improvement-modal-close-btn').addEventListener('click', () => this.hide());
         this.container.querySelector('#improvement-modal-cancel-btn').addEventListener('click', () => this.hide());
 
-        this.removeBtn.addEventListener('click', () => {R
+        this.removeBtn.addEventListener('click', () => {
             if (confirm('Are you sure you want to remove this card from the improvement list?')) {
+                console.log("VERIFY: [ImprovementModal] Trash button clicked and confirmed.");
                 this.onRemove(this.cardIdToImprove);
                 this.hide();
             }
@@ -60,12 +61,18 @@ async init() {
             const formData = new FormData(this.form);
             const reasons = formData.getAll('improvement_reason');
             const userCommentValue = formData.get('user_comment'); // Read form field into a clearly named variable.
-            this.onSave(this.cardIdToImprove, { reasons, user_comment: userCommentValue });
+            // If the user saves but hasn't checked anything or written anything, treat it as a removal.
+            if (reasons.length === 0 && userCommentValue.trim() === '') {
+                console.log("VERIFY: [ImprovementModal] Form is empty, triggering removal.");
+                this.onRemove(this.cardIdToImprove);
+            } else {
+                console.log("VERIFY: [ImprovementModal] Form has data, saving.");
+                this.onSave(this.cardIdToImprove, { reasons, user_comment: userCommentValue });
+            }
 
             this.hide();
         });
     }
-
    
 
       /**

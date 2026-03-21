@@ -481,8 +481,9 @@ class App {
         if (!cardId || !this.state.currentDeckId) return;
         console.log(`DEBUG: [App] handleUnmarkCardForImprovement -> Removing card ${cardId} from improvement list.`);
         StorageService.clearImprovementForCard(this.state.currentDeckId, cardId);
-        // Re-render the current screen to reflect the change
-        this.render(); 
+       // UI FIX: Update flag immediately without re-rendering to preserve quiz state
+        this._updateFlagIconUI(false);
+        console.log("VERIFY: [App] Flag icon set to un-marked visually.");
         
         this.notificationModal.show(
             'Card Unmarked',
@@ -500,13 +501,32 @@ class App {
         improvementData[cardId] = reviewData;
         StorageService.saveImprovementData(this.state.currentDeckId, improvementData);
 
+        // UI FIX: Update flag immediately to yellow
+        this._updateFlagIconUI(true);
+        console.log("VERIFY: [App] Flag icon set to marked (yellow) visually.");
+
         this.notificationModal.show(
             'Card Marked',
             'The card has been successfully marked for improvement.',
             { icon: 'fa-solid fa-flag', color: 'text-blue-500', bgColor: 'bg-blue-100 dark:bg-blue-900' }
-        
         );
     }
+
+    /**
+     * Helper to immediately update the visual state of the flag icons 
+     * in any active quiz screen without triggering a full render.
+     */
+    _updateFlagIconUI(isMarked) {
+        const icons = document.querySelectorAll('#mark-improve-btn-flippable i, #mark-improve-btn i');
+        icons.forEach(icon => {
+            icon.classList.toggle('text-yellow-400', isMarked);
+            icon.classList.toggle('dark:text-yellow-400', isMarked);
+            icon.classList.toggle('text-gray-400', !isMarked);
+            icon.classList.toggle('dark:text-gray-500', !isMarked);
+        });
+    }
+
+
 /**
      * Generates a definitive, professional-grade prompt for an LLM, instructing it to return a complete, actionable response.
      * @param {string} deckName - The name of the deck being improved.
@@ -515,8 +535,6 @@ class App {
      * @returns {string} A string containing the full prompt and the JSON data.
      */
 
-
-   
 
     // --- State Changers & Event Handlers ---
     async handleExportForImprovement() {
