@@ -7,27 +7,19 @@
     {
       "cardId": "dummy_001",
       "cardType": "flippable",
-      "sideA": "Siento que no me hacen mucho caso.",
+      "sideA": "Parece que esta funcionando bien.",
       "sideB": [
         {
-          "text": "I feel like I'm not being listened to much.",
+          "text": "It seems to be working fine.",
           "audioSrc": "public/data/audio/dummy/dummy_001_sideB_0.mp3"
         },
         {
-          "text": "I feel like they're not paying much attention to me.",
+          "text": "It looks like it's working well.",
           "audioSrc": "public/data/audio/dummy/dummy_001_sideB_1.mp3"
         },
         {
-          "text": "I feel like I'm being mostly ignored.",
+          "text": "It appears to be working correctly.",
           "audioSrc": "public/data/audio/dummy/dummy_001_sideB_2.mp3"
-        },
-        {
-          "text": "I feel like they are ignoring me.",
-          "audioSrc": "public/data/audio/dummy/dummy_001_sideB_3.mp3"
-        },
-        {
-          "text": "I feel like I'm being ignored.",
-          "audioSrc": "public/data/audio/dummy/dummy_001_sideB_4.mp3"
         }
       ],
       "note": null
@@ -35,18 +27,18 @@
     {
       "cardId": "dummy_002",
       "cardType": "flippable",
-      "sideA": "Siento que no me hacen caso.",
+      "sideA": "Parece que estuviera funcionando mal.",
       "sideB": [
         {
-          "text": "I feel like I'm being ignored.",
+          "text": "It seems to be malfunctioning.",
           "audioSrc": "public/data/audio/dummy/dummy_002_sideB_0.mp3"
         },
         {
-          "text": "I feel like they aren't listening to me.",
+          "text": "It looks like it's working incorrectly.",
           "audioSrc": "public/data/audio/dummy/dummy_002_sideB_1.mp3"
         },
         {
-          "text": "I feel like I'm not being heard.",
+          "text": "It appears to be acting up.",
           "audioSrc": "public/data/audio/dummy/dummy_002_sideB_2.mp3"
         }
       ],
@@ -55,23 +47,19 @@
     {
       "cardId": "dummy_003",
       "cardType": "flippable",
-      "sideA": "Así respetamos el valor configurado en el perfil.",
+      "sideA": "Un segundo tiene 1.000 milliseconds o ms.",
       "sideB": [
         {
-          "text": "That way, we respect the value configured in the profile.",
+          "text": "One second has 1,000 milliseconds or ms.",
           "audioSrc": "public/data/audio/dummy/dummy_003_sideB_0.mp3"
         },
         {
-          "text": "This ensures we keep the value set in the profile.",
+          "text": "There are 1,000 milliseconds, or ms, in a second.",
           "audioSrc": "public/data/audio/dummy/dummy_003_sideB_1.mp3"
         },
         {
-          "text": "This way we honor the profile's configured value.",
+          "text": "A single second contains 1,000 milliseconds.",
           "audioSrc": "public/data/audio/dummy/dummy_003_sideB_2.mp3"
-        },
-        {
-          "text": "That way, we respect the configured value in the profile.",
-          "audioSrc": "public/data/audio/dummy/dummy_003_sideB_3.mp3"
         }
       ],
       "note": null
@@ -79,38 +67,38 @@
     {
       "cardId": "dummy_004",
       "cardType": "flippable",
-      "sideA": "Osea, tu dices cero no?",
+      "sideA": "1500 ms es 1500 milliseconds, eso equivale a 1.5 segundos.",
       "sideB": [
         {
-          "text": "So, you mean zero, right?",
+          "text": "1,500 ms is 1,500 milliseconds, which is equivalent to 1.5 seconds.",
           "audioSrc": "public/data/audio/dummy/dummy_004_sideB_0.mp3"
         },
         {
-          "text": "I mean, you're saying zero, correct?",
+          "text": "1500 ms means 1500 milliseconds, equaling 1.5 seconds.",
           "audioSrc": "public/data/audio/dummy/dummy_004_sideB_1.mp3"
         },
         {
-          "text": "In other words, you mean zero, right?",
+          "text": "1500 milliseconds, or ms, equals 1.5 seconds.",
           "audioSrc": "public/data/audio/dummy/dummy_004_sideB_2.mp3"
         }
       ],
-      "note": "~So, you say zero, right?~ is unnatural in this context. [Say] refers to the physical act of speaking, while [mean] refers to the intention or meaning behind the words (querer decir)."
+      "note": null
     },
     {
       "cardId": "dummy_005",
       "cardType": "flippable",
-      "sideA": "Eso define los privilegios del rol usuario.",
+      "sideA": "IBE es el codigo de Oracle iStore.",
       "sideB": [
         {
-          "text": "That defines the privileges of the user role.",
+          "text": "IBE is the Oracle iStore code.",
           "audioSrc": "public/data/audio/dummy/dummy_005_sideB_0.mp3"
         },
         {
-          "text": "That determines the user role's privileges.",
+          "text": "IBE stands for the Oracle iStore code.",
           "audioSrc": "public/data/audio/dummy/dummy_005_sideB_1.mp3"
         },
         {
-          "text": "This sets the privileges for the user role.",
+          "text": "The code for Oracle iStore is IBE.",
           "audioSrc": "public/data/audio/dummy/dummy_005_sideB_2.mp3"
         }
       ],
@@ -119,18 +107,18 @@
     {
       "cardId": "dummy_006",
       "cardType": "flippable",
-      "sideA": "No conozco el alcance de sus privilegios.",
+      "sideA": "No esta devolviendo los datos.",
       "sideB": [
         {
-          "text": "I don't know the scope of their privileges.",
+          "text": "It's not returning the data.",
           "audioSrc": "public/data/audio/dummy/dummy_006_sideB_0.mp3"
         },
         {
-          "text": "I'm not aware of the extent of their privileges.",
+          "text": "It isn't sending back the data.",
           "audioSrc": "public/data/audio/dummy/dummy_006_sideB_1.mp3"
         },
         {
-          "text": "I don't know how far their privileges extend.",
+          "text": "The data is not being returned.",
           "audioSrc": "public/data/audio/dummy/dummy_006_sideB_2.mp3"
         }
       ],
@@ -139,18 +127,18 @@
     {
       "cardId": "dummy_007",
       "cardType": "flippable",
-      "sideA": "Prefiero no pensar acerca de ello.",
+      "sideA": "Sorry, soy un poco lento haciendo esto manualmente.",
       "sideB": [
         {
-          "text": "I prefer not to think about it.",
+          "text": "Sorry, I'm a bit slow doing this manually.",
           "audioSrc": "public/data/audio/dummy/dummy_007_sideB_0.mp3"
         },
         {
-          "text": "I'd rather not think about it.",
+          "text": "I apologize, I'm a little slow doing this by hand.",
           "audioSrc": "public/data/audio/dummy/dummy_007_sideB_1.mp3"
         },
         {
-          "text": "I'd prefer not to dwell on it.",
+          "text": "Sorry, doing this manually takes me a bit longer.",
           "audioSrc": "public/data/audio/dummy/dummy_007_sideB_2.mp3"
         }
       ],
@@ -159,18 +147,18 @@
     {
       "cardId": "dummy_008",
       "cardType": "flippable",
-      "sideA": "¿Quieres que te hable acerca de lo que hice?",
+      "sideA": "Soy un poco lento haciendolo de esta forma.",
       "sideB": [
         {
-          "text": "Do you want me to talk about what I did?",
+          "text": "I'm a bit slow doing it this way.",
           "audioSrc": "public/data/audio/dummy/dummy_008_sideB_0.mp3"
         },
         {
-          "text": "Would you like me to tell you about what I did?",
+          "text": "I'm a little slow doing it like this.",
           "audioSrc": "public/data/audio/dummy/dummy_008_sideB_1.mp3"
         },
         {
-          "text": "Should I go over what I've done?",
+          "text": "Doing it this way makes me a bit slow.",
           "audioSrc": "public/data/audio/dummy/dummy_008_sideB_2.mp3"
         }
       ],
@@ -179,18 +167,18 @@
     {
       "cardId": "dummy_009",
       "cardType": "flippable",
-      "sideA": "¿Quieres que te hable acerca de como debería ser?",
+      "sideA": "En el camino suelen ir apareciendo errores.",
       "sideB": [
         {
-          "text": "Do you want me to talk about how it should be?",
+          "text": "Errors usually pop up along the way.",
           "audioSrc": "public/data/audio/dummy/dummy_009_sideB_0.mp3"
         },
         {
-          "text": "Would you like me to explain how it's supposed to be?",
+          "text": "Bugs tend to appear along the way.",
           "audioSrc": "public/data/audio/dummy/dummy_009_sideB_1.mp3"
         },
         {
-          "text": "Should I go over how it ought to be?",
+          "text": "Mistakes usually show up as we go.",
           "audioSrc": "public/data/audio/dummy/dummy_009_sideB_2.mp3"
         }
       ],
@@ -199,18 +187,18 @@
     {
       "cardId": "dummy_010",
       "cardType": "flippable",
-      "sideA": "¿Quieres que te hable acerca de como debería funcionar?",
+      "sideA": "En el camino lo aprenderemos.",
       "sideB": [
         {
-          "text": "Do you want me to talk about how it should work?",
+          "text": "We'll learn it along the way.",
           "audioSrc": "public/data/audio/dummy/dummy_010_sideB_0.mp3"
         },
         {
-          "text": "Would you like me to explain how it's supposed to work?",
+          "text": "We will learn it as we go.",
           "audioSrc": "public/data/audio/dummy/dummy_010_sideB_1.mp3"
         },
         {
-          "text": "Should I discuss how it should function?",
+          "text": "We'll pick it up along the way.",
           "audioSrc": "public/data/audio/dummy/dummy_010_sideB_2.mp3"
         }
       ],
@@ -219,18 +207,18 @@
     {
       "cardId": "dummy_011",
       "cardType": "flippable",
-      "sideA": "¿Quieres que te hable acerca de lo que haré?",
+      "sideA": "En el camino te lo hare saber.",
       "sideB": [
         {
-          "text": "Do you want me to talk about what I'll do?",
+          "text": "I'll let you know along the way.",
           "audioSrc": "public/data/audio/dummy/dummy_011_sideB_0.mp3"
         },
         {
-          "text": "Would you like me to tell you what I'm going to do?",
+          "text": "I will tell you as we go.",
           "audioSrc": "public/data/audio/dummy/dummy_011_sideB_1.mp3"
         },
         {
-          "text": "Should I explain my next steps?",
+          "text": "I'll inform you along the way.",
           "audioSrc": "public/data/audio/dummy/dummy_011_sideB_2.mp3"
         }
       ],
@@ -239,18 +227,18 @@
     {
       "cardId": "dummy_012",
       "cardType": "flippable",
-      "sideA": "Cualquier persona puede hacer eso.",
+      "sideA": "Por favor, infórmanos una vez que esté arriba.",
       "sideB": [
         {
-          "text": "Anyone can do that.",
+          "text": "Please let us know once it is up.",
           "audioSrc": "public/data/audio/dummy/dummy_012_sideB_0.mp3"
         },
         {
-          "text": "Anybody is able to do that.",
+          "text": "Please inform us once it's up.",
           "audioSrc": "public/data/audio/dummy/dummy_012_sideB_1.mp3"
         },
         {
-          "text": "That's something anyone can do.",
+          "text": "Please notify us when it is up.",
           "audioSrc": "public/data/audio/dummy/dummy_012_sideB_2.mp3"
         }
       ],
@@ -259,18 +247,18 @@
     {
       "cardId": "dummy_013",
       "cardType": "flippable",
-      "sideA": "Nadie puede hacer eso acá.",
+      "sideA": "Por favor, avísanos cuando esté en funcionamiento.",
       "sideB": [
         {
-          "text": "No one can do that here.",
+          "text": "Please notify us once it is operational.",
           "audioSrc": "public/data/audio/dummy/dummy_013_sideB_0.mp3"
         },
         {
-          "text": "Nobody can do that around here.",
+          "text": "Please let us know once it is running.",
           "audioSrc": "public/data/audio/dummy/dummy_013_sideB_1.mp3"
         },
         {
-          "text": "No one is able to do that here.",
+          "text": "Please inform us when it's up and running.",
           "audioSrc": "public/data/audio/dummy/dummy_013_sideB_2.mp3"
         }
       ],
@@ -279,18 +267,18 @@
     {
       "cardId": "dummy_014",
       "cardType": "flippable",
-      "sideA": "Algunas personas pueden hacerlo.",
+      "sideA": "Hoy dia envie el .war por correo a Dimitri.",
       "sideB": [
         {
-          "text": "Some people can do it.",
+          "text": "I sent the .war file to Dimitri by email today.",
           "audioSrc": "public/data/audio/dummy/dummy_014_sideB_0.mp3"
         },
         {
-          "text": "A few people are able to do that.",
+          "text": "Today I emailed the .war file to Dimitri.",
           "audioSrc": "public/data/audio/dummy/dummy_014_sideB_1.mp3"
         },
         {
-          "text": "There are some people who can do it.",
+          "text": "I emailed Dimitri the .war file today.",
           "audioSrc": "public/data/audio/dummy/dummy_014_sideB_2.mp3"
         }
       ],
@@ -299,70 +287,58 @@
     {
       "cardId": "dummy_015",
       "cardType": "flippable",
-      "sideA": "Dependeremos de eso. / Nos basaremos en eso.",
+      "sideA": "Envie el .war por correo a Dimitri para ser deployado.",
       "sideB": [
         {
-          "text": "We will rely upon that.",
+          "text": "I sent the .war file to Dimitri by email to be deployed.",
           "audioSrc": "public/data/audio/dummy/dummy_015_sideB_0.mp3"
         },
         {
-          "text": "We'll depend upon that.",
+          "text": "I emailed the .war file to Dimitri for deployment.",
           "audioSrc": "public/data/audio/dummy/dummy_015_sideB_1.mp3"
         },
         {
-          "text": "That is what we will rely upon.",
+          "text": "I sent the .war file via email to Dimitri so it can be deployed.",
           "audioSrc": "public/data/audio/dummy/dummy_015_sideB_2.mp3"
-        },
-        {
-          "text": "We will rely on that.",
-          "audioSrc": "public/data/audio/dummy/dummy_015_sideB_3.mp3"
-        },
-        {
-          "text": "We will depend on that.",
-          "audioSrc": "public/data/audio/dummy/dummy_015_sideB_4.mp3"
-        },
-        {
-          "text": "We are going to rely on that.",
-          "audioSrc": "public/data/audio/dummy/dummy_015_sideB_5.mp3"
         }
       ],
-      "note": "Upon is simply a more formal and elevated version of the preposition [on]. In modern conversational English, [on] is much more common."
+      "note": null
     },
     {
       "cardId": "dummy_016",
       "cardType": "flippable",
-      "sideA": "Debe estar declarado a nivel de clase.",
+      "sideA": "Una vez podamos testearlo en blue, podemos crear el nuevo release.",
       "sideB": [
         {
-          "text": "It must be declared at the class level.",
+          "text": "Once we can test it in blue, we can create the new release.",
           "audioSrc": "public/data/audio/dummy/dummy_016_sideB_0.mp3"
         },
         {
-          "text": "It should be declared at the class level.",
+          "text": "As soon as we test it in the blue environment, we can create the new release.",
           "audioSrc": "public/data/audio/dummy/dummy_016_sideB_1.mp3"
         },
         {
-          "text": "It has to be declared at the class level.",
+          "text": "After testing it in blue, we can generate the new release.",
           "audioSrc": "public/data/audio/dummy/dummy_016_sideB_2.mp3"
         }
       ],
-      "note": "**[87]**\n\n~It must be declared in a level class~ is incorrect because the compound noun is [class level] (the level of the class), and we use the preposition [at] for this context: [at the class level]."
+      "note": null
     },
     {
       "cardId": "dummy_017",
       "cardType": "flippable",
-      "sideA": "Debe estar declarado en la zona declarativa.",
+      "sideA": "El debe 1356 dolares.",
       "sideB": [
         {
-          "text": "It must be declared in the declarative section.",
+          "text": "He owes 1356 dollars.",
           "audioSrc": "public/data/audio/dummy/dummy_017_sideB_0.mp3"
         },
         {
-          "text": "It should be declared in the declarative zone.",
+          "text": "He owes one thousand three hundred and fifty-six dollars.",
           "audioSrc": "public/data/audio/dummy/dummy_017_sideB_1.mp3"
         },
         {
-          "text": "It has to be in the declarative area.",
+          "text": "He has a debt of 1356 dollars.",
           "audioSrc": "public/data/audio/dummy/dummy_017_sideB_2.mp3"
         }
       ],
@@ -371,38 +347,38 @@
     {
       "cardId": "dummy_018",
       "cardType": "flippable",
-      "sideA": "OK, le daré un vistazo a ese.",
+      "sideA": "Parece que ya está funcionando.",
       "sideB": [
         {
-          "text": "OK, I'll take a look at that one.",
+          "text": "It seems to be working now.",
           "audioSrc": "public/data/audio/dummy/dummy_018_sideB_0.mp3"
         },
         {
-          "text": "Alright, I'll give that one a look.",
+          "text": "It looks like it's working already.",
           "audioSrc": "public/data/audio/dummy/dummy_018_sideB_1.mp3"
         },
         {
-          "text": "OK, I will look into that one.",
+          "text": "It appears to be functioning now.",
           "audioSrc": "public/data/audio/dummy/dummy_018_sideB_2.mp3"
         }
       ],
-      "note": "~OK, I'll take a look on that~ is incorrect because the phrase is [take a look at]."
+      "note": null
     },
     {
       "cardId": "dummy_019",
       "cardType": "flippable",
-      "sideA": "En los pricing details puedes ver los diferentes ajustes que ha recibido.",
+      "sideA": "Parecen tener el mismo issue.",
       "sideB": [
         {
-          "text": "In the pricing details, you can see the different adjustments it has received.",
+          "text": "They seem to have the same issue.",
           "audioSrc": "public/data/audio/dummy/dummy_019_sideB_0.mp3"
         },
         {
-          "text": "You can see the various adjustments it got in the pricing details.",
+          "text": "It looks like they have the same issue.",
           "audioSrc": "public/data/audio/dummy/dummy_019_sideB_1.mp3"
         },
         {
-          "text": "The pricing details show the different adjustments it's had.",
+          "text": "They appear to be experiencing the same issue.",
           "audioSrc": "public/data/audio/dummy/dummy_019_sideB_2.mp3"
         }
       ],
@@ -411,234 +387,218 @@
     {
       "cardId": "dummy_020",
       "cardType": "flippable",
-      "sideA": "Puedes ver el botón en la parte izquierda de abajo.",
+      "sideA": "Parece que hay un delay.",
       "sideB": [
         {
-          "text": "You can see the button in the bottom left.",
+          "text": "There seems to be a delay.",
           "audioSrc": "public/data/audio/dummy/dummy_020_sideB_0.mp3"
         },
         {
-          "text": "The button is visible in the bottom left corner.",
+          "text": "It looks like there's a delay.",
           "audioSrc": "public/data/audio/dummy/dummy_020_sideB_1.mp3"
         },
         {
-          "text": "You'll find the button at the bottom left.",
+          "text": "It appears there is a delay.",
           "audioSrc": "public/data/audio/dummy/dummy_020_sideB_2.mp3"
         }
       ],
-      "note": "**[153]**\n\n~You can see the button in the left bottom.~ is not natural. In English, vertical positions ([top], [bottom]) always precede horizontal positions ([left], [right]), so it must be [bottom left]."
+      "note": null
     },
     {
       "cardId": "dummy_021",
       "cardType": "flippable",
-      "sideA": "Puedes ver el botón en la parte derecha de arriba.",
+      "sideA": "Todo parece estar en orden.",
       "sideB": [
         {
-          "text": "You can see the button in the top right.",
+          "text": "Everything seems to be in order.",
           "audioSrc": "public/data/audio/dummy/dummy_021_sideB_0.mp3"
         },
         {
-          "text": "The button is visible in the top right corner.",
+          "text": "It looks like everything is in order.",
           "audioSrc": "public/data/audio/dummy/dummy_021_sideB_1.mp3"
         },
         {
-          "text": "You'll find the button at the top right.",
+          "text": "Everything appears to be fine.",
           "audioSrc": "public/data/audio/dummy/dummy_021_sideB_2.mp3"
-        },
-        {
-          "text": "You can see the button at the top right.",
-          "audioSrc": "public/data/audio/dummy/dummy_021_sideB_3.mp3"
         }
       ],
-      "note": "**[153]**\n\n~You can see the button in the up right.~ is incorrect because we use the adjective [top] for the highest position, not the directional adverb [up]. Use [top right]."
+      "note": null
     },
     {
       "cardId": "dummy_022",
       "cardType": "flippable",
-      "sideA": "La opción esta en la parte de abajo.",
+      "sideA": "Nuestros ingresos mensuales están aumentando.",
       "sideB": [
         {
-          "text": "The option is at the bottom.",
+          "text": "Our monthly revenue is increasing.",
           "audioSrc": "public/data/audio/dummy/dummy_022_sideB_0.mp3"
         },
         {
-          "text": "The option is down at the bottom.",
+          "text": "Our monthly income is going up.",
           "audioSrc": "public/data/audio/dummy/dummy_022_sideB_1.mp3"
         },
         {
-          "text": "You'll find the option at the bottom.",
+          "text": "Our revenue per month is growing.",
           "audioSrc": "public/data/audio/dummy/dummy_022_sideB_2.mp3"
         }
       ],
-      "note": "**[153]**\n\n~The option is at the below~ is incorrect because [below] is a preposition or adverb, not a noun. You must use [at the bottom]."
+      "note": null
     },
     {
       "cardId": "dummy_023",
       "cardType": "flippable",
-      "sideA": "La opción esta en la parte de arriba.",
+      "sideA": "La empresa reportó ingresos récord este año.",
       "sideB": [
         {
-          "text": "The option is at the top.",
+          "text": "The company reported record revenue this year.",
           "audioSrc": "public/data/audio/dummy/dummy_023_sideB_0.mp3"
         },
         {
-          "text": "The option is up at the top.",
+          "text": "The business announced record revenue this year.",
           "audioSrc": "public/data/audio/dummy/dummy_023_sideB_1.mp3"
         },
         {
-          "text": "You'll find the option at the top.",
+          "text": "The company posted record earnings this year.",
           "audioSrc": "public/data/audio/dummy/dummy_023_sideB_2.mp3"
         }
       ],
-      "note": "**[153]**\n\n~The option is at the up.~ is incorrect because [up] is a direction, not a noun. The correct noun for the highest point is [the top].\n\n~The option is up.~ is incorrect in this context because [is up] usually means a system is functioning or refers to a general upward direction, not a specific location on a screen."
+      "note": null
     },
     {
       "cardId": "dummy_024",
       "cardType": "flippable",
-      "sideA": "Son pocos problemas, podemos resolverlos pronto.",
+      "sideA": "Necesitamos maximizar nuestra utilidad neta.",
       "sideB": [
         {
-          "text": "There are only a few issues; we can resolve them soon.",
+          "text": "We need to maximize our net profit.",
           "audioSrc": "public/data/audio/dummy/dummy_024_sideB_0.mp3"
         },
         {
-          "text": "It's just a few problems, we can fix them quickly.",
+          "text": "We must maximize our net income.",
           "audioSrc": "public/data/audio/dummy/dummy_024_sideB_1.mp3"
         },
         {
-          "text": "They are minor issues, we can solve them shortly.",
+          "text": "We have to maximize our bottom line.",
           "audioSrc": "public/data/audio/dummy/dummy_024_sideB_2.mp3"
         }
       ],
-      "note": "**[105]**\n\n~There are only a litte bit issues; we can resolve them soon.~ is not valid because [issues] is a countable noun. You must use [a few] for countable nouns. [A little bit] is used with uncountable nouns."
+      "note": null
     },
     {
       "cardId": "dummy_025",
       "cardType": "flippable",
-      "sideA": "El día que se hizo el pedido de los productos.",
+      "sideA": "Los altos costos redujeron nuestra ganancia total.",
       "sideB": [
         {
-          "text": "The day the products were ordered.",
+          "text": "The high costs reduced our total profit.",
           "audioSrc": "public/data/audio/dummy/dummy_025_sideB_0.mp3"
         },
         {
-          "text": "The day the product order was placed.",
+          "text": "High costs cut into our total profit.",
           "audioSrc": "public/data/audio/dummy/dummy_025_sideB_1.mp3"
         },
         {
-          "text": "The day the order for the products was made.",
+          "text": "The total profit was reduced by the high costs.",
           "audioSrc": "public/data/audio/dummy/dummy_025_sideB_2.mp3"
         }
       ],
-      "note": "~The day the order of the products was made.~ is not the most natural choice. We typically use the preposition [for] with [order] when specifying items, or we use a compound noun like [product order].\n\n~The day the purchase for the products was made.~ is incorrect because [pedido] translates to [order], not [purchase]. Additionally, [purchase] refers to the transaction, while [order] refers to the request for the items."
+      "note": null
     },
     {
       "cardId": "dummy_026",
       "cardType": "flippable",
-      "sideA": "El día que se hizo la compra.",
+      "sideA": "Los ingresos es lo que recaudas, la ganancia es lo que conservas.",
       "sideB": [
         {
-          "text": "The day the purchase was made.",
+          "text": "Revenue is what you collect, profit is what you keep.",
           "audioSrc": "public/data/audio/dummy/dummy_026_sideB_0.mp3"
         },
         {
-          "text": "The day the purchase took place.",
+          "text": "Revenue is the money you bring in, profit is what stays.",
           "audioSrc": "public/data/audio/dummy/dummy_026_sideB_1.mp3"
         },
         {
-          "text": "The date of the purchase.",
+          "text": "Income is what you collect, whereas profit is what you keep.",
           "audioSrc": "public/data/audio/dummy/dummy_026_sideB_2.mp3"
-        },
-        {
-          "text": "The day the order was made.",
-          "audioSrc": "public/data/audio/dummy/dummy_026_sideB_3.mp3"
         }
       ],
-      "note": "**[18]**\n\nPurchase refers to the act of buying something or the item bought (compra).\n\n~The order day~ is less natural. We usually say [the day of the order].\n\n~The day the purchase was done.~ is incorrect because the collocation is to [make] a purchase, not to [do] a purchase. Use [was made]."
+      "note": null
     },
     {
       "cardId": "dummy_027",
       "cardType": "flippable",
-      "sideA": "El día que se hará la compra.",
+      "sideA": "Por favor, verifique la dirección de facturación en esta factura.",
       "sideB": [
         {
-          "text": "The day the purchase will be made.",
+          "text": "Please verify the BILL TO address on this invoice.",
           "audioSrc": "public/data/audio/dummy/dummy_027_sideB_0.mp3"
         },
         {
-          "text": "The day the purchase is going to be made.",
+          "text": "Kindly check the billing address on this invoice.",
           "audioSrc": "public/data/audio/dummy/dummy_027_sideB_1.mp3"
         },
         {
-          "text": "The date the purchase will take place.",
+          "text": "Please double-check the billing address on this invoice.",
           "audioSrc": "public/data/audio/dummy/dummy_027_sideB_2.mp3"
         }
       ],
-      "note": "**[18]**\n\n[Purchase] (noun) translates to 'compra' or 'adquisición'. It refers to the act of buying something.\n\n~The day the order will be made.~ is not an exact translation because [order] means 'pedido', while [purchase] means 'compra'.\n\n~The day the purchase will be done.~ is incorrect because we [make] a purchase, we do not [do] it. Use [will be made]."
+      "note": null
     },
     {
       "cardId": "dummy_028",
       "cardType": "flippable",
-      "sideA": "Existe una configuración desconocida.",
+      "sideA": "Los datos del solicitante y de facturación son los mismos.",
       "sideB": [
         {
-          "text": "There is an unknown configuration.",
+          "text": "The SOLD TO and BILL TO information is the same.",
           "audioSrc": "public/data/audio/dummy/dummy_028_sideB_0.mp3"
         },
         {
-          "text": "An unknown setting exists.",
+          "text": "The ordering and billing details are identical.",
           "audioSrc": "public/data/audio/dummy/dummy_028_sideB_1.mp3"
         },
         {
-          "text": "There's an unrecognized configuration.",
+          "text": "The buyer and billing details are one and the same.",
           "audioSrc": "public/data/audio/dummy/dummy_028_sideB_2.mp3"
         }
       ],
-      "note": "~There is an undiscovered configuration.~ is not the best fit. [Undiscovered] implies something hidden that hasn't been found yet, whereas [unknown] means it is not recognized or identified by the system."
+      "note": null
     },
     {
       "cardId": "dummy_029",
       "cardType": "flippable",
-      "sideA": "Existe alguna layer desconocida.",
+      "sideA": "Cambie el campo de solicitante por nuestra sucursal regional.",
       "sideB": [
         {
-          "text": "There is some unknown layer.",
+          "text": "Change the SOLD TO field to our regional branch.",
           "audioSrc": "public/data/audio/dummy/dummy_029_sideB_0.mp3"
         },
         {
-          "text": "Some unknown layer exists.",
+          "text": "Update the ordering party to our regional office.",
           "audioSrc": "public/data/audio/dummy/dummy_029_sideB_1.mp3"
         },
         {
-          "text": "There's an unrecognized layer.",
+          "text": "Please switch the \"Sold To\" party to our regional branch.",
           "audioSrc": "public/data/audio/dummy/dummy_029_sideB_2.mp3"
-        },
-        {
-          "text": "There is an unknown layer.",
-          "audioSrc": "public/data/audio/dummy/dummy_029_sideB_3.mp3"
-        },
-        {
-          "text": "There is some undiscovered layer.",
-          "audioSrc": "public/data/audio/dummy/dummy_029_sideB_4.mp3"
         }
       ],
-      "note": "~It exists some unknown layer~ is incorrect because [exist] cannot be used with a dummy 'it' followed by a noun. Use [There is] or make the noun the subject: [Some unknown layer exists]."
+      "note": null
     },
     {
       "cardId": "dummy_030",
       "cardType": "flippable",
-      "sideA": "Escucho todo el día inglés, cosas como podcast, o videos random.",
+      "sideA": "Oficina corporativa para facturación y bodega para despacho.",
       "sideB": [
         {
-          "text": "I listen to English all day, things like podcasts or random videos.",
+          "text": "Corporate for BILL TO and warehouse for SHIP TO.",
           "audioSrc": "public/data/audio/dummy/dummy_030_sideB_0.mp3"
         },
         {
-          "text": "I hear English all day long, like podcasts or random videos.",
+          "text": "Bill to corporate; ship to warehouse.",
           "audioSrc": "public/data/audio/dummy/dummy_030_sideB_1.mp3"
         },
         {
-          "text": "I spend all day listening to English through podcasts and random videos.",
+          "text": "Invoice the corporate office and deliver to the warehouse.",
           "audioSrc": "public/data/audio/dummy/dummy_030_sideB_2.mp3"
         }
       ],
@@ -647,490 +607,122 @@
     {
       "cardId": "dummy_031",
       "cardType": "flippable",
-      "sideA": "Pero no son retrocesos, son problemas no descubiertos.",
+      "sideA": "Necesito una guía rápida para la nueva sintaxis.",
       "sideB": [
         {
-          "text": "But they aren't regressions; they are undiscovered issues.",
+          "text": "I need a cheatsheet for the new syntax.",
           "audioSrc": "public/data/audio/dummy/dummy_031_sideB_0.mp3"
         },
         {
-          "text": "They are not regressions, they are just unfound problems.",
+          "text": "I require a quick reference guide for the new syntax.",
           "audioSrc": "public/data/audio/dummy/dummy_031_sideB_1.mp3"
         },
         {
-          "text": "They're not steps back, they're undiscovered issues.",
+          "text": "I need a quick guide for the new syntax.",
           "audioSrc": "public/data/audio/dummy/dummy_031_sideB_2.mp3"
-        },
-        {
-          "text": "They're not setbacks, they're undiscovered issues.",
-          "audioSrc": "public/data/audio/dummy/dummy_031_sideB_3.mp3"
-        },
-        {
-          "text": "They're not steps back, they're unknown issues.",
-          "audioSrc": "public/data/audio/dummy/dummy_031_sideB_4.mp3"
         }
       ],
-      "note": "~They're not stepbacks, they're undiscovered issues.~ is not valid because [stepbacks] is not a standard word. The correct noun is [setbacks] or the phrase [steps back]."
+      "note": null
     },
     {
       "cardId": "dummy_032",
       "cardType": "flippable",
-      "sideA": "No es un retroceso, es un nuevo problema descubierto.",
+      "sideA": "Tengo una guía rápida para las consultas de la BD.",
       "sideB": [
         {
-          "text": "It's not a regression; it's a newly discovered issue.",
+          "text": "I have a DB query cheatsheet.",
           "audioSrc": "public/data/audio/dummy/dummy_032_sideB_0.mp3"
         },
         {
-          "text": "It isn't a regression, it's a new problem we found.",
+          "text": "I have a quick guide for the database queries.",
           "audioSrc": "public/data/audio/dummy/dummy_032_sideB_1.mp3"
         },
         {
-          "text": "That's not a regression, it's just a newly found bug.",
+          "text": "I have a quick reference guide for DB queries.",
           "audioSrc": "public/data/audio/dummy/dummy_032_sideB_2.mp3"
-        },
-        {
-          "text": "It's not a setback; it's a newly discovered issue.",
-          "audioSrc": "public/data/audio/dummy/dummy_032_sideB_3.mp3"
         }
       ],
-      "note": "~It's not a regression; it's new discovered issue~ is missing the article [a] and the adverb form [newly] to modify the adjective 'discovered'.\n\n~It's not a setback; it's a new discovered issue.~ is incorrect because the adjective 'discovered' must be modified by an adverb [newly], not another adjective [new]."
+      "note": null
     },
     {
       "cardId": "dummy_033",
       "cardType": "flippable",
-      "sideA": "Esperamos tener un sistema híbrido.",
+      "sideA": "Todavía le debo mucho dinero al banco.",
       "sideB": [
         {
-          "text": "We expect to have a hybrid system.",
+          "text": "I still owe a lot of money to the bank.",
           "audioSrc": "public/data/audio/dummy/dummy_033_sideB_0.mp3"
         },
         {
-          "text": "We're hoping for a hybrid system.",
+          "text": "I still owe the bank a lot of money.",
           "audioSrc": "public/data/audio/dummy/dummy_033_sideB_1.mp3"
         },
         {
-          "text": "We hope to have a hybrid setup.",
+          "text": "I still owe a large amount to the bank.",
           "audioSrc": "public/data/audio/dummy/dummy_033_sideB_2.mp3"
-        },
-        {
-          "text": "We're expecting to have a hybrid system.",
-          "audioSrc": "public/data/audio/dummy/dummy_033_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "**[203]**\n\n"
     },
     {
       "cardId": "dummy_034",
       "cardType": "flippable",
-      "sideA": "El update popup será híbrido.",
+      "sideA": "Adquiriremos los nuevos servidores el próximo mes.",
       "sideB": [
         {
-          "text": "The update popup will be hybrid.",
+          "text": "We will purchase the new servers next month.",
           "audioSrc": "public/data/audio/dummy/dummy_034_sideB_0.mp3"
         },
         {
-          "text": "The update prompt will be hybrid.",
+          "text": "We are going to purchase the new servers next month.",
           "audioSrc": "public/data/audio/dummy/dummy_034_sideB_1.mp3"
         },
         {
-          "text": "The update modal will be a hybrid one.",
+          "text": "We plan to purchase the new servers next month.",
           "audioSrc": "public/data/audio/dummy/dummy_034_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "**[203]**\n\n"
     },
     {
       "cardId": "dummy_035",
       "cardType": "flippable",
-      "sideA": "Necesitaremos subir el número de versión en el profile.",
+      "sideA": "La actualización del software causó un retroceso funcional.",
       "sideB": [
         {
-          "text": "We'll need to bump the version number in the profile.",
+          "text": "The software update caused a functional regression.",
           "audioSrc": "public/data/audio/dummy/dummy_035_sideB_0.mp3"
         },
         {
-          "text": "We will need to increase the version number in the profile.",
+          "text": "A functional regression was caused by the software update.",
           "audioSrc": "public/data/audio/dummy/dummy_035_sideB_1.mp3"
         },
         {
-          "text": "We'll have to bump up the version in the profile.",
+          "text": "The update to the software resulted in a functional regression.",
           "audioSrc": "public/data/audio/dummy/dummy_035_sideB_2.mp3"
         }
       ],
-      "note": "~We'll need to increase the number of the version in the profile.~ sounds unnatural. We use the compound noun [version number] instead of connecting them with [of]."
+      "note": "**[204]**\n\n"
     },
     {
       "cardId": "dummy_036",
       "cardType": "flippable",
-      "sideA": "Debemos subir la version en el profile en cada release.",
+      "sideA": "El recorte de presupuesto fue un gran contratiempo para el equipo.",
       "sideB": [
         {
-          "text": "We must bump the version in the profile for every release.",
+          "text": "A budget cut was a major setback for the team.",
           "audioSrc": "public/data/audio/dummy/dummy_036_sideB_0.mp3"
         },
         {
-          "text": "We need to increase the version in the profile on each release.",
+          "text": "The budget cut acted as a huge setback for the team.",
           "audioSrc": "public/data/audio/dummy/dummy_036_sideB_1.mp3"
         },
         {
-          "text": "We have to bump up the version in the profile with every release.",
+          "text": "The team experienced a major setback due to the budget cut.",
           "audioSrc": "public/data/audio/dummy/dummy_036_sideB_2.mp3"
         }
       ],
-      "note": "~We need to go up the version in the profile on each release.~ is not valid because [go up] is intransitive and cannot take a direct object. You must use a transitive verb like [increase], [raise], or [bump]."
-    },
-    {
-      "cardId": "dummy_037",
-      "cardType": "flippable",
-      "sideA": "Debe ser un trabajo coordinado.",
-      "sideB": [
-        {
-          "text": "It must be a coordinated effort.",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_0.mp3"
-        },
-        {
-          "text": "It needs to be a coordinated job.",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_1.mp3"
-        },
-        {
-          "text": "It has to be coordinated work.",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_2.mp3"
-        },
-        {
-          "text": "It must be coordinated work.",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_038",
-      "cardType": "flippable",
-      "sideA": "¿Está bien dicho?",
-      "sideB": [
-        {
-          "text": "Is that said correctly?",
-          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_0.mp3"
-        },
-        {
-          "text": "Is that the right way to say it?",
-          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_1.mp3"
-        },
-        {
-          "text": "Did I say that right?",
-          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_2.mp3"
-        },
-        {
-          "text": "Did I say it right?",
-          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_039",
-      "cardType": "flippable",
-      "sideA": "¿Lo dije bien?",
-      "sideB": [
-        {
-          "text": "Did I say it right?",
-          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_0.mp3"
-        },
-        {
-          "text": "Did I say it correctly?",
-          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_1.mp3"
-        },
-        {
-          "text": "Was that said properly?",
-          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_2.mp3"
-        }
-      ],
-      "note": "~Did I say it well?~ sounds unnatural for asking about accuracy or pronunciation. [Well] usually refers to the quality of the performance or eloquence, whereas [right] or [correctly] refers to accuracy."
-    },
-    {
-      "cardId": "dummy_040",
-      "cardType": "flippable",
-      "sideA": "No sé para qué es esto.",
-      "sideB": [
-        {
-          "text": "I don't know what this is for.",
-          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_0.mp3"
-        },
-        {
-          "text": "I have no idea what this is for.",
-          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_1.mp3"
-        },
-        {
-          "text": "I'm not sure what this is used for.",
-          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_2.mp3"
-        }
-      ],
-      "note": "**[111]**"
-    },
-    {
-      "cardId": "dummy_041",
-      "cardType": "flippable",
-      "sideA": "No sé para qué es eso.",
-      "sideB": [
-        {
-          "text": "I don't know what that is for.",
-          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_0.mp3"
-        },
-        {
-          "text": "I have no idea what that is for.",
-          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_1.mp3"
-        },
-        {
-          "text": "I'm not sure what that is used for.",
-          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_2.mp3"
-        }
-      ],
-      "note": "**[111]**\n\n**[148]**\n\n~I don't know what that used is for~ has incorrect word order. The passive voice structure requires the verb to be before the past participle: [what that is used for].\n\n~I don't know what is that for.~ is incorrect because embedded questions must follow standard statement word order (Subject + Verb), without inversion. It should be [what that is]."
-    },
-    {
-      "cardId": "dummy_042",
-      "cardType": "flippable",
-      "sideA": "¿Qué parte demora más en cargar?",
-      "sideB": [
-        {
-          "text": "Which part takes the longest to load?",
-          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_0.mp3"
-        },
-        {
-          "text": "What part takes more time to load?",
-          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_1.mp3"
-        },
-        {
-          "text": "Which part takes longer to load?",
-          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_043",
-      "cardType": "flippable",
-      "sideA": "Las Cuentas por Cobrar son el dinero que los clientes deben a la empresa.",
-      "sideB": [
-        {
-          "text": "Accounts Receivable is the money that customers owe to the company.",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_0.mp3"
-        },
-        {
-          "text": "Accounts Receivable represents the money clients owe the company.",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_1.mp3"
-        },
-        {
-          "text": "Accounts Receivable are the funds owed to the business by its customers.",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_044",
-      "cardType": "flippable",
-      "sideA": "Las Cuentas por Cobrar gestionan los límites de crédito de los clientes.",
-      "sideB": [
-        {
-          "text": "Accounts Receivable manages the credit limits of the customers.",
-          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_0.mp3"
-        },
-        {
-          "text": "Accounts Receivable handles customer credit limits.",
-          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_1.mp3"
-        },
-        {
-          "text": "Accounts Receivable controls the credit limits for clients.",
-          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_2.mp3"
-        }
-      ],
-      "note": "The word [Receivable] literally means \"able to be received.\" In finance and accounting, it refers to money that a business has the right to receive because it has provided a product or service. Therefore, \"Accounts Receivable\" translates to \"Cuentas por cobrar\"."
-    },
-    {
-      "cardId": "dummy_045",
-      "cardType": "flippable",
-      "sideA": "Las Cuentas por Cobrar se clasifican como un activo de la empresa.",
-      "sideB": [
-        {
-          "text": "Accounts Receivable are classified as a company asset.",
-          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_0.mp3"
-        },
-        {
-          "text": "Accounts Receivable is categorized as an asset of the company.",
-          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_1.mp3"
-        },
-        {
-          "text": "Accounts Receivable is considered a company asset.",
-          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_2.mp3"
-        }
-      ],
-      "note": "~Accounts Receivable are classified as an active for the company.~ is not valid because [active] is a false friend in this context. The financial term for 'activo' is [asset]."
-    },
-    {
-      "cardId": "dummy_046",
-      "cardType": "flippable",
-      "sideA": "Ha tomado tiempo.",
-      "sideB": [
-        {
-          "text": "It has taken time.",
-          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_0.mp3"
-        },
-        {
-          "text": "It's taken some time.",
-          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_1.mp3"
-        },
-        {
-          "text": "It has taken a while.",
-          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_047",
-      "cardType": "flippable",
-      "sideA": "Ha tomado tiempo lograrlo.",
-      "sideB": [
-        {
-          "text": "It has taken time to achieve it.",
-          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_0.mp3"
-        },
-        {
-          "text": "It's taken time to get it done.",
-          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_1.mp3"
-        },
-        {
-          "text": "It has taken a while to accomplish it.",
-          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_048",
-      "cardType": "flippable",
-      "sideA": "Ha tomado un largo tiempo...",
-      "sideB": [
-        {
-          "text": "It has taken a long time...",
-          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_0.mp3"
-        },
-        {
-          "text": "It's taken quite a while...",
-          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_1.mp3"
-        },
-        {
-          "text": "It has taken a long while...",
-          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_049",
-      "cardType": "flippable",
-      "sideA": "Es vigente hoy o en el pasado.",
-      "sideB": [
-        {
-          "text": "It is valid today or in the past.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_0.mp3"
-        },
-        {
-          "text": "It is effective today or earlier.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_1.mp3"
-        },
-        {
-          "text": "It is active as of today or a prior date.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_2.mp3"
-        },
-        {
-          "text": "It is in force today or in the past.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_3.mp3"
-        }
-      ],
-      "note": "English lacks a single 1:1 noun for \"vigencia.\" Instead, English uses adjectives or verb phrases to describe the state of the account.\n\nGrammatical Shift: Spanish uses a noun (la vigencia); English prefers the adjective ([effective] or [valid]).\n\n\"Iniciado su vigencia\" translates to:\n[Become effective]: Standard for contracts and official accounts.\n[Started]: Functional simplification for user interfaces.\n\nKey Industry Terms:\n[Effective Date]: The official term for when a document or account goes live.\n[Validity]: Refers to the \"legal life\" or period an item remains usable.\n\n~It is available today or in the past~ changes the meaning. [Available] means 'disponible', while 'vigente' means [valid] or [effective] in a legal or operational context."
-    },
-    {
-      "cardId": "dummy_050",
-      "cardType": "flippable",
-      "sideA": "La cuenta debe haber iniciado su vigencia hoy o en el pasado.",
-      "sideB": [
-        {
-          "text": "The account's effective date must be today or in the past.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_0.mp3"
-        },
-        {
-          "text": "The account must have started today or earlier.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_1.mp3"
-        },
-        {
-          "text": "Account activation must date back to today or earlier.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_2.mp3"
-        },
-        {
-          "text": "The account must be valid starting today or in the past.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_3.mp3"
-        },
-        {
-          "text": "The account must have become effective today or in the past.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_4.mp3"
-        },
-        {
-          "text": "The account must have started its validity today or earlier.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_5.mp3"
-        },
-        {
-          "text": "The account must have taken effect today or prior.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_6.mp3"
-        }
-      ],
-      "note": "English lacks a single 1:1 noun for \"vigencia.\" Instead, English uses adjectives or verb phrases to describe the state of the account.\n\nGrammatical Shift: Spanish uses a noun (la vigencia); English prefers the adjective ([effective] or [valid]).\n\n\"Iniciado su vigencia\" translates to:\n[Become effective]: Standard for contracts and official accounts.\n[Started]: Functional simplification for user interfaces.\n\nKey Industry Terms:\n[Effective Date]: The official term for when a document or account goes live.\n[Validity]: Refers to the \"legal life\" or period an item remains usable.\n\n~The account must have initiated today or in the past.~ is unnatural because [initiated] is typically a transitive verb requiring an object, or used in the passive voice. For accounts, [started] or [become effective] are the correct collocations."
-    },
-    {
-      "cardId": "dummy_051",
-      "cardType": "flippable",
-      "sideA": "La cuenta no tiene fecha de expiración.",
-      "sideB": [
-        {
-          "text": "The account has no expiration date.",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_0.mp3"
-        },
-        {
-          "text": "The account doesn't have an expiry date.",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_1.mp3"
-        },
-        {
-          "text": "There is no expiration date on the account.",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_2.mp3"
-        }
-      ],
-      "note": "~The account has no expired date~ is incorrect. [Expired] is an adjective meaning it is already out of date. The noun phrase for the deadline is [expiration date].\n\n~The account has not expiration date~ is grammatically incorrect. You must use [has no] directly before the noun, or [doesn't have an] before the noun."
-    },
-    {
-      "cardId": "dummy_052",
-      "cardType": "flippable",
-      "sideA": "O, si la tiene, esa fecha es hoy o está en el futuro.",
-      "sideB": [
-        {
-          "text": "Or, if it does, that date is today or in the future.",
-          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_0.mp3"
-        },
-        {
-          "text": "Or, if it does have one, it's today or in the future.",
-          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_1.mp3"
-        },
-        {
-          "text": "Or, assuming it does, the date is today or later.",
-          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_2.mp3"
-        },
-        {
-          "text": "Or, if it has one, that date is today or in the future.",
-          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_3.mp3"
-        }
-      ],
-      "note": "~Or, if it has, that date is today or in the future~ is missing an object. The verb [has] requires an object like [one] to refer back to the date. It is more natural to use the auxiliary [does]: [if it does] or [if it has one]."
+      "note": "**[204]**\n\n"
     }
   ]
 }

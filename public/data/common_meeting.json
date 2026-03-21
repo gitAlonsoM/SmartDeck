@@ -23959,6 +23959,1142 @@
         }
       ],
       "note": "**[190]**\n\n"
+    },
+    {
+      "cardId": "mi_1059",
+      "cardType": "flippable",
+      "sideA": "Siento que no me hacen mucho caso.",
+      "sideB": [
+        {
+          "text": "I feel like I'm not being listened to much.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1059_sideB_0.mp3"
+        },
+        {
+          "text": "I feel like they're not paying much attention to me.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1059_sideB_1.mp3"
+        },
+        {
+          "text": "I feel like I'm being mostly ignored.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1059_sideB_2.mp3"
+        },
+        {
+          "text": "I feel like they are ignoring me.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1059_sideB_3.mp3"
+        },
+        {
+          "text": "I feel like I'm being ignored.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1059_sideB_4.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1060",
+      "cardType": "flippable",
+      "sideA": "Siento que no me hacen caso.",
+      "sideB": [
+        {
+          "text": "I feel like I'm being ignored.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1060_sideB_0.mp3"
+        },
+        {
+          "text": "I feel like they aren't listening to me.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1060_sideB_1.mp3"
+        },
+        {
+          "text": "I feel like I'm not being heard.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1060_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1061",
+      "cardType": "flippable",
+      "sideA": "Así respetamos el valor configurado en el perfil.",
+      "sideB": [
+        {
+          "text": "That way, we respect the value configured in the profile.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1061_sideB_0.mp3"
+        },
+        {
+          "text": "This ensures we keep the value set in the profile.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1061_sideB_1.mp3"
+        },
+        {
+          "text": "This way we honor the profile's configured value.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1061_sideB_2.mp3"
+        },
+        {
+          "text": "That way, we respect the configured value in the profile.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1061_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1062",
+      "cardType": "flippable",
+      "sideA": "Osea, tu dices cero no?",
+      "sideB": [
+        {
+          "text": "So, you mean zero, right?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1062_sideB_0.mp3"
+        },
+        {
+          "text": "I mean, you're saying zero, correct?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1062_sideB_1.mp3"
+        },
+        {
+          "text": "In other words, you mean zero, right?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1062_sideB_2.mp3"
+        }
+      ],
+      "note": "~So, you say zero, right?~ is unnatural in this context. [Say] refers to the physical act of speaking, while [mean] refers to the intention or meaning behind the words (querer decir).\n\n~So, you mean zero, no?~ and ~So, you mean zero, not?~ are incorrect. English does not use [no] or [not] as a question tag at the end of a sentence. You must use [right], [correct], or a proper question tag."
+    },
+    {
+      "cardId": "mi_1063",
+      "cardType": "flippable",
+      "sideA": "Eso define los privilegios del rol usuario.",
+      "sideB": [
+        {
+          "text": "That defines the privileges of the user role.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1063_sideB_0.mp3"
+        },
+        {
+          "text": "That determines the user role's privileges.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1063_sideB_1.mp3"
+        },
+        {
+          "text": "This sets the privileges for the user role.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1063_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1064",
+      "cardType": "flippable",
+      "sideA": "No conozco el alcance de sus privilegios.",
+      "sideB": [
+        {
+          "text": "I don't know the scope of their privileges.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1064_sideB_0.mp3"
+        },
+        {
+          "text": "I'm not aware of the extent of their privileges.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1064_sideB_1.mp3"
+        },
+        {
+          "text": "I don't know how far their privileges extend.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1064_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1065",
+      "cardType": "flippable",
+      "sideA": "Prefiero no pensar acerca de ello.",
+      "sideB": [
+        {
+          "text": "I prefer not to think about it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1065_sideB_0.mp3"
+        },
+        {
+          "text": "I'd rather not think about it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1065_sideB_1.mp3"
+        },
+        {
+          "text": "I'd prefer not to dwell on it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1065_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1066",
+      "cardType": "flippable",
+      "sideA": "¿Quieres que te hable acerca de lo que hice?",
+      "sideB": [
+        {
+          "text": "Do you want me to talk about what I did?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1066_sideB_0.mp3"
+        },
+        {
+          "text": "Would you like me to tell you about what I did?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1066_sideB_1.mp3"
+        },
+        {
+          "text": "Should I go over what I've done?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1066_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1067",
+      "cardType": "flippable",
+      "sideA": "¿Quieres que te hable acerca de como debería ser?",
+      "sideB": [
+        {
+          "text": "Do you want me to talk about how it should be?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1067_sideB_0.mp3"
+        },
+        {
+          "text": "Would you like me to explain how it's supposed to be?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1067_sideB_1.mp3"
+        },
+        {
+          "text": "Should I go over how it ought to be?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1067_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1068",
+      "cardType": "flippable",
+      "sideA": "¿Quieres que te hable acerca de como debería funcionar?",
+      "sideB": [
+        {
+          "text": "Do you want me to talk about how it should work?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1068_sideB_0.mp3"
+        },
+        {
+          "text": "Would you like me to explain how it's supposed to work?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1068_sideB_1.mp3"
+        },
+        {
+          "text": "Should I discuss how it should function?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1068_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1069",
+      "cardType": "flippable",
+      "sideA": "¿Quieres que te hable acerca de lo que haré?",
+      "sideB": [
+        {
+          "text": "Do you want me to talk about what I'll do?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1069_sideB_0.mp3"
+        },
+        {
+          "text": "Would you like me to tell you what I'm going to do?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1069_sideB_1.mp3"
+        },
+        {
+          "text": "Should I explain my next steps?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1069_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1070",
+      "cardType": "flippable",
+      "sideA": "Cualquier persona puede hacer eso.",
+      "sideB": [
+        {
+          "text": "Anyone can do that.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1070_sideB_0.mp3"
+        },
+        {
+          "text": "Anybody is able to do that.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1070_sideB_1.mp3"
+        },
+        {
+          "text": "That's something anyone can do.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1070_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1071",
+      "cardType": "flippable",
+      "sideA": "Nadie puede hacer eso acá.",
+      "sideB": [
+        {
+          "text": "No one can do that here.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1071_sideB_0.mp3"
+        },
+        {
+          "text": "Nobody can do that around here.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1071_sideB_1.mp3"
+        },
+        {
+          "text": "No one is able to do that here.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1071_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1072",
+      "cardType": "flippable",
+      "sideA": "Algunas personas pueden hacerlo.",
+      "sideB": [
+        {
+          "text": "Some people can do it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1072_sideB_0.mp3"
+        },
+        {
+          "text": "A few people are able to do that.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1072_sideB_1.mp3"
+        },
+        {
+          "text": "There are some people who can do it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1072_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1073",
+      "cardType": "flippable",
+      "sideA": "Dependeremos de eso. / Nos basaremos en eso.",
+      "sideB": [
+        {
+          "text": "We will rely upon that.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1073_sideB_0.mp3"
+        },
+        {
+          "text": "We'll depend upon that.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1073_sideB_1.mp3"
+        },
+        {
+          "text": "That is what we will rely upon.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1073_sideB_2.mp3"
+        },
+        {
+          "text": "We will rely on that.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1073_sideB_3.mp3"
+        },
+        {
+          "text": "We will depend on that.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1073_sideB_4.mp3"
+        },
+        {
+          "text": "We are going to rely on that.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1073_sideB_5.mp3"
+        }
+      ],
+      "note": "Upon is simply a more formal and elevated version of the preposition [on]. In modern conversational English, [on] is much more common."
+    },
+    {
+      "cardId": "mi_1074",
+      "cardType": "flippable",
+      "sideA": "Debe estar declarado a nivel de clase.",
+      "sideB": [
+        {
+          "text": "It must be declared at the class level.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1074_sideB_0.mp3"
+        },
+        {
+          "text": "It should be declared at the class level.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1074_sideB_1.mp3"
+        },
+        {
+          "text": "It has to be declared at the class level.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1074_sideB_2.mp3"
+        }
+      ],
+      "note": "**[87]**\n\n~It must be declared in a level class~ is incorrect because the compound noun is [class level] (the level of the class), and we use the preposition [at] for this context: [at the class level]."
+    },
+    {
+      "cardId": "mi_1075",
+      "cardType": "flippable",
+      "sideA": "Debe estar declarado en la zona declarativa.",
+      "sideB": [
+        {
+          "text": "It must be declared in the declarative section.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1075_sideB_0.mp3"
+        },
+        {
+          "text": "It should be declared in the declarative zone.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1075_sideB_1.mp3"
+        },
+        {
+          "text": "It has to be in the declarative area.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1075_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1076",
+      "cardType": "flippable",
+      "sideA": "OK, le daré un vistazo a ese.",
+      "sideB": [
+        {
+          "text": "OK, I'll take a look at that one.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1076_sideB_0.mp3"
+        },
+        {
+          "text": "Alright, I'll give that one a look.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1076_sideB_1.mp3"
+        },
+        {
+          "text": "OK, I will look into that one.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1076_sideB_2.mp3"
+        }
+      ],
+      "note": "~OK, I'll take a look on that~ is incorrect because the phrase is [take a look at]."
+    },
+    {
+      "cardId": "mi_1077",
+      "cardType": "flippable",
+      "sideA": "En los pricing details puedes ver los diferentes ajustes que ha recibido.",
+      "sideB": [
+        {
+          "text": "In the pricing details, you can see the different adjustments it has received.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1077_sideB_0.mp3"
+        },
+        {
+          "text": "You can see the various adjustments it got in the pricing details.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1077_sideB_1.mp3"
+        },
+        {
+          "text": "The pricing details show the different adjustments it's had.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1077_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1078",
+      "cardType": "flippable",
+      "sideA": "Puedes ver el botón en la parte izquierda de abajo.",
+      "sideB": [
+        {
+          "text": "You can see the button in the bottom left.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1078_sideB_0.mp3"
+        },
+        {
+          "text": "The button is visible in the bottom left corner.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1078_sideB_1.mp3"
+        },
+        {
+          "text": "You'll find the button at the bottom left.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1078_sideB_2.mp3"
+        }
+      ],
+      "note": "**[153]**\n\n~You can see the button in the left bottom.~ is not natural. In English, vertical positions ([top], [bottom]) always precede horizontal positions ([left], [right]), so it must be [bottom left]."
+    },
+    {
+      "cardId": "mi_1079",
+      "cardType": "flippable",
+      "sideA": "Puedes ver el botón en la parte derecha de arriba.",
+      "sideB": [
+        {
+          "text": "You can see the button in the top right.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1079_sideB_0.mp3"
+        },
+        {
+          "text": "The button is visible in the top right corner.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1079_sideB_1.mp3"
+        },
+        {
+          "text": "You'll find the button at the top right.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1079_sideB_2.mp3"
+        },
+        {
+          "text": "You can see the button at the top right.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1079_sideB_3.mp3"
+        }
+      ],
+      "note": "**[153]**\n\n~You can see the button in the up right.~ is incorrect because we use the adjective [top] for the highest position, not the directional adverb [up]. Use [top right]."
+    },
+    {
+      "cardId": "mi_1080",
+      "cardType": "flippable",
+      "sideA": "La opción esta en la parte de abajo.",
+      "sideB": [
+        {
+          "text": "The option is at the bottom.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1080_sideB_0.mp3"
+        },
+        {
+          "text": "The option is down at the bottom.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1080_sideB_1.mp3"
+        },
+        {
+          "text": "You'll find the option at the bottom.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1080_sideB_2.mp3"
+        }
+      ],
+      "note": "**[153]**\n\n~The option is at the below~ is incorrect because [below] is a preposition or adverb, not a noun. You must use [at the bottom]."
+    },
+    {
+      "cardId": "mi_1081",
+      "cardType": "flippable",
+      "sideA": "La opción esta en la parte de arriba.",
+      "sideB": [
+        {
+          "text": "The option is at the top.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1081_sideB_0.mp3"
+        },
+        {
+          "text": "The option is up at the top.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1081_sideB_1.mp3"
+        },
+        {
+          "text": "You'll find the option at the top.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1081_sideB_2.mp3"
+        }
+      ],
+      "note": "**[153]**\n\n~The option is at the up.~ is incorrect because [up] is a direction, not a noun. The correct noun for the highest point is [the top].\n\n~The option is up.~ is incorrect in this context because [is up] usually means a system is functioning or refers to a general upward direction, not a specific location on a screen."
+    },
+    {
+      "cardId": "mi_1082",
+      "cardType": "flippable",
+      "sideA": "Son pocos problemas, podemos resolverlos pronto.",
+      "sideB": [
+        {
+          "text": "There are only a few issues; we can resolve them soon.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1082_sideB_0.mp3"
+        },
+        {
+          "text": "It's just a few problems, we can fix them quickly.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1082_sideB_1.mp3"
+        },
+        {
+          "text": "They are minor issues, we can solve them shortly.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1082_sideB_2.mp3"
+        }
+      ],
+      "note": "**[105]**\n\n~There are only a litte bit issues; we can resolve them soon.~ is not valid because [issues] is a countable noun. You must use [a few] for countable nouns. [A little bit] is used with uncountable nouns."
+    },
+    {
+      "cardId": "mi_1083",
+      "cardType": "flippable",
+      "sideA": "El día que se hizo el pedido de los productos.",
+      "sideB": [
+        {
+          "text": "The day the products were ordered.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1083_sideB_0.mp3"
+        },
+        {
+          "text": "The day the product order was placed.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1083_sideB_1.mp3"
+        },
+        {
+          "text": "The day the order for the products was made.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1083_sideB_2.mp3"
+        }
+      ],
+      "note": "~The day the order of the products was made.~ is not the most natural choice. We typically use the preposition [for] with [order] when specifying items, or we use a compound noun like [product order].\n\n~The day the purchase for the products was made.~ is incorrect because [pedido] translates to [order], not [purchase]. Additionally, [purchase] refers to the transaction, while [order] refers to the request for the items."
+    },
+    {
+      "cardId": "mi_1084",
+      "cardType": "flippable",
+      "sideA": "El día que se hizo la compra.",
+      "sideB": [
+        {
+          "text": "The day the purchase was made.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1084_sideB_0.mp3"
+        },
+        {
+          "text": "The day the purchase took place.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1084_sideB_1.mp3"
+        },
+        {
+          "text": "The date of the purchase.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1084_sideB_2.mp3"
+        },
+        {
+          "text": "The day the order was made.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1084_sideB_3.mp3"
+        }
+      ],
+      "note": "**[18]**\n\nPurchase refers to the act of buying something or the item bought (compra).\n\n~The order day~ is less natural. We usually say [the day of the order].\n\n~The day the purchase was done.~ is incorrect because the collocation is to [make] a purchase, not to [do] a purchase. Use [was made]."
+    },
+    {
+      "cardId": "mi_1085",
+      "cardType": "flippable",
+      "sideA": "El día que se hará la compra.",
+      "sideB": [
+        {
+          "text": "The day the purchase will be made.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1085_sideB_0.mp3"
+        },
+        {
+          "text": "The day the purchase is going to be made.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1085_sideB_1.mp3"
+        },
+        {
+          "text": "The date the purchase will take place.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1085_sideB_2.mp3"
+        }
+      ],
+      "note": "**[18]**\n\n[Purchase] (noun) translates to 'compra' or 'adquisición'. It refers to the act of buying something.\n\n~The day the order will be made.~ is not an exact translation because [order] means 'pedido', while [purchase] means 'compra'.\n\n~The day the purchase will be done.~ is incorrect because we [make] a purchase, we do not [do] it. Use [will be made]."
+    },
+    {
+      "cardId": "mi_1086",
+      "cardType": "flippable",
+      "sideA": "Existe una configuración desconocida.",
+      "sideB": [
+        {
+          "text": "There is an unknown configuration.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1086_sideB_0.mp3"
+        },
+        {
+          "text": "An unknown setting exists.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1086_sideB_1.mp3"
+        },
+        {
+          "text": "There's an unrecognized configuration.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1086_sideB_2.mp3"
+        }
+      ],
+      "note": "~There is an undiscovered configuration.~ is not the best fit. [Undiscovered] implies something hidden that hasn't been found yet, whereas [unknown] means it is not recognized or identified by the system."
+    },
+    {
+      "cardId": "mi_1087",
+      "cardType": "flippable",
+      "sideA": "Existe alguna layer desconocida.",
+      "sideB": [
+        {
+          "text": "There is some unknown layer.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1087_sideB_0.mp3"
+        },
+        {
+          "text": "Some unknown layer exists.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1087_sideB_1.mp3"
+        },
+        {
+          "text": "There's an unrecognized layer.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1087_sideB_2.mp3"
+        },
+        {
+          "text": "There is an unknown layer.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1087_sideB_3.mp3"
+        },
+        {
+          "text": "There is some undiscovered layer.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1087_sideB_4.mp3"
+        }
+      ],
+      "note": "~It exists some unknown layer~ is incorrect because [exist] cannot be used with a dummy 'it' followed by a noun. Use [There is] or make the noun the subject: [Some unknown layer exists]."
+    },
+    {
+      "cardId": "mi_1088",
+      "cardType": "flippable",
+      "sideA": "Escucho todo el día inglés, cosas como podcast, o videos random.",
+      "sideB": [
+        {
+          "text": "I listen to English all day, things like podcasts or random videos.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1088_sideB_0.mp3"
+        },
+        {
+          "text": "I hear English all day long, like podcasts or random videos.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1088_sideB_1.mp3"
+        },
+        {
+          "text": "I spend all day listening to English through podcasts and random videos.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1088_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1089",
+      "cardType": "flippable",
+      "sideA": "Pero no son retrocesos, son problemas no descubiertos.",
+      "sideB": [
+        {
+          "text": "But they aren't regressions; they are undiscovered issues.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1089_sideB_0.mp3"
+        },
+        {
+          "text": "They are not regressions, they are just unfound problems.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1089_sideB_1.mp3"
+        },
+        {
+          "text": "They're not steps back, they're undiscovered issues.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1089_sideB_2.mp3"
+        },
+        {
+          "text": "They're not setbacks, they're undiscovered issues.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1089_sideB_3.mp3"
+        },
+        {
+          "text": "They're not steps back, they're unknown issues.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1089_sideB_4.mp3"
+        }
+      ],
+      "note": "~They're not stepbacks, they're undiscovered issues.~ is not valid because [stepbacks] is not a standard word. The correct noun is [setbacks] or the phrase [steps back]."
+    },
+    {
+      "cardId": "mi_1090",
+      "cardType": "flippable",
+      "sideA": "No es un retroceso, es un nuevo problema descubierto.",
+      "sideB": [
+        {
+          "text": "It's not a regression; it's a newly discovered issue.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1090_sideB_0.mp3"
+        },
+        {
+          "text": "It isn't a regression, it's a new problem we found.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1090_sideB_1.mp3"
+        },
+        {
+          "text": "That's not a regression, it's just a newly found bug.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1090_sideB_2.mp3"
+        },
+        {
+          "text": "It's not a setback; it's a newly discovered issue.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1090_sideB_3.mp3"
+        }
+      ],
+      "note": "~It's not a regression; it's new discovered issue~ is missing the article [a] and the adverb form [newly] to modify the adjective 'discovered'.\n\n~It's not a setback; it's a new discovered issue.~ is incorrect because the adjective 'discovered' must be modified by an adverb [newly], not another adjective [new].\n\n~It's not a setback; it's an undiscovered issue.~ changes the meaning. [Undiscovered] means it has NOT been found yet, whereas the Spanish sentence states it IS a newly [discovered] problem."
+    },
+    {
+      "cardId": "mi_1091",
+      "cardType": "flippable",
+      "sideA": "Esperamos tener un sistema híbrido.",
+      "sideB": [
+        {
+          "text": "We expect to have a hybrid system.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1091_sideB_0.mp3"
+        },
+        {
+          "text": "We're hoping for a hybrid system.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1091_sideB_1.mp3"
+        },
+        {
+          "text": "We hope to have a hybrid setup.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1091_sideB_2.mp3"
+        },
+        {
+          "text": "We're expecting to have a hybrid system.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1091_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1092",
+      "cardType": "flippable",
+      "sideA": "El update popup será híbrido.",
+      "sideB": [
+        {
+          "text": "The update popup will be hybrid.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1092_sideB_0.mp3"
+        },
+        {
+          "text": "The update prompt will be hybrid.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1092_sideB_1.mp3"
+        },
+        {
+          "text": "The update modal will be a hybrid one.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1092_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1093",
+      "cardType": "flippable",
+      "sideA": "Necesitaremos subir el número de versión en el profile.",
+      "sideB": [
+        {
+          "text": "We'll need to bump the version number in the profile.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1093_sideB_0.mp3"
+        },
+        {
+          "text": "We will need to increase the version number in the profile.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1093_sideB_1.mp3"
+        },
+        {
+          "text": "We'll have to bump up the version in the profile.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1093_sideB_2.mp3"
+        }
+      ],
+      "note": "~We'll need to increase the number of the version in the profile.~ sounds unnatural. We use the compound noun [version number] instead of connecting them with [of]."
+    },
+    {
+      "cardId": "mi_1094",
+      "cardType": "flippable",
+      "sideA": "Debemos subir la version en el profile en cada release.",
+      "sideB": [
+        {
+          "text": "We must bump the version in the profile for every release.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1094_sideB_0.mp3"
+        },
+        {
+          "text": "We need to increase the version in the profile on each release.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1094_sideB_1.mp3"
+        },
+        {
+          "text": "We have to bump up the version in the profile with every release.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1094_sideB_2.mp3"
+        },
+        {
+          "text": "We need to increase the version in the profile for each release.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1094_sideB_3.mp3"
+        }
+      ],
+      "note": "~We need to go up the version in the profile on each release.~ is not valid because [go up] is intransitive and cannot take a direct object. You must use a transitive verb like [increase], [raise], or [bump]."
+    },
+    {
+      "cardId": "mi_1095",
+      "cardType": "flippable",
+      "sideA": "Debe ser un trabajo coordinado.",
+      "sideB": [
+        {
+          "text": "It must be a coordinated effort.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1095_sideB_0.mp3"
+        },
+        {
+          "text": "It needs to be a coordinated job.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1095_sideB_1.mp3"
+        },
+        {
+          "text": "It has to be coordinated work.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1095_sideB_2.mp3"
+        },
+        {
+          "text": "It must be coordinated work.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1095_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1096",
+      "cardType": "flippable",
+      "sideA": "¿Está bien dicho?",
+      "sideB": [
+        {
+          "text": "Is that said correctly?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1096_sideB_0.mp3"
+        },
+        {
+          "text": "Is that the right way to say it?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1096_sideB_1.mp3"
+        },
+        {
+          "text": "Did I say that right?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1096_sideB_2.mp3"
+        },
+        {
+          "text": "Did I say it right?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1096_sideB_3.mp3"
+        }
+      ],
+      "note": "\n\n~Is it said right?~ is grammatically awkward. In the passive voice, it is much more natural to use the adverb [correctly] instead of the colloquial [right]."
+    },
+    {
+      "cardId": "mi_1097",
+      "cardType": "flippable",
+      "sideA": "¿Lo dije bien?",
+      "sideB": [
+        {
+          "text": "Did I say it right?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1097_sideB_0.mp3"
+        },
+        {
+          "text": "Did I say it correctly?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1097_sideB_1.mp3"
+        },
+        {
+          "text": "Was that said properly?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1097_sideB_2.mp3"
+        }
+      ],
+      "note": "~Did I say it well?~ sounds unnatural for asking about accuracy or pronunciation. [Well] usually refers to the quality of the performance or eloquence, whereas [right] or [correctly] refers to accuracy."
+    },
+    {
+      "cardId": "mi_1098",
+      "cardType": "flippable",
+      "sideA": "No sé para qué es esto.",
+      "sideB": [
+        {
+          "text": "I don't know what this is for.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1098_sideB_0.mp3"
+        },
+        {
+          "text": "I have no idea what this is for.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1098_sideB_1.mp3"
+        },
+        {
+          "text": "I'm not sure what this is used for.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1098_sideB_2.mp3"
+        }
+      ],
+      "note": "**[111]**"
+    },
+    {
+      "cardId": "mi_1099",
+      "cardType": "flippable",
+      "sideA": "No sé para qué es eso.",
+      "sideB": [
+        {
+          "text": "I don't know what that is for.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1099_sideB_0.mp3"
+        },
+        {
+          "text": "I have no idea what that is for.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1099_sideB_1.mp3"
+        },
+        {
+          "text": "I'm not sure what that is used for.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1099_sideB_2.mp3"
+        }
+      ],
+      "note": "**[111]**\n\n**[148]**\n\n~I don't know what that used is for~ has incorrect word order. The passive voice structure requires the verb to be before the past participle: [what that is used for].\n\n~I don't know what is that for.~ is incorrect because embedded questions must follow standard statement word order (Subject + Verb), without inversion. It should be [what that is]."
+    },
+    {
+      "cardId": "mi_1100",
+      "cardType": "flippable",
+      "sideA": "¿Qué parte demora más en cargar?",
+      "sideB": [
+        {
+          "text": "Which part takes the longest to load?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1100_sideB_0.mp3"
+        },
+        {
+          "text": "What part takes more time to load?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1100_sideB_1.mp3"
+        },
+        {
+          "text": "Which part takes longer to load?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1100_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1101",
+      "cardType": "flippable",
+      "sideA": "Las Cuentas por Cobrar son el dinero que los clientes deben a la empresa.",
+      "sideB": [
+        {
+          "text": "Accounts Receivable is the money that customers owe to the company.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1101_sideB_0.mp3"
+        },
+        {
+          "text": "Accounts Receivable represents the money clients owe the company.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1101_sideB_1.mp3"
+        },
+        {
+          "text": "Accounts Receivable are the funds owed to the business by its customers.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1101_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1102",
+      "cardType": "flippable",
+      "sideA": "Las Cuentas por Cobrar gestionan los límites de crédito de los clientes.",
+      "sideB": [
+        {
+          "text": "Accounts Receivable manages the credit limits of the customers.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1102_sideB_0.mp3"
+        },
+        {
+          "text": "Accounts Receivable handles customer credit limits.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1102_sideB_1.mp3"
+        },
+        {
+          "text": "Accounts Receivable controls the credit limits for clients.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1102_sideB_2.mp3"
+        }
+      ],
+      "note": "The word [Receivable] literally means \"able to be received.\" In finance and accounting, it refers to money that a business has the right to receive because it has provided a product or service. Therefore, \"Accounts Receivable\" translates to \"Cuentas por cobrar\"."
+    },
+    {
+      "cardId": "mi_1103",
+      "cardType": "flippable",
+      "sideA": "Las Cuentas por Cobrar se clasifican como un activo de la empresa.",
+      "sideB": [
+        {
+          "text": "Accounts Receivable are classified as a company asset.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1103_sideB_0.mp3"
+        },
+        {
+          "text": "Accounts Receivable is categorized as an asset of the company.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1103_sideB_1.mp3"
+        },
+        {
+          "text": "Accounts Receivable is considered a company asset.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1103_sideB_2.mp3"
+        }
+      ],
+      "note": "~Accounts Receivable are classified as an active for the company.~ is not valid because [active] is a false friend in this context. The financial term for 'activo' is [asset]."
+    },
+    {
+      "cardId": "mi_1104",
+      "cardType": "flippable",
+      "sideA": "Ha tomado tiempo.",
+      "sideB": [
+        {
+          "text": "It has taken time.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1104_sideB_0.mp3"
+        },
+        {
+          "text": "It's taken some time.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1104_sideB_1.mp3"
+        },
+        {
+          "text": "It has taken a while.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1104_sideB_2.mp3"
+        },
+        {
+          "text": "It has taken a long time.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1104_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1105",
+      "cardType": "flippable",
+      "sideA": "Ha tomado tiempo lograrlo.",
+      "sideB": [
+        {
+          "text": "It has taken time to achieve it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1105_sideB_0.mp3"
+        },
+        {
+          "text": "It's taken time to get it done.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1105_sideB_1.mp3"
+        },
+        {
+          "text": "It has taken a while to accomplish it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1105_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1106",
+      "cardType": "flippable",
+      "sideA": "Ha tomado un largo tiempo...",
+      "sideB": [
+        {
+          "text": "It has taken a long time...",
+          "audioSrc": "public/data/audio/common_meeting/mi_1106_sideB_0.mp3"
+        },
+        {
+          "text": "It's taken quite a while...",
+          "audioSrc": "public/data/audio/common_meeting/mi_1106_sideB_1.mp3"
+        },
+        {
+          "text": "It has taken a long while...",
+          "audioSrc": "public/data/audio/common_meeting/mi_1106_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1107",
+      "cardType": "flippable",
+      "sideA": "Es vigente hoy o en el pasado.",
+      "sideB": [
+        {
+          "text": "It is valid today or in the past.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1107_sideB_0.mp3"
+        },
+        {
+          "text": "It is effective today or earlier.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1107_sideB_1.mp3"
+        },
+        {
+          "text": "It is active as of today or a prior date.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1107_sideB_2.mp3"
+        },
+        {
+          "text": "It is in force today or in the past.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1107_sideB_3.mp3"
+        }
+      ],
+      "note": "English lacks a single 1:1 noun for \"vigencia.\" Instead, English uses adjectives or verb phrases to describe the state of the account.\n\nGrammatical Shift: Spanish uses a noun (la vigencia); English prefers the adjective ([effective] or [valid]).\n\n\"Iniciado su vigencia\" translates to:\n[Become effective]: Standard for contracts and official accounts.\n[Started]: Functional simplification for user interfaces.\n\nKey Industry Terms:\n[Effective Date]: The official term for when a document or account goes live.\n[Validity]: Refers to the \"legal life\" or period an item remains usable.\n\n~It is available today or in the past~ changes the meaning. [Available] means 'disponible', while 'vigente' means [valid] or [effective] in a legal or operational context."
+    },
+    {
+      "cardId": "mi_1108",
+      "cardType": "flippable",
+      "sideA": "La cuenta debe haber iniciado su vigencia hoy o en el pasado.",
+      "sideB": [
+        {
+          "text": "The account's effective date must be today or in the past.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1108_sideB_0.mp3"
+        },
+        {
+          "text": "The account must have started today or earlier.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1108_sideB_1.mp3"
+        },
+        {
+          "text": "Account activation must date back to today or earlier.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1108_sideB_2.mp3"
+        },
+        {
+          "text": "The account must be valid starting today or in the past.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1108_sideB_3.mp3"
+        },
+        {
+          "text": "The account must have become effective today or in the past.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1108_sideB_4.mp3"
+        },
+        {
+          "text": "The account must have started its validity today or earlier.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1108_sideB_5.mp3"
+        },
+        {
+          "text": "The account must have taken effect today or prior.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1108_sideB_6.mp3"
+        }
+      ],
+      "note": "English lacks a single 1:1 noun for \"vigencia.\" Instead, English uses adjectives or verb phrases to describe the state of the account.\n\nGrammatical Shift: Spanish uses a noun (la vigencia); English prefers the adjective ([effective] or [valid]).\n\n\"Iniciado su vigencia\" translates to:\n[Become effective]: Standard for contracts and official accounts.\n[Started]: Functional simplification for user interfaces.\n\nKey Industry Terms:\n[Effective Date]: The official term for when a document or account goes live.\n[Validity]: Refers to the \"legal life\" or period an item remains usable.\n\n~The account must have initiated today or in the past.~ is unnatural because [initiated] is typically a transitive verb requiring an object, or used in the passive voice. For accounts, [started] or [become effective] are the correct collocations."
+    },
+    {
+      "cardId": "mi_1109",
+      "cardType": "flippable",
+      "sideA": "La cuenta no tiene fecha de expiración.",
+      "sideB": [
+        {
+          "text": "The account has no expiration date.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1109_sideB_0.mp3"
+        },
+        {
+          "text": "The account doesn't have an expiry date.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1109_sideB_1.mp3"
+        },
+        {
+          "text": "There is no expiration date on the account.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1109_sideB_2.mp3"
+        }
+      ],
+      "note": "~The account has no expired date~ is incorrect. [Expired] is an adjective meaning it is already out of date. The noun phrase for the deadline is [expiration date].\n\n~The account has not expiration date~ is grammatically incorrect. You must use [has no] directly before the noun, or [doesn't have an] before the noun."
+    },
+    {
+      "cardId": "mi_1110",
+      "cardType": "flippable",
+      "sideA": "O, si la tiene, esa fecha es hoy o está en el futuro.",
+      "sideB": [
+        {
+          "text": "Or, if it does, that date is today or in the future.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1110_sideB_0.mp3"
+        },
+        {
+          "text": "Or, if it does have one, it's today or in the future.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1110_sideB_1.mp3"
+        },
+        {
+          "text": "Or, assuming it does, the date is today or later.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1110_sideB_2.mp3"
+        },
+        {
+          "text": "Or, if it has one, that date is today or in the future.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1110_sideB_3.mp3"
+        }
+      ],
+      "note": "~Or, if it has, that date is today or in the future~ is missing an object. The verb [has] requires an object like [one] to refer back to the date. It is more natural to use the auxiliary [does]: [if it does] or [if it has one]."
     }
   ]
 }
