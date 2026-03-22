@@ -42,7 +42,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_002_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~It seems to be working wrong.~ and ~It seems it's working wrong.~ are unnatural. For devices, systems, or code, use [malfunctioning], [working incorrectly], or [acting up].\n\n~It looks like to be working incorrectly.~ is grammatically invalid. The phrase 'looks like' must be followed by a full clause (e.g., 'looks like it is working...'), not an infinitive."
+      "note": null
     },
     {
       "cardId": "dummy_003",
@@ -82,7 +82,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_004_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~..., that is equivalent to 1.5 seconds.~ uses incorrect relative pronoun grammar. A non-restrictive relative clause following a comma must use [which], never 'that'."
+      "note": null
     },
     {
       "cardId": "dummy_005",
@@ -182,7 +182,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_009_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~Bugs tend to appear on the way.~ is physically directional. For processes or projects, [along the way] is the natural collocation.\n\n~Bugs tend to appear in the way.~ means they are acting as an obstacle blocking your path, not that they happen during the process.\n\n~Errors usually appears along the way.~ is grammatically incorrect. 'Errors' is plural, so the verb must be [appear].\n\n~Errors appears usually along the way.~ has incorrect subject-verb agreement and incorrect adverb placement. Adverbs of frequency like [usually] go before the main verb."
+      "note": null
     },
     {
       "cardId": "dummy_010",
@@ -202,7 +202,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_010_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~We'll learn it on the way.~ implies learning during a physical trip. For acquiring skills during a project or process, use [along the way].\n\n~We'll learn it in the way.~ is incorrect because 'in the way' means blocking a physical path or obstructing progress."
+      "note": null
     },
     {
       "cardId": "dummy_011",
@@ -222,7 +222,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_011_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~I'll let you know on the way.~ is only valid if you are physically traveling to a destination. For a project or process, use [along the way].\n\n~I'll let you know in the way.~ is incorrect because 'in the way' means obstructing or blocking a path."
+      "note": null
     },
     {
       "cardId": "dummy_012",
@@ -360,10 +360,6 @@
         {
           "text": "It appears to be functioning now.",
           "audioSrc": "public/data/audio/dummy/dummy_018_sideB_2.mp3"
-        },
-        {
-          "text": "It seems it's working now.",
-          "audioSrc": "public/data/audio/dummy/dummy_018_sideB_3.mp3"
         }
       ],
       "note": null
@@ -404,10 +400,6 @@
         {
           "text": "It appears there is a delay.",
           "audioSrc": "public/data/audio/dummy/dummy_020_sideB_2.mp3"
-        },
-        {
-          "text": "It seems there's a delay.",
-          "audioSrc": "public/data/audio/dummy/dummy_020_sideB_3.mp3"
         }
       ],
       "note": null
@@ -428,13 +420,9 @@
         {
           "text": "Everything appears to be fine.",
           "audioSrc": "public/data/audio/dummy/dummy_021_sideB_2.mp3"
-        },
-        {
-          "text": "All seems to be in order.",
-          "audioSrc": "public/data/audio/dummy/dummy_021_sideB_3.mp3"
         }
       ],
-      "note": "**[72]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_022",
@@ -454,7 +442,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_022_sideB_2.mp3"
         }
       ],
-      "note": "**[206]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_023",
@@ -474,7 +462,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_023_sideB_2.mp3"
         }
       ],
-      "note": "**[206]**\n\nYes, the word [record] has multiple meanings based on its function. As a noun, it means a documented history or file (un registro). As an adjective (used in this card), it means the best or highest ever achieved (cifra récord). As a verb, it means to capture audio, video, or data (grabar/registrar)."
+      "note": null
     },
     {
       "cardId": "dummy_024",
@@ -494,7 +482,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_024_sideB_2.mp3"
         }
       ],
-      "note": "**[206]**\n\n[Revenue] is the total amount of money brought in by a company's operations (ventas/ingresos brutos). [Profit] is the financial gain after all operating expenses, taxes, and costs have been deducted from the revenue (utilidad/ganancia neta)."
+      "note": null
     },
     {
       "cardId": "dummy_025",
@@ -514,7 +502,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_025_sideB_2.mp3"
         }
       ],
-      "note": "**[206]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_026",
@@ -534,7 +522,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_026_sideB_2.mp3"
         }
       ],
-      "note": "**[206]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_027",
@@ -554,7 +542,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_027_sideB_2.mp3"
         }
       ],
-      "note": "**[205]**\n\nPlease verify the invoice address on this invoice.~ is unnatural due to the repetition of 'invoice'. Use 'billing address' or 'BILL TO address' instead.\n\n~Please verify that the BILL TO address on this invoice.~ is missing a verb to complete the clause (e.g., 'is correct').\n\n~Please verify the BILL TO address is on this invoice.~ is grammatically correct but changes the meaning to verifying the *presence* of the address rather than the address itself."
+      "note": null
     },
     {
       "cardId": "dummy_028",
@@ -574,7 +562,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_028_sideB_2.mp3"
         }
       ],
-      "note": "**[205]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_029",
@@ -594,7 +582,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_029_sideB_2.mp3"
         }
       ],
-      "note": "**[205]**\n\nn~Change the SOLD TO field for our regional branch.~ uses the wrong preposition. When updating the value of a field or variable, use [change to]. 'Change for' implies a physical swap or exchange."
+      "note": null
     },
     {
       "cardId": "dummy_030",
@@ -612,13 +600,9 @@
         {
           "text": "Invoice the corporate office and deliver to the warehouse.",
           "audioSrc": "public/data/audio/dummy/dummy_030_sideB_2.mp3"
-        },
-        {
-          "text": "Corporate for BILL TO and warehouse for shipping.",
-          "audioSrc": "public/data/audio/dummy/dummy_030_sideB_3.mp3"
         }
       ],
-      "note": "**[205]**\n\n~Corporate for invoice and warehouse for SHIP TO.~ breaks the standard terminology pairing. In logistics and accounting, [BILL TO] is strictly paired with [SHIP TO]."
+      "note": null
     },
     {
       "cardId": "dummy_031",
@@ -656,10 +640,6 @@
         {
           "text": "I have a quick reference guide for DB queries.",
           "audioSrc": "public/data/audio/dummy/dummy_032_sideB_2.mp3"
-        },
-        {
-          "text": "I have a cheatsheet for the db queries.",
-          "audioSrc": "public/data/audio/dummy/dummy_032_sideB_3.mp3"
         }
       ],
       "note": null
@@ -700,13 +680,9 @@
         {
           "text": "We plan to purchase the new servers next month.",
           "audioSrc": "public/data/audio/dummy/dummy_034_sideB_2.mp3"
-        },
-        {
-          "text": "We will buy the new servers next month.",
-          "audioSrc": "public/data/audio/dummy/dummy_034_sideB_3.mp3"
         }
       ],
-      "note": "**[203]**\n\n\n\n~We will adquiere the new servers next month.~ contains a spelling error. The correct English spelling is [acquire]."
+      "note": "**[203]**\n\n"
     },
     {
       "cardId": "dummy_035",
@@ -726,7 +702,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_035_sideB_2.mp3"
         }
       ],
-      "note": "**[204]**\n\n\n\n~The software updating caused a functional regression.~ is unnatural. The standard noun form for a new release of software is [update], not the gerund 'updating'."
+      "note": "**[204]**\n\n"
     },
     {
       "cardId": "dummy_036",
@@ -744,53 +720,9 @@
         {
           "text": "The team experienced a major setback due to the budget cut.",
           "audioSrc": "public/data/audio/dummy/dummy_036_sideB_2.mp3"
-        },
-        {
-          "text": "A budget cut was a big setback for the team.",
-          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_3.mp3"
         }
       ],
       "note": "**[204]**\n\n"
-    },
-    {
-      "cardId": "dummy_037",
-      "cardType": "flippable",
-      "sideA": "El presupuesto no ha sido aprobado aun.",
-      "sideB": [
-        {
-          "text": "The budget hasn't been approved yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_0.mp3"
-        },
-        {
-          "text": "The budget has not yet been approved.",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_1.mp3"
-        },
-        {
-          "text": "The budget isn't approved yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_2.mp3"
-        }
-      ],
-      "note": "**[206]**\n\n"
-    },
-    {
-      "cardId": "dummy_038",
-      "cardType": "flippable",
-      "sideA": "El presupuesto ya ha sido rechazado.",
-      "sideB": [
-        {
-          "text": "The budget has already been rejected.",
-          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_0.mp3"
-        },
-        {
-          "text": "The budget was already rejected.",
-          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_1.mp3"
-        },
-        {
-          "text": "The budget is already rejected.",
-          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_2.mp3"
-        }
-      ],
-      "note": "**[206]**\n\n"
     }
   ]
 }
