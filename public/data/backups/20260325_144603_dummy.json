@@ -20,10 +20,6 @@
         {
           "text": "It appears to be working correctly.",
           "audioSrc": "public/data/audio/dummy/dummy_001_sideB_2.mp3"
-        },
-        {
-          "text": "It seems it's working fine.",
-          "audioSrc": "public/data/audio/dummy/dummy_001_sideB_3.mp3"
         }
       ],
       "note": null
@@ -46,7 +42,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_002_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~It seems to be working wrong.~ and ~It seems it's working wrong.~ are unnatural. For devices, systems, or code, use [malfunctioning], [working incorrectly], or [acting up].\n\n~It looks like to be working incorrectly.~ is grammatically invalid. The phrase 'looks like' must be followed by a full clause (e.g., 'looks like it is working...'), not an infinitive.\n\nWhile ~working wrong~ might be heard in highly informal or non-native speech, 'wrong' is an adjective, not an adverb. The correct adverbial form is [incorrectly]. In professional and standard American English, mechanical or software failures are described using [malfunctioning] or [acting up]. Using 'working wrong' sounds unprofessional and is grammatically flawed."
+      "note": "\n\n~It seems to be working wrong.~ and ~It seems it's working wrong.~ are unnatural. For devices, systems, or code, use [malfunctioning], [working incorrectly], or [acting up].\n\n~It looks like to be working incorrectly.~ is grammatically invalid. The phrase 'looks like' must be followed by a full clause (e.g., 'looks like it is working...'), not an infinitive."
     },
     {
       "cardId": "dummy_003",
@@ -186,7 +182,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_009_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~Bugs tend to appear on the way.~ is physically directional. For processes or projects, [along the way] is the natural collocation.\n\n~Bugs tend to appear in the way.~ means they are acting as an obstacle blocking your path, not that they happen during the process.\n\n~Errors usually appears along the way.~ is grammatically incorrect. 'Errors' is plural, so the verb must be [appear].\n\n~Errors appears usually along the way.~ has incorrect subject-verb agreement and incorrect adverb placement. Adverbs of frequency like [usually] go before the main verb.\n\n~Errors appear normally along the way.~ is awkward. Placing 'normally' after the verb makes it sound like the *manner* of appearance is normal, rather than the frequency. Use adverbs of frequency like [usually] or [normally] before the main verb: [Errors normally appear]."
+      "note": "\n\n~Bugs tend to appear on the way.~ is physically directional. For processes or projects, [along the way] is the natural collocation.\n\n~Bugs tend to appear in the way.~ means they are acting as an obstacle blocking your path, not that they happen during the process.\n\n~Errors usually appears along the way.~ is grammatically incorrect. 'Errors' is plural, so the verb must be [appear].\n\n~Errors appears usually along the way.~ has incorrect subject-verb agreement and incorrect adverb placement. Adverbs of frequency like [usually] go before the main verb."
     },
     {
       "cardId": "dummy_010",
@@ -264,10 +260,6 @@
         {
           "text": "Please inform us when it's up and running.",
           "audioSrc": "public/data/audio/dummy/dummy_013_sideB_2.mp3"
-        },
-        {
-          "text": "Please notify us once it is working.",
-          "audioSrc": "public/data/audio/dummy/dummy_013_sideB_3.mp3"
         }
       ],
       "note": null
@@ -500,13 +492,9 @@
         {
           "text": "We have to maximize our bottom line.",
           "audioSrc": "public/data/audio/dummy/dummy_024_sideB_2.mp3"
-        },
-        {
-          "text": "We need to maximize our net income.",
-          "audioSrc": "public/data/audio/dummy/dummy_024_sideB_3.mp3"
         }
       ],
-      "note": "**[206]**\n\n[Revenue] is the total amount of money brought in by a company's operations (ventas/ingresos brutos). [Profit] is the financial gain after all operating expenses, taxes, and costs have been deducted from the revenue (utilidad/ganancia neta).\n\n~We need to maximize our net utility.~ is a false friend error. In English finance, [utility] refers to usefulness or public services (water, electricity). The Spanish 'utilidad' translates to [profit] or [income]."
+      "note": "**[206]**\n\n[Revenue] is the total amount of money brought in by a company's operations (ventas/ingresos brutos). [Profit] is the financial gain after all operating expenses, taxes, and costs have been deducted from the revenue (utilidad/ganancia neta)."
     },
     {
       "cardId": "dummy_025",
@@ -566,7 +554,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_027_sideB_2.mp3"
         }
       ],
-      "note": "**[205]**\n\nPlease verify the invoice address on this invoice.~ is unnatural due to the repetition of 'invoice'. Use 'billing address' or 'BILL TO address' instead.\n\n~Please verify that the BILL TO address on this invoice.~ is missing a verb to complete the clause (e.g., 'is correct').\n\n~Please verify the BILL TO address is on this invoice.~ is grammatically correct but changes the meaning to verifying the *presence* of the address rather than the address itself.\n\n~Please verify the BILL TO address in this invoice.~ uses the wrong preposition. Information is printed or written [on] a document, page, or surface, not 'in' it."
+      "note": "**[205]**\n\nPlease verify the invoice address on this invoice.~ is unnatural due to the repetition of 'invoice'. Use 'billing address' or 'BILL TO address' instead.\n\n~Please verify that the BILL TO address on this invoice.~ is missing a verb to complete the clause (e.g., 'is correct').\n\n~Please verify the BILL TO address is on this invoice.~ is grammatically correct but changes the meaning to verifying the *presence* of the address rather than the address itself."
     },
     {
       "cardId": "dummy_028",
@@ -586,7 +574,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_028_sideB_2.mp3"
         }
       ],
-      "note": "**[205]**\n\n\n\n~The SOLD TO and BILL TO is the same information.~ has a subject-verb agreement error. Since you are referring to two distinct items, the verb must be plural: [are the same information]. However, stating [information is the same] is much more natural."
+      "note": "**[205]**\n\n"
     },
     {
       "cardId": "dummy_029",
@@ -716,13 +704,9 @@
         {
           "text": "We will buy the new servers next month.",
           "audioSrc": "public/data/audio/dummy/dummy_034_sideB_3.mp3"
-        },
-        {
-          "text": "We will acquire the new servers next month.",
-          "audioSrc": "public/data/audio/dummy/dummy_034_sideB_4.mp3"
         }
       ],
-      "note": "**[203]**\n\n\n\n~We will adquiere the new servers next month.~ contains a spelling error. The correct English spelling is [acquire].\n\n~We will acquire the new servers for next month.~ implies the servers are intended to be used next month, not that the purchase itself will happen then.\n\n~We will acquire the new servers in next month.~ is grammatically incorrect. Do not use prepositions like [in] or [on] before [next] or [last] when indicating time."
+      "note": "**[203]**\n\n\n\n~We will adquiere the new servers next month.~ contains a spelling error. The correct English spelling is [acquire]."
     },
     {
       "cardId": "dummy_035",
@@ -766,7 +750,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_036_sideB_3.mp3"
         }
       ],
-      "note": "**[204]**\n\n\n\n~A cut of the budget was a major setback for the team.~ is unnatural. Use the noun adjunct [budget cut] for efficiency.\n\n~A budget cut was a major step back for the team.~ changes the meaning. A [step back] is a deliberate pause or retreat to gain perspective. A [setback] is an involuntary obstacle or delay."
+      "note": "**[204]**\n\n"
     },
     {
       "cardId": "dummy_037",
@@ -804,10 +788,6 @@
         {
           "text": "The budget is already rejected.",
           "audioSrc": "public/data/audio/dummy/dummy_038_sideB_2.mp3"
-        },
-        {
-          "text": "The budget has been rejected already.",
-          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_3.mp3"
         }
       ],
       "note": "**[206]**\n\n"
