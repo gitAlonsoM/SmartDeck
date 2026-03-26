@@ -26,7 +26,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_001_sideB_3.mp3"
         }
       ],
-      "note": "**[208]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_002",
@@ -46,7 +46,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_002_sideB_2.mp3"
         }
       ],
-      "note": "**[208]**\n\n~It seems to be working wrong.~ and ~It seems it's working wrong.~ are unnatural. For devices, systems, or code, use [malfunctioning], [working incorrectly], or [acting up].\n\n~It looks like to be working incorrectly.~ is grammatically invalid. The phrase 'looks like' must be followed by a full clause (e.g., 'looks like it is working...'), not an infinitive.\n\nWhile ~working wrong~ might be heard in highly informal or non-native speech, 'wrong' is an adjective, not an adverb. The correct adverbial form is [incorrectly]. In professional and standard American English, mechanical or software failures are described using [malfunctioning] or [acting up]. Using 'working wrong' sounds unprofessional and is grammatically flawed.\n\n~It seems to be working bad.~ is grammatically invalid because [bad] is an adjective and cannot modify a verb. You must use an adverb like [badly] or [poorly], though [malfunctioning] is the standard term in technical contexts."
+      "note": "\n\n~It seems to be working wrong.~ and ~It seems it's working wrong.~ are unnatural. For devices, systems, or code, use [malfunctioning], [working incorrectly], or [acting up].\n\n~It looks like to be working incorrectly.~ is grammatically invalid. The phrase 'looks like' must be followed by a full clause (e.g., 'looks like it is working...'), not an infinitive.\n\nWhile ~working wrong~ might be heard in highly informal or non-native speech, 'wrong' is an adjective, not an adverb. The correct adverbial form is [incorrectly]. In professional and standard American English, mechanical or software failures are described using [malfunctioning] or [acting up]. Using 'working wrong' sounds unprofessional and is grammatically flawed."
     },
     {
       "cardId": "dummy_003",
@@ -86,7 +86,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_004_sideB_2.mp3"
         }
       ],
-      "note": "**[34]**\n\n\n\n~..., that is equivalent to 1.5 seconds.~ uses incorrect relative pronoun grammar. A non-restrictive relative clause following a comma must use [which], never 'that'."
+      "note": "\n\n~..., that is equivalent to 1.5 seconds.~ uses incorrect relative pronoun grammar. A non-restrictive relative clause following a comma must use [which], never 'that'."
     },
     {
       "cardId": "dummy_005",
@@ -126,7 +126,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_006_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~It's not retrieving the data.~ changes the meaning. The verb [retrieve] means to fetch or get data (recuperar/obtener), whereas the original sentence specifies that the system is not giving the data back (devolver). Use [returning] or [sending back]."
+      "note": null
     },
     {
       "cardId": "dummy_007",
@@ -184,17 +184,9 @@
         {
           "text": "Mistakes usually show up as we go.",
           "audioSrc": "public/data/audio/dummy/dummy_009_sideB_2.mp3"
-        },
-        {
-          "text": "Errors usually appear along the way.",
-          "audioSrc": "public/data/audio/dummy/dummy_009_sideB_3.mp3"
-        },
-        {
-          "text": "Errors normally appear along the way.",
-          "audioSrc": "public/data/audio/dummy/dummy_009_sideB_4.mp3"
         }
       ],
-      "note": "**[207]**\n\n~Bugs tend to appear on the way.~ is physically directional. For processes or projects, [along the way] is the natural collocation.\n\n~Bugs tend to appear in the way.~ means they are acting as an obstacle blocking your path, not that they happen during the process.\n\n~Errors usually appears along the way.~ is grammatically incorrect. 'Errors' is plural, so the verb must be [appear].\n\n~Errors appears usually along the way.~ has incorrect subject-verb agreement and incorrect adverb placement. Adverbs of frequency like [usually] go before the main verb.\n\n~Errors appear normally along the way.~ is awkward. Placing 'normally' after the verb makes it sound like the *manner* of appearance is normal, rather than the frequency. Use adverbs of frequency like [usually] or [normally] before the main verb: [Errors normally appear]."
+      "note": "\n\n~Bugs tend to appear on the way.~ is physically directional. For processes or projects, [along the way] is the natural collocation.\n\n~Bugs tend to appear in the way.~ means they are acting as an obstacle blocking your path, not that they happen during the process.\n\n~Errors usually appears along the way.~ is grammatically incorrect. 'Errors' is plural, so the verb must be [appear].\n\n~Errors appears usually along the way.~ has incorrect subject-verb agreement and incorrect adverb placement. Adverbs of frequency like [usually] go before the main verb.\n\n~Errors appear normally along the way.~ is awkward. Placing 'normally' after the verb makes it sound like the *manner* of appearance is normal, rather than the frequency. Use adverbs of frequency like [usually] or [normally] before the main verb: [Errors normally appear]."
     },
     {
       "cardId": "dummy_010",
@@ -214,7 +206,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_010_sideB_2.mp3"
         }
       ],
-      "note": "**[207]**\n\n~We'll learn it on the way.~ implies learning during a physical trip. For acquiring skills during a project or process, use [along the way].\n\n~We'll learn it in the way.~ is incorrect because 'in the way' means blocking a physical path or obstructing progress."
+      "note": "\n\n~We'll learn it on the way.~ implies learning during a physical trip. For acquiring skills during a project or process, use [along the way].\n\n~We'll learn it in the way.~ is incorrect because 'in the way' means blocking a physical path or obstructing progress."
     },
     {
       "cardId": "dummy_011",
@@ -234,7 +226,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_011_sideB_2.mp3"
         }
       ],
-      "note": "**[207]**\n\n~I'll let you know on the way.~ is only valid if you are physically traveling to a destination. For a project or process, use [along the way].\n\n~I'll let you know in the way.~ is incorrect because 'in the way' means obstructing or blocking a path."
+      "note": "\n\n~I'll let you know on the way.~ is only valid if you are physically traveling to a destination. For a project or process, use [along the way].\n\n~I'll let you know in the way.~ is incorrect because 'in the way' means obstructing or blocking a path."
     },
     {
       "cardId": "dummy_012",
@@ -382,7 +374,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_018_sideB_3.mp3"
         }
       ],
-      "note": "**[208]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_019",
@@ -490,7 +482,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_023_sideB_2.mp3"
         }
       ],
-      "note": "**[206]**\n\nThe word [record] has multiple meanings based on its function. As a noun, it means a documented history or file (un registro). As an adjective (as used in this context), it means the best or highest ever achieved (cifra récord). As a verb, it means to capture audio, video, or data (grabar/registrar)."
+      "note": "**[206]**\n\nYes, the word [record] has multiple meanings based on its function. As a noun, it means a documented history or file (un registro). As an adjective (used in this card), it means the best or highest ever achieved (cifra récord). As a verb, it means to capture audio, video, or data (grabar/registrar)."
     },
     {
       "cardId": "dummy_024",
@@ -552,14 +544,6 @@
         {
           "text": "Income is what you collect, whereas profit is what you keep.",
           "audioSrc": "public/data/audio/dummy/dummy_026_sideB_2.mp3"
-        },
-        {
-          "text": "Revenue is what you get, profit is what you keep.",
-          "audioSrc": "public/data/audio/dummy/dummy_026_sideB_3.mp3"
-        },
-        {
-          "text": "Revenue is what you receive, profit is what you keep.",
-          "audioSrc": "public/data/audio/dummy/dummy_026_sideB_4.mp3"
         }
       ],
       "note": "**[206]**\n\n"
@@ -582,7 +566,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_027_sideB_2.mp3"
         }
       ],
-      "note": "**[205]**\n\n~Please verify the invoice address on this invoice.~ is unnatural due to the repetition of 'invoice'. Use 'billing address' or 'BILL TO address' instead.\n\n~Please verify that the BILL TO address on this invoice.~ is missing a verb to complete the clause (e.g., 'is correct').\n\n~Please verify the BILL TO address is on this invoice.~ is grammatically correct but changes the meaning to verifying the *presence* of the address rather than the address itself.\n\n~Please verify the BILL TO address in this invoice.~ uses the wrong preposition. Information is printed or written [on] a document, page, or surface, not 'in' it."
+      "note": "**[205]**\n\nPlease verify the invoice address on this invoice.~ is unnatural due to the repetition of 'invoice'. Use 'billing address' or 'BILL TO address' instead.\n\n~Please verify that the BILL TO address on this invoice.~ is missing a verb to complete the clause (e.g., 'is correct').\n\n~Please verify the BILL TO address is on this invoice.~ is grammatically correct but changes the meaning to verifying the *presence* of the address rather than the address itself.\n\n~Please verify the BILL TO address in this invoice.~ uses the wrong preposition. Information is printed or written [on] a document, page, or surface, not 'in' it."
     },
     {
       "cardId": "dummy_028",
@@ -600,10 +584,6 @@
         {
           "text": "The buyer and billing details are one and the same.",
           "audioSrc": "public/data/audio/dummy/dummy_028_sideB_2.mp3"
-        },
-        {
-          "text": "The SOLD TO and BILL TO are the same information.",
-          "audioSrc": "public/data/audio/dummy/dummy_028_sideB_3.mp3"
         }
       ],
       "note": "**[205]**\n\n\n\n~The SOLD TO and BILL TO is the same information.~ has a subject-verb agreement error. Since you are referring to two distinct items, the verb must be plural: [are the same information]. However, stating [information is the same] is much more natural."
@@ -742,7 +722,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_034_sideB_4.mp3"
         }
       ],
-      "note": "**[203]**\n\n\n\n~We will adquiere the new servers next month.~ contains a spelling error. The correct English spelling is [acquire].\n\n~We will acquire the new servers for next month.~ implies the servers are intended to be used next month, not that the purchase itself will happen then.\n\n~We will acquire the new servers in next month.~ is grammatically incorrect. Do not use prepositions like [in] or [on] before [next] or [last] when indicating time.\n\n~We will purchase the new servers for next month.~ is incorrect because the preposition [for] indicates purpose or a deadline rather than the specific time an action occurs. To state when the purchase happens, use [next month] directly without a preposition."
+      "note": "**[203]**\n\n\n\n~We will adquiere the new servers next month.~ contains a spelling error. The correct English spelling is [acquire].\n\n~We will acquire the new servers for next month.~ implies the servers are intended to be used next month, not that the purchase itself will happen then.\n\n~We will acquire the new servers in next month.~ is grammatically incorrect. Do not use prepositions like [in] or [on] before [next] or [last] when indicating time."
     },
     {
       "cardId": "dummy_035",
@@ -831,266 +811,6 @@
         }
       ],
       "note": "**[206]**\n\n"
-    },
-    {
-      "cardId": "dummy_039",
-      "cardType": "flippable",
-      "sideA": "Nop, tampoco funciona para mí.",
-      "sideB": [
-        {
-          "text": "Nope, doesn't work for me either.",
-          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_0.mp3"
-        },
-        {
-          "text": "No, it doesn't work for me either.",
-          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_1.mp3"
-        },
-        {
-          "text": "Nope, it is not working for me either.",
-          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_2.mp3"
-        }
-      ],
-      "note": "**[101]**\n\n"
-    },
-    {
-      "cardId": "dummy_040",
-      "cardType": "flippable",
-      "sideA": "Nop, tampoco lo sabía.",
-      "sideB": [
-        {
-          "text": "Nope, I didn't know that either.",
-          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_0.mp3"
-        },
-        {
-          "text": "No, I didn't know that either.",
-          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_1.mp3"
-        },
-        {
-          "text": "Nope, I wasn't aware of that either.",
-          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_2.mp3"
-        }
-      ],
-      "note": "**[101]**\n\n"
-    },
-    {
-      "cardId": "dummy_041",
-      "cardType": "flippable",
-      "sideA": "Similar a como funciona ahora.",
-      "sideB": [
-        {
-          "text": "Similar to how it works now.",
-          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_0.mp3"
-        },
-        {
-          "text": "Much like how it works right now.",
-          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_1.mp3"
-        },
-        {
-          "text": "Close to the way it currently works.",
-          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_042",
-      "cardType": "flippable",
-      "sideA": "Yo supuse que no debía enviarlo.",
-      "sideB": [
-        {
-          "text": "I assumed I shouldn't send it.",
-          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_0.mp3"
-        },
-        {
-          "text": "I assumed I wasn't supposed to send it.",
-          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_1.mp3"
-        },
-        {
-          "text": "I figured I shouldn't send it.",
-          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_043",
-      "cardType": "flippable",
-      "sideA": "Yo supuse mal los requerimientos.",
-      "sideB": [
-        {
-          "text": "I incorrectly assumed the requirements.",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_0.mp3"
-        },
-        {
-          "text": "I made a wrong assumption about the requirements.",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_1.mp3"
-        },
-        {
-          "text": "I misunderstood the requirements.",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_044",
-      "cardType": "flippable",
-      "sideA": "Mi error, mi suposición no fue correcta.",
-      "sideB": [
-        {
-          "text": "My bad, my assumption was incorrect.",
-          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_0.mp3"
-        },
-        {
-          "text": "My mistake, my assumption was wrong.",
-          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_1.mp3"
-        },
-        {
-          "text": "My fault, my assumption wasn't correct.",
-          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_045",
-      "cardType": "flippable",
-      "sideA": "Como en los requerimientos no aparecía eso, no lo agregué.",
-      "sideB": [
-        {
-          "text": "Since that wasn't in the requirements, I didn't add it.",
-          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_0.mp3"
-        },
-        {
-          "text": "As it wasn't in the requirements, I didn't include it.",
-          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_1.mp3"
-        },
-        {
-          "text": "Because that didn't appear in the requirements, I didn't add it.",
-          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_046",
-      "cardType": "flippable",
-      "sideA": "Nuestros ingresos mensuales están disminuyendo.",
-      "sideB": [
-        {
-          "text": "Our monthly revenue is decreasing.",
-          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_0.mp3"
-        },
-        {
-          "text": "Our monthly income is going down.",
-          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_1.mp3"
-        },
-        {
-          "text": "Our monthly revenue is declining.",
-          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_2.mp3"
-        }
-      ],
-      "note": "**[206]**\n\n"
-    },
-    {
-      "cardId": "dummy_047",
-      "cardType": "flippable",
-      "sideA": "Conocimos a mucha gente interesante en el camino.",
-      "sideB": [
-        {
-          "text": "We met a lot of interesting people along the way.",
-          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_0.mp3"
-        },
-        {
-          "text": "We encountered many interesting people along the way.",
-          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_1.mp3"
-        },
-        {
-          "text": "We got to know a lot of interesting people along the way.",
-          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_2.mp3"
-        }
-      ],
-      "note": "**[207]**\n\n"
-    },
-    {
-      "cardId": "dummy_048",
-      "cardType": "flippable",
-      "sideA": "Recogimos algunos suministros en el camino.",
-      "sideB": [
-        {
-          "text": "We picked up some supplies along the way.",
-          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_0.mp3"
-        },
-        {
-          "text": "We grabbed some supplies along the way.",
-          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_1.mp3"
-        },
-        {
-          "text": "We collected some supplies along the way.",
-          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_2.mp3"
-        }
-      ],
-      "note": "**[207]**\n\n"
-    },
-    {
-      "cardId": "dummy_049",
-      "cardType": "flippable",
-      "sideA": "Él parece estar teniendo problemas con la API.",
-      "sideB": [
-        {
-          "text": "He seems to be struggling with the API.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_0.mp3"
-        },
-        {
-          "text": "He appears to be having issues with the API.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_1.mp3"
-        },
-        {
-          "text": "He seems to be having trouble with the API.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_2.mp3"
-        }
-      ],
-      "note": "**[208]**\n\n"
-    },
-    {
-      "cardId": "dummy_050",
-      "cardType": "flippable",
-      "sideA": "La base de datos parece estar respondiendo lentamente.",
-      "sideB": [
-        {
-          "text": "The database seems to be responding slowly.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_0.mp3"
-        },
-        {
-          "text": "The database appears to be answering slowly.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_1.mp3"
-        },
-        {
-          "text": "The DB seems to be replying slowly.",
-          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_2.mp3"
-        }
-      ],
-      "note": "**[208]**\n\n"
-    },
-    {
-      "cardId": "dummy_051",
-      "cardType": "flippable",
-      "sideA": "Ellos afirman estar ganando dinero.",
-      "sideB": [
-        {
-          "text": "They claim to be making money.",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_0.mp3"
-        },
-        {
-          "text": "They claim to be earning money.",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_1.mp3"
-        },
-        {
-          "text": "They profess to be making money.",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_2.mp3"
-        }
-      ],
-      "note": "**[208]**\n\n"
     }
   ]
 }
