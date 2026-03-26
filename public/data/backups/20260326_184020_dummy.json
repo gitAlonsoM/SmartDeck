@@ -46,7 +46,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_002_sideB_2.mp3"
         }
       ],
-      "note": "**[208]**\n\n~It seems to be working wrong.~ and ~It seems it's working wrong.~ are unnatural. For devices, systems, or code, use [malfunctioning], [working incorrectly], or [acting up].\n\n~It looks like to be working incorrectly.~ is grammatically invalid. The phrase 'looks like' must be followed by a full clause (e.g., 'looks like it is working...'), not an infinitive.\n\nWhile ~working wrong~ might be heard in highly informal or non-native speech, 'wrong' is an adjective, not an adverb. The correct adverbial form is [incorrectly]. In professional and standard American English, mechanical or software failures are described using [malfunctioning] or [acting up]. Using 'working wrong' sounds unprofessional and is grammatically flawed.\n\n~It seems to be working bad.~ is grammatically invalid because [bad] is an adjective and cannot modify a verb. You must use an adverb like [badly] or [poorly], though [malfunctioning] is the standard term in technical contexts.\n\n~It seems to be badly.~ is grammatically invalid. The verb 'to be' is a linking verb and must be followed by an adjective (like [bad]), not an adverb. If you want to use the adverb [badly], it must modify an action verb, as in [working badly]."
+      "note": "**[208]**\n\n~It seems to be working wrong.~ and ~It seems it's working wrong.~ are unnatural. For devices, systems, or code, use [malfunctioning], [working incorrectly], or [acting up].\n\n~It looks like to be working incorrectly.~ is grammatically invalid. The phrase 'looks like' must be followed by a full clause (e.g., 'looks like it is working...'), not an infinitive.\n\nWhile ~working wrong~ might be heard in highly informal or non-native speech, 'wrong' is an adjective, not an adverb. The correct adverbial form is [incorrectly]. In professional and standard American English, mechanical or software failures are described using [malfunctioning] or [acting up]. Using 'working wrong' sounds unprofessional and is grammatically flawed.\n\n~It seems to be working bad.~ is grammatically invalid because [bad] is an adjective and cannot modify a verb. You must use an adverb like [badly] or [poorly], though [malfunctioning] is the standard term in technical contexts."
     },
     {
       "cardId": "dummy_003",
@@ -144,10 +144,6 @@
         {
           "text": "Sorry, doing this manually takes me a bit longer.",
           "audioSrc": "public/data/audio/dummy/dummy_007_sideB_2.mp3"
-        },
-        {
-          "text": "Sorry, I'm a bit slow doing it this way.",
-          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_3.mp3"
         }
       ],
       "note": null
@@ -168,10 +164,6 @@
         {
           "text": "Doing it this way makes me a bit slow.",
           "audioSrc": "public/data/audio/dummy/dummy_008_sideB_2.mp3"
-        },
-        {
-          "text": "I'm a bit slow doing this this way.",
-          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_3.mp3"
         }
       ],
       "note": null
@@ -792,10 +784,6 @@
         {
           "text": "A budget cut was a big setback for the team.",
           "audioSrc": "public/data/audio/dummy/dummy_036_sideB_3.mp3"
-        },
-        {
-          "text": "A budget cut was a huge setback for the team.",
-          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_4.mp3"
         }
       ],
       "note": "**[204]**\n\n\n\n~A cut of the budget was a major setback for the team.~ is unnatural. Use the noun adjunct [budget cut] for efficiency.\n\n~A budget cut was a major step back for the team.~ changes the meaning. A [step back] is a deliberate pause or retreat to gain perspective. A [setback] is an involuntary obstacle or delay."
@@ -842,7 +830,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_038_sideB_3.mp3"
         }
       ],
-      "note": "**[206]**\n\n\n\n~The budget has been already rejected.~ is unnatural. The adverb 'already' should be placed after the first auxiliary verb ([has already been]) or at the very end of the sentence ([has been rejected already])."
+      "note": "**[206]**\n\n"
     },
     {
       "cardId": "dummy_039",
@@ -902,7 +890,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_041_sideB_2.mp3"
         }
       ],
-      "note": "**[70]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_042",
@@ -920,17 +908,9 @@
         {
           "text": "I figured I shouldn't send it.",
           "audioSrc": "public/data/audio/dummy/dummy_042_sideB_2.mp3"
-        },
-        {
-          "text": "I thought I shouldn't send it.",
-          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_3.mp3"
-        },
-        {
-          "text": "I guessed I shouldn't send it.",
-          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_4.mp3"
         }
       ],
-      "note": "\n\n~I supposed I shouldn't send it.~ is unnatural. In English, the verb 'suppose' is rarely used as a simple past action to mean 'creer' or 'asumir'. Instead, 'suppose' is typically used for obligations (e.g., 'I was supposed to...') or hypotheticals. For the Spanish 'Yo supuse' (meaning 'I assumed' or 'I figured'), you must use [assumed], [figured], or [thought]."
+      "note": null
     },
     {
       "cardId": "dummy_043",
@@ -950,7 +930,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_043_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~I assumed wrong the requirements.~ and ~I assumed bad the requirements.~ are grammatically invalid. An adverb (like incorrectly or wrongly) cannot be placed between the verb (assumed) and its direct object (the requirements). You must place the adverb before the verb, as in [incorrectly assumed]. Furthermore, 'bad' is an adjective; the adverb is [badly].\n\n~I supposed bad the requirements.~ is incorrect for the same reasons, plus the verb 'suppose' is not used this way to mean 'asumir'. Use [assumed]."
+      "note": null
     },
     {
       "cardId": "dummy_044",
@@ -968,14 +948,6 @@
         {
           "text": "My fault, my assumption wasn't correct.",
           "audioSrc": "public/data/audio/dummy/dummy_044_sideB_2.mp3"
-        },
-        {
-          "text": "My bad, my assumption wasn't correct.",
-          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_3.mp3"
-        },
-        {
-          "text": "My bad, my guess wasn't correct.",
-          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_4.mp3"
         }
       ],
       "note": null
@@ -998,7 +970,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_045_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~Since in the requirements that didn't appear~ and ~Since in the requirements didn't appear that~ are grammatically invalid. In English, you must follow the strict Subject + Verb + Location/Context order. The correct structure is [Since that didn't appear in the requirements]."
+      "note": null
     },
     {
       "cardId": "dummy_046",
@@ -1058,7 +1030,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_048_sideB_2.mp3"
         }
       ],
-      "note": "**[207]**\n\n\n\n~We picked up some supplies in the way.~ is incorrect because [in the way] means something is acting as an obstacle or blocking your path (estorbando). When referring to things that happen or are collected during a journey from point A to point B, the correct phrase is [along the way]. If you are currently traveling and heading to a destination, you say you are [on the way]."
+      "note": "**[207]**\n\n"
     },
     {
       "cardId": "dummy_049",
@@ -1076,10 +1048,6 @@
         {
           "text": "He seems to be having trouble with the API.",
           "audioSrc": "public/data/audio/dummy/dummy_049_sideB_2.mp3"
-        },
-        {
-          "text": "He seems to be having problems with the API.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_3.mp3"
         }
       ],
       "note": "**[208]**\n\n"
@@ -1122,7 +1090,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_051_sideB_2.mp3"
         }
       ],
-      "note": "**[208]**\n\n\n\n~They say to be making money.~ is grammatically invalid. The verb 'say' cannot be followed by an infinitive; it must be followed by a clause, as in [They say they are making money].\n\n~They assure to be making money.~ and ~They ensure to be making money.~ are also invalid. The verb 'assure' requires a person as an object (e.g., [They assure us that...]), and 'ensure' means to guarantee an outcome, not to claim a fact."
+      "note": "**[208]**\n\n"
     }
   ]
 }
