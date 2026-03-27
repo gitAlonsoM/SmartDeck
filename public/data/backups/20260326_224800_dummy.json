@@ -44,17 +44,9 @@
         {
           "text": "It appears to be acting up.",
           "audioSrc": "public/data/audio/dummy/dummy_002_sideB_2.mp3"
-        },
-        {
-          "text": "It seems to be working badly.",
-          "audioSrc": "public/data/audio/dummy/dummy_002_sideB_3.mp3"
-        },
-        {
-          "text": "It seems to be working incorrectly.",
-          "audioSrc": "public/data/audio/dummy/dummy_002_sideB_4.mp3"
         }
       ],
-      "note": "**[208]**\n\n~It seems to be working wrong.~ and ~It seems it's working wrong.~ are unnatural. For devices, systems, or code, use [malfunctioning], [working incorrectly], or [acting up].\n\n~It looks like to be working incorrectly.~ is grammatically invalid. The phrase 'looks like' must be followed by a full clause (e.g., 'looks like it is working...'), not an infinitive.\n\nWhile ~working wrong~ might be heard in highly informal or non-native speech, 'wrong' is an adjective, not an adverb. The correct adverbial form is [incorrectly]. In professional and standard American English, mechanical or software failures are described using [malfunctioning] or [acting up]. Using 'working wrong' sounds unprofessional and is grammatically flawed.\n\n~It seems to be working bad.~ is grammatically invalid because [bad] is an adjective and cannot modify a verb. You must use an adverb like [badly] or [poorly], though [malfunctioning] is the standard term in technical contexts.\n\n~It seems to be badly.~ is grammatically invalid. The verb 'to be' is a linking verb and must be followed by an adjective (like [bad]), not an adverb. If you want to use the adverb [badly], it must modify an action verb, as in [working badly].\n\n~It seems to be working wrong.~ is addressed above. 'Wrong' is an adjective, so you must use the adverb [incorrectly] or [badly] to modify the verb [working]."
+      "note": "**[208]**\n\n~It seems to be working wrong.~ and ~It seems it's working wrong.~ are unnatural. For devices, systems, or code, use [malfunctioning], [working incorrectly], or [acting up].\n\n~It looks like to be working incorrectly.~ is grammatically invalid. The phrase 'looks like' must be followed by a full clause (e.g., 'looks like it is working...'), not an infinitive.\n\nWhile ~working wrong~ might be heard in highly informal or non-native speech, 'wrong' is an adjective, not an adverb. The correct adverbial form is [incorrectly]. In professional and standard American English, mechanical or software failures are described using [malfunctioning] or [acting up]. Using 'working wrong' sounds unprofessional and is grammatically flawed.\n\n~It seems to be working bad.~ is grammatically invalid because [bad] is an adjective and cannot modify a verb. You must use an adverb like [badly] or [poorly], though [malfunctioning] is the standard term in technical contexts.\n\n~It seems to be badly.~ is grammatically invalid. The verb 'to be' is a linking verb and must be followed by an adjective (like [bad]), not an adverb. If you want to use the adverb [badly], it must modify an action verb, as in [working badly]."
     },
     {
       "cardId": "dummy_003",
@@ -666,7 +658,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_030_sideB_3.mp3"
         }
       ],
-      "note": "**[205]**\n\n~Corporate for invoice and warehouse for SHIP TO.~ breaks the standard terminology pairing. In logistics and accounting, [BILL TO] is strictly paired with [SHIP TO].\n\n~Corporative for BILL TO and warehouse for SHIP TO.~ is invalid because [corporative] is a rare adjective, not a noun. Use [corporate] to refer to the corporate office."
+      "note": "**[205]**\n\n~Corporate for invoice and warehouse for SHIP TO.~ breaks the standard terminology pairing. In logistics and accounting, [BILL TO] is strictly paired with [SHIP TO]."
     },
     {
       "cardId": "dummy_031",
@@ -806,7 +798,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_036_sideB_4.mp3"
         }
       ],
-      "note": "**[204]**\n\n\n\n~A cut of the budget was a major setback for the team.~ is unnatural. Use the noun adjunct [budget cut] for efficiency.\n\n~A budget cut was a major step back for the team.~ changes the meaning. A [step back] is a deliberate pause or retreat to gain perspective. A [setback] is an involuntary obstacle or delay.\n\n~A budget cut was a major back step for the team.~ is not a standard English expression. Use [setback] for an involuntary obstacle or [step back] for a deliberate retreat."
+      "note": "**[204]**\n\n\n\n~A cut of the budget was a major setback for the team.~ is unnatural. Use the noun adjunct [budget cut] for efficiency.\n\n~A budget cut was a major step back for the team.~ changes the meaning. A [step back] is a deliberate pause or retreat to gain perspective. A [setback] is an involuntary obstacle or delay."
     },
     {
       "cardId": "dummy_037",
@@ -938,7 +930,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_042_sideB_4.mp3"
         }
       ],
-      "note": "\n\n~I supposed I shouldn't send it.~ is unnatural. In English, the verb 'suppose' is rarely used as a simple past action to mean 'creer' or 'asumir'. Instead, 'suppose' is typically used for obligations (e.g., 'I was supposed to...') or hypotheticals. For the Spanish 'Yo supuse' (meaning 'I assumed' or 'I figured'), you must use [assumed], [figured], or [thought].\n\n~I assumed I didn't have to send it.~ changes the meaning. [Didn't have to] means there was no obligation ('no tenía que'), whereas [shouldn't] means it was a bad idea or prohibited ('no debía')."
+      "note": "\n\n~I supposed I shouldn't send it.~ is unnatural. In English, the verb 'suppose' is rarely used as a simple past action to mean 'creer' or 'asumir'. Instead, 'suppose' is typically used for obligations (e.g., 'I was supposed to...') or hypotheticals. For the Spanish 'Yo supuse' (meaning 'I assumed' or 'I figured'), you must use [assumed], [figured], or [thought]."
     },
     {
       "cardId": "dummy_043",
@@ -956,13 +948,9 @@
         {
           "text": "I misunderstood the requirements.",
           "audioSrc": "public/data/audio/dummy/dummy_043_sideB_2.mp3"
-        },
-        {
-          "text": "I wrongly assumed the requirements.",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_3.mp3"
         }
       ],
-      "note": "\n\n~I assumed wrong the requirements.~ and ~I assumed bad the requirements.~ are grammatically invalid. An adverb (like incorrectly or wrongly) cannot be placed between the verb (assumed) and its direct object (the requirements). You must place the adverb before the verb, as in [incorrectly assumed]. Furthermore, 'bad' is an adjective; the adverb is [badly].\n\n~I supposed bad the requirements.~ is incorrect for the same reasons, plus the verb 'suppose' is not used this way to mean 'asumir'. Use [assumed].\n\n~I badly assumed the requirements.~ is unnatural because [badly] typically describes the quality of a performance or a severe need. To describe a factual error, use [wrongly] or [incorrectly]."
+      "note": "\n\n~I assumed wrong the requirements.~ and ~I assumed bad the requirements.~ are grammatically invalid. An adverb (like incorrectly or wrongly) cannot be placed between the verb (assumed) and its direct object (the requirements). You must place the adverb before the verb, as in [incorrectly assumed]. Furthermore, 'bad' is an adjective; the adverb is [badly].\n\n~I supposed bad the requirements.~ is incorrect for the same reasons, plus the verb 'suppose' is not used this way to mean 'asumir'. Use [assumed]."
     },
     {
       "cardId": "dummy_044",
@@ -1010,7 +998,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_045_sideB_2.mp3"
         }
       ],
-      "note": "**[82]**\n\n\n\n~Since in the requirements that didn't appear~ and ~Since in the requirements didn't appear that~ are grammatically invalid. In English, you must follow the strict Subject + Verb + Location/Context order. The correct structure is [Since that didn't appear in the requirements]."
+      "note": "\n\n~Since in the requirements that didn't appear~ and ~Since in the requirements didn't appear that~ are grammatically invalid. In English, you must follow the strict Subject + Verb + Location/Context order. The correct structure is [Since that didn't appear in the requirements]."
     },
     {
       "cardId": "dummy_046",
@@ -1132,17 +1120,9 @@
         {
           "text": "They profess to be making money.",
           "audioSrc": "public/data/audio/dummy/dummy_051_sideB_2.mp3"
-        },
-        {
-          "text": "They say they are making money.",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_3.mp3"
-        },
-        {
-          "text": "They say that they are making money.",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_4.mp3"
         }
       ],
-      "note": "**[208]**\n\n\n\n~They say to be making money.~ is grammatically invalid. The verb 'say' cannot be followed by an infinitive; it must be followed by a clause, as in [They say they are making money].\n\n~They assure to be making money.~ and ~They ensure to be making money.~ are also invalid. The verb 'assure' requires a person as an object (e.g., [They assure us that...]), and 'ensure' means to guarantee an outcome, not to claim a fact.\n\n~They say to be making money.~ is invalid because verbs of communication like [say] require a full clause to report speech. Only specific catenative verbs, such as verbs of perception or mental state (like [seem], [appear], [claim]), have the special property of linking directly to an infinitive like [to be making]."
+      "note": "**[208]**\n\n\n\n~They say to be making money.~ is grammatically invalid. The verb 'say' cannot be followed by an infinitive; it must be followed by a clause, as in [They say they are making money].\n\n~They assure to be making money.~ and ~They ensure to be making money.~ are also invalid. The verb 'assure' requires a person as an object (e.g., [They assure us that...]), and 'ensure' means to guarantee an outcome, not to claim a fact."
     }
   ]
 }
