@@ -200,10 +200,6 @@
         {
           "text": "And I made a big improvement in my communication.",
           "audioSrc": "public/data/audio/dummy/dummy_010_sideB_2.mp3"
-        },
-        {
-          "text": "And I had a great improvement in my communication.",
-          "audioSrc": "public/data/audio/dummy_deck/dummy_010_sideB_3.mp3"
         }
       ],
       "note": null
@@ -344,13 +340,9 @@
         {
           "text": "If it's a return line, we multiply by the amount in negative.",
           "audioSrc": "public/data/audio/dummy/dummy_017_sideB_2.mp3"
-        },
-        {
-          "text": "When it's a return line, we multiply by the negative quantity.",
-          "audioSrc": "public/data/audio/dummy_deck/dummy_017_sideB_3.mp3"
         }
       ],
-      "note": "**[94]**\n\n~When the line is return, we multiply by the negative amount~ is not valid because [return] acts as a noun here, so it requires an article like [a return] or must be used as an adjective modifying a noun, like [a return line]."
+      "note": null
     },
     {
       "cardId": "dummy_018",
@@ -570,7 +562,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_028_sideB_2.mp3"
         }
       ],
-      "note": "While [there is] translates to \"hay\", when asking about the identity or nature of what exists in a location, English frequently uses [What is...] directly as the subject. [What is outside?] is more concise and natural than [What is there outside?], though both are grammatically valid."
+      "note": null
     },
     {
       "cardId": "dummy_029",
@@ -610,7 +602,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_030_sideB_2.mp3"
         }
       ],
-      "note": "~In the practice, it is used to evaluate the existence of something~ is not valid because the fixed expression is [in practice]. Using [the practice] usually refers to a specific business, like a doctor's or lawyer's office."
+      "note": null
     },
     {
       "cardId": "dummy_031",
@@ -628,10 +620,6 @@
         {
           "text": "My listening wasn't very good.",
           "audioSrc": "public/data/audio/dummy/dummy_031_sideB_2.mp3"
-        },
-        {
-          "text": "My listening skill wasn't so good.",
-          "audioSrc": "public/data/audio/dummy_deck/dummy_031_sideB_3.mp3"
         }
       ],
       "note": null
@@ -694,7 +682,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_034_sideB_2.mp3"
         }
       ],
-      "note": "**[18]**\n\n~I had to learn to treat different kind of people~ changes the original meaning of \"hacerme entender\" (make myself understood) to \"lidiar/tratar con\". Additionally, [treat] means to behave towards someone in a certain way or give medical care, whereas to interact with or manage people is [deal with]. Finally, it should be [different kinds] (plural)."
+      "note": null
     },
     {
       "cardId": "dummy_035",
@@ -1012,10 +1000,6 @@
         {
           "text": "If that field is left blank, it will fail the validation.",
           "audioSrc": "public/data/audio/dummy/dummy_050_sideB_2.mp3"
-        },
-        {
-          "text": "If you leave a blank field, the validation will fail.",
-          "audioSrc": "public/data/audio/dummy_deck/dummy_050_sideB_3.mp3"
         }
       ],
       "note": "**[210]**\n\nWhen a field or document is empty, we use [blank], never the literal translation ~white~."
