@@ -60,10 +60,6 @@
         {
           "text": "I don't think that'll work out in the long term.",
           "audioSrc": "public/data/audio/dummy/dummy_003_sideB_2.mp3"
-        },
-        {
-          "text": "I'm not sure that can work in the long run.",
-          "audioSrc": "public/data/audio/dummy/dummy_003_sideB_3.mp3"
         }
       ],
       "note": null
@@ -144,14 +140,6 @@
         {
           "text": "Things didn't turn out the way we planned.",
           "audioSrc": "public/data/audio/dummy/dummy_007_sideB_2.mp3"
-        },
-        {
-          "text": "Things weren't as we planned.",
-          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_3.mp3"
-        },
-        {
-          "text": "Things didn't happen as planned.",
-          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_4.mp3"
         }
       ],
       "note": null
@@ -192,10 +180,6 @@
         {
           "text": "Tech guys, business people, QA testers, etc.",
           "audioSrc": "public/data/audio/dummy/dummy_009_sideB_2.mp3"
-        },
-        {
-          "text": "People from the technical area, business, testers, etc.",
-          "audioSrc": "public/data/audio/dummy/dummy_009_sideB_3.mp3"
         }
       ],
       "note": null
@@ -260,13 +244,9 @@
         {
           "text": "I have to focus exclusively on what really matters.",
           "audioSrc": "public/data/audio/dummy/dummy_012_sideB_2.mp3"
-        },
-        {
-          "text": "I need to focus just on what matters.",
-          "audioSrc": "public/data/audio/dummy/dummy_012_sideB_3.mp3"
         }
       ],
-      "note": "~I need to focus only in what matters.~ is not valid because the verb 'focus' always takes the preposition [on], never 'in'."
+      "note": null
     },
     {
       "cardId": "dummy_013",
@@ -286,7 +266,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_013_sideB_2.mp3"
         }
       ],
-      "note": "In English, the structure \"tanto X como Y\" is translated using the correlative conjunction [both X and Y]. There is no single direct translation for \"tanto\" in this context; instead, [both] works together with [and] to include two elements equally."
+      "note": null
     },
     {
       "cardId": "dummy_014",
@@ -304,10 +284,6 @@
         {
           "text": "So we send the data, both from the headers and the lines.",
           "audioSrc": "public/data/audio/dummy/dummy_014_sideB_2.mp3"
-        },
-        {
-          "text": "This way we send the data, in the headers and the lines.",
-          "audioSrc": "public/data/audio/dummy/dummy_014_sideB_3.mp3"
         }
       ],
       "note": null
@@ -328,13 +304,9 @@
         {
           "text": "If we have A, then we multiply by B.",
           "audioSrc": "public/data/audio/dummy/dummy_015_sideB_2.mp3"
-        },
-        {
-          "text": "If we have the value A, then we multiply it by the value B.",
-          "audioSrc": "public/data/audio/dummy/dummy_015_sideB_3.mp3"
         }
       ],
-      "note": "**[94]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_016",
@@ -352,10 +324,6 @@
         {
           "text": "If it lacks a return status, then we multiply by C's value.",
           "audioSrc": "public/data/audio/dummy/dummy_016_sideB_2.mp3"
-        },
-        {
-          "text": "If it doesn't have the return status, then we multiply it by the value of C.",
-          "audioSrc": "public/data/audio/dummy/dummy_016_sideB_3.mp3"
         }
       ],
       "note": null
@@ -422,7 +390,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_019_sideB_2.mp3"
         }
       ],
-      "note": "Yes, [standardizing] is used in practice, but other highly common terms in software development for making code follow a common syntax or pattern include [formatting], [refactoring], or [linting] (if done via automated tools)."
+      "note": null
     },
     {
       "cardId": "dummy_020",
@@ -482,7 +450,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_022_sideB_2.mp3"
         }
       ],
-      "note": "~And if it's not returned, we multiply by positive one to keep the original value.~ is not valid because 'returned' is an action (devuelto), whereas the original sentence refers to a type or category (de retorno). Use [a return]."
+      "note": null
     },
     {
       "cardId": "dummy_023",
@@ -540,10 +508,6 @@
         {
           "text": "Yeah, by adding the minus sign, the total value turns negative as well.",
           "audioSrc": "public/data/audio/dummy/dummy_025_sideB_2.mp3"
-        },
-        {
-          "text": "Yes, when we add the negative sign, the total value changes to negative as well.",
-          "audioSrc": "public/data/audio/dummy/dummy_025_sideB_3.mp3"
         }
       ],
       "note": null
@@ -750,7 +714,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_035_sideB_2.mp3"
         }
       ],
-      "note": "~The command varies a bit depending on the operation system used.~ is not valid because the correct technical term is [operating system], not 'operation system'."
+      "note": null
     },
     {
       "cardId": "dummy_036",
@@ -768,13 +732,9 @@
         {
           "text": "The command changes based on the command prompt used.",
           "audioSrc": "public/data/audio/dummy/dummy_036_sideB_2.mp3"
-        },
-        {
-          "text": "The command varies depending on the terminal used.",
-          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_3.mp3"
         }
       ],
-      "note": "~The command varies depending on the terminal command used.~ is not valid because 'terminal command' refers to the instruction itself, not the console application. Use [terminal] or [command console]."
+      "note": null
     },
     {
       "cardId": "dummy_037",
@@ -792,13 +752,9 @@
         {
           "text": "The command is determined by the console and operating system.",
           "audioSrc": "public/data/audio/dummy/dummy_037_sideB_2.mp3"
-        },
-        {
-          "text": "The command depends on the terminal and operating system.",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_3.mp3"
         }
       ],
-      "note": "~The command depends on the console and operation system.~ is not valid because the standard English term is [operating system], not 'operation system'.\n\n~The command depending on the console and operating system.~ is not valid because 'depending' is a gerund/participle and cannot act as the main verb of the sentence. Use the conjugated form [depends]."
+      "note": null
     },
     {
       "cardId": "dummy_038",
@@ -816,10 +772,6 @@
         {
           "text": "Some invisible characters are added because of the spaces.",
           "audioSrc": "public/data/audio/dummy/dummy_038_sideB_2.mp3"
-        },
-        {
-          "text": "Due to spaces, some invisible characters get added.",
-          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_3.mp3"
         }
       ],
       "note": null
@@ -860,13 +812,9 @@
         {
           "text": "Spaces create problems because of some invisible characters.",
           "audioSrc": "public/data/audio/dummy/dummy_040_sideB_2.mp3"
-        },
-        {
-          "text": "Spacing causes problems because of invisible characters.",
-          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_3.mp3"
         }
       ],
-      "note": "~Spaces cause problems with invisible characters.~ is not valid because 'with' implies the spaces are experiencing issues alongside the characters. To express cause, use [because of] or [due to]."
+      "note": null
     },
     {
       "cardId": "dummy_041",
@@ -924,10 +872,6 @@
         {
           "text": "As it was missing from the spreadsheet, I didn't consider it for this release.",
           "audioSrc": "public/data/audio/dummy/dummy_043_sideB_2.mp3"
-        },
-        {
-          "text": "Since it wasn't there in the spreadsheet, I didn't consider it for this release.",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_3.mp3"
         }
       ],
       "note": null
@@ -990,7 +934,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_046_sideB_2.mp3"
         }
       ],
-      "note": "**[209]**\n\n~The database is nearly full in this moment.~ is not valid because the standard preposition for 'this moment' is 'at', not 'in'. Use [at this moment] or [at the moment]."
+      "note": "**[209]**\n\n"
     },
     {
       "cardId": "dummy_047",
@@ -1010,7 +954,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_047_sideB_2.mp3"
         }
       ],
-      "note": "**[210]**\n\nUse [customer] when referring to someone buying a physical product in a retail transaction. Do not use ~client~ here.\n\n~The customer returned the failed product to the store.~ is not valid because 'failed' usually refers to a lack of success rather than a physical defect. Use [defective], [faulty], or [broken] for physical items."
+      "note": "**[210]**\n\nUse [customer] when referring to someone buying a physical product in a retail transaction. Do not use ~client~ here."
     },
     {
       "cardId": "dummy_048",
@@ -1050,7 +994,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_049_sideB_2.mp3"
         }
       ],
-      "note": "**[210]**\n\n[White] refers strictly to the color itself.\n\n~The back of the application should be pure white.~ is not valid because 'back' refers to the physical rear side of an object. For digital interfaces, use [background]."
+      "note": "**[210]**\n\n[White] refers strictly to the color itself."
     },
     {
       "cardId": "dummy_050",
@@ -1092,10 +1036,6 @@
         {
           "text": "Which direction do I need to move this UI component?",
           "audioSrc": "public/data/audio/dummy/dummy_051_sideB_2.mp3"
-        },
-        {
-          "text": "Which direction do I have to move this component on the screen?",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_3.mp3"
         }
       ],
       "note": "**[210]**\n\n[Direction] describes a path of movement or orientation."
