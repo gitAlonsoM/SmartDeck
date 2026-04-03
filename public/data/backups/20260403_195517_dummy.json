@@ -340,10 +340,6 @@
         {
           "text": "If we have the value A, then we multiply it by the value B.",
           "audioSrc": "public/data/audio/dummy/dummy_015_sideB_3.mp3"
-        },
-        {
-          "text": "If we have the value of A, we multiply it by the value of B.",
-          "audioSrc": "public/data/audio/dummy/dummy_015_sideB_4.mp3"
         }
       ],
       "note": "**[94]**\n\n"
@@ -848,10 +844,6 @@
         {
           "text": "Due to spaces, some invisible characters get added.",
           "audioSrc": "public/data/audio/dummy/dummy_038_sideB_3.mp3"
-        },
-        {
-          "text": "Because of spacing, some invisible characters are added.",
-          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_4.mp3"
         }
       ],
       "note": "\n\n~Because of some spaces, some invisible characters are added~ changes the meaning slightly from \"los espacios\" (definite) to \"algunos espacios\" (indefinite). Use [the spaces]."
@@ -1152,14 +1144,6 @@
         {
           "text": "I need to change the user's delivery address in the database.",
           "audioSrc": "public/data/audio/dummy/dummy_052_sideB_2.mp3"
-        },
-        {
-          "text": "I need to update the ship to address of the user in the database.",
-          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_3.mp3"
-        },
-        {
-          "text": "I need to update the shipping address of the user in the database.",
-          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_4.mp3"
         }
       ],
       "note": "**[210]**\n\nWhen referring to a physical location data (street, city) or digital endpoint (IP, email), use [address], never ~direction~."
@@ -1200,10 +1184,6 @@
         {
           "text": "It is just a number overlap, a mere coincidence.",
           "audioSrc": "public/data/audio/dummy/dummy_054_sideB_2.mp3"
-        },
-        {
-          "text": "It's just a coincidence of numbers.",
-          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_3.mp3"
         }
       ],
       "note": null
@@ -1224,13 +1204,9 @@
         {
           "text": "Practically speaking, it's not used a lot.",
           "audioSrc": "public/data/audio/dummy/dummy_055_sideB_2.mp3"
-        },
-        {
-          "text": "In practice, it's not really used.",
-          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_3.mp3"
         }
       ],
-      "note": "\n\n~In practice, it's not much used~ is unnatural. The adverb [much] should generally follow the verb phrase in this context, like [used much]."
+      "note": null
     },
     {
       "cardId": "dummy_056",
@@ -1248,10 +1224,6 @@
         {
           "text": "Yes, theoretically, but practically speaking it's rarely used.",
           "audioSrc": "public/data/audio/dummy/dummy_056_sideB_2.mp3"
-        },
-        {
-          "text": "Yep, theoretically, but in practice it's not really used.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_3.mp3"
         }
       ],
       "note": null
@@ -1312,13 +1284,9 @@
         {
           "text": "Emails get stuck in the notification queue because the sending engine is not running in Blue.",
           "audioSrc": "public/data/audio/dummy/dummy_059_sideB_2.mp3"
-        },
-        {
-          "text": "Emails stay in the notification queue because the sending engine is not running in Blue.",
-          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_3.mp3"
         }
       ],
-      "note": "A [queue] is a sequence or line of items waiting their turn to be processed."
+      "note": null
     },
     {
       "cardId": "dummy_060",
@@ -1336,10 +1304,6 @@
         {
           "text": "This is a standard restriction in development to prevent test emails from accidentally going out to real users.",
           "audioSrc": "public/data/audio/dummy/dummy_060_sideB_2.mp3"
-        },
-        {
-          "text": "It's a standard restriction in Dev to prevent accidental sends of emails to real users.",
-          "audioSrc": "public/data/audio/dummy/dummy_060_sideB_3.mp3"
         }
       ],
       "note": null
@@ -1360,10 +1324,6 @@
         {
           "text": "In Purple, the service status is 'RUNNING', therefore emails should arrive seamlessly.",
           "audioSrc": "public/data/audio/dummy/dummy_061_sideB_2.mp3"
-        },
-        {
-          "text": "In Purple, the service is in the state of 'RUNNING', so emails should arrive without any issues.",
-          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_3.mp3"
         }
       ],
       "note": null
