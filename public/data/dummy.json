@@ -319,6 +319,302 @@
         }
       ],
       "note": "**[82]**\n\n~The entire flow can be tested in Purple because of the Workflow Mailer is enabled there~ is not valid. Use [because] when followed by a full clause (subject + verb), and use [because of] when followed only by a noun phrase."
+    },
+    {
+      "cardId": "dummy_063",
+      "cardType": "flippable",
+      "sideA": "¿Que hay ahi?",
+      "sideB": [
+        {
+          "text": "What is there?",
+          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_0.mp3"
+        },
+        {
+          "text": "What's in there?",
+          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_1.mp3"
+        },
+        {
+          "text": "What is over there?",
+          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_064",
+      "cardType": "flippable",
+      "sideA": "¿Que hay afuera de esa carpeta?",
+      "sideB": [
+        {
+          "text": "What is outside that folder?",
+          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_0.mp3"
+        },
+        {
+          "text": "What's outside of that folder?",
+          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_1.mp3"
+        },
+        {
+          "text": "What is there outside that folder?",
+          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_065",
+      "cardType": "flippable",
+      "sideA": "¿Que hay en el registro de actividades?",
+      "sideB": [
+        {
+          "text": "What is in the activity log?",
+          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_0.mp3"
+        },
+        {
+          "text": "What's in the activity register?",
+          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_1.mp3"
+        },
+        {
+          "text": "What is there in the activity log?",
+          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_066",
+      "cardType": "flippable",
+      "sideA": "Exacto, pero eso no es una excusa.",
+      "sideB": [
+        {
+          "text": "Exactly, but that's not an excuse.",
+          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_0.mp3"
+        },
+        {
+          "text": "That's right, but it is not an excuse.",
+          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_1.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_067",
+      "cardType": "flippable",
+      "sideA": "Claro, pero no es una excusa válida.",
+      "sideB": [
+        {
+          "text": "Sure, but it's not a valid excuse.",
+          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_0.mp3"
+        },
+        {
+          "text": "Of course, but that's not a valid excuse.",
+          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_1.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_068",
+      "cardType": "flippable",
+      "sideA": "Para calcular el sub total estamos multiplicando UNIT SELLING PRICE por ORDERED QUANTITY, o por PRICING QUANTITY.",
+      "sideB": [
+        {
+          "text": "To calculate the subtotal, we are multiplying UNIT SELLING PRICE by ORDERED QUANTITY, or by PRICING QUANTITY.",
+          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_0.mp3"
+        },
+        {
+          "text": "To calculate the subtotal we're multiplying the UNIT SELLING PRICE by the ORDERED QUANTITY, or by the PRICING QUANTITY.",
+          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_1.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_069",
+      "cardType": "flippable",
+      "sideA": "Y si no lo es, multiplicamos por PRICING QUANTITY",
+      "sideB": [
+        {
+          "text": "And if it isn't, we multiply by PRICING QUANTITY.",
+          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_0.mp3"
+        },
+        {
+          "text": "If not, we're multiplying by PRICING QUANTITY.",
+          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_1.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_070",
+      "cardType": "flippable",
+      "sideA": "Solo removi los espacios en blanco.",
+      "sideB": [
+        {
+          "text": "I just removed the whitespace.",
+          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_0.mp3"
+        },
+        {
+          "text": "I only removed the blank spaces.",
+          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_1.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_071",
+      "cardType": "flippable",
+      "sideA": "Solo añadi doble espacio entre las funciones.",
+      "sideB": [
+        {
+          "text": "I just added two blank lines between the functions.",
+          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_0.mp3"
+        },
+        {
+          "text": "I just added some extra line breaks between functions.",
+          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_1.mp3"
+        },
+        {
+          "text": "I just added two empty rows between functions.",
+          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_2.mp3"
+        },
+        {
+          "text": "I just added double spacing between the functions.",
+          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_072",
+      "cardType": "flippable",
+      "sideA": "Puse un comentario en el lado derecho.",
+      "sideB": [
+        {
+          "text": "I put a comment on the right side.",
+          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_0.mp3"
+        },
+        {
+          "text": "I added a comment to the right.",
+          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_1.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_073",
+      "cardType": "flippable",
+      "sideA": "Estamos validando si el usuario pertenece a iStore.",
+      "sideB": [
+        {
+          "text": "We are validating if the user belongs to iStore.",
+          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_0.mp3"
+        },
+        {
+          "text": "We're checking whether the user belongs to iStore.",
+          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_1.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_074",
+      "cardType": "flippable",
+      "sideA": "Si se cumple la condicion de RAISE, pasamos directo al bloque EXCEPTION.",
+      "sideB": [
+        {
+          "text": "If the RAISE condition is met, we go directly to the EXCEPTION block.",
+          "audioSrc": "public/data/audio/dummy/dummy_074_sideB_0.mp3"
+        },
+        {
+          "text": "If the RAISE condition is fulfilled, we skip straight to the EXCEPTION block.",
+          "audioSrc": "public/data/audio/dummy/dummy_074_sideB_1.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_075",
+      "cardType": "flippable",
+      "sideA": "¿Sí o no?",
+      "sideB": [
+        {
+          "text": "Yes or no?",
+          "audioSrc": "public/data/audio/dummy/dummy_075_sideB_0.mp3"
+        },
+        {
+          "text": "Is it a yes or a no?",
+          "audioSrc": "public/data/audio/dummy/dummy_075_sideB_1.mp3"
+        }
+      ],
+      "note": "**[213]**\n\n"
+    },
+    {
+      "cardId": "dummy_076",
+      "cardType": "flippable",
+      "sideA": "No hay conexión a la base de datos.",
+      "sideB": [
+        {
+          "text": "There is no database connection.",
+          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_0.mp3"
+        },
+        {
+          "text": "We have no connection to the database.",
+          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_1.mp3"
+        }
+      ],
+      "note": "**[213]**\n\n"
+    },
+    {
+      "cardId": "dummy_077",
+      "cardType": "flippable",
+      "sideA": "El servidor no está respondiendo.",
+      "sideB": [
+        {
+          "text": "The server is not responding.",
+          "audioSrc": "public/data/audio/dummy/dummy_077_sideB_0.mp3"
+        },
+        {
+          "text": "The server isn't answering.",
+          "audioSrc": "public/data/audio/dummy/dummy_077_sideB_1.mp3"
+        }
+      ],
+      "note": "**[213]**\n\n"
+    },
+    {
+      "cardId": "dummy_078",
+      "cardType": "flippable",
+      "sideA": "No hay errores en el registro.",
+      "sideB": [
+        {
+          "text": "There are no errors in the log.",
+          "audioSrc": "public/data/audio/dummy/dummy_078_sideB_0.mp3"
+        },
+        {
+          "text": "The log has no errors.",
+          "audioSrc": "public/data/audio/dummy/dummy_078_sideB_1.mp3"
+        },
+        {
+          "text": "We have no errors in the log.",
+          "audioSrc": "public/data/audio/dummy/dummy_078_sideB_2.mp3"
+        }
+      ],
+      "note": "**[213]**\n\n"
+    },
+    {
+      "cardId": "dummy_079",
+      "cardType": "flippable",
+      "sideA": "No tenemos tiempo para esto.",
+      "sideB": [
+        {
+          "text": "We have no time for this.",
+          "audioSrc": "public/data/audio/dummy/dummy_079_sideB_0.mp3"
+        },
+        {
+          "text": "There is no time for this.",
+          "audioSrc": "public/data/audio/dummy/dummy_079_sideB_1.mp3"
+        }
+      ],
+      "note": "**[213]**\n\n"
     }
   ]
 }
