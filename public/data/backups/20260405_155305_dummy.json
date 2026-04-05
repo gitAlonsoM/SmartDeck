@@ -206,7 +206,7 @@
           "audioSrc": "public/data/audio/dummy_deck/dummy_050_sideB_3.mp3"
         }
       ],
-      "note": "**[210]**\n\nWhen a field or document is empty, we use [blank], never the literal translation ~white~.\n\n~If you leave the field in blank~ is not valid because 'in blank' is a literal translation of 'en blanco'. In English, use the adjective directly: [leave the field blank].\n\n~If you leave a field in blank...~ is not valid. As stated above, do not use the preposition 'in' before the adjective [blank]."
+      "note": "**[210]**\n\nWhen a field or document is empty, we use [blank], never the literal translation ~white~.\n\n~If you leave the field in blank~ is not valid because 'in blank' is a literal translation of 'en blanco'. In English, use the adjective directly: [leave the field blank]."
     },
     {
       "cardId": "dummy_059",
@@ -358,7 +358,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_064_sideB_2.mp3"
         }
       ],
-      "note": "'What' can function directly as the subject of the verb 'to be', meaning [What is] asks for the identity of the thing located outside. Using [What is there] applies the existential 'there is/are' structure. Both are grammatically correct."
+      "note": null
     },
     {
       "cardId": "dummy_065",
@@ -440,13 +440,9 @@
         {
           "text": "If not, we're multiplying by PRICING QUANTITY.",
           "audioSrc": "public/data/audio/dummy/dummy_069_sideB_1.mp3"
-        },
-        {
-          "text": "And if it isn't, we multiply it by PRICING QUANTITY.",
-          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_2.mp3"
         }
       ],
-      "note": "~And if it doesn't, we multiply by PRICING QUANTITY.~ is not valid because 'doesn't' replaces an action verb, but the Spanish phrase 'si no lo es' requires the verb 'to be' [isn't]."
+      "note": null
     },
     {
       "cardId": "dummy_070",
@@ -462,7 +458,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_070_sideB_1.mp3"
         }
       ],
-      "note": "**[212]**\n\n~I just remove the spaces.~ is not valid because 'remove' is in the present tense, but the Spanish sentence 'removí' is in the past tense [removed]."
+      "note": null
     },
     {
       "cardId": "dummy_071",
@@ -486,7 +482,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_071_sideB_3.mp3"
         }
       ],
-      "note": "**[212]**\n\n~I just added double space/spaces between the functions.~ is not valid. When referring to vertical arrangement, 'space' is uncountable and must be written as [spacing]. If referring to literal empty lines, use the countable [blank lines]."
+      "note": null
     },
     {
       "cardId": "dummy_072",
@@ -502,7 +498,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_072_sideB_1.mp3"
         }
       ],
-      "note": "**[153]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_073",
@@ -534,7 +530,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_074_sideB_1.mp3"
         }
       ],
-      "note": "~If the RAISE condition is met, we go direct to the EXCEPTION block.~ is not valid because 'direct' is an adjective. You must use the adverb [directly] to modify the verb 'go'."
+      "note": null
     },
     {
       "cardId": "dummy_075",
@@ -566,7 +562,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_076_sideB_1.mp3"
         }
       ],
-      "note": "**[213]**\n\n~There is no connection in the database.~ is not valid because the preposition 'in' implies the connection exists physically inside the database. Use [to] to indicate the destination or target of the connection."
+      "note": "**[213]**\n\n"
     },
     {
       "cardId": "dummy_077",
@@ -616,10 +612,6 @@
         {
           "text": "There is no time for this.",
           "audioSrc": "public/data/audio/dummy/dummy_079_sideB_1.mp3"
-        },
-        {
-          "text": "We don't have time for this.",
-          "audioSrc": "public/data/audio/dummy/dummy_079_sideB_2.mp3"
         }
       ],
       "note": "**[213]**\n\n"
