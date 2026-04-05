@@ -62,7 +62,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_017_sideB_4.mp3"
         }
       ],
-      "note": "**[94]**\n\n~When the line is return, we multiply by the negative amount~ is not valid because [return] acts as a noun here, so it requires an article like [a return] or must be used as an adjective modifying a noun, like [a return line].\n\n~When it's a return line, we multiply it by the amount in negative~ is not valid because 'in negative' is a literal translation of 'en negativo'. In English, the adjective precedes the noun, so use [the negative amount] or [a negative amount]."
+      "note": "**[214]**\n\n**[94]**\n\n~When the line is return, we multiply by the negative amount~ is not valid because [return] acts as a noun here, so it requires an article like [a return] or must be used as an adjective modifying a noun, like [a return line].\n\n~When it's a return line, we multiply it by the amount in negative~ is not valid because 'in negative' is a literal translation of 'en negativo'. In English, the adjective precedes the noun, so use [the negative amount] or [a negative amount]."
     },
     {
       "cardId": "dummy_022",
@@ -206,7 +206,7 @@
           "audioSrc": "public/data/audio/dummy_deck/dummy_050_sideB_3.mp3"
         }
       ],
-      "note": "**[210]**\n\nWhen a field or document is empty, we use [blank], never the literal translation ~white~.\n\n~If you leave the field in blank~ is not valid because 'in blank' is a literal translation of 'en blanco'. In English, use the adjective directly: [leave the field blank].\n\n~If you leave a field in blank...~ is not valid. As stated above, do not use the preposition 'in' before the adjective [blank]."
+      "note": "**[214]**\n\n**[210]**\n\nWhen a field or document is empty, we use [blank], never the literal translation ~white~.\n\n~If you leave the field in blank~ is not valid because 'in blank' is a literal translation of 'en blanco'. In English, use the adjective directly: [leave the field blank].\n\n~If you leave a field in blank...~ is not valid. As stated above, do not use the preposition 'in' before the adjective [blank]."
     },
     {
       "cardId": "dummy_059",
@@ -462,7 +462,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_070_sideB_1.mp3"
         }
       ],
-      "note": "**[212]**\n\n~I just remove the spaces.~ is not valid because 'remove' is in the present tense, but the Spanish sentence 'removí' is in the past tense [removed]."
+      "note": "**[214]**\n\n**[212]**\n\n~I just remove the spaces.~ is not valid because 'remove' is in the present tense, but the Spanish sentence 'removí' is in the past tense [removed]."
     },
     {
       "cardId": "dummy_071",
@@ -623,6 +623,126 @@
         }
       ],
       "note": "**[213]**\n\n"
+    },
+    {
+      "cardId": "dummy_080",
+      "cardType": "flippable",
+      "sideA": "Tenemos que multiplicar por la cantidad en negativo.",
+      "sideB": [
+        {
+          "text": "We have to multiply by the negative amount.",
+          "audioSrc": "public/data/audio/dummy/dummy_080_sideB_0.mp3"
+        },
+        {
+          "text": "We need to multiply it by the negative quantity.",
+          "audioSrc": "public/data/audio/dummy/dummy_080_sideB_1.mp3"
+        },
+        {
+          "text": "We must multiply by the negative amount.",
+          "audioSrc": "public/data/audio/dummy/dummy_080_sideB_2.mp3"
+        }
+      ],
+      "note": "**[214]**\n\n~...multiply by the amount in negative~ is incorrect because \"negative\" is an adjective here. Use [the negative amount]."
+    },
+    {
+      "cardId": "dummy_081",
+      "cardType": "flippable",
+      "sideA": "El script falla si hay un espacio en blanco.",
+      "sideB": [
+        {
+          "text": "The script fails if there is a blank space.",
+          "audioSrc": "public/data/audio/dummy/dummy_081_sideB_0.mp3"
+        },
+        {
+          "text": "The script crashes if it finds a blank space.",
+          "audioSrc": "public/data/audio/dummy/dummy_081_sideB_1.mp3"
+        },
+        {
+          "text": "It fails if there's a blank space.",
+          "audioSrc": "public/data/audio/dummy/dummy_081_sideB_2.mp3"
+        }
+      ],
+      "note": "**[214]**\n\n~...if there is a space in blank~ is an invalid translation. The modifier must precede the noun: [a blank space]."
+    },
+    {
+      "cardId": "dummy_082",
+      "cardType": "flippable",
+      "sideA": "Por favor, lee el texto en negrita.",
+      "sideB": [
+        {
+          "text": "Please read the bold text.",
+          "audioSrc": "public/data/audio/dummy/dummy_082_sideB_0.mp3"
+        },
+        {
+          "text": "Kindly read the bolded text.",
+          "audioSrc": "public/data/audio/dummy/dummy_082_sideB_1.mp3"
+        },
+        {
+          "text": "Please look at the bold text.",
+          "audioSrc": "public/data/audio/dummy/dummy_082_sideB_2.mp3"
+        }
+      ],
+      "note": "**[214]**\n\n"
+    },
+    {
+      "cardId": "dummy_083",
+      "cardType": "flippable",
+      "sideA": "Después del reinicio, solo vi una pantalla en negro.",
+      "sideB": [
+        {
+          "text": "After the reboot, I only saw a black screen.",
+          "audioSrc": "public/data/audio/dummy/dummy_083_sideB_0.mp3"
+        },
+        {
+          "text": "I just saw a black screen after restarting.",
+          "audioSrc": "public/data/audio/dummy/dummy_083_sideB_1.mp3"
+        },
+        {
+          "text": "After restarting, I only got a black screen.",
+          "audioSrc": "public/data/audio/dummy/dummy_083_sideB_2.mp3"
+        }
+      ],
+      "note": "**[214]**\n\n"
+    },
+    {
+      "cardId": "dummy_084",
+      "cardType": "flippable",
+      "sideA": "La empresa está en deuda desde el año pasado.",
+      "sideB": [
+        {
+          "text": "The company has been in debt since last year.",
+          "audioSrc": "public/data/audio/dummy/dummy_084_sideB_0.mp3"
+        },
+        {
+          "text": "The business has been in debt since last year.",
+          "audioSrc": "public/data/audio/dummy/dummy_084_sideB_1.mp3"
+        },
+        {
+          "text": "The company is currently in debt since last year.",
+          "audioSrc": "public/data/audio/dummy/dummy_084_sideB_2.mp3"
+        }
+      ],
+      "note": "**[214]**\n\nHere, the use of \"in\" is valid because [debt] is a noun representing a state, not an adjective."
+    },
+    {
+      "cardId": "dummy_085",
+      "cardType": "flippable",
+      "sideA": "Revisé los registros y todo está en orden.",
+      "sideB": [
+        {
+          "text": "I checked the logs and everything is in order.",
+          "audioSrc": "public/data/audio/dummy/dummy_085_sideB_0.mp3"
+        },
+        {
+          "text": "I reviewed the logs and all is in order.",
+          "audioSrc": "public/data/audio/dummy/dummy_085_sideB_1.mp3"
+        },
+        {
+          "text": "I looked at the records and everything is in order.",
+          "audioSrc": "public/data/audio/dummy/dummy_085_sideB_2.mp3"
+        }
+      ],
+      "note": "**[214]**\n\nUsing \"in\" is completely correct here because [order] functions as a noun describing a condition."
     }
   ]
 }
