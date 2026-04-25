@@ -60,10 +60,6 @@
         {
           "text": "Kindly forward the logs whenever you can.",
           "audioSrc": "public/data/audio/dummy/dummy_003_sideB_2.mp3"
-        },
-        {
-          "text": "Please send me the logs when you can.",
-          "audioSrc": "public/data/audio/dummy/dummy_003_sideB_3.mp3"
         }
       ],
       "note": "**[216]**\n\n[Kindly] is a very common and professional alternative to 'please' in corporate emails."
@@ -104,10 +100,6 @@
         {
           "text": "The server failed, so I restarted it.",
           "audioSrc": "public/data/audio/dummy/dummy_005_sideB_2.mp3"
-        },
-        {
-          "text": "The server crashed, so I had to restart it.",
-          "audioSrc": "public/data/audio/dummy/dummy_005_sideB_3.mp3"
         }
       ],
       "note": "**[215]**\n\n"
@@ -128,13 +120,9 @@
         {
           "text": "Files are missing, so the installation cannot continue.",
           "audioSrc": "public/data/audio/dummy/dummy_006_sideB_2.mp3"
-        },
-        {
-          "text": "It lacks files; therefore, the installation cannot continue.",
-          "audioSrc": "public/data/audio/dummy/dummy_006_sideB_3.mp3"
         }
       ],
-      "note": "**[215]**\n\n\n\n~It lack files~ is incorrect because the third-person singular [it] requires the verb to end in [-s]."
+      "note": "**[215]**\n\n"
     },
     {
       "cardId": "dummy_007",
@@ -152,14 +140,6 @@
         {
           "text": "We had a DB error, and as a result, some records were lost.",
           "audioSrc": "public/data/audio/dummy/dummy_007_sideB_2.mp3"
-        },
-        {
-          "text": "It was a database error. As a result, we lost some records.",
-          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_3.mp3"
-        },
-        {
-          "text": "There was an error in the database. As a result, we lost some records.",
-          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_4.mp3"
         }
       ],
       "note": "**[215]**\n\n"
@@ -180,18 +160,6 @@
         {
           "text": "They didn't pay, so consequently, the account got suspended.",
           "audioSrc": "public/data/audio/dummy/dummy_008_sideB_2.mp3"
-        },
-        {
-          "text": "The client didn't pay; therefore, his account was suspended.",
-          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_3.mp3"
-        },
-        {
-          "text": "The client didn't pay; thus, his account was suspended.",
-          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_4.mp3"
-        },
-        {
-          "text": "The client didn't pay; so, his account was suspended.",
-          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_5.mp3"
         }
       ],
       "note": "**[215]**\n\n"
@@ -232,10 +200,6 @@
         {
           "text": "Are you leaving early because you finished your tasks?",
           "audioSrc": "public/data/audio/dummy/dummy_010_sideB_2.mp3"
-        },
-        {
-          "text": "Did you finish your tasks, and that's why you're leaving early?",
-          "audioSrc": "public/data/audio/dummy/dummy_010_sideB_3.mp3"
         }
       ],
       "note": "**[215]**\n\n"
@@ -258,7 +222,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_011_sideB_2.mp3"
         }
       ],
-      "note": "**[216]**\n\nJust like with 'this/these', the Spanish structure \"ese tipo de errores\" mixes singular and plural. In English, you must match the plural \"errors\" with plural demonstratives and nouns: [those kinds of errors]. ~That kind of errors~ is unnatural."
+      "note": "**[216]**\n\nJust like with 'this/these', the Spanish structure \"ese tipo de errores\" mixes singular and plural. In English, you must match the plural \"errors\" with plural demonstratives and nouns: [those kinds of errors]. ~That kind of errors~ is unnatural." 
     },
     {
       "cardId": "dummy_012",
@@ -296,10 +260,6 @@
         {
           "text": "While checking the email, I noticed a mistake.",
           "audioSrc": "public/data/audio/dummy/dummy_013_sideB_2.mp3"
-        },
-        {
-          "text": "While I was reading the email, I noticed an error.",
-          "audioSrc": "public/data/audio/dummy/dummy_013_sideB_3.mp3"
         }
       ],
       "note": "**[164]**\n\n"
@@ -320,13 +280,9 @@
         {
           "text": "Upon completing the download, I closed the window.",
           "audioSrc": "public/data/audio/dummy/dummy_014_sideB_2.mp3"
-        },
-        {
-          "text": "When the download finished, I closed the window.",
-          "audioSrc": "public/data/audio/dummy/dummy_014_sideB_3.mp3"
         }
       ],
-      "note": "**[164]**\n\n\n\n~By finishing the download~ is not valid because [by] describes the method used to achieve a result, whereas this sentence describes a sequence of events in time."
+      "note": "**[164]**\n\n"
     },
     {
       "cardId": "dummy_015",
@@ -344,10 +300,6 @@
         {
           "text": "By resetting the router, we fixed the issue.",
           "audioSrc": "public/data/audio/dummy/dummy_015_sideB_2.mp3"
-        },
-        {
-          "text": "On restarting the router, we fixed the problem.",
-          "audioSrc": "public/data/audio/dummy/dummy_015_sideB_3.mp3"
         }
       ],
       "note": "**[164]**\n\n"
@@ -391,8 +343,8 @@
         }
       ],
       "note": "**[164]**\n\n"
-    },
-    {
+       },
+       {
       "cardId": "dummy_018",
       "cardType": "flippable",
       "sideA": "Al recibir la alerta, revisé los registros.",
@@ -428,17 +380,9 @@
         {
           "text": "Upon opening the document, I saw it was corrupted.",
           "audioSrc": "public/data/audio/dummy/dummy_019_sideB_2.mp3"
-        },
-        {
-          "text": "Opening the file, I realized it was corrupted.",
-          "audioSrc": "public/data/audio/dummy/dummy_019_sideB_3.mp3"
-        },
-        {
-          "text": "When I opened the file, I realized it was corrupted.",
-          "audioSrc": "public/data/audio/dummy/dummy_019_sideB_4.mp3"
         }
       ],
       "note": "**[164]**\n\n"
-    }
+      }
   ]
 }
