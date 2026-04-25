@@ -5,322 +5,6 @@
   "deckType": "flippable",
   "cards": [
     {
-      "cardId": "dummy_001",
-      "cardType": "flippable",
-      "sideA": "Yeah, eso es seguro.",
-      "sideB": [
-        {
-          "text": "Yeah, that's for sure.",
-          "audioSrc": "public/data/audio/dummy/dummy_001_sideB_0.mp3"
-        },
-        {
-          "text": "Yeah, that's certain.",
-          "audioSrc": "public/data/audio/dummy/dummy_001_sideB_1.mp3"
-        },
-        {
-          "text": "Yeah, that's a sure thing.",
-          "audioSrc": "public/data/audio/dummy/dummy_001_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_002",
-      "cardType": "flippable",
-      "sideA": "Ok, las imágenes no se están escalando correctamente, tenemos que ajustarlas mejor.",
-      "sideB": [
-        {
-          "text": "Okay, the images aren't scaling correctly; we need to adjust them better.",
-          "audioSrc": "public/data/audio/dummy/dummy_002_sideB_0.mp3"
-        },
-        {
-          "text": "Ok, the images are not scaling properly, we have to adjust them better.",
-          "audioSrc": "public/data/audio/dummy/dummy_002_sideB_1.mp3"
-        },
-        {
-          "text": "Alright, the images aren't scaling right, we need to fine-tune them.",
-          "audioSrc": "public/data/audio/dummy/dummy_002_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_003",
-      "cardType": "flippable",
-      "sideA": "No estoy seguro que eso vaya a funcionar a largo plazo.",
-      "sideB": [
-        {
-          "text": "I'm not sure that's going to work in the long run.",
-          "audioSrc": "public/data/audio/dummy/dummy_003_sideB_0.mp3"
-        },
-        {
-          "text": "I'm not sure that will work long-term.",
-          "audioSrc": "public/data/audio/dummy/dummy_003_sideB_1.mp3"
-        },
-        {
-          "text": "I don't think that'll work out in the long term.",
-          "audioSrc": "public/data/audio/dummy/dummy_003_sideB_2.mp3"
-        },
-        {
-          "text": "I'm not sure that can work in the long run.",
-          "audioSrc": "public/data/audio/dummy/dummy_003_sideB_3.mp3"
-        }
-      ],
-      "note": "\n\n~I'm not sure that can work on the long run~ is not valid because the correct idiom is [in the long run], not 'on'."
-    },
-    {
-      "cardId": "dummy_004",
-      "cardType": "flippable",
-      "sideA": "No esperaba eso.",
-      "sideB": [
-        {
-          "text": "I didn't expect that.",
-          "audioSrc": "public/data/audio/dummy/dummy_004_sideB_0.mp3"
-        },
-        {
-          "text": "I wasn't expecting that.",
-          "audioSrc": "public/data/audio/dummy/dummy_004_sideB_1.mp3"
-        },
-        {
-          "text": "That was unexpected.",
-          "audioSrc": "public/data/audio/dummy/dummy_004_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_005",
-      "cardType": "flippable",
-      "sideA": "Depende en lo que pase después.",
-      "sideB": [
-        {
-          "text": "Depends on what's next.",
-          "audioSrc": "public/data/audio/dummy/dummy_005_sideB_0.mp3"
-        },
-        {
-          "text": "It depends on what happens next.",
-          "audioSrc": "public/data/audio/dummy/dummy_005_sideB_1.mp3"
-        },
-        {
-          "text": "That depends on what happens afterwards.",
-          "audioSrc": "public/data/audio/dummy/dummy_005_sideB_2.mp3"
-        },
-        {
-          "text": "It depends on what happens later.",
-          "audioSrc": "public/data/audio/dummy/dummy_005_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_006",
-      "cardType": "flippable",
-      "sideA": "OK volvamos al punto principal.",
-      "sideB": [
-        {
-          "text": "Let's get back to the main point.",
-          "audioSrc": "public/data/audio/dummy/dummy_006_sideB_0.mp3"
-        },
-        {
-          "text": "Okay, let's return to the main point.",
-          "audioSrc": "public/data/audio/dummy/dummy_006_sideB_1.mp3"
-        },
-        {
-          "text": "Alright, let's go back to the main topic.",
-          "audioSrc": "public/data/audio/dummy/dummy_006_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_007",
-      "cardType": "flippable",
-      "sideA": "Las cosas no fueron como planeamos.",
-      "sideB": [
-        {
-          "text": "Things didn't go as planned.",
-          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_0.mp3"
-        },
-        {
-          "text": "Things didn't go according to plan.",
-          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_1.mp3"
-        },
-        {
-          "text": "Things didn't turn out the way we planned.",
-          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_2.mp3"
-        },
-        {
-          "text": "Things weren't as we planned.",
-          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_3.mp3"
-        },
-        {
-          "text": "Things didn't happen as planned.",
-          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_4.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_008",
-      "cardType": "flippable",
-      "sideA": "Es ok por ahora.",
-      "sideB": [
-        {
-          "text": "It's good enough for now.",
-          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_0.mp3"
-        },
-        {
-          "text": "It's fine for the time being.",
-          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_1.mp3"
-        },
-        {
-          "text": "It's okay for now.",
-          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_009",
-      "cardType": "flippable",
-      "sideA": "Gente del área técnica, negocios, testers, etc.",
-      "sideB": [
-        {
-          "text": "People from the technical side, business, testers, etc.",
-          "audioSrc": "public/data/audio/dummy/dummy_009_sideB_0.mp3"
-        },
-        {
-          "text": "Technical people, business folks, testers, and so on.",
-          "audioSrc": "public/data/audio/dummy/dummy_009_sideB_1.mp3"
-        },
-        {
-          "text": "Tech guys, business people, QA testers, etc.",
-          "audioSrc": "public/data/audio/dummy/dummy_009_sideB_2.mp3"
-        },
-        {
-          "text": "People from the technical area, business, testers, etc.",
-          "audioSrc": "public/data/audio/dummy/dummy_009_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_010",
-      "cardType": "flippable",
-      "sideA": "Y tuve una gran mejora en mi comunicación.",
-      "sideB": [
-        {
-          "text": "And I had a huge improvement in my communication.",
-          "audioSrc": "public/data/audio/dummy/dummy_010_sideB_0.mp3"
-        },
-        {
-          "text": "And I improved my communication skills a lot.",
-          "audioSrc": "public/data/audio/dummy/dummy_010_sideB_1.mp3"
-        },
-        {
-          "text": "And I made a big improvement in my communication.",
-          "audioSrc": "public/data/audio/dummy/dummy_010_sideB_2.mp3"
-        },
-        {
-          "text": "And I had a great improvement in my communication.",
-          "audioSrc": "public/data/audio/dummy_deck/dummy_010_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_011",
-      "cardType": "flippable",
-      "sideA": "La habidad de focalizar en lo que importa.",
-      "sideB": [
-        {
-          "text": "The ability to focus on what matters.",
-          "audioSrc": "public/data/audio/dummy/dummy_011_sideB_0.mp3"
-        },
-        {
-          "text": "The skill to focus on what's important.",
-          "audioSrc": "public/data/audio/dummy/dummy_011_sideB_1.mp3"
-        },
-        {
-          "text": "Being able to focus on the important stuff.",
-          "audioSrc": "public/data/audio/dummy/dummy_011_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_012",
-      "cardType": "flippable",
-      "sideA": "Necesito focalizarme solo en lo que importa.",
-      "sideB": [
-        {
-          "text": "I need to focus only on what matters.",
-          "audioSrc": "public/data/audio/dummy/dummy_012_sideB_0.mp3"
-        },
-        {
-          "text": "I just need to focus on what's important.",
-          "audioSrc": "public/data/audio/dummy/dummy_012_sideB_1.mp3"
-        },
-        {
-          "text": "I have to focus exclusively on what really matters.",
-          "audioSrc": "public/data/audio/dummy/dummy_012_sideB_2.mp3"
-        },
-        {
-          "text": "I need to focus just on what matters.",
-          "audioSrc": "public/data/audio/dummy/dummy_012_sideB_3.mp3"
-        }
-      ],
-      "note": "~I need to focus only in what matters.~ is not valid because the verb 'focus' always takes the preposition [on], never 'in'."
-    },
-    {
-      "cardId": "dummy_013",
-      "cardType": "flippable",
-      "sideA": "Así tenemos la info en la app, tanto de las líneas como de los headers.",
-      "sideB": [
-        {
-          "text": "This way we have the info in the app, from both the lines and the headers.",
-          "audioSrc": "public/data/audio/dummy/dummy_013_sideB_0.mp3"
-        },
-        {
-          "text": "That way we get the data in the app, both from the lines and headers.",
-          "audioSrc": "public/data/audio/dummy/dummy_013_sideB_1.mp3"
-        },
-        {
-          "text": "So we have the info in the app, for both the lines and the headers.",
-          "audioSrc": "public/data/audio/dummy/dummy_013_sideB_2.mp3"
-        },
-        {
-          "text": "So we have the info in the app, in both the lines and the headers.",
-          "audioSrc": "public/data/audio/dummy/dummy_013_sideB_3.mp3"
-        }
-      ],
-      "note": "In English, the structure \"tanto X como Y\" is translated using the correlative conjunction [both X and Y]. There is no single direct translation for \"tanto\" in this context; instead, [both] works together with [and] to include two elements equally."
-    },
-    {
-      "cardId": "dummy_014",
-      "cardType": "flippable",
-      "sideA": "Así enviamos la data, tanto de los headers como de las lineas.",
-      "sideB": [
-        {
-          "text": "This way we send the data, for both the headers and the lines.",
-          "audioSrc": "public/data/audio/dummy/dummy_014_sideB_0.mp3"
-        },
-        {
-          "text": "That way we send the data, from the headers as well as the lines.",
-          "audioSrc": "public/data/audio/dummy/dummy_014_sideB_1.mp3"
-        },
-        {
-          "text": "So we send the data, both from the headers and the lines.",
-          "audioSrc": "public/data/audio/dummy/dummy_014_sideB_2.mp3"
-        },
-        {
-          "text": "This way we send the data, in the headers and the lines.",
-          "audioSrc": "public/data/audio/dummy/dummy_014_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
       "cardId": "dummy_015",
       "cardType": "flippable",
       "sideA": "Si tenemos el valor de A, entonces multiplicamos con el valor de B.",
@@ -353,30 +37,6 @@
       "note": "**[94]**\n\n"
     },
     {
-      "cardId": "dummy_016",
-      "cardType": "flippable",
-      "sideA": "Si no tiene estatus de retorno, entonces multiplicamos con el valor de C.",
-      "sideB": [
-        {
-          "text": "If it doesn't have a return status, then we multiply it by the value of C.",
-          "audioSrc": "public/data/audio/dummy/dummy_016_sideB_0.mp3"
-        },
-        {
-          "text": "If there is no return status, we multiply by the value of C.",
-          "audioSrc": "public/data/audio/dummy/dummy_016_sideB_1.mp3"
-        },
-        {
-          "text": "If it lacks a return status, then we multiply by C's value.",
-          "audioSrc": "public/data/audio/dummy/dummy_016_sideB_2.mp3"
-        },
-        {
-          "text": "If it doesn't have the return status, then we multiply it by the value of C.",
-          "audioSrc": "public/data/audio/dummy/dummy_016_sideB_3.mp3"
-        }
-      ],
-      "note": "\n\n~If it doesn't have the status of return, then we multiply it by the value of C~ is not natural because we use the compound noun [return status] instead of 'status of return'."
-    },
-    {
       "cardId": "dummy_017",
       "cardType": "flippable",
       "sideA": "Cuando la linea es de retorno multiplicamos por la cantidad en negativo.",
@@ -402,91 +62,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_017_sideB_4.mp3"
         }
       ],
-      "note": "**[94]**\n\n~When the line is return, we multiply by the negative amount~ is not valid because [return] acts as a noun here, so it requires an article like [a return] or must be used as an adjective modifying a noun, like [a return line].\n\n~When it's a return line, we multiply it by the amount in negative~ is not valid because 'in negative' is a literal translation of 'en negativo'. In English, the adjective precedes the noun, so use [the negative amount] or [a negative amount]."
-    },
-    {
-      "cardId": "dummy_018",
-      "cardType": "flippable",
-      "sideA": "Y si la linea no es de retorno, multiplicamos por la cantidad en positivo.",
-      "sideB": [
-        {
-          "text": "And if the line isn't a return, we multiply by the positive amount.",
-          "audioSrc": "public/data/audio/dummy/dummy_018_sideB_0.mp3"
-        },
-        {
-          "text": "And if it's not a return line, we multiply by the positive quantity.",
-          "audioSrc": "public/data/audio/dummy/dummy_018_sideB_1.mp3"
-        },
-        {
-          "text": "And if it is not a return line, we multiply by the amount in positive.",
-          "audioSrc": "public/data/audio/dummy/dummy_018_sideB_2.mp3"
-        },
-        {
-          "text": "And if it is not a return line, we multiply it by the amount in positive.",
-          "audioSrc": "public/data/audio/dummy/dummy_018_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_019",
-      "cardType": "flippable",
-      "sideA": "Solo estaba estandarizando el código.",
-      "sideB": [
-        {
-          "text": "I was just standardizing the code.",
-          "audioSrc": "public/data/audio/dummy/dummy_019_sideB_0.mp3"
-        },
-        {
-          "text": "I was only standardizing the code.",
-          "audioSrc": "public/data/audio/dummy/dummy_019_sideB_1.mp3"
-        },
-        {
-          "text": "I was simply making the code standard.",
-          "audioSrc": "public/data/audio/dummy/dummy_019_sideB_2.mp3"
-        }
-      ],
-      "note": "Yes, [standardizing] is used in practice, but other highly common terms in software development for making code follow a common syntax or pattern include [formatting], [refactoring], or [linting] (if done via automated tools)."
-    },
-    {
-      "cardId": "dummy_020",
-      "cardType": "flippable",
-      "sideA": "Ese cambio es solo para estandarizar el código.",
-      "sideB": [
-        {
-          "text": "That change is just to standardize the code.",
-          "audioSrc": "public/data/audio/dummy/dummy_020_sideB_0.mp3"
-        },
-        {
-          "text": "That change is only for standardizing the code.",
-          "audioSrc": "public/data/audio/dummy/dummy_020_sideB_1.mp3"
-        },
-        {
-          "text": "This change is just to make the code standard.",
-          "audioSrc": "public/data/audio/dummy/dummy_020_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_021",
-      "cardType": "flippable",
-      "sideA": "Estamos multiplicado el valor por 1 negativo cuando la linea es de retorno.",
-      "sideB": [
-        {
-          "text": "We are multiplying the value by negative one when the line is a return.",
-          "audioSrc": "public/data/audio/dummy/dummy_021_sideB_0.mp3"
-        },
-        {
-          "text": "We multiply the value by minus one when it's a return line.",
-          "audioSrc": "public/data/audio/dummy/dummy_021_sideB_1.mp3"
-        },
-        {
-          "text": "We're multiplying the amount by negative one if it's a return line.",
-          "audioSrc": "public/data/audio/dummy/dummy_021_sideB_2.mp3"
-        }
-      ],
-      "note": null
+      "note": "**[214]**\n\n**[94]**\n\n~When the line is return, we multiply by the negative amount~ is not valid because [return] acts as a noun here, so it requires an article like [a return] or must be used as an adjective modifying a noun, like [a return line].\n\n~When it's a return line, we multiply it by the amount in negative~ is not valid because 'in negative' is a literal translation of 'en negativo'. In English, the adjective precedes the noun, so use [the negative amount] or [a negative amount]."
     },
     {
       "cardId": "dummy_022",
@@ -513,114 +89,6 @@
       "note": "~And if it's not returned, we multiply by positive one to keep the original value.~ is not valid because 'returned' is an action (devuelto), whereas the original sentence refers to a type or category (de retorno). Use [a return]."
     },
     {
-      "cardId": "dummy_023",
-      "cardType": "flippable",
-      "sideA": "Sí, estamos invirtiendo el signo a negativo o positivo.",
-      "sideB": [
-        {
-          "text": "Yes, we are flipping the sign to negative or positive.",
-          "audioSrc": "public/data/audio/dummy/dummy_023_sideB_0.mp3"
-        },
-        {
-          "text": "Yes, we're inverting the sign to negative or positive.",
-          "audioSrc": "public/data/audio/dummy/dummy_023_sideB_1.mp3"
-        },
-        {
-          "text": "Yeah, we are reversing the sign to negative or positive.",
-          "audioSrc": "public/data/audio/dummy/dummy_023_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_024",
-      "cardType": "flippable",
-      "sideA": "Sí, estamos invirtiendo el signo a positivo o negativo segun el caso.",
-      "sideB": [
-        {
-          "text": "Yes, we are flipping the sign to positive or negative depending on the case.",
-          "audioSrc": "public/data/audio/dummy/dummy_024_sideB_0.mp3"
-        },
-        {
-          "text": "Yes, we're inverting the sign to positive or negative as the case may be.",
-          "audioSrc": "public/data/audio/dummy/dummy_024_sideB_1.mp3"
-        },
-        {
-          "text": "Yeah, we change the sign to positive or negative depending on the situation.",
-          "audioSrc": "public/data/audio/dummy/dummy_024_sideB_2.mp3"
-        },
-        {
-          "text": "Yes, we are flipping the sign to positive or negative based on the case.",
-          "audioSrc": "public/data/audio/dummy/dummy_024_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_025",
-      "cardType": "flippable",
-      "sideA": "Sí, cuando agregamos el signo negativo, el valor total cambia a negativo también.",
-      "sideB": [
-        {
-          "text": "Yes, when we add the negative sign, the total value changes to negative too.",
-          "audioSrc": "public/data/audio/dummy/dummy_025_sideB_0.mp3"
-        },
-        {
-          "text": "Yes, when we append the negative sign, the total amount also becomes negative.",
-          "audioSrc": "public/data/audio/dummy/dummy_025_sideB_1.mp3"
-        },
-        {
-          "text": "Yeah, by adding the minus sign, the total value turns negative as well.",
-          "audioSrc": "public/data/audio/dummy/dummy_025_sideB_2.mp3"
-        },
-        {
-          "text": "Yes, when we add the negative sign, the total value changes to negative as well.",
-          "audioSrc": "public/data/audio/dummy/dummy_025_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_026",
-      "cardType": "flippable",
-      "sideA": "Puedes usar estas, pero que no sean esas.",
-      "sideB": [
-        {
-          "text": "You can use these, but not those.",
-          "audioSrc": "public/data/audio/dummy/dummy_026_sideB_0.mp3"
-        },
-        {
-          "text": "You can use these ones, just not those ones.",
-          "audioSrc": "public/data/audio/dummy/dummy_026_sideB_1.mp3"
-        },
-        {
-          "text": "You may use these, as long as they aren't those.",
-          "audioSrc": "public/data/audio/dummy/dummy_026_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_027",
-      "cardType": "flippable",
-      "sideA": "Sí, pero que no sean esas.",
-      "sideB": [
-        {
-          "text": "Yes, but not those.",
-          "audioSrc": "public/data/audio/dummy/dummy_027_sideB_0.mp3"
-        },
-        {
-          "text": "Yeah, just not those ones.",
-          "audioSrc": "public/data/audio/dummy/dummy_027_sideB_1.mp3"
-        },
-        {
-          "text": "Yes, as long as it's not those.",
-          "audioSrc": "public/data/audio/dummy/dummy_027_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
       "cardId": "dummy_028",
       "cardType": "flippable",
       "sideA": "¿Que hay afuera de la simulación?",
@@ -645,110 +113,6 @@
       "note": "While [there is] translates to \"hay\", when asking about the identity or nature of what exists in a location, English frequently uses [What is...] directly as the subject. [What is outside?] is more concise and natural than [What is there outside?], though both are grammatically valid."
     },
     {
-      "cardId": "dummy_029",
-      "cardType": "flippable",
-      "sideA": "Tiene lógica que podría ser util.",
-      "sideB": [
-        {
-          "text": "It has logic that could be useful.",
-          "audioSrc": "public/data/audio/dummy/dummy_029_sideB_0.mp3"
-        },
-        {
-          "text": "It contains logic that might be handy.",
-          "audioSrc": "public/data/audio/dummy/dummy_029_sideB_1.mp3"
-        },
-        {
-          "text": "It has some logic that could come in handy.",
-          "audioSrc": "public/data/audio/dummy/dummy_029_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_030",
-      "cardType": "flippable",
-      "sideA": "En la practica es usado para evaluar la existencia de algo.",
-      "sideB": [
-        {
-          "text": "In practice, it is used to evaluate the existence of something.",
-          "audioSrc": "public/data/audio/dummy/dummy_030_sideB_0.mp3"
-        },
-        {
-          "text": "In practice, it's used to check if something exists.",
-          "audioSrc": "public/data/audio/dummy/dummy_030_sideB_1.mp3"
-        },
-        {
-          "text": "Practically speaking, it's used to assess the existence of something.",
-          "audioSrc": "public/data/audio/dummy/dummy_030_sideB_2.mp3"
-        }
-      ],
-      "note": "~In the practice, it is used to evaluate the existence of something~ is not valid because the fixed expression is [in practice]. Using [the practice] usually refers to a specific business, like a doctor's or lawyer's office."
-    },
-    {
-      "cardId": "dummy_031",
-      "cardType": "flippable",
-      "sideA": "My listening skill... no era tan buena.",
-      "sideB": [
-        {
-          "text": "My listening skill wasn't that good.",
-          "audioSrc": "public/data/audio/dummy/dummy_031_sideB_0.mp3"
-        },
-        {
-          "text": "My listening skills weren't that great.",
-          "audioSrc": "public/data/audio/dummy/dummy_031_sideB_1.mp3"
-        },
-        {
-          "text": "My listening wasn't very good.",
-          "audioSrc": "public/data/audio/dummy/dummy_031_sideB_2.mp3"
-        },
-        {
-          "text": "My listening skill wasn't so good.",
-          "audioSrc": "public/data/audio/dummy_deck/dummy_031_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_032",
-      "cardType": "flippable",
-      "sideA": "Tenía las bases, pero tuve que mejorar un monton.",
-      "sideB": [
-        {
-          "text": "I had the basics, but I had to improve a lot.",
-          "audioSrc": "public/data/audio/dummy/dummy_032_sideB_0.mp3"
-        },
-        {
-          "text": "I had the foundation, but I needed to improve a ton.",
-          "audioSrc": "public/data/audio/dummy/dummy_032_sideB_1.mp3"
-        },
-        {
-          "text": "I knew the basics, but I had to get a lot better.",
-          "audioSrc": "public/data/audio/dummy/dummy_032_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_033",
-      "cardType": "flippable",
-      "sideA": "Tuve que aprender a articular mis oraciones correctamente.",
-      "sideB": [
-        {
-          "text": "I had to learn to articulate my sentences correctly.",
-          "audioSrc": "public/data/audio/dummy/dummy_033_sideB_0.mp3"
-        },
-        {
-          "text": "I had to learn how to articulate my sentences properly.",
-          "audioSrc": "public/data/audio/dummy/dummy_033_sideB_1.mp3"
-        },
-        {
-          "text": "I needed to learn to structure my sentences correctly.",
-          "audioSrc": "public/data/audio/dummy/dummy_033_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
       "cardId": "dummy_034",
       "cardType": "flippable",
       "sideA": "Tuve que aprender a hacerme entender con diferente tipo de gente.",
@@ -771,74 +135,6 @@
         }
       ],
       "note": "**[18]**\n\n~I had to learn to treat different kind of people~ changes the original meaning of \"hacerme entender\" (make myself understood) to \"lidiar/tratar con\". Additionally, [treat] means to behave towards someone in a certain way or give medical care, whereas to interact with or manage people is [deal with]. Finally, it should be [different kinds] (plural).\n\n~I had to learn to make myself understood with different kind of people~ is not valid because 'kind' must be plural when preceded by 'different' referring to multiple types. Use [different kinds of people]."
-    },
-    {
-      "cardId": "dummy_035",
-      "cardType": "flippable",
-      "sideA": "El comando varia un poco dependiendo del sistema operativo usado.",
-      "sideB": [
-        {
-          "text": "The command varies a bit depending on the operating system used.",
-          "audioSrc": "public/data/audio/dummy/dummy_035_sideB_0.mp3"
-        },
-        {
-          "text": "The command changes slightly depending on the OS used.",
-          "audioSrc": "public/data/audio/dummy/dummy_035_sideB_1.mp3"
-        },
-        {
-          "text": "The command is a little different depending on the operating system you use.",
-          "audioSrc": "public/data/audio/dummy/dummy_035_sideB_2.mp3"
-        }
-      ],
-      "note": "~The command varies a bit depending on the operation system used.~ is not valid because the correct technical term is [operating system], not 'operation system'."
-    },
-    {
-      "cardId": "dummy_036",
-      "cardType": "flippable",
-      "sideA": "El comando varia dependiendo de la consola de comando usada.",
-      "sideB": [
-        {
-          "text": "The command varies depending on the command console used.",
-          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_0.mp3"
-        },
-        {
-          "text": "The command differs depending on the terminal used.",
-          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_1.mp3"
-        },
-        {
-          "text": "The command changes based on the command prompt used.",
-          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_2.mp3"
-        },
-        {
-          "text": "The command varies depending on the terminal used.",
-          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_3.mp3"
-        }
-      ],
-      "note": "**[211]**\n\n~The command varies depending on the terminal command used.~ is not valid because 'terminal command' refers to the instruction itself, not the console application. Use [terminal] or [command console].\n\nRegarding your question: 'depending' here is not a gerund following the verb 'varies' (like catenative verbs). Instead, 'depending on' functions as a fixed preposition (a participle preposition) that introduces a conditional phrase. It does not depend on the tense or person of the main verb. You can say 'They vary [depending on]...' or 'It varied [depending on]...'."
-    },
-    {
-      "cardId": "dummy_037",
-      "cardType": "flippable",
-      "sideA": "El comando depende de la consola y sistema operativo.",
-      "sideB": [
-        {
-          "text": "The command depends on the console and operating system.",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_0.mp3"
-        },
-        {
-          "text": "The command relies on the terminal and OS.",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_1.mp3"
-        },
-        {
-          "text": "The command is determined by the console and operating system.",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_2.mp3"
-        },
-        {
-          "text": "The command depends on the terminal and operating system.",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_3.mp3"
-        }
-      ],
-      "note": "~The command depends on the console and operation system.~ is not valid because the standard English term is [operating system], not 'operation system'.\n\n~The command depending on the console and operating system.~ is not valid because 'depending' is a gerund/participle and cannot act as the main verb of the sentence. Use the conjugated form [depends]."
     },
     {
       "cardId": "dummy_038",
@@ -869,178 +165,6 @@
       "note": "**[212]**\n\n~Because of some spaces, some invisible characters are added~ changes the meaning slightly from \"los espacios\" (definite) to \"algunos espacios\" (indefinite). Use [the spaces].\n\n~Because of spaces, some invisible characters are added~ changes the meaning from specific spaces ([the spaces]) to spaces in general. Since the original Spanish says \"los espacios\", use [the spaces]."
     },
     {
-      "cardId": "dummy_039",
-      "cardType": "flippable",
-      "sideA": "Caracteres invisibles son agregados y causan problemas.",
-      "sideB": [
-        {
-          "text": "Invisible characters are added and cause problems.",
-          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_0.mp3"
-        },
-        {
-          "text": "Invisible characters get added and they cause issues.",
-          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_1.mp3"
-        },
-        {
-          "text": "Invisible characters are inserted, causing problems.",
-          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_040",
-      "cardType": "flippable",
-      "sideA": "Los espacios causan problemas por caracteres invisibles.",
-      "sideB": [
-        {
-          "text": "Spaces cause problems because of invisible characters.",
-          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_0.mp3"
-        },
-        {
-          "text": "The spaces cause issues due to invisible characters.",
-          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_1.mp3"
-        },
-        {
-          "text": "Spaces create problems because of some invisible characters.",
-          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_2.mp3"
-        },
-        {
-          "text": "Spacing causes problems because of invisible characters.",
-          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_3.mp3"
-        }
-      ],
-      "note": "~Spaces cause problems with invisible characters.~ is not valid because 'with' implies the spaces are experiencing issues alongside the characters. To express cause, use [because of] or [due to].\n\n~Spaces cause problems for invisible characters~ changes the meaning. 'Cause problems for' means the characters are the victims experiencing the problems. To express cause (por), use [because of] or [due to]."
-    },
-    {
-      "cardId": "dummy_041",
-      "cardType": "flippable",
-      "sideA": "Son diferentes tipos de operadores de Null.",
-      "sideB": [
-        {
-          "text": "They are different types of null operators.",
-          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_0.mp3"
-        },
-        {
-          "text": "Those are different kinds of null operators.",
-          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_1.mp3"
-        },
-        {
-          "text": "They're various types of null operators.",
-          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_2.mp3"
-        }
-      ],
-      "note": "\n\n~They are different types of null operations~ changes the meaning because \"operadores\" translates to [operators], not 'operations'."
-    },
-    {
-      "cardId": "dummy_042",
-      "cardType": "flippable",
-      "sideA": "Ya que en los requerimientos no estaba eso, no lo agregue.",
-      "sideB": [
-        {
-          "text": "Since that wasn't in the requirements, I didn't add it.",
-          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_0.mp3"
-        },
-        {
-          "text": "Because it wasn't in the requirements, I didn't include it.",
-          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_1.mp3"
-        },
-        {
-          "text": "As it was not in the requirements, I didn't add it.",
-          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_043",
-      "cardType": "flippable",
-      "sideA": "Ya que en el spreadsheet no estaba, no lo considere en este release.",
-      "sideB": [
-        {
-          "text": "Since it wasn't in the spreadsheet, I didn't consider it for this release.",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_0.mp3"
-        },
-        {
-          "text": "Because it wasn't on the spreadsheet, I didn't include it in this release.",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_1.mp3"
-        },
-        {
-          "text": "As it was missing from the spreadsheet, I didn't consider it for this release.",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_2.mp3"
-        },
-        {
-          "text": "Since it wasn't there in the spreadsheet, I didn't consider it for this release.",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_044",
-      "cardType": "flippable",
-      "sideA": "El sistema procesa la información rápidamente ahora.",
-      "sideB": [
-        {
-          "text": "The system processes the information quickly now.",
-          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_0.mp3"
-        },
-        {
-          "text": "The system handles the data rapidly now.",
-          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_1.mp3"
-        },
-        {
-          "text": "The system processes the info swiftly now.",
-          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_2.mp3"
-        }
-      ],
-      "note": "**[209]**\n\n"
-    },
-    {
-      "cardId": "dummy_045",
-      "cardType": "flippable",
-      "sideA": "Nosotros casi nunca usamos esa librería antigua.",
-      "sideB": [
-        {
-          "text": "We rarely use that old library.",
-          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_0.mp3"
-        },
-        {
-          "text": "We almost never use that legacy library.",
-          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_1.mp3"
-        },
-        {
-          "text": "We seldom use that outdated library.",
-          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_2.mp3"
-        }
-      ],
-      "note": "**[209]**\n\n"
-    },
-    {
-      "cardId": "dummy_046",
-      "cardType": "flippable",
-      "sideA": "La base de datos está casi llena en este momento.",
-      "sideB": [
-        {
-          "text": "The database is almost full right now.",
-          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_0.mp3"
-        },
-        {
-          "text": "The database is nearly full at the moment.",
-          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_1.mp3"
-        },
-        {
-          "text": "The DB is almost completely full right now.",
-          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_2.mp3"
-        },
-        {
-          "text": "The database is nearly full at this moment.",
-          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_3.mp3"
-        }
-      ],
-      "note": "**[209]**\n\n~The database is nearly full in this moment.~ is not valid because the standard preposition for 'this moment' is 'at', not 'in'. Use [at this moment] or [at the moment]."
-    },
-    {
       "cardId": "dummy_047",
       "cardType": "flippable",
       "sideA": "El cliente devolvió el producto defectuoso a la tienda.",
@@ -1059,46 +183,6 @@
         }
       ],
       "note": "**[210]**\n\nUse [customer] when referring to someone buying a physical product in a retail transaction. Do not use ~client~ here.\n\n~The customer returned the failed product to the store.~ is not valid because 'failed' usually refers to a lack of success rather than a physical defect. Use [defective], [faulty], or [broken] for physical items."
-    },
-    {
-      "cardId": "dummy_048",
-      "cardType": "flippable",
-      "sideA": "Tenemos una reunión con nuestro cliente más importante mañana.",
-      "sideB": [
-        {
-          "text": "We have a meeting with our most important client tomorrow.",
-          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_0.mp3"
-        },
-        {
-          "text": "We are meeting with our top client tomorrow.",
-          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_1.mp3"
-        },
-        {
-          "text": "We have a session with our biggest client tomorrow.",
-          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_2.mp3"
-        }
-      ],
-      "note": "**[210]**\n\nUse [client] for professional services (software dev, consulting, law) where there is an ongoing relationship, not ~customer~."
-    },
-    {
-      "cardId": "dummy_049",
-      "cardType": "flippable",
-      "sideA": "El fondo de la aplicación debería ser blanco puro.",
-      "sideB": [
-        {
-          "text": "The background of the application should be pure white.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_0.mp3"
-        },
-        {
-          "text": "The app's background needs to be solid white.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_1.mp3"
-        },
-        {
-          "text": "The background for the app should be entirely white.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_2.mp3"
-        }
-      ],
-      "note": "**[210]**\n\n[White] refers strictly to the color itself.\n\n~The back of the application should be pure white.~ is not valid because 'back' refers to the physical rear side of an object. For digital interfaces, use [background]."
     },
     {
       "cardId": "dummy_050",
@@ -1122,191 +206,7 @@
           "audioSrc": "public/data/audio/dummy_deck/dummy_050_sideB_3.mp3"
         }
       ],
-      "note": "**[210]**\n\nWhen a field or document is empty, we use [blank], never the literal translation ~white~.\n\n~If you leave the field in blank~ is not valid because 'in blank' is a literal translation of 'en blanco'. In English, use the adjective directly: [leave the field blank]."
-    },
-    {
-      "cardId": "dummy_051",
-      "cardType": "flippable",
-      "sideA": "¿En qué dirección debo mover este componente en la pantalla?",
-      "sideB": [
-        {
-          "text": "In which direction should I move this component on the screen?",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_0.mp3"
-        },
-        {
-          "text": "What direction should I drag this component on the screen?",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_1.mp3"
-        },
-        {
-          "text": "Which direction do I need to move this UI component?",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_2.mp3"
-        },
-        {
-          "text": "Which direction do I have to move this component on the screen?",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_3.mp3"
-        }
-      ],
-      "note": "**[210]**\n\n[Direction] describes a path of movement or orientation."
-    },
-    {
-      "cardId": "dummy_052",
-      "cardType": "flippable",
-      "sideA": "Necesito actualizar la dirección de envío del usuario en la base de datos.",
-      "sideB": [
-        {
-          "text": "I need to update the user's shipping address in the database.",
-          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_0.mp3"
-        },
-        {
-          "text": "I have to update the shipping address for the user in the DB.",
-          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_1.mp3"
-        },
-        {
-          "text": "I need to change the user's delivery address in the database.",
-          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_2.mp3"
-        },
-        {
-          "text": "I need to update the ship to address of the user in the database.",
-          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_3.mp3"
-        },
-        {
-          "text": "I need to update the shipping address of the user in the database.",
-          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_4.mp3"
-        }
-      ],
-      "note": "**[210]**\n\nWhen referring to a physical location data (street, city) or digital endpoint (IP, email), use [address], never ~direction~."
-    },
-    {
-      "cardId": "dummy_053",
-      "cardType": "flippable",
-      "sideA": "Solo es una coincidencia.",
-      "sideB": [
-        {
-          "text": "It's just a coincidence.",
-          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_0.mp3"
-        },
-        {
-          "text": "It is only a coincidence.",
-          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_1.mp3"
-        },
-        {
-          "text": "That's just a coincidence.",
-          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_054",
-      "cardType": "flippable",
-      "sideA": "Solo es alcance de numero, una coincidencia.",
-      "sideB": [
-        {
-          "text": "It's just a number clash, a coincidence.",
-          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_0.mp3"
-        },
-        {
-          "text": "It's just a coincidence with the numbers.",
-          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_1.mp3"
-        },
-        {
-          "text": "It is just a number overlap, a mere coincidence.",
-          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_2.mp3"
-        },
-        {
-          "text": "It's just a coincidence of numbers.",
-          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_055",
-      "cardType": "flippable",
-      "sideA": "En la practica, no se usa mucho.",
-      "sideB": [
-        {
-          "text": "In practice, it's not used much.",
-          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_0.mp3"
-        },
-        {
-          "text": "In practice, it isn't used very often.",
-          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_1.mp3"
-        },
-        {
-          "text": "Practically speaking, it's not used a lot.",
-          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_2.mp3"
-        },
-        {
-          "text": "In practice, it's not really used.",
-          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_3.mp3"
-        }
-      ],
-      "note": "\n\n~In practice, it's not much used~ is unnatural. The adverb [much] should generally follow the verb phrase in this context, like [used much]."
-    },
-    {
-      "cardId": "dummy_056",
-      "cardType": "flippable",
-      "sideA": "Yep, teoricamente, pero en la practica no se usa mucho.",
-      "sideB": [
-        {
-          "text": "Yep, theoretically, but in practice it's not used much.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_0.mp3"
-        },
-        {
-          "text": "Yeah, in theory, but in practice it isn't used a lot.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_1.mp3"
-        },
-        {
-          "text": "Yes, theoretically, but practically speaking it's rarely used.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_2.mp3"
-        },
-        {
-          "text": "Yep, theoretically, but in practice it's not really used.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_057",
-      "cardType": "flippable",
-      "sideA": "Es porque el servicio de mensajería de Workflow está desactivado en este entorno de desarrollo.",
-      "sideB": [
-        {
-          "text": "It's because the Workflow Mailer service is deactivated in this development environment.",
-          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_0.mp3"
-        },
-        {
-          "text": "That's because the Workflow messaging service is disabled in this dev environment.",
-          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_1.mp3"
-        },
-        {
-          "text": "It is because the Workflow Mailer service is turned off in this development environment.",
-          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_058",
-      "cardType": "flippable",
-      "sideA": "El componente 'Workflow Notification Mailer' tiene el estado 'DEACTIVATED_USER' por configuración de seguridad.",
-      "sideB": [
-        {
-          "text": "The 'Workflow Notification Mailer' component is set to 'DEACTIVATED_USER' due to security configurations.",
-          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_0.mp3"
-        },
-        {
-          "text": "The 'Workflow Notification Mailer' component has the 'DEACTIVATED_USER' status because of security settings.",
-          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_1.mp3"
-        },
-        {
-          "text": "Due to security configs, the 'Workflow Notification Mailer' component is in 'DEACTIVATED_USER' status.",
-          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_2.mp3"
-        }
-      ],
-      "note": null
+      "note": "**[214]**\n\n**[210]**\n\nWhen a field or document is empty, we use [blank], never the literal translation ~white~.\n\n~If you leave the field in blank~ is not valid because 'in blank' is a literal translation of 'en blanco'. In English, use the adjective directly: [leave the field blank].\n\n~If you leave a field in blank...~ is not valid. As stated above, do not use the preposition 'in' before the adjective [blank]."
     },
     {
       "cardId": "dummy_059",
@@ -1419,6 +319,438 @@
         }
       ],
       "note": "**[82]**\n\n~The entire flow can be tested in Purple because of the Workflow Mailer is enabled there~ is not valid. Use [because] when followed by a full clause (subject + verb), and use [because of] when followed only by a noun phrase."
+    },
+    {
+      "cardId": "dummy_063",
+      "cardType": "flippable",
+      "sideA": "¿Que hay ahi?",
+      "sideB": [
+        {
+          "text": "What is there?",
+          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_0.mp3"
+        },
+        {
+          "text": "What's in there?",
+          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_1.mp3"
+        },
+        {
+          "text": "What is over there?",
+          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_064",
+      "cardType": "flippable",
+      "sideA": "¿Que hay afuera de esa carpeta?",
+      "sideB": [
+        {
+          "text": "What is outside that folder?",
+          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_0.mp3"
+        },
+        {
+          "text": "What's outside of that folder?",
+          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_1.mp3"
+        },
+        {
+          "text": "What is there outside that folder?",
+          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_2.mp3"
+        }
+      ],
+      "note": "'What' can function directly as the subject of the verb 'to be', meaning [What is] asks for the identity of the thing located outside. Using [What is there] applies the existential 'there is/are' structure. Both are grammatically correct."
+    },
+    {
+      "cardId": "dummy_065",
+      "cardType": "flippable",
+      "sideA": "¿Que hay en el registro de actividades?",
+      "sideB": [
+        {
+          "text": "What is in the activity log?",
+          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_0.mp3"
+        },
+        {
+          "text": "What's in the activity register?",
+          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_1.mp3"
+        },
+        {
+          "text": "What is there in the activity log?",
+          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_066",
+      "cardType": "flippable",
+      "sideA": "Exacto, pero eso no es una excusa.",
+      "sideB": [
+        {
+          "text": "Exactly, but that's not an excuse.",
+          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_0.mp3"
+        },
+        {
+          "text": "That's right, but it is not an excuse.",
+          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_1.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_067",
+      "cardType": "flippable",
+      "sideA": "Claro, pero no es una excusa válida.",
+      "sideB": [
+        {
+          "text": "Sure, but it's not a valid excuse.",
+          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_0.mp3"
+        },
+        {
+          "text": "Of course, but that's not a valid excuse.",
+          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_1.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_068",
+      "cardType": "flippable",
+      "sideA": "Para calcular el sub total estamos multiplicando UNIT SELLING PRICE por ORDERED QUANTITY, o por PRICING QUANTITY.",
+      "sideB": [
+        {
+          "text": "To calculate the subtotal, we are multiplying UNIT SELLING PRICE by ORDERED QUANTITY, or by PRICING QUANTITY.",
+          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_0.mp3"
+        },
+        {
+          "text": "To calculate the subtotal we're multiplying the UNIT SELLING PRICE by the ORDERED QUANTITY, or by the PRICING QUANTITY.",
+          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_1.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_069",
+      "cardType": "flippable",
+      "sideA": "Y si no lo es, multiplicamos por PRICING QUANTITY",
+      "sideB": [
+        {
+          "text": "And if it isn't, we multiply by PRICING QUANTITY.",
+          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_0.mp3"
+        },
+        {
+          "text": "If not, we're multiplying by PRICING QUANTITY.",
+          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_1.mp3"
+        },
+        {
+          "text": "And if it isn't, we multiply it by PRICING QUANTITY.",
+          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_2.mp3"
+        }
+      ],
+      "note": "~And if it doesn't, we multiply by PRICING QUANTITY.~ is not valid because 'doesn't' replaces an action verb, but the Spanish phrase 'si no lo es' requires the verb 'to be' [isn't]."
+    },
+    {
+      "cardId": "dummy_070",
+      "cardType": "flippable",
+      "sideA": "Solo removi los espacios en blanco.",
+      "sideB": [
+        {
+          "text": "I just removed the whitespace.",
+          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_0.mp3"
+        },
+        {
+          "text": "I only removed the blank spaces.",
+          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_1.mp3"
+        }
+      ],
+      "note": "**[214]**\n\n**[212]**\n\n~I just remove the spaces.~ is not valid because 'remove' is in the present tense, but the Spanish sentence 'removí' is in the past tense [removed]."
+    },
+    {
+      "cardId": "dummy_071",
+      "cardType": "flippable",
+      "sideA": "Solo añadi doble espacio entre las funciones.",
+      "sideB": [
+        {
+          "text": "I just added two blank lines between the functions.",
+          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_0.mp3"
+        },
+        {
+          "text": "I just added some extra line breaks between functions.",
+          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_1.mp3"
+        },
+        {
+          "text": "I just added two empty rows between functions.",
+          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_2.mp3"
+        },
+        {
+          "text": "I just added double spacing between the functions.",
+          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_3.mp3"
+        }
+      ],
+      "note": "**[212]**\n\n~I just added double space/spaces between the functions.~ is not valid. When referring to vertical arrangement, 'space' is uncountable and must be written as [spacing]. If referring to literal empty lines, use the countable [blank lines]."
+    },
+    {
+      "cardId": "dummy_072",
+      "cardType": "flippable",
+      "sideA": "Puse un comentario en el lado derecho.",
+      "sideB": [
+        {
+          "text": "I put a comment on the right side.",
+          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_0.mp3"
+        },
+        {
+          "text": "I added a comment to the right.",
+          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_1.mp3"
+        }
+      ],
+      "note": "**[153]**\n\n"
+    },
+    {
+      "cardId": "dummy_073",
+      "cardType": "flippable",
+      "sideA": "Estamos validando si el usuario pertenece a iStore.",
+      "sideB": [
+        {
+          "text": "We are validating if the user belongs to iStore.",
+          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_0.mp3"
+        },
+        {
+          "text": "We're checking whether the user belongs to iStore.",
+          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_1.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_074",
+      "cardType": "flippable",
+      "sideA": "Si se cumple la condicion de RAISE, pasamos directo al bloque EXCEPTION.",
+      "sideB": [
+        {
+          "text": "If the RAISE condition is met, we go directly to the EXCEPTION block.",
+          "audioSrc": "public/data/audio/dummy/dummy_074_sideB_0.mp3"
+        },
+        {
+          "text": "If the RAISE condition is fulfilled, we skip straight to the EXCEPTION block.",
+          "audioSrc": "public/data/audio/dummy/dummy_074_sideB_1.mp3"
+        }
+      ],
+      "note": "~If the RAISE condition is met, we go direct to the EXCEPTION block.~ is not valid because 'direct' is an adjective. You must use the adverb [directly] to modify the verb 'go'."
+    },
+    {
+      "cardId": "dummy_075",
+      "cardType": "flippable",
+      "sideA": "¿Sí o no?",
+      "sideB": [
+        {
+          "text": "Yes or no?",
+          "audioSrc": "public/data/audio/dummy/dummy_075_sideB_0.mp3"
+        },
+        {
+          "text": "Is it a yes or a no?",
+          "audioSrc": "public/data/audio/dummy/dummy_075_sideB_1.mp3"
+        }
+      ],
+      "note": "**[213]**\n\n"
+    },
+    {
+      "cardId": "dummy_076",
+      "cardType": "flippable",
+      "sideA": "No hay conexión a la base de datos.",
+      "sideB": [
+        {
+          "text": "There is no database connection.",
+          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_0.mp3"
+        },
+        {
+          "text": "We have no connection to the database.",
+          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_1.mp3"
+        },
+        {
+          "text": "There is no connection to the database.",
+          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_2.mp3"
+        }
+      ],
+      "note": "**[213]**\n\n~There is no connection in the database.~ is not valid because the preposition 'in' implies the connection exists physically inside the database. Use [to] to indicate the destination or target of the connection."
+    },
+    {
+      "cardId": "dummy_077",
+      "cardType": "flippable",
+      "sideA": "El servidor no está respondiendo.",
+      "sideB": [
+        {
+          "text": "The server is not responding.",
+          "audioSrc": "public/data/audio/dummy/dummy_077_sideB_0.mp3"
+        },
+        {
+          "text": "The server isn't answering.",
+          "audioSrc": "public/data/audio/dummy/dummy_077_sideB_1.mp3"
+        }
+      ],
+      "note": "**[213]**\n\n"
+    },
+    {
+      "cardId": "dummy_078",
+      "cardType": "flippable",
+      "sideA": "No hay errores en el registro.",
+      "sideB": [
+        {
+          "text": "There are no errors in the log.",
+          "audioSrc": "public/data/audio/dummy/dummy_078_sideB_0.mp3"
+        },
+        {
+          "text": "The log has no errors.",
+          "audioSrc": "public/data/audio/dummy/dummy_078_sideB_1.mp3"
+        },
+        {
+          "text": "We have no errors in the log.",
+          "audioSrc": "public/data/audio/dummy/dummy_078_sideB_2.mp3"
+        }
+      ],
+      "note": "**[213]**\n\n"
+    },
+    {
+      "cardId": "dummy_079",
+      "cardType": "flippable",
+      "sideA": "No tenemos tiempo para esto.",
+      "sideB": [
+        {
+          "text": "We have no time for this.",
+          "audioSrc": "public/data/audio/dummy/dummy_079_sideB_0.mp3"
+        },
+        {
+          "text": "There is no time for this.",
+          "audioSrc": "public/data/audio/dummy/dummy_079_sideB_1.mp3"
+        },
+        {
+          "text": "We don't have time for this.",
+          "audioSrc": "public/data/audio/dummy/dummy_079_sideB_2.mp3"
+        }
+      ],
+      "note": "**[213]**\n\n"
+    },
+    {
+      "cardId": "dummy_080",
+      "cardType": "flippable",
+      "sideA": "Tenemos que multiplicar por la cantidad en negativo.",
+      "sideB": [
+        {
+          "text": "We have to multiply by the negative amount.",
+          "audioSrc": "public/data/audio/dummy/dummy_080_sideB_0.mp3"
+        },
+        {
+          "text": "We need to multiply it by the negative quantity.",
+          "audioSrc": "public/data/audio/dummy/dummy_080_sideB_1.mp3"
+        },
+        {
+          "text": "We must multiply by the negative amount.",
+          "audioSrc": "public/data/audio/dummy/dummy_080_sideB_2.mp3"
+        }
+      ],
+      "note": "**[214]**\n\n~...multiply by the amount in negative~ is incorrect because \"negative\" is an adjective here. Use [the negative amount]."
+    },
+    {
+      "cardId": "dummy_081",
+      "cardType": "flippable",
+      "sideA": "El script falla si hay un espacio en blanco.",
+      "sideB": [
+        {
+          "text": "The script fails if there is a blank space.",
+          "audioSrc": "public/data/audio/dummy/dummy_081_sideB_0.mp3"
+        },
+        {
+          "text": "The script crashes if it finds a blank space.",
+          "audioSrc": "public/data/audio/dummy/dummy_081_sideB_1.mp3"
+        },
+        {
+          "text": "It fails if there's a blank space.",
+          "audioSrc": "public/data/audio/dummy/dummy_081_sideB_2.mp3"
+        },
+        {
+          "text": "The script fails if there is an empty space.",
+          "audioSrc": "public/data/audio/dummy/dummy_081_sideB_3.mp3"
+        }
+      ],
+      "note": "**[214]**\n\n~...if there is a space in blank~ is an invalid translation. The modifier must precede the noun: [a blank space]."
+    },
+    {
+      "cardId": "dummy_082",
+      "cardType": "flippable",
+      "sideA": "Por favor, lee el texto en negrita.",
+      "sideB": [
+        {
+          "text": "Please read the bold text.",
+          "audioSrc": "public/data/audio/dummy/dummy_082_sideB_0.mp3"
+        },
+        {
+          "text": "Kindly read the bolded text.",
+          "audioSrc": "public/data/audio/dummy/dummy_082_sideB_1.mp3"
+        },
+        {
+          "text": "Please look at the bold text.",
+          "audioSrc": "public/data/audio/dummy/dummy_082_sideB_2.mp3"
+        }
+      ],
+      "note": "**[214]**\n\n"
+    },
+    {
+      "cardId": "dummy_083",
+      "cardType": "flippable",
+      "sideA": "Después del reinicio, solo vi una pantalla en negro.",
+      "sideB": [
+        {
+          "text": "After the reboot, I only saw a black screen.",
+          "audioSrc": "public/data/audio/dummy/dummy_083_sideB_0.mp3"
+        },
+        {
+          "text": "I just saw a black screen after restarting.",
+          "audioSrc": "public/data/audio/dummy/dummy_083_sideB_1.mp3"
+        },
+        {
+          "text": "After restarting, I only got a black screen.",
+          "audioSrc": "public/data/audio/dummy/dummy_083_sideB_2.mp3"
+        }
+      ],
+      "note": "**[214]**\n\n"
+    },
+    {
+      "cardId": "dummy_084",
+      "cardType": "flippable",
+      "sideA": "La empresa está en deuda desde el año pasado.",
+      "sideB": [
+        {
+          "text": "The company has been in debt since last year.",
+          "audioSrc": "public/data/audio/dummy/dummy_084_sideB_0.mp3"
+        },
+        {
+          "text": "The business has been in debt since last year.",
+          "audioSrc": "public/data/audio/dummy/dummy_084_sideB_1.mp3"
+        },
+        {
+          "text": "The company is currently in debt since last year.",
+          "audioSrc": "public/data/audio/dummy/dummy_084_sideB_2.mp3"
+        }
+      ],
+      "note": "**[214]**\n\nHere, the use of \"in\" is valid because [debt] is a noun representing a state, not an adjective."
+    },
+    {
+      "cardId": "dummy_085",
+      "cardType": "flippable",
+      "sideA": "Revisé los registros y todo está en orden.",
+      "sideB": [
+        {
+          "text": "I checked the logs and everything is in order.",
+          "audioSrc": "public/data/audio/dummy/dummy_085_sideB_0.mp3"
+        },
+        {
+          "text": "I reviewed the logs and all is in order.",
+          "audioSrc": "public/data/audio/dummy/dummy_085_sideB_1.mp3"
+        },
+        {
+          "text": "I looked at the records and everything is in order.",
+          "audioSrc": "public/data/audio/dummy/dummy_085_sideB_2.mp3"
+        }
+      ],
+      "note": "**[214]**\n\nUsing \"in\" is completely correct here because [order] functions as a noun describing a condition."
     }
   ]
 }

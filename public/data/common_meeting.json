@@ -27371,6 +27371,754 @@
         }
       ],
       "note": null
+    },
+    {
+      "cardId": "mi_1212",
+      "cardType": "flippable",
+      "sideA": "Si tenemos el valor de A, entonces multiplicamos con el valor de B.",
+      "sideB": [
+        {
+          "text": "If we have the value of A, then we multiply it by the value of B.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1212_sideB_0.mp3"
+        },
+        {
+          "text": "If we get A's value, we then multiply it by B's value.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1212_sideB_1.mp3"
+        },
+        {
+          "text": "If we have A, then we multiply by B.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1212_sideB_2.mp3"
+        },
+        {
+          "text": "If we have the value A, then we multiply it by the value B.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1212_sideB_3.mp3"
+        },
+        {
+          "text": "If we have the value of A, we multiply it by the value of B.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1212_sideB_4.mp3"
+        },
+        {
+          "text": "If we have the A value, we multiply it by the value of B.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1212_sideB_5.mp3"
+        }
+      ],
+      "note": "**[94]**\n\n"
+    },
+    {
+      "cardId": "mi_1213",
+      "cardType": "flippable",
+      "sideA": "Cuando la linea es de retorno multiplicamos por la cantidad en negativo.",
+      "sideB": [
+        {
+          "text": "When it's a return line, we multiply by the negative amount.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1213_sideB_0.mp3"
+        },
+        {
+          "text": "When the line is a return, we multiply by the negative quantity.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1213_sideB_1.mp3"
+        },
+        {
+          "text": "If it's a return line, we multiply by the amount in negative.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1213_sideB_2.mp3"
+        },
+        {
+          "text": "When it's a return line, we multiply by the negative quantity.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1213_sideB_3.mp3"
+        },
+        {
+          "text": "When it's a return line, we multiply it by a negative amount.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1213_sideB_4.mp3"
+        }
+      ],
+      "note": "**[214]**\n\n**[94]**\n\n~When the line is return, we multiply by the negative amount~ is not valid because [return] acts as a noun here, so it requires an article like [a return] or must be used as an adjective modifying a noun, like [a return line].\n\n~When it's a return line, we multiply it by the amount in negative~ is not valid because 'in negative' is a literal translation of 'en negativo'. In English, the adjective precedes the noun, so use [the negative amount] or [a negative amount]."
+    },
+    {
+      "cardId": "mi_1214",
+      "cardType": "flippable",
+      "sideA": "Y si no es de retorno, multiplicamos por 1 positivo, para mantener el valor original.",
+      "sideB": [
+        {
+          "text": "And if it's not a return, we multiply by positive one to keep the original value.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1214_sideB_0.mp3"
+        },
+        {
+          "text": "And if it isn't a return, we multiply by plus one to maintain the original value.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1214_sideB_1.mp3"
+        },
+        {
+          "text": "And if it's not a return line, we multiply by a positive one to keep the original amount.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1214_sideB_2.mp3"
+        },
+        {
+          "text": "And if it's not a return, we multiply it by positive one to keep the original value.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1214_sideB_3.mp3"
+        }
+      ],
+      "note": "~And if it's not returned, we multiply by positive one to keep the original value.~ is not valid because 'returned' is an action (devuelto), whereas the original sentence refers to a type or category (de retorno). Use [a return]."
+    },
+    {
+      "cardId": "mi_1215",
+      "cardType": "flippable",
+      "sideA": "¿Que hay afuera de la simulación?",
+      "sideB": [
+        {
+          "text": "What's outside the simulation?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1215_sideB_0.mp3"
+        },
+        {
+          "text": "What is outside of the simulation?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1215_sideB_1.mp3"
+        },
+        {
+          "text": "What lies beyond the simulation?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1215_sideB_2.mp3"
+        },
+        {
+          "text": "What is there outside the simulation?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1215_sideB_3.mp3"
+        }
+      ],
+      "note": "While [there is] translates to \"hay\", when asking about the identity or nature of what exists in a location, English frequently uses [What is...] directly as the subject. [What is outside?] is more concise and natural than [What is there outside?], though both are grammatically valid."
+    },
+    {
+      "cardId": "mi_1216",
+      "cardType": "flippable",
+      "sideA": "Tuve que aprender a hacerme entender con diferente tipo de gente.",
+      "sideB": [
+        {
+          "text": "I had to learn to make myself understood with different types of people.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1216_sideB_0.mp3"
+        },
+        {
+          "text": "I had to learn how to get my point across to different kinds of people.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1216_sideB_1.mp3"
+        },
+        {
+          "text": "I needed to learn to make myself clear to different types of people.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1216_sideB_2.mp3"
+        },
+        {
+          "text": "I had to learn how to make myself understood with different types of people.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1216_sideB_3.mp3"
+        }
+      ],
+      "note": "**[18]**\n\n~I had to learn to treat different kind of people~ changes the original meaning of \"hacerme entender\" (make myself understood) to \"lidiar/tratar con\". Additionally, [treat] means to behave towards someone in a certain way or give medical care, whereas to interact with or manage people is [deal with]. Finally, it should be [different kinds] (plural).\n\n~I had to learn to make myself understood with different kind of people~ is not valid because 'kind' must be plural when preceded by 'different' referring to multiple types. Use [different kinds of people]."
+    },
+    {
+      "cardId": "mi_1217",
+      "cardType": "flippable",
+      "sideA": "A causa de los espacios algunos caracteres invisibles son agregados.",
+      "sideB": [
+        {
+          "text": "Because of the spaces, some invisible characters are added.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1217_sideB_0.mp3"
+        },
+        {
+          "text": "Due to the spaces, some invisible characters get added.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1217_sideB_1.mp3"
+        },
+        {
+          "text": "Some invisible characters are added because of the spaces.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1217_sideB_2.mp3"
+        },
+        {
+          "text": "Due to spaces, some invisible characters get added.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1217_sideB_3.mp3"
+        },
+        {
+          "text": "Because of spacing, some invisible characters are added.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1217_sideB_4.mp3"
+        }
+      ],
+      "note": "**[212]**\n\n~Because of some spaces, some invisible characters are added~ changes the meaning slightly from \"los espacios\" (definite) to \"algunos espacios\" (indefinite). Use [the spaces].\n\n~Because of spaces, some invisible characters are added~ changes the meaning from specific spaces ([the spaces]) to spaces in general. Since the original Spanish says \"los espacios\", use [the spaces]."
+    },
+    {
+      "cardId": "mi_1218",
+      "cardType": "flippable",
+      "sideA": "El cliente devolvió el producto defectuoso a la tienda.",
+      "sideB": [
+        {
+          "text": "The customer returned the defective product to the store.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1218_sideB_0.mp3"
+        },
+        {
+          "text": "The customer brought the faulty product back to the store.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1218_sideB_1.mp3"
+        },
+        {
+          "text": "The customer took the broken item back to the shop.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1218_sideB_2.mp3"
+        }
+      ],
+      "note": "**[210]**\n\nUse [customer] when referring to someone buying a physical product in a retail transaction. Do not use ~client~ here.\n\n~The customer returned the failed product to the store.~ is not valid because 'failed' usually refers to a lack of success rather than a physical defect. Use [defective], [faulty], or [broken] for physical items."
+    },
+    {
+      "cardId": "mi_1219",
+      "cardType": "flippable",
+      "sideA": "Si dejas el campo en blanco, la validación fallará.",
+      "sideB": [
+        {
+          "text": "If you leave the field blank, the validation will fail.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1219_sideB_0.mp3"
+        },
+        {
+          "text": "The validation will fail if you leave the input blank.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1219_sideB_1.mp3"
+        },
+        {
+          "text": "If that field is left blank, it will fail the validation.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1219_sideB_2.mp3"
+        },
+        {
+          "text": "If you leave a blank field, the validation will fail.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1219_sideB_3.mp3"
+        }
+      ],
+      "note": "**[214]**\n\n**[210]**\n\nWhen a field or document is empty, we use [blank], never the literal translation ~white~.\n\n~If you leave the field in blank~ is not valid because 'in blank' is a literal translation of 'en blanco'. In English, use the adjective directly: [leave the field blank].\n\n~If you leave a field in blank...~ is not valid. As stated above, do not use the preposition 'in' before the adjective [blank]."
+    },
+    {
+      "cardId": "mi_1220",
+      "cardType": "flippable",
+      "sideA": "Los correos se quedan en la cola de notificaciones porque el motor de envío no está corriendo en Blue.",
+      "sideB": [
+        {
+          "text": "Emails stay in the notification queue because the delivery engine is not running in Blue.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1220_sideB_0.mp3"
+        },
+        {
+          "text": "The emails remain in the notification queue since the delivery engine isn't running in Blue.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1220_sideB_1.mp3"
+        },
+        {
+          "text": "Emails get stuck in the notification queue because the sending engine is not running in Blue.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1220_sideB_2.mp3"
+        },
+        {
+          "text": "Emails stay in the notification queue because the sending engine is not running in Blue.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1220_sideB_3.mp3"
+        },
+        {
+          "text": "Emails are stuck waiting to be sent because the delivery engine isn't running in Blue.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1220_sideB_4.mp3"
+        },
+        {
+          "text": "Emails remain in the outbox because the sending engine is down in Blue.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1220_sideB_5.mp3"
+        },
+        {
+          "text": "The emails are piling up because the delivery service isn't active in Blue.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1220_sideB_6.mp3"
+        }
+      ],
+      "note": "A [queue] is a sequence or line of items waiting their turn to be processed."
+    },
+    {
+      "cardId": "mi_1221",
+      "cardType": "flippable",
+      "sideA": "Es una restricción estándar en desarrollo para evitar el envío accidental de correos de prueba a usuarios reales.",
+      "sideB": [
+        {
+          "text": "It's a standard restriction in Dev to prevent accidental test emails from being sent to real users.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1221_sideB_0.mp3"
+        },
+        {
+          "text": "It's a standard development restriction to avoid sending test emails to real users by accident.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1221_sideB_1.mp3"
+        },
+        {
+          "text": "This is a standard restriction in development to prevent test emails from accidentally going out to real users.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1221_sideB_2.mp3"
+        },
+        {
+          "text": "It's a standard restriction in Dev to prevent accidental sends of emails to real users.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1221_sideB_3.mp3"
+        },
+        {
+          "text": "It's a standard restriction in Dev to prevent accidental sending of emails to real users.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1221_sideB_4.mp3"
+        }
+      ],
+      "note": "\n\n~...prevent accidental sents of emails...~ is not valid because 'sents' is the past tense verb, not a noun. Use the gerund [sending] or the plural noun [sends]."
+    },
+    {
+      "cardId": "mi_1222",
+      "cardType": "flippable",
+      "sideA": "En Purple el servicio está en estado 'RUNNING', por lo que los correos deberían llegar sin problemas.",
+      "sideB": [
+        {
+          "text": "In Purple, the service is in 'RUNNING' status, so emails should arrive without any issues.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1222_sideB_0.mp3"
+        },
+        {
+          "text": "The service is in 'RUNNING' status in Purple, so the emails should go through fine.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1222_sideB_1.mp3"
+        },
+        {
+          "text": "In Purple, the service status is 'RUNNING', therefore emails should arrive seamlessly.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1222_sideB_2.mp3"
+        },
+        {
+          "text": "In Purple, the service is in the state of 'RUNNING', so emails should arrive without any issues.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1222_sideB_3.mp3"
+        },
+        {
+          "text": "In Purple, the service is in 'RUNNING' state, so emails should arrive without any issues.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1222_sideB_4.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1223",
+      "cardType": "flippable",
+      "sideA": "El flujo completo se puede validar en Purple ya que el Mailer de Workflow está activo allá.",
+      "sideB": [
+        {
+          "text": "The full workflow can be validated in Purple since the Workflow Mailer is active there.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1223_sideB_0.mp3"
+        },
+        {
+          "text": "The entire flow can be tested in Purple because the Workflow Mailer is enabled there.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1223_sideB_1.mp3"
+        },
+        {
+          "text": "We can validate the complete flow in Purple as the Workflow Mailer is active over there.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1223_sideB_2.mp3"
+        }
+      ],
+      "note": "**[82]**\n\n~The entire flow can be tested in Purple because of the Workflow Mailer is enabled there~ is not valid. Use [because] when followed by a full clause (subject + verb), and use [because of] when followed only by a noun phrase."
+    },
+    {
+      "cardId": "mi_1224",
+      "cardType": "flippable",
+      "sideA": "¿Que hay ahi?",
+      "sideB": [
+        {
+          "text": "What is there?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1224_sideB_0.mp3"
+        },
+        {
+          "text": "What's in there?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1224_sideB_1.mp3"
+        },
+        {
+          "text": "What is over there?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1224_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1225",
+      "cardType": "flippable",
+      "sideA": "¿Que hay afuera de esa carpeta?",
+      "sideB": [
+        {
+          "text": "What is outside that folder?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1225_sideB_0.mp3"
+        },
+        {
+          "text": "What's outside of that folder?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1225_sideB_1.mp3"
+        },
+        {
+          "text": "What is there outside that folder?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1225_sideB_2.mp3"
+        }
+      ],
+      "note": "'What' can function directly as the subject of the verb 'to be', meaning [What is] asks for the identity of the thing located outside. Using [What is there] applies the existential 'there is/are' structure. Both are grammatically correct."
+    },
+    {
+      "cardId": "mi_1226",
+      "cardType": "flippable",
+      "sideA": "¿Que hay en el registro de actividades?",
+      "sideB": [
+        {
+          "text": "What is in the activity log?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1226_sideB_0.mp3"
+        },
+        {
+          "text": "What's in the activity register?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1226_sideB_1.mp3"
+        },
+        {
+          "text": "What is there in the activity log?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1226_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1227",
+      "cardType": "flippable",
+      "sideA": "Exacto, pero eso no es una excusa.",
+      "sideB": [
+        {
+          "text": "Exactly, but that's not an excuse.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1227_sideB_0.mp3"
+        },
+        {
+          "text": "That's right, but it is not an excuse.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1227_sideB_1.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1228",
+      "cardType": "flippable",
+      "sideA": "Claro, pero no es una excusa válida.",
+      "sideB": [
+        {
+          "text": "Sure, but it's not a valid excuse.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1228_sideB_0.mp3"
+        },
+        {
+          "text": "Of course, but that's not a valid excuse.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1228_sideB_1.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1229",
+      "cardType": "flippable",
+      "sideA": "Para calcular el sub total estamos multiplicando UNIT SELLING PRICE por ORDERED QUANTITY, o por PRICING QUANTITY.",
+      "sideB": [
+        {
+          "text": "To calculate the subtotal, we are multiplying UNIT SELLING PRICE by ORDERED QUANTITY, or by PRICING QUANTITY.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1229_sideB_0.mp3"
+        },
+        {
+          "text": "To calculate the subtotal we're multiplying the UNIT SELLING PRICE by the ORDERED QUANTITY, or by the PRICING QUANTITY.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1229_sideB_1.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1230",
+      "cardType": "flippable",
+      "sideA": "Y si no lo es, multiplicamos por PRICING QUANTITY",
+      "sideB": [
+        {
+          "text": "And if it isn't, we multiply by PRICING QUANTITY.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1230_sideB_0.mp3"
+        },
+        {
+          "text": "If not, we're multiplying by PRICING QUANTITY.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1230_sideB_1.mp3"
+        },
+        {
+          "text": "And if it isn't, we multiply it by PRICING QUANTITY.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1230_sideB_2.mp3"
+        }
+      ],
+      "note": "~And if it doesn't, we multiply by PRICING QUANTITY.~ is not valid because 'doesn't' replaces an action verb, but the Spanish phrase 'si no lo es' requires the verb 'to be' [isn't]."
+    },
+    {
+      "cardId": "mi_1231",
+      "cardType": "flippable",
+      "sideA": "Solo removi los espacios en blanco.",
+      "sideB": [
+        {
+          "text": "I just removed the whitespace.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1231_sideB_0.mp3"
+        },
+        {
+          "text": "I only removed the blank spaces.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1231_sideB_1.mp3"
+        }
+      ],
+      "note": "**[214]**\n\n**[212]**\n\n~I just remove the spaces.~ is not valid because 'remove' is in the present tense, but the Spanish sentence 'removí' is in the past tense [removed]."
+    },
+    {
+      "cardId": "mi_1232",
+      "cardType": "flippable",
+      "sideA": "Solo añadi doble espacio entre las funciones.",
+      "sideB": [
+        {
+          "text": "I just added two blank lines between the functions.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1232_sideB_0.mp3"
+        },
+        {
+          "text": "I just added some extra line breaks between functions.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1232_sideB_1.mp3"
+        },
+        {
+          "text": "I just added two empty rows between functions.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1232_sideB_2.mp3"
+        },
+        {
+          "text": "I just added double spacing between the functions.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1232_sideB_3.mp3"
+        }
+      ],
+      "note": "**[212]**\n\n~I just added double space/spaces between the functions.~ is not valid. When referring to vertical arrangement, 'space' is uncountable and must be written as [spacing]. If referring to literal empty lines, use the countable [blank lines]."
+    },
+    {
+      "cardId": "mi_1233",
+      "cardType": "flippable",
+      "sideA": "Puse un comentario en el lado derecho.",
+      "sideB": [
+        {
+          "text": "I put a comment on the right side.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1233_sideB_0.mp3"
+        },
+        {
+          "text": "I added a comment to the right.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1233_sideB_1.mp3"
+        }
+      ],
+      "note": "**[153]**\n\n"
+    },
+    {
+      "cardId": "mi_1234",
+      "cardType": "flippable",
+      "sideA": "Estamos validando si el usuario pertenece a iStore.",
+      "sideB": [
+        {
+          "text": "We are validating if the user belongs to iStore.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1234_sideB_0.mp3"
+        },
+        {
+          "text": "We're checking whether the user belongs to iStore.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1234_sideB_1.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1235",
+      "cardType": "flippable",
+      "sideA": "Si se cumple la condicion de RAISE, pasamos directo al bloque EXCEPTION.",
+      "sideB": [
+        {
+          "text": "If the RAISE condition is met, we go directly to the EXCEPTION block.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1235_sideB_0.mp3"
+        },
+        {
+          "text": "If the RAISE condition is fulfilled, we skip straight to the EXCEPTION block.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1235_sideB_1.mp3"
+        }
+      ],
+      "note": "~If the RAISE condition is met, we go direct to the EXCEPTION block.~ is not valid because 'direct' is an adjective. You must use the adverb [directly] to modify the verb 'go'."
+    },
+    {
+      "cardId": "mi_1236",
+      "cardType": "flippable",
+      "sideA": "¿Sí o no?",
+      "sideB": [
+        {
+          "text": "Yes or no?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1236_sideB_0.mp3"
+        },
+        {
+          "text": "Is it a yes or a no?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1236_sideB_1.mp3"
+        }
+      ],
+      "note": "**[213]**\n\n"
+    },
+    {
+      "cardId": "mi_1237",
+      "cardType": "flippable",
+      "sideA": "No hay conexión a la base de datos.",
+      "sideB": [
+        {
+          "text": "There is no database connection.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1237_sideB_0.mp3"
+        },
+        {
+          "text": "We have no connection to the database.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1237_sideB_1.mp3"
+        },
+        {
+          "text": "There is no connection to the database.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1237_sideB_2.mp3"
+        }
+      ],
+      "note": "**[213]**\n\n~There is no connection in the database.~ is not valid because the preposition 'in' implies the connection exists physically inside the database. Use [to] to indicate the destination or target of the connection."
+    },
+    {
+      "cardId": "mi_1238",
+      "cardType": "flippable",
+      "sideA": "El servidor no está respondiendo.",
+      "sideB": [
+        {
+          "text": "The server is not responding.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1238_sideB_0.mp3"
+        },
+        {
+          "text": "The server isn't answering.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1238_sideB_1.mp3"
+        }
+      ],
+      "note": "**[213]**\n\n"
+    },
+    {
+      "cardId": "mi_1239",
+      "cardType": "flippable",
+      "sideA": "No hay errores en el registro.",
+      "sideB": [
+        {
+          "text": "There are no errors in the log.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1239_sideB_0.mp3"
+        },
+        {
+          "text": "The log has no errors.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1239_sideB_1.mp3"
+        },
+        {
+          "text": "We have no errors in the log.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1239_sideB_2.mp3"
+        }
+      ],
+      "note": "**[213]**\n\n"
+    },
+    {
+      "cardId": "mi_1240",
+      "cardType": "flippable",
+      "sideA": "No tenemos tiempo para esto.",
+      "sideB": [
+        {
+          "text": "We have no time for this.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1240_sideB_0.mp3"
+        },
+        {
+          "text": "There is no time for this.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1240_sideB_1.mp3"
+        },
+        {
+          "text": "We don't have time for this.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1240_sideB_2.mp3"
+        }
+      ],
+      "note": "**[213]**\n\n"
+    },
+    {
+      "cardId": "mi_1241",
+      "cardType": "flippable",
+      "sideA": "Tenemos que multiplicar por la cantidad en negativo.",
+      "sideB": [
+        {
+          "text": "We have to multiply by the negative amount.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1241_sideB_0.mp3"
+        },
+        {
+          "text": "We need to multiply it by the negative quantity.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1241_sideB_1.mp3"
+        },
+        {
+          "text": "We must multiply by the negative amount.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1241_sideB_2.mp3"
+        }
+      ],
+      "note": "**[214]**\n\n~...multiply by the amount in negative~ is incorrect because \"negative\" is an adjective here. Use [the negative amount]."
+    },
+    {
+      "cardId": "mi_1242",
+      "cardType": "flippable",
+      "sideA": "El script falla si hay un espacio en blanco.",
+      "sideB": [
+        {
+          "text": "The script fails if there is a blank space.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1242_sideB_0.mp3"
+        },
+        {
+          "text": "The script crashes if it finds a blank space.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1242_sideB_1.mp3"
+        },
+        {
+          "text": "It fails if there's a blank space.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1242_sideB_2.mp3"
+        },
+        {
+          "text": "The script fails if there is an empty space.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1242_sideB_3.mp3"
+        }
+      ],
+      "note": "**[214]**\n\n~...if there is a space in blank~ is an invalid translation. The modifier must precede the noun: [a blank space]."
+    },
+    {
+      "cardId": "mi_1243",
+      "cardType": "flippable",
+      "sideA": "Por favor, lee el texto en negrita.",
+      "sideB": [
+        {
+          "text": "Please read the bold text.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1243_sideB_0.mp3"
+        },
+        {
+          "text": "Kindly read the bolded text.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1243_sideB_1.mp3"
+        },
+        {
+          "text": "Please look at the bold text.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1243_sideB_2.mp3"
+        }
+      ],
+      "note": "**[214]**\n\n"
+    },
+    {
+      "cardId": "mi_1244",
+      "cardType": "flippable",
+      "sideA": "Después del reinicio, solo vi una pantalla en negro.",
+      "sideB": [
+        {
+          "text": "After the reboot, I only saw a black screen.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1244_sideB_0.mp3"
+        },
+        {
+          "text": "I just saw a black screen after restarting.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1244_sideB_1.mp3"
+        },
+        {
+          "text": "After restarting, I only got a black screen.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1244_sideB_2.mp3"
+        }
+      ],
+      "note": "**[214]**\n\n"
+    },
+    {
+      "cardId": "mi_1245",
+      "cardType": "flippable",
+      "sideA": "La empresa está en deuda desde el año pasado.",
+      "sideB": [
+        {
+          "text": "The company has been in debt since last year.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1245_sideB_0.mp3"
+        },
+        {
+          "text": "The business has been in debt since last year.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1245_sideB_1.mp3"
+        },
+        {
+          "text": "The company is currently in debt since last year.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1245_sideB_2.mp3"
+        }
+      ],
+      "note": "**[214]**\n\nHere, the use of \"in\" is valid because [debt] is a noun representing a state, not an adjective."
+    },
+    {
+      "cardId": "mi_1246",
+      "cardType": "flippable",
+      "sideA": "Revisé los registros y todo está en orden.",
+      "sideB": [
+        {
+          "text": "I checked the logs and everything is in order.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1246_sideB_0.mp3"
+        },
+        {
+          "text": "I reviewed the logs and all is in order.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1246_sideB_1.mp3"
+        },
+        {
+          "text": "I looked at the records and everything is in order.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1246_sideB_2.mp3"
+        }
+      ],
+      "note": "**[214]**\n\nUsing \"in\" is completely correct here because [order] functions as a noun describing a condition."
     }
   ]
 }
