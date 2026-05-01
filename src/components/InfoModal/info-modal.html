@@ -4,9 +4,17 @@
 <div id="info-modal-content" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 max-w-2xl bg-gray-700 dark:bg-gray-800 text-gray-200 rounded-lg shadow-2xl z-50 hidden p-6 flex flex-col max-h-[80vh]">
     <div class="flex justify-between items-center mb-4 pb-4 border-b border-gray-600">
         <h2 id="info-modal-title" class="text-2xl font-bold text-white"></h2>
-        <button id="info-modal-close-btn" class="text-gray-400 hover:text-white transition-colors">
-            <i class="fas fa-times fa-2x"></i>
-        </button>
+
+
+        <div class="flex items-center space-x-4">
+            <button id="info-modal-improve-btn" class="text-gray-400 hover:text-yellow-400 transition-colors" title="Mark Modal for Improvement">
+                <i class="fas fa-flag fa-lg"></i>
+            </button>
+            <button id="info-modal-close-btn" class="text-gray-400 hover:text-white transition-colors">
+                <i class="fas fa-times fa-2x"></i>
+            </button>
+        </div>
+    
     </div>
     <div id="info-modal-body" class="overflow-y-auto text-gray-300">
         </div>

@@ -73,9 +73,12 @@ class ImprovementService {
         const deckRelativePath = `public/data/${deckFileName}`;
 
         const correctCommand = `py update_deck.py --deck-file "${deckRelativePath}" --input-file "corrections.json"`;
+        // Fetch modal improvements to include in the report
+        const modalImprovements = StorageService.loadAllModalImprovements();
+        console.log(`VERIFY: [ImprovementService] Exporting deck alongside ${Object.keys(modalImprovements).length} modal improvements.`);
 
-        // Pass glossaryContext to the prompt generator
-        const textToCopy = this._generateImprovementPrompt(deck.name, correctCommand, exportBatch, glossaryContext, deckRelativePath);
+        // Pass glossaryContext and modalImprovements to the prompt generator
+        const textToCopy = this._generateImprovementPrompt(deck.name, correctCommand, exportBatch, glossaryContext, deckRelativePath, modalImprovements);
         
         try {
             await navigator.clipboard.writeText(textToCopy);
@@ -91,7 +94,7 @@ class ImprovementService {
      * @private
      */
 
-static _generateImprovementPrompt(deckName, correctCommand, cardsToImprove, glossaryJson, deckFilePath) {
+static _generateImprovementPrompt(deckName, correctCommand, cardsToImprove, glossaryJson, deckFilePath, modalImprovements) {
 
         const promptHeader = `
 
@@ -335,9 +338,15 @@ To avoid structural errors, you MUST process Part 1 using this mental workflow b
   - **Action Taken:** "..."   IMPORTANTE!: DEBES añadir EN Action Taken, si la solicitud del usuario fue "Rejected, Accepted, others...". Y decir explicatamente que cambio has realizado en la card, ya sea, agregado una nueva sentencia, alguna nota explicativa, se agrego algun nuevo modal, se rechazo a causa de.., etc etc. Esto debe hacerse para cada card.
 
 #### C. 📢 Special User Notices
-Si el usario en alguna 'nota' o 'apunte' de card, explicitamente solicito algo como "Avisar al usuario sobre ... " esas notas se añadiran en esta seccion para que el usuario las vea facilmente. Este espacio es para que el usuario que dejo la "Nota" o "apunte" pueda ver esos mensajes especiales en esta seccion. En caso de no encontrarse ningun mensaje especial, se pondra en esta seccion "No special messages to highlight".
+Si el usuario en alguna 'nota' o 'apunte' de card, explicitamente solicito algo como "Avisar al usuario sobre ... " esas notas se añadiran en esta seccion para que el usuario las vea facilmente. Este espacio es para que el usuario que dejo la "Nota" o "apunte" pueda ver esos mensajes especiales en esta seccion. En caso de no encontrarse ningun mensaje especial, se pondra en esta seccion "No special messages to highlight".
 
-#### D. 🚀 Next Steps
+#### D. 🛠️ Modal Improvement Requests
+The user has left the following specific feedback/notes to improve specific Modals. If a modal ID is listed below, you MUST completely redesign/improve that modal in the "Improved Modals JSON" block based on this feedback, using the "Anti-Shit Protocol" formatting (colors, vertical structures, examples).
+\`\`\`json
+${JSON.stringify(modalImprovements, null, 2)}
+\`\`\`
+
+#### E. 🚀 Next Steps
 - **Step 1:** Save Card JSON to \`corrections.json\`.
 - **Step 2:** (If Modals Changed) Update \`public/data/glossary/YOUR_GLOSSARY_FILE.json\` with the content from Part 2.
 - **Step 3:** Run update command:

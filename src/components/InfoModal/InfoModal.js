@@ -1,7 +1,9 @@
 //src\components\InfoModal\InfoModal.js
 class InfoModal {
-    constructor(container) {
+    constructor(container, onMarkImprovement) {
         this.container = container;
+        this.onMarkImprovement = onMarkImprovement; // Callback to open the improvement UI
+        this.currentModalId = null;
         this.modalBackdrop = null;
         this.modalContent = null;
         this.modalTitle = null;
@@ -19,25 +21,46 @@ class InfoModal {
         this.modalTitle = document.getElementById('info-modal-title');
         this.modalBody = document.getElementById('info-modal-body');
         this.closeButton = document.getElementById('info-modal-close-btn');
-
+        this.improveBtn = document.getElementById('info-modal-improve-btn');
         this.closeButton.onclick = () => this.hide();
         this.modalBackdrop.onclick = () => this.hide();
+        this.improveBtn.onclick = () => {
+            if (this.currentModalId && this.onMarkImprovement) {
+                this.onMarkImprovement(this.currentModalId);
+            }
+        };
         console.log("DEBUG: [InfoModal] init -> Component initialized and listeners attached.");
     }
 
-    show(title, contentHTML) {
-        console.log(`DEBUG: [InfoModal] show -> Showing modal with title: '${title}'`);
+   show(title, contentHTML, modalId, isMarked = false) {
+        console.log(`DEBUG: [InfoModal] show -> Showing modal with title: '${title}' (ID: ${modalId})`);
         if (!this.modalContent) {
             console.error("DEBUG: [InfoModal] show -> Cannot show modal, component not initialized.");
             return;
         }
 
+        this.currentModalId = modalId;
         this.modalTitle.textContent = title;
         this.modalBody.innerHTML = contentHTML;
+        
+        this.updateFlagUI(isMarked);
 
         this.modalBackdrop.classList.remove('hidden');
         this.modalContent.classList.remove('hidden');
         document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+
+    updateFlagUI(isMarked) {
+        if (!this.improveBtn) return;
+        const icon = this.improveBtn.querySelector('i');
+        if (isMarked) {
+            icon.classList.remove('text-gray-400');
+            icon.classList.add('text-yellow-400');
+        } else {
+            icon.classList.add('text-gray-400');
+            icon.classList.remove('text-yellow-400');
+        }
+        console.log(`VERIFY: [InfoModal] Flag icon updated. Marked: ${isMarked}`);
     }
 
     hide() {

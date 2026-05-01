@@ -1,16 +1,16 @@
 
 //src\services\StorageService.js
-// src/services/StorageService.js
 // Manages all interactions with the browser's localStorage.
 
 class StorageService {
     static STORAGE_KEY_DECKS = 'smart-decks-v3-decks';
-     static STORAGE_KEY_IMPROVEMENT_PREFIX = 'smart-decks-v3-improvement-';
+    static STORAGE_KEY_IMPROVEMENT_PREFIX = 'smart-decks-v3-improvement-';
+    static STORAGE_KEY_MODAL_IMPROVEMENT = 'smart-decks-v3-modal-improvements';
     static STORAGE_KEY_FAVORITES = 'smart-decks-v3-favorites';
-            static STORAGE_KEY_UNLOCKED_DECKS = 'smart-decks-v3-unlocked-decks';
-     static STORAGE_KEY_PROGRESS_PREFIX = 'smart-decks-v3-progress-';
-        static STORAGE_KEY_DECK_PROGRESS_PREFIX = 'smart-decks-v3-deck-progress-';
-        static STORAGE_KEY_METRICS_PREFIX = 'smart-decks-v3-metrics-';
+    static STORAGE_KEY_UNLOCKED_DECKS = 'smart-decks-v3-unlocked-decks';
+    static STORAGE_KEY_PROGRESS_PREFIX = 'smart-decks-v3-progress-';
+    static STORAGE_KEY_DECK_PROGRESS_PREFIX = 'smart-decks-v3-deck-progress-';
+    static STORAGE_KEY_METRICS_PREFIX = 'smart-decks-v3-metrics-';
     
  /**
      * Saves the improvement data for a specific deck.
@@ -427,9 +427,41 @@ class StorageService {
         } catch (error) {
             console.error(`DEBUG: [StorageService] clearAllImprovementData -> Error wiping data for deck ${deckId}.`, error);
         }
+    }
 
+    // --- Modal Improvement Methods ---
+    static saveModalImprovement(modalId, data) {
+        try {
+            const improvements = this.loadAllModalImprovements();
+            improvements[modalId] = data;
+            localStorage.setItem(this.STORAGE_KEY_MODAL_IMPROVEMENT, JSON.stringify(improvements));
+            console.log(`VERIFY: [StorageService] Saved modal improvement for ${modalId}.`);
+        } catch (error) {
+            console.error("Error saving modal improvement:", error);
+        }
+    }
 
-        
+    static loadAllModalImprovements() {
+        try {
+            const data = localStorage.getItem(this.STORAGE_KEY_MODAL_IMPROVEMENT);
+            return data ? JSON.parse(data) : {};
+        } catch (error) {
+            console.error("Error loading modal improvements:", error);
+            return {};
+        }
+    }
+
+    static removeModalImprovement(modalId) {
+        try {
+            const improvements = this.loadAllModalImprovements();
+            if (improvements[modalId]) {
+                delete improvements[modalId];
+                localStorage.setItem(this.STORAGE_KEY_MODAL_IMPROVEMENT, JSON.stringify(improvements));
+                console.log(`VERIFY: [StorageService] Removed modal improvement for ${modalId}.`);
+            }
+        } catch (error) {
+            console.error("Error removing modal improvement:", error);
+        }
     }
 
     

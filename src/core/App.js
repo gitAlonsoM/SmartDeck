@@ -4,16 +4,16 @@ class App {
         console.log("DEBUG: [App] constructor -> Initializing App.");
         this.appContainer = document.getElementById('app-container');
 
-         this.musicService = null; // Property for the music service instance
+        this.musicService = null; // Property for the music service instance
 
         if (!this.appContainer) { throw new Error("Fatal Error: Application container '#app-container' not found."); }
-        
+
         this.state = {
             allDecks: {},
             currentScreen: 'deckList', // 'deckList', 'deckDetail', 'quiz', 'results'
             currentDeckId: null,
             quizInstance: null,
-                        favoriteDeckIds: new Set(), // Track favorite decks
+            favoriteDeckIds: new Set(), // Track favorite decks
             unlockedDeckIds: new Set(), // Track unlocked decks
         };
 
@@ -22,11 +22,12 @@ class App {
         this.aiDeckModal = null;
         this.deckDetailComponent = null;
         this.quizScreenComponent = null;
-        this.flippableCardScreen = null; 
-        this.audioChoiceScreen = null; 
-        this.notificationModal = null;
-        this.improvementModal = null; 
-        this.infoModal = null; 
+        this.flippableCardScreen = null;
+        this.audioChoiceScreen = null;
+        this.notificationModal = null;
+        this.improvementModal = null;
+        this.modalImprovementModal = null;
+        this.infoModal = null;
         this.glossaryScreen = null;
 
     }
@@ -40,49 +41,49 @@ class App {
     }
 
     async setupComponents() {
-      const aiModalContainer = document.getElementById('ai-modal-container'); 
-       const notificationModalContainer = document.getElementById('notification-modal-container');
+        const aiModalContainer = document.getElementById('ai-modal-container');
+        const notificationModalContainer = document.getElementById('notification-modal-container');
 
         console.log("DEBUG: [App] setupComponents -> Initializing MusicService.");
         this.musicService = new MusicService();
 
-        const improvementModalContainer = document.getElementById('improvement-modal-container');
+        const improvementModalContainer = document.getElementById('improvement-modal-container');
 
 
-         // Initialize the Text-to-Speech service at the beginning.
+        // Initialize the Text-to-Speech service at the beginning.
         console.log("DEBUG: [App] setupComponents -> Initializing TTSService.");
         await TTSService.init();
 
         console.log("DEBUG: [App] setupComponents -> Initializing UnlockService and loading codes.");
-        await UnlockService.loadCodes();
+        await UnlockService.loadCodes();
 
-        const confirmationModalContainer = document.getElementById('confirmation-modal-container'); 
+        const confirmationModalContainer = document.getElementById('confirmation-modal-container');
 
-        // Ensure containers exist before proceeding
-        if (!aiModalContainer || !notificationModalContainer || !improvementModalContainer || !confirmationModalContainer) { 
-            throw new Error("Fatal Error: Modal container(s) not found."); 
-        }
-         
-         // Initialize each modal with its own dedicated container
-         this.aiDeckModal = new AiDeckModal(aiModalContainer, (formData) => this.handleCreateDeck(formData));
+        // Ensure containers exist before proceeding
+        if (!aiModalContainer || !notificationModalContainer || !improvementModalContainer || !confirmationModalContainer) {
+            throw new Error("Fatal Error: Modal container(s) not found.");
+        }
+
+        // Initialize each modal with its own dedicated container
+        this.aiDeckModal = new AiDeckModal(aiModalContainer, (formData) => this.handleCreateDeck(formData));
 
 
-            await this.aiDeckModal.init();
+        await this.aiDeckModal.init();
 
-         this.notificationModal = new NotificationModal(notificationModalContainer);
-         await this.notificationModal.init();
+        this.notificationModal = new NotificationModal(notificationModalContainer);
+        await this.notificationModal.init();
 
 
 
         this.improvementModal = new ImprovementModal(
-            improvementModalContainer, 
+            improvementModalContainer,
             (cardId, reviewData) => this.handleSaveImprovementRequest(cardId, reviewData),
             (cardId) => this.handleUnmarkCardForImprovement(cardId) // Pass the remove handler
         );
-        
+
         await this.improvementModal.init();
 
-         // Initialize the new confirmation modal
+        // Initialize the new confirmation modal
         this.confirmationModal = new ConfirmationModal(confirmationModalContainer);
         await this.confirmationModal.init();
 
@@ -90,17 +91,29 @@ class App {
         // We attach it to document.body to ensure it survives screen transitions
         this.masteryModal = new ModernModal();
         await this.masteryModal.init(document.body);
-        
+
+        // Dynamically inject a container for ModalImprovementModal
+        const modalImpContainer = document.createElement('div');
+        modalImpContainer.id = 'modal-improvement-container';
+        document.body.appendChild(modalImpContainer);
+
+        this.modalImprovementModal = new ModalImprovementModal(
+            modalImpContainer,
+            (modalId, data) => this.handleSaveModalImprovement(modalId, data),
+            (modalId) => this.handleUnmarkModalImprovement(modalId)
+        );
+        await this.modalImprovementModal.init();
+
         const infoModalContainer = document.getElementById('info-modal-container');
         if (!infoModalContainer) { throw new Error("Fatal Error: InfoModal container not found."); }
-        this.infoModal = new InfoModal(infoModalContainer);
+        this.infoModal = new InfoModal(infoModalContainer, (modalId) => this.handleMarkModalForImprovement(modalId));
         await this.infoModal.init();
         console.log("DEBUG: [App] setupComponents -> Pre-loading essential glossaries.");
 
         // Setup for the new GlossaryScreen
         const glossaryScreenContainer = document.getElementById('glossary-screen-container');
         if (!glossaryScreenContainer) { throw new Error("Fatal Error: GlossaryScreen container not found."); }
-        
+
         this.glossaryScreen = new GlossaryScreen(
             glossaryScreenContainer,
             () => this.handleGoBackToDecks() // Re-use the existing handler to return to the dashboard
@@ -108,50 +121,51 @@ class App {
         await this.glossaryScreen.init();
 
 
-    await GlossaryService.loadGlossary('english_rules');
-    console.log("DEBUG: [App] setupComponents -> Glossaries pre-loaded.");
-    await GlossaryService.loadGlossary('english_rules');
-     await GlossaryService.loadGlossary('phrasal_verbs');
-     console.log("DEBUG: [App] setupComponents -> All glossaries pre-loaded.")
+        await GlossaryService.loadGlossary('english_rules');
+        console.log("DEBUG: [App] setupComponents -> Glossaries pre-loaded.");
+        await GlossaryService.loadGlossary('english_rules');
+        await GlossaryService.loadGlossary('phrasal_verbs');
+        console.log("DEBUG: [App] setupComponents -> All glossaries pre-loaded.")
     }
     /**
      * Handles the request to show an informational modal for a glossary term.
      * @param {string} termKey - The unique key for the term (e.g., 'subject_question').
      */
-  async handleShowInfoModal(termKey) {
-        if (!termKey) return;
-        console.log(`DEBUG: [App] handleShowInfoModal -> Request to show modal for term: ${termKey}`);
-        
-        // Dynamically determine which glossary to use based on the active deck
-        const deckId = this.state.currentDeckId;
-        let glossaryName = 'english_rules'; // Default glossary
+    async handleShowInfoModal(termKey) {
+        if (!termKey) return;
+        console.log(`DEBUG: [App] handleShowInfoModal -> Request to show modal for term: ${termKey}`);
 
-        // --- DECK-TO-GLOSSARY ROUTER ---
-        // This is where we map a specific deckId to its specific glossary file.
-        if (deckId === 'phrasal_verbs_audio_choice') {
-            glossaryName = 'phrasal_verbs'; // Use the phrasal verbs glossary
-        }
-        // VERIFY: This log will confirm the fix is working
-        console.log(`VERIFY: [App] handleShowInfoModal -> Using glossary '${glossaryName}' for deck '${deckId}'.`);
+        // Dynamically determine which glossary to use based on the active deck
+        const deckId = this.state.currentDeckId;
+        let glossaryName = 'english_rules'; // Default glossary
 
-        // Fetch the term from the *correct* glossary
-        const termData = await GlossaryService.getTerm(glossaryName, termKey);
+        // --- DECK-TO-GLOSSARY ROUTER ---
+        // This is where we map a specific deckId to its specific glossary file.
+        if (deckId === 'phrasal_verbs_audio_choice') {
+            glossaryName = 'phrasal_verbs'; // Use the phrasal verbs glossary
+        }
+        // VERIFY: This log will confirm the fix is working
+        console.log(`VERIFY: [App] handleShowInfoModal -> Using glossary '${glossaryName}' for deck '${deckId}'.`);
 
-        // Now we check for the termData *after* fetching it from the correct source
-        if (termData) {
-            this.infoModal.show(termData.title, termData.content);
-        } else {
-            this.notificationModal.show(
-                'Not Found',
-                `Sorry, the definition for '${termKey.replace('_', ' ')}' could not be found in the '${glossaryName}' glossary.`,
-                { icon: 'fa-solid fa-question-circle', color: 'text-orange-500', bgColor: 'bg-orange-100 dark:bg-orange-900' }
-            );
-        }
-    }
+        // Fetch the term from the *correct* glossary
+        const termData = await GlossaryService.getTerm(glossaryName, termKey);
+        // Now we check for the termData *after* fetching it from the correct source
+        if (termData) {
+            const allModalImprovements = StorageService.loadAllModalImprovements();
+            const isMarked = allModalImprovements.hasOwnProperty(termKey);
+            this.infoModal.show(termData.title, termData.content, termKey, isMarked);
+        } else {
+            this.notificationModal.show(
+                'Not Found',
+                `Sorry, the definition for '${termKey.replace('_', ' ')}' could not be found in the '${glossaryName}' glossary.`,
+                { icon: 'fa-solid fa-question-circle', color: 'text-orange-500', bgColor: 'bg-orange-100 dark:bg-orange-900' }
+            );
+        }
+    }
 
-      /**
-     * Handles the start of card audio playback to lower background music volume.
-     */
+    /**
+   * Handles the start of card audio playback to lower background music volume.
+   */
     handleCardAudioStart() {
         console.log("DEBUG: [App] handleCardAudioStart -> Event received. Lowering music volume.");
         if (this.musicService) {
@@ -170,10 +184,10 @@ class App {
     }
 
 
-     /**
-     * Handles the request to delete a user-created deck.
-     * @param {string} deckId The ID of the deck to delete.
-     */
+    /**
+    * Handles the request to delete a user-created deck.
+    * @param {string} deckId The ID of the deck to delete.
+    */
     async handleDeleteDeckRequest(deckId) {
         if (!deckId) return;
         const deckToDelete = this.state.allDecks[deckId];
@@ -185,16 +199,16 @@ class App {
         console.log(`DEBUG: [App] handleDeleteDeckRequest -> Request to delete deck: ${deckId}`);
         const title = `Delete "${deckToDelete.name}"?`;
         const message = "Are you sure you want to permanently delete this deck? All of its progress and data will be lost. This action cannot be undone.";
-        
+
         const confirmed = await this.confirmationModal.show(title, message);
 
         if (confirmed) {
             console.log(`DEBUG: [App] handleDeleteDeckRequest -> User confirmed deletion for deck: ${deckId}`);
             StorageService.deleteDeck(deckId);
-            
+
             // Show a success notification
             await this.notificationModal.show(
-                'Deck Deleted', 
+                'Deck Deleted',
                 `The deck "${deckToDelete.name}" has been successfully deleted.`,
                 { icon: 'fa-solid fa-trash-can', color: 'text-gray-500', bgColor: 'bg-gray-100 dark:bg-gray-700' }
             );
@@ -207,15 +221,15 @@ class App {
         }
     }
 
-      /**
-     * Toggles the favorite status of a deck.
-     * @param {string} deckId The ID of the deck to toggle.
-     */
+    /**
+   * Toggles the favorite status of a deck.
+   * @param {string} deckId The ID of the deck to toggle.
+   */
     handleToggleFavorite(deckId) {
         if (!deckId) return;
         console.log(`DEBUG: [App] handleToggleFavorite -> Toggling favorite for deck ID: ${deckId}`);
         const { favoriteDeckIds } = this.state;
-        
+
         if (favoriteDeckIds.has(deckId)) {
             favoriteDeckIds.delete(deckId);
         } else {
@@ -223,7 +237,7 @@ class App {
         }
 
         StorageService.saveFavorites(favoriteDeckIds);
-        
+
         // Re-render the deck list to reflect the change in order
         if (this.state.currentScreen === 'deckList') {
             this.render();
@@ -231,46 +245,46 @@ class App {
     }
 
     async loadDecks() {
-         console.log("DEBUG: [App] loadDecks -> Loading all decks.");
-        let staticDecks = {};
-        try {
-    
-               
-            const deckFiles = ['plsql_deck.json', 'shell_deck.json', 'dummy.json', 'ios_android.json', 'phrasal_verbs_audio_choice.json', 'http_rest_deep_dive.json', 'english_phrasal_verbs.json','it_commands_deck_01.json', 'ui_elements_deck.json', 'git_deck.json', 'tech_online_meetings_deck.json', 'tech_conversation_deck_01.json', 'technical_project_plan.json', 'flutter_dart_getx_deck.json', 'common_meeting.json', 'ebs.json' , 'dev_workflow.json', 'test_flippable_deck.json', 'test_audio_choice_deck.json', 'regular_verbs_pronunciation.json' ];
-            // Modify the fetch process to attach the filename to each loaded deck object.
-           const updatedDeckFiles = [...deckFiles, 'english_grammar_audio_choice.json', 'casual_phrases_1.json']; 
-            
-            const fetchPromises = updatedDeckFiles.map(file => 
+        console.log("DEBUG: [App] loadDecks -> Loading all decks.");
+        let staticDecks = {};
+        try {
+
+
+            const deckFiles = ['plsql_deck.json', 'shell_deck.json', 'dummy.json', 'ios_android.json', 'phrasal_verbs_audio_choice.json', 'http_rest_deep_dive.json', 'english_phrasal_verbs.json', 'it_commands_deck_01.json', 'ui_elements_deck.json', 'git_deck.json', 'tech_online_meetings_deck.json', 'tech_conversation_deck_01.json', 'technical_project_plan.json', 'flutter_dart_getx_deck.json', 'common_meeting.json', 'ebs.json', 'dev_workflow.json', 'test_flippable_deck.json', 'test_audio_choice_deck.json', 'regular_verbs_pronunciation.json'];
+            // Modify the fetch process to attach the filename to each loaded deck object.
+            const updatedDeckFiles = [...deckFiles, 'english_grammar_audio_choice.json', 'casual_phrases_1.json'];
+
+            const fetchPromises = updatedDeckFiles.map(file =>
                 fetch(`public/data/${file}`)
                     .then(res => res.json())
                     .then(deck => {
                         // Add the actual filename to the deck object for later reference.
-                        deck.fileName = file; 
+                        deck.fileName = file;
                         // Ensure static decks are never flagged as AI-generated
-                        deck.isAiGenerated = false;
+                        deck.isAiGenerated = false;
                         return deck;
                     })
             );
 
-            const loadedDecks = await Promise.all(fetchPromises);
-            
-            loadedDecks.forEach(deck => {
-                console.log(`DEBUG: [App] loadDecks -> Successfully loaded static deck: ${deck.name} (File: ${deck.fileName})`);
+            const loadedDecks = await Promise.all(fetchPromises);
+
+            loadedDecks.forEach(deck => {
+                console.log(`DEBUG: [App] loadDecks -> Successfully loaded static deck: ${deck.name} (File: ${deck.fileName})`);
                 console.log(`DEBUG: ID_CHECK -> FileName: ${deck.fileName}, DeckID: ${deck.id}`);
-                staticDecks[deck.id] = deck;
-            });
-        } catch (error) {
-            console.error("DEBUG: [App] loadDecks -> CRITICAL ERROR loading static decks:", error);
-        }
-        
-        const userDecks = StorageService.loadDecks();
+                staticDecks[deck.id] = deck;
+            });
+        } catch (error) {
+            console.error("DEBUG: [App] loadDecks -> CRITICAL ERROR loading static decks:", error);
+        }
+
+        const userDecks = StorageService.loadDecks();
         this.state.favoriteDeckIds = StorageService.loadFavorites(); // Load favorites status
         this.state.unlockedDeckIds = StorageService.loadUnlockedDeckIds(); // Load unlocked decks status
         this.state.allDecks = { ...staticDecks, ...userDecks };
         console.log("DEBUG: [App] loadDecks -> Final merged state for allDecks:", this.state.allDecks);
-    }
-    
-    render() {
+    }
+
+    render() {
         console.log(`DEBUG: [App] render -> Rendering screen: ${this.state.currentScreen}`);
         this.appContainer.innerHTML = '';
 
@@ -278,53 +292,53 @@ class App {
         // Select containers
         const mainAppContainer = document.getElementById('app-container');
         const glossaryScreenContainer = document.getElementById('glossary-screen-container');
-        
+
         // Default state: show app, hide glossary
         mainAppContainer.style.display = 'block';
         glossaryScreenContainer.style.display = 'none';
 
 
-        switch(this.state.currentScreen) {
-           case 'deckList':
-                if (!this.deckListComponent) { 
+        switch (this.state.currentScreen) {
+            case 'deckList':
+                if (!this.deckListComponent) {
                     this.deckListComponent = new DeckList(
-                        this.appContainer, 
-                        (id) => this.handleDeckSelected(id), 
-                        () => this.handleCreateDeckClicked(),
-                        (id) => this.handleToggleFavorite(id), 
-                        this.musicService,
-                        () => this.handleShowGlossary(),
+                        this.appContainer,
+                        (id) => this.handleDeckSelected(id),
+                        () => this.handleCreateDeckClicked(),
+                        (id) => this.handleToggleFavorite(id),
+                        this.musicService,
+                        () => this.handleShowGlossary(),
                         (code) => this.handleUnlockAttempt(code) // Add the new handler
-                    ); 
-                }
-                
+                    );
+                }
+
                 // Sort decks: favorites first, then by name
                 // Define default visible decks (as requested)
-                const defaultVisibleDeckFiles = [
-                    'english_grammar_audio_choice.json', 
-                    'phrasal_verbs_audio_choice.json'
-                ];
+                const defaultVisibleDeckFiles = [
+                    'english_grammar_audio_choice.json',
+                    'phrasal_verbs_audio_choice.json'
+                ];
 
-                // Filter decks to show only default, unlocked, or AI-generated
-                const visibleDecks = Object.values(this.state.allDecks).filter(deck => {
-                    // 1. Check if it's a default visible deck
-                    if (defaultVisibleDeckFiles.includes(deck.fileName)) {
-                        return true;
-                    }
-                    // 2. Check if it has been unlocked
-                    if (this.state.unlockedDeckIds.has(deck.id)) {
-                        return true;
-                    }
-                    // 3. Check if it's a user-created AI deck (always show)
-                    if (deck.isAiGenerated) {
-                        return true;
-                    }
-                    // Otherwise, hide it
-                    return false;
-                });
+                // Filter decks to show only default, unlocked, or AI-generated
+                const visibleDecks = Object.values(this.state.allDecks).filter(deck => {
+                    // 1. Check if it's a default visible deck
+                    if (defaultVisibleDeckFiles.includes(deck.fileName)) {
+                        return true;
+                    }
+                    // 2. Check if it has been unlocked
+                    if (this.state.unlockedDeckIds.has(deck.id)) {
+                        return true;
+                    }
+                    // 3. Check if it's a user-created AI deck (always show)
+                    if (deck.isAiGenerated) {
+                        return true;
+                    }
+                    // Otherwise, hide it
+                    return false;
+                });
 
-                // Sort decks: favorites first, then by name
-                const sortedDecks = visibleDecks.sort((a, b) => {
+                // Sort decks: favorites first, then by name
+                const sortedDecks = visibleDecks.sort((a, b) => {
 
                     const aIsFavorite = this.state.favoriteDeckIds.has(a.id);
                     const bIsFavorite = this.state.favoriteDeckIds.has(b.id);
@@ -336,10 +350,10 @@ class App {
                 this.deckListComponent.render(sortedDecks, this.state.favoriteDeckIds);
                 break;
             case 'deckDetail':
-                if (!this.deckDetailComponent) { 
-                this.deckDetailComponent = new DeckDetailScreen(
-                        this.appContainer, 
-                        () => this.handleStartQuiz(), 
+                if (!this.deckDetailComponent) {
+                    this.deckDetailComponent = new DeckDetailScreen(
+                        this.appContainer,
+                        () => this.handleStartQuiz(),
                         () => this.handleGoBackToDecks(),
                         () => this.handleResetDeck(),
                         (cardId) => this.handleUnignoreCard(cardId),
@@ -347,104 +361,105 @@ class App {
                         () => this.handleExportForImprovement(),
                         (deckId) => this.handleDeleteDeckRequest(deckId),
                         () => this.handleClearAllImprovements()
-                    ); 
-            }
-              const selectedDeck = this.state.allDecks[this.state.currentDeckId];
-                  const deckProgressData = StorageService.loadDeckProgress(this.state.currentDeckId);
+                    );
+                }
+                const selectedDeck = this.state.allDecks[this.state.currentDeckId];
+                const deckProgressData = StorageService.loadDeckProgress(this.state.currentDeckId);
                 const improvementData = StorageService.loadImprovementData(this.state.currentDeckId); // Load improvement data
-                
-                this.deckDetailComponent.render(selectedDeck, deckProgressData, improvementData); // Pass all required data
-                    break; 
 
- case 'audioChoiceQuiz':
-                if (!this.audioChoiceScreen) {
-                    this.audioChoiceScreen = new AudioChoiceScreen(
-                        this.appContainer,
-                        (option) => this.handleQuizAnswer(option),
-                        () => this.handleQuizNext(),
-                        () => this.handleIgnoreCurrentCard(),
-                        (cardId) => this.handleMarkCardForImprovement(cardId),
-                        (termKey) => this.handleShowInfoModal(termKey), // <-- LÍNEA AÑADIDA
-                        () => this.handleCardAudioStart(),
-                        () => this.handleCardAudioEnd()
-                    );
-                }
-                const currentAudioQuestion = this.state.quizInstance.getCurrentQuestion();
-                if (currentAudioQuestion) {
-                    const improvementData = StorageService.loadImprovementData(this.state.currentDeckId);
-                    const isMarked = improvementData.hasOwnProperty(currentAudioQuestion.cardId);
-                        this.audioChoiceScreen.render(
-                        currentAudioQuestion, 
-                        this.state.currentDeckId, // Pass the deck ID
-                        this.state.quizInstance.currentIndex, 
-                        this.state.quizInstance.questions.length, 
-                        this.state.quizInstance.score, 
-                        isMarked
-                    );                } else {
-                    console.error("DEBUG: [App] render -> Tried to render audio quiz, but no current question found.");
-                    this.handleQuizEnd();
-                }
-                break;
+                this.deckDetailComponent.render(selectedDeck, deckProgressData, improvementData); // Pass all required data
+                break;
+
+            case 'audioChoiceQuiz':
+                if (!this.audioChoiceScreen) {
+                    this.audioChoiceScreen = new AudioChoiceScreen(
+                        this.appContainer,
+                        (option) => this.handleQuizAnswer(option),
+                        () => this.handleQuizNext(),
+                        () => this.handleIgnoreCurrentCard(),
+                        (cardId) => this.handleMarkCardForImprovement(cardId),
+                        (termKey) => this.handleShowInfoModal(termKey), // <-- LÍNEA AÑADIDA
+                        () => this.handleCardAudioStart(),
+                        () => this.handleCardAudioEnd()
+                    );
+                }
+                const currentAudioQuestion = this.state.quizInstance.getCurrentQuestion();
+                if (currentAudioQuestion) {
+                    const improvementData = StorageService.loadImprovementData(this.state.currentDeckId);
+                    const isMarked = improvementData.hasOwnProperty(currentAudioQuestion.cardId);
+                    this.audioChoiceScreen.render(
+                        currentAudioQuestion,
+                        this.state.currentDeckId, // Pass the deck ID
+                        this.state.quizInstance.currentIndex,
+                        this.state.quizInstance.questions.length,
+                        this.state.quizInstance.score,
+                        isMarked
+                    );
+                } else {
+                    console.error("DEBUG: [App] render -> Tried to render audio quiz, but no current question found.");
+                    this.handleQuizEnd();
+                }
+                break;
 
             case 'quiz':
-                if (!this.quizScreenComponent) { 
-                   this.quizScreenComponent = new QuizScreen(
-                       this.appContainer, 
-                        (option) => this.handleQuizAnswer(option), 
-                        () => this.handleQuizNext(),
-                        () => this.handleQuizEnd(),
-                        () => this.handleIgnoreCurrentCard(),
+                if (!this.quizScreenComponent) {
+                    this.quizScreenComponent = new QuizScreen(
+                        this.appContainer,
+                        (option) => this.handleQuizAnswer(option),
+                        () => this.handleQuizNext(),
+                        () => this.handleQuizEnd(),
+                        () => this.handleIgnoreCurrentCard(),
                         (cardId) => this.handleMarkCardForImprovement(cardId), // Pass the new handler
                         () => this.handleCardAudioStart(), // Pass audio start handler
                         () => this.handleCardAudioEnd() // Pass audio end handler
-                    ); 
+                    );
                 }
 
                 const currentQuestion = this.state.quizInstance.getCurrentQuestion();
                 if (currentQuestion) {
-                 const improvementData = StorageService.loadImprovementData(this.state.currentDeckId);
-                const isMarked = improvementData.hasOwnProperty(currentQuestion.cardId);
-                    this.quizScreenComponent.render(currentQuestion, this.state.quizInstance.currentIndex, this.state.quizInstance.questions.length, this.state.quizInstance.score, isMarked);
+                    const improvementData = StorageService.loadImprovementData(this.state.currentDeckId);
+                    const isMarked = improvementData.hasOwnProperty(currentQuestion.cardId);
+                    this.quizScreenComponent.render(currentQuestion, this.state.quizInstance.currentIndex, this.state.quizInstance.questions.length, this.state.quizInstance.score, isMarked);
                 } else {
                     console.error("DEBUG: [App] render -> Tried to render quiz, but no current question found.");
                     this.handleGoBackToDecks();
                 }
                 break;
 
-                 case 'flippableQuiz':
+            case 'flippableQuiz':
                 if (!this.flippableCardScreen) {
-                  this.flippableCardScreen = new FlippableCardScreen(
-                        this.appContainer,
-                        (knewIt) => this.handleCardAssessment(knewIt),
-                        () => this.handleQuizEnd(),
-                        () => this.handleIgnoreCurrentCard(),
-                        (cardId) => this.handleMarkCardForImprovement(cardId), // This handler was missing
-                        (termKey) => this.handleShowInfoModal(termKey),
-                        () => this.handleCardAudioStart(),
-                        () => this.handleCardAudioEnd()
-                    );
-}
+                    this.flippableCardScreen = new FlippableCardScreen(
+                        this.appContainer,
+                        (knewIt) => this.handleCardAssessment(knewIt),
+                        () => this.handleQuizEnd(),
+                        () => this.handleIgnoreCurrentCard(),
+                        (cardId) => this.handleMarkCardForImprovement(cardId), // This handler was missing
+                        (termKey) => this.handleShowInfoModal(termKey),
+                        () => this.handleCardAudioStart(),
+                        () => this.handleCardAudioEnd()
+                    );
+                }
                 const currentCard = this.state.quizInstance.getCurrentCard();
                 const deckName = this.state.allDecks[this.state.currentDeckId].name;
                 if (currentCard) {
 
 
-                 const improvementData = StorageService.loadImprovementData(this.state.currentDeckId);
-                     const isMarked = improvementData.hasOwnProperty(currentCard.cardId);
-                    this.flippableCardScreen.render(this.state.currentDeckId, deckName, currentCard, this.state.quizInstance.currentIndex, this.state.quizInstance.currentCards.length, isMarked); // Pass deckId
+                    const improvementData = StorageService.loadImprovementData(this.state.currentDeckId);
+                    const isMarked = improvementData.hasOwnProperty(currentCard.cardId);
+                    this.flippableCardScreen.render(this.state.currentDeckId, deckName, currentCard, this.state.quizInstance.currentIndex, this.state.quizInstance.currentCards.length, isMarked); // Pass deckId
                 } else {
                     this.handleQuizEnd(); // Should not happen if logic is correct, but as a safeguard
                 }
                 break;
 
 
-                case 'glossary':
+            case 'glossary':
                 console.log("DEBUG: [App] render -> Rendering 'glossary' screen.");
                 // Hide main app container, show glossary container
                 mainAppContainer.style.display = 'none';
                 glossaryScreenContainer.style.display = 'block';
 
-              // The GlossaryScreen component now manages its own internal state
+                // The GlossaryScreen component now manages its own internal state
                 // (selection vs. viewer) and data loading.
                 // We just need to call render() to make it display its current state.
                 this.glossaryScreen.render();
@@ -456,10 +471,10 @@ class App {
         }
     }
 
-  handleMarkCardForImprovement(cardId) {
+    handleMarkCardForImprovement(cardId) {
         if (!cardId) return;
         console.log(`DEBUG: [App] handleMarkCardForImprovement -> User wants to mark/edit card: ${cardId}`);
-        
+
         // Find the card and its type to make the modal context-aware
         const deck = this.state.allDecks[this.state.currentDeckId];
         if (!deck) return;
@@ -468,23 +483,23 @@ class App {
         if (!card) return;
 
         // Use the deck's type as the definitive source of truth
-        const cardType = deck.deckType; 
+        const cardType = deck.deckType;
 
         // Load existing data for this card to allow for editing
         const existingData = StorageService.loadImprovementData(this.state.currentDeckId)[cardId];
-        
+
         // Pass the card type along with the other data to the modal
         this.improvementModal.show(cardId, cardType, existingData);
     }
 
-     handleUnmarkCardForImprovement(cardId) {
+    handleUnmarkCardForImprovement(cardId) {
         if (!cardId || !this.state.currentDeckId) return;
         console.log(`DEBUG: [App] handleUnmarkCardForImprovement -> Removing card ${cardId} from improvement list.`);
         StorageService.clearImprovementForCard(this.state.currentDeckId, cardId);
-       // UI FIX: Update flag immediately without re-rendering to preserve quiz state
+        // UI FIX: Update flag immediately without re-rendering to preserve quiz state
         this._updateFlagIconUI(false);
         console.log("VERIFY: [App] Flag icon set to un-marked visually.");
-        
+
         this.notificationModal.show(
             'Card Unmarked',
             'The card has been removed from the improvement list.',
@@ -527,60 +542,60 @@ class App {
     }
 
 
-/**
-     * Generates a definitive, professional-grade prompt for an LLM, instructing it to return a complete, actionable response.
-     * @param {string} deckName - The name of the deck being improved.
-     * @param {string} deckId - The ID of the deck, used to construct the final command.
-     * @param {Array<object>} cardsToImprove - The array of card objects marked for improvement.
-     * @returns {string} A string containing the full prompt and the JSON data.
-     */
+    /**
+         * Generates a definitive, professional-grade prompt for an LLM, instructing it to return a complete, actionable response.
+         * @param {string} deckName - The name of the deck being improved.
+         * @param {string} deckId - The ID of the deck, used to construct the final command.
+         * @param {Array<object>} cardsToImprove - The array of card objects marked for improvement.
+         * @returns {string} A string containing the full prompt and the JSON data.
+         */
 
 
-    // --- State Changers & Event Handlers ---
-    async handleExportForImprovement() {
-       const deckId = this.state.currentDeckId;
-        if (!deckId) return;
+    // --- State Changers & Event Handlers ---
+    async handleExportForImprovement() {
+        const deckId = this.state.currentDeckId;
+        if (!deckId) return;
 
-        const deck = this.state.allDecks[deckId];
+        const deck = this.state.allDecks[deckId];
         // The complex logic is now delegated to the ImprovementService.
-        const result = await ImprovementService.handleExport(deck);
+        const result = await ImprovementService.handleExport(deck);
 
         // App.js is now only responsible for showing the notification based on the result.
-        if (result.success) {
-            this.notificationModal.show(
-                'Copied to Clipboard!',
-                `A complete prompt & action plan for your LLM with ${result.count} card(s) has been copied.`,
-                { icon: 'fa-solid fa-robot', color: 'text-green-500', bgColor: 'bg-green-100 dark:bg-green-900' }
-            );
-        } else {
-            this.notificationModal.show('Export', result.message);
-        }
-    }
+        if (result.success) {
+            this.notificationModal.show(
+                'Copied to Clipboard!',
+                `A complete prompt & action plan for your LLM with ${result.count} card(s) has been copied.`,
+                { icon: 'fa-solid fa-robot', color: 'text-green-500', bgColor: 'bg-green-100 dark:bg-green-900' }
+            );
+        } else {
+            this.notificationModal.show('Export', result.message);
+        }
+    }
 
 
-     handleIgnoreCurrentCard() {
+    handleIgnoreCurrentCard() {
         if (!this.state.quizInstance) return;
-    
+
         const quiz = this.state.quizInstance;
         const isFlippable = quiz instanceof SpacedRepetitionQuiz;
         const currentCard = isFlippable ? quiz.getCurrentCard() : quiz.getCurrentQuestion();
-        
+
         if (!currentCard) return;
-    
+
         // Standardize on cardId for all card types.
-        const cardIdentifier = currentCard.cardId; 
-        console.log(`DEBUG: [App] handleIgnoreCurrentCard -> Ignoring card and advancing. ID: ${cardIdentifier}`);
+        const cardIdentifier = currentCard.cardId;
+        console.log(`DEBUG: [App] handleIgnoreCurrentCard -> Ignoring card and advancing. ID: ${cardIdentifier}`);
 
         if (!quiz.progress.ignored) {
             quiz.progress.ignored = new Set();
         }
-    
+
         quiz.progress.ignored.add(cardIdentifier);
         quiz.progress.learned.delete(cardIdentifier);
         quiz.progress.needsReview.delete(cardIdentifier);
-    
+
         StorageService.saveDeckProgress(this.state.currentDeckId, quiz.progress);
-    
+
         // UX Improvement: Immediately move to the next card.
         if (isFlippable) {
             // For flippable quizzes, move to the next card without scoring.
@@ -651,7 +666,7 @@ class App {
             duplicates.forEach(indices => {
                 totalDuplicateCards += indices.length - 1; // Count only the "extra" cards
             });
-            
+
             console.warn(`Found ${duplicates.size} unique questions that are duplicated.`);
             console.warn(`Total number of duplicate cards (extras): ${totalDuplicateCards}`);
             console.log("--- DUPLICATE DETAILS ---");
@@ -677,7 +692,7 @@ class App {
         if (deckId === 'plsql_deck') {
             this.analyzeAndLogDuplicates(selectedDeck);
         }
-        
+
         this.state.currentDeckId = deckId;
         this.state.currentScreen = 'deckDetail';
         this.render();
@@ -712,9 +727,9 @@ class App {
             nextScreen = 'flippableQuiz';
         } else if (deck.deckType === 'audioChoice') {
             console.log("DEBUG: [App] handleStartQuiz -> Preparing 'audioChoice' quiz.");
-            this.state.quizInstance = new Quiz(this.state.currentDeckId, deck.cards, progress); 
+            this.state.quizInstance = new Quiz(this.state.currentDeckId, deck.cards, progress);
             this.state.quizInstance.generateQuizRound(7);
-            nextScreen = 'audioChoiceQuiz'; 
+            nextScreen = 'audioChoiceQuiz';
         } else if (deck.deckType === 'multipleChoice') {
             console.log("DEBUG: [App] handleStartQuiz -> Preparing 'multipleChoice' quiz.");
             this.state.quizInstance = new Quiz(this.state.currentDeckId, deck.cards, progress);
@@ -730,28 +745,28 @@ class App {
         let roundIsEmpty = false;
         if (this.state.quizInstance instanceof SpacedRepetitionQuiz) {
             roundIsEmpty = this.state.quizInstance.currentCards.length === 0;
-        } else { 
+        } else {
             roundIsEmpty = this.state.quizInstance.questions.length === 0;
         }
 
         console.log(`VERIFY: [App] handleStartQuiz -> Round Empty: ${roundIsEmpty}`);
 
         if (roundIsEmpty) {
-           // Update: 'cycle' type triggers the Gold Icon + Confetti + Green Button
+            // Update: 'cycle' type triggers the Gold Icon + Confetti + Green Button
             // We use this.masteryModal directly to ensure full feature support
             this.masteryModal.show({
-                title: "Cycle Complete!", 
+                title: "Cycle Complete!",
                 message: "Repetition is the mother of learning.\n\nReady to restart the cycle?",
                 type: 'cycle',
                 onConfirm: () => {
                     console.log("VERIFY: [App] handleStartQuiz -> User confirmed. Resetting deck.");
                     // 1. Reset the data
-                    this.handleResetDeck(); 
-                    
+                    this.handleResetDeck();
+
                     // 2. Ensure we stay on DeckDetail to show the new '0 Learned' stats
-                    this.state.currentScreen = 'deckDetail'; 
+                    this.state.currentScreen = 'deckDetail';
                     this.state.quizInstance = null;
-                    
+
                     // 3. Render the clean slate
                     this.render();
                 }
@@ -782,7 +797,7 @@ class App {
             const correctAnswer = this.state.quizInstance.getCurrentQuestion().correctAnswer;
             this.quizScreenComponent.showFeedback(isCorrect, correctAnswer);
         }
-        
+
         // This direct DOM manipulation is not ideal, but we keep it for now
         // to maintain the immediate score update on the original quiz screen.
         const scoreElement = document.getElementById('quiz-score');
@@ -811,140 +826,140 @@ class App {
         console.log("DEBUG: [App] handleQuizNext -> Moving to next question.");
         this.state.quizInstance.moveToNextQuestion();
         if (this.state.quizInstance.isQuizOver()) {
-        console.log("DEBUG: [App] handleQuizNext -> Quiz is over, handling completion.");
-        this.handleQuizEnd(); // Delegate to the new end-of-quiz handler
-    } else {
+            console.log("DEBUG: [App] handleQuizNext -> Quiz is over, handling completion.");
+            this.handleQuizEnd(); // Delegate to the new end-of-quiz handler
+        } else {
+            this.render();
+        }
+    }
+
+    /**
+     * Handles the logic for when a quiz round is completed.
+     */
+    /**
+     * @param {number} total - The total number of questions in the round.
+     * @returns {string} A formatted message for the user.
+     */
+    _getRoundEndMessage(score, total) {
+        // Calculate the percentage, handling the case of zero total questions to avoid division by zero.
+        const percentage = total > 0 ? (score / total) * 100 : 0;
+
+        let result = {
+            title: '',
+            message: '',
+            iconStyle: { icon: '', color: '', bgColor: '' }
+        };
+
+        // Assign title, message, and icon based on percentage tiers.
+        if (percentage === 100) {
+            result.title = 'PERFECT SCORE!';
+            result.message = total < 10 ? `You nailed all ${total} questions! Perfect round!` : 'Incredible! Flawless victory! You are an expert!';
+            result.iconStyle = { icon: 'fa-solid fa-crown', color: 'text-yellow-400', bgColor: 'bg-yellow-100 dark:bg-yellow-900' };
+        } else if (percentage >= 90) {
+            result.title = 'Outstanding!';
+            result.message = 'Nearly perfect! You have truly mastered this subject.';
+            result.iconStyle = { icon: 'fa-solid fa-bolt', color: 'text-indigo-500', bgColor: 'bg-indigo-100 dark:bg-indigo-900' };
+        } else if (percentage >= 80) {
+            result.title = 'Excellent!';
+            result.message = 'Your knowledge is shining through. Fantastic result!';
+            result.iconStyle = { icon: 'fa-solid fa-star', color: 'text-green-500', bgColor: 'bg-green-100 dark:bg-green-900' };
+        } else if (percentage >= 70) {
+            result.title = 'Great Work!';
+            result.message = "A solid grasp of the material. That's impressive!";
+            result.iconStyle = { icon: 'fa-solid fa-thumbs-up', color: 'text-blue-500', bgColor: 'bg-blue-100 dark:bg-blue-900' };
+        } else if (percentage >= 60) {
+            result.title = 'Well Done!';
+            result.message = 'Over half correct! You are demonstrating a good understanding.';
+            result.iconStyle = { icon: 'fa-solid fa-award', color: 'text-sky-500', bgColor: 'bg-sky-100 dark:bg-sky-900' };
+        } else if (percentage >= 50) {
+            result.title = 'Halfway!';
+            result.message = 'You hit the 50% mark! Keep up the great momentum!';
+            result.iconStyle = { icon: 'fa-solid fa-mountain-sun', color: 'text-teal-500', bgColor: 'bg-teal-100 dark:bg-teal-900' };
+        } else if (percentage >= 40) {
+            result.title = 'Getting There!';
+            result.message = 'Solid work! Consistency is your greatest ally.';
+            result.iconStyle = { icon: 'fa-solid fa-chart-line', color: 'text-cyan-500', bgColor: 'bg-cyan-100 dark:bg-cyan-900' };
+        } else if (percentage >= 20) {
+            result.title = 'Building Blocks!';
+            result.message = 'You are laying the foundation for success.';
+            result.iconStyle = { icon: 'fa-solid fa-layer-group', color: 'text-amber-600', bgColor: 'bg-amber-100 dark:bg-amber-900' };
+        } else if (percentage > 0) {
+            result.title = 'First Step!';
+            result.message = 'You got one! The journey of a thousand miles begins with a single step.';
+            result.iconStyle = { icon: 'fa-solid fa-shoe-prints', color: 'text-lime-500', bgColor: 'bg-lime-100 dark:bg-lime-900' };
+        } else { // percentage === 0
+            result.title = 'Keep Trying!';
+            result.message = "Every master was once a beginner. Don't give up!";
+            result.iconStyle = { icon: 'fa-solid fa-lightbulb', color: 'text-orange-500', bgColor: 'bg-orange-100 dark:bg-orange-900' };
+        }
+
+        return result;
+    }
+
+    async handleQuizEnd() {
+        const instance = this.state.quizInstance;
+        const isFlippableQuiz = instance instanceof SpacedRepetitionQuiz;
+        console.log(`DEBUG: [App] handleQuizEnd -> Ending round. Is Flippable: ${isFlippableQuiz}. Saving progress.`);
+
+        const score = instance.score;
+        const total = isFlippableQuiz ? instance.currentCards.length : instance.questions.length;
+
+        // Get the dynamic message object from the recycled function
+        const result = this._getRoundEndMessage(score, total);
+
+        // Create a context-aware message
+        let scoreMessage;
+        if (isFlippableQuiz) {
+            scoreMessage = `You marked ${score} of ${total} cards as known.\n${result.message}`;
+        } else {
+            scoreMessage = `You got ${score} out of ${total} correct.\n${result.message}`;
+        }
+
+        // Show the final modal
+        await this.notificationModal.show(result.title, scoreMessage, result.iconStyle);
+        // The Quiz instance has been tracking progress; now we save it.
+        StorageService.saveDeckProgress(this.state.currentDeckId, this.state.quizInstance.progress);
+
+        // After saving, check if the entire deck is mastered
+        const currentDeck = this.state.allDecks[this.state.currentDeckId];
+        const latestProgress = StorageService.loadDeckProgress(this.state.currentDeckId);
+        if (currentDeck && latestProgress.learned.size === currentDeck.cards.length) {
+            console.log(`DEBUG: [App] handleQuizEnd -> Deck ${this.state.currentDeckId} is fully mastered.`);
+            const masteryMessage = "Your persistence and effort have paid off, and you've learned all the cards in this deck.\n\nFeel free to reset it and practice again anytime!";
+            await this.notificationModal.show(
+                'Deck Mastered!',
+                masteryMessage,
+                { icon: 'fa-solid fa-trophy', color: 'text-amber-500', bgColor: 'bg-amber-100 dark:bg-amber-900' }
+            );
+        }
+
+        this.state.quizInstance = null; // Clear the completed quiz instance
+        this.state.currentScreen = 'deckDetail'; // Go back to the deck detail screen
         this.render();
     }
-}
-
-/**
- * Handles the logic for when a quiz round is completed.
- */
-/**
- * @param {number} total - The total number of questions in the round.
- * @returns {string} A formatted message for the user.
- */
-_getRoundEndMessage(score, total) {
-    // Calculate the percentage, handling the case of zero total questions to avoid division by zero.
-    const percentage = total > 0 ? (score / total) * 100 : 0;
-    
-    let result = {
-        title: '',
-        message: '',
-        iconStyle: { icon: '', color: '', bgColor: '' }
-    };
-
-    // Assign title, message, and icon based on percentage tiers.
-    if (percentage === 100) {
-        result.title = 'PERFECT SCORE!';
-        result.message = total < 10 ? `You nailed all ${total} questions! Perfect round!` : 'Incredible! Flawless victory! You are an expert!';
-        result.iconStyle = { icon: 'fa-solid fa-crown', color: 'text-yellow-400', bgColor: 'bg-yellow-100 dark:bg-yellow-900' };
-    } else if (percentage >= 90) {
-        result.title = 'Outstanding!';
-        result.message = 'Nearly perfect! You have truly mastered this subject.';
-        result.iconStyle = { icon: 'fa-solid fa-bolt', color: 'text-indigo-500', bgColor: 'bg-indigo-100 dark:bg-indigo-900' };
-    } else if (percentage >= 80) {
-        result.title = 'Excellent!';
-        result.message = 'Your knowledge is shining through. Fantastic result!';
-        result.iconStyle = { icon: 'fa-solid fa-star', color: 'text-green-500', bgColor: 'bg-green-100 dark:bg-green-900' };
-    } else if (percentage >= 70) {
-        result.title = 'Great Work!';
-        result.message = "A solid grasp of the material. That's impressive!";
-        result.iconStyle = { icon: 'fa-solid fa-thumbs-up', color: 'text-blue-500', bgColor: 'bg-blue-100 dark:bg-blue-900' };
-    } else if (percentage >= 60) {
-        result.title = 'Well Done!';
-        result.message = 'Over half correct! You are demonstrating a good understanding.';
-        result.iconStyle = { icon: 'fa-solid fa-award', color: 'text-sky-500', bgColor: 'bg-sky-100 dark:bg-sky-900' };
-    } else if (percentage >= 50) {
-        result.title = 'Halfway!';
-        result.message = 'You hit the 50% mark! Keep up the great momentum!';
-        result.iconStyle = { icon: 'fa-solid fa-mountain-sun', color: 'text-teal-500', bgColor: 'bg-teal-100 dark:bg-teal-900' };
-    } else if (percentage >= 40) {
-        result.title = 'Getting There!';
-        result.message = 'Solid work! Consistency is your greatest ally.';
-        result.iconStyle = { icon: 'fa-solid fa-chart-line', color: 'text-cyan-500', bgColor: 'bg-cyan-100 dark:bg-cyan-900' };
-    } else if (percentage >= 20) {
-        result.title = 'Building Blocks!';
-        result.message = 'You are laying the foundation for success.';
-        result.iconStyle = { icon: 'fa-solid fa-layer-group', color: 'text-amber-600', bgColor: 'bg-amber-100 dark:bg-amber-900' };
-    } else if (percentage > 0) {
-        result.title = 'First Step!';
-        result.message = 'You got one! The journey of a thousand miles begins with a single step.';
-        result.iconStyle = { icon: 'fa-solid fa-shoe-prints', color: 'text-lime-500', bgColor: 'bg-lime-100 dark:bg-lime-900' };
-    } else { // percentage === 0
-        result.title = 'Keep Trying!';
-        result.message = "Every master was once a beginner. Don't give up!";
-        result.iconStyle = { icon: 'fa-solid fa-lightbulb', color: 'text-orange-500', bgColor: 'bg-orange-100 dark:bg-orange-900' };
-    }
-
-    return result;
-}
-
-async handleQuizEnd() {
-  const instance = this.state.quizInstance;
-    const isFlippableQuiz = instance instanceof SpacedRepetitionQuiz;
-    console.log(`DEBUG: [App] handleQuizEnd -> Ending round. Is Flippable: ${isFlippableQuiz}. Saving progress.`);
-
-    const score = instance.score;
-    const total = isFlippableQuiz ? instance.currentCards.length : instance.questions.length;
-
-    // Get the dynamic message object from the recycled function
-    const result = this._getRoundEndMessage(score, total);
-    
-    // Create a context-aware message
-    let scoreMessage;
-    if (isFlippableQuiz) {
-        scoreMessage = `You marked ${score} of ${total} cards as known.\n${result.message}`;
-    } else {
-        scoreMessage = `You got ${score} out of ${total} correct.\n${result.message}`;
-    }
-
-    // Show the final modal
-    await this.notificationModal.show(result.title, scoreMessage, result.iconStyle);
-    // The Quiz instance has been tracking progress; now we save it.
-    StorageService.saveDeckProgress(this.state.currentDeckId, this.state.quizInstance.progress);
-
-    // After saving, check if the entire deck is mastered
-    const currentDeck = this.state.allDecks[this.state.currentDeckId];
-    const latestProgress = StorageService.loadDeckProgress(this.state.currentDeckId);
-    if (currentDeck && latestProgress.learned.size === currentDeck.cards.length) {
-        console.log(`DEBUG: [App] handleQuizEnd -> Deck ${this.state.currentDeckId} is fully mastered.`);
-        const masteryMessage = "Your persistence and effort have paid off, and you've learned all the cards in this deck.\n\nFeel free to reset it and practice again anytime!";
-        await this.notificationModal.show(
-            'Deck Mastered!',
-            masteryMessage,
-            { icon: 'fa-solid fa-trophy', color: 'text-amber-500', bgColor: 'bg-amber-100 dark:bg-amber-900' }
-        );
-    }
-
-    this.state.quizInstance = null; // Clear the completed quiz instance
-    this.state.currentScreen = 'deckDetail'; // Go back to the deck detail screen
-    this.render();
-}
 
 
-handleResetDeck() {
-const deckId = this.state.currentDeckId;
+    handleResetDeck() {
+        const deckId = this.state.currentDeckId;
         // Removed confirm() check because DeckDetailScreen handles it with the Modern Modal
         console.log(`DEBUG: [App] handleResetDeck -> Resetting progress for deck ${deckId}.`);
-        StorageService.clearDeckProgress(deckId); 
-        this.render(); 
+        StorageService.clearDeckProgress(deckId);
+        this.render();
     }
 
-/**
- * Handles the click event to show the AI Deck creation modal.
- */
-handleCreateDeckClicked() {
-    console.log("DEBUG: [App] handleCreateDeckClicked -> Opening AI deck creation modal.");
-    // This function was missing. It's responsible for showing the modal.
-    this.aiDeckModal.show();
-}
+    /**
+     * Handles the click event to show the AI Deck creation modal.
+     */
+    handleCreateDeckClicked() {
+        console.log("DEBUG: [App] handleCreateDeckClicked -> Opening AI deck creation modal.");
+        // This function was missing. It's responsible for showing the modal.
+        this.aiDeckModal.show();
+    }
 
     async handleCreateDeck(formData) {
         console.log("DEBUG: [App] handleCreateDeck -> Received form data to create a new deck:", formData);
         this.aiDeckModal.setLoading(true);
-        localStorage.setItem('smart-decks-v3-apiKey', formData.apiKey); 
+        localStorage.setItem('smart-decks-v3-apiKey', formData.apiKey);
 
         try {
             const newCards = await ApiService.generateCards(formData);
@@ -961,7 +976,7 @@ handleCreateDeckClicked() {
             }, {});
             StorageService.saveDecks(aiDecksToSave);
             this.aiDeckModal.hide();
-            this.render(); 
+            this.render();
             alert(`Deck "${formData.title}" created successfully with ${newCards.length} cards!`);
         } catch (error) {
             console.error("DEBUG: [App] handleCreateDeck -> Error during deck creation process:", error);
@@ -971,9 +986,9 @@ handleCreateDeckClicked() {
         }
     }
 
-          /**
-     * Handles switching to the Glossary Viewer screen.
-     */
+    /**
+* Handles switching to the Glossary Viewer screen.
+*/
     handleShowGlossary() {
         console.log("DEBUG: [App] handleShowGlossary -> Switching to Glossary Viewer.");
         this.state.currentScreen = 'glossary';
@@ -981,58 +996,58 @@ handleCreateDeckClicked() {
     }
 
     /**
-     * Handles a deck unlock attempt from the DeckList screen.
-     * @param {string} code The code entered by the user.
-     */
-    handleUnlockAttempt(code) {
-        console.log(`DEBUG: [App] handleUnlockAttempt -> User submitted code: ${code}`);
-        const deckId = UnlockService.getDeckIdForCode(code);
+     * Handles a deck unlock attempt from the DeckList screen.
+     * @param {string} code The code entered by the user.
+     */
+    handleUnlockAttempt(code) {
+        console.log(`DEBUG: [App] handleUnlockAttempt -> User submitted code: ${code}`);
+        const deckId = UnlockService.getDeckIdForCode(code);
 
-        if (deckId) {
-            // Check if it's a valid deck that exists
-            const deck = this.state.allDecks[deckId];
-            if (!deck) {
-                console.warn(`[App] handleUnlockAttempt -> Code ${code} is valid but deck ${deckId} not found in allDecks.`);
-                this.notificationModal.show(
-                    'Error',
-                    'Code is valid, but the deck data could not be found. Please contact support.',
-                    { icon: 'fa-solid fa-circle-exclamation', color: 'text-red-500', bgColor: 'bg-red-100 dark:bg-red-900' }
-                );
-                return;
-            }
+        if (deckId) {
+            // Check if it's a valid deck that exists
+            const deck = this.state.allDecks[deckId];
+            if (!deck) {
+                console.warn(`[App] handleUnlockAttempt -> Code ${code} is valid but deck ${deckId} not found in allDecks.`);
+                this.notificationModal.show(
+                    'Error',
+                    'Code is valid, but the deck data could not be found. Please contact support.',
+                    { icon: 'fa-solid fa-circle-exclamation', color: 'text-red-500', bgColor: 'bg-red-100 dark:bg-red-900' }
+                );
+                return;
+            }
 
-            // Check if already unlocked
-            if (this.state.unlockedDeckIds.has(deckId)) {
-                this.notificationModal.show(
-                    'Already Unlocked',
-                    `The deck "${deck.name}" is already unlocked.`,
-                    { icon: 'fa-solid fa-check-circle', color: 'text-blue-500', bgColor: 'bg-blue-100 dark:bg-blue-900' }
-                );
-            } else {
-                // New unlock!
-                this.state.unlockedDeckIds.add(deckId);
-                StorageService.saveUnlockedDeckIds(this.state.unlockedDeckIds);
-                this.notificationModal.show(
-                    'Deck Unlocked!',
-                    `The deck "${deck.name}" has been unlocked!`,
-                    { icon: 'fa-solid fa-lock-open', color: 'text-green-500', bgColor: 'bg-green-100 dark:bg-green-900' }
-                );
-                this.render(); // Re-render the deck list to show the new deck
-            }
-        } else {
-            // Invalid code
-            console.warn(`[App] handleUnlockAttempt -> Invalid code entered: ${code}`);
-            this.notificationModal.show(
-                'Invalid Code',
-                'The code you entered is not valid. Please try again.',
-                { icon: 'fa-solid fa-shield-halved', color: 'text-orange-500', bgColor: 'bg-orange-100 dark:bg-orange-900' }
-            );
-        }
-    }
+            // Check if already unlocked
+            if (this.state.unlockedDeckIds.has(deckId)) {
+                this.notificationModal.show(
+                    'Already Unlocked',
+                    `The deck "${deck.name}" is already unlocked.`,
+                    { icon: 'fa-solid fa-check-circle', color: 'text-blue-500', bgColor: 'bg-blue-100 dark:bg-blue-900' }
+                );
+            } else {
+                // New unlock!
+                this.state.unlockedDeckIds.add(deckId);
+                StorageService.saveUnlockedDeckIds(this.state.unlockedDeckIds);
+                this.notificationModal.show(
+                    'Deck Unlocked!',
+                    `The deck "${deck.name}" has been unlocked!`,
+                    { icon: 'fa-solid fa-lock-open', color: 'text-green-500', bgColor: 'bg-green-100 dark:bg-green-900' }
+                );
+                this.render(); // Re-render the deck list to show the new deck
+            }
+        } else {
+            // Invalid code
+            console.warn(`[App] handleUnlockAttempt -> Invalid code entered: ${code}`);
+            this.notificationModal.show(
+                'Invalid Code',
+                'The code you entered is not valid. Please try again.',
+                { icon: 'fa-solid fa-shield-halved', color: 'text-orange-500', bgColor: 'bg-orange-100 dark:bg-orange-900' }
+            );
+        }
+    }
 
     async handleClearAllImprovements() {
         const confirmed = await this.confirmationModal.show(
-            'Clear All Improvements?', 
+            'Clear All Improvements?',
             'This will permanently remove all cards from the improvement list for this deck. This is useful for fixing sync errors. This action cannot be undone.'
         );
 
@@ -1046,51 +1061,80 @@ handleCreateDeckClicked() {
             );
         }
     }
-}
 
 
-
-
-// --- Application Entry Point (ROBUST MOBILE FIX) ---
-// We use a retry mechanism to ensure the DOM is fully parsed on slow mobile devices
-// before attempting to attach the Application Logic.
-const startApplication = async (retryCount = 0) => {
-    // 1. Critical Check: Ensure ALL containers required by setupComponents are ready
-    const requiredIds = [
-        'app-container', 
-        'ai-modal-container', 
-        'notification-modal-container', 
-        'improvement-modal-container', 
-        'confirmation-modal-container', 
-        'info-modal-container', 
-        'glossary-screen-container'
-    ];
-    
-    const missing = requiredIds.filter(id => !document.getElementById(id));
-
-    // If DOM elements are missing, wait and retry instead of crashing.
-    if (missing.length > 0) {
-        if (retryCount < 30) { // Increased to 3 seconds for older mobile devices
-            console.warn(`DEBUG: [Entry] Containers missing: ${missing.join(', ')} (attempt ${retryCount + 1}/30).`);
-            setTimeout(() => startApplication(retryCount + 1), 100);
-            return;
-        }
-        // If they still don't exist, we will catch the error in the try/catch below
+    // --- Modal Improvement Handlers ---
+    handleMarkModalForImprovement(modalId) {
+        if (!modalId) return;
+        console.log(`DEBUG: [App] handleMarkModalForImprovement -> Triggered for modal: ${modalId}`);
+        const existingData = StorageService.loadAllModalImprovements()[modalId] || null;
+        this.modalImprovementModal.show(modalId, existingData);
     }
 
-    // 2. Prevent Double Initialization
-    try {
-        console.log("VERIFY: [Entry] DOM is ready. Starting App bootstrap sequence...");
-        const app = new App();
-        await app.init();
-    } catch (error) {
-        console.error("FATAL: Could not start the application.", error);
-        
-        // Fix: Handle cases where error.message is undefined
-        const errorDetail = error.message || (typeof error === 'string' ? error : "Unknown resource error");
-        
-        // Improved Error Screen
-        document.body.innerHTML = `
+    handleSaveModalImprovement(modalId, reviewData) {
+        if (!modalId) return;
+        console.log(`VERIFY: [App] handleSaveModalImprovement -> Saving for modal ${modalId}`, reviewData);
+        StorageService.saveModalImprovement(modalId, reviewData);
+        this.infoModal.updateFlagUI(true);
+        this.notificationModal.show(
+            'Modal Marked',
+            'The improvement note for this modal has been saved.',
+            { icon: 'fa-solid fa-flag', color: 'text-blue-500', bgColor: 'bg-blue-100 dark:bg-blue-900' }
+        );
+    }
+
+    handleUnmarkModalImprovement(modalId) {
+        if (!modalId) return;
+        console.log(`VERIFY: [App] handleUnmarkModalImprovement -> Removing modal ${modalId}`);
+        StorageService.removeModalImprovement(modalId);
+        this.infoModal.updateFlagUI(false);
+        this.notificationModal.show(
+            'Modal Unmarked',
+            'The improvement note has been successfully removed.',
+            { icon: 'fa-solid fa-eraser', color: 'text-gray-500', bgColor: 'bg-gray-100 dark:bg-gray-700' }
+        );
+    }
+}
+    // --- Application Entry Point (ROBUST MOBILE FIX) ---
+    // We use a retry mechanism to ensure the DOM is fully parsed on slow mobile devices
+    // before attempting to attach the Application Logic.
+    const startApplication = async (retryCount = 0) => {
+        // 1. Critical Check: Ensure ALL containers required by setupComponents are ready
+        const requiredIds = [
+            'app-container',
+            'ai-modal-container',
+            'notification-modal-container',
+            'improvement-modal-container',
+            'confirmation-modal-container',
+            'info-modal-container',
+            'glossary-screen-container'
+        ];
+
+        const missing = requiredIds.filter(id => !document.getElementById(id));
+
+        // If DOM elements are missing, wait and retry instead of crashing.
+        if (missing.length > 0) {
+            if (retryCount < 30) { // Increased to 3 seconds for older mobile devices
+                console.warn(`DEBUG: [Entry] Containers missing: ${missing.join(', ')} (attempt ${retryCount + 1}/30).`);
+                setTimeout(() => startApplication(retryCount + 1), 100);
+                return;
+            }
+            // If they still don't exist, we will catch the error in the try/catch below
+        }
+
+        // 2. Prevent Double Initialization
+        try {
+            console.log("VERIFY: [Entry] DOM is ready. Starting App bootstrap sequence...");
+            const app = new App();
+            await app.init();
+        } catch (error) {
+            console.error("FATAL: Could not start the application.", error);
+
+            // Fix: Handle cases where error.message is undefined
+            const errorDetail = error.message || (typeof error === 'string' ? error : "Unknown resource error");
+
+            // Improved Error Screen
+            document.body.innerHTML = `
             <div class="flex flex-col items-center justify-center min-h-screen p-8 text-center text-red-500 bg-gray-900">
                 <i class="fa-solid fa-bug text-4xl mb-4"></i>
                 <h1 class="text-xl font-bold mb-2">Startup Error</h1>
@@ -1102,14 +1146,16 @@ const startApplication = async (retryCount = 0) => {
                     <i class="fa-solid fa-rotate-right mr-2"></i> Reload App
                 </button>
             </div>`;
-    }
-};
+        }
+    };
 
-// Check if the DOM is already ready (Critical for Mobile/Cache)
-if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    // Check if the DOM is already ready (Critical for Mobile/Cache)
+    if(document.readyState === 'complete' || document.readyState === 'interactive') {
     console.log("DEBUG: [Entry] DOM was already ready. Executing start.");
     startApplication();
 } else {
     console.log("DEBUG: [Entry] Waiting for DOMContentLoaded event.");
     document.addEventListener('DOMContentLoaded', () => startApplication());
 }
+
+ 
