@@ -428,6 +428,17 @@ class StorageService {
             console.error(`DEBUG: [StorageService] clearAllImprovementData -> Error wiping data for deck ${deckId}.`, error);
         }
     }
+    /**
+     * Completely wipes all modal improvement data globally.
+     */
+    static clearAllModalImprovements() {
+        try {
+            localStorage.removeItem(this.STORAGE_KEY_MODAL_IMPROVEMENT);
+            console.log(`VERIFY: [StorageService] Wiped all global modal improvement data.`);
+        } catch (error) {
+            console.error("Error wiping modal improvement data:", error);
+        }
+    }
 
     // --- Modal Improvement Methods ---
     static saveModalImprovement(modalId, data) {

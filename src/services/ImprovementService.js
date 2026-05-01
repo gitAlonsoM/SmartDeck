@@ -30,11 +30,14 @@ class ImprovementService {
 
         console.log(`DEBUG: [ImprovementService] handleExport -> Preparing export for deck ${deck.id}`);
         const improvementData = StorageService.loadImprovementData(deck.id);
-        const markedCardIds = Object.keys(improvementData);
+        const markedCardIds = Object.keys(improvementData || {});
+        
+        const modalImprovements = StorageService.loadAllModalImprovements() || {};
+        const markedModalIds = Object.keys(modalImprovements);
 
-        if (markedCardIds.length === 0) {
-            return { success: false, message: 'There are no cards marked for improvement to export.' };
-        }
+        if (markedCardIds.length === 0 && markedModalIds.length === 0) {
+            return { success: false, message: 'There are no cards or modals marked for improvement to export.' };
+        }
         // 1. Determine which Glossary to load based on Deck ID
         // Default to 'english_rules.json' (Grammar) but switch for specific decks.
         let glossaryFilename = 'english_rules.json'; // Default
@@ -73,18 +76,28 @@ class ImprovementService {
         const deckRelativePath = `public/data/${deckFileName}`;
 
         const correctCommand = `py update_deck.py --deck-file "${deckRelativePath}" --input-file "corrections.json"`;
-        // Fetch modal improvements to include in the report
-        const modalImprovements = StorageService.loadAllModalImprovements();
-        console.log(`VERIFY: [ImprovementService] Exporting deck alongside ${Object.keys(modalImprovements).length} modal improvements.`);
+        console.log(`VERIFY: [ImprovementService] Exporting deck alongside ${markedModalIds.length} modal improvements.`);
 
-        // Pass glossaryContext and modalImprovements to the prompt generator
-        const textToCopy = this._generateImprovementPrompt(deck.name, correctCommand, exportBatch, glossaryContext, deckRelativePath, modalImprovements);
-        
+        // Format modal improvements so 'title' always appears before 'user_comment' in the final JSON string
+        const formattedModalImprovements = {};
+        markedModalIds.forEach(id => {
+            formattedModalImprovements[id] = {
+                title: modalImprovements[id].title || `Modal ${id}`,
+                user_comment: modalImprovements[id].user_comment
+            };
+        });
+
+        // Pass glossaryContext and the freshly formatted modalImprovements to the prompt generator
+        const textToCopy = this._generateImprovementPrompt(deck.name, correctCommand, exportBatch, glossaryContext, deckRelativePath, formattedModalImprovements);
         try {
             await navigator.clipboard.writeText(textToCopy);
-            return { success: true, count: exportBatch.length };
-        } catch (error) {
-            console.error('Failed to copy to clipboard:', error);
+            return { 
+                success: true, 
+                cardCount: exportBatch.length, 
+                modalCount: markedModalIds.length 
+            };
+        } catch (error) {
+            console.error('Failed to copy to clipboard:', error);
             return { success: false, message: 'Could not copy data to clipboard. See console for details.' };
         }
     }
@@ -341,7 +354,7 @@ To avoid structural errors, you MUST process Part 1 using this mental workflow b
 Si el usuario en alguna 'nota' o 'apunte' de card, explicitamente solicito algo como "Avisar al usuario sobre ... " esas notas se añadiran en esta seccion para que el usuario las vea facilmente. Este espacio es para que el usuario que dejo la "Nota" o "apunte" pueda ver esos mensajes especiales en esta seccion. En caso de no encontrarse ningun mensaje especial, se pondra en esta seccion "No special messages to highlight".
 
 #### D. 🛠️ Modal Improvement Requests
-The user has left the following specific feedback/notes to improve specific Modals. If a modal ID is listed below, you MUST completely redesign/improve that modal in the "Improved Modals JSON" block based on this feedback, using the "Anti-Shit Protocol" formatting (colors, vertical structures, examples).
+The user has left the following specific notes to improve specific Modals. If a modal ID is listed below, dependiendo de lo solcitado, you MUST completely improve that modal in the "Improved Modals JSON" block based on this feedback, using the "Anti-Shit Protocol" formatting (colors, vertical structures, examples). Si el usuario pide aclaraciones del modal que no impliquen cambiarlo o mejorarlo, en ese caso no lo modificas el modal, y solo entregas el feedback via chat, pero si el usuario solicita cambios estructurales, cambio de ejemplos, etc cualquiier cambio dntro del modal significa crearlo denuvo, pero generalmente respectando el original, y solo añadiendo o modificando lo solicitado, la idea es mejorarlo, no crear todo desde cero. 
 \`\`\`json
 ${JSON.stringify(modalImprovements, null, 2)}
 \`\`\`

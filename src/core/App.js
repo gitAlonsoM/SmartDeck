@@ -15,6 +15,7 @@ class App {
             quizInstance: null,
             favoriteDeckIds: new Set(), // Track favorite decks
             unlockedDeckIds: new Set(), // Track unlocked decks
+            currentModalTitle: null // Track modal title for improvements
         };
 
         // Component instances are initialized in setupComponents
@@ -106,10 +107,9 @@ class App {
 
         const infoModalContainer = document.getElementById('info-modal-container');
         if (!infoModalContainer) { throw new Error("Fatal Error: InfoModal container not found."); }
-        this.infoModal = new InfoModal(infoModalContainer, (modalId) => this.handleMarkModalForImprovement(modalId));
-        await this.infoModal.init();
-        console.log("DEBUG: [App] setupComponents -> Pre-loading essential glossaries.");
-
+        this.infoModal = new InfoModal(infoModalContainer, (modalId, title) => this.handleMarkModalForImprovement(modalId, title));
+        await this.infoModal.init();
+        console.log("DEBUG: [App] setupComponents -> Pre-loading essential glossaries.");
         // Setup for the new GlossaryScreen
         const glossaryScreenContainer = document.getElementById('glossary-screen-container');
         if (!glossaryScreenContainer) { throw new Error("Fatal Error: GlossaryScreen container not found."); }
@@ -149,12 +149,13 @@ class App {
 
         // Fetch the term from the *correct* glossary
         const termData = await GlossaryService.getTerm(glossaryName, termKey);
-        // Now we check for the termData *after* fetching it from the correct source
-        if (termData) {
-            const allModalImprovements = StorageService.loadAllModalImprovements();
-            const isMarked = allModalImprovements.hasOwnProperty(termKey);
-            this.infoModal.show(termData.title, termData.content, termKey, isMarked);
-        } else {
+       // Now we check for the termData *after* fetching it from the correct source
+        if (termData) {
+            this.state.currentModalTitle = termData.title; // Save title to state for LLM injection
+            const allModalImprovements = StorageService.loadAllModalImprovements();
+            const isMarked = allModalImprovements.hasOwnProperty(termKey);
+            this.infoModal.show(termData.title, termData.content, termKey, isMarked);
+        } else {
             this.notificationModal.show(
                 'Not Found',
                 `Sorry, the definition for '${termKey.replace('_', ' ')}' could not be found in the '${glossaryName}' glossary.`,
@@ -359,16 +360,18 @@ class App {
                         (cardId) => this.handleUnignoreCard(cardId),
                         (cardId) => this.handleUnmarkCardForImprovement(cardId),
                         () => this.handleExportForImprovement(),
-                        (deckId) => this.handleDeleteDeckRequest(deckId),
-                        () => this.handleClearAllImprovements()
-                    );
-                }
-                const selectedDeck = this.state.allDecks[this.state.currentDeckId];
-                const deckProgressData = StorageService.loadDeckProgress(this.state.currentDeckId);
-                const improvementData = StorageService.loadImprovementData(this.state.currentDeckId); // Load improvement data
+                        (deckId) => this.handleDeleteDeckRequest(deckId),
+                        () => this.handleClearAllImprovements(),
+                        (modalId) => this.handleUnmarkModalImprovement(modalId)
+                    );
+                }
+                const selectedDeck = this.state.allDecks[this.state.currentDeckId];
+                const deckProgressData = StorageService.loadDeckProgress(this.state.currentDeckId);
+                const improvementData = StorageService.loadImprovementData(this.state.currentDeckId); // Load improvement data
+                const modalImprovementData = StorageService.loadAllModalImprovements(); // Load modal improvements
 
-                this.deckDetailComponent.render(selectedDeck, deckProgressData, improvementData); // Pass all required data
-                break;
+                this.deckDetailComponent.render(selectedDeck, deckProgressData, improvementData, modalImprovementData); // Pass all required data
+                break;
 
             case 'audioChoiceQuiz':
                 if (!this.audioChoiceScreen) {
@@ -563,10 +566,10 @@ class App {
         // App.js is now only responsible for showing the notification based on the result.
         if (result.success) {
             this.notificationModal.show(
-                'Copied to Clipboard!',
-                `A complete prompt & action plan for your LLM with ${result.count} card(s) has been copied.`,
-                { icon: 'fa-solid fa-robot', color: 'text-green-500', bgColor: 'bg-green-100 dark:bg-green-900' }
-            );
+                'Copied to Clipboard!',
+                `A complete prompt & action plan for your LLM with ${result.cardCount} card(s) and ${result.modalCount} modal(s) has been copied.`,
+                { icon: 'fa-solid fa-robot', color: 'text-green-500', bgColor: 'bg-green-100 dark:bg-green-900' }
+            );
         } else {
             this.notificationModal.show('Export', result.message);
         }
@@ -1048,53 +1051,58 @@ class App {
     async handleClearAllImprovements() {
         const confirmed = await this.confirmationModal.show(
             'Clear All Improvements?',
-            'This will permanently remove all cards from the improvement list for this deck. This is useful for fixing sync errors. This action cannot be undone.'
-        );
+            'This will permanently remove all cards AND modals from the improvement list. This action cannot be undone.'
+        );
 
-        if (confirmed) {
-            StorageService.clearAllImprovementData(this.state.currentDeckId);
-            this.render(); // Re-render to update UI
-            this.notificationModal.show(
-                'List Cleared',
-                'All improvement marks have been removed.',
-                { icon: 'fa-solid fa-trash-can', color: 'text-gray-500', bgColor: 'bg-gray-100 dark:bg-gray-700' }
-            );
-        }
+        if (confirmed) {
+            StorageService.clearAllImprovementData(this.state.currentDeckId);
+            StorageService.clearAllModalImprovements(); // Limpia también los modales
+            this.render(); // Re-render to update UI
+            this.notificationModal.show(
+                'List Cleared',
+                'All improvement marks (cards and modals) have been removed.',
+                { icon: 'fa-solid fa-trash-can', color: 'text-gray-500', bgColor: 'bg-gray-100 dark:bg-gray-700' }
+            );
+        }
     }
 
+// --- Modal Improvement Handlers ---
+    handleMarkModalForImprovement(modalId, modalTitle) {
+        if (!modalId) return;
+        console.log(`DEBUG: [App] handleMarkModalForImprovement -> Triggered for modal: ${modalId} (${modalTitle})`);
+        this.state.currentModalTitle = modalTitle; // Explicitly save the exact title text
+        const existingData = StorageService.loadAllModalImprovements()[modalId] || null;
+        this.modalImprovementModal.show(modalId, existingData);
+    }
 
-    // --- Modal Improvement Handlers ---
-    handleMarkModalForImprovement(modalId) {
-        if (!modalId) return;
-        console.log(`DEBUG: [App] handleMarkModalForImprovement -> Triggered for modal: ${modalId}`);
-        const existingData = StorageService.loadAllModalImprovements()[modalId] || null;
-        this.modalImprovementModal.show(modalId, existingData);
-    }
-
-    handleSaveModalImprovement(modalId, reviewData) {
+    handleSaveModalImprovement(modalId, reviewData) {
         if (!modalId) return;
         console.log(`VERIFY: [App] handleSaveModalImprovement -> Saving for modal ${modalId}`, reviewData);
-        StorageService.saveModalImprovement(modalId, reviewData);
-        this.infoModal.updateFlagUI(true);
-        this.notificationModal.show(
-            'Modal Marked',
-            'The improvement note for this modal has been saved.',
-            { icon: 'fa-solid fa-flag', color: 'text-blue-500', bgColor: 'bg-blue-100 dark:bg-blue-900' }
-        );
-    }
+        reviewData.title = this.state.currentModalTitle || `Modal ${modalId}`; // Inject title
+        StorageService.saveModalImprovement(modalId, reviewData);
+        this.infoModal.updateFlagUI(true);
+        this.notificationModal.show(
+            'Modal Marked',
+            'The improvement note for this modal has been saved.',
+            { icon: 'fa-solid fa-flag', color: 'text-blue-500', bgColor: 'bg-blue-100 dark:bg-blue-900' }
+        );
+    }
 
-    handleUnmarkModalImprovement(modalId) {
-        if (!modalId) return;
-        console.log(`VERIFY: [App] handleUnmarkModalImprovement -> Removing modal ${modalId}`);
-        StorageService.removeModalImprovement(modalId);
-        this.infoModal.updateFlagUI(false);
-        this.notificationModal.show(
-            'Modal Unmarked',
-            'The improvement note has been successfully removed.',
-            { icon: 'fa-solid fa-eraser', color: 'text-gray-500', bgColor: 'bg-gray-100 dark:bg-gray-700' }
-        );
-    }
-}
+    handleUnmarkModalImprovement(modalId) {
+        if (!modalId) return;
+        console.log(`VERIFY: [App] handleUnmarkModalImprovement -> Removing modal ${modalId}`);
+        StorageService.removeModalImprovement(modalId);
+        this.infoModal.updateFlagUI(false);
+        this.notificationModal.show(
+            'Modal Unmarked',
+            'The improvement note has been successfully removed.',
+            { icon: 'fa-solid fa-eraser', color: 'text-gray-500', bgColor: 'bg-gray-100 dark:bg-gray-700' }
+        );
+        if (this.state.currentScreen === 'deckDetail') {
+            this.render(); // Re-render immediately to update lists
+        }
+    }
+ }
     // --- Application Entry Point (ROBUST MOBILE FIX) ---
     // We use a retry mechanism to ensure the DOM is fully parsed on slow mobile devices
     // before attempting to attach the Application Logic.

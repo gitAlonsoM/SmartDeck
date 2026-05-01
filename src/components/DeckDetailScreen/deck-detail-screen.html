@@ -1,5 +1,6 @@
 <!-- src\components\DeckDetailScreen\deck-detail-screen.html -->
 <div id="deck-detail-screen" class="max-w-4xl mx-auto px-4">
+    <!-- Header -->
     <div class="flex justify-between items-center w-full mb-6">
         <button id="back-to-decks-btn" class="text-sm font-medium text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-200 transition-colors">
             &larr; Back to Decks
@@ -9,9 +10,11 @@
         </button>
     </div>
     
+    <!-- Stats -->
     <div id="progress-stats" class="flex justify-around items-center my-8 text-center bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
     </div>
 
+    <!-- Deck Info -->
     <div id="deck-info-section" class="my-8 text-center">
         <h1 id="deck-title" class="text-3xl md:text-4xl font-bold mb-2 text-gray-800 dark:text-gray-200"></h1>
         <p id="deck-description" class="text-md text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"></p>
@@ -19,13 +22,14 @@
     
     <p id="total-progress-text" class="text-md text-gray-600 dark:text-gray-400 mb-8 text-center"></p>
 
+    <!-- Main Actions -->
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <button id="start-quiz-btn" class="w-full sm:w-auto px-12 py-4 bg-indigo-600 text-white font-bold rounded-lg shadow-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-900 transition-transform transform hover:scale-105">
             Start Quiz
         </button>
     </div>
 
-
+    <!-- Secondary Actions -->
     <div id="deck-actions" class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
         <button id="reset-deck-btn" class="w-full sm:w-auto px-5 py-2.5 border border-yellow-500 text-yellow-600 dark:text-yellow-500 hover:bg-yellow-50 dark:hover:bg-yellow-900/20 rounded-lg text-sm font-semibold transition-colors flex justify-center items-center gap-2 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900">
             <i class="fas fa-redo"></i> Reset Deck Progress
@@ -36,9 +40,13 @@
         </button>
     </div>
 
+    <!-- Review & Improvement Lists -->
     <div class="w-full max-w-xl mx-auto mt-12 space-y-4">
+        
+        <!-- Ignored Cards -->
         <details id="ignored-cards-section" class="bg-white dark:bg-gray-800 rounded-lg shadow-md">
-            <summary class="p-4 cursor-pointer font-semibold text-gray-700 dark:text-gray-300 flex justify-between items-center">
+            <!-- list-none and [&::-webkit-details-marker]:hidden fix flexbox issues in <summary> -->
+            <summary class="p-4 cursor-pointer font-semibold text-gray-700 dark:text-gray-300 flex justify-between items-center w-full list-none [&::-webkit-details-marker]:hidden">
                 <span>Ignored Cards</span>
                 <span id="ignored-count-badge" class="px-2 py-0.5 bg-yellow-200 text-yellow-800 dark:bg-yellow-800 dark:text-yellow-100 text-xs font-bold rounded-full">0</span>
             </summary>
@@ -47,23 +55,41 @@
             </div>
         </details>
 
+        <!-- Cards for Improvement -->
         <details id="improvement-cards-section" class="bg-white dark:bg-gray-800 rounded-lg shadow-md">
-            <summary class="p-4 cursor-pointer font-semibold text-gray-700 dark:text-gray-300 flex justify-between items-center">
+            <summary class="p-4 cursor-pointer font-semibold text-gray-700 dark:text-gray-300 flex justify-between items-center w-full list-none [&::-webkit-details-marker]:hidden">
                 <span>Cards Marked for Improvement</span>
                 <span id="improvement-count-badge" class="px-2 py-0.5 bg-blue-200 text-blue-800 dark:bg-blue-800 dark:text-blue-100 text-xs font-bold rounded-full">0</span>
             </summary>
-            <div id="improvement-cards-list" class="p-4 border-t border-gray-200 dark:border-gray-700 space-y-3">
+           <div id="improvement-cards-list" class="p-4 border-t border-gray-200 dark:border-gray-700 space-y-3">
                 <p class="text-gray-500 dark:text-gray-400 text-sm">No cards marked for improvement.</p>
             </div>
-            
-            <div id="improvement-export-footer" class="p-4 border-t border-gray-200 dark:border-gray-700 flex flex-col sm:flex-row justify-between items-center gap-4 hidden">
-                <button id="force-clear-improvements-btn" class="text-sm font-semibold text-red-500 hover:text-red-700 dark:text-red-400 dark:hover:text-red-300 transition-colors flex items-center gap-2">
-                    <i class="fas fa-trash-can"></i> Clear All
-                </button>
-                <button id="export-improve-btn" class="w-full sm:w-auto px-6 py-2 bg-blue-600 text-white font-bold rounded-lg shadow-md hover:bg-blue-700 transition-colors">
-                    Generate Correction Prompt
-                </button>
+        </details>
+
+        <!-- Modals for Improvement -->
+        <details id="improvement-modals-section" class="bg-white dark:bg-gray-800 rounded-lg shadow-md">
+            <summary class="p-4 cursor-pointer font-semibold text-gray-700 dark:text-gray-300 flex justify-between items-center w-full list-none [&::-webkit-details-marker]:hidden">
+                <span>Modals Marked for Improvement</span>
+                <span id="improvement-modals-count-badge" class="px-2 py-0.5 bg-purple-200 text-purple-800 dark:bg-purple-800 dark:text-purple-100 text-xs font-bold rounded-full">0</span>
+            </summary>
+            <div id="improvement-modals-list" class="p-4 border-t border-gray-200 dark:border-gray-700 space-y-3">
+                <p class="text-gray-500 dark:text-gray-400 text-sm">No modals marked for improvement.</p>
             </div>
         </details>
+            
+        <!-- Export Footer (Responsive Flexbox applied) -->
+        <div id="improvement-export-footer" class="mt-6 p-5 bg-gray-100 dark:bg-gray-800/80 border border-gray-200 dark:border-gray-700 rounded-xl shadow-lg flex-col sm:flex-row justify-between items-center gap-4 hidden w-full">
+            
+            <!-- Clear All Button (Order 2 on mobile, Order 1 on desktop) -->
+            <button id="force-clear-improvements-btn" class="w-full sm:w-auto order-2 sm:order-1 text-sm font-bold text-red-500 hover:text-red-700 dark:text-red-400 dark:hover:text-red-300 transition-colors flex justify-center sm:justify-start items-center gap-2 py-2">
+                <i class="fas fa-trash-can"></i> Clear All
+            </button>
+            
+            <!-- Generate Prompt Button (Order 1 on mobile, Order 2 on desktop) -->
+            <button id="export-improve-btn" class="w-full sm:w-auto order-1 sm:order-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-lg shadow-md transition-colors text-center">
+                Generate Correction Prompt
+            </button>
+
+        </div>
     </div>
 </div>

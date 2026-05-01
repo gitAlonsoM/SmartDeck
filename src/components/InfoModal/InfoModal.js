@@ -25,14 +25,15 @@ class InfoModal {
         this.closeButton.onclick = () => this.hide();
         this.modalBackdrop.onclick = () => this.hide();
         this.improveBtn.onclick = () => {
-            if (this.currentModalId && this.onMarkImprovement) {
-                this.onMarkImprovement(this.currentModalId);
-            }
-        };
-        console.log("DEBUG: [InfoModal] init -> Component initialized and listeners attached.");
-    }
+            if (this.currentModalId && this.onMarkImprovement) {
+                // Extract the title directly from the DOM to ensure 100% accuracy
+                this.onMarkImprovement(this.currentModalId, this.modalTitle.textContent);
+            }
+        };
+        console.log("DEBUG: [InfoModal] init -> Component initialized and listeners attached.");
+    }
 
-   show(title, contentHTML, modalId, isMarked = false) {
+   show(title, contentHTML, modalId, isMarked = false) {
         console.log(`DEBUG: [InfoModal] show -> Showing modal with title: '${title}' (ID: ${modalId})`);
         if (!this.modalContent) {
             console.error("DEBUG: [InfoModal] show -> Cannot show modal, component not initialized.");

@@ -1,7 +1,5 @@
 /* src\components\DeckDetailScreen\DeckDetailScreen.js */
 
-
-
 class DeckDetailScreen {
     /**
      * @param {HTMLElement} container The DOM element where the component will be rendered.
@@ -11,8 +9,9 @@ class DeckDetailScreen {
      * @param {function} onUnignoreCard Callback to restore an ignored card.
      * @param {function} onDeleteDeck Callback to delete the entire deck.
      * @param {function} onClearAllImprovements Callback to force clear all improvements.
+     * @param {function} onUnmarkModalImprovement Callback to remove modal improvement.
      */
-    constructor(container, onStartQuiz, onGoBack, onReset, onUnignoreCard, onUnmarkCardForImprovement, onExportForImprovement, onDeleteDeck, onClearAllImprovements) {
+    constructor(container, onStartQuiz, onGoBack, onReset, onUnignoreCard, onUnmarkCardForImprovement, onExportForImprovement, onDeleteDeck, onClearAllImprovements, onUnmarkModalImprovement) {
         this.container = container;
         this.onStartQuiz = onStartQuiz;
         this.onGoBack = onGoBack;
@@ -22,7 +21,8 @@ class DeckDetailScreen {
         this.onExportForImprovement = onExportForImprovement;
         this.onDeleteDeck = onDeleteDeck;
         this.onClearAllImprovements = onClearAllImprovements; 
-        this.deck = null; 
+        this.onUnmarkModalImprovement = onUnmarkModalImprovement;
+        this.deck = null;
         
         // Initialize the ModernModal
         this.modernModal = new ModernModal();
@@ -35,8 +35,9 @@ class DeckDetailScreen {
      * @param {object} deck The full deck object to display.
      * @param {object} progressData The progress object for this deck { learned: Set, needsReview: Set, ignored: Set }.
      * @param {object} improvementData The object of cards marked for improvement.
+     * @param {object} modalImprovementData The object of modals marked for improvement.
      */
-    async render(deck, progressData, improvementData) {
+    async render(deck, progressData, improvementData, modalImprovementData) {
         console.log("DEBUG: [DeckDetailScreen] render -> Rendering details for deck:", deck.name);
         this.deck = deck;
 
@@ -54,6 +55,10 @@ class DeckDetailScreen {
         this._populateProgressStats(deck.cards.length, progressData);
         this._populateIgnoredCards(deck.cards, progressData.ignored);
         this._populateImprovementList(deck.cards, improvementData);
+        this._populateModalImprovementList(modalImprovementData);
+        
+        // Check if either list has items to show the export footer
+        this._updateExportFooterVisibility(improvementData, modalImprovementData);
     }
 
     /**
@@ -87,8 +92,6 @@ class DeckDetailScreen {
         }
     }
 
-
-
     /**
      * Populates the main progress stat counters (Learned, To Review, New).
      * @param {number} totalCount The total number of cards in the deck.
@@ -114,39 +117,39 @@ class DeckDetailScreen {
      * @returns {string} A displayable text for the card.
      */
     _getCardDisplayText(card) {
-        if (!card) return 'Invalid Card';
+        if (!card) return 'Invalid Card';
 
         // Handle AudioChoice cards first as their structure is unique.
         if (card.sentenceParts && card.sentenceParts.prefix) {
             return `${card.sentenceParts.prefix}___${card.sentenceParts.suffix}`;
         }
 
-        // 1. Standard quiz card with a 'question' property
-        if (card.question) return card.question;
+        // 1. Standard quiz card with a 'question' property
+        if (card.question) return card.question;
 
-        // 2. Flippable cards (text, visual, or conversation)
-        if (card.sideA) {
-            // 2a. Simple text flippable card
-            if (typeof card.sideA === 'string') return card.sideA;
+        // 2. Flippable cards (text, visual, or conversation)
+        if (card.sideA) {
+            // 2a. Simple text flippable card
+            if (typeof card.sideA === 'string') return card.sideA;
 
-            if (typeof card.sideA === 'object') {
-                // 2b. Conversation card: return the first line of the conversation
-                if (card.sideA.conversation && card.sideA.conversation.length > 0) {
-                    return card.sideA.conversation[0].text;
-                }
-                // 2c. Standard text/visual card with a 'text' property
-                if (card.sideA.text) return card.sideA.text;
-            }
-        }
+            if (typeof card.sideA === 'object') {
+                // 2b. Conversation card: return the first line of the conversation
+                if (card.sideA.conversation && card.sideA.conversation.length > 0) {
+                    return card.sideA.conversation[0].text;
+                }
+                // 2c. Standard text/visual card with a 'text' property
+                if (card.sideA.text) return card.sideA.text;
+            }
+        }
 
-        // 3. Fallback for audio-only cards (no text on Side A)
-        if (card.sideB && card.sideB.length > 0) {
-            return card.sideB[0];
-        }
+        // 3. Fallback for audio-only cards (no text on Side A)
+        if (card.sideB && card.sideB.length > 0) {
+            return card.sideB[0];
+        }
 
         // Use correctAnswer as a final fallback if available
-        return card.correctAnswer || 'Card content not available'; 
-    }
+        return card.correctAnswer || 'Card content not available'; 
+    }
 
     /**
      * Populates the list of ignored cards.
@@ -168,7 +171,7 @@ class DeckDetailScreen {
         ignoredSet.forEach(cardId => {
             const card = cardMap.get(cardId);
             if (card) {
-                const cardText = this._getCardDisplayText(card); // Use the new helper function
+                const cardText = this._getCardDisplayText(card); 
                 const item = document.createElement('div');
                 item.className = 'flex justify-between items-center bg-gray-50 dark:bg-gray-700/50 p-2 rounded-md';
                 item.innerHTML = `
@@ -188,24 +191,26 @@ class DeckDetailScreen {
     _populateImprovementList(allCards, improvementData) {
         const listContainer = document.getElementById('improvement-cards-list');
         const badge = document.getElementById('improvement-count-badge');
-        const footer = document.getElementById('improvement-export-footer');
         listContainer.innerHTML = '';
 
-        const markedCardIds = Object.keys(improvementData);
+        const markedCardIds = Object.keys(improvementData || {});
         badge.textContent = markedCardIds.length;
 
         if (markedCardIds.length === 0) {
             listContainer.innerHTML = '<p class="text-gray-500 dark:text-gray-400 text-sm">No cards marked for improvement.</p>';
-            footer.classList.add('hidden');
             return;
         }
 
         const cardMap = new Map(allCards.map(c => [c.cardId, c]));
+        let validCardsFound = 0;
+
         markedCardIds.forEach(cardId => {
             const card = cardMap.get(cardId);
             const review = improvementData[cardId];
+            
             if (card) {
-                const cardText = this._getCardDisplayText(card); // Use the new helper function
+                validCardsFound++;
+                const cardText = this._getCardDisplayText(card);
                 const item = document.createElement('div');
                 item.className = 'p-3 bg-gray-50 dark:bg-gray-700/50 rounded-md';
                 item.innerHTML = `
@@ -222,15 +227,79 @@ class DeckDetailScreen {
             }
         });
 
-        footer.classList.remove('hidden');
+        // If data exists in storage but no valid cards matched (The Phantom Bug), show a warning
+        if (markedCardIds.length > 0 && validCardsFound === 0) {
+            listContainer.innerHTML = `
+                <div class="p-3 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 rounded-md text-sm mb-2">
+                    <i class="fas fa-exclamation-triangle mr-2"></i>
+                    <strong>Data Sync Error:</strong> ${markedCardIds.length} cards are marked, but they don't match the current deck content. Use "Clear All" to fix this.
+                </div>
+            `;
+        }
+    }
+
+    /**
+     * Populates the list of Modals marked for improvement.
+     */
+    _populateModalImprovementList(modalImprovementData) {
+        const listContainer = document.getElementById('improvement-modals-list');
+        const badge = document.getElementById('improvement-modals-count-badge');
+        if (!listContainer || !badge) return; 
+        
+        listContainer.innerHTML = '';
+
+        const markedModalIds = Object.keys(modalImprovementData || {});
+        badge.textContent = markedModalIds.length;
+
+        if (markedModalIds.length === 0) {
+            listContainer.innerHTML = '<p class="text-gray-500 dark:text-gray-400 text-sm">No modals marked for improvement.</p>';
+            return;
+        }
+
+        markedModalIds.forEach(modalId => {
+            const review = modalImprovementData[modalId];
+            const title = review.title || `Modal ${modalId}`;
+            const item = document.createElement('div');
+            item.className = 'p-3 bg-gray-50 dark:bg-gray-700/50 rounded-md border border-purple-500/20';
+            item.innerHTML = `
+                <div class="flex justify-between items-start gap-4">
+                    <div class="flex-grow min-w-0">
+                        <p class="font-semibold text-gray-800 dark:text-gray-200 break-words">
+                            <span class="text-purple-500 dark:text-purple-400 mr-2 text-sm">[ID: ${modalId}]</span>${title}
+                        </p>
+                        ${review.user_comment ? `<p class="text-xs text-gray-500 dark:text-gray-400 mt-2 p-2 bg-gray-100 dark:bg-gray-800 rounded">Note: <span class="italic text-gray-700 dark:text-gray-300">${review.user_comment}</span></p>` : ''}
+                    </div>
+                    <button data-modal-id="${modalId}" class="unmark-modal-btn text-xs font-semibold text-red-500 hover:text-red-700 dark:text-red-400 dark:hover:text-red-300 transition-colors flex-shrink-0">&times; </button>
+                </div>
+            `;
+            listContainer.appendChild(item);
+        });
+    }
+
+    /**
+     * Handles the visibility of the export footer if there are cards OR modals marked.
+     */
+    _updateExportFooterVisibility(improvementData, modalImprovementData) {
+        const footer = document.getElementById('improvement-export-footer');
+        if (!footer) return;
+        const hasCards = Object.keys(improvementData || {}).length > 0;
+        const hasModals = Object.keys(modalImprovementData || {}).length > 0;
+
+        if (hasCards || hasModals) {
+            footer.classList.remove('hidden');
+            footer.classList.add('flex');
+        } else {
+            footer.classList.add('hidden');
+            footer.classList.remove('flex');
+        }
     }
 
 
     /**
      * Handles the click on the Reset button to show the Modern Modal.
      */
-handleResetClick() {
-    console.log("DEBUG: [DeckDetailScreen] handleResetClick -> Attempting to show Warning Modal.");
+    handleResetClick() {
+        console.log("DEBUG: [DeckDetailScreen] handleResetClick -> Attempting to show Warning Modal.");
         this.modernModal.show({
             title: "Reset Deck Progress?",
             message: "Are you sure you want to reset all progress for this deck? This action cannot be undone and your learning history will be lost.",
@@ -306,108 +375,6 @@ handleResetClick() {
         document.getElementById('start-quiz-btn').addEventListener('click', () => this.onStartQuiz());
         document.getElementById('back-to-decks-btn').addEventListener('click', () => this.onGoBack());
 
-        
-        
-       document.getElementById('reset-deck-btn').addEventListener('click', () => this.handleResetClick());
-        document.getElementById('delete-deck-btn').addEventListener('click', () => this.onDeleteDeck(this.deck.id));
-
-        this.container.addEventListener('click', (event) => {
-            const restoreButton = event.target.closest('.restore-card-btn');
-            if (restoreButton) {
-                const cardId = restoreButton.dataset.cardId;
-                this.onUnignoreCard(cardId);
-            }
-            
-            const unmarkButton = event.target.closest('.unmark-card-btn');
-            if (unmarkButton) {
-                const cardId = unmarkButton.dataset.cardId;
-                this.onUnmarkCardForImprovement(cardId);
-            }
-        });
-
-        const exportBtn = document.getElementById('export-improve-btn');
-        if (exportBtn) {
-            exportBtn.addEventListener('click', () => this.onExportForImprovement());
-        }
-
-        // Listener for the new Progress Report Button
-        const reportBtn = document.getElementById('generate-report-btn');
-        if (reportBtn) {
-            reportBtn.addEventListener('click', () => this.handleGenerateReport());
-        }
-    }
-
-
-    /**
-     * Populates the list of cards marked for improvement.
-     * @param {Array} allCards The complete array of card objects from the deck.
-     * @param {object} improvementData An object where keys are cardIds.
-     */
-    _populateImprovementList(allCards, improvementData) {
-        const listContainer = document.getElementById('improvement-cards-list');
-        const badge = document.getElementById('improvement-count-badge');
-        const footer = document.getElementById('improvement-export-footer');
-        listContainer.innerHTML = '';
-
-        const markedCardIds = Object.keys(improvementData);
-        badge.textContent = markedCardIds.length;
-
-        // CRITICAL FIX: The footer (where the Clear button lives) must be visible 
-        // if there is ANY data in storage, even if the cards can't be found (Ghost Bug).
-        if (markedCardIds.length > 0) {
-            footer.classList.remove('hidden');
-            footer.classList.add('flex'); // Ensure flex display is active
-        } else {
-            footer.classList.add('hidden');
-            footer.classList.remove('flex');
-            listContainer.innerHTML = '<p class="text-gray-500 dark:text-gray-400 text-sm">No cards marked for improvement.</p>';
-            return;
-        }
-
-        const cardMap = new Map(allCards.map(c => [c.cardId, c]));
-        let validCardsFound = 0;
-
-        markedCardIds.forEach(cardId => {
-            const card = cardMap.get(cardId);
-            const review = improvementData[cardId];
-            
-            if (card) {
-                validCardsFound++;
-                const cardText = this._getCardDisplayText(card);
-                const item = document.createElement('div');
-                item.className = 'p-3 bg-gray-50 dark:bg-gray-700/50 rounded-md';
-                item.innerHTML = `
-                    <div class="flex justify-between items-start gap-4">
-                        <div class="flex-grow min-w-0">
-                            <p class="font-semibold text-gray-800 dark:text-gray-200 break-words">${cardText}</p>
-                            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Reasons: ${review.reasons.join(', ') || 'N/A'}</p>
-                            ${review.note ? `<p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Note: <span class="italic">${review.note}</span></p>` : ''}
-                        </div>
-                        <button data-card-id="${cardId}" class="unmark-card-btn text-xs font-semibold text-red-500 hover:text-red-700 dark:text-red-400 dark:hover:text-red-300 transition-colors flex-shrink-0">&times; </button>
-                    </div>
-                `;
-                listContainer.appendChild(item);
-            }
-        });
-
-        // If data exists in storage but no valid cards matched (The Phantom Bug), show a warning
-        if (markedCardIds.length > 0 && validCardsFound === 0) {
-            listContainer.innerHTML = `
-                <div class="p-3 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 rounded-md text-sm mb-2">
-                    <i class="fas fa-exclamation-triangle mr-2"></i>
-                    <strong>Data Sync Error:</strong> ${markedCardIds.length} cards are marked, but they don't match the current deck content. Use "Clear All" to fix this.
-                </div>
-            `;
-        }
-    }
-
-    /**
-     * Attaches all necessary event listeners to the component's elements.
-     */
-    setupEventListeners() {
-        document.getElementById('start-quiz-btn').addEventListener('click', () => this.onStartQuiz());
-        document.getElementById('back-to-decks-btn').addEventListener('click', () => this.onGoBack());
-
         document.getElementById('reset-deck-btn').addEventListener('click', () => {
             console.log("DEBUG: [DeckDetailScreen] Reset button clicked. Invoking handleResetClick for Modal.");
             this.handleResetClick();
@@ -429,6 +396,14 @@ handleResetClick() {
             if (unmarkButton) {
                 const cardId = unmarkButton.dataset.cardId;
                 this.onUnmarkCardForImprovement(cardId);
+            }
+
+            const unmarkModalButton = event.target.closest('.unmark-modal-btn');
+            if (unmarkModalButton) {
+                const modalId = unmarkModalButton.dataset.modalId;
+                if (this.onUnmarkModalImprovement) {
+                    this.onUnmarkModalImprovement(modalId);
+                }
             }
         });
 
