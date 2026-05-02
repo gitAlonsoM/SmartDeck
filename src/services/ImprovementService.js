@@ -165,8 +165,8 @@ This is the most critical rule. When a user request includes the reason \`add_an
 
 ### Step 1: Evaluate the User's Suggested Sentence
 Analyze the sentence provided in \`review_request.user_comment\`.
-
-En el campo user_comment (User Request) el usuario puede añadir una o más peticiones, distinguirlas y abordarlas individualmente. Por ejemplo un usuario puede solicitar verificar una nueva posible alternativa correcta, añadir un nuevo modal, u otra peticion y todo en la misma card. 
+En el campo user_comment (User Request) el usuario puede añadir una o más peticiones, distinguirlas y abordarlas individualmente. Por ejemplo un usuario puede solicitar verificar una nueva posible alternativa correcta, añadir un nuevo modal, u otra peticion y todo en la misma card.
+**CRITERIO DE EVALUACIÓN FLEXIBLE:** No busques traducciones directas, literales o 100% perfectas gramaticalmente. Si la oración en inglés propuesta por el usuario es una expresión común, natural, del día a día, y que transmite el mismo significado según el contexto (es decir, "sirve" y se "entiende" por gente común), entonces es VÁLIDA y DEBE ser aceptada como correcta. Se prioriza el inglés natural y práctico sobre la precisión lingüística estricta o experta.
 
 ### Step 2: If the Suggestion is CORRECT
 - **Action:** Add the new, correct sentence to the card's data (e.g., to the \`sideB\` array for flippable cards, or as a new \`option\` for multiple-choice).
@@ -293,12 +293,15 @@ ${glossaryJson}
 
 
 ## 🚨 10. CRITICAL: REQUIRED OUTPUT FORMAT & STRUCTURE
-Your final response MUST be structured into distinct parts.
+Your final response MUST be structured into distinct parts. Every single section header (Parts 1, 2, and 3) MUST appear in your output exactly as shown below, regardless of whether you have data for them or not. If a section does not apply, you MUST output the header followed by an empty JSON block or a "Not applicable" message.
 ⛔ **PROHIBITED:** Do NOT wrap the entire response in a single code block.
 
 ### Part 1: The Code Artifact (Cards)
 1. Header: \`## 1. Corrected Cards JSON\`
-2. JSON Block (\`\`\`json) with the array of corrected cards.
+2. JSON Block (\`\`\`json) with the array of corrected cards. If no cards were provided or modified, you MUST output an empty array: 
+\`\`\`json
+[]
+\`\`\`
 3. **MANDATORY CLEANUP:** You must STRIP/REMOVE the \`review_request\` object and all its contents (\`user_comment\`, \`reasons\`) from every card. The output must be pure card data.
 4. **IMMUTABLE STRUCTURE:**
    - **NO NEW FIELDS:** Do NOT add fields like \`content\` if the original card did not have them. Tu no cambias la estructura del JSON, solo cambias el contenido de este.
@@ -322,10 +325,14 @@ To avoid structural errors, you MUST process Part 1 using this mental workflow b
 - The output of Part 1 must be a valid JSON array where each object contains ONLY the functional fields of the card (\`cardId\`, \`sideA\`, \`sideB\`, \`note\`, etc.).
 
 
-### Part 2: Improved Modals JSON (Optional)
-**ONLY** include this section if you improved/redesigned a modal (Rule 7).
+### Part 2: Improved Modals JSON
 1. Header: \`## 2. Improved Modals JSON\`
-2. Create a **Single JSON Block** (\`\`\`json) containing an object where keys are the Modal IDs.
+2. **MANDATORY:** You MUST output this header even if no modals were improved.
+3. If no modals were improved, output an empty JSON block exactly like this:
+\`\`\`json
+{}
+\`\`\`
+4. If modals were improved, output a Single JSON Block (\`\`\`json) containing an object where keys are the Modal IDs.
    - **Example:**
    \`\`\`json
    {
@@ -351,10 +358,10 @@ To avoid structural errors, you MUST process Part 1 using this mental workflow b
   - **Action Taken:** "..."   IMPORTANTE!: DEBES añadir EN Action Taken, si la solicitud del usuario fue "Rejected, Accepted, others...". Y decir explicatamente que cambio has realizado en la card, ya sea, agregado una nueva sentencia, alguna nota explicativa, se agrego algun nuevo modal, se rechazo a causa de.., etc etc. Esto debe hacerse para cada card.
 
 #### C. 📢 Special User Notices
-Si el usuario en alguna 'nota' o 'apunte' de card, explicitamente solicito algo como "Avisar al usuario sobre ... " esas notas se añadiran en esta seccion para que el usuario las vea facilmente. Este espacio es para que el usuario que dejo la "Nota" o "apunte" pueda ver esos mensajes especiales en esta seccion. En caso de no encontrarse ningun mensaje especial, se pondra en esta seccion "No special messages to highlight".
+Si el usuario en alguna 'nota' o 'apunte' de card o modal, explicitamente solicito algo como "Avisar al usuario sobre ... ", o solicito aclaraciones que no aplica ponerlas en cards, o modales,  esas notas se añadiran en esta seccion para que el usuario las vea facilmente. Este espacio es para que el usuario que dejo la "Nota" o "apunte" pueda ver esos mensajes especiales en esta seccion. En caso de no encontrarse ningun mensaje especial, se pondra en esta seccion "No special messages to highlight". Solo en esta seccion puede hablarle directamente al usuario cualquier aclaracion. En las modificaciones de cards, modales, etc son siempre en tercera persona, no hablandole al usuario.
 
 #### D. 🛠️ Modal Improvement Requests
-The user has left the following specific notes to improve specific Modals. If a modal ID is listed below, dependiendo de lo solcitado, you MUST completely improve that modal in the "Improved Modals JSON" block based on this feedback, using the "Anti-Shit Protocol" formatting (colors, vertical structures, examples). Si el usuario pide aclaraciones del modal que no impliquen cambiarlo o mejorarlo, en ese caso no lo modificas el modal, y solo entregas el feedback via chat, pero si el usuario solicita cambios estructurales, cambio de ejemplos, etc cualquiier cambio dntro del modal significa crearlo denuvo, pero generalmente respectando el original, y solo añadiendo o modificando lo solicitado, la idea es mejorarlo, no crear todo desde cero. 
+The user has left the following specific notes to improve specific Modals. If a modal ID is listed below, dependiendo de lo solcitado, you MUST completely improve that modal in the "Improved Modals JSON" block based on this feedback, using the "Anti-Shit Protocol" formatting (colors, vertical structures, examples). Si el usuario pide aclaraciones del modal que no impliquen cambiarlo o mejorarlo, en ese caso no lo modificas el modal, y solo entregas el feedback via chat, pero si el usuario solicita cambios estructurales, cambio de ejemplos, etc cualquiier cambio dntro del modal significa crearlo denuvo, pero generalmente respectando el original, y solo añadiendo o modificando lo solicitado, la idea es mejorarlo, no crear todo desde cero. Si la lista de abajo está vacía, ignora este paso pero mantén el título de la sección.
 \`\`\`json
 ${JSON.stringify(modalImprovements, null, 2)}
 \`\`\`

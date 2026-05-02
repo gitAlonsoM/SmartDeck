@@ -84,10 +84,6 @@
         {
           "text": "I'm a bit busy at the moment.",
           "audioSrc": "public/data/audio/dummy/dummy_004_sideB_2.mp3"
-        },
-        {
-          "text": "I'm a little bit busy at the moment.",
-          "audioSrc": "public/data/audio/dummy/dummy_004_sideB_3.mp3"
         }
       ],
       "note": "**[216]**\n\n[Kind of] and [sort of] are very natural, conversational ways to say 'un poco' or 'más o menos'."
@@ -136,10 +132,6 @@
         {
           "text": "It lacks files; therefore, the installation cannot continue.",
           "audioSrc": "public/data/audio/dummy/dummy_006_sideB_3.mp3"
-        },
-        {
-          "text": "Files are missing; thus, the installation cannot continue.",
-          "audioSrc": "public/data/audio/dummy/dummy_006_sideB_4.mp3"
         }
       ],
       "note": "**[215]**\n\n\n\n~It lack files~ is incorrect because the third-person singular [it] requires the verb to end in [-s]."
@@ -170,7 +162,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_007_sideB_4.mp3"
         }
       ],
-      "note": "**[215]**\n\n\n\n~There was an error on the database.~ is not natural. Because a database is conceptualized as a container of data, you must use the preposition [in]."
+      "note": "**[215]**\n\n"
     },
     {
       "cardId": "dummy_008",
@@ -356,10 +348,6 @@
         {
           "text": "On restarting the router, we fixed the problem.",
           "audioSrc": "public/data/audio/dummy/dummy_015_sideB_3.mp3"
-        },
-        {
-          "text": "Restarting the router, we fixed the problem.",
-          "audioSrc": "public/data/audio/dummy/dummy_015_sideB_4.mp3"
         }
       ],
       "note": "**[164]**\n\n"
@@ -422,7 +410,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_018_sideB_2.mp3"
         }
       ],
-      "note": "**[164]**\n\n\n\n~When I recibied the alert, I checked the logs.~ is invalid due to a spelling mistake. The correct past tense is [received].\n\n~By receiving the alert, I checked the logs.~ is not grammatically logical in this context. The preposition [by] indicates the method used to achieve a result, but you don't check logs *by means of* receiving an alert. You check them *immediately after* the alert, which requires [upon] or [on]."
+      "note": "**[164]**\n\n"
     },
     {
       "cardId": "dummy_019",
@@ -450,307 +438,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_019_sideB_4.mp3"
         }
       ],
-      "note": "**[164]**\n\n\n\n~By opening the file, I realized it was corrupted.~ changes the nuance of the sentence. Using [by] focuses heavily on the *method* of discovery rather than the *moment in time*. The Spanish 'Al abrir' focuses on the sequence of time, making [upon] or [on] the most accurate translations."
-    },
-    {
-      "cardId": "dummy_020",
-      "cardType": "flippable",
-      "sideA": "Lo que quiero configurar es que esto haga eso.",
-      "sideB": [
-        {
-          "text": "What I want to set up is for this to do that.",
-          "audioSrc": "public/data/audio/dummy/dummy_020_sideB_0.mp3"
-        },
-        {
-          "text": "What I want to configure is for this to do that.",
-          "audioSrc": "public/data/audio/dummy/dummy_020_sideB_1.mp3"
-        },
-        {
-          "text": "What I am trying to set up is for it to do that.",
-          "audioSrc": "public/data/audio/dummy/dummy_020_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_021",
-      "cardType": "flippable",
-      "sideA": "Me estoy poniendo al dia.",
-      "sideB": [
-        {
-          "text": "I'm catching up.",
-          "audioSrc": "public/data/audio/dummy/dummy_021_sideB_0.mp3"
-        },
-        {
-          "text": "I'm getting up to speed.",
-          "audioSrc": "public/data/audio/dummy/dummy_021_sideB_1.mp3"
-        },
-        {
-          "text": "I'm getting on track.",
-          "audioSrc": "public/data/audio/dummy/dummy_021_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_022",
-      "cardType": "flippable",
-      "sideA": "No me hagas hablar",
-      "sideB": [
-        {
-          "text": "Don't make me talk.",
-          "audioSrc": "public/data/audio/dummy/dummy_022_sideB_0.mp3"
-        },
-        {
-          "text": "Don't get me started.",
-          "audioSrc": "public/data/audio/dummy/dummy_022_sideB_1.mp3"
-        },
-        {
-          "text": "Don't make me say it.",
-          "audioSrc": "public/data/audio/dummy/dummy_022_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_023",
-      "cardType": "flippable",
-      "sideA": "Describir la secuencia estandarizada de los pasos...",
-      "sideB": [
-        {
-          "text": "To outline the standardized sequence of steps...",
-          "audioSrc": "public/data/audio/dummy/dummy_023_sideB_0.mp3"
-        },
-        {
-          "text": "To describe the standard sequence of steps...",
-          "audioSrc": "public/data/audio/dummy/dummy_023_sideB_1.mp3"
-        },
-        {
-          "text": "To provide the standard step-by-step procedure...",
-          "audioSrc": "public/data/audio/dummy/dummy_023_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_024",
-      "cardType": "flippable",
-      "sideA": "He terminado el plan para el nuevo proyecto.",
-      "sideB": [
-        {
-          "text": "I have finished the outline for the new project.",
-          "audioSrc": "public/data/audio/dummy/dummy_024_sideB_0.mp3"
-        },
-        {
-          "text": "I have completed the plan for the new project.",
-          "audioSrc": "public/data/audio/dummy/dummy_024_sideB_1.mp3"
-        },
-        {
-          "text": "I have finalized the blueprint for the new project.",
-          "audioSrc": "public/data/audio/dummy/dummy_024_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_025",
-      "cardType": "flippable",
-      "sideA": "Si, el esta a mi lado.",
-      "sideB": [
-        {
-          "text": "Yes, he's next to me.",
-          "audioSrc": "public/data/audio/dummy/dummy_025_sideB_0.mp3"
-        },
-        {
-          "text": "Yes, he is right beside me.",
-          "audioSrc": "public/data/audio/dummy/dummy_025_sideB_1.mp3"
-        },
-        {
-          "text": "Yes, he's by my side.",
-          "audioSrc": "public/data/audio/dummy/dummy_025_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_026",
-      "cardType": "flippable",
-      "sideA": "Si, estamos en el mismo lugar.",
-      "sideB": [
-        {
-          "text": "Yes, we are in the same place.",
-          "audioSrc": "public/data/audio/dummy/dummy_026_sideB_0.mp3"
-        },
-        {
-          "text": "Yes, we are in the same location.",
-          "audioSrc": "public/data/audio/dummy/dummy_026_sideB_1.mp3"
-        },
-        {
-          "text": "Yes, we are at the same spot.",
-          "audioSrc": "public/data/audio/dummy/dummy_026_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_027",
-      "cardType": "flippable",
-      "sideA": "Tienes permitido traducir esto de español a inglés y viceversa.",
-      "sideB": [
-        {
-          "text": "You are allowed to translate this from Spanish to English and vice versa.",
-          "audioSrc": "public/data/audio/dummy/dummy_027_sideB_0.mp3"
-        },
-        {
-          "text": "You are permitted to translate this from Spanish to English and vice versa.",
-          "audioSrc": "public/data/audio/dummy/dummy_027_sideB_1.mp3"
-        },
-        {
-          "text": "You can translate this from Spanish to English and vice versa.",
-          "audioSrc": "public/data/audio/dummy/dummy_027_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_028",
-      "cardType": "flippable",
-      "sideA": "Estaba desactualizado ese codigo.",
-      "sideB": [
-        {
-          "text": "That code was outdated.",
-          "audioSrc": "public/data/audio/dummy/dummy_028_sideB_0.mp3"
-        },
-        {
-          "text": "That code was deprecated.",
-          "audioSrc": "public/data/audio/dummy/dummy_028_sideB_1.mp3"
-        },
-        {
-          "text": "That code was out of date.",
-          "audioSrc": "public/data/audio/dummy/dummy_028_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_029",
-      "cardType": "flippable",
-      "sideA": "En la mañana actualice el codigo.",
-      "sideB": [
-        {
-          "text": "I updated the code this morning.",
-          "audioSrc": "public/data/audio/dummy/dummy_029_sideB_0.mp3"
-        },
-        {
-          "text": "I pushed the code update this morning.",
-          "audioSrc": "public/data/audio/dummy/dummy_029_sideB_1.mp3"
-        },
-        {
-          "text": "I refreshed the code in the morning.",
-          "audioSrc": "public/data/audio/dummy/dummy_029_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_030",
-      "cardType": "flippable",
-      "sideA": "Perdona, se me pego (congelo) el programa.",
-      "sideB": [
-        {
-          "text": "Sorry, my program froze.",
-          "audioSrc": "public/data/audio/dummy/dummy_030_sideB_0.mp3"
-        },
-        {
-          "text": "My apologies, the program crashed on me.",
-          "audioSrc": "public/data/audio/dummy/dummy_030_sideB_1.mp3"
-        },
-        {
-          "text": "Sorry, the program got stuck.",
-          "audioSrc": "public/data/audio/dummy/dummy_030_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_031",
-      "cardType": "flippable",
-      "sideA": "Se necesita migrar todo el codigo.",
-      "sideB": [
-        {
-          "text": "All the code needs to be migrated.",
-          "audioSrc": "public/data/audio/dummy/dummy_031_sideB_0.mp3"
-        },
-        {
-          "text": "The entire codebase needs to be migrated.",
-          "audioSrc": "public/data/audio/dummy/dummy_031_sideB_1.mp3"
-        },
-        {
-          "text": "We need to migrate all the code.",
-          "audioSrc": "public/data/audio/dummy/dummy_031_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_032",
-      "cardType": "flippable",
-      "sideA": "Son los artefactos, los objetos, no son acciones.",
-      "sideB": [
-        {
-          "text": "They are the artifacts, the objects, not actions.",
-          "audioSrc": "public/data/audio/dummy/dummy_032_sideB_0.mp3"
-        },
-        {
-          "text": "They're artifacts, objects, not actions.",
-          "audioSrc": "public/data/audio/dummy/dummy_032_sideB_1.mp3"
-        },
-        {
-          "text": "Those are the artifacts and objects, not the actions.",
-          "audioSrc": "public/data/audio/dummy/dummy_032_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_033",
-      "cardType": "flippable",
-      "sideA": "Gracias por ser paciente conmigo.",
-      "sideB": [
-        {
-          "text": "Thank you for being patient with me.",
-          "audioSrc": "public/data/audio/dummy/dummy_033_sideB_0.mp3"
-        },
-        {
-          "text": "Thanks for your patience.",
-          "audioSrc": "public/data/audio/dummy/dummy_033_sideB_1.mp3"
-        },
-        {
-          "text": "I appreciate your patience with me.",
-          "audioSrc": "public/data/audio/dummy/dummy_033_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_034",
-      "cardType": "flippable",
-      "sideA": "Para ser honesto. Pienso que esto está fuera de mi alcance.",
-      "sideB": [
-        {
-          "text": "To be honest, I think this is out of my reach.",
-          "audioSrc": "public/data/audio/dummy/dummy_034_sideB_0.mp3"
-        },
-        {
-          "text": "To be honest, I feel this is beyond my scope.",
-          "audioSrc": "public/data/audio/dummy/dummy_034_sideB_1.mp3"
-        },
-        {
-          "text": "To be frank, I think this is out of my depth.",
-          "audioSrc": "public/data/audio/dummy/dummy_034_sideB_2.mp3"
-        }
-      ],
-      "note": null
+      "note": "**[164]**\n\n"
     }
   ]
 }
