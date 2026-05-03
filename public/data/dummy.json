@@ -751,6 +751,66 @@
         }
       ],
       "note": null
+    },
+    {
+      "cardId": "dummy_035",
+      "cardType": "flippable",
+      "sideA": "El hotel está cerca del aeropuerto.",
+      "sideB": [
+        {
+          "text": "The hotel is near the airport.",
+          "audioSrc": "public/data/audio/dummy/dummy_035_sideB_0.mp3"
+        },
+        {
+          "text": "The hotel is close to the airport.",
+          "audioSrc": "public/data/audio/dummy/dummy_035_sideB_1.mp3"
+        },
+        {
+          "text": "The hotel is situated near the airport.",
+          "audioSrc": "public/data/audio/dummy/dummy_035_sideB_2.mp3"
+        }
+      ],
+      "note": "**[217]**\n\nRemember that [near] doesn't use 'to', while [close] must be followed by [to]. ~Near to the airport~ is a common mistake."
+    },
+    {
+      "cardId": "dummy_036",
+      "cardType": "flippable",
+      "sideA": "Él se sentó a mi lado en la reunión.",
+      "sideB": [
+        {
+          "text": "He sat next to me in the meeting.",
+          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_0.mp3"
+        },
+        {
+          "text": "He sat beside me in the meeting.",
+          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_1.mp3"
+        },
+        {
+          "text": "He sat right next to me at the meeting.",
+          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_2.mp3"
+        }
+      ],
+      "note": "**[217]**\n\n[Next to] and [beside] indicate being directly adjacent. ~Beside to me~ is incorrect."
+    },
+    {
+      "cardId": "dummy_037",
+      "cardType": "flippable",
+      "sideA": "Quiero un escritorio junto a la ventana.",
+      "sideB": [
+        {
+          "text": "I want a desk by the window.",
+          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_0.mp3"
+        },
+        {
+          "text": "I'd like a desk by the window.",
+          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_1.mp3"
+        },
+        {
+          "text": "I want a desk right by the window.",
+          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_2.mp3"
+        }
+      ],
+      "note": "**[217]**\n\nUsing [by] is very natural to describe being right next to a window, a door, or a body of water."
     }
   ]
 }
