@@ -231,6 +231,409 @@
         }
       ],
       "note": "**[217]**\n\nUsing [by] is very natural to describe being right next to a window, a door, or a body of water."
+    },
+
+
+
+    {
+      "cardId": "dummy_038",
+      "cardType": "flippable",
+      "sideA": "Lo acabo de pegar en el chat.",
+      "sideB": [
+        {
+          "text": "I just pasted it in the chat.",
+          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_0.mp3"
+        },
+        {
+          "text": "I just dropped it in the chat.",
+          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_1.mp3"
+        },
+        {
+          "text": "I've just pasted it into the chat.",
+          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_039",
+      "cardType": "flippable",
+      "sideA": "Necesito la confirmacion de lo que pedi",
+      "sideB": [
+        {
+          "text": "I need confirmation of what I requested.",
+          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_0.mp3"
+        },
+        {
+          "text": "I need the confirmation for my request.",
+          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_1.mp3"
+        },
+        {
+          "text": "I need confirmation on what I asked for.",
+          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_040",
+      "cardType": "flippable",
+      "sideA": "¿Necesitan algo mas?, 'No por mi lado.'",
+      "sideB": [
+        {
+          "text": "Do you need anything else? 'Not on my end.'",
+          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_0.mp3"
+        },
+        {
+          "text": "Do you guys need anything else? 'Nothing on my side.'",
+          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_1.mp3"
+        },
+        {
+          "text": "Is there anything else you need? 'Not from my side.'",
+          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_041",
+      "cardType": "flippable",
+      "sideA": "Cree eso hace un largo tiempo atras, debo checkearlo",
+      "sideB": [
+        {
+          "text": "I created that a long time ago, I need to check it.",
+          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_0.mp3"
+        },
+        {
+          "text": "I set that up a while ago, I should look into it.",
+          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_1.mp3"
+        },
+        {
+          "text": "I made that a long time ago, I need to look it over.",
+          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_042",
+      "cardType": "flippable",
+      "sideA": "Ha sido un largo tiempo poniendonos al dia en la arquitectura",
+      "sideB": [
+        {
+          "text": "It's taken a long time to get up to speed on the architecture.",
+          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_0.mp3"
+        },
+        {
+          "text": "We've spent a long time catching up on the architecture.",
+          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_1.mp3"
+        },
+        {
+          "text": "It took a long time to get caught up with the architecture.",
+          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_043",
+      "cardType": "flippable",
+      "sideA": "…Y ellos hacen su trabajo optimizando los binarios para generar las APPs finales.",
+      "sideB": [
+        {
+          "text": "...And they do their job optimizing the binaries to generate the final apps.",
+          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_0.mp3"
+        },
+        {
+          "text": "...And they do their work optimizing the binaries to build the final apps.",
+          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_1.mp3"
+        },
+        {
+          "text": "...And they handle the optimization of the binaries to output the final apps.",
+          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_044",
+      "cardType": "flippable",
+      "sideA": "Los emails estan llegando al workflow test folder.",
+      "sideB": [
+        {
+          "text": "The emails are arriving in the workflow test folder.",
+          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_0.mp3"
+        },
+        {
+          "text": "The emails are going to the workflow test folder.",
+          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_1.mp3"
+        },
+        {
+          "text": "The emails are landing in the workflow test folder.",
+          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_045",
+      "cardType": "flippable",
+      "sideA": "El codigo es el mismo, pero estamos apuntando a un lado diferente",
+      "sideB": [
+        {
+          "text": "The code is the same, but we are pointing to a different place.",
+          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_0.mp3"
+        },
+        {
+          "text": "The code is the same, but we're pointing somewhere else.",
+          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_1.mp3"
+        },
+        {
+          "text": "It's the same code, but we are pointing to a different environment.",
+          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_046",
+      "cardType": "flippable",
+      "sideA": "Lo normal seria que mientras esta en produccion, le agregUemos esta feature.",
+      "sideB": [
+        {
+          "text": "Normally, while it is in production, we would add this feature.",
+          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_0.mp3"
+        },
+        {
+          "text": "The usual thing would be to add this feature while it's in production.",
+          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_1.mp3"
+        },
+        {
+          "text": "Ideally, we would add this feature while it is in production.",
+          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_047",
+      "cardType": "flippable",
+      "sideA": "Tenemos que reestructurar la infraestructura.",
+      "sideB": [
+        {
+          "text": "We have to restructure the infrastructure.",
+          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_0.mp3"
+        },
+        {
+          "text": "We need to rebuild the infrastructure.",
+          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_1.mp3"
+        },
+        {
+          "text": "We have to reorganize the infrastructure.",
+          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_048",
+      "cardType": "flippable",
+      "sideA": "Ha sido un largo tiempo poniendonos al dia en la infraestructura.",
+      "sideB": [
+        {
+          "text": "It's taken a long time to get up to speed on the infrastructure.",
+          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_0.mp3"
+        },
+        {
+          "text": "We've spent a long time catching up on the infrastructure.",
+          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_1.mp3"
+        },
+        {
+          "text": "It took a long time to get caught up with the infrastructure.",
+          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_049",
+      "cardType": "flippable",
+      "sideA": "Le pregunte a Jeff acerca de eso, estamos esperando la respuesta de el.",
+      "sideB": [
+        {
+          "text": "I asked Jeff about that, we are waiting for his reply.",
+          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_0.mp3"
+        },
+        {
+          "text": "I asked Jeff about it, we're waiting for his response.",
+          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_1.mp3"
+        },
+        {
+          "text": "I checked with Jeff about that, we're waiting to hear back from him.",
+          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_050",
+      "cardType": "flippable",
+      "sideA": "Produccion en la base de datos suele cashear las busquedas y ser mas rapida.",
+      "sideB": [
+        {
+          "text": "The production database usually caches queries and is faster.",
+          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_0.mp3"
+        },
+        {
+          "text": "Production in the database tends to cache the searches and be faster.",
+          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_1.mp3"
+        },
+        {
+          "text": "The database in production usually caches the searches, making it faster.",
+          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_051",
+      "cardType": "flippable",
+      "sideA": "Ellas pueden ser deployadas al mismo tiempo, no dependen del uno del otro.",
+      "sideB": [
+        {
+          "text": "They can be deployed at the same time, they don't depend on each other.",
+          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_0.mp3"
+        },
+        {
+          "text": "They can be deployed simultaneously, they are not interdependent.",
+          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_1.mp3"
+        },
+        {
+          "text": "They can be rolled out at the same time, they are independent of each other.",
+          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_052",
+      "cardType": "flippable",
+      "sideA": "Necesitaría verlo más a fondo el codigo y sus dependencias para tener una respuesta.",
+      "sideB": [
+        {
+          "text": "I would need to look deeper into the code and its dependencies to give you an answer.",
+          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_0.mp3"
+        },
+        {
+          "text": "I'd need to take a closer look at the code and its dependencies to have an answer.",
+          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_1.mp3"
+        },
+        {
+          "text": "I need to review the code and its dependencies more thoroughly to provide an answer.",
+          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_053",
+      "cardType": "flippable",
+      "sideA": "No hemos checkeado ese problema aun",
+      "sideB": [
+        {
+          "text": "We haven't checked that issue yet.",
+          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_0.mp3"
+        },
+        {
+          "text": "We haven't looked into that problem yet.",
+          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_1.mp3"
+        },
+        {
+          "text": "We haven't investigated that issue yet.",
+          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_054",
+      "cardType": "flippable",
+      "sideA": "Estoy afuera de la VPN, deja conectarme.",
+      "sideB": [
+        {
+          "text": "I'm off the VPN, let me connect.",
+          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_0.mp3"
+        },
+        {
+          "text": "I am not on the VPN, give me a second to connect.",
+          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_1.mp3"
+        },
+        {
+          "text": "I'm disconnected from the VPN, let me log in.",
+          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_055",
+      "cardType": "flippable",
+      "sideA": "Es un poco redundante. no lo creo necesario.",
+      "sideB": [
+        {
+          "text": "It's a bit redundant. I don't think it's necessary.",
+          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_0.mp3"
+        },
+        {
+          "text": "It's kind of redundant. I don't consider it necessary.",
+          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_1.mp3"
+        },
+        {
+          "text": "It is a little redundant. I don't feel it's needed.",
+          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_056",
+      "cardType": "flippable",
+      "sideA": "Podria causar problemas, por eso lo desactive.",
+      "sideB": [
+        {
+          "text": "It could cause problems, that's why I disabled it.",
+          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_0.mp3"
+        },
+        {
+          "text": "It might cause issues, so I turned it off.",
+          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_1.mp3"
+        },
+        {
+          "text": "It could lead to problems, which is why I deactivated it.",
+          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_057",
+      "cardType": "flippable",
+      "sideA": "Desconozco sobre el ciclo de vida de una app en las stores.",
+      "sideB": [
+        {
+          "text": "I don't know about the lifecycle of an app in the stores.",
+          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_0.mp3"
+        },
+        {
+          "text": "I'm unfamiliar with the app lifecycle in the stores.",
+          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_1.mp3"
+        },
+        {
+          "text": "I am not aware of the lifecycle of an app on the stores.",
+          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_2.mp3"
+        }
+      ],
+      "note": null
     }
   ]
 }
