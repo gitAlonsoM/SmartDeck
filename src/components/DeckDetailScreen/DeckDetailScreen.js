@@ -361,7 +361,9 @@ class DeckDetailScreen {
 
         // Copy to Clipboard
         const jsonString = JSON.stringify(report, null, 2);
-        navigator.clipboard.writeText(jsonString).then(() => {
+        const migrationInstruction = "MIGRATION INSTRUCTION FOR AI:\nWhen using this 'Progress Report' to execute a card migration with 'merge_decks_smart.py', you must consider moving ONLY the cards that were mastered in 1 attempt AND are NOT present in the 'cardsMarkedForImprovement' array. All cards that took 2 or more attempts, OR are marked for improvement, or any new cards not present in this report MUST remain in the deck and must not be moved.";
+        const finalClipboardText = `PROGRESS REPORT: \n\n${jsonString}\n\n${migrationInstruction}`;
+       navigator.clipboard.writeText(finalClipboardText).then(() => {
 
             console.log("VERIFY: Report copied to clipboard.");
             this.modernModal.show({

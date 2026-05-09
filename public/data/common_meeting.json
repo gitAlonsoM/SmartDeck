@@ -28119,6 +28119,614 @@
         }
       ],
       "note": "**[214]**\n\nUsing \"in\" is completely correct here because [order] functions as a noun describing a condition."
+    },
+    {
+      "cardId": "mi_1247",
+      "cardType": "flippable",
+      "sideA": "¿Qué tipo de error es este?",
+      "sideB": [
+        {
+          "text": "What kind of error is this?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1247_sideB_0.mp3"
+        },
+        {
+          "text": "What sort of error is this?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1247_sideB_1.mp3"
+        },
+        {
+          "text": "What type of error is this?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1247_sideB_2.mp3"
+        }
+      ],
+      "note": "**[216]**\n\n"
+    },
+    {
+      "cardId": "mi_1248",
+      "cardType": "flippable",
+      "sideA": "Siempre tenemos este tipo de problemas.",
+      "sideB": [
+        {
+          "text": "We always have these kinds of problems.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1248_sideB_0.mp3"
+        },
+        {
+          "text": "We always face these types of issues.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1248_sideB_1.mp3"
+        },
+        {
+          "text": "We always get these sorts of problems.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1248_sideB_2.mp3"
+        }
+      ],
+      "note": "**[216]**\n\nWhile in Spanish it is perfectly normal to mix singular and plural (like \"este tipo de problemas\"), English requires strict number agreement. If the final noun is plural, the entire phrase must be plural: [these kinds of problems]. ~This kind of problems~ is incorrect."
+    },
+    {
+      "cardId": "mi_1249",
+      "cardType": "flippable",
+      "sideA": "Por favor, envíame los registros cuando puedas.",
+      "sideB": [
+        {
+          "text": "Kindly send me the logs when you can.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1249_sideB_0.mp3"
+        },
+        {
+          "text": "Please send me the logs when you get a chance.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1249_sideB_1.mp3"
+        },
+        {
+          "text": "Kindly forward the logs whenever you can.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1249_sideB_2.mp3"
+        },
+        {
+          "text": "Please send me the logs when you can.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1249_sideB_3.mp3"
+        }
+      ],
+      "note": "**[216]**\n\n[Kindly] is a very common and professional alternative to 'please' in corporate emails."
+    },
+    {
+      "cardId": "mi_1250",
+      "cardType": "flippable",
+      "sideA": "Estoy un poco ocupado ahora mismo.",
+      "sideB": [
+        {
+          "text": "I'm kind of busy right now.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1250_sideB_0.mp3"
+        },
+        {
+          "text": "I'm sort of busy right now.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1250_sideB_1.mp3"
+        },
+        {
+          "text": "I'm a bit busy at the moment.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1250_sideB_2.mp3"
+        },
+        {
+          "text": "I'm a little bit busy at the moment.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1250_sideB_3.mp3"
+        }
+      ],
+      "note": "**[216]**\n\n[Kind of] and [sort of] are very natural, conversational ways to say 'un poco' or 'más o menos'."
+    },
+    {
+      "cardId": "mi_1251",
+      "cardType": "flippable",
+      "sideA": "El servidor falló, así que lo reinicié.",
+      "sideB": [
+        {
+          "text": "The server crashed, so I restarted it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1251_sideB_0.mp3"
+        },
+        {
+          "text": "The server went down, so I rebooted it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1251_sideB_1.mp3"
+        },
+        {
+          "text": "The server failed, so I restarted it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1251_sideB_2.mp3"
+        },
+        {
+          "text": "The server crashed, so I had to restart it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1251_sideB_3.mp3"
+        }
+      ],
+      "note": "**[215]**\n\n"
+    },
+    {
+      "cardId": "mi_1252",
+      "cardType": "flippable",
+      "sideA": "Faltan archivos; por lo tanto, la instalación no puede continuar.",
+      "sideB": [
+        {
+          "text": "Files are missing; therefore, the installation cannot continue.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1252_sideB_0.mp3"
+        },
+        {
+          "text": "Some files are missing; therefore, the setup can't proceed.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1252_sideB_1.mp3"
+        },
+        {
+          "text": "Files are missing, so the installation cannot continue.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1252_sideB_2.mp3"
+        },
+        {
+          "text": "It lacks files; therefore, the installation cannot continue.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1252_sideB_3.mp3"
+        },
+        {
+          "text": "Files are missing; thus, the installation cannot continue.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1252_sideB_4.mp3"
+        }
+      ],
+      "note": "**[215]**\n\n\n\n~It lack files~ is incorrect because the third-person singular [it] requires the verb to end in [-s]."
+    },
+    {
+      "cardId": "mi_1253",
+      "cardType": "flippable",
+      "sideA": "Había un error en la base de datos. Como resultado, perdimos algunos registros.",
+      "sideB": [
+        {
+          "text": "There was a database error. As a result, we lost some records.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1253_sideB_0.mp3"
+        },
+        {
+          "text": "There was a bug in the database; as a result, we lost a few logs.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1253_sideB_1.mp3"
+        },
+        {
+          "text": "We had a DB error, and as a result, some records were lost.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1253_sideB_2.mp3"
+        },
+        {
+          "text": "It was a database error. As a result, we lost some records.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1253_sideB_3.mp3"
+        },
+        {
+          "text": "There was an error in the database. As a result, we lost some records.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1253_sideB_4.mp3"
+        }
+      ],
+      "note": "**[215]**\n\n\n\n~There was an error on the database.~ is not natural. Because a database is conceptualized as a container of data, you must use the preposition [in]."
+    },
+    {
+      "cardId": "mi_1254",
+      "cardType": "flippable",
+      "sideA": "El cliente no pagó; en consecuencia, su cuenta fue suspendida.",
+      "sideB": [
+        {
+          "text": "The client didn't pay; consequently, his account was suspended.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1254_sideB_0.mp3"
+        },
+        {
+          "text": "The customer failed to pay; consequently, their account was locked.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1254_sideB_1.mp3"
+        },
+        {
+          "text": "They didn't pay, so consequently, the account got suspended.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1254_sideB_2.mp3"
+        },
+        {
+          "text": "The client didn't pay; therefore, his account was suspended.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1254_sideB_3.mp3"
+        },
+        {
+          "text": "The client didn't pay; thus, his account was suspended.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1254_sideB_4.mp3"
+        },
+        {
+          "text": "The client didn't pay; so, his account was suspended.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1254_sideB_5.mp3"
+        }
+      ],
+      "note": "**[215]**\n\n"
+    },
+    {
+      "cardId": "mi_1255",
+      "cardType": "flippable",
+      "sideA": "No tenemos más presupuesto; por ende, debemos cancelar la función.",
+      "sideB": [
+        {
+          "text": "We have no more budget; thus, we must cancel the feature.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1255_sideB_0.mp3"
+        },
+        {
+          "text": "We are out of budget; therefore, we have to cancel the feature.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1255_sideB_1.mp3"
+        },
+        {
+          "text": "We don't have more budget, so we must drop the feature.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1255_sideB_2.mp3"
+        }
+      ],
+      "note": "**[215]**\n\n"
+    },
+    {
+      "cardId": "mi_1256",
+      "cardType": "flippable",
+      "sideA": "¿Terminaste tus tareas, y por eso te vas temprano?",
+      "sideB": [
+        {
+          "text": "Did you finish your tasks, and so you're leaving early?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1256_sideB_0.mp3"
+        },
+        {
+          "text": "You finished your tasks, therefore you are leaving early?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1256_sideB_1.mp3"
+        },
+        {
+          "text": "Are you leaving early because you finished your tasks?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1256_sideB_2.mp3"
+        },
+        {
+          "text": "Did you finish your tasks, and that's why you're leaving early?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1256_sideB_3.mp3"
+        }
+      ],
+      "note": "**[215]**\n\n"
+    },
+    {
+      "cardId": "mi_1257",
+      "cardType": "flippable",
+      "sideA": "Ese tipo de errores son muy difíciles de encontrar.",
+      "sideB": [
+        {
+          "text": "Those kinds of errors are very hard to find.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1257_sideB_0.mp3"
+        },
+        {
+          "text": "Those types of bugs are very difficult to find.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1257_sideB_1.mp3"
+        },
+        {
+          "text": "Those sorts of errors are really hard to track down.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1257_sideB_2.mp3"
+        }
+      ],
+      "note": "**[216]**\n\nJust like with 'this/these', the Spanish structure \"ese tipo de errores\" mixes singular and plural. In English, you must match the plural \"errors\" with plural demonstratives and nouns: [those kinds of errors]. ~That kind of errors~ is unnatural."
+    },
+    {
+      "cardId": "mi_1258",
+      "cardType": "flippable",
+      "sideA": "Tratamos de evitar este tipo de reuniones.",
+      "sideB": [
+        {
+          "text": "We try to avoid these kinds of meetings.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1258_sideB_0.mp3"
+        },
+        {
+          "text": "We try to avoid these types of meetings.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1258_sideB_1.mp3"
+        },
+        {
+          "text": "We try avoiding these sorts of meetings.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1258_sideB_2.mp3"
+        }
+      ],
+      "note": "**[216]**\n\nSpanish allows mixing the singular \"este tipo\" with the plural \"reuniones\". English demands full plural agreement: [these types of meetings]. Mixing them as ~this type of meetings~ is a common grammar mistake."
+    },
+    {
+      "cardId": "mi_1259",
+      "cardType": "flippable",
+      "sideA": "Mientras leía el correo, noté un error.",
+      "sideB": [
+        {
+          "text": "While reading the email, I noticed an error.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1259_sideB_0.mp3"
+        },
+        {
+          "text": "While reading the email, I spotted a mistake.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1259_sideB_1.mp3"
+        },
+        {
+          "text": "While checking the email, I noticed a mistake.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1259_sideB_2.mp3"
+        },
+        {
+          "text": "While I was reading the email, I noticed an error.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1259_sideB_3.mp3"
+        }
+      ],
+      "note": "**[164]**\n\n"
+    },
+    {
+      "cardId": "mi_1260",
+      "cardType": "flippable",
+      "sideA": "Al terminar la descarga, cerré la ventana.",
+      "sideB": [
+        {
+          "text": "Upon finishing the download, I closed the window.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1260_sideB_0.mp3"
+        },
+        {
+          "text": "On completing the download, I closed the window.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1260_sideB_1.mp3"
+        },
+        {
+          "text": "Upon completing the download, I closed the window.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1260_sideB_2.mp3"
+        },
+        {
+          "text": "When the download finished, I closed the window.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1260_sideB_3.mp3"
+        }
+      ],
+      "note": "**[164]**\n\n\n\n~By finishing the download~ is not valid because [by] describes the method used to achieve a result, whereas this sentence describes a sequence of events in time."
+    },
+    {
+      "cardId": "mi_1261",
+      "cardType": "flippable",
+      "sideA": "Al reiniciar el router, solucionamos el problema.",
+      "sideB": [
+        {
+          "text": "By restarting the router, we fixed the problem.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1261_sideB_0.mp3"
+        },
+        {
+          "text": "By rebooting the router, we solved the issue.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1261_sideB_1.mp3"
+        },
+        {
+          "text": "By resetting the router, we fixed the issue.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1261_sideB_2.mp3"
+        },
+        {
+          "text": "On restarting the router, we fixed the problem.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1261_sideB_3.mp3"
+        },
+        {
+          "text": "Restarting the router, we fixed the problem.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1261_sideB_4.mp3"
+        }
+      ],
+      "note": "**[164]**\n\n"
+    },
+    {
+      "cardId": "mi_1262",
+      "cardType": "flippable",
+      "sideA": "Antes de enviar el código, revisé las variables.",
+      "sideB": [
+        {
+          "text": "Before pushing the code, I checked the variables.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1262_sideB_0.mp3"
+        },
+        {
+          "text": "Before sending the code, I reviewed the variables.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1262_sideB_1.mp3"
+        },
+        {
+          "text": "Before committing the code, I checked the variables.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1262_sideB_2.mp3"
+        }
+      ],
+      "note": "**[164]**\n\n"
+    },
+    {
+      "cardId": "mi_1263",
+      "cardType": "flippable",
+      "sideA": "Después de instalar la actualización, la app falló.",
+      "sideB": [
+        {
+          "text": "After installing the update, the app crashed.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1263_sideB_0.mp3"
+        },
+        {
+          "text": "After applying the update, the app failed.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1263_sideB_1.mp3"
+        },
+        {
+          "text": "After installing the patch, the app crashed.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1263_sideB_2.mp3"
+        }
+      ],
+      "note": "**[164]**\n\n"
+    },
+    {
+      "cardId": "mi_1264",
+      "cardType": "flippable",
+      "sideA": "Al abrir el archivo, noté que estaba corrupto.",
+      "sideB": [
+        {
+          "text": "Upon opening the file, I noticed it was corrupted.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1264_sideB_0.mp3"
+        },
+        {
+          "text": "On opening the file, I realized it was corrupted.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1264_sideB_1.mp3"
+        },
+        {
+          "text": "Upon opening the document, I saw it was corrupted.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1264_sideB_2.mp3"
+        },
+        {
+          "text": "Opening the file, I realized it was corrupted.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1264_sideB_3.mp3"
+        },
+        {
+          "text": "When I opened the file, I realized it was corrupted.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1264_sideB_4.mp3"
+        }
+      ],
+      "note": "**[164]**\n\n\n\n~By opening the file, I realized it was corrupted.~ changes the nuance of the sentence. Using [by] focuses heavily on the *method* of discovery rather than the *moment in time*. The Spanish 'Al abrir' focuses on the sequence of time, making [upon] or [on] the most accurate translations."
+    },
+    {
+      "cardId": "mi_1265",
+      "cardType": "flippable",
+      "sideA": "Me estoy poniendo al dia.",
+      "sideB": [
+        {
+          "text": "I'm catching up.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1265_sideB_0.mp3"
+        },
+        {
+          "text": "I'm getting up to speed.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1265_sideB_1.mp3"
+        },
+        {
+          "text": "I'm getting on track.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1265_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1266",
+      "cardType": "flippable",
+      "sideA": "No me hagas hablar",
+      "sideB": [
+        {
+          "text": "Don't make me talk.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1266_sideB_0.mp3"
+        },
+        {
+          "text": "Don't get me started.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1266_sideB_1.mp3"
+        },
+        {
+          "text": "Don't make me say it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1266_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1267",
+      "cardType": "flippable",
+      "sideA": "Describir la secuencia estandarizada de los pasos...",
+      "sideB": [
+        {
+          "text": "To outline the standardized sequence of steps...",
+          "audioSrc": "public/data/audio/common_meeting/mi_1267_sideB_0.mp3"
+        },
+        {
+          "text": "To describe the standard sequence of steps...",
+          "audioSrc": "public/data/audio/common_meeting/mi_1267_sideB_1.mp3"
+        },
+        {
+          "text": "To provide the standard step-by-step procedure...",
+          "audioSrc": "public/data/audio/common_meeting/mi_1267_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1268",
+      "cardType": "flippable",
+      "sideA": "He terminado el plan para el nuevo proyecto.",
+      "sideB": [
+        {
+          "text": "I have finished the outline for the new project.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1268_sideB_0.mp3"
+        },
+        {
+          "text": "I have completed the plan for the new project.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1268_sideB_1.mp3"
+        },
+        {
+          "text": "I have finalized the blueprint for the new project.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1268_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1269",
+      "cardType": "flippable",
+      "sideA": "Si, estamos en el mismo lugar.",
+      "sideB": [
+        {
+          "text": "Yes, we are in the same place.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1269_sideB_0.mp3"
+        },
+        {
+          "text": "Yes, we are in the same location.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1269_sideB_1.mp3"
+        },
+        {
+          "text": "Yes, we are at the same spot.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1269_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1270",
+      "cardType": "flippable",
+      "sideA": "Se necesita migrar todo el codigo.",
+      "sideB": [
+        {
+          "text": "All the code needs to be migrated.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1270_sideB_0.mp3"
+        },
+        {
+          "text": "The entire codebase needs to be migrated.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1270_sideB_1.mp3"
+        },
+        {
+          "text": "We need to migrate all the code.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1270_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1271",
+      "cardType": "flippable",
+      "sideA": "Son los artefactos, los objetos, no son acciones.",
+      "sideB": [
+        {
+          "text": "They are the artifacts, the objects, not actions.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1271_sideB_0.mp3"
+        },
+        {
+          "text": "They're artifacts, objects, not actions.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1271_sideB_1.mp3"
+        },
+        {
+          "text": "Those are the artifacts and objects, not the actions.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1271_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1272",
+      "cardType": "flippable",
+      "sideA": "Para ser honesto. Pienso que esto está fuera de mi alcance.",
+      "sideB": [
+        {
+          "text": "To be honest, I think this is out of my reach.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1272_sideB_0.mp3"
+        },
+        {
+          "text": "To be honest, I feel this is beyond my scope.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1272_sideB_1.mp3"
+        },
+        {
+          "text": "To be frank, I think this is out of my depth.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1272_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1273",
+      "cardType": "flippable",
+      "sideA": "El hotel está cerca del aeropuerto.",
+      "sideB": [
+        {
+          "text": "The hotel is near the airport.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1273_sideB_0.mp3"
+        },
+        {
+          "text": "The hotel is close to the airport.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1273_sideB_1.mp3"
+        },
+        {
+          "text": "The hotel is situated near the airport.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1273_sideB_2.mp3"
+        }
+      ],
+      "note": "**[217]**\n\nRemember that [near] doesn't use 'to', while [close] must be followed by [to]. ~Near to the airport~ is a common mistake."
     }
   ]
 }
