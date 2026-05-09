@@ -321,12 +321,17 @@ class DeckDetailScreen {
         console.log(`DEBUG: [DeckDetailScreen] handleGenerateReport -> Generating report for ${this.deck.id}`);
         const metrics = StorageService.loadDeckMetrics(this.deck.id);
         
+        // Fetch active improvement data and extract only the keys (cardIds)
+        const improvementData = StorageService.loadImprovementData(this.deck.id);
+        const markedCardIds = Object.keys(improvementData || {});
+
         // Initialize Report Structure
         const report = {
             deckName: this.deck.name,
             deckPath: `public/data/${this.deck.fileName || 'unknown.json'}`, // Assumes fileName is patched in App.js loadDecks
             generatedAt: new Date().toISOString(),
             totalCards: this.deck.cards.length,
+            cardsMarkedForImprovement: markedCardIds, // Adds the array of marked card IDs
             masteryByAttempts: {
                 "1_attempt": [],
                 "2_attempts": [],
@@ -351,6 +356,8 @@ class DeckDetailScreen {
                 else report.masteryByAttempts["6+_attempts"].push(cardId);
             }
         });
+
+        console.log("VERIFY: Active improvement card IDs included in report:", markedCardIds);
 
         // Copy to Clipboard
         const jsonString = JSON.stringify(report, null, 2);
