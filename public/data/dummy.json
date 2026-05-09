@@ -634,6 +634,206 @@
         }
       ],
       "note": null
+    },
+    {
+      "cardId": "dummy_058",
+      "cardType": "flippable",
+      "sideA": "Ella va al supermercado todos los sábados en la mañana.",
+      "sideB": [
+        {
+          "text": "She goes to the supermarket every Saturday morning.",
+          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_0.mp3"
+        },
+        {
+          "text": "She heads to the supermarket every Saturday morning.",
+          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_1.mp3"
+        },
+        {
+          "text": "She makes her way to the supermarket every Saturday morning.",
+          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_2.mp3"
+        }
+      ],
+      "note": "**[53]**\n\n"
+    },
+    {
+      "cardId": "dummy_059",
+      "cardType": "flippable",
+      "sideA": "Él viene a la oficina a las 8 AM en punto.",
+      "sideB": [
+        {
+          "text": "He comes to the office at 8 AM sharp.",
+          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_0.mp3"
+        },
+        {
+          "text": "He arrives at the office at 8 AM sharp.",
+          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_1.mp3"
+        },
+        {
+          "text": "He gets to the office at exactly 8 AM.",
+          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_2.mp3"
+        }
+      ],
+      "note": "**[53]**\n\n"
+    },
+    {
+      "cardId": "dummy_060",
+      "cardType": "flippable",
+      "sideA": "Ellos caminan a la escuela en lugar de tomar el autobús.",
+      "sideB": [
+        {
+          "text": "They walk to school instead of taking the bus.",
+          "audioSrc": "public/data/audio/dummy/dummy_060_sideB_0.mp3"
+        },
+        {
+          "text": "They go to school on foot rather than taking the bus.",
+          "audioSrc": "public/data/audio/dummy/dummy_060_sideB_1.mp3"
+        },
+        {
+          "text": "They walk to school rather than taking the bus.",
+          "audioSrc": "public/data/audio/dummy/dummy_060_sideB_2.mp3"
+        }
+      ],
+      "note": "**[53]**\n\n"
+    },
+    {
+      "cardId": "dummy_061",
+      "cardType": "flippable",
+      "sideA": "Mi padre conduce al trabajo diariamente.",
+      "sideB": [
+        {
+          "text": "My father drives to work daily.",
+          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_0.mp3"
+        },
+        {
+          "text": "My dad drives to work every day.",
+          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_1.mp3"
+        },
+        {
+          "text": "My father drives to his job on a daily basis.",
+          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_2.mp3"
+        }
+      ],
+      "note": "**[53]**\n\n"
+    },
+    {
+      "cardId": "dummy_062",
+      "cardType": "flippable",
+      "sideA": "El estudiante regresa a la universidad después de las vacaciones.",
+      "sideB": [
+        {
+          "text": "The student returns to the university after vacation.",
+          "audioSrc": "public/data/audio/dummy/dummy_062_sideB_0.mp3"
+        },
+        {
+          "text": "The student goes back to the university after the holidays.",
+          "audioSrc": "public/data/audio/dummy/dummy_062_sideB_1.mp3"
+        },
+        {
+          "text": "The student heads back to the university after vacation.",
+          "audioSrc": "public/data/audio/dummy/dummy_062_sideB_2.mp3"
+        }
+      ],
+      "note": "**[53]**\n\n"
+    },
+    {
+      "cardId": "dummy_063",
+      "cardType": "flippable",
+      "sideA": "La familia se muda a una casa más grande en los suburbios.",
+      "sideB": [
+        {
+          "text": "The family moves to a larger house in the suburbs.",
+          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_0.mp3"
+        },
+        {
+          "text": "The family is moving to a bigger house in the suburbs.",
+          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_1.mp3"
+        },
+        {
+          "text": "The family relocates to a larger house in the suburbs.",
+          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_2.mp3"
+        }
+      ],
+      "note": "**[53]**\n\n"
+    },
+    {
+      "cardId": "dummy_064",
+      "cardType": "flippable",
+      "sideA": "Ella entra al salón cinco minutos tarde.",
+      "sideB": [
+        {
+          "text": "She enters the classroom five minutes late.",
+          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_0.mp3"
+        },
+        {
+          "text": "She walks into the classroom five minutes late.",
+          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_1.mp3"
+        },
+        {
+          "text": "She comes into the classroom five minutes late.",
+          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_2.mp3"
+        }
+      ],
+      "note": "**[53]**\n\n"
+    },
+    {
+      "cardId": "dummy_065",
+      "cardType": "flippable",
+      "sideA": "Ellos llegan al destino después de tres horas.",
+      "sideB": [
+        {
+          "text": "They reach the destination after three hours.",
+          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_0.mp3"
+        },
+        {
+          "text": "They reach their destination after three hours of travel.",
+          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_1.mp3"
+        },
+        {
+          "text": "They arrive at the destination after three hours.",
+          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_2.mp3"
+        }
+      ],
+      "note": "**[53]**\n\n"
+    },
+    {
+      "cardId": "dummy_066",
+      "cardType": "flippable",
+      "sideA": "El auto se acerca a la intersección lentamente.",
+      "sideB": [
+        {
+          "text": "The car approaches the intersection slowly.",
+          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_0.mp3"
+        },
+        {
+          "text": "The car nears the intersection slowly.",
+          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_1.mp3"
+        },
+        {
+          "text": "The car slowly approaches the intersection.",
+          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_2.mp3"
+        }
+      ],
+      "note": "**[53]**\n\n"
+    },
+    {
+      "cardId": "dummy_067",
+      "cardType": "flippable",
+      "sideA": "El peatón cruza la calle con cuidado.",
+      "sideB": [
+        {
+          "text": "The pedestrian crosses the street carefully.",
+          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_0.mp3"
+        },
+        {
+          "text": "The pedestrian walks across the street carefully.",
+          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_1.mp3"
+        },
+        {
+          "text": "The pedestrian crosses the road with care.",
+          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_2.mp3"
+        }
+      ],
+      "note": "**[53]**\n\n"
     }
   ]
 }
