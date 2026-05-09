@@ -470,7 +470,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_020_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~What I want to set up is this to do that~ and ~What I want to set up is to do that~ are not valid. When expressing that you want an object or system to perform an action, you must use the structure [for] + [object] + [to do]. The correct form is [for this to do that]."
+      "note": null
     },
     {
       "cardId": "dummy_021",
@@ -568,13 +568,9 @@
         {
           "text": "Yes, he's by my side.",
           "audioSrc": "public/data/audio/dummy/dummy_025_sideB_2.mp3"
-        },
-        {
-          "text": "Yes, he's at my side.",
-          "audioSrc": "public/data/audio/dummy/dummy_025_sideB_3.mp3"
         }
       ],
-      "note": "**[217]**"
+      "note": null
     },
     {
       "cardId": "dummy_026",
@@ -614,7 +610,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_027_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~You have allow to translate this from Spanish to English and vice versa~ is not valid because 'allow' is a verb, not a noun. You must use [You are allowed to] or [You have permission to]."
+      "note": null
     },
     {
       "cardId": "dummy_028",
@@ -634,7 +630,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_028_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~That code was outdateded~ is not valid because the word [outdated] is already an adjective. It does not take an extra '-ed' ending."
+      "note": null
     },
     {
       "cardId": "dummy_029",
@@ -652,10 +648,6 @@
         {
           "text": "I refreshed the code in the morning.",
           "audioSrc": "public/data/audio/dummy/dummy_029_sideB_2.mp3"
-        },
-        {
-          "text": "I updated the code in the morning.",
-          "audioSrc": "public/data/audio/dummy/dummy_029_sideB_3.mp3"
         }
       ],
       "note": null
@@ -678,7 +670,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_030_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~Sorry, the program got froze~ and ~Sorry, the program got freeze~ are not valid because the past participle of 'freeze' is [frozen]. You can say it [got frozen], but it is much more natural to just say it [froze]."
+      "note": null
     },
     {
       "cardId": "dummy_031",
@@ -736,10 +728,6 @@
         {
           "text": "I appreciate your patience with me.",
           "audioSrc": "public/data/audio/dummy/dummy_033_sideB_2.mp3"
-        },
-        {
-          "text": "Thanks for being patient with me.",
-          "audioSrc": "public/data/audio/dummy/dummy_033_sideB_3.mp3"
         }
       ],
       "note": null
@@ -800,14 +788,6 @@
         {
           "text": "He sat right next to me at the meeting.",
           "audioSrc": "public/data/audio/dummy/dummy_036_sideB_2.mp3"
-        },
-        {
-          "text": "He sat by me in the meeting.",
-          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_3.mp3"
-        },
-        {
-          "text": "He sat by my side in the meeting.",
-          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_4.mp3"
         }
       ],
       "note": "**[217]**\n\n[Next to] and [beside] indicate being directly adjacent. ~Beside to me~ is incorrect."
@@ -828,14 +808,6 @@
         {
           "text": "I want a desk right by the window.",
           "audioSrc": "public/data/audio/dummy/dummy_037_sideB_2.mp3"
-        },
-        {
-          "text": "I want a desk next to the window.",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_3.mp3"
-        },
-        {
-          "text": "I want a desk near the window.",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_4.mp3"
         }
       ],
       "note": "**[217]**\n\nUsing [by] is very natural to describe being right next to a window, a door, or a body of water."
