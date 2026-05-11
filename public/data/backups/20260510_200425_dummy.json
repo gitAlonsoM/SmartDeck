@@ -42,7 +42,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_020_sideB_2.mp3"
         }
       ],
-      "note": "**[194]**\n\n~What I want to set up is this to do that~ and ~What I want to set up is to do that~ are not valid. When expressing that you want an object or system to perform an action, you must use the structure [for] + [object] + [to do]. The correct form is [for this to do that]."
+      "note": "\n\n~What I want to set up is this to do that~ and ~What I want to set up is to do that~ are not valid. When expressing that you want an object or system to perform an action, you must use the structure [for] + [object] + [to do]. The correct form is [for this to do that]."
     },
     {
       "cardId": "dummy_025",
@@ -148,10 +148,6 @@
         {
           "text": "Sorry, the program got stuck.",
           "audioSrc": "public/data/audio/dummy/dummy_030_sideB_2.mp3"
-        },
-        {
-          "text": "Sorry, the program got frozen.",
-          "audioSrc": "public/data/audio/dummy/dummy_030_sideB_3.mp3"
         }
       ],
       "note": "\n\n~Sorry, the program got froze~ and ~Sorry, the program got freeze~ are not valid because the past participle of 'freeze' is [frozen]. You can say it [got frozen], but it is much more natural to just say it [froze]."
@@ -236,6 +232,9 @@
       ],
       "note": "**[217]**\n\nUsing [by] is very natural to describe being right next to a window, a door, or a body of water."
     },
+
+
+
     {
       "cardId": "dummy_038",
       "cardType": "flippable",
@@ -272,13 +271,9 @@
         {
           "text": "I need confirmation on what I asked for.",
           "audioSrc": "public/data/audio/dummy/dummy_039_sideB_2.mp3"
-        },
-        {
-          "text": "I need the confirmation of what I requested.",
-          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_3.mp3"
         }
       ],
-      "note": "\n\n~what I asked~ implies you need confirmation of a question you asked, not a request. Use [what I asked for]. Also, ~confirm of~ is grammatically invalid because 'confirm' is a direct verb and does not use 'of'. Use [need to confirm what I requested]."
+      "note": null
     },
     {
       "cardId": "dummy_040",
@@ -298,7 +293,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_040_sideB_2.mp3"
         }
       ],
-      "note": "**[202]**\n\n~Nothing by my side~ means something is physically missing next to you. To mean 'from my perspective or team', use [on my side] or [on my end]."
+      "note": null
     },
     {
       "cardId": "dummy_041",
@@ -336,10 +331,6 @@
         {
           "text": "It took a long time to get caught up with the architecture.",
           "audioSrc": "public/data/audio/dummy/dummy_042_sideB_2.mp3"
-        },
-        {
-          "text": "It has been a long time catching up on the architecture.",
-          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_3.mp3"
         }
       ],
       "note": null
@@ -382,7 +373,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_044_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~arriving into~ is incorrect because 'arrive' takes the prepositions 'in' (for spaces/folders) or 'at' (for points/locations). You cannot arrive 'into' something. Use [arriving in]."
+      "note": null
     },
     {
       "cardId": "dummy_045",
@@ -402,7 +393,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_045_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~aiming to a different place~ is not naturally used for servers or code environments. In technical contexts, use [pointing to] a different place, URL, or environment."
+      "note": null
     },
     {
       "cardId": "dummy_046",
@@ -422,7 +413,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_046_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~The normal would be~ is a direct translation from Spanish. In English, use an adverb like [Normally] or add a noun like [The normal thing would be]."
+      "note": null
     },
     {
       "cardId": "dummy_047",
@@ -460,10 +451,6 @@
         {
           "text": "It took a long time to get caught up with the infrastructure.",
           "audioSrc": "public/data/audio/dummy/dummy_048_sideB_2.mp3"
-        },
-        {
-          "text": "It has been a long time catching up on the infrastructure.",
-          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_3.mp3"
         }
       ],
       "note": null
@@ -546,7 +533,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_052_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~see deeper into~, ~look the code deeper~, and ~see the code deeper~ are not natural. Use [look deeper into the code] or [take a closer look at the code]. The preposition [into] or [at] is required with 'look' in this context, and 'see' is not used for investigating code."
+      "note": null
     },
     {
       "cardId": "dummy_053",
@@ -586,7 +573,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_054_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~out of the VPN~ is a direct translation; in English, we say we are [off] a network or VPN. Also, ~let me connect it~ is incorrect because you do not connect 'the VPN' itself, you connect yourself to it. Use [let me connect] or [let me log in]."
+      "note": null
     },
     {
       "cardId": "dummy_055",
@@ -624,17 +611,9 @@
         {
           "text": "It could lead to problems, which is why I deactivated it.",
           "audioSrc": "public/data/audio/dummy/dummy_056_sideB_2.mp3"
-        },
-        {
-          "text": "It could cause problems, therefore I disabled it.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_3.mp3"
-        },
-        {
-          "text": "It could cause problems, for that reason I deactivated it.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_4.mp3"
         }
       ],
-      "note": "\n\n~desactivated~ is a spelling error influenced by Spanish. The correct English word is [deactivated]."
+      "note": null
     },
     {
       "cardId": "dummy_057",
@@ -672,10 +651,6 @@
         {
           "text": "She makes her way to the supermarket every Saturday morning.",
           "audioSrc": "public/data/audio/dummy/dummy_058_sideB_2.mp3"
-        },
-        {
-          "text": "She goes to the supermarket every Saturday in the morning.",
-          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_3.mp3"
         }
       ],
       "note": "**[53]**\n\n"
@@ -838,7 +813,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_066_sideB_2.mp3"
         }
       ],
-      "note": "**[53]**\n\n~approaches slowly the intersection~ is invalid because an adverb cannot be placed between a verb and its direct object. Use [slowly approaches the intersection] or [approaches the intersection slowly]."
+      "note": "**[53]**\n\n"
     },
     {
       "cardId": "dummy_067",
@@ -859,106 +834,6 @@
         }
       ],
       "note": "**[53]**\n\n"
-    },
-    {
-      "cardId": "dummy_068",
-      "cardType": "flippable",
-      "sideA": "¿El codigo está actualizado o desactualizado?",
-      "sideB": [
-        {
-          "text": "Is the code up to date or outdated?",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_0.mp3"
-        },
-        {
-          "text": "Is the code updated or out of date?",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_1.mp3"
-        },
-        {
-          "text": "Is the code current or deprecated?",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_069",
-      "cardType": "flippable",
-      "sideA": "¿Para quien estoy trabajando?",
-      "sideB": [
-        {
-          "text": "Who am I working for?",
-          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_0.mp3"
-        },
-        {
-          "text": "For whom am I working?",
-          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_1.mp3"
-        },
-        {
-          "text": "Who is it that I am working for?",
-          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_070",
-      "cardType": "flippable",
-      "sideA": "¿Para quien trabajas?",
-      "sideB": [
-        {
-          "text": "Who do you work for?",
-          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_0.mp3"
-        },
-        {
-          "text": "For whom do you work?",
-          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_1.mp3"
-        },
-        {
-          "text": "Who are you working for?",
-          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_071",
-      "cardType": "flippable",
-      "sideA": "Está lento porque no están casheadas las queries en la base de dato.",
-      "sideB": [
-        {
-          "text": "It's slow because the queries are not cached in the database.",
-          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_0.mp3"
-        },
-        {
-          "text": "It is slow because the database queries aren't cached.",
-          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_1.mp3"
-        },
-        {
-          "text": "It's running slow because the queries haven't been cached in the database.",
-          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_072",
-      "cardType": "flippable",
-      "sideA": "Las queries se cashean usandolas muchas veces, es algo automático.",
-      "sideB": [
-        {
-          "text": "Queries are cached by using them multiple times, it's automatic.",
-          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_0.mp3"
-        },
-        {
-          "text": "The queries get cached when used many times, it's an automatic process.",
-          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_1.mp3"
-        },
-        {
-          "text": "Queries cache themselves when executed frequently, it's something automatic.",
-          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_2.mp3"
-        }
-      ],
-      "note": null
     }
   ]
 }
