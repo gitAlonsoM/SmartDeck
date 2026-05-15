@@ -5,406 +5,6 @@
   "deckType": "flippable",
   "cards": [
     {
-      "cardId": "dummy_001",
-      "cardType": "flippable",
-      "sideA": "¿Qué tipo de error es este?",
-      "sideB": [
-        {
-          "text": "What kind of error is this?",
-          "audioSrc": "public/data/audio/dummy/dummy_001_sideB_0.mp3"
-        },
-        {
-          "text": "What sort of error is this?",
-          "audioSrc": "public/data/audio/dummy/dummy_001_sideB_1.mp3"
-        },
-        {
-          "text": "What type of error is this?",
-          "audioSrc": "public/data/audio/dummy/dummy_001_sideB_2.mp3"
-        }
-      ],
-      "note": "**[216]**\n\n"
-    },
-    {
-      "cardId": "dummy_002",
-      "cardType": "flippable",
-      "sideA": "Siempre tenemos este tipo de problemas.",
-      "sideB": [
-        {
-          "text": "We always have these kinds of problems.",
-          "audioSrc": "public/data/audio/dummy/dummy_002_sideB_0.mp3"
-        },
-        {
-          "text": "We always face these types of issues.",
-          "audioSrc": "public/data/audio/dummy/dummy_002_sideB_1.mp3"
-        },
-        {
-          "text": "We always get these sorts of problems.",
-          "audioSrc": "public/data/audio/dummy/dummy_002_sideB_2.mp3"
-        }
-      ],
-      "note": "**[216]**\n\nWhile in Spanish it is perfectly normal to mix singular and plural (like \"este tipo de problemas\"), English requires strict number agreement. If the final noun is plural, the entire phrase must be plural: [these kinds of problems]. ~This kind of problems~ is incorrect."
-    },
-    {
-      "cardId": "dummy_003",
-      "cardType": "flippable",
-      "sideA": "Por favor, envíame los registros cuando puedas.",
-      "sideB": [
-        {
-          "text": "Kindly send me the logs when you can.",
-          "audioSrc": "public/data/audio/dummy/dummy_003_sideB_0.mp3"
-        },
-        {
-          "text": "Please send me the logs when you get a chance.",
-          "audioSrc": "public/data/audio/dummy/dummy_003_sideB_1.mp3"
-        },
-        {
-          "text": "Kindly forward the logs whenever you can.",
-          "audioSrc": "public/data/audio/dummy/dummy_003_sideB_2.mp3"
-        },
-        {
-          "text": "Please send me the logs when you can.",
-          "audioSrc": "public/data/audio/dummy/dummy_003_sideB_3.mp3"
-        }
-      ],
-      "note": "**[216]**\n\n[Kindly] is a very common and professional alternative to 'please' in corporate emails."
-    },
-    {
-      "cardId": "dummy_004",
-      "cardType": "flippable",
-      "sideA": "Estoy un poco ocupado ahora mismo.",
-      "sideB": [
-        {
-          "text": "I'm kind of busy right now.",
-          "audioSrc": "public/data/audio/dummy/dummy_004_sideB_0.mp3"
-        },
-        {
-          "text": "I'm sort of busy right now.",
-          "audioSrc": "public/data/audio/dummy/dummy_004_sideB_1.mp3"
-        },
-        {
-          "text": "I'm a bit busy at the moment.",
-          "audioSrc": "public/data/audio/dummy/dummy_004_sideB_2.mp3"
-        },
-        {
-          "text": "I'm a little bit busy at the moment.",
-          "audioSrc": "public/data/audio/dummy/dummy_004_sideB_3.mp3"
-        }
-      ],
-      "note": "**[216]**\n\n[Kind of] and [sort of] are very natural, conversational ways to say 'un poco' or 'más o menos'."
-    },
-    {
-      "cardId": "dummy_005",
-      "cardType": "flippable",
-      "sideA": "El servidor falló, así que lo reinicié.",
-      "sideB": [
-        {
-          "text": "The server crashed, so I restarted it.",
-          "audioSrc": "public/data/audio/dummy/dummy_005_sideB_0.mp3"
-        },
-        {
-          "text": "The server went down, so I rebooted it.",
-          "audioSrc": "public/data/audio/dummy/dummy_005_sideB_1.mp3"
-        },
-        {
-          "text": "The server failed, so I restarted it.",
-          "audioSrc": "public/data/audio/dummy/dummy_005_sideB_2.mp3"
-        },
-        {
-          "text": "The server crashed, so I had to restart it.",
-          "audioSrc": "public/data/audio/dummy/dummy_005_sideB_3.mp3"
-        }
-      ],
-      "note": "**[215]**\n\n"
-    },
-    {
-      "cardId": "dummy_006",
-      "cardType": "flippable",
-      "sideA": "Faltan archivos; por lo tanto, la instalación no puede continuar.",
-      "sideB": [
-        {
-          "text": "Files are missing; therefore, the installation cannot continue.",
-          "audioSrc": "public/data/audio/dummy/dummy_006_sideB_0.mp3"
-        },
-        {
-          "text": "Some files are missing; therefore, the setup can't proceed.",
-          "audioSrc": "public/data/audio/dummy/dummy_006_sideB_1.mp3"
-        },
-        {
-          "text": "Files are missing, so the installation cannot continue.",
-          "audioSrc": "public/data/audio/dummy/dummy_006_sideB_2.mp3"
-        },
-        {
-          "text": "It lacks files; therefore, the installation cannot continue.",
-          "audioSrc": "public/data/audio/dummy/dummy_006_sideB_3.mp3"
-        },
-        {
-          "text": "Files are missing; thus, the installation cannot continue.",
-          "audioSrc": "public/data/audio/dummy/dummy_006_sideB_4.mp3"
-        }
-      ],
-      "note": "**[215]**\n\n\n\n~It lack files~ is incorrect because the third-person singular [it] requires the verb to end in [-s]."
-    },
-    {
-      "cardId": "dummy_007",
-      "cardType": "flippable",
-      "sideA": "Había un error en la base de datos. Como resultado, perdimos algunos registros.",
-      "sideB": [
-        {
-          "text": "There was a database error. As a result, we lost some records.",
-          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_0.mp3"
-        },
-        {
-          "text": "There was a bug in the database; as a result, we lost a few logs.",
-          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_1.mp3"
-        },
-        {
-          "text": "We had a DB error, and as a result, some records were lost.",
-          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_2.mp3"
-        },
-        {
-          "text": "It was a database error. As a result, we lost some records.",
-          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_3.mp3"
-        },
-        {
-          "text": "There was an error in the database. As a result, we lost some records.",
-          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_4.mp3"
-        }
-      ],
-      "note": "**[215]**\n\n\n\n~There was an error on the database.~ is not natural. Because a database is conceptualized as a container of data, you must use the preposition [in]."
-    },
-    {
-      "cardId": "dummy_008",
-      "cardType": "flippable",
-      "sideA": "El cliente no pagó; en consecuencia, su cuenta fue suspendida.",
-      "sideB": [
-        {
-          "text": "The client didn't pay; consequently, his account was suspended.",
-          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_0.mp3"
-        },
-        {
-          "text": "The customer failed to pay; consequently, their account was locked.",
-          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_1.mp3"
-        },
-        {
-          "text": "They didn't pay, so consequently, the account got suspended.",
-          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_2.mp3"
-        },
-        {
-          "text": "The client didn't pay; therefore, his account was suspended.",
-          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_3.mp3"
-        },
-        {
-          "text": "The client didn't pay; thus, his account was suspended.",
-          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_4.mp3"
-        },
-        {
-          "text": "The client didn't pay; so, his account was suspended.",
-          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_5.mp3"
-        }
-      ],
-      "note": "**[215]**\n\n"
-    },
-    {
-      "cardId": "dummy_009",
-      "cardType": "flippable",
-      "sideA": "No tenemos más presupuesto; por ende, debemos cancelar la función.",
-      "sideB": [
-        {
-          "text": "We have no more budget; thus, we must cancel the feature.",
-          "audioSrc": "public/data/audio/dummy/dummy_009_sideB_0.mp3"
-        },
-        {
-          "text": "We are out of budget; therefore, we have to cancel the feature.",
-          "audioSrc": "public/data/audio/dummy/dummy_009_sideB_1.mp3"
-        },
-        {
-          "text": "We don't have more budget, so we must drop the feature.",
-          "audioSrc": "public/data/audio/dummy/dummy_009_sideB_2.mp3"
-        }
-      ],
-      "note": "**[215]**\n\n"
-    },
-    {
-      "cardId": "dummy_010",
-      "cardType": "flippable",
-      "sideA": "¿Terminaste tus tareas, y por eso te vas temprano?",
-      "sideB": [
-        {
-          "text": "Did you finish your tasks, and so you're leaving early?",
-          "audioSrc": "public/data/audio/dummy/dummy_010_sideB_0.mp3"
-        },
-        {
-          "text": "You finished your tasks, therefore you are leaving early?",
-          "audioSrc": "public/data/audio/dummy/dummy_010_sideB_1.mp3"
-        },
-        {
-          "text": "Are you leaving early because you finished your tasks?",
-          "audioSrc": "public/data/audio/dummy/dummy_010_sideB_2.mp3"
-        },
-        {
-          "text": "Did you finish your tasks, and that's why you're leaving early?",
-          "audioSrc": "public/data/audio/dummy/dummy_010_sideB_3.mp3"
-        }
-      ],
-      "note": "**[215]**\n\n"
-    },
-    {
-      "cardId": "dummy_011",
-      "cardType": "flippable",
-      "sideA": "Ese tipo de errores son muy difíciles de encontrar.",
-      "sideB": [
-        {
-          "text": "Those kinds of errors are very hard to find.",
-          "audioSrc": "public/data/audio/dummy/dummy_011_sideB_0.mp3"
-        },
-        {
-          "text": "Those types of bugs are very difficult to find.",
-          "audioSrc": "public/data/audio/dummy/dummy_011_sideB_1.mp3"
-        },
-        {
-          "text": "Those sorts of errors are really hard to track down.",
-          "audioSrc": "public/data/audio/dummy/dummy_011_sideB_2.mp3"
-        }
-      ],
-      "note": "**[216]**\n\nJust like with 'this/these', the Spanish structure \"ese tipo de errores\" mixes singular and plural. In English, you must match the plural \"errors\" with plural demonstratives and nouns: [those kinds of errors]. ~That kind of errors~ is unnatural."
-    },
-    {
-      "cardId": "dummy_012",
-      "cardType": "flippable",
-      "sideA": "Tratamos de evitar este tipo de reuniones.",
-      "sideB": [
-        {
-          "text": "We try to avoid these kinds of meetings.",
-          "audioSrc": "public/data/audio/dummy/dummy_012_sideB_0.mp3"
-        },
-        {
-          "text": "We try to avoid these types of meetings.",
-          "audioSrc": "public/data/audio/dummy/dummy_012_sideB_1.mp3"
-        },
-        {
-          "text": "We try avoiding these sorts of meetings.",
-          "audioSrc": "public/data/audio/dummy/dummy_012_sideB_2.mp3"
-        }
-      ],
-      "note": "**[216]**\n\nSpanish allows mixing the singular \"este tipo\" with the plural \"reuniones\". English demands full plural agreement: [these types of meetings]. Mixing them as ~this type of meetings~ is a common grammar mistake."
-    },
-    {
-      "cardId": "dummy_013",
-      "cardType": "flippable",
-      "sideA": "Mientras leía el correo, noté un error.",
-      "sideB": [
-        {
-          "text": "While reading the email, I noticed an error.",
-          "audioSrc": "public/data/audio/dummy/dummy_013_sideB_0.mp3"
-        },
-        {
-          "text": "While reading the email, I spotted a mistake.",
-          "audioSrc": "public/data/audio/dummy/dummy_013_sideB_1.mp3"
-        },
-        {
-          "text": "While checking the email, I noticed a mistake.",
-          "audioSrc": "public/data/audio/dummy/dummy_013_sideB_2.mp3"
-        },
-        {
-          "text": "While I was reading the email, I noticed an error.",
-          "audioSrc": "public/data/audio/dummy/dummy_013_sideB_3.mp3"
-        }
-      ],
-      "note": "**[164]**\n\n"
-    },
-    {
-      "cardId": "dummy_014",
-      "cardType": "flippable",
-      "sideA": "Al terminar la descarga, cerré la ventana.",
-      "sideB": [
-        {
-          "text": "Upon finishing the download, I closed the window.",
-          "audioSrc": "public/data/audio/dummy/dummy_014_sideB_0.mp3"
-        },
-        {
-          "text": "On completing the download, I closed the window.",
-          "audioSrc": "public/data/audio/dummy/dummy_014_sideB_1.mp3"
-        },
-        {
-          "text": "Upon completing the download, I closed the window.",
-          "audioSrc": "public/data/audio/dummy/dummy_014_sideB_2.mp3"
-        },
-        {
-          "text": "When the download finished, I closed the window.",
-          "audioSrc": "public/data/audio/dummy/dummy_014_sideB_3.mp3"
-        }
-      ],
-      "note": "**[164]**\n\n\n\n~By finishing the download~ is not valid because [by] describes the method used to achieve a result, whereas this sentence describes a sequence of events in time."
-    },
-    {
-      "cardId": "dummy_015",
-      "cardType": "flippable",
-      "sideA": "Al reiniciar el router, solucionamos el problema.",
-      "sideB": [
-        {
-          "text": "By restarting the router, we fixed the problem.",
-          "audioSrc": "public/data/audio/dummy/dummy_015_sideB_0.mp3"
-        },
-        {
-          "text": "By rebooting the router, we solved the issue.",
-          "audioSrc": "public/data/audio/dummy/dummy_015_sideB_1.mp3"
-        },
-        {
-          "text": "By resetting the router, we fixed the issue.",
-          "audioSrc": "public/data/audio/dummy/dummy_015_sideB_2.mp3"
-        },
-        {
-          "text": "On restarting the router, we fixed the problem.",
-          "audioSrc": "public/data/audio/dummy/dummy_015_sideB_3.mp3"
-        },
-        {
-          "text": "Restarting the router, we fixed the problem.",
-          "audioSrc": "public/data/audio/dummy/dummy_015_sideB_4.mp3"
-        }
-      ],
-      "note": "**[164]**\n\n"
-    },
-    {
-      "cardId": "dummy_016",
-      "cardType": "flippable",
-      "sideA": "Antes de enviar el código, revisé las variables.",
-      "sideB": [
-        {
-          "text": "Before pushing the code, I checked the variables.",
-          "audioSrc": "public/data/audio/dummy/dummy_016_sideB_0.mp3"
-        },
-        {
-          "text": "Before sending the code, I reviewed the variables.",
-          "audioSrc": "public/data/audio/dummy/dummy_016_sideB_1.mp3"
-        },
-        {
-          "text": "Before committing the code, I checked the variables.",
-          "audioSrc": "public/data/audio/dummy/dummy_016_sideB_2.mp3"
-        }
-      ],
-      "note": "**[164]**\n\n"
-    },
-    {
-      "cardId": "dummy_017",
-      "cardType": "flippable",
-      "sideA": "Después de instalar la actualización, la app falló.",
-      "sideB": [
-        {
-          "text": "After installing the update, the app crashed.",
-          "audioSrc": "public/data/audio/dummy/dummy_017_sideB_0.mp3"
-        },
-        {
-          "text": "After applying the update, the app failed.",
-          "audioSrc": "public/data/audio/dummy/dummy_017_sideB_1.mp3"
-        },
-        {
-          "text": "After installing the patch, the app crashed.",
-          "audioSrc": "public/data/audio/dummy/dummy_017_sideB_2.mp3"
-        }
-      ],
-      "note": "**[164]**\n\n"
-    },
-    {
       "cardId": "dummy_018",
       "cardType": "flippable",
       "sideA": "Al recibir la alerta, revisé los registros.",
@@ -425,34 +25,6 @@
       "note": "**[164]**\n\n\n\n~When I recibied the alert, I checked the logs.~ is invalid due to a spelling mistake. The correct past tense is [received].\n\n~By receiving the alert, I checked the logs.~ is not grammatically logical in this context. The preposition [by] indicates the method used to achieve a result, but you don't check logs *by means of* receiving an alert. You check them *immediately after* the alert, which requires [upon] or [on]."
     },
     {
-      "cardId": "dummy_019",
-      "cardType": "flippable",
-      "sideA": "Al abrir el archivo, noté que estaba corrupto.",
-      "sideB": [
-        {
-          "text": "Upon opening the file, I noticed it was corrupted.",
-          "audioSrc": "public/data/audio/dummy/dummy_019_sideB_0.mp3"
-        },
-        {
-          "text": "On opening the file, I realized it was corrupted.",
-          "audioSrc": "public/data/audio/dummy/dummy_019_sideB_1.mp3"
-        },
-        {
-          "text": "Upon opening the document, I saw it was corrupted.",
-          "audioSrc": "public/data/audio/dummy/dummy_019_sideB_2.mp3"
-        },
-        {
-          "text": "Opening the file, I realized it was corrupted.",
-          "audioSrc": "public/data/audio/dummy/dummy_019_sideB_3.mp3"
-        },
-        {
-          "text": "When I opened the file, I realized it was corrupted.",
-          "audioSrc": "public/data/audio/dummy/dummy_019_sideB_4.mp3"
-        }
-      ],
-      "note": "**[164]**\n\n\n\n~By opening the file, I realized it was corrupted.~ changes the nuance of the sentence. Using [by] focuses heavily on the *method* of discovery rather than the *moment in time*. The Spanish 'Al abrir' focuses on the sequence of time, making [upon] or [on] the most accurate translations."
-    },
-    {
       "cardId": "dummy_020",
       "cardType": "flippable",
       "sideA": "Lo que quiero configurar es que esto haga eso.",
@@ -470,87 +42,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_020_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~What I want to set up is this to do that~ and ~What I want to set up is to do that~ are not valid. When expressing that you want an object or system to perform an action, you must use the structure [for] + [object] + [to do]. The correct form is [for this to do that]."
-    },
-    {
-      "cardId": "dummy_021",
-      "cardType": "flippable",
-      "sideA": "Me estoy poniendo al dia.",
-      "sideB": [
-        {
-          "text": "I'm catching up.",
-          "audioSrc": "public/data/audio/dummy/dummy_021_sideB_0.mp3"
-        },
-        {
-          "text": "I'm getting up to speed.",
-          "audioSrc": "public/data/audio/dummy/dummy_021_sideB_1.mp3"
-        },
-        {
-          "text": "I'm getting on track.",
-          "audioSrc": "public/data/audio/dummy/dummy_021_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_022",
-      "cardType": "flippable",
-      "sideA": "No me hagas hablar",
-      "sideB": [
-        {
-          "text": "Don't make me talk.",
-          "audioSrc": "public/data/audio/dummy/dummy_022_sideB_0.mp3"
-        },
-        {
-          "text": "Don't get me started.",
-          "audioSrc": "public/data/audio/dummy/dummy_022_sideB_1.mp3"
-        },
-        {
-          "text": "Don't make me say it.",
-          "audioSrc": "public/data/audio/dummy/dummy_022_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_023",
-      "cardType": "flippable",
-      "sideA": "Describir la secuencia estandarizada de los pasos...",
-      "sideB": [
-        {
-          "text": "To outline the standardized sequence of steps...",
-          "audioSrc": "public/data/audio/dummy/dummy_023_sideB_0.mp3"
-        },
-        {
-          "text": "To describe the standard sequence of steps...",
-          "audioSrc": "public/data/audio/dummy/dummy_023_sideB_1.mp3"
-        },
-        {
-          "text": "To provide the standard step-by-step procedure...",
-          "audioSrc": "public/data/audio/dummy/dummy_023_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_024",
-      "cardType": "flippable",
-      "sideA": "He terminado el plan para el nuevo proyecto.",
-      "sideB": [
-        {
-          "text": "I have finished the outline for the new project.",
-          "audioSrc": "public/data/audio/dummy/dummy_024_sideB_0.mp3"
-        },
-        {
-          "text": "I have completed the plan for the new project.",
-          "audioSrc": "public/data/audio/dummy/dummy_024_sideB_1.mp3"
-        },
-        {
-          "text": "I have finalized the blueprint for the new project.",
-          "audioSrc": "public/data/audio/dummy/dummy_024_sideB_2.mp3"
-        }
-      ],
-      "note": null
+      "note": "**[194]**\n\n~What I want to set up is this to do that~ and ~What I want to set up is to do that~ are not valid. When expressing that you want an object or system to perform an action, you must use the structure [for] + [object] + [to do]. The correct form is [for this to do that]."
     },
     {
       "cardId": "dummy_025",
@@ -575,26 +67,6 @@
         }
       ],
       "note": "**[217]**"
-    },
-    {
-      "cardId": "dummy_026",
-      "cardType": "flippable",
-      "sideA": "Si, estamos en el mismo lugar.",
-      "sideB": [
-        {
-          "text": "Yes, we are in the same place.",
-          "audioSrc": "public/data/audio/dummy/dummy_026_sideB_0.mp3"
-        },
-        {
-          "text": "Yes, we are in the same location.",
-          "audioSrc": "public/data/audio/dummy/dummy_026_sideB_1.mp3"
-        },
-        {
-          "text": "Yes, we are at the same spot.",
-          "audioSrc": "public/data/audio/dummy/dummy_026_sideB_2.mp3"
-        }
-      ],
-      "note": null
     },
     {
       "cardId": "dummy_027",
@@ -676,49 +148,13 @@
         {
           "text": "Sorry, the program got stuck.",
           "audioSrc": "public/data/audio/dummy/dummy_030_sideB_2.mp3"
+        },
+        {
+          "text": "Sorry, the program got frozen.",
+          "audioSrc": "public/data/audio/dummy/dummy_030_sideB_3.mp3"
         }
       ],
-      "note": "\n\n~Sorry, the program got froze~ and ~Sorry, the program got freeze~ are not valid because the past participle of 'freeze' is [frozen]. You can say it [got frozen], but it is much more natural to just say it [froze]."
-    },
-    {
-      "cardId": "dummy_031",
-      "cardType": "flippable",
-      "sideA": "Se necesita migrar todo el codigo.",
-      "sideB": [
-        {
-          "text": "All the code needs to be migrated.",
-          "audioSrc": "public/data/audio/dummy/dummy_031_sideB_0.mp3"
-        },
-        {
-          "text": "The entire codebase needs to be migrated.",
-          "audioSrc": "public/data/audio/dummy/dummy_031_sideB_1.mp3"
-        },
-        {
-          "text": "We need to migrate all the code.",
-          "audioSrc": "public/data/audio/dummy/dummy_031_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_032",
-      "cardType": "flippable",
-      "sideA": "Son los artefactos, los objetos, no son acciones.",
-      "sideB": [
-        {
-          "text": "They are the artifacts, the objects, not actions.",
-          "audioSrc": "public/data/audio/dummy/dummy_032_sideB_0.mp3"
-        },
-        {
-          "text": "They're artifacts, objects, not actions.",
-          "audioSrc": "public/data/audio/dummy/dummy_032_sideB_1.mp3"
-        },
-        {
-          "text": "Those are the artifacts and objects, not the actions.",
-          "audioSrc": "public/data/audio/dummy/dummy_032_sideB_2.mp3"
-        }
-      ],
-      "note": null
+      "note": "**[218]**\n\n\n\n~Sorry, the program got froze~ and ~Sorry, the program got freeze~ are not valid because the past participle of 'freeze' is [frozen]. You can say it [got frozen], but it is much more natural to just say it [froze]."
     },
     {
       "cardId": "dummy_033",
@@ -743,46 +179,6 @@
         }
       ],
       "note": null
-    },
-    {
-      "cardId": "dummy_034",
-      "cardType": "flippable",
-      "sideA": "Para ser honesto. Pienso que esto está fuera de mi alcance.",
-      "sideB": [
-        {
-          "text": "To be honest, I think this is out of my reach.",
-          "audioSrc": "public/data/audio/dummy/dummy_034_sideB_0.mp3"
-        },
-        {
-          "text": "To be honest, I feel this is beyond my scope.",
-          "audioSrc": "public/data/audio/dummy/dummy_034_sideB_1.mp3"
-        },
-        {
-          "text": "To be frank, I think this is out of my depth.",
-          "audioSrc": "public/data/audio/dummy/dummy_034_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_035",
-      "cardType": "flippable",
-      "sideA": "El hotel está cerca del aeropuerto.",
-      "sideB": [
-        {
-          "text": "The hotel is near the airport.",
-          "audioSrc": "public/data/audio/dummy/dummy_035_sideB_0.mp3"
-        },
-        {
-          "text": "The hotel is close to the airport.",
-          "audioSrc": "public/data/audio/dummy/dummy_035_sideB_1.mp3"
-        },
-        {
-          "text": "The hotel is situated near the airport.",
-          "audioSrc": "public/data/audio/dummy/dummy_035_sideB_2.mp3"
-        }
-      ],
-      "note": "**[217]**\n\nRemember that [near] doesn't use 'to', while [close] must be followed by [to]. ~Near to the airport~ is a common mistake."
     },
     {
       "cardId": "dummy_036",
@@ -838,7 +234,771 @@
           "audioSrc": "public/data/audio/dummy/dummy_037_sideB_4.mp3"
         }
       ],
-      "note": "**[217]**\n\nUsing [by] is very natural to describe being right next to a window, a door, or a body of water."
+      "note": "**[217]**\n\nUsing [by] is very natural to describe being right next to a window, a door, or a body of water.\n\n~I want a desktop by the window~ is not valid because 'desktop' refers to a type of computer or a digital screen interface. The physical furniture you sit at is called a [desk]."
+    },
+    {
+      "cardId": "dummy_038",
+      "cardType": "flippable",
+      "sideA": "Lo acabo de pegar en el chat.",
+      "sideB": [
+        {
+          "text": "I just pasted it in the chat.",
+          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_0.mp3"
+        },
+        {
+          "text": "I just dropped it in the chat.",
+          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_1.mp3"
+        },
+        {
+          "text": "I've just pasted it into the chat.",
+          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_039",
+      "cardType": "flippable",
+      "sideA": "Necesito la confirmacion de lo que pedi",
+      "sideB": [
+        {
+          "text": "I need confirmation of what I requested.",
+          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_0.mp3"
+        },
+        {
+          "text": "I need the confirmation for my request.",
+          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_1.mp3"
+        },
+        {
+          "text": "I need confirmation on what I asked for.",
+          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_2.mp3"
+        },
+        {
+          "text": "I need the confirmation of what I requested.",
+          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_3.mp3"
+        }
+      ],
+      "note": "\n\n~what I asked~ implies you need confirmation of a question you asked, not a request. Use [what I asked for]. Also, ~confirm of~ is grammatically invalid because 'confirm' is a direct verb and does not use 'of'. Use [need to confirm what I requested]."
+    },
+    {
+      "cardId": "dummy_040",
+      "cardType": "flippable",
+      "sideA": "¿Necesitan algo mas?, 'No por mi lado.'",
+      "sideB": [
+        {
+          "text": "Do you need anything else? 'Not on my end.'",
+          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_0.mp3"
+        },
+        {
+          "text": "Do you guys need anything else? 'Nothing on my side.'",
+          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_1.mp3"
+        },
+        {
+          "text": "Is there anything else you need? 'Not from my side.'",
+          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_2.mp3"
+        },
+        {
+          "text": "Do you need anything else? 'No, I'm good.'",
+          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_3.mp3"
+        }
+      ],
+      "note": "**[202]**\n\n~Nothing by my side~ means something is physically missing next to you. To mean 'from my perspective or team', use [on my side] or [on my end].\n\n~No on my end~ is not grammatically natural. You should use [Not on my end] or [Nothing on my end]."
+    },
+    {
+      "cardId": "dummy_041",
+      "cardType": "flippable",
+      "sideA": "Cree eso hace un largo tiempo atras, debo checkearlo",
+      "sideB": [
+        {
+          "text": "I created that a long time ago, I need to check it.",
+          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_0.mp3"
+        },
+        {
+          "text": "I set that up a while ago, I should look into it.",
+          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_1.mp3"
+        },
+        {
+          "text": "I made that a long time ago, I need to look it over.",
+          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_042",
+      "cardType": "flippable",
+      "sideA": "Ha sido un largo tiempo poniendonos al dia en la arquitectura",
+      "sideB": [
+        {
+          "text": "It's taken a long time to get up to speed on the architecture.",
+          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_0.mp3"
+        },
+        {
+          "text": "We've spent a long time catching up on the architecture.",
+          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_1.mp3"
+        },
+        {
+          "text": "It took a long time to get caught up with the architecture.",
+          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_2.mp3"
+        },
+        {
+          "text": "It has been a long time catching up on the architecture.",
+          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_043",
+      "cardType": "flippable",
+      "sideA": "…Y ellos hacen su trabajo optimizando los binarios para generar las APPs finales.",
+      "sideB": [
+        {
+          "text": "...And they do their job optimizing the binaries to generate the final apps.",
+          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_0.mp3"
+        },
+        {
+          "text": "...And they do their work optimizing the binaries to build the final apps.",
+          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_1.mp3"
+        },
+        {
+          "text": "...And they handle the optimization of the binaries to output the final apps.",
+          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_2.mp3"
+        },
+        {
+          "text": "And they work optimizing the binaries to output the final apps.",
+          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_044",
+      "cardType": "flippable",
+      "sideA": "Los emails estan llegando al workflow test folder.",
+      "sideB": [
+        {
+          "text": "The emails are arriving in the workflow test folder.",
+          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_0.mp3"
+        },
+        {
+          "text": "The emails are going to the workflow test folder.",
+          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_1.mp3"
+        },
+        {
+          "text": "The emails are landing in the workflow test folder.",
+          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_2.mp3"
+        }
+      ],
+      "note": "\n\n~arriving into~ is incorrect because 'arrive' takes the prepositions 'in' (for spaces/folders) or 'at' (for points/locations). You cannot arrive 'into' something. Use [arriving in].\n\n~arriving to~ is also not valid for the exact same reason. The verb 'arrive' never pairs with 'to'."
+    },
+    {
+      "cardId": "dummy_045",
+      "cardType": "flippable",
+      "sideA": "El codigo es el mismo, pero estamos apuntando a un lado diferente",
+      "sideB": [
+        {
+          "text": "The code is the same, but we are pointing to a different place.",
+          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_0.mp3"
+        },
+        {
+          "text": "The code is the same, but we're pointing somewhere else.",
+          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_1.mp3"
+        },
+        {
+          "text": "It's the same code, but we are pointing to a different environment.",
+          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_2.mp3"
+        }
+      ],
+      "note": "\n\n~aiming to a different place~ is not naturally used for servers or code environments. In technical contexts, use [pointing to] a different place, URL, or environment."
+    },
+    {
+      "cardId": "dummy_046",
+      "cardType": "flippable",
+      "sideA": "Lo normal seria que mientras esta en produccion, le agregUemos esta feature.",
+      "sideB": [
+        {
+          "text": "Normally, while it is in production, we would add this feature.",
+          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_0.mp3"
+        },
+        {
+          "text": "The usual thing would be to add this feature while it's in production.",
+          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_1.mp3"
+        },
+        {
+          "text": "Ideally, we would add this feature while it is in production.",
+          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_2.mp3"
+        },
+        {
+          "text": "The normal way would be to add this feature while it is in production.",
+          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_3.mp3"
+        }
+      ],
+      "note": "\n\n~The normal would be~ is a direct translation from Spanish. In English, use an adverb like [Normally] or add a noun like [The normal thing would be]."
+    },
+    {
+      "cardId": "dummy_047",
+      "cardType": "flippable",
+      "sideA": "Tenemos que reestructurar la infraestructura.",
+      "sideB": [
+        {
+          "text": "We have to restructure the infrastructure.",
+          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_0.mp3"
+        },
+        {
+          "text": "We need to rebuild the infrastructure.",
+          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_1.mp3"
+        },
+        {
+          "text": "We have to reorganize the infrastructure.",
+          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_048",
+      "cardType": "flippable",
+      "sideA": "Ha sido un largo tiempo poniendonos al dia en la infraestructura.",
+      "sideB": [
+        {
+          "text": "It's taken a long time to get up to speed on the infrastructure.",
+          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_0.mp3"
+        },
+        {
+          "text": "We've spent a long time catching up on the infrastructure.",
+          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_1.mp3"
+        },
+        {
+          "text": "It took a long time to get caught up with the infrastructure.",
+          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_2.mp3"
+        },
+        {
+          "text": "It has been a long time catching up on the infrastructure.",
+          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_3.mp3"
+        }
+      ],
+      "note": "\n\n~catching up in the infrastructure~ is not valid because the correct phrasal verb to express bringing yourself up to date on a topic is [catch up on]."
+    },
+    {
+      "cardId": "dummy_049",
+      "cardType": "flippable",
+      "sideA": "Le pregunte a Jeff acerca de eso, estamos esperando la respuesta de el.",
+      "sideB": [
+        {
+          "text": "I asked Jeff about that, we are waiting for his reply.",
+          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_0.mp3"
+        },
+        {
+          "text": "I asked Jeff about it, we're waiting for his response.",
+          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_1.mp3"
+        },
+        {
+          "text": "I checked with Jeff about that, we're waiting to hear back from him.",
+          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_2.mp3"
+        },
+        {
+          "text": "I asked Jeff about that, we are waiting for his answer.",
+          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_050",
+      "cardType": "flippable",
+      "sideA": "Produccion en la base de datos suele cashear las busquedas y ser mas rapida.",
+      "sideB": [
+        {
+          "text": "The production database usually caches queries and is faster.",
+          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_0.mp3"
+        },
+        {
+          "text": "Production in the database tends to cache the searches and be faster.",
+          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_1.mp3"
+        },
+        {
+          "text": "The database in production usually caches the searches, making it faster.",
+          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_2.mp3"
+        }
+      ],
+      "note": "\n\n~The database in production use to cache searching~ is not valid because 'use to' implies a past habit that no longer happens. For current routines, you should use [usually caches] or [tends to cache].\n\n~Production in the database use to cache searching~ is incorrect because the subject is reversed. It should be the [database in production]."
+    },
+    {
+      "cardId": "dummy_051",
+      "cardType": "flippable",
+      "sideA": "Ellas pueden ser deployadas al mismo tiempo, no dependen del uno del otro.",
+      "sideB": [
+        {
+          "text": "They can be deployed at the same time, they don't depend on each other.",
+          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_0.mp3"
+        },
+        {
+          "text": "They can be deployed simultaneously, they are not interdependent.",
+          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_1.mp3"
+        },
+        {
+          "text": "They can be rolled out at the same time, they are independent of each other.",
+          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_052",
+      "cardType": "flippable",
+      "sideA": "Necesitaría verlo más a fondo el codigo y sus dependencias para tener una respuesta.",
+      "sideB": [
+        {
+          "text": "I would need to look deeper into the code and its dependencies to give you an answer.",
+          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_0.mp3"
+        },
+        {
+          "text": "I'd need to take a closer look at the code and its dependencies to have an answer.",
+          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_1.mp3"
+        },
+        {
+          "text": "I need to review the code and its dependencies more thoroughly to provide an answer.",
+          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_2.mp3"
+        }
+      ],
+      "note": "\n\n~see deeper into~, ~look the code deeper~, and ~see the code deeper~ are not natural. Use [look deeper into the code] or [take a closer look at the code]. The preposition [into] or [at] is required with 'look' in this context, and 'see' is not used for investigating code."
+    },
+    {
+      "cardId": "dummy_053",
+      "cardType": "flippable",
+      "sideA": "No hemos checkeado ese problema aun",
+      "sideB": [
+        {
+          "text": "We haven't checked that issue yet.",
+          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_0.mp3"
+        },
+        {
+          "text": "We haven't looked into that problem yet.",
+          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_1.mp3"
+        },
+        {
+          "text": "We haven't investigated that issue yet.",
+          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_054",
+      "cardType": "flippable",
+      "sideA": "Estoy afuera de la VPN, deja conectarme.",
+      "sideB": [
+        {
+          "text": "I'm off the VPN, let me connect.",
+          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_0.mp3"
+        },
+        {
+          "text": "I am not on the VPN, give me a second to connect.",
+          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_1.mp3"
+        },
+        {
+          "text": "I'm disconnected from the VPN, let me log in.",
+          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_2.mp3"
+        }
+      ],
+      "note": "\n\n~out of the VPN~ is a direct translation; in English, we say we are [off] a network or VPN. Also, ~let me connect it~ is incorrect because you do not connect 'the VPN' itself, you connect yourself to it. Use [let me connect] or [let me log in]."
+    },
+    {
+      "cardId": "dummy_055",
+      "cardType": "flippable",
+      "sideA": "Es un poco redundante. no lo creo necesario.",
+      "sideB": [
+        {
+          "text": "It's a bit redundant. I don't think it's necessary.",
+          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_0.mp3"
+        },
+        {
+          "text": "It's kind of redundant. I don't consider it necessary.",
+          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_1.mp3"
+        },
+        {
+          "text": "It is a little redundant. I don't feel it's needed.",
+          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_056",
+      "cardType": "flippable",
+      "sideA": "Podria causar problemas, por eso lo desactive.",
+      "sideB": [
+        {
+          "text": "It could cause problems, that's why I disabled it.",
+          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_0.mp3"
+        },
+        {
+          "text": "It might cause issues, so I turned it off.",
+          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_1.mp3"
+        },
+        {
+          "text": "It could lead to problems, which is why I deactivated it.",
+          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_2.mp3"
+        },
+        {
+          "text": "It could cause problems, therefore I disabled it.",
+          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_3.mp3"
+        },
+        {
+          "text": "It could cause problems, for that reason I deactivated it.",
+          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_4.mp3"
+        }
+      ],
+      "note": "\n\n~desactivated~ is a spelling error influenced by Spanish. The correct English word is [deactivated]."
+    },
+    {
+      "cardId": "dummy_057",
+      "cardType": "flippable",
+      "sideA": "Desconozco sobre el ciclo de vida de una app en las stores.",
+      "sideB": [
+        {
+          "text": "I don't know about the lifecycle of an app in the stores.",
+          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_0.mp3"
+        },
+        {
+          "text": "I'm unfamiliar with the app lifecycle in the stores.",
+          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_1.mp3"
+        },
+        {
+          "text": "I am not aware of the lifecycle of an app on the stores.",
+          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_058",
+      "cardType": "flippable",
+      "sideA": "Ella va al supermercado todos los sábados en la mañana.",
+      "sideB": [
+        {
+          "text": "She goes to the supermarket every Saturday morning.",
+          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_0.mp3"
+        },
+        {
+          "text": "She heads to the supermarket every Saturday morning.",
+          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_1.mp3"
+        },
+        {
+          "text": "She makes her way to the supermarket every Saturday morning.",
+          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_2.mp3"
+        },
+        {
+          "text": "She goes to the supermarket every Saturday in the morning.",
+          "audioSrc": "public/data/audio/dummy/dummy_058_sideB_3.mp3"
+        }
+      ],
+      "note": "**[53]**\n\n"
+    },
+    {
+      "cardId": "dummy_059",
+      "cardType": "flippable",
+      "sideA": "Él viene a la oficina a las 8 AM en punto.",
+      "sideB": [
+        {
+          "text": "He comes to the office at 8 AM sharp.",
+          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_0.mp3"
+        },
+        {
+          "text": "He arrives at the office at 8 AM sharp.",
+          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_1.mp3"
+        },
+        {
+          "text": "He gets to the office at exactly 8 AM.",
+          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_2.mp3"
+        }
+      ],
+      "note": "**[53]**\n\n\n\n~He comes to the office at 8 AM in point~ is not valid because 'in point' is a literal translation. The correct expressions for an exact time are [8 AM sharp] or [8 AM on the dot]."
+    },
+    {
+      "cardId": "dummy_060",
+      "cardType": "flippable",
+      "sideA": "Ellos caminan a la escuela en lugar de tomar el autobús.",
+      "sideB": [
+        {
+          "text": "They walk to school instead of taking the bus.",
+          "audioSrc": "public/data/audio/dummy/dummy_060_sideB_0.mp3"
+        },
+        {
+          "text": "They go to school on foot rather than taking the bus.",
+          "audioSrc": "public/data/audio/dummy/dummy_060_sideB_1.mp3"
+        },
+        {
+          "text": "They walk to school rather than taking the bus.",
+          "audioSrc": "public/data/audio/dummy/dummy_060_sideB_2.mp3"
+        }
+      ],
+      "note": "**[53]**\n\n"
+    },
+    {
+      "cardId": "dummy_061",
+      "cardType": "flippable",
+      "sideA": "Mi padre conduce al trabajo diariamente.",
+      "sideB": [
+        {
+          "text": "My father drives to work daily.",
+          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_0.mp3"
+        },
+        {
+          "text": "My dad drives to work every day.",
+          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_1.mp3"
+        },
+        {
+          "text": "My father drives to his job on a daily basis.",
+          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_2.mp3"
+        }
+      ],
+      "note": "**[53]**\n\n"
+    },
+    {
+      "cardId": "dummy_062",
+      "cardType": "flippable",
+      "sideA": "El estudiante regresa a la universidad después de las vacaciones.",
+      "sideB": [
+        {
+          "text": "The student returns to the university after vacation.",
+          "audioSrc": "public/data/audio/dummy/dummy_062_sideB_0.mp3"
+        },
+        {
+          "text": "The student goes back to the university after the holidays.",
+          "audioSrc": "public/data/audio/dummy/dummy_062_sideB_1.mp3"
+        },
+        {
+          "text": "The student heads back to the university after vacation.",
+          "audioSrc": "public/data/audio/dummy/dummy_062_sideB_2.mp3"
+        }
+      ],
+      "note": "**[53]**\n\n"
+    },
+    {
+      "cardId": "dummy_063",
+      "cardType": "flippable",
+      "sideA": "La familia se muda a una casa más grande en los suburbios.",
+      "sideB": [
+        {
+          "text": "The family moves to a larger house in the suburbs.",
+          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_0.mp3"
+        },
+        {
+          "text": "The family is moving to a bigger house in the suburbs.",
+          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_1.mp3"
+        },
+        {
+          "text": "The family relocates to a larger house in the suburbs.",
+          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_2.mp3"
+        }
+      ],
+      "note": "**[53]**\n\n"
+    },
+    {
+      "cardId": "dummy_064",
+      "cardType": "flippable",
+      "sideA": "Ella entra al salón cinco minutos tarde.",
+      "sideB": [
+        {
+          "text": "She enters the classroom five minutes late.",
+          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_0.mp3"
+        },
+        {
+          "text": "She walks into the classroom five minutes late.",
+          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_1.mp3"
+        },
+        {
+          "text": "She comes into the classroom five minutes late.",
+          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_2.mp3"
+        }
+      ],
+      "note": "**[53]**\n\n"
+    },
+    {
+      "cardId": "dummy_065",
+      "cardType": "flippable",
+      "sideA": "Ellos llegan al destino después de tres horas.",
+      "sideB": [
+        {
+          "text": "They reach the destination after three hours.",
+          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_0.mp3"
+        },
+        {
+          "text": "They reach their destination after three hours of travel.",
+          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_1.mp3"
+        },
+        {
+          "text": "They arrive at the destination after three hours.",
+          "audioSrc": "public/data/audio/dummy/dummy_065_sideB_2.mp3"
+        }
+      ],
+      "note": "**[53]**\n\n\n\n~They arrive to the destination~ and ~They arrive the destination~ are not valid. The verb 'arrive' always requires a preposition and never uses 'to'. You must use [arrive at] for specific destinations."
+    },
+    {
+      "cardId": "dummy_066",
+      "cardType": "flippable",
+      "sideA": "El auto se acerca a la intersección lentamente.",
+      "sideB": [
+        {
+          "text": "The car approaches the intersection slowly.",
+          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_0.mp3"
+        },
+        {
+          "text": "The car nears the intersection slowly.",
+          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_1.mp3"
+        },
+        {
+          "text": "The car slowly approaches the intersection.",
+          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_2.mp3"
+        },
+        {
+          "text": "The car comes to the intersection slowly.",
+          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_3.mp3"
+        }
+      ],
+      "note": "**[53]**\n\n~approaches slowly the intersection~ is invalid because an adverb cannot be placed between a verb and its direct object. Use [slowly approaches the intersection] or [approaches the intersection slowly].\n\n~The car get closed the intersection~ is not valid. The correct phrasing would be [gets close to]."
+    },
+    {
+      "cardId": "dummy_067",
+      "cardType": "flippable",
+      "sideA": "El peatón cruza la calle con cuidado.",
+      "sideB": [
+        {
+          "text": "The pedestrian crosses the street carefully.",
+          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_0.mp3"
+        },
+        {
+          "text": "The pedestrian walks across the street carefully.",
+          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_1.mp3"
+        },
+        {
+          "text": "The pedestrian crosses the road with care.",
+          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_2.mp3"
+        }
+      ],
+      "note": "**[53]**\n\n"
+    },
+    {
+      "cardId": "dummy_068",
+      "cardType": "flippable",
+      "sideA": "¿El codigo está actualizado o desactualizado?",
+      "sideB": [
+        {
+          "text": "Is the code up to date or outdated?",
+          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_0.mp3"
+        },
+        {
+          "text": "Is the code updated or out of date?",
+          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_1.mp3"
+        },
+        {
+          "text": "Is the code current or deprecated?",
+          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_2.mp3"
+        },
+        {
+          "text": "Is the code updated or outdated?",
+          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_069",
+      "cardType": "flippable",
+      "sideA": "¿Para quien estoy trabajando?",
+      "sideB": [
+        {
+          "text": "Who am I working for?",
+          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_0.mp3"
+        },
+        {
+          "text": "For whom am I working?",
+          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_1.mp3"
+        },
+        {
+          "text": "Who is it that I am working for?",
+          "audioSrc": "public/data/audio/dummy/dummy_069_sideB_2.mp3"
+        }
+      ],
+      "note": "**[111]**\n\n"
+    },
+    {
+      "cardId": "dummy_070",
+      "cardType": "flippable",
+      "sideA": "¿Para quien trabajas?",
+      "sideB": [
+        {
+          "text": "Who do you work for?",
+          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_0.mp3"
+        },
+        {
+          "text": "For whom do you work?",
+          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_1.mp3"
+        },
+        {
+          "text": "Who are you working for?",
+          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_2.mp3"
+        }
+      ],
+      "note": "**[111]**\n\n"
+    },
+    {
+      "cardId": "dummy_071",
+      "cardType": "flippable",
+      "sideA": "Está lento porque no están casheadas las queries en la base de dato.",
+      "sideB": [
+        {
+          "text": "It's slow because the queries are not cached in the database.",
+          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_0.mp3"
+        },
+        {
+          "text": "It is slow because the database queries aren't cached.",
+          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_1.mp3"
+        },
+        {
+          "text": "It's running slow because the queries haven't been cached in the database.",
+          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_2.mp3"
+        },
+        {
+          "text": "It's slow because the queries are not being cached in the database.",
+          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_072",
+      "cardType": "flippable",
+      "sideA": "Las queries se cashean usandolas muchas veces, es algo automático.",
+      "sideB": [
+        {
+          "text": "Queries are cached by using them multiple times, it's automatic.",
+          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_0.mp3"
+        },
+        {
+          "text": "The queries get cached when used many times, it's an automatic process.",
+          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_1.mp3"
+        },
+        {
+          "text": "Queries cache themselves when executed frequently, it's something automatic.",
+          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_2.mp3"
+        },
+        {
+          "text": "The queries are cached by using them multiple times, it's automatic.",
+          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_3.mp3"
+        },
+        {
+          "text": "Queries are cached by using them several times, it's automatic.",
+          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_4.mp3"
+        },
+        {
+          "text": "Queries are cached using them multiple times, it's automatic.",
+          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_5.mp3"
+        }
+      ],
+      "note": "**[125]**\n\n"
     }
   ]
 }
