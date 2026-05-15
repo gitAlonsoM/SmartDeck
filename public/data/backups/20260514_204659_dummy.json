@@ -154,7 +154,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_030_sideB_3.mp3"
         }
       ],
-      "note": "**[218]**\n\n\n\n~Sorry, the program got froze~ and ~Sorry, the program got freeze~ are not valid because the past participle of 'freeze' is [frozen]. You can say it [got frozen], but it is much more natural to just say it [froze]."
+      "note": "\n\n~Sorry, the program got froze~ and ~Sorry, the program got freeze~ are not valid because the past participle of 'freeze' is [frozen]. You can say it [got frozen], but it is much more natural to just say it [froze]."
     },
     {
       "cardId": "dummy_033",
@@ -234,7 +234,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_037_sideB_4.mp3"
         }
       ],
-      "note": "**[217]**\n\nUsing [by] is very natural to describe being right next to a window, a door, or a body of water.\n\n~I want a desktop by the window~ is not valid because 'desktop' refers to a type of computer or a digital screen interface. The physical furniture you sit at is called a [desk]."
+      "note": "**[217]**\n\nUsing [by] is very natural to describe being right next to a window, a door, or a body of water."
     },
     {
       "cardId": "dummy_038",
@@ -296,13 +296,9 @@
         {
           "text": "Is there anything else you need? 'Not from my side.'",
           "audioSrc": "public/data/audio/dummy/dummy_040_sideB_2.mp3"
-        },
-        {
-          "text": "Do you need anything else? 'No, I'm good.'",
-          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_3.mp3"
         }
       ],
-      "note": "**[202]**\n\n~Nothing by my side~ means something is physically missing next to you. To mean 'from my perspective or team', use [on my side] or [on my end].\n\n~No on my end~ is not grammatically natural. You should use [Not on my end] or [Nothing on my end]."
+      "note": "**[202]**\n\n~Nothing by my side~ means something is physically missing next to you. To mean 'from my perspective or team', use [on my side] or [on my end]."
     },
     {
       "cardId": "dummy_041",
@@ -364,10 +360,6 @@
         {
           "text": "...And they handle the optimization of the binaries to output the final apps.",
           "audioSrc": "public/data/audio/dummy/dummy_043_sideB_2.mp3"
-        },
-        {
-          "text": "And they work optimizing the binaries to output the final apps.",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_3.mp3"
         }
       ],
       "note": null
@@ -390,7 +382,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_044_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~arriving into~ is incorrect because 'arrive' takes the prepositions 'in' (for spaces/folders) or 'at' (for points/locations). You cannot arrive 'into' something. Use [arriving in].\n\n~arriving to~ is also not valid for the exact same reason. The verb 'arrive' never pairs with 'to'."
+      "note": "\n\n~arriving into~ is incorrect because 'arrive' takes the prepositions 'in' (for spaces/folders) or 'at' (for points/locations). You cannot arrive 'into' something. Use [arriving in]."
     },
     {
       "cardId": "dummy_045",
@@ -428,10 +420,6 @@
         {
           "text": "Ideally, we would add this feature while it is in production.",
           "audioSrc": "public/data/audio/dummy/dummy_046_sideB_2.mp3"
-        },
-        {
-          "text": "The normal way would be to add this feature while it is in production.",
-          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_3.mp3"
         }
       ],
       "note": "\n\n~The normal would be~ is a direct translation from Spanish. In English, use an adverb like [Normally] or add a noun like [The normal thing would be]."
@@ -478,7 +466,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_048_sideB_3.mp3"
         }
       ],
-      "note": "\n\n~catching up in the infrastructure~ is not valid because the correct phrasal verb to express bringing yourself up to date on a topic is [catch up on]."
+      "note": null
     },
     {
       "cardId": "dummy_049",
@@ -496,10 +484,6 @@
         {
           "text": "I checked with Jeff about that, we're waiting to hear back from him.",
           "audioSrc": "public/data/audio/dummy/dummy_049_sideB_2.mp3"
-        },
-        {
-          "text": "I asked Jeff about that, we are waiting for his answer.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_3.mp3"
         }
       ],
       "note": null
@@ -522,7 +506,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_050_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~The database in production use to cache searching~ is not valid because 'use to' implies a past habit that no longer happens. For current routines, you should use [usually caches] or [tends to cache].\n\n~Production in the database use to cache searching~ is incorrect because the subject is reversed. It should be the [database in production]."
+      "note": null
     },
     {
       "cardId": "dummy_051",
@@ -714,7 +698,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_059_sideB_2.mp3"
         }
       ],
-      "note": "**[53]**\n\n\n\n~He comes to the office at 8 AM in point~ is not valid because 'in point' is a literal translation. The correct expressions for an exact time are [8 AM sharp] or [8 AM on the dot]."
+      "note": "**[53]**\n\n"
     },
     {
       "cardId": "dummy_060",
@@ -834,7 +818,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_065_sideB_2.mp3"
         }
       ],
-      "note": "**[53]**\n\n\n\n~They arrive to the destination~ and ~They arrive the destination~ are not valid. The verb 'arrive' always requires a preposition and never uses 'to'. You must use [arrive at] for specific destinations."
+      "note": "**[53]**\n\n"
     },
     {
       "cardId": "dummy_066",
@@ -852,13 +836,9 @@
         {
           "text": "The car slowly approaches the intersection.",
           "audioSrc": "public/data/audio/dummy/dummy_066_sideB_2.mp3"
-        },
-        {
-          "text": "The car comes to the intersection slowly.",
-          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_3.mp3"
         }
       ],
-      "note": "**[53]**\n\n~approaches slowly the intersection~ is invalid because an adverb cannot be placed between a verb and its direct object. Use [slowly approaches the intersection] or [approaches the intersection slowly].\n\n~The car get closed the intersection~ is not valid. The correct phrasing would be [gets close to]."
+      "note": "**[53]**\n\n~approaches slowly the intersection~ is invalid because an adverb cannot be placed between a verb and its direct object. Use [slowly approaches the intersection] or [approaches the intersection slowly]."
     },
     {
       "cardId": "dummy_067",
@@ -896,10 +876,6 @@
         {
           "text": "Is the code current or deprecated?",
           "audioSrc": "public/data/audio/dummy/dummy_068_sideB_2.mp3"
-        },
-        {
-          "text": "Is the code updated or outdated?",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_3.mp3"
         }
       ],
       "note": null
@@ -922,7 +898,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_069_sideB_2.mp3"
         }
       ],
-      "note": "**[111]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_070",
@@ -942,7 +918,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_070_sideB_2.mp3"
         }
       ],
-      "note": "**[111]**\n\n"
+      "note": null
     },
     {
       "cardId": "dummy_071",
@@ -960,10 +936,6 @@
         {
           "text": "It's running slow because the queries haven't been cached in the database.",
           "audioSrc": "public/data/audio/dummy/dummy_071_sideB_2.mp3"
-        },
-        {
-          "text": "It's slow because the queries are not being cached in the database.",
-          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_3.mp3"
         }
       ],
       "note": null
@@ -984,21 +956,9 @@
         {
           "text": "Queries cache themselves when executed frequently, it's something automatic.",
           "audioSrc": "public/data/audio/dummy/dummy_072_sideB_2.mp3"
-        },
-        {
-          "text": "The queries are cached by using them multiple times, it's automatic.",
-          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_3.mp3"
-        },
-        {
-          "text": "Queries are cached by using them several times, it's automatic.",
-          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_4.mp3"
-        },
-        {
-          "text": "Queries are cached using them multiple times, it's automatic.",
-          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_5.mp3"
         }
       ],
-      "note": "**[125]**\n\n"
+      "note": null
     }
   ]
 }
