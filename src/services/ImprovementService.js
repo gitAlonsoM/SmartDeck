@@ -95,7 +95,27 @@ class ImprovementService {
             };
         });
 
-        const textToCopy = this._generateImprovementPrompt(deck.name, correctCommand, exportBatch, catalogJson, deckRelativePath, modalImprovementRequests);
+        // Build live reference examples for §7G — pulled directly from the cached
+        // glossary so the LLM always sees real, up-to-date modal content.
+        const EXAMPLE_IDS = { er: ['9', '33', '68', '82'], pv: ['1', '61'] };
+        const exampleModals = {};
+        for (const [alias, ids] of Object.entries(EXAMPLE_IDS)) {
+            const name = GlossaryService.aliasToName(alias);
+            const g = name ? GlossaryService.getCachedGlossary(name) : null;
+            if (!g) continue;
+            for (const id of ids) {
+                if (g[id] && g[id].content) {
+                    exampleModals[`${alias}:${id}`] = {
+                        title: g[id].title,
+                        description: g[id].description || '',
+                        content: g[id].content
+                    };
+                }
+            }
+        }
+        console.log(`VERIFY: [ImprovementService] Built ${Object.keys(exampleModals).length} live reference examples for the prompt.`);
+
+        const textToCopy = this._generateImprovementPrompt(deck.name, correctCommand, exportBatch, catalogJson, deckRelativePath, modalImprovementRequests, exampleModals);
         try {
             await navigator.clipboard.writeText(textToCopy);
             return { 
@@ -114,11 +134,11 @@ class ImprovementService {
      * @private
      */
 
-static _generateImprovementPrompt(deckName, correctCommand, cardsToImprove, glossaryJson, deckFilePath, modalImprovements) {
+static _generateImprovementPrompt(deckName, correctCommand, cardsToImprove, glossaryJson, deckFilePath, modalImprovements, exampleModals = {}) {
 
         const promptHeader = `
 
-# SmartDeck Card Improvement Prompt V10.0 (Qualified Modal Catalog)
+# SmartDeck Card Improvement Prompt V10.1 (Live Modal Examples)
 ## 🎯 1. ROLE AND GOAL
 You are an expert for 'SmartDeck'. Your goal is to significantly enhance the pedagogical value of a batch of flashcards based on user feedback AND THE NEXT RULES!.
 
@@ -221,9 +241,13 @@ Before creating anything, rigorously scan the **MODAL CATALOG** (Section 9). The
 *Only execute this if the topic is completely absent from the catalog.*
 1. **Pick alias:** Use the alias that matches the topic (\`er\` for grammar rules, \`pv\` for phrasal verbs / lexical items).
 2. **Generate ID:** Within that alias, find the **highest numeric id** in the catalog and add **+1** (e.g., if the max \`er:\` id is 218, the new one is \`er:219\`). IDs are per-alias — they do NOT collide between aliases.
-3. **Design:** Create the content adhering strictly to **Rule 7 (The Anti-Shit Protocol)**.
+3. **Design:** Create the content adhering strictly to **Rule 7 (The Anti-Shit Protocol)**. Use the live examples in §7G as your ground-truth format reference.
 4. **Output:**
-    - **JSON:** Add the new object to the **Improved Modals JSON** block (Part 2 of Output) keyed by the qualified id (e.g., \`"er:219": { ... }\`).
+    - **JSON object shape:** Every new modal MUST include exactly these three fields:
+      - \`title\`: the topic name (same string you would use as the catalog title).
+      - \`description\`: a 1-line plain-English summary, max 30 words — used by the AI to identify the modal in future exports.
+      - \`content\`: the full HTML string following the Anti-Shit Protocol.
+    - **JSON:** Add the new object to the **Improved Modals JSON** block (Part 2 of Output) keyed by the qualified id (e.g., \`"er:219": { "title": "...", "description": "...", "content": "<p>...</p>" }\`).
     - **Card:** Inject the new link \`**[alias:NewID]**\\n\\n\` to the card's \`note\`.
 5. **Report:** "Topic not found in catalog. Created **NEW Modal [alias:NewID]** and linked it."
 
@@ -286,6 +310,15 @@ You must output the full JSON object for the modified modal(s) in a **separate J
 3. **Smart Coloring (Visual Focus):**
    - **Constraint:** Do NOT colorize every noun, verb, or object. El proposito de usar colores es resaltar la regla, palabras que el modal intenta enseñar, no usarlos libremente para cada noun, verb, adverb presente, si se usan de forma incorrecta pierden su proposito resaltar lo que importa y se vuelven contraproducentes.
    - **Target Only:** ONLY highlight the specific grammar point or keyword being taught (e.g., if teaching "At least", only highlight "at least"). Keep the rest of the sentence plain white/gray to maximize contrast and focus.
+
+
+### G. LIVE REFERENCE EXAMPLES (from the active glossary)
+These are real, complete modals pulled directly from the live glossary at export time. **Study their structure, coloring logic, and density before designing any new or improved modal.** They are your ground truth for correct output format.
+
+When creating a NEW modal (§6 STEP C), your output object MUST share the same shape as these entries: \`{ title, description, content }\`.
+\`\`\`json
+${JSON.stringify(exampleModals, null, 2)}
+\`\`\`
 
 
 ## 📢 8. SPECIAL RULE: HANDLING META-NOTICES
@@ -353,9 +386,10 @@ To avoid structural errors, you MUST process Part 1 using this mental workflow b
    {
      "er:50": {
        "title": "Improved Title",
+       "description": "Updated 1-line summary, max 30 words.",
        "content": "<p>New HTML content...</p>"
      },
-     "pv:188": { ... }
+     "pv:188": { "title": "...", "description": "...", "content": "..." }
    }
    \`\`\`
 
