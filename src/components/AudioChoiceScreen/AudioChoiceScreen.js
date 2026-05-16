@@ -183,43 +183,34 @@ revealFeedback() {
         
         let contentText = this.currentCard.content?.value || '';
 
-        // 1. Determine Glossary Source (Dynamic)
-        let glossaryName = 'english_rules'; 
-        if (this.currentDeckId === 'phrasal_verbs_audio_choice') {
-            glossaryName = 'phrasal_verbs';
-        }
-        
-        // 2. Handle the "Header" Tip (First Modal at the start)
-        const modalMatch = contentText.match(/^\*\*\[(\d+)\]\*\*\n\n/);
+        // 1. Header "Tip" (modal link at the very start of the content)
+        const modalMatch = contentText.match(/^\*\*\[([a-z]{1,8}):(\d+)\]\*\*\n\n/);
         if (modalMatch) {
-            const modalId = modalMatch[1];
-            // VERIFY: This log confirms the component is loading the correct glossary
-            console.log(`VERIFY: [AudioChoiceScreen] Using glossary '${glossaryName}' for deck '${this.currentDeckId}'.`);
-            const glossary = GlossaryService.getCachedGlossary(glossaryName);
+            const [, alias, modalId] = modalMatch;
+            const glossaryName = GlossaryService.aliasToName(alias);
+            const glossary = glossaryName ? GlossaryService.getCachedGlossary(glossaryName) : null;
 
             if (glossary && glossary[modalId]) {
                 const termTitle = glossary[modalId].title;
-                grammarNoteTitleEl.innerHTML = `Tip - <a href="#" class="glossary-term font-bold text-green-400 hover:underline" data-term-key="${modalId}">${termTitle}</a>`;
-                contentText = contentText.replace(modalMatch[0], ''); 
+                grammarNoteTitleEl.innerHTML = `Tip - <a href="#" class="glossary-term font-bold text-green-400 hover:underline" data-term-key="${alias}:${modalId}">${termTitle}</a>`;
+                contentText = contentText.replace(modalMatch[0], '');
             } else {
-                console.warn(`[AudioChoiceScreen] Modal ID ${modalId} not found in glossary '${glossaryName}'. Hiding Tip.`);
+                console.warn(`[AudioChoiceScreen] Modal ${alias}:${modalId} not found. Hiding Tip.`);
                 grammarNoteTitleEl.textContent = '';
             }
         } else {
-            grammarNoteTitleEl.textContent = ''; 
-            console.log("VERIFY: [AudioChoiceScreen] Card content does not start with a modal ID, proceeding normally.");
+            grammarNoteTitleEl.textContent = '';
         }
 
-        // 3. Process REMAINING Inline Modals (**[ID]**) -> Clickable Links
-        // This was missing before. We replace any **[ID]** left in the text.
-        contentText = contentText.replace(/\*\*\[(\d+)\]\*\*/g, (match, termId) => {
-            const glossary = GlossaryService.getCachedGlossary(glossaryName);
+        // 2. Inline modal links **[alias:id]** -> clickable titles
+        contentText = contentText.replace(/\*\*\[([a-z]{1,8}):(\d+)\]\*\*/g, (match, alias, termId) => {
+            const glossaryName = GlossaryService.aliasToName(alias);
+            const glossary = glossaryName ? GlossaryService.getCachedGlossary(glossaryName) : null;
             if (glossary && glossary[termId]) {
                 const termTitle = glossary[termId].title;
-                return `<a href="#" class="glossary-term font-bold text-green-400 hover:underline" data-term-key="${termId}">${termTitle}</a>`;
-            } else {
-                return `<strong>[${termId}]</strong>`; // Fallback if not found
+                return `<a href="#" class="glossary-term font-bold text-green-400 hover:underline" data-term-key="${alias}:${termId}">${termTitle}</a>`;
             }
+            return `<strong>[${alias}:${termId}]</strong>`;
         });
 
         // 4. Standard Formatting (Bold & Warning)

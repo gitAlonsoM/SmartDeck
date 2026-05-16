@@ -35,6 +35,7 @@ class App {
 
     async init() {
         console.log("DEBUG: [App] init -> Starting application initialization.");
+        StorageService.migrateModalImprovementKeys();
         await this.setupComponents();
         await this.loadDecks();
         this.render();
@@ -129,36 +130,37 @@ class App {
     }
     /**
      * Handles the request to show an informational modal for a glossary term.
-     * @param {string} termKey - The unique key for the term (e.g., 'subject_question').
+     * @param {string} termKey - Qualified key "<alias>:<id>" (e.g. "pv:188", "er:5").
      */
     async handleShowInfoModal(termKey) {
         if (!termKey) return;
         console.log(`DEBUG: [App] handleShowInfoModal -> Request to show modal for term: ${termKey}`);
 
-        // Dynamically determine which glossary to use based on the active deck
-        const deckId = this.state.currentDeckId;
-        let glossaryName = 'english_rules'; // Default glossary
+        // termKey is qualified: "<alias>:<id>" (e.g. "pv:188", "er:5").
+        // Alias resolves to a glossary file via GlossaryService.GLOSSARY_ALIASES.
+        const [alias, id] = termKey.split(':');
+        const glossaryName = GlossaryService.aliasToName(alias);
 
-        // --- DECK-TO-GLOSSARY ROUTER ---
-        // This is where we map a specific deckId to its specific glossary file.
-        if (deckId === 'phrasal_verbs_audio_choice') {
-            glossaryName = 'phrasal_verbs'; // Use the phrasal verbs glossary
+        if (!glossaryName || !id) {
+            console.warn(`[App] handleShowInfoModal -> Malformed termKey '${termKey}'. Expected "<alias>:<id>".`);
+            this.notificationModal.show(
+                'Not Found',
+                `Modal reference '${termKey}' is malformed. Expected "<alias>:<id>" (e.g. "er:5").`,
+                { icon: 'fa-solid fa-question-circle', color: 'text-orange-500', bgColor: 'bg-orange-100 dark:bg-orange-900' }
+            );
+            return;
         }
-        // VERIFY: This log will confirm the fix is working
-        console.log(`VERIFY: [App] handleShowInfoModal -> Using glossary '${glossaryName}' for deck '${deckId}'.`);
 
-        // Fetch the term from the *correct* glossary
-        const termData = await GlossaryService.getTerm(glossaryName, termKey);
-       // Now we check for the termData *after* fetching it from the correct source
+        const termData = await GlossaryService.getTerm(glossaryName, id);
         if (termData) {
-            this.state.currentModalTitle = termData.title; // Save title to state for LLM injection
+            this.state.currentModalTitle = termData.title;
             const allModalImprovements = StorageService.loadAllModalImprovements();
             const isMarked = allModalImprovements.hasOwnProperty(termKey);
             this.infoModal.show(termData.title, termData.content, termKey, isMarked);
         } else {
             this.notificationModal.show(
                 'Not Found',
-                `Sorry, the definition for '${termKey.replace('_', ' ')}' could not be found in the '${glossaryName}' glossary.`,
+                `Sorry, the definition for '${id}' could not be found in the '${glossaryName}' glossary.`,
                 { icon: 'fa-solid fa-question-circle', color: 'text-orange-500', bgColor: 'bg-orange-100 dark:bg-orange-900' }
             );
         }

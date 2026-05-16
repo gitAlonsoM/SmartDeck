@@ -4,7 +4,7 @@
   "description": "Master essential English phrasal verbs by completing sentences. Each card includes a valuable tip and detailed explanations to accelerate your learning.",
   "deckType": "audioChoice",
   "isAiGenerated": false,
-  "hint": "Developer Note: The 'hint' field within individual cards is strictly displayed post-answer. It must not contain information required to solve the exercise. Each card must be self-sufficient and clear enough to be completed independently. Use the 'hint' property exclusively for supplementary pedagogical value or context after the user's choice has been made.", 
+  "hint": "Developer Note: The 'hint' field within individual cards is strictly displayed post-answer. It must not contain information required to solve the exercise. Each card must be self-sufficient and clear enough to be completed independently. Use the 'hint' property exclusively for supplementary pedagogical value or context after the user's choice has been made.",
   "cards": [
     {
       "cardId": "pvac_001",
@@ -31,7 +31,7 @@
       "hint": "The phrase 'up to' is used to assign responsibility or choice to someone.",
       "content": {
         "type": "text",
-        "value": "**[188]**\n\n[Up to] indicates that someone has the responsibility or freedom to make a decision.\n\n~Down to~ often means something is reduced to its essentials (e.g., 'it comes down to two options').\n~On to~ suggests progression to the next thing."
+        "value": "**[pv:188]**\n\n[Up to] indicates that someone has the responsibility or freedom to make a decision.\n\n~Down to~ often means something is reduced to its essentials (e.g., 'it comes down to two options').\n~On to~ suggests progression to the next thing."
       }
     },
     {
@@ -59,7 +59,7 @@
       "hint": "Use 'up to' to indicate who has the final authority or decision-making power.",
       "content": {
         "type": "text",
-        "value": "**[188]**\n\n[Up to] correctly assigns the final responsibility to the manager.\n\n~Out of~ would imply the decision is not the manager's (e.g., 'out of my hands').\n~Over~ does not fit grammatically in this context."
+        "value": "**[pv:188]**\n\n[Up to] correctly assigns the final responsibility to the manager.\n\n~Out of~ would imply the decision is not the manager's (e.g., 'out of my hands').\n~Over~ does not fit grammatically in this context."
       }
     },
     {
@@ -87,7 +87,7 @@
       "hint": "The particle 'up' with 'break' signifies the complete ending or dissolution of a relationship.",
       "content": {
         "type": "text",
-        "value": "**[11]**\n\n[Break up] means to end a romantic relationship.\n\n~Break down~ means to stop functioning (for a machine) or to become emotionally overwhelmed.\n~Break in~ means to enter a building by force."
+        "value": "**[pv:11]**\n\n[Break up] means to end a romantic relationship.\n\n~Break down~ means to stop functioning (for a machine) or to become emotionally overwhelmed.\n~Break in~ means to enter a building by force."
       }
     },
     {
@@ -115,7 +115,7 @@
       "hint": "Here, 'break up' means to disperse or cause a gathering of people to end.",
       "content": {
         "type": "text",
-        "value": "**[11]**\n\n[Broke up] means to disperse a crowd or gathering.\n\n~Shut down~ means to close permanently (like a business).\n~Called off~ means to cancel an event before it happens."
+        "value": "**[pv:11]**\n\n[Broke up] means to disperse a crowd or gathering.\n\n~Shut down~ means to close permanently (like a business).\n~Called off~ means to cancel an event before it happens."
       }
     },
     {
@@ -143,7 +143,7 @@
       "hint": "The particle 'up' can suggest raising something to the surface, like a topic in a conversation.",
       "content": {
         "type": "text",
-        "value": "**[14]**\n\n[Bring up] means to mention or introduce a topic for discussion.\n\n~Come up~ means to arise or happen unexpectedly.\n~Get up~ means to rise from a bed or chair."
+        "value": "**[pv:14]**\n\n[Bring up] means to mention or introduce a topic for discussion.\n\n~Come up~ means to arise or happen unexpectedly.\n~Get up~ means to rise from a bed or chair."
       }
     },
     {
@@ -171,7 +171,7 @@
       "hint": "In the context of childhood, 'bring up' refers to the process of raising and educating a child.",
       "content": {
         "type": "text",
-        "value": "**[14]**\n\n[Brought up] is used in the passive voice to mean raised or cared for as a child.\n\n~Grown up~ is an intransitive verb; you cannot be 'grown up' by someone.\n~Taken in~ means to be deceived or to provide shelter, not to raise a child."
+        "value": "**[pv:14]**\n\n[Brought up] is used in the passive voice to mean raised or cared for as a child.\n\n~Grown up~ is an intransitive verb; you cannot be 'grown up' by someone.\n~Taken in~ means to be deceived or to provide shelter, not to raise a child."
       }
     },
     {
@@ -199,7 +199,7 @@
       "hint": "The particle 'up' with 'build' emphasizes a gradual increase or accumulation.",
       "content": {
         "type": "text",
-        "value": "**[15]**\n\n[Build up] means to gradually increase or develop something, like strength or confidence.\n\n~Ramp up~ means to increase sharply, often in a business context, which is too intense for this sentence.\n~Work out~ means to exercise, which is related but not the exact meaning."
+        "value": "**[pv:15]**\n\n[Build up] means to gradually increase or develop something, like strength or confidence.\n\n~Ramp up~ means to increase sharply, often in a business context, which is too intense for this sentence.\n~Work out~ means to exercise, which is related but not the exact meaning."
       }
     },
     {
@@ -227,7 +227,7 @@
       "hint": "'Catch up' specifically means to update each other on news and life events.",
       "content": {
         "type": "text",
-        "value": "**[25]**\n\n[Catch up] is the idiomatic phrasal verb for updating one another on what has happened since you last saw each other.\n\n~Meet up~ simply means to meet someone, but lacks the specific meaning of updating each other.\n~Talk over~ means to discuss a problem in detail."
+        "value": "**[pv:25]**\n\n[Catch up] is the idiomatic phrasal verb for updating one another on what has happened since you last saw each other.\n\n~Meet up~ simply means to meet someone, but lacks the specific meaning of updating each other.\n~Talk over~ means to discuss a problem in detail."
       }
     },
     {
@@ -255,7 +255,7 @@
       "hint": "In an academic or work context, 'catch up on' means to do something you did not have time to do earlier.",
       "content": {
         "type": "text",
-        "value": "**[26]**\n\n[Catch up on] means to do work or tasks that you have fallen behind on.\n\n~Make up~ is used for something missed, like 'make up an exam', but it doesn't fit the 'on' preposition.\n~Work out~ means to exercise or to solve something, which is not the correct meaning here."
+        "value": "**[pv:26]**\n\n[Catch up on] means to do work or tasks that you have fallen behind on.\n\n~Make up~ is used for something missed, like 'make up an exam', but it doesn't fit the 'on' preposition.\n~Work out~ means to exercise or to solve something, which is not the correct meaning here."
       }
     },
     {
@@ -283,7 +283,7 @@
       "hint": "The particle 'up' here implies making something completely or thoroughly clean.",
       "content": {
         "type": "text",
-        "value": "**[32]**\n\n[Clean up] means to make a place tidy and clean, often after a mess has been made.\n\n~Sort out~ means to organize things or solve a problem.\n~Put away~ means to put things in their correct storage place, which is part of cleaning up but not the whole action."
+        "value": "**[pv:32]**\n\n[Clean up] means to make a place tidy and clean, often after a mess has been made.\n\n~Sort out~ means to organize things or solve a problem.\n~Put away~ means to put things in their correct storage place, which is part of cleaning up but not the whole action."
       }
     },
     {
@@ -311,7 +311,7 @@
       "hint": "'Come up' is used to describe an unexpected event or problem that requires your attention.",
       "content": {
         "type": "text",
-        "value": "**[38]**\n\n[Came up] means that something arose or appeared unexpectedly, usually a problem or situation needing to be dealt with.\n\n~Showed up~ means to arrive at a place.\n~Turned up~ can mean to appear unexpectedly, but it's usually for a lost object or a person, not an abstract situation."
+        "value": "**[pv:38]**\n\n[Came up] means that something arose or appeared unexpectedly, usually a problem or situation needing to be dealt with.\n\n~Showed up~ means to arrive at a place.\n~Turned up~ can mean to appear unexpectedly, but it's usually for a lost object or a person, not an abstract situation."
       }
     },
     {
@@ -339,7 +339,7 @@
       "hint": "This three-part phrasal verb means to think of or create something new, like a plan or solution.",
       "content": {
         "type": "text",
-        "value": "**[39]**\n\n[Came up with] specifically means to produce an idea or plan through thought.\n\n~Looked into~ means to investigate, not to create.\n~Made up~ usually means to invent something false, like a story or excuse."
+        "value": "**[pv:39]**\n\n[Came up with] specifically means to produce an idea or plan through thought.\n\n~Looked into~ means to investigate, not to create.\n~Made up~ usually means to invent something false, like a story or excuse."
       }
     },
     {
@@ -367,7 +367,7 @@
       "hint": "The particle 'up' with 'give' signifies complete surrender or cessation of an effort.",
       "content": {
         "type": "text",
-        "value": "**[80]**\n\n[Give up] means to quit or stop trying.\n\n~Give in~ means to surrender to pressure or demands from others.\n~Give away~ means to give something for free or reveal a secret."
+        "value": "**[pv:80]**\n\n[Give up] means to quit or stop trying.\n\n~Give in~ means to surrender to pressure or demands from others.\n~Give away~ means to give something for free or reveal a secret."
       }
     },
     {
@@ -395,7 +395,7 @@
       "hint": "Use 'give up' to talk about quitting a habit completely.",
       "content": {
         "type": "text",
-        "value": "**[79]**\n\n[Gave up] is the correct phrasal verb for quitting a habit.\n\n~Cut down~ means to reduce the amount, not to quit completely.\n~Cut out~ means to eliminate something, but 'gave up' is the most common phrasal verb for quitting a habit."
+        "value": "**[pv:79]**\n\n[Gave up] is the correct phrasal verb for quitting a habit.\n\n~Cut down~ means to reduce the amount, not to quit completely.\n~Cut out~ means to eliminate something, but 'gave up' is the most common phrasal verb for quitting a habit."
       }
     },
     {
@@ -423,7 +423,7 @@
       "hint": "'Grow up' refers to the entire process of maturing from childhood to adulthood.",
       "content": {
         "type": "text",
-        "value": "**[89]**\n\n[Grow up] is the phrasal verb that means to become an adult.\n\n~Show up~ means to arrive at a place.\n~Stand up~ means to rise to your feet."
+        "value": "**[pv:89]**\n\n[Grow up] is the phrasal verb that means to become an adult.\n\n~Show up~ means to arrive at a place.\n~Stand up~ means to rise to your feet."
       }
     },
     {
@@ -451,7 +451,7 @@
       "hint": "The phrasal verb 'look up' specifically means to search for information in a reference source.",
       "content": {
         "type": "text",
-        "value": "**[117]**\n\n[Look it up] means to find a piece of information in a book, list, or computer.\n\n~Look for it~ means to search for a physical object you have lost.\n~Find it out~ means to discover information, but 'look up' is specific to using a reference."
+        "value": "**[pv:117]**\n\n[Look it up] means to find a piece of information in a book, list, or computer.\n\n~Look for it~ means to search for a physical object you have lost.\n~Find it out~ means to discover information, but 'look up' is specific to using a reference."
       }
     },
     {
@@ -479,7 +479,7 @@
       "hint": "When a situation is 'looking up', it means it is starting to improve.",
       "content": {
         "type": "text",
-        "value": "**[117]**\n\n[Looking up] is an idiomatic expression that means a situation is improving or becoming more hopeful.\n\n~Calming down~ means becoming less agitated.\n~Turning around~ implies a more dramatic change from failure to success."
+        "value": "**[pv:117]**\n\n[Looking up] is an idiomatic expression that means a situation is improving or becoming more hopeful.\n\n~Calming down~ means becoming less agitated.\n~Turning around~ implies a more dramatic change from failure to success."
       }
     },
     {
@@ -507,7 +507,7 @@
       "hint": "'Make up' often has the connotation of inventing something that is not true, like a story or a lie.",
       "content": {
         "type": "text",
-        "value": "**[122]**\n\n[Made up] means to invent a story, especially a false one.\n\n~Came up with~ means to create an idea, usually a genuine one.\n~Wrote down~ means to record information on paper."
+        "value": "**[pv:122]**\n\n[Made up] means to invent a story, especially a false one.\n\n~Came up with~ means to create an idea, usually a genuine one.\n~Wrote down~ means to record information on paper."
       }
     },
     {
@@ -535,7 +535,7 @@
       "hint": "In the context of relationships, 'make up' means to reconcile and become friends again after a fight.",
       "content": {
         "type": "text",
-        "value": "**[122]**\n\n[Made up] means to forgive someone and be friendly again after an argument.\n\n~Calmed down~ means they became less angry, but doesn't necessarily mean they reconciled.\n~Got along~ describes a general state of having a good relationship, not the act of reconciling."
+        "value": "**[pv:122]**\n\n[Made up] means to forgive someone and be friendly again after an argument.\n\n~Calmed down~ means they became less angry, but doesn't necessarily mean they reconciled.\n~Got along~ describes a general state of having a good relationship, not the act of reconciling."
       }
     },
     {
@@ -563,7 +563,7 @@
       "hint": "'Pick up' is the standard phrasal verb for going somewhere to collect someone, typically in a car.",
       "content": {
         "type": "text",
-        "value": "**[131]**\n\n[Pick you up] means to go and collect someone from a place.\n\n~Drop you off~ is the opposite action: taking someone to a place and leaving them.\n~See you off~ means to go to the airport/station to say goodbye to someone who is leaving."
+        "value": "**[pv:131]**\n\n[Pick you up] means to go and collect someone from a place.\n\n~Drop you off~ is the opposite action: taking someone to a place and leaving them.\n~See you off~ means to go to the airport/station to say goodbye to someone who is leaving."
       }
     },
     {
@@ -591,7 +591,7 @@
       "hint": "When you 'pick up' a skill or language, it implies learning it informally and easily without structured lessons.",
       "content": {
         "type": "text",
-        "value": "**[131]**\n\n[Picked up] means to learn a new skill or start a habit without intending to.\n\n~Looked into~ means to investigate, not to learn.\n~Found out~ means to discover a fact, not to learn a skill."
+        "value": "**[pv:131]**\n\n[Picked up] means to learn a new skill or start a habit without intending to.\n\n~Looked into~ means to investigate, not to learn.\n~Found out~ means to discover a fact, not to learn a skill."
       }
     },
     {
@@ -619,7 +619,7 @@
       "hint": "This three-part phrasal verb, 'put up with', means to tolerate or endure something negative.",
       "content": {
         "type": "text",
-        "value": "**[140]**\n\n[Puts up with] means to tolerate or accept something annoying or unpleasant without complaining.\n\n~Stands for~ means to represent or to tolerate (e.g., 'I won't stand for this behavior'), but 'put up with' is more common for ongoing situations.\n~Gets along with~ means to have a friendly relationship, which is the opposite of this context."
+        "value": "**[pv:140]**\n\n[Puts up with] means to tolerate or accept something annoying or unpleasant without complaining.\n\n~Stands for~ means to represent or to tolerate (e.g., 'I won't stand for this behavior'), but 'put up with' is more common for ongoing situations.\n~Gets along with~ means to have a friendly relationship, which is the opposite of this context."
       }
     },
     {
@@ -647,7 +647,7 @@
       "hint": "To 'set up' something means to prepare a piece of equipment so it is ready to use.",
       "content": {
         "type": "text",
-        "value": "**[150]**\n\n[Set up] means to arrange or establish something, like installing and configuring a new device.\n\n~Turn on~ is just one step of setting up.\n~Build up~ means to increase gradually, which is not the correct meaning."
+        "value": "**[pv:150]**\n\n[Set up] means to arrange or establish something, like installing and configuring a new device.\n\n~Turn on~ is just one step of setting up.\n~Build up~ means to increase gradually, which is not the correct meaning."
       }
     },
     {
@@ -675,7 +675,7 @@
       "hint": "'Show up' means to arrive or appear, especially when others are expecting you.",
       "content": {
         "type": "text",
-        "value": "**[153]**\n\n[Showed up] is the idiomatic phrasal verb for arriving at a place, often with the implication that it was expected.\n\n~Came in~ means to enter a room or building.\n~Turned up~ is a very close synonym, but 'showed up' often implies that people were expecting you."
+        "value": "**[pv:153]**\n\n[Showed up] is the idiomatic phrasal verb for arriving at a place, often with the implication that it was expected.\n\n~Came in~ means to enter a room or building.\n~Turned up~ is a very close synonym, but 'showed up' often implies that people were expecting you."
       }
     },
     {
@@ -703,7 +703,7 @@
       "hint": "While 'get up' is for leaving bed, 'stand up' is specifically for rising to your feet from a sitting position.",
       "content": {
         "type": "text",
-        "value": "**[165]**\n\n[Stand up] means to rise from a sitting or lying position.\n\n~Get up~ is usually used for getting out of bed in the morning.\n~Rise up~ is more poetic or formal, and often implies rebellion."
+        "value": "**[pv:165]**\n\n[Stand up] means to rise from a sitting or lying position.\n\n~Get up~ is usually used for getting out of bed in the morning.\n~Rise up~ is more poetic or formal, and often implies rebellion."
       }
     },
     {
@@ -731,7 +731,7 @@
       "hint": "'Stay up' means to remain awake and not go to bed, especially later than usual.",
       "content": {
         "type": "text",
-        "value": "**[167]**\n\n[Stay up] means to not go to bed at the usual time.\n\n~Wake up~ is the opposite; it means to stop sleeping.\n~Keep on~ means to continue doing something."
+        "value": "**[pv:167]**\n\n[Stay up] means to not go to bed at the usual time.\n\n~Wake up~ is the opposite; it means to stop sleeping.\n~Keep on~ means to continue doing something."
       }
     },
     {
@@ -759,7 +759,7 @@
       "hint": "To 'stir up' something means to provoke or cause an unpleasant emotion or situation.",
       "content": {
         "type": "text",
-        "value": "**[169]**\n\n[Stir up] means to cause trouble, arguments, or strong feelings.\n\n~Make up~ means to invent or to reconcile.\n~Bring on~ means to cause something to happen, usually something negative, but 'stir up' is more specific to provoking conflict."
+        "value": "**[pv:169]**\n\n[Stir up] means to cause trouble, arguments, or strong feelings.\n\n~Make up~ means to invent or to reconcile.\n~Bring on~ means to cause something to happen, usually something negative, but 'stir up' is more specific to provoking conflict."
       }
     },
     {
@@ -787,7 +787,7 @@
       "hint": "Use 'turn up' when a lost object is found unexpectedly.",
       "content": {
         "type": "text",
-        "value": "**[187]**\n\n[Turned up] means to be found, especially by chance, after being lost.\n\n~Showed up~ is used for people arriving, not for objects being found.\n~Came out~ means to be revealed or published."
+        "value": "**[pv:187]**\n\n[Turned up] means to be found, especially by chance, after being lost.\n\n~Showed up~ is used for people arriving, not for objects being found.\n~Came out~ means to be revealed or published."
       }
     },
     {
@@ -815,7 +815,7 @@
       "hint": "The particle 'up' with 'turn' means to increase the volume, heat, or intensity of a device.",
       "content": {
         "type": "text",
-        "value": "**[187]**\n\n[Turn up] specifically means to increase the volume.\n\n~Put on~ means to start playing music.\n~Switch on~ is a synonym for 'turn on', meaning to activate the device, but not to increase its volume."
+        "value": "**[pv:187]**\n\n[Turn up] specifically means to increase the volume.\n\n~Put on~ means to start playing music.\n~Switch on~ is a synonym for 'turn on', meaning to activate the device, but not to increase its volume."
       }
     },
     {
@@ -843,7 +843,7 @@
       "hint": "'Wrap up' is a common, slightly informal way to say 'finish' or 'conclude' an activity.",
       "content": {
         "type": "text",
-        "value": "**[196]**\n\n[Wrap up] means to bring something to a conclusion.\n\n~End up~ describes a final result or location, often unexpected (e.g., 'we ended up at the wrong restaurant').\n~Finish off~ means to complete the final part of something."
+        "value": "**[pv:196]**\n\n[Wrap up] means to bring something to a conclusion.\n\n~End up~ describes a final result or location, often unexpected (e.g., 'we ended up at the wrong restaurant').\n~Finish off~ means to complete the final part of something."
       }
     },
     {
@@ -871,7 +871,7 @@
       "hint": "The particle 'down' with 'break' indicates a complete cessation of function for a machine.",
       "content": {
         "type": "text",
-        "value": "**[10]**\n\n[Broke down] is the specific phrasal verb for when a machine or vehicle stops working.\n\n~Shut down~ means to turn a machine off intentionally.\n~Gave out~ can mean to stop working, but it's more general and often used for body parts ('my legs gave out')."
+        "value": "**[pv:10]**\n\n[Broke down] is the specific phrasal verb for when a machine or vehicle stops working.\n\n~Shut down~ means to turn a machine off intentionally.\n~Gave out~ can mean to stop working, but it's more general and often used for body parts ('my legs gave out')."
       }
     },
     {
@@ -899,7 +899,7 @@
       "hint": "For people, 'break down' means to lose emotional control and start crying.",
       "content": {
         "type": "text",
-        "value": "**[10]**\n\n[Broke down] means to become very upset and unable to control your emotions.\n\n~Fell apart~ is similar but often implies a more severe and long-lasting mental collapse.\n~Cried out~ means to shout while crying."
+        "value": "**[pv:10]**\n\n[Broke down] means to become very upset and unable to control your emotions.\n\n~Fell apart~ is similar but often implies a more severe and long-lasting mental collapse.\n~Cried out~ means to shout while crying."
       }
     },
     {
@@ -927,7 +927,7 @@
       "hint": "'Burn down' is used when a fire destroys a building completely, causing it to collapse.",
       "content": {
         "type": "text",
-        "value": "**[16]**\n\n[Burned down] specifically means for a building to be completely destroyed by fire.\n\n~Burned up~ means to be consumed by fire, but doesn't necessarily imply a building collapsing.\n~Burned out~ means to stop working due to heat or overuse, or to become exhausted from stress."
+        "value": "**[pv:16]**\n\n[Burned down] specifically means for a building to be completely destroyed by fire.\n\n~Burned up~ means to be consumed by fire, but doesn't necessarily imply a building collapsing.\n~Burned out~ means to stop working due to heat or overuse, or to become exhausted from stress."
       }
     },
     {
@@ -955,7 +955,7 @@
       "hint": "The particle 'down' suggests a reduction in intensity, like lowering the level of anger or excitement.",
       "content": {
         "type": "text",
-        "value": "**[20]**\n\n[Calm down] means to become relaxed and less emotional.\n\n~Cool off~ is similar, but often used specifically for anger.\n~Settle down~ means to adopt a more stable lifestyle (get married, buy a house) or for a group (like children) to become quiet."
+        "value": "**[pv:20]**\n\n[Calm down] means to become relaxed and less emotional.\n\n~Cool off~ is similar, but often used specifically for anger.\n~Settle down~ means to adopt a more stable lifestyle (get married, buy a house) or for a group (like children) to become quiet."
       }
     },
     {
@@ -983,7 +983,7 @@
       "hint": "'Close down' means for a business to stop operating permanently.",
       "content": {
         "type": "text",
-        "value": "**[34]**\n\n[Close down] means for a business to stop operating permanently.\n\n~Break down~ means to stop functioning (like a machine), not for a business to close.\n~Fall through~ means for a plan or deal to fail, not for a business to close."
+        "value": "**[pv:34]**\n\n[Close down] means for a business to stop operating permanently.\n\n~Break down~ means to stop functioning (like a machine), not for a business to close.\n~Fall through~ means for a plan or deal to fail, not for a business to close."
       }
     },
     {
@@ -1011,7 +1011,7 @@
       "hint": "The phrasal verb 'cut down on' specifically means to reduce the consumption of something.",
       "content": {
         "type": "text",
-        "value": "**[43]**\n\n[Cut down on] is the correct three-part phrasal verb for reducing how much you eat, drink, or use something.\n\n~Cut out~ means to eliminate something completely from your diet or routine.\n~Cut back~ is very similar to 'cut down', but 'cut down on' is more common when specifying the item being reduced."
+        "value": "**[pv:43]**\n\n[Cut down on] is the correct three-part phrasal verb for reducing how much you eat, drink, or use something.\n\n~Cut out~ means to eliminate something completely from your diet or routine.\n~Cut back~ is very similar to 'cut down', but 'cut down on' is more common when specifying the item being reduced."
       }
     },
     {
@@ -1039,7 +1039,7 @@
       "hint": "'Go down' is used to describe a decrease in a level, price, or amount.",
       "content": {
         "type": "text",
-        "value": "**[84]**\n\n[Gone down] means to decrease or reduce.\n\n~Fallen down~ means to collapse to the ground (like a person or a building).\n~Died out~ means to become extinct or disappear completely."
+        "value": "**[pv:84]**\n\n[Gone down] means to decrease or reduce.\n\n~Fallen down~ means to collapse to the ground (like a person or a building).\n~Died out~ means to become extinct or disappear completely."
       }
     },
     {
@@ -1067,7 +1067,7 @@
       "hint": "To 'let someone down' means to fail to support or help them as they had hoped or expected.",
       "content": {
         "type": "text",
-        "value": "**[105]**\n\n[Let me down] means to disappoint someone by failing to do what you promised.\n\n~Passed me over~ means to be ignored for a job or promotion.\n~Put me down~ means to insult or criticize someone."
+        "value": "**[pv:105]**\n\n[Let me down] means to disappoint someone by failing to do what you promised.\n\n~Passed me over~ means to be ignored for a job or promotion.\n~Put me down~ means to insult or criticize someone."
       }
     },
     {
@@ -1095,7 +1095,7 @@
       "hint": "'Put down' simply means to place an object you are holding onto a surface.",
       "content": {
         "type": "text",
-        "value": "**[137]**\n\n[Put down] means to place something on a table, floor, or other surface.\n\n~Turned off~ means to deactivate the phone.\n~Threw away~ means to discard it in the trash."
+        "value": "**[pv:137]**\n\n[Put down] means to place something on a table, floor, or other surface.\n\n~Turned off~ means to deactivate the phone.\n~Threw away~ means to discard it in the trash."
       }
     },
     {
@@ -1123,7 +1123,7 @@
       "hint": "'Shut down' is the specific term for the process of a computer turning itself off completely.",
       "content": {
         "type": "text",
-        "value": "**[155]**\n\n[Shut down] is the standard phrasal verb for turning off a computer through its operating system.\n\n~Log off~ means to sign out of your user account, but the computer stays on.\n~Boot up~ is the opposite: to start the computer."
+        "value": "**[pv:155]**\n\n[Shut down] is the standard phrasal verb for turning off a computer through its operating system.\n\n~Log off~ means to sign out of your user account, but the computer stays on.\n~Boot up~ is the opposite: to start the computer."
       }
     },
     {
@@ -1151,7 +1151,7 @@
       "hint": "'Sit down' is the most common and direct phrasal verb to ask someone to take a seat.",
       "content": {
         "type": "text",
-        "value": "**[158]**\n\n[Sit down] means to move from a standing to a sitting position.\n\n~Stand up~ is the direct opposite.\n~Lie down~ means to get into a horizontal position, not to sit in a chair."
+        "value": "**[pv:158]**\n\n[Sit down] means to move from a standing to a sitting position.\n\n~Stand up~ is the direct opposite.\n~Lie down~ means to get into a horizontal position, not to sit in a chair."
       }
     },
     {
@@ -1179,7 +1179,7 @@
       "hint": "The particle 'down' with 'slow' emphasizes the act of reducing speed.",
       "content": {
         "type": "text",
-        "value": "**[160]**\n\n[Slow down] is the common phrasal verb meaning to reduce your speed.\n\n~Speed up~ is the direct opposite.\n~Pull over~ means to move your vehicle to the side of the road and stop."
+        "value": "**[pv:160]**\n\n[Slow down] is the common phrasal verb meaning to reduce your speed.\n\n~Speed up~ is the direct opposite.\n~Pull over~ means to move your vehicle to the side of the road and stop."
       }
     },
     {
@@ -1207,7 +1207,7 @@
       "hint": "To 'turn down' an offer or request means to formally reject or refuse it.",
       "content": {
         "type": "text",
-        "value": "**[184]**\n\n[Turned down] is a common phrasal verb for refusing an offer.\n\n~Took on~ is the opposite; it means to accept the job.\n~Looked into~ means to investigate the job offer, not to refuse it."
+        "value": "**[pv:184]**\n\n[Turned down] is a common phrasal verb for refusing an offer.\n\n~Took on~ is the opposite; it means to accept the job.\n~Looked into~ means to investigate the job offer, not to refuse it."
       }
     },
     {
@@ -1235,7 +1235,7 @@
       "hint": "'Wind down' means to gradually relax after a period of activity or stress.",
       "content": {
         "type": "text",
-        "value": "**[193]**\n\n[Wind down] describes the process of relaxing and becoming less active.\n\n~Liven up~ is the opposite; it means to become more energetic.\n~Calm down~ is usually used when someone is angry or agitated, not just busy."
+        "value": "**[pv:193]**\n\n[Wind down] describes the process of relaxing and becoming less active.\n\n~Liven up~ is the opposite; it means to become more energetic.\n~Calm down~ is usually used when someone is angry or agitated, not just busy."
       }
     },
     {
@@ -1263,7 +1263,7 @@
       "hint": "'Write down' emphasizes the action of recording information on paper so it is not forgotten.",
       "content": {
         "type": "text",
-        "value": "**[197]**\n\n[Write down] means to write something on paper.\n\n~Call back~ means to return a phone call.\n~Read out~ means to read the number aloud, not to write it."
+        "value": "**[pv:197]**\n\n[Write down] means to write something on paper.\n\n~Call back~ means to return a phone call.\n~Read out~ means to read the number aloud, not to write it."
       }
     },
     {
@@ -1291,7 +1291,7 @@
       "hint": "'Check out' is an informal way to say look at or visit something to see if you like it.",
       "content": {
         "type": "text",
-        "value": "**[29]**\n\n[Check out] means to examine something or get more information about it because it seems interesting.\n\n~Eat out~ means to eat at a restaurant, but 'check out' means to go and see if it's good.\n~Find out~ means to discover a fact."
+        "value": "**[pv:29]**\n\n[Check out] means to examine something or get more information about it because it seems interesting.\n\n~Eat out~ means to eat at a restaurant, but 'check out' means to go and see if it's good.\n~Find out~ means to discover a fact."
       }
     },
     {
@@ -1319,7 +1319,7 @@
       "hint": "The particle 'out' with 'drop' means to leave a formal system like school or a competition.",
       "content": {
         "type": "text",
-        "value": "**[51]**\n\n[Drop out] specifically means to stop attending a course or school before finishing it.\n\n~Sign up~ is the opposite; it means to enroll in the college.\n~Give up~ means to quit trying, but 'drop out' is specific to an institution."
+        "value": "**[pv:51]**\n\n[Drop out] specifically means to stop attending a course or school before finishing it.\n\n~Sign up~ is the opposite; it means to enroll in the college.\n~Give up~ means to quit trying, but 'drop out' is specific to an institution."
       }
     },
     {
@@ -1347,7 +1347,7 @@
       "hint": "'Figure out' implies a process of thinking and problem-solving to find an answer.",
       "content": {
         "type": "text",
-        "value": "**[56]**\n\n[Figure out] means to understand or find a solution to a problem by thinking.\n\n~Give up~ is the opposite; it means to stop trying to solve it.\n~Go over~ means to review the problem, not to find the solution."
+        "value": "**[pv:56]**\n\n[Figure out] means to understand or find a solution to a problem by thinking.\n\n~Give up~ is the opposite; it means to stop trying to solve it.\n~Go over~ means to review the problem, not to find the solution."
       }
     },
     {
@@ -1375,7 +1375,7 @@
       "hint": "In American English, 'fill out' is used for completing an entire form.",
       "content": {
         "type": "text",
-        "value": "**[58]**\n\n[Fill out] means to complete an entire form.\n\n~Hand in~ means to submit the form, which happens after you fill it out.\n~Throw out~ means to discard the form."
+        "value": "**[pv:58]**\n\n[Fill out] means to complete an entire form.\n\n~Hand in~ means to submit the form, which happens after you fill it out.\n~Throw out~ means to discard the form."
       }
     },
     {
@@ -1403,7 +1403,7 @@
       "hint": "'Find out' means to discover a piece of information you didn't know before.",
       "content": {
         "type": "text",
-        "value": "**[59]**\n\n[Find out] means to get or discover information.\n\n~Look up~ is the action you might take to 'find out' the time, but it doesn't mean 'discover'.\n~Make up~ means to invent the time, not to discover it."
+        "value": "**[pv:59]**\n\n[Find out] means to get or discover information.\n\n~Look up~ is the action you might take to 'find out' the time, but it doesn't mean 'discover'.\n~Make up~ means to invent the time, not to discover it."
       }
     },
     {
@@ -1431,7 +1431,7 @@
       "hint": "'Freak out' is an informal and strong term for reacting with extreme, sudden emotion like fear or anger.",
       "content": {
         "type": "text",
-        "value": "**[62]**\n\n[Freak out] is an informal verb meaning to become very anxious, upset, or afraid.\n\n~Break down~ means to lose emotional control and cry, which is a possible reaction, but 'freak out' is more about the initial shock or panic.\n~Stress out~ (usually 'stress out about something') is the process of feeling worried, not the sudden reaction."
+        "value": "**[pv:62]**\n\n[Freak out] is an informal verb meaning to become very anxious, upset, or afraid.\n\n~Break down~ means to lose emotional control and cry, which is a possible reaction, but 'freak out' is more about the initial shock or panic.\n~Stress out~ (usually 'stress out about something') is the process of feeling worried, not the sudden reaction."
       }
     },
     {
@@ -1459,7 +1459,7 @@
       "hint": "'Get out' is a direct and urgent command to leave a place.",
       "content": {
         "type": "text",
-        "value": "**[72]**\n\n[Get out] means to leave or escape from a place, often with a sense of urgency.\n\n~Run off~ means to leave suddenly, but 'get out' is the specific command for evacuation.\n~Stay put~ is the opposite; it means to remain in one place."
+        "value": "**[pv:72]**\n\n[Get out] means to leave or escape from a place, often with a sense of urgency.\n\n~Run off~ means to leave suddenly, but 'get out' is the specific command for evacuation.\n~Stay put~ is the opposite; it means to remain in one place."
       }
     },
     {
@@ -1487,7 +1487,7 @@
       "hint": "'Give out' means to distribute things to a group of people.",
       "content": {
         "type": "text",
-        "value": "**[78]**\n\n[Giving out] means to distribute something to multiple people.\n\n~Taking in~ is the opposite; it means to receive or accept something.\n~Throwing away~ means to discard, which is the opposite of distributing."
+        "value": "**[pv:78]**\n\n[Giving out] means to distribute something to multiple people.\n\n~Taking in~ is the opposite; it means to receive or accept something.\n~Throwing away~ means to discard, which is the opposite of distributing."
       }
     },
     {
@@ -1515,7 +1515,7 @@
       "hint": "When something 'gives out', it stops working due to wear, pressure, or exhaustion.",
       "content": {
         "type": "text",
-        "value": "**[78]**\n\n[Gave out] means to fail or stop working, especially from overuse or weakness.\n\n~Shut down~ and ~turned off~ both imply an intentional action of turning the laptop off, not that it failed on its own."
+        "value": "**[pv:78]**\n\n[Gave out] means to fail or stop working, especially from overuse or weakness.\n\n~Shut down~ and ~turned off~ both imply an intentional action of turning the laptop off, not that it failed on its own."
       }
     },
     {
@@ -1543,7 +1543,7 @@
       "hint": "'Hand out' emphasizes the physical action of giving items to each person in a group.",
       "content": {
         "type": "text",
-        "value": "**[92]**\n\n[Handed out] means to distribute items to members of a group.\n\n~Took in~ is the opposite; it means to collect the worksheets.\n~Passed out~ can mean to distribute, but its more common meaning is to lose consciousness (faint)."
+        "value": "**[pv:92]**\n\n[Handed out] means to distribute items to members of a group.\n\n~Took in~ is the opposite; it means to collect the worksheets.\n~Passed out~ can mean to distribute, but its more common meaning is to lose consciousness (faint)."
       }
     },
     {
@@ -1571,7 +1571,7 @@
       "hint": "The phrase 'run out of' means to use all of your supply of something.",
       "content": {
         "type": "text",
-        "value": "**[147]**\n\n[Ran out of] is a three-part phrasal verb meaning to have nothing left of something.\n\n~Threw away~ means you discarded the milk.\n~Gave away~ means you gave the milk to someone for free. Both are illogical here."
+        "value": "**[pv:147]**\n\n[Ran out of] is a three-part phrasal verb meaning to have nothing left of something.\n\n~Threw away~ means you discarded the milk.\n~Gave away~ means you gave the milk to someone for free. Both are illogical here."
       }
     },
     {
@@ -1599,7 +1599,7 @@
       "hint": "To 'sort out' a problem means to organize it and find a solution, often when things are confusing.",
       "content": {
         "type": "text",
-        "value": "**[161]**\n\n[Sort out] means to resolve a problem or to organize a messy situation.\n\n~Look into~ means to investigate the problems, not to solve them.\n~Give up on~ is the opposite; it means to stop trying to solve the problems."
+        "value": "**[pv:161]**\n\n[Sort out] means to resolve a problem or to organize a messy situation.\n\n~Look into~ means to investigate the problems, not to solve them.\n~Give up on~ is the opposite; it means to stop trying to solve the problems."
       }
     },
     {
@@ -1627,7 +1627,7 @@
       "hint": "To 'stand out' means to be very easy to see or notice because of being different.",
       "content": {
         "type": "text",
-        "value": "**[164]**\n\n[Stand out] means to be very conspicuous or to be much better than others.\n\n~Show up~ means to appear or arrive.\n~Blend in~ is the direct opposite; it means to be unnoticeable."
+        "value": "**[pv:164]**\n\n[Stand out] means to be very conspicuous or to be much better than others.\n\n~Show up~ means to appear or arrive.\n~Blend in~ is the direct opposite; it means to be unnoticeable."
       }
     },
     {
@@ -1655,7 +1655,7 @@
       "hint": "'Take out' is the specific phrasal verb for removing trash from the inside of a house to the outside.",
       "content": {
         "type": "text",
-        "value": "**[175]**\n\n[Take out] means to remove something from a place, and is the standard phrasal verb for this chore.\n\n~Put away~ means to store something in its proper place.\n~Clean up~ is a general term for tidying, not specifically for removing the trash bag."
+        "value": "**[pv:175]**\n\n[Take out] means to remove something from a place, and is the standard phrasal verb for this chore.\n\n~Put away~ means to store something in its proper place.\n~Clean up~ is a general term for tidying, not specifically for removing the trash bag."
       }
     },
     {
@@ -1683,7 +1683,7 @@
       "hint": "'Take out' (AmE) means to buy food from a restaurant to eat elsewhere.",
       "content": {
         "type": "text",
-        "value": "**[175]**\n\n[Take out] is the common term in American English for food bought at a restaurant but eaten elsewhere (like at home).\n\n~Dine in~ is the opposite; it means to eat inside the restaurant.\n~Eat out~ means to eat at a restaurant, not at home."
+        "value": "**[pv:175]**\n\n[Take out] is the common term in American English for food bought at a restaurant but eaten elsewhere (like at home).\n\n~Dine in~ is the opposite; it means to eat inside the restaurant.\n~Eat out~ means to eat at a restaurant, not at home."
       }
     },
     {
@@ -1711,7 +1711,7 @@
       "hint": "'Work out' is a very common phrasal verb that means to engage in physical exercise.",
       "content": {
         "type": "text",
-        "value": "**[194]**\n\n[Work out] is a widely used phrasal verb for exercising.\n\n~Wind down~ means to relax.\n~Give in~ means to surrender."
+        "value": "**[pv:194]**\n\n[Work out] is a widely used phrasal verb for exercising.\n\n~Wind down~ means to relax.\n~Give in~ means to surrender."
       }
     },
     {
@@ -1739,7 +1739,7 @@
       "hint": "When a situation 'works out', it means it resolves successfully or has a positive result.",
       "content": {
         "type": "text",
-        "value": "**[194]**\n\n[Work out] means to develop in a successful way.\n\n~Fall apart~ and ~break down~ are opposites; they mean to fail or collapse."
+        "value": "**[pv:194]**\n\n[Work out] means to develop in a successful way.\n\n~Fall apart~ and ~break down~ are opposites; they mean to fail or collapse."
       }
     },
     {
@@ -1767,7 +1767,7 @@
       "hint": "The expression 'to be off' is an informal way to announce that you are leaving to go somewhere.",
       "content": {
         "type": "text",
-        "value": "**[126]**\n\n[Off] is used in the expression 'I'm off' to mean 'I am leaving now'.\n\n~Setting off~ means to begin a journey, which is too formal here.\n~Staying up~ is the opposite; it means to not go to bed."
+        "value": "**[pv:126]**\n\n[Off] is used in the expression 'I'm off' to mean 'I am leaving now'.\n\n~Setting off~ means to begin a journey, which is too formal here.\n~Staying up~ is the opposite; it means to not go to bed."
       }
     },
     {
@@ -1795,7 +1795,7 @@
       "hint": "When food is 'off', it means it is no longer fresh and has gone bad.",
       "content": {
         "type": "text",
-        "value": "**[126]**\n\n[Off] is a common adjective used to describe food that is no longer good to eat.\n\n~Turned into~ means to transform into something else.\n~Eaten up~ means to be fully consumed. Both are incorrect here."
+        "value": "**[pv:126]**\n\n[Off] is a common adjective used to describe food that is no longer good to eat.\n\n~Turned into~ means to transform into something else.\n~Eaten up~ means to be fully consumed. Both are incorrect here."
       }
     },
     {
@@ -1823,7 +1823,7 @@
       "hint": "The particle 'off' with 'call' means to cancel a planned event completely.",
       "content": {
         "type": "text",
-        "value": "**[19]**\n\n[Call off] means to decide that a planned event will not happen.\n\n~Set up~ is the opposite; it means to arrange the event.\n~Put off~ means to postpone the event to a later date, not to cancel it."
+        "value": "**[pv:19]**\n\n[Call off] means to decide that a planned event will not happen.\n\n~Set up~ is the opposite; it means to arrange the event.\n~Put off~ means to postpone the event to a later date, not to cancel it."
       }
     },
     {
@@ -1851,7 +1851,7 @@
       "hint": "'Cut off' implies that a supply (like electricity or water) was stopped or interrupted, often by an external force.",
       "content": {
         "type": "text",
-        "value": "**[44]**\n\n[Cut off] means to stop the supply of something.\n\n~Turned off~ implies it was done intentionally by a person.\n~Shut down~ is usually for a system or business, not a utility like power."
+        "value": "**[pv:44]**\n\n[Cut off] means to stop the supply of something.\n\n~Turned off~ implies it was done intentionally by a person.\n~Shut down~ is usually for a system or business, not a utility like power."
       }
     },
     {
@@ -1879,7 +1879,7 @@
       "hint": "'Drop off' means to take someone to a place and leave them there, usually by car.",
       "content": {
         "type": "text",
-        "value": "**[50]**\n\n[Drop me off] means to take someone to a location and leave them there.\n\n~Pick me up~ is the opposite; it means to collect someone.\n~See me off~ means to go to the airport to say goodbye, not to provide transport."
+        "value": "**[pv:50]**\n\n[Drop me off] means to take someone to a location and leave them there.\n\n~Pick me up~ is the opposite; it means to collect someone.\n~See me off~ means to go to the airport to say goodbye, not to provide transport."
       }
     },
     {
@@ -1907,7 +1907,7 @@
       "hint": "To 'give off' something means to emit it, like a smell, light, or heat.",
       "content": {
         "type": "text",
-        "value": "**[77]**\n\n[Give off] means to produce and send out something such as a smell, heat, or light.\n\n~Take in~ is the opposite; it means to absorb.\n~Bring about~ means to cause something to happen."
+        "value": "**[pv:77]**\n\n[Give off] means to produce and send out something such as a smell, heat, or light.\n\n~Take in~ is the opposite; it means to absorb.\n~Bring about~ means to cause something to happen."
       }
     },
     {
@@ -1935,7 +1935,7 @@
       "hint": "When effort 'pays off', it means it brings a good result or success.",
       "content": {
         "type": "text",
-        "value": "**[129]**\n\n[Paid off] is an idiom meaning that an action was worthwhile and resulted in success.\n\n~Worked out~ means a situation resolved well, which is similar but 'paid off' emphasizes the reward.\n~Given up~ is the opposite; it means to quit."
+        "value": "**[pv:129]**\n\n[Paid off] is an idiom meaning that an action was worthwhile and resulted in success.\n\n~Worked out~ means a situation resolved well, which is similar but 'paid off' emphasizes the reward.\n~Given up~ is the opposite; it means to quit."
       }
     },
     {
@@ -1963,7 +1963,7 @@
       "hint": "To 'put something off' means to decide to do it at a later time; to postpone.",
       "content": {
         "type": "text",
-        "value": "**[138]**\n\n[Put off] means to delay something.\n\n~Call off~ means to cancel the meeting, not postpone it.\n~Bring forward~ is the opposite; it means to move the meeting to an earlier date."
+        "value": "**[pv:138]**\n\n[Put off] means to delay something.\n\n~Call off~ means to cancel the meeting, not postpone it.\n~Bring forward~ is the opposite; it means to move the meeting to an earlier date."
       }
     },
     {
@@ -1991,7 +1991,7 @@
       "hint": "'Set off' is a common phrasal verb that means to start a journey.",
       "content": {
         "type": "text",
-        "value": "**[149]**\n\n[Set off] means to begin a trip.\n\n~Turned back~ is the opposite; it means to return home from a journey.\n~Stayed in~ is the opposite; it means to remain at home."
+        "value": "**[pv:149]**\n\n[Set off] means to begin a trip.\n\n~Turned back~ is the opposite; it means to return home from a journey.\n~Stayed in~ is the opposite; it means to remain at home."
       }
     },
     {
@@ -2019,7 +2019,7 @@
       "hint": "To 'show off' means to try to impress people by displaying your abilities or possessions in an ostentatious way.",
       "content": {
         "type": "text",
-        "value": "**[154]**\n\n[Showing off] means to boastfully display something you are proud of.\n\n~Putting down~ means to insult or criticize.\n~Giving away~ means to give something for free."
+        "value": "**[pv:154]**\n\n[Showing off] means to boastfully display something you are proud of.\n\n~Putting down~ means to insult or criticize.\n~Giving away~ means to give something for free."
       }
     },
     {
@@ -2047,7 +2047,7 @@
       "hint": "'Take off' is the most common phrasal verb for removing an item of clothing.",
       "content": {
         "type": "text",
-        "value": "**[174]**\n\n[Take off] means to remove clothing from your body.\n\n~Put on~ is the direct opposite.\n~Put away~ means to store something in its proper place."
+        "value": "**[pv:174]**\n\n[Take off] means to remove clothing from your body.\n\n~Put on~ is the direct opposite.\n~Put away~ means to store something in its proper place."
       }
     },
     {
@@ -2075,7 +2075,7 @@
       "hint": "For aircraft, 'take off' is the specific term for leaving the ground and beginning to fly.",
       "content": {
         "type": "text",
-        "value": "**[174]**\n\n[Take off] is the specific phrasal verb for an airplane leaving the ground.\n\n~Touch down~ is the opposite; it means to land.\n~Get on~ means to board the plane, which happens before 'take off'."
+        "value": "**[pv:174]**\n\n[Take off] is the specific phrasal verb for an airplane leaving the ground.\n\n~Touch down~ is the opposite; it means to land.\n~Get on~ means to board the plane, which happens before 'take off'."
       }
     },
     {
@@ -2103,7 +2103,7 @@
       "hint": "'Turn off' is the interchangeable phrasal verb for deactivating a device.",
       "content": {
         "type": "text",
-        "value": "**[185]**\n\n[Turn off] means to stop the flow of electricity to a device.\n\n~Turn up~ means to increase the volume or intensity.\n~Leave on~ is the direct opposite; it means to not 'turn off'."
+        "value": "**[pv:185]**\n\n[Turn off] means to stop the flow of electricity to a device.\n\n~Turn up~ means to increase the volume or intensity.\n~Leave on~ is the direct opposite; it means to not 'turn off'."
       }
     },
     {
@@ -2131,7 +2131,7 @@
       "hint": "The particle 'on' often implies continuation. 'Carry on' means to continue an activity without stopping.",
       "content": {
         "type": "text",
-        "value": "**[23]**\n\n[Carry on] means to continue doing something.\n\n~Give up~ is the opposite; it means to quit.\n~Stop by~ means to make a brief visit."
+        "value": "**[pv:23]**\n\n[Carry on] means to continue doing something.\n\n~Give up~ is the opposite; it means to quit.\n~Stop by~ means to make a brief visit."
       }
     },
     {
@@ -2159,7 +2159,7 @@
       "hint": "'Count on' someone means to rely on them to do what is needed or expected.",
       "content": {
         "type": "text",
-        "value": "**[41]**\n\n[Count on] means to trust someone to be reliable and supportive.\n\n~Let down~ is the opposite; it means to disappoint someone.\n~Give up on~ means to stop believing in someone."
+        "value": "**[pv:41]**\n\n[Count on] means to trust someone to be reliable and supportive.\n\n~Let down~ is the opposite; it means to disappoint someone.\n~Give up on~ means to stop believing in someone."
       }
     },
     {
@@ -2187,7 +2187,7 @@
       "hint": "When one thing 'depends on' another, its outcome is controlled or decided by the second thing.",
       "content": {
         "type": "text",
-        "value": "**[46]**\n\n[Depends on] means to be determined or affected by something else.\n\n~Is based on~ means that something is the foundation for an idea or story.\n~Calls for~ means to require or demand (e.g., 'This recipe calls for milk')."
+        "value": "**[pv:46]**\n\n[Depends on] means to be determined or affected by something else.\n\n~Is based on~ means that something is the foundation for an idea or story.\n~Calls for~ means to require or demand (e.g., 'This recipe calls for milk')."
       }
     },
     {
@@ -2215,7 +2215,7 @@
       "hint": "'Focus on' means to direct all your attention towards a specific activity or subject.",
       "content": {
         "type": "text",
-        "value": "**[60]**\n\n[Focus on] means to give a lot of attention to one particular person, subject, or thing.\n\n~Give up on~ is the opposite; it means to stop trying.\n~Put off~ means to delay or postpone your studies."
+        "value": "**[pv:60]**\n\n[Focus on] means to give a lot of attention to one particular person, subject, or thing.\n\n~Give up on~ is the opposite; it means to stop trying.\n~Put off~ means to delay or postpone your studies."
       }
     },
     {
@@ -2243,7 +2243,7 @@
       "hint": "The phrase 'what's going on?' is a very common way to ask what is happening at a particular moment.",
       "content": {
         "type": "text",
-        "value": "**[86]**\n\n[Going on] is a phrasal verb that means 'happening'.\n\n~Calming down~ is the opposite of what is implied by the shouting.\n~Clearing up~ means a situation is being resolved or the weather is improving."
+        "value": "**[pv:86]**\n\n[Going on] is a phrasal verb that means 'happening'.\n\n~Calming down~ is the opposite of what is implied by the shouting.\n~Clearing up~ means a situation is being resolved or the weather is improving."
       }
     },
     {
@@ -2271,7 +2271,7 @@
       "hint": "'Log on' means to access a computer system.",
       "content": {
         "type": "text",
-        "value": "**[108]**\n\n[Log on] (often followed by 'to') means to start using a computer system.\n\n~Log out~ is the opposite action.\n~Shut down~ means to turn off the entire computer."
+        "value": "**[pv:108]**\n\n[Log on] (often followed by 'to') means to start using a computer system.\n\n~Log out~ is the opposite action.\n~Shut down~ means to turn off the entire computer."
       }
     },
     {
@@ -2299,7 +2299,7 @@
       "hint": "'Put on' refers to the action of placing clothes on your body.",
       "content": {
         "type": "text",
-        "value": "**[139]**\n\n[Put on] is the verb for the action of dressing yourself.\n\n~Take off~ is the direct opposite.\n~Get on~ is used for boarding transport like a bus or train."
+        "value": "**[pv:139]**\n\n[Put on] is the verb for the action of dressing yourself.\n\n~Take off~ is the direct opposite.\n~Get on~ is used for boarding transport like a bus or train."
       }
     },
     {
@@ -2327,7 +2327,7 @@
       "hint": "To 'try on' clothes means to put them on to see if they fit and look good.",
       "content": {
         "type": "text",
-        "value": "**[181]**\n\n[Try on] is the specific phrasal verb for putting on clothes to test the size and style.\n\n~Take off~ means to remove the jeans.\n~Put away~ means to store the jeans."
+        "value": "**[pv:181]**\n\n[Try on] is the specific phrasal verb for putting on clothes to test the size and style.\n\n~Take off~ means to remove the jeans.\n~Put away~ means to store the jeans."
       }
     },
     {
@@ -2355,7 +2355,7 @@
       "hint": "The particle 'on' with 'turn' means to activate a device or flow.",
       "content": {
         "type": "text",
-        "value": "**[186]**\n\n[Turn on] means to activate an electrical device.\n\n~Turn off~ is the direct opposite.\n~Shut down~ is used for computers or systems, not typically for lights."
+        "value": "**[pv:186]**\n\n[Turn on] means to activate an electrical device.\n\n~Turn off~ is the direct opposite.\n~Shut down~ is used for computers or systems, not typically for lights."
       }
     },
     {
@@ -2383,7 +2383,7 @@
       "hint": "The particle 'away' signifies moving to a distance. 'Get away' means to succeed in escaping from a person or place.",
       "content": {
         "type": "text",
-        "value": "**[67]**\n\n[Get away] means to escape.\n\n~Give up~ means to surrender, which is the opposite.\n~Turn in~ also means to surrender to the police."
+        "value": "**[pv:67]**\n\n[Get away] means to escape.\n\n~Give up~ means to surrender, which is the opposite.\n~Turn in~ also means to surrender to the police."
       }
     },
     {
@@ -2411,7 +2411,7 @@
       "hint": "In a travel context, 'get away' means to go somewhere for a vacation or a short break.",
       "content": {
         "type": "text",
-        "value": "**[67]**\n\n[Get away] is used idiomatically to mean taking a vacation to escape daily routine.\n\n~Stay in~ is the opposite; it means to remain at home.\n~Work out~ means to exercise."
+        "value": "**[pv:67]**\n\n[Get away] is used idiomatically to mean taking a vacation to escape daily routine.\n\n~Stay in~ is the opposite; it means to remain at home.\n~Work out~ means to exercise."
       }
     },
     {
@@ -2439,7 +2439,7 @@
       "hint": "'Keep away' is a command used to tell someone to maintain a safe distance.",
       "content": {
         "type": "text",
-        "value": "**[99]**\n\n[Keep away] is a command not to go near something dangerous.\n\n~Come over~ is the opposite; it's an invitation to come closer.\n~Look out~ is a warning of immediate danger, but doesn't mean to stay distant."
+        "value": "**[pv:99]**\n\n[Keep away] is a command not to go near something dangerous.\n\n~Come over~ is the opposite; it's an invitation to come closer.\n~Look out~ is a warning of immediate danger, but doesn't mean to stay distant."
       }
     },
     {
@@ -2467,7 +2467,7 @@
       "hint": "'Put away' specifically means to return something to its usual storage place.",
       "content": {
         "type": "text",
-        "value": "**[136]**\n\n[Put away] means to put something in the place where it is kept because you have finished using it.\n\n~Take out~ means to remove the toys from storage.\n~Throw away~ means to discard the toys in the trash."
+        "value": "**[pv:136]**\n\n[Put away] means to put something in the place where it is kept because you have finished using it.\n\n~Take out~ means to remove the toys from storage.\n~Throw away~ means to discard the toys in the trash."
       }
     },
     {
@@ -2495,7 +2495,7 @@
       "hint": "To 'take away' something means to remove it from a place.",
       "content": {
         "type": "text",
-        "value": "**[172]**\n\n[Take away] means to remove something from where it is.\n\n~Put down~ means to place something on the table.\n~Serve up~ is the opposite; it means to bring the food to the table."
+        "value": "**[pv:172]**\n\n[Take away] means to remove something from where it is.\n\n~Put down~ means to place something on the table.\n~Serve up~ is the opposite; it means to bring the food to the table."
       }
     },
     {
@@ -2523,7 +2523,7 @@
       "hint": "The particle 'back' indicates return. 'Come back' implies returning to the speaker's location.",
       "content": {
         "type": "text",
-        "value": "**[37]**\n\n[Come back] means to return to the place where the speaker is.\n\n~Go away~ and ~stay away~ are opposites; they mean to leave and not return."
+        "value": "**[pv:37]**\n\n[Come back] means to return to the place where the speaker is.\n\n~Go away~ and ~stay away~ are opposites; they mean to leave and not return."
       }
     },
     {
@@ -2551,7 +2551,7 @@
       "hint": "'Go back' implies returning to a place where the speaker is not currently located.",
       "content": {
         "type": "text",
-        "value": "**[83]**\n\n[Go back] means to return to a place you have been before.\n\n~Stay away~ is the opposite; it means to avoid Italy.\n~Fly over~ means to pass above Italy in a plane, not to visit."
+        "value": "**[pv:83]**\n\n[Go back] means to return to a place you have been before.\n\n~Stay away~ is the opposite; it means to avoid Italy.\n~Fly over~ means to pass above Italy in a plane, not to visit."
       }
     },
     {
@@ -2579,7 +2579,7 @@
       "hint": "'Stick around' is an informal way to say 'stay longer' or 'wait'.",
       "content": {
         "type": "text",
-        "value": "**[168]**\n\n[Stick around] is an informal phrasal verb meaning to stay in a place for a period of time.\n\n~Take off~ and ~head out~ are both opposites; they mean to leave the party."
+        "value": "**[pv:168]**\n\n[Stick around] is an informal phrasal verb meaning to stay in a place for a period of time.\n\n~Take off~ and ~head out~ are both opposites; they mean to leave the party."
       }
     },
     {
@@ -2607,7 +2607,7 @@
       "hint": "To 'turn around' means to change direction and go back the way you came, often while in transit.",
       "content": {
         "type": "text",
-        "value": "**[182]**\n\n[Turn around] means to reverse your direction of travel.\n\n~Carry on~ and ~keep on~ are opposites; they mean to continue the journey."
+        "value": "**[pv:182]**\n\n[Turn around] means to reverse your direction of travel.\n\n~Carry on~ and ~keep on~ are opposites; they mean to continue the journey."
       }
     },
     {
@@ -2635,7 +2635,7 @@
       "hint": "The expression 'to be over' is a very common way to say that an event has finished.",
       "content": {
         "type": "text",
-        "value": "**[127]**\n\n[Over] is used to say that an event or activity has ended.\n\n~Going on~ and ~starting up~ are opposites; they mean the movie is beginning or in progress."
+        "value": "**[pv:127]**\n\n[Over] is used to say that an event or activity has ended.\n\n~Going on~ and ~starting up~ are opposites; they mean the movie is beginning or in progress."
       }
     },
     {
@@ -2663,7 +2663,7 @@
       "hint": "To 'get over' something means to recover from an illness or an unhappy experience.",
       "content": {
         "type": "text",
-        "value": "**[73]**\n\n[Get over] means to feel happy or well again after a difficult time.\n\n~Break down~ means to lose emotional control, which might happen during the sad time, but not after.\n~Give in~ means to surrender."
+        "value": "**[pv:73]**\n\n[Get over] means to feel happy or well again after a difficult time.\n\n~Break down~ means to lose emotional control, which might happen during the sad time, but not after.\n~Give in~ means to surrender."
       }
     },
     {
@@ -2691,7 +2691,7 @@
       "hint": "The particle 'over' can imply reviewing or examining from beginning to end. 'Go over' means to check something carefully.",
       "content": {
         "type": "text",
-        "value": "**[87]**\n\n[Go over] means to review or examine something in detail.\n\n~Put aside~ means to ignore or save the plan for later.\n~Throw away~ means to discard the plan."
+        "value": "**[pv:87]**\n\n[Go over] means to review or examine something in detail.\n\n~Put aside~ means to ignore or save the plan for later.\n~Throw away~ means to discard the plan."
       }
     },
     {
@@ -2719,7 +2719,7 @@
       "hint": "The particle 'through' suggests passing from one side to the other. To 'go through' something means to experience a difficult period.",
       "content": {
         "type": "text",
-        "value": "**[88]**\n\n[Gone through] means to experience a difficult or unpleasant situation.\n\n~Gotten over~ means to recover from the illness, which is the end result, not the experience itself.\n~Cheered up~ means to have become happier, which is unlikely in this context."
+        "value": "**[pv:88]**\n\n[Gone through] means to experience a difficult or unpleasant situation.\n\n~Gotten over~ means to recover from the illness, which is the end result, not the experience itself.\n~Cheered up~ means to have become happier, which is unlikely in this context."
       }
     },
     {
@@ -2747,7 +2747,7 @@
       "hint": "This is an inseparable verb. 'Agree' is always followed by the preposition 'with' when referring to a person.",
       "content": {
         "type": "text",
-        "value": "**[1]**\n\n[Agree with] is the correct collocation for sharing an opinion with someone.\n\n~Object to~ is the direct opposite; it means to disagree.\n~Think like~ implies having a similar thought process, but not necessarily agreeing on a specific point."
+        "value": "**[pv:1]**\n\n[Agree with] is the correct collocation for sharing an opinion with someone.\n\n~Object to~ is the direct opposite; it means to disagree.\n~Think like~ implies having a similar thought process, but not necessarily agreeing on a specific point."
       }
     },
     {
@@ -2775,7 +2775,7 @@
       "hint": "The verb 'apologize' is followed by the preposition 'for' to state the reason for the apology.",
       "content": {
         "type": "text",
-        "value": "**[2]**\n\n[Apologize for] is the correct structure to give a reason for an apology.\n\n~Brag about~ is the opposite; it means to boast.\n~Make up for~ means to compensate for a mistake, which comes after apologizing."
+        "value": "**[pv:2]**\n\n[Apologize for] is the correct structure to give a reason for an apology.\n\n~Brag about~ is the opposite; it means to boast.\n~Make up for~ means to compensate for a mistake, which comes after apologizing."
       }
     },
     {
@@ -2803,7 +2803,7 @@
       "hint": "'Ask for' is the common phrasal verb used to request something.",
       "content": {
         "type": "text",
-        "value": "**[4]**\n\n[Ask for] means to request.\n\n~Turn down~ means to refuse help.\n~Give back~ means to return something."
+        "value": "**[pv:4]**\n\n[Ask for] means to request.\n\n~Turn down~ means to refuse help.\n~Give back~ means to return something."
       }
     },
     {
@@ -2831,7 +2831,7 @@
       "hint": "'Care about' means to feel that someone is important and to be concerned for their well-being.",
       "content": {
         "type": "text",
-        "value": "**[21]**\n\n[Cares about] means to have a strong feeling of concern and importance towards someone.\n\n~Cares for~ means to provide physical care, like looking after a sick person.\n~Thinks of~ means to have them in your thoughts."
+        "value": "**[pv:21]**\n\n[Cares about] means to have a strong feeling of concern and importance towards someone.\n\n~Cares for~ means to provide physical care, like looking after a sick person.\n~Thinks of~ means to have them in your thoughts."
       }
     },
     {
@@ -2859,7 +2859,7 @@
       "hint": "'Care for' means to provide for the physical needs of someone who requires help.",
       "content": {
         "type": "text",
-        "value": "**[22]**\n\n[Caring for] means to provide the necessary help and support for someone.\n\n~Looking into~ means to investigate, which doesn't fit.\n~Caring about~ refers to emotional concern, not the act of providing physical care."
+        "value": "**[pv:22]**\n\n[Caring for] means to provide the necessary help and support for someone.\n\n~Looking into~ means to investigate, which doesn't fit.\n~Caring about~ refers to emotional concern, not the act of providing physical care."
       }
     },
     {
@@ -2887,7 +2887,7 @@
       "hint": "'Get along with' is the phrasal verb used to describe having a friendly, cooperative relationship.",
       "content": {
         "type": "text",
-        "value": "**[64]**\n\n[Get along] is the idiomatic phrasal verb for having a harmonious relationship.\n\n~Fall out~ and ~break up~ are the opposite; they mean to have an argument or end a relationship."
+        "value": "**[pv:64]**\n\n[Get along] is the idiomatic phrasal verb for having a harmonious relationship.\n\n~Fall out~ and ~break up~ are the opposite; they mean to have an argument or end a relationship."
       }
     },
     {
@@ -2915,7 +2915,7 @@
       "hint": "'Look after' means to be responsible for and supervise someone's safety and well-being.",
       "content": {
         "type": "text",
-        "value": "**[109]**\n\n[Look after] means to take care of someone, ensuring they are safe and well.\n\n~Look down on~ (to despise) and ~look up to~ (to admire) are incorrect and relate to respect, not supervision."
+        "value": "**[pv:109]**\n\n[Look after] means to take care of someone, ensuring they are safe and well.\n\n~Look down on~ (to despise) and ~look up to~ (to admire) are incorrect and relate to respect, not supervision."
       }
     },
     {
@@ -2943,7 +2943,7 @@
       "hint": "'Look for' is the most common phrasal verb used when you are trying to find something you have lost.",
       "content": {
         "type": "text",
-        "value": "**[112]**\n\n[Looking for] means to be searching for something.\n\n~Looking into~ means investigating, not searching for a lost item.\n~Throwing away~ means discarding, which is the opposite of finding."
+        "value": "**[pv:112]**\n\n[Looking for] means to be searching for something.\n\n~Looking into~ means investigating, not searching for a lost item.\n~Throwing away~ means discarding, which is the opposite of finding."
       }
     },
     {
@@ -2971,7 +2971,7 @@
       "hint": "To 'look into' a matter means to investigate or examine the facts about it.",
       "content": {
         "type": "text",
-        "value": "**[114]**\n\n[Looking into] means to investigate.\n\n~Looking for~ means to search for a lost item, not investigate a case.\n~Goofing off~ means to be lazy, which is the opposite of investigating."
+        "value": "**[pv:114]**\n\n[Looking into] means to investigate.\n\n~Looking for~ means to search for a lost item, not investigate a case.\n~Goofing off~ means to be lazy, which is the opposite of investigating."
       }
     },
     {
@@ -2999,7 +2999,7 @@
       "hint": "'Look forward to' expresses happy anticipation for a future event. Note that 'to' is a preposition, so it's followed by a noun or gerund.",
       "content": {
         "type": "text",
-        "value": "**[113]**\n\n[Looking forward to] is a three-part phrasal verb that means to feel pleased and excited about something that is going to happen.\n\n~Putting off~ is the opposite; it means to delay.\n~Waiting for~ is more neutral and lacks the positive emotion."
+        "value": "**[pv:113]**\n\n[Looking forward to] is a three-part phrasal verb that means to feel pleased and excited about something that is going to happen.\n\n~Putting off~ is the opposite; it means to delay.\n~Waiting for~ is more neutral and lacks the positive emotion."
       }
     },
     {
@@ -3027,7 +3027,7 @@
       "hint": "'Run into' means to meet someone you know by chance.",
       "content": {
         "type": "text",
-        "value": "**[142]**\n\n[Ran into] means to meet someone unexpectedly.\n\n~Ran over~ means to hit with a vehicle, which is completely different.\n~Looked for~ implies a purposeful search, not an accidental meeting."
+        "value": "**[pv:142]**\n\n[Ran into] means to meet someone unexpectedly.\n\n~Ran over~ means to hit with a vehicle, which is completely different.\n~Looked for~ implies a purposeful search, not an accidental meeting."
       }
     },
     {
@@ -3055,7 +3055,7 @@
       "hint": "'Take after' means to resemble an older family member in terms of appearance or, importantly, character traits.",
       "content": {
         "type": "text",
-        "value": "**[171]**\n\n[Takes after] means to be similar to an older person in your family (in appearance or character).\n\n~Looks up to~ means to admire.\n~Looks down on~ means to despise. Both are about respect, not resemblance."
+        "value": "**[pv:171]**\n\n[Takes after] means to be similar to an older person in your family (in appearance or character).\n\n~Looks up to~ means to admire.\n~Looks down on~ means to despise. Both are about respect, not resemblance."
       }
     },
     {
@@ -3083,7 +3083,7 @@
       "hint": "To 'take care of' something means to deal with it or be responsible for it.",
       "content": {
         "type": "text",
-        "value": "**[173]**\n\n[Take care of] means to accept responsibility for a task or problem.\n\n~Mess up~ and ~give up on~ are the opposite; they mean to fail at the task or stop trying."
+        "value": "**[pv:173]**\n\n[Take care of] means to accept responsibility for a task or problem.\n\n~Mess up~ and ~give up on~ are the opposite; they mean to fail at the task or stop trying."
       }
     },
     {
@@ -3111,7 +3111,7 @@
       "hint": "'Think about' means to consider a problem or decision carefully.",
       "content": {
         "type": "text",
-        "value": "**[177]**\n\n[Think about] means to spend time considering a decision.\n\n~Throw out~ means to discard the offer.\n~Pass on~ means to decline the offer. Both are incorrect."
+        "value": "**[pv:177]**\n\n[Think about] means to spend time considering a decision.\n\n~Throw out~ means to discard the offer.\n~Pass on~ means to decline the offer. Both are incorrect."
       }
     },
     {
@@ -3139,7 +3139,7 @@
       "hint": "Use 'think of' to ask for someone's opinion about something.",
       "content": {
         "type": "text",
-        "value": "**[178]**\n\n[Think of] is used to ask for an opinion.\n\n~Think about~ means to consider or reflect on something.\n~Feel about~ asks for an emotional reaction rather than a rational opinion."
+        "value": "**[pv:178]**\n\n[Think of] is used to ask for an opinion.\n\n~Think about~ means to consider or reflect on something.\n~Feel about~ asks for an emotional reaction rather than a rational opinion."
       }
     },
     {
@@ -3167,7 +3167,7 @@
       "hint": "'Wait for' is used when you are staying in one place because you expect someone or something to arrive.",
       "content": {
         "type": "text",
-        "value": "**[190]**\n\n[Waiting for] is the correct phrasal verb to describe staying somewhere until something happens.\n\n~Getting on~ means to board the bus.\n~Getting off~ means to disembark the bus."
+        "value": "**[pv:190]**\n\n[Waiting for] is the correct phrasal verb to describe staying somewhere until something happens.\n\n~Getting on~ means to board the bus.\n~Getting off~ means to disembark the bus."
       }
     },
     {
@@ -3195,7 +3195,7 @@
       "hint": "To 'worry about' someone or something means to feel anxious and think about the problems they might have.",
       "content": {
         "type": "text",
-        "value": "**[195]**\n\n[Worry about] means to feel anxious or concerned.\n\n~Care about~ means to feel someone is important, which is different from anxiety.\n~Laugh at~ is inappropriate and the opposite of concern."
+        "value": "**[pv:195]**\n\n[Worry about] means to feel anxious or concerned.\n\n~Care about~ means to feel someone is important, which is different from anxiety.\n~Laugh at~ is inappropriate and the opposite of concern."
       }
     },
     {
@@ -3223,7 +3223,7 @@
       "hint": "'Fall asleep' describes the specific moment you begin to sleep.",
       "content": {
         "type": "text",
-        "value": "**[54]**\n\n[Fell asleep] is the phrasal verb for the action of starting to sleep.\n\n~Woke up~ and ~stayed up~ are both opposites; they mean to stop sleeping or not sleep at all."
+        "value": "**[pv:54]**\n\n[Fell asleep] is the phrasal verb for the action of starting to sleep.\n\n~Woke up~ and ~stayed up~ are both opposites; they mean to stop sleeping or not sleep at all."
       }
     },
     {
@@ -3251,7 +3251,7 @@
       "hint": "'Feel like' is an informal way to express a desire or want, and it must be followed by a gerund (-ing verb) or a noun.",
       "content": {
         "type": "text",
-        "value": "**[55]**\n\n[Feel like] is a common idiom to express a desire. It is followed by a verb in the -ing form.\n\n~Put off~ means to delay eating.\n~Give up~ means to quit eating. Both are illogical here."
+        "value": "**[pv:55]**\n\n[Feel like] is a common idiom to express a desire. It is followed by a verb in the -ing form.\n\n~Put off~ means to delay eating.\n~Give up~ means to quit eating. Both are illogical here."
       }
     },
     {
@@ -3279,7 +3279,7 @@
       "hint": "To 'get by' means to manage with the minimum amount of something you need, like money or knowledge.",
       "content": {
         "type": "text",
-        "value": "**[69]**\n\n[Get by] means to have just enough of something (like language skills) to manage.\n\n~Give up~ and ~mess up~ are opposites; they imply failure, not management."
+        "value": "**[pv:69]**\n\n[Get by] means to have just enough of something (like language skills) to manage.\n\n~Give up~ and ~mess up~ are opposites; they imply failure, not management."
       }
     },
     {
@@ -3307,7 +3307,7 @@
       "hint": "'Get on with' something means to start or continue doing it, especially after an interruption or delay.",
       "content": {
         "type": "text",
-        "value": "**[71]**\n\n[Get on with] means to start or continue doing something you have to do, especially after a delay.\n\n~Put off~ and ~give up on~ are the opposite; they mean to delay or quit the work."
+        "value": "**[pv:71]**\n\n[Get on with] means to start or continue doing something you have to do, especially after a delay.\n\n~Put off~ and ~give up on~ are the opposite; they mean to delay or quit the work."
       }
     },
     {
@@ -3335,7 +3335,7 @@
       "hint": "The phrase 'get rid of' means to remove or discard something that you do not want.",
       "content": {
         "type": "text",
-        "value": "**[74]**\n\n[Get rid of] is a common idiom that means to dispose of something.\n\n~Put on~ means to wear the clothes.\n~Put away~ means to store the clothes. Both are the opposite of discarding."
+        "value": "**[pv:74]**\n\n[Get rid of] is a common idiom that means to dispose of something.\n\n~Put on~ means to wear the clothes.\n~Put away~ means to store the clothes. Both are the opposite of discarding."
       }
     },
     {
@@ -3363,7 +3363,7 @@
       "hint": "To 'give in' means to finally agree to what someone wants after first refusing.",
       "content": {
         "type": "text",
-        "value": "**[76]**\n\n[Gave in] means to surrender or stop resisting pressure.\n\n~Gave up~ means to quit an effort.\n~Held out~ is the opposite; it means to continue resisting."
+        "value": "**[pv:76]**\n\n[Gave in] means to surrender or stop resisting pressure.\n\n~Gave up~ means to quit an effort.\n~Held out~ is the opposite; it means to continue resisting."
       }
     },
     {
@@ -3391,7 +3391,7 @@
       "hint": "'Go ahead' is a common phrase used to give someone permission to do something.",
       "content": {
         "type": "text",
-        "value": "**[81]**\n\n[Go ahead] is an expression giving permission to start.\n\n~Hold on~ and ~wait up~ are opposites; they are commands to wait, not to start."
+        "value": "**[pv:81]**\n\n[Go ahead] is an expression giving permission to start.\n\n~Hold on~ and ~wait up~ are opposites; they are commands to wait, not to start."
       }
     },
     {
@@ -3419,7 +3419,7 @@
       "hint": "'Keep going' is an encouraging phrase that means to continue moving or making an effort despite difficulties.",
       "content": {
         "type": "text",
-        "value": "**[100]**\n\n[Keep going] means to continue without stopping.\n\n~Give up~ and ~drop out~ are opposites; they mean to quit the race."
+        "value": "**[pv:100]**\n\n[Keep going] means to continue without stopping.\n\n~Give up~ and ~drop out~ are opposites; they mean to quit the race."
       }
     },
     {
@@ -3447,7 +3447,7 @@
       "hint": "The phrasal verb 'let in' means to allow someone or something to enter.",
       "content": {
         "type": "text",
-        "value": "**[106]**\n\n[Let] is the verb used in the phrasal verb 'let in', meaning to permit entry.\n\n~Keep in~ means to make it stay inside.\n~Shut in~ means to trap it inside. 'Let in' is the correct action for opening the door."
+        "value": "**[pv:106]**\n\n[Let] is the verb used in the phrasal verb 'let in', meaning to permit entry.\n\n~Keep in~ means to make it stay inside.\n~Shut in~ means to trap it inside. 'Let in' is the correct action for opening the door."
       }
     },
     {
@@ -3475,7 +3475,7 @@
       "hint": "'Look like' is used to talk about physical resemblance to someone or something.",
       "content": {
         "type": "text",
-        "value": "**[115]**\n\n[Look like] means to have a similar physical appearance.\n\n~Look up to~ (to admire) and ~look down on~ (to despise) are about respect, not physical appearance."
+        "value": "**[pv:115]**\n\n[Look like] means to have a similar physical appearance.\n\n~Look up to~ (to admire) and ~look down on~ (to despise) are about respect, not physical appearance."
       }
     },
     {
@@ -3503,7 +3503,7 @@
       "hint": "The particle 'in' here signifies entering a system. 'Check in' is the process of registering your arrival.",
       "content": {
         "type": "text",
-        "value": "**[28]**\n\n[Check in] is the specific phrasal verb for arriving and registering at a hotel or airport.\n\n~Check out~ is the opposite; it's what you do when you leave the hotel.\n~Sign in~ is for logging into a computer, not a hotel."
+        "value": "**[pv:28]**\n\n[Check in] is the specific phrasal verb for arriving and registering at a hotel or airport.\n\n~Check out~ is the opposite; it's what you do when you leave the hotel.\n~Sign in~ is for logging into a computer, not a hotel."
       }
     },
     {
@@ -3531,7 +3531,7 @@
       "hint": "'Fill in' (BrE) means to complete a document.",
       "content": {
         "type": "text",
-        "value": "**[57]**\n\n[Fill in] means to add information to complete a form.\n\n~Throw out~ and ~rip up~ are destructive actions, the opposite of completing the form."
+        "value": "**[pv:57]**\n\n[Fill in] means to add information to complete a form.\n\n~Throw out~ and ~rip up~ are destructive actions, the opposite of completing the form."
       }
     },
     {
@@ -3559,7 +3559,7 @@
       "hint": "'Hand in' means to give a completed piece of work to a person in authority, like a teacher.",
       "content": {
         "type": "text",
-        "value": "**[91]**\n\n[Hand in] is the phrasal verb for submitting homework or official documents.\n\n~Hold back~ means to not submit the essay.\n~Throw away~ means to discard the essay."
+        "value": "**[pv:91]**\n\n[Hand in] is the phrasal verb for submitting homework or official documents.\n\n~Hold back~ means to not submit the essay.\n~Throw away~ means to discard the essay."
       }
     },
     {
@@ -3587,7 +3587,7 @@
       "hint": "'Log in' is the standard phrasal verb for accessing a secure computer system.",
       "content": {
         "type": "text",
-        "value": "**[107]**\n\n[Log in] means to perform the actions to begin using a computer system.\n\n~Log out~ and ~shut down~ are opposites; they are actions for finishing a session."
+        "value": "**[pv:107]**\n\n[Log in] means to perform the actions to begin using a computer system.\n\n~Log out~ and ~shut down~ are opposites; they are actions for finishing a session."
       }
     },
     {
@@ -3615,7 +3615,7 @@
       "hint": "To 'drop in' means to make a short, informal visit without arranging it beforehand.",
       "content": {
         "type": "text",
-        "value": "**[49]**\n\n[Drop in] means to pay a casual visit.\n\n~Stay away~ is the opposite; it means to avoid the area.\n~Drive through~ means to pass by in a car without stopping to visit."
+        "value": "**[pv:49]**\n\n[Drop in] means to pay a casual visit.\n\n~Stay away~ is the opposite; it means to avoid the area.\n~Drive through~ means to pass by in a car without stopping to visit."
       }
     },
     {
@@ -3643,7 +3643,7 @@
       "hint": "'Stay in' specifically means to spend the evening at home rather than going out.",
       "content": {
         "type": "text",
-        "value": "**[166]**\n\n[Stay in] is the idiomatic phrasal verb for not going out.\n\n~Go out~ is the direct opposite.\n~Get away~ means to go on a vacation, which is a different kind of 'going out'."
+        "value": "**[pv:166]**\n\n[Stay in] is the idiomatic phrasal verb for not going out.\n\n~Go out~ is the direct opposite.\n~Get away~ means to go on a vacation, which is a different kind of 'going out'."
       }
     },
     {
@@ -3671,7 +3671,7 @@
       "hint": "'Come up with' means to invent or produce an idea, often one that is creative or clever.",
       "content": {
         "type": "text",
-        "value": "**[39]**\n\n[Come up with] means to think of and suggest a plan or idea.\n\n~Forget about~ is the opposite.\n~Look into~ means to investigate, not to create."
+        "value": "**[pv:39]**\n\n[Come up with] means to think of and suggest a plan or idea.\n\n~Forget about~ is the opposite.\n~Look into~ means to investigate, not to create."
       }
     },
     {
@@ -3699,7 +3699,7 @@
       "hint": "This three-part verb, 'cut down on', means to reduce the amount you consume of something.",
       "content": {
         "type": "text",
-        "value": "**[43]**\n\n[Cut down on] means to reduce consumption.\n\n~Pig out on~ is the opposite; it means to eat a large amount.\n~Live on~ means to eat only salt and sugar, which is also incorrect."
+        "value": "**[pv:43]**\n\n[Cut down on] means to reduce consumption.\n\n~Pig out on~ is the opposite; it means to eat a large amount.\n~Live on~ means to eat only salt and sugar, which is also incorrect."
       }
     },
     {
@@ -3727,7 +3727,7 @@
       "hint": "'Get along with' asks about the quality of a relationship, whether it is friendly and without conflict.",
       "content": {
         "type": "text",
-        "value": "**[65]**\n\n[Get along with] is the phrasal verb for having a friendly relationship.\n\n~Fall out with~ is the opposite; it means to have an argument.\n~Look down on~ means to despise, which is also the opposite."
+        "value": "**[pv:65]**\n\n[Get along with] is the phrasal verb for having a friendly relationship.\n\n~Fall out with~ is the opposite; it means to have an argument.\n~Look down on~ means to despise, which is also the opposite."
       }
     },
     {
@@ -3755,7 +3755,7 @@
       "hint": "To 'get away with' something means to do something wrong without being caught or punished.",
       "content": {
         "type": "text",
-        "value": "**[68]**\n\n[Get away with] is an idiom meaning to succeed in doing something bad without being discovered.\n\n~Own up to~ and ~fess up to~ are opposites; they mean to confess to the wrongdoing."
+        "value": "**[pv:68]**\n\n[Get away with] is an idiom meaning to succeed in doing something bad without being discovered.\n\n~Own up to~ and ~fess up to~ are opposites; they mean to confess to the wrongdoing."
       }
     },
     {
@@ -3783,7 +3783,7 @@
       "hint": "'Look forward to' means to anticipate a future event with pleasure.",
       "content": {
         "type": "text",
-        "value": "**[113]**\n\n[Looking forward to] expresses happy anticipation.\n\n~Waiting for~ is neutral and doesn't convey happiness.\n~Putting off~ means to delay, which doesn't make sense here."
+        "value": "**[pv:113]**\n\n[Looking forward to] expresses happy anticipation.\n\n~Waiting for~ is neutral and doesn't convey happiness.\n~Putting off~ means to delay, which doesn't make sense here."
       }
     },
     {
@@ -3811,7 +3811,7 @@
       "hint": "To 'look down on' someone means to consider them to be inferior or less important than you.",
       "content": {
         "type": "text",
-        "value": "**[111]**\n\n[Look down on] means to think of someone as inferior.\n\n~Look up to~ is the direct opposite; it means to admire.\n~Get along with~ means to have a friendly relationship."
+        "value": "**[pv:111]**\n\n[Look down on] means to think of someone as inferior.\n\n~Look up to~ is the direct opposite; it means to admire.\n~Get along with~ means to have a friendly relationship."
       }
     },
     {
@@ -3839,7 +3839,7 @@
       "hint": "The opposite of 'look down on', 'look up to' means to admire and respect someone.",
       "content": {
         "type": "text",
-        "value": "**[118]**\n\n[Looked up to] means to admire and respect someone, often seeing them as a role model.\n\n~Looked down on~ is the direct opposite; it means to despise.\n~Fallen out with~ means to have an argument with."
+        "value": "**[pv:118]**\n\n[Looked up to] means to admire and respect someone, often seeing them as a role model.\n\n~Looked down on~ is the direct opposite; it means to despise.\n~Fallen out with~ means to have an argument with."
       }
     },
     {
@@ -3867,7 +3867,7 @@
       "hint": "'Put up with' means to endure or tolerate a negative situation or person without complaining.",
       "content": {
         "type": "text",
-        "value": "**[140]**\n\n[Put up with] means to tolerate.\n\n~Get on with~ means to have a good relationship, which is the opposite.\n~Look forward to~ means to anticipate with pleasure, which is definitely incorrect here."
+        "value": "**[pv:140]**\n\n[Put up with] means to tolerate.\n\n~Get on with~ means to have a good relationship, which is the opposite.\n~Look forward to~ means to anticipate with pleasure, which is definitely incorrect here."
       }
     },
     {
@@ -3895,7 +3895,7 @@
       "hint": "'Run out of' means to use a supply completely so that nothing is left.",
       "content": {
         "type": "text",
-        "value": "**[147]**\n\n[Running out of] means to be close to having no more of something.\n\n~Stocking up on~ is the opposite; it means to buy a large supply.\n~Cutting down on~ means to use less, which is the opposite of running out."
+        "value": "**[pv:147]**\n\n[Running out of] means to be close to having no more of something.\n\n~Stocking up on~ is the opposite; it means to buy a large supply.\n~Cutting down on~ means to use less, which is the opposite of running out."
       }
     },
     {
@@ -3923,7 +3923,7 @@
       "hint": "To 'catch up with' someone means to talk to them and find out what has been happening in their life.",
       "content": {
         "type": "text",
-        "value": "**[27]**\n\n[Catch up with] means to exchange news with someone.\n\n~Stay away from~ and ~look down on~ are negative, anti-social phrasal verbs, the opposite of the friendly invitation."
+        "value": "**[pv:27]**\n\n[Catch up with] means to exchange news with someone.\n\n~Stay away from~ and ~look down on~ are negative, anti-social phrasal verbs, the opposite of the friendly invitation."
       }
     },
     {
@@ -3951,7 +3951,7 @@
       "hint": "In tech, 'roll out' means to make a new product or feature available gradually or in stages.",
       "content": {
         "type": "text",
-        "value": "**[144]**\n\n[Roll out] means to officially launch or deploy a new product.\n\n~Hold back~ and ~shut down~ are opposites; they mean to stop or cancel the release."
+        "value": "**[pv:144]**\n\n[Roll out] means to officially launch or deploy a new product.\n\n~Hold back~ and ~shut down~ are opposites; they mean to stop or cancel the release."
       }
     },
     {
@@ -3979,7 +3979,7 @@
       "hint": "'Drill down' is a tech and business term meaning to examine information at a more detailed level.",
       "content": {
         "type": "text",
-        "value": "**[48]**\n\n[Drill down] means to explore the deeper levels of a hierarchical set of data.\n\n~Glance over~ and ~pass over~ are the opposite; they imply a quick, superficial look, not a deep analysis."
+        "value": "**[pv:48]**\n\n[Drill down] means to explore the deeper levels of a hierarchical set of data.\n\n~Glance over~ and ~pass over~ are the opposite; they imply a quick, superficial look, not a deep analysis."
       }
     },
     {
@@ -4007,7 +4007,7 @@
       "hint": "To 'follow up' means to take further action or communication related to a previous event.",
       "content": {
         "type": "text",
-        "value": "**[61]**\n\n[Follow up] means to continue communication or action on a previous matter.\n\n~Give up on~ and ~slack off~ are negative verbs implying no further action will be taken."
+        "value": "**[pv:61]**\n\n[Follow up] means to continue communication or action on a previous matter.\n\n~Give up on~ and ~slack off~ are negative verbs implying no further action will be taken."
       }
     },
     {
@@ -4035,7 +4035,7 @@
       "hint": "'Back up' specifically means to make a security copy of data in case the original is lost or damaged.",
       "content": {
         "type": "text",
-        "value": "**[8]**\n\n[Back up] means to create a duplicate of computer data for security.\n\n~Wipe out~ and ~throw away~ are opposites; they mean to delete or discard the files."
+        "value": "**[pv:8]**\n\n[Back up] means to create a duplicate of computer data for security.\n\n~Wipe out~ and ~throw away~ are opposites; they mean to delete or discard the files."
       }
     },
     {
@@ -4063,7 +4063,7 @@
       "hint": "'Ramp up' means to increase the level or amount of something significantly and often quickly.",
       "content": {
         "type": "text",
-        "value": "**[141]**\n\n[Ramp up] is a business term meaning to increase activity or production sharply.\n\n~Slow down~ is the direct opposite.\n~Speed up~ refers to pace, while 'ramp up' refers to volume or intensity."
+        "value": "**[pv:141]**\n\n[Ramp up] is a business term meaning to increase activity or production sharply.\n\n~Slow down~ is the direct opposite.\n~Speed up~ refers to pace, while 'ramp up' refers to volume or intensity."
       }
     },
     {
@@ -4091,7 +4091,7 @@
       "hint": "To 'sign off on' something is to give your formal approval, often in writing.",
       "content": {
         "type": "text",
-        "value": "**[156]**\n\n[Sign off on] is a three-part phrasal verb meaning to give final, official approval.\n\n~Turn down~ is the opposite; it means to reject.\n~Hold off on~ means to delay the approval."
+        "value": "**[pv:156]**\n\n[Sign off on] is a three-part phrasal verb meaning to give final, official approval.\n\n~Turn down~ is the opposite; it means to reject.\n~Hold off on~ means to delay the approval."
       }
     },
     {
@@ -4119,7 +4119,7 @@
       "hint": "To 'iron out' problems means to resolve small, remaining difficulties or disagreements.",
       "content": {
         "type": "text",
-        "value": "**[97]**\n\n[Iron out] means to smooth away and resolve minor problems or differences.\n\n~Bring up~ means to introduce the details as a problem.\n~Pass over~ means to ignore the details."
+        "value": "**[pv:97]**\n\n[Iron out] means to smooth away and resolve minor problems or differences.\n\n~Bring up~ means to introduce the details as a problem.\n~Pass over~ means to ignore the details."
       }
     },
     {
@@ -4147,7 +4147,7 @@
       "hint": "'Touch base' is a business idiom that means to make brief contact to get an update.",
       "content": {
         "type": "text",
-        "value": "**[180]**\n\n[Touch base] is an idiom meaning to talk to someone for a short time to find out how they are or what they think about something.\n\n~Stay away~ is the opposite.\n~Sign off~ means to finish work, not to get an update."
+        "value": "**[pv:180]**\n\n[Touch base] is an idiom meaning to talk to someone for a short time to find out how they are or what they think about something.\n\n~Stay away~ is the opposite.\n~Sign off~ means to finish work, not to get an update."
       }
     },
     {
@@ -4175,7 +4175,7 @@
       "hint": "To 'kick off' something means to formally start an event or project, often with a specific opening activity.",
       "content": {
         "type": "text",
-        "value": "**[102]**\n\n[Kick off] means to begin an event or meeting.\n\n~Wrap up~ and ~call off~ are opposites; they mean to finish or cancel the project."
+        "value": "**[pv:102]**\n\n[Kick off] means to begin an event or meeting.\n\n~Wrap up~ and ~call off~ are opposites; they mean to finish or cancel the project."
       }
     },
     {
@@ -4203,7 +4203,7 @@
       "hint": "'Circle back' is a corporate idiom for postponing a topic to be discussed later.",
       "content": {
         "type": "text",
-        "value": "**[31]**\n\n[Circle back] means to return to a topic or issue at a later time.\n\n~Drop~ (as in 'drop the point') and ~move on~ are opposites; they mean to not return to the topic."
+        "value": "**[pv:31]**\n\n[Circle back] means to return to a topic or issue at a later time.\n\n~Drop~ (as in 'drop the point') and ~move on~ are opposites; they mean to not return to the topic."
       }
     },
     {
@@ -4231,7 +4231,7 @@
       "hint": "In business, 'buy-in' refers to the agreement and commitment obtained from people for a project or idea.",
       "content": {
         "type": "text",
-        "value": "**[17]**\n\n[Buy-in] is a noun from the phrasal verb meaning to get support and acceptance for a plan.\n\n~Back-out~ is the opposite; it means to withdraw support.\n~Push-back~ is also the opposite; it means to get resistance or opposition."
+        "value": "**[pv:17]**\n\n[Buy-in] is a noun from the phrasal verb meaning to get support and acceptance for a plan.\n\n~Back-out~ is the opposite; it means to withdraw support.\n~Push-back~ is also the opposite; it means to get resistance or opposition."
       }
     },
     {
@@ -4259,7 +4259,7 @@
       "hint": "'Push back' is a common business idiom for postponing a date or deadline.",
       "content": {
         "type": "text",
-        "value": "**[135]**\n\n[Push back] means to move a planned event or deadline to a later time.\n\n~Bring forward~ is the opposite; it means to make the deadline earlier.\n~Call off~ means to cancel the deadline entirely."
+        "value": "**[pv:135]**\n\n[Push back] means to move a planned event or deadline to a later time.\n\n~Bring forward~ is the opposite; it means to make the deadline earlier.\n~Call off~ means to cancel the deadline entirely."
       }
     },
     {
@@ -4287,7 +4287,7 @@
       "hint": "The opposite of 'push back', 'bring forward' means to move an event to an earlier time or date.",
       "content": {
         "type": "text",
-        "value": "**[13]**\n\n[Bring forward] means to change the date or time of an event so that it happens earlier.\n\n~Push back~ and ~put off~ are opposites; they mean to postpone the meeting to a later date."
+        "value": "**[pv:13]**\n\n[Bring forward] means to change the date or time of an event so that it happens earlier.\n\n~Push back~ and ~put off~ are opposites; they mean to postpone the meeting to a later date."
       }
     },
     {
@@ -4315,7 +4315,7 @@
       "hint": "To 'lay out' a plan or argument means to explain or present it in a very clear and detailed way.",
       "content": {
         "type": "text",
-        "value": "**[103]**\n\n[Lay out] means to present something in a clear and organized manner.\n\n~Hold back~ is the opposite; it means to hide or not explain the details.\n~Pass over~ means to ignore or skip, not to explain."
+        "value": "**[pv:103]**\n\n[Lay out] means to present something in a clear and organized manner.\n\n~Hold back~ is the opposite; it means to hide or not explain the details.\n~Pass over~ means to ignore or skip, not to explain."
       }
     },
     {
@@ -4343,7 +4343,7 @@
       "hint": "'Draw up' means to prepare and write a formal, official document like a contract or plan.",
       "content": {
         "type": "text",
-        "value": "**[47]**\n\n[Draw up] means to compose and write a formal document.\n\n~Rip up~ and ~throw out~ are opposites; they mean to destroy or discard the contract."
+        "value": "**[pv:47]**\n\n[Draw up] means to compose and write a formal document.\n\n~Rip up~ and ~throw out~ are opposites; they mean to destroy or discard the contract."
       }
     },
     {
@@ -4371,7 +4371,7 @@
       "hint": "In project management, to 'break down' a task means to divide it into smaller, more detailed parts.",
       "content": {
         "type": "text",
-        "value": "**[10]**\n\n[Break down] means to divide something into smaller components for easier analysis or management.\n\n~Build up~ and ~put together~ are opposites; they mean to assemble or create the project, not divide it."
+        "value": "**[pv:10]**\n\n[Break down] means to divide something into smaller components for easier analysis or management.\n\n~Build up~ and ~put together~ are opposites; they mean to assemble or create the project, not divide it."
       }
     },
     {
@@ -4399,7 +4399,7 @@
       "hint": "To 'scale up' a business or system means to increase its size, capacity, or scope in a significant way.",
       "content": {
         "type": "text",
-        "value": "**[148]**\n\n[Scale up] is a business and tech term meaning to increase in size or number to handle greater demand.\n\n~Scale down~ is the opposite; it means to reduce in size.\n~Shut down~ means to close operations entirely."
+        "value": "**[pv:148]**\n\n[Scale up] is a business and tech term meaning to increase in size or number to handle greater demand.\n\n~Scale down~ is the opposite; it means to reduce in size.\n~Shut down~ means to close operations entirely."
       }
     },
     {
@@ -4427,7 +4427,7 @@
       "hint": "To 'phase out' something means to stop using it gradually over a period of time.",
       "content": {
         "type": "text",
-        "value": "**[130]**\n\n[Phase out] means to remove or discontinue something in stages.\n\n~Phase in~ and ~roll out~ are opposites; they mean to introduce new software, not remove the old one."
+        "value": "**[pv:130]**\n\n[Phase out] means to remove or discontinue something in stages.\n\n~Phase in~ and ~roll out~ are opposites; they mean to introduce new software, not remove the old one."
       }
     },
     {
@@ -4455,7 +4455,7 @@
       "hint": "'Zero in on' means to direct all of your attention to one specific thing, often after a period of searching.",
       "content": {
         "type": "text",
-        "value": "**[198]**\n\n[Zero in on] means to focus one's attention with great precision, as if aiming at a target.\n\n~Pass over~ and ~glance over~ are opposites; they mean to ignore or look superficially, not to focus with precision."
+        "value": "**[pv:198]**\n\n[Zero in on] means to focus one's attention with great precision, as if aiming at a target.\n\n~Pass over~ and ~glance over~ are opposites; they mean to ignore or look superficially, not to focus with precision."
       }
     },
     {
@@ -4483,7 +4483,7 @@
       "hint": "To 'deal with' a situation or person means to take the necessary action to manage them.",
       "content": {
         "type": "text",
-        "value": "**[45]**\n\n[Deal with] means to handle or take action in a particular situation.\n\n~Give in to~ means to surrender to the clients.\n~Look up to~ means to admire, which is unlikely for 'difficult' clients."
+        "value": "**[pv:45]**\n\n[Deal with] means to handle or take action in a particular situation.\n\n~Give in to~ means to surrender to the clients.\n~Look up to~ means to admire, which is unlikely for 'difficult' clients."
       }
     },
     {
@@ -4511,7 +4511,7 @@
       "hint": "Remember, 'make up' means to reconcile and restore a friendly relationship after a disagreement.",
       "content": {
         "type": "text",
-        "value": "**[122]**\n\n[Make up] means to become friends again after a conflict.\n\n~Break up~ and ~fall out~ are opposites; they mean to end a relationship or have an argument, not to reconcile."
+        "value": "**[pv:122]**\n\n[Make up] means to become friends again after a conflict.\n\n~Break up~ and ~fall out~ are opposites; they mean to end a relationship or have an argument, not to reconcile."
       }
     },
     {
@@ -4539,7 +4539,7 @@
       "hint": "'Come up with' emphasizes the act of ideation and creativity to produce a plan or solution.",
       "content": {
         "type": "text",
-        "value": "**[39]**\n\n[Come up with] is the phrasal verb for inventing or thinking of a new idea or plan.\n\n~Shoot down~ means to reject a strategy.\n~Forget about~ is the opposite of creating one."
+        "value": "**[pv:39]**\n\n[Come up with] is the phrasal verb for inventing or thinking of a new idea or plan.\n\n~Shoot down~ means to reject a strategy.\n~Forget about~ is the opposite of creating one."
       }
     },
     {
@@ -4567,7 +4567,7 @@
       "hint": "'Break down' can mean to lose emotional or mental control under pressure.",
       "content": {
         "type": "text",
-        "value": "**[10]**\n\n[Break down] means to become emotionally unable to cope, which could lead to a confession.\n\n~Hold out~ and ~stand up to~ are opposites; they mean to resist the questioning, not to collapse emotionally."
+        "value": "**[pv:10]**\n\n[Break down] means to become emotionally unable to cope, which could lead to a confession.\n\n~Hold out~ and ~stand up to~ are opposites; they mean to resist the questioning, not to collapse emotionally."
       }
     },
     {
@@ -4595,7 +4595,7 @@
       "hint": "To 'turn someone down' is a common and slightly gentler way to say you are refusing their invitation or proposal.",
       "content": {
         "type": "text",
-        "value": "**[184]**\n\n[Turned him down] means she refused his offer. This phrasal verb is separable.\n\n~Took him out~ and ~asked him out~ are the opposite; they imply accepting or initiating the invitation."
+        "value": "**[pv:184]**\n\n[Turned him down] means she refused his offer. This phrasal verb is separable.\n\n~Took him out~ and ~asked him out~ are the opposite; they imply accepting or initiating the invitation."
       }
     },
     {
@@ -4623,7 +4623,7 @@
       "hint": "'Sort out' means to arrange things systematically, often separating what you want to keep from what you want to discard.",
       "content": {
         "type": "text",
-        "value": "**[161]**\n\n[Sort out] means to put things in order or into groups.\n\n~Mess up~ is the opposite; it means to make the attic untidy.\n~Fill up~ means to add more things, not organize."
+        "value": "**[pv:161]**\n\n[Sort out] means to put things in order or into groups.\n\n~Mess up~ is the opposite; it means to make the attic untidy.\n~Fill up~ means to add more things, not organize."
       }
     },
     {
@@ -4651,7 +4651,7 @@
       "hint": "To 'stand out' means to be much better or more significant than other similar people or things.",
       "content": {
         "type": "text",
-        "value": "**[164]**\n\n[Stand out] means to be noticeably superior.\n\n~Blend in~ is the direct opposite; it means to be unnoticeable.\n~Fall behind~ means to be worse than the others."
+        "value": "**[pv:164]**\n\n[Stand out] means to be noticeably superior.\n\n~Blend in~ is the direct opposite; it means to be unnoticeable.\n~Fall behind~ means to be worse than the others."
       }
     },
     {
@@ -4679,7 +4679,7 @@
       "hint": "To 'turn someone off' means to cause them to lose interest or to feel disgusted.",
       "content": {
         "type": "text",
-        "value": "**[185]**\n\n[Turned off] means to cause someone to feel disinterest or disgust.\n\n~Cheered up~ and ~won over~ are opposites; they mean the audience was pleased or persuaded."
+        "value": "**[pv:185]**\n\n[Turned off] means to cause someone to feel disinterest or disgust.\n\n~Cheered up~ and ~won over~ are opposites; they mean the audience was pleased or persuaded."
       }
     },
     {
@@ -4707,7 +4707,7 @@
       "hint": "The phrasal verb 'pay off' means to finish paying a debt in full.",
       "content": {
         "type": "text",
-        "value": "**[129]**\n\n[Pay off] means to pay back a debt completely.\n\n~Take out~ and ~run up~ are opposites; they mean to start or increase the debt, not finish paying it."
+        "value": "**[pv:129]**\n\n[Pay off] means to pay back a debt completely.\n\n~Take out~ and ~run up~ are opposites; they mean to start or increase the debt, not finish paying it."
       }
     },
     {
@@ -4735,7 +4735,7 @@
       "hint": "'Go on' means to continue, often with a sense of surprise or persistence.",
       "content": {
         "type": "text",
-        "value": "**[86]**\n\n[Went on] means continued.\n\n~Shut up~ and ~calmed down~ are opposites; they mean to stop talking, not to continue."
+        "value": "**[pv:86]**\n\n[Went on] means continued.\n\n~Shut up~ and ~calmed down~ are opposites; they mean to stop talking, not to continue."
       }
     },
     {
@@ -4763,7 +4763,7 @@
       "hint": "To 'depend on' something means that it is the crucial factor for success.",
       "content": {
         "type": "text",
-        "value": "**[46]**\n\n[Depends on] means that the outcome is contingent upon this factor.\n\n~Gives up on~ is illogical.\n~Falls apart~ means to fail, which is the opposite of depending on something for success."
+        "value": "**[pv:46]**\n\n[Depends on] means that the outcome is contingent upon this factor.\n\n~Gives up on~ is illogical.\n~Falls apart~ means to fail, which is the opposite of depending on something for success."
       }
     },
     {
@@ -4791,7 +4791,7 @@
       "hint": "The particle 'away' is used to indicate distance from a particular point.",
       "content": {
         "type": "text",
-        "value": "**[5]**\n\n[Away] is used to specify distance.\n\n~Off~ would imply distance from a coast ('a mile off the coast').\n~Out~ does not fit grammatically here."
+        "value": "**[pv:5]**\n\n[Away] is used to specify distance.\n\n~Off~ would imply distance from a coast ('a mile off the coast').\n~Out~ does not fit grammatically here."
       }
     },
     {
@@ -4819,7 +4819,7 @@
       "hint": "The phrasal verb 'hear back' means to receive a response or communication from someone you contacted.",
       "content": {
         "type": "text",
-        "value": "**[6]**\n\n[Back] completes the phrasal verb 'hear back', which means to get a reply.\n\n~Hear out~ means to listen to someone completely.\n~Hear on~ is not a phrasal verb."
+        "value": "**[pv:6]**\n\n[Back] completes the phrasal verb 'hear back', which means to get a reply.\n\n~Hear out~ means to listen to someone completely.\n~Hear on~ is not a phrasal verb."
       }
     },
     {
@@ -4847,7 +4847,7 @@
       "hint": "To 'look over' something means to examine it quickly without paying attention to the details.",
       "content": {
         "type": "text",
-        "value": "**[116]**\n\n[Looked over] means to review something briefly.\n\n~Went over~ implies a detailed review, not a quick one.\n~Drilled down on~ means to analyze in extreme detail."
+        "value": "**[pv:116]**\n\n[Looked over] means to review something briefly.\n\n~Went over~ implies a detailed review, not a quick one.\n~Drilled down on~ means to analyze in extreme detail."
       }
     },
     {
@@ -4875,7 +4875,7 @@
       "hint": "'Go through' can mean to endure a long or official process.",
       "content": {
         "type": "text",
-        "value": "**[88]**\n\n[Go through] is used here to mean to experience and complete a process.\n\n~Get out of~ and ~give up on~ are opposites; they mean to avoid or quit the process, not to endure it."
+        "value": "**[pv:88]**\n\n[Go through] is used here to mean to experience and complete a process.\n\n~Get out of~ and ~give up on~ are opposites; they mean to avoid or quit the process, not to endure it."
       }
     },
     {
@@ -4903,7 +4903,7 @@
       "hint": "The verb 'apply' uses the preposition 'to' to mean 'be relevant to' or 'concern'.",
       "content": {
         "type": "text",
-        "value": "**[3]**\n\n[Apply to] is a fixed expression meaning to be relevant to a particular person or group.\n\n~Abide by~ means to follow the policy, but 'apply to' means to be relevant to the department.\n~Look for~ is illogical."
+        "value": "**[pv:3]**\n\n[Apply to] is a fixed expression meaning to be relevant to a particular person or group.\n\n~Abide by~ means to follow the policy, but 'apply to' means to be relevant to the department.\n~Look for~ is illogical."
       }
     },
     {
@@ -4931,7 +4931,7 @@
       "hint": "Use 'agree with' to express having the same opinion as another person.",
       "content": {
         "type": "text",
-        "value": "**[1]**\n\n[Agree with] is the correct phrasal verb for sharing an opinion.\n\n~Look up to~ means to admire, which is different from agreeing.\n~Get along with~ means to have a good relationship, but you can get along with someone you don't agree with."
+        "value": "**[pv:1]**\n\n[Agree with] is the correct phrasal verb for sharing an opinion.\n\n~Look up to~ means to admire, which is different from agreeing.\n~Get along with~ means to have a good relationship, but you can get along with someone you don't agree with."
       }
     },
     {
@@ -4959,7 +4959,7 @@
       "hint": "The preposition 'for' is used after 'apologize' to introduce the reason for the apology.",
       "content": {
         "type": "text",
-        "value": "**[2]**\n\n[Apologize for] is the correct structure for saying you are sorry about something.\n\n~Make up for~ means to do something good to compensate for something bad you have done.\n~Brag about~ is the opposite; it means to boast about the behavior."
+        "value": "**[pv:2]**\n\n[Apologize for] is the correct structure for saying you are sorry about something.\n\n~Make up for~ means to do something good to compensate for something bad you have done.\n~Brag about~ is the opposite; it means to boast about the behavior."
       }
     },
     {
@@ -4987,7 +4987,7 @@
       "hint": "'Ask for' is a general way to say you are requesting something.",
       "content": {
         "type": "text",
-        "value": "**[4]**\n\n[Ask for] means to request.\n\n~Pay off~ is what you do after you get a loan.\n~Give back~ means to return something, not request it."
+        "value": "**[pv:4]**\n\n[Ask for] means to request.\n\n~Pay off~ is what you do after you get a loan.\n~Give back~ means to return something, not request it."
       }
     },
     {
@@ -5015,7 +5015,7 @@
       "hint": "'Care about' something means you feel it is important.",
       "content": {
         "type": "text",
-        "value": "**[21]**\n\n[Care about] means to feel something has importance or value to you.\n\n~Worry about~ means to feel anxious about something.\n~Think of~ means to have an opinion or for an idea to enter your mind."
+        "value": "**[pv:21]**\n\n[Care about] means to feel something has importance or value to you.\n\n~Worry about~ means to feel anxious about something.\n~Think of~ means to have an opinion or for an idea to enter your mind."
       }
     },
     {
@@ -5043,7 +5043,7 @@
       "hint": "'Care for' means to provide for the needs and safety of someone or something.",
       "content": {
         "type": "text",
-        "value": "**[22]**\n\n[Care for] means to provide the necessary things for a person or animal.\n\n~Care about~ means to have emotional concern for the dog, not to physically look after it.\n~Let out~ means to allow the dog to go outside."
+        "value": "**[pv:22]**\n\n[Care for] means to provide the necessary things for a person or animal.\n\n~Care about~ means to have emotional concern for the dog, not to physically look after it.\n~Let out~ means to allow the dog to go outside."
       }
     },
     {
@@ -5071,7 +5071,7 @@
       "hint": "To 'look for' something means to be actively trying to find it.",
       "content": {
         "type": "text",
-        "value": "**[112]**\n\n[Looking for] is the continuous form of the phrasal verb meaning to search.\n\n~Giving up on~ is the opposite; it means to stop searching.\n~Holding off on~ means to delay the search."
+        "value": "**[pv:112]**\n\n[Looking for] is the continuous form of the phrasal verb meaning to search.\n\n~Giving up on~ is the opposite; it means to stop searching.\n~Holding off on~ means to delay the search."
       }
     },
     {
@@ -5099,7 +5099,7 @@
       "hint": "'Take after' is unique because it can refer to inheriting both physical appearance and personality traits from a relative.",
       "content": {
         "type": "text",
-        "value": "**[171]**\n\n[Take after] means to resemble an older family member in looks or character.\n\n~Look up to~ (to admire) and ~look down on~ (to despise) are about respect, not resemblance."
+        "value": "**[pv:171]**\n\n[Take after] means to resemble an older family member in looks or character.\n\n~Look up to~ (to admire) and ~look down on~ (to despise) are about respect, not resemblance."
       }
     },
     {
@@ -5127,7 +5127,7 @@
       "hint": "Use 'think of' when an idea or piece of information comes into your mind.",
       "content": {
         "type": "text",
-        "value": "**[178]**\n\n[Think of] is used here to mean recalling a piece of information.\n\n~Make up~ means to invent his name, not recall it.\n~Go by~ means the name he uses (e.g., 'he goes by Mike')."
+        "value": "**[pv:178]**\n\n[Think of] is used here to mean recalling a piece of information.\n\n~Make up~ means to invent his name, not recall it.\n~Go by~ means the name he uses (e.g., 'he goes by Mike')."
       }
     },
     {
@@ -5155,7 +5155,7 @@
       "hint": "'Fall asleep' refers to the involuntary action of beginning to sleep.",
       "content": {
         "type": "text",
-        "value": "**[54]**\n\n[Fell asleep] describes the moment sleep begins.\n\n~Stayed up~ is the opposite.\n~Passed out~ means to lose consciousness suddenly, which is more extreme than falling asleep."
+        "value": "**[pv:54]**\n\n[Fell asleep] describes the moment sleep begins.\n\n~Stayed up~ is the opposite.\n~Passed out~ means to lose consciousness suddenly, which is more extreme than falling asleep."
       }
     },
     {
@@ -5183,7 +5183,7 @@
       "hint": "The expression 'feel like' must be followed by a noun or a gerund (-ing form).",
       "content": {
         "type": "text",
-        "value": "**[55]**\n\n[Feel like] is an idiom expressing a desire or inclination.\n\n~Put off~ means to delay.\n~Look forward to~ is the opposite; it means to be excited about going out."
+        "value": "**[pv:55]**\n\n[Feel like] is an idiom expressing a desire or inclination.\n\n~Put off~ means to delay.\n~Look forward to~ is the opposite; it means to be excited about going out."
       }
     },
     {
@@ -5211,7 +5211,7 @@
       "hint": "'Get by' means to manage to live with just enough money for your basic needs.",
       "content": {
         "type": "text",
-        "value": "**[69]**\n\n[Get by] specifically means to manage financially with difficulty.\n\n~Splash out~ is the opposite; it means to spend a lot of money.\n~Live on~ means to survive eating only that salary (which is similar, but 'get by' is the best fit)."
+        "value": "**[pv:69]**\n\n[Get by] specifically means to manage financially with difficulty.\n\n~Splash out~ is the opposite; it means to spend a lot of money.\n~Live on~ means to survive eating only that salary (which is similar, but 'get by' is the best fit)."
       }
     },
     {
@@ -5239,7 +5239,7 @@
       "hint": "To 'get on with' something means to continue doing it, especially after an interruption.",
       "content": {
         "type": "text",
-        "value": "**[71]**\n\n[Get on with] means to continue with your life or work.\n\n~Give up on~ is the opposite.\n~Look back on~ means to remember, not to continue."
+        "value": "**[pv:71]**\n\n[Get on with] means to continue with your life or work.\n\n~Give up on~ is the opposite.\n~Look back on~ means to remember, not to continue."
       }
     },
     {
@@ -5267,7 +5267,7 @@
       "hint": "The three-part phrase 'get rid of' means to eliminate or dispose of something unwanted.",
       "content": {
         "type": "text",
-        "value": "**[74]**\n\n[Got rid of] means to remove or discard something completely.\n\n~Brought in~ and ~looked after~ are opposites; they mean to introduce or care for the mice."
+        "value": "**[pv:74]**\n\n[Got rid of] means to remove or discard something completely.\n\n~Brought in~ and ~looked after~ are opposites; they mean to introduce or care for the mice."
       }
     },
     {
@@ -5295,7 +5295,7 @@
       "hint": "'Keep going' is an encouraging phrase meaning to persevere and not give up.",
       "content": {
         "type": "text",
-        "value": "**[100]**\n\n[Keep going] is an idiom that means to continue, especially in the face of adversity.\n\n~Give up~ and ~drop out~ are opposites; they mean to quit."
+        "value": "**[pv:100]**\n\n[Keep going] is an idiom that means to continue, especially in the face of adversity.\n\n~Give up~ and ~drop out~ are opposites; they mean to quit."
       }
     },
     {
@@ -5323,7 +5323,7 @@
       "hint": "'Looks like' is used to make a judgment or prediction based on visual evidence.",
       "content": {
         "type": "text",
-        "value": "**[115]**\n\n[Looks like] is used to express an opinion based on appearance.\n\n~Clearing up~ is the opposite; it means the weather is improving.\n~Holding off~ means the rain is delaying."
+        "value": "**[pv:115]**\n\n[Looks like] is used to express an opinion based on appearance.\n\n~Clearing up~ is the opposite; it means the weather is improving.\n~Holding off~ means the rain is delaying."
       }
     },
     {
@@ -5351,7 +5351,7 @@
       "hint": "To 'buy into' an idea means to fully believe in it and support it.",
       "content": {
         "type": "text",
-        "value": "**[18]**\n\n[Buy into] means to become convinced of the value or truth of an idea.\n\n~Shoot down~ and ~pass on~ are opposites; they mean to reject or decline the new workflow."
+        "value": "**[pv:18]**\n\n[Buy into] means to become convinced of the value or truth of an idea.\n\n~Shoot down~ and ~pass on~ are opposites; they mean to reject or decline the new workflow."
       }
     },
     {
@@ -5379,7 +5379,7 @@
       "hint": "'Push back' is a common phrasal verb for postponing something.",
       "content": {
         "type": "text",
-        "value": "**[135]**\n\n[Push back] means to postpone to a later date.\n\n~Bring forward~ is the opposite; it means to make it earlier.\n~Call off~ means to cancel the launch, not just postpone it."
+        "value": "**[pv:135]**\n\n[Push back] means to postpone to a later date.\n\n~Bring forward~ is the opposite; it means to make it earlier.\n~Call off~ means to cancel the launch, not just postpone it."
       }
     },
     {
@@ -5407,7 +5407,7 @@
       "hint": "In technology, 'scale up' means to handle increased load or demand without a loss in performance.",
       "content": {
         "type": "text",
-        "value": "**[148]**\n\n[Scale up] is a technical term for increasing capacity to meet demand.\n\n~Scale down~ is the opposite.\n~Shut down~ means to stop the application from working entirely."
+        "value": "**[pv:148]**\n\n[Scale up] is a technical term for increasing capacity to meet demand.\n\n~Scale down~ is the opposite.\n~Shut down~ means to stop the application from working entirely."
       }
     },
     {
@@ -5435,7 +5435,7 @@
       "hint": "'Deal with' is a general phrasal verb for managing tasks, problems, or correspondence.",
       "content": {
         "type": "text",
-        "value": "**[45]**\n\n[Deal with] means to take the necessary actions regarding something. It can include reading, replying, deleting, and organizing.\n\n~Look forward to~ is the opposite emotion.\n~Put off~ means to procrastinate and not deal with them."
+        "value": "**[pv:45]**\n\n[Deal with] means to take the necessary actions regarding something. It can include reading, replying, deleting, and organizing.\n\n~Look forward to~ is the opposite emotion.\n~Put off~ means to procrastinate and not deal with them."
       }
     },
     {
@@ -5463,7 +5463,7 @@
       "hint": "Use 'build up' to describe something that increases gradually over time, like an emotion or pressure.",
       "content": {
         "type": "text",
-        "value": "**[15]**\n\n[Building up] means to increase in quantity or intensity over a period.\n\n~Calming down~ and ~winding down~ are opposites; they mean the tension was decreasing."
+        "value": "**[pv:15]**\n\n[Building up] means to increase in quantity or intensity over a period.\n\n~Calming down~ and ~winding down~ are opposites; they mean the tension was decreasing."
       }
     },
     {
@@ -5491,7 +5491,7 @@
       "hint": "When an event 'winds down', its activity and energy decrease as it comes to an end.",
       "content": {
         "type": "text",
-        "value": "**[193]**\n\n[Wind down] means to gradually become less active and end.\n\n~Liven up~ and ~kick off~ are opposites; they mean the party was starting or becoming more energetic."
+        "value": "**[pv:193]**\n\n[Wind down] means to gradually become less active and end.\n\n~Liven up~ and ~kick off~ are opposites; they mean the party was starting or becoming more energetic."
       }
     },
     {
@@ -5519,7 +5519,7 @@
       "hint": "The phrase 'run out of' is used when a finite resource, like time or milk, is almost completely used up.",
       "content": {
         "type": "text",
-        "value": "**[146]**\n\n[Running out] is the phrasal verb meaning to have less and less of a resource until none is left.\n\n~Making up~ time is illogical here.\n~Saving up~ is the opposite; it means to conserve time."
+        "value": "**[pv:146]**\n\n[Running out] is the phrasal verb meaning to have less and less of a resource until none is left.\n\n~Making up~ time is illogical here.\n~Saving up~ is the opposite; it means to conserve time."
       }
     },
     {
@@ -5547,7 +5547,7 @@
       "hint": "When a career or project 'takes off', it suddenly becomes very successful.",
       "content": {
         "type": "text",
-        "value": "**[174]**\n\n[Took off] is an idiom meaning to become successful or popular very quickly.\n\n~Fizzled out~ and ~fell through~ are opposites; they mean the career failed to become successful."
+        "value": "**[pv:174]**\n\n[Took off] is an idiom meaning to become successful or popular very quickly.\n\n~Fizzled out~ and ~fell through~ are opposites; they mean the career failed to become successful."
       }
     },
     {
@@ -5575,7 +5575,7 @@
       "hint": "Using 'show up' instead of 'arrive' can sometimes imply a casualness or a slight surprise about the arrival.",
       "content": {
         "type": "text",
-        "value": "**[153]**\n\n[Show up] is a common, slightly informal phrasal verb for 'arrive'.\n\n~Stay away~ is the opposite.\n~Bail on~ means to abandon the party, not arrive."
+        "value": "**[pv:153]**\n\n[Show up] is a common, slightly informal phrasal verb for 'arrive'.\n\n~Stay away~ is the opposite.\n~Bail on~ means to abandon the party, not arrive."
       }
     },
     {
@@ -5603,7 +5603,7 @@
       "hint": "To 'make up' something means to invent it, and it's often used for stories, excuses, or imaginary things.",
       "content": {
         "type": "text",
-        "value": "**[122]**\n\n[Make up] means to create from imagination.\n\n~Grow out of~ is what happens to imaginary friends, but not the act of creation.\n~Get rid of~ is the opposite."
+        "value": "**[pv:122]**\n\n[Make up] means to create from imagination.\n\n~Grow out of~ is what happens to imaginary friends, but not the act of creation.\n~Get rid of~ is the opposite."
       }
     },
     {
@@ -5631,7 +5631,7 @@
       "hint": "This phrasal verb means to make someone feel happier.",
       "content": {
         "type": "text",
-        "value": "**[30]**\n\n[Cheer up] means to become or make someone happier.\n\n~Look up~ means to search for information.\n~Bring up~ means to mention a topic."
+        "value": "**[pv:30]**\n\n[Cheer up] means to become or make someone happier.\n\n~Look up~ means to search for information.\n~Bring up~ means to mention a topic."
       }
     },
     {
@@ -5659,7 +5659,7 @@
       "hint": "This is the separable version of 'cheer up', where the object goes in the middle.",
       "content": {
         "type": "text",
-        "value": "**[30]**\n\n[Cheer her up] is the correct separable form for making someone happier.\n\n~Pick her up~ means to collect someone in a vehicle.\n~Lift her up~ means to physically raise someone."
+        "value": "**[pv:30]**\n\n[Cheer her up] is the correct separable form for making someone happier.\n\n~Pick her up~ means to collect someone in a vehicle.\n~Lift her up~ means to physically raise someone."
       }
     },
     {
@@ -5687,7 +5687,7 @@
       "hint": "Use 'end up' to describe a final result or location that was not originally planned.",
       "content": {
         "type": "text",
-        "value": "**[53]**\n\n[Ended up] describes the final, often unexpected, result of a situation or journey.\n\n~Showed up~ means to arrive.\n~Came up~ means something appeared unexpectedly."
+        "value": "**[pv:53]**\n\n[Ended up] describes the final, often unexpected, result of a situation or journey.\n\n~Showed up~ means to arrive.\n~Came up~ means something appeared unexpectedly."
       }
     },
     {
@@ -5715,7 +5715,7 @@
       "hint": "'End up' can also describe a final state or condition, not just a location.",
       "content": {
         "type": "text",
-        "value": "**[53]**\n\n[Ended up] describes reaching a final, unplanned state or role.\n\n~Grew up~ means to mature into an adult.\n~Set up~ means to establish or arrange something."
+        "value": "**[pv:53]**\n\n[Ended up] describes reaching a final, unplanned state or role.\n\n~Grew up~ means to mature into an adult.\n~Set up~ means to establish or arrange something."
       }
     },
     {
@@ -5743,7 +5743,7 @@
       "hint": "To 'use up' something means to consume it completely so that nothing is left.",
       "content": {
         "type": "text",
-        "value": "**[189]**\n\n[Used up] means to finish the entire supply of something.\n\n~Ate on~ and ~finished out~ are not correct phrasal verbs in this context."
+        "value": "**[pv:189]**\n\n[Used up] means to finish the entire supply of something.\n\n~Ate on~ and ~finished out~ are not correct phrasal verbs in this context."
       }
     },
     {
@@ -5771,7 +5771,7 @@
       "hint": "'Use up' can apply to intangible resources like energy, time, or patience, not just physical items.",
       "content": {
         "type": "text",
-        "value": "**[189]**\n\n[Used up] means to consume a resource completely.\n\n~Took out~ means to remove.\n~Ran down~ can mean to lose power, but 'used up' fits better for personal energy."
+        "value": "**[pv:189]**\n\n[Used up] means to consume a resource completely.\n\n~Took out~ means to remove.\n~Ran down~ can mean to lose power, but 'used up' fits better for personal energy."
       }
     },
     {
@@ -5799,7 +5799,7 @@
       "hint": "To 'back down' means to withdraw from a position or argument.",
       "content": {
         "type": "text",
-        "value": "**[7]**\n\n[Backed down] means to admit defeat or withdraw your claim in a conflict.\n\n~Gave up~ means to quit an effort.\n~Fell over~ means to fall to the ground."
+        "value": "**[pv:7]**\n\n[Backed down] means to admit defeat or withdraw your claim in a conflict.\n\n~Gave up~ means to quit an effort.\n~Fell over~ means to fall to the ground."
       }
     },
     {
@@ -5827,7 +5827,7 @@
       "hint": "'Back down' is often used in negotiations to mean withdrawing a demand.",
       "content": {
         "type": "text",
-        "value": "**[7]**\n\n[Back down] means to withdraw from a confrontation or demand.\n\n~Slow down~ means to reduce speed.\n~Cut off~ means to stop a supply or interrupt."
+        "value": "**[pv:7]**\n\n[Back down] means to withdraw from a confrontation or demand.\n\n~Slow down~ means to reduce speed.\n~Cut off~ means to stop a supply or interrupt."
       }
     },
     {
@@ -5855,7 +5855,7 @@
       "hint": "To 'settle down' means to adopt a more stable and routine lifestyle, often involving marriage and a permanent home.",
       "content": {
         "type": "text",
-        "value": "**[151]**\n\n[Settle down] means to begin to live a quiet life in one place.\n\n~Calm down~ means to become less angry or excited.\n~Sit down~ means to take a seat."
+        "value": "**[pv:151]**\n\n[Settle down] means to begin to live a quiet life in one place.\n\n~Calm down~ means to become less angry or excited.\n~Sit down~ means to take a seat."
       }
     },
     {
@@ -5883,7 +5883,7 @@
       "hint": "'Settle down' can also mean to become quiet and calm after being active or noisy.",
       "content": {
         "type": "text",
-        "value": "**[151]**\n\n[Settle down] means for a group to become quiet and orderly.\n\n~Wind down~ means to relax after activity.\n~Break down~ means to stop functioning or to cry."
+        "value": "**[pv:151]**\n\n[Settle down] means for a group to become quiet and orderly.\n\n~Wind down~ means to relax after activity.\n~Break down~ means to stop functioning or to cry."
       }
     },
     {
@@ -5911,7 +5911,7 @@
       "hint": "To 'eat out' means to have a meal at a restaurant instead of at home.",
       "content": {
         "type": "text",
-        "value": "**[52]**\n\n[Eat out] means to dine at a restaurant.\n\n~Take out~ means to buy food at a restaurant and bring it home to eat.\n~Give out~ means to distribute."
+        "value": "**[pv:52]**\n\n[Eat out] means to dine at a restaurant.\n\n~Take out~ means to buy food at a restaurant and bring it home to eat.\n~Give out~ means to distribute."
       }
     },
     {
@@ -5939,7 +5939,7 @@
       "hint": "Remember, 'eat out' refers to the action of going to a restaurant for a meal.",
       "content": {
         "type": "text",
-        "value": "**[52]**\n\n[Eat out] is the phrasal verb for dining in a restaurant.\n\n~Sort out~ means to organize or solve.\n~Check out~ means to examine something interesting."
+        "value": "**[pv:52]**\n\n[Eat out] is the phrasal verb for dining in a restaurant.\n\n~Sort out~ means to organize or solve.\n~Check out~ means to examine something interesting."
       }
     },
     {
@@ -5967,7 +5967,7 @@
       "hint": "To 'hang out' is an informal way to say 'spend time relaxing or socializing'.",
       "content": {
         "type": "text",
-        "value": "**[94]**\n\n[Hang out] means to spend leisure time with no specific activity.\n\n~Get out~ means to leave a place.\n~Stand out~ means to be noticeable."
+        "value": "**[pv:94]**\n\n[Hang out] means to spend leisure time with no specific activity.\n\n~Get out~ means to leave a place.\n~Stand out~ means to be noticeable."
       }
     },
     {
@@ -5995,7 +5995,7 @@
       "hint": "'Hang out with' someone means to spend time with them socially.",
       "content": {
         "type": "text",
-        "value": "**[94]**\n\n[Hang out] means to socialize informally.\n\n~Fall out~ means to have an argument and stop being friends.\n~Work out~ means to exercise."
+        "value": "**[pv:94]**\n\n[Hang out] means to socialize informally.\n\n~Fall out~ means to have an argument and stop being friends.\n~Work out~ means to exercise."
       }
     },
     {
@@ -6023,7 +6023,7 @@
       "hint": "To 'leave out' something means to omit it or not include it.",
       "content": {
         "type": "text",
-        "value": "**[104]**\n\n[Left out] means to omit.\n\n~Cut out~ means to stop consuming something.\n~Ran out~ means to have no more of something."
+        "value": "**[pv:104]**\n\n[Left out] means to omit.\n\n~Cut out~ means to stop consuming something.\n~Ran out~ means to have no more of something."
       }
     },
     {
@@ -6051,7 +6051,7 @@
       "hint": "To 'feel left out' is an emotional state of feeling excluded from a group or activity.",
       "content": {
         "type": "text",
-        "value": "**[104]**\n\n[Left out] means excluded.\n\n~Put out~ can mean annoyed or to extinguish a fire.\n~Dropped out~ means to quit school or a competition."
+        "value": "**[pv:104]**\n\n[Left out] means excluded.\n\n~Put out~ can mean annoyed or to extinguish a fire.\n~Dropped out~ means to quit school or a competition."
       }
     },
     {
@@ -6079,7 +6079,7 @@
       "hint": "For an alarm, 'go off' means to suddenly start making noise.",
       "content": {
         "type": "text",
-        "value": "**[85]**\n\n[Went off] means to activate suddenly (for an alarm, a bomb).\n\n~Turned on~ implies someone activated it intentionally.\n~Shut off~ means to deactivate."
+        "value": "**[pv:85]**\n\n[Went off] means to activate suddenly (for an alarm, a bomb).\n\n~Turned on~ implies someone activated it intentionally.\n~Shut off~ means to deactivate."
       }
     },
     {
@@ -6107,7 +6107,7 @@
       "hint": "For food, 'go off' (especially in British English) means it has spoiled and is no longer good to eat.",
       "content": {
         "type": "text",
-        "value": "**[85]**\n\n[Gone off] means food has spoiled.\n\n~Run out~ means there is none left.\n~Thrown out~ means it was discarded, which happens after it has gone off."
+        "value": "**[pv:85]**\n\n[Gone off] means food has spoiled.\n\n~Run out~ means there is none left.\n~Thrown out~ means it was discarded, which happens after it has gone off."
       }
     },
     {
@@ -6135,7 +6135,7 @@
       "hint": "When the effect of something (like a drug or a feeling) 'wears off', it gradually disappears.",
       "content": {
         "type": "text",
-        "value": "**[192]**\n\n[Wear off] means to gradually stop having an effect.\n\n~Give out~ means to stop working or to distribute.\n~Pass away~ is a euphemism for 'to die'."
+        "value": "**[pv:192]**\n\n[Wear off] means to gradually stop having an effect.\n\n~Give out~ means to stop working or to distribute.\n~Pass away~ is a euphemism for 'to die'."
       }
     },
     {
@@ -6163,7 +6163,7 @@
       "hint": "'Wear off' is perfect for describing a feeling or novelty that lessens over time.",
       "content": {
         "type": "text",
-        "value": "**[192]**\n\n[Wear off] means for a feeling to gradually disappear.\n\n~Liven up~ and ~perk up~ are opposites; they mean the excitement was increasing."
+        "value": "**[pv:192]**\n\n[Wear off] means for a feeling to gradually disappear.\n\n~Liven up~ and ~perk up~ are opposites; they mean the excitement was increasing."
       }
     },
     {
@@ -6191,7 +6191,7 @@
       "hint": "'Hold on' is a common, informal way to ask someone to wait for a short time.",
       "content": {
         "type": "text",
-        "value": "**[96]**\n\n[Hold on] is a phrasal verb meaning 'wait'.\n\n~Wait up~ means to wait for someone to come home before going to bed.\n~Stand by~ means to wait and be ready for action."
+        "value": "**[pv:96]**\n\n[Hold on] is a phrasal verb meaning 'wait'.\n\n~Wait up~ means to wait for someone to come home before going to bed.\n~Stand by~ means to wait and be ready for action."
       }
     },
     {
@@ -6219,7 +6219,7 @@
       "hint": "In this context, 'Hold on' is an exclamation used to tell someone to stop or wait, often because of surprise or danger.",
       "content": {
         "type": "text",
-        "value": "**[96]**\n\n[Hold on] is used here as an exclamation to mean 'stop' or 'wait'.\n\n~Carry on~ and ~go on~ both mean 'continue', which is the opposite of the intended meaning."
+        "value": "**[pv:96]**\n\n[Hold on] is used here as an exclamation to mean 'stop' or 'wait'.\n\n~Carry on~ and ~go on~ both mean 'continue', which is the opposite of the intended meaning."
       }
     },
     {
@@ -6247,7 +6247,7 @@
       "hint": "'Keep on' means to continue doing something without stopping, often with persistence.",
       "content": {
         "type": "text",
-        "value": "**[101]**\n\n[Keep on] (followed by a gerund) means to persevere or continue.\n\n~Hold on~ means to wait.\n~Give up~ is the opposite; it means to stop trying."
+        "value": "**[pv:101]**\n\n[Keep on] (followed by a gerund) means to persevere or continue.\n\n~Hold on~ means to wait.\n~Give up~ is the opposite; it means to stop trying."
       }
     },
     {
@@ -6275,7 +6275,7 @@
       "hint": "'Keep on' can imply continuing an action in a persistent, sometimes annoying, way.",
       "content": {
         "type": "text",
-        "value": "**[101]**\n\n[Kept on] means continued, often against advice or expectations.\n\n~Stayed on~ means remained.\n~Focused on~ means concentrated."
+        "value": "**[pv:101]**\n\n[Kept on] means continued, often against advice or expectations.\n\n~Stayed on~ means remained.\n~Focused on~ means concentrated."
       }
     },
     {
@@ -6303,7 +6303,7 @@
       "hint": "The phrasal verb 'pay back' means to return money that you borrowed.",
       "content": {
         "type": "text",
-        "value": "**[128]**\n\n[Paid me back] is the correct separable phrasal verb for returning a loan.\n\n~Got me back~ means to get revenge.\n~Called me back~ means to return a phone call."
+        "value": "**[pv:128]**\n\n[Paid me back] is the correct separable phrasal verb for returning a loan.\n\n~Got me back~ means to get revenge.\n~Called me back~ means to return a phone call."
       }
     },
     {
@@ -6331,7 +6331,7 @@
       "hint": "'Pay someone back' can also mean to do something good for them in return for a past favor.",
       "content": {
         "type": "text",
-        "value": "**[128]**\n\n[Pay her back] can idiomatically mean to return a favor.\n\n~Get her back~ can mean to get revenge, which is negative.\n~Let her back~ means to allow her to return, which doesn't fit."
+        "value": "**[pv:128]**\n\n[Pay her back] can idiomatically mean to return a favor.\n\n~Get her back~ can mean to get revenge, which is negative.\n~Let her back~ means to allow her to return, which doesn't fit."
       }
     },
     {
@@ -6359,7 +6359,7 @@
       "hint": "To 'turn back' means to abandon a journey and return to where you started.",
       "content": {
         "type": "text",
-        "value": "**[183]**\n\n[Turn back] means to return in the direction you came from.\n\n~Go away~ is a command to leave.\n~Get off~ means to disembark from a bus, train, etc."
+        "value": "**[pv:183]**\n\n[Turn back] means to return in the direction you came from.\n\n~Go away~ is a command to leave.\n~Get off~ means to disembark from a bus, train, etc."
       }
     },
     {
@@ -6387,7 +6387,7 @@
       "hint": "Metaphorically, 'turn back' can mean to abandon a project or course of action.",
       "content": {
         "type": "text",
-        "value": "**[183]**\n\n[Turn back] means to abandon an undertaking.\n\n~Give up~ means to quit trying.\n~Back down~ means to withdraw from a conflict or demand."
+        "value": "**[pv:183]**\n\n[Turn back] means to abandon an undertaking.\n\n~Give up~ means to quit trying.\n~Back down~ means to withdraw from a conflict or demand."
       }
     },
     {
@@ -6415,7 +6415,7 @@
       "hint": "To 'read over' something means to read it from beginning to end to check for mistakes or understanding.",
       "content": {
         "type": "text",
-        "value": "**[143]**\n\n[Read over] means to review a document by reading it.\n\n~Look for~ means to search for something.\n~Figure out~ means to solve or understand a problem."
+        "value": "**[pv:143]**\n\n[Read over] means to review a document by reading it.\n\n~Look for~ means to search for something.\n~Figure out~ means to solve or understand a problem."
       }
     },
     {
@@ -6443,7 +6443,7 @@
       "hint": "'Read over' is similar to 'go over' or 'look over', implying a review.",
       "content": {
         "type": "text",
-        "value": "**[143]**\n\n[Read over] means to read something to check it, often quickly.\n\n~Got through~ means to finish or endure reading it.\n~Threw out~ means to discard the contract."
+        "value": "**[pv:143]**\n\n[Read over] means to read something to check it, often quickly.\n\n~Got through~ means to finish or endure reading it.\n~Threw out~ means to discard the contract."
       }
     },
     {
@@ -6471,7 +6471,7 @@
       "hint": "To 'think something over' means to consider it very carefully before making a decision. It is separable.",
       "content": {
         "type": "text",
-        "value": "**[179]**\n\n[Think it over] means to consider a decision carefully.\n\n~Make it up~ means to invent something or reconcile.\n~Get it on~ is an informal idiom meaning to start something."
+        "value": "**[pv:179]**\n\n[Think it over] means to consider a decision carefully.\n\n~Make it up~ means to invent something or reconcile.\n~Get it on~ is an informal idiom meaning to start something."
       }
     },
     {
@@ -6499,7 +6499,7 @@
       "hint": "'Think over' is often used for decisions, proposals, and offers that require careful consideration.",
       "content": {
         "type": "text",
-        "value": "**[179]**\n\n[Think over] means to carefully consider.\n\n~Look into~ means to investigate.\n~Go after~ means to pursue."
+        "value": "**[pv:179]**\n\n[Think over] means to carefully consider.\n\n~Look into~ means to investigate.\n~Go after~ means to pursue."
       }
     },
     {
@@ -6527,7 +6527,7 @@
       "hint": "To 'get through' something means to finish or endure a difficult task or experience.",
       "content": {
         "type": "text",
-        "value": "**[75]**\n\n[Get through] means to successfully complete or survive something challenging.\n\n~Pass by~ means to go past something.\n~Come over~ means to visit someone's house."
+        "value": "**[pv:75]**\n\n[Get through] means to successfully complete or survive something challenging.\n\n~Pass by~ means to go past something.\n~Come over~ means to visit someone's house."
       }
     },
     {
@@ -6555,7 +6555,7 @@
       "hint": "In telecommunications, 'get through' means to successfully make contact with someone by phone.",
       "content": {
         "type": "text",
-        "value": "**[75]**\n\n[Get through] means to establish a phone connection.\n\n~Call up~ means to telephone someone.\n~Reach out~ means to try to communicate with someone."
+        "value": "**[pv:75]**\n\n[Get through] means to establish a phone connection.\n\n~Call up~ means to telephone someone.\n~Reach out~ means to try to communicate with someone."
       }
     },
     {
@@ -6583,7 +6583,7 @@
       "hint": "To 'believe in' someone or something means to have faith in their abilities or in the truth of an idea.",
       "content": {
         "type": "text",
-        "value": "**[9]**\n\n[Believe in] means to have confidence in the existence or goodness of something.\n\n~Count on~ means to rely on.\n~Think of~ means to have an opinion or recall."
+        "value": "**[pv:9]**\n\n[Believe in] means to have confidence in the existence or goodness of something.\n\n~Count on~ means to rely on.\n~Think of~ means to have an opinion or recall."
       }
     },
     {
@@ -6611,7 +6611,7 @@
       "hint": "'Believe in' is used to ask if someone feels that something is real or exists.",
       "content": {
         "type": "text",
-        "value": "**[9]**\n\n[Believe in] means to be certain that something exists.\n\n~Know about~ means to have information.\n~Think about~ means to consider."
+        "value": "**[pv:9]**\n\n[Believe in] means to be certain that something exists.\n\n~Know about~ means to have information.\n~Think about~ means to consider."
       }
     },
     {
@@ -6639,7 +6639,7 @@
       "hint": "To 'consist of' something means to be formed or made from the things mentioned.",
       "content": {
         "type": "text",
-        "value": "**[40]**\n\n[Consists of] is used to list the parts or things that something is made of.\n\n~Is made from~ is similar but often implies a transformation.\n~Lives on~ means to survive by eating only these things."
+        "value": "**[pv:40]**\n\n[Consists of] is used to list the parts or things that something is made of.\n\n~Is made from~ is similar but often implies a transformation.\n~Lives on~ means to survive by eating only these things."
       }
     },
     {
@@ -6667,7 +6667,7 @@
       "hint": "'Consist of' is often used to describe the components of a test, committee, or formal structure.",
       "content": {
         "type": "text",
-        "value": "**[40]**\n\n[Consist of] means to be composed of different parts.\n\n~Fall back on~ means to use as a last resort.\n~Bring about~ means to cause."
+        "value": "**[pv:40]**\n\n[Consist of] means to be composed of different parts.\n\n~Fall back on~ means to use as a last resort.\n~Bring about~ means to cause."
       }
     },
     {
@@ -6695,7 +6695,7 @@
       "hint": "The verb 'succeed' is followed by the preposition 'in' and a gerund (-ing verb) or noun.",
       "content": {
         "type": "text",
-        "value": "**[170]**\n\n[Succeeded in] is the correct collocation for achieving a goal.\n\n~Gave up on~ and ~failed at~ are opposites; they mean to stop trying or to be unsuccessful."
+        "value": "**[pv:170]**\n\n[Succeeded in] is the correct collocation for achieving a goal.\n\n~Gave up on~ and ~failed at~ are opposites; they mean to stop trying or to be unsuccessful."
       }
     },
     {
@@ -6723,7 +6723,7 @@
       "hint": "Remember, 'succeed in' emphasizes the achievement after effort or difficulty.",
       "content": {
         "type": "text",
-        "value": "**[170]**\n\n[Succeeded in] means to achieve the desired aim.\n\n~Gave up on~ means to stop trying.\n~Messed up~ is the opposite; it means to make a mistake and fail."
+        "value": "**[pv:170]**\n\n[Succeeded in] means to achieve the desired aim.\n\n~Gave up on~ means to stop trying.\n~Messed up~ is the opposite; it means to make a mistake and fail."
       }
     },
     {
@@ -6751,7 +6751,7 @@
       "hint": "'Watch out' is an exclamation used to warn someone of imminent danger.",
       "content": {
         "type": "text",
-        "value": "**[191]**\n\n[Watch out] is a warning to be careful.\n\n~Look at~ is a command to direct your eyes toward something.\n~See about~ means to deal with or inquire about something."
+        "value": "**[pv:191]**\n\n[Watch out] is a warning to be careful.\n\n~Look at~ is a command to direct your eyes toward something.\n~See about~ means to deal with or inquire about something."
       }
     },
     {
@@ -6779,7 +6779,7 @@
       "hint": "'Watch out for' means to be vigilant and aware of a potential problem or danger.",
       "content": {
         "type": "text",
-        "value": "**[191]**\n\n[Watch out for] means to be careful of something.\n\n~Look up~ means to search for information.\n~Check on~ means to verify the status of something or someone.\n\nA 'pickpocket' is a thief who steals from people's pockets or bags."
+        "value": "**[pv:191]**\n\n[Watch out for] means to be careful of something.\n\n~Look up~ means to search for information.\n~Check on~ means to verify the status of something or someone.\n\nA 'pickpocket' is a thief who steals from people's pockets or bags."
       }
     },
     {
@@ -6807,7 +6807,7 @@
       "hint": "The expression 'make sense' means to be logical, understandable, and reasonable.",
       "content": {
         "type": "text",
-        "value": "**[121]**\n\n[Make sense] is an idiom meaning to be intelligible or logical.\n\n~Fall apart~ means to fail or disintegrate.\n~Go on~ means to continue, which is irrelevant."
+        "value": "**[pv:121]**\n\n[Make sense] is an idiom meaning to be intelligible or logical.\n\n~Fall apart~ means to fail or disintegrate.\n~Go on~ means to continue, which is irrelevant."
       }
     },
     {
@@ -6835,7 +6835,7 @@
       "hint": "Use 'make sense' when you finally understand something that was previously confusing.",
       "content": {
         "type": "text",
-        "value": "**[121]**\n\n[Make sense] means to become understandable.\n\n~Fall apart~ and ~fizzle out~ are opposites; they mean to fail or lose coherence."
+        "value": "**[pv:121]**\n\n[Make sense] means to become understandable.\n\n~Fall apart~ and ~fizzle out~ are opposites; they mean to fail or lose coherence."
       }
     },
     {
@@ -6863,7 +6863,7 @@
       "hint": "To 'catch on' means to understand something, especially after a period of confusion.",
       "content": {
         "type": "text",
-        "value": "**[24]**\n\n[Catch on] means to begin to understand or realize something.\n\n~Zone out~ is the opposite; it means to stop paying attention.\n~Give up~ means to stop trying to understand."
+        "value": "**[pv:24]**\n\n[Catch on] means to begin to understand or realize something.\n\n~Zone out~ is the opposite; it means to stop paying attention.\n~Give up~ means to stop trying to understand."
       }
     },
     {
@@ -6891,7 +6891,7 @@
       "hint": "'Catch on' can also mean to become popular or fashionable.",
       "content": {
         "type": "text",
-        "value": "**[24]**\n\n[Caught on] means became popular.\n\n~Grew up~ means matured.\n~Showed up~ means arrived."
+        "value": "**[pv:24]**\n\n[Caught on] means became popular.\n\n~Grew up~ means matured.\n~Showed up~ means arrived."
       }
     },
     {
@@ -6919,7 +6919,7 @@
       "hint": "For weather, 'clear up' means to become sunny and free of clouds or rain.",
       "content": {
         "type": "text",
-        "value": "**[33]**\n\n[Clear up] means for the weather to improve.\n\n~Clean up~ means to make tidy.\n~Roll in~ is the opposite; it's used for bad weather arriving."
+        "value": "**[pv:33]**\n\n[Clear up] means for the weather to improve.\n\n~Clean up~ means to make tidy.\n~Roll in~ is the opposite; it's used for bad weather arriving."
       }
     },
     {
@@ -6947,7 +6947,7 @@
       "hint": "'Clear up' can also mean to solve or explain something that is confusing.",
       "content": {
         "type": "text",
-        "value": "**[33]**\n\n[Clear up] means to resolve a confusion or problem.\n\n~Bring up~ means to introduce the misunderstanding, not solve it.\n~Pass over~ means to ignore it."
+        "value": "**[pv:33]**\n\n[Clear up] means to resolve a confusion or problem.\n\n~Bring up~ means to introduce the misunderstanding, not solve it.\n~Pass over~ means to ignore it."
       }
     },
     {
@@ -6975,7 +6975,7 @@
       "hint": "To 'rule out' something means to decide that it is not a possible option or explanation.",
       "content": {
         "type": "text",
-        "value": "**[145]**\n\n[Rule out] means to eliminate something from consideration.\n\n~Take out~ means to remove.\n~Get out~ means to leave."
+        "value": "**[pv:145]**\n\n[Rule out] means to eliminate something from consideration.\n\n~Take out~ means to remove.\n~Get out~ means to leave."
       }
     },
     {
@@ -7003,7 +7003,7 @@
       "hint": "'Rule out' is commonly used in medical and investigative contexts to eliminate possibilities.",
       "content": {
         "type": "text",
-        "value": "**[145]**\n\n[Rule out] means to determine that something is not the cause of a problem.\n\n~Find out~ means to discover.\n~Check out~ means to examine."
+        "value": "**[pv:145]**\n\n[Rule out] means to determine that something is not the cause of a problem.\n\n~Find out~ means to discover.\n~Check out~ means to examine."
       }
     },
     {
@@ -7031,7 +7031,7 @@
       "hint": "To 'bring about' something means to cause it to happen.",
       "content": {
         "type": "text",
-        "value": "**[12]**\n\n[Brought about] is a slightly more formal phrasal verb that means 'caused'.\n\n~Set off~ means to trigger something to start, like an alarm.\n~Put out~ means to extinguish, which is what you do after the fire is brought about."
+        "value": "**[pv:12]**\n\n[Brought about] is a slightly more formal phrasal verb that means 'caused'.\n\n~Set off~ means to trigger something to start, like an alarm.\n~Put out~ means to extinguish, which is what you do after the fire is brought about."
       }
     },
     {
@@ -7059,7 +7059,7 @@
       "hint": "'Bring about' is often used for significant changes or results.",
       "content": {
         "type": "text",
-        "value": "**[12]**\n\n[Brought about] means to cause something to happen.\n\n~Made up~ means invented or reconciled.\n~Carried on~ means continued."
+        "value": "**[pv:12]**\n\n[Brought about] means to cause something to happen.\n\n~Made up~ means invented or reconciled.\n~Carried on~ means continued."
       }
     },
     {
@@ -7087,7 +7087,7 @@
       "hint": "To 'get an idea across' means to successfully communicate it so that others understand.",
       "content": {
         "type": "text",
-        "value": "**[63]**\n\n[Get across] means to communicate something effectively.\n\n~Put on~ means to wear or activate.\n~Bring up~ means to mention."
+        "value": "**[pv:63]**\n\n[Get across] means to communicate something effectively.\n\n~Put on~ means to wear or activate.\n~Bring up~ means to mention."
       }
     },
     {
@@ -7115,7 +7115,7 @@
       "hint": "Use 'get across' when talking about the success or failure of communication.",
       "content": {
         "type": "text",
-        "value": "**[63]**\n\n[Get across] means to make something understood.\n\n~Come through~ means to survive or be delivered.\n~Let on~ means to reveal a secret."
+        "value": "**[pv:63]**\n\n[Get across] means to make something understood.\n\n~Come through~ means to survive or be delivered.\n~Let on~ means to reveal a secret."
       }
     },
     {
@@ -7143,7 +7143,7 @@
       "hint": "To 'crack down on' something means to start dealing with it in a more severe way.",
       "content": {
         "type": "text",
-        "value": "**[42]**\n\n[Crack down on] means to enforce rules more strictly.\n\n~Let up on~ is the opposite; it means to be less strict.\n~Come down with~ means to get sick with an illness."
+        "value": "**[pv:42]**\n\n[Crack down on] means to enforce rules more strictly.\n\n~Let up on~ is the opposite; it means to be less strict.\n~Come down with~ means to get sick with an illness."
       }
     },
     {
@@ -7171,7 +7171,7 @@
       "hint": "'Crack down on' implies strict enforcement and punishment for bad behavior.",
       "content": {
         "type": "text",
-        "value": "**[42]**\n\n[Crack down on] means to become more stringent.\n\n~Look down on~ means to consider someone inferior.\n~Back down from~ means to withdraw from a conflict."
+        "value": "**[pv:42]**\n\n[Crack down on] means to become more stringent.\n\n~Look down on~ means to consider someone inferior.\n~Back down from~ means to withdraw from a conflict."
       }
     },
     {
@@ -7199,7 +7199,7 @@
       "hint": "To 'mess around' with something means to handle it casually or playfully, often when you shouldn't.",
       "content": {
         "type": "text",
-        "value": "**[125]**\n\n[Mess around] means to touch or play with something in a careless way.\n\n~Take apart~ means to disassemble.\n~Work out~ means to exercise or solve."
+        "value": "**[pv:125]**\n\n[Mess around] means to touch or play with something in a careless way.\n\n~Take apart~ means to disassemble.\n~Work out~ means to exercise or solve."
       }
     },
     {
@@ -7227,7 +7227,7 @@
       "hint": "'Mess around' can also mean to waste time doing silly or unproductive things.",
       "content": {
         "type": "text",
-        "value": "**[125]**\n\n[Messing around] means to behave in a silly way or waste time.\n\n~Hanging out~ means relaxing socially.\n~Zoning out~ means to stop paying attention, which is a form of wasting time, but 'messing around' better fits the command."
+        "value": "**[pv:125]**\n\n[Messing around] means to behave in a silly way or waste time.\n\n~Hanging out~ means relaxing socially.\n~Zoning out~ means to stop paying attention, which is a form of wasting time, but 'messing around' better fits the command."
       }
     },
     {
@@ -7255,7 +7255,7 @@
       "hint": "To 'look around' means to explore a place casually to see what is there.",
       "content": {
         "type": "text",
-        "value": "**[110]**\n\n[Look around] means to explore a place you are in.\n\n~Stay in~ is the opposite; it means to not explore.\n~Check in~ is the action of arriving at the hotel, not exploring after arriving."
+        "value": "**[pv:110]**\n\n[Look around] means to explore a place you are in.\n\n~Stay in~ is the opposite; it means to not explore.\n~Check in~ is the action of arriving at the hotel, not exploring after arriving."
       }
     },
     {
@@ -7283,7 +7283,7 @@
       "hint": "'Look around' is often used for browsing in stores without a specific purchase in mind.",
       "content": {
         "type": "text",
-        "value": "**[110]**\n\n[Looking around] means to browse without a specific goal.\n\n~Trying on~ is a specific action you do while browsing.\n~Selling out~ is what the shops do, not the customer."
+        "value": "**[pv:110]**\n\n[Looking around] means to browse without a specific goal.\n\n~Trying on~ is a specific action you do while browsing.\n~Selling out~ is what the shops do, not the customer."
       }
     },
     {
@@ -7311,7 +7311,7 @@
       "hint": "To 'talk something over' means to discuss it thoroughly to make a decision or find a solution.",
       "content": {
         "type": "text",
-        "value": "**[176]**\n\n[Talk over] means to discuss a problem in detail.\n\n~Pass over~ means to ignore the problem.\n~Get through~ means to endure the problem, not discuss it."
+        "value": "**[pv:176]**\n\n[Talk over] means to discuss a problem in detail.\n\n~Pass over~ means to ignore the problem.\n~Get through~ means to endure the problem, not discuss it."
       }
     },
     {
@@ -7339,7 +7339,7 @@
       "hint": "'Talk over' is a separable phrasal verb, so the object can go in the middle.",
       "content": {
         "type": "text",
-        "value": "**[176]**\n\n[Talk it over] is the correct separable form for discussing something.\n\n~Think it over~ means to consider it alone, not with your family.\n~Go it over~ is incorrect; the verb is 'go over'."
+        "value": "**[pv:176]**\n\n[Talk it over] is the correct separable form for discussing something.\n\n~Think it over~ means to consider it alone, not with your family.\n~Go it over~ is incorrect; the verb is 'go over'."
       }
     },
     {
@@ -7367,7 +7367,7 @@
       "hint": "To 'join in' means to become involved in an activity with other people.",
       "content": {
         "type": "text",
-        "value": "**[98]**\n\n[Join in] means to participate in something that is already happening. (Note: 'Join our club' is more common, but 'join in' fits the phrasal verb focus).\n\n~Drop out~ is the opposite; it means to quit.\n~Stay away~ is the opposite; it means to avoid."
+        "value": "**[pv:98]**\n\n[Join in] means to participate in something that is already happening. (Note: 'Join our club' is more common, but 'join in' fits the phrasal verb focus).\n\n~Drop out~ is the opposite; it means to quit.\n~Stay away~ is the opposite; it means to avoid."
       }
     },
     {
@@ -7395,7 +7395,7 @@
       "hint": "Use 'join in' when you start doing what a group of people are already doing.",
       "content": {
         "type": "text",
-        "value": "**[98]**\n\n[Join in] means to participate.\n\n~Sit out~ is the opposite; it means to not participate.\n~Give in~ means to surrender."
+        "value": "**[pv:98]**\n\n[Join in] means to participate.\n\n~Sit out~ is the opposite; it means to not participate.\n~Give in~ means to surrender."
       }
     },
     {
@@ -7423,7 +7423,7 @@
       "hint": "To 'sit out' an activity, like a game or a dance, means to not participate in it.",
       "content": {
         "type": "text",
-        "value": "**[159]**\n\n[Sit out] means to not be involved in something.\n\n~Stay away~ means to not go near.\n~Drop out~ means to quit a competition or school permanently."
+        "value": "**[pv:159]**\n\n[Sit out] means to not be involved in something.\n\n~Stay away~ means to not go near.\n~Drop out~ means to quit a competition or school permanently."
       }
     },
     {
@@ -7451,7 +7451,7 @@
       "hint": "'Sit something out' is a separable phrasal verb meaning to not take part in a single event.",
       "content": {
         "type": "text",
-        "value": "**[159]**\n\n[Sit this one out] is the idiomatic way to say you are not participating in one specific activity.\n\n~Join in~ is the opposite; it means to participate.\n~Go for~ means to try to get something."
+        "value": "**[pv:159]**\n\n[Sit this one out] is the idiomatic way to say you are not participating in one specific activity.\n\n~Join in~ is the opposite; it means to participate.\n~Go for~ means to try to get something."
       }
     },
     {
@@ -7479,7 +7479,7 @@
       "hint": "To 'bring about' means to cause something to happen.",
       "content": {
         "type": "text",
-        "value": "**[12]**\n\n[Bring about] means to cause.\n\n~Put off~ means to delay.\n~Hold back~ means to prevent or restrain."
+        "value": "**[pv:12]**\n\n[Bring about] means to cause.\n\n~Put off~ means to delay.\n~Hold back~ means to prevent or restrain."
       }
     },
     {
@@ -7507,7 +7507,7 @@
       "hint": "To 'come around' means to change your opinion or decision because someone has persuaded you.",
       "content": {
         "type": "text",
-        "value": "**[36]**\n\n[Came around] means to change one's mind.\n\n~Held out~ is the opposite; it means to resist or not agree.\n~Turned up~ means to appear."
+        "value": "**[pv:36]**\n\n[Came around] means to change one's mind.\n\n~Held out~ is the opposite; it means to resist or not agree.\n~Turned up~ means to appear."
       }
     },
     {
@@ -7535,7 +7535,7 @@
       "hint": "The idiom 'make ends meet' means to have just enough money to pay for the things you need.",
       "content": {
         "type": "text",
-        "value": "**[119]**\n\n[Make ends meet] is a fixed idiom for earning just enough money to live on.\n\n~Splash out~ is the opposite; it means to spend a lot of money.\n~Run up~ means to accumulate, usually debt."
+        "value": "**[pv:119]**\n\n[Make ends meet] is a fixed idiom for earning just enough money to live on.\n\n~Splash out~ is the opposite; it means to spend a lot of money.\n~Run up~ means to accumulate, usually debt."
       }
     },
     {
@@ -7563,7 +7563,7 @@
       "hint": "This idiom is very common when discussing personal finance and the cost of living.",
       "content": {
         "type": "text",
-        "value": "**[119]**\n\n[Make ends meet] means to manage one's budget successfully.\n\n~Run up~ (debt) and ~get behind~ (on payments) are the results of failing to make ends meet."
+        "value": "**[pv:119]**\n\n[Make ends meet] means to manage one's budget successfully.\n\n~Run up~ (debt) and ~get behind~ (on payments) are the results of failing to make ends meet."
       }
     },
     {
@@ -7591,7 +7591,7 @@
       "hint": "When a fact or idea 'sinks in', you gradually begin to understand it or realize its full meaning.",
       "content": {
         "type": "text",
-        "value": "**[157]**\n\n[Sink in] means to be fully understood or realized.\n\n~Fall down~ means to collapse.\n~Go through~ means to experience or examine."
+        "value": "**[pv:157]**\n\n[Sink in] means to be fully understood or realized.\n\n~Fall down~ means to collapse.\n~Go through~ means to experience or examine."
       }
     },
     {
@@ -7619,7 +7619,7 @@
       "hint": "'Sink in' is often used for shocking or significant news that is difficult to accept at first.",
       "content": {
         "type": "text",
-        "value": "**[157]**\n\n[Sunk in] is the past participle form. It means the full impact hasn't been felt.\n\n~Set in~ means to begin and seem likely to continue (like 'winter has set in').\n~Come about~ means to happen."
+        "value": "**[pv:157]**\n\n[Sunk in] is the past participle form. It means the full impact hasn't been felt.\n\n~Set in~ means to begin and seem likely to continue (like 'winter has set in').\n~Come about~ means to happen."
       }
     },
     {
@@ -7647,7 +7647,7 @@
       "hint": "To 'come across' something means to find it by chance.",
       "content": {
         "type": "text",
-        "value": "**[35]**\n\n[Came across] means to find something or someone accidentally.\n\n~Ran into~ is usually for people, not objects.\n~Looked for~ is the opposite; it implies a purposeful search, not an accidental find."
+        "value": "**[pv:35]**\n\n[Came across] means to find something or someone accidentally.\n\n~Ran into~ is usually for people, not objects.\n~Looked for~ is the opposite; it implies a purposeful search, not an accidental find."
       }
     },
     {
@@ -7675,7 +7675,7 @@
       "hint": "To 'come across' as a certain type of person means to give a particular impression.",
       "content": {
         "type": "text",
-        "value": "**[35]**\n\n[Comes across] means to seem to be or give the impression of being a certain way.\n\n~Stands out~ means to be noticeable.\n~Shows off~ means to boast. Both are behaviors, but 'comes across' is the impression."
+        "value": "**[pv:35]**\n\n[Comes across] means to seem to be or give the impression of being a certain way.\n\n~Stands out~ means to be noticeable.\n~Shows off~ means to boast. Both are behaviors, but 'comes across' is the impression."
       }
     },
     {
@@ -7703,7 +7703,7 @@
       "hint": "To 'make off' with something means to steal it and escape.",
       "content": {
         "type": "text",
-        "value": "**[124]**\n\n[Made off] means to escape with stolen goods.\n\n~Ran away~ means to escape, but doesn't include the act of stealing.\n~Took out~ means to remove."
+        "value": "**[pv:124]**\n\n[Made off] means to escape with stolen goods.\n\n~Ran away~ means to escape, but doesn't include the act of stealing.\n~Took out~ means to remove."
       }
     },
     {
@@ -7731,7 +7731,7 @@
       "hint": "'Make off with' strongly emphasizes the act of escaping with something stolen.",
       "content": {
         "type": "text",
-        "value": "**[124]**\n\n[Made off] is the correct phrasal verb for stealing and running away.\n\n~Gave back~ is the opposite.\n~Showed up~ means appeared."
+        "value": "**[pv:124]**\n\n[Made off] is the correct phrasal verb for stealing and running away.\n\n~Gave back~ is the opposite.\n~Showed up~ means appeared."
       }
     },
     {
@@ -7759,7 +7759,7 @@
       "hint": "To 'get in' a supply of something means to buy or obtain it.",
       "content": {
         "type": "text",
-        "value": "**[70]**\n\n[Get in] can mean to buy a supply of something.\n\n~Take in~ means to absorb.\n~Bring in~ means to introduce."
+        "value": "**[pv:70]**\n\n[Get in] can mean to buy a supply of something.\n\n~Take in~ means to absorb.\n~Bring in~ means to introduce."
       }
     },
     {
@@ -7787,7 +7787,7 @@
       "hint": "For transportation like a train, plane, or bus, 'get in' is a common phrasal verb meaning 'to arrive'.",
       "content": {
         "type": "text",
-        "value": "**[70]**\n\n[Get in] is a common way to talk about the arrival time of transport.\n\n~Take off~ and ~set off~ are opposites; they mean to depart."
+        "value": "**[pv:70]**\n\n[Get in] is a common way to talk about the arrival time of transport.\n\n~Take off~ and ~set off~ are opposites; they mean to depart."
       }
     },
     {
@@ -7815,7 +7815,7 @@
       "hint": "To 'get around' a problem means to find a way to avoid it or deal with it without solving it directly.",
       "content": {
         "type": "text",
-        "value": "**[66]**\n\n[Get around] means to overcome or evade a difficulty.\n\n~Look into~ means to investigate the problem.\n~Give in to~ means to surrender to the problem."
+        "value": "**[pv:66]**\n\n[Get around] means to overcome or evade a difficulty.\n\n~Look into~ means to investigate the problem.\n~Give in to~ means to surrender to the problem."
       }
     },
     {
@@ -7843,7 +7843,7 @@
       "hint": "'Get around' can also mean to travel to different places within a town, city, or area.",
       "content": {
         "type": "text",
-        "value": "**[66]**\n\n[Get around] means to move from place to place.\n\n~Stay in~ and ~settle down~ are opposites; they mean to remain in one place, not to travel."
+        "value": "**[pv:66]**\n\n[Get around] means to move from place to place.\n\n~Stay in~ and ~settle down~ are opposites; they mean to remain in one place, not to travel."
       }
     },
     {
@@ -7871,7 +7871,7 @@
       "hint": "To 'stand for' something means to be an abbreviation or symbol of it.",
       "content": {
         "type": "text",
-        "value": "**[163]**\n\n[Stand for] is the specific phrasal verb used for acronyms and abbreviations.\n\n~Make up~ means to invent.\n~Go against~ means to oppose."
+        "value": "**[pv:163]**\n\n[Stand for] is the specific phrasal verb used for acronyms and abbreviations.\n\n~Make up~ means to invent.\n~Go against~ means to oppose."
       }
     },
     {
@@ -7899,7 +7899,7 @@
       "hint": "'Stand for' can also mean to support or represent a particular idea or set of values.",
       "content": {
         "type": "text",
-        "value": "**[163]**\n\n[Stands for] means to represent a core belief or principle.\n\n~Goes against~ and ~gives up on~ are opposites; they mean to oppose or abandon these values."
+        "value": "**[pv:163]**\n\n[Stands for] means to represent a core belief or principle.\n\n~Goes against~ and ~gives up on~ are opposites; they mean to oppose or abandon these values."
       }
     },
     {
@@ -7927,7 +7927,7 @@
       "hint": "To 'make up for' something means to compensate for a mistake or a negative situation by doing something good.",
       "content": {
         "type": "text",
-        "value": "**[123]**\n\n[Made up for] is a three-part phrasal verb meaning to compensate.\n\n~Messed up~ describes the original mistake, not the compensation.\n~Fell behind on~ means to be late with work, which is not what the sentence describes."
+        "value": "**[pv:123]**\n\n[Made up for] is a three-part phrasal verb meaning to compensate.\n\n~Messed up~ describes the original mistake, not the compensation.\n~Fell behind on~ means to be late with work, which is not what the sentence describes."
       }
     },
     {
@@ -7955,7 +7955,7 @@
       "hint": "'Make up for' is often used when a positive quality compensates for a negative one.",
       "content": {
         "type": "text",
-        "value": "**[123]**\n\n[Make up for] means to provide a good balance against something negative.\n\n~Bring about~ means to cause.\n~Point out~ means to highlight, which is the opposite of compensating."
+        "value": "**[pv:123]**\n\n[Make up for] means to provide a good balance against something negative.\n\n~Bring about~ means to cause.\n~Point out~ means to highlight, which is the opposite of compensating."
       }
     },
     {
@@ -7983,7 +7983,7 @@
       "hint": "To 'press on' means to continue doing something in a determined way, despite difficulties.",
       "content": {
         "type": "text",
-        "value": "**[133]**\n\n[Press on] means to continue with determination.\n\n~Give up~ and ~slack off~ are opposites; they mean to quit or work lazily."
+        "value": "**[pv:133]**\n\n[Press on] means to continue with determination.\n\n~Give up~ and ~slack off~ are opposites; they mean to quit or work lazily."
       }
     },
     {
@@ -8011,7 +8011,7 @@
       "hint": "'Press on' emphasizes continuing forward in the face of obstacles.",
       "content": {
         "type": "text",
-        "value": "**[133]**\n\n[Press on] means to continue a journey with resolve.\n\n~Turn back~ is the opposite; it means to return home.\n~Stop over~ means to take a break in the journey."
+        "value": "**[pv:133]**\n\n[Press on] means to continue a journey with resolve.\n\n~Turn back~ is the opposite; it means to return home.\n~Stop over~ means to take a break in the journey."
       }
     },
     {
@@ -8039,7 +8039,7 @@
       "hint": "To 'cut someone off' means to interrupt them while they are speaking.",
       "content": {
         "type": "text",
-        "value": "**[44]**\n\n[Cut me off] is the separable phrasal verb for interrupting someone's speech.\n\n~Let me in~ means to allow entry.\n~Cheered me on~ is the opposite; it means to offer encouragement."
+        "value": "**[pv:44]**\n\n[Cut me off] is the separable phrasal verb for interrupting someone's speech.\n\n~Let me in~ means to allow entry.\n~Cheered me on~ is the opposite; it means to offer encouragement."
       }
     },
     {
@@ -8067,7 +8067,7 @@
       "hint": "To 'pull out' of something (like a competition, deal, or event) means to withdraw from it.",
       "content": {
         "type": "text",
-        "value": "**[134]**\n\n[Pull out] means to withdraw (stop participating in) an activity or agreement.\n\n~Drop out~ is similar but is more commonly used for school.\n~Back down~ means to yield in an argument."
+        "value": "**[pv:134]**\n\n[Pull out] means to withdraw (stop participating in) an activity or agreement.\n\n~Drop out~ is similar but is more commonly used for school.\n~Back down~ means to yield in an argument."
       }
     },
     {
@@ -8095,7 +8095,7 @@
       "hint": "To 'play down' something means to try to make it seem less important or serious than it really is.",
       "content": {
         "type": "text",
-        "value": "**[132]**\n\n[Play down] means to minimize the importance of something.\n\n~Put down~ means to place something on a surface or to insult.\n~Turn down~ means to reject or reduce volume."
+        "value": "**[pv:132]**\n\n[Play down] means to minimize the importance of something.\n\n~Put down~ means to place something on a surface or to insult.\n~Turn down~ means to reject or reduce volume."
       }
     },
     {
@@ -8123,7 +8123,7 @@
       "hint": "To 'hand over' something means to give control or responsibility for it to someone else.",
       "content": {
         "type": "text",
-        "value": "**[93]**\n\n[Hand over] means to transfer power or control.\n\n~Give up~ means to quit.\n~Pass on~ means to transmit information or to die."
+        "value": "**[pv:93]**\n\n[Hand over] means to transfer power or control.\n\n~Give up~ means to quit.\n~Pass on~ means to transmit information or to die."
       }
     },
     {
@@ -8151,7 +8151,7 @@
       "hint": "Beyond becoming an adult, 'grow up' is often used to tell someone to stop acting in a childish way.",
       "content": {
         "type": "text",
-        "value": "**[89]**\n\n[Grow up] means to mature and behave more responsibly.\n\n~Stand up~ means to rise to your feet.\n~Show up~ means to arrive."
+        "value": "**[pv:89]**\n\n[Grow up] means to mature and behave more responsibly.\n\n~Stand up~ means to rise to your feet.\n~Show up~ means to arrive."
       }
     },
     {
@@ -8179,7 +8179,7 @@
       "hint": "To 'fill in for' someone means to do their job temporarily while they are away.",
       "content": {
         "type": "text",
-        "value": "**[57]**\n\n[Fill in for] is the phrasal verb for substituting for a colleague.\n\n~Take over~ means to take control, often permanently.\n~Slack off~ means to work lazily, which you would not ask a substitute to do."
+        "value": "**[pv:57]**\n\n[Fill in for] is the phrasal verb for substituting for a colleague.\n\n~Take over~ means to take control, often permanently.\n~Slack off~ means to work lazily, which you would not ask a substitute to do."
       }
     },
     {
@@ -8207,7 +8207,7 @@
       "hint": "To 'hinge on' something means to depend completely on it for the result.",
       "content": {
         "type": "text",
-        "value": "**[95]**\n\n[Hinge on] means to be entirely dependent on a single factor.\n\n~Wait for~ means to await.\n~Go against~ means to oppose, which doesn't make sense."
+        "value": "**[pv:95]**\n\n[Hinge on] means to be entirely dependent on a single factor.\n\n~Wait for~ means to await.\n~Go against~ means to oppose, which doesn't make sense."
       }
     },
     {
@@ -8235,7 +8235,7 @@
       "hint": "To 'spell out' something means to explain it in great detail, leaving no room for doubt.",
       "content": {
         "type": "text",
-        "value": "**[162]**\n\n[Spelled out] means to explain something very explicitly.\n\n~Held back~ is the opposite; it means to keep details secret.\n~Messed up~ means to do the plan poorly."
+        "value": "**[pv:162]**\n\n[Spelled out] means to explain something very explicitly.\n\n~Held back~ is the opposite; it means to keep details secret.\n~Messed up~ means to do the plan poorly."
       }
     },
     {
@@ -8263,7 +8263,7 @@
       "hint": "To 'go back on' a promise or agreement means to fail to keep it.",
       "content": {
         "type": "text",
-        "value": "**[83]**\n\n[Go back on] means to break a promise.\n\n~Take back~ means to retract a statement.\n~Get back~ means to return."
+        "value": "**[pv:83]**\n\n[Go back on] means to break a promise.\n\n~Take back~ means to retract a statement.\n~Get back~ means to return."
       }
     },
     {
@@ -8291,7 +8291,7 @@
       "hint": "To 'go after' someone or something means to pursue or chase them.",
       "content": {
         "type": "text",
-        "value": "**[82]**\n\n[Going after] means to chase in order to catch.\n\n~Running from~ is the opposite action (what the vehicle is doing).\n~Giving up on~ means to stop chasing."
+        "value": "**[pv:82]**\n\n[Going after] means to chase in order to catch.\n\n~Running from~ is the opposite action (what the vehicle is doing).\n~Giving up on~ means to stop chasing."
       }
     },
     {
@@ -8319,7 +8319,7 @@
       "hint": "To 'hand down' something means to pass it from an older generation to a younger one.",
       "content": {
         "type": "text",
-        "value": "**[90]**\n\n[Handed down] means to pass knowledge, traditions, or possessions to the next generation.\n\n~Given away~ means to give for free.\n~Passed out~ means to distribute or to faint."
+        "value": "**[pv:90]**\n\n[Handed down] means to pass knowledge, traditions, or possessions to the next generation.\n\n~Given away~ means to give for free.\n~Passed out~ means to distribute or to faint."
       }
     },
     {
@@ -8347,7 +8347,7 @@
       "hint": "When a quality 'shines through', it is very noticeable and impressive, even in a difficult situation.",
       "content": {
         "type": "text",
-        "value": "**[152]**\n\n[Shines through] means a positive quality is easily seen despite challenges.\n\n~Holds back~ is the opposite; it means to restrain her talent.\n~Stands up~ means to rise."
+        "value": "**[pv:152]**\n\n[Shines through] means a positive quality is easily seen despite challenges.\n\n~Holds back~ is the opposite; it means to restrain her talent.\n~Stands up~ means to rise."
       }
     },
     {
@@ -8375,7 +8375,7 @@
       "hint": "To 'make out' something means to see, hear, or understand it with difficulty.",
       "content": {
         "type": "text",
-        "value": "**[120]**\n\n[Make out] means to discern or understand with difficulty.\n\n~Spell out~ means to explain clearly (the opposite of the situation).\n~Make up~ means to invent what he's saying."
+        "value": "**[pv:120]**\n\n[Make out] means to discern or understand with difficulty.\n\n~Spell out~ means to explain clearly (the opposite of the situation).\n~Make up~ means to invent what he's saying."
       }
     },
     {
@@ -8403,7 +8403,7 @@
       "hint": "'Draw up' means to prepare and write an official document like a contract, plan, or agreement.",
       "content": {
         "type": "text",
-        "value": "**[47]**\n\n[Draw up] means to compose a formal document after careful thought.\n\n~Rip up~ is the opposite; it means to destroy the agreement.\n~Set up~ means to arrange or establish (e.g., 'set up a meeting')."
+        "value": "**[pv:47]**\n\n[Draw up] means to compose a formal document after careful thought.\n\n~Rip up~ is the opposite; it means to destroy the agreement.\n~Set up~ means to arrange or establish (e.g., 'set up a meeting')."
       }
     }
   ]

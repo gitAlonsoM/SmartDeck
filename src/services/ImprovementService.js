@@ -38,33 +38,41 @@ class ImprovementService {
         if (markedCardIds.length === 0 && markedModalIds.length === 0) {
             return { success: false, message: 'There are no cards or modals marked for improvement to export.' };
         }
-        // 1. Determine which Glossary to load based on Deck ID
-        // Default to 'english_rules.json' (Grammar) but switch for specific decks.
-        let glossaryFilename = 'english_rules.json'; // Default
-        
-        // Simple detection logic based on deck ID string
-        const deckIdLower = deck.id.toLowerCase();
-        if (deckIdLower.includes('phrasal')) {
-            glossaryFilename = 'phrasal_verbs.json';
-        }
-        // Future: Add more 'else if' blocks here for other glossary types (e.g. 'collocations.json')
-
-        // 2. Fetch the determined Glossary
-        let glossaryContext = "{}";
-        try {
-            console.log(`DEBUG: [ImprovementService] Detected Glossary '${glossaryFilename}' for deck '${deck.id}'`);
-            const response = await fetch(`public/data/glossary/${glossaryFilename}`);
-            
-            if (response.ok) {
-                const json = await response.json();
-                glossaryContext = JSON.stringify(json, null, 2);
-                console.log(`VERIFY: Glossary '${glossaryFilename}' loaded successfully. Injected ${Object.keys(json).length} items into Prompt.`);
-            } else {
-                console.warn(`DEBUG: Glossary file '${glossaryFilename}' not found (404). Prompt will use empty glossary.`);
+        // Build a Modal Catalog: every modal across every glossary, minified to
+        // { title, description } for lookup/dedup. Modals the user marked for
+        // improvement are overlaid with the FULL content + user_comment so the
+        // LLM has everything it needs to rewrite them.
+        const catalog = {};
+        for (const [alias, name] of Object.entries(GlossaryService.GLOSSARY_ALIASES)) {
+            const g = await GlossaryService.loadGlossary(name);
+            if (!g) {
+                console.warn(`[ImprovementService] Glossary '${name}' failed to load; skipping in catalog.`);
+                continue;
             }
-        } catch (error) {
-            console.error("DEBUG: Critical error loading glossary:", error);
+            for (const id of Object.keys(g)) {
+                catalog[`${alias}:${id}`] = {
+                    title: g[id].title,
+                    description: g[id].description || ''
+                };
+            }
         }
+        for (const qid of markedModalIds) {
+            const [alias, id] = qid.split(':');
+            const name = GlossaryService.aliasToName(alias);
+            const g = name ? GlossaryService.getCachedGlossary(name) : null;
+            if (g && g[id]) {
+                catalog[qid] = {
+                    title: g[id].title,
+                    description: g[id].description || '',
+                    content: g[id].content,
+                    user_comment: modalImprovements[qid].user_comment
+                };
+            } else {
+                console.warn(`[ImprovementService] Marked modal '${qid}' not resolvable in any glossary; keeping minified.`);
+            }
+        }
+        const catalogJson = JSON.stringify(catalog, null, 2);
+        console.log(`VERIFY: [ImprovementService] Catalog built with ${Object.keys(catalog).length} modals (${markedModalIds.length} with full content).`);
 
         const cardMap = new Map(deck.cards.map(c => [c.cardId, c]));
         const exportBatch = markedCardIds.map(cardId => {
@@ -77,18 +85,17 @@ class ImprovementService {
 
         const correctCommand = `py update_deck.py --deck-file "${deckRelativePath}" --input-file "corrections.json"`;
         console.log(`VERIFY: [ImprovementService] Exporting deck alongside ${markedModalIds.length} modal improvements.`);
+        // Sub-extract for the Modal Improvement Requests section: just qid -> user_comment.
+        // The full content/title already live inside the catalog entry; this section just
+        // tells the LLM which qids it must regenerate in Part 2.
+        const modalImprovementRequests = {};
+        markedModalIds.forEach(qid => {
+            modalImprovementRequests[qid] = {
+                user_comment: modalImprovements[qid].user_comment
+            };
+        });
 
-        // Format modal improvements so 'title' always appears before 'user_comment' in the final JSON string
-        const formattedModalImprovements = {};
-        markedModalIds.forEach(id => {
-            formattedModalImprovements[id] = {
-                title: modalImprovements[id].title || `Modal ${id}`,
-                user_comment: modalImprovements[id].user_comment
-            };
-        });
-
-        // Pass glossaryContext and the freshly formatted modalImprovements to the prompt generator
-        const textToCopy = this._generateImprovementPrompt(deck.name, correctCommand, exportBatch, glossaryContext, deckRelativePath, formattedModalImprovements);
+        const textToCopy = this._generateImprovementPrompt(deck.name, correctCommand, exportBatch, catalogJson, deckRelativePath, modalImprovementRequests);
         try {
             await navigator.clipboard.writeText(textToCopy);
             return { 
@@ -111,7 +118,7 @@ static _generateImprovementPrompt(deckName, correctCommand, cardsToImprove, glos
 
         const promptHeader = `
 
-# SmartDeck Card Improvement Prompt V9.0 (Glossary Enabled)
+# SmartDeck Card Improvement Prompt V10.0 (Qualified Modal Catalog)
 ## 🎯 1. ROLE AND GOAL
 You are an expert for 'SmartDeck'. Your goal is to significantly enhance the pedagogical value of a batch of flashcards based on user feedback AND THE NEXT RULES!.
 
@@ -134,7 +141,7 @@ You are an expert for 'SmartDeck'. Your goal is to significantly enhance the ped
 - \`sideA\`: **MODIFIABLE**.
 - \`sideB\`: **PRIMARY VALUE-ADD FIELD**.
 - \`note\`: **PRIMARY VALUE-ADD FIELD**.
-- \` - **CRITICAL RULE:** This field may start with a grammar rule ID. The required literal format for this ID is **[ID]** (e.g., **[12]**), which links to a grammar rule. **This syntax MUST NOT be altered, corrected, or removed.**
+- \` - **CRITICAL RULE:** This field may start with a qualified modal ID. The required literal format is **[alias:id]** (e.g., **[er:12]** for english_rules, **[pv:188]** for phrasal_verbs), which links to a modal in the MODAL CATALOG. **This syntax MUST NOT be altered, corrected, or removed.** Aliases are exactly: \`er\` (english_rules) and \`pv\` (phrasal_verbs).
     - **Exception:** Only remove it if the user explicitly asks to "Remove the modal".
     - **Injection:** To add a modal, see Section 6.
 
@@ -157,7 +164,7 @@ You must adhere to this strict style guide for all card content:
 * **No Numbered Titles:** Never write titles like ~"10 Examples"~. Just use "Examples". Content matters, not the count.
 * **Direct Approach:** Deliver pure educational content. No preambles, no conversational fillers like "Here is the corrected sentence".
 * **No Visual Metadata:** Never include the name of the color, style, or formatting in the text title or body (e.g., NEVER write "Title (Green)" or "Word (Bold)"). Just apply the HTML class; do not describe it in text.
-* **Strict Append-Only Rule:** All new content (definitions, corrections, or explanations) MUST be added ONLY at the VERY END of the existing string in the 'note' field. Prepending or inserting at the beginning is strictly prohibited. EXCEPTION: The ONLY element permitted at the beginning of the note field is a Glossary Modal ID (e.g., **[ID]**\\n\\n).
+* **Strict Append-Only Rule:** All new content (definitions, corrections, or explanations) MUST be added ONLY at the VERY END of the existing string in the 'note' field. Prepending or inserting at the beginning is strictly prohibited. EXCEPTION: The ONLY element permitted at the beginning of the note field is a qualified modal ID (e.g., **[er:12]**\\n\\n or **[pv:188]**\\n\\n).
 
 
 ## 🛠️ 5. SPECIAL RULE: Handling "add_answer" and User Suggestions
@@ -199,29 +206,30 @@ This is a two-part process. You must modify **both** the card data and your summ
 If the user asks to "Add/Create a modal for [Topic]" (e.g., "Add modal for Present Simple", "Crear modal si no existe", "Link modal"):
 
 ### STEP A: THE DUPLICATE CHECK (MANDATORY)
-Before creating anything, you must rigorously scan the **GLOSSARY DATABASE**.
+Before creating anything, rigorously scan the **MODAL CATALOG** (Section 9). The catalog is keyed by qualified ID \`alias:id\`. Use the entry's \`title\` and \`description\` to judge relevance.
 - **Scan:** Look for exact matches, synonyms, or existing rules that cover the requested topic.
 - **Decision:**
     - **FOUND?** -> Go to **STEP B (Linking)**. Do NOT create a duplicate.
     - **NOT FOUND?** -> Go to **STEP C (Creation)**.
 
 ### STEP B: LINKING (Existing Modal)
-1. **Identify ID:** Use the ID found in the database.
-2. **Inject:** Prepend \`**[ID]**\\n\\n\` to the card's \`note\` field.
-3. **Report:** "Found existing modal **[ID]** ('Title'). Linked successfully."
+1. **Identify qualified ID:** Use the \`alias:id\` key from the catalog (e.g., \`er:12\`, \`pv:188\`).
+2. **Inject:** Prepend \`**[alias:id]**\\n\\n\` to the card's \`note\` field.
+3. **Report:** "Found existing modal **[alias:id]** ('Title'). Linked successfully."
 
 ### STEP C: CREATION (New Modal)
-*Only execute this if the topic is completely absent from the database.*
-1. **Generate ID:** Find the **highest numeric ID** currently in the Glossary Database and add **+1** (e.g., if max is 124, use 125).
-2. **Design:** Create the content adhering strictly to **Rule 7 (The Anti-Shit Protocol)**.
-3. **Output:**
-    - **JSON:** Add the new object to the **Improved Modals JSON** block (Part 2 of Output).
-    - **Card:** Inject the new link \`**[NewID]**\\n\\n\` to the card's \`note\`.
-4. **Report:** "Topic not found in DB. Created **NEW Modal [NewID]** and linked it."
+*Only execute this if the topic is completely absent from the catalog.*
+1. **Pick alias:** Use the alias that matches the topic (\`er\` for grammar rules, \`pv\` for phrasal verbs / lexical items).
+2. **Generate ID:** Within that alias, find the **highest numeric id** in the catalog and add **+1** (e.g., if the max \`er:\` id is 218, the new one is \`er:219\`). IDs are per-alias — they do NOT collide between aliases.
+3. **Design:** Create the content adhering strictly to **Rule 7 (The Anti-Shit Protocol)**.
+4. **Output:**
+    - **JSON:** Add the new object to the **Improved Modals JSON** block (Part 2 of Output) keyed by the qualified id (e.g., \`"er:219": { ... }\`).
+    - **Card:** Inject the new link \`**[alias:NewID]**\\n\\n\` to the card's \`note\`.
+5. **Report:** "Topic not found in catalog. Created **NEW Modal [alias:NewID]** and linked it."
 
 
 ## 🏗️ 7. SPECIAL RULE: MODAL CONTENT IMPROVEMENT (THE "ANTI-SHIT" PROTOCOL)
-If the user asks to "Improve Modal [ID]", "Fix Modal [ID]", or "Rewrite Modal [ID]" content (e.g., "Mejorar el modal 50", "Rewrite modal content for clarity"), you must regenerate its content following these **MANDATORY DESIGN STANDARDS**:
+If a modal in the MODAL CATALOG (Section 9) appears with full \`content\` and a \`user_comment\` field, the user has flagged it for improvement — you MUST regenerate its content following these **MANDATORY DESIGN STANDARDS**. The qualified id (\`alias:id\`) of each such modal also appears in Section 10 Part 3 D for cross-reference:
 
 ### A. The "Algorithm of Density" (Quantity)
 *Never create basic modals with few examples.*
@@ -284,9 +292,16 @@ You must output the full JSON object for the modified modal(s) in a **separate J
 If the user writes "AVISAR AL USUARIO" or "Avisame en el chat sobre esto.. " o algo asi, listing in Report (Section 10, Part 3).
 
 
-## 📚 9. GLOSSARY DATABASE (REFERENCE ONLY)
-Use this data to resolve IDs. Important!: adherir modales a cards solo cuando se solicite explicitamente en la card que se agregue un modal existente del listado, si el usuario no solicita agregar modal en la card y la card no tiene modal, no agregues modal, es okay cards sin modales, no es tu decision agregarle modales a las cards si no te lo han solicitado.
-En caso que el mensaje de la card solicite 'agregar modal a la card, o 'crear modal para la card', se debe revisar al completo el listado de modales, y en caso que aun no este creado, podras crear uno nuevo, siguiendo la sintaxis estricta de los modales. Recordar que al crear el modal debes siempre poner un id numerico unico secuencial a partir del ultimo modal creado en adelante. 
+## 📚 9. MODAL CATALOG (REFERENCE ONLY)
+The catalog is keyed by qualified id \`alias:id\` (aliases: \`er\` = english_rules, \`pv\` = phrasal_verbs). It contains EVERY modal across EVERY glossary.
+
+**Entry shape:**
+- Most entries are minified: \`{ title, description }\`. This is enough for you to scan, deduplicate, and choose an existing modal when the user asks to link one.
+- Entries that ALSO include \`content\` and \`user_comment\` are the modals the user has flagged for improvement — you MUST regenerate their content in Part 2 (see Section 7 Anti-Shit Protocol).
+
+**Linking discipline:** adherir modales a cards solo cuando se solicite explicitamente en la card que se agregue un modal existente del listado. Si el usuario no solicita agregar modal en la card y la card no tiene modal, no agregues modal — es okay tener cards sin modales. No es tu decisión agregarle modales a las cards si no te lo han solicitado.
+
+**Creation discipline:** Si el usuario pide 'agregar modal a la card' o 'crear modal para la card', primero revisa el catalogo. Si no existe nada relevante, crea uno nuevo siguiendo Sección 6 STEP C: nuevo id = (max id dentro del mismo alias) + 1; nunca colisiona con el otro alias.
 \`\`\`json
 ${glossaryJson}
 \`\`\`
@@ -332,15 +347,15 @@ To avoid structural errors, you MUST process Part 1 using this mental workflow b
 \`\`\`json
 {}
 \`\`\`
-4. If modals were improved, output a Single JSON Block (\`\`\`json) containing an object where keys are the Modal IDs.
+4. If modals were improved, output a Single JSON Block (\`\`\`json) containing an object where keys are the **qualified modal IDs** (\`alias:id\`).
    - **Example:**
    \`\`\`json
    {
-     "50": {
+     "er:50": {
        "title": "Improved Title",
        "content": "<p>New HTML content...</p>"
      },
-     "102": { ... }
+     "pv:188": { ... }
    }
    \`\`\`
 
@@ -361,14 +376,14 @@ To avoid structural errors, you MUST process Part 1 using this mental workflow b
 Si el usuario en alguna 'nota' o 'apunte' de card o modal, explicitamente solicito algo como "Avisar al usuario sobre ... ", o solicito aclaraciones que no aplica ponerlas en cards, o modales,  esas notas se añadiran en esta seccion para que el usuario las vea facilmente. Este espacio es para que el usuario que dejo la "Nota" o "apunte" pueda ver esos mensajes especiales en esta seccion. En caso de no encontrarse ningun mensaje especial, se pondra en esta seccion "No special messages to highlight". Solo en esta seccion puede hablarle directamente al usuario cualquier aclaracion. En las modificaciones de cards, modales, etc son siempre en tercera persona, no hablandole al usuario.
 
 #### D. 🛠️ Modal Improvement Requests
-The user has left the following specific notes to improve specific Modals. If a modal ID is listed below, dependiendo de lo solcitado, you MUST completely improve that modal in the "Improved Modals JSON" block based on this feedback, using the "Anti-Shit Protocol" formatting (colors, vertical structures, examples). Si el usuario pide aclaraciones del modal que no impliquen cambiarlo o mejorarlo, en ese caso no lo modificas el modal, y solo entregas el feedback via chat, pero si el usuario solicita cambios estructurales, cambio de ejemplos, etc cualquiier cambio dntro del modal significa crearlo denuvo, pero generalmente respectando el original, y solo añadiendo o modificando lo solicitado, la idea es mejorarlo, no crear todo desde cero. Si la lista de abajo está vacía, ignora este paso pero mantén el título de la sección.
+Cross-reference list: each qualified id below has its full \`content\` already inlined inside the MODAL CATALOG (Section 9) along with the user's comment. You MUST regenerate the \`content\` for each one in the "Improved Modals JSON" block (Part 2) using the "Anti-Shit Protocol" formatting (colors, vertical structures, examples). Si el usuario pide aclaraciones del modal que no impliquen cambiarlo o mejorarlo, no lo modifiques y solo entrega el feedback via chat; si el usuario solicita cambios estructurales o de ejemplos, regenera respetando lo bueno del original. Si la lista está vacía, ignora este paso pero mantén el título de la sección.
 \`\`\`json
 ${JSON.stringify(modalImprovements, null, 2)}
 \`\`\`
 
 #### E. 🚀 Next Steps
 - **Step 1:** Save Card JSON to \`corrections.json\`.
-- **Step 2:** (If Modals Changed) Update \`public/data/glossary/YOUR_GLOSSARY_FILE.json\` with the content from Part 2.
+- **Step 2:** (If Modals Changed) For each qualified id in Part 2, update the matching glossary file in \`public/data/glossary/\` based on the alias prefix (\`er:\` → \`english_rules.json\`, \`pv:\` → \`phrasal_verbs.json\`). Write the entry under the numeric id (drop the alias prefix in the file itself, since each glossary file's keys are numeric).
 - **Step 3:** Run update command:
 \`\`\`bash
 ${correctCommand}

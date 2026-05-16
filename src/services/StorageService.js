@@ -6,6 +6,7 @@ class StorageService {
     static STORAGE_KEY_DECKS = 'smart-decks-v3-decks';
     static STORAGE_KEY_IMPROVEMENT_PREFIX = 'smart-decks-v3-improvement-';
     static STORAGE_KEY_MODAL_IMPROVEMENT = 'smart-decks-v3-modal-improvements';
+    static STORAGE_KEY_MODAL_MIGRATION_FLAG = 'smart-decks-v3-modal-improvements-migrated-v1';
     static STORAGE_KEY_FAVORITES = 'smart-decks-v3-favorites';
     static STORAGE_KEY_UNLOCKED_DECKS = 'smart-decks-v3-unlocked-decks';
     static STORAGE_KEY_PROGRESS_PREFIX = 'smart-decks-v3-progress-';
@@ -475,5 +476,34 @@ class StorageService {
         }
     }
 
-    
+    // One-shot migration: legacy modal-improvement keys were unqualified numeric IDs
+    // (e.g. "188"). Qualified keys are now "<alias>:<id>" (e.g. "er:188"). Legacy keys
+    // are assumed to be english_rules ('er') since that was the historical default.
+    static migrateModalImprovementKeys() {
+        try {
+            if (localStorage.getItem(this.STORAGE_KEY_MODAL_MIGRATION_FLAG)) return;
+
+            const raw = this.loadAllModalImprovements();
+            const migrated = {};
+            let touched = 0;
+            for (const [k, v] of Object.entries(raw)) {
+                if (k.includes(':')) {
+                    migrated[k] = v;
+                } else {
+                    migrated[`er:${k}`] = v;
+                    touched++;
+                }
+            }
+
+            if (touched > 0) {
+                localStorage.setItem(this.STORAGE_KEY_MODAL_IMPROVEMENT, JSON.stringify(migrated));
+            }
+            localStorage.setItem(this.STORAGE_KEY_MODAL_MIGRATION_FLAG, '1');
+            console.log(`VERIFY: [StorageService] migrateModalImprovementKeys -> Renamed ${touched} legacy key(s) to 'er:' prefix.`);
+        } catch (error) {
+            console.error("Error migrating modal improvement keys:", error);
+        }
+    }
+
+
 }

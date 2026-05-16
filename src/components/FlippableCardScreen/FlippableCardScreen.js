@@ -180,14 +180,16 @@ populateCard() {
             const noteContent = this.cardData.note.split('\n\n').map(paragraph => {
                 let formattedPara = paragraph.trim();
                 if (formattedPara) {
-                    // Glossary Replacement logic...
-                    formattedPara = formattedPara.replace(/\*\*\[(\d+)\]\*\*/g, (match, termId) => {
-                        const glossary = GlossaryService.getCachedGlossary('english_rules');
+                    // Glossary modal links: **[alias:id]** -> clickable title.
+                    // Alias resolves to a glossary file via GlossaryService.GLOSSARY_ALIASES.
+                    formattedPara = formattedPara.replace(/\*\*\[([a-z]{1,8}):(\d+)\]\*\*/g, (match, alias, termId) => {
+                        const glossaryName = GlossaryService.aliasToName(alias);
+                        const glossary = glossaryName ? GlossaryService.getCachedGlossary(glossaryName) : null;
                         if (glossary && glossary[termId]) {
                             const termTitle = glossary[termId].title;
-                            return `<a href="#" class="glossary-term font-bold text-green-400 hover:underline" data-term-key="${termId}">${termTitle}</a>`;
+                            return `<a href="#" class="glossary-term font-bold text-green-400 hover:underline" data-term-key="${alias}:${termId}">${termTitle}</a>`;
                         }
-                        return `<strong>[Rule ${termId} Not Found]</strong>`;
+                        return `<strong>[${alias}:${termId} Not Found]</strong>`;
                     });
 
                     formattedPara = formattedPara.replace(/\[([^\]]+)\]/g, '<strong class="font-semibold text-indigo-400">$1</strong>');

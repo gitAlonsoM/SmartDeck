@@ -2,6 +2,23 @@
 class GlossaryService {
     static cachedGlossaries = {};
 
+    // Short aliases used in card markup (**[alias:id]**) and in modal-improvement
+    // storage keys. To add a new glossary: drop the JSON in public/data/glossary/
+    // and add one entry here. Aliases are 1-8 lowercase letters.
+    static GLOSSARY_ALIASES = {
+        er: 'english_rules',
+        pv: 'phrasal_verbs',
+    };
+
+    static aliasToName(alias) {
+        return this.GLOSSARY_ALIASES[alias] || null;
+    }
+
+    static nameToAlias(name) {
+        const entry = Object.entries(this.GLOSSARY_ALIASES).find(([, n]) => n === name);
+        return entry ? entry[0] : null;
+    }
+
     /**
      * Loads a glossary file from the server and caches it.
      * @param {string} glossaryName - The name of the glossary file (e.g., 'english_rules').
