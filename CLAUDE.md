@@ -73,4 +73,11 @@ Keys in `smart-decks-v3-modal-improvements` changed from bare numeric strings (`
 The `description` field (a 1-line plain-English summary) was added to every entry in both glossary files via `migrate_glossary_add_description.py`. Descriptions were populated by Gemini and applied with `apply_modal_descriptions.py`.
 
 ### Live reference examples in the improvement prompt (2026-05-16)
-`ImprovementService._generateImprovementPrompt` now receives 6 real modals (`er:9`, `er:33`, `er:68`, `er:82`, `pv:1`, `pv:61`) pulled from the cached glossary at export time and injects them into §7G of the prompt. The LLM uses them as ground-truth format reference when creating or improving modals. They are never hard-coded — updating those glossary entries automatically updates the examples in future exports. Current prompt version: **V10.1 (Live Modal Examples)**.
+`ImprovementService._generateImprovementPrompt` now receives 6 real modals (`er:9`, `er:33`, `er:68`, `er:82`, `pv:1`, `pv:61`) pulled from the cached glossary at export time and injects them into §7G of the prompt. The LLM uses them as ground-truth format reference when creating or improving modals. They are never hard-coded — updating those glossary entries automatically updates the examples in future exports.
+
+### Improvement prompt V10.2 — modal file attribution + glossary key rule (2026-05-16)
+Two additions to `ImprovementService._generateImprovementPrompt`:
+
+1. **File attribution (Part 2, item 5):** After the Improved Modals JSON block the LLM must now write a plain-text `📁 File to update:` line per alias (`er:` → `english_rules.json`, `pv:` → `phrasal_verbs.json`). The JSON itself stays clean; the file name appears outside it so the user knows which file to edit without reading the alias prefix.
+
+2. **Glossary file key rule (Step E, critical warning):** The alias prefix (`er:`, `pv:`) lives **only** in the LLM's Part 2 output for routing. Keys inside the actual glossary JSON files (`english_rules.json`, `phrasal_verbs.json`) are always **bare numeric strings** — never `"er:218"`, always `"218"`. Writing the qualified ID as a file key breaks `GlossaryScreen` search (which does a plain `indexOf` on the numeric key array). Current prompt version: **V10.2 (Modal File Attribution)**.

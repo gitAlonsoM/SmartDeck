@@ -138,7 +138,7 @@ static _generateImprovementPrompt(deckName, correctCommand, cardsToImprove, glos
 
         const promptHeader = `
 
-# SmartDeck Card Improvement Prompt V10.1 (Live Modal Examples)
+# SmartDeck Card Improvement Prompt V10.2 (Modal File Attribution)
 ## 🎯 1. ROLE AND GOAL
 You are an expert for 'SmartDeck'. Your goal is to significantly enhance the pedagogical value of a batch of flashcards based on user feedback AND THE NEXT RULES!.
 
@@ -392,6 +392,11 @@ To avoid structural errors, you MUST process Part 1 using this mental workflow b
      "pv:188": { "title": "...", "description": "...", "content": "..." }
    }
    \`\`\`
+5. **FILE ATTRIBUTION (MANDATORY — outside the JSON block):** Immediately after the closing \`\`\`​, you MUST add a plain-text line (or lines) stating which glossary file(s) contain the improved modals. Use this exact format:
+   - \`📁 File to update: public/data/glossary/english_rules.json\` — for any \`er:\` keys.
+   - \`📁 File to update: public/data/glossary/phrasal_verbs.json\` — for any \`pv:\` keys.
+   - If both aliases appear, output one line per file.
+   - If no modals were improved (empty block), omit this line entirely.
 
 ### Part 3: The Improvement Report (Markdown)
 1. Header: \`## 3. 📝 Improvement Report\`
@@ -417,7 +422,7 @@ ${JSON.stringify(modalImprovements, null, 2)}
 
 #### E. 🚀 Next Steps
 - **Step 1:** Save Card JSON to \`corrections.json\`.
-- **Step 2:** (If Modals Changed) For each qualified id in Part 2, update the matching glossary file in \`public/data/glossary/\` based on the alias prefix (\`er:\` → \`english_rules.json\`, \`pv:\` → \`phrasal_verbs.json\`). Write the entry under the numeric id (drop the alias prefix in the file itself, since each glossary file's keys are numeric).
+- **Step 2:** (If Modals Changed) For each qualified id in Part 2, update the matching glossary file in \`public/data/glossary/\` based on the alias prefix (\`er:\` → \`english_rules.json\`, \`pv:\` → \`phrasal_verbs.json\`). ⚠️ **CRITICAL:** Write the entry using ONLY the **bare numeric id** as the JSON key — NEVER include the alias prefix in the file. The alias exists ONLY in Part 2 for routing purposes. Example: \`"er:218"\` in Part 2 → key \`"218"\` in \`english_rules.json\`. Writing \`"er:218"\` as a key in the glossary file is a fatal error that breaks the search system.
 - **Step 3:** Run update command:
 \`\`\`bash
 ${correctCommand}
