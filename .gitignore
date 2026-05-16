@@ -22,3 +22,8 @@ generate_audios_google.py
 add_phrasal_verb_modals.py
 
 CLAUDE.MD
+
+# Migration backups — never version these
+public/data/backups/
+public/data/glossary/backups/
+*.json.bak
