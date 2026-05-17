@@ -114,7 +114,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_050_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~The database in production use to cache searching~ is not valid because 'use to' implies a past habit that no longer happens. For current routines, you should use [usually caches] or [tends to cache].\n\n~Production in the database use to cache searching~ is incorrect because the subject is reversed. It should be the [database in production]."
+      "note": "\n\n~The database in production use to cache searching~ is not valid because 'use to' implies a past habit that no longer happens. For current routines, you should use [usually caches] or [tends to cache].\n\n~Production in the database use to cache searching~ is incorrect because the subject is reversed. It should be the [database in production].\n\n~Production in the database tends to be cached for queries and be faster.~ is not valid because 'Production in the database' has the reversed subject, and 'tends to be cached' incorrectly implies the database itself is cached, rather than the database [caching the queries]."
     },
     {
       "cardId": "dummy_051",
@@ -154,7 +154,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_054_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~out of the VPN~ is a direct translation; in English, we say we are [off] a network or VPN. Also, ~let me connect it~ is incorrect because you do not connect 'the VPN' itself, you connect yourself to it. Use [let me connect] or [let me log in]."
+      "note": "**[pv:199]**\n\n~out of the VPN~ is a direct translation; in English, we say we are [off] a network or VPN. Also, ~let me connect it~ is incorrect because you do not connect 'the VPN' itself, you connect yourself to it. Use [let me connect] or [let me log in]."
     },
     {
       "cardId": "dummy_056",
@@ -420,6 +420,14 @@
         {
           "text": "I'm concerned that we won't finish it on time.",
           "audioSrc": "public/data/audio/dummy/dummy_079_sideB_2.mp3"
+        },
+        {
+          "text": "My concern is we don't do it on time.",
+          "audioSrc": "public/data/audio/dummy/dummy_079_sideB_3.mp3"
+        },
+        {
+          "text": "My concern is that we won't do it on time.",
+          "audioSrc": "public/data/audio/dummy/dummy_079_sideB_4.mp3"
         }
       ],
       "note": "~My concern is to don't make it on time~ and ~My concern is don't make it on time~ are not valid because you cannot use the auxiliary 'don't' to negate an infinitive or as a noun clause. To express this, use a gerund phrase like [not making it] or a full clause like [that we won't make it]. ~My concern is to now make it on time~ is grammatically incorrect for expressing a negative; the correct infinitive negation is [not to make]."
@@ -486,7 +494,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_082_sideB_2.mp3"
         }
       ],
-      "note": "In this context, [compared to] functions as a prepositional phrase used to contrast two things. It originates from the past participle of the verb \"compare\", but here it simply acts as a fixed connector, similar to \"like\" or \"against\"."
+      "note": "**[er:219]**\n\nIn this context, [compared to] functions as a prepositional phrase used to contrast two things. It originates from the past participle of the verb \"compare\", but here it simply acts as a fixed connector, similar to \"like\" or \"against\"."
     },
     {
       "cardId": "dummy_083",
@@ -506,7 +514,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_083_sideB_2.mp3"
         }
       ],
-      "note": "In this context, [compared to] acts as a prepositional phrase used to contrast two things. Although \"compared\" originates from the past participle of the verb \"compare\", in this structure it functions together with \"to\" as a fixed connector, similar to \"like\" or \"versus\"."
+      "note": "**[er:219]**\n\nIn this context, [compared to] acts as a prepositional phrase used to contrast two things. Although \"compared\" originates from the past participle of the verb \"compare\", in this structure it functions together with \"to\" as a fixed connector, similar to \"like\" or \"versus\"."
     },
     {
       "cardId": "dummy_084",
@@ -642,7 +650,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_089_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "~...but for the other one, let it as it is.~ is not valid because the correct verb for this fixed expression is 'leave', not 'let'. You should say [leave it as it is]."
     },
     {
       "cardId": "dummy_090",
@@ -660,6 +668,10 @@
         {
           "text": "When the network image doesn't load, the banner relies on the fallback.",
           "audioSrc": "public/data/audio/dummy/dummy_090_sideB_2.mp3"
+        },
+        {
+          "text": "When the network image is not loading, the banner uses the fallback.",
+          "audioSrc": "public/data/audio/dummy/dummy_090_sideB_3.mp3"
         }
       ],
       "note": "~When the img of the network doesn't load, the banner uses the fallback.~ is not valid because 'img of the network' is an unnatural translation; use [network image] or [image from the network]."
@@ -786,7 +798,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_095_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "**[pv:199]**"
     }
   ]
 }
