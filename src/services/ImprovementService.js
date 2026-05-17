@@ -138,7 +138,7 @@ static _generateImprovementPrompt(deckName, correctCommand, cardsToImprove, glos
 
         const promptHeader = `
 
-# SmartDeck Card Improvement Prompt V10.2 (Modal File Attribution)
+# SmartDeck Card Improvement Prompt V10.4 (Per-file Part 2 blocks, bare numeric IDs)
 ## 🎯 1. ROLE AND GOAL
 You are an expert for 'SmartDeck'. Your goal is to significantly enhance the pedagogical value of a batch of flashcards based on user feedback AND THE NEXT RULES!.
 
@@ -176,7 +176,7 @@ You are an expert for 'SmartDeck'. Your goal is to significantly enhance the ped
 
 ## ⚙️ 4. CORE WORKFLOW & RULES
 1.  **Analyze Request**: Carefully read the \`review_request\` for each card.
-2.  **Preserve Existing Content**: When adding to fields like \`note\`, IMPORTANT: ALWAYS append!. NUNCA BORRES NOTAS EXISTENTES, A NO SER QUE LA INFORMACION PRESENTE YA NO APLIQUE EN ABSOLUTO AL ESTADO ACTUAL DE LA CARD.
+2.  **Preserve Existing Content**: When adding to fields like \`note\`, IMPORTANT: ALWAYS append!. NUNCA BORRES NOTAS EXISTENTES, A NO SER QUE LA INFORMACION PRESENTE YA NO APLIQUE EN ABSOLUTO AL ESTADO ACTUAL DE LA CARD. Always separate each new block of appended content with \`\\n\\n\` — see the "Mandatory Paragraph Break on Append" rule in §4.1.
 
 ### 4.1 THE "ZERO NOISE" POLICY (MANDATORY)
 You must adhere to this strict style guide for all card content:
@@ -185,6 +185,7 @@ You must adhere to this strict style guide for all card content:
 * **Direct Approach:** Deliver pure educational content. No preambles, no conversational fillers like "Here is the corrected sentence".
 * **No Visual Metadata:** Never include the name of the color, style, or formatting in the text title or body (e.g., NEVER write "Title (Green)" or "Word (Bold)"). Just apply the HTML class; do not describe it in text.
 * **Strict Append-Only Rule:** All new content (definitions, corrections, or explanations) MUST be added ONLY at the VERY END of the existing string in the 'note' field. Prepending or inserting at the beginning is strictly prohibited. EXCEPTION: The ONLY element permitted at the beginning of the note field is a qualified modal ID (e.g., **[er:12]**\\n\\n or **[pv:188]**\\n\\n).
+* **Mandatory Paragraph Break on Append (CRITICAL):** Whenever you append ANY new content to a \`note\` field that already has existing text, you MUST start with a double newline \`\\n\\n\`. This is NON-NEGOTIABLE — it creates the visual paragraph break the reader needs. A note that already ends with \`\\n\\n\` should NOT get a second one; otherwise always add it. **WRONG:** \`existing note.New explanation here.\` **CORRECT:** \`existing note.\\n\\nNew explanation here.\`
 
 
 ## 🛠️ 5. SPECIAL RULE: Handling "add_answer" and User Suggestions
@@ -247,7 +248,7 @@ Before creating anything, rigorously scan the **MODAL CATALOG** (Section 9). The
       - \`title\`: the topic name (same string you would use as the catalog title).
       - \`description\`: a 1-line plain-English summary, max 30 words — used by the AI to identify the modal in future exports.
       - \`content\`: the full HTML string following the Anti-Shit Protocol.
-    - **JSON:** Add the new object to the **Improved Modals JSON** block (Part 2 of Output) keyed by the qualified id (e.g., \`"er:219": { "title": "...", "description": "...", "content": "<p>...</p>" }\`).
+    - **JSON:** Add the new object to the **Improved Modals JSON** block (Part 2 of Output) inside the section labeled with the matching file (e.g., \`📁 english_rules.json\` for \`er:\`, \`📁 phrasal_verbs.json\` for \`pv:\`). Use the **bare numeric id** as the key (e.g., \`"219": { "title": "...", "description": "...", "content": "<p>...</p>" }\`). **NEVER include the alias prefix in the key.**
     - **Card:** Inject the new link \`**[alias:NewID]**\\n\\n\` to the card's \`note\`.
 5. **Report:** "Topic not found in catalog. Created **NEW Modal [alias:NewID]** and linked it."
 
@@ -376,27 +377,29 @@ To avoid structural errors, you MUST process Part 1 using this mental workflow b
 ### Part 2: Improved Modals JSON
 1. Header: \`## 2. Improved Modals JSON\`
 2. **MANDATORY:** You MUST output this header even if no modals were improved.
-3. If no modals were improved, output an empty JSON block exactly like this:
-\`\`\`json
-{}
-\`\`\`
-4. If modals were improved, output a Single JSON Block (\`\`\`json) containing an object where keys are the **qualified modal IDs** (\`alias:id\`).
-   - **Example:**
+3. If no modals were improved, output exactly:
+   \`No modals to update.\`
+4. If modals were improved, output **one labeled JSON block per glossary file**. Never mix IDs from different files in the same block. Use this exact format — one block for \`er:\` modals, one block for \`pv:\` modals (omit a block if that alias has no changes):
+
+   \`📁 english_rules.json\`
    \`\`\`json
    {
-     "er:50": {
+     "50": {
        "title": "Improved Title",
        "description": "Updated 1-line summary, max 30 words.",
        "content": "<p>New HTML content...</p>"
-     },
-     "pv:188": { "title": "...", "description": "...", "content": "..." }
+     }
    }
    \`\`\`
-5. **FILE ATTRIBUTION (MANDATORY — outside the JSON block):** Immediately after the closing \`\`\`​, you MUST add a plain-text line (or lines) stating which glossary file(s) contain the improved modals. Use this exact format:
-   - \`📁 File to update: public/data/glossary/english_rules.json\` — for any \`er:\` keys.
-   - \`📁 File to update: public/data/glossary/phrasal_verbs.json\` — for any \`pv:\` keys.
-   - If both aliases appear, output one line per file.
-   - If no modals were improved (empty block), omit this line entirely.
+
+   \`📁 phrasal_verbs.json\`
+   \`\`\`json
+   {
+     "188": { "title": "...", "description": "...", "content": "..." }
+   }
+   \`\`\`
+
+5. **⚠️ KEY FORMAT RULE (INTERNAL — NEVER REPEAT THIS IN OUTPUT):** The alias prefix (\`er:\`, \`pv:\`) is your internal tool to pick the right file and the right next ID. It must **NEVER appear as part of a JSON key in Part 2**. Keys in Part 2 are always plain numeric strings (\`"218"\`, \`"199"\`), mirroring exactly how they live in the glossary files. The file label above each block (\`📁 english_rules.json\`) is what tells the user which file to edit — the key itself needs no prefix.
 
 ### Part 3: The Improvement Report (Markdown)
 1. Header: \`## 3. 📝 Improvement Report\`
@@ -422,7 +425,7 @@ ${JSON.stringify(modalImprovements, null, 2)}
 
 #### E. 🚀 Next Steps
 - **Step 1:** Save Card JSON to \`corrections.json\`.
-- **Step 2:** (If Modals Changed) For each qualified id in Part 2, update the matching glossary file in \`public/data/glossary/\` based on the alias prefix (\`er:\` → \`english_rules.json\`, \`pv:\` → \`phrasal_verbs.json\`). ⚠️ **CRITICAL:** Write the entry using ONLY the **bare numeric id** as the JSON key — NEVER include the alias prefix in the file. The alias exists ONLY in Part 2 for routing purposes. Example: \`"er:218"\` in Part 2 → key \`"218"\` in \`english_rules.json\`. Writing \`"er:218"\` as a key in the glossary file is a fatal error that breaks the search system.
+- **Step 2:** (If Modals Changed) Copy each JSON block from Part 2 directly into the glossary file shown in its label (e.g. the block under \`📁 english_rules.json\` → paste into \`public/data/glossary/english_rules.json\`). The IDs in Part 2 are already in the correct format for the file.
 - **Step 3:** Run update command:
 \`\`\`bash
 ${correctCommand}

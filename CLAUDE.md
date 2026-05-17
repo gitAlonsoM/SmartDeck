@@ -75,6 +75,18 @@ The `description` field (a 1-line plain-English summary) was added to every entr
 ### Live reference examples in the improvement prompt (2026-05-16)
 `ImprovementService._generateImprovementPrompt` now receives 6 real modals (`er:9`, `er:33`, `er:68`, `er:82`, `pv:1`, `pv:61`) pulled from the cached glossary at export time and injects them into §7G of the prompt. The LLM uses them as ground-truth format reference when creating or improving modals. They are never hard-coded — updating those glossary entries automatically updates the examples in future exports.
 
+### Improvement prompt V10.4 — per-file Part 2 blocks + bare numeric IDs (2026-05-17)
+
+Two fixes for LLM output confusion:
+
+1. **Part 2 format change:** Replaced single JSON block with qualified keys (`"er:218"`) with one labeled JSON block per glossary file (`📁 english_rules.json` / `📁 phrasal_verbs.json`), each using bare numeric keys (`"218"`). The file label above the block replaces the need for the alias prefix in the key. The alias is now marked as an internal-only tool — clearly flagged `⚠️ KEY FORMAT RULE (INTERNAL — NEVER REPEAT THIS IN OUTPUT)` so LLMs don't echo it back.
+
+2. **E. Next Steps Step 2:** Removed the confusing internal CRITICAL warning (which the LLM was copying verbatim into user-facing output). Replaced with a simple user-facing instruction: "copy the block into the labeled file."
+
+### Improvement prompt V10.3 — mandatory paragraph break on append (2026-05-17)
+
+Added a "Mandatory Paragraph Break on Append" rule to §4.1: whenever any new content is appended to an existing `note` field, the LLM **must** prefix it with `\n\n`. This is now a CRITICAL/NON-NEGOTIABLE rule so the reader never sees ideas running together without separation. Also cross-referenced from rule #2 of §4 ("Preserve Existing Content"). Prompt version bumped from V10.2 → V10.3.
+
 ### Improvement prompt V10.2 — modal file attribution + glossary key rule (2026-05-16)
 Two additions to `ImprovementService._generateImprovementPrompt`:
 
