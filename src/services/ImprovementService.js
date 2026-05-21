@@ -138,7 +138,7 @@ static _generateImprovementPrompt(deckName, correctCommand, cardsToImprove, glos
 
         const promptHeader = `
 
-# SmartDeck Card Improvement Prompt V10.4 (Per-file Part 2 blocks, bare numeric IDs)
+# SmartDeck Card Improvement Prompt V10.5 (Format distinction table + note-field rule fix)
 ## 🎯 1. ROLE AND GOAL
 You are an expert for 'SmartDeck'. Your goal is to significantly enhance the pedagogical value of a batch of flashcards based on user feedback AND THE NEXT RULES!.
 
@@ -161,7 +161,7 @@ You are an expert for 'SmartDeck'. Your goal is to significantly enhance the ped
 - \`sideA\`: **MODIFIABLE**.
 - \`sideB\`: **PRIMARY VALUE-ADD FIELD**.
 - \`note\`: **PRIMARY VALUE-ADD FIELD**.
-- \` - **CRITICAL RULE:** This field may start with a qualified modal ID. The required literal format is **[alias:id]** (e.g., **[er:12]** for english_rules, **[pv:188]** for phrasal_verbs), which links to a modal in the MODAL CATALOG. **This syntax MUST NOT be altered, corrected, or removed.** Aliases are exactly: \`er\` (english_rules) and \`pv\` (phrasal_verbs).
+    - **CRITICAL RULE (note field):** This field may start with a qualified modal ID. The required literal format is \`**[alias:id]**\` (e.g., \`**[er:12]**\` for english_rules, \`**[pv:188]**\` for phrasal_verbs), which links to a modal in the MODAL CATALOG at runtime. **This syntax MUST NOT be altered, corrected, or removed.** Aliases: \`er\` = english_rules, \`pv\` = phrasal_verbs.
     - **Exception:** Only remove it if the user explicitly asks to "Remove the modal".
     - **Injection:** To add a modal, see Section 6.
 
@@ -332,6 +332,17 @@ The catalog is keyed by qualified id \`alias:id\` (aliases: \`er\` = english_rul
 **Entry shape:**
 - Most entries are minified: \`{ title, description }\`. This is enough for you to scan, deduplicate, and choose an existing modal when the user asks to link one.
 - Entries that ALSO include \`content\` and \`user_comment\` are the modals the user has flagged for improvement — you MUST regenerate their content in Part 2 (see Section 7 Anti-Shit Protocol).
+
+**⚠️ FORMAT DISTINCTION — 3 contexts, 3 different formats (CRITICAL):**
+| Context | Format | Example |
+|---|---|---|
+| Catalog keys (internal, read-only) | \`alias:id\` | \`er:12\`, \`pv:188\` |
+| Card \`note\` field (UI reference, app parses at runtime) | \`**[alias:id]**\` | \`**[er:12]**\`, \`**[pv:188]**\` |
+| Glossary JSON file key (Part 2 output) | bare numeric string | \`"12"\`, \`"188"\` |
+
+- The catalog keys (\`alias:id\`) are your **internal routing tool only** — they tell you which file a modal belongs to and prevent ID collisions across aliases. They are **NEVER** written as JSON keys in Part 2 or in the actual glossary files.
+- The **bare numeric key** in Part 2 mirrors exactly how the entry is stored in \`english_rules.json\` or \`phrasal_verbs.json\`.
+- The **qualified syntax** \`**[alias:id]**\` in card \`note\` fields is what the app parses and renders as a clickable modal at runtime.
 
 **Linking discipline:** adherir modales a cards solo cuando se solicite explicitamente en la card que se agregue un modal existente del listado. Si el usuario no solicita agregar modal en la card y la card no tiene modal, no agregues modal — es okay tener cards sin modales. No es tu decisión agregarle modales a las cards si no te lo han solicitado.
 

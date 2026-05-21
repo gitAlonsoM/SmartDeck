@@ -75,6 +75,19 @@ The `description` field (a 1-line plain-English summary) was added to every entr
 ### Live reference examples in the improvement prompt (2026-05-16)
 `ImprovementService._generateImprovementPrompt` now receives 6 real modals (`er:9`, `er:33`, `er:68`, `er:82`, `pv:1`, `pv:61`) pulled from the cached glossary at export time and injects them into §7G of the prompt. The LLM uses them as ground-truth format reference when creating or improving modals. They are never hard-coded — updating those glossary entries automatically updates the examples in future exports.
 
+### Improvement prompt V10.5 — format distinction table + §3B note-field rule fix (2026-05-21)
+
+Two clarity fixes to prevent LLM confusion about when to use the alias prefix:
+
+1. **§3B note-field CRITICAL RULE fix:** Removed a dangling backtick that was causing a broken bullet point. Now reads `- **CRITICAL RULE (note field):**` as a proper sub-bullet of the `note` field entry. Clarified that the qualified syntax `` `**[alias:id]**` `` is what the app parses and renders at runtime.
+
+2. **§9 FORMAT DISTINCTION table (new):** Added an explicit 3-row table documenting the three distinct contexts where modal IDs appear, each with its own format:
+   - Catalog keys (internal, LLM-only): `alias:id` (e.g. `er:12`) — routing tool, never written to files.
+   - Card `note` field (UI reference): `**[alias:id]**` (e.g. `**[er:12]**`) — parsed by the app at runtime.
+   - Glossary JSON file key / Part 2 output: bare numeric string (e.g. `"12"`) — mirrors the actual file format.
+
+   This table makes unambiguous the rule the user articulated: the alias prefix exists only in the catalog the LLM reads; it disappears when writing JSON files, and appears as `**[alias:id]**` only when referencing a modal from a card's note.
+
 ### Improvement prompt V10.4 — per-file Part 2 blocks + bare numeric IDs (2026-05-17)
 
 Two fixes for LLM output confusion:
