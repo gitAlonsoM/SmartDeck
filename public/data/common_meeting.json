@@ -29479,6 +29479,682 @@
         }
       ],
       "note": "**[er:125]**\n\n"
+    },
+    {
+      "cardId": "mi_1308",
+      "cardType": "flippable",
+      "sideA": "Lo que quiero configurar es que esto haga eso.",
+      "sideB": [
+        {
+          "text": "What I want to set up is for this to do that.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1308_sideB_0.mp3"
+        },
+        {
+          "text": "What I want to configure is for this to do that.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1308_sideB_1.mp3"
+        },
+        {
+          "text": "What I am trying to set up is for it to do that.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1308_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:194]**\n\n~What I want to set up is this to do that~ and ~What I want to set up is to do that~ are not valid. When expressing that you want an object or system to perform an action, you must use the structure [for] + [object] + [to do]. The correct form is [for this to do that]."
+    },
+    {
+      "cardId": "mi_1309",
+      "cardType": "flippable",
+      "sideA": "…Y ellos hacen su trabajo optimizando los binarios para generar las APPs finales.",
+      "sideB": [
+        {
+          "text": "...And they do their job optimizing the binaries to generate the final apps.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1309_sideB_0.mp3"
+        },
+        {
+          "text": "...And they do their work optimizing the binaries to build the final apps.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1309_sideB_1.mp3"
+        },
+        {
+          "text": "...And they handle the optimization of the binaries to output the final apps.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1309_sideB_2.mp3"
+        },
+        {
+          "text": "And they work optimizing the binaries to output the final apps.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1309_sideB_3.mp3"
+        }
+      ],
+      "note": "**[er:218]**\n\n"
+    },
+    {
+      "cardId": "mi_1310",
+      "cardType": "flippable",
+      "sideA": "Ellas pueden ser deployadas al mismo tiempo, no dependen del uno del otro.",
+      "sideB": [
+        {
+          "text": "They can be deployed at the same time, they don't depend on each other.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1310_sideB_0.mp3"
+        },
+        {
+          "text": "They can be deployed simultaneously, they are not interdependent.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1310_sideB_1.mp3"
+        },
+        {
+          "text": "They can be rolled out at the same time, they are independent of each other.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1310_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1311",
+      "cardType": "flippable",
+      "sideA": "Estoy afuera de la VPN, deja conectarme.",
+      "sideB": [
+        {
+          "text": "I'm off the VPN, let me connect.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1311_sideB_0.mp3"
+        },
+        {
+          "text": "I am not on the VPN, give me a second to connect.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1311_sideB_1.mp3"
+        },
+        {
+          "text": "I'm disconnected from the VPN, let me log in.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1311_sideB_2.mp3"
+        }
+      ],
+      "note": "**[pv:199]**\n\n~out of the VPN~ is a direct translation; in English, we say we are [off] a network or VPN. Also, ~let me connect it~ is incorrect because you do not connect 'the VPN' itself, you connect yourself to it. Use [let me connect] or [let me log in]."
+    },
+    {
+      "cardId": "mi_1312",
+      "cardType": "flippable",
+      "sideA": "Podria causar problemas, por eso lo desactive.",
+      "sideB": [
+        {
+          "text": "It could cause problems, that's why I disabled it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1312_sideB_0.mp3"
+        },
+        {
+          "text": "It might cause issues, so I turned it off.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1312_sideB_1.mp3"
+        },
+        {
+          "text": "It could lead to problems, which is why I deactivated it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1312_sideB_2.mp3"
+        },
+        {
+          "text": "It could cause problems, therefore I disabled it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1312_sideB_3.mp3"
+        },
+        {
+          "text": "It could cause problems, for that reason I deactivated it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1312_sideB_4.mp3"
+        }
+      ],
+      "note": "\n\n~desactivated~ is a spelling error influenced by Spanish. The correct English word is [deactivated]."
+    },
+    {
+      "cardId": "mi_1313",
+      "cardType": "flippable",
+      "sideA": "Desconozco sobre el ciclo de vida de una app en las stores.",
+      "sideB": [
+        {
+          "text": "I don't know about the lifecycle of an app in the stores.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1313_sideB_0.mp3"
+        },
+        {
+          "text": "I'm unfamiliar with the app lifecycle in the stores.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1313_sideB_1.mp3"
+        },
+        {
+          "text": "I am not aware of the lifecycle of an app on the stores.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1313_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1314",
+      "cardType": "flippable",
+      "sideA": "La familia se muda a una casa más grande en los suburbios.",
+      "sideB": [
+        {
+          "text": "The family moves to a larger house in the suburbs.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1314_sideB_0.mp3"
+        },
+        {
+          "text": "The family is moving to a bigger house in the suburbs.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1314_sideB_1.mp3"
+        },
+        {
+          "text": "The family relocates to a larger house in the suburbs.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1314_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:53]**\n\n"
+    },
+    {
+      "cardId": "mi_1315",
+      "cardType": "flippable",
+      "sideA": "Está lento porque no están casheadas las queries en la base de dato.",
+      "sideB": [
+        {
+          "text": "It's slow because the queries are not cached in the database.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1315_sideB_0.mp3"
+        },
+        {
+          "text": "It is slow because the database queries aren't cached.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1315_sideB_1.mp3"
+        },
+        {
+          "text": "It's running slow because the queries haven't been cached in the database.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1315_sideB_2.mp3"
+        },
+        {
+          "text": "It's slow because the queries are not being cached in the database.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1315_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1316",
+      "cardType": "flippable",
+      "sideA": "Desde aqui nos podemos saltar las restricciones.",
+      "sideB": [
+        {
+          "text": "From here we can bypass the restrictions.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1316_sideB_0.mp3"
+        },
+        {
+          "text": "We can skip the restrictions from here.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1316_sideB_1.mp3"
+        },
+        {
+          "text": "From here, we can work around the restrictions.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1316_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1317",
+      "cardType": "flippable",
+      "sideA": "Desde aca podemos saltarnos las restricciones e ir directo por el resultado.",
+      "sideB": [
+        {
+          "text": "From here we can bypass the restrictions and go straight for the result.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1317_sideB_0.mp3"
+        },
+        {
+          "text": "We can skip the restrictions from here and get right to the outcome.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1317_sideB_1.mp3"
+        },
+        {
+          "text": "From here, we can bypass the constraints and go directly to the result.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1317_sideB_2.mp3"
+        },
+        {
+          "text": "From here we can bypass the restrictions and go direct for the result.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1317_sideB_3.mp3"
+        },
+        {
+          "text": "From here we can bypass the restrictions and go directly for the result.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1317_sideB_4.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1318",
+      "cardType": "flippable",
+      "sideA": "Lo acabo de pegar en el chat.",
+      "sideB": [
+        {
+          "text": "I just pasted it in the chat.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1318_sideB_0.mp3"
+        },
+        {
+          "text": "I've just dropped it in the chat.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1318_sideB_1.mp3"
+        },
+        {
+          "text": "I just shared it in the chat.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1318_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1319",
+      "cardType": "flippable",
+      "sideA": "Lo pegue en el chat hace un momento.",
+      "sideB": [
+        {
+          "text": "I pasted it in the chat a moment ago.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1319_sideB_0.mp3"
+        },
+        {
+          "text": "I shared it in the chat a while ago.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1319_sideB_1.mp3"
+        },
+        {
+          "text": "I just dropped it in the chat a few minutes ago.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1319_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1320",
+      "cardType": "flippable",
+      "sideA": "No he trabajado aun en ese issue, he priorizado otros.",
+      "sideB": [
+        {
+          "text": "I haven't worked on that issue yet, I've prioritized others.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1320_sideB_0.mp3"
+        },
+        {
+          "text": "I haven't tackled that issue yet, I've prioritized different ones.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1320_sideB_1.mp3"
+        },
+        {
+          "text": "I haven't gotten to that issue yet, I've put priority on others.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1320_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1321",
+      "cardType": "flippable",
+      "sideA": "He priorizado otros issues.",
+      "sideB": [
+        {
+          "text": "I've been prioritizing other issues.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1321_sideB_0.mp3"
+        },
+        {
+          "text": "I've put other issues first.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1321_sideB_1.mp3"
+        },
+        {
+          "text": "I've given priority to other issues.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1321_sideB_2.mp3"
+        },
+        {
+          "text": "I've prioritized other issues.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1321_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1322",
+      "cardType": "flippable",
+      "sideA": "Mi preocupación es que podria tardar mas de lo esperado.",
+      "sideB": [
+        {
+          "text": "My concern is that it could take longer than expected.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1322_sideB_0.mp3"
+        },
+        {
+          "text": "My worry is that it might take more time than anticipated.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1322_sideB_1.mp3"
+        },
+        {
+          "text": "What concerns me is that it might take longer than expected.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1322_sideB_2.mp3"
+        },
+        {
+          "text": "My concern is that they can be delayed longer than expected.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1322_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1323",
+      "cardType": "flippable",
+      "sideA": "Mi preocupación es que no lo hagamos a tiempo.",
+      "sideB": [
+        {
+          "text": "My concern is that we won't make it on time.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1323_sideB_0.mp3"
+        },
+        {
+          "text": "My worry is that we won't get it done in time.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1323_sideB_1.mp3"
+        },
+        {
+          "text": "I'm concerned that we won't finish it on time.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1323_sideB_2.mp3"
+        },
+        {
+          "text": "My concern is we don't do it on time.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1323_sideB_3.mp3"
+        },
+        {
+          "text": "My concern is that we won't do it on time.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1323_sideB_4.mp3"
+        }
+      ],
+      "note": "~My concern is to don't make it on time~ and ~My concern is don't make it on time~ are not valid because you cannot use the auxiliary 'don't' to negate an infinitive or as a noun clause. To express this, use a gerund phrase like [not making it] or a full clause like [that we won't make it]. ~My concern is to now make it on time~ is grammatically incorrect for expressing a negative; the correct infinitive negation is [not to make]."
+    },
+    {
+      "cardId": "mi_1324",
+      "cardType": "flippable",
+      "sideA": "Dame eso, pero bien hecho.",
+      "sideB": [
+        {
+          "text": "Give me that, but well done.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1324_sideB_0.mp3"
+        },
+        {
+          "text": "Give it to me, but make sure it's done right.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1324_sideB_1.mp3"
+        },
+        {
+          "text": "Give me that, but properly done.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1324_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1325",
+      "cardType": "flippable",
+      "sideA": "Damelo pero bien hecho.",
+      "sideB": [
+        {
+          "text": "Give it to me, but well done.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1325_sideB_0.mp3"
+        },
+        {
+          "text": "Pass it to me, but make sure it's high quality.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1325_sideB_1.mp3"
+        },
+        {
+          "text": "Give me that, but do it right.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1325_sideB_2.mp3"
+        },
+        {
+          "text": "Give me that, but well done.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1325_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1326",
+      "cardType": "flippable",
+      "sideA": "Las stores son realmente claras en comparacion con Oracle.",
+      "sideB": [
+        {
+          "text": "The stores are really clear compared to Oracle.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1326_sideB_0.mp3"
+        },
+        {
+          "text": "The stores are very straightforward compared to Oracle.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1326_sideB_1.mp3"
+        },
+        {
+          "text": "The stores are much easier to understand than Oracle.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1326_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:219]**\n\nIn this context, [compared to] functions as a prepositional phrase used to contrast two things. It originates from the past participle of the verb \"compare\", but here it simply acts as a fixed connector, similar to \"like\" or \"against\"."
+    },
+    {
+      "cardId": "mi_1327",
+      "cardType": "flippable",
+      "sideA": "Las Stores son mas bien claras en comparacion con EBS.",
+      "sideB": [
+        {
+          "text": "The stores are quite clear compared to EBS.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1327_sideB_0.mp3"
+        },
+        {
+          "text": "The stores are relatively clear in comparison with EBS.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1327_sideB_1.mp3"
+        },
+        {
+          "text": "The stores are fairly straightforward compared to EBS.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1327_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:219]**\n\nIn this context, [compared to] acts as a prepositional phrase used to contrast two things. Although \"compared\" originates from the past participle of the verb \"compare\", in this structure it functions together with \"to\" as a fixed connector, similar to \"like\" or \"versus\"."
+    },
+    {
+      "cardId": "mi_1328",
+      "cardType": "flippable",
+      "sideA": "¿Está lloviendo? Si es así, lleva un paraguas.",
+      "sideB": [
+        {
+          "text": "Is it raining? If so, take an umbrella.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1328_sideB_0.mp3"
+        },
+        {
+          "text": "Is it raining? If that's the case, bring an umbrella.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1328_sideB_1.mp3"
+        },
+        {
+          "text": "Is it raining? If so, grab an umbrella.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1328_sideB_2.mp3"
+        },
+        {
+          "text": "Is it raining? If so, carry an umbrella.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1328_sideB_3.mp3"
+        },
+        {
+          "text": "Is it raining? If so, get an umbrella.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1328_sideB_4.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1329",
+      "cardType": "flippable",
+      "sideA": "¿Viene él? De ser así, házmelo saber.",
+      "sideB": [
+        {
+          "text": "Is he coming? If so, let me know.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1329_sideB_0.mp3"
+        },
+        {
+          "text": "Is he showing up? If so, let me know.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1329_sideB_1.mp3"
+        },
+        {
+          "text": "Is he coming? If that's the case, let me know.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1329_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1330",
+      "cardType": "flippable",
+      "sideA": "¿Funciona el enlace? En ese caso, haz clic en él.",
+      "sideB": [
+        {
+          "text": "Does the link work? If so, click it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1330_sideB_0.mp3"
+        },
+        {
+          "text": "Is the link working? If so, click on it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1330_sideB_1.mp3"
+        },
+        {
+          "text": "Does the link work? In that case, click it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1330_sideB_2.mp3"
+        }
+      ],
+      "note": "~Is it working the link? If so, click on it.~ is not valid because the pronoun 'it' and the noun 'the link' cannot be used together as the subject in this way. The correct question structure is [Is the link working?]."
+    },
+    {
+      "cardId": "mi_1331",
+      "cardType": "flippable",
+      "sideA": "¿Es bajo el precio? De ser así, cómpralo ahora.",
+      "sideB": [
+        {
+          "text": "Is the price low? If so, buy it now.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1331_sideB_0.mp3"
+        },
+        {
+          "text": "Is it cheap? If so, buy it right now.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1331_sideB_1.mp3"
+        },
+        {
+          "text": "Is the price low? In that case, purchase it now.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1331_sideB_2.mp3"
+        }
+      ],
+      "note": "~Is it low the price? If so, buy it now.~ is not valid because the word order is incorrect for a question; the verb 'is' must be followed directly by the subject, as in [Is the price low?]."
+    },
+    {
+      "cardId": "mi_1332",
+      "cardType": "flippable",
+      "sideA": "¿Es esto aplicable para todas las provincias?",
+      "sideB": [
+        {
+          "text": "Is this applicable to all provinces?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1332_sideB_0.mp3"
+        },
+        {
+          "text": "Does this apply to all provinces?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1332_sideB_1.mp3"
+        },
+        {
+          "text": "Is this applicable across all provinces?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1332_sideB_2.mp3"
+        },
+        {
+          "text": "Is this applicable for all provinces?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1332_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1333",
+      "cardType": "flippable",
+      "sideA": "Cuando la imagen de la red no carga, el banner usa el fallback.",
+      "sideB": [
+        {
+          "text": "When the network image doesn't load, the banner uses the fallback.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1333_sideB_0.mp3"
+        },
+        {
+          "text": "If the network image fails to load, the banner falls back to the default.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1333_sideB_1.mp3"
+        },
+        {
+          "text": "When the network image doesn't load, the banner relies on the fallback.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1333_sideB_2.mp3"
+        },
+        {
+          "text": "When the network image is not loading, the banner uses the fallback.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1333_sideB_3.mp3"
+        }
+      ],
+      "note": "~When the img of the network doesn't load, the banner uses the fallback.~ is not valid because 'img of the network' is an unnatural translation; use [network image] or [image from the network]."
+    },
+    {
+      "cardId": "mi_1334",
+      "cardType": "flippable",
+      "sideA": "El banner carga desde la red, pero tiene un fallback como respaldo.",
+      "sideB": [
+        {
+          "text": "The banner loads from the network, but has a fallback as a backup.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1334_sideB_0.mp3"
+        },
+        {
+          "text": "The banner loads from the network but features a fallback backup.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1334_sideB_1.mp3"
+        },
+        {
+          "text": "The banner is loaded from the network, but it has a fallback just in case.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1334_sideB_2.mp3"
+        },
+        {
+          "text": "The banner loads from the internet, but has a fallback as a backup.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1334_sideB_3.mp3"
+        }
+      ],
+      "note": "~The banner loads from the red, but has a fallback as a backup.~ is not valid because 'red' is a Spanish word; in English, use [network] or [internet]."
+    },
+    {
+      "cardId": "mi_1335",
+      "cardType": "flippable",
+      "sideA": "Tu puedes personalizar claude code como gustes.",
+      "sideB": [
+        {
+          "text": "You can customize Claude Code however you like.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1335_sideB_0.mp3"
+        },
+        {
+          "text": "You can customize Claude Code as you please.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1335_sideB_1.mp3"
+        },
+        {
+          "text": "You are able to customize Claude Code however you want.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1335_sideB_2.mp3"
+        },
+        {
+          "text": "You can customize Claude Code as you like.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1335_sideB_3.mp3"
+        },
+        {
+          "text": "You can personalize Claude Code however you like.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1335_sideB_4.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1336",
+      "cardType": "flippable",
+      "sideA": "La personalizacion es opcional en este caso.",
+      "sideB": [
+        {
+          "text": "Customization is optional in this case.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1336_sideB_0.mp3"
+        },
+        {
+          "text": "The customization is optional in this scenario.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1336_sideB_1.mp3"
+        },
+        {
+          "text": "Customizing it is optional in this case.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1336_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1337",
+      "cardType": "flippable",
+      "sideA": "Estoy afuera de la vpn, ¿me conecto?",
+      "sideB": [
+        {
+          "text": "I'm off the VPN, should I connect?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1337_sideB_0.mp3"
+        },
+        {
+          "text": "I am disconnected from the VPN, should I log in?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1337_sideB_1.mp3"
+        },
+        {
+          "text": "I'm not on the VPN, do you want me to connect?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1337_sideB_2.mp3"
+        },
+        {
+          "text": "I'm off the VPN, do I connect?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1337_sideB_3.mp3"
+        }
+      ],
+      "note": "**[pv:199]**"
     }
   ]
 }
