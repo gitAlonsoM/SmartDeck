@@ -46,7 +46,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_030_sideB_3.mp3"
         }
       ],
-      "note": "**[er:218]**\n\n\n\n~Sorry, the program got froze~ and ~Sorry, the program got freeze~ are not valid because the past participle of 'freeze' is [frozen]. You can say it [got frozen], but it is much more natural to just say it [froze]."
+      "note": "~Sorry, the program got froze~ and ~Sorry, the program got freeze~ are not valid because the past participle of 'freeze' is [frozen]. You can say it [got frozen], but it is much more natural to just say it [froze]."
     },
     {
       "cardId": "dummy_043",
@@ -114,7 +114,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_050_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~The database in production use to cache searching~ is not valid because 'use to' implies a past habit that no longer happens. For current routines, you should use [usually caches] or [tends to cache].\n\n~Production in the database use to cache searching~ is incorrect because the subject is reversed. It should be the [database in production].\n\n~Production in the database tends to be cached for queries and be faster.~ is not valid because 'Production in the database' has the reversed subject, and 'tends to be cached' incorrectly implies the database itself is cached, rather than the database [caching the queries]."
+      "note": "\n\n~The database in production use to cache searching~ is not valid because 'use to' implies a past habit that no longer happens. For current routines, you should use [usually caches] or [tends to cache].\n\n~Production in the database use to cache searching~ is incorrect because the subject is reversed. It should be the [database in production].\n\n~Production in the database tends to be cached for queries and be faster.~ is not valid because 'Production in the database' has the reversed subject, and 'tends to be cached' incorrectly implies the database itself is cached, rather than the database [caching the queries].\n\n~Production in the database uses to cache the searches and be faster.~ is not valid because 'uses to' is incorrect for describing current habits or routines. You must use adverbs of frequency like [usually caches] or verbs like [tends to cache].\n\n~Production in the database tends to cache searching and be faster.~ is not valid because using the gerund 'searching' sounds unnatural here; it is better to say cache [searches] or cache [queries]. Also, keep in mind that [The production database] is a much more natural subject."
     },
     {
       "cardId": "dummy_051",
@@ -648,6 +648,10 @@
         {
           "text": "...but for the other one, leave it how it is.",
           "audioSrc": "public/data/audio/dummy/dummy_089_sideB_3.mp3"
+        },
+        {
+          "text": "...but for the other, leave it as it is.",
+          "audioSrc": "public/data/audio/dummy/dummy_089_sideB_4.mp3"
         }
       ],
       "note": "~...but for the other one, let it as it is.~ is not valid because the correct verb for this fixed expression is 'leave', not 'let'. You should say [leave it as it is]."
