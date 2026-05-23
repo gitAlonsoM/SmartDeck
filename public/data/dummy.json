@@ -124,6 +124,10 @@
         {
           "text": "The fallback of the banner is a locally saved image.",
           "audioSrc": "public/data/audio/dummy/dummy_091_sideB_4.mp3"
+        },
+        {
+          "text": "The banner fallback is a locally stored image.",
+          "audioSrc": "public/data/audio/dummy/dummy_091_sideB_5.mp3"
         }
       ],
       "note": null
@@ -146,7 +150,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_092_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "**[pv:173]**"
     },
     {
       "cardId": "dummy_093",
@@ -184,6 +188,10 @@
         {
           "text": "This is the code we are currently using.",
           "audioSrc": "public/data/audio/dummy/dummy_094_sideB_2.mp3"
+        },
+        {
+          "text": "This is the code that is being used currently.",
+          "audioSrc": "public/data/audio/dummy/dummy_094_sideB_3.mp3"
         }
       ],
       "note": null
@@ -244,6 +252,10 @@
         {
           "text": "Blue is not entirely synced up with support.",
           "audioSrc": "public/data/audio/dummy/dummy_097_sideB_2.mp3"
+        },
+        {
+          "text": "Blue is not fully synchronized with support.",
+          "audioSrc": "public/data/audio/dummy/dummy_097_sideB_3.mp3"
         }
       ],
       "note": null
@@ -284,6 +296,14 @@
         {
           "text": "Did I write this correctly?",
           "audioSrc": "public/data/audio/dummy/dummy_099_sideB_2.mp3"
+        },
+        {
+          "text": "Is this well written?",
+          "audioSrc": "public/data/audio/dummy/dummy_099_sideB_3.mp3"
+        },
+        {
+          "text": "Is this written well?",
+          "audioSrc": "public/data/audio/dummy/dummy_099_sideB_4.mp3"
         }
       ],
       "note": null
@@ -304,6 +324,10 @@
         {
           "text": "We could narrow down the scope and limitations.",
           "audioSrc": "public/data/audio/dummy/dummy_100_sideB_2.mp3"
+        },
+        {
+          "text": "We could delimit the scope and limitations.",
+          "audioSrc": "public/data/audio/dummy/dummy_100_sideB_3.mp3"
         }
       ],
       "note": null
@@ -426,7 +450,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_106_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~The brewer company is from Canada~ is unnatural. [Brewer] refers to the person or the standalone business entity, but when acting as an adjective modifying \"company,\" you should use [brewing] (e.g., [The brewing company]). Alternatively, just use the noun [brewery]."
     },
     {
       "cardId": "dummy_107",
@@ -446,7 +470,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_107_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~The brewer is the place or facility where beer is produced~ is incorrect. A [brewer] is the person or business that makes the beer, while the [brewery] is the physical location or facility where the beer is brewed."
     },
     {
       "cardId": "dummy_108",
@@ -466,7 +490,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_108_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:220]**"
     },
     {
       "cardId": "dummy_109",
@@ -524,9 +548,13 @@
         {
           "text": "How is the progress on the static page?",
           "audioSrc": "public/data/audio/dummy/dummy_111_sideB_2.mp3"
+        },
+        {
+          "text": "How is the static page going?",
+          "audioSrc": "public/data/audio/dummy/dummy_111_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "**[pv:201]**"
     },
     {
       "cardId": "dummy_112",
@@ -566,7 +594,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_113_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~In the catalog are shown sub-sections~ is not a natural word order in English. You must either use the passive voice properly ([Sub-sections are shown in the catalog]) or use a dummy subject ([There are sub-sections shown in the catalog])."
     },
     {
       "cardId": "dummy_114",
@@ -664,6 +692,10 @@
         {
           "text": "Are there any updates on how to move forward with #71?",
           "audioSrc": "public/data/audio/dummy/dummy_118_sideB_2.mp3"
+        },
+        {
+          "text": "Any news on how to proceed with #71?",
+          "audioSrc": "public/data/audio/dummy/dummy_118_sideB_3.mp3"
         }
       ],
       "note": null
@@ -726,7 +758,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_121_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "**[pv:11]**\n\n**[pv:44]**\n\n**[pv:200]**\n\n~You are cutting off~ and ~You sound a bit cut off~ are not natural for a choppy connection; [cut off] implies the call was completely disconnected or someone was interrupted. Also, ~You sound a bit cut out~ is incorrect because we use the active continuous form [cutting out] to describe a poor signal (e.g., [You are cutting out])."
     },
     {
       "cardId": "dummy_122",
@@ -744,6 +776,14 @@
         {
           "text": "It often caches the searches and runs quicker.",
           "audioSrc": "public/data/audio/dummy/dummy_122_sideB_2.mp3"
+        },
+        {
+          "text": "It tends to cache queries, and it's faster.",
+          "audioSrc": "public/data/audio/dummy/dummy_122_sideB_3.mp3"
+        },
+        {
+          "text": "It tends to cache the queries, and it is faster.",
+          "audioSrc": "public/data/audio/dummy/dummy_122_sideB_4.mp3"
         }
       ],
       "note": null
