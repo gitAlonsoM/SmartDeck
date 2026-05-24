@@ -234,7 +234,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_096_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~What happens is that we are not sync~ is incorrect because 'sync' in this context is a noun or verb, not an adjective. You must use the prepositional phrase [in sync] or the adjective [synchronized]."
     },
     {
       "cardId": "dummy_097",
@@ -278,7 +278,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_098_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~I'll send you again~ is incorrect because it literally implies you are sending the person somewhere. You must include the object pronoun [it] referring to the link, as in [I'll send it to you again]."
     },
     {
       "cardId": "dummy_099",
@@ -470,7 +470,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_107_sideB_2.mp3"
         }
       ],
-      "note": "~The brewer is the place or facility where beer is produced~ is incorrect. A [brewer] is the person or business that makes the beer, while the [brewery] is the physical location or facility where the beer is brewed."
+      "note": "~The brewer is the place or facility where beer is produced~ is incorrect. A [brewer] is the person or business that makes the beer, while the [brewery] is the physical location or facility where the beer is brewed.\n\n~The brewery is the place or installation where beer is produced~ uses [installation], which is an unnatural false friend in this context; [facility] is the correct term for a commercial building. Also, ~The brewery is the place or facility where it is produced the beer~ has incorrect word order. In English, the subject must come before the passive verb, so it must be [where the beer is produced]."
     },
     {
       "cardId": "dummy_108",
@@ -488,6 +488,10 @@
         {
           "text": "A brewer is the individual who brews the beer or the company acting as the manufacturer.",
           "audioSrc": "public/data/audio/dummy/dummy_108_sideB_2.mp3"
+        },
+        {
+          "text": "A brewer is the person who makes the beer or the company that acts as a maker.",
+          "audioSrc": "public/data/audio/dummy/dummy_108_sideB_3.mp3"
         }
       ],
       "note": "**[er:220]**"
@@ -592,6 +596,10 @@
         {
           "text": "There are sub-sections shown in the catalog.",
           "audioSrc": "public/data/audio/dummy/dummy_113_sideB_2.mp3"
+        },
+        {
+          "text": "Sub-sections are displayed in the catalog.",
+          "audioSrc": "public/data/audio/dummy/dummy_113_sideB_3.mp3"
         }
       ],
       "note": "~In the catalog are shown sub-sections~ is not a natural word order in English. You must either use the passive voice properly ([Sub-sections are shown in the catalog]) or use a dummy subject ([There are sub-sections shown in the catalog])."
@@ -612,6 +620,10 @@
         {
           "text": "The magnifying glass displays the product's manufacturer.",
           "audioSrc": "public/data/audio/dummy/dummy_114_sideB_2.mp3"
+        },
+        {
+          "text": "The manufacturer of the product is displayed in the magnifying glass.",
+          "audioSrc": "public/data/audio/dummy/dummy_114_sideB_3.mp3"
         }
       ],
       "note": null
