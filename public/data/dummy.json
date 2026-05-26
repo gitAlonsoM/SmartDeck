@@ -819,6 +819,406 @@
         }
       ],
       "note": null
+    },
+    {
+      "cardId": "dummy_124",
+      "cardType": "flippable",
+      "sideA": "Solo faltan 2 fixes.",
+      "sideB": [
+        {
+          "text": "There are only 2 fixes left.",
+          "audioSrc": "public/data/audio/dummy/dummy_124_sideB_0.mp3"
+        },
+        {
+          "text": "We only have 2 fixes to go.",
+          "audioSrc": "public/data/audio/dummy/dummy_124_sideB_1.mp3"
+        },
+        {
+          "text": "Only 2 fixes remain.",
+          "audioSrc": "public/data/audio/dummy/dummy_124_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_125",
+      "cardType": "flippable",
+      "sideA": "Solo nos faltan 3 fixes para terminar.",
+      "sideB": [
+        {
+          "text": "We only have 3 fixes left to finish.",
+          "audioSrc": "public/data/audio/dummy/dummy_125_sideB_0.mp3"
+        },
+        {
+          "text": "There are only 3 fixes left before we are done.",
+          "audioSrc": "public/data/audio/dummy/dummy_125_sideB_1.mp3"
+        },
+        {
+          "text": "We are just 3 fixes away from being done.",
+          "audioSrc": "public/data/audio/dummy/dummy_125_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_126",
+      "cardType": "flippable",
+      "sideA": "Necesito la guía de Sean para este fix.",
+      "sideB": [
+        {
+          "text": "I need Sean's guidance for this fix.",
+          "audioSrc": "public/data/audio/dummy/dummy_126_sideB_0.mp3"
+        },
+        {
+          "text": "I need Sean's input on this fix.",
+          "audioSrc": "public/data/audio/dummy/dummy_126_sideB_1.mp3"
+        },
+        {
+          "text": "I need Sean to walk me through this fix.",
+          "audioSrc": "public/data/audio/dummy/dummy_126_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_127",
+      "cardType": "flippable",
+      "sideA": "Necesito la guía de Sean para resolver este problema.",
+      "sideB": [
+        {
+          "text": "I need Sean's guidance to solve this problem.",
+          "audioSrc": "public/data/audio/dummy/dummy_127_sideB_0.mp3"
+        },
+        {
+          "text": "I need Sean's help to work through this problem.",
+          "audioSrc": "public/data/audio/dummy/dummy_127_sideB_1.mp3"
+        },
+        {
+          "text": "I need Sean to guide me in solving this problem.",
+          "audioSrc": "public/data/audio/dummy/dummy_127_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_128",
+      "cardType": "flippable",
+      "sideA": "Descomenta esas lineas, y luego comenta las otras de aca.",
+      "sideB": [
+        {
+          "text": "Uncomment those lines, and then comment out the others here.",
+          "audioSrc": "public/data/audio/dummy/dummy_128_sideB_0.mp3"
+        },
+        {
+          "text": "Go ahead and uncomment those lines, then comment out the others.",
+          "audioSrc": "public/data/audio/dummy/dummy_128_sideB_1.mp3"
+        },
+        {
+          "text": "Uncomment those lines, and then comment the other ones out.",
+          "audioSrc": "public/data/audio/dummy/dummy_128_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:221]**"
+    },
+    {
+      "cardId": "dummy_129",
+      "cardType": "flippable",
+      "sideA": "Bueno, hasta ahora siempre espero el visto bueno.",
+      "sideB": [
+        {
+          "text": "Well, up until now I always wait for the green light.",
+          "audioSrc": "public/data/audio/dummy/dummy_129_sideB_0.mp3"
+        },
+        {
+          "text": "Well, up to now I have always waited for approval.",
+          "audioSrc": "public/data/audio/dummy/dummy_129_sideB_1.mp3"
+        },
+        {
+          "text": "Well, so far I have always waited for the go-ahead.",
+          "audioSrc": "public/data/audio/dummy/dummy_129_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_130",
+      "cardType": "flippable",
+      "sideA": "Es necesario seguir el procedimiento correcto.",
+      "sideB": [
+        {
+          "text": "It is necessary to follow the proper procedure.",
+          "audioSrc": "public/data/audio/dummy/dummy_130_sideB_0.mp3"
+        },
+        {
+          "text": "We need to follow the correct procedure.",
+          "audioSrc": "public/data/audio/dummy/dummy_130_sideB_1.mp3"
+        },
+        {
+          "text": "You must follow the correct procedure.",
+          "audioSrc": "public/data/audio/dummy/dummy_130_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_131",
+      "cardType": "flippable",
+      "sideA": "Asegurate de que los datos se guarden correctamente.",
+      "sideB": [
+        {
+          "text": "Ensure that the data is saved properly.",
+          "audioSrc": "public/data/audio/dummy/dummy_131_sideB_0.mp3"
+        },
+        {
+          "text": "Make sure the data is saved correctly.",
+          "audioSrc": "public/data/audio/dummy/dummy_131_sideB_1.mp3"
+        },
+        {
+          "text": "Make sure that the data gets saved correctly.",
+          "audioSrc": "public/data/audio/dummy/dummy_131_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_132",
+      "cardType": "flippable",
+      "sideA": "Como France lo solicito.",
+      "sideB": [
+        {
+          "text": "As France requested.",
+          "audioSrc": "public/data/audio/dummy/dummy_132_sideB_0.mp3"
+        },
+        {
+          "text": "Just as France requested.",
+          "audioSrc": "public/data/audio/dummy/dummy_132_sideB_1.mp3"
+        },
+        {
+          "text": "As per France's request.",
+          "audioSrc": "public/data/audio/dummy/dummy_132_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_133",
+      "cardType": "flippable",
+      "sideA": "Nosotros notamos este error hace unos dias.",
+      "sideB": [
+        {
+          "text": "We noticed this error a few days ago.",
+          "audioSrc": "public/data/audio/dummy/dummy_133_sideB_0.mp3"
+        },
+        {
+          "text": "We spotted this bug a few days ago.",
+          "audioSrc": "public/data/audio/dummy/dummy_133_sideB_1.mp3"
+        },
+        {
+          "text": "We caught this error a few days ago.",
+          "audioSrc": "public/data/audio/dummy/dummy_133_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_134",
+      "cardType": "flippable",
+      "sideA": "Ya no estamos mostrando el signo de exclamacion, solo el fallback img.",
+      "sideB": [
+        {
+          "text": "We are no longer showing the exclamation mark, just the fallback image.",
+          "audioSrc": "public/data/audio/dummy/dummy_134_sideB_0.mp3"
+        },
+        {
+          "text": "We are no longer displaying the exclamation sign, only the fallback image.",
+          "audioSrc": "public/data/audio/dummy/dummy_134_sideB_1.mp3"
+        },
+        {
+          "text": "The exclamation mark is no longer showing, only the fallback image.",
+          "audioSrc": "public/data/audio/dummy/dummy_134_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_135",
+      "cardType": "flippable",
+      "sideA": "No estamos apuntando a Produccion, sino a Soporte.",
+      "sideB": [
+        {
+          "text": "We are not targeting Production, but rather Support.",
+          "audioSrc": "public/data/audio/dummy/dummy_135_sideB_0.mp3"
+        },
+        {
+          "text": "We are not aiming for Production, but rather for Support.",
+          "audioSrc": "public/data/audio/dummy/dummy_135_sideB_1.mp3"
+        },
+        {
+          "text": "We are not aiming for Production, but for Support.",
+          "audioSrc": "public/data/audio/dummy/dummy_135_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_136",
+      "cardType": "flippable",
+      "sideA": "Y lo ultimo que supe fue que ese era el link correcto.",
+      "sideB": [
+        {
+          "text": "And the last thing I heard was that that was the correct link.",
+          "audioSrc": "public/data/audio/dummy/dummy_136_sideB_0.mp3"
+        },
+        {
+          "text": "And the last I knew, that was the right link.",
+          "audioSrc": "public/data/audio/dummy/dummy_136_sideB_1.mp3"
+        },
+        {
+          "text": "The last I heard was that that was the correct link.",
+          "audioSrc": "public/data/audio/dummy/dummy_136_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_137",
+      "cardType": "flippable",
+      "sideA": "En vez de estar al final, ahora esta al comienzo.",
+      "sideB": [
+        {
+          "text": "Instead of being at the end, it is now at the beginning.",
+          "audioSrc": "public/data/audio/dummy/dummy_137_sideB_0.mp3"
+        },
+        {
+          "text": "Rather than being at the end, it is now at the beginning.",
+          "audioSrc": "public/data/audio/dummy/dummy_137_sideB_1.mp3"
+        },
+        {
+          "text": "It used to be at the end, but now it is at the beginning.",
+          "audioSrc": "public/data/audio/dummy/dummy_137_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_138",
+      "cardType": "flippable",
+      "sideA": "Ahi es lo mismo que antes.",
+      "sideB": [
+        {
+          "text": "That is the same as before.",
+          "audioSrc": "public/data/audio/dummy/dummy_138_sideB_0.mp3"
+        },
+        {
+          "text": "It is the same as it was before.",
+          "audioSrc": "public/data/audio/dummy/dummy_138_sideB_1.mp3"
+        },
+        {
+          "text": "That is just the same as before.",
+          "audioSrc": "public/data/audio/dummy/dummy_138_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_139",
+      "cardType": "flippable",
+      "sideA": "Lo testie y funciona.",
+      "sideB": [
+        {
+          "text": "I tested it and it works.",
+          "audioSrc": "public/data/audio/dummy/dummy_139_sideB_0.mp3"
+        },
+        {
+          "text": "I tested it and it is working.",
+          "audioSrc": "public/data/audio/dummy/dummy_139_sideB_1.mp3"
+        },
+        {
+          "text": "I ran a test on it and it works.",
+          "audioSrc": "public/data/audio/dummy/dummy_139_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_140",
+      "cardType": "flippable",
+      "sideA": "Lo testie y no funciona.",
+      "sideB": [
+        {
+          "text": "I tested it and it doesn't work.",
+          "audioSrc": "public/data/audio/dummy/dummy_140_sideB_0.mp3"
+        },
+        {
+          "text": "I tested it and it is not working.",
+          "audioSrc": "public/data/audio/dummy/dummy_140_sideB_1.mp3"
+        },
+        {
+          "text": "I ran a test on it and it doesn't work.",
+          "audioSrc": "public/data/audio/dummy/dummy_140_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_141",
+      "cardType": "flippable",
+      "sideA": "Solo debes descomentar esa linea please.",
+      "sideB": [
+        {
+          "text": "You just need to uncomment that line, please.",
+          "audioSrc": "public/data/audio/dummy/dummy_141_sideB_0.mp3"
+        },
+        {
+          "text": "Just uncomment that line, please.",
+          "audioSrc": "public/data/audio/dummy/dummy_141_sideB_1.mp3"
+        },
+        {
+          "text": "All you need to do is uncomment that line, please.",
+          "audioSrc": "public/data/audio/dummy/dummy_141_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:221]**"
+    },
+    {
+      "cardId": "dummy_142",
+      "cardType": "flippable",
+      "sideA": "Solo debes comentar esa linea, y descomentar la otra.",
+      "sideB": [
+        {
+          "text": "You just need to comment out that line and uncomment the other one.",
+          "audioSrc": "public/data/audio/dummy/dummy_142_sideB_0.mp3"
+        },
+        {
+          "text": "Just comment out that line and uncomment the other one.",
+          "audioSrc": "public/data/audio/dummy/dummy_142_sideB_1.mp3"
+        },
+        {
+          "text": "All you need to do is comment out that line and uncomment the other.",
+          "audioSrc": "public/data/audio/dummy/dummy_142_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:221]**"
+    },
+    {
+      "cardId": "dummy_143",
+      "cardType": "flippable",
+      "sideA": "Este procedimiento fue completamente reescrito.",
+      "sideB": [
+        {
+          "text": "This procedure was completely rewritten.",
+          "audioSrc": "public/data/audio/dummy/dummy_143_sideB_0.mp3"
+        },
+        {
+          "text": "This procedure has been completely rewritten.",
+          "audioSrc": "public/data/audio/dummy/dummy_143_sideB_1.mp3"
+        },
+        {
+          "text": "The procedure was entirely rewritten.",
+          "audioSrc": "public/data/audio/dummy/dummy_143_sideB_2.mp3"
+        }
+      ],
+      "note": null
     }
   ]
 }
