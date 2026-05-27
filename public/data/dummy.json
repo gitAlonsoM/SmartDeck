@@ -150,7 +150,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_092_sideB_2.mp3"
         }
       ],
-      "note": "**[pv:173]**"
+      "note": "**[pv:173]**\n\n~I took care to change the link and putting an image in the code as a fallback~ is incorrect because it mixes an infinitive ('to change') with a gerund ('putting'). The standard structure uses [take care of] followed by gerunds: [changing] and [putting]."
     },
     {
       "cardId": "dummy_093",
@@ -232,6 +232,14 @@
         {
           "text": "The issue is that we are out of sync.",
           "audioSrc": "public/data/audio/dummy/dummy_096_sideB_2.mp3"
+        },
+        {
+          "text": "What happens is that we are not in sync.",
+          "audioSrc": "public/data/audio/dummy/dummy_096_sideB_3.mp3"
+        },
+        {
+          "text": "What happens is that we are not synchronized.",
+          "audioSrc": "public/data/audio/dummy/dummy_096_sideB_4.mp3"
         }
       ],
       "note": "~What happens is that we are not sync~ is incorrect because 'sync' in this context is a noun or verb, not an adjective. You must use the prepositional phrase [in sync] or the adjective [synchronized]."
@@ -558,7 +566,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_111_sideB_3.mp3"
         }
       ],
-      "note": "**[pv:201]**"
+      "note": "**[pv:201]**\n\n~How is going the development of the static page?~ has incorrect word order. In questions, the subject must come before the continuous verb: [How is the development... going?]."
     },
     {
       "cardId": "dummy_112",
@@ -768,6 +776,10 @@
         {
           "text": "You are cutting out a bit.",
           "audioSrc": "public/data/audio/dummy/dummy_121_sideB_2.mp3"
+        },
+        {
+          "text": "Your voice is cutting out.",
+          "audioSrc": "public/data/audio/dummy/dummy_121_sideB_3.mp3"
         }
       ],
       "note": "**[pv:11]**\n\n**[pv:44]**\n\n**[pv:200]**\n\n~You are cutting off~ and ~You sound a bit cut off~ are not natural for a choppy connection; [cut off] implies the call was completely disconnected or someone was interrupted. Also, ~You sound a bit cut out~ is incorrect because we use the active continuous form [cutting out] to describe a poor signal (e.g., [You are cutting out])."
@@ -836,9 +848,13 @@
         {
           "text": "Only 2 fixes remain.",
           "audioSrc": "public/data/audio/dummy/dummy_124_sideB_2.mp3"
+        },
+        {
+          "text": "We only have 2 fixes left.",
+          "audioSrc": "public/data/audio/dummy/dummy_124_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:108]**\n\n~We only lack 2 fixes~ is unnatural. The verb [lack] means a deficiency or absence of something essential (e.g., [We lack resources]), not a countdown of remaining tasks. Use [have... left]."
     },
     {
       "cardId": "dummy_125",
@@ -858,7 +874,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_125_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:108]**"
     },
     {
       "cardId": "dummy_126",
@@ -878,7 +894,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_126_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~I need the guidance of Sean for this fix~ is grammatically correct but unnatural. For human possession, you must use the Saxon Genitive ([Sean's guidance]). Use 'of' primarily for objects or abstract concepts."
     },
     {
       "cardId": "dummy_127",
@@ -898,7 +914,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_127_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~I need the guidance of Sean to solve this problem~ is unnatural. In English, human possession is expressed with an apostrophe 's. You should say [Sean's guidance]."
     },
     {
       "cardId": "dummy_128",
@@ -918,7 +934,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_128_sideB_2.mp3"
         }
       ],
-      "note": "**[er:221]**"
+      "note": "**[er:221]**\n\n~Uncomment those lines, and then comment the others here~ is incorrect. You must use the phrasal verb [comment out] to refer to disabling code, not just [comment]."
     },
     {
       "cardId": "dummy_129",
@@ -936,6 +952,10 @@
         {
           "text": "Well, so far I have always waited for the go-ahead.",
           "audioSrc": "public/data/audio/dummy/dummy_129_sideB_2.mp3"
+        },
+        {
+          "text": "Well, so far I always wait for the green light.",
+          "audioSrc": "public/data/audio/dummy/dummy_129_sideB_3.mp3"
         }
       ],
       "note": null
@@ -996,9 +1016,13 @@
         {
           "text": "As per France's request.",
           "audioSrc": "public/data/audio/dummy/dummy_132_sideB_2.mp3"
+        },
+        {
+          "text": "As France asked.",
+          "audioSrc": "public/data/audio/dummy/dummy_132_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "~As France asked for~ is unnatural here. The verb [ask] means to request an action, which fits perfectly ([As France asked]). [Ask for] requires an object (e.g., [As France asked for it]), but in this structure, just [ask] is preferred."
     },
     {
       "cardId": "dummy_133",
@@ -1058,7 +1082,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_135_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:143]**"
     },
     {
       "cardId": "dummy_136",
@@ -1076,6 +1100,14 @@
         {
           "text": "The last I heard was that that was the correct link.",
           "audioSrc": "public/data/audio/dummy/dummy_136_sideB_2.mp3"
+        },
+        {
+          "text": "And the last thing I knew was that that was the correct link.",
+          "audioSrc": "public/data/audio/dummy/dummy_136_sideB_3.mp3"
+        },
+        {
+          "text": "And the last I knew was that was the correct link.",
+          "audioSrc": "public/data/audio/dummy/dummy_136_sideB_4.mp3"
         }
       ],
       "note": null
@@ -1118,7 +1150,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_138_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~There is the same as before~ is incorrect. [There] refers to a physical location. To say \"ahí\" in the abstract sense of \"in that aspect\" or \"in that case\", you must use [That] (e.g., [That is the same...])."
     },
     {
       "cardId": "dummy_139",
@@ -1198,7 +1230,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_142_sideB_2.mp3"
         }
       ],
-      "note": "**[er:221]**"
+      "note": "**[er:221]**\n\n~You just need to comment that line and uncomment the other one~ is incorrect in a programming context. The verb [comment] means to express an opinion. To disable a line of code, you must use the phrasal verb [comment out]."
     },
     {
       "cardId": "dummy_143",
