@@ -338,7 +338,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_100_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "\n\n~We could define the scopes and limitations~ is incorrect. In English, [scope] is generally uncountable when referring to the extent of a project or subject. It remains singular even when paired with plural words like [limitations]."
     },
     {
       "cardId": "dummy_101",
@@ -564,9 +564,13 @@
         {
           "text": "How is the static page going?",
           "audioSrc": "public/data/audio/dummy/dummy_111_sideB_3.mp3"
+        },
+        {
+          "text": "How is the static page development going?",
+          "audioSrc": "public/data/audio/dummy/dummy_111_sideB_4.mp3"
         }
       ],
-      "note": "**[pv:201]**\n\n~How is going the development of the static page?~ has incorrect word order. In questions, the subject must come before the continuous verb: [How is the development... going?]."
+      "note": "**[pv:201]**\n\n~How is going the development of the static page?~ has incorrect word order. In questions, the subject must come before the continuous verb: [How is the development... going?].\n\n~How is the development static page going?~ has incorrect word order. When using a compound noun, the broader category goes last: [static page development]."
     },
     {
       "cardId": "dummy_112",
@@ -632,6 +636,10 @@
         {
           "text": "The manufacturer of the product is displayed in the magnifying glass.",
           "audioSrc": "public/data/audio/dummy/dummy_114_sideB_3.mp3"
+        },
+        {
+          "text": "The product maker is shown in the search bar.",
+          "audioSrc": "public/data/audio/dummy/dummy_114_sideB_4.mp3"
         }
       ],
       "note": null
@@ -874,7 +882,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_125_sideB_2.mp3"
         }
       ],
-      "note": "**[er:108]**"
+      "note": "**[er:108]**\n\n~We are just 3 fixes away to finish~ is incorrect. The phrase 'away from' must be followed by a noun or a gerund (-ing form), not an infinitive. It should be [away from finishing]."
     },
     {
       "cardId": "dummy_126",
@@ -894,7 +902,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_126_sideB_2.mp3"
         }
       ],
-      "note": "~I need the guidance of Sean for this fix~ is grammatically correct but unnatural. For human possession, you must use the Saxon Genitive ([Sean's guidance]). Use 'of' primarily for objects or abstract concepts."
+      "note": "**[er:175]**\n\n~I need the guidance of Sean for this fix~ is grammatically correct but unnatural. For human possession, you must use the Saxon Genitive ([Sean's guidance]). Use 'of' primarily for objects or abstract concepts."
     },
     {
       "cardId": "dummy_127",
@@ -914,7 +922,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_127_sideB_2.mp3"
         }
       ],
-      "note": "~I need the guidance of Sean to solve this problem~ is unnatural. In English, human possession is expressed with an apostrophe 's. You should say [Sean's guidance]."
+      "note": "**[er:175]**\n\n~I need the guidance of Sean to solve this problem~ is unnatural. In English, human possession is expressed with an apostrophe 's. You should say [Sean's guidance]."
     },
     {
       "cardId": "dummy_128",
@@ -956,6 +964,10 @@
         {
           "text": "Well, so far I always wait for the green light.",
           "audioSrc": "public/data/audio/dummy/dummy_129_sideB_3.mp3"
+        },
+        {
+          "text": "Well, until now I always wait for the green light.",
+          "audioSrc": "public/data/audio/dummy/dummy_129_sideB_4.mp3"
         }
       ],
       "note": null
@@ -998,7 +1010,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_131_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:107]**"
     },
     {
       "cardId": "dummy_132",
@@ -1060,9 +1072,13 @@
         {
           "text": "The exclamation mark is no longer showing, only the fallback image.",
           "audioSrc": "public/data/audio/dummy/dummy_134_sideB_2.mp3"
+        },
+        {
+          "text": "We are not showing the exclamation mark, just the fallback image.",
+          "audioSrc": "public/data/audio/dummy/dummy_134_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:24]**"
     },
     {
       "cardId": "dummy_135",
@@ -1082,7 +1098,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_135_sideB_2.mp3"
         }
       ],
-      "note": "**[er:143]**"
+      "note": "**[er:143]**\n\n~We are not pointing for Production...~ is incorrect. You can point [at] or [to] something physically or metaphorically, but for environments or goals, use [aiming for] or [targeting].\n\n~...aiming for Production, rather, for Support~ is awkwardly punctuated. Use [but rather for] without commas to contrast the targets smoothly."
     },
     {
       "cardId": "dummy_136",
@@ -1150,7 +1166,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_138_sideB_2.mp3"
         }
       ],
-      "note": "~There is the same as before~ is incorrect. [There] refers to a physical location. To say \"ahí\" in the abstract sense of \"in that aspect\" or \"in that case\", you must use [That] (e.g., [That is the same...])."
+      "note": "~There is the same as before~ is incorrect. [There] refers to a physical location. To say \"ahí\" in the abstract sense of \"in that aspect\" or \"in that case\", you must use [That] (e.g., [That is the same...]).\n\n[There] can refer to digital locations (e.g., 'Put the cursor there'), but it cannot act as the subject of the sentence to mean 'that place/aspect'. Saying 'There is the same' translates to the existential 'Hay el mismo'. To say 'esa parte' or 'ese aspecto' is the same, you must use a demonstrative pronoun like [That] as the subject, or use 'there' as an adverb at the end: [It is the same there]."
     },
     {
       "cardId": "dummy_139",
@@ -1230,7 +1246,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_142_sideB_2.mp3"
         }
       ],
-      "note": "**[er:221]**\n\n~You just need to comment that line and uncomment the other one~ is incorrect in a programming context. The verb [comment] means to express an opinion. To disable a line of code, you must use the phrasal verb [comment out]."
+      "note": "**[er:221]**\n**[pv:202]**\n\n~You just need to comment that line and uncomment the other one~ is incorrect in a programming context. The verb [comment] means to express an opinion. To disable a line of code, you must use the phrasal verb [comment out]."
     },
     {
       "cardId": "dummy_143",
@@ -1248,6 +1264,10 @@
         {
           "text": "The procedure was entirely rewritten.",
           "audioSrc": "public/data/audio/dummy/dummy_143_sideB_2.mp3"
+        },
+        {
+          "text": "This procedure was completely redone.",
+          "audioSrc": "public/data/audio/dummy/dummy_143_sideB_3.mp3"
         }
       ],
       "note": null
