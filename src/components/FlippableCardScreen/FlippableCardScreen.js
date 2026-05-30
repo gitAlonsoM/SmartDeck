@@ -187,7 +187,7 @@ populateCard() {
                         const glossary = glossaryName ? GlossaryService.getCachedGlossary(glossaryName) : null;
                         if (glossary && glossary[termId]) {
                             const termTitle = glossary[termId].title;
-                            return `<a href="#" class="glossary-term font-bold text-green-400 hover:underline" data-term-key="${alias}:${termId}">${termTitle}</a>`;
+                            return `<a href="#" class="glossary-term glossary-term-chip" data-term-key="${alias}:${termId}"><i class="fas fa-book-open glossary-term-chip-icon"></i><span>${termTitle}</span></a>`;
                         }
                         return `<strong>[${alias}:${termId} Not Found]</strong>`;
                     });

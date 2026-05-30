@@ -192,7 +192,7 @@ revealFeedback() {
 
             if (glossary && glossary[modalId]) {
                 const termTitle = glossary[modalId].title;
-                grammarNoteTitleEl.innerHTML = `Tip - <a href="#" class="glossary-term font-bold text-green-400 hover:underline" data-term-key="${alias}:${modalId}">${termTitle}</a>`;
+                grammarNoteTitleEl.innerHTML = `<a href="#" class="glossary-term glossary-term-chip" data-term-key="${alias}:${modalId}"><i class="fas fa-book-open glossary-term-chip-icon"></i><span>${termTitle}</span></a>`;
                 contentText = contentText.replace(modalMatch[0], '');
             } else {
                 console.warn(`[AudioChoiceScreen] Modal ${alias}:${modalId} not found. Hiding Tip.`);
@@ -208,7 +208,7 @@ revealFeedback() {
             const glossary = glossaryName ? GlossaryService.getCachedGlossary(glossaryName) : null;
             if (glossary && glossary[termId]) {
                 const termTitle = glossary[termId].title;
-                return `<a href="#" class="glossary-term font-bold text-green-400 hover:underline" data-term-key="${alias}:${termId}">${termTitle}</a>`;
+                return `<a href="#" class="glossary-term glossary-term-chip" data-term-key="${alias}:${termId}"><i class="fas fa-book-open glossary-term-chip-icon"></i><span>${termTitle}</span></a>`;
             }
             return `<strong>[${alias}:${termId}]</strong>`;
         });

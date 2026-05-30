@@ -41,12 +41,29 @@ Three deck types:
 
 The repo ships content-authoring scripts at the root. Most are git-ignored (treated as personal tools) but stay in the working tree. Run with `py <script>.py [args]`:
 
-- `generate_audios.py <deck.json>` — Azure Cognitive Services TTS; reads `audioSrc` paths from a deck and produces MP3s. **Contains a hard-coded API key** — never commit changes that expose it; the file is in `.gitignore` for that reason.
-- `generate_audios_google.py` — free gTTS alternative.
+- `generate_audios.py <deck.json>` — **DISABLED (Azure key inactive).** Do not run this. Use `generate_audios_google.py` instead.
+- `generate_audios_google.py <deck.json>` — free gTTS TTS; skips files that already exist. **This is the active audio generation script.**
 - `delete_audios.py` — prunes MP3s no longer referenced by a deck.
 - `update_deck.py <deck.json> <improved_cards.json>` — replaces cards by `cardId` and writes a timestamped backup to `public/data/backups/`. This is the pipeline used to apply LLM-improved cards exported by the in-app "Improvement" flow.
-- `merge_decks_smart.py` — moves cards (and their audio) from a source deck into a target deck, renaming `cardId` prefixes and honoring a `IDS_TO_KEEP` exclusion list. Configuration is edited in the script header.
+- `merge_decks_smart.py` — moves cards (and their audio) from a source deck into a target deck, renaming `cardId` prefixes and honoring a `IDS_TO_MOVE` inclusion list. **Edit `IDS_TO_MOVE` in the script header before each run** — it is already pre-configured for `dummy → common_meeting`.
 - `upgrade_glossary.py`, `add_phrasal_verb_modals.py`, `update_plsql_paths.py`, `refactor_values.py`, `remove_categories.py` — one-shot deck/glossary transforms; read the file header before re-running, several are tailored to specific decks.
+
+### Running Python scripts on this machine
+
+- **Always use the PowerShell tool** (not Bash) when running `py` commands that need env vars or contain emoji in print statements.
+- Scripts with emoji in their output require UTF-8 encoding: `$env:PYTHONIOENCODING="utf-8"; py <script>.py [args]`
+- The Bash tool routes through `/usr/bin/bash` which does not support `$env:VAR` syntax — PowerShell tool only for `py` invocations.
+
+## Adding cards to a deck JSON
+
+**Edit the JSON file directly with the Edit tool — never create a helper script just to insert cards.**
+
+1. Read the last few lines of the target deck to find the closing `}` of the last card.
+2. Replace that closing block with the new cards appended inside the `cards` array, ending with `  ]\n}`.
+3. After saving the JSON, run `py generate_audios_google.py <deck.json>` (via PowerShell tool) to generate the MP3s. The script skips files that already exist, so it is safe to re-run.
+4. Stage with `git add public/data/<deck>.json public/data/audio/<deck>/` — do **not** stage `.bak` files.
+
+Audio path convention: `public/data/audio/<deck-slug>/<cardId>_sideB_<N>.mp3` (0-indexed).
 
 ## Conventions seen in this codebase
 
@@ -74,6 +91,16 @@ The `description` field (a 1-line plain-English summary) was added to every entr
 
 ### Live reference examples in the improvement prompt (2026-05-16)
 `ImprovementService._generateImprovementPrompt` now receives 6 real modals (`er:9`, `er:33`, `er:68`, `er:82`, `pv:1`, `pv:61`) pulled from the cached glossary at export time and injects them into §7G of the prompt. The LLM uses them as ground-truth format reference when creating or improving modals. They are never hard-coded — updating those glossary entries automatically updates the examples in future exports.
+
+### Modal links rendered as chips in cards + Improvement prompt V10.6 (2026-05-30)
+
+UI fix and a prompt clarification:
+
+1. **Modal link styling (cards):** A card's `note` modal link `**[alias:id]**` is rendered by `FlippableCardScreen.js` (inline links) and `AudioChoiceScreen.js` (both the "header" link at the top of the grammar note and inline links). It used to be a plain green dotted-underline `<a class="glossary-term">`, which the `.note-paragraph { text-align: justify }` rule stretched edge-to-edge ("Word justify" look) when the title wrapped to 2 lines. Now it renders as a **chip**: `<a class="glossary-term glossary-term-chip"><i class="fas fa-book-open glossary-term-chip-icon"></i><span>Title</span></a>`. The `.glossary-term-chip` class (in `public/css/style.css`) is `display: inline-flex` — an atomic inline box, so `text-align: justify` can no longer stretch it; green tint background + border + book icon, no underline. **Keep the `glossary-term` class on the element** — the click handlers do `event.target.closest('.glossary-term')`, so removing it breaks modal opening. Multiple chips per card flow inline and don't break.
+
+2. **Removed the "Tip - " prefix** from the AudioChoiceScreen grammar-note header (it was hard-coded before the chip). Now `audioChoice` decks (Phrasal Verbs, Common Meeting) show just the chip, matching `flippable` decks.
+
+3. **Improvement prompt V10.6:** §9 MODAL CATALOG now states the completeness rule both ways — *minified entry = reference-only (never modify); complete entry (has `content` + `user_comment`) = modification requested.* The decisive signal is `user_comment` (the §7G live examples also have full `content` but no `user_comment`, so they're format models, not edit targets).
 
 ### Improvement prompt V10.5 — format distinction table + §3B note-field rule fix (2026-05-21)
 

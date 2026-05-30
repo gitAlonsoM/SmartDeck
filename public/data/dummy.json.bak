@@ -5,26 +5,6 @@
   "deckType": "flippable",
   "cards": [
     {
-      "cardId": "dummy_020",
-      "cardType": "flippable",
-      "sideA": "Lo que quiero configurar es que esto haga eso.",
-      "sideB": [
-        {
-          "text": "What I want to set up is for this to do that.",
-          "audioSrc": "public/data/audio/dummy/dummy_020_sideB_0.mp3"
-        },
-        {
-          "text": "What I want to configure is for this to do that.",
-          "audioSrc": "public/data/audio/dummy/dummy_020_sideB_1.mp3"
-        },
-        {
-          "text": "What I am trying to set up is for it to do that.",
-          "audioSrc": "public/data/audio/dummy/dummy_020_sideB_2.mp3"
-        }
-      ],
-      "note": "**[er:194]**\n\n~What I want to set up is this to do that~ and ~What I want to set up is to do that~ are not valid. When expressing that you want an object or system to perform an action, you must use the structure [for] + [object] + [to do]. The correct form is [for this to do that]."
-    },
-    {
       "cardId": "dummy_030",
       "cardType": "flippable",
       "sideA": "Perdona, se me pego (congelo) el programa.",
@@ -47,30 +27,6 @@
         }
       ],
       "note": "~Sorry, the program got froze~ and ~Sorry, the program got freeze~ are not valid because the past participle of 'freeze' is [frozen]. You can say it [got frozen], but it is much more natural to just say it [froze]."
-    },
-    {
-      "cardId": "dummy_043",
-      "cardType": "flippable",
-      "sideA": "…Y ellos hacen su trabajo optimizando los binarios para generar las APPs finales.",
-      "sideB": [
-        {
-          "text": "...And they do their job optimizing the binaries to generate the final apps.",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_0.mp3"
-        },
-        {
-          "text": "...And they do their work optimizing the binaries to build the final apps.",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_1.mp3"
-        },
-        {
-          "text": "...And they handle the optimization of the binaries to output the final apps.",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_2.mp3"
-        },
-        {
-          "text": "And they work optimizing the binaries to output the final apps.",
-          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_3.mp3"
-        }
-      ],
-      "note": "**[er:218]**\n\n"
     },
     {
       "cardId": "dummy_046",
@@ -117,518 +73,6 @@
       "note": "\n\n~The database in production use to cache searching~ is not valid because 'use to' implies a past habit that no longer happens. For current routines, you should use [usually caches] or [tends to cache].\n\n~Production in the database use to cache searching~ is incorrect because the subject is reversed. It should be the [database in production].\n\n~Production in the database tends to be cached for queries and be faster.~ is not valid because 'Production in the database' has the reversed subject, and 'tends to be cached' incorrectly implies the database itself is cached, rather than the database [caching the queries].\n\n~Production in the database uses to cache the searches and be faster.~ is not valid because 'uses to' is incorrect for describing current habits or routines. You must use adverbs of frequency like [usually caches] or verbs like [tends to cache].\n\n~Production in the database tends to cache searching and be faster.~ is not valid because using the gerund 'searching' sounds unnatural here; it is better to say cache [searches] or cache [queries]. Also, keep in mind that [The production database] is a much more natural subject."
     },
     {
-      "cardId": "dummy_051",
-      "cardType": "flippable",
-      "sideA": "Ellas pueden ser deployadas al mismo tiempo, no dependen del uno del otro.",
-      "sideB": [
-        {
-          "text": "They can be deployed at the same time, they don't depend on each other.",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_0.mp3"
-        },
-        {
-          "text": "They can be deployed simultaneously, they are not interdependent.",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_1.mp3"
-        },
-        {
-          "text": "They can be rolled out at the same time, they are independent of each other.",
-          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_054",
-      "cardType": "flippable",
-      "sideA": "Estoy afuera de la VPN, deja conectarme.",
-      "sideB": [
-        {
-          "text": "I'm off the VPN, let me connect.",
-          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_0.mp3"
-        },
-        {
-          "text": "I am not on the VPN, give me a second to connect.",
-          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_1.mp3"
-        },
-        {
-          "text": "I'm disconnected from the VPN, let me log in.",
-          "audioSrc": "public/data/audio/dummy/dummy_054_sideB_2.mp3"
-        }
-      ],
-      "note": "**[pv:199]**\n\n~out of the VPN~ is a direct translation; in English, we say we are [off] a network or VPN. Also, ~let me connect it~ is incorrect because you do not connect 'the VPN' itself, you connect yourself to it. Use [let me connect] or [let me log in]."
-    },
-    {
-      "cardId": "dummy_056",
-      "cardType": "flippable",
-      "sideA": "Podria causar problemas, por eso lo desactive.",
-      "sideB": [
-        {
-          "text": "It could cause problems, that's why I disabled it.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_0.mp3"
-        },
-        {
-          "text": "It might cause issues, so I turned it off.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_1.mp3"
-        },
-        {
-          "text": "It could lead to problems, which is why I deactivated it.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_2.mp3"
-        },
-        {
-          "text": "It could cause problems, therefore I disabled it.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_3.mp3"
-        },
-        {
-          "text": "It could cause problems, for that reason I deactivated it.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_4.mp3"
-        }
-      ],
-      "note": "\n\n~desactivated~ is a spelling error influenced by Spanish. The correct English word is [deactivated]."
-    },
-    {
-      "cardId": "dummy_057",
-      "cardType": "flippable",
-      "sideA": "Desconozco sobre el ciclo de vida de una app en las stores.",
-      "sideB": [
-        {
-          "text": "I don't know about the lifecycle of an app in the stores.",
-          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_0.mp3"
-        },
-        {
-          "text": "I'm unfamiliar with the app lifecycle in the stores.",
-          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_1.mp3"
-        },
-        {
-          "text": "I am not aware of the lifecycle of an app on the stores.",
-          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_063",
-      "cardType": "flippable",
-      "sideA": "La familia se muda a una casa más grande en los suburbios.",
-      "sideB": [
-        {
-          "text": "The family moves to a larger house in the suburbs.",
-          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_0.mp3"
-        },
-        {
-          "text": "The family is moving to a bigger house in the suburbs.",
-          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_1.mp3"
-        },
-        {
-          "text": "The family relocates to a larger house in the suburbs.",
-          "audioSrc": "public/data/audio/dummy/dummy_063_sideB_2.mp3"
-        }
-      ],
-      "note": "**[er:53]**\n\n"
-    },
-    {
-      "cardId": "dummy_071",
-      "cardType": "flippable",
-      "sideA": "Está lento porque no están casheadas las queries en la base de dato.",
-      "sideB": [
-        {
-          "text": "It's slow because the queries are not cached in the database.",
-          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_0.mp3"
-        },
-        {
-          "text": "It is slow because the database queries aren't cached.",
-          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_1.mp3"
-        },
-        {
-          "text": "It's running slow because the queries haven't been cached in the database.",
-          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_2.mp3"
-        },
-        {
-          "text": "It's slow because the queries are not being cached in the database.",
-          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_072",
-      "cardType": "flippable",
-      "sideA": "Desde aqui nos podemos saltar las restricciones.",
-      "sideB": [
-        {
-          "text": "From here we can bypass the restrictions.",
-          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_0.mp3"
-        },
-        {
-          "text": "We can skip the restrictions from here.",
-          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_1.mp3"
-        },
-        {
-          "text": "From here, we can work around the restrictions.",
-          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_073",
-      "cardType": "flippable",
-      "sideA": "Desde aca podemos saltarnos las restricciones e ir directo por el resultado.",
-      "sideB": [
-        {
-          "text": "From here we can bypass the restrictions and go straight for the result.",
-          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_0.mp3"
-        },
-        {
-          "text": "We can skip the restrictions from here and get right to the outcome.",
-          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_1.mp3"
-        },
-        {
-          "text": "From here, we can bypass the constraints and go directly to the result.",
-          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_2.mp3"
-        },
-        {
-          "text": "From here we can bypass the restrictions and go direct for the result.",
-          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_3.mp3"
-        },
-        {
-          "text": "From here we can bypass the restrictions and go directly for the result.",
-          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_4.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_074",
-      "cardType": "flippable",
-      "sideA": "Lo acabo de pegar en el chat.",
-      "sideB": [
-        {
-          "text": "I just pasted it in the chat.",
-          "audioSrc": "public/data/audio/dummy/dummy_074_sideB_0.mp3"
-        },
-        {
-          "text": "I've just dropped it in the chat.",
-          "audioSrc": "public/data/audio/dummy/dummy_074_sideB_1.mp3"
-        },
-        {
-          "text": "I just shared it in the chat.",
-          "audioSrc": "public/data/audio/dummy/dummy_074_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_075",
-      "cardType": "flippable",
-      "sideA": "Lo pegue en el chat hace un momento.",
-      "sideB": [
-        {
-          "text": "I pasted it in the chat a moment ago.",
-          "audioSrc": "public/data/audio/dummy/dummy_075_sideB_0.mp3"
-        },
-        {
-          "text": "I shared it in the chat a while ago.",
-          "audioSrc": "public/data/audio/dummy/dummy_075_sideB_1.mp3"
-        },
-        {
-          "text": "I just dropped it in the chat a few minutes ago.",
-          "audioSrc": "public/data/audio/dummy/dummy_075_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_076",
-      "cardType": "flippable",
-      "sideA": "No he trabajado aun en ese issue, he priorizado otros.",
-      "sideB": [
-        {
-          "text": "I haven't worked on that issue yet, I've prioritized others.",
-          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_0.mp3"
-        },
-        {
-          "text": "I haven't tackled that issue yet, I've prioritized different ones.",
-          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_1.mp3"
-        },
-        {
-          "text": "I haven't gotten to that issue yet, I've put priority on others.",
-          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_077",
-      "cardType": "flippable",
-      "sideA": "He priorizado otros issues.",
-      "sideB": [
-        {
-          "text": "I've been prioritizing other issues.",
-          "audioSrc": "public/data/audio/dummy/dummy_077_sideB_0.mp3"
-        },
-        {
-          "text": "I've put other issues first.",
-          "audioSrc": "public/data/audio/dummy/dummy_077_sideB_1.mp3"
-        },
-        {
-          "text": "I've given priority to other issues.",
-          "audioSrc": "public/data/audio/dummy/dummy_077_sideB_2.mp3"
-        },
-        {
-          "text": "I've prioritized other issues.",
-          "audioSrc": "public/data/audio/dummy/dummy_077_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_078",
-      "cardType": "flippable",
-      "sideA": "Mi preocupación es que podria tardar mas de lo esperado.",
-      "sideB": [
-        {
-          "text": "My concern is that it could take longer than expected.",
-          "audioSrc": "public/data/audio/dummy/dummy_078_sideB_0.mp3"
-        },
-        {
-          "text": "My worry is that it might take more time than anticipated.",
-          "audioSrc": "public/data/audio/dummy/dummy_078_sideB_1.mp3"
-        },
-        {
-          "text": "What concerns me is that it might take longer than expected.",
-          "audioSrc": "public/data/audio/dummy/dummy_078_sideB_2.mp3"
-        },
-        {
-          "text": "My concern is that they can be delayed longer than expected.",
-          "audioSrc": "public/data/audio/dummy/dummy_078_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_079",
-      "cardType": "flippable",
-      "sideA": "Mi preocupación es que no lo hagamos a tiempo.",
-      "sideB": [
-        {
-          "text": "My concern is that we won't make it on time.",
-          "audioSrc": "public/data/audio/dummy/dummy_079_sideB_0.mp3"
-        },
-        {
-          "text": "My worry is that we won't get it done in time.",
-          "audioSrc": "public/data/audio/dummy/dummy_079_sideB_1.mp3"
-        },
-        {
-          "text": "I'm concerned that we won't finish it on time.",
-          "audioSrc": "public/data/audio/dummy/dummy_079_sideB_2.mp3"
-        },
-        {
-          "text": "My concern is we don't do it on time.",
-          "audioSrc": "public/data/audio/dummy/dummy_079_sideB_3.mp3"
-        },
-        {
-          "text": "My concern is that we won't do it on time.",
-          "audioSrc": "public/data/audio/dummy/dummy_079_sideB_4.mp3"
-        }
-      ],
-      "note": "~My concern is to don't make it on time~ and ~My concern is don't make it on time~ are not valid because you cannot use the auxiliary 'don't' to negate an infinitive or as a noun clause. To express this, use a gerund phrase like [not making it] or a full clause like [that we won't make it]. ~My concern is to now make it on time~ is grammatically incorrect for expressing a negative; the correct infinitive negation is [not to make]."
-    },
-    {
-      "cardId": "dummy_080",
-      "cardType": "flippable",
-      "sideA": "Dame eso, pero bien hecho.",
-      "sideB": [
-        {
-          "text": "Give me that, but well done.",
-          "audioSrc": "public/data/audio/dummy/dummy_080_sideB_0.mp3"
-        },
-        {
-          "text": "Give it to me, but make sure it's done right.",
-          "audioSrc": "public/data/audio/dummy/dummy_080_sideB_1.mp3"
-        },
-        {
-          "text": "Give me that, but properly done.",
-          "audioSrc": "public/data/audio/dummy/dummy_080_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_081",
-      "cardType": "flippable",
-      "sideA": "Damelo pero bien hecho.",
-      "sideB": [
-        {
-          "text": "Give it to me, but well done.",
-          "audioSrc": "public/data/audio/dummy/dummy_081_sideB_0.mp3"
-        },
-        {
-          "text": "Pass it to me, but make sure it's high quality.",
-          "audioSrc": "public/data/audio/dummy/dummy_081_sideB_1.mp3"
-        },
-        {
-          "text": "Give me that, but do it right.",
-          "audioSrc": "public/data/audio/dummy/dummy_081_sideB_2.mp3"
-        },
-        {
-          "text": "Give me that, but well done.",
-          "audioSrc": "public/data/audio/dummy/dummy_081_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_082",
-      "cardType": "flippable",
-      "sideA": "Las stores son realmente claras en comparacion con Oracle.",
-      "sideB": [
-        {
-          "text": "The stores are really clear compared to Oracle.",
-          "audioSrc": "public/data/audio/dummy/dummy_082_sideB_0.mp3"
-        },
-        {
-          "text": "The stores are very straightforward compared to Oracle.",
-          "audioSrc": "public/data/audio/dummy/dummy_082_sideB_1.mp3"
-        },
-        {
-          "text": "The stores are much easier to understand than Oracle.",
-          "audioSrc": "public/data/audio/dummy/dummy_082_sideB_2.mp3"
-        }
-      ],
-      "note": "**[er:219]**\n\nIn this context, [compared to] functions as a prepositional phrase used to contrast two things. It originates from the past participle of the verb \"compare\", but here it simply acts as a fixed connector, similar to \"like\" or \"against\"."
-    },
-    {
-      "cardId": "dummy_083",
-      "cardType": "flippable",
-      "sideA": "Las Stores son mas bien claras en comparacion con EBS.",
-      "sideB": [
-        {
-          "text": "The stores are quite clear compared to EBS.",
-          "audioSrc": "public/data/audio/dummy/dummy_083_sideB_0.mp3"
-        },
-        {
-          "text": "The stores are relatively clear in comparison with EBS.",
-          "audioSrc": "public/data/audio/dummy/dummy_083_sideB_1.mp3"
-        },
-        {
-          "text": "The stores are fairly straightforward compared to EBS.",
-          "audioSrc": "public/data/audio/dummy/dummy_083_sideB_2.mp3"
-        }
-      ],
-      "note": "**[er:219]**\n\nIn this context, [compared to] acts as a prepositional phrase used to contrast two things. Although \"compared\" originates from the past participle of the verb \"compare\", in this structure it functions together with \"to\" as a fixed connector, similar to \"like\" or \"versus\"."
-    },
-    {
-      "cardId": "dummy_084",
-      "cardType": "flippable",
-      "sideA": "¿Está lloviendo? Si es así, lleva un paraguas.",
-      "sideB": [
-        {
-          "text": "Is it raining? If so, take an umbrella.",
-          "audioSrc": "public/data/audio/dummy/dummy_084_sideB_0.mp3"
-        },
-        {
-          "text": "Is it raining? If that's the case, bring an umbrella.",
-          "audioSrc": "public/data/audio/dummy/dummy_084_sideB_1.mp3"
-        },
-        {
-          "text": "Is it raining? If so, grab an umbrella.",
-          "audioSrc": "public/data/audio/dummy/dummy_084_sideB_2.mp3"
-        },
-        {
-          "text": "Is it raining? If so, carry an umbrella.",
-          "audioSrc": "public/data/audio/dummy/dummy_084_sideB_3.mp3"
-        },
-        {
-          "text": "Is it raining? If so, get an umbrella.",
-          "audioSrc": "public/data/audio/dummy/dummy_084_sideB_4.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_085",
-      "cardType": "flippable",
-      "sideA": "¿Viene él? De ser así, házmelo saber.",
-      "sideB": [
-        {
-          "text": "Is he coming? If so, let me know.",
-          "audioSrc": "public/data/audio/dummy/dummy_085_sideB_0.mp3"
-        },
-        {
-          "text": "Is he showing up? If so, let me know.",
-          "audioSrc": "public/data/audio/dummy/dummy_085_sideB_1.mp3"
-        },
-        {
-          "text": "Is he coming? If that's the case, let me know.",
-          "audioSrc": "public/data/audio/dummy/dummy_085_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_086",
-      "cardType": "flippable",
-      "sideA": "¿Funciona el enlace? En ese caso, haz clic en él.",
-      "sideB": [
-        {
-          "text": "Does the link work? If so, click it.",
-          "audioSrc": "public/data/audio/dummy/dummy_086_sideB_0.mp3"
-        },
-        {
-          "text": "Is the link working? If so, click on it.",
-          "audioSrc": "public/data/audio/dummy/dummy_086_sideB_1.mp3"
-        },
-        {
-          "text": "Does the link work? In that case, click it.",
-          "audioSrc": "public/data/audio/dummy/dummy_086_sideB_2.mp3"
-        }
-      ],
-      "note": "~Is it working the link? If so, click on it.~ is not valid because the pronoun 'it' and the noun 'the link' cannot be used together as the subject in this way. The correct question structure is [Is the link working?]."
-    },
-    {
-      "cardId": "dummy_087",
-      "cardType": "flippable",
-      "sideA": "¿Es bajo el precio? De ser así, cómpralo ahora.",
-      "sideB": [
-        {
-          "text": "Is the price low? If so, buy it now.",
-          "audioSrc": "public/data/audio/dummy/dummy_087_sideB_0.mp3"
-        },
-        {
-          "text": "Is it cheap? If so, buy it right now.",
-          "audioSrc": "public/data/audio/dummy/dummy_087_sideB_1.mp3"
-        },
-        {
-          "text": "Is the price low? In that case, purchase it now.",
-          "audioSrc": "public/data/audio/dummy/dummy_087_sideB_2.mp3"
-        }
-      ],
-      "note": "~Is it low the price? If so, buy it now.~ is not valid because the word order is incorrect for a question; the verb 'is' must be followed directly by the subject, as in [Is the price low?]."
-    },
-    {
-      "cardId": "dummy_088",
-      "cardType": "flippable",
-      "sideA": "¿Es esto aplicable para todas las provincias?",
-      "sideB": [
-        {
-          "text": "Is this applicable to all provinces?",
-          "audioSrc": "public/data/audio/dummy/dummy_088_sideB_0.mp3"
-        },
-        {
-          "text": "Does this apply to all provinces?",
-          "audioSrc": "public/data/audio/dummy/dummy_088_sideB_1.mp3"
-        },
-        {
-          "text": "Is this applicable across all provinces?",
-          "audioSrc": "public/data/audio/dummy/dummy_088_sideB_2.mp3"
-        },
-        {
-          "text": "Is this applicable for all provinces?",
-          "audioSrc": "public/data/audio/dummy/dummy_088_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
       "cardId": "dummy_089",
       "cardType": "flippable",
       "sideA": "…pero para el otro dejarlo como ya es.",
@@ -657,30 +101,6 @@
       "note": "~...but for the other one, let it as it is.~ is not valid because the correct verb for this fixed expression is 'leave', not 'let'. You should say [leave it as it is]."
     },
     {
-      "cardId": "dummy_090",
-      "cardType": "flippable",
-      "sideA": "Cuando la imagen de la red no carga, el banner usa el fallback.",
-      "sideB": [
-        {
-          "text": "When the network image doesn't load, the banner uses the fallback.",
-          "audioSrc": "public/data/audio/dummy/dummy_090_sideB_0.mp3"
-        },
-        {
-          "text": "If the network image fails to load, the banner falls back to the default.",
-          "audioSrc": "public/data/audio/dummy/dummy_090_sideB_1.mp3"
-        },
-        {
-          "text": "When the network image doesn't load, the banner relies on the fallback.",
-          "audioSrc": "public/data/audio/dummy/dummy_090_sideB_2.mp3"
-        },
-        {
-          "text": "When the network image is not loading, the banner uses the fallback.",
-          "audioSrc": "public/data/audio/dummy/dummy_090_sideB_3.mp3"
-        }
-      ],
-      "note": "~When the img of the network doesn't load, the banner uses the fallback.~ is not valid because 'img of the network' is an unnatural translation; use [network image] or [image from the network]."
-    },
-    {
       "cardId": "dummy_091",
       "cardType": "flippable",
       "sideA": "El fallback del banner es una imagen local guardada.",
@@ -704,6 +124,10 @@
         {
           "text": "The fallback of the banner is a locally saved image.",
           "audioSrc": "public/data/audio/dummy/dummy_091_sideB_4.mp3"
+        },
+        {
+          "text": "The banner fallback is a locally stored image.",
+          "audioSrc": "public/data/audio/dummy/dummy_091_sideB_5.mp3"
         }
       ],
       "note": null
@@ -711,51 +135,39 @@
     {
       "cardId": "dummy_092",
       "cardType": "flippable",
-      "sideA": "El banner carga desde la red, pero tiene un fallback como respaldo.",
+      "sideA": "Me encargué de cambiar el link y poner una imagen en el código como fallback.",
       "sideB": [
         {
-          "text": "The banner loads from the network, but has a fallback as a backup.",
+          "text": "I took care of changing the link and putting an image in the code as a fallback.",
           "audioSrc": "public/data/audio/dummy/dummy_092_sideB_0.mp3"
         },
         {
-          "text": "The banner loads from the network but features a fallback backup.",
+          "text": "I handled changing the link and adding an image in the code as a fallback.",
           "audioSrc": "public/data/audio/dummy/dummy_092_sideB_1.mp3"
         },
         {
-          "text": "The banner is loaded from the network, but it has a fallback just in case.",
+          "text": "I made sure to change the link and place an image in the code as a fallback.",
           "audioSrc": "public/data/audio/dummy/dummy_092_sideB_2.mp3"
-        },
-        {
-          "text": "The banner loads from the internet, but has a fallback as a backup.",
-          "audioSrc": "public/data/audio/dummy/dummy_092_sideB_3.mp3"
         }
       ],
-      "note": "~The banner loads from the red, but has a fallback as a backup.~ is not valid because 'red' is a Spanish word; in English, use [network] or [internet]."
+      "note": "**[pv:173]**\n\n~I took care to change the link and putting an image in the code as a fallback~ is incorrect because it mixes an infinitive ('to change') with a gerund ('putting'). The standard structure uses [take care of] followed by gerunds: [changing] and [putting]."
     },
     {
       "cardId": "dummy_093",
       "cardType": "flippable",
-      "sideA": "Tu puedes personalizar claude code como gustes.",
+      "sideA": "Déjame pegarlo en el chat.",
       "sideB": [
         {
-          "text": "You can customize Claude Code however you like.",
+          "text": "Let me paste it in the chat.",
           "audioSrc": "public/data/audio/dummy/dummy_093_sideB_0.mp3"
         },
         {
-          "text": "You can customize Claude Code as you please.",
+          "text": "Let me drop it in the chat.",
           "audioSrc": "public/data/audio/dummy/dummy_093_sideB_1.mp3"
         },
         {
-          "text": "You are able to customize Claude Code however you want.",
+          "text": "Give me a second to paste it in the chat.",
           "audioSrc": "public/data/audio/dummy/dummy_093_sideB_2.mp3"
-        },
-        {
-          "text": "You can customize Claude Code as you like.",
-          "audioSrc": "public/data/audio/dummy/dummy_093_sideB_3.mp3"
-        },
-        {
-          "text": "You can personalize Claude Code however you like.",
-          "audioSrc": "public/data/audio/dummy/dummy_093_sideB_4.mp3"
         }
       ],
       "note": null
@@ -763,19 +175,23 @@
     {
       "cardId": "dummy_094",
       "cardType": "flippable",
-      "sideA": "La personalizacion es opcional en este caso.",
+      "sideA": "Este es el código que está siendo usado actualmente.",
       "sideB": [
         {
-          "text": "Customization is optional in this case.",
+          "text": "This is the code currently being used.",
           "audioSrc": "public/data/audio/dummy/dummy_094_sideB_0.mp3"
         },
         {
-          "text": "The customization is optional in this scenario.",
+          "text": "This is the code that's currently in use.",
           "audioSrc": "public/data/audio/dummy/dummy_094_sideB_1.mp3"
         },
         {
-          "text": "Customizing it is optional in this case.",
+          "text": "This is the code we are currently using.",
           "audioSrc": "public/data/audio/dummy/dummy_094_sideB_2.mp3"
+        },
+        {
+          "text": "This is the code that is being used currently.",
+          "audioSrc": "public/data/audio/dummy/dummy_094_sideB_3.mp3"
         }
       ],
       "note": null
@@ -783,26 +199,1078 @@
     {
       "cardId": "dummy_095",
       "cardType": "flippable",
-      "sideA": "Estoy afuera de la vpn, ¿me conecto?",
+      "sideA": "Sorry, no te estoy siguiendo / entendiendo.",
       "sideB": [
         {
-          "text": "I'm off the VPN, should I connect?",
+          "text": "Sorry, I'm not following you.",
           "audioSrc": "public/data/audio/dummy/dummy_095_sideB_0.mp3"
         },
         {
-          "text": "I am disconnected from the VPN, should I log in?",
+          "text": "Sorry, I don't quite follow.",
           "audioSrc": "public/data/audio/dummy/dummy_095_sideB_1.mp3"
         },
         {
-          "text": "I'm not on the VPN, do you want me to connect?",
+          "text": "Sorry, I'm not quite catching what you mean.",
           "audioSrc": "public/data/audio/dummy/dummy_095_sideB_2.mp3"
-        },
-        {
-          "text": "I'm off the VPN, do I connect?",
-          "audioSrc": "public/data/audio/dummy/dummy_095_sideB_3.mp3"
         }
       ],
-      "note": "**[pv:199]**"
+      "note": null
+    },
+    {
+      "cardId": "dummy_096",
+      "cardType": "flippable",
+      "sideA": "Lo que sucede es que no estamos sincronizados.",
+      "sideB": [
+        {
+          "text": "The thing is, we are not in sync.",
+          "audioSrc": "public/data/audio/dummy/dummy_096_sideB_0.mp3"
+        },
+        {
+          "text": "What's happening is that we aren't synchronized.",
+          "audioSrc": "public/data/audio/dummy/dummy_096_sideB_1.mp3"
+        },
+        {
+          "text": "The issue is that we are out of sync.",
+          "audioSrc": "public/data/audio/dummy/dummy_096_sideB_2.mp3"
+        },
+        {
+          "text": "What happens is that we are not in sync.",
+          "audioSrc": "public/data/audio/dummy/dummy_096_sideB_3.mp3"
+        },
+        {
+          "text": "What happens is that we are not synchronized.",
+          "audioSrc": "public/data/audio/dummy/dummy_096_sideB_4.mp3"
+        }
+      ],
+      "note": "~What happens is that we are not sync~ is incorrect because 'sync' in this context is a noun or verb, not an adjective. You must use the prepositional phrase [in sync] or the adjective [synchronized]."
+    },
+    {
+      "cardId": "dummy_097",
+      "cardType": "flippable",
+      "sideA": "Blue no está sincronizado del todo con soporte.",
+      "sideB": [
+        {
+          "text": "Blue is not fully in sync with support.",
+          "audioSrc": "public/data/audio/dummy/dummy_097_sideB_0.mp3"
+        },
+        {
+          "text": "Blue isn't completely synchronized with support.",
+          "audioSrc": "public/data/audio/dummy/dummy_097_sideB_1.mp3"
+        },
+        {
+          "text": "Blue is not entirely synced up with support.",
+          "audioSrc": "public/data/audio/dummy/dummy_097_sideB_2.mp3"
+        },
+        {
+          "text": "Blue is not fully synchronized with support.",
+          "audioSrc": "public/data/audio/dummy/dummy_097_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_098",
+      "cardType": "flippable",
+      "sideA": "¿Funciona el enlace? Si no, te lo envío de nuevo.",
+      "sideB": [
+        {
+          "text": "Is the link working? If not, I'll send it to you again.",
+          "audioSrc": "public/data/audio/dummy/dummy_098_sideB_0.mp3"
+        },
+        {
+          "text": "Does the link work? If it doesn't, I'll resend it.",
+          "audioSrc": "public/data/audio/dummy/dummy_098_sideB_1.mp3"
+        },
+        {
+          "text": "Is the link working? If not, I can send it again.",
+          "audioSrc": "public/data/audio/dummy/dummy_098_sideB_2.mp3"
+        }
+      ],
+      "note": "~I'll send you again~ is incorrect because it literally implies you are sending the person somewhere. You must include the object pronoun [it] referring to the link, as in [I'll send it to you again]."
+    },
+    {
+      "cardId": "dummy_099",
+      "cardType": "flippable",
+      "sideA": "¿Está bien escrito esto?",
+      "sideB": [
+        {
+          "text": "Is this written correctly?",
+          "audioSrc": "public/data/audio/dummy/dummy_099_sideB_0.mp3"
+        },
+        {
+          "text": "Is this spelled right?",
+          "audioSrc": "public/data/audio/dummy/dummy_099_sideB_1.mp3"
+        },
+        {
+          "text": "Did I write this correctly?",
+          "audioSrc": "public/data/audio/dummy/dummy_099_sideB_2.mp3"
+        },
+        {
+          "text": "Is this well written?",
+          "audioSrc": "public/data/audio/dummy/dummy_099_sideB_3.mp3"
+        },
+        {
+          "text": "Is this written well?",
+          "audioSrc": "public/data/audio/dummy/dummy_099_sideB_4.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_100",
+      "cardType": "flippable",
+      "sideA": "Podríamos delimitar los alcances y limitaciones.",
+      "sideB": [
+        {
+          "text": "We could define the scope and limitations.",
+          "audioSrc": "public/data/audio/dummy/dummy_100_sideB_0.mp3"
+        },
+        {
+          "text": "We could outline the scope and boundaries.",
+          "audioSrc": "public/data/audio/dummy/dummy_100_sideB_1.mp3"
+        },
+        {
+          "text": "We could narrow down the scope and limitations.",
+          "audioSrc": "public/data/audio/dummy/dummy_100_sideB_2.mp3"
+        },
+        {
+          "text": "We could delimit the scope and limitations.",
+          "audioSrc": "public/data/audio/dummy/dummy_100_sideB_3.mp3"
+        }
+      ],
+      "note": "\n\n~We could define the scopes and limitations~ is incorrect. In English, [scope] is generally uncountable when referring to the extent of a project or subject. It remains singular even when paired with plural words like [limitations]."
+    },
+    {
+      "cardId": "dummy_101",
+      "cardType": "flippable",
+      "sideA": "El fabricante entregó el producto hoy.",
+      "sideB": [
+        {
+          "text": "The manufacturer delivered the product today.",
+          "audioSrc": "public/data/audio/dummy/dummy_101_sideB_0.mp3"
+        },
+        {
+          "text": "The product was delivered by the manufacturer today.",
+          "audioSrc": "public/data/audio/dummy/dummy_101_sideB_1.mp3"
+        },
+        {
+          "text": "The maker dropped off the product today.",
+          "audioSrc": "public/data/audio/dummy/dummy_101_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_102",
+      "cardType": "flippable",
+      "sideA": "El maestro cervecero trabaja con pasión.",
+      "sideB": [
+        {
+          "text": "The master brewer works with passion.",
+          "audioSrc": "public/data/audio/dummy/dummy_102_sideB_0.mp3"
+        },
+        {
+          "text": "The brewmaster works passionately.",
+          "audioSrc": "public/data/audio/dummy/dummy_102_sideB_1.mp3"
+        },
+        {
+          "text": "The brewer works with great passion.",
+          "audioSrc": "public/data/audio/dummy/dummy_102_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_103",
+      "cardType": "flippable",
+      "sideA": "Este fabricante es muy reconocido en el país.",
+      "sideB": [
+        {
+          "text": "This manufacturer is very well-known in the country.",
+          "audioSrc": "public/data/audio/dummy/dummy_103_sideB_0.mp3"
+        },
+        {
+          "text": "This maker is highly recognized across the country.",
+          "audioSrc": "public/data/audio/dummy/dummy_103_sideB_1.mp3"
+        },
+        {
+          "text": "This manufacturer is widely recognized in the country.",
+          "audioSrc": "public/data/audio/dummy/dummy_103_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_104",
+      "cardType": "flippable",
+      "sideA": "Nuestro cervecero favorito lanzó una nueva bebida.",
+      "sideB": [
+        {
+          "text": "Our favorite brewer launched a new drink.",
+          "audioSrc": "public/data/audio/dummy/dummy_104_sideB_0.mp3"
+        },
+        {
+          "text": "Our favorite brewmaster released a new beverage.",
+          "audioSrc": "public/data/audio/dummy/dummy_104_sideB_1.mp3"
+        },
+        {
+          "text": "A new drink was launched by our favorite brewer.",
+          "audioSrc": "public/data/audio/dummy/dummy_104_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_105",
+      "cardType": "flippable",
+      "sideA": "El fabricante cambió el diseño de la caja.",
+      "sideB": [
+        {
+          "text": "The manufacturer changed the box design.",
+          "audioSrc": "public/data/audio/dummy/dummy_105_sideB_0.mp3"
+        },
+        {
+          "text": "The maker altered the design of the box.",
+          "audioSrc": "public/data/audio/dummy/dummy_105_sideB_1.mp3"
+        },
+        {
+          "text": "The manufacturer updated the packaging design.",
+          "audioSrc": "public/data/audio/dummy/dummy_105_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_106",
+      "cardType": "flippable",
+      "sideA": "La empresa cervecera es de Canadá.",
+      "sideB": [
+        {
+          "text": "The brewery company is from Canada.",
+          "audioSrc": "public/data/audio/dummy/dummy_106_sideB_0.mp3"
+        },
+        {
+          "text": "The brewing company is Canadian.",
+          "audioSrc": "public/data/audio/dummy/dummy_106_sideB_1.mp3"
+        },
+        {
+          "text": "The brewery is based in Canada.",
+          "audioSrc": "public/data/audio/dummy/dummy_106_sideB_2.mp3"
+        }
+      ],
+      "note": "~The brewer company is from Canada~ is unnatural. [Brewer] refers to the person or the standalone business entity, but when acting as an adjective modifying \"company,\" you should use [brewing] (e.g., [The brewing company]). Alternatively, just use the noun [brewery]."
+    },
+    {
+      "cardId": "dummy_107",
+      "cardType": "flippable",
+      "sideA": "La cervecería es el lugar o la instalación donde se produce la cerveza.",
+      "sideB": [
+        {
+          "text": "The brewery is the place or facility where beer is produced.",
+          "audioSrc": "public/data/audio/dummy/dummy_107_sideB_0.mp3"
+        },
+        {
+          "text": "The brewery is the facility where beer is made.",
+          "audioSrc": "public/data/audio/dummy/dummy_107_sideB_1.mp3"
+        },
+        {
+          "text": "A brewery is the location or facility dedicated to producing beer.",
+          "audioSrc": "public/data/audio/dummy/dummy_107_sideB_2.mp3"
+        }
+      ],
+      "note": "~The brewer is the place or facility where beer is produced~ is incorrect. A [brewer] is the person or business that makes the beer, while the [brewery] is the physical location or facility where the beer is brewed.\n\n~The brewery is the place or installation where beer is produced~ uses [installation], which is an unnatural false friend in this context; [facility] is the correct term for a commercial building. Also, ~The brewery is the place or facility where it is produced the beer~ has incorrect word order. In English, the subject must come before the passive verb, so it must be [where the beer is produced]."
+    },
+    {
+      "cardId": "dummy_108",
+      "cardType": "flippable",
+      "sideA": "Un cervecero es la persona que elabora la cerveza o la empresa que actúa como fabricante.",
+      "sideB": [
+        {
+          "text": "A brewer is the person who makes the beer or the company that acts as the manufacturer.",
+          "audioSrc": "public/data/audio/dummy/dummy_108_sideB_0.mp3"
+        },
+        {
+          "text": "A brewer refers to the person brewing the beer or the manufacturing company.",
+          "audioSrc": "public/data/audio/dummy/dummy_108_sideB_1.mp3"
+        },
+        {
+          "text": "A brewer is the individual who brews the beer or the company acting as the manufacturer.",
+          "audioSrc": "public/data/audio/dummy/dummy_108_sideB_2.mp3"
+        },
+        {
+          "text": "A brewer is the person who makes the beer or the company that acts as a maker.",
+          "audioSrc": "public/data/audio/dummy/dummy_108_sideB_3.mp3"
+        }
+      ],
+      "note": "**[er:220]**"
+    },
+    {
+      "cardId": "dummy_109",
+      "cardType": "flippable",
+      "sideA": "El SKU es el item number que vemos en la pagina web o mobile app.",
+      "sideB": [
+        {
+          "text": "The SKU is the item number we see on the website or mobile app.",
+          "audioSrc": "public/data/audio/dummy/dummy_109_sideB_0.mp3"
+        },
+        {
+          "text": "The SKU corresponds to the item number displayed on the website or mobile app.",
+          "audioSrc": "public/data/audio/dummy/dummy_109_sideB_1.mp3"
+        },
+        {
+          "text": "The SKU is the item number that appears on the website or mobile app.",
+          "audioSrc": "public/data/audio/dummy/dummy_109_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_110",
+      "cardType": "flippable",
+      "sideA": "Déjame revisar el horario en el calendario.",
+      "sideB": [
+        {
+          "text": "Let me check the schedule on the calendar.",
+          "audioSrc": "public/data/audio/dummy/dummy_110_sideB_0.mp3"
+        },
+        {
+          "text": "Let me review the schedule in the calendar.",
+          "audioSrc": "public/data/audio/dummy/dummy_110_sideB_1.mp3"
+        },
+        {
+          "text": "Let me take a look at the calendar for the schedule.",
+          "audioSrc": "public/data/audio/dummy/dummy_110_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_111",
+      "cardType": "flippable",
+      "sideA": "¿Cómo va el desarrollo de la página estática?",
+      "sideB": [
+        {
+          "text": "How is the static page coming along?",
+          "audioSrc": "public/data/audio/dummy/dummy_111_sideB_0.mp3"
+        },
+        {
+          "text": "How is the development of the static page going?",
+          "audioSrc": "public/data/audio/dummy/dummy_111_sideB_1.mp3"
+        },
+        {
+          "text": "How is the progress on the static page?",
+          "audioSrc": "public/data/audio/dummy/dummy_111_sideB_2.mp3"
+        },
+        {
+          "text": "How is the static page going?",
+          "audioSrc": "public/data/audio/dummy/dummy_111_sideB_3.mp3"
+        },
+        {
+          "text": "How is the static page development going?",
+          "audioSrc": "public/data/audio/dummy/dummy_111_sideB_4.mp3"
+        }
+      ],
+      "note": "**[pv:201]**\n\n~How is going the development of the static page?~ has incorrect word order. In questions, the subject must come before the continuous verb: [How is the development... going?].\n\n~How is the development static page going?~ has incorrect word order. When using a compound noun, the broader category goes last: [static page development]."
+    },
+    {
+      "cardId": "dummy_112",
+      "cardType": "flippable",
+      "sideA": "¿Cómo va eso?",
+      "sideB": [
+        {
+          "text": "How is that going?",
+          "audioSrc": "public/data/audio/dummy/dummy_112_sideB_0.mp3"
+        },
+        {
+          "text": "How is that coming along?",
+          "audioSrc": "public/data/audio/dummy/dummy_112_sideB_1.mp3"
+        },
+        {
+          "text": "How are things going with that?",
+          "audioSrc": "public/data/audio/dummy/dummy_112_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_113",
+      "cardType": "flippable",
+      "sideA": "En el catálogo se muestran sub secciones.",
+      "sideB": [
+        {
+          "text": "Sub-sections are shown in the catalog.",
+          "audioSrc": "public/data/audio/dummy/dummy_113_sideB_0.mp3"
+        },
+        {
+          "text": "The catalog displays sub-sections.",
+          "audioSrc": "public/data/audio/dummy/dummy_113_sideB_1.mp3"
+        },
+        {
+          "text": "There are sub-sections shown in the catalog.",
+          "audioSrc": "public/data/audio/dummy/dummy_113_sideB_2.mp3"
+        },
+        {
+          "text": "Sub-sections are displayed in the catalog.",
+          "audioSrc": "public/data/audio/dummy/dummy_113_sideB_3.mp3"
+        }
+      ],
+      "note": "~In the catalog are shown sub-sections~ is not a natural word order in English. You must either use the passive voice properly ([Sub-sections are shown in the catalog]) or use a dummy subject ([There are sub-sections shown in the catalog])."
+    },
+    {
+      "cardId": "dummy_114",
+      "cardType": "flippable",
+      "sideA": "En la lupa se muestra el fabricante del producto.",
+      "sideB": [
+        {
+          "text": "The product manufacturer is shown in the search bar.",
+          "audioSrc": "public/data/audio/dummy/dummy_114_sideB_0.mp3"
+        },
+        {
+          "text": "The product manufacturer is shown using the magnifying glass.",
+          "audioSrc": "public/data/audio/dummy/dummy_114_sideB_1.mp3"
+        },
+        {
+          "text": "The magnifying glass displays the product's manufacturer.",
+          "audioSrc": "public/data/audio/dummy/dummy_114_sideB_2.mp3"
+        },
+        {
+          "text": "The manufacturer of the product is displayed in the magnifying glass.",
+          "audioSrc": "public/data/audio/dummy/dummy_114_sideB_3.mp3"
+        },
+        {
+          "text": "The product maker is shown in the search bar.",
+          "audioSrc": "public/data/audio/dummy/dummy_114_sideB_4.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_115",
+      "cardType": "flippable",
+      "sideA": "Soy de Chile en Latinoamérica.",
+      "sideB": [
+        {
+          "text": "I am from Chile in Latin America.",
+          "audioSrc": "public/data/audio/dummy/dummy_115_sideB_0.mp3"
+        },
+        {
+          "text": "I'm from Chile, in Latin America.",
+          "audioSrc": "public/data/audio/dummy/dummy_115_sideB_1.mp3"
+        },
+        {
+          "text": "I come from Chile, Latin America.",
+          "audioSrc": "public/data/audio/dummy/dummy_115_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_116",
+      "cardType": "flippable",
+      "sideA": "Está obsoleta esa dependencia, por eso la cambiamos.",
+      "sideB": [
+        {
+          "text": "That dependency is deprecated, which is why we changed it.",
+          "audioSrc": "public/data/audio/dummy/dummy_116_sideB_0.mp3"
+        },
+        {
+          "text": "That dependency is obsolete, so we replaced it.",
+          "audioSrc": "public/data/audio/dummy/dummy_116_sideB_1.mp3"
+        },
+        {
+          "text": "That dependency is outdated, that's why we changed it.",
+          "audioSrc": "public/data/audio/dummy/dummy_116_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_117",
+      "cardType": "flippable",
+      "sideA": "Se necesita establecer ese atributo o parámetro en el workflow.",
+      "sideB": [
+        {
+          "text": "That attribute or parameter needs to be set in the workflow.",
+          "audioSrc": "public/data/audio/dummy/dummy_117_sideB_0.mp3"
+        },
+        {
+          "text": "It is necessary to set that attribute or parameter in the workflow.",
+          "audioSrc": "public/data/audio/dummy/dummy_117_sideB_1.mp3"
+        },
+        {
+          "text": "You need to establish that attribute or parameter in the workflow.",
+          "audioSrc": "public/data/audio/dummy/dummy_117_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_118",
+      "cardType": "flippable",
+      "sideA": "¿Alguna novedad sobre cómo proceder con el #71?",
+      "sideB": [
+        {
+          "text": "Any updates on how to proceed with #71?",
+          "audioSrc": "public/data/audio/dummy/dummy_118_sideB_0.mp3"
+        },
+        {
+          "text": "Do you have any updates on how to proceed with #71?",
+          "audioSrc": "public/data/audio/dummy/dummy_118_sideB_1.mp3"
+        },
+        {
+          "text": "Are there any updates on how to move forward with #71?",
+          "audioSrc": "public/data/audio/dummy/dummy_118_sideB_2.mp3"
+        },
+        {
+          "text": "Any news on how to proceed with #71?",
+          "audioSrc": "public/data/audio/dummy/dummy_118_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_119",
+      "cardType": "flippable",
+      "sideA": "Necesitamos un dropdown con un multiplicador de 1.",
+      "sideB": [
+        {
+          "text": "We need a dropdown with a multiplier of 1.",
+          "audioSrc": "public/data/audio/dummy/dummy_119_sideB_0.mp3"
+        },
+        {
+          "text": "We require a dropdown menu with a multiplier of 1.",
+          "audioSrc": "public/data/audio/dummy/dummy_119_sideB_1.mp3"
+        },
+        {
+          "text": "We need a select dropdown with a multiplier of 1.",
+          "audioSrc": "public/data/audio/dummy/dummy_119_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_120",
+      "cardType": "flippable",
+      "sideA": "Soy el que hace que las cosas sucedan.",
+      "sideB": [
+        {
+          "text": "I am the one who gets things done.",
+          "audioSrc": "public/data/audio/dummy/dummy_120_sideB_0.mp3"
+        },
+        {
+          "text": "I'm the one who makes things happen.",
+          "audioSrc": "public/data/audio/dummy/dummy_120_sideB_1.mp3"
+        },
+        {
+          "text": "I am the person who gets things done.",
+          "audioSrc": "public/data/audio/dummy/dummy_120_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_121",
+      "cardType": "flippable",
+      "sideA": "Se te escucha entrecortado (hablando en una reunión).",
+      "sideB": [
+        {
+          "text": "You are breaking up.",
+          "audioSrc": "public/data/audio/dummy/dummy_121_sideB_0.mp3"
+        },
+        {
+          "text": "Your audio is cutting out.",
+          "audioSrc": "public/data/audio/dummy/dummy_121_sideB_1.mp3"
+        },
+        {
+          "text": "You are cutting out a bit.",
+          "audioSrc": "public/data/audio/dummy/dummy_121_sideB_2.mp3"
+        },
+        {
+          "text": "Your voice is cutting out.",
+          "audioSrc": "public/data/audio/dummy/dummy_121_sideB_3.mp3"
+        }
+      ],
+      "note": "**[pv:11]**\n\n**[pv:44]**\n\n**[pv:200]**\n\n~You are cutting off~ and ~You sound a bit cut off~ are not natural for a choppy connection; [cut off] implies the call was completely disconnected or someone was interrupted. Also, ~You sound a bit cut out~ is incorrect because we use the active continuous form [cutting out] to describe a poor signal (e.g., [You are cutting out])."
+    },
+    {
+      "cardId": "dummy_122",
+      "cardType": "flippable",
+      "sideA": "Suele cashear las búsquedas y es más rápida.",
+      "sideB": [
+        {
+          "text": "It usually caches the searches and is faster.",
+          "audioSrc": "public/data/audio/dummy/dummy_122_sideB_0.mp3"
+        },
+        {
+          "text": "It tends to cache queries, making it faster.",
+          "audioSrc": "public/data/audio/dummy/dummy_122_sideB_1.mp3"
+        },
+        {
+          "text": "It often caches the searches and runs quicker.",
+          "audioSrc": "public/data/audio/dummy/dummy_122_sideB_2.mp3"
+        },
+        {
+          "text": "It tends to cache queries, and it's faster.",
+          "audioSrc": "public/data/audio/dummy/dummy_122_sideB_3.mp3"
+        },
+        {
+          "text": "It tends to cache the queries, and it is faster.",
+          "audioSrc": "public/data/audio/dummy/dummy_122_sideB_4.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_123",
+      "cardType": "flippable",
+      "sideA": "Tiende a hacerlo más rápido en producción.",
+      "sideB": [
+        {
+          "text": "It tends to do it faster in production.",
+          "audioSrc": "public/data/audio/dummy/dummy_123_sideB_0.mp3"
+        },
+        {
+          "text": "It tends to process it faster in production.",
+          "audioSrc": "public/data/audio/dummy/dummy_123_sideB_1.mp3"
+        },
+        {
+          "text": "It usually runs faster in production.",
+          "audioSrc": "public/data/audio/dummy/dummy_123_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_124",
+      "cardType": "flippable",
+      "sideA": "Solo faltan 2 fixes.",
+      "sideB": [
+        {
+          "text": "There are only 2 fixes left.",
+          "audioSrc": "public/data/audio/dummy/dummy_124_sideB_0.mp3"
+        },
+        {
+          "text": "We only have 2 fixes to go.",
+          "audioSrc": "public/data/audio/dummy/dummy_124_sideB_1.mp3"
+        },
+        {
+          "text": "Only 2 fixes remain.",
+          "audioSrc": "public/data/audio/dummy/dummy_124_sideB_2.mp3"
+        },
+        {
+          "text": "We only have 2 fixes left.",
+          "audioSrc": "public/data/audio/dummy/dummy_124_sideB_3.mp3"
+        }
+      ],
+      "note": "**[er:108]**\n\n~We only lack 2 fixes~ is unnatural. The verb [lack] means a deficiency or absence of something essential (e.g., [We lack resources]), not a countdown of remaining tasks. Use [have... left]."
+    },
+    {
+      "cardId": "dummy_125",
+      "cardType": "flippable",
+      "sideA": "Solo nos faltan 3 fixes para terminar.",
+      "sideB": [
+        {
+          "text": "We only have 3 fixes left to finish.",
+          "audioSrc": "public/data/audio/dummy/dummy_125_sideB_0.mp3"
+        },
+        {
+          "text": "There are only 3 fixes left before we are done.",
+          "audioSrc": "public/data/audio/dummy/dummy_125_sideB_1.mp3"
+        },
+        {
+          "text": "We are just 3 fixes away from being done.",
+          "audioSrc": "public/data/audio/dummy/dummy_125_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:108]**\n\n~We are just 3 fixes away to finish~ is incorrect. The phrase 'away from' must be followed by a noun or a gerund (-ing form), not an infinitive. It should be [away from finishing]."
+    },
+    {
+      "cardId": "dummy_126",
+      "cardType": "flippable",
+      "sideA": "Necesito la guía de Sean para este fix.",
+      "sideB": [
+        {
+          "text": "I need Sean's guidance for this fix.",
+          "audioSrc": "public/data/audio/dummy/dummy_126_sideB_0.mp3"
+        },
+        {
+          "text": "I need Sean's input on this fix.",
+          "audioSrc": "public/data/audio/dummy/dummy_126_sideB_1.mp3"
+        },
+        {
+          "text": "I need Sean to walk me through this fix.",
+          "audioSrc": "public/data/audio/dummy/dummy_126_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:175]**\n\n~I need the guidance of Sean for this fix~ is grammatically correct but unnatural. For human possession, you must use the Saxon Genitive ([Sean's guidance]). Use 'of' primarily for objects or abstract concepts."
+    },
+    {
+      "cardId": "dummy_127",
+      "cardType": "flippable",
+      "sideA": "Necesito la guía de Sean para resolver este problema.",
+      "sideB": [
+        {
+          "text": "I need Sean's guidance to solve this problem.",
+          "audioSrc": "public/data/audio/dummy/dummy_127_sideB_0.mp3"
+        },
+        {
+          "text": "I need Sean's help to work through this problem.",
+          "audioSrc": "public/data/audio/dummy/dummy_127_sideB_1.mp3"
+        },
+        {
+          "text": "I need Sean to guide me in solving this problem.",
+          "audioSrc": "public/data/audio/dummy/dummy_127_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:175]**\n\n~I need the guidance of Sean to solve this problem~ is unnatural. In English, human possession is expressed with an apostrophe 's. You should say [Sean's guidance]."
+    },
+    {
+      "cardId": "dummy_128",
+      "cardType": "flippable",
+      "sideA": "Descomenta esas lineas, y luego comenta las otras de aca.",
+      "sideB": [
+        {
+          "text": "Uncomment those lines, and then comment out the others here.",
+          "audioSrc": "public/data/audio/dummy/dummy_128_sideB_0.mp3"
+        },
+        {
+          "text": "Go ahead and uncomment those lines, then comment out the others.",
+          "audioSrc": "public/data/audio/dummy/dummy_128_sideB_1.mp3"
+        },
+        {
+          "text": "Uncomment those lines, and then comment the other ones out.",
+          "audioSrc": "public/data/audio/dummy/dummy_128_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:221]**\n\n~Uncomment those lines, and then comment the others here~ is incorrect. You must use the phrasal verb [comment out] to refer to disabling code, not just [comment]."
+    },
+    {
+      "cardId": "dummy_129",
+      "cardType": "flippable",
+      "sideA": "Bueno, hasta ahora siempre espero el visto bueno.",
+      "sideB": [
+        {
+          "text": "Well, up until now I always wait for the green light.",
+          "audioSrc": "public/data/audio/dummy/dummy_129_sideB_0.mp3"
+        },
+        {
+          "text": "Well, up to now I have always waited for approval.",
+          "audioSrc": "public/data/audio/dummy/dummy_129_sideB_1.mp3"
+        },
+        {
+          "text": "Well, so far I have always waited for the go-ahead.",
+          "audioSrc": "public/data/audio/dummy/dummy_129_sideB_2.mp3"
+        },
+        {
+          "text": "Well, so far I always wait for the green light.",
+          "audioSrc": "public/data/audio/dummy/dummy_129_sideB_3.mp3"
+        },
+        {
+          "text": "Well, until now I always wait for the green light.",
+          "audioSrc": "public/data/audio/dummy/dummy_129_sideB_4.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_130",
+      "cardType": "flippable",
+      "sideA": "Es necesario seguir el procedimiento correcto.",
+      "sideB": [
+        {
+          "text": "It is necessary to follow the proper procedure.",
+          "audioSrc": "public/data/audio/dummy/dummy_130_sideB_0.mp3"
+        },
+        {
+          "text": "We need to follow the correct procedure.",
+          "audioSrc": "public/data/audio/dummy/dummy_130_sideB_1.mp3"
+        },
+        {
+          "text": "You must follow the correct procedure.",
+          "audioSrc": "public/data/audio/dummy/dummy_130_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_131",
+      "cardType": "flippable",
+      "sideA": "Asegurate de que los datos se guarden correctamente.",
+      "sideB": [
+        {
+          "text": "Ensure that the data is saved properly.",
+          "audioSrc": "public/data/audio/dummy/dummy_131_sideB_0.mp3"
+        },
+        {
+          "text": "Make sure the data is saved correctly.",
+          "audioSrc": "public/data/audio/dummy/dummy_131_sideB_1.mp3"
+        },
+        {
+          "text": "Make sure that the data gets saved correctly.",
+          "audioSrc": "public/data/audio/dummy/dummy_131_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:107]**"
+    },
+    {
+      "cardId": "dummy_132",
+      "cardType": "flippable",
+      "sideA": "Como France lo solicito.",
+      "sideB": [
+        {
+          "text": "As France requested.",
+          "audioSrc": "public/data/audio/dummy/dummy_132_sideB_0.mp3"
+        },
+        {
+          "text": "Just as France requested.",
+          "audioSrc": "public/data/audio/dummy/dummy_132_sideB_1.mp3"
+        },
+        {
+          "text": "As per France's request.",
+          "audioSrc": "public/data/audio/dummy/dummy_132_sideB_2.mp3"
+        },
+        {
+          "text": "As France asked.",
+          "audioSrc": "public/data/audio/dummy/dummy_132_sideB_3.mp3"
+        }
+      ],
+      "note": "~As France asked for~ is unnatural here. The verb [ask] means to request an action, which fits perfectly ([As France asked]). [Ask for] requires an object (e.g., [As France asked for it]), but in this structure, just [ask] is preferred."
+    },
+    {
+      "cardId": "dummy_133",
+      "cardType": "flippable",
+      "sideA": "Nosotros notamos este error hace unos dias.",
+      "sideB": [
+        {
+          "text": "We noticed this error a few days ago.",
+          "audioSrc": "public/data/audio/dummy/dummy_133_sideB_0.mp3"
+        },
+        {
+          "text": "We spotted this bug a few days ago.",
+          "audioSrc": "public/data/audio/dummy/dummy_133_sideB_1.mp3"
+        },
+        {
+          "text": "We caught this error a few days ago.",
+          "audioSrc": "public/data/audio/dummy/dummy_133_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_134",
+      "cardType": "flippable",
+      "sideA": "Ya no estamos mostrando el signo de exclamacion, solo el fallback img.",
+      "sideB": [
+        {
+          "text": "We are no longer showing the exclamation mark, just the fallback image.",
+          "audioSrc": "public/data/audio/dummy/dummy_134_sideB_0.mp3"
+        },
+        {
+          "text": "We are no longer displaying the exclamation sign, only the fallback image.",
+          "audioSrc": "public/data/audio/dummy/dummy_134_sideB_1.mp3"
+        },
+        {
+          "text": "The exclamation mark is no longer showing, only the fallback image.",
+          "audioSrc": "public/data/audio/dummy/dummy_134_sideB_2.mp3"
+        },
+        {
+          "text": "We are not showing the exclamation mark, just the fallback image.",
+          "audioSrc": "public/data/audio/dummy/dummy_134_sideB_3.mp3"
+        }
+      ],
+      "note": "**[er:24]**"
+    },
+    {
+      "cardId": "dummy_135",
+      "cardType": "flippable",
+      "sideA": "No estamos apuntando a Produccion, sino a Soporte.",
+      "sideB": [
+        {
+          "text": "We are not targeting Production, but rather Support.",
+          "audioSrc": "public/data/audio/dummy/dummy_135_sideB_0.mp3"
+        },
+        {
+          "text": "We are not aiming for Production, but rather for Support.",
+          "audioSrc": "public/data/audio/dummy/dummy_135_sideB_1.mp3"
+        },
+        {
+          "text": "We are not aiming for Production, but for Support.",
+          "audioSrc": "public/data/audio/dummy/dummy_135_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:143]**\n\n~We are not pointing for Production...~ is incorrect. You can point [at] or [to] something physically or metaphorically, but for environments or goals, use [aiming for] or [targeting].\n\n~...aiming for Production, rather, for Support~ is awkwardly punctuated. Use [but rather for] without commas to contrast the targets smoothly."
+    },
+    {
+      "cardId": "dummy_136",
+      "cardType": "flippable",
+      "sideA": "Y lo ultimo que supe fue que ese era el link correcto.",
+      "sideB": [
+        {
+          "text": "And the last thing I heard was that that was the correct link.",
+          "audioSrc": "public/data/audio/dummy/dummy_136_sideB_0.mp3"
+        },
+        {
+          "text": "And the last I knew, that was the right link.",
+          "audioSrc": "public/data/audio/dummy/dummy_136_sideB_1.mp3"
+        },
+        {
+          "text": "The last I heard was that that was the correct link.",
+          "audioSrc": "public/data/audio/dummy/dummy_136_sideB_2.mp3"
+        },
+        {
+          "text": "And the last thing I knew was that that was the correct link.",
+          "audioSrc": "public/data/audio/dummy/dummy_136_sideB_3.mp3"
+        },
+        {
+          "text": "And the last I knew was that was the correct link.",
+          "audioSrc": "public/data/audio/dummy/dummy_136_sideB_4.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_137",
+      "cardType": "flippable",
+      "sideA": "En vez de estar al final, ahora esta al comienzo.",
+      "sideB": [
+        {
+          "text": "Instead of being at the end, it is now at the beginning.",
+          "audioSrc": "public/data/audio/dummy/dummy_137_sideB_0.mp3"
+        },
+        {
+          "text": "Rather than being at the end, it is now at the beginning.",
+          "audioSrc": "public/data/audio/dummy/dummy_137_sideB_1.mp3"
+        },
+        {
+          "text": "It used to be at the end, but now it is at the beginning.",
+          "audioSrc": "public/data/audio/dummy/dummy_137_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_138",
+      "cardType": "flippable",
+      "sideA": "Ahi es lo mismo que antes.",
+      "sideB": [
+        {
+          "text": "That is the same as before.",
+          "audioSrc": "public/data/audio/dummy/dummy_138_sideB_0.mp3"
+        },
+        {
+          "text": "It is the same as it was before.",
+          "audioSrc": "public/data/audio/dummy/dummy_138_sideB_1.mp3"
+        },
+        {
+          "text": "That is just the same as before.",
+          "audioSrc": "public/data/audio/dummy/dummy_138_sideB_2.mp3"
+        }
+      ],
+      "note": "~There is the same as before~ is incorrect. [There] refers to a physical location. To say \"ahí\" in the abstract sense of \"in that aspect\" or \"in that case\", you must use [That] (e.g., [That is the same...]).\n\n[There] can refer to digital locations (e.g., 'Put the cursor there'), but it cannot act as the subject of the sentence to mean 'that place/aspect'. Saying 'There is the same' translates to the existential 'Hay el mismo'. To say 'esa parte' or 'ese aspecto' is the same, you must use a demonstrative pronoun like [That] as the subject, or use 'there' as an adverb at the end: [It is the same there]."
+    },
+    {
+      "cardId": "dummy_139",
+      "cardType": "flippable",
+      "sideA": "Lo testie y funciona.",
+      "sideB": [
+        {
+          "text": "I tested it and it works.",
+          "audioSrc": "public/data/audio/dummy/dummy_139_sideB_0.mp3"
+        },
+        {
+          "text": "I tested it and it is working.",
+          "audioSrc": "public/data/audio/dummy/dummy_139_sideB_1.mp3"
+        },
+        {
+          "text": "I ran a test on it and it works.",
+          "audioSrc": "public/data/audio/dummy/dummy_139_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_140",
+      "cardType": "flippable",
+      "sideA": "Lo testie y no funciona.",
+      "sideB": [
+        {
+          "text": "I tested it and it doesn't work.",
+          "audioSrc": "public/data/audio/dummy/dummy_140_sideB_0.mp3"
+        },
+        {
+          "text": "I tested it and it is not working.",
+          "audioSrc": "public/data/audio/dummy/dummy_140_sideB_1.mp3"
+        },
+        {
+          "text": "I ran a test on it and it doesn't work.",
+          "audioSrc": "public/data/audio/dummy/dummy_140_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_141",
+      "cardType": "flippable",
+      "sideA": "Solo debes descomentar esa linea please.",
+      "sideB": [
+        {
+          "text": "You just need to uncomment that line, please.",
+          "audioSrc": "public/data/audio/dummy/dummy_141_sideB_0.mp3"
+        },
+        {
+          "text": "Just uncomment that line, please.",
+          "audioSrc": "public/data/audio/dummy/dummy_141_sideB_1.mp3"
+        },
+        {
+          "text": "All you need to do is uncomment that line, please.",
+          "audioSrc": "public/data/audio/dummy/dummy_141_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:221]**"
+    },
+    {
+      "cardId": "dummy_142",
+      "cardType": "flippable",
+      "sideA": "Solo debes comentar esa linea, y descomentar la otra.",
+      "sideB": [
+        {
+          "text": "You just need to comment out that line and uncomment the other one.",
+          "audioSrc": "public/data/audio/dummy/dummy_142_sideB_0.mp3"
+        },
+        {
+          "text": "Just comment out that line and uncomment the other one.",
+          "audioSrc": "public/data/audio/dummy/dummy_142_sideB_1.mp3"
+        },
+        {
+          "text": "All you need to do is comment out that line and uncomment the other.",
+          "audioSrc": "public/data/audio/dummy/dummy_142_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:221]**\n**[pv:202]**\n\n~You just need to comment that line and uncomment the other one~ is incorrect in a programming context. The verb [comment] means to express an opinion. To disable a line of code, you must use the phrasal verb [comment out]."
+    },
+    {
+      "cardId": "dummy_143",
+      "cardType": "flippable",
+      "sideA": "Este procedimiento fue completamente reescrito.",
+      "sideB": [
+        {
+          "text": "This procedure was completely rewritten.",
+          "audioSrc": "public/data/audio/dummy/dummy_143_sideB_0.mp3"
+        },
+        {
+          "text": "This procedure has been completely rewritten.",
+          "audioSrc": "public/data/audio/dummy/dummy_143_sideB_1.mp3"
+        },
+        {
+          "text": "The procedure was entirely rewritten.",
+          "audioSrc": "public/data/audio/dummy/dummy_143_sideB_2.mp3"
+        },
+        {
+          "text": "This procedure was completely redone.",
+          "audioSrc": "public/data/audio/dummy/dummy_143_sideB_3.mp3"
+        }
+      ],
+      "note": null
     }
   ]
 }

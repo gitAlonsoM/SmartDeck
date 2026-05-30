@@ -145,18 +145,37 @@ code {
 }
 
 
-/* Glossary term style */
-.glossary-term {
-    color: #818cf8; /* Tailwind Indigo-400 - More modern than blue-400 */
+/* Glossary modal link rendered as a clickable "chip" inside a card.
+   inline-flex makes it an atomic inline box, so the parent's
+   text-align: justify can no longer stretch the title across the row. */
+.glossary-term-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    max-width: 100%;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.6rem;
+    background-color: rgba(74, 222, 128, 0.12); /* green-400 tint */
+    border: 1px solid rgba(74, 222, 128, 0.35);
+    color: #4ade80; /* Tailwind green-400 */
     font-weight: 600;
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-underline-offset: 4px; /* Better spacing */
+    font-size: 0.8rem;
+    line-height: 1.25;
+    text-align: left;
+    text-decoration: none;
     cursor: pointer;
-    transition: color 0.2s ease-in-out;
+    vertical-align: middle;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
-.glossary-term:hover {
-color: #c7d2fe; /* Tailwind Indigo-200 */
+.glossary-term-chip:hover {
+    background-color: rgba(74, 222, 128, 0.22);
+    border-color: rgba(74, 222, 128, 0.6);
+    text-decoration: none;
+}
+.glossary-term-chip .glossary-term-chip-icon {
+    font-size: 0.75rem;
+    opacity: 0.85;
+    flex-shrink: 0;
 }
 
 

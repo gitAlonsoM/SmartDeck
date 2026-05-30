@@ -46,7 +46,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_100_sideB_3.mp3"
         }
       ],
-      "note": "\n\n~We could define the scopes and limitations~ is incorrect. In English, [scope] is generally uncountable when referring to the extent of a project or subject. It remains singular even when paired with plural words like [limitations]."
+      "note": "**[er:29]**\n\n~We could define the scopes and limitations~ is incorrect. In English, [scope] is generally uncountable when referring to the extent of a project or subject. It remains singular even when paired with plural words like [limitations]."
     },
     {
       "cardId": "dummy_102",
@@ -160,6 +160,10 @@
         {
           "text": "We are just 3 fixes away from being done.",
           "audioSrc": "public/data/audio/dummy/dummy_125_sideB_2.mp3"
+        },
+        {
+          "text": "We are just 3 fixes away from finishing.",
+          "audioSrc": "public/data/audio/dummy/dummy_125_sideB_3.mp3"
         }
       ],
       "note": "**[er:108]**\n\n~We are just 3 fixes away to finish~ is incorrect. The phrase 'away from' must be followed by a noun or a gerund (-ing form), not an infinitive. It should be [away from finishing]."
@@ -202,7 +206,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_127_sideB_2.mp3"
         }
       ],
-      "note": "**[er:175]**\n\n~I need the guidance of Sean to solve this problem~ is unnatural. In English, human possession is expressed with an apostrophe 's. You should say [Sean's guidance]."
+      "note": "**[er:175]**\n\n~I need the guidance of Sean to solve this problem~ is unnatural. In English, human possession is expressed with an apostrophe 's. You should say [Sean's guidance].\n\n~I need the Sean's guidance to solve this problem~ is incorrect. Do not use the article 'the' before a proper name with a possessive 's. It should just be [Sean's]."
     },
     {
       "cardId": "dummy_129",
@@ -380,6 +384,10 @@
         {
           "text": "Up to now, there have been so many changes in the package.",
           "audioSrc": "public/data/audio/dummy/dummy_144_sideB_3.mp3"
+        },
+        {
+          "text": "So far, there have been so many changes in the package.",
+          "audioSrc": "public/data/audio/dummy/dummy_144_sideB_4.mp3"
         }
       ],
       "note": null
@@ -390,19 +398,19 @@
       "sideA": "Han habido tantos cambios, que no habiamos comentado lo realizado.",
       "sideB": [
         {
-          "text": "There have been so many changes that we had not discussed what was done.",
+          "text": "There have been so many changes that we hadn't commented what was done.",
           "audioSrc": "public/data/audio/dummy/dummy_145_sideB_0.mp3"
         },
         {
-          "text": "There were so many changes we never talked about what had been completed.",
+          "text": "There were so many changes that we forgot to add comments for what was completed.",
           "audioSrc": "public/data/audio/dummy/dummy_145_sideB_1.mp3"
         },
         {
-          "text": "So many changes happened that we had not reviewed what was accomplished.",
+          "text": "So many changes happened that we didn't document what was done in the comments.",
           "audioSrc": "public/data/audio/dummy/dummy_145_sideB_2.mp3"
         },
         {
-          "text": "There have been so many changes that we failed to go over what had been done.",
+          "text": "There have been so many changes that we haven't left comments explaining what was done.",
           "audioSrc": "public/data/audio/dummy/dummy_145_sideB_3.mp3"
         }
       ],
@@ -454,7 +462,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_147_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "\n\n~There have passed five minutes and nothing~ is unnatural. Do not use 'there have passed' for time. The correct structure places the time as the subject: [Five minutes have passed]."
     },
     {
       "cardId": "dummy_148",
@@ -478,7 +486,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_148_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "\n\n~There have passed some minutes and it is not responding~ is unnatural because English does not use 'there' with 'to pass' for elapsed time. You should start with the time itself: [Some minutes have passed] or [It has been some minutes]."
     },
     {
       "cardId": "dummy_149",
@@ -574,7 +582,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_152_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "\n\n~But it is not an isolated issue, it has already passed several times~ is incorrect here. In English, events [happen] or [occur]. Time 'passes', but situations or errors do not."
     },
     {
       "cardId": "dummy_153",
@@ -598,7 +606,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_153_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:113]**"
     },
     {
       "cardId": "dummy_154",
@@ -692,6 +700,10 @@
         {
           "text": "I took it upon myself to replace it with something better.",
           "audioSrc": "public/data/audio/dummy/dummy_157_sideB_3.mp3"
+        },
+        {
+          "text": "I took care of changing it for a better one.",
+          "audioSrc": "public/data/audio/dummy/dummy_157_sideB_4.mp3"
         }
       ],
       "note": null

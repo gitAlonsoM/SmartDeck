@@ -138,7 +138,7 @@ static _generateImprovementPrompt(deckName, correctCommand, cardsToImprove, glos
 
         const promptHeader = `
 
-# SmartDeck Card Improvement Prompt V10.5 (Format distinction table + note-field rule fix)
+# SmartDeck Card Improvement Prompt V10.6 (Catalog completeness rule: complete = modify, minified = reference-only)
 ## 🎯 1. ROLE AND GOAL
 You are an expert for 'SmartDeck'. Your goal is to significantly enhance the pedagogical value of a batch of flashcards based on user feedback AND THE NEXT RULES!.
 
@@ -329,9 +329,11 @@ If the user writes "AVISAR AL USUARIO" or "Avisame en el chat sobre esto.. " o a
 ## 📚 9. MODAL CATALOG (REFERENCE ONLY)
 The catalog is keyed by qualified id \`alias:id\` (aliases: \`er\` = english_rules, \`pv\` = phrasal_verbs). It contains EVERY modal across EVERY glossary.
 
-**Entry shape:**
-- Most entries are minified: \`{ title, description }\`. This is enough for you to scan, deduplicate, and choose an existing modal when the user asks to link one.
-- Entries that ALSO include \`content\` and \`user_comment\` are the modals the user has flagged for improvement — you MUST regenerate their content in Part 2 (see Section 7 Anti-Shit Protocol).
+**Entry shape — and what completeness MEANS (read carefully):**
+- **Minified entry = REFERENCE ONLY.** The vast majority of entries carry just \`{ title, description }\` and NO \`content\`. This is intentional: they are NOT incomplete by mistake. A modal shown without its body is there purely so you can scan, deduplicate, and link it to a card if the user explicitly asks. You do **NOT** rewrite, regenerate, or touch these in any way.
+- **Complete entry (with \`content\` + \`user_comment\`) = MODIFICATION REQUESTED.** ONLY the modals the user has explicitly flagged for improvement are sent complete (full \`content\` plus the user's \`user_comment\`). The presence of a \`user_comment\` is the decisive signal — it means "the user wants this one changed". For each such entry you MUST regenerate its content in Part 2 (see Section 7 Anti-Shit Protocol).
+- **In short:** complete in the catalog ⇒ revise it; minified ⇒ leave it alone, it's just a link target.
+- ⚠️ Do NOT confuse these with the **live reference examples in §7G**: those also carry full \`content\` but have **no \`user_comment\`** — they are format models to study, never things to modify.
 
 **⚠️ FORMAT DISTINCTION — 3 contexts, 3 different formats (CRITICAL):**
 | Context | Format | Example |
