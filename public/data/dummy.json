@@ -726,7 +726,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_158_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:113]**"
     },
     {
       "cardId": "dummy_159",
@@ -746,7 +746,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_159_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:113]**"
     },
     {
       "cardId": "dummy_160",
@@ -766,7 +766,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_160_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~I don't know how this symbol is called, let me paste it in the chat.~ is not valid. When asking about the name of something in an embedded question, use [what], not 'how'. You can say \"what this symbol is called\" or \"how to say this symbol's name\"."
     },
     {
       "cardId": "dummy_161",
@@ -824,6 +824,14 @@
         {
           "text": "Now we clean the data and it populates from the ground up.",
           "audioSrc": "public/data/audio/dummy/dummy_163_sideB_2.mp3"
+        },
+        {
+          "text": "Now we clean up the data and populate it from scratch.",
+          "audioSrc": "public/data/audio/dummy/dummy_163_sideB_3.mp3"
+        },
+        {
+          "text": "Now we clear the data and populate it from zero.",
+          "audioSrc": "public/data/audio/dummy/dummy_163_sideB_4.mp3"
         }
       ],
       "note": null
@@ -846,7 +854,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_164_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~Before, because the data got overwrite, there wasn't an error.~ is incorrect. When using the 'get' passive, the verb must be in the past participle form: [got overwritten].\n\n~Before, because of the data got overwrite, there wasn't an error.~ is incorrect. First, it uses the base verb instead of the past participle [got overwritten]. Second, [because of] must be followed by a noun or noun phrase, not a full clause with a subject and verb. Use [because] instead."
     },
     {
       "cardId": "dummy_165",
@@ -864,6 +872,10 @@
         {
           "text": "Before, the data wouldn't populate from scratch; it just got overwritten.",
           "audioSrc": "public/data/audio/dummy/dummy_165_sideB_2.mp3"
+        },
+        {
+          "text": "Previously, they didn't populate from scratch; they got overwritten.",
+          "audioSrc": "public/data/audio/dummy/dummy_165_sideB_3.mp3"
         }
       ],
       "note": null
