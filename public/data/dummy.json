@@ -707,6 +707,166 @@
         }
       ],
       "note": null
+    },
+    {
+      "cardId": "dummy_158",
+      "cardType": "flippable",
+      "sideA": "¿Necesito poner guion, o guión bajo?",
+      "sideB": [
+        {
+          "text": "Do I need to use a hyphen or an underscore?",
+          "audioSrc": "public/data/audio/dummy/dummy_158_sideB_0.mp3"
+        },
+        {
+          "text": "Should I put a hyphen or an underscore?",
+          "audioSrc": "public/data/audio/dummy/dummy_158_sideB_1.mp3"
+        },
+        {
+          "text": "Do I need to put a dash or an underscore?",
+          "audioSrc": "public/data/audio/dummy/dummy_158_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_159",
+      "cardType": "flippable",
+      "sideA": "¿Necesito usar comillas simples o dobles?",
+      "sideB": [
+        {
+          "text": "Do I need to use single or double quotes?",
+          "audioSrc": "public/data/audio/dummy/dummy_159_sideB_0.mp3"
+        },
+        {
+          "text": "Should I use single or double quotation marks?",
+          "audioSrc": "public/data/audio/dummy/dummy_159_sideB_1.mp3"
+        },
+        {
+          "text": "Is it necessary to use single or double quotes?",
+          "audioSrc": "public/data/audio/dummy/dummy_159_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_160",
+      "cardType": "flippable",
+      "sideA": "No se cómo se llama este signo, dejame pegarlo en el chat.",
+      "sideB": [
+        {
+          "text": "I don't know what this symbol is called, let me paste it in the chat.",
+          "audioSrc": "public/data/audio/dummy/dummy_160_sideB_0.mp3"
+        },
+        {
+          "text": "I don't know the name of this sign, let me paste it into the chat.",
+          "audioSrc": "public/data/audio/dummy/dummy_160_sideB_1.mp3"
+        },
+        {
+          "text": "I'm not sure what this character is called, let me paste it in the chat.",
+          "audioSrc": "public/data/audio/dummy/dummy_160_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_161",
+      "cardType": "flippable",
+      "sideA": "¿Cómo puedo llamar a este signo?, dejame pegarlo en el chat.",
+      "sideB": [
+        {
+          "text": "What can I call this symbol? Let me paste it in the chat.",
+          "audioSrc": "public/data/audio/dummy/dummy_161_sideB_0.mp3"
+        },
+        {
+          "text": "How should I call this sign? Let me paste it into the chat.",
+          "audioSrc": "public/data/audio/dummy/dummy_161_sideB_1.mp3"
+        },
+        {
+          "text": "How can I describe this symbol? Let me paste it in the chat.",
+          "audioSrc": "public/data/audio/dummy/dummy_161_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_162",
+      "cardType": "flippable",
+      "sideA": "Los datos se sobreescribían automáticamente",
+      "sideB": [
+        {
+          "text": "The data was overwritten automatically.",
+          "audioSrc": "public/data/audio/dummy/dummy_162_sideB_0.mp3"
+        },
+        {
+          "text": "The data used to be overwritten automatically.",
+          "audioSrc": "public/data/audio/dummy/dummy_162_sideB_1.mp3"
+        },
+        {
+          "text": "The data got overwritten automatically.",
+          "audioSrc": "public/data/audio/dummy/dummy_162_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_163",
+      "cardType": "flippable",
+      "sideA": "Ahora limpiamos los datos, y se popular desde cero.",
+      "sideB": [
+        {
+          "text": "Now we clear the data and populate it from scratch.",
+          "audioSrc": "public/data/audio/dummy/dummy_163_sideB_0.mp3"
+        },
+        {
+          "text": "Now we wipe the data and it gets populated from scratch.",
+          "audioSrc": "public/data/audio/dummy/dummy_163_sideB_1.mp3"
+        },
+        {
+          "text": "Now we clean the data and it populates from the ground up.",
+          "audioSrc": "public/data/audio/dummy/dummy_163_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_164",
+      "cardType": "flippable",
+      "sideA": "Antes gracias a qué se sobreescribían los datos no había error.",
+      "sideB": [
+        {
+          "text": "Before, since the data was overwritten, there was no error.",
+          "audioSrc": "public/data/audio/dummy/dummy_164_sideB_0.mp3"
+        },
+        {
+          "text": "Previously, thanks to the data being overwritten, there was no error.",
+          "audioSrc": "public/data/audio/dummy/dummy_164_sideB_1.mp3"
+        },
+        {
+          "text": "Before, because the data would overwrite automatically, there wasn't an error.",
+          "audioSrc": "public/data/audio/dummy/dummy_164_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_165",
+      "cardType": "flippable",
+      "sideA": "Antes no se populaban desde cero, se sobreescribían.",
+      "sideB": [
+        {
+          "text": "Before, they weren't populated from scratch, they were overwritten.",
+          "audioSrc": "public/data/audio/dummy/dummy_165_sideB_0.mp3"
+        },
+        {
+          "text": "Previously, it didn't populate from scratch; it was overwritten.",
+          "audioSrc": "public/data/audio/dummy/dummy_165_sideB_1.mp3"
+        },
+        {
+          "text": "Before, the data wouldn't populate from scratch; it just got overwritten.",
+          "audioSrc": "public/data/audio/dummy/dummy_165_sideB_2.mp3"
+        }
+      ],
+      "note": null
     }
   ]
 }
