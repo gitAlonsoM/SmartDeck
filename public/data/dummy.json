@@ -418,7 +418,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_145_sideB_3.mp3"
         }
       ],
-      "note": "~There have been so many changes that we hadn't commented out what we've done~ changes the meaning. In programming, to [comment out] means to disable code so it doesn't run. To express leaving an explanatory note or discussing something, just use [commented on] or [discussed]."
+      "note": "~There have been so many changes that we hadn't commented out what we've done~ changes the meaning. In programming, to [comment out] means to disable code so it doesn't run. To express leaving an explanatory note or discussing something, just use [commented on] or [discussed].\n\n~There have been so many changes that we didn't comment out what was done.~ is incorrect. [Comment out] strictly means disabling code. Use [document] or [comment on]."
     },
     {
       "cardId": "dummy_146",
@@ -636,6 +636,10 @@
         {
           "text": "We must isolate the issue to be able to continue.",
           "audioSrc": "public/data/audio/dummy/dummy_154_sideB_3.mp3"
+        },
+        {
+          "text": "We need to isolate the issue to proceed.",
+          "audioSrc": "public/data/audio/dummy/dummy_154_sideB_4.mp3"
         }
       ],
       "note": null
@@ -712,9 +716,13 @@
         {
           "text": "I took care of changing it for a better one.",
           "audioSrc": "public/data/audio/dummy/dummy_157_sideB_4.mp3"
+        },
+        {
+          "text": "I took care of changing it for another better one.",
+          "audioSrc": "public/data/audio/dummy/dummy_157_sideB_5.mp3"
         }
       ],
-      "note": "~I took care of changing it for a another better~ is not valid because you cannot use 'a' and 'another' together, and 'better' requires a noun or pronoun like [one]. Use [another better one] or [a better one]."
+      "note": "~I took care of changing it for a another better~ is not valid because you cannot use 'a' and 'another' together, and 'better' requires a noun or pronoun like [one]. Use [another better one] or [a better one].\n\n~I took care of changing it for another better.~ is incorrect because 'better' is an adjective and requires a noun or pronoun like [one] to follow it. Use [another better one]."
     },
     {
       "cardId": "dummy_158",
@@ -794,7 +802,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_161_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:223]**\n\n~How can I call this symbol?~ is incorrect. In English, we use [What] to ask for a name or label, not [How]. Use [What can I call this symbol?]."
     },
     {
       "cardId": "dummy_162",
@@ -840,6 +848,10 @@
         {
           "text": "Now we clear the data and populate it from zero.",
           "audioSrc": "public/data/audio/dummy/dummy_163_sideB_4.mp3"
+        },
+        {
+          "text": "Now we clear the data and it is populated from scratch.",
+          "audioSrc": "public/data/audio/dummy/dummy_163_sideB_5.mp3"
         }
       ],
       "note": "~Now we clear the data and they are populated from scratch~ is not natural. In modern tech English, 'data' is treated as a singular uncountable noun, so you should use [it is populated]."
@@ -860,9 +872,13 @@
         {
           "text": "Before, because the data would overwrite automatically, there wasn't an error.",
           "audioSrc": "public/data/audio/dummy/dummy_164_sideB_2.mp3"
+        },
+        {
+          "text": "Before, because the data got overwritten, there wasn't an error.",
+          "audioSrc": "public/data/audio/dummy/dummy_164_sideB_3.mp3"
         }
       ],
-      "note": "~Before, because the data got overwrite, there wasn't an error.~ is incorrect. When using the 'get' passive, the verb must be in the past participle form: [got overwritten].\n\n~Before, because of the data got overwrite, there wasn't an error.~ is incorrect. First, it uses the base verb instead of the past participle [got overwritten]. Second, [because of] must be followed by a noun or noun phrase, not a full clause with a subject and verb. Use [because] instead."
+      "note": "**[er:82]**\n\n**[er:215]**\n\n~Before, because the data got overwrite, there wasn't an error.~ is incorrect. When using the 'get' passive, the verb must be in the past participle form: [got overwritten].\n\n~Before, because of the data got overwrite, there wasn't an error.~ is incorrect. First, it uses the base verb instead of the past participle [got overwritten]. Second, [because of] must be followed by a noun or noun phrase, not a full clause with a subject and verb. Use [because] instead."
     },
     {
       "cardId": "dummy_165",
@@ -884,6 +900,10 @@
         {
           "text": "Previously, they didn't populate from scratch; they got overwritten.",
           "audioSrc": "public/data/audio/dummy/dummy_165_sideB_3.mp3"
+        },
+        {
+          "text": "Previously, they didn't get populated from scratch; they got overwritten.",
+          "audioSrc": "public/data/audio/dummy/dummy_165_sideB_4.mp3"
         }
       ],
       "note": null
