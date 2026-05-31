@@ -252,6 +252,10 @@
         {
           "text": "Make sure that the data gets saved correctly.",
           "audioSrc": "public/data/audio/dummy/dummy_131_sideB_2.mp3"
+        },
+        {
+          "text": "Make sure that the data gets stored correctly.",
+          "audioSrc": "public/data/audio/dummy/dummy_131_sideB_3.mp3"
         }
       ],
       "note": "**[er:107]**"
@@ -414,7 +418,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_145_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "~There have been so many changes that we hadn't commented out what we've done~ changes the meaning. In programming, to [comment out] means to disable code so it doesn't run. To express leaving an explanatory note or discussing something, just use [commented on] or [discussed]."
     },
     {
       "cardId": "dummy_146",
@@ -462,7 +466,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_147_sideB_3.mp3"
         }
       ],
-      "note": "\n\n~There have passed five minutes and nothing~ is unnatural. Do not use 'there have passed' for time. The correct structure places the time as the subject: [Five minutes have passed]."
+      "note": "**[er:222]**\n\n~There have passed five minutes and nothing~ is unnatural. Do not use 'there have passed' for time. The correct structure places the time as the subject: [Five minutes have passed]."
     },
     {
       "cardId": "dummy_148",
@@ -484,9 +488,13 @@
         {
           "text": "A couple of minutes passed and there is still no answer.",
           "audioSrc": "public/data/audio/dummy/dummy_148_sideB_3.mp3"
+        },
+        {
+          "text": "A couple of minutes have passed and it doesn't respond.",
+          "audioSrc": "public/data/audio/dummy/dummy_148_sideB_4.mp3"
         }
       ],
-      "note": "\n\n~There have passed some minutes and it is not responding~ is unnatural because English does not use 'there' with 'to pass' for elapsed time. You should start with the time itself: [Some minutes have passed] or [It has been some minutes]."
+      "note": "**[er:222]**\n\n~There have passed some minutes and it is not responding~ is unnatural because English does not use 'there' with 'to pass' for elapsed time. You should start with the time itself: [Some minutes have passed] or [It has been some minutes]."
     },
     {
       "cardId": "dummy_149",
@@ -582,7 +590,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_152_sideB_3.mp3"
         }
       ],
-      "note": "\n\n~But it is not an isolated issue, it has already passed several times~ is incorrect here. In English, events [happen] or [occur]. Time 'passes', but situations or errors do not."
+      "note": "**[er:222]**\n\n~But it is not an isolated issue, it has already passed several times~ is incorrect here. In English, events [happen] or [occur]. Time 'passes', but situations or errors do not."
     },
     {
       "cardId": "dummy_153",
@@ -706,7 +714,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_157_sideB_4.mp3"
         }
       ],
-      "note": null
+      "note": "~I took care of changing it for a another better~ is not valid because you cannot use 'a' and 'another' together, and 'better' requires a noun or pronoun like [one]. Use [another better one] or [a better one]."
     },
     {
       "cardId": "dummy_158",
@@ -766,7 +774,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_160_sideB_2.mp3"
         }
       ],
-      "note": "~I don't know how this symbol is called, let me paste it in the chat.~ is not valid. When asking about the name of something in an embedded question, use [what], not 'how'. You can say \"what this symbol is called\" or \"how to say this symbol's name\"."
+      "note": "**[er:223]**\n\n~I don't know how this symbol is called, let me paste it in the chat.~ is not valid. When asking about the name of something in an embedded question, use [what], not 'how'. You can say \"what this symbol is called\" or \"how to say this symbol's name\"."
     },
     {
       "cardId": "dummy_161",
@@ -834,7 +842,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_163_sideB_4.mp3"
         }
       ],
-      "note": null
+      "note": "~Now we clear the data and they are populated from scratch~ is not natural. In modern tech English, 'data' is treated as a singular uncountable noun, so you should use [it is populated]."
     },
     {
       "cardId": "dummy_164",
