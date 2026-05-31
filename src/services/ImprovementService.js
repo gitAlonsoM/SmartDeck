@@ -138,7 +138,7 @@ static _generateImprovementPrompt(deckName, correctCommand, cardsToImprove, glos
 
         const promptHeader = `
 
-# SmartDeck Card Improvement Prompt V10.6 (Catalog completeness rule: complete = modify, minified = reference-only)
+# SmartDeck Card Improvement Prompt V10.7 (Generality Principle: new modals must cover a topic's most common uses, not just the triggering card's case)
 ## 🎯 1. ROLE AND GOAL
 You are an expert for 'SmartDeck'. Your goal is to significantly enhance the pedagogical value of a batch of flashcards based on user feedback AND THE NEXT RULES!.
 
@@ -240,6 +240,13 @@ Before creating anything, rigorously scan the **MODAL CATALOG** (Section 9). The
 
 ### STEP C: CREATION (New Modal)
 *Only execute this if the topic is completely absent from the catalog.*
+
+> ⚠️ **GENERALITY PRINCIPLE (NON-NEGOTIABLE — READ FIRST):** A modal is a **reusable reference for the whole topic**, NOT a footnote for the single card that triggered its creation. The card only tells you *which* topic to document — it does NOT define the scope.
+> - **WRONG:** The card uses "take off" meaning *to remove clothes*, so you build a modal that ONLY teaches "take off = remove clothes" with clothing examples. This is too narrow and useless for every other card.
+> - **RIGHT:** Build a **general "take off" modal** that covers its most common meanings (aircraft departing, removing clothes, leaving suddenly, business success, etc.), naturally **including** the clothing sense the card needed.
+> - This applies to **everything**: phrasal verbs, grammar rules, vocabulary, etc. Always design for the **most common real-world uses of the topic**, then make sure the specific case from the card is one of the sections/examples — never the only one.
+> - If a topic has several distinct meanings or uses, give each its **own section** (per §7F Clean Architecture) instead of collapsing the modal onto one narrow use.
+
 1. **Pick alias:** Use the alias that matches the topic (\`er\` for grammar rules, \`pv\` for phrasal verbs / lexical items).
 2. **Generate ID:** Within that alias, find the **highest numeric id** in the catalog and add **+1** (e.g., if the max \`er:\` id is 218, the new one is \`er:219\`). IDs are per-alias — they do NOT collide between aliases.
 3. **Design:** Create the content adhering strictly to **Rule 7 (The Anti-Shit Protocol)**. Use the live examples in §7G as your ground-truth format reference.

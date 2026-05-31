@@ -74,6 +74,12 @@ Audio path convention: `public/data/audio/<deck-slug>/<cardId>_sideB_<N>.mp3` (0
 
 ## Recent decisions
 
+### InfoModal scroll-to-top on open (2026-05-31)
+`InfoModal.show()` (`src/components/InfoModal/InfoModal.js`) now resets `this.modalBody.scrollTop = 0` after injecting new content. The scrollable element is `#info-modal-body` (the `overflow-y-auto` div in `info-modal.html`); it retained the scroll position from the previous open, so card modals appeared scrolled to the bottom (most visible on mobile, which is the primary target). If you add any logic that re-renders modal content, reset scroll the same way so the user always starts reading from the top.
+
+### Improvement prompt V10.7 — Generality Principle for new modals (2026-05-31)
+Added a "GENERALITY PRINCIPLE (NON-NEGOTIABLE)" callout at the top of §6 STEP C (Creation) in `ImprovementService._generateImprovementPrompt`. Problem: when asked to create a modal for a phrasal verb / rule, the LLM scoped it to the *triggering card's* single use (e.g. "take off" = remove clothes only), making the modal useless for every other card. New rule: the card only tells the LLM *which* topic to document, not its scope — a new modal must cover the topic's **most common real-world uses**, with the card's specific case as just one section/example (cross-references §7F Clean Architecture for multi-meaning topics). Prompt version bumped V10.6 → V10.7.
+
 ### Multi-glossary modal link system (2026-05-16)
 Cards now reference modals with a qualified syntax `**[alias:id]**` (e.g. `**[er:5]**`, `**[pv:188]**`) instead of the old bare `**[N]**`. Aliases are registered in `GlossaryService.GLOSSARY_ALIASES` (`er` → `english_rules`, `pv` → `phrasal_verbs`). Adding a new glossary is one line there. The regex everywhere is `/\*\*\[([a-z]{1,8}):(\d+)\]\*\*/g`.
 

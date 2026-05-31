@@ -49,6 +49,11 @@ class InfoModal {
         this.modalBackdrop.classList.remove('hidden');
         this.modalContent.classList.remove('hidden');
         document.body.style.overflow = 'hidden'; // Prevent background scrolling
+
+        // Always start reading from the top of the modal, not wherever the
+        // scroll happened to land after injecting new content.
+        this.modalBody.scrollTop = 0;
+        console.log("VERIFY: [InfoModal] show -> Scrolled modal body to top.");
     }
 
     updateFlagUI(isMarked) {
