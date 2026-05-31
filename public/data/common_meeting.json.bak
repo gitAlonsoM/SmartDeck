@@ -30155,6 +30155,918 @@
         }
       ],
       "note": "**[pv:199]**"
+    },
+    {
+      "cardId": "mi_1338",
+      "cardType": "flippable",
+      "sideA": "Perdona, se me pego (congelo) el programa.",
+      "sideB": [
+        {
+          "text": "Sorry, my program froze.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1338_sideB_0.mp3"
+        },
+        {
+          "text": "My apologies, the program crashed on me.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1338_sideB_1.mp3"
+        },
+        {
+          "text": "Sorry, the program got stuck.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1338_sideB_2.mp3"
+        },
+        {
+          "text": "Sorry, the program got frozen.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1338_sideB_3.mp3"
+        }
+      ],
+      "note": "~Sorry, the program got froze~ and ~Sorry, the program got freeze~ are not valid because the past participle of 'freeze' is [frozen]. You can say it [got frozen], but it is much more natural to just say it [froze]."
+    },
+    {
+      "cardId": "mi_1339",
+      "cardType": "flippable",
+      "sideA": "Lo normal seria que mientras esta en produccion, le agregUemos esta feature.",
+      "sideB": [
+        {
+          "text": "Normally, while it is in production, we would add this feature.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1339_sideB_0.mp3"
+        },
+        {
+          "text": "The usual thing would be to add this feature while it's in production.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1339_sideB_1.mp3"
+        },
+        {
+          "text": "Ideally, we would add this feature while it is in production.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1339_sideB_2.mp3"
+        },
+        {
+          "text": "The normal way would be to add this feature while it is in production.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1339_sideB_3.mp3"
+        }
+      ],
+      "note": "\n\n~The normal would be~ is a direct translation from Spanish. In English, use an adverb like [Normally] or add a noun like [The normal thing would be]."
+    },
+    {
+      "cardId": "mi_1340",
+      "cardType": "flippable",
+      "sideA": "Produccion en la base de datos suele cashear las busquedas y ser mas rapida.",
+      "sideB": [
+        {
+          "text": "The production database usually caches queries and is faster.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1340_sideB_0.mp3"
+        },
+        {
+          "text": "Production in the database tends to cache the searches and be faster.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1340_sideB_1.mp3"
+        },
+        {
+          "text": "The database in production usually caches the searches, making it faster.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1340_sideB_2.mp3"
+        }
+      ],
+      "note": "\n\n~The database in production use to cache searching~ is not valid because 'use to' implies a past habit that no longer happens. For current routines, you should use [usually caches] or [tends to cache].\n\n~Production in the database use to cache searching~ is incorrect because the subject is reversed. It should be the [database in production].\n\n~Production in the database tends to be cached for queries and be faster.~ is not valid because 'Production in the database' has the reversed subject, and 'tends to be cached' incorrectly implies the database itself is cached, rather than the database [caching the queries].\n\n~Production in the database uses to cache the searches and be faster.~ is not valid because 'uses to' is incorrect for describing current habits or routines. You must use adverbs of frequency like [usually caches] or verbs like [tends to cache].\n\n~Production in the database tends to cache searching and be faster.~ is not valid because using the gerund 'searching' sounds unnatural here; it is better to say cache [searches] or cache [queries]. Also, keep in mind that [The production database] is a much more natural subject."
+    },
+    {
+      "cardId": "mi_1341",
+      "cardType": "flippable",
+      "sideA": "…pero para el otro dejarlo como ya es.",
+      "sideB": [
+        {
+          "text": "...but for the other one, leave it as it is.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1341_sideB_0.mp3"
+        },
+        {
+          "text": "...but leave the other one the way it already is.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1341_sideB_1.mp3"
+        },
+        {
+          "text": "...but as for the other one, keep it the same.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1341_sideB_2.mp3"
+        },
+        {
+          "text": "...but for the other one, leave it how it is.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1341_sideB_3.mp3"
+        },
+        {
+          "text": "...but for the other, leave it as it is.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1341_sideB_4.mp3"
+        }
+      ],
+      "note": "~...but for the other one, let it as it is.~ is not valid because the correct verb for this fixed expression is 'leave', not 'let'. You should say [leave it as it is]."
+    },
+    {
+      "cardId": "mi_1342",
+      "cardType": "flippable",
+      "sideA": "El fallback del banner es una imagen local guardada.",
+      "sideB": [
+        {
+          "text": "The banner's fallback is a locally stored image.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1342_sideB_0.mp3"
+        },
+        {
+          "text": "The banner's fallback is a saved local image.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1342_sideB_1.mp3"
+        },
+        {
+          "text": "The fallback for the banner is a locally saved image.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1342_sideB_2.mp3"
+        },
+        {
+          "text": "The fallback for the banner is a local saved image.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1342_sideB_3.mp3"
+        },
+        {
+          "text": "The fallback of the banner is a locally saved image.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1342_sideB_4.mp3"
+        },
+        {
+          "text": "The banner fallback is a locally stored image.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1342_sideB_5.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1343",
+      "cardType": "flippable",
+      "sideA": "Déjame pegarlo en el chat.",
+      "sideB": [
+        {
+          "text": "Let me paste it in the chat.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1343_sideB_0.mp3"
+        },
+        {
+          "text": "Let me drop it in the chat.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1343_sideB_1.mp3"
+        },
+        {
+          "text": "Give me a second to paste it in the chat.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1343_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1344",
+      "cardType": "flippable",
+      "sideA": "Este es el código que está siendo usado actualmente.",
+      "sideB": [
+        {
+          "text": "This is the code currently being used.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1344_sideB_0.mp3"
+        },
+        {
+          "text": "This is the code that's currently in use.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1344_sideB_1.mp3"
+        },
+        {
+          "text": "This is the code we are currently using.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1344_sideB_2.mp3"
+        },
+        {
+          "text": "This is the code that is being used currently.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1344_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1345",
+      "cardType": "flippable",
+      "sideA": "Sorry, no te estoy siguiendo / entendiendo.",
+      "sideB": [
+        {
+          "text": "Sorry, I'm not following you.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1345_sideB_0.mp3"
+        },
+        {
+          "text": "Sorry, I don't quite follow.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1345_sideB_1.mp3"
+        },
+        {
+          "text": "Sorry, I'm not quite catching what you mean.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1345_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1346",
+      "cardType": "flippable",
+      "sideA": "Lo que sucede es que no estamos sincronizados.",
+      "sideB": [
+        {
+          "text": "The thing is, we are not in sync.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1346_sideB_0.mp3"
+        },
+        {
+          "text": "What's happening is that we aren't synchronized.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1346_sideB_1.mp3"
+        },
+        {
+          "text": "The issue is that we are out of sync.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1346_sideB_2.mp3"
+        },
+        {
+          "text": "What happens is that we are not in sync.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1346_sideB_3.mp3"
+        },
+        {
+          "text": "What happens is that we are not synchronized.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1346_sideB_4.mp3"
+        }
+      ],
+      "note": "~What happens is that we are not sync~ is incorrect because 'sync' in this context is a noun or verb, not an adjective. You must use the prepositional phrase [in sync] or the adjective [synchronized]."
+    },
+    {
+      "cardId": "mi_1347",
+      "cardType": "flippable",
+      "sideA": "Blue no está sincronizado del todo con soporte.",
+      "sideB": [
+        {
+          "text": "Blue is not fully in sync with support.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1347_sideB_0.mp3"
+        },
+        {
+          "text": "Blue isn't completely synchronized with support.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1347_sideB_1.mp3"
+        },
+        {
+          "text": "Blue is not entirely synced up with support.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1347_sideB_2.mp3"
+        },
+        {
+          "text": "Blue is not fully synchronized with support.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1347_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1348",
+      "cardType": "flippable",
+      "sideA": "¿Funciona el enlace? Si no, te lo envío de nuevo.",
+      "sideB": [
+        {
+          "text": "Is the link working? If not, I'll send it to you again.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1348_sideB_0.mp3"
+        },
+        {
+          "text": "Does the link work? If it doesn't, I'll resend it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1348_sideB_1.mp3"
+        },
+        {
+          "text": "Is the link working? If not, I can send it again.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1348_sideB_2.mp3"
+        }
+      ],
+      "note": "~I'll send you again~ is incorrect because it literally implies you are sending the person somewhere. You must include the object pronoun [it] referring to the link, as in [I'll send it to you again]."
+    },
+    {
+      "cardId": "mi_1349",
+      "cardType": "flippable",
+      "sideA": "¿Está bien escrito esto?",
+      "sideB": [
+        {
+          "text": "Is this written correctly?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1349_sideB_0.mp3"
+        },
+        {
+          "text": "Is this spelled right?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1349_sideB_1.mp3"
+        },
+        {
+          "text": "Did I write this correctly?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1349_sideB_2.mp3"
+        },
+        {
+          "text": "Is this well written?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1349_sideB_3.mp3"
+        },
+        {
+          "text": "Is this written well?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1349_sideB_4.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1350",
+      "cardType": "flippable",
+      "sideA": "El fabricante entregó el producto hoy.",
+      "sideB": [
+        {
+          "text": "The manufacturer delivered the product today.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1350_sideB_0.mp3"
+        },
+        {
+          "text": "The product was delivered by the manufacturer today.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1350_sideB_1.mp3"
+        },
+        {
+          "text": "The maker dropped off the product today.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1350_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1351",
+      "cardType": "flippable",
+      "sideA": "Este fabricante es muy reconocido en el país.",
+      "sideB": [
+        {
+          "text": "This manufacturer is very well-known in the country.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1351_sideB_0.mp3"
+        },
+        {
+          "text": "This maker is highly recognized across the country.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1351_sideB_1.mp3"
+        },
+        {
+          "text": "This manufacturer is widely recognized in the country.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1351_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1352",
+      "cardType": "flippable",
+      "sideA": "Nuestro cervecero favorito lanzó una nueva bebida.",
+      "sideB": [
+        {
+          "text": "Our favorite brewer launched a new drink.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1352_sideB_0.mp3"
+        },
+        {
+          "text": "Our favorite brewmaster released a new beverage.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1352_sideB_1.mp3"
+        },
+        {
+          "text": "A new drink was launched by our favorite brewer.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1352_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1353",
+      "cardType": "flippable",
+      "sideA": "El fabricante cambió el diseño de la caja.",
+      "sideB": [
+        {
+          "text": "The manufacturer changed the box design.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1353_sideB_0.mp3"
+        },
+        {
+          "text": "The maker altered the design of the box.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1353_sideB_1.mp3"
+        },
+        {
+          "text": "The manufacturer updated the packaging design.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1353_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1354",
+      "cardType": "flippable",
+      "sideA": "La empresa cervecera es de Canadá.",
+      "sideB": [
+        {
+          "text": "The brewery company is from Canada.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1354_sideB_0.mp3"
+        },
+        {
+          "text": "The brewing company is Canadian.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1354_sideB_1.mp3"
+        },
+        {
+          "text": "The brewery is based in Canada.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1354_sideB_2.mp3"
+        }
+      ],
+      "note": "~The brewer company is from Canada~ is unnatural. [Brewer] refers to the person or the standalone business entity, but when acting as an adjective modifying \"company,\" you should use [brewing] (e.g., [The brewing company]). Alternatively, just use the noun [brewery]."
+    },
+    {
+      "cardId": "mi_1355",
+      "cardType": "flippable",
+      "sideA": "La cervecería es el lugar o la instalación donde se produce la cerveza.",
+      "sideB": [
+        {
+          "text": "The brewery is the place or facility where beer is produced.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1355_sideB_0.mp3"
+        },
+        {
+          "text": "The brewery is the facility where beer is made.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1355_sideB_1.mp3"
+        },
+        {
+          "text": "A brewery is the location or facility dedicated to producing beer.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1355_sideB_2.mp3"
+        }
+      ],
+      "note": "~The brewer is the place or facility where beer is produced~ is incorrect. A [brewer] is the person or business that makes the beer, while the [brewery] is the physical location or facility where the beer is brewed.\n\n~The brewery is the place or installation where beer is produced~ uses [installation], which is an unnatural false friend in this context; [facility] is the correct term for a commercial building. Also, ~The brewery is the place or facility where it is produced the beer~ has incorrect word order. In English, the subject must come before the passive verb, so it must be [where the beer is produced]."
+    },
+    {
+      "cardId": "mi_1356",
+      "cardType": "flippable",
+      "sideA": "Un cervecero es la persona que elabora la cerveza o la empresa que actúa como fabricante.",
+      "sideB": [
+        {
+          "text": "A brewer is the person who makes the beer or the company that acts as the manufacturer.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1356_sideB_0.mp3"
+        },
+        {
+          "text": "A brewer refers to the person brewing the beer or the manufacturing company.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1356_sideB_1.mp3"
+        },
+        {
+          "text": "A brewer is the individual who brews the beer or the company acting as the manufacturer.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1356_sideB_2.mp3"
+        },
+        {
+          "text": "A brewer is the person who makes the beer or the company that acts as a maker.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1356_sideB_3.mp3"
+        }
+      ],
+      "note": "**[er:220]**"
+    },
+    {
+      "cardId": "mi_1357",
+      "cardType": "flippable",
+      "sideA": "El SKU es el item number que vemos en la pagina web o mobile app.",
+      "sideB": [
+        {
+          "text": "The SKU is the item number we see on the website or mobile app.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1357_sideB_0.mp3"
+        },
+        {
+          "text": "The SKU corresponds to the item number displayed on the website or mobile app.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1357_sideB_1.mp3"
+        },
+        {
+          "text": "The SKU is the item number that appears on the website or mobile app.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1357_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1358",
+      "cardType": "flippable",
+      "sideA": "Déjame revisar el horario en el calendario.",
+      "sideB": [
+        {
+          "text": "Let me check the schedule on the calendar.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1358_sideB_0.mp3"
+        },
+        {
+          "text": "Let me review the schedule in the calendar.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1358_sideB_1.mp3"
+        },
+        {
+          "text": "Let me take a look at the calendar for the schedule.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1358_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1359",
+      "cardType": "flippable",
+      "sideA": "¿Cómo va eso?",
+      "sideB": [
+        {
+          "text": "How is that going?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1359_sideB_0.mp3"
+        },
+        {
+          "text": "How is that coming along?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1359_sideB_1.mp3"
+        },
+        {
+          "text": "How are things going with that?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1359_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1360",
+      "cardType": "flippable",
+      "sideA": "En el catálogo se muestran sub secciones.",
+      "sideB": [
+        {
+          "text": "Sub-sections are shown in the catalog.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1360_sideB_0.mp3"
+        },
+        {
+          "text": "The catalog displays sub-sections.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1360_sideB_1.mp3"
+        },
+        {
+          "text": "There are sub-sections shown in the catalog.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1360_sideB_2.mp3"
+        },
+        {
+          "text": "Sub-sections are displayed in the catalog.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1360_sideB_3.mp3"
+        }
+      ],
+      "note": "~In the catalog are shown sub-sections~ is not a natural word order in English. You must either use the passive voice properly ([Sub-sections are shown in the catalog]) or use a dummy subject ([There are sub-sections shown in the catalog])."
+    },
+    {
+      "cardId": "mi_1361",
+      "cardType": "flippable",
+      "sideA": "Soy de Chile en Latinoamérica.",
+      "sideB": [
+        {
+          "text": "I am from Chile in Latin America.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1361_sideB_0.mp3"
+        },
+        {
+          "text": "I'm from Chile, in Latin America.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1361_sideB_1.mp3"
+        },
+        {
+          "text": "I come from Chile, Latin America.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1361_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1362",
+      "cardType": "flippable",
+      "sideA": "Se necesita establecer ese atributo o parámetro en el workflow.",
+      "sideB": [
+        {
+          "text": "That attribute or parameter needs to be set in the workflow.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1362_sideB_0.mp3"
+        },
+        {
+          "text": "It is necessary to set that attribute or parameter in the workflow.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1362_sideB_1.mp3"
+        },
+        {
+          "text": "You need to establish that attribute or parameter in the workflow.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1362_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1363",
+      "cardType": "flippable",
+      "sideA": "¿Alguna novedad sobre cómo proceder con el #71?",
+      "sideB": [
+        {
+          "text": "Any updates on how to proceed with #71?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1363_sideB_0.mp3"
+        },
+        {
+          "text": "Do you have any updates on how to proceed with #71?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1363_sideB_1.mp3"
+        },
+        {
+          "text": "Are there any updates on how to move forward with #71?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1363_sideB_2.mp3"
+        },
+        {
+          "text": "Any news on how to proceed with #71?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1363_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1364",
+      "cardType": "flippable",
+      "sideA": "Necesitamos un dropdown con un multiplicador de 1.",
+      "sideB": [
+        {
+          "text": "We need a dropdown with a multiplier of 1.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1364_sideB_0.mp3"
+        },
+        {
+          "text": "We require a dropdown menu with a multiplier of 1.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1364_sideB_1.mp3"
+        },
+        {
+          "text": "We need a select dropdown with a multiplier of 1.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1364_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1365",
+      "cardType": "flippable",
+      "sideA": "Soy el que hace que las cosas sucedan.",
+      "sideB": [
+        {
+          "text": "I am the one who gets things done.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1365_sideB_0.mp3"
+        },
+        {
+          "text": "I'm the one who makes things happen.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1365_sideB_1.mp3"
+        },
+        {
+          "text": "I am the person who gets things done.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1365_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1366",
+      "cardType": "flippable",
+      "sideA": "Se te escucha entrecortado (hablando en una reunión).",
+      "sideB": [
+        {
+          "text": "You are breaking up.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1366_sideB_0.mp3"
+        },
+        {
+          "text": "Your audio is cutting out.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1366_sideB_1.mp3"
+        },
+        {
+          "text": "You are cutting out a bit.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1366_sideB_2.mp3"
+        },
+        {
+          "text": "Your voice is cutting out.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1366_sideB_3.mp3"
+        }
+      ],
+      "note": "**[pv:11]**\n\n**[pv:44]**\n\n**[pv:200]**\n\n~You are cutting off~ and ~You sound a bit cut off~ are not natural for a choppy connection; [cut off] implies the call was completely disconnected or someone was interrupted. Also, ~You sound a bit cut out~ is incorrect because we use the active continuous form [cutting out] to describe a poor signal (e.g., [You are cutting out])."
+    },
+    {
+      "cardId": "mi_1367",
+      "cardType": "flippable",
+      "sideA": "Suele cashear las búsquedas y es más rápida.",
+      "sideB": [
+        {
+          "text": "It usually caches the searches and is faster.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1367_sideB_0.mp3"
+        },
+        {
+          "text": "It tends to cache queries, making it faster.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1367_sideB_1.mp3"
+        },
+        {
+          "text": "It often caches the searches and runs quicker.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1367_sideB_2.mp3"
+        },
+        {
+          "text": "It tends to cache queries, and it's faster.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1367_sideB_3.mp3"
+        },
+        {
+          "text": "It tends to cache the queries, and it is faster.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1367_sideB_4.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1368",
+      "cardType": "flippable",
+      "sideA": "Tiende a hacerlo más rápido en producción.",
+      "sideB": [
+        {
+          "text": "It tends to do it faster in production.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1368_sideB_0.mp3"
+        },
+        {
+          "text": "It tends to process it faster in production.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1368_sideB_1.mp3"
+        },
+        {
+          "text": "It usually runs faster in production.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1368_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1369",
+      "cardType": "flippable",
+      "sideA": "Solo faltan 2 fixes.",
+      "sideB": [
+        {
+          "text": "There are only 2 fixes left.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1369_sideB_0.mp3"
+        },
+        {
+          "text": "We only have 2 fixes to go.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1369_sideB_1.mp3"
+        },
+        {
+          "text": "Only 2 fixes remain.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1369_sideB_2.mp3"
+        },
+        {
+          "text": "We only have 2 fixes left.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1369_sideB_3.mp3"
+        }
+      ],
+      "note": "**[er:108]**\n\n~We only lack 2 fixes~ is unnatural. The verb [lack] means a deficiency or absence of something essential (e.g., [We lack resources]), not a countdown of remaining tasks. Use [have... left]."
+    },
+    {
+      "cardId": "mi_1370",
+      "cardType": "flippable",
+      "sideA": "Descomenta esas lineas, y luego comenta las otras de aca.",
+      "sideB": [
+        {
+          "text": "Uncomment those lines, and then comment out the others here.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1370_sideB_0.mp3"
+        },
+        {
+          "text": "Go ahead and uncomment those lines, then comment out the others.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1370_sideB_1.mp3"
+        },
+        {
+          "text": "Uncomment those lines, and then comment the other ones out.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1370_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:221]**\n\n~Uncomment those lines, and then comment the others here~ is incorrect. You must use the phrasal verb [comment out] to refer to disabling code, not just [comment]."
+    },
+    {
+      "cardId": "mi_1371",
+      "cardType": "flippable",
+      "sideA": "Es necesario seguir el procedimiento correcto.",
+      "sideB": [
+        {
+          "text": "It is necessary to follow the proper procedure.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1371_sideB_0.mp3"
+        },
+        {
+          "text": "We need to follow the correct procedure.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1371_sideB_1.mp3"
+        },
+        {
+          "text": "You must follow the correct procedure.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1371_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1372",
+      "cardType": "flippable",
+      "sideA": "Como France lo solicito.",
+      "sideB": [
+        {
+          "text": "As France requested.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1372_sideB_0.mp3"
+        },
+        {
+          "text": "Just as France requested.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1372_sideB_1.mp3"
+        },
+        {
+          "text": "As per France's request.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1372_sideB_2.mp3"
+        },
+        {
+          "text": "As France asked.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1372_sideB_3.mp3"
+        }
+      ],
+      "note": "~As France asked for~ is unnatural here. The verb [ask] means to request an action, which fits perfectly ([As France asked]). [Ask for] requires an object (e.g., [As France asked for it]), but in this structure, just [ask] is preferred."
+    },
+    {
+      "cardId": "mi_1373",
+      "cardType": "flippable",
+      "sideA": "Nosotros notamos este error hace unos dias.",
+      "sideB": [
+        {
+          "text": "We noticed this error a few days ago.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1373_sideB_0.mp3"
+        },
+        {
+          "text": "We spotted this bug a few days ago.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1373_sideB_1.mp3"
+        },
+        {
+          "text": "We caught this error a few days ago.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1373_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1374",
+      "cardType": "flippable",
+      "sideA": "Y lo ultimo que supe fue que ese era el link correcto.",
+      "sideB": [
+        {
+          "text": "And the last thing I heard was that that was the correct link.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1374_sideB_0.mp3"
+        },
+        {
+          "text": "And the last I knew, that was the right link.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1374_sideB_1.mp3"
+        },
+        {
+          "text": "The last I heard was that that was the correct link.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1374_sideB_2.mp3"
+        },
+        {
+          "text": "And the last thing I knew was that that was the correct link.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1374_sideB_3.mp3"
+        },
+        {
+          "text": "And the last I knew was that was the correct link.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1374_sideB_4.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1375",
+      "cardType": "flippable",
+      "sideA": "En vez de estar al final, ahora esta al comienzo.",
+      "sideB": [
+        {
+          "text": "Instead of being at the end, it is now at the beginning.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1375_sideB_0.mp3"
+        },
+        {
+          "text": "Rather than being at the end, it is now at the beginning.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1375_sideB_1.mp3"
+        },
+        {
+          "text": "It used to be at the end, but now it is at the beginning.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1375_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1376",
+      "cardType": "flippable",
+      "sideA": "Lo testie y funciona.",
+      "sideB": [
+        {
+          "text": "I tested it and it works.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1376_sideB_0.mp3"
+        },
+        {
+          "text": "I tested it and it is working.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1376_sideB_1.mp3"
+        },
+        {
+          "text": "I ran a test on it and it works.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1376_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1377",
+      "cardType": "flippable",
+      "sideA": "Lo testie y no funciona.",
+      "sideB": [
+        {
+          "text": "I tested it and it doesn't work.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1377_sideB_0.mp3"
+        },
+        {
+          "text": "I tested it and it is not working.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1377_sideB_1.mp3"
+        },
+        {
+          "text": "I ran a test on it and it doesn't work.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1377_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1378",
+      "cardType": "flippable",
+      "sideA": "Solo debes descomentar esa linea please.",
+      "sideB": [
+        {
+          "text": "You just need to uncomment that line, please.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1378_sideB_0.mp3"
+        },
+        {
+          "text": "Just uncomment that line, please.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1378_sideB_1.mp3"
+        },
+        {
+          "text": "All you need to do is uncomment that line, please.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1378_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:221]**"
     }
   ]
 }
