@@ -112,9 +112,13 @@
         {
           "text": "There have been so many changes that we haven't left comments explaining what was done.",
           "audioSrc": "public/data/audio/dummy/dummy_145_sideB_3.mp3"
+        },
+        {
+          "text": "There have been so many changes that we didn't document what was done.",
+          "audioSrc": "public/data/audio/dummy_deck/dummy_145_sideB_4.mp3"
         }
       ],
-      "note": "~There have been so many changes that we hadn't commented out what we've done~ changes the meaning. In programming, to [comment out] means to disable code so it doesn't run. To express leaving an explanatory note or discussing something, just use [commented on] or [discussed].\n\n~There have been so many changes that we didn't comment out what was done.~ is incorrect. [Comment out] strictly means disabling code. Use [document] or [comment on]."
+      "note": "**[pv:202]**\n\n~There have been so many changes that we hadn't commented out what we've done~ changes the meaning. In programming, to [comment out] means to disable code so it doesn't run. To express leaving an explanatory note or discussing something, just use [commented on] or [discussed].\n\n~There have been so many changes that we didn't comment out what was done.~ is incorrect. [Comment out] strictly means disabling code. Use [document] or [comment on]."
     },
     {
       "cardId": "dummy_149",
@@ -404,9 +408,13 @@
         {
           "text": "Well, I actually sent you an email regarding this.",
           "audioSrc": "public/data/audio/dummy/dummy_166_sideB_2.mp3"
+        },
+        {
+          "text": "Well, in fact, I sent an email to you about this.",
+          "audioSrc": "public/data/audio/dummy_deck/dummy_166_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:117]****[er:171]**"
     },
     {
       "cardId": "dummy_167",
@@ -424,9 +432,13 @@
         {
           "text": "I actually sent them an email regarding this.",
           "audioSrc": "public/data/audio/dummy/dummy_167_sideB_2.mp3"
+        },
+        {
+          "text": "In fact, I sent an email to them about this.",
+          "audioSrc": "public/data/audio/dummy_deck/dummy_167_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:117]****[er:171]**"
     },
     {
       "cardId": "dummy_168",
@@ -444,9 +456,13 @@
         {
           "text": "What do you mean by that?",
           "audioSrc": "public/data/audio/dummy/dummy_168_sideB_2.mp3"
+        },
+        {
+          "text": "What is that like?",
+          "audioSrc": "public/data/audio/dummy_deck/dummy_168_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "~How is that like?~ is incorrect because [how] cannot be paired with [like] when asking for a description; use [what... like] or [how] alone."
     },
     {
       "cardId": "dummy_169",
@@ -466,7 +482,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_169_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:86]**\n\n[What... like?] asks for a description of character or personality, while [How is...?] asks about health or temporary states."
     },
     {
       "cardId": "dummy_170",
@@ -486,7 +502,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_170_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:86]**\n\n[What... like?] refers to past descriptions of character or appearance, whereas [How...?] refers to a past state or condition."
     }
   ]
 }
