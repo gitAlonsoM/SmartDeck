@@ -6,6 +6,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 SmartDeck is a vanilla-JS Single Page Application (no framework, no bundler, no `package.json`) for studying flashcards with spaced repetition. The HTML page loads every JS file directly via `<script defer>` tags in `index.html` in strict dependency order. Tailwind, Font Awesome, and highlight.js come from CDN.
 
+## Shell environment
+
+**Always use the PowerShell tool** for all shell commands on this machine (Windows 11). The Bash tool routes through `/usr/bin/bash` and does not have access to PowerShell cmdlets like `Get-Content`. Never use the Bash tool here.
+
 ## Running and developing
 
 - **Serve locally:** Open the folder in VS Code and use the Live Server extension (configured to port 5501 in `.vscode/settings.json`). Any static-file server pointed at the repo root works — there is no build step.
