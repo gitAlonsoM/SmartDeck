@@ -542,7 +542,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_172_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~We need to match the behavior of web on mobile.~ is incorrect because [web] requires a definite article when used as a noun phrase here, meaning you should say [the behavior of the web] or use the compound noun [web behavior]."
     },
     {
       "cardId": "dummy_173",
@@ -560,9 +560,13 @@
         {
           "text": "Apparently he's back at work today.",
           "audioSrc": "public/data/audio/dummy/dummy_173_sideB_2.mp3"
+        },
+        {
+          "text": "Supposedly he comes back to work today.",
+          "audioSrc": "public/data/audio/dummy/dummy_173_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "~Supposedly he comes back at work today.~ is incorrect because the verb phrase 'come back' requires the preposition [to] when indicating a return to a place or activity."
     },
     {
       "cardId": "dummy_174",
@@ -602,7 +606,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_175_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~But it's understandable and that's what it matters.~ is incorrect because the pronoun [it] is redundant since [what] already functions as the subject of the verb [matters]."
     },
     {
       "cardId": "dummy_176",
@@ -620,6 +624,10 @@
         {
           "text": "All that matters is that it makes sense.",
           "audioSrc": "public/data/audio/dummy/dummy_176_sideB_2.mp3"
+        },
+        {
+          "text": "What matters is it's understandable.",
+          "audioSrc": "public/data/audio/dummy/dummy_176_sideB_3.mp3"
         }
       ],
       "note": null
@@ -642,7 +650,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_177_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:212]**"
     },
     {
       "cardId": "dummy_178",
@@ -660,6 +668,10 @@
         {
           "text": "Items are arranged alphabetically.",
           "audioSrc": "public/data/audio/dummy/dummy_178_sideB_2.mp3"
+        },
+        {
+          "text": "Products are ordered alphabetically.",
+          "audioSrc": "public/data/audio/dummy/dummy_178_sideB_3.mp3"
         }
       ],
       "note": null
@@ -682,7 +694,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_179_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~You can drop the content of that cell without any problems.~ is incorrect because [drop] is typically used for removing entire database structures like tables or columns, whereas individual cell values are modified using [clear] or [delete]."
     },
     {
       "cardId": "dummy_180",
@@ -720,9 +732,13 @@
         {
           "text": "And France confirmed she couldn't reproduce it either.",
           "audioSrc": "public/data/audio/dummy/dummy_181_sideB_2.mp3"
+        },
+        {
+          "text": "And France confirmed she couldn't either.",
+          "audioSrc": "public/data/audio/dummy/dummy_181_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:101]**"
     }
   ]
 }
