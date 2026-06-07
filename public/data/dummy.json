@@ -278,15 +278,15 @@
           "audioSrc": "public/data/audio/dummy/dummy_161_sideB_0.mp3"
         },
         {
-          "text": "How should I call this sign? Let me paste it into the chat.",
+          "text": "How can I describe this symbol? Let me paste it in the chat.",
           "audioSrc": "public/data/audio/dummy/dummy_161_sideB_1.mp3"
         },
         {
-          "text": "How can I describe this symbol? Let me paste it in the chat.",
+          "text": "What should I call this sign? Let me paste it in the chat.",
           "audioSrc": "public/data/audio/dummy/dummy_161_sideB_2.mp3"
         }
       ],
-      "note": "**[er:223]**\n\n~How can I call this symbol?~ is incorrect. In English, we use [What] to ask for a name or label, not [How]. Use [What can I call this symbol?]."
+      "note": "**[er:223]**\n\n~How can I call this symbol?~ is incorrect. In English, we use [What] to ask for a name or label, not [How]. Use [What can I call this symbol?].\n\nActually, ~How should I call this sign?~ is ALSO incorrect. In English, whether you use 'can' or 'should', you must always use [What] to ask for a name or label (e.g., [What should I call this?]). Using [How] asks about the method or process of communication."
     },
     {
       "cardId": "dummy_162",
@@ -540,6 +540,14 @@
         {
           "text": "We need to mirror the web behavior on mobile.",
           "audioSrc": "public/data/audio/dummy/dummy_172_sideB_2.mp3"
+        },
+        {
+          "text": "We need to match the behavior of the web on mobile.",
+          "audioSrc": "public/data/audio/dummy/dummy_172_sideB_3.mp3"
+        },
+        {
+          "text": "We need to match the web behavior to mobile.",
+          "audioSrc": "public/data/audio/dummy/dummy_172_sideB_4.mp3"
         }
       ],
       "note": "~We need to match the behavior of web on mobile.~ is incorrect because [web] requires a definite article when used as a noun phrase here, meaning you should say [the behavior of the web] or use the compound noun [web behavior]."
@@ -564,9 +572,13 @@
         {
           "text": "Supposedly he comes back to work today.",
           "audioSrc": "public/data/audio/dummy/dummy_173_sideB_3.mp3"
+        },
+        {
+          "text": "Supposedly he's coming back today to work.",
+          "audioSrc": "public/data/audio/dummy/dummy_173_sideB_4.mp3"
         }
       ],
-      "note": "~Supposedly he comes back at work today.~ is incorrect because the verb phrase 'come back' requires the preposition [to] when indicating a return to a place or activity."
+      "note": "~Supposedly he comes back at work today.~ is incorrect because the verb phrase 'come back' requires the preposition [to] when indicating a return to a place or activity.\n\n~Supposedly he comes back today for work~ is not natural. When talking about returning to a workplace, we use the preposition [to], as in [come back to work]. The phrase [for work] typically implies returning for a specific purpose or task rather than returning to your normal location."
     },
     {
       "cardId": "dummy_174",
@@ -606,7 +618,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_175_sideB_2.mp3"
         }
       ],
-      "note": "~But it's understandable and that's what it matters.~ is incorrect because the pronoun [it] is redundant since [what] already functions as the subject of the verb [matters]."
+      "note": "**[er:63]**\n\n~But it's understandable and that's what it matters.~ is incorrect because the pronoun [it] is redundant since [what] already functions as the subject of the verb [matters]."
     },
     {
       "cardId": "dummy_176",
@@ -630,7 +642,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_176_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "~What matters it's to be understandable~ is incorrect because it contains a redundant [it's]. The phrase [What matters] acts as the subject, so you should connect it directly to the verb [is], as in [What matters is that it's understandable]."
     },
     {
       "cardId": "dummy_177",
@@ -674,7 +686,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_178_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "Yes, in this context, [sorted] and [ordered] are synonyms. Both refer to arranging items in a specific sequence, such as alphabetically."
     },
     {
       "cardId": "dummy_179",
@@ -739,6 +751,86 @@
         }
       ],
       "note": "**[er:101]**"
-    }
+    },
+    {
+        "cardId": "dummy_182",
+        "cardType": "flippable",
+        "sideA": "Ocurrio una desincronizacion en el procedimiento.",
+        "sideB": [
+          {
+            "text": "A desynchronization occurred in the procedure.",
+            "audioSrc": "public/data/audio/dummy/dummy_182_sideB_0.mp3"
+          },
+          {
+            "text": "A desync occurred in the procedure.",
+            "audioSrc": "public/data/audio/dummy/dummy_182_sideB_1.mp3"
+          },
+          {
+            "text": "An out-of-sync issue occurred during the procedure.",
+            "audioSrc": "public/data/audio/dummy/dummy_182_sideB_2.mp3"
+          }
+        ],
+        "note": null
+      },
+      {
+        "cardId": "dummy_183",
+        "cardType": "flippable",
+        "sideA": "Al parecer hay una desincronizacion en la funcion.",
+        "sideB": [
+          {
+            "text": "Apparently, there is a desynchronization in the function.",
+            "audioSrc": "public/data/audio/dummy/dummy_183_sideB_0.mp3"
+          },
+          {
+            "text": "It seems there is a desync in the function.",
+            "audioSrc": "public/data/audio/dummy/dummy_183_sideB_1.mp3"
+          },
+          {
+            "text": "There appears to be an out-of-sync issue in the function.",
+            "audioSrc": "public/data/audio/dummy/dummy_183_sideB_2.mp3"
+          }
+        ],
+        "note": null
+      },
+      {
+        "cardId": "dummy_184",
+        "cardType": "flippable",
+        "sideA": "Normalizamos la descripción pasándolo a mayúscula.",
+        "sideB": [
+          {
+            "text": "We normalize the description by converting it to uppercase.",
+            "audioSrc": "public/data/audio/dummy/dummy_184_sideB_0.mp3"
+          },
+          {
+            "text": "We normalized the description, changing it to uppercase.",
+            "audioSrc": "public/data/audio/dummy/dummy_184_sideB_1.mp3"
+          },
+          {
+            "text": "We normalize the description, making it uppercase.",
+            "audioSrc": "public/data/audio/dummy/dummy_184_sideB_2.mp3"
+          }
+        ],
+        "note": null
+      },
+      {
+        "cardId": "dummy_185",
+        "cardType": "flippable",
+        "sideA": "Normalizamos el titulo pasándolo a minuscula.",
+        "sideB": [
+          {
+            "text": "We normalize the title by converting it to lowercase.",
+            "audioSrc": "public/data/audio/dummy/dummy_185_sideB_0.mp3"
+          },
+          {
+            "text": "We normalized the title, changing it to lowercase.",
+            "audioSrc": "public/data/audio/dummy/dummy_185_sideB_1.mp3"
+          },
+          {
+            "text": "We normalize the title, making it lowercase.",
+            "audioSrc": "public/data/audio/dummy/dummy_185_sideB_2.mp3"
+          }
+        ],
+        "note": null
+      }
   ]
 }
