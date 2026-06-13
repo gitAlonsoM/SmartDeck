@@ -9,33 +9,39 @@ class TTSService {
      * This can be asynchronous, so it returns a promise.
      */
     static init() {
-        return new Promise((resolve, reject) => {
+        return new Promise((resolve) => {
             if (TTSService.isInitialized) {
                 resolve();
                 return;
             }
 
+            // Mark the service ready immediately so app startup is NEVER blocked by
+            // voice availability. TTS is a non-essential, degradable feature (the app
+            // also has pre-generated audio fallback), so the bootstrap must not depend
+            // on it. Voices are populated opportunistically below and may also arrive
+            // later via the 'voiceschanged' event (common on mobile / first paint).
+            TTSService.isInitialized = true;
+
             const loadVoices = () => {
-                TTSService.voices = window.speechSynthesis.getVoices();
-                if (TTSService.voices.length > 0) {
-                    TTSService.isInitialized = true;
-                    console.log("DEBUG: [TTSService] Voices loaded successfully.", TTSService.voices);
-                    resolve();
+                const available = window.speechSynthesis.getVoices();
+                if (available && available.length > 0) {
+                    TTSService.voices = available;
+                    console.log(`DEBUG: [TTSService] Voices loaded successfully (${available.length}).`);
                 }
             };
 
-            // Voices are loaded asynchronously. We need to wait for the 'voiceschanged' event.
+            // Voices load asynchronously on most browsers. Keep listening so they
+            // populate whenever the engine makes them available (even after startup).
             window.speechSynthesis.onvoiceschanged = loadVoices;
-            // Also call it directly in case the voices are already loaded.
+            // Also try immediately in case they are already available.
             loadVoices();
 
-            // Failsafe timeout
-            setTimeout(() => {
-                if (!TTSService.isInitialized) {
-                    console.error("DEBUG: [TTSService] Failed to load voices in time.");
-                    reject("TTS voices could not be loaded.");
-                }
-            }, 2000);
+            if (TTSService.voices.length === 0) {
+                console.warn("DEBUG: [TTSService] No voices yet; continuing startup. Will populate on 'voiceschanged'.");
+            }
+
+            // Resolve right away — never reject. A missing voice list must not crash the app.
+            resolve();
         });
     }
 
@@ -68,8 +74,17 @@ class TTSService {
         // Cancel any currently speaking utterance to avoid overlap.
         window.speechSynthesis.cancel();
 
+        // Lazy refresh: on mobile the voice list often only becomes available after
+        // the first user interaction, which is exactly when speak() runs.
+        if (TTSService.voices.length === 0) {
+            const available = window.speechSynthesis.getVoices();
+            if (available && available.length > 0) {
+                TTSService.voices = available;
+            }
+        }
+
         const utterance = new SpeechSynthesisUtterance(text);
-        
+
         if (voiceName) {
             const selectedVoice = TTSService.voices.find(voice => voice.name === voiceName);
             if (selectedVoice) {
