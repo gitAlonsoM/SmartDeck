@@ -140,6 +140,10 @@
         {
           "text": "I am left with 2 minutes to wrap it up.",
           "audioSrc": "public/data/audio/dummy/dummy_149_sideB_3.mp3"
+        },
+        {
+          "text": "I only have 2 minutes to finish it.",
+          "audioSrc": "public/data/audio/dummy/dummy_149_sideB_4.mp3"
         }
       ],
       "note": null
@@ -360,6 +364,10 @@
         {
           "text": "Before, because the data got overwritten, there wasn't an error.",
           "audioSrc": "public/data/audio/dummy/dummy_164_sideB_3.mp3"
+        },
+        {
+          "text": "Before, since the data was rewritten, there was no error.",
+          "audioSrc": "public/data/audio/dummy/dummy_164_sideB_4.mp3"
         }
       ],
       "note": "**[er:82]**\n\n**[er:215]**\n\n~Before, because the data got overwrite, there wasn't an error.~ is incorrect. When using the 'get' passive, the verb must be in the past participle form: [got overwritten].\n\n~Before, because of the data got overwrite, there wasn't an error.~ is incorrect. First, it uses the base verb instead of the past participle [got overwritten]. Second, [because of] must be followed by a noun or noun phrase, not a full clause with a subject and verb. Use [because] instead."
@@ -642,7 +650,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_176_sideB_3.mp3"
         }
       ],
-      "note": "~What matters it's to be understandable~ is incorrect because it contains a redundant [it's]. The phrase [What matters] acts as the subject, so you should connect it directly to the verb [is], as in [What matters is that it's understandable]."
+      "note": "~What matters it's to be understandable~ is incorrect because it contains a redundant [it's]. The phrase [What matters] acts as the subject, so you should connect it directly to the verb [is], as in [What matters is that it's understandable].\n\n~What matters is to be understandable~ is unnatural. You need to specify what is being understandable. It is better to use a full clause like [is that it's understandable] or specify the object like [for it to be understandable]."
     },
     {
       "cardId": "dummy_177",
@@ -753,84 +761,448 @@
       "note": "**[er:101]**"
     },
     {
-        "cardId": "dummy_182",
-        "cardType": "flippable",
-        "sideA": "Ocurrio una desincronizacion en el procedimiento.",
-        "sideB": [
-          {
-            "text": "A desynchronization occurred in the procedure.",
-            "audioSrc": "public/data/audio/dummy/dummy_182_sideB_0.mp3"
-          },
-          {
-            "text": "A desync occurred in the procedure.",
-            "audioSrc": "public/data/audio/dummy/dummy_182_sideB_1.mp3"
-          },
-          {
-            "text": "An out-of-sync issue occurred during the procedure.",
-            "audioSrc": "public/data/audio/dummy/dummy_182_sideB_2.mp3"
-          }
-        ],
-        "note": null
-      },
-      {
-        "cardId": "dummy_183",
-        "cardType": "flippable",
-        "sideA": "Al parecer hay una desincronizacion en la funcion.",
-        "sideB": [
-          {
-            "text": "Apparently, there is a desynchronization in the function.",
-            "audioSrc": "public/data/audio/dummy/dummy_183_sideB_0.mp3"
-          },
-          {
-            "text": "It seems there is a desync in the function.",
-            "audioSrc": "public/data/audio/dummy/dummy_183_sideB_1.mp3"
-          },
-          {
-            "text": "There appears to be an out-of-sync issue in the function.",
-            "audioSrc": "public/data/audio/dummy/dummy_183_sideB_2.mp3"
-          }
-        ],
-        "note": null
-      },
-      {
-        "cardId": "dummy_184",
-        "cardType": "flippable",
-        "sideA": "Normalizamos la descripción pasándolo a mayúscula.",
-        "sideB": [
-          {
-            "text": "We normalize the description by converting it to uppercase.",
-            "audioSrc": "public/data/audio/dummy/dummy_184_sideB_0.mp3"
-          },
-          {
-            "text": "We normalized the description, changing it to uppercase.",
-            "audioSrc": "public/data/audio/dummy/dummy_184_sideB_1.mp3"
-          },
-          {
-            "text": "We normalize the description, making it uppercase.",
-            "audioSrc": "public/data/audio/dummy/dummy_184_sideB_2.mp3"
-          }
-        ],
-        "note": null
-      },
-      {
-        "cardId": "dummy_185",
-        "cardType": "flippable",
-        "sideA": "Normalizamos el titulo pasándolo a minuscula.",
-        "sideB": [
-          {
-            "text": "We normalize the title by converting it to lowercase.",
-            "audioSrc": "public/data/audio/dummy/dummy_185_sideB_0.mp3"
-          },
-          {
-            "text": "We normalized the title, changing it to lowercase.",
-            "audioSrc": "public/data/audio/dummy/dummy_185_sideB_1.mp3"
-          },
-          {
-            "text": "We normalize the title, making it lowercase.",
-            "audioSrc": "public/data/audio/dummy/dummy_185_sideB_2.mp3"
-          }
-        ],
-        "note": null
-      }
+      "cardId": "dummy_182",
+      "cardType": "flippable",
+      "sideA": "Ocurrio una desincronizacion en el procedimiento.",
+      "sideB": [
+        {
+          "text": "A desynchronization occurred in the procedure.",
+          "audioSrc": "public/data/audio/dummy/dummy_182_sideB_0.mp3"
+        },
+        {
+          "text": "A desync occurred in the procedure.",
+          "audioSrc": "public/data/audio/dummy/dummy_182_sideB_1.mp3"
+        },
+        {
+          "text": "An out-of-sync issue occurred during the procedure.",
+          "audioSrc": "public/data/audio/dummy/dummy_182_sideB_2.mp3"
+        }
+      ],
+      "note": "~It happened a desynchronization in the procedure.~ and ~It occurred a desynchronization in the procedure.~ are incorrect. In English, you cannot use [It] as a dummy subject to introduce an event in this way. You must either make the event the subject itself, like [A desynchronization occurred], or use [There was a desynchronization]."
+    },
+    {
+      "cardId": "dummy_183",
+      "cardType": "flippable",
+      "sideA": "Al parecer hay una desincronizacion en la funcion.",
+      "sideB": [
+        {
+          "text": "Apparently, there is a desynchronization in the function.",
+          "audioSrc": "public/data/audio/dummy/dummy_183_sideB_0.mp3"
+        },
+        {
+          "text": "It seems there is a desync in the function.",
+          "audioSrc": "public/data/audio/dummy/dummy_183_sideB_1.mp3"
+        },
+        {
+          "text": "There appears to be an out-of-sync issue in the function.",
+          "audioSrc": "public/data/audio/dummy/dummy_183_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_184",
+      "cardType": "flippable",
+      "sideA": "Normalizamos la descripción pasándolo a mayúscula.",
+      "sideB": [
+        {
+          "text": "We normalize the description by converting it to uppercase.",
+          "audioSrc": "public/data/audio/dummy/dummy_184_sideB_0.mp3"
+        },
+        {
+          "text": "We normalized the description, changing it to uppercase.",
+          "audioSrc": "public/data/audio/dummy/dummy_184_sideB_1.mp3"
+        },
+        {
+          "text": "We normalize the description, making it uppercase.",
+          "audioSrc": "public/data/audio/dummy/dummy_184_sideB_2.mp3"
+        },
+        {
+          "text": "We normalize the description converting it to uppercase.",
+          "audioSrc": "public/data/audio/dummy/dummy_184_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_185",
+      "cardType": "flippable",
+      "sideA": "Normalizamos el titulo pasándolo a minuscula.",
+      "sideB": [
+        {
+          "text": "We normalize the title by converting it to lowercase.",
+          "audioSrc": "public/data/audio/dummy/dummy_185_sideB_0.mp3"
+        },
+        {
+          "text": "We normalized the title, changing it to lowercase.",
+          "audioSrc": "public/data/audio/dummy/dummy_185_sideB_1.mp3"
+        },
+        {
+          "text": "We normalize the title, making it lowercase.",
+          "audioSrc": "public/data/audio/dummy/dummy_185_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:125]**\n\n~We normalize the title converting it by to lowercase.~ is incorrect because [by] is misplaced and unnecessary here. You can either use [by converting it to] to show the method, or just [converting it to]."
+    },
+    {
+          "cardId": "dummy_186",
+          "cardType": "flippable",
+          "sideA": "6 es mayor que 4.",
+          "sideB": [
+            {
+              "text": "6 is greater than 4.",
+              "audioSrc": "public/data/audio/dummy/dummy_186_sideB_0.mp3"
+            },
+            {
+              "text": "Six is greater than four.",
+              "audioSrc": "public/data/audio/dummy/dummy_186_sideB_1.mp3"
+            },
+            {
+              "text": "6 is more than 4.",
+              "audioSrc": "public/data/audio/dummy/dummy_186_sideB_2.mp3"
+            }
+          ],
+          "note": null
+        },
+        {
+          "cardId": "dummy_187",
+          "cardType": "flippable",
+          "sideA": "8 es menor que 5.",
+          "sideB": [
+            {
+              "text": "8 is less than 5.",
+              "audioSrc": "public/data/audio/dummy/dummy_187_sideB_0.mp3"
+            },
+            {
+              "text": "Eight is less than five.",
+              "audioSrc": "public/data/audio/dummy/dummy_187_sideB_1.mp3"
+            },
+            {
+              "text": "8 is smaller than 5.",
+              "audioSrc": "public/data/audio/dummy/dummy_187_sideB_2.mp3"
+            }
+          ],
+          "note": null
+        },
+        {
+          "cardId": "dummy_188",
+          "cardType": "flippable",
+          "sideA": "Este producto sobra.",
+          "sideB": [
+            {
+              "text": "This product is extra.",
+              "audioSrc": "public/data/audio/dummy/dummy_188_sideB_0.mp3"
+            },
+            {
+              "text": "This product is left over.",
+              "audioSrc": "public/data/audio/dummy/dummy_188_sideB_1.mp3"
+            },
+            {
+              "text": "We have this product left over.",
+              "audioSrc": "public/data/audio/dummy/dummy_188_sideB_2.mp3"
+            }
+          ],
+          "note": null
+        },
+        {
+          "cardId": "dummy_189",
+          "cardType": "flippable",
+          "sideA": "Realmente estos resultados sobran, no los necesitamos.",
+          "sideB": [
+            {
+              "text": "These results are really redundant; we don't need them.",
+              "audioSrc": "public/data/audio/dummy/dummy_189_sideB_0.mp3"
+            },
+            {
+              "text": "We really have extra results here; we don't need them.",
+              "audioSrc": "public/data/audio/dummy/dummy_189_sideB_1.mp3"
+            },
+            {
+              "text": "These results are actually unnecessary; we don't need them.",
+              "audioSrc": "public/data/audio/dummy/dummy_189_sideB_2.mp3"
+            }
+          ],
+          "note": null
+        },
+        {
+          "cardId": "dummy_190",
+          "cardType": "flippable",
+          "sideA": "Está pendiente eso para mañana.",
+          "sideB": [
+            {
+              "text": "That's pending for tomorrow.",
+              "audioSrc": "public/data/audio/dummy/dummy_190_sideB_0.mp3"
+            },
+            {
+              "text": "That is pending for tomorrow.",
+              "audioSrc": "public/data/audio/dummy/dummy_190_sideB_1.mp3"
+            },
+            {
+              "text": "That remains pending for tomorrow.",
+              "audioSrc": "public/data/audio/dummy/dummy_190_sideB_2.mp3"
+            }
+          ],
+          "note": null
+        },
+        {
+          "cardId": "dummy_191",
+          "cardType": "flippable",
+          "sideA": "Eso queda pendiente para mañana.",
+          "sideB": [
+            {
+              "text": "That's left over for tomorrow.",
+              "audioSrc": "public/data/audio/dummy/dummy_191_sideB_0.mp3"
+            },
+            {
+              "text": "That is left over for tomorrow.",
+              "audioSrc": "public/data/audio/dummy/dummy_191_sideB_1.mp3"
+            },
+            {
+              "text": "That remains left for tomorrow.",
+              "audioSrc": "public/data/audio/dummy/dummy_191_sideB_2.mp3"
+            }
+          ],
+          "note": null
+        },
+        {
+          "cardId": "dummy_192",
+          "cardType": "flippable",
+          "sideA": "¿Sentiste el terremoto?",
+          "sideB": [
+            {
+              "text": "Did you feel the earthquake?",
+              "audioSrc": "public/data/audio/dummy/dummy_192_sideB_0.mp3"
+            },
+            {
+              "text": "Could you feel the earthquake?",
+              "audioSrc": "public/data/audio/dummy/dummy_192_sideB_1.mp3"
+            },
+            {
+              "text": "Did you feel that earthquake?",
+              "audioSrc": "public/data/audio/dummy/dummy_192_sideB_2.mp3"
+            }
+          ],
+          "note": null
+        },
+        {
+          "cardId": "dummy_193",
+          "cardType": "flippable",
+          "sideA": "¿Hubo un terremoto o un temblor?",
+          "sideB": [
+            {
+              "text": "Was there an earthquake or a tremor?",
+              "audioSrc": "public/data/audio/dummy/dummy_193_sideB_0.mp3"
+            },
+            {
+              "text": "Did we have an earthquake or just a tremor?",
+              "audioSrc": "public/data/audio/dummy/dummy_193_sideB_1.mp3"
+            },
+            {
+              "text": "Was that an earthquake or a tremor?",
+              "audioSrc": "public/data/audio/dummy/dummy_193_sideB_2.mp3"
+            }
+          ],
+          "note": null
+        },
+        {
+          "cardId": "dummy_194",
+          "cardType": "flippable",
+          "sideA": "Eso es un requisito de las stores (Android e iOS).",
+          "sideB": [
+            {
+              "text": "That is a requirement from the stores (Android and iOS).",
+              "audioSrc": "public/data/audio/dummy/dummy_194_sideB_0.mp3"
+            },
+            {
+              "text": "That's a store requirement (Android and iOS).",
+              "audioSrc": "public/data/audio/dummy/dummy_194_sideB_1.mp3"
+            },
+            {
+              "text": "That is required by the stores (Android and iOS).",
+              "audioSrc": "public/data/audio/dummy/dummy_194_sideB_2.mp3"
+            }
+          ],
+          "note": null
+        },
+        {
+          "cardId": "dummy_195",
+          "cardType": "flippable",
+          "sideA": "¿Puedes hacer cherry pick de ese commit a la rama principal?",
+          "sideB": [
+            {
+              "text": "Can you cherry-pick that commit to the main branch?",
+              "audioSrc": "public/data/audio/dummy/dummy_195_sideB_0.mp3"
+            },
+            {
+              "text": "You need to cherry-pick that commit into the main branch.",
+              "audioSrc": "public/data/audio/dummy/dummy_195_sideB_1.mp3"
+            },
+            {
+              "text": "Are you able to cherry-pick that commit to main?",
+              "audioSrc": "public/data/audio/dummy/dummy_195_sideB_2.mp3"
+            }
+          ],
+          "note": null
+        },
+        {
+          "cardId": "dummy_196",
+          "cardType": "flippable",
+          "sideA": "Deberíamos hacer cherry pick de los mejores candidatos para el proyecto.",
+          "sideB": [
+            {
+              "text": "We should cherry-pick the best candidates for the project.",
+              "audioSrc": "public/data/audio/dummy/dummy_196_sideB_0.mp3"
+            },
+            {
+              "text": "Let's cherry-pick the top candidates for the team.",
+              "audioSrc": "public/data/audio/dummy/dummy_196_sideB_1.mp3"
+            },
+            {
+              "text": "We need to cherry-pick the most suitable applicants.",
+              "audioSrc": "public/data/audio/dummy/dummy_196_sideB_2.mp3"
+            }
+          ],
+          "note": null
+        },
+        {
+          "cardId": "dummy_197",
+          "cardType": "flippable",
+          "sideA": "Aún no he tenido respuesta de él.",
+          "sideB": [
+            {
+              "text": "I haven't heard back from him yet.",
+              "audioSrc": "public/data/audio/dummy/dummy_197_sideB_0.mp3"
+            },
+            {
+              "text": "I still haven't received a reply from him.",
+              "audioSrc": "public/data/audio/dummy/dummy_197_sideB_1.mp3"
+            },
+            {
+              "text": "I haven't had a response from him yet.",
+              "audioSrc": "public/data/audio/dummy/dummy_197_sideB_2.mp3"
+            }
+          ],
+          "note": null
+        },
+        {
+          "cardId": "dummy_198",
+          "cardType": "flippable",
+          "sideA": "Aún no he sabido nada acerca de eso.",
+          "sideB": [
+            {
+              "text": "I haven't heard anything about that yet.",
+              "audioSrc": "public/data/audio/dummy/dummy_198_sideB_0.mp3"
+            },
+            {
+              "text": "I still haven't received any news regarding that.",
+              "audioSrc": "public/data/audio/dummy/dummy_198_sideB_1.mp3"
+            },
+            {
+              "text": "I haven't found out anything about that yet.",
+              "audioSrc": "public/data/audio/dummy/dummy_198_sideB_2.mp3"
+            }
+          ],
+          "note": null
+        },
+        {
+          "cardId": "dummy_199",
+          "cardType": "flippable",
+          "sideA": "Azure DevOps es la plataforma donde está alojado el repositorio.",
+          "sideB": [
+            {
+              "text": "Azure DevOps is the platform where the repository is hosted.",
+              "audioSrc": "public/data/audio/dummy/dummy_199_sideB_0.mp3"
+            },
+            {
+              "text": "Azure DevOps is the hosting platform for the repository.",
+              "audioSrc": "public/data/audio/dummy/dummy_199_sideB_1.mp3"
+            },
+            {
+              "text": "The repository is hosted on the Azure DevOps platform.",
+              "audioSrc": "public/data/audio/dummy/dummy_199_sideB_2.mp3"
+            }
+          ],
+          "note": null
+        },
+        {
+          "cardId": "dummy_200",
+          "cardType": "flippable",
+          "sideA": "Azure DevOps es como decir GitHub.",
+          "sideB": [
+            {
+              "text": "Azure DevOps is like saying GitHub.",
+              "audioSrc": "public/data/audio/dummy/dummy_200_sideB_0.mp3"
+            },
+            {
+              "text": "Azure DevOps is similar to GitHub.",
+              "audioSrc": "public/data/audio/dummy/dummy_200_sideB_1.mp3"
+            },
+            {
+              "text": "Saying Azure DevOps is just like saying GitHub.",
+              "audioSrc": "public/data/audio/dummy/dummy_200_sideB_2.mp3"
+            }
+          ],
+          "note": null
+        },
+        {
+          "cardId": "dummy_201",
+          "cardType": "flippable",
+          "sideA": "En conversación casual, repositorio y Azure DevOps se usan como sinónimos.",
+          "sideB": [
+            {
+              "text": "In casual conversation, repository and Azure DevOps are used interchangeably.",
+              "audioSrc": "public/data/audio/dummy/dummy_201_sideB_0.mp3"
+            },
+            {
+              "text": "Casually, repository and Azure DevOps are used as synonyms.",
+              "audioSrc": "public/data/audio/dummy/dummy_201_sideB_1.mp3"
+            },
+            {
+              "text": "In everyday conversation, repository and Azure DevOps mean the same thing.",
+              "audioSrc": "public/data/audio/dummy/dummy_201_sideB_2.mp3"
+            }
+          ],
+          "note": null
+        },
+        {
+          "cardId": "dummy_202",
+          "cardType": "flippable",
+          "sideA": "Parseamos el texto pasándolo a números.",
+          "sideB": [
+            {
+              "text": "We parse the text by converting it to numbers.",
+              "audioSrc": "public/data/audio/dummy/dummy_202_sideB_0.mp3"
+            },
+            {
+              "text": "We parsed the text, converting it into numbers.",
+              "audioSrc": "public/data/audio/dummy/dummy_202_sideB_1.mp3"
+            },
+            {
+              "text": "We parse the text to convert it into numbers.",
+              "audioSrc": "public/data/audio/dummy/dummy_202_sideB_2.mp3"
+            }
+          ],
+          "note": null
+        },
+        {
+          "cardId": "dummy_203",
+          "cardType": "flippable",
+          "sideA": "Aquí pasamos los números a formato texto.",
+          "sideB": [
+            {
+              "text": "Here we convert the numbers to text format.",
+              "audioSrc": "public/data/audio/dummy/dummy_203_sideB_0.mp3"
+            },
+            {
+              "text": "Here we pass the numbers into text format.",
+              "audioSrc": "public/data/audio/dummy/dummy_203_sideB_1.mp3"
+            },
+            {
+              "text": "In this step, we convert the numbers into text format.",
+              "audioSrc": "public/data/audio/dummy/dummy_203_sideB_2.mp3"
+            }
+          ],
+          "note": null
+        }
   ]
 }
