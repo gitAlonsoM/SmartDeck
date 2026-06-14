@@ -118,7 +118,7 @@
           "audioSrc": "public/data/audio/dummy_deck/dummy_145_sideB_4.mp3"
         }
       ],
-      "note": "**[pv:202]**\n\n~There have been so many changes that we hadn't commented out what we've done~ changes the meaning. In programming, to [comment out] means to disable code so it doesn't run. To express leaving an explanatory note or discussing something, just use [commented on] or [discussed].\n\n~There have been so many changes that we didn't comment out what was done.~ is incorrect. [Comment out] strictly means disabling code. Use [document] or [comment on]."
+      "note": "**[pv:202]**\n\n~There have been so many changes that we hadn't commented out what we've done~ changes the meaning. In programming, to [comment out] means to disable code so it doesn't run. To express leaving an explanatory note or discussing something, just use [commented on] or [discussed].\n\n~There have been so many changes that we didn't comment out what was done.~ is incorrect. [Comment out] strictly means disabling code. Use [document] or [comment on].\n\n~There has been so many changes that we didn't document what was done~ is incorrect because 'changes' is plural, so it must be [There have been]."
     },
     {
       "cardId": "dummy_149",
@@ -556,6 +556,10 @@
         {
           "text": "We need to match the web behavior to mobile.",
           "audioSrc": "public/data/audio/dummy/dummy_172_sideB_4.mp3"
+        },
+        {
+          "text": "We need to match the web behavior with mobile.",
+          "audioSrc": "public/data/audio/dummy/dummy_172_sideB_5.mp3"
         }
       ],
       "note": "~We need to match the behavior of web on mobile.~ is incorrect because [web] requires a definite article when used as a noun phrase here, meaning you should say [the behavior of the web] or use the compound noun [web behavior]."
@@ -822,7 +826,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_184_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "\n\n~We normalize the description by transformating it to uppercase~ is incorrect because the gerund of 'transform' is [transforming], not 'transformating'."
     },
     {
       "cardId": "dummy_185",
@@ -845,364 +849,408 @@
       "note": "**[er:125]**\n\n~We normalize the title converting it by to lowercase.~ is incorrect because [by] is misplaced and unnecessary here. You can either use [by converting it to] to show the method, or just [converting it to]."
     },
     {
-          "cardId": "dummy_186",
-          "cardType": "flippable",
-          "sideA": "6 es mayor que 4.",
-          "sideB": [
-            {
-              "text": "6 is greater than 4.",
-              "audioSrc": "public/data/audio/dummy/dummy_186_sideB_0.mp3"
-            },
-            {
-              "text": "Six is greater than four.",
-              "audioSrc": "public/data/audio/dummy/dummy_186_sideB_1.mp3"
-            },
-            {
-              "text": "6 is more than 4.",
-              "audioSrc": "public/data/audio/dummy/dummy_186_sideB_2.mp3"
-            }
-          ],
-          "note": null
+      "cardId": "dummy_186",
+      "cardType": "flippable",
+      "sideA": "6 es mayor que 4.",
+      "sideB": [
+        {
+          "text": "6 is greater than 4.",
+          "audioSrc": "public/data/audio/dummy/dummy_186_sideB_0.mp3"
         },
         {
-          "cardId": "dummy_187",
-          "cardType": "flippable",
-          "sideA": "8 es menor que 5.",
-          "sideB": [
-            {
-              "text": "8 is less than 5.",
-              "audioSrc": "public/data/audio/dummy/dummy_187_sideB_0.mp3"
-            },
-            {
-              "text": "Eight is less than five.",
-              "audioSrc": "public/data/audio/dummy/dummy_187_sideB_1.mp3"
-            },
-            {
-              "text": "8 is smaller than 5.",
-              "audioSrc": "public/data/audio/dummy/dummy_187_sideB_2.mp3"
-            }
-          ],
-          "note": null
+          "text": "Six is greater than four.",
+          "audioSrc": "public/data/audio/dummy/dummy_186_sideB_1.mp3"
         },
         {
-          "cardId": "dummy_188",
-          "cardType": "flippable",
-          "sideA": "Este producto sobra.",
-          "sideB": [
-            {
-              "text": "This product is extra.",
-              "audioSrc": "public/data/audio/dummy/dummy_188_sideB_0.mp3"
-            },
-            {
-              "text": "This product is left over.",
-              "audioSrc": "public/data/audio/dummy/dummy_188_sideB_1.mp3"
-            },
-            {
-              "text": "We have this product left over.",
-              "audioSrc": "public/data/audio/dummy/dummy_188_sideB_2.mp3"
-            }
-          ],
-          "note": null
-        },
-        {
-          "cardId": "dummy_189",
-          "cardType": "flippable",
-          "sideA": "Realmente estos resultados sobran, no los necesitamos.",
-          "sideB": [
-            {
-              "text": "These results are really redundant; we don't need them.",
-              "audioSrc": "public/data/audio/dummy/dummy_189_sideB_0.mp3"
-            },
-            {
-              "text": "We really have extra results here; we don't need them.",
-              "audioSrc": "public/data/audio/dummy/dummy_189_sideB_1.mp3"
-            },
-            {
-              "text": "These results are actually unnecessary; we don't need them.",
-              "audioSrc": "public/data/audio/dummy/dummy_189_sideB_2.mp3"
-            }
-          ],
-          "note": null
-        },
-        {
-          "cardId": "dummy_190",
-          "cardType": "flippable",
-          "sideA": "Está pendiente eso para mañana.",
-          "sideB": [
-            {
-              "text": "That's pending for tomorrow.",
-              "audioSrc": "public/data/audio/dummy/dummy_190_sideB_0.mp3"
-            },
-            {
-              "text": "That is pending for tomorrow.",
-              "audioSrc": "public/data/audio/dummy/dummy_190_sideB_1.mp3"
-            },
-            {
-              "text": "That remains pending for tomorrow.",
-              "audioSrc": "public/data/audio/dummy/dummy_190_sideB_2.mp3"
-            }
-          ],
-          "note": null
-        },
-        {
-          "cardId": "dummy_191",
-          "cardType": "flippable",
-          "sideA": "Eso queda pendiente para mañana.",
-          "sideB": [
-            {
-              "text": "That's left over for tomorrow.",
-              "audioSrc": "public/data/audio/dummy/dummy_191_sideB_0.mp3"
-            },
-            {
-              "text": "That is left over for tomorrow.",
-              "audioSrc": "public/data/audio/dummy/dummy_191_sideB_1.mp3"
-            },
-            {
-              "text": "That remains left for tomorrow.",
-              "audioSrc": "public/data/audio/dummy/dummy_191_sideB_2.mp3"
-            }
-          ],
-          "note": null
-        },
-        {
-          "cardId": "dummy_192",
-          "cardType": "flippable",
-          "sideA": "¿Sentiste el terremoto?",
-          "sideB": [
-            {
-              "text": "Did you feel the earthquake?",
-              "audioSrc": "public/data/audio/dummy/dummy_192_sideB_0.mp3"
-            },
-            {
-              "text": "Could you feel the earthquake?",
-              "audioSrc": "public/data/audio/dummy/dummy_192_sideB_1.mp3"
-            },
-            {
-              "text": "Did you feel that earthquake?",
-              "audioSrc": "public/data/audio/dummy/dummy_192_sideB_2.mp3"
-            }
-          ],
-          "note": null
-        },
-        {
-          "cardId": "dummy_193",
-          "cardType": "flippable",
-          "sideA": "¿Hubo un terremoto o un temblor?",
-          "sideB": [
-            {
-              "text": "Was there an earthquake or a tremor?",
-              "audioSrc": "public/data/audio/dummy/dummy_193_sideB_0.mp3"
-            },
-            {
-              "text": "Did we have an earthquake or just a tremor?",
-              "audioSrc": "public/data/audio/dummy/dummy_193_sideB_1.mp3"
-            },
-            {
-              "text": "Was that an earthquake or a tremor?",
-              "audioSrc": "public/data/audio/dummy/dummy_193_sideB_2.mp3"
-            }
-          ],
-          "note": null
-        },
-        {
-          "cardId": "dummy_194",
-          "cardType": "flippable",
-          "sideA": "Eso es un requisito de las stores (Android e iOS).",
-          "sideB": [
-            {
-              "text": "That is a requirement from the stores (Android and iOS).",
-              "audioSrc": "public/data/audio/dummy/dummy_194_sideB_0.mp3"
-            },
-            {
-              "text": "That's a store requirement (Android and iOS).",
-              "audioSrc": "public/data/audio/dummy/dummy_194_sideB_1.mp3"
-            },
-            {
-              "text": "That is required by the stores (Android and iOS).",
-              "audioSrc": "public/data/audio/dummy/dummy_194_sideB_2.mp3"
-            }
-          ],
-          "note": null
-        },
-        {
-          "cardId": "dummy_195",
-          "cardType": "flippable",
-          "sideA": "¿Puedes hacer cherry pick de ese commit a la rama principal?",
-          "sideB": [
-            {
-              "text": "Can you cherry-pick that commit to the main branch?",
-              "audioSrc": "public/data/audio/dummy/dummy_195_sideB_0.mp3"
-            },
-            {
-              "text": "You need to cherry-pick that commit into the main branch.",
-              "audioSrc": "public/data/audio/dummy/dummy_195_sideB_1.mp3"
-            },
-            {
-              "text": "Are you able to cherry-pick that commit to main?",
-              "audioSrc": "public/data/audio/dummy/dummy_195_sideB_2.mp3"
-            }
-          ],
-          "note": null
-        },
-        {
-          "cardId": "dummy_196",
-          "cardType": "flippable",
-          "sideA": "Deberíamos hacer cherry pick de los mejores candidatos para el proyecto.",
-          "sideB": [
-            {
-              "text": "We should cherry-pick the best candidates for the project.",
-              "audioSrc": "public/data/audio/dummy/dummy_196_sideB_0.mp3"
-            },
-            {
-              "text": "Let's cherry-pick the top candidates for the team.",
-              "audioSrc": "public/data/audio/dummy/dummy_196_sideB_1.mp3"
-            },
-            {
-              "text": "We need to cherry-pick the most suitable applicants.",
-              "audioSrc": "public/data/audio/dummy/dummy_196_sideB_2.mp3"
-            }
-          ],
-          "note": null
-        },
-        {
-          "cardId": "dummy_197",
-          "cardType": "flippable",
-          "sideA": "Aún no he tenido respuesta de él.",
-          "sideB": [
-            {
-              "text": "I haven't heard back from him yet.",
-              "audioSrc": "public/data/audio/dummy/dummy_197_sideB_0.mp3"
-            },
-            {
-              "text": "I still haven't received a reply from him.",
-              "audioSrc": "public/data/audio/dummy/dummy_197_sideB_1.mp3"
-            },
-            {
-              "text": "I haven't had a response from him yet.",
-              "audioSrc": "public/data/audio/dummy/dummy_197_sideB_2.mp3"
-            }
-          ],
-          "note": null
-        },
-        {
-          "cardId": "dummy_198",
-          "cardType": "flippable",
-          "sideA": "Aún no he sabido nada acerca de eso.",
-          "sideB": [
-            {
-              "text": "I haven't heard anything about that yet.",
-              "audioSrc": "public/data/audio/dummy/dummy_198_sideB_0.mp3"
-            },
-            {
-              "text": "I still haven't received any news regarding that.",
-              "audioSrc": "public/data/audio/dummy/dummy_198_sideB_1.mp3"
-            },
-            {
-              "text": "I haven't found out anything about that yet.",
-              "audioSrc": "public/data/audio/dummy/dummy_198_sideB_2.mp3"
-            }
-          ],
-          "note": null
-        },
-        {
-          "cardId": "dummy_199",
-          "cardType": "flippable",
-          "sideA": "Azure DevOps es la plataforma donde está alojado el repositorio.",
-          "sideB": [
-            {
-              "text": "Azure DevOps is the platform where the repository is hosted.",
-              "audioSrc": "public/data/audio/dummy/dummy_199_sideB_0.mp3"
-            },
-            {
-              "text": "Azure DevOps is the hosting platform for the repository.",
-              "audioSrc": "public/data/audio/dummy/dummy_199_sideB_1.mp3"
-            },
-            {
-              "text": "The repository is hosted on the Azure DevOps platform.",
-              "audioSrc": "public/data/audio/dummy/dummy_199_sideB_2.mp3"
-            }
-          ],
-          "note": null
-        },
-        {
-          "cardId": "dummy_200",
-          "cardType": "flippable",
-          "sideA": "Azure DevOps es como decir GitHub.",
-          "sideB": [
-            {
-              "text": "Azure DevOps is like saying GitHub.",
-              "audioSrc": "public/data/audio/dummy/dummy_200_sideB_0.mp3"
-            },
-            {
-              "text": "Azure DevOps is similar to GitHub.",
-              "audioSrc": "public/data/audio/dummy/dummy_200_sideB_1.mp3"
-            },
-            {
-              "text": "Saying Azure DevOps is just like saying GitHub.",
-              "audioSrc": "public/data/audio/dummy/dummy_200_sideB_2.mp3"
-            }
-          ],
-          "note": null
-        },
-        {
-          "cardId": "dummy_201",
-          "cardType": "flippable",
-          "sideA": "En conversación casual, repositorio y Azure DevOps se usan como sinónimos.",
-          "sideB": [
-            {
-              "text": "In casual conversation, repository and Azure DevOps are used interchangeably.",
-              "audioSrc": "public/data/audio/dummy/dummy_201_sideB_0.mp3"
-            },
-            {
-              "text": "Casually, repository and Azure DevOps are used as synonyms.",
-              "audioSrc": "public/data/audio/dummy/dummy_201_sideB_1.mp3"
-            },
-            {
-              "text": "In everyday conversation, repository and Azure DevOps mean the same thing.",
-              "audioSrc": "public/data/audio/dummy/dummy_201_sideB_2.mp3"
-            }
-          ],
-          "note": null
-        },
-        {
-          "cardId": "dummy_202",
-          "cardType": "flippable",
-          "sideA": "Parseamos el texto pasándolo a números.",
-          "sideB": [
-            {
-              "text": "We parse the text by converting it to numbers.",
-              "audioSrc": "public/data/audio/dummy/dummy_202_sideB_0.mp3"
-            },
-            {
-              "text": "We parsed the text, converting it into numbers.",
-              "audioSrc": "public/data/audio/dummy/dummy_202_sideB_1.mp3"
-            },
-            {
-              "text": "We parse the text to convert it into numbers.",
-              "audioSrc": "public/data/audio/dummy/dummy_202_sideB_2.mp3"
-            }
-          ],
-          "note": null
-        },
-        {
-          "cardId": "dummy_203",
-          "cardType": "flippable",
-          "sideA": "Aquí pasamos los números a formato texto.",
-          "sideB": [
-            {
-              "text": "Here we convert the numbers to text format.",
-              "audioSrc": "public/data/audio/dummy/dummy_203_sideB_0.mp3"
-            },
-            {
-              "text": "Here we pass the numbers into text format.",
-              "audioSrc": "public/data/audio/dummy/dummy_203_sideB_1.mp3"
-            },
-            {
-              "text": "In this step, we convert the numbers into text format.",
-              "audioSrc": "public/data/audio/dummy/dummy_203_sideB_2.mp3"
-            }
-          ],
-          "note": null
+          "text": "6 is more than 4.",
+          "audioSrc": "public/data/audio/dummy/dummy_186_sideB_2.mp3"
         }
+      ],
+      "note": "**[er:94]**"
+    },
+    {
+      "cardId": "dummy_187",
+      "cardType": "flippable",
+      "sideA": "8 es menor que 5.",
+      "sideB": [
+        {
+          "text": "8 is less than 5.",
+          "audioSrc": "public/data/audio/dummy/dummy_187_sideB_0.mp3"
+        },
+        {
+          "text": "Eight is less than five.",
+          "audioSrc": "public/data/audio/dummy/dummy_187_sideB_1.mp3"
+        },
+        {
+          "text": "8 is smaller than 5.",
+          "audioSrc": "public/data/audio/dummy/dummy_187_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:94]**\n\n~8 is minor than 5~ is incorrect because [minor] is not used for mathematical comparisons; use [less than] or [smaller than] instead."
+    },
+    {
+      "cardId": "dummy_188",
+      "cardType": "flippable",
+      "sideA": "Este producto sobra.",
+      "sideB": [
+        {
+          "text": "This product is extra.",
+          "audioSrc": "public/data/audio/dummy/dummy_188_sideB_0.mp3"
+        },
+        {
+          "text": "This product is left over.",
+          "audioSrc": "public/data/audio/dummy/dummy_188_sideB_1.mp3"
+        },
+        {
+          "text": "We have this product left over.",
+          "audioSrc": "public/data/audio/dummy/dummy_188_sideB_2.mp3"
+        }
+      ],
+      "note": "**[pv:203]**\n\n~This product is left~ is not entirely accurate for 'sobra'. [Left] means remaining ('queda'), while [left over] specifically means extra or surplus ('sobra')."
+    },
+    {
+      "cardId": "dummy_189",
+      "cardType": "flippable",
+      "sideA": "Realmente estos resultados sobran, no los necesitamos.",
+      "sideB": [
+        {
+          "text": "These results are really redundant; we don't need them.",
+          "audioSrc": "public/data/audio/dummy/dummy_189_sideB_0.mp3"
+        },
+        {
+          "text": "We really have extra results here; we don't need them.",
+          "audioSrc": "public/data/audio/dummy/dummy_189_sideB_1.mp3"
+        },
+        {
+          "text": "These results are actually unnecessary; we don't need them.",
+          "audioSrc": "public/data/audio/dummy/dummy_189_sideB_2.mp3"
+        },
+        {
+          "text": "These results are actually extra; we don't need them.",
+          "audioSrc": "public/data/audio/dummy/dummy_189_sideB_3.mp3"
+        },
+        {
+          "text": "These results are actually left over; we don't need them.",
+          "audioSrc": "public/data/audio/dummy/dummy_189_sideB_4.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_190",
+      "cardType": "flippable",
+      "sideA": "Está pendiente eso para mañana.",
+      "sideB": [
+        {
+          "text": "That's pending for tomorrow.",
+          "audioSrc": "public/data/audio/dummy/dummy_190_sideB_0.mp3"
+        },
+        {
+          "text": "That is pending for tomorrow.",
+          "audioSrc": "public/data/audio/dummy/dummy_190_sideB_1.mp3"
+        },
+        {
+          "text": "That remains pending for tomorrow.",
+          "audioSrc": "public/data/audio/dummy/dummy_190_sideB_2.mp3"
+        },
+        {
+          "text": "We left that for tomorrow.",
+          "audioSrc": "public/data/audio/dummy/dummy_190_sideB_3.mp3"
+        }
+      ],
+      "note": "\n\n~That's left over for tomorrow~ is incorrect because [left over] means extra or surplus, not pending. Use [pending] or [left]."
+    },
+    {
+      "cardId": "dummy_191",
+      "cardType": "flippable",
+      "sideA": "Eso queda pendiente para mañana.",
+      "sideB": [
+        {
+          "text": "That's left over for tomorrow.",
+          "audioSrc": "public/data/audio/dummy/dummy_191_sideB_0.mp3"
+        },
+        {
+          "text": "That is left over for tomorrow.",
+          "audioSrc": "public/data/audio/dummy/dummy_191_sideB_1.mp3"
+        },
+        {
+          "text": "That remains left for tomorrow.",
+          "audioSrc": "public/data/audio/dummy/dummy_191_sideB_2.mp3"
+        },
+        {
+          "text": "That is pending for tomorrow.",
+          "audioSrc": "public/data/audio/dummy/dummy_191_sideB_3.mp3"
+        },
+        {
+          "text": "That is for tomorrow.",
+          "audioSrc": "public/data/audio/dummy/dummy_191_sideB_4.mp3"
+        },
+        {
+          "text": "We will leave that for tomorrow.",
+          "audioSrc": "public/data/audio/dummy/dummy_191_sideB_5.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_192",
+      "cardType": "flippable",
+      "sideA": "¿Sentiste el terremoto?",
+      "sideB": [
+        {
+          "text": "Did you feel the earthquake?",
+          "audioSrc": "public/data/audio/dummy/dummy_192_sideB_0.mp3"
+        },
+        {
+          "text": "Could you feel the earthquake?",
+          "audioSrc": "public/data/audio/dummy/dummy_192_sideB_1.mp3"
+        },
+        {
+          "text": "Did you feel that earthquake?",
+          "audioSrc": "public/data/audio/dummy/dummy_192_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_193",
+      "cardType": "flippable",
+      "sideA": "¿Hubo un terremoto o un temblor?",
+      "sideB": [
+        {
+          "text": "Was there an earthquake or a tremor?",
+          "audioSrc": "public/data/audio/dummy/dummy_193_sideB_0.mp3"
+        },
+        {
+          "text": "Did we have an earthquake or just a tremor?",
+          "audioSrc": "public/data/audio/dummy/dummy_193_sideB_1.mp3"
+        },
+        {
+          "text": "Was that an earthquake or a tremor?",
+          "audioSrc": "public/data/audio/dummy/dummy_193_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_194",
+      "cardType": "flippable",
+      "sideA": "Eso es un requisito de las stores (Android e iOS).",
+      "sideB": [
+        {
+          "text": "That is a requirement from the stores (Android and iOS).",
+          "audioSrc": "public/data/audio/dummy/dummy_194_sideB_0.mp3"
+        },
+        {
+          "text": "That's a store requirement (Android and iOS).",
+          "audioSrc": "public/data/audio/dummy/dummy_194_sideB_1.mp3"
+        },
+        {
+          "text": "That is required by the stores (Android and iOS).",
+          "audioSrc": "public/data/audio/dummy/dummy_194_sideB_2.mp3"
+        },
+        {
+          "text": "That is a requirement of the stores (Android and iOS).",
+          "audioSrc": "public/data/audio/dummy/dummy_194_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_195",
+      "cardType": "flippable",
+      "sideA": "¿Puedes hacer cherry pick de ese commit a la rama principal?",
+      "sideB": [
+        {
+          "text": "Can you cherry-pick that commit to the main branch?",
+          "audioSrc": "public/data/audio/dummy/dummy_195_sideB_0.mp3"
+        },
+        {
+          "text": "You need to cherry-pick that commit into the main branch.",
+          "audioSrc": "public/data/audio/dummy/dummy_195_sideB_1.mp3"
+        },
+        {
+          "text": "Are you able to cherry-pick that commit to main?",
+          "audioSrc": "public/data/audio/dummy/dummy_195_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_196",
+      "cardType": "flippable",
+      "sideA": "Deberíamos hacer cherry pick de los mejores candidatos para el proyecto.",
+      "sideB": [
+        {
+          "text": "We should cherry-pick the best candidates for the project.",
+          "audioSrc": "public/data/audio/dummy/dummy_196_sideB_0.mp3"
+        },
+        {
+          "text": "Let's cherry-pick the top candidates for the team.",
+          "audioSrc": "public/data/audio/dummy/dummy_196_sideB_1.mp3"
+        },
+        {
+          "text": "We need to cherry-pick the most suitable applicants.",
+          "audioSrc": "public/data/audio/dummy/dummy_196_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_197",
+      "cardType": "flippable",
+      "sideA": "Aún no he tenido respuesta de él.",
+      "sideB": [
+        {
+          "text": "I haven't heard back from him yet.",
+          "audioSrc": "public/data/audio/dummy/dummy_197_sideB_0.mp3"
+        },
+        {
+          "text": "I still haven't received a reply from him.",
+          "audioSrc": "public/data/audio/dummy/dummy_197_sideB_1.mp3"
+        },
+        {
+          "text": "I haven't had a response from him yet.",
+          "audioSrc": "public/data/audio/dummy/dummy_197_sideB_2.mp3"
+        },
+        {
+          "text": "I haven't had an answer from him yet.",
+          "audioSrc": "public/data/audio/dummy/dummy_197_sideB_3.mp3"
+        },
+        {
+          "text": "I haven't heard anything from him yet.",
+          "audioSrc": "public/data/audio/dummy/dummy_197_sideB_4.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_198",
+      "cardType": "flippable",
+      "sideA": "Aún no he sabido nada acerca de eso.",
+      "sideB": [
+        {
+          "text": "I haven't heard anything about that yet.",
+          "audioSrc": "public/data/audio/dummy/dummy_198_sideB_0.mp3"
+        },
+        {
+          "text": "I still haven't received any news regarding that.",
+          "audioSrc": "public/data/audio/dummy/dummy_198_sideB_1.mp3"
+        },
+        {
+          "text": "I haven't found out anything about that yet.",
+          "audioSrc": "public/data/audio/dummy/dummy_198_sideB_2.mp3"
+        }
+      ],
+      "note": "\n\n~I didn't know anything about that yet~ and ~I haven't known anything about that yet~ are incorrect. In this context, 'saber' refers to receiving news or an update, so you must use [heard] or [found out] instead of 'known'. Additionally, [yet] typically pairs with the present perfect."
+    },
+    {
+      "cardId": "dummy_199",
+      "cardType": "flippable",
+      "sideA": "Azure DevOps es la plataforma donde está alojado el repositorio.",
+      "sideB": [
+        {
+          "text": "Azure DevOps is the platform where the repository is hosted.",
+          "audioSrc": "public/data/audio/dummy/dummy_199_sideB_0.mp3"
+        },
+        {
+          "text": "Azure DevOps is the hosting platform for the repository.",
+          "audioSrc": "public/data/audio/dummy/dummy_199_sideB_1.mp3"
+        },
+        {
+          "text": "The repository is hosted on the Azure DevOps platform.",
+          "audioSrc": "public/data/audio/dummy/dummy_199_sideB_2.mp3"
+        },
+        {
+          "text": "Azure DevOps is the platform where the repository is located.",
+          "audioSrc": "public/data/audio/dummy/dummy_199_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_200",
+      "cardType": "flippable",
+      "sideA": "Azure DevOps es como decir GitHub.",
+      "sideB": [
+        {
+          "text": "Azure DevOps is like saying GitHub.",
+          "audioSrc": "public/data/audio/dummy/dummy_200_sideB_0.mp3"
+        },
+        {
+          "text": "Azure DevOps is similar to GitHub.",
+          "audioSrc": "public/data/audio/dummy/dummy_200_sideB_1.mp3"
+        },
+        {
+          "text": "Saying Azure DevOps is just like saying GitHub.",
+          "audioSrc": "public/data/audio/dummy/dummy_200_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_201",
+      "cardType": "flippable",
+      "sideA": "En conversación casual, repositorio y Azure DevOps se usan como sinónimos.",
+      "sideB": [
+        {
+          "text": "In casual conversation, repository and Azure DevOps are used interchangeably.",
+          "audioSrc": "public/data/audio/dummy/dummy_201_sideB_0.mp3"
+        },
+        {
+          "text": "Casually, repository and Azure DevOps are used as synonyms.",
+          "audioSrc": "public/data/audio/dummy/dummy_201_sideB_1.mp3"
+        },
+        {
+          "text": "In everyday conversation, repository and Azure DevOps mean the same thing.",
+          "audioSrc": "public/data/audio/dummy/dummy_201_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_202",
+      "cardType": "flippable",
+      "sideA": "Parseamos el texto pasándolo a números.",
+      "sideB": [
+        {
+          "text": "We parse the text by converting it to numbers.",
+          "audioSrc": "public/data/audio/dummy/dummy_202_sideB_0.mp3"
+        },
+        {
+          "text": "We parsed the text, converting it into numbers.",
+          "audioSrc": "public/data/audio/dummy/dummy_202_sideB_1.mp3"
+        },
+        {
+          "text": "We parse the text to convert it into numbers.",
+          "audioSrc": "public/data/audio/dummy/dummy_202_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:125]**"
+    },
+    {
+      "cardId": "dummy_203",
+      "cardType": "flippable",
+      "sideA": "Aquí pasamos los números a formato texto.",
+      "sideB": [
+        {
+          "text": "Here we convert the numbers to text format.",
+          "audioSrc": "public/data/audio/dummy/dummy_203_sideB_0.mp3"
+        },
+        {
+          "text": "Here we pass the numbers into text format.",
+          "audioSrc": "public/data/audio/dummy/dummy_203_sideB_1.mp3"
+        },
+        {
+          "text": "In this step, we convert the numbers into text format.",
+          "audioSrc": "public/data/audio/dummy/dummy_203_sideB_2.mp3"
+        },
+        {
+          "text": "Here we transform the numbers to text format.",
+          "audioSrc": "public/data/audio/dummy/dummy_203_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    }
   ]
 }
