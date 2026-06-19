@@ -956,6 +956,10 @@
         {
           "text": "We left that for tomorrow.",
           "audioSrc": "public/data/audio/dummy/dummy_190_sideB_3.mp3"
+        },
+        {
+          "text": "That's left for tomorrow.",
+          "audioSrc": "public/data/audio/dummy/dummy_190_sideB_4.mp3"
         }
       ],
       "note": "\n\n~That's left over for tomorrow~ is incorrect because [left over] means extra or surplus, not pending. Use [pending] or [left]."
@@ -1142,7 +1146,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_198_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~I didn't know anything about that yet~ and ~I haven't known anything about that yet~ are incorrect. In this context, 'saber' refers to receiving news or an update, so you must use [heard] or [found out] instead of 'known'. Additionally, [yet] typically pairs with the present perfect."
+      "note": "**[pv:59]**\n\n~I didn't know anything about that yet~ and ~I haven't known anything about that yet~ are incorrect. Although 'know' translates to 'saber', in English [know] is a state verb (the condition of having knowledge), not an action verb. In Spanish, 'saber' can mean both the state ('yo sé') and the action of receiving news ('no he sabido nada'). In English, when you mean 'enterarse' or receiving an update, you must use action verbs like [hear] or [find out]. Therefore, you say 'I haven't heard' (no he tenido noticias) instead of 'I haven't known'. Additionally, [yet] typically pairs with the present perfect."
     },
     {
       "cardId": "dummy_199",
@@ -1250,7 +1254,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_203_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "\n\n~Here we parse the numbers to text format.~ is not completely accurate. In programming, [parse] usually means analyzing a text string to extract data or convert it into a different type (like string to integer). To change a number into a text string, the correct terms are [convert], [cast], or [format]."
     }
   ]
 }
