@@ -138,7 +138,7 @@ static _generateImprovementPrompt(deckName, correctCommand, cardsToImprove, glos
 
         const promptHeader = `
 
-# SmartDeck Card Improvement Prompt V10.7 (Generality Principle: new modals must cover a topic's most common uses, not just the triggering card's case)
+# SmartDeck Card Improvement Prompt V10.8 (New 'misc' glossary for idioms / other uses, alongside er = english_rules and pv = phrasal_verbs)
 ## 🎯 1. ROLE AND GOAL
 You are an expert for 'SmartDeck'. Your goal is to significantly enhance the pedagogical value of a batch of flashcards based on user feedback AND THE NEXT RULES!.
 
@@ -161,7 +161,7 @@ You are an expert for 'SmartDeck'. Your goal is to significantly enhance the ped
 - \`sideA\`: **MODIFIABLE**.
 - \`sideB\`: **PRIMARY VALUE-ADD FIELD**.
 - \`note\`: **PRIMARY VALUE-ADD FIELD**.
-    - **CRITICAL RULE (note field):** This field may start with a qualified modal ID. The required literal format is \`**[alias:id]**\` (e.g., \`**[er:12]**\` for english_rules, \`**[pv:188]**\` for phrasal_verbs), which links to a modal in the MODAL CATALOG at runtime. **This syntax MUST NOT be altered, corrected, or removed.** Aliases: \`er\` = english_rules, \`pv\` = phrasal_verbs.
+    - **CRITICAL RULE (note field):** This field may start with a qualified modal ID. The required literal format is \`**[alias:id]**\` (e.g., \`**[er:12]**\` for english_rules, \`**[pv:188]**\` for phrasal_verbs, \`**[misc:3]**\` for miscellaneous), which links to a modal in the MODAL CATALOG at runtime. **This syntax MUST NOT be altered, corrected, or removed.** Aliases: \`er\` = english_rules, \`pv\` = phrasal_verbs, \`misc\` = miscellaneous (idioms / other uses).
     - **Exception:** Only remove it if the user explicitly asks to "Remove the modal".
     - **Injection:** To add a modal, see Section 6.
 
@@ -247,7 +247,7 @@ Before creating anything, rigorously scan the **MODAL CATALOG** (Section 9). The
 > - This applies to **everything**: phrasal verbs, grammar rules, vocabulary, etc. Always design for the **most common real-world uses of the topic**, then make sure the specific case from the card is one of the sections/examples — never the only one.
 > - If a topic has several distinct meanings or uses, give each its **own section** (per §7F Clean Architecture) instead of collapsing the modal onto one narrow use.
 
-1. **Pick alias:** Use the alias that matches the topic (\`er\` for grammar rules, \`pv\` for phrasal verbs / lexical items).
+1. **Pick alias:** Use the alias that matches the topic (\`er\` for grammar rules, \`pv\` for phrasal verbs, \`misc\` for idioms / fixed expressions / other lexical items that are neither a grammar rule nor a phrasal verb).
 2. **Generate ID:** Within that alias, find the **highest numeric id** in the catalog and add **+1** (e.g., if the max \`er:\` id is 218, the new one is \`er:219\`). IDs are per-alias — they do NOT collide between aliases.
 3. **Design:** Create the content adhering strictly to **Rule 7 (The Anti-Shit Protocol)**. Use the live examples in §7G as your ground-truth format reference.
 4. **Output:**
@@ -255,7 +255,7 @@ Before creating anything, rigorously scan the **MODAL CATALOG** (Section 9). The
       - \`title\`: the topic name (same string you would use as the catalog title).
       - \`description\`: a 1-line plain-English summary, max 30 words — used by the AI to identify the modal in future exports.
       - \`content\`: the full HTML string following the Anti-Shit Protocol.
-    - **JSON:** Add the new object to the **Improved Modals JSON** block (Part 2 of Output) inside the section labeled with the matching file (e.g., \`📁 english_rules.json\` for \`er:\`, \`📁 phrasal_verbs.json\` for \`pv:\`). Use the **bare numeric id** as the key (e.g., \`"219": { "title": "...", "description": "...", "content": "<p>...</p>" }\`). **NEVER include the alias prefix in the key.**
+    - **JSON:** Add the new object to the **Improved Modals JSON** block (Part 2 of Output) inside the section labeled with the matching file (e.g., \`📁 english_rules.json\` for \`er:\`, \`📁 phrasal_verbs.json\` for \`pv:\`, \`📁 miscellaneous.json\` for \`misc:\`). Use the **bare numeric id** as the key (e.g., \`"219": { "title": "...", "description": "...", "content": "<p>...</p>" }\`). **NEVER include the alias prefix in the key.**
     - **Card:** Inject the new link \`**[alias:NewID]**\\n\\n\` to the card's \`note\`.
 5. **Report:** "Topic not found in catalog. Created **NEW Modal [alias:NewID]** and linked it."
 
@@ -334,7 +334,7 @@ If the user writes "AVISAR AL USUARIO" or "Avisame en el chat sobre esto.. " o a
 
 
 ## 📚 9. MODAL CATALOG (REFERENCE ONLY)
-The catalog is keyed by qualified id \`alias:id\` (aliases: \`er\` = english_rules, \`pv\` = phrasal_verbs). It contains EVERY modal across EVERY glossary.
+The catalog is keyed by qualified id \`alias:id\` (aliases: \`er\` = english_rules, \`pv\` = phrasal_verbs, \`misc\` = miscellaneous / idioms / other uses). It contains EVERY modal across EVERY glossary.
 
 **Entry shape — and what completeness MEANS (read carefully):**
 - **Minified entry = REFERENCE ONLY.** The vast majority of entries carry just \`{ title, description }\` and NO \`content\`. This is intentional: they are NOT incomplete by mistake. A modal shown without its body is there purely so you can scan, deduplicate, and link it to a card if the user explicitly asks. You do **NOT** rewrite, regenerate, or touch these in any way.
@@ -345,12 +345,12 @@ The catalog is keyed by qualified id \`alias:id\` (aliases: \`er\` = english_rul
 **⚠️ FORMAT DISTINCTION — 3 contexts, 3 different formats (CRITICAL):**
 | Context | Format | Example |
 |---|---|---|
-| Catalog keys (internal, read-only) | \`alias:id\` | \`er:12\`, \`pv:188\` |
-| Card \`note\` field (UI reference, app parses at runtime) | \`**[alias:id]**\` | \`**[er:12]**\`, \`**[pv:188]**\` |
-| Glossary JSON file key (Part 2 output) | bare numeric string | \`"12"\`, \`"188"\` |
+| Catalog keys (internal, read-only) | \`alias:id\` | \`er:12\`, \`pv:188\`, \`misc:3\` |
+| Card \`note\` field (UI reference, app parses at runtime) | \`**[alias:id]**\` | \`**[er:12]**\`, \`**[pv:188]**\`, \`**[misc:3]**\` |
+| Glossary JSON file key (Part 2 output) | bare numeric string | \`"12"\`, \`"188"\`, \`"3"\` |
 
 - The catalog keys (\`alias:id\`) are your **internal routing tool only** — they tell you which file a modal belongs to and prevent ID collisions across aliases. They are **NEVER** written as JSON keys in Part 2 or in the actual glossary files.
-- The **bare numeric key** in Part 2 mirrors exactly how the entry is stored in \`english_rules.json\` or \`phrasal_verbs.json\`.
+- The **bare numeric key** in Part 2 mirrors exactly how the entry is stored in \`english_rules.json\`, \`phrasal_verbs.json\`, or \`miscellaneous.json\`.
 - The **qualified syntax** \`**[alias:id]**\` in card \`note\` fields is what the app parses and renders as a clickable modal at runtime.
 
 **Linking discipline:** adherir modales a cards solo cuando se solicite explicitamente en la card que se agregue un modal existente del listado. Si el usuario no solicita agregar modal en la card y la card no tiene modal, no agregues modal — es okay tener cards sin modales. No es tu decisión agregarle modales a las cards si no te lo han solicitado.
@@ -399,7 +399,7 @@ To avoid structural errors, you MUST process Part 1 using this mental workflow b
 2. **MANDATORY:** You MUST output this header even if no modals were improved.
 3. If no modals were improved, output exactly:
    \`No modals to update.\`
-4. If modals were improved, output **one labeled JSON block per glossary file**. Never mix IDs from different files in the same block. Use this exact format — one block for \`er:\` modals, one block for \`pv:\` modals (omit a block if that alias has no changes):
+4. If modals were improved, output **one labeled JSON block per glossary file**. Never mix IDs from different files in the same block. Use this exact format — one block for \`er:\` modals, one for \`pv:\` modals, one for \`misc:\` modals (omit a block if that alias has no changes):
 
    \`📁 english_rules.json\`
    \`\`\`json
@@ -416,6 +416,13 @@ To avoid structural errors, you MUST process Part 1 using this mental workflow b
    \`\`\`json
    {
      "188": { "title": "...", "description": "...", "content": "..." }
+   }
+   \`\`\`
+
+   \`📁 miscellaneous.json\`
+   \`\`\`json
+   {
+     "3": { "title": "...", "description": "...", "content": "..." }
    }
    \`\`\`
 

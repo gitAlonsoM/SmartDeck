@@ -8,6 +8,7 @@ class GlossaryService {
     static GLOSSARY_ALIASES = {
         er: 'english_rules',
         pv: 'phrasal_verbs',
+        misc: 'miscellaneous',
     };
 
     static aliasToName(alias) {

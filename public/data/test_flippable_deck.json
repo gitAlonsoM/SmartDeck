@@ -83,6 +83,22 @@
         "No Modals"
       ],
       "note": "**[er:5]**\n\n**[pv:2]**\n\nCross-glossary card: grammar modal [Present Perfect] from er: plus phrasal-verb modal [Apologize for] from pv:. Both should render as clickable links."
+    },
+    {
+      "cardId": "tf_011",
+      "sideA": "Keep an eye out for the delivery.",
+      "sideB": [
+        "Keep an eye out for the delivery."
+      ],
+      "note": "**[misc:1]**\n\nTesting the new miscellaneous glossary. This links the idiom [Keep an eye out] from the misc: glossary. Use it to mean 'stay alert and watch carefully'."
+    },
+    {
+      "cardId": "tf_012",
+      "sideA": "Keep an eye out, the streets get icy.",
+      "sideB": [
+        "Keep an eye out, the streets get icy."
+      ],
+      "note": "**[misc:1]**\n\n**[er:9]**\n\nCross-glossary card: idiom modal [Keep an eye out] from misc: plus grammar modal [Second Conditional] from er:. Both should render as clickable chips."
     }
   ]
 }

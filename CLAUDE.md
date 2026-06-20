@@ -78,6 +78,18 @@ Audio path convention: `public/data/audio/<deck-slug>/<cardId>_sideB_<N>.mp3` (0
 
 ## Recent decisions
 
+### New `miscellaneous` glossary — idioms & other uses (2026-06-20)
+Added a third modal glossary alongside `english_rules` (`er`) and `phrasal_verbs` (`pv`): **`miscellaneous`** with alias **`misc`**, for content that is neither a grammar rule nor a phrasal verb — idioms, fixed expressions, business jargon, and tech terms (e.g. `misc:1` "Keep an eye out", `misc:8` "Technical debt"). Cards link to it with the same qualified syntax `**[misc:id]**`.
+
+Files touched (the system is built to make this a small, additive change):
+- **`public/data/glossary/miscellaneous.json`** — the new glossary file. Same schema as the others: object keyed by **bare numeric string id**, each entry `{ title, description, content }`, content is HTML following the "Anti-Shit Protocol" (§7 of `ImprovementService`).
+- **`src/services/GlossaryService.js`** — registered `misc: 'miscellaneous'` in `GLOSSARY_ALIASES`. This one line is what enables card-link resolution, the Glossary screen, and the Improvement catalog — everything else iterates over `GLOSSARY_ALIASES`.
+- **`src/core/App.js`** — added a `GlossaryService.loadGlossary('miscellaneous')` preload in `setupComponents`.
+- **`public/data/glossary/glossary_manifest.json`** — added the manifest entry (`key: "miscellaneous"`, title "Idioms & Other Uses") so it appears in the in-app Glossary browser.
+- **`src/services/ImprovementService.js`** — the Modal Catalog already includes `misc` automatically (it loops over `GLOSSARY_ALIASES`); only the **hardcoded prompt text** needed `misc` added: §3B note rule, §6 STEP C alias picker + file routing, §9 header + FORMAT DISTINCTION table, and a `📁 miscellaneous.json` block in Part 2 output. Prompt version bumped **V10.7 → V10.8**.
+
+**To add another glossary in the future:** drop the JSON in `public/data/glossary/`, add one line to `GLOSSARY_ALIASES`, add a manifest entry, add a preload in `App.setupComponents`, and extend the alias mentions + Part 2 block in the `ImprovementService` prompt text. The alias must be 1–8 lowercase letters; ids are per-alias and never collide across glossaries.
+
 ### InfoModal scroll-to-top on open (2026-05-31)
 `InfoModal.show()` (`src/components/InfoModal/InfoModal.js`) now resets `this.modalBody.scrollTop = 0` after injecting new content. The scrollable element is `#info-modal-body` (the `overflow-y-auto` div in `info-modal.html`); it retained the scroll position from the previous open, so card modals appeared scrolled to the bottom (most visible on mobile, which is the primary target). If you add any logic that re-renders modal content, reset scroll the same way so the user always starts reading from the top.
 

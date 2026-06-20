@@ -126,6 +126,7 @@ class App {
         console.log("DEBUG: [App] setupComponents -> Glossaries pre-loaded.");
         await GlossaryService.loadGlossary('english_rules');
         await GlossaryService.loadGlossary('phrasal_verbs');
+        await GlossaryService.loadGlossary('miscellaneous');
         console.log("DEBUG: [App] setupComponents -> All glossaries pre-loaded.")
     }
     /**

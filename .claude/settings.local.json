@@ -7,7 +7,8 @@
       "PowerShell(& .\\\\_tmp_replace_improvement.ps1)",
       "Bash(py migrate_glossary_add_description.py)",
       "Bash(py migrate_modal_links_qualified.py)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "PowerShell(py *)"
     ]
   }
 }
