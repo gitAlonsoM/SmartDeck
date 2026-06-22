@@ -712,6 +712,14 @@
         {
           "text": "You can come over at your convenience.",
           "audioSrc": "public/data/audio/dummy/dummy_228_sideB_2.mp3"
+        },
+        {
+          "text": "You can come whenever you want.",
+          "audioSrc": "public/data/audio/dummy/dummy_228_sideB_3.mp3"
+        },
+        {
+          "text": "You can come any time.",
+          "audioSrc": "public/data/audio/dummy/dummy_228_sideB_4.mp3"
         }
       ],
       "note": null
@@ -812,9 +820,13 @@
         {
           "text": "Please keep an eye out for the package.",
           "audioSrc": "public/data/audio/dummy/dummy_233_sideB_2.mp3"
+        },
+        {
+          "text": "Keep an eye out for the package arriving.",
+          "audioSrc": "public/data/audio/dummy/dummy_233_sideB_3.mp3"
         }
       ],
-      "note": "**[misc:1]**"
+      "note": "**[misc:1]**\n\n~Keep an eye out for the package arrives~ is not valid because 'for' is a preposition and cannot be followed directly by a subject and conjugated verb. You should use an '-ing' form or an infinitive, like [Keep an eye out for the package arriving] or [Keep an eye out for the package to arrive]."
     },
     {
       "cardId": "dummy_234",
@@ -832,6 +844,14 @@
         {
           "text": "That's enough for now, let's call it a day.",
           "audioSrc": "public/data/audio/dummy/dummy_234_sideB_2.mp3"
+        },
+        {
+          "text": "We did enough, we can stop today.",
+          "audioSrc": "public/data/audio/dummy/dummy_234_sideB_3.mp3"
+        },
+        {
+          "text": "We did enough, we can call it a day.",
+          "audioSrc": "public/data/audio/dummy/dummy_234_sideB_4.mp3"
         }
       ],
       "note": "**[misc:2]**"
@@ -854,7 +874,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_235_sideB_2.mp3"
         }
       ],
-      "note": "**[misc:3]**"
+      "note": "**[misc:3]**\n\n~Losing that job resulted be a blessing in disguise~ is not valid because 'resulted' cannot be followed directly by the bare infinitive 'be'. You should use [turned out to be] or [ended up being]."
     },
     {
       "cardId": "dummy_236",
@@ -872,6 +892,10 @@
         {
           "text": "My manager and I don't always see eye to eye.",
           "audioSrc": "public/data/audio/dummy/dummy_236_sideB_2.mp3"
+        },
+        {
+          "text": "My boss and I don't always agree.",
+          "audioSrc": "public/data/audio/dummy/dummy_236_sideB_3.mp3"
         }
       ],
       "note": "**[misc:4]**"
@@ -932,6 +956,14 @@
         {
           "text": "The app works right out of the box, no setup required.",
           "audioSrc": "public/data/audio/dummy/dummy_239_sideB_2.mp3"
+        },
+        {
+          "text": "The app works out of the box, without configuration.",
+          "audioSrc": "public/data/audio/dummy/dummy_239_sideB_3.mp3"
+        },
+        {
+          "text": "The app works from the very beginning, with no configuration.",
+          "audioSrc": "public/data/audio/dummy/dummy_239_sideB_4.mp3"
         }
       ],
       "note": "**[misc:7]**"
@@ -972,6 +1004,10 @@
         {
           "text": "Let's do a sanity check before we publish the changes.",
           "audioSrc": "public/data/audio/dummy/dummy_241_sideB_2.mp3"
+        },
+        {
+          "text": "Let's do a quick sanity check before publishing the changes.",
+          "audioSrc": "public/data/audio/dummy/dummy_241_sideB_3.mp3"
         }
       ],
       "note": "**[misc:9]**"
@@ -992,6 +1028,10 @@
         {
           "text": "Please keep me in the loop on anything new.",
           "audioSrc": "public/data/audio/dummy/dummy_242_sideB_2.mp3"
+        },
+        {
+          "text": "Please keep me in the loop on any news.",
+          "audioSrc": "public/data/audio/dummy/dummy_242_sideB_3.mp3"
         }
       ],
       "note": "**[misc:10]**"
@@ -1012,9 +1052,17 @@
         {
           "text": "I had to adjust the presentation on the fly.",
           "audioSrc": "public/data/audio/dummy/dummy_243_sideB_2.mp3"
+        },
+        {
+          "text": "I had to change the presentation on the spot.",
+          "audioSrc": "public/data/audio/dummy/dummy_243_sideB_3.mp3"
+        },
+        {
+          "text": "I had to change the presentation right then and there.",
+          "audioSrc": "public/data/audio/dummy/dummy_243_sideB_4.mp3"
         }
       ],
-      "note": "**[misc:11]**"
+      "note": "**[misc:11]**\n\n~I had to change the presentation at that time~ means you changed it during a specific past period, not spontaneously 'on the fly'.\n\n~I had to change the presentation in the time / on the time~ are grammatically incorrect. To express doing something spontaneously or immediately, you can use expressions like [on the spot] or [right then and there]."
     },
     {
       "cardId": "dummy_244",
@@ -1072,6 +1120,10 @@
         {
           "text": "The code fails in the edge case where the user leaves the field empty.",
           "audioSrc": "public/data/audio/dummy/dummy_246_sideB_2.mp3"
+        },
+        {
+          "text": "The code fails when the user leaves the field empty.",
+          "audioSrc": "public/data/audio/dummy/dummy_246_sideB_3.mp3"
         }
       ],
       "note": "**[misc:14]**"
@@ -1112,6 +1164,14 @@
         {
           "text": "No one wants to touch that code, it's complete spaghetti code.",
           "audioSrc": "public/data/audio/dummy/dummy_248_sideB_2.mp3"
+        },
+        {
+          "text": "Nobody wants to touch that code because it's a complete mess.",
+          "audioSrc": "public/data/audio/dummy/dummy_248_sideB_3.mp3"
+        },
+        {
+          "text": "Nobody wants to touch that code because it's completely disorganized.",
+          "audioSrc": "public/data/audio/dummy/dummy_248_sideB_4.mp3"
         }
       ],
       "note": "**[misc:16]**"
