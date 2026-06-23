@@ -210,7 +210,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_204_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "~To speed up the process, you should call direcly to Apple~ is incorrect because the verb 'call' is transitive and connects directly to its object without [to]. It should be [call Apple directly]."
     },
     {
       "cardId": "dummy_205",
@@ -362,7 +362,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_211_sideB_2.mp3"
         }
       ],
-      "note": "~I prefer an interview one-on-one~ uses incorrect word order. The phrase [one-on-one] functions as an adjective and must be placed immediately before the noun, as in [a one-on-one interview]."
+      "note": "~I prefer an interview one-on-one~ uses incorrect word order. The phrase [one-on-one] functions as an adjective and must be placed immediately before the noun, as in [a one-on-one interview].\n\n~I prefer an one-on-one interview~ is incorrect because 'one' starts with a consonant sound ('w'), so you must use the article [a], not 'an'."
     },
     {
       "cardId": "dummy_212",
@@ -430,7 +430,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_214_sideB_4.mp3"
         }
       ],
-      "note": null
+      "note": "~On the fly, I will document what it's done~ is incorrect because [what it is done] or [what it has done] does not fit the passive meaning needed here. You should use [what's been done] or [what is done] without the pronoun [it]."
     },
     {
       "cardId": "dummy_215",
@@ -488,6 +488,10 @@
         {
           "text": "What worries me the most is issue 34.",
           "audioSrc": "public/data/audio/dummy/dummy_217_sideB_2.mp3"
+        },
+        {
+          "text": "I'm most worried about issue 34.",
+          "audioSrc": "public/data/audio/dummy/dummy_217_sideB_3.mp3"
         }
       ],
       "note": null
@@ -572,6 +576,10 @@
         {
           "text": "Can you send me an invite to the meeting, please?",
           "audioSrc": "public/data/audio/dummy/dummy_221_sideB_2.mp3"
+        },
+        {
+          "text": "Can you invite me to the meeting, please?",
+          "audioSrc": "public/data/audio/dummy/dummy_221_sideB_3.mp3"
         }
       ],
       "note": null
@@ -592,9 +600,13 @@
         {
           "text": "I haven't received the meeting invite.",
           "audioSrc": "public/data/audio/dummy/dummy_222_sideB_2.mp3"
+        },
+        {
+          "text": "I don't have the invitation to the meeting.",
+          "audioSrc": "public/data/audio/dummy/dummy_222_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "~I don't have the meeting's invitation~ sounds slightly unnatural. For events, it is better to use a compound noun like [the meeting invitation] or use the preposition [to] as in [the invitation to the meeting]."
     },
     {
       "cardId": "dummy_223",
@@ -634,7 +646,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_224_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~Will we have the meeting's tonight?~ is incorrect because you do not need a possessive ('s) for the meeting. The time phrase 'tonight' acts as an adverb modifying the verb, so it should be [have the meeting tonight]."
     },
     {
       "cardId": "dummy_225",
@@ -692,6 +704,10 @@
         {
           "text": "A widget that rebuilds itself automatically upon any variable change.",
           "audioSrc": "public/data/audio/dummy/dummy_227_sideB_2.mp3"
+        },
+        {
+          "text": "A widget that rebuilds automatically whenever a variable changes.",
+          "audioSrc": "public/data/audio/dummy/dummy_227_sideB_3.mp3"
         }
       ],
       "note": "**[er:224]**"
@@ -760,6 +776,10 @@
         {
           "text": "Rebuild the widget upon any variable change.",
           "audioSrc": "public/data/audio/dummy/dummy_230_sideB_2.mp3"
+        },
+        {
+          "text": "It rebuilds the widget whenever the variable changes.",
+          "audioSrc": "public/data/audio/dummy/dummy_230_sideB_3.mp3"
         }
       ],
       "note": "**[er:224]**"
@@ -780,9 +800,13 @@
         {
           "text": "Update the UI the moment a change occurs.",
           "audioSrc": "public/data/audio/dummy/dummy_231_sideB_2.mp3"
+        },
+        {
+          "text": "It updates the UI whenever a change occurs.",
+          "audioSrc": "public/data/audio/dummy/dummy_231_sideB_3.mp3"
         }
       ],
-      "note": "**[er:224]**"
+      "note": "**[er:224]**\n\n~It updates the UI as soon as it occurs a change~ and ~It updates the UI as soon as occurs a change~ use incorrect word order. In English, the subject must always come before the verb, so it should be [as soon as a change occurs]."
     },
     {
       "cardId": "dummy_232",
@@ -824,6 +848,10 @@
         {
           "text": "Keep an eye out for the package arriving.",
           "audioSrc": "public/data/audio/dummy/dummy_233_sideB_3.mp3"
+        },
+        {
+          "text": "Keep an eye out for the package to arrive.",
+          "audioSrc": "public/data/audio/dummy/dummy_233_sideB_4.mp3"
         }
       ],
       "note": "**[misc:1]**\n\n~Keep an eye out for the package arrives~ is not valid because 'for' is a preposition and cannot be followed directly by a subject and conjugated verb. You should use an '-ing' form or an infinitive, like [Keep an eye out for the package arriving] or [Keep an eye out for the package to arrive]."
@@ -898,7 +926,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_236_sideB_3.mp3"
         }
       ],
-      "note": "**[misc:4]**"
+      "note": "**[misc:4]**\n\n~My boss and I we are not always in agreement~ is incorrect because it uses a double subject. You should drop the [we] and just say [My boss and I are not always in agreement]."
     },
     {
       "cardId": "dummy_237",
@@ -916,6 +944,10 @@
         {
           "text": "This topic is too long for the meeting, let's take it offline and discuss it later.",
           "audioSrc": "public/data/audio/dummy/dummy_237_sideB_2.mp3"
+        },
+        {
+          "text": "This topic is too long for the meeting, let's discuss it later.",
+          "audioSrc": "public/data/audio/dummy/dummy_237_sideB_3.mp3"
         }
       ],
       "note": "**[misc:5]**"
@@ -936,6 +968,10 @@
         {
           "text": "We'll circle back to that point once we have more info.",
           "audioSrc": "public/data/audio/dummy/dummy_238_sideB_2.mp3"
+        },
+        {
+          "text": "Let's go back to that point when we have more info.",
+          "audioSrc": "public/data/audio/dummy/dummy_238_sideB_3.mp3"
         }
       ],
       "note": "**[misc:6]**"
@@ -964,6 +1000,10 @@
         {
           "text": "The app works from the very beginning, with no configuration.",
           "audioSrc": "public/data/audio/dummy/dummy_239_sideB_4.mp3"
+        },
+        {
+          "text": "The app works from the first moment, with no configuration.",
+          "audioSrc": "public/data/audio/dummy/dummy_239_sideB_5.mp3"
         }
       ],
       "note": "**[misc:7]**"
@@ -984,6 +1024,10 @@
         {
           "text": "We released quickly, but now we have plenty of technical debt.",
           "audioSrc": "public/data/audio/dummy/dummy_240_sideB_2.mp3"
+        },
+        {
+          "text": "We launched it fast, but now we have a lot of technical debt.",
+          "audioSrc": "public/data/audio/dummy/dummy_240_sideB_3.mp3"
         }
       ],
       "note": "**[misc:8]**"
@@ -1032,6 +1076,10 @@
         {
           "text": "Please keep me in the loop on any news.",
           "audioSrc": "public/data/audio/dummy/dummy_242_sideB_3.mp3"
+        },
+        {
+          "text": "Please keep me in the loop about any news.",
+          "audioSrc": "public/data/audio/dummy/dummy_242_sideB_4.mp3"
         }
       ],
       "note": "**[misc:10]**"
@@ -1062,7 +1110,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_243_sideB_4.mp3"
         }
       ],
-      "note": "**[misc:11]**\n\n~I had to change the presentation at that time~ means you changed it during a specific past period, not spontaneously 'on the fly'.\n\n~I had to change the presentation in the time / on the time~ are grammatically incorrect. To express doing something spontaneously or immediately, you can use expressions like [on the spot] or [right then and there]."
+      "note": "**[misc:11]**\n\n~I had to change the presentation at that time~ means you changed it during a specific past period, not spontaneously 'on the fly'.\n\n~I had to change the presentation in the time / on the time~ are grammatically incorrect. To express doing something spontaneously or immediately, you can use expressions like [on the spot] or [right then and there].\n\n~I had to change the presentation at the moment~ means you changed it \"right now\" in the present, not spontaneously during a past event.\n\n~I had to change the presentation on the moment~ is not a valid English expression. You can use [on the spur of the moment] or [on the spot].\n\n~I had to change the presentation in the moment~ usually implies being caught up in the emotion of an experience, rather than making a quick, spontaneous adjustment."
     },
     {
       "cardId": "dummy_244",
@@ -1082,7 +1130,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_244_sideB_2.mp3"
         }
       ],
-      "note": "**[misc:12]**"
+      "note": "**[misc:12]**\n\n~There's already a tool for that, let's not waste the time~ is slightly unnatural because we generally say [waste time] without the article [the] when talking about time in a general sense.\n\n~It exists already a tool for that~ is a direct translation from Spanish. In English, to declare the existence of something, you must use the existential 'there', as in [There is already a tool for that]."
     },
     {
       "cardId": "dummy_245",
@@ -1102,7 +1150,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_245_sideB_2.mp3"
         }
       ],
-      "note": "**[misc:13]**"
+      "note": "**[misc:13]**\n\n~We found a showstopper bug that prevents us to launch the product~ is not correct because the verb 'prevent' must be followed by [from] and an [-ing] verb, like [prevents us from launching]."
     },
     {
       "cardId": "dummy_246",
@@ -1124,6 +1172,10 @@
         {
           "text": "The code fails when the user leaves the field empty.",
           "audioSrc": "public/data/audio/dummy/dummy_246_sideB_3.mp3"
+        },
+        {
+          "text": "The code fails when the user leaves an empty field.",
+          "audioSrc": "public/data/audio/dummy/dummy_246_sideB_4.mp3"
         }
       ],
       "note": "**[misc:14]**"
@@ -1144,6 +1196,10 @@
         {
           "text": "The slow approvals are the bottleneck for the entire team.",
           "audioSrc": "public/data/audio/dummy/dummy_247_sideB_2.mp3"
+        },
+        {
+          "text": "Slow approvals are stopping the whole team.",
+          "audioSrc": "public/data/audio/dummy/dummy_247_sideB_3.mp3"
         }
       ],
       "note": "**[misc:15]**"
