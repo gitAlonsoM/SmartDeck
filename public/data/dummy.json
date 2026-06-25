@@ -142,7 +142,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_197_sideB_4.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:103]**"
     },
     {
       "cardId": "dummy_198",
@@ -162,7 +162,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_198_sideB_2.mp3"
         }
       ],
-      "note": "**[pv:59]**\n\n~I didn't know anything about that yet~ and ~I haven't known anything about that yet~ are incorrect. Although 'know' translates to 'saber', in English [know] is a state verb (the condition of having knowledge), not an action verb. In Spanish, 'saber' can mean both the state ('yo sé') and the action of receiving news ('no he sabido nada'). In English, when you mean 'enterarse' or receiving an update, you must use action verbs like [hear] or [find out]. Therefore, you say 'I haven't heard' (no he tenido noticias) instead of 'I haven't known'. Additionally, [yet] typically pairs with the present perfect."
+      "note": "**[pv:59]**\n**[er:103]**\n\n~I didn't know anything about that yet~ and ~I haven't known anything about that yet~ are incorrect. Although 'know' translates to 'saber', in English [know] is a state verb (the condition of having knowledge), not an action verb. In Spanish, 'saber' can mean both the state ('yo sé') and the action of receiving news ('no he sabido nada'). In English, when you mean 'enterarse' or receiving an update, you must use action verbs like [hear] or [find out]. Therefore, you say 'I haven't heard' (no he tenido noticias) instead of 'I haven't known'. Additionally, [yet] typically pairs with the present perfect."
     },
     {
       "cardId": "dummy_203",
@@ -1218,7 +1218,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_246_sideB_4.mp3"
         }
       ],
-      "note": "**[misc:14]**"
+      "note": "**[misc:14]**\n**[er:226]**"
     },
     {
       "cardId": "dummy_247",
@@ -1283,6 +1283,230 @@
         }
       ],
       "note": "**[misc:16]**"
+    },
+    {
+      "cardId": "dummy_249",
+      "cardType": "flippable",
+      "sideA": "El error crítico nos impidió lanzar el producto a tiempo.",
+      "sideB": [
+        {
+          "text": "The critical bug prevented us from launching the product on time.",
+          "audioSrc": "public/data/audio/dummy/dummy_249_sideB_0.mp3"
+        },
+        {
+          "text": "The critical error stopped us from launching the product on time.",
+          "audioSrc": "public/data/audio/dummy/dummy_249_sideB_1.mp3"
+        },
+        {
+          "text": "The critical bug kept us from launching the product on time.",
+          "audioSrc": "public/data/audio/dummy/dummy_249_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:225]**"
+    },
+    {
+      "cardId": "dummy_250",
+      "cardType": "flippable",
+      "sideA": "La lluvia nos impidió salir.",
+      "sideB": [
+        {
+          "text": "The rain kept us from going out.",
+          "audioSrc": "public/data/audio/dummy/dummy_250_sideB_0.mp3"
+        },
+        {
+          "text": "The rain stopped us from going out.",
+          "audioSrc": "public/data/audio/dummy/dummy_250_sideB_1.mp3"
+        },
+        {
+          "text": "The rain prevented us from going out.",
+          "audioSrc": "public/data/audio/dummy/dummy_250_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:225]**"
+    },
+    {
+      "cardId": "dummy_251",
+      "cardType": "flippable",
+      "sideA": "La política restringe a los empleados el acceso a esos datos.",
+      "sideB": [
+        {
+          "text": "The policy restricts employees from accessing that data.",
+          "audioSrc": "public/data/audio/dummy/dummy_251_sideB_0.mp3"
+        },
+        {
+          "text": "The policy prohibits employees from accessing that data.",
+          "audioSrc": "public/data/audio/dummy/dummy_251_sideB_1.mp3"
+        },
+        {
+          "text": "The policy prevents employees from accessing that data.",
+          "audioSrc": "public/data/audio/dummy/dummy_251_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:225]**"
+    },
+    {
+      "cardId": "dummy_252",
+      "cardType": "flippable",
+      "sideA": "El firewall impide que los usuarios visiten sitios inseguros.",
+      "sideB": [
+        {
+          "text": "The firewall blocks users from visiting unsafe sites.",
+          "audioSrc": "public/data/audio/dummy/dummy_252_sideB_0.mp3"
+        },
+        {
+          "text": "The firewall prevents users from visiting unsafe sites.",
+          "audioSrc": "public/data/audio/dummy/dummy_252_sideB_1.mp3"
+        },
+        {
+          "text": "The firewall stops users from reaching unsafe sites.",
+          "audioSrc": "public/data/audio/dummy/dummy_252_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:225]**"
+    },
+    {
+      "cardId": "dummy_253",
+      "cardType": "flippable",
+      "sideA": "Uso Visual Studio Code como mi editor de código.",
+      "sideB": [
+        {
+          "text": "I use Visual Studio Code as my code editor.",
+          "audioSrc": "public/data/audio/dummy/dummy_253_sideB_0.mp3"
+        },
+        {
+          "text": "Visual Studio Code is the code editor I use.",
+          "audioSrc": "public/data/audio/dummy/dummy_253_sideB_1.mp3"
+        }
+      ],
+      "note": "**[misc:17]**"
+    },
+    {
+      "cardId": "dummy_254",
+      "cardType": "flippable",
+      "sideA": "IntelliJ IDEA es mi IDE favorito.",
+      "sideB": [
+        {
+          "text": "IntelliJ IDEA is my favorite IDE.",
+          "audioSrc": "public/data/audio/dummy/dummy_254_sideB_0.mp3"
+        },
+        {
+          "text": "My favorite IDE is IntelliJ IDEA.",
+          "audioSrc": "public/data/audio/dummy/dummy_254_sideB_1.mp3"
+        }
+      ],
+      "note": "**[misc:17]**"
+    },
+    {
+      "cardId": "dummy_255",
+      "cardType": "flippable",
+      "sideA": "Un IDE incluye un editor de código y otras herramientas.",
+      "sideB": [
+        {
+          "text": "An IDE includes a code editor and other tools.",
+          "audioSrc": "public/data/audio/dummy/dummy_255_sideB_0.mp3"
+        },
+        {
+          "text": "An IDE has a code editor plus other tools.",
+          "audioSrc": "public/data/audio/dummy/dummy_255_sideB_1.mp3"
+        }
+      ],
+      "note": "**[misc:17]**"
+    },
+    {
+      "cardId": "dummy_256",
+      "cardType": "flippable",
+      "sideA": "Conocí a Ana ayer.",
+      "sideB": [
+        {
+          "text": "I met Ana yesterday.",
+          "audioSrc": "public/data/audio/dummy/dummy_256_sideB_0.mp3"
+        },
+        {
+          "text": "I first met Ana yesterday.",
+          "audioSrc": "public/data/audio/dummy/dummy_256_sideB_1.mp3"
+        }
+      ],
+      "note": "**[er:103]**"
+    },
+    {
+      "cardId": "dummy_257",
+      "cardType": "flippable",
+      "sideA": "¿Supiste lo que pasó?",
+      "sideB": [
+        {
+          "text": "Did you hear what happened?",
+          "audioSrc": "public/data/audio/dummy/dummy_257_sideB_0.mp3"
+        },
+        {
+          "text": "Did you find out what happened?",
+          "audioSrc": "public/data/audio/dummy/dummy_257_sideB_1.mp3"
+        }
+      ],
+      "note": "**[er:103]**"
+    },
+    {
+      "cardId": "dummy_258",
+      "cardType": "flippable",
+      "sideA": "Aprendí inglés en la escuela.",
+      "sideB": [
+        {
+          "text": "I learned English at school.",
+          "audioSrc": "public/data/audio/dummy/dummy_258_sideB_0.mp3"
+        },
+        {
+          "text": "I studied English at school.",
+          "audioSrc": "public/data/audio/dummy/dummy_258_sideB_1.mp3"
+        }
+      ],
+      "note": "**[er:103]**"
+    },
+    {
+      "cardId": "dummy_259",
+      "cardType": "flippable",
+      "sideA": "Me enteré de eso esta mañana.",
+      "sideB": [
+        {
+          "text": "I found out about that this morning.",
+          "audioSrc": "public/data/audio/dummy/dummy_259_sideB_0.mp3"
+        },
+        {
+          "text": "I heard about that this morning.",
+          "audioSrc": "public/data/audio/dummy/dummy_259_sideB_1.mp3"
+        }
+      ],
+      "note": "**[er:103]**"
+    },
+    {
+      "cardId": "dummy_260",
+      "cardType": "flippable",
+      "sideA": "Por favor, deja la puerta abierta.",
+      "sideB": [
+        {
+          "text": "Please leave the door open.",
+          "audioSrc": "public/data/audio/dummy/dummy_260_sideB_0.mp3"
+        },
+        {
+          "text": "Please keep the door open.",
+          "audioSrc": "public/data/audio/dummy/dummy_260_sideB_1.mp3"
+        }
+      ],
+      "note": "**[er:226]**"
+    },
+    {
+      "cardId": "dummy_261",
+      "cardType": "flippable",
+      "sideA": "El error dejó la pantalla en blanco.",
+      "sideB": [
+        {
+          "text": "The bug left the screen blank.",
+          "audioSrc": "public/data/audio/dummy/dummy_261_sideB_0.mp3"
+        },
+        {
+          "text": "The bug made the screen blank.",
+          "audioSrc": "public/data/audio/dummy/dummy_261_sideB_1.mp3"
+        }
+      ],
+      "note": "**[er:226]**"
     }
   ]
 }
