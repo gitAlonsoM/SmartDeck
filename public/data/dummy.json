@@ -408,6 +408,10 @@
         {
           "text": "I tested it on the go and it worked.",
           "audioSrc": "public/data/audio/dummy/dummy_213_sideB_2.mp3"
+        },
+        {
+          "text": "I tested it on the spot and it worked.",
+          "audioSrc": "public/data/audio/dummy/dummy_213_sideB_3.mp3"
         }
       ],
       "note": null
@@ -444,6 +448,10 @@
         {
           "text": "I will document what is done on the fly.",
           "audioSrc": "public/data/audio/dummy/dummy_214_sideB_6.mp3"
+        },
+        {
+          "text": "On the spot, I will document what is done.",
+          "audioSrc": "public/data/audio/dummy/dummy_214_sideB_7.mp3"
         }
       ],
       "note": "~On the fly, I will document what it's done~ is incorrect because [what it is done] or [what it has done] does not fit the passive meaning needed here. You should use [what's been done] or [what is done] without the pronoun [it]."
@@ -508,6 +516,10 @@
         {
           "text": "I'm most worried about issue 34.",
           "audioSrc": "public/data/audio/dummy/dummy_217_sideB_3.mp3"
+        },
+        {
+          "text": "I'm more worried about issue 34.",
+          "audioSrc": "public/data/audio/dummy/dummy_217_sideB_4.mp3"
         }
       ],
       "note": null
@@ -1102,7 +1114,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_242_sideB_4.mp3"
         }
       ],
-      "note": "**[misc:10]**"
+      "note": "**[misc:10]**\n\n~Please keep me on the loop about any updates~ is incorrect because the standard idiom uses the preposition [in], as in [keep me in the loop]."
     },
     {
       "cardId": "dummy_243",
@@ -1154,7 +1166,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_244_sideB_3.mp3"
         }
       ],
-      "note": "**[misc:12]**\n\n~There's already a tool for that, let's not waste the time~ is slightly unnatural because we generally say [waste time] without the article [the] when talking about time in a general sense.\n\n~It exists already a tool for that~ is a direct translation from Spanish. In English, to declare the existence of something, you must use the existential 'there', as in [There is already a tool for that].\n\n~There's already a tool for that, let's don't waste any time~ is incorrect because [let's don't] is non-standard grammar. The correct negative form of 'let's' is [let's not]."
+      "note": "**[misc:12]**\n**[er:61]**\n\n~There's already a tool for that, let's not waste the time~ is slightly unnatural because we generally say [waste time] without the article [the] when talking about time in a general sense.\n\n~It exists already a tool for that~ is a direct translation from Spanish. In English, to declare the existence of something, you must use the existential 'there', as in [There is already a tool for that].\n\n~There's already a tool for that, let's don't waste any time~ is incorrect because [let's don't] is non-standard grammar. The correct negative form of 'let's' is [let's not]."
     },
     {
       "cardId": "dummy_245",
@@ -1264,6 +1276,10 @@
         {
           "text": "Nobody wants to touch that code because it's completely disorganized.",
           "audioSrc": "public/data/audio/dummy/dummy_248_sideB_4.mp3"
+        },
+        {
+          "text": "Nobody wants to touch that spaghetti code.",
+          "audioSrc": "public/data/audio/dummy/dummy_248_sideB_5.mp3"
         }
       ],
       "note": "**[misc:16]**"
