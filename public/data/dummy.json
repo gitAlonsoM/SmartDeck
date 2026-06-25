@@ -208,9 +208,13 @@
         {
           "text": "To speed the process, you should call Apple directly.",
           "audioSrc": "public/data/audio/dummy/dummy_204_sideB_3.mp3"
+        },
+        {
+          "text": "To accelerate the process, you should call Apple directly.",
+          "audioSrc": "public/data/audio/dummy/dummy_204_sideB_4.mp3"
         }
       ],
-      "note": "~To speed up the process, you should call direcly to Apple~ is incorrect because the verb 'call' is transitive and connects directly to its object without [to]. It should be [call Apple directly]."
+      "note": "~To speed up the process, you should call direcly to Apple~ is incorrect because the verb 'call' is transitive and connects directly to its object without [to]. It should be [call Apple directly].\n\n~To speed up the process, you should call directly apple~ is incorrect due to word order. In English, the adverb should go after the direct object, so it should be [call Apple directly]."
     },
     {
       "cardId": "dummy_205",
@@ -320,6 +324,10 @@
         {
           "text": "Production stopper is understandable, but Showstopper and Production blocker are much more used.",
           "audioSrc": "public/data/audio/dummy/dummy_209_sideB_3.mp3"
+        },
+        {
+          "text": "Production stopper is understood, but Showstopper or Production blocker are more used.",
+          "audioSrc": "public/data/audio/dummy/dummy_209_sideB_4.mp3"
         }
       ],
       "note": null
@@ -428,6 +436,14 @@
         {
           "text": "As I go, I'll document my progress.",
           "audioSrc": "public/data/audio/dummy/dummy_214_sideB_4.mp3"
+        },
+        {
+          "text": "On the fly, I will document what is done.",
+          "audioSrc": "public/data/audio/dummy/dummy_214_sideB_5.mp3"
+        },
+        {
+          "text": "I will document what is done on the fly.",
+          "audioSrc": "public/data/audio/dummy/dummy_214_sideB_6.mp3"
         }
       ],
       "note": "~On the fly, I will document what it's done~ is incorrect because [what it is done] or [what it has done] does not fit the passive meaning needed here. You should use [what's been done] or [what is done] without the pronoun [it]."
@@ -558,7 +574,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_220_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "~The day before yesterday occurred~ is incorrect because it implies the day itself was an event that happened. You need a dummy subject like [It] or [That] to represent the event, as in [It occurred the day before yesterday]."
     },
     {
       "cardId": "dummy_221",
@@ -646,7 +662,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_224_sideB_2.mp3"
         }
       ],
-      "note": "~Will we have the meeting's tonight?~ is incorrect because you do not need a possessive ('s) for the meeting. The time phrase 'tonight' acts as an adverb modifying the verb, so it should be [have the meeting tonight]."
+      "note": "~Will we have the meeting's tonight?~ is incorrect because you do not need a possessive ('s) for the meeting. The time phrase 'tonight' acts as an adverb modifying the verb, so it should be [have the meeting tonight].\n\n~Will we have the meeting for tonight?~ is unnatural because [tonight] already functions as an adverb of time. Adding the preposition [for] makes it sound like a direct translation from Spanish. It should be [have the meeting tonight]."
     },
     {
       "cardId": "dummy_225",
@@ -902,7 +918,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_235_sideB_2.mp3"
         }
       ],
-      "note": "**[misc:3]**\n\n~Losing that job resulted be a blessing in disguise~ is not valid because 'resulted' cannot be followed directly by the bare infinitive 'be'. You should use [turned out to be] or [ended up being]."
+      "note": "**[misc:3]**\n\n~Losing that job resulted be a blessing in disguise~ is not valid because 'resulted' cannot be followed directly by the bare infinitive 'be'. You should use [turned out to be] or [ended up being].\n\n~Losing that job resulted being a blessing in disguise~ is incorrect grammar. The verb 'result' is typically followed by 'in' (e.g., resulted in failure), but to express an outcome, you should use [turned out to be] or [ended up being]."
     },
     {
       "cardId": "dummy_236",
@@ -924,9 +940,13 @@
         {
           "text": "My boss and I don't always agree.",
           "audioSrc": "public/data/audio/dummy/dummy_236_sideB_3.mp3"
+        },
+        {
+          "text": "My boss and I are not always in agreement.",
+          "audioSrc": "public/data/audio/dummy/dummy_236_sideB_4.mp3"
         }
       ],
-      "note": "**[misc:4]**\n\n~My boss and I we are not always in agreement~ is incorrect because it uses a double subject. You should drop the [we] and just say [My boss and I are not always in agreement]."
+      "note": "**[misc:4]**\n\n~My boss and I we are not always in agreement~ is incorrect because it uses a double subject. You should drop the [we] and just say [My boss and I are not always in agreement].\n\n~My boss and me don't always see eye to eye~ is incorrect because [My boss and me] uses an object pronoun [me] as the subject. The correct subject form is [My boss and I]."
     },
     {
       "cardId": "dummy_237",
@@ -1110,7 +1130,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_243_sideB_4.mp3"
         }
       ],
-      "note": "**[misc:11]**\n\n~I had to change the presentation at that time~ means you changed it during a specific past period, not spontaneously 'on the fly'.\n\n~I had to change the presentation in the time / on the time~ are grammatically incorrect. To express doing something spontaneously or immediately, you can use expressions like [on the spot] or [right then and there].\n\n~I had to change the presentation at the moment~ means you changed it \"right now\" in the present, not spontaneously during a past event.\n\n~I had to change the presentation on the moment~ is not a valid English expression. You can use [on the spur of the moment] or [on the spot].\n\n~I had to change the presentation in the moment~ usually implies being caught up in the emotion of an experience, rather than making a quick, spontaneous adjustment."
+      "note": "**[misc:11]**\n\n~I had to change the presentation at that time~ means you changed it during a specific past period, not spontaneously 'on the fly'.\n\n~I had to change the presentation in the time / on the time~ are grammatically incorrect. To express doing something spontaneously or immediately, you can use expressions like [on the spot] or [right then and there].\n\n~I had to change the presentation at the moment~ means you changed it \"right now\" in the present, not spontaneously during a past event.\n\n~I had to change the presentation on the moment~ is not a valid English expression. You can use [on the spur of the moment] or [on the spot].\n\n~I had to change the presentation in the moment~ usually implies being caught up in the emotion of an experience, rather than making a quick, spontaneous adjustment.\n\n~I had to change the presentation at that moment~ implies you changed it during a specific point in time in the past, but it lacks the improvisational, unplanned meaning of doing something [on the fly] or [on the spot]."
     },
     {
       "cardId": "dummy_244",
@@ -1128,9 +1148,13 @@
         {
           "text": "A tool already exists for that, let's not reinvent the wheel.",
           "audioSrc": "public/data/audio/dummy/dummy_244_sideB_2.mp3"
+        },
+        {
+          "text": "There's already a tool for that, let's not waste any time.",
+          "audioSrc": "public/data/audio/dummy/dummy_244_sideB_3.mp3"
         }
       ],
-      "note": "**[misc:12]**\n\n~There's already a tool for that, let's not waste the time~ is slightly unnatural because we generally say [waste time] without the article [the] when talking about time in a general sense.\n\n~It exists already a tool for that~ is a direct translation from Spanish. In English, to declare the existence of something, you must use the existential 'there', as in [There is already a tool for that]."
+      "note": "**[misc:12]**\n\n~There's already a tool for that, let's not waste the time~ is slightly unnatural because we generally say [waste time] without the article [the] when talking about time in a general sense.\n\n~It exists already a tool for that~ is a direct translation from Spanish. In English, to declare the existence of something, you must use the existential 'there', as in [There is already a tool for that].\n\n~There's already a tool for that, let's don't waste any time~ is incorrect because [let's don't] is non-standard grammar. The correct negative form of 'let's' is [let's not]."
     },
     {
       "cardId": "dummy_245",
@@ -1148,6 +1172,10 @@
         {
           "text": "We found a showstopper that prevents us from launching the product.",
           "audioSrc": "public/data/audio/dummy/dummy_245_sideB_2.mp3"
+        },
+        {
+          "text": "We found a critical error that prevents us from launching.",
+          "audioSrc": "public/data/audio/dummy/dummy_245_sideB_3.mp3"
         }
       ],
       "note": "**[misc:13]**\n\n~We found a showstopper bug that prevents us to launch the product~ is not correct because the verb 'prevent' must be followed by [from] and an [-ing] verb, like [prevents us from launching]."
@@ -1200,9 +1228,17 @@
         {
           "text": "Slow approvals are stopping the whole team.",
           "audioSrc": "public/data/audio/dummy/dummy_247_sideB_3.mp3"
+        },
+        {
+          "text": "Slow approvals are slowing the whole team.",
+          "audioSrc": "public/data/audio/dummy/dummy_247_sideB_4.mp3"
+        },
+        {
+          "text": "Slow approvals are stopping the entire team.",
+          "audioSrc": "public/data/audio/dummy/dummy_247_sideB_5.mp3"
         }
       ],
-      "note": "**[misc:15]**"
+      "note": "**[misc:15]**\n\n~Slow aprovations are stopping the whole team~ is incorrect because the word [aprovations] does not exist in English. The correct noun is [approvals]."
     },
     {
       "cardId": "dummy_248",
