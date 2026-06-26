@@ -414,7 +414,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_213_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "**[misc:11]**"
     },
     {
       "cardId": "dummy_214",
@@ -454,7 +454,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_214_sideB_7.mp3"
         }
       ],
-      "note": "~On the fly, I will document what it's done~ is incorrect because [what it is done] or [what it has done] does not fit the passive meaning needed here. You should use [what's been done] or [what is done] without the pronoun [it]."
+      "note": "**[misc:11]**\n\n~On the fly, I will document what it's done~ is incorrect because [what it is done] or [what it has done] does not fit the passive meaning needed here. You should use [what's been done] or [what is done] without the pronoun [it]."
     },
     {
       "cardId": "dummy_215",
@@ -908,6 +908,10 @@
         {
           "text": "We did enough, we can call it a day.",
           "audioSrc": "public/data/audio/dummy/dummy_234_sideB_4.mp3"
+        },
+        {
+          "text": "We did enough, we can stop for today.",
+          "audioSrc": "public/data/audio/dummy/dummy_234_sideB_5.mp3"
         }
       ],
       "note": "**[misc:2]**"
@@ -928,6 +932,14 @@
         {
           "text": "In the end, losing that job was a blessing in disguise.",
           "audioSrc": "public/data/audio/dummy/dummy_235_sideB_2.mp3"
+        },
+        {
+          "text": "Losing that job was good in the end.",
+          "audioSrc": "public/data/audio/dummy/dummy_235_sideB_3.mp3"
+        },
+        {
+          "text": "Losing that job was good after all.",
+          "audioSrc": "public/data/audio/dummy/dummy_235_sideB_4.mp3"
         }
       ],
       "note": "**[misc:3]**\n\n~Losing that job resulted be a blessing in disguise~ is not valid because 'resulted' cannot be followed directly by the bare infinitive 'be'. You should use [turned out to be] or [ended up being].\n\n~Losing that job resulted being a blessing in disguise~ is incorrect grammar. The verb 'result' is typically followed by 'in' (e.g., resulted in failure), but to express an outcome, you should use [turned out to be] or [ended up being]."
@@ -1166,7 +1178,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_244_sideB_3.mp3"
         }
       ],
-      "note": "**[misc:12]**\n**[er:61]**\n\n~There's already a tool for that, let's not waste the time~ is slightly unnatural because we generally say [waste time] without the article [the] when talking about time in a general sense.\n\n~It exists already a tool for that~ is a direct translation from Spanish. In English, to declare the existence of something, you must use the existential 'there', as in [There is already a tool for that].\n\n~There's already a tool for that, let's don't waste any time~ is incorrect because [let's don't] is non-standard grammar. The correct negative form of 'let's' is [let's not]."
+      "note": "**[misc:12]**\n**[er:61]**\n\n~There's already a tool for that, let's not waste the time~ is slightly unnatural because we generally say [waste time] without the article [the] when talking about time in a general sense.\n\n~It exists already a tool for that~ is a direct translation from Spanish. In English, to declare the existence of something, you must use the existential 'there', as in [There is already a tool for that].\n\n~There's already a tool for that, let's don't waste any time~ is incorrect because [let's don't] is non-standard grammar. The correct negative form of 'let's' is [let's not].\n\n~There's already a tool for that, let's not loose any time~ contains a spelling error. The adjective 'loose' means not tight; the correct verb is [lose]. Additionally, in English we typically say [waste time] rather than 'lose time' in this context.\n\n~There's already a tool for that, let's don't loose any time~ combines the incorrect structure 'let's don't' with the misspelled word 'loose'. The correct form is [let's not waste]."
     },
     {
       "cardId": "dummy_245",
@@ -1326,7 +1338,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_250_sideB_3.mp3"
         }
       ],
-      "note": "**[er:225]**"
+      "note": "**[er:225]**\n\n~The raining prevented us from going out~ is unnatural because 'raining' is a continuous verb form. The correct noun for the weather event is [rain]. You should say [The rain prevented us]."
     },
     {
       "cardId": "dummy_251",
@@ -1486,7 +1498,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_259_sideB_1.mp3"
         }
       ],
-      "note": "**[pv:59]**\n\n**[er:103]**\n\n~I found out that this morning.~ is not valid because 'find out' requires 'about' when followed by a noun or pronoun object. Use [found out about]."
+      "note": "**[pv:59]**\n\n**[er:103]**\n\n~I found out that this morning.~ is not valid because 'find out' requires 'about' when followed by a noun or pronoun object. Use [found out about].\n\n~I knew that this morning~ is incorrect for expressing discovery. The verb [know] describes the continuous state of having information, not the moment you acquire it. To express 'enterarse', you must use an action verb like [found out] or [heard]."
     },
     {
       "cardId": "dummy_260",
@@ -1502,7 +1514,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_260_sideB_1.mp3"
         }
       ],
-      "note": "**[er:226]**"
+      "note": "**[er:226]**\n\nIn the sentence [Please leave the door open], the word [open] acts as an adjective describing the state of the door, serving as an object complement."
     },
     {
       "cardId": "dummy_261",
@@ -1516,6 +1528,10 @@
         {
           "text": "The bug made the screen blank.",
           "audioSrc": "public/data/audio/dummy/dummy_261_sideB_1.mp3"
+        },
+        {
+          "text": "The bug left a blank screen.",
+          "audioSrc": "public/data/audio/dummy/dummy_261_sideB_2.mp3"
         }
       ],
       "note": "**[er:214]**\n\n**[er:226]**"
