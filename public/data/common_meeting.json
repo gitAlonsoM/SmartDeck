@@ -32655,6 +32655,978 @@
         }
       ],
       "note": "**[er:125]**"
+    },
+    {
+      "cardId": "mi_1447",
+      "cardType": "flippable",
+      "sideA": "Cómo eras antes?",
+      "sideB": [
+        {
+          "text": "What were you like before?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1447_sideB_0.mp3"
+        },
+        {
+          "text": "How were you before?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1447_sideB_1.mp3"
+        },
+        {
+          "text": "What did you use to be like?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1447_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:86]**\n\n[What... like?] refers to past descriptions of character or appearance, whereas [How...?] refers to a past state or condition."
+    },
+    {
+      "cardId": "mi_1448",
+      "cardType": "flippable",
+      "sideA": "Lo que importa es que sea entendible.",
+      "sideB": [
+        {
+          "text": "What matters is that it's understandable.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1448_sideB_0.mp3"
+        },
+        {
+          "text": "The important thing is that it's clear.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1448_sideB_1.mp3"
+        },
+        {
+          "text": "All that matters is that it makes sense.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1448_sideB_2.mp3"
+        },
+        {
+          "text": "What matters is it's understandable.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1448_sideB_3.mp3"
+        }
+      ],
+      "note": "~What matters it's to be understandable~ is incorrect because it contains a redundant [it's]. The phrase [What matters] acts as the subject, so you should connect it directly to the verb [is], as in [What matters is that it's understandable].\n\n~What matters is to be understandable~ is unnatural. You need to specify what is being understandable. It is better to use a full clause like [is that it's understandable] or specify the object like [for it to be understandable]."
+    },
+    {
+      "cardId": "mi_1449",
+      "cardType": "flippable",
+      "sideA": "Ocurrio una desincronizacion en el procedimiento.",
+      "sideB": [
+        {
+          "text": "A desynchronization occurred in the procedure.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1449_sideB_0.mp3"
+        },
+        {
+          "text": "A desync occurred in the procedure.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1449_sideB_1.mp3"
+        },
+        {
+          "text": "An out-of-sync issue occurred during the procedure.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1449_sideB_2.mp3"
+        }
+      ],
+      "note": "~It happened a desynchronization in the procedure.~ and ~It occurred a desynchronization in the procedure.~ are incorrect. In English, you cannot use [It] as a dummy subject to introduce an event in this way. You must either make the event the subject itself, like [A desynchronization occurred], or use [There was a desynchronization]."
+    },
+    {
+      "cardId": "mi_1450",
+      "cardType": "flippable",
+      "sideA": "Está pendiente eso para mañana.",
+      "sideB": [
+        {
+          "text": "That's pending for tomorrow.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1450_sideB_0.mp3"
+        },
+        {
+          "text": "That is pending for tomorrow.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1450_sideB_1.mp3"
+        },
+        {
+          "text": "That remains pending for tomorrow.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1450_sideB_2.mp3"
+        },
+        {
+          "text": "We left that for tomorrow.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1450_sideB_3.mp3"
+        },
+        {
+          "text": "That's left for tomorrow.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1450_sideB_4.mp3"
+        }
+      ],
+      "note": "\n\n~That's left over for tomorrow~ is incorrect because [left over] means extra or surplus, not pending. Use [pending] or [left]."
+    },
+    {
+      "cardId": "mi_1451",
+      "cardType": "flippable",
+      "sideA": "Aquí pasamos los números a formato texto.",
+      "sideB": [
+        {
+          "text": "Here we convert the numbers to text format.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1451_sideB_0.mp3"
+        },
+        {
+          "text": "Here we pass the numbers into text format.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1451_sideB_1.mp3"
+        },
+        {
+          "text": "In this step, we convert the numbers into text format.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1451_sideB_2.mp3"
+        },
+        {
+          "text": "Here we transform the numbers to text format.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1451_sideB_3.mp3"
+        }
+      ],
+      "note": "\n\n~Here we parse the numbers to text format.~ is not completely accurate. In programming, [parse] usually means analyzing a text string to extract data or convert it into a different type (like string to integer). To change a number into a text string, the correct terms are [convert], [cast], or [format]."
+    },
+    {
+      "cardId": "mi_1452",
+      "cardType": "flippable",
+      "sideA": "Para acelerar el proceso, ustedes deberian llamar directamente a Apple.",
+      "sideB": [
+        {
+          "text": "To speed up the process, you should call Apple directly.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1452_sideB_0.mp3"
+        },
+        {
+          "text": "To expedite the process, you should call Apple directly.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1452_sideB_1.mp3"
+        },
+        {
+          "text": "In order to speed up the process, you guys should call Apple directly.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1452_sideB_2.mp3"
+        },
+        {
+          "text": "To speed the process, you should call Apple directly.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1452_sideB_3.mp3"
+        },
+        {
+          "text": "To accelerate the process, you should call Apple directly.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1452_sideB_4.mp3"
+        }
+      ],
+      "note": "~To speed up the process, you should call direcly to Apple~ is incorrect because the verb 'call' is transitive and connects directly to its object without [to]. It should be [call Apple directly].\n\n~To speed up the process, you should call directly apple~ is incorrect due to word order. In English, the adverb should go after the direct object, so it should be [call Apple directly]."
+    },
+    {
+      "cardId": "mi_1453",
+      "cardType": "flippable",
+      "sideA": "Ellos te pediran tu carnet de identidad para validar tu identidad.",
+      "sideB": [
+        {
+          "text": "They will ask for your ID card to validate your identity.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1453_sideB_0.mp3"
+        },
+        {
+          "text": "They'll ask for your ID to verify your identity.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1453_sideB_1.mp3"
+        },
+        {
+          "text": "They will request your ID card to confirm your identity.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1453_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1454",
+      "cardType": "flippable",
+      "sideA": "Solicite hablar con alguien que hablara en español.",
+      "sideB": [
+        {
+          "text": "I requested to speak with someone who speaks Spanish.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1454_sideB_0.mp3"
+        },
+        {
+          "text": "I asked to speak to someone who could speak Spanish.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1454_sideB_1.mp3"
+        },
+        {
+          "text": "I asked to talk to a Spanish speaker.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1454_sideB_2.mp3"
+        }
+      ],
+      "note": "~I requested to speak with someone to speak spanish~ is incorrect because using the infinitive [to speak] implies purpose (in order to speak). To describe the person's ability, you must use a relative clause like [who speaks Spanish]."
+    },
+    {
+      "cardId": "mi_1455",
+      "cardType": "flippable",
+      "sideA": "Production stopper, Production blocker y Showstopper significan prácticamente lo mismo.",
+      "sideB": [
+        {
+          "text": "Production stopper, Production blocker, and Showstopper mean essentially the same thing.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1455_sideB_0.mp3"
+        },
+        {
+          "text": "Production stopper, Production blocker, and Showstopper mean practically the same thing.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1455_sideB_1.mp3"
+        },
+        {
+          "text": "Production stopper, Production blocker, and Showstopper are basically the same thing.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1455_sideB_2.mp3"
+        },
+        {
+          "text": "Production stopper, Production blocker, and Showstopper mean basically the same.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1455_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1456",
+      "cardType": "flippable",
+      "sideA": "Production blocker y Showstopper son los más comunes de usar.",
+      "sideB": [
+        {
+          "text": "Production blocker and Showstopper are the most commonly used terms.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1456_sideB_0.mp3"
+        },
+        {
+          "text": "Production blocker and Showstopper are the most common ones to use.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1456_sideB_1.mp3"
+        },
+        {
+          "text": "Production blocker and Showstopper are used the most.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1456_sideB_2.mp3"
+        },
+        {
+          "text": "Production blocker and Showstopper are the most common to use.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1456_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1457",
+      "cardType": "flippable",
+      "sideA": "Production stopper se entiende, pero se usan más Showstopper o Production blocker.",
+      "sideB": [
+        {
+          "text": "Production stopper is understood, but Showstopper and Production blocker are used more often.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1457_sideB_0.mp3"
+        },
+        {
+          "text": "Production stopper is understood, but Showstopper or Production blocker are more commonly used.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1457_sideB_1.mp3"
+        },
+        {
+          "text": "People understand Production stopper, but Showstopper and Production blocker are used more.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1457_sideB_2.mp3"
+        },
+        {
+          "text": "Production stopper is understandable, but Showstopper and Production blocker are much more used.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1457_sideB_3.mp3"
+        },
+        {
+          "text": "Production stopper is understood, but Showstopper or Production blocker are more used.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1457_sideB_4.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1458",
+      "cardType": "flippable",
+      "sideA": "Así podemos comenzar con el pie derecho.",
+      "sideB": [
+        {
+          "text": "That way we can start off on the right foot.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1458_sideB_0.mp3"
+        },
+        {
+          "text": "This way we can get off on the right foot.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1458_sideB_1.mp3"
+        },
+        {
+          "text": "So we can start on the right foot.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1458_sideB_2.mp3"
+        }
+      ],
+      "note": "~So we can start with the right foot~ is incorrect because the standard English idiom uses the preposition [on], as in [start on the right foot]."
+    },
+    {
+      "cardId": "mi_1459",
+      "cardType": "flippable",
+      "sideA": "Prefiero una entrevista de uno a uno (2 personas).",
+      "sideB": [
+        {
+          "text": "I prefer a one-on-one interview.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1459_sideB_0.mp3"
+        },
+        {
+          "text": "I would rather have a one-on-one interview.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1459_sideB_1.mp3"
+        },
+        {
+          "text": "I'd prefer a one-to-one interview.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1459_sideB_2.mp3"
+        }
+      ],
+      "note": "~I prefer an interview one-on-one~ uses incorrect word order. The phrase [one-on-one] functions as an adjective and must be placed immediately before the noun, as in [a one-on-one interview].\n\n~I prefer an one-on-one interview~ is incorrect because 'one' starts with a consonant sound ('w'), so you must use the article [a], not 'an'."
+    },
+    {
+      "cardId": "mi_1460",
+      "cardType": "flippable",
+      "sideA": "Testiando los casos uno a uno (un caso a la vez).",
+      "sideB": [
+        {
+          "text": "Testing the cases one by one.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1460_sideB_0.mp3"
+        },
+        {
+          "text": "Testing the cases one at a time.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1460_sideB_1.mp3"
+        },
+        {
+          "text": "Testing each case one by one.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1460_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1461",
+      "cardType": "flippable",
+      "sideA": "No ha sido implementado aun esa funcion.",
+      "sideB": [
+        {
+          "text": "That feature hasn't been implemented yet.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1461_sideB_0.mp3"
+        },
+        {
+          "text": "That function has not been implemented yet.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1461_sideB_1.mp3"
+        },
+        {
+          "text": "That feature is not implemented yet.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1461_sideB_2.mp3"
+        }
+      ],
+      "note": "~It hasn't been implemented that feature yet~ has an unnatural word order. The subject [that feature] should come before the passive verb [hasn't been implemented].\n\n~That feature doesn't implement yet~ uses the active voice incorrectly. Since a feature cannot implement itself, you must use the passive voice [isn't implemented] or [hasn't been implemented]."
+    },
+    {
+      "cardId": "mi_1462",
+      "cardType": "flippable",
+      "sideA": "Esa funcion no ha sido implementada aun.",
+      "sideB": [
+        {
+          "text": "That feature hasn't been implemented yet.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1462_sideB_0.mp3"
+        },
+        {
+          "text": "That function hasn't been implemented yet.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1462_sideB_1.mp3"
+        },
+        {
+          "text": "That feature has not yet been implemented.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1462_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1463",
+      "cardType": "flippable",
+      "sideA": "El que mas me preocupa es el issue 34.",
+      "sideB": [
+        {
+          "text": "The one I'm most worried about is issue 34.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1463_sideB_0.mp3"
+        },
+        {
+          "text": "The one that concerns me the most is issue 34.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1463_sideB_1.mp3"
+        },
+        {
+          "text": "What worries me the most is issue 34.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1463_sideB_2.mp3"
+        },
+        {
+          "text": "I'm most worried about issue 34.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1463_sideB_3.mp3"
+        },
+        {
+          "text": "I'm more worried about issue 34.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1463_sideB_4.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1464",
+      "cardType": "flippable",
+      "sideA": "El día de antes de ayer ocurrió.",
+      "sideB": [
+        {
+          "text": "It happened the day before yesterday.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1464_sideB_0.mp3"
+        },
+        {
+          "text": "It occurred the day before yesterday.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1464_sideB_1.mp3"
+        },
+        {
+          "text": "That happened the day before yesterday.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1464_sideB_2.mp3"
+        },
+        {
+          "text": "That occurred the day before yesterday.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1464_sideB_3.mp3"
+        }
+      ],
+      "note": "~The day before yesterday occurred~ is incorrect because it implies the day itself was an event that happened. You need a dummy subject like [It] or [That] to represent the event, as in [It occurred the day before yesterday]."
+    },
+    {
+      "cardId": "mi_1465",
+      "cardType": "flippable",
+      "sideA": "¿Puedes invitarme a la reunión, por favor?",
+      "sideB": [
+        {
+          "text": "Can you please invite me to the meeting?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1465_sideB_0.mp3"
+        },
+        {
+          "text": "Could you invite me to the meeting, please?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1465_sideB_1.mp3"
+        },
+        {
+          "text": "Can you send me an invite to the meeting, please?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1465_sideB_2.mp3"
+        },
+        {
+          "text": "Can you invite me to the meeting, please?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1465_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1466",
+      "cardType": "flippable",
+      "sideA": "No tengo la invitación a la reunión.",
+      "sideB": [
+        {
+          "text": "I don't have the invite for the meeting.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1466_sideB_0.mp3"
+        },
+        {
+          "text": "I don't have the invitation for the meeting.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1466_sideB_1.mp3"
+        },
+        {
+          "text": "I haven't received the meeting invite.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1466_sideB_2.mp3"
+        },
+        {
+          "text": "I don't have the invitation to the meeting.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1466_sideB_3.mp3"
+        }
+      ],
+      "note": "~I don't have the meeting's invitation~ sounds slightly unnatural. For events, it is better to use a compound noun like [the meeting invitation] or use the preposition [to] as in [the invitation to the meeting]."
+    },
+    {
+      "cardId": "mi_1467",
+      "cardType": "flippable",
+      "sideA": "Que hay acerca de la reunión de hoy.",
+      "sideB": [
+        {
+          "text": "What about today's meeting?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1467_sideB_0.mp3"
+        },
+        {
+          "text": "What's happening with today's meeting?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1467_sideB_1.mp3"
+        },
+        {
+          "text": "How about the meeting today?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1467_sideB_2.mp3"
+        }
+      ],
+      "note": "~What about the meeting of today?~ sounds unnatural. In English, we use the possessive form [today's] for time phrases, making it [today's meeting]."
+    },
+    {
+      "cardId": "mi_1468",
+      "cardType": "flippable",
+      "sideA": "¿Vamos a tener la reunión para hoy en la noche?",
+      "sideB": [
+        {
+          "text": "Are we going to have the meeting tonight?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1468_sideB_0.mp3"
+        },
+        {
+          "text": "Are we still having the meeting tonight?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1468_sideB_1.mp3"
+        },
+        {
+          "text": "Will we have the meeting tonight?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1468_sideB_2.mp3"
+        }
+      ],
+      "note": "~Will we have the meeting's tonight?~ is incorrect because you do not need a possessive ('s) for the meeting. The time phrase 'tonight' acts as an adverb modifying the verb, so it should be [have the meeting tonight].\n\n~Will we have the meeting for tonight?~ is unnatural because [tonight] already functions as an adverb of time. Adding the preposition [for] makes it sound like a direct translation from Spanish. It should be [have the meeting tonight]."
+    },
+    {
+      "cardId": "mi_1469",
+      "cardType": "flippable",
+      "sideA": "Ok entiendo. Estaré atento.",
+      "sideB": [
+        {
+          "text": "Ok, I understand. I'll keep an eye out.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1469_sideB_0.mp3"
+        },
+        {
+          "text": "Ok, got it. I'll stay tuned.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1469_sideB_1.mp3"
+        },
+        {
+          "text": "Ok, I see. I will be on the lookout.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1469_sideB_2.mp3"
+        }
+      ],
+      "note": "**[misc:1]**"
+    },
+    {
+      "cardId": "mi_1470",
+      "cardType": "flippable",
+      "sideA": "Un año atrás no era capaz de hablar realmente.",
+      "sideB": [
+        {
+          "text": "A year ago I wasn't really able to speak.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1470_sideB_0.mp3"
+        },
+        {
+          "text": "A year ago I couldn't really speak.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1470_sideB_1.mp3"
+        },
+        {
+          "text": "One year ago I wasn't actually capable of speaking.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1470_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1471",
+      "cardType": "flippable",
+      "sideA": "Un widget que se reconstruye automáticamente siempre que cambie cualquier variable.",
+      "sideB": [
+        {
+          "text": "A widget that rebuilds automatically whenever any variable changes.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1471_sideB_0.mp3"
+        },
+        {
+          "text": "A widget that automatically rebuilds every time any variable changes.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1471_sideB_1.mp3"
+        },
+        {
+          "text": "A widget that rebuilds itself automatically upon any variable change.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1471_sideB_2.mp3"
+        },
+        {
+          "text": "A widget that rebuilds automatically whenever a variable changes.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1471_sideB_3.mp3"
+        }
+      ],
+      "note": "**[er:224]**"
+    },
+    {
+      "cardId": "mi_1472",
+      "cardType": "flippable",
+      "sideA": "Puedes venir cuando quieras.",
+      "sideB": [
+        {
+          "text": "You can drop by whenever you want.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1472_sideB_0.mp3"
+        },
+        {
+          "text": "You can drop by any time you want.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1472_sideB_1.mp3"
+        },
+        {
+          "text": "You can come over at your convenience.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1472_sideB_2.mp3"
+        },
+        {
+          "text": "You can come whenever you want.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1472_sideB_3.mp3"
+        },
+        {
+          "text": "You can come any time.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1472_sideB_4.mp3"
+        }
+      ],
+      "note": "**[er:224]**"
+    },
+    {
+      "cardId": "mi_1473",
+      "cardType": "flippable",
+      "sideA": "Él revisa su teléfono cada vez que vibra.",
+      "sideB": [
+        {
+          "text": "He checks his phone whenever it vibrates.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1473_sideB_0.mp3"
+        },
+        {
+          "text": "He checks his phone every time it vibrates.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1473_sideB_1.mp3"
+        },
+        {
+          "text": "He checks his phone each time it vibrates.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1473_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:224]**"
+    },
+    {
+      "cardId": "mi_1474",
+      "cardType": "flippable",
+      "sideA": "Actualiza la interfaz de usuario tan pronto como ocurra un cambio.",
+      "sideB": [
+        {
+          "text": "Update the UI whenever a change occurs.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1474_sideB_0.mp3"
+        },
+        {
+          "text": "Update the UI as soon as a change occurs.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1474_sideB_1.mp3"
+        },
+        {
+          "text": "Update the UI the moment a change occurs.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1474_sideB_2.mp3"
+        },
+        {
+          "text": "It updates the UI whenever a change occurs.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1474_sideB_3.mp3"
+        }
+      ],
+      "note": "**[er:224]**\n\n~It updates the UI as soon as it occurs a change~ and ~It updates the UI as soon as occurs a change~ use incorrect word order. In English, the subject must always come before the verb, so it should be [as soon as a change occurs]."
+    },
+    {
+      "cardId": "mi_1475",
+      "cardType": "flippable",
+      "sideA": "Estoy enviando la solicitud, pero probablemente recibiré un error por tiempo de espera agotado.",
+      "sideB": [
+        {
+          "text": "I'm sending the request, but I'll probably get a timeout.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1475_sideB_0.mp3"
+        },
+        {
+          "text": "I'm sending the request, but I'll probably get a timeout error.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1475_sideB_1.mp3"
+        },
+        {
+          "text": "I'm sending the request, but it will probably time out.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1475_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1476",
+      "cardType": "flippable",
+      "sideA": "Mi jefe y yo no siempre estamos de acuerdo.",
+      "sideB": [
+        {
+          "text": "My boss and I don't always see eye to eye.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1476_sideB_0.mp3"
+        },
+        {
+          "text": "My boss and I don't always see eye to eye on things.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1476_sideB_1.mp3"
+        },
+        {
+          "text": "My manager and I don't always see eye to eye.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1476_sideB_2.mp3"
+        },
+        {
+          "text": "My boss and I don't always agree.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1476_sideB_3.mp3"
+        },
+        {
+          "text": "My boss and I are not always in agreement.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1476_sideB_4.mp3"
+        }
+      ],
+      "note": "**[misc:4]**\n\n~My boss and I we are not always in agreement~ is incorrect because it uses a double subject. You should drop the [we] and just say [My boss and I are not always in agreement].\n\n~My boss and me don't always see eye to eye~ is incorrect because [My boss and me] uses an object pronoun [me] as the subject. The correct subject form is [My boss and I]."
+    },
+    {
+      "cardId": "mi_1477",
+      "cardType": "flippable",
+      "sideA": "Volvamos a ese punto cuando tengamos más información.",
+      "sideB": [
+        {
+          "text": "Let's circle back to that point when we have more info.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1477_sideB_0.mp3"
+        },
+        {
+          "text": "Let's circle back to that when we have more information.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1477_sideB_1.mp3"
+        },
+        {
+          "text": "We'll circle back to that point once we have more info.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1477_sideB_2.mp3"
+        },
+        {
+          "text": "Let's go back to that point when we have more info.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1477_sideB_3.mp3"
+        }
+      ],
+      "note": "**[misc:6]**"
+    },
+    {
+      "cardId": "mi_1478",
+      "cardType": "flippable",
+      "sideA": "La aplicación funciona desde el primer momento, sin configuración.",
+      "sideB": [
+        {
+          "text": "The app works out of the box, no setup needed.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1478_sideB_0.mp3"
+        },
+        {
+          "text": "The app works out of the box, with no configuration.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1478_sideB_1.mp3"
+        },
+        {
+          "text": "The app works right out of the box, no setup required.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1478_sideB_2.mp3"
+        },
+        {
+          "text": "The app works out of the box, without configuration.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1478_sideB_3.mp3"
+        },
+        {
+          "text": "The app works from the very beginning, with no configuration.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1478_sideB_4.mp3"
+        },
+        {
+          "text": "The app works from the first moment, with no configuration.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1478_sideB_5.mp3"
+        }
+      ],
+      "note": "**[misc:7]**"
+    },
+    {
+      "cardId": "mi_1479",
+      "cardType": "flippable",
+      "sideA": "Lanzamos rápido, pero ahora tenemos mucho código sucio que arreglar.",
+      "sideB": [
+        {
+          "text": "We launched fast, but now we have a lot of technical debt.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1479_sideB_0.mp3"
+        },
+        {
+          "text": "We shipped fast, but now we have a lot of technical debt to fix.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1479_sideB_1.mp3"
+        },
+        {
+          "text": "We released quickly, but now we have plenty of technical debt.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1479_sideB_2.mp3"
+        },
+        {
+          "text": "We launched it fast, but now we have a lot of technical debt.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1479_sideB_3.mp3"
+        }
+      ],
+      "note": "**[misc:8]**"
+    },
+    {
+      "cardId": "mi_1480",
+      "cardType": "flippable",
+      "sideA": "El código falla cuando el usuario deja el campo vacío.",
+      "sideB": [
+        {
+          "text": "The code fails on the edge case where the field is empty.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1480_sideB_0.mp3"
+        },
+        {
+          "text": "The code breaks on the edge case where the field is left empty.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1480_sideB_1.mp3"
+        },
+        {
+          "text": "The code fails in the edge case where the user leaves the field empty.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1480_sideB_2.mp3"
+        },
+        {
+          "text": "The code fails when the user leaves the field empty.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1480_sideB_3.mp3"
+        },
+        {
+          "text": "The code fails when the user leaves an empty field.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1480_sideB_4.mp3"
+        }
+      ],
+      "note": "**[misc:14]**\n**[er:226]**"
+    },
+    {
+      "cardId": "mi_1481",
+      "cardType": "flippable",
+      "sideA": "Las aprobaciones lentas están frenando a todo el equipo.",
+      "sideB": [
+        {
+          "text": "Slow approvals are the bottleneck for the whole team.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1481_sideB_0.mp3"
+        },
+        {
+          "text": "Slow approvals are the bottleneck slowing down the whole team.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1481_sideB_1.mp3"
+        },
+        {
+          "text": "The slow approvals are the bottleneck for the entire team.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1481_sideB_2.mp3"
+        },
+        {
+          "text": "Slow approvals are stopping the whole team.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1481_sideB_3.mp3"
+        },
+        {
+          "text": "Slow approvals are slowing the whole team.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1481_sideB_4.mp3"
+        },
+        {
+          "text": "Slow approvals are stopping the entire team.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1481_sideB_5.mp3"
+        }
+      ],
+      "note": "**[misc:15]**\n\n~Slow aprovations are stopping the whole team~ is incorrect because the word [aprovations] does not exist in English. The correct noun is [approvals]."
+    },
+    {
+      "cardId": "mi_1482",
+      "cardType": "flippable",
+      "sideA": "Nadie quiere tocar ese código porque está completamente desorganizado.",
+      "sideB": [
+        {
+          "text": "Nobody wants to touch that code, it's pure spaghetti code.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1482_sideB_0.mp3"
+        },
+        {
+          "text": "Nobody wants to touch that code because it's pure spaghetti code.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1482_sideB_1.mp3"
+        },
+        {
+          "text": "No one wants to touch that code, it's complete spaghetti code.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1482_sideB_2.mp3"
+        },
+        {
+          "text": "Nobody wants to touch that code because it's a complete mess.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1482_sideB_3.mp3"
+        },
+        {
+          "text": "Nobody wants to touch that code because it's completely disorganized.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1482_sideB_4.mp3"
+        },
+        {
+          "text": "Nobody wants to touch that spaghetti code.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1482_sideB_5.mp3"
+        }
+      ],
+      "note": "**[misc:16]**"
+    },
+    {
+      "cardId": "mi_1483",
+      "cardType": "flippable",
+      "sideA": "El error crítico nos impidió lanzar el producto a tiempo.",
+      "sideB": [
+        {
+          "text": "The critical bug prevented us from launching the product on time.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1483_sideB_0.mp3"
+        },
+        {
+          "text": "The critical error stopped us from launching the product on time.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1483_sideB_1.mp3"
+        },
+        {
+          "text": "The critical bug kept us from launching the product on time.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1483_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:225]**"
+    },
+    {
+      "cardId": "mi_1484",
+      "cardType": "flippable",
+      "sideA": "Uso Visual Studio Code como mi editor de código.",
+      "sideB": [
+        {
+          "text": "I use Visual Studio Code as my code editor.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1484_sideB_0.mp3"
+        },
+        {
+          "text": "Visual Studio Code is the code editor I use.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1484_sideB_1.mp3"
+        }
+      ],
+      "note": "**[misc:17]**"
+    },
+    {
+      "cardId": "mi_1485",
+      "cardType": "flippable",
+      "sideA": "IntelliJ IDEA es mi IDE favorito.",
+      "sideB": [
+        {
+          "text": "IntelliJ IDEA is my favorite IDE.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1485_sideB_0.mp3"
+        },
+        {
+          "text": "My favorite IDE is IntelliJ IDEA.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1485_sideB_1.mp3"
+        }
+      ],
+      "note": "**[misc:17]**"
+    },
+    {
+      "cardId": "mi_1486",
+      "cardType": "flippable",
+      "sideA": "Un IDE incluye un editor de código y otras herramientas.",
+      "sideB": [
+        {
+          "text": "An IDE includes a code editor and other tools.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1486_sideB_0.mp3"
+        },
+        {
+          "text": "An IDE has a code editor plus other tools.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1486_sideB_1.mp3"
+        }
+      ],
+      "note": "**[misc:17]**"
+    },
+    {
+      "cardId": "mi_1487",
+      "cardType": "flippable",
+      "sideA": "Conocí a Ana ayer.",
+      "sideB": [
+        {
+          "text": "I met Ana yesterday.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1487_sideB_0.mp3"
+        },
+        {
+          "text": "I first met Ana yesterday.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1487_sideB_1.mp3"
+        }
+      ],
+      "note": "**[er:103]**"
+    },
+    {
+      "cardId": "mi_1488",
+      "cardType": "flippable",
+      "sideA": "¿Supiste lo que pasó?",
+      "sideB": [
+        {
+          "text": "Did you hear what happened?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1488_sideB_0.mp3"
+        },
+        {
+          "text": "Did you find out what happened?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1488_sideB_1.mp3"
+        }
+      ],
+      "note": "**[er:103]**"
+    },
+    {
+      "cardId": "mi_1489",
+      "cardType": "flippable",
+      "sideA": "Aprendí inglés en la escuela.",
+      "sideB": [
+        {
+          "text": "I learned English at school.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1489_sideB_0.mp3"
+        },
+        {
+          "text": "I studied English at school.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1489_sideB_1.mp3"
+        }
+      ],
+      "note": "**[er:103]**"
     }
   ]
 }
