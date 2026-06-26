@@ -1320,6 +1320,10 @@
         {
           "text": "The rain prevented us from going out.",
           "audioSrc": "public/data/audio/dummy/dummy_250_sideB_2.mp3"
+        },
+        {
+          "text": "The rain kept us from leaving.",
+          "audioSrc": "public/data/audio/dummy/dummy_250_sideB_3.mp3"
         }
       ],
       "note": "**[er:225]**"
@@ -1340,6 +1344,10 @@
         {
           "text": "The policy prevents employees from accessing that data.",
           "audioSrc": "public/data/audio/dummy/dummy_251_sideB_2.mp3"
+        },
+        {
+          "text": "The policy restricts employees from having access to that data.",
+          "audioSrc": "public/data/audio/dummy/dummy_251_sideB_3.mp3"
         }
       ],
       "note": "**[er:225]**"
@@ -1360,6 +1368,10 @@
         {
           "text": "The firewall stops users from reaching unsafe sites.",
           "audioSrc": "public/data/audio/dummy/dummy_252_sideB_2.mp3"
+        },
+        {
+          "text": "The firewall prevents users from visiting insecure sites.",
+          "audioSrc": "public/data/audio/dummy/dummy_252_sideB_3.mp3"
         }
       ],
       "note": "**[er:225]**"
@@ -1474,7 +1486,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_259_sideB_1.mp3"
         }
       ],
-      "note": "**[er:103]**"
+      "note": "**[pv:59]**\n\n**[er:103]**\n\n~I found out that this morning.~ is not valid because 'find out' requires 'about' when followed by a noun or pronoun object. Use [found out about]."
     },
     {
       "cardId": "dummy_260",
@@ -1506,7 +1518,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_261_sideB_1.mp3"
         }
       ],
-      "note": "**[er:226]**"
+      "note": "**[er:214]**\n\n**[er:226]**"
     }
   ]
 }
