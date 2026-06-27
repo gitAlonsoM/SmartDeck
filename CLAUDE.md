@@ -78,6 +78,26 @@ Audio path convention: `public/data/audio/<deck-slug>/<cardId>_sideB_<N>.mp3` (0
 
 ## Recent decisions
 
+### Session repetition counter on cards (2026-06-27)
+A small amber badge (`↻ N`) on each quiz card shows how many times that card has appeared in the current **session** (the span from when the deck is first studied until it is completed or deliberately reset — *not* a single round). It is intentionally **reused from the existing per-card metrics** so it can never drift from the "Generate Progress Report" feature.
+
+**The number's meaning & sync guarantee (critical):**
+- The badge reads the same `attempts` value that the Progress Report uses: key `smart-decks-v3-metrics-<deckId>`, written only by `StorageService.updateCardMetric`. There is a single source of truth, so the two can never diverge.
+- `App._getCardRepetition(cardId)` computes `displayed = (stored attempts) + 1`. Stored `attempts` counts *completed* assessments; the current (not-yet-answered) appearance is therefore `attempts + 1`.
+- New card → `attempts=0` → value `1` → **badge hidden** (only shown when `>= 2`). So a card mastered on the first try never shows a badge.
+- 2nd appearance → badge `2`; fail again → 3rd appearance shows `3`; etc.
+- **Why it stays in sync with the report:** when the user passes a card (`I Knew It` / correct answer), `updateCardMetric` increments `attempts` then sets `masteredAt = attempts`. That final value equals exactly the number the badge was showing. So a card the user approves while the badge reads `5` is recorded as `masteredAt = 5` and lands in the report's `5_attempts` bucket. Always equal, regardless of how many fails preceded it.
+- Once `masteredAt` is set, `updateCardMetric` stops counting and the card leaves the round pool (it's in `learned`), so no post-mastery render can desync it.
+
+**Lifecycle / reset:** the "session" boundary is already handled — both the *Reset* button and the "Cycle Complete!" flow call `App.handleResetDeck → StorageService.clearDeckProgress`, which already calls `clearDeckMetrics`. So finishing or resetting the deck zeroes `attempts`/`masteredAt` and every card reappears "for the first time" with no badge. No new reset logic was needed.
+
+**Files touched (all three quiz screens get the badge; flippable was the primary target):**
+- **`src/core/App.js`** — added `_getCardRepetition(cardId)`; passes the value as a trailing arg to all three screen `render()` calls (`flippableCardScreen`, `audioChoiceScreen`, `quizScreenComponent`).
+- **`FlippableCardScreen`** (`.js` + `.html`) — badge lives in `#flippable-card-header` to the **left of** `#card-progress-indicator` (`justify-end gap-3`), away from the absolutely-positioned flag / Ignore Card buttons. `_updateRepetitionCounter(repetition)` toggles `hidden`/`inline-flex`. **Flip behavior:** `flipCard()`/`resetViewState()` now toggle `invisible` on `#card-progress-indicator` only (previously the whole header), so the repetition badge stays **fixed and visible on side B** like the flag/Ignore buttons, while the `N / total` indicator still hides on flip.
+- **`AudioChoiceScreen` + `QuizScreen`** (`.js` + `.html`) — badge is an absolute `top-3 left-3` pill on `#question-card` (the flag/Ignore buttons sit at `top-3 right-3` in these decks, so the left corner is free). Same `_updateRepetitionCounter` pattern with ids `rep-counter-audio` / `rep-counter-quiz`.
+
+**To adjust the counter later:** the only logic is `App._getCardRepetition`; the three screens just render whatever number they're handed (showing it when `>= 2`). Do not duplicate the count anywhere else or it will desync from the report.
+
 ### New `miscellaneous` glossary — idioms & other uses (2026-06-20)
 Added a third modal glossary alongside `english_rules` (`er`) and `phrasal_verbs` (`pv`): **`miscellaneous`** with alias **`misc`**, for content that is neither a grammar rule nor a phrasal verb — idioms, fixed expressions, business jargon, and tech terms (e.g. `misc:1` "Keep an eye out", `misc:8` "Technical debt"). Cards link to it with the same qualified syntax `**[misc:id]**`.
 

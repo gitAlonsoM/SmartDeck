@@ -399,7 +399,8 @@ class App {
                         this.state.quizInstance.currentIndex,
                         this.state.quizInstance.questions.length,
                         this.state.quizInstance.score,
-                        isMarked
+                        isMarked,
+                        this._getCardRepetition(currentAudioQuestion.cardId)
                     );
                 } else {
                     console.error("DEBUG: [App] render -> Tried to render audio quiz, but no current question found.");
@@ -425,7 +426,7 @@ class App {
                 if (currentQuestion) {
                     const improvementData = StorageService.loadImprovementData(this.state.currentDeckId);
                     const isMarked = improvementData.hasOwnProperty(currentQuestion.cardId);
-                    this.quizScreenComponent.render(currentQuestion, this.state.quizInstance.currentIndex, this.state.quizInstance.questions.length, this.state.quizInstance.score, isMarked);
+                    this.quizScreenComponent.render(currentQuestion, this.state.quizInstance.currentIndex, this.state.quizInstance.questions.length, this.state.quizInstance.score, isMarked, false, this._getCardRepetition(currentQuestion.cardId));
                 } else {
                     console.error("DEBUG: [App] render -> Tried to render quiz, but no current question found.");
                     this.handleGoBackToDecks();
@@ -452,7 +453,7 @@ class App {
 
                     const improvementData = StorageService.loadImprovementData(this.state.currentDeckId);
                     const isMarked = improvementData.hasOwnProperty(currentCard.cardId);
-                    this.flippableCardScreen.render(this.state.currentDeckId, deckName, currentCard, this.state.quizInstance.currentIndex, this.state.quizInstance.currentCards.length, isMarked); // Pass deckId
+                    this.flippableCardScreen.render(this.state.currentDeckId, deckName, currentCard, this.state.quizInstance.currentIndex, this.state.quizInstance.currentCards.length, isMarked, this._getCardRepetition(currentCard.cardId)); // Pass deckId
                 } else {
                     this.handleQuizEnd(); // Should not happen if logic is correct, but as a safeguard
                 }
@@ -475,6 +476,22 @@ class App {
                 console.error(`DEBUG: [App] render -> Unknown screen state: ${this.state.currentScreen}`);
                 this.appContainer.innerHTML = `<p class="text-red-500">Application error: Unknown state.</p>`;
         }
+    }
+
+    /**
+     * Returns how many times the given card has appeared in the current session
+     * (i.e. since the deck was last started/reset until completion or deliberate reset).
+     * It reads the same per-card 'attempts' metric used by the Progress Report, so the
+     * counter stays in sync with it. The stored 'attempts' counts completed assessments,
+     * so the current (not-yet-assessed) appearance is attempts + 1.
+     * @param {string} cardId
+     * @returns {number} 1 for a brand-new card, 2 on its second appearance, etc.
+     */
+    _getCardRepetition(cardId) {
+        if (!cardId || !this.state.currentDeckId) return 1;
+        const metrics = StorageService.loadDeckMetrics(this.state.currentDeckId);
+        const attempts = (metrics[cardId] && metrics[cardId].attempts) || 0;
+        return attempts + 1;
     }
 
     handleMarkCardForImprovement(cardId) {

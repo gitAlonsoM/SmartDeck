@@ -13,7 +13,7 @@ class AudioChoiceScreen {
         this.currentCard = null;
         console.log("DEBUG: [AudioChoiceScreen] constructor -> Component instantiated.");
     }
-async render(cardData, deckId, currentIndex, totalQuestions, score, isMarkedForImprovement) {
+async render(cardData, deckId, currentIndex, totalQuestions, score, isMarkedForImprovement, repetition = 1) {
         console.log(`DEBUG: [AudioChoiceScreen] render -> Rendering question ${currentIndex + 1} of ${totalQuestions}.`);
         this.currentCard = cardData;
         this.currentDeckId = deckId; // Store the deckId
@@ -25,6 +25,7 @@ async render(cardData, deckId, currentIndex, totalQuestions, score, isMarkedForI
         
         document.getElementById('quiz-progress').textContent = `Question ${currentIndex + 1} of ${totalQuestions}`;
         document.getElementById('quiz-score').textContent = `Score: ${score}`;
+        this._updateRepetitionCounter(repetition);
         
         const markImproveBtn = document.getElementById('mark-improve-btn');
         if (markImproveBtn) {
@@ -105,7 +106,22 @@ async render(cardData, deckId, currentIndex, totalQuestions, score, isMarkedForI
 
 
 
-  handleOptionClick(selectedOption, isCorrect) {
+  _updateRepetitionCounter(repetition) {
+        const badge = document.getElementById('rep-counter-audio');
+        const num = document.getElementById('rep-counter-audio-num');
+        if (badge && num) {
+            if (repetition >= 2) {
+                num.textContent = `${repetition}`;
+                badge.classList.remove('hidden');
+                badge.classList.add('inline-flex');
+            } else {
+                badge.classList.add('hidden');
+                badge.classList.remove('inline-flex');
+            }
+        }
+    }
+
+  handleOptionClick(selectedOption, isCorrect) {
         if (!this.currentCard) return;
         
         console.log(`VERIFY: Option clicked. Is Correct? ${isCorrect}. Text: "${selectedOption}"`);

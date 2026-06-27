@@ -20,7 +20,7 @@ constructor(container, onAnswer, onNext, onQuizEnd, onIgnore, onMarkForImproveme
         console.log("DEBUG: [QuizScreen] constructor -> Component instantiated.");
     }
 
- async render(question, currentIndex, totalQuestions, score, isMarkedForImprovement, isDeckCompleted = false) {
+ async render(question, currentIndex, totalQuestions, score, isMarkedForImprovement, isDeckCompleted = false, repetition = 1) {
         console.log(`DEBUG: [QuizScreen] render -> Rendering question ${currentIndex + 1} of ${totalQuestions}. Deck completed: ${isDeckCompleted}`);
 
         // If the last card of a fully mastered deck was just answered, show completion screen.
@@ -38,6 +38,7 @@ constructor(container, onAnswer, onNext, onQuizEnd, onIgnore, onMarkForImproveme
         // Populate static elements
         document.getElementById('quiz-progress').textContent = `Question ${currentIndex + 1} of ${totalQuestions}`;
         document.getElementById('quiz-score').textContent = `Score: ${score}`;
+        this._updateRepetitionCounter(repetition);
          // Visually update the improvement flag icon based on its status
         const markImproveBtn = document.getElementById('mark-improve-btn');
         if (markImproveBtn) {
@@ -94,6 +95,24 @@ document.getElementById('mark-improve-btn').addEventListener('click', (e) => {
       this.playQuestionAudio(); // Autoplay question audio
     }
     
+    /**
+     * Shows the session repetition counter only when the card is repeating
+     * (2nd appearance or more). New cards (repetition === 1) show nothing.
+     */
+    _updateRepetitionCounter(repetition) {
+        const badge = document.getElementById('rep-counter-quiz');
+        const num = document.getElementById('rep-counter-quiz-num');
+        if (!badge || !num) return;
+        if (repetition >= 2) {
+            num.textContent = `${repetition}`;
+            badge.classList.remove('hidden');
+            badge.classList.add('inline-flex');
+        } else {
+            badge.classList.add('hidden');
+            badge.classList.remove('inline-flex');
+        }
+    }
+
     renderContent(content) {
         const container = document.getElementById('content-container');
         container.innerHTML = ''; // Clear previous content

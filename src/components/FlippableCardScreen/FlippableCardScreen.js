@@ -13,7 +13,7 @@ class FlippableCardScreen {
         console.log("DEBUG: [FlippableCardScreen] constructor -> Component instantiated.");
     }
 
-       async render(deckId, deckName, card, currentIndex, total, isMarkedForImprovement) {
+       async render(deckId, deckName, card, currentIndex, total, isMarkedForImprovement, repetition = 1) {
         console.log("DEBUG: [FlippableCardScreen] render -> Rendering card:", card);
         this.cardData = card;
         this.deckId = deckId;
@@ -24,7 +24,8 @@ class FlippableCardScreen {
         }
 
         document.getElementById('card-progress-indicator').textContent = `${currentIndex + 1} / ${total}`;
-        
+        this._updateRepetitionCounter(repetition);
+
         const markImproveBtn = document.getElementById('mark-improve-btn-flippable');
         if (markImproveBtn) {
             const flagIcon = markImproveBtn.querySelector('i');
@@ -355,15 +356,35 @@ populateCard() {
         };
     }
     
+    /**
+     * Shows the session repetition counter only when the card is repeating
+     * (2nd appearance or more). New cards (repetition === 1) show nothing.
+     */
+    _updateRepetitionCounter(repetition) {
+        const badge = document.getElementById('rep-counter-flippable');
+        const num = document.getElementById('rep-counter-flippable-num');
+        if (!badge || !num) return;
+        if (repetition >= 2) {
+            num.textContent = `${repetition}`;
+            badge.classList.remove('hidden');
+            badge.classList.add('inline-flex');
+        } else {
+            badge.classList.add('hidden');
+            badge.classList.remove('inline-flex');
+        }
+    }
+
     flipCard() {
-        document.getElementById('flippable-card-header').classList.add('invisible');
+        // Hide only the progress indicator on flip; keep the repetition badge fixed
+        // (like the flag / Ignore Card buttons) so it stays visible on side B too.
+        document.getElementById('card-progress-indicator').classList.add('invisible');
         document.querySelector('.flip-card-inner').classList.add('is-flipped');
         document.getElementById('flip-card-btn').classList.add('hidden');
         document.getElementById('assessment-buttons').classList.remove('hidden');
     }
 
     resetViewState() {
-        document.getElementById('flippable-card-header').classList.remove('invisible');
+        document.getElementById('card-progress-indicator').classList.remove('invisible');
         const cardInner = document.querySelector('.flip-card-inner');
         if (cardInner) cardInner.classList.remove('is-flipped');
         
