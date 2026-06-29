@@ -226,7 +226,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_233_sideB_4.mp3"
         }
       ],
-      "note": "**[misc:1]**\n\n~Keep an eye out for the package arrives~ is not valid because 'for' is a preposition and cannot be followed directly by a subject and conjugated verb. You should use an '-ing' form or an infinitive, like [Keep an eye out for the package arriving] or [Keep an eye out for the package to arrive]."
+      "note": "**[misc:1]**\n\n~Keep an eye out for the package arrives~ is not valid because 'for' is a preposition and cannot be followed directly by a subject and conjugated verb. You should use an '-ing' form or an infinitive, like [Keep an eye out for the package arriving] or [Keep an eye out for the package to arrive].\n\n~Keep an eye on for the package~ is incorrect because it mixes two different expressions. You must either use [Keep an eye on the package] (if you are watching the physical package itself) or [Keep an eye out for the package] (if you are waiting for it to arrive)."
     },
     {
       "cardId": "dummy_234",
@@ -308,6 +308,10 @@
         {
           "text": "This topic is too long for the meeting, let's discuss it later.",
           "audioSrc": "public/data/audio/dummy/dummy_237_sideB_3.mp3"
+        },
+        {
+          "text": "This topic is too long for the meeting, let's discuss it offline.",
+          "audioSrc": "public/data/audio/dummy/dummy_237_sideB_4.mp3"
         }
       ],
       "note": "**[misc:5]**"
@@ -412,6 +416,10 @@
         {
           "text": "There's already a tool for that, let's not waste any time.",
           "audioSrc": "public/data/audio/dummy/dummy_244_sideB_3.mp3"
+        },
+        {
+          "text": "There's already a tool for that, so don't waste any time.",
+          "audioSrc": "public/data/audio/dummy/dummy_244_sideB_4.mp3"
         }
       ],
       "note": "**[misc:12]**\n**[er:61]**\n\n~There's already a tool for that, let's not waste the time~ is slightly unnatural because we generally say [waste time] without the article [the] when talking about time in a general sense.\n\n~It exists already a tool for that~ is a direct translation from Spanish. In English, to declare the existence of something, you must use the existential 'there', as in [There is already a tool for that].\n\n~There's already a tool for that, let's don't waste any time~ is incorrect because [let's don't] is non-standard grammar. The correct negative form of 'let's' is [let's not].\n\n~There's already a tool for that, let's not loose any time~ contains a spelling error. The adjective 'loose' means not tight; the correct verb is [lose]. Additionally, in English we typically say [waste time] rather than 'lose time' in this context.\n\n~There's already a tool for that, let's don't loose any time~ combines the incorrect structure 'let's don't' with the misspelled word 'loose'. The correct form is [let's not waste]."
@@ -524,6 +532,10 @@
         {
           "text": "I heard about that this morning.",
           "audioSrc": "public/data/audio/dummy/dummy_259_sideB_1.mp3"
+        },
+        {
+          "text": "I heard that this morning.",
+          "audioSrc": "public/data/audio/dummy/dummy_259_sideB_2.mp3"
         }
       ],
       "note": "**[pv:59]**\n\n**[er:103]**\n\n~I found out that this morning.~ is not valid because 'find out' requires 'about' when followed by a noun or pronoun object. Use [found out about].\n\n~I knew that this morning~ is incorrect for expressing discovery. The verb [know] describes the continuous state of having information, not the moment you acquire it. To express 'enterarse', you must use an action verb like [found out] or [heard]."
@@ -580,6 +592,10 @@
         {
           "text": "Object-oriented programming utilizes inheritance to reuse code.",
           "audioSrc": "public/data/audio/dummy/dummy_262_sideB_2.mp3"
+        },
+        {
+          "text": "OOP uses inheritance for code reusability.",
+          "audioSrc": "public/data/audio/dummy/dummy_262_sideB_3.mp3"
         }
       ],
       "note": null
@@ -600,6 +616,10 @@
         {
           "text": "A good model works as a blueprint for developing software.",
           "audioSrc": "public/data/audio/dummy/dummy_263_sideB_2.mp3"
+        },
+        {
+          "text": "A good model is like a blueprint for software development.",
+          "audioSrc": "public/data/audio/dummy/dummy_263_sideB_3.mp3"
         }
       ],
       "note": null
@@ -622,7 +642,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_264_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "\n\n~This base class shares its inheritance with the children controllers~ is not valid because when a noun acts as an adjective to modify another noun, it typically remains in its singular form. Use [child controllers].\n\n~This base class shares its inherent with the children controllers~ is incorrect because 'inherent' is an adjective, but the sentence requires the noun [inheritance]. Also, use [child] instead of 'children'."
     },
     {
       "cardId": "dummy_265",
@@ -642,7 +662,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_265_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "\n\n~We need to create the plano before writing the final code~ is not valid because 'plano' is a Spanish word. The correct English term in this context is [blueprint] or [plan]."
     },
     {
       "cardId": "dummy_266",
@@ -662,7 +682,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_266_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "\n\n~The children promised to get along~ changes the meaning. 'Get along' means to have a good relationship with someone (llevarse bien). To specifically say 'portarse bien', you should use [behave]."
     },
     {
       "cardId": "dummy_267",
@@ -802,7 +822,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_273_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "\n\n~Please speak on behalf who cannot~ is missing the preposition 'of'. The correct phrase is [on behalf of].\n\n~Please speak on behalf of who cannot~ is incorrect because the preposition 'of' needs a noun or pronoun as its object before the relative clause. You must say [on behalf of those who] or [on behalf of people who]."
     },
     {
       "cardId": "dummy_274",
@@ -820,6 +840,10 @@
         {
           "text": "If you had listened to me six months ago, things would be different.",
           "audioSrc": "public/data/audio/dummy/dummy_274_sideB_2.mp3"
+        },
+        {
+          "text": "If you had listened to me 6 months ago, it would be another story.",
+          "audioSrc": "public/data/audio/dummy/dummy_274_sideB_3.mp3"
         }
       ],
       "note": null
@@ -842,7 +866,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_275_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:98]**\n\n**[er:151]**\n\nThis sentence uses a Mixed Conditional. It combines a past hypothetical condition (Past Perfect: had done) with a present imaginary result (would be)."
     },
     {
       "cardId": "dummy_276",
@@ -862,7 +886,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_276_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "\n\n~We have this particular case for example~ translates to 'Tenemos este caso en particular, por ejemplo'. To say that the case serves *as* the example (de ejemplo), you must use [as an example]."
     },
     {
       "cardId": "dummy_277",
@@ -882,7 +906,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_277_sideB_2.mp3"
         }
       ],
-      "note": "**[er:15]**"
+      "note": "**[er:15]**\n\n~I am used to being the cold~ is incorrect because it literally translates to 'Estoy acostumbrado a ser el frío'. To express being accustomed to something, just follow the phrase directly with the noun: [I am used to the cold]."
     },
     {
       "cardId": "dummy_278",
@@ -940,6 +964,14 @@
         {
           "text": "I would go to parties when I was a teen.",
           "audioSrc": "public/data/audio/dummy/dummy_280_sideB_2.mp3"
+        },
+        {
+          "text": "I used to go to parties when I was an adolescent.",
+          "audioSrc": "public/data/audio/dummy/dummy_280_sideB_3.mp3"
+        },
+        {
+          "text": "I used to go to parties when I was young.",
+          "audioSrc": "public/data/audio/dummy/dummy_280_sideB_4.mp3"
         }
       ],
       "note": "**[er:15]**"
@@ -980,6 +1012,10 @@
         {
           "text": "I am used to sleeping just a little.",
           "audioSrc": "public/data/audio/dummy/dummy_282_sideB_2.mp3"
+        },
+        {
+          "text": "I'm used to sleeping a little bit.",
+          "audioSrc": "public/data/audio/dummy/dummy_282_sideB_3.mp3"
         }
       ],
       "note": "**[er:15]**"
@@ -1002,7 +1038,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_283_sideB_2.mp3"
         }
       ],
-      "note": "**[er:15]**"
+      "note": "**[er:15]**\n\n~Did you use to walking up late?~ is not valid because the structure 'use to' must be followed by the base form of the verb, not the '-ing' form. You should use [use to wake up]."
     },
     {
       "cardId": "dummy_284",
