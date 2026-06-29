@@ -1059,6 +1059,66 @@
         }
       ],
       "note": "**[er:15]**"
+    },
+    {
+      "cardId": "dummy_285",
+      "cardType": "flippable",
+      "sideA": "Toda decisión tiene un costo.",
+      "sideB": [
+        {
+          "text": "Every decision has a trade-off.",
+          "audioSrc": "public/data/audio/dummy/dummy_285_sideB_0.mp3"
+        },
+        {
+          "text": "Every choice comes with a trade-off.",
+          "audioSrc": "public/data/audio/dummy/dummy_285_sideB_1.mp3"
+        },
+        {
+          "text": "Every decision involves a trade-off.",
+          "audioSrc": "public/data/audio/dummy/dummy_285_sideB_2.mp3"
+        }
+      ],
+      "note": "A [trade-off] is a situation where you gain one thing but lose another. Some translations can be: intercambio, equilibrio, compensación, sacrificio, renuncia, costo."
+    },
+    {
+      "cardId": "dummy_286",
+      "cardType": "flippable",
+      "sideA": "Es un intercambio entre velocidad y calidad.",
+      "sideB": [
+        {
+          "text": "There is a trade-off between speed and quality.",
+          "audioSrc": "public/data/audio/dummy/dummy_286_sideB_0.mp3"
+        },
+        {
+          "text": "It's a trade-off between speed and quality.",
+          "audioSrc": "public/data/audio/dummy/dummy_286_sideB_1.mp3"
+        },
+        {
+          "text": "There's a balance between speed and quality.",
+          "audioSrc": "public/data/audio/dummy/dummy_286_sideB_2.mp3"
+        }
+      ],
+      "note": "A [trade-off] is a situation where you gain one thing but lose another. Some translations can be: intercambio, equilibrio, compensación, sacrificio, renuncia, costo."
+    },
+    {
+      "cardId": "dummy_287",
+      "cardType": "flippable",
+      "sideA": "Es un intercambio entre tiempo y dinero.",
+      "sideB": [
+        {
+          "text": "It's a trade-off between time and money.",
+          "audioSrc": "public/data/audio/dummy/dummy_287_sideB_0.mp3"
+        },
+        {
+          "text": "There is a trade-off between time and money.",
+          "audioSrc": "public/data/audio/dummy/dummy_287_sideB_1.mp3"
+        },
+        {
+          "text": "It's a balance between time and money.",
+          "audioSrc": "public/data/audio/dummy/dummy_287_sideB_2.mp3"
+        }
+      ],
+      "note": "A [trade-off] is a situation where you gain one thing but lose another. Some translations can be: intercambio, equilibrio, compensación, sacrificio, renuncia, costo."
     }
   ]
 }

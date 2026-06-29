@@ -138,8 +138,7 @@ static _generateImprovementPrompt(deckName, correctCommand, cardsToImprove, glos
 
         const promptHeader = `
 
-# SmartDeck Card Improvement Prompt V10.8 (New 'misc' glossary for idioms / other uses, alongside er = english_rules and pv = phrasal_verbs)
-## 🎯 1. ROLE AND GOAL
+# SmartDeck Card Improvement Prompt V10.9
 You are an expert for 'SmartDeck'. Your goal is to significantly enhance the pedagogical value of a batch of flashcards based on user feedback AND THE NEXT RULES!.
 
 
@@ -224,7 +223,27 @@ This is a two-part process. You must modify **both** the card data and your summ
 
 
 ## 🔍 6. SPECIAL RULE: HANDLING "ADD MODAL" REQUESTS (SMART SEARCH & CREATE)
-If the user asks to "Add/Create a modal for [Topic]" (e.g., "Add modal for Present Simple", "Crear modal si no existe", "Link modal"):
+
+### 6.0 WHAT TRIGGERS THIS FLOW (two independent triggers — either one is enough)
+This flow runs whenever **either** of these is present in a card's \`review_request\`:
+1. **The \`add_modal\` reason** is present in \`reasons\` (the user clicked the "Add Modal" checkbox), OR
+2. The \`user_comment\` explicitly asks for a modal in plain language (e.g., "Add modal for Present Simple", "Crear modal si no existe", "Link modal", "ponle un modal de...").
+
+**KEY RULES (read carefully):**
+- The \`add_modal\` checkbox is just a **helper / shortcut** — it is NOT mandatory. If the user wrote a modal request in \`user_comment\` but did NOT tick the checkbox, you STILL add the modal. **The \`user_comment\` always carries more weight than the checkbox.**
+- **The \`add_modal\` checkbox with NO \`user_comment\`:** treat it as "add the single most relevant modal for the grammar rule / topic that carries the weight of this card." Determine that topic yourself from the card's content (\`sideA\`/\`sideB\`/\`sentenceParts\`/\`question\`), then run the search-then-create flow below.
+- **The \`add_modal\` checkbox WITH a \`user_comment\`:** the comment **focuses/refines which modal to pick or how to scope it** (e.g., the user names the exact rule, or says "el modal debe enfocarse en X"). Honor that focus while still following the GENERALITY PRINCIPLE in STEP C (a new modal documents the whole topic, not just the card's case).
+- **Goal of the modal:** it must apply to the **main grammar rule / topic that the card is teaching** — the concept that "lleva el peso de la card" — not a tangential detail.
+
+### 6.1 ⚠️ WHERE THE MODAL LINK GOES (depends on card type — CRITICAL)
+The link \`**[alias:id]**\\n\\n\` is **prepended at the very start** of one field, and which field depends on the card type:
+- **\`flippable\` card → \`note\` field.** Prepend \`**[alias:id]**\\n\\n\` before any existing note text.
+- **\`audioChoice\` card → \`content.value\` field** (NOT \`note\` — audioChoice renders the modal from \`content.value\`). Prepend \`**[alias:id]**\\n\\n\` before any existing \`content.value\` text. If \`content\` does not exist on the card, create it as \`{ "type": "none", "value": "**[alias:id]**" }\`.
+- **\`multipleChoice\` card → not supported.** These cards do not render modal links; never inject a modal here. (The "Add Modal" checkbox is hidden for them.)
+
+Wherever STEP B / STEP C below say "inject into the card's \`note\`", apply it to the field named here for the card's type.
+
+If the user asks to "Add/Create a modal for [Topic]" (e.g., "Add modal for Present Simple", "Crear modal si no existe", "Link modal") OR the \`add_modal\` reason is present:
 
 ### STEP A: THE DUPLICATE CHECK (MANDATORY)
 Before creating anything, rigorously scan the **MODAL CATALOG** (Section 9). The catalog is keyed by qualified ID \`alias:id\`. Use the entry's \`title\` and \`description\` to judge relevance.

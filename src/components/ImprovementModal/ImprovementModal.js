@@ -118,6 +118,9 @@ async init() {
 
 
         const isFlippableType = cardType === 'flippable';
+        // Only flippable (note field) and audioChoice (content.value field) cards render
+        // modal links; multipleChoice has no modal-capable field, so hide "Add Modal" there.
+        const supportsModal = cardType === 'flippable' || cardType === 'audioChoice';
 
         allReasonLabels.forEach(label => {
             const reasonFor = label.dataset.reasonFor;
@@ -128,6 +131,8 @@ async init() {
             } else if (isFlippableType && reasonFor === 'flippable') {
                 shouldShow = true;
             } else if (!isFlippableType && reasonFor === 'quiz') {
+                shouldShow = true;
+            } else if (supportsModal && reasonFor === 'modal') {
                 shouldShow = true;
             }
 
