@@ -5,202 +5,6 @@
   "deckType": "flippable",
   "cards": [
     {
-      "cardId": "dummy_188",
-      "cardType": "flippable",
-      "sideA": "Este producto sobra.",
-      "sideB": [
-        {
-          "text": "This product is extra.",
-          "audioSrc": "public/data/audio/dummy/dummy_188_sideB_0.mp3"
-        },
-        {
-          "text": "This product is left over.",
-          "audioSrc": "public/data/audio/dummy/dummy_188_sideB_1.mp3"
-        },
-        {
-          "text": "We have this product left over.",
-          "audioSrc": "public/data/audio/dummy/dummy_188_sideB_2.mp3"
-        }
-      ],
-      "note": "**[pv:203]**\n\n~This product is left~ is not entirely accurate for 'sobra'. [Left] means remaining ('queda'), while [left over] specifically means extra or surplus ('sobra')."
-    },
-    {
-      "cardId": "dummy_197",
-      "cardType": "flippable",
-      "sideA": "Aún no he tenido respuesta de él.",
-      "sideB": [
-        {
-          "text": "I haven't heard back from him yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_197_sideB_0.mp3"
-        },
-        {
-          "text": "I still haven't received a reply from him.",
-          "audioSrc": "public/data/audio/dummy/dummy_197_sideB_1.mp3"
-        },
-        {
-          "text": "I haven't had a response from him yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_197_sideB_2.mp3"
-        },
-        {
-          "text": "I haven't had an answer from him yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_197_sideB_3.mp3"
-        },
-        {
-          "text": "I haven't heard anything from him yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_197_sideB_4.mp3"
-        }
-      ],
-      "note": "**[er:103]**"
-    },
-    {
-      "cardId": "dummy_198",
-      "cardType": "flippable",
-      "sideA": "Aún no he sabido nada acerca de eso.",
-      "sideB": [
-        {
-          "text": "I haven't heard anything about that yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_198_sideB_0.mp3"
-        },
-        {
-          "text": "I still haven't received any news regarding that.",
-          "audioSrc": "public/data/audio/dummy/dummy_198_sideB_1.mp3"
-        },
-        {
-          "text": "I haven't found out anything about that yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_198_sideB_2.mp3"
-        }
-      ],
-      "note": "**[pv:59]**\n**[er:103]**\n\n~I didn't know anything about that yet~ and ~I haven't known anything about that yet~ are incorrect. Although 'know' translates to 'saber', in English [know] is a state verb (the condition of having knowledge), not an action verb. In Spanish, 'saber' can mean both the state ('yo sé') and the action of receiving news ('no he sabido nada'). In English, when you mean 'enterarse' or receiving an update, you must use action verbs like [hear] or [find out]. Therefore, you say 'I haven't heard' (no he tenido noticias) instead of 'I haven't known'. Additionally, [yet] typically pairs with the present perfect."
-    },
-    {
-      "cardId": "dummy_213",
-      "cardType": "flippable",
-      "sideA": "Lo testie sobre la marcha y funcionó.",
-      "sideB": [
-        {
-          "text": "I tested it on the fly and it worked.",
-          "audioSrc": "public/data/audio/dummy/dummy_213_sideB_0.mp3"
-        },
-        {
-          "text": "I tested it as I went and it worked.",
-          "audioSrc": "public/data/audio/dummy/dummy_213_sideB_1.mp3"
-        },
-        {
-          "text": "I tested it on the go and it worked.",
-          "audioSrc": "public/data/audio/dummy/dummy_213_sideB_2.mp3"
-        },
-        {
-          "text": "I tested it on the spot and it worked.",
-          "audioSrc": "public/data/audio/dummy/dummy_213_sideB_3.mp3"
-        }
-      ],
-      "note": "**[misc:11]**"
-    },
-    {
-      "cardId": "dummy_214",
-      "cardType": "flippable",
-      "sideA": "Sobre la marcha iré documentando lo realizado.",
-      "sideB": [
-        {
-          "text": "I will document what's been done on the fly.",
-          "audioSrc": "public/data/audio/dummy/dummy_214_sideB_0.mp3"
-        },
-        {
-          "text": "I'll document what is done as we go.",
-          "audioSrc": "public/data/audio/dummy/dummy_214_sideB_1.mp3"
-        },
-        {
-          "text": "I'll document my progress as I go.",
-          "audioSrc": "public/data/audio/dummy/dummy_214_sideB_2.mp3"
-        },
-        {
-          "text": "On the fly, I will document what's been done.",
-          "audioSrc": "public/data/audio/dummy/dummy_214_sideB_3.mp3"
-        },
-        {
-          "text": "As I go, I'll document my progress.",
-          "audioSrc": "public/data/audio/dummy/dummy_214_sideB_4.mp3"
-        },
-        {
-          "text": "On the fly, I will document what is done.",
-          "audioSrc": "public/data/audio/dummy/dummy_214_sideB_5.mp3"
-        },
-        {
-          "text": "I will document what is done on the fly.",
-          "audioSrc": "public/data/audio/dummy/dummy_214_sideB_6.mp3"
-        },
-        {
-          "text": "On the spot, I will document what is done.",
-          "audioSrc": "public/data/audio/dummy/dummy_214_sideB_7.mp3"
-        }
-      ],
-      "note": "**[misc:11]**\n\n~On the fly, I will document what it's done~ is incorrect because [what it is done] or [what it has done] does not fit the passive meaning needed here. You should use [what's been done] or [what is done] without the pronoun [it]."
-    },
-    {
-      "cardId": "dummy_218",
-      "cardType": "flippable",
-      "sideA": "No lo he subido aún.",
-      "sideB": [
-        {
-          "text": "I haven't uploaded it yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_218_sideB_0.mp3"
-        },
-        {
-          "text": "I haven't pushed it yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_218_sideB_1.mp3"
-        },
-        {
-          "text": "I still haven't uploaded it.",
-          "audioSrc": "public/data/audio/dummy/dummy_218_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_219",
-      "cardType": "flippable",
-      "sideA": "Debo rellenar el listado día por medio.",
-      "sideB": [
-        {
-          "text": "I have to fill out the list every other day.",
-          "audioSrc": "public/data/audio/dummy/dummy_219_sideB_0.mp3"
-        },
-        {
-          "text": "I need to fill in the list every other day.",
-          "audioSrc": "public/data/audio/dummy/dummy_219_sideB_1.mp3"
-        },
-        {
-          "text": "I must fill out the list every two days.",
-          "audioSrc": "public/data/audio/dummy/dummy_219_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_230",
-      "cardType": "flippable",
-      "sideA": "Reconstruye el widget cada vez que la variable cambie.",
-      "sideB": [
-        {
-          "text": "Rebuild the widget whenever the variable changes.",
-          "audioSrc": "public/data/audio/dummy/dummy_230_sideB_0.mp3"
-        },
-        {
-          "text": "Rebuild the widget every time the variable changes.",
-          "audioSrc": "public/data/audio/dummy/dummy_230_sideB_1.mp3"
-        },
-        {
-          "text": "Rebuild the widget upon any variable change.",
-          "audioSrc": "public/data/audio/dummy/dummy_230_sideB_2.mp3"
-        },
-        {
-          "text": "It rebuilds the widget whenever the variable changes.",
-          "audioSrc": "public/data/audio/dummy/dummy_230_sideB_3.mp3"
-        }
-      ],
-      "note": "**[er:224]**"
-    },
-    {
       "cardId": "dummy_233",
       "cardType": "flippable",
       "sideA": "Estate atento por si llega el paquete.",
@@ -226,119 +30,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_233_sideB_4.mp3"
         }
       ],
-      "note": "**[misc:1]**\n\n~Keep an eye out for the package arrives~ is not valid because 'for' is a preposition and cannot be followed directly by a subject and conjugated verb. You should use an '-ing' form or an infinitive, like [Keep an eye out for the package arriving] or [Keep an eye out for the package to arrive].\n\n~Keep an eye on for the package~ is incorrect because it mixes two different expressions. You must either use [Keep an eye on the package] (if you are watching the physical package itself) or [Keep an eye out for the package] (if you are waiting for it to arrive)."
-    },
-    {
-      "cardId": "dummy_234",
-      "cardType": "flippable",
-      "sideA": "Ya hicimos suficiente, podemos parar por hoy.",
-      "sideB": [
-        {
-          "text": "We did enough, let's call it a day.",
-          "audioSrc": "public/data/audio/dummy/dummy_234_sideB_0.mp3"
-        },
-        {
-          "text": "We've done enough, let's call it a day.",
-          "audioSrc": "public/data/audio/dummy/dummy_234_sideB_1.mp3"
-        },
-        {
-          "text": "That's enough for now, let's call it a day.",
-          "audioSrc": "public/data/audio/dummy/dummy_234_sideB_2.mp3"
-        },
-        {
-          "text": "We did enough, we can stop today.",
-          "audioSrc": "public/data/audio/dummy/dummy_234_sideB_3.mp3"
-        },
-        {
-          "text": "We did enough, we can call it a day.",
-          "audioSrc": "public/data/audio/dummy/dummy_234_sideB_4.mp3"
-        },
-        {
-          "text": "We did enough, we can stop for today.",
-          "audioSrc": "public/data/audio/dummy/dummy_234_sideB_5.mp3"
-        }
-      ],
-      "note": "**[misc:2]**"
-    },
-    {
-      "cardId": "dummy_235",
-      "cardType": "flippable",
-      "sideA": "Perder ese trabajo resultó ser algo bueno al final.",
-      "sideB": [
-        {
-          "text": "Losing that job was a blessing in disguise.",
-          "audioSrc": "public/data/audio/dummy/dummy_235_sideB_0.mp3"
-        },
-        {
-          "text": "Losing that job turned out to be a blessing in disguise.",
-          "audioSrc": "public/data/audio/dummy/dummy_235_sideB_1.mp3"
-        },
-        {
-          "text": "In the end, losing that job was a blessing in disguise.",
-          "audioSrc": "public/data/audio/dummy/dummy_235_sideB_2.mp3"
-        },
-        {
-          "text": "Losing that job was good in the end.",
-          "audioSrc": "public/data/audio/dummy/dummy_235_sideB_3.mp3"
-        },
-        {
-          "text": "Losing that job was good after all.",
-          "audioSrc": "public/data/audio/dummy/dummy_235_sideB_4.mp3"
-        }
-      ],
-      "note": "**[misc:3]**\n\n~Losing that job resulted be a blessing in disguise~ is not valid because 'resulted' cannot be followed directly by the bare infinitive 'be'. You should use [turned out to be] or [ended up being].\n\n~Losing that job resulted being a blessing in disguise~ is incorrect grammar. The verb 'result' is typically followed by 'in' (e.g., resulted in failure), but to express an outcome, you should use [turned out to be] or [ended up being]."
-    },
-    {
-      "cardId": "dummy_237",
-      "cardType": "flippable",
-      "sideA": "Ese tema es muy largo para la reunión, hablémoslo después.",
-      "sideB": [
-        {
-          "text": "That topic is too long for the meeting, let's take it offline.",
-          "audioSrc": "public/data/audio/dummy/dummy_237_sideB_0.mp3"
-        },
-        {
-          "text": "That's too much for the meeting, let's take it offline.",
-          "audioSrc": "public/data/audio/dummy/dummy_237_sideB_1.mp3"
-        },
-        {
-          "text": "This topic is too long for the meeting, let's take it offline and discuss it later.",
-          "audioSrc": "public/data/audio/dummy/dummy_237_sideB_2.mp3"
-        },
-        {
-          "text": "This topic is too long for the meeting, let's discuss it later.",
-          "audioSrc": "public/data/audio/dummy/dummy_237_sideB_3.mp3"
-        },
-        {
-          "text": "This topic is too long for the meeting, let's discuss it offline.",
-          "audioSrc": "public/data/audio/dummy/dummy_237_sideB_4.mp3"
-        }
-      ],
-      "note": "**[misc:5]**"
-    },
-    {
-      "cardId": "dummy_241",
-      "cardType": "flippable",
-      "sideA": "Hagamos una revisión rápida antes de publicar los cambios.",
-      "sideB": [
-        {
-          "text": "Let's do a quick sanity check before pushing the changes.",
-          "audioSrc": "public/data/audio/dummy/dummy_241_sideB_0.mp3"
-        },
-        {
-          "text": "Let's run a quick sanity check before we push the changes.",
-          "audioSrc": "public/data/audio/dummy/dummy_241_sideB_1.mp3"
-        },
-        {
-          "text": "Let's do a sanity check before we publish the changes.",
-          "audioSrc": "public/data/audio/dummy/dummy_241_sideB_2.mp3"
-        },
-        {
-          "text": "Let's do a quick sanity check before publishing the changes.",
-          "audioSrc": "public/data/audio/dummy/dummy_241_sideB_3.mp3"
-        }
-      ],
-      "note": "**[misc:9]**"
+      "note": "**[misc:1]**\n\n~Keep an eye out for the package arrives~ is not valid because 'for' is a preposition and cannot be followed directly by a subject and conjugated verb. You should use an '-ing' form or an infinitive, like [Keep an eye out for the package arriving] or [Keep an eye out for the package to arrive].\n\n~Keep an eye on for the package~ is incorrect because it mixes two different expressions. You must either use [Keep an eye on the package] (if you are watching the physical package itself) or [Keep an eye out for the package] (if you are waiting for it to arrive).\n\n~Keep an eye on the package to arrive~ is incorrect because you cannot use 'keep an eye on' followed by an infinitive clause for an expected event. You must use [keep an eye out for] when waiting for something to arrive."
     },
     {
       "cardId": "dummy_242",
@@ -364,113 +56,13 @@
         {
           "text": "Please keep me in the loop about any news.",
           "audioSrc": "public/data/audio/dummy/dummy_242_sideB_4.mp3"
+        },
+        {
+          "text": "Please let me know about any news.",
+          "audioSrc": "public/data/audio/dummy/dummy_242_sideB_5.mp3"
         }
       ],
-      "note": "**[misc:10]**\n\n~Please keep me on the loop about any updates~ is incorrect because the standard idiom uses the preposition [in], as in [keep me in the loop]."
-    },
-    {
-      "cardId": "dummy_243",
-      "cardType": "flippable",
-      "sideA": "Tuve que cambiar la presentación en el momento.",
-      "sideB": [
-        {
-          "text": "I had to change the presentation on the fly.",
-          "audioSrc": "public/data/audio/dummy/dummy_243_sideB_0.mp3"
-        },
-        {
-          "text": "I had to change the slides on the fly.",
-          "audioSrc": "public/data/audio/dummy/dummy_243_sideB_1.mp3"
-        },
-        {
-          "text": "I had to adjust the presentation on the fly.",
-          "audioSrc": "public/data/audio/dummy/dummy_243_sideB_2.mp3"
-        },
-        {
-          "text": "I had to change the presentation on the spot.",
-          "audioSrc": "public/data/audio/dummy/dummy_243_sideB_3.mp3"
-        },
-        {
-          "text": "I had to change the presentation right then and there.",
-          "audioSrc": "public/data/audio/dummy/dummy_243_sideB_4.mp3"
-        }
-      ],
-      "note": "**[misc:11]**\n\n~I had to change the presentation at that time~ means you changed it during a specific past period, not spontaneously 'on the fly'.\n\n~I had to change the presentation in the time / on the time~ are grammatically incorrect. To express doing something spontaneously or immediately, you can use expressions like [on the spot] or [right then and there].\n\n~I had to change the presentation at the moment~ means you changed it \"right now\" in the present, not spontaneously during a past event.\n\n~I had to change the presentation on the moment~ is not a valid English expression. You can use [on the spur of the moment] or [on the spot].\n\n~I had to change the presentation in the moment~ usually implies being caught up in the emotion of an experience, rather than making a quick, spontaneous adjustment.\n\n~I had to change the presentation at that moment~ implies you changed it during a specific point in time in the past, but it lacks the improvisational, unplanned meaning of doing something [on the fly] or [on the spot]."
-    },
-    {
-      "cardId": "dummy_244",
-      "cardType": "flippable",
-      "sideA": "Ya existe una herramienta para eso, no perdamos tiempo.",
-      "sideB": [
-        {
-          "text": "There's already a tool for that, let's not reinvent the wheel.",
-          "audioSrc": "public/data/audio/dummy/dummy_244_sideB_0.mp3"
-        },
-        {
-          "text": "There's already a tool for that, so let's not reinvent the wheel.",
-          "audioSrc": "public/data/audio/dummy/dummy_244_sideB_1.mp3"
-        },
-        {
-          "text": "A tool already exists for that, let's not reinvent the wheel.",
-          "audioSrc": "public/data/audio/dummy/dummy_244_sideB_2.mp3"
-        },
-        {
-          "text": "There's already a tool for that, let's not waste any time.",
-          "audioSrc": "public/data/audio/dummy/dummy_244_sideB_3.mp3"
-        },
-        {
-          "text": "There's already a tool for that, so don't waste any time.",
-          "audioSrc": "public/data/audio/dummy/dummy_244_sideB_4.mp3"
-        }
-      ],
-      "note": "**[misc:12]**\n**[er:61]**\n\n~There's already a tool for that, let's not waste the time~ is slightly unnatural because we generally say [waste time] without the article [the] when talking about time in a general sense.\n\n~It exists already a tool for that~ is a direct translation from Spanish. In English, to declare the existence of something, you must use the existential 'there', as in [There is already a tool for that].\n\n~There's already a tool for that, let's don't waste any time~ is incorrect because [let's don't] is non-standard grammar. The correct negative form of 'let's' is [let's not].\n\n~There's already a tool for that, let's not loose any time~ contains a spelling error. The adjective 'loose' means not tight; the correct verb is [lose]. Additionally, in English we typically say [waste time] rather than 'lose time' in this context.\n\n~There's already a tool for that, let's don't loose any time~ combines the incorrect structure 'let's don't' with the misspelled word 'loose'. The correct form is [let's not waste]."
-    },
-    {
-      "cardId": "dummy_245",
-      "cardType": "flippable",
-      "sideA": "Encontramos un error crítico que nos impide lanzar el producto.",
-      "sideB": [
-        {
-          "text": "We found a showstopper bug that prevents us from launching.",
-          "audioSrc": "public/data/audio/dummy/dummy_245_sideB_0.mp3"
-        },
-        {
-          "text": "We found a showstopper bug that's blocking the launch.",
-          "audioSrc": "public/data/audio/dummy/dummy_245_sideB_1.mp3"
-        },
-        {
-          "text": "We found a showstopper that prevents us from launching the product.",
-          "audioSrc": "public/data/audio/dummy/dummy_245_sideB_2.mp3"
-        },
-        {
-          "text": "We found a critical error that prevents us from launching.",
-          "audioSrc": "public/data/audio/dummy/dummy_245_sideB_3.mp3"
-        }
-      ],
-      "note": "**[misc:13]**\n\n~We found a showstopper bug that prevents us to launch the product~ is not correct because the verb 'prevent' must be followed by [from] and an [-ing] verb, like [prevents us from launching]."
-    },
-    {
-      "cardId": "dummy_250",
-      "cardType": "flippable",
-      "sideA": "La lluvia nos impidió salir.",
-      "sideB": [
-        {
-          "text": "The rain kept us from going out.",
-          "audioSrc": "public/data/audio/dummy/dummy_250_sideB_0.mp3"
-        },
-        {
-          "text": "The rain stopped us from going out.",
-          "audioSrc": "public/data/audio/dummy/dummy_250_sideB_1.mp3"
-        },
-        {
-          "text": "The rain prevented us from going out.",
-          "audioSrc": "public/data/audio/dummy/dummy_250_sideB_2.mp3"
-        },
-        {
-          "text": "The rain kept us from leaving.",
-          "audioSrc": "public/data/audio/dummy/dummy_250_sideB_3.mp3"
-        }
-      ],
-      "note": "**[er:225]**\n\n~The raining prevented us from going out~ is unnatural because 'raining' is a continuous verb form. The correct noun for the weather event is [rain]. You should say [The rain prevented us]."
+      "note": "**[misc:10]**\n\n~Please keep me on the loop about any updates~ is incorrect because the standard idiom uses the preposition [in], as in [keep me in the loop].\n\n~Please keep me inform about any news~ is incorrect because the verb 'keep' requires the past participle [informed] when used as an adjective for a state, not the base verb."
     },
     {
       "cardId": "dummy_251",
@@ -494,111 +86,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_251_sideB_3.mp3"
         }
       ],
-      "note": "**[er:225]**"
-    },
-    {
-      "cardId": "dummy_252",
-      "cardType": "flippable",
-      "sideA": "El firewall impide que los usuarios visiten sitios inseguros.",
-      "sideB": [
-        {
-          "text": "The firewall blocks users from visiting unsafe sites.",
-          "audioSrc": "public/data/audio/dummy/dummy_252_sideB_0.mp3"
-        },
-        {
-          "text": "The firewall prevents users from visiting unsafe sites.",
-          "audioSrc": "public/data/audio/dummy/dummy_252_sideB_1.mp3"
-        },
-        {
-          "text": "The firewall stops users from reaching unsafe sites.",
-          "audioSrc": "public/data/audio/dummy/dummy_252_sideB_2.mp3"
-        },
-        {
-          "text": "The firewall prevents users from visiting insecure sites.",
-          "audioSrc": "public/data/audio/dummy/dummy_252_sideB_3.mp3"
-        }
-      ],
-      "note": "**[er:225]**"
-    },
-    {
-      "cardId": "dummy_259",
-      "cardType": "flippable",
-      "sideA": "Me enteré de eso esta mañana.",
-      "sideB": [
-        {
-          "text": "I found out about that this morning.",
-          "audioSrc": "public/data/audio/dummy/dummy_259_sideB_0.mp3"
-        },
-        {
-          "text": "I heard about that this morning.",
-          "audioSrc": "public/data/audio/dummy/dummy_259_sideB_1.mp3"
-        },
-        {
-          "text": "I heard that this morning.",
-          "audioSrc": "public/data/audio/dummy/dummy_259_sideB_2.mp3"
-        }
-      ],
-      "note": "**[pv:59]**\n\n**[er:103]**\n\n~I found out that this morning.~ is not valid because 'find out' requires 'about' when followed by a noun or pronoun object. Use [found out about].\n\n~I knew that this morning~ is incorrect for expressing discovery. The verb [know] describes the continuous state of having information, not the moment you acquire it. To express 'enterarse', you must use an action verb like [found out] or [heard]."
-    },
-    {
-      "cardId": "dummy_260",
-      "cardType": "flippable",
-      "sideA": "Por favor, deja la puerta abierta.",
-      "sideB": [
-        {
-          "text": "Please leave the door open.",
-          "audioSrc": "public/data/audio/dummy/dummy_260_sideB_0.mp3"
-        },
-        {
-          "text": "Please keep the door open.",
-          "audioSrc": "public/data/audio/dummy/dummy_260_sideB_1.mp3"
-        }
-      ],
-      "note": "**[er:226]**\n\nIn the sentence [Please leave the door open], the word [open] acts as an adjective describing the state of the door, serving as an object complement."
-    },
-    {
-      "cardId": "dummy_261",
-      "cardType": "flippable",
-      "sideA": "El error dejó la pantalla en blanco.",
-      "sideB": [
-        {
-          "text": "The bug left the screen blank.",
-          "audioSrc": "public/data/audio/dummy/dummy_261_sideB_0.mp3"
-        },
-        {
-          "text": "The bug made the screen blank.",
-          "audioSrc": "public/data/audio/dummy/dummy_261_sideB_1.mp3"
-        },
-        {
-          "text": "The bug left a blank screen.",
-          "audioSrc": "public/data/audio/dummy/dummy_261_sideB_2.mp3"
-        }
-      ],
-      "note": "**[er:214]**\n\n**[er:226]**"
-    },
-    {
-      "cardId": "dummy_262",
-      "cardType": "flippable",
-      "sideA": "La programación orientada a objetos utiliza la herencia para reutilizar código.",
-      "sideB": [
-        {
-          "text": "Object-oriented programming uses inheritance to reuse code.",
-          "audioSrc": "public/data/audio/dummy/dummy_262_sideB_0.mp3"
-        },
-        {
-          "text": "OOP uses inheritance for code reuse.",
-          "audioSrc": "public/data/audio/dummy/dummy_262_sideB_1.mp3"
-        },
-        {
-          "text": "Object-oriented programming utilizes inheritance to reuse code.",
-          "audioSrc": "public/data/audio/dummy/dummy_262_sideB_2.mp3"
-        },
-        {
-          "text": "OOP uses inheritance for code reusability.",
-          "audioSrc": "public/data/audio/dummy/dummy_262_sideB_3.mp3"
-        }
-      ],
-      "note": null
+      "note": "**[er:225]**\n\n~The policy doesn't allow employees from accessing that data~ is incorrect because the verb 'allow' requires an infinitive [to access], not 'from' plus a gerund. Only verbs of restriction like restrict, prevent, or stop take [from + -ing]."
     },
     {
       "cardId": "dummy_263",
@@ -645,26 +133,6 @@
       "note": "\n\n~This base class shares its inheritance with the children controllers~ is not valid because when a noun acts as an adjective to modify another noun, it typically remains in its singular form. Use [child controllers].\n\n~This base class shares its inherent with the children controllers~ is incorrect because 'inherent' is an adjective, but the sentence requires the noun [inheritance]. Also, use [child] instead of 'children'."
     },
     {
-      "cardId": "dummy_265",
-      "cardType": "flippable",
-      "sideA": "Necesitamos crear el plano antes de escribir el código final.",
-      "sideB": [
-        {
-          "text": "We need to create the blueprint before writing the final code.",
-          "audioSrc": "public/data/audio/dummy/dummy_265_sideB_0.mp3"
-        },
-        {
-          "text": "We must create the blueprint before we write the final code.",
-          "audioSrc": "public/data/audio/dummy/dummy_265_sideB_1.mp3"
-        },
-        {
-          "text": "We have to create the blueprint before writing the final code.",
-          "audioSrc": "public/data/audio/dummy/dummy_265_sideB_2.mp3"
-        }
-      ],
-      "note": "\n\n~We need to create the plano before writing the final code~ is not valid because 'plano' is a Spanish word. The correct English term in this context is [blueprint] or [plan]."
-    },
-    {
       "cardId": "dummy_266",
       "cardType": "flippable",
       "sideA": "Los niños prometieron portarse bien.",
@@ -680,109 +148,13 @@
         {
           "text": "The children made a promise to behave.",
           "audioSrc": "public/data/audio/dummy/dummy_266_sideB_2.mp3"
+        },
+        {
+          "text": "The children promised to behave well.",
+          "audioSrc": "public/data/audio/dummy/dummy_266_sideB_3.mp3"
         }
       ],
       "note": "\n\n~The children promised to get along~ changes the meaning. 'Get along' means to have a good relationship with someone (llevarse bien). To specifically say 'portarse bien', you should use [behave]."
-    },
-    {
-      "cardId": "dummy_267",
-      "cardType": "flippable",
-      "sideA": "Debo comportarme profesionalmente.",
-      "sideB": [
-        {
-          "text": "I must behave professionally.",
-          "audioSrc": "public/data/audio/dummy/dummy_267_sideB_0.mp3"
-        },
-        {
-          "text": "I have to behave professionally.",
-          "audioSrc": "public/data/audio/dummy/dummy_267_sideB_1.mp3"
-        },
-        {
-          "text": "I need to act professionally.",
-          "audioSrc": "public/data/audio/dummy/dummy_267_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_268",
-      "cardType": "flippable",
-      "sideA": "El software debe comportarse como se espera.",
-      "sideB": [
-        {
-          "text": "The software must behave as expected.",
-          "audioSrc": "public/data/audio/dummy/dummy_268_sideB_0.mp3"
-        },
-        {
-          "text": "The software should behave as expected.",
-          "audioSrc": "public/data/audio/dummy/dummy_268_sideB_1.mp3"
-        },
-        {
-          "text": "The software has to behave the way it's expected to.",
-          "audioSrc": "public/data/audio/dummy/dummy_268_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_269",
-      "cardType": "flippable",
-      "sideA": "Se deletrea 'I D E'.",
-      "sideB": [
-        {
-          "text": "It is spelled 'I D E'.",
-          "audioSrc": "public/data/audio/dummy/dummy_269_sideB_0.mp3"
-        },
-        {
-          "text": "It's spelled 'I D E'.",
-          "audioSrc": "public/data/audio/dummy/dummy_269_sideB_1.mp3"
-        },
-        {
-          "text": "You spell it 'I D E'.",
-          "audioSrc": "public/data/audio/dummy/dummy_269_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_270",
-      "cardType": "flippable",
-      "sideA": "¿Se deletrea 'J D K'?",
-      "sideB": [
-        {
-          "text": "Is it spelled 'J D K'?",
-          "audioSrc": "public/data/audio/dummy/dummy_270_sideB_0.mp3"
-        },
-        {
-          "text": "Do you spell it 'J D K'?",
-          "audioSrc": "public/data/audio/dummy/dummy_270_sideB_1.mp3"
-        },
-        {
-          "text": "Is that spelled 'J D K'?",
-          "audioSrc": "public/data/audio/dummy/dummy_270_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_271",
-      "cardType": "flippable",
-      "sideA": "Llamo de parte del señor Smith.",
-      "sideB": [
-        {
-          "text": "I am calling on behalf of Mr. Smith.",
-          "audioSrc": "public/data/audio/dummy/dummy_271_sideB_0.mp3"
-        },
-        {
-          "text": "I'm calling on behalf of Mr. Smith.",
-          "audioSrc": "public/data/audio/dummy/dummy_271_sideB_1.mp3"
-        },
-        {
-          "text": "I am calling on Mr. Smith's behalf.",
-          "audioSrc": "public/data/audio/dummy/dummy_271_sideB_2.mp3"
-        }
-      ],
-      "note": null
     },
     {
       "cardId": "dummy_272",
@@ -802,7 +174,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_272_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~She accepted the award on the team behalf~ is not valid because it requires a possessive form, such as [on the team's behalf] or [on behalf of the team].\n\n~She accepted the award on the team~ and ~in the team~ are incorrect because they imply physical location rather than representation."
     },
     {
       "cardId": "dummy_273",
@@ -820,6 +192,10 @@
         {
           "text": "Please speak on behalf of those who can't.",
           "audioSrc": "public/data/audio/dummy/dummy_273_sideB_2.mp3"
+        },
+        {
+          "text": "Please speak on behalf of people who cannot.",
+          "audioSrc": "public/data/audio/dummy/dummy_273_sideB_3.mp3"
         }
       ],
       "note": "\n\n~Please speak on behalf who cannot~ is missing the preposition 'of'. The correct phrase is [on behalf of].\n\n~Please speak on behalf of who cannot~ is incorrect because the preposition 'of' needs a noun or pronoun as its object before the relative clause. You must say [on behalf of those who] or [on behalf of people who]."
@@ -846,7 +222,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_274_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:98]**\n\n~If you were listened to me 6 months ago, it would be a different story~ is not valid because 'were listened' is a passive construction. To express an active past hypothetical condition, you must use the past perfect [had listened]."
     },
     {
       "cardId": "dummy_275",
@@ -866,27 +242,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_275_sideB_2.mp3"
         }
       ],
-      "note": "**[er:98]**\n\n**[er:151]**\n\nThis sentence uses a Mixed Conditional. It combines a past hypothetical condition (Past Perfect: had done) with a present imaginary result (would be)."
-    },
-    {
-      "cardId": "dummy_276",
-      "cardType": "flippable",
-      "sideA": "Tenemos este caso en particular de ejemplo.",
-      "sideB": [
-        {
-          "text": "We have this particular case as an example.",
-          "audioSrc": "public/data/audio/dummy/dummy_276_sideB_0.mp3"
-        },
-        {
-          "text": "We have this specific case as an example.",
-          "audioSrc": "public/data/audio/dummy/dummy_276_sideB_1.mp3"
-        },
-        {
-          "text": "We have this particular example case.",
-          "audioSrc": "public/data/audio/dummy/dummy_276_sideB_2.mp3"
-        }
-      ],
-      "note": "\n\n~We have this particular case for example~ translates to 'Tenemos este caso en particular, por ejemplo'. To say that the case serves *as* the example (de ejemplo), you must use [as an example]."
+      "note": "**[er:98]**\n\n**[er:151]**\n\nThis sentence uses a Mixed Conditional. It combines a past hypothetical condition (Past Perfect: had done) with a present imaginary result (would be).\n\n~If we had done this a year and a half ago~ is grammatically correct but changes the time frame to 'un año y medio', whereas the card specifies 'medio año' [half a year].\n\n~If we had done this one and a half year ago~ is incorrect because plural quantities require plural nouns like [years], and it also alters the original time frame."
     },
     {
       "cardId": "dummy_277",
@@ -906,47 +262,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_277_sideB_2.mp3"
         }
       ],
-      "note": "**[er:15]**\n\n~I am used to being the cold~ is incorrect because it literally translates to 'Estoy acostumbrado a ser el frío'. To express being accustomed to something, just follow the phrase directly with the noun: [I am used to the cold]."
-    },
-    {
-      "cardId": "dummy_278",
-      "cardType": "flippable",
-      "sideA": "Yo solía comer harta carne.",
-      "sideB": [
-        {
-          "text": "I used to eat a lot of meat.",
-          "audioSrc": "public/data/audio/dummy/dummy_278_sideB_0.mp3"
-        },
-        {
-          "text": "I would eat a lot of meat.",
-          "audioSrc": "public/data/audio/dummy/dummy_278_sideB_1.mp3"
-        },
-        {
-          "text": "I used to eat a ton of meat.",
-          "audioSrc": "public/data/audio/dummy/dummy_278_sideB_2.mp3"
-        }
-      ],
-      "note": "**[er:15]**"
-    },
-    {
-      "cardId": "dummy_279",
-      "cardType": "flippable",
-      "sideA": "Estoy acostumbrado a estar solo.",
-      "sideB": [
-        {
-          "text": "I am used to being alone.",
-          "audioSrc": "public/data/audio/dummy/dummy_279_sideB_0.mp3"
-        },
-        {
-          "text": "I'm used to being by myself.",
-          "audioSrc": "public/data/audio/dummy/dummy_279_sideB_1.mp3"
-        },
-        {
-          "text": "I am accustomed to being alone.",
-          "audioSrc": "public/data/audio/dummy/dummy_279_sideB_2.mp3"
-        }
-      ],
-      "note": "**[er:15]**"
+      "note": "**[er:15]**\n\n~I am used to being the cold~ is incorrect because it literally translates to 'Estoy acostumbrado a ser el frío'. To express being accustomed to something, just follow the phrase directly with the noun: [I am used to the cold].\n\n~I am used to being cold~ changes the meaning. It translates to 'Estoy acostumbrado a tener frío' (the physical sensation), whereas the card asks for 'Estoy acostumbrado al frío' (the environment), which is [I am used to the cold]."
     },
     {
       "cardId": "dummy_280",
@@ -977,90 +293,6 @@
       "note": "**[er:15]**"
     },
     {
-      "cardId": "dummy_281",
-      "cardType": "flippable",
-      "sideA": "Estoy acostumbrado al café.",
-      "sideB": [
-        {
-          "text": "I am used to coffee.",
-          "audioSrc": "public/data/audio/dummy/dummy_281_sideB_0.mp3"
-        },
-        {
-          "text": "I'm used to drinking coffee.",
-          "audioSrc": "public/data/audio/dummy/dummy_281_sideB_1.mp3"
-        },
-        {
-          "text": "I am accustomed to coffee.",
-          "audioSrc": "public/data/audio/dummy/dummy_281_sideB_2.mp3"
-        }
-      ],
-      "note": "**[er:15]**"
-    },
-    {
-      "cardId": "dummy_282",
-      "cardType": "flippable",
-      "sideA": "Estoy acostumbrado a dormir poco.",
-      "sideB": [
-        {
-          "text": "I am used to getting little sleep.",
-          "audioSrc": "public/data/audio/dummy/dummy_282_sideB_0.mp3"
-        },
-        {
-          "text": "I'm used to sleeping very little.",
-          "audioSrc": "public/data/audio/dummy/dummy_282_sideB_1.mp3"
-        },
-        {
-          "text": "I am used to sleeping just a little.",
-          "audioSrc": "public/data/audio/dummy/dummy_282_sideB_2.mp3"
-        },
-        {
-          "text": "I'm used to sleeping a little bit.",
-          "audioSrc": "public/data/audio/dummy/dummy_282_sideB_3.mp3"
-        }
-      ],
-      "note": "**[er:15]**"
-    },
-    {
-      "cardId": "dummy_283",
-      "cardType": "flippable",
-      "sideA": "¿Tú solías despertarte tarde?",
-      "sideB": [
-        {
-          "text": "Did you use to wake up late?",
-          "audioSrc": "public/data/audio/dummy/dummy_283_sideB_0.mp3"
-        },
-        {
-          "text": "Did you usually wake up late?",
-          "audioSrc": "public/data/audio/dummy/dummy_283_sideB_1.mp3"
-        },
-        {
-          "text": "Would you wake up late?",
-          "audioSrc": "public/data/audio/dummy/dummy_283_sideB_2.mp3"
-        }
-      ],
-      "note": "**[er:15]**\n\n~Did you use to walking up late?~ is not valid because the structure 'use to' must be followed by the base form of the verb, not the '-ing' form. You should use [use to wake up]."
-    },
-    {
-      "cardId": "dummy_284",
-      "cardType": "flippable",
-      "sideA": "¿Estás acostumbrado a trabajar hasta tarde?",
-      "sideB": [
-        {
-          "text": "Are you used to working late?",
-          "audioSrc": "public/data/audio/dummy/dummy_284_sideB_0.mp3"
-        },
-        {
-          "text": "Are you accustomed to working late?",
-          "audioSrc": "public/data/audio/dummy/dummy_284_sideB_1.mp3"
-        },
-        {
-          "text": "Are you used to working until late?",
-          "audioSrc": "public/data/audio/dummy/dummy_284_sideB_2.mp3"
-        }
-      ],
-      "note": "**[er:15]**"
-    },
-    {
       "cardId": "dummy_285",
       "cardType": "flippable",
       "sideA": "Toda decisión tiene un costo.",
@@ -1076,46 +308,10 @@
         {
           "text": "Every decision involves a trade-off.",
           "audioSrc": "public/data/audio/dummy/dummy_285_sideB_2.mp3"
-        }
-      ],
-      "note": "A [trade-off] is a situation where you gain one thing but lose another. Some translations can be: intercambio, equilibrio, compensación, sacrificio, renuncia, costo."
-    },
-    {
-      "cardId": "dummy_286",
-      "cardType": "flippable",
-      "sideA": "Es un intercambio entre velocidad y calidad.",
-      "sideB": [
-        {
-          "text": "There is a trade-off between speed and quality.",
-          "audioSrc": "public/data/audio/dummy/dummy_286_sideB_0.mp3"
         },
         {
-          "text": "It's a trade-off between speed and quality.",
-          "audioSrc": "public/data/audio/dummy/dummy_286_sideB_1.mp3"
-        },
-        {
-          "text": "There's a balance between speed and quality.",
-          "audioSrc": "public/data/audio/dummy/dummy_286_sideB_2.mp3"
-        }
-      ],
-      "note": "A [trade-off] is a situation where you gain one thing but lose another. Some translations can be: intercambio, equilibrio, compensación, sacrificio, renuncia, costo."
-    },
-    {
-      "cardId": "dummy_287",
-      "cardType": "flippable",
-      "sideA": "Es un intercambio entre tiempo y dinero.",
-      "sideB": [
-        {
-          "text": "It's a trade-off between time and money.",
-          "audioSrc": "public/data/audio/dummy/dummy_287_sideB_0.mp3"
-        },
-        {
-          "text": "There is a trade-off between time and money.",
-          "audioSrc": "public/data/audio/dummy/dummy_287_sideB_1.mp3"
-        },
-        {
-          "text": "It's a balance between time and money.",
-          "audioSrc": "public/data/audio/dummy/dummy_287_sideB_2.mp3"
+          "text": "Every decision has a cost.",
+          "audioSrc": "public/data/audio/dummy/dummy_285_sideB_3.mp3"
         }
       ],
       "note": "A [trade-off] is a situation where you gain one thing but lose another. Some translations can be: intercambio, equilibrio, compensación, sacrificio, renuncia, costo."
