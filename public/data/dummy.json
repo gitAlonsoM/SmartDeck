@@ -60,6 +60,10 @@
         {
           "text": "Please let me know about any news.",
           "audioSrc": "public/data/audio/dummy/dummy_242_sideB_5.mp3"
+        },
+        {
+          "text": "Please keep me informed about any news.",
+          "audioSrc": "public/data/audio/dummy/dummy_242_sideB_6.mp3"
         }
       ],
       "note": "**[misc:10]**\n\n~Please keep me on the loop about any updates~ is incorrect because the standard idiom uses the preposition [in], as in [keep me in the loop].\n\n~Please keep me inform about any news~ is incorrect because the verb 'keep' requires the past participle [informed] when used as an adjective for a state, not the base verb."
@@ -260,9 +264,13 @@
         {
           "text": "I am accustomed to the cold weather.",
           "audioSrc": "public/data/audio/dummy/dummy_277_sideB_2.mp3"
+        },
+        {
+          "text": "I'm used to being cold.",
+          "audioSrc": "public/data/audio/dummy/dummy_277_sideB_3.mp3"
         }
       ],
-      "note": "**[er:15]**\n\n~I am used to being the cold~ is incorrect because it literally translates to 'Estoy acostumbrado a ser el frío'. To express being accustomed to something, just follow the phrase directly with the noun: [I am used to the cold].\n\n~I am used to being cold~ changes the meaning. It translates to 'Estoy acostumbrado a tener frío' (the physical sensation), whereas the card asks for 'Estoy acostumbrado al frío' (the environment), which is [I am used to the cold]."
+      "note": "**[er:15]**\n\n~I am used to being the cold~ is incorrect because it literally translates to 'Estoy acostumbrado a ser el frío'. To express being accustomed to something, just follow the phrase directly with the noun: [I am used to the cold]."
     },
     {
       "cardId": "dummy_280",
@@ -321,9 +329,18 @@
       "cardType": "flippable",
       "sideA": "¿Prometes pórtate bien?",
       "sideB": [
-        { "text": "Do you promise to behave?", "audioSrc": "public/data/audio/dummy/dummy_286_sideB_0.mp3" },
-        { "text": "Do you promise you'll behave?", "audioSrc": "public/data/audio/dummy/dummy_286_sideB_1.mp3" },
-        { "text": "Will you promise to behave well?", "audioSrc": "public/data/audio/dummy/dummy_286_sideB_2.mp3" }
+        {
+          "text": "Do you promise to behave?",
+          "audioSrc": "public/data/audio/dummy/dummy_286_sideB_0.mp3"
+        },
+        {
+          "text": "Do you promise you'll behave?",
+          "audioSrc": "public/data/audio/dummy/dummy_286_sideB_1.mp3"
+        },
+        {
+          "text": "Will you promise to behave well?",
+          "audioSrc": "public/data/audio/dummy/dummy_286_sideB_2.mp3"
+        }
       ],
       "note": null
     },
@@ -332,9 +349,26 @@
       "cardType": "flippable",
       "sideA": "Se portaron mal los niños.",
       "sideB": [
-        { "text": "The kids behaved badly.", "audioSrc": "public/data/audio/dummy/dummy_287_sideB_0.mp3" },
-        { "text": "The children misbehaved.", "audioSrc": "public/data/audio/dummy/dummy_287_sideB_1.mp3" },
-        { "text": "The kids behaved poorly.", "audioSrc": "public/data/audio/dummy/dummy_287_sideB_2.mp3" }
+        {
+          "text": "The kids behaved badly.",
+          "audioSrc": "public/data/audio/dummy/dummy_287_sideB_0.mp3"
+        },
+        {
+          "text": "The children misbehaved.",
+          "audioSrc": "public/data/audio/dummy/dummy_287_sideB_1.mp3"
+        },
+        {
+          "text": "The kids behaved poorly.",
+          "audioSrc": "public/data/audio/dummy/dummy_287_sideB_2.mp3"
+        },
+        {
+          "text": "The kids didn't behave well.",
+          "audioSrc": "public/data/audio/dummy/dummy_287_sideB_3.mp3"
+        },
+        {
+          "text": "The kids didn't behave.",
+          "audioSrc": "public/data/audio/dummy/dummy_287_sideB_4.mp3"
+        }
       ],
       "note": null
     },
@@ -343,9 +377,18 @@
       "cardType": "flippable",
       "sideA": "¿Qué shell estás corriendo?",
       "sideB": [
-        { "text": "What shell are you running?", "audioSrc": "public/data/audio/dummy/dummy_288_sideB_0.mp3" },
-        { "text": "Which shell are you running?", "audioSrc": "public/data/audio/dummy/dummy_288_sideB_1.mp3" },
-        { "text": "What shell do you have running?", "audioSrc": "public/data/audio/dummy/dummy_288_sideB_2.mp3" }
+        {
+          "text": "What shell are you running?",
+          "audioSrc": "public/data/audio/dummy/dummy_288_sideB_0.mp3"
+        },
+        {
+          "text": "Which shell are you running?",
+          "audioSrc": "public/data/audio/dummy/dummy_288_sideB_1.mp3"
+        },
+        {
+          "text": "What shell do you have running?",
+          "audioSrc": "public/data/audio/dummy/dummy_288_sideB_2.mp3"
+        }
       ],
       "note": null
     },
@@ -354,9 +397,18 @@
       "cardType": "flippable",
       "sideA": "¿En qué shell vas a ejecutar esto — Bash, Zsh, PowerShell?",
       "sideB": [
-        { "text": "What shell are you going to run this in, Bash, Zsh, PowerShell?", "audioSrc": "public/data/audio/dummy/dummy_289_sideB_0.mp3" },
-        { "text": "Which shell will you run this in, Bash, Zsh, PowerShell?", "audioSrc": "public/data/audio/dummy/dummy_289_sideB_1.mp3" },
-        { "text": "In what shell are you going to run this, Bash, Zsh, PowerShell?", "audioSrc": "public/data/audio/dummy/dummy_289_sideB_2.mp3" }
+        {
+          "text": "What shell are you going to run this in, Bash, Zsh, PowerShell?",
+          "audioSrc": "public/data/audio/dummy/dummy_289_sideB_0.mp3"
+        },
+        {
+          "text": "Which shell will you run this in, Bash, Zsh, PowerShell?",
+          "audioSrc": "public/data/audio/dummy/dummy_289_sideB_1.mp3"
+        },
+        {
+          "text": "In what shell are you going to run this, Bash, Zsh, PowerShell?",
+          "audioSrc": "public/data/audio/dummy/dummy_289_sideB_2.mp3"
+        }
       ],
       "note": null
     },
@@ -365,9 +417,18 @@
       "cardType": "flippable",
       "sideA": "¿Mac o Windows? Así sé qué shell asumir.",
       "sideB": [
-        { "text": "Mac or Windows? That way I know which shell to assume.", "audioSrc": "public/data/audio/dummy/dummy_290_sideB_0.mp3" },
-        { "text": "Mac or Windows? That way I'll know what shell to assume.", "audioSrc": "public/data/audio/dummy/dummy_290_sideB_1.mp3" },
-        { "text": "Mac or Windows? So I know which shell to assume.", "audioSrc": "public/data/audio/dummy/dummy_290_sideB_2.mp3" }
+        {
+          "text": "Mac or Windows? That way I know which shell to assume.",
+          "audioSrc": "public/data/audio/dummy/dummy_290_sideB_0.mp3"
+        },
+        {
+          "text": "Mac or Windows? That way I'll know what shell to assume.",
+          "audioSrc": "public/data/audio/dummy/dummy_290_sideB_1.mp3"
+        },
+        {
+          "text": "Mac or Windows? So I know which shell to assume.",
+          "audioSrc": "public/data/audio/dummy/dummy_290_sideB_2.mp3"
+        }
       ],
       "note": null
     },
@@ -376,9 +437,18 @@
       "cardType": "flippable",
       "sideA": "¿Qué tipo de shell tenés, así te doy los comandos correctos?",
       "sideB": [
-        { "text": "What type of shell do you have, so I can give you the correct commands?", "audioSrc": "public/data/audio/dummy/dummy_291_sideB_0.mp3" },
-        { "text": "What kind of shell do you have, so I can give you the right commands?", "audioSrc": "public/data/audio/dummy/dummy_291_sideB_1.mp3" },
-        { "text": "Which type of shell do you have, so I can give you the correct commands?", "audioSrc": "public/data/audio/dummy/dummy_291_sideB_2.mp3" }
+        {
+          "text": "What type of shell do you have, so I can give you the correct commands?",
+          "audioSrc": "public/data/audio/dummy/dummy_291_sideB_0.mp3"
+        },
+        {
+          "text": "What kind of shell do you have, so I can give you the right commands?",
+          "audioSrc": "public/data/audio/dummy/dummy_291_sideB_1.mp3"
+        },
+        {
+          "text": "Which type of shell do you have, so I can give you the correct commands?",
+          "audioSrc": "public/data/audio/dummy/dummy_291_sideB_2.mp3"
+        }
       ],
       "note": null
     },
@@ -387,9 +457,18 @@
       "cardType": "flippable",
       "sideA": "Sh, Bash y Zsh son tipos de shell, igual que Gmail y Outlook son tipos de programa de correo.",
       "sideB": [
-        { "text": "Sh, Bash, and Zsh are types of shell, just like Gmail and Outlook are types of email program.", "audioSrc": "public/data/audio/dummy/dummy_292_sideB_0.mp3" },
-        { "text": "Sh, Bash, and Zsh are types of shells, just like Gmail and Outlook are types of email programs.", "audioSrc": "public/data/audio/dummy/dummy_292_sideB_1.mp3" },
-        { "text": "Sh, Bash, and Zsh are kinds of shell, the same way Gmail and Outlook are kinds of email program.", "audioSrc": "public/data/audio/dummy/dummy_292_sideB_2.mp3" }
+        {
+          "text": "Sh, Bash, and Zsh are types of shell, just like Gmail and Outlook are types of email program.",
+          "audioSrc": "public/data/audio/dummy/dummy_292_sideB_0.mp3"
+        },
+        {
+          "text": "Sh, Bash, and Zsh are types of shells, just like Gmail and Outlook are types of email programs.",
+          "audioSrc": "public/data/audio/dummy/dummy_292_sideB_1.mp3"
+        },
+        {
+          "text": "Sh, Bash, and Zsh are kinds of shell, the same way Gmail and Outlook are kinds of email program.",
+          "audioSrc": "public/data/audio/dummy/dummy_292_sideB_2.mp3"
+        }
       ],
       "note": null
     },
@@ -398,9 +477,22 @@
       "cardType": "flippable",
       "sideA": "\"Shell\" es la categoría; Bash es un ejemplo real dentro de esa categoría, no una pieza suya.",
       "sideB": [
-        { "text": "Shell is the category; Bash is an actual example within that category, not a piece of it.", "audioSrc": "public/data/audio/dummy/dummy_293_sideB_0.mp3" },
-        { "text": "Shell is the category, and Bash is a real example within it, not a part of it.", "audioSrc": "public/data/audio/dummy/dummy_293_sideB_1.mp3" },
-        { "text": "The word Shell is the category; Bash is an actual example within that category, not a piece of it.", "audioSrc": "public/data/audio/dummy/dummy_293_sideB_2.mp3" }
+        {
+          "text": "Shell is the category; Bash is an actual example within that category, not a piece of it.",
+          "audioSrc": "public/data/audio/dummy/dummy_293_sideB_0.mp3"
+        },
+        {
+          "text": "Shell is the category, and Bash is a real example within it, not a part of it.",
+          "audioSrc": "public/data/audio/dummy/dummy_293_sideB_1.mp3"
+        },
+        {
+          "text": "The word Shell is the category; Bash is an actual example within that category, not a piece of it.",
+          "audioSrc": "public/data/audio/dummy/dummy_293_sideB_2.mp3"
+        },
+        {
+          "text": "Shell is the category; Bash is an actual example inside that category, not a piece of it.",
+          "audioSrc": "public/data/audio/dummy/dummy_293_sideB_3.mp3"
+        }
       ],
       "note": null
     },
@@ -409,9 +501,18 @@
       "cardType": "flippable",
       "sideA": "Si alguien te pregunta \"¿qué es Bash?\", la respuesta correcta es: \"es un shell\".",
       "sideB": [
-        { "text": "If someone asks what Bash is, the correct answer is it's a shell.", "audioSrc": "public/data/audio/dummy/dummy_294_sideB_0.mp3" },
-        { "text": "If someone asks what is Bash, the right answer is that it's a shell.", "audioSrc": "public/data/audio/dummy/dummy_294_sideB_1.mp3" },
-        { "text": "If someone asks you what Bash is, the correct answer is it's a shell.", "audioSrc": "public/data/audio/dummy/dummy_294_sideB_2.mp3" }
+        {
+          "text": "If someone asks what Bash is, the correct answer is it's a shell.",
+          "audioSrc": "public/data/audio/dummy/dummy_294_sideB_0.mp3"
+        },
+        {
+          "text": "If someone asks what is Bash, the right answer is that it's a shell.",
+          "audioSrc": "public/data/audio/dummy/dummy_294_sideB_1.mp3"
+        },
+        {
+          "text": "If someone asks you what Bash is, the correct answer is it's a shell.",
+          "audioSrc": "public/data/audio/dummy/dummy_294_sideB_2.mp3"
+        }
       ],
       "note": null
     },
@@ -420,9 +521,18 @@
       "cardType": "flippable",
       "sideA": "Bash y Zsh son el software real dentro de la categoría \"Shell\".",
       "sideB": [
-        { "text": "Bash and Zsh are the actual software within the Shell category.", "audioSrc": "public/data/audio/dummy/dummy_295_sideB_0.mp3" },
-        { "text": "Bash and Zsh are the real software within the Shell category.", "audioSrc": "public/data/audio/dummy/dummy_295_sideB_1.mp3" },
-        { "text": "Bash and Zsh are the actual software inside the Shell category.", "audioSrc": "public/data/audio/dummy/dummy_295_sideB_2.mp3" }
+        {
+          "text": "Bash and Zsh are the actual software within the Shell category.",
+          "audioSrc": "public/data/audio/dummy/dummy_295_sideB_0.mp3"
+        },
+        {
+          "text": "Bash and Zsh are the real software within the Shell category.",
+          "audioSrc": "public/data/audio/dummy/dummy_295_sideB_1.mp3"
+        },
+        {
+          "text": "Bash and Zsh are the actual software inside the Shell category.",
+          "audioSrc": "public/data/audio/dummy/dummy_295_sideB_2.mp3"
+        }
       ],
       "note": null
     },
@@ -431,9 +541,18 @@
       "cardType": "flippable",
       "sideA": "Es un script de comandos, no un programa compilado.",
       "sideB": [
-        { "text": "It's a script of commands, not a compiled program.", "audioSrc": "public/data/audio/dummy/dummy_296_sideB_0.mp3" },
-        { "text": "It's a command script, not a compiled program.", "audioSrc": "public/data/audio/dummy/dummy_296_sideB_1.mp3" },
-        { "text": "It is a script made of commands, not a compiled program.", "audioSrc": "public/data/audio/dummy/dummy_296_sideB_2.mp3" }
+        {
+          "text": "It's a script of commands, not a compiled program.",
+          "audioSrc": "public/data/audio/dummy/dummy_296_sideB_0.mp3"
+        },
+        {
+          "text": "It's a command script, not a compiled program.",
+          "audioSrc": "public/data/audio/dummy/dummy_296_sideB_1.mp3"
+        },
+        {
+          "text": "It is a script made of commands, not a compiled program.",
+          "audioSrc": "public/data/audio/dummy/dummy_296_sideB_2.mp3"
+        }
       ],
       "note": null
     },
@@ -442,9 +561,18 @@
       "cardType": "flippable",
       "sideA": "No es código como Java o Python; es una lista de instrucciones para el shell.",
       "sideB": [
-        { "text": "It's not code like Java or Python; it's a list of instructions for the shell.", "audioSrc": "public/data/audio/dummy/dummy_297_sideB_0.mp3" },
-        { "text": "It's not code like Java or Python, it's a list of instructions for the shell.", "audioSrc": "public/data/audio/dummy/dummy_297_sideB_1.mp3" },
-        { "text": "It isn't code like Java or Python; it's a set of instructions for the shell.", "audioSrc": "public/data/audio/dummy/dummy_297_sideB_2.mp3" }
+        {
+          "text": "It's not code like Java or Python; it's a list of instructions for the shell.",
+          "audioSrc": "public/data/audio/dummy/dummy_297_sideB_0.mp3"
+        },
+        {
+          "text": "It's not code like Java or Python, it's a list of instructions for the shell.",
+          "audioSrc": "public/data/audio/dummy/dummy_297_sideB_1.mp3"
+        },
+        {
+          "text": "It isn't code like Java or Python; it's a set of instructions for the shell.",
+          "audioSrc": "public/data/audio/dummy/dummy_297_sideB_2.mp3"
+        }
       ],
       "note": null
     },
@@ -453,9 +581,18 @@
       "cardType": "flippable",
       "sideA": "Un script no se compila, se ejecuta línea por línea.",
       "sideB": [
-        { "text": "A script doesn't get compiled, it runs line by line.", "audioSrc": "public/data/audio/dummy/dummy_298_sideB_0.mp3" },
-        { "text": "A script isn't compiled; it's executed line by line.", "audioSrc": "public/data/audio/dummy/dummy_298_sideB_1.mp3" },
-        { "text": "A script doesn't compile, it runs line by line.", "audioSrc": "public/data/audio/dummy/dummy_298_sideB_2.mp3" }
+        {
+          "text": "A script doesn't get compiled, it runs line by line.",
+          "audioSrc": "public/data/audio/dummy/dummy_298_sideB_0.mp3"
+        },
+        {
+          "text": "A script isn't compiled; it's executed line by line.",
+          "audioSrc": "public/data/audio/dummy/dummy_298_sideB_1.mp3"
+        },
+        {
+          "text": "A script doesn't compile, it runs line by line.",
+          "audioSrc": "public/data/audio/dummy/dummy_298_sideB_2.mp3"
+        }
       ],
       "note": null
     },
@@ -464,9 +601,18 @@
       "cardType": "flippable",
       "sideA": "El shell lee el script y va llamando a otros programas, como git o find.",
       "sideB": [
-        { "text": "The shell reads the script and calls other programs, like git or find.", "audioSrc": "public/data/audio/dummy/dummy_299_sideB_0.mp3" },
-        { "text": "The shell reads the script and goes calling other programs, like git or find.", "audioSrc": "public/data/audio/dummy/dummy_299_sideB_1.mp3" },
-        { "text": "The shell reads the script and invokes other programs, such as git or find.", "audioSrc": "public/data/audio/dummy/dummy_299_sideB_2.mp3" }
+        {
+          "text": "The shell reads the script and calls other programs, like git or find.",
+          "audioSrc": "public/data/audio/dummy/dummy_299_sideB_0.mp3"
+        },
+        {
+          "text": "The shell reads the script and goes calling other programs, like git or find.",
+          "audioSrc": "public/data/audio/dummy/dummy_299_sideB_1.mp3"
+        },
+        {
+          "text": "The shell reads the script and invokes other programs, such as git or find.",
+          "audioSrc": "public/data/audio/dummy/dummy_299_sideB_2.mp3"
+        }
       ],
       "note": null
     },
@@ -475,9 +621,18 @@
       "cardType": "flippable",
       "sideA": "Una Terminal es solo una ventana, no entiende comandos por sí sola.",
       "sideB": [
-        { "text": "A Terminal is just a window, it doesn't understand commands by itself.", "audioSrc": "public/data/audio/dummy/dummy_300_sideB_0.mp3" },
-        { "text": "A Terminal is only a window; it doesn't understand commands on its own.", "audioSrc": "public/data/audio/dummy/dummy_300_sideB_1.mp3" },
-        { "text": "A Terminal is just a window, it can't understand commands by itself.", "audioSrc": "public/data/audio/dummy/dummy_300_sideB_2.mp3" }
+        {
+          "text": "A Terminal is just a window, it doesn't understand commands by itself.",
+          "audioSrc": "public/data/audio/dummy/dummy_300_sideB_0.mp3"
+        },
+        {
+          "text": "A Terminal is only a window; it doesn't understand commands on its own.",
+          "audioSrc": "public/data/audio/dummy/dummy_300_sideB_1.mp3"
+        },
+        {
+          "text": "A Terminal is just a window, it can't understand commands by itself.",
+          "audioSrc": "public/data/audio/dummy/dummy_300_sideB_2.mp3"
+        }
       ],
       "note": null
     },
@@ -486,9 +641,18 @@
       "cardType": "flippable",
       "sideA": "El Shell es el programa que sí entiende y ejecuta los comandos.",
       "sideB": [
-        { "text": "The Shell is the program that actually understands and runs the commands.", "audioSrc": "public/data/audio/dummy/dummy_301_sideB_0.mp3" },
-        { "text": "The Shell is the program that really understands and executes the commands.", "audioSrc": "public/data/audio/dummy/dummy_301_sideB_1.mp3" },
-        { "text": "The Shell is the program that does understand and run the commands.", "audioSrc": "public/data/audio/dummy/dummy_301_sideB_2.mp3" }
+        {
+          "text": "The Shell is the program that actually understands and runs the commands.",
+          "audioSrc": "public/data/audio/dummy/dummy_301_sideB_0.mp3"
+        },
+        {
+          "text": "The Shell is the program that really understands and executes the commands.",
+          "audioSrc": "public/data/audio/dummy/dummy_301_sideB_1.mp3"
+        },
+        {
+          "text": "The Shell is the program that does understand and run the commands.",
+          "audioSrc": "public/data/audio/dummy/dummy_301_sideB_2.mp3"
+        }
       ],
       "note": null
     },
@@ -497,9 +661,18 @@
       "cardType": "flippable",
       "sideA": "El Shell corre adentro de la Terminal.",
       "sideB": [
-        { "text": "The Shell runs inside the Terminal.", "audioSrc": "public/data/audio/dummy/dummy_302_sideB_0.mp3" },
-        { "text": "The Shell runs inside of the Terminal.", "audioSrc": "public/data/audio/dummy/dummy_302_sideB_1.mp3" },
-        { "text": "The Shell runs within the Terminal.", "audioSrc": "public/data/audio/dummy/dummy_302_sideB_2.mp3" }
+        {
+          "text": "The Shell runs inside the Terminal.",
+          "audioSrc": "public/data/audio/dummy/dummy_302_sideB_0.mp3"
+        },
+        {
+          "text": "The Shell runs inside of the Terminal.",
+          "audioSrc": "public/data/audio/dummy/dummy_302_sideB_1.mp3"
+        },
+        {
+          "text": "The Shell runs within the Terminal.",
+          "audioSrc": "public/data/audio/dummy/dummy_302_sideB_2.mp3"
+        }
       ],
       "note": null
     },
@@ -508,9 +681,18 @@
       "cardType": "flippable",
       "sideA": "Bash, Zsh y sh son shells, no son \"partes\" de un shell.",
       "sideB": [
-        { "text": "Bash, Zsh, and sh are shells, not parts of a shell.", "audioSrc": "public/data/audio/dummy/dummy_303_sideB_0.mp3" },
-        { "text": "Bash, Zsh, and sh are shells, not pieces of a shell.", "audioSrc": "public/data/audio/dummy/dummy_303_sideB_1.mp3" },
-        { "text": "Bash, Zsh, and sh are shells themselves, not parts of a shell.", "audioSrc": "public/data/audio/dummy/dummy_303_sideB_2.mp3" }
+        {
+          "text": "Bash, Zsh, and sh are shells, not parts of a shell.",
+          "audioSrc": "public/data/audio/dummy/dummy_303_sideB_0.mp3"
+        },
+        {
+          "text": "Bash, Zsh, and sh are shells, not pieces of a shell.",
+          "audioSrc": "public/data/audio/dummy/dummy_303_sideB_1.mp3"
+        },
+        {
+          "text": "Bash, Zsh, and sh are shells themselves, not parts of a shell.",
+          "audioSrc": "public/data/audio/dummy/dummy_303_sideB_2.mp3"
+        }
       ],
       "note": null
     },
@@ -519,20 +701,38 @@
       "cardType": "flippable",
       "sideA": "Cada shell entiende comandos con su propia sintaxis.",
       "sideB": [
-        { "text": "Each shell understands commands using its own syntax.", "audioSrc": "public/data/audio/dummy/dummy_304_sideB_0.mp3" },
-        { "text": "Each shell understands commands with its own syntax.", "audioSrc": "public/data/audio/dummy/dummy_304_sideB_1.mp3" },
-        { "text": "Every shell understands commands using its own syntax.", "audioSrc": "public/data/audio/dummy/dummy_304_sideB_2.mp3" }
+        {
+          "text": "Each shell understands commands using its own syntax.",
+          "audioSrc": "public/data/audio/dummy/dummy_304_sideB_0.mp3"
+        },
+        {
+          "text": "Each shell understands commands with its own syntax.",
+          "audioSrc": "public/data/audio/dummy/dummy_304_sideB_1.mp3"
+        },
+        {
+          "text": "Every shell understands commands using its own syntax.",
+          "audioSrc": "public/data/audio/dummy/dummy_304_sideB_2.mp3"
+        }
       ],
-      "note": null
+      "note": "~Each shell understands commands using its own syntaxis~ is incorrect because the English word is [syntax], not 'syntaxis'."
     },
     {
       "cardId": "dummy_305",
       "cardType": "flippable",
       "sideA": "Mac y Linux usan shells tipo Unix; Windows usa PowerShell o CMD.",
       "sideB": [
-        { "text": "Mac and Linux use Unix-type shells; Windows uses PowerShell or CMD.", "audioSrc": "public/data/audio/dummy/dummy_305_sideB_0.mp3" },
-        { "text": "Mac and Linux use Unix-style shells; Windows uses PowerShell or CMD.", "audioSrc": "public/data/audio/dummy/dummy_305_sideB_1.mp3" },
-        { "text": "Mac and Linux use Unix-like shells, while Windows uses PowerShell or CMD.", "audioSrc": "public/data/audio/dummy/dummy_305_sideB_2.mp3" }
+        {
+          "text": "Mac and Linux use Unix-type shells; Windows uses PowerShell or CMD.",
+          "audioSrc": "public/data/audio/dummy/dummy_305_sideB_0.mp3"
+        },
+        {
+          "text": "Mac and Linux use Unix-style shells; Windows uses PowerShell or CMD.",
+          "audioSrc": "public/data/audio/dummy/dummy_305_sideB_1.mp3"
+        },
+        {
+          "text": "Mac and Linux use Unix-like shells, while Windows uses PowerShell or CMD.",
+          "audioSrc": "public/data/audio/dummy/dummy_305_sideB_2.mp3"
+        }
       ],
       "note": null
     },
@@ -541,9 +741,18 @@
       "cardType": "flippable",
       "sideA": "La extensión .sh no define qué shell ejecuta el archivo.",
       "sideB": [
-        { "text": "The .sh extension doesn't define which shell runs the file.", "audioSrc": "public/data/audio/dummy/dummy_306_sideB_0.mp3" },
-        { "text": "The .sh extension doesn't determine which shell runs the file.", "audioSrc": "public/data/audio/dummy/dummy_306_sideB_1.mp3" },
-        { "text": "The .sh extension does not define what shell runs the file.", "audioSrc": "public/data/audio/dummy/dummy_306_sideB_2.mp3" }
+        {
+          "text": "The .sh extension doesn't define which shell runs the file.",
+          "audioSrc": "public/data/audio/dummy/dummy_306_sideB_0.mp3"
+        },
+        {
+          "text": "The .sh extension doesn't determine which shell runs the file.",
+          "audioSrc": "public/data/audio/dummy/dummy_306_sideB_1.mp3"
+        },
+        {
+          "text": "The .sh extension does not define what shell runs the file.",
+          "audioSrc": "public/data/audio/dummy/dummy_306_sideB_2.mp3"
+        }
       ],
       "note": null
     },
@@ -552,9 +761,18 @@
       "cardType": "flippable",
       "sideA": "El shebang (primera línea del archivo) es lo que realmente decide el shell.",
       "sideB": [
-        { "text": "The shebang, the file's first line, is what really decides the shell.", "audioSrc": "public/data/audio/dummy/dummy_307_sideB_0.mp3" },
-        { "text": "The shebang, the first line of the file, is what actually decides the shell.", "audioSrc": "public/data/audio/dummy/dummy_307_sideB_1.mp3" },
-        { "text": "The shebang, the file's first line, is what really determines the shell.", "audioSrc": "public/data/audio/dummy/dummy_307_sideB_2.mp3" }
+        {
+          "text": "The shebang, the file's first line, is what really decides the shell.",
+          "audioSrc": "public/data/audio/dummy/dummy_307_sideB_0.mp3"
+        },
+        {
+          "text": "The shebang, the first line of the file, is what actually decides the shell.",
+          "audioSrc": "public/data/audio/dummy/dummy_307_sideB_1.mp3"
+        },
+        {
+          "text": "The shebang, the file's first line, is what really determines the shell.",
+          "audioSrc": "public/data/audio/dummy/dummy_307_sideB_2.mp3"
+        }
       ],
       "note": null
     },
@@ -563,9 +781,18 @@
       "cardType": "flippable",
       "sideA": "En Windows no existe shebang; ahí la extensión sí es la regla fija.",
       "sideB": [
-        { "text": "Windows has no shebang; there the extension itself is the fixed rule.", "audioSrc": "public/data/audio/dummy/dummy_308_sideB_0.mp3" },
-        { "text": "Windows doesn't have a shebang; there, the extension is the fixed rule.", "audioSrc": "public/data/audio/dummy/dummy_308_sideB_1.mp3" },
-        { "text": "On Windows there's no shebang; there the extension is indeed the fixed rule.", "audioSrc": "public/data/audio/dummy/dummy_308_sideB_2.mp3" }
+        {
+          "text": "Windows has no shebang; there the extension itself is the fixed rule.",
+          "audioSrc": "public/data/audio/dummy/dummy_308_sideB_0.mp3"
+        },
+        {
+          "text": "Windows doesn't have a shebang; there, the extension is the fixed rule.",
+          "audioSrc": "public/data/audio/dummy/dummy_308_sideB_1.mp3"
+        },
+        {
+          "text": "On Windows there's no shebang; there the extension is indeed the fixed rule.",
+          "audioSrc": "public/data/audio/dummy/dummy_308_sideB_2.mp3"
+        }
       ],
       "note": null
     },
@@ -574,9 +801,18 @@
       "cardType": "flippable",
       "sideA": "WSL permite que Windows corra shells reales de Linux como Bash.",
       "sideB": [
-        { "text": "WSL lets Windows run real Linux shells like Bash.", "audioSrc": "public/data/audio/dummy/dummy_309_sideB_0.mp3" },
-        { "text": "WSL allows Windows to run real Linux shells like Bash.", "audioSrc": "public/data/audio/dummy/dummy_309_sideB_1.mp3" },
-        { "text": "WSL lets Windows run actual Linux shells such as Bash.", "audioSrc": "public/data/audio/dummy/dummy_309_sideB_2.mp3" }
+        {
+          "text": "WSL lets Windows run real Linux shells like Bash.",
+          "audioSrc": "public/data/audio/dummy/dummy_309_sideB_0.mp3"
+        },
+        {
+          "text": "WSL allows Windows to run real Linux shells like Bash.",
+          "audioSrc": "public/data/audio/dummy/dummy_309_sideB_1.mp3"
+        },
+        {
+          "text": "WSL lets Windows run actual Linux shells such as Bash.",
+          "audioSrc": "public/data/audio/dummy/dummy_309_sideB_2.mp3"
+        }
       ],
       "note": null
     },
@@ -585,20 +821,38 @@
       "cardType": "flippable",
       "sideA": "Un shell es la interfaz entre el usuario y el sistema operativo.",
       "sideB": [
-        { "text": "A shell is the interface between the user and the operating system.", "audioSrc": "public/data/audio/dummy/dummy_310_sideB_0.mp3" },
-        { "text": "A shell acts as the interface between the user and the operating system.", "audioSrc": "public/data/audio/dummy/dummy_310_sideB_1.mp3" },
-        { "text": "A shell is an interface between the user and the operating system.", "audioSrc": "public/data/audio/dummy/dummy_310_sideB_2.mp3" }
+        {
+          "text": "A shell is the interface between the user and the operating system.",
+          "audioSrc": "public/data/audio/dummy/dummy_310_sideB_0.mp3"
+        },
+        {
+          "text": "A shell acts as the interface between the user and the operating system.",
+          "audioSrc": "public/data/audio/dummy/dummy_310_sideB_1.mp3"
+        },
+        {
+          "text": "A shell is an interface between the user and the operating system.",
+          "audioSrc": "public/data/audio/dummy/dummy_310_sideB_2.mp3"
+        }
       ],
-      "note": null
+      "note": "~A shell is the interface between the user and the operation system~ is incorrect because the standard term is [operating system], not 'operation system'."
     },
     {
       "cardId": "dummy_311",
       "cardType": "flippable",
       "sideA": "sh significa shell.",
       "sideB": [
-        { "text": "sh means shell.", "audioSrc": "public/data/audio/dummy/dummy_311_sideB_0.mp3" },
-        { "text": "sh stands for shell.", "audioSrc": "public/data/audio/dummy/dummy_311_sideB_1.mp3" },
-        { "text": "sh is short for shell.", "audioSrc": "public/data/audio/dummy/dummy_311_sideB_2.mp3" }
+        {
+          "text": "sh means shell.",
+          "audioSrc": "public/data/audio/dummy/dummy_311_sideB_0.mp3"
+        },
+        {
+          "text": "sh stands for shell.",
+          "audioSrc": "public/data/audio/dummy/dummy_311_sideB_1.mp3"
+        },
+        {
+          "text": "sh is short for shell.",
+          "audioSrc": "public/data/audio/dummy/dummy_311_sideB_2.mp3"
+        }
       ],
       "note": null
     },
@@ -607,9 +861,18 @@
       "cardType": "flippable",
       "sideA": "Puedes escribir código bash dentro de un archivo shell.",
       "sideB": [
-        { "text": "You can write bash code inside a shell file.", "audioSrc": "public/data/audio/dummy/dummy_312_sideB_0.mp3" },
-        { "text": "You can write bash code inside of a shell file.", "audioSrc": "public/data/audio/dummy/dummy_312_sideB_1.mp3" },
-        { "text": "You can write Bash code within a shell file.", "audioSrc": "public/data/audio/dummy/dummy_312_sideB_2.mp3" }
+        {
+          "text": "You can write bash code inside a shell file.",
+          "audioSrc": "public/data/audio/dummy/dummy_312_sideB_0.mp3"
+        },
+        {
+          "text": "You can write bash code inside of a shell file.",
+          "audioSrc": "public/data/audio/dummy/dummy_312_sideB_1.mp3"
+        },
+        {
+          "text": "You can write Bash code within a shell file.",
+          "audioSrc": "public/data/audio/dummy/dummy_312_sideB_2.mp3"
+        }
       ],
       "note": null
     },
@@ -618,9 +881,18 @@
       "cardType": "flippable",
       "sideA": "Bash es un tipo específico de shell; por el contrario, un shell no es un tipo de Bash.",
       "sideB": [
-        { "text": "Bash is a specific type of shell; however, a shell is not a type of Bash.", "audioSrc": "public/data/audio/dummy/dummy_313_sideB_0.mp3" },
-        { "text": "Bash is a specific kind of shell; a shell, however, is not a kind of Bash.", "audioSrc": "public/data/audio/dummy/dummy_313_sideB_1.mp3" },
-        { "text": "Bash is one specific type of shell, but a shell is not a type of Bash.", "audioSrc": "public/data/audio/dummy/dummy_313_sideB_2.mp3" }
+        {
+          "text": "Bash is a specific type of shell; however, a shell is not a type of Bash.",
+          "audioSrc": "public/data/audio/dummy/dummy_313_sideB_0.mp3"
+        },
+        {
+          "text": "Bash is a specific kind of shell; a shell, however, is not a kind of Bash.",
+          "audioSrc": "public/data/audio/dummy/dummy_313_sideB_1.mp3"
+        },
+        {
+          "text": "Bash is one specific type of shell, but a shell is not a type of Bash.",
+          "audioSrc": "public/data/audio/dummy/dummy_313_sideB_2.mp3"
+        }
       ],
       "note": null
     }
