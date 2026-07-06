@@ -5,118 +5,6 @@
   "deckType": "flippable",
   "cards": [
     {
-      "cardId": "dummy_233",
-      "cardType": "flippable",
-      "sideA": "Estate atento por si llega el paquete.",
-      "sideB": [
-        {
-          "text": "Keep an eye out for the package.",
-          "audioSrc": "public/data/audio/dummy/dummy_233_sideB_0.mp3"
-        },
-        {
-          "text": "Keep an eye out for the delivery.",
-          "audioSrc": "public/data/audio/dummy/dummy_233_sideB_1.mp3"
-        },
-        {
-          "text": "Please keep an eye out for the package.",
-          "audioSrc": "public/data/audio/dummy/dummy_233_sideB_2.mp3"
-        },
-        {
-          "text": "Keep an eye out for the package arriving.",
-          "audioSrc": "public/data/audio/dummy/dummy_233_sideB_3.mp3"
-        },
-        {
-          "text": "Keep an eye out for the package to arrive.",
-          "audioSrc": "public/data/audio/dummy/dummy_233_sideB_4.mp3"
-        }
-      ],
-      "note": "**[misc:1]**\n\n~Keep an eye out for the package arrives~ is not valid because 'for' is a preposition and cannot be followed directly by a subject and conjugated verb. You should use an '-ing' form or an infinitive, like [Keep an eye out for the package arriving] or [Keep an eye out for the package to arrive].\n\n~Keep an eye on for the package~ is incorrect because it mixes two different expressions. You must either use [Keep an eye on the package] (if you are watching the physical package itself) or [Keep an eye out for the package] (if you are waiting for it to arrive).\n\n~Keep an eye on the package to arrive~ is incorrect because you cannot use 'keep an eye on' followed by an infinitive clause for an expected event. You must use [keep an eye out for] when waiting for something to arrive."
-    },
-    {
-      "cardId": "dummy_242",
-      "cardType": "flippable",
-      "sideA": "Por favor, mantenme informado sobre cualquier novedad.",
-      "sideB": [
-        {
-          "text": "Please keep me in the loop on any updates.",
-          "audioSrc": "public/data/audio/dummy/dummy_242_sideB_0.mp3"
-        },
-        {
-          "text": "Please keep me in the loop about any updates.",
-          "audioSrc": "public/data/audio/dummy/dummy_242_sideB_1.mp3"
-        },
-        {
-          "text": "Please keep me in the loop on anything new.",
-          "audioSrc": "public/data/audio/dummy/dummy_242_sideB_2.mp3"
-        },
-        {
-          "text": "Please keep me in the loop on any news.",
-          "audioSrc": "public/data/audio/dummy/dummy_242_sideB_3.mp3"
-        },
-        {
-          "text": "Please keep me in the loop about any news.",
-          "audioSrc": "public/data/audio/dummy/dummy_242_sideB_4.mp3"
-        },
-        {
-          "text": "Please let me know about any news.",
-          "audioSrc": "public/data/audio/dummy/dummy_242_sideB_5.mp3"
-        },
-        {
-          "text": "Please keep me informed about any news.",
-          "audioSrc": "public/data/audio/dummy/dummy_242_sideB_6.mp3"
-        }
-      ],
-      "note": "**[misc:10]**\n\n~Please keep me on the loop about any updates~ is incorrect because the standard idiom uses the preposition [in], as in [keep me in the loop].\n\n~Please keep me inform about any news~ is incorrect because the verb 'keep' requires the past participle [informed] when used as an adjective for a state, not the base verb."
-    },
-    {
-      "cardId": "dummy_251",
-      "cardType": "flippable",
-      "sideA": "La política restringe a los empleados el acceso a esos datos.",
-      "sideB": [
-        {
-          "text": "The policy restricts employees from accessing that data.",
-          "audioSrc": "public/data/audio/dummy/dummy_251_sideB_0.mp3"
-        },
-        {
-          "text": "The policy prohibits employees from accessing that data.",
-          "audioSrc": "public/data/audio/dummy/dummy_251_sideB_1.mp3"
-        },
-        {
-          "text": "The policy prevents employees from accessing that data.",
-          "audioSrc": "public/data/audio/dummy/dummy_251_sideB_2.mp3"
-        },
-        {
-          "text": "The policy restricts employees from having access to that data.",
-          "audioSrc": "public/data/audio/dummy/dummy_251_sideB_3.mp3"
-        }
-      ],
-      "note": "**[er:225]**\n\n~The policy doesn't allow employees from accessing that data~ is incorrect because the verb 'allow' requires an infinitive [to access], not 'from' plus a gerund. Only verbs of restriction like restrict, prevent, or stop take [from + -ing]."
-    },
-    {
-      "cardId": "dummy_263",
-      "cardType": "flippable",
-      "sideA": "Un buen modelo sirve como plano para el desarrollo del software.",
-      "sideB": [
-        {
-          "text": "A good model serves as a blueprint for software development.",
-          "audioSrc": "public/data/audio/dummy/dummy_263_sideB_0.mp3"
-        },
-        {
-          "text": "A good model acts as a blueprint for software development.",
-          "audioSrc": "public/data/audio/dummy/dummy_263_sideB_1.mp3"
-        },
-        {
-          "text": "A good model works as a blueprint for developing software.",
-          "audioSrc": "public/data/audio/dummy/dummy_263_sideB_2.mp3"
-        },
-        {
-          "text": "A good model is like a blueprint for software development.",
-          "audioSrc": "public/data/audio/dummy/dummy_263_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
       "cardId": "dummy_264",
       "cardType": "flippable",
       "sideA": "Esta clase base comparte su herencia con los controladores hijos.",
@@ -135,74 +23,6 @@
         }
       ],
       "note": "\n\n~This base class shares its inheritance with the children controllers~ is not valid because when a noun acts as an adjective to modify another noun, it typically remains in its singular form. Use [child controllers].\n\n~This base class shares its inherent with the children controllers~ is incorrect because 'inherent' is an adjective, but the sentence requires the noun [inheritance]. Also, use [child] instead of 'children'."
-    },
-    {
-      "cardId": "dummy_266",
-      "cardType": "flippable",
-      "sideA": "Los niños prometieron portarse bien.",
-      "sideB": [
-        {
-          "text": "The children promised to behave.",
-          "audioSrc": "public/data/audio/dummy/dummy_266_sideB_0.mp3"
-        },
-        {
-          "text": "The kids promised to behave themselves.",
-          "audioSrc": "public/data/audio/dummy/dummy_266_sideB_1.mp3"
-        },
-        {
-          "text": "The children made a promise to behave.",
-          "audioSrc": "public/data/audio/dummy/dummy_266_sideB_2.mp3"
-        },
-        {
-          "text": "The children promised to behave well.",
-          "audioSrc": "public/data/audio/dummy/dummy_266_sideB_3.mp3"
-        }
-      ],
-      "note": "\n\n~The children promised to get along~ changes the meaning. 'Get along' means to have a good relationship with someone (llevarse bien). To specifically say 'portarse bien', you should use [behave]."
-    },
-    {
-      "cardId": "dummy_272",
-      "cardType": "flippable",
-      "sideA": "Ella aceptó el premio en nombre del equipo.",
-      "sideB": [
-        {
-          "text": "She accepted the award on behalf of the team.",
-          "audioSrc": "public/data/audio/dummy/dummy_272_sideB_0.mp3"
-        },
-        {
-          "text": "She accepted the prize on behalf of the team.",
-          "audioSrc": "public/data/audio/dummy/dummy_272_sideB_1.mp3"
-        },
-        {
-          "text": "She received the award on behalf of the team.",
-          "audioSrc": "public/data/audio/dummy/dummy_272_sideB_2.mp3"
-        }
-      ],
-      "note": "~She accepted the award on the team behalf~ is not valid because it requires a possessive form, such as [on the team's behalf] or [on behalf of the team].\n\n~She accepted the award on the team~ and ~in the team~ are incorrect because they imply physical location rather than representation."
-    },
-    {
-      "cardId": "dummy_273",
-      "cardType": "flippable",
-      "sideA": "Por favor, hablen en representación de quienes no pueden.",
-      "sideB": [
-        {
-          "text": "Please speak on behalf of those who cannot.",
-          "audioSrc": "public/data/audio/dummy/dummy_273_sideB_0.mp3"
-        },
-        {
-          "text": "Please speak up for those who can't.",
-          "audioSrc": "public/data/audio/dummy/dummy_273_sideB_1.mp3"
-        },
-        {
-          "text": "Please speak on behalf of those who can't.",
-          "audioSrc": "public/data/audio/dummy/dummy_273_sideB_2.mp3"
-        },
-        {
-          "text": "Please speak on behalf of people who cannot.",
-          "audioSrc": "public/data/audio/dummy/dummy_273_sideB_3.mp3"
-        }
-      ],
-      "note": "\n\n~Please speak on behalf who cannot~ is missing the preposition 'of'. The correct phrase is [on behalf of].\n\n~Please speak on behalf of who cannot~ is incorrect because the preposition 'of' needs a noun or pronoun as its object before the relative clause. You must say [on behalf of those who] or [on behalf of people who]."
     },
     {
       "cardId": "dummy_274",
@@ -277,34 +97,6 @@
       "note": "**[er:15]**\n\n~I am used to being the cold~ is incorrect because it literally translates to 'Estoy acostumbrado a ser el frío'. To express being accustomed to something, just follow the phrase directly with the noun: [I am used to the cold]."
     },
     {
-      "cardId": "dummy_280",
-      "cardType": "flippable",
-      "sideA": "Solía ir a fiestas cuando adolescente.",
-      "sideB": [
-        {
-          "text": "I used to go to parties as a teenager.",
-          "audioSrc": "public/data/audio/dummy/dummy_280_sideB_0.mp3"
-        },
-        {
-          "text": "I used to go to parties when I was a teenager.",
-          "audioSrc": "public/data/audio/dummy/dummy_280_sideB_1.mp3"
-        },
-        {
-          "text": "I would go to parties when I was a teen.",
-          "audioSrc": "public/data/audio/dummy/dummy_280_sideB_2.mp3"
-        },
-        {
-          "text": "I used to go to parties when I was an adolescent.",
-          "audioSrc": "public/data/audio/dummy/dummy_280_sideB_3.mp3"
-        },
-        {
-          "text": "I used to go to parties when I was young.",
-          "audioSrc": "public/data/audio/dummy/dummy_280_sideB_4.mp3"
-        }
-      ],
-      "note": "**[er:15]**"
-    },
-    {
       "cardId": "dummy_285",
       "cardType": "flippable",
       "sideA": "Toda decisión tiene un costo.",
@@ -329,94 +121,6 @@
       "note": "A [trade-off] is a situation where you gain one thing but lose another. Some translations can be: intercambio, equilibrio, compensación, sacrificio, renuncia, costo."
     },
     {
-      "cardId": "dummy_286",
-      "cardType": "flippable",
-      "sideA": "¿Prometes pórtate bien?",
-      "sideB": [
-        {
-          "text": "Do you promise to behave?",
-          "audioSrc": "public/data/audio/dummy/dummy_286_sideB_0.mp3"
-        },
-        {
-          "text": "Do you promise you'll behave?",
-          "audioSrc": "public/data/audio/dummy/dummy_286_sideB_1.mp3"
-        },
-        {
-          "text": "Will you promise to behave well?",
-          "audioSrc": "public/data/audio/dummy/dummy_286_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_287",
-      "cardType": "flippable",
-      "sideA": "Se portaron mal los niños.",
-      "sideB": [
-        {
-          "text": "The kids behaved badly.",
-          "audioSrc": "public/data/audio/dummy/dummy_287_sideB_0.mp3"
-        },
-        {
-          "text": "The children misbehaved.",
-          "audioSrc": "public/data/audio/dummy/dummy_287_sideB_1.mp3"
-        },
-        {
-          "text": "The kids behaved poorly.",
-          "audioSrc": "public/data/audio/dummy/dummy_287_sideB_2.mp3"
-        },
-        {
-          "text": "The kids didn't behave well.",
-          "audioSrc": "public/data/audio/dummy/dummy_287_sideB_3.mp3"
-        },
-        {
-          "text": "The kids didn't behave.",
-          "audioSrc": "public/data/audio/dummy/dummy_287_sideB_4.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_288",
-      "cardType": "flippable",
-      "sideA": "¿Qué shell estás corriendo?",
-      "sideB": [
-        {
-          "text": "What shell are you running?",
-          "audioSrc": "public/data/audio/dummy/dummy_288_sideB_0.mp3"
-        },
-        {
-          "text": "Which shell are you running?",
-          "audioSrc": "public/data/audio/dummy/dummy_288_sideB_1.mp3"
-        },
-        {
-          "text": "What shell do you have running?",
-          "audioSrc": "public/data/audio/dummy/dummy_288_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_289",
-      "cardType": "flippable",
-      "sideA": "¿En qué shell vas a ejecutar esto — Bash, Zsh, PowerShell?",
-      "sideB": [
-        {
-          "text": "What shell are you going to run this in, Bash, Zsh, PowerShell?",
-          "audioSrc": "public/data/audio/dummy/dummy_289_sideB_0.mp3"
-        },
-        {
-          "text": "Which shell will you run this in, Bash, Zsh, PowerShell?",
-          "audioSrc": "public/data/audio/dummy/dummy_289_sideB_1.mp3"
-        },
-        {
-          "text": "In what shell are you going to run this, Bash, Zsh, PowerShell?",
-          "audioSrc": "public/data/audio/dummy/dummy_289_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
       "cardId": "dummy_290",
       "cardType": "flippable",
       "sideA": "¿Mac o Windows? Así sé qué shell asumir.",
@@ -437,26 +141,6 @@
       "note": null
     },
     {
-      "cardId": "dummy_291",
-      "cardType": "flippable",
-      "sideA": "¿Qué tipo de shell tenés, así te doy los comandos correctos?",
-      "sideB": [
-        {
-          "text": "What type of shell do you have, so I can give you the correct commands?",
-          "audioSrc": "public/data/audio/dummy/dummy_291_sideB_0.mp3"
-        },
-        {
-          "text": "What kind of shell do you have, so I can give you the right commands?",
-          "audioSrc": "public/data/audio/dummy/dummy_291_sideB_1.mp3"
-        },
-        {
-          "text": "Which type of shell do you have, so I can give you the correct commands?",
-          "audioSrc": "public/data/audio/dummy/dummy_291_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
       "cardId": "dummy_292",
       "cardType": "flippable",
       "sideA": "Sh, Bash y Zsh son tipos de shell, igual que Gmail y Outlook son tipos de programa de correo.",
@@ -472,110 +156,6 @@
         {
           "text": "Sh, Bash, and Zsh are kinds of shell, the same way Gmail and Outlook are kinds of email program.",
           "audioSrc": "public/data/audio/dummy/dummy_292_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_293",
-      "cardType": "flippable",
-      "sideA": "\"Shell\" es la categoría; Bash es un ejemplo real dentro de esa categoría, no una pieza suya.",
-      "sideB": [
-        {
-          "text": "Shell is the category; Bash is an actual example within that category, not a piece of it.",
-          "audioSrc": "public/data/audio/dummy/dummy_293_sideB_0.mp3"
-        },
-        {
-          "text": "Shell is the category, and Bash is a real example within it, not a part of it.",
-          "audioSrc": "public/data/audio/dummy/dummy_293_sideB_1.mp3"
-        },
-        {
-          "text": "The word Shell is the category; Bash is an actual example within that category, not a piece of it.",
-          "audioSrc": "public/data/audio/dummy/dummy_293_sideB_2.mp3"
-        },
-        {
-          "text": "Shell is the category; Bash is an actual example inside that category, not a piece of it.",
-          "audioSrc": "public/data/audio/dummy/dummy_293_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_294",
-      "cardType": "flippable",
-      "sideA": "Si alguien te pregunta \"¿qué es Bash?\", la respuesta correcta es: \"es un shell\".",
-      "sideB": [
-        {
-          "text": "If someone asks what Bash is, the correct answer is it's a shell.",
-          "audioSrc": "public/data/audio/dummy/dummy_294_sideB_0.mp3"
-        },
-        {
-          "text": "If someone asks what is Bash, the right answer is that it's a shell.",
-          "audioSrc": "public/data/audio/dummy/dummy_294_sideB_1.mp3"
-        },
-        {
-          "text": "If someone asks you what Bash is, the correct answer is it's a shell.",
-          "audioSrc": "public/data/audio/dummy/dummy_294_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_295",
-      "cardType": "flippable",
-      "sideA": "Bash y Zsh son el software real dentro de la categoría \"Shell\".",
-      "sideB": [
-        {
-          "text": "Bash and Zsh are the actual software within the Shell category.",
-          "audioSrc": "public/data/audio/dummy/dummy_295_sideB_0.mp3"
-        },
-        {
-          "text": "Bash and Zsh are the real software within the Shell category.",
-          "audioSrc": "public/data/audio/dummy/dummy_295_sideB_1.mp3"
-        },
-        {
-          "text": "Bash and Zsh are the actual software inside the Shell category.",
-          "audioSrc": "public/data/audio/dummy/dummy_295_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_296",
-      "cardType": "flippable",
-      "sideA": "Es un script de comandos, no un programa compilado.",
-      "sideB": [
-        {
-          "text": "It's a script of commands, not a compiled program.",
-          "audioSrc": "public/data/audio/dummy/dummy_296_sideB_0.mp3"
-        },
-        {
-          "text": "It's a command script, not a compiled program.",
-          "audioSrc": "public/data/audio/dummy/dummy_296_sideB_1.mp3"
-        },
-        {
-          "text": "It is a script made of commands, not a compiled program.",
-          "audioSrc": "public/data/audio/dummy/dummy_296_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_297",
-      "cardType": "flippable",
-      "sideA": "No es código como Java o Python; es una lista de instrucciones para el shell.",
-      "sideB": [
-        {
-          "text": "It's not code like Java or Python; it's a list of instructions for the shell.",
-          "audioSrc": "public/data/audio/dummy/dummy_297_sideB_0.mp3"
-        },
-        {
-          "text": "It's not code like Java or Python, it's a list of instructions for the shell.",
-          "audioSrc": "public/data/audio/dummy/dummy_297_sideB_1.mp3"
-        },
-        {
-          "text": "It isn't code like Java or Python; it's a set of instructions for the shell.",
-          "audioSrc": "public/data/audio/dummy/dummy_297_sideB_2.mp3"
         }
       ],
       "note": null
@@ -609,106 +189,6 @@
       "note": null
     },
     {
-      "cardId": "dummy_299",
-      "cardType": "flippable",
-      "sideA": "El shell lee el script y va llamando a otros programas, como git o find.",
-      "sideB": [
-        {
-          "text": "The shell reads the script and calls other programs, like git or find.",
-          "audioSrc": "public/data/audio/dummy/dummy_299_sideB_0.mp3"
-        },
-        {
-          "text": "The shell reads the script and goes calling other programs, like git or find.",
-          "audioSrc": "public/data/audio/dummy/dummy_299_sideB_1.mp3"
-        },
-        {
-          "text": "The shell reads the script and invokes other programs, such as git or find.",
-          "audioSrc": "public/data/audio/dummy/dummy_299_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_300",
-      "cardType": "flippable",
-      "sideA": "Una Terminal es solo una ventana, no entiende comandos por sí sola.",
-      "sideB": [
-        {
-          "text": "A Terminal is just a window, it doesn't understand commands by itself.",
-          "audioSrc": "public/data/audio/dummy/dummy_300_sideB_0.mp3"
-        },
-        {
-          "text": "A Terminal is only a window; it doesn't understand commands on its own.",
-          "audioSrc": "public/data/audio/dummy/dummy_300_sideB_1.mp3"
-        },
-        {
-          "text": "A Terminal is just a window, it can't understand commands by itself.",
-          "audioSrc": "public/data/audio/dummy/dummy_300_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_301",
-      "cardType": "flippable",
-      "sideA": "El Shell es el programa que sí entiende y ejecuta los comandos.",
-      "sideB": [
-        {
-          "text": "The Shell is the program that actually understands and runs the commands.",
-          "audioSrc": "public/data/audio/dummy/dummy_301_sideB_0.mp3"
-        },
-        {
-          "text": "The Shell is the program that really understands and executes the commands.",
-          "audioSrc": "public/data/audio/dummy/dummy_301_sideB_1.mp3"
-        },
-        {
-          "text": "The Shell is the program that does understand and run the commands.",
-          "audioSrc": "public/data/audio/dummy/dummy_301_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_302",
-      "cardType": "flippable",
-      "sideA": "El Shell corre adentro de la Terminal.",
-      "sideB": [
-        {
-          "text": "The Shell runs inside the Terminal.",
-          "audioSrc": "public/data/audio/dummy/dummy_302_sideB_0.mp3"
-        },
-        {
-          "text": "The Shell runs inside of the Terminal.",
-          "audioSrc": "public/data/audio/dummy/dummy_302_sideB_1.mp3"
-        },
-        {
-          "text": "The Shell runs within the Terminal.",
-          "audioSrc": "public/data/audio/dummy/dummy_302_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_303",
-      "cardType": "flippable",
-      "sideA": "Bash, Zsh y sh son shells, no son \"partes\" de un shell.",
-      "sideB": [
-        {
-          "text": "Bash, Zsh, and sh are shells, not parts of a shell.",
-          "audioSrc": "public/data/audio/dummy/dummy_303_sideB_0.mp3"
-        },
-        {
-          "text": "Bash, Zsh, and sh are shells, not pieces of a shell.",
-          "audioSrc": "public/data/audio/dummy/dummy_303_sideB_1.mp3"
-        },
-        {
-          "text": "Bash, Zsh, and sh are shells themselves, not parts of a shell.",
-          "audioSrc": "public/data/audio/dummy/dummy_303_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
       "cardId": "dummy_304",
       "cardType": "flippable",
       "sideA": "Cada shell entiende comandos con su propia sintaxis.",
@@ -727,26 +207,6 @@
         }
       ],
       "note": "~Each shell understands commands using its own syntaxis~ is incorrect because the English word is [syntax], not 'syntaxis'."
-    },
-    {
-      "cardId": "dummy_305",
-      "cardType": "flippable",
-      "sideA": "Mac y Linux usan shells tipo Unix; Windows usa PowerShell o CMD.",
-      "sideB": [
-        {
-          "text": "Mac and Linux use Unix-type shells; Windows uses PowerShell or CMD.",
-          "audioSrc": "public/data/audio/dummy/dummy_305_sideB_0.mp3"
-        },
-        {
-          "text": "Mac and Linux use Unix-style shells; Windows uses PowerShell or CMD.",
-          "audioSrc": "public/data/audio/dummy/dummy_305_sideB_1.mp3"
-        },
-        {
-          "text": "Mac and Linux use Unix-like shells, while Windows uses PowerShell or CMD.",
-          "audioSrc": "public/data/audio/dummy/dummy_305_sideB_2.mp3"
-        }
-      ],
-      "note": null
     },
     {
       "cardId": "dummy_306",
@@ -768,26 +228,6 @@
         {
           "text": "The .sh extension does not define what type of shell runs the file.",
           "audioSrc": "public/data/audio/dummy/dummy_306_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_307",
-      "cardType": "flippable",
-      "sideA": "El shebang (primera línea del archivo) es lo que realmente decide el shell.",
-      "sideB": [
-        {
-          "text": "The shebang, the file's first line, is what really decides the shell.",
-          "audioSrc": "public/data/audio/dummy/dummy_307_sideB_0.mp3"
-        },
-        {
-          "text": "The shebang, the first line of the file, is what actually decides the shell.",
-          "audioSrc": "public/data/audio/dummy/dummy_307_sideB_1.mp3"
-        },
-        {
-          "text": "The shebang, the file's first line, is what really determines the shell.",
-          "audioSrc": "public/data/audio/dummy/dummy_307_sideB_2.mp3"
         }
       ],
       "note": null
@@ -857,61 +297,321 @@
       "note": "\n\n~A shell is the interface between the user and the operation system~ is not valid because the correct standard terminology is [operating system]."
     },
     {
-      "cardId": "dummy_311",
+      "cardId": "dummy_314",
       "cardType": "flippable",
-      "sideA": "sh significa shell.",
+      "sideA": "Es un archivo solo, está dentro de su carpeta padre.",
       "sideB": [
         {
-          "text": "sh means shell.",
-          "audioSrc": "public/data/audio/dummy/dummy_311_sideB_0.mp3"
+          "text": "It is a single file, it is inside its parent folder.",
+          "audioSrc": "public/data/audio/dummy/dummy_314_sideB_0.mp3"
         },
         {
-          "text": "sh stands for shell.",
-          "audioSrc": "public/data/audio/dummy/dummy_311_sideB_1.mp3"
+          "text": "It's a single file, it's inside its parent folder.",
+          "audioSrc": "public/data/audio/dummy/dummy_314_sideB_1.mp3"
         },
         {
-          "text": "sh is short for shell.",
-          "audioSrc": "public/data/audio/dummy/dummy_311_sideB_2.mp3"
+          "text": "It is just one file, located inside its parent folder.",
+          "audioSrc": "public/data/audio/dummy/dummy_314_sideB_2.mp3"
         }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_312",
+      "cardId": "dummy_315",
       "cardType": "flippable",
-      "sideA": "Puedes escribir código bash dentro de un archivo shell.",
+      "sideA": "La carpeta padre contiene varias subcarpetas.",
       "sideB": [
         {
-          "text": "You can write bash code inside a shell file.",
-          "audioSrc": "public/data/audio/dummy/dummy_312_sideB_0.mp3"
+          "text": "The parent folder contains several subfolders.",
+          "audioSrc": "public/data/audio/dummy/dummy_315_sideB_0.mp3"
         },
         {
-          "text": "You can write bash code inside of a shell file.",
-          "audioSrc": "public/data/audio/dummy/dummy_312_sideB_1.mp3"
+          "text": "The parent folder has multiple subfolders.",
+          "audioSrc": "public/data/audio/dummy/dummy_315_sideB_1.mp3"
         },
         {
-          "text": "You can write Bash code within a shell file.",
-          "audioSrc": "public/data/audio/dummy/dummy_312_sideB_2.mp3"
+          "text": "The parent folder contains a few subfolders.",
+          "audioSrc": "public/data/audio/dummy/dummy_315_sideB_2.mp3"
         }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_313",
+      "cardId": "dummy_316",
       "cardType": "flippable",
-      "sideA": "Bash es un tipo específico de shell; por el contrario, un shell no es un tipo de Bash.",
+      "sideA": "La carpeta padre contiene algunos archivos solitarios y otras subcarpetas con más archivos.",
       "sideB": [
         {
-          "text": "Bash is a specific type of shell; however, a shell is not a type of Bash.",
-          "audioSrc": "public/data/audio/dummy/dummy_313_sideB_0.mp3"
+          "text": "The parent folder contains some standalone files and other subfolders with more files.",
+          "audioSrc": "public/data/audio/dummy/dummy_316_sideB_0.mp3"
         },
         {
-          "text": "Bash is a specific kind of shell; a shell, however, is not a kind of Bash.",
-          "audioSrc": "public/data/audio/dummy/dummy_313_sideB_1.mp3"
+          "text": "The parent folder contains a few standalone files and other subfolders with additional files.",
+          "audioSrc": "public/data/audio/dummy/dummy_316_sideB_1.mp3"
         },
         {
-          "text": "Bash is one specific type of shell, but a shell is not a type of Bash.",
-          "audioSrc": "public/data/audio/dummy/dummy_313_sideB_2.mp3"
+          "text": "The parent folder has some standalone files and other subdirectories with more files.",
+          "audioSrc": "public/data/audio/dummy/dummy_316_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_317",
+      "cardType": "flippable",
+      "sideA": "Estoy hablando acerca de los archivos que están dentro de la carpeta padre.",
+      "sideB": [
+        {
+          "text": "I am talking about the files that are inside the parent folder.",
+          "audioSrc": "public/data/audio/dummy/dummy_317_sideB_0.mp3"
+        },
+        {
+          "text": "I'm talking about the files inside the parent folder.",
+          "audioSrc": "public/data/audio/dummy/dummy_317_sideB_1.mp3"
+        },
+        {
+          "text": "I am speaking about the files contained within the parent folder.",
+          "audioSrc": "public/data/audio/dummy/dummy_317_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_318",
+      "cardType": "flippable",
+      "sideA": "La carpeta raíz es la carpeta padre de todos los demás.",
+      "sideB": [
+        {
+          "text": "The root folder is the parent folder of all the others.",
+          "audioSrc": "public/data/audio/dummy/dummy_318_sideB_0.mp3"
+        },
+        {
+          "text": "The root directory is the parent folder of all the rest.",
+          "audioSrc": "public/data/audio/dummy/dummy_318_sideB_1.mp3"
+        },
+        {
+          "text": "The root folder is the parent of all other folders.",
+          "audioSrc": "public/data/audio/dummy/dummy_318_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_319",
+      "cardType": "flippable",
+      "sideA": "Debes navegar usando sintaxis de doble punto.",
+      "sideB": [
+        {
+          "text": "You must navigate using double dot syntax.",
+          "audioSrc": "public/data/audio/dummy/dummy_319_sideB_0.mp3"
+        },
+        {
+          "text": "You have to navigate using the double dot syntax.",
+          "audioSrc": "public/data/audio/dummy/dummy_319_sideB_1.mp3"
+        },
+        {
+          "text": "You need to navigate by using double dot syntax.",
+          "audioSrc": "public/data/audio/dummy/dummy_319_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_320",
+      "cardType": "flippable",
+      "sideA": "Para llegar allá, debes navegar y usar sintaxis de doble punto.",
+      "sideB": [
+        {
+          "text": "To get there, you must navigate and use double dot syntax.",
+          "audioSrc": "public/data/audio/dummy/dummy_320_sideB_0.mp3"
+        },
+        {
+          "text": "To get there, you have to navigate using double dot syntax.",
+          "audioSrc": "public/data/audio/dummy/dummy_320_sideB_1.mp3"
+        },
+        {
+          "text": "In order to get there, you need to navigate and use double dot syntax.",
+          "audioSrc": "public/data/audio/dummy/dummy_320_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_321",
+      "cardType": "flippable",
+      "sideA": "Es un archivo autosuficiente, o sea no necesita a otros para funcionar.",
+      "sideB": [
+        {
+          "text": "It is a standalone file, that is, it doesn't need others to function.",
+          "audioSrc": "public/data/audio/dummy/dummy_321_sideB_0.mp3"
+        },
+        {
+          "text": "It's a standalone file, meaning it doesn't require others to work.",
+          "audioSrc": "public/data/audio/dummy/dummy_321_sideB_1.mp3"
+        },
+        {
+          "text": "It is a standalone file, so it doesn't need other files to function.",
+          "audioSrc": "public/data/audio/dummy/dummy_321_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_322",
+      "cardType": "flippable",
+      "sideA": "Necesitamos un archivo autosuficiente, o sea que no dependa de otros.",
+      "sideB": [
+        {
+          "text": "We need a standalone file, that is, one that doesn't depend on others.",
+          "audioSrc": "public/data/audio/dummy/dummy_322_sideB_0.mp3"
+        },
+        {
+          "text": "We need a standalone file, meaning it shouldn't depend on others.",
+          "audioSrc": "public/data/audio/dummy/dummy_322_sideB_1.mp3"
+        },
+        {
+          "text": "We require a standalone file that does not depend on anything else.",
+          "audioSrc": "public/data/audio/dummy/dummy_322_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_323",
+      "cardType": "flippable",
+      "sideA": "Sorry, me cuesta pronunciar esa palabra.",
+      "sideB": [
+        {
+          "text": "Sorry, I find it hard to pronounce that word.",
+          "audioSrc": "public/data/audio/dummy/dummy_323_sideB_0.mp3"
+        },
+        {
+          "text": "Sorry, it's hard for me to pronounce that word.",
+          "audioSrc": "public/data/audio/dummy/dummy_323_sideB_1.mp3"
+        },
+        {
+          "text": "Sorry, I struggle to pronounce that word.",
+          "audioSrc": "public/data/audio/dummy/dummy_323_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_324",
+      "cardType": "flippable",
+      "sideA": "Sorry, me cuesta hacer esto.",
+      "sideB": [
+        {
+          "text": "Sorry, I find it hard to do this.",
+          "audioSrc": "public/data/audio/dummy/dummy_324_sideB_0.mp3"
+        },
+        {
+          "text": "Sorry, it's hard for me to do this.",
+          "audioSrc": "public/data/audio/dummy/dummy_324_sideB_1.mp3"
+        },
+        {
+          "text": "Sorry, I struggle to do this.",
+          "audioSrc": "public/data/audio/dummy/dummy_324_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_325",
+      "cardType": "flippable",
+      "sideA": "Ponle una coma en el comando.",
+      "sideB": [
+        {
+          "text": "Put a comma in the command.",
+          "audioSrc": "public/data/audio/dummy/dummy_325_sideB_0.mp3"
+        },
+        {
+          "text": "Add a comma to the command.",
+          "audioSrc": "public/data/audio/dummy/dummy_325_sideB_1.mp3"
+        },
+        {
+          "text": "Place a comma in the command.",
+          "audioSrc": "public/data/audio/dummy/dummy_325_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_326",
+      "cardType": "flippable",
+      "sideA": "Después del comando, finaliza con una coma.",
+      "sideB": [
+        {
+          "text": "After the command, end with a comma.",
+          "audioSrc": "public/data/audio/dummy/dummy_326_sideB_0.mp3"
+        },
+        {
+          "text": "Finish with a comma after the command.",
+          "audioSrc": "public/data/audio/dummy/dummy_326_sideB_1.mp3"
+        },
+        {
+          "text": "End with a comma after the command.",
+          "audioSrc": "public/data/audio/dummy/dummy_326_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_327",
+      "cardType": "flippable",
+      "sideA": "Anki es un proyecto de código abierto.",
+      "sideB": [
+        {
+          "text": "Anki is an open-source project.",
+          "audioSrc": "public/data/audio/dummy/dummy_327_sideB_0.mp3"
+        },
+        {
+          "text": "Anki is an open source project.",
+          "audioSrc": "public/data/audio/dummy/dummy_327_sideB_1.mp3"
+        },
+        {
+          "text": "Anki is a project that is open-source.",
+          "audioSrc": "public/data/audio/dummy/dummy_327_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_328",
+      "cardType": "flippable",
+      "sideA": "Linux es sistema operativo de código abierto.",
+      "sideB": [
+        {
+          "text": "Linux is an open-source operating system.",
+          "audioSrc": "public/data/audio/dummy/dummy_328_sideB_0.mp3"
+        },
+        {
+          "text": "Linux is an open source operating system.",
+          "audioSrc": "public/data/audio/dummy/dummy_328_sideB_1.mp3"
+        },
+        {
+          "text": "The Linux operating system is open-source.",
+          "audioSrc": "public/data/audio/dummy/dummy_328_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_329",
+      "cardType": "flippable",
+      "sideA": "Git es un sistema de control de versiones de código abierto.",
+      "sideB": [
+        {
+          "text": "Git is an open-source version control system.",
+          "audioSrc": "public/data/audio/dummy/dummy_329_sideB_0.mp3"
+        },
+        {
+          "text": "Git is an open source version control system.",
+          "audioSrc": "public/data/audio/dummy/dummy_329_sideB_1.mp3"
+        },
+        {
+          "text": "Git is a version control system that is open-source.",
+          "audioSrc": "public/data/audio/dummy/dummy_329_sideB_2.mp3"
         }
       ],
       "note": null
