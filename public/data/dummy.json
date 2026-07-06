@@ -224,6 +224,10 @@
         {
           "text": "If you had listened to me 6 months ago, it would be another story.",
           "audioSrc": "public/data/audio/dummy/dummy_274_sideB_3.mp3"
+        },
+        {
+          "text": "If you had listened to me half a year ago, it would be a different story.",
+          "audioSrc": "public/data/audio/dummy/dummy_274_sideB_4.mp3"
         }
       ],
       "note": "**[er:98]**\n\n~If you were listened to me 6 months ago, it would be a different story~ is not valid because 'were listened' is a passive construction. To express an active past hypothetical condition, you must use the past perfect [had listened]."
@@ -592,6 +596,14 @@
         {
           "text": "A script doesn't compile, it runs line by line.",
           "audioSrc": "public/data/audio/dummy/dummy_298_sideB_2.mp3"
+        },
+        {
+          "text": "A script doesn't get compiled, it gets executed line by line.",
+          "audioSrc": "public/data/audio/dummy/dummy_298_sideB_3.mp3"
+        },
+        {
+          "text": "A script doesn't get compiled, it executes line by line.",
+          "audioSrc": "public/data/audio/dummy/dummy_298_sideB_4.mp3"
         }
       ],
       "note": null
@@ -752,6 +764,10 @@
         {
           "text": "The .sh extension does not define what shell runs the file.",
           "audioSrc": "public/data/audio/dummy/dummy_306_sideB_2.mp3"
+        },
+        {
+          "text": "The .sh extension does not define what type of shell runs the file.",
+          "audioSrc": "public/data/audio/dummy/dummy_306_sideB_3.mp3"
         }
       ],
       "note": null
@@ -792,6 +808,10 @@
         {
           "text": "On Windows there's no shebang; there the extension is indeed the fixed rule.",
           "audioSrc": "public/data/audio/dummy/dummy_308_sideB_2.mp3"
+        },
+        {
+          "text": "Windows doesn't have a shebang; there, the extension is required.",
+          "audioSrc": "public/data/audio/dummy/dummy_308_sideB_3.mp3"
         }
       ],
       "note": null
@@ -834,7 +854,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_310_sideB_2.mp3"
         }
       ],
-      "note": "~A shell is the interface between the user and the operation system~ is incorrect because the standard term is [operating system], not 'operation system'."
+      "note": "\n\n~A shell is the interface between the user and the operation system~ is not valid because the correct standard terminology is [operating system]."
     },
     {
       "cardId": "dummy_311",
