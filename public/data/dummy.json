@@ -136,6 +136,10 @@
         {
           "text": "Mac or Windows? So I know which shell to assume.",
           "audioSrc": "public/data/audio/dummy/dummy_290_sideB_2.mp3"
+        },
+        {
+          "text": "Mac or Windows? That way I know what type of shell to assume.",
+          "audioSrc": "public/data/audio/dummy_deck/dummy_290_sideB_3.mp3"
         }
       ],
       "note": null
@@ -312,6 +316,10 @@
         {
           "text": "It is just one file, located inside its parent folder.",
           "audioSrc": "public/data/audio/dummy/dummy_314_sideB_2.mp3"
+        },
+        {
+          "text": "It is a single file, it is inside the parent folder.",
+          "audioSrc": "public/data/audio/dummy_deck/dummy_314_sideB_3.mp3"
         }
       ],
       "note": "~It is a single file, it is inside its father folder.~ In computing, the term for the enclosing directory is [parent folder], not 'father folder'."
@@ -566,7 +574,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_326_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~After the command, finalize with a comma.~ is not natural here. The verb [finalize] usually means to complete a formal agreement, plan, or transaction. To describe adding a character to the end of a string or sequence, use [end] or [finish]."
     },
     {
       "cardId": "dummy_327",
