@@ -24,7 +24,7 @@ add_phrasal_verb_modals.py
 # Migration backups — never version these
 public/data/backups/
 public/data/glossary/backups/
-*.json.bak
+*.bak
 
 # Claude Code local config — never version this
 .claude/

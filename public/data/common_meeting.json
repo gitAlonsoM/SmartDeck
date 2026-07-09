@@ -35067,6 +35067,462 @@
         }
       ],
       "note": null
+    },
+    {
+      "cardId": "mi_1554",
+      "cardType": "flippable",
+      "sideA": "Esta clase base comparte su herencia con los controladores hijos.",
+      "sideB": [
+        {
+          "text": "This base class shares its inheritance with the child controllers.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1554_sideB_0.mp3"
+        },
+        {
+          "text": "This base class shares its inheritance with child controllers.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1554_sideB_1.mp3"
+        },
+        {
+          "text": "The base class shares its inheritance with the child controllers.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1554_sideB_2.mp3"
+        }
+      ],
+      "note": "\n\n~This base class shares its inheritance with the children controllers~ is not valid because when a noun acts as an adjective to modify another noun, it typically remains in its singular form. Use [child controllers].\n\n~This base class shares its inherent with the children controllers~ is incorrect because 'inherent' is an adjective, but the sentence requires the noun [inheritance]. Also, use [child] instead of 'children'."
+    },
+    {
+      "cardId": "mi_1555",
+      "cardType": "flippable",
+      "sideA": "Si me hubieras escuchado 6 meses atrás, sería otra la historia.",
+      "sideB": [
+        {
+          "text": "If you had listened to me 6 months ago, it would be a different story.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1555_sideB_0.mp3"
+        },
+        {
+          "text": "If you'd listened to me six months ago, the story would be different.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1555_sideB_1.mp3"
+        },
+        {
+          "text": "If you had listened to me six months ago, things would be different.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1555_sideB_2.mp3"
+        },
+        {
+          "text": "If you had listened to me 6 months ago, it would be another story.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1555_sideB_3.mp3"
+        },
+        {
+          "text": "If you had listened to me half a year ago, it would be a different story.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1555_sideB_4.mp3"
+        }
+      ],
+      "note": "**[er:98]**\n\n~If you were listened to me 6 months ago, it would be a different story~ is not valid because 'were listened' is a passive construction. To express an active past hypothetical condition, you must use the past perfect [had listened]."
+    },
+    {
+      "cardId": "mi_1556",
+      "cardType": "flippable",
+      "sideA": "Estoy acostumbrado al frío.",
+      "sideB": [
+        {
+          "text": "I am used to the cold.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1556_sideB_0.mp3"
+        },
+        {
+          "text": "I'm accustomed to the cold.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1556_sideB_1.mp3"
+        },
+        {
+          "text": "I am accustomed to the cold weather.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1556_sideB_2.mp3"
+        },
+        {
+          "text": "I'm used to being cold.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1556_sideB_3.mp3"
+        }
+      ],
+      "note": "**[er:15]**\n\n~I am used to being the cold~ is incorrect because it literally translates to 'Estoy acostumbrado a ser el frío'. To express being accustomed to something, just follow the phrase directly with the noun: [I am used to the cold]."
+    },
+    {
+      "cardId": "mi_1557",
+      "cardType": "flippable",
+      "sideA": "Toda decisión tiene un costo.",
+      "sideB": [
+        {
+          "text": "Every decision has a trade-off.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1557_sideB_0.mp3"
+        },
+        {
+          "text": "Every choice comes with a trade-off.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1557_sideB_1.mp3"
+        },
+        {
+          "text": "Every decision involves a trade-off.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1557_sideB_2.mp3"
+        },
+        {
+          "text": "Every decision has a cost.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1557_sideB_3.mp3"
+        }
+      ],
+      "note": "A [trade-off] is a situation where you gain one thing but lose another. Some translations can be: intercambio, equilibrio, compensación, sacrificio, renuncia, costo."
+    },
+    {
+      "cardId": "mi_1558",
+      "cardType": "flippable",
+      "sideA": "Sh, Bash y Zsh son tipos de shell, igual que Gmail y Outlook son tipos de programa de correo.",
+      "sideB": [
+        {
+          "text": "Sh, Bash, and Zsh are types of shell, just like Gmail and Outlook are types of email program.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1558_sideB_0.mp3"
+        },
+        {
+          "text": "Sh, Bash, and Zsh are types of shells, just like Gmail and Outlook are types of email programs.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1558_sideB_1.mp3"
+        },
+        {
+          "text": "Sh, Bash, and Zsh are kinds of shell, the same way Gmail and Outlook are kinds of email program.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1558_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1559",
+      "cardType": "flippable",
+      "sideA": "Cada shell entiende comandos con su propia sintaxis.",
+      "sideB": [
+        {
+          "text": "Each shell understands commands using its own syntax.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1559_sideB_0.mp3"
+        },
+        {
+          "text": "Each shell understands commands with its own syntax.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1559_sideB_1.mp3"
+        },
+        {
+          "text": "Every shell understands commands using its own syntax.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1559_sideB_2.mp3"
+        }
+      ],
+      "note": "~Each shell understands commands using its own syntaxis~ is incorrect because the English word is [syntax], not 'syntaxis'."
+    },
+    {
+      "cardId": "mi_1560",
+      "cardType": "flippable",
+      "sideA": "La extensión .sh no define qué shell ejecuta el archivo.",
+      "sideB": [
+        {
+          "text": "The .sh extension doesn't define which shell runs the file.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1560_sideB_0.mp3"
+        },
+        {
+          "text": "The .sh extension doesn't determine which shell runs the file.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1560_sideB_1.mp3"
+        },
+        {
+          "text": "The .sh extension does not define what shell runs the file.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1560_sideB_2.mp3"
+        },
+        {
+          "text": "The .sh extension does not define what type of shell runs the file.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1560_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1561",
+      "cardType": "flippable",
+      "sideA": "En Windows no existe shebang; ahí la extensión sí es la regla fija.",
+      "sideB": [
+        {
+          "text": "Windows has no shebang; there the extension itself is the fixed rule.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1561_sideB_0.mp3"
+        },
+        {
+          "text": "Windows doesn't have a shebang; there, the extension is the fixed rule.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1561_sideB_1.mp3"
+        },
+        {
+          "text": "On Windows there's no shebang; there the extension is indeed the fixed rule.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1561_sideB_2.mp3"
+        },
+        {
+          "text": "Windows doesn't have a shebang; there, the extension is required.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1561_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1562",
+      "cardType": "flippable",
+      "sideA": "WSL permite que Windows corra shells reales de Linux como Bash.",
+      "sideB": [
+        {
+          "text": "WSL lets Windows run real Linux shells like Bash.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1562_sideB_0.mp3"
+        },
+        {
+          "text": "WSL allows Windows to run real Linux shells like Bash.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1562_sideB_1.mp3"
+        },
+        {
+          "text": "WSL lets Windows run actual Linux shells such as Bash.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1562_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1563",
+      "cardType": "flippable",
+      "sideA": "Un shell es la interfaz entre el usuario y el sistema operativo.",
+      "sideB": [
+        {
+          "text": "A shell is the interface between the user and the operating system.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1563_sideB_0.mp3"
+        },
+        {
+          "text": "A shell acts as the interface between the user and the operating system.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1563_sideB_1.mp3"
+        },
+        {
+          "text": "A shell is an interface between the user and the operating system.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1563_sideB_2.mp3"
+        }
+      ],
+      "note": "\n\n~A shell is the interface between the user and the operation system~ is not valid because the correct standard terminology is [operating system]."
+    },
+    {
+      "cardId": "mi_1564",
+      "cardType": "flippable",
+      "sideA": "La carpeta padre contiene varias subcarpetas.",
+      "sideB": [
+        {
+          "text": "The parent folder contains several subfolders.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1564_sideB_0.mp3"
+        },
+        {
+          "text": "The parent folder has multiple subfolders.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1564_sideB_1.mp3"
+        },
+        {
+          "text": "The parent folder contains a few subfolders.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1564_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1565",
+      "cardType": "flippable",
+      "sideA": "La carpeta padre contiene algunos archivos solitarios y otras subcarpetas con más archivos.",
+      "sideB": [
+        {
+          "text": "The parent folder contains some standalone files and other subfolders with more files.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1565_sideB_0.mp3"
+        },
+        {
+          "text": "The parent folder contains a few standalone files and other subfolders with additional files.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1565_sideB_1.mp3"
+        },
+        {
+          "text": "The parent folder has some standalone files and other subdirectories with more files.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1565_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1566",
+      "cardType": "flippable",
+      "sideA": "Estoy hablando acerca de los archivos que están dentro de la carpeta padre.",
+      "sideB": [
+        {
+          "text": "I am talking about the files that are inside the parent folder.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1566_sideB_0.mp3"
+        },
+        {
+          "text": "I'm talking about the files inside the parent folder.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1566_sideB_1.mp3"
+        },
+        {
+          "text": "I am speaking about the files contained within the parent folder.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1566_sideB_2.mp3"
+        },
+        {
+          "text": "I am talking about the files that are inside its parent folder.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1566_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1567",
+      "cardType": "flippable",
+      "sideA": "La carpeta raíz es la carpeta padre de todos los demás.",
+      "sideB": [
+        {
+          "text": "The root folder is the parent folder of all the others.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1567_sideB_0.mp3"
+        },
+        {
+          "text": "The root directory is the parent folder of all the rest.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1567_sideB_1.mp3"
+        },
+        {
+          "text": "The root folder is the parent of all other folders.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1567_sideB_2.mp3"
+        },
+        {
+          "text": "The root folder is the parent folder to all the others.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1567_sideB_3.mp3"
+        }
+      ],
+      "note": "~The root folder is the parent folder for all the others.~ Use the preposition [of] or [to] to express this relationship, not 'for'."
+    },
+    {
+      "cardId": "mi_1568",
+      "cardType": "flippable",
+      "sideA": "Debes navegar usando sintaxis de doble punto.",
+      "sideB": [
+        {
+          "text": "You must navigate using double dot syntax.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1568_sideB_0.mp3"
+        },
+        {
+          "text": "You have to navigate using the double dot syntax.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1568_sideB_1.mp3"
+        },
+        {
+          "text": "You need to navigate by using double dot syntax.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1568_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1569",
+      "cardType": "flippable",
+      "sideA": "Es un archivo autosuficiente, o sea no necesita a otros para funcionar.",
+      "sideB": [
+        {
+          "text": "It is a standalone file, that is, it doesn't need others to function.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1569_sideB_0.mp3"
+        },
+        {
+          "text": "It's a standalone file, meaning it doesn't require others to work.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1569_sideB_1.mp3"
+        },
+        {
+          "text": "It is a standalone file, so it doesn't need other files to function.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1569_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1570",
+      "cardType": "flippable",
+      "sideA": "Necesitamos un archivo autosuficiente, o sea que no dependa de otros.",
+      "sideB": [
+        {
+          "text": "We need a standalone file, that is, one that doesn't depend on others.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1570_sideB_0.mp3"
+        },
+        {
+          "text": "We need a standalone file, meaning it shouldn't depend on others.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1570_sideB_1.mp3"
+        },
+        {
+          "text": "We require a standalone file that does not depend on anything else.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1570_sideB_2.mp3"
+        },
+        {
+          "text": "We need a standalone file, I mean, it doesn't depend on others.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1570_sideB_3.mp3"
+        }
+      ],
+      "note": "~We need a standalone file, meaning it shouldn't depend from others.~ The verb [depend] is always followed by the preposition [on], never 'from'."
+    },
+    {
+      "cardId": "mi_1571",
+      "cardType": "flippable",
+      "sideA": "Sorry, me cuesta hacer esto.",
+      "sideB": [
+        {
+          "text": "Sorry, I find it hard to do this.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1571_sideB_0.mp3"
+        },
+        {
+          "text": "Sorry, it's hard for me to do this.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1571_sideB_1.mp3"
+        },
+        {
+          "text": "Sorry, I struggle to do this.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1571_sideB_2.mp3"
+        }
+      ],
+      "note": "~Sorry, I'm not used doing this.~ The correct structure is [used to] + [-ing] verb (e.g., 'used to doing'). However, this translates to 'no estoy acostumbrado', not 'me cuesta'.\n\n~Sorry, it's hard to me to do this.~ When expressing difficulty for someone, use the preposition [for] (e.g., 'hard for me'), not 'to'."
+    },
+    {
+      "cardId": "mi_1572",
+      "cardType": "flippable",
+      "sideA": "Ponle una coma en el comando.",
+      "sideB": [
+        {
+          "text": "Put a comma in the command.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1572_sideB_0.mp3"
+        },
+        {
+          "text": "Add a comma to the command.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1572_sideB_1.mp3"
+        },
+        {
+          "text": "Place a comma in the command.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1572_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1573",
+      "cardType": "flippable",
+      "sideA": "Anki es un proyecto de código abierto.",
+      "sideB": [
+        {
+          "text": "Anki is an open-source project.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1573_sideB_0.mp3"
+        },
+        {
+          "text": "Anki is an open source project.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1573_sideB_1.mp3"
+        },
+        {
+          "text": "Anki is a project that is open-source.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1573_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1574",
+      "cardType": "flippable",
+      "sideA": "Linux es sistema operativo de código abierto.",
+      "sideB": [
+        {
+          "text": "Linux is an open-source operating system.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1574_sideB_0.mp3"
+        },
+        {
+          "text": "Linux is an open source operating system.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1574_sideB_1.mp3"
+        },
+        {
+          "text": "The Linux operating system is open-source.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1574_sideB_2.mp3"
+        }
+      ],
+      "note": null
     }
   ]
 }
