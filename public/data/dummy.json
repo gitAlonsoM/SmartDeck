@@ -179,6 +179,186 @@
         }
       ],
       "note": null
+    },
+    {
+      "cardId": "dummy_330",
+      "cardType": "flippable",
+      "sideA": "Tenemos un formulario en blanco que rellenar, cada descripción del formulario debe ser rellenada en el espacio en blanco.",
+      "sideB": [
+        {
+          "text": "We have a blank form to fill out, each form description must be filled in the blank space.",
+          "audioSrc": "public/data/audio/dummy/dummy_330_sideB_0.mp3"
+        },
+        {
+          "text": "We have a blank form to fill in; each description on the form needs to be filled in the blank space.",
+          "audioSrc": "public/data/audio/dummy/dummy_330_sideB_1.mp3"
+        },
+        {
+          "text": "There's a blank form we need to fill out, every form description must be completed in the blank space.",
+          "audioSrc": "public/data/audio/dummy/dummy_330_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_331",
+      "cardType": "flippable",
+      "sideA": "La dirección de envío es la ubicación física donde se entrega el paquete.",
+      "sideB": [
+        {
+          "text": "Shipping Address is the physical location where the package is delivered.",
+          "audioSrc": "public/data/audio/dummy/dummy_331_sideB_0.mp3"
+        },
+        {
+          "text": "The shipping address is the physical location where the package is delivered.",
+          "audioSrc": "public/data/audio/dummy/dummy_331_sideB_1.mp3"
+        },
+        {
+          "text": "The shipping address is the physical location where the package gets delivered.",
+          "audioSrc": "public/data/audio/dummy/dummy_331_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_332",
+      "cardType": "flippable",
+      "sideA": "La dirección de facturación es la dirección oficial vinculada a la tarjeta de crédito.",
+      "sideB": [
+        {
+          "text": "Billing Address is the official address linked to the credit card.",
+          "audioSrc": "public/data/audio/dummy/dummy_332_sideB_0.mp3"
+        },
+        {
+          "text": "The billing address is the official address linked to the credit card.",
+          "audioSrc": "public/data/audio/dummy/dummy_332_sideB_1.mp3"
+        },
+        {
+          "text": "The billing address is the official address associated with the credit card.",
+          "audioSrc": "public/data/audio/dummy/dummy_332_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_333",
+      "cardType": "flippable",
+      "sideA": "Lamentablemente, se dañó el código y no podemos probarlo ahora mismo.",
+      "sideB": [
+        {
+          "text": "Unfortunately, the code is broken and we can't test it right now.",
+          "audioSrc": "public/data/audio/dummy/dummy_333_sideB_0.mp3"
+        },
+        {
+          "text": "Sadly, the code got damaged and we cannot test it at this moment.",
+          "audioSrc": "public/data/audio/dummy/dummy_333_sideB_1.mp3"
+        },
+        {
+          "text": "Unfortunately, the code broke and we can't test it right now.",
+          "audioSrc": "public/data/audio/dummy/dummy_333_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_334",
+      "cardType": "flippable",
+      "sideA": "HTML usa tags para su contenido. HTML usa brackets para delimitar los tags.",
+      "sideB": [
+        {
+          "text": "HTML uses tags for its content. HTML uses brackets to delimit tags.",
+          "audioSrc": "public/data/audio/dummy/dummy_334_sideB_0.mp3"
+        },
+        {
+          "text": "HTML uses tags for its content. HTML uses brackets to define the tags.",
+          "audioSrc": "public/data/audio/dummy/dummy_334_sideB_1.mp3"
+        },
+        {
+          "text": "HTML utilizes tags for its content. HTML uses brackets to delimit the tags.",
+          "audioSrc": "public/data/audio/dummy/dummy_334_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_335",
+      "cardType": "flippable",
+      "sideA": "Pero solo para estar seguros, mejor hacerlo.",
+      "sideB": [
+        {
+          "text": "But just to be sure, it's better to do it.",
+          "audioSrc": "public/data/audio/dummy/dummy_335_sideB_0.mp3"
+        },
+        {
+          "text": "But just to be on the safe side, we better do it.",
+          "audioSrc": "public/data/audio/dummy/dummy_335_sideB_1.mp3"
+        },
+        {
+          "text": "But just to be safe, it's better to do it.",
+          "audioSrc": "public/data/audio/dummy/dummy_335_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_336",
+      "cardType": "flippable",
+      "sideA": "Hay dependencias lógicas. O sea, la aplicación depende de ciertos procedimientos.",
+      "sideB": [
+        {
+          "text": "There are logical dependencies. I mean, the app relies on specific procedures.",
+          "audioSrc": "public/data/audio/dummy/dummy_336_sideB_0.mp3"
+        },
+        {
+          "text": "There are logical dependencies. That is, the application depends on certain procedures.",
+          "audioSrc": "public/data/audio/dummy/dummy_336_sideB_1.mp3"
+        },
+        {
+          "text": "There are logical dependencies. Meaning, the app relies on certain procedures.",
+          "audioSrc": "public/data/audio/dummy/dummy_336_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_337",
+      "cardType": "flippable",
+      "sideA": "Hay una limitación física, no puedes correr la app de iOS en Android.",
+      "sideB": [
+        {
+          "text": "There's a technical limitation. You can't run the iOS app on Android.",
+          "audioSrc": "public/data/audio/dummy/dummy_337_sideB_0.mp3"
+        },
+        {
+          "text": "There is a physical limitation, you cannot run the iOS app on Android.",
+          "audioSrc": "public/data/audio/dummy/dummy_337_sideB_1.mp3"
+        },
+        {
+          "text": "There's a hardware limitation, you can't run the iOS app on Android.",
+          "audioSrc": "public/data/audio/dummy/dummy_337_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_338",
+      "cardType": "flippable",
+      "sideA": "No puedes insertar esas filas aún, no hay tabla creada, es una limitación física.",
+      "sideB": [
+        {
+          "text": "You can't insert those rows yet because the table hasn't been created. It's a hard blocker.",
+          "audioSrc": "public/data/audio/dummy/dummy_338_sideB_0.mp3"
+        },
+        {
+          "text": "You cannot insert those rows yet, there is no table created, it is a physical limitation.",
+          "audioSrc": "public/data/audio/dummy/dummy_338_sideB_1.mp3"
+        },
+        {
+          "text": "You can't insert those rows just yet; no table has been created, it's a hard blocker.",
+          "audioSrc": "public/data/audio/dummy/dummy_338_sideB_2.mp3"
+        }
+      ],
+      "note": null
     }
   ]
 }
