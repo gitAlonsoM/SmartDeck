@@ -236,9 +236,13 @@
         {
           "text": "The billing address is the official address associated with the credit card.",
           "audioSrc": "public/data/audio/dummy/dummy_332_sideB_2.mp3"
+        },
+        {
+          "text": "Billing Address is the official address related to the credit card.",
+          "audioSrc": "public/data/audio/dummy/dummy_332_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "\n\n~Invoice Address is the official address linked to the credit card.~ is not valid because [Billing address] is the standard term used for credit cards, whereas an invoice address is typically used for B2B billing."
     },
     {
       "cardId": "dummy_333",
@@ -378,7 +382,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_339_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "\n\n~Sorry, I didn't watch your message.~ is not valid because the verb watch is used for moving images like videos or screens; for text, you must use [see] or [read]."
     },
     {
       "cardId": "dummy_340",
@@ -418,7 +422,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_341_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "\n\n~And a code that distinguishes which operating system applies.~ is not valid because programming [code] is uncountable and does not take 'a', and the verb apply requires the preposition [to] at the end."
     },
     {
       "cardId": "dummy_342",
@@ -438,7 +442,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_342_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:227]**\n\n"
     },
     {
       "cardId": "dummy_343",
@@ -496,9 +500,13 @@
         {
           "text": "It caught my eye, which is why I told him.",
           "audioSrc": "public/data/audio/dummy/dummy_345_sideB_2.mp3"
+        },
+        {
+          "text": "It caught my attention, that's why I told him.",
+          "audioSrc": "public/data/audio/dummy/dummy_345_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "\n\n~It called my attention, that's why I let him know.~ is not valid because 'called my attention' is a direct translation from Spanish; the natural English idiom is [caught my attention] or [drew my attention]."
     },
     {
       "cardId": "dummy_346",
@@ -558,7 +566,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_348_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "\n\n~It wires the button to the event.~ is not valid because adding 'It' makes the sentence a description, but the original text is an instruction or command that requires the imperative form [Wire]."
     },
     {
       "cardId": "dummy_349",
@@ -578,7 +586,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_349_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "\n\n~Wire the button with the event.~ is not valid because the verb [wire] in this context pairs with the preposition [to], not 'with'."
     },
     {
       "cardId": "dummy_350",
@@ -618,7 +626,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_351_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "\n\n~Let's make it to work.~ is not valid because the causative verb [make] must be followed directly by the base verb without 'to'."
     },
     {
       "cardId": "dummy_352",
@@ -638,7 +646,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_352_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "\n\n~They said the environment would be cloned, but it didn't yet.~ is not valid because the first clause uses the passive voice 'be cloned', so the second clause requires the matching auxiliary [hasn't been] or [wasn't], not 'didn't'."
     },
     {
       "cardId": "dummy_353",
@@ -658,7 +666,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_353_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "\n\n~Once the ambient is cloned, we could replicate the issue.~ is not valid because 'ambient' refers to lighting or sound; the correct term for a software setup is [environment]."
     },
     {
       "cardId": "dummy_354",
@@ -676,6 +684,10 @@
         {
           "text": "We know about that bug, but we couldn't replicate it yet.",
           "audioSrc": "public/data/audio/dummy/dummy_354_sideB_2.mp3"
+        },
+        {
+          "text": "We are aware of that bug, but we weren't able to replicate it yet.",
+          "audioSrc": "public/data/audio/dummy/dummy_354_sideB_3.mp3"
         }
       ],
       "note": null
