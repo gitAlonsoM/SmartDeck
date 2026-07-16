@@ -198,7 +198,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_330_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "\n\n~We have a white form to fill out, each form description must be filled in the white space.~ is not valid because 'white' refers to the color. For a form or space without written text, you must use [blank]."
     },
     {
       "cardId": "dummy_331",
@@ -216,6 +216,10 @@
         {
           "text": "The shipping address is the physical location where the package gets delivered.",
           "audioSrc": "public/data/audio/dummy/dummy_331_sideB_2.mp3"
+        },
+        {
+          "text": "Delivery Address is the physical location where the package is delivered.",
+          "audioSrc": "public/data/audio/dummy/dummy_331_sideB_3.mp3"
         }
       ],
       "note": null
@@ -380,6 +384,10 @@
         {
           "text": "Sorry, I just saw this.",
           "audioSrc": "public/data/audio/dummy/dummy_339_sideB_2.mp3"
+        },
+        {
+          "text": "Sorry, I missed the message.",
+          "audioSrc": "public/data/audio/dummy/dummy_339_sideB_3.mp3"
         }
       ],
       "note": "\n\n~Sorry, I didn't watch your message.~ is not valid because the verb watch is used for moving images like videos or screens; for text, you must use [see] or [read]."
@@ -440,9 +448,13 @@
         {
           "text": "You'll grow accustomed to it over time.",
           "audioSrc": "public/data/audio/dummy/dummy_342_sideB_2.mp3"
+        },
+        {
+          "text": "Over time, you'll get used to it.",
+          "audioSrc": "public/data/audio/dummy/dummy_342_sideB_3.mp3"
         }
       ],
-      "note": "**[er:227]**\n\n"
+      "note": "**[er:227]**\n\n~No the time, you'll get used to it.~ is not valid because 'no the time' is not a recognized English phrase for 'con el tiempo'. Use [Over time] or [With time] instead."
     },
     {
       "cardId": "dummy_343",
@@ -462,7 +474,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_343_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:15]**\n\n"
     },
     {
       "cardId": "dummy_344",
@@ -624,6 +636,10 @@
         {
           "text": "Let's make it work.",
           "audioSrc": "public/data/audio/dummy/dummy_351_sideB_2.mp3"
+        },
+        {
+          "text": "Let's make this work.",
+          "audioSrc": "public/data/audio/dummy/dummy_351_sideB_3.mp3"
         }
       ],
       "note": "\n\n~Let's make it to work.~ is not valid because the causative verb [make] must be followed directly by the base verb without 'to'."
@@ -646,7 +662,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_352_sideB_2.mp3"
         }
       ],
-      "note": "\n\n~They said the environment would be cloned, but it didn't yet.~ is not valid because the first clause uses the passive voice 'be cloned', so the second clause requires the matching auxiliary [hasn't been] or [wasn't], not 'didn't'."
+      "note": "**[er:162]**\n\n~They said the environment would be cloned, but it didn't yet.~ is not valid because the first clause uses the passive voice 'be cloned', so the second clause requires the matching auxiliary [hasn't been] or [wasn't], not 'didn't'."
     },
     {
       "cardId": "dummy_353",
@@ -690,7 +706,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_354_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "\n\n~We are aware about that bug, but we haven't been able to replicate it yet.~ is not valid because the adjective 'aware' must always be followed by the preposition [of], not 'about'."
     },
     {
       "cardId": "dummy_355",
