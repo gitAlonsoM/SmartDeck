@@ -1,0 +1,95 @@
+<!-- src\components\SrsSettingsModal\srs-settings-modal.html -->
+<div id="srs-settings-overlay" class="fixed inset-0 bg-black bg-opacity-60 z-50 flex items-center justify-center p-4 hidden backdrop-blur-sm transition-opacity duration-300 opacity-0">
+    <div id="srs-settings-container" class="bg-gray-800 border border-gray-700 rounded-xl shadow-2xl w-full max-w-md max-h-[90vh] overflow-y-auto transform transition-all duration-300 scale-95 opacity-0">
+
+        <!-- Header -->
+        <div class="flex items-center justify-between p-6 border-b border-gray-700">
+            <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                <i class="fas fa-brain text-indigo-400"></i> Spaced Repetition Settings
+            </h3>
+            <button id="srs-settings-close" class="text-gray-400 hover:text-white transition-colors" title="Close">
+                <i class="fas fa-times text-lg"></i>
+            </button>
+        </div>
+
+        <!-- Body -->
+        <div class="p-6 space-y-6">
+
+            <!-- New cards per day -->
+            <div>
+                <label for="srs-new-per-day" class="block text-sm font-semibold text-gray-200 mb-1">New cards per day</label>
+                <p class="text-xs text-gray-400 mb-2">How many brand-new cards to introduce each day.</p>
+                <input id="srs-new-per-day" type="number" min="0" max="9999" step="1"
+                    class="w-full bg-gray-900 border border-gray-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+            </div>
+
+            <!-- Max reviews per day -->
+            <div>
+                <label for="srs-max-reviews" class="block text-sm font-semibold text-gray-200 mb-1">Maximum reviews per day</label>
+                <p class="text-xs text-gray-400 mb-2">A daily cap so due reviews never pile up into an overwhelming session.</p>
+                <input id="srs-max-reviews" type="number" min="0" max="99999" step="1"
+                    class="w-full bg-gray-900 border border-gray-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+            </div>
+
+            <!-- Difficulty -->
+            <div>
+                <label class="block text-sm font-semibold text-gray-200 mb-1">Difficulty</label>
+                <p class="text-xs text-gray-400 mb-2">Higher difficulty = shorter gaps = more reviews. Lower = longer gaps = fewer reviews.</p>
+                <div id="srs-difficulty" class="grid grid-cols-3 gap-2">
+                    <button type="button" data-value="low" class="srs-diff-btn px-3 py-2 rounded-lg text-sm font-semibold border border-gray-600 text-gray-300 hover:border-indigo-400 transition-colors">Low</button>
+                    <button type="button" data-value="normal" class="srs-diff-btn px-3 py-2 rounded-lg text-sm font-semibold border border-gray-600 text-gray-300 hover:border-indigo-400 transition-colors">Normal</button>
+                    <button type="button" data-value="high" class="srs-diff-btn px-3 py-2 rounded-lg text-sm font-semibold border border-gray-600 text-gray-300 hover:border-indigo-400 transition-colors">High</button>
+                </div>
+            </div>
+
+            <!-- Info toggle -->
+            <div>
+                <button id="srs-info-toggle" type="button" class="text-sm font-medium text-indigo-400 hover:text-indigo-300 flex items-center gap-2">
+                    <i class="fas fa-circle-info"></i> How does spaced repetition work?
+                </button>
+                <div id="srs-info-panel" class="hidden mt-3 p-4 bg-gray-900/70 border border-gray-700 rounded-lg text-sm text-gray-300 leading-relaxed space-y-3">
+                    <p><strong class="text-white">The idea.</strong> Instead of studying every card every time, each card comes back right before you are likely to forget it. Cards you know well are shown less and less often; cards you struggle with come back sooner. This is the most efficient way to move things into long-term memory.</p>
+                    <p><strong class="text-white">New cards per day.</strong> Your daily intake of fresh material. Learning a card also creates future reviews, so a bigger number means more reviews building up over time. If you ever feel overwhelmed, lower this for a while and focus on your reviews, then raise it again later.</p>
+                    <p><strong class="text-white">Maximum reviews per day.</strong> A safety cap. On large decks, failed cards can stack up into hundreds of due reviews. This limit keeps each day manageable — any extra due cards simply wait for the next day.</p>
+                    <p><strong class="text-white">Difficulty.</strong> Controls how fast the gaps between reviews grow. <strong class="text-white">High</strong> grows gaps slowly, so you review more often (safer, more work). <strong class="text-white">Low</strong> grows gaps quickly, so you review less often (faster, riskier). <strong class="text-white">Normal</strong> is a balanced default.</p>
+                    <p><strong class="text-white">A day ends at midnight.</strong> "Tomorrow" means the next calendar day at 00:00 on your device — not 24 hours after you finish. Your daily New and Review counts also reset at midnight.</p>
+
+                    <!-- Deck-type specific grading note (only one is shown, based on the deck) -->
+                    <div id="srs-info-flippable" class="hidden pt-2 border-t border-gray-700 space-y-1.5">
+                        <p><strong class="text-white">Grading this deck (flip cards).</strong> After flipping, you rate how it went:</p>
+                        <p><strong class="text-rose-400">Again</strong> — you forgot. The card comes back within a few minutes this same session; if it was already learned, its interval shrinks and its ease drops a little.</p>
+                        <p><strong class="text-emerald-400">Good</strong> — you recalled it. A new card moves toward graduating; a learned card's interval grows by its ease factor.</p>
+                        <p><strong class="text-sky-400">Easy</strong> — it was effortless. The card jumps to a noticeably longer interval than Good.</p>
+                        <p class="text-gray-400">Your <strong class="text-white">Difficulty</strong> setting then scales all of these gaps: High = shorter gaps (more reviews), Low = longer gaps (fewer reviews).</p>
+                    </div>
+                    <div id="srs-info-choice" class="hidden pt-2 border-t border-gray-700 space-y-1.5">
+                        <p><strong class="text-white">Grading this deck (multiple choice).</strong> There are no self-rating buttons — your answer is graded for you:</p>
+                        <p><strong class="text-emerald-400">Correct answer</strong> counts as <em>Good</em>: the card's interval grows and it comes back further in the future.</p>
+                        <p><strong class="text-rose-400">Wrong answer</strong> counts as <em>Again</em>: the card resets and comes back within a few minutes this same session, and (if it was already learned) its interval shrinks.</p>
+                        <p class="text-gray-400">Your <strong class="text-white">Difficulty</strong> setting then scales the gaps between reviews: High = shorter gaps (more reviews), Low = longer gaps (fewer reviews).</p>
+                    </div>
+
+                    <!-- FAQ -->
+                    <div class="pt-2 border-t border-gray-700 space-y-2.5">
+                        <p class="text-white font-semibold">Frequently asked questions</p>
+                        <p><strong class="text-gray-100">What if I miss a day?</strong><br>Nothing bad happens. The reviews that were due simply wait for you — no penalty, no lost progress. Next time you study they'll be there (up to your daily review cap).</p>
+                        <p><strong class="text-gray-100">Why do I only see a few cards when the deck is huge?</strong><br>That's the whole point. You learn a few new cards a day and each one returns only when it's due. This spreads the work out and beats cramming.</p>
+                        <p><strong class="text-gray-100">A new card keeps reappearing in the same session — is that broken?</strong><br>No. A brand-new card must be answered correctly a couple of times, a few minutes apart, before it "graduates" to a day-level schedule. That short repetition helps it stick.</p>
+                        <p><strong class="text-gray-100">Can I keep studying after "Done for today"?</strong><br>Yes — use <em>Extra study</em>. It gives you a batch of random cards you've already seen, purely for practice. It never changes your schedule or tomorrow's reviews.</p>
+                        <p><strong class="text-gray-100">What do the top numbers mean?</strong><br><em>New</em> / <em>Learning</em> / <em>To Review</em> are what's waiting for you today; <em>Total</em> is how many cards the deck has in all.</p>
+                        <p><strong class="text-gray-100">Does my progress sync between phone and computer?</strong><br>No. It's saved locally in each browser, so your phone and your computer track progress independently.</p>
+                        <p><strong class="text-gray-100">Will I ever fully finish a deck?</strong><br>Not "forever" — that's how long-term memory works. But once cards are scheduled far into the future, your daily load becomes very small.</p>
+                    </div>
+
+                    <p class="text-gray-400 pt-2 border-t border-gray-700">You can change these settings any time. Changes apply going forward and never erase your progress.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="p-6 border-t border-gray-700 flex justify-end gap-3">
+            <button id="srs-settings-cancel" class="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white text-sm font-medium rounded-lg transition-colors">Cancel</button>
+            <button id="srs-settings-save" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium rounded-lg transition-colors">Save</button>
+        </div>
+    </div>
+</div>

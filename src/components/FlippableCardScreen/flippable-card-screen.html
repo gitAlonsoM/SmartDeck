@@ -56,13 +56,27 @@
   <footer class="p-4 border-t border-gray-700 bg-gray-900 dark:bg-gray-800 flex-shrink-0">
     <div class="max-w-2xl mx-auto">
       <button id="flip-card-btn" class="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors">Show Answer</button>
-      
-      <div id="assessment-buttons" class="hidden grid grid-cols-2 gap-3">
+
+      <!-- Simple mode: two-way self assessment -->
+      <div id="assessment-buttons-simple" class="hidden grid grid-cols-2 gap-3">
         <button id="review-again-btn" class="w-full bg-amber-500 text-white font-semibold text-sm py-2 px-4 rounded-lg hover:bg-amber-600 transition-colors">
           <i class="fas fa-sync-alt mr-2"></i> Review Again
         </button>
         <button id="knew-it-btn" class="w-full bg-emerald-500 text-white font-semibold text-sm py-2 px-4 rounded-lg hover:bg-emerald-600 transition-colors">
           I Knew It <i class="fas fa-check ml-2"></i>
+        </button>
+      </div>
+
+      <!-- Spaced repetition mode: three-way grading -->
+      <div id="assessment-buttons-spaced" class="hidden grid grid-cols-3 gap-2">
+        <button id="grade-again-btn" class="w-full bg-rose-500 text-white font-semibold text-sm py-2 px-3 rounded-lg hover:bg-rose-600 transition-colors">
+          <i class="fas fa-rotate-left mr-1"></i> Again
+        </button>
+        <button id="grade-good-btn" class="w-full bg-emerald-500 text-white font-semibold text-sm py-2 px-3 rounded-lg hover:bg-emerald-600 transition-colors">
+          <i class="fas fa-check mr-1"></i> Good
+        </button>
+        <button id="grade-easy-btn" class="w-full bg-sky-500 text-white font-semibold text-sm py-2 px-3 rounded-lg hover:bg-sky-600 transition-colors">
+          <i class="fas fa-forward mr-1"></i> Easy
         </button>
       </div>
     </div>

@@ -11,7 +11,7 @@ class DeckDetailScreen {
      * @param {function} onClearAllImprovements Callback to force clear all improvements.
      * @param {function} onUnmarkModalImprovement Callback to remove modal improvement.
      */
-    constructor(container, onStartQuiz, onGoBack, onReset, onUnignoreCard, onUnmarkCardForImprovement, onExportForImprovement, onDeleteDeck, onClearAllImprovements, onUnmarkModalImprovement) {
+    constructor(container, onStartQuiz, onGoBack, onReset, onUnignoreCard, onUnmarkCardForImprovement, onExportForImprovement, onDeleteDeck, onClearAllImprovements, onUnmarkModalImprovement, onToggleMode, onOpenSrsSettings, onStartExtraStudy) {
         this.container = container;
         this.onStartQuiz = onStartQuiz;
         this.onGoBack = onGoBack;
@@ -20,8 +20,14 @@ class DeckDetailScreen {
         this.onUnmarkCardForImprovement = onUnmarkCardForImprovement;
         this.onExportForImprovement = onExportForImprovement;
         this.onDeleteDeck = onDeleteDeck;
-        this.onClearAllImprovements = onClearAllImprovements; 
+        this.onClearAllImprovements = onClearAllImprovements;
         this.onUnmarkModalImprovement = onUnmarkModalImprovement;
+        // Spaced-repetition callbacks
+        this.onToggleMode = onToggleMode;
+        this.onOpenSrsSettings = onOpenSrsSettings;
+        this.onStartExtraStudy = onStartExtraStudy;
+        this.mode = 'simple';
+        this.srsStats = null;
         this.deck = null;
         
         // Initialize the ModernModal
@@ -37,28 +43,117 @@ class DeckDetailScreen {
      * @param {object} improvementData The object of cards marked for improvement.
      * @param {object} modalImprovementData The object of modals marked for improvement.
      */
-    async render(deck, progressData, improvementData, modalImprovementData) {
-        console.log("DEBUG: [DeckDetailScreen] render -> Rendering details for deck:", deck.name);
+    async render(deck, progressData, improvementData, modalImprovementData, mode = 'simple', srsStats = null, srsSettings = null) {
+        console.log("DEBUG: [DeckDetailScreen] render -> Rendering details for deck:", deck.name, "mode:", mode);
         this.deck = deck;
+        this.mode = mode;
+        this.srsStats = srsStats;
+        this.srsSettings = srsSettings;
 
         // Load the main component HTML only if it's not already there
         if (!this.container.querySelector('#deck-detail-screen')) {
             const html = await ComponentLoader.loadHTML('/src/components/DeckDetailScreen/deck-detail-screen.html');
             this.container.innerHTML = html;
-            
+
             await this.modernModal.init(this.container);
             this.setupEventListeners(); // Setup listeners only once after initial render
         }
-        
-        // Populate all dynamic sections of the component
-        this._populateDeckInfo(deck, progressData);
-        this._populateProgressStats(deck.cards.length, progressData);
+
+        // Mode toggle is always shown; the rest of the view depends on the mode.
+        this._renderModeToggle(mode);
+
+        if (mode === 'spaced') {
+            this._populateSpacedView(deck, srsStats);
+        } else {
+            this._populateDeckInfo(deck, progressData);
+            this._populateProgressStats(deck.cards.length, progressData);
+        }
+        this._toggleSpacedPanel(mode === 'spaced');
+
         this._populateIgnoredCards(deck.cards, progressData.ignored);
         this._populateImprovementList(deck.cards, improvementData);
         this._populateModalImprovementList(modalImprovementData);
-        
+
         // Check if either list has items to show the export footer
         this._updateExportFooterVisibility(improvementData, modalImprovementData);
+    }
+
+    /**
+     * Renders the Simple | Spaced segmented toggle. Clicking the inactive side
+     * asks App to switch modes (which warns about progress loss first).
+     * @param {'simple'|'spaced'} mode
+     */
+    _renderModeToggle(mode) {
+        const host = document.getElementById('study-mode-toggle');
+        if (!host) return;
+        const base = 'px-4 py-2 text-sm font-semibold transition-colors focus:outline-none';
+        const active = 'bg-indigo-600 text-white';
+        const inactive = 'bg-transparent text-gray-500 dark:text-gray-400 hover:text-indigo-500';
+        host.innerHTML = `
+            <div class="inline-flex rounded-lg border border-indigo-500/50 overflow-hidden">
+                <button data-mode="simple" class="mode-btn ${base} ${mode === 'simple' ? active : inactive}">
+                    <i class="fas fa-list-check mr-1"></i> Simple
+                </button>
+                <button data-mode="spaced" class="mode-btn ${base} ${mode === 'spaced' ? active : inactive}">
+                    <i class="fas fa-brain mr-1"></i> Spaced Repetition
+                </button>
+            </div>`;
+    }
+
+    /** Shows/hides the spaced-only actions panel (settings + extra study). */
+    _toggleSpacedPanel(show) {
+        const panel = document.getElementById('srs-panel');
+        if (panel) panel.classList.toggle('hidden', !show);
+    }
+
+    /**
+     * Populates the deck info, stats and Study button for spaced mode.
+     * @param {object} deck
+     * @param {object} stats From SrsService.computeStats.
+     */
+    _populateSpacedView(deck, stats) {
+        document.getElementById('deck-title').textContent = deck.name;
+        document.getElementById('deck-description').textContent = deck.description;
+
+        const s = stats || { total: deck.cards.length, seen: 0, newToday: 0, learningDue: 0, reviewToday: 0, dueTotal: 0, nextDueMs: null };
+
+        // Stats row: New / Learning / Review due today / Total in deck.
+        // Mobile-first: 4 columns with slightly smaller numbers so nothing overflows on narrow screens.
+        const statsContainer = document.getElementById('progress-stats');
+        statsContainer.innerHTML = `
+            <div class="flex-1 px-1"><p class="text-2xl sm:text-4xl font-bold text-sky-500">${s.newToday}</p><p class="text-xs sm:text-sm text-gray-500 dark:text-gray-400">New</p></div>
+            <div class="flex-1 px-1"><p class="text-2xl sm:text-4xl font-bold text-rose-500">${s.learningDue}</p><p class="text-xs sm:text-sm text-gray-500 dark:text-gray-400">Learning</p></div>
+            <div class="flex-1 px-1"><p class="text-2xl sm:text-4xl font-bold text-amber-500">${s.reviewToday}</p><p class="text-xs sm:text-sm text-gray-500 dark:text-gray-400">To Review</p></div>
+            <div class="flex-1 px-1"><p class="text-2xl sm:text-4xl font-bold text-indigo-400">${s.total}</p><p class="text-xs sm:text-sm text-gray-500 dark:text-gray-400">Total</p></div>
+        `;
+
+        document.getElementById('total-progress-text').textContent =
+            `You've seen ${s.seen} of ${s.total} cards. ${s.dueTotal} due today.`;
+
+        // Start button reflects whether anything is due today.
+        const startBtn = document.getElementById('start-quiz-btn');
+        if (s.dueTotal > 0) {
+            startBtn.textContent = `Study Now (${s.dueTotal})`;
+            startBtn.disabled = false;
+            startBtn.classList.remove('opacity-60', 'cursor-not-allowed');
+        } else {
+            const next = s.nextDueMs ? `Next review: ${this._formatNextDue(s.nextDueMs)}.` : 'No reviews scheduled yet.';
+            startBtn.textContent = 'Done for today ✓';
+            startBtn.disabled = true;
+            startBtn.classList.add('opacity-60', 'cursor-not-allowed');
+            document.getElementById('total-progress-text').textContent =
+                `You're all caught up! ${next} You can still use Extra study below.`;
+        }
+    }
+
+    /** Human-friendly "next due" label from an epoch-ms timestamp. */
+    _formatNextDue(ms) {
+        const now = Date.now();
+        const startToday = new Date(); startToday.setHours(0, 0, 0, 0);
+        const days = Math.ceil((ms - startToday.getTime()) / (24 * 60 * 60 * 1000));
+        if (ms <= now) return 'now';
+        if (days <= 1) return 'tomorrow';
+        return `in ${days} days`;
     }
 
     /**
@@ -77,7 +172,11 @@ class DeckDetailScreen {
         
         const startQuizBtn = document.getElementById('start-quiz-btn');
         const resetDeckBtn = document.getElementById('reset-deck-btn');
-        
+
+        // Re-enable the Start button (it may have been disabled in spaced "done for today" state).
+        startQuizBtn.disabled = false;
+        startQuizBtn.classList.remove('opacity-60', 'cursor-not-allowed');
+
         // Reset dynamic classes to base state first (Using Yellow/Amber values now)
         resetDeckBtn.classList.remove('bg-yellow-100', 'dark:bg-yellow-900/50', 'ring-2', 'ring-yellow-500', 'ring-offset-2');
 
@@ -383,6 +482,31 @@ class DeckDetailScreen {
     setupEventListeners() {
         document.getElementById('start-quiz-btn').addEventListener('click', () => this.onStartQuiz());
         document.getElementById('back-to-decks-btn').addEventListener('click', () => this.onGoBack());
+
+        // --- Spaced repetition controls ---
+        const toggleHost = document.getElementById('study-mode-toggle');
+        if (toggleHost) {
+            toggleHost.addEventListener('click', (event) => {
+                const btn = event.target.closest('.mode-btn');
+                if (!btn) return;
+                const targetMode = btn.dataset.mode;
+                if (targetMode !== this.mode && this.onToggleMode) this.onToggleMode(targetMode);
+            });
+        }
+
+        const srsSettingsBtn = document.getElementById('srs-settings-btn');
+        if (srsSettingsBtn) srsSettingsBtn.addEventListener('click', () => { if (this.onOpenSrsSettings) this.onOpenSrsSettings(); });
+
+        const extraGoBtn = document.getElementById('srs-extra-go-btn');
+        if (extraGoBtn) {
+            extraGoBtn.addEventListener('click', () => {
+                const input = document.getElementById('srs-extra-count');
+                let count = parseInt(input.value, 10);
+                if (isNaN(count) || count < 1) count = 10;
+                count = Math.min(999, count);
+                if (this.onStartExtraStudy) this.onStartExtraStudy(count);
+            });
+        }
 
         document.getElementById('reset-deck-btn').addEventListener('click', () => {
             console.log("DEBUG: [DeckDetailScreen] Reset button clicked. Invoking handleResetClick for Modal.");

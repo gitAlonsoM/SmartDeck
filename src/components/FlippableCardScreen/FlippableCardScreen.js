@@ -13,7 +13,8 @@ class FlippableCardScreen {
         console.log("DEBUG: [FlippableCardScreen] constructor -> Component instantiated.");
     }
 
-       async render(deckId, deckName, card, currentIndex, total, isMarkedForImprovement, repetition = 1) {
+       async render(deckId, deckName, card, currentIndex, total, isMarkedForImprovement, repetition = 1, isSpaced = false) {
+        this.isSpaced = isSpaced;
         console.log("DEBUG: [FlippableCardScreen] render -> Rendering card:", card);
         this.cardData = card;
         this.deckId = deckId;
@@ -295,7 +296,10 @@ populateCard() {
         document.getElementById('flip-card-btn').onclick = () => this.flipCard();
         document.getElementById('knew-it-btn').onclick = () => this.onAssess(true);
         document.getElementById('review-again-btn').onclick = () => this.onAssess(false);
-        document.getElementById('ignore-btn-flippable').onclick = () => this.onIgnore();
+        document.getElementById('grade-again-btn').onclick = () => this.onAssess('again');
+        document.getElementById('grade-good-btn').onclick = () => this.onAssess('good');
+        document.getElementById('grade-easy-btn').onclick = () => this.onAssess('easy');
+        document.getElementById('ignore-btn-flippable').onclick = () => this.onIgnore();
         document.getElementById('mark-improve-btn-flippable').onclick = () => this.onMarkForImprovement(this.cardData.cardId);
         
         this.container.onclick = (event) => {
@@ -380,7 +384,16 @@ populateCard() {
         document.getElementById('card-progress-indicator').classList.add('invisible');
         document.querySelector('.flip-card-inner').classList.add('is-flipped');
         document.getElementById('flip-card-btn').classList.add('hidden');
-        document.getElementById('assessment-buttons').classList.remove('hidden');
+        // Show the grading row that matches the current study mode.
+        const spacedRow = document.getElementById('assessment-buttons-spaced');
+        const simpleRow = document.getElementById('assessment-buttons-simple');
+        if (this.isSpaced) {
+            spacedRow.classList.remove('hidden');
+            simpleRow.classList.add('hidden');
+        } else {
+            simpleRow.classList.remove('hidden');
+            spacedRow.classList.add('hidden');
+        }
     }
 
     resetViewState() {
@@ -391,7 +404,9 @@ populateCard() {
         const flipBtn = document.getElementById('flip-card-btn');
         if (flipBtn) flipBtn.classList.remove('hidden');
 
-        const assessBtns = document.getElementById('assessment-buttons');
-        if (assessBtns) assessBtns.classList.add('hidden');
+        const simpleRow = document.getElementById('assessment-buttons-simple');
+        if (simpleRow) simpleRow.classList.add('hidden');
+        const spacedRow = document.getElementById('assessment-buttons-spaced');
+        if (spacedRow) spacedRow.classList.add('hidden');
     }
 }

@@ -10,6 +10,9 @@
         </button>
     </div>
     
+    <!-- Study mode toggle (Simple vs Spaced Repetition) -->
+    <div id="study-mode-toggle" class="flex justify-center mb-6"></div>
+
     <!-- Stats -->
     <div id="progress-stats" class="flex justify-around items-center my-8 text-center bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
     </div>
@@ -27,6 +30,25 @@
         <button id="start-quiz-btn" class="w-full sm:w-auto px-12 py-4 bg-indigo-600 text-white font-bold rounded-lg shadow-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-900 transition-transform transform hover:scale-105">
             Start Quiz
         </button>
+    </div>
+
+    <!-- Spaced Repetition panel (settings + extra study). Hidden in simple mode. -->
+    <div id="srs-panel" class="hidden max-w-xl mx-auto mt-8 space-y-4">
+        <div class="flex flex-col sm:flex-row justify-center items-stretch gap-4">
+            <button id="srs-settings-btn" class="w-full sm:w-auto px-5 py-2.5 border border-indigo-500 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 rounded-lg text-sm font-semibold transition-colors flex justify-center items-center gap-2">
+                <i class="fas fa-sliders"></i> Spaced Settings
+            </button>
+        </div>
+
+        <!-- Extra study: pure practice, does not affect the schedule -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4">
+            <p class="text-sm font-semibold text-gray-700 dark:text-gray-200 mb-1">Extra study <span class="font-normal text-gray-400">(optional)</span></p>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">Practice a batch of random cards you've already seen. This is pure practice — it does <strong>not</strong> change your schedule or tomorrow's reviews.</p>
+            <div class="flex items-center gap-2">
+                <input id="srs-extra-count" type="number" min="1" max="999" value="10" class="w-24 bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-600 rounded-lg px-3 py-2 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                <button id="srs-extra-go-btn" class="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white text-sm font-semibold rounded-lg transition-colors">Study extra</button>
+            </div>
+        </div>
     </div>
 
     <!-- Secondary Actions -->

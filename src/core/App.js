@@ -30,6 +30,7 @@ class App {
         this.modalImprovementModal = null;
         this.infoModal = null;
         this.glossaryScreen = null;
+        this.srsSettingsModal = null;
 
     }
 
@@ -105,6 +106,13 @@ class App {
             (modalId) => this.handleUnmarkModalImprovement(modalId)
         );
         await this.modalImprovementModal.init();
+
+        // Spaced-repetition settings modal (self-contained overlay appended to body).
+        const srsSettingsContainer = document.createElement('div');
+        srsSettingsContainer.id = 'srs-settings-modal-container';
+        document.body.appendChild(srsSettingsContainer);
+        this.srsSettingsModal = new SrsSettingsModal(srsSettingsContainer);
+        await this.srsSettingsModal.init();
 
         const infoModalContainer = document.getElementById('info-modal-container');
         if (!infoModalContainer) { throw new Error("Fatal Error: InfoModal container not found."); }
@@ -365,7 +373,10 @@ class App {
                         () => this.handleExportForImprovement(),
                         (deckId) => this.handleDeleteDeckRequest(deckId),
                         () => this.handleClearAllImprovements(),
-                        (modalId) => this.handleUnmarkModalImprovement(modalId)
+                        (modalId) => this.handleUnmarkModalImprovement(modalId),
+                        (targetMode) => this.handleToggleStudyMode(targetMode),
+                        () => this.handleOpenSrsSettings(),
+                        (count) => this.handleStartExtraStudy(count)
                     );
                 }
                 const selectedDeck = this.state.allDecks[this.state.currentDeckId];
@@ -373,7 +384,14 @@ class App {
                 const improvementData = StorageService.loadImprovementData(this.state.currentDeckId); // Load improvement data
                 const modalImprovementData = StorageService.loadAllModalImprovements(); // Load modal improvements
 
-                this.deckDetailComponent.render(selectedDeck, deckProgressData, improvementData, modalImprovementData); // Pass all required data
+                const studyMode = StorageService.loadStudyMode(this.state.currentDeckId);
+                let srsStats = null;
+                let srsSettings = null;
+                if (studyMode === 'spaced') {
+                    srsSettings = StorageService.loadSrsSettings(this.state.currentDeckId);
+                    srsStats = SrsService.computeStats(this.state.currentDeckId, selectedDeck.cards, deckProgressData.ignored, srsSettings);
+                }
+                this.deckDetailComponent.render(selectedDeck, deckProgressData, improvementData, modalImprovementData, studyMode, srsStats, srsSettings); // Pass all required data
                 break;
 
             case 'audioChoiceQuiz':
@@ -453,7 +471,7 @@ class App {
 
                     const improvementData = StorageService.loadImprovementData(this.state.currentDeckId);
                     const isMarked = improvementData.hasOwnProperty(currentCard.cardId);
-                    this.flippableCardScreen.render(this.state.currentDeckId, deckName, currentCard, this.state.quizInstance.currentIndex, this.state.quizInstance.currentCards.length, isMarked, this._getCardRepetition(currentCard.cardId)); // Pass deckId
+                    this.flippableCardScreen.render(this.state.currentDeckId, deckName, currentCard, this.state.quizInstance.currentIndex, this.state.quizInstance.currentCards.length, isMarked, this._getCardRepetition(currentCard.cardId), this.state.quizInstance instanceof SrsSession); // Pass deckId
                 } else {
                     this.handleQuizEnd(); // Should not happen if logic is correct, but as a safeguard
                 }
@@ -731,6 +749,9 @@ class App {
 
     // Refactored to prevent premature screen state changes
     async handleStartQuiz() {
+        if (StorageService.loadStudyMode(this.state.currentDeckId) === 'spaced') {
+            return this.handleStartSpacedSession(false);
+        }
         console.log(`DEBUG: [App] handleStartQuiz -> 'Start Quiz' clicked for deck ID: ${this.state.currentDeckId}.`);
         const deck = this.state.allDecks[this.state.currentDeckId];
         if (!deck || deck.cards.length === 0) {
@@ -833,6 +854,11 @@ class App {
      * @param {boolean} knewIt - The user's assessment (true for 'I Knew It', false for 'Review Again').
      */
     handleCardAssessment(knewIt) {
+        if (this.state.quizInstance instanceof SrsSession) {
+            this.state.quizInstance.gradeFlippable(knewIt);
+            if (this.state.quizInstance.isQuizOver()) this.handleSpacedSessionEnd(); else this.render();
+            return;
+        }
         console.log(`DEBUG: [App] handleCardAssessment -> User assessed with knewIt: ${knewIt}`);
         this.state.quizInstance.selfAssess(knewIt);
         this.state.quizInstance.moveToNextCard();
@@ -850,7 +876,8 @@ class App {
         this.state.quizInstance.moveToNextQuestion();
         if (this.state.quizInstance.isQuizOver()) {
             console.log("DEBUG: [App] handleQuizNext -> Quiz is over, handling completion.");
-            this.handleQuizEnd(); // Delegate to the new end-of-quiz handler
+            if (this.state.quizInstance instanceof SrsSession) { return this.handleSpacedSessionEnd(); }
+                this.handleQuizEnd(); // Delegate to the new end-of-quiz handler
         } else {
             this.render();
         }
@@ -921,6 +948,7 @@ class App {
 
     async handleQuizEnd() {
         const instance = this.state.quizInstance;
+        if (instance instanceof SrsSession) return this.handleSpacedSessionEnd();
         const isFlippableQuiz = instance instanceof SpacedRepetitionQuiz;
         console.log(`DEBUG: [App] handleQuizEnd -> Ending round. Is Flippable: ${isFlippableQuiz}. Saving progress.`);
 
@@ -966,13 +994,102 @@ class App {
         const deckId = this.state.currentDeckId;
         // Removed confirm() check because DeckDetailScreen handles it with the Modern Modal
         console.log(`DEBUG: [App] handleResetDeck -> Resetting progress for deck ${deckId}.`);
-        StorageService.clearDeckProgress(deckId);
+        if (StorageService.loadStudyMode(deckId) === 'spaced') { StorageService.clearSrsProgress(deckId); } else { StorageService.clearDeckProgress(deckId); }
         this.render();
     }
 
     /**
      * Handles the click event to show the AI Deck creation modal.
      */
+    handleStartSpacedSession(isExtra = false, extraCount = 0) {
+        const deck = this.state.allDecks[this.state.currentDeckId];
+        if (!deck || deck.cards.length === 0) { alert("This deck has no cards to study!"); return; }
+
+        const deckId = deck.id;
+        const settings = StorageService.loadSrsSettings(deckId);
+        const progress = StorageService.loadDeckProgress(deckId);
+        const ignored = progress.ignored || new Set();
+
+        const queue = isExtra
+            ? SrsService.computeExtraQueue(deckId, deck.cards, ignored, extraCount)
+            : SrsService.computeQueue(deckId, deck.cards, ignored, settings);
+
+        if (!queue || queue.length === 0) {
+            this.notificationModal.show(
+                'Done for Today',
+                "No cards are due right now. Come back later, or use Extra study to keep practicing.",
+                { icon: 'fa-solid fa-mug-hot', color: 'text-emerald-500', bgColor: 'bg-emerald-100 dark:bg-emerald-900' }
+            );
+            return;
+        }
+
+        this.state.quizInstance = new SrsSession(deckId, deck.cards, settings, queue, isExtra);
+        const t = deck.deckType;
+        this.state.currentScreen = t === 'flippable' ? 'flippableQuiz' : (t === 'audioChoice' ? 'audioChoiceQuiz' : 'quiz');
+        console.log(`VERIFY: [App] handleStartSpacedSession -> Started ${isExtra ? 'extra' : 'scheduled'} session with ${queue.length} card(s) on '${this.state.currentScreen}'.`);
+        this.render();
+    }
+
+    handleStartExtraStudy(count) {
+        console.log(`DEBUG: [App] handleStartExtraStudy -> Extra study requested for ${count} card(s).`);
+        this.handleStartSpacedSession(true, count);
+    }
+
+    async handleSpacedSessionEnd() {
+        const instance = this.state.quizInstance;
+        const total = instance ? instance.currentIndex : 0;
+        const isExtra = instance ? instance.isExtra : false;
+        console.log(`DEBUG: [App] handleSpacedSessionEnd -> Session over. Graded ${total} card(s). extra=${isExtra}.`);
+
+        const title = isExtra ? 'Extra Study Done' : 'Session Complete';
+        const message = isExtra
+            ? `You practiced ${total} card(s). This did not affect your schedule.`
+            : `You studied ${total} card(s) this session. Nicely done - come back when more reviews are due!`;
+
+        await this.notificationModal.show(
+            title, message,
+            { icon: 'fa-solid fa-circle-check', color: 'text-emerald-500', bgColor: 'bg-emerald-100 dark:bg-emerald-900' }
+        );
+
+        this.state.quizInstance = null;
+        this.state.currentScreen = 'deckDetail';
+        this.render();
+    }
+
+    handleToggleStudyMode(targetMode) {
+        const deckId = this.state.currentDeckId;
+        const toSpaced = targetMode === 'spaced';
+        const title = toSpaced ? 'Switch to Spaced Repetition?' : 'Switch back to Simple mode?';
+        const message = toSpaced
+            ? "Spaced repetition schedules every card for the day you're about to forget it: you study a few new cards each day plus the reviews that fall due.\n\nSwitching resets this deck's current progress so the new mode starts clean. You can switch back anytime."
+            : "This returns the deck to the classic Learn / Review / New flow.\n\nSwitching erases your spaced repetition schedule for this deck. You can switch back anytime.";
+        this.masteryModal.show({
+            title, message, type: 'warning',
+            onConfirm: () => {
+                StorageService.clearDeckProgress(deckId);
+                StorageService.clearSrsProgress(deckId);
+                StorageService.saveStudyMode(deckId, targetMode);
+                console.log(`VERIFY: [App] handleToggleStudyMode -> Deck ${deckId} switched to ${targetMode}.`);
+                this.render();
+            }
+        });
+    }
+
+    handleOpenSrsSettings() {
+        const deckId = this.state.currentDeckId;
+        const settings = StorageService.loadSrsSettings(deckId);
+        const deck = this.state.allDecks[deckId];
+        const deckType = deck ? deck.deckType : 'flippable';
+        this.srsSettingsModal.show(settings, deckType, (newSettings) => this.handleSaveSrsSettings(newSettings));
+    }
+
+    handleSaveSrsSettings(newSettings) {
+        const deckId = this.state.currentDeckId;
+        StorageService.saveSrsSettings(deckId, newSettings);
+        console.log(`VERIFY: [App] handleSaveSrsSettings -> Saved settings and re-rendering.`);
+        this.render();
+    }
+
     handleCreateDeckClicked() {
         console.log("DEBUG: [App] handleCreateDeckClicked -> Opening AI deck creation modal.");
         // This function was missing. It's responsible for showing the modal.

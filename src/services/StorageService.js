@@ -12,7 +12,12 @@ class StorageService {
     static STORAGE_KEY_PROGRESS_PREFIX = 'smart-decks-v3-progress-';
     static STORAGE_KEY_DECK_PROGRESS_PREFIX = 'smart-decks-v3-deck-progress-';
     static STORAGE_KEY_METRICS_PREFIX = 'smart-decks-v3-metrics-';
-    
+    // --- Spaced Repetition (SRS) keys ---
+    static STORAGE_KEY_STUDY_MODE_PREFIX = 'smart-decks-v3-study-mode-';
+    static STORAGE_KEY_SRS_SETTINGS_PREFIX = 'smart-decks-v3-srs-settings-';
+    static STORAGE_KEY_SRS_RECORDS_PREFIX = 'smart-decks-v3-srs-';
+    static STORAGE_KEY_SRS_DAILY_PREFIX = 'smart-decks-v3-srs-daily-';
+
  /**
      * Saves the improvement data for a specific deck.
      * @param {string} deckId The ID of the deck.
@@ -299,6 +304,10 @@ class StorageService {
             localStorage.removeItem(`${this.STORAGE_KEY_IMPROVEMENT_PREFIX}${deckId}`);
             console.log(`DEBUG: [StorageService] deleteDeck -> Removed improvement data for ${deckId}.`);
 
+            // 4. Delete all spaced-repetition data (records, daily, settings, mode)
+            this.clearAllSrsData(deckId);
+            console.log(`DEBUG: [StorageService] deleteDeck -> Removed SRS data for ${deckId}.`);
+
         } catch (error) {
             console.error(`DEBUG: [StorageService] deleteDeck -> Error deleting deck ${deckId}.`, error);
         }
@@ -505,5 +514,156 @@ class StorageService {
         }
     }
 
+
+    // ==========================================================================
+    // Spaced Repetition (SRS) persistence
+    // Only this service touches localStorage; SrsService holds the algorithm.
+    // ==========================================================================
+
+    /**
+     * Loads the study mode for a deck.
+     * @param {string} deckId
+     * @returns {'simple'|'spaced'} Defaults to 'simple'.
+     */
+    static loadStudyMode(deckId) {
+        if (!deckId) return 'simple';
+        try {
+            const mode = localStorage.getItem(`${this.STORAGE_KEY_STUDY_MODE_PREFIX}${deckId}`);
+            return mode === 'spaced' ? 'spaced' : 'simple';
+        } catch (error) {
+            return 'simple';
+        }
+    }
+
+    /**
+     * Saves the study mode for a deck.
+     * @param {string} deckId
+     * @param {'simple'|'spaced'} mode
+     */
+    static saveStudyMode(deckId, mode) {
+        if (!deckId) return;
+        try {
+            localStorage.setItem(`${this.STORAGE_KEY_STUDY_MODE_PREFIX}${deckId}`, mode === 'spaced' ? 'spaced' : 'simple');
+            console.log(`VERIFY: [StorageService] saveStudyMode -> Deck ${deckId} mode set to ${mode}.`);
+        } catch (error) {
+            console.error("DEBUG: [StorageService] saveStudyMode -> Error saving study mode.", error);
+        }
+    }
+
+    /**
+     * Loads the SRS settings for a deck, merged over sensible defaults.
+     * @param {string} deckId
+     * @returns {{newPerDay:number, maxReviewsPerDay:number, difficulty:'low'|'normal'|'high'}}
+     */
+    static loadSrsSettings(deckId) {
+        const defaults = { newPerDay: 10, maxReviewsPerDay: 100, difficulty: 'normal' };
+        if (!deckId) return { ...defaults };
+        try {
+            const raw = localStorage.getItem(`${this.STORAGE_KEY_SRS_SETTINGS_PREFIX}${deckId}`);
+            if (raw) return { ...defaults, ...JSON.parse(raw) };
+        } catch (error) {
+            console.error("DEBUG: [StorageService] loadSrsSettings -> Error loading SRS settings.", error);
+        }
+        return { ...defaults };
+    }
+
+    /**
+     * Saves the SRS settings for a deck.
+     * @param {string} deckId
+     * @param {object} settings
+     */
+    static saveSrsSettings(deckId, settings) {
+        if (!deckId) return;
+        try {
+            localStorage.setItem(`${this.STORAGE_KEY_SRS_SETTINGS_PREFIX}${deckId}`, JSON.stringify(settings));
+            console.log(`VERIFY: [StorageService] saveSrsSettings -> Saved SRS settings for deck ${deckId}.`, settings);
+        } catch (error) {
+            console.error("DEBUG: [StorageService] saveSrsSettings -> Error saving SRS settings.", error);
+        }
+    }
+
+    /**
+     * Loads the per-card SRS scheduling records for a deck.
+     * @param {string} deckId
+     * @returns {object} Map of cardId -> record. Empty object if none.
+     */
+    static loadSrsRecords(deckId) {
+        if (!deckId) return {};
+        try {
+            const raw = localStorage.getItem(`${this.STORAGE_KEY_SRS_RECORDS_PREFIX}${deckId}`);
+            return raw ? JSON.parse(raw) : {};
+        } catch (error) {
+            console.error("DEBUG: [StorageService] loadSrsRecords -> Error loading SRS records.", error);
+            return {};
+        }
+    }
+
+    /**
+     * Saves the per-card SRS scheduling records for a deck.
+     * @param {string} deckId
+     * @param {object} records Map of cardId -> record.
+     */
+    static saveSrsRecords(deckId, records) {
+        if (!deckId) return;
+        try {
+            localStorage.setItem(`${this.STORAGE_KEY_SRS_RECORDS_PREFIX}${deckId}`, JSON.stringify(records));
+        } catch (error) {
+            console.error("DEBUG: [StorageService] saveSrsRecords -> Error saving SRS records.", error);
+        }
+    }
+
+    /**
+     * Loads the SRS daily counters for a deck (new cards introduced / reviews done today).
+     * @param {string} deckId
+     * @returns {{date:string, newIntroduced:number, reviewsDone:number}}
+     */
+    static loadSrsDaily(deckId) {
+        const empty = { date: '', newIntroduced: 0, reviewsDone: 0 };
+        if (!deckId) return empty;
+        try {
+            const raw = localStorage.getItem(`${this.STORAGE_KEY_SRS_DAILY_PREFIX}${deckId}`);
+            return raw ? { ...empty, ...JSON.parse(raw) } : empty;
+        } catch (error) {
+            return empty;
+        }
+    }
+
+    /**
+     * Saves the SRS daily counters for a deck.
+     * @param {string} deckId
+     * @param {object} daily
+     */
+    static saveSrsDaily(deckId, daily) {
+        if (!deckId) return;
+        try {
+            localStorage.setItem(`${this.STORAGE_KEY_SRS_DAILY_PREFIX}${deckId}`, JSON.stringify(daily));
+        } catch (error) {
+            console.error("DEBUG: [StorageService] saveSrsDaily -> Error saving SRS daily.", error);
+        }
+    }
+
+    /**
+     * Clears SRS scheduling progress for a deck (records + daily counters).
+     * Keeps the user's SRS settings and the study mode flag untouched.
+     * @param {string} deckId
+     */
+    static clearSrsProgress(deckId) {
+        if (!deckId) return;
+        localStorage.removeItem(`${this.STORAGE_KEY_SRS_RECORDS_PREFIX}${deckId}`);
+        localStorage.removeItem(`${this.STORAGE_KEY_SRS_DAILY_PREFIX}${deckId}`);
+        this.clearDeckMetrics(deckId);
+        console.log(`VERIFY: [StorageService] clearSrsProgress -> Cleared SRS progress for deck ${deckId}.`);
+    }
+
+    /**
+     * Removes all SRS-related data for a deck (used on full delete / mode reset).
+     * @param {string} deckId
+     */
+    static clearAllSrsData(deckId) {
+        if (!deckId) return;
+        this.clearSrsProgress(deckId);
+        localStorage.removeItem(`${this.STORAGE_KEY_SRS_SETTINGS_PREFIX}${deckId}`);
+        localStorage.removeItem(`${this.STORAGE_KEY_STUDY_MODE_PREFIX}${deckId}`);
+    }
 
 }
