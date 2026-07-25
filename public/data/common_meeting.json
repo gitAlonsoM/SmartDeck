@@ -516,6 +516,10 @@
         {
           "text": "The problem is already fixed.",
           "audioSrc": "public/data/audio/common_meeting/mi_021_sideB_3.mp3"
+        },
+        {
+          "text": "The problem has been resolved already.",
+          "audioSrc": "public/data/audio/common_meeting/mi_021_sideB_4.mp3"
         }
       ],
       "note": "**[er:12]**\n\nThe word [already] usually goes between the auxiliary and main verb, as in [has already been solved], not already was solved.\n\n~Solutioned~ is not a standard English verb. The correct verbs are [solved], [fixed], or [resolved].\n\n~The problem have been resolved.~ (Incorrect subject-verb agreement. The subject 'The problem' is singular, so it requires the singular verb 'has', not 'have'.)"
@@ -968,6 +972,10 @@
         {
           "text": "Yes, that issue is really similar to one we've seen before.",
           "audioSrc": "public/data/audio/common_meeting/mi_040_sideB_3.mp3"
+        },
+        {
+          "text": "Yes, this problem is very similar to one we saw before.",
+          "audioSrc": "public/data/audio/common_meeting/mi_040_sideB_4.mp3"
         }
       ],
       "note": "[Rings a bell] (Idiom) is a great informal way to say something sounds familiar.\n\n~Very seem~ is incorrect. [Seem] is a verb. To say 'parecido', use adjectives like [similar to] or [like]."
@@ -1292,6 +1300,10 @@
         {
           "text": "What action does this button trigger on the UI?",
           "audioSrc": "public/data/audio/common_meeting/mi_055_sideB_2.mp3"
+        },
+        {
+          "text": "What exactly does this button do in the interface?",
+          "audioSrc": "public/data/audio/common_meeting/mi_055_sideB_3.mp3"
         }
       ],
       "note": "**[er:3]**\n\nThe subject is [this button] (singular 'it'), so we use [does]. In the first example, 'do' is used twice: first as an auxiliary ([does]) and second as the main verb ([do]).\n\n~What this button does?~ is incorrect question structure. Inversion (auxiliary before subject) is required.\n\n~What exactly does this button on the interface?~ (Incomplete question: The main verb 'do' is missing at the end.)"
@@ -3974,7 +3986,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_170_sideB_3.mp3"
         }
       ],
-      "note": "'El resto' (referring to things) translates to [the rest] or [all the others].\n\nIn a technical context, you can be more specific: [That's the standard the rest follow].\n\n~That's the manner that the rest use~. 'Manner' is too formal; [way], [how], or [method] are more natural."
+      "note": "'El resto' (referring to things) translates to [the rest] or [all the others].\n\nIn a technical context, you can be more specific: [That's the standard the rest follow].\n\n~That's the manner that the rest use~. 'Manner' is too formal; [way], [how], or [method] are more natural.\n\n~That's the way the others do.~ is incomplete. You need to add [it] at the end: [That's the way the others do it].\n\n~That's the way the others use.~ is awkward. It is better to say [That's the method the others use] or [That's what the others use]."
     },
     {
       "cardId": "mi_171",
@@ -6116,9 +6128,17 @@
         {
           "text": "Not on my end.",
           "audioSrc": "public/data/audio/common_meeting/mi_265_sideB_3.mp3"
+        },
+        {
+          "text": "No, I'm all good.",
+          "audioSrc": "public/data/audio/common_meeting/mi_265_sideB_4.mp3"
+        },
+        {
+          "text": "Nothing on my side.",
+          "audioSrc": "public/data/audio/common_meeting/mi_265_sideB_5.mp3"
         }
       ],
-      "note": "Standard polite responses when asked \"Do you have any questions?\" in a meeting.\n\n~No on my side.~ (Unnatural: Use 'None on my side' or 'Nothing on my side'. 'No' implies a vote.)"
+      "note": "**[er:202]**\n\nStandard polite responses when asked \"Do you have any questions?\" in a meeting.\n\n~No on my side.~ (Unnatural: Use 'None on my side' or 'Nothing on my side'. 'No' implies a vote.)\n\n~No by my side, thank you.~ is incorrect. [By my side] means physically next to you. Use [on my end] or [on my side]."
     },
     {
       "cardId": "mi_266",
@@ -16620,6 +16640,10 @@
         {
           "text": "Let's make something clear.",
           "audioSrc": "public/data/audio/common_meeting/mi_735_sideB_3.mp3"
+        },
+        {
+          "text": "Let's make it clear.",
+          "audioSrc": "public/data/audio/common_meeting/mi_735_sideB_4.mp3"
         }
       ],
       "note": "**[er:181]**\n\n[Clear something up] usually implies resolving a doubt.\n\n~Let's leave something clear~ is a direct translation; use [make something clear] or [set the record straight]."
@@ -18324,9 +18348,13 @@
         {
           "text": "I won't do it today; however, I will tomorrow.",
           "audioSrc": "public/data/audio/common_meeting/mi_811_sideB_2.mp3"
+        },
+        {
+          "text": "I won't do it today, but tomorrow.",
+          "audioSrc": "public/data/audio/common_meeting/mi_811_sideB_3.mp3"
         }
       ],
-      "note": ""
+      "note": "**[er:162]**\n\nIn this context, [will] is an auxiliary verb. It is used here to avoid repeating the main verb 'do'. [I will tomorrow] means 'I will do it tomorrow'."
     },
     {
       "cardId": "mi_812",
@@ -21222,7 +21250,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_938_sideB_4.mp3"
         }
       ],
-      "note": null
+      "note": "~This change is to correctly handle the merge lines in the cart.~ is incorrect. You can use [merging lines] or [the merge in cart lines], but 'the merge lines' implies lines that are used for merging, which changes the meaning."
     },
     {
       "cardId": "mi_939",
@@ -26030,7 +26058,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_1151_sideB_2.mp3"
         }
       ],
-      "note": "**[er:70]**\n\n"
+      "note": "**[er:70]**\n\n~Similar as it works now.~ is incorrect because [similar] is followed by [to], not 'as'."
     },
     {
       "cardId": "mi_1152",
@@ -27236,6 +27264,14 @@
         {
           "text": "I need to update the shipping address of the user in the database.",
           "audioSrc": "public/data/audio/common_meeting/mi_1205_sideB_4.mp3"
+        },
+        {
+          "text": "I need to update the shipment address of the user in the database.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1205_sideB_5.mp3"
+        },
+        {
+          "text": "I need to update the shipping address for the user in the database.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1205_sideB_6.mp3"
         }
       ],
       "note": "**[er:210]**\n\nWhen referring to a physical location data (street, city) or digital endpoint (IP, email), use [address], never ~direction~."
@@ -30154,7 +30190,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_1337_sideB_3.mp3"
         }
       ],
-      "note": "**[pv:199]**"
+      "note": "**[pv:199]**\n\n~I'm off the VPN, do I connect to?~ is incorrect because ending the question with 'to' without a specific object requires a different structure; it is better to just ask [do I connect?].\n\n~I'm out the VPN, do I connect?~ is incorrect because we use the preposition [off] for networks or systems, not 'out'."
     },
     {
       "cardId": "mi_1338",
@@ -32366,7 +32402,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_1433_sideB_2.mp3"
         }
       ],
-      "note": "**[er:125]**\n\n~We normalize the title converting it by to lowercase.~ is incorrect because [by] is misplaced and unnecessary here. You can either use [by converting it to] to show the method, or just [converting it to]."
+      "note": "**[er:125]**\n\n~We normalize the title converting it by to lowercase.~ is incorrect because [by] is misplaced and unnecessary here. You can either use [by converting it to] to show the method, or just [converting it to].\n\n~We normalize the title by transformating it to lowercase.~ is incorrect because 'transformating' is not a word. The correct verb is [transforming].\n\n~We normalize the title by putting it to lowercase.~ is not natural. When changing text casing, we use verbs like [converting], [changing], or [making]."
     },
     {
       "cardId": "mi_1434",
@@ -35520,6 +35556,770 @@
         {
           "text": "The Linux operating system is open-source.",
           "audioSrc": "public/data/audio/common_meeting/mi_1574_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1575",
+      "cardType": "flippable",
+      "sideA": "Si hubiéramos hecho esto medio año atrás, sería bastante diferente.",
+      "sideB": [
+        {
+          "text": "If we had done this half a year ago, it would be quite different.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1575_sideB_0.mp3"
+        },
+        {
+          "text": "If we'd done this half a year ago, things would be quite different.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1575_sideB_1.mp3"
+        },
+        {
+          "text": "If we had done this six months ago, it would be a lot different.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1575_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:98]**\n\n**[er:151]**\n\nThis sentence uses a Mixed Conditional. It combines a past hypothetical condition (Past Perfect: had done) with a present imaginary result (would be).\n\n~If we had done this a year and a half ago~ is grammatically correct but changes the time frame to 'un año y medio', whereas the card specifies 'medio año' [half a year].\n\n~If we had done this one and a half year ago~ is incorrect because plural quantities require plural nouns like [years], and it also alters the original time frame."
+    },
+    {
+      "cardId": "mi_1576",
+      "cardType": "flippable",
+      "sideA": "¿Mac o Windows? Así sé qué shell asumir.",
+      "sideB": [
+        {
+          "text": "Mac or Windows? That way I know which shell to assume.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1576_sideB_0.mp3"
+        },
+        {
+          "text": "Mac or Windows? That way I'll know what shell to assume.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1576_sideB_1.mp3"
+        },
+        {
+          "text": "Mac or Windows? So I know which shell to assume.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1576_sideB_2.mp3"
+        },
+        {
+          "text": "Mac or Windows? That way I know what type of shell to assume.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1576_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1577",
+      "cardType": "flippable",
+      "sideA": "Un script no se compila, se ejecuta línea por línea.",
+      "sideB": [
+        {
+          "text": "A script doesn't get compiled, it runs line by line.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1577_sideB_0.mp3"
+        },
+        {
+          "text": "A script isn't compiled; it's executed line by line.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1577_sideB_1.mp3"
+        },
+        {
+          "text": "A script doesn't compile, it runs line by line.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1577_sideB_2.mp3"
+        },
+        {
+          "text": "A script doesn't get compiled, it gets executed line by line.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1577_sideB_3.mp3"
+        },
+        {
+          "text": "A script doesn't get compiled, it executes line by line.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1577_sideB_4.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1578",
+      "cardType": "flippable",
+      "sideA": "Es un archivo solo, está dentro de su carpeta padre.",
+      "sideB": [
+        {
+          "text": "It is a single file, it is inside its parent folder.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1578_sideB_0.mp3"
+        },
+        {
+          "text": "It's a single file, it's inside its parent folder.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1578_sideB_1.mp3"
+        },
+        {
+          "text": "It is just one file, located inside its parent folder.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1578_sideB_2.mp3"
+        },
+        {
+          "text": "It is a single file, it is inside the parent folder.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1578_sideB_3.mp3"
+        }
+      ],
+      "note": "~It is a single file, it is inside its father folder.~ In computing, the term for the enclosing directory is [parent folder], not 'father folder'."
+    },
+    {
+      "cardId": "mi_1579",
+      "cardType": "flippable",
+      "sideA": "Para llegar allá, debes navegar y usar sintaxis de doble punto.",
+      "sideB": [
+        {
+          "text": "To get there, you must navigate and use double dot syntax.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1579_sideB_0.mp3"
+        },
+        {
+          "text": "To get there, you have to navigate using double dot syntax.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1579_sideB_1.mp3"
+        },
+        {
+          "text": "In order to get there, you need to navigate and use double dot syntax.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1579_sideB_2.mp3"
+        }
+      ],
+      "note": "~To get there, you must navigate and use double point syntax.~ In programming and file systems, the '..' symbol is referred to as a [double dot] or [dot-dot], not 'double point'."
+    },
+    {
+      "cardId": "mi_1580",
+      "cardType": "flippable",
+      "sideA": "Sorry, me cuesta pronunciar esa palabra.",
+      "sideB": [
+        {
+          "text": "Sorry, I find it hard to pronounce that word.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1580_sideB_0.mp3"
+        },
+        {
+          "text": "Sorry, it's hard for me to pronounce that word.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1580_sideB_1.mp3"
+        },
+        {
+          "text": "Sorry, I struggle to pronounce that word.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1580_sideB_2.mp3"
+        }
+      ],
+      "note": "~Sorry, it's hard to me to pronounce that word.~ When expressing difficulty for someone, use the preposition [for] (e.g., 'hard for me'), not 'to'."
+    },
+    {
+      "cardId": "mi_1581",
+      "cardType": "flippable",
+      "sideA": "Después del comando, finaliza con una coma.",
+      "sideB": [
+        {
+          "text": "After the command, end with a comma.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1581_sideB_0.mp3"
+        },
+        {
+          "text": "Finish with a comma after the command.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1581_sideB_1.mp3"
+        },
+        {
+          "text": "End with a comma after the command.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1581_sideB_2.mp3"
+        }
+      ],
+      "note": "~After the command, finalize with a comma.~ is not natural here. The verb [finalize] usually means to complete a formal agreement, plan, or transaction. To describe adding a character to the end of a string or sequence, use [end] or [finish]."
+    },
+    {
+      "cardId": "mi_1582",
+      "cardType": "flippable",
+      "sideA": "Git es un sistema de control de versiones de código abierto.",
+      "sideB": [
+        {
+          "text": "Git is an open-source version control system.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1582_sideB_0.mp3"
+        },
+        {
+          "text": "Git is an open source version control system.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1582_sideB_1.mp3"
+        },
+        {
+          "text": "Git is a version control system that is open-source.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1582_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1583",
+      "cardType": "flippable",
+      "sideA": "Tenemos un formulario en blanco que rellenar, cada descripción del formulario debe ser rellenada en el espacio en blanco.",
+      "sideB": [
+        {
+          "text": "We have a blank form to fill out, each form description must be filled in the blank space.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1583_sideB_0.mp3"
+        },
+        {
+          "text": "We have a blank form to fill in; each description on the form needs to be filled in the blank space.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1583_sideB_1.mp3"
+        },
+        {
+          "text": "There's a blank form we need to fill out, every form description must be completed in the blank space.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1583_sideB_2.mp3"
+        }
+      ],
+      "note": "\n\n~We have a white form to fill out, each form description must be filled in the white space.~ is not valid because 'white' refers to the color. For a form or space without written text, you must use [blank]."
+    },
+    {
+      "cardId": "mi_1584",
+      "cardType": "flippable",
+      "sideA": "La dirección de envío es la ubicación física donde se entrega el paquete.",
+      "sideB": [
+        {
+          "text": "Shipping Address is the physical location where the package is delivered.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1584_sideB_0.mp3"
+        },
+        {
+          "text": "The shipping address is the physical location where the package is delivered.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1584_sideB_1.mp3"
+        },
+        {
+          "text": "The shipping address is the physical location where the package gets delivered.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1584_sideB_2.mp3"
+        },
+        {
+          "text": "Delivery Address is the physical location where the package is delivered.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1584_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1585",
+      "cardType": "flippable",
+      "sideA": "La dirección de facturación es la dirección oficial vinculada a la tarjeta de crédito.",
+      "sideB": [
+        {
+          "text": "Billing Address is the official address linked to the credit card.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1585_sideB_0.mp3"
+        },
+        {
+          "text": "The billing address is the official address linked to the credit card.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1585_sideB_1.mp3"
+        },
+        {
+          "text": "The billing address is the official address associated with the credit card.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1585_sideB_2.mp3"
+        },
+        {
+          "text": "Billing Address is the official address related to the credit card.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1585_sideB_3.mp3"
+        }
+      ],
+      "note": "\n\n~Invoice Address is the official address linked to the credit card.~ is not valid because [Billing address] is the standard term used for credit cards, whereas an invoice address is typically used for B2B billing."
+    },
+    {
+      "cardId": "mi_1586",
+      "cardType": "flippable",
+      "sideA": "Lamentablemente, se dañó el código y no podemos probarlo ahora mismo.",
+      "sideB": [
+        {
+          "text": "Unfortunately, the code is broken and we can't test it right now.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1586_sideB_0.mp3"
+        },
+        {
+          "text": "Sadly, the code got damaged and we cannot test it at this moment.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1586_sideB_1.mp3"
+        },
+        {
+          "text": "Unfortunately, the code broke and we can't test it right now.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1586_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1587",
+      "cardType": "flippable",
+      "sideA": "HTML usa tags para su contenido. HTML usa brackets para delimitar los tags.",
+      "sideB": [
+        {
+          "text": "HTML uses tags for its content. HTML uses brackets to delimit tags.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1587_sideB_0.mp3"
+        },
+        {
+          "text": "HTML uses tags for its content. HTML uses brackets to define the tags.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1587_sideB_1.mp3"
+        },
+        {
+          "text": "HTML utilizes tags for its content. HTML uses brackets to delimit the tags.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1587_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1588",
+      "cardType": "flippable",
+      "sideA": "Pero solo para estar seguros, mejor hacerlo.",
+      "sideB": [
+        {
+          "text": "But just to be sure, it's better to do it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1588_sideB_0.mp3"
+        },
+        {
+          "text": "But just to be on the safe side, we better do it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1588_sideB_1.mp3"
+        },
+        {
+          "text": "But just to be safe, it's better to do it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1588_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1589",
+      "cardType": "flippable",
+      "sideA": "Hay dependencias lógicas. O sea, la aplicación depende de ciertos procedimientos.",
+      "sideB": [
+        {
+          "text": "There are logical dependencies. I mean, the app relies on specific procedures.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1589_sideB_0.mp3"
+        },
+        {
+          "text": "There are logical dependencies. That is, the application depends on certain procedures.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1589_sideB_1.mp3"
+        },
+        {
+          "text": "There are logical dependencies. Meaning, the app relies on certain procedures.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1589_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1590",
+      "cardType": "flippable",
+      "sideA": "Hay una limitación física, no puedes correr la app de iOS en Android.",
+      "sideB": [
+        {
+          "text": "There's a technical limitation. You can't run the iOS app on Android.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1590_sideB_0.mp3"
+        },
+        {
+          "text": "There is a physical limitation, you cannot run the iOS app on Android.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1590_sideB_1.mp3"
+        },
+        {
+          "text": "There's a hardware limitation, you can't run the iOS app on Android.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1590_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1591",
+      "cardType": "flippable",
+      "sideA": "No puedes insertar esas filas aún, no hay tabla creada, es una limitación física.",
+      "sideB": [
+        {
+          "text": "You can't insert those rows yet because the table hasn't been created. It's a hard blocker.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1591_sideB_0.mp3"
+        },
+        {
+          "text": "You cannot insert those rows yet, there is no table created, it is a physical limitation.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1591_sideB_1.mp3"
+        },
+        {
+          "text": "You can't insert those rows just yet; no table has been created, it's a hard blocker.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1591_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1592",
+      "cardType": "flippable",
+      "sideA": "Sorry, no vi el mensaje.",
+      "sideB": [
+        {
+          "text": "Sorry, I missed your message.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1592_sideB_0.mp3"
+        },
+        {
+          "text": "Sorry, I didn't see your message.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1592_sideB_1.mp3"
+        },
+        {
+          "text": "Sorry, I just saw this.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1592_sideB_2.mp3"
+        },
+        {
+          "text": "Sorry, I missed the message.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1592_sideB_3.mp3"
+        }
+      ],
+      "note": "\n\n~Sorry, I didn't watch your message.~ is not valid because the verb watch is used for moving images like videos or screens; for text, you must use [see] or [read]."
+    },
+    {
+      "cardId": "mi_1593",
+      "cardType": "flippable",
+      "sideA": "Sabemos que esta función es suficiente, pero debemos mejorarla.",
+      "sideB": [
+        {
+          "text": "We know this feature is good enough, but we need to improve it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1593_sideB_0.mp3"
+        },
+        {
+          "text": "We know this feature is sufficient, but we must improve it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1593_sideB_1.mp3"
+        },
+        {
+          "text": "We know this feature is adequate, but we need to make it better.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1593_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1594",
+      "cardType": "flippable",
+      "sideA": "Y un código que es posible distinguir entre qué sistema operativo aplica.",
+      "sideB": [
+        {
+          "text": "And code that can distinguish which operating system applies.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1594_sideB_0.mp3"
+        },
+        {
+          "text": "And a code that makes it possible to distinguish which OS it applies to.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1594_sideB_1.mp3"
+        },
+        {
+          "text": "And code that can differentiate which operating system it applies to.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1594_sideB_2.mp3"
+        }
+      ],
+      "note": "\n\n~And a code that distinguishes which operating system applies.~ is not valid because programming [code] is uncountable and does not take 'a', and the verb apply requires the preposition [to] at the end."
+    },
+    {
+      "cardId": "mi_1595",
+      "cardType": "flippable",
+      "sideA": "Con el tiempo, te acostumbrarás.",
+      "sideB": [
+        {
+          "text": "You'll get used to it over time.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1595_sideB_0.mp3"
+        },
+        {
+          "text": "With time, you will get used to it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1595_sideB_1.mp3"
+        },
+        {
+          "text": "You'll grow accustomed to it over time.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1595_sideB_2.mp3"
+        },
+        {
+          "text": "Over time, you'll get used to it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1595_sideB_3.mp3"
+        }
+      ],
+      "note": "**[er:227]**\n\n~No the time, you'll get used to it.~ is not valid because 'no the time' is not a recognized English phrase for 'con el tiempo'. Use [Over time] or [With time] instead."
+    },
+    {
+      "cardId": "mi_1596",
+      "cardType": "flippable",
+      "sideA": "Estoy acostumbrado a eso.",
+      "sideB": [
+        {
+          "text": "I'm used to that.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1596_sideB_0.mp3"
+        },
+        {
+          "text": "I am accustomed to that.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1596_sideB_1.mp3"
+        },
+        {
+          "text": "I've gotten used to that.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1596_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:15]**\n\n"
+    },
+    {
+      "cardId": "mi_1597",
+      "cardType": "flippable",
+      "sideA": "Tú tendrías que hacernos saber sobre ese cambio.",
+      "sideB": [
+        {
+          "text": "You would have to let us know about that change.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1597_sideB_0.mp3"
+        },
+        {
+          "text": "You should let us know about that change.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1597_sideB_1.mp3"
+        },
+        {
+          "text": "You'd need to inform us about that change.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1597_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1598",
+      "cardType": "flippable",
+      "sideA": "Llamó mi atención, por eso le avisé a él.",
+      "sideB": [
+        {
+          "text": "It caught my attention, that's why I let him know.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1598_sideB_0.mp3"
+        },
+        {
+          "text": "It drew my attention, so I warned him.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1598_sideB_1.mp3"
+        },
+        {
+          "text": "It caught my eye, which is why I told him.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1598_sideB_2.mp3"
+        },
+        {
+          "text": "It caught my attention, that's why I told him.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1598_sideB_3.mp3"
+        }
+      ],
+      "note": "\n\n~It called my attention, that's why I let him know.~ is not valid because 'called my attention' is a direct translation from Spanish; the natural English idiom is [caught my attention] or [drew my attention]."
+    },
+    {
+      "cardId": "mi_1599",
+      "cardType": "flippable",
+      "sideA": "Es un cambio trivial, por eso no lo apliqué.",
+      "sideB": [
+        {
+          "text": "It's a trivial change, that's why I didn't apply it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1599_sideB_0.mp3"
+        },
+        {
+          "text": "It is a trivial change, so I didn't apply it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1599_sideB_1.mp3"
+        },
+        {
+          "text": "It's a minor change, which is why I didn't implement it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1599_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1600",
+      "cardType": "flippable",
+      "sideA": "Es trivial, podemos hacerlo después.",
+      "sideB": [
+        {
+          "text": "It's trivial, we can do it later.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1600_sideB_0.mp3"
+        },
+        {
+          "text": "It's trivial, we can get to it later.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1600_sideB_1.mp3"
+        },
+        {
+          "text": "It is trivial, we can do it afterwards.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1600_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1601",
+      "cardType": "flippable",
+      "sideA": "Cablea el botón al evento.",
+      "sideB": [
+        {
+          "text": "Wire the button to the event.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1601_sideB_0.mp3"
+        },
+        {
+          "text": "Link the button to the event.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1601_sideB_1.mp3"
+        },
+        {
+          "text": "Connect the button to the event.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1601_sideB_2.mp3"
+        }
+      ],
+      "note": "\n\n~It wires the button to the event.~ is not valid because adding 'It' makes the sentence a description, but the original text is an instruction or command that requires the imperative form [Wire]."
+    },
+    {
+      "cardId": "mi_1602",
+      "cardType": "flippable",
+      "sideA": "Enlaza el botón con el evento.",
+      "sideB": [
+        {
+          "text": "Wire the button to the event.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1602_sideB_0.mp3"
+        },
+        {
+          "text": "Bind the button to the event.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1602_sideB_1.mp3"
+        },
+        {
+          "text": "Link the button to the event.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1602_sideB_2.mp3"
+        }
+      ],
+      "note": "\n\n~Wire the button with the event.~ is not valid because the verb [wire] in this context pairs with the preposition [to], not 'with'."
+    },
+    {
+      "cardId": "mi_1603",
+      "cardType": "flippable",
+      "sideA": "Engancha este menú a la nueva función.",
+      "sideB": [
+        {
+          "text": "Wire this menu to the new feature.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1603_sideB_0.mp3"
+        },
+        {
+          "text": "Hook this menu to the new feature.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1603_sideB_1.mp3"
+        },
+        {
+          "text": "Link this menu to the new function.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1603_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1604",
+      "cardType": "flippable",
+      "sideA": "Hagamos que funcione.",
+      "sideB": [
+        {
+          "text": "Let's wire this up.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1604_sideB_0.mp3"
+        },
+        {
+          "text": "Let's get it working.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1604_sideB_1.mp3"
+        },
+        {
+          "text": "Let's make it work.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1604_sideB_2.mp3"
+        },
+        {
+          "text": "Let's make this work.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1604_sideB_3.mp3"
+        }
+      ],
+      "note": "\n\n~Let's make it to work.~ is not valid because the causative verb [make] must be followed directly by the base verb without 'to'."
+    },
+    {
+      "cardId": "mi_1605",
+      "cardType": "flippable",
+      "sideA": "Dijeron que sería clonado el ambiente, pero aún no lo ha sido.",
+      "sideB": [
+        {
+          "text": "They said the environment would be cloned, but it hasn't been yet.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1605_sideB_0.mp3"
+        },
+        {
+          "text": "They said the environment was going to be cloned, but it hasn't been done yet.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1605_sideB_1.mp3"
+        },
+        {
+          "text": "They mentioned the environment would be cloned, but it still hasn't been.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1605_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:162]**\n\n~They said the environment would be cloned, but it didn't yet.~ is not valid because the first clause uses the passive voice 'be cloned', so the second clause requires the matching auxiliary [hasn't been] or [wasn't], not 'didn't'."
+    },
+    {
+      "cardId": "mi_1606",
+      "cardType": "flippable",
+      "sideA": "Cuando sea clonado el ambiente, podríamos replicar el problema.",
+      "sideB": [
+        {
+          "text": "Once the environment is cloned, we could replicate the issue.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1606_sideB_0.mp3"
+        },
+        {
+          "text": "When the environment gets cloned, we could reproduce the problem.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1606_sideB_1.mp3"
+        },
+        {
+          "text": "When the environment is cloned, we'll be able to replicate the issue.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1606_sideB_2.mp3"
+        }
+      ],
+      "note": "\n\n~Once the ambient is cloned, we could replicate the issue.~ is not valid because 'ambient' refers to lighting or sound; the correct term for a software setup is [environment]."
+    },
+    {
+      "cardId": "mi_1607",
+      "cardType": "flippable",
+      "sideA": "Estamos conscientes de ese error, pero no hemos podido replicarlo aún.",
+      "sideB": [
+        {
+          "text": "We are aware of that bug, but we haven't been able to replicate it yet.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1607_sideB_0.mp3"
+        },
+        {
+          "text": "We're aware of that error, but we haven't managed to reproduce it yet.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1607_sideB_1.mp3"
+        },
+        {
+          "text": "We know about that bug, but we couldn't replicate it yet.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1607_sideB_2.mp3"
+        },
+        {
+          "text": "We are aware of that bug, but we weren't able to replicate it yet.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1607_sideB_3.mp3"
+        }
+      ],
+      "note": "\n\n~We are aware about that bug, but we haven't been able to replicate it yet.~ is not valid because the adjective 'aware' must always be followed by the preposition [of], not 'about'."
+    },
+    {
+      "cardId": "mi_1608",
+      "cardType": "flippable",
+      "sideA": "Colapsa el panel y luego expándelo.",
+      "sideB": [
+        {
+          "text": "Collapse the panel and then expand it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1608_sideB_0.mp3"
+        },
+        {
+          "text": "Collapse the panel and expand it afterwards.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1608_sideB_1.mp3"
+        },
+        {
+          "text": "First collapse the panel, then expand it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1608_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1609",
+      "cardType": "flippable",
+      "sideA": "Puedes colapsar todas las secciones o expandirlas de nuevo.",
+      "sideB": [
+        {
+          "text": "You can collapse all the sections or expand them again.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1609_sideB_0.mp3"
+        },
+        {
+          "text": "You can collapse all sections or expand them once more.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1609_sideB_1.mp3"
+        },
+        {
+          "text": "You're able to collapse all the sections or expand them again.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1609_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1610",
+      "cardType": "flippable",
+      "sideA": "Si colapsas el menú, puedes expandirlo cuando lo necesites.",
+      "sideB": [
+        {
+          "text": "If you collapse the menu, you can expand it when you need it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1610_sideB_0.mp3"
+        },
+        {
+          "text": "If you collapse the menu, you can always expand it when needed.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1610_sideB_1.mp3"
+        },
+        {
+          "text": "If you collapse the menu, you can expand it whenever you need to.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1610_sideB_2.mp3"
         }
       ],
       "note": null

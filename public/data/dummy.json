@@ -5,766 +5,420 @@
   "deckType": "flippable",
   "cards": [
     {
-      "cardId": "dummy_275",
+      "cardId": "dummy_001",
       "cardType": "flippable",
-      "sideA": "Si hubiéramos hecho esto medio año atrás, sería bastante diferente.",
+      "sideA": "Necesitamos ese ambiente clonado para reproducir el problema.",
       "sideB": [
-        {
-          "text": "If we had done this half a year ago, it would be quite different.",
-          "audioSrc": "public/data/audio/dummy/dummy_275_sideB_0.mp3"
-        },
-        {
-          "text": "If we'd done this half a year ago, things would be quite different.",
-          "audioSrc": "public/data/audio/dummy/dummy_275_sideB_1.mp3"
-        },
-        {
-          "text": "If we had done this six months ago, it would be a lot different.",
-          "audioSrc": "public/data/audio/dummy/dummy_275_sideB_2.mp3"
-        }
-      ],
-      "note": "**[er:98]**\n\n**[er:151]**\n\nThis sentence uses a Mixed Conditional. It combines a past hypothetical condition (Past Perfect: had done) with a present imaginary result (would be).\n\n~If we had done this a year and a half ago~ is grammatically correct but changes the time frame to 'un año y medio', whereas the card specifies 'medio año' [half a year].\n\n~If we had done this one and a half year ago~ is incorrect because plural quantities require plural nouns like [years], and it also alters the original time frame."
-    },
-    {
-      "cardId": "dummy_290",
-      "cardType": "flippable",
-      "sideA": "¿Mac o Windows? Así sé qué shell asumir.",
-      "sideB": [
-        {
-          "text": "Mac or Windows? That way I know which shell to assume.",
-          "audioSrc": "public/data/audio/dummy/dummy_290_sideB_0.mp3"
-        },
-        {
-          "text": "Mac or Windows? That way I'll know what shell to assume.",
-          "audioSrc": "public/data/audio/dummy/dummy_290_sideB_1.mp3"
-        },
-        {
-          "text": "Mac or Windows? So I know which shell to assume.",
-          "audioSrc": "public/data/audio/dummy/dummy_290_sideB_2.mp3"
-        },
-        {
-          "text": "Mac or Windows? That way I know what type of shell to assume.",
-          "audioSrc": "public/data/audio/dummy_deck/dummy_290_sideB_3.mp3"
-        }
+        { "text": "We need that environment cloned to reproduce the problem.", "audioSrc": "public/data/audio/dummy/dummy_001_sideB_0.mp3" },
+        { "text": "We need that environment cloned so we can reproduce the issue.", "audioSrc": "public/data/audio/dummy/dummy_001_sideB_1.mp3" },
+        { "text": "We need a clone of that environment to reproduce the problem.", "audioSrc": "public/data/audio/dummy/dummy_001_sideB_2.mp3" }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_298",
+      "cardId": "dummy_002",
       "cardType": "flippable",
-      "sideA": "Un script no se compila, se ejecuta línea por línea.",
+      "sideA": "Necesitamos producción clonada en Blue.",
       "sideB": [
-        {
-          "text": "A script doesn't get compiled, it runs line by line.",
-          "audioSrc": "public/data/audio/dummy/dummy_298_sideB_0.mp3"
-        },
-        {
-          "text": "A script isn't compiled; it's executed line by line.",
-          "audioSrc": "public/data/audio/dummy/dummy_298_sideB_1.mp3"
-        },
-        {
-          "text": "A script doesn't compile, it runs line by line.",
-          "audioSrc": "public/data/audio/dummy/dummy_298_sideB_2.mp3"
-        },
-        {
-          "text": "A script doesn't get compiled, it gets executed line by line.",
-          "audioSrc": "public/data/audio/dummy/dummy_298_sideB_3.mp3"
-        },
-        {
-          "text": "A script doesn't get compiled, it executes line by line.",
-          "audioSrc": "public/data/audio/dummy/dummy_298_sideB_4.mp3"
-        }
+        { "text": "We need production cloned in Blue.", "audioSrc": "public/data/audio/dummy/dummy_002_sideB_0.mp3" },
+        { "text": "We need a clone of production in Blue.", "audioSrc": "public/data/audio/dummy/dummy_002_sideB_1.mp3" },
+        { "text": "We need a production clone on Blue.", "audioSrc": "public/data/audio/dummy/dummy_002_sideB_2.mp3" }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_314",
+      "cardId": "dummy_003",
       "cardType": "flippable",
-      "sideA": "Es un archivo solo, está dentro de su carpeta padre.",
+      "sideA": "Necesitamos el ambiente de producción clonado en Blue.",
       "sideB": [
-        {
-          "text": "It is a single file, it is inside its parent folder.",
-          "audioSrc": "public/data/audio/dummy/dummy_314_sideB_0.mp3"
-        },
-        {
-          "text": "It's a single file, it's inside its parent folder.",
-          "audioSrc": "public/data/audio/dummy/dummy_314_sideB_1.mp3"
-        },
-        {
-          "text": "It is just one file, located inside its parent folder.",
-          "audioSrc": "public/data/audio/dummy/dummy_314_sideB_2.mp3"
-        },
-        {
-          "text": "It is a single file, it is inside the parent folder.",
-          "audioSrc": "public/data/audio/dummy_deck/dummy_314_sideB_3.mp3"
-        }
-      ],
-      "note": "~It is a single file, it is inside its father folder.~ In computing, the term for the enclosing directory is [parent folder], not 'father folder'."
-    },
-    {
-      "cardId": "dummy_320",
-      "cardType": "flippable",
-      "sideA": "Para llegar allá, debes navegar y usar sintaxis de doble punto.",
-      "sideB": [
-        {
-          "text": "To get there, you must navigate and use double dot syntax.",
-          "audioSrc": "public/data/audio/dummy/dummy_320_sideB_0.mp3"
-        },
-        {
-          "text": "To get there, you have to navigate using double dot syntax.",
-          "audioSrc": "public/data/audio/dummy/dummy_320_sideB_1.mp3"
-        },
-        {
-          "text": "In order to get there, you need to navigate and use double dot syntax.",
-          "audioSrc": "public/data/audio/dummy/dummy_320_sideB_2.mp3"
-        }
-      ],
-      "note": "~To get there, you must navigate and use double point syntax.~ In programming and file systems, the '..' symbol is referred to as a [double dot] or [dot-dot], not 'double point'."
-    },
-    {
-      "cardId": "dummy_323",
-      "cardType": "flippable",
-      "sideA": "Sorry, me cuesta pronunciar esa palabra.",
-      "sideB": [
-        {
-          "text": "Sorry, I find it hard to pronounce that word.",
-          "audioSrc": "public/data/audio/dummy/dummy_323_sideB_0.mp3"
-        },
-        {
-          "text": "Sorry, it's hard for me to pronounce that word.",
-          "audioSrc": "public/data/audio/dummy/dummy_323_sideB_1.mp3"
-        },
-        {
-          "text": "Sorry, I struggle to pronounce that word.",
-          "audioSrc": "public/data/audio/dummy/dummy_323_sideB_2.mp3"
-        }
-      ],
-      "note": "~Sorry, it's hard to me to pronounce that word.~ When expressing difficulty for someone, use the preposition [for] (e.g., 'hard for me'), not 'to'."
-    },
-    {
-      "cardId": "dummy_326",
-      "cardType": "flippable",
-      "sideA": "Después del comando, finaliza con una coma.",
-      "sideB": [
-        {
-          "text": "After the command, end with a comma.",
-          "audioSrc": "public/data/audio/dummy/dummy_326_sideB_0.mp3"
-        },
-        {
-          "text": "Finish with a comma after the command.",
-          "audioSrc": "public/data/audio/dummy/dummy_326_sideB_1.mp3"
-        },
-        {
-          "text": "End with a comma after the command.",
-          "audioSrc": "public/data/audio/dummy/dummy_326_sideB_2.mp3"
-        }
-      ],
-      "note": "~After the command, finalize with a comma.~ is not natural here. The verb [finalize] usually means to complete a formal agreement, plan, or transaction. To describe adding a character to the end of a string or sequence, use [end] or [finish]."
-    },
-    {
-      "cardId": "dummy_329",
-      "cardType": "flippable",
-      "sideA": "Git es un sistema de control de versiones de código abierto.",
-      "sideB": [
-        {
-          "text": "Git is an open-source version control system.",
-          "audioSrc": "public/data/audio/dummy/dummy_329_sideB_0.mp3"
-        },
-        {
-          "text": "Git is an open source version control system.",
-          "audioSrc": "public/data/audio/dummy/dummy_329_sideB_1.mp3"
-        },
-        {
-          "text": "Git is a version control system that is open-source.",
-          "audioSrc": "public/data/audio/dummy/dummy_329_sideB_2.mp3"
-        }
+        { "text": "We need the production environment cloned in Blue.", "audioSrc": "public/data/audio/dummy/dummy_003_sideB_0.mp3" },
+        { "text": "We need the production environment cloned onto Blue.", "audioSrc": "public/data/audio/dummy/dummy_003_sideB_1.mp3" },
+        { "text": "We need a clone of the production environment in Blue.", "audioSrc": "public/data/audio/dummy/dummy_003_sideB_2.mp3" }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_330",
+      "cardId": "dummy_004",
       "cardType": "flippable",
-      "sideA": "Tenemos un formulario en blanco que rellenar, cada descripción del formulario debe ser rellenada en el espacio en blanco.",
+      "sideA": "Así puedo estar más involucrado en tus procesos.",
       "sideB": [
-        {
-          "text": "We have a blank form to fill out, each form description must be filled in the blank space.",
-          "audioSrc": "public/data/audio/dummy/dummy_330_sideB_0.mp3"
-        },
-        {
-          "text": "We have a blank form to fill in; each description on the form needs to be filled in the blank space.",
-          "audioSrc": "public/data/audio/dummy/dummy_330_sideB_1.mp3"
-        },
-        {
-          "text": "There's a blank form we need to fill out, every form description must be completed in the blank space.",
-          "audioSrc": "public/data/audio/dummy/dummy_330_sideB_2.mp3"
-        }
-      ],
-      "note": "\n\n~We have a white form to fill out, each form description must be filled in the white space.~ is not valid because 'white' refers to the color. For a form or space without written text, you must use [blank]."
-    },
-    {
-      "cardId": "dummy_331",
-      "cardType": "flippable",
-      "sideA": "La dirección de envío es la ubicación física donde se entrega el paquete.",
-      "sideB": [
-        {
-          "text": "Shipping Address is the physical location where the package is delivered.",
-          "audioSrc": "public/data/audio/dummy/dummy_331_sideB_0.mp3"
-        },
-        {
-          "text": "The shipping address is the physical location where the package is delivered.",
-          "audioSrc": "public/data/audio/dummy/dummy_331_sideB_1.mp3"
-        },
-        {
-          "text": "The shipping address is the physical location where the package gets delivered.",
-          "audioSrc": "public/data/audio/dummy/dummy_331_sideB_2.mp3"
-        },
-        {
-          "text": "Delivery Address is the physical location where the package is delivered.",
-          "audioSrc": "public/data/audio/dummy/dummy_331_sideB_3.mp3"
-        }
+        { "text": "That way I can be more involved in your processes.", "audioSrc": "public/data/audio/dummy/dummy_004_sideB_0.mp3" },
+        { "text": "That way I can get more involved in your processes.", "audioSrc": "public/data/audio/dummy/dummy_004_sideB_1.mp3" },
+        { "text": "This way I can be more hands-on with your processes.", "audioSrc": "public/data/audio/dummy/dummy_004_sideB_2.mp3" }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_332",
+      "cardId": "dummy_005",
       "cardType": "flippable",
-      "sideA": "La dirección de facturación es la dirección oficial vinculada a la tarjeta de crédito.",
+      "sideA": "Vuelvo en un minuto.",
       "sideB": [
-        {
-          "text": "Billing Address is the official address linked to the credit card.",
-          "audioSrc": "public/data/audio/dummy/dummy_332_sideB_0.mp3"
-        },
-        {
-          "text": "The billing address is the official address linked to the credit card.",
-          "audioSrc": "public/data/audio/dummy/dummy_332_sideB_1.mp3"
-        },
-        {
-          "text": "The billing address is the official address associated with the credit card.",
-          "audioSrc": "public/data/audio/dummy/dummy_332_sideB_2.mp3"
-        },
-        {
-          "text": "Billing Address is the official address related to the credit card.",
-          "audioSrc": "public/data/audio/dummy/dummy_332_sideB_3.mp3"
-        }
-      ],
-      "note": "\n\n~Invoice Address is the official address linked to the credit card.~ is not valid because [Billing address] is the standard term used for credit cards, whereas an invoice address is typically used for B2B billing."
-    },
-    {
-      "cardId": "dummy_333",
-      "cardType": "flippable",
-      "sideA": "Lamentablemente, se dañó el código y no podemos probarlo ahora mismo.",
-      "sideB": [
-        {
-          "text": "Unfortunately, the code is broken and we can't test it right now.",
-          "audioSrc": "public/data/audio/dummy/dummy_333_sideB_0.mp3"
-        },
-        {
-          "text": "Sadly, the code got damaged and we cannot test it at this moment.",
-          "audioSrc": "public/data/audio/dummy/dummy_333_sideB_1.mp3"
-        },
-        {
-          "text": "Unfortunately, the code broke and we can't test it right now.",
-          "audioSrc": "public/data/audio/dummy/dummy_333_sideB_2.mp3"
-        }
+        { "text": "I'll be back in a minute.", "audioSrc": "public/data/audio/dummy/dummy_005_sideB_0.mp3" },
+        { "text": "Back in a minute.", "audioSrc": "public/data/audio/dummy/dummy_005_sideB_1.mp3" },
+        { "text": "I'll be right back.", "audioSrc": "public/data/audio/dummy/dummy_005_sideB_2.mp3" }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_334",
+      "cardId": "dummy_006",
       "cardType": "flippable",
-      "sideA": "HTML usa tags para su contenido. HTML usa brackets para delimitar los tags.",
+      "sideA": "Ya regreso.",
       "sideB": [
-        {
-          "text": "HTML uses tags for its content. HTML uses brackets to delimit tags.",
-          "audioSrc": "public/data/audio/dummy/dummy_334_sideB_0.mp3"
-        },
-        {
-          "text": "HTML uses tags for its content. HTML uses brackets to define the tags.",
-          "audioSrc": "public/data/audio/dummy/dummy_334_sideB_1.mp3"
-        },
-        {
-          "text": "HTML utilizes tags for its content. HTML uses brackets to delimit the tags.",
-          "audioSrc": "public/data/audio/dummy/dummy_334_sideB_2.mp3"
-        }
+        { "text": "I'm coming right back.", "audioSrc": "public/data/audio/dummy/dummy_006_sideB_0.mp3" },
+        { "text": "I'll be back shortly.", "audioSrc": "public/data/audio/dummy/dummy_006_sideB_1.mp3" },
+        { "text": "Be right back.", "audioSrc": "public/data/audio/dummy/dummy_006_sideB_2.mp3" }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_335",
+      "cardId": "dummy_007",
       "cardType": "flippable",
-      "sideA": "Pero solo para estar seguros, mejor hacerlo.",
+      "sideA": "Sí, estoy acá, solo que el audio se sobrepone con ambos micrófonos abiertos.",
       "sideB": [
-        {
-          "text": "But just to be sure, it's better to do it.",
-          "audioSrc": "public/data/audio/dummy/dummy_335_sideB_0.mp3"
-        },
-        {
-          "text": "But just to be on the safe side, we better do it.",
-          "audioSrc": "public/data/audio/dummy/dummy_335_sideB_1.mp3"
-        },
-        {
-          "text": "But just to be safe, it's better to do it.",
-          "audioSrc": "public/data/audio/dummy/dummy_335_sideB_2.mp3"
-        }
+        { "text": "Yes, I'm here, it's just that the audio overlaps when both microphones are open.", "audioSrc": "public/data/audio/dummy/dummy_007_sideB_0.mp3" },
+        { "text": "Yes, I'm here, the audio just overlaps with both mics open.", "audioSrc": "public/data/audio/dummy/dummy_007_sideB_1.mp3" },
+        { "text": "Yes, I'm here, it's just that having both microphones open makes the audio overlap.", "audioSrc": "public/data/audio/dummy/dummy_007_sideB_2.mp3" }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_336",
+      "cardId": "dummy_008",
       "cardType": "flippable",
-      "sideA": "Hay dependencias lógicas. O sea, la aplicación depende de ciertos procedimientos.",
+      "sideA": "El audio se sobrepone al tener los 2 micrófonos abiertos.",
       "sideB": [
-        {
-          "text": "There are logical dependencies. I mean, the app relies on specific procedures.",
-          "audioSrc": "public/data/audio/dummy/dummy_336_sideB_0.mp3"
-        },
-        {
-          "text": "There are logical dependencies. That is, the application depends on certain procedures.",
-          "audioSrc": "public/data/audio/dummy/dummy_336_sideB_1.mp3"
-        },
-        {
-          "text": "There are logical dependencies. Meaning, the app relies on certain procedures.",
-          "audioSrc": "public/data/audio/dummy/dummy_336_sideB_2.mp3"
-        }
+        { "text": "The audio overlaps when both microphones are open.", "audioSrc": "public/data/audio/dummy/dummy_008_sideB_0.mp3" },
+        { "text": "The audio overlaps when you have both mics on.", "audioSrc": "public/data/audio/dummy/dummy_008_sideB_1.mp3" },
+        { "text": "Having both microphones open causes the audio to overlap.", "audioSrc": "public/data/audio/dummy/dummy_008_sideB_2.mp3" }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_337",
+      "cardId": "dummy_009",
       "cardType": "flippable",
-      "sideA": "Hay una limitación física, no puedes correr la app de iOS en Android.",
+      "sideA": "Se supone que este arreglada eso.",
       "sideB": [
-        {
-          "text": "There's a technical limitation. You can't run the iOS app on Android.",
-          "audioSrc": "public/data/audio/dummy/dummy_337_sideB_0.mp3"
-        },
-        {
-          "text": "There is a physical limitation, you cannot run the iOS app on Android.",
-          "audioSrc": "public/data/audio/dummy/dummy_337_sideB_1.mp3"
-        },
-        {
-          "text": "There's a hardware limitation, you can't run the iOS app on Android.",
-          "audioSrc": "public/data/audio/dummy/dummy_337_sideB_2.mp3"
-        }
+        { "text": "That's supposed to be fixed.", "audioSrc": "public/data/audio/dummy/dummy_009_sideB_0.mp3" },
+        { "text": "That's supposed to already be fixed.", "audioSrc": "public/data/audio/dummy/dummy_009_sideB_1.mp3" },
+        { "text": "That issue is supposed to be fixed already.", "audioSrc": "public/data/audio/dummy/dummy_009_sideB_2.mp3" }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_338",
+      "cardId": "dummy_010",
       "cardType": "flippable",
-      "sideA": "No puedes insertar esas filas aún, no hay tabla creada, es una limitación física.",
+      "sideA": "Ahora mismo no puedo emular la aplicacion, estoy de manos atadas.",
       "sideB": [
-        {
-          "text": "You can't insert those rows yet because the table hasn't been created. It's a hard blocker.",
-          "audioSrc": "public/data/audio/dummy/dummy_338_sideB_0.mp3"
-        },
-        {
-          "text": "You cannot insert those rows yet, there is no table created, it is a physical limitation.",
-          "audioSrc": "public/data/audio/dummy/dummy_338_sideB_1.mp3"
-        },
-        {
-          "text": "You can't insert those rows just yet; no table has been created, it's a hard blocker.",
-          "audioSrc": "public/data/audio/dummy/dummy_338_sideB_2.mp3"
-        }
+        { "text": "Right now I can't emulate the application, my hands are tied.", "audioSrc": "public/data/audio/dummy/dummy_010_sideB_0.mp3" },
+        { "text": "I can't emulate the app right now, my hands are tied.", "audioSrc": "public/data/audio/dummy/dummy_010_sideB_1.mp3" },
+        { "text": "Right now I can't run the emulator for the app; there's nothing I can do.", "audioSrc": "public/data/audio/dummy/dummy_010_sideB_2.mp3" }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_339",
+      "cardId": "dummy_011",
       "cardType": "flippable",
-      "sideA": "Sorry, no vi el mensaje.",
+      "sideA": "Ahora mismo estoy de manos atadas, no puedo testearlo.",
       "sideB": [
-        {
-          "text": "Sorry, I missed your message.",
-          "audioSrc": "public/data/audio/dummy/dummy_339_sideB_0.mp3"
-        },
-        {
-          "text": "Sorry, I didn't see your message.",
-          "audioSrc": "public/data/audio/dummy/dummy_339_sideB_1.mp3"
-        },
-        {
-          "text": "Sorry, I just saw this.",
-          "audioSrc": "public/data/audio/dummy/dummy_339_sideB_2.mp3"
-        },
-        {
-          "text": "Sorry, I missed the message.",
-          "audioSrc": "public/data/audio/dummy/dummy_339_sideB_3.mp3"
-        }
-      ],
-      "note": "\n\n~Sorry, I didn't watch your message.~ is not valid because the verb watch is used for moving images like videos or screens; for text, you must use [see] or [read]."
-    },
-    {
-      "cardId": "dummy_340",
-      "cardType": "flippable",
-      "sideA": "Sabemos que esta función es suficiente, pero debemos mejorarla.",
-      "sideB": [
-        {
-          "text": "We know this feature is good enough, but we need to improve it.",
-          "audioSrc": "public/data/audio/dummy/dummy_340_sideB_0.mp3"
-        },
-        {
-          "text": "We know this feature is sufficient, but we must improve it.",
-          "audioSrc": "public/data/audio/dummy/dummy_340_sideB_1.mp3"
-        },
-        {
-          "text": "We know this feature is adequate, but we need to make it better.",
-          "audioSrc": "public/data/audio/dummy/dummy_340_sideB_2.mp3"
-        }
+        { "text": "Right now my hands are tied, I can't test it.", "audioSrc": "public/data/audio/dummy/dummy_011_sideB_0.mp3" },
+        { "text": "My hands are tied right now, so I can't test it.", "audioSrc": "public/data/audio/dummy/dummy_011_sideB_1.mp3" },
+        { "text": "I can't test it right now, there's nothing I can do.", "audioSrc": "public/data/audio/dummy/dummy_011_sideB_2.mp3" }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_341",
+      "cardId": "dummy_012",
       "cardType": "flippable",
-      "sideA": "Y un código que es posible distinguir entre qué sistema operativo aplica.",
+      "sideA": "Actualiza las fichas de marca ahora.",
       "sideB": [
-        {
-          "text": "And code that can distinguish which operating system applies.",
-          "audioSrc": "public/data/audio/dummy/dummy_341_sideB_0.mp3"
-        },
-        {
-          "text": "And a code that makes it possible to distinguish which OS it applies to.",
-          "audioSrc": "public/data/audio/dummy/dummy_341_sideB_1.mp3"
-        },
-        {
-          "text": "And code that can differentiate which operating system it applies to.",
-          "audioSrc": "public/data/audio/dummy/dummy_341_sideB_2.mp3"
-        }
-      ],
-      "note": "\n\n~And a code that distinguishes which operating system applies.~ is not valid because programming [code] is uncountable and does not take 'a', and the verb apply requires the preposition [to] at the end."
-    },
-    {
-      "cardId": "dummy_342",
-      "cardType": "flippable",
-      "sideA": "Con el tiempo, te acostumbrarás.",
-      "sideB": [
-        {
-          "text": "You'll get used to it over time.",
-          "audioSrc": "public/data/audio/dummy/dummy_342_sideB_0.mp3"
-        },
-        {
-          "text": "With time, you will get used to it.",
-          "audioSrc": "public/data/audio/dummy/dummy_342_sideB_1.mp3"
-        },
-        {
-          "text": "You'll grow accustomed to it over time.",
-          "audioSrc": "public/data/audio/dummy/dummy_342_sideB_2.mp3"
-        },
-        {
-          "text": "Over time, you'll get used to it.",
-          "audioSrc": "public/data/audio/dummy/dummy_342_sideB_3.mp3"
-        }
-      ],
-      "note": "**[er:227]**\n\n~No the time, you'll get used to it.~ is not valid because 'no the time' is not a recognized English phrase for 'con el tiempo'. Use [Over time] or [With time] instead."
-    },
-    {
-      "cardId": "dummy_343",
-      "cardType": "flippable",
-      "sideA": "Estoy acostumbrado a eso.",
-      "sideB": [
-        {
-          "text": "I'm used to that.",
-          "audioSrc": "public/data/audio/dummy/dummy_343_sideB_0.mp3"
-        },
-        {
-          "text": "I am accustomed to that.",
-          "audioSrc": "public/data/audio/dummy/dummy_343_sideB_1.mp3"
-        },
-        {
-          "text": "I've gotten used to that.",
-          "audioSrc": "public/data/audio/dummy/dummy_343_sideB_2.mp3"
-        }
-      ],
-      "note": "**[er:15]**\n\n"
-    },
-    {
-      "cardId": "dummy_344",
-      "cardType": "flippable",
-      "sideA": "Tú tendrías que hacernos saber sobre ese cambio.",
-      "sideB": [
-        {
-          "text": "You would have to let us know about that change.",
-          "audioSrc": "public/data/audio/dummy/dummy_344_sideB_0.mp3"
-        },
-        {
-          "text": "You should let us know about that change.",
-          "audioSrc": "public/data/audio/dummy/dummy_344_sideB_1.mp3"
-        },
-        {
-          "text": "You'd need to inform us about that change.",
-          "audioSrc": "public/data/audio/dummy/dummy_344_sideB_2.mp3"
-        }
+        { "text": "Update the brand tiles now.", "audioSrc": "public/data/audio/dummy/dummy_012_sideB_0.mp3" },
+        { "text": "Update the brand tiles right now.", "audioSrc": "public/data/audio/dummy/dummy_012_sideB_1.mp3" },
+        { "text": "Go ahead and update the brand tiles now.", "audioSrc": "public/data/audio/dummy/dummy_012_sideB_2.mp3" }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_345",
+      "cardId": "dummy_013",
       "cardType": "flippable",
-      "sideA": "Llamó mi atención, por eso le avisé a él.",
+      "sideA": "Toca cada tarjeta de marca aquí.",
       "sideB": [
-        {
-          "text": "It caught my attention, that's why I let him know.",
-          "audioSrc": "public/data/audio/dummy/dummy_345_sideB_0.mp3"
-        },
-        {
-          "text": "It drew my attention, so I warned him.",
-          "audioSrc": "public/data/audio/dummy/dummy_345_sideB_1.mp3"
-        },
-        {
-          "text": "It caught my eye, which is why I told him.",
-          "audioSrc": "public/data/audio/dummy/dummy_345_sideB_2.mp3"
-        },
-        {
-          "text": "It caught my attention, that's why I told him.",
-          "audioSrc": "public/data/audio/dummy/dummy_345_sideB_3.mp3"
-        }
-      ],
-      "note": "\n\n~It called my attention, that's why I let him know.~ is not valid because 'called my attention' is a direct translation from Spanish; the natural English idiom is [caught my attention] or [drew my attention]."
-    },
-    {
-      "cardId": "dummy_346",
-      "cardType": "flippable",
-      "sideA": "Es un cambio trivial, por eso no lo apliqué.",
-      "sideB": [
-        {
-          "text": "It's a trivial change, that's why I didn't apply it.",
-          "audioSrc": "public/data/audio/dummy/dummy_346_sideB_0.mp3"
-        },
-        {
-          "text": "It is a trivial change, so I didn't apply it.",
-          "audioSrc": "public/data/audio/dummy/dummy_346_sideB_1.mp3"
-        },
-        {
-          "text": "It's a minor change, which is why I didn't implement it.",
-          "audioSrc": "public/data/audio/dummy/dummy_346_sideB_2.mp3"
-        }
+        { "text": "Tap each brand tile here.", "audioSrc": "public/data/audio/dummy/dummy_013_sideB_0.mp3" },
+        { "text": "Tap on each brand tile here.", "audioSrc": "public/data/audio/dummy/dummy_013_sideB_1.mp3" },
+        { "text": "Tap each brand card here.", "audioSrc": "public/data/audio/dummy/dummy_013_sideB_2.mp3" }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_347",
+      "cardId": "dummy_014",
       "cardType": "flippable",
-      "sideA": "Es trivial, podemos hacerlo después.",
+      "sideA": "Los bloques de marca mejoraron las ventas.",
       "sideB": [
-        {
-          "text": "It's trivial, we can do it later.",
-          "audioSrc": "public/data/audio/dummy/dummy_347_sideB_0.mp3"
-        },
-        {
-          "text": "It's trivial, we can get to it later.",
-          "audioSrc": "public/data/audio/dummy/dummy_347_sideB_1.mp3"
-        },
-        {
-          "text": "It is trivial, we can do it afterwards.",
-          "audioSrc": "public/data/audio/dummy/dummy_347_sideB_2.mp3"
-        }
+        { "text": "Brand tiles improved sales.", "audioSrc": "public/data/audio/dummy/dummy_014_sideB_0.mp3" },
+        { "text": "Brand tiles boosted sales.", "audioSrc": "public/data/audio/dummy/dummy_014_sideB_1.mp3" },
+        { "text": "The brand tiles improved sales performance.", "audioSrc": "public/data/audio/dummy/dummy_014_sideB_2.mp3" }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_348",
+      "cardId": "dummy_015",
       "cardType": "flippable",
-      "sideA": "Cablea el botón al evento.",
+      "sideA": "La conversacion se perdio para siempre, o solo temporalmente?",
       "sideB": [
-        {
-          "text": "Wire the button to the event.",
-          "audioSrc": "public/data/audio/dummy/dummy_348_sideB_0.mp3"
-        },
-        {
-          "text": "Link the button to the event.",
-          "audioSrc": "public/data/audio/dummy/dummy_348_sideB_1.mp3"
-        },
-        {
-          "text": "Connect the button to the event.",
-          "audioSrc": "public/data/audio/dummy/dummy_348_sideB_2.mp3"
-        }
-      ],
-      "note": "\n\n~It wires the button to the event.~ is not valid because adding 'It' makes the sentence a description, but the original text is an instruction or command that requires the imperative form [Wire]."
-    },
-    {
-      "cardId": "dummy_349",
-      "cardType": "flippable",
-      "sideA": "Enlaza el botón con el evento.",
-      "sideB": [
-        {
-          "text": "Wire the button to the event.",
-          "audioSrc": "public/data/audio/dummy/dummy_349_sideB_0.mp3"
-        },
-        {
-          "text": "Bind the button to the event.",
-          "audioSrc": "public/data/audio/dummy/dummy_349_sideB_1.mp3"
-        },
-        {
-          "text": "Link the button to the event.",
-          "audioSrc": "public/data/audio/dummy/dummy_349_sideB_2.mp3"
-        }
-      ],
-      "note": "\n\n~Wire the button with the event.~ is not valid because the verb [wire] in this context pairs with the preposition [to], not 'with'."
-    },
-    {
-      "cardId": "dummy_350",
-      "cardType": "flippable",
-      "sideA": "Engancha este menú a la nueva función.",
-      "sideB": [
-        {
-          "text": "Wire this menu to the new feature.",
-          "audioSrc": "public/data/audio/dummy/dummy_350_sideB_0.mp3"
-        },
-        {
-          "text": "Hook this menu to the new feature.",
-          "audioSrc": "public/data/audio/dummy/dummy_350_sideB_1.mp3"
-        },
-        {
-          "text": "Link this menu to the new function.",
-          "audioSrc": "public/data/audio/dummy/dummy_350_sideB_2.mp3"
-        }
+        { "text": "Is the conversation lost forever, or only temporarily?", "audioSrc": "public/data/audio/dummy/dummy_015_sideB_0.mp3" },
+        { "text": "Is the conversation lost for good, or only temporarily?", "audioSrc": "public/data/audio/dummy/dummy_015_sideB_1.mp3" },
+        { "text": "Is the conversation gone forever, or just for now?", "audioSrc": "public/data/audio/dummy/dummy_015_sideB_2.mp3" }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_351",
+      "cardId": "dummy_016",
       "cardType": "flippable",
-      "sideA": "Hagamos que funcione.",
+      "sideA": "Cuando A es diferente de B, podemos acceder.",
       "sideB": [
-        {
-          "text": "Let's wire this up.",
-          "audioSrc": "public/data/audio/dummy/dummy_351_sideB_0.mp3"
-        },
-        {
-          "text": "Let's get it working.",
-          "audioSrc": "public/data/audio/dummy/dummy_351_sideB_1.mp3"
-        },
-        {
-          "text": "Let's make it work.",
-          "audioSrc": "public/data/audio/dummy/dummy_351_sideB_2.mp3"
-        },
-        {
-          "text": "Let's make this work.",
-          "audioSrc": "public/data/audio/dummy/dummy_351_sideB_3.mp3"
-        }
-      ],
-      "note": "\n\n~Let's make it to work.~ is not valid because the causative verb [make] must be followed directly by the base verb without 'to'."
-    },
-    {
-      "cardId": "dummy_352",
-      "cardType": "flippable",
-      "sideA": "Dijeron que sería clonado el ambiente, pero aún no lo ha sido.",
-      "sideB": [
-        {
-          "text": "They said the environment would be cloned, but it hasn't been yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_352_sideB_0.mp3"
-        },
-        {
-          "text": "They said the environment was going to be cloned, but it hasn't been done yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_352_sideB_1.mp3"
-        },
-        {
-          "text": "They mentioned the environment would be cloned, but it still hasn't been.",
-          "audioSrc": "public/data/audio/dummy/dummy_352_sideB_2.mp3"
-        }
-      ],
-      "note": "**[er:162]**\n\n~They said the environment would be cloned, but it didn't yet.~ is not valid because the first clause uses the passive voice 'be cloned', so the second clause requires the matching auxiliary [hasn't been] or [wasn't], not 'didn't'."
-    },
-    {
-      "cardId": "dummy_353",
-      "cardType": "flippable",
-      "sideA": "Cuando sea clonado el ambiente, podríamos replicar el problema.",
-      "sideB": [
-        {
-          "text": "Once the environment is cloned, we could replicate the issue.",
-          "audioSrc": "public/data/audio/dummy/dummy_353_sideB_0.mp3"
-        },
-        {
-          "text": "When the environment gets cloned, we could reproduce the problem.",
-          "audioSrc": "public/data/audio/dummy/dummy_353_sideB_1.mp3"
-        },
-        {
-          "text": "When the environment is cloned, we'll be able to replicate the issue.",
-          "audioSrc": "public/data/audio/dummy/dummy_353_sideB_2.mp3"
-        }
-      ],
-      "note": "\n\n~Once the ambient is cloned, we could replicate the issue.~ is not valid because 'ambient' refers to lighting or sound; the correct term for a software setup is [environment]."
-    },
-    {
-      "cardId": "dummy_354",
-      "cardType": "flippable",
-      "sideA": "Estamos conscientes de ese error, pero no hemos podido replicarlo aún.",
-      "sideB": [
-        {
-          "text": "We are aware of that bug, but we haven't been able to replicate it yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_354_sideB_0.mp3"
-        },
-        {
-          "text": "We're aware of that error, but we haven't managed to reproduce it yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_354_sideB_1.mp3"
-        },
-        {
-          "text": "We know about that bug, but we couldn't replicate it yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_354_sideB_2.mp3"
-        },
-        {
-          "text": "We are aware of that bug, but we weren't able to replicate it yet.",
-          "audioSrc": "public/data/audio/dummy/dummy_354_sideB_3.mp3"
-        }
-      ],
-      "note": "\n\n~We are aware about that bug, but we haven't been able to replicate it yet.~ is not valid because the adjective 'aware' must always be followed by the preposition [of], not 'about'."
-    },
-    {
-      "cardId": "dummy_355",
-      "cardType": "flippable",
-      "sideA": "Colapsa el panel y luego expándelo.",
-      "sideB": [
-        {
-          "text": "Collapse the panel and then expand it.",
-          "audioSrc": "public/data/audio/dummy/dummy_355_sideB_0.mp3"
-        },
-        {
-          "text": "Collapse the panel and expand it afterwards.",
-          "audioSrc": "public/data/audio/dummy/dummy_355_sideB_1.mp3"
-        },
-        {
-          "text": "First collapse the panel, then expand it.",
-          "audioSrc": "public/data/audio/dummy/dummy_355_sideB_2.mp3"
-        }
+        { "text": "When A is different from B, we can access it.", "audioSrc": "public/data/audio/dummy/dummy_016_sideB_0.mp3" },
+        { "text": "When A differs from B, we can gain access.", "audioSrc": "public/data/audio/dummy/dummy_016_sideB_1.mp3" },
+        { "text": "We can access it when A is different from B.", "audioSrc": "public/data/audio/dummy/dummy_016_sideB_2.mp3" }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_356",
+      "cardId": "dummy_017",
       "cardType": "flippable",
-      "sideA": "Puedes colapsar todas las secciones o expandirlas de nuevo.",
+      "sideA": "Cuando B es igual a A, no podemos ver la seccion.",
       "sideB": [
-        {
-          "text": "You can collapse all the sections or expand them again.",
-          "audioSrc": "public/data/audio/dummy/dummy_356_sideB_0.mp3"
-        },
-        {
-          "text": "You can collapse all sections or expand them once more.",
-          "audioSrc": "public/data/audio/dummy/dummy_356_sideB_1.mp3"
-        },
-        {
-          "text": "You're able to collapse all the sections or expand them again.",
-          "audioSrc": "public/data/audio/dummy/dummy_356_sideB_2.mp3"
-        }
+        { "text": "When B is equal to A, we can't see the section.", "audioSrc": "public/data/audio/dummy/dummy_017_sideB_0.mp3" },
+        { "text": "When B equals A, we can't view the section.", "audioSrc": "public/data/audio/dummy/dummy_017_sideB_1.mp3" },
+        { "text": "We can't see the section when B is equal to A.", "audioSrc": "public/data/audio/dummy/dummy_017_sideB_2.mp3" }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_357",
+      "cardId": "dummy_018",
       "cardType": "flippable",
-      "sideA": "Si colapsas el menú, puedes expandirlo cuando lo necesites.",
+      "sideA": "Me tomo ensayo y error hacerlo.",
       "sideB": [
-        {
-          "text": "If you collapse the menu, you can expand it when you need it.",
-          "audioSrc": "public/data/audio/dummy/dummy_357_sideB_0.mp3"
-        },
-        {
-          "text": "If you collapse the menu, you can always expand it when needed.",
-          "audioSrc": "public/data/audio/dummy/dummy_357_sideB_1.mp3"
-        },
-        {
-          "text": "If you collapse the menu, you can expand it whenever you need to.",
-          "audioSrc": "public/data/audio/dummy/dummy_357_sideB_2.mp3"
-        }
+        { "text": "It took me trial and error to do it.", "audioSrc": "public/data/audio/dummy/dummy_018_sideB_0.mp3" },
+        { "text": "It took me some trial and error to get it done.", "audioSrc": "public/data/audio/dummy/dummy_018_sideB_1.mp3" },
+        { "text": "I got it done through trial and error.", "audioSrc": "public/data/audio/dummy/dummy_018_sideB_2.mp3" }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_019",
+      "cardType": "flippable",
+      "sideA": "Me tomo un tiempo realmente, y fue ensayo y error.",
+      "sideB": [
+        { "text": "It really took me a while, and it was trial and error.", "audioSrc": "public/data/audio/dummy/dummy_019_sideB_0.mp3" },
+        { "text": "It actually took some time, and it was all trial and error.", "audioSrc": "public/data/audio/dummy/dummy_019_sideB_1.mp3" },
+        { "text": "It took a while, honestly, through trial and error.", "audioSrc": "public/data/audio/dummy/dummy_019_sideB_2.mp3" }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_020",
+      "cardType": "flippable",
+      "sideA": "Las bandeja contienen múltiples artículos.",
+      "sideB": [
+        { "text": "Flats contain multiple items.", "audioSrc": "public/data/audio/dummy/dummy_020_sideB_0.mp3" },
+        { "text": "Flats hold multiple items.", "audioSrc": "public/data/audio/dummy/dummy_020_sideB_1.mp3" },
+        { "text": "A flat contains several items.", "audioSrc": "public/data/audio/dummy/dummy_020_sideB_2.mp3" }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_021",
+      "cardType": "flippable",
+      "sideA": "Las unidades son artículos individuales.",
+      "sideB": [
+        { "text": "Units are single items.", "audioSrc": "public/data/audio/dummy/dummy_021_sideB_0.mp3" },
+        { "text": "Units are individual items.", "audioSrc": "public/data/audio/dummy/dummy_021_sideB_1.mp3" },
+        { "text": "A unit is a single item.", "audioSrc": "public/data/audio/dummy/dummy_021_sideB_2.mp3" }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_022",
+      "cardType": "flippable",
+      "sideA": "Las devoluciones usan bandejas.",
+      "sideB": [
+        { "text": "Returns use flats.", "audioSrc": "public/data/audio/dummy/dummy_022_sideB_0.mp3" },
+        { "text": "Returns are processed using flats.", "audioSrc": "public/data/audio/dummy/dummy_022_sideB_1.mp3" },
+        { "text": "Flats are used for returns.", "audioSrc": "public/data/audio/dummy/dummy_022_sideB_2.mp3" }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_023",
+      "cardType": "flippable",
+      "sideA": "Nos estamos complicando innecesariamente.",
+      "sideB": [
+        { "text": "We're overcomplicating things unnecessarily.", "audioSrc": "public/data/audio/dummy/dummy_023_sideB_0.mp3" },
+        { "text": "We're making this harder than it needs to be.", "audioSrc": "public/data/audio/dummy/dummy_023_sideB_1.mp3" },
+        { "text": "We're needlessly overcomplicating this.", "audioSrc": "public/data/audio/dummy/dummy_023_sideB_2.mp3" }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_024",
+      "cardType": "flippable",
+      "sideA": "No estoy seguro en este momento, pero déjame revisar el código y te daré la respuesta.",
+      "sideB": [
+        { "text": "I am not sure right now, but let me check the code and I will give you the answer.", "audioSrc": "public/data/audio/dummy/dummy_024_sideB_0.mp3" },
+        { "text": "I'm not sure at the moment, but let me look at the code and I'll get back to you with an answer.", "audioSrc": "public/data/audio/dummy/dummy_024_sideB_1.mp3" },
+        { "text": "I'm not certain right now, but let me review the code and I'll give you the answer.", "audioSrc": "public/data/audio/dummy/dummy_024_sideB_2.mp3" }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_025",
+      "cardType": "flippable",
+      "sideA": "No lo sé en este momento, pero déjame mirar el código y te diré pronto.",
+      "sideB": [
+        { "text": "I do not know right away, but let me look at the code and I will tell you soon.", "audioSrc": "public/data/audio/dummy/dummy_025_sideB_0.mp3" },
+        { "text": "I don't know off the top of my head, but let me check the code and I'll let you know soon.", "audioSrc": "public/data/audio/dummy/dummy_025_sideB_1.mp3" },
+        { "text": "I'm not sure at the moment, but let me look at the code and I'll tell you shortly.", "audioSrc": "public/data/audio/dummy/dummy_025_sideB_2.mp3" }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_026",
+      "cardType": "flippable",
+      "sideA": "No estoy seguro ahora mismo, pero déjame revisar el código rápidamente y te avisaré.",
+      "sideB": [
+        { "text": "I am not sure right now, but let me check the code quickly and I will let you know.", "audioSrc": "public/data/audio/dummy/dummy_026_sideB_0.mp3" },
+        { "text": "I'm not sure right now, but let me quickly check the code and I'll let you know.", "audioSrc": "public/data/audio/dummy/dummy_026_sideB_1.mp3" },
+        { "text": "I'm not certain at the moment, but let me take a quick look at the code and I'll get back to you.", "audioSrc": "public/data/audio/dummy/dummy_026_sideB_2.mp3" }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_027",
+      "cardType": "flippable",
+      "sideA": "No está sobreescribiendo lo que nos llega del backend, no hay problema.",
+      "sideB": [
+        { "text": "It's not overwriting what we get from the backend, so there's no problem.", "audioSrc": "public/data/audio/dummy/dummy_027_sideB_0.mp3" },
+        { "text": "It isn't overwriting what comes in from the backend, no issue there.", "audioSrc": "public/data/audio/dummy/dummy_027_sideB_1.mp3" },
+        { "text": "There's no problem, it's not overwriting the data coming from the backend.", "audioSrc": "public/data/audio/dummy/dummy_027_sideB_2.mp3" }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_028",
+      "cardType": "flippable",
+      "sideA": "Aprovechando el momento, queria preguntarte..",
+      "sideB": [
+        { "text": "While I have the chance, I wanted to ask you something.", "audioSrc": "public/data/audio/dummy/dummy_028_sideB_0.mp3" },
+        { "text": "Taking advantage of the moment, I wanted to ask you.", "audioSrc": "public/data/audio/dummy/dummy_028_sideB_1.mp3" },
+        { "text": "Since I have you here, I wanted to ask you something.", "audioSrc": "public/data/audio/dummy/dummy_028_sideB_2.mp3" }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_029",
+      "cardType": "flippable",
+      "sideA": "Estamos esperando la instancia RED para testear la solucion ahi.",
+      "sideB": [
+        { "text": "We're waiting for the RED instance to test the solution there.", "audioSrc": "public/data/audio/dummy/dummy_029_sideB_0.mp3" },
+        { "text": "We're waiting on the RED instance so we can test the solution there.", "audioSrc": "public/data/audio/dummy/dummy_029_sideB_1.mp3" },
+        { "text": "We're still waiting for the RED instance to test the fix there.", "audioSrc": "public/data/audio/dummy/dummy_029_sideB_2.mp3" }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_030",
+      "cardType": "flippable",
+      "sideA": "Con respecto a su propuesta, necesitamos más tiempo para revisar los detalles.",
+      "sideB": [
+        { "text": "Regarding your proposal, we need more time to review the details.", "audioSrc": "public/data/audio/dummy/dummy_030_sideB_0.mp3" },
+        { "text": "With respect to your proposal, we need more time to go over the details.", "audioSrc": "public/data/audio/dummy/dummy_030_sideB_1.mp3" },
+        { "text": "Regarding your proposal, we need some extra time to review the details.", "audioSrc": "public/data/audio/dummy/dummy_030_sideB_2.mp3" }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_031",
+      "cardType": "flippable",
+      "sideA": "A pesar del clima, el evento al aire libre se llevará a cabo según lo programado.",
+      "sideB": [
+        { "text": "Regardless of the weather, the outdoor event will proceed as scheduled.", "audioSrc": "public/data/audio/dummy/dummy_031_sideB_0.mp3" },
+        { "text": "Despite the weather, the outdoor event will go ahead as planned.", "audioSrc": "public/data/audio/dummy/dummy_031_sideB_1.mp3" },
+        { "text": "Regardless of the weather, the outdoor event will take place as scheduled.", "audioSrc": "public/data/audio/dummy/dummy_031_sideB_2.mp3" }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_032",
+      "cardType": "flippable",
+      "sideA": "La seccion esta disponible en la pantalla de inicio.",
+      "sideB": [
+        { "text": "The section is available on the home screen.", "audioSrc": "public/data/audio/dummy/dummy_032_sideB_0.mp3" },
+        { "text": "The section is available on the home page.", "audioSrc": "public/data/audio/dummy/dummy_032_sideB_1.mp3" },
+        { "text": "You can find the section on the home screen.", "audioSrc": "public/data/audio/dummy/dummy_032_sideB_2.mp3" }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_033",
+      "cardType": "flippable",
+      "sideA": "La rama local esta al dia con la rama remota.",
+      "sideB": [
+        { "text": "The local branch is up to date with the remote branch.", "audioSrc": "public/data/audio/dummy/dummy_033_sideB_0.mp3" },
+        { "text": "The local branch is even with the remote branch.", "audioSrc": "public/data/audio/dummy/dummy_033_sideB_1.mp3" },
+        { "text": "The local branch is in sync with the remote branch.", "audioSrc": "public/data/audio/dummy/dummy_033_sideB_2.mp3" }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_034",
+      "cardType": "flippable",
+      "sideA": "La rama local esta adelantada a la rama remota.",
+      "sideB": [
+        { "text": "The local branch is ahead of the remote branch.", "audioSrc": "public/data/audio/dummy/dummy_034_sideB_0.mp3" },
+        { "text": "The local branch is ahead of the remote one.", "audioSrc": "public/data/audio/dummy/dummy_034_sideB_1.mp3" },
+        { "text": "The local branch has commits the remote branch doesn't.", "audioSrc": "public/data/audio/dummy/dummy_034_sideB_2.mp3" }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_035",
+      "cardType": "flippable",
+      "sideA": "La rama local esta detras de la rama remota.",
+      "sideB": [
+        { "text": "The local branch is behind the remote branch.", "audioSrc": "public/data/audio/dummy/dummy_035_sideB_0.mp3" },
+        { "text": "The local branch is behind the remote one.", "audioSrc": "public/data/audio/dummy/dummy_035_sideB_1.mp3" },
+        { "text": "The local branch is lagging behind the remote branch.", "audioSrc": "public/data/audio/dummy/dummy_035_sideB_2.mp3" }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_036",
+      "cardType": "flippable",
+      "sideA": "Solo espero que no se corte la luz.",
+      "sideB": [
+        { "text": "I just hope the power doesn't go out.", "audioSrc": "public/data/audio/dummy/dummy_036_sideB_0.mp3" },
+        { "text": "I just hope we don't lose power.", "audioSrc": "public/data/audio/dummy/dummy_036_sideB_1.mp3" },
+        { "text": "I only hope the electricity doesn't go out.", "audioSrc": "public/data/audio/dummy/dummy_036_sideB_2.mp3" }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_037",
+      "cardType": "flippable",
+      "sideA": "Click en los 3 puntos, y luego busca configuración.",
+      "sideB": [
+        { "text": "Click the 3 dots, and then look for settings.", "audioSrc": "public/data/audio/dummy/dummy_037_sideB_0.mp3" },
+        { "text": "Click on the three dots, then find settings.", "audioSrc": "public/data/audio/dummy/dummy_037_sideB_1.mp3" },
+        { "text": "Click the three-dot icon and then go to settings.", "audioSrc": "public/data/audio/dummy/dummy_037_sideB_2.mp3" }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_038",
+      "cardType": "flippable",
+      "sideA": "busca los 3 puntos y dale click ahí.",
+      "sideB": [
+        { "text": "Find the 3 dots and click there.", "audioSrc": "public/data/audio/dummy/dummy_038_sideB_0.mp3" },
+        { "text": "Look for the three dots and click on them.", "audioSrc": "public/data/audio/dummy/dummy_038_sideB_1.mp3" },
+        { "text": "Find the three-dot icon and tap it.", "audioSrc": "public/data/audio/dummy/dummy_038_sideB_2.mp3" }
       ],
       "note": null
     }
