@@ -1,6 +1,6 @@
 /* src\components\SrsSettingsModal\SrsSettingsModal.js */
 // A self-contained modal for editing a deck's spaced-repetition settings:
-// new cards/day, max reviews/day, and difficulty, plus a clickable info panel
+// new cards/day, max & min reviews/day, and difficulty, plus a clickable info panel
 // explaining what each control does. Stateless renderer: it reads the current
 // settings on show() and hands the edited values back through an onSave callback.
 class SrsSettingsModal {
@@ -74,7 +74,7 @@ class SrsSettingsModal {
     }
 
     /**
-     * @param {{newPerDay:number, maxReviewsPerDay:number, difficulty:string}} settings
+     * @param {{newPerDay:number, maxReviewsPerDay:number, minReviewsPerDay:number, difficulty:string}} settings
      * @param {string} deckType Deck type ('flippable' | 'multipleChoice' | 'audioChoice'),
      *        used to show the matching grading explanation in the info panel.
      * @param {function} onSave Called with the edited settings object.
@@ -85,6 +85,7 @@ class SrsSettingsModal {
 
         document.getElementById('srs-new-per-day').value = settings.newPerDay;
         document.getElementById('srs-max-reviews').value = settings.maxReviewsPerDay;
+        document.getElementById('srs-min-reviews').value = settings.minReviewsPerDay;
         this.selectedDifficulty = settings.difficulty || 'normal';
         this._paintDifficulty();
         this._paintDeckTypeInfo(deckType);
@@ -111,8 +112,13 @@ class SrsSettingsModal {
 
     _handleSave() {
         const newPerDay = this._clampInt(document.getElementById('srs-new-per-day').value, 0, 9999, 10);
-        const maxReviewsPerDay = this._clampInt(document.getElementById('srs-max-reviews').value, 0, 99999, 100);
-        const settings = { newPerDay, maxReviewsPerDay, difficulty: this.selectedDifficulty };
+        const maxReviewsPerDay = this._clampInt(document.getElementById('srs-max-reviews').value, 0, 99999, 40);
+        // The minimum can never exceed the maximum, or the top-up would fight the cap.
+        const minReviewsPerDay = Math.min(
+            this._clampInt(document.getElementById('srs-min-reviews').value, 0, 99999, 15),
+            maxReviewsPerDay
+        );
+        const settings = { newPerDay, maxReviewsPerDay, minReviewsPerDay, difficulty: this.selectedDifficulty };
         console.log("VERIFY: [SrsSettingsModal] Saving settings:", settings);
         if (this.onSave) this.onSave(settings);
         this.hide();

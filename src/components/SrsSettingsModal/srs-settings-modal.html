@@ -31,6 +31,14 @@
                     class="w-full bg-gray-900 border border-gray-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500" />
             </div>
 
+            <!-- Minimum reviews per day -->
+            <div>
+                <label for="srs-min-reviews" class="block text-sm font-semibold text-gray-200 mb-1">Minimum reviews per day</label>
+                <p class="text-xs text-gray-400 mb-2">If fewer cards are due, the ones closest to their due date are pulled forward so you always have something to review. Set to 0 to turn this off.</p>
+                <input id="srs-min-reviews" type="number" min="0" max="99999" step="1"
+                    class="w-full bg-gray-900 border border-gray-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+            </div>
+
             <!-- Difficulty -->
             <div>
                 <label class="block text-sm font-semibold text-gray-200 mb-1">Difficulty</label>
@@ -51,6 +59,7 @@
                     <p><strong class="text-white">The idea.</strong> Instead of studying every card every time, each card comes back right before you are likely to forget it. Cards you know well are shown less and less often; cards you struggle with come back sooner. This is the most efficient way to move things into long-term memory.</p>
                     <p><strong class="text-white">New cards per day.</strong> Your daily intake of fresh material. Learning a card also creates future reviews, so a bigger number means more reviews building up over time. If you ever feel overwhelmed, lower this for a while and focus on your reviews, then raise it again later.</p>
                     <p><strong class="text-white">Maximum reviews per day.</strong> A safety cap. On large decks, failed cards can stack up into hundreds of due reviews. This limit keeps each day manageable — any extra due cards simply wait for the next day.</p>
+                    <p><strong class="text-white">Minimum reviews per day.</strong> The opposite guard rail. Early on, a young collection can leave gaps in the calendar — a day where every card you've learned happens to be scheduled for later, so nothing is due. Rather than show you an empty day, this pulls forward the cards whose due date is nearest and lets you review them early. It never adds work on top of a full day; it only fills a day that would otherwise be short. Reviewing a little early is harmless — the card is simply rescheduled from that moment.</p>
                     <p><strong class="text-white">Difficulty.</strong> Controls how fast the gaps between reviews grow. <strong class="text-white">High</strong> grows gaps slowly, so you review more often (safer, more work). <strong class="text-white">Low</strong> grows gaps quickly, so you review less often (faster, riskier). <strong class="text-white">Normal</strong> is a balanced default.</p>
                     <p><strong class="text-white">A day ends at midnight.</strong> "Tomorrow" means the next calendar day at 00:00 on your device — not 24 hours after you finish. Your daily New and Review counts also reset at midnight.</p>
 
@@ -75,6 +84,8 @@
                         <p><strong class="text-gray-100">What if I miss a day?</strong><br>Nothing bad happens. The reviews that were due simply wait for you — no penalty, no lost progress. Next time you study they'll be there (up to your daily review cap).</p>
                         <p><strong class="text-gray-100">Why do I only see a few cards when the deck is huge?</strong><br>That's the whole point. You learn a few new cards a day and each one returns only when it's due. This spreads the work out and beats cramming.</p>
                         <p><strong class="text-gray-100">A new card keeps reappearing in the same session — is that broken?</strong><br>No. A brand-new card must be answered correctly a couple of times, a few minutes apart, before it "graduates" to a day-level schedule. That short repetition helps it stick.</p>
+                        <p><strong class="text-gray-100">Why did "To Review" show 0 one day?</strong><br>In a young collection all the cards you learned on the same day tend to come back on the same day, which leaves gaps in between. Set a <em>Minimum reviews per day</em> and those gaps get filled automatically with the cards that are closest to due.</p>
+                        <p><strong class="text-gray-100">I changed the Difficulty and nothing happened. Why?</strong><br>Difficulty changes how the <em>next</em> interval is calculated. Cards that are already scheduled keep the date they were given — it does not pull them back. You'll see the effect from your next review of each card onward.</p>
                         <p><strong class="text-gray-100">Can I keep studying after "Done for today"?</strong><br>Yes — use <em>Extra study</em>. It gives you a batch of random cards you've already seen, purely for practice. It never changes your schedule or tomorrow's reviews.</p>
                         <p><strong class="text-gray-100">What do the top numbers mean?</strong><br><em>New</em> / <em>Learning</em> / <em>To Review</em> are what's waiting for you today; <em>Total</em> is how many cards the deck has in all.</p>
                         <p><strong class="text-gray-100">Does my progress sync between phone and computer?</strong><br>No. It's saved locally in each browser, so your phone and your computer track progress independently.</p>

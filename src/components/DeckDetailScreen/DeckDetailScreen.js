@@ -115,7 +115,7 @@ class DeckDetailScreen {
         document.getElementById('deck-title').textContent = deck.name;
         document.getElementById('deck-description').textContent = deck.description;
 
-        const s = stats || { total: deck.cards.length, seen: 0, newToday: 0, learningDue: 0, reviewToday: 0, dueTotal: 0, nextDueMs: null };
+        const s = stats || { total: deck.cards.length, seen: 0, newToday: 0, learningDue: 0, reviewToday: 0, reviewAhead: 0, dueTotal: 0, nextDueMs: null };
 
         // Stats row: New / Learning / Review due today / Total in deck.
         // Mobile-first: 4 columns with slightly smaller numbers so nothing overflows on narrow screens.
@@ -127,8 +127,12 @@ class DeckDetailScreen {
             <div class="flex-1 px-1"><p class="text-2xl sm:text-4xl font-bold text-indigo-400">${s.total}</p><p class="text-xs sm:text-sm text-gray-500 dark:text-gray-400">Total</p></div>
         `;
 
+        // When the daily minimum topped the day up, say so — otherwise the count looks arbitrary.
+        const aheadNote = s.reviewAhead > 0
+            ? ` ${s.reviewAhead} of them pulled forward to meet your daily minimum.`
+            : '';
         document.getElementById('total-progress-text').textContent =
-            `You've seen ${s.seen} of ${s.total} cards. ${s.dueTotal} due today.`;
+            `You've seen ${s.seen} of ${s.total} cards. ${s.dueTotal} due today.${aheadNote}`;
 
         // Start button reflects whether anything is due today.
         const startBtn = document.getElementById('start-quiz-btn');

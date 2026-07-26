@@ -29,6 +29,7 @@ class SrsService {
     static EASE_EASY = 0.15;               // ease bonus when a review card is graded 'easy'
     static EASY_BONUS = 1.3;               // extra interval multiplier for 'easy'
     static LAPSE_MULT = 0.5;               // interval kept (of the old one) after a lapse
+    static MAX_INTERVAL_DAYS = 365;        // ceiling, so a card never disappears for years
 
     /**
      * Maps the user-facing difficulty setting to an interval modifier.
@@ -61,6 +62,27 @@ class SrsService {
         return d.getTime();
     }
 
+    /**
+     * Anki-style interval fuzz. Without it, every card learned on the same day keeps
+     * the SAME interval forever, so the whole batch moves through the calendar in
+     * lockstep: some days get a big pile of reviews and the days in between get
+     * literally nothing. Fuzz spreads each batch out a little every time it is
+     * scheduled, which dissolves those clumps.
+     * The record still stores the CLEAN interval; only the due date is fuzzed, so
+     * the multiplier chain never drifts.
+     * @param {number} days clean interval in days
+     * @returns {number} the interval to actually schedule with
+     */
+    static fuzzDays(days) {
+        if (days < 2) return days;                       // 1-day intervals have nowhere to move
+        let spread;
+        if (days < 7) spread = Math.max(1, days * 0.25);
+        else if (days < 20) spread = days * 0.15;
+        else spread = days * 0.05;
+        const delta = Math.round((Math.random() * 2 - 1) * spread);
+        return Math.max(1, days + delta);
+    }
+
     /** A fresh record for a card about to leave the 'new' pool. */
     static newRecord() {
         return { state: 'new', due: 0, interval: 0, ease: this.START_EASE, reps: 0, lapses: 0, stepIndex: 0 };
@@ -82,7 +104,9 @@ class SrsService {
         const wasReview = !!existing && existing.state === 'review';
         const r = existing ? { ...existing } : this.newRecord();
 
-        const scheduleDays = (days) => this.startOfDayMs(now) + Math.max(1, days) * this.DAY_MS;
+        const clampDays = (days) => Math.min(this.MAX_INTERVAL_DAYS, Math.max(1, Math.round(days)));
+        // The record keeps the clean interval; the due date gets the fuzz (see fuzzDays).
+        const setInterval = (days) => { r.interval = clampDays(days); r.due = this.startOfDayMs(now) + this.fuzzDays(r.interval) * this.DAY_MS; };
         const scheduleMin = (min) => now + min * 60 * 1000;
 
         const state = r.state === 'new' ? 'learning' : r.state; // a graded 'new' card enters learning
@@ -91,11 +115,11 @@ class SrsService {
             if (grade === 'again') {
                 r.state = 'learning'; r.stepIndex = 0; r.due = scheduleMin(this.LEARNING_STEPS_MIN[0]);
             } else if (grade === 'easy') {
-                r.state = 'review'; r.stepIndex = 0; r.interval = this.EASY_GRADUATE_DAYS; r.reps += 1; r.due = scheduleDays(r.interval);
+                r.state = 'review'; r.stepIndex = 0; r.reps += 1; setInterval(this.EASY_GRADUATE_DAYS * mod);
             } else { // good
                 const next = r.stepIndex + 1;
                 if (next >= this.LEARNING_STEPS_MIN.length) {
-                    r.state = 'review'; r.stepIndex = 0; r.interval = this.GRADUATE_DAYS; r.reps += 1; r.due = scheduleDays(r.interval);
+                    r.state = 'review'; r.stepIndex = 0; r.reps += 1; setInterval(this.GRADUATE_DAYS * mod);
                 } else {
                     r.state = 'learning'; r.stepIndex = next; r.due = scheduleMin(this.LEARNING_STEPS_MIN[next]);
                 }
@@ -106,9 +130,8 @@ class SrsService {
             } else {
                 const next = r.stepIndex + 1;
                 if (grade === 'easy' || next >= this.RELEARN_STEPS_MIN.length) {
-                    r.state = 'review'; r.stepIndex = 0;
-                    r.interval = Math.max(1, Math.round((r.interval || 1) * mod));
-                    r.reps += 1; r.due = scheduleDays(r.interval);
+                    r.state = 'review'; r.stepIndex = 0; r.reps += 1;
+                    setInterval((r.interval || 1) * mod);
                 } else {
                     r.state = 'relearning'; r.stepIndex = next; r.due = scheduleMin(this.RELEARN_STEPS_MIN[next]);
                 }
@@ -117,15 +140,13 @@ class SrsService {
             if (grade === 'again') {
                 r.lapses += 1;
                 r.ease = Math.max(this.MIN_EASE, r.ease + this.EASE_AGAIN);
-                r.interval = Math.max(1, Math.round((r.interval || 1) * this.LAPSE_MULT)); // remembered for re-graduation
+                r.interval = clampDays((r.interval || 1) * this.LAPSE_MULT); // remembered for re-graduation
                 r.state = 'relearning'; r.stepIndex = 0; r.due = scheduleMin(this.RELEARN_STEPS_MIN[0]);
             } else if (grade === 'easy') {
                 r.ease = r.ease + this.EASE_EASY;
-                r.interval = Math.max(1, Math.round((r.interval || 1) * r.ease * this.EASY_BONUS * mod));
-                r.reps += 1; r.due = scheduleDays(r.interval);
+                r.reps += 1; setInterval((r.interval || 1) * r.ease * this.EASY_BONUS * mod);
             } else { // good
-                r.interval = Math.max(1, Math.round((r.interval || 1) * r.ease * mod));
-                r.reps += 1; r.due = scheduleDays(r.interval);
+                r.reps += 1; setInterval((r.interval || 1) * r.ease * mod);
             }
         }
 
@@ -176,40 +197,80 @@ class SrsService {
     }
 
     /**
-     * Builds the ordered list of cardIds for a fresh study session, honoring the
-     * daily new/review caps. Learning/relearning cards that are due are always
-     * included (they are time-sensitive and not capped).
-     * @returns {string[]} cardIds
+     * THE single source of truth for "what is waiting for me today".
+     * Both computeQueue (the real session) and computeStats (the dashboard numbers)
+     * go through this, so the counters on the deck screen can never disagree with
+     * the session you actually get.
+     *
+     * Selection order:
+     *   1. learning/relearning cards that are due  — time-sensitive, never capped
+     *   2. review cards that are due               — oldest first, up to maxReviewsPerDay
+     *   3. "review ahead" top-up                   — only if 1+2 fall short of
+     *      minReviewsPerDay: pulls forward the cards whose due date is closest,
+     *      so a day with nothing scheduled is never an empty day.
+     *   4. brand-new cards                         — up to newPerDay
+     *
+     * @returns {{learning:string[], review:string[], ahead:string[], fresh:string[],
+     *            newAvailable:number, seen:number, total:number, records:object}}
      */
-    static computeQueue(deckId, cards, ignoredSet, settings, now = Date.now()) {
+    static _partition(deckId, cards, ignoredSet, settings, now = Date.now()) {
         const records = StorageService.loadSrsRecords(deckId);
         const daily = this.ensureDailyFresh(deckId);
         const studyable = cards.filter(c => !ignoredSet.has(c.cardId));
 
-        const learning = [], review = [], fresh = [];
+        const learning = [], review = [], future = [], fresh = [];
+        let seen = 0;
         for (const card of studyable) {
             const rec = records[card.cardId];
             if (!rec || rec.state === 'new') { fresh.push(card.cardId); continue; }
+            seen++;
+            const entry = { id: card.cardId, due: rec.due };
             if (rec.state === 'learning' || rec.state === 'relearning') {
-                if (rec.due <= now) learning.push({ id: card.cardId, due: rec.due });
+                if (rec.due <= now) learning.push(entry);
             } else if (rec.state === 'review') {
-                if (rec.due <= now) review.push({ id: card.cardId, due: rec.due });
+                if (rec.due <= now) review.push(entry); else future.push(entry);
             }
         }
         learning.sort((a, b) => a.due - b.due);
         review.sort((a, b) => a.due - b.due);
+        future.sort((a, b) => a.due - b.due); // soonest-due first = the most "owed" cards
 
         const newCap = Math.max(0, settings.newPerDay - daily.newIntroduced);
         const reviewCap = Math.max(0, settings.maxReviewsPerDay - daily.reviewsDone);
+
+        const chosenLearning = learning.map(x => x.id);
+        const chosenReview = review.slice(0, reviewCap).map(x => x.id);
+
+        // Daily minimum: top up from the future queue when today is (almost) empty.
+        const minTarget = Math.max(0, (settings.minReviewsPerDay || 0) - daily.reviewsDone);
+        const alreadyQueued = chosenLearning.length + chosenReview.length;
+        const remainingCap = Math.max(0, reviewCap - chosenReview.length);
+        const shortfall = Math.min(Math.max(0, minTarget - alreadyQueued), remainingCap);
+        const chosenAhead = future.slice(0, shortfall).map(x => x.id);
+
+        return {
+            learning: chosenLearning,
+            review: chosenReview,
+            ahead: chosenAhead,
+            fresh: fresh.slice(0, newCap),
+            newAvailable: fresh.length,
+            seen,
+            total: studyable.length,
+            records
+        };
+    }
+
+    /**
+     * Builds the ordered list of cardIds for a fresh study session.
+     * @returns {string[]} cardIds
+     */
+    static computeQueue(deckId, cards, ignoredSet, settings, now = Date.now()) {
+        const p = this._partition(deckId, cards, ignoredSet, settings, now);
         const shuffle = (arr) => arr.sort(() => 0.5 - Math.random());
 
-        const chosenNew = shuffle(fresh.slice()).slice(0, newCap);
-        const chosenReview = review.slice(0, reviewCap).map(x => x.id);
-        const chosenLearning = learning.map(x => x.id);
-
-        // Learning cards first (time-sensitive), then a shuffled mix of reviews + new.
-        const queue = [...chosenLearning, ...shuffle([...chosenReview, ...chosenNew])];
-        console.log(`DEBUG: [SrsService] computeQueue -> learning=${chosenLearning.length}, review=${chosenReview.length}, new=${chosenNew.length}.`);
+        // Learning cards first (time-sensitive), then a shuffled mix of everything else.
+        const queue = [...p.learning, ...shuffle([...p.review, ...p.ahead, ...p.fresh])];
+        console.log(`DEBUG: [SrsService] computeQueue -> learning=${p.learning.length}, review=${p.review.length}, ahead=${p.ahead.length}, new=${p.fresh.length}.`);
         return queue;
     }
 
@@ -242,36 +303,25 @@ class SrsService {
 
     /**
      * Computes the dashboard stats shown on the spaced-mode deck detail screen.
+     * Derived from the same _partition() the session uses, so the numbers on the
+     * card and the size of the session you get are always identical.
+     * `reviewAhead` is the slice pulled forward by the daily-minimum setting.
      * @returns {{total:number, seen:number, newToday:number, learningDue:number,
-     *            reviewToday:number, dueTotal:number, nextDueMs:number|null}}
+     *            reviewToday:number, reviewAhead:number, dueTotal:number, nextDueMs:number|null}}
      */
     static computeStats(deckId, cards, ignoredSet, settings, now = Date.now()) {
-        const records = StorageService.loadSrsRecords(deckId);
-        const daily = this.ensureDailyFresh(deckId);
-        const studyable = cards.filter(c => !ignoredSet.has(c.cardId));
-
-        let seen = 0, learningDue = 0, reviewDue = 0, newAvailable = 0;
-        for (const card of studyable) {
-            const rec = records[card.cardId];
-            if (!rec || rec.state === 'new') { newAvailable++; continue; }
-            seen++;
-            if ((rec.state === 'learning' || rec.state === 'relearning') && rec.due <= now) learningDue++;
-            else if (rec.state === 'review' && rec.due <= now) reviewDue++;
-        }
-
-        const newCap = Math.max(0, settings.newPerDay - daily.newIntroduced);
-        const reviewCap = Math.max(0, settings.maxReviewsPerDay - daily.reviewsDone);
-        const newToday = Math.min(newAvailable, newCap);
-        const reviewToday = Math.min(reviewDue, reviewCap);
+        const p = this._partition(deckId, cards, ignoredSet, settings, now);
+        const reviewToday = p.review.length + p.ahead.length;
 
         return {
-            total: studyable.length,
-            seen,
-            newToday,
-            learningDue,
+            total: p.total,
+            seen: p.seen,
+            newToday: p.fresh.length,
+            learningDue: p.learning.length,
             reviewToday,
-            dueTotal: newToday + learningDue + reviewToday,
-            nextDueMs: this.getNextDueMs(records, now)
+            reviewAhead: p.ahead.length,
+            dueTotal: p.fresh.length + p.learning.length + reviewToday,
+            nextDueMs: this.getNextDueMs(p.records, now)
         };
     }
 }

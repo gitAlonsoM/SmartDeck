@@ -553,10 +553,10 @@ class StorageService {
     /**
      * Loads the SRS settings for a deck, merged over sensible defaults.
      * @param {string} deckId
-     * @returns {{newPerDay:number, maxReviewsPerDay:number, difficulty:'low'|'normal'|'high'}}
+     * @returns {{newPerDay:number, maxReviewsPerDay:number, minReviewsPerDay:number, difficulty:'low'|'normal'|'high'}}
      */
     static loadSrsSettings(deckId) {
-        const defaults = { newPerDay: 10, maxReviewsPerDay: 100, difficulty: 'normal' };
+        const defaults = { newPerDay: 10, maxReviewsPerDay: 40, minReviewsPerDay: 15, difficulty: 'normal' };
         if (!deckId) return { ...defaults };
         try {
             const raw = localStorage.getItem(`${this.STORAGE_KEY_SRS_SETTINGS_PREFIX}${deckId}`);

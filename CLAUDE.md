@@ -78,6 +78,25 @@ Audio path convention: `public/data/audio/<deck-slug>/<cardId>_sideB_<N>.mp3` (0
 
 ## Recent decisions
 
+### SRS: interval fuzz + daily minimum reviews (2026-07-26)
+
+Fixes a "0 cards to review" day reported after ~1 week of study, and adds the guard rail that prevents it structurally.
+
+**What changed in `SrsService.js`:**
+- **`fuzzDays(days)`** (new) — Anki-style interval fuzz (±25% under 7d, ±15% under 20d, ±5% above). Without it every card learned on the same day keeps an identical interval forever, so whole batches march through the calendar in lockstep and the days in between get nothing. **The record stores the clean `interval`; only `due` is fuzzed**, so the ease/interval multiplier chain never drifts.
+- **`_partition()`** (new) — the single source of truth for "what is waiting today". Both `computeQueue` (the real session) and `computeStats` (the dashboard) now derive from it, so the counters on the deck screen can never disagree with the session you actually get. Selection order: due learning → due reviews (capped) → review-ahead top-up → new.
+- **`minReviewsPerDay` top-up** — when due learning + due reviews fall short of the minimum, cards are pulled forward from the *future* review queue, soonest-due first. Bounded by `maxReviewsPerDay` and offset by `daily.reviewsDone`, so it never adds work on top of an already-full day and never fires twice in one day.
+- **Difficulty now applies at graduation too** (`GRADUATE_DAYS * mod`, `EASY_GRADUATE_DAYS * mod`). Previously the modifier only kicked in on the *second* review, so changing Difficulty appeared to do nothing on a young deck.
+- **`MAX_INTERVAL_DAYS = 365`** ceiling, so repeated Easy (4d → 14d → 51d → 190d) can't send a card away for years.
+
+**Defaults changed** in `StorageService.loadSrsSettings`: `maxReviewsPerDay` 100 → **40**, new `minReviewsPerDay` **15**. Existing per-deck saved settings win over defaults (they're spread over them), so users who set 100 keep 100 but *do* pick up `minReviewsPerDay: 15`.
+
+**Important:** difficulty and the other settings only affect cards from their *next* grading onward — nothing retroactively reschedules already-scheduled cards. The daily minimum is what makes a settings change visible immediately.
+
+Verified by driving the real `SrsService.js` in a Node VM with a fake `StorageService` and a controllable clock (30-day simulations, minimum on/off). The floor holds at 15/day and hands off to genuine due volume around day 16 as the collection matures.
+
+**Card edits never affect scheduling.** SRS records live in `localStorage` under `smart-decks-v3-srs-<deckId>`, keyed by `cardId`; `update_deck.py` replaces cards in-place by `cardId`. Rewriting a card's text/note/audio leaves its schedule untouched. Only changing a `cardId` (or the deck's `id`) orphans a record.
+
 ### Session repetition counter on cards (2026-06-27)
 A small amber badge (`↻ N`) on each quiz card shows how many times that card has appeared in the current **session** (the span from when the deck is first studied until it is completed or deliberately reset — *not* a single round). It is intentionally **reused from the existing per-card metrics** so it can never drift from the "Generate Progress Report" feature.
 
