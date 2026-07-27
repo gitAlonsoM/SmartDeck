@@ -104,6 +104,10 @@
         {
           "text": "I'll be right back.",
           "audioSrc": "public/data/audio/dummy/dummy_005_sideB_2.mp3"
+        },
+        {
+          "text": "I'll be right back in a minute.",
+          "audioSrc": "public/data/audio/dummy/dummy_005_sideB_3.mp3"
         }
       ],
       "note": null
@@ -132,6 +136,10 @@
         {
           "text": "I'll be back soon.",
           "audioSrc": "public/data/audio/dummy/dummy_006_sideB_4.mp3"
+        },
+        {
+          "text": "I'll be right back.",
+          "audioSrc": "public/data/audio/dummy/dummy_006_sideB_5.mp3"
         }
       ],
       "note": null
@@ -172,6 +180,14 @@
         {
           "text": "Having both microphones open causes the audio to overlap.",
           "audioSrc": "public/data/audio/dummy/dummy_008_sideB_2.mp3"
+        },
+        {
+          "text": "The audio overlaps when 2 microphones are open.",
+          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_3.mp3"
+        },
+        {
+          "text": "The audio gets overlapped when both microphones are open.",
+          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_4.mp3"
         }
       ],
       "note": null
@@ -194,7 +210,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_009_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~It's supposed to be fixed that~ is incorrect because you cannot use both [It] and [that] as subjects/objects in this way. You can say [That is supposed to be fixed] or [It is supposed to be fixed]."
     },
     {
       "cardId": "dummy_010",
@@ -214,7 +230,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_010_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~Right now I can't emulate the application, I'm hands tied~ is incorrect. The correct idiom is [my hands are tied], not \"I'm hands tied\"."
     },
     {
       "cardId": "dummy_011",
@@ -234,7 +250,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_011_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~Right now I'm hands tied, I can't test it~ is incorrect because the expression is [my hands are tied]. You cannot say \"I'm hands tied\"."
     },
     {
       "cardId": "dummy_012",
@@ -274,7 +290,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_013_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "In UI design, a [tile] is usually a flat, clickable square or rectangle that navigates to a new section or launches an app, whereas a [card] often contains more complex, heterogeneous information (text, images, buttons) grouped together."
     },
     {
       "cardId": "dummy_014",
@@ -292,6 +308,10 @@
         {
           "text": "The brand tiles improved sales performance.",
           "audioSrc": "public/data/audio/dummy/dummy_014_sideB_2.mp3"
+        },
+        {
+          "text": "Brand tiles improved the sales.",
+          "audioSrc": "public/data/audio/dummy/dummy_014_sideB_3.mp3"
         }
       ],
       "note": null
@@ -484,6 +504,14 @@
         {
           "text": "We're needlessly overcomplicating this.",
           "audioSrc": "public/data/audio/dummy/dummy_023_sideB_2.mp3"
+        },
+        {
+          "text": "We're complicating unnecessarily.",
+          "audioSrc": "public/data/audio/dummy/dummy_023_sideB_3.mp3"
+        },
+        {
+          "text": "We're overcomplicating unnecessarily.",
+          "audioSrc": "public/data/audio/dummy/dummy_023_sideB_4.mp3"
         }
       ],
       "note": "~We're getting in trouble unnecessarily~ changes the meaning. To [get in trouble] means to be punished or caught doing something wrong, not to make a task more complex."
@@ -572,6 +600,10 @@
         {
           "text": "There's no problem, it's not overwriting the data coming from the backend.",
           "audioSrc": "public/data/audio/dummy/dummy_027_sideB_2.mp3"
+        },
+        {
+          "text": "It's not overwriting what we received from the backend, so there's no problem.",
+          "audioSrc": "public/data/audio/dummy/dummy_027_sideB_3.mp3"
         }
       ],
       "note": null
@@ -718,7 +750,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_034_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~The local branch is ahead from the remote branch~ is incorrect because the preposition used with 'ahead' is [of], not 'from'."
     },
     {
       "cardId": "dummy_035",
@@ -738,7 +770,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_035_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~The local branch is behind from/of/to the remote branch~ are all incorrect. The word [behind] acts directly as the preposition here, so it doesn't need 'from', 'of', or 'to'. It is simply [behind the remote branch]."
     },
     {
       "cardId": "dummy_036",
@@ -764,6 +796,10 @@
         {
           "text": "I just hope the power doesn't cut out.",
           "audioSrc": "public/data/audio/dummy/dummy_036_sideB_4.mp3"
+        },
+        {
+          "text": "I just hope the power doesn't go off.",
+          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_5.mp3"
         }
       ],
       "note": null
