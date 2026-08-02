@@ -108,9 +108,13 @@
         {
           "text": "I'll be right back in a minute.",
           "audioSrc": "public/data/audio/dummy/dummy_005_sideB_3.mp3"
+        },
+        {
+          "text": "I'll come back in a minute.",
+          "audioSrc": "public/data/audio/dummy/dummy_005_sideB_4.mp3"
         }
       ],
-      "note": null
+      "note": "~I'll come in a minute~ means you will arrive at a place, but it does not imply returning ([volver]). To express returning, use [come back] or [be back]."
     },
     {
       "cardId": "dummy_006",
@@ -140,9 +144,13 @@
         {
           "text": "I'll be right back.",
           "audioSrc": "public/data/audio/dummy/dummy_006_sideB_5.mp3"
+        },
+        {
+          "text": "I'll be back.",
+          "audioSrc": "public/data/audio/dummy/dummy_006_sideB_6.mp3"
         }
       ],
-      "note": null
+      "note": "~I'll come~ means you are going to arrive, not that you are returning. Use [be back] or [come back] to express \"regreso\"."
     },
     {
       "cardId": "dummy_007",
@@ -160,9 +168,17 @@
         {
           "text": "Yes, I'm here, it's just that having both microphones open makes the audio overlap.",
           "audioSrc": "public/data/audio/dummy/dummy_007_sideB_2.mp3"
+        },
+        {
+          "text": "Yes, I'm here, it's just that the audio gets overlapped when both microphones are open.",
+          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_3.mp3"
+        },
+        {
+          "text": "Yes, I'm here, it's just that the audio overlaps when both microphones are opened.",
+          "audioSrc": "public/data/audio/dummy/dummy_007_sideB_4.mp3"
         }
       ],
-      "note": null
+      "note": "Yes, [open] can function as both an adjective and a verb. In this context, it acts as an adjective describing the state of the microphones."
     },
     {
       "cardId": "dummy_008",
@@ -190,7 +206,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_008_sideB_4.mp3"
         }
       ],
-      "note": null
+      "note": "~The audio gets overlapped having both microphones open~ sounds unnatural because the clause [having both microphones open] needs a connector. It is better to say [when having] or use a subordinate clause like [when both microphones are open]."
     },
     {
       "cardId": "dummy_009",
@@ -230,7 +246,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_010_sideB_2.mp3"
         }
       ],
-      "note": "~Right now I can't emulate the application, I'm hands tied~ is incorrect. The correct idiom is [my hands are tied], not \"I'm hands tied\"."
+      "note": "~Right now I can't emulate the application, I'm hands tied~ is incorrect. The correct idiom is [my hands are tied], not \"I'm hands tied\".\n\n~...I have both hands tied~ is not used for the figurative idiom. The fixed expression is [my hands are tied]."
     },
     {
       "cardId": "dummy_011",
@@ -250,7 +266,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_011_sideB_2.mp3"
         }
       ],
-      "note": "~Right now I'm hands tied, I can't test it~ is incorrect because the expression is [my hands are tied]. You cannot say \"I'm hands tied\"."
+      "note": "~Right now I'm hands tied, I can't test it~ is incorrect because the expression is [my hands are tied]. You cannot say \"I'm hands tied\".\n\n~Right now I have both hands tied, I can't test it~ is incorrect for the idiom. While grammatically fine for a literal situation, the figurative expression is always [my hands are tied]."
     },
     {
       "cardId": "dummy_012",
@@ -290,7 +306,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_013_sideB_2.mp3"
         }
       ],
-      "note": "In UI design, a [tile] is usually a flat, clickable square or rectangle that navigates to a new section or launches an app, whereas a [card] often contains more complex, heterogeneous information (text, images, buttons) grouped together."
+      "note": "In UI design, a [tile] is usually a flat, clickable square or rectangle that navigates to a new section or launches an app, whereas a [card] often contains more complex, heterogeneous information (text, images, buttons) grouped together.\n\n~Touch each brand tile here~ is understandable, but for digital interfaces and screens, the correct verb is [tap]. [Touch] is generally used for physical contact rather than interacting with a UI element."
     },
     {
       "cardId": "dummy_014",
@@ -334,7 +350,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_015_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~Does the conversation lose forever...~ and ~Did the conversation lose forever...~ are incorrect because [lose] is active. A conversation cannot lose something; it must be passive ([is the conversation lost] or [did the conversation get lost])."
     },
     {
       "cardId": "dummy_016",
@@ -358,7 +374,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_016_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "~When A is different from B, we can access~ is missing an object. The verb [access] is transitive in English and requires a direct object (e.g., [access it], [gain access])."
     },
     {
       "cardId": "dummy_017",
@@ -486,7 +502,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_022_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "In logistics and mail sorting, a [flat] refers to a large envelope, magazine, or a flat sorting tray. A [tray] is a shallow container used to hold, sort, or carry items."
     },
     {
       "cardId": "dummy_023",
@@ -604,6 +620,10 @@
         {
           "text": "It's not overwriting what we received from the backend, so there's no problem.",
           "audioSrc": "public/data/audio/dummy/dummy_027_sideB_3.mp3"
+        },
+        {
+          "text": "It isn't overwriting what comes from the backend, so there is no issue there.",
+          "audioSrc": "public/data/audio/dummy/dummy_027_sideB_4.mp3"
         }
       ],
       "note": null
@@ -690,7 +710,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_031_sideB_2.mp3"
         }
       ],
-      "note": "**[er:33]**\n\n"
+      "note": "**[er:33]**\n\n~Regardless the weather...~ is incorrect because the preposition [of] is missing. The correct fixed phrase is [regardless of]."
     },
     {
       "cardId": "dummy_032",
@@ -802,7 +822,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_036_sideB_5.mp3"
         }
       ],
-      "note": null
+      "note": "**[pv:44]**\n\n**[pv:204]**\n\n"
     },
     {
       "cardId": "dummy_037",
