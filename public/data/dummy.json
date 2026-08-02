@@ -29,66 +29,6 @@
       "note": null
     },
     {
-      "cardId": "dummy_002",
-      "cardType": "flippable",
-      "sideA": "Necesitamos producción clonada en Blue.",
-      "sideB": [
-        {
-          "text": "We need production cloned in Blue.",
-          "audioSrc": "public/data/audio/dummy/dummy_002_sideB_0.mp3"
-        },
-        {
-          "text": "We need a clone of production in Blue.",
-          "audioSrc": "public/data/audio/dummy/dummy_002_sideB_1.mp3"
-        },
-        {
-          "text": "We need a production clone on Blue.",
-          "audioSrc": "public/data/audio/dummy/dummy_002_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_003",
-      "cardType": "flippable",
-      "sideA": "Necesitamos el ambiente de producción clonado en Blue.",
-      "sideB": [
-        {
-          "text": "We need the production environment cloned in Blue.",
-          "audioSrc": "public/data/audio/dummy/dummy_003_sideB_0.mp3"
-        },
-        {
-          "text": "We need the production environment cloned onto Blue.",
-          "audioSrc": "public/data/audio/dummy/dummy_003_sideB_1.mp3"
-        },
-        {
-          "text": "We need a clone of the production environment in Blue.",
-          "audioSrc": "public/data/audio/dummy/dummy_003_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_004",
-      "cardType": "flippable",
-      "sideA": "Así puedo estar más involucrado en tus procesos.",
-      "sideB": [
-        {
-          "text": "That way I can be more involved in your processes.",
-          "audioSrc": "public/data/audio/dummy/dummy_004_sideB_0.mp3"
-        },
-        {
-          "text": "That way I can get more involved in your processes.",
-          "audioSrc": "public/data/audio/dummy/dummy_004_sideB_1.mp3"
-        },
-        {
-          "text": "This way I can be more hands-on with your processes.",
-          "audioSrc": "public/data/audio/dummy/dummy_004_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
       "cardId": "dummy_005",
       "cardType": "flippable",
       "sideA": "Vuelvo en un minuto.",
@@ -269,26 +209,6 @@
       "note": "~Right now I'm hands tied, I can't test it~ is incorrect because the expression is [my hands are tied]. You cannot say \"I'm hands tied\".\n\n~Right now I have both hands tied, I can't test it~ is incorrect for the idiom. While grammatically fine for a literal situation, the figurative expression is always [my hands are tied]."
     },
     {
-      "cardId": "dummy_012",
-      "cardType": "flippable",
-      "sideA": "Actualiza las fichas de marca ahora.",
-      "sideB": [
-        {
-          "text": "Update the brand tiles now.",
-          "audioSrc": "public/data/audio/dummy/dummy_012_sideB_0.mp3"
-        },
-        {
-          "text": "Update the brand tiles right now.",
-          "audioSrc": "public/data/audio/dummy/dummy_012_sideB_1.mp3"
-        },
-        {
-          "text": "Go ahead and update the brand tiles now.",
-          "audioSrc": "public/data/audio/dummy/dummy_012_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
       "cardId": "dummy_013",
       "cardType": "flippable",
       "sideA": "Toca cada tarjeta de marca aquí.",
@@ -377,110 +297,6 @@
       "note": "~When A is different from B, we can access~ is missing an object. The verb [access] is transitive in English and requires a direct object (e.g., [access it], [gain access])."
     },
     {
-      "cardId": "dummy_017",
-      "cardType": "flippable",
-      "sideA": "Cuando B es igual a A, no podemos ver la seccion.",
-      "sideB": [
-        {
-          "text": "When B is equal to A, we can't see the section.",
-          "audioSrc": "public/data/audio/dummy/dummy_017_sideB_0.mp3"
-        },
-        {
-          "text": "When B equals A, we can't view the section.",
-          "audioSrc": "public/data/audio/dummy/dummy_017_sideB_1.mp3"
-        },
-        {
-          "text": "We can't see the section when B is equal to A.",
-          "audioSrc": "public/data/audio/dummy/dummy_017_sideB_2.mp3"
-        }
-      ],
-      "note": "~When B is equal from A~ is incorrect because the adjective 'equal' is always followed by the preposition [to], not 'from'."
-    },
-    {
-      "cardId": "dummy_018",
-      "cardType": "flippable",
-      "sideA": "Me tomo ensayo y error hacerlo.",
-      "sideB": [
-        {
-          "text": "It took me trial and error to do it.",
-          "audioSrc": "public/data/audio/dummy/dummy_018_sideB_0.mp3"
-        },
-        {
-          "text": "It took me some trial and error to get it done.",
-          "audioSrc": "public/data/audio/dummy/dummy_018_sideB_1.mp3"
-        },
-        {
-          "text": "I got it done through trial and error.",
-          "audioSrc": "public/data/audio/dummy/dummy_018_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_019",
-      "cardType": "flippable",
-      "sideA": "Me tomo un tiempo realmente, y fue ensayo y error.",
-      "sideB": [
-        {
-          "text": "It really took me a while, and it was trial and error.",
-          "audioSrc": "public/data/audio/dummy/dummy_019_sideB_0.mp3"
-        },
-        {
-          "text": "It actually took some time, and it was all trial and error.",
-          "audioSrc": "public/data/audio/dummy/dummy_019_sideB_1.mp3"
-        },
-        {
-          "text": "It took a while, honestly, through trial and error.",
-          "audioSrc": "public/data/audio/dummy/dummy_019_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_020",
-      "cardType": "flippable",
-      "sideA": "Las bandeja contienen múltiples artículos.",
-      "sideB": [
-        {
-          "text": "Flats contain multiple items.",
-          "audioSrc": "public/data/audio/dummy/dummy_020_sideB_0.mp3"
-        },
-        {
-          "text": "Flats hold multiple items.",
-          "audioSrc": "public/data/audio/dummy/dummy_020_sideB_1.mp3"
-        },
-        {
-          "text": "A flat contains several items.",
-          "audioSrc": "public/data/audio/dummy/dummy_020_sideB_2.mp3"
-        },
-        {
-          "text": "Trays contain multiple items.",
-          "audioSrc": "public/data/audio/dummy/dummy_020_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_021",
-      "cardType": "flippable",
-      "sideA": "Las unidades son artículos individuales.",
-      "sideB": [
-        {
-          "text": "Units are single items.",
-          "audioSrc": "public/data/audio/dummy/dummy_021_sideB_0.mp3"
-        },
-        {
-          "text": "Units are individual items.",
-          "audioSrc": "public/data/audio/dummy/dummy_021_sideB_1.mp3"
-        },
-        {
-          "text": "A unit is a single item.",
-          "audioSrc": "public/data/audio/dummy/dummy_021_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
       "cardId": "dummy_022",
       "cardType": "flippable",
       "sideA": "Las devoluciones usan bandejas.",
@@ -503,102 +319,6 @@
         }
       ],
       "note": "In logistics and mail sorting, a [flat] refers to a large envelope, magazine, or a flat sorting tray. A [tray] is a shallow container used to hold, sort, or carry items."
-    },
-    {
-      "cardId": "dummy_023",
-      "cardType": "flippable",
-      "sideA": "Nos estamos complicando innecesariamente.",
-      "sideB": [
-        {
-          "text": "We're overcomplicating things unnecessarily.",
-          "audioSrc": "public/data/audio/dummy/dummy_023_sideB_0.mp3"
-        },
-        {
-          "text": "We're making this harder than it needs to be.",
-          "audioSrc": "public/data/audio/dummy/dummy_023_sideB_1.mp3"
-        },
-        {
-          "text": "We're needlessly overcomplicating this.",
-          "audioSrc": "public/data/audio/dummy/dummy_023_sideB_2.mp3"
-        },
-        {
-          "text": "We're complicating unnecessarily.",
-          "audioSrc": "public/data/audio/dummy/dummy_023_sideB_3.mp3"
-        },
-        {
-          "text": "We're overcomplicating unnecessarily.",
-          "audioSrc": "public/data/audio/dummy/dummy_023_sideB_4.mp3"
-        }
-      ],
-      "note": "~We're getting in trouble unnecessarily~ changes the meaning. To [get in trouble] means to be punished or caught doing something wrong, not to make a task more complex."
-    },
-    {
-      "cardId": "dummy_024",
-      "cardType": "flippable",
-      "sideA": "No estoy seguro en este momento, pero déjame revisar el código y te daré la respuesta.",
-      "sideB": [
-        {
-          "text": "I am not sure right now, but let me check the code and I will give you the answer.",
-          "audioSrc": "public/data/audio/dummy/dummy_024_sideB_0.mp3"
-        },
-        {
-          "text": "I'm not sure at the moment, but let me look at the code and I'll get back to you with an answer.",
-          "audioSrc": "public/data/audio/dummy/dummy_024_sideB_1.mp3"
-        },
-        {
-          "text": "I'm not certain right now, but let me review the code and I'll give you the answer.",
-          "audioSrc": "public/data/audio/dummy/dummy_024_sideB_2.mp3"
-        },
-        {
-          "text": "I'm not sure at the moment, but let me look at the code and I'll let you know.",
-          "audioSrc": "public/data/audio/dummy/dummy_024_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_025",
-      "cardType": "flippable",
-      "sideA": "No lo sé en este momento, pero déjame mirar el código y te diré pronto.",
-      "sideB": [
-        {
-          "text": "I do not know right away, but let me look at the code and I will tell you soon.",
-          "audioSrc": "public/data/audio/dummy/dummy_025_sideB_0.mp3"
-        },
-        {
-          "text": "I don't know off the top of my head, but let me check the code and I'll let you know soon.",
-          "audioSrc": "public/data/audio/dummy/dummy_025_sideB_1.mp3"
-        },
-        {
-          "text": "I'm not sure at the moment, but let me look at the code and I'll tell you shortly.",
-          "audioSrc": "public/data/audio/dummy/dummy_025_sideB_2.mp3"
-        },
-        {
-          "text": "I do not know at this moment, but let me look at the code and I will tell you soon.",
-          "audioSrc": "public/data/audio/dummy/dummy_025_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_026",
-      "cardType": "flippable",
-      "sideA": "No estoy seguro ahora mismo, pero déjame revisar el código rápidamente y te avisaré.",
-      "sideB": [
-        {
-          "text": "I am not sure right now, but let me check the code quickly and I will let you know.",
-          "audioSrc": "public/data/audio/dummy/dummy_026_sideB_0.mp3"
-        },
-        {
-          "text": "I'm not sure right now, but let me quickly check the code and I'll let you know.",
-          "audioSrc": "public/data/audio/dummy/dummy_026_sideB_1.mp3"
-        },
-        {
-          "text": "I'm not certain at the moment, but let me take a quick look at the code and I'll get back to you.",
-          "audioSrc": "public/data/audio/dummy/dummy_026_sideB_2.mp3"
-        }
-      ],
-      "note": null
     },
     {
       "cardId": "dummy_027",
@@ -624,50 +344,6 @@
         {
           "text": "It isn't overwriting what comes from the backend, so there is no issue there.",
           "audioSrc": "public/data/audio/dummy/dummy_027_sideB_4.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_028",
-      "cardType": "flippable",
-      "sideA": "Aprovechando el momento, queria preguntarte..",
-      "sideB": [
-        {
-          "text": "While I have the chance, I wanted to ask you something.",
-          "audioSrc": "public/data/audio/dummy/dummy_028_sideB_0.mp3"
-        },
-        {
-          "text": "Taking advantage of the moment, I wanted to ask you.",
-          "audioSrc": "public/data/audio/dummy/dummy_028_sideB_1.mp3"
-        },
-        {
-          "text": "Since I have you here, I wanted to ask you something.",
-          "audioSrc": "public/data/audio/dummy/dummy_028_sideB_2.mp3"
-        },
-        {
-          "text": "Taking advantage of the moment, I would like to ask you.",
-          "audioSrc": "public/data/audio/dummy/dummy_028_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_029",
-      "cardType": "flippable",
-      "sideA": "Estamos esperando la instancia RED para testear la solucion ahi.",
-      "sideB": [
-        {
-          "text": "We're waiting for the RED instance to test the solution there.",
-          "audioSrc": "public/data/audio/dummy/dummy_029_sideB_0.mp3"
-        },
-        {
-          "text": "We're waiting on the RED instance so we can test the solution there.",
-          "audioSrc": "public/data/audio/dummy/dummy_029_sideB_1.mp3"
-        },
-        {
-          "text": "We're still waiting for the RED instance to test the fix there.",
-          "audioSrc": "public/data/audio/dummy/dummy_029_sideB_2.mp3"
         }
       ],
       "note": null
@@ -711,46 +387,6 @@
         }
       ],
       "note": "**[er:33]**\n\n~Regardless the weather...~ is incorrect because the preposition [of] is missing. The correct fixed phrase is [regardless of]."
-    },
-    {
-      "cardId": "dummy_032",
-      "cardType": "flippable",
-      "sideA": "La seccion esta disponible en la pantalla de inicio.",
-      "sideB": [
-        {
-          "text": "The section is available on the home screen.",
-          "audioSrc": "public/data/audio/dummy/dummy_032_sideB_0.mp3"
-        },
-        {
-          "text": "The section is available on the home page.",
-          "audioSrc": "public/data/audio/dummy/dummy_032_sideB_1.mp3"
-        },
-        {
-          "text": "You can find the section on the home screen.",
-          "audioSrc": "public/data/audio/dummy/dummy_032_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_033",
-      "cardType": "flippable",
-      "sideA": "La rama local esta al dia con la rama remota.",
-      "sideB": [
-        {
-          "text": "The local branch is up to date with the remote branch.",
-          "audioSrc": "public/data/audio/dummy/dummy_033_sideB_0.mp3"
-        },
-        {
-          "text": "The local branch is even with the remote branch.",
-          "audioSrc": "public/data/audio/dummy/dummy_033_sideB_1.mp3"
-        },
-        {
-          "text": "The local branch is in sync with the remote branch.",
-          "audioSrc": "public/data/audio/dummy/dummy_033_sideB_2.mp3"
-        }
-      ],
-      "note": "~The local branch is up to date from the remote branch~ is incorrect because the expression [up to date] is followed by the preposition [with], not 'from'."
     },
     {
       "cardId": "dummy_034",
@@ -825,45 +461,281 @@
       "note": "**[pv:44]**\n\n**[pv:204]**\n\n"
     },
     {
-      "cardId": "dummy_037",
+      "cardId": "dummy_039",
       "cardType": "flippable",
-      "sideA": "Click en los 3 puntos, y luego busca configuración.",
+      "sideA": "Podría tomar un tiempo, debo mirar primero el código de la BD y luego el código Mobile.",
       "sideB": [
         {
-          "text": "Click the 3 dots, and then look for settings.",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_0.mp3"
+          "text": "It could take a while. I need to look at the database code first and then the mobile code.",
+          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_0.mp3"
         },
         {
-          "text": "Click on the three dots, then find settings.",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_1.mp3"
+          "text": "This might take some time. I have to check the database code first and then the mobile code.",
+          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_1.mp3"
         },
         {
-          "text": "Click the three-dot icon and then go to settings.",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_2.mp3"
-        },
-        {
-          "text": "Click the 3 dots, and then look for configuration.",
-          "audioSrc": "public/data/audio/dummy/dummy_037_sideB_3.mp3"
+          "text": "It may take a while. First I need to review the database code, then the mobile code.",
+          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_2.mp3"
         }
       ],
       "note": null
     },
     {
-      "cardId": "dummy_038",
+      "cardId": "dummy_040",
       "cardType": "flippable",
-      "sideA": "busca los 3 puntos y dale click ahí.",
+      "sideA": "Podría tomar cerca de 1 hora. Debo mirar si el código mobile sobreescribe lo que recibimos de la BD.",
       "sideB": [
         {
-          "text": "Find the 3 dots and click there.",
-          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_0.mp3"
+          "text": "It could take about an hour. I need to check whether the mobile code overwrites what we get from the database.",
+          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_0.mp3"
         },
         {
-          "text": "Look for the three dots and click on them.",
-          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_1.mp3"
+          "text": "This might take around one hour. I have to see if the mobile code is overriding what we receive from the database.",
+          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_1.mp3"
         },
         {
-          "text": "Find the three-dot icon and tap it.",
-          "audioSrc": "public/data/audio/dummy/dummy_038_sideB_2.mp3"
+          "text": "It may take close to an hour. I need to look at whether the mobile code overwrites the data we get from the database.",
+          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_041",
+      "cardType": "flippable",
+      "sideA": "Quiero la mitad del pastel.",
+      "sideB": [
+        {
+          "text": "I want half of the cake.",
+          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_0.mp3"
+        },
+        {
+          "text": "I want half the cake.",
+          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_1.mp3"
+        },
+        {
+          "text": "I would like half of the cake.",
+          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_042",
+      "cardType": "flippable",
+      "sideA": "Quiero la cuarta parte del pastel.",
+      "sideB": [
+        {
+          "text": "I want a quarter of the cake.",
+          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_0.mp3"
+        },
+        {
+          "text": "I want one fourth of the cake.",
+          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_1.mp3"
+        },
+        {
+          "text": "I would like a quarter of the cake.",
+          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_043",
+      "cardType": "flippable",
+      "sideA": "No está bien, pero es aceptable. ¿Es aceptable?",
+      "sideB": [
+        {
+          "text": "It's not fine, but it's acceptable. Is it acceptable?",
+          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_0.mp3"
+        },
+        {
+          "text": "It's not great, but it's acceptable. Is that acceptable?",
+          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_1.mp3"
+        },
+        {
+          "text": "It's not right, but it's good enough. Is it acceptable?",
+          "audioSrc": "public/data/audio/dummy/dummy_043_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_044",
+      "cardType": "flippable",
+      "sideA": "Desde dónde estamos obteniendo la información está muy lento.",
+      "sideB": [
+        {
+          "text": "Where we are getting the information from is very slow.",
+          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_0.mp3"
+        },
+        {
+          "text": "The place we are getting the information from is very slow.",
+          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_1.mp3"
+        },
+        {
+          "text": "The source we are pulling the information from is very slow.",
+          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_045",
+      "cardType": "flippable",
+      "sideA": "Hablemos de esto fuera de línea.",
+      "sideB": [
+        {
+          "text": "Let's take this offline.",
+          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_0.mp3"
+        },
+        {
+          "text": "Let's take it offline.",
+          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_1.mp3"
+        },
+        {
+          "text": "Let's discuss this offline.",
+          "audioSrc": "public/data/audio/dummy/dummy_045_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_046",
+      "cardType": "flippable",
+      "sideA": "No construyas las vistas que quedan aún.",
+      "sideB": [
+        {
+          "text": "Don't build the remaining views yet.",
+          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_0.mp3"
+        },
+        {
+          "text": "Do not build the views that are still left.",
+          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_1.mp3"
+        },
+        {
+          "text": "Don't build the views that are left yet.",
+          "audioSrc": "public/data/audio/dummy/dummy_046_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_047",
+      "cardType": "flippable",
+      "sideA": "Todavía es un trabajo en progreso.",
+      "sideB": [
+        {
+          "text": "It's still a work in progress.",
+          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_0.mp3"
+        },
+        {
+          "text": "It is still work in progress.",
+          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_1.mp3"
+        },
+        {
+          "text": "That's still a work in progress.",
+          "audioSrc": "public/data/audio/dummy/dummy_047_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_048",
+      "cardType": "flippable",
+      "sideA": "Tan pronto como Red se levante, actualizaré la contraseña del usuario.",
+      "sideB": [
+        {
+          "text": "As soon as Red is up, I will update the user's password.",
+          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_0.mp3"
+        },
+        {
+          "text": "As soon as Red comes up, I'll update the user's password.",
+          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_1.mp3"
+        },
+        {
+          "text": "As soon as Red is back up, I will update the user's password.",
+          "audioSrc": "public/data/audio/dummy/dummy_048_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_049",
+      "cardType": "flippable",
+      "sideA": "Le mantendremos informado sobre nuestro progreso.",
+      "sideB": [
+        {
+          "text": "We'll keep you posted on our progress.",
+          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_0.mp3"
+        },
+        {
+          "text": "We will keep you updated on our progress.",
+          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_1.mp3"
+        },
+        {
+          "text": "We'll keep you posted with our progress.",
+          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_050",
+      "cardType": "flippable",
+      "sideA": "Sí, pero siempre bajo la dirección de Juan.",
+      "sideB": [
+        {
+          "text": "Yes, but always under Juan's direction.",
+          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_0.mp3"
+        },
+        {
+          "text": "Yes, but always under Juan's guidance.",
+          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_1.mp3"
+        },
+        {
+          "text": "Yes, but always led by Juan.",
+          "audioSrc": "public/data/audio/dummy/dummy_050_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_051",
+      "cardType": "flippable",
+      "sideA": "En problemas difíciles suele ser Jose quien me dice cuál puede ser el problema, y posibles soluciones.",
+      "sideB": [
+        {
+          "text": "With hard problems, it's usually Jose who tells me what the problem might be, and possible solutions.",
+          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_0.mp3"
+        },
+        {
+          "text": "On difficult problems, it's usually Jose who tells me what the issue could be and possible solutions.",
+          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_1.mp3"
+        },
+        {
+          "text": "For tough problems, it's normally Jose who tells me what the problem might be and what the possible solutions are.",
+          "audioSrc": "public/data/audio/dummy/dummy_051_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_052",
+      "cardType": "flippable",
+      "sideA": "Sí, pero siempre con la supervisión de Roberto.",
+      "sideB": [
+        {
+          "text": "Yes, but always with Roberto's supervision.",
+          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_0.mp3"
+        },
+        {
+          "text": "Yes, but always under Roberto's supervision.",
+          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_1.mp3"
+        },
+        {
+          "text": "Yes, but always with oversight from Roberto.",
+          "audioSrc": "public/data/audio/dummy/dummy_052_sideB_2.mp3"
         }
       ],
       "note": null

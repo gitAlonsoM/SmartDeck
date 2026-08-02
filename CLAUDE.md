@@ -45,6 +45,7 @@ Three deck types:
 
 The repo ships content-authoring scripts at the root. Most are git-ignored (treated as personal tools) but stay in the working tree. Run with `py <script>.py [args]`:
 
+- `check_deck_ids.py [deck.json ...]` — **run this last, after any content operation.** Verifies every `cardId` is unique within its deck (and that none are missing/empty), plus that no two deck files share the same top-level deck `id`. No args = scans every deck in `public/data/`. Exits `0` clean / `1` on problems, so it can gate a commit: `py check_deck_ids.py; if ($?) { git add ... }`. Needs no `PYTHONIOENCODING` (no emoji). Non-sequential / gapped ids are fine — only uniqueness matters, because SRS records (`smart-decks-v3-srs-<deckId>`), metrics (`smart-decks-v3-metrics-<deckId>`) and `update_deck.py` are all keyed by `cardId`.
 - `generate_audios.py <deck.json>` — **DISABLED (Azure key inactive).** Do not run this. Use `generate_audios_google.py` instead.
 - `generate_audios_google.py <deck.json>` — free gTTS TTS; skips files that already exist. **This is the active audio generation script.**
 - `delete_audios.py` — prunes MP3s no longer referenced by a deck.
