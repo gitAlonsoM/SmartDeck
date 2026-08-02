@@ -40,7 +40,7 @@
 import json
 import os
 import sys
-from collections import Counter, defaultdict
+from collections import defaultdict
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, 'public', 'data')

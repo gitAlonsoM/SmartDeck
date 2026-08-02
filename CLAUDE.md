@@ -66,7 +66,8 @@ The repo ships content-authoring scripts at the root. Most are git-ignored (trea
 1. Read the last few lines of the target deck to find the closing `}` of the last card.
 2. Replace that closing block with the new cards appended inside the `cards` array, ending with `  ]\n}`.
 3. After saving the JSON, run `py generate_audios_google.py <deck.json>` (via PowerShell tool) to generate the MP3s. The script skips files that already exist, so it is safe to re-run.
-4. Stage with `git add public/data/<deck>.json public/data/audio/<deck>/` — do **not** stage `.bak` files.
+4. Run `py check_deck_ids.py` (via PowerShell tool). **Always do this after modifying any deck** — adding cards, merging, `update_deck.py`, or hand-editing JSON. It costs no tokens to reason about: the script prints a pass/fail you can read directly and fix if needed. Exit `0` = clean, `1` = a duplicate/missing `cardId` to repair before committing.
+5. Stage with `git add public/data/<deck>.json public/data/audio/<deck>/` — do **not** stage `.bak` files.
 
 Audio path convention: `public/data/audio/<deck-slug>/<cardId>_sideB_<N>.mp3` (0-indexed).
 
