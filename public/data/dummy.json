@@ -88,6 +88,10 @@
         {
           "text": "I'll be back.",
           "audioSrc": "public/data/audio/dummy/dummy_006_sideB_6.mp3"
+        },
+        {
+          "text": "I'll come back.",
+          "audioSrc": "public/data/audio/dummy/dummy_006_sideB_7.mp3"
         }
       ],
       "note": "~I'll come~ means you are going to arrive, not that you are returning. Use [be back] or [come back] to express \"regreso\"."
@@ -270,7 +274,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_015_sideB_2.mp3"
         }
       ],
-      "note": "~Does the conversation lose forever...~ and ~Did the conversation lose forever...~ are incorrect because [lose] is active. A conversation cannot lose something; it must be passive ([is the conversation lost] or [did the conversation get lost])."
+      "note": "**[er:12]**\n\n~Does the conversation lose forever...~ and ~Did the conversation lose forever...~ are incorrect because [lose] is active. A conversation cannot lose something; it must be passive ([is the conversation lost] or [did the conversation get lost])."
     },
     {
       "cardId": "dummy_016",
@@ -496,9 +500,13 @@
         {
           "text": "It may take close to an hour. I need to look at whether the mobile code overwrites the data we get from the database.",
           "audioSrc": "public/data/audio/dummy/dummy_040_sideB_2.mp3"
+        },
+        {
+          "text": "It could take around an hour. I need to check if the mobile code overwrites what we get from the database.",
+          "audioSrc": "public/data/audio/dummy/dummy_040_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "~I need to check if the mobile code overwriten what we get from the database.~ is not valid because [overwriten] is not an existing form. The verb goes [overwrite] → [overwrote] → [overwritten], and the participle only works with an auxiliary ([has overwritten], [is overwritten]). After 'if the mobile code', the present simple [overwrites] is the form that fits."
     },
     {
       "cardId": "dummy_041",
@@ -518,7 +526,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_041_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:229]**\n\n~I want the half of the cake.~ is not valid because [half] does not take 'the' in front of it in this structure. The natural forms are [half the cake] and [half of the cake], and with an article it becomes [a half]."
     },
     {
       "cardId": "dummy_042",
@@ -536,9 +544,13 @@
         {
           "text": "I would like a quarter of the cake.",
           "audioSrc": "public/data/audio/dummy/dummy_042_sideB_2.mp3"
+        },
+        {
+          "text": "I want a fourth of the cake.",
+          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:229]**"
     },
     {
       "cardId": "dummy_043",
@@ -578,7 +590,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_044_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:230]**\n\n~From we are getting the information is very slow.~ is not valid because a clause cannot begin with the bare preposition in this pattern. The clause starts with the wh-word and [from] stays at the end: [where we are getting the information from]."
     },
     {
       "cardId": "dummy_045",
@@ -598,7 +610,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_045_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~Let's keep this offline.~ changes the meaning: it suggests not publishing something online or keeping it off the record. To move a discussion out of the current meeting and handle it separately, the fixed expression is [take this offline] or [discuss this offline]."
     },
     {
       "cardId": "dummy_046",
@@ -618,7 +630,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_046_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:108]**"
     },
     {
       "cardId": "dummy_047",
@@ -676,9 +688,13 @@
         {
           "text": "We'll keep you posted with our progress.",
           "audioSrc": "public/data/audio/dummy/dummy_049_sideB_2.mp3"
+        },
+        {
+          "text": "We'll keep you informed about our progress.",
+          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "~We'll keep you inform about our progress.~ is not valid because [inform] is the base verb and cannot describe the state of a person. After [keep + object] the word must be an adjective or a participle, so the correct form is [keep you informed], the same pattern as [keep you posted] and [keep you updated]."
     },
     {
       "cardId": "dummy_050",
@@ -718,7 +734,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_051_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~it's used to be Jose~ is not valid because [used to] never combines with the present of 'to be'. For a present habit the word is [usually] or [normally]; [it used to be Jose] exists but moves the sentence to a past habit that is no longer true.\n\n~In hard problems~ is not natural because English does not place problems inside a container here. The usual collocations are [with hard problems], [on difficult problems] or [for tough problems]."
     },
     {
       "cardId": "dummy_052",
