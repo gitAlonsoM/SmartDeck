@@ -480,9 +480,13 @@
         {
           "text": "It may take a while. First I need to review the database code, then the mobile code.",
           "audioSrc": "public/data/audio/dummy/dummy_039_sideB_2.mp3"
+        },
+        {
+          "text": "It could take time. I need to look at the database code first and then the mobile code.",
+          "audioSrc": "public/data/audio/dummy/dummy_039_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "~It could take a time.~ is not valid because 'time' in this context is an uncountable noun. You can say [take time] or use the countable phrase [take a while]."
     },
     {
       "cardId": "dummy_040",
@@ -526,7 +530,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_041_sideB_2.mp3"
         }
       ],
-      "note": "**[er:229]**\n\n~I want the half of the cake.~ is not valid because [half] does not take 'the' in front of it in this structure. The natural forms are [half the cake] and [half of the cake], and with an article it becomes [a half]."
+      "note": "**[er:229]**\n\n~I want the half of the cake.~ is not valid because [half] does not take 'the' in front of it in this structure. The natural forms are [half the cake] and [half of the cake], and with an article it becomes [a half].\n\n[Half] functions as a predeterminer, meaning it comes before the article, not after it. This behaves similarly to 'all' or 'both' (e.g., you say 'all the cake', never 'the all cake')."
     },
     {
       "cardId": "dummy_042",
@@ -550,7 +554,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_042_sideB_3.mp3"
         }
       ],
-      "note": "**[er:229]**"
+      "note": "**[er:229]**\n\n~I want the quarter of the cake.~ and ~I want quarter of the cake.~ are not valid because 'quarter' is a singular countable noun and requires the indefinite article [a]. The correct expression is [a quarter of]."
     },
     {
       "cardId": "dummy_043",
@@ -590,7 +594,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_044_sideB_2.mp3"
         }
       ],
-      "note": "**[er:230]**\n\n~From we are getting the information is very slow.~ is not valid because a clause cannot begin with the bare preposition in this pattern. The clause starts with the wh-word and [from] stays at the end: [where we are getting the information from]."
+      "note": "**[er:230]**\n\n~From we are getting the information is very slow.~ is not valid because a clause cannot begin with the bare preposition in this pattern. The clause starts with the wh-word and [from] stays at the end: [where we are getting the information from].\n\n~Where we are getting the information is very slow.~ is not valid because the verb phrase 'get information' requires a source, so the preposition [from] must be included at the end of the clause."
     },
     {
       "cardId": "dummy_045",
@@ -610,7 +614,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_045_sideB_2.mp3"
         }
       ],
-      "note": "~Let's keep this offline.~ changes the meaning: it suggests not publishing something online or keeping it off the record. To move a discussion out of the current meeting and handle it separately, the fixed expression is [take this offline] or [discuss this offline]."
+      "note": "~Let's keep this offline.~ changes the meaning: it suggests not publishing something online or keeping it off the record. To move a discussion out of the current meeting and handle it separately, the fixed expression is [take this offline] or [discuss this offline].\n\n~Let's talk this offline.~ is not valid because 'talk' is intransitive when referring to a topic; it requires a preposition like 'about'. You must either say [talk about this] or use transitive verbs like [take this] or [discuss this]."
     },
     {
       "cardId": "dummy_046",
@@ -694,7 +698,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_049_sideB_3.mp3"
         }
       ],
-      "note": "~We'll keep you inform about our progress.~ is not valid because [inform] is the base verb and cannot describe the state of a person. After [keep + object] the word must be an adjective or a participle, so the correct form is [keep you informed], the same pattern as [keep you posted] and [keep you updated]."
+      "note": "**[er:226]**\n\n~We'll keep you inform about our progress.~ is not valid because [inform] is the base verb and cannot describe the state of a person. After [keep + object] the word must be an adjective or a participle, so the correct form is [keep you informed], the same pattern as [keep you posted] and [keep you updated]."
     },
     {
       "cardId": "dummy_050",
