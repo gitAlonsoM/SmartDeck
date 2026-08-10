@@ -528,6 +528,10 @@
         {
           "text": "I would like half of the cake.",
           "audioSrc": "public/data/audio/dummy/dummy_041_sideB_2.mp3"
+        },
+        {
+          "text": "I want a half of the cake.",
+          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_3.mp3"
         }
       ],
       "note": "**[er:229]**\n\n~I want the half of the cake.~ is not valid because [half] does not take 'the' in front of it in this structure. The natural forms are [half the cake] and [half of the cake], and with an article it becomes [a half].\n\n[Half] functions as a predeterminer, meaning it comes before the article, not after it. This behaves similarly to 'all' or 'both' (e.g., you say 'all the cake', never 'the all cake')."
@@ -698,7 +702,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_049_sideB_3.mp3"
         }
       ],
-      "note": "**[er:226]**\n\n~We'll keep you inform about our progress.~ is not valid because [inform] is the base verb and cannot describe the state of a person. After [keep + object] the word must be an adjective or a participle, so the correct form is [keep you informed], the same pattern as [keep you posted] and [keep you updated]."
+      "note": "**[er:231]**\n\n~We'll keep you inform about our progress.~ is not valid because [inform] is the base verb and cannot describe the state of a person. After [keep + object] the word must be an adjective or a participle, so the correct form is [keep you informed], the same pattern as [keep you posted] and [keep you updated]."
     },
     {
       "cardId": "dummy_050",
