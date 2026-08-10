@@ -1,92 +1,66 @@
-Necesitamos ese ambiente clonado para reproducir el problema.
+[3:03 p. m., 6/8/2026] Alonso: ETA significa Tiempo Estimado de Llegada.
+ETA stands for Estimated Time of Arrival.
+[3:13 p. m., 6/8/2026] Alonso: "Cuándo sería el tiempo estimado de llegada de los arreglos?" 
+"What is the ETA for the fixes?"
+"What is the Estimated Time of Arrival for the fixes?"
+"What is the estimated completion time for the fixes?"
+[10:05 a. m., 7/8/2026] Alonso: “Nombres largos no se muestran correctamente”
+[10:05 a. m., 7/8/2026] Alonso: “Nombres largos se ven cortados, no completos.”
+[11:01 a. m., 7/8/2026] Alonso: compileSdkVersion indica la versión de Android con la que se compila la app.
+compileSdkVersion sets the Android version used to compile the app.
 
-Necesitamos producción clonada en Blue.
+targetSdkVersion define la versión de Android para la que está optimizada la app.
+targetSdkVersion defines the Android version the app is optimized for.
 
-Necesitamos el ambiente de producción clonado en Blue.
+Gradle automatiza la construcción y empaquetado del archivo binario.
+Gradle automates building and packaging the binary file.
 
-Así puedo estar más involucrado en tus procesos.
+Gradle gestiona las dependencias y las tareas de compilación.
+Gradle manages dependencies and compilation tasks.
 
-Vuelvo en un minuto.
+Kotlin se usa para escribir la lógica principal de la app.
+Kotlin is used to write the core logic of the app.
 
-Ya regreso.
+Kotlin compila el código fuente en instrucciones ejecutables para Android.
+Kotlin compiles the source code into executable instructions for Android.
+[11:02 a. m., 7/8/2026] Alonso: Android Gradle Plugin (AGP) es la extensión de compilación que adapta Gradle para compilar y empaquetar aplicaciones Android.
+Android Gradle Plugin (AGP) is the build extension that adapts Gradle to compile and package Android apps.
 
-Sí, estoy acá, solo que el audio se sobrepone con ambos micrófonos abiertos.
+Android Gradle Plugin (AGP) es la herramienta oficial que procesa los recursos de Android para generar el binario final.
+Android Gradle Plugin (AGP) is the official tool that processes Android resources to generate the final binary.
 
-El audio se sobrepone al tener los 2 micrófonos abiertos.
+[3:19 p. m., 4/8/2026] Alonso: Usando 0.1 de opacidad significa que el color es casi totalmente transparente.
+Using 0.1 opacity means the color is almost completely transparent.
 
-Se supone que este arreglada eso.
+Usando 0.9 de opacidad significa que el color es casi totalmente sólido.
+Using 0.9 opacity means the color is almost completely solid.
 
-Ahora mismo no puedo emular la aplicacion, estoy de manos atadas.
+Opacidad mide el nivel de transparencia de un elemento.
+Opacity measures the transparency level of an element.
 
-Ahora mismo estoy de manos atadas, no puedo testearlo.
+Opacidad alta el elemento es más sólido y opaco.
+High opacity makes the element more solid and opaque.
 
-Actualiza las fichas de marca ahora.
-Update the brand tiles now.
+Opacidad baja el elemento es más transparente y se ve menos.
+Low opacity makes the element more transparent and less visible.
+[8:24 p. m., 4/8/2026] Alonso: Arrastra ese archivo y sueltalo allá.
+[11:07 a. m., 5/8/2026] Alonso: El contenedor envuelve la lista y elimina los huecos.
+The container wraps the list and removes the gaps.
 
-Toca cada tarjeta de marca aquí.
-Tap each brand tile here.
+Este componente envuelve la imagen para que no queden huecos.
+ This component wraps the image so there are no gaps.
 
-Los bloques de marca mejoraron las ventas.
-Brand tiles improved sales.
+Si el menú envuelve el texto, el hueco desaparece.
+ If the menu wraps the text, the gap disappears.
+[2:00 p. m., 5/8/2026] Alonso: Espero que la solicitud devuelva una respuesta HTTP 200.
+I hope the request returns an HTTP 200 response.
+[2:04 p. m., 5/8/2026] Alonso: Vamos a probar primero el happy path de esta función.
+Let's test the happy path of this feature first
+[2:05 p. m., 5/8/2026] Alonso: Parece que solo probaron los happy paths.
+It seems like they only tested the happy paths.
+[2:07 p. m., 5/8/2026] Alonso: El happy path es el camino directo hacia el resultado sin complicaciones.
+The happy path is the direct path to the result without complications
 
-La conversacion se perdio para siempre, o solo temporalmente?
-Is the conversation lost forever, or only temporarily?
-Is the conversation lost for good, or only temporarily?
+¿No debería ser todo al mismo tiempo, como en la versión Mobile?
 
-Cuando A es diferente de B, podemos acceder.
 
-Cuando B es igual a A, no podemos ver la seccion.
-
-Me tomo ensayo y error hacerlo.
-
-Me tomo un tiempo realmente, y fue ensayo y error.
-
-Las bandeja contienen múltiples artículos.
-Flats contain multiple items.
-
-Las unidades son artículos individuales.
-Units are single items.
-
-Las devoluciones usan bandejas.
-Returns use flats.
-
-Nos estamos complicando innecesariamente.
-
-No estoy seguro en este momento, pero déjame revisar el código y te daré la respuesta.
-I am not sure right now, but let me check the code and I will give you the answer.
-
-No lo sé en este momento, pero déjame mirar el código y te diré pronto.
-I do not know right away, but let me look at the code and I will tell you soon.
-
-No estoy seguro ahora mismo, pero déjame revisar el código rápidamente y te avisaré.
-I am not sure right now, but let me check the code quickly and I will let you know.
-
-No está sobreescribiendo lo que nos llega del backend, no hay problema.
-
-Aprovechando el momento, queria preguntarte..
-
-Estamos esperando la instancia RED para testear la solucion ahi.
-
-Con respecto a su propuesta, necesitamos más tiempo para revisar los detalles.
-Regarding your proposal, we need more time to review the details.
-
-A pesar del clima, el evento al aire libre se llevará a cabo según lo programado.
-Regardless of the weather, the outdoor event will proceed as scheduled.
-
-La seccion esta disponible en la pantalla de inicio.
-The section is available on the home screen.
-
-La rama local esta al dia con la rama remota.
-
-La rama local esta adelantada a la rama remota.
-
-La rama local esta detras de la rama remota.
-
-Solo espero que no se corte la luz.
-I just hope the power doesn't go out.
-I just hope we don't lose power.
-I only hope the electricity doesn't go out.
-
-Click en los 3 puntos, y luego busca configuración.
-
-busca los 3 puntos y dale click ahí.
