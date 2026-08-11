@@ -326,7 +326,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_055_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~Long names are not showed correctly~ is not standard because the preferred past participle of [show] is [shown]. Additionally, ~Long names are not showed up correctly~ is invalid because the phrasal verb [show up] means 'to appear' and is not used in the passive voice. Instead, use the active form [Long names do not show up]."
     },
     {
       "cardId": "dummy_056",
@@ -344,6 +344,10 @@
         {
           "text": "Long names are getting cut off rather than showing in full.",
           "audioSrc": "public/data/audio/dummy/dummy_056_sideB_2.mp3"
+        },
+        {
+          "text": "Long names are displayed cut off, not complete.",
+          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_3.mp3"
         }
       ],
       "note": null
@@ -366,7 +370,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_057_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~...sets the Android version is compiled the app~ lacks the proper sentence structure. It needs a relative clause and a preposition at the end, such as [the Android version the app is compiled with]."
     },
     {
       "cardId": "dummy_058",
@@ -406,7 +410,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_059_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~Gradle automates the contruction~ is not natural in a tech context. The industry standard term for compiling software is [building] or [the build], rather than construction."
     },
     {
       "cardId": "dummy_060",
@@ -526,7 +530,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_065_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~Using 0.1 of opacity~ is unnatural because in English we omit the preposition and say [0.1 opacity], or use the structure [an opacity of 0.1]."
     },
     {
       "cardId": "dummy_066",
@@ -664,9 +668,13 @@
         {
           "text": "This component wraps the image so that no gaps are left.",
           "audioSrc": "public/data/audio/dummy/dummy_072_sideB_2.mp3"
+        },
+        {
+          "text": "This component wraps the image to not have gaps.",
+          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "[Gap] means an empty space or opening between two objects or elements."
     },
     {
       "cardId": "dummy_073",
@@ -744,6 +752,10 @@
         {
           "text": "Apparently they only tested the happy paths.",
           "audioSrc": "public/data/audio/dummy/dummy_076_sideB_2.mp3"
+        },
+        {
+          "text": "It seems they only tested the happy paths.",
+          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_3.mp3"
         }
       ],
       "note": null
