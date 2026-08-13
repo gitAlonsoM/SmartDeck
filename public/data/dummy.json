@@ -242,7 +242,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_046_sideB_2.mp3"
         }
       ],
-      "note": "**[er:108]**"
+      "note": "**[er:108]**\n\n~...that are leave yet~ is incorrect because 'leave' is a base verb. To express 'quedan' in this context, use the past participle [left]."
     },
     {
       "cardId": "dummy_049",
@@ -306,7 +306,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_054_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~What will it be the ETA~ is incorrect because it uses a double subject. You must drop 'it' and say [What will the ETA be] or [What will be the ETA]."
     },
     {
       "cardId": "dummy_055",
@@ -370,7 +370,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_057_sideB_2.mp3"
         }
       ],
-      "note": "~...sets the Android version is compiled the app~ lacks the proper sentence structure. It needs a relative clause and a preposition at the end, such as [the Android version the app is compiled with]."
+      "note": "~...sets the Android version is compiled the app~ lacks the proper sentence structure. It needs a relative clause and a preposition at the end, such as [the Android version the app is compiled with].\n\n~...against the app is compiled~ is missing the relative pronoun. You must use [against which the app is compiled]."
     },
     {
       "cardId": "dummy_058",
@@ -390,7 +390,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_058_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~...the app is optimized~ is missing the preposition at the end. It must be [optimized for] because the verb phrase is 'to optimize for'."
     },
     {
       "cardId": "dummy_059",
@@ -428,6 +428,10 @@
         {
           "text": "Gradle takes care of dependencies and compilation tasks.",
           "audioSrc": "public/data/audio/dummy/dummy_060_sideB_2.mp3"
+        },
+        {
+          "text": "Gradle manages dependencies and building tasks.",
+          "audioSrc": "public/data/audio/dummy/dummy_060_sideB_3.mp3"
         }
       ],
       "note": null
@@ -530,7 +534,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_065_sideB_2.mp3"
         }
       ],
-      "note": "~Using 0.1 of opacity~ is unnatural because in English we omit the preposition and say [0.1 opacity], or use the structure [an opacity of 0.1]."
+      "note": "~Using 0.1 of opacity~ is unnatural because in English we omit the preposition and say [0.1 opacity], or use the structure [an opacity of 0.1].\n\nIn mathematics and decimals, the '.' symbol is pronounced as [point] (e.g., zero point one). The word [dot] is used for web addresses and file extensions (like .com or .json)."
     },
     {
       "cardId": "dummy_066",
@@ -648,6 +652,10 @@
         {
           "text": "The container wraps the list, removing the gaps.",
           "audioSrc": "public/data/audio/dummy/dummy_071_sideB_2.mp3"
+        },
+        {
+          "text": "The container wraps the list and deletes the gaps.",
+          "audioSrc": "public/data/audio/dummy/dummy_071_sideB_3.mp3"
         }
       ],
       "note": null
@@ -672,6 +680,10 @@
         {
           "text": "This component wraps the image to not have gaps.",
           "audioSrc": "public/data/audio/dummy/dummy_072_sideB_3.mp3"
+        },
+        {
+          "text": "This component wraps the image to not leave any gaps.",
+          "audioSrc": "public/data/audio/dummy/dummy_072_sideB_4.mp3"
         }
       ],
       "note": "[Gap] means an empty space or opening between two objects or elements."
@@ -732,6 +744,10 @@
         {
           "text": "Let's start by testing the happy path for this feature.",
           "audioSrc": "public/data/audio/dummy/dummy_075_sideB_2.mp3"
+        },
+        {
+          "text": "Let's first test the happy path of this feature.",
+          "audioSrc": "public/data/audio/dummy/dummy_075_sideB_3.mp3"
         }
       ],
       "note": null
@@ -796,6 +812,10 @@
         {
           "text": "Shouldn't it all be at the same time, the way it is in the Mobile version?",
           "audioSrc": "public/data/audio/dummy/dummy_078_sideB_2.mp3"
+        },
+        {
+          "text": "Shouldn't it be all at the same time, like in the Mobile version?",
+          "audioSrc": "public/data/audio/dummy/dummy_078_sideB_3.mp3"
         }
       ],
       "note": null
