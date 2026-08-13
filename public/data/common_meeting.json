@@ -37283,6 +37283,510 @@
         }
       ],
       "note": null
+    },
+    {
+      "cardId": "mi_1652",
+      "cardType": "flippable",
+      "sideA": "El audio se sobrepone al tener los 2 micrófonos abiertos.",
+      "sideB": [
+        {
+          "text": "The audio overlaps when both microphones are open.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1652_sideB_0.mp3"
+        },
+        {
+          "text": "The audio overlaps when you have both mics on.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1652_sideB_1.mp3"
+        },
+        {
+          "text": "Having both microphones open causes the audio to overlap.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1652_sideB_2.mp3"
+        },
+        {
+          "text": "The audio overlaps when 2 microphones are open.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1652_sideB_3.mp3"
+        },
+        {
+          "text": "The audio gets overlapped when both microphones are open.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1652_sideB_4.mp3"
+        }
+      ],
+      "note": "~The audio gets overlapped having both microphones open~ sounds unnatural because the clause [having both microphones open] needs a connector. It is better to say [when having] or use a subordinate clause like [when both microphones are open]."
+    },
+    {
+      "cardId": "mi_1653",
+      "cardType": "flippable",
+      "sideA": "Toca cada tarjeta de marca aquí.",
+      "sideB": [
+        {
+          "text": "Tap each brand tile here.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1653_sideB_0.mp3"
+        },
+        {
+          "text": "Tap on each brand tile here.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1653_sideB_1.mp3"
+        },
+        {
+          "text": "Tap each brand card here.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1653_sideB_2.mp3"
+        }
+      ],
+      "note": "In UI design, a [tile] is usually a flat, clickable square or rectangle that navigates to a new section or launches an app, whereas a [card] often contains more complex, heterogeneous information (text, images, buttons) grouped together.\n\n~Touch each brand tile here~ is understandable, but for digital interfaces and screens, the correct verb is [tap]. [Touch] is generally used for physical contact rather than interacting with a UI element."
+    },
+    {
+      "cardId": "mi_1654",
+      "cardType": "flippable",
+      "sideA": "Los bloques de marca mejoraron las ventas.",
+      "sideB": [
+        {
+          "text": "Brand tiles improved sales.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1654_sideB_0.mp3"
+        },
+        {
+          "text": "Brand tiles boosted sales.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1654_sideB_1.mp3"
+        },
+        {
+          "text": "The brand tiles improved sales performance.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1654_sideB_2.mp3"
+        },
+        {
+          "text": "Brand tiles improved the sales.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1654_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1655",
+      "cardType": "flippable",
+      "sideA": "Solo espero que no se corte la luz.",
+      "sideB": [
+        {
+          "text": "I just hope the power doesn't go out.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1655_sideB_0.mp3"
+        },
+        {
+          "text": "I just hope we don't lose power.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1655_sideB_1.mp3"
+        },
+        {
+          "text": "I only hope the electricity doesn't go out.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1655_sideB_2.mp3"
+        },
+        {
+          "text": "I just hope the power doesn't cut off.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1655_sideB_3.mp3"
+        },
+        {
+          "text": "I just hope the power doesn't cut out.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1655_sideB_4.mp3"
+        },
+        {
+          "text": "I just hope the power doesn't go off.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1655_sideB_5.mp3"
+        }
+      ],
+      "note": "**[pv:44]**\n\n**[pv:204]**\n\n"
+    },
+    {
+      "cardId": "mi_1656",
+      "cardType": "flippable",
+      "sideA": "Quiero la mitad del pastel.",
+      "sideB": [
+        {
+          "text": "I want half of the cake.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1656_sideB_0.mp3"
+        },
+        {
+          "text": "I want half the cake.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1656_sideB_1.mp3"
+        },
+        {
+          "text": "I would like half of the cake.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1656_sideB_2.mp3"
+        },
+        {
+          "text": "I want a half of the cake.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1656_sideB_3.mp3"
+        }
+      ],
+      "note": "**[er:229]**\n\n~I want the half of the cake.~ is not valid because [half] does not take 'the' in front of it in this structure. The natural forms are [half the cake] and [half of the cake], and with an article it becomes [a half].\n\n[Half] functions as a predeterminer, meaning it comes before the article, not after it. This behaves similarly to 'all' or 'both' (e.g., you say 'all the cake', never 'the all cake')."
+    },
+    {
+      "cardId": "mi_1657",
+      "cardType": "flippable",
+      "sideA": "Quiero la cuarta parte del pastel.",
+      "sideB": [
+        {
+          "text": "I want a quarter of the cake.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1657_sideB_0.mp3"
+        },
+        {
+          "text": "I want one fourth of the cake.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1657_sideB_1.mp3"
+        },
+        {
+          "text": "I would like a quarter of the cake.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1657_sideB_2.mp3"
+        },
+        {
+          "text": "I want a fourth of the cake.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1657_sideB_3.mp3"
+        }
+      ],
+      "note": "**[er:229]**\n\n~I want the quarter of the cake.~ and ~I want quarter of the cake.~ are not valid because 'quarter' is a singular countable noun and requires the indefinite article [a]. The correct expression is [a quarter of]."
+    },
+    {
+      "cardId": "mi_1658",
+      "cardType": "flippable",
+      "sideA": "Desde dónde estamos obteniendo la información está muy lento.",
+      "sideB": [
+        {
+          "text": "Where we are getting the information from is very slow.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1658_sideB_0.mp3"
+        },
+        {
+          "text": "The place we are getting the information from is very slow.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1658_sideB_1.mp3"
+        },
+        {
+          "text": "The source we are pulling the information from is very slow.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1658_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:230]**\n\n~From we are getting the information is very slow.~ is not valid because a clause cannot begin with the bare preposition in this pattern. The clause starts with the wh-word and [from] stays at the end: [where we are getting the information from].\n\n~Where we are getting the information is very slow.~ is not valid because the verb phrase 'get information' requires a source, so the preposition [from] must be included at the end of the clause."
+    },
+    {
+      "cardId": "mi_1659",
+      "cardType": "flippable",
+      "sideA": "Le mantendremos informado sobre nuestro progreso.",
+      "sideB": [
+        {
+          "text": "We'll keep you posted on our progress.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1659_sideB_0.mp3"
+        },
+        {
+          "text": "We will keep you updated on our progress.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1659_sideB_1.mp3"
+        },
+        {
+          "text": "We'll keep you posted with our progress.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1659_sideB_2.mp3"
+        },
+        {
+          "text": "We'll keep you informed about our progress.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1659_sideB_3.mp3"
+        }
+      ],
+      "note": "**[er:231]**\n\n~We'll keep you inform about our progress.~ is not valid because [inform] is the base verb and cannot describe the state of a person. After [keep + object] the word must be an adjective or a participle, so the correct form is [keep you informed], the same pattern as [keep you posted] and [keep you updated]."
+    },
+    {
+      "cardId": "mi_1660",
+      "cardType": "flippable",
+      "sideA": "ETA significa Tiempo Estimado de Llegada.",
+      "sideB": [
+        {
+          "text": "ETA stands for Estimated Time of Arrival.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1660_sideB_0.mp3"
+        },
+        {
+          "text": "ETA means Estimated Time of Arrival.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1660_sideB_1.mp3"
+        },
+        {
+          "text": "The acronym ETA refers to the Estimated Time of Arrival.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1660_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1661",
+      "cardType": "flippable",
+      "sideA": "Nombres largos no se muestran correctamente.",
+      "sideB": [
+        {
+          "text": "Long names are not displayed correctly.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1661_sideB_0.mp3"
+        },
+        {
+          "text": "Long names do not show up properly.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1661_sideB_1.mp3"
+        },
+        {
+          "text": "Long names are not rendering correctly.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1661_sideB_2.mp3"
+        }
+      ],
+      "note": "~Long names are not showed correctly~ is not standard because the preferred past participle of [show] is [shown]. Additionally, ~Long names are not showed up correctly~ is invalid because the phrasal verb [show up] means 'to appear' and is not used in the passive voice. Instead, use the active form [Long names do not show up]."
+    },
+    {
+      "cardId": "mi_1662",
+      "cardType": "flippable",
+      "sideA": "Nombres largos se ven cortados, no completos.",
+      "sideB": [
+        {
+          "text": "Long names look cut off, not complete.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1662_sideB_0.mp3"
+        },
+        {
+          "text": "Long names appear truncated instead of full.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1662_sideB_1.mp3"
+        },
+        {
+          "text": "Long names are getting cut off rather than showing in full.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1662_sideB_2.mp3"
+        },
+        {
+          "text": "Long names are displayed cut off, not complete.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1662_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1663",
+      "cardType": "flippable",
+      "sideA": "Gradle automatiza la construcción y empaquetado del archivo binario.",
+      "sideB": [
+        {
+          "text": "Gradle automates building and packaging the binary file.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1663_sideB_0.mp3"
+        },
+        {
+          "text": "Gradle automates the build and packaging of the binary file.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1663_sideB_1.mp3"
+        },
+        {
+          "text": "Gradle handles building and packaging the binary automatically.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1663_sideB_2.mp3"
+        }
+      ],
+      "note": "~Gradle automates the contruction~ is not natural in a tech context. The industry standard term for compiling software is [building] or [the build], rather than construction."
+    },
+    {
+      "cardId": "mi_1664",
+      "cardType": "flippable",
+      "sideA": "Kotlin se usa para escribir la lógica principal de la app.",
+      "sideB": [
+        {
+          "text": "Kotlin is used to write the core logic of the app.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1664_sideB_0.mp3"
+        },
+        {
+          "text": "Kotlin is used for writing the main logic of the app.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1664_sideB_1.mp3"
+        },
+        {
+          "text": "We use Kotlin to write the core logic of the app.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1664_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1665",
+      "cardType": "flippable",
+      "sideA": "Kotlin compila el código fuente en instrucciones ejecutables para Android.",
+      "sideB": [
+        {
+          "text": "Kotlin compiles the source code into executable instructions for Android.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1665_sideB_0.mp3"
+        },
+        {
+          "text": "Kotlin turns the source code into executable instructions for Android.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1665_sideB_1.mp3"
+        },
+        {
+          "text": "Kotlin compiles the source code into instructions Android can execute.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1665_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1666",
+      "cardType": "flippable",
+      "sideA": "Android Gradle Plugin es la herramienta oficial que procesa los recursos de Android para generar el binario final.",
+      "sideB": [
+        {
+          "text": "The Android Gradle Plugin is the official tool that processes Android resources to generate the final binary.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1666_sideB_0.mp3"
+        },
+        {
+          "text": "AGP is the official tool that processes Android resources to produce the final binary.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1666_sideB_1.mp3"
+        },
+        {
+          "text": "The Android Gradle Plugin is the official tool that handles Android resources to build the final binary.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1666_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1667",
+      "cardType": "flippable",
+      "sideA": "Usando 0.9 de opacidad significa que el color es casi totalmente sólido.",
+      "sideB": [
+        {
+          "text": "Using 0.9 opacity means the color is almost completely solid.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1667_sideB_0.mp3"
+        },
+        {
+          "text": "An opacity of 0.9 makes the color nearly fully solid.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1667_sideB_1.mp3"
+        },
+        {
+          "text": "Setting the opacity to 0.9 leaves the color almost completely opaque.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1667_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1668",
+      "cardType": "flippable",
+      "sideA": "La opacidad mide el nivel de transparencia de un elemento.",
+      "sideB": [
+        {
+          "text": "Opacity measures the transparency level of an element.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1668_sideB_0.mp3"
+        },
+        {
+          "text": "Opacity indicates how transparent an element is.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1668_sideB_1.mp3"
+        },
+        {
+          "text": "Opacity is the measure of how see through an element is.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1668_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1669",
+      "cardType": "flippable",
+      "sideA": "Con opacidad alta el elemento es más sólido y opaco.",
+      "sideB": [
+        {
+          "text": "High opacity makes the element more solid and opaque.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1669_sideB_0.mp3"
+        },
+        {
+          "text": "With high opacity the element looks more solid and opaque.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1669_sideB_1.mp3"
+        },
+        {
+          "text": "The higher the opacity, the more solid and opaque the element becomes.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1669_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1670",
+      "cardType": "flippable",
+      "sideA": "Arrastra ese archivo y suéltalo allá.",
+      "sideB": [
+        {
+          "text": "Drag that file and drop it over there.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1670_sideB_0.mp3"
+        },
+        {
+          "text": "Drag and drop that file over there.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1670_sideB_1.mp3"
+        },
+        {
+          "text": "Grab that file and drop it right there.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1670_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1671",
+      "cardType": "flippable",
+      "sideA": "Si el menú envuelve el texto, el hueco desaparece.",
+      "sideB": [
+        {
+          "text": "If the menu wraps the text, the gap disappears.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1671_sideB_0.mp3"
+        },
+        {
+          "text": "When the menu wraps the text, the gap goes away.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1671_sideB_1.mp3"
+        },
+        {
+          "text": "Wrapping the text with the menu makes the gap disappear.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1671_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1672",
+      "cardType": "flippable",
+      "sideA": "Espero que la solicitud devuelva una respuesta HTTP 200.",
+      "sideB": [
+        {
+          "text": "I hope the request returns an HTTP 200 response.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1672_sideB_0.mp3"
+        },
+        {
+          "text": "I expect the request to return an HTTP 200 response.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1672_sideB_1.mp3"
+        },
+        {
+          "text": "Hopefully the request comes back with an HTTP 200.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1672_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1673",
+      "cardType": "flippable",
+      "sideA": "Parece que solo probaron los happy paths.",
+      "sideB": [
+        {
+          "text": "It seems like they only tested the happy paths.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1673_sideB_0.mp3"
+        },
+        {
+          "text": "It looks like they only tested the happy paths.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1673_sideB_1.mp3"
+        },
+        {
+          "text": "Apparently they only tested the happy paths.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1673_sideB_2.mp3"
+        },
+        {
+          "text": "It seems they only tested the happy paths.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1673_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1674",
+      "cardType": "flippable",
+      "sideA": "El happy path es el camino directo hacia el resultado sin complicaciones.",
+      "sideB": [
+        {
+          "text": "The happy path is the direct path to the result without complications.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1674_sideB_0.mp3"
+        },
+        {
+          "text": "The happy path is the straightforward route to the result with no complications.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1674_sideB_1.mp3"
+        },
+        {
+          "text": "The happy path is the direct route to the expected result without any issues.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1674_sideB_2.mp3"
+        }
+      ],
+      "note": null
     }
   ]
 }

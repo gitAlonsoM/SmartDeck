@@ -5,78 +5,6 @@
   "deckType": "flippable",
   "cards": [
     {
-      "cardId": "dummy_008",
-      "cardType": "flippable",
-      "sideA": "El audio se sobrepone al tener los 2 micrófonos abiertos.",
-      "sideB": [
-        {
-          "text": "The audio overlaps when both microphones are open.",
-          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_0.mp3"
-        },
-        {
-          "text": "The audio overlaps when you have both mics on.",
-          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_1.mp3"
-        },
-        {
-          "text": "Having both microphones open causes the audio to overlap.",
-          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_2.mp3"
-        },
-        {
-          "text": "The audio overlaps when 2 microphones are open.",
-          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_3.mp3"
-        },
-        {
-          "text": "The audio gets overlapped when both microphones are open.",
-          "audioSrc": "public/data/audio/dummy/dummy_008_sideB_4.mp3"
-        }
-      ],
-      "note": "~The audio gets overlapped having both microphones open~ sounds unnatural because the clause [having both microphones open] needs a connector. It is better to say [when having] or use a subordinate clause like [when both microphones are open]."
-    },
-    {
-      "cardId": "dummy_013",
-      "cardType": "flippable",
-      "sideA": "Toca cada tarjeta de marca aquí.",
-      "sideB": [
-        {
-          "text": "Tap each brand tile here.",
-          "audioSrc": "public/data/audio/dummy/dummy_013_sideB_0.mp3"
-        },
-        {
-          "text": "Tap on each brand tile here.",
-          "audioSrc": "public/data/audio/dummy/dummy_013_sideB_1.mp3"
-        },
-        {
-          "text": "Tap each brand card here.",
-          "audioSrc": "public/data/audio/dummy/dummy_013_sideB_2.mp3"
-        }
-      ],
-      "note": "In UI design, a [tile] is usually a flat, clickable square or rectangle that navigates to a new section or launches an app, whereas a [card] often contains more complex, heterogeneous information (text, images, buttons) grouped together.\n\n~Touch each brand tile here~ is understandable, but for digital interfaces and screens, the correct verb is [tap]. [Touch] is generally used for physical contact rather than interacting with a UI element."
-    },
-    {
-      "cardId": "dummy_014",
-      "cardType": "flippable",
-      "sideA": "Los bloques de marca mejoraron las ventas.",
-      "sideB": [
-        {
-          "text": "Brand tiles improved sales.",
-          "audioSrc": "public/data/audio/dummy/dummy_014_sideB_0.mp3"
-        },
-        {
-          "text": "Brand tiles boosted sales.",
-          "audioSrc": "public/data/audio/dummy/dummy_014_sideB_1.mp3"
-        },
-        {
-          "text": "The brand tiles improved sales performance.",
-          "audioSrc": "public/data/audio/dummy/dummy_014_sideB_2.mp3"
-        },
-        {
-          "text": "Brand tiles improved the sales.",
-          "audioSrc": "public/data/audio/dummy/dummy_014_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
       "cardId": "dummy_016",
       "cardType": "flippable",
       "sideA": "Cuando A es diferente de B, podemos acceder.",
@@ -125,106 +53,6 @@
       "note": "In logistics and mail sorting, a [flat] refers to a large envelope, magazine, or a flat sorting tray. A [tray] is a shallow container used to hold, sort, or carry items."
     },
     {
-      "cardId": "dummy_036",
-      "cardType": "flippable",
-      "sideA": "Solo espero que no se corte la luz.",
-      "sideB": [
-        {
-          "text": "I just hope the power doesn't go out.",
-          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_0.mp3"
-        },
-        {
-          "text": "I just hope we don't lose power.",
-          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_1.mp3"
-        },
-        {
-          "text": "I only hope the electricity doesn't go out.",
-          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_2.mp3"
-        },
-        {
-          "text": "I just hope the power doesn't cut off.",
-          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_3.mp3"
-        },
-        {
-          "text": "I just hope the power doesn't cut out.",
-          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_4.mp3"
-        },
-        {
-          "text": "I just hope the power doesn't go off.",
-          "audioSrc": "public/data/audio/dummy/dummy_036_sideB_5.mp3"
-        }
-      ],
-      "note": "**[pv:44]**\n\n**[pv:204]**\n\n"
-    },
-    {
-      "cardId": "dummy_041",
-      "cardType": "flippable",
-      "sideA": "Quiero la mitad del pastel.",
-      "sideB": [
-        {
-          "text": "I want half of the cake.",
-          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_0.mp3"
-        },
-        {
-          "text": "I want half the cake.",
-          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_1.mp3"
-        },
-        {
-          "text": "I would like half of the cake.",
-          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_2.mp3"
-        },
-        {
-          "text": "I want a half of the cake.",
-          "audioSrc": "public/data/audio/dummy/dummy_041_sideB_3.mp3"
-        }
-      ],
-      "note": "**[er:229]**\n\n~I want the half of the cake.~ is not valid because [half] does not take 'the' in front of it in this structure. The natural forms are [half the cake] and [half of the cake], and with an article it becomes [a half].\n\n[Half] functions as a predeterminer, meaning it comes before the article, not after it. This behaves similarly to 'all' or 'both' (e.g., you say 'all the cake', never 'the all cake')."
-    },
-    {
-      "cardId": "dummy_042",
-      "cardType": "flippable",
-      "sideA": "Quiero la cuarta parte del pastel.",
-      "sideB": [
-        {
-          "text": "I want a quarter of the cake.",
-          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_0.mp3"
-        },
-        {
-          "text": "I want one fourth of the cake.",
-          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_1.mp3"
-        },
-        {
-          "text": "I would like a quarter of the cake.",
-          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_2.mp3"
-        },
-        {
-          "text": "I want a fourth of the cake.",
-          "audioSrc": "public/data/audio/dummy/dummy_042_sideB_3.mp3"
-        }
-      ],
-      "note": "**[er:229]**\n\n~I want the quarter of the cake.~ and ~I want quarter of the cake.~ are not valid because 'quarter' is a singular countable noun and requires the indefinite article [a]. The correct expression is [a quarter of]."
-    },
-    {
-      "cardId": "dummy_044",
-      "cardType": "flippable",
-      "sideA": "Desde dónde estamos obteniendo la información está muy lento.",
-      "sideB": [
-        {
-          "text": "Where we are getting the information from is very slow.",
-          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_0.mp3"
-        },
-        {
-          "text": "The place we are getting the information from is very slow.",
-          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_1.mp3"
-        },
-        {
-          "text": "The source we are pulling the information from is very slow.",
-          "audioSrc": "public/data/audio/dummy/dummy_044_sideB_2.mp3"
-        }
-      ],
-      "note": "**[er:230]**\n\n~From we are getting the information is very slow.~ is not valid because a clause cannot begin with the bare preposition in this pattern. The clause starts with the wh-word and [from] stays at the end: [where we are getting the information from].\n\n~Where we are getting the information is very slow.~ is not valid because the verb phrase 'get information' requires a source, so the preposition [from] must be included at the end of the clause."
-    },
-    {
       "cardId": "dummy_046",
       "cardType": "flippable",
       "sideA": "No construyas las vistas que quedan aún.",
@@ -245,50 +73,6 @@
       "note": "**[er:108]**\n\n~...that are leave yet~ is incorrect because 'leave' is a base verb. To express 'quedan' in this context, use the past participle [left]."
     },
     {
-      "cardId": "dummy_049",
-      "cardType": "flippable",
-      "sideA": "Le mantendremos informado sobre nuestro progreso.",
-      "sideB": [
-        {
-          "text": "We'll keep you posted on our progress.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_0.mp3"
-        },
-        {
-          "text": "We will keep you updated on our progress.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_1.mp3"
-        },
-        {
-          "text": "We'll keep you posted with our progress.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_2.mp3"
-        },
-        {
-          "text": "We'll keep you informed about our progress.",
-          "audioSrc": "public/data/audio/dummy/dummy_049_sideB_3.mp3"
-        }
-      ],
-      "note": "**[er:231]**\n\n~We'll keep you inform about our progress.~ is not valid because [inform] is the base verb and cannot describe the state of a person. After [keep + object] the word must be an adjective or a participle, so the correct form is [keep you informed], the same pattern as [keep you posted] and [keep you updated]."
-    },
-    {
-      "cardId": "dummy_053",
-      "cardType": "flippable",
-      "sideA": "ETA significa Tiempo Estimado de Llegada.",
-      "sideB": [
-        {
-          "text": "ETA stands for Estimated Time of Arrival.",
-          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_0.mp3"
-        },
-        {
-          "text": "ETA means Estimated Time of Arrival.",
-          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_1.mp3"
-        },
-        {
-          "text": "The acronym ETA refers to the Estimated Time of Arrival.",
-          "audioSrc": "public/data/audio/dummy/dummy_053_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
       "cardId": "dummy_054",
       "cardType": "flippable",
       "sideA": "¿Cuál sería el tiempo estimado de llegada de los arreglos?",
@@ -307,50 +91,6 @@
         }
       ],
       "note": "~What will it be the ETA~ is incorrect because it uses a double subject. You must drop 'it' and say [What will the ETA be] or [What will be the ETA]."
-    },
-    {
-      "cardId": "dummy_055",
-      "cardType": "flippable",
-      "sideA": "Nombres largos no se muestran correctamente.",
-      "sideB": [
-        {
-          "text": "Long names are not displayed correctly.",
-          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_0.mp3"
-        },
-        {
-          "text": "Long names do not show up properly.",
-          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_1.mp3"
-        },
-        {
-          "text": "Long names are not rendering correctly.",
-          "audioSrc": "public/data/audio/dummy/dummy_055_sideB_2.mp3"
-        }
-      ],
-      "note": "~Long names are not showed correctly~ is not standard because the preferred past participle of [show] is [shown]. Additionally, ~Long names are not showed up correctly~ is invalid because the phrasal verb [show up] means 'to appear' and is not used in the passive voice. Instead, use the active form [Long names do not show up]."
-    },
-    {
-      "cardId": "dummy_056",
-      "cardType": "flippable",
-      "sideA": "Nombres largos se ven cortados, no completos.",
-      "sideB": [
-        {
-          "text": "Long names look cut off, not complete.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_0.mp3"
-        },
-        {
-          "text": "Long names appear truncated instead of full.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_1.mp3"
-        },
-        {
-          "text": "Long names are getting cut off rather than showing in full.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_2.mp3"
-        },
-        {
-          "text": "Long names are displayed cut off, not complete.",
-          "audioSrc": "public/data/audio/dummy/dummy_056_sideB_3.mp3"
-        }
-      ],
-      "note": null
     },
     {
       "cardId": "dummy_057",
@@ -393,26 +133,6 @@
       "note": "~...the app is optimized~ is missing the preposition at the end. It must be [optimized for] because the verb phrase is 'to optimize for'."
     },
     {
-      "cardId": "dummy_059",
-      "cardType": "flippable",
-      "sideA": "Gradle automatiza la construcción y empaquetado del archivo binario.",
-      "sideB": [
-        {
-          "text": "Gradle automates building and packaging the binary file.",
-          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_0.mp3"
-        },
-        {
-          "text": "Gradle automates the build and packaging of the binary file.",
-          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_1.mp3"
-        },
-        {
-          "text": "Gradle handles building and packaging the binary automatically.",
-          "audioSrc": "public/data/audio/dummy/dummy_059_sideB_2.mp3"
-        }
-      ],
-      "note": "~Gradle automates the contruction~ is not natural in a tech context. The industry standard term for compiling software is [building] or [the build], rather than construction."
-    },
-    {
       "cardId": "dummy_060",
       "cardType": "flippable",
       "sideA": "Gradle gestiona las dependencias y las tareas de compilación.",
@@ -432,46 +152,6 @@
         {
           "text": "Gradle manages dependencies and building tasks.",
           "audioSrc": "public/data/audio/dummy/dummy_060_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_061",
-      "cardType": "flippable",
-      "sideA": "Kotlin se usa para escribir la lógica principal de la app.",
-      "sideB": [
-        {
-          "text": "Kotlin is used to write the core logic of the app.",
-          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_0.mp3"
-        },
-        {
-          "text": "Kotlin is used for writing the main logic of the app.",
-          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_1.mp3"
-        },
-        {
-          "text": "We use Kotlin to write the core logic of the app.",
-          "audioSrc": "public/data/audio/dummy/dummy_061_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_062",
-      "cardType": "flippable",
-      "sideA": "Kotlin compila el código fuente en instrucciones ejecutables para Android.",
-      "sideB": [
-        {
-          "text": "Kotlin compiles the source code into executable instructions for Android.",
-          "audioSrc": "public/data/audio/dummy/dummy_062_sideB_0.mp3"
-        },
-        {
-          "text": "Kotlin turns the source code into executable instructions for Android.",
-          "audioSrc": "public/data/audio/dummy/dummy_062_sideB_1.mp3"
-        },
-        {
-          "text": "Kotlin compiles the source code into instructions Android can execute.",
-          "audioSrc": "public/data/audio/dummy/dummy_062_sideB_2.mp3"
         }
       ],
       "note": null
@@ -497,26 +177,6 @@
       "note": null
     },
     {
-      "cardId": "dummy_064",
-      "cardType": "flippable",
-      "sideA": "Android Gradle Plugin es la herramienta oficial que procesa los recursos de Android para generar el binario final.",
-      "sideB": [
-        {
-          "text": "The Android Gradle Plugin is the official tool that processes Android resources to generate the final binary.",
-          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_0.mp3"
-        },
-        {
-          "text": "AGP is the official tool that processes Android resources to produce the final binary.",
-          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_1.mp3"
-        },
-        {
-          "text": "The Android Gradle Plugin is the official tool that handles Android resources to build the final binary.",
-          "audioSrc": "public/data/audio/dummy/dummy_064_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
       "cardId": "dummy_065",
       "cardType": "flippable",
       "sideA": "Usando 0.1 de opacidad significa que el color es casi totalmente transparente.",
@@ -537,66 +197,6 @@
       "note": "~Using 0.1 of opacity~ is unnatural because in English we omit the preposition and say [0.1 opacity], or use the structure [an opacity of 0.1].\n\nIn mathematics and decimals, the '.' symbol is pronounced as [point] (e.g., zero point one). The word [dot] is used for web addresses and file extensions (like .com or .json)."
     },
     {
-      "cardId": "dummy_066",
-      "cardType": "flippable",
-      "sideA": "Usando 0.9 de opacidad significa que el color es casi totalmente sólido.",
-      "sideB": [
-        {
-          "text": "Using 0.9 opacity means the color is almost completely solid.",
-          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_0.mp3"
-        },
-        {
-          "text": "An opacity of 0.9 makes the color nearly fully solid.",
-          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_1.mp3"
-        },
-        {
-          "text": "Setting the opacity to 0.9 leaves the color almost completely opaque.",
-          "audioSrc": "public/data/audio/dummy/dummy_066_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_067",
-      "cardType": "flippable",
-      "sideA": "La opacidad mide el nivel de transparencia de un elemento.",
-      "sideB": [
-        {
-          "text": "Opacity measures the transparency level of an element.",
-          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_0.mp3"
-        },
-        {
-          "text": "Opacity indicates how transparent an element is.",
-          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_1.mp3"
-        },
-        {
-          "text": "Opacity is the measure of how see through an element is.",
-          "audioSrc": "public/data/audio/dummy/dummy_067_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_068",
-      "cardType": "flippable",
-      "sideA": "Con opacidad alta el elemento es más sólido y opaco.",
-      "sideB": [
-        {
-          "text": "High opacity makes the element more solid and opaque.",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_0.mp3"
-        },
-        {
-          "text": "With high opacity the element looks more solid and opaque.",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_1.mp3"
-        },
-        {
-          "text": "The higher the opacity, the more solid and opaque the element becomes.",
-          "audioSrc": "public/data/audio/dummy/dummy_068_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
       "cardId": "dummy_069",
       "cardType": "flippable",
       "sideA": "Con opacidad baja el elemento es más transparente y se ve menos.",
@@ -612,26 +212,6 @@
         {
           "text": "The lower the opacity, the more transparent and less visible the element becomes.",
           "audioSrc": "public/data/audio/dummy/dummy_069_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_070",
-      "cardType": "flippable",
-      "sideA": "Arrastra ese archivo y suéltalo allá.",
-      "sideB": [
-        {
-          "text": "Drag that file and drop it over there.",
-          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_0.mp3"
-        },
-        {
-          "text": "Drag and drop that file over there.",
-          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_1.mp3"
-        },
-        {
-          "text": "Grab that file and drop it right there.",
-          "audioSrc": "public/data/audio/dummy/dummy_070_sideB_2.mp3"
         }
       ],
       "note": null
@@ -689,46 +269,6 @@
       "note": "[Gap] means an empty space or opening between two objects or elements."
     },
     {
-      "cardId": "dummy_073",
-      "cardType": "flippable",
-      "sideA": "Si el menú envuelve el texto, el hueco desaparece.",
-      "sideB": [
-        {
-          "text": "If the menu wraps the text, the gap disappears.",
-          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_0.mp3"
-        },
-        {
-          "text": "When the menu wraps the text, the gap goes away.",
-          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_1.mp3"
-        },
-        {
-          "text": "Wrapping the text with the menu makes the gap disappear.",
-          "audioSrc": "public/data/audio/dummy/dummy_073_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_074",
-      "cardType": "flippable",
-      "sideA": "Espero que la solicitud devuelva una respuesta HTTP 200.",
-      "sideB": [
-        {
-          "text": "I hope the request returns an HTTP 200 response.",
-          "audioSrc": "public/data/audio/dummy/dummy_074_sideB_0.mp3"
-        },
-        {
-          "text": "I expect the request to return an HTTP 200 response.",
-          "audioSrc": "public/data/audio/dummy/dummy_074_sideB_1.mp3"
-        },
-        {
-          "text": "Hopefully the request comes back with an HTTP 200.",
-          "audioSrc": "public/data/audio/dummy/dummy_074_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
       "cardId": "dummy_075",
       "cardType": "flippable",
       "sideA": "Vamos a probar primero el happy path de esta función.",
@@ -753,50 +293,6 @@
       "note": null
     },
     {
-      "cardId": "dummy_076",
-      "cardType": "flippable",
-      "sideA": "Parece que solo probaron los happy paths.",
-      "sideB": [
-        {
-          "text": "It seems like they only tested the happy paths.",
-          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_0.mp3"
-        },
-        {
-          "text": "It looks like they only tested the happy paths.",
-          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_1.mp3"
-        },
-        {
-          "text": "Apparently they only tested the happy paths.",
-          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_2.mp3"
-        },
-        {
-          "text": "It seems they only tested the happy paths.",
-          "audioSrc": "public/data/audio/dummy/dummy_076_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_077",
-      "cardType": "flippable",
-      "sideA": "El happy path es el camino directo hacia el resultado sin complicaciones.",
-      "sideB": [
-        {
-          "text": "The happy path is the direct path to the result without complications.",
-          "audioSrc": "public/data/audio/dummy/dummy_077_sideB_0.mp3"
-        },
-        {
-          "text": "The happy path is the straightforward route to the result with no complications.",
-          "audioSrc": "public/data/audio/dummy/dummy_077_sideB_1.mp3"
-        },
-        {
-          "text": "The happy path is the direct route to the expected result without any issues.",
-          "audioSrc": "public/data/audio/dummy/dummy_077_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
       "cardId": "dummy_078",
       "cardType": "flippable",
       "sideA": "¿No debería ser todo al mismo tiempo, como en la versión Mobile?",
@@ -816,6 +312,646 @@
         {
           "text": "Shouldn't it be all at the same time, like in the Mobile version?",
           "audioSrc": "public/data/audio/dummy/dummy_078_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_079",
+      "cardType": "flippable",
+      "sideA": "Esta inversión produce un alto rendimiento cada año.",
+      "sideB": [
+        {
+          "text": "This investment yields a high return every year.",
+          "audioSrc": "public/data/audio/dummy/dummy_079_sideB_0.mp3"
+        },
+        {
+          "text": "This investment produces a high return each year.",
+          "audioSrc": "public/data/audio/dummy/dummy_079_sideB_1.mp3"
+        },
+        {
+          "text": "This investment delivers a high yield every year.",
+          "audioSrc": "public/data/audio/dummy/dummy_079_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_080",
+      "cardType": "flippable",
+      "sideA": "El cálculo arroja el resultado correcto.",
+      "sideB": [
+        {
+          "text": "The calculation yields the correct result.",
+          "audioSrc": "public/data/audio/dummy/dummy_080_sideB_0.mp3"
+        },
+        {
+          "text": "The calculation returns the correct result.",
+          "audioSrc": "public/data/audio/dummy/dummy_080_sideB_1.mp3"
+        },
+        {
+          "text": "The calculation gives the right result.",
+          "audioSrc": "public/data/audio/dummy/dummy_080_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_081",
+      "cardType": "flippable",
+      "sideA": "Calentar agua genera vapor.",
+      "sideB": [
+        {
+          "text": "Heating water yields steam.",
+          "audioSrc": "public/data/audio/dummy/dummy_081_sideB_0.mp3"
+        },
+        {
+          "text": "Heating water produces steam.",
+          "audioSrc": "public/data/audio/dummy/dummy_081_sideB_1.mp3"
+        },
+        {
+          "text": "Heating up water generates steam.",
+          "audioSrc": "public/data/audio/dummy/dummy_081_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_082",
+      "cardType": "flippable",
+      "sideA": "Por favor, concatena tu nombre y apellido.",
+      "sideB": [
+        {
+          "text": "Please concatenate your first and last name.",
+          "audioSrc": "public/data/audio/dummy/dummy_082_sideB_0.mp3"
+        },
+        {
+          "text": "Please join your first name and your last name together.",
+          "audioSrc": "public/data/audio/dummy/dummy_082_sideB_1.mp3"
+        },
+        {
+          "text": "Please concatenate your first name with your surname.",
+          "audioSrc": "public/data/audio/dummy/dummy_082_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_083",
+      "cardType": "flippable",
+      "sideA": "El sistema concatenará los códigos de error.",
+      "sideB": [
+        {
+          "text": "The system will concatenate the error codes.",
+          "audioSrc": "public/data/audio/dummy/dummy_083_sideB_0.mp3"
+        },
+        {
+          "text": "The system is going to concatenate the error codes.",
+          "audioSrc": "public/data/audio/dummy/dummy_083_sideB_1.mp3"
+        },
+        {
+          "text": "The error codes will be concatenated by the system.",
+          "audioSrc": "public/data/audio/dummy/dummy_083_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_084",
+      "cardType": "flippable",
+      "sideA": "Puedes concatenar estos archivos de texto fácilmente.",
+      "sideB": [
+        {
+          "text": "You can concatenate these text files easily.",
+          "audioSrc": "public/data/audio/dummy/dummy_084_sideB_0.mp3"
+        },
+        {
+          "text": "You can easily concatenate these text files.",
+          "audioSrc": "public/data/audio/dummy/dummy_084_sideB_1.mp3"
+        },
+        {
+          "text": "These text files can be concatenated easily.",
+          "audioSrc": "public/data/audio/dummy/dummy_084_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_085",
+      "cardType": "flippable",
+      "sideA": "Ya no deberían ver más el mensaje de advertencia.",
+      "sideB": [
+        {
+          "text": "You should not see the warning message anymore.",
+          "audioSrc": "public/data/audio/dummy/dummy_085_sideB_0.mp3"
+        },
+        {
+          "text": "You shouldn't be seeing the warning message any more.",
+          "audioSrc": "public/data/audio/dummy/dummy_085_sideB_1.mp3"
+        },
+        {
+          "text": "The warning message should not show up for you again.",
+          "audioSrc": "public/data/audio/dummy/dummy_085_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_086",
+      "cardType": "flippable",
+      "sideA": "El mensaje de advertencia desapareció!",
+      "sideB": [
+        {
+          "text": "The warning message is gone!",
+          "audioSrc": "public/data/audio/dummy/dummy_086_sideB_0.mp3"
+        },
+        {
+          "text": "The warning message disappeared!",
+          "audioSrc": "public/data/audio/dummy/dummy_086_sideB_1.mp3"
+        },
+        {
+          "text": "The warning message went away!",
+          "audioSrc": "public/data/audio/dummy/dummy_086_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_087",
+      "cardType": "flippable",
+      "sideA": "Es el punto de entrada a la app para Android, cada ambiente tiene uno.",
+      "sideB": [
+        {
+          "text": "It is the entry point to the Android app, every environment has one.",
+          "audioSrc": "public/data/audio/dummy/dummy_087_sideB_0.mp3"
+        },
+        {
+          "text": "It's the entry point of the Android app, and each environment has its own.",
+          "audioSrc": "public/data/audio/dummy/dummy_087_sideB_1.mp3"
+        },
+        {
+          "text": "That is the Android app entry point, and there is one per environment.",
+          "audioSrc": "public/data/audio/dummy/dummy_087_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_088",
+      "cardType": "flippable",
+      "sideA": "MainActivity es una clase de Android, y se necesita declarar para cada ambiente.",
+      "sideB": [
+        {
+          "text": "MainActivity is an Android class, and it needs to be declared for each environment.",
+          "audioSrc": "public/data/audio/dummy/dummy_088_sideB_0.mp3"
+        },
+        {
+          "text": "MainActivity is an Android class, and you need to declare it for every environment.",
+          "audioSrc": "public/data/audio/dummy/dummy_088_sideB_1.mp3"
+        },
+        {
+          "text": "MainActivity is an Android class that has to be declared per environment.",
+          "audioSrc": "public/data/audio/dummy/dummy_088_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_089",
+      "cardType": "flippable",
+      "sideA": "API 36 es Android 16, API 35 es Android 15, y así...",
+      "sideB": [
+        {
+          "text": "API 36 is Android 16, API 35 is Android 15, and so on.",
+          "audioSrc": "public/data/audio/dummy/dummy_089_sideB_0.mp3"
+        },
+        {
+          "text": "API 36 means Android 16, API 35 means Android 15, and so on.",
+          "audioSrc": "public/data/audio/dummy/dummy_089_sideB_1.mp3"
+        },
+        {
+          "text": "API level 36 maps to Android 16, API level 35 maps to Android 15, and so forth.",
+          "audioSrc": "public/data/audio/dummy/dummy_089_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_090",
+      "cardType": "flippable",
+      "sideA": "API 34 es Android 14, API 33 es Android 13, y así...",
+      "sideB": [
+        {
+          "text": "API 34 is Android 14, API 33 is Android 13, and so on.",
+          "audioSrc": "public/data/audio/dummy/dummy_090_sideB_0.mp3"
+        },
+        {
+          "text": "API 34 corresponds to Android 14, API 33 corresponds to Android 13, and so on.",
+          "audioSrc": "public/data/audio/dummy/dummy_090_sideB_1.mp3"
+        },
+        {
+          "text": "API level 34 is Android 14, API level 33 is Android 13, and so forth.",
+          "audioSrc": "public/data/audio/dummy/dummy_090_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_091",
+      "cardType": "flippable",
+      "sideA": "Es el archivo que abre la app cuando el usuario toca el icono.",
+      "sideB": [
+        {
+          "text": "It's the file that opens the app when the user taps the icon.",
+          "audioSrc": "public/data/audio/dummy/dummy_091_sideB_0.mp3"
+        },
+        {
+          "text": "It is the file that launches the app when the user taps the icon.",
+          "audioSrc": "public/data/audio/dummy/dummy_091_sideB_1.mp3"
+        },
+        {
+          "text": "That file is what opens the app once the user taps on the icon.",
+          "audioSrc": "public/data/audio/dummy/dummy_091_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_092",
+      "cardType": "flippable",
+      "sideA": "Es la versión de Android contra la que la app se construye y se prueba.",
+      "sideB": [
+        {
+          "text": "It's the Android version the app is built and tested against.",
+          "audioSrc": "public/data/audio/dummy/dummy_092_sideB_0.mp3"
+        },
+        {
+          "text": "It is the Android version that the app is compiled and tested against.",
+          "audioSrc": "public/data/audio/dummy/dummy_092_sideB_1.mp3"
+        },
+        {
+          "text": "That's the Android version used to build and test the app.",
+          "audioSrc": "public/data/audio/dummy/dummy_092_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_093",
+      "cardType": "flippable",
+      "sideA": "NDK significa Native Development Kit.",
+      "sideB": [
+        {
+          "text": "NDK stands for Native Development Kit.",
+          "audioSrc": "public/data/audio/dummy/dummy_093_sideB_0.mp3"
+        },
+        {
+          "text": "NDK means Native Development Kit.",
+          "audioSrc": "public/data/audio/dummy/dummy_093_sideB_1.mp3"
+        },
+        {
+          "text": "The acronym NDK stands for Native Development Kit.",
+          "audioSrc": "public/data/audio/dummy/dummy_093_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_094",
+      "cardType": "flippable",
+      "sideA": "Gradle es la herramienta que construye la app de Android.",
+      "sideB": [
+        {
+          "text": "Gradle is the tool that builds the Android app.",
+          "audioSrc": "public/data/audio/dummy/dummy_094_sideB_0.mp3"
+        },
+        {
+          "text": "Gradle is the build tool for the Android app.",
+          "audioSrc": "public/data/audio/dummy/dummy_094_sideB_1.mp3"
+        },
+        {
+          "text": "The Android app is built by Gradle.",
+          "audioSrc": "public/data/audio/dummy/dummy_094_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_095",
+      "cardType": "flippable",
+      "sideA": "Kotlin es el lenguaje en el que está escrito el lado Android de la app.",
+      "sideB": [
+        {
+          "text": "Kotlin is the language the Android side of the app is written in.",
+          "audioSrc": "public/data/audio/dummy/dummy_095_sideB_0.mp3"
+        },
+        {
+          "text": "Kotlin is the language used to write the Android side of the app.",
+          "audioSrc": "public/data/audio/dummy/dummy_095_sideB_1.mp3"
+        },
+        {
+          "text": "The Android side of the app is written in Kotlin.",
+          "audioSrc": "public/data/audio/dummy/dummy_095_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_096",
+      "cardType": "flippable",
+      "sideA": "La correspondencia de Gradle en iOS se gestiona directamente en Xcode.",
+      "sideB": [
+        {
+          "text": "On iOS, the equivalent of Gradle is handled directly in Xcode.",
+          "audioSrc": "public/data/audio/dummy/dummy_096_sideB_0.mp3"
+        },
+        {
+          "text": "The iOS counterpart of Gradle is handled directly inside Xcode.",
+          "audioSrc": "public/data/audio/dummy/dummy_096_sideB_1.mp3"
+        },
+        {
+          "text": "On iOS, whatever Gradle does is managed straight from Xcode.",
+          "audioSrc": "public/data/audio/dummy/dummy_096_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_097",
+      "cardType": "flippable",
+      "sideA": "El monto de crédito solo se calcula si la responsabilidad tiene los créditos activados.",
+      "sideB": [
+        {
+          "text": "The credit amount is only calculated if the responsibility has credits enabled.",
+          "audioSrc": "public/data/audio/dummy/dummy_097_sideB_0.mp3"
+        },
+        {
+          "text": "The credit amount is calculated only when the responsibility has credits turned on.",
+          "audioSrc": "public/data/audio/dummy/dummy_097_sideB_1.mp3"
+        },
+        {
+          "text": "We only calculate the credit amount if credits are enabled for the responsibility.",
+          "audioSrc": "public/data/audio/dummy/dummy_097_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_098",
+      "cardType": "flippable",
+      "sideA": "Los créditos son opcionales, así que leemos el perfil XXSBL_IBE_USE_CREDITS antes de mostrarlos.",
+      "sideB": [
+        {
+          "text": "Credits are optional, so we read the XXSBL_IBE_USE_CREDITS profile option before showing them.",
+          "audioSrc": "public/data/audio/dummy/dummy_098_sideB_0.mp3"
+        },
+        {
+          "text": "Credits are optional, so we check the XXSBL_IBE_USE_CREDITS profile option before displaying them.",
+          "audioSrc": "public/data/audio/dummy/dummy_098_sideB_1.mp3"
+        },
+        {
+          "text": "Since credits are optional, we read the profile option XXSBL_IBE_USE_CREDITS first and only then show them.",
+          "audioSrc": "public/data/audio/dummy/dummy_098_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_099",
+      "cardType": "flippable",
+      "sideA": "Es el mismo control que ya está en GET_CREDIT_AMOUNT.",
+      "sideB": [
+        {
+          "text": "It is the same check already in GET_CREDIT_AMOUNT.",
+          "audioSrc": "public/data/audio/dummy/dummy_099_sideB_0.mp3"
+        },
+        {
+          "text": "It's the same validation that is already in GET_CREDIT_AMOUNT.",
+          "audioSrc": "public/data/audio/dummy/dummy_099_sideB_1.mp3"
+        },
+        {
+          "text": "This is the same check we already have inside GET_CREDIT_AMOUNT.",
+          "audioSrc": "public/data/audio/dummy/dummy_099_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_100",
+      "cardType": "flippable",
+      "sideA": "Android usa CircularProgressIndicator, iOS usa CupertinoActivityIndicator.",
+      "sideB": [
+        {
+          "text": "Android uses CircularProgressIndicator, iOS uses CupertinoActivityIndicator.",
+          "audioSrc": "public/data/audio/dummy/dummy_100_sideB_0.mp3"
+        },
+        {
+          "text": "On Android we use CircularProgressIndicator, and on iOS we use CupertinoActivityIndicator.",
+          "audioSrc": "public/data/audio/dummy/dummy_100_sideB_1.mp3"
+        },
+        {
+          "text": "Android relies on CircularProgressIndicator while iOS relies on CupertinoActivityIndicator.",
+          "audioSrc": "public/data/audio/dummy/dummy_100_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_101",
+      "cardType": "flippable",
+      "sideA": "El código elige el spinner según la plataforma en la que corre.",
+      "sideB": [
+        {
+          "text": "The code picks the spinner based on the platform it runs on.",
+          "audioSrc": "public/data/audio/dummy/dummy_101_sideB_0.mp3"
+        },
+        {
+          "text": "The code chooses the spinner depending on the platform it is running on.",
+          "audioSrc": "public/data/audio/dummy/dummy_101_sideB_1.mp3"
+        },
+        {
+          "text": "Which spinner is used depends on the platform the code runs on.",
+          "audioSrc": "public/data/audio/dummy/dummy_101_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_102",
+      "cardType": "flippable",
+      "sideA": "Cada plataforma usa su propio estilo de spinner nativo.",
+      "sideB": [
+        {
+          "text": "Each platform uses its own native spinner style.",
+          "audioSrc": "public/data/audio/dummy/dummy_102_sideB_0.mp3"
+        },
+        {
+          "text": "Every platform has its own native spinner style.",
+          "audioSrc": "public/data/audio/dummy/dummy_102_sideB_1.mp3"
+        },
+        {
+          "text": "Each platform shows the spinner in its own native style.",
+          "audioSrc": "public/data/audio/dummy/dummy_102_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_103",
+      "cardType": "flippable",
+      "sideA": "VSCode es solo el editor donde escribo el código; quien compila es Android y Xcode por detrás.",
+      "sideB": [
+        {
+          "text": "VSCode is only the editor where I write the code; Android and Xcode do the compiling behind it.",
+          "audioSrc": "public/data/audio/dummy/dummy_103_sideB_0.mp3"
+        },
+        {
+          "text": "VSCode is just the editor I write the code in; the actual compiling is done by Android and Xcode.",
+          "audioSrc": "public/data/audio/dummy/dummy_103_sideB_1.mp3"
+        },
+        {
+          "text": "I only use VSCode to write the code; Android and Xcode are the ones compiling in the background.",
+          "audioSrc": "public/data/audio/dummy/dummy_103_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_104",
+      "cardType": "flippable",
+      "sideA": "Uso VSCode para editar, pero el build real lo hacen las herramientas de Android y de Xcode.",
+      "sideB": [
+        {
+          "text": "I use VSCode to edit, but the real build is done by Android's and Xcode's tools.",
+          "audioSrc": "public/data/audio/dummy/dummy_104_sideB_0.mp3"
+        },
+        {
+          "text": "I use VSCode to edit, but the actual build is handled by the Android and Xcode tools.",
+          "audioSrc": "public/data/audio/dummy/dummy_104_sideB_1.mp3"
+        },
+        {
+          "text": "The editing happens in VSCode, but the Android and Xcode tools do the real build.",
+          "audioSrc": "public/data/audio/dummy/dummy_104_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_105",
+      "cardType": "flippable",
+      "sideA": "VSCode no compila nada por sí solo; llama a las herramientas de Android y de Xcode para generar el binario.",
+      "sideB": [
+        {
+          "text": "VSCode does not compile anything by itself; it calls Android's and Xcode's tools to produce the binary.",
+          "audioSrc": "public/data/audio/dummy/dummy_105_sideB_0.mp3"
+        },
+        {
+          "text": "VSCode does not compile anything on its own; it calls the Android and Xcode tools to build the binary.",
+          "audioSrc": "public/data/audio/dummy/dummy_105_sideB_1.mp3"
+        },
+        {
+          "text": "By itself VSCode compiles nothing; it invokes the Android and Xcode tools to generate the binary.",
+          "audioSrc": "public/data/audio/dummy/dummy_105_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_106",
+      "cardType": "flippable",
+      "sideA": "Ese vacío heredado ya no ocurre; esta línea lo restaura.",
+      "sideB": [
+        {
+          "text": "That inherited blank state no longer happens; this line restores it.",
+          "audioSrc": "public/data/audio/dummy/dummy_106_sideB_0.mp3"
+        },
+        {
+          "text": "That inherited empty state does not happen anymore; this line resets it.",
+          "audioSrc": "public/data/audio/dummy/dummy_106_sideB_1.mp3"
+        },
+        {
+          "text": "The inherited blank value no longer occurs, because this line restores it.",
+          "audioSrc": "public/data/audio/dummy/dummy_106_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_107",
+      "cardType": "flippable",
+      "sideA": "El error ocurría con clientes dummy cuando no tenían fechas de pedido.",
+      "sideB": [
+        {
+          "text": "The bug happened with dummy customers when they had no order dates.",
+          "audioSrc": "public/data/audio/dummy/dummy_107_sideB_0.mp3"
+        },
+        {
+          "text": "The bug showed up with dummy customers that had no order dates.",
+          "audioSrc": "public/data/audio/dummy/dummy_107_sideB_1.mp3"
+        },
+        {
+          "text": "The error occurred for dummy customers whenever they had no order dates.",
+          "audioSrc": "public/data/audio/dummy/dummy_107_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_108",
+      "cardType": "flippable",
+      "sideA": "Si un cliente no tenía fechas de pedido, ese vacío pasaba al siguiente cliente.",
+      "sideB": [
+        {
+          "text": "If a customer had no order dates, that blank state passed to the next customer.",
+          "audioSrc": "public/data/audio/dummy/dummy_108_sideB_0.mp3"
+        },
+        {
+          "text": "If a customer had no order dates, that empty state carried over to the next customer.",
+          "audioSrc": "public/data/audio/dummy/dummy_108_sideB_1.mp3"
+        },
+        {
+          "text": "When a customer had no order dates, the blank value leaked into the next customer.",
+          "audioSrc": "public/data/audio/dummy/dummy_108_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_109",
+      "cardType": "flippable",
+      "sideA": "Estamos revisando los problemas de lentitud.",
+      "sideB": [
+        {
+          "text": "We are looking into the slowness issues.",
+          "audioSrc": "public/data/audio/dummy/dummy_109_sideB_0.mp3"
+        },
+        {
+          "text": "We are currently investigating the performance issues.",
+          "audioSrc": "public/data/audio/dummy/dummy_109_sideB_1.mp3"
+        },
+        {
+          "text": "We are checking the slowness problems right now.",
+          "audioSrc": "public/data/audio/dummy/dummy_109_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_110",
+      "cardType": "flippable",
+      "sideA": "La lentitud se debe a llamadas al backend que tardan mucho en regresar.",
+      "sideB": [
+        {
+          "text": "The slowness is caused by backend calls that take a long time to come back.",
+          "audioSrc": "public/data/audio/dummy/dummy_110_sideB_0.mp3"
+        },
+        {
+          "text": "The slowness is due to backend calls that take too long to respond.",
+          "audioSrc": "public/data/audio/dummy/dummy_110_sideB_1.mp3"
+        },
+        {
+          "text": "It is slow because the backend calls take a long time to return.",
+          "audioSrc": "public/data/audio/dummy/dummy_110_sideB_2.mp3"
         }
       ],
       "note": null

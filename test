@@ -1,66 +1,82 @@
-[3:03 p. m., 6/8/2026] Alonso: ETA significa Tiempo Estimado de Llegada.
-ETA stands for Estimated Time of Arrival.
-[3:13 p. m., 6/8/2026] Alonso: "Cuándo sería el tiempo estimado de llegada de los arreglos?" 
-"What is the ETA for the fixes?"
-"What is the Estimated Time of Arrival for the fixes?"
-"What is the estimated completion time for the fixes?"
-[10:05 a. m., 7/8/2026] Alonso: “Nombres largos no se muestran correctamente”
-[10:05 a. m., 7/8/2026] Alonso: “Nombres largos se ven cortados, no completos.”
-[11:01 a. m., 7/8/2026] Alonso: compileSdkVersion indica la versión de Android con la que se compila la app.
-compileSdkVersion sets the Android version used to compile the app.
+Esta inversión produce un alto rendimiento cada año.
+This investment yields a high return every year.
 
-targetSdkVersion define la versión de Android para la que está optimizada la app.
-targetSdkVersion defines the Android version the app is optimized for.
+El cálculo arroja el resultado correcto.
+The calculation yields the correct result.
 
-Gradle automatiza la construcción y empaquetado del archivo binario.
-Gradle automates building and packaging the binary file.
+Calentar agua genera vapor.
+Heating water yields steam.
+Por favor, concatena tu nombre y apellido.
+Please concatenate your first and last name.
 
-Gradle gestiona las dependencias y las tareas de compilación.
-Gradle manages dependencies and compilation tasks.
+El sistema concatenará los códigos de error.
+The system will concatenate the error codes.
 
-Kotlin se usa para escribir la lógica principal de la app.
-Kotlin is used to write the core logic of the app.
+Puedes concatenar estos archivos de texto fácilmente.
+You can concatenate these text files easily.
+“Ya no deberian ver mas el mensaje de advertencia”
+“El mensaje de advertencia desaparecio!".
+"Es el punto de entrada a la app para android, cada ambiente tiene uno."
+"It is the entry point to the Android app, every environment has one."
 
-Kotlin compila el código fuente en instrucciones ejecutables para Android.
-Kotlin compiles the source code into executable instructions for Android.
-[11:02 a. m., 7/8/2026] Alonso: Android Gradle Plugin (AGP) es la extensión de compilación que adapta Gradle para compilar y empaquetar aplicaciones Android.
-Android Gradle Plugin (AGP) is the build extension that adapts Gradle to compile and package Android apps.
+"MainActivity es una clase de Android, y se necesita declara para cada ambiente.  "
+"MainActivity is an Android class, and it needs to be declared for each environment."
 
-Android Gradle Plugin (AGP) es la herramienta oficial que procesa los recursos de Android para generar el binario final.
-Android Gradle Plugin (AGP) is the official tool that processes Android resources to generate the final binary.
+"API 36 es Android 16, API 35 es Android 15, y asi...."
+"API 36 is Android 16, API 35 is Android 15, and so on..."
 
-[3:19 p. m., 4/8/2026] Alonso: Usando 0.1 de opacidad significa que el color es casi totalmente transparente.
-Using 0.1 opacity means the color is almost completely transparent.
+"API 34 es Android 14, API 33 es Android 14, y asi...."
+"API 34 is Android 14, API 33 is Android 13, and so on..."
+Es el archivo que abre la app cuando el usuario toca el icono.
+It's the file that opens the app when the user taps the icon.
 
-Usando 0.9 de opacidad significa que el color es casi totalmente sólido.
-Using 0.9 opacity means the color is almost completely solid.
+Es la versión de Android contra la que la app se construye y se prueba.
+It's the Android version the app is built and tested against.
 
-Opacidad mide el nivel de transparencia de un elemento.
-Opacity measures the transparency level of an element.
+NDK significa Native Development Kit.
+NDK stands for Native Development Kit.
 
-Opacidad alta el elemento es más sólido y opaco.
-High opacity makes the element more solid and opaque.
+Gradle es la herramienta que construye la app de Android.
+Gradle is the tool that builds the Android app.
 
-Opacidad baja el elemento es más transparente y se ve menos.
-Low opacity makes the element more transparent and less visible.
-[8:24 p. m., 4/8/2026] Alonso: Arrastra ese archivo y sueltalo allá.
-[11:07 a. m., 5/8/2026] Alonso: El contenedor envuelve la lista y elimina los huecos.
-The container wraps the list and removes the gaps.
+Kotlin es el lenguaje en el que está escrito el lado Android de la app.
+Kotlin is the language the Android side of the app is written in.
 
-Este componente envuelve la imagen para que no queden huecos.
- This component wraps the image so there are no gaps.
+La correspondencia de Gradle en iOS se gestiona directamente en Xcode.
+On iOS, the equivalent of Gradle is handled directly in Xcode.
+El monto de crédito solo se calcula si la responsabilidad tiene los créditos activados.
+The credit amount is only calculated if the responsibility has credits enabled.
 
-Si el menú envuelve el texto, el hueco desaparece.
- If the menu wraps the text, the gap disappears.
-[2:00 p. m., 5/8/2026] Alonso: Espero que la solicitud devuelva una respuesta HTTP 200.
-I hope the request returns an HTTP 200 response.
-[2:04 p. m., 5/8/2026] Alonso: Vamos a probar primero el happy path de esta función.
-Let's test the happy path of this feature first
-[2:05 p. m., 5/8/2026] Alonso: Parece que solo probaron los happy paths.
-It seems like they only tested the happy paths.
-[2:07 p. m., 5/8/2026] Alonso: El happy path es el camino directo hacia el resultado sin complicaciones.
-The happy path is the direct path to the result without complications
-
-¿No debería ser todo al mismo tiempo, como en la versión Mobile?
+Los créditos son opcionales, así que leemos el perfil `XXSBL_IBE_USE_CREDITS` antes de mostrarlos.
+Credits are optional, so we read the `XXSBL_IBE_USE_CREDITS` profile option before showing them.
 
 
+Es el mismo control que ya está en `GET_CREDIT_AMOUNT`.
+It is the same check already in `GET_CREDIT_AMOUNT`.
+Android usa `CircularProgressIndicator`, iOS usa `CupertinoActivityIndicator`.
+Android uses `CircularProgressIndicator`, iOS uses `CupertinoActivityIndicator`.
+
+
+El código elige el spinner según la plataforma en la que corre.
+The code picks the spinner based on the platform it runs on.
+
+Cada plataforma usa su propio estilo de spinner nativo.
+Each platform uses its own native spinner style.
+VSCode es solo el editor donde escribo el código; quien compila es Android y Xcode por detrás.
+VSCode is only the editor where I write the code; Android and Xcode do the compiling behind it.
+
+Uso VSCode para editar, pero el build real lo hacen las herramientas de Android y de Xcode.
+I use VSCode to edit, but the real build is done by Android's and Xcode's tools.
+
+VSCode no compila nada por sí solo; llama a las herramientas de Android y de Xcode para generar
+el binario.
+VSCode does not compile anything by itself; it calls Android's and Xcode's tools to produce the
+binary.
+Ese vacío heredado ya no ocurre; esta línea lo restaura.
+That inherited blank state no longer happens; this line restores it.
+El error ocurría con clientes dummy cuando no tenían fechas de pedido.
+The bug happened with dummy customers when they had no order dates.
+Si un cliente no tenía fechas de pedido, ese vacío pasaba al siguiente cliente.
+If a customer had no order dates, that blank state passed to the next customer.
+"estamos revisando los problemas de lentitud ."
+"la lentitud se debe a llamadas al backend que tardan mucho en regresar."
