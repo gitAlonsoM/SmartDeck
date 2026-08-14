@@ -110,7 +110,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_057_sideB_2.mp3"
         }
       ],
-      "note": "~...sets the Android version is compiled the app~ lacks the proper sentence structure. It needs a relative clause and a preposition at the end, such as [the Android version the app is compiled with].\n\n~...against the app is compiled~ is missing the relative pronoun. You must use [against which the app is compiled]."
+      "note": "~...sets the Android version is compiled the app~ lacks the proper sentence structure. It needs a relative clause and a preposition at the end, such as [the Android version the app is compiled with].\n\n~...against the app is compiled~ is missing the relative pronoun. You must use [against which the app is compiled].\n\n~...sets the Android version with the app gets compiled~ is missing a relative pronoun. You must say [with which the app gets compiled] or leave the preposition at the end: [the app gets compiled with]."
     },
     {
       "cardId": "dummy_058",
@@ -354,7 +354,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_080_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~The calculate yields...~ is incorrect because 'calculate' is a verb. You must use the noun form [calculation]."
     },
     {
       "cardId": "dummy_081",
@@ -374,7 +374,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_081_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~Heating water yields stream~ contains a spelling mistake. A 'stream' is a flow of water (arroyo) or data (flujo), whereas the correct word for 'vapor' is [steam]."
     },
     {
       "cardId": "dummy_082",
@@ -454,7 +454,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_085_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~You should not see more the warning messagr~ is not valid because 'more' is placed incorrectly. The correct phrasing uses [anymore] or [any more] at the end of the sentence."
     },
     {
       "cardId": "dummy_086",
@@ -492,6 +492,10 @@
         {
           "text": "That is the Android app entry point, and there is one per environment.",
           "audioSrc": "public/data/audio/dummy/dummy_087_sideB_2.mp3"
+        },
+        {
+          "text": "It is the starting point to the Android app, every environment has one.",
+          "audioSrc": "public/data/audio/dummy/dummy_087_sideB_3.mp3"
         }
       ],
       "note": null
@@ -654,7 +658,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_095_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~...the Android app is written~ is incomplete. You must include the preposition [in] at the end: [is written in]."
     },
     {
       "cardId": "dummy_096",
@@ -674,7 +678,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_096_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~...the corresponcy of Gradle~ is incorrect because 'corresponcy' is not a valid word. The correct terms are [equivalent] or [counterpart]."
     },
     {
       "cardId": "dummy_097",
@@ -774,7 +778,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_101_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~...based on the platform it runs~ is incomplete. You must include the preposition [on] at the end to specify where it runs: [it runs on]."
     },
     {
       "cardId": "dummy_102",
@@ -814,7 +818,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_103_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~...who compiles is Android and Xcode behind it~ is incorrect because 'who' is used for people. For tools or programs, use [what compiles] or [the ones that compile]."
     },
     {
       "cardId": "dummy_104",
@@ -854,7 +858,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_105_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~...by its own~ is a mix of two expressions. You must use either [on its own] or [by itself]."
     },
     {
       "cardId": "dummy_106",
@@ -874,7 +878,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_106_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~That inherited gap no longer happens~ changes the meaning. In programming, 'vacío' refers to a [blank state] or [empty value], whereas 'gap' refers to physical or temporal space."
     },
     {
       "cardId": "dummy_107",
@@ -892,6 +896,10 @@
         {
           "text": "The error occurred for dummy customers whenever they had no order dates.",
           "audioSrc": "public/data/audio/dummy/dummy_107_sideB_2.mp3"
+        },
+        {
+          "text": "The bug happened when dummy customers didn't have order dates.",
+          "audioSrc": "public/data/audio/dummy/dummy_107_sideB_3.mp3"
         }
       ],
       "note": null
@@ -912,6 +920,10 @@
         {
           "text": "When a customer had no order dates, the blank value leaked into the next customer.",
           "audioSrc": "public/data/audio/dummy/dummy_108_sideB_2.mp3"
+        },
+        {
+          "text": "If a customer didn't have order dates, that blank state passed to the next customer.",
+          "audioSrc": "public/data/audio/dummy/dummy_108_sideB_3.mp3"
         }
       ],
       "note": null
@@ -934,7 +946,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_109_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~We are checking the slow problems right now~ is not natural. We use the noun [slowness] or [performance] to describe the issue, rather than the adjective 'slow'."
     },
     {
       "cardId": "dummy_110",
@@ -952,6 +964,50 @@
         {
           "text": "It is slow because the backend calls take a long time to return.",
           "audioSrc": "public/data/audio/dummy/dummy_110_sideB_2.mp3"
+        },
+        {
+          "text": "The slowness is due to backend calls that are taking too long.",
+          "audioSrc": "public/data/audio/dummy/dummy_110_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_111",
+      "cardType": "flippable",
+      "sideA": "El equivalente de Google Play Console en Android, es App Store en iOS.",
+      "sideB": [
+        {
+          "text": "The equivalent of Google Play Console on Android is the App Store on iOS.",
+          "audioSrc": "public/data/audio/dummy/dummy_111_sideB_0.mp3"
+        },
+        {
+          "text": "On iOS, the App Store is the equivalent of Google Play Console on Android.",
+          "audioSrc": "public/data/audio/dummy/dummy_111_sideB_1.mp3"
+        },
+        {
+          "text": "Google Play Console on Android is the equivalent of the App Store on iOS.",
+          "audioSrc": "public/data/audio/dummy/dummy_111_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_112",
+      "cardType": "flippable",
+      "sideA": "El equivalente de Play Store para Android, es App Store para iOS.",
+      "sideB": [
+        {
+          "text": "The equivalent of the Play Store for Android is the App Store for iOS.",
+          "audioSrc": "public/data/audio/dummy/dummy_112_sideB_0.mp3"
+        },
+        {
+          "text": "For iOS, the App Store is the equivalent of the Play Store for Android.",
+          "audioSrc": "public/data/audio/dummy/dummy_112_sideB_1.mp3"
+        },
+        {
+          "text": "The Play Store for Android is equivalent to the App Store for iOS.",
+          "audioSrc": "public/data/audio/dummy/dummy_112_sideB_2.mp3"
         }
       ],
       "note": null
