@@ -108,6 +108,10 @@
         {
           "text": "compileSdkVersion defines the Android version that compiles the app.",
           "audioSrc": "public/data/audio/dummy/dummy_057_sideB_2.mp3"
+        },
+        {
+          "text": "compileSdkVersion defines the Android version against which the app is compiled.",
+          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_3.mp3"
         }
       ],
       "note": "~...sets the Android version is compiled the app~ lacks the proper sentence structure. It needs a relative clause and a preposition at the end, such as [the Android version the app is compiled with].\n\n~...against the app is compiled~ is missing the relative pronoun. You must use [against which the app is compiled].\n\n~...sets the Android version with the app gets compiled~ is missing a relative pronoun. You must say [with which the app gets compiled] or leave the preposition at the end: [the app gets compiled with]."
@@ -352,6 +356,14 @@
         {
           "text": "The calculation gives the right result.",
           "audioSrc": "public/data/audio/dummy/dummy_080_sideB_2.mp3"
+        },
+        {
+          "text": "The calculation generates the correct result.",
+          "audioSrc": "public/data/audio/dummy/dummy_080_sideB_3.mp3"
+        },
+        {
+          "text": "The calculation produces the correct result.",
+          "audioSrc": "public/data/audio/dummy/dummy_080_sideB_4.mp3"
         }
       ],
       "note": "~The calculate yields...~ is incorrect because 'calculate' is a verb. You must use the noun form [calculation]."
@@ -452,9 +464,13 @@
         {
           "text": "The warning message should not show up for you again.",
           "audioSrc": "public/data/audio/dummy/dummy_085_sideB_2.mp3"
+        },
+        {
+          "text": "You should not see the warning message any longer.",
+          "audioSrc": "public/data/audio/dummy/dummy_085_sideB_3.mp3"
         }
       ],
-      "note": "~You should not see more the warning messagr~ is not valid because 'more' is placed incorrectly. The correct phrasing uses [anymore] or [any more] at the end of the sentence."
+      "note": "~You should not see more the warning messagr~ is not valid because 'more' is placed incorrectly. The correct phrasing uses [anymore] or [any more] at the end of the sentence.\n\n~You should not see any longer the warning message~ has an incorrect word order. The adverbial phrase [any longer] must be placed at the very end of the sentence or clause: [You should not see the warning message any longer]."
     },
     {
       "cardId": "dummy_086",
@@ -778,7 +794,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_101_sideB_2.mp3"
         }
       ],
-      "note": "~...based on the platform it runs~ is incomplete. You must include the preposition [on] at the end to specify where it runs: [it runs on]."
+      "note": "~...based on the platform it runs~ is incomplete. You must include the preposition [on] at the end to specify where it runs: [it runs on].\n\nIn this context, 'run on' is not a true phrasal verb. It is simply the verb [run] (to execute or operate) followed by the preposition [on] indicating the platform or surface. The core meaning of the verb does not change idiomatically as it would in a real phrasal verb like 'run out' or 'run into'."
     },
     {
       "cardId": "dummy_102",
@@ -838,7 +854,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_104_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~I use VSCode to edit, but the real build are made by tools like Android and Xcode.~ is incorrect because the noun 'build' is singular, meaning it requires a singular verb like [is made] or [is done]. Additionally, [is done by] is much more natural here than 'made by'."
     },
     {
       "cardId": "dummy_105",
@@ -988,6 +1004,10 @@
         {
           "text": "Google Play Console on Android is the equivalent of the App Store on iOS.",
           "audioSrc": "public/data/audio/dummy/dummy_111_sideB_2.mp3"
+        },
+        {
+          "text": "The equivalent of Google Play Console for Android is the App Store for iOS.",
+          "audioSrc": "public/data/audio/dummy/dummy_111_sideB_3.mp3"
         }
       ],
       "note": null
@@ -1008,6 +1028,10 @@
         {
           "text": "The Play Store for Android is equivalent to the App Store for iOS.",
           "audioSrc": "public/data/audio/dummy/dummy_112_sideB_2.mp3"
+        },
+        {
+          "text": "The equivalent of the Play Store on Android is the App Store on iOS.",
+          "audioSrc": "public/data/audio/dummy/dummy_112_sideB_3.mp3"
         }
       ],
       "note": null

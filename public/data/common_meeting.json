@@ -722,7 +722,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_029_sideB_2.mp3"
         }
       ],
-      "note": "~In silence~ means there is no noise in the environment. To describe a microphone being off, use the specific term [on mute] or [muted].\n\n~Mute~ is not something you 'have'. It is a state you are 'in' or 'on'. Correct: [You are on mute]."
+      "note": "~In silence~ means there is no noise in the environment. To describe a microphone being off, use the specific term [on mute] or [muted].\n\n~Mute~ is not something you 'have'. It is a state you are 'in' or 'on'. Correct: [You are on mute].\n\n~You're mute~ implies a physical inability to speak. The correct term for a microphone is [on mute] or [muted].\n\n~You're on muted~ incorrectly mixes two different phrases. You must use either [You're on mute] or [You're muted]."
     },
     {
       "cardId": "mi_030",
@@ -2456,6 +2456,10 @@
         {
           "text": "This task has a maximum duration of two hours.",
           "audioSrc": "public/data/audio/common_meeting/mi_104_sideB_2.mp3"
+        },
+        {
+          "text": "The task shouldn't take longer than two hours.",
+          "audioSrc": "public/data/audio/common_meeting/mi_104_sideB_3.mp3"
         }
       ],
       "note": "**[er:102]**\n\n[Shouldn't take] is a very common way to estimate the maximum time required for something.\n\n[Longer than] is the correct comparative form. A common error is mixing prepositions: ~last more of two hours~ is incorrect. Use [last longer than] or [take more than].\n\n~The task shouldn't take two hours longer.~ (Incorrect structure. The correct forms are 'shouldn't take more than two hours' or 'shouldn't last longer than two hours'.)"
@@ -2948,6 +2952,10 @@
         {
           "text": "We made a workaround until the other things get fixed.",
           "audioSrc": "public/data/audio/common_meeting/mi_124_sideB_2.mp3"
+        },
+        {
+          "text": "We made an alternative solution until the other things get fixed.",
+          "audioSrc": "public/data/audio/common_meeting/mi_124_sideB_3.mp3"
         }
       ],
       "note": "**[er:109]**\n\n[Workaround] is often paired with verbs like [implement], [put in place], or [make].\n\n[Gets fixed] is a good example of the 'get-passive', which is common in technical speech. [Is fixed] is also correct.\n\nA common error is using 'be' incorrectly: ~until the rest be fixed~. The correct forms are [is fixed] or [gets fixed].\n\n(User question: 'rest' vs. 'resto') Yes, [the rest] is the correct translation for 'el resto' (meaning 'what is left over'). It is different from the verb [to rest] (descansar)."
@@ -3014,7 +3022,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_127_sideB_2.mp3"
         }
       ],
-      "note": "**[er:109]**\n\n[Workload] is the correct term for the amount of work.\n\nThe most common adjective to describe a large workload is [heavy]. [High] is also acceptable.\n\nCommon errors are literal translations like ~charge of work~ or using awkward adjectives like ~big workload~. The correct collocation is [heavy workload].\n\n~I have a strong workload...~ (Incorrect collocation: We describe a workload as 'heavy' or 'high', not 'strong'.)\n\n~I have a hard workload~ is not valid. You describe a workload as [heavy] or [high], not 'hard'."
+      "note": "**[er:109]**\n\n[Workload] is the correct term for the amount of work.\n\nThe most common adjective to describe a large workload is [heavy]. [High] is also acceptable.\n\nCommon errors are literal translations like ~charge of work~ or using awkward adjectives like ~big workload~. The correct collocation is [heavy workload].\n\n~I have a strong workload...~ (Incorrect collocation: We describe a workload as 'heavy' or 'high', not 'strong'.)\n\n~I have a hard workload~ is not valid. You describe a workload as [heavy] or [high], not 'hard'.\n\n~I have a workload quite high~ is unnatural because the adjective phrase should come before the noun in this structure. Use [a quite high workload] or [a pretty heavy workload]."
     },
     {
       "cardId": "mi_128",
@@ -3032,6 +3040,10 @@
         {
           "text": "I need to set up my workspace more effectively.",
           "audioSrc": "public/data/audio/common_meeting/mi_128_sideB_2.mp3"
+        },
+        {
+          "text": "I need to better define my workspace.",
+          "audioSrc": "public/data/audio/common_meeting/mi_128_sideB_3.mp3"
         }
       ],
       "note": "**[er:109]**\n\n[Workspace] is a single word that can refer to your physical desk area or your digital environment.\n\nVerbs like [define], [organize], or [set up] work well here.\n\nA common error is the literal translation ~space of work~. The correct compound noun is [workspace].\n\n~I need to define better my workspace.~ (Incorrect order: In English, the adverb 'better' usually goes after the object 'my workspace' or before the verb 'better define'. It should be 'I need to define my workspace better'.)"
@@ -3488,6 +3500,10 @@
         {
           "text": "I noticed something strange.",
           "audioSrc": "public/data/audio/common_meeting/mi_144_sideB_5.mp3"
+        },
+        {
+          "text": "I noticed that something was weird.",
+          "audioSrc": "public/data/audio/common_meeting/mi_144_sideB_6.mp3"
         }
       ],
       "note": "[Something was off] is a very common and natural idiom for 'había algo raro'.\n\n[Strange], [weird], and [odd] are all good synonyms for 'raro'.\n\nA common error is ~I noticed that was something strange~. The word [there] is necessary: [I noticed (that) there was...].\n\nBoth [I noticed there was something strange] and the more direct [I noticed something strange] are correct."
@@ -3620,6 +3636,10 @@
         {
           "text": "I really will do it tomorrow.",
           "audioSrc": "public/data/audio/common_meeting/mi_150_sideB_3.mp3"
+        },
+        {
+          "text": "I will tomorrow.",
+          "audioSrc": "public/data/audio/common_meeting/mi_150_sideB_4.mp3"
         }
       ],
       "note": "**[er:112]**\n\nThis is **Case 2 (Emphasis) /112/**. 'Sí' is not for contrast, but for confirmation. English uses an adverb like [definitely], [certainly], or [really] to add this emphasis.\n\nA common error is the literal translation ~I will yes do it tomorrow.~"
@@ -3812,6 +3832,10 @@
         {
           "text": "I'm not sure if you need a colon or a semicolon here.",
           "audioSrc": "public/data/audio/common_meeting/mi_159_sideB_1.mp3"
+        },
+        {
+          "text": "I don't know if you have to use a colon or a semicolon.",
+          "audioSrc": "public/data/audio/common_meeting/mi_159_sideB_2.mp3"
         }
       ],
       "note": "**[er:113]**\n\nThis card contrasts the two symbols:\n\n[Colon] = : (dos puntos)\n[Semicolon] = ; (punto y coma)"
@@ -3862,7 +3886,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_162_sideB_1.mp3"
         }
       ],
-      "note": "**[er:113]**\n\nThe '[ ]' symbols are called [brackets] or [square brackets] to distinguish them from [braces] { }."
+      "note": "**[er:113]**\n\nThe '[ ]' symbols are called [brackets] or [square brackets] to distinguish them from [braces] { }.\n\n~Close that in brackets~ is incorrect. The verb 'close' means to shut (like a door). To say 'encerrar' in this context, use [enclose] or [put]."
     },
     {
       "cardId": "mi_163",
@@ -4008,6 +4032,10 @@
         {
           "text": "That's the way people do it.",
           "audioSrc": "public/data/audio/common_meeting/mi_169_sideB_4.mp3"
+        },
+        {
+          "text": "That's the way others do it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_169_sideB_5.mp3"
         }
       ],
       "note": "The phrase 'los demás' translates to [everyone else] or [the others].\n\n[How everyone else does it] is a very common structure.\n\nA common error is a literal translation like ~That is the form that the others do it~. 'Form' is a false friend; the correct word is [way] or [how].\n\n~That's the way how people do it.~ (Incorrect redundancy: You should use 'That's the way people do it' or 'That's how people do it', but never 'the way how' together.)"
@@ -4058,7 +4086,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_171_sideB_3.mp3"
         }
       ],
-      "note": "'Por (una) cosa de tiempo' is an idiom. It translates to [because of time], [due to time constraints], or [for time reasons].\n\n[As-is] is a common idiom meaning 'in its current condition' (tal como está).\n\nA literal translation is unnatural: ~We left it like that only for a thing of time~."
+      "note": "'Por (una) cosa de tiempo' is an idiom. It translates to [because of time], [due to time constraints], or [for time reasons].\n\n[As-is] is a common idiom meaning 'in its current condition' (tal como está).\n\nA literal translation is unnatural: ~We left it like that only for a thing of time~.\n\n~simply just for a matter of time~ is incorrect. In English, 'a matter of time' usually implies something is inevitable (e.g., 'It's only a matter of time before it breaks'). To express a lack of time, use [because of time] or [due to time constraints]."
     },
     {
       "cardId": "mi_172",
@@ -4080,6 +4108,10 @@
         {
           "text": "Due to time, we left it like that.",
           "audioSrc": "public/data/audio/common_meeting/mi_172_sideB_3.mp3"
+        },
+        {
+          "text": "We were short on time, so we left it that way.",
+          "audioSrc": "public/data/audio/common_meeting/mi_172_sideB_4.mp3"
         }
       ],
       "note": "[We were short on time] is a very natural way to express this.\n\n[It was just a matter of time] is another common idiom.\n\n~For time, we left it like that~ is an incorrect literal translation. Use [Due to time] or [Because of time]."
@@ -4278,7 +4310,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_181_sideB_2.mp3"
         }
       ],
-      "note": "[Root cause] is the specific technical term for 'causa raíz'.\n\n[Debugging] (gerund) acts as the subject. Alternatively, use [We need to debug]."
+      "note": "[Root cause] is the specific technical term for 'causa raíz'.\n\n[Debugging] (gerund) acts as the subject. Alternatively, use [We need to debug].\n\n~depure~ is a false friend in this context. In software, the process of finding and fixing errors is called [debugging]. Use the verb [debug]."
     },
     {
       "cardId": "mi_182",
@@ -4360,6 +4392,10 @@
         {
           "text": "Any high-priority blocker in production has to be escalated right away.",
           "audioSrc": "public/data/audio/common_meeting/mi_185_sideB_2.mp3"
+        },
+        {
+          "text": "A showstopper has to be escalated immediately.",
+          "audioSrc": "public/data/audio/common_meeting/mi_185_sideB_3.mp3"
         }
       ],
       "note": "[To escalate] means to pass the issue to a higher level of authority or technical support.\n\n[Immediately] or [right away] emphasizes urgency."
@@ -6186,7 +6222,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_265_sideB_5.mp3"
         }
       ],
-      "note": "**[er:202]**\n\nStandard polite responses when asked \"Do you have any questions?\" in a meeting.\n\n~No on my side.~ (Unnatural: Use 'None on my side' or 'Nothing on my side'. 'No' implies a vote.)\n\n~No by my side, thank you.~ is incorrect. [By my side] means physically next to you. Use [on my end] or [on my side].\n\n~Not on my own~ is not valid because 'on my own' means 'by myself' or 'alone'. To say 'por mi parte', use [on my end] or [on my side]."
+      "note": "**[er:202]**\n\nStandard polite responses when asked \"Do you have any questions?\" in a meeting.\n\n~No on my side.~ (Unnatural: Use 'None on my side' or 'Nothing on my side'. 'No' implies a vote.)\n\n~No by my side, thank you.~ is incorrect. [By my side] means physically next to you. Use [on my end] or [on my side].\n\n~Not on my own~ is not valid because 'on my own' means 'by myself' or 'alone'. To say 'por mi parte', use [on my end] or [on my side].\n\n~No on my side~ is not recommended here as 'no' implies a vote. [None] or [Nothing] are the natural choices."
     },
     {
       "cardId": "mi_266",
