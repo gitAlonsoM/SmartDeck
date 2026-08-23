@@ -114,7 +114,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_057_sideB_3.mp3"
         }
       ],
-      "note": "~...sets the Android version is compiled the app~ lacks the proper sentence structure. It needs a relative clause and a preposition at the end, such as [the Android version the app is compiled with].\n\n~...against the app is compiled~ is missing the relative pronoun. You must use [against which the app is compiled].\n\n~...sets the Android version with the app gets compiled~ is missing a relative pronoun. You must say [with which the app gets compiled] or leave the preposition at the end: [the app gets compiled with]."
+      "note": "**[er:104]**\n\n~...sets the Android version is compiled the app~ lacks the proper sentence structure. It needs a relative clause and a preposition at the end, such as [the Android version the app is compiled with].\n\n~...against the app is compiled~ is missing the relative pronoun. You must use [against which the app is compiled].\n\n~...sets the Android version with the app gets compiled~ is missing a relative pronoun. You must say [with which the app gets compiled] or leave the preposition at the end: [the app gets compiled with]."
     },
     {
       "cardId": "dummy_058",
@@ -270,7 +270,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_072_sideB_4.mp3"
         }
       ],
-      "note": "[Gap] means an empty space or opening between two objects or elements."
+      "note": "**[er:188]**\n\n[Gap] means an empty space or opening between two objects or elements."
     },
     {
       "cardId": "dummy_075",
@@ -386,7 +386,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_081_sideB_2.mp3"
         }
       ],
-      "note": "~Heating water yields stream~ contains a spelling mistake. A 'stream' is a flow of water (arroyo) or data (flujo), whereas the correct word for 'vapor' is [steam]."
+      "note": "~Heating water yields stream~ contains a spelling mistake. A 'stream' is a flow of water (arroyo) or data (flujo), whereas the correct word for 'vapor' is [steam].\n\n~Heat water yields steam~ uses a bare verb as the subject, which reads as an order followed by a second verb. When an action is the subject of the sentence it must be a gerund: [Heating water yields steam]."
     },
     {
       "cardId": "dummy_082",
@@ -614,7 +614,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_092_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~It is the Android version against the app is compiled and tested~ is missing the relative pronoun. A preposition placed before the clause requires [which]: [the Android version against which the app is compiled and tested]. The natural spoken option is to leave the preposition at the end: [the Android version the app is compiled and tested against]."
     },
     {
       "cardId": "dummy_093",
@@ -674,7 +674,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_095_sideB_2.mp3"
         }
       ],
-      "note": "~...the Android app is written~ is incomplete. You must include the preposition [in] at the end: [is written in]."
+      "note": "~...the Android app is written~ is incomplete. You must include the preposition [in] at the end: [is written in].\n\n~Kotlin is the language written in the Android side of the app~ reverses the meaning: it says the language itself was written inside the Android side. What gets written is the code, so the relative clause must keep its own subject: [the language the Android side of the app is written in]."
     },
     {
       "cardId": "dummy_096",
@@ -712,6 +712,10 @@
         {
           "text": "We only calculate the credit amount if credits are enabled for the responsibility.",
           "audioSrc": "public/data/audio/dummy/dummy_097_sideB_2.mp3"
+        },
+        {
+          "text": "The credit amount is only calculated if the responsibility has credits activated.",
+          "audioSrc": "public/data/audio/dummy/dummy_097_sideB_3.mp3"
         }
       ],
       "note": null
@@ -832,9 +836,13 @@
         {
           "text": "I only use VSCode to write the code; Android and Xcode are the ones compiling in the background.",
           "audioSrc": "public/data/audio/dummy/dummy_103_sideB_2.mp3"
+        },
+        {
+          "text": "VSCode is only the editor where I write the code; it's Android and Xcode that compile behind it.",
+          "audioSrc": "public/data/audio/dummy/dummy_103_sideB_3.mp3"
         }
       ],
-      "note": "~...who compiles is Android and Xcode behind it~ is incorrect because 'who' is used for people. For tools or programs, use [what compiles] or [the ones that compile]."
+      "note": "~...who compiles is Android and Xcode behind it~ is incorrect because 'who' is used for people. For tools or programs, use [what compiles] or [the ones that compile].\n\n~It's Android and Xcode that compiles behind it~ fails the agreement. The focus of the cleft is two tools, so the verb stays plural: [it's Android and Xcode that compile behind it].\n\n~It's Android and Xcode they ones that compiled behind it~ mixes two different structures and puts the verb in the past. Choose one: [it's Android and Xcode that compile behind it] or [Android and Xcode are the ones that compile behind it]."
     },
     {
       "cardId": "dummy_104",
@@ -894,7 +902,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_106_sideB_2.mp3"
         }
       ],
-      "note": "~That inherited gap no longer happens~ changes the meaning. In programming, 'vacío' refers to a [blank state] or [empty value], whereas 'gap' refers to physical or temporal space."
+      "note": "~That inherited gap no longer happens~ changes the meaning. In programming, 'vacío' refers to a [blank state] or [empty value], whereas 'gap' refers to physical or temporal space.\n\n~That inherited blank state is no longer happened~ puts an intransitive verb into the passive. 'Happen' never takes a passive form because nobody performs it on something else: [no longer happens] or [does not happen anymore]."
     },
     {
       "cardId": "dummy_107",
@@ -986,7 +994,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_110_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "~...take a long time in return~ uses a fixed expression that means 'a cambio', not 'en regresar'. After 'take a long time' the verb goes in the infinitive: [to return] or [to come back]."
     },
     {
       "cardId": "dummy_111",
