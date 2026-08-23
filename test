@@ -1,82 +1,68 @@
-Esta inversión produce un alto rendimiento cada año.
-This investment yields a high return every year.
+¿Similar a lo que se hizo antes ?
+Sí, similar a lo que se hizo antes.
+Sí, es similar. Pero hay algunas diferencias importantes.
+"El arroyo de agua genera vapor."
+"No uses paréntesis, usa corchetes"
+"encierralo con paréntesis o corchetes"
+“Acabo de enviartelo por chat."
+“Acabo de enviarlo por email."
+"Es solo una mejora estetica, no estamos tocando la logica realmente"
+"It's just a cosmetic improvement; we aren't really touching the logic."
+"Ya no deberias tener mas esos problemas."
+You shouldn't have those issues anymore.
+"Ya no deberias tener mas ese problema."
+You shouldn't have that issue anymore.
+"Bueno, tenemos esta funcion boleana, retorna true si hay alguna linea con 0 cantidad."
+"Well, we have this boolean function; it returns true if there's any line with zero quantity."
+"Tenemos esta funcion, retorna true si hay alguna linea con 0, o false si no lo hay."
+"We have this function that returns true if there's any line with a zero, or false if there isn't."
+"This function returns true if any line has zero, and false if not."
+"We have this function; it returns true if any line has zero, or false otherwise."
+"We've got this function; it returns true if at least one line is zero, or false otherwise."
+"Retorna true si encuentra el dato, o falso si no. "
+It returns true if it finds the data, or false if not.
+Returns true if the item is found, and false otherwise.
+"Si la funcion retorna false, se detiene ahi"
+"If the function returns false, it stops there." 
+"If the function returns false, it stops right there.”
+"If the function returns false, it exits there."
+"La importacion "gestures" sirve para detectar y manejar interacciones táctiles"
+The 'gestures' import is used to detect and handle touch interactions.
+"Es un paquete que permite abrir enlaces web"
+It's a package that allows you to open web links.
+"Pero con la ultima mejora, no deberias tener mas este problema"
+But with the latest update, you shouldn't have this issue anymore.
+"Ya no deberias tener mas este problema."
+You shouldn't have this issue anymore.
+"La nueva variable almacena temporalmente el mensaje de éxito retornado por el backend"
+"The new variable temporarily stores the success message returned by the backend."
+"La nueva variable almacena el nuevo mensaje retornado por el backend"
+The new variable stores the new message returned by the backend.
+"Es un operador ternario, si es verdadero asigna X, sino, null"
+"It's a ternary operator; if it's true, it assigns X, otherwise, null."
+"Es un operador ternario, si se cumple la condicion, asigna null, sino, X"
+"It's a ternary operator; if the condition is met, it assigns null, otherwise, X."
+"El archivo pubspec.lock registra las versiones exactas de las dependencias de la app"
+The pubspec.lock file records the exact versions of the app's dependencies.
+"pubspec.lock es generado automaticamente, sirve para emular y generar los binarios."
+pubspec.lock is automatically generated; it is used to emulate and generate the binaries.
+"Ahi estamos asignando el valor de 'B', y si es null, asignamos 0"
+"There we're assigning the value of 'B', and if it's null, we assign 0."
+"IBE significa Internet Business Engine, pero en la practica se le llama iStore"
+"IBE stands for Internet Business Engine, but in practice, it's called iStore."
+"Internet Business Engine o IBE, pero en la practica se le llama iStore"
+"Internet Business Engine or IBE, but in practice, it's called iStore."
+“Te hare saber una vez esten subidos los binarios.”
+"Un par de dias, podria ser menos"
+A couple of days, it could be less.
+"Puedo mostrarte de lo que estoy hablando"
+Un bug es un error en un programa.
+A bug is an error in a program.
 
-El cálculo arroja el resultado correcto.
-The calculation yields the correct result.
+Un bug causa un comportamiento inesperado.
+A bug causes unexpected behavior.
 
-Calentar agua genera vapor.
-Heating water yields steam.
-Por favor, concatena tu nombre y apellido.
-Please concatenate your first and last name.
-
-El sistema concatenará los códigos de error.
-The system will concatenate the error codes.
-
-Puedes concatenar estos archivos de texto fácilmente.
-You can concatenate these text files easily.
-“Ya no deberian ver mas el mensaje de advertencia”
-“El mensaje de advertencia desaparecio!".
-"Es el punto de entrada a la app para android, cada ambiente tiene uno."
-"It is the entry point to the Android app, every environment has one."
-
-"MainActivity es una clase de Android, y se necesita declara para cada ambiente.  "
-"MainActivity is an Android class, and it needs to be declared for each environment."
-
-"API 36 es Android 16, API 35 es Android 15, y asi...."
-"API 36 is Android 16, API 35 is Android 15, and so on..."
-
-"API 34 es Android 14, API 33 es Android 14, y asi...."
-"API 34 is Android 14, API 33 is Android 13, and so on..."
-Es el archivo que abre la app cuando el usuario toca el icono.
-It's the file that opens the app when the user taps the icon.
-
-Es la versión de Android contra la que la app se construye y se prueba.
-It's the Android version the app is built and tested against.
-
-NDK significa Native Development Kit.
-NDK stands for Native Development Kit.
-
-Gradle es la herramienta que construye la app de Android.
-Gradle is the tool that builds the Android app.
-
-Kotlin es el lenguaje en el que está escrito el lado Android de la app.
-Kotlin is the language the Android side of the app is written in.
-
-La correspondencia de Gradle en iOS se gestiona directamente en Xcode.
-On iOS, the equivalent of Gradle is handled directly in Xcode.
-El monto de crédito solo se calcula si la responsabilidad tiene los créditos activados.
-The credit amount is only calculated if the responsibility has credits enabled.
-
-Los créditos son opcionales, así que leemos el perfil `XXSBL_IBE_USE_CREDITS` antes de mostrarlos.
-Credits are optional, so we read the `XXSBL_IBE_USE_CREDITS` profile option before showing them.
-
-
-Es el mismo control que ya está en `GET_CREDIT_AMOUNT`.
-It is the same check already in `GET_CREDIT_AMOUNT`.
-Android usa `CircularProgressIndicator`, iOS usa `CupertinoActivityIndicator`.
-Android uses `CircularProgressIndicator`, iOS uses `CupertinoActivityIndicator`.
-
-
-El código elige el spinner según la plataforma en la que corre.
-The code picks the spinner based on the platform it runs on.
-
-Cada plataforma usa su propio estilo de spinner nativo.
-Each platform uses its own native spinner style.
-VSCode es solo el editor donde escribo el código; quien compila es Android y Xcode por detrás.
-VSCode is only the editor where I write the code; Android and Xcode do the compiling behind it.
-
-Uso VSCode para editar, pero el build real lo hacen las herramientas de Android y de Xcode.
-I use VSCode to edit, but the real build is done by Android's and Xcode's tools.
-
-VSCode no compila nada por sí solo; llama a las herramientas de Android y de Xcode para generar
-el binario.
-VSCode does not compile anything by itself; it calls Android's and Xcode's tools to produce the
-binary.
-Ese vacío heredado ya no ocurre; esta línea lo restaura.
-That inherited blank state no longer happens; this line restores it.
-El error ocurría con clientes dummy cuando no tenían fechas de pedido.
-The bug happened with dummy customers when they had no order dates.
-Si un cliente no tenía fechas de pedido, ese vacío pasaba al siguiente cliente.
-If a customer had no order dates, that blank state passed to the next customer.
-"estamos revisando los problemas de lentitud ."
-"la lentitud se debe a llamadas al backend que tardan mucho en regresar."
+Un bug impide que el software funcione correctamente.
+A bug prevents the software from working correctly.
+"Porque es un requisito de Android. Cada año es lo mismo." Valid?
+"Porque es un requisito de iOs, cada año es lo mismo. "

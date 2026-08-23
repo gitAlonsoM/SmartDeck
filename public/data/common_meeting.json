@@ -37823,6 +37823,566 @@
         }
       ],
       "note": null
+    },
+    {
+      "cardId": "mi_1675",
+      "cardType": "flippable",
+      "sideA": "No construyas las vistas que quedan aún.",
+      "sideB": [
+        {
+          "text": "Don't build the remaining views yet.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1675_sideB_0.mp3"
+        },
+        {
+          "text": "Do not build the views that are still left.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1675_sideB_1.mp3"
+        },
+        {
+          "text": "Don't build the views that are left yet.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1675_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:108]**\n\n~...that are leave yet~ is incorrect because 'leave' is a base verb. To express 'quedan' in this context, use the past participle [left]."
+    },
+    {
+      "cardId": "mi_1676",
+      "cardType": "flippable",
+      "sideA": "¿Cuál sería el tiempo estimado de llegada de los arreglos?",
+      "sideB": [
+        {
+          "text": "What is the ETA for the fixes?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1676_sideB_0.mp3"
+        },
+        {
+          "text": "What is the Estimated Time of Arrival for the fixes?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1676_sideB_1.mp3"
+        },
+        {
+          "text": "What is the estimated completion time for the fixes?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1676_sideB_2.mp3"
+        }
+      ],
+      "note": "~What will it be the ETA~ is incorrect because it uses a double subject. You must drop 'it' and say [What will the ETA be] or [What will be the ETA]."
+    },
+    {
+      "cardId": "mi_1677",
+      "cardType": "flippable",
+      "sideA": "targetSdkVersion define la versión de Android para la que está optimizada la app.",
+      "sideB": [
+        {
+          "text": "targetSdkVersion defines the Android version the app is optimized for.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1677_sideB_0.mp3"
+        },
+        {
+          "text": "targetSdkVersion sets the Android version the app targets.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1677_sideB_1.mp3"
+        },
+        {
+          "text": "targetSdkVersion specifies which Android version the app is optimized for.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1677_sideB_2.mp3"
+        }
+      ],
+      "note": "~...the app is optimized~ is missing the preposition at the end. It must be [optimized for] because the verb phrase is 'to optimize for'."
+    },
+    {
+      "cardId": "mi_1678",
+      "cardType": "flippable",
+      "sideA": "Gradle gestiona las dependencias y las tareas de compilación.",
+      "sideB": [
+        {
+          "text": "Gradle manages dependencies and compilation tasks.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1678_sideB_0.mp3"
+        },
+        {
+          "text": "Gradle handles dependencies and build tasks.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1678_sideB_1.mp3"
+        },
+        {
+          "text": "Gradle takes care of dependencies and compilation tasks.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1678_sideB_2.mp3"
+        },
+        {
+          "text": "Gradle manages dependencies and building tasks.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1678_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1679",
+      "cardType": "flippable",
+      "sideA": "Con opacidad baja el elemento es más transparente y se ve menos.",
+      "sideB": [
+        {
+          "text": "Low opacity makes the element more transparent and less visible.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1679_sideB_0.mp3"
+        },
+        {
+          "text": "With low opacity the element looks more transparent and harder to see.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1679_sideB_1.mp3"
+        },
+        {
+          "text": "The lower the opacity, the more transparent and less visible the element becomes.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1679_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1680",
+      "cardType": "flippable",
+      "sideA": "El contenedor envuelve la lista y elimina los huecos.",
+      "sideB": [
+        {
+          "text": "The container wraps the list and removes the gaps.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1680_sideB_0.mp3"
+        },
+        {
+          "text": "The container wraps around the list and gets rid of the gaps.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1680_sideB_1.mp3"
+        },
+        {
+          "text": "The container wraps the list, removing the gaps.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1680_sideB_2.mp3"
+        },
+        {
+          "text": "The container wraps the list and deletes the gaps.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1680_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1681",
+      "cardType": "flippable",
+      "sideA": "Vamos a probar primero el happy path de esta función.",
+      "sideB": [
+        {
+          "text": "Let's test the happy path of this feature first.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1681_sideB_0.mp3"
+        },
+        {
+          "text": "First, we are going to test the happy path of this feature.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1681_sideB_1.mp3"
+        },
+        {
+          "text": "Let's start by testing the happy path for this feature.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1681_sideB_2.mp3"
+        },
+        {
+          "text": "Let's first test the happy path of this feature.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1681_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1682",
+      "cardType": "flippable",
+      "sideA": "¿No debería ser todo al mismo tiempo, como en la versión Mobile?",
+      "sideB": [
+        {
+          "text": "Shouldn't it all be at the same time, like in the Mobile version?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1682_sideB_0.mp3"
+        },
+        {
+          "text": "Shouldn't everything happen at once, like in the Mobile version?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1682_sideB_1.mp3"
+        },
+        {
+          "text": "Shouldn't it all be at the same time, the way it is in the Mobile version?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1682_sideB_2.mp3"
+        },
+        {
+          "text": "Shouldn't it be all at the same time, like in the Mobile version?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1682_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1683",
+      "cardType": "flippable",
+      "sideA": "Esta inversión produce un alto rendimiento cada año.",
+      "sideB": [
+        {
+          "text": "This investment yields a high return every year.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1683_sideB_0.mp3"
+        },
+        {
+          "text": "This investment produces a high return each year.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1683_sideB_1.mp3"
+        },
+        {
+          "text": "This investment delivers a high yield every year.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1683_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1684",
+      "cardType": "flippable",
+      "sideA": "El cálculo arroja el resultado correcto.",
+      "sideB": [
+        {
+          "text": "The calculation yields the correct result.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1684_sideB_0.mp3"
+        },
+        {
+          "text": "The calculation returns the correct result.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1684_sideB_1.mp3"
+        },
+        {
+          "text": "The calculation gives the right result.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1684_sideB_2.mp3"
+        },
+        {
+          "text": "The calculation generates the correct result.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1684_sideB_3.mp3"
+        },
+        {
+          "text": "The calculation produces the correct result.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1684_sideB_4.mp3"
+        }
+      ],
+      "note": "~The calculate yields...~ is incorrect because 'calculate' is a verb. You must use the noun form [calculation]."
+    },
+    {
+      "cardId": "mi_1685",
+      "cardType": "flippable",
+      "sideA": "El sistema concatenará los códigos de error.",
+      "sideB": [
+        {
+          "text": "The system will concatenate the error codes.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1685_sideB_0.mp3"
+        },
+        {
+          "text": "The system is going to concatenate the error codes.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1685_sideB_1.mp3"
+        },
+        {
+          "text": "The error codes will be concatenated by the system.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1685_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1686",
+      "cardType": "flippable",
+      "sideA": "El mensaje de advertencia desapareció!",
+      "sideB": [
+        {
+          "text": "The warning message is gone!",
+          "audioSrc": "public/data/audio/common_meeting/mi_1686_sideB_0.mp3"
+        },
+        {
+          "text": "The warning message disappeared!",
+          "audioSrc": "public/data/audio/common_meeting/mi_1686_sideB_1.mp3"
+        },
+        {
+          "text": "The warning message went away!",
+          "audioSrc": "public/data/audio/common_meeting/mi_1686_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1687",
+      "cardType": "flippable",
+      "sideA": "Es el punto de entrada a la app para Android, cada ambiente tiene uno.",
+      "sideB": [
+        {
+          "text": "It is the entry point to the Android app, every environment has one.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1687_sideB_0.mp3"
+        },
+        {
+          "text": "It's the entry point of the Android app, and each environment has its own.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1687_sideB_1.mp3"
+        },
+        {
+          "text": "That is the Android app entry point, and there is one per environment.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1687_sideB_2.mp3"
+        },
+        {
+          "text": "It is the starting point to the Android app, every environment has one.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1687_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1688",
+      "cardType": "flippable",
+      "sideA": "MainActivity es una clase de Android, y se necesita declarar para cada ambiente.",
+      "sideB": [
+        {
+          "text": "MainActivity is an Android class, and it needs to be declared for each environment.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1688_sideB_0.mp3"
+        },
+        {
+          "text": "MainActivity is an Android class, and you need to declare it for every environment.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1688_sideB_1.mp3"
+        },
+        {
+          "text": "MainActivity is an Android class that has to be declared per environment.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1688_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1689",
+      "cardType": "flippable",
+      "sideA": "API 36 es Android 16, API 35 es Android 15, y así...",
+      "sideB": [
+        {
+          "text": "API 36 is Android 16, API 35 is Android 15, and so on.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1689_sideB_0.mp3"
+        },
+        {
+          "text": "API 36 means Android 16, API 35 means Android 15, and so on.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1689_sideB_1.mp3"
+        },
+        {
+          "text": "API level 36 maps to Android 16, API level 35 maps to Android 15, and so forth.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1689_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1690",
+      "cardType": "flippable",
+      "sideA": "API 34 es Android 14, API 33 es Android 13, y así...",
+      "sideB": [
+        {
+          "text": "API 34 is Android 14, API 33 is Android 13, and so on.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1690_sideB_0.mp3"
+        },
+        {
+          "text": "API 34 corresponds to Android 14, API 33 corresponds to Android 13, and so on.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1690_sideB_1.mp3"
+        },
+        {
+          "text": "API level 34 is Android 14, API level 33 is Android 13, and so forth.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1690_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1691",
+      "cardType": "flippable",
+      "sideA": "Es el archivo que abre la app cuando el usuario toca el icono.",
+      "sideB": [
+        {
+          "text": "It's the file that opens the app when the user taps the icon.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1691_sideB_0.mp3"
+        },
+        {
+          "text": "It is the file that launches the app when the user taps the icon.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1691_sideB_1.mp3"
+        },
+        {
+          "text": "That file is what opens the app once the user taps on the icon.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1691_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1692",
+      "cardType": "flippable",
+      "sideA": "NDK significa Native Development Kit.",
+      "sideB": [
+        {
+          "text": "NDK stands for Native Development Kit.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1692_sideB_0.mp3"
+        },
+        {
+          "text": "NDK means Native Development Kit.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1692_sideB_1.mp3"
+        },
+        {
+          "text": "The acronym NDK stands for Native Development Kit.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1692_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1693",
+      "cardType": "flippable",
+      "sideA": "Gradle es la herramienta que construye la app de Android.",
+      "sideB": [
+        {
+          "text": "Gradle is the tool that builds the Android app.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1693_sideB_0.mp3"
+        },
+        {
+          "text": "Gradle is the build tool for the Android app.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1693_sideB_1.mp3"
+        },
+        {
+          "text": "The Android app is built by Gradle.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1693_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1694",
+      "cardType": "flippable",
+      "sideA": "Los créditos son opcionales, así que leemos el perfil XXSBL_IBE_USE_CREDITS antes de mostrarlos.",
+      "sideB": [
+        {
+          "text": "Credits are optional, so we read the XXSBL_IBE_USE_CREDITS profile option before showing them.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1694_sideB_0.mp3"
+        },
+        {
+          "text": "Credits are optional, so we check the XXSBL_IBE_USE_CREDITS profile option before displaying them.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1694_sideB_1.mp3"
+        },
+        {
+          "text": "Since credits are optional, we read the profile option XXSBL_IBE_USE_CREDITS first and only then show them.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1694_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1695",
+      "cardType": "flippable",
+      "sideA": "Es el mismo control que ya está en GET_CREDIT_AMOUNT.",
+      "sideB": [
+        {
+          "text": "It is the same check already in GET_CREDIT_AMOUNT.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1695_sideB_0.mp3"
+        },
+        {
+          "text": "It's the same validation that is already in GET_CREDIT_AMOUNT.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1695_sideB_1.mp3"
+        },
+        {
+          "text": "This is the same check we already have inside GET_CREDIT_AMOUNT.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1695_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1696",
+      "cardType": "flippable",
+      "sideA": "Android usa CircularProgressIndicator, iOS usa CupertinoActivityIndicator.",
+      "sideB": [
+        {
+          "text": "Android uses CircularProgressIndicator, iOS uses CupertinoActivityIndicator.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1696_sideB_0.mp3"
+        },
+        {
+          "text": "On Android we use CircularProgressIndicator, and on iOS we use CupertinoActivityIndicator.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1696_sideB_1.mp3"
+        },
+        {
+          "text": "Android relies on CircularProgressIndicator while iOS relies on CupertinoActivityIndicator.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1696_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1697",
+      "cardType": "flippable",
+      "sideA": "Cada plataforma usa su propio estilo de spinner nativo.",
+      "sideB": [
+        {
+          "text": "Each platform uses its own native spinner style.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1697_sideB_0.mp3"
+        },
+        {
+          "text": "Every platform has its own native spinner style.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1697_sideB_1.mp3"
+        },
+        {
+          "text": "Each platform shows the spinner in its own native style.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1697_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1698",
+      "cardType": "flippable",
+      "sideA": "El error ocurría con clientes dummy cuando no tenían fechas de pedido.",
+      "sideB": [
+        {
+          "text": "The bug happened with dummy customers when they had no order dates.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1698_sideB_0.mp3"
+        },
+        {
+          "text": "The bug showed up with dummy customers that had no order dates.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1698_sideB_1.mp3"
+        },
+        {
+          "text": "The error occurred for dummy customers whenever they had no order dates.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1698_sideB_2.mp3"
+        },
+        {
+          "text": "The bug happened when dummy customers didn't have order dates.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1698_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1699",
+      "cardType": "flippable",
+      "sideA": "Si un cliente no tenía fechas de pedido, ese vacío pasaba al siguiente cliente.",
+      "sideB": [
+        {
+          "text": "If a customer had no order dates, that blank state passed to the next customer.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1699_sideB_0.mp3"
+        },
+        {
+          "text": "If a customer had no order dates, that empty state carried over to the next customer.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1699_sideB_1.mp3"
+        },
+        {
+          "text": "When a customer had no order dates, the blank value leaked into the next customer.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1699_sideB_2.mp3"
+        },
+        {
+          "text": "If a customer didn't have order dates, that blank state passed to the next customer.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1699_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1700",
+      "cardType": "flippable",
+      "sideA": "El equivalente de Play Store para Android, es App Store para iOS.",
+      "sideB": [
+        {
+          "text": "The equivalent of the Play Store for Android is the App Store for iOS.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1700_sideB_0.mp3"
+        },
+        {
+          "text": "For iOS, the App Store is the equivalent of the Play Store for Android.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1700_sideB_1.mp3"
+        },
+        {
+          "text": "The Play Store for Android is equivalent to the App Store for iOS.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1700_sideB_2.mp3"
+        },
+        {
+          "text": "The equivalent of the Play Store on Android is the App Store on iOS.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1700_sideB_3.mp3"
+        }
+      ],
+      "note": null
     }
   ]
 }
