@@ -264,6 +264,10 @@
         {
           "text": "The Android side of the app is written in Kotlin.",
           "audioSrc": "public/data/audio/dummy/dummy_095_sideB_2.mp3"
+        },
+        {
+          "text": "Kotlin is the language the Android app is written in.",
+          "audioSrc": "public/data/audio/dummy/dummy_095_sideB_3.mp3"
         }
       ],
       "note": "~...the Android app is written~ is incomplete. You must include the preposition [in] at the end: [is written in].\n\n~Kotlin is the language written in the Android side of the app~ reverses the meaning: it says the language itself was written inside the Android side. What gets written is the code, so the relative clause must keep its own subject: [the language the Android side of the app is written in]."
@@ -284,9 +288,13 @@
         {
           "text": "On iOS, whatever Gradle does is managed straight from Xcode.",
           "audioSrc": "public/data/audio/dummy/dummy_096_sideB_2.mp3"
+        },
+        {
+          "text": "On iOS, the equivalent of Gradle is handled directly by Xcode.",
+          "audioSrc": "public/data/audio/dummy/dummy_096_sideB_3.mp3"
         }
       ],
-      "note": "~...the corresponcy of Gradle~ is incorrect because 'corresponcy' is not a valid word. The correct terms are [equivalent] or [counterpart]."
+      "note": "~...the corresponcy of Gradle~ is incorrect because 'corresponcy' is not a valid word. The correct terms are [equivalent] or [counterpart].\n\n[in Xcode] presents Xcode as the place where the work happens, while [by Xcode] presents it as the agent doing the work. Both are natural in a passive sentence like this one."
     },
     {
       "cardId": "dummy_097",
@@ -372,6 +380,10 @@
         {
           "text": "The editing happens in VSCode, but the Android and Xcode tools do the real build.",
           "audioSrc": "public/data/audio/dummy/dummy_104_sideB_2.mp3"
+        },
+        {
+          "text": "I use VSCode to edit, but the real build is made by tools like Android and Xcode.",
+          "audioSrc": "public/data/audio/dummy/dummy_104_sideB_3.mp3"
         }
       ],
       "note": "~I use VSCode to edit, but the real build are made by tools like Android and Xcode.~ is incorrect because the noun 'build' is singular, meaning it requires a singular verb like [is made] or [is done]. Additionally, [is done by] is much more natural here than 'made by'."
@@ -662,7 +674,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_121_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~It's just a estetic improvement~ is not valid because 'estetic' does not exist in English. The correct spelling is [aesthetic], and it takes [an] before it: [an aesthetic improvement]. In software contexts, [cosmetic] is the more common word for a change that only affects appearance."
     },
     {
       "cardId": "dummy_122",
@@ -824,9 +836,13 @@
         {
           "text": "This package lets you open web links.",
           "audioSrc": "public/data/audio/dummy/dummy_129_sideB_2.mp3"
+        },
+        {
+          "text": "It's a package that allows opening web links.",
+          "audioSrc": "public/data/audio/dummy/dummy_129_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "~It's a package that allows to open web links~ is not valid because [allow] never connects directly to a bare infinitive. It needs an object first, [allows you to open], or a gerund, [allows opening]."
     },
     {
       "cardId": "dummy_130",
@@ -844,9 +860,13 @@
         {
           "text": "With the latest fix, though, this problem shouldn't happen to you anymore.",
           "audioSrc": "public/data/audio/dummy/dummy_130_sideB_2.mp3"
+        },
+        {
+          "text": "But with the last update, you shouldn't have this issue anymore.",
+          "audioSrc": "public/data/audio/dummy/dummy_130_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "[The latest update] always means the most recent one, with more expected to come. [The last update] is common in speech with the same sense, but it can also mean the final one, with nothing after it. When the difference matters, [latest] is the safer choice."
     },
     {
       "cardId": "dummy_131",
@@ -864,6 +884,10 @@
         {
           "text": "This issue shouldn't come up for you anymore.",
           "audioSrc": "public/data/audio/dummy/dummy_131_sideB_2.mp3"
+        },
+        {
+          "text": "You shouldn't have this issue any longer.",
+          "audioSrc": "public/data/audio/dummy/dummy_131_sideB_3.mp3"
         }
       ],
       "note": null
@@ -884,9 +908,13 @@
         {
           "text": "This new variable temporarily keeps the success message that the backend returns.",
           "audioSrc": "public/data/audio/dummy/dummy_132_sideB_2.mp3"
+        },
+        {
+          "text": "The new variable temporarily stores the success message returned from the backend.",
+          "audioSrc": "public/data/audio/dummy/dummy_132_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "[returned by the backend] identifies the backend as the agent that performs the return, while [returned from the backend] focuses on the origin the message travels from. Both are natural here."
     },
     {
       "cardId": "dummy_133",
@@ -1064,6 +1092,10 @@
         {
           "text": "I'll keep you posted once the binaries have been uploaded.",
           "audioSrc": "public/data/audio/dummy/dummy_141_sideB_2.mp3"
+        },
+        {
+          "text": "I'll let you know once the binaries are up.",
+          "audioSrc": "public/data/audio/dummy/dummy_141_sideB_3.mp3"
         }
       ],
       "note": null
@@ -1166,7 +1198,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_146_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "**[er:225]**"
     },
     {
       "cardId": "dummy_147",
