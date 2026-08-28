@@ -74,7 +74,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_057_sideB_3.mp3"
         }
       ],
-      "note": "**[er:104]**\n\n~...sets the Android version is compiled the app~ lacks the proper sentence structure. It needs a relative clause and a preposition at the end, such as [the Android version the app is compiled with].\n\n~...against the app is compiled~ is missing the relative pronoun. You must use [against which the app is compiled].\n\n~...sets the Android version with the app gets compiled~ is missing a relative pronoun. You must say [with which the app gets compiled] or leave the preposition at the end: [the app gets compiled with]."
+      "note": "~...sets the Android version is compiled the app~ lacks the proper sentence structure. It needs a relative clause and a preposition at the end, such as [the Android version the app is compiled with].\n\n~...against the app is compiled~ is missing the relative pronoun. You must use [against which the app is compiled].\n\n~...sets the Android version with the app gets compiled~ is missing a relative pronoun. You must say [with which the app gets compiled] or leave the preposition at the end: [the app gets compiled with].\n\n~...sets the Android version the app is compiled~ leaves the clause unfinished. 'Compile' needs its preposition, so the sentence has to close with it: [the Android version the app is compiled with].\n\n~...sets the Android version which the app is compiled~ adds the pronoun but still drops the preposition. Both options are valid: [which the app is compiled with] or [with which the app is compiled]."
     },
     {
       "cardId": "dummy_063",
@@ -114,7 +114,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_065_sideB_2.mp3"
         }
       ],
-      "note": "~Using 0.1 of opacity~ is unnatural because in English we omit the preposition and say [0.1 opacity], or use the structure [an opacity of 0.1].\n\nIn mathematics and decimals, the '.' symbol is pronounced as [point] (e.g., zero point one). The word [dot] is used for web addresses and file extensions (like .com or .json)."
+      "note": "**[er:175]**\n\n~Using 0.1 of opacity~ is unnatural because in English we omit the preposition and say [0.1 opacity], or use the structure [an opacity of 0.1].\n\nIn mathematics and decimals, the '.' symbol is pronounced as [point] (e.g., zero point one). The word [dot] is used for web addresses and file extensions (like .com or .json)."
     },
     {
       "cardId": "dummy_072",
@@ -244,9 +244,13 @@
         {
           "text": "That's the Android version used to build and test the app.",
           "audioSrc": "public/data/audio/dummy/dummy_092_sideB_2.mp3"
+        },
+        {
+          "text": "It's the Android version against which the app is built and tested.",
+          "audioSrc": "public/data/audio/dummy/dummy_092_sideB_3.mp3"
         }
       ],
-      "note": "~It is the Android version against the app is compiled and tested~ is missing the relative pronoun. A preposition placed before the clause requires [which]: [the Android version against which the app is compiled and tested]. The natural spoken option is to leave the preposition at the end: [the Android version the app is compiled and tested against]."
+      "note": "~It is the Android version against the app is compiled and tested~ is missing the relative pronoun. A preposition placed before the clause requires [which]: [the Android version against which the app is compiled and tested]. The natural spoken option is to leave the preposition at the end: [the Android version the app is compiled and tested against].\n\nThe fronted form is correct but formal, and it sounds closer to written documentation than to speech."
     },
     {
       "cardId": "dummy_095",
@@ -362,7 +366,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_103_sideB_3.mp3"
         }
       ],
-      "note": "~...who compiles is Android and Xcode behind it~ is incorrect because 'who' is used for people. For tools or programs, use [what compiles] or [the ones that compile].\n\n~It's Android and Xcode that compiles behind it~ fails the agreement. The focus of the cleft is two tools, so the verb stays plural: [it's Android and Xcode that compile behind it].\n\n~It's Android and Xcode they ones that compiled behind it~ mixes two different structures and puts the verb in the past. Choose one: [it's Android and Xcode that compile behind it] or [Android and Xcode are the ones that compile behind it]."
+      "note": "~...who compiles is Android and Xcode behind it~ is incorrect because 'who' is used for people. For tools or programs, use [what compiles] or [the ones that compile].\n\n~It's Android and Xcode that compiles behind it~ fails the agreement. The focus of the cleft is two tools, so the verb stays plural: [it's Android and Xcode that compile behind it].\n\n~It's Android and Xcode they ones that compiled behind it~ mixes two different structures and puts the verb in the past. Choose one: [it's Android and Xcode that compile behind it] or [Android and Xcode are the ones that compile behind it].\n\n~...the ones which compiles are Android and Xcode behind it~ breaks the agreement and the word order. The plural head needs a plural verb and the object comes before the complement: [the ones that compile it are Android and Xcode].\n\n~...which compiles it is Android and Xcode~ cannot open a clause with 'which'. A free relative working as the subject takes [what]: [what compiles it is Android and Xcode]."
     },
     {
       "cardId": "dummy_104",
@@ -424,9 +428,13 @@
         {
           "text": "The inherited blank value no longer occurs, because this line restores it.",
           "audioSrc": "public/data/audio/dummy/dummy_106_sideB_2.mp3"
+        },
+        {
+          "text": "That inherited blank state is not happening anymore; this line restores it.",
+          "audioSrc": "public/data/audio/dummy/dummy_106_sideB_3.mp3"
         }
       ],
-      "note": "~That inherited gap no longer happens~ changes the meaning. In programming, 'vacío' refers to a [blank state] or [empty value], whereas 'gap' refers to physical or temporal space.\n\n~That inherited blank state is no longer happened~ puts an intransitive verb into the passive. 'Happen' never takes a passive form because nobody performs it on something else: [no longer happens] or [does not happen anymore]."
+      "note": "~That inherited gap no longer happens~ changes the meaning. In programming, 'vacío' refers to a [blank state] or [empty value], whereas 'gap' refers to physical or temporal space.\n\n~That inherited blank state is no longer happened~ puts an intransitive verb into the passive. 'Happen' never takes a passive form because nobody performs it on something else: [no longer happens] or [does not happen anymore].\n\n[Is not happening anymore] is valid because the verb stays active. The continuous points at the current situation, while [no longer happens] states the general fact."
     },
     {
       "cardId": "dummy_109",
@@ -512,6 +520,10 @@
         {
           "text": "Something similar to what was done previously?",
           "audioSrc": "public/data/audio/dummy/dummy_113_sideB_2.mp3"
+        },
+        {
+          "text": "Is it similar to what was done before?",
+          "audioSrc": "public/data/audio/dummy/dummy_113_sideB_3.mp3"
         }
       ],
       "note": null
@@ -572,9 +584,13 @@
         {
           "text": "The flow of water creates steam.",
           "audioSrc": "public/data/audio/dummy/dummy_116_sideB_2.mp3"
+        },
+        {
+          "text": "The stream of water yields steam.",
+          "audioSrc": "public/data/audio/dummy/dummy_116_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "[Yields] belongs to a technical or scientific register, where it describes the output a process gives. Everyday speech prefers [generates], [produces], or [creates]."
     },
     {
       "cardId": "dummy_117",
@@ -634,7 +650,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_119_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~I just sent it to you by chat~ is not idiomatic. [By] pairs with a closed set of channel nouns such as by email, by phone, by mail, or by fax. 'Chat' is not part of that set and takes [on chat], [over chat], [through chat], or [via chat]."
     },
     {
       "cardId": "dummy_120",
@@ -776,6 +792,10 @@
         {
           "text": "It returns true when the data is found, or false when it is not.",
           "audioSrc": "public/data/audio/dummy/dummy_126_sideB_2.mp3"
+        },
+        {
+          "text": "It returns true if it finds the data; otherwise, false.",
+          "audioSrc": "public/data/audio/dummy/dummy_126_sideB_3.mp3"
         }
       ],
       "note": null
@@ -994,7 +1014,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_136_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~The pubspec.lock file registers the exact versions dependencies of the app~ has two problems. [Register] in English means to sign up or enroll a person, so for a file that keeps a list the verb is [records], [keeps], or [stores]. Two nouns also cannot be stacked as ~versions dependencies~: use [the exact dependency versions] or [the exact versions of the dependencies]."
     },
     {
       "cardId": "dummy_137",
@@ -1116,9 +1136,13 @@
         {
           "text": "Two days or so, possibly less.",
           "audioSrc": "public/data/audio/dummy/dummy_142_sideB_2.mp3"
+        },
+        {
+          "text": "In a couple of days, it could be less.",
+          "audioSrc": "public/data/audio/dummy/dummy_142_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "[A couple of days] states how long something takes, so it answers 'how long?'. [In a couple of days] points to the moment the result will be ready, so it answers 'when?'. Both are natural replies about a delivery time."
     },
     {
       "cardId": "dummy_143",
@@ -1216,6 +1240,10 @@
         {
           "text": "Because it's a requirement from Android; every year it's the same.",
           "audioSrc": "public/data/audio/dummy/dummy_147_sideB_2.mp3"
+        },
+        {
+          "text": "Because it's an Android requirement. Every year it's the same.",
+          "audioSrc": "public/data/audio/dummy/dummy_147_sideB_3.mp3"
         }
       ],
       "note": null
