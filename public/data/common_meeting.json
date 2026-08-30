@@ -38399,6 +38399,1026 @@
         }
       ],
       "note": null
+    },
+    {
+      "cardId": "mi_1701",
+      "cardType": "flippable",
+      "sideA": "Cuando A es diferente de B, podemos acceder.",
+      "sideB": [
+        {
+          "text": "When A is different from B, we can access it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1701_sideB_0.mp3"
+        },
+        {
+          "text": "When A differs from B, we can gain access.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1701_sideB_1.mp3"
+        },
+        {
+          "text": "We can access it when A is different from B.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1701_sideB_2.mp3"
+        },
+        {
+          "text": "When A is different to B, we can access it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1701_sideB_3.mp3"
+        }
+      ],
+      "note": "~When A is different from B, we can access~ is missing an object. The verb [access] is transitive in English and requires a direct object (e.g., [access it], [gain access])."
+    },
+    {
+      "cardId": "mi_1702",
+      "cardType": "flippable",
+      "sideA": "Las devoluciones usan bandejas.",
+      "sideB": [
+        {
+          "text": "Returns use flats.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1702_sideB_0.mp3"
+        },
+        {
+          "text": "Returns are processed using flats.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1702_sideB_1.mp3"
+        },
+        {
+          "text": "Flats are used for returns.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1702_sideB_2.mp3"
+        },
+        {
+          "text": "Returns use trays.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1702_sideB_3.mp3"
+        }
+      ],
+      "note": "In logistics and mail sorting, a [flat] refers to a large envelope, magazine, or a flat sorting tray. A [tray] is a shallow container used to hold, sort, or carry items."
+    },
+    {
+      "cardId": "mi_1703",
+      "cardType": "flippable",
+      "sideA": "Android Gradle Plugin es la extensión de compilación que adapta Gradle para compilar y empaquetar aplicaciones Android.",
+      "sideB": [
+        {
+          "text": "The Android Gradle Plugin is the build extension that adapts Gradle to compile and package Android apps.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1703_sideB_0.mp3"
+        },
+        {
+          "text": "AGP is the build extension that lets Gradle compile and package Android applications.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1703_sideB_1.mp3"
+        },
+        {
+          "text": "The Android Gradle Plugin extends Gradle so it can compile and package Android apps.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1703_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1704",
+      "cardType": "flippable",
+      "sideA": "Usando 0.1 de opacidad significa que el color es casi totalmente transparente.",
+      "sideB": [
+        {
+          "text": "Using 0.1 opacity means the color is almost completely transparent.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1704_sideB_0.mp3"
+        },
+        {
+          "text": "An opacity of 0.1 makes the color nearly fully transparent.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1704_sideB_1.mp3"
+        },
+        {
+          "text": "Setting the opacity to 0.1 leaves the color almost invisible.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1704_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:175]**\n\n~Using 0.1 of opacity~ is unnatural because in English we omit the preposition and say [0.1 opacity], or use the structure [an opacity of 0.1].\n\nIn mathematics and decimals, the '.' symbol is pronounced as [point] (e.g., zero point one). The word [dot] is used for web addresses and file extensions (like .com or .json)."
+    },
+    {
+      "cardId": "mi_1705",
+      "cardType": "flippable",
+      "sideA": "Este componente envuelve la imagen para que no queden huecos.",
+      "sideB": [
+        {
+          "text": "This component wraps the image so there are no gaps.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1705_sideB_0.mp3"
+        },
+        {
+          "text": "This component wraps around the image to avoid any gaps.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1705_sideB_1.mp3"
+        },
+        {
+          "text": "This component wraps the image so that no gaps are left.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1705_sideB_2.mp3"
+        },
+        {
+          "text": "This component wraps the image to not have gaps.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1705_sideB_3.mp3"
+        },
+        {
+          "text": "This component wraps the image to not leave any gaps.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1705_sideB_4.mp3"
+        }
+      ],
+      "note": "**[er:188]**\n\n[Gap] means an empty space or opening between two objects or elements."
+    },
+    {
+      "cardId": "mi_1706",
+      "cardType": "flippable",
+      "sideA": "Calentar agua genera vapor.",
+      "sideB": [
+        {
+          "text": "Heating water yields steam.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1706_sideB_0.mp3"
+        },
+        {
+          "text": "Heating water produces steam.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1706_sideB_1.mp3"
+        },
+        {
+          "text": "Heating up water generates steam.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1706_sideB_2.mp3"
+        }
+      ],
+      "note": "~Heating water yields stream~ contains a spelling mistake. A 'stream' is a flow of water (arroyo) or data (flujo), whereas the correct word for 'vapor' is [steam].\n\n~Heat water yields steam~ uses a bare verb as the subject, which reads as an order followed by a second verb. When an action is the subject of the sentence it must be a gerund: [Heating water yields steam]."
+    },
+    {
+      "cardId": "mi_1707",
+      "cardType": "flippable",
+      "sideA": "Por favor, concatena tu nombre y apellido.",
+      "sideB": [
+        {
+          "text": "Please concatenate your first and last name.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1707_sideB_0.mp3"
+        },
+        {
+          "text": "Please join your first name and your last name together.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1707_sideB_1.mp3"
+        },
+        {
+          "text": "Please concatenate your first name with your surname.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1707_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1708",
+      "cardType": "flippable",
+      "sideA": "Puedes concatenar estos archivos de texto fácilmente.",
+      "sideB": [
+        {
+          "text": "You can concatenate these text files easily.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1708_sideB_0.mp3"
+        },
+        {
+          "text": "You can easily concatenate these text files.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1708_sideB_1.mp3"
+        },
+        {
+          "text": "These text files can be concatenated easily.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1708_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1709",
+      "cardType": "flippable",
+      "sideA": "Ya no deberían ver más el mensaje de advertencia.",
+      "sideB": [
+        {
+          "text": "You should not see the warning message anymore.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1709_sideB_0.mp3"
+        },
+        {
+          "text": "You shouldn't be seeing the warning message any more.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1709_sideB_1.mp3"
+        },
+        {
+          "text": "The warning message should not show up for you again.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1709_sideB_2.mp3"
+        },
+        {
+          "text": "You should not see the warning message any longer.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1709_sideB_3.mp3"
+        }
+      ],
+      "note": "~You should not see more the warning messagr~ is not valid because 'more' is placed incorrectly. The correct phrasing uses [anymore] or [any more] at the end of the sentence.\n\n~You should not see any longer the warning message~ has an incorrect word order. The adverbial phrase [any longer] must be placed at the very end of the sentence or clause: [You should not see the warning message any longer]."
+    },
+    {
+      "cardId": "mi_1710",
+      "cardType": "flippable",
+      "sideA": "El monto de crédito solo se calcula si la responsabilidad tiene los créditos activados.",
+      "sideB": [
+        {
+          "text": "The credit amount is only calculated if the responsibility has credits enabled.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1710_sideB_0.mp3"
+        },
+        {
+          "text": "The credit amount is calculated only when the responsibility has credits turned on.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1710_sideB_1.mp3"
+        },
+        {
+          "text": "We only calculate the credit amount if credits are enabled for the responsibility.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1710_sideB_2.mp3"
+        },
+        {
+          "text": "The credit amount is only calculated if the responsibility has credits activated.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1710_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1711",
+      "cardType": "flippable",
+      "sideA": "Uso VSCode para editar, pero el build real lo hacen las herramientas de Android y de Xcode.",
+      "sideB": [
+        {
+          "text": "I use VSCode to edit, but the real build is done by Android's and Xcode's tools.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1711_sideB_0.mp3"
+        },
+        {
+          "text": "I use VSCode to edit, but the actual build is handled by the Android and Xcode tools.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1711_sideB_1.mp3"
+        },
+        {
+          "text": "The editing happens in VSCode, but the Android and Xcode tools do the real build.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1711_sideB_2.mp3"
+        },
+        {
+          "text": "I use VSCode to edit, but the real build is made by tools like Android and Xcode.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1711_sideB_3.mp3"
+        }
+      ],
+      "note": "~I use VSCode to edit, but the real build are made by tools like Android and Xcode.~ is incorrect because the noun 'build' is singular, meaning it requires a singular verb like [is made] or [is done]. Additionally, [is done by] is much more natural here than 'made by'."
+    },
+    {
+      "cardId": "mi_1712",
+      "cardType": "flippable",
+      "sideA": "VSCode no compila nada por sí solo; llama a las herramientas de Android y de Xcode para generar el binario.",
+      "sideB": [
+        {
+          "text": "VSCode does not compile anything by itself; it calls Android's and Xcode's tools to produce the binary.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1712_sideB_0.mp3"
+        },
+        {
+          "text": "VSCode does not compile anything on its own; it calls the Android and Xcode tools to build the binary.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1712_sideB_1.mp3"
+        },
+        {
+          "text": "By itself VSCode compiles nothing; it invokes the Android and Xcode tools to generate the binary.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1712_sideB_2.mp3"
+        }
+      ],
+      "note": "~...by its own~ is a mix of two expressions. You must use either [on its own] or [by itself]."
+    },
+    {
+      "cardId": "mi_1713",
+      "cardType": "flippable",
+      "sideA": "Estamos revisando los problemas de lentitud.",
+      "sideB": [
+        {
+          "text": "We are looking into the slowness issues.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1713_sideB_0.mp3"
+        },
+        {
+          "text": "We are currently investigating the performance issues.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1713_sideB_1.mp3"
+        },
+        {
+          "text": "We are checking the slowness problems right now.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1713_sideB_2.mp3"
+        }
+      ],
+      "note": "~We are checking the slow problems right now~ is not natural. We use the noun [slowness] or [performance] to describe the issue, rather than the adjective 'slow'."
+    },
+    {
+      "cardId": "mi_1714",
+      "cardType": "flippable",
+      "sideA": "La lentitud se debe a llamadas al backend que tardan mucho en regresar.",
+      "sideB": [
+        {
+          "text": "The slowness is caused by backend calls that take a long time to come back.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1714_sideB_0.mp3"
+        },
+        {
+          "text": "The slowness is due to backend calls that take too long to respond.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1714_sideB_1.mp3"
+        },
+        {
+          "text": "It is slow because the backend calls take a long time to return.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1714_sideB_2.mp3"
+        },
+        {
+          "text": "The slowness is due to backend calls that are taking too long.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1714_sideB_3.mp3"
+        }
+      ],
+      "note": "~...take a long time in return~ uses a fixed expression that means 'a cambio', not 'en regresar'. After 'take a long time' the verb goes in the infinitive: [to return] or [to come back]."
+    },
+    {
+      "cardId": "mi_1715",
+      "cardType": "flippable",
+      "sideA": "El equivalente de Google Play Console en Android, es App Store en iOS.",
+      "sideB": [
+        {
+          "text": "The equivalent of Google Play Console on Android is the App Store on iOS.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1715_sideB_0.mp3"
+        },
+        {
+          "text": "On iOS, the App Store is the equivalent of Google Play Console on Android.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1715_sideB_1.mp3"
+        },
+        {
+          "text": "Google Play Console on Android is the equivalent of the App Store on iOS.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1715_sideB_2.mp3"
+        },
+        {
+          "text": "The equivalent of Google Play Console for Android is the App Store for iOS.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1715_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1716",
+      "cardType": "flippable",
+      "sideA": "¿Similar a lo que se hizo antes?",
+      "sideB": [
+        {
+          "text": "Similar to what was done before?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1716_sideB_0.mp3"
+        },
+        {
+          "text": "Is it similar to what we did before?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1716_sideB_1.mp3"
+        },
+        {
+          "text": "Something similar to what was done previously?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1716_sideB_2.mp3"
+        },
+        {
+          "text": "Is it similar to what was done before?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1716_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1717",
+      "cardType": "flippable",
+      "sideA": "Sí, similar a lo que se hizo antes.",
+      "sideB": [
+        {
+          "text": "Yes, similar to what was done before.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1717_sideB_0.mp3"
+        },
+        {
+          "text": "Yes, it is similar to what we did before.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1717_sideB_1.mp3"
+        },
+        {
+          "text": "Yes, pretty much like what was done previously.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1717_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1718",
+      "cardType": "flippable",
+      "sideA": "Sí, es similar. Pero hay algunas diferencias importantes.",
+      "sideB": [
+        {
+          "text": "Yes, it is similar. But there are some important differences.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1718_sideB_0.mp3"
+        },
+        {
+          "text": "Yes, it is similar, though there are a few key differences.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1718_sideB_1.mp3"
+        },
+        {
+          "text": "Yes, it is similar, but there are some significant differences.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1718_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1719",
+      "cardType": "flippable",
+      "sideA": "El arroyo de agua genera vapor.",
+      "sideB": [
+        {
+          "text": "The stream of water generates steam.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1719_sideB_0.mp3"
+        },
+        {
+          "text": "The water stream produces steam.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1719_sideB_1.mp3"
+        },
+        {
+          "text": "The flow of water creates steam.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1719_sideB_2.mp3"
+        },
+        {
+          "text": "The stream of water yields steam.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1719_sideB_3.mp3"
+        }
+      ],
+      "note": "[Yields] belongs to a technical or scientific register, where it describes the output a process gives. Everyday speech prefers [generates], [produces], or [creates]."
+    },
+    {
+      "cardId": "mi_1720",
+      "cardType": "flippable",
+      "sideA": "No uses paréntesis, usa corchetes.",
+      "sideB": [
+        {
+          "text": "Do not use parentheses, use square brackets.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1720_sideB_0.mp3"
+        },
+        {
+          "text": "Do not use parentheses; use brackets instead.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1720_sideB_1.mp3"
+        },
+        {
+          "text": "Use square brackets instead of parentheses.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1720_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1721",
+      "cardType": "flippable",
+      "sideA": "Enciérralo con paréntesis o corchetes.",
+      "sideB": [
+        {
+          "text": "Wrap it in parentheses or brackets.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1721_sideB_0.mp3"
+        },
+        {
+          "text": "Enclose it with parentheses or square brackets.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1721_sideB_1.mp3"
+        },
+        {
+          "text": "Put it inside parentheses or brackets.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1721_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1722",
+      "cardType": "flippable",
+      "sideA": "Acabo de enviarlo por email.",
+      "sideB": [
+        {
+          "text": "I just sent it by email.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1722_sideB_0.mp3"
+        },
+        {
+          "text": "I just emailed it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1722_sideB_1.mp3"
+        },
+        {
+          "text": "I have just sent it over email.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1722_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1723",
+      "cardType": "flippable",
+      "sideA": "Es solo una mejora estética, no estamos tocando la lógica realmente.",
+      "sideB": [
+        {
+          "text": "It's just a cosmetic improvement; we aren't really touching the logic.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1723_sideB_0.mp3"
+        },
+        {
+          "text": "It's only a visual change; we're not really changing the logic.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1723_sideB_1.mp3"
+        },
+        {
+          "text": "This is just a cosmetic update, we aren't actually modifying the logic.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1723_sideB_2.mp3"
+        }
+      ],
+      "note": "~It's just a estetic improvement~ is not valid because 'estetic' does not exist in English. The correct spelling is [aesthetic], and it takes [an] before it: [an aesthetic improvement]. In software contexts, [cosmetic] is the more common word for a change that only affects appearance."
+    },
+    {
+      "cardId": "mi_1724",
+      "cardType": "flippable",
+      "sideA": "Ya no deberías tener más esos problemas.",
+      "sideB": [
+        {
+          "text": "You shouldn't have those issues anymore.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1724_sideB_0.mp3"
+        },
+        {
+          "text": "You shouldn't be having those problems anymore.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1724_sideB_1.mp3"
+        },
+        {
+          "text": "Those issues shouldn't happen to you anymore.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1724_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1725",
+      "cardType": "flippable",
+      "sideA": "Ya no deberías tener más ese problema.",
+      "sideB": [
+        {
+          "text": "You shouldn't have that issue anymore.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1725_sideB_0.mp3"
+        },
+        {
+          "text": "You shouldn't be having that problem anymore.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1725_sideB_1.mp3"
+        },
+        {
+          "text": "That issue shouldn't come up for you anymore.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1725_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1726",
+      "cardType": "flippable",
+      "sideA": "Bueno, tenemos esta función booleana, retorna true si hay alguna línea con 0 cantidad.",
+      "sideB": [
+        {
+          "text": "Well, we have this boolean function; it returns true if there's any line with zero quantity.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1726_sideB_0.mp3"
+        },
+        {
+          "text": "Well, we have this boolean function that returns true if any line has zero quantity.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1726_sideB_1.mp3"
+        },
+        {
+          "text": "So, this is a boolean function; it returns true when a line has zero quantity.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1726_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1727",
+      "cardType": "flippable",
+      "sideA": "Tenemos esta función, retorna true si hay alguna línea con 0, o false si no lo hay.",
+      "sideB": [
+        {
+          "text": "We have this function that returns true if there's any line with a zero, or false if there isn't.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1727_sideB_0.mp3"
+        },
+        {
+          "text": "This function returns true if any line has zero, and false if not.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1727_sideB_1.mp3"
+        },
+        {
+          "text": "We have this function; it returns true if any line has zero, or false otherwise.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1727_sideB_2.mp3"
+        },
+        {
+          "text": "We've got this function; it returns true if at least one line is zero, or false otherwise.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1727_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1728",
+      "cardType": "flippable",
+      "sideA": "Retorna true si encuentra el dato, o falso si no.",
+      "sideB": [
+        {
+          "text": "It returns true if it finds the data, or false if not.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1728_sideB_0.mp3"
+        },
+        {
+          "text": "Returns true if the item is found, and false otherwise.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1728_sideB_1.mp3"
+        },
+        {
+          "text": "It returns true when the data is found, or false when it is not.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1728_sideB_2.mp3"
+        },
+        {
+          "text": "It returns true if it finds the data; otherwise, false.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1728_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1729",
+      "cardType": "flippable",
+      "sideA": "Si la función retorna false, se detiene ahí.",
+      "sideB": [
+        {
+          "text": "If the function returns false, it stops there.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1729_sideB_0.mp3"
+        },
+        {
+          "text": "If the function returns false, it stops right there.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1729_sideB_1.mp3"
+        },
+        {
+          "text": "If the function returns false, it exits there.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1729_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1730",
+      "cardType": "flippable",
+      "sideA": "La importación gestures sirve para detectar y manejar interacciones táctiles.",
+      "sideB": [
+        {
+          "text": "The gestures import is used to detect and handle touch interactions.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1730_sideB_0.mp3"
+        },
+        {
+          "text": "The gestures import lets you detect and handle touch interactions.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1730_sideB_1.mp3"
+        },
+        {
+          "text": "We use the gestures import to detect and manage touch interactions.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1730_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1731",
+      "cardType": "flippable",
+      "sideA": "Es un paquete que permite abrir enlaces web.",
+      "sideB": [
+        {
+          "text": "It's a package that allows you to open web links.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1731_sideB_0.mp3"
+        },
+        {
+          "text": "It's a package for opening web links.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1731_sideB_1.mp3"
+        },
+        {
+          "text": "This package lets you open web links.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1731_sideB_2.mp3"
+        },
+        {
+          "text": "It's a package that allows opening web links.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1731_sideB_3.mp3"
+        }
+      ],
+      "note": "~It's a package that allows to open web links~ is not valid because [allow] never connects directly to a bare infinitive. It needs an object first, [allows you to open], or a gerund, [allows opening]."
+    },
+    {
+      "cardId": "mi_1732",
+      "cardType": "flippable",
+      "sideA": "Pero con la última mejora, no deberías tener más este problema.",
+      "sideB": [
+        {
+          "text": "But with the latest update, you shouldn't have this issue anymore.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1732_sideB_0.mp3"
+        },
+        {
+          "text": "But after the latest improvement, you shouldn't see this issue anymore.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1732_sideB_1.mp3"
+        },
+        {
+          "text": "With the latest fix, though, this problem shouldn't happen to you anymore.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1732_sideB_2.mp3"
+        },
+        {
+          "text": "But with the last update, you shouldn't have this issue anymore.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1732_sideB_3.mp3"
+        }
+      ],
+      "note": "[The latest update] always means the most recent one, with more expected to come. [The last update] is common in speech with the same sense, but it can also mean the final one, with nothing after it. When the difference matters, [latest] is the safer choice."
+    },
+    {
+      "cardId": "mi_1733",
+      "cardType": "flippable",
+      "sideA": "Ya no deberías tener más este problema.",
+      "sideB": [
+        {
+          "text": "You shouldn't have this issue anymore.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1733_sideB_0.mp3"
+        },
+        {
+          "text": "You shouldn't be having this problem anymore.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1733_sideB_1.mp3"
+        },
+        {
+          "text": "This issue shouldn't come up for you anymore.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1733_sideB_2.mp3"
+        },
+        {
+          "text": "You shouldn't have this issue any longer.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1733_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1734",
+      "cardType": "flippable",
+      "sideA": "La nueva variable almacena temporalmente el mensaje de éxito retornado por el backend.",
+      "sideB": [
+        {
+          "text": "The new variable temporarily stores the success message returned by the backend.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1734_sideB_0.mp3"
+        },
+        {
+          "text": "The new variable holds the success message from the backend temporarily.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1734_sideB_1.mp3"
+        },
+        {
+          "text": "This new variable temporarily keeps the success message that the backend returns.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1734_sideB_2.mp3"
+        },
+        {
+          "text": "The new variable temporarily stores the success message returned from the backend.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1734_sideB_3.mp3"
+        }
+      ],
+      "note": "[returned by the backend] identifies the backend as the agent that performs the return, while [returned from the backend] focuses on the origin the message travels from. Both are natural here."
+    },
+    {
+      "cardId": "mi_1735",
+      "cardType": "flippable",
+      "sideA": "La nueva variable almacena el nuevo mensaje retornado por el backend.",
+      "sideB": [
+        {
+          "text": "The new variable stores the new message returned by the backend.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1735_sideB_0.mp3"
+        },
+        {
+          "text": "The new variable holds the new message that the backend returns.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1735_sideB_1.mp3"
+        },
+        {
+          "text": "This new variable keeps the new message coming back from the backend.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1735_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1736",
+      "cardType": "flippable",
+      "sideA": "Es un operador ternario, si es verdadero asigna X, sino, null.",
+      "sideB": [
+        {
+          "text": "It's a ternary operator; if it's true, it assigns X, otherwise, null.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1736_sideB_0.mp3"
+        },
+        {
+          "text": "It's a ternary operator: if true, it assigns X; if not, null.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1736_sideB_1.mp3"
+        },
+        {
+          "text": "That's a ternary operator; when it's true it assigns X, and when it's not, null.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1736_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1737",
+      "cardType": "flippable",
+      "sideA": "Es un operador ternario, si se cumple la condición, asigna null, sino, X.",
+      "sideB": [
+        {
+          "text": "It's a ternary operator; if the condition is met, it assigns null, otherwise, X.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1737_sideB_0.mp3"
+        },
+        {
+          "text": "It's a ternary operator: if the condition is true, it assigns null; if not, X.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1737_sideB_1.mp3"
+        },
+        {
+          "text": "That's a ternary operator; when the condition is met it assigns null, and otherwise X.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1737_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1738",
+      "cardType": "flippable",
+      "sideA": "pubspec.lock es generado automáticamente, sirve para emular y generar los binarios.",
+      "sideB": [
+        {
+          "text": "pubspec.lock is automatically generated; it is used to emulate and generate the binaries.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1738_sideB_0.mp3"
+        },
+        {
+          "text": "pubspec.lock is generated automatically, and it is used to emulate and build the binaries.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1738_sideB_1.mp3"
+        },
+        {
+          "text": "The pubspec.lock file is created automatically; we use it to emulate and generate the binaries.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1738_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1739",
+      "cardType": "flippable",
+      "sideA": "Ahí estamos asignando el valor de B, y si es null, asignamos 0.",
+      "sideB": [
+        {
+          "text": "There we're assigning the value of B, and if it's null, we assign zero.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1739_sideB_0.mp3"
+        },
+        {
+          "text": "There we assign the value of B, and if it's null, we assign zero.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1739_sideB_1.mp3"
+        },
+        {
+          "text": "In that line we're assigning the value of B, or zero when it's null.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1739_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1740",
+      "cardType": "flippable",
+      "sideA": "IBE significa Internet Business Engine, pero en la práctica se le llama iStore.",
+      "sideB": [
+        {
+          "text": "IBE stands for Internet Business Engine, but in practice, it's called iStore.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1740_sideB_0.mp3"
+        },
+        {
+          "text": "IBE means Internet Business Engine, although in practice we call it iStore.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1740_sideB_1.mp3"
+        },
+        {
+          "text": "IBE stands for Internet Business Engine; in practice, though, people call it iStore.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1740_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1741",
+      "cardType": "flippable",
+      "sideA": "Internet Business Engine o IBE, pero en la práctica se le llama iStore.",
+      "sideB": [
+        {
+          "text": "Internet Business Engine or IBE, but in practice, it's called iStore.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1741_sideB_0.mp3"
+        },
+        {
+          "text": "Internet Business Engine, or IBE, though in practice we call it iStore.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1741_sideB_1.mp3"
+        },
+        {
+          "text": "It's Internet Business Engine, or IBE, but in practice people call it iStore.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1741_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1742",
+      "cardType": "flippable",
+      "sideA": "Te haré saber una vez estén subidos los binarios.",
+      "sideB": [
+        {
+          "text": "I'll let you know once the binaries are uploaded.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1742_sideB_0.mp3"
+        },
+        {
+          "text": "I'll let you know as soon as the binaries are up.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1742_sideB_1.mp3"
+        },
+        {
+          "text": "I'll keep you posted once the binaries have been uploaded.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1742_sideB_2.mp3"
+        },
+        {
+          "text": "I'll let you know once the binaries are up.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1742_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1743",
+      "cardType": "flippable",
+      "sideA": "Un par de días, podría ser menos.",
+      "sideB": [
+        {
+          "text": "A couple of days, it could be less.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1743_sideB_0.mp3"
+        },
+        {
+          "text": "A couple of days, maybe less.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1743_sideB_1.mp3"
+        },
+        {
+          "text": "Two days or so, possibly less.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1743_sideB_2.mp3"
+        },
+        {
+          "text": "In a couple of days, it could be less.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1743_sideB_3.mp3"
+        }
+      ],
+      "note": "[A couple of days] states how long something takes, so it answers 'how long?'. [In a couple of days] points to the moment the result will be ready, so it answers 'when?'. Both are natural replies about a delivery time."
+    },
+    {
+      "cardId": "mi_1744",
+      "cardType": "flippable",
+      "sideA": "Puedo mostrarte de lo que estoy hablando.",
+      "sideB": [
+        {
+          "text": "I can show you what I'm talking about.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1744_sideB_0.mp3"
+        },
+        {
+          "text": "Let me show you what I mean.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1744_sideB_1.mp3"
+        },
+        {
+          "text": "I can show you what I'm referring to.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1744_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1745",
+      "cardType": "flippable",
+      "sideA": "Un bug causa un comportamiento inesperado.",
+      "sideB": [
+        {
+          "text": "A bug causes unexpected behavior.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1745_sideB_0.mp3"
+        },
+        {
+          "text": "A bug leads to unexpected behavior.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1745_sideB_1.mp3"
+        },
+        {
+          "text": "A bug makes the program behave unexpectedly.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1745_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1746",
+      "cardType": "flippable",
+      "sideA": "Un bug impide que el software funcione correctamente.",
+      "sideB": [
+        {
+          "text": "A bug prevents the software from working correctly.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1746_sideB_0.mp3"
+        },
+        {
+          "text": "A bug keeps the software from working properly.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1746_sideB_1.mp3"
+        },
+        {
+          "text": "A bug stops the software from running correctly.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1746_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:225]**"
+    },
+    {
+      "cardId": "mi_1747",
+      "cardType": "flippable",
+      "sideA": "Porque es un requisito de Android. Cada año es lo mismo.",
+      "sideB": [
+        {
+          "text": "Because it's an Android requirement. It's the same every year.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1747_sideB_0.mp3"
+        },
+        {
+          "text": "Because Android requires it. It's the same thing every year.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1747_sideB_1.mp3"
+        },
+        {
+          "text": "Because it's a requirement from Android; every year it's the same.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1747_sideB_2.mp3"
+        },
+        {
+          "text": "Because it's an Android requirement. Every year it's the same.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1747_sideB_3.mp3"
+        }
+      ],
+      "note": null
     }
   ]
 }
