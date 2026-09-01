@@ -226,7 +226,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_144_sideB_2.mp3"
         }
       ],
-      "note": "~A bug is an error of a program~ sounds unnatural because the error is located inside the program, it is not something the program possesses. Use [an error in a program], or compress it into a single noun phrase as [a program error]. The pattern with [of] works for parts or properties, as in [the size of the file] or [the name of the variable], not for the place where a problem occurs."
+      "note": "~A bug is an error of a program~ sounds unnatural because the error is located inside the program, it is not something the program possesses. Use [an error in a program], or compress it into a single noun phrase as [a program error]. The pattern with [of] works for parts or properties, as in [the size of the file] or [the name of the variable], not for the place where a problem occurs.\n\n~A bug is an error from a program~ fails for a similar reason. [From] marks origin or source, so it suggests the program emitted the error toward something else, as in [an error message from the server]. The bug is not coming out of the program, it lives inside it, so the preposition stays [in]."
     },
     {
       "cardId": "dummy_148",
@@ -310,7 +310,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_151_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~A firewall is a guardian in a network connections~ breaks twice. The article [a] cannot sit in front of a plural noun, and [in] places the firewall inside the connections instead of watching over them. The guardian relationship is expressed with [of] or [for]: [a guardian of network connections], [a gatekeeper for network connections]."
     },
     {
       "cardId": "dummy_152",
@@ -370,7 +370,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_154_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~A personal firewall is an easy program on your computer~ shifts the meaning to how much effort the program takes to use. The point here is that it is not complex, so use [simple], [basic] or [lightweight]. [Easy] describes a task or an experience, as in [an easy task] or [the app is easy to use], not the internal complexity of a thing."
     },
     {
       "cardId": "dummy_155",
@@ -388,6 +388,10 @@
         {
           "text": "For maximum security, a corporate firewall blocks all traffic by default.",
           "audioSrc": "public/data/audio/dummy/dummy_155_sideB_2.mp3"
+        },
+        {
+          "text": "A corporate firewall blocks all traffic by default to maximize security.",
+          "audioSrc": "public/data/audio/dummy/dummy_155_sideB_3.mp3"
         }
       ],
       "note": null
@@ -450,7 +454,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_158_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~When Checking out, the Quote becomes a Sales Order~ makes the Quote the one doing the checking out, because a reduced [when + -ing] clause borrows the subject of the main clause. Since the person checking out and the thing being converted are different, the subject must stay explicit: [when you check out], or the verb can be dropped entirely: [at checkout]."
     },
     {
       "cardId": "dummy_159",
@@ -468,6 +472,10 @@
         {
           "text": "Can you point out the modified code?",
           "audioSrc": "public/data/audio/dummy/dummy_159_sideB_2.mp3"
+        },
+        {
+          "text": "Can you highlight the code that was modified?",
+          "audioSrc": "public/data/audio/dummy/dummy_159_sideB_3.mp3"
         }
       ],
       "note": null
@@ -728,9 +736,13 @@
         {
           "text": "There's no reason for him to know, really.",
           "audioSrc": "public/data/audio/dummy/dummy_172_sideB_2.mp3"
+        },
+        {
+          "text": "He doesn't really have to know it.",
+          "audioSrc": "public/data/audio/dummy/dummy_172_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "[Know] can drop its object when the thing known is obvious from context, which is why [he doesn't really have to know] already works on its own. Adding [it] points at one specific piece of information that was just mentioned."
     },
     {
       "cardId": "dummy_173",
@@ -870,7 +882,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_179_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~Restart is the generic verb in any case~ changes the meaning, because [in any case] is a fixed expression that means [anyway] or [regardless of what happens]. To say which situations the verb covers, the preposition has to be [for]: [the generic verb for any case], [the general term for every case]."
     },
     {
       "cardId": "dummy_180",
@@ -1090,7 +1102,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_190_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~He works as a consulter, at a consulting firm~ fails because the profession is [consultant]. [Consulter] is not the job title in English; the agent noun for this verb is irregular and ends in -ant, like [assistant], [applicant] or [participant]."
     },
     {
       "cardId": "dummy_191",
@@ -1248,9 +1260,13 @@
         {
           "text": "They didn't tell me the price would change.",
           "audioSrc": "public/data/audio/dummy/dummy_198_sideB_2.mp3"
+        },
+        {
+          "text": "I wasn't told that the price was about to change.",
+          "audioSrc": "public/data/audio/dummy/dummy_198_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "[Was about to change] presents the change as imminent, on the point of happening. [Would change] and [was going to change] only place it somewhere in the future without that urgency."
     },
     {
       "cardId": "dummy_199",
@@ -1268,6 +1284,10 @@
         {
           "text": "I wasn't informed about the meeting.",
           "audioSrc": "public/data/audio/dummy/dummy_199_sideB_2.mp3"
+        },
+        {
+          "text": "They didn't tell me about the meeting.",
+          "audioSrc": "public/data/audio/dummy/dummy_199_sideB_3.mp3"
         }
       ],
       "note": null
@@ -1288,6 +1308,10 @@
         {
           "text": "I wasn't asked to change the way I do things.",
           "audioSrc": "public/data/audio/dummy/dummy_200_sideB_2.mp3"
+        },
+        {
+          "text": "They didn't tell me to change the way I do things.",
+          "audioSrc": "public/data/audio/dummy/dummy_200_sideB_3.mp3"
         }
       ],
       "note": null
@@ -1308,6 +1332,10 @@
         {
           "text": "I just need the cliff notes to get up to date.",
           "audioSrc": "public/data/audio/dummy/dummy_201_sideB_2.mp3"
+        },
+        {
+          "text": "I just need a quick summary.",
+          "audioSrc": "public/data/audio/dummy/dummy_201_sideB_3.mp3"
         }
       ],
       "note": null
@@ -1370,7 +1398,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_204_sideB_2.mp3"
         }
       ],
-      "note": "**[er:232]**\n\n~The topic about we spoke was boring~ is wrong because [about] needs an object right after it, and [we] is the subject of the clause that follows, not that object. The pronoun has to be there: [about which we spoke].\n\nThe fronted version sounds formal or written. In conversation you would move the preposition to the end: [the topic we talked about]."
+      "note": "**[er:232]**\n\n~The topic about we spoke was boring~ is wrong because [about] needs an object right after it, and [we] is the subject of the clause that follows, not that object. The pronoun has to be there: [about which we spoke].\n\nThe fronted version sounds formal or written. In conversation you would move the preposition to the end: [the topic we talked about].\n\n~The topic about that we spoke was boring~ fails for a different reason: [that] can never follow a preposition. Once the preposition is fronted, the only pronouns allowed are [which] for things and [whom] for people. [That] is possible only when the preposition stays at the end: [the topic that we spoke about]."
     },
     {
       "cardId": "dummy_205",
@@ -1408,9 +1436,13 @@
         {
           "text": "The house I grew up in is gone now.",
           "audioSrc": "public/data/audio/dummy/dummy_206_sideB_2.mp3"
+        },
+        {
+          "text": "The house where I grew up is gone now.",
+          "audioSrc": "public/data/audio/dummy/dummy_206_sideB_3.mp3"
         }
       ],
-      "note": "**[er:232]**\n\n~The house in I grew up is gone now~ fails because [in] is stranded before a subject pronoun. Fronted prepositions always drag [which] along with them: [in which I grew up].\n\nBoth versions are correct English, they just differ in register. [In which] is formal and written; [the house I grew up in] is what you actually say out loud."
+      "note": "**[er:232]**\n\n~The house in I grew up is gone now~ fails because [in] is stranded before a subject pronoun. Fronted prepositions always drag [which] along with them: [in which I grew up].\n\nBoth versions are correct English, they just differ in register. [In which] is formal and written; [the house I grew up in] is what you actually say out loud.\n\nWhen the antecedent is a place, [where] replaces the whole preposition + pronoun block: [the house where I grew up]. Because [where] already carries the meaning of [in which], it is never combined with a preposition."
     },
     {
       "cardId": "dummy_207",
