@@ -5,30 +5,6 @@
   "deckType": "flippable",
   "cards": [
     {
-      "cardId": "dummy_057",
-      "cardType": "flippable",
-      "sideA": "compileSdkVersion indica la versión de Android con la que se compila la app.",
-      "sideB": [
-        {
-          "text": "compileSdkVersion sets the Android version used to compile the app.",
-          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_0.mp3"
-        },
-        {
-          "text": "compileSdkVersion indicates which Android version the app is compiled with.",
-          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_1.mp3"
-        },
-        {
-          "text": "compileSdkVersion defines the Android version that compiles the app.",
-          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_2.mp3"
-        },
-        {
-          "text": "compileSdkVersion defines the Android version against which the app is compiled.",
-          "audioSrc": "public/data/audio/dummy/dummy_057_sideB_3.mp3"
-        }
-      ],
-      "note": "**[er:232]**\n\n~...sets the Android version is compiled the app~ lacks the proper sentence structure. It needs a relative clause and a preposition at the end, such as [the Android version the app is compiled with].\n\n~...against the app is compiled~ is missing the relative pronoun. You must use [against which the app is compiled].\n\n~...sets the Android version with the app gets compiled~ is missing a relative pronoun. You must say [with which the app gets compiled] or leave the preposition at the end: [the app gets compiled with].\n\n~...sets the Android version the app is compiled~ leaves the clause unfinished. 'Compile' needs its preposition, so the sentence has to close with it: [the Android version the app is compiled with].\n\n~...sets the Android version which the app is compiled~ adds the pronoun but still drops the preposition. Both options are valid: [which the app is compiled with] or [with which the app is compiled]."
-    },
-    {
       "cardId": "dummy_092",
       "cardType": "flippable",
       "sideA": "Es la versión de Android contra la que la app se construye y se prueba.",
@@ -97,26 +73,6 @@
       "note": "~...the corresponcy of Gradle~ is incorrect because 'corresponcy' is not a valid word. The correct terms are [equivalent] or [counterpart].\n\n[in Xcode] presents Xcode as the place where the work happens, while [by Xcode] presents it as the agent doing the work. Both are natural in a passive sentence like this one."
     },
     {
-      "cardId": "dummy_101",
-      "cardType": "flippable",
-      "sideA": "El código elige el spinner según la plataforma en la que corre.",
-      "sideB": [
-        {
-          "text": "The code picks the spinner based on the platform it runs on.",
-          "audioSrc": "public/data/audio/dummy/dummy_101_sideB_0.mp3"
-        },
-        {
-          "text": "The code chooses the spinner depending on the platform it is running on.",
-          "audioSrc": "public/data/audio/dummy/dummy_101_sideB_1.mp3"
-        },
-        {
-          "text": "Which spinner is used depends on the platform the code runs on.",
-          "audioSrc": "public/data/audio/dummy/dummy_101_sideB_2.mp3"
-        }
-      ],
-      "note": "**[er:232]**\n\n~...based on the platform it runs~ is incomplete. You must include the preposition [on] at the end to specify where it runs: [it runs on].\n\nIn this context, 'run on' is not a true phrasal verb. It is simply the verb [run] (to execute or operate) followed by the preposition [on] indicating the platform or surface. The core meaning of the verb does not change idiomatically as it would in a real phrasal verb like 'run out' or 'run into'."
-    },
-    {
       "cardId": "dummy_103",
       "cardType": "flippable",
       "sideA": "VSCode es solo el editor donde escribo el código; quien compila es Android y Xcode por detrás.",
@@ -149,198 +105,6 @@
       "note": "**[er:232]**\n\n~...who compiles is Android and Xcode behind it~ is incorrect because 'who' is used for people. For tools or programs, use [what compiles] or [the ones that compile].\n\n~It's Android and Xcode that compiles behind it~ fails the agreement. The focus of the cleft is two tools, so the verb stays plural: [it's Android and Xcode that compile behind it].\n\n~It's Android and Xcode they ones that compiled behind it~ mixes two different structures and puts the verb in the past. Choose one: [it's Android and Xcode that compile behind it] or [Android and Xcode are the ones that compile behind it].\n\n~...the ones which compiles are Android and Xcode behind it~ breaks the agreement and the word order. The plural head needs a plural verb and the object comes before the complement: [the ones that compile it are Android and Xcode].\n\n~...which compiles it is Android and Xcode~ cannot open a clause with 'which'. A free relative working as the subject takes [what]: [what compiles it is Android and Xcode]."
     },
     {
-      "cardId": "dummy_106",
-      "cardType": "flippable",
-      "sideA": "Ese vacío heredado ya no ocurre; esta línea lo restaura.",
-      "sideB": [
-        {
-          "text": "That inherited blank state no longer happens; this line restores it.",
-          "audioSrc": "public/data/audio/dummy/dummy_106_sideB_0.mp3"
-        },
-        {
-          "text": "That inherited empty state does not happen anymore; this line resets it.",
-          "audioSrc": "public/data/audio/dummy/dummy_106_sideB_1.mp3"
-        },
-        {
-          "text": "The inherited blank value no longer occurs, because this line restores it.",
-          "audioSrc": "public/data/audio/dummy/dummy_106_sideB_2.mp3"
-        },
-        {
-          "text": "That inherited blank state is not happening anymore; this line restores it.",
-          "audioSrc": "public/data/audio/dummy/dummy_106_sideB_3.mp3"
-        }
-      ],
-      "note": "~That inherited gap no longer happens~ changes the meaning. In programming, 'vacío' refers to a [blank state] or [empty value], whereas 'gap' refers to physical or temporal space.\n\n~That inherited blank state is no longer happened~ puts an intransitive verb into the passive. 'Happen' never takes a passive form because nobody performs it on something else: [no longer happens] or [does not happen anymore].\n\n[Is not happening anymore] is valid because the verb stays active. The continuous points at the current situation, while [no longer happens] states the general fact."
-    },
-    {
-      "cardId": "dummy_119",
-      "cardType": "flippable",
-      "sideA": "Acabo de enviártelo por chat.",
-      "sideB": [
-        {
-          "text": "I just sent it to you on chat.",
-          "audioSrc": "public/data/audio/dummy/dummy_119_sideB_0.mp3"
-        },
-        {
-          "text": "I just sent it to you over chat.",
-          "audioSrc": "public/data/audio/dummy/dummy_119_sideB_1.mp3"
-        },
-        {
-          "text": "I have just sent it to you through chat.",
-          "audioSrc": "public/data/audio/dummy/dummy_119_sideB_2.mp3"
-        }
-      ],
-      "note": "~I just sent it to you by chat~ is not idiomatic. [By] pairs with a closed set of channel nouns such as by email, by phone, by mail, or by fax. 'Chat' is not part of that set and takes [on chat], [over chat], [through chat], or [via chat]."
-    },
-    {
-      "cardId": "dummy_136",
-      "cardType": "flippable",
-      "sideA": "El archivo pubspec.lock registra las versiones exactas de las dependencias de la app.",
-      "sideB": [
-        {
-          "text": "The pubspec.lock file records the exact versions of the app's dependencies.",
-          "audioSrc": "public/data/audio/dummy/dummy_136_sideB_0.mp3"
-        },
-        {
-          "text": "The pubspec.lock file keeps the exact versions of the app's dependencies.",
-          "audioSrc": "public/data/audio/dummy/dummy_136_sideB_1.mp3"
-        },
-        {
-          "text": "pubspec.lock stores the exact dependency versions used by the app.",
-          "audioSrc": "public/data/audio/dummy/dummy_136_sideB_2.mp3"
-        },
-        {
-          "text": "The pubspec.lock file records the exact dependency versions of the app.",
-          "audioSrc": "public/data/audio/dummy/dummy_136_sideB_3.mp3"
-        }
-      ],
-      "note": "~The pubspec.lock file registers the exact versions dependencies of the app~ has two problems. [Register] in English means to sign up or enroll a person, so for a file that keeps a list the verb is [records], [keeps], or [stores]. Two nouns also cannot be stacked as ~versions dependencies~: use [the exact dependency versions] or [the exact versions of the dependencies]."
-    },
-    {
-      "cardId": "dummy_144",
-      "cardType": "flippable",
-      "sideA": "Un bug es un error en un programa.",
-      "sideB": [
-        {
-          "text": "A bug is an error in a program.",
-          "audioSrc": "public/data/audio/dummy/dummy_144_sideB_0.mp3"
-        },
-        {
-          "text": "A bug is a mistake in a program.",
-          "audioSrc": "public/data/audio/dummy/dummy_144_sideB_1.mp3"
-        },
-        {
-          "text": "A bug is a flaw in a program.",
-          "audioSrc": "public/data/audio/dummy/dummy_144_sideB_2.mp3"
-        }
-      ],
-      "note": "~A bug is an error of a program~ sounds unnatural because the error is located inside the program, it is not something the program possesses. Use [an error in a program], or compress it into a single noun phrase as [a program error]. The pattern with [of] works for parts or properties, as in [the size of the file] or [the name of the variable], not for the place where a problem occurs.\n\n~A bug is an error from a program~ fails for a similar reason. [From] marks origin or source, so it suggests the program emitted the error toward something else, as in [an error message from the server]. The bug is not coming out of the program, it lives inside it, so the preposition stays [in]."
-    },
-    {
-      "cardId": "dummy_148",
-      "cardType": "flippable",
-      "sideA": "Porque es un requisito de iOS, cada año es lo mismo.",
-      "sideB": [
-        {
-          "text": "Because it's an iOS requirement; it's the same every year.",
-          "audioSrc": "public/data/audio/dummy/dummy_148_sideB_0.mp3"
-        },
-        {
-          "text": "Because iOS requires it, and it's the same every year.",
-          "audioSrc": "public/data/audio/dummy/dummy_148_sideB_1.mp3"
-        },
-        {
-          "text": "Because it's a requirement from iOS; every year it's the same.",
-          "audioSrc": "public/data/audio/dummy/dummy_148_sideB_2.mp3"
-        },
-        {
-          "text": "Because it's a requirement for iOS; every year it's the same.",
-          "audioSrc": "public/data/audio/dummy/dummy_148_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_149",
-      "cardType": "flippable",
-      "sideA": "Un firewall es un guardia digital que bloquea datos sospechosos.",
-      "sideB": [
-        {
-          "text": "A firewall is a digital guard that blocks suspicious data.",
-          "audioSrc": "public/data/audio/dummy/dummy_149_sideB_0.mp3"
-        },
-        {
-          "text": "A firewall acts as a digital guard that blocks suspicious data.",
-          "audioSrc": "public/data/audio/dummy/dummy_149_sideB_1.mp3"
-        },
-        {
-          "text": "A firewall is like a digital security guard that blocks suspicious data.",
-          "audioSrc": "public/data/audio/dummy/dummy_149_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_150",
-      "cardType": "flippable",
-      "sideA": "Un firewall es una muralla que protege tu red.",
-      "sideB": [
-        {
-          "text": "A firewall is a wall that protects your network.",
-          "audioSrc": "public/data/audio/dummy/dummy_150_sideB_0.mp3"
-        },
-        {
-          "text": "A firewall is a barrier that protects your network.",
-          "audioSrc": "public/data/audio/dummy/dummy_150_sideB_1.mp3"
-        },
-        {
-          "text": "A firewall works as a wall that shields your network.",
-          "audioSrc": "public/data/audio/dummy/dummy_150_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_151",
-      "cardType": "flippable",
-      "sideA": "Un firewall es un guardián de conexiones de red.",
-      "sideB": [
-        {
-          "text": "A firewall is a guardian of network connections.",
-          "audioSrc": "public/data/audio/dummy/dummy_151_sideB_0.mp3"
-        },
-        {
-          "text": "A firewall is a gatekeeper for network connections.",
-          "audioSrc": "public/data/audio/dummy/dummy_151_sideB_1.mp3"
-        },
-        {
-          "text": "A firewall guards the network connections.",
-          "audioSrc": "public/data/audio/dummy/dummy_151_sideB_2.mp3"
-        }
-      ],
-      "note": "~A firewall is a guardian in a network connections~ breaks twice. The article [a] cannot sit in front of a plural noun, and [in] places the firewall inside the connections instead of watching over them. The guardian relationship is expressed with [of] or [for]: [a guardian of network connections], [a gatekeeper for network connections]."
-    },
-    {
-      "cardId": "dummy_152",
-      "cardType": "flippable",
-      "sideA": "Un firewall personal permite todo el tráfico por defecto.",
-      "sideB": [
-        {
-          "text": "A personal firewall allows all traffic by default.",
-          "audioSrc": "public/data/audio/dummy/dummy_152_sideB_0.mp3"
-        },
-        {
-          "text": "A personal firewall lets all traffic through by default.",
-          "audioSrc": "public/data/audio/dummy/dummy_152_sideB_1.mp3"
-        },
-        {
-          "text": "By default, a personal firewall permits all traffic.",
-          "audioSrc": "public/data/audio/dummy/dummy_152_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
       "cardId": "dummy_153",
       "cardType": "flippable",
       "sideA": "Un firewall personal protege un solo dispositivo.",
@@ -356,50 +120,6 @@
         {
           "text": "A personal firewall guards just one device.",
           "audioSrc": "public/data/audio/dummy/dummy_153_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_154",
-      "cardType": "flippable",
-      "sideA": "Un firewall personal es un programa sencillo en tu computadora.",
-      "sideB": [
-        {
-          "text": "A personal firewall is a simple program on your computer.",
-          "audioSrc": "public/data/audio/dummy/dummy_154_sideB_0.mp3"
-        },
-        {
-          "text": "A personal firewall is just a simple program running on your computer.",
-          "audioSrc": "public/data/audio/dummy/dummy_154_sideB_1.mp3"
-        },
-        {
-          "text": "A personal firewall is a lightweight program installed on your computer.",
-          "audioSrc": "public/data/audio/dummy/dummy_154_sideB_2.mp3"
-        }
-      ],
-      "note": "~A personal firewall is an easy program on your computer~ shifts the meaning to how much effort the program takes to use. The point here is that it is not complex, so use [simple], [basic] or [lightweight]. [Easy] describes a task or an experience, as in [an easy task] or [the app is easy to use], not the internal complexity of a thing."
-    },
-    {
-      "cardId": "dummy_155",
-      "cardType": "flippable",
-      "sideA": "Un firewall de empresa bloquea todo el tráfico por defecto para máxima seguridad.",
-      "sideB": [
-        {
-          "text": "A corporate firewall blocks all traffic by default for maximum security.",
-          "audioSrc": "public/data/audio/dummy/dummy_155_sideB_0.mp3"
-        },
-        {
-          "text": "A corporate firewall denies all traffic by default for maximum security.",
-          "audioSrc": "public/data/audio/dummy/dummy_155_sideB_1.mp3"
-        },
-        {
-          "text": "For maximum security, a corporate firewall blocks all traffic by default.",
-          "audioSrc": "public/data/audio/dummy/dummy_155_sideB_2.mp3"
-        },
-        {
-          "text": "A corporate firewall blocks all traffic by default to maximize security.",
-          "audioSrc": "public/data/audio/dummy/dummy_155_sideB_3.mp3"
         }
       ],
       "note": null
@@ -465,210 +185,6 @@
       "note": "~When Checking out, the Quote becomes a Sales Order~ makes the Quote the one doing the checking out, because a reduced [when + -ing] clause borrows the subject of the main clause. Since the person checking out and the thing being converted are different, the subject must stay explicit: [when you check out], or the verb can be dropped entirely: [at checkout].\n\n~When doing check out, the Quote becomes a Sales Order~ carries the same dangling subject, and [check out] is the verb form, so it cannot sit after [doing]. As a noun it is one word, [checkout], which is why the natural options are [when you check out] or [at checkout]."
     },
     {
-      "cardId": "dummy_159",
-      "cardType": "flippable",
-      "sideA": "¿Puedes destacar el código que se ha modificado?",
-      "sideB": [
-        {
-          "text": "Can you highlight the code that has been modified?",
-          "audioSrc": "public/data/audio/dummy/dummy_159_sideB_0.mp3"
-        },
-        {
-          "text": "Could you highlight the code that changed?",
-          "audioSrc": "public/data/audio/dummy/dummy_159_sideB_1.mp3"
-        },
-        {
-          "text": "Can you point out the modified code?",
-          "audioSrc": "public/data/audio/dummy/dummy_159_sideB_2.mp3"
-        },
-        {
-          "text": "Can you highlight the code that was modified?",
-          "audioSrc": "public/data/audio/dummy/dummy_159_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_160",
-      "cardType": "flippable",
-      "sideA": "Si es así, deberíamos salir temprano para evitar el tráfico.",
-      "sideB": [
-        {
-          "text": "If so, we should leave early to beat the traffic.",
-          "audioSrc": "public/data/audio/dummy/dummy_160_sideB_0.mp3"
-        },
-        {
-          "text": "If that is the case, we should leave early to avoid the traffic.",
-          "audioSrc": "public/data/audio/dummy/dummy_160_sideB_1.mp3"
-        },
-        {
-          "text": "If so, we had better leave early to beat the traffic.",
-          "audioSrc": "public/data/audio/dummy/dummy_160_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_161",
-      "cardType": "flippable",
-      "sideA": "Si es así, necesitamos cancelar la reservación de inmediato.",
-      "sideB": [
-        {
-          "text": "If that's so, we need to cancel the reservation right away.",
-          "audioSrc": "public/data/audio/dummy/dummy_161_sideB_0.mp3"
-        },
-        {
-          "text": "If so, we need to cancel the reservation immediately.",
-          "audioSrc": "public/data/audio/dummy/dummy_161_sideB_1.mp3"
-        },
-        {
-          "text": "If that is the case, we have to cancel the booking right away.",
-          "audioSrc": "public/data/audio/dummy/dummy_161_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_162",
-      "cardType": "flippable",
-      "sideA": "Si es así, ella se unirá a nosotros para cenar después del trabajo.",
-      "sideB": [
-        {
-          "text": "If so, she will join us for dinner after work.",
-          "audioSrc": "public/data/audio/dummy/dummy_162_sideB_0.mp3"
-        },
-        {
-          "text": "If that is the case, she will join us for dinner after work.",
-          "audioSrc": "public/data/audio/dummy/dummy_162_sideB_1.mp3"
-        },
-        {
-          "text": "If so, she is going to join us for dinner after work.",
-          "audioSrc": "public/data/audio/dummy/dummy_162_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_163",
-      "cardType": "flippable",
-      "sideA": "Las notificaciones push requieren una conexión a internet para funcionar.",
-      "sideB": [
-        {
-          "text": "Push notifications require an internet connection to work.",
-          "audioSrc": "public/data/audio/dummy/dummy_163_sideB_0.mp3"
-        },
-        {
-          "text": "Push notifications need an internet connection in order to work.",
-          "audioSrc": "public/data/audio/dummy/dummy_163_sideB_1.mp3"
-        },
-        {
-          "text": "Without an internet connection, push notifications do not work.",
-          "audioSrc": "public/data/audio/dummy/dummy_163_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_164",
-      "cardType": "flippable",
-      "sideA": "Las notificaciones push se muestran en la pantalla del dispositivo.",
-      "sideB": [
-        {
-          "text": "Push notifications are displayed on the device's screen.",
-          "audioSrc": "public/data/audio/dummy/dummy_164_sideB_0.mp3"
-        },
-        {
-          "text": "Push notifications show up on the device screen.",
-          "audioSrc": "public/data/audio/dummy/dummy_164_sideB_1.mp3"
-        },
-        {
-          "text": "Push notifications appear on the screen of the device.",
-          "audioSrc": "public/data/audio/dummy/dummy_164_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_165",
-      "cardType": "flippable",
-      "sideA": "El usuario debe instalar la aplicación para recibir notificaciones push.",
-      "sideB": [
-        {
-          "text": "The user must install the app to receive push notifications.",
-          "audioSrc": "public/data/audio/dummy/dummy_165_sideB_0.mp3"
-        },
-        {
-          "text": "The user has to install the app in order to get push notifications.",
-          "audioSrc": "public/data/audio/dummy/dummy_165_sideB_1.mp3"
-        },
-        {
-          "text": "To receive push notifications, the user needs to install the app.",
-          "audioSrc": "public/data/audio/dummy/dummy_165_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_166",
-      "cardType": "flippable",
-      "sideA": "Un SMS no requiere internet para funcionar.",
-      "sideB": [
-        {
-          "text": "An SMS does not require internet to work.",
-          "audioSrc": "public/data/audio/dummy/dummy_166_sideB_0.mp3"
-        },
-        {
-          "text": "An SMS does not need an internet connection to work.",
-          "audioSrc": "public/data/audio/dummy/dummy_166_sideB_1.mp3"
-        },
-        {
-          "text": "Text messages work without internet.",
-          "audioSrc": "public/data/audio/dummy/dummy_166_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_167",
-      "cardType": "flippable",
-      "sideA": "Las notificaciones SMS llegan directamente al número de teléfono.",
-      "sideB": [
-        {
-          "text": "SMS notifications arrive directly to the phone number.",
-          "audioSrc": "public/data/audio/dummy/dummy_167_sideB_0.mp3"
-        },
-        {
-          "text": "SMS notifications go straight to the phone number.",
-          "audioSrc": "public/data/audio/dummy/dummy_167_sideB_1.mp3"
-        },
-        {
-          "text": "SMS notifications are delivered directly to the phone number.",
-          "audioSrc": "public/data/audio/dummy/dummy_167_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_168",
-      "cardType": "flippable",
-      "sideA": "Los SMS funcionan en cualquier teléfono móvil básico.",
-      "sideB": [
-        {
-          "text": "SMS messages work on any basic mobile phone.",
-          "audioSrc": "public/data/audio/dummy/dummy_168_sideB_0.mp3"
-        },
-        {
-          "text": "Text messages work on any basic cell phone.",
-          "audioSrc": "public/data/audio/dummy/dummy_168_sideB_1.mp3"
-        },
-        {
-          "text": "SMS works on any simple mobile phone.",
-          "audioSrc": "public/data/audio/dummy/dummy_168_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
       "cardId": "dummy_169",
       "cardType": "flippable",
       "sideA": "¿En qué fase estamos?",
@@ -684,26 +200,6 @@
         {
           "text": "What phase are we in?",
           "audioSrc": "public/data/audio/dummy/dummy_169_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_170",
-      "cardType": "flippable",
-      "sideA": "¿En qué paso estamos?",
-      "sideB": [
-        {
-          "text": "In which step are we?",
-          "audioSrc": "public/data/audio/dummy/dummy_170_sideB_0.mp3"
-        },
-        {
-          "text": "Which step are we in?",
-          "audioSrc": "public/data/audio/dummy/dummy_170_sideB_1.mp3"
-        },
-        {
-          "text": "What step are we on?",
-          "audioSrc": "public/data/audio/dummy/dummy_170_sideB_2.mp3"
         }
       ],
       "note": null
@@ -729,110 +225,6 @@
       "note": null
     },
     {
-      "cardId": "dummy_172",
-      "cardType": "flippable",
-      "sideA": "Él realmente no tiene por qué saberlo.",
-      "sideB": [
-        {
-          "text": "He doesn't really have to know.",
-          "audioSrc": "public/data/audio/dummy/dummy_172_sideB_0.mp3"
-        },
-        {
-          "text": "He doesn't really need to know.",
-          "audioSrc": "public/data/audio/dummy/dummy_172_sideB_1.mp3"
-        },
-        {
-          "text": "There's no reason for him to know, really.",
-          "audioSrc": "public/data/audio/dummy/dummy_172_sideB_2.mp3"
-        },
-        {
-          "text": "He doesn't really have to know it.",
-          "audioSrc": "public/data/audio/dummy/dummy_172_sideB_3.mp3"
-        }
-      ],
-      "note": "[Know] can drop its object when the thing known is obvious from context, which is why [he doesn't really have to know] already works on its own. Adding [it] points at one specific piece of information that was just mentioned."
-    },
-    {
-      "cardId": "dummy_173",
-      "cardType": "flippable",
-      "sideA": "Nunca he visto ese problema, déjame revisarlo.",
-      "sideB": [
-        {
-          "text": "I've never seen that problem, let me check it.",
-          "audioSrc": "public/data/audio/dummy/dummy_173_sideB_0.mp3"
-        },
-        {
-          "text": "I've never run into that issue, let me take a look.",
-          "audioSrc": "public/data/audio/dummy/dummy_173_sideB_1.mp3"
-        },
-        {
-          "text": "That's a problem I've never seen before, let me check it out.",
-          "audioSrc": "public/data/audio/dummy/dummy_173_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_174",
-      "cardType": "flippable",
-      "sideA": "Ahora necesitamos incrementar la versión.",
-      "sideB": [
-        {
-          "text": "Now we need to bump the version.",
-          "audioSrc": "public/data/audio/dummy/dummy_174_sideB_0.mp3"
-        },
-        {
-          "text": "Now we need to increment the version number.",
-          "audioSrc": "public/data/audio/dummy/dummy_174_sideB_1.mp3"
-        },
-        {
-          "text": "We have to bump the version now.",
-          "audioSrc": "public/data/audio/dummy/dummy_174_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_175",
-      "cardType": "flippable",
-      "sideA": "Bounce reinicia un solo servicio.",
-      "sideB": [
-        {
-          "text": "Bounce restarts a single service.",
-          "audioSrc": "public/data/audio/dummy/dummy_175_sideB_0.mp3"
-        },
-        {
-          "text": "A bounce restarts just one service.",
-          "audioSrc": "public/data/audio/dummy/dummy_175_sideB_1.mp3"
-        },
-        {
-          "text": "Bouncing restarts only one service.",
-          "audioSrc": "public/data/audio/dummy/dummy_175_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_176",
-      "cardType": "flippable",
-      "sideA": "Reboot reinicia el servidor entero.",
-      "sideB": [
-        {
-          "text": "Reboot restarts the entire server.",
-          "audioSrc": "public/data/audio/dummy/dummy_176_sideB_0.mp3"
-        },
-        {
-          "text": "A reboot restarts the whole server.",
-          "audioSrc": "public/data/audio/dummy/dummy_176_sideB_1.mp3"
-        },
-        {
-          "text": "Rebooting restarts the server completely.",
-          "audioSrc": "public/data/audio/dummy/dummy_176_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
       "cardId": "dummy_177",
       "cardType": "flippable",
       "sideA": "Bounce es rápido; reboot limpia todo.",
@@ -848,26 +240,6 @@
         {
           "text": "Bouncing is fast, while rebooting clears everything.",
           "audioSrc": "public/data/audio/dummy/dummy_177_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_178",
-      "cardType": "flippable",
-      "sideA": "Restart reinicia una aplicación o stack completo.",
-      "sideB": [
-        {
-          "text": "Restart restarts a full application or stack.",
-          "audioSrc": "public/data/audio/dummy/dummy_178_sideB_0.mp3"
-        },
-        {
-          "text": "A restart brings back a whole application or stack.",
-          "audioSrc": "public/data/audio/dummy/dummy_178_sideB_1.mp3"
-        },
-        {
-          "text": "Restarting applies to an entire application or stack.",
-          "audioSrc": "public/data/audio/dummy/dummy_178_sideB_2.mp3"
         }
       ],
       "note": null
@@ -893,106 +265,6 @@
       "note": "~Restart is the generic verb in any case~ changes the meaning, because [in any case] is a fixed expression that means [anyway] or [regardless of what happens]. To say which situations the verb covers, the preposition has to be [for]: [the generic verb for any case], [the general term for every case]."
     },
     {
-      "cardId": "dummy_180",
-      "cardType": "flippable",
-      "sideA": "Reboot y Bounce son como Restart, pero más especializados.",
-      "sideB": [
-        {
-          "text": "Reboot and Bounce are like Restart, but more specialized.",
-          "audioSrc": "public/data/audio/dummy/dummy_180_sideB_0.mp3"
-        },
-        {
-          "text": "Reboot and Bounce work like Restart, only more specific.",
-          "audioSrc": "public/data/audio/dummy/dummy_180_sideB_1.mp3"
-        },
-        {
-          "text": "Reboot and Bounce are specialized versions of Restart.",
-          "audioSrc": "public/data/audio/dummy/dummy_180_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_181",
-      "cardType": "flippable",
-      "sideA": "Revisa la línea 374, ¿qué dice?",
-      "sideB": [
-        {
-          "text": "Check line 374, what does it say?",
-          "audioSrc": "public/data/audio/dummy/dummy_181_sideB_0.mp3"
-        },
-        {
-          "text": "Take a look at line 374, what does it say?",
-          "audioSrc": "public/data/audio/dummy/dummy_181_sideB_1.mp3"
-        },
-        {
-          "text": "Go to line 374 and tell me what it says.",
-          "audioSrc": "public/data/audio/dummy/dummy_181_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_182",
-      "cardType": "flippable",
-      "sideA": "Revisa la línea 287, pégamela en el chat.",
-      "sideB": [
-        {
-          "text": "Check line 287 and paste it in the chat for me.",
-          "audioSrc": "public/data/audio/dummy/dummy_182_sideB_0.mp3"
-        },
-        {
-          "text": "Look at line 287 and paste it into the chat.",
-          "audioSrc": "public/data/audio/dummy/dummy_182_sideB_1.mp3"
-        },
-        {
-          "text": "Go to line 287 and drop it in the chat.",
-          "audioSrc": "public/data/audio/dummy/dummy_182_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_183",
-      "cardType": "flippable",
-      "sideA": "Estoy buscando la línea 653, te la pegaré en el chat.",
-      "sideB": [
-        {
-          "text": "I'm looking for line 653, I'll paste it in the chat for you.",
-          "audioSrc": "public/data/audio/dummy/dummy_183_sideB_0.mp3"
-        },
-        {
-          "text": "I'm searching for line 653, I'll drop it in the chat.",
-          "audioSrc": "public/data/audio/dummy/dummy_183_sideB_1.mp3"
-        },
-        {
-          "text": "I'm trying to find line 653, I'll paste it into the chat.",
-          "audioSrc": "public/data/audio/dummy/dummy_183_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_184",
-      "cardType": "flippable",
-      "sideA": "Ok, vuelve a los mensajes de errores y espera un momento ahí.",
-      "sideB": [
-        {
-          "text": "Ok, go back to the error messages and hold on there for a moment.",
-          "audioSrc": "public/data/audio/dummy/dummy_184_sideB_0.mp3"
-        },
-        {
-          "text": "Ok, scroll back to the error messages and stay there for a second.",
-          "audioSrc": "public/data/audio/dummy/dummy_184_sideB_1.mp3"
-        },
-        {
-          "text": "Ok, go back to the error messages and wait there a moment.",
-          "audioSrc": "public/data/audio/dummy/dummy_184_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
       "cardId": "dummy_185",
       "cardType": "flippable",
       "sideA": "Click derecho en el archivo e inspecciónalo.",
@@ -1008,86 +280,6 @@
         {
           "text": "Do a right click on the file and take a look at it.",
           "audioSrc": "public/data/audio/dummy/dummy_185_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_186",
-      "cardType": "flippable",
-      "sideA": "Copia el comentario, la primera línea, y pégalo en el otro archivo.",
-      "sideB": [
-        {
-          "text": "Copy the comment, the first line, and paste it into the other file.",
-          "audioSrc": "public/data/audio/dummy/dummy_186_sideB_0.mp3"
-        },
-        {
-          "text": "Copy the comment on the first line and paste it in the other file.",
-          "audioSrc": "public/data/audio/dummy/dummy_186_sideB_1.mp3"
-        },
-        {
-          "text": "Grab the comment, the first line, and paste it into the other file.",
-          "audioSrc": "public/data/audio/dummy/dummy_186_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_187",
-      "cardType": "flippable",
-      "sideA": "Ellos son sutilmente diferentes.",
-      "sideB": [
-        {
-          "text": "They are subtly different.",
-          "audioSrc": "public/data/audio/dummy/dummy_187_sideB_0.mp3"
-        },
-        {
-          "text": "They are slightly different.",
-          "audioSrc": "public/data/audio/dummy/dummy_187_sideB_1.mp3"
-        },
-        {
-          "text": "There is a subtle difference between them.",
-          "audioSrc": "public/data/audio/dummy/dummy_187_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_188",
-      "cardType": "flippable",
-      "sideA": "No tengo toda la información.",
-      "sideB": [
-        {
-          "text": "I don't have the whole picture.",
-          "audioSrc": "public/data/audio/dummy/dummy_188_sideB_0.mp3"
-        },
-        {
-          "text": "I don't have all the information.",
-          "audioSrc": "public/data/audio/dummy/dummy_188_sideB_1.mp3"
-        },
-        {
-          "text": "I'm missing part of the picture.",
-          "audioSrc": "public/data/audio/dummy/dummy_188_sideB_2.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_189",
-      "cardType": "flippable",
-      "sideA": "Lo que está por enviarse.",
-      "sideB": [
-        {
-          "text": "What is about to be sent.",
-          "audioSrc": "public/data/audio/dummy/dummy_189_sideB_0.mp3"
-        },
-        {
-          "text": "The thing that is about to be sent.",
-          "audioSrc": "public/data/audio/dummy/dummy_189_sideB_1.mp3"
-        },
-        {
-          "text": "Whatever is about to be sent.",
-          "audioSrc": "public/data/audio/dummy/dummy_189_sideB_2.mp3"
         }
       ],
       "note": null
@@ -1197,46 +389,6 @@
       "note": "**[er:162]**\n\n[I didn't get anything, maybe John did] moves the pair to the past simple, and the ellipsis follows with [did] instead of [has]. Both work; the present perfect keeps the focus on the current situation, the past simple points at a closed moment."
     },
     {
-      "cardId": "dummy_195",
-      "cardType": "flippable",
-      "sideA": "No recibí nada, quizás John sí.",
-      "sideB": [
-        {
-          "text": "I didn't receive anything, maybe John did.",
-          "audioSrc": "public/data/audio/dummy/dummy_195_sideB_0.mp3"
-        },
-        {
-          "text": "I didn't get anything, maybe John did.",
-          "audioSrc": "public/data/audio/dummy/dummy_195_sideB_1.mp3"
-        },
-        {
-          "text": "Nothing came to me, maybe John got it.",
-          "audioSrc": "public/data/audio/dummy/dummy_195_sideB_2.mp3"
-        }
-      ],
-      "note": "**[er:162]**"
-    },
-    {
-      "cardId": "dummy_196",
-      "cardType": "flippable",
-      "sideA": "Él lo recibió, yo no.",
-      "sideB": [
-        {
-          "text": "He received it, I didn't.",
-          "audioSrc": "public/data/audio/dummy/dummy_196_sideB_0.mp3"
-        },
-        {
-          "text": "He got it, I didn't.",
-          "audioSrc": "public/data/audio/dummy/dummy_196_sideB_1.mp3"
-        },
-        {
-          "text": "He received it, but I didn't.",
-          "audioSrc": "public/data/audio/dummy/dummy_196_sideB_2.mp3"
-        }
-      ],
-      "note": "**[er:162]**"
-    },
-    {
       "cardId": "dummy_197",
       "cardType": "flippable",
       "sideA": "Ella lo ha recibido, yo no.",
@@ -1261,54 +413,6 @@
       "note": "**[er:162]**\n\n[She's received it, I haven't] is the normal spoken version. Here [she's] is the contraction of [she has], not of [she is]; the past participle after it is what tells you which one it is.\n\n~She've received it, I haven't~ is impossible because [have] never goes with a third person singular subject. The pair is [she has] / [she's], while [I've], [we've] and [they've] keep [have]."
     },
     {
-      "cardId": "dummy_198",
-      "cardType": "flippable",
-      "sideA": "No me dijeron que el precio iba a cambiar.",
-      "sideB": [
-        {
-          "text": "I wasn't told the price would change.",
-          "audioSrc": "public/data/audio/dummy/dummy_198_sideB_0.mp3"
-        },
-        {
-          "text": "Nobody told me the price was going to change.",
-          "audioSrc": "public/data/audio/dummy/dummy_198_sideB_1.mp3"
-        },
-        {
-          "text": "They didn't tell me the price would change.",
-          "audioSrc": "public/data/audio/dummy/dummy_198_sideB_2.mp3"
-        },
-        {
-          "text": "I wasn't told that the price was about to change.",
-          "audioSrc": "public/data/audio/dummy/dummy_198_sideB_3.mp3"
-        }
-      ],
-      "note": "[Was about to change] presents the change as imminent, on the point of happening. [Would change] and [was going to change] only place it somewhere in the future without that urgency."
-    },
-    {
-      "cardId": "dummy_199",
-      "cardType": "flippable",
-      "sideA": "No me avisaron de la reunión.",
-      "sideB": [
-        {
-          "text": "I wasn't told about the meeting.",
-          "audioSrc": "public/data/audio/dummy/dummy_199_sideB_0.mp3"
-        },
-        {
-          "text": "Nobody told me about the meeting.",
-          "audioSrc": "public/data/audio/dummy/dummy_199_sideB_1.mp3"
-        },
-        {
-          "text": "I wasn't informed about the meeting.",
-          "audioSrc": "public/data/audio/dummy/dummy_199_sideB_2.mp3"
-        },
-        {
-          "text": "They didn't tell me about the meeting.",
-          "audioSrc": "public/data/audio/dummy/dummy_199_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
       "cardId": "dummy_200",
       "cardType": "flippable",
       "sideA": "No me dijeron que cambiara la forma de hacer las cosas.",
@@ -1328,30 +432,6 @@
         {
           "text": "They didn't tell me to change the way I do things.",
           "audioSrc": "public/data/audio/dummy/dummy_200_sideB_3.mp3"
-        }
-      ],
-      "note": null
-    },
-    {
-      "cardId": "dummy_201",
-      "cardType": "flippable",
-      "sideA": "Solo necesito un resumen rápido, para entrar en corriente.",
-      "sideB": [
-        {
-          "text": "I just need a quick recap to catch me up.",
-          "audioSrc": "public/data/audio/dummy/dummy_201_sideB_0.mp3"
-        },
-        {
-          "text": "Just give me a quick rundown to bring me up to speed.",
-          "audioSrc": "public/data/audio/dummy/dummy_201_sideB_1.mp3"
-        },
-        {
-          "text": "I just need the cliff notes to get up to date.",
-          "audioSrc": "public/data/audio/dummy/dummy_201_sideB_2.mp3"
-        },
-        {
-          "text": "I just need a quick summary.",
-          "audioSrc": "public/data/audio/dummy/dummy_201_sideB_3.mp3"
         }
       ],
       "note": null
@@ -1399,26 +479,6 @@
         }
       ],
       "note": "**[er:232]**\n\n~The server on the database runs crashed~ leaves [on] hanging with no object, and it also makes it sound as if the database were sitting on top of something. The fronted form requires the pronoun: [on which].\n\nNote that ~on that~ is banned: [that] can never follow a preposition directly. If you want [that], strand the preposition at the end, as in [the server that the database runs on].\n\n~The server on which the database runs on crashed~ uses [on] twice. The preposition has exactly one position per clause, at the front with [which] or at the end: [the server on which the database runs] or [the server the database runs on]."
-    },
-    {
-      "cardId": "dummy_204",
-      "cardType": "flippable",
-      "sideA": "El tema sobre el cual hablamos fue aburrido.",
-      "sideB": [
-        {
-          "text": "The topic about which we spoke was boring.",
-          "audioSrc": "public/data/audio/dummy/dummy_204_sideB_0.mp3"
-        },
-        {
-          "text": "The topic that we spoke about was boring.",
-          "audioSrc": "public/data/audio/dummy/dummy_204_sideB_1.mp3"
-        },
-        {
-          "text": "The topic we talked about was boring.",
-          "audioSrc": "public/data/audio/dummy/dummy_204_sideB_2.mp3"
-        }
-      ],
-      "note": "**[er:232]**\n\n~The topic about we spoke was boring~ is wrong because [about] needs an object right after it, and [we] is the subject of the clause that follows, not that object. The pronoun has to be there: [about which we spoke].\n\nThe fronted version sounds formal or written. In conversation you would move the preposition to the end: [the topic we talked about].\n\n~The topic about that we spoke was boring~ fails for a different reason: [that] can never follow a preposition. Once the preposition is fronted, the only pronouns allowed are [which] for things and [whom] for people. [That] is possible only when the preposition stays at the end: [the topic that we spoke about]."
     },
     {
       "cardId": "dummy_205",
@@ -1489,24 +549,624 @@
       "note": "**[er:232]**\n\n~The rules under the app operates are strict~ leaves [under] with nothing to govern. The object of the preposition must be present: [under which the app operates].\n\nThis pattern is very common in technical and legal writing, where you will see [under which], [by which], [through which] and [within which] introducing the conditions of a system."
     },
     {
-      "cardId": "dummy_208",
+      "cardId": "dummy_209",
       "cardType": "flippable",
-      "sideA": "La herramienta con la cual lo arregló fue una llave inglesa.",
+      "sideA": "La fecha límite es para abril del 2027.",
       "sideB": [
         {
-          "text": "The tool with which he fixed it was a wrench.",
-          "audioSrc": "public/data/audio/dummy/dummy_208_sideB_0.mp3"
+          "text": "The deadline is in April 2027.",
+          "audioSrc": "public/data/audio/dummy/dummy_209_sideB_0.mp3"
         },
         {
-          "text": "The tool that he fixed it with was a wrench.",
-          "audioSrc": "public/data/audio/dummy/dummy_208_sideB_1.mp3"
+          "text": "The deadline is set for April 2027.",
+          "audioSrc": "public/data/audio/dummy/dummy_209_sideB_1.mp3"
         },
         {
-          "text": "The tool he fixed it with was a wrench.",
-          "audioSrc": "public/data/audio/dummy/dummy_208_sideB_2.mp3"
+          "text": "The due date is April 2027.",
+          "audioSrc": "public/data/audio/dummy/dummy_209_sideB_2.mp3"
         }
       ],
-      "note": "**[er:232]**\n\n~The tool with he fixed it was a wrench~ is broken because [with] is looking for its object and finds the subject [he] instead. You need [with which he fixed it].\n\nIn speech the natural choice is almost always the stranded version: [the tool he fixed it with]. Save the fronted form for documentation and formal reports."
+      "note": null
+    },
+    {
+      "cardId": "dummy_210",
+      "cardType": "flippable",
+      "sideA": "Estamos adelantando trabajo.",
+      "sideB": [
+        {
+          "text": "We are getting ahead on our work.",
+          "audioSrc": "public/data/audio/dummy/dummy_210_sideB_0.mp3"
+        },
+        {
+          "text": "We are getting ahead of schedule.",
+          "audioSrc": "public/data/audio/dummy/dummy_210_sideB_1.mp3"
+        },
+        {
+          "text": "We are working ahead.",
+          "audioSrc": "public/data/audio/dummy/dummy_210_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_211",
+      "cardType": "flippable",
+      "sideA": "El último iPhone es el 17 Pro, y el último iOS es el 26.",
+      "sideB": [
+        {
+          "text": "The latest iPhone is the 17 Pro, and the latest iOS is 26.",
+          "audioSrc": "public/data/audio/dummy/dummy_211_sideB_0.mp3"
+        },
+        {
+          "text": "The newest iPhone is the 17 Pro, and the newest iOS is 26.",
+          "audioSrc": "public/data/audio/dummy/dummy_211_sideB_1.mp3"
+        },
+        {
+          "text": "The most recent iPhone is the 17 Pro, and the most recent iOS is 26.",
+          "audioSrc": "public/data/audio/dummy/dummy_211_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_212",
+      "cardType": "flippable",
+      "sideA": "El último iOS es el 26 y el último iPhone es el 17 Pro.",
+      "sideB": [
+        {
+          "text": "The latest iOS is 26 and the latest iPhone is the 17 Pro.",
+          "audioSrc": "public/data/audio/dummy/dummy_212_sideB_0.mp3"
+        },
+        {
+          "text": "The newest iOS is 26 and the newest iPhone is the 17 Pro.",
+          "audioSrc": "public/data/audio/dummy/dummy_212_sideB_1.mp3"
+        },
+        {
+          "text": "The current iOS is 26 and the current iPhone is the 17 Pro.",
+          "audioSrc": "public/data/audio/dummy/dummy_212_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_213",
+      "cardType": "flippable",
+      "sideA": "La última versión de Android es la 17, y la última Android API es la 37.",
+      "sideB": [
+        {
+          "text": "The latest Android version is 17, and the latest Android API is 37.",
+          "audioSrc": "public/data/audio/dummy/dummy_213_sideB_0.mp3"
+        },
+        {
+          "text": "The newest Android version is 17, and the newest Android API is 37.",
+          "audioSrc": "public/data/audio/dummy/dummy_213_sideB_1.mp3"
+        },
+        {
+          "text": "The current Android version is 17, and the current Android API level is 37.",
+          "audioSrc": "public/data/audio/dummy/dummy_213_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_214",
+      "cardType": "flippable",
+      "sideA": "No ha sido nunca un problema.",
+      "sideB": [
+        {
+          "text": "It's never been an issue.",
+          "audioSrc": "public/data/audio/dummy/dummy_214_sideB_0.mp3"
+        },
+        {
+          "text": "It has never been a problem.",
+          "audioSrc": "public/data/audio/dummy/dummy_214_sideB_1.mp3"
+        },
+        {
+          "text": "It was never an issue.",
+          "audioSrc": "public/data/audio/dummy/dummy_214_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_215",
+      "cardType": "flippable",
+      "sideA": "Eso nunca ha sido un problema.",
+      "sideB": [
+        {
+          "text": "That has never been an issue.",
+          "audioSrc": "public/data/audio/dummy/dummy_215_sideB_0.mp3"
+        },
+        {
+          "text": "That's never been a problem.",
+          "audioSrc": "public/data/audio/dummy/dummy_215_sideB_1.mp3"
+        },
+        {
+          "text": "That was never an issue.",
+          "audioSrc": "public/data/audio/dummy/dummy_215_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_216",
+      "cardType": "flippable",
+      "sideA": "Ahora que eso está saldado/aclarado.",
+      "sideB": [
+        {
+          "text": "Now that that's settled.",
+          "audioSrc": "public/data/audio/dummy/dummy_216_sideB_0.mp3"
+        },
+        {
+          "text": "Now that that's sorted out.",
+          "audioSrc": "public/data/audio/dummy/dummy_216_sideB_1.mp3"
+        },
+        {
+          "text": "Now that we have cleared that up.",
+          "audioSrc": "public/data/audio/dummy/dummy_216_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_217",
+      "cardType": "flippable",
+      "sideA": "En ese caso el sistema operativo delega el trabajo a Flutter.",
+      "sideB": [
+        {
+          "text": "In that case, the operating system delegates the work to Flutter.",
+          "audioSrc": "public/data/audio/dummy/dummy_217_sideB_0.mp3"
+        },
+        {
+          "text": "In that case, the operating system hands the work off to Flutter.",
+          "audioSrc": "public/data/audio/dummy/dummy_217_sideB_1.mp3"
+        },
+        {
+          "text": "In that case, the operating system passes the work to Flutter.",
+          "audioSrc": "public/data/audio/dummy/dummy_217_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_218",
+      "cardType": "flippable",
+      "sideA": "En esos casos, delegamos el trabajo.",
+      "sideB": [
+        {
+          "text": "In those cases, we delegate the work.",
+          "audioSrc": "public/data/audio/dummy/dummy_218_sideB_0.mp3"
+        },
+        {
+          "text": "In those cases, we hand off the work.",
+          "audioSrc": "public/data/audio/dummy/dummy_218_sideB_1.mp3"
+        },
+        {
+          "text": "In those cases, we pass the work along.",
+          "audioSrc": "public/data/audio/dummy/dummy_218_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_219",
+      "cardType": "flippable",
+      "sideA": "Un botón huérfano consume memoria pero no se ve en pantalla.",
+      "sideB": [
+        {
+          "text": "An orphan button uses memory but isn't visible on screen.",
+          "audioSrc": "public/data/audio/dummy/dummy_219_sideB_0.mp3"
+        },
+        {
+          "text": "An orphan button consumes memory but doesn't show up on screen.",
+          "audioSrc": "public/data/audio/dummy/dummy_219_sideB_1.mp3"
+        },
+        {
+          "text": "An orphaned button takes up memory but can't be seen on screen.",
+          "audioSrc": "public/data/audio/dummy/dummy_219_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_220",
+      "cardType": "flippable",
+      "sideA": "Hay datos huérfanos guardados que ya nadie puede ver.",
+      "sideB": [
+        {
+          "text": "There's orphaned data saved that nobody can see.",
+          "audioSrc": "public/data/audio/dummy/dummy_220_sideB_0.mp3"
+        },
+        {
+          "text": "There is orphaned data stored that no one can see anymore.",
+          "audioSrc": "public/data/audio/dummy/dummy_220_sideB_1.mp3"
+        },
+        {
+          "text": "Some orphaned data is still saved and nobody can see it.",
+          "audioSrc": "public/data/audio/dummy/dummy_220_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_221",
+      "cardType": "flippable",
+      "sideA": "Un proceso huérfano sigue corriendo en segundo plano sin mostrarse.",
+      "sideB": [
+        {
+          "text": "An orphan process keeps running in the background unseen.",
+          "audioSrc": "public/data/audio/dummy/dummy_221_sideB_0.mp3"
+        },
+        {
+          "text": "An orphaned process keeps running in the background without showing up.",
+          "audioSrc": "public/data/audio/dummy/dummy_221_sideB_1.mp3"
+        },
+        {
+          "text": "An orphan process is still running in the background where you can't see it.",
+          "audioSrc": "public/data/audio/dummy/dummy_221_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_222",
+      "cardType": "flippable",
+      "sideA": "Un archivo en exclude, deja de ser visible en git en todas las ramas.",
+      "sideB": [
+        {
+          "text": "A file in exclude stops being visible in git across all branches.",
+          "audioSrc": "public/data/audio/dummy/dummy_222_sideB_0.mp3"
+        },
+        {
+          "text": "A file listed in exclude is no longer visible in git on any branch.",
+          "audioSrc": "public/data/audio/dummy/dummy_222_sideB_1.mp3"
+        },
+        {
+          "text": "Once a file is in exclude, git stops showing it on every branch.",
+          "audioSrc": "public/data/audio/dummy/dummy_222_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_223",
+      "cardType": "flippable",
+      "sideA": "Un archivo en gitignore, al cambiarse de rama, podría ser visible nuevamente en git.",
+      "sideB": [
+        {
+          "text": "A file in gitignore, upon switching branches, could become visible again in git.",
+          "audioSrc": "public/data/audio/dummy/dummy_223_sideB_0.mp3"
+        },
+        {
+          "text": "A file in gitignore can show up in git again when you switch branches.",
+          "audioSrc": "public/data/audio/dummy/dummy_223_sideB_1.mp3"
+        },
+        {
+          "text": "When you switch branches, a file in gitignore might become visible in git again.",
+          "audioSrc": "public/data/audio/dummy/dummy_223_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_224",
+      "cardType": "flippable",
+      "sideA": "Un archivo creado en la rama A y solo agregado con git add, sigue visible al pasar a la rama B.",
+      "sideB": [
+        {
+          "text": "A file created in branch A and only staged with git add remains visible when switching to branch B.",
+          "audioSrc": "public/data/audio/dummy/dummy_224_sideB_0.mp3"
+        },
+        {
+          "text": "A file created on branch A and only staged with git add is still there when you move to branch B.",
+          "audioSrc": "public/data/audio/dummy/dummy_224_sideB_1.mp3"
+        },
+        {
+          "text": "If you create a file on branch A and only stage it with git add, it stays visible on branch B.",
+          "audioSrc": "public/data/audio/dummy/dummy_224_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_225",
+      "cardType": "flippable",
+      "sideA": "Un archivo creado en la rama A y ya commiteado, deja de ser visible al pasar a la rama B.",
+      "sideB": [
+        {
+          "text": "A file created in branch A and already committed stops being visible when switching to branch B.",
+          "audioSrc": "public/data/audio/dummy/dummy_225_sideB_0.mp3"
+        },
+        {
+          "text": "A file created on branch A and already committed disappears when you move to branch B.",
+          "audioSrc": "public/data/audio/dummy/dummy_225_sideB_1.mp3"
+        },
+        {
+          "text": "If you create a file on branch A and commit it, it is no longer visible on branch B.",
+          "audioSrc": "public/data/audio/dummy/dummy_225_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_226",
+      "cardType": "flippable",
+      "sideA": "Un archivo sin git add, sin gitignore y sin exclude, es visible en cualquier rama a la que te muevas.",
+      "sideB": [
+        {
+          "text": "A file without git add, gitignore, or exclude is visible in any branch you switch to.",
+          "audioSrc": "public/data/audio/dummy/dummy_226_sideB_0.mp3"
+        },
+        {
+          "text": "A file that is not staged, not in gitignore and not in exclude shows up on every branch you move to.",
+          "audioSrc": "public/data/audio/dummy/dummy_226_sideB_1.mp3"
+        },
+        {
+          "text": "If a file has no git add, no gitignore and no exclude, you will see it on any branch.",
+          "audioSrc": "public/data/audio/dummy/dummy_226_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_227",
+      "cardType": "flippable",
+      "sideA": "El gitignore vive dentro de cada commit, por eso su efecto cambia según la rama.",
+      "sideB": [
+        {
+          "text": "The gitignore file lives inside each commit, which is why its effect changes depending on the branch.",
+          "audioSrc": "public/data/audio/dummy/dummy_227_sideB_0.mp3"
+        },
+        {
+          "text": "The gitignore file lives inside every commit, so its effect changes from branch to branch.",
+          "audioSrc": "public/data/audio/dummy/dummy_227_sideB_1.mp3"
+        },
+        {
+          "text": "Because gitignore is stored in each commit, what it hides depends on the branch.",
+          "audioSrc": "public/data/audio/dummy/dummy_227_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_228",
+      "cardType": "flippable",
+      "sideA": "El git exclude vive en tu máquina, por eso su efecto cubre a todas las ramas.",
+      "sideB": [
+        {
+          "text": "The git exclude file lives on your local machine, which is why its effect applies to all branches.",
+          "audioSrc": "public/data/audio/dummy/dummy_228_sideB_0.mp3"
+        },
+        {
+          "text": "The git exclude file lives on your own machine, so its effect covers every branch.",
+          "audioSrc": "public/data/audio/dummy/dummy_228_sideB_1.mp3"
+        },
+        {
+          "text": "Because git exclude is stored locally, it hides the file on all branches.",
+          "audioSrc": "public/data/audio/dummy/dummy_228_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_229",
+      "cardType": "flippable",
+      "sideA": "No puedo hacerlo hoy, pero sí pasado mañana.",
+      "sideB": [
+        {
+          "text": "I can't do it today, but I can the day after tomorrow.",
+          "audioSrc": "public/data/audio/dummy/dummy_229_sideB_0.mp3"
+        },
+        {
+          "text": "I can't do it today, but I can do it the day after tomorrow.",
+          "audioSrc": "public/data/audio/dummy/dummy_229_sideB_1.mp3"
+        },
+        {
+          "text": "Today doesn't work for me, but the day after tomorrow does.",
+          "audioSrc": "public/data/audio/dummy/dummy_229_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_230",
+      "cardType": "flippable",
+      "sideA": "No puedo hacerlo mañana, pero sí hoy mismo.",
+      "sideB": [
+        {
+          "text": "I can't do it tomorrow, but I can do it today.",
+          "audioSrc": "public/data/audio/dummy/dummy_230_sideB_0.mp3"
+        },
+        {
+          "text": "I can't do it tomorrow, but I can get it done today.",
+          "audioSrc": "public/data/audio/dummy/dummy_230_sideB_1.mp3"
+        },
+        {
+          "text": "Tomorrow doesn't work for me, but today does.",
+          "audioSrc": "public/data/audio/dummy/dummy_230_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_231",
+      "cardType": "flippable",
+      "sideA": "Esta función flecha comprueba si el usuario está autenticado en la aplicación.",
+      "sideB": [
+        {
+          "text": "This arrow function checks if the user is authenticated in the app.",
+          "audioSrc": "public/data/audio/dummy/dummy_231_sideB_0.mp3"
+        },
+        {
+          "text": "This arrow function checks whether the user is logged in to the app.",
+          "audioSrc": "public/data/audio/dummy/dummy_231_sideB_1.mp3"
+        },
+        {
+          "text": "This arrow function verifies that the user is authenticated in the application.",
+          "audioSrc": "public/data/audio/dummy/dummy_231_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_232",
+      "cardType": "flippable",
+      "sideA": "Esta función flecha obtiene la clave de notificaciones para el usuario actual.",
+      "sideB": [
+        {
+          "text": "This arrow function gets the notification key for the current user.",
+          "audioSrc": "public/data/audio/dummy/dummy_232_sideB_0.mp3"
+        },
+        {
+          "text": "This arrow function retrieves the notification key for the current user.",
+          "audioSrc": "public/data/audio/dummy/dummy_232_sideB_1.mp3"
+        },
+        {
+          "text": "This arrow function returns the notification key belonging to the current user.",
+          "audioSrc": "public/data/audio/dummy/dummy_232_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_233",
+      "cardType": "flippable",
+      "sideA": "Esta función flecha retorna un valor booleano según la condición del estado.",
+      "sideB": [
+        {
+          "text": "This arrow function returns a boolean value based on the state condition.",
+          "audioSrc": "public/data/audio/dummy/dummy_233_sideB_0.mp3"
+        },
+        {
+          "text": "This arrow function returns a boolean depending on the condition of the state.",
+          "audioSrc": "public/data/audio/dummy/dummy_233_sideB_1.mp3"
+        },
+        {
+          "text": "This arrow function gives back a boolean value according to the state condition.",
+          "audioSrc": "public/data/audio/dummy/dummy_233_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_234",
+      "cardType": "flippable",
+      "sideA": "¿Eso es factible?",
+      "sideB": [
+        {
+          "text": "Is that doable?",
+          "audioSrc": "public/data/audio/dummy/dummy_234_sideB_0.mp3"
+        },
+        {
+          "text": "Is that feasible?",
+          "audioSrc": "public/data/audio/dummy/dummy_234_sideB_1.mp3"
+        },
+        {
+          "text": "Can we actually do that?",
+          "audioSrc": "public/data/audio/dummy/dummy_234_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_235",
+      "cardType": "flippable",
+      "sideA": "¿Es realizable?",
+      "sideB": [
+        {
+          "text": "Is that doable?",
+          "audioSrc": "public/data/audio/dummy/dummy_235_sideB_0.mp3"
+        },
+        {
+          "text": "Is it achievable?",
+          "audioSrc": "public/data/audio/dummy/dummy_235_sideB_1.mp3"
+        },
+        {
+          "text": "Can it be done?",
+          "audioSrc": "public/data/audio/dummy/dummy_235_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_236",
+      "cardType": "flippable",
+      "sideA": "Así el usuario puede ver de inmediato que hicimos algo.",
+      "sideB": [
+        {
+          "text": "So the user can see right away that we did something.",
+          "audioSrc": "public/data/audio/dummy/dummy_236_sideB_0.mp3"
+        },
+        {
+          "text": "So the user receives instant feedback on their action.",
+          "audioSrc": "public/data/audio/dummy/dummy_236_sideB_1.mp3"
+        },
+        {
+          "text": "That way the user immediately sees that something happened.",
+          "audioSrc": "public/data/audio/dummy/dummy_236_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_237",
+      "cardType": "flippable",
+      "sideA": "Estudié ingeniería agrícola, o sea, soy ingeniero agrícola.",
+      "sideB": [
+        {
+          "text": "I studied agricultural engineering, so I'm an agricultural engineer.",
+          "audioSrc": "public/data/audio/dummy/dummy_237_sideB_0.mp3"
+        },
+        {
+          "text": "I studied agricultural engineering, which means I'm an agricultural engineer.",
+          "audioSrc": "public/data/audio/dummy/dummy_237_sideB_1.mp3"
+        },
+        {
+          "text": "I majored in agricultural engineering, so that makes me an agricultural engineer.",
+          "audioSrc": "public/data/audio/dummy/dummy_237_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_238",
+      "cardType": "flippable",
+      "sideA": "Soy ingeniero agrícola, me titulé en Duoc UC.",
+      "sideB": [
+        {
+          "text": "I'm an agricultural engineer, I got my degree at Duoc UC.",
+          "audioSrc": "public/data/audio/dummy/dummy_238_sideB_0.mp3"
+        },
+        {
+          "text": "I'm an agricultural engineer and I graduated from Duoc UC.",
+          "audioSrc": "public/data/audio/dummy/dummy_238_sideB_1.mp3"
+        },
+        {
+          "text": "I'm an agricultural engineer, and I earned my degree at Duoc UC.",
+          "audioSrc": "public/data/audio/dummy/dummy_238_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "dummy_239",
+      "cardType": "flippable",
+      "sideA": "Estudié en Duoc UC. Me titulé como ingeniero agrícola.",
+      "sideB": [
+        {
+          "text": "I studied at Duoc UC. I graduated as an agricultural engineer.",
+          "audioSrc": "public/data/audio/dummy/dummy_239_sideB_0.mp3"
+        },
+        {
+          "text": "I studied at Duoc UC, where I got my degree as an agricultural engineer.",
+          "audioSrc": "public/data/audio/dummy/dummy_239_sideB_1.mp3"
+        },
+        {
+          "text": "I went to Duoc UC and graduated as an agricultural engineer.",
+          "audioSrc": "public/data/audio/dummy/dummy_239_sideB_2.mp3"
+        }
+      ],
+      "note": null
     }
   ]
 }

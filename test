@@ -1,68 +1,74 @@
-¿Similar a lo que se hizo antes ?
-Sí, similar a lo que se hizo antes.
-Sí, es similar. Pero hay algunas diferencias importantes.
-"El arroyo de agua genera vapor."
-"No uses paréntesis, usa corchetes"
-"encierralo con paréntesis o corchetes"
-“Acabo de enviartelo por chat."
-“Acabo de enviarlo por email."
-"Es solo una mejora estetica, no estamos tocando la logica realmente"
-"It's just a cosmetic improvement; we aren't really touching the logic."
-"Ya no deberias tener mas esos problemas."
-You shouldn't have those issues anymore.
-"Ya no deberias tener mas ese problema."
-You shouldn't have that issue anymore.
-"Bueno, tenemos esta funcion boleana, retorna true si hay alguna linea con 0 cantidad."
-"Well, we have this boolean function; it returns true if there's any line with zero quantity."
-"Tenemos esta funcion, retorna true si hay alguna linea con 0, o false si no lo hay."
-"We have this function that returns true if there's any line with a zero, or false if there isn't."
-"This function returns true if any line has zero, and false if not."
-"We have this function; it returns true if any line has zero, or false otherwise."
-"We've got this function; it returns true if at least one line is zero, or false otherwise."
-"Retorna true si encuentra el dato, o falso si no. "
-It returns true if it finds the data, or false if not.
-Returns true if the item is found, and false otherwise.
-"Si la funcion retorna false, se detiene ahi"
-"If the function returns false, it stops there." 
-"If the function returns false, it stops right there.”
-"If the function returns false, it exits there."
-"La importacion "gestures" sirve para detectar y manejar interacciones táctiles"
-The 'gestures' import is used to detect and handle touch interactions.
-"Es un paquete que permite abrir enlaces web"
-It's a package that allows you to open web links.
-"Pero con la ultima mejora, no deberias tener mas este problema"
-But with the latest update, you shouldn't have this issue anymore.
-"Ya no deberias tener mas este problema."
-You shouldn't have this issue anymore.
-"La nueva variable almacena temporalmente el mensaje de éxito retornado por el backend"
-"The new variable temporarily stores the success message returned by the backend."
-"La nueva variable almacena el nuevo mensaje retornado por el backend"
-The new variable stores the new message returned by the backend.
-"Es un operador ternario, si es verdadero asigna X, sino, null"
-"It's a ternary operator; if it's true, it assigns X, otherwise, null."
-"Es un operador ternario, si se cumple la condicion, asigna null, sino, X"
-"It's a ternary operator; if the condition is met, it assigns null, otherwise, X."
-"El archivo pubspec.lock registra las versiones exactas de las dependencias de la app"
-The pubspec.lock file records the exact versions of the app's dependencies.
-"pubspec.lock es generado automaticamente, sirve para emular y generar los binarios."
-pubspec.lock is automatically generated; it is used to emulate and generate the binaries.
-"Ahi estamos asignando el valor de 'B', y si es null, asignamos 0"
-"There we're assigning the value of 'B', and if it's null, we assign 0."
-"IBE significa Internet Business Engine, pero en la practica se le llama iStore"
-"IBE stands for Internet Business Engine, but in practice, it's called iStore."
-"Internet Business Engine o IBE, pero en la practica se le llama iStore"
-"Internet Business Engine or IBE, but in practice, it's called iStore."
-“Te hare saber una vez esten subidos los binarios.”
-"Un par de dias, podria ser menos"
-A couple of days, it could be less.
-"Puedo mostrarte de lo que estoy hablando"
-Un bug es un error en un programa.
-A bug is an error in a program.
+"La fecha limite es para el 2027 Abril"
+The deadline is in April 2027.
+"Estamos adelantando trabajo."
+We are getting ahead on our work.   
+We are getting ahead of schedule.
+"El ultimo iPhone es el 17 pro, y el ultimo iOS es 26"
+"The latest iPhone is the 17 Pro, and the latest iOS is 26"
 
-Un bug causa un comportamiento inesperado.
-A bug causes unexpected behavior.
 
-Un bug impide que el software funcione correctamente.
-A bug prevents the software from working correctly.
-"Porque es un requisito de Android. Cada año es lo mismo." Valid?
-"Porque es un requisito de iOs, cada año es lo mismo. "
+"El ultimo iOS es 26 y el ultimo iPhone es el 17 pro"
+"The latest iOS is 26 and the latest iPhone is the 17 Pro"
+"La última versión de Android es la 17, y la última Android API es la 37."
+"The latest Android version is 17, and the latest Android API is 37."
+"No ha sido nunca un problema"
+It's never been an issue
+"Eso nunca ha sido un problema."
+That has never been an issue
+"Ahora que eso está saldado/aclarado."
+"Now that that's settled”
+"En ese caso el sistema operativo delega el trabajo a flutter"
+In that case, the operating system delegates the work to Flutter   
+
+"En esos casos, delegamos el trabajo."
+In those cases, we delegate the work.
+Un botón huérfano consume memoria pero no se ve en pantalla.
+An orphan button uses memory but isn't visible on screen.
+
+Hay datos huérfanos guardados que ya nadie puede ver.
+There's orphaned data saved that nobody can see.
+
+Un proceso huérfano sigue corriendo en segundo plano sin mostrarse.
+An orphan process keeps running in the background unseen.
+Un archivo en exclude, deja de ser visible en git en todas las ramas.
+A file in exclude stops being visible in git across all branches.
+
+Un archivo en gitignore, al cambiarse de rama, podria ser visible nuevamente en git.
+A file in gitignore, upon switching branches, could become visible again in git.
+
+Un archivo creado en la rama A y solo agregado con git add, sigue visible al pasar a la rama B.
+A file created in branch A and only staged with git add remains visible when switching to branch B.
+
+Un archivo creado en la rama A y ya commiteado, deja de ser visible al pasar a la rama B.
+A file created in branch A and already committed stops being visible when switching to branch B.
+
+Un archivo sin git add, sin gitignore y sin exclude, es visible en cualquier rama a la que te muevas.
+A file without git add, gitignore, or exclude is visible in any branch you switch to.
+
+El gitignore vive dentro de cada commit, por eso su efecto cambia según la rama.
+The gitignore file lives inside each commit, which is why its effect changes depending on the branch.
+
+El git exclude vive en tu máquina, por eso su efecto cubre a todas las ramas.
+The git exclude file lives on your local machine, which is why its effect applies to all branches.
+"No puedo hacerlo hoy, pero sí pasado mañana. "
+"No puedo hacerlo mañana, pero sí hoy mismo."
+Esta función flecha comprueba si el usuario está autenticado en la aplicación.
+This arrow function checks if the user is authenticated in the app.
+
+
+Esta función flecha obtiene la clave de notificaciones para el usuario actual.
+This arrow function gets the notification key for the current user.
+
+
+Esta función flecha retorna un valor booleano según la condición del estado.
+This arrow function returns a boolean value based on the state condition.
+¿Eso es factible?
+Is that doable?
+¿Es realizable?
+Is that doable?
+Así el usuario puede ver de inmediato que hicimos algo.   
+"So the user can see right away that we did something."
+"So the user receives instant feedback on their action."
+"Estudie ingeniería agrícola, Osea, soy ingeniero agrícola".
+"Soy ingeniero agrícola, me titule en Duoc UC."
+"Estudié en Duoc UC. Me títule como ingeniero agrícola,".

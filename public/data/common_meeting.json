@@ -39459,6 +39459,966 @@
         }
       ],
       "note": null
+    },
+    {
+      "cardId": "mi_1748",
+      "cardType": "flippable",
+      "sideA": "compileSdkVersion indica la versión de Android con la que se compila la app.",
+      "sideB": [
+        {
+          "text": "compileSdkVersion sets the Android version used to compile the app.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1748_sideB_0.mp3"
+        },
+        {
+          "text": "compileSdkVersion indicates which Android version the app is compiled with.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1748_sideB_1.mp3"
+        },
+        {
+          "text": "compileSdkVersion defines the Android version that compiles the app.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1748_sideB_2.mp3"
+        },
+        {
+          "text": "compileSdkVersion defines the Android version against which the app is compiled.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1748_sideB_3.mp3"
+        }
+      ],
+      "note": "**[er:232]**\n\n~...sets the Android version is compiled the app~ lacks the proper sentence structure. It needs a relative clause and a preposition at the end, such as [the Android version the app is compiled with].\n\n~...against the app is compiled~ is missing the relative pronoun. You must use [against which the app is compiled].\n\n~...sets the Android version with the app gets compiled~ is missing a relative pronoun. You must say [with which the app gets compiled] or leave the preposition at the end: [the app gets compiled with].\n\n~...sets the Android version the app is compiled~ leaves the clause unfinished. 'Compile' needs its preposition, so the sentence has to close with it: [the Android version the app is compiled with].\n\n~...sets the Android version which the app is compiled~ adds the pronoun but still drops the preposition. Both options are valid: [which the app is compiled with] or [with which the app is compiled]."
+    },
+    {
+      "cardId": "mi_1749",
+      "cardType": "flippable",
+      "sideA": "El código elige el spinner según la plataforma en la que corre.",
+      "sideB": [
+        {
+          "text": "The code picks the spinner based on the platform it runs on.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1749_sideB_0.mp3"
+        },
+        {
+          "text": "The code chooses the spinner depending on the platform it is running on.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1749_sideB_1.mp3"
+        },
+        {
+          "text": "Which spinner is used depends on the platform the code runs on.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1749_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:232]**\n\n~...based on the platform it runs~ is incomplete. You must include the preposition [on] at the end to specify where it runs: [it runs on].\n\nIn this context, 'run on' is not a true phrasal verb. It is simply the verb [run] (to execute or operate) followed by the preposition [on] indicating the platform or surface. The core meaning of the verb does not change idiomatically as it would in a real phrasal verb like 'run out' or 'run into'."
+    },
+    {
+      "cardId": "mi_1750",
+      "cardType": "flippable",
+      "sideA": "Ese vacío heredado ya no ocurre; esta línea lo restaura.",
+      "sideB": [
+        {
+          "text": "That inherited blank state no longer happens; this line restores it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1750_sideB_0.mp3"
+        },
+        {
+          "text": "That inherited empty state does not happen anymore; this line resets it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1750_sideB_1.mp3"
+        },
+        {
+          "text": "The inherited blank value no longer occurs, because this line restores it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1750_sideB_2.mp3"
+        },
+        {
+          "text": "That inherited blank state is not happening anymore; this line restores it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1750_sideB_3.mp3"
+        }
+      ],
+      "note": "~That inherited gap no longer happens~ changes the meaning. In programming, 'vacío' refers to a [blank state] or [empty value], whereas 'gap' refers to physical or temporal space.\n\n~That inherited blank state is no longer happened~ puts an intransitive verb into the passive. 'Happen' never takes a passive form because nobody performs it on something else: [no longer happens] or [does not happen anymore].\n\n[Is not happening anymore] is valid because the verb stays active. The continuous points at the current situation, while [no longer happens] states the general fact."
+    },
+    {
+      "cardId": "mi_1751",
+      "cardType": "flippable",
+      "sideA": "Acabo de enviártelo por chat.",
+      "sideB": [
+        {
+          "text": "I just sent it to you on chat.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1751_sideB_0.mp3"
+        },
+        {
+          "text": "I just sent it to you over chat.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1751_sideB_1.mp3"
+        },
+        {
+          "text": "I have just sent it to you through chat.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1751_sideB_2.mp3"
+        }
+      ],
+      "note": "~I just sent it to you by chat~ is not idiomatic. [By] pairs with a closed set of channel nouns such as by email, by phone, by mail, or by fax. 'Chat' is not part of that set and takes [on chat], [over chat], [through chat], or [via chat]."
+    },
+    {
+      "cardId": "mi_1752",
+      "cardType": "flippable",
+      "sideA": "El archivo pubspec.lock registra las versiones exactas de las dependencias de la app.",
+      "sideB": [
+        {
+          "text": "The pubspec.lock file records the exact versions of the app's dependencies.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1752_sideB_0.mp3"
+        },
+        {
+          "text": "The pubspec.lock file keeps the exact versions of the app's dependencies.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1752_sideB_1.mp3"
+        },
+        {
+          "text": "pubspec.lock stores the exact dependency versions used by the app.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1752_sideB_2.mp3"
+        },
+        {
+          "text": "The pubspec.lock file records the exact dependency versions of the app.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1752_sideB_3.mp3"
+        }
+      ],
+      "note": "~The pubspec.lock file registers the exact versions dependencies of the app~ has two problems. [Register] in English means to sign up or enroll a person, so for a file that keeps a list the verb is [records], [keeps], or [stores]. Two nouns also cannot be stacked as ~versions dependencies~: use [the exact dependency versions] or [the exact versions of the dependencies]."
+    },
+    {
+      "cardId": "mi_1753",
+      "cardType": "flippable",
+      "sideA": "Un bug es un error en un programa.",
+      "sideB": [
+        {
+          "text": "A bug is an error in a program.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1753_sideB_0.mp3"
+        },
+        {
+          "text": "A bug is a mistake in a program.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1753_sideB_1.mp3"
+        },
+        {
+          "text": "A bug is a flaw in a program.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1753_sideB_2.mp3"
+        }
+      ],
+      "note": "~A bug is an error of a program~ sounds unnatural because the error is located inside the program, it is not something the program possesses. Use [an error in a program], or compress it into a single noun phrase as [a program error]. The pattern with [of] works for parts or properties, as in [the size of the file] or [the name of the variable], not for the place where a problem occurs.\n\n~A bug is an error from a program~ fails for a similar reason. [From] marks origin or source, so it suggests the program emitted the error toward something else, as in [an error message from the server]. The bug is not coming out of the program, it lives inside it, so the preposition stays [in]."
+    },
+    {
+      "cardId": "mi_1754",
+      "cardType": "flippable",
+      "sideA": "Porque es un requisito de iOS, cada año es lo mismo.",
+      "sideB": [
+        {
+          "text": "Because it's an iOS requirement; it's the same every year.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1754_sideB_0.mp3"
+        },
+        {
+          "text": "Because iOS requires it, and it's the same every year.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1754_sideB_1.mp3"
+        },
+        {
+          "text": "Because it's a requirement from iOS; every year it's the same.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1754_sideB_2.mp3"
+        },
+        {
+          "text": "Because it's a requirement for iOS; every year it's the same.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1754_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1755",
+      "cardType": "flippable",
+      "sideA": "Un firewall es un guardia digital que bloquea datos sospechosos.",
+      "sideB": [
+        {
+          "text": "A firewall is a digital guard that blocks suspicious data.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1755_sideB_0.mp3"
+        },
+        {
+          "text": "A firewall acts as a digital guard that blocks suspicious data.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1755_sideB_1.mp3"
+        },
+        {
+          "text": "A firewall is like a digital security guard that blocks suspicious data.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1755_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1756",
+      "cardType": "flippable",
+      "sideA": "Un firewall es una muralla que protege tu red.",
+      "sideB": [
+        {
+          "text": "A firewall is a wall that protects your network.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1756_sideB_0.mp3"
+        },
+        {
+          "text": "A firewall is a barrier that protects your network.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1756_sideB_1.mp3"
+        },
+        {
+          "text": "A firewall works as a wall that shields your network.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1756_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1757",
+      "cardType": "flippable",
+      "sideA": "Un firewall es un guardián de conexiones de red.",
+      "sideB": [
+        {
+          "text": "A firewall is a guardian of network connections.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1757_sideB_0.mp3"
+        },
+        {
+          "text": "A firewall is a gatekeeper for network connections.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1757_sideB_1.mp3"
+        },
+        {
+          "text": "A firewall guards the network connections.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1757_sideB_2.mp3"
+        }
+      ],
+      "note": "~A firewall is a guardian in a network connections~ breaks twice. The article [a] cannot sit in front of a plural noun, and [in] places the firewall inside the connections instead of watching over them. The guardian relationship is expressed with [of] or [for]: [a guardian of network connections], [a gatekeeper for network connections]."
+    },
+    {
+      "cardId": "mi_1758",
+      "cardType": "flippable",
+      "sideA": "Un firewall personal permite todo el tráfico por defecto.",
+      "sideB": [
+        {
+          "text": "A personal firewall allows all traffic by default.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1758_sideB_0.mp3"
+        },
+        {
+          "text": "A personal firewall lets all traffic through by default.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1758_sideB_1.mp3"
+        },
+        {
+          "text": "By default, a personal firewall permits all traffic.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1758_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1759",
+      "cardType": "flippable",
+      "sideA": "Un firewall personal es un programa sencillo en tu computadora.",
+      "sideB": [
+        {
+          "text": "A personal firewall is a simple program on your computer.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1759_sideB_0.mp3"
+        },
+        {
+          "text": "A personal firewall is just a simple program running on your computer.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1759_sideB_1.mp3"
+        },
+        {
+          "text": "A personal firewall is a lightweight program installed on your computer.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1759_sideB_2.mp3"
+        }
+      ],
+      "note": "~A personal firewall is an easy program on your computer~ shifts the meaning to how much effort the program takes to use. The point here is that it is not complex, so use [simple], [basic] or [lightweight]. [Easy] describes a task or an experience, as in [an easy task] or [the app is easy to use], not the internal complexity of a thing."
+    },
+    {
+      "cardId": "mi_1760",
+      "cardType": "flippable",
+      "sideA": "Un firewall de empresa bloquea todo el tráfico por defecto para máxima seguridad.",
+      "sideB": [
+        {
+          "text": "A corporate firewall blocks all traffic by default for maximum security.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1760_sideB_0.mp3"
+        },
+        {
+          "text": "A corporate firewall denies all traffic by default for maximum security.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1760_sideB_1.mp3"
+        },
+        {
+          "text": "For maximum security, a corporate firewall blocks all traffic by default.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1760_sideB_2.mp3"
+        },
+        {
+          "text": "A corporate firewall blocks all traffic by default to maximize security.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1760_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1761",
+      "cardType": "flippable",
+      "sideA": "¿Puedes destacar el código que se ha modificado?",
+      "sideB": [
+        {
+          "text": "Can you highlight the code that has been modified?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1761_sideB_0.mp3"
+        },
+        {
+          "text": "Could you highlight the code that changed?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1761_sideB_1.mp3"
+        },
+        {
+          "text": "Can you point out the modified code?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1761_sideB_2.mp3"
+        },
+        {
+          "text": "Can you highlight the code that was modified?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1761_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1762",
+      "cardType": "flippable",
+      "sideA": "Si es así, deberíamos salir temprano para evitar el tráfico.",
+      "sideB": [
+        {
+          "text": "If so, we should leave early to beat the traffic.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1762_sideB_0.mp3"
+        },
+        {
+          "text": "If that is the case, we should leave early to avoid the traffic.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1762_sideB_1.mp3"
+        },
+        {
+          "text": "If so, we had better leave early to beat the traffic.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1762_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1763",
+      "cardType": "flippable",
+      "sideA": "Si es así, necesitamos cancelar la reservación de inmediato.",
+      "sideB": [
+        {
+          "text": "If that's so, we need to cancel the reservation right away.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1763_sideB_0.mp3"
+        },
+        {
+          "text": "If so, we need to cancel the reservation immediately.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1763_sideB_1.mp3"
+        },
+        {
+          "text": "If that is the case, we have to cancel the booking right away.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1763_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1764",
+      "cardType": "flippable",
+      "sideA": "Si es así, ella se unirá a nosotros para cenar después del trabajo.",
+      "sideB": [
+        {
+          "text": "If so, she will join us for dinner after work.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1764_sideB_0.mp3"
+        },
+        {
+          "text": "If that is the case, she will join us for dinner after work.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1764_sideB_1.mp3"
+        },
+        {
+          "text": "If so, she is going to join us for dinner after work.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1764_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1765",
+      "cardType": "flippable",
+      "sideA": "Las notificaciones push requieren una conexión a internet para funcionar.",
+      "sideB": [
+        {
+          "text": "Push notifications require an internet connection to work.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1765_sideB_0.mp3"
+        },
+        {
+          "text": "Push notifications need an internet connection in order to work.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1765_sideB_1.mp3"
+        },
+        {
+          "text": "Without an internet connection, push notifications do not work.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1765_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1766",
+      "cardType": "flippable",
+      "sideA": "Las notificaciones push se muestran en la pantalla del dispositivo.",
+      "sideB": [
+        {
+          "text": "Push notifications are displayed on the device's screen.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1766_sideB_0.mp3"
+        },
+        {
+          "text": "Push notifications show up on the device screen.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1766_sideB_1.mp3"
+        },
+        {
+          "text": "Push notifications appear on the screen of the device.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1766_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1767",
+      "cardType": "flippable",
+      "sideA": "El usuario debe instalar la aplicación para recibir notificaciones push.",
+      "sideB": [
+        {
+          "text": "The user must install the app to receive push notifications.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1767_sideB_0.mp3"
+        },
+        {
+          "text": "The user has to install the app in order to get push notifications.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1767_sideB_1.mp3"
+        },
+        {
+          "text": "To receive push notifications, the user needs to install the app.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1767_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1768",
+      "cardType": "flippable",
+      "sideA": "Un SMS no requiere internet para funcionar.",
+      "sideB": [
+        {
+          "text": "An SMS does not require internet to work.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1768_sideB_0.mp3"
+        },
+        {
+          "text": "An SMS does not need an internet connection to work.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1768_sideB_1.mp3"
+        },
+        {
+          "text": "Text messages work without internet.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1768_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1769",
+      "cardType": "flippable",
+      "sideA": "Las notificaciones SMS llegan directamente al número de teléfono.",
+      "sideB": [
+        {
+          "text": "SMS notifications arrive directly to the phone number.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1769_sideB_0.mp3"
+        },
+        {
+          "text": "SMS notifications go straight to the phone number.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1769_sideB_1.mp3"
+        },
+        {
+          "text": "SMS notifications are delivered directly to the phone number.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1769_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1770",
+      "cardType": "flippable",
+      "sideA": "Los SMS funcionan en cualquier teléfono móvil básico.",
+      "sideB": [
+        {
+          "text": "SMS messages work on any basic mobile phone.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1770_sideB_0.mp3"
+        },
+        {
+          "text": "Text messages work on any basic cell phone.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1770_sideB_1.mp3"
+        },
+        {
+          "text": "SMS works on any simple mobile phone.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1770_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1771",
+      "cardType": "flippable",
+      "sideA": "¿En qué paso estamos?",
+      "sideB": [
+        {
+          "text": "In which step are we?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1771_sideB_0.mp3"
+        },
+        {
+          "text": "Which step are we in?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1771_sideB_1.mp3"
+        },
+        {
+          "text": "What step are we on?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1771_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1772",
+      "cardType": "flippable",
+      "sideA": "Él realmente no tiene por qué saberlo.",
+      "sideB": [
+        {
+          "text": "He doesn't really have to know.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1772_sideB_0.mp3"
+        },
+        {
+          "text": "He doesn't really need to know.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1772_sideB_1.mp3"
+        },
+        {
+          "text": "There's no reason for him to know, really.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1772_sideB_2.mp3"
+        },
+        {
+          "text": "He doesn't really have to know it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1772_sideB_3.mp3"
+        }
+      ],
+      "note": "[Know] can drop its object when the thing known is obvious from context, which is why [he doesn't really have to know] already works on its own. Adding [it] points at one specific piece of information that was just mentioned."
+    },
+    {
+      "cardId": "mi_1773",
+      "cardType": "flippable",
+      "sideA": "Nunca he visto ese problema, déjame revisarlo.",
+      "sideB": [
+        {
+          "text": "I've never seen that problem, let me check it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1773_sideB_0.mp3"
+        },
+        {
+          "text": "I've never run into that issue, let me take a look.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1773_sideB_1.mp3"
+        },
+        {
+          "text": "That's a problem I've never seen before, let me check it out.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1773_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1774",
+      "cardType": "flippable",
+      "sideA": "Ahora necesitamos incrementar la versión.",
+      "sideB": [
+        {
+          "text": "Now we need to bump the version.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1774_sideB_0.mp3"
+        },
+        {
+          "text": "Now we need to increment the version number.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1774_sideB_1.mp3"
+        },
+        {
+          "text": "We have to bump the version now.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1774_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1775",
+      "cardType": "flippable",
+      "sideA": "Bounce reinicia un solo servicio.",
+      "sideB": [
+        {
+          "text": "Bounce restarts a single service.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1775_sideB_0.mp3"
+        },
+        {
+          "text": "A bounce restarts just one service.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1775_sideB_1.mp3"
+        },
+        {
+          "text": "Bouncing restarts only one service.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1775_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1776",
+      "cardType": "flippable",
+      "sideA": "Reboot reinicia el servidor entero.",
+      "sideB": [
+        {
+          "text": "Reboot restarts the entire server.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1776_sideB_0.mp3"
+        },
+        {
+          "text": "A reboot restarts the whole server.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1776_sideB_1.mp3"
+        },
+        {
+          "text": "Rebooting restarts the server completely.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1776_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1777",
+      "cardType": "flippable",
+      "sideA": "Restart reinicia una aplicación o stack completo.",
+      "sideB": [
+        {
+          "text": "Restart restarts a full application or stack.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1777_sideB_0.mp3"
+        },
+        {
+          "text": "A restart brings back a whole application or stack.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1777_sideB_1.mp3"
+        },
+        {
+          "text": "Restarting applies to an entire application or stack.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1777_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1778",
+      "cardType": "flippable",
+      "sideA": "Reboot y Bounce son como Restart, pero más especializados.",
+      "sideB": [
+        {
+          "text": "Reboot and Bounce are like Restart, but more specialized.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1778_sideB_0.mp3"
+        },
+        {
+          "text": "Reboot and Bounce work like Restart, only more specific.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1778_sideB_1.mp3"
+        },
+        {
+          "text": "Reboot and Bounce are specialized versions of Restart.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1778_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1779",
+      "cardType": "flippable",
+      "sideA": "Revisa la línea 374, ¿qué dice?",
+      "sideB": [
+        {
+          "text": "Check line 374, what does it say?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1779_sideB_0.mp3"
+        },
+        {
+          "text": "Take a look at line 374, what does it say?",
+          "audioSrc": "public/data/audio/common_meeting/mi_1779_sideB_1.mp3"
+        },
+        {
+          "text": "Go to line 374 and tell me what it says.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1779_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1780",
+      "cardType": "flippable",
+      "sideA": "Revisa la línea 287, pégamela en el chat.",
+      "sideB": [
+        {
+          "text": "Check line 287 and paste it in the chat for me.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1780_sideB_0.mp3"
+        },
+        {
+          "text": "Look at line 287 and paste it into the chat.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1780_sideB_1.mp3"
+        },
+        {
+          "text": "Go to line 287 and drop it in the chat.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1780_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1781",
+      "cardType": "flippable",
+      "sideA": "Estoy buscando la línea 653, te la pegaré en el chat.",
+      "sideB": [
+        {
+          "text": "I'm looking for line 653, I'll paste it in the chat for you.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1781_sideB_0.mp3"
+        },
+        {
+          "text": "I'm searching for line 653, I'll drop it in the chat.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1781_sideB_1.mp3"
+        },
+        {
+          "text": "I'm trying to find line 653, I'll paste it into the chat.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1781_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1782",
+      "cardType": "flippable",
+      "sideA": "Ok, vuelve a los mensajes de errores y espera un momento ahí.",
+      "sideB": [
+        {
+          "text": "Ok, go back to the error messages and hold on there for a moment.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1782_sideB_0.mp3"
+        },
+        {
+          "text": "Ok, scroll back to the error messages and stay there for a second.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1782_sideB_1.mp3"
+        },
+        {
+          "text": "Ok, go back to the error messages and wait there a moment.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1782_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1783",
+      "cardType": "flippable",
+      "sideA": "Copia el comentario, la primera línea, y pégalo en el otro archivo.",
+      "sideB": [
+        {
+          "text": "Copy the comment, the first line, and paste it into the other file.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1783_sideB_0.mp3"
+        },
+        {
+          "text": "Copy the comment on the first line and paste it in the other file.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1783_sideB_1.mp3"
+        },
+        {
+          "text": "Grab the comment, the first line, and paste it into the other file.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1783_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1784",
+      "cardType": "flippable",
+      "sideA": "Ellos son sutilmente diferentes.",
+      "sideB": [
+        {
+          "text": "They are subtly different.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1784_sideB_0.mp3"
+        },
+        {
+          "text": "They are slightly different.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1784_sideB_1.mp3"
+        },
+        {
+          "text": "There is a subtle difference between them.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1784_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1785",
+      "cardType": "flippable",
+      "sideA": "No tengo toda la información.",
+      "sideB": [
+        {
+          "text": "I don't have the whole picture.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1785_sideB_0.mp3"
+        },
+        {
+          "text": "I don't have all the information.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1785_sideB_1.mp3"
+        },
+        {
+          "text": "I'm missing part of the picture.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1785_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1786",
+      "cardType": "flippable",
+      "sideA": "Lo que está por enviarse.",
+      "sideB": [
+        {
+          "text": "What is about to be sent.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1786_sideB_0.mp3"
+        },
+        {
+          "text": "The thing that is about to be sent.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1786_sideB_1.mp3"
+        },
+        {
+          "text": "Whatever is about to be sent.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1786_sideB_2.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1787",
+      "cardType": "flippable",
+      "sideA": "No recibí nada, quizás John sí.",
+      "sideB": [
+        {
+          "text": "I didn't receive anything, maybe John did.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1787_sideB_0.mp3"
+        },
+        {
+          "text": "I didn't get anything, maybe John did.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1787_sideB_1.mp3"
+        },
+        {
+          "text": "Nothing came to me, maybe John got it.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1787_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:162]**"
+    },
+    {
+      "cardId": "mi_1788",
+      "cardType": "flippable",
+      "sideA": "Él lo recibió, yo no.",
+      "sideB": [
+        {
+          "text": "He received it, I didn't.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1788_sideB_0.mp3"
+        },
+        {
+          "text": "He got it, I didn't.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1788_sideB_1.mp3"
+        },
+        {
+          "text": "He received it, but I didn't.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1788_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:162]**"
+    },
+    {
+      "cardId": "mi_1789",
+      "cardType": "flippable",
+      "sideA": "No me dijeron que el precio iba a cambiar.",
+      "sideB": [
+        {
+          "text": "I wasn't told the price would change.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1789_sideB_0.mp3"
+        },
+        {
+          "text": "Nobody told me the price was going to change.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1789_sideB_1.mp3"
+        },
+        {
+          "text": "They didn't tell me the price would change.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1789_sideB_2.mp3"
+        },
+        {
+          "text": "I wasn't told that the price was about to change.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1789_sideB_3.mp3"
+        }
+      ],
+      "note": "[Was about to change] presents the change as imminent, on the point of happening. [Would change] and [was going to change] only place it somewhere in the future without that urgency."
+    },
+    {
+      "cardId": "mi_1790",
+      "cardType": "flippable",
+      "sideA": "No me avisaron de la reunión.",
+      "sideB": [
+        {
+          "text": "I wasn't told about the meeting.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1790_sideB_0.mp3"
+        },
+        {
+          "text": "Nobody told me about the meeting.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1790_sideB_1.mp3"
+        },
+        {
+          "text": "I wasn't informed about the meeting.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1790_sideB_2.mp3"
+        },
+        {
+          "text": "They didn't tell me about the meeting.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1790_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1791",
+      "cardType": "flippable",
+      "sideA": "Solo necesito un resumen rápido, para entrar en corriente.",
+      "sideB": [
+        {
+          "text": "I just need a quick recap to catch me up.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1791_sideB_0.mp3"
+        },
+        {
+          "text": "Just give me a quick rundown to bring me up to speed.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1791_sideB_1.mp3"
+        },
+        {
+          "text": "I just need the cliff notes to get up to date.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1791_sideB_2.mp3"
+        },
+        {
+          "text": "I just need a quick summary.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1791_sideB_3.mp3"
+        }
+      ],
+      "note": null
+    },
+    {
+      "cardId": "mi_1792",
+      "cardType": "flippable",
+      "sideA": "El tema sobre el cual hablamos fue aburrido.",
+      "sideB": [
+        {
+          "text": "The topic about which we spoke was boring.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1792_sideB_0.mp3"
+        },
+        {
+          "text": "The topic that we spoke about was boring.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1792_sideB_1.mp3"
+        },
+        {
+          "text": "The topic we talked about was boring.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1792_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:232]**\n\n~The topic about we spoke was boring~ is wrong because [about] needs an object right after it, and [we] is the subject of the clause that follows, not that object. The pronoun has to be there: [about which we spoke].\n\nThe fronted version sounds formal or written. In conversation you would move the preposition to the end: [the topic we talked about].\n\n~The topic about that we spoke was boring~ fails for a different reason: [that] can never follow a preposition. Once the preposition is fronted, the only pronouns allowed are [which] for things and [whom] for people. [That] is possible only when the preposition stays at the end: [the topic that we spoke about]."
+    },
+    {
+      "cardId": "mi_1793",
+      "cardType": "flippable",
+      "sideA": "La herramienta con la cual lo arregló fue una llave inglesa.",
+      "sideB": [
+        {
+          "text": "The tool with which he fixed it was a wrench.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1793_sideB_0.mp3"
+        },
+        {
+          "text": "The tool that he fixed it with was a wrench.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1793_sideB_1.mp3"
+        },
+        {
+          "text": "The tool he fixed it with was a wrench.",
+          "audioSrc": "public/data/audio/common_meeting/mi_1793_sideB_2.mp3"
+        }
+      ],
+      "note": "**[er:232]**\n\n~The tool with he fixed it was a wrench~ is broken because [with] is looking for its object and finds the subject [he] instead. You need [with which he fixed it].\n\nIn speech the natural choice is almost always the stranded version: [the tool he fixed it with]. Save the fronted form for documentation and formal reports."
     }
   ]
 }
