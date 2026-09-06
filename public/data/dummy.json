@@ -70,7 +70,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_095_sideB_3.mp3"
         }
       ],
-      "note": "**[er:232]**\n\n~...the Android app is written~ is incomplete. You must include the preposition [in] at the end: [is written in].\n\n~Kotlin is the language written in the Android side of the app~ reverses the meaning: it says the language itself was written inside the Android side. What gets written is the code, so the relative clause must keep its own subject: [the language the Android side of the app is written in]."
+      "note": "**[er:232]**\n\n~...the Android app is written~ is incomplete. You must include the preposition [in] at the end: [is written in].\n\n~Kotlin is the language written in the Android side of the app~ reverses the meaning: it says the language itself was written inside the Android side. What gets written is the code, so the relative clause must keep its own subject: [the language the Android side of the app is written in].\n\n~Kotlin is the language on which the Android app is written in~ has two errors: the preposition appears twice, and the one that goes with a programming language is [in], not [on]. Code is written [in] Kotlin, and it runs [on] a server.\n\n~Kotlin is the language in which the Android app is written in~ repeats [in] as well. The preposition is fronted with the pronoun or stranded at the end, never both: [the language in which the Android app is written] or [the language the Android app is written in]."
     },
     {
       "cardId": "dummy_096",
@@ -136,6 +136,14 @@
         {
           "text": "VSCode is only the editor where I write the code; it's Android and Xcode that compile behind it.",
           "audioSrc": "public/data/audio/dummy/dummy_103_sideB_3.mp3"
+        },
+        {
+          "text": "VSCode is only the editor where I write the code; what compiles it is Android and Xcode behind it.",
+          "audioSrc": "public/data/audio/dummy/dummy_103_sideB_4.mp3"
+        },
+        {
+          "text": "I only use VSCode to write the code; the ones that compile it are Android and Xcode in the background.",
+          "audioSrc": "public/data/audio/dummy/dummy_103_sideB_5.mp3"
         }
       ],
       "note": "**[er:232]**\n\n~...who compiles is Android and Xcode behind it~ is incorrect because 'who' is used for people. For tools or programs, use [what compiles] or [the ones that compile].\n\n~It's Android and Xcode that compiles behind it~ fails the agreement. The focus of the cleft is two tools, so the verb stays plural: [it's Android and Xcode that compile behind it].\n\n~It's Android and Xcode they ones that compiled behind it~ mixes two different structures and puts the verb in the past. Choose one: [it's Android and Xcode that compile behind it] or [Android and Xcode are the ones that compile behind it].\n\n~...the ones which compiles are Android and Xcode behind it~ breaks the agreement and the word order. The plural head needs a plural verb and the object comes before the complement: [the ones that compile it are Android and Xcode].\n\n~...which compiles it is Android and Xcode~ cannot open a clause with 'which'. A free relative working as the subject takes [what]: [what compiles it is Android and Xcode]."
@@ -454,7 +462,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_158_sideB_2.mp3"
         }
       ],
-      "note": "~When Checking out, the Quote becomes a Sales Order~ makes the Quote the one doing the checking out, because a reduced [when + -ing] clause borrows the subject of the main clause. Since the person checking out and the thing being converted are different, the subject must stay explicit: [when you check out], or the verb can be dropped entirely: [at checkout]."
+      "note": "~When Checking out, the Quote becomes a Sales Order~ makes the Quote the one doing the checking out, because a reduced [when + -ing] clause borrows the subject of the main clause. Since the person checking out and the thing being converted are different, the subject must stay explicit: [when you check out], or the verb can be dropped entirely: [at checkout].\n\n~When doing check out, the Quote becomes a Sales Order~ carries the same dangling subject, and [check out] is the verb form, so it cannot sit after [doing]. As a noun it is one word, [checkout], which is why the natural options are [when you check out] or [at checkout]."
     },
     {
       "cardId": "dummy_159",
@@ -1102,7 +1110,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_190_sideB_2.mp3"
         }
       ],
-      "note": "~He works as a consulter, at a consulting firm~ fails because the profession is [consultant]. [Consulter] is not the job title in English; the agent noun for this verb is irregular and ends in -ant, like [assistant], [applicant] or [participant]."
+      "note": "~He works as a consulter, at a consulting firm~ fails because the profession is [consultant]. [Consulter] is not the job title in English; the agent noun for this verb is irregular and ends in -ant, like [assistant], [applicant] or [participant].\n\n~He works as a consultant, at a consulting~ leaves [consulting] with nothing to modify. It is an adjective here, so it needs its head noun: [at a consulting firm] or [at a consulting company]. The word that stands alone as a noun is [consultancy]."
     },
     {
       "cardId": "dummy_191",
@@ -1122,7 +1130,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_191_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~We work at a consulting, as consultants~ leaves [consulting] without its head noun. It works as a modifier, not as a noun on its own: [at a consulting firm] or [at a consulting company]. The single word that already is a noun is [consultancy]."
     },
     {
       "cardId": "dummy_192",
@@ -1180,9 +1188,13 @@
         {
           "text": "Nothing has come to me, maybe John has received it.",
           "audioSrc": "public/data/audio/dummy/dummy_194_sideB_2.mp3"
+        },
+        {
+          "text": "I didn't get anything, maybe John did.",
+          "audioSrc": "public/data/audio/dummy/dummy_194_sideB_3.mp3"
         }
       ],
-      "note": "**[er:162]**"
+      "note": "**[er:162]**\n\n[I didn't get anything, maybe John did] moves the pair to the past simple, and the ellipsis follows with [did] instead of [has]. Both work; the present perfect keeps the focus on the current situation, the past simple points at a closed moment."
     },
     {
       "cardId": "dummy_195",
@@ -1240,9 +1252,13 @@
         {
           "text": "She has received it, but I haven't.",
           "audioSrc": "public/data/audio/dummy/dummy_197_sideB_2.mp3"
+        },
+        {
+          "text": "She's received it, I haven't.",
+          "audioSrc": "public/data/audio/dummy/dummy_197_sideB_3.mp3"
         }
       ],
-      "note": "**[er:162]**"
+      "note": "**[er:162]**\n\n[She's received it, I haven't] is the normal spoken version. Here [she's] is the contraction of [she has], not of [she is]; the past participle after it is what tells you which one it is.\n\n~She've received it, I haven't~ is impossible because [have] never goes with a third person singular subject. The pair is [she has] / [she's], while [I've], [we've] and [they've] keep [have]."
     },
     {
       "cardId": "dummy_198",
@@ -1356,9 +1372,13 @@
         {
           "text": "The version the app is compiled against must be stable.",
           "audioSrc": "public/data/audio/dummy/dummy_202_sideB_2.mp3"
+        },
+        {
+          "text": "The version against which the app gets compiled must be stable.",
+          "audioSrc": "public/data/audio/dummy/dummy_202_sideB_3.mp3"
         }
       ],
-      "note": "**[er:232]**\n\n~The version against the app is compiled must be stable~ is impossible because the preposition [against] is left without an object. When a preposition sits immediately before the relative pronoun, that pronoun is obligatory and can never be dropped: [against which].\n\nThe everyday spoken alternative is to send the preposition to the end of the clause, which is when [that] becomes possible or the pronoun can disappear: [the version that the app is compiled against] or [the version the app is compiled against]."
+      "note": "**[er:232]**\n\n~The version against the app is compiled must be stable~ is impossible because the preposition [against] is left without an object. When a preposition sits immediately before the relative pronoun, that pronoun is obligatory and can never be dropped: [against which].\n\nThe everyday spoken alternative is to send the preposition to the end of the clause, which is when [that] becomes possible or the pronoun can disappear: [the version that the app is compiled against] or [the version the app is compiled against].\n\n[Gets compiled] is the get-passive and it works here: it presents the compilation as a process the app goes through. The formal fronted [against which] normally pairs with [is compiled], while [gets compiled] sounds even more natural with the preposition stranded: [the version the app gets compiled against]."
     },
     {
       "cardId": "dummy_203",
@@ -1378,7 +1398,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_203_sideB_2.mp3"
         }
       ],
-      "note": "**[er:232]**\n\n~The server on the database runs crashed~ leaves [on] hanging with no object, and it also makes it sound as if the database were sitting on top of something. The fronted form requires the pronoun: [on which].\n\nNote that ~on that~ is banned: [that] can never follow a preposition directly. If you want [that], strand the preposition at the end, as in [the server that the database runs on]."
+      "note": "**[er:232]**\n\n~The server on the database runs crashed~ leaves [on] hanging with no object, and it also makes it sound as if the database were sitting on top of something. The fronted form requires the pronoun: [on which].\n\nNote that ~on that~ is banned: [that] can never follow a preposition directly. If you want [that], strand the preposition at the end, as in [the server that the database runs on].\n\n~The server on which the database runs on crashed~ uses [on] twice. The preposition has exactly one position per clause, at the front with [which] or at the end: [the server on which the database runs] or [the server the database runs on]."
     },
     {
       "cardId": "dummy_204",
@@ -1416,9 +1436,13 @@
         {
           "text": "The company my brother works for is huge.",
           "audioSrc": "public/data/audio/dummy/dummy_205_sideB_2.mp3"
+        },
+        {
+          "text": "The company where my brother works is huge.",
+          "audioSrc": "public/data/audio/dummy/dummy_205_sideB_3.mp3"
         }
       ],
-      "note": "**[er:232]**\n\n~The company for my brother works is huge~ reads as if the speaker worked for the brother, because [for] grabs the next noun as its object. Keeping the pronoun fixes it: [for which my brother works].\n\nOnly [which] for things and [whom] for people can appear right after a preposition. If the company were a person you would say [the person for whom he works], never ~for who~ or ~for that~."
+      "note": "**[er:232]**\n\n~The company for my brother works is huge~ reads as if the speaker worked for the brother, because [for] grabs the next noun as its object. Keeping the pronoun fixes it: [for which my brother works].\n\nOnly [which] for things and [whom] for people can appear right after a preposition. If the company were a person you would say [the person for whom he works], never ~for who~ or ~for that~.\n\n[Where] is also possible because a company can be treated as a place: [the company where my brother works]. It replaces the whole preposition + pronoun block, so it is never followed by another preposition, and it points at the workplace rather than at the employer."
     },
     {
       "cardId": "dummy_206",
@@ -1442,7 +1466,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_206_sideB_3.mp3"
         }
       ],
-      "note": "**[er:232]**\n\n~The house in I grew up is gone now~ fails because [in] is stranded before a subject pronoun. Fronted prepositions always drag [which] along with them: [in which I grew up].\n\nBoth versions are correct English, they just differ in register. [In which] is formal and written; [the house I grew up in] is what you actually say out loud.\n\nWhen the antecedent is a place, [where] replaces the whole preposition + pronoun block: [the house where I grew up]. Because [where] already carries the meaning of [in which], it is never combined with a preposition."
+      "note": "**[er:232]**\n\n~The house in I grew up is gone now~ fails because [in] is stranded before a subject pronoun. Fronted prepositions always drag [which] along with them: [in which I grew up].\n\nBoth versions are correct English, they just differ in register. [In which] is formal and written; [the house I grew up in] is what you actually say out loud.\n\nWhen the antecedent is a place, [where] replaces the whole preposition + pronoun block: [the house where I grew up]. Because [where] already carries the meaning of [in which], it is never combined with a preposition.\n\n~The house where I grew up doesn't exist~ has a correct relative clause, but the main verb loses the [ya] of the Spanish sentence: it states the house never existed at all. A change of state needs [anymore] or [no longer]: [the house where I grew up doesn't exist anymore], [no longer exists] or [is gone now]."
     },
     {
       "cardId": "dummy_207",
