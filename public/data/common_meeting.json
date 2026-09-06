@@ -6296,9 +6296,13 @@
         {
           "text": "Nothing more at this time. Thanks.",
           "audioSrc": "public/data/audio/common_meeting/mi_267_sideB_2.mp3"
+        },
+        {
+          "text": "Nothing for now. Thanks.",
+          "audioSrc": "public/data/audio/common_meeting/mi_267_sideB_3.mp3"
         }
       ],
-      "note": "[For now] implies that you are satisfied at this specific moment."
+      "note": "[For now] implies that you are satisfied at this specific moment.\n\n[Nothing for now] is a natural short answer when someone asks if you need anything else. [Nothing else for now] keeps the idea of 'nada más' explicit."
     },
     {
       "cardId": "mi_268",
@@ -6374,7 +6378,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_270_sideB_2.mp3"
         }
       ],
-      "note": "**[er:114]**\n\nHere, [Besides] acts as a connector meaning 'In addition' or 'Also'. It is followed by a comma.\n\n~Besides, explain to me something.~ (Incorrect word order: In English, the object comes before the recipient. Say 'Explain something to me'.)"
+      "note": "**[er:114]**\n\nHere, [Besides] acts as a connector meaning 'In addition' or 'Also'. It is followed by a comma.\n\n~Besides, explain to me something.~ (Incorrect word order: In English, the object comes before the recipient. Say 'Explain something to me'.)\n\n~Besides, explain me something~ is not valid because [explain] cannot take a person as a direct object. The person is always introduced with [to]: [explain something to me]."
     },
     {
       "cardId": "mi_271",
@@ -6772,9 +6776,13 @@
         {
           "text": "Could you move that logic out of that section?",
           "audioSrc": "public/data/audio/common_meeting/mi_289_sideB_2.mp3"
+        },
+        {
+          "text": "Can you drop that logic from there?",
+          "audioSrc": "public/data/audio/common_meeting/mi_289_sideB_3.mp3"
         }
       ],
-      "note": "[Take out] or [Extract] are good verbs for refactoring code.\n\n[Logic] refers to business rules or algorithms in the code.\n\n~Can you take that logic out from there?~ (Redundant preposition: Use 'out of there'.)\n\n~Can you take out that logic of there?~ (Incorrect preposition: Use 'out of'.)"
+      "note": "[Take out] or [Extract] are good verbs for refactoring code.\n\n[Logic] refers to business rules or algorithms in the code.\n\n~Can you take that logic out from there?~ (Redundant preposition: Use 'out of there'.)\n\n~Can you take out that logic of there?~ (Incorrect preposition: Use 'out of'.)\n\n[Drop] is common in developer speech for removing something from a place, but it suggests discarding it rather than relocating it. Use [take out] or [extract] when the logic will be reused somewhere else."
     },
     {
       "cardId": "mi_290",
@@ -7012,9 +7020,13 @@
         {
           "text": "I don't have the permission to perform that action.",
           "audioSrc": "public/data/audio/common_meeting/mi_300_sideB_3.mp3"
+        },
+        {
+          "text": "I do not have the rights to do that.",
+          "audioSrc": "public/data/audio/common_meeting/mi_300_sideB_4.mp3"
         }
       ],
-      "note": "In IT, use [Permissions] or [Access rights] (permisos del sistema).\n\n[Responsibility] (responsabilidad) refers to your job duties. If the system blocks you, it's a [Permission] issue."
+      "note": "In IT, use [Permissions] or [Access rights] (permisos del sistema).\n\n[Responsibility] (responsabilidad) refers to your job duties. If the system blocks you, it's a [Permission] issue.\n\n[Rights] on its own is common in IT and works as a short form of [access rights]."
     },
     {
       "cardId": "mi_301",
@@ -7032,9 +7044,13 @@
         {
           "text": "Please let me know once the purple package deployment is done.",
           "audioSrc": "public/data/audio/common_meeting/mi_301_sideB_2.mp3"
+        },
+        {
+          "text": "Could you notify me when the purple package gets deployed?",
+          "audioSrc": "public/data/audio/common_meeting/mi_301_sideB_3.mp3"
         }
       ],
-      "note": "Use [Let me know] as a friendly, standard way to say 'avisar'.\n\n[Deploy] is the standard verb for releasing software.\n\n~...deploy the package in purple~ (Incorrect phrasing: 'Purple' is the name of the package, so it functions as an adjective: [Purple package]. 'In purple' suggests physical color.)"
+      "note": "Use [Let me know] as a friendly, standard way to say 'avisar'.\n\n[Deploy] is the standard verb for releasing software.\n\n~...deploy the package in purple~ (Incorrect phrasing: 'Purple' is the name of the package, so it functions as an adjective: [Purple package]. 'In purple' suggests physical color.)\n\n[Gets deployed] is the get-passive: it is more conversational than [is deployed] and puts the focus on the moment the event happens."
     },
     {
       "cardId": "mi_302",
@@ -7202,7 +7218,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_308_sideB_4.mp3"
         }
       ],
-      "note": "[It seems like] is a softer, common way to diagnose issues.\n\n[It's as if... were] uses the Subjunctive mood (formal/hypothetical)."
+      "note": "[It seems like] is a softer, common way to diagnose issues.\n\n[It's as if... were] uses the Subjunctive mood (formal/hypothetical).\n\n~It's like the service is cutting off~ does not work here because [cut off] means to interrupt or disconnect something completely. For a signal or a service that keeps dropping and coming back, the natural verb is [cut out]: [It's like the service is cutting out]."
     },
     {
       "cardId": "mi_309",
@@ -7332,9 +7348,13 @@
         {
           "text": "It's not getting the field yet.",
           "audioSrc": "public/data/audio/common_meeting/mi_314_sideB_3.mp3"
+        },
+        {
+          "text": "The field is not arriving yet.",
+          "audioSrc": "public/data/audio/common_meeting/mi_314_sideB_4.mp3"
         }
       ],
-      "note": "[Coming through] is a very common phrasal verb when discussing data streams or API responses.\n\nUse [field] for JSON keys or database columns.\n\n~It's not arriving the field yet~ ('Arrive' is an intransitive verb; you cannot 'arrive something'. Use [getting] or [receiving] instead.)\n\n\n~It's not getting fetched the field~ is grammatically incorrect. You can say [The field is not being fetched] or [It is not fetching the field]."
+      "note": "[Coming through] is a very common phrasal verb when discussing data streams or API responses.\n\nUse [field] for JSON keys or database columns.\n\n~It's not arriving the field yet~ ('Arrive' is an intransitive verb; you cannot 'arrive something'. Use [getting] or [receiving] instead.)\n\n\n~It's not getting fetched the field~ is grammatically incorrect. You can say [The field is not being fetched] or [It is not fetching the field].\n\nWith [the field] as the subject, [arrive] works perfectly because the verb is intransitive: [The field is not arriving yet]. [Coming through] still sounds more idiomatic for data and API traffic."
     },
     {
       "cardId": "mi_315",
@@ -7382,7 +7402,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_316_sideB_3.mp3"
         }
       ],
-      "note": "[How long] is the most natural way to ask about duration in English.\n\n[Since what day] is grammatically correct but sounds more formal or specific to a ticket report.\n\n~Since what day did that happen to you?~ (Incorrect Grammar: [Since] usually requires the Present Perfect tense because it connects past to present. Use [When] with simple past.)"
+      "note": "[How long] is the most natural way to ask about duration in English.\n\n[Since what day] is grammatically correct but sounds more formal or specific to a ticket report.\n\n~Since what day did that happen to you?~ (Incorrect Grammar: [Since] usually requires the Present Perfect tense because it connects past to present. Use [When] with simple past.)\n\n~Since when does that happen to you?~ is not valid because [since] connects the past to the present and needs the Present Perfect: [Since when has that been happening to you?]. In the present simple, [Since when...?] sounds sarcastic or challenging, as in 'Since when do you care?'."
     },
     {
       "cardId": "mi_317",
@@ -7458,7 +7478,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_319_sideB_3.mp3"
         }
       ],
-      "note": "Use [Otherwise] to connect a requirement with its negative consequence.\n\nThe HTTP 400 status is standardly referred to as a [Bad Request] or just [400 error]."
+      "note": "Use [Otherwise] to connect a requirement with its negative consequence.\n\nThe HTTP 400 status is standardly referred to as a [Bad Request] or just [400 error].\n\n~We need to validate the user; on the contrary, we get a 400 error~ is not valid because [on the contrary] contradicts something that was just said, as in 'It isn't slow; on the contrary, it's the fastest one'. To introduce the negative result of not doing something, use [otherwise] or [or else]."
     },
     {
       "cardId": "mi_320",
@@ -27398,7 +27418,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_1205_sideB_6.mp3"
         }
       ],
-      "note": "**[er:210]**\n\nWhen referring to a physical location data (street, city) or digital endpoint (IP, email), use [address], never ~direction~."
+      "note": "**[er:210]**\n\nWhen referring to a physical location data (street, city) or digital endpoint (IP, email), use [address], never ~direction~.\n\n~I need to update the delivery shipping for the user in the database~ is not valid because [delivery shipping] is not a real noun phrase and the thing being updated disappears. What you update is an [address]: [the delivery address] or [the shipping address]."
     },
     {
       "cardId": "mi_1206",
@@ -32862,7 +32882,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_1448_sideB_3.mp3"
         }
       ],
-      "note": "~What matters it's to be understandable~ is incorrect because it contains a redundant [it's]. The phrase [What matters] acts as the subject, so you should connect it directly to the verb [is], as in [What matters is that it's understandable].\n\n~What matters is to be understandable~ is unnatural. You need to specify what is being understandable. It is better to use a full clause like [is that it's understandable] or specify the object like [for it to be understandable]."
+      "note": "~What matters it's to be understandable~ is incorrect because it contains a redundant [it's]. The phrase [What matters] acts as the subject, so you should connect it directly to the verb [is], as in [What matters is that it's understandable].\n\n~What matters is to be understandable~ is unnatural. You need to specify what is being understandable. It is better to use a full clause like [is that it's understandable] or specify the object like [for it to be understandable].\n\n~What it matters is to be understandable~ is not valid because [What] is already the subject of the clause, so [it] duplicates it. Keep [What matters] together and follow it with a full clause: [What matters is that it's understandable]."
     },
     {
       "cardId": "mi_1449",
