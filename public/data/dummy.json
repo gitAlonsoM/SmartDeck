@@ -44,6 +44,10 @@
         {
           "text": "Kotlin is the language the Android app is written in.",
           "audioSrc": "public/data/audio/dummy/dummy_095_sideB_3.mp3"
+        },
+        {
+          "text": "Kotlin is the language in which the Android app is written.",
+          "audioSrc": "public/data/audio/dummy/dummy_095_sideB_4.mp3"
         }
       ],
       "note": "**[er:232]**\n\n~...the Android app is written~ is incomplete. You must include the preposition [in] at the end: [is written in].\n\n~Kotlin is the language written in the Android side of the app~ reverses the meaning: it says the language itself was written inside the Android side. What gets written is the code, so the relative clause must keep its own subject: [the language the Android side of the app is written in].\n\n~Kotlin is the language on which the Android app is written in~ has two errors: the preposition appears twice, and the one that goes with a programming language is [in], not [on]. Code is written [in] Kotlin, and it runs [on] a server.\n\n~Kotlin is the language in which the Android app is written in~ repeats [in] as well. The preposition is fronted with the pronoun or stranded at the end, never both: [the language in which the Android app is written] or [the language the Android app is written in]."
@@ -160,9 +164,13 @@
         {
           "text": "With a corporate firewall, you have to state explicitly who to trust.",
           "audioSrc": "public/data/audio/dummy/dummy_157_sideB_2.mp3"
+        },
+        {
+          "text": "You must tell a corporate firewall explicitly who to trust.",
+          "audioSrc": "public/data/audio/dummy/dummy_157_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "~You must tell explicitly a corporate firewall who to trust~ splits the verb from its object. An adverb never sits between [tell] and the person being told. It goes before the verb, [you must explicitly tell a corporate firewall who to trust], or after the object, [you must tell a corporate firewall explicitly who to trust]."
     },
     {
       "cardId": "dummy_158",
@@ -242,7 +250,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_177_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~Bounce is fast; reboot clears everything up~ changes the meaning. [Clear up] is about resolving a doubt, a misunderstanding or a mess: [that clears up my question], [the weather cleared up]. A reboot empties memory and state, and that is plain [clears everything] or [wipes everything clean]."
     },
     {
       "cardId": "dummy_179",
@@ -300,9 +308,13 @@
         {
           "text": "He is a consultant at a consulting company.",
           "audioSrc": "public/data/audio/dummy/dummy_190_sideB_2.mp3"
+        },
+        {
+          "text": "He is a consultant at a consultancy.",
+          "audioSrc": "public/data/audio/dummy/dummy_190_sideB_3.mp3"
         }
       ],
-      "note": "~He works as a consulter, at a consulting firm~ fails because the profession is [consultant]. [Consulter] is not the job title in English; the agent noun for this verb is irregular and ends in -ant, like [assistant], [applicant] or [participant].\n\n~He works as a consultant, at a consulting~ leaves [consulting] with nothing to modify. It is an adjective here, so it needs its head noun: [at a consulting firm] or [at a consulting company]. The word that stands alone as a noun is [consultancy]."
+      "note": "~He works as a consulter, at a consulting firm~ fails because the profession is [consultant]. [Consulter] is not the job title in English; the agent noun for this verb is irregular and ends in -ant, like [assistant], [applicant] or [participant].\n\n~He works as a consultant, at a consulting~ leaves [consulting] with nothing to modify. It is an adjective here, so it needs its head noun: [at a consulting firm] or [at a consulting company]. The word that stands alone as a noun is [consultancy].\n\n~He is a consultant in a consultancy~ sounds off because [at] is the preposition that places a person at their workplace. [In] points to the field or the area of practice: [he is a consultant in finance], [he works in consulting]."
     },
     {
       "cardId": "dummy_191",
@@ -524,6 +536,10 @@
         {
           "text": "The house where I grew up is gone now.",
           "audioSrc": "public/data/audio/dummy/dummy_206_sideB_3.mp3"
+        },
+        {
+          "text": "The house where I grew up doesn't exist anymore.",
+          "audioSrc": "public/data/audio/dummy/dummy_206_sideB_4.mp3"
         }
       ],
       "note": "**[er:232]**\n\n~The house in I grew up is gone now~ fails because [in] is stranded before a subject pronoun. Fronted prepositions always drag [which] along with them: [in which I grew up].\n\nBoth versions are correct English, they just differ in register. [In which] is formal and written; [the house I grew up in] is what you actually say out loud.\n\nWhen the antecedent is a place, [where] replaces the whole preposition + pronoun block: [the house where I grew up]. Because [where] already carries the meaning of [in which], it is never combined with a preposition.\n\n~The house where I grew up doesn't exist~ has a correct relative clause, but the main verb loses the [ya] of the Spanish sentence: it states the house never existed at all. A change of state needs [anymore] or [no longer]: [the house where I grew up doesn't exist anymore], [no longer exists] or [is gone now]."
@@ -566,7 +582,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_209_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~The deadline is to April 2027~ has no valid reading. [To] marks a destination or the end of a range: [from January to April]. A month with a year takes [in]: [the deadline is in April 2027]. When the date is presented as something that was fixed, the verb carries [set for]: [the deadline is set for April 2027]."
     },
     {
       "cardId": "dummy_210",
@@ -586,7 +602,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_210_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~We are getting ahead of work~ is not a natural combination. [Get ahead of] needs a reference point you are moving past: [get ahead of schedule], [get ahead of the deadline], [get ahead of the competition]. For the task itself the preposition is [on]: [we are getting ahead on our work], or simply [we are working ahead]."
     },
     {
       "cardId": "dummy_211",
@@ -706,7 +722,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_216_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~Now that that's cleared~ leaves [cleared] without its particle. Alone, [clear] as a verb means to empty or remove: [clear the cache], [clear the table]. Resolving a doubt or a misunderstanding takes the phrasal verb [clear up]: [now that that's cleared up]. The adjective also works: [now that that's clear]."
     },
     {
       "cardId": "dummy_217",
@@ -824,9 +840,13 @@
         {
           "text": "Once a file is in exclude, git stops showing it on every branch.",
           "audioSrc": "public/data/audio/dummy/dummy_222_sideB_2.mp3"
+        },
+        {
+          "text": "An excluded file stops being visible in git across all branches.",
+          "audioSrc": "public/data/audio/dummy/dummy_222_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "~A file in exclude stops being visible in git for all branches~ uses the wrong preposition. [For] introduces a beneficiary or a purpose, not a scope. Coverage over a set of branches takes [across all branches] or [on all branches]."
     },
     {
       "cardId": "dummy_223",
@@ -844,9 +864,13 @@
         {
           "text": "When you switch branches, a file in gitignore might become visible in git again.",
           "audioSrc": "public/data/audio/dummy/dummy_223_sideB_2.mp3"
+        },
+        {
+          "text": "A file in gitignore, when switching branches, could become visible again in git.",
+          "audioSrc": "public/data/audio/dummy/dummy_223_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "[Upon switching branches] and [when switching branches] are both correct and differ only in register. [Upon] is formal and typical of documentation, while [when] is what you would say out loud."
     },
     {
       "cardId": "dummy_224",
@@ -924,9 +948,13 @@
         {
           "text": "Because gitignore is stored in each commit, what it hides depends on the branch.",
           "audioSrc": "public/data/audio/dummy/dummy_227_sideB_2.mp3"
+        },
+        {
+          "text": "The gitignore file lives inside each commit, that's why its effect changes depending on the branch.",
+          "audioSrc": "public/data/audio/dummy/dummy_227_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "[Which is why] and [that's why] both link a cause to its consequence. [Which is why] attaches as a relative clause and keeps everything inside one sentence. [That's why] opens a new independent clause, so in careful writing it is joined with a semicolon or a period: [the gitignore file lives inside each commit; that's why its effect changes depending on the branch]. In speech and informal writing the comma is what everyone uses."
     },
     {
       "cardId": "dummy_228",
@@ -946,7 +974,7 @@
           "audioSrc": "public/data/audio/dummy/dummy_228_sideB_2.mp3"
         }
       ],
-      "note": null
+      "note": "~that's why it affects to all branches~ adds a preposition that [affect] never takes. The verb is transitive and reaches its object directly: [it affects all branches]. The preposition belongs to the noun form and to [apply]: [it has an effect on all branches], [its effect applies to all branches].\n\nThe [that's why] part is fine on its own. It opens a new independent clause, so careful writing joins it with a semicolon: [the git exclude file lives on your local machine; that's why it affects all branches]."
     },
     {
       "cardId": "dummy_229",
@@ -1064,9 +1092,13 @@
         {
           "text": "Can we actually do that?",
           "audioSrc": "public/data/audio/dummy/dummy_234_sideB_2.mp3"
+        },
+        {
+          "text": "Is that possible?",
+          "audioSrc": "public/data/audio/dummy/dummy_234_sideB_3.mp3"
         }
       ],
-      "note": null
+      "note": "~Is that factible?~ is not an English word. The adjective is [feasible], and the everyday alternative is [doable].\n\n[Is that possible?] asks whether something can happen at all, while [is that feasible?] and [is that doable?] ask whether it can realistically be done with the time, budget and people available."
     },
     {
       "cardId": "dummy_235",
