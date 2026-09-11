@@ -7148,9 +7148,13 @@
         {
           "text": "It is already working!",
           "audioSrc": "public/data/audio/common_meeting/mi_305_sideB_4.mp3"
+        },
+        {
+          "text": "It is working already!",
+          "audioSrc": "public/data/audio/common_meeting/mi_305_sideB_5.mp3"
         }
       ],
-      "note": "[Up and running] is a professional idiom meaning a system is active and functioning correctly.\n\nUse [Already] to emphasize something happened sooner than expected, while [Now] simply marks the current status."
+      "note": "[Up and running] is a professional idiom meaning a system is active and functioning correctly.\n\nUse [Already] to emphasize something happened sooner than expected, while [Now] simply marks the current status.\n\n[Already] before the verb states the fact plainly. Moved to the end of the sentence it carries surprise or relief that it happened so fast: [It is working already!]."
     },
     {
       "cardId": "mi_306",
@@ -7402,7 +7406,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_316_sideB_3.mp3"
         }
       ],
-      "note": "[How long] is the most natural way to ask about duration in English.\n\n[Since what day] is grammatically correct but sounds more formal or specific to a ticket report.\n\n~Since what day did that happen to you?~ (Incorrect Grammar: [Since] usually requires the Present Perfect tense because it connects past to present. Use [When] with simple past.)\n\n~Since when does that happen to you?~ is not valid because [since] connects the past to the present and needs the Present Perfect: [Since when has that been happening to you?]. In the present simple, [Since when...?] sounds sarcastic or challenging, as in 'Since when do you care?'."
+      "note": "**[er:186]**\n\n[How long] is the most natural way to ask about duration in English.\n\n[Since what day] is grammatically correct but sounds more formal or specific to a ticket report.\n\n~Since what day did that happen to you?~ (Incorrect Grammar: [Since] usually requires the Present Perfect tense because it connects past to present. Use [When] with simple past.)\n\n~Since when does that happen to you?~ is not valid because [since] connects the past to the present and needs the Present Perfect: [Since when has that been happening to you?]. In the present simple, [Since when...?] sounds sarcastic or challenging, as in 'Since when do you care?'.\n\n~From what day has this happened to you?~ is not valid because [from] marks the start of a schedule or a range, as in 'The office is open from Monday', not the start of a problem that is still going on. For an ongoing situation English uses [since]: [Since what day has this been happening to you?]."
     },
     {
       "cardId": "mi_317",
@@ -7476,9 +7480,13 @@
         {
           "text": "We need to validate the user; otherwise, it returns a 400 error.",
           "audioSrc": "public/data/audio/common_meeting/mi_319_sideB_3.mp3"
+        },
+        {
+          "text": "We need to validate the user, or else we get a 400 error.",
+          "audioSrc": "public/data/audio/common_meeting/mi_319_sideB_4.mp3"
         }
       ],
-      "note": "Use [Otherwise] to connect a requirement with its negative consequence.\n\nThe HTTP 400 status is standardly referred to as a [Bad Request] or just [400 error].\n\n~We need to validate the user; on the contrary, we get a 400 error~ is not valid because [on the contrary] contradicts something that was just said, as in 'It isn't slow; on the contrary, it's the fastest one'. To introduce the negative result of not doing something, use [otherwise] or [or else]."
+      "note": "Use [Otherwise] to connect a requirement with its negative consequence.\n\nThe HTTP 400 status is standardly referred to as a [Bad Request] or just [400 error].\n\n~We need to validate the user; on the contrary, we get a 400 error~ is not valid because [on the contrary] contradicts something that was just said, as in 'It isn't slow; on the contrary, it's the fastest one'. To introduce the negative result of not doing something, use [otherwise] or [or else].\n\n[Or else] carries the same warning as [otherwise] and sounds more direct in speech. Unlike [otherwise], it takes no comma after it: [We need to validate the user, or else we get a 400 error.]"
     },
     {
       "cardId": "mi_320",
@@ -7552,9 +7560,13 @@
         {
           "text": "I didn't want to alter the status.",
           "audioSrc": "public/data/audio/common_meeting/mi_322_sideB_3.mp3"
+        },
+        {
+          "text": "I didn't want to change the status.",
+          "audioSrc": "public/data/audio/common_meeting/mi_322_sideB_4.mp3"
         }
       ],
-      "note": "[I didn't want to] expresses a lack of desire or intent.\n\n[Status] is used for lifecycle stages (Open, Closed, Pending), while [State] is often used for technical conditions (Active, Inactive, Boolean).\n\nIf you meant it was an accident, you would say 'I didn't mean to change...'."
+      "note": "[I didn't want to] expresses a lack of desire or intent.\n\n[Status] is used for lifecycle stages (Open, Closed, Pending), while [State] is often used for technical conditions (Active, Inactive, Boolean).\n\nIf you meant it was an accident, you would say 'I didn't mean to change...'.\n\n[The status] is enough whenever the ticket or record is already clear from the conversation; [its status] only adds the owner when that owner needs to be marked.\n\n~I didn't want to change it its status.~ is not valid because the object slot is filled twice. Pick one: [change it] or [change its status]."
     },
     {
       "cardId": "mi_323",
@@ -7600,9 +7612,13 @@
         {
           "text": "OK, that is fine with me.",
           "audioSrc": "public/data/audio/common_meeting/mi_324_sideB_3.mp3"
+        },
+        {
+          "text": "OK, that's fine on my end.",
+          "audioSrc": "public/data/audio/common_meeting/mi_324_sideB_4.mp3"
         }
       ],
-      "note": "[Works for me] is extremely common in business scheduling and agreements.\n\n[Fine by me] is slightly more casual but acceptable in team chats.\n\n~OK, that is fine for me.~ and ~OK, It's fine for me.~ are not standard. Use the prepositions [by] or [with] when expressing agreement with an arrangement or idea."
+      "note": "[Works for me] is extremely common in business scheduling and agreements.\n\n[Fine by me] is slightly more casual but acceptable in team chats.\n\n~OK, that is fine for me.~ and ~OK, It's fine for me.~ are not standard. Use the prepositions [by] or [with] when expressing agreement with an arrangement or idea.\n\n[For me] answers whether something suits your needs or your situation, as in 'The small size is fine for me', so it points at suitability instead of consent. Giving consent to a plan or an arrangement takes [by me] or [with me].\n\n~OK, for me it's fine.~ is not valid because fronting [for me] copies the Spanish 'por mí'. English keeps the phrase after the adjective: [OK, that's fine by me.]\n\n[On my end] frames the answer as coming from your own side of the system or the team, and it works naturally for agreeing in a meeting."
     },
     {
       "cardId": "mi_325",
@@ -7722,7 +7738,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_329_sideB_4.mp3"
         }
       ],
-      "note": "[Not... quite right] is a very natural way to describe a partial failure or buggy behavior.\n\n[Not... entirely well] is slightly more formal."
+      "note": "[Not... quite right] is a very natural way to describe a partial failure or buggy behavior.\n\n[Not... entirely well] is slightly more formal.\n\n~One thing I've noticed is that it isn't working quite well.~ is not valid because [quite well] only survives in affirmative sentences, as in 'It works quite well'. Under a negative, English switches the pair to [quite right]: [it isn't working quite right], or drops [quite] and says [it isn't working very well]."
     },
     {
       "cardId": "mi_330",
@@ -7776,9 +7792,13 @@
         {
           "text": "We ran multiple back-and-forth tests.",
           "audioSrc": "public/data/audio/common_meeting/mi_331_sideB_3.mp3"
+        },
+        {
+          "text": "We have done several back-and-forth tests.",
+          "audioSrc": "public/data/audio/common_meeting/mi_331_sideB_4.mp3"
         }
       ],
-      "note": "When used as an adjective before a noun (like 'tests'), [back-and-forth] is often hyphenated.\n\n[Conducted] and [Performed] are formal alternatives to 'done' or 'made' in a testing context."
+      "note": "When used as an adjective before a noun (like 'tests'), [back-and-forth] is often hyphenated.\n\n[Conducted] and [Performed] are formal alternatives to 'done' or 'made' in a testing context.\n\n[Done] is the neutral everyday choice with [tests], [ran] is what developers say among themselves, and [performed] or [conducted] belong in written reports."
     },
     {
       "cardId": "mi_332",
@@ -7930,7 +7950,7 @@
           "audioSrc": "public/data/audio/common_meeting/mi_338_sideB_3.mp3"
         }
       ],
-      "note": "[Naming convention] is the standard term for rules like CamelCase, snake_case, etc.\n\n[Discrepancy] implies a difference that shouldn't exist or causes issues.\n\n~...name conventions~ (Standard term: The correct technical term is [Naming conventions].)"
+      "note": "[Naming convention] is the standard term for rules like CamelCase, snake_case, etc.\n\n[Discrepancy] implies a difference that shouldn't exist or causes issues.\n\n~...name conventions~ (Standard term: The correct technical term is [Naming conventions].)\n\n[Naming] is the gerund of 'to name' and points to the act of assigning names, which is exactly what the rule governs. [Name] as a modifier would describe a convention about names as objects, a different idea. English fixes the term as [naming conventions], built the same way as [coding standards] and [testing procedures]."
     },
     {
       "cardId": "mi_339",
